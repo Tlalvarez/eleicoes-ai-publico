@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+const { title, description = 'Camada de legibilidade eleitoral: análise de programas de governo com metodologia pública, fontes citadas e a mesma régua para todos os candidatos.' } = Astro.props;
+const path = Astro.url.pathname;
+const atual = (p) => (path === p || path.startsWith(p + '/') || path === p + '.html') ? 'page' : undefined;
+---
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="robots" content="noindex" /><!-- soft launch: remover no lançamento público -->
+    <title>{title} · eleicoes.ai</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site">
+      <div class="inner">
+        <a class="brand" href="/">eleicoes<span>.ai</span></a>
+        <nav class="main" aria-label="Principal">
+          <a href="/metodologia" aria-current={atual('/metodologia')}>Metodologia</a>
+          <a href="/verificacao" aria-current={atual('/verificacao')}>Dossiê de verificação</a>
+          <a href="/fichas" aria-current={atual('/fichas')}>Fichas 2026</a>
+        </nav>
+      </div>
+    </header>
+    <main id="conteudo">
+      <slot />
+    </main>
+    <footer class="site">
+      <div class="inner">
+        <p><strong>Rotulagem:</strong> este site contém análises produzidas com assistência de inteligência artificial e submetidas a revisão editorial humana antes da publicação, em conformidade com as resoluções do TSE sobre uso de IA em conteúdo eleitoral. Cada ficha identifica seu revisor humano e sua data de revisão.</p>
+        <p><strong>Neutralidade:</strong> este site não recomenda voto nem conclui superioridade de candidato. Toda classificação cita página do documento primário; a metodologia, o changelog e as memórias de cálculo são públicos e versionados. Análises terminam em trade-offs, não em veredictos.</p>
+        <p>Metodologia v1.1 · conteúdo versionado publicamente no GitHub · 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

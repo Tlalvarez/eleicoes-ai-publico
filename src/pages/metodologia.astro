@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';
+const mods = import.meta.glob('../content/metodologia.md', { eager: true });
+const doc = Object.values(mods)[0];
+const { Content } = doc;
+---
+<Base title="Metodologia v1.1">
+  <p class="lead" style="margin-bottom:0">Documento normativo. Nada é analisado fora dele.</p>
+  <div class="prose">
+    <Content />
+  </div>
+  <div class="aviso">
+    Esta versão herda integralmente a v1.0 (congelada) e incorpora o changelog da verificação documental.
+    Alterações posteriores ao registro das candidaturas (15/8) exigem changelog público e justificativa
+    não relacionada a candidato específico.
+  </div>
+</Base>

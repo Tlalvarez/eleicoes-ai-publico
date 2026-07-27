@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const mods = import.meta.glob('../../content/verificacao/*.md', { eager: true });
+  return Object.entries(mods).map(([path, m]) => ({
+    params: { slug: path.split('/').pop().replace('.md', '') },
+    props: { doc: m },
+  }));
+}
+const { doc } = Astro.props;
+const { Content } = doc;
+---
+<Base title={doc.frontmatter.title}>
+  <p><a href="/verificacao">← Voltar ao dossiê</a></p>
+  <div class="prose">
+    <Content />
+  </div>
+  <div class="aviso">
+    Anexo de verificação conforme a Metodologia v1.1, seção 10. Proveniência da fonte primária declarada
+    no cabeçalho; classificações com citação de página; confirmado/corrigido/invertido registrado honestamente.
+  </div>
+</Base>

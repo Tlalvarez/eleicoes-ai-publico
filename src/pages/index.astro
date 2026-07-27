@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Programas de governo, lidos por inteiro">
+  <h1>O que os programas de governo realmente dizem — lidos por inteiro, com a mesma régua para todos.</h1>
+  <p class="lead">
+    O eleicoes.ai analisa os programas registrados no TSE em 6 eixos estruturais, com citação de página,
+    teste de consistência aritmética e score de executabilidade. Antes de analisar 2026, testamos a régua
+    no passado: relemos, na íntegra, os programas registrados de 2002 a 2022 — e publicamos onde acertamos
+    e onde erramos.
+  </p>
+
+  <div class="grid2">
+    <div class="card">
+      <h2 style="margin-top:0">O que o método entrega</h2>
+      <p>A <strong>direção estrutural</strong> de cada candidatura (âncora fiscal, abertura, previdência,
+      educação, Estado na economia, instituições) e o <strong>padrão provável de execução</strong> —
+      com fonte primária citada em toda classificação.</p>
+    </div>
+    <div class="card">
+      <h2 style="margin-top:0">O que ele não entrega</h2>
+      <p>Severidade, cronologia ou forma exata de desvios; previsões numéricas de PIB ou renda;
+      e, por regra invariante, <strong>recomendação de voto</strong>. Nos backtests, direção e padrão
+      de execução foram consistentemente antecipáveis; severidade e forma, não.</p>
+    </div>
+  </div>
+
+  <h2>A prova de que dá para levar programas a sério</h2>
+  <p>
+    Verificação documental completa: <strong>9 documentos primários</strong> (2002–2022), lidos na íntegra e
+    confrontados com as análises feitas às cegas. Resultado: <strong>zero inversões de classificação</strong>,
+    correções registradas em changelog público — inclusive as nossas.
+  </p>
+  <table>
+    <caption style="text-align:left;color:var(--muted);font-size:.85rem">Placar da verificação documental (íntegra no dossiê)</caption>
+    <thead><tr><th>Caso</th><th>Resultado</th></tr></thead>
+    <tbody>
+      <tr><td>2002 Lula + Carta ao Povo · 2002 Serra</td><td>6 eixos classificados com citação; a moderação de 2002 estava no texto registrado</td></tr>
+      <tr><td>2006 Lula</td><td>direção do 2º mandato estava textualizada no programa</td></tr>
+      <tr><td>2014 Dilma · 2014 Aécio</td><td>9 eixos confirmados, 3 correções parciais registradas</td></tr>
+      <tr><td>2018 Bolsonaro · 2018 Haddad</td><td>10 eixos confirmados, 2 correções — uma gerou ajuste de metodologia</td></tr>
+      <tr><td>2022 Lula · 2022 Bolsonaro</td><td>dry-run 100% confirmado; integridade conferida contra os PDFs oficiais do TSE</td></tr>
+    </tbody>
+  </table>
+  <p>
+    <a href="/verificacao"><strong>Ler o dossiê de verificação →</strong></a><br />
+    <a href="/metodologia">Conhecer a metodologia v1.1 (com changelog público) →</a>
+  </p>
+
+  <h2>Calendário 2026</h2>
+  <div class="card">
+    <p style="margin:0">
+      <span class="badge">15/8</span> registro das candidaturas — coleta e versionamento dos programas ·
+      <span class="badge">1/9</span> publicação das fichas por candidato + índice de especificidade + gaps do Teste A ·
+      <span class="badge">set–out</span> fact-check dos debates contra programa e histórico ·
+      <span class="badge">2º turno</span> comparação lado a lado dos finalistas, com cenários de longo prazo.
+    </p>
+  </div>
+
+  <div class="aviso">
+    Ferramenta de alinhamento e informação com fontes citadas. Não recomendamos voto. Mesma estrutura,
+    mesmos eixos e mesma profundidade para todos os candidatos acima do corte de elegibilidade declarado ex-ante.
+  </div>
+</Base>

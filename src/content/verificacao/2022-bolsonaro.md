@@ -1,0 +1,57 @@
+---
+title: "Verificação Documental — Caso 2022 / Jair Bolsonaro (incumbente)"
+slug: "2022-bolsonaro"
+ordem: 6
+---
+# Verificação Documental — Caso 2022 / Jair Bolsonaro (incumbente)
+
+**Anexo ao Backtest Piloto 2022 | Metodologia v1.0, seção 10**
+**Fonte primária:** "Pelo Bem do Brasil — Plano de Governo 2023-2026" (48 pp., registrado no TSE em ago/2022; o texto se autodenomina internamente "Caminho da Prosperidade — Construindo uma Grande Nação", p. 7, declarando continuidade ao documento de 2018). Texto integral via espelho de imprensa (static.poder360.com.br, versão "definitivo", ago/2022). Integridade: 48 páginas exatas conforme descrição da imprensa do documento protocolado; estrutura de 6 eixos + introdução conferem com as reportagens da época (Agência Brasil, Correio Braziliense). Verificação executada em 26/07/2026.
+
+**Nota sobre o piloto:** o backtest 2022 compacto fez duas afirmações textuais verificáveis sobre este documento ("continuidade" e "texto pouco específico"), atribuindo o peso da análise à camada de histórico (comportamento revelado 2021-22). Este anexo verifica as duas afirmações **e** produz a primeira classificação completa dos 6 eixos.
+
+## Resultado por eixo (dry-run → verificado)
+
+**Âncora fiscal — MANTÉM/APERTA RETÓRICO, COM CONTRADIÇÃO INTERNA E OMISSÃO INFORMATIVA (classificação documental nova).** O texto promete "consolidação do ajuste fiscal no médio e longo prazo que reduza a relação dívida/PIB" (p. 17) e "rever gastos, desvinculando, desobrigando e desindexando as despesas" (p. 7) — sem meta, instrumento ou cronograma. **O teto de gastos não é mencionado uma única vez em 48 páginas** — a âncora fiscal que o próprio governo criara como bandeira e rompera em 2021-22 (precedentes datados e pré-registro: PEC dos Precatórios, dez/2021; pacote eleitoral, jul/2022) desaparece do vocabulário. Pela regra "omissão é sinal de primeira classe", aplicada a um incumbente, o silêncio sobre a própria âncora rompida é o dado fiscal mais informativo do documento. Na direção oposta ao ajuste prometido, o texto assume dois compromissos caros e permanentes: manutenção do Auxílio Brasil em R$ 600 a partir de jan/2023 (p. 17) e isenção de IR até 5 salários mínimos na gestão 2023-26 (p. 9), mais reposições salariais a servidores (p. 43). A contradição ajuste-sem-instrumento × gasto-com-número é interna ao próprio texto. Pelo peso 30/70 do módulo incumbente, o comportamento revelado 2021-22 domina a leitura — exatamente como o dry-run fez.
+
+**Abertura comercial — ABRE (MODERADO): classificação documental nova.** "Prosseguir na abertura comercial, com a redução da tributação das empresas nacionais e também dos impostos de importação" (p. 7); acessão à OCDE e à EFTA como prioridade nomeada (pp. 6, 17, 47); reduções já feitas de II/IPI citadas como política a continuar (p. 9). Contrapeso: o capítulo "Redução das Dependências Externas" (pp. 45-46) introduz enquadramento de autonomia estratégica (fertilizantes, insumos de saúde, áreas estratégicas). Direção: abre moderado — na comparação, o documento de 2022 é menos ambicioso que o de 2018 (que prometia reforma tarifária ampla; verificada e pouco executada, conforme anexo 2018).
+
+**Previdência — OMISSO (aceno genérico): classificação documental nova.** Uma frase: "continuará e fortalecerá o aprimoramento do sistema previdenciário, com o objetivo de garantir a sustentabilidade financeira e a justiça social" (p. 18), mais a observação de que o emprego sustenta a previdência (p. 15). Pós-reforma de 2019, a omissão é menos crítica que em 2014 — mas o contraste com o documento de 2018 do mesmo candidato (capitalização detalhada com fundo de transição) documenta o esgotamento da agenda: o delta entre plataformas do próprio candidato é regressivo neste eixo.
+
+**Educação — MISTO (qualidade citada sem instrumento + carga cultural): classificação documental nova.** Menção a melhorar a posição no PISA (p. 24), fundamentos de matemática/português/ciências (p. 25), valorização docente com planos de carreira (p. 26), alfabetização via aplicativo e recuperação pós-pandemia (p. 26), ensino profissionalizante e economia 4.0 (pp. 24-25). Sem meta mensurável nem desenho de incentivo. Carga de guerra cultural presente e legível: "pensamento crítico sem conotações ideológicas" (p. 25), "os pais são os principais atores na educação das crianças e não o Estado" (pp. 25, 29), "desideologização do ensino" (p. 48). É a mesma assinatura do eixo educação do documento 2018 do candidato (verificado como misto), com menos instrumento e igual enquadramento.
+
+**Estado na economia — REDUZ: CONFIRMADO COM EVIDÊNCIA DIRETA (a afirmação de "continuidade" do dry-run).** Desestatização, concessões e PPPs como política central a ampliar, com a Eletrobras citada como modelo (pp. 9, 36); "prosseguir com o reordenamento do papel estatal na economia, por meio de desestatizações e desinvestimentos de empresas estatais" (p. 18); "deixar a cargo do Estado somente aquilo que ele pode realizar" (p. 9); recusa explícita de tabelamento de preços — "anomalia inconcebível" (p. 9); marco do saneamento, ferrovias privadas (Pro Trilhos), BR do Mar e BR dos Rios (pp. 29, 35-36). Quarto vértice verificado: com Dilma-2014, Haddad-2018 e Lula-2022 de um lado e Aécio-2014, Bolsonaro-2018 e Bolsonaro-2022 do outro, o eixo Estado-na-economia é, nos sete documentos primários, o mais estável, mais explícito e mais discriminante da Camada 1.
+
+**Instituições — FORTALECE (ECONÔMICAS) COM EVIDÊNCIA DIRETA; ENQUADRAMENTO CULTURAL-EXPURGATÓRIO NO SUBCAMPO (ii).** (i) Econômicas: "o governo continuará rigorosamente respeitando o regime de metas da inflação e a independência do Banco Central" (p. 17) — explícito, num contraste direto com a ambiguidade do documento 2018 do mesmo candidato (BC "independente mas alinhado", corrigido no anexo 2018); acessão à OCDE como âncora de práticas (pp. 17, 47). (ii) Enquadramento do conflito político (subcampo v1.1, quinto teste de simetria): não há uma linha sobre urnas, STF ou TSE — no auge documentado do conflito institucional do período (out/2022), a omissão é informativa e repete o achado-2018: o risco institucional do candidato não está no texto. O que o texto contém, legível ex-ante: armamento civil como política de segurança e "força dissuasória" com compromisso de ampliação (pp. 10, 34); excludente de ilicitude para FFAA e policiais em operações (p. 34); e, na conclusão, a linguagem de missão cultural — "desideologização do ensino", "desaparelhamento ideológico da sociedade e do aparato do Estado" (p. 48) — a mesma família semântica do "extirpar ideologias" de 2018, agora sem o enquadramento heroico-tutelar das FFAA (ausente deste texto). Delta entre plataformas do candidato (2018→2022): sai a moldura FFAA-como-último-obstáculo, permanece a missão cultural, consolida-se o armamentismo. O subcampo captura sinal real e distinto em cada um dos cinco documentos verificados — a régua está calibrada.
+
+## Índice de especificidade — CONFIRMADO, com refinamento novo
+
+O dry-run classificou o texto como "pouco específico" — correto, mas com uma nuance que o documento revela: ele é **denso em números retrospectivos** (dezenas de estatísticas de balanço do mandato: 519 milhões de doses, 5 milhões de carteiras assinadas, 4.307 obras, R$ 80 bi em leilões) e **rarefeito em compromissos prospectivos quantificados** (essencialmente três: Auxílio Brasil R$ 600, isenção de IR até 5 SM, cabotagem de 11% para 30%). O padrão-incumbente do achado 2006/2022 ("o texto de reeleição é balanço, não plano") está documentado na fonte primária. **Refinamento para a régua:** o índice de especificidade deve contar apenas compromissos futuros quantificados e datados — números retrospectivos são propaganda de balanço e não podem inflar o score.
+
+## Teste A — CONFIRMADO (contradição interna documentada)
+
+Compromissos: R$ 600 permanentes do Auxílio Brasil (p. 17), isenção de IR até 5 SM (p. 9), reposições a servidores (p. 43), 6 mil bombeiros (p. 37), aumento de investimentos em segurança e FFAA (p. 34, 45), continuidade das desonerações de II/IPI/ICMS de 2022 (p. 9). Receitas novas: nenhuma (desestatizações remanescentes, sem lista). Âncora: "ajuste fiscal de médio e longo prazo" sem instrumento (p. 17), com o teto — rompido pelo próprio governo — não mencionado. Veredito ex-ante: o programa não fecha e o contraste com o comportamento revelado do incumbente (precedentes datados pré-registro) torna a promessa de ajuste não-crível pela régua do custo do sinal: todas as promessas quantificadas são de gasto/renúncia (baratas, agradam o eleitorado); a de ajuste é retórica sem custo interno. Compatível com a previsão do dry-run ("erosão fiscal continuada em caso de reeleição").
+
+## Teste B — CONFIRMADO (com a assimetria declarada)
+
+Agenda de gasto (R$ 600, isenção IR): executabilidade alta no Congresso pós-2020 orçamentariamente empoderado — e de fato o item R$ 600 foi executado *pelo vencedor da eleição* via PEC da Transição, confirmando que era o item de consenso parlamentar (patrocínio próprio do Congresso, quarto componente do Teste B). "Reformas estruturantes" (administrativa, p. 43): sem detalhamento, sem base, score baixo. Candidato derrotado: valida-se detecção e consistência, nunca desfecho.
+
+## Ajuste metodológico decorrente (changelog)
+
+6. **Especificidade prospectiva vs. retrospectiva (novo, para v1.1).** O índice de especificidade passa a contar exclusivamente compromissos futuros quantificados e datáveis; estatísticas retrospectivas de balanço são excluídas do numerador. Precedente calibrador: Bolsonaro-2022, documento numericamente denso e prospectivamente vago — sem a regra, o índice premiaria propaganda de balanço, com viés sistemático pró-incumbente.
+
+## Placar da verificação documental (parcial)
+
+| Caso | Eixos confirmados | Corrigidos | Invertidos | Status |
+|---|---|---|---|---|
+| 2014 Dilma | 5 (2 reforçados) | 1 parcial (educação) | 0 | ✅ concluído |
+| 2014 Aécio | 4 (2 reforçados) | 2 parciais | 0 | ✅ concluído |
+| 2018 Bolsonaro | 5 (2 reforçados) | 1 relevante (instituições) | 0 | ✅ concluído |
+| 2018 Haddad | 5 (3 reforçados) | 1 parcial (previdência) | 0 | ✅ concluído |
+| 2022 Lula | 3/3 dry-run + 6 eixos novos | 0 | 0 | ✅ concluído |
+| 2022 Bolsonaro | 2/2 dry-run + 6 eixos novos | 0 | 0 | ✅ concluído |
+| 2002 / 2006 | — | — | — | pendente (FPA) |
+
+## Conclusão parcial
+
+As duas afirmações do piloto compacto ("continuidade"; "pouco específico") sobreviveram à fonte primária, e a classificação completa acrescenta três achados: a omissão total do teto de gastos por quem o rompeu (o silêncio fiscal mais eloquente dos sete documentos verificados), a contradição interna ajuste-retórico × gasto-quantificado, e a distinção especificidade retrospectiva/prospectiva que gera o sexto item de changelog. O par 2022 está completo: os dois finalistas registraram os dois documentos mais vagos da série verificada — a tese da ambiguidade estratégica dos favoritos, agora com texto primário dos dois lados. E a série 2018→2022 do mesmo candidato, verificada nas duas pontas, mostra o eixo institucional migrando do enquadramento tutelar-militar para o cultural-expurgatório, com o conflito eleitoral-judiciário real permanecendo fora do texto nas duas eleições — a confirmação mais forte até aqui de que o subcampo (ii) lê o que o documento contém, e a camada de candidato lê o que ele omite.

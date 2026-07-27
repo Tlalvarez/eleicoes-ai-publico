@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+const mods = import.meta.glob('../../content/verificacao/*.md', { eager: true });
+const casos = Object.entries(mods)
+  .map(([path, m]) => ({ slug: path.split('/').pop().replace('.md', ''), ...m.frontmatter }))
+  .sort((a, b) => (a.ordem ?? 99) - (b.ordem ?? 99));
+const resumo = {
+  '2002-lula': 'A moderação estava no texto registrado, não só na Carta ao Povo — correção honesta à nossa própria análise.',
+  '2002-serra': 'Bônus: tripé literal confirmado; os dois programas de 2002 convergiam em política comercial.',
+  '2006-lula': 'A direção desenvolvimentista do 2º mandato estava textualizada no programa de reeleição.',
+  '2014-aecio': 'Duas correções: subestimamos a educação e citamos evidências que eram da campanha, não do texto.',
+  '2018-haddad': 'Delta entre as duas versões registradas documentado; previdência corrigida de "omisso" para rejeição explícita.',
+  '2022-lula': 'Dry-run 100% confirmado; PDF oficial do TSE byte a byte idêntico ao espelho usado.',
+  '2022-bolsonaro': 'A omissão do teto de gastos por quem o rompeu: o silêncio fiscal mais informativo da série.',
+};
+---
+<Base title="Dossiê de verificação documental">
+  <h1>Dossiê de verificação documental</h1>
+  <p class="lead">
+    Antes de aplicar a régua a 2026, nós a testamos no passado: releitura integral dos programas registrados
+    de 2002 a 2022, confrontada com as análises feitas às cegas (dry-run). Confirmações, correções e
+    inversões estão registradas caso a caso — as correções são ativo de credibilidade, não constrangimento.
+  </p>
+  <div class="card">
+    <strong>Placar consolidado:</strong> 9 documentos primários · 0 inversões de classificação ·
+    correções registradas em changelog público (8 itens incorporados à metodologia v1.1).
+    Casos centrais (2014 Dilma e 2018 Bolsonaro) verificados na sessão de origem; anexos abaixo.
+  </div>
+  <ul class="lista-dossie">
+    {casos.map((c) => (
+      <li>
+        <a href={`/verificacao/${c.slug}`}>{c.title.replace('Verificação Documental — ', '').replace(' (bônus, formato compacto)', ' (bônus)')}</a>
+        <span class="meta">{resumo[c.slug] ?? ''}</span>
+      </li>
+    ))}
+  </ul>
+  <div class="aviso">
+    Regra de assimetria: para candidatos derrotados, o backtest valida apenas detecção e consistência —
+    nunca desfecho hipotético. Citações textuais são curtas e mínimas; a paráfrase é o padrão.
+  </div>
+</Base>

@@ -1,0 +1,98 @@
+/* eleicoes.ai — folha única, sem JS no cliente. Neutralidade também é design:
+   paleta sóbria (grafite + verde-petróleo), sem cores partidárias como acento. */
+:root {
+  --bg: #fafaf8;
+  --fg: #1f2937;
+  --muted: #5b6572;
+  --accent: #0f6b66;
+  --accent-contrast: #ffffff;
+  --border: #d9dde3;
+  --card: #ffffff;
+  --mark: #fff7e0;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14181d;
+    --fg: #e6e9ed;
+    --muted: #9aa4b1;
+    --accent: #4fb3ab;
+    --accent-contrast: #0c1013;
+    --border: #2b323b;
+    --card: #1b2027;
+    --mark: #3a3320;
+  }
+}
+* { box-sizing: border-box; }
+html { font-size: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.65;
+}
+.skip-link {
+  position: absolute; left: -9999px; top: 0;
+  background: var(--accent); color: var(--accent-contrast);
+  padding: .5rem 1rem; z-index: 10;
+}
+.skip-link:focus { left: 0; }
+header.site {
+  border-bottom: 1px solid var(--border);
+  background: var(--card);
+}
+header.site .inner, main, footer.site .inner {
+  max-width: 52rem; margin: 0 auto; padding: 0 1.25rem;
+}
+header.site .inner {
+  display: flex; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;
+  padding-top: .9rem; padding-bottom: .9rem;
+}
+.brand { font-weight: 700; font-size: 1.15rem; text-decoration: none; color: var(--fg); }
+.brand span { color: var(--accent); }
+nav.main a {
+  margin-right: 1.1rem; text-decoration: none; color: var(--muted); font-size: .95rem;
+}
+nav.main a[aria-current="page"], nav.main a:hover { color: var(--accent); }
+main { padding: 2.2rem 1.25rem 3rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .4rem; }
+h2 { font-size: 1.25rem; margin-top: 2.2rem; }
+h3 { font-size: 1.05rem; }
+a { color: var(--accent); }
+p.lead { font-size: 1.12rem; color: var(--muted); margin-top: 0; }
+.card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1.1rem 1.3rem; margin: 1.1rem 0;
+}
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
+table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .93rem; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--border); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+th { background: color-mix(in srgb, var(--accent) 8%, var(--card)); }
+blockquote { border-left: 3px solid var(--accent); margin: 1rem 0; padding: .2rem 1rem; color: var(--muted); }
+code { background: color-mix(in srgb, var(--fg) 7%, var(--bg)); padding: .1rem .3rem; border-radius: 4px; font-size: .9em; }
+.badge {
+  display: inline-block; font-size: .78rem; font-weight: 600;
+  border: 1px solid var(--accent); color: var(--accent);
+  border-radius: 99px; padding: .05rem .6rem; margin-right: .4rem;
+}
+.aviso {
+  border: 1px solid var(--border); border-left: 4px solid var(--accent);
+  background: var(--card); border-radius: 6px;
+  padding: .8rem 1rem; font-size: .9rem; color: var(--muted); margin: 1.5rem 0;
+}
+footer.site {
+  border-top: 1px solid var(--border); background: var(--card);
+  margin-top: 2rem; font-size: .85rem; color: var(--muted);
+}
+footer.site .inner { padding-top: 1.2rem; padding-bottom: 1.6rem; }
+.prose :is(h1,h2,h3) { scroll-margin-top: 1rem; }
+.prose img { max-width: 100%; }
+ul.lista-dossie { list-style: none; padding: 0; }
+ul.lista-dossie li {
+  border: 1px solid var(--border); background: var(--card);
+  border-radius: 8px; margin: .6rem 0; padding: .8rem 1rem;
+}
+ul.lista-dossie a { font-weight: 600; text-decoration: none; }
+ul.lista-dossie .meta { color: var(--muted); font-size: .88rem; display: block; margin-top: .15rem; }

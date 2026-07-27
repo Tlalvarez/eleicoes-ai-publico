@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eleicoes.ai/schema/ficha-candidato.schema.json",
+  "title": "Ficha de Candidato — eleicoes.ai (metodologia v1.1)",
+  "type": "object",
+  "required": ["candidato", "programa", "camada1", "teste_a", "teste_b", "indice_especificidade", "rotulagem"],
+  "properties": {
+    "candidato": {
+      "type": "object",
+      "required": ["nome", "partido", "slug", "incumbente", "peso_texto_historico"],
+      "properties": {
+        "nome": {"type": "string"},
+        "partido": {"type": "string"},
+        "coligacao": {"type": "string"},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "incumbente": {"type": "boolean"},
+        "mandato_executivo_recente": {"type": "boolean"},
+        "peso_texto_historico": {"type": "string", "enum": ["50/50", "30/70"],
+          "description": "v1.1 §1: desafiante 50/50; incumbente/mandato recente 30/70"}
+      }
+    },
+    "programa": {
+      "type": "object",
+      "required": ["titulo", "paginas", "versoes"],
+      "properties": {
+        "titulo": {"type": "string"},
+        "paginas": {"type": "integer"},
+        "versoes": {
+          "type": "array", "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["data_registro", "arquivo", "hash_sha256", "proveniencia"],
+            "properties": {
+              "data_registro": {"type": "string", "format": "date"},
+              "arquivo": {"type": "string"},
+              "hash_sha256": {"type": "string"},
+              "proveniencia": {"type": "string", "description": "TSE manual / espelho com verificação de integridade"},
+              "delta_vs_anterior": {"type": "string", "enum": ["n/a", "estrutural", "retorico", "aditivo"],
+                "description": "v1.1 item 2: protocolo de delta intra-campanha"}
+            }
+          }
+        }
+      }
+    },
+    "camada1": {
+      "type": "object",
+      "required": ["ancora_fiscal", "abertura_comercial", "previdencia", "educacao", "estado_economia", "instituicoes"],
+      "properties": {
+        "ancora_fiscal": {"$ref": "#/$defs/eixo_padrao"},
+        "abertura_comercial": {"$ref": "#/$defs/eixo_padrao"},
+        "previdencia": {
+          "allOf": [{"$ref": "#/$defs/eixo_base"}],
+          "properties": {"classificacao": {"enum": ["reforma", "sustentabilidade_arrecadatoria", "mantem", "expande", "omisso"]}}
+        },
+        "educacao": {
+          "allOf": [{"$ref": "#/$defs/eixo_base"}],
+          "properties": {"classificacao": {"enum": ["qualidade_metas_mensuraveis", "acesso_gasto_retorica_qualidade", "acesso_gasto", "omisso"]}}
+        },
+        "estado_economia": {"$ref": "#/$defs/eixo_padrao"},
+        "instituicoes": {
+          "type": "object",
+          "required": ["economicas", "enquadramento_conflito"],
+          "properties": {
+            "economicas": {
+              "allOf": [{"$ref": "#/$defs/eixo_base"}],
+              "properties": {"classificacao": {"enum": ["fortalece", "mantem", "enfraquece", "omisso"]}}
+            },
+            "enquadramento_conflito": {
+              "type": "object",
+              "required": ["leitura", "citacoes"],
+              "properties": {
+                "leitura": {"type": "string", "description": "v1.1 subcampo (ii): adversário legítimo vs. inimigo; FFAA constitucional vs. tutelar; aperfeiçoar vs. refundar"},
+                "citacoes": {"$ref": "#/$defs/citacoes"}
+              }
+            }
+          }
+        }
+      }
+    },
+    "teste_a": {
+      "type": "object",
+      "required": ["veredito", "memoria_calculo_url"],
+      "properties": {
+        "gap_pct_pib": {"type": ["number", "null"], "description": "null = custo indeterminável pelo texto (veredito válido, v1.1 §5)"},
+        "veredito": {"type": "string"},
+        "restricoes_autoimpostas": {"type": "array", "items": {"type": "string"}},
+        "memoria_calculo_url": {"type": "string"}
+      }
+    },
+    "teste_b": {
+      "type": "object",
+      "required": ["coalizao", "restricao_realidade", "dependencia_pec", "patrocinio_congresso", "score", "previsao"],
+      "properties": {
+        "coalizao": {"$ref": "#/$defs/nota5"},
+        "restricao_realidade": {"$ref": "#/$defs/nota5"},
+        "dependencia_pec": {"$ref": "#/$defs/nota5"},
+        "patrocinio_congresso": {"$ref": "#/$defs/nota5"},
+        "score": {"type": "string", "enum": ["alto", "medio", "medio-baixo", "baixo"]},
+        "previsao": {"type": "string"}
+      }
+    },
+    "indice_especificidade": {
+      "type": "object",
+      "required": ["compromissos_prospectivos_quantificados", "paginas", "indice"],
+      "properties": {
+        "compromissos_prospectivos_quantificados": {"type": "integer", "description": "v1.1 item 6: exclui números retrospectivos"},
+        "paginas": {"type": "integer"},
+        "indice": {"type": "number", "description": "compromissos/página"}
+      }
+    },
+    "custo_do_sinal": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["compromisso", "marcador"],
+        "properties": {
+          "compromisso": {"type": "string"},
+          "marcador": {"type": "string", "enum": ["custoso", "neutro", "barato"]},
+          "justificativa": {"type": "string"}
+        }
+      }
+    },
+    "modulo_incumbente": {
+      "type": ["object", "null"],
+      "properties": {
+        "ploa_2027": {"type": "string"},
+        "equipe_economica": {"type": "string"},
+        "comportamento_revelado": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "cenario_2046": {
+      "type": ["object", "null"],
+      "properties": {
+        "execucao_integral": {"type": "string"},
+        "execucao_parcial": {"type": "string"},
+        "premissas": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "rotulagem": {
+      "type": "object",
+      "required": ["conteudo_assistido_ia", "revisao_humana", "data_revisao"],
+      "properties": {
+        "conteudo_assistido_ia": {"type": "boolean", "const": true},
+        "revisao_humana": {"type": "string", "description": "nome do revisor editorial"},
+        "data_revisao": {"type": "string", "format": "date"}
+      }
+    }
+  },
+  "$defs": {
+    "citacoes": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["pagina", "parafrase"],
+        "properties": {
+          "pagina": {"type": ["integer", "string"]},
+          "secao": {"type": "string"},
+          "parafrase": {"type": "string", "description": "paráfrase como padrão; citação textual curta apenas quando indispensável"},
+          "citacao_curta": {"type": "string", "maxLength": 280}
+        }
+      }
+    },
+    "eixo_base": {
+      "type": "object",
+      "required": ["classificacao", "citacoes", "custo_sinal"],
+      "properties": {
+        "classificacao": {"type": "string"},
+        "citacoes": {"$ref": "#/$defs/citacoes"},
+        "custo_sinal": {"type": "string", "enum": ["custoso", "neutro", "barato"]},
+        "delta_plataformas": {"type": "string", "description": "leitura da série histórica do candidato/partido (v1.1 itens 5)"}
+      }
+    },
+    "eixo_padrao": {
+      "allOf": [{"$ref": "#/$defs/eixo_base"}],
+      "properties": {"classificacao": {"enum": ["aperta", "abre", "reduz", "fortalece", "mantem", "afrouxa", "fecha", "amplia", "enfraquece", "reforma", "expande", "omisso"]}}
+    },
+    "nota5": {"type": "integer", "minimum": 1, "maximum": 5}
+  }
+}

@@ -1,0 +1,52 @@
+---
+title: "Verificação Documental — Caso 2014 / Aécio Neves"
+slug: "2014-aecio"
+ordem: 3
+---
+# Verificação Documental — Caso 2014 / Aécio Neves
+
+**Anexo ao Backtest Piloto 2014 | Metodologia v1.0, seção 10**
+**Fonte primária:** "Diretrizes Gerais — Plano de Governo, Aécio Neves – PSDB, 2014" (76 pp., registrado no TSE em jul/2014, coligação Muda Brasil). Texto integral via espelho da RAPS (raps.org.br, arquivo publicado em set/2014). Integridade: título idêntico ao noticiado no registro, estrutura em 8 áreas + diretrizes numeradas conferindo com as descrições de imprensa da época ("mais de 200 ações"). Verificação executada em 26/07/2026.
+
+**Nota de natureza do documento:** o texto se autodeclara "ponto de partida" a ser detalhado durante a campanha (p. 4) — é uma lista de diretrizes, não um plano operacional. Isso antecipa em 8 anos o achado-2022 (vagueza estratégica como meta-sinal) e é relevante para o índice de especificidade: o documento registrado é sistematicamente menos específico do que o discurso econômico da campanha (Armínio Fraga) sugeria.
+
+## Resultado por eixo (dry-run → verificado)
+
+**Âncora fiscal — APERTA: CONFIRMADO, com refinamento de evidência.** O capítulo de política macroeconômica compromete-se com "cumprimento inequívoco" do tripé — inflação no centro da meta, "superávit primário obtido sem artifícios contábeis", câmbio flutuante (p. 44); superávit dimensionado para reduzir gradualmente as dívidas líquida e bruta/PIB, com ajuste cíclico admitido (p. 44); e inclusão de todas as despesas, subsídios e desonerações no cômputo do gasto, vedando gastos extraorçamentários — apresentada como "condição básica para o funcionamento de uma democracia" (p. 44), resposta direta e datável à contabilidade criativa 2012-14. *Refinamento:* o dry-run citou "metas críveis de primário" e "conselho de gestão fiscal" — nenhum dos dois está no texto: não há número de primário nem conselho. A âncora textual é tripé + superávit redutor de dívida + fim dos artifícios. Classificação mantida, evidência corrigida (mesmo padrão da correção "teto" no caso Bolsonaro-2018).
+
+**Abertura comercial — ABRE (MODERADO): CONFIRMADO COM EVIDÊNCIA DIRETA.** Diagnóstico textual de que o Brasil deve "deixar de ser um dos mais fechados do mundo" (p. 32 — a mesma formulação que reapareceria no programa Bolsonaro-2018); "reforma tarifária que confira maior racionalidade à estrutura de proteção", com cronograma anunciado com antecedência e implantação gradual (p. 33); conclusão do acordo com a União Europeia e "bases para um acordo preferencial com os Estados Unidos" (p. 34); na política externa, "restabelecer a primazia da liberalização comercial" e flexibilizar as regras do Mercosul — descrito como "paralisado e sem estratégia" — para permitir negociações com terceiros (p. 56). O qualificador "moderado" do dry-run é exato: racionalização gradual e negociada, não liberalização unilateral.
+
+**Previdência — OMISSO/PARCIAL: CONFIRMADO NO RAMO "PARCIAL", com refinamento.** Não é omissão: há seção própria (p. 45) que nomeia o problema com precisão — "mudanças demográficas estão na raiz dos desequilíbrios", foco na "melhoria do equilíbrio atuarial". Mas as cinco diretrizes são todas não-estruturais: crescimento, formalização, cadastro único contra fraudes, redução de rotatividade, melhoria de serviços. Nenhuma medida paramétrica (idade, regras de acesso). *Simetria notável com Haddad-2018:* os dois campos, em eleições distintas, oferecem a mesma resposta arrecadatória — divergindo apenas no enquadramento (Aécio nomeia a demografia como causa; o texto petista rejeita a premissa). Diagnóstico correto sem instrumento é sinal de cautela eleitoral, e a régua deve exibi-lo como tal.
+
+**Educação — CORREÇÃO PARCIAL (misto → qualidade com desenho de incentivo, sem metas quantificadas).** O dry-run classificou "misto — qualidade citada, instrumentos pouco especificados". A leitura integral corrige a segunda metade: os instrumentos *estão* especificados — remuneração docente vinculada à melhoria da aprendizagem dos alunos (p. 48), acordos de resultados entre governos locais e cada escola (p. 49), repasses condicionados a metas pactuadas (p. 51), prêmio de produtividade por metas alcançadas (p. 52), Base Nacional Comum definindo "o que é básico e indispensável que todos os alunos aprendam em cada ano" (p. 49), reforma de ENEM/ENADE (p. 52). O que falta são metas quantitativas de aprendizagem: os compromissos numéricos são de insumo (10% do PIB, p. 52; universalização da pré-escola até 2016, p. 50). É a imagem em espelho da correção educação-2014-Dilma: lá, retórica de qualidade sem instrumento; aqui, instrumento de qualidade sem meta. A categoria intermediária criada na v1.0 verificada cobre os dois lados.
+
+**Estado na economia — REDUZ: CORREÇÃO RELEVANTE DE EVIDÊNCIA (direção mantida, grau enfraquecido).** As três evidências do dry-run — realismo de preços na Petrobras, redução do papel do BNDES, revisão de desonerações — **não estão no texto registrado**. O que o documento contém é mais suave: PPPs como instrumento recorrente (infraestrutura p. 40, prisões p. 66, saneamento p. 71, unidades de conservação p. 74), agências reguladoras "de fato independentes" (p. 40), profissionalização de estatais com contratos de gestão e metas (p. 69), "gastar mais com o cidadão e menos com a máquina" (p. 53), desburocratização, e — quanto à Petrobras — "resgate do papel da Petrobrás como instrumento vital da política energética" (p. 69) com "transparência e previsibilidade na formação de preços e tarifas" (p. 69). Não há programa de privatização, corte nomeado de subsídios ou redução explícita do BNDES. A direção "reduz" sobrevive em grau moderado (Estado regulador-gerencial vs. Estado indutor da incumbente — o contraste estrutural com o programa Dilma permanece nítido), mas a evidência forte do dry-run pertencia ao discurso da equipe econômica da campanha, não ao documento. **Achado metodológico: contaminação de camadas** — o dry-run atribuiu ao texto (objeto 1a) sinais que eram do candidato/equipe (objeto 1b).
+
+**Instituições — FORTALECE: CONFIRMADO COM EVIDÊNCIA DIRETA.** "Autonomia operacional ao Banco Central" explícita, com meta de 4,5% e redução gradual da meta e da banda (p. 44); agências independentes (p. 40); vedação de gastos extraorçamentários enquadrada como questão democrática (p. 44); e um "compromisso fundamental" de abertura com liberdade de imprensa, de opinião, independência dos Poderes e Federação (p. 6). *Aplicação do subcampo v1.1 (teste de simetria, terceiro caso):* (i) econômicas — fortalece, com evidência direta; (ii) enquadramento do conflito político — adversário tratado como competidor legítimo, zero linguagem de inimigo interno; FFAA em chave administrativa-constitucional (Defesa como política de Estado, modernização gerencial, ministro sem conotação tutelar, p. 55). É o documento com menor temperatura de conflito entre os cinco já verificados — e o subcampo lê isso como informação, não como ausência.
+
+## Teste A — CONFIRMADO, com agravamento do gap registrado
+
+Compromissos identificados no texto: 10% do PIB em educação, sendo 7% até 2019 (p. 52); apoio à proposta de 10% da Receita Corrente Bruta da União para a saúde "ou política similar" (p. 60); 2% do PIB em CT&I até 2020 (p. 31); fundos de segurança "sem contingenciamento" (p. 64); Fundo de Valorização da Polícia (p. 65); continuidade dos ganhos reais do salário mínimo (p. 37); desonerações setoriais novas (PIS/COFINS saneamento, p. 71); manutenção de programa habitacional nos moldes do MCMV (p. 19). Restrição autoimposta: "aumentar a carga tributária deixou de ser uma opção viável" (pp. 45-46). Receitas novas: nenhuma — a "revisão de desonerações como receita implícita" que o dry-run creditou não está no texto. Resultado: metas de gasto de vários pontos do PIB + carga constante + superávit primário crescente, conciliados apenas por crescimento e eficiência não quantificados. O veredito relativo do piloto (gap menor que o da incumbente) sobrevive — o compromisso com superávit e fim dos artifícios é a medida de contenção, e é sinal custoso; mas o gap absoluto é maior do que o piloto registrou.
+
+## Teste B — CONFIRMADO (com a assimetria declarada)
+
+Núcleo da agenda com dependência legislativa moderada: autonomia do BC (lei), simplificação tributária (LC/PEC), maioria dos itens infralegal ou gerencial. Score médio do dry-run compatível com o texto. Candidato derrotado: pela regra de assimetria (achado 2014.4), valida-se detecção e consistência; nada se conclui sobre desfecho hipotético.
+
+## Ajuste metodológico decorrente (changelog)
+
+3. **Separação de camadas na Camada 1 (novo, para v1.1).** Classificações do eixo "texto" (objeto 1a) só podem citar o documento registrado; declarações do candidato e da equipe econômica pertencem ao objeto 1b (histórico/declarações) e não podem contaminar a classificação textual. Precedente calibrador: Aécio-2014, onde três evidências do dry-run (preços Petrobras, BNDES, desonerações) estavam no discurso da campanha, não no texto — a verificação as reclassificou sem inverter a direção. Corolário para 2026: o índice de especificidade deve ser calculado exclusivamente sobre o texto registrado.
+
+## Placar da verificação documental (parcial)
+
+| Caso | Eixos confirmados | Corrigidos | Invertidos | Status |
+|---|---|---|---|---|
+| 2014 Dilma | 5 (2 reforçados) | 1 parcial (educação) | 0 | ✅ concluído |
+| 2014 Aécio | 4 (2 reforçados) | 2 parciais (educação; estado-evidência) | 0 | ✅ concluído |
+| 2018 Bolsonaro | 5 (2 reforçados) | 1 relevante (instituições) | 0 | ✅ concluído |
+| 2018 Haddad | 5 (3 reforçados) | 1 parcial (previdência) | 0 | ✅ concluído |
+| 2022 Lula / Bolsonaro | — | — | — | pendente |
+| 2002 / 2006 | — | — | — | pendente |
+
+## Conclusão parcial
+
+O par 2014 (Dilma × Aécio) está agora verificado dos dois lados: os programas eram estruturalmente distinguíveis no texto primário — Estado indutor com âncora omissa vs. tripé explícito com Estado regulador — confirmando a leitura ex-ante do piloto. As duas correções deste caso são instrutivas e simétricas às anteriores: em educação, o dry-run subestimou o documento; em estado-na-economia, superestimou-o com evidência que pertencia à campanha, não ao texto. Nenhuma inversão. A correção de contaminação de camadas gera o terceiro item de changelog para a v1.1 — e reforça, pela via oposta à de 2018, o mesmo princípio: o texto e o candidato são objetos distintos, e a régua só funciona quando não os mistura.
