@@ -1,18 +1,18 @@
 ---
-title: "Verificação Documental — Caso 2018 / Fernando Haddad"
+title: "2018 · Fernando Haddad"
+caso: "Caso 2018 — Fernando Haddad"
 slug: "2018-haddad"
 ordem: 4
+resultado: "5 eixos confirmados (3 reforçados), 1 correção parcial (previdência: de omisso para rejeição explícita); delta entre as versões registradas documentado e datado em 11/09/2018."
+fontes:
+  - "Versão registrada com a candidatura Lula (ago/2018): “Plano Lula de Governo — O Brasil Feliz de Novo 2019-2022” (documento-base, 68 pp.) — espelho poder360; arquivo oficial do TSE de 17/08/2018 (62 pp., formato-coligação, com Constituinte) também obtido"
+  - "Versão revisada: “Plano de Governo 2019-2022 — Coligação O Povo Feliz de Novo” (62 pp.) — acervo pt.org.br; arquivo oficial do TSE de 11/09/2018 com texto 100% idêntico ao espelho"
+integridade: "Fechada nos arquivos oficiais do DivulgaCandContas — ver adendo de integridade e datação no corpo do anexo."
+verificado: "26/07/2026"
+bonus: false
 ---
-# Verificação Documental — Caso 2018 / Fernando Haddad
+## Adendo de integridade e datação (26/07/2026)
 
-**Anexo ao Backtest Piloto 2018 | Metodologia v1.0, seção 10**
-**Fontes primárias:**
-1. **Versão registrada (ago/2018):** "Plano Lula de Governo — O Brasil Feliz de Novo 2019-2022" (68 pp., documento-base aprovado pelo Diretório Nacional do PT em 03/07/2018, registrado no TSE em 15/08/2018 com a candidatura Lula, herdada por Haddad). Texto integral via espelho de imprensa (static.poder360.com.br, publicado em ago/2018). Integridade: título, subtítulo e data de aprovação partidária conferem com as descrições de imprensa do registro; contém a seção 1.4 (Constituinte) cuja remoção posterior foi noticiada — âncora que distingue esta versão da revisada.
-2. **Versão revisada (out/2018):** "Plano de Governo 2019-2022 — Coligação O Povo Feliz de Novo (PT-PCdoB-PROS)" (62 pp., entregue ao TSE em 16-18/10/2018). Texto integral via acervo do próprio PT (pt.org.br/wp-content). Integridade: bate item a item com o delta descrito pela imprensa da época (Exame, Estado de Minas, Gazeta do Povo, out/2018): seção da Constituinte removida, críticas nominais a Bolsonaro adicionadas (3 menções), programa de emprego renomeado, linguagem de "equilíbrio fiscal" adicionada à introdução.
-
-Verificação executada em 26/07/2026. Nota: o acervo FPA (siac.fpabramo.org.br) segue como fonte candidata para conferência cruzada; os espelhos acima foram considerados íntegros pelos testes de âncora. Objeto primário da Camada 1: a versão registrada de agosto (a que concorreu durante quase toda a campanha); o delta para outubro é documentado em seção própria — a substituição em si é sinal.
-
-**ADENDO DE INTEGRIDADE E DATAÇÃO (26/07/2026, conferência nos arquivos oficiais do DivulgaCandContas, baixados via interface):**
 1. **Integridade fechada:** o arquivo oficial da candidatura Haddad (`proposta_1536702143353.pdf`, em `fontes/2018-haddad/`) tem **texto 100% idêntico** ao espelho pt.org.br usado neste anexo (62 pp., similaridade 1.0). O arquivo oficial da candidatura Lula-2018/Inapto (`proposta_1534530480902.pdf`) também foi obtido.
 2. **Correção de datação do delta:** os timestamps oficiais mostram que (a) a versão registrada com a candidatura **Lula em 17/08/2018** é um documento de **62 pp. da Coligação** ("Plano Lula de Governo — O Povo Feliz de Novo") **com a Constituinte (7 menções)** e todas as âncoras da Camada 1 deste anexo (EC 95, mandato dual, imposto sobre exportação, controles de capital, mandatos no Sistema de Justiça, referendos revocatórios) — o espelho poder360 de 68 pp. usado como objeto primário é o **documento-base partidário** dessa mesma versão, com conteúdo programático equivalente; (b) a versão **sem Constituinte e com críticas nominais a Bolsonaro** foi registrada já em **11/09/2018**, com a formalização da candidatura Haddad — e não em outubro, como noticiou a imprensa da época (o TSE não registra nenhuma substituição posterior). **O delta documentado neste anexo permanece integralmente válido em conteúdo; a data correta da substituição é 11/09/2018.** A leitura metodológica não muda: recuo retórico-simbólico sob pressão de moderação (agora datado na troca de titularidade da chapa), núcleo econômico intacto.
 
@@ -55,17 +55,7 @@ Dependência de PEC ou supermaioria em quase todo o núcleo: revogar a EC 95, IV
 1. **Confirmação de simetria do subcampo institucional (v1.1 proposto).** O subcampo "enquadramento do conflito político" criado a partir do caso Bolsonaro-2018 captura sinal real também no programa do campo oposto (deslegitimação do ciclo político + refundação constituinte), com as FFAA enquadradas em chave inversa. Registro de que o ajuste não é direcionado: a mesma lente lê os dois lados. Apto a consolidar na v1.1.
 2. **Protocolo de delta intra-campanha (novo, para v1.1).** Substituições de programa registradas no TSE durante a campanha passam a exigir: comparação integral versão a versão, classificação do delta em estrutural (muda eixo) vs. retórico (muda enquadramento), e leitura pelo índice de custo do sinal. Precedente calibrador: Haddad out/2018 — delta 100% retórico, direção estrutural intacta.
 
-## Placar da verificação documental (parcial)
 
-| Caso | Eixos confirmados | Corrigidos | Invertidos | Status |
-|---|---|---|---|---|
-| 2014 Dilma | 5 (2 reforçados) | 1 parcial (educação) | 0 | ✅ concluído |
-| 2018 Bolsonaro | 5 (2 reforçados) | 1 relevante (instituições) | 0 | ✅ concluído |
-| 2018 Haddad | 5 (3 reforçados) | 1 parcial (previdência) | 0 | ✅ concluído |
-| 2014 Aécio | — | — | — | pendente (acervo PSDB/ITV) |
-| 2022 Lula / Bolsonaro | — | — | — | pendente (FPA / espelhos) |
-| 2002 / 2006 | — | — | — | pendente (FPA) |
-
-## Conclusão parcial
+## Síntese do caso
 
 Primeiro caso verificado de candidato derrotado e primeiro com duas versões registradas. A fonte primária confirmou as 6 direções estruturais do dry-run (nenhuma inversão), corrigiu uma categoria (previdência: de omissão para rejeição explícita — sinal mais forte, não mais fraco) e revelou que o dry-run *subestimou* a densidade de sinal do documento em três eixos (abertura, âncora e instituições). O par Bolsonaro × Haddad 2018, agora ambos verificados, documenta que os dois programas eram estruturalmente opostos e ambos legíveis ex-ante — inclusive na dimensão institucional, desde que lidos pela régua do subcampo v1.1. A verificação do delta ago→out estabelece o precedente calibrador do protocolo de substituição de programas para 2026.

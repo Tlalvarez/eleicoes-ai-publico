@@ -9,15 +9,34 @@ export async function getStaticPaths() {
   }));
 }
 const { doc } = Astro.props;
-const { Content } = doc;
+const { Content, frontmatter: fm } = doc;
 ---
-<Base title={doc.frontmatter.title}>
+<Base title={fm.title}>
   <p><a href="/verificacao">← Voltar ao dossiê</a></p>
+  <p style="margin-bottom:.3rem">
+    <span class="badge">Anexo de verificação</span>
+    {fm.bonus && <span class="badge">bônus · formato compacto</span>}
+  </p>
+  <h1>{fm.caso}</h1>
+  <p class="lead">{fm.resultado}</p>
+
+  <div class="card" style="font-size:.92rem">
+    <dl style="margin:0">
+      <dt style="font-weight:700">Fonte{fm.fontes.length > 1 ? 's' : ''} primária{fm.fontes.length > 1 ? 's' : ''}</dt>
+      {fm.fontes.map((f) => <dd style="margin:0 0 .4rem 0">{f}</dd>)}
+      <dt style="font-weight:700;margin-top:.6rem">Integridade</dt>
+      <dd style="margin:0">{fm.integridade}</dd>
+      <dt style="font-weight:700;margin-top:.6rem">Verificação executada em</dt>
+      <dd style="margin:0">{fm.verificado} · conforme Metodologia v1.1, seção 10</dd>
+    </dl>
+  </div>
+
   <div class="prose">
     <Content />
   </div>
   <div class="aviso">
-    Anexo de verificação conforme a Metodologia v1.1, seção 10. Proveniência da fonte primária declarada
-    no cabeçalho; classificações com citação de página; confirmado/corrigido/invertido registrado honestamente.
+    Classificações com citação de página; confirmado/corrigido/invertido registrado honestamente —
+    as correções são ativo de credibilidade, não constrangimento. Para candidatos derrotados, o backtest
+    valida apenas detecção e consistência, nunca desfecho hipotético.
   </div>
 </Base>

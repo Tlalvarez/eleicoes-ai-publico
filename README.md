@@ -10,7 +10,7 @@ da metodologia, do changelog e das verificações é salvaguarda de neutralidade
 | Caminho | Conteúdo |
 |---|---|
 | `src/content/metodologia.md` | Metodologia v1.1 (herda a v1.0 congelada + changelog da verificação documental) |
-| `src/content/verificacao/` | Dossiê: 7 anexos de verificação documental dos backtests 2002–2022 |
+| `src/content/verificacao/` | Dossiê: 7 anexos de verificação documental dos backtests 2002–2022 (edição para leitura web: proveniência e integridade em frontmatter estruturado, renderizadas como box padronizado; o conteúdo analítico é idêntico ao registro de arquivo) |
 | `data/fichas/ficha-candidato.schema.json` | Schema JSON das fichas por candidato (publicação: 1º/9/2026) |
 | `src/` | Site estático (Astro, zero JavaScript no cliente) |
 

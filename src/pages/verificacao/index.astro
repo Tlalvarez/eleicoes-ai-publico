@@ -4,15 +4,6 @@ const mods = import.meta.glob('../../content/verificacao/*.md', { eager: true })
 const casos = Object.entries(mods)
   .map(([path, m]) => ({ slug: path.split('/').pop().replace('.md', ''), ...m.frontmatter }))
   .sort((a, b) => (a.ordem ?? 99) - (b.ordem ?? 99));
-const resumo = {
-  '2002-lula': 'A moderação estava no texto registrado, não só na Carta ao Povo — correção honesta à nossa própria análise.',
-  '2002-serra': 'Bônus: tripé literal confirmado; os dois programas de 2002 convergiam em política comercial.',
-  '2006-lula': 'A direção desenvolvimentista do 2º mandato estava textualizada no programa de reeleição.',
-  '2014-aecio': 'Duas correções: subestimamos a educação e citamos evidências que eram da campanha, não do texto.',
-  '2018-haddad': 'Delta entre as duas versões registradas documentado; previdência corrigida de "omisso" para rejeição explícita.',
-  '2022-lula': 'Dry-run 100% confirmado; PDF oficial do TSE byte a byte idêntico ao espelho usado.',
-  '2022-bolsonaro': 'A omissão do teto de gastos por quem o rompeu: o silêncio fiscal mais informativo da série.',
-};
 ---
 <Base title="Dossiê de verificação documental">
   <h1>Dossiê de verificação documental</h1>
@@ -22,20 +13,22 @@ const resumo = {
     inversões estão registradas caso a caso — as correções são ativo de credibilidade, não constrangimento.
   </p>
   <div class="card">
-    <strong>Placar consolidado:</strong> 9 documentos primários · 0 inversões de classificação ·
-    correções registradas em changelog público (8 itens incorporados à metodologia v1.1).
-    Casos centrais (2014 Dilma e 2018 Bolsonaro) verificados na sessão de origem; anexos abaixo.
+    <strong>Placar consolidado:</strong> 9 documentos primários lidos na íntegra · 0 inversões de classificação ·
+    8 correções e refinamentos incorporados como changelog público à metodologia v1.1 · integridade conferida
+    contra os arquivos oficiais do TSE (2018 e 2022; para 2014, espelhos com âncoras verificadas — o acervo
+    oficial está indisponível no DivulgaCandContas).
   </div>
   <ul class="lista-dossie">
     {casos.map((c) => (
       <li>
-        <a href={`/verificacao/${c.slug}`}>{c.title.replace('Verificação Documental — ', '').replace(' (bônus, formato compacto)', ' (bônus)')}</a>
-        <span class="meta">{resumo[c.slug] ?? ''}</span>
+        <a href={`/verificacao/${c.slug}`}>{c.caso}</a>
+        <span class="meta">{c.resultado}</span>
       </li>
     ))}
   </ul>
   <div class="aviso">
-    Regra de assimetria: para candidatos derrotados, o backtest valida apenas detecção e consistência —
-    nunca desfecho hipotético. Citações textuais são curtas e mínimas; a paráfrase é o padrão.
+    Os casos centrais da calibração (2014 Dilma e 2018 Bolsonaro) foram verificados na sessão de origem da
+    metodologia e seus achados estão incorporados à v1.1; os sete anexos acima completam a fila. Citações
+    textuais são curtas e mínimas; a paráfrase é o padrão.
   </div>
 </Base>

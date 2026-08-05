@@ -1,13 +1,15 @@
 ---
-title: "Verificação Documental (bônus, formato compacto) — Caso 2002 / José Serra"
+title: "2002 · Serra (bônus)"
+caso: "Caso 2002 — José Serra (bônus, formato compacto)"
 slug: "2002-serra"
 ordem: 1
+resultado: "Tripé macroeconômico literal no texto; achado de convergência — os dois programas de 2002 propunham substituição de importações e esforço exportador."
+fontes:
+  - "“Trabalho e Progresso para Todos” (80 pp., ago/2002, Coligação Grande Aliança PSDB-PMDB, vice Rita Camata) — acervo oficial do PSDB (static.psdb.org.br)"
+integridade: "Acervo oficial do partido. Pendência registrada: Alckmin-2006 ainda sem espelho íntegro localizado (candidatos: acervo ITV, Biblioteca Digital do TSE)."
+verificado: "26/07/2026"
+bonus: true
 ---
-# Verificação Documental (bônus, formato compacto) — Caso 2002 / José Serra
-
-**Anexo aos Backtests | Metodologia v1.0, seção 10**
-**Fonte primária:** "Trabalho e Progresso para Todos — Programa do Governo José Serra" (80 pp., agosto de 2002, Coligação Grande Aliança PSDB-PMDB, vice Rita Camata). Texto integral via acervo oficial do PSDB (static.psdb.org.br/biblioteca). Verificação executada em 26/07/2026. **Pendência:** Alckmin-2006 não localizado em espelho íntegro confiável nesta sessão (candidatos: acervo ITV, biblioteca digital do TSE — ver lista de downloads manuais no relatório de sessão).
-
 ## Resultado por eixo (compacto)
 
 **Âncora fiscal — APERTA/MANTÉM (tripé explícito): CONFIRMADO COM EVIDÊNCIA DIRETA.** A única afirmação do dry-run sobre este documento ("continuidade explícita do tripé") está literal: "o Governo José Serra garantirá a manutenção do tripé: regime de livre flutuação cambial, regime monetário baseado em metas de inflação e, sobretudo, o novo regime fiscal marcado pela austeridade" (p. 16); "serão gerados os superávits primários que forem necessários", trajetória declinante da dívida/PIB com meta de grau de investimento (p. 16); LRF cumprida "com rigor" e reivindicada como obra própria (p. 16). Restrição autoimposta: fechar a equação fiscal "sem novos ou maiores impostos" (pp. 16-17).

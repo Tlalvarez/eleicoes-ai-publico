@@ -1,14 +1,18 @@
 ---
-title: "Verificação Documental — Caso 2022 / Jair Bolsonaro (incumbente)"
+title: "2022 · Jair Bolsonaro (incumbente)"
+caso: "Caso 2022 — Jair Bolsonaro (incumbente)"
 slug: "2022-bolsonaro"
 ordem: 6
+resultado: "2/2 afirmações do dry-run confirmadas + 6 eixos classificados; omissão total do teto de gastos e contradição fiscal interna documentadas."
+fontes:
+  - "“Pelo Bem do Brasil — Plano de Governo 2023-2026” (48 pp., registrado em ago/2022; autodenominado “Caminho da Prosperidade — Construindo uma Grande Nação”, p. 7) — espelho poder360 (versão definitiva)"
+integridade: "Fechada: texto ≥99,87% idêntico por página ao arquivo oficial do DivulgaCandContas (diferenças = ruído de extração)."
+verificado: "26/07/2026"
+bonus: false
 ---
-# Verificação Documental — Caso 2022 / Jair Bolsonaro (incumbente)
+## Nota sobre o piloto compacto
 
-**Anexo ao Backtest Piloto 2022 | Metodologia v1.0, seção 10**
-**Fonte primária:** "Pelo Bem do Brasil — Plano de Governo 2023-2026" (48 pp., registrado no TSE em ago/2022; o texto se autodenomina internamente "Caminho da Prosperidade — Construindo uma Grande Nação", p. 7, declarando continuidade ao documento de 2018). Texto integral via espelho de imprensa (static.poder360.com.br, versão "definitivo", ago/2022). Integridade: 48 páginas exatas conforme descrição da imprensa do documento protocolado; estrutura de 6 eixos + introdução conferem com as reportagens da época (Agência Brasil, Correio Braziliense). Verificação executada em 26/07/2026.
-
-**Nota sobre o piloto:** o backtest 2022 compacto fez duas afirmações textuais verificáveis sobre este documento ("continuidade" e "texto pouco específico"), atribuindo o peso da análise à camada de histórico (comportamento revelado 2021-22). Este anexo verifica as duas afirmações **e** produz a primeira classificação completa dos 6 eixos.
+o backtest 2022 compacto fez duas afirmações textuais verificáveis sobre este documento ("continuidade" e "texto pouco específico"), atribuindo o peso da análise à camada de histórico (comportamento revelado 2021-22). Este anexo verifica as duas afirmações **e** produz a primeira classificação completa dos 6 eixos.
 
 ## Resultado por eixo (dry-run → verificado)
 
@@ -40,18 +44,7 @@ Agenda de gasto (R$ 600, isenção IR): executabilidade alta no Congresso pós-2
 
 6. **Especificidade prospectiva vs. retrospectiva (novo, para v1.1).** O índice de especificidade passa a contar exclusivamente compromissos futuros quantificados e datáveis; estatísticas retrospectivas de balanço são excluídas do numerador. Precedente calibrador: Bolsonaro-2022, documento numericamente denso e prospectivamente vago — sem a regra, o índice premiaria propaganda de balanço, com viés sistemático pró-incumbente.
 
-## Placar da verificação documental (parcial)
 
-| Caso | Eixos confirmados | Corrigidos | Invertidos | Status |
-|---|---|---|---|---|
-| 2014 Dilma | 5 (2 reforçados) | 1 parcial (educação) | 0 | ✅ concluído |
-| 2014 Aécio | 4 (2 reforçados) | 2 parciais | 0 | ✅ concluído |
-| 2018 Bolsonaro | 5 (2 reforçados) | 1 relevante (instituições) | 0 | ✅ concluído |
-| 2018 Haddad | 5 (3 reforçados) | 1 parcial (previdência) | 0 | ✅ concluído |
-| 2022 Lula | 3/3 dry-run + 6 eixos novos | 0 | 0 | ✅ concluído |
-| 2022 Bolsonaro | 2/2 dry-run + 6 eixos novos | 0 | 0 | ✅ concluído |
-| 2002 / 2006 | — | — | — | pendente (FPA) |
-
-## Conclusão parcial
+## Síntese do caso
 
 As duas afirmações do piloto compacto ("continuidade"; "pouco específico") sobreviveram à fonte primária, e a classificação completa acrescenta três achados: a omissão total do teto de gastos por quem o rompeu (o silêncio fiscal mais eloquente dos sete documentos verificados), a contradição interna ajuste-retórico × gasto-quantificado, e a distinção especificidade retrospectiva/prospectiva que gera o sexto item de changelog. O par 2022 está completo: os dois finalistas registraram os dois documentos mais vagos da série verificada — a tese da ambiguidade estratégica dos favoritos, agora com texto primário dos dois lados. E a série 2018→2022 do mesmo candidato, verificada nas duas pontas, mostra o eixo institucional migrando do enquadramento tutelar-militar para o cultural-expurgatório, com o conflito eleitoral-judiciário real permanecendo fora do texto nas duas eleições — a confirmação mais forte até aqui de que o subcampo (ii) lê o que o documento contém, e a camada de candidato lê o que ele omite.

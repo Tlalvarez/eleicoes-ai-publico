@@ -1,14 +1,18 @@
 ---
-title: "Verificação Documental — Caso 2014 / Aécio Neves"
+title: "2014 · Aécio Neves"
+caso: "Caso 2014 — Aécio Neves"
 slug: "2014-aecio"
 ordem: 3
+resultado: "4 eixos confirmados (2 reforçados), 2 correções parciais: educação subestimada; evidência de estado-na-economia pertencia ao discurso da campanha, não ao texto."
+fontes:
+  - "“Diretrizes Gerais — Plano de Governo, Aécio Neves – PSDB, 2014” (76 pp., registrado em jul/2014, coligação Muda Brasil) — espelho RAPS (raps.org.br, set/2014)"
+integridade: "Título idêntico ao noticiado no registro; estrutura (8 áreas, diretrizes numeradas) confere com a imprensa da época. O arquivo oficial de 2014 está indisponível no DivulgaCandContas (endpoint responde vazio; alternativa: pedido via LAI)."
+verificado: "26/07/2026"
+bonus: false
 ---
-# Verificação Documental — Caso 2014 / Aécio Neves
+## Natureza do documento
 
-**Anexo ao Backtest Piloto 2014 | Metodologia v1.0, seção 10**
-**Fonte primária:** "Diretrizes Gerais — Plano de Governo, Aécio Neves – PSDB, 2014" (76 pp., registrado no TSE em jul/2014, coligação Muda Brasil). Texto integral via espelho da RAPS (raps.org.br, arquivo publicado em set/2014). Integridade: título idêntico ao noticiado no registro, estrutura em 8 áreas + diretrizes numeradas conferindo com as descrições de imprensa da época ("mais de 200 ações"). Verificação executada em 26/07/2026.
-
-**Nota de natureza do documento:** o texto se autodeclara "ponto de partida" a ser detalhado durante a campanha (p. 4) — é uma lista de diretrizes, não um plano operacional. Isso antecipa em 8 anos o achado-2022 (vagueza estratégica como meta-sinal) e é relevante para o índice de especificidade: o documento registrado é sistematicamente menos específico do que o discurso econômico da campanha (Armínio Fraga) sugeria.
+o texto se autodeclara "ponto de partida" a ser detalhado durante a campanha (p. 4) — é uma lista de diretrizes, não um plano operacional. Isso antecipa em 8 anos o achado-2022 (vagueza estratégica como meta-sinal) e é relevante para o índice de especificidade: o documento registrado é sistematicamente menos específico do que o discurso econômico da campanha (Armínio Fraga) sugeria.
 
 ## Resultado por eixo (dry-run → verificado)
 
@@ -36,17 +40,7 @@ Núcleo da agenda com dependência legislativa moderada: autonomia do BC (lei), 
 
 3. **Separação de camadas na Camada 1 (novo, para v1.1).** Classificações do eixo "texto" (objeto 1a) só podem citar o documento registrado; declarações do candidato e da equipe econômica pertencem ao objeto 1b (histórico/declarações) e não podem contaminar a classificação textual. Precedente calibrador: Aécio-2014, onde três evidências do dry-run (preços Petrobras, BNDES, desonerações) estavam no discurso da campanha, não no texto — a verificação as reclassificou sem inverter a direção. Corolário para 2026: o índice de especificidade deve ser calculado exclusivamente sobre o texto registrado.
 
-## Placar da verificação documental (parcial)
 
-| Caso | Eixos confirmados | Corrigidos | Invertidos | Status |
-|---|---|---|---|---|
-| 2014 Dilma | 5 (2 reforçados) | 1 parcial (educação) | 0 | ✅ concluído |
-| 2014 Aécio | 4 (2 reforçados) | 2 parciais (educação; estado-evidência) | 0 | ✅ concluído |
-| 2018 Bolsonaro | 5 (2 reforçados) | 1 relevante (instituições) | 0 | ✅ concluído |
-| 2018 Haddad | 5 (3 reforçados) | 1 parcial (previdência) | 0 | ✅ concluído |
-| 2022 Lula / Bolsonaro | — | — | — | pendente |
-| 2002 / 2006 | — | — | — | pendente |
-
-## Conclusão parcial
+## Síntese do caso
 
 O par 2014 (Dilma × Aécio) está agora verificado dos dois lados: os programas eram estruturalmente distinguíveis no texto primário — Estado indutor com âncora omissa vs. tripé explícito com Estado regulador — confirmando a leitura ex-ante do piloto. As duas correções deste caso são instrutivas e simétricas às anteriores: em educação, o dry-run subestimou o documento; em estado-na-economia, superestimou-o com evidência que pertencia à campanha, não ao texto. Nenhuma inversão. A correção de contaminação de camadas gera o terceiro item de changelog para a v1.1 — e reforça, pela via oposta à de 2018, o mesmo princípio: o texto e o candidato são objetos distintos, e a régua só funciona quando não os mistura.
