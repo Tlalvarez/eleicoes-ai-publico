@@ -1,0 +1,36 @@
+---
+import Base from '../../layouts/Base.astro';
+import resumo from '../../../data/itens/resumo.json';
+
+const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => ({ slug, ...c }));
+---
+<Base
+  title="Candidatos"
+  description="Rastreamento por candidato: o que cada um disse na própria voz, o arquivo de 5 anos e o que circula sobre eles — mesma régua para todos."
+>
+  <h1>Candidatos acompanhados</h1>
+  <p class="lead">
+    Para cada candidato, três visões do mesmo rastreamento contínuo:
+    <strong>na própria voz</strong> (o que ele disse, recente), o <strong>arquivo de 5 anos</strong>
+    (histórico com fonte primária linkada) e as <strong>menções</strong> (o que circula sobre ele,
+    fora da análise). Cobertura simétrica: a mesma varredura para todos.
+  </p>
+  <div class="card">
+    <ul>
+      {candidatos.map((c) => (
+        <li>
+          <a href={`/candidato/${c.slug}`}><strong>{c.nome}</strong></a> —
+          {c.total > 0
+            ? `${c.total.toLocaleString('pt-BR')} itens registrados (${c.recentes} nos últimos ${resumo.janela_recentes_dias} dias)`
+            : 'sem itens registrados no período'}
+        </li>
+      ))}
+    </ul>
+    <p style="margin-bottom:0"><small>Atualizado em {resumo.gerado_em?.slice(0, 10)} ·
+    formato de dados público: <a href="https://github.com/Tlalvarez/eleicoes-ai-publico/blob/main/data/itens/item.schema.json">item.schema.json</a></small></p>
+  </div>
+  <div class="aviso">
+    Registro automatizado com links para as fontes originais — não é análise nem endosso.
+    Volume de itens reflete o quanto cada candidato publica, não avaliação editorial.
+  </div>
+</Base>

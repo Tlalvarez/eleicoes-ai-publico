@@ -1,0 +1,29 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import ListaItens from '../../../../components/ListaItens.astro';
+import resumo from '../../../../../data/itens/resumo.json';
+
+export function getStaticPaths() {
+  return Object.entries(resumo.candidatos).flatMap(([slug, c]) =>
+    c.anos.filter((a) => a !== '0000').map((ano) => ({ params: { slug, ano } })));
+}
+
+const { slug, ano } = Astro.params;
+const c = resumo.candidatos[slug];
+const anosMod = import.meta.glob('../../../../../data/itens/*/*.json', { eager: true });
+const itens = (anosMod[`../../../../../data/itens/${slug}/${ano}.json`]?.default ?? [])
+  .filter((i) => i.voz !== 'terceiro');
+---
+<Base
+  title={`Arquivo ${ano} — ${c.nome}`}
+  description={`O que ${c.nome} disse em ${ano}: vídeos, aparições, discursos e publicações listados com fonte primária; posts de redes em contadores mensais.`}
+>
+  <p><a href={`/candidato/${slug}/arquivo`}>← Arquivo de {c.nome}</a></p>
+  <h1>{c.nome} — {ano}</h1>
+  {itens.length === 0
+    ? <div class="card"><p style="margin:0">Sem itens registrados em {ano}.</p></div>
+    : <ListaItens itens={itens} agregaPosts={true} />}
+  <div class="aviso">
+    Registro automatizado com fonte primária linkada — não é análise nem endosso.
+  </div>
+</Base>

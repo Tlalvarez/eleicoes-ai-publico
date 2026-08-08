@@ -1,0 +1,62 @@
+---
+// Lista de itens canônicos (item.schema.json), agrupada por mês.
+// Posts (X/Instagram) podem ser agregados em contadores via `agregaPosts`.
+const { itens, agregaPosts = false } = Astro.props;
+
+const ROTULO = {
+  'post-x': 'post no X', 'post-instagram': 'post no Instagram', video: 'vídeo',
+  aparicao: 'aparição', discurso: 'discurso', artigo: 'publicação',
+  'pagina-arquivada': 'página arquivada', mencao: 'menção',
+};
+const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+const rotuloMes = (am) => am === 'sem-data'
+  ? 'Sem data identificada'
+  : `${MESES[Number(am.slice(5, 7)) - 1]} de ${am.slice(0, 4)}`;
+const min = (s) => (s ? ` · ${Math.round(s / 60)} min` : '');
+
+const ehPost = (i) => i.tipo === 'post-x' || i.tipo === 'post-instagram';
+const listaveis = agregaPosts ? itens.filter((i) => !ehPost(i)) : itens;
+
+const porMes = new Map();
+for (const i of listaveis) {
+  const chave = i.data ? i.data.slice(0, 7) : 'sem-data';
+  if (!porMes.has(chave)) porMes.set(chave, []);
+  porMes.get(chave).push(i);
+}
+const postsPorMes = new Map();
+if (agregaPosts) {
+  for (const i of itens.filter(ehPost)) {
+    const chave = i.data ? i.data.slice(0, 7) : 'sem-data';
+    if (!postsPorMes.has(chave)) postsPorMes.set(chave, { x: 0, ig: 0 });
+    postsPorMes.get(chave)[i.tipo === 'post-x' ? 'x' : 'ig'] += 1;
+  }
+}
+const meses = [...new Set([...porMes.keys(), ...postsPorMes.keys()])]
+  .sort().reverse();
+---
+{meses.map((mes) => (
+  <section>
+    <h2>{rotuloMes(mes)}</h2>
+    {agregaPosts && postsPorMes.has(mes) && (
+      <p><small>
+        Posts do candidato no mês:
+        {postsPorMes.get(mes).x > 0 && ` ${postsPorMes.get(mes).x} no X`}
+        {postsPorMes.get(mes).x > 0 && postsPorMes.get(mes).ig > 0 && ' ·'}
+        {postsPorMes.get(mes).ig > 0 && ` ${postsPorMes.get(mes).ig} no Instagram`}
+        {' '}(links individuais na visão “Na própria voz” do período recente)
+      </small></p>
+    )}
+    {porMes.has(mes) && (
+      <ul>
+        {porMes.get(mes).map((i) => (
+          <li>
+            {i.data && <small>{i.data} · </small>}
+            <a href={i.url} rel="nofollow noopener" target="_blank">{i.titulo ?? i.url}</a>
+            <small> — {i.fonte}{ROTULO[i.tipo] ? ` · ${ROTULO[i.tipo]}` : ''}{min(i.duracao_s)}</small>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+))}

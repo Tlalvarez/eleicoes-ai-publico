@@ -1,0 +1,44 @@
+---
+import Base from '../../../layouts/Base.astro';
+import resumo from '../../../../data/itens/resumo.json';
+
+export function getStaticPaths() {
+  return Object.keys(resumo.candidatos).map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const c = resumo.candidatos[slug];
+const anosMod = import.meta.glob('../../../../data/itens/*/*.json', { eager: true });
+const porAno = c.anos.filter((a) => a !== '0000').map((ano) => {
+  const itens = anosMod[`../../../../data/itens/${slug}/${ano}.json`]?.default ?? [];
+  const propria = itens.filter((i) => i.voz !== 'terceiro');
+  const posts = propria.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagram').length;
+  return { ano, total: propria.length, posts, longos: propria.length - posts };
+});
+---
+<Base
+  title={`Arquivo 5 anos — ${c.nome}`}
+  description={`Histórico de ${c.nome} desde agosto de 2021: posts, vídeos, aparições, discursos e páginas oficiais arquivadas, com fonte primária linkada.`}
+>
+  <p><a href={`/candidato/${slug}`}>← {c.nome}</a></p>
+  <h1>Arquivo — {c.nome}, 5 anos</h1>
+  <p class="lead">
+    Tudo que registramos de {c.nome} na própria voz (e de assessorias oficiais arquivadas)
+    desde agosto de 2021, ano a ano. Vídeos, aparições, discursos e publicações são listados
+    individualmente; posts de redes aparecem como contadores mensais.
+  </p>
+  <div class="card">
+    <ul>
+      {porAno.map((a) => (
+        <li>
+          <a href={`/candidato/${slug}/arquivo/${a.ano}`}><strong>{a.ano}</strong></a> —
+          {a.total.toLocaleString('pt-BR')} itens ({a.longos} de conteúdo longo · {a.posts.toLocaleString('pt-BR')} posts)
+        </li>
+      ))}
+    </ul>
+  </div>
+  <div class="aviso">
+    A base histórica cobre agosto/2021 a hoje; lacunas de cobertura são explícitas
+    (ex.: histórico profundo de Instagram ainda parcial). Links levam às fontes originais.
+  </div>
+</Base>

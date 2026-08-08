@@ -1,14 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
-import dados from '../../../data/mencoes/mencoes.json';
+import resumo from '../../../data/itens/resumo.json';
 
-const candidatos = Object.entries(dados.candidatos).map(([slug, c]) => ({
+const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => ({
   slug,
   nome: c.nome,
-  total: c.mencoes.length,
-  ultima: c.mencoes[0]?.data ?? null,
+  total: c.contadores['terceiro:mencao'] ?? 0,
 }));
-const gerado = dados.gerado_em?.slice(0, 10);
+const gerado = resumo.gerado_em?.slice(0, 10);
 ---
 <Base
   title="Menções"
@@ -34,9 +33,9 @@ const gerado = dados.gerado_em?.slice(0, 10);
     <ul>
       {candidatos.map((c) => (
         <li>
-          <a href={`/mencoes/${c.slug}`}><strong>{c.nome}</strong></a> —
+          <a href={`/candidato/${c.slug}/mencoes`}><strong>{c.nome}</strong></a> —
           {c.total > 0
-            ? `${c.total} ${c.total === 1 ? 'menção registrada' : 'menções registradas'}${c.ultima ? ` · última em ${c.ultima}` : ''}`
+            ? `${c.total} ${c.total === 1 ? 'menção registrada' : 'menções registradas'}`
             : 'sem menções registradas no período'}
         </li>
       ))}

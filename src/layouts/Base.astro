@@ -19,6 +19,7 @@ const atual = (p) => (path === p || path.startsWith(p + '/') || path === p + '.h
       <div class="inner">
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
         <nav class="main" aria-label="Principal">
+          <a href="/candidato" aria-current={atual('/candidato')}>Candidatos</a>
           <a href="/metodologia" aria-current={atual('/metodologia')}>Metodologia</a>
           <a href="/verificacao" aria-current={atual('/verificacao')}>Dossiê de verificação</a>
           <a href="/fichas" aria-current={atual('/fichas')}>Fichas 2026</a>

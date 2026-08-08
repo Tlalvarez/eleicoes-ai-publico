@@ -1,0 +1,35 @@
+---
+import Base from '../../../layouts/Base.astro';
+import ListaItens from '../../../components/ListaItens.astro';
+import resumo from '../../../../data/itens/resumo.json';
+
+export function getStaticPaths() {
+  return Object.keys(resumo.candidatos).map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const c = resumo.candidatos[slug];
+const recentesMod = import.meta.glob('../../../../data/itens/*/recentes.json', { eager: true });
+const recentes = recentesMod[`../../../../data/itens/${slug}/recentes.json`]?.default ?? [];
+const voz = recentes.filter((i) => i.voz === 'propria');
+---
+<Base
+  title={`Na própria voz — ${c.nome}`}
+  description={`Tudo que ${c.nome} disse nos últimos ${resumo.janela_recentes_dias} dias: posts, vídeos, aparições e discursos, com link para cada fonte original.`}
+>
+  <p><a href={`/candidato/${slug}`}>← {c.nome}</a></p>
+  <h1>Na própria voz — {c.nome}</h1>
+  <p class="lead">
+    O que {c.nome} disse nos últimos {resumo.janela_recentes_dias} dias, na própria voz:
+    posts, vídeos dos canais oficiais, aparições longas (sabatinas, entrevistas, podcasts)
+    e discursos. Cada item linka a fonte original. Histórico completo no
+    <a href={`/candidato/${slug}/arquivo`}>arquivo de 5 anos</a>.
+  </p>
+  {voz.length === 0
+    ? <div class="card"><p style="margin:0">Sem itens no período.</p></div>
+    : <ListaItens itens={voz} />}
+  <div class="aviso">
+    Registro automatizado do que o candidato publicou — não é análise nem endosso.
+    Republicações e conteúdo de campanha aparecem como foram publicados pelo candidato.
+  </div>
+</Base>

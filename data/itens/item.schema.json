@@ -1,0 +1,19 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://eleicoes.ai/data/itens/item.schema.json",
+ "title": "Item de rastreamento — eleicoes.ai",
+ "description": "Estrutura canônica de um item datado do rastreamento de candidatos. Todas as visões do site (na própria voz, arquivo 5 anos, menções) são filtros sobre esta estrutura. Normalizado na exportação; o corpus bruto (privado) preserva os campos originais de cada fonte.",
+ "type": "object",
+ "required": ["candidato", "tipo", "voz", "url"],
+ "properties": {
+  "candidato": {"type": "string", "description": "slug do candidato (ex.: romeu-zema)"},
+  "data": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "data do fato (não da coleta); null quando não identificada"},
+  "tipo": {"enum": ["post-x", "post-instagram", "video", "aparicao", "discurso", "artigo", "pagina-arquivada", "mencao"]},
+  "voz": {"enum": ["propria", "institucional", "terceiro"], "description": "propria = fala/canal do candidato; institucional = assessoria oficial arquivada; terceiro = menção sobre o candidato"},
+  "titulo": {"type": ["string", "null"], "description": "título ou primeiro trecho, truncado (~160 chars)"},
+  "fonte": {"type": ["string", "null"], "description": "veículo/canal/rede/instituição de origem"},
+  "url": {"type": "string", "format": "uri", "description": "link para a fonte original (nunca espelho de conteúdo)"},
+  "duracao_s": {"type": ["integer", "null"], "description": "duração em segundos, quando vídeo"},
+  "origem": {"type": "string", "description": "via de coleta: coleta | retro | descoberta | senado | sites | wayback"}
+ }
+}
