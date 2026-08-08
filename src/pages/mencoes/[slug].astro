@@ -1,0 +1,61 @@
+---
+import Base from '../../layouts/Base.astro';
+import dados from '../../../data/mencoes/mencoes.json';
+
+export function getStaticPaths() {
+  return Object.keys(dados.candidatos).map((slug) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const cand = dados.candidatos[slug];
+
+const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+const rotuloMes = (am) => {
+  const [ano, mes] = am.split('-');
+  return `${MESES[Number(mes) - 1]} de ${ano}`;
+};
+
+const porMes = new Map();
+for (const m of cand.mencoes) {
+  const chave = (m.data ?? 'sem-data').slice(0, 7);
+  if (!porMes.has(chave)) porMes.set(chave, []);
+  porMes.get(chave).push(m);
+}
+const meses = [...porMes.keys()].sort().reverse();
+---
+<Base
+  title={`Menções — ${cand.nome}`}
+  description={`Links de terceiros que citam ${cand.nome}: registro automatizado, sem análise e sem endosso.`}
+>
+  <p><a href="/mencoes">← Todas as menções</a></p>
+  <h1>Menções — {cand.nome}</h1>
+  <p class="lead">
+    Links de terceiros que citam {cand.nome}, em ordem cronológica inversa. Conteúdo de
+    responsabilidade dos autores; registro automatizado, fora da análise.
+  </p>
+
+  {cand.mencoes.length === 0 && (
+    <div class="card"><p style="margin:0">Sem menções registradas no período.</p></div>
+  )}
+
+  {meses.map((mes) => (
+    <section>
+      <h2>{mes === 'sem-data' ? 'Sem data identificada' : rotuloMes(mes)}</h2>
+      <ul>
+        {porMes.get(mes).map((m) => (
+          <li>
+            {m.data && <small>{m.data} · </small>}
+            <a href={m.url} rel="nofollow noopener" target="_blank">{m.titulo ?? m.url}</a>
+            <small> — {m.fonte}{m.tipo && m.tipo !== 'menção' ? ` · ${m.tipo}` : ''}</small>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <div class="aviso">
+    Coleta automatizada, sem curadoria individual dos conteúdos linkados. Esta seção não é
+    análise, não é checagem e não é endosso; volume de menções não indica avaliação.
+  </div>
+</Base>

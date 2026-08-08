@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import dados from '../../../data/mencoes/mencoes.json';
+
+const candidatos = Object.entries(dados.candidatos).map(([slug, c]) => ({
+  slug,
+  nome: c.nome,
+  total: c.mencoes.length,
+  ultima: c.mencoes[0]?.data ?? null,
+}));
+const gerado = dados.gerado_em?.slice(0, 10);
+---
+<Base
+  title="Menções"
+  description="Registro automatizado e contínuo de links sobre os candidatos de 2026: o que circula na imprensa, em vídeos e nas redes — sem análise e sem endosso."
+>
+  <h1>Menções — o que circula sobre os candidatos</h1>
+  <p class="lead">
+    Registro automatizado e contínuo de <strong>links de terceiros</strong> que citam os candidatos
+    acompanhados: vídeos curtos, comentários, coberturas e publicações que <em>não</em> são fala
+    integral do candidato e, por isso, <strong>ficam fora da análise</strong>. O registro existe para
+    dar rastreabilidade ao debate público — a mesma varredura, com a mesma régua, para todos.
+  </p>
+
+  <div class="aviso">
+    <strong>O que esta seção não é:</strong> não é análise, não é checagem e não é endosso.
+    Os links levam a conteúdo de terceiros, de responsabilidade de seus autores; a coleta é
+    automatizada e os itens não passam por curadoria individual. Volume de menções não indica
+    avaliação — mais ou menos menções não significa melhor ou pior.
+  </div>
+
+  <div class="card">
+    <h2 style="margin-top:0">Candidatos acompanhados</h2>
+    <ul>
+      {candidatos.map((c) => (
+        <li>
+          <a href={`/mencoes/${c.slug}`}><strong>{c.nome}</strong></a> —
+          {c.total > 0
+            ? `${c.total} ${c.total === 1 ? 'menção registrada' : 'menções registradas'}${c.ultima ? ` · última em ${c.ultima}` : ''}`
+            : 'sem menções registradas no período'}
+        </li>
+      ))}
+    </ul>
+    <p style="margin-bottom:0"><small>Atualizado em {gerado}. Cobertura simétrica: todo candidato
+    acompanhado aparece nesta lista, inclusive com zero menções.</small></p>
+  </div>
+</Base>
