@@ -1,0 +1,134 @@
+---
+import Base from '../layouts/Base.astro';
+// Primeira página do site com JS no cliente (quebra consciente do zero-JS:
+// a pesquisa via LLM exige o primeiro backend do projeto). API local em dev;
+// no deploy, definir PUBLIC_PESQUISA_API.
+const apiBase = import.meta.env.PUBLIC_PESQUISA_API ?? 'http://localhost:8765';
+---
+<Base title="Pesquisa" description="Pesquise o corpus do eleicoes.ai: o que cada candidato disse ou registrou, com fonte primária datada.">
+  <section class="inner">
+    <h1>Pesquisa no corpus</h1>
+    <p class="aviso-neutralidade"><strong>Ferramenta de pesquisa — não emite recomendação de voto nem juízo sobre candidatos.</strong>
+      As respostas são geradas por IA exclusivamente a partir do corpus do eleicoes.ai, com fonte primária datada em cada afirmação.
+      Trechos de transcrição automática não são conferidos — confirme sempre na fonte original.</p>
+
+    <form id="form-pesquisa">
+      <label for="pergunta">Pergunte sobre os candidatos de 2026 (ex.: “o que o candidato X pensa sobre Y?”)</label>
+      <div class="linha-busca">
+        <input id="pergunta" name="pergunta" type="text" required
+               placeholder="O que o Zema propõe sobre previdência?" autocomplete="off" />
+        <button type="submit" id="botao">Pesquisar</button>
+      </div>
+    </form>
+
+    <div id="estado" role="status" aria-live="polite"></div>
+    <article id="resposta" hidden>
+      <div id="texto"></div>
+      <section id="bloco-citacoes" hidden>
+        <h2>Fontes citadas</h2>
+        <ol id="citacoes"></ol>
+      </section>
+      <footer id="rodape-ia"></footer>
+    </article>
+  </section>
+
+  <style>
+    .aviso-neutralidade { border-left: 3px solid currentColor; padding: .5rem .75rem; opacity: .9; }
+    .linha-busca { display: flex; gap: .5rem; margin: .5rem 0 1.5rem; }
+    .linha-busca input { flex: 1; padding: .6rem .8rem; font: inherit; }
+    .linha-busca button { padding: .6rem 1.2rem; font: inherit; cursor: pointer; }
+    #texto { white-space: pre-wrap; line-height: 1.6; }
+    #texto sup a { text-decoration: none; }
+    #citacoes li { margin-bottom: .75rem; }
+    .cit-aviso { display: block; font-size: .85em; }
+    .cit-aviso.nao-conferido { color: #8a4b00; font-weight: 600; }
+    #rodape-ia { margin-top: 1.5rem; font-size: .85em; opacity: .75; border-top: 1px solid currentColor; padding-top: .75rem; }
+    #estado:empty { display: none; }
+    #estado { margin: 1rem 0; font-style: italic; }
+  </style>
+
+  <script is:inline define:vars={{ apiBase }}>
+    const form = document.getElementById('form-pesquisa');
+    const estado = document.getElementById('estado');
+    const artigo = document.getElementById('resposta');
+    const alvoTexto = document.getElementById('texto');
+    const blocoCit = document.getElementById('bloco-citacoes');
+    const listaCit = document.getElementById('citacoes');
+    const rodape = document.getElementById('rodape-ia');
+    const botao = document.getElementById('botao');
+    let fonteAtual = null;
+
+    const escapa = (s) => s.replace(/[&<>"']/g,
+      (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+    // [Sn] no texto vira link para a citação correspondente
+    const comMarcadores = (t) => escapa(t).replace(/\[S(\d+)\]/g,
+      '<sup><a href="#cit-$1">[S$1]</a></sup>');
+
+    function renderCitacoes(citacoes) {
+      listaCit.innerHTML = '';
+      for (const c of citacoes) {
+        const li = document.createElement('li');
+        li.id = `cit-${c.n}`;
+        const ts = c.ts ? `, ${c.ts}` : '';
+        let html = `<strong>[S${c.n}]</strong> ${escapa(c.candidato ?? '—')} — `
+          + `${escapa(c.titulo ?? c.tipo)}, ${escapa(c.data ?? 's/ data')}${ts}`;
+        if (c.url) html += `<br /><a href="${escapa(c.url)}" rel="noopener" target="_blank">${escapa(c.url)}</a>`;
+        if (c.estatuto === 3) {
+          html += '<span class="cit-aviso nao-conferido">⚠ transcrição automática / post não conferido — confirme na fonte original</span>';
+        } else if (c.estatuto === 4) {
+          html += '<span class="cit-aviso">✓ conferido por segundo modelo (whisper local)</span>';
+        } else if (c.estatuto === 1) {
+          html += '<span class="cit-aviso">análise eleicoes.ai — conteúdo gerado por IA, rotulado</span>';
+        }
+        li.innerHTML = html;
+        listaCit.appendChild(li);
+      }
+      blocoCit.hidden = citacoes.length === 0;
+    }
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const pergunta = document.getElementById('pergunta').value.trim();
+      if (!pergunta) return;
+      if (fonteAtual) fonteAtual.close();
+
+      artigo.hidden = false;
+      alvoTexto.textContent = '';
+      blocoCit.hidden = true;
+      rodape.textContent = '';
+      estado.textContent = 'Pesquisando o corpus e gerando a resposta…';
+      botao.disabled = true;
+      let bruto = '';
+
+      const es = new EventSource(`${apiBase}/api/pesquisa/sse?pergunta=${encodeURIComponent(pergunta)}`);
+      fonteAtual = es;
+
+      es.addEventListener('texto', (e) => {
+        bruto += JSON.parse(e.data).t;
+        alvoTexto.innerHTML = comMarcadores(bruto);
+      });
+
+      es.addEventListener('resultado', (e) => {
+        es.close();
+        botao.disabled = false;
+        estado.textContent = '';
+        const r = JSON.parse(e.data);
+        if (r.erro) {
+          estado.textContent = `Erro: ${r.erro}`;
+          return;
+        }
+        alvoTexto.innerHTML = comMarcadores(r.texto);
+        renderCitacoes(r.citacoes);
+        rodape.textContent = r.rodape;
+      });
+
+      es.onerror = () => {
+        es.close();
+        botao.disabled = false;
+        estado.textContent = 'Não foi possível falar com a API local de pesquisa. '
+          + 'Suba-a com: pesquisa/.venv/bin/uvicorn api:app --app-dir pesquisa --port 8765';
+      };
+    });
+  </script>
+</Base>
