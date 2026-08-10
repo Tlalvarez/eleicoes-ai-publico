@@ -1,0 +1,54 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import indice from '../../../../../data/acervo/indice.json';
+
+export function getStaticPaths() {
+  const detalhes = import.meta.glob('../../../../../data/acervo/*/itens/*.json');
+  return Object.keys(detalhes).map((caminho) => {
+    const [, slug, , arquivo] = caminho.match(/data\/acervo\/([^/]+)\/(itens)\/(.+)\.json$/) ?? [];
+    return { params: { slug, id: arquivo } };
+  }).filter((p) => p.params.slug);
+}
+
+const { slug, id } = Astro.params;
+const c = indice.candidatos[slug];
+const detalhes = import.meta.glob('../../../../../data/acervo/*/itens/*.json');
+const item = (await detalhes[`../../../../../data/acervo/${slug}/itens/${id}.json`]()).default;
+const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
+const minutos = item.duracao_s ? `${Math.round(item.duracao_s / 60)} min` : null;
+
+// Linhas "[HH:MM:SS] fala" → timestamp vira link para o momento do vídeo
+const linhas = (item.transcricao ?? '').split('\n').map((linha) => {
+  const m = linha.match(/^\[(\d{1,2}):(\d{2}):(\d{2})\]\s?(.*)$/);
+  if (!m) return { ts: null, seg: null, fala: linha };
+  const seg = Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3]);
+  return { ts: `${m[1]}:${m[2]}:${m[3]}`, seg, fala: m[4] };
+});
+const linkTs = (seg) => item.url.includes('youtube') ? `${item.url}&t=${seg}s` : item.url;
+---
+<Base title={`${item.titulo ?? 'Vídeo'} — ${c.nome}`} description={`Transcrição automática: ${item.titulo ?? ''} (${c.nome}, ${dataBr(item.data)}).`}>
+  <p><a href={`/acervo/${slug}/${item.tipo}/${(item.data ?? '0000').slice(0, 4)}`}>← {c.nome}, {item.tipo === 'aparicao' ? 'aparições' : 'vídeos'} de {(item.data ?? '0000').slice(0, 4)}</a></p>
+  <h1>{item.titulo ?? 'Vídeo'}</h1>
+  <p>
+    <strong>{c.nome}</strong> · {dataBr(item.data)}{minutos && ` · ${minutos}`} · {item.fonte}<br />
+    <a href={item.url} rel="noopener" target="_blank">↗ assistir na fonte original</a>
+  </p>
+  <div class="aviso">{item.aviso}</div>
+
+  <div class="transcricao">
+    {linhas.map((l) => (
+      <p class="linha">
+        {l.ts && <a class="ts" href={linkTs(l.seg)} rel="noopener" target="_blank">{l.ts}</a>}
+        <span>{l.fala}</span>
+      </p>
+    ))}
+  </div>
+
+  <style>
+    .transcricao { margin-top: 1.5rem; }
+    .linha { display: flex; gap: .8rem; margin: 0 0 .15rem; }
+    .ts { font-variant-numeric: tabular-nums; font-size: .8em; opacity: .7;
+          text-decoration: none; flex-shrink: 0; padding-top: .15em; }
+    .ts:hover { opacity: 1; text-decoration: underline; }
+  </style>
+</Base>

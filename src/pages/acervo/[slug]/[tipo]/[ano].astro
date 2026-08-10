@@ -1,0 +1,59 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import indice from '../../../../../data/acervo/indice.json';
+
+export function getStaticPaths() {
+  return Object.entries(indice.candidatos).flatMap(([slug, c]) =>
+    Object.entries(c.tipos).flatMap(([tipo, d]) =>
+      Object.keys(d.anos).map((ano) => ({ params: { slug, tipo, ano } }))));
+}
+
+const ROTULO = {
+  video: 'Vídeos (YouTube)', aparicao: 'Aparições', 'post-x': 'Posts no X',
+  'post-instagram': 'Posts no Instagram', discurso: 'Discursos no Senado',
+  artigo: 'Publicações oficiais', 'pagina-arquivada': 'Páginas arquivadas',
+};
+const { slug, tipo, ano } = Astro.params;
+const c = indice.candidatos[slug];
+const dados = import.meta.glob('../../../../../data/acervo/*/*/*.json', { eager: true });
+const itens = dados[`../../../../../data/acervo/${slug}/${tipo}/${ano}.json`]?.default ?? [];
+const anos = Object.keys(c.tipos[tipo].anos);
+const min = (s) => (s ? ` · ${Math.round(s / 60)} min` : '');
+const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
+const ehVideo = tipo === 'video' || tipo === 'aparicao';
+const ehPost = tipo === 'post-x' || tipo === 'post-instagram';
+---
+<Base title={`${ROTULO[tipo] ?? tipo} ${ano} — ${c.nome}`} description={`${ROTULO[tipo] ?? tipo} de ${c.nome} em ${ano}, com link para a fonte original.`}>
+  <p><a href={`/acervo/${slug}`}>← Acervo de {c.nome}</a></p>
+  <h1>{c.nome} — {ROTULO[tipo] ?? tipo}, {ano === '0000' ? 'sem data' : ano}</h1>
+  <p>
+    {anos.map((a) => a === ano
+      ? <strong style="margin-right:.7rem">{a === '0000' ? 'sem data' : a}</strong>
+      : <a style="margin-right:.7rem" href={`/acervo/${slug}/${tipo}/${a}`}>{a === '0000' ? 'sem data' : a}</a>)}
+  </p>
+  {ehVideo && (
+    <div class="aviso">{indice.aviso_transcricao}</div>
+  )}
+
+  <ul class="acervo-lista">
+    {itens.map((i) => (
+      <li>
+        <small>{dataBr(i.data)}{i.repost ? ' · repost de terceiro' : ''}{min(i.duracao_s)}</small><br />
+        {ehVideo && i.tem_detalhe
+          ? <a href={`/acervo/${slug}/item/${i.id}`}>{i.titulo ?? i.url}</a>
+          : ehPost || tipo === 'discurso'
+            ? <span class="texto-item">{i.texto ?? i.titulo ?? '(sem texto)'}</span>
+            : <span>{i.titulo ?? i.url}</span>}
+        {' '}<a class="fonte-externa" href={i.url} rel="noopener" target="_blank">↗ fonte</a>
+        {ehVideo && i.tem_detalhe && <small> · <a href={`/acervo/${slug}/item/${i.id}`}>transcrição</a></small>}
+      </li>
+    ))}
+  </ul>
+
+  <style>
+    .acervo-lista { list-style: none; padding: 0; }
+    .acervo-lista li { margin-bottom: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: .6rem; }
+    .texto-item { white-space: pre-wrap; }
+    .fonte-externa { white-space: nowrap; }
+  </style>
+</Base>

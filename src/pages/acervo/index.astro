@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import indice from '../../../data/acervo/indice.json';
+
+const ROTULO = {
+  video: 'Vídeos (YouTube)', aparicao: 'Aparições', 'post-x': 'Posts no X',
+  'post-instagram': 'Posts no Instagram', discurso: 'Discursos no Senado',
+  artigo: 'Publicações oficiais', 'pagina-arquivada': 'Páginas arquivadas',
+};
+const candidatos = Object.entries(indice.candidatos);
+---
+<Base title="Acervo" description="Navegue por todo o material coletado de cada candidato: vídeos com transcrição, posts, discursos e páginas arquivadas, com link para a fonte original.">
+  <h1>Acervo</h1>
+  <p>Todo o material coletado automaticamente sobre cada candidato, navegável até o
+    documento original — vídeos (com transcrição), posts, discursos e páginas arquivadas.
+    Cada item linka a fonte primária. Menções de terceiros ficam na
+    <a href="/mencoes">seção própria</a> e não entram aqui.</p>
+
+  {candidatos.map(([slug, c]) => (
+    <section class="card">
+      <h2><a href={`/acervo/${slug}`}>{c.nome}</a></h2>
+      <ul>
+        {Object.entries(c.tipos).sort((a, b) => b[1].total - a[1].total).map(([tipo, d]) => (
+          <li>
+            <a href={`/acervo/${slug}/${tipo}/${Object.keys(d.anos)[0]}`}>{ROTULO[tipo] ?? tipo}</a>
+            {' '}— {d.total.toLocaleString('pt-BR')} itens
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <div class="aviso">
+    Coleta automatizada com fonte primária linkada — não é análise nem endosso.
+    Transcrições de vídeo vêm de legendas automáticas e podem conter erros.
+  </div>
+</Base>
