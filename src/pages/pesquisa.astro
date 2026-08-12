@@ -75,11 +75,11 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API ?? 'http://localhost:8765';
           + `${escapa(c.titulo ?? c.tipo)}, ${escapa(c.data ?? 's/ data')}${ts}`;
         if (c.url) html += `<br /><a href="${escapa(c.url)}" rel="noopener" target="_blank">${escapa(c.url)}</a>`;
         if (c.estatuto === 3) {
-          html += '<span class="cit-aviso nao-conferido">⚠ transcrição automática / post não conferido — confirme na fonte original</span>';
+          html += '<span class="cit-aviso nao-conferido">⚠ legenda automática de vídeo / post coletado — pode ter erros, confira na fonte original</span>';
         } else if (c.estatuto === 4) {
-          html += '<span class="cit-aviso">✓ conferido por segundo modelo (whisper local)</span>';
+          html += '<span class="cit-aviso">✓ áudio conferido por uma segunda transcrição</span>';
         } else if (c.estatuto === 1) {
-          html += '<span class="cit-aviso">análise eleicoes.ai — conteúdo gerado por IA, rotulado</span>';
+          html += '<span class="cit-aviso">análise do eleicoes.ai — produzida por IA e identificada como tal</span>';
         }
         li.innerHTML = html;
         listaCit.appendChild(li);
