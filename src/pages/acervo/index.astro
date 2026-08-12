@@ -20,12 +20,17 @@ const candidatos = Object.entries(indice.candidatos);
     <section class="card">
       <h2><a href={`/acervo/${slug}`}>{c.nome}</a></h2>
       <ul>
-        {Object.entries(c.tipos).sort((a, b) => b[1].total - a[1].total).map(([tipo, d]) => (
-          <li>
-            <a href={`/acervo/${slug}/${tipo}/${Object.keys(d.anos)[0]}`}>{ROTULO[tipo] ?? tipo}</a>
-            {' '}— {d.total.toLocaleString('pt-BR')} itens
-          </li>
-        ))}
+        {Object.entries(c.tipos).sort((a, b) => b[1].total - a[1].total).map(([tipo, d]) => {
+          // chaves numéricas de objeto JS iteram em ordem ASCENDENTE — o ano
+          // mais recente é o maior, não o primeiro (bug achado na revisão)
+          const anoRecente = Object.keys(d.anos).sort().reverse()[0];
+          return (
+            <li>
+              <a href={`/acervo/${slug}/${tipo}/${anoRecente}`}>{ROTULO[tipo] ?? tipo}</a>
+              {' '}— {d.total.toLocaleString('pt-BR')} itens
+            </li>
+          );
+        })}
       </ul>
     </section>
   ))}

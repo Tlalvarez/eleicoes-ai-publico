@@ -1,134 +1,262 @@
 ---
 import Base from '../layouts/Base.astro';
-// Primeira página do site com JS no cliente (quebra consciente do zero-JS:
-// a pesquisa via LLM exige o primeiro backend do projeto). API local em dev;
-// no deploy, definir PUBLIC_PESQUISA_API.
+// Página com JS no cliente (única do site): a pesquisa exige a API.
+// Permalink: /pesquisa?q=... roda a consulta ao carregar (compartilhável).
 const apiBase = import.meta.env.PUBLIC_PESQUISA_API ?? 'http://localhost:8765';
----
-<Base title="Pesquisa" description="Pesquise o corpus do eleicoes.ai: o que cada candidato disse ou registrou, com fonte primária datada.">
-  <section class="inner">
-    <h1>Pesquisa no corpus</h1>
-    <p class="aviso-neutralidade"><strong>Ferramenta de pesquisa — não emite recomendação de voto nem juízo sobre candidatos.</strong>
-      As respostas são geradas por IA exclusivamente a partir do corpus do eleicoes.ai, com fonte primária datada em cada afirmação.
-      Trechos de transcrição automática não são conferidos — confirme sempre na fonte original.</p>
 
-    <form id="form-pesquisa">
-      <label for="pergunta">Pergunte sobre os candidatos de 2026 (ex.: “o que o candidato X pensa sobre Y?”)</label>
+const chips = [
+  'O que o Lula propõe para a educação?',
+  'Quem quer mudar a aposentadoria?',
+  'O que o Zema diz sobre impostos?',
+  'Qual candidato fala em privatizações?',
+  'O que o Renan Santos propõe para a economia?',
+  'O que o Caiado defende sobre segurança pública?',
+];
+---
+<Base title="Perguntar" description="Pergunte qualquer coisa sobre os candidatos de 2026 — a resposta vem do que eles registraram e disseram, com fonte original e data.">
+  <section class="inner">
+    <h1>Pergunte qualquer coisa sobre os candidatos</h1>
+
+    <form id="form-pesquisa" method="get" role="search">
       <div class="linha-busca">
-        <input id="pergunta" name="pergunta" type="text" required
-               placeholder="O que o Zema propõe sobre previdência?" autocomplete="off" />
-        <button type="submit" id="botao">Pesquisar</button>
+        <label class="sr-only" for="pergunta">Sua pergunta</label>
+        <input id="pergunta" name="q" type="search" required
+               placeholder="Ex.: o que o Zema propõe sobre previdência?" autocomplete="off" />
+        <button type="submit" id="botao">Perguntar</button>
       </div>
     </form>
+    <p class="chips" id="chips">
+      {chips.map((c) => <a class="chip" href={`/pesquisa?q=${encodeURIComponent(c)}`}>{c}</a>)}
+    </p>
+    <p class="nota-metodo">A resposta é gerada por inteligência artificial usando só o que os candidatos
+      registraram na Justiça Eleitoral e disseram em vídeos, discursos e posts — cada afirmação sai com a
+      fonte original e a data. Leva mais ou menos um minuto. Não recomendamos voto.</p>
 
-    <div id="estado" role="status" aria-live="polite"></div>
+    <div id="estado" role="status" aria-live="polite" hidden>
+      <span class="spinner" aria-hidden="true"></span>
+      <span id="estado-texto"></span>
+      <button type="button" id="cancelar" hidden>Cancelar</button>
+    </div>
+
     <article id="resposta" hidden>
+      <p id="eco-pergunta"></p>
       <div id="texto"></div>
+      <p id="acoes" hidden>
+        <button type="button" id="copiar">Copiar resposta</button>
+        <button type="button" id="copiar-link">Copiar link</button>
+      </p>
       <section id="bloco-citacoes" hidden>
         <h2>Fontes citadas</h2>
-        <ol id="citacoes"></ol>
+        <ul id="citacoes"></ul>
       </section>
       <footer id="rodape-ia"></footer>
     </article>
   </section>
 
-  <style>
-    .aviso-neutralidade { border-left: 3px solid currentColor; padding: .5rem .75rem; opacity: .9; }
-    .linha-busca { display: flex; gap: .5rem; margin: .5rem 0 1.5rem; }
-    .linha-busca input { flex: 1; padding: .6rem .8rem; font: inherit; }
-    .linha-busca button { padding: .6rem 1.2rem; font: inherit; cursor: pointer; }
-    #texto { white-space: pre-wrap; line-height: 1.6; }
-    #texto sup a { text-decoration: none; }
-    #citacoes li { margin-bottom: .75rem; }
-    .cit-aviso { display: block; font-size: .85em; }
-    .cit-aviso.nao-conferido { color: #8a4b00; font-weight: 600; }
-    #rodape-ia { margin-top: 1.5rem; font-size: .85em; opacity: .75; border-top: 1px solid currentColor; padding-top: .75rem; }
-    #estado:empty { display: none; }
-    #estado { margin: 1rem 0; font-style: italic; }
+  <style is:global>
+    /* Globais de propósito: o conteúdo da resposta e das citações é criado
+       via JS e NÃO recebe o atributo de escopo do Astro (bug achado na
+       revisão: os estilos escopados nunca casavam com o innerHTML). */
+    .linha-busca { display: flex; gap: .5rem; margin: .8rem 0 .6rem; }
+    .linha-busca input { flex: 1; min-width: 0; padding: .8rem 1rem; font: inherit;
+      border: 2px solid var(--fg); border-radius: 8px; background: var(--card); color: var(--fg); }
+    .linha-busca button { padding: .8rem 1.3rem; font: inherit; font-weight: 600;
+      border: 2px solid var(--fg); border-radius: 8px; background: var(--fg); color: var(--bg);
+      cursor: pointer; min-height: 48px; }
+    .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .chip { display: inline-block; padding: .45rem .8rem; border: 1px solid var(--muted);
+      border-radius: 999px; font-size: .88rem; text-decoration: none; }
+    .chip:hover { border-color: var(--fg); }
+    .nota-metodo { font-size: .88rem; color: var(--muted); margin-top: 1rem; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+    #estado { display: flex; align-items: center; gap: .6rem; margin: 1.2rem 0; }
+    #estado[hidden] { display: none; }
+    .spinner { width: 1rem; height: 1rem; border: 2px solid var(--muted);
+      border-top-color: var(--fg); border-radius: 50%; flex-shrink: 0;
+      animation: gira .8s linear infinite; }
+    @keyframes gira { to { transform: rotate(360deg); } }
+    #cancelar { font: inherit; font-size: .85rem; padding: .2rem .6rem; cursor: pointer; }
+
+    #eco-pergunta { font-weight: 600; margin-bottom: .3rem; }
+    #texto { line-height: 1.65; max-width: 70ch; }
+    #texto p { margin: 0 0 .9rem; }
+    #texto ul { margin: 0 0 .9rem; padding-left: 1.3rem; }
+    #texto li { margin-bottom: .45rem; }
+    #texto sup a { text-decoration: none; font-weight: 600; }
+    #acoes button { font: inherit; font-size: .85rem; padding: .35rem .8rem; margin-right: .5rem;
+      cursor: pointer; min-height: 32px; }
+
+    #citacoes { list-style: none; padding: 0; }
+    #citacoes li { margin-bottom: .9rem; overflow-wrap: anywhere; }
+    .cit-marcas { font-weight: 700; }
+    .cit-fonte-link { white-space: nowrap; }
+    .cit-aviso { display: block; font-size: .85em; margin-top: .15rem; }
+    .cit-aviso.nao-conferido { color: #7a4100; font-weight: 600; }
+    @media (prefers-color-scheme: dark) {
+      .cit-aviso.nao-conferido { color: #e8b04b; } /* AA sobre fundo escuro */
+    }
+    #rodape-ia { margin-top: 1.5rem; font-size: .85em; opacity: .8;
+      border-top: 1px solid var(--muted); padding-top: .75rem; }
+    #resposta { overflow-wrap: anywhere; }
   </style>
 
   <script is:inline define:vars={{ apiBase }}>
-    const form = document.getElementById('form-pesquisa');
-    const estado = document.getElementById('estado');
-    const artigo = document.getElementById('resposta');
-    const alvoTexto = document.getElementById('texto');
-    const blocoCit = document.getElementById('bloco-citacoes');
-    const listaCit = document.getElementById('citacoes');
-    const rodape = document.getElementById('rodape-ia');
-    const botao = document.getElementById('botao');
-    let fonteAtual = null;
+    const $ = (id) => document.getElementById(id);
+    const form = $('form-pesquisa'), estado = $('estado'), estadoTexto = $('estado-texto');
+    const artigo = $('resposta'), alvoTexto = $('texto'), eco = $('eco-pergunta');
+    const blocoCit = $('bloco-citacoes'), listaCit = $('citacoes');
+    const rodape = $('rodape-ia'), botao = $('botao'), cancelar = $('cancelar');
+    const acoes = $('acoes'), chips = $('chips');
+    let fonteAtual = null, textoBruto = '';
 
     const escapa = (s) => s.replace(/[&<>"']/g,
       (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
-    // [Sn] no texto vira link para a citação correspondente
-    const comMarcadores = (t) => escapa(t).replace(/\[S(\d+)\]/g,
-      '<sup><a href="#cit-$1">[S$1]</a></sup>');
+    // Mini-markdown: parágrafos, **negrito**, bullets e marcadores [Sn].
+    function renderMd(t) {
+      const inline = (s) => escapa(s)
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\[S(\d+)\]/g, '<sup><a href="#cit-s$1">[S$1]</a></sup>');
+      const blocos = t.split(/\n{2,}/);
+      let html = '';
+      for (const b of blocos) {
+        const linhas = b.split('\n').filter((l) => l.trim());
+        if (!linhas.length) continue;
+        if (linhas.every((l) => /^\s*[-*•]\s+/.test(l))) {
+          html += '<ul>' + linhas.map((l) =>
+            `<li>${inline(l.replace(/^\s*[-*•]\s+/, ''))}</li>`).join('') + '</ul>';
+        } else {
+          html += `<p>${linhas.map(inline).join('<br />')}</p>`;
+        }
+      }
+      return html;
+    }
 
     function renderCitacoes(citacoes) {
-      listaCit.innerHTML = '';
+      listaCit.textContent = '';
       for (const c of citacoes) {
         const li = document.createElement('li');
-        li.id = `cit-${c.n}`;
-        const ts = c.ts ? `, ${c.ts}` : '';
-        let html = `<strong>[S${c.n}]</strong> ${escapa(c.candidato ?? '—')} — `
-          + `${escapa(c.titulo ?? c.tipo)}, ${escapa(c.data ?? 's/ data')}${ts}`;
-        if (c.url) html += `<br /><a href="${escapa(c.url)}" rel="noopener" target="_blank">${escapa(c.url)}</a>`;
-        if (c.estatuto === 3) {
-          html += '<span class="cit-aviso nao-conferido">⚠ legenda automática de vídeo / post coletado — pode ter erros, confira na fonte original</span>';
-        } else if (c.estatuto === 4) {
-          html += '<span class="cit-aviso">✓ áudio conferido por uma segunda transcrição</span>';
-        } else if (c.estatuto === 1) {
-          html += '<span class="cit-aviso">análise do eleicoes.ai — produzida por IA e identificada como tal</span>';
+        li.id = `cit-s${c.marcadores[0]}`;
+        for (const n of c.marcadores.slice(1)) {
+          const anc = document.createElement('span'); anc.id = `cit-s${n}`; li.appendChild(anc);
         }
-        li.innerHTML = html;
+        const marcas = document.createElement('span');
+        marcas.className = 'cit-marcas';
+        marcas.textContent = c.marcadores.map((n) => `[S${n}]`).join('') + ' ';
+        li.appendChild(marcas);
+        li.appendChild(document.createTextNode(
+          `${c.nome ?? ''} — ${c.rotulo}, ${c.data ? c.data.split('-').reverse().join('/') : 'sem data'}` +
+          (c.ts ? `, ${c.ts}` : '') + ' '));
+        if (c.url) {
+          const a = document.createElement('a');
+          a.href = c.url; a.rel = 'noopener'; a.target = '_blank';
+          a.className = 'cit-fonte-link'; a.textContent = 'abrir a fonte ↗';
+          li.appendChild(a);
+        }
+        const aviso = document.createElement('span');
+        aviso.className = 'cit-aviso';
+        if (c.estatuto === 3) {
+          aviso.classList.add('nao-conferido');
+          aviso.textContent = '⚠ legenda automática de vídeo / post coletado — pode ter erros, confira na fonte original';
+        } else if (c.estatuto === 4) {
+          aviso.textContent = '✓ áudio conferido por uma segunda transcrição';
+        } else if (c.estatuto === 1) {
+          aviso.textContent = 'análise do eleicoes.ai — produzida por IA e identificada como tal';
+        }
+        if (aviso.textContent) li.appendChild(aviso);
         listaCit.appendChild(li);
       }
       blocoCit.hidden = citacoes.length === 0;
     }
 
-    form.addEventListener('submit', (ev) => {
-      ev.preventDefault();
-      const pergunta = document.getElementById('pergunta').value.trim();
-      if (!pergunta) return;
-      if (fonteAtual) fonteAtual.close();
+    function encerra() {
+      botao.disabled = false;
+      estado.hidden = true;
+      cancelar.hidden = true;
+    }
 
+    function mostraErro(msg) {
+      estado.hidden = false;
+      estado.querySelector('.spinner').style.display = 'none';
+      estadoTexto.textContent = msg;
+      botao.disabled = false;
+      cancelar.hidden = true;
+    }
+
+    function pesquisa(pergunta) {
+      if (fonteAtual) fonteAtual.close();
+      history.replaceState(null, '', `?q=${encodeURIComponent(pergunta)}`);
+      $('pergunta').value = pergunta;
+      chips.hidden = true;
       artigo.hidden = false;
+      eco.textContent = pergunta;
       alvoTexto.textContent = '';
       blocoCit.hidden = true;
+      acoes.hidden = true;
       rodape.textContent = '';
-      estado.textContent = 'Pesquisando o corpus e gerando a resposta…';
+      textoBruto = '';
+      estado.hidden = false;
+      estado.querySelector('.spinner').style.display = '';
+      estadoTexto.textContent = 'Começando a busca…';
+      cancelar.hidden = false;
       botao.disabled = true;
-      let bruto = '';
 
       const es = new EventSource(`${apiBase}/api/pesquisa/sse?pergunta=${encodeURIComponent(pergunta)}`);
       fonteAtual = es;
 
-      es.addEventListener('texto', (e) => {
-        bruto += JSON.parse(e.data).t;
-        alvoTexto.innerHTML = comMarcadores(bruto);
+      es.addEventListener('etapa', (e) => {
+        estadoTexto.textContent = JSON.parse(e.data).m;
       });
-
+      es.addEventListener('texto', (e) => {
+        estadoTexto.textContent = 'Escrevendo…';
+        textoBruto += JSON.parse(e.data).t;
+        alvoTexto.innerHTML = renderMd(textoBruto);
+      });
       es.addEventListener('resultado', (e) => {
         es.close();
-        botao.disabled = false;
-        estado.textContent = '';
+        encerra();
         const r = JSON.parse(e.data);
         if (r.erro) {
-          estado.textContent = `Erro: ${r.erro}`;
+          mostraErro('A pesquisa está indisponível agora. Tente de novo em alguns instantes.');
+          console.error('pesquisa:', r.erro);
           return;
         }
-        alvoTexto.innerHTML = comMarcadores(r.texto);
+        alvoTexto.innerHTML = renderMd(r.texto);
+        textoBruto = r.texto;
         renderCitacoes(r.citacoes);
         rodape.textContent = r.rodape;
+        acoes.hidden = false;
       });
-
       es.onerror = () => {
         es.close();
-        botao.disabled = false;
-        estado.textContent = 'Não foi possível falar com a API local de pesquisa. '
-          + 'Suba-a com: pesquisa/.venv/bin/uvicorn api:app --app-dir pesquisa --port 8765';
+        mostraErro('Não consegui falar com o serviço de pesquisa. Verifique sua conexão e tente de novo.');
       };
+    }
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const pergunta = $('pergunta').value.trim();
+      if (pergunta) pesquisa(pergunta);
     });
+    cancelar.addEventListener('click', () => {
+      if (fonteAtual) fonteAtual.close();
+      encerra();
+      estadoTexto.textContent = '';
+    });
+    $('copiar').addEventListener('click', async () => {
+      await navigator.clipboard.writeText(textoBruto + '\n\n' + rodape.textContent + '\n' + location.href);
+      $('copiar').textContent = 'Copiado ✓';
+      setTimeout(() => { $('copiar').textContent = 'Copiar resposta'; }, 1600);
+    });
+    $('copiar-link').addEventListener('click', async () => {
+      await navigator.clipboard.writeText(location.href);
+      $('copiar-link').textContent = 'Copiado ✓';
+      setTimeout(() => { $('copiar-link').textContent = 'Copiar link'; }, 1600);
+    });
+
+    // Permalink: /pesquisa?q=... roda ao carregar (chips da home chegam aqui).
+    const q = new URLSearchParams(location.search).get('q');
+    if (q) pesquisa(q);
   </script>
 </Base>

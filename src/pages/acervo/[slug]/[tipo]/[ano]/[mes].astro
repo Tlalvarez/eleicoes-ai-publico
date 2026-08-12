@@ -1,0 +1,57 @@
+---
+import Base from '../../../../../layouts/Base.astro';
+import indice from '../../../../../../data/acervo/indice.json';
+
+const LIMITE_PAGINA = 400;
+const POSTS = ['post-x', 'post-instagram'];
+
+export function getStaticPaths() {
+  const dados = import.meta.glob('../../../../../../data/acervo/*/*/*.json', { eager: true });
+  const caminhos = [];
+  for (const [caminho, mod] of Object.entries(dados)) {
+    const m = caminho.match(/data\/acervo\/([^/]+)\/([^/]+)\/(\d{4}|0000)\.json$/);
+    if (!m || !['post-x', 'post-instagram'].includes(m[2])) continue;
+    const itens = mod.default ?? [];
+    if (itens.length <= 400) continue;
+    const meses = new Set(itens.map((i) => (i.data ? i.data.slice(5, 7) : '00')));
+    for (const mes of meses) {
+      caminhos.push({ params: { slug: m[1], tipo: m[2], ano: m[3], mes } });
+    }
+  }
+  return caminhos;
+}
+
+const ROTULO = { 'post-x': 'Posts no X', 'post-instagram': 'Posts no Instagram' };
+const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+const { slug, tipo, ano, mes } = Astro.params;
+const c = indice.candidatos[slug];
+const dados = import.meta.glob('../../../../../../data/acervo/*/*/*.json', { eager: true });
+const todos = dados[`../../../../../../data/acervo/${slug}/${tipo}/${ano}.json`]?.default ?? [];
+const itens = todos.filter((i) => (i.data ? i.data.slice(5, 7) : '00') === mes);
+const rotuloMes = mes === '00' ? 'sem data' : `${MESES[Number(mes) - 1]} de ${ano}`;
+const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
+---
+<Base title={`${ROTULO[tipo]} ${rotuloMes} — ${c.nome}`} description={`${ROTULO[tipo]} de ${c.nome} em ${rotuloMes}, com link para a fonte original.`}>
+  <p><a href={`/acervo/${slug}/${tipo}/${ano}`}>← {ROTULO[tipo]} de {c.nome}, {ano}</a></p>
+  <h1>{c.nome} — {ROTULO[tipo]}, {rotuloMes}</h1>
+  <p><small>{itens.length.toLocaleString('pt-BR')} posts · cada item linka a fonte original</small></p>
+
+  <ul class="acervo-lista">
+    {itens.map((i) => (
+      <li>
+        <small>{dataBr(i.data)}{i.repost ? ' · repost de terceiro' : ''}</small><br />
+        <span class="texto-item">{i.texto ?? '(sem texto)'}</span>
+        {' '}<a class="fonte-externa" href={i.url} rel="noopener" target="_blank">↗ fonte</a>
+      </li>
+    ))}
+  </ul>
+
+  <style>
+    .acervo-lista { list-style: none; padding: 0; }
+    .acervo-lista li { margin-bottom: 1rem; border-bottom: 1px solid rgba(127,127,127,.25);
+      padding-bottom: .6rem; overflow-wrap: anywhere; }
+    .texto-item { white-space: pre-wrap; }
+    .fonte-externa { white-space: nowrap; }
+  </style>
+</Base>

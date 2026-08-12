@@ -17,11 +17,25 @@ const { slug, tipo, ano } = Astro.params;
 const c = indice.candidatos[slug];
 const dados = import.meta.glob('../../../../../data/acervo/*/*/*.json', { eager: true });
 const itens = dados[`../../../../../data/acervo/${slug}/${tipo}/${ano}.json`]?.default ?? [];
-const anos = Object.keys(c.tipos[tipo].anos);
+const anos = Object.keys(c.tipos[tipo].anos).sort().reverse();
 const min = (s) => (s ? ` · ${Math.round(s / 60)} min` : '');
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
 const ehVideo = tipo === 'video' || tipo === 'aparicao';
 const ehPost = tipo === 'post-x' || tipo === 'post-instagram';
+
+// Anos grandes viram índice de meses (achado da revisão: 3.340 itens numa
+// página = 3,9MB/596 telas mobile — impraticável).
+const LIMITE_PAGINA = 400;
+const paginaPorMes = ehPost && itens.length > LIMITE_PAGINA;
+const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
+  'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+const porMes = new Map();
+if (paginaPorMes) {
+  for (const i of itens) {
+    const m = i.data ? i.data.slice(5, 7) : '00';
+    porMes.set(m, (porMes.get(m) ?? 0) + 1);
+  }
+}
 ---
 <Base title={`${ROTULO[tipo] ?? tipo} ${ano} — ${c.nome}`} description={`${ROTULO[tipo] ?? tipo} de ${c.nome} em ${ano}, com link para a fonte original.`}>
   <p><a href={`/acervo/${slug}`}>← Acervo de {c.nome}</a></p>
@@ -35,8 +49,20 @@ const ehPost = tipo === 'post-x' || tipo === 'post-instagram';
     <div class="aviso">{indice.aviso_transcricao}</div>
   )}
 
-  <ul class="acervo-lista">
-    {itens.map((i) => (
+  {paginaPorMes && (
+    <ul class="acervo-lista">
+      {[...porMes.entries()].sort((a, b) => b[0].localeCompare(a[0])).map(([mes, n]) => (
+        <li>
+          <a href={`/acervo/${slug}/${tipo}/${ano}/${mes}`}>
+            {mes === '00' ? 'Sem data' : `${MESES[Number(mes) - 1]} de ${ano}`}
+          </a> — {n.toLocaleString('pt-BR')} posts
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <ul class="acervo-lista" hidden={paginaPorMes}>
+    {(paginaPorMes ? [] : itens).map((i) => (
       <li>
         <small>{dataBr(i.data)}{i.repost ? ' · repost de terceiro' : ''}{min(i.duracao_s)}</small><br />
         {ehVideo && i.tem_detalhe
@@ -52,7 +78,7 @@ const ehPost = tipo === 'post-x' || tipo === 'post-instagram';
 
   <style>
     .acervo-lista { list-style: none; padding: 0; }
-    .acervo-lista li { margin-bottom: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: .6rem; }
+    .acervo-lista li { margin-bottom: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: .6rem; overflow-wrap: anywhere; }
     .texto-item { white-space: pre-wrap; }
     .fonte-externa { white-space: nowrap; }
   </style>

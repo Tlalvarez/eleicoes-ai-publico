@@ -23,7 +23,7 @@ const tipos = Object.entries(c.tipos).sort((a, b) => b[1].total - a[1].total);
     <section class="card">
       <h2>{ROTULO[tipo] ?? tipo} <small>({d.total.toLocaleString('pt-BR')})</small></h2>
       <p>
-        {Object.entries(d.anos).map(([ano, n]) => (
+        {Object.entries(d.anos).sort((a, b) => b[0].localeCompare(a[0])).map(([ano, n]) => (
           <span style="margin-right:.9rem; display:inline-block">
             <a href={`/acervo/${slug}/${tipo}/${ano}`}>{ano === '0000' ? 'sem data' : ano}</a>
             {' '}<small>({n.toLocaleString('pt-BR')})</small>

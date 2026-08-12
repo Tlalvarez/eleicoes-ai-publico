@@ -138,11 +138,12 @@
     },
     "rotulagem": {
       "type": "object",
-      "required": ["conteudo_assistido_ia", "revisao_humana", "data_revisao"],
+      "required": ["conteudo_gerado_ia", "modelo", "data_analise", "politica_revisao"],
       "properties": {
-        "conteudo_assistido_ia": {"type": "boolean", "const": true},
-        "revisao_humana": {"type": "string", "description": "nome do revisor editorial"},
-        "data_revisao": {"type": "string", "format": "date"}
+        "conteudo_gerado_ia": {"type": "boolean", "const": true},
+        "modelo": {"type": "string", "description": "modelo e versão que produziu a ficha (ex.: claude-fable-5)"},
+        "data_analise": {"type": "string", "format": "date"},
+        "politica_revisao": {"type": "string", "const": "revisao-100-ia (decisão 08/08/2026)"}
       }
     }
   },

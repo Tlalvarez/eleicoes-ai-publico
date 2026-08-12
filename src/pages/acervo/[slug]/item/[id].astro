@@ -17,13 +17,31 @@ const item = (await detalhes[`../../../../../data/acervo/${slug}/itens/${id}.jso
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
 const minutos = item.duracao_s ? `${Math.round(item.duracao_s / 60)} min` : null;
 
-// Linhas "[HH:MM:SS] fala" → timestamp vira link para o momento do vídeo
-const linhas = (item.transcricao ?? '').split('\n').map((linha) => {
+// Linhas "[HH:MM:SS] fala" agrupadas em parágrafos de ~30s (achado da
+// revisão: 1.200 blocos de 3-5s são ilegíveis); o timestamp do bloco linka
+// o momento no vídeo.
+const brutas = (item.transcricao ?? '').split('\n').map((linha) => {
   const m = linha.match(/^\[(\d{1,2}):(\d{2}):(\d{2})\]\s?(.*)$/);
-  if (!m) return { ts: null, seg: null, fala: linha };
+  if (!m) return { seg: null, fala: linha.trim() };
   const seg = Number(m[1]) * 3600 + Number(m[2]) * 60 + Number(m[3]);
-  return { ts: `${m[1]}:${m[2]}:${m[3]}`, seg, fala: m[4] };
-});
+  return { seg, fala: m[4].trim() };
+}).filter((l) => l.fala);
+
+const linhas = [];
+let bloco = null;
+for (const l of brutas) {
+  if (!bloco || (l.seg !== null && bloco.seg !== null && l.seg - bloco.seg >= 30)) {
+    if (bloco) linhas.push(bloco);
+    bloco = { seg: l.seg, falas: [] };
+  }
+  bloco.falas.push(l.fala);
+}
+if (bloco) linhas.push(bloco);
+for (const b of linhas) {
+  b.fala = b.falas.join(' ');
+  b.ts = b.seg === null ? null
+    : `${String(Math.floor(b.seg / 3600)).padStart(2, '0')}:${String(Math.floor((b.seg % 3600) / 60)).padStart(2, '0')}:${String(b.seg % 60).padStart(2, '0')}`;
+}
 const linkTs = (seg) => item.url.includes('youtube') ? `${item.url}&t=${seg}s` : item.url;
 ---
 <Base title={`${item.titulo ?? 'Vídeo'} — ${c.nome}`} description={`Transcrição automática: ${item.titulo ?? ''} (${c.nome}, ${dataBr(item.data)}).`}>
@@ -38,17 +56,17 @@ const linkTs = (seg) => item.url.includes('youtube') ? `${item.url}&t=${seg}s` :
   <div class="transcricao">
     {linhas.map((l) => (
       <p class="linha">
-        {l.ts && <a class="ts" href={linkTs(l.seg)} rel="noopener" target="_blank">{l.ts}</a>}
+        {l.ts && <a class="ts" href={linkTs(l.seg)} rel="noopener" target="_blank"
+                    title="Abrir o vídeo neste momento">▶ {l.ts}</a>}
         <span>{l.fala}</span>
       </p>
     ))}
   </div>
 
   <style>
-    .transcricao { margin-top: 1.5rem; }
-    .linha { display: flex; gap: .8rem; margin: 0 0 .15rem; }
-    .ts { font-variant-numeric: tabular-nums; font-size: .8em; opacity: .7;
-          text-decoration: none; flex-shrink: 0; padding-top: .15em; }
-    .ts:hover { opacity: 1; text-decoration: underline; }
+    .transcricao { margin-top: 1.5rem; max-width: 70ch; }
+    .linha { margin: 0 0 .9rem; }
+    .ts { font-variant-numeric: tabular-nums; font-size: .82em;
+          text-decoration: underline; margin-right: .6rem; white-space: nowrap; }
   </style>
 </Base>

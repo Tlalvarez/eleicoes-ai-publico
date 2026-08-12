@@ -18,22 +18,37 @@ const atual = (p) => (path === p || path.startsWith(p + '/') || path === p + '.h
     <header class="site">
       <div class="inner">
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
+        <input type="checkbox" id="menu-aberto" class="menu-caixa" aria-hidden="true" />
+        <label for="menu-aberto" class="menu-botao" aria-label="Abrir menu">☰ Menu</label>
         <nav class="main" aria-label="Principal">
+          <a href="/pesquisa" aria-current={atual('/pesquisa')}><strong>Perguntar</strong></a>
           <a href="/candidato" aria-current={atual('/candidato')}>Candidatos</a>
-          <a href="/metodologia" aria-current={atual('/metodologia')}>Metodologia</a>
-          <a href="/verificacao" aria-current={atual('/verificacao')}>Dossiê de verificação</a>
-          <a href="/fichas" aria-current={atual('/fichas')}>Fichas 2026</a>
           <a href="/acervo" aria-current={atual('/acervo')}>Acervo</a>
-          <a href="/mencoes" aria-current={atual('/mencoes')}>Menções</a>
+          <a href="/fichas" aria-current={atual('/fichas')}>Fichas 2026</a>
+          <a href="/metodologia" aria-current={atual('/metodologia')}>Metodologia</a>
+          <a href="/verificacao" aria-current={atual('/verificacao')}>Verificação</a>
         </nav>
       </div>
     </header>
+    <style is:global>
+      /* Menu mobile (achado da revisão: nav em 3 linhas, alvos de 18px) */
+      .menu-caixa, .menu-botao { display: none; }
+      @media (max-width: 720px) {
+        .menu-botao { display: inline-block; cursor: pointer; padding: .6rem .9rem;
+          border: 1px solid currentColor; border-radius: 6px; user-select: none; }
+        header.site nav.main { display: none; }
+        .menu-caixa:checked ~ nav.main, header.site .inner:has(.menu-caixa:checked) nav.main {
+          display: flex; flex-direction: column; width: 100%; gap: 0; }
+        header.site nav.main a { display: block; padding: .8rem .4rem; min-height: 44px;
+          border-top: 1px solid rgba(127,127,127,.25); }
+      }
+    </style>
     <main id="conteudo">
       <slot />
     </main>
     <footer class="site">
       <div class="inner">
-        <p><strong>Rotulagem:</strong> este site contém análises produzidas com assistência de inteligência artificial e submetidas a revisão editorial humana antes da publicação, em conformidade com as resoluções do TSE sobre uso de IA em conteúdo eleitoral. Cada ficha identifica seu revisor humano e sua data de revisão.</p>
+        <p><strong>Rotulagem:</strong> este site contém análises e respostas produzidas por inteligência artificial, sem revisão humana — a revisão é feita por uma segunda passagem de IA, com verificação documental e conferência de áudio por um segundo modelo, tudo registrado publicamente (política de 08/08/2026). Cada análise identifica o modelo e a data, em conformidade com as resoluções do TSE sobre uso de IA em conteúdo eleitoral.</p>
         <p><strong>Neutralidade:</strong> este site não recomenda voto nem conclui superioridade de candidato. Toda classificação cita página do documento primário; a metodologia, o changelog e as memórias de cálculo são públicos e versionados. Análises terminam em trade-offs, não em veredictos.</p>
         <p>Metodologia v1.1 · conteúdo versionado publicamente no GitHub · 2026</p>
       </div>
