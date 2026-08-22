@@ -1,24 +1,18 @@
 ---
 import Base from '../../../../../layouts/Base.astro';
-import indice from '../../../../../../data/acervo/indice.json';
+import { leDados } from '../../../../../lib/dados.mjs';
+import { carregaAno, raizAcervo, rotasMes } from '../../../../../lib/acervo.mjs';
 
-const LIMITE_PAGINA = 400;
-const POSTS = ['post-x', 'post-instagram'];
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const indice = leDados('acervo', 'indice.json');
 
 export function getStaticPaths() {
-  const dados = import.meta.glob('../../../../../../data/acervo/*/*/*.json', { eager: true });
-  const caminhos = [];
-  for (const [caminho, mod] of Object.entries(dados)) {
-    const m = caminho.match(/data\/acervo\/([^/]+)\/([^/]+)\/(\d{4}|0000)\.json$/);
-    if (!m || !['post-x', 'post-instagram'].includes(m[2])) continue;
-    const itens = mod.default ?? [];
-    if (itens.length <= 400) continue;
-    const meses = new Set(itens.map((i) => (i.data ? i.data.slice(5, 7) : '00')));
-    for (const mes of meses) {
-      caminhos.push({ params: { slug: m[1], tipo: m[2], ano: m[3], mes } });
-    }
-  }
-  return caminhos;
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const indice = leDados('acervo', 'indice.json');
+  return rotasMes(raizAcervo(), indice);
 }
 
 const ROTULO = { 'post-x': 'Posts no X', 'post-instagram': 'Posts no Instagram' };
@@ -26,8 +20,7 @@ const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
   'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
 const { slug, tipo, ano, mes } = Astro.params;
 const c = indice.candidatos[slug];
-const dados = import.meta.glob('../../../../../../data/acervo/*/*/*.json', { eager: true });
-const todos = dados[`../../../../../../data/acervo/${slug}/${tipo}/${ano}.json`]?.default ?? [];
+const todos = carregaAno(raizAcervo(), slug, tipo, ano);
 const itens = todos.filter((i) => (i.data ? i.data.slice(5, 7) : '00') === mes);
 const rotuloMes = mes === '00' ? 'sem data' : `${MESES[Number(mes) - 1]} de ${ano}`;
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');

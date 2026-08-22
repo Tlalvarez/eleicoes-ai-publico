@@ -1,16 +1,24 @@
 ---
 import Base from '../../../layouts/Base.astro';
 import ListaItens from '../../../components/ListaItens.astro';
-import resumo from '../../../../data/itens/resumo.json';
+import { leDados } from '../../../lib/dados.mjs';
+import { carregaRecentes, raizItens } from '../../../lib/itens.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const resumo = leDados('itens', 'resumo.json');
 
 export function getStaticPaths() {
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const resumo = leDados('itens', 'resumo.json');
   return Object.keys(resumo.candidatos).map((slug) => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
 const c = resumo.candidatos[slug];
-const recentesMod = import.meta.glob('../../../../data/itens/*/recentes.json', { eager: true });
-const recentes = recentesMod[`../../../../data/itens/${slug}/recentes.json`]?.default ?? [];
+const recentes = carregaRecentes(raizItens(), slug);
 const voz = recentes.filter((i) => i.voz === 'propria');
 ---
 <Base

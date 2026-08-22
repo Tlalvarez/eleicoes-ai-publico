@@ -6,7 +6,14 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "npm run test:unit && npm run build && npm run test:home-dist",
+    "test:unit": "npm run test:home-fonte && npm run test:rotas && npm run test:catalogo",
+    "test:integracao": "npm run test",
+    "test:home-fonte": "node scripts/checa-home-fonte.mjs",
+    "test:home-dist": "node scripts/checa-home-dist.mjs",
+    "test:catalogo": "node scripts/checa-catalogo.mjs",
+    "test:rotas": "node --test test/*.test.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"

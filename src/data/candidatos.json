@@ -1,0 +1,29 @@
+{
+ "_": "CATÁLOGO CANÔNICO do site — fonte de autoridade, versionada e editada à mão.",
+ "_por_que": [
+  "data/itens/resumo.json e data/acervo/indice.json são DERIVADOS da mesma exportação do harness.",
+  "Comparar um com o outro não prova nada sobre quantos candidatos deveriam estar publicados:",
+  "uma exportação que perdesse um candidato produziria os dois igualmente errados, e o gate",
+  "anunciaria sucesso. Este arquivo é o único lugar em que o número esperado é DECLARADO.",
+  "Ele não é gerado por script nenhum: acrescentar candidato aqui é decisão editorial,",
+  "e o gate (npm test) cai enquanto os derivados não trouxerem exatamente esta lista."
+ ],
+ "_onda_1": "Os oito da Onda 1 entraram em 2026-08-22, junto com harness/config/candidatos.json. Eles estão no CATÁLOGO (o site publica) e fora da FILA DE COLETA (o harness não coleta): aparecem no site com zero itens, e é assim que tem de ser — candidato que some por não ter material transforma buraco de cobertura em aparência de completude.",
+ "_ordem": "os cinco em produção primeiro, na ordem da configuração do harness.",
+ "atualizado_em": "2026-08-22",
+ "candidatos": [
+  {"slug": "lula", "nome": "Lula"},
+  {"slug": "romeu-zema", "nome": "Romeu Zema"},
+  {"slug": "ronaldo-caiado", "nome": "Ronaldo Caiado"},
+  {"slug": "renan-santos", "nome": "Renan Santos"},
+  {"slug": "flavio-bolsonaro", "nome": "Flávio Bolsonaro"},
+  {"slug": "clariana-barao", "nome": "Clariana Barão"},
+  {"slug": "edmilson-costa", "nome": "Edmilson Costa"},
+  {"slug": "augusto-cury", "nome": "Augusto Cury"},
+  {"slug": "hertz-dias", "nome": "Hertz Dias"},
+  {"slug": "pablo-marcal", "nome": "Pablo Marçal"},
+  {"slug": "rui-costa-pimenta", "nome": "Rui Costa Pimenta"},
+  {"slug": "samara", "nome": "Samara"},
+  {"slug": "wilson-grassi", "nome": "Wilson Grassi"}
+ ]
+}

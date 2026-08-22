@@ -1,18 +1,25 @@
 ---
 import Base from '../../../../layouts/Base.astro';
 import ListaItens from '../../../../components/ListaItens.astro';
-import resumo from '../../../../../data/itens/resumo.json';
+import { leDados } from '../../../../lib/dados.mjs';
+import { carregaAnoItens, raizItens } from '../../../../lib/itens.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const resumo = leDados('itens', 'resumo.json');
 
 export function getStaticPaths() {
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const resumo = leDados('itens', 'resumo.json');
   return Object.entries(resumo.candidatos).flatMap(([slug, c]) =>
     c.anos.filter((a) => a !== '0000').map((ano) => ({ params: { slug, ano } })));
 }
 
 const { slug, ano } = Astro.params;
 const c = resumo.candidatos[slug];
-const anosMod = import.meta.glob('../../../../../data/itens/*/*.json', { eager: true });
-const itens = (anosMod[`../../../../../data/itens/${slug}/${ano}.json`]?.default ?? [])
-  .filter((i) => i.voz !== 'terceiro');
+const itens = carregaAnoItens(raizItens(), slug, ano).filter((i) => i.voz !== 'terceiro');
 ---
 <Base
   title={`Arquivo ${ano} — ${c.nome}`}
