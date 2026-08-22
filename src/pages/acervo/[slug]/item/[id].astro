@@ -1,19 +1,25 @@
 ---
 import Base from '../../../../layouts/Base.astro';
-import indice from '../../../../../data/acervo/indice.json';
+import { leDados } from '../../../../lib/dados.mjs';
+import { carregaItem, raizAcervo, rotasItem } from '../../../../lib/acervo.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const indice = leDados('acervo', 'indice.json');
 
 export function getStaticPaths() {
-  const detalhes = import.meta.glob('../../../../../data/acervo/*/itens/*.json');
-  return Object.keys(detalhes).map((caminho) => {
-    const [, slug, , arquivo] = caminho.match(/data\/acervo\/([^/]+)\/(itens)\/(.+)\.json$/) ?? [];
-    return { params: { slug, id: arquivo } };
-  }).filter((p) => p.params.slug);
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const indice = leDados('acervo', 'indice.json');
+  return rotasItem(raizAcervo());
 }
 
 const { slug, id } = Astro.params;
 const c = indice.candidatos[slug];
-const detalhes = import.meta.glob('../../../../../data/acervo/*/itens/*.json');
-const item = (await detalhes[`../../../../../data/acervo/${slug}/itens/${id}.json`]()).default;
+// uma transcrição por vez: o glob deixava as 1.490 no grafo de módulos, e
+// cada uma carregada ficava no cache do Node até o fim do build
+const item = carregaItem(raizAcervo(), slug, id);
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
 const minutos = item.duracao_s ? `${Math.round(item.duracao_s / 60)} min` : null;
 

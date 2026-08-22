@@ -1,11 +1,18 @@
 ---
 import Base from '../../../../layouts/Base.astro';
-import indice from '../../../../../data/acervo/indice.json';
+import { leDados } from '../../../../lib/dados.mjs';
+import { carregaAno, ehPaginadoPorMes, raizAcervo, rotasAno } from '../../../../lib/acervo.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const indice = leDados('acervo', 'indice.json');
 
 export function getStaticPaths() {
-  return Object.entries(indice.candidatos).flatMap(([slug, c]) =>
-    Object.entries(c.tipos).flatMap(([tipo, d]) =>
-      Object.keys(d.anos).map((ano) => ({ params: { slug, tipo, ano } }))));
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const indice = leDados('acervo', 'indice.json');
+  return rotasAno(indice);
 }
 
 const ROTULO = {
@@ -15,8 +22,9 @@ const ROTULO = {
 };
 const { slug, tipo, ano } = Astro.params;
 const c = indice.candidatos[slug];
-const dados = import.meta.glob('../../../../../data/acervo/*/*/*.json', { eager: true });
-const itens = dados[`../../../../../data/acervo/${slug}/${tipo}/${ano}.json`]?.default ?? [];
+// só o rollup deste ano — o glob eager arrastava o acervo inteiro (inclusive
+// as transcrições em <slug>/itens/) para dentro de cada rota
+const itens = carregaAno(raizAcervo(), slug, tipo, ano);
 const anos = Object.keys(c.tipos[tipo].anos).sort().reverse();
 const min = (s) => (s ? ` · ${Math.round(s / 60)} min` : '');
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
@@ -24,9 +32,9 @@ const ehVideo = tipo === 'video' || tipo === 'aparicao';
 const ehPost = tipo === 'post-x' || tipo === 'post-instagram';
 
 // Anos grandes viram índice de meses (achado da revisão: 3.340 itens numa
-// página = 3,9MB/596 telas mobile — impraticável).
-const LIMITE_PAGINA = 400;
-const paginaPorMes = ehPost && itens.length > LIMITE_PAGINA;
+// página = 3,9MB/596 telas mobile — impraticável). A regra mora na lib para
+// não divergir de quais rotas mensais são geradas.
+const paginaPorMes = ehPaginadoPorMes(tipo, itens);
 const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho',
   'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
 const porMes = new Map();

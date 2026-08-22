@@ -1,8 +1,16 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import indice from '../../../../data/acervo/indice.json';
+import { leDados } from '../../../lib/dados.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const indice = leDados('acervo', 'indice.json');
 
 export function getStaticPaths() {
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const indice = leDados('acervo', 'indice.json');
   return Object.keys(indice.candidatos).map((slug) => ({ params: { slug } }));
 }
 

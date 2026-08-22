@@ -1,6 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
-import resumo from '../../../data/itens/resumo.json';
+import { leDados } from '../../lib/dados.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const resumo = leDados('itens', 'resumo.json');
 
 const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => ({ slug, ...c }));
 ---

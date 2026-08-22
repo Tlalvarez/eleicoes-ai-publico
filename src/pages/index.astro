@@ -1,18 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
+import { leDados } from '../lib/dados.mjs';
+import { candidatosDaHome, chipsDaHome } from '../lib/home.mjs';
 
-const chips = [
-  'O que o Lula propõe para a educação?',
-  'Quem quer mudar a aposentadoria?',
-  'O que o Zema diz sobre impostos?',
-  'Qual candidato fala em privatizações?',
-  'O que o Renan Santos propõe para a economia?',
-  'O que o Caiado defende sobre segurança pública?',
-];
-const candidatos = [
-  ['lula', 'Lula'], ['romeu-zema', 'Romeu Zema'], ['ronaldo-caiado', 'Ronaldo Caiado'],
-  ['renan-santos', 'Renan Santos'], ['flavio-bolsonaro', 'Flávio Bolsonaro'],
-];
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const resumo = leDados('itens', 'resumo.json');
+
+// Cards e chips saem do resumo gerado pelo harness, no mesmo molde e na mesma
+// ordem: com 13 candidatos, uma home com cinco escritos à mão quebraria a
+// cobertura simétrica logo na primeira página.
+const candidatos = candidatosDaHome(resumo);
+const chips = chipsDaHome(resumo);
 ---
 <Base title="Pergunte sobre os candidatos de 2026">
   <h1>O que os candidatos de 2026 realmente propõem?</h1>
@@ -24,16 +24,16 @@ const candidatos = [
   <form class="busca-hero" action="/pesquisa" method="get" role="search">
     <label class="sr-only" for="q">Sua pergunta sobre os candidatos</label>
     <input id="q" name="q" type="search" required
-           placeholder="Ex.: o que o Zema propõe sobre previdência?" autocomplete="off" />
+           placeholder="Ex.: o que os candidatos propõem sobre previdência?" autocomplete="off" />
     <button type="submit">Perguntar</button>
   </form>
   <p class="chips">
-    {chips.map((c) => <a class="chip" href={`/pesquisa?q=${encodeURIComponent(c)}`}>{c}</a>)}
+    {chips.map((c) => <a class="chip" href={c.href}>{c.pergunta}</a>)}
   </p>
 
   <h2>Os candidatos acompanhados</h2>
   <div class="grid-candidatos">
-    {candidatos.map(([slug, nome]) => (
+    {candidatos.map(({ slug, nome }) => (
       <a class="card card-candidato" href={`/candidato/${slug}`}><strong>{nome}</strong><br />
         <small>perfil, arquivo e acervo</small></a>
     ))}

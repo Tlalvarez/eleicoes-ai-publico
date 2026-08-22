@@ -5,3 +5,18 @@ corpus/
 
 # acervo: dados derivados, regenerados pelo harness (publicação decidida na fase de deploy)
 data/acervo/
+
+# gerações: a raiz versionada dos derivados de cada rodada. Cada uma carrega
+# itens, acervo e uma cópia do índice de pesquisa — volume derivável, e o
+# deploy é upload direto do dist, não build a partir do git.
+#
+# `data/current.json` NÃO entra aqui de propósito: o manifesto é pequeno e é o
+# rastro auditável de QUAL geração foi a público (id, catálogo e contagens).
+data/geracoes/
+
+# Árvores que já estiveram públicas são preservadas fora do caminho ativo.
+# Não são conteúdo versionável: a localização é registrada pelo publicador e
+# deve ser monitorada/recolhida operacionalmente. `_staging-*` NÃO é ignorado,
+# pois indica retenção incompleta e precisa aparecer como falha alta.
+data/aposentada-*
+data/quarentena-*

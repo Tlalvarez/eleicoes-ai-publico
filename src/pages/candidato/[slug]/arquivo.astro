@@ -1,20 +1,25 @@
 ---
 import Base from '../../../layouts/Base.astro';
-import resumo from '../../../../data/itens/resumo.json';
+import { leDados } from '../../../lib/dados.mjs';
+import { anosDoArquivo, raizItens, resumoPorAno } from '../../../lib/itens.mjs';
+
+// os dados saem do MANIFESTO da geração ativa (data/current.json),
+// nunca de um caminho fixo: itens, acervo e índice de pesquisa
+// precisam ser sempre da MESMA geração
+const resumo = leDados('itens', 'resumo.json');
 
 export function getStaticPaths() {
+  // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
+  // frontmatter: a leitura tem de acontecer aqui dentro também
+  const resumo = leDados('itens', 'resumo.json');
   return Object.keys(resumo.candidatos).map((slug) => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
 const c = resumo.candidatos[slug];
-const anosMod = import.meta.glob('../../../../data/itens/*/*.json', { eager: true });
-const porAno = c.anos.filter((a) => a !== '0000').map((ano) => {
-  const itens = anosMod[`../../../../data/itens/${slug}/${ano}.json`]?.default ?? [];
-  const propria = itens.filter((i) => i.voz !== 'terceiro');
-  const posts = propria.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagram').length;
-  return { ano, total: propria.length, posts, longos: propria.length - posts };
-});
+// só os anos deste candidato, um arquivo por vez — o glob eager carregava
+// data/itens inteiro (47 arquivos) em cada uma das rotas
+const porAno = resumoPorAno(raizItens(), slug, anosDoArquivo(c));
 ---
 <Base
   title={`Arquivo 5 anos — ${c.nome}`}
