@@ -1,59 +1,68 @@
 /* eleicoes.ai — folha única.
  *
- * Tratamento editorial quente: papel (parchment), preto-quase (near-black) e
- * terracota. Georgia nos títulos e no corpo de leitura longa; sans do sistema
- * na interface. A escolha não é decorativa: o site publica leitura de
- * documento, não painel de indicadores. Não há KPI, medidor, barra de
- * progresso nem qualquer forma que sugira placar entre candidatos — volume de
- * material coletado é função de quanto cada um publica, não avaliação.
+ * Identidade cívica brasileira, própria: azul-marinho institucional, amarelo,
+ * verde e um azul secundário, com laranja apenas como acento decorativo.
+ * Papel marfim, cartão branco, texto chumbo. Tipografia sans-serif do
+ * sistema — nenhuma fonte é baixada, nenhuma requisição sai da página.
  *
- * Neutralidade também é design: um único acento para o site inteiro, o mesmo
- * cartão e a mesma tipografia para todo candidato. Nenhuma cor partidária
- * aparece como acento em lugar nenhum.
+ * A geometria é reta e a marca é textual: nada aqui imita logomarca, brasão,
+ * slogan ou qualquer ativo da Justiça Eleitoral. O rodapé diz isso com todas
+ * as letras, porque parecer oficial seria uma afirmação falsa feita por
+ * design.
+ *
+ * NENHUMA COR É ATRIBUÍDA A CANDIDATO, partido, qualidade, ranking ou volume.
+ * O mesmo cartão, a mesma tipografia e a mesma cor para todo candidato: as
+ * quatro cores da paleta variam por FUNÇÃO (superfície, ação, atenção,
+ * decoração), nunca por quem está sendo mostrado. Não há KPI, medidor, barra
+ * de progresso nem qualquer forma que sugira placar entre candidatos —
+ * volume de material coletado é função de quanto cada um publica, não
+ * avaliação.
  */
 
 :root {
-  --papel: #f5f4ed;
-  --papel-fundo: #efeee5;
-  --tinta: #141413;
-  --tinta-suave: #55534c;
-  --linha: #ddd9c9;
-  --cartao: #fffefa;
+  /* paleta da identidade */
+  --azul: #17365d;
+  --azul-escuro: #102944;
+  --azul-claro: #2d6fb7;
+  --amarelo: #f2c94c;
+  --verde: #2e7d32;
+  --laranja: #e66b3d;
 
-  /* terracota da marca: usada como acento gráfico (bordas, marcas, ícones) */
-  --acento: #c96442;
-  /* variante de TEXTO e de botão preenchido: a da marca não alcança 4,5:1
-     sobre o papel, e link de corpo de texto precisa alcançar */
-  --acento-forte: #a8492b;
-  --acento-contraste: #fffefa;
-  --realce: #f7ecd9;
-  --atencao: #7a4100;
+  /* superfícies e texto */
+  --papel: #f7f4ea;
+  --papel-fundo: #eef1f4;
+  --cartao: #ffffff;
+  --tinta: #1d1d1b;
+  --tinta-suave: #5d6470;
+  --linha: #d8d9d6;
+  --linha-forte: #c3cfdd;
+  --branco: #ffffff;
 
-  --fonte-titulo: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
+  /* atenção e lacuna: amarelo claro com texto azul-marinho */
+  --realce-atencao: #fff7d6;
+  --linha-atencao: #e5c95f;
+
+  --sombra: 0 14px 36px rgba(23, 54, 93, .10);
+  --sombra-leve: 0 8px 24px rgba(23, 54, 93, .06);
+
+  /* Apelidos herdados. Meia dúzia de rotas que esta rodada não redesenhou
+     (candidato, menções, fichas, metodologia, verificação) pintam com
+     `--acento` e companhia. Renomear sem manter o apelido deixaria essas
+     páginas sem estilo — é um jeito silencioso de quebrar rota. */
+  --acento: var(--azul-claro);
+  --acento-forte: var(--azul);
+  --acento-contraste: #ffffff;
+  --realce: #eaf0f7;
+  --atencao: #a5442a;
+
+  --fonte-titulo: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --fonte-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
   --raio: 10px;
   --largura: 54rem;
   --alvo: 44px;          /* alvo de toque mínimo */
 
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --papel: #141413;
-    --papel-fundo: #0e0e0d;
-    --tinta: #f0efe6;
-    --tinta-suave: #a8a49a;
-    --linha: #33322d;
-    --cartao: #1c1b19;
-
-    --acento: #e08a68;
-    --acento-forte: #eda184;
-    --acento-contraste: #17110e;
-    --realce: #2d2419;
-    --atencao: #e8b04b;
-  }
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -84,19 +93,22 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--fonte-titulo);
-  font-weight: 600;
-  line-height: 1.22;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 1.16;
+  letter-spacing: -0.025em;
   text-wrap: balance;
 }
-h1 { font-size: clamp(1.7rem, 1.3rem + 2vw, 2.4rem); margin: 0 0 .5rem; }
-h2 { font-size: clamp(1.25rem, 1.1rem + .8vw, 1.55rem); margin: 2.4rem 0 .6rem; }
+/* Título é azul-marinho; corpo é chumbo. O contraste entre os dois é o que
+   organiza a página agora que tudo usa a mesma pilha sans-serif. */
+h1, h2 { color: var(--acento-forte); }
+h1 { font-size: clamp(1.9rem, 1.3rem + 2.6vw, 2.9rem); font-weight: 800; letter-spacing: -.04em; margin: 0 0 .5rem; }
+h2 { font-size: clamp(1.3rem, 1.1rem + 1vw, 1.7rem); margin: 2.4rem 0 .6rem; }
 h3 { font-size: 1.12rem; margin: 1.6rem 0 .4rem; }
 h4 { font-size: 1rem; margin: 1.2rem 0 .3rem; }
 
 p { margin: 0 0 1rem; }
 .lead {
-  font-family: var(--fonte-titulo);
+  font-family: var(--fonte-ui);
   font-size: clamp(1.02rem, .96rem + .5vw, 1.2rem);
   color: var(--tinta-suave);
   margin-top: 0;
@@ -153,8 +165,21 @@ header.site .inner, main, footer.site .inner {
 main { padding-block: 2rem 3rem; }
 
 header.site {
-  border-bottom: 1px solid var(--linha);
-  background: var(--papel-fundo);
+  background: var(--azul);
+  color: var(--branco);
+}
+/* A faixa: quatro faixas retas, de larguras desiguais, com transição dura.
+   É geometria própria — não é bandeira, não é onda, não é logomarca, e as
+   cores estão aqui por decoração, não por representar coisa alguma. */
+header.site::before {
+  content: '';
+  display: block;
+  height: 7px;
+  background: linear-gradient(90deg,
+    var(--amarelo) 0 27%,
+    var(--verde) 27% 48%,
+    var(--azul-claro) 48% 76%,
+    var(--laranja) 76% 100%);
 }
 header.site .inner {
   display: flex;
@@ -165,43 +190,49 @@ header.site .inner {
 }
 .brand {
   font-family: var(--fonte-titulo);
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-weight: 800;
+  font-size: 1.45rem;
+  letter-spacing: -.04em;
   text-decoration: none;
-  color: var(--tinta);
+  color: var(--branco);
   padding: .4rem 0;
   min-height: var(--alvo);
   display: inline-flex;
   align-items: center;
 }
-.brand span { color: var(--acento); }
+.brand span { color: var(--amarelo); }
 
 nav.main { display: flex; flex-wrap: wrap; gap: .2rem; }
 nav.main a {
   text-decoration: none;
-  color: var(--tinta-suave);
+  color: rgba(255, 255, 255, .86);
   font-size: .95rem;
-  padding: .55rem .6rem;
+  font-weight: 600;
+  padding: .55rem .7rem;
   min-height: var(--alvo);
   display: inline-flex;
   align-items: center;
   border-radius: 6px;
+  border-bottom: 3px solid transparent;
 }
-nav.main a:hover { color: var(--tinta); background: var(--realce); }
+nav.main a:hover { color: var(--branco); background: rgba(255, 255, 255, .1); }
 nav.main a[aria-current='page'] {
-  color: var(--tinta);
-  box-shadow: inset 0 -2px 0 var(--acento);
+  color: var(--branco);
+  border-bottom-color: var(--amarelo);
+  border-radius: 6px 6px 0 0;
 }
 
 footer.site {
-  border-top: 1px solid var(--linha);
-  background: var(--papel-fundo);
+  background: var(--azul-escuro);
   margin-top: 3rem;
   font-size: .86rem;
-  color: var(--tinta-suave);
+  color: rgba(255, 255, 255, .78);
 }
-footer.site .inner { padding-block: 1.3rem 2rem; }
+footer.site .inner { padding-block: 1.5rem 2.2rem; }
 footer.site p { max-width: 60em; }
+footer.site strong { color: var(--branco); }
+footer.site a { color: var(--amarelo); }
+.aviso-independencia { border-top: 1px solid rgba(255, 255, 255, .18); padding-top: 1.1rem; }
 
 /* --------------------------------------------------------------- acessibilidade */
 
@@ -209,16 +240,21 @@ footer.site p { max-width: 60em; }
   position: absolute;
   left: -9999px;
   top: 0;
-  background: var(--acento-forte);
-  color: var(--acento-contraste);
+  background: var(--azul);
+  color: var(--branco);
   padding: .75rem 1rem;
   z-index: 20;
 }
 .skip-link:focus { left: 0; }
 
+/* Foco amarelo, como no cabeçalho — mas amarelo sobre marfim é 1,9:1, então
+   o anel vem sempre acompanhado de um segundo anel azul-marinho por fora.
+   Indicador de duas cores: um dos dois contrasta com qualquer superfície do
+   site, clara ou escura. */
 :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
-  outline: 3px solid var(--acento);
+  outline: 3px solid var(--amarelo);
   outline-offset: 2px;
+  box-shadow: 0 0 0 6px var(--azul);
   border-radius: 4px;
 }
 
@@ -238,13 +274,14 @@ footer.site p { max-width: 60em; }
   background: var(--cartao);
   border: 1px solid var(--linha);
   border-radius: var(--raio);
+  box-shadow: var(--sombra-leve);
   padding: 1.1rem 1.25rem;
   margin: 1.1rem 0;
 }
 
 .aviso {
   border: 1px solid var(--linha);
-  border-left: 4px solid var(--acento);
+  border-left: 4px solid var(--azul-claro);
   background: var(--cartao);
   border-radius: var(--raio);
   padding: .85rem 1.1rem;
@@ -255,24 +292,29 @@ footer.site p { max-width: 60em; }
 .aviso strong { color: var(--tinta); }
 
 /* estado de publicação dos dados — o mais importante da página, não um selo */
+/* Atenção e lacuna têm uma cor só no site inteiro: amarelo claro com texto
+   azul-marinho. Nunca é o estatuto de um candidato — é o estado do dado. */
 .estado-release {
   display: flex;
   gap: .7rem;
   align-items: flex-start;
-  border: 1px solid var(--acento);
+  border: 1px solid var(--linha-atencao);
+  border-left: 4px solid var(--amarelo);
   border-radius: var(--raio);
-  background: var(--realce);
+  background: var(--realce-atencao);
   color: var(--tinta);
-  padding: .8rem 1rem;
+  padding: .85rem 1.05rem;
   margin: 1.2rem 0;
   font-size: .9rem;
 }
 .estado-release .marca {
   font-weight: 700;
   font-family: var(--fonte-ui);
+  color: var(--acento-forte);
   white-space: nowrap;
 }
 .estado-release p { margin: 0; }
+.estado-release strong { color: var(--acento-forte); }
 .estado-release .detalhe { color: var(--tinta-suave); }
 
 .selo {
@@ -305,14 +347,14 @@ footer.site p { max-width: 60em; }
   gap: .4rem;
   text-decoration: none;
 }
-.botao:hover { filter: brightness(1.08); }
+.botao:hover { filter: brightness(1.14); }
 .botao[disabled] { opacity: .55; cursor: not-allowed; filter: none; }
 .botao.secundario {
   background: var(--cartao);
   color: var(--tinta);
   border-color: var(--linha);
 }
-.botao.secundario:hover { border-color: var(--acento); background: var(--realce); }
+.botao.secundario:hover { border-color: var(--azul-claro); background: var(--realce); }
 
 .campo {
   font: inherit;
@@ -325,7 +367,8 @@ footer.site p { max-width: 60em; }
   background: var(--cartao);
   color: var(--tinta);
 }
-.campo:hover { border-color: var(--acento); }
+.campo:hover { border-color: var(--azul-claro); }
+.campo:focus { border-color: var(--azul); }
 
 .lista-limpa { list-style: none; padding: 0; margin: 0; }
 
@@ -350,26 +393,42 @@ footer.site p { max-width: 60em; }
   text-decoration: none;
   font-size: .92rem;
 }
-.faixa-candidatos a:hover { border-color: var(--acento); background: var(--realce); }
+.faixa-candidatos a:hover { border-color: var(--azul-claro); background: var(--realce); }
 
 /* sugestões de pergunta */
-.sugestoes { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+/* As sugestões da home são UMA POR CANDIDATO. Por isso a faixa colorida fica
+   no contêiner, não nos chips: colorir cada chip por posição seria colorir
+   cada candidato, e cor por candidato é exatamente o que este site não faz.
+   Todo chip tem a mesma borda, o mesmo fundo e o mesmo peso. */
+.sugestoes {
+  display: flex; flex-wrap: wrap; gap: .45rem;
+  padding: .9rem 0 0; margin: 1rem 0 0; list-style: none;
+  background-image: linear-gradient(90deg,
+    var(--amarelo) 0 27%,
+    var(--verde) 27% 48%,
+    var(--azul-claro) 48% 76%,
+    var(--laranja) 76% 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  background-position: 0 0;
+}
 .sugestao {
   font: inherit;
   font-size: .88rem;
+  font-weight: 600;
   display: inline-flex;
   align-items: center;
   min-height: var(--alvo);
-  padding: .4rem .9rem;
-  border: 1px solid var(--linha);
-  border-radius: 99px;
+  padding: .4rem .95rem;
+  border: 1px solid var(--linha-forte);
+  border-radius: 999px;
   background: var(--cartao);
-  color: var(--tinta);
+  color: var(--acento-forte);
   text-decoration: none;
   cursor: pointer;
   text-align: left;
 }
-.sugestao:hover { border-color: var(--acento); background: var(--realce); }
+.sugestao:hover { border-color: var(--azul); background: var(--realce); }
 
 /* dossiê / listas de conteúdo herdadas */
 ul.lista-dossie { list-style: none; padding: 0; }
@@ -398,10 +457,11 @@ ul.lista-dossie .meta { color: var(--tinta-suave); font-size: .88rem; display: b
     margin-left: auto;
     cursor: pointer;
     padding: .5rem .9rem;
-    border: 1px solid var(--linha);
+    border: 1px solid rgba(255, 255, 255, .45);
     border-radius: 8px;
     user-select: none;
     font-size: .95rem;
+    color: var(--branco);
   }
   header.site nav.main { display: none; }
   .menu-caixa:checked ~ nav.main,
@@ -415,10 +475,15 @@ ul.lista-dossie .meta { color: var(--tinta-suave); font-size: .88rem; display: b
     display: flex;
     width: 100%;
     padding: .8rem .4rem;
-    border-top: 1px solid var(--linha);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 0;
     border-radius: 0;
   }
-  .menu-caixa:focus-visible + .menu-botao { outline: 3px solid var(--acento); outline-offset: 2px; }
+  header.site nav.main a[aria-current='page'] { box-shadow: inset 3px 0 0 var(--amarelo); }
+  .menu-caixa:focus-visible + .menu-botao {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 2px;
+  }
 }
 
 /* ------------------------------------------------- nomes herdados das páginas

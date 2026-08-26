@@ -29,14 +29,17 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   ?? (import.meta.env.DEV ? 'http://localhost:8765' : '');
 ---
 <Base title="Perguntar ao acervo">
-  <h1>Converse com as evidências reunidas sobre os candidatos</h1>
-  <p class="lead">
-    Pergunte em português. A resposta é montada a partir do que foi
-    <strong>registrado</strong> — vídeos com transcrição, discursos, publicações e posts —
-    e separa sempre três coisas: o que está <strong>registrado</strong>, o que é
-    <strong>inferência</strong> de quem escreve e o que é <strong>lacuna</strong>, com link
-    para cada fonte original.
-  </p>
+  <div class="hero-home">
+    <p class="sobretitulo">Eleições gerais de 2026</p>
+    <h1>Pergunte. Confira as fontes.</h1>
+    <p class="lead">
+      Converse em português com as evidências reunidas sobre os candidatos. A resposta é
+      montada a partir do que foi <strong>registrado</strong> — vídeos com transcrição,
+      discursos, publicações e posts — e separa sempre três coisas: o que está
+      <strong>registrado</strong>, o que é <strong>inferência</strong> de quem escreve e o
+      que é <strong>lacuna</strong>, com link para cada fonte original.
+    </p>
+  </div>
 
   <EstadoRelease />
 
@@ -116,7 +119,34 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   </p>
 
   <style>
-    .form-chat { margin: 1rem 0 0; }
+    .hero-home { margin-bottom: 1.6rem; }
+    .sobretitulo {
+      margin: 0 0 .6rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    /* o compositor: cartão branco, borda azul, raio e sombra leve */
+    .form-chat {
+      margin: 1.2rem 0 0;
+      padding: .9rem 1rem 1rem;
+      background: var(--cartao);
+      border: 1px solid var(--linha-forte);
+      border-radius: calc(var(--raio) + 6px);
+      box-shadow: var(--sombra);
+    }
+    .form-chat:focus-within { border-color: var(--azul); }
+    /* dentro do compositor o campo não desenha caixa própria: a caixa é o
+       cartão. O indicador de foco continua sendo o da folha global. */
+    .form-chat .campo {
+      border-color: transparent;
+      background: transparent;
+      min-height: 5.5rem;
+      padding: .4rem .35rem;
+      font-size: 1.06rem;
+    }
     .acoes-envio { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .6rem; }
     .nota-envio { font-size: .84rem; color: var(--tinta-suave); margin: .5rem 0 0; }
     .nota-envio kbd {
@@ -125,7 +155,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     }
     .como-ler { margin: 0; padding-left: 1.2rem; }
     .como-ler li { margin-bottom: .5rem; }
-    .exemplo-marcador { font-weight: 700; color: var(--acento-forte); }
+    .exemplo-marcador { font-weight: 700; color: var(--acento); }
     .rodape-cartao { margin: .8rem 0 0; font-size: .88rem; color: var(--tinta-suave); }
     .depois-da-faixa { margin-top: 1rem; }
     @media (max-width: 520px) {
@@ -144,15 +174,38 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     .turno-pergunta .texto-pergunta {
       font-family: var(--fonte-titulo);
       font-size: clamp(1.15rem, 1.05rem + .6vw, 1.4rem);
-      font-weight: 600;
-      line-height: 1.25;
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1.22;
+      color: var(--acento-forte);
       margin: 0 0 .2rem;
       padding-left: .9rem;
-      border-left: 4px solid var(--acento);
+      border-left: 4px solid var(--amarelo);
     }
     .turno-pergunta .marca-pergunta {
-      font-size: .78rem; text-transform: uppercase; letter-spacing: .04em;
-      color: var(--tinta-suave); padding-left: 1.05rem;
+      font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
+      font-weight: 800; color: var(--acento); padding-left: 1.05rem;
+    }
+
+    /* a resposta é um cartão branco com a faixa da identidade no topo */
+    .turno-resposta > article {
+      overflow: hidden;
+      background: var(--cartao);
+      border: 1px solid var(--linha);
+      border-radius: var(--raio);
+      box-shadow: var(--sombra-leve);
+      padding: 0 1.3rem 1.2rem;
+    }
+    .turno-resposta > article::before {
+      content: '';
+      display: block;
+      height: 5px;
+      margin: 0 -1.3rem 1.2rem;
+      background: linear-gradient(90deg,
+        var(--amarelo) 0 34%,
+        var(--verde) 34% 52%,
+        var(--azul-claro) 52% 78%,
+        var(--laranja) 78% 100%);
     }
 
     .resposta-corpo {
@@ -168,13 +221,15 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     .resposta-corpo li { margin-bottom: .45rem; }
     .resposta-corpo hr { margin: 1.4rem 0; }
     .marcador-fonte { text-decoration: none; font-weight: 700; font-family: var(--fonte-ui);
-      font-size: .8em; padding: 0 .1em; }
+      font-size: .8em; padding: 0 .1em; color: var(--acento); }
 
     .fontes { margin-top: 1.4rem; border-top: 1px solid var(--linha); padding-top: .9rem; }
-    .fontes h3 { margin-top: 0; font-size: 1rem; }
+    .fontes h3 { margin-top: 0; font-size: .84rem; text-transform: uppercase;
+      letter-spacing: .09em; color: var(--acento-forte); }
     .fontes ol { list-style: none; padding: 0; margin: 0; counter-reset: none; }
     .fontes li { margin-bottom: .8rem; font-size: .92rem; scroll-margin-top: 1rem; }
-    .fontes .marcas { font-weight: 700; font-family: var(--fonte-ui); }
+    .fontes .marcas { font-weight: 700; font-family: var(--fonte-ui); color: var(--acento); }
+    .fontes .link-fonte { color: var(--acento); font-weight: 600; }
     .fontes .fonte-meta { color: var(--tinta-suave); }
     .fontes .ressalva { display: block; font-size: .88em; margin-top: .1rem; }
     .fontes .ressalva.nao-conferido { color: var(--atencao); font-weight: 600; }
@@ -202,16 +257,19 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     .estado-chat .botao.compacto { min-height: 36px; padding: .3rem .8rem; font-size: .85rem; }
     .girando {
       width: 1rem; height: 1rem; flex-shrink: 0; border-radius: 50%;
-      border: 2px solid var(--linha); border-top-color: var(--acento);
+      border: 2px solid var(--linha); border-top-color: var(--amarelo);
       animation: gira .8s linear infinite;
     }
     @keyframes gira { to { transform: rotate(360deg); } }
     .estado-chat.com-erro { color: var(--atencao); font-weight: 600; }
     .estado-chat.com-erro .girando { display: none; }
 
+    /* lacuna e ressalva: amarelo claro com texto azul-marinho, a mesma cor de
+       atenção do site inteiro — nunca o estatuto de um candidato */
     .aviso-turno {
-      font-size: .86rem; color: var(--tinta-suave); background: var(--realce);
-      border-radius: 8px; padding: .5rem .8rem; margin: .6rem 0 0;
+      font-size: .86rem; color: var(--acento-forte);
+      background: var(--realce-atencao); border: 1px solid var(--linha-atencao);
+      border-radius: 8px; padding: .6rem .9rem; margin: .8rem 0 0;
     }
   </style>
 

@@ -161,18 +161,21 @@ const textoDeBusca = (c) =>
     .cobertura { max-width: 46em; }
 
     .filtros {
-      border: 1px solid var(--linha);
-      border-radius: var(--raio);
+      border: 1px solid var(--linha-forte);
+      border-radius: calc(var(--raio) + 4px);
       background: var(--cartao);
+      box-shadow: var(--sombra-leve);
       padding: 1rem 1.1rem;
       margin: 1.4rem 0;
     }
     .filtros label {
       display: block;
-      font-size: .85rem;
-      font-weight: 600;
-      color: var(--tinta-suave);
-      margin-bottom: .25rem;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      color: var(--acento-forte);
+      margin-bottom: .3rem;
     }
     .linha-selects { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; margin-top: .8rem; }
     .acoes-filtro { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; margin-top: .9rem; }
@@ -187,27 +190,31 @@ const textoDeBusca = (c) =>
     .atalhos ul { list-style: none; display: flex; flex-wrap: wrap; gap: .3rem; padding: 0; margin: .4rem 0 0; }
     .atalhos a {
       display: inline-flex; align-items: center; min-height: var(--alvo);
-      padding: .35rem .7rem; border: 1px solid var(--linha); border-radius: 99px;
-      text-decoration: none; color: var(--tinta); background: var(--cartao);
+      padding: .35rem .7rem; border: 1px solid var(--linha-forte); border-radius: 999px;
+      text-decoration: none; color: var(--acento-forte); background: var(--cartao);
     }
-    .atalhos a:hover { border-color: var(--acento); background: var(--realce); }
+    .atalhos a:hover { border-color: var(--azul-claro); background: var(--realce); }
 
     .bloco-candidato {
-      border-top: 1px solid var(--linha);
+      border-top: 2px solid var(--linha);
       padding-top: 1.2rem;
       margin-bottom: 2.2rem;
       scroll-margin-top: 1rem;
     }
     .bloco-candidato h2 { margin-top: 0; }
-    .bloco-candidato h2 a { color: var(--tinta); text-decoration: none; }
-    .bloco-candidato h2 a:hover { color: var(--acento-forte); text-decoration: underline; }
+    .bloco-candidato h2 a { color: inherit; text-decoration: none; }
+    .bloco-candidato h2 a:hover { text-decoration: underline; }
     .meta-candidato { color: var(--tinta-suave); font-size: .9rem; margin: 0 0 .9rem; }
 
+    /* Lacuna: amarelo claro, texto azul-marinho. Mesma cor de atenção do site
+       inteiro — declara ausência de material, não julga quem está listado. */
     .lacuna {
-      border-left: 4px solid var(--acento);
-      background: var(--realce);
+      border: 1px solid var(--linha-atencao);
+      border-left: 4px solid var(--amarelo);
+      background: var(--realce-atencao);
+      color: var(--acento-forte);
       border-radius: 8px;
-      padding: .7rem 1rem;
+      padding: .75rem 1rem;
       font-size: .9rem;
       margin: 0;
       max-width: 46em;
@@ -224,17 +231,18 @@ const textoDeBusca = (c) =>
       border: 1px solid var(--linha);
       border-radius: var(--raio);
       background: var(--cartao);
+      box-shadow: var(--sombra-leve);
       padding: .85rem 1rem;
     }
-    .grupo h3 { margin: 0; font-size: 1rem; }
+    .grupo h3 { margin: 0; font-size: 1rem; color: var(--acento-forte); }
     .canal { margin: .1rem 0 .6rem; font-size: .85rem; color: var(--tinta-suave); }
     .anos { list-style: none; display: flex; flex-wrap: wrap; gap: .3rem; padding: 0; margin: 0; }
     .anos a {
       display: inline-flex; align-items: center; min-height: var(--alvo);
       padding: .3rem .6rem; border: 1px solid var(--linha); border-radius: 6px;
-      text-decoration: none; font-size: .88rem; color: var(--tinta);
+      text-decoration: none; font-size: .88rem; color: var(--acento-forte);
     }
-    .anos a:hover { border-color: var(--acento); background: var(--realce); }
+    .anos a:hover { border-color: var(--azul-claro); background: var(--realce); }
     .anos small { color: var(--tinta-suave); margin-left: .2rem; }
 
     .vazio-filtro { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
