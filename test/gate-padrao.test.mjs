@@ -62,6 +62,46 @@ test('npm test roda o gate de catálogo', () => {
     `npm test não roda o gate de catálogo: ${folhas.join(' | ')}`);
 });
 
+test('npm test confere o acervo construído', () => {
+  const folhas = expande('test');
+
+  assert.ok(folhas.some((c) => c.includes('checa-acervo-dist')),
+    `npm test não confere /acervo: ${folhas.join(' | ')}`);
+});
+
+test('npm test confere que nada no dist monta HTML por string', () => {
+  const folhas = expande('test');
+
+  assert.ok(folhas.some((c) => c.includes('checa-render-seguro')),
+    `npm test não roda o gate de renderização segura: ${folhas.join(' | ')}`);
+});
+
+test('npm test confere o estado de release publicado', () => {
+  const folhas = expande('test');
+
+  assert.ok(folhas.some((c) => c.includes('checa-previa')),
+    `npm test não roda o gate de prévia: ${folhas.join(' | ')}`);
+});
+
+test('npm test confere o piso de acessibilidade das páginas', () => {
+  const folhas = expande('test');
+
+  assert.ok(folhas.some((c) => c.includes('checa-acessibilidade')),
+    `npm test não roda o gate de acessibilidade: ${folhas.join(' | ')}`);
+});
+
+test('todo gate pós-build roda DEPOIS do build, nunca antes', () => {
+  const folhas = expande('test');
+  const build = folhas.indexOf('astro build');
+
+  for (const gate of ['checa-home-dist', 'checa-acervo-dist', 'checa-render-seguro',
+    'checa-previa', 'checa-acessibilidade']) {
+    const onde = folhas.findIndex((c) => c.includes(gate));
+    assert.ok(onde > build,
+      `${gate} roda antes do build — ele conferiria o dist da rodada anterior`);
+  }
+});
+
 test('npm test roda a suíte de rotas', () => {
   const folhas = expande('test');
 

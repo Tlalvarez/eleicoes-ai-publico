@@ -67,9 +67,11 @@ test('ordem alfabética por nome — não por volume de itens', () => {
   assert.deepEqual(candidatosDaHome(resumo).map((c) => c.slug), chips.map((c) => c.slug));
 });
 
-test('o chip leva à pesquisa com a pergunta codificada', () => {
+test('o chip leva ao chat da home com a pergunta codificada', () => {
+  // a home É o chat: o chip não pode apontar para uma segunda superfície de
+  // busca, e precisa continuar funcionando sem JavaScript
   for (const c of chipsDaHome(resumo)) {
-    assert.equal(c.href, `/pesquisa?q=${encodeURIComponent(c.pergunta)}`);
+    assert.equal(c.href, `/?q=${encodeURIComponent(c.pergunta)}`);
     assert.equal(decodeURIComponent(c.href.split('?q=')[1]), c.pergunta);
   }
 });

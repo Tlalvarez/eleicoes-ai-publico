@@ -1,8 +1,14 @@
 ---
 import '../styles/global.css';
-const { title, description = 'Camada de legibilidade eleitoral: análise de programas de governo com metodologia pública, fontes citadas e a mesma régua para todos os candidatos.' } = Astro.props;
+const {
+  title,
+  description = 'Converse com as evidências reunidas sobre os candidatos de 2026: cada resposta separa o que está registrado, o que é inferência e o que é lacuna, com link para a fonte original.',
+} = Astro.props;
 const path = Astro.url.pathname;
-const atual = (p) => (path === p || path.startsWith(p + '/') || path === p + '.html') ? 'page' : undefined;
+const atual = (p) => {
+  if (p === '/') return path === '/' || path === '/index.html' ? 'page' : undefined;
+  return (path === p || path.startsWith(p + '/') || path === p + '.html') ? 'page' : undefined;
+};
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -11,6 +17,7 @@ const atual = (p) => (path === p || path.startsWith(p + '/') || path === p + '.h
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="robots" content="noindex" /><!-- soft launch: remover no lançamento público -->
+    <meta name="color-scheme" content="light dark" />
     <title>{title} · eleicoes.ai</title>
   </head>
   <body>
@@ -18,39 +25,22 @@ const atual = (p) => (path === p || path.startsWith(p + '/') || path === p + '.h
     <header class="site">
       <div class="inner">
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
-        <input type="checkbox" id="menu-aberto" class="menu-caixa" aria-hidden="true" />
-        <label for="menu-aberto" class="menu-botao" aria-label="Abrir menu">☰ Menu</label>
+        <input type="checkbox" id="menu-aberto" class="menu-caixa" />
+        <label for="menu-aberto" class="menu-botao">☰ Menu</label>
         <nav class="main" aria-label="Principal">
-          <a href="/pesquisa" aria-current={atual('/pesquisa')}><strong>Perguntar</strong></a>
-          <a href="/candidato" aria-current={atual('/candidato')}>Candidatos</a>
+          <a href="/" aria-current={atual('/')}><strong>Perguntar</strong></a>
           <a href="/acervo" aria-current={atual('/acervo')}>Acervo</a>
-          <a href="/fichas" aria-current={atual('/fichas')}>Fichas 2026</a>
-          <a href="/metodologia" aria-current={atual('/metodologia')}>Metodologia</a>
-          <a href="/verificacao" aria-current={atual('/verificacao')}>Verificação</a>
         </nav>
       </div>
     </header>
-    <style is:global>
-      /* Menu mobile (achado da revisão: nav em 3 linhas, alvos de 18px) */
-      .menu-caixa, .menu-botao { display: none; }
-      @media (max-width: 720px) {
-        .menu-botao { display: inline-block; cursor: pointer; padding: .6rem .9rem;
-          border: 1px solid currentColor; border-radius: 6px; user-select: none; }
-        header.site nav.main { display: none; }
-        .menu-caixa:checked ~ nav.main, header.site .inner:has(.menu-caixa:checked) nav.main {
-          display: flex; flex-direction: column; width: 100%; gap: 0; }
-        header.site nav.main a { display: block; padding: .8rem .4rem; min-height: 44px;
-          border-top: 1px solid rgba(127,127,127,.25); }
-      }
-    </style>
     <main id="conteudo">
       <slot />
     </main>
     <footer class="site">
       <div class="inner">
-        <p><strong>Rotulagem:</strong> este site contém análises e respostas produzidas por inteligência artificial, sem revisão humana — a revisão é feita por uma segunda passagem de IA, com verificação documental e conferência de áudio por um segundo modelo, tudo registrado publicamente (política de 08/08/2026). Cada análise identifica o modelo e a data, em conformidade com as resoluções do TSE sobre uso de IA em conteúdo eleitoral.</p>
-        <p><strong>Neutralidade:</strong> este site não recomenda voto nem conclui superioridade de candidato. Toda classificação cita página do documento primário; a metodologia, o changelog e as memórias de cálculo são públicos e versionados. Análises terminam em trade-offs, não em veredictos.</p>
-        <p>Metodologia v1.1 · conteúdo versionado publicamente no GitHub · 2026</p>
+        <p><strong>Transparência:</strong> as respostas são geradas por inteligência artificial exclusivamente a partir das evidências recuperadas para cada pergunta. Fontes, datas, lacunas e o estado da versão usada acompanham o resultado.</p>
+        <p><strong>Neutralidade:</strong> o eleicoes.ai não recomenda voto, não ranqueia candidatos e não transforma ausência no acervo em posição política.</p>
+        <p><a href="/metodologia">Metodologia</a> · conteúdo versionado · 2026</p>
       </div>
     </footer>
   </body>

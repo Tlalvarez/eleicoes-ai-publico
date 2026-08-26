@@ -7,13 +7,20 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "test": "npm run test:unit && npm run build && npm run test:home-dist",
+    "acervo:local": "node scripts/prepara-acervo-local.mjs",
+    "test": "npm run test:unit && npm run build && npm run test:dist",
     "test:unit": "npm run test:home-fonte && npm run test:rotas && npm run test:catalogo",
+    "test:dist": "npm run test:home-dist && npm run test:acervo-dist && npm run test:render-seguro && npm run test:previa && npm run test:acessibilidade && npm run test:navegador",
     "test:integracao": "npm run test",
     "test:home-fonte": "node scripts/checa-home-fonte.mjs",
     "test:home-dist": "node scripts/checa-home-dist.mjs",
+    "test:acervo-dist": "node scripts/checa-acervo-dist.mjs",
+    "test:render-seguro": "node scripts/checa-render-seguro.mjs",
+    "test:previa": "node scripts/checa-previa.mjs",
     "test:catalogo": "node scripts/checa-catalogo.mjs",
-    "test:rotas": "node --test test/*.test.mjs"
+    "test:rotas": "node --test test/*.test.mjs",
+    "test:acessibilidade": "node scripts/checa-acessibilidade.mjs",
+    "test:navegador": "node scripts/checa-chat-navegador.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"

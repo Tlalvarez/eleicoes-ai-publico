@@ -55,7 +55,24 @@ test('a configuração do Astro gera os redirects de todos os candidatos', async
     assert.equal(config.redirects[`/mencoes/${slug}`], `/candidato/${slug}/mencoes`,
       `sem redirecionamento de /mencoes/${slug}`);
   }
-  assert.equal(Object.keys(config.redirects).length, Object.keys(catalogo).length);
+  // /mencoes/<slug> é EXATAMENTE o catálogo — nem um a mais, nem a menos.
+  // Os redirecionamentos que não são de menções são contados à parte, para um
+  // slug esquecido não poder se esconder atrás do total.
+  const deMencoes = Object.keys(config.redirects).filter((r) => r.startsWith('/mencoes/'));
+  assert.equal(deMencoes.length, Object.keys(catalogo).length);
+});
+
+test('a busca antiga não vira 404: /pesquisa cai na home, que é o chat', async () => {
+  const { default: config } = await import('../astro.config.mjs');
+
+  assert.equal(config.redirects['/pesquisa'], '/');
+});
+
+test('não existe mais uma página de pesquisa concorrendo com a home', async () => {
+  const { existsSync } = await import('node:fs');
+
+  assert.equal(existsSync(new URL('../src/pages/pesquisa.astro', import.meta.url)), false,
+    'src/pages/pesquisa.astro voltou — o site teria duas superfícies de pergunta');
 });
 
 test('os treze do catálogo canônico têm redirecionamento', async () => {

@@ -1,98 +1,436 @@
-/* eleicoes.ai — folha única, sem JS no cliente. Neutralidade também é design:
-   paleta sóbria (grafite + verde-petróleo), sem cores partidárias como acento. */
+/* eleicoes.ai — folha única.
+ *
+ * Tratamento editorial quente: papel (parchment), preto-quase (near-black) e
+ * terracota. Georgia nos títulos e no corpo de leitura longa; sans do sistema
+ * na interface. A escolha não é decorativa: o site publica leitura de
+ * documento, não painel de indicadores. Não há KPI, medidor, barra de
+ * progresso nem qualquer forma que sugira placar entre candidatos — volume de
+ * material coletado é função de quanto cada um publica, não avaliação.
+ *
+ * Neutralidade também é design: um único acento para o site inteiro, o mesmo
+ * cartão e a mesma tipografia para todo candidato. Nenhuma cor partidária
+ * aparece como acento em lugar nenhum.
+ */
+
 :root {
-  --bg: #fafaf8;
-  --fg: #1f2937;
-  --muted: #5b6572;
-  --accent: #0f6b66;
-  --accent-contrast: #ffffff;
-  --border: #d9dde3;
-  --card: #ffffff;
-  --mark: #fff7e0;
+  --papel: #f5f4ed;
+  --papel-fundo: #efeee5;
+  --tinta: #141413;
+  --tinta-suave: #55534c;
+  --linha: #ddd9c9;
+  --cartao: #fffefa;
+
+  /* terracota da marca: usada como acento gráfico (bordas, marcas, ícones) */
+  --acento: #c96442;
+  /* variante de TEXTO e de botão preenchido: a da marca não alcança 4,5:1
+     sobre o papel, e link de corpo de texto precisa alcançar */
+  --acento-forte: #a8492b;
+  --acento-contraste: #fffefa;
+  --realce: #f7ecd9;
+  --atencao: #7a4100;
+
+  --fonte-titulo: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Times New Roman', serif;
+  --fonte-ui: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  --raio: 10px;
+  --largura: 54rem;
+  --alvo: 44px;          /* alvo de toque mínimo */
+
   color-scheme: light dark;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14181d;
-    --fg: #e6e9ed;
-    --muted: #9aa4b1;
-    --accent: #4fb3ab;
-    --accent-contrast: #0c1013;
-    --border: #2b323b;
-    --card: #1b2027;
-    --mark: #3a3320;
+    --papel: #141413;
+    --papel-fundo: #0e0e0d;
+    --tinta: #f0efe6;
+    --tinta-suave: #a8a49a;
+    --linha: #33322d;
+    --cartao: #1c1b19;
+
+    --acento: #e08a68;
+    --acento-forte: #eda184;
+    --acento-contraste: #17110e;
+    --realce: #2d2419;
+    --atencao: #e8b04b;
   }
 }
+
 * { box-sizing: border-box; }
-html { font-size: 100%; }
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+
 body {
   margin: 0;
-  background: var(--bg);
-  color: var(--fg);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--fonte-ui);
+  font-size: 1rem;
   line-height: 1.65;
+  /* nenhuma página do site rola na horizontal — nem com tabela, nem com
+     bloco de código, nem com URL comprida: quem rola é o container interno */
+  overflow-x: hidden;
 }
-.skip-link {
-  position: absolute; left: -9999px; top: 0;
-  background: var(--accent); color: var(--accent-contrast);
-  padding: .5rem 1rem; z-index: 10;
+
+/* ---------------------------------------------------------------- tipografia */
+
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
 }
-.skip-link:focus { left: 0; }
-header.site {
-  border-bottom: 1px solid var(--border);
-  background: var(--card);
+h1 { font-size: clamp(1.7rem, 1.3rem + 2vw, 2.4rem); margin: 0 0 .5rem; }
+h2 { font-size: clamp(1.25rem, 1.1rem + .8vw, 1.55rem); margin: 2.4rem 0 .6rem; }
+h3 { font-size: 1.12rem; margin: 1.6rem 0 .4rem; }
+h4 { font-size: 1rem; margin: 1.2rem 0 .3rem; }
+
+p { margin: 0 0 1rem; }
+.lead {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.02rem, .96rem + .5vw, 1.2rem);
+  color: var(--tinta-suave);
+  margin-top: 0;
+  max-width: 42em;
 }
+
+a { color: var(--acento-forte); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: 2px; }
+
+strong { font-weight: 700; }
+small { font-size: .86em; }
+
+code {
+  font-size: .9em;
+  background: var(--realce);
+  padding: .08rem .3rem;
+  border-radius: 4px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--linha);
+  margin: 1.6rem 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--acento);
+  margin: 1rem 0;
+  padding: .1rem 1rem;
+  color: var(--tinta-suave);
+}
+
+/* URL comprida dentro de conteúdo nunca empurra a página */
+.prose, .conversa, .grupo, .cartao { overflow-wrap: anywhere; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+  font-size: .93rem;
+  display: block;
+  overflow-x: auto;
+}
+th, td { border: 1px solid var(--linha); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+th { background: var(--realce); }
+
+/* ------------------------------------------------------------------ estrutura */
+
 header.site .inner, main, footer.site .inner {
-  max-width: 52rem; margin: 0 auto; padding: 0 1.25rem;
+  max-width: var(--largura);
+  margin: 0 auto;
+  padding-inline: 1.25rem;
+}
+main { padding-block: 2rem 3rem; }
+
+header.site {
+  border-bottom: 1px solid var(--linha);
+  background: var(--papel-fundo);
 }
 header.site .inner {
-  display: flex; align-items: baseline; gap: 1.5rem; flex-wrap: wrap;
-  padding-top: .9rem; padding-bottom: .9rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  padding-block: .7rem;
 }
-.brand { font-weight: 700; font-size: 1.15rem; text-decoration: none; color: var(--fg); }
-.brand span { color: var(--accent); }
+.brand {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--tinta);
+  padding: .4rem 0;
+  min-height: var(--alvo);
+  display: inline-flex;
+  align-items: center;
+}
+.brand span { color: var(--acento); }
+
+nav.main { display: flex; flex-wrap: wrap; gap: .2rem; }
 nav.main a {
-  margin-right: 1.1rem; text-decoration: none; color: var(--muted); font-size: .95rem;
+  text-decoration: none;
+  color: var(--tinta-suave);
+  font-size: .95rem;
+  padding: .55rem .6rem;
+  min-height: var(--alvo);
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
 }
-nav.main a[aria-current="page"], nav.main a:hover { color: var(--accent); }
-main { padding: 2.2rem 1.25rem 3rem; }
-h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 .4rem; }
-h2 { font-size: 1.25rem; margin-top: 2.2rem; }
-h3 { font-size: 1.05rem; }
-a { color: var(--accent); }
-p.lead { font-size: 1.12rem; color: var(--muted); margin-top: 0; }
-.card {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 8px; padding: 1.1rem 1.3rem; margin: 1.1rem 0;
+nav.main a:hover { color: var(--tinta); background: var(--realce); }
+nav.main a[aria-current='page'] {
+  color: var(--tinta);
+  box-shadow: inset 0 -2px 0 var(--acento);
 }
-.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-@media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }
-table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .93rem; display: block; overflow-x: auto; }
-th, td { border: 1px solid var(--border); padding: .45rem .6rem; text-align: left; vertical-align: top; }
-th { background: color-mix(in srgb, var(--accent) 8%, var(--card)); }
-blockquote { border-left: 3px solid var(--accent); margin: 1rem 0; padding: .2rem 1rem; color: var(--muted); }
-code { background: color-mix(in srgb, var(--fg) 7%, var(--bg)); padding: .1rem .3rem; border-radius: 4px; font-size: .9em; }
-.badge {
-  display: inline-block; font-size: .78rem; font-weight: 600;
-  border: 1px solid var(--accent); color: var(--accent);
-  border-radius: 99px; padding: .05rem .6rem; margin-right: .4rem;
-}
-.aviso {
-  border: 1px solid var(--border); border-left: 4px solid var(--accent);
-  background: var(--card); border-radius: 6px;
-  padding: .8rem 1rem; font-size: .9rem; color: var(--muted); margin: 1.5rem 0;
-}
+
 footer.site {
-  border-top: 1px solid var(--border); background: var(--card);
-  margin-top: 2rem; font-size: .85rem; color: var(--muted);
+  border-top: 1px solid var(--linha);
+  background: var(--papel-fundo);
+  margin-top: 3rem;
+  font-size: .86rem;
+  color: var(--tinta-suave);
 }
-footer.site .inner { padding-top: 1.2rem; padding-bottom: 1.6rem; }
-.prose :is(h1,h2,h3) { scroll-margin-top: 1rem; }
-.prose img { max-width: 100%; }
+footer.site .inner { padding-block: 1.3rem 2rem; }
+footer.site p { max-width: 60em; }
+
+/* --------------------------------------------------------------- acessibilidade */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--acento-forte);
+  color: var(--acento-contraste);
+  padding: .75rem 1rem;
+  z-index: 20;
+}
+.skip-link:focus { left: 0; }
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--acento);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ------------------------------------------------------------------ componentes */
+
+.cartao {
+  background: var(--cartao);
+  border: 1px solid var(--linha);
+  border-radius: var(--raio);
+  padding: 1.1rem 1.25rem;
+  margin: 1.1rem 0;
+}
+
+.aviso {
+  border: 1px solid var(--linha);
+  border-left: 4px solid var(--acento);
+  background: var(--cartao);
+  border-radius: var(--raio);
+  padding: .85rem 1.1rem;
+  font-size: .9rem;
+  color: var(--tinta-suave);
+  margin: 1.5rem 0;
+}
+.aviso strong { color: var(--tinta); }
+
+/* estado de publicação dos dados — o mais importante da página, não um selo */
+.estado-release {
+  display: flex;
+  gap: .7rem;
+  align-items: flex-start;
+  border: 1px solid var(--acento);
+  border-radius: var(--raio);
+  background: var(--realce);
+  color: var(--tinta);
+  padding: .8rem 1rem;
+  margin: 1.2rem 0;
+  font-size: .9rem;
+}
+.estado-release .marca {
+  font-weight: 700;
+  font-family: var(--fonte-ui);
+  white-space: nowrap;
+}
+.estado-release p { margin: 0; }
+.estado-release .detalhe { color: var(--tinta-suave); }
+
+.selo {
+  display: inline-block;
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  border: 1px solid var(--acento);
+  color: var(--acento-forte);
+  border-radius: 99px;
+  padding: .1rem .6rem;
+}
+
+.botao {
+  font: inherit;
+  font-family: var(--fonte-ui);
+  font-size: .95rem;
+  font-weight: 600;
+  min-height: var(--alvo);
+  padding: .6rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--acento-forte);
+  background: var(--acento-forte);
+  color: var(--acento-contraste);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  text-decoration: none;
+}
+.botao:hover { filter: brightness(1.08); }
+.botao[disabled] { opacity: .55; cursor: not-allowed; filter: none; }
+.botao.secundario {
+  background: var(--cartao);
+  color: var(--tinta);
+  border-color: var(--linha);
+}
+.botao.secundario:hover { border-color: var(--acento); background: var(--realce); }
+
+.campo {
+  font: inherit;
+  font-size: 1rem;
+  width: 100%;
+  min-height: var(--alvo);
+  padding: .65rem .8rem;
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  background: var(--cartao);
+  color: var(--tinta);
+}
+.campo:hover { border-color: var(--acento); }
+
+.lista-limpa { list-style: none; padding: 0; margin: 0; }
+
+/* faixa de candidatos: mesmo cartão, mesma tipografia, para todos */
+.faixa-candidatos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: .5rem;
+  padding: 0;
+  margin: .8rem 0 0;
+  list-style: none;
+}
+.faixa-candidatos a {
+  display: flex;
+  align-items: center;
+  min-height: var(--alvo);
+  padding: .5rem .75rem;
+  border: 1px solid var(--linha);
+  border-radius: 8px;
+  background: var(--cartao);
+  color: var(--tinta);
+  text-decoration: none;
+  font-size: .92rem;
+}
+.faixa-candidatos a:hover { border-color: var(--acento); background: var(--realce); }
+
+/* sugestões de pergunta */
+.sugestoes { display: flex; flex-wrap: wrap; gap: .45rem; padding: 0; margin: .8rem 0 0; list-style: none; }
+.sugestao {
+  font: inherit;
+  font-size: .88rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--alvo);
+  padding: .4rem .9rem;
+  border: 1px solid var(--linha);
+  border-radius: 99px;
+  background: var(--cartao);
+  color: var(--tinta);
+  text-decoration: none;
+  cursor: pointer;
+  text-align: left;
+}
+.sugestao:hover { border-color: var(--acento); background: var(--realce); }
+
+/* dossiê / listas de conteúdo herdadas */
 ul.lista-dossie { list-style: none; padding: 0; }
 ul.lista-dossie li {
-  border: 1px solid var(--border); background: var(--card);
-  border-radius: 8px; margin: .6rem 0; padding: .8rem 1rem;
+  border: 1px solid var(--linha);
+  background: var(--cartao);
+  border-radius: var(--raio);
+  margin: .6rem 0;
+  padding: .8rem 1rem;
 }
 ul.lista-dossie a { font-weight: 600; text-decoration: none; }
-ul.lista-dossie .meta { color: var(--muted); font-size: .88rem; display: block; margin-top: .15rem; }
+ul.lista-dossie .meta { color: var(--tinta-suave); font-size: .88rem; display: block; margin-top: .15rem; }
+
+.prose :is(h1, h2, h3) { scroll-margin-top: 1rem; }
+.prose img { max-width: 100%; height: auto; }
+
+/* ---------------------------------------------------------------- menu mobile */
+
+.menu-caixa, .menu-botao { display: none; }
+@media (max-width: 760px) {
+  header.site .inner { gap: .5rem; }
+  .menu-botao {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--alvo);
+    margin-left: auto;
+    cursor: pointer;
+    padding: .5rem .9rem;
+    border: 1px solid var(--linha);
+    border-radius: 8px;
+    user-select: none;
+    font-size: .95rem;
+  }
+  header.site nav.main { display: none; }
+  .menu-caixa:checked ~ nav.main,
+  header.site .inner:has(.menu-caixa:checked) nav.main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  header.site nav.main a {
+    display: flex;
+    width: 100%;
+    padding: .8rem .4rem;
+    border-top: 1px solid var(--linha);
+    border-radius: 0;
+  }
+  .menu-caixa:focus-visible + .menu-botao { outline: 3px solid var(--acento); outline-offset: 2px; }
+}
+
+/* ------------------------------------------------- nomes herdados das páginas
+ * As páginas que esta rodada não redesenhou (candidato, menções, fichas,
+ * metodologia, verificação) usam `.card`, `.badge` e `.grid2`. Renomear o
+ * token sem manter o nome antigo deixaria essas páginas sem estilo, o que é
+ * um jeito silencioso de quebrar meia dúzia de rotas. Alias, não cópia. */
+.card { background: var(--cartao); border: 1px solid var(--linha);
+  border-radius: var(--raio); padding: 1.1rem 1.25rem; margin: 1.1rem 0;
+  overflow-wrap: anywhere; }
+.badge { display: inline-block; font-size: .78rem; font-weight: 600;
+  border: 1px solid var(--acento); color: var(--acento-forte);
+  border-radius: 99px; padding: .05rem .6rem; margin-right: .4rem; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+@media (max-width: 640px) { .grid2 { grid-template-columns: 1fr; } }

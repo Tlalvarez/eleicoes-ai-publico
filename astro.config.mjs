@@ -14,5 +14,13 @@ export default defineConfig({
   site: 'https://eleicoes.ai',
   trailingSlash: 'never',
   build: { format: 'file' },
-  redirects: redirectsDeMencoes(catalogoDoResumo(resumo)),
+  redirects: {
+    // A busca deixou de ser uma página própria: a home É o chat com o acervo.
+    // Manter /pesquisa como rota viva criaria uma terceira superfície
+    // concorrente — duas caixas de pergunta, dois formatos de resposta, duas
+    // implementações do renderizador. O endereço antigo continua chegando em
+    // algum lugar, em vez de dar 404.
+    '/pesquisa': '/',
+    ...redirectsDeMencoes(catalogoDoResumo(resumo)),
+  },
 });

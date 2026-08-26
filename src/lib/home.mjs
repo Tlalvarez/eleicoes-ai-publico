@@ -33,11 +33,18 @@ export function candidatosDaHome(resumo) {
     .sort((a, b) => a.nome.localeCompare(b.nome, 'pt-BR'));
 }
 
-/** Um chip por candidato, na mesma ordem dos cards. */
+/**
+ * Um chip por candidato, na mesma ordem dos cards.
+ *
+ * O `href` aponta para a PRÓPRIA home (`/?q=…`), que agora é o chat: a busca
+ * deixou de ser uma segunda página. Manter o link é o que faz o chip
+ * funcionar sem JavaScript — a home lê `?q=` ao carregar — e é o que preserva
+ * "compartilhar uma pergunta" como endereço estável.
+ */
 export function chipsDaHome(resumo) {
   return candidatosDaHome(resumo).map(({ slug, nome }) => {
     const pergunta = perguntaChip(nome);
-    return { slug, nome, pergunta, href: `/pesquisa?q=${encodeURIComponent(pergunta)}` };
+    return { slug, nome, pergunta, href: `/?q=${encodeURIComponent(pergunta)}` };
   });
 }
 

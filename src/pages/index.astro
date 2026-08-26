@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import EstadoRelease from '../components/EstadoRelease.astro';
 import { leDados } from '../lib/dados.mjs';
 import { candidatosDaHome, chipsDaHome } from '../lib/home.mjs';
 
@@ -8,81 +9,549 @@ import { candidatosDaHome, chipsDaHome } from '../lib/home.mjs';
 // precisam ser sempre da MESMA geração
 const resumo = leDados('itens', 'resumo.json');
 
-// Cards e chips saem do resumo gerado pelo harness, no mesmo molde e na mesma
-// ordem: com 13 candidatos, uma home com cinco escritos à mão quebraria a
+// Cards e sugestões saem do resumo gerado pelo harness, no mesmo molde e na
+// mesma ordem: uma home que citasse cinco nomes escritos à mão quebraria a
 // cobertura simétrica logo na primeira página.
 const candidatos = candidatosDaHome(resumo);
 const chips = chipsDaHome(resumo);
+
+// Endereço do serviço de evidências. Sem `PUBLIC_PESQUISA_API`, o padrão é a
+// MESMA ORIGEM ('') — o cliente pede `/api/conversa` relativo, e quem publica
+// põe o serviço atrás do mesmo domínio.
+//
+// O padrão anterior era `http://localhost:8765`, e ele chegou ao `dist/`: um
+// build público assim manda o navegador do VISITANTE procurar o serviço na
+// máquina dele, e antes disso é barrado como conteúdo misto dentro de https.
+// Localhost só sobrevive em desenvolvimento, onde o `astro dev` roda noutra
+// porta que o serviço. Os dois lados são cobrados por gate:
+// scripts/checa-home-fonte.mjs (origem) e scripts/checa-home-dist.mjs (build).
+const apiBase = import.meta.env.PUBLIC_PESQUISA_API
+  ?? (import.meta.env.DEV ? 'http://localhost:8765' : '');
 ---
-<Base title="Pergunte sobre os candidatos de 2026">
-  <h1>O que os candidatos de 2026 realmente propõem?</h1>
+<Base title="Perguntar ao acervo">
+  <h1>Converse com as evidências reunidas sobre os candidatos</h1>
   <p class="lead">
-    Pergunte. A resposta vem do que cada candidato <strong>registrou na Justiça Eleitoral</strong> e do que
-    ele <strong>disse em vídeos, discursos e posts</strong> — sempre com a fonte original e a data, nunca com opinião.
+    Pergunte em português. A resposta é montada a partir do que foi
+    <strong>registrado</strong> — vídeos com transcrição, discursos, publicações e posts —
+    e separa sempre três coisas: o que está <strong>registrado</strong>, o que é
+    <strong>inferência</strong> de quem escreve e o que é <strong>lacuna</strong>, com link
+    para cada fonte original.
   </p>
 
-  <form class="busca-hero" action="/pesquisa" method="get" role="search">
-    <label class="sr-only" for="q">Sua pergunta sobre os candidatos</label>
-    <input id="q" name="q" type="search" required
-           placeholder="Ex.: o que os candidatos propõem sobre previdência?" autocomplete="off" />
-    <button type="submit">Perguntar</button>
-  </form>
-  <p class="chips">
-    {chips.map((c) => <a class="chip" href={c.href}>{c.pergunta}</a>)}
-  </p>
+  <EstadoRelease />
 
-  <h2>Os candidatos acompanhados</h2>
-  <div class="grid-candidatos">
-    {candidatos.map(({ slug, nome }) => (
-      <a class="card card-candidato" href={`/candidato/${slug}`}><strong>{nome}</strong><br />
-        <small>perfil, arquivo e acervo</small></a>
-    ))}
-  </div>
+  <section class="chat" id="chat" aria-label="Conversa com o acervo" data-api={apiBase}>
+    <ol class="conversa" id="conversa"></ol>
 
-  <h2>Como isso funciona</h2>
-  <p>
-    Lemos os programas registrados no TSE por inteiro e acompanhamos o que cada candidato fala todos os dias.
-    Antes de analisar 2026, testamos o método no passado: relemos os programas de 2002 a 2022 e publicamos
-    onde acertamos e onde erramos — <strong>9 documentos, zero inversões</strong>.
-  </p>
-  <p>
-    <a href="/metodologia">Como analisamos →</a> ·
-    <a href="/verificacao">A prova de que o método funciona →</a> ·
-    <a href="/acervo">Todo o material coletado, navegável →</a>
-  </p>
+    <p class="estado-chat" id="estado" role="status" aria-live="polite" hidden>
+      <span class="girando" aria-hidden="true"></span>
+      <span id="estado-texto"></span>
+      <button type="button" class="botao secundario compacto" id="cancelar" hidden>Cancelar</button>
+    </p>
 
-  <h2>Calendário 2026</h2>
-  <div class="card">
-    <p style="margin:0">
-      <span class="badge">15/8</span> registro das candidaturas ·
-      <span class="badge">1/9</span> fichas de análise por candidato ·
-      <span class="badge">set–out</span> checagem dos debates contra programa e histórico ·
-      <span class="badge">2º turno</span> comparação lado a lado dos finalistas.
+    <form id="form-chat" method="get" action="/" class="form-chat">
+      <label class="sr-only" for="q">Sua pergunta sobre os candidatos</label>
+      <textarea id="q" name="q" class="campo" rows="2" required
+        placeholder="Ex.: o que está registrado sobre previdência? Compare quem tratou do tema."
+        autocomplete="off"></textarea>
+      <div class="acoes-envio">
+        <button type="submit" class="botao" id="enviar">Perguntar</button>
+        <button type="button" class="botao secundario" id="nova" hidden>Começar outra conversa</button>
+      </div>
+      <p class="nota-envio">
+        <kbd>Enter</kbd> envia · <kbd>Shift</kbd>+<kbd>Enter</kbd> quebra linha ·
+        a resposta costuma levar cerca de um minuto.
+      </p>
+    </form>
+
+    <ul class="sugestoes" id="sugestoes" aria-label="Perguntas de exemplo">
+      {chips.map((c) => (
+        <li><a class="sugestao" href={c.href} data-pergunta={c.pergunta}>{c.pergunta}</a></li>)
+      )}
+    </ul>
+  </section>
+
+  <noscript>
+    <div class="aviso">
+      <strong>Sem JavaScript, a conversa não roda.</strong> Ela depende do serviço de
+      evidências, que responde por requisição. Todo o material continua navegável sem
+      JavaScript: veja <a href="/acervo">o acervo por candidato e por fonte</a>, o
+      <a href="/candidato">rastreamento por candidato</a> e a
+      <a href="/metodologia">metodologia</a>.
+    </div>
+  </noscript>
+
+  <h2>Como ler uma resposta</h2>
+  <div class="cartao">
+    <ul class="como-ler">
+      <li><strong>Conclusão primeiro.</strong> O primeiro parágrafo responde a pergunta;
+        o resto sustenta.</li>
+      <li><strong>Evidência</strong> é o que está registrado, com marcador
+        <span class="exemplo-marcador">[S1]</span> apontando para a fonte, a data e o
+        endereço original.</li>
+      <li><strong>Inferência</strong> é leitura de quem escreve a partir da evidência, e
+        vem dita como tal — nunca misturada ao registro.</li>
+      <li><strong>Lacuna</strong> é o que não foi encontrado. Ausência de registro não é
+        ausência de posição, e a resposta diz isso em vez de preencher o vazio.</li>
+      <li>Quando há mais de um candidato, a comparação é <strong>simétrica</strong>: o mesmo
+        conjunto de perguntas para cada um, inclusive para quem não tem registro no tema.</li>
+    </ul>
+    <p class="rodape-cartao">
+      O site não recomenda voto, não ordena candidatos e não conclui superioridade.
     </p>
   </div>
 
-  <div class="aviso">
-    O eleicoes.ai não recomenda voto e não diz quem é melhor. Mesma régua, mesma profundidade
-    e fonte primária citada para todos os candidatos.
-  </div>
+  <h2>Quem está no acervo</h2>
+  <p>
+    A mesma varredura, a mesma régua e o mesmo tratamento para todos — inclusive para quem
+    ainda não tem material coletado, que aparece aqui com a lacuna declarada.
+  </p>
+  <ul class="faixa-candidatos">
+    {candidatos.map(({ slug, nome }) => (
+      <li><a href={`/candidato/${slug}`}>{nome}</a></li>
+    ))}
+  </ul>
+  <p class="depois-da-faixa">
+    <a href="/acervo">Todo o acervo, por candidato e por fonte →</a>
+  </p>
 
   <style>
-    .busca-hero { display: flex; gap: .5rem; margin: 1.2rem 0 .8rem; }
-    .busca-hero input { flex: 1; padding: .85rem 1rem; font: inherit; font-size: 1.05rem;
-      border: 2px solid var(--fg); border-radius: 8px; background: var(--card); color: var(--fg); }
-    .busca-hero button { padding: .85rem 1.4rem; font: inherit; font-size: 1.05rem; font-weight: 600;
-      border: 2px solid var(--fg); border-radius: 8px; background: var(--fg); color: var(--bg); cursor: pointer; }
-    .chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 2rem; }
-    .chip { display: inline-block; padding: .45rem .8rem; border: 1px solid var(--muted);
-      border-radius: 999px; font-size: .88rem; text-decoration: none; }
-    .chip:hover { border-color: var(--fg); }
-    .grid-candidatos { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: .7rem; }
-    .card-candidato { text-decoration: none; display: block; }
-    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-    @media (max-width: 480px) {
-      .busca-hero { flex-direction: column; }
-      .busca-hero button { width: 100%; min-height: 48px; }
+    .form-chat { margin: 1rem 0 0; }
+    .acoes-envio { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .6rem; }
+    .nota-envio { font-size: .84rem; color: var(--tinta-suave); margin: .5rem 0 0; }
+    .nota-envio kbd {
+      font: inherit; font-size: .95em; border: 1px solid var(--linha);
+      border-bottom-width: 2px; border-radius: 4px; padding: 0 .3em; background: var(--cartao);
+    }
+    .como-ler { margin: 0; padding-left: 1.2rem; }
+    .como-ler li { margin-bottom: .5rem; }
+    .exemplo-marcador { font-weight: 700; color: var(--acento-forte); }
+    .rodape-cartao { margin: .8rem 0 0; font-size: .88rem; color: var(--tinta-suave); }
+    .depois-da-faixa { margin-top: 1rem; }
+    @media (max-width: 520px) {
+      .acoes-envio > .botao { flex: 1 1 100%; }
     }
   </style>
+
+  <style is:global>
+    /* Globais de propósito: a conversa é construída em tempo de execução e os
+       elementos criados por script NÃO recebem o atributo de escopo do Astro.
+       Estilo escopado simplesmente não casaria com eles. */
+    .chat { margin: 1.5rem 0 2rem; }
+    .conversa { list-style: none; padding: 0; margin: 0; }
+    .turno { margin: 0 0 1.5rem; }
+
+    .turno-pergunta .texto-pergunta {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(1.15rem, 1.05rem + .6vw, 1.4rem);
+      font-weight: 600;
+      line-height: 1.25;
+      margin: 0 0 .2rem;
+      padding-left: .9rem;
+      border-left: 4px solid var(--acento);
+    }
+    .turno-pergunta .marca-pergunta {
+      font-size: .78rem; text-transform: uppercase; letter-spacing: .04em;
+      color: var(--tinta-suave); padding-left: 1.05rem;
+    }
+
+    .resposta-corpo {
+      font-family: var(--fonte-titulo);
+      font-size: 1.02rem;
+      line-height: 1.7;
+      max-width: 40em;
+    }
+    .resposta-corpo > :first-child { margin-top: 0; }
+    .resposta-corpo h3 { font-size: 1.1rem; margin: 1.5rem 0 .35rem; }
+    .resposta-corpo h4 { font-size: 1rem; margin: 1.1rem 0 .3rem; }
+    .resposta-corpo ul, .resposta-corpo ol { padding-left: 1.25rem; margin: 0 0 1rem; }
+    .resposta-corpo li { margin-bottom: .45rem; }
+    .resposta-corpo hr { margin: 1.4rem 0; }
+    .marcador-fonte { text-decoration: none; font-weight: 700; font-family: var(--fonte-ui);
+      font-size: .8em; padding: 0 .1em; }
+
+    .fontes { margin-top: 1.4rem; border-top: 1px solid var(--linha); padding-top: .9rem; }
+    .fontes h3 { margin-top: 0; font-size: 1rem; }
+    .fontes ol { list-style: none; padding: 0; margin: 0; counter-reset: none; }
+    .fontes li { margin-bottom: .8rem; font-size: .92rem; scroll-margin-top: 1rem; }
+    .fontes .marcas { font-weight: 700; font-family: var(--fonte-ui); }
+    .fontes .fonte-meta { color: var(--tinta-suave); }
+    .fontes .ressalva { display: block; font-size: .88em; margin-top: .1rem; }
+    .fontes .ressalva.nao-conferido { color: var(--atencao); font-weight: 600; }
+
+    .rodape-resposta {
+      margin-top: 1rem; font-size: .85rem; color: var(--tinta-suave);
+      border-top: 1px solid var(--linha); padding-top: .7rem;
+    }
+    .rodape-resposta p { margin: 0 0 .25rem; }
+
+    .barra-compartilhar {
+      display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .9rem;
+      padding-top: .8rem; border-top: 1px dashed var(--linha);
+    }
+    .barra-compartilhar .botao { font-size: .88rem; padding: .5rem .85rem; }
+    .nota-permalink { flex-basis: 100%; font-size: .82rem; color: var(--tinta-suave); margin: .2rem 0 0; }
+    .copia-manual { flex-basis: 100%; margin: .4rem 0 0; }
+    .copia-manual textarea { width: 100%; min-height: 7rem; font: inherit; font-size: .85rem; }
+
+    .estado-chat {
+      display: flex; align-items: center; gap: .6rem; margin: 1rem 0;
+      font-size: .95rem;
+    }
+    .estado-chat[hidden] { display: none; }
+    .estado-chat .botao.compacto { min-height: 36px; padding: .3rem .8rem; font-size: .85rem; }
+    .girando {
+      width: 1rem; height: 1rem; flex-shrink: 0; border-radius: 50%;
+      border: 2px solid var(--linha); border-top-color: var(--acento);
+      animation: gira .8s linear infinite;
+    }
+    @keyframes gira { to { transform: rotate(360deg); } }
+    .estado-chat.com-erro { color: var(--atencao); font-weight: 600; }
+    .estado-chat.com-erro .girando { display: none; }
+
+    .aviso-turno {
+      font-size: .86rem; color: var(--tinta-suave); background: var(--realce);
+      border-radius: 8px; padding: .5rem .8rem; margin: .6rem 0 0;
+    }
+  </style>
+
+  <script>
+    import { analisaMarkdown, criaElementos } from '../lib/markdown.mjs';
+    import { ErroConversa } from '../lib/chat.mjs';
+    import { criaSessao } from '../lib/sessao-conversa.mjs';
+    import { estadoDaResposta } from '../lib/release.mjs';
+    import { estadoDoFragmento, montaPermalink } from '../lib/permalink.mjs';
+    import {
+      dataBr, linkWhatsApp, markdownCompleto, payloadWebShare, resumoLegivel,
+      textoCompleto,
+    } from '../lib/compartilhar.mjs';
+
+    const $ = (id) => document.getElementById(id);
+    const chat = $('chat');
+    const conversa = $('conversa');
+    const form = $('form-chat');
+    const entrada = $('q');
+    const enviar = $('enviar');
+    const nova = $('nova');
+    const estado = $('estado');
+    const estadoTexto = $('estado-texto');
+    const cancelar = $('cancelar');
+    const sugestoes = $('sugestoes');
+
+    // histórico, requisição em voo e a regra de época moram em sessao-conversa:
+    // aqui só se desenha o que ela devolve
+    const sessao = criaSessao({ apiBase: chat.dataset.api });
+    let turnos = 0;
+
+    const el = (tag, classe, texto) => {
+      const n = document.createElement(tag);
+      if (classe) n.className = classe;
+      if (texto !== undefined) n.textContent = texto;
+      return n;
+    };
+
+    // ---------------------------------------------------------------- estado
+
+    function mostraEstado(texto, { erro = false, cancelavel = false } = {}) {
+      estado.hidden = false;
+      estado.classList.toggle('com-erro', erro);
+      estadoTexto.textContent = texto;
+      cancelar.hidden = !cancelavel;
+    }
+    function escondeEstado() {
+      estado.hidden = true;
+      estado.classList.remove('com-erro');
+      cancelar.hidden = true;
+    }
+
+    // ------------------------------------------------------------ conversa
+
+    function adicionaPergunta(texto) {
+      const li = el('li', 'turno turno-pergunta');
+      li.append(el('p', 'marca-pergunta', 'Pergunta'));
+      const p = el('p', 'texto-pergunta', texto);
+      li.append(p);
+      conversa.append(li);
+      return li;
+    }
+
+    /** Uma linha de fonte, montada nó a nó — nunca por marcação em string. */
+    function itemDeFonte(cit, indice) {
+      const li = el('li');
+      li.id = `fonte-${indice}-${cit.marcadores[0]}`;
+      // marcadores extras da mesma fonte precisam de âncora própria, senão
+      // [S2] apontando para uma fonte compartilhada não rola para lugar nenhum
+      for (const n of cit.marcadores.slice(1)) {
+        const alvo = el('span');
+        alvo.id = `fonte-${indice}-${n}`;
+        li.append(alvo);
+      }
+      li.append(el('span', 'marcas', cit.marcadores.map((n) => `[S${n}]`).join('') + ' '));
+
+      const meta = [cit.nome, cit.rotulo, dataBr(cit.data)].filter(Boolean).join(' — ');
+      li.append(el('span', 'fonte-meta', meta + (cit.ts ? `, ${cit.ts}` : '') + ' '));
+
+      if (cit.url) {
+        const a = el('a', 'link-fonte', 'abrir a fonte ↗');
+        a.href = cit.url;
+        a.target = '_blank';
+        a.rel = 'noopener noreferrer nofollow';
+        li.append(a);
+      } else {
+        li.append(el('span', 'fonte-meta', '(sem endereço registrado)'));
+      }
+
+      const ressalva = el('span', 'ressalva');
+      if (cit.estatuto === 3) {
+        ressalva.classList.add('nao-conferido');
+        ressalva.textContent = '⚠ transcrição/legenda automática — pode conter erros; confira na fonte';
+      } else if (cit.estatuto === 4) {
+        ressalva.textContent = '✓ áudio conferido por uma segunda transcrição';
+      } else if (cit.estatuto === 1) {
+        ressalva.textContent = 'análise do eleicoes.ai — produzida por IA e identificada como tal';
+      } else if (cit.estatuto_rotulo) {
+        ressalva.textContent = cit.estatuto_rotulo;
+      }
+      if (ressalva.textContent) li.append(ressalva);
+      return li;
+    }
+
+    async function copia(texto, botao, dono) {
+      const original = botao.textContent;
+      try {
+        await navigator.clipboard.writeText(texto);
+        botao.textContent = 'Copiado ✓';
+        setTimeout(() => { botao.textContent = original; }, 1800);
+      } catch {
+        // área de transferência bloqueada (http, permissão negada, navegador
+        // antigo): em vez de falhar em silêncio, entrega o texto selecionável
+        let caixa = dono.querySelector('.copia-manual');
+        if (!caixa) {
+          caixa = el('div', 'copia-manual');
+          caixa.append(el('p', null, 'Não consegui usar a área de transferência. Selecione e copie:'));
+          caixa.append(el('textarea'));
+          dono.append(caixa);
+        }
+        const area = caixa.querySelector('textarea');
+        area.value = texto;
+        area.select();
+      }
+    }
+
+    function botao(rotulo, aoClicar, { secundario = true } = {}) {
+      const b = el('button', `botao${secundario ? ' secundario' : ''}`, rotulo);
+      b.type = 'button';
+      b.addEventListener('click', aoClicar);
+      return b;
+    }
+
+    async function barraDeCompartilhar(resultado, rotuloEstado) {
+      const barra = el('div', 'barra-compartilhar');
+      barra.setAttribute('aria-label', 'Compartilhar este resultado');
+
+      const base = location.origin + location.pathname;
+      const { url, cabe, tamanho } = await montaPermalink(base, resultado);
+      const comum = { ...resultado, url, estado: rotuloEstado };
+
+      if (navigator.share) {
+        barra.append(botao('Compartilhar', async () => {
+          try {
+            await navigator.share(payloadWebShare(comum));
+          } catch { /* cancelado pelo usuário: não é erro */ }
+        }));
+      }
+
+      barra.append(botao('Copiar texto', (ev) => copia(textoCompleto(comum), ev.currentTarget, barra)));
+      barra.append(botao('Copiar Markdown', (ev) => copia(markdownCompleto(comum), ev.currentTarget, barra)));
+
+      const zap = el('a', 'botao secundario', 'WhatsApp');
+      zap.href = linkWhatsApp(resumoLegivel(comum));
+      zap.target = '_blank';
+      zap.rel = 'noopener noreferrer';
+      barra.append(zap);
+
+      if (cabe) {
+        barra.append(botao('Copiar permalink', (ev) => copia(url, ev.currentTarget, barra)));
+        // a barra de endereço passa a SER o permalink, sem entupir o histórico
+        history.replaceState(null, '', url.slice(base.length) || location.pathname);
+      } else {
+        const desativado = el('button', 'botao secundario', 'Permalink indisponível');
+        desativado.type = 'button';
+        desativado.disabled = true;
+        barra.append(desativado);
+        barra.append(el('p', 'nota-permalink',
+          `Esta resposta é longa demais para caber num link (${tamanho.toLocaleString('pt-BR')} `
+          + 'caracteres). Copiar o texto, copiar o Markdown e o WhatsApp continuam funcionando.'));
+      }
+      return barra;
+    }
+
+    async function adicionaResposta(resultado, { viaFallback = false, compartilhado = false } = {}) {
+      turnos += 1;
+      const indice = turnos;
+      const li = el('li', 'turno turno-resposta');
+      const artigo = el('article');
+      artigo.setAttribute('aria-label', `Resposta ${indice}`);
+
+      if (compartilhado) {
+        // dizer só "reconstruído do endereço" seria pouco: quem monta o endereço
+        // escolhe o texto. O aviso precisa recusar explicitamente a procedência,
+        // senão o permalink vira carimbo de autenticidade que ele não tem.
+        artigo.append(el('p', 'aviso-turno',
+          'Resultado reconstruído a partir de um link compartilhado. O texto abaixo vem do '
+          + 'próprio endereço, não do serviço de evidências: ele NÃO é autenticado, pode ter '
+          + 'sido alterado por quem montou o link e não deve ser tratado como publicação '
+          + 'oficial. Confira cada fonte citada, ou refaça a pergunta abaixo.'));
+      }
+
+      const corpo = el('div', 'resposta-corpo');
+      // `nivelBase: 1` rebaixa os títulos da resposta: `##` da API vira <h3>,
+      // abaixo do <h1> da página e do <h2> da pergunta. Título de resposta
+      // competindo com o da página quebra a navegação por cabeçalho no leitor
+      // de tela.
+      corpo.append(criaElementos(analisaMarkdown(resultado.texto), document, {
+        nivelBase: 1,
+        ancora: (n) => `#fonte-${indice}-${n}`,
+      }));
+      artigo.append(corpo);
+
+      if (resultado.citacoes.length) {
+        const sec = el('section', 'fontes');
+        sec.append(el('h3', null, `Fontes citadas (${resultado.citacoes.length})`));
+        const ol = el('ol');
+        for (const cit of resultado.citacoes) ol.append(itemDeFonte(cit, indice));
+        sec.append(ol);
+        artigo.append(sec);
+      } else {
+        artigo.append(el('p', 'aviso-turno',
+          'Esta resposta não trouxe nenhuma fonte citada. Sem citação não há evidência '
+          + 'verificável: trate o texto como indisponibilidade, não como registro.'));
+      }
+
+      const est = estadoDaResposta(resultado);
+      const rodape = el('div', 'rodape-resposta');
+      if (resultado.rodape) rodape.append(el('p', null, resultado.rodape));
+      rodape.append(el('p', null, est.rotulo));
+      if (viaFallback) {
+        rodape.append(el('p', null,
+          'Respondida pela rota de consulta avulsa: este serviço ainda não guarda histórico, '
+          + 'então a próxima pergunta precisa ser autossuficiente.'));
+      }
+      artigo.append(rodape);
+
+      li.append(artigo);
+      conversa.append(li);
+
+      artigo.append(await barraDeCompartilhar(resultado, est.rotulo));
+      return li;
+    }
+
+    function mostraErro(erro, perguntaRecusada) {
+      const codigo = erro instanceof ErroConversa ? erro.codigo : 'desconhecido';
+      mostraEstado(erro.message || 'Não foi possível responder agora.', { erro: true });
+      if (codigo === 'sem-followup' && perguntaRecusada) {
+        estado.append(botao('Enviar como nova pergunta', () => {
+          reinicia();
+          envia(perguntaRecusada);
+        }));
+      }
+    }
+
+    // -------------------------------------------------------------- fluxo
+
+    function reinicia() {
+      // primeiro a sessão: reiniciar ABORTA o que estiver em voo. Sem isso a
+      // resposta da conversa anterior chegava depois e era anexada aqui, sem a
+      // pergunta que a gerou.
+      sessao.reinicia();
+      turnos = 0;
+      conversa.textContent = '';
+      escondeEstado();
+      enviar.disabled = false;
+      nova.hidden = true;
+      sugestoes.hidden = false;
+      history.replaceState(null, '', location.pathname);
+    }
+
+    async function envia(texto) {
+      const conteudo = String(texto ?? '').trim();
+      if (!conteudo) return;
+
+      sugestoes.hidden = true;
+      nova.hidden = false;
+      entrada.value = '';
+      enviar.disabled = true;
+      mostraEstado('Procurando no acervo e escrevendo a resposta…', { cancelavel: true });
+
+      const r = await sessao.envia(conteudo, { aoPerguntar: adicionaPergunta });
+
+      // época vencida: a conversa foi reiniciada ou já há outra pergunta em voo.
+      // Quem reiniciou já arrumou a tela; desenhar aqui seria pôr resposta velha
+      // em conversa nova.
+      if (r.estado === 'obsoleto') return;
+
+      enviar.disabled = false;
+      if (r.estado === 'cancelado') {
+        escondeEstado();
+      } else if (r.estado === 'erro') {
+        mostraErro(r.erro, r.perguntaRecusada);
+      } else if (r.estado === 'ok') {
+        escondeEstado();
+        const li = await adicionaResposta(r.resultado, { viaFallback: r.resultado.viaFallback });
+        li.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      }
+      entrada.focus();
+    }
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      envia(entrada.value);
+    });
+
+    entrada.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Enter' && !ev.shiftKey && !ev.isComposing) {
+        ev.preventDefault();
+        form.requestSubmit();
+      }
+    });
+
+    cancelar.addEventListener('click', () => sessao.cancela());
+
+    nova.addEventListener('click', () => {
+      reinicia();
+      entrada.focus();
+    });
+
+    // as sugestões continuam sendo links reais (`/?q=…`): sem JavaScript elas
+    // abrem a home com a pergunta; com JavaScript, disparam ali mesmo
+    sugestoes.addEventListener('click', (ev) => {
+      const alvo = ev.target.closest('.sugestao');
+      if (!alvo) return;
+      ev.preventDefault();
+      envia(alvo.dataset.pergunta);
+    });
+
+    // ------------------------------------------------------ abertura da página
+
+    (async () => {
+      const compartilhado = await estadoDoFragmento(location.hash);
+      if (compartilhado) {
+        sugestoes.hidden = true;
+        nova.hidden = false;
+        if (compartilhado.pergunta) adicionaPergunta(compartilhado.pergunta);
+        // o conteúdo do fragmento NÃO entra no histórico da sessão: quem monta
+        // o link escolheria, com isso, o que o serviço recebe como turno
+        // `assistant` na pergunta seguinte. O que veio da URL é para LER; a
+        // próxima pergunta começa uma conversa de verdade.
+        await adicionaResposta(compartilhado, { compartilhado: true });
+        return;
+      }
+      if (location.hash.startsWith('#r=')) {
+        mostraEstado('Este link de resultado está incompleto ou foi truncado ao ser colado. '
+          + 'Peça o link de novo, ou faça a pergunta abaixo.', { erro: true });
+      }
+      const q = new URLSearchParams(location.search).get('q');
+      if (q) envia(q);
+    })();
+  </script>
 </Base>
