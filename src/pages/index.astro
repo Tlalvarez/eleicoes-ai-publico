@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import EstadoRelease from '../components/EstadoRelease.astro';
 import { leDados } from '../lib/dados.mjs';
 import { candidatosDaHome, chipsDaHome } from '../lib/home.mjs';
 
@@ -40,8 +39,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       que é <strong>lacuna</strong>, com link para cada fonte original.
     </p>
   </div>
-
-  <EstadoRelease />
 
   <section class="chat" id="chat" aria-label="Conversa com o acervo" data-api={apiBase}>
     <ol class="conversa" id="conversa"></ol>

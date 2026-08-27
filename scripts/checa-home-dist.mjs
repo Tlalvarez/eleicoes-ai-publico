@@ -13,7 +13,8 @@
  *     formulação para todos;
  *   · a home é o chat — o formulário, o campo de pergunta e o módulo do
  *     cliente estão na página;
- *   · o estado dos dados aparece, e a página não os chama de oficiais.
+ *   · a página não chama os dados de oficiais (o estado dos dados é dito no
+ *     rodapé de cada resposta do chat, não num quadro fixo no topo).
  *
  * Uso: npm run build && npm run test:home-dist
  */
@@ -132,10 +133,11 @@ for (const src of [...html.matchAll(/<script[^>]*src="([^"]+\.js)"/g)].map((m) =
 
 // ------------------------------------------------------------------ estado
 
+// A home não carrega mais o quadro de estado no topo: o aviso de prévia vive
+// no rodapé de cada resposta do chat (e nos formatos de compartilhamento),
+// onde acompanha o dado que ele qualifica. O que continua valendo aqui é o
+// lado negativo — a home não pode afirmar oficialidade sem release.
 const estado = estadoDoSite(leManifesto());
-if (!html.includes(estado.rotulo)) {
-  falhas.push(`a home construída não mostra o estado de release ("${estado.rotulo}")`);
-}
 if (!estado.oficial && /Acervo Oficial/i.test(html)) {
   falhas.push('a home construída diz "Acervo Oficial" sem release oficial declarada');
 }
@@ -146,4 +148,4 @@ if (falhas.length) {
 }
 console.log(`OK (dist): a home construída é o chat, lista os ${candidatos.length} candidatos `
   + `de data/itens/resumo.json (${candidatos.length} cards, ${sugestoesNoHtml.length} sugestões) `
-  + `e declara o estado dos dados: ${estado.rotulo}`);
+  + `e não afirma oficialidade (estado dos dados: ${estado.rotulo})`);

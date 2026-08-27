@@ -87,7 +87,6 @@ const exigencias = [
     + 'haveria permalink do resultado'],
   [/from\s+['"][^'"]*lib\/compartilhar\.mjs['"]/, 'a home não usa src/lib/compartilhar.mjs '
     + '— os formatos de compartilhamento estariam duplicados na página'],
-  [/<EstadoRelease/, 'a home não mostra o estado de release dos dados'],
 ];
 for (const [regra, mensagem] of exigencias) {
   if (!regra.test(fonte)) falhas.push(mensagem);
