@@ -3,6 +3,7 @@ import Base from '../../../layouts/Base.astro';
 import ListaItens from '../../../components/ListaItens.astro';
 import { leDados } from '../../../lib/dados.mjs';
 import { carregaRecentes, raizItens } from '../../../lib/itens.mjs';
+import imagens from '../../../data/imagens-candidatos.json';
 
 // os dados saem do MANIFESTO da geração ativa (data/current.json),
 // nunca de um caminho fixo: itens, acervo e índice de pesquisa
@@ -18,6 +19,8 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 const c = resumo.candidatos[slug];
+const imagem = imagens.candidates.find((item) => item.candidate_slug === slug);
+if (!imagem) throw new Error(`Retrato sem manifesto de direitos: ${slug}`);
 const recentes = carregaRecentes(raizItens(), slug);
 
 const voz = recentes.filter((i) => i.voz === 'propria');
@@ -30,13 +33,32 @@ const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagr
   description={`Rastreamento de ${c.nome}: na própria voz, arquivo de 5 anos e menções — registro automatizado com fontes primárias linkadas.`}
 >
   <p><a href="/candidato">← Todos os candidatos</a></p>
-  <h1>{c.nome}</h1>
-  <p class="lead">
-    Nos últimos {resumo.janela_recentes_dias} dias: {voz.length} itens na própria voz
-    ({nPosts} posts, {voz.length - nPosts} vídeos/aparições/discursos/publicações)
-    e {mencoes.length} menções de terceiros. Arquivo total: {c.total.toLocaleString('pt-BR')} itens
-    desde 2021.
-  </p>
+  <section class="perfil-candidato" aria-labelledby="nome-candidato">
+    <figure class="foto-perfil">
+      <img
+        src={imagem.image_path}
+        width="161"
+        height="225"
+        alt={`Retrato de ${c.nome}`}
+      />
+      <figcaption>
+        Foto: <a href={imagem.source_page}>{imagem.public_credit}</a> ·
+        {imagem.license_url
+          ? <a href={imagem.license_url}>{imagem.license}</a>
+          : imagem.license}<br />
+        {imagem.public_modification_note}
+      </figcaption>
+    </figure>
+    <div class="perfil-conteudo">
+      <h1 id="nome-candidato">{c.nome}</h1>
+      <p class="lead">
+        Nos últimos {resumo.janela_recentes_dias} dias: {voz.length} itens na própria voz
+        ({nPosts} posts, {voz.length - nPosts} vídeos/aparições/discursos/publicações)
+        e {mencoes.length} menções de terceiros. Arquivo total: {c.total.toLocaleString('pt-BR')} itens
+        desde 2021.
+      </p>
+    </div>
+  </section>
 
   <div class="card">
     <h2 style="margin-top:0">Visões</h2>
@@ -58,4 +80,40 @@ const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagr
     Registro automatizado; links levam às fontes originais. Não é análise, não é checagem,
     não é endosso. A ficha de análise do programa entra em 1º/9.
   </div>
+
+  <style>
+    .perfil-candidato {
+      display: grid;
+      grid-template-columns: 161px minmax(0, 1fr);
+      gap: clamp(1.25rem, 4vw, 2.5rem);
+      align-items: center;
+      margin: 1.25rem 0 2rem;
+    }
+    .foto-perfil {
+      overflow: hidden;
+      margin: 0;
+      border: 1px solid var(--linha);
+      border-radius: var(--raio);
+      background: var(--cartao);
+      box-shadow: var(--sombra-leve);
+    }
+    .foto-perfil img {
+      display: block;
+      width: 161px;
+      aspect-ratio: 161 / 225;
+      object-fit: cover;
+    }
+    .foto-perfil figcaption {
+      padding: .55rem .7rem .65rem;
+      color: var(--tinta-suave);
+      font-size: .68rem;
+      line-height: 1.35;
+    }
+    .perfil-conteudo h1 { margin-top: 0; }
+    .perfil-conteudo .lead { margin-bottom: 0; }
+    @media (max-width: 620px) {
+      .perfil-candidato { grid-template-columns: minmax(0, 1fr); align-items: start; }
+      .foto-perfil { max-width: 15rem; }
+    }
+  </style>
 </Base>

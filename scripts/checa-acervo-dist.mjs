@@ -127,9 +127,6 @@ if (paraItem.length) {
 // ------------------------------------------------------- estado e acessibilidade
 
 const estado = estadoDoSite(leManifesto());
-if (!html.includes(estado.rotulo)) {
-  falhas.push(`a página não mostra o estado de release ("${estado.rotulo}")`);
-}
 if (!estado.oficial && /Acervo Oficial/i.test(html)) {
   falhas.push('a página diz "Acervo Oficial" sem release oficial declarada');
 }
@@ -155,4 +152,4 @@ if (falhas.length) {
 console.log(`OK (acervo/dist): ${visao.candidatos.length} candidatos `
   + `(${visao.totais.comColeta} com coleta, ${semColeta.length} com lacuna declarada), `
   + `${internos.length} links internos conferidos contra dist/, `
-  + `${(bytes / 1024).toFixed(0)} KiB — ${estado.rotulo}`);
+  + `${(bytes / 1024).toFixed(0)} KiB`);

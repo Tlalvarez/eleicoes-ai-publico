@@ -1,13 +1,19 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { leDados } from '../../lib/dados.mjs';
+import imagens from '../../data/imagens-candidatos.json';
 
 // os dados saem do MANIFESTO da geração ativa (data/current.json),
 // nunca de um caminho fixo: itens, acervo e índice de pesquisa
 // precisam ser sempre da MESMA geração
 const resumo = leDados('itens', 'resumo.json');
 
-const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => ({ slug, ...c }));
+const imagensPorSlug = new Map(imagens.candidates.map((imagem) => [imagem.candidate_slug, imagem]));
+const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => {
+  const imagem = imagensPorSlug.get(slug);
+  if (!imagem) throw new Error(`Retrato sem manifesto de direitos: ${slug}`);
+  return { slug, ...c, imagem };
+});
 ---
 <Base
   title="Candidatos"
@@ -20,22 +26,96 @@ const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => ({ slug,
     (histórico com fonte primária linkada) e as <strong>menções</strong> (o que circula sobre ele,
     fora da análise). Cobertura simétrica: a mesma varredura para todos.
   </p>
-  <div class="card">
-    <ul>
-      {candidatos.map((c) => (
-        <li>
-          <a href={`/candidato/${c.slug}`}><strong>{c.nome}</strong></a> —
+  <ul class="grade-candidatos">
+    {candidatos.map((c) => (
+      <li class="cartao-candidato">
+        <a class="retrato-link" href={`/candidato/${c.slug}`}>
+          <img
+            src={c.imagem.image_path}
+            width="161"
+            height="225"
+            loading="lazy"
+            alt=""
+          />
+          <span class="nome-candidato">{c.nome}</span>
+        </a>
+        <p class="resumo-candidato">
           {c.total > 0
             ? `${c.total.toLocaleString('pt-BR')} itens registrados (${c.recentes} nos últimos ${resumo.janela_recentes_dias} dias)`
-            : 'sem itens registrados no período'}
-        </li>
-      ))}
-    </ul>
-    <p style="margin-bottom:0"><small>Atualizado em {resumo.gerado_em?.slice(0, 10)} ·
+            : 'Sem itens registrados no período'}
+        </p>
+        <p class="credito-retrato">
+          Foto: <a href={c.imagem.source_page}>{c.imagem.public_credit}</a> ·
+          {c.imagem.license_url
+            ? <a href={c.imagem.license_url}>{c.imagem.license}</a>
+            : c.imagem.license}<br />
+          {c.imagem.public_modification_note}
+        </p>
+      </li>
+    ))}
+  </ul>
+  <p><small>Atualizado em {resumo.gerado_em?.slice(0, 10)} ·
     formato de dados público: <a href="https://github.com/Tlalvarez/eleicoes-ai-publico/blob/main/data/itens/item.schema.json">item.schema.json</a></small></p>
-  </div>
   <div class="aviso">
     Registro automatizado com links para as fontes originais — não é análise nem endosso.
     Volume de itens reflete o quanto cada candidato publica, não avaliação editorial.
   </div>
+
+  <style>
+    .grade-candidatos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 161px);
+      justify-content: start;
+      gap: 1rem;
+      padding: 0;
+      margin: 1.5rem 0;
+      list-style: none;
+    }
+    .cartao-candidato {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      border: 1px solid var(--linha);
+      border-radius: var(--raio);
+      background: var(--cartao);
+      box-shadow: var(--sombra-leve);
+    }
+    .retrato-link {
+      color: var(--tinta);
+      text-decoration: none;
+    }
+    .retrato-link img {
+      display: block;
+      width: 100%;
+      margin: 0;
+      aspect-ratio: 161 / 225;
+      object-fit: cover;
+      background: var(--realce);
+    }
+    .nome-candidato {
+      display: block;
+      padding: .8rem 1rem .25rem;
+      font-family: var(--fonte-titulo);
+      font-size: 1.08rem;
+      font-weight: 750;
+      line-height: 1.2;
+    }
+    .retrato-link:hover .nome-candidato { color: var(--acento); text-decoration: underline; }
+    .resumo-candidato {
+      flex: 1;
+      margin: 0;
+      padding: .25rem 1rem .75rem;
+      color: var(--tinta-suave);
+      font-size: .9rem;
+    }
+    .credito-retrato {
+      margin: 0;
+      padding: .65rem 1rem .8rem;
+      border-top: 1px solid var(--linha);
+      color: var(--tinta-suave);
+      font-size: .7rem;
+      line-height: 1.35;
+    }
+  </style>
 </Base>

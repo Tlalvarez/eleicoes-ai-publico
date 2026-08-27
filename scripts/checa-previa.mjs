@@ -46,15 +46,14 @@ const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
 const SUPERFICIES = ['index.html', 'acervo.html'];
 
 /**
- * Onde o estado dos dados tem de estar ESCRITO na própria página.
+ * Onde o estado dos dados precisa estar escrito na própria página.
  *
- * A home saiu desta lista: ela não é uma página de dados, é o campo da
- * pergunta — o estado passou a ser dito no rodapé de cada resposta do chat e
- * nos formatos de compartilhamento (cobrados por scripts/checa-chat-navegador
- * .mjs), onde acompanha o dado que qualifica em vez de ficar num quadro fixo
- * acima dele. As proibições abaixo continuam valendo para a home.
+ * Nenhuma superfície fixa declara o estado: os quadros foram removidos por
+ * decisão de produto. O estado continua acompanhando cada resposta do chat e
+ * seus formatos de compartilhamento. As proibições abaixo seguem valendo para
+ * home e acervo.
  */
-const DECLARAM_O_ESTADO = ['acervo.html'];
+const DECLARAM_O_ESTADO = [];
 
 /** Afirmações de oficialidade que texto de interface não pode fazer sozinho. */
 const AFIRMACOES = [
@@ -121,5 +120,5 @@ if (falhas.length) {
   console.error('FALHOU (prévia):\n  ' + falhas.join('\n  '));
   process.exit(1);
 }
-console.log(`OK (prévia): ${SUPERFICIES.join(' e ')} não afirmam oficialidade e não `
-  + `escrevem o rótulo à mão; ${DECLARAM_O_ESTADO.join(' e ')} declaram "${estado.rotulo}"`);
+console.log(`OK (prévia): ${SUPERFICIES.join(' e ')} não afirmam oficialidade, não `
+  + 'escrevem o rótulo à mão e não exibem quadro fixo de estado');

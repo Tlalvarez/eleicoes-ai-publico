@@ -1,6 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import EstadoRelease from '../../components/EstadoRelease.astro';
 import { leDados } from '../../lib/dados.mjs';
 import { opcoesDeFiltro, visaoDoAcervo } from '../../lib/acervo-visao.mjs';
 
@@ -33,10 +32,6 @@ const textoDeBusca = (c) =>
     Esta página é superfície de evidência: ela mostra o que existe, de onde veio e o que
     falta — não produz posição, comparação nem juízo sobre ninguém.
   </p>
-
-  <EstadoRelease detalheExtra={
-    visao.geradoEm ? `Índice do acervo gerado em ${visao.geradoEm.slice(0, 10)}.` : ''
-  } />
 
   <p class="cobertura">
     O catálogo declara <strong>{plural(visao.totais.candidatos, 'candidato', 'candidatos')}</strong>.
