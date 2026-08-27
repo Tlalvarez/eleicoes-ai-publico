@@ -13,5 +13,6 @@ test('home usa a chamada sobre candidatos solicitada', () => {
   assert.doesNotMatch(home, /Converse em português com as evidências reunidas sobre os candidatos\./);
   assert.match(home, /placeholder="Ex\.: o que o candidato A fala sobre educação em seu plano de governo\? Compare quem tratou do tema X\."/);
   assert.doesNotMatch(home, /Ex\.: o que o candidato A já fala sobre sobre educação/);
+  assert.match(home, /\.hero-home \.lead \{ max-width: none; \}/);
   assert.match(home, /id="form-chat"/);
 });
