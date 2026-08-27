@@ -3,6 +3,9 @@ dist/
 .astro/
 corpus/
 
+# estado local do wrangler (cache do runtime do Pages ao rodar `wrangler pages dev`)
+.wrangler/
+
 # acervo: dados derivados, regenerados pelo harness (publicação decidida na fase de deploy)
 data/acervo/
 

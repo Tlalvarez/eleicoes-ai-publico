@@ -15,6 +15,16 @@
  * código-fonte. Entre um e outro há um empacotador, e "o .astro está limpo"
  * nunca foi prova de que o `dist/` está.
  *
+ * **O escopo é o que roda no NAVEGADOR: `src/` e `dist/`.** Existe um lugar do
+ * produto onde HTML é escrito como string por necessidade — a página pública de
+ * uma resposta (`functions/resposta/[id].js`), servida pelo Cloudflare Pages,
+ * onde não há DOM para materializar. Lá a defesa muda de forma sem afrouxar: a
+ * mesma árvore de nós é serializada por src/lib/html-seguro.mjs, com escape
+ * obrigatório de texto e de atributo e filtro de esquema em todo `href`, e o
+ * que cobra isso é test/pagina-resposta.test.mjs (JSON hostil, endereço
+ * executável, fuga de atributo de metadado). Este gate não varre `functions/`
+ * porque os padrões abaixo são todos de DOM e não existem lá.
+ *
  * Uso: npm run build && npm run test:render-seguro
  */
 import { readFileSync, readdirSync, statSync } from 'node:fs';

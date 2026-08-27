@@ -27,6 +27,7 @@
  * Puro e sem DOM: `buscar` é injetado, então os testes rodam sem rede.
  */
 import { hrefSeguro } from './markdown.mjs';
+import { ehIdPublico } from './resposta-publica.mjs';
 
 export const CAMINHO_CONVERSA = '/api/conversa';
 export const CAMINHO_PESQUISA = '/api/pesquisa';
@@ -109,6 +110,15 @@ export function normalizaResposta(bruto) {
 
   return {
     id: str(r.id) || null,
+    // o identificador PÚBLICO da resposta guardada, que vira `/resposta/<id>`.
+    // Ele acaba dentro de um caminho, então a gramática é conferida aqui, na
+    // fronteira: um id fora do formato não vira link torto adiante, vira `null`
+    // e a interface diz que não há link.
+    compartilhamento_id: ehIdPublico(r.compartilhamento_id) ? r.compartilhamento_id : null,
+    // a pergunta não volta de /api/conversa, mas volta de /api/respostas/<id>,
+    // e todo formato de compartilhamento abre por ela. Fixar a forma aqui evita
+    // que cada consumidor invente o seu jeito de não ter o campo.
+    pergunta: str(r.pergunta),
     texto: str(r.texto),
     citacoes,
     rodape: str(r.rodape),

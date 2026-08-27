@@ -238,3 +238,44 @@ test('o identificador da resposta anterior acompanha o turno seguinte', async ()
   assert.equal(sessao.ultimaChamada.respostaId, 'r-1');
   assert.equal(sessao.ultimaChamada.mensagens.length, 3);
 });
+
+// --------------------------------------------------------------------------
+// a pergunta acompanha o resultado
+//
+// Quem desenha a resposta também monta o que sai dela: WhatsApp, Web Share,
+// texto e Markdown. Todos esses formatos abrem pela PERGUNTA — um texto
+// compartilhado sem a pergunta que o gerou é exatamente o veredito anônimo
+// que o site existe para não produzir. A resposta do serviço não traz a
+// pergunta de volta (o contrato de /api/conversa não a devolve), e a
+// normalização fixa a forma sem inventá-la. Quem sabe qual pergunta gerou
+// aquele texto é a sessão, e é ela que precisa dizer.
+// --------------------------------------------------------------------------
+
+test('o resultado devolvido carrega a pergunta que o gerou', async () => {
+  const sessao = criaSessao({ perguntar: async () => RESULTADO });
+
+  const r = await sessao.envia('o que há sobre previdência?');
+
+  assert.equal(r.resultado.pergunta, 'o que há sobre previdência?');
+});
+
+test('a pergunta do resultado é a que foi enviada, não uma que o serviço plante', async () => {
+  const sessao = criaSessao({
+    perguntar: async () => ({ ...RESULTADO, pergunta: 'pergunta plantada pelo serviço' }),
+  });
+
+  const r = await sessao.envia('minha pergunta de verdade');
+
+  assert.equal(r.resultado.pergunta, 'minha pergunta de verdade');
+});
+
+test('o identificador público da resposta chega a quem desenha', async () => {
+  const ID = 'AbCdEfGhIjKlMnOpQrStUv';
+  const sessao = criaSessao({
+    perguntar: async () => ({ ...RESULTADO, compartilhamento_id: ID }),
+  });
+
+  const r = await sessao.envia('uma pergunta');
+
+  assert.equal(r.resultado.compartilhamento_id, ID);
+});

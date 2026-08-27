@@ -135,7 +135,15 @@ export function criaSessao({
         if (fim) return { estado: fim };
         historico.push({ papel: 'assistant', texto: resultado.texto });
         ultimoId = resultado.id ?? null;
-        return { estado: 'ok', resultado };
+        // a pergunta viaja COM o resultado. Quem desenha também monta o que
+        // sai dali — WhatsApp, Web Share, texto, Markdown —, e todo esse
+        // material abre pela pergunta: um texto compartilhado sem ela é o
+        // veredito anônimo que este produto existe para não gerar. O serviço
+        // não devolve a pergunta, e a normalização fixa a forma sem inventar
+        // conteúdo; quem sabe qual pergunta gerou aquele texto é a sessão.
+        // Sobrescreve o campo de propósito: vale a pergunta ENVIADA, não uma
+        // que o serviço tenha posto no lugar.
+        return { estado: 'ok', resultado: { ...resultado, pergunta: conteudo } };
       } catch (erro) {
         const fim = desfecho();
         if (fim) return { estado: fim };

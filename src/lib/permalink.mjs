@@ -92,8 +92,10 @@ export function paraCompacto(resultado = {}) {
  *
  * A saída é a de `normalizaResposta` — a mesma forma, pelo mesmo caminho, que
  * a resposta vinda do serviço. Isso não é economia de código: é a garantia de
- * que não existe uma segunda porta de entrada com regras próprias. `pergunta`
- * é o único campo a mais, e é texto (vai para `textContent`).
+ * que não existe uma segunda porta de entrada com regras próprias. A pergunta
+ * entra pela mesma normalização (é texto, e vai para `textContent`), e o
+ * `compartilhamento_id` sai de lá em `null`: uma carga não tem como plantar o
+ * endereço público de uma resposta que ela não é.
  *
  * Devolve `null` quando a carga estoura os tetos — não um resultado podado,
  * que esconderia do leitor que faltou pedaço.
@@ -111,8 +113,9 @@ export function deCompacto(compacto) {
     return cit;
   });
 
-  const resultado = normalizaResposta({
+  return normalizaResposta({
     id: compacto.i,
+    pergunta: compacto.p,
     texto: compacto.t,
     citacoes,
     rodape: compacto.r,
@@ -120,7 +123,6 @@ export function deCompacto(compacto) {
     release_id: null,
     release_status: null,
   });
-  return { pergunta: typeof compacto.p === 'string' ? compacto.p : '', ...resultado };
 }
 
 // ---------------------------------------------------------------------------

@@ -22,20 +22,28 @@
  * possível porque o cliente agora fala com a MESMA ORIGEM: sem endereço
  * embutido no build, qualquer porta serve.
  *
- * Quatro cenários:
+ * Seis cenários:
  *   1. resposta normal — o Markdown vira estrutura, as fontes viram lista com
- *      âncora, e a barra de compartilhamento aparece com o permalink;
+ *      âncora, e a barra de compartilhamento sai com a URL CURTA E PERSISTENTE
+ *      `/resposta/<compartilhamento_id>`, que o serviço passou a devolver.
+ *      Nenhum fragmento novo é gerado, e a barra de endereço continua na home:
+ *      a conversa corrente não é uma página de resultado;
  *   2. resposta hostil — `javascript:` num link e `<img onerror>` no texto NÃO
  *      podem virar atributo nem elemento;
- *   3. permalink — uma carga gerada aqui, em Node, reabre a resposta no
- *      navegador SEM nenhuma chamada de rede;
+ *   3. permalink LEGADO — uma carga gerada aqui, em Node, reabre a resposta no
+ *      navegador SEM nenhuma chamada de rede. Link antigo que já circula
+ *      continua abrindo; o que mudou é que não se emite mais nenhum;
  *   4. fallback — sem `/api/conversa`, o primeiro turno cai em `/api/pesquisa`
  *      e a resposta sai com o aviso de que não há histórico;
- *   5. permalink HOSTIL — uma carga BEM-FORMADA (soma de verificação correta,
- *      montada com o próprio codificador) trazendo `javascript:` numa fonte e
- *      uma release "oficial" forjada. A soma é FNV-1a e não autentica nada:
- *      quem fabrica o link recalcula. Este cenário é o que prova, no navegador,
- *      que a defesa está na decodificação e não na soma.
+ *   5. permalink legado HOSTIL — uma carga BEM-FORMADA (soma de verificação
+ *      correta, montada com o próprio codificador) trazendo `javascript:` numa
+ *      fonte e uma release "oficial" forjada. A soma é FNV-1a e não autentica
+ *      nada: quem fabrica o link recalcula. Este cenário é o que prova, no
+ *      navegador, que a defesa está na decodificação e não na soma;
+ *   6. resposta SEM `compartilhamento_id` — compatibilidade com um serviço que
+ *      ainda não guarda a resposta. Aí não se inventa endereço nem se cai de
+ *      volta no fragmento: copiar texto e copiar Markdown continuam, e a
+ *      indisponibilidade do link é dita.
  *
  * Sem navegador em disco, o gate NÃO passa em silêncio: ele avisa em voz alta
  * o que deixou de ser conferido e sai com sucesso, do mesmo jeito que
@@ -112,8 +120,12 @@ const TEXTO_RESPOSTA = [
   '[clique aqui](javascript:alert(1)) e <img src=x onerror=alert(1)> e <script>alert(2)</script>',
 ].join('\n');
 
+/** O identificador público que o serviço passou a devolver: 22 caracteres. */
+const ID_PUBLICO = 'AbCdEfGhIjKlMnOpQrStUv';
+
 const RESPOSTA = {
   id: 'resp-teste-1',
+  compartilhamento_id: ID_PUBLICO,
   texto: TEXTO_RESPOSTA,
   citacoes: [
     { marcadores: [1], candidato: 'primeiro', nome: 'Primeiro', rotulo: 'vídeo no YouTube',
@@ -149,8 +161,10 @@ function sobeServidor(modo) {
           res.end('{}');
           return;
         }
+        // `sem-id` imita um serviço que ainda não guarda a resposta
+        const { compartilhamento_id: _, ...semId } = RESPOSTA;
         res.writeHead(200, { 'Content-Type': TIPOS['.json'] });
-        res.end(JSON.stringify(RESPOSTA));
+        res.end(JSON.stringify(modo === 'sem-id' ? semId : RESPOSTA));
       });
       return;
     }
@@ -328,16 +342,24 @@ try {
     exige(c, dom.includes('Prévia interna'), 'a resposta não declara o estado dos dados');
     exige(c, dom.includes(RESPOSTA.rodape), 'o rodapé da resposta não aparece');
 
-    // compartilhamento
+    // compartilhamento: a URL é a rota pública, curta e persistente
     exige(c, /href="https:\/\/wa\.me\/\?text=[^"]+"/.test(dom), 'não há link de WhatsApp');
     exige(c, /Copiar texto</.test(dom), 'não há botão de copiar texto');
     exige(c, /Copiar Markdown</.test(dom), 'não há botão de copiar Markdown');
-    exige(c, /Copiar permalink</.test(dom), 'não há botão de copiar permalink');
-    const zap = dom.match(/href="(https:\/\/wa\.me\/\?text=[^"]+)"/)?.[1] ?? '';
-    exige(c, decodeURIComponent(zap).includes('#r='),
-      'a mensagem do WhatsApp não leva o permalink do resultado');
-    exige(c, decodeURIComponent(zap).includes('Prévia interna'),
+    exige(c, /Copiar link</.test(dom), 'não há botão de copiar link');
+    exige(c, !/Copiar permalink</.test(dom),
+      'o botão ainda se chama "Copiar permalink" — o link agora é uma rota, não uma carga');
+    const zap = decodeURIComponent(dom.match(/href="(https:\/\/wa\.me\/\?text=[^"]+)"/)?.[1] ?? '');
+    exige(c, zap.includes(`/resposta/${ID_PUBLICO}`),
+      `a mensagem do WhatsApp não leva a URL pública da resposta: ${zap.slice(0, 400)}`);
+    exige(c, zap.includes('e sobre previdência?'),
+      'a mensagem do WhatsApp sai sem a pergunta que gerou a resposta');
+    exige(c, zap.includes('Prévia interna'),
       'a mensagem do WhatsApp sai sem o estado dos dados');
+    exige(c, !zap.includes('#r='),
+      'a mensagem do WhatsApp ainda carrega o fragmento legado');
+    exige(c, !dom.includes('#r='),
+      'a página gerou um fragmento #r= para uma resposta que já tem endereço próprio');
 
     // segurança: o texto hostil continua sendo texto
     const s = 'segurança';
@@ -403,6 +425,24 @@ try {
       'a fonte sumiu inteira — o leitor perde a referência que o link alegava ter');
   });
 
+  // ------------------------------------ 6: resposta sem compartilhamento_id
+  await comServidor('sem-id', async (chamadas, base) => {
+    const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('pergunta sem id')}`);
+    const c = 'sem id';
+
+    exige(c, /Copiar texto</.test(dom), 'copiar texto sumiu junto com o link');
+    exige(c, /Copiar Markdown</.test(dom), 'copiar Markdown sumiu junto com o link');
+    exige(c, /[Ll]ink indispon[íi]vel/.test(dom),
+      'a página não diz que não há link para esta resposta');
+    exige(c, !dom.includes('#r='),
+      'sem identificador a página caiu de volta no fragmento legado');
+    exige(c, !/\/resposta\//.test(dom),
+      'sem identificador a página inventou um endereço de resposta');
+    const zap = decodeURIComponent(dom.match(/href="(https:\/\/wa\.me\/\?text=[^"]+)"/)?.[1] ?? '');
+    exige(c, zap.includes('pergunta sem id'),
+      'a mensagem do WhatsApp perdeu a pergunta');
+  });
+
   // -------------------------------------------------------------- 4: fallback
   await comServidor('fallback', async (chamadas, base) => {
     const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('pergunta avulsa')}`);
@@ -425,6 +465,8 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (navegador): ${navegador} renderizou a resposta do bundle publicado, `
-  + 'recusou javascript:/HTML injetado, reabriu o permalink sem rede, recusou permalink '
-  + 'forjado (endereço executável e release "oficial") e caiu no fallback de /api/pesquisa '
-  + 'com o aviso de ausência de histórico');
+  + `compartilhou por /resposta/${ID_PUBLICO} sem emitir fragmento novo, recusou `
+  + 'javascript:/HTML injetado, reabriu o permalink legado sem rede, recusou permalink '
+  + 'forjado (endereço executável e release "oficial"), disse a indisponibilidade do link '
+  + 'quando o serviço não devolve identificador e caiu no fallback de /api/pesquisa com o '
+  + 'aviso de ausência de histórico');

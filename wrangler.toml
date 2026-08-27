@@ -1,0 +1,17 @@
+# Configuração mínima do Cloudflare Pages para esta árvore.
+#
+# Ela existe por um motivo só: fixar a DATA DE COMPATIBILIDADE do runtime. Sem
+# ela o wrangler escolhe "hoje" a cada execução, e o ambiente em que a Function
+# roda na máquina de quem programa deixa de ser o mesmo em que ela roda
+# publicada — a classe de diferença que só aparece em produção.
+#
+# `pages_build_output_dir` aponta para o diretório que o `astro build` produz e
+# que o deploy sobe por upload direto; `functions/` é lido da raiz do projeto,
+# ao lado deste arquivo.
+#
+# NÃO há segredo aqui, e não pode haver: `PESQUISA_API` é variável de ambiente
+# do projeto no painel do Pages (e `--binding` no desenvolvimento local), nunca
+# conteúdo versionado.
+name = "eleicoes-ai"
+compatibility_date = "2026-08-26"
+pages_build_output_dir = "dist"

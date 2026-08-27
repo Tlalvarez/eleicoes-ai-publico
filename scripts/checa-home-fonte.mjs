@@ -115,6 +115,20 @@ if (!linhaApi) {
     + 'de quem visita');
 }
 
+// 8. a conversa corrente vive na HOME, e o endereço da página diz isso.
+//
+// A versão anterior reescrevia a barra de endereço para o permalink do último
+// resultado. Com a resposta ganhando rota própria (`/resposta/<id>`), repetir
+// esse gesto seria pior: recarregar ou apertar "voltar" levaria a uma página
+// avulsa, sem a conversa que estava na tela. O único endereço que a home pode
+// escrever é o dela.
+for (const m of fonte.matchAll(/history\.(replaceState|pushState)\s*\(([^)]*)\)/g)) {
+  if (!/location\.pathname/.test(m[2])) {
+    falhas.push(`index.astro chama history.${m[1]} com um endereço que não é o da própria `
+      + 'home — a conversa corrente deixaria de estar no endereço em que ela está');
+  }
+}
+
 // 6. a home não pode mandar a pergunta para outra superfície
 if (/href=["']\/pesquisa/.test(fonte)) {
   falhas.push('index.astro ainda linka /pesquisa — a home é o chat, e uma segunda '

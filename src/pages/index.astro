@@ -252,7 +252,8 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     import { ErroConversa } from '../lib/chat.mjs';
     import { criaSessao } from '../lib/sessao-conversa.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
-    import { estadoDoFragmento, montaPermalink } from '../lib/permalink.mjs';
+    import { estadoDoFragmento } from '../lib/permalink.mjs';
+    import { urlDeCompartilhamento } from '../lib/resposta-publica.mjs';
     import {
       dataBr, linkWhatsApp, markdownCompleto, payloadWebShare, resumoLegivel,
       textoCompleto,
@@ -377,12 +378,25 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       return b;
     }
 
-    async function barraDeCompartilhar(resultado, rotuloEstado) {
+    /**
+     * A barra de compartilhamento de um resultado.
+     *
+     * O endereço é a ROTA PÚBLICA da resposta guardada
+     * (`/resposta/<compartilhamento_id>`): curta, estável e resolvida pelo
+     * serviço que produziu o texto. Fragmento `#r=` continua sendo LIDO — link
+     * antigo que já circula não pode morrer —, mas não se emite mais nenhum:
+     * carregar a resposta inteira dentro da URL só se justificava enquanto não
+     * havia onde guardá-la, e o preço era um link enorme e não autenticado.
+     *
+     * E a barra de endereço NÃO muda: a conversa corrente vive na home. Trocar
+     * o endereço pela rota da resposta faria o recarregar e o "voltar" caírem
+     * numa página avulsa, que não é a conversa que está na tela.
+     */
+    function barraDeCompartilhar(resultado, rotuloEstado) {
       const barra = el('div', 'barra-compartilhar');
       barra.setAttribute('aria-label', 'Compartilhar este resultado');
 
-      const base = location.origin + location.pathname;
-      const { url, cabe, tamanho } = await montaPermalink(base, resultado);
+      const url = urlDeCompartilhamento(location.origin, resultado);
       const comum = { ...resultado, url, estado: rotuloEstado };
 
       if (navigator.share) {
@@ -402,23 +416,26 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       zap.rel = 'noopener noreferrer';
       barra.append(zap);
 
-      if (cabe) {
-        barra.append(botao('Copiar permalink', (ev) => copia(url, ev.currentTarget, barra)));
-        // a barra de endereço passa a SER o permalink, sem entupir o histórico
-        history.replaceState(null, '', url.slice(base.length) || location.pathname);
+      if (url) {
+        barra.append(botao('Copiar link', (ev) => copia(url, ev.currentTarget, barra)));
       } else {
-        const desativado = el('button', 'botao secundario', 'Permalink indisponível');
+        // sem identificador não se inventa endereço: um link para uma resposta
+        // que o serviço não guardou abriria 404 na cara de quem o recebeu, e
+        // voltar ao fragmento devolveria um endereço não autenticado com cara
+        // de endereço do site. Dizer que não há link é a saída honesta.
+        const desativado = el('button', 'botao secundario', 'Link indisponível');
         desativado.type = 'button';
         desativado.disabled = true;
         barra.append(desativado);
         barra.append(el('p', 'nota-permalink',
-          `Esta resposta é longa demais para caber num link (${tamanho.toLocaleString('pt-BR')} `
-          + 'caracteres). Copiar o texto, copiar o Markdown e o WhatsApp continuam funcionando.'));
+          'Esta resposta não tem endereço próprio no eleicoes.ai — ela não foi guardada pelo '
+          + 'serviço de evidências. Copiar o texto, copiar o Markdown e o WhatsApp continuam '
+          + 'funcionando, e levam a pergunta e as fontes junto.'));
       }
       return barra;
     }
 
-    async function adicionaResposta(resultado, { viaFallback = false, compartilhado = false } = {}) {
+    function adicionaResposta(resultado, { viaFallback = false, compartilhado = false } = {}) {
       turnos += 1;
       const indice = turnos;
       const li = el('li', 'turno turno-resposta');
@@ -474,7 +491,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       li.append(artigo);
       conversa.append(li);
 
-      artigo.append(await barraDeCompartilhar(resultado, est.rotulo));
+      artigo.append(barraDeCompartilhar(resultado, est.rotulo));
       return li;
     }
 
@@ -529,7 +546,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         mostraErro(r.erro, r.perguntaRecusada);
       } else if (r.estado === 'ok') {
         escondeEstado();
-        const li = await adicionaResposta(r.resultado, { viaFallback: r.resultado.viaFallback });
+        const li = adicionaResposta(r.resultado, { viaFallback: r.resultado.viaFallback });
         li.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
       entrada.focus();
@@ -575,7 +592,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         // o link escolheria, com isso, o que o serviço recebe como turno
         // `assistant` na pergunta seguinte. O que veio da URL é para LER; a
         // próxima pergunta começa uma conversa de verdade.
-        await adicionaResposta(compartilhado, { compartilhado: true });
+        adicionaResposta(compartilhado, { compartilhado: true });
         return;
       }
       if (location.hash.startsWith('#r=')) {
