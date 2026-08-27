@@ -11,5 +11,7 @@ test('home usa a chamada sobre candidatos solicitada', () => {
   assert.match(home, /apenas <strong>materiais oficiais<\/strong> e <strong>citações diretas<\/strong> dos candidatos/);
   assert.match(textoHome, /reduzindo o risco de desinformação e ajudando você a fazer uma escolha mais consciente na hora de votar\./);
   assert.doesNotMatch(home, /Converse em português com as evidências reunidas sobre os candidatos\./);
+  assert.match(home, /placeholder="Ex\.: o que o candidato A já fala sobre sobre educação em seu plano de governo\? Compare quem tratou do tema X\."/);
+  assert.doesNotMatch(home, /Ex\.: o que está registrado sobre previdência\?/);
   assert.match(home, /id="form-chat"/);
 });
