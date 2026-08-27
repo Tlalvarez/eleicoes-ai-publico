@@ -10,8 +10,9 @@
  *
  * Duas decisões que valem explicação:
  *
- * **Fallback.** `/api/conversa` pode ainda não existir no serviço. Quando a
- * rota responde 404/405/501 e é o PRIMEIRO turno, a pergunta vai para
+ * **Fallback.** `/api/conversa` pode ainda não existir no serviço ou estar
+ * fechada por falta de release. Quando a rota responde 404/405/501, ou 503 com
+ * o código explícito `sem_release`, e é o PRIMEIRO turno, a pergunta vai para
  * `/api/pesquisa`, que responde uma consulta avulsa — mesmo formato de saída,
  * sem memória. Num turno seguinte isso NÃO acontece: mandar "e sobre saúde?"
  * como pergunta isolada devolveria uma resposta sobre nada, com aparência de
@@ -80,6 +81,16 @@ export function ehPrimeiroTurno(mensagens) {
  */
 export function precisaFallback(status) {
   return status === 404 || status === 405 || status === 501;
+}
+
+async function respostaPermiteFallback(resposta) {
+  if (precisaFallback(resposta.status)) return true;
+  if (resposta.status !== 503) return false;
+  try {
+    return (await resposta.json())?.codigo === 'sem_release';
+  } catch {
+    return false;
+  }
 }
 
 /** Fixa a forma da resposta. Campo estranho não chega à interface. */
@@ -169,7 +180,7 @@ export async function pergunta(mensagens, { apiBase, buscar = globalThis.fetch, 
     return { ...exigeTexto(normalizaResposta(await leJson(conversa))), viaFallback: false };
   }
 
-  if (!precisaFallback(conversa.status)) {
+  if (!(await respostaPermiteFallback(conversa))) {
     throw new ErroConversa('servidor',
       `O serviço de evidências respondeu com erro (${conversa.status}). `
       + 'Tente de novo em alguns instantes.');

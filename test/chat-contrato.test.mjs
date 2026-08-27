@@ -137,6 +137,28 @@ test('sem /api/conversa, o primeiro turno cai em /api/pesquisa', async () => {
   assert.equal(r.texto, RESPOSTA.texto);
 });
 
+test('sem release, o primeiro turno cai em /api/pesquisa', async () => {
+  const buscar = falsoFetch([
+    { status: 503, json: { erro: 'conversa indisponível', codigo: 'sem_release' } },
+    ok(RESPOSTA),
+  ]);
+
+  const r = await pergunta(TURNO, { apiBase: API, buscar });
+
+  assert.deepEqual(buscar.chamadas.map((c) => c.url),
+    [`${API}/api/conversa`, `${API}/api/pesquisa`]);
+  assert.equal(r.viaFallback, true);
+  assert.equal(r.texto, RESPOSTA.texto);
+});
+
+test('503 genérico continua sendo erro e não tenta fallback', async () => {
+  const buscar = falsoFetch([{ status: 503, json: { codigo: 'outro' } }]);
+
+  await assert.rejects(() => pergunta(TURNO, { apiBase: API, buscar }),
+    (e) => e instanceof ErroConversa && e.codigo === 'servidor');
+  assert.equal(buscar.chamadas.length, 1);
+});
+
 test('sem /api/conversa, o follow-up NÃO vira pergunta nova em silêncio', async () => {
   const buscar = falsoFetch([{ status: 404, json: {} }]);
 
