@@ -81,26 +81,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     </div>
   </noscript>
 
-  <h2>Como ler uma resposta</h2>
-  <div class="cartao">
-    <ul class="como-ler">
-      <li><strong>Conclusão primeiro.</strong> O primeiro parágrafo responde a pergunta;
-        o resto sustenta.</li>
-      <li><strong>Evidência</strong> é o que está registrado, com marcador
-        <span class="exemplo-marcador">[S1]</span> apontando para a fonte, a data e o
-        endereço original.</li>
-      <li><strong>Inferência</strong> é leitura de quem escreve a partir da evidência, e
-        vem dita como tal — nunca misturada ao registro.</li>
-      <li><strong>Lacuna</strong> é o que não foi encontrado. Ausência de registro não é
-        ausência de posição, e a resposta diz isso em vez de preencher o vazio.</li>
-      <li>Quando há mais de um candidato, a comparação é <strong>simétrica</strong>: o mesmo
-        conjunto de perguntas para cada um, inclusive para quem não tem registro no tema.</li>
-    </ul>
-    <p class="rodape-cartao">
-      O site não recomenda voto, não ordena candidatos e não conclui superioridade.
-    </p>
-  </div>
-
   <h2>Quem está no acervo</h2>
   <p>
     A mesma varredura, a mesma régua e o mesmo tratamento para todos — inclusive para quem
@@ -150,10 +130,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       font: inherit; font-size: .95em; border: 1px solid var(--linha);
       border-bottom-width: 2px; border-radius: 4px; padding: 0 .3em; background: var(--cartao);
     }
-    .como-ler { margin: 0; padding-left: 1.2rem; }
-    .como-ler li { margin-bottom: .5rem; }
-    .exemplo-marcador { font-weight: 700; color: var(--acento); }
-    .rodape-cartao { margin: .8rem 0 0; font-size: .88rem; color: var(--tinta-suave); }
     .depois-da-faixa { margin-top: 1rem; }
     @media (max-width: 520px) {
       .acoes-envio > .botao { flex: 1 1 100%; }
