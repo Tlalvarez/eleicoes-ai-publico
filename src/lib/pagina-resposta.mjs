@@ -332,7 +332,7 @@ rel="noopener noreferrer">WhatsApp</a>` : ''}
 <div class="resposta-corpo">${corpoResposta}</div>
 ${fontes}
 <div class="rodape-resposta">
-${resultado.rodape ? `<p>${escapaTexto(resultado.rodape)}</p>` : ''}
+${resultado.rodape ? `<p>${escapaTexto(resultado.rodape).replaceAll('/metodologia', '<a href="/metodologia">/metodologia</a>')}</p>` : ''}
 ${data}
 <p>${escapaTexto(estado.rotulo)}</p>
 </div>

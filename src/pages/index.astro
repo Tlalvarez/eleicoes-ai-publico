@@ -479,7 +479,20 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
 
       const est = estadoDaResposta(resultado);
       const rodape = el('div', 'rodape-resposta');
-      if (resultado.rodape) rodape.append(el('p', null, resultado.rodape));
+      if (resultado.rodape) {
+        // "/metodologia" no texto do rodapé vira link para a página
+        const p = el('p');
+        const partes = String(resultado.rodape).split('/metodologia');
+        partes.forEach((parte, i) => {
+          if (i > 0) {
+            const a = el('a', null, '/metodologia');
+            a.href = '/metodologia';
+            p.append(a);
+          }
+          if (parte) p.append(document.createTextNode(parte));
+        });
+        rodape.append(p);
+      }
       artigo.append(rodape);
 
       li.append(artigo);
