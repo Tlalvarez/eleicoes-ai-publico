@@ -480,12 +480,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       const est = estadoDaResposta(resultado);
       const rodape = el('div', 'rodape-resposta');
       if (resultado.rodape) rodape.append(el('p', null, resultado.rodape));
-      rodape.append(el('p', null, est.rotulo));
-      if (viaFallback) {
-        rodape.append(el('p', null,
-          'Respondida pela rota de consulta avulsa: este serviço ainda não guarda histórico, '
-          + 'então a próxima pergunta precisa ser autossuficiente.'));
-      }
       artigo.append(rodape);
 
       li.append(artigo);

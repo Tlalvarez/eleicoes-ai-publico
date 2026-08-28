@@ -339,7 +339,6 @@ try {
     exige(c, dom.includes('https://exemplo.org/video-um'), 'o endereço da fonte 1 não aparece');
     exige(c, dom.includes('13/08/2026'), 'a data da fonte não foi formatada');
     exige(c, /legenda autom/.test(dom), 'a ressalva de transcrição automática não aparece');
-    exige(c, dom.includes('Prévia interna'), 'a resposta não declara o estado dos dados');
     exige(c, dom.includes(RESPOSTA.rodape), 'o rodapé da resposta não aparece');
 
     // compartilhamento: a URL é a rota pública, curta e persistente
@@ -417,8 +416,6 @@ try {
       'o fragmento conseguiu carimbar a resposta como Release oficial');
     exige(c, !dom.includes('rel-forjada-2026'),
       'a release forjada no fragmento chegou à tela');
-    exige(c, dom.includes(ROTULO_PREVIA),
-      'conteúdo reconstruído da URL não foi rotulado como prévia');
     exige(c, /N[ÃA]O é autenticado/i.test(dom),
       'a página não diz que o conteúdo do link não é autenticado');
     exige(c, dom.includes('Fonte forjada'),
@@ -452,8 +449,6 @@ try {
       `sem /api/conversa a página deveria tentar /api/pesquisa (chamou: ${chamadas.join(', ')})`);
     exige(c, /<h3[^>]*>O que está registrado<\/h3>/.test(dom),
       'a resposta do fallback não foi renderizada');
-    exige(c, /não guarda hist[oó]rico/i.test(dom),
-      'a página não avisa que o serviço não mantém histórico');
   });
 } catch (e) {
   console.error(`FALHOU (navegador): ${e.message}`);
@@ -468,5 +463,4 @@ console.log(`OK (navegador): ${navegador} renderizou a resposta do bundle public
   + `compartilhou por /resposta/${ID_PUBLICO} sem emitir fragmento novo, recusou `
   + 'javascript:/HTML injetado, reabriu o permalink legado sem rede, recusou permalink '
   + 'forjado (endereço executável e release "oficial"), disse a indisponibilidade do link '
-  + 'quando o serviço não devolve identificador e caiu no fallback de /api/pesquisa com o '
-  + 'aviso de ausência de histórico');
+  + 'quando o serviço não devolve identificador e caiu no fallback de /api/pesquisa');
