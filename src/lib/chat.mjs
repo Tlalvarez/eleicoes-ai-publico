@@ -200,6 +200,31 @@ export async function pergunta(mensagens, { apiBase, buscar = globalThis.fetch, 
   return { ...exigeTexto(normalizaResposta(await leJson(pesquisa))), viaFallback: true };
 }
 
+/**
+ * Lê uma resposta guardada (`GET /api/respostas/<id>`) na mesma forma que
+ * `pergunta()` devolve. `null` se o serviço não a tem (404) ou o id é inválido.
+ */
+export async function carregaResposta(id, { apiBase, buscar = globalThis.fetch } = {}) {
+  if (!ehIdPublico(id)) return null;
+  const base = String(apiBase ?? '').replace(/\/+$/, '');
+  let r;
+  try {
+    r = await buscar(`${base}/api/respostas/${id}`, { headers: { Accept: 'application/json' } });
+  } catch (e) {
+    throw new ErroConversa('rede', 'Não foi possível falar com o serviço de evidências.', { cause: e });
+  }
+  if (r.status === 404) return null;
+  if (!r.ok) {
+    throw new ErroConversa('servidor',
+      `O serviço de evidências respondeu com erro (${r.status}). Tente de novo em alguns instantes.`);
+  }
+  const doc = await leJson(r);
+  const resposta = doc && typeof doc.resposta === 'object' ? doc.resposta : {};
+  return exigeTexto(normalizaResposta({
+    ...resposta, pergunta: doc?.pergunta, compartilhamento_id: doc?.compartilhamento_id ?? id,
+  }));
+}
+
 function exigeTexto(r) {
   if (!r.texto.trim()) {
     throw new ErroConversa('resposta-vazia',

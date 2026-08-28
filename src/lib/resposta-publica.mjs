@@ -72,18 +72,34 @@ export function urlPublica(origem, id) {
   return base && caminho ? base + caminho : null;
 }
 
+/** Parâmetro da home que abre uma resposta guardada e continua a conversa nela. */
+export const PARAMETRO_PAGINA = 'resposta';
+
+/** `/?resposta=<id>` — a página da conversa, servida pela própria home. */
+export function caminhoPagina(id) {
+  return ehIdPublico(id) ? `/?${PARAMETRO_PAGINA}=${id}` : null;
+}
+
+/** A URL absoluta da página da conversa, ou `null`. */
+export function urlPagina(origem, id) {
+  const base = origemLimpa(origem);
+  const caminho = caminhoPagina(id);
+  return base && caminho ? base + caminho : null;
+}
+
 /**
  * O endereço que o site oferece para compartilhar um resultado.
  *
- * Devolve `null` quando a resposta não tem identificador público — e isso é
- * uma resposta legítima, não uma falha. Inventar um endereço para conteúdo que
- * o serviço não guardou produziria um link que abre 404 na cara de quem o
- * recebeu; cair de volta no fragmento produziria um link não autenticado com
- * cara de link do site. A interface diz que não há link e segue oferecendo o
- * texto.
+ * É a página da conversa (`/?resposta=<id>`): quem abre vê a pergunta e a
+ * resposta guardadas pelo serviço — iguais para todos — e pode continuar
+ * perguntando ali. Devolve `null` quando a resposta não tem identificador
+ * público — e isso é uma resposta legítima, não uma falha. Inventar um
+ * endereço para conteúdo que o serviço não guardou produziria um link que
+ * abre vazio na cara de quem o recebeu. A interface diz que não há link e
+ * segue oferecendo o texto.
  */
 export function urlDeCompartilhamento(origem, resultado) {
-  return urlPublica(origem, resultado?.compartilhamento_id);
+  return urlPagina(origem, resultado?.compartilhamento_id);
 }
 
 /**

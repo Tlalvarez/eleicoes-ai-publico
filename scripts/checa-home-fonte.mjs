@@ -122,8 +122,10 @@ if (!linhaApi) {
 // esse gesto seria pior: recarregar ou apertar "voltar" levaria a uma página
 // avulsa, sem a conversa que estava na tela. O único endereço que a home pode
 // escrever é o dela.
+// Exceção única: a página da conversa (`/?resposta=<id>`, via `caminhoPagina`),
+// que É a home carregando a resposta guardada — recarregar volta ao mesmo lugar.
 for (const m of fonte.matchAll(/history\.(replaceState|pushState)\s*\(([^)]*)\)/g)) {
-  if (!/location\.pathname/.test(m[2])) {
+  if (!/location\.pathname|\bpagina\b/.test(m[2])) {
     falhas.push(`index.astro chama history.${m[1]} com um endereço que não é o da própria `
       + 'home — a conversa corrente deixaria de estar no endereço em que ela está');
   }

@@ -59,7 +59,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       </div>
       <p class="nota-envio">
         <kbd>Enter</kbd> envia · <kbd>Shift</kbd>+<kbd>Enter</kbd> quebra linha ·
-        a resposta costuma levar cerca de um minuto.
+        a resposta pode levar alguns minutos para ser computada.
       </p>
     </form>
 
@@ -249,11 +249,13 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
 
   <script>
     import { analisaMarkdown, criaElementos } from '../lib/markdown.mjs';
-    import { ErroConversa } from '../lib/chat.mjs';
+    import { ErroConversa, carregaResposta } from '../lib/chat.mjs';
     import { criaSessao } from '../lib/sessao-conversa.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
     import { estadoDoFragmento } from '../lib/permalink.mjs';
-    import { urlDeCompartilhamento } from '../lib/resposta-publica.mjs';
+    import {
+      PARAMETRO_PAGINA, caminhoPagina, urlDeCompartilhamento,
+    } from '../lib/resposta-publica.mjs';
     import {
       dataBr, linkWhatsApp, markdownCompleto, payloadWebShare, resumoLegivel,
       textoCompleto,
@@ -554,6 +556,12 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       } else if (r.estado === 'ok') {
         escondeEstado();
         const li = adicionaResposta(r.resultado, { viaFallback: r.resultado.viaFallback });
+        // a primeira resposta guardada vira a página desta conversa: o endereço
+        // passa a ser /?resposta=<id> e o resto da conversa acontece nele
+        const pagina = caminhoPagina(r.resultado.compartilhamento_id);
+        if (pagina && !new URLSearchParams(location.search).get(PARAMETRO_PAGINA)) {
+          history.replaceState(null, '', pagina);
+        }
         li.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
       entrada.focus();
@@ -606,7 +614,30 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         mostraEstado('Este link de resultado está incompleto ou foi truncado ao ser colado. '
           + 'Peça o link de novo, ou faça a pergunta abaixo.', { erro: true });
       }
-      const q = new URLSearchParams(location.search).get('q');
+      const parametros = new URLSearchParams(location.search);
+      // /?resposta=<id>: a página de uma conversa. A pergunta e a resposta vêm
+      // do armazém do serviço — iguais para todo mundo — e a conversa segue daqui.
+      const idPagina = parametros.get(PARAMETRO_PAGINA);
+      if (idPagina) {
+        mostraEstado('Abrindo a resposta compartilhada…');
+        try {
+          const guardada = await carregaResposta(idPagina, { apiBase: chat.dataset.api });
+          escondeEstado();
+          if (!guardada) {
+            mostraEstado('Esta resposta não foi encontrada. Faça a pergunta abaixo.', { erro: true });
+            return;
+          }
+          sugestoes.hidden = true;
+          nova.hidden = false;
+          if (guardada.pergunta) adicionaPergunta(guardada.pergunta);
+          adicionaResposta(guardada);
+          sessao.retoma({ pergunta: guardada.pergunta, texto: guardada.texto });
+        } catch (erro) {
+          mostraErro(erro);
+        }
+        return;
+      }
+      const q = parametros.get('q');
       if (q) envia(q);
     })();
   </script>

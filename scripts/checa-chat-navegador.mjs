@@ -349,7 +349,7 @@ try {
     exige(c, !/Copiar permalink</.test(dom),
       'o botão ainda se chama "Copiar permalink" — o link agora é uma rota, não uma carga');
     const zap = decodeURIComponent(dom.match(/href="(https:\/\/wa\.me\/\?text=[^"]+)"/)?.[1] ?? '');
-    exige(c, zap.includes(`/resposta/${ID_PUBLICO}`),
+    exige(c, zap.includes(`/?resposta=${ID_PUBLICO}`),
       `a mensagem do WhatsApp não leva a URL pública da resposta: ${zap.slice(0, 400)}`);
     exige(c, zap.includes('e sobre previdência?'),
       'a mensagem do WhatsApp sai sem a pergunta que gerou a resposta');
@@ -460,7 +460,7 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (navegador): ${navegador} renderizou a resposta do bundle publicado, `
-  + `compartilhou por /resposta/${ID_PUBLICO} sem emitir fragmento novo, recusou `
+  + `compartilhou por /?resposta=${ID_PUBLICO} sem emitir fragmento novo, recusou `
   + 'javascript:/HTML injetado, reabriu o permalink legado sem rede, recusou permalink '
   + 'forjado (endereço executável e release "oficial"), disse a indisponibilidade do link '
   + 'quando o serviço não devolve identificador e caiu no fallback de /api/pesquisa');

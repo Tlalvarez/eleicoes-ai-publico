@@ -76,6 +76,21 @@ export function criaSessao({
     /** Cancela o pedido em voo mantendo a conversa como está. */
     cancela() { encerraVoo('cancelado'); },
 
+    /**
+     * Retoma uma conversa a partir de uma resposta GUARDADA pelo serviço
+     * (pergunta + texto): entra no histórico como primeiro par de turnos.
+     * Só vale em conversa vazia — o conteúdo vem do nosso armazém, não da URL.
+     */
+    retoma({ pergunta, texto, id = null }) {
+      if (historico.length || voo) return false;
+      const p = String(pergunta ?? '').trim();
+      const t = String(texto ?? '').trim();
+      if (!p || !t) return false;
+      historico.push({ papel: 'user', texto: p }, { papel: 'assistant', texto: t });
+      ultimoId = id ?? null;
+      return true;
+    },
+
     /** Conversa nova: aborta o que estava em voo e zera tudo, inclusive a época. */
     reinicia() {
       epoca += 1;

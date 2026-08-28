@@ -98,7 +98,7 @@ test('sem compartilhamento_id não se inventa endereço', () => {
   assert.equal(urlDeCompartilhamento('https://eleicoes.ai',
     { texto: 'a', compartilhamento_id: 'curto' }), null);
   assert.equal(urlDeCompartilhamento('https://eleicoes.ai',
-    { texto: 'a', compartilhamento_id: VALIDO }), `https://eleicoes.ai/resposta/${VALIDO}`);
+    { texto: 'a', compartilhamento_id: VALIDO }), `https://eleicoes.ai/?resposta=${VALIDO}`);
 });
 
 // --------------------------------------------------------------------------
@@ -212,12 +212,12 @@ test('todos os formatos levam a pergunta e a URL curta', () => {
     ['markdown', markdownCompleto(comum)],
   ]) {
     assert.ok(saida.includes(RESULTADO.pergunta), `${nome} saiu sem a pergunta`);
-    assert.ok(saida.includes(`/resposta/${VALIDO}`), `${nome} saiu sem a URL curta`);
+    assert.ok(saida.includes(`/?resposta=${VALIDO}`), `${nome} saiu sem a URL curta`);
     assert.ok(!saida.includes('#r='), `${nome} ainda leva fragmento legado`);
   }
 
   const share = payloadWebShare(comum);
-  assert.equal(share.url, `https://eleicoes.ai/resposta/${VALIDO}`);
+  assert.equal(share.url, `https://eleicoes.ai/?resposta=${VALIDO}`);
   assert.ok(share.text.includes(RESULTADO.pergunta), 'o Web Share saiu sem a pergunta');
 });
 
@@ -228,6 +228,6 @@ test('sem id, os formatos continuam completos e apenas sem link', () => {
 
   assert.equal(url, null);
   assert.ok(textoCompleto(comum).includes(semId.pergunta));
-  assert.ok(!textoCompleto(comum).includes('/resposta/'));
+  assert.ok(!textoCompleto(comum).includes('resposta='));
   assert.equal('url' in payloadWebShare(comum), false);
 });
