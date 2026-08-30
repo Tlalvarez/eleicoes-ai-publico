@@ -21,15 +21,20 @@ import { tmpdir } from 'node:os';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { raizDados } from '../src/lib/dados.mjs';
+import { leManifesto, raizDados } from '../src/lib/dados.mjs';
 import { raizAcervo } from '../src/lib/acervo.mjs';
 import { raizItens } from '../src/lib/itens.mjs';
 
 const PROJETO = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
+// com manifesto publicado a raiz é a da geração ativa; sem ele, a legada
+const m = leManifesto();
+const ESPERADO_ITENS = join(PROJETO, 'data', m?.itens ?? 'itens');
+const ESPERADO_ACERVO = join(PROJETO, 'data', m?.acervo ?? 'acervo');
+
 test('a raiz dos dados é a do projeto, qualquer que seja o cwd', () => {
-  assert.equal(raizItens(), join(PROJETO, 'data', 'itens'));
-  assert.equal(raizAcervo(), join(PROJETO, 'data', 'acervo'));
+  assert.equal(raizItens(), ESPERADO_ITENS);
+  assert.equal(raizAcervo(), ESPERADO_ACERVO);
 });
 
 test('importar e executar a partir de /tmp resolve a mesma raiz', () => {
@@ -42,8 +47,7 @@ test('importar e executar a partir de /tmp resolve a mesma raiz', () => {
     `;
     const saida = execFileSync(process.execPath, ['--input-type=module', '-e', script],
       { cwd: fora, encoding: 'utf8' });
-    assert.deepEqual(JSON.parse(saida),
-      [join(PROJETO, 'data', 'itens'), join(PROJETO, 'data', 'acervo')]);
+    assert.deepEqual(JSON.parse(saida), [ESPERADO_ITENS, ESPERADO_ACERVO]);
   } finally {
     rmSync(fora, { recursive: true, force: true });
   }

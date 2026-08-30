@@ -128,10 +128,9 @@ test('leDados no legado abre o arquivo legado', () => {
   }
 });
 
-test('o projeto real resolve hoje pelo caminho legado, sem manifesto', () => {
-  assert.equal(leManifesto(), null,
-    'apareceu um data/current.json no worktree — esta sessão não migra dados');
-  assert.equal(raizItens(), join(PROJETO, 'data', 'itens'));
+test('o projeto real resolve pelo manifesto quando ele existe, senão pelo legado', () => {
+  const m = leManifesto();
+  assert.equal(raizItens(), join(PROJETO, 'data', m?.itens ?? 'itens'));
 });
 
 test('nenhuma página importa data/itens ou data/acervo por caminho fixo', async () => {

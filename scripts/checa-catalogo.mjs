@@ -81,8 +81,11 @@ const notas = [];
 const manifesto = leManifesto(RAIZ);
 if (manifesto) {
   fontes['data/current.json (catálogo da geração)'] = catalogoDoManifesto(manifesto);
-  const [doSqlite, motivo] = await catalogoDoSqlite(
-    join(RAIZ, 'data', manifesto.pesquisa ?? ''));
+  // gerações publicadas a partir de uma release do Acervo Oficial não trazem
+  // `pesquisa`: o índice da API vive fora do site. Sem caminho, nada a abrir.
+  const [doSqlite, motivo] = manifesto.pesquisa
+    ? await catalogoDoSqlite(join(RAIZ, 'data', manifesto.pesquisa))
+    : [null, 'o manifesto não declara índice de pesquisa'];
   if (doSqlite) {
     fontes['índice de pesquisa (tabela candidatos)'] = doSqlite;
   } else {
