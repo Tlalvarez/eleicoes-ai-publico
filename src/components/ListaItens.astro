@@ -1,6 +1,8 @@
 ---
 // Lista de itens canônicos (item.schema.json), agrupada por mês.
 // Posts (X/Instagram) podem ser agregados em contadores via `agregaPosts`.
+import { dataBr } from '../lib/compartilhar.mjs';
+
 const { itens, agregaPosts = false } = Astro.props;
 
 const ROTULO = {
@@ -51,7 +53,7 @@ const meses = [...new Set([...porMes.keys(), ...postsPorMes.keys()])]
       <ul>
         {porMes.get(mes).map((i) => (
           <li>
-            {i.data && <small>{i.data} · </small>}
+            {i.data && <small>{dataBr(i.data)} · </small>}
             <a href={i.url} rel="nofollow noopener" target="_blank">{i.titulo ?? i.url}</a>
             <small> — {i.fonte}{ROTULO[i.tipo] ? ` · ${ROTULO[i.tipo]}` : ''}{min(i.duracao_s)}</small>
           </li>
