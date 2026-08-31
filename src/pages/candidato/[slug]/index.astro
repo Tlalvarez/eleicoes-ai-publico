@@ -10,6 +10,13 @@ import imagens from '../../../data/imagens-candidatos.json';
 // precisam ser sempre da MESMA geração
 const resumo = leDados('itens', 'resumo.json');
 
+// link oficial da candidatura, gravado na geração pelo publicador (release-v2);
+// geração antiga sem o arquivo apenas não mostra o link
+let urlTse = null;
+try {
+  urlTse = leDados('itens', 'candidaturas.json')[Astro.params.slug]?.url_tse ?? null;
+} catch { /* geração sem candidaturas.json */ }
+
 export function getStaticPaths() {
   // `getStaticPaths` é hoisted pelo Astro e roda FORA do corpo do
   // frontmatter: a leitura tem de acontecer aqui dentro também
@@ -51,12 +58,13 @@ const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagr
     </figure>
     <div class="perfil-conteudo">
       <h1 id="nome-candidato">{c.nome}</h1>
-      <p class="lead">
-        Nos últimos {resumo.janela_recentes_dias} dias: {voz.length} itens na própria voz
-        ({nPosts} posts, {voz.length - nPosts} vídeos/aparições/discursos/publicações)
-        e {mencoes.length} menções de terceiros. Arquivo total: {c.total.toLocaleString('pt-BR')} itens
-        desde 2021.
-      </p>
+      {urlTse && (
+        <p class="lead">
+          <a href={urlTse} rel="noopener noreferrer" target="_blank">
+            Candidatura oficial no TSE →
+          </a>
+        </p>
+      )}
     </div>
   </section>
 
