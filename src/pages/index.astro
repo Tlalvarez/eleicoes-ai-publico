@@ -316,6 +316,16 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       padding-top: .8rem; border-top: 1px dashed var(--linha);
     }
     .barra-compartilhar .botao { font-size: .88rem; padding: .5rem .85rem; }
+    .botao-icone {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      padding: 0 !important;
+    }
+    .botao-icone svg { width: 20px; height: 20px; display: block; }
+    .botao-icone.copiado { border-color: var(--verde); color: var(--verde); }
     .nota-permalink { flex-basis: 100%; font-size: .82rem; color: var(--tinta-suave); margin: .2rem 0 0; }
     .copia-manual { flex-basis: 100%; margin: .4rem 0 0; }
     .copia-manual textarea { width: 100%; min-height: 7rem; font: inherit; font-size: .85rem; }
@@ -452,11 +462,15 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     }
 
     async function copia(texto, botao, dono) {
-      const original = botao.textContent;
+      const original = botao.firstElementChild;
       try {
         await navigator.clipboard.writeText(texto);
-        botao.textContent = 'Copiado ✓';
-        setTimeout(() => { botao.textContent = original; }, 1800);
+        botao.replaceChildren(icone('ok'));
+        botao.classList.add('copiado');
+        setTimeout(() => {
+          botao.replaceChildren(original);
+          botao.classList.remove('copiado');
+        }, 1800);
       } catch {
         // área de transferência bloqueada (http, permissão negada, navegador
         // antigo): em vez de falhar em silêncio, entrega o texto selecionável
@@ -471,6 +485,51 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         area.value = texto;
         area.select();
       }
+    }
+
+    // ícones da barra de compartilhar: SVG construído nó a nó (nunca por
+    // string de marcação), traço na cor corrente do botão
+    const ICONES = {
+      compartilhar: [['circle', { cx: 18, cy: 5, r: 3 }], ['circle', { cx: 6, cy: 12, r: 3 }],
+        ['circle', { cx: 18, cy: 19, r: 3 }],
+        ['line', { x1: 8.6, y1: 13.5, x2: 15.4, y2: 17.5 }],
+        ['line', { x1: 15.4, y1: 6.5, x2: 8.6, y2: 10.5 }]],
+      texto: [['rect', { x: 9, y: 9, width: 13, height: 13, rx: 2 }],
+        ['path', { d: 'M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1' }]],
+      markdown: [['polyline', { points: '16 18 22 12 16 6' }],
+        ['polyline', { points: '8 6 2 12 8 18' }]],
+      whatsapp: [['path', { d: 'M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 '
+        + '8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 '
+        + '4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z' }]],
+      link: [['path', { d: 'M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71' }],
+        ['path', { d: 'M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71' }]],
+      ok: [['polyline', { points: '20 6 9 17 4 12' }]],
+    };
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    function icone(nome) {
+      const svg = document.createElementNS(SVG_NS, 'svg');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+      svg.setAttribute('stroke', 'currentColor');
+      svg.setAttribute('stroke-width', '2');
+      svg.setAttribute('stroke-linecap', 'round');
+      svg.setAttribute('stroke-linejoin', 'round');
+      svg.setAttribute('aria-hidden', 'true');
+      for (const [tag, attrs] of ICONES[nome]) {
+        const n = document.createElementNS(SVG_NS, tag);
+        for (const [k, v] of Object.entries(attrs)) n.setAttribute(k, String(v));
+        svg.append(n);
+      }
+      return svg;
+    }
+    function botaoIcone(nome, rotulo, aoClicar) {
+      const b = el('button', 'botao secundario botao-icone');
+      b.type = 'button';
+      b.setAttribute('aria-label', rotulo);
+      b.title = rotulo;
+      b.append(icone(nome));
+      b.addEventListener('click', aoClicar);
+      return b;
     }
 
     function botao(rotulo, aoClicar, { secundario = true } = {}) {
@@ -502,31 +561,40 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       const comum = { ...resultado, url, estado: rotuloEstado };
 
       if (navigator.share) {
-        barra.append(botao('Compartilhar', async () => {
+        barra.append(botaoIcone('compartilhar', 'Compartilhar', async () => {
           try {
             await navigator.share(payloadWebShare(comum));
           } catch { /* cancelado pelo usuário: não é erro */ }
         }));
       }
 
-      barra.append(botao('Copiar texto', (ev) => copia(textoCompleto(comum), ev.currentTarget, barra)));
-      barra.append(botao('Copiar Markdown', (ev) => copia(markdownCompleto(comum), ev.currentTarget, barra)));
+      barra.append(botaoIcone('texto', 'Copiar texto',
+        (ev) => copia(textoCompleto(comum), ev.currentTarget, barra)));
+      barra.append(botaoIcone('markdown', 'Copiar Markdown',
+        (ev) => copia(markdownCompleto(comum), ev.currentTarget, barra)));
 
-      const zap = el('a', 'botao secundario', 'WhatsApp');
+      const zap = el('a', 'botao secundario botao-icone');
+      zap.setAttribute('aria-label', 'WhatsApp');
+      zap.title = 'WhatsApp';
+      zap.append(icone('whatsapp'));
       zap.href = linkWhatsApp(resumoLegivel(comum));
       zap.target = '_blank';
       zap.rel = 'noopener noreferrer';
       barra.append(zap);
 
       if (url) {
-        barra.append(botao('Copiar link', (ev) => copia(url, ev.currentTarget, barra)));
+        barra.append(botaoIcone('link', 'Copiar link',
+          (ev) => copia(url, ev.currentTarget, barra)));
       } else {
         // sem identificador não se inventa endereço: um link para uma resposta
         // que o serviço não guardou abriria 404 na cara de quem o recebeu, e
         // voltar ao fragmento devolveria um endereço não autenticado com cara
         // de endereço do site. Dizer que não há link é a saída honesta.
-        const desativado = el('button', 'botao secundario', 'Link indisponível');
+        const desativado = el('button', 'botao secundario botao-icone');
         desativado.type = 'button';
+        desativado.setAttribute('aria-label', 'Link indisponível');
+        desativado.title = 'Link indisponível';
+        desativado.append(icone('link'));
         desativado.disabled = true;
         barra.append(desativado);
         barra.append(el('p', 'nota-permalink',

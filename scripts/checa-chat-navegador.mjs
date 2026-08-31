@@ -343,10 +343,10 @@ try {
 
     // compartilhamento: a URL é a rota pública, curta e persistente
     exige(c, /href="https:\/\/wa\.me\/\?text=[^"]+"/.test(dom), 'não há link de WhatsApp');
-    exige(c, /Copiar texto</.test(dom), 'não há botão de copiar texto');
-    exige(c, /Copiar Markdown</.test(dom), 'não há botão de copiar Markdown');
-    exige(c, /Copiar link</.test(dom), 'não há botão de copiar link');
-    exige(c, !/Copiar permalink</.test(dom),
+    exige(c, /aria-label="Copiar texto"/.test(dom), 'não há botão de copiar texto');
+    exige(c, /aria-label="Copiar Markdown"/.test(dom), 'não há botão de copiar Markdown');
+    exige(c, /aria-label="Copiar link"/.test(dom), 'não há botão de copiar link');
+    exige(c, !/Copiar permalink/.test(dom),
       'o botão ainda se chama "Copiar permalink" — o link agora é uma rota, não uma carga');
     const zap = decodeURIComponent(dom.match(/href="(https:\/\/wa\.me\/\?text=[^"]+)"/)?.[1] ?? '');
     exige(c, zap.includes(`/resposta/${ID_PUBLICO}`),
@@ -431,9 +431,9 @@ try {
     const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('pergunta sem id')}`);
     const c = 'sem id';
 
-    exige(c, /Copiar texto</.test(dom), 'copiar texto sumiu junto com o link');
-    exige(c, /Copiar Markdown</.test(dom), 'copiar Markdown sumiu junto com o link');
-    exige(c, /[Ll]ink indispon[íi]vel/.test(dom),
+    exige(c, /aria-label="Copiar texto"/.test(dom), 'copiar texto sumiu junto com o link');
+    exige(c, /aria-label="Copiar Markdown"/.test(dom), 'copiar Markdown sumiu junto com o link');
+    exige(c, /aria-label="Link indisponível"/.test(dom),
       'a página não diz que não há link para esta resposta');
     exige(c, !dom.includes('#r='),
       'sem identificador a página caiu de volta no fragmento legado');
