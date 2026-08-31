@@ -4,14 +4,14 @@ const mods = import.meta.glob('../content/metodologia.md', { eager: true });
 const doc = Object.values(mods)[0];
 const { Content } = doc;
 ---
-<Base title="Metodologia v1.1">
-  <p class="lead" style="margin-bottom:0">Documento normativo. Nada é analisado fora dele.</p>
+<Base title="Metodologia">
+  <p class="lead" style="margin-bottom:0">Como analisamos os candidatos — explicado de forma simples.</p>
   <div class="prose">
     <Content />
   </div>
   <div class="aviso">
-    Esta versão herda integralmente a v1.0 (congelada) e incorpora o changelog da verificação documental.
-    Alterações posteriores ao registro das candidaturas (15/8) exigem changelog público e justificativa
-    não relacionada a candidato específico.
+    A régua desta análise foi fechada antes do registro das candidaturas. Qualquer mudança
+    a partir daí é anunciada publicamente, com justificativa que não pode ter relação com
+    nenhum candidato específico.
   </div>
 </Base>

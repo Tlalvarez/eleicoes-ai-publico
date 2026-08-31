@@ -1,84 +1,91 @@
 ---
-title: "eleicoes.ai — Metodologia v1.1"
+title: "Como o eleicoes.ai analisa os candidatos"
 ---
-# eleicoes.ai — Metodologia v1.1
+# Como o eleicoes.ai analisa os candidatos
 
-**Julho 2026 | Herda integralmente a v1.0 (congelada) e incorpora o changelog da verificação documental completa (9 documentos primários, 8 casos, 0 inversões de classificação)**
-**Regra de congelamento (inalterada):** esta versão é a régua aplicada aos programas de 2026. Alterações posteriores ao registro das candidaturas (15/8) exigem changelog público e justificativa não relacionada a candidato específico. Nenhum item deste changelog deriva de conveniência a candidato de 2026 — todos foram calibrados em backtests 2002-2022, com precedente documental citado.
+O eleicoes.ai existe para uma coisa: ajudar você a saber **o que cada candidato
+diz, propõe e fez** — com a fonte original ao lado de cada informação, para você
+conferir por conta própria. Esta página explica como fazemos isso.
 
----
+## O que você encontra aqui (e o que não encontra)
 
-## 0. Promessa do método (inalterada)
+**Você encontra:**
 
-Entrega: **direção estrutural** e **padrão provável de execução**, com fontes citadas e régua idêntica para todos. Não entrega: severidade, cronologia ou forma exata de desvios; previsões numéricas; recomendação de voto. Base empírica ampliada: além dos 5 backtests, a verificação documental integral de 9 programas registrados (2002 Lula, 2002 Serra, 2006 Lula, 2014 Dilma, 2014 Aécio, 2018 Bolsonaro, 2018 Haddad, 2022 Lula, 2022 Bolsonaro) confirmou todas as direções estruturais dos dry-runs, com correções de categoria e evidência registradas em changelog — e nenhuma inversão.
+- o que cada candidato **escreveu no plano de governo** registrado na Justiça
+  Eleitoral;
+- o que cada candidato **disse publicamente** nos últimos cinco anos — vídeos,
+  posts, discursos, entrevistas — sempre com o link para a fonte original.
 
-## 1. Objetos de análise (dois, obrigatórios e separados)
+**Você não encontra:**
 
-**1a. O texto** — programa registrado no TSE. Toda classificação cita página/seção.
-**1b. O candidato** — histórico verificável com fonte primária datada.
-**Pesos:** desafiante 50/50; incumbente ou mandato executivo recente **30/70**.
+- recomendação de voto — **nunca** dizemos em quem votar, nem damos nota ou
+  ranking de candidato;
+- previsões — não tentamos adivinhar o futuro;
+- opinião — quando uma informação não tem fonte, ela não entra.
 
-**[v1.1 — item 3 do changelog] Regra de separação de camadas:** classificações do objeto 1a citam exclusivamente o documento registrado. Declarações do candidato e da equipe econômica pertencem ao objeto 1b e não podem sustentar classificação textual. *Precedente calibrador: Aécio-2014 — três evidências do dry-run (preços Petrobras, BNDES, desonerações) estavam no discurso da campanha, não no texto; a direção sobreviveu, a evidência foi reclassificada.* Corolário: o índice de especificidade é calculado só sobre o texto registrado.
+## As duas perguntas que fazemos sobre cada candidato
 
-**[v1.1 — item 7 do changelog] Regra de exaustão textual:** antes de declarar qualquer sinal "fora do texto", ler o documento integral. *Precedentes calibradores, nos dois sentidos: 2018-Bolsonaro (sinal institucional estava no texto e o dry-run não o leu); 2002-Lula (§27 do programa continha literalmente o núcleo da Carta ao Povo — a moderação estava no texto); 2006-Lula (a direção desenvolvimentista do 2º mandato estava textualizada, p. 12).* Quando o registro do programa for posterior a um indicador antecedente (ex.: troca de equipe econômica), o texto é lido como primeiro documento formal da nova orientação.
+**1. O que está escrito no plano?** Lemos o plano de governo inteiro, do começo
+ao fim. Cada conclusão aponta a página de onde saiu.
 
-## 2. Camada 1 — Extração estrutural (6 eixos, classificação fechada)
+**2. O que o candidato fez e disse?** Promessa é uma coisa; histórico é outra.
+Por isso também olhamos o que o candidato fez em cargos públicos e o que
+declarou ao longo do tempo, sempre com data e fonte. Para quem já governa ou
+governou há pouco, o histórico pesa mais que o texto — porque aí existe
+comportamento real para comparar.
 
-| Eixo | Classificações |
-|---|---|
-| Âncora fiscal | aperta / mantém / afrouxa / omisso |
-| Abertura comercial | abre / mantém / fecha / omisso |
-| Previdência & demografia | reforma / **sustentabilidade arrecadatória [v1.1]** / mantém / expande / omisso |
-| Educação | qualidade (metas mensuráveis) / **acesso-gasto com retórica de qualidade [v1.1]** / acesso-gasto / omisso |
-| Estado na economia | reduz / mantém / amplia / omisso |
-| Instituições | **dois subcampos [v1.1] — ver abaixo** |
+## Os seis temas que olhamos em todo plano
 
-**[v1.1 — subcampo institucional, item 1 do changelog, agora adotado]** O eixo Instituições é lido em dois subcampos, sobre o documento inteiro (não só capítulos econômicos):
-(i) **instituições econômicas** — BC, regras fiscais, agências: fortalece / mantém / enfraquece / omisso;
-(ii) **enquadramento do conflito político** — adversário legítimo vs. inimigo a extirpar; FFAA em função constitucional vs. poder moderador/tutelar; ordem vigente a aperfeiçoar vs. refundar. *Teste de simetria concluído: o subcampo capturou sinal real e distinto em oito documentos de todos os campos (tutela militar-cultural em Bolsonaro-2018; refundação constituinte em Haddad-2018; expurgo ideológico em Bolsonaro-2022; restauração constitucional em Lula-2022; conciliação em 2002; polarização eleitoral em 2006; neutralidade competitiva em Aécio-2014 e Serra-2002).*
+Para comparar candidatos de forma justa, lemos todos os planos procurando os
+mesmos seis temas:
 
-**[v1.1 — categoria previdenciária, item 4 do changelog]** "Sustentabilidade arrecadatória": nomear o equilíbrio, prometer receita via emprego/formalização/fiscalização, omitir parâmetros. Fórmula transpartidária verificada em quatro textos (Aécio-2014, Haddad-2018, Lula-2022, Lula-2006 na variante-incumbente). Exibida como categoria própria, distinta de "reforma" e de "omisso".
+1. **Contas públicas** — o plano aperta, mantém ou afrouxa o controle dos
+   gastos do governo?
+2. **Comércio com outros países** — abre, mantém ou fecha a economia?
+3. **Previdência** — enfrenta o problema, empurra com a barriga, ou promete
+   que o dinheiro vai aparecer sozinho?
+4. **Educação** — tem metas concretas de qualidade, ou só promete gastar mais?
+5. **Papel do Estado na economia** — o governo deve fazer mais ou menos coisas
+   diretamente?
+6. **Respeito às instituições** — o plano trata adversários como concorrentes
+   legítimos ou como inimigos? Quer aperfeiçoar as regras do jogo ou
+   refundá-las?
 
-**Regras de sinal (v1.0, inalteradas):** omissão é sinal de primeira classe; custo do sinal [custoso/neutro/barato]; delta entre plataformas; índice de especificidade.
+Em cada tema, a resposta possível é sempre a mesma para todos os candidatos —
+inclusive **"o plano não fala disso"**, que é uma resposta válida e publicada.
 
-**[v1.1 — refinamentos das regras de sinal]**
-- **Item 5 do changelog:** o delta entre plataformas aplica-se também ao eixo institucional — a *remoção* de propostas (ex.: Constituinte, mandatos no STF, entre Haddad-2018 e Lula-2022) é tão informativa quanto sua presença.
-- **Item 6 do changelog:** o índice de especificidade conta exclusivamente **compromissos futuros quantificados e datáveis**; estatísticas retrospectivas de balanço são excluídas. *Precedente: Bolsonaro-2022, numericamente denso e prospectivamente vago — sem a regra, o índice teria viés sistemático pró-incumbente.*
-- **Item 2 do changelog — protocolo de delta intra-campanha:** substituições de programa registradas durante a campanha exigem comparação integral versão a versão, classificação do delta em estrutural (muda eixo) vs. retórico (muda enquadramento) e leitura pelo custo do sinal. *Precedentes: Haddad out/2018 (delta 100% retórico — Constituinte removida, núcleo econômico intacto) e Lula jun→ago/2022 (delta aditivo — aceno ao agro, núcleo intacto).* Para 2026: baixar e versionar todos os programas no ato do registro (15/8) e a cada substituição.
+## Os dois testes
 
-## 3. Camada 2 — Mecanismo + precedente (inalterada)
+**Teste das contas:** somamos o que o plano promete gastar e comparamos com o
+que ele diz ter de dinheiro. Se o plano não traz nenhum número, o resultado é
+"impossível calcular pelo texto" — e isso, por si só, já diz muito.
 
-## 4. Camada 3 — Cenário qualitativo a 20 anos (inalterada)
+**Teste da viabilidade:** um plano pode ser sincero e mesmo assim impossível.
+Medimos o quanto cada proposta depende de mudar a Constituição, de apoio no
+Congresso e de fatores que nenhum presidente controla sozinho.
 
-## 5. Teste A — Consistência aritmética (inalterada na interpretação canônica)
+## Como garantimos que a régua é igual para todos
 
-**[v1.1 — nota operacional]** Vagueza total é veredito: quando o texto não contém um único número prospectivo (Lula-2022), o Teste A registra "custo indeterminável pelo texto; o dimensionamento foi transferido para depois da eleição" — que é informação de primeira classe, não lacuna. Restrições autoimpostas (carga constante, "sem novos impostos") entram na memória de cálculo como agravantes do gap.
+- **Mesma régua, mesma profundidade.** Todo candidato passa pela mesma leitura,
+  pelos mesmos seis temas e pelos mesmos testes — quem tem pouco material
+  aparece com a lacuna dita, nunca escondido.
+- **Método testado no passado.** Antes de usar esta régua em 2026, nós a
+  aplicamos aos planos de governo de 2002 a 2022 — nove documentos — para
+  verificar se ela funcionava e não favorecia nenhum lado. Os erros que
+  encontramos estão registrados publicamente, junto com as correções.
+- **Régua congelada.** O método foi fechado antes do registro das candidaturas.
+  Qualquer mudança a partir daí é anunciada publicamente, com justificativa que
+  não pode ter relação com nenhum candidato específico.
+- **Tudo versionado.** Esta página e todas as análises ficam em um repositório
+  público: cada mudança deixa rastro, com data e autor.
+- **Inteligência artificial, com aviso.** As respostas do site são geradas e
+  revisadas por inteligência artificial, sem revisão humana — e todas dizem
+  isso. Transcrição automática de vídeo pode conter erros; por isso toda
+  citação vem com o link para você conferir na fonte.
 
-## 6. Teste B — Executabilidade (inalterada: coalizão × restrição de realidade × dependência de PEC × patrocínio próprio do Congresso)
+## Quer os detalhes técnicos?
 
-## 7. Módulo incumbente (inalterada; nota v1.1)
-
-**[v1.1]** O texto de reeleição segue o padrão-incumbente verificado nas duas direções ideológicas (Lula-2006, Bolsonaro-2022): balanço retrospectivo denso, compromisso prospectivo raro. O confronto obrigatório é texto registrado × comportamento revelado datado pré-registro (ex.: omissão do teto de gastos por quem o rompeu, Bolsonaro-2022 — o silêncio fiscal mais informativo da série). Para 2026: PLOA 2027 (agosto) confrontado com o programa registrado do incumbente.
-
-## 8. Salvaguardas de neutralidade (inalteradas)
-
-## 9. Pipeline de aplicação 2026 (inalterada; acrescenta versionamento de programas do item 2 do changelog)
-
-## 10. Registro de proveniência (atualizado)
-
-A verificação documental exigida pela v1.0 §10 foi concluída em 26/07/2026 para 9 documentos (8 casos + Carta ao Povo), todos com texto integral e proveniência registrada nos anexos em `/verificacao/`. Placar consolidado: **zero inversões**; correções de categoria/evidência registradas caso a caso. Pendências: conferência cruzada dos espelhos de imprensa contra os PDFs oficiais do TSE (lista de download manual no relatório de sessão); Alckmin-2006.
-
----
-
-## CHANGELOG v1.0 → v1.1 (consolidado)
-
-| # | Ajuste | Caso calibrador | Justificativa (não relacionada a 2026) |
-|---|---|---|---|
-| 1 | Subcampo institucional (i) econômicas / (ii) enquadramento do conflito político; leitura do documento inteiro | Bolsonaro-2018; simetria confirmada em 8 docs | Sinais institucionais aparecem como enquadramento, não como proposta |
-| 2 | Protocolo de delta intra-campanha (versão a versão; estrutural vs. retórico) | Haddad out/2018; Lula ago/2022 | A substituição do texto é, ela própria, sinal |
-| 3 | Separação de camadas: texto (1a) não pode citar discurso de campanha (1b) | Aécio-2014 | Contaminação de camadas infla a leitura textual |
-| 4 | Categoria "sustentabilidade previdenciária arrecadatória" | Aécio-2014, Haddad-2018, Lula-2022, Lula-2006 | Fórmula transpartidária recorrente exige categoria própria |
-| 5 | Delta entre plataformas estendido ao eixo institucional | Haddad-2018 → Lula-2022 | Remoção de propostas é sinal datável |
-| 6 | Índice de especificidade: só compromissos prospectivos quantificados | Bolsonaro-2022 | Números retrospectivos geram viés pró-incumbente |
-| 7 | Exaustão textual antes de declarar sinal "fora do texto"; texto pós-indicador lido como documento da nova orientação | 2002-Lula, 2006-Lula (e espelho 2018) | Os textos são mais informativos que a memória pública deles |
-| 8 | Categoria educacional intermediária "acesso-gasto com retórica de qualidade" (formalização; criada na verificação 2014) | Dilma-2014; testada em Haddad-2018, Aécio-2014 (espelho), 2002, 2006 | A retórica de qualidade sem metas é padrão dominante e precisa de célula própria |
+A versão completa e técnica da metodologia (v1.1), com as categorias formais,
+os testes de calibração de 2002–2022 e o registro de mudanças, está no
+[histórico deste repositório](https://github.com/Tlalvarez/eleicoes-ai-publico/commits/main/src/content/metodologia.md)
+e nos [anexos de verificação](/verificacao) publicados neste site.
