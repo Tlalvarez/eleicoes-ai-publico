@@ -99,7 +99,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         </a>
         <p class="resumo-candidato">
           {c.total > 0
-            ? `${c.total.toLocaleString('pt-BR')} itens registrados (${c.recentes} nos últimos ${resumo.janela_recentes_dias} dias)`
+            ? `${c.total.toLocaleString('pt-BR')} itens registrados`
             : 'Sem itens registrados no período'}
         </p>
         <p class="credito-retrato">
