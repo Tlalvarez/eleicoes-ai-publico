@@ -1,18 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
 import { leDados } from '../lib/dados.mjs';
-import { candidatosDaHome, chipsDaHome } from '../lib/home.mjs';
+import { candidatosDaHome } from '../lib/home.mjs';
+import imagens from '../data/imagens-candidatos.json';
 
 // os dados saem do MANIFESTO da geração ativa (data/current.json),
 // nunca de um caminho fixo: itens, acervo e índice de pesquisa
 // precisam ser sempre da MESMA geração
 const resumo = leDados('itens', 'resumo.json');
 
-// Cards e sugestões saem do resumo gerado pelo harness, no mesmo molde e na
-// mesma ordem: uma home que citasse cinco nomes escritos à mão quebraria a
-// cobertura simétrica logo na primeira página.
+// Os cards saem do resumo gerado pelo harness: uma home que citasse cinco
+// nomes escritos à mão quebraria a cobertura simétrica logo na primeira página.
 const candidatos = candidatosDaHome(resumo);
-const chips = chipsDaHome(resumo);
+
+// os mesmos cards da página /candidato: retrato com manifesto de direitos,
+// contagem de itens e crédito — cobertura simétrica, nenhum nome escrito à mão
+const imagensPorSlug = new Map(imagens.candidates.map((imagem) => [imagem.candidate_slug, imagem]));
+const cards = candidatos.map(({ slug, nome }) => {
+  const imagem = imagensPorSlug.get(slug);
+  if (!imagem) throw new Error(`Retrato sem manifesto de direitos: ${slug}`);
+  return { slug, nome, ...resumo.candidatos[slug], imagem };
+});
 
 // Endereço do serviço de evidências. Sem `PUBLIC_PESQUISA_API`, o padrão é a
 // MESMA ORIGEM ('') — o cliente pede `/api/conversa` relativo, e quem publica
@@ -63,11 +71,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       </p>
     </form>
 
-    <ul class="sugestoes" id="sugestoes" aria-label="Perguntas de exemplo">
-      {chips.map((c) => (
-        <li><a class="sugestao" href={c.href} data-pergunta={c.pergunta}>{c.pergunta}</a></li>)
-      )}
-    </ul>
   </section>
 
   <noscript>
@@ -81,13 +84,32 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   </noscript>
 
   <h2>Quem está no acervo</h2>
-  <p>
-    A mesma varredura, a mesma régua e o mesmo tratamento para todos — inclusive para quem
-    ainda não tem material coletado, que aparece aqui com a lacuna declarada.
-  </p>
-  <ul class="faixa-candidatos">
-    {candidatos.map(({ slug, nome }) => (
-      <li><a href={`/candidato/${slug}`}>{nome}</a></li>
+  <ul class="grade-candidatos">
+    {cards.map((c) => (
+      <li class="cartao-candidato">
+        <a class="retrato-link" href={`/candidato/${c.slug}`}>
+          <img
+            src={c.imagem.image_path}
+            width="161"
+            height="225"
+            loading="lazy"
+            alt=""
+          />
+          <span class="nome-candidato">{c.nome}</span>
+        </a>
+        <p class="resumo-candidato">
+          {c.total > 0
+            ? `${c.total.toLocaleString('pt-BR')} itens registrados (${c.recentes} nos últimos ${resumo.janela_recentes_dias} dias)`
+            : 'Sem itens registrados no período'}
+        </p>
+        <p class="credito-retrato">
+          Foto: <a href={c.imagem.source_page}>{c.imagem.public_credit}</a> ·
+          {c.imagem.license_url
+            ? <a href={c.imagem.license_url}>{c.imagem.license}</a>
+            : c.imagem.license}<br />
+          {c.imagem.public_modification_note}
+        </p>
+      </li>
     ))}
   </ul>
   <p class="depois-da-faixa">
@@ -132,6 +154,62 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       border-bottom-width: 2px; border-radius: 4px; padding: 0 .3em; background: var(--cartao);
     }
     .depois-da-faixa { margin-top: 1rem; }
+    /* os mesmos cards da página /candidato */
+    .grade-candidatos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 161px);
+      justify-content: start;
+      gap: 1rem;
+      padding: 0;
+      margin: 1.5rem 0;
+      list-style: none;
+    }
+    .cartao-candidato {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      border: 1px solid var(--linha);
+      border-radius: var(--raio);
+      background: var(--cartao);
+      box-shadow: var(--sombra-leve);
+    }
+    .retrato-link {
+      color: var(--tinta);
+      text-decoration: none;
+    }
+    .retrato-link img {
+      display: block;
+      width: 100%;
+      margin: 0;
+      aspect-ratio: 161 / 225;
+      object-fit: cover;
+      background: var(--realce);
+    }
+    .nome-candidato {
+      display: block;
+      padding: .8rem 1rem .25rem;
+      font-family: var(--fonte-titulo);
+      font-size: 1.08rem;
+      font-weight: 750;
+      line-height: 1.2;
+    }
+    .retrato-link:hover .nome-candidato { color: var(--acento); text-decoration: underline; }
+    .resumo-candidato {
+      flex: 1;
+      margin: 0;
+      padding: .25rem 1rem .75rem;
+      color: var(--tinta-suave);
+      font-size: .9rem;
+    }
+    .credito-retrato {
+      margin: 0;
+      padding: .65rem 1rem .8rem;
+      border-top: 1px solid var(--linha);
+      color: var(--tinta-suave);
+      font-size: .7rem;
+      line-height: 1.35;
+    }
     @media (max-width: 520px) {
       .acoes-envio > .botao { flex: 1 1 100%; }
     }
@@ -271,7 +349,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     const estado = $('estado');
     const estadoTexto = $('estado-texto');
     const cancelar = $('cancelar');
-    const sugestoes = $('sugestoes');
 
     // histórico, requisição em voo e a regra de época moram em sessao-conversa:
     // aqui só se desenha o que ela devolve
@@ -527,7 +604,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       escondeEstado();
       enviar.disabled = false;
       nova.hidden = true;
-      sugestoes.hidden = false;
       // conversa nova sai da página da resposta e volta à raiz
       const pagina = idDoCaminho(location.pathname) ? '/' : location.pathname;
       history.replaceState(null, '', pagina);
@@ -537,7 +613,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       const conteudo = String(texto ?? '').trim();
       if (!conteudo) return;
 
-      sugestoes.hidden = true;
       nova.hidden = false;
       entrada.value = '';
       enviar.disabled = true;
@@ -589,22 +664,12 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       entrada.focus();
     });
 
-    // as sugestões continuam sendo links reais (`/?q=…`): sem JavaScript elas
-    // abrem a home com a pergunta; com JavaScript, disparam ali mesmo
-    sugestoes.addEventListener('click', (ev) => {
-      const alvo = ev.target.closest('.sugestao');
-      if (!alvo) return;
-      ev.preventDefault();
-      envia(alvo.dataset.pergunta);
-    });
-
     // ------------------------------------------------------ abertura da página
 
     (async () => {
       const compartilhado = await estadoDoFragmento(location.hash);
       if (compartilhado) {
-        sugestoes.hidden = true;
-        nova.hidden = false;
+          nova.hidden = false;
         if (compartilhado.pergunta) adicionaPergunta(compartilhado.pergunta);
         // o conteúdo do fragmento NÃO entra no histórico da sessão: quem monta
         // o link escolheria, com isso, o que o serviço recebe como turno
@@ -630,8 +695,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
             mostraEstado('Esta resposta não foi encontrada. Faça a pergunta abaixo.', { erro: true });
             return;
           }
-          sugestoes.hidden = true;
-          nova.hidden = false;
+              nova.hidden = false;
           if (guardada.pergunta) adicionaPergunta(guardada.pergunta);
           adicionaResposta(guardada);
           sessao.retoma({ pergunta: guardada.pergunta, texto: guardada.texto });

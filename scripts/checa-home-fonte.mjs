@@ -46,15 +46,6 @@ if (/^\s*import\s+\w+\s+from\s+['"][^'"]*data\/itens\//m.test(bloco)) {
   falhas.push('index.astro importa data/itens por caminho fixo — fora do manifesto da geração');
 }
 
-// 2. as sugestões têm de vir do mesmo resumo, pelo molde único de src/lib/home.mjs
-if (!/^\s*import\s*\{[^}]*\bchipsDaHome\b[^}]*\}\s*from\s*['"][^'"]*lib\/home\.mjs['"]/m.test(bloco)) {
-  falhas.push('index.astro não importa chipsDaHome de src/lib/home.mjs — as sugestões '
-    + 'não têm de onde vir');
-}
-if (/\bconst\s+chips\s*=\s*\[/.test(bloco)) {
-  falhas.push('index.astro traz uma lista de sugestões escrita à mão — elas não vêm do resumo.json');
-}
-
 // 3. nenhum slug/nome de candidato escrito à mão na página
 for (const [slug, c] of candidatos) {
   if (bloco.includes(`'${slug}'`) || bloco.includes(`"${slug}"`)) {
@@ -141,5 +132,5 @@ if (falhas.length) {
   console.error('FALHOU (origem):\n  ' + falhas.join('\n  '));
   process.exit(1);
 }
-console.log(`OK (origem): a home é o chat e deriva candidatos e sugestões dos `
+console.log(`OK (origem): a home é o chat e deriva os candidatos dos `
   + `${candidatos.length} candidatos de data/itens/resumo.json`);

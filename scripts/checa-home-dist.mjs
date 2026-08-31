@@ -21,7 +21,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 
 import { leDados } from '../src/lib/dados.mjs';
-import { chipsDaHome } from '../src/lib/home.mjs';
 import { estadoDoSite } from '../src/lib/release.mjs';
 import { leManifesto } from '../src/lib/dados.mjs';
 
@@ -53,29 +52,6 @@ for (const slug of naHome) {
   if (!resumo.candidatos[slug]) falhas.push(`home linka '${slug}', que não está no resumo.json`);
 }
 
-// sugestões: uma por candidato, no molde único, e nenhuma a mais
-const sugestoesNoHtml = [...html.matchAll(
-  /<a[^>]*class="sugestao"[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/g)]
-  .map((m) => ({ href: desescapa(m[1]), texto: desescapa(m[2]).trim() }));
-const esperadas = chipsDaHome(resumo);
-
-for (const c of esperadas) {
-  const achado = sugestoesNoHtml.find((x) => x.texto === c.pergunta);
-  if (!achado) falhas.push(`candidato '${c.slug}' não tem sugestão na home (esperado: "${c.pergunta}")`);
-  else if (achado.href !== c.href) {
-    falhas.push(`sugestão de '${c.slug}' aponta para ${achado.href}, não para ${c.href}`);
-  }
-}
-const perguntas = new Set(esperadas.map((c) => c.pergunta));
-for (const x of sugestoesNoHtml) {
-  if (!perguntas.has(x.texto)) {
-    falhas.push(`sugestão "${x.texto}" não sai do resumo.json — formulação escrita à mão`);
-  }
-}
-if (sugestoesNoHtml.length !== esperadas.length) {
-  falhas.push(`a home tem ${sugestoesNoHtml.length} sugestões para ${esperadas.length} `
-    + 'candidatos — cobertura assimétrica');
-}
 
 // ------------------------------------------------------------------ o chat
 
@@ -147,5 +123,5 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (dist): a home construída é o chat, lista os ${candidatos.length} candidatos `
-  + `de data/itens/resumo.json (${candidatos.length} cards, ${sugestoesNoHtml.length} sugestões) `
+  + `de data/itens/resumo.json (${candidatos.length} cards) `
   + `e não afirma oficialidade (estado dos dados: ${estado.rotulo})`);

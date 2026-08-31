@@ -363,7 +363,11 @@ try {
     // segurança: o texto hostil continua sendo texto
     const s = 'segurança';
     exige(s, !/href="javascript:/i.test(dom), 'um href javascript: chegou ao DOM');
-    exige(s, !/<img\b/i.test(dom), 'a resposta injetou um <img> no DOM');
+    // a home tem <img> legítimos (os cards de candidatos); o que não pode
+    // existir é o ELEMENTO hostil — e o texto injetado tem de seguir texto
+    exige(s, !/<img\b[^>]*onerror/i.test(dom), 'a resposta injetou um <img onerror> no DOM');
+    exige(s, dom.includes('&lt;img src=x onerror=alert(1)&gt;'),
+      'o <img> hostil não aparece como TEXTO escapado na resposta');
     exige(s, !/<script>alert\(2\)<\/script>/.test(dom), 'a resposta injetou um <script>');
     exige(s, dom.includes('clique aqui'),
       'o rótulo do link recusado sumiu — o leitor perde a referência');

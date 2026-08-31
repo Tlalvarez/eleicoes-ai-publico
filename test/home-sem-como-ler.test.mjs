@@ -45,7 +45,6 @@ test('a home não deixa estilo órfão do quadro', () => {
 
 test('o chat, os chips e "Quem está no acervo" continuam na home', () => {
   assert.match(fonte, /id="form-chat"/, 'o formulário do chat sumiu da home');
-  assert.match(fonte, /id="sugestoes"/, 'os chips de exemplo sumiram da home');
   assert.match(fonte, /Quem está no acervo/, 'a seção "Quem está no acervo" sumiu da home');
-  assert.match(fonte, /faixa-candidatos/, 'a faixa de candidatos sumiu da home');
+  assert.match(fonte, /grade-candidatos/, 'os cards de candidatos sumiram da home');
 });
