@@ -26,7 +26,7 @@ test('lista de candidatos usa cards com foto, texto e crédito', () => {
   assert.match(pagina, /class="grade-candidatos"/);
   assert.match(pagina, /class="cartao-candidato"/);
   assert.match(pagina, /loading="lazy"[\s\S]*?alt=""/);
-  assert.match(pagina, /public_modification_note/);
+  assert.doesNotMatch(pagina, /public_modification_note/);   // a nota fica no manifesto, não no card
   assert.match(pagina, /width="161"[\s\S]*height="225"/);
   assert.match(pagina, /aspect-ratio: 161 \/ 225/);
   assert.match(pagina, /grid-template-columns: repeat\(auto-fill, 161px\)/);

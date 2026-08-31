@@ -106,8 +106,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
           Foto: <a href={c.imagem.source_page}>{c.imagem.public_credit}</a> ·
           {c.imagem.license_url
             ? <a href={c.imagem.license_url}>{c.imagem.license}</a>
-            : c.imagem.license}<br />
-          {c.imagem.public_modification_note}
+            : c.imagem.license}
         </p>
       </li>
     ))}
