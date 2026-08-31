@@ -254,7 +254,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     import { estadoDaResposta } from '../lib/release.mjs';
     import { estadoDoFragmento } from '../lib/permalink.mjs';
     import {
-      PARAMETRO_PAGINA, caminhoPagina, urlDeCompartilhamento,
+      PARAMETRO_PAGINA, caminhoPagina, idDoCaminho, urlDeCompartilhamento,
     } from '../lib/resposta-publica.mjs';
     import {
       dataBr, linkWhatsApp, markdownCompleto, payloadWebShare, resumoLegivel,
@@ -528,7 +528,9 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       enviar.disabled = false;
       nova.hidden = true;
       sugestoes.hidden = false;
-      history.replaceState(null, '', location.pathname);
+      // conversa nova sai da página da resposta e volta à raiz
+      const pagina = idDoCaminho(location.pathname) ? '/' : location.pathname;
+      history.replaceState(null, '', pagina);
     }
 
     async function envia(texto) {
@@ -559,7 +561,8 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         // a primeira resposta guardada vira a página desta conversa: o endereço
         // passa a ser /?resposta=<id> e o resto da conversa acontece nele
         const pagina = caminhoPagina(r.resultado.compartilhamento_id);
-        if (pagina && !new URLSearchParams(location.search).get(PARAMETRO_PAGINA)) {
+        if (pagina && !idDoCaminho(location.pathname)
+            && !new URLSearchParams(location.search).get(PARAMETRO_PAGINA)) {
           history.replaceState(null, '', pagina);
         }
         li.scrollIntoView({ block: 'start', behavior: 'smooth' });
@@ -617,7 +620,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       const parametros = new URLSearchParams(location.search);
       // /?resposta=<id>: a página de uma conversa. A pergunta e a resposta vêm
       // do armazém do serviço — iguais para todo mundo — e a conversa segue daqui.
-      const idPagina = parametros.get(PARAMETRO_PAGINA);
+      const idPagina = idDoCaminho(location.pathname) ?? parametros.get(PARAMETRO_PAGINA);
       if (idPagina) {
         mostraEstado('Abrindo a resposta compartilhada…');
         try {

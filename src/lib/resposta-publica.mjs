@@ -72,12 +72,19 @@ export function urlPublica(origem, id) {
   return base && caminho ? base + caminho : null;
 }
 
-/** Parâmetro da home que abre uma resposta guardada e continua a conversa nela. */
+/** Parâmetro legado da home (`/?resposta=<id>`) — links antigos continuam abrindo. */
 export const PARAMETRO_PAGINA = 'resposta';
 
-/** `/?resposta=<id>` — a página da conversa, servida pela própria home. */
+/** `/resposta/<id>` — a página da conversa. Em produção a Function serve o app
+ * do chat nessa rota; em desenvolvimento, o middleware do Astro reescreve. */
 export function caminhoPagina(id) {
-  return ehIdPublico(id) ? `/?${PARAMETRO_PAGINA}=${id}` : null;
+  return caminhoResposta(id);
+}
+
+/** O id público embutido num caminho `/resposta/<id>`, ou `null`. */
+export function idDoCaminho(pathname) {
+  const m = typeof pathname === 'string' && pathname.match(/^\/resposta\/([^/]+)$/);
+  return m && ehIdPublico(m[1]) ? m[1] : null;
 }
 
 /** A URL absoluta da página da conversa, ou `null`. */
@@ -90,7 +97,7 @@ export function urlPagina(origem, id) {
 /**
  * O endereço que o site oferece para compartilhar um resultado.
  *
- * É a página da conversa (`/?resposta=<id>`): quem abre vê a pergunta e a
+ * É a página da conversa (`/resposta/<id>`): quem abre vê a pergunta e a
  * resposta guardadas pelo serviço — iguais para todos — e pode continuar
  * perguntando ali. Devolve `null` quando a resposta não tem identificador
  * público — e isso é uma resposta legítima, não uma falha. Inventar um
