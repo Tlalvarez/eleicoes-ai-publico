@@ -83,6 +83,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     </div>
   </noscript>
 
+  <section class="secao-catalogo">
   <h2>Quem está no acervo</h2>
   <ul class="grade-candidatos">
     {cards.map((c) => (
@@ -114,6 +115,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   <p class="depois-da-faixa">
     <a href="/acervo">Todo o acervo, por candidato e por fonte →</a>
   </p>
+  </section>
 
   <style>
     .hero-home { margin-bottom: 1.6rem; }
@@ -219,6 +221,24 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
        elementos criados por script NÃO recebem o atributo de escopo do Astro.
        Estilo escopado simplesmente não casaria com eles. */
     .chat { margin: 1.5rem 0 2rem; }
+
+    /* MODO CONVERSA (após a primeira pergunta): a página é só o diálogo.
+       As mensagens rolam com a página; o compositor fica fixado embaixo. */
+    body.modo-conversa .hero-home,
+    body.modo-conversa .secao-catalogo { display: none; }
+    body.modo-conversa main { padding-bottom: 15rem; }
+    body.modo-conversa .form-chat {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(100% - 2.5rem, calc(var(--largura) - 2.5rem));
+      margin: 0;
+      z-index: 40;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      box-shadow: 0 -8px 28px rgba(23, 54, 93, .16);
+    }
     .conversa { list-style: none; padding: 0; margin: 0; }
     .turno { margin: 0 0 1.5rem; }
 
@@ -378,11 +398,15 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     // ------------------------------------------------------------ conversa
 
     function adicionaPergunta(texto) {
+      // UX de conversa: com a primeira pergunta a página vira só o diálogo —
+      // hero e catálogo somem, o compositor fixa embaixo e as mensagens rolam
+      document.body.classList.add('modo-conversa');
       const li = el('li', 'turno turno-pergunta');
       li.append(el('p', 'marca-pergunta', 'Pergunta'));
       const p = el('p', 'texto-pergunta', texto);
       li.append(p);
       conversa.append(li);
+      li.scrollIntoView({ block: 'start', behavior: 'smooth' });
       return li;
     }
 
@@ -598,6 +622,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       // resposta da conversa anterior chegava depois e era anexada aqui, sem a
       // pergunta que a gerou.
       sessao.reinicia();
+      document.body.classList.remove('modo-conversa');
       turnos = 0;
       conversa.textContent = '';
       escondeEstado();
