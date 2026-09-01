@@ -78,16 +78,32 @@ try {
 }
 
 const notas = [];
+const falhasSqlite = [];
 const manifesto = leManifesto(RAIZ);
 if (manifesto) {
-  fontes['data/current.json (catálogo da geração)'] = catalogoDoManifesto(manifesto);
+  const doManifesto = catalogoDoManifesto(manifesto);
+  if (Object.keys(doManifesto).length) {
+    fontes['data/current.json (catálogo da geração)'] = doManifesto;
+  } else {
+    notas.push('current.json (v2) não declara catálogo — a régua é o canônico e os derivados');
+  }
   // gerações publicadas a partir de uma release do Acervo Oficial não trazem
   // `pesquisa`: o índice da API vive fora do site. Sem caminho, nada a abrir.
   const [doSqlite, motivo] = manifesto.pesquisa
     ? await catalogoDoSqlite(join(RAIZ, 'data', manifesto.pesquisa))
     : [null, 'o manifesto não declara índice de pesquisa'];
   if (doSqlite) {
-    fontes['índice de pesquisa (tabela candidatos)'] = doSqlite;
+    // o índice da release v2 é multi-cargo (presidente + governador + senador):
+    // a exigência aqui é que TODO canônico exista nele — extras são de outros
+    // cargos, e o nome lá é o do registro oficial (caixa alta), não o editorial
+    const canonicos = fontes['src/data/candidatos.json (canônico)'];
+    const faltam = Object.keys(canonicos).filter((slug) => !(slug in doSqlite));
+    if (faltam.length) {
+      falhasSqlite.push(`índice de pesquisa sem os canônicos: ${faltam.join(', ')}`);
+    } else {
+      notas.push(`índice de pesquisa: ${Object.keys(doSqlite).length} candidaturas `
+        + '(multi-cargo); os 13 canônicos estão presentes');
+    }
   } else {
     notas.push(`índice de pesquisa NÃO conferido diretamente: ${motivo} `
       + '(o catálogo da geração, que o harness valida contra o SQLite antes de '
@@ -98,7 +114,7 @@ if (manifesto) {
     + 'e não há catálogo de geração nem índice de pesquisa a conferir');
 }
 
-const falhas = comparaCatalogos(fontes);
+const falhas = [...comparaCatalogos(fontes), ...falhasSqlite];
 
 if (falhas.length) {
   console.error('FALHOU (catálogo):\n  ' + falhas.join('\n  '));

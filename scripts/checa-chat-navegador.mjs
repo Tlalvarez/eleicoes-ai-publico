@@ -332,8 +332,10 @@ try {
       'os bullets com negrito do formato "Candidatos" não foram renderizados');
     exige(c, dom.includes('<hr>'), 'o separador --- não virou <hr>');
     exige(c, /<em>inferência<\/em>/.test(dom), 'o itálico não foi renderizado');
-    exige(c, /<sup><a href="#fonte-1-1" class="marcador-fonte">\[S1\]<\/a><\/sup>/.test(dom),
-      'o marcador [S1] não virou âncora para a fonte');
+    exige(c, /<a class="fonte-chip" href="https:\/\/exemplo\.org\/video-um"[^>]*>vídeo 13\/08\/2026<\/a>/.test(dom),
+      'o marcador [S1] não virou chip legível com link direto para a fonte');
+    exige(c, /<summary[^>]*>Ver as 2 fontes desta resposta<\/summary>/.test(dom),
+      'a lista de fontes não está recolhida num <details>');
     exige(c, dom.includes('id="fonte-1-1"') && dom.includes('id="fonte-1-2"'),
       'as fontes não receberam as âncoras que os marcadores apontam');
     exige(c, dom.includes('https://exemplo.org/video-um'), 'o endereço da fonte 1 não aparece');

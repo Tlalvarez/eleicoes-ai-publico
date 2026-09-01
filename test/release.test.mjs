@@ -107,10 +107,16 @@ test('resposta que se declara oficial sem identificador continua prévia', () =>
 // o repositório de hoje
 // --------------------------------------------------------------------------
 
-test('nesta branch o site está em prévia — e o teste falha no dia em que mudar sem querer', () => {
-  const e = estadoDoSite(leManifesto());
+test('o estado do site segue o ponteiro publicado — prévia sem release, oficial com ela', () => {
+  const m = leManifesto();
+  const e = estadoDoSite(m);
 
-  assert.equal(e.oficial, false,
-    'apareceu uma release oficial declarada no worktree — confira se é intencional');
-  assert.equal(e.rotulo, ROTULO_PREVIA);
+  if (m?.release_status === 'oficial' && typeof m?.release_id === 'string' && m.release_id
+      && m?.geracao) {
+    assert.equal(e.oficial, true);
+    assert.equal(e.rotulo, `Release oficial ${m.release_id}`);
+  } else {
+    assert.equal(e.oficial, false);
+    assert.equal(e.rotulo, ROTULO_PREVIA);
+  }
 });

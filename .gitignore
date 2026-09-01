@@ -23,3 +23,8 @@ data/geracoes/
 # pois indica retenção incompleta e precisa aparecer como falha alta.
 data/aposentada-*
 data/quarentena-*
+
+# releases v2 do Acervo (artefatos imutáveis copiados do pipeline; ~64 MB cada)
+# current.json e release.json ficam FORA do ignore de propósito: são o rastro
+# auditável de qual release está publicada e de quem a inspecionou
+data/releases/

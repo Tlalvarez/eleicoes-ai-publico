@@ -311,6 +311,37 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     }
     .rodape-resposta p { margin: 0 0 .25rem; }
 
+    .marcador-fonte {
+      font-size: .72em;
+      text-decoration: none;
+      color: var(--azul-claro, var(--acento));
+      padding: 0 .12em;
+    }
+    .marcador-fonte:hover { text-decoration: underline; }
+    .fonte-chip {
+      display: inline-block;
+      font-size: .74em;
+      line-height: 1.5;
+      background: var(--realce);
+      border: 1px solid var(--linha);
+      border-radius: 999px;
+      padding: 0 .6em;
+      margin: 0 .18em;
+      text-decoration: none;
+      color: var(--acento-forte);
+      white-space: nowrap;
+      vertical-align: baseline;
+    }
+    .fonte-chip:hover { border-color: var(--azul-claro); text-decoration: underline; }
+    .fontes > details > summary {
+      cursor: pointer;
+      font-family: var(--fonte-titulo);
+      font-weight: 700;
+      font-size: .92rem;
+      color: var(--acento);
+      padding: .35rem 0;
+    }
+    .fontes > details > summary:hover { text-decoration: underline; }
     .barra-compartilhar {
       display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .9rem;
       padding-top: .8rem; border-top: 1px dashed var(--linha);
@@ -448,8 +479,8 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
 
       const ressalva = el('span', 'ressalva');
       if (cit.estatuto === 3) {
-        ressalva.classList.add('nao-conferido');
-        ressalva.textContent = '⚠ transcrição/legenda automática — pode conter erros; confira na fonte';
+        // o aviso de transcrição automática é ÚNICO, no topo da lista de
+        // fontes — repetido em cada item ele vira ruído, não informação
       } else if (cit.estatuto === 4) {
         ressalva.textContent = '✓ áudio conferido por uma segunda transcrição';
       } else if (cit.estatuto === 1) {
@@ -632,14 +663,66 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         nivelBase: 1,
         ancora: (n) => `#fonte-${indice}-${n}`,
       }));
+
+      // a referência fica VISÍVEL onde é mencionada: o [Sn] vira um chip
+      // legível (tipo e data da fonte) que abre direto a fonte original.
+      // Sem endereço registrado, o marcador continua apontando para a lista.
+      const TIPO_CHIP = {
+        video: 'vídeo', aparicao: 'entrevista', discurso: 'discurso',
+        'post-x': 'post no X', 'post-instagram': 'Instagram',
+        artigo: 'texto', 'pagina-arquivada': 'página', mencao: 'menção',
+        // tipos brutos do índice oficial (release-v2)
+        youtube: 'vídeo', x: 'post no X', instagram: 'Instagram',
+        programa: 'plano de governo', senado: 'discurso',
+        sites: 'texto', wayback: 'página',
+      };
+      const porMarcador = new Map();
+      for (const cit of resultado.citacoes) {
+        for (const n of cit.marcadores) porMarcador.set(n, cit);
+      }
+      for (const a of corpo.querySelectorAll('a.marcador-fonte')) {
+        const n = Number((a.textContent.match(/\[S(\d+)\]/) || [])[1]);
+        const cit = porMarcador.get(n);
+        if (!cit || !cit.url) continue;
+        const chip = el('a', 'fonte-chip',
+          `${TIPO_CHIP[cit.tipo] ?? cit.tipo ?? 'fonte'} ${dataBr(cit.data)}`);
+        chip.href = cit.url;
+        chip.target = '_blank';
+        chip.rel = 'noopener noreferrer nofollow';
+        chip.title = [cit.nome, cit.rotulo, dataBr(cit.data)].filter(Boolean).join(' — ');
+        const sup = a.closest('sup') ?? a;
+        sup.replaceWith(chip);
+      }
+
+      // títulos do formato fixo em palavras comuns (mapeamento exato, só
+      // apresentação — o texto da resposta não é alterado em mais nada)
+      const AMIGAVEL = new Map([
+        ['Evidência', 'O que encontramos'],
+        ['Inferência', 'Nossa leitura'],
+        ['Lacunas', 'O que não dá para afirmar'],
+      ]);
+      for (const h of corpo.querySelectorAll('h2, h3, h4')) {
+        const alvo = AMIGAVEL.get(h.textContent.trim());
+        if (alvo) h.textContent = alvo;
+      }
+      for (const forte of corpo.querySelectorAll('strong')) {
+        if (forte.textContent.trim() === 'Conclusão:') forte.textContent = 'Resumindo:';
+      }
       artigo.append(corpo);
 
       if (resultado.citacoes.length) {
         const sec = el('section', 'fontes');
-        sec.append(el('h3', null, `Fontes citadas (${resultado.citacoes.length})`));
+        const detalhes = el('details');
+        detalhes.append(el('summary', null,
+          `Ver as ${resultado.citacoes.length} fontes desta resposta`));
+        if (resultado.citacoes.some((cit) => cit.estatuto === 3)) {
+          detalhes.append(el('p', 'ressalva nao-conferido',
+            '⚠ transcrição/legenda automática — pode conter erros; confira na fonte'));
+        }
         const ol = el('ol');
         for (const cit of resultado.citacoes) ol.append(itemDeFonte(cit, indice));
-        sec.append(ol);
+        detalhes.append(ol);
+        sec.append(detalhes);
         artigo.append(sec);
       } else {
         artigo.append(el('p', 'aviso-turno',
