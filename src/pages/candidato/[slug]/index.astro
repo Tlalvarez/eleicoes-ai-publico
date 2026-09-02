@@ -52,8 +52,7 @@ const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagr
         Foto: <a href={imagem.source_page}>{imagem.public_credit}</a> ·
         {imagem.license_url
           ? <a href={imagem.license_url}>{imagem.license}</a>
-          : imagem.license}<br />
-        {imagem.public_modification_note}
+          : imagem.license}
       </figcaption>
     </figure>
     <div class="perfil-conteudo">
