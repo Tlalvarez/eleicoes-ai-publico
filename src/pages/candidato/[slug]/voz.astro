@@ -36,8 +36,4 @@ const voz = recentes.filter((i) => i.voz === 'propria');
   {voz.length === 0
     ? <div class="card"><p style="margin:0">Sem itens no período.</p></div>
     : <ListaItens itens={voz} />}
-  <div class="aviso">
-    Registro automatizado do que o candidato publicou — não é análise nem endosso.
-    Republicações e conteúdo de campanha aparecem como foram publicados pelo candidato.
-  </div>
 </Base>
