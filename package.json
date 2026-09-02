@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/emite-release-dist.mjs",
     "preview": "astro preview",
     "acervo:local": "node scripts/prepara-acervo-local.mjs",
     "test": "npm run test:unit && npm run build && npm run test:functions && npm run test:dist",
