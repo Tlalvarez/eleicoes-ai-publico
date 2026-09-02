@@ -699,10 +699,22 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       const AMIGAVEL = new Map([
         ['Evidência', 'O que encontramos'],
         ['Inferência', 'Nossa leitura'],
-        ['Lacunas', 'O que não dá para afirmar'],
       ]);
       for (const h of corpo.querySelectorAll('h2, h3, h4')) {
-        const alvo = AMIGAVEL.get(h.textContent.trim());
+        const titulo = h.textContent.trim();
+        if (titulo === 'Lacunas' || titulo === 'O que não dá para afirmar') {
+          // a seção existe no texto (o backend a exige — é o guardrail contra
+          // afirmar demais) mas não é exibida; copiar/compartilhar a preservam
+          let n = h.nextElementSibling;
+          while (n && !/^H[2-4]$/.test(n.tagName)) {
+            const prox = n.nextElementSibling;
+            n.remove();
+            n = prox;
+          }
+          h.remove();
+          continue;
+        }
+        const alvo = AMIGAVEL.get(titulo);
         if (alvo) h.textContent = alvo;
       }
       for (const forte of corpo.querySelectorAll('strong')) {

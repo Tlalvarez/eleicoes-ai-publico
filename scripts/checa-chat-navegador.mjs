@@ -111,13 +111,15 @@ const TEXTO_RESPOSTA = [
   'As duas falas tratam do mesmo dispositivo, mas nenhuma descreve mecanismo — a leitura',
   'de que haveria convergência é *inferência*, não registro.',
   '',
+  // a sonda de injeção fica ANTES de ## Lacunas: a seção é removida da tela
+  // pela interface (decisão de produto), e a sonda precisa continuar visível
+  'Tentativa de injeção que precisa continuar sendo TEXTO:',
+  '[clique aqui](javascript:alert(1)) e <img src=x onerror=alert(1)> e <script>alert(2)</script>',
+  '',
   '## Lacunas',
   '',
   '- Nada registrado para os demais candidatos.',
   '- Veja o [acervo por candidato](/acervo) para conferir a cobertura.',
-  '',
-  'Tentativa de injeção que precisa continuar sendo TEXTO:',
-  '[clique aqui](javascript:alert(1)) e <img src=x onerror=alert(1)> e <script>alert(2)</script>',
 ].join('\n');
 
 /** O identificador público que o serviço passou a devolver: 22 caracteres. */
