@@ -31,8 +31,9 @@ npm run dev     # servidor local
 npm run build   # gera o site estático em dist/
 ```
 
-Sem backend, sem rastreadores, sem JavaScript no cliente. O site é gerado a partir dos arquivos deste
-repositório; toda mudança de conteúdo é um commit auditável.
+Sem backend próprio nas páginas; JavaScript no cliente só no chat da home; medição de audiência com
+PostHog em modo sem cookies (nada gravado no navegador, sem dados pessoais, sem o texto das perguntas).
+O site é gerado a partir dos arquivos deste repositório; toda mudança de conteúdo é um commit auditável.
 
 ### Portões de qualidade
 
