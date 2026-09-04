@@ -23,6 +23,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { leDados } from '../src/lib/dados.mjs';
 import { estadoDoSite } from '../src/lib/release.mjs';
 import { leManifesto } from '../src/lib/dados.mjs';
+import { BASE_DIVULGA, urlsPorSlug } from '../src/lib/tse.mjs';
 
 const alvo = new URL('../dist/index.html', import.meta.url);
 if (!existsSync(alvo)) {
@@ -42,14 +43,27 @@ const desescapa = (t) => t.replace(/&amp;/g, '&').replace(/&lt;/g, '<')
 
 // ---------------------------------------------------------------- cobertura
 
-const links = [...html.matchAll(/href="\/candidato\/([a-z0-9-]+)"/g)].map((m) => m[1]);
-const naHome = new Set(links);
+// o retrato de cada candidato leva à página OFICIAL da candidatura no TSE
+// (as seções internas de candidato e de acervo estão escondidas). A cobertura
+// simétrica passa a ser cobrada por esses links: um por candidato do resumo,
+// nenhum a mais.
+const urlTse = urlsPorSlug();
+const slugPorUrl = new Map(Object.entries(urlTse).map(([slug, url]) => [url, slug]));
+const escapa = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const links = [...html.matchAll(new RegExp(`href="(${escapa(BASE_DIVULGA)}[^"]*)"`, 'g'))]
+  .map((m) => desescapa(m[1]));
+const naHome = new Set(links.map((url) => slugPorUrl.get(url) ?? url));
 for (const [slug, c] of candidatos) {
-  if (!naHome.has(slug)) falhas.push(`candidato '${slug}' do resumo.json não aparece na home`);
+  if (!naHome.has(slug)) falhas.push(`candidato '${slug}' do resumo.json não aparece na home com link para o TSE`);
   if (!html.includes(c.nome)) falhas.push(`nome público de '${slug}' ('${c.nome}') não aparece na home`);
 }
 for (const slug of naHome) {
-  if (!resumo.candidatos[slug]) falhas.push(`home linka '${slug}', que não está no resumo.json`);
+  if (!resumo.candidatos[slug]) falhas.push(`home linka '${slug}' no TSE, que não está no resumo.json`);
+}
+for (const escondida of ['/candidato', '/acervo']) {
+  if (new RegExp(`href="${escondida}(?:[/"?#]|$)`).test(html)) {
+    falhas.push(`a home construída linka ${escondida} — a seção está escondida`);
+  }
 }
 
 
@@ -123,5 +137,5 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (dist): a home construída é o chat, lista os ${candidatos.length} candidatos `
-  + `de data/itens/resumo.json (${candidatos.length} cards) `
+  + `de data/itens/resumo.json (${candidatos.length} cards, cada um com link para o TSE) `
   + `e não afirma oficialidade (estado dos dados: ${estado.rotulo})`);

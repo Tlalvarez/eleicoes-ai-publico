@@ -1,0 +1,60 @@
+---
+/**
+ * A conversa sobre um cargo numa UF: o mesmo chat da home, com o escopo
+ * ("Governador de São Paulo") na frente de cada pergunta, à vista.
+ */
+import Base from '../../layouts/Base.astro';
+import Chat from '../../components/Chat.astro';
+import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
+
+export function getStaticPaths() {
+  return CARGOS_POR_UF.flatMap((cargo) => UFS.map((uf) => ({
+    params: { cargo: cargo.slug, uf: uf.sigla.toLowerCase() },
+    props: { cargo, uf },
+  })));
+}
+const { cargo, uf } = Astro.props;
+const escopo = rotuloEscopo(cargo, uf);
+const pagina = caminhoUf(cargo, uf);
+
+// o mesmo critério da home (ver index.astro): sem PUBLIC_PESQUISA_API, mesma
+// origem; localhost só em desenvolvimento
+const apiBase = import.meta.env.PUBLIC_PESQUISA_API
+  ?? (import.meta.env.DEV ? 'http://localhost:8765' : '');
+---
+<Base title={`${escopo} — pergunte à IA`} description={`Converse com as evidências reunidas sobre as candidaturas a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026.`}>
+  <div class="hero-home">
+    <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome}</p>
+    <h1>{escopo}</h1>
+    <p class="lead">
+      Pergunte à IA sobre os candidatos a {cargo.nome.toLowerCase()} — {uf.nome} ({uf.sigla}).
+      <a href={cargo.href}>Trocar de estado</a>
+    </p>
+    <p class="aviso-cobertura">
+      <strong>Cobertura em expansão.</strong> As respostas usam só o material já reunido para
+      este cargo e este estado; o que não existe no acervo aparece como lacuna, nunca como posição.
+      O escopo <q>{escopo}</q> vai na frente de cada pergunta enviada.
+    </p>
+  </div>
+
+  <Chat apiBase={apiBase} escopo={escopo} pagina={pagina}
+    placeholder={`Ex.: o que os candidatos a ${cargo.nome.toLowerCase()} propõem para a segurança pública?`} />
+
+  <style>
+    .hero-home { margin-bottom: 1.6rem; }
+    .hero-home .lead { max-width: none; }
+    .sobretitulo {
+      margin: 0 0 .6rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .aviso-cobertura {
+      font-size: .9rem; color: var(--acento-forte);
+      background: var(--realce-atencao); border: 1px solid var(--linha-atencao);
+      border-radius: 8px; padding: .6rem .9rem; margin: .8rem 0 0; max-width: none;
+    }
+  </style>
+</Base>

@@ -1,12 +1,15 @@
 ---
 import '../styles/global.css';
+import { CARGOS } from '../lib/cargos.mjs';
 const {
   title,
   description = 'Converse com as evidências reunidas sobre os candidatos de 2026: cada resposta separa o que está registrado, o que é inferência e o que é lacuna, com link para a fonte original.',
 } = Astro.props;
 const path = Astro.url.pathname;
 const atual = (p) => {
-  if (p === '/') return path === '/' || path === '/index.html' ? 'page' : undefined;
+  // a home é a conversa sobre Presidente; a página de uma resposta guardada
+  // (/resposta/<id>) é a mesma conversa, então o mesmo item fica marcado
+  if (p === '/') return path === '/' || path === '/index.html' || path.startsWith('/resposta/') ? 'page' : undefined;
   return (path === p || path.startsWith(p + '/') || path === p + '.html') ? 'page' : undefined;
 };
 ---
@@ -47,10 +50,13 @@ const atual = (p) => {
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
         <input type="checkbox" id="menu-aberto" class="menu-caixa" />
         <label for="menu-aberto" class="menu-botao">☰ Menu</label>
+        <!-- o menu é POR CARGO (src/lib/cargos.mjs). As seções internas de
+             candidato e de acervo continuam construídas, mas escondidas: sem
+             entrada no menu e sem link a partir da home. -->
         <nav class="main" aria-label="Principal">
-          <a href="/" aria-current={atual('/')}><strong>Perguntar</strong></a>
-          <a href="/candidato" aria-current={atual('/candidato')}>Candidatos</a>
-          <a href="/acervo" aria-current={atual('/acervo')}>Acervo</a>
+          {CARGOS.map((cargo) => (
+            <a href={cargo.href} aria-current={atual(cargo.href)}>{cargo.nome}</a>
+          ))}
         </nav>
       </div>
     </header>

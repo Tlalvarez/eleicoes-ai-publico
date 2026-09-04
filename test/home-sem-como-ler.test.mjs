@@ -19,6 +19,8 @@ import { fileURLToPath } from 'node:url';
 
 const HOME = fileURLToPath(new URL('../src/pages/index.astro', import.meta.url));
 const fonte = readFileSync(HOME, 'utf8');
+// o chat (formulário, compositor, script) mora no componente que a home inclui
+const chat = readFileSync(fileURLToPath(new URL('../src/components/Chat.astro', import.meta.url)), 'utf8');
 
 test('a home não traz o título "Como ler uma resposta"', () => {
   assert.ok(!/Como ler uma resposta/.test(fonte),
@@ -43,8 +45,9 @@ test('a home não deixa estilo órfão do quadro', () => {
   }
 });
 
-test('o chat, os chips e "Quem está no acervo" continuam na home', () => {
-  assert.match(fonte, /id="form-chat"/, 'o formulário do chat sumiu da home');
-  assert.match(fonte, /Quem está no acervo/, 'a seção "Quem está no acervo" sumiu da home');
+test('o chat e os cards de candidatos continuam na home', () => {
+  assert.match(fonte, /<Chat apiBase=\{apiBase\} \/>/, 'a home não inclui o componente do chat');
+  assert.match(chat, /id="form-chat"/, 'o formulário do chat sumiu do componente');
+  assert.match(fonte, /Candidatos a presidente/, 'a seção de candidatos sumiu da home');
   assert.match(fonte, /grade-candidatos/, 'os cards de candidatos sumiram da home');
 });

@@ -1,0 +1,85 @@
+---
+/**
+ * A escolha da UF para um cargo por estado (governador, senador, deputado
+ * federal). Sem JavaScript: 27 links, um por UF, para a página da conversa.
+ */
+import Base from '../../layouts/Base.astro';
+import { CARGOS_POR_UF, UFS, caminhoUf } from '../../lib/cargos.mjs';
+
+export function getStaticPaths() {
+  return CARGOS_POR_UF.map((cargo) => ({ params: { cargo: cargo.slug }, props: { cargo } }));
+}
+const { cargo } = Astro.props;
+---
+<Base title={cargo.nome} description={`Escolha o estado para conversar com as evidências sobre as candidaturas a ${cargo.nome.toLowerCase()} em 2026.`}>
+  <div class="hero-home">
+    <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome}</p>
+    <h1>Escolha o estado</h1>
+    <p class="lead">
+      As candidaturas a {cargo.nome.toLowerCase()} são por unidade da federação.
+      Escolha a sua para perguntar à IA sobre os candidatos daquele estado.
+    </p>
+  </div>
+
+  <nav aria-label={`Estados — ${cargo.nome}`}>
+    <ul class="grade-ufs">
+      {UFS.map((uf) => (
+        <li>
+          <a class="uf" href={caminhoUf(cargo, uf)}>
+            <span class="sigla" aria-hidden="true">{uf.sigla}</span>
+            <span class="nome">{uf.nome}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+
+  <style>
+    .hero-home { margin-bottom: 1.6rem; }
+    .hero-home .lead { max-width: none; }
+    .sobretitulo {
+      margin: 0 0 .6rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .grade-ufs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(11.5rem, 1fr));
+      gap: .6rem;
+      padding: 0;
+      margin: 1.5rem 0;
+      list-style: none;
+    }
+    .uf {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+      min-height: var(--alvo);
+      padding: .55rem .8rem;
+      border: 1px solid var(--linha);
+      border-radius: var(--raio);
+      background: var(--cartao);
+      box-shadow: var(--sombra-leve);
+      color: var(--tinta);
+      text-decoration: none;
+    }
+    .uf:hover { border-color: var(--azul-claro); background: var(--realce); }
+    .uf:hover .nome { text-decoration: underline; }
+    .sigla {
+      flex: 0 0 2.6rem;
+      text-align: center;
+      font-family: var(--fonte-titulo);
+      font-weight: 800;
+      font-size: .95rem;
+      letter-spacing: .04em;
+      color: var(--acento-forte);
+      background: var(--realce);
+      border-radius: 6px;
+      padding: .25rem 0;
+    }
+    .nome { font-weight: 600; }
+  </style>
+</Base>

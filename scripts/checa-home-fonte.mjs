@@ -31,6 +31,12 @@ import { citacoesDeCandidato } from '../src/lib/home.mjs';
 // caminho fixo (ver src/lib/dados.mjs)
 const resumo = leDados('itens', 'resumo.json');
 const fonte = readFileSync(new URL('../src/pages/index.astro', import.meta.url), 'utf8');
+// o chat mora em src/components/Chat.astro e a home o inclui: o que se cobra
+// do chat (contrato da API, renderização nó a nó, permalink, compartilhar) é
+// cobrado no componente; o que se cobra da HOME (lista do resumo, endereço da
+// API, nenhum nome escrito à mão) segue cobrado no index.astro
+const fonteChat = readFileSync(new URL('../src/components/Chat.astro', import.meta.url), 'utf8');
+const fonteToda = `${fonte}\n${fonteChat}`;
 
 const candidatos = Object.entries(resumo.candidatos);
 const falhas = [];
@@ -62,14 +68,14 @@ for (const [slug, c] of candidatos) {
 // testada lá: vários sobrenomes brasileiros são substantivos comuns, e
 // procurar sem caixa acusava "todos os dias" como citação de um sobrenome.
 for (const { nome, trecho } of citacoesDeCandidato(
-  fonte, candidatos.map(([, c]) => c.nome))) {
+  fonteToda, candidatos.map(([, c]) => c.nome))) {
   falhas.push(`index.astro cita '${trecho}' ('${nome}') no texto da página — cobertura assimétrica`);
 }
 
 // 4. a home É o chat: campo de pergunta, cliente da conversa e renderizador
 // seguro moram aqui, não numa segunda página
 const exigencias = [
-  [/<form[^>]*id=["']form-chat["']/, 'a home não tem o formulário do chat (id="form-chat")'],
+  [/<form[^>]*id=["']form-chat["']/, 'o chat não tem o formulário (id="form-chat")'],
   [/from\s+['"][^'"]*lib\/chat\.mjs['"]/, 'a home não usa src/lib/chat.mjs — o contrato da '
     + 'API estaria reimplementado na página'],
   [/from\s+['"][^'"]*lib\/markdown\.mjs['"]/, 'a home não usa src/lib/markdown.mjs — a '
@@ -79,13 +85,16 @@ const exigencias = [
   [/from\s+['"][^'"]*lib\/compartilhar\.mjs['"]/, 'a home não usa src/lib/compartilhar.mjs '
     + '— os formatos de compartilhamento estariam duplicados na página'],
 ];
+if (!/<Chat\b[^>]*apiBase=\{apiBase\}/.test(fonte)) {
+  falhas.push('index.astro não inclui o componente <Chat apiBase={apiBase}> — a home deixou de ser o chat');
+}
 for (const [regra, mensagem] of exigencias) {
-  if (!regra.test(fonte)) falhas.push(mensagem);
+  if (!regra.test(fonteToda)) falhas.push(mensagem);
 }
 
 // 5. a resposta NUNCA é montada por string de marcação
 for (const perigo of ['innerHTML', 'outerHTML', 'insertAdjacentHTML', 'document.write']) {
-  if (fonte.includes(perigo)) {
+  if (fonteToda.includes(perigo)) {
     falhas.push(`index.astro usa ${perigo} — a resposta vem de terceiro e tem de ser `
       + 'materializada nó a nó (src/lib/markdown.mjs)');
   }
@@ -115,7 +124,7 @@ if (!linhaApi) {
 // escrever é o dela.
 // Exceção única: a página da conversa (`/?resposta=<id>`, via `caminhoPagina`),
 // que É a home carregando a resposta guardada — recarregar volta ao mesmo lugar.
-for (const m of fonte.matchAll(/history\.(replaceState|pushState)\s*\(([^)]*)\)/g)) {
+for (const m of fonteToda.matchAll(/history\.(replaceState|pushState)\s*\(([^)]*)\)/g)) {
   if (!/location\.pathname|\bpagina\b/.test(m[2])) {
     falhas.push(`index.astro chama history.${m[1]} com um endereço que não é o da própria `
       + 'home — a conversa corrente deixaria de estar no endereço em que ela está');
@@ -123,7 +132,12 @@ for (const m of fonte.matchAll(/history\.(replaceState|pushState)\s*\(([^)]*)\)/
 }
 
 // 6. a home não pode mandar a pergunta para outra superfície
-if (/href=["']\/pesquisa/.test(fonte)) {
+for (const escondida of ['/candidato', '/acervo']) {
+  if (new RegExp(`href=["'\`]\\${escondida}(?:[/"'\`?#]|$)`).test(fonteToda)) {
+    falhas.push(`a home linka ${escondida} — a seção está escondida (menu por cargo; retrato leva ao TSE)`);
+  }
+}
+if (/href=["']\/pesquisa/.test(fonteToda)) {
   falhas.push('index.astro ainda linka /pesquisa — a home é o chat, e uma segunda '
     + 'superfície de pergunta volta a duplicar campo, renderizador e formato');
 }

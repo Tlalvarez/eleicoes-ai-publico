@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const le = (rel) => readFileSync(fileURLToPath(new URL(rel, import.meta.url)), 'utf8');
 const home = le('../src/pages/index.astro');
+const chat = le('../src/components/Chat.astro');   // o chat mora no componente que a home inclui
 const acervo = le('../src/pages/acervo/index.astro');
 
 test('home e acervo não renderizam quadros EstadoRelease', () => {
@@ -15,7 +16,8 @@ test('home e acervo não renderizam quadros EstadoRelease', () => {
 });
 
 test('a remoção preserva as superfícies principais', () => {
-  assert.match(home, /id="form-chat"/);
+  assert.match(home, /<Chat apiBase=\{apiBase\} \/>/);
+  assert.match(chat, /id="form-chat"/);
   assert.match(acervo, /<h1>Acervo<\/h1>/);
   assert.match(acervo, /id="f-busca"/);
 });
