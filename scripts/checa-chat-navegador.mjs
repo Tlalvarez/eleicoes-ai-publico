@@ -157,7 +157,8 @@ function sobeServidor(modo) {
       let corpo = '';
       req.on('data', (c) => { corpo += c; });
       req.on('end', () => {
-        const semConversa = modo === 'fallback' && url.pathname === '/api/conversa';
+        const semConversa = modo === 'fallback'
+          && (url.pathname === '/api/conversa' || url.pathname === '/api/conversa/stream');
         if (semConversa) {
           res.writeHead(404, { 'Content-Type': TIPOS['.json'] });
           res.end('{}');
@@ -165,8 +166,22 @@ function sobeServidor(modo) {
         }
         // `sem-id` imita um serviço que ainda não guarda a resposta
         const { compartilhamento_id: _, ...semId } = RESPOSTA;
+        const resposta = modo === 'sem-id' ? semId : RESPOSTA;
+        if (url.pathname === '/api/conversa/stream') {
+          // a rota ao vivo, como o serviço a serve: etapa, texto em pedaços,
+          // resultado — é o que o bundle publicado tem de saber ler
+          res.writeHead(200, { 'Content-Type': 'text/event-stream; charset=utf-8',
+            'Cache-Control': 'no-store' });
+          const ev = (tipo, dados) => `event: ${tipo}\ndata: ${JSON.stringify(dados)}\n\n`;
+          res.write(ev('etapa', { m: 'Procurando no acervo…' }));
+          const metade = Math.floor(resposta.texto.length / 2);
+          res.write(ev('texto', { t: resposta.texto.slice(0, metade) }));
+          res.write(ev('texto', { t: resposta.texto.slice(metade) }));
+          res.end(ev('resultado', resposta));
+          return;
+        }
         res.writeHead(200, { 'Content-Type': TIPOS['.json'] });
-        res.end(JSON.stringify(modo === 'sem-id' ? semId : RESPOSTA));
+        res.end(JSON.stringify(resposta));
       });
       return;
     }
@@ -326,7 +341,8 @@ try {
     const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('e sobre previdência?')}`);
     const c = 'resposta';
 
-    exige(c, chamadas.includes('/api/conversa'), 'a página não chamou /api/conversa');
+    exige(c, chamadas.includes('/api/conversa/stream') || chamadas.includes('/api/conversa'),
+      'a página não chamou /api/conversa/stream nem /api/conversa');
     exige(c, dom.includes('e sobre previdência?'), 'a pergunta não aparece na conversa');
     exige(c, /<h3[^>]*>O que está registrado<\/h3>/.test(dom),
       'os títulos de seção do Markdown não viraram <h3>');
@@ -453,7 +469,8 @@ try {
     const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('pergunta avulsa')}`);
     const c = 'fallback';
 
-    exige(c, chamadas.includes('/api/conversa') && chamadas.includes('/api/pesquisa'),
+    exige(c, chamadas.includes('/api/conversa/stream') && chamadas.includes('/api/conversa')
+      && chamadas.includes('/api/pesquisa'),
       `sem /api/conversa a página deveria tentar /api/pesquisa (chamou: ${chamadas.join(', ')})`);
     exige(c, /<h3[^>]*>O que está registrado<\/h3>/.test(dom),
       'a resposta do fallback não foi renderizada');

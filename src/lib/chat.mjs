@@ -246,6 +246,12 @@ export async function perguntaAoVivo(mensagens, {
     }
     return fallbackOuErro(r, mensagens, base, buscar);
   }
+  // 200 que não é SSE: um proxy ou serviço que responde a qualquer /api/* com
+  // JSON (ou um serviço antigo atrás de um catch-all). Ler isso como stream
+  // travaria à espera de eventos que nunca vêm; a rota JSON é a resposta.
+  if (!ehEventStream(r)) {
+    return pergunta(mensagens, { apiBase, buscar, respostaId, escopo });
+  }
 
   const fim = await leEventos(r, { aoEtapa, aoTexto });
   if (fim.tipo === 'resultado') {
@@ -259,6 +265,12 @@ export async function perguntaAoVivo(mensagens, {
   }
   throw new ErroConversa('resposta-invalida',
     'O serviço encerrou a resposta sem concluí-la. Tente de novo.');
+}
+
+/** A resposta declara SSE? (`headers` pode não existir num fetch falso) */
+export function ehEventStream(resposta) {
+  const tipo = resposta?.headers?.get?.('content-type') ?? resposta?.contentType ?? '';
+  return String(tipo).toLowerCase().startsWith('text/event-stream');
 }
 
 /**

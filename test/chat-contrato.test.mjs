@@ -280,6 +280,7 @@ import { CAMINHO_CONVERSA_AO_VIVO, leEventos, perguntaAoVivo } from '../src/lib/
 /** Uma resposta SSE de teste: `text()` com os eventos, sem stream de bytes. */
 const sse = (eventos, status = 200) => ({
   status,
+  contentType: 'text/event-stream; charset=utf-8',
   text: eventos.map(([tipo, dados]) => `event: ${tipo}\ndata: ${JSON.stringify(dados)}\n`).join('\n'),
 });
 
@@ -293,6 +294,8 @@ function falsoFetchSSE(respostas) {
     return {
       ok,
       status: proxima.status,
+      headers: { get: (n) => (n.toLowerCase() === 'content-type'
+        ? (proxima.contentType ?? 'application/json') : null) },
       json: async () => proxima.json,
       text: async () => proxima.text ?? JSON.stringify(proxima.json),
       body: proxima.body ?? null,
@@ -301,6 +304,15 @@ function falsoFetchSSE(respostas) {
   fn.chamadas = chamadas;
   return fn;
 }
+
+test('ao vivo: 200 que não é SSE (proxy ou catch-all respondendo JSON) cai na rota JSON', async () => {
+  const buscar = falsoFetchSSE([{ status: 200, json: RESPOSTA }, { status: 200, json: RESPOSTA }]);
+  const r = await perguntaAoVivo(TURNO, { apiBase: API, buscar, escopo: { cargo: 'presidente' } });
+  assert.deepEqual(buscar.chamadas.map((c) => c.url),
+    [API + CAMINHO_CONVERSA_AO_VIVO, API + '/api/conversa']);
+  assert.equal(r.texto, RESPOSTA.texto);
+  assert.equal(r.viaFallback, false);
+});
 
 const EVENTOS_OK = [
   ['etapa', { m: 'Procurando…' }],
