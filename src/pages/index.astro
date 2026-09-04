@@ -21,8 +21,8 @@ const imagensPorSlug = new Map(imagens.candidates.map((imagem) => [imagem.candid
 const cards = candidatos.map(({ slug, nome }) => {
   const imagem = imagensPorSlug.get(slug);
   if (!imagem) throw new Error(`Retrato sem manifesto de direitos: ${slug}`);
-  // o retrato leva à página OFICIAL da candidatura no TSE (as seções internas
-  // de candidato e de acervo estão escondidas por ora); candidato sem
+  // retrato e nome levam à conversa só sobre este candidato (/presidente/<slug>);
+  // abaixo, o link para a página OFICIAL da candidatura no TSE. Candidato sem
   // identificador derruba o build — link para lugar nenhum é cobertura assimétrica
   return { slug, nome, ...resumo.candidatos[slug], imagem, tse: urlCandidaturaTse(slug) };
 });
@@ -59,8 +59,8 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   <ul class="grade-candidatos">
     {cards.map((c) => (
       <li class="cartao-candidato">
-        <a class="retrato-link" href={c.tse} target="_blank" rel="noopener noreferrer"
-          title={`${c.nome} — candidatura no TSE (DivulgaCandContas)`}>
+        <a class="retrato-link" href={`/presidente/${c.slug}`}
+          title={`Conversar com a IA sobre ${c.nome}`}>
           <img
             src={c.imagem.image_path}
             width="161"
@@ -70,22 +70,21 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
           />
           <span class="nome-candidato">{c.nome}</span>
         </a>
-        <p class="resumo-candidato">
-          {c.total > 0
-            ? `${c.total.toLocaleString('pt-BR')} itens registrados`
-            : 'Sem itens registrados no período'}
+        <p class="link-tse">
+          <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
         </p>
         <p class="credito-retrato">
-          Foto: <a href={c.imagem.source_page}>{c.imagem.public_credit}</a> ·
+          Foto: {c.imagem.public_credit} ·
           {c.imagem.license_url
-            ? <a href={c.imagem.license_url}>{c.imagem.license}</a>
+            ? <a href={c.imagem.license_url} target="_blank" rel="noopener noreferrer">{c.imagem.license}</a>
             : c.imagem.license}
         </p>
       </li>
     ))}
   </ul>
   <p class="depois-da-faixa">
-    Cada retrato abre a página oficial da candidatura no TSE (DivulgaCandContas), em nova aba.
+    Clique no candidato para conversar com a IA só sobre ele. O link do TSE abre a página
+    oficial da candidatura (DivulgaCandContas), em nova aba.
   </p>
   </section>
 
@@ -142,13 +141,13 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       line-height: 1.2;
     }
     .retrato-link:hover .nome-candidato { color: var(--acento); text-decoration: underline; }
-    .resumo-candidato {
+    .link-tse {
       flex: 1;
       margin: 0;
       padding: .25rem 1rem .75rem;
-      color: var(--tinta-suave);
-      font-size: .9rem;
+      font-size: .86rem;
     }
+    .link-tse a { color: var(--acento); font-weight: 600; }
     .credito-retrato {
       margin: 0;
       padding: .65rem 1rem .8rem;

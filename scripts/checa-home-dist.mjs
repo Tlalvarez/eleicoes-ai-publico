@@ -53,12 +53,17 @@ const escapa = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 const links = [...html.matchAll(new RegExp(`href="(${escapa(BASE_DIVULGA)}[^"]*)"`, 'g'))]
   .map((m) => desescapa(m[1]));
 const naHome = new Set(links.map((url) => slugPorUrl.get(url) ?? url));
+const conversas = new Set([...html.matchAll(/href="\/presidente\/([a-z0-9-]+)"/g)].map((m) => m[1]));
 for (const [slug, c] of candidatos) {
   if (!naHome.has(slug)) falhas.push(`candidato '${slug}' do resumo.json não aparece na home com link para o TSE`);
+  if (!conversas.has(slug)) falhas.push(`candidato '${slug}' do resumo.json não tem link para a própria conversa (/presidente/${slug})`);
   if (!html.includes(c.nome)) falhas.push(`nome público de '${slug}' ('${c.nome}') não aparece na home`);
 }
 for (const slug of naHome) {
   if (!resumo.candidatos[slug]) falhas.push(`home linka '${slug}' no TSE, que não está no resumo.json`);
+}
+for (const slug of conversas) {
+  if (!resumo.candidatos[slug]) falhas.push(`home linka a conversa de '${slug}', que não está no resumo.json`);
 }
 for (const escondida of ['/candidato', '/acervo']) {
   if (new RegExp(`href="${escondida}(?:[/"?#]|$)`).test(html)) {

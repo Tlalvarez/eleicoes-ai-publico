@@ -7,9 +7,13 @@ const {
 } = Astro.props;
 const path = Astro.url.pathname;
 const atual = (p) => {
-  // a home é a conversa sobre Presidente; a página de uma resposta guardada
-  // (/resposta/<id>) é a mesma conversa, então o mesmo item fica marcado
-  if (p === '/') return path === '/' || path === '/index.html' || path.startsWith('/resposta/') ? 'page' : undefined;
+  // a home é a conversa sobre Presidente; a conversa de um candidato a
+  // presidente (/presidente/<slug>) e a página de uma resposta guardada
+  // (/resposta/<id>) são a mesma seção, então o mesmo item fica marcado
+  if (p === '/') {
+    return path === '/' || path === '/index.html' || path.startsWith('/presidente/')
+      || path.startsWith('/resposta/') ? 'page' : undefined;
+  }
   return (path === p || path.startsWith(p + '/') || path === p + '.html') ? 'page' : undefined;
 };
 ---
