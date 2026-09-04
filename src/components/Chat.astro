@@ -42,10 +42,6 @@ const {
         <button type="submit" class="botao" id="enviar">Perguntar</button>
         <button type="button" class="botao secundario" id="nova" hidden>Começar outra conversa</button>
       </div>
-      <p class="nota-envio">
-        <kbd>Enter</kbd> quebra linha · clique em <strong>Perguntar</strong> para enviar ·
-        a resposta pode levar alguns minutos para ser computada.
-      </p>
     </form>
 
   </section>
@@ -80,11 +76,6 @@ const {
     }
     .acoes-envio { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .6rem; }
     #nova { display: none; }
-    .nota-envio { font-size: .84rem; color: var(--tinta-suave); margin: .5rem 0 0; }
-    .nota-envio kbd {
-      font: inherit; font-size: .95em; border: 1px solid var(--linha);
-      border-bottom-width: 2px; border-radius: 4px; padding: 0 .3em; background: var(--cartao);
-    }
     @media (max-width: 520px) {
       .acoes-envio > .botao { flex: 1 1 100%; }
     }
