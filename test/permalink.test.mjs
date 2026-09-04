@@ -36,6 +36,7 @@ const CITACAO = {
   ts: '00:12:40',
   estatuto: 3,
   estatuto_rotulo: 'legenda automática',
+  ressalva: null,
 };
 
 const RESULTADO = {

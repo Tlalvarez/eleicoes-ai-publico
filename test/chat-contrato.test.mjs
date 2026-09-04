@@ -493,3 +493,10 @@ test('ao vivo num serviço antigo: 404 na rota nova, 400 pelo escopo, e a pergun
     [API + CAMINHO_CONVERSA_AO_VIVO, API + '/api/conversa', API + '/api/conversa']);
   assert.equal(r.texto, RESPOSTA.texto);
 });
+
+test('a ressalva de leitor da citação passa pela normalização', () => {
+  const r = normalizaResposta({ texto: 'x [S1]', citacoes: [{ marcadores: [1], ressalva: 'só o link' }] });
+  assert.equal(r.citacoes[0].ressalva, 'só o link');
+  const sem = normalizaResposta({ texto: 'x [S1]', citacoes: [{ marcadores: [1] }] });
+  assert.equal(sem.citacoes[0].ressalva, null);
+});

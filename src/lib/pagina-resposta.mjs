@@ -244,6 +244,8 @@ function itemDeFonte(cit) {
   if (cit.estatuto === 3) {
     ressalva = '<span class="ressalva nao-conferido">⚠ transcrição/legenda automática — '
       + 'pode conter erros; confira na fonte</span>';
+  } else if (cit.ressalva) {
+    ressalva = `<span class="ressalva">${escapaTexto(cit.ressalva)}</span>`;
   } else if (cit.estatuto === 4) {
     ressalva = '<span class="ressalva">✓ áudio conferido por uma segunda transcrição</span>';
   } else if (cit.estatuto === 1) {

@@ -381,6 +381,10 @@ const {
       if (cit.estatuto === 3) {
         // o aviso de transcrição automática é ÚNICO, no topo da lista de
         // fontes — repetido em cada item ele vira ruído, não informação
+      } else if (cit.ressalva) {
+        // o serviço já diz, em português de leitor, o que aquele estatuto
+        // significa — e sabe em qual escala o número está; aqui não
+        ressalva.textContent = cit.ressalva;
       } else if (cit.estatuto === 4) {
         ressalva.textContent = '✓ áudio conferido por uma segunda transcrição';
       } else if (cit.estatuto === 1) {

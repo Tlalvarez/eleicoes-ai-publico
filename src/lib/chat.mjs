@@ -127,6 +127,8 @@ export function normalizaResposta(bruto) {
         ts: str(fonte.ts) || null,
         estatuto: Number.isInteger(fonte.estatuto) ? fonte.estatuto : null,
         estatuto_rotulo: str(fonte.estatuto_rotulo) || null,
+        // a frase para o leitor (serviço novo); sem ela, a interface deriva do estatuto
+        ressalva: str(fonte.ressalva) || null,
       };
     })
     // sem marcador a citação não tem como ser referida pelo texto: ela viraria

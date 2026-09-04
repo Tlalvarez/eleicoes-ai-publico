@@ -57,6 +57,12 @@ export function conclusao(md) {
   return paraTextoSimples(primeiro ? [primeiro] : nos);
 }
 
+/** A ressalva que vai no texto compartilhado: a frase de leitor quando o
+ *  serviço a manda; a etiqueta interna só na falta dela. */
+function ressalvaDaFonte(c) {
+  return c?.ressalva || c?.estatuto_rotulo || '';
+}
+
 /** Uma linha por fonte, em texto simples. */
 function fontesSimples(citacoes) {
   return (citacoes ?? []).map((c) => {
@@ -64,7 +70,7 @@ function fontesSimples(citacoes) {
     const cabeca = [c?.nome, c?.rotulo, dataBr(c?.data)].filter(Boolean).join(' — ');
     return linhas(
       `${marcas} ${cabeca}${c?.ts ? `, ${c.ts}` : ''}`
-        + (c?.estatuto_rotulo ? ` · ${c.estatuto_rotulo}` : ''),
+        + (ressalvaDaFonte(c) ? ` · ${ressalvaDaFonte(c)}` : ''),
       c?.url ? `    ${c.url}` : '');
   }).join('\n');
 }
@@ -76,7 +82,7 @@ function fontesMarkdown(citacoes) {
     const cabeca = [c?.nome, c?.rotulo, dataBr(c?.data)].filter(Boolean).join(' — ');
     const link = c?.url ? ` — [abrir a fonte](${c.url})` : ' — sem endereço registrado';
     return `- ${marcas} ${cabeca}${c?.ts ? `, ${c.ts}` : ''}`
-      + (c?.estatuto_rotulo ? ` · ${c.estatuto_rotulo}` : '') + link;
+      + (ressalvaDaFonte(c) ? ` · ${ressalvaDaFonte(c)}` : '') + link;
   }).join('\n');
 }
 
