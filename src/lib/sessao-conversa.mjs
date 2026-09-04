@@ -106,7 +106,7 @@ export function criaSessao({
      * `aoPerguntar` é chamado de forma síncrona, antes da rede, para a página
      * poder desenhar o turno da pergunta imediatamente.
      */
-    async envia(texto, { aoPerguntar } = {}) {
+    async envia(texto, { aoPerguntar, aoEtapa, aoTexto } = {}) {
       const conteudo = String(texto ?? '').trim();
       if (!conteudo) return { estado: 'vazio' };
 
@@ -140,10 +140,15 @@ export function criaSessao({
 
       try {
         ultimaChamada = { mensagens: historico.map((m) => ({ ...m })), respostaId: ultimoId };
+        // progresso e rascunho só chegam à página enquanto este voo é o
+        // vigente: resposta de época vencida não desenha nem um pedaço
+        const seVigente = (fn) => fn && ((valor) => { if (!desfecho()) fn(valor); });
         const resultado = await perguntar(historico.slice(), {
           apiBase,
           respostaId: ultimoId,
           buscar: (url, opcoes) => buscar(url, { ...opcoes, signal: controle.signal }),
+          aoEtapa: seVigente(aoEtapa),
+          aoTexto: seVigente(aoTexto),
         });
 
         const fim = desfecho();

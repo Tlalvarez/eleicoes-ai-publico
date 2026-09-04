@@ -3,8 +3,7 @@ import Base from '../layouts/Base.astro';
 import { leDados } from '../lib/dados.mjs';
 import { candidatosDaHome } from '../lib/home.mjs';
 import Chat from '../components/Chat.astro';
-import imagens from '../data/imagens-candidatos.json';
-import { urlCandidaturaTse } from '../lib/tse.mjs';
+import { urlCandidaturaTse, urlFotoCandidaturaTse } from '../lib/tse.mjs';
 
 // os dados saem do MANIFESTO da geração ativa (data/current.json),
 // nunca de um caminho fixo: itens, acervo e índice de pesquisa
@@ -15,17 +14,14 @@ const resumo = leDados('itens', 'resumo.json');
 // nomes escritos à mão quebraria a cobertura simétrica logo na primeira página.
 const candidatos = candidatosDaHome(resumo);
 
-// os mesmos cards da página /candidato: retrato com manifesto de direitos,
-// contagem de itens e crédito — cobertura simétrica, nenhum nome escrito à mão
-const imagensPorSlug = new Map(imagens.candidates.map((imagem) => [imagem.candidate_slug, imagem]));
-const cards = candidatos.map(({ slug, nome }) => {
-  const imagem = imagensPorSlug.get(slug);
-  if (!imagem) throw new Error(`Retrato sem manifesto de direitos: ${slug}`);
-  // retrato e nome levam à conversa só sobre este candidato (/presidente/<slug>);
-  // abaixo, o link para a página OFICIAL da candidatura no TSE. Candidato sem
-  // identificador derruba o build — link para lugar nenhum é cobertura assimétrica
-  return { slug, nome, ...resumo.candidatos[slug], imagem, tse: urlCandidaturaTse(slug) };
-});
+// retrato e nome levam à conversa só sobre este candidato (/presidente/<slug>);
+// a foto é a OFICIAL do registro, servida pelo TSE — a mesma origem das páginas
+// por cargo/UF; abaixo, o link para a página da candidatura no TSE. Candidato
+// sem identificador derruba o build — link para lugar nenhum é cobertura assimétrica
+const cards = candidatos.map(({ slug, nome }) => ({
+  slug, nome, ...resumo.candidatos[slug],
+  foto: urlFotoCandidaturaTse(slug), tse: urlCandidaturaTse(slug),
+}));
 
 // Endereço do serviço de evidências. Sem `PUBLIC_PESQUISA_API`, o padrão é a
 // MESMA ORIGEM ('') — o cliente pede `/api/conversa` relativo, e quem publica
@@ -61,30 +57,18 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       <li class="cartao-candidato">
         <a class="retrato-link" href={`/presidente/${c.slug}`}
           title={`Conversar com a IA sobre ${c.nome}`}>
-          <img
-            src={c.imagem.image_path}
-            width="161"
-            height="225"
-            loading="lazy"
-            alt=""
-          />
+          <img src={c.foto} width="161" height="225" loading="lazy" alt="" />
           <span class="nome-candidato">{c.nome}</span>
         </a>
         <p class="link-tse">
           <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
         </p>
-        <p class="credito-retrato">
-          Foto: {c.imagem.public_credit} ·
-          {c.imagem.license_url
-            ? <a href={c.imagem.license_url} target="_blank" rel="noopener noreferrer">{c.imagem.license}</a>
-            : c.imagem.license}
-        </p>
       </li>
     ))}
   </ul>
   <p class="depois-da-faixa">
-    Clique no candidato para conversar com a IA só sobre ele. O link do TSE abre a página
-    oficial da candidatura (DivulgaCandContas), em nova aba.
+    Clique no candidato para conversar com a IA só sobre ele. A foto é a oficial do registro
+    da candidatura; o link do TSE abre a candidatura no DivulgaCandContas, em nova aba.
   </p>
   </section>
 
@@ -144,18 +128,10 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     .link-tse {
       flex: 1;
       margin: 0;
-      padding: .25rem 1rem .75rem;
+      padding: .25rem 1rem .8rem;
       font-size: .86rem;
     }
     .link-tse a { color: var(--acento); font-weight: 600; }
-    .credito-retrato {
-      margin: 0;
-      padding: .65rem 1rem .8rem;
-      border-top: 1px solid var(--linha);
-      color: var(--tinta-suave);
-      font-size: .7rem;
-      line-height: 1.35;
-    }
   </style>
 
 </Base>

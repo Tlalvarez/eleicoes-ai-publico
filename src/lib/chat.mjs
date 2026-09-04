@@ -31,6 +31,7 @@ import { hrefSeguro } from './markdown.mjs';
 import { ehIdPublico } from './resposta-publica.mjs';
 
 export const CAMINHO_CONVERSA = '/api/conversa';
+export const CAMINHO_CONVERSA_AO_VIVO = '/api/conversa/stream';
 export const CAMINHO_PESQUISA = '/api/pesquisa';
 
 export const MSG_SEM_FOLLOWUP =
@@ -179,7 +180,112 @@ export async function pergunta(mensagens, { apiBase, buscar = globalThis.fetch, 
   if (conversa.ok) {
     return { ...exigeTexto(normalizaResposta(await leJson(conversa))), viaFallback: false };
   }
+  return fallbackOuErro(conversa, mensagens, base, buscar);
+}
 
+/**
+ * A mesma pergunta, recebendo a resposta ENQUANTO ela é escrita.
+ *
+ * Fala com `/api/conversa/stream` (SSE): `aoEtapa(texto)` recebe o progresso
+ * em linguagem de leitor, `aoTexto(trecho)` recebe pedaços da resposta. O que
+ * chega por `aoTexto` é rascunho — só o `resultado` final é a resposta: o
+ * serviço valida cada parte no momento em que ela fica conferível e pode
+ * retratar o que já mandou (evento `erro` depois de texto). Quem desenha
+ * descarta o rascunho quando esta função lança.
+ *
+ * Serviço sem a rota (404/405/501) cai em `pergunta()`, que tem o fallback
+ * de sempre; 503 e demais status seguem exatamente a regra da rota JSON.
+ */
+export async function perguntaAoVivo(mensagens, {
+  apiBase, buscar = globalThis.fetch, respostaId, aoEtapa, aoTexto,
+} = {}) {
+  const base = String(apiBase ?? '').replace(/\/+$/, '');
+
+  const r = await postaJson(buscar, base + CAMINHO_CONVERSA_AO_VIVO,
+    corpoConversa(mensagens, respostaId));
+
+  if (!r.ok) {
+    if (precisaFallback(r.status)) return pergunta(mensagens, { apiBase, buscar, respostaId });
+    return fallbackOuErro(r, mensagens, base, buscar);
+  }
+
+  const fim = await leEventos(r, { aoEtapa, aoTexto });
+  if (fim.tipo === 'resultado') {
+    return { ...exigeTexto(normalizaResposta(fim.dados)), viaFallback: false };
+  }
+  if (fim.tipo === 'erro') {
+    const status = Number(fim.dados?.status) || 500;
+    throw new ErroConversa('servidor',
+      `O serviço de evidências respondeu com erro (${status}). `
+      + 'Tente de novo em alguns instantes.');
+  }
+  throw new ErroConversa('resposta-invalida',
+    'O serviço encerrou a resposta sem concluí-la. Tente de novo.');
+}
+
+/**
+ * Lê o corpo SSE até o evento final (`resultado` ou `erro`).
+ *
+ * Aceita tanto um `body` em stream (navegador) quanto uma resposta que só
+ * tem `text()` (testes e clientes simples). O parser é o mínimo do formato:
+ * blocos separados por linha em branco, `event:` e `data:` (JSON).
+ */
+export async function leEventos(resposta, { aoEtapa, aoTexto } = {}) {
+  let fim = null;
+  const trata = (tipo, dados) => {
+    if (fim) return;
+    if (tipo === 'etapa') aoEtapa?.(str(dados?.m));
+    else if (tipo === 'texto') aoTexto?.(str(dados?.t));
+    else if (tipo === 'resultado' || tipo === 'erro') fim = { tipo, dados };
+  };
+  const decodifica = (bloco) => {
+    let tipo = null;
+    const linhas = [];
+    for (const linha of bloco.split(/\r?\n/)) {
+      if (linha.startsWith('event:')) tipo = linha.slice(6).trim();
+      else if (linha.startsWith('data:')) linhas.push(linha.slice(5).trimStart());
+    }
+    if (!tipo || !linhas.length) return;
+    let dados;
+    try { dados = JSON.parse(linhas.join('\n')); } catch { return; }
+    trata(tipo, dados);
+  };
+
+  if (resposta.body && typeof resposta.body.getReader === 'function') {
+    const leitor = resposta.body.getReader();
+    const decoder = new TextDecoder();
+    let pendente = '';
+    try {
+      while (!fim) {
+        const { value, done } = await leitor.read();
+        if (done) break;
+        pendente += decoder.decode(value, { stream: true });
+        let corte;
+        while (!fim && (corte = pendente.search(/\r?\n\r?\n/)) >= 0) {
+          const bloco = pendente.slice(0, corte);
+          pendente = pendente.slice(corte).replace(/^\r?\n\r?\n/, '');
+          decodifica(bloco);
+        }
+      }
+      if (!fim && pendente.trim()) decodifica(pendente);
+    } finally {
+      try { await leitor.cancel(); } catch { /* já encerrado */ }
+    }
+  } else {
+    let texto;
+    try {
+      texto = await resposta.text();
+    } catch (e) {
+      throw new ErroConversa('resposta-invalida',
+        'O serviço respondeu num formato que não consegui ler.', e);
+    }
+    for (const bloco of String(texto).split(/\r?\n\r?\n/)) decodifica(bloco);
+  }
+  return fim ?? { tipo: null, dados: null };
+}
+
+/** O que fazer com uma resposta que não é 2xx: o fallback, ou o erro tipado. */
+async function fallbackOuErro(conversa, mensagens, base, buscar) {
   if (!(await respostaPermiteFallback(conversa))) {
     throw new ErroConversa('servidor',
       `O serviço de evidências respondeu com erro (${conversa.status}). `

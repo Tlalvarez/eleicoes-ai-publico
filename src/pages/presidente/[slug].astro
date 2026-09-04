@@ -11,19 +11,17 @@ import Base from '../../layouts/Base.astro';
 import Chat from '../../components/Chat.astro';
 import { leDados } from '../../lib/dados.mjs';
 import { candidatosDaHome } from '../../lib/home.mjs';
-import imagens from '../../data/imagens-candidatos.json';
-import { urlCandidaturaTse } from '../../lib/tse.mjs';
+import { urlCandidaturaTse, urlFotoCandidaturaTse } from '../../lib/tse.mjs';
 
 export function getStaticPaths() {
   const resumo = leDados('itens', 'resumo.json');
-  const imagensPorSlug = new Map(imagens.candidates.map((imagem) => [imagem.candidate_slug, imagem]));
-  return candidatosDaHome(resumo).map(({ slug, nome }) => {
-    const imagem = imagensPorSlug.get(slug);
-    if (!imagem) throw new Error(`Retrato sem manifesto de direitos: ${slug}`);
-    return { params: { slug }, props: { slug, nome, imagem, tse: urlCandidaturaTse(slug) } };
-  });
+  // a foto é a oficial do registro no TSE — a mesma origem das páginas por cargo/UF
+  return candidatosDaHome(resumo).map(({ slug, nome }) => ({
+    params: { slug },
+    props: { slug, nome, foto: urlFotoCandidaturaTse(slug), tse: urlCandidaturaTse(slug) },
+  }));
 }
-const { slug, nome, imagem, tse } = Astro.props;
+const { slug, nome, foto, tse } = Astro.props;
 const pagina = `/presidente/${slug}`;
 
 // o mesmo critério da home (ver index.astro): sem PUBLIC_PESQUISA_API, mesma
@@ -35,7 +33,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   <div class="hero-home">
     <p class="sobretitulo">Eleições gerais de 2026 · Presidente</p>
     <div class="cabecalho-candidato">
-      <img class="retrato" src={imagem.image_path} width="92" height="128" alt="" />
+      <img class="retrato" src={foto} width="92" height="128" alt="" />
       <div>
         <h1>{nome}</h1>
         <p class="lead">

@@ -28,3 +28,14 @@ export function urlCandidaturaTse(slug, dados = candidaturas) {
 export function urlsPorSlug(dados = candidaturas) {
   return Object.fromEntries(Object.keys(dados.candidatos).map((slug) => [slug, urlCandidaturaTse(slug, dados)]));
 }
+
+/** A foto oficial do registro da candidatura, servida pelo TSE (161×225) —
+ * a mesma origem das fotos das páginas por cargo/UF. */
+export function urlFotoCandidaturaTse(slug, dados = candidaturas) {
+  const c = dados.candidatos[slug];
+  if (!c || !/^\d+$/.test(String(c.id_candidatura))) {
+    throw new Error(`Candidatura sem identificador no TSE: ${slug} (src/data/candidaturas-tse.json)`);
+  }
+  const { id_eleicao, abrangencia } = dados.eleicao;
+  return `https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/${id_eleicao}/${c.id_candidatura}/${abrangencia}`;
+}
