@@ -19,12 +19,17 @@
 const {
   apiBase,
   escopo = '',
+  // o escopo ESTRUTURADO da página — o que o serviço usa para considerar só
+  // os candidatos deste cargo (e desta UF). O rótulo acima é o que a pessoa
+  // vê; isto é o que a conversa filtra. Presidente é o default da home.
+  cargo = 'presidente',
+  uf = '',
   pagina = '/',
   placeholder = 'Ex.: o que o candidato A fala sobre educação em seu plano de governo? Compare quem tratou do tema X.',
 } = Astro.props;
 ---
   <section class="chat" id="chat" aria-label="Conversa com o acervo" data-api={apiBase}
-    data-escopo={escopo} data-pagina={pagina}>
+    data-escopo={escopo} data-cargo={cargo} data-uf={uf} data-pagina={pagina}>
     <ol class="conversa" id="conversa"></ol>
 
     <p class="estado-chat" id="estado" role="status" aria-live="polite" hidden>
@@ -144,6 +149,25 @@ const {
         var(--laranja) 78% 100%);
     }
 
+    /* o rascunho: a resposta enquanto é escrita — texto corrido, tracejado,
+       nunca confundível com a resposta validada que o substitui */
+    .turno-resposta.rascunho > article {
+      border-style: dashed;
+      box-shadow: none;
+    }
+    .turno-resposta.rascunho .marca-rascunho {
+      margin: 0 0 .6rem;
+      font-size: .85rem;
+      color: var(--texto-suave, #666);
+    }
+    .turno-resposta.rascunho .texto-rascunho {
+      white-space: pre-wrap;
+      font-family: var(--fonte-titulo);
+      font-size: 1.02rem;
+      line-height: 1.7;
+      margin: 0;
+    }
+
     .resposta-corpo {
       font-family: var(--fonte-titulo);
       font-size: 1.02rem;
@@ -252,7 +276,7 @@ const {
 
   <script>
     import { analisaMarkdown, criaElementos } from '../lib/markdown.mjs';
-    import { ErroConversa, carregaResposta } from '../lib/chat.mjs';
+    import { ErroConversa, carregaResposta, perguntaAoVivo } from '../lib/chat.mjs';
     import { criaSessao } from '../lib/sessao-conversa.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
     import { estadoDoFragmento } from '../lib/permalink.mjs';
@@ -277,7 +301,13 @@ const {
 
     // histórico, requisição em voo e a regra de época moram em sessao-conversa:
     // aqui só se desenha o que ela devolve
-    const sessao = criaSessao({ apiBase: chat.dataset.api });
+    // `perguntaAoVivo`: a resposta chega enquanto é escrita (SSE); serviço
+    // sem a rota cai sozinho na rota JSON de sempre
+    const sessao = criaSessao({
+      apiBase: chat.dataset.api,
+      perguntar: perguntaAoVivo,
+      escopo: { cargo: chat.dataset.cargo || 'presidente', uf: chat.dataset.uf || '' },
+    });
     // escopo da página (cargo/UF): vai na frente de cada pergunta, à vista.
     // O serviço não filtra por cargo nem por UF; o que a pessoa vê enviado é
     // exatamente o que o serviço recebe.
@@ -677,7 +707,37 @@ const {
       enviar.disabled = true;
       mostraEstado('Procurando no acervo e escrevendo a resposta…', { cancelavel: true });
 
-      const r = await sessao.envia(conteudo, { aoPerguntar: adicionaPergunta });
+      // O RASCUNHO: o texto que o serviço manda enquanto escreve. É texto
+      // corrido (nunca marcação), vive fora da lista de turnos e some sempre —
+      // a resposta de verdade é a que chega inteira e validada em `ok`. Se o
+      // serviço retratar o que mandou (erro depois de texto), o rascunho vai
+      // embora junto com o erro.
+      const rascunho = el('li', 'turno turno-resposta rascunho');
+      const artigoRascunho = el('article');
+      artigoRascunho.setAttribute('aria-label', 'Resposta sendo escrita');
+      artigoRascunho.setAttribute('aria-live', 'polite');
+      const textoRascunho = el('p', 'texto-rascunho');
+      artigoRascunho.append(el('p', 'marca-rascunho', 'Escrevendo a resposta…'), textoRascunho);
+      rascunho.append(artigoRascunho);
+      let rascunhoNaTela = false;
+      const aoTexto = (trecho) => {
+        if (!rascunhoNaTela) {
+          conversa.append(rascunho);
+          rascunhoNaTela = true;
+        }
+        textoRascunho.textContent += trecho;
+      };
+      const tiraRascunho = () => {
+        rascunho.remove();
+        rascunhoNaTela = false;
+      };
+
+      const r = await sessao.envia(conteudo, {
+        aoPerguntar: adicionaPergunta,
+        aoEtapa: (m) => mostraEstado(m, { cancelavel: true }),
+        aoTexto,
+      });
+      tiraRascunho();
 
       // época vencida: a conversa foi reiniciada ou já há outra pergunta em voo.
       // Quem reiniciou já arrumou a tela; desenhar aqui seria pôr resposta velha

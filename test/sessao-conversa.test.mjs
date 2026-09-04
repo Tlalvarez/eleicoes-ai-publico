@@ -279,3 +279,68 @@ test('o identificador público da resposta chega a quem desenha', async () => {
 
   assert.equal(r.resultado.compartilhamento_id, ID);
 });
+
+// --------------------------------------------------------------------------
+// progresso e rascunho ao vivo: só enquanto o voo é o vigente
+// --------------------------------------------------------------------------
+
+test('etapas e trechos são repassados à página enquanto o voo é o vigente', async () => {
+  const etapas = [];
+  const trechos = [];
+  const sessao = criaSessao({
+    perguntar: async (_m, { aoEtapa, aoTexto }) => {
+      aoEtapa('Procurando…');
+      aoTexto('parte 1 ');
+      aoTexto('parte 2');
+      return RESULTADO;
+    },
+  });
+
+  const r = await sessao.envia('pergunta', {
+    aoEtapa: (m) => etapas.push(m), aoTexto: (t) => trechos.push(t),
+  });
+
+  assert.equal(r.estado, 'ok');
+  assert.deepEqual(etapas, ['Procurando…']);
+  assert.equal(trechos.join(''), 'parte 1 parte 2');
+});
+
+test('depois de reiniciar, o rascunho da conversa antiga não chega à página', async () => {
+  let entregaTexto;
+  const trechos = [];
+  const sessao = criaSessao({
+    perguntar: (_m, { aoTexto }) => new Promise((ok) => {
+      entregaTexto = () => { aoTexto('texto velho'); ok(RESULTADO); };
+    }),
+  });
+
+  const emVoo = sessao.envia('pergunta antiga', { aoTexto: (t) => trechos.push(t) });
+  sessao.reinicia();
+  entregaTexto();                              // o serviço antigo ainda escreve
+  const r = await emVoo;
+
+  assert.equal(r.estado, 'obsoleto');
+  assert.deepEqual(trechos, [], 'trecho de conversa vencida foi desenhado');
+});
+
+test('sem callbacks, um perguntar que os chama não quebra', async () => {
+  const sessao = criaSessao({
+    perguntar: async (_m, { aoEtapa, aoTexto }) => {
+      assert.equal(aoEtapa, undefined);
+      assert.equal(aoTexto, undefined);
+      return RESULTADO;
+    },
+  });
+  assert.equal((await sessao.envia('pergunta')).estado, 'ok');
+});
+
+test('a sessão manda o escopo da página em toda pergunta', async () => {
+  const escopos = [];
+  const sessao = criaSessao({
+    escopo: { cargo: 'governador', uf: 'CE' },
+    perguntar: async (_m, { escopo }) => { escopos.push(escopo); return RESULTADO; },
+  });
+  await sessao.envia('pergunta 1');
+  await sessao.envia('pergunta 2');
+  assert.deepEqual(escopos, [{ cargo: 'governador', uf: 'CE' }, { cargo: 'governador', uf: 'CE' }]);
+});

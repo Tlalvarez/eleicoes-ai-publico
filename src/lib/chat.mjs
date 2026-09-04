@@ -52,14 +52,27 @@ export class ErroConversa extends Error {
 const PAPEIS = new Set(['user', 'assistant']);
 const str = (v) => (typeof v === 'string' ? v : '');
 
+/**
+ * O escopo da página no formato do contrato: `{cargo}` ou `{cargo, uf}`.
+ * Sem cargo, `null` — e o serviço considera o catálogo inteiro.
+ */
+export function escopoDoContrato(escopo) {
+  const cargo = str(escopo?.cargo).trim();
+  if (!cargo) return null;
+  const uf = str(escopo?.uf).trim().toUpperCase();
+  return uf ? { cargo, uf } : { cargo };
+}
+
 /** Corpo de `/api/conversa`: o histórico inteiro, só com papéis do contrato. */
-export function corpoConversa(mensagens, respostaId) {
+export function corpoConversa(mensagens, respostaId, escopo) {
   const corpo = {
     mensagens: (mensagens ?? [])
       .filter((m) => PAPEIS.has(m?.papel) && str(m?.texto).trim())
       .map((m) => ({ papel: m.papel, texto: m.texto })),
   };
   if (str(respostaId).trim()) corpo.resposta_id = respostaId;
+  const e = escopoDoContrato(escopo);
+  if (e) corpo.escopo = e;
   return corpo;
 }
 
@@ -171,11 +184,13 @@ async function leJson(resposta) {
  * histórico — é o que permite avisar, ali mesmo, que o próximo turno não
  * continua a conversa.
  */
-export async function pergunta(mensagens, { apiBase, buscar = globalThis.fetch, respostaId } = {}) {
+export async function pergunta(mensagens, {
+  apiBase, buscar = globalThis.fetch, respostaId, escopo,
+} = {}) {
   const base = String(apiBase ?? '').replace(/\/+$/, '');
 
   const conversa = await postaJson(buscar, base + CAMINHO_CONVERSA,
-    corpoConversa(mensagens, respostaId));
+    corpoConversa(mensagens, respostaId, escopo));
 
   if (conversa.ok) {
     return { ...exigeTexto(normalizaResposta(await leJson(conversa))), viaFallback: false };
@@ -197,15 +212,17 @@ export async function pergunta(mensagens, { apiBase, buscar = globalThis.fetch, 
  * de sempre; 503 e demais status seguem exatamente a regra da rota JSON.
  */
 export async function perguntaAoVivo(mensagens, {
-  apiBase, buscar = globalThis.fetch, respostaId, aoEtapa, aoTexto,
+  apiBase, buscar = globalThis.fetch, respostaId, escopo, aoEtapa, aoTexto,
 } = {}) {
   const base = String(apiBase ?? '').replace(/\/+$/, '');
 
   const r = await postaJson(buscar, base + CAMINHO_CONVERSA_AO_VIVO,
-    corpoConversa(mensagens, respostaId));
+    corpoConversa(mensagens, respostaId, escopo));
 
   if (!r.ok) {
-    if (precisaFallback(r.status)) return pergunta(mensagens, { apiBase, buscar, respostaId });
+    if (precisaFallback(r.status)) {
+      return pergunta(mensagens, { apiBase, buscar, respostaId, escopo });
+    }
     return fallbackOuErro(r, mensagens, base, buscar);
   }
 

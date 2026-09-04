@@ -39,6 +39,8 @@ export function criaSessao({
   apiBase = '',
   buscar = (...a) => globalThis.fetch(...a),
   perguntar = perguntaAoAcervo,
+  // o escopo da página ({cargo, uf?}): vai em toda pergunta desta sessão
+  escopo = null,
 } = {}) {
   const historico = [];
   let ultimoId = null;
@@ -146,6 +148,7 @@ export function criaSessao({
         const resultado = await perguntar(historico.slice(), {
           apiBase,
           respostaId: ultimoId,
+          escopo,
           buscar: (url, opcoes) => buscar(url, { ...opcoes, signal: controle.signal }),
           aoEtapa: seVigente(aoEtapa),
           aoTexto: seVigente(aoTexto),

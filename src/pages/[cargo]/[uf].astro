@@ -36,7 +36,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     </p>
   </div>
 
-  <Chat apiBase={apiBase} escopo={escopo} pagina={pagina}
+  <Chat apiBase={apiBase} escopo={escopo} cargo={cargo.slug} uf={uf.sigla} pagina={pagina}
     placeholder={`Ex.: o que os candidatos a ${cargo.nome.toLowerCase()} propõem para a segurança pública?`} />
 
   <section class="secao-catalogo">

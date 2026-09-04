@@ -270,3 +270,194 @@ test('campos de texto com tipo errado não vazam para a interface', () => {
   assert.equal(r.id, null);
   assert.equal(r.release_status, null);
 });
+
+// --------------------------------------------------------------------------
+// a conversa AO VIVO (/api/conversa/stream)
+// --------------------------------------------------------------------------
+
+import { CAMINHO_CONVERSA_AO_VIVO, leEventos, perguntaAoVivo } from '../src/lib/chat.mjs';
+
+/** Uma resposta SSE de teste: `text()` com os eventos, sem stream de bytes. */
+const sse = (eventos, status = 200) => ({
+  status,
+  text: eventos.map(([tipo, dados]) => `event: ${tipo}\ndata: ${JSON.stringify(dados)}\n`).join('\n'),
+});
+
+function falsoFetchSSE(respostas) {
+  const chamadas = [];
+  const fn = async (url, opcoes) => {
+    chamadas.push({ url, opcoes, corpo: JSON.parse(opcoes.body) });
+    const proxima = respostas.shift();
+    if (!proxima) throw new Error('fetch inesperado: ' + url);
+    const ok = proxima.status >= 200 && proxima.status < 300;
+    return {
+      ok,
+      status: proxima.status,
+      json: async () => proxima.json,
+      text: async () => proxima.text ?? JSON.stringify(proxima.json),
+      body: proxima.body ?? null,
+    };
+  };
+  fn.chamadas = chamadas;
+  return fn;
+}
+
+const EVENTOS_OK = [
+  ['etapa', { m: 'Procurando…' }],
+  ['etapa', { m: 'Escrevendo…' }],
+  ['texto', { t: '## Conclusão\n\nnada ' }],
+  ['texto', { t: 'registrado [S1]' }],
+  ['resultado', { ...RESPOSTA, compartilhamento_id: 'AbCdEfGhIjKlMnOpQrStUv' }],
+];
+
+test('ao vivo: etapas e trechos chegam em ordem e o resultado é o normalizado', async () => {
+  const buscar = falsoFetchSSE([sse(EVENTOS_OK)]);
+  const etapas = [];
+  const trechos = [];
+
+  const r = await perguntaAoVivo(TURNO, {
+    apiBase: API, buscar, aoEtapa: (m) => etapas.push(m), aoTexto: (t) => trechos.push(t),
+  });
+
+  assert.equal(buscar.chamadas.length, 1);
+  assert.equal(buscar.chamadas[0].url, API + CAMINHO_CONVERSA_AO_VIVO);
+  assert.deepEqual(buscar.chamadas[0].corpo, { mensagens: TURNO });
+  assert.deepEqual(etapas, ['Procurando…', 'Escrevendo…']);
+  assert.equal(trechos.join(''), '## Conclusão\n\nnada registrado [S1]');
+  assert.equal(r.texto, RESPOSTA.texto);
+  assert.equal(r.compartilhamento_id, 'AbCdEfGhIjKlMnOpQrStUv');
+  assert.equal(r.viaFallback, false);
+  assert.equal(r.citacoes.length, 1);
+});
+
+test('ao vivo: erro depois de texto é erro tipado — o rascunho não vira resposta', async () => {
+  const buscar = falsoFetchSSE([sse([
+    ['etapa', { m: 'Escrevendo…' }],
+    ['texto', { t: 'parte que o serviço retratou' }],
+    ['erro', { codigo: 'resposta_descartada', erro: 'descartada', status: 502 }],
+  ])]);
+  const trechos = [];
+
+  await assert.rejects(
+    () => perguntaAoVivo(TURNO, { apiBase: API, buscar, aoTexto: (t) => trechos.push(t) }),
+    (e) => e instanceof ErroConversa && e.codigo === 'servidor' && /502/.test(e.message),
+  );
+  assert.equal(trechos.length, 1, 'o trecho chegou antes da retratação');
+});
+
+test('ao vivo: stream que termina sem resultado nem erro é erro, não resposta', async () => {
+  const buscar = falsoFetchSSE([sse([['etapa', { m: 'x' }], ['texto', { t: 'meio' }]])]);
+  await assert.rejects(
+    () => perguntaAoVivo(TURNO, { apiBase: API, buscar }),
+    (e) => e instanceof ErroConversa && e.codigo === 'resposta-invalida',
+  );
+});
+
+test('ao vivo: serviço sem a rota cai na rota JSON de sempre', async () => {
+  const buscar = falsoFetchSSE([{ status: 404, json: {} }, { status: 200, json: RESPOSTA }]);
+
+  const r = await perguntaAoVivo(TURNO, { apiBase: API, buscar });
+
+  assert.deepEqual(buscar.chamadas.map((c) => c.url),
+    [API + CAMINHO_CONVERSA_AO_VIVO, API + '/api/conversa']);
+  assert.equal(r.texto, RESPOSTA.texto);
+  assert.equal(r.viaFallback, false);
+});
+
+test('ao vivo: sem release, o primeiro turno cai em /api/pesquisa', async () => {
+  const buscar = falsoFetchSSE([
+    { status: 503, json: { codigo: 'sem_release', erro: 'sem release' } },
+    { status: 200, json: RESPOSTA },
+  ]);
+
+  const r = await perguntaAoVivo(TURNO, { apiBase: API, buscar });
+
+  assert.deepEqual(buscar.chamadas.map((c) => c.url),
+    [API + CAMINHO_CONVERSA_AO_VIVO, API + '/api/pesquisa']);
+  assert.equal(r.viaFallback, true);
+});
+
+test('ao vivo: sem release, o follow-up não vira pergunta nova em silêncio', async () => {
+  const buscar = falsoFetchSSE([{ status: 503, json: { codigo: 'sem_release' } }]);
+  await assert.rejects(
+    () => perguntaAoVivo(TRES_TURNOS, { apiBase: API, buscar }),
+    (e) => e instanceof ErroConversa && e.codigo === 'sem-followup',
+  );
+  assert.equal(buscar.chamadas.length, 1);
+});
+
+test('ao vivo: 500 é erro, sem fallback', async () => {
+  const buscar = falsoFetchSSE([{ status: 500, json: {} }]);
+  await assert.rejects(
+    () => perguntaAoVivo(TURNO, { apiBase: API, buscar }),
+    (e) => e instanceof ErroConversa && e.codigo === 'servidor',
+  );
+  assert.equal(buscar.chamadas.length, 1);
+});
+
+test('leEventos lê o corpo em stream de bytes, em pedaços cortados no meio', async () => {
+  const texto = EVENTOS_OK
+    .map(([tipo, dados]) => `event: ${tipo}\ndata: ${JSON.stringify(dados)}\n\n`).join('');
+  const bytes = new TextEncoder().encode(texto);
+  // pedaços de 7 bytes: cortam linhas, blocos e até caracteres multibyte
+  const partes = [];
+  for (let i = 0; i < bytes.length; i += 7) partes.push(bytes.slice(i, i + 7));
+  const body = new ReadableStream({
+    start(controller) {
+      for (const p of partes) controller.enqueue(p);
+      controller.close();
+    },
+  });
+  const etapas = [];
+  const trechos = [];
+
+  const fim = await leEventos({ body }, { aoEtapa: (m) => etapas.push(m), aoTexto: (t) => trechos.push(t) });
+
+  assert.equal(fim.tipo, 'resultado');
+  assert.equal(fim.dados.texto, RESPOSTA.texto);
+  assert.deepEqual(etapas, ['Procurando…', 'Escrevendo…']);
+  assert.equal(trechos.join(''), '## Conclusão\n\nnada registrado [S1]');
+});
+
+test('leEventos ignora bloco malformado e para no primeiro evento final', async () => {
+  const eventos = [
+    ['etapa', { m: 'a' }],
+    ['lixo', null],
+    ['resultado', RESPOSTA],
+    ['texto', { t: 'depois do fim, não conta' }],
+  ];
+  const trechos = [];
+  const texto = eventos
+    .map(([tipo, dados]) => `event: ${tipo}\ndata: ${dados === null ? '{nao é json' : JSON.stringify(dados)}\n\n`)
+    .join('');
+
+  const fim = await leEventos({ text: async () => texto }, { aoTexto: (t) => trechos.push(t) });
+
+  assert.equal(fim.tipo, 'resultado');
+  assert.deepEqual(trechos, []);
+});
+
+// --------------------------------------------------------------------------
+// o escopo da página (cargo/UF) vai no corpo
+// --------------------------------------------------------------------------
+
+import { escopoDoContrato } from '../src/lib/chat.mjs';
+
+test('o escopo da página entra no corpo no formato do contrato', () => {
+  assert.deepEqual(corpoConversa(TURNO, null, { cargo: 'governador', uf: 'sp' }),
+    { mensagens: TURNO, escopo: { cargo: 'governador', uf: 'SP' } });
+  assert.deepEqual(corpoConversa(TURNO, null, { cargo: 'presidente', uf: '' }),
+    { mensagens: TURNO, escopo: { cargo: 'presidente' } });
+  assert.deepEqual(corpoConversa(TURNO), { mensagens: TURNO });
+  assert.equal(escopoDoContrato({ cargo: '  ' }), null);
+});
+
+test('as duas rotas mandam o escopo', async () => {
+  const buscar = falsoFetchSSE([sse(EVENTOS_OK)]);
+  await perguntaAoVivo(TURNO, { apiBase: API, buscar, escopo: { cargo: 'senador', uf: 'ba' } });
+  assert.deepEqual(buscar.chamadas[0].corpo.escopo, { cargo: 'senador', uf: 'BA' });
+
+  const buscar2 = falsoFetch([ok(RESPOSTA)]);
+  await pergunta(TURNO, { apiBase: API, buscar: buscar2, escopo: { cargo: 'presidente' } });
+  assert.deepEqual(buscar2.chamadas[0].corpo.escopo, { cargo: 'presidente' });
+});

@@ -26,5 +26,5 @@ test('cada cargo por UF tem a página de escolha da UF e a página da conversa',
   assert.ok(existsSync(`${ROOT}/src/pages/[cargo]/index.astro`));
   assert.ok(existsSync(`${ROOT}/src/pages/[cargo]/[uf].astro`));
   const conversa = readFileSync(`${ROOT}/src/pages/[cargo]/[uf].astro`, 'utf8');
-  assert.match(conversa, /<Chat apiBase=\{apiBase\} escopo=\{escopo\} pagina=\{pagina\}/);
+  assert.match(conversa, /<Chat apiBase=\{apiBase\} escopo=\{escopo\} cargo=\{cargo\.slug\} uf=\{uf\.sigla\} pagina=\{pagina\}/);
 });
