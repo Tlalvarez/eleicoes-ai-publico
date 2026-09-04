@@ -30,11 +30,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       Pergunte à IA sobre os candidatos a {cargo.nome.toLowerCase()} — {uf.nome} ({uf.sigla}).
       <a href={cargo.href}>Trocar de estado</a>
     </p>
-    <p class="aviso-cobertura">
-      <strong>Cobertura em expansão.</strong> As respostas usam só o material já reunido para
-      este cargo e este estado; o que não existe no acervo aparece como lacuna, nunca como posição.
-      O escopo <q>{escopo}</q> vai na frente de cada pergunta enviada.
-    </p>
   </div>
 
   <Chat apiBase={apiBase} escopo={escopo} pagina={pagina}
@@ -50,11 +45,6 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       font-weight: 800;
       letter-spacing: .13em;
       text-transform: uppercase;
-    }
-    .aviso-cobertura {
-      font-size: .9rem; color: var(--acento-forte);
-      background: var(--realce-atencao); border: 1px solid var(--linha-atencao);
-      border-radius: 8px; padding: .6rem .9rem; margin: .8rem 0 0; max-width: none;
     }
   </style>
 </Base>
