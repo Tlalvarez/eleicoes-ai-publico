@@ -1,91 +1,45 @@
 ---
-title: "Como o eleicoes.ai analisa os candidatos"
+title: "Metodologia: como o eleicoes.ai funciona"
 ---
-# Como o eleicoes.ai analisa os candidatos
+# Metodologia: como o eleicoes.ai funciona
 
-O eleicoes.ai existe para uma coisa: ajudar você a saber **o que cada candidato
-diz, propõe e fez** — com a fonte original ao lado de cada informação, para você
-conferir por conta própria. Esta página explica como fazemos isso.
+O eleicoes.ai reúne evidências sobre os candidatos e oferece um chat para você perguntar sobre elas. Esta página explica de onde vem cada informação, como o chat responde e onde ele pode falhar.
 
-## O que você encontra aqui (e o que não encontra)
+## 1. Nossos princípios
 
-**Você encontra:**
+- Buscamos informações oficiais e falas do próprio candidato, inclusive em entrevistas.
+- Fofocas, interpretações, vídeos editados e comentários de terceiros não contam como posição do candidato.
+- Não opinamos, não recomendamos voto, não ranqueamos candidatos e não prevemos resultados.
+- Mostramos os fatos e a fonte de cada um. O resto é com você.
+- O método fica público e versionado no [histórico do repositório](https://github.com/Tlalvarez/eleicoes-ai-publico/commits/main).
 
-- o que cada candidato **escreveu no plano de governo** registrado na Justiça
-  Eleitoral;
-- o que cada candidato **disse publicamente** nos últimos cinco anos — vídeos,
-  posts, discursos, entrevistas — sempre com o link para a fonte original.
+## 2. Como coletamos as evidências
 
-**Você não encontra:**
+Por candidatura, buscamos cerca de cinco anos de histórico nestas fontes:
 
-- recomendação de voto — **nunca** dizemos em quem votar, nem damos nota ou
-  ranking de candidato;
-- previsões — não tentamos adivinhar o futuro;
-- opinião — quando uma informação não tem fonte, ela não entra.
+- o programa de governo que a candidatura registrou no TSE;
+- os sites e as redes sociais informados ao TSE;
+- de quem exerceu cargo público, as fontes institucionais da atuação: documentos oficiais, discursos e registros públicos;
+- vídeos do YouTube em que o próprio candidato fala, inclusive entrevistas.
 
-## As duas perguntas que fazemos sobre cada candidato
+Para preservar o contexto, deixamos de fora vídeos muito curtos ou editados, como Shorts e cortes.
 
-**1. O que está escrito no plano?** Lemos o plano de governo inteiro, do começo
-ao fim. Cada conclusão aponta a página de onde saiu.
+De cada item guardamos a origem e a data, para você poder voltar ao original.
 
-**2. O que o candidato fez e disse?** Promessa é uma coisa; histórico é outra.
-Por isso também olhamos o que o candidato fez em cargos públicos e o que
-declarou ao longo do tempo, sempre com data e fonte. Para quem já governa ou
-governou há pouco, o histórico pesa mais que o texto — porque aí existe
-comportamento real para comparar.
+## 3. Como o chat funciona
 
-## Os seis temas que olhamos em todo plano
+- Você pergunta em português, como falaria com uma pessoa.
+- A resposta não sai de uma leitura do acervo inteiro a cada pergunta.
+- Primeiro o sistema procura, no material daquele candidato, os trechos mais relevantes para a sua pergunta.
+- Esses trechos vão para o Claude Opus 5, o modelo de inteligência artificial que escreve a resposta.
+- O modelo recebe a instrução de resumir os trechos e indicar a fonte de cada ponto.
+- O chat recebe instruções para não emitir opinião, preferência, recomendação de voto, ranking ou previsão.
+- Por isso a resposta pode não citar um documento que existe: ele não entrou nos trechos.
 
-Para comparar candidatos de forma justa, lemos todos os planos procurando os
-mesmos seis temas:
+## Limitações importantes
 
-1. **Contas públicas** — o plano aperta, mantém ou afrouxa o controle dos
-   gastos do governo?
-2. **Comércio com outros países** — abre, mantém ou fecha a economia?
-3. **Previdência** — enfrenta o problema, empurra com a barriga, ou promete
-   que o dinheiro vai aparecer sozinho?
-4. **Educação** — tem metas concretas de qualidade, ou só promete gastar mais?
-5. **Papel do Estado na economia** — o governo deve fazer mais ou menos coisas
-   diretamente?
-6. **Respeito às instituições** — o plano trata adversários como concorrentes
-   legítimos ou como inimigos? Quer aperfeiçoar as regras do jogo ou
-   refundá-las?
-
-Em cada tema, a resposta possível é sempre a mesma para todos os candidatos —
-inclusive **"o plano não fala disso"**, que é uma resposta válida e publicada.
-
-## Os dois testes
-
-**Teste das contas:** somamos o que o plano promete gastar e comparamos com o
-que ele diz ter de dinheiro. Se o plano não traz nenhum número, o resultado é
-"impossível calcular pelo texto" — e isso, por si só, já diz muito.
-
-**Teste da viabilidade:** um plano pode ser sincero e mesmo assim impossível.
-Medimos o quanto cada proposta depende de mudar a Constituição, de apoio no
-Congresso e de fatores que nenhum presidente controla sozinho.
-
-## Como garantimos que a régua é igual para todos
-
-- **Mesma régua, mesma profundidade.** Todo candidato passa pela mesma leitura,
-  pelos mesmos seis temas e pelos mesmos testes — quem tem pouco material
-  aparece com a lacuna dita, nunca escondido.
-- **Método testado no passado.** Antes de usar esta régua em 2026, nós a
-  aplicamos aos planos de governo de 2002 a 2022 — nove documentos — para
-  verificar se ela funcionava e não favorecia nenhum lado. Os erros que
-  encontramos estão registrados publicamente, junto com as correções.
-- **Régua congelada.** O método foi fechado antes do registro das candidaturas.
-  Qualquer mudança a partir daí é anunciada publicamente, com justificativa que
-  não pode ter relação com nenhum candidato específico.
-- **Tudo versionado.** Esta página e todas as análises ficam em um repositório
-  público: cada mudança deixa rastro, com data e autor.
-- **Inteligência artificial, com aviso.** As respostas do site são geradas e
-  revisadas por inteligência artificial, sem revisão humana — e todas dizem
-  isso. Transcrição automática de vídeo pode conter erros; por isso toda
-  citação vem com o link para você conferir na fonte.
-
-## Quer os detalhes técnicos?
-
-A versão completa e técnica da metodologia (v1.1), com as categorias formais,
-os testes de calibração de 2002–2022 e o registro de mudanças, está no
-[histórico deste repositório](https://github.com/Tlalvarez/eleicoes-ai-publico/commits/main/src/content/metodologia.md)
-e nos [anexos de verificação](/verificacao) publicados neste site.
+- Modelos de inteligência artificial podem errar, inclusive ao resumir. Na dúvida, confira.
+- A coleta foi planejada para ser ampla, mas pode ter omissões.
+- Não encontrar material sobre um tema não significa que o candidato não tenha posição.
+- O documento original vale mais que qualquer resumo. Quando a resposta cita uma evidência, ela traz o link do original.
+- As evidências publicadas podem ser consultadas no [acervo](/acervo).
