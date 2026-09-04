@@ -43,7 +43,7 @@ const {
         <button type="button" class="botao secundario" id="nova" hidden>Começar outra conversa</button>
       </div>
       <p class="nota-envio">
-        <kbd>Enter</kbd> envia · <kbd>Shift</kbd>+<kbd>Enter</kbd> quebra linha ·
+        <kbd>Enter</kbd> quebra linha · clique em <strong>Perguntar</strong> para enviar ·
         a resposta pode levar alguns minutos para ser computada.
       </p>
     </form>
@@ -718,12 +718,8 @@ const {
       envia(entrada.value);
     });
 
-    entrada.addEventListener('keydown', (ev) => {
-      if (ev.key === 'Enter' && !ev.shiftKey && !ev.isComposing) {
-        ev.preventDefault();
-        form.requestSubmit();
-      }
-    });
+    // Enter quebra linha (comportamento nativo do textarea); a pergunta só
+    // sai pelo botão Perguntar — nenhum atalho de teclado envia por acidente.
 
     cancelar.addEventListener('click', () => sessao.cancela());
 
