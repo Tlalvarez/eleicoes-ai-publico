@@ -189,13 +189,32 @@ export async function pergunta(mensagens, {
 } = {}) {
   const base = String(apiBase ?? '').replace(/\/+$/, '');
 
-  const conversa = await postaJson(buscar, base + CAMINHO_CONVERSA,
+  let conversa = await postaJson(buscar, base + CAMINHO_CONVERSA,
     corpoConversa(mensagens, respostaId, escopo));
+
+  // Serviço ANTERIOR ao escopo: o contrato dele é fechado e devolve 400
+  // `chaves_desconhecidas` para a chave nova. Site e serviço publicam em
+  // lugares diferentes, e o site pode sair na frente — nesse intervalo a
+  // pergunta segue sem escopo (o comportamento antigo), em vez de quebrar.
+  if (escopoDoContrato(escopo) && await recusouOEscopo(conversa)) {
+    conversa = await postaJson(buscar, base + CAMINHO_CONVERSA,
+      corpoConversa(mensagens, respostaId, null));
+  }
 
   if (conversa.ok) {
     return { ...exigeTexto(normalizaResposta(await leJson(conversa))), viaFallback: false };
   }
   return fallbackOuErro(conversa, mensagens, base, buscar);
+}
+
+async function recusouOEscopo(resposta) {
+  if (resposta.status !== 400) return false;
+  try {
+    const corpo = await resposta.json();
+    return corpo?.codigo === 'chaves_desconhecidas' && /escopo/.test(String(corpo?.erro));
+  } catch {
+    return false;
+  }
 }
 
 /**

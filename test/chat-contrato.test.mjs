@@ -461,3 +461,35 @@ test('as duas rotas mandam o escopo', async () => {
   await pergunta(TURNO, { apiBase: API, buscar: buscar2, escopo: { cargo: 'presidente' } });
   assert.deepEqual(buscar2.chamadas[0].corpo.escopo, { cargo: 'presidente' });
 });
+
+test('serviço anterior ao escopo (400 chaves_desconhecidas) recebe a pergunta sem escopo', async () => {
+  const buscar = falsoFetch([
+    { status: 400, json: { codigo: 'chaves_desconhecidas', erro: "o pedido só aceita 'mensagens' e 'resposta_id'; remova: escopo" } },
+    ok(RESPOSTA),
+  ]);
+
+  const r = await pergunta(TURNO, { apiBase: API, buscar, escopo: { cargo: 'presidente' } });
+
+  assert.equal(buscar.chamadas.length, 2);
+  assert.deepEqual(buscar.chamadas[0].corpo.escopo, { cargo: 'presidente' });
+  assert.equal(buscar.chamadas[1].corpo.escopo, undefined);
+  assert.equal(r.texto, RESPOSTA.texto);
+});
+
+test('outro 400 não é reenviado', async () => {
+  const buscar = falsoFetch([{ status: 400, json: { codigo: 'texto_longo', erro: 'x' } }]);
+  await assert.rejects(() => pergunta(TURNO, { apiBase: API, buscar, escopo: { cargo: 'presidente' } }));
+  assert.equal(buscar.chamadas.length, 1);
+});
+
+test('ao vivo num serviço antigo: 404 na rota nova, 400 pelo escopo, e a pergunta chega mesmo assim', async () => {
+  const buscar = falsoFetchSSE([
+    { status: 404, json: {} },
+    { status: 400, json: { codigo: 'chaves_desconhecidas', erro: 'remova: escopo' } },
+    { status: 200, json: RESPOSTA },
+  ]);
+  const r = await perguntaAoVivo(TURNO, { apiBase: API, buscar, escopo: { cargo: 'presidente' } });
+  assert.deepEqual(buscar.chamadas.map((c) => c.url),
+    [API + CAMINHO_CONVERSA_AO_VIVO, API + '/api/conversa', API + '/api/conversa']);
+  assert.equal(r.texto, RESPOSTA.texto);
+});
