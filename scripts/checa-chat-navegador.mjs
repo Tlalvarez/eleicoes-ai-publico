@@ -54,7 +54,8 @@
  */
 import { createServer } from 'node:http';
 import { spawn, spawnSync } from 'node:child_process';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { fileURLToPath } from 'node:url';
 import { extname, join, normalize } from 'node:path';
 
@@ -76,12 +77,26 @@ const NAVEGADORES = ['google-chrome', 'chromium', 'chromium-browser',
  * é do arranque do navegador. Por isso as flags são ESCOLHIDAS por um
  * pré-voo, e não fixadas na fé.
  */
+// Perfil PRÓPRIO e descartável para cada execução do gate. Sem
+// `--user-data-dir`, o Chrome headless abre o perfil do usuário da máquina —
+// o mesmo que o Chrome de verdade pode estar usando naquele momento —, carrega
+// sincronização, apps gerenciados e serviços de fundo, e ora responde em 3 s,
+// ora fica preso até o timeout de 90 s. Um gate que depende de o navegador do
+// usuário estar fechado não é um gate.
+const PERFIL = mkdtempSync(join(tmpdir(), 'chat-gate-chrome-'));
+const FLAGS_DE_ISOLAMENTO = [
+  `--user-data-dir=${PERFIL}`, '--no-default-browser-check',
+  '--disable-background-networking', '--disable-sync', '--disable-component-update',
+  // no macOS, perfil novo pede acesso ao Keychain ("Chrome Safe Storage") —
+  // uma caixa de diálogo que um processo headless nunca fecha
+  '--use-mock-keychain', '--password-store=basic',
+];
 const CONJUNTOS_DE_FLAGS = [
   ['--headless=new', '--disable-gpu', '--no-sandbox', '--no-first-run',
-    '--disable-extensions', '--hide-scrollbars'],
+    '--disable-extensions', '--hide-scrollbars', ...FLAGS_DE_ISOLAMENTO],
   ['--headless=new', '--disable-gpu', '--no-sandbox', '--no-first-run',
-    '--disable-extensions', '--hide-scrollbars', '--disable-dev-shm-usage'],
-  ['--headless', '--disable-gpu', '--no-sandbox'],
+    '--disable-extensions', '--hide-scrollbars', '--disable-dev-shm-usage', ...FLAGS_DE_ISOLAMENTO],
+  ['--headless', '--disable-gpu', '--no-sandbox', ...FLAGS_DE_ISOLAMENTO],
 ];
 
 const TIPOS = {
@@ -116,10 +131,14 @@ const TEXTO_RESPOSTA = [
   'Tentativa de injeção que precisa continuar sendo TEXTO:',
   '[clique aqui](javascript:alert(1)) e <img src=x onerror=alert(1)> e <script>alert(2)</script>',
   '',
+  // o link interno legítimo também fica ANTES de ## Lacunas, pelo mesmo motivo:
+  // a afirmação é que um link do próprio site SOBREVIVE ao filtro, e isso só
+  // é observável numa seção que a interface mostra
+  'Veja o [acervo por candidato](/acervo) para conferir a cobertura.',
+  '',
   '## Lacunas',
   '',
   '- Nada registrado para os demais candidatos.',
-  '- Veja o [acervo por candidato](/acervo) para conferir a cobertura.',
 ].join('\n');
 
 /** O identificador público que o serviço passou a devolver: 22 caracteres. */
@@ -191,7 +210,16 @@ function sobeServidor(modo) {
       const caminho = join(DIST, tentativa);
       if (existsSync(caminho) && !caminho.endsWith('/')) {
         try {
-          const dados = readFileSync(caminho);
+          let dados = readFileSync(caminho);
+          // O build de produção embute o endereço público da API em `data-api`
+          // (PUBLIC_PESQUISA_API). Servido assim, o chat ignoraria a API falsa
+          // deste gate e faria perguntas REAIS ao serviço em produção — pagas,
+          // lentas e fora do orçamento de tempo do navegador. Aqui a página é
+          // servida com a API na MESMA ORIGEM, que é a premissa deste gate.
+          if (extname(caminho) === '.html') {
+            dados = Buffer.from(dados.toString('utf8')
+              .replace(/data-api="https?:\/\/[^"]*"/g, 'data-api=""'));
+          }
           res.writeHead(200, { 'Content-Type': TIPOS[extname(caminho)] ?? 'application/octet-stream' });
           res.end(dados);
           return;
@@ -231,8 +259,21 @@ function dumpDom(navegador, flags, url, { orcamento = 15000, exigeConteudo = tru
     ], { stdio: ['ignore', 'pipe', 'ignore'] });
 
     let saida = '';
+    let encerrado = false;
     proc.stdout.setEncoding('utf8');
-    proc.stdout.on('data', (p) => { saida += p; });
+    // `--dump-dom` imprime o documento inteiro de uma vez e, com perfil
+    // isolado, o processo às vezes fica vivo depois disso (serviços de fundo
+    // encerrando). O que este gate quer é o DOM: assim que ele chegou inteiro,
+    // o navegador já fez o seu trabalho e é encerrado daqui.
+    proc.stdout.on('data', (p) => {
+      saida += p;
+      if (!encerrado && /<\/html>\s*$/i.test(saida)) {
+        encerrado = true;
+        clearTimeout(relogio);
+        proc.kill('SIGKILL');
+        ok(saida);
+      }
+    });
 
     const relogio = setTimeout(() => {
       proc.kill('SIGKILL');
@@ -241,6 +282,7 @@ function dumpDom(navegador, flags, url, { orcamento = 15000, exigeConteudo = tru
 
     proc.on('error', (e) => { clearTimeout(relogio); erro(e); });
     proc.on('close', () => {
+      if (encerrado) return;
       clearTimeout(relogio);
       // depois do pré-voo, DOM vazio é falha de arranque, não resposta em
       // branco: dizer isso aqui evita a cascata de afirmações de produto
@@ -489,3 +531,5 @@ console.log(`OK (navegador): ${navegador} renderizou a resposta do bundle public
   + 'javascript:/HTML injetado, reabriu o permalink legado sem rede, recusou permalink '
   + 'forjado (endereço executável e release "oficial"), disse a indisponibilidade do link '
   + 'quando o serviço não devolve identificador e caiu no fallback de /api/pesquisa');
+
+rmSync(PERFIL, { recursive: true, force: true });
