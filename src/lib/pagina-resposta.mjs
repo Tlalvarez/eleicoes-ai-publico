@@ -185,10 +185,8 @@ const CABECALHO = `<header class="site">
 const RODAPE = `<footer class="site">
   <div class="inner">
     <p><strong>Transparência:</strong> as respostas são geradas por inteligência artificial
-    exclusivamente a partir das evidências recuperadas para cada pergunta. Fontes, datas,
-    lacunas e o estado da versão usada acompanham o resultado.</p>
-    <p><strong>Neutralidade:</strong> o eleicoes.ai não recomenda voto, não ranqueia candidatos
-    e não transforma ausência no acervo em posição política.</p>
+    exclusivamente a partir das evidências recuperadas para cada pergunta.</p>
+    <p><strong>Neutralidade:</strong> o eleicoes.ai não recomenda voto e não ranqueia candidatos.</p>
     <p><a href="/metodologia">Metodologia</a> · conteúdo versionado · 2026</p>
     <p class="independencia">O eleicoes.ai é uma <strong>iniciativa independente</strong>, sem
     vínculo, patrocínio ou endosso da Justiça Eleitoral.</p>
