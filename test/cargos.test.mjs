@@ -33,6 +33,6 @@ test('a rota de uma UF é minúscula e fica sob o cargo', () => {
 
 test('cada candidatura da home tem endereço oficial no TSE', () => {
   assert.equal(urlCandidaturaTse('lula'),
-    'https://divulgacandcontas.tse.jus.br/divulga/#/candidato/2026/20322002026/BR/280002542548');
+    'https://divulgacandcontas.tse.jus.br/divulga/#/candidato/BR/BR/20322002026/280002542548/2026/BR');
   assert.throws(() => urlCandidaturaTse('ninguem'), /sem identificador/);
 });

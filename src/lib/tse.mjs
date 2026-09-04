@@ -16,8 +16,12 @@ export function urlCandidaturaTse(slug, dados = candidaturas) {
   if (!c || !/^\d+$/.test(String(c.id_candidatura))) {
     throw new Error(`Candidatura sem identificador no TSE: ${slug} (src/data/candidaturas-tse.json)`);
   }
+  // o formato é o que a própria interface do TSE (v2.8.22) gera ao abrir um
+  // candidato: região / UF / eleição / candidatura / ano / UF. Para presidente,
+  // região e UF são "BR". O formato antigo (ano/eleição/UF/candidatura) abre a
+  // tela "Erro ao carregar a página".
   const { ano, id_eleicao, abrangencia } = dados.eleicao;
-  return `${BASE_DIVULGA}/${ano}/${id_eleicao}/${abrangencia}/${c.id_candidatura}`;
+  return `${BASE_DIVULGA}/${abrangencia}/${abrangencia}/${id_eleicao}/${c.id_candidatura}/${ano}/${abrangencia}`;
 }
 
 /** {slug: url} de todas as candidaturas declaradas. */
