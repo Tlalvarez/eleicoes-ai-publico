@@ -140,5 +140,5 @@ export function comparaCatalogos(fontes) {
  */
 export function redirectsDeMencoes(catalogo) {
   return Object.fromEntries(Object.keys(catalogo).map(
-    (slug) => [`/mencoes/${slug}`, `/candidato/${slug}/mencoes`]));
+    (slug) => [`/mencoes/${slug}`, `/presidente/${slug}`]));
 }

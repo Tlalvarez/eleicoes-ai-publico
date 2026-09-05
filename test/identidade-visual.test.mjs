@@ -27,15 +27,11 @@ const le = (rel) => readFileSync(fileURLToPath(new URL(rel, import.meta.url)), '
 const css = le('../src/styles/global.css');
 const base = le('../src/layouts/Base.astro');
 const home = le('../src/pages/index.astro');
-const acervo = le('../src/pages/acervo/index.astro');
-const estadoRelease = le('../src/components/EstadoRelease.astro');
 
 const arquivos = {
   'src/styles/global.css': css,
   'src/layouts/Base.astro': base,
   'src/pages/index.astro': home,
-  'src/pages/acervo/index.astro': acervo,
-  'src/components/EstadoRelease.astro': estadoRelease,
 };
 
 /** O primeiro bloco `:root { … }` da folha — o do tema claro. */

@@ -43,7 +43,7 @@ const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
  * As páginas internas do acervo (`/acervo/<slug>/...`) reproduzem material
  * coletado e ficam de fora por isso — ver o cabeçalho.
  */
-const SUPERFICIES = ['index.html', 'acervo.html'];
+const SUPERFICIES = ['index.html'];
 
 /**
  * Onde o estado dos dados precisa estar escrito na própria página.
@@ -107,8 +107,7 @@ const fonteDoRotulo = readFileSync(
 if (!fonteDoRotulo.includes(ROTULO_PREVIA)) {
   falhas.push('o rótulo de prévia não está declarado em src/lib/release.mjs');
 }
-for (const arquivo of ['src/pages/index.astro', 'src/pages/acervo/index.astro',
-  'src/components/EstadoRelease.astro']) {
+for (const arquivo of ['src/pages/index.astro']) {
   const texto = readFileSync(fileURLToPath(new URL(`../${arquivo}`, import.meta.url)), 'utf8');
   if (texto.includes(ROTULO_PREVIA)) {
     falhas.push(`${arquivo}: escreve o rótulo de estado à mão — ele tem de vir do `

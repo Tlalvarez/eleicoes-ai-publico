@@ -13,13 +13,15 @@ feito. O canal de contato e de retirada de respostas está em
 
 ## O que o site é hoje
 
-- **Um chat com o acervo.** A home e as páginas por cargo (Presidente, Governador, Deputado
-  federal, por UF) são a mesma conversa com escopo diferente. A resposta é gerada por IA a partir
-  dos trechos recuperados para a pergunta, com as fontes citadas. A seção Senador está suspensa
-  até a coleta ficar completa.
+- **Um chat com o acervo.** A home e as páginas por cargo (Presidente e Governador, por UF)
+  são a mesma conversa com escopo diferente. A resposta é gerada por IA a partir dos trechos
+  recuperados para a pergunta, com as fontes citadas. As seções Senador e Deputado federal
+  estão suspensas até a coleta ficar completa.
 - **Um acervo de evidências por candidato**, coletado por um harness privado e publicado como
-  índice: o site mostra título, data, fonte e link do original, nunca o texto integral nem a
-  transcrição.
+  índice (`data/acervo/indice.json`), que o gate de catálogo confere contra o canônico. As páginas
+  navegáveis do acervo, o hub por candidato e as menções saíram do build em 05/09/2026
+  (ninguém chegava nelas; o acervo não funcionava no celular); os endereços antigos
+  redirecionam para a conversa sobre o candidato (`public/_redirects`).
 - **Sem revisor humano por resposta.** As respostas são geradas e revisadas por IA, e dizem isso
   no rodapé. O responsável editorial pelo site e pelas decisões é identificado em `/sobre`.
 
@@ -29,7 +31,7 @@ O que o site **não** é: não recomenda voto, não ranqueia candidatos, não é
 
 | Caminho | Conteúdo |
 |---|---|
-| `src/` | O site (Astro). Páginas por cargo/UF, chat, acervo, metodologia |
+| `src/` | O site (Astro). Páginas por cargo/UF, chat, metodologia, quem faz, privacidade |
 | `src/content/metodologia.md` | Metodologia atual: como as evidências são coletadas, como o chat responde, limitações |
 | `src/content/verificacao/` | Dossiê: 7 anexos de verificação documental dos backtests 2002–2022 (registro histórico da v1.1) |
 | `src/data/candidatos.json` | Catálogo canônico de candidatos a presidente (fonte de autoridade, editado à mão) |
@@ -71,7 +73,7 @@ npm test               # o gate completo
   build, `http://localhost:8765` no `astro dev`). Em produção é `https://api.eleicoes.ai`.
 - O gate de navegador precisa de um Chrome/Chromium: defina `CHROME_BIN` se ele não estiver no
   `PATH`.
-- No cliente há JavaScript no chat e no filtro do acervo; o resto é HTML estático. A medição de
+- No cliente há JavaScript só no chat; o resto é HTML estático. A medição de
   audiência (PostHog) roda só no domínio publicado, sem cookies, sem perfil de pessoa e com o
   texto da pergunta mascarado.
 
@@ -83,8 +85,7 @@ npm test               # o gate completo
 | `npm run test:unit` | o laço curto: as mesmas checagens, sem compilar | durante o desenvolvimento |
 | `npm run test:integracao` | mesmo que `npm test` (nome mantido pelo operacional) | — |
 
-A verificação do dist confere: a home é o chat e lista o catálogo inteiro; o acervo tem todos os
-candidatos e os links internos existem; nenhum arquivo usa `innerHTML`, `set:html`, `eval` ou
+A verificação do dist confere: a home é o chat e lista o catálogo inteiro; nenhum arquivo usa `innerHTML`, `set:html`, `eval` ou
 `document.write` (a resposta de terceiro só vira DOM por `createElement`); a prévia não afirma
 oficialidade; `_headers` tem CSP coerente com os scripts embutidos; acessibilidade básica em todas
 as páginas; e o chat funciona num Chrome real contra uma API falsa.

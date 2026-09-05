@@ -8,3 +8,66 @@
 # Fichas por candidato: promessa da v1.1 retirada em 05/09/2026 (ver
 # astro.config.mjs). 301: a página não volta; o método atual está na metodologia.
 /fichas /metodologia 301
+
+# Acervo navegável, hub por candidato e menções: retirados do build em 05/09/2026
+# (decisão do Thiago). Ninguém chegava neles pelo menu ou pela resposta, e o acervo
+# não funcionava no celular. A Pages conserva por 7 dias os arquivos apagados de uma
+# publicação, então os endereços antigos precisam de redirecionamento explícito.
+# Link antigo de um candidato cai na conversa sobre ele; raiz cai na home. 302: o
+# acervo volta quando for produto (paginação, busca, link a partir das fontes).
+# As linhas por candidato seguem src/data/candidatos.json (test/lancamento.test.mjs).
+/acervo/augusto-cury/* /presidente/augusto-cury 302
+/acervo/augusto-cury /presidente/augusto-cury 302
+/candidato/augusto-cury/* /presidente/augusto-cury 302
+/candidato/augusto-cury /presidente/augusto-cury 302
+/acervo/clariana-barao/* /presidente/clariana-barao 302
+/acervo/clariana-barao /presidente/clariana-barao 302
+/candidato/clariana-barao/* /presidente/clariana-barao 302
+/candidato/clariana-barao /presidente/clariana-barao 302
+/acervo/edmilson-costa/* /presidente/edmilson-costa 302
+/acervo/edmilson-costa /presidente/edmilson-costa 302
+/candidato/edmilson-costa/* /presidente/edmilson-costa 302
+/candidato/edmilson-costa /presidente/edmilson-costa 302
+/acervo/flavio-bolsonaro/* /presidente/flavio-bolsonaro 302
+/acervo/flavio-bolsonaro /presidente/flavio-bolsonaro 302
+/candidato/flavio-bolsonaro/* /presidente/flavio-bolsonaro 302
+/candidato/flavio-bolsonaro /presidente/flavio-bolsonaro 302
+/acervo/hertz-dias/* /presidente/hertz-dias 302
+/acervo/hertz-dias /presidente/hertz-dias 302
+/candidato/hertz-dias/* /presidente/hertz-dias 302
+/candidato/hertz-dias /presidente/hertz-dias 302
+/acervo/lula/* /presidente/lula 302
+/acervo/lula /presidente/lula 302
+/candidato/lula/* /presidente/lula 302
+/candidato/lula /presidente/lula 302
+/acervo/pablo-marcal/* /presidente/pablo-marcal 302
+/acervo/pablo-marcal /presidente/pablo-marcal 302
+/candidato/pablo-marcal/* /presidente/pablo-marcal 302
+/candidato/pablo-marcal /presidente/pablo-marcal 302
+/acervo/renan-santos/* /presidente/renan-santos 302
+/acervo/renan-santos /presidente/renan-santos 302
+/candidato/renan-santos/* /presidente/renan-santos 302
+/candidato/renan-santos /presidente/renan-santos 302
+/acervo/romeu-zema/* /presidente/romeu-zema 302
+/acervo/romeu-zema /presidente/romeu-zema 302
+/candidato/romeu-zema/* /presidente/romeu-zema 302
+/candidato/romeu-zema /presidente/romeu-zema 302
+/acervo/ronaldo-caiado/* /presidente/ronaldo-caiado 302
+/acervo/ronaldo-caiado /presidente/ronaldo-caiado 302
+/candidato/ronaldo-caiado/* /presidente/ronaldo-caiado 302
+/candidato/ronaldo-caiado /presidente/ronaldo-caiado 302
+/acervo/rui-costa-pimenta/* /presidente/rui-costa-pimenta 302
+/acervo/rui-costa-pimenta /presidente/rui-costa-pimenta 302
+/candidato/rui-costa-pimenta/* /presidente/rui-costa-pimenta 302
+/candidato/rui-costa-pimenta /presidente/rui-costa-pimenta 302
+/acervo/samara/* /presidente/samara 302
+/acervo/samara /presidente/samara 302
+/candidato/samara/* /presidente/samara 302
+/candidato/samara /presidente/samara 302
+/acervo/wilson-grassi/* /presidente/wilson-grassi 302
+/acervo/wilson-grassi /presidente/wilson-grassi 302
+/candidato/wilson-grassi/* /presidente/wilson-grassi 302
+/candidato/wilson-grassi /presidente/wilson-grassi 302
+/acervo / 302
+/candidato / 302
+/mencoes / 302

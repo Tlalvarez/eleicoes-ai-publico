@@ -20,8 +20,8 @@ const resumo = { candidatos: {
 
 test('um redirecionamento por candidato do catálogo', () => {
   assert.deepEqual(redirectsDeMencoes(catalogoDoResumo(resumo)), {
-    '/mencoes/ana-brito': '/candidato/ana-brito/mencoes',
-    '/mencoes/zuleide-alves': '/candidato/zuleide-alves/mencoes',
+    '/mencoes/ana-brito': '/presidente/ana-brito',
+    '/mencoes/zuleide-alves': '/presidente/zuleide-alves',
   });
 });
 
@@ -30,7 +30,7 @@ test('candidato novo no catálogo entra sozinho', () => {
   const redirects = redirectsDeMencoes(catalogoDoResumo(ampliado));
 
   assert.equal(Object.keys(redirects).length, 3);
-  assert.equal(redirects['/mencoes/edu-farias'], '/candidato/edu-farias/mencoes');
+  assert.equal(redirects['/mencoes/edu-farias'], '/presidente/edu-farias');
 });
 
 test('a configuração do Astro não tem slug escrito à mão', async () => {
@@ -52,7 +52,7 @@ test('a configuração do Astro gera os redirects de todos os candidatos', async
     readFileSync(new URL('../data/itens/resumo.json', import.meta.url), 'utf8')));
 
   for (const slug of Object.keys(catalogo)) {
-    assert.equal(config.redirects[`/mencoes/${slug}`], `/candidato/${slug}/mencoes`,
+    assert.equal(config.redirects[`/mencoes/${slug}`], `/presidente/${slug}`,
       `sem redirecionamento de /mencoes/${slug}`);
   }
   // /mencoes/<slug> é EXATAMENTE o catálogo — nem um a mais, nem a menos.
@@ -94,7 +94,7 @@ test('os treze do catálogo canônico têm redirecionamento', async () => {
 
   assert.equal(Object.keys(canonico).length, 13);
   for (const slug of Object.keys(canonico)) {
-    assert.equal(config.redirects[`/mencoes/${slug}`], `/candidato/${slug}/mencoes`,
+    assert.equal(config.redirects[`/mencoes/${slug}`], `/presidente/${slug}`,
       `sem redirecionamento de /mencoes/${slug}`);
   }
 });

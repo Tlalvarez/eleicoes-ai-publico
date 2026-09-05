@@ -14,12 +14,30 @@ test('lançamento: o layout só emite noindex quando a página pede', async () =
   assert.match(base, /noindex = false,/);
 });
 
-test('seções fora do menu pedem noindex; as do menu, não', async () => {
-  const pede = ['pages/candidato/index.astro', 'pages/acervo/index.astro', 'pages/mencoes/index.astro',
-    'pages/verificacao/index.astro', 'pages/candidato/[slug]/voz.astro'];
-  for (const f of pede) assert.match(await le(f), /<Base noindex/, f);
+test('só a verificação pede noindex; as páginas do menu, não', async () => {
+  for (const f of ['pages/verificacao/index.astro', 'pages/verificacao/[slug].astro']) {
+    assert.match(await le(f), /<Base noindex/, f);
+  }
   for (const f of ['pages/index.astro', 'pages/[cargo]/index.astro', 'pages/metodologia.astro', 'pages/sobre.astro', 'pages/privacidade.astro']) {
     assert.doesNotMatch(await le(f), /<Base noindex/, f);
+  }
+});
+
+test('acervo, hub por candidato e menções saíram do build; os endereços antigos redirecionam', async () => {
+  const { existsSync } = await import('node:fs');
+  for (const dir of ['pages/acervo', 'pages/candidato', 'pages/mencoes']) {
+    assert.ok(!existsSync(new URL(`../src/${dir}`, import.meta.url)), `${dir} voltou ao build`);
+  }
+  const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
+  const catalogo = JSON.parse(await readFile(new URL('../src/data/candidatos.json', import.meta.url), 'utf8'));
+  for (const raiz of ['/acervo', '/candidato', '/mencoes']) {
+    assert.match(redirects, new RegExp(`^${raiz} +/ +302$`, 'm'), raiz);
+  }
+  for (const { slug } of catalogo.candidatos) {
+    for (const secao of ['acervo', 'candidato']) {
+      assert.match(redirects, new RegExp(`^/${secao}/${slug}/\\* +/presidente/${slug} +302$`, 'm'), `${secao}/${slug}`);
+      assert.match(redirects, new RegExp(`^/${secao}/${slug} +/presidente/${slug} +302$`, 'm'), `${secao}/${slug}`);
+    }
   }
 });
 
