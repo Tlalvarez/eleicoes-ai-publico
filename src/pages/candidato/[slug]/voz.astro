@@ -22,11 +22,11 @@ const recentes = carregaRecentes(raizItens(), slug);
 const voz = recentes.filter((i) => i.voz === 'propria');
 ---
 <Base noindex
-  title={`Conteúdo próprio — ${c.nome}`}
+  title={`Publicado nas contas de ${c.nome}`}
   description={`Tudo que ${c.nome} disse nos últimos ${resumo.janela_recentes_dias} dias: posts, vídeos, aparições e discursos, com link para cada fonte original.`}
 >
   <p><a href={`/candidato/${slug}`}>← {c.nome}</a></p>
-  <h1>Conteúdo próprio — {c.nome}</h1>
+  <h1>Publicado nas contas de {c.nome}</h1>
   <p class="lead">
     O que {c.nome} disse nos últimos {resumo.janela_recentes_dias} dias, no conteúdo que ele mesmo publicou:
     posts, vídeos dos canais oficiais, aparições longas (sabatinas, entrevistas, podcasts)
