@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+// A seção Senador está suspensa (05/09/2026): a coleta das candidaturas ao
+// Senado, sobretudo os sites, ainda está incompleta. Esta página existe em vez
+// de um 404 por dois motivos: a Cloudflare Pages conserva por até sete dias os
+// arquivos apagados de uma publicação (os /senador/<uf> antigos continuariam
+// no ar), e quem chega por um link antigo merece saber o que aconteceu.
+// `public/_redirects` manda /senador/* para cá. Quando a coleta estiver
+// resolvida: descomentar a linha em src/lib/cargos.mjs, apagar esta página e o
+// redirecionamento.
+---
+<Base title="Senador"
+  description="A seção sobre as candidaturas ao Senado em 2026 está em preparação.">
+  <div class="prose">
+    <p class="sobretitulo">Eleições gerais de 2026 · Senador</p>
+    <h1>Em preparação</h1>
+    <p class="lead">
+      Ainda não reunimos material suficiente sobre as candidaturas ao Senado para responder
+      com a mesma régua que usamos para os outros cargos. Em vez de publicar uma seção pela
+      metade, preferimos esperar.
+    </p>
+    <p>Enquanto isso, você pode perguntar sobre:</p>
+    <ul>
+      <li><a href="/">Presidente</a></li>
+      <li><a href="/governador">Governador</a></li>
+      <li><a href="/deputado-federal">Deputado federal</a></li>
+    </ul>
+    <p>Como o material é reunido e por que a régua tem de ser a mesma: <a href="/metodologia">metodologia</a>.</p>
+  </div>
+  <style>
+    .sobretitulo {
+      margin: 0 0 .6rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+  </style>
+</Base>

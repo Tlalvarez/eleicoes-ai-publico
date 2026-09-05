@@ -1,0 +1,4 @@
+# Senador suspenso em 05/09/2026 (ver src/pages/senador.astro): as páginas por
+# UF e por candidatura saem do build, e os endereços antigos caem na explicação.
+# 302, não 301: a seção volta quando a coleta estiver completa.
+/senador/* /senador 302

@@ -39,3 +39,10 @@ test('lançamento: existe página 404 própria', async () => {
   const p = await le('pages/404.astro');
   assert.match(p, /Página não encontrada/);
 });
+
+test('senador suspenso: página de explicação e redirecionamento dos endereços antigos', async () => {
+  const pagina = await le('pages/senador.astro');
+  assert.match(pagina, /Em preparação/);
+  const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
+  assert.match(redirects, /^\/senador\/\* +\/senador +302$/m);
+});
