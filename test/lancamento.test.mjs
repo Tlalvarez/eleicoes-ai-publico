@@ -66,3 +66,11 @@ test('senador suspenso: página de explicação e redirecionamento dos endereço
   assert.match(redirects, /^\/deputado-federal\/\* +\/deputado-federal +302$/m);
   assert.match(await le('pages/deputado-federal.astro'), /Em preparação/);
 });
+
+test('a verificação sai do esconderijo pela metodologia, com moldura datada', async () => {
+  assert.match(await le('pages/metodologia.astro'), /href="\/verificacao"/);
+  const indice = await le('pages/verificacao/index.astro');
+  assert.match(indice, /Não é avaliação de nenhuma candidatura de 2026/);
+  assert.match(indice, /\{periodo\}/);
+  assert.match(await le('pages/verificacao/[slug].astro'), /Não é avaliação de candidatura de 2026/);
+});

@@ -4,9 +4,26 @@ const mods = import.meta.glob('../../content/verificacao/*.md', { eager: true })
 const casos = Object.entries(mods)
   .map(([path, m]) => ({ slug: path.split('/').pop().replace('.md', ''), ...m.frontmatter }))
   .sort((a, b) => (a.ordem ?? 99) - (b.ordem ?? 99));
+// A moldura: quando o teste foi executado (datas dos próprios anexos), para
+// que ninguém leia um teste da régua em programas antigos como avaliação de
+// candidatura de 2026. Fica `noindex` enquanto o texto dos anexos usar o
+// vocabulário da Metodologia v1.1 (dry-run, eixos, seção 10), que a página
+// pública de metodologia, em linguagem leiga, não explica; o caminho até aqui
+// é o link na própria metodologia.
+const paraData = (d) => { const [dia, mes, ano] = d.split('/'); return `${ano}-${mes}-${dia}`; };
+const datas = casos.map((c) => c.verificado).filter(Boolean).sort((a, b) => paraData(a).localeCompare(paraData(b)));
+const periodo = datas.length ? (datas[0] === datas.at(-1) ? `em ${datas[0]}` : `entre ${datas[0]} e ${datas.at(-1)}`) : '';
 ---
 <Base noindex title="Dossiê de verificação documental">
   <h1>Dossiê de verificação documental</h1>
+  <div class="aviso">
+    <strong>O que é isto:</strong> um teste da nossa régua em eleições passadas, feito {periodo}.
+    Cada anexo relê um programa de governo registrado entre 2002 e 2022 e confere o que a análise
+    às cegas tinha dito sobre ele. <strong>Não é avaliação de nenhuma candidatura de 2026</strong>,
+    e o nome de quem concorreu naquele ano aparece só porque o programa era dele. O texto é
+    técnico, com o vocabulário da metodologia v1.1; a <a href="/metodologia">metodologia atual</a>
+    explica o método em linguagem comum.
+  </div>
   <p class="lead">
     Antes de aplicar a régua a 2026, nós a testamos no passado: releitura integral dos programas registrados
     de 2002 a 2022, confrontada com as análises feitas às cegas (dry-run). Confirmações, correções e
