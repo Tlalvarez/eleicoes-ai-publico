@@ -12,7 +12,7 @@ test('o menu principal é por cargo, derivado de src/lib/cargos.mjs', () => {
   assert.match(base, /import \{ CARGOS \} from '\.\.\/lib\/cargos\.mjs'/);
   assert.match(base, /\{CARGOS\.map\(\(cargo\) => \(/);
   assert.match(base, /<a href=\{cargo\.href\} aria-current=\{atual\(cargo\.href\)\}>\{cargo\.nome\}<\/a>/);
-  assert.deepEqual(CARGOS.map((c) => c.nome), ['Presidente', 'Governador', 'Deputado federal']);
+  assert.deepEqual(CARGOS.map((c) => c.nome), ['Presidente', 'Governador']);
 });
 
 test('as seções Candidatos e Acervo estão escondidas: sem entrada no menu', () => {

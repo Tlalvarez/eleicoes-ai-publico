@@ -1,8 +1,8 @@
 /**
  * Os cargos da eleição de 2026 e as unidades da federação.
  *
- * O menu do site é POR CARGO: presidente, governador e deputado federal
- * (senador está suspenso, ver abaixo). Presidente é nacional e vive na home; os outros são por UF, e
+ * O menu do site é POR CARGO: presidente e governador (senador e deputado
+ * federal estão suspensos, ver abaixo). Presidente é nacional e vive na home; os outros são por UF, e
  * a UF é escolhida numa página própria antes da conversa. Esta lista é a
  * autoridade do menu e das rotas — página nova de cargo entra aqui, não
  * escrita à mão em cada layout.
@@ -17,7 +17,10 @@ export const CARGOS = Object.freeze([
   // coleta estiver resolvida: basta descomentar a linha (menu, rotas e gate
   // seguem esta lista). Enquanto isso /senador e /senador/<uf> dão 404.
   // { slug: 'senador', nome: 'Senador', porUF: true, href: '/senador', preposicao: 'por' },
-  { slug: 'deputado-federal', nome: 'Deputado federal', porUF: true, href: '/deputado-federal', preposicao: 'por' },
+  // Deputado federal: FORA DO AR desde 05/09/2026, pela mesma razão do
+  // Senador (decisão do Thiago). Página "Em preparação" em
+  // src/pages/deputado-federal.astro; /deputado-federal/* redireciona para ela.
+  // { slug: 'deputado-federal', nome: 'Deputado federal', porUF: true, href: '/deputado-federal', preposicao: 'por' },
 ]);
 
 export const CARGOS_POR_UF = Object.freeze(CARGOS.filter((c) => c.porUF));

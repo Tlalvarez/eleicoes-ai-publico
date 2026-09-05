@@ -7,9 +7,9 @@ import {
 import { fichaTse, urlCandidaturaTse, urlFotoCandidaturaTse } from '../src/lib/tse.mjs';
 
 test('quatro cargos, presidente na home e os outros três por UF', () => {
-  assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador', 'deputado-federal']);
+  assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador']);
   assert.equal(cargoPorSlug('presidente').href, '/');
-  assert.deepEqual(CARGOS_POR_UF.map((c) => c.slug), ['governador', 'deputado-federal']);
+  assert.deepEqual(CARGOS_POR_UF.map((c) => c.slug), ['governador']);
 });
 
 test('27 unidades da federação, siglas únicas', () => {
@@ -23,7 +23,7 @@ test('o rótulo do escopo sai em português, com a contração certa', () => {
   assert.equal(rotuloEscopo(cargoPorSlug('governador'), ufPorSigla('SP')), 'Governador de São Paulo');
   assert.equal(rotuloEscopo(cargoPorSlug('governador'), ufPorSigla('RJ')), 'Governador do Rio de Janeiro');
   assert.equal(rotuloEscopo(cargoPorSlug('governador'), ufPorSigla('BA')), 'Governador da Bahia');
-  assert.equal(rotuloEscopo(cargoPorSlug('deputado-federal'), ufPorSigla('PA')), 'Deputado federal pelo Pará');
+  assert.equal(rotuloEscopo(cargoPorSlug('governador'), ufPorSigla('PA')), 'Governador do Pará');
   assert.equal(rotuloEscopo(cargoPorSlug('presidente')), 'Presidente');
 });
 
@@ -44,7 +44,9 @@ test('cada candidatura a presidente declara partido e número, do catálogo ofic
   assert.throws(() => fichaTse('ninguem'), /sem partido/);
 });
 
-test('senador está suspenso até a coleta ficar completa (05/09/2026)', () => {
-  assert.equal(cargoPorSlug('senador'), null);
-  assert.ok(!CARGOS.some((c) => c.href === '/senador'));
+test('senador e deputado federal estão suspensos até a coleta ficar completa (05/09/2026)', () => {
+  for (const slug of ['senador', 'deputado-federal']) {
+    assert.equal(cargoPorSlug(slug), null);
+    assert.ok(!CARGOS.some((c) => c.href === `/${slug}`));
+  }
 });
