@@ -16,14 +16,15 @@
  * calculado sobre o dist que vai a público, e não digitado à mão.
  *
  * O que a política autoriza, e só isso:
- *   · script: os do próprio site (`/_astro/*`), os inline por hash, e o
- *     `array.js` que o stub do PostHog carrega de `us-assets.i.posthog.com`;
+ *   · script: os do próprio site (`/_astro/*`), os inline por hash, o
+ *     `array.js` que o stub do PostHog carrega de `us-assets.i.posthog.com` e
+ *     o beacon do Cloudflare Web Analytics, que a Cloudflare injeta na borda;
  *   · estilo: o do site e inline (`<style>` embutido pelo Astro e `style=""`
  *     nos cartões: centenas deles, hash por hash não compensa e estilo inline
  *     não executa nada);
  *   · imagem: o site e as fotos oficiais do TSE;
- *   · conexão: o site (API na mesma origem, no gate), o serviço de evidências
- *     e o PostHog;
+ *   · conexão: o site (API na mesma origem, no gate), o serviço de evidências,
+ *     o PostHog e o destino do beacon da Cloudflare;
  *   · nada de `object`, nada de `<base>` alheio, formulário só para o site,
  *     e a página não pode ser emoldurada por ninguém.
  *
@@ -45,6 +46,11 @@ const DIST = join(RAIZ, 'dist');
 export const ORIGENS = Object.freeze({
   posthogIngestao: 'https://us.i.posthog.com',
   posthogAtivos: 'https://us-assets.i.posthog.com',
+  // Cloudflare Web Analytics: a Cloudflare injeta o script na borda (não está
+  // no código do site) e o beacon envia para cloudflareinsights.com. Decisão
+  // do Thiago em 05/09/2026: manter as duas medições. Declarado em /privacidade.
+  cloudflareInsightsScript: 'https://static.cloudflareinsights.com',
+  cloudflareInsightsBeacon: 'https://cloudflareinsights.com',
   fotosTse: 'https://divulgacandcontas.tse.jus.br',
 });
 
@@ -104,10 +110,12 @@ export function politica(hashes, { api = origensDaApi() } = {}) {
   const inline = [...hashes].map((h) => `'sha256-${h}'`).join(' ');
   return [
     `default-src 'self'`,
-    `script-src 'self' ${inline} ${ORIGENS.posthogAtivos}`.replace(/\s+/g, ' '),
+    `script-src 'self' ${inline} ${ORIGENS.posthogAtivos} ${ORIGENS.cloudflareInsightsScript}`
+      .replace(/\s+/g, ' '),
     `style-src 'self' 'unsafe-inline'`,
     `img-src 'self' ${ORIGENS.fotosTse}`,
-    `connect-src 'self' ${api.join(' ')} ${ORIGENS.posthogIngestao} ${ORIGENS.posthogAtivos}`,
+    `connect-src 'self' ${api.join(' ')} ${ORIGENS.posthogIngestao} ${ORIGENS.posthogAtivos} `
+      + ORIGENS.cloudflareInsightsBeacon,
     `font-src 'self'`,
     `object-src 'none'`,
     `base-uri 'self'`,

@@ -76,6 +76,8 @@ npm test               # o gate completo
 - No cliente há JavaScript só no chat; o resto é HTML estático. A medição de
   audiência (PostHog) roda só no domínio publicado, sem cookies, sem perfil de pessoa e com o
   texto da pergunta mascarado.
+  A Cloudflare injeta na borda o script do Web Analytics dela (segunda medição, sem cookies),
+  declarado em `/privacidade` e autorizado na CSP.
 
 ### Portões de qualidade
 
