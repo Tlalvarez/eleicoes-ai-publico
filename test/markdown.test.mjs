@@ -312,3 +312,24 @@ test('paraTextoSimples não repete o endereço quando ele é o próprio rótulo'
 
   assert.equal(t, 'https://a.org/v');
 });
+
+
+test('tabela GFM vira table com cabeçalho, linhas e marcadores nas células', () => {
+  const md = '| candidato | proposta |\n|---|---|\n| Lula | manter a lei [S1] |\n| Zema | mudar critérios [S2] |';
+  const nos = analisaMarkdown(md);
+  assert.equal(nos.length, 1);
+  assert.equal(nos[0].t, 'tabela');
+  assert.equal(nos[0].cabecalho.length, 2);
+  assert.equal(nos[0].linhas.length, 2);
+  const raiz = monta(md);
+  assert.equal(achaTags(raiz, 'table').length, 1);
+  assert.equal(achaTags(raiz, 'th').length, 2);
+  assert.equal(achaTags(raiz, 'td').length, 4);
+  assert.equal(achaTags(raiz, 'a').filter((a) => a.atributos.href === '#fonte-1').length, 1);
+  assert.equal(paraTextoSimples(nos), 'candidato | proposta\nLula | manter a lei [S1]\nZema | mudar critérios [S2]');
+});
+
+test('linha com barras sem a separadora é parágrafo, não tabela', () => {
+  const nos = analisaMarkdown('| só uma linha | com barras |');
+  assert.equal(nos[0].t, 'p');
+});

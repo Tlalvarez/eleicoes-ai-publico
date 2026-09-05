@@ -183,9 +183,20 @@ function casaItem(linha) {
 }
 
 const ehVazia = (linha) => !linha.trim();
+
+// Tabela GFM: linha de células `| a | b |`, depois a linha separadora
+// `|---|:--:|`, depois zero ou mais linhas de células. Sem a separadora, a
+// linha com barras é um parágrafo comum.
+const RE_LINHA_TABELA = /^\s*\|.*\|\s*$/;
+const RE_SEPARADOR_TABELA = /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/;
+const ehInicioDeTabela = (linhas, i) =>
+  RE_LINHA_TABELA.test(linhas[i]) && i + 1 < linhas.length && RE_SEPARADOR_TABELA.test(linhas[i + 1]);
+const celulas = (linha) => linha.trim().replace(/^\|/, '').replace(/\|$/, '')
+  .split('|').map((c) => analisaInline(c.trim()));
+
 const ehInicioDeBloco = (linha) =>
   ehVazia(linha) || RE_TITULO.test(linha) || RE_SEPARADOR.test(linha)
-  || RE_CITACAO.test(linha) || casaItem(linha) !== null;
+  || RE_CITACAO.test(linha) || casaItem(linha) !== null || RE_LINHA_TABELA.test(linha);
 
 /** Tira o recuo comum de um grupo de linhas. */
 function desrecua(linhas) {
@@ -250,6 +261,21 @@ function analisaBlocos(linhas) {
     if (titulo) {
       nos.push({ t: 'h', nivel: titulo[1].length, filhos: analisaInline(titulo[2].trim()) });
       i += 1; continue;
+    }
+
+    if (ehInicioDeTabela(linhas, i)) {
+      const cabecalho = celulas(linha);
+      i += 2;
+      const corpo = [];
+      while (i < linhas.length && RE_LINHA_TABELA.test(linhas[i])) {
+        const cels = celulas(linhas[i]);
+        // linha com menos células que o cabeçalho ganha células vazias; com mais, sobra fora
+        while (cels.length < cabecalho.length) cels.push([]);
+        corpo.push(cels.slice(0, cabecalho.length));
+        i += 1;
+      }
+      nos.push({ t: 'tabela', cabecalho, linhas: corpo });
+      continue;
     }
 
     if (RE_CITACAO.test(linha)) {
@@ -352,6 +378,22 @@ function criaNo(no, doc, ancora, nivelBase) {
     case 'hr': return doc.createElement('hr');
     case 'citacao':
       return criaFilhos(doc.createElement('blockquote'), no.filhos, doc, ancora, nivelBase);
+    case 'tabela': {
+      const tabela = doc.createElement('table');
+      const thead = doc.createElement('thead');
+      const trh = doc.createElement('tr');
+      for (const cel of no.cabecalho) trh.appendChild(criaFilhos(doc.createElement('th'), cel, doc, ancora, nivelBase));
+      thead.appendChild(trh);
+      tabela.appendChild(thead);
+      const tbody = doc.createElement('tbody');
+      for (const linha of no.linhas) {
+        const tr = doc.createElement('tr');
+        for (const cel of linha) tr.appendChild(criaFilhos(doc.createElement('td'), cel, doc, ancora, nivelBase));
+        tbody.appendChild(tr);
+      }
+      tabela.appendChild(tbody);
+      return tabela;
+    }
     case 'ul': case 'ol': {
       const lista = doc.createElement(no.t);
       if (no.t === 'ol' && no.inicio && no.inicio !== 1) {
@@ -386,7 +428,7 @@ function inlineSimples(filhos) {
   }).join('');
 }
 
-const EH_BLOCO_INTERNO = (t) => ['ul', 'ol', 'p', 'citacao', 'h', 'hr'].includes(t);
+const EH_BLOCO_INTERNO = (t) => ['ul', 'ol', 'p', 'citacao', 'h', 'hr', 'tabela'].includes(t);
 
 function itemSimples(item) {
   const inline = item.filhos.filter((f) => !EH_BLOCO_INTERNO(f.t));
@@ -401,6 +443,10 @@ function blocoSimples(no) {
     case 'h': case 'p': return inlineSimples(no.filhos);
     case 'hr': return '---';
     case 'citacao': return no.filhos.map(blocoSimples).filter(Boolean).join('\n\n');
+    case 'tabela': {
+      const linha = (cels) => cels.map((c) => inlineSimples(c).trim()).join(' | ');
+      return [linha(no.cabecalho), ...no.linhas.map(linha)].join('\n');
+    }
     case 'ul': return no.itens.map((i) => `• ${itemSimples(i)}`).join('\n');
     case 'ol':
       return no.itens.map((i, k) => `${(no.inicio ?? 1) + k}. ${itemSimples(i)}`).join('\n');
