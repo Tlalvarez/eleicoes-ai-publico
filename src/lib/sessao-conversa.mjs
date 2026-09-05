@@ -84,11 +84,27 @@ export function criaSessao({
      * Só vale em conversa vazia — o conteúdo vem do nosso armazém, não da URL.
      */
     retoma({ pergunta, texto, id = null }) {
+      return this.restaura([{ pergunta, texto }], { id });
+    },
+
+    /**
+     * Restaura uma conversa inteira — vários pares pergunta/resposta — vinda
+     * do armazém do navegador (ver conversa-guardada.mjs). Só vale em conversa
+     * vazia; par incompleto é recusado e nada entra: histórico pela metade
+     * mandaria ao serviço uma conversa que não aconteceu.
+     */
+    restaura(pares, { id = null } = {}) {
       if (historico.length || voo) return false;
-      const p = String(pergunta ?? '').trim();
-      const t = String(texto ?? '').trim();
-      if (!p || !t) return false;
-      historico.push({ papel: 'user', texto: p }, { papel: 'assistant', texto: t });
+      const lista = Array.isArray(pares) ? pares : [];
+      const turnos = [];
+      for (const par of lista) {
+        const p = String(par?.pergunta ?? '').trim();
+        const t = String(par?.texto ?? '').trim();
+        if (!p || !t) return false;
+        turnos.push({ papel: 'user', texto: p }, { papel: 'assistant', texto: t });
+      }
+      if (!turnos.length) return false;
+      historico.push(...turnos);
       ultimoId = id ?? null;
       return true;
     },

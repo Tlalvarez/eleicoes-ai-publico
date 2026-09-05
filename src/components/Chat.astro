@@ -93,21 +93,19 @@ const {
     .chat { margin: 1.5rem 0 2rem; }
 
     /* MODO CONVERSA (após a primeira pergunta): a página é só o diálogo.
-       As mensagens rolam com a página; o compositor fica fixado embaixo. */
+       As mensagens rolam com a página; o compositor acompanha a rolagem
+       GRUDADO embaixo (sticky) enquanto a conversa está na tela, e volta ao
+       lugar natural quando a conversa acaba — assim o rodapé do site fica
+       legível. Fixo (position: fixed) ele cobria o rodapé para sempre. */
     body.modo-conversa .hero-home,
     body.modo-conversa .secao-catalogo { display: none; }
-    body.modo-conversa main { padding-bottom: 15rem; }
+    body.modo-conversa main { padding-bottom: 1.5rem; }
     body.modo-conversa .form-chat {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: min(100% - 2.5rem, calc(var(--largura) - 2.5rem));
-      margin: 0;
+      position: sticky;
+      bottom: .75rem;
+      margin: 1rem 0 0;
       z-index: 40;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      box-shadow: 0 -8px 28px rgba(23, 54, 93, .16);
+      box-shadow: 0 -8px 28px rgba(23, 54, 93, .16), var(--sombra);
     }
     .conversa { list-style: none; padding: 0; margin: 0; }
     .turno { margin: 0 0 1.5rem; }
@@ -149,8 +147,9 @@ const {
         var(--laranja) 78% 100%);
     }
 
-    /* o rascunho: a resposta enquanto é escrita — texto corrido, tracejado,
-       nunca confundível com a resposta validada que o substitui */
+    /* o rascunho: a resposta enquanto é escrita — já formatada como a resposta
+       final (títulos, listas, tabelas), mas tracejada e rotulada, nunca
+       confundível com a resposta validada que a substitui */
     .turno-resposta.rascunho > article {
       border-style: dashed;
       box-shadow: none;
@@ -159,13 +158,6 @@ const {
       margin: 0 0 .6rem;
       font-size: .85rem;
       color: var(--texto-suave, #666);
-    }
-    .turno-resposta.rascunho .texto-rascunho {
-      white-space: pre-wrap;
-      font-family: var(--fonte-titulo);
-      font-size: 1.02rem;
-      line-height: 1.7;
-      margin: 0;
     }
 
     .resposta-corpo {
@@ -278,6 +270,10 @@ const {
     import { analisaMarkdown, criaElementos } from '../lib/markdown.mjs';
     import { ErroConversa, carregaResposta, perguntaAoVivo } from '../lib/chat.mjs';
     import { criaSessao } from '../lib/sessao-conversa.mjs';
+    import {
+      apaga as apagaGuardada, contemResposta, guarda as guardaConversa,
+      le as leGuardada, turnoGuardavel,
+    } from '../lib/conversa-guardada.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
     import { estadoDoFragmento } from '../lib/permalink.mjs';
     import {
@@ -315,6 +311,26 @@ const {
     const paginaBase = chat.dataset.pagina || '/';
     let turnos = 0;
 
+    // A CONVERSA GUARDADA: cada par pergunta/resposta desenhado nesta página
+    // vai ao sessionStorage, por página. Sair e voltar redesenha tudo; a
+    // pessoa nunca perde a resposta à própria pergunta. O armazém pode não
+    // existir (modo privado antigo, cota): aí a página funciona como antes.
+    const armazem = (() => { try { return window.sessionStorage; } catch { return null; } })();
+    const turnosGuardados = [];
+    let ultimoIdGuardado = null;
+    function lembra(pergunta, resultado) {
+      const turno = turnoGuardavel(pergunta, resultado);
+      if (!turno) return;
+      turnosGuardados.push(turno);
+      ultimoIdGuardado = resultado.id ?? ultimoIdGuardado;
+      if (armazem) guardaConversa(armazem, paginaBase, { turnos: turnosGuardados, ultimoId: ultimoIdGuardado });
+    }
+    function esquece() {
+      turnosGuardados.length = 0;
+      ultimoIdGuardado = null;
+      if (armazem) apagaGuardada(armazem, paginaBase);
+    }
+
     const el = (tag, classe, texto) => {
       const n = document.createElement(tag);
       if (classe) n.className = classe;
@@ -338,17 +354,94 @@ const {
 
     // ------------------------------------------------------------ conversa
 
-    function adicionaPergunta(texto) {
+    function adicionaPergunta(texto, { rola = true } = {}) {
       // UX de conversa: com a primeira pergunta a página vira só o diálogo —
-      // hero e catálogo somem, o compositor fixa embaixo e as mensagens rolam
+      // hero e catálogo somem, o compositor gruda embaixo e as mensagens rolam
       document.body.classList.add('modo-conversa');
       const li = el('li', 'turno turno-pergunta');
       li.append(el('p', 'marca-pergunta', 'Pergunta'));
       const p = el('p', 'texto-pergunta', texto);
       li.append(p);
       conversa.append(li);
-      li.scrollIntoView({ block: 'start', behavior: 'smooth' });
+      if (rola) li.scrollIntoView({ block: 'start', behavior: 'smooth' });
       return li;
+    }
+
+    /**
+     * O corpo de uma resposta, a partir do Markdown: a mesma montagem serve
+     * ao rascunho (enquanto o serviço escreve) e à resposta final — o que a
+     * pessoa vê chegando já tem a forma do que vai ficar.
+     *
+     * `nivelBase: 1` rebaixa os títulos da resposta: `##` da API vira <h3>,
+     * abaixo do <h1> da página e do <h2> da pergunta. Título de resposta
+     * competindo com o da página quebra a navegação por cabeçalho no leitor
+     * de tela.
+     */
+    function montaCorpo(texto, indice, citacoes = []) {
+      const corpo = el('div', 'resposta-corpo');
+      corpo.append(criaElementos(analisaMarkdown(texto), document, {
+        nivelBase: 1,
+        ancora: (n) => `#fonte-${indice}-${n}`,
+      }));
+
+      // a referência fica VISÍVEL onde é mencionada: o [Sn] vira um chip
+      // legível (tipo e data da fonte) que abre direto a fonte original.
+      // Sem endereço registrado, o marcador continua apontando para a lista.
+      // No rascunho ainda não há citações: os marcadores ficam como estão.
+      const TIPO_CHIP = {
+        video: 'vídeo', aparicao: 'entrevista', discurso: 'discurso',
+        'post-x': 'post no X', 'post-instagram': 'Instagram',
+        artigo: 'texto', 'pagina-arquivada': 'página', mencao: 'menção',
+        // tipos brutos do índice oficial (release-v2)
+        youtube: 'vídeo', x: 'post no X', instagram: 'Instagram',
+        programa: 'plano de governo', senado: 'discurso',
+        sites: 'texto', wayback: 'página',
+      };
+      const porMarcador = new Map();
+      for (const cit of citacoes) {
+        for (const n of cit.marcadores) porMarcador.set(n, cit);
+      }
+      for (const a of corpo.querySelectorAll('a.marcador-fonte')) {
+        const n = Number((a.textContent.match(/\[S(\d+)\]/) || [])[1]);
+        const cit = porMarcador.get(n);
+        if (!cit || !cit.url) continue;
+        const chip = el('a', 'fonte-chip',
+          `${TIPO_CHIP[cit.tipo] ?? cit.tipo ?? 'fonte'} ${dataBr(cit.data)}`);
+        chip.href = cit.url;
+        chip.target = '_blank';
+        chip.rel = 'noopener noreferrer nofollow';
+        chip.title = [cit.nome, cit.rotulo, dataBr(cit.data)].filter(Boolean).join(' — ');
+        const sup = a.closest('sup') ?? a;
+        sup.replaceWith(chip);
+      }
+
+      // títulos do formato fixo em palavras comuns (mapeamento exato, só
+      // apresentação — o texto da resposta não é alterado em mais nada)
+      const AMIGAVEL = new Map([
+        ['Evidência', 'O que encontramos'],
+        ['Inferência', 'Nossa leitura'],
+      ]);
+      for (const h of corpo.querySelectorAll('h2, h3, h4')) {
+        const titulo = h.textContent.trim();
+        if (titulo === 'Lacunas' || titulo === 'O que não dá para afirmar') {
+          // a seção existe no texto (o backend a exige — é o guardrail contra
+          // afirmar demais) mas não é exibida; copiar/compartilhar a preservam
+          let n = h.nextElementSibling;
+          while (n && !/^H[2-4]$/.test(n.tagName)) {
+            const prox = n.nextElementSibling;
+            n.remove();
+            n = prox;
+          }
+          h.remove();
+          continue;
+        }
+        const alvo = AMIGAVEL.get(titulo);
+        if (alvo) h.textContent = alvo;
+      }
+      for (const forte of corpo.querySelectorAll('strong')) {
+        if (forte.textContent.trim() === 'Conclusão:') forte.textContent = 'Resumindo:';
+      }
+      return corpo;
     }
 
     /** Uma linha de fonte, montada nó a nó — nunca por marcação em string. */
@@ -558,73 +651,7 @@ const {
           + 'oficial. Confira cada fonte citada, ou refaça a pergunta abaixo.'));
       }
 
-      const corpo = el('div', 'resposta-corpo');
-      // `nivelBase: 1` rebaixa os títulos da resposta: `##` da API vira <h3>,
-      // abaixo do <h1> da página e do <h2> da pergunta. Título de resposta
-      // competindo com o da página quebra a navegação por cabeçalho no leitor
-      // de tela.
-      corpo.append(criaElementos(analisaMarkdown(resultado.texto), document, {
-        nivelBase: 1,
-        ancora: (n) => `#fonte-${indice}-${n}`,
-      }));
-
-      // a referência fica VISÍVEL onde é mencionada: o [Sn] vira um chip
-      // legível (tipo e data da fonte) que abre direto a fonte original.
-      // Sem endereço registrado, o marcador continua apontando para a lista.
-      const TIPO_CHIP = {
-        video: 'vídeo', aparicao: 'entrevista', discurso: 'discurso',
-        'post-x': 'post no X', 'post-instagram': 'Instagram',
-        artigo: 'texto', 'pagina-arquivada': 'página', mencao: 'menção',
-        // tipos brutos do índice oficial (release-v2)
-        youtube: 'vídeo', x: 'post no X', instagram: 'Instagram',
-        programa: 'plano de governo', senado: 'discurso',
-        sites: 'texto', wayback: 'página',
-      };
-      const porMarcador = new Map();
-      for (const cit of resultado.citacoes) {
-        for (const n of cit.marcadores) porMarcador.set(n, cit);
-      }
-      for (const a of corpo.querySelectorAll('a.marcador-fonte')) {
-        const n = Number((a.textContent.match(/\[S(\d+)\]/) || [])[1]);
-        const cit = porMarcador.get(n);
-        if (!cit || !cit.url) continue;
-        const chip = el('a', 'fonte-chip',
-          `${TIPO_CHIP[cit.tipo] ?? cit.tipo ?? 'fonte'} ${dataBr(cit.data)}`);
-        chip.href = cit.url;
-        chip.target = '_blank';
-        chip.rel = 'noopener noreferrer nofollow';
-        chip.title = [cit.nome, cit.rotulo, dataBr(cit.data)].filter(Boolean).join(' — ');
-        const sup = a.closest('sup') ?? a;
-        sup.replaceWith(chip);
-      }
-
-      // títulos do formato fixo em palavras comuns (mapeamento exato, só
-      // apresentação — o texto da resposta não é alterado em mais nada)
-      const AMIGAVEL = new Map([
-        ['Evidência', 'O que encontramos'],
-        ['Inferência', 'Nossa leitura'],
-      ]);
-      for (const h of corpo.querySelectorAll('h2, h3, h4')) {
-        const titulo = h.textContent.trim();
-        if (titulo === 'Lacunas' || titulo === 'O que não dá para afirmar') {
-          // a seção existe no texto (o backend a exige — é o guardrail contra
-          // afirmar demais) mas não é exibida; copiar/compartilhar a preservam
-          let n = h.nextElementSibling;
-          while (n && !/^H[2-4]$/.test(n.tagName)) {
-            const prox = n.nextElementSibling;
-            n.remove();
-            n = prox;
-          }
-          h.remove();
-          continue;
-        }
-        const alvo = AMIGAVEL.get(titulo);
-        if (alvo) h.textContent = alvo;
-      }
-      for (const forte of corpo.querySelectorAll('strong')) {
-        if (forte.textContent.trim() === 'Conclusão:') forte.textContent = 'Resumindo:';
-      }
-      artigo.append(corpo);
+      artigo.append(montaCorpo(resultado.texto, indice, resultado.citacoes));
 
       if (resultado.citacoes.length) {
         const sec = el('section', 'fontes');
@@ -689,6 +716,7 @@ const {
       // resposta da conversa anterior chegava depois e era anexada aqui, sem a
       // pergunta que a gerou.
       sessao.reinicia();
+      esquece();
       document.body.classList.remove('modo-conversa');
       turnos = 0;
       conversa.textContent = '';
@@ -698,6 +726,36 @@ const {
       // conversa nova sai da página da resposta e volta à página desta conversa
       const pagina = idDoCaminho(location.pathname) ? paginaBase : location.pathname;
       history.replaceState(null, '', pagina);
+    }
+
+    /** A barra de endereço passa a ser a página da resposta pública, se houver
+     *  uma e a página ainda for a base da conversa. */
+    function apontaPara(compartilhamentoId) {
+      const pagina = caminhoPagina(compartilhamentoId);
+      if (pagina && !idDoCaminho(location.pathname)
+          && !new URLSearchParams(location.search).get(PARAMETRO_PAGINA)) {
+        history.replaceState(null, '', pagina);
+      }
+    }
+
+    /**
+     * Redesenha a conversa guardada desta página (ver conversa-guardada.mjs)
+     * e devolve ao histórico da sessão os pares que a continuam.
+     */
+    function restauraConversa(salva) {
+      nova.hidden = false;
+      for (const t of salva.turnos) {
+        adicionaPergunta(t.pergunta, { rola: false });
+        adicionaResposta(t.resultado);
+        turnosGuardados.push(t);
+      }
+      ultimoIdGuardado = salva.ultimoId;
+      sessao.restaura(
+        salva.turnos.map((t) => ({ pergunta: t.pergunta, texto: t.resultado.texto })),
+        { id: salva.ultimoId },
+      );
+      const primeira = salva.turnos.find((t) => t.resultado.compartilhamento_id);
+      if (primeira) apontaPara(primeira.resultado.compartilhamento_id);
     }
 
     async function envia(texto) {
@@ -711,27 +769,46 @@ const {
       enviar.disabled = true;
       mostraEstado('Procurando no acervo e escrevendo a resposta…', { cancelavel: true });
 
-      // O RASCUNHO: o texto que o serviço manda enquanto escreve. É texto
-      // corrido (nunca marcação), vive fora da lista de turnos e some sempre —
-      // a resposta de verdade é a que chega inteira e validada em `ok`. Se o
-      // serviço retratar o que mandou (erro depois de texto), o rascunho vai
-      // embora junto com o erro.
+      // O RASCUNHO: o texto que o serviço manda enquanto escreve. Ele é
+      // FORMATADO a cada pedaço — o Markdown acumulado passa pelo mesmo
+      // analisador da resposta final (nó a nó, nunca por marcação em string),
+      // então títulos, listas e tabelas aparecem prontos enquanto chegam, em
+      // vez de asteriscos e barras verticais crus. O analisador tolera texto
+      // interrompido no meio de uma tabela ou de uma lista. O rascunho vive
+      // fora da contagem de turnos e some sempre — a resposta de verdade é a
+      // que chega inteira e validada em `ok`. Se o serviço retratar o que
+      // mandou (erro depois de texto), o rascunho vai embora junto com o erro.
       const rascunho = el('li', 'turno turno-resposta rascunho');
       const artigoRascunho = el('article');
       artigoRascunho.setAttribute('aria-label', 'Resposta sendo escrita');
       artigoRascunho.setAttribute('aria-live', 'polite');
-      const textoRascunho = el('p', 'texto-rascunho');
-      artigoRascunho.append(el('p', 'marca-rascunho', 'Escrevendo a resposta…'), textoRascunho);
+      let corpoRascunho = el('div', 'resposta-corpo');
+      artigoRascunho.append(el('p', 'marca-rascunho', 'Escrevendo a resposta…'), corpoRascunho);
       rascunho.append(artigoRascunho);
       let rascunhoNaTela = false;
+      let textoAcumulado = '';
+      let quadroAgendado = 0;
+      const desenhaRascunho = () => {
+        quadroAgendado = 0;
+        if (!rascunhoNaTela) return;
+        // um quadro por lote de pedaços: reanalisar o texto inteiro a cada
+        // pedaço é barato (dezenas de KB), mas não precisa ser mais que uma
+        // vez por quadro de animação
+        const novo = montaCorpo(textoAcumulado, turnos + 1);
+        corpoRascunho.replaceWith(novo);
+        corpoRascunho = novo;
+      };
       const aoTexto = (trecho) => {
         if (!rascunhoNaTela) {
           conversa.append(rascunho);
           rascunhoNaTela = true;
         }
-        textoRascunho.textContent += trecho;
+        textoAcumulado += trecho;
+        if (!quadroAgendado) quadroAgendado = requestAnimationFrame(desenhaRascunho);
       };
       const tiraRascunho = () => {
+        if (quadroAgendado) cancelAnimationFrame(quadroAgendado);
+        quadroAgendado = 0;
         rascunho.remove();
         rascunhoNaTela = false;
       };
@@ -756,13 +833,10 @@ const {
       } else if (r.estado === 'ok') {
         escondeEstado();
         const li = adicionaResposta(r.resultado, { viaFallback: r.resultado.viaFallback });
+        lembra(r.resultado.pergunta, r.resultado);
         // a primeira resposta guardada vira a página desta conversa: o endereço
-        // passa a ser /?resposta=<id> e o resto da conversa acontece nele
-        const pagina = caminhoPagina(r.resultado.compartilhamento_id);
-        if (pagina && !idDoCaminho(location.pathname)
-            && !new URLSearchParams(location.search).get(PARAMETRO_PAGINA)) {
-          history.replaceState(null, '', pagina);
-        }
+        // passa a ser /resposta/<id> e o resto da conversa acontece nele
+        apontaPara(r.resultado.compartilhamento_id);
         li.scrollIntoView({ block: 'start', behavior: 'smooth' });
       }
       entrada.focus();
@@ -802,10 +876,14 @@ const {
           + 'Peça o link de novo, ou faça a pergunta abaixo.', { erro: true });
       }
       const parametros = new URLSearchParams(location.search);
-      // /?resposta=<id>: a página de uma conversa. A pergunta e a resposta vêm
+      const salva = armazem ? leGuardada(armazem, paginaBase) : null;
+      // /resposta/<id>: a página de uma conversa. A pergunta e a resposta vêm
       // do armazém do serviço — iguais para todo mundo — e a conversa segue daqui.
+      // Se a conversa guardada NESTE navegador contém essa mesma resposta, ela
+      // é a cópia local do mesmo texto e ainda traz os turnos que vieram depois:
+      // vale ela, sem ida à rede.
       const idPagina = idDoCaminho(location.pathname) ?? parametros.get(PARAMETRO_PAGINA);
-      if (idPagina) {
+      if (idPagina && !contemResposta(salva, idPagina)) {
         mostraEstado('Abrindo a resposta compartilhada…');
         try {
           const guardada = await carregaResposta(idPagina, { apiBase: chat.dataset.api });
@@ -814,15 +892,21 @@ const {
             mostraEstado('Esta resposta não foi encontrada. Faça a pergunta abaixo.', { erro: true });
             return;
           }
-              nova.hidden = false;
+          nova.hidden = false;
           if (guardada.pergunta) adicionaPergunta(guardada.pergunta);
           adicionaResposta(guardada);
           sessao.retoma({ pergunta: guardada.pergunta, texto: guardada.texto });
+          // a partir daqui a conversa é desta pessoa: sair e voltar a redesenha
+          esquece();
+          lembra(guardada.pergunta, guardada);
         } catch (erro) {
           mostraErro(erro);
         }
         return;
       }
+      // a conversa que a pessoa deixou nesta página: sair pelo menu e voltar
+      // (ou recarregar) encontra a pergunta e a resposta onde estavam
+      if (salva) restauraConversa(salva);
       const q = parametros.get('q');
       if (q) envia(q);
     })();
