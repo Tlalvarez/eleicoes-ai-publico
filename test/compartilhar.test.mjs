@@ -22,6 +22,7 @@ import assert from 'node:assert/strict';
 import {
   LIMITE_RESUMO, linkWhatsApp, markdownCompleto, payloadWebShare,
   resumoLegivel, textoCompleto,
+  EMAIL_CONTATO, linkReportar,
 } from '../src/lib/compartilhar.mjs';
 import { ROTULO_PREVIA } from '../src/lib/release.mjs';
 
@@ -229,4 +230,16 @@ test('todos os formatos aguentam resultado degenerado sem lançar', () => {
     assert.doesNotThrow(() => markdownCompleto(r));
     assert.doesNotThrow(() => payloadWebShare(r));
   }
+});
+
+test('reportar: mailto para o contato, com o endereço da resposta no assunto e no corpo', () => {
+  assert.equal(EMAIL_CONTATO, 'contato@eleicoes.ai');
+  const href = linkReportar({ url: 'https://eleicoes.ai/resposta/AbC', id: 'r_1' });
+  assert.ok(href.startsWith('mailto:contato@eleicoes.ai?subject='));
+  const u = new URL(href);
+  assert.equal(u.searchParams.get('subject'), 'Problema na resposta https://eleicoes.ai/resposta/AbC');
+  assert.match(u.searchParams.get('body'), /Resposta: https:\/\/eleicoes\.ai\/resposta\/AbC/);
+  assert.match(u.searchParams.get('body'), /pedido de retirada/);
+  // sem endereço nem id: ainda dá para reportar, e o corpo pede a pergunta
+  assert.match(new URL(linkReportar({})).searchParams.get('body'), /Pergunta feita/);
 });

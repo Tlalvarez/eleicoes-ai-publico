@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { EMAIL_CONTATO as email } from '../lib/compartilhar.mjs';
 // O que o site guarda e o que não guarda. Cada frase daqui descreve um
 // comportamento real do código (Base.astro: PostHog sem cookies; Chat +
 // conversa-guardada.mjs: sessionStorage; serviço: respostas guardadas com
@@ -28,8 +29,8 @@ import Base from '../layouts/Base.astro';
         por busca ou por lista: só quem recebe o link. Se você compartilhar o link, quem o abrir
         verá a pergunta como você a escreveu.</li>
       <li>Por isso, <strong>não escreva dados pessoais na pergunta</strong> (seus ou de
-        terceiros). Se uma pergunta guardada precisar sair do ar, peça a retirada em
-        <a href="/sobre#contato">Fale conosco</a>.</li>
+        terceiros). Se uma pergunta guardada precisar sair do ar, use "Reportar um problema"
+        ao lado da resposta ou escreva para <a href={`mailto:${email}`}>{email}</a>.</li>
       <li>Perguntas e respostas são conservadas <strong>por prazo indeterminado</strong>, para
         auditoria da neutralidade e correção de erros, sem nome, conta ou identificador de
         quem perguntou.</li>
@@ -57,7 +58,8 @@ import Base from '../layouts/Base.astro';
     <h2>Quem responde</h2>
     <p>
       Pelo site responde Thiago Alvarez, como descrito em <a href="/sobre">Quem faz</a>.
-      Dúvidas, pedidos de acesso ou de retirada: <a href="/sobre#contato">Fale conosco</a>.
+      Dúvidas, pedidos de acesso ou de retirada: <a href={`mailto:${email}`}>{email}</a>
+      (ver <a href="/sobre#contato">Fale conosco</a>).
     </p>
   </div>
 </Base>

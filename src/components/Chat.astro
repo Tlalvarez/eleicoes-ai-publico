@@ -239,6 +239,7 @@ const {
     .botao-icone svg { width: 20px; height: 20px; display: block; }
     .botao-icone.copiado { border-color: var(--verde); color: var(--verde); }
     .nota-permalink { flex-basis: 100%; font-size: .82rem; color: var(--tinta-suave); margin: .2rem 0 0; }
+    .barra-compartilhar .reportar { align-self: center; margin-left: auto; font-size: .82rem; color: var(--tinta-suave); }
     .copia-manual { flex-basis: 100%; margin: .4rem 0 0; }
     .copia-manual textarea { width: 100%; min-height: 7rem; font: inherit; font-size: .85rem; }
 
@@ -280,7 +281,7 @@ const {
       PARAMETRO_PAGINA, caminhoPagina, idDoCaminho, urlDeCompartilhamento,
     } from '../lib/resposta-publica.mjs';
     import {
-      dataBr, linkWhatsApp, markdownCompleto, payloadWebShare, resumoLegivel,
+      dataBr, linkReportar, linkWhatsApp, markdownCompleto, payloadWebShare, resumoLegivel,
       textoCompleto,
     } from '../lib/compartilhar.mjs';
 
@@ -630,6 +631,13 @@ const {
           + 'serviço de evidências. Copiar o texto, copiar o Markdown e o WhatsApp continuam '
           + 'funcionando, e levam a pergunta e as fontes junto.'));
       }
+
+      // Reportar: um e-mail, em privado, com o endereço da resposta já preenchido.
+      // Existe porque um site eleitoral precisa de um canal de correção e de
+      // retirada que não exija conta nem exponha em público o que se quer tirar.
+      const reportar = el('a', 'reportar', 'Reportar um problema nesta resposta');
+      reportar.href = linkReportar({ url, id: resultado.id });
+      barra.append(reportar);
       return barra;
     }
 

@@ -150,6 +150,25 @@ export function markdownCompleto({ pergunta, texto: corpo, citacoes, rodape, url
 }
 
 /** O endereço wa.me com a mensagem embutida, ou `null` se não há mensagem. */
+/** O endereço público de contato do site (Quem faz, Privacidade, botão Reportar). */
+export const EMAIL_CONTATO = 'contato@eleicoes.ai';
+
+/**
+ * O `mailto:` do botão "Reportar um problema" de uma resposta: um toque, sem
+ * conta, em privado, com o endereço da resposta já no assunto e no corpo —
+ * quem reporta não precisa saber o que é um id nem copiar nada. Sem endereço
+ * (resposta não guardada), o assunto identifica só a data, e o corpo pede a
+ * pergunta.
+ */
+export function linkReportar({ url, id } = {}) {
+  const alvo = texto(url).trim() || texto(id).trim();
+  const assunto = alvo ? `Problema na resposta ${alvo}` : 'Problema numa resposta do eleicoes.ai';
+  const corpo = (alvo ? `Resposta: ${alvo}\n\n` : 'Pergunta feita: \n\n')
+    + 'O que está errado (fonte trocada, erro de fato, texto que não devia estar no ar, '
+    + 'pedido de retirada):\n\n';
+  return `mailto:${EMAIL_CONTATO}?subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+}
+
 export function linkWhatsApp(mensagem) {
   const m = texto(mensagem).trim();
   return m ? `https://wa.me/?text=${encodeURIComponent(m)}` : null;

@@ -4,6 +4,7 @@ import Base from '../layouts/Base.astro';
 // sem rosto é um produto sem confiança: o leitor precisa saber quem faz, o que
 // o site é e não é, e para onde escrever. O texto é escrito à mão e versionado;
 // mudar isto é decisão editorial, como tudo no repositório público.
+import { EMAIL_CONTATO as email } from '../lib/compartilhar.mjs';
 const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
 ---
 <Base title="Quem faz o eleicoes.ai"
@@ -49,14 +50,15 @@ const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
     <h2 id="contato">Fale conosco ou peça a retirada de uma resposta</h2>
     <p>
       Achou um erro, uma fonte trocada, uma resposta que não devia estar no ar ou uma
-      pergunta que expõe alguém? Abra um registro em
-      <a href={`${repo}/issues`} rel="noopener noreferrer">{repo.replace('https://', '')}/issues</a>
-      com o endereço da página. Atenção: um registro no GitHub é <strong>público</strong> e
-      pede uma conta; um e-mail de contato, para pedidos que você prefira fazer em
-      particular, será publicado nesta página em breve. Pedidos de retirada de respostas guardadas
+      pergunta que expõe alguém? Escreva para
+      <a href={`mailto:${email}`}><strong>{email}</strong></a> com o endereço da página.
+      Cada resposta tem, ao lado dos botões de compartilhar, um "Reportar um problema" que
+      abre esse e-mail já preenchido. Pedidos de retirada de respostas guardadas
       (<code>/resposta/…</code>) são atendidos tirando a página de circulação; a decisão
       e a data ficam registradas. Correções de conteúdo entram no
-      <a href="/metodologia">changelog público</a>.
+      <a href="/metodologia">changelog público</a>. Quem preferir pode abrir um registro
+      público em <a href={`${repo}/issues`} rel="noopener noreferrer">{repo.replace('https://', '')}/issues</a>
+      (pede conta no GitHub e fica visível a todos).
     </p>
     <p>
       O que o site guarda e o que não guarda sobre você está em
