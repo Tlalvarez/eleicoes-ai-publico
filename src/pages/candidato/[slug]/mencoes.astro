@@ -20,7 +20,7 @@ const { slug } = Astro.params;
 const c = resumo.candidatos[slug];
 const mencoes = mencoesDoCandidato(raizItens(), slug, c.anos);
 ---
-<Base
+<Base noindex
   title={`Menções — ${c.nome}`}
   description={`Links de terceiros que citam ${c.nome}: registro automatizado, sem análise e sem endosso.`}
 >

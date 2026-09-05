@@ -21,14 +21,14 @@ const c = resumo.candidatos[slug];
 // data/itens inteiro (47 arquivos) em cada uma das rotas
 const porAno = resumoPorAno(raizItens(), slug, anosDoArquivo(c));
 ---
-<Base
+<Base noindex
   title={`Arquivo 5 anos — ${c.nome}`}
   description={`Histórico de ${c.nome} desde agosto de 2021: posts, vídeos, aparições, discursos e páginas oficiais arquivadas, com fonte primária linkada.`}
 >
   <p><a href={`/candidato/${slug}`}>← {c.nome}</a></p>
   <h1>Arquivo — {c.nome}, 5 anos</h1>
   <p class="lead">
-    Tudo que registramos de {c.nome} na própria voz (e de assessorias oficiais arquivadas)
+    Tudo que registramos de {c.nome} no conteúdo que ele mesmo publicou (e de assessorias oficiais arquivadas)
     desde agosto de 2021, ano a ano. Vídeos, aparições, discursos e publicações são listados
     individualmente; posts de redes aparecem como contadores mensais.
   </p>

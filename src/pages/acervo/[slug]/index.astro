@@ -23,7 +23,7 @@ const { slug } = Astro.params;
 const c = indice.candidatos[slug];
 const tipos = Object.entries(c.tipos).sort((a, b) => b[1].total - a[1].total);
 ---
-<Base title={`Acervo — ${c.nome}`} description={`Todo o material coletado de ${c.nome}, por tipo e ano, até o documento original.`}>
+<Base noindex title={`Acervo — ${c.nome}`} description={`Todo o material coletado de ${c.nome}, por tipo e ano, até o documento original.`}>
   <p><a href="/acervo">← Acervo</a></p>
   <h1>Acervo — {c.nome}</h1>
 

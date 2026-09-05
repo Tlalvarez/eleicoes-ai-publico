@@ -4,6 +4,11 @@ import { CARGOS } from '../lib/cargos.mjs';
 const {
   title,
   description = 'Converse com as evidências reunidas sobre os candidatos de 2026: cada resposta separa o que está registrado, o que é inferência e o que é lacuna, com link para a fonte original.',
+  // Seções construídas mas fora do menu (candidato, acervo, menções, fichas,
+  // verificação) ficam fora dos buscadores: o lançamento de 05/09/2026 tirou o
+  // noindex do LAYOUT, e essas páginas não passaram pela revisão de superfície
+  // pública (rótulos antigos, juízos de backtest, promessas datadas).
+  noindex = false,
 } = Astro.props;
 const path = Astro.url.pathname;
 const atual = (p) => {
@@ -23,8 +28,10 @@ const atual = (p) => {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <!-- lançamento público em 05/09/2026: sem noindex. As páginas de erro de
-         /resposta continuam noindex por conta própria (pagina-resposta.mjs). -->
+    <!-- lançamento público em 05/09/2026: sem noindex no layout. Só as seções
+         fora do menu pedem `noindex` (prop); as páginas de erro de /resposta
+         continuam noindex por conta própria (pagina-resposta.mjs). -->
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <meta name="color-scheme" content="light dark" />
     <!-- ícone do site: o "e" de eleicoes sobre o azul-marinho, com a faixa da
          identidade. .ico para navegador antigo e robô, SVG para os atuais,

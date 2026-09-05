@@ -19,6 +19,10 @@ import Base from '../layouts/Base.astro';
     <ul>
       <li>A pergunta é enviada ao nosso serviço para gerar a resposta. Ela <strong>não</strong>
         é ligada a nome, e-mail, conta ou identificador seu.</li>
+      <li>Para escrever a resposta, o texto da pergunta e os trechos do acervo são processados
+        por um modelo de inteligência artificial da Anthropic (Claude), em servidores
+        <strong>fora do Brasil</strong>. Vai só o texto da pergunta e do acervo; nenhum dado
+        seu acompanha.</li>
       <li>Cada resposta ganha um <strong>endereço próprio, não listado</strong>
         (<code>/resposta/…</code>), com a pergunta e a resposta. Ninguém encontra esse endereço
         por busca ou por lista: só quem recebe o link. Se você compartilhar o link, quem o abrir
@@ -26,15 +30,20 @@ import Base from '../layouts/Base.astro';
       <li>Por isso, <strong>não escreva dados pessoais na pergunta</strong> (seus ou de
         terceiros). Se uma pergunta guardada precisar sair do ar, peça a retirada em
         <a href="/sobre#contato">Fale conosco</a>.</li>
-      <li>Perguntas e respostas são conservadas para auditoria da neutralidade e para
-        correção de erros, sem qualquer dado de quem perguntou.</li>
+      <li>Perguntas e respostas são conservadas <strong>por prazo indeterminado</strong>, para
+        auditoria da neutralidade e correção de erros, sem nome, conta ou identificador de
+        quem perguntou.</li>
+      <li>Como em qualquer site, os servidores podem registrar dados técnicos da conexão
+        (endereço IP, horário, página pedida) em registros operacionais de curta duração,
+        usados para segurança e operação. Esses registros não são cruzados com as perguntas.</li>
     </ul>
 
     <h2>A sua visita</h2>
     <ul>
       <li>Medimos a audiência com o PostHog em <strong>modo sem cookies</strong>: nada é
         gravado no seu navegador, os eventos são anônimos, não há perfil de pessoa nem
-        gravação de sessão, e o texto da pergunta é mascarado nas medições.</li>
+        gravação de sessão, e o texto da pergunta é mascarado nas medições. Os eventos são
+        recebidos em servidores do PostHog nos <strong>Estados Unidos</strong>.</li>
       <li>A conversa aberta fica guardada <strong>só na sua aba</strong> (armazenamento de
         sessão do navegador) para sobreviver a um clique no menu. Fechou a aba, acabou.</li>
       <li>Fotos oficiais dos candidatos e links "Ver no TSE" vêm dos servidores do Tribunal

@@ -15,14 +15,14 @@ const candidatos = Object.entries(resumo.candidatos).map(([slug, c]) => {
   return { slug, ...c, imagem };
 });
 ---
-<Base
+<Base noindex
   title="Candidatos"
-  description="Rastreamento por candidato: o que cada um disse na própria voz, o arquivo de 5 anos e o que circula sobre eles — mesma régua para todos."
+  description="Rastreamento por candidato: o conteúdo que cada um publicou, o arquivo de 5 anos e o que circula sobre eles — mesma régua para todos."
 >
   <h1>Candidatos acompanhados</h1>
   <p class="lead">
     Para cada candidato, três visões do mesmo rastreamento contínuo:
-    <strong>na própria voz</strong> (o que ele disse, recente), o <strong>arquivo de 5 anos</strong>
+    <strong>conteúdo próprio</strong> (o que ele publicou, recente), o <strong>arquivo de 5 anos</strong>
     (histórico com fonte primária linkada) e as <strong>menções</strong> (o que circula sobre ele,
     fora da análise). A mesma varredura e a mesma régua para todos; o volume de material
     encontrado varia muito de um candidato para outro, e a página de cada um mostra quanto há.

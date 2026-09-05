@@ -5,7 +5,7 @@ const casos = Object.entries(mods)
   .map(([path, m]) => ({ slug: path.split('/').pop().replace('.md', ''), ...m.frontmatter }))
   .sort((a, b) => (a.ordem ?? 99) - (b.ordem ?? 99));
 ---
-<Base title="Dossiê de verificação documental">
+<Base noindex title="Dossiê de verificação documental">
   <h1>Dossiê de verificação documental</h1>
   <p class="lead">
     Antes de aplicar a régua a 2026, nós a testamos no passado: releitura integral dos programas registrados

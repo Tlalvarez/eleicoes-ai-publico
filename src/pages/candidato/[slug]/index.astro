@@ -35,9 +35,9 @@ const mencoes = recentes.filter((i) => i.voz === 'terceiro');
 const destaque = voz.filter((i) => i.tipo !== 'post-x' && i.tipo !== 'post-instagram').slice(0, 10);
 const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagram').length;
 ---
-<Base
+<Base noindex
   title={c.nome}
-  description={`Rastreamento de ${c.nome}: na própria voz, arquivo de 5 anos e menções — registro automatizado com fontes primárias linkadas.`}
+  description={`Rastreamento de ${c.nome}: conteúdo próprio, arquivo de 5 anos e menções — registro automatizado com fontes primárias linkadas.`}
 >
   <p><a href="/candidato">← Todos os candidatos</a></p>
   <section class="perfil-candidato" aria-labelledby="nome-candidato">
@@ -70,7 +70,7 @@ const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagr
   <div class="card">
     <h2 style="margin-top:0">Visões</h2>
     <ul>
-      <li><a href={`/candidato/${slug}/voz`}><strong>Na própria voz</strong></a> — tudo que {c.nome} disse nos últimos {resumo.janela_recentes_dias} dias, com link para cada fonte</li>
+      <li><a href={`/candidato/${slug}/voz`}><strong>Conteúdo próprio</strong></a> — tudo que {c.nome} publicou nos últimos {resumo.janela_recentes_dias} dias, com link para cada fonte</li>
       <li><a href={`/candidato/${slug}/arquivo`}><strong>Arquivo — 5 anos</strong></a> — histórico desde agosto de 2021, por ano</li>
       <li><a href={`/candidato/${slug}/mencoes`}><strong>Menções</strong></a> — o que circula sobre {c.nome} (fora da análise)</li>
     </ul>
@@ -78,7 +78,7 @@ const nPosts = voz.filter((i) => i.tipo === 'post-x' || i.tipo === 'post-instagr
 
   {destaque.length > 0 && (
     <>
-      <h2>Recentes na própria voz — conteúdo longo</h2>
+      <h2>Recentes no conteúdo próprio — conteúdo longo</h2>
       <ListaItens itens={destaque} />
     </>
   )}

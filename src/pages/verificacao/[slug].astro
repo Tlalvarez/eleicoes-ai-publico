@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 const { doc } = Astro.props;
 const { Content, frontmatter: fm } = doc;
 ---
-<Base title={fm.title}>
+<Base noindex title={fm.title}>
   <p><a href="/verificacao">← Voltar ao dossiê</a></p>
   <p style="margin-bottom:.3rem">
     <span class="badge">Anexo de verificação</span>

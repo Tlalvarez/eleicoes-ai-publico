@@ -31,7 +31,7 @@ const ROTULO_ITEM = {
 const rotuloMes = mes === '00' ? 'sem data' : `${MESES[Number(mes) - 1]} de ${ano}`;
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
 ---
-<Base title={`${ROTULO[tipo]} ${rotuloMes} — ${c.nome}`} description={`${ROTULO[tipo]} de ${c.nome} em ${rotuloMes}, com link para a fonte original.`}>
+<Base noindex title={`${ROTULO[tipo]} ${rotuloMes} — ${c.nome}`} description={`${ROTULO[tipo]} de ${c.nome} em ${rotuloMes}, com link para a fonte original.`}>
   <p><a href={`/acervo/${slug}/${tipo}/${ano}`}>← {ROTULO[tipo]} de {c.nome}, {ano}</a></p>
   <h1>{c.nome} — {ROTULO[tipo]}, {rotuloMes}</h1>
   <p><small>{itens.length.toLocaleString('pt-BR')} posts · cada item linka a fonte original</small></p>

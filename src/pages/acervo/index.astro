@@ -21,7 +21,7 @@ const plural = (q, um, muitos) => `${n.format(q)} ${q === 1 ? um : muitos}`;
 const textoDeBusca = (c) =>
   [c.nome, c.slug, ...c.fontes.flatMap((f) => [f.rotulo, f.fonte, f.tipo])].join(' ');
 ---
-<Base
+<Base noindex
   title="Acervo"
   description="Todo o material reunido sobre cada candidato, organizado por candidato e por fonte, com link até cada registro e até a fonte original."
 >
