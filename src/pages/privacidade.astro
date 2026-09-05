@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+// O que o site guarda e o que não guarda. Cada frase daqui descreve um
+// comportamento real do código (Base.astro: PostHog sem cookies; Chat +
+// conversa-guardada.mjs: sessionStorage; serviço: respostas guardadas com
+// endereço não listado). Mudou o comportamento, muda-se esta página no
+// mesmo commit.
+---
+<Base title="Privacidade"
+  description="O que o eleicoes.ai guarda e o que não guarda sobre quem usa o site.">
+  <div class="prose">
+    <h1>Privacidade</h1>
+    <p class="lead">
+      O site não pede cadastro, não usa cookies e não sabe quem você é. Esta página diz, em
+      linguagem direta, o que acontece com a sua pergunta e com a sua visita.
+    </p>
+
+    <h2>A sua pergunta</h2>
+    <ul>
+      <li>A pergunta é enviada ao nosso serviço para gerar a resposta. Ela <strong>não</strong>
+        é ligada a nome, e-mail, conta ou identificador seu.</li>
+      <li>Cada resposta ganha um <strong>endereço próprio, não listado</strong>
+        (<code>/resposta/…</code>), com a pergunta e a resposta. Ninguém encontra esse endereço
+        por busca ou por lista: só quem recebe o link. Se você compartilhar o link, quem o abrir
+        verá a pergunta como você a escreveu.</li>
+      <li>Por isso, <strong>não escreva dados pessoais na pergunta</strong> (seus ou de
+        terceiros). Se uma pergunta guardada precisar sair do ar, peça a retirada em
+        <a href="/sobre#contato">Fale conosco</a>.</li>
+      <li>Perguntas e respostas são conservadas para auditoria da neutralidade e para
+        correção de erros, sem qualquer dado de quem perguntou.</li>
+    </ul>
+
+    <h2>A sua visita</h2>
+    <ul>
+      <li>Medimos a audiência com o PostHog em <strong>modo sem cookies</strong>: nada é
+        gravado no seu navegador, os eventos são anônimos, não há perfil de pessoa nem
+        gravação de sessão, e o texto da pergunta é mascarado nas medições.</li>
+      <li>A conversa aberta fica guardada <strong>só na sua aba</strong> (armazenamento de
+        sessão do navegador) para sobreviver a um clique no menu. Fechou a aba, acabou.</li>
+      <li>Fotos oficiais dos candidatos e links "Ver no TSE" vêm dos servidores do Tribunal
+        Superior Eleitoral; ao clicar, valem as regras deles.</li>
+    </ul>
+
+    <h2>Quem responde</h2>
+    <p>
+      Pelo site responde Thiago Alvarez, como descrito em <a href="/sobre">Quem faz</a>.
+      Dúvidas, pedidos de acesso ou de retirada: <a href="/sobre#contato">Fale conosco</a>.
+    </p>
+  </div>
+</Base>

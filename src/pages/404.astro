@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+// Sem esta página, a Cloudflare Pages devolvia a HOME com status 200 para
+// qualquer endereço inexistente (/sobre, /termos, /qualquer-coisa): um site
+// que diz "encontrei" para tudo não merece confiança. `404.astro` vira
+// `dist/404.html`, que a Pages serve com status 404.
+---
+<Base title="Página não encontrada"
+  description="Este endereço não existe no eleicoes.ai.">
+  <div class="prose">
+    <h1>Página não encontrada</h1>
+    <p class="lead">Este endereço não existe no eleicoes.ai, ou deixou de existir.</p>
+    <ul>
+      <li><a href="/">Perguntar à IA sobre os candidatos a presidente</a></li>
+      <li><a href="/governador">Governador</a> · <a href="/senador">Senador</a> · <a href="/deputado-federal">Deputado federal</a></li>
+      <li><a href="/metodologia">Metodologia</a> · <a href="/sobre">Quem faz</a> · <a href="/privacidade">Privacidade</a></li>
+    </ul>
+  </div>
+</Base>

@@ -23,7 +23,8 @@ const atual = (p) => {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
-    <meta name="robots" content="noindex" /><!-- soft launch: remover no lançamento público -->
+    <!-- lançamento público em 05/09/2026: sem noindex. As páginas de erro de
+         /resposta continuam noindex por conta própria (pagina-resposta.mjs). -->
     <meta name="color-scheme" content="light dark" />
     <!-- ícone do site: o "e" de eleicoes sobre o azul-marinho, com a faixa da
          identidade. .ico para navegador antigo e robô, SVG para os atuais,
@@ -78,6 +79,7 @@ const atual = (p) => {
         <p><strong>Transparência:</strong> as respostas são geradas por inteligência artificial exclusivamente a partir das evidências recuperadas para cada pergunta.</p>
         <p><strong>Neutralidade:</strong> o eleicoes.ai não recomenda voto e não ranqueia candidatos.</p>
         <p><a href="/metodologia">Metodologia</a>: como filtramos e coletamos os dados</p>
+        <p><a href="/sobre">Quem faz</a> · <a href="/privacidade">Privacidade</a> · <a href="/sobre#contato">Fale conosco ou peça a retirada de uma resposta</a></p>
         <p class="aviso-independencia">O eleicoes.ai é uma <strong>iniciativa independente</strong>, sem vínculo, patrocínio ou endosso da Justiça Eleitoral.</p>
       </div>
     </footer>

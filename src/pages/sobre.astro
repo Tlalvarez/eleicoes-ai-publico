@@ -1,0 +1,64 @@
+---
+import Base from '../layouts/Base.astro';
+// A página que diz quem responde pelo site. Existe porque um produto eleitoral
+// sem rosto é um produto sem confiança: o leitor precisa saber quem faz, o que
+// o site é e não é, e para onde escrever. O texto é escrito à mão e versionado;
+// mudar isto é decisão editorial, como tudo no repositório público.
+const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
+---
+<Base title="Quem faz o eleicoes.ai"
+  description="Quem responde pelo eleicoes.ai, o que o site é e não é, e como falar conosco ou pedir a retirada de uma resposta.">
+  <div class="prose">
+    <h1>Quem faz o eleicoes.ai</h1>
+    <p class="lead">
+      O eleicoes.ai é uma iniciativa independente de <strong>Thiago Alvarez</strong>, que
+      responde pelo site, pelo conteúdo e pelas decisões editoriais. Não tem vínculo com
+      partido, candidatura, governo ou com a Justiça Eleitoral.
+    </p>
+
+    <h2>O que o site é</h2>
+    <p>
+      Um lugar para perguntar, em português comum, o que os candidatos de 2026 registraram e
+      disseram: planos de governo registrados no TSE, falas em vídeo, posts nas redes e
+      pronunciamentos oficiais dos últimos cinco anos. Cada resposta separa o que está
+      escrito nas fontes, o que é leitura nossa a partir delas e o que não encontramos, e
+      leva ao documento ou vídeo original para você conferir.
+    </p>
+
+    <h2>O que o site não é</h2>
+    <ul>
+      <li><strong>Não recomenda voto</strong> e não diz quem é melhor. As respostas terminam
+        em diferenças e trade-offs, nunca em veredicto.</li>
+      <li><strong>Não é checagem de fatos.</strong> Mostramos o que cada candidato disse e
+        registrou, com a fonte; não julgamos se é verdade.</li>
+      <li><strong>Não tem revisor humano em cada resposta.</strong> As respostas são geradas
+        e revisadas por inteligência artificial, e dizem isso no rodapé. Por isso cada
+        afirmação vem com o link da fonte: confira antes de repassar.</li>
+    </ul>
+
+    <h2>Como as respostas são feitas</h2>
+    <p>
+      O sistema procura no acervo os trechos relevantes para a sua pergunta e escreve a
+      resposta só a partir deles. Quando não encontra material sobre um candidato, diz isso
+      em vez de completar com o que "todo mundo sabe". Transcrições automáticas de vídeo
+      podem conter erros e vêm sempre marcadas. A régua completa, com o que é medido e
+      como, está na <a href="/metodologia">metodologia</a>; o código do site e o histórico
+      de mudanças são públicos no <a href={repo} rel="noopener noreferrer">repositório</a>.
+    </p>
+
+    <h2 id="contato">Fale conosco ou peça a retirada de uma resposta</h2>
+    <p>
+      Achou um erro, uma fonte trocada, uma resposta que não devia estar no ar ou uma
+      pergunta que expõe alguém? Abra um registro em
+      <a href={`${repo}/issues`} rel="noopener noreferrer">{repo.replace('https://', '')}/issues</a>
+      com o endereço da página. Pedidos de retirada de respostas guardadas
+      (<code>/resposta/…</code>) são atendidos tirando a página de circulação; a decisão
+      e a data ficam registradas. Correções de conteúdo entram no
+      <a href="/metodologia">changelog público</a>.
+    </p>
+    <p>
+      O que o site guarda e o que não guarda sobre você está em
+      <a href="/privacidade">Privacidade</a>.
+    </p>
+  </div>
+</Base>
