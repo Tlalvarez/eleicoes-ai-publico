@@ -39,3 +39,10 @@ export function urlFotoCandidaturaTse(slug, dados = candidaturas) {
   const { id_eleicao, abrangencia } = dados.eleicao;
   return `https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/${id_eleicao}/${c.id_candidatura}/${abrangencia}`;
 }
+
+/** Sigla do partido e número de urna, do catálogo oficial. */
+export function fichaTse(slug, dados = candidaturas) {
+  const c = dados.candidatos[slug];
+  if (!c || !c.partido) throw new Error(`Candidatura sem partido declarado: ${slug} (src/data/candidaturas-tse.json)`);
+  return { partido: c.partido, numero: c.numero ?? null };
+}

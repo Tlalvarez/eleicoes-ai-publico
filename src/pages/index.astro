@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { leDados } from '../lib/dados.mjs';
 import { candidatosDaHome } from '../lib/home.mjs';
 import Chat from '../components/Chat.astro';
-import { urlCandidaturaTse, urlFotoCandidaturaTse } from '../lib/tse.mjs';
+import { fichaTse, urlCandidaturaTse, urlFotoCandidaturaTse } from '../lib/tse.mjs';
 
 // os dados saem do MANIFESTO da geração ativa (data/current.json),
 // nunca de um caminho fixo: itens, acervo e índice de pesquisa
@@ -20,7 +20,7 @@ const candidatos = candidatosDaHome(resumo);
 // sem identificador derruba o build — link para lugar nenhum é cobertura assimétrica
 const cards = candidatos.map(({ slug, nome }) => ({
   slug, nome, ...resumo.candidatos[slug],
-  foto: urlFotoCandidaturaTse(slug), tse: urlCandidaturaTse(slug),
+  foto: urlFotoCandidaturaTse(slug), tse: urlCandidaturaTse(slug), ...fichaTse(slug),
 }));
 
 // Endereço do serviço de evidências. Sem `PUBLIC_PESQUISA_API`, o padrão é a
@@ -60,6 +60,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
           <img src={c.foto} width="161" height="225" loading="lazy" alt="" />
           <span class="nome-candidato">{c.nome}</span>
         </a>
+        <p class="ficha-candidato">{c.partido}{c.numero ? ` · nº ${c.numero}` : ''}</p>
         <p class="link-tse">
           <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
         </p>
@@ -125,12 +126,14 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       line-height: 1.2;
     }
     .retrato-link:hover .nome-candidato { color: var(--acento); text-decoration: underline; }
-    .link-tse {
+    .ficha-candidato {
       flex: 1;
       margin: 0;
-      padding: .25rem 1rem .8rem;
-      font-size: .86rem;
+      padding: .2rem 1rem .4rem;
+      color: var(--tinta-suave);
+      font-size: .84rem;
     }
+    .link-tse { margin: 0; padding: .2rem 1rem .8rem; font-size: .86rem; }
     .link-tse a { color: var(--acento); font-weight: 600; }
   </style>
 

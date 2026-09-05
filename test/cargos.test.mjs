@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import {
   CARGOS, CARGOS_POR_UF, UFS, cargoPorSlug, caminhoUf, rotuloEscopo, ufPorSigla,
 } from '../src/lib/cargos.mjs';
-import { urlCandidaturaTse, urlFotoCandidaturaTse } from '../src/lib/tse.mjs';
+import { fichaTse, urlCandidaturaTse, urlFotoCandidaturaTse } from '../src/lib/tse.mjs';
 
 test('quatro cargos, presidente na home e os outros três por UF', () => {
   assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador', 'senador', 'deputado-federal']);
@@ -37,4 +37,9 @@ test('cada candidatura da home tem endereço oficial no TSE', () => {
   assert.throws(() => urlCandidaturaTse('ninguem'), /sem identificador/);
   assert.equal(urlFotoCandidaturaTse('lula'),
     'https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/280002542548/BR');
+});
+
+test('cada candidatura a presidente declara partido e número, do catálogo oficial', () => {
+  assert.deepEqual(fichaTse('lula'), { partido: 'PT', numero: 13 });
+  assert.throws(() => fichaTse('ninguem'), /sem partido/);
 });

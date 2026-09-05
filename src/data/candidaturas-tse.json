@@ -1,20 +1,90 @@
 {
- "_": "Identificadores oficiais das candidaturas a presidente no DivulgaCandContas (TSE). O retrato de cada candidato na home leva à página oficial da candidatura, montada a partir daqui.",
+ "_": "Identificadores oficiais das candidaturas a presidente no DivulgaCandContas (TSE). O retrato de cada candidato na home leva à página oficial da candidatura, montada a partir daqui. Partido e número vêm do catálogo oficial de candidaturas (dados abertos do TSE, acervo/config/catalogo-candidaturas/presidente-2026.catalogo.v2.json).",
  "_fonte": "https://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2026/BR/20322002026/1/candidatos — coletado em 2026-08-16",
- "eleicao": {"ano": 2026, "id_eleicao": "20322002026", "abrangencia": "BR", "cargo": "presidente"},
+ "eleicao": {
+  "ano": 2026,
+  "id_eleicao": "20322002026",
+  "abrangencia": "BR",
+  "cargo": "presidente"
+ },
  "candidatos": {
-  "lula": {"id_candidatura": "280002542548", "nome_urna": "LULA"},
-  "romeu-zema": {"id_candidatura": "280002539826", "nome_urna": "ZEMA"},
-  "ronaldo-caiado": {"id_candidatura": "280002551932", "nome_urna": "RONALDO CAIADO"},
-  "renan-santos": {"id_candidatura": "280002540694", "nome_urna": "RENAN SANTOS"},
-  "flavio-bolsonaro": {"id_candidatura": "280002551544", "nome_urna": "FLÁVIO BOLSONARO"},
-  "clariana-barao": {"id_candidatura": "280002552484", "nome_urna": "CLARIANA BARÃO"},
-  "edmilson-costa": {"id_candidatura": "280002551975", "nome_urna": "EDMILSON COSTA"},
-  "augusto-cury": {"id_candidatura": "280002551547", "nome_urna": "ESCRITOR AUGUSTO CURY"},
-  "hertz-dias": {"id_candidatura": "280002541457", "nome_urna": "HERTZ DIAS"},
-  "pablo-marcal": {"id_candidatura": "280002553884", "nome_urna": "PABLO MARÇAL"},
-  "rui-costa-pimenta": {"id_candidatura": "280002552487", "nome_urna": "RUI COSTA PIMENTA"},
-  "samara": {"id_candidatura": "280002538811", "nome_urna": "SAMARA"},
-  "wilson-grassi": {"id_candidatura": "280002548139", "nome_urna": "VETERINÁRIO WILSON GRASSI"}
+  "lula": {
+   "id_candidatura": "280002542548",
+   "nome_urna": "LULA",
+   "partido": "PT",
+   "numero": 13
+  },
+  "romeu-zema": {
+   "id_candidatura": "280002539826",
+   "nome_urna": "ZEMA",
+   "partido": "NOVO",
+   "numero": 30
+  },
+  "ronaldo-caiado": {
+   "id_candidatura": "280002551932",
+   "nome_urna": "RONALDO CAIADO",
+   "partido": "PSD",
+   "numero": 55
+  },
+  "renan-santos": {
+   "id_candidatura": "280002540694",
+   "nome_urna": "RENAN SANTOS",
+   "partido": "MISSÃO",
+   "numero": 14
+  },
+  "flavio-bolsonaro": {
+   "id_candidatura": "280002551544",
+   "nome_urna": "FLÁVIO BOLSONARO",
+   "partido": "PL",
+   "numero": 22
+  },
+  "clariana-barao": {
+   "id_candidatura": "280002552484",
+   "nome_urna": "CLARIANA BARÃO",
+   "partido": "DC",
+   "numero": 27
+  },
+  "edmilson-costa": {
+   "id_candidatura": "280002551975",
+   "nome_urna": "EDMILSON COSTA",
+   "partido": "PCB",
+   "numero": 21
+  },
+  "augusto-cury": {
+   "id_candidatura": "280002551547",
+   "nome_urna": "ESCRITOR AUGUSTO CURY",
+   "partido": "AVANTE",
+   "numero": 70
+  },
+  "hertz-dias": {
+   "id_candidatura": "280002541457",
+   "nome_urna": "HERTZ DIAS",
+   "partido": "PSTU",
+   "numero": 16
+  },
+  "pablo-marcal": {
+   "id_candidatura": "280002553884",
+   "nome_urna": "PABLO MARÇAL",
+   "partido": "PRTB",
+   "numero": 28
+  },
+  "rui-costa-pimenta": {
+   "id_candidatura": "280002552487",
+   "nome_urna": "RUI COSTA PIMENTA",
+   "partido": "PCO",
+   "numero": 29
+  },
+  "samara": {
+   "id_candidatura": "280002538811",
+   "nome_urna": "SAMARA",
+   "partido": "UP",
+   "numero": 80
+  },
+  "wilson-grassi": {
+   "id_candidatura": "280002548139",
+   "nome_urna": "VETERINÁRIO WILSON GRASSI",
+   "partido": "DEMOCRATA",
+   "numero": 35
+  }
  }
 }

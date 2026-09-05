@@ -11,17 +11,17 @@ import Base from '../../layouts/Base.astro';
 import Chat from '../../components/Chat.astro';
 import { leDados } from '../../lib/dados.mjs';
 import { candidatosDaHome } from '../../lib/home.mjs';
-import { urlCandidaturaTse, urlFotoCandidaturaTse } from '../../lib/tse.mjs';
+import { fichaTse, urlCandidaturaTse, urlFotoCandidaturaTse } from '../../lib/tse.mjs';
 
 export function getStaticPaths() {
   const resumo = leDados('itens', 'resumo.json');
   // a foto é a oficial do registro no TSE — a mesma origem das páginas por cargo/UF
   return candidatosDaHome(resumo).map(({ slug, nome }) => ({
     params: { slug },
-    props: { slug, nome, foto: urlFotoCandidaturaTse(slug), tse: urlCandidaturaTse(slug) },
+    props: { slug, nome, foto: urlFotoCandidaturaTse(slug), tse: urlCandidaturaTse(slug), ...fichaTse(slug) },
   }));
 }
-const { slug, nome, foto, tse } = Astro.props;
+const { slug, nome, foto, tse, partido, numero } = Astro.props;
 const pagina = `/presidente/${slug}`;
 
 // o mesmo critério da home (ver index.astro): sem PUBLIC_PESQUISA_API, mesma
@@ -36,6 +36,9 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       <img class="retrato" src={foto} width="92" height="128" alt="" />
       <div>
         <h1>{nome}</h1>
+        <p class="lead">
+          Presidente · {partido}{numero ? ` · nº ${numero}` : ''}
+        </p>
         <p class="lead">
           Pergunte à IA só sobre {nome}.
         </p>
