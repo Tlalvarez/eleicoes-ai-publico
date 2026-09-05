@@ -10,8 +10,12 @@ const textoHome = home.replace(/\s+/g, ' ');
 test('home usa a chamada sobre candidatos solicitada', () => {
   assert.match(home, /<h1>Pergunte à IA sobre os candidatos<\/h1>/);
   assert.doesNotMatch(home, /Pergunte\. Confira as fontes\./);
-  assert.match(home, /apenas <strong>materiais oficiais<\/strong> e <strong>citações diretas<\/strong> dos candidatos/);
-  assert.match(textoHome, /reduzindo o risco de desinformação e ajudando você a fazer uma escolha mais consciente na hora de votar\./);
+  // cópia aprovada pelo Thiago em 05/09/2026: as três origens do acervo (TSE, contas
+  // próprias, vídeos em que falam), link de cada item, sem prazo ("cinco anos" não era
+  // verdade) e sem "apenas materiais oficiais" (há entrevistas em canais de terceiros)
+  assert.match(textoHome, /<strong>registraram na Justiça Eleitoral<\/strong>, <strong>publicaram nas próprias contas<\/strong> e <strong>disseram em vídeos<\/strong> de entrevistas, debates e discursos, com o link de cada item\./);
+  assert.match(textoHome, /para você conferir antes de votar\./);
+  assert.doesNotMatch(textoHome, /últimos cinco anos|apenas <strong>materiais oficiais/);
   assert.doesNotMatch(home, /Converse em português com as evidências reunidas sobre os candidatos\./);
   assert.match(chat, /placeholder = 'Ex\.: o que o candidato A fala sobre educação em seu plano de governo\? Compare quem tratou do tema X\.'/);
   assert.match(home, /<Chat apiBase=\{apiBase\} \/>/);
