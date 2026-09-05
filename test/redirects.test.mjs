@@ -68,6 +68,18 @@ test('a busca antiga não vira 404: /pesquisa cai na home, que é o chat', async
   assert.equal(config.redirects['/pesquisa'], '/');
 });
 
+test('as fichas prometidas para 1º/9 saíram: /fichas cai na metodologia, no Astro e no Pages', async () => {
+  const config = (await import('../astro.config.mjs')).default;
+  const { existsSync } = await import('node:fs');
+  const { readFile } = await import('node:fs/promises');
+  assert.equal(config.redirects['/fichas'], '/metodologia');
+  assert.equal(existsSync(new URL('../src/pages/fichas.astro', import.meta.url)), false,
+    'src/pages/fichas.astro voltou — a página anunciava uma publicação que não aconteceu');
+  const pages = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
+  assert.match(pages, /^\/fichas \/metodologia 301$/m,
+    'a Pages conserva arquivos apagados por 7 dias: sem a linha em _redirects o fichas.html antigo continua no ar');
+});
+
 test('não existe mais uma página de pesquisa concorrendo com a home', async () => {
   const { existsSync } = await import('node:fs');
 

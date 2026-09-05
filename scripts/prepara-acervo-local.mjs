@@ -31,6 +31,10 @@
  * Uso:
  *   node scripts/prepara-acervo-local.mjs [--origem <dir-do-acervo-exportado>]
  *   ACERVO_ORIGEM=/caminho/data/acervo node scripts/prepara-acervo-local.mjs
+ *
+ * Sem exportação em lugar nenhum, escreve um índice em que todo candidato do
+ * catálogo é lacuna declarada — o suficiente para um clone limpo compilar e
+ * passar o gate (ver abaixo).
  */
 import {
   existsSync, lstatSync, mkdirSync, readdirSync, rmSync, symlinkSync, writeFileSync,
@@ -58,16 +62,38 @@ const origem = resolve(argOrigem
   ?? CANDIDATOS_DEFAULT.find((c) => c && existsSync(join(c, 'indice.json')))
   ?? '');
 
+const destino = join(PROJETO, 'data', 'acervo');
+const canonico = leCatalogoCanonico(PROJETO);
+
+// Sem exportação nenhuma (clone recém-feito, sem o corpus privado por perto),
+// o acervo é a lacuna declarada para TODOS os candidatos do catálogo: o site
+// compila, o gate roda, e cada página de acervo diz "sem registros". Antes o
+// script parava aqui, e um clone do repositório público não construía nada —
+// para um site cujo argumento é ser auditável, isso era o oposto do desenho.
+// Não é maquiagem pelo mesmo motivo do passo 2: lacuna declarada é o estado
+// honesto de quem não tem a coleta, e a prévia não vira release oficial.
 if (!origem || !existsSync(join(origem, 'indice.json'))) {
-  console.error('FALHOU (acervo local): nenhuma exportação de acervo encontrada.\n'
-    + '  Passe --origem <dir> ou defina ACERVO_ORIGEM apontando para um\n'
-    + '  diretório que contenha indice.json (saída de exporta_acervo.py).');
-  process.exit(1);
+  const candidatos = Object.fromEntries(
+    Object.entries(canonico).map(([slug, nome]) => [slug, { nome, tipos: {} }]));
+  mkdirSync(destino, { recursive: true });
+  writeFileSync(join(destino, 'indice.json'), JSON.stringify({
+    gerado_em: null,
+    origem_local: {
+      _: 'PRÉVIA INTERNA SEM COLETA — índice vazio montado por scripts/prepara-acervo-local.mjs',
+      exportacao: null,
+      gerado_em_origem: null,
+      sem_coleta: Object.keys(candidatos),
+    },
+    candidatos,
+  }, null, 1) + '\n');
+  console.log('OK (acervo local): nenhuma exportação de acervo encontrada — PRÉVIA INTERNA SEM COLETA');
+  console.log(`  ${Object.keys(candidatos).length} candidatos do catálogo declarados como lacuna em data/acervo/indice.json`);
+  console.log('  para usar uma exportação real: --origem <dir> ou ACERVO_ORIGEM=<dir> (saída de exporta_acervo.py)');
+  console.log('  isto NÃO é release oficial: não há data/current.json com release_status.');
+  process.exit(0);
 }
 
-const destino = join(PROJETO, 'data', 'acervo');
 const indiceOrigem = leJson(join(origem, 'indice.json'));
-const canonico = leCatalogoCanonico(PROJETO);
 
 mkdirSync(destino, { recursive: true });
 

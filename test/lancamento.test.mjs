@@ -16,7 +16,7 @@ test('lançamento: o layout só emite noindex quando a página pede', async () =
 
 test('seções fora do menu pedem noindex; as do menu, não', async () => {
   const pede = ['pages/candidato/index.astro', 'pages/acervo/index.astro', 'pages/mencoes/index.astro',
-    'pages/fichas.astro', 'pages/verificacao/index.astro', 'pages/candidato/[slug]/voz.astro'];
+    'pages/verificacao/index.astro', 'pages/candidato/[slug]/voz.astro'];
   for (const f of pede) assert.match(await le(f), /<Base noindex/, f);
   for (const f of ['pages/index.astro', 'pages/[cargo]/index.astro', 'pages/metodologia.astro', 'pages/sobre.astro', 'pages/privacidade.astro']) {
     assert.doesNotMatch(await le(f), /<Base noindex/, f);

@@ -60,6 +60,7 @@ import { fileURLToPath } from 'node:url';
 import { extname, join, normalize } from 'node:path';
 
 import { codifica } from '../src/lib/permalink.mjs';
+import { analisaHeaders } from './emite-cabecalhos-dist.mjs';
 import { ROTULO_PREVIA } from '../src/lib/release.mjs';
 
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -165,6 +166,11 @@ const RESPOSTA = {
 // servidor: dist/ + API falsa, na mesma origem
 // ---------------------------------------------------------------------------
 
+/** `dist/_headers` como a Pages o aplicaria a todo caminho (`/*`). Sem o arquivo, nada. */
+const CABECALHOS_DA_PAGES = existsSync(join(DIST, '_headers'))
+  ? (analisaHeaders(readFileSync(join(DIST, '_headers'), 'utf8'))['/*'] ?? {})
+  : {};
+
 function sobeServidor(modo) {
   const chamadas = [];
   const servidor = createServer((req, res) => {
@@ -220,7 +226,12 @@ function sobeServidor(modo) {
             dados = Buffer.from(dados.toString('utf8')
               .replace(/data-api="https?:\/\/[^"]*"/g, 'data-api=""'));
           }
-          res.writeHead(200, { 'Content-Type': TIPOS[extname(caminho)] ?? 'application/octet-stream' });
+          // Os cabeçalhos de segurança que a Pages aplicaria (dist/_headers,
+          // inclusive a CSP com os hashes dos scripts inline) valem aqui
+          // também: uma CSP que bloqueasse o script do chat só apareceria em
+          // produção se este gate servisse o dist sem ela.
+          res.writeHead(200, { 'Content-Type': TIPOS[extname(caminho)] ?? 'application/octet-stream',
+            ...CABECALHOS_DA_PAGES });
           res.end(dados);
           return;
         } catch { /* diretório: tenta o próximo */ }

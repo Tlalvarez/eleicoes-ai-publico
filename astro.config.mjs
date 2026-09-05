@@ -21,6 +21,11 @@ export default defineConfig({
     // implementações do renderizador. O endereço antigo continua chegando em
     // algum lugar, em vez de dar 404.
     '/pesquisa': '/',
+    // As "fichas por candidato" (Teste A, Teste B, eixos) eram a promessa da v1.1,
+    // com publicação marcada para 1º/9/2026. O produto virou o chat com o
+    // acervo e a promessa não foi cumprida; manter a página no ar era anunciar
+    // algo que não existe. O endereço leva ao que descreve o método atual.
+    '/fichas': '/metodologia',
     ...redirectsDeMencoes(catalogoDoResumo(resumo)),
   },
 });

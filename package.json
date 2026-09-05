@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/emite-release-dist.mjs",
+    "build": "astro build && node scripts/emite-release-dist.mjs && node scripts/emite-cabecalhos-dist.mjs",
     "preview": "astro preview",
     "acervo:local": "node scripts/prepara-acervo-local.mjs",
     "test": "npm run test:unit && npm run build && npm run test:functions && npm run test:dist",
     "test:functions": "wrangler pages functions build --outdir .wrangler/functions-test",
     "deploy:pages": "wrangler pages deploy dist --project-name=eleicoes-ai --branch=main --commit-dirty=true",
     "test:unit": "npm run test:home-fonte && npm run test:rotas && npm run test:catalogo",
-    "test:dist": "npm run test:home-dist && npm run test:acervo-dist && npm run test:render-seguro && npm run test:previa && npm run test:acessibilidade && npm run test:navegador",
+    "test:dist": "npm run test:home-dist && npm run test:acervo-dist && npm run test:render-seguro && npm run test:previa && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:navegador",
     "test:integracao": "npm run test",
     "test:home-fonte": "node scripts/checa-home-fonte.mjs",
     "test:home-dist": "node scripts/checa-home-dist.mjs",
@@ -22,7 +22,8 @@
     "test:catalogo": "node scripts/checa-catalogo.mjs",
     "test:rotas": "node --test test/*.test.mjs",
     "test:acessibilidade": "node scripts/checa-acessibilidade.mjs",
-    "test:navegador": "node scripts/checa-chat-navegador.mjs"
+    "test:navegador": "node scripts/checa-chat-navegador.mjs",
+    "test:cabecalhos": "node scripts/checa-cabecalhos-dist.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"
