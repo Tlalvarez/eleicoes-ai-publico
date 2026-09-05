@@ -22,6 +22,12 @@ const { slug, tipo, ano, mes } = Astro.params;
 const c = indice.candidatos[slug];
 const todos = carregaAno(raizAcervo(), slug, tipo, ano);
 const itens = todos.filter((i) => (i.data ? i.data.slice(5, 7) : '00') === mes);
+const ROTULO_ITEM = {
+  video: 'Vídeo', aparicao: 'Aparição', 'post-x': 'Post no X',
+  'post-instagram': 'Post no Instagram', discurso: 'Discurso no Senado',
+  artigo: 'Publicação oficial', 'pagina-arquivada': 'Página arquivada',
+};
+// o site não expõe o texto dos itens (ver [ano].astro): título/rótulo, data e link
 const rotuloMes = mes === '00' ? 'sem data' : `${MESES[Number(mes) - 1]} de ${ano}`;
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
 ---
@@ -34,7 +40,7 @@ const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
     {itens.map((i) => (
       <li>
         <small>{dataBr(i.data)}{i.repost ? ' · repost de terceiro' : ''}</small><br />
-        <span class="texto-item">{i.texto ?? '(sem texto)'}</span>
+        <span>{i.titulo ?? ROTULO_ITEM[tipo] ?? tipo}</span>
         {' '}<a class="fonte-externa" href={i.url} rel="noopener" target="_blank">↗ fonte</a>
       </li>
     ))}
@@ -44,7 +50,6 @@ const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
     .acervo-lista { list-style: none; padding: 0; }
     .acervo-lista li { margin-bottom: 1rem; border-bottom: 1px solid rgba(127,127,127,.25);
       padding-bottom: .6rem; overflow-wrap: anywhere; }
-    .texto-item { white-space: pre-wrap; }
     .fonte-externa { white-space: nowrap; }
   </style>
 </Base>

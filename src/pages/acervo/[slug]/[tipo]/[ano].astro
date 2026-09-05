@@ -20,6 +20,15 @@ const ROTULO = {
   'post-instagram': 'Posts no Instagram', discurso: 'Discursos no Senado',
   artigo: 'Publicações oficiais', 'pagina-arquivada': 'Páginas arquivadas',
 };
+const ROTULO_ITEM = {
+  video: 'Vídeo', aparicao: 'Aparição', 'post-x': 'Post no X',
+  'post-instagram': 'Post no Instagram', discurso: 'Discurso no Senado',
+  artigo: 'Publicação oficial', 'pagina-arquivada': 'Página arquivada',
+};
+// Decisão (05/09/2026): o site não expõe o texto dos itens — nem o campo
+// `texto`, nem transcrição. Cada card é título (ou o rótulo do tipo), data e
+// o link para a fonte original. A release v2 carrega texto integral; ele
+// fica no serviço de evidências, não numa página consultável.
 const { slug, tipo, ano } = Astro.params;
 const c = indice.candidatos[slug];
 // só o rollup deste ano — o glob eager arrastava o acervo inteiro (inclusive
@@ -28,8 +37,6 @@ const itens = carregaAno(raizAcervo(), slug, tipo, ano);
 const anos = Object.keys(c.tipos[tipo].anos).sort().reverse();
 const min = (s) => (s ? ` · ${Math.round(s / 60)} min` : '');
 const dataBr = (d) => (d ? d.split('-').reverse().join('/') : 'sem data');
-const ehVideo = tipo === 'video' || tipo === 'aparicao';
-const ehPost = tipo === 'post-x' || tipo === 'post-instagram';
 
 // Anos grandes viram índice de meses (achado da revisão: 3.340 itens numa
 // página = 3,9MB/596 telas mobile — impraticável). A regra mora na lib para
@@ -53,9 +60,6 @@ if (paginaPorMes) {
       ? <strong style="margin-right:.7rem">{a === '0000' ? 'sem data' : a}</strong>
       : <a style="margin-right:.7rem" href={`/acervo/${slug}/${tipo}/${a}`}>{a === '0000' ? 'sem data' : a}</a>)}
   </p>
-  {ehVideo && (
-    <div class="aviso">{indice.aviso_transcricao}</div>
-  )}
 
   {paginaPorMes && (
     <ul class="acervo-lista">
@@ -73,13 +77,8 @@ if (paginaPorMes) {
     {(paginaPorMes ? [] : itens).map((i) => (
       <li>
         <small>{dataBr(i.data)}{i.repost ? ' · repost de terceiro' : ''}{min(i.duracao_s)}</small><br />
-        {ehVideo && i.tem_detalhe
-          ? <a href={`/acervo/${slug}/item/${i.id}`}>{i.titulo ?? i.url}</a>
-          : ehPost || tipo === 'discurso'
-            ? <span class="texto-item">{i.texto ?? i.titulo ?? '(sem texto)'}</span>
-            : <span>{i.titulo ?? i.url}</span>}
+        <span>{i.titulo ?? ROTULO_ITEM[tipo] ?? tipo}</span>
         {' '}<a class="fonte-externa" href={i.url} rel="noopener" target="_blank">↗ fonte</a>
-        {ehVideo && i.tem_detalhe && <small> · <a href={`/acervo/${slug}/item/${i.id}`}>transcrição</a></small>}
       </li>
     ))}
   </ul>
@@ -87,7 +86,6 @@ if (paginaPorMes) {
   <style>
     .acervo-lista { list-style: none; padding: 0; }
     .acervo-lista li { margin-bottom: 1rem; border-bottom: 1px solid rgba(127,127,127,.25); padding-bottom: .6rem; overflow-wrap: anywhere; }
-    .texto-item { white-space: pre-wrap; }
     .fonte-externa { white-space: nowrap; }
   </style>
 </Base>
