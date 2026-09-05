@@ -2,6 +2,8 @@
 # UF e por candidatura saem do build, e os endereços antigos caem na explicação.
 # 302, não 301: a seção volta quando a coleta estiver completa.
 /senador/* /senador 302
+# Deputado federal: idem, 05/09/2026 (src/pages/deputado-federal.astro).
+/deputado-federal/* /deputado-federal 302
 
 # Fichas por candidato: promessa da v1.1 retirada em 05/09/2026 (ver
 # astro.config.mjs). 301: a página não volta; o método atual está na metodologia.

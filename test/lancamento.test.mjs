@@ -63,4 +63,6 @@ test('senador suspenso: página de explicação e redirecionamento dos endereço
   assert.match(pagina, /Em preparação/);
   const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
   assert.match(redirects, /^\/senador\/\* +\/senador +302$/m);
+  assert.match(redirects, /^\/deputado-federal\/\* +\/deputado-federal +302$/m);
+  assert.match(await le('pages/deputado-federal.astro'), /Em preparação/);
 });
