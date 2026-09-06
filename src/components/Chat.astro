@@ -260,6 +260,13 @@ const {
 
     /* lacuna e ressalva: amarelo claro com texto azul-marinho, a mesma cor de
        atenção do site inteiro — nunca o estatuto de um candidato */
+    .cobertura {
+      margin: 1.1rem 0 0; padding: .8rem 1rem;
+      border: 1px solid var(--linha); border-radius: 8px; background: var(--realce);
+      font-size: .88rem; color: var(--tinta-suave);
+    }
+    .cobertura p { margin: 0; }
+    .cobertura .cobertura-lacuna { margin-top: .35rem; }
     .rotulo-ia {
       margin: 0 0 .6rem; font-size: .78rem; font-weight: 700; letter-spacing: .04em;
       text-transform: uppercase; color: var(--tinta-suave);
@@ -447,6 +454,72 @@ const {
         if (forte.textContent.trim() === 'Conclusão:') forte.textContent = 'Resumindo:';
       }
       return corpo;
+    }
+
+    /**
+     * Quem entrou nesta resposta, e de quem não temos material — com a CAUSA.
+     *
+     * A seção "Lacunas" do texto é removida da tela de propósito (ver
+     * montaCorpo), então o leitor nunca via de quem faltava material nem por
+     * quê. O serviço manda isso ESTRUTURADO em `candidatos[]`, com três
+     * situações e, quando não há material nenhum, a causa. Aqui isso vira duas
+     * linhas em vez de prosa: número certo, nome de quem ficou de fora, e de
+     * quem é a lacuna — do candidato que não informou fonte, ou nossa.
+     *
+     * Aprovado pelo Thiago em 05/09/2026.
+     */
+    const CAUSA = new Map([
+      ['sem_fonte_declarada', 'Não informaram site nem rede social ao TSE'],
+      ['so_canal_de_partido', 'Informaram ao TSE só canais do partido'],
+      ['so_fontes_sem_lane', 'Informaram ao TSE só redes que ainda não coletamos'],
+      ['sem_material_coletado', 'Ainda não coletamos material'],
+    ]);
+
+    function listaDeNomes(nomes) {
+      return nomes.length === 1 ? nomes[0]
+        : `${nomes.slice(0, -1).join(', ')} e ${nomes.at(-1)}`;
+    }
+
+    function montaCobertura(candidatos) {
+      const todos = (candidatos ?? []).filter((c) => c && c.nome);
+      if (todos.length < 2) return null;
+      const comTema = todos.filter((c) => c.situacao === 'com_material');
+      const semTema = todos.filter((c) => c.situacao === 'sem_material_na_consulta');
+      const semNada = todos.filter((c) => c.situacao === 'sem_material_no_acervo');
+      if (!semTema.length && !semNada.length) return null;
+
+      const sec = el('section', 'cobertura');
+      const alvo = escopo || 'candidatos a presidente';
+      const partes = [`${todos.length} ${escopo ? `candidatos — ${alvo}` : alvo}.`];
+      if (comTema.length) partes.push(`Encontramos material sobre este tema de ${comTema.length}.`);
+      if (semTema.length) {
+        partes.push(semTema.length === 1
+          ? 'Outro tem material no acervo, mas nada sobre isso.'
+          : `Outros ${semTema.length} têm material no acervo, mas nada sobre isso.`);
+      }
+      sec.append(el('p', 'cobertura-resumo', partes.join(' ')));
+
+      // uma linha por CAUSA, para o leitor saber de quem é a lacuna
+      const porCausa = new Map();
+      for (const c of semNada) {
+        const chave = CAUSA.has(c.lacuna_causa) ? c.lacuna_causa : 'sem_material_coletado';
+        if (!porCausa.has(chave)) porCausa.set(chave, []);
+        porCausa.get(chave).push(nomeLegivel(c.nome));
+      }
+      for (const [chave, nomes] of porCausa) {
+        sec.append(el('p', 'cobertura-lacuna', `${CAUSA.get(chave)}: ${listaDeNomes(nomes)}.`));
+      }
+      return sec;
+    }
+
+    /** "MARCELO ARO" → "Marcelo Aro": o serviço manda o nome de registro. */
+    function nomeLegivel(nome) {
+      const s = String(nome ?? '').trim();
+      if (s !== s.toUpperCase()) return s;
+      const MINUSCULAS = new Set(['da', 'de', 'do', 'das', 'dos', 'e']);
+      return s.toLowerCase().split(/\s+/)
+        .map((p, i) => (i > 0 && MINUSCULAS.has(p) ? p : p.charAt(0).toUpperCase() + p.slice(1)))
+        .join(' ');
     }
 
     /** Uma linha de fonte, montada nó a nó — nunca por marcação em string. */
@@ -673,6 +746,9 @@ const {
         `Resposta gerada por inteligência artificial · sem revisão humana · ${dataRotulo}`));
 
       artigo.append(montaCorpo(resultado.texto, indice, resultado.citacoes));
+
+      const cobertura = montaCobertura(resultado.candidatos);
+      if (cobertura) artigo.append(cobertura);
 
       if (resultado.citacoes.length) {
         const sec = el('section', 'fontes');

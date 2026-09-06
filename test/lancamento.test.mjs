@@ -138,3 +138,23 @@ test('og:url é o endereço público, sem .html (é o destino que o WhatsApp usa
   assert.match(base, /property="og:url" content=\{new URL\(caminhoPublico,/);
   assert.doesNotMatch(base, /property="og:url" content=\{new URL\(path,/);
 });
+
+test('a resposta mostra quem ficou de fora e a causa (a seção Lacunas é removida da tela)', async () => {
+  const chat = await le('components/Chat.astro');
+  // o bloco é montado a partir de candidatos[] do payload, não da prosa
+  assert.match(chat, /function montaCobertura\(candidatos\)/);
+  assert.match(chat, /const cobertura = montaCobertura\(resultado\.candidatos\);/);
+  // as quatro causas do vocabulário fechado, com a frase de leitor de cada uma
+  for (const [causa, frase] of [
+    ['sem_fonte_declarada', 'Não informaram site nem rede social ao TSE'],
+    ['so_canal_de_partido', 'Informaram ao TSE só canais do partido'],
+    ['so_fontes_sem_lane', 'Informaram ao TSE só redes que ainda não coletamos'],
+    ['sem_material_coletado', 'Ainda não coletamos material'],
+  ]) {
+    assert.ok(chat.includes(`['${causa}', '${frase}']`), `falta a frase da causa ${causa}`);
+  }
+  // nome de registro vem em caixa alta e não pode ir assim para a tela
+  assert.match(chat, /function nomeLegivel\(nome\)/);
+  // o bloco só aparece quando há alguém de fora
+  assert.match(chat, /if \(!semTema\.length && !semNada\.length\) return null;/);
+});
