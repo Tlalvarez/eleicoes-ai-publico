@@ -6,13 +6,16 @@ import Base from '../layouts/Base.astro';
 // mudar isto é decisão editorial, como tudo no repositório público.
 import { EMAIL_CONTATO as email } from '../lib/compartilhar.mjs';
 const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
+// quem responde pelo site tem endereço público verificável
+const linkedin = 'https://www.linkedin.com/in/thiagoalvarez';
 ---
 <Base title="Quem faz o eleicoes.ai"
   description="Quem responde pelo eleicoes.ai, o que o site é e não é, e como falar conosco ou pedir a retirada de uma resposta.">
   <div class="prose">
     <h1>Quem faz o eleicoes.ai</h1>
     <p class="lead">
-      O eleicoes.ai é uma iniciativa independente de <strong>Thiago Alvarez</strong>, que
+      O eleicoes.ai é uma iniciativa independente de
+      <strong><a href={linkedin} rel="noopener noreferrer">Thiago Alvarez</a></strong>, que
       responde pelo site, pelo conteúdo e pelas decisões editoriais. Não tem vínculo com
       partido, candidatura, governo ou com a Justiça Eleitoral.
     </p>
@@ -45,6 +48,8 @@ const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
       podem conter erros e vêm sempre marcadas. A régua completa, com o que é medido e
       como, está na <a href="/metodologia">metodologia</a>; o código do site e o histórico
       de mudanças são públicos no <a href={repo} rel="noopener noreferrer">repositório</a>.
+      Com que ferramentas o site foi construído está em
+      <a href="/metodologia#como-este-site-foi-feito">Como este site foi feito</a>.
     </p>
 
     <h2 id="regras">Regras da casa</h2>

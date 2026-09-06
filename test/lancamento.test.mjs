@@ -70,6 +70,7 @@ test('lançamento: a página Quem faz nomeia o responsável e o canal de retirad
   assert.match(sobre, /Não recomenda voto/);
   assert.match(sobre, /Não tem revisor humano/);
   assert.match(sobre, /EMAIL_CONTATO/);
+  assert.match(sobre, /linkedin\.com\/in\/thiagoalvarez/);
   assert.match(sobre, /<h2 id="regras">Regras da casa<\/h2>/);
   assert.equal((sobre.match(/<ol class="regras">[\s\S]*?<\/ol>/)[0].match(/<li>/g) || []).length, 6);
   assert.match(await le('components/Chat.astro'), /Reportar um problema nesta resposta/);
@@ -160,4 +161,12 @@ test('a resposta mostra quem ficou de fora e a causa (a seção Lacunas é remov
   assert.match(chat, /function nomeLegivel\(nome\)/);
   // o bloco só aparece quando há alguém de fora
   assert.match(chat, /if \(!semTema\.length && !semNada\.length\) return null;/);
+});
+
+test('metodologia diz como o site foi feito, com o histórico do código e o gateway da coleta', async () => {
+  const m = await readFile(new URL('../src/content/metodologia.md', import.meta.url), 'utf8');
+  assert.match(m, /## Como este site foi feito/);
+  assert.match(m, /nativeport\.ai/);
+  assert.match(m, /commits\/main/);
+  assert.doesNotMatch(m, /\]\(\/acervo\)/, 'o acervo saiu do build: link morto');
 });
