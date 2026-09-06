@@ -135,6 +135,27 @@ export function normalizaResposta(bruto) {
     // uma entrada órfã na lista de fontes
     .filter((c) => c.marcadores.length > 0);
 
+  // Quem estava no escopo da pergunta, e de quem não há material — com a CAUSA.
+  // Vocabulário FECHADO nos dois campos: situação ou causa que o serviço invente
+  // vira `null` em vez de texto livre indo para a tela. Sem esta normalização o
+  // campo era descartado aqui e o bloco de cobertura nunca aparecia.
+  const SITUACOES = new Set(['com_material', 'sem_material_na_consulta',
+    'sem_material_no_acervo', 'fora_do_release']);
+  const CAUSAS = new Set(['sem_fonte_declarada', 'so_canal_de_partido',
+    'so_fontes_sem_lane', 'sem_material_coletado']);
+  const candidatos = (Array.isArray(r.candidatos) ? r.candidatos : [])
+    .map((c) => {
+      const cand = c && typeof c === 'object' ? c : {};
+      return {
+        slug: str(cand.slug) || null,
+        nome: str(cand.nome) || null,
+        elegivel: cand.elegivel === true,
+        situacao: SITUACOES.has(cand.situacao) ? cand.situacao : null,
+        lacuna_causa: CAUSAS.has(cand.lacuna_causa) ? cand.lacuna_causa : null,
+      };
+    })
+    .filter((c) => c.nome && c.situacao);
+
   return {
     id: str(r.id) || null,
     // o identificador PÚBLICO da resposta guardada, que vira `/resposta/<id>`.
@@ -151,6 +172,7 @@ export function normalizaResposta(bruto) {
     rodape: str(r.rodape),
     release_id: str(r.release_id) || null,
     release_status: str(r.release_status) || null,
+    candidatos,
   };
 }
 

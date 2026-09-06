@@ -512,3 +512,24 @@ test('a ressalva de leitor da citação passa pela normalização', () => {
   const sem = normalizaResposta({ texto: 'x [S1]', citacoes: [{ marcadores: [1] }] });
   assert.equal(sem.citacoes[0].ressalva, null);
 });
+
+test('candidatos sobrevivem à normalização, com vocabulário fechado', () => {
+  // sem isto o bloco de cobertura da resposta nunca aparece: normalizaResposta
+  // monta um objeto novo e descarta campo que não esteja na lista
+  const r = normalizaResposta({
+    texto: 'x',
+    candidatos: [
+      { slug: 'senador-mg-x-1', nome: 'MARCELO ARO', elegivel: true, situacao: 'com_material' },
+      { nome: 'DOMINGOS SÁVIO', situacao: 'sem_material_no_acervo', lacuna_causa: 'sem_material_coletado' },
+      { nome: 'INVENTADO', situacao: 'situacao_que_o_servico_inventou' },
+      { nome: 'HOSTIL', situacao: 'com_material', lacuna_causa: '<script>alert(1)</script>' },
+      { situacao: 'com_material' },
+    ],
+  });
+  assert.equal(r.candidatos.length, 3, 'situação fora do vocabulário e candidato sem nome saem');
+  assert.deepEqual(r.candidatos[0],
+    { slug: 'senador-mg-x-1', nome: 'MARCELO ARO', elegivel: true, situacao: 'com_material', lacuna_causa: null });
+  assert.equal(r.candidatos[1].lacuna_causa, 'sem_material_coletado');
+  assert.equal(r.candidatos[2].lacuna_causa, null, 'causa fora do vocabulário não vai para a tela');
+  assert.equal(normalizaResposta({ texto: 'x' }).candidatos.length, 0);
+});
