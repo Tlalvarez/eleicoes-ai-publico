@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { RELEASE_FONTES, VOCABULARIO, fraseCandidato, notaCard, situacaoFontes } from '../src/lib/fontes-declaradas.mjs';
+import { RELEASE_FONTES, VOCABULARIO, dataBr, fraseCandidato, notaCard, notaColeta, situacaoFontes } from '../src/lib/fontes-declaradas.mjs';
 import { todasCandidaturas } from '../src/lib/candidaturas-uf.mjs';
 
 test('o arquivo cobre toda candidatura a governador do snapshot, pela chave do TSE', () => {
@@ -35,4 +35,15 @@ test('os dois governadores sem fonte declarada na release corrente ganham a nota
   for (const id of ['130002544411', '250002548080']) {
     assert.equal(notaCard(situacaoFontes(id)), 'Não informou site nem redes sociais ao TSE', id);
   }
+});
+
+test('coleta: o card diz quando as fontes foram vistas; sem data, não diz nada', () => {
+  assert.equal(dataBr('2026-09-05'), '05/09/2026');
+  assert.equal(dataBr(null), '');
+  assert.equal(notaColeta({ ultima_coleta_em: '2026-09-05' }), 'Fontes vistas em 05/09/2026');
+  assert.equal(notaColeta({ ultima_coleta_em: null }), '');
+  assert.equal(notaColeta(null), '');
+  // quem tem material tem data de coleta: é o que o leitor pergunta em seguida
+  const alan = situacaoFontes('10002532492');
+  assert.equal(notaColeta(alan), 'Fontes vistas em 05/09/2026');
 });

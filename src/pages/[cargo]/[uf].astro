@@ -7,7 +7,7 @@ import Base from '../../layouts/Base.astro';
 import Chat from '../../components/Chat.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, notaSituacao, separaPorDisputa } from '../../lib/candidaturas-uf.mjs';
-import { notaCard, situacaoFontes } from '../../lib/fontes-declaradas.mjs';
+import { notaCard, notaColeta, situacaoFontes } from '../../lib/fontes-declaradas.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.map((uf) => ({
@@ -57,7 +57,9 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         <p class="ficha-candidato">
           {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
           <span class="situacao">{c.situacao}{notaSituacao(c.situacao) ? ` · ${notaSituacao(c.situacao)}` : ''}</span>
-          {notaCard(situacaoFontes(c.id)) && <span class="nota-fontes">{notaCard(situacaoFontes(c.id))}</span>}
+          {notaCard(situacaoFontes(c.id))
+            ? <span class="nota-fontes">{notaCard(situacaoFontes(c.id))}</span>
+            : <span class="nota-fontes">{notaColeta(situacaoFontes(c.id))}</span>}
         </p>
         <p class="link-tse">
           <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>

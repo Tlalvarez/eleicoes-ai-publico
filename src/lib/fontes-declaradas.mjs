@@ -39,6 +39,22 @@ function lista(itens) {
   return itens.length <= 1 ? itens.join('') : `${itens.slice(0, -1).join(', ')} e ${itens.at(-1)}`;
 }
 
+/** Uma data AAAA-MM-DD do arquivo em DD/MM/AAAA; vazio quando não há data. */
+export function dataBr(iso) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso ?? ''));
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : '';
+}
+
+/**
+ * A linha de coleta: quando olhamos as fontes deste candidato pela última vez.
+ * Vale para quem TEM material — é a pergunta que o leitor faz em seguida
+ * ("isso está atualizado?"). Quem não tem material já recebe a nota da causa.
+ */
+export function notaColeta(e) {
+  const d = dataBr(e?.ultima_coleta_em);
+  return d ? `Fontes vistas em ${d}` : '';
+}
+
 /** A linha curta do card. Vazia quando há material: o card não vira placar. */
 export function notaCard(e) {
   switch (e?.situacao_fontes) {

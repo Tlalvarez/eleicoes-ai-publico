@@ -8,7 +8,7 @@ import Base from '../../../layouts/Base.astro';
 import Chat from '../../../components/Chat.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, foraDaDisputa, notaSituacao } from '../../../lib/candidaturas-uf.mjs';
-import { fraseCandidato, situacaoFontes } from '../../../lib/fontes-declaradas.mjs';
+import { fraseCandidato, notaColeta, situacaoFontes } from '../../../lib/fontes-declaradas.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.flatMap((uf) =>
@@ -37,6 +37,9 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         <p class="lead">
           {rotulo} · {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''} · {c.situacao}{notaSituacao(c.situacao) ? ` (${notaSituacao(c.situacao)})` : ''}
         </p>
+        {notaColeta(situacaoFontes(c.id)) && (
+          <p class="lead" style="margin-top:.2rem">{notaColeta(situacaoFontes(c.id))}</p>
+        )}
         {fraseCandidato(situacaoFontes(c.id)) && (
           <p class="aviso" role="note">{fraseCandidato(situacaoFontes(c.id))}</p>
         )}
