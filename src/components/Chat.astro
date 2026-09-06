@@ -104,14 +104,17 @@ const {
        Estilo escopado simplesmente não casaria com eles. */
     .chat { margin: 1.5rem 0 2rem; }
 
-    /* MODO CONVERSA (após a primeira pergunta): a página é só o diálogo.
-       As mensagens rolam com a página; o compositor acompanha a rolagem
-       GRUDADO embaixo (sticky) enquanto a conversa está na tela, e volta ao
-       lugar natural quando a conversa acaba — assim o rodapé do site fica
-       legível. Fixo (position: fixed) ele cobria o rodapé para sempre. */
-    body.modo-conversa .hero-home,
-    body.modo-conversa .secao-catalogo { display: none; }
-    body.modo-conversa main { padding-bottom: 1.5rem; }
+    /* MODO CONVERSA (após a primeira pergunta): a página CONTINUA A MESMA e
+       só ganha a pergunta e a resposta. A versão anterior escondia o cabeçalho
+       e a grade de candidatos (`display: none`), e o leitor perdia o caminho —
+       não dava para ver os outros candidatos nem voltar de um candidato para
+       todos sem recarregar. Quem faz uma pergunta quer fazer a próxima, e a
+       próxima costuma ser sobre outro candidato.
+
+       O compositor continua acompanhando a rolagem (sticky), que é o ganho
+       real do modo conversa: dá para perguntar de novo sem procurar a caixa.
+       Ele para antes do fim da seção do chat, então não cobre a grade nem o
+       rodapé. */
     body.modo-conversa .form-chat {
       position: sticky;
       bottom: .75rem;
@@ -379,8 +382,9 @@ const {
     // ------------------------------------------------------------ conversa
 
     function adicionaPergunta(texto, { rola = true } = {}) {
-      // UX de conversa: com a primeira pergunta a página vira só o diálogo —
-      // hero e catálogo somem, o compositor gruda embaixo e as mensagens rolam
+      // A página não muda: ela ganha a pergunta e a resposta, e continua com o
+      // cabeçalho e a grade de candidatos no lugar. A classe só faz o
+      // compositor acompanhar a rolagem.
       document.body.classList.add('modo-conversa');
       const li = el('li', 'turno turno-pergunta');
       li.append(el('p', 'marca-pergunta', 'Pergunta'));

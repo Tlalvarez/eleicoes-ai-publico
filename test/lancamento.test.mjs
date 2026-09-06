@@ -170,3 +170,14 @@ test('metodologia diz como o site foi feito, com o histórico do código e o gat
   assert.match(m, /commits\/main/);
   assert.doesNotMatch(m, /\]\(\/acervo\)/, 'o acervo saiu do build: link morto');
 });
+
+test('perguntar não esconde o cabeçalho nem a grade de candidatos', async () => {
+  const chat = await le('components/Chat.astro');
+  // o modo conversa escondia .hero-home e .secao-catalogo, e o leitor perdia o
+  // caminho: não dava para ver os outros candidatos nem voltar para todos
+  assert.doesNotMatch(chat, /modo-conversa[^{]*\.(hero-home|secao-catalogo)[^{]*\{[^}]*display:\s*none/);
+  assert.doesNotMatch(chat, /body\.modo-conversa \.secao-catalogo/);
+  assert.doesNotMatch(chat, /body\.modo-conversa \.hero-home/);
+  // o compositor que acompanha a rolagem fica: é o ganho real do modo conversa
+  assert.match(chat, /body\.modo-conversa \.form-chat \{[\s\S]*?position: sticky/);
+});
