@@ -1,9 +1,9 @@
 /**
  * Os cargos da eleição de 2026 e as unidades da federação.
  *
- * O menu do site é POR CARGO: presidente, governador, senador e deputado
- * federal. Senador e deputado federal voltaram em 06/09/2026, com a release
- * rel_2026-09-06_01. Presidente é nacional e vive na home; os outros são por UF, e
+ * O menu do site é POR CARGO: presidente, governador e senador. Senador voltou
+ * em 06/09/2026 com a release rel_2026-09-06_01; deputado federal saiu no mesmo
+ * dia, por volume (ver abaixo). Presidente é nacional e vive na home; os outros são por UF, e
  * a UF é escolhida numa página própria antes da conversa. Esta lista é a
  * autoridade do menu e das rotas — página nova de cargo entra aqui, não
  * escrita à mão em cada layout.
@@ -13,7 +13,13 @@ export const CARGOS = Object.freeze([
   { slug: 'presidente', nome: 'Presidente', porUF: false, href: '/', preposicao: null },
   { slug: 'governador', nome: 'Governador', porUF: true, href: '/governador', preposicao: 'de' },
   { slug: 'senador', nome: 'Senador', porUF: true, href: '/senador', preposicao: 'por' },
-  { slug: 'deputado-federal', nome: 'Deputado federal', porUF: true, href: '/deputado-federal', preposicao: 'por' },
+  // Deputado federal: FORA DO AR desde 06/09/2026, por decisão do Thiago. Não
+  // é lacuna de coleta como foi no dia 5: são 7.772 candidaturas, das quais
+  // 821 com material (11%), porque ~6.700 não declararam site ao TSE e a única
+  // lane que alcança o cargo hoje é a de sites. Um cargo desse tamanho pede
+  // outra forma de processar, não mais uma rodada da mesma. Volta descomentando
+  // esta linha (menu, rotas e gate seguem a lista) e apagando a página
+  // src/pages/deputado-federal.astro e a linha do public/_redirects.
 ]);
 
 export const CARGOS_POR_UF = Object.freeze(CARGOS.filter((c) => c.porUF));

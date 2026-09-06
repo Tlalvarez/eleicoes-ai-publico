@@ -14,7 +14,14 @@
 import dados from '../data/fontes-declaradas-2026.json' with { type: 'json' };
 
 export const VOCABULARIO = Object.freeze([
-  'com_material', 'sem_fonte_declarada', 'so_canal_de_partido', 'sem_material_coletado', 'so_fontes_sem_lane',
+  'com_material', 'sem_fonte_declarada', 'sem_material_coletado', 'so_fontes_sem_lane',
+  // o canal do partido se divide por ORIGEM, e a diferença não é detalhe: num
+  // caso a escolha foi do candidato, no outro fomos nós que anexamos o canal.
+  // Dizer "informou ao TSE só canais do partido" para quem não informou nada
+  // é afirmar falsidade sobre pessoa nomeada — eram 24 de 35 assim.
+  'so_canal_de_partido_declarado', 'so_canal_de_partido_anexado',
+  // valor da versão anterior do arquivo, aceito para não quebrar em release velha
+  'so_canal_de_partido',
 ]);
 export const RELEASE_FONTES = dados.release_id;
 
@@ -59,7 +66,9 @@ export function notaColeta(e) {
 export function notaCard(e) {
   switch (e?.situacao_fontes) {
     case 'sem_fonte_declarada': return 'Não informou site nem redes sociais ao TSE';
-    case 'so_canal_de_partido': return 'Informou ao TSE só canais do partido';
+    case 'so_canal_de_partido_declarado': return 'Informou ao TSE só o canal do partido';
+    case 'so_canal_de_partido_anexado': return 'Não há material próprio; o que temos é do canal do partido';
+    case 'so_canal_de_partido': return 'Não há material próprio; o que temos é do canal do partido';
     case 'sem_material_coletado': return 'Ainda não coletamos material';
     case 'so_fontes_sem_lane': {
       const p = plataformasSemLane(e);
@@ -79,8 +88,11 @@ export function fraseCandidato(e) {
   switch (e?.situacao_fontes) {
     case 'sem_fonte_declarada':
       return 'Esta candidatura não informou ao TSE nenhum site ou rede social própria. Por isso o acervo não tem material dela.';
+    case 'so_canal_de_partido_declarado':
+      return 'Esta candidatura informou ao TSE apenas um canal do partido, e o conteúdo do partido não fala dela em nome próprio. Por isso o acervo não tem material dela.';
+    case 'so_canal_de_partido_anexado':
     case 'so_canal_de_partido':
-      return 'Esta candidatura informou ao TSE apenas canais do partido, e o conteúdo do partido não fala dela em nome próprio. Por isso o acervo não tem material dela.';
+      return 'Não há material próprio desta candidatura no acervo. O que temos é do canal do partido, que não fala dela em nome próprio.';
     case 'sem_material_coletado':
       return 'Ainda não coletamos material desta candidatura: as contas informadas ao TSE estão na fila de coleta.';
     case 'so_fontes_sem_lane': {

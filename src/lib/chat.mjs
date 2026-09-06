@@ -142,6 +142,7 @@ export function normalizaResposta(bruto) {
   const SITUACOES = new Set(['com_material', 'sem_material_na_consulta',
     'sem_material_no_acervo', 'fora_do_release']);
   const CAUSAS = new Set(['sem_fonte_declarada', 'so_canal_de_partido',
+    'so_canal_de_partido_declarado', 'so_canal_de_partido_anexado',
     'so_fontes_sem_lane', 'sem_material_coletado']);
   const candidatos = (Array.isArray(r.candidatos) ? r.candidatos : [])
     .map((c) => {

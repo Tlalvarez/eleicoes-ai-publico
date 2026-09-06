@@ -475,7 +475,11 @@ const {
      */
     const CAUSA = new Map([
       ['sem_fonte_declarada', 'Não informaram site nem rede social ao TSE'],
-      ['so_canal_de_partido', 'Informaram ao TSE só canais do partido'],
+      // o payload ainda manda o valor único (coluna da release); os dois valores
+      // separados por origem chegam com a release que unifica o cálculo
+      ['so_canal_de_partido', 'Não há material próprio deles; o que temos é do canal do partido'],
+      ['so_canal_de_partido_declarado', 'Informaram ao TSE só o canal do partido'],
+      ['so_canal_de_partido_anexado', 'Não há material próprio deles; o que temos é do canal do partido'],
       ['so_fontes_sem_lane', 'Informaram ao TSE só redes que ainda não coletamos'],
       ['sem_material_coletado', 'Ainda não coletamos material'],
     ]);

@@ -90,13 +90,15 @@ test('lançamento: existe página 404 própria', async () => {
   assert.match(p, /Página não encontrada/);
 });
 
-test('senador e deputado federal no ar: sem página "Em preparação" e sem redirecionamento', async () => {
+test('senador no ar; deputado federal com página de explicação e redirecionamento', async () => {
   const { existsSync } = await import('node:fs');
   const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
-  for (const slug of ['senador', 'deputado-federal']) {
-    assert.ok(!existsSync(new URL(`../src/pages/${slug}.astro`, import.meta.url)), `${slug}.astro voltou`);
-    assert.doesNotMatch(redirects, new RegExp(`^/${slug}(/|\\s)`, 'm'), `redirecionamento de ${slug} ainda existe`);
-  }
+  assert.ok(!existsSync(new URL('../src/pages/senador.astro', import.meta.url)), 'senador.astro voltou');
+  assert.doesNotMatch(redirects, /^\/senador(\/|\s)/m, 'redirecionamento de senador ainda existe');
+  const dep = await le('pages/deputado-federal.astro');
+  assert.match(dep, /Em preparação/);
+  assert.match(dep, /7\.772 candidaturas/, 'a página diz o número que motivou a decisão');
+  assert.match(redirects, /^\/deputado-federal\/\* +\/deputado-federal +302$/m);
 });
 
 test('a verificação sai do esconderijo pela metodologia, com moldura datada', async () => {
@@ -147,7 +149,8 @@ test('a resposta mostra quem ficou de fora e a causa (a seção Lacunas é remov
   // as quatro causas do vocabulário fechado, com a frase de leitor de cada uma
   for (const [causa, frase] of [
     ['sem_fonte_declarada', 'Não informaram site nem rede social ao TSE'],
-    ['so_canal_de_partido', 'Informaram ao TSE só canais do partido'],
+    ['so_canal_de_partido_declarado', 'Informaram ao TSE só o canal do partido'],
+    ['so_canal_de_partido_anexado', 'Não há material próprio deles; o que temos é do canal do partido'],
     ['so_fontes_sem_lane', 'Informaram ao TSE só redes que ainda não coletamos'],
     ['sem_material_coletado', 'Ainda não coletamos material'],
   ]) {

@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+// Deputado federal saiu do ar em 06/09/2026, por decisão do Thiago, e a razão
+// é diferente da que tirou o cargo no dia 5. Ali era coleta incompleta; aqui é
+// TAMANHO: são 7.772 candidaturas no país, 1.130 só em São Paulo, e apenas 821
+// têm algum material — porque cerca de 6.700 não declararam site ao TSE e a
+// única lane que alcança o cargo hoje é a de sites. Publicar 7.772 páginas em
+// que nove de cada dez dizem "ainda não coletamos" não ajuda ninguém a votar.
+// A Cloudflare Pages conserva por 7 dias os arquivos apagados de uma
+// publicação, por isso esta página existe em vez de um 404, e o
+// `public/_redirects` manda /deputado-federal/* para cá.
+---
+<Base title="Deputado federal"
+  description="A seção sobre as candidaturas a deputado federal em 2026 está em preparação.">
+  <div class="prose">
+    <p class="sobretitulo">Eleições gerais de 2026 · Deputado federal</p>
+    <h1>Em preparação</h1>
+    <p class="lead">
+      São 7.772 candidaturas a deputado federal no país, e 1.130 só em São Paulo. Reunimos
+      material próprio de pouco mais de 800 delas: a maioria dos candidatos não informou
+      site nem endereço que a gente consiga ler hoje.
+    </p>
+    <p>
+      Publicar milhares de páginas em que quase todas dizem "ainda não coletamos" não ajuda
+      ninguém a votar. Um cargo desse tamanho precisa de outra forma de reunir e apresentar
+      o material, e é isso que estamos construindo. Enquanto não estiver pronto, preferimos
+      não publicar pela metade.
+    </p>
+    <p>Enquanto isso, você pode perguntar sobre:</p>
+    <ul>
+      <li><a href="/">Presidente</a></li>
+      <li><a href="/governador">Governador</a></li>
+      <li><a href="/senador">Senador</a></li>
+    </ul>
+    <p>Como o material é reunido e por que a régua tem de ser a mesma: <a href="/metodologia">metodologia</a>.</p>
+  </div>
+  <style>
+    .sobretitulo {
+      margin: 0 0 .6rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+  </style>
+</Base>

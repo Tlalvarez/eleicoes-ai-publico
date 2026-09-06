@@ -8,14 +8,19 @@ test('o arquivo cobre toda candidatura a governador do snapshot, pela chave do T
   const sem = gov.filter((c) => !situacaoFontes(c.id)).map((c) => `${c.uf} ${c.nome}`);
   assert.deepEqual(sem, [], 'governadores sem situação de fontes');
   assert.match(RELEASE_FONTES, /^rel_2026-/);
-  assert.deepEqual(VOCABULARIO.length, 5);
+  assert.equal(VOCABULARIO.length, 7);
 });
 
 test('card: uma linha por causa, nenhuma quando há material', () => {
   assert.equal(notaCard({ situacao_fontes: 'com_material' }), '');
   assert.equal(notaCard(null), '');
   assert.equal(notaCard({ situacao_fontes: 'sem_fonte_declarada' }), 'Não informou site nem redes sociais ao TSE');
-  assert.equal(notaCard({ situacao_fontes: 'so_canal_de_partido' }), 'Informou ao TSE só canais do partido');
+  // a causa do canal do partido é separada por ORIGEM: dizer que o candidato
+  // "informou" quando fomos nós que anexamos é falsidade sobre pessoa nomeada
+  assert.equal(notaCard({ situacao_fontes: 'so_canal_de_partido_declarado' }),
+    'Informou ao TSE só o canal do partido');
+  assert.equal(notaCard({ situacao_fontes: 'so_canal_de_partido_anexado' }),
+    'Não há material próprio; o que temos é do canal do partido');
   assert.equal(notaCard({ situacao_fontes: 'sem_material_coletado' }), 'Ainda não coletamos material');
   assert.equal(notaCard({ situacao_fontes: 'so_fontes_sem_lane', outras_declaradas: ['facebook', 'kwai'] }),
     'Informou ao TSE só Facebook e Kwai, que ainda não coletamos');
@@ -27,7 +32,8 @@ test('página do candidato: frase inteira, neutra (o TSE não traz gênero), sem
   const f = fraseCandidato({ situacao_fontes: 'sem_fonte_declarada' });
   assert.equal(f, 'Esta candidatura não informou ao TSE nenhum site ou rede social própria. Por isso o acervo não tem material dela.');
   assert.doesNotMatch(f, /a IA vai dizer|Este candidato|dele\b/);
-  assert.match(fraseCandidato({ situacao_fontes: 'so_canal_de_partido' }), /^Esta candidatura .* dela em nome próprio/);
+  assert.match(fraseCandidato({ situacao_fontes: 'so_canal_de_partido_declarado' }), /^Esta candidatura informou ao TSE apenas um canal do partido/);
+  assert.match(fraseCandidato({ situacao_fontes: 'so_canal_de_partido_anexado' }), /^Não há material próprio desta candidatura/);
   assert.equal(fraseCandidato({ situacao_fontes: 'com_material' }), '');
 });
 
@@ -49,4 +55,13 @@ test('coleta: o card diz quando as fontes foram vistas; sem data, não diz nada'
   // quem tem material tem data de coleta: é o que o leitor pergunta em seguida
   const alan = situacaoFontes('10002532492');
   assert.equal(notaColeta(alan), 'Fontes vistas em 05/09/2026');
+});
+
+test('o arquivo separa o canal do partido por origem, e ninguém sobrou no valor antigo', async () => {
+  const { readFile } = await import('node:fs/promises');
+  const d = JSON.parse(await readFile(new URL('../src/data/fontes-declaradas-2026.json', import.meta.url), 'utf8'));
+  assert.equal(d.schema_version, 'fontes-declaradas-2026/4');
+  assert.equal(d.resumo.so_canal_de_partido_declarado, 11);
+  assert.equal(d.resumo.so_canal_de_partido_anexado, 24);
+  assert.equal(d.resumo.so_canal_de_partido, undefined, 'o valor único não pode sobrar no arquivo');
 });
