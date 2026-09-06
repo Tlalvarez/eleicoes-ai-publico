@@ -114,3 +114,13 @@ test('o rótulo de IA aparece no topo de cada resposta, antes do texto', async (
   assert.ok(i > 0 && j > i, 'o rótulo tem de ser montado antes do corpo');
   assert.match(chat, /Resposta gerada por inteligência artificial · sem revisão humana · \$\{dataRotulo\}/);
 });
+
+test('prévia do site: og:title, og:description, og:url e og:image em todas as páginas; a imagem existe', async () => {
+  const base = await le('layouts/Base.astro');
+  for (const chave of ['og:title', 'og:description', 'og:url', 'og:image', 'twitter:card']) {
+    assert.match(base, new RegExp(`(?:property|name)="${chave}"`), chave);
+  }
+  const { statSync } = await import('node:fs');
+  const png = statSync(new URL('../public/og-eleicoes.png', import.meta.url));
+  assert.ok(png.size > 10_000 && png.size < 300_000, 'og-eleicoes.png entre 10 KB e 300 KB (WhatsApp)');
+});

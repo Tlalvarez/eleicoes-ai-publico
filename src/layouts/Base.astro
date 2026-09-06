@@ -28,6 +28,20 @@ const atual = (p) => {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
+    <!-- prévia ao colar o link (WhatsApp, X, Slack): título, descrição e a
+         imagem da marca. A rota /resposta/<id> troca título/descrição/url
+         pela prévia da resposta (functions/resposta) e mantém a imagem. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="eleicoes.ai" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={new URL(path, Astro.site ?? 'https://eleicoes.ai').toString()} />
+    <meta property="og:image" content={new URL('/og-eleicoes.png', Astro.site ?? 'https://eleicoes.ai').toString()} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="eleicoes.ai — Pergunte à IA sobre os candidatos de 2026. Toda resposta com o link da fonte. Sem recomendação de voto." />
+    <meta name="twitter:card" content="summary_large_image" />
     <!-- lançamento público em 05/09/2026: sem noindex no layout. Só as seções
          fora do menu pedem `noindex` (prop); as páginas de erro de /resposta
          continuam noindex por conta própria (pagina-resposta.mjs). -->

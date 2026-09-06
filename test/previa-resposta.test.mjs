@@ -39,3 +39,14 @@ test('nome com padrão de substituição ($&, $\') não corrompe a marcação', 
   assert.equal((saida.match(/<\/head>/g) ?? []).length, 1, 'o </head> foi inserido dentro de uma meta');
   assert.match(saida, /<title>Resposta sobre Zé \$&#39; do \$&amp; Bar · eleicoes\.ai<\/title>/);
 });
+
+test('as metas do layout que a prévia substitui saem; a imagem da marca fica', () => {
+  const app = '<html><head><title>app</title><meta name="description" content="x"><meta property="og:title" content="site"><meta property="og:description" content="d"><meta property="og:url" content="https://eleicoes.ai/"><meta property="og:image" content="https://eleicoes.ai/og-eleicoes.png"><meta name="twitter:card" content="summary_large_image"></head><body></body></html>';
+  const saida = injetaPrevia(app, { titulo: 'Resposta sobre Lula', url: 'https://eleicoes.ai/resposta/AbC' });
+  for (const chave of ['og:title', 'og:description', 'og:url', 'twitter:card']) {
+    assert.equal((saida.match(new RegExp(`(?:property|name)="${chave}"`, 'g')) || []).length, 1, chave);
+  }
+  assert.match(saida, /<meta property="og:title" content="Resposta sobre Lula">/);
+  assert.match(saida, /<meta property="og:url" content="https:\/\/eleicoes\.ai\/resposta\/AbC">/);
+  assert.match(saida, /og-eleicoes\.png/);
+});

@@ -55,15 +55,20 @@ export function injetaPrevia(html, { titulo, descricao = DESCRICAO_PREVIA, url }
     `<meta property="og:description" content="${escapa(descricao)}">`,
     url ? `<meta property="og:url" content="${escapa(url)}">` : '',
     '<meta property="og:type" content="article">',
-    '<meta name="twitter:card" content="summary">',
+    '<meta name="twitter:card" content="summary_large_image">',
     `<meta name="description" content="${escapa(descricao)}">`,
   ].filter(Boolean).join('');
+  // as metas equivalentes do layout saem antes (title, description, og:url,
+  // og:type, twitter:card): duas og:title numa página = prévia imprevisível.
+  // og:image, og:site_name e og:locale do layout FICAM — a resposta herda a
+  // imagem da marca.
+  const remove = /<meta (?:property="og:(?:title|description|url|type)"|name="(?:description|twitter:card)")[^>]*>\s*/gi;
   // Substituições por FUNÇÃO, não por string: com string, `$&`, `$'` e afins
   // dentro do valor são padrões de substituição — um nome com `$'` (escapado
   // vira `$&#39;`, que contém `$&`) inseria o próprio <title> antigo dentro do
   // novo e o </head> dentro do og:title. Não executa nada, mas quebra a página.
   return texto
     .replace(/<title>[^<]*<\/title>/i, () => `<title>${t}${escapa(SUFIXO)}</title>`)
-    .replace(/<meta name="description" content="[^"]*"\s*\/?>/i, '')
+    .replace(remove, '')
     .replace(/<\/head>/i, () => `${metas}</head>`);
 }
