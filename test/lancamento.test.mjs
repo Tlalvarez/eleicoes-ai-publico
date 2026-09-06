@@ -124,3 +124,10 @@ test('prévia do site: og:title, og:description, og:url e og:image em todas as p
   const png = statSync(new URL('../public/og-eleicoes.png', import.meta.url));
   assert.ok(png.size > 10_000 && png.size < 300_000, 'og-eleicoes.png entre 10 KB e 300 KB (WhatsApp)');
 });
+
+test('endereços legíveis do lançamento apontam para respostas guardadas', async () => {
+  const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
+  for (const curto of ['/gas', '/gasolina']) {
+    assert.match(redirects, new RegExp(`^${curto} +/resposta/[A-Za-z0-9_-]{22} +302$`, 'm'), curto);
+  }
+});
