@@ -1,10 +1,10 @@
 {
  "schema_version": "fontes-declaradas-2026/1",
- "gerado_em": "2026-09-06T01:05:15Z",
+ "gerado_em": "2026-09-06T01:58:33Z",
  "release_id": "rel_2026-09-05_05",
  "catalogo_fontes": {
-  "catalog_version": "fontes-v5-20260830T235900Z",
-  "catalog_sha256": "702803a5fe4d1b13f9937430a052b59fd17145d6fa6bb7179cc6f04fe6db5bc0"
+  "catalog_version": "fontes-v6-20260906T030000Z",
+  "catalog_sha256": "6d2318af6ad596fd8d51a75a8979100199382ecc025fe51982542ce5aefad024"
  },
  "vocabulario": [
   "com_material",
@@ -22,10 +22,10 @@
  ],
  "resumo": {
   "com_material": 464,
-  "sem_fonte_declarada": 15,
-  "so_canal_de_partido": 42,
-  "sem_material_coletado": 5,
-  "so_fontes_sem_lane": 2
+  "sem_fonte_declarada": 12,
+  "so_canal_de_partido": 35,
+  "sem_material_coletado": 16,
+  "so_fontes_sem_lane": 1
  },
  "candidaturas": {
   "280002551547": {
@@ -1390,7 +1390,9 @@
    "cargo": "3",
    "uf": "GO",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 1,
    "itens_por_tipo": {
@@ -2204,7 +2206,9 @@
    "cargo": "3",
    "uf": "PA",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 1,
    "itens_por_tipo": {
@@ -2231,6 +2235,8 @@
    "uf": "PB",
    "situacao_fontes": "com_material",
    "contas_proprias": [
+    "instagram",
+    "x",
     "youtube",
     "site"
    ],
@@ -2862,8 +2868,12 @@
    "cargo": "3",
    "uf": "RJ",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 8,
    "itens_por_tipo": {
     "artigo": 7,
@@ -4188,8 +4198,13 @@
    "cargo": "5",
    "uf": "AL",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram",
+    "threads"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 4,
    "itens_por_tipo": {
     "artigo": 4
@@ -4651,8 +4666,18 @@
    "cargo": "5",
    "uf": "BA",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram",
+    "site",
+    "threads"
+   ],
+   "outras_declaradas": [
+    "facebook",
+    "flickr",
+    "kwai",
+    "spotify",
+    "whatsapp"
+   ],
    "itens": 23,
    "itens_por_tipo": {
     "artigo": 13,
@@ -4752,9 +4777,14 @@
    "uf": "BA",
    "situacao_fontes": "com_material",
    "contas_proprias": [
+    "instagram",
+    "x",
+    "youtube",
     "threads"
    ],
    "outras_declaradas": [
+    "facebook",
+    "kwai",
     "whatsapp"
    ],
    "itens": 90,
@@ -4769,8 +4799,11 @@
    "slug": "senador-ce-alcides-fernandes-60002540754",
    "cargo": "5",
    "uf": "CE",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram",
+    "x"
+   ],
    "outras_declaradas": [],
    "itens": 0,
    "itens_por_tipo": {},
@@ -4876,6 +4909,7 @@
    "outras_declaradas": [
     "facebook",
     "flickr",
+    "kwai",
     "linktree",
     "queroapoiar",
     "whatsapp"
@@ -5182,7 +5216,8 @@
    "outras_declaradas": [
     "facebook",
     "flickr",
-    "kwai"
+    "kwai",
+    "linkedin"
    ],
    "itens": 934,
    "itens_por_tipo": {
@@ -5436,6 +5471,8 @@
    "situacao_fontes": "com_material",
    "contas_proprias": [
     "instagram",
+    "x",
+    "youtube",
     "site"
    ],
    "outras_declaradas": [
@@ -5476,8 +5513,12 @@
    "cargo": "5",
    "uf": "GO",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 2,
    "itens_por_tipo": {
     "artigo": 2
@@ -5756,7 +5797,8 @@
     "threads"
    ],
    "outras_declaradas": [
-    "facebook"
+    "facebook",
+    "linkedin"
    ],
    "itens": 261,
    "itens_por_tipo": {
@@ -5809,9 +5851,14 @@
    "slug": "senador-mg-domingos-savio-130002551786",
    "cargo": "5",
    "uf": "MG",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram",
+    "x"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 0,
    "itens_por_tipo": {},
    "origem_contas": "catalogo-fontes-v5"
@@ -6153,7 +6200,8 @@
    ],
    "outras_declaradas": [
     "facebook",
-    "flickr"
+    "flickr",
+    "kwai"
    ],
    "itens": 775,
    "itens_por_tipo": {
@@ -6204,8 +6252,16 @@
    "cargo": "5",
    "uf": "MT",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram",
+    "x",
+    "youtube",
+    "threads"
+   ],
+   "outras_declaradas": [
+    "facebook",
+    "kwai"
+   ],
    "itens": 11,
    "itens_por_tipo": {
     "artigo": 11
@@ -6291,8 +6347,15 @@
    "cargo": "5",
    "uf": "MT",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram",
+    "x",
+    "youtube"
+   ],
+   "outras_declaradas": [
+    "facebook",
+    "kwai"
+   ],
    "itens": 7,
    "itens_por_tipo": {
     "artigo": 7
@@ -6339,8 +6402,10 @@
    "slug": "senador-pa-breno-guimaraes-140002553852",
    "cargo": "5",
    "uf": "PA",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 0,
    "itens_por_tipo": {},
@@ -6705,9 +6770,16 @@
    "slug": "senador-pb-veneziano-150002544905",
    "cargo": "5",
    "uf": "PB",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram",
+    "x",
+    "youtube",
+    "threads"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 0,
    "itens_por_tipo": {},
    "origem_contas": "catalogo-fontes-v5"
@@ -6846,9 +6918,16 @@
    "slug": "senador-pe-mendonca-filho-170002539456",
    "cargo": "5",
    "uf": "PE",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram",
+    "x",
+    "site"
+   ],
+   "outras_declaradas": [
+    "facebook",
+    "linkedin"
+   ],
    "itens": 0,
    "itens_por_tipo": {},
    "origem_contas": "catalogo-fontes-v5"
@@ -7060,9 +7139,13 @@
    "slug": "senador-pi-jardenya-bezerra-180002548155",
    "cargo": "5",
    "uf": "PI",
-   "situacao_fontes": "sem_fonte_declarada",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 0,
    "itens_por_tipo": {},
    "origem_contas": "catalogo-fontes-v5"
@@ -7107,8 +7190,10 @@
    "slug": "senador-pi-major-paulo-roberto-180002544457",
    "cargo": "5",
    "uf": "PI",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 0,
    "itens_por_tipo": {},
@@ -7159,8 +7244,10 @@
    "slug": "senador-pi-missionario-evandro-craveiro-180002548157",
    "cargo": "5",
    "uf": "PI",
-   "situacao_fontes": "sem_fonte_declarada",
-   "contas_proprias": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 0,
    "itens_por_tipo": {},
@@ -7214,9 +7301,13 @@
    "slug": "senador-pi-toinho-dufrango-180002544459",
    "cargo": "5",
    "uf": "PI",
-   "situacao_fontes": "so_canal_de_partido",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 0,
    "itens_por_tipo": {},
    "origem_contas": "catalogo-fontes-v5"
@@ -7350,7 +7441,8 @@
    "contas_proprias": [
     "instagram",
     "x",
-    "youtube"
+    "youtube",
+    "site"
    ],
    "outras_declaradas": [
     "facebook",
@@ -7408,9 +7500,13 @@
    "uf": "RJ",
    "situacao_fontes": "sem_material_coletado",
    "contas_proprias": [
+    "instagram",
+    "x",
     "youtube"
    ],
-   "outras_declaradas": [],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 0,
    "itens_por_tipo": {},
    "origem_contas": "catalogo-fontes-v5"
@@ -7504,8 +7600,10 @@
    "slug": "senador-rj-helio-secco-190002543961",
    "cargo": "5",
    "uf": "RJ",
-   "situacao_fontes": "sem_fonte_declarada",
-   "contas_proprias": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "site"
+   ],
    "outras_declaradas": [],
    "itens": 0,
    "itens_por_tipo": {},
@@ -7637,7 +7735,9 @@
    "cargo": "5",
    "uf": "RJ",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 1,
    "itens_por_tipo": {
@@ -7716,8 +7816,10 @@
    "slug": "senador-rn-coronel-helio-200002534447",
    "cargo": "5",
    "uf": "RN",
-   "situacao_fontes": "so_fontes_sem_lane",
-   "contas_proprias": [],
+   "situacao_fontes": "sem_material_coletado",
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [
     "instagram-url-invalida"
    ],
@@ -7938,9 +8040,15 @@
    "uf": "RO",
    "situacao_fontes": "com_material",
    "contas_proprias": [
+    "instagram",
+    "x",
+    "youtube",
     "site"
    ],
-   "outras_declaradas": [],
+   "outras_declaradas": [
+    "facebook",
+    "kwai"
+   ],
    "itens": 23,
    "itens_por_tipo": {
     "artigo": 23
@@ -8133,7 +8241,8 @@
    "uf": "RR",
    "situacao_fontes": "com_material",
    "contas_proprias": [
-    "instagram"
+    "instagram",
+    "site"
    ],
    "outras_declaradas": [],
    "itens": 52,
@@ -8254,6 +8363,7 @@
     "instagram"
    ],
    "outras_declaradas": [
+    "facebook",
     "facebook-url-invalida"
    ],
    "itens": 40,
@@ -8877,7 +8987,9 @@
    "cargo": "5",
    "uf": "SE",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
+   "contas_proprias": [
+    "instagram"
+   ],
    "outras_declaradas": [],
    "itens": 13,
    "itens_por_tipo": {
@@ -9021,7 +9133,8 @@
     "youtube"
    ],
    "outras_declaradas": [
-    "facebook"
+    "facebook",
+    "linkedin"
    ],
    "itens": 346,
    "itens_por_tipo": {
@@ -9183,7 +9296,8 @@
     "flickr",
     "kwai",
     "linktree",
-    "soundcloud"
+    "soundcloud",
+    "whatsapp"
    ],
    "itens": 710,
    "itens_por_tipo": {
@@ -9397,8 +9511,14 @@
    "cargo": "5",
    "uf": "TO",
    "situacao_fontes": "com_material",
-   "contas_proprias": [],
-   "outras_declaradas": [],
+   "contas_proprias": [
+    "instagram",
+    "x",
+    "threads"
+   ],
+   "outras_declaradas": [
+    "facebook"
+   ],
    "itens": 5,
    "itens_por_tipo": {
     "artigo": 5
