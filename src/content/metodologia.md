@@ -42,4 +42,19 @@ De cada item guardamos a origem e a data, para você poder voltar ao original.
 - A coleta foi planejada para ser ampla, mas pode ter omissões.
 - Não encontrar material sobre um tema não significa que o candidato não tenha posição.
 - O documento original vale mais que qualquer resumo. Quando a resposta cita uma evidência, ela traz o link do original.
-- As evidências publicadas podem ser consultadas no [acervo](/acervo).
+
+## Como este site foi feito
+
+Não há redação nem equipe: o site foi construído e é operado por uma pessoa, com agentes
+de inteligência artificial fazendo a coleta, a inspeção e a escrita das respostas. Isso é
+parte da explicação de por que 8 mil candidaturas cabem num acervo, e também de por que a
+conferência é sua: cada afirmação traz o link do original.
+
+- **O que fizemos, linha a linha:** todo o código e o texto deste site são públicos e
+  versionados; o [histórico de mudanças](https://github.com/Tlalvarez/eleicoes-ai-publico/commits/main)
+  mostra o que mudou, quando e por quê.
+- **Como alcançamos as fontes:** muitos sites e redes recusam acesso automatizado. A coleta
+  passa pelo [NativePort](https://nativeport.ai), um gateway que dá acesso a esses
+  provedores; sem ele, boa parte do material declarado ao TSE ficaria fora do alcance.
+- **Quem escreve as respostas:** o Claude Opus 5, da Anthropic, a partir dos trechos
+  recuperados para a sua pergunta, com as instruções descritas acima.
