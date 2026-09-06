@@ -7,9 +7,9 @@ import {
 import { fichaTse, urlCandidaturaTse, urlFotoCandidaturaTse } from '../src/lib/tse.mjs';
 
 test('quatro cargos, presidente na home e os outros três por UF', () => {
-  assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador']);
+  assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador', 'senador', 'deputado-federal']);
   assert.equal(cargoPorSlug('presidente').href, '/');
-  assert.deepEqual(CARGOS_POR_UF.map((c) => c.slug), ['governador']);
+  assert.deepEqual(CARGOS_POR_UF.map((c) => c.slug), ['governador', 'senador', 'deputado-federal']);
 });
 
 test('27 unidades da federação, siglas únicas', () => {
@@ -44,9 +44,9 @@ test('cada candidatura a presidente declara partido e número, do catálogo ofic
   assert.throws(() => fichaTse('ninguem'), /sem partido/);
 });
 
-test('senador e deputado federal estão suspensos até a coleta ficar completa (05/09/2026)', () => {
+test('senador e deputado federal voltaram ao ar em 06/09/2026, com a release rel_2026-09-06_01', () => {
   for (const slug of ['senador', 'deputado-federal']) {
-    assert.equal(cargoPorSlug(slug), null);
-    assert.ok(!CARGOS.some((c) => c.href === `/${slug}`));
+    assert.equal(cargoPorSlug(slug)?.slug, slug);
+    assert.ok(CARGOS.some((c) => c.href === `/${slug}`));
   }
 });

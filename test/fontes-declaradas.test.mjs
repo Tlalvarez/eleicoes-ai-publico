@@ -31,10 +31,13 @@ test('página do candidato: frase inteira, neutra (o TSE não traz gênero), sem
   assert.equal(fraseCandidato({ situacao_fontes: 'com_material' }), '');
 });
 
-test('os dois governadores sem fonte declarada na release corrente ganham a nota', () => {
-  for (const id of ['130002544411', '250002548080']) {
-    assert.equal(notaCard(situacaoFontes(id)), 'Não informou site nem redes sociais ao TSE', id);
-  }
+test('quem não informou fonte ao TSE ganha a nota; quem passou a ter material perde', () => {
+  // Policial Edjane (gov/SP) não declarou nada ao TSE: a nota é dela e continua.
+  assert.equal(notaCard(situacaoFontes('250002548080')), 'Não informou site nem redes sociais ao TSE');
+  // Ben Mendes (gov/MG) estava sem material; na rel_2026-09-06_01 o plano dele
+  // foi importado (era um dos 4 ausentes), então o card não acusa mais lacuna.
+  assert.equal(notaCard(situacaoFontes('130002544411')), '');
+  assert.equal(situacaoFontes('130002544411').situacao_fontes, 'com_material');
 });
 
 test('coleta: o card diz quando as fontes foram vistas; sem data, não diz nada', () => {

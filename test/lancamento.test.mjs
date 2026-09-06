@@ -90,13 +90,13 @@ test('lançamento: existe página 404 própria', async () => {
   assert.match(p, /Página não encontrada/);
 });
 
-test('senador suspenso: página de explicação e redirecionamento dos endereços antigos', async () => {
-  const pagina = await le('pages/senador.astro');
-  assert.match(pagina, /Em preparação/);
+test('senador e deputado federal no ar: sem página "Em preparação" e sem redirecionamento', async () => {
+  const { existsSync } = await import('node:fs');
   const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
-  assert.match(redirects, /^\/senador\/\* +\/senador +302$/m);
-  assert.match(redirects, /^\/deputado-federal\/\* +\/deputado-federal +302$/m);
-  assert.match(await le('pages/deputado-federal.astro'), /Em preparação/);
+  for (const slug of ['senador', 'deputado-federal']) {
+    assert.ok(!existsSync(new URL(`../src/pages/${slug}.astro`, import.meta.url)), `${slug}.astro voltou`);
+    assert.doesNotMatch(redirects, new RegExp(`^/${slug}(/|\\s)`, 'm'), `redirecionamento de ${slug} ainda existe`);
+  }
 });
 
 test('a verificação sai do esconderijo pela metodologia, com moldura datada', async () => {
