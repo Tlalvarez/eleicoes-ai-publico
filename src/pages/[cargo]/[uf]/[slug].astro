@@ -9,6 +9,7 @@ import Chat from '../../../components/Chat.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, foraDaDisputa, notaSituacao } from '../../../lib/candidaturas-uf.mjs';
 import { fraseCandidato, notaColeta, situacaoFontes } from '../../../lib/fontes-declaradas.mjs';
+import { causasDoCargoUf } from '../../../lib/fontes-declaradas.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.flatMap((uf) =>
@@ -57,7 +58,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
     </div>
   </div>
 
-  <Chat apiBase={apiBase} escopo={escopo} cargo={cargo.slug} uf={uf.sigla} pagina={pagina}
+  <Chat apiBase={apiBase} escopo={escopo} cargo={cargo.slug} uf={uf.sigla} pagina={pagina} causas={causasDoCargoUf(cargo.slug, uf.sigla)}
     placeholder={`Ex.: o que ${c.nome} propõe para a educação?`} />
 
   <style>

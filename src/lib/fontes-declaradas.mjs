@@ -46,6 +46,28 @@ function lista(itens) {
   return itens.length <= 1 ? itens.join('') : `${itens.slice(0, -1).join(', ')} e ${itens.at(-1)}`;
 }
 
+/**
+ * As causas de lacuna de um cargo/UF, como {id do TSE: causa}, para o chat da
+ * página. Só quem NÃO tem material entra — quem tem não precisa de causa, e o
+ * mapa fica pequeno o suficiente para viajar num atributo do HTML.
+ *
+ * Existe porque a coluna `lacuna_causa` da release e este arquivo ainda são
+ * calculados por funções diferentes, e a da release lê catálogo antigo: ela
+ * chegou a dizer que uma candidata "informou ao TSE só canais do partido"
+ * quando ela não informou nada e fomos nós que anexamos o canal. Quando as
+ * duas convergirem, este mapa vira redundância inofensiva.
+ */
+export function causasDoCargoUf(cargoSlug, sigla) {
+  const cod = { presidente: '1', governador: '3', senador: '5', 'deputado-federal': '6' }[cargoSlug];
+  const uf = String(sigla ?? '').toUpperCase();
+  const mapa = {};
+  for (const [id, e] of Object.entries(dados.candidaturas ?? {})) {
+    if (!e || typeof e !== 'object' || e.cargo !== cod || e.uf !== uf) continue;
+    if (e.situacao_fontes && e.situacao_fontes !== 'com_material') mapa[id] = e.situacao_fontes;
+  }
+  return mapa;
+}
+
 /** Uma data AAAA-MM-DD do arquivo em DD/MM/AAAA; vazio quando não há data. */
 export function dataBr(iso) {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(iso ?? ''));

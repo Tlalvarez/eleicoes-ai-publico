@@ -65,3 +65,15 @@ test('o arquivo separa o canal do partido por origem, e ninguém sobrou no valor
   assert.equal(d.resumo.so_canal_de_partido_anexado, 24);
   assert.equal(d.resumo.so_canal_de_partido, undefined, 'o valor único não pode sobrar no arquivo');
 });
+
+test('o mapa de causas por cargo/UF traz só quem não tem material, pelo id do TSE', async () => {
+  const { causasDoCargoUf } = await import('../src/lib/fontes-declaradas.mjs');
+  const sp = causasDoCargoUf('governador', 'SP');
+  // Policial Edjane não declarou nada ao TSE: é o caso em que a coluna da
+  // release dizia "só canais do partido", que é falso
+  assert.equal(sp['250002548080'], 'sem_fonte_declarada');
+  // quem tem material não entra no mapa
+  assert.equal(sp['250002541303'], undefined, 'Tarcísio tem material e não deve ter causa');
+  for (const causa of Object.values(sp)) assert.ok(VOCABULARIO.includes(causa), causa);
+  assert.deepEqual(causasDoCargoUf('governador', 'ZZ'), {});
+});
