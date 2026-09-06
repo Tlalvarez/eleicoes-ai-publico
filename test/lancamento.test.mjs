@@ -131,3 +131,10 @@ test('endereços legíveis do lançamento apontam para respostas guardadas', asy
     assert.match(redirects, new RegExp(`^${curto} +/resposta/[A-Za-z0-9_-]{22} +302$`, 'm'), curto);
   }
 });
+
+test('og:url é o endereço público, sem .html (é o destino que o WhatsApp usa)', async () => {
+  const base = await le('layouts/Base.astro');
+  assert.match(base, /const caminhoPublico = path\.replace\(\/index\\\.html\$\/, ''\)\.replace\(\/\\\.html\$\/, ''\) \|\| '\/'/);
+  assert.match(base, /property="og:url" content=\{new URL\(caminhoPublico,/);
+  assert.doesNotMatch(base, /property="og:url" content=\{new URL\(path,/);
+});

@@ -11,6 +11,11 @@ const {
   noindex = false,
 } = Astro.props;
 const path = Astro.url.pathname;
+// O build gera ARQUIVOS (`/sobre.html`), mas o endereço público é sem a
+// extensão. O og:url é o destino que o WhatsApp e o X usam quando alguém
+// compartilha, então ele tem de ser o endereço público — senão o link
+// compartilhado vira `eleicoes.ai/sobre.html`.
+const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') || '/';
 const atual = (p) => {
   // a home é a conversa sobre Presidente; a conversa de um candidato a
   // presidente (/presidente/<slug>) e a página de uma resposta guardada
@@ -38,7 +43,7 @@ const atual = (p) => {
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content={new URL(path, Astro.site ?? 'https://eleicoes.ai').toString()} />
+    <meta property="og:url" content={new URL(caminhoPublico, Astro.site ?? 'https://eleicoes.ai').toString()} />
     <meta property="og:image" content={new URL('/og-eleicoes.png', Astro.site ?? 'https://eleicoes.ai').toString()} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
