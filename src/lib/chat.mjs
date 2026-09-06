@@ -330,7 +330,19 @@ export async function leEventos(resposta, { aoEtapa, aoTexto } = {}) {
     let pendente = '';
     try {
       while (!fim) {
-        const { value, done } = await leitor.read();
+        // A leitura do FLUXO pode falhar depois de a conexão ter dado certo —
+        // é o que acontece quando o túnel cai no meio da resposta. Sem este
+        // try, o TypeError cru do navegador ("Load failed" no Safari) subia
+        // até a tela, em inglês e sem dizer o que fazer.
+        let pedaco;
+        try {
+          pedaco = await leitor.read();
+        } catch (e) {
+          if (e?.name === 'AbortError') throw e;   // cancelar é do usuário
+          throw new ErroConversa('rede',
+            'A conexão caiu enquanto a resposta era escrita. Tente perguntar de novo.', e);
+        }
+        const { value, done } = pedaco;
         if (done) break;
         pendente += decoder.decode(value, { stream: true });
         let corte;

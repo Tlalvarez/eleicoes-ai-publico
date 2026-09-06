@@ -195,3 +195,22 @@ test('a conversa é guardada entre sessões e cada pergunta pode ser apagada', a
   assert.match(priv, /botão "Apagar"/);
   assert.doesNotMatch(priv, /Fechou a aba, acabou/);
 });
+
+test('a rolagem da tabela sobrevive à chegada de cada pedaço da resposta', async () => {
+  const chat = await le('components/Chat.astro');
+  // o corpo do rascunho é refeito a cada quadro; sem guardar a rolagem, a
+  // tabela saltava de volta para a esquerda enquanto a pessoa a lia de lado
+  const bloco = chat.match(/const desenhaRascunho = \(\) => \{[\s\S]*?\n      \};/)[0];
+  assert.match(bloco, /querySelectorAll\('\.tabela-rolagem'\)[\s\S]*?scrollLeft/);
+  assert.match(bloco, /tabelas\[i\]\.scrollLeft = x/);
+});
+
+test('mensagem de erro do navegador não chega à tela', async () => {
+  const chat = await le('components/Chat.astro');
+  // "Load failed" (Safari) subia cru quando o túnel caía no meio do fluxo
+  assert.match(chat, /erro instanceof ErroConversa && erro\.message/);
+  assert.match(chat, /Não consegui responder agora\. Tente perguntar de novo\./);
+  const lib = await le('lib/chat.mjs');
+  assert.match(lib, /A conexão caiu enquanto a resposta era escrita/);
+  assert.match(lib, /e\?\.name === 'AbortError'/, 'cancelar do usuário não pode virar erro de rede');
+});

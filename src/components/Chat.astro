@@ -880,7 +880,12 @@ const {
 
     function mostraErro(erro, perguntaRecusada) {
       const codigo = erro instanceof ErroConversa ? erro.codigo : 'desconhecido';
-      mostraEstado(erro.message || 'Não foi possível responder agora.', { erro: true });
+      // Só mensagem NOSSA vai para a tela. A do navegador vem em inglês e não
+      // diz o que fazer ("Load failed", "NetworkError when attempting to fetch
+      // resource"), e o leitor não tem como agir sobre ela.
+      mostraEstado(erro instanceof ErroConversa && erro.message
+        ? erro.message
+        : 'Não consegui responder agora. Tente perguntar de novo.', { erro: true });
       if (codigo === 'sem-followup' && perguntaRecusada) {
         estado.append(botao('Enviar como nova pergunta', () => {
           reinicia();
@@ -974,9 +979,18 @@ const {
         // um quadro por lote de pedaços: reanalisar o texto inteiro a cada
         // pedaço é barato (dezenas de KB), mas não precisa ser mais que uma
         // vez por quadro de animação
+        //
+        // O corpo é REFEITO a cada quadro, e com ele as tabelas. Quem estivesse
+        // rolando uma tabela de lado via ela saltar de volta para a esquerda a
+        // cada pedaço que chegava. Guardamos a rolagem de cada tabela pela
+        // ordem em que aparecem e devolvemos depois de trocar o corpo.
+        const rolagens = [...corpoRascunho.querySelectorAll('.tabela-rolagem')]
+          .map((t) => t.scrollLeft);
         const novo = montaCorpo(textoAcumulado, turnos + 1);
         corpoRascunho.replaceWith(novo);
         corpoRascunho = novo;
+        const tabelas = novo.querySelectorAll('.tabela-rolagem');
+        rolagens.forEach((x, i) => { if (x && tabelas[i]) tabelas[i].scrollLeft = x; });
       };
       const aoTexto = (trecho) => {
         if (!rascunhoNaTela) {
