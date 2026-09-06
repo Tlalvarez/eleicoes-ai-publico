@@ -23,6 +23,15 @@ test('só a verificação pede noindex; as páginas do menu, não', async () => 
   }
 });
 
+test('páginas por UF separam quem está na disputa de quem saiu, com a data do TSE', async () => {
+  const uf = await le('pages/[cargo]/[uf].astro');
+  assert.match(uf, /separaPorDisputa\(cards\)/);
+  assert.match(uf, /<details class="fora-da-disputa">/);
+  assert.match(uf, /Fora da disputa segundo o TSE em \{SNAPSHOT_BR\}/);
+  assert.match(uf, /emDisputa\.map/);
+  assert.match(await le('pages/[cargo]/[uf]/[slug].astro'), /foraDaDisputa\(c\) &&/);
+});
+
 test('acervo, hub por candidato e menções saíram do build; os endereços antigos redirecionam', async () => {
   const { existsSync } = await import('node:fs');
   for (const dir of ['pages/acervo', 'pages/candidato', 'pages/mencoes']) {

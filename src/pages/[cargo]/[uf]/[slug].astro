@@ -7,7 +7,7 @@
 import Base from '../../../layouts/Base.astro';
 import Chat from '../../../components/Chat.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../../lib/cargos.mjs';
-import { candidaturas } from '../../../lib/candidaturas-uf.mjs';
+import { SNAPSHOT_BR, candidaturas, foraDaDisputa, notaSituacao } from '../../../lib/candidaturas-uf.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.flatMap((uf) =>
@@ -34,8 +34,14 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       <div>
         <h1>{c.nome}</h1>
         <p class="lead">
-          {rotulo} · {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''} · {c.situacao}
+          {rotulo} · {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''} · {c.situacao}{notaSituacao(c.situacao) ? ` (${notaSituacao(c.situacao)})` : ''}
         </p>
+        {foraDaDisputa(c) && (
+          <p class="aviso" role="note">
+            Segundo o TSE em {SNAPSHOT_BR}, esta candidatura está <strong>fora da disputa</strong>
+            ({c.situacao}). A conversa continua disponível como registro.
+          </p>
+        )}
         <p class="links-candidato">
           <a href={c.tse} target="_blank" rel="noopener noreferrer">Candidatura no TSE ↗</a>
           <a href={caminhoUf(cargo, uf)}>Todos os candidatos a {cargo.nome.toLowerCase()} — {uf.nome}</a>

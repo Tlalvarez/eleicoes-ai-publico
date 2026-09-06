@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 
 import { CARGOS_POR_UF, UFS } from '../src/lib/cargos.mjs';
 import {
-  candidaturas, deduplicaPorPessoa, nomeLegivel, todasCandidaturas, totais, urlFotoTse, urlTseUf,
+  FORA_DA_DISPUTA, SNAPSHOT_BR, candidaturas, deduplicaPorPessoa, foraDaDisputa, nomeLegivel, notaSituacao,
+  separaPorDisputa, todasCandidaturas, totais, urlFotoTse, urlTseUf,
 } from '../src/lib/candidaturas-uf.mjs';
 
 test('o snapshot do TSE cobre os três cargos por UF: as 8.278 linhas do DivulgaCandContas menos 18 registros repetidos da mesma pessoa', () => {
@@ -101,4 +102,19 @@ test('nenhum dado pessoal sensível no snapshot', () => {
   for (const c of todasCandidaturas()) {
     for (const chave of Object.keys(c)) assert.doesNotMatch(chave, /cpf|titulo|nascimento|email/i);
   }
+});
+
+test('fora da disputa: renúncia, indeferido sem recurso e pedido não conhecido; indeferido COM recurso fica na lista (Lei 9.504, art. 16-A)', () => {
+  assert.deepEqual([...FORA_DA_DISPUTA].sort(), ['Indeferido', 'Pedido não conhecido', 'Renúncia']);
+  assert.equal(foraDaDisputa({ situacao: 'Renúncia' }), true);
+  assert.equal(foraDaDisputa({ situacao: 'Indeferido' }), true);
+  assert.equal(foraDaDisputa({ situacao: 'Indeferido em prazo recursal ou com recurso' }), false);
+  assert.equal(foraDaDisputa({ situacao: 'Aguardando julgamento' }), false);
+  assert.equal(foraDaDisputa({ situacao: 'Deferido' }), false);
+  assert.match(notaSituacao('Indeferido em prazo recursal ou com recurso'), /até o julgamento/);
+  assert.equal(notaSituacao('Deferido'), '');
+  const { emDisputa, fora } = separaPorDisputa(todasCandidaturas().filter((c) => c.cargo === 'governador'));
+  assert.equal(emDisputa.length + fora.length, 197);
+  assert.ok(fora.every(foraDaDisputa) && !emDisputa.some(foraDaDisputa));
+  assert.match(SNAPSHOT_BR, /^\d{2}\/\d{2}\/2026$/);
 });

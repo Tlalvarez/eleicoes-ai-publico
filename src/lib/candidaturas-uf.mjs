@@ -13,6 +13,41 @@ import { BASE_DIVULGA } from './tse.mjs';
 
 export const ELEICAO = dados.eleicao;
 export const COLETADO_EM = dados.coletado_em;
+/** A data do snapshot do TSE, por extenso, para a página dizer "segundo o TSE em …". */
+export const SNAPSHOT_BR = (() => {
+  const d = new Date(COLETADO_EM);
+  return Number.isNaN(d.getTime()) ? '' : d.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' });
+})();
+
+/**
+ * Situações do TSE em que a candidatura está FORA DA DISPUTA: renúncia,
+ * indeferimento definitivo (sem recurso) e pedido não conhecido. Tudo o mais
+ * — deferido, aguardando ou pendente de julgamento, indeferido COM recurso —
+ * está na disputa: a Lei 9.504/1997, art. 16-A, permite campanha enquanto o
+ * recurso não é julgado. Esconder um indeferido com recurso seria decidir
+ * pelo TSE; listar uma renúncia como candidato é ruído para o leitor.
+ */
+export const FORA_DA_DISPUTA = Object.freeze(new Set(['Indeferido', 'Pedido não conhecido', 'Renúncia']));
+
+export function foraDaDisputa(c) {
+  return FORA_DA_DISPUTA.has(String(c?.situacao ?? '').trim());
+}
+
+/** Uma linha, em português de leitor, sobre o que a situação do TSE significa. */
+export function notaSituacao(situacao) {
+  const s = String(situacao ?? '').trim();
+  if (s === 'Indeferido em prazo recursal ou com recurso') return 'pode fazer campanha até o julgamento do recurso';
+  if (s === 'Aguardando julgamento' || s === 'Pendente de julgamento') return 'registro em análise no TSE; pode fazer campanha';
+  if (s === 'Deferido com recurso') return 'registro aprovado; há recurso pendente';
+  return '';
+}
+
+/** Separa uma lista de candidaturas em quem está na disputa e quem saiu, na mesma ordem. */
+export function separaPorDisputa(lista) {
+  const emDisputa = [], fora = [];
+  for (const c of lista) (foraDaDisputa(c) ? fora : emDisputa).push(c);
+  return { emDisputa, fora };
+}
 
 /** Palavras que ficam minúsculas dentro de um nome ("Maria da Penha"). */
 const MINUSCULAS = new Set(['de', 'da', 'do', 'das', 'dos', 'e', 'di', 'du', 'del', 'della', 'von', 'van', 'y']);

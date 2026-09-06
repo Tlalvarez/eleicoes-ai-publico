@@ -6,7 +6,7 @@
 import Base from '../../layouts/Base.astro';
 import Chat from '../../components/Chat.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
-import { candidaturas } from '../../lib/candidaturas-uf.mjs';
+import { SNAPSHOT_BR, candidaturas, notaSituacao, separaPorDisputa } from '../../lib/candidaturas-uf.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.map((uf) => ({
@@ -20,6 +20,10 @@ const pagina = caminhoUf(cargo, uf);
 // os cards saem do snapshot do TSE: todo candidato do cargo nesta UF, em
 // ordem alfabética — nenhum nome escrito à mão, nenhuma hierarquia
 const cards = candidaturas(cargo.slug, uf.sigla);
+// quem está na disputa vai para a lista principal; renúncias e indeferidos
+// sem recurso vão para uma seção recolhida, com a situação e a data do TSE —
+// nem escondidos (o TSE é a fonte, não nós) nem misturados (ruído para o leitor)
+const { emDisputa, fora } = separaPorDisputa(cards);
 
 // o mesmo critério da home (ver index.astro): sem PUBLIC_PESQUISA_API, mesma
 // origem; localhost só em desenvolvimento
@@ -42,7 +46,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   <section class="secao-catalogo">
   <h2>Candidatos a {cargo.nome.toLowerCase()} — {uf.nome}</h2>
   <ul class="grade-candidatos">
-    {cards.map((c) => (
+    {emDisputa.map((c) => (
       <li class="cartao-candidato">
         <a class="retrato-link" href={`${pagina}/${c.slug}`}
           title={`Conversar com a IA sobre ${c.nome}`}>
@@ -51,7 +55,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
         </a>
         <p class="ficha-candidato">
           {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
-          <span class="situacao">{c.situacao}</span>
+          <span class="situacao">{c.situacao}{notaSituacao(c.situacao) ? ` · ${notaSituacao(c.situacao)}` : ''}</span>
         </p>
         <p class="link-tse">
           <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
@@ -61,9 +65,37 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   </ul>
   <p class="depois-da-faixa">
     Clique no candidato para conversar com a IA só sobre ele. Foto, nome de urna, número,
-    partido e situação são os do registro no TSE; o link abre a candidatura no
-    DivulgaCandContas, em nova aba.
+    partido e situação são os do registro no TSE em {SNAPSHOT_BR}; o link abre a candidatura
+    no DivulgaCandContas, em nova aba. Candidatura indeferida com recurso pendente pode fazer
+    campanha até o julgamento, por isso continua na lista.
   </p>
+  {fora.length > 0 && (
+    <details class="fora-da-disputa">
+      <summary>Fora da disputa segundo o TSE em {SNAPSHOT_BR} ({fora.length})</summary>
+      <p>
+        Renúncias e registros indeferidos sem recurso. Continuam aqui porque o registro existiu
+        e a conversa sobre cada um segue disponível; a situação é a do TSE, não uma avaliação nossa.
+      </p>
+      <ul class="grade-candidatos">
+        {fora.map((c) => (
+          <li class="cartao-candidato fora">
+            <a class="retrato-link" href={`${pagina}/${c.slug}`}
+              title={`Conversar com a IA sobre ${c.nome}`}>
+              <img src={c.foto} width="161" height="225" loading="lazy" alt="" />
+              <span class="nome-candidato">{c.nome}</span>
+            </a>
+            <p class="ficha-candidato">
+              {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
+              <span class="situacao"><strong>{c.situacao}</strong></span>
+            </p>
+            <p class="link-tse">
+              <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
+            </p>
+          </li>
+        ))}
+      </ul>
+    </details>
+  )}
   </section>
 
   <style>
@@ -115,6 +147,10 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       font-size: .84rem;
     }
     .ficha-candidato .situacao { display: block; font-size: .78rem; }
+    .fora-da-disputa { margin-top: 1.6rem; border-top: 1px dashed var(--linha); padding-top: .8rem; }
+    .fora-da-disputa summary { cursor: pointer; font-weight: 700; color: var(--tinta-suave); }
+    .fora-da-disputa p { margin: .6rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
+    .cartao-candidato.fora .retrato-link img { filter: grayscale(1); opacity: .8; }
     .link-tse { margin: 0; padding: .2rem 1rem .75rem; font-size: .86rem; }
     .link-tse a { color: var(--acento); font-weight: 600; }
     .hero-home .lead { max-width: none; }
