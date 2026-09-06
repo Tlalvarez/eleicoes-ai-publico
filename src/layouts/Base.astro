@@ -29,8 +29,10 @@ const atual = (p) => {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <!-- prévia ao colar o link (WhatsApp, X, Slack): título, descrição e a
-         imagem da marca. A rota /resposta/<id> troca título/descrição/url
-         pela prévia da resposta (functions/resposta) e mantém a imagem. -->
+         imagem da marca. A página de uma resposta guardada troca título,
+         descrição e url pela prévia da resposta (functions/) e mantém a
+         imagem. Este comentário não pode conter o caminho dessa rota: o gate
+         de navegador varre o DOM por ele quando o serviço não dá id. -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="eleicoes.ai" />
     <meta property="og:locale" content="pt_BR" />
