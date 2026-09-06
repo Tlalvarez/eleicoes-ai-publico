@@ -110,7 +110,13 @@ const exigenciasCss = [
   [/--alvo:\s*44px/, 'a folha não declara --alvo: 44px (alvo de toque mínimo)'],
   [/:focus-visible\s*\{[^}]*outline:/, 'a folha não declara foco visível em :focus-visible'],
   [/overflow-x:\s*hidden/, 'a folha não contém a rolagem horizontal do corpo'],
-  [/table\s*\{[^}]*overflow-x:\s*auto/, 'tabela larga não rola dentro do próprio bloco'],
+  // A tabela rola dentro de um CONTÊINER, não nela mesma: `display: block` na
+  // própria tabela deixava a coluna estreita colapsar no celular e o texto
+  // quebrar letra a letra. O contêiner precisa ser focável (WCAG 2.1.1: quem
+  // navega por teclado tem de conseguir rolar), e é isso que a segunda regra
+  // exige — a folha declara o foco visível dele.
+  [/\.tabela-rolagem\s*\{[^}]*overflow-x:\s*auto/, 'tabela larga não rola dentro do contêiner .tabela-rolagem'],
+  [/\.tabela-rolagem:focus-visible\s*\{[^}]*outline:/, 'o contêiner que rola não tem foco visível'],
 ];
 for (const [regra, mensagem] of exigenciasCss) {
   if (!regra.test(css)) falhas.push(`src/styles/global.css: ${mensagem}`);
