@@ -70,6 +70,8 @@ test('lançamento: a página Quem faz nomeia o responsável e o canal de retirad
   assert.match(sobre, /Não recomenda voto/);
   assert.match(sobre, /Não tem revisor humano/);
   assert.match(sobre, /EMAIL_CONTATO/);
+  assert.match(sobre, /<h2 id="regras">Regras da casa<\/h2>/);
+  assert.equal((sobre.match(/<ol class="regras">[\s\S]*?<\/ol>/)[0].match(/<li>/g) || []).length, 6);
   assert.match(await le('components/Chat.astro'), /Reportar um problema nesta resposta/);
   assert.match(await le('pages/privacidade.astro'), /EMAIL_CONTATO/);
 });
