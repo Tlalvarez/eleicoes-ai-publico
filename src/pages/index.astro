@@ -36,15 +36,19 @@ const cards = candidatos.map(({ slug, nome }) => ({
 const apiBase = import.meta.env.PUBLIC_PESQUISA_API
   ?? (import.meta.env.DEV ? 'http://localhost:8765' : '');
 ---
-<Base title="Eleições 2026 - Pergunte à IA sobre os candidatos">
+<Base title="Eleições 2026 - Pergunte à IA sobre os candidatos a presidente">
   <div class="hero-home">
-    <p class="sobretitulo">Eleições gerais de 2026</p>
-    <h1>Pergunte à IA sobre os candidatos</h1>
+    <p class="sobretitulo">Eleições gerais de 2026 · Presidente</p>
+    <h1>Pergunte à IA sobre os candidatos a presidente</h1>
     <p class="lead">
       O que os candidatos <strong>registraram na Justiça Eleitoral</strong>, <strong>publicaram nas próprias contas</strong>
       e <strong>disseram em vídeos</strong> de entrevistas, debates e discursos, com o link de cada item.
       Cada resposta separa o que está nas fontes, o que é leitura nossa e o que não encontramos,
       para você conferir antes de votar.
+    </p>
+    <p class="escopo-da-pagina">
+      Esta página responde sobre os {cards.length} candidatos a presidente. Para
+      <a href="/governador">governador</a> ou <a href="/senador">senador</a>, escolha o cargo no menu.
     </p>
   </div>
 
@@ -75,6 +79,10 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
 
   <style>
     .hero-home { margin-bottom: 1.6rem; }
+    /* A home é a porta de entrada E a seção de Presidente. Sem dizer isso, o
+       título ("os candidatos") promete todos os cargos e a pergunta sobre
+       Senado cai num vazio — a busca só olha o escopo da página. */
+    .escopo-da-pagina { margin: .6rem 0 0; color: var(--tinta-suave); font-size: .95rem; }
     .hero-home .lead { max-width: none; }
     .sobretitulo {
       margin: 0 0 .6rem;
