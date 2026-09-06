@@ -25,7 +25,12 @@ const {
   cargo = 'presidente',
   uf = '',
   pagina = '/',
-  placeholder = 'Ex.: o que o candidato A fala sobre educação em seu plano de governo? Compare quem tratou do tema X.',
+  // O padrão é o da HOME, que é a conversa sobre presidente. Segue a mesma
+  // forma das páginas por cargo ("Ex.: o que os candidatos a governador
+  // propõem para a segurança pública?"): pergunta concreta, um tema só, nenhum
+  // candidato citado. A versão anterior usava marcadores abstratos que o
+  // leitor tinha de traduzir antes de escrever a pergunta dele.
+  placeholder = 'Ex.: o que os candidatos a presidente propõem para a segurança pública?',
 } = Astro.props;
 ---
   <section class="chat" id="chat" aria-label="Conversa com o acervo" data-api={apiBase}

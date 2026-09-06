@@ -17,7 +17,10 @@ test('home usa a chamada sobre candidatos solicitada', () => {
   assert.match(textoHome, /para você conferir antes de votar\./);
   assert.doesNotMatch(textoHome, /últimos cinco anos|apenas <strong>materiais oficiais/);
   assert.doesNotMatch(home, /Converse em português com as evidências reunidas sobre os candidatos\./);
-  assert.match(chat, /placeholder = 'Ex\.: o que o candidato A fala sobre educação em seu plano de governo\? Compare quem tratou do tema X\.'/);
+  // a caixa da home segue a forma das páginas por cargo: pergunta concreta,
+  // um tema, nenhum candidato citado (pedido do Thiago em 06/09/2026)
+  assert.match(chat, /placeholder = 'Ex\.: o que os candidatos a presidente propõem para a segurança pública\?'/);
+  assert.doesNotMatch(chat, /candidato A|tema X/);
   assert.match(home, /<Chat apiBase=\{apiBase\} \/>/);
   assert.doesNotMatch(chat, /Ex\.: o que o candidato A já fala sobre sobre educação/);
   assert.match(home, /\.hero-home \.lead \{ max-width: none; \}/);
