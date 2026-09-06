@@ -22,7 +22,23 @@ const { onRequestGet, trata } =
 
 const ID = 'AbCdEfGhIjKlMnOpQrStUv';
 const URL_PEDIDO = `https://eleicoes.ai/resposta/${ID}`;
-const APP = '<!doctype html><title>app</title><section id="chat"></section>';
+const APP = '<!doctype html><html><head><title>app</title></head><body><section id="chat"></section></body></html>';
+
+/** Um serviço de respostas falso: 200 com citações, 404, 500 ou lento demais. */
+function buscarFalso(modo = 'ok') {
+  const pedidos = [];
+  const fn = async (url, opcoes) => {
+    pedidos.push(String(url));
+    if (modo === 'estoura') throw new Error('rede');
+    if (modo === 'lento') await new Promise((_, rej) => opcoes?.signal?.addEventListener('abort', () => rej(new Error('abort'))));
+    if (modo === '404') return new Response('{}', { status: 404 });
+    if (modo === '500') return new Response('erro', { status: 500 });
+    return new Response(JSON.stringify({ resposta: { citacoes: [{ nome: 'Lula' }, { nome: 'Flávio Bolsonaro' }] } }),
+      { status: 200, headers: { 'Content-Type': 'application/json' } });
+  };
+  fn.pedidos = pedidos;
+  return fn;
+}
 
 function assetsFalso({ status = 200 } = {}) {
   const pedidos = [];
@@ -39,7 +55,7 @@ function assetsFalso({ status = 200 } = {}) {
 
 test('id válido serve o app do chat, pedido só à raiz do deployment', async () => {
   const assets = assetsFalso();
-  const r = await trata({ url: URL_PEDIDO, id: ID, assets });
+  const r = await trata({ url: URL_PEDIDO, id: ID, assets, buscar: buscarFalso('500') });
 
   assert.equal(r.status, 200);
   assert.equal(await r.text(), APP);
@@ -65,7 +81,7 @@ test('id fora da gramática recebe o 404 uniforme sem tocar os estáticos', asyn
 test('sem armazém de estáticos, ou com falha nele, a rota diz indisponível', async () => {
   for (const assets of [undefined, { fetch: async () => { throw new Error('x'); } },
     assetsFalso({ status: 404 })]) {
-    const r = await trata({ url: URL_PEDIDO, id: ID, assets });
+    const r = await trata({ url: URL_PEDIDO, id: ID, assets, buscar: buscarFalso('500') });
     assert.equal(r.status, 502);
     assert.equal(r.headers.get('cache-control'), 'no-store');
   }
@@ -73,9 +89,40 @@ test('sem armazém de estáticos, ou com falha nele, a rota diz indisponível', 
 
 test('a ponte com o runtime usa params.id e env.ASSETS', async () => {
   const assets = assetsFalso();
+  const buscar = buscarFalso('ok');
   const r = await onRequestGet({
-    request: new Request(URL_PEDIDO), params: { id: ID }, env: { ASSETS: assets },
+    request: new Request(URL_PEDIDO), params: { id: ID },
+    env: { ASSETS: assets, PUBLIC_PESQUISA_API: 'https://api.teste' }, buscar,
   });
   assert.equal(r.status, 200);
   assert.deepEqual(assets.pedidos, ['https://eleicoes.ai/']);
+  // a API vem do ambiente da Pages; o fetch injetado é o do teste
+  assert.deepEqual(buscar.pedidos, [`https://api.teste/api/respostas/${ID}`]);
+});
+
+test('prévia: com a resposta guardada, o app sai com título e metas sobre os candidatos citados', async () => {
+  const buscar = buscarFalso('ok');
+  const r = await trata({ url: URL_PEDIDO, id: ID, assets: assetsFalso(), buscar, api: 'https://api.teste' });
+  assert.equal(r.status, 200);
+  assert.deepEqual(buscar.pedidos, [`https://api.teste/api/respostas/${ID}`]);
+  const html = await r.text();
+  assert.match(html, /<title>Resposta sobre Lula e Flávio Bolsonaro · eleicoes\.ai<\/title>/);
+  assert.match(html, new RegExp(`<meta property="og:url" content="https://eleicoes\\.ai/resposta/${ID}">`));
+  assert.match(html, /<section id="chat">/);
+});
+
+test('prévia: serviço fora, com erro ou lento não tira a página do ar — sai o app sem prévia', async () => {
+  for (const modo of ['estoura', '500']) {
+    const r = await trata({ url: URL_PEDIDO, id: ID, assets: assetsFalso(), buscar: buscarFalso(modo), api: 'https://api.teste' });
+    assert.equal(r.status, 200, modo);
+    assert.match(await r.text(), /<title>app<\/title>/, modo);
+  }
+  const r = await trata({ url: URL_PEDIDO, id: ID, assets: assetsFalso(), buscar: null });
+  assert.equal(r.status, 200);
+});
+
+test('prévia: resposta que o serviço não tem (inexistente ou revogada) sai como 404 uniforme', async () => {
+  const r = await trata({ url: URL_PEDIDO, id: ID, assets: assetsFalso(), buscar: buscarFalso('404'), api: 'https://api.teste' });
+  assert.equal(r.status, 404);
+  assert.match(await r.text(), /Resposta não encontrada/);
 });
