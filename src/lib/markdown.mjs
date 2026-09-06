@@ -392,7 +392,18 @@ function criaNo(no, doc, ancora, nivelBase) {
         tbody.appendChild(tr);
       }
       tabela.appendChild(tbody);
-      return tabela;
+      // A tabela vai dentro de um contêiner que ROLA na horizontal. Sem ele, no
+      // celular, a coluna mais estreita colapsa e o texto quebra letra a letra
+      // ("c a n di d at o"), porque o corpo da resposta usa overflow-wrap
+      // anywhere para URLs longas não estourarem a página. O contêiner deixa a
+      // tabela ter largura mínima própria e sair rolando em vez de se espremer.
+      const rolagem = doc.createElement('div');
+      rolagem.setAttribute('class', 'tabela-rolagem');
+      rolagem.setAttribute('role', 'region');
+      rolagem.setAttribute('tabindex', '0');
+      rolagem.setAttribute('aria-label', 'Tabela — role para os lados para ver tudo');
+      rolagem.appendChild(tabela);
+      return rolagem;
     }
     case 'ul': case 'ol': {
       const lista = doc.createElement(no.t);

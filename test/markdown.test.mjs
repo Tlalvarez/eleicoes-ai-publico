@@ -333,3 +333,15 @@ test('linha com barras sem a separadora é parágrafo, não tabela', () => {
   const nos = analisaMarkdown('| só uma linha | com barras |');
   assert.equal(nos[0].t, 'p');
 });
+
+test('tabela vai dentro de contêiner que rola, para não colapsar no celular', () => {
+  const raiz = monta('| candidato | EUA |\n| --- | --- |\n| Lula | conversar com todos |');
+  const [no] = achaTags(raiz, 'div');
+  assert.ok(no, 'a tabela precisa de um contêiner');
+  assert.equal(no.atributos.class, 'tabela-rolagem');
+  // acessível por teclado e anunciado, porque rola
+  assert.equal(no.atributos.role, 'region');
+  assert.equal(no.atributos.tabindex, '0');
+  assert.match(no.atributos['aria-label'], /role para os lados/i);
+  assert.equal(achaTags(no, 'table').length, 1);
+});

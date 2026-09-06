@@ -144,15 +144,33 @@ blockquote {
 /* URL comprida dentro de conteúdo nunca empurra a página */
 .prose, .conversa, .grupo, .cartao { overflow-wrap: anywhere; }
 
+/* A tabela rola DENTRO do seu contêiner, e não se espreme. `display: block` na
+   própria tabela (versão anterior) fazia a coluna estreita colapsar no celular
+   e o texto quebrar letra a letra, porque o corpo usa overflow-wrap anywhere. */
+.tabela-rolagem {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1rem 0;
+  border-radius: var(--raio);
+}
+.tabela-rolagem:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
 table {
   border-collapse: collapse;
   width: 100%;
   margin: 1rem 0;
   font-size: .93rem;
-  display: block;
-  overflow-x: auto;
 }
-th, td { border: 1px solid var(--linha); padding: .45rem .6rem; text-align: left; vertical-align: top; }
+.tabela-rolagem table { margin: 0; min-width: 32rem; }
+th, td {
+  border: 1px solid var(--linha);
+  padding: .45rem .6rem;
+  text-align: left;
+  vertical-align: top;
+  /* nunca quebrar no meio da palavra: é o que virava "c a n di d at o" */
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+th { white-space: nowrap; }
 th { background: var(--realce); }
 
 /* ------------------------------------------------------------------ estrutura */
