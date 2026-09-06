@@ -23,6 +23,7 @@ import {
   LIMITE_RESUMO, linkWhatsApp, markdownCompleto, payloadWebShare,
   resumoLegivel, textoCompleto,
   EMAIL_CONTATO, linkReportar,
+  semMarcadores,
 } from '../src/lib/compartilhar.mjs';
 import { ROTULO_PREVIA } from '../src/lib/release.mjs';
 
@@ -242,4 +243,18 @@ test('reportar: mailto para o contato, com o endereço da resposta no assunto e 
   assert.match(u.searchParams.get('body'), /pedido de retirada/);
   // sem endereço nem id: ainda dá para reportar, e o corpo pede a pergunta
   assert.match(new URL(linkReportar({})).searchParams.get('body'), /Pergunta feita/);
+});
+
+test('o compartilhado cabe numa mensagem de WhatsApp e não leva os marcadores de fonte', () => {
+  assert.equal(LIMITE_RESUMO, 280, 'acima disso o WhatsApp esconde o resto atrás de "Ler mais"');
+  assert.equal(semMarcadores('Lula fala em subsídios [S1] e Zema, em gás natural [S12][S13].'),
+    'Lula fala em subsídios e Zema, em gás natural.');
+  const r = resumoLegivel({
+    pergunta: 'O que propõem para o botijão?',
+    texto: '## Conclusão\n\nLula destaca o Gás do Povo [S7]; Flávio não fala do botijão [S13].',
+    url: URL_RESULTADO,
+    estado: ROTULO_PREVIA,
+  });
+  assert.doesNotMatch(r, /\[S\d+\]/, `marcador de fonte no texto compartilhado:\n${r}`);
+  assert.ok(r.length < 500, `mensagem com ${r.length} caracteres`);
 });

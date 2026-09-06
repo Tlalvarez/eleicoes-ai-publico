@@ -19,8 +19,15 @@
  */
 import { analisaMarkdown, paraTextoSimples } from './markdown.mjs';
 
-/** Tamanho da CONCLUSÃO no resumo curto — o resto do resumo é contexto fixo. */
-export const LIMITE_RESUMO = 550;
+/**
+ * Tamanho da CONCLUSÃO no resumo curto — o resto do resumo é contexto fixo.
+ *
+ * 280, não 550: o WhatsApp corta a mensagem e esconde o resto atrás de "Ler
+ * mais", e uma parede de texto no grupo da família não é lida. O compartilhado
+ * é um convite para abrir o link, não a resposta inteira — quem quiser tudo
+ * clica, e o texto completo continua no botão "Copiar texto".
+ */
+export const LIMITE_RESUMO = 280;
 
 const ASSINATURA =
   'eleicoes.ai — resposta de IA com fontes citadas; não indica em quem votar.';
@@ -33,6 +40,16 @@ const blocos = (...partes) => partes.filter((p) => texto(p).trim() !== '').join(
 export function dataBr(iso) {
   if (typeof iso !== 'string' || !/^\d{4}-\d{2}-\d{2}/.test(iso)) return 'sem data';
   return iso.slice(0, 10).split('-').reverse().join('/');
+}
+
+/**
+ * Tira os marcadores de fonte ([S1], [S2][S3]) do texto compartilhado.
+ *
+ * Dentro do site eles são clicáveis e levam à fonte. Colados no WhatsApp são
+ * ruído: o leitor vê "[S7]" e não tem o que fazer com aquilo.
+ */
+export function semMarcadores(t) {
+  return texto(t).replace(/\s*\[S\d+\]/g, '').replace(/\s{2,}/g, ' ').trim();
 }
 
 /** Corta em fronteira de palavra e marca o corte. */
@@ -93,9 +110,13 @@ function fontesMarkdown(citacoes) {
  * de texto simplesmente não é lida.
  */
 export function resumoLegivel({ pergunta, texto: corpo, url, estado } = {}) {
+  // `estado` continua: quando a resposta é prévia interna, o rótulo é um AVISO
+  // para quem recebe o encaminhamento, e quem recebe não tem outro jeito de
+  // saber. O que sai são os marcadores [Sn], que dentro do site são clicáveis
+  // e no WhatsApp são ruído.
   return blocos(
     texto(pergunta),
-    apara(conclusao(corpo), LIMITE_RESUMO),
+    semMarcadores(apara(conclusao(corpo), LIMITE_RESUMO)),
     linhas(ASSINATURA, texto(estado), texto(url)),
   ).trimEnd();
 }
