@@ -136,6 +136,16 @@ const {
       padding-left: .9rem;
       border-left: 4px solid var(--amarelo);
     }
+    .turno-pergunta { position: relative; }
+    .apagar-turno {
+      position: absolute; top: .4rem; right: .4rem;
+      min-height: var(--alvo); min-width: var(--alvo);
+      padding: 0 .7rem; border: 1px solid var(--linha); border-radius: 8px;
+      background: transparent; color: var(--tinta-suave);
+      font: inherit; font-size: .8rem; cursor: pointer;
+    }
+    .apagar-turno:hover { border-color: var(--atencao); color: var(--atencao); }
+    .turno-pergunta .texto-pergunta { padding-right: 5.5rem; }
     .turno-pergunta .marca-pergunta {
       font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
       font-weight: 800; color: var(--acento); padding-left: 1.05rem;
@@ -298,7 +308,7 @@ const {
     import { ErroConversa, carregaResposta, perguntaAoVivo } from '../lib/chat.mjs';
     import { criaSessao } from '../lib/sessao-conversa.mjs';
     import {
-      apaga as apagaGuardada, contemResposta, guarda as guardaConversa,
+      apaga as apagaGuardada, apagaTurno, contemResposta, guarda as guardaConversa,
       le as leGuardada, turnoGuardavel,
     } from '../lib/conversa-guardada.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
@@ -339,10 +349,12 @@ const {
     let turnos = 0;
 
     // A CONVERSA GUARDADA: cada par pergunta/resposta desenhado nesta página
-    // vai ao sessionStorage, por página. Sair e voltar redesenha tudo; a
-    // pessoa nunca perde a resposta à própria pergunta. O armazém pode não
-    // existir (modo privado antigo, cota): aí a página funciona como antes.
-    const armazem = (() => { try { return window.sessionStorage; } catch { return null; } })();
+    // vai ao localStorage, por página. A conversa sobrevive a fechar a aba e
+    // está lá no dia seguinte — quem passou vinte minutos perguntando não
+    // recomeça do zero. Em troca, a pessoa APAGA: cada pergunta tem o seu
+    // botão, e "Começar outra conversa" apaga tudo. O armazém pode não existir
+    // (modo privado antigo, cota): aí a página funciona sem memória.
+    const armazem = (() => { try { return window.localStorage; } catch { return null; } })();
     const turnosGuardados = [];
     let ultimoIdGuardado = null;
     function lembra(pergunta, resultado) {
@@ -352,6 +364,29 @@ const {
       ultimoIdGuardado = resultado.id ?? ultimoIdGuardado;
       if (armazem) guardaConversa(armazem, paginaBase, { turnos: turnosGuardados, ultimoId: ultimoIdGuardado });
     }
+    /**
+     * Apaga UMA pergunta: some da tela (a pergunta e a resposta dela) e do
+     * armazém. É a contrapartida de guardar a conversa entre sessões — o
+     * navegador é compartilhado, e pergunta política é dado sensível.
+     */
+    function apagaUmTurno(liPergunta, liResposta, posicao) {
+      liPergunta?.remove();
+      liResposta?.remove();
+      if (posicao >= 0 && posicao < turnosGuardados.length) {
+        const restante = apagaTurno({ turnos: turnosGuardados, ultimoId: ultimoIdGuardado }, posicao);
+        turnosGuardados.length = 0;
+        if (restante) {
+          turnosGuardados.push(...restante.turnos);
+          ultimoIdGuardado = restante.ultimoId;
+          if (armazem) guardaConversa(armazem, paginaBase, restante);
+        } else {
+          ultimoIdGuardado = null;
+          if (armazem) apagaGuardada(armazem, paginaBase);
+        }
+      }
+      if (!conversa.children.length) reinicia();
+    }
+
     function esquece() {
       turnosGuardados.length = 0;
       ultimoIdGuardado = null;
@@ -821,6 +856,25 @@ const {
       conversa.append(li);
 
       artigo.append(barraDeCompartilhar(resultado, est.rotulo));
+
+      // O botão de apagar vive na PERGUNTA (é dela que a pessoa se arrepende) e
+      // some com o par inteiro. Só aparece quando a resposta chegou: apagar
+      // meia troca deixaria a conversa sem sentido. A posição é calculada no
+      // clique, contando as perguntas antes desta, para continuar certa depois
+      // de outras exclusões.
+      const liPergunta = li.previousElementSibling;
+      if (liPergunta?.classList.contains('turno-pergunta')
+          && !liPergunta.querySelector('.apagar-turno')) {
+        const apagar = el('button', 'apagar-turno', 'Apagar');
+        apagar.type = 'button';
+        apagar.title = 'Apagar esta pergunta e a resposta dela deste navegador';
+        apagar.setAttribute('aria-label', 'Apagar esta pergunta e a resposta dela');
+        apagar.addEventListener('click', () => {
+          const perguntas = [...conversa.querySelectorAll('.turno-pergunta')];
+          apagaUmTurno(liPergunta, li, perguntas.indexOf(liPergunta));
+        });
+        liPergunta.append(apagar);
+      }
       return li;
     }
 

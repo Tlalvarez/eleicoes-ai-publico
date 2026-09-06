@@ -181,3 +181,17 @@ test('perguntar não esconde o cabeçalho nem a grade de candidatos', async () =
   // o compositor que acompanha a rolagem fica: é o ganho real do modo conversa
   assert.match(chat, /body\.modo-conversa \.form-chat \{[\s\S]*?position: sticky/);
 });
+
+test('a conversa é guardada entre sessões e cada pergunta pode ser apagada', async () => {
+  const chat = await le('components/Chat.astro');
+  // decisão do Thiago em 06/09: guardar a conversa inteira, com o direito de apagar
+  assert.match(chat, /window\.localStorage/);
+  assert.doesNotMatch(chat, /window\.sessionStorage/);
+  assert.match(chat, /el\('button', 'apagar-turno', 'Apagar'\)/);
+  assert.match(chat, /function apagaUmTurno\(/);
+  // guardar entre sessões só é aceitável com o apagar dito na privacidade
+  const priv = await le('pages/privacidade.astro');
+  assert.match(priv, /neste navegador/);
+  assert.match(priv, /botão "Apagar"/);
+  assert.doesNotMatch(priv, /Fechou a aba, acabou/);
+});

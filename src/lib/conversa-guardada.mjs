@@ -11,8 +11,13 @@
  * O que se guarda é, POR PÁGINA DE CONVERSA ('/', '/governador/mg', ...), a
  * lista de turnos já respondidos — a pergunta enviada e o resultado normalizado
  * que a interface desenhou — e o id que o serviço usa para continuar a conversa.
- * Vive em `sessionStorage`: dura a aba, não atravessa dias nem outras abas;
- * "Começar outra conversa" apaga.
+ * Vive em `localStorage`: a conversa sobrevive a fechar a aba e volta no dia
+ * seguinte (decisão do Thiago em 06/09/2026 — quem passou vinte minutos
+ * perguntando não pode recomeçar do zero). Em troca, a pessoa tem de poder
+ * APAGAR: cada pergunta some sozinha pelo botão ao lado dela, e "Começar outra
+ * conversa" apaga a conversa inteira. Isso fica escrito em /privacidade, porque
+ * o navegador é frequentemente compartilhado e pergunta política é dado
+ * sensível.
  *
  * O que vem do armazém é tratado como entrada: forma conferida campo a campo,
  * nada além do reconhecido chega à página. Sem DOM aqui — testável em Node com
@@ -106,6 +111,22 @@ export function le(armazem, pagina) {
 }
 
 /** Esquece a conversa da página. */
+/**
+ * Apaga UM turno guardado (a pergunta e a resposta dela), pelo índice.
+ * Devolve a conversa que ficou, ou `null` quando não sobrou nada — aí quem
+ * chama apaga a chave inteira em vez de guardar uma conversa vazia.
+ */
+export function apagaTurno(conversa, indice) {
+  const turnos = Array.isArray(conversa?.turnos) ? conversa.turnos : [];
+  if (!Number.isInteger(indice) || indice < 0 || indice >= turnos.length) return conversa ?? null;
+  const restantes = turnos.filter((_, i) => i !== indice);
+  if (!restantes.length) return null;
+  // o id de continuação é o da última resposta que sobrou: continuar a conversa
+  // a partir de um turno apagado pediria ao serviço um contexto que não existe
+  const ultimo = restantes[restantes.length - 1];
+  return { turnos: restantes, ultimoId: ultimo?.resultado?.id ?? null };
+}
+
 export function apaga(armazem, pagina) {
   try { armazem.removeItem(chaveDaConversa(pagina)); } catch { /* sem armazém: nada a apagar */ }
 }
