@@ -58,8 +58,12 @@ export function injetaPrevia(html, { titulo, descricao = DESCRICAO_PREVIA, url }
     '<meta name="twitter:card" content="summary">',
     `<meta name="description" content="${escapa(descricao)}">`,
   ].filter(Boolean).join('');
+  // Substituições por FUNÇÃO, não por string: com string, `$&`, `$'` e afins
+  // dentro do valor são padrões de substituição — um nome com `$'` (escapado
+  // vira `$&#39;`, que contém `$&`) inseria o próprio <title> antigo dentro do
+  // novo e o </head> dentro do og:title. Não executa nada, mas quebra a página.
   return texto
-    .replace(/<title>[^<]*<\/title>/i, `<title>${t}${escapa(SUFIXO)}</title>`)
+    .replace(/<title>[^<]*<\/title>/i, () => `<title>${t}${escapa(SUFIXO)}</title>`)
     .replace(/<meta name="description" content="[^"]*"\s*\/?>/i, '')
-    .replace(/<\/head>/i, `${metas}</head>`);
+    .replace(/<\/head>/i, () => `${metas}</head>`);
 }

@@ -31,3 +31,11 @@ test('injeta título e metas escapados; sem <title> ou </head>, devolve o HTML i
   assert.equal(injetaPrevia('<p>sem head</p>', { titulo: 'x' }), '<p>sem head</p>');
   assert.equal(injetaPrevia(app, {}), app);
 });
+
+test('nome com padrão de substituição ($&, $\') não corrompe a marcação', () => {
+  const html = '<html><head><title>Home</title></head><body></body></html>';
+  const saida = injetaPrevia(html, { titulo: tituloDaResposta({ citacoes: [{ nome: "Zé $' do $& Bar" }] }) });
+  assert.equal((saida.match(/<title>/g) ?? []).length, 1, 'o <title> antigo foi inserido dentro do novo');
+  assert.equal((saida.match(/<\/head>/g) ?? []).length, 1, 'o </head> foi inserido dentro de uma meta');
+  assert.match(saida, /<title>Resposta sobre Zé \$&#39; do \$&amp; Bar · eleicoes\.ai<\/title>/);
+});
