@@ -104,3 +104,11 @@ test('a verificação sai do esconderijo pela metodologia, com moldura datada', 
   assert.match(indice, /\{periodo\}/);
   assert.match(await le('pages/verificacao/[slug].astro'), /Não é avaliação de candidatura de 2026/);
 });
+
+test('o rótulo de IA aparece no topo de cada resposta, antes do texto', async () => {
+  const chat = await le('components/Chat.astro');
+  const i = chat.indexOf("el('p', 'rotulo-ia'");
+  const j = chat.indexOf('artigo.append(montaCorpo(resultado.texto');
+  assert.ok(i > 0 && j > i, 'o rótulo tem de ser montado antes do corpo');
+  assert.match(chat, /Resposta gerada por inteligência artificial · sem revisão humana · \$\{dataRotulo\}/);
+});

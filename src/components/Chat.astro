@@ -260,6 +260,10 @@ const {
 
     /* lacuna e ressalva: amarelo claro com texto azul-marinho, a mesma cor de
        atenção do site inteiro — nunca o estatuto de um candidato */
+    .rotulo-ia {
+      margin: 0 0 .6rem; font-size: .78rem; font-weight: 700; letter-spacing: .04em;
+      text-transform: uppercase; color: var(--tinta-suave);
+    }
     .aviso-turno {
       font-size: .86rem; color: var(--acento-forte);
       background: var(--realce-atencao); border: 1px solid var(--linha-atencao);
@@ -658,6 +662,15 @@ const {
           + 'sido alterado por quem montou o link e não deve ser tratado como publicação '
           + 'oficial. Confira cada fonte citada, ou refaça a pergunta abaixo.'));
       }
+
+      // O rótulo de IA vai ANTES do texto, não só no rodapé: quem lê no celular
+      // precisa ver "gerada por IA, sem revisão humana" antes de ler a resposta,
+      // não depois de rolar. A data é a do rodapé do serviço (a da geração);
+      // sem rodapé, a de hoje. Texto aprovado pelo Thiago em 05/09/2026.
+      const dataRotulo = (String(resultado.rodape || '').match(/\d{2}\/\d{2}\/\d{4}/) || [])[0]
+        || new Date().toLocaleDateString('pt-BR');
+      artigo.append(el('p', 'rotulo-ia',
+        `Resposta gerada por inteligência artificial · sem revisão humana · ${dataRotulo}`));
 
       artigo.append(montaCorpo(resultado.texto, indice, resultado.citacoes));
 
