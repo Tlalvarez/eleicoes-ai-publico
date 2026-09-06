@@ -100,7 +100,23 @@ npm test               # o gate completo
 A verificação do dist confere: a home é o chat e lista o catálogo inteiro; nenhum arquivo usa `innerHTML`, `set:html`, `eval` ou
 `document.write` (a resposta de terceiro só vira DOM por `createElement`); a prévia não afirma
 oficialidade; `_headers` tem CSP coerente com os scripts embutidos; acessibilidade básica em todas
-as páginas; e o chat funciona num Chrome real contra uma API falsa.
+as páginas; e o chat funciona num Chrome real contra uma API falsa — inclusive emitindo os eventos
+de medição sem deixar passar nenhum texto livre.
+
+### Medição
+
+A audiência é medida em modo sem cookies (PostHog, em `src/layouts/Base.astro`) e o produto é
+medido por eventos com **vocabulário fechado**: `src/lib/medicao.mjs` é a única porta, e ela recusa
+evento não declarado, propriedade fora da lista do evento e qualquer valor de texto com espaço —
+a invariante que se confere num olhar, já que **prosa tem espaço**. Pergunta e resposta nunca saem
+do navegador por essa via, e o identificador de uma resposta guardada é removido das propriedades
+de endereço antes do envio.
+
+Três coisas seguram a promessa: `test/medicao.test.mjs` (o filtro recusa), `npm run test:medicao`
+(`posthog.capture` só existe dentro de `medicao.mjs`, e todo evento declarado tem chamador) e o
+gate de navegador (o bundle publicado realmente emite). Evento novo entra em `EVENTOS` antes de
+ter chamador — o gate cobra os dois lados. O que cada número responde está descrito na página
+[/privacidade](https://eleicoes.ai/privacidade).
 
 Não há CI versionado neste repositório: o deploy é upload direto do `dist` e roda o gate antes.
 `npm test` é o gate porque obrigação documental não é obrigação.

@@ -312,6 +312,9 @@ const {
       le as leGuardada, turnoGuardavel,
     } from '../lib/conversa-guardada.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
+    import {
+      contextoDoCaminho, defineContexto, faixaDeTamanho, medir,
+    } from '../lib/medicao.mjs';
     import { estadoDoFragmento } from '../lib/permalink.mjs';
     import {
       PARAMETRO_PAGINA, caminhoPagina, idDoCaminho, urlDeCompartilhamento,
@@ -347,6 +350,17 @@ const {
     const escopo = chat.dataset.escopo || '';
     const paginaBase = chat.dataset.pagina || '/';
     let turnos = 0;
+
+    // A medição desta página. O cargo e a UF vêm do CHAT, não do endereço: em
+    // `/resposta/<id>` o endereço não diz de que conversa se trata, e o chat
+    // diz. O tipo de página continua vindo do caminho.
+    // Todo evento passa por `medir` (src/lib/medicao.mjs): vocabulário fechado,
+    // nenhum texto livre. Ver MEDICAO.md.
+    defineContexto({
+      cargo: chat.dataset.cargo || 'presidente',
+      uf: chat.dataset.uf || '',
+      pagina: contextoDoCaminho(location.pathname).pagina,
+    });
 
     // A CONVERSA GUARDADA: cada par pergunta/resposta desenhado nesta página
     // vai ao localStorage, por página. A conversa sobrevive a fechar a aba e
@@ -607,6 +621,18 @@ const {
         a.href = cit.url;
         a.target = '_blank';
         a.rel = 'noopener noreferrer nofollow';
+        // A tese do produto é "toda resposta com o link da fonte". Se ninguém
+        // abre a fonte, a tese não está sendo consumida — e é isto que mede.
+        // Vai o TIPO da fonte e o slug do candidato, nunca o endereço: uma URL
+        // de post identifica conteúdo e tem espaço e acento (a gramática de
+        // `medir` a recusaria de qualquer forma).
+        a.addEventListener('click', () => medir('fonte_aberta', {
+          turno: indice,
+          posicao: cit.marcadores[0],
+          tipo: cit.tipo,
+          estatuto: cit.estatuto,
+          candidato: cit.candidato,
+        }));
         li.append(a);
       } else {
         li.append(el('span', 'fonte-meta', '(sem endereço registrado)'));
@@ -723,7 +749,7 @@ const {
      * o endereço pela rota da resposta faria o recarregar e o "voltar" caírem
      * numa página avulsa, que não é a conversa que está na tela.
      */
-    function barraDeCompartilhar(resultado, rotuloEstado) {
+    function barraDeCompartilhar(resultado, rotuloEstado, indice) {
       const barra = el('div', 'barra-compartilhar');
       barra.setAttribute('aria-label', 'Compartilhar este resultado');
 
@@ -734,14 +760,19 @@ const {
         barra.append(botaoIcone('compartilhar', 'Compartilhar', async () => {
           try {
             await navigator.share(payloadWebShare(comum));
+            medir('resposta_compartilhada', { turno: indice, canal: 'sistema' });
           } catch { /* cancelado pelo usuário: não é erro */ }
         }));
       }
 
-      barra.append(botaoIcone('texto', 'Copiar texto',
-        (ev) => copia(textoCompleto(comum), ev.currentTarget, barra)));
-      barra.append(botaoIcone('markdown', 'Copiar Markdown',
-        (ev) => copia(markdownCompleto(comum), ev.currentTarget, barra)));
+      barra.append(botaoIcone('texto', 'Copiar texto', (ev) => {
+        medir('resposta_copiada', { turno: indice, formato: 'texto' });
+        return copia(textoCompleto(comum), ev.currentTarget, barra);
+      }));
+      barra.append(botaoIcone('markdown', 'Copiar Markdown', (ev) => {
+        medir('resposta_copiada', { turno: indice, formato: 'markdown' });
+        return copia(markdownCompleto(comum), ev.currentTarget, barra);
+      }));
 
       const zap = el('a', 'botao secundario botao-icone');
       zap.setAttribute('aria-label', 'WhatsApp');
@@ -750,11 +781,15 @@ const {
       zap.href = linkWhatsApp(resumoLegivel(comum));
       zap.target = '_blank';
       zap.rel = 'noopener noreferrer';
+      zap.addEventListener('click',
+        () => medir('resposta_compartilhada', { turno: indice, canal: 'whatsapp' }));
       barra.append(zap);
 
       if (url) {
-        barra.append(botaoIcone('link', 'Copiar link',
-          (ev) => copia(url, ev.currentTarget, barra)));
+        barra.append(botaoIcone('link', 'Copiar link', (ev) => {
+          medir('resposta_compartilhada', { turno: indice, canal: 'link' });
+          return copia(url, ev.currentTarget, barra);
+        }));
       } else {
         // sem identificador não se inventa endereço: um link para uma resposta
         // que o serviço não guardou abriria 404 na cara de quem o recebeu, e
@@ -778,6 +813,7 @@ const {
       // retirada que não exija conta nem exponha em público o que se quer tirar.
       const reportar = el('a', 'reportar', 'Reportar um problema nesta resposta');
       reportar.href = linkReportar({ url, id: resultado.id });
+      reportar.addEventListener('click', () => medir('problema_reportado', { turno: indice }));
       barra.append(reportar);
       return barra;
     }
@@ -819,6 +855,12 @@ const {
         const detalhes = el('details');
         detalhes.append(el('summary', null,
           `Ver as ${resultado.citacoes.length} fontes desta resposta`));
+        // só a ABERTURA conta: `toggle` também dispara ao fechar
+        detalhes.addEventListener('toggle', () => {
+          if (detalhes.open) {
+            medir('fontes_abertas', { turno: indice, fontes: resultado.citacoes.length });
+          }
+        });
         if (resultado.citacoes.some((cit) => cit.estatuto === 3)) {
           detalhes.append(el('p', 'ressalva nao-conferido',
             '⚠ transcrição/legenda automática — pode conter erros; confira na fonte'));
@@ -855,7 +897,7 @@ const {
       li.append(artigo);
       conversa.append(li);
 
-      artigo.append(barraDeCompartilhar(resultado, est.rotulo));
+      artigo.append(barraDeCompartilhar(resultado, est.rotulo, indice));
 
       // O botão de apagar vive na PERGUNTA (é dela que a pessoa se arrepende) e
       // some com o par inteiro. Só aparece quando a resposta chegou: apagar
@@ -871,6 +913,7 @@ const {
         apagar.setAttribute('aria-label', 'Apagar esta pergunta e a resposta dela');
         apagar.addEventListener('click', () => {
           const perguntas = [...conversa.querySelectorAll('.turno-pergunta')];
+          medir('turno_apagado');
           apagaUmTurno(liPergunta, li, perguntas.indexOf(liPergunta));
         });
         liPergunta.append(apagar);
@@ -889,7 +932,7 @@ const {
       if (codigo === 'sem-followup' && perguntaRecusada) {
         estado.append(botao('Enviar como nova pergunta', () => {
           reinicia();
-          envia(perguntaRecusada);
+          envia(perguntaRecusada, { origem: 'nova' });
         }));
       }
     }
@@ -929,6 +972,7 @@ const {
      */
     function restauraConversa(salva) {
       nova.hidden = false;
+      medir('conversa_restaurada', { turnos: salva.turnos.length });
       for (const t of salva.turnos) {
         adicionaPergunta(t.pergunta, { rola: false });
         adicionaResposta(t.resultado);
@@ -943,11 +987,21 @@ const {
       if (primeira) apontaPara(primeira.resultado.compartilhamento_id);
     }
 
-    async function envia(texto) {
+    async function envia(texto, { origem = 'form' } = {}) {
       const escrito = String(texto ?? '').trim();
       if (!escrito) return;
       const conteudo = escopo && !escrito.startsWith(`${escopo}:`)
         ? `${escopo}: ${escrito}` : escrito;
+
+      // O funil começa aqui. Vai a FAIXA de tamanho, nunca o tamanho exato nem
+      // o texto: o número de caracteres casaria com uma pergunta específica no
+      // registro do serviço, e é justamente esse cruzamento que não se faz.
+      const turnoAtual = turnos + 1;
+      const comecou = Date.now();
+      let primeiroTexto = false;
+      medir('pergunta_enviada', {
+        turno: turnoAtual, origem, tamanho: faixaDeTamanho(escrito),
+      });
 
       nova.hidden = false;
       entrada.value = '';
@@ -997,6 +1051,12 @@ const {
           conversa.append(rascunho);
           rascunhoNaTela = true;
         }
+        if (!primeiroTexto) {
+          // o instante em que a tela deixa de ser uma espera — o número que
+          // manda na percepção de lentidão, bem antes do tempo total
+          primeiroTexto = true;
+          medir('resposta_primeiro_texto', { turno: turnoAtual, ms: Date.now() - comecou });
+        }
         textoAcumulado += trecho;
         if (!quadroAgendado) quadroAgendado = requestAnimationFrame(desenhaRascunho);
       };
@@ -1020,11 +1080,32 @@ const {
       if (r.estado === 'obsoleto') return;
 
       enviar.disabled = false;
+      const ms = Date.now() - comecou;
       if (r.estado === 'cancelado') {
+        medir('pergunta_cancelada', { turno: turnoAtual, ms });
         escondeEstado();
       } else if (r.estado === 'erro') {
+        medir('resposta_falhou', {
+          turno: turnoAtual, ms, codigo: r.erro?.codigo || 'desconhecido',
+        });
         mostraErro(r.erro, r.perguntaRecusada);
       } else if (r.estado === 'ok') {
+        // O desfecho do funil, em estrutura: quantas fontes, quantos
+        // candidatos entraram no escopo e de quantos NÃO havia material. É
+        // desta última coluna que sai a fila de coleta — e `sem_fontes` é a
+        // resposta que a régua manda tratar como indisponibilidade.
+        const cands = r.resultado.candidatos ?? [];
+        medir('resposta_recebida', {
+          turno: turnoAtual,
+          ms,
+          fontes: r.resultado.citacoes.length,
+          candidatos: cands.length,
+          com_material: cands.filter((c) => c.situacao === 'com_material').length,
+          sem_material: cands.filter((c) => c.situacao === 'sem_material_no_acervo').length,
+          sem_fontes: r.resultado.citacoes.length === 0,
+          release_id: r.resultado.release_id,
+          via_fallback: r.resultado.viaFallback === true,
+        });
         escondeEstado();
         const li = adicionaResposta(r.resultado, { viaFallback: r.resultado.viaFallback });
         lembra(r.resultado.pergunta, r.resultado);
@@ -1047,6 +1128,7 @@ const {
     cancelar.addEventListener('click', () => sessao.cancela());
 
     nova.addEventListener('click', () => {
+      medir('conversa_reiniciada', { turnos });
       reinicia();
       entrada.focus();
     });
@@ -1082,6 +1164,12 @@ const {
         try {
           const guardada = await carregaResposta(idPagina, { apiBase: chat.dataset.api });
           escondeEstado();
+          // alguém abriu um link que recebeu de outra pessoa: é a medida da
+          // circulação, do outro lado do `resposta_compartilhada`. O id NÃO
+          // vai junto (ele levaria à pergunta guardada, e é esse cruzamento
+          // entre navegação e conteúdo que /privacidade promete não fazer);
+          // `achou` distingue link vivo de link revogado ou inválido.
+          medir('resposta_recebida_por_link', { achou: Boolean(guardada) });
           if (!guardada) {
             mostraEstado('Esta resposta não foi encontrada. Faça a pergunta abaixo.', { erro: true });
             return;
@@ -1102,6 +1190,6 @@ const {
       // (ou recarregar) encontra a pergunta e a resposta onde estavam
       if (salva) restauraConversa(salva);
       const q = parametros.get('q');
-      if (q) envia(q);
+      if (q) envia(q, { origem: 'url' });
     })();
   </script>

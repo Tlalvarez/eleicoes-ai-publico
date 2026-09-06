@@ -2,10 +2,10 @@
 import Base from '../layouts/Base.astro';
 import { EMAIL_CONTATO as email } from '../lib/compartilhar.mjs';
 // O que o site guarda e o que não guarda. Cada frase daqui descreve um
-// comportamento real do código (Base.astro: PostHog sem cookies; Chat +
-// conversa-guardada.mjs: sessionStorage; serviço: respostas guardadas com
-// endereço não listado). Mudou o comportamento, muda-se esta página no
-// mesmo commit.
+// comportamento real do código (Base.astro: PostHog sem cookies; medicao.mjs:
+// o vocabulário fechado dos eventos; Chat + conversa-guardada.mjs:
+// sessionStorage; serviço: respostas guardadas com endereço não listado).
+// Mudou o comportamento, muda-se esta página no mesmo commit.
 ---
 <Base title="Privacidade"
   description="O que o eleicoes.ai guarda e o que não guarda sobre quem usa o site.">
@@ -45,6 +45,14 @@ import { EMAIL_CONTATO as email } from '../lib/compartilhar.mjs';
         gravado no seu navegador, os eventos são anônimos, não há perfil de pessoa nem
         gravação de sessão, e o texto da pergunta é mascarado nas medições. Os eventos são
         recebidos em servidores do PostHog nos <strong>Estados Unidos</strong>.</li>
+      <li>Além das páginas vistas, medimos <strong>o que acontece na conversa</strong>: que uma
+        pergunta foi enviada, quanto tempo a resposta levou, quantas fontes ela trouxe, se
+        alguma fonte foi aberta e se a resposta foi copiada ou compartilhada. Vai só isso —
+        <strong>números, siglas e códigos</strong>. O texto da pergunta, o da resposta e o
+        endereço da resposta guardada <strong>não entram</strong>, e o código recusa enviá-los:
+        um valor com espaço, como qualquer frase, é descartado antes de sair do navegador.
+        Ao abrir um link compartilhado, medimos que <em>alguém chegou por um link</em>, nunca
+        <em>qual</em> resposta era.</li>
       <li>A Cloudflare, que hospeda o site, também conta as visitas com o
         <strong>Cloudflare Web Analytics</strong>: sem cookies, sem identificar pessoa, com
         páginas vistas, origem da visita, país, tipo de aparelho e tempo de carregamento. Esses

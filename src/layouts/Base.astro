@@ -78,6 +78,33 @@ const atual = (p) => {
           disable_capture_url_hashes: true,        // sem fragmento: links antigos carregam a resposta inteira depois do #
           mask_personal_data_properties: true,     // mascara parâmetros pessoais nas URLs medidas...
           custom_personal_data_properties: ['q'],  // ...inclusive ?q= (a pergunta na URL)
+          // O identificador de uma resposta guardada some de TODA propriedade
+          // de endereço (vira `:id`). Sem isto, quem abre um link
+          // compartilhado manda para a medição um identificador que leva à
+          // pergunta guardada — e a sessão sem cookies agrupa os eventos
+          // daquele visitante. Contar quantas visitas chegam por link é o que
+          // interessa; QUAL resposta é conteúdo, e conteúdo não entra na
+          // medição de navegação.
+          //
+          // O padrão captura o prefixo em vez de escrevê-lo de volta, e o
+          // comentário não o soletra: este script é INLINE, vai ao DOM como
+          // está, e o gate de navegador varre o DOM pelo caminho dessa rota
+          // para flagrar endereço de resposta inventado (ver o comentário do
+          // og:image acima).
+          before_send: function (evento) {
+            try {
+              var p = evento && evento.properties;
+              if (!p) return evento;
+              var chaves = ['$current_url', '$pathname', '$referrer',
+                            '$initial_current_url', '$initial_pathname', '$initial_referrer'];
+              for (var i = 0; i < chaves.length; i++) {
+                if (typeof p[chaves[i]] === 'string') {
+                  p[chaves[i]] = p[chaves[i]].replace(/(resposta\/)[A-Za-z0-9_-]{22}/g, '$1:id');
+                }
+              }
+            } catch (e) { /* medição nunca derruba a página */ }
+            return evento;
+          },
         });
       }
     </script>
@@ -111,5 +138,50 @@ const atual = (p) => {
         <p class="aviso-independencia">O eleicoes.ai é uma <strong>iniciativa independente</strong>, sem vínculo, patrocínio ou endosso da Justiça Eleitoral.</p>
       </div>
     </footer>
+    <script>
+      // A navegação do catálogo, medida por DELEGAÇÃO: um ouvinte no
+      // documento, nenhuma alteração nas páginas que desenham os cartões.
+      // Cartão novo, cargo novo ou UF nova entram medidos sozinhos.
+      //
+      // As páginas com chat redefinem o contexto com o cargo/UF que o chat
+      // conhece (Chat.astro roda depois deste script); aqui o contexto sai do
+      // endereço, que é o que /sobre, /metodologia e as páginas de cargo têm.
+      import { contextoDoCaminho, defineContextoPadrao, medir } from '../lib/medicao.mjs';
+
+      defineContextoPadrao(contextoDoCaminho(location.pathname));
+
+      /** O slug é o último trecho do endereço do cartão — nunca o nome. */
+      const slugDoLink = (a) => {
+        try {
+          return new URL(a.href, location.origin).pathname.split('/').filter(Boolean).pop() ?? '';
+        } catch { return ''; }
+      };
+
+      document.addEventListener('click', (ev) => {
+        const alvo = ev.target instanceof Element ? ev.target : null;
+        if (!alvo) return;
+
+        const retrato = alvo.closest('a.retrato-link');
+        if (retrato) {
+          const cartao = retrato.closest('.cartao-candidato');
+          const lista = cartao?.closest('.grade-candidatos');
+          const cartoes = lista ? [...lista.querySelectorAll('.cartao-candidato')] : [];
+          medir('candidato_aberto', {
+            slug: slugDoLink(retrato),
+            posicao: cartao ? cartoes.indexOf(cartao) + 1 : 0,
+            // `.fora` é candidatura indeferida ou renunciada segundo o TSE
+            elegivel: !cartao?.classList.contains('fora'),
+          });
+          return;
+        }
+
+        const tse = alvo.closest('.link-tse a');
+        if (tse) {
+          const cartao = tse.closest('.cartao-candidato');
+          const retratoDoCartao = cartao?.querySelector('a.retrato-link');
+          medir('tse_aberto', { slug: retratoDoCartao ? slugDoLink(retratoDoCartao) : '' });
+        }
+      });
+    </script>
   </body>
 </html>

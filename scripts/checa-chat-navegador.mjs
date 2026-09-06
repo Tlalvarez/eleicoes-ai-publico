@@ -40,7 +40,14 @@
  *      fonte e uma release "oficial" forjada. A soma é FNV-1a e não autentica
  *      nada: quem fabrica o link recalcula. Este cenário é o que prova, no
  *      navegador, que a defesa está na decodificação e não na soma;
- *   6. resposta SEM `compartilhamento_id` — compatibilidade com um serviço que
+ *   6. medição — o bundle publicado emite o funil de um turno
+ *      (`pergunta_enviada` → `resposta_primeiro_texto` → `resposta_recebida`)
+ *      com o contexto da página, e NENHUM valor medido é prosa. É aqui que a
+ *      promessa de /privacidade deixa de ser papel: o teste de unidade prova
+ *      que o filtro recusa texto livre, este prova que o produto chama o
+ *      filtro. Um `posthog.capture` novo fora de `medicao.mjs` é barrado
+ *      antes, por scripts/checa-medicao.mjs;
+ *   7. resposta SEM `compartilhamento_id` — compatibilidade com um serviço que
  *      ainda não guarda a resposta. Aí não se inventa endereço nem se cai de
  *      volta no fragmento: copiar texto e copiar Markdown continuam, e a
  *      indisponibilidade do link é dita.
@@ -163,6 +170,49 @@ const RESPOSTA = {
 };
 
 // ---------------------------------------------------------------------------
+// o espião da medição
+// ---------------------------------------------------------------------------
+
+/**
+ * Um `window.posthog` falso, injetado ANTES dos scripts da página.
+ *
+ * `src/lib/medicao.mjs` prova em teste de unidade que o filtro recusa texto
+ * livre. O que ele não pode provar é que o bundle PUBLICADO chama `medir` nos
+ * lugares certos, com os números certos — só o navegador prova isso. O espião
+ * guarda o que foi capturado no atributo `data-eventos` do <html>, que é o
+ * único canal que `--dump-dom` enxerga.
+ *
+ * Ele é servido como ARQUIVO da mesma origem: a CSP do dist autoriza script
+ * inline só por hash, e um <script> inline injetado aqui seria bloqueado — o
+ * gate estaria medindo o bloqueio, não o produto.
+ */
+const CAMINHO_ESPIA = '/__medicao-espia.js';
+const ESPIA = `
+  window.__eventos = [];
+  window.posthog = {
+    capture: function (evento, props) {
+      window.__eventos.push({ evento: evento, props: props });
+      document.documentElement.setAttribute('data-eventos',
+        JSON.stringify(window.__eventos));
+    },
+  };
+`;
+
+/** Os eventos que o espião registrou, na ordem em que foram capturados. */
+function eventosDoDom(dom) {
+  const bruto = dom.match(/<html[^>]*\sdata-eventos="([^"]*)"/)?.[1];
+  if (!bruto) return [];
+  const texto = bruto.replace(/&quot;/g, '"').replace(/&#34;/g, '"')
+    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+  try { return JSON.parse(texto); } catch { return []; }
+}
+
+/** O primeiro evento com este nome, ou `null`. */
+function evento(eventos, nome) {
+  return eventos.find((e) => e.evento === nome) ?? null;
+}
+
+// ---------------------------------------------------------------------------
 // servidor: dist/ + API falsa, na mesma origem
 // ---------------------------------------------------------------------------
 
@@ -176,6 +226,12 @@ function sobeServidor(modo) {
   const servidor = createServer((req, res) => {
     // só o caminho importa; a base existe para o URL() ter o que analisar
     const url = new URL(req.url, 'http://servidor.local');
+
+    if (url.pathname === CAMINHO_ESPIA) {
+      res.writeHead(200, { 'Content-Type': TIPOS['.js'], ...CABECALHOS_DA_PAGES });
+      res.end(ESPIA);
+      return;
+    }
 
     if (url.pathname.startsWith('/api/')) {
       chamadas.push(url.pathname);
@@ -223,8 +279,12 @@ function sobeServidor(modo) {
           // lentas e fora do orçamento de tempo do navegador. Aqui a página é
           // servida com a API na MESMA ORIGEM, que é a premissa deste gate.
           if (extname(caminho) === '.html') {
+            // o espião entra logo no <head>: script clássico executa na hora,
+            // e os scripts do Astro são módulos (adiados). Assim `window.posthog`
+            // já existe quando o chat chama `medir`.
             dados = Buffer.from(dados.toString('utf8')
-              .replace(/data-api="https?:\/\/[^"]*"/g, 'data-api=""'));
+              .replace(/data-api="https?:\/\/[^"]*"/g, 'data-api=""')
+              .replace('<head>', `<head><script src="${CAMINHO_ESPIA}"></script>`));
           }
           // Os cabeçalhos de segurança que a Pages aplicaria (dist/_headers,
           // inclusive a CSP com os hashes dos scripts inline) valem aqui
@@ -421,6 +481,40 @@ try {
     exige(c, /aria-label="Copiar link"/.test(dom), 'não há botão de copiar link');
     exige(c, !/Copiar permalink/.test(dom),
       'o botão ainda se chama "Copiar permalink" — o link agora é uma rota, não uma carga');
+    // A MEDIÇÃO, no bundle publicado: o funil inteiro de um turno, com os
+    // números que o painel vai somar — e sem nada que se pareça com prosa.
+    const eventos = eventosDoDom(dom);
+    const nomes = eventos.map((e) => e.evento);
+    exige(c, nomes.includes('pergunta_enviada'),
+      `o bundle não mediu pergunta_enviada (mediu: ${nomes.join(', ') || 'nada'})`);
+    exige(c, nomes.includes('resposta_primeiro_texto'),
+      'o bundle não mediu o tempo até o primeiro texto do stream');
+    exige(c, nomes.includes('resposta_recebida'),
+      'o bundle não mediu resposta_recebida');
+    const enviada = evento(eventos, 'pergunta_enviada')?.props ?? {};
+    exige(c, enviada.cargo === 'presidente' && enviada.pagina === 'home',
+      `o contexto da página não acompanhou o evento: ${JSON.stringify(enviada)}`);
+    exige(c, enviada.turno === 1 && enviada.origem === 'url'
+      && enviada.tamanho === 'curta',
+      `pergunta_enviada saiu com o conteúdo errado: ${JSON.stringify(enviada)}`);
+    const recebida = evento(eventos, 'resposta_recebida')?.props ?? {};
+    exige(c, recebida.fontes === 2 && recebida.sem_fontes === false
+      && recebida.via_fallback === false,
+      `resposta_recebida saiu com o conteúdo errado: ${JSON.stringify(recebida)}`);
+    // a fixture é uma PRÉVIA (release_id null): a dimensão tem de FALTAR, não
+    // aparecer como "null" — dimensão vazia no painel vira release fantasma
+    exige(c, !('release_id' in recebida),
+      'release_id nulo virou dimensão em vez de sumir');
+    exige(c, typeof recebida.ms === 'number' && recebida.ms >= 0,
+      'resposta_recebida saiu sem o tempo total');
+    // a promessa de /privacidade, conferida no navegador e não no papel:
+    // nenhum valor medido é prosa, e a pergunta não vaza por nenhum caminho
+    const valores = eventos.flatMap((e) => Object.values(e.props ?? {}));
+    exige(c, valores.every((v) => typeof v !== 'string' || !/\s/.test(v)),
+      `um valor com espaço chegou à medição: ${JSON.stringify(valores)}`);
+    exige(c, !JSON.stringify(eventos).includes('previdência'),
+      'o texto da pergunta chegou à medição');
+
     const zap = decodeURIComponent(dom.match(/href="(https:\/\/wa\.me\/\?text=[^"]+)"/)?.[1] ?? '');
     exige(c, zap.includes(`/resposta/${ID_PUBLICO}`),
       `a mensagem do WhatsApp não leva a URL pública da resposta: ${zap.slice(0, 400)}`);
@@ -538,6 +632,7 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (navegador): ${navegador} renderizou a resposta do bundle publicado, `
+  + 'mediu o funil do turno sem deixar prosa passar, '
   + `compartilhou por /resposta/${ID_PUBLICO} sem emitir fragmento novo, recusou `
   + 'javascript:/HTML injetado, reabriu o permalink legado sem rede, recusou permalink '
   + 'forjado (endereço executável e release "oficial"), disse a indisponibilidade do link '
