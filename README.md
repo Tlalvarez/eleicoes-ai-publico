@@ -13,10 +13,11 @@ feito. O canal de contato e de retirada de respostas está em
 
 ## O que o site é hoje
 
-- **Um chat com o acervo.** A home e as páginas por cargo (Presidente e Governador, por UF)
-  são a mesma conversa com escopo diferente. A resposta é gerada por IA a partir dos trechos
-  recuperados para a pergunta, com as fontes citadas. As seções Senador e Deputado federal
-  estão suspensas até a coleta ficar completa.
+- **Um chat com o acervo.** A home e as páginas por cargo (Presidente, Governador e Senador,
+  por UF) são a mesma conversa com escopo diferente. A resposta é gerada por IA a partir dos
+  trechos recuperados para a pergunta, com as fontes citadas. Deputado federal está fora do ar
+  por volume: 7.772 candidaturas e material próprio de cerca de 820, porque a maioria não
+  declarou site ao TSE — o cargo pede outra forma de reunir e apresentar o material.
 - **Um acervo de evidências por candidato**, coletado por um harness privado e publicado como
   índice (`data/acervo/indice.json`), que o gate de catálogo confere contra o canônico. As páginas
   navegáveis do acervo, o hub por candidato e as menções saíram do build em 05/09/2026
@@ -26,6 +27,15 @@ feito. O canal de contato e de retirada de respostas está em
   no rodapé. O responsável editorial pelo site e pelas decisões é identificado em `/sobre`.
 
 O que o site **não** é: não recomenda voto, não ranqueia candidatos, não é checagem de fatos.
+
+## Como o material é reunido
+
+A coleta alcança os endereços que os candidatos declararam ao TSE — sites, contas próprias e
+canais de vídeo. Muitos desses provedores recusam acesso automatizado; a coleta passa pelo
+[NativePort](https://nativeport.ai), gateway que dá acesso a eles. Sem ele, boa parte do
+material declarado ficaria fora do alcance. As respostas são escritas pelo Claude Opus 5, da
+Anthropic, a partir dos trechos recuperados para cada pergunta. O detalhamento está na
+[metodologia](https://eleicoes.ai/metodologia).
 
 ## O que está aqui
 
