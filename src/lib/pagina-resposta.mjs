@@ -266,6 +266,16 @@ function itemDeFonte(cit) {
  * `id` é o identificador JÁ VALIDADO da rota, e não o que veio no JSON: o
  * endereço canônico da página não pode ser escolhido pelo conteúdo dela.
  */
+/**
+ * A resposta é uma NÃO-LOCALIZAÇÃO declarada? Mesmo critério do Chat.astro —
+ * as duas superfícies precisam concordar, senão o leitor vê o aviso na página
+ * e não no chat (ou o contrário) para a mesma resposta.
+ */
+function ehNaoLocalizacao(resultado) {
+  const t = String(resultado?.texto ?? '').toLowerCase();
+  return /n[ãa]o encontrei|nenhum(a)? (dos )?(documento|trecho|fonte|material)/.test(t);
+}
+
 export function paginaResposta(dados, { origem = ORIGEM_CANONICA, id } = {}) {
   const bruto = dados && typeof dados === 'object' ? dados : {};
   const resultado = normalizaResposta(bruto.resposta);
@@ -304,8 +314,12 @@ export function paginaResposta(dados, { origem = ORIGEM_CANONICA, id } = {}) {
 <h2>Fontes citadas (${resultado.citacoes.length})</h2>
 <ol>${resultado.citacoes.map(itemDeFonte).join('')}</ol>
 </section>`
-    : `<p class="aviso-turno">Esta resposta não trouxe nenhuma fonte citada. Sem citação não há
-evidência verificável: trate o texto como indisponibilidade, não como registro.</p>`;
+    : ehNaoLocalizacao(resultado)
+      // resposta cuja conclusão É a ausência não deve o aviso: não há
+      // afirmação sobre ninguém para conferir, e o aviso vira repetição
+      ? ''
+      : `<p class="aviso-turno">Esta resposta afirma coisas sem citar nenhuma fonte.
+Sem fonte não há como conferir: leia com desconfiança.</p>`;
 
   const data = typeof bruto.criado_em === 'string' && RE_DATA.test(bruto.criado_em)
     ? `<p>Resposta gerada em <time datetime="${escapaAtributo(bruto.criado_em)}">`

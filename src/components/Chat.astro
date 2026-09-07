@@ -549,6 +549,16 @@ const {
         : `${nomes.slice(0, -1).join(', ')} e ${nomes.at(-1)}`;
     }
 
+    /**
+     * A resposta é uma NÃO-LOCALIZAÇÃO declarada ("não encontrei nada sobre
+     * isso")? Isso não é o mesmo que uma resposta sem fonte: é uma resposta
+     * cuja conclusão É a ausência, e para a qual não se espera citação.
+     */
+    function ehNaoLocalizacao(resultado) {
+      const t = String(resultado?.texto ?? '').toLowerCase();
+      return /n[ãa]o encontrei|nenhum(a)? (dos )?(documento|trecho|fonte|material)/.test(t);
+    }
+
     function montaCobertura(candidatos) {
       const todos = (candidatos ?? []).filter((c) => c && c.nome);
       if (todos.length < 2) return null;
@@ -559,12 +569,24 @@ const {
 
       const sec = el('section', 'cobertura');
       const alvo = escopo || 'candidatos a presidente';
+      // `com_material` quer dizer "tem material no acervo E a busca o alcançou"
+      // — NUNCA "tem proposta sobre o tema perguntado". A frase antiga dizia
+      // "Encontramos material sobre este tema de N" e era FALSA sempre que a
+      // resposta não achava nada: em 4 das 80 respostas com este bloco, ela
+      // contradizia o próprio texto acima dela ("não encontrei material sobre
+      // pichação" e, logo abaixo, "encontramos material sobre este tema de 5").
+      // O bloco só pode afirmar o que o dado sabe: quantos têm material.
+      const comAcervo = comTema.length + semTema.length;
       const partes = [`${todos.length} ${escopo ? `candidatos — ${alvo}` : alvo}.`];
-      if (comTema.length) partes.push(`Encontramos material sobre este tema de ${comTema.length}.`);
+      if (comAcervo) {
+        partes.push(comAcervo === 1
+          ? 'Um tem material no acervo.'
+          : `${comAcervo} têm material no acervo.`);
+      }
       if (semTema.length) {
         partes.push(semTema.length === 1
-          ? 'Outro tem material no acervo, mas nada sobre isso.'
-          : `Outros ${semTema.length} têm material no acervo, mas nada sobre isso.`);
+          ? 'De um deles, nada que responda a esta pergunta.'
+          : `De ${semTema.length} deles, nada que responda a esta pergunta.`);
       }
       sec.append(el('p', 'cobertura-resumo', partes.join(' ')));
 
@@ -870,10 +892,16 @@ const {
         detalhes.append(ol);
         sec.append(detalhes);
         artigo.append(sec);
-      } else {
+      } else if (!ehNaoLocalizacao(resultado)) {
+        // O aviso existe para quando a resposta AFIRMA algo sem citar fonte.
+        // Numa resposta que diz "não encontrei nada", não há afirmação sobre
+        // ninguém e não se espera citação — avisar ali é a quarta repetição da
+        // mesma informação, e treina o leitor a ignorar o aviso justamente
+        // quando ele importa. Texto sem jargão: "indisponibilidade, não
+        // registro" é vocabulário da nossa metodologia, não do leitor.
         artigo.append(el('p', 'aviso-turno',
-          'Esta resposta não trouxe nenhuma fonte citada. Sem citação não há evidência '
-          + 'verificável: trate o texto como indisponibilidade, não como registro.'));
+          'Esta resposta afirma coisas sem citar nenhuma fonte. Sem fonte não há '
+          + 'como conferir: leia com desconfiança.'));
       }
 
       const est = estadoDaResposta(resultado);
