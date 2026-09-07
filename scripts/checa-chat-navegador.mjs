@@ -273,6 +273,11 @@ function sobeServidor(modo) {
       let corpo = '';
       req.on('data', (c) => { corpo += c; });
       req.on('end', () => {
+        if (modo === 'erro' && url.pathname.startsWith('/api/conversa')) {
+          res.writeHead(500, { 'Content-Type': TIPOS['.json'] });
+          res.end('{"erro":"pane"}');
+          return;
+        }
         const semConversa = modo === 'fallback'
           && (url.pathname === '/api/conversa' || url.pathname === '/api/conversa/stream');
         if (semConversa) {
@@ -685,6 +690,34 @@ try {
       'a conversa de governador se anunciou como conversa de presidente');
     exige(c, /Não informaram site nem rede social ao TSE: Terceira Candidata/.test(dom),
       'a CAUSA da lacuna não chegou a quem abriu o link');
+  });
+
+  // ------------------------- 8: a pergunta que ficou sem resposta é apagável
+  //
+  // Ela ficava na tela sem explicação (o erro mora no #estado, que a pergunta
+  // seguinte apaga) e sem como sair, porque o botão de apagar só nascia junto
+  // com a resposta. Três perguntas seguidas sem resposta viravam três blocos
+  // mudos e permanentes — foi o que o Thiago viu no celular.
+  await comServidor('erro', async (chamadas, base) => {
+    const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('pergunta que falha')}`);
+    const c = 'sem resposta';
+
+    exige(c, dom.includes('pergunta que falha'), 'a pergunta sumiu da tela');
+    exige(c, /class="turno turno-pergunta turno-sem-resposta"/.test(dom),
+      'a pergunta sem resposta não foi marcada');
+    exige(c, /<p class="sem-resposta">Sem resposta — o serviço não respondeu\.<\/p>/.test(dom),
+      'a pergunta sem resposta não diz por quê');
+    exige(c, /<button class="apagar-turno"[^>]*>Apagar<\/button>/.test(dom),
+      'a pergunta sem resposta ficou sem botão de apagar');
+  });
+
+  // e o caminho normal continua com UM botão só, não dois
+  await comServidor('conversa', async (chamadas, base) => {
+    const dom = await dumpDom(navegador, flags, `${base}/?q=${encodeURIComponent('e sobre previdência?')}`);
+    exige('sem resposta', (dom.match(/class="apagar-turno"/g) ?? []).length === 1,
+      'a resposta respondida deveria ter exatamente um botão de apagar');
+    exige('sem resposta', !dom.includes('Sem resposta —'),
+      'a pergunta respondida foi marcada como sem resposta');
   });
 
 } catch (e) {

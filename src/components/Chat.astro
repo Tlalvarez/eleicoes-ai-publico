@@ -145,6 +145,16 @@ const {
       font: inherit; font-size: .8rem; cursor: pointer;
     }
     .apagar-turno:hover { border-color: var(--atencao); color: var(--atencao); }
+    /* a pergunta que ficou sem resposta: a marca é discreta e PERMANENTE — o
+       erro do #estado some na pergunta seguinte, esta linha fica */
+    .sem-resposta {
+      margin: .35rem 0 0;
+      padding-left: .9rem;
+      color: var(--tinta-suave);
+      font-size: .85rem;
+      font-style: italic;
+    }
+    .turno-sem-resposta { opacity: .82; }
     .turno-pergunta .texto-pergunta { padding-right: 5.5rem; }
     .turno-pergunta .marca-pergunta {
       font-size: .75rem; text-transform: uppercase; letter-spacing: .12em;
@@ -406,6 +416,55 @@ const {
         }
       }
       if (!conversa.children.length) reinicia();
+    }
+
+    /**
+     * O botão de apagar, na PERGUNTA — é dela que a pessoa se arrepende.
+     *
+     * `aoApagar` decide o que mais some junto: o par inteiro, quando houve
+     * resposta; só a pergunta, quando ela ficou sem uma.
+     */
+    function botaoApagar(liPergunta, rotulo, aoApagar) {
+      if (liPergunta.querySelector('.apagar-turno')) return;
+      const apagar = el('button', 'apagar-turno', 'Apagar');
+      apagar.type = 'button';
+      apagar.title = rotulo;
+      apagar.setAttribute('aria-label', rotulo);
+      apagar.addEventListener('click', () => { medir('turno_apagado'); aoApagar(); });
+      liPergunta.append(apagar);
+    }
+
+    /** Frase curta que SOBREVIVE na pergunta — a do `#estado` é passageira. */
+    const SEM_RESPOSTA = new Map([
+      ['rede', 'a conexão falhou'],
+      ['servidor', 'o serviço não respondeu'],
+      ['muitas-perguntas', 'muitas perguntas ao mesmo tempo'],
+      ['sem-followup', 'faltou dizer o assunto'],
+      ['resposta-vazia', 'a resposta veio vazia'],
+      ['resposta-invalida', 'a resposta veio num formato ilegível'],
+      ['sem-servico', 'o serviço não está disponível'],
+      ['cancelado', 'cancelada por você'],
+    ]);
+
+    /**
+     * A pergunta que ficou sem resposta.
+     *
+     * Ela ficava na tela sem nada: sem explicação (o erro mora no `#estado`,
+     * que a pergunta seguinte apaga) e sem como sair, porque o botão de apagar
+     * só nascia junto com a resposta. Três perguntas seguidas sem resposta
+     * viravam três blocos mudos e permanentes.
+     *
+     * Apagar aqui é só DOM: turno sem resposta nunca entrou no armazém.
+     */
+    function marcaSemResposta(liPergunta, codigo) {
+      if (!liPergunta || liPergunta.querySelector('.sem-resposta')) return;
+      liPergunta.classList.add('turno-sem-resposta');
+      liPergunta.append(el('p', 'sem-resposta',
+        `Sem resposta — ${SEM_RESPOSTA.get(codigo) ?? 'não consegui responder'}.`));
+      botaoApagar(liPergunta, 'Apagar esta pergunta sem resposta', () => {
+        liPergunta.remove();
+        if (!conversa.children.length) reinicia();
+      });
     }
 
     function esquece() {
@@ -906,18 +965,17 @@ const {
       // clique, contando as perguntas antes desta, para continuar certa depois
       // de outras exclusões.
       const liPergunta = li.previousElementSibling;
-      if (liPergunta?.classList.contains('turno-pergunta')
-          && !liPergunta.querySelector('.apagar-turno')) {
-        const apagar = el('button', 'apagar-turno', 'Apagar');
-        apagar.type = 'button';
-        apagar.title = 'Apagar esta pergunta e a resposta dela deste navegador';
-        apagar.setAttribute('aria-label', 'Apagar esta pergunta e a resposta dela');
-        apagar.addEventListener('click', () => {
-          const perguntas = [...conversa.querySelectorAll('.turno-pergunta')];
-          medir('turno_apagado');
-          apagaUmTurno(liPergunta, li, perguntas.indexOf(liPergunta));
-        });
-        liPergunta.append(apagar);
+      if (liPergunta?.classList.contains('turno-pergunta')) {
+        // a pergunta pode ter sido marcada como sem resposta numa tentativa
+        // anterior e respondida agora: a marca e o botão velho saem
+        liPergunta.classList.remove('turno-sem-resposta');
+        liPergunta.querySelector('.sem-resposta')?.remove();
+        liPergunta.querySelector('.apagar-turno')?.remove();
+        botaoApagar(liPergunta, 'Apagar esta pergunta e a resposta dela deste navegador',
+          () => {
+            const perguntas = [...conversa.querySelectorAll('.turno-pergunta')];
+            apagaUmTurno(liPergunta, li, perguntas.indexOf(liPergunta));
+          });
       }
       return li;
     }
@@ -1102,8 +1160,10 @@ const {
         rascunhoNaTela = false;
       };
 
+      // a pergunta desta tentativa, para poder marcá-la se ela ficar sem resposta
+      let liPergunta = null;
       const r = await sessao.envia(conteudo, {
-        aoPerguntar: adicionaPergunta,
+        aoPerguntar: (texto) => { liPergunta = adicionaPergunta(texto); return liPergunta; },
         aoEtapa: (m) => mostraEstado(m, { cancelavel: true }),
         aoTexto,
       });
@@ -1119,11 +1179,13 @@ const {
       if (r.estado === 'cancelado') {
         medir('pergunta_cancelada', { turno: turnoAtual, ms });
         escondeEstado();
+        marcaSemResposta(liPergunta, 'cancelado');
       } else if (r.estado === 'erro') {
         medir('resposta_falhou', {
           turno: turnoAtual, ms, codigo: r.erro?.codigo || 'desconhecido',
         });
         mostraErro(r.erro, r.perguntaRecusada);
+        marcaSemResposta(liPergunta, r.erro?.codigo);
       } else if (r.estado === 'ok') {
         // O desfecho do funil, em estrutura: quantas fontes, quantos
         // candidatos entraram no escopo e de quantos NÃO havia material. É
