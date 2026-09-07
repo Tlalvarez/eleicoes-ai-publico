@@ -144,9 +144,11 @@ test('og:url é o endereço público, sem .html (é o destino que o WhatsApp usa
 
 test('a resposta mostra quem ficou de fora e a causa (a seção Lacunas é removida da tela)', async () => {
   const chat = await le('components/Chat.astro');
-  // o bloco é montado a partir de candidatos[] do payload, não da prosa
-  assert.match(chat, /function montaCobertura\(candidatos\)/);
-  assert.match(chat, /const cobertura = montaCobertura\(resultado\.candidatos\);/);
+  // o bloco é montado a partir de candidatos[] do payload, não da prosa.
+  // A DECISÃO do que ele afirma mora em src/lib/cobertura.mjs desde 07/09/2026
+  // (com teste próprio em test/cobertura.test.mjs); aqui fica o desenho.
+  assert.match(chat, /import \{ cobertura, ehNaoLocalizacao \} from '\.\.\/lib\/cobertura\.mjs'/);
+  assert.match(chat, /candidatos: resultado\.candidatos/);
   // as quatro causas do vocabulário fechado, com a frase de leitor de cada uma
   for (const [causa, frase] of [
     ['sem_fonte_declarada', 'Não informaram site nem rede social ao TSE'],
@@ -159,8 +161,9 @@ test('a resposta mostra quem ficou de fora e a causa (a seção Lacunas é remov
   }
   // nome de registro vem em caixa alta e não pode ir assim para a tela
   assert.match(chat, /function nomeLegivel\(nome\)/);
-  // o bloco só aparece quando há alguém de fora
-  assert.match(chat, /if \(!semTema\.length && !semNada\.length\) return null;/);
+  // o bloco só aparece quando há alguém de fora — regra em cobertura.mjs
+  const lib = await le('lib/cobertura.mjs');
+  assert.match(lib, /if \(!semNaConsulta\.length && !semNoAcervo\.length\) return null;/);
 });
 
 test('metodologia diz como o site foi feito, com o histórico do código e o gateway da coleta', async () => {

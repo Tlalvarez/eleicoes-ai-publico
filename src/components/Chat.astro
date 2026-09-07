@@ -313,6 +313,7 @@ const {
     } from '../lib/conversa-guardada.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
     import { cargoPorSlug, ufPorSigla, rotuloEscopo, caminhoUf } from '../lib/cargos.mjs';
+    import { cobertura, ehNaoLocalizacao } from '../lib/cobertura.mjs';
     import {
       contextoDoCaminho, defineContexto, faixaDeTamanho, medir,
     } from '../lib/medicao.mjs';
@@ -555,65 +556,31 @@ const {
         : `${nomes.slice(0, -1).join(', ')} e ${nomes.at(-1)}`;
     }
 
-    /**
-     * A resposta é uma NÃO-LOCALIZAÇÃO declarada ("não encontrei nada sobre
-     * isso")? Isso não é o mesmo que uma resposta sem fonte: é uma resposta
-     * cuja conclusão É a ausência, e para a qual não se espera citação.
-     */
-    function ehNaoLocalizacao(resultado) {
-      const t = String(resultado?.texto ?? '').toLowerCase();
-      return /n[ãa]o encontrei|nenhum(a)? (dos )?(documento|trecho|fonte|material)/.test(t);
-    }
-
-    function montaCobertura(candidatos) {
-      const todos = (candidatos ?? []).filter((c) => c && c.nome);
-      if (todos.length < 2) return null;
-      const comTema = todos.filter((c) => c.situacao === 'com_material');
-      const semTema = todos.filter((c) => c.situacao === 'sem_material_na_consulta');
-      const semNada = todos.filter((c) => c.situacao === 'sem_material_no_acervo');
-      if (!semTema.length && !semNada.length) return null;
-
-      const sec = el('section', 'cobertura');
-      const alvo = escopo || 'candidatos a presidente';
-      // `com_material` quer dizer "tem material no acervo E a busca o alcançou"
-      // — NUNCA "tem proposta sobre o tema perguntado". A frase antiga dizia
-      // "Encontramos material sobre este tema de N" e era FALSA sempre que a
-      // resposta não achava nada: em 4 das 80 respostas com este bloco, ela
-      // contradizia o próprio texto acima dela ("não encontrei material sobre
-      // pichação" e, logo abaixo, "encontramos material sobre este tema de 5").
-      // O bloco só pode afirmar o que o dado sabe: quantos têm material.
-      const comAcervo = comTema.length + semTema.length;
-      const partes = [`${todos.length} ${escopo ? `candidatos — ${alvo}` : alvo}.`];
-      if (comAcervo) {
-        partes.push(comAcervo === 1
-          ? 'Um tem material no acervo.'
-          : `${comAcervo} têm material no acervo.`);
-      }
-      if (semTema.length) {
-        partes.push(semTema.length === 1
-          ? 'De um deles, nada que responda a esta pergunta.'
-          : `De ${semTema.length} deles, nada que responda a esta pergunta.`);
-      }
-      sec.append(el('p', 'cobertura-resumo', partes.join(' ')));
-
-      // uma linha por CAUSA, para o leitor saber de quem é a lacuna
-      // o id do TSE fecha o slug ("governador-sp-policial-edjane-250002548080")
+    function montaCobertura(resultado) {
+      // o mapa de causas da PÁGINA é a autoridade; o payload é o reserva (a
+      // coluna da release já disse que uma candidata declarou ao TSE um canal
+      // que nós é que anexamos). O id do TSE fecha o slug.
       const CAUSAS_DA_PAGINA = (() => {
         try { return JSON.parse(chat.dataset.causas || '{}'); } catch { return {}; }
       })();
       const causaDe = (c) => {
         const id = String(c.slug ?? '').match(/(\d{6,})$/)?.[1];
-        return (id && CAUSAS_DA_PAGINA[id]) || c.lacuna_causa;
+        const causa = (id && CAUSAS_DA_PAGINA[id]) || c.lacuna_causa;
+        return CAUSA.has(causa) ? causa : 'sem_material_coletado';
       };
-      const porCausa = new Map();
-      for (const c of semNada) {
-        const causa = causaDe(c);
-        const chave = CAUSA.has(causa) ? causa : 'sem_material_coletado';
-        if (!porCausa.has(chave)) porCausa.set(chave, []);
-        porCausa.get(chave).push(nomeLegivel(c.nome));
-      }
-      for (const [chave, nomes] of porCausa) {
-        sec.append(el('p', 'cobertura-lacuna', `${CAUSA.get(chave)}: ${listaDeNomes(nomes)}.`));
+      const dados = cobertura({
+        candidatos: resultado.candidatos,
+        texto: resultado.texto,
+        alvo: escopo ? `candidatos — ${escopo}` : 'candidatos a presidente',
+        causaDe,
+      });
+      if (!dados) return null;
+
+      const sec = el('section', 'cobertura');
+      sec.append(el('p', 'cobertura-resumo', dados.resumo));
+      for (const { causa, nomes } of dados.lacunas) {
+        sec.append(el('p', 'cobertura-lacuna',
+          `${CAUSA.get(causa)}: ${listaDeNomes(nomes.map(nomeLegivel))}.`));
       }
       return sec;
     }
@@ -875,8 +842,8 @@ const {
 
       artigo.append(montaCorpo(resultado.texto, indice, resultado.citacoes));
 
-      const cobertura = montaCobertura(resultado.candidatos);
-      if (cobertura) artigo.append(cobertura);
+      const blocoCobertura = montaCobertura(resultado);
+      if (blocoCobertura) artigo.append(blocoCobertura);
 
       if (resultado.citacoes.length) {
         const sec = el('section', 'fontes');
@@ -898,7 +865,7 @@ const {
         detalhes.append(ol);
         sec.append(detalhes);
         artigo.append(sec);
-      } else if (!ehNaoLocalizacao(resultado)) {
+      } else if (!ehNaoLocalizacao(resultado.texto)) {
         // O aviso existe para quando a resposta AFIRMA algo sem citar fonte.
         // Numa resposta que diz "não encontrei nada", não há afirmação sobre
         // ninguém e não se espera citação — avisar ali é a quarta repetição da
