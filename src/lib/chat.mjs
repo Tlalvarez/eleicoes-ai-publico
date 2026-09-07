@@ -378,6 +378,14 @@ export async function leEventos(resposta, { aoEtapa, aoTexto } = {}) {
 
 /** O que fazer com uma resposta que não é 2xx: o fallback, ou o erro tipado. */
 async function fallbackOuErro(conversa, mensagens, base, buscar) {
+  // O teto do serviço (`pesquisa/orcamento.py`): recusa TEMPORÁRIA, e é isso
+  // que a pessoa precisa ouvir. Sem este ramo ela lia "o serviço respondeu com
+  // erro (429)" — que soa como defeito e não diz o que fazer.
+  if (conversa.status === 429) {
+    throw new ErroConversa('muitas-perguntas',
+      'Estamos recebendo muitas perguntas agora. Espere alguns instantes e '
+      + 'envie de novo — o texto que você escreveu continua aqui.');
+  }
   if (!(await respostaPermiteFallback(conversa))) {
     throw new ErroConversa('servidor',
       `O serviço de evidências respondeu com erro (${conversa.status}). `

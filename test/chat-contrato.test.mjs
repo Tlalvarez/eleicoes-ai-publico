@@ -549,3 +549,16 @@ test('escopo ausente ou sem cargo não vira escopo', () => {
   assert.equal(normalizaResposta({ texto: 'x', escopo: { uf: 'SP' } }).escopo, null);
   assert.equal(normalizaResposta({ texto: 'x', escopo: 'governador' }).escopo, null);
 });
+
+test('429 vira recusa temporária explicada, não "erro (429)"', async () => {
+  const buscar = async () => new Response(
+    JSON.stringify({ codigo: 'muitas_perguntas' }),
+    { status: 429, headers: { 'Content-Type': 'application/json' } });
+
+  const erro = await pergunta([{ papel: 'user', texto: 'oi' }], { apiBase: '', buscar })
+    .then(() => null, (e) => e);
+
+  assert.equal(erro.codigo, 'muitas-perguntas');
+  assert.match(erro.message, /muitas perguntas/i);
+  assert.doesNotMatch(erro.message, /\(429\)/);
+});
