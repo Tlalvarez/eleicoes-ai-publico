@@ -12,7 +12,7 @@
     "test:functions": "wrangler pages functions build --outdir .wrangler/functions-test",
     "deploy:pages": "wrangler pages deploy dist --project-name=eleicoes-ai --branch=main --commit-dirty=true",
     "test:unit": "npm run test:home-fonte && npm run test:rotas && npm run test:catalogo && npm run test:medicao",
-    "test:dist": "npm run test:home-dist && npm run test:render-seguro && npm run test:previa && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:navegador",
+    "test:dist": "npm run test:home-dist && npm run test:cargos-dist && npm run test:render-seguro && npm run test:previa && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:navegador",
     "test:integracao": "npm run test",
     "test:home-fonte": "node scripts/checa-home-fonte.mjs",
     "test:home-dist": "node scripts/checa-home-dist.mjs",
@@ -23,7 +23,8 @@
     "test:rotas": "node --test test/*.test.mjs",
     "test:acessibilidade": "node scripts/checa-acessibilidade.mjs",
     "test:navegador": "node scripts/checa-chat-navegador.mjs",
-    "test:cabecalhos": "node scripts/checa-cabecalhos-dist.mjs"
+    "test:cabecalhos": "node scripts/checa-cabecalhos-dist.mjs",
+    "test:cargos-dist": "node scripts/checa-cargos-dist.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"

@@ -42,6 +42,7 @@ export function criaSessao({
   // o escopo da página ({cargo, uf?}): vai em toda pergunta desta sessão
   escopo = null,
 } = {}) {
+  let escopoVigente = escopo;
   const historico = [];
   let ultimoId = null;
   let epoca = 0;
@@ -77,6 +78,20 @@ export function criaSessao({
 
     /** Cancela o pedido em voo mantendo a conversa como está. */
     cancela() { encerraVoo('cancelado'); },
+
+    /** O escopo que vai na próxima pergunta ({cargo, uf?}) ou `null`. */
+    get escopo() { return escopoVigente; },
+
+    /**
+     * Troca o escopo desta sessão.
+     *
+     * Existe por causa de `/resposta/<id>`: essa rota serve o app da HOME, e
+     * só a resposta carregada sabe de que cargo e UF a conversa é. Sem trocar,
+     * continuar uma conversa sobre governador de SP mandaria a pergunta
+     * seguinte com o escopo de presidente — o histórico na tela de um
+     * conjunto de candidatos e a busca noutro.
+     */
+    defineEscopo(novo) { escopoVigente = novo ?? null; },
 
     /**
      * Retoma uma conversa a partir de uma resposta GUARDADA pelo serviço
@@ -164,7 +179,7 @@ export function criaSessao({
         const resultado = await perguntar(historico.slice(), {
           apiBase,
           respostaId: ultimoId,
-          escopo,
+          escopo: escopoVigente,
           buscar: (url, opcoes) => buscar(url, { ...opcoes, signal: controle.signal }),
           aoEtapa: seVigente(aoEtapa),
           aoTexto: seVigente(aoTexto),

@@ -312,6 +312,7 @@ const {
       le as leGuardada, turnoGuardavel,
     } from '../lib/conversa-guardada.mjs';
     import { estadoDaResposta } from '../lib/release.mjs';
+    import { cargoPorSlug, ufPorSigla, rotuloEscopo, caminhoUf } from '../lib/cargos.mjs';
     import {
       contextoDoCaminho, defineContexto, faixaDeTamanho, medir,
     } from '../lib/medicao.mjs';
@@ -344,11 +345,16 @@ const {
       perguntar: perguntaAoVivo,
       escopo: { cargo: chat.dataset.cargo || 'presidente', uf: chat.dataset.uf || '' },
     });
-    // escopo da página (cargo/UF): vai na frente de cada pergunta, à vista.
-    // O serviço não filtra por cargo nem por UF; o que a pessoa vê enviado é
+    // Escopo da página (cargo/UF): vai na frente de cada pergunta, à vista —
+    // o serviço filtra por cargo e UF, e o que a pessoa vê enviado é
     // exatamente o que o serviço recebe.
-    const escopo = chat.dataset.escopo || '';
-    const paginaBase = chat.dataset.pagina || '/';
+    //
+    // Não são constantes por causa de `/resposta/<id>`: essa rota serve o app
+    // da HOME, então o HTML chega dizendo "presidente" mesmo quando a resposta
+    // é de governador de SP. Quem sabe o escopo é a resposta guardada, e ela
+    // só chega depois — ver `adotaEscopo`.
+    let escopo = chat.dataset.escopo || '';
+    let paginaBase = chat.dataset.pagina || '/';
     let turnos = 0;
 
     // A medição desta página. O cargo e a UF vêm do CHAT, não do endereço: em
@@ -995,6 +1001,40 @@ const {
     }
 
     /**
+     * A página assume o escopo da resposta que ela carregou.
+     *
+     * `/resposta/<id>` serve o app da home, e a home é a conversa sobre
+     * presidente. Uma resposta de governador de São Paulo aberta ali chegava
+     * sem rótulo, sem o bloco de cobertura no recorte certo, e a pergunta
+     * seguinte saía com `cargo: presidente` — histórico de um conjunto de
+     * candidatos na tela, busca noutro. O escopo vem no registro público da
+     * resposta (`respostas.CAMPOS_PUBLICOS`); aqui ele vira o rótulo visível,
+     * a rota desta conversa e o escopo do próximo turno.
+     *
+     * Devolve `true` quando trocou de página — é o sinal de que o armazém a
+     * consultar é outro. Cargo ou UF que não existam no catálogo do site não
+     * mudam nada: rótulo torto é pior que rótulo ausente.
+     */
+    function adotaEscopo(doServico) {
+      const cargo = cargoPorSlug(doServico?.cargo ?? '');
+      if (!cargo) return false;
+      const uf = cargo.porUF ? ufPorSigla(doServico?.uf ?? '') : null;
+      if (cargo.porUF && !uf) return false;
+
+      const pagina = uf ? caminhoUf(cargo, uf) : cargo.href;
+      const trocou = pagina !== paginaBase;
+      escopo = cargo.porUF ? rotuloEscopo(cargo, uf) : '';
+      paginaBase = pagina;
+      sessao.defineEscopo({ cargo: cargo.slug, uf: uf ? uf.sigla : '' });
+      defineContexto({
+        cargo: cargo.slug,
+        uf: uf ? uf.sigla : '',
+        pagina: contextoDoCaminho(location.pathname).pagina,
+      });
+      return trocou;
+    }
+
+    /**
      * Redesenha a conversa guardada desta página (ver conversa-guardada.mjs)
      * e devolve ao histórico da sessão os pares que a continuam.
      */
@@ -1201,6 +1241,18 @@ const {
           if (!guardada) {
             mostraEstado('Esta resposta não foi encontrada. Faça a pergunta abaixo.', { erro: true });
             return;
+          }
+          // A resposta diz de que conversa ela é. A página assume esse escopo
+          // ANTES de desenhar — o bloco de cobertura sai com o rótulo do
+          // recorte ("7 candidatos — Governador de São Paulo") — e, se a
+          // página mudou, o armazém a consultar é OUTRO: a conversa local
+          // desta pessoa pode já ter esta resposta e os turnos seguintes.
+          if (adotaEscopo(guardada.escopo)) {
+            const local = armazem ? leGuardada(armazem, paginaBase) : null;
+            if (contemResposta(local, idPagina)) {
+              restauraConversa(local);
+              return;
+            }
           }
           nova.hidden = false;
           if (guardada.pergunta) adicionaPergunta(guardada.pergunta);

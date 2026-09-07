@@ -83,9 +83,10 @@ const CONTRACOES = {
  * "Senador pelo Rio de Janeiro", "Deputado federal pela Bahia".
  *
  * Ele vai na frente de cada pergunta enviada ao serviço de evidências, à
- * vista de quem pergunta — o serviço não tem filtro por cargo/UF, então o
- * escopo precisa estar no texto para ser considerado, e precisa estar visível
- * para não ser um acréscimo silencioso ao que a pessoa escreveu.
+ * vista de quem pergunta. O serviço FILTRA por cargo e UF (o escopo vai
+ * estruturado no corpo do pedido, ver chat.mjs); este rótulo é a mesma coisa
+ * dita ao leitor, para o recorte não ser um acréscimo silencioso ao que a
+ * pessoa escreveu.
  */
 export function rotuloEscopo(cargo, uf) {
   if (!cargo.porUF) return cargo.nome;

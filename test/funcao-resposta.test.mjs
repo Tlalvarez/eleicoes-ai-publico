@@ -40,6 +40,14 @@ function buscarFalso(modo = 'ok') {
   return fn;
 }
 
+/** O serviço devolvendo uma resposta COM escopo — a conversa de um cargo/UF. */
+function buscarComEscopo(escopo) {
+  const fn = async () => new Response(JSON.stringify({
+    resposta: { citacoes: [{ nome: 'Tarcísio' }], escopo },
+  }), { status: 200, headers: { 'Content-Type': 'application/json' } });
+  return fn;
+}
+
 function assetsFalso({ status = 200 } = {}) {
   const pedidos = [];
   return {
@@ -125,4 +133,37 @@ test('prévia: resposta que o serviço não tem (inexistente ou revogada) sai co
   const r = await trata({ url: URL_PEDIDO, id: ID, assets: assetsFalso(), buscar: buscarFalso('404'), api: 'https://api.teste' });
   assert.equal(r.status, 404);
   assert.match(await r.text(), /Resposta não encontrada/);
+});
+
+test('a página servida é a do ESCOPO da resposta, não sempre a home', async () => {
+  // Uma resposta sobre governador de São Paulo aberta na home saía sob o
+  // título "Pergunte à IA sobre os candidatos a presidente", com a grade dos
+  // 13 presidenciáveis embaixo — e a pergunta seguinte buscava entre eles.
+  const assets = assetsFalso();
+  await trata({ url: URL_PEDIDO, id: ID, assets,
+    buscar: buscarComEscopo({ cargo: 'governador', uf: 'SP' }) });
+
+  assert.deepEqual(assets.pedidos, ['https://eleicoes.ai/governador/sp']);
+});
+
+test('presidente é a home, e escopo que o site não conhece também', async () => {
+  for (const [escopo, esperado] of [
+    [{ cargo: 'presidente' }, 'https://eleicoes.ai/'],
+    // cargo fora do ar: não há página construída para ele no dist
+    [{ cargo: 'deputado-federal', uf: 'SP' }, 'https://eleicoes.ai/'],
+    [{ cargo: 'governador', uf: 'ZZ' }, 'https://eleicoes.ai/'],
+    [{ cargo: '../../etc/passwd' }, 'https://eleicoes.ai/'],
+  ]) {
+    const assets = assetsFalso();
+    await trata({ url: URL_PEDIDO, id: ID, assets, buscar: buscarComEscopo(escopo) });
+
+    assert.deepEqual(assets.pedidos, [esperado], JSON.stringify(escopo));
+  }
+});
+
+test('serviço fora do ar continua servindo a home, não uma página inexistente', async () => {
+  const assets = assetsFalso();
+  await trata({ url: URL_PEDIDO, id: ID, assets, buscar: buscarFalso('estoura') });
+
+  assert.deepEqual(assets.pedidos, ['https://eleicoes.ai/']);
 });

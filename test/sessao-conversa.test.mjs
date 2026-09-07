@@ -344,3 +344,19 @@ test('a sessão manda o escopo da página em toda pergunta', async () => {
   await sessao.envia('pergunta 2');
   assert.deepEqual(escopos, [{ cargo: 'governador', uf: 'CE' }, { cargo: 'governador', uf: 'CE' }]);
 });
+
+test('trocar o escopo da sessão muda o que vai na próxima pergunta', async () => {
+  // a página da resposta compartilhada descobre o escopo DEPOIS de criar a
+  // sessão: quem sabe de que conversa a resposta é é o registro público dela
+  const escopos = [];
+  const sessao = criaSessao({
+    escopo: { cargo: 'presidente', uf: '' },
+    perguntar: async (_m, { escopo }) => { escopos.push(escopo); return RESULTADO; },
+  });
+
+  sessao.defineEscopo({ cargo: 'governador', uf: 'SP' });
+  await sessao.envia('e sobre segurança?');
+
+  assert.deepEqual(sessao.escopo, { cargo: 'governador', uf: 'SP' });
+  assert.deepEqual(escopos, [{ cargo: 'governador', uf: 'SP' }]);
+});

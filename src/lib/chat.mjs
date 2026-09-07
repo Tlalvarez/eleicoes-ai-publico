@@ -174,6 +174,13 @@ export function normalizaResposta(bruto) {
     release_id: str(r.release_id) || null,
     release_status: str(r.release_status) || null,
     candidatos,
+    // O escopo em que a pergunta foi feita ({cargo, uf?}) — só vem de uma
+    // resposta GUARDADA. É o que permite a `/resposta/<id>` saber de que
+    // conversa ela é: essa rota serve o app da HOME, então sem este campo a
+    // página assume presidente e a pergunta seguinte troca de universo de
+    // candidatos em silêncio. Passa pela mesma normalização do envio, então
+    // cargo estranho vindo do serviço não vira escopo.
+    escopo: escopoDoContrato(r.escopo),
   };
 }
 

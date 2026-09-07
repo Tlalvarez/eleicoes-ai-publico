@@ -169,6 +169,34 @@ const RESPOSTA = {
   release_status: 'previa',
 };
 
+/**
+ * O documento de `GET /api/respostas/<id>` — o registro público da resposta.
+ *
+ * O escopo e a cobertura vivem AQUI: é por eles que a página de uma resposta
+ * compartilhada sabe de que conversa ela é. Sem eles, `/resposta/<id>` (que é
+ * servida com o app da HOME) mostra a resposta de governador de São Paulo com
+ * o rótulo de presidente e sem a causa da lacuna.
+ */
+const GUARDADA = {
+  compartilhamento_id: ID_PUBLICO,
+  criado_em: '2026-09-06T12:00:00Z',
+  pergunta: 'o que propõem para a segurança pública?',
+  schema_version: 1,
+  resposta: {
+    ...RESPOSTA,
+    escopo: { cargo: 'governador', uf: 'SP' },
+    candidatos: [
+      { slug: 'governador-sp-primeiro-250000000001', nome: 'PRIMEIRO',
+        elegivel: true, situacao: 'com_material', lacuna_causa: null },
+      { slug: 'governador-sp-segundo-250000000002', nome: 'SEGUNDO',
+        elegivel: true, situacao: 'com_material', lacuna_causa: null },
+      { slug: 'governador-sp-terceira-250000000003', nome: 'TERCEIRA CANDIDATA',
+        elegivel: false, situacao: 'sem_material_no_acervo',
+        lacuna_causa: 'sem_fonte_declarada' },
+    ],
+  },
+};
+
 // ---------------------------------------------------------------------------
 // o espião da medição
 // ---------------------------------------------------------------------------
@@ -230,6 +258,13 @@ function sobeServidor(modo) {
     if (url.pathname === CAMINHO_ESPIA) {
       res.writeHead(200, { 'Content-Type': TIPOS['.js'], ...CABECALHOS_DA_PAGES });
       res.end(ESPIA);
+      return;
+    }
+
+    if (url.pathname.startsWith('/api/respostas/')) {
+      chamadas.push(url.pathname);
+      res.writeHead(200, { 'Content-Type': TIPOS['.json'] });
+      res.end(JSON.stringify(GUARDADA));
       return;
     }
 
@@ -622,6 +657,36 @@ try {
     exige(c, /<h3[^>]*>O que está registrado<\/h3>/.test(dom),
       'a resposta do fallback não foi renderizada');
   });
+  // ------------------------------- 7: a página de uma resposta compartilhada
+  //
+  // `/resposta/<id>` é servida com o app da HOME (a Pages Function devolve o
+  // index.html), e a home é a conversa sobre presidente. Quem sabe de que
+  // conversa a resposta é são o `escopo` e os `candidatos` do registro
+  // público. Sem eles a página mostrava o recorte errado ("candidatos a
+  // presidente") e engolia a causa da lacuna: quem recebe o link lia como
+  // ausência de propostas o que é ausência de canal declarado ao TSE.
+  await comServidor('conversa', async (chamadas, base) => {
+    const dom = await dumpDom(navegador, flags, `${base}/resposta/${ID_PUBLICO}`);
+    const c = 'compartilhada';
+
+    exige(c, chamadas.includes(`/api/respostas/${ID_PUBLICO}`),
+      `a página não foi buscar a resposta guardada (chamou: ${chamadas.join(', ')})`);
+    exige(c, dom.includes('o que propõem para a segurança pública?'),
+      'a pergunta guardada não aparece na conversa');
+    exige(c, /class="cobertura"/.test(dom),
+      'o bloco de cobertura não foi montado a partir de candidatos[]');
+    // o recorte é conferido DENTRO do bloco: o texto fixo da home ("os 13
+    // candidatos a presidente") está na página inteira e não diz nada sobre
+    // o que a conversa adotou
+    const cobertura = dom.match(/<section class="cobertura">([\s\S]*?)<\/section>/)?.[1] ?? '';
+    exige(c, /3 candidatos — Governador de São Paulo/.test(cobertura),
+      `a cobertura saiu com o recorte errado — a página não adotou o escopo da resposta: ${cobertura.slice(0, 120)}`);
+    exige(c, !/candidatos a presidente/.test(cobertura),
+      'a conversa de governador se anunciou como conversa de presidente');
+    exige(c, /Não informaram site nem rede social ao TSE: Terceira Candidata/.test(dom),
+      'a CAUSA da lacuna não chegou a quem abriu o link');
+  });
+
 } catch (e) {
   console.error(`FALHOU (navegador): ${e.message}`);
   process.exit(1);
@@ -636,6 +701,7 @@ console.log(`OK (navegador): ${navegador} renderizou a resposta do bundle public
   + `compartilhou por /resposta/${ID_PUBLICO} sem emitir fragmento novo, recusou `
   + 'javascript:/HTML injetado, reabriu o permalink legado sem rede, recusou permalink '
   + 'forjado (endereço executável e release "oficial"), disse a indisponibilidade do link '
-  + 'quando o serviço não devolve identificador e caiu no fallback de /api/pesquisa');
+  + 'quando o serviço não devolve identificador, caiu no fallback de /api/pesquisa '
+  + 'e abriu /resposta/<id> no escopo da resposta, com a causa da lacuna');
 
 rmSync(PERFIL, { recursive: true, force: true });

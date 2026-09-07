@@ -533,3 +533,19 @@ test('candidatos sobrevivem à normalização, com vocabulário fechado', () => 
   assert.equal(r.candidatos[2].lacuna_causa, null, 'causa fora do vocabulário não vai para a tela');
   assert.equal(normalizaResposta({ texto: 'x' }).candidatos.length, 0);
 });
+
+test('a resposta guardada carrega o escopo da conversa a que pertence', async () => {
+  // `/resposta/<id>` é servida com o app da home; sem este campo a página
+  // assume presidente e o turno seguinte troca de universo de candidatos.
+  const r = normalizaResposta({
+    texto: 'x', escopo: { cargo: 'governador', uf: 'sp' },
+  });
+
+  assert.deepEqual(r.escopo, { cargo: 'governador', uf: 'SP' });
+});
+
+test('escopo ausente ou sem cargo não vira escopo', () => {
+  assert.equal(normalizaResposta({ texto: 'x' }).escopo, null);
+  assert.equal(normalizaResposta({ texto: 'x', escopo: { uf: 'SP' } }).escopo, null);
+  assert.equal(normalizaResposta({ texto: 'x', escopo: 'governador' }).escopo, null);
+});
