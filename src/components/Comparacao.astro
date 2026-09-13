@@ -26,7 +26,6 @@ const porSlug = Object.fromEntries(dados.candidatos.map((c) => [c.slug, c]));
 const porId = Object.fromEntries(dados.propostas.map((p) => [p.id, p]));
 const L = layout(dados.propostas, ordem);
 const numeros = contagens(dados.propostas, ordem);
-const comContra = dados.propostas.filter((p) => Object.values(p.posicoes).some((v) => v.posicao === 'discorda')).length;
 
 // o que o navegador precisa para reposicionar e abrir trechos; `<` escapado
 // para o JSON nunca fechar a tag em que viaja
@@ -67,14 +66,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </p>
   </section>
 
-  <Busca compacta escopo={escopoBusca} />
-
-  <div class="filtro-busca" role="status" hidden>
-    <p class="filtro-texto"></p>
-    <p class="filtro-outros"></p>
-    <p class="filtro-acoes"><a class="limpar" href={`${base}/${dados.pagina}`}>Ver todas as propostas deste tema</a></p>
-  </div>
-
   <div class="seletor" role="group" aria-label="Candidatos na comparação">
     <p class="seletor-rotulo">Comparar:</p>
     <ul>
@@ -88,8 +79,24 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       ))}
     </ul>
     <p class="contagem" aria-live="polite">
-      <span class="contagem-n">{L.total}</span> propostas · <span class="contagem-contra">{comContra}</span> com posição contrária declarada
+      <span class="contagem-n">{L.total}</span> <span class="contagem-rotulo">{L.total === 1 ? 'proposta' : 'propostas'}</span>
     </p>
+  </div>
+
+  <div class="busca-tema">
+    <button type="button" class="abrir-busca" aria-expanded="false" aria-controls="busca-no-tema">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span>Buscar nos programas</span>
+    </button>
+    <div id="busca-no-tema" class="busca-dobra" hidden>
+      <Busca compacta escopo={escopoBusca} />
+    </div>
+  </div>
+
+  <div class="filtro-busca" role="status" hidden>
+    <p class="filtro-texto"></p>
+    <p class="filtro-outros"></p>
+    <p class="filtro-acoes"><a class="limpar" href={`${base}/${dados.pagina}`}>Ver todas as propostas deste tema</a></p>
   </div>
 
   <div class="aviso-girar" role="status" hidden>
@@ -187,7 +194,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const cabecalho = raiz.querySelector('.cabecalho-colunas');
     const rolagem = raiz.querySelector('.rolagem');
     const contagem = raiz.querySelector('.contagem-n');
-    const contagemContra = raiz.querySelector('.contagem-contra');
+    const contagemRotulo = raiz.querySelector('.contagem-rotulo');
     const chips = [...raiz.querySelectorAll('.seletor button[data-slug]')];
     // os cartões desenhados no build; o navegador só os reposiciona
     const cartoes = new Map([...grade.querySelectorAll('button.proposta')].map((b) => [b.dataset.p, b]));
@@ -238,10 +245,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       }
       grade.replaceChildren(frag);
       if (contagem) contagem.textContent = String(L.total);
-      if (contagemContra) {
-        const visiveis = propostasVisiveis().filter((p) => sel.some((s) => p.posicoes[s]?.posicao === 'concorda'));
-        contagemContra.textContent = String(visiveis.filter((p) => sel.some((s) => p.posicoes[s]?.posicao === 'discorda')).length);
-      }
+      if (contagemRotulo) contagemRotulo.textContent = L.total === 1 ? 'proposta' : 'propostas';
     }
 
     // `?c=lula,romeu-zema`: a vírgula fica legível, o endereço é para ser compartilhado
@@ -322,6 +326,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       }
     }
     if (consulta) filtraPelaBusca(consulta);
+
+    // a lupa abre a caixa de busca; com uma busca em vigor, ela já vem aberta
+    const abrir = raiz.querySelector('.abrir-busca');
+    const dobra = raiz.querySelector('.busca-dobra');
+    const abreBusca = (foca) => {
+      dobra.hidden = false;
+      abrir.setAttribute('aria-expanded', 'true');
+      if (foca) dobra.querySelector('input[name="q"]')?.focus();
+    };
+    abrir.addEventListener('click', () => {
+      if (dobra.hidden) abreBusca(true);
+      else { dobra.hidden = true; abrir.setAttribute('aria-expanded', 'false'); }
+    });
+    if (consulta) abreBusca(false);
 
     // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
     // a tela, ganha destaque e o foco — se estiver na tela com a seleção atual
@@ -450,6 +468,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .chip:hover { border-color: var(--azul-claro); }
   .comparacao .contagem { flex-basis: 100%; }
 
+  .comparacao .busca-tema { margin: 0 0 .8rem; }
+  .comparacao .abrir-busca { display: inline-flex; align-items: center; gap: .45rem; min-height: var(--alvo); padding: .3rem .9rem .3rem .7rem;
+    font: inherit; font-size: .9rem; font-weight: 600; color: var(--acento); background: var(--cartao); border: 1px solid var(--linha);
+    border-radius: 999px; cursor: pointer; }
+  .comparacao .abrir-busca:hover { border-color: var(--azul-claro); background: var(--realce); }
+  .comparacao .abrir-busca[aria-expanded='true'] { border-color: var(--acento-forte); background: var(--realce); }
+  .comparacao .busca-dobra { margin-top: .4rem; }
+  .comparacao .busca-dobra[hidden] { display: none; }
+  .comparacao .busca-dobra .busca-caixa { margin: 0; }
+  .comparacao .busca-dobra .busca-caixa label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .comparacao .filtro-busca { margin: 0 0 1rem; padding: .6rem .9rem; background: var(--realce); border: 1px solid var(--azul-claro); border-radius: var(--raio); }
   .comparacao .filtro-busca[hidden] { display: none; }
   .comparacao .filtro-busca p { margin: 0; font-size: .92rem; }

@@ -12,7 +12,7 @@ const { resumo, base, origem = 'hub' } = Astro.props;
     <li>
       <a class="tema" href={`${base}/${r.id}`} data-evento="tema_aberto" data-tema={r.id} data-origem={origem}>
         <span class="nome">{r.nome}</span>
-        <span class="numeros">{r.propostas} propostas{r.comContra ? ` · ${r.comContra} com posição contrária` : ''}</span>
+        <span class="numeros">{r.propostas} propostas</span>
       </a>
     </li>
   ))}
