@@ -30,13 +30,17 @@ test('só a verificação pede noindex; as páginas do menu, não', async () => 
   }
 });
 
-test('v3: o chat saiu inteiro — componente, libs, função de servidor, middleware', () => {
-  for (const p of ['src/components/Chat.astro', 'src/middleware.js', 'functions',
+test('v3: o chat saiu inteiro — componente, libs, função de servidor, middleware', async () => {
+  for (const p of ['src/components/Chat.astro', 'src/middleware.js', 'functions/resposta',
     'src/lib/chat.mjs', 'src/lib/sessao-conversa.mjs', 'src/lib/conversa-guardada.mjs', 'src/lib/markdown.mjs',
     'src/lib/html-seguro.mjs', 'src/lib/pagina-resposta.mjs', 'src/lib/resposta-publica.mjs', 'src/lib/permalink.mjs',
     'src/lib/compartilhar.mjs', 'src/lib/previa-resposta.mjs', 'src/lib/dados.mjs', 'data/itens', 'data/current.json']) {
     assert.ok(!existe(p), `${p} voltou`);
   }
+  // a única Function do site é o vetor da consulta da busca
+  const { readdirSync } = await import('node:fs');
+  const funcs = readdirSync(new URL('../functions', import.meta.url), { recursive: true }).map(String).filter((f) => f.endsWith('.js'));
+  assert.deepEqual(funcs.sort(), ['api/vetor.js']);
 });
 
 test('v3: o site compila só do que está versionado — nada lê o harness, o S3 ou uma geração', async () => {

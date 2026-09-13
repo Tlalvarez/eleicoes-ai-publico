@@ -5,6 +5,7 @@
 import Base from '../../layouts/Base.astro';
 import Candidatos from '../../components/Candidatos.astro';
 import GradeTemas from '../../components/GradeTemas.astro';
+import Busca from '../../components/Busca.astro';
 import { comparacao, resumoDoEscopo } from '../../lib/comparacao-dados.mjs';
 
 const resumo = resumoDoEscopo('presidente');
@@ -22,6 +23,8 @@ const totalPropostas = resumo.reduce((n, r) => n + r.propostas, 0);
       Toque na proposta para ler o trecho do programa.
     </p>
   </div>
+
+  <Busca compacta />
 
   <h2>Temas</h2>
   <GradeTemas resumo={resumo} base="/presidente" origem="hub" />

@@ -51,6 +51,11 @@ projeto (`v3/`); o que chega aqui é o resultado, exportado por `v3/exporta_site
 | `src/lib/comparacao.mjs` | O layout da comparação — a **mesma função** roda no build (Astro) e no navegador (ao filtrar candidatos) |
 | `src/lib/comparacao-dados.mjs` | Leitura e contrato dos JSONs de `data/comparacao/` |
 | `src/lib/cargos.mjs`, `candidaturas-uf.mjs`, `tse.mjs` | Cargos, UFs, candidaturas do snapshot do TSE e links do DivulgaCandContas |
+| `src/lib/busca.mjs` | A busca: BM25 + cosseno sobre vetores int8 + fusão RRF, agrupada por proposta; roda em Node (gabarito) e no navegador |
+| `src/pages/busca.astro`, `src/components/Busca.astro` | A página de resultados e a caixa de busca (home e hub) |
+| `functions/api/vetor.js` | A única Function: o vetor da consulta (Jina via NativePort), com o segredo `NATIVEPORT_API_KEY` no projeto Pages |
+| `data/busca/` | **Versionado.** Por escopo: `indice.json`, `documentos.json` (propostas com sinônimos + blocos dos programas) e os vetores `.bin` (int8) |
+| `test/busca-gabarito.json` | Consultas de gente comum e o esperado; `busca-gabarito-vetores.json` traz os vetores pré-calculados (`npm run busca:gabarito-vetores`) |
 | `src/lib/medicao.mjs` | A única porta da medição, com vocabulário fechado |
 | `src/lib/contato.mjs` | O e-mail de contato |
 | `src/content/metodologia.md` | Metodologia: como os programas são lidos e comparados, limitações |
@@ -63,6 +68,17 @@ projeto (`v3/`); o que chega aqui é o resultado, exportado por `v3/exporta_site
 
 Os PDFs dos programas não são redistribuídos aqui: cada JSON traz o texto dos blocos citados
 e o link do programa no TSE.
+
+## A busca
+
+Híbrida e barata: lexical (BM25 com sinônimos gerados uma vez pelo modelo) + vetorial (embeddings
+`jina-embeddings-v3`, 256 dimensões, int8, das propostas e de todos os blocos de tema dos
+programas) + fusão RRF, tudo no navegador a partir de `data/busca/<escopo>/`. A única chamada por
+consulta é `POST /api/vetor` (o vetor da consulta; ~0,00002 US$); se falhar, a busca segue só
+lexical. Os dados vêm de `v3/enriquece_busca.py` + `v3/exporta_site.py` no harness. O gate
+`checa-busca-dist` confere o dist; `test/busca.test.mjs` mede o recall@10 no gabarito e falha
+abaixo de 0,85 no híbrido. Para a Function funcionar em produção:
+`wrangler pages secret put NATIVEPORT_API_KEY --project-name eleicoes-ai`.
 
 ## Princípios invariantes
 

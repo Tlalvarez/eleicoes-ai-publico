@@ -39,6 +39,13 @@ O eleicoes.ai compara, tema a tema, os programas de governo que os candidatos de
 - Presidente: os programas de cinco candidatos — Augusto Cury, Flávio Bolsonaro, Lula, Renan Santos e Romeu Zema — em 15 temas.
 - Governador: em preparação. A página de cada estado lista as candidaturas registradas no TSE e passa a mostrar a comparação quando ela estiver pronta.
 
+## 6. A busca
+
+- A caixa de busca procura nas propostas comparadas e no texto integral dos programas dos candidatos comparados. Ela roda no seu navegador: o índice é baixado uma vez, e nada do que você digita é guardado por nós.
+- São duas buscas somadas: por palavras (com sinônimos e apelidos de cada proposta, gerados uma vez pelo modelo e conferidos pelo código) e por sentido (um vetor da sua consulta é comparado ao vetor de cada proposta e de cada trecho, calculados pelo mesmo modelo de embeddings). A única chamada de rede é a que transforma a consulta em vetor; se ela falhar, a busca segue só por palavras e a página diz.
+- Um trecho encontrado leva à proposta que o cita; trecho que nenhuma proposta cita aparece como "nos programas, fora das propostas comparadas". Quando nenhuma proposta fala do assunto diretamente, a página diz isso antes de mostrar as mais próximas.
+- A qualidade é medida num gabarito de consultas de gente comum (recall entre os dez primeiros resultados), e o teste faz parte do build.
+
 ## Limitações importantes
 
 - Modelos de inteligência artificial podem errar, inclusive ao resumir uma proposta ou ao juntar duas propostas parecidas como se fossem uma. Na dúvida, o trecho do programa vale mais que o resumo: ele está a um toque.
