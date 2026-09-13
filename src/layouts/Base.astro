@@ -62,6 +62,16 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
           disable_session_recording: true,
           disable_capture_url_hashes: true,
           mask_personal_data_properties: true,     // mascara parâmetros pessoais nas URLs medidas
+          // Só o vocabulário de medicao.mjs sai daqui. O autocapture do PostHog
+          // mandava o TEXTO do elemento clicado (nome de candidato, texto de
+          // proposta) — o que a privacidade diz que não vai. Desligado em 13/09,
+          // com o resto que grava conteúdo da tela.
+          autocapture: false,
+          capture_dead_clicks: false,
+          capture_heatmaps: false,
+          enable_heatmaps: false,
+          enable_recording_console_log: false,
+          rageclick: false,
         });
       }
     </script>
