@@ -104,9 +104,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       <div class="grade grade-propostas">
         {L.linhas.map((linha) => {
           if (linha.tipo === 'secao') return <h2>{linha.rotulo}</h2>;
+          if (linha.tipo === 'subtema') return <h3 class="assunto">{linha.rotulo}</h3>;
           if (linha.tipo === 'pilhas') {
             return linha.pilhas.map((pilha, i) => (
-              <div class="pilha" style={`grid-column:${i + 1}`}>
+              <div class={`pilha${pilha.length ? '' : ' vazia'}`} style={`grid-column:${i + 1}`}>
                 {pilha.map((c) => {
                   const p = porId[c.id];
                   return (
@@ -115,7 +116,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
                         {c.colunas.map((k) => <span class={k === 'concorda' ? undefined : k}></span>)}
                       </span>
                       <span class="conteudo" style={estiloConteudo(c)}>
-                        <span class="subtema">{p.subtema}</span>
                         <span class="texto">{p.proposta}</span>
                       </span>
                     </button>
@@ -131,7 +131,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
                 {linha.colunas.map((k) => <span class={k === 'concorda' ? undefined : k}></span>)}
               </span>
               <span class="conteudo" style={estiloConteudo(linha)}>
-                <span class="subtema">{p.subtema}</span>
                 <span class="texto">{p.proposta}</span>
               </span>
             </button>
@@ -211,9 +210,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       const frag = document.createDocumentFragment();
       for (const linha of L.linhas) {
         if (linha.tipo === 'secao') frag.append(el('h2', '', linha.rotulo));
+        else if (linha.tipo === 'subtema') frag.append(el('h3', 'assunto', linha.rotulo));
         else if (linha.tipo === 'pilhas') {
           linha.pilhas.forEach((pilha, i) => {
-            const d = el('div', 'pilha');
+            const d = el('div', pilha.length ? 'pilha' : 'pilha vazia');
             d.style.gridColumn = String(i + 1);
             for (const c of pilha) d.append(posiciona({ ...c, ini: 0 }));
             frag.append(d);
@@ -262,6 +262,21 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
     const daUrl = selecaoDaUrl(new URLSearchParams(location.search).get('c'), ordem);
     if (daUrl) aplica(daUrl);
+
+    // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
+    // a tela, ganha destaque e o foco — se estiver na tela com a seleção atual
+    function destaca() {
+      const m = /^#p=([A-Za-z0-9_-]+)$/.exec(location.hash);
+      if (!m) return;
+      const b = cartoes.get(m[1]);
+      if (!b || !b.isConnected) return;
+      for (const outro of grade.querySelectorAll('.proposta.destaque')) outro.classList.remove('destaque');
+      b.classList.add('destaque');
+      b.scrollIntoView({ block: 'center' });
+      b.focus({ preventScroll: true });
+    }
+    destaca();
+    addEventListener('hashchange', destaca);
 
     // o cabeçalho congelado acompanha a rolagem lateral do corpo
     rolagem.addEventListener('scroll', () => { cabecalho.scrollLeft = rolagem.scrollLeft; }, { passive: true });
@@ -392,13 +407,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .grade > h2 { grid-column: 1 / -1; font-size: .84rem; text-transform: uppercase; letter-spacing: .09em; color: var(--acento-forte);
     margin: 1.4rem .35rem .1rem; padding-bottom: .3rem; border-bottom: 1px solid var(--linha); }
   .comparacao .grade > h2:first-child { margin-top: .4rem; }
+  .comparacao .grade > h3.assunto { grid-column: 1 / -1; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--tinta-suave); margin: .9rem .35rem 0; }
+  .comparacao .grade > h2 + h3.assunto { margin-top: .5rem; }
   .comparacao .pilha { display: flex; flex-direction: column; gap: .5rem; min-width: 0; }
+  /* coluna sem proposta no assunto: o vazio é informação, e fica marcado de leve */
+  .comparacao .pilha.vazia { min-height: 2.2rem; border: 1px dashed var(--linha); border-radius: 8px;
+    background: repeating-linear-gradient(135deg, transparent 0 7px, rgba(93, 100, 112, .08) 7px 9px); }
 
   .comparacao .proposta { position: relative; font: inherit; text-align: left; cursor: pointer; color: var(--tinta); background: var(--papel);
     border: 1px solid var(--linha); border-radius: 8px; padding: 0 0 .7rem; min-height: var(--alvo);
     display: grid; grid-template-columns: repeat(var(--l, 1), 1fr); overflow-wrap: anywhere; overflow: hidden; }
   .comparacao .proposta:hover { border-color: var(--azul-claro); background: var(--realce); }
   .comparacao .proposta:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+  .comparacao .proposta.destaque { box-shadow: 0 0 0 3px var(--amarelo); border-color: var(--acento-forte); }
   /* o texto ocupa só as colunas de quem propõe; quem discorda fica com o topo vermelho e o rótulo */
   .comparacao .proposta .conteudo { position: relative; display: flex; flex-direction: column; gap: .3rem; padding: 0 .8rem; min-width: 0; }
   .comparacao .proposta .colunas { position: absolute; inset: 0; display: grid; pointer-events: none; }
@@ -408,10 +430,9 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .proposta .colunas span.contra { border-top: 5px solid var(--atencao); background: rgba(165, 68, 42, .07); }
   .comparacao .proposta .colunas span.contra::after { content: 'propõe o contrário'; display: block; margin: .4rem .6rem 0; font-size: .7rem; font-weight: 800;
     letter-spacing: .08em; text-transform: uppercase; color: var(--atencao); white-space: nowrap; }
-  /* com discordância na faixa, o rótulo ganha uma linha própria acima do subtema */
-  .comparacao .proposta.com-contra .subtema { margin-top: 1.9rem; }
-  .comparacao .proposta .subtema { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-suave); margin-top: .55rem; }
-  .comparacao .proposta .texto { font-size: .95rem; line-height: 1.4; }
+  /* com discordância na faixa, o rótulo "propõe o contrário" ganha uma linha própria acima do texto */
+  .comparacao .proposta .texto { font-size: .95rem; line-height: 1.4; margin-top: .6rem; }
+  .comparacao .proposta.com-contra .texto { margin-top: 1.9rem; }
 
   .comparacao .nota-rodape { margin: 1.2rem 0 0; font-size: .88rem; color: var(--tinta-suave); max-width: 60em; }
 
