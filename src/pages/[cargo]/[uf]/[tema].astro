@@ -22,7 +22,7 @@ export function getStaticPaths() {
 const { cargo, uf, dados } = Astro.props;
 const escopo = rotuloEscopo(cargo, uf);
 const base = caminhoUf(cargo, uf);
-const paginas = paginasProntas(cargo.slug, uf.sigla).map((id) => paginaPorId(id));
+const paginas = paginasProntas(cargo.slug, uf.sigla).map((id) => paginaPorId(id, undefined, cargo.slug));
 const n = dados.candidatos.length;
 ---
 <Base title={`${dados.titulo} · ${escopo} 2026`}

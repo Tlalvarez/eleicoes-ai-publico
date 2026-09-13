@@ -31,7 +31,8 @@ for (const cargo of CARGOS_POR_UF) {
     if (uf) escopos.push({ id: `${cargo.slug}/${sigla}`, nome: `${cargo.nome} · ${uf.nome}`, base: `${cargo.href}/${sigla}` });
   }
 }
-const nomesDePaginas = Object.fromEntries(paginas().map((p) => [p.id, p.nome]));
+// os nomes das páginas de todos os cargos com escopo publicado (as listas são por cargo)
+const nomesDePaginas = Object.fromEntries([...paginas(), ...CARGOS_POR_UF.flatMap((c) => paginas(undefined, c.slug))].map((p) => [p.id, p.nome]));
 const config = JSON.stringify({ escopos, paginas: nomesDePaginas }).replace(/</g, '\\u003c');
 ---
 <Base title="Busca nos programas de governo"

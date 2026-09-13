@@ -20,13 +20,20 @@ export const PASTA = join(RAIZ_PROJETO, 'data', 'comparacao');
 
 const le = (caminho) => JSON.parse(readFileSync(caminho, 'utf8'));
 
-/** As páginas (temas consolidados), na ordem editorial de paginas.json. */
-export function paginas(raiz = PASTA) {
+/**
+ * As páginas (temas consolidados), na ordem editorial. A lista é POR CARGO:
+ * governador tem a sua taxonomia (decisão do Thiago em 13/09) em
+ * `<cargo>/paginas.json`; presidente é a lista geral, `paginas.json`, que
+ * também serve de fallback para um cargo sem lista própria.
+ */
+export function paginas(raiz = PASTA, cargo = 'presidente') {
+  const propria = join(raiz, cargo, 'paginas.json');
+  if (cargo !== 'presidente' && existsSync(propria)) return le(propria).paginas;
   return le(join(raiz, 'paginas.json')).paginas;
 }
 
-export function paginaPorId(id, raiz = PASTA) {
-  return paginas(raiz).find((p) => p.id === id) ?? null;
+export function paginaPorId(id, raiz = PASTA, cargo = 'presidente') {
+  return paginas(raiz, cargo).find((p) => p.id === id) ?? null;
 }
 
 /** A pasta de um escopo: presidente, ou governador/<uf>. */
@@ -39,7 +46,7 @@ export function paginasProntas(cargo, uf = null, raiz = PASTA) {
   const pasta = pastaDoEscopo(cargo, uf, raiz);
   if (!existsSync(pasta)) return [];
   const prontas = new Set(readdirSync(pasta).filter((n) => n.endsWith('.json')).map((n) => n.slice(0, -5)));
-  return paginas(raiz).filter((p) => prontas.has(p.id)).map((p) => p.id);
+  return paginas(raiz, cargo).filter((p) => prontas.has(p.id)).map((p) => p.id);
 }
 
 /** As UFs (minúsculas) com ao menos uma página pronta para o cargo. */

@@ -1,0 +1,89 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "SP",
+ "pagina": "desenvolvimento-regional",
+ "nome": "Desenvolvimento regional e interior",
+ "titulo": "Desenvolvimento regional e interior: o que cada candidato propõe",
+ "temas": [
+  "desenvolvimento_regional"
+ ],
+ "origem": {
+  "arquivo": "desenvolvimento-regional-sp.json",
+  "gerado_em": "2026-09-13T23:24:49Z",
+  "exportado_em": "2026-09-13T23:30:03Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-sp-fernando-haddad-250002549705",
+   "nome": "Fernando Haddad",
+   "partido": "PT",
+   "numero": "13",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/250017095435",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/250002549705/SP"
+  },
+  {
+   "slug": "governador-sp-tarcisio-250002541303",
+   "nome": "Tarcísio",
+   "partido": "REPUBLICANOS",
+   "numero": "10",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/250017125598",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/250002541303/SP"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Apoio a municípios e consórcios",
+   "proposta": "Manter e ampliar a articulação entre governo estadual e prefeituras, com alinhamento de projetos municipais e estaduais e apoio à solução de desafios locais a partir de diagnósticos e identificação de oportunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1148,
+      1151
+     ],
+     "nota": "Apresentado como continuidade da política já em curso"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Apoio a municípios e consórcios",
+   "proposta": "Fortalecer projetos integrados e colaborativos entre entes, com execução de programas conjuntos voltados aos problemas de maior impacto na população.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1149,
+      1150
+     ],
+     "nota": "Inclui menção a consórcios como instrumento de parceria"
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-sp-fernando-haddad-250002549705": {},
+  "governador-sp-tarcisio-250002541303": {
+   "1148": {
+    "texto": "PARCERIA E APOIO ÀS PREFEITURAS",
+    "pagina": 66
+   },
+   "1149": {
+    "texto": "E CONSÓRCIOS",
+    "pagina": 66
+   },
+   "1150": {
+    "texto": "execução de programas conjuntos. Fortaleceremos o desenvolvimento de projetos integrados e colaborativos para resolução dos problemas que mais impactam as pessoas.",
+    "pagina": 66
+   },
+   "1151": {
+    "texto": "Continuaremos a integração entre estado e prefeituras, com alinhamento dos projetos municipais e estaduais, e apoio à solução dos desafios locais, a partir da elaboração de diagnósticos e da identificação de oportunidades para",
+    "pagina": 66
+   }
+  }
+ }
+}
