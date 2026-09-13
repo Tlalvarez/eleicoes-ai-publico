@@ -174,7 +174,7 @@ test('a página de comparação: rótulo de IA, trecho do programa a um toque, s
   assert.match(comp, /inteligência artificial/);
   assert.match(comp, /<dialog class="trechos"/);
   assert.match(comp, /Ver o programa no TSE/);
-  assert.match(comp, /import \{ layout, selecaoDaUrl, urlDaSelecao \} from '\.\.\/lib\/comparacao\.mjs'/);
+  assert.match(comp, /import \{ layout, modoDaUrl, selecaoDaUrl, urlDaSelecao \} from '\.\.\/lib\/comparacao\.mjs'/);
   assert.match(comp, /import \{ layout, contagens \} from '\.\.\/lib\/comparacao\.mjs'/, 'o build usa a mesma função que o navegador');
   // nenhuma cor atribuída a uma coluna específica
   assert.doesNotMatch(comp, /nth-child|nth-of-type|data-slug="[a-z-]+"\]\s*\{/);

@@ -9,7 +9,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  contagens, contra, layout, ordena, quem, rotuloDaSecao, selecaoDaUrl, urlDaSelecao,
+  contagens, contra, layout, modoDaUrl, ordena, quem, rotuloDaSecao, selecaoDaUrl, urlDaSelecao,
 } from '../src/lib/comparacao.mjs';
 
 const ORDEM = ['a', 'b', 'c', 'd', 'e'];
@@ -130,4 +130,39 @@ test('as contagens por candidato: propõe, exclusivas, contraria', () => {
   assert.deepEqual(n.a, { propoe: 3, exclusivas: 1, contraria: 0 });
   assert.deepEqual(n.b, { propoe: 2, exclusivas: 1, contraria: 1 });
   assert.deepEqual(n.d, { propoe: 2, exclusivas: 1, contraria: 1 });
+});
+
+test('modo assunto: cada subtema é uma seção com faixas e pilhas lado a lado', () => {
+  const L = layout(PROPOSTAS, ORDEM, 'assunto');
+  const secoes = L.linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo);
+  assert.deepEqual(secoes, ['a e c', 'b, d contra', 'd, b contra', 'só a', 'só c', 'todos'], 'subtemas em ordem alfabética');
+  assert.equal(L.total, PROPOSTAS.length);
+  // "b, d contra": exclusiva com contrário vira faixa, não pilha
+  const i = L.linhas.findIndex((l) => l.tipo === 'secao' && l.rotulo === 'b, d contra');
+  assert.equal(L.linhas[i + 1].tipo, 'cartao');
+  assert.equal(L.linhas[i + 1].id, 'p4');
+  // "só a": pilha na coluna de a
+  const j = L.linhas.findIndex((l) => l.tipo === 'secao' && l.rotulo === 'só a');
+  assert.deepEqual(L.linhas[j + 1].pilhas.map((x) => x.map((c) => c.id)), [['p1'], [], [], [], []]);
+  // nenhum cabeçalho de subtema separado: o subtema É a seção
+  assert.ok(!L.linhas.some((l) => l.tipo === 'subtema'));
+});
+
+test('modo assunto: um assunto com faixa e exclusivas mostra as duas coisas juntas', () => {
+  const misto = [
+    p('m1', { a: ok(), b: ok(), c: ok() }, 'blocos'),
+    p('m2', { a: ok() }, 'blocos'),
+    p('m3', { d: ok() }, 'blocos'),
+  ];
+  const L = layout(misto, ORDEM, 'assunto');
+  assert.deepEqual(L.linhas.map((l) => l.tipo), ['secao', 'cartao', 'pilhas']);
+  assert.equal(L.linhas[1].id, 'm1');
+  assert.deepEqual(L.linhas[2].pilhas.map((x) => x.map((c) => c.id)), [['m2'], [], [], ['m3'], []]);
+});
+
+test('o modo vem da URL só se for conhecido', () => {
+  assert.equal(modoDaUrl('assunto'), 'assunto');
+  assert.equal(modoDaUrl('concordancia'), 'concordancia');
+  assert.equal(modoDaUrl('xpto'), 'concordancia');
+  assert.equal(modoDaUrl(null), 'concordancia');
 });

@@ -114,10 +114,17 @@ export function ordena(propostas, ordem) {
  *                                                      contrário, de UM subtema); pilha vazia =
  *                                                      o candidato não tem proposta no assunto
  */
-export function layout(propostas, ordem) {
+export const MODOS = Object.freeze(['concordancia', 'assunto']);
+
+export function modoDaUrl(param) {
+  return MODOS.includes(param) ? param : 'concordancia';
+}
+
+export function layout(propostas, ordem, modo = 'concordancia') {
   const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
   const n = ordem.length;
   const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0), ordem);
+  if (modo === 'assunto') return porAssunto(visiveis, ordem, idx, n);
   const linhas = [];
   let secao = 0;
   let subtema = null;
@@ -159,4 +166,29 @@ export function contagens(propostas, ordem) {
     for (const s of contra(p, ordem)) saida[s].contraria += 1;
   }
   return saida;
+}
+
+/**
+ * O outro modo de ler a página: por ASSUNTO. Cada subtema é uma seção, com
+ * tudo o que se propõe sobre ele lado a lado — as faixas de quem concorda
+ * (mais candidatos primeiro), depois uma pilha por coluna com o que só um
+ * propõe. Mercosul fica com Mercosul, seja de um candidato ou de cinco.
+ */
+function porAssunto(visiveis, ordem, idx, n) {
+  const linhas = [];
+  const assuntos = [...new Set(visiveis.map((p) => p.subtema))].sort((a, b) => String(a).localeCompare(String(b), 'pt-BR'));
+  for (const st of assuntos) {
+    const doAssunto = visiveis.filter((p) => p.subtema === st);
+    linhas.push({ tipo: 'secao', rotulo: st });
+    // faixas: quem concorda em mais de um, ou exclusiva com contrário (a faixa cobre os dois)
+    for (const p of doAssunto.filter((p) => quem(p, ordem).length >= 2 || contra(p, ordem).length)) {
+      const f = faixa(p, ordem, idx);
+      linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
+    }
+    const pilhas = ordem.map((s, i) => doAssunto
+      .filter((p) => quem(p, ordem).length === 1 && quem(p, ordem)[0] === s && !contra(p, ordem).length)
+      .map((p) => cartao(p, ordem, idx, i, 1)));
+    if (pilhas.some((x) => x.length)) linhas.push({ tipo: 'pilhas', pilhas });
+  }
+  return { n, linhas, total: visiveis.length };
 }
