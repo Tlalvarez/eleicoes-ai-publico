@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { CARGOS } from '../lib/cargos.mjs';
+import { CARGOS_NO_MENU } from '../lib/cargos.mjs';
 const {
   title,
   description = 'Os programas de governo registrados no TSE pelos candidatos de 2026, comparados tema a tema: onde convergem, onde divergem e sobre o que calam. Com o trecho de cada programa, sem recomendação de voto.',
@@ -77,9 +77,9 @@ const atual = (p) => ((path === p || path.startsWith(p + '/') || path === p + '.
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
         <input type="checkbox" id="menu-aberto" class="menu-caixa" />
         <label for="menu-aberto" class="menu-botao">☰ Menu</label>
-        <!-- o menu é POR CARGO (src/lib/cargos.mjs): Presidente e Governador. -->
+        <!-- o menu é POR CARGO (src/lib/cargos.mjs, os com `menu: true`). -->
         <nav class="main" aria-label="Principal">
-          {CARGOS.map((cargo) => (
+          {CARGOS_NO_MENU.map((cargo) => (
             <a href={cargo.href} aria-current={atual(cargo.href)}>{cargo.nome}</a>
           ))}
         </nav>

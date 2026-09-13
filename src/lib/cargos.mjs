@@ -10,8 +10,11 @@
  */
 
 export const CARGOS = Object.freeze([
-  { slug: 'presidente', nome: 'Presidente', porUF: false, href: '/presidente', preposicao: null },
-  { slug: 'governador', nome: 'Governador', porUF: true, href: '/governador', preposicao: 'de' },
+  { slug: 'presidente', nome: 'Presidente', porUF: false, href: '/presidente', preposicao: null, menu: true },
+  // Governador: rotas construídas (/governador, /governador/<uf>, "em
+  // preparação"), mas FORA do menu e da home até haver comparação de alguma
+  // UF — decisão do Thiago em 13/09. Volta com `menu: true`.
+  { slug: 'governador', nome: 'Governador', porUF: true, href: '/governador', preposicao: 'de', menu: false },
   // Senador: FORA desde 13/09/2026, com o fim do chat. Candidatura ao Senado
   // não registra programa de governo no TSE, e o site passou a comparar só
   // programas. O endereço antigo redireciona (public/_redirects).
@@ -25,6 +28,9 @@ export const CARGOS = Object.freeze([
 ]);
 
 export const CARGOS_POR_UF = Object.freeze(CARGOS.filter((c) => c.porUF));
+
+/** Os cargos que aparecem no menu e na home. */
+export const CARGOS_NO_MENU = Object.freeze(CARGOS.filter((c) => c.menu));
 
 /**
  * As 27 unidades da federação. `artigo` é o que a língua pede antes do nome

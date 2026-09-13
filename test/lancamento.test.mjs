@@ -128,7 +128,8 @@ test('lançamento: existe página 404 própria, apontando para a comparação', 
   const p = await le('pages/404.astro');
   assert.match(p, /Página não encontrada/);
   assert.match(p, /href="\/presidente"/);
-  assert.match(p, /href="\/governador"/);
+  // governador está fora do menu e da home por enquanto (13/09): o 404 não o oferece
+  assert.doesNotMatch(p, /href="\/governador"/);
   assert.doesNotMatch(p, /senador/);
 });
 
