@@ -13,9 +13,12 @@
  * Sem cor por candidato, sem placar, sem id à vista. Trechos e notas vêm do
  * JSON exportado pelo harness (data/comparacao/), nunca de texto livre aqui.
  */
+import Busca from './Busca.astro';
 import { layout, contagens } from '../lib/comparacao.mjs';
 
 const { dados, base, trilha, paginas } = Astro.props;
+// o escopo da busca é o mesmo da página: 'presidente' ou 'governador/sp'
+const escopoBusca = base.replace(/^\//, '');
 // dados: o JSON da página; base: '/presidente' ou '/governador/sp';
 // trilha: [{ nome, href }] até o escopo; paginas: as páginas do escopo com comparação pronta
 const ordem = dados.candidatos.map((c) => c.slug);
@@ -63,6 +66,14 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       por mais de um candidato aparece uma vez, sobre as colunas de quem a faz. Toque para ler o trecho do programa.
     </p>
   </section>
+
+  <Busca compacta escopo={escopoBusca} />
+
+  <div class="filtro-busca" role="status" hidden>
+    <p class="filtro-texto"></p>
+    <p class="filtro-outros"></p>
+    <p class="filtro-acoes"><a class="limpar" href={`${base}/${dados.pagina}`}>Ver todas as propostas deste tema</a></p>
+  </div>
 
   <div class="seletor" role="group" aria-label="Candidatos na comparação">
     <p class="seletor-rotulo">Comparar:</p>
@@ -163,6 +174,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
 <script>
   import { layout, selecaoDaUrl, urlDaSelecao } from '../lib/comparacao.mjs';
+  import { buscaPorPagina } from '../lib/busca-navegador.mjs';
   import { medir } from '../lib/medicao.mjs';
 
   const raiz = document.querySelector('.comparacao');
@@ -188,6 +200,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
     // ---------------------------------------------------------- a seleção
     let selecao = ordem.slice();
+    // `?q=`: só os cartões que falam do assunto (ids vindos da busca); null = todos
+    let filtro = null;
+    const consulta = (new URLSearchParams(location.search).get('q') || '').trim();
+    const propostasVisiveis = () => (filtro ? D.propostas.filter((p) => filtro.has(p.id)) : D.propostas);
 
     function posiciona(c) {
       const b = cartoes.get(c.id);
@@ -206,7 +222,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       raiz.style.setProperty('--n', String(sel.length));
       for (const cel of cabecalho.querySelectorAll('.candidato')) cel.hidden = !sel.includes(cel.dataset.slug);
       for (const ch of chips) ch.setAttribute('aria-pressed', String(sel.includes(ch.dataset.slug)));
-      const L = layout(D.propostas, sel);
+      const L = layout(propostasVisiveis(), sel);
       const frag = document.createDocumentFragment();
       for (const linha of L.linhas) {
         if (linha.tipo === 'secao') frag.append(el('h2', '', linha.rotulo));
@@ -223,13 +239,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       grade.replaceChildren(frag);
       if (contagem) contagem.textContent = String(L.total);
       if (contagemContra) {
-        const visiveis = D.propostas.filter((p) => sel.some((s) => p.posicoes[s]?.posicao === 'concorda'));
+        const visiveis = propostasVisiveis().filter((p) => sel.some((s) => p.posicoes[s]?.posicao === 'concorda'));
         contagemContra.textContent = String(visiveis.filter((p) => sel.some((s) => p.posicoes[s]?.posicao === 'discorda')).length);
       }
     }
 
     // `?c=lula,romeu-zema`: a vírgula fica legível, o endereço é para ser compartilhado
-    const sufixo = (sel) => { const c = urlDaSelecao(sel, ordem); return c ? `?c=${c}` : ''; };
+    // `?q=` (a busca) e `?c=` (os candidatos) acompanham a troca de tema
+    const sufixo = (sel) => {
+      const partes = [];
+      if (consulta) partes.push(`q=${encodeURIComponent(consulta)}`);
+      const c = urlDaSelecao(sel, ordem);
+      if (c) partes.push(`c=${c}`);
+      return partes.length ? `?${partes.join('&')}` : '';
+    };
 
     function guardaNaUrl(sel) {
       history.replaceState(null, '', location.pathname + sufixo(sel) + location.hash);
@@ -262,6 +285,43 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
     const daUrl = selecaoDaUrl(new URLSearchParams(location.search).get('c'), ordem);
     if (daUrl) aplica(daUrl);
+
+    // a matriz filtrada pela busca: a página mostra só o que fala do assunto e
+    // diz em que outros temas ele aparece
+    const barra = raiz.querySelector('.filtro-busca');
+    async function filtraPelaBusca(q) {
+      const escopo = raiz.querySelector('.seletor-tema')?.dataset.base?.replace(/^\//, '') || 'presidente';
+      barra.querySelector('.filtro-texto').textContent = `Buscando "${q}"…`;
+      barra.hidden = false;
+      let r;
+      try { r = await buscaPorPagina(escopo, q); } catch {
+        barra.querySelector('.filtro-texto').textContent = 'Não consegui carregar a busca; mostrando todas as propostas do tema.';
+        return;
+      }
+      const aqui = r.porPagina.find((g) => g.pagina === D.tema);
+      filtro = new Set(aqui ? aqui.ids : []);
+      aplica(selecao);
+      const n = filtro.size;
+      barra.querySelector('.filtro-texto').textContent = n
+        ? `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" neste tema${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`
+        : `Nenhuma proposta sobre "${q}" neste tema.`;
+      const outros = r.porPagina.filter((g) => g.pagina !== D.tema);
+      const po = barra.querySelector('.filtro-outros');
+      po.replaceChildren();
+      if (outros.length) {
+        po.append(el('span', '', 'Também em: '));
+        outros.forEach((g, i) => {
+          const a = el('a', '', `${g.nome} (${g.n})`);
+          a.href = `/${escopo}/${g.pagina}${sufixo(selecao)}`;
+          a.dataset.evento = 'tema_aberto';
+          a.dataset.tema = g.pagina;
+          a.dataset.origem = 'busca';
+          po.append(a);
+          if (i < outros.length - 1) po.append(el('span', '', ' · '));
+        });
+      }
+    }
+    if (consulta) filtraPelaBusca(consulta);
 
     // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
     // a tela, ganha destaque e o foco — se estiver na tela com a seleção atual
@@ -389,6 +449,14 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .chip[aria-pressed='false'] img { filter: grayscale(1); opacity: .6; }
   .comparacao .chip:hover { border-color: var(--azul-claro); }
   .comparacao .contagem { flex-basis: 100%; }
+
+  .comparacao .filtro-busca { margin: 0 0 1rem; padding: .6rem .9rem; background: var(--realce); border: 1px solid var(--azul-claro); border-radius: var(--raio); }
+  .comparacao .filtro-busca[hidden] { display: none; }
+  .comparacao .filtro-busca p { margin: 0; font-size: .92rem; }
+  .comparacao .filtro-busca .filtro-texto { font-weight: 600; }
+  .comparacao .filtro-busca .filtro-outros:empty { display: none; }
+  .comparacao .filtro-busca a { color: var(--acento); font-weight: 600; }
+  .comparacao .filtro-busca .filtro-acoes { margin-top: .2rem; }
 
   .comparacao .quadro { margin: .4rem 0 0; }
   .comparacao .cabecalho-colunas { position: sticky; top: var(--faixa-altura); z-index: 10; overflow: hidden; background: var(--cartao);

@@ -1,20 +1,61 @@
 ---
 /**
- * A caixa de busca: um formulário GET para /busca, que funciona sem
- * JavaScript (a página de resultados é que precisa dele). Usada na home e no
- * hub de presidente.
+ * A caixa de busca. Com JavaScript, a busca roda no navegador e leva à matriz
+ * do tema com o melhor resultado, filtrada pelo assunto (`?q=`); sem
+ * JavaScript, o formulário GET cai em /busca, que lista os resultados.
+ * Usada na home, no hub e na própria página de tema.
  */
 const { escopo = 'presidente', compacta = false } = Astro.props;
 ---
-<form class={`busca-caixa${compacta ? ' compacta' : ''}`} action="/busca" method="get" role="search">
-  <label for={`busca-q-${escopo}`}>Buscar nos programas de governo</label>
+<form class={`busca-caixa${compacta ? ' compacta' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
+  <label for={`busca-q-${escopo.replace('/', '-')}`}>Buscar nos programas de governo</label>
   <div class="linha">
-    <input class="campo" id={`busca-q-${escopo}`} name="q" type="search" maxlength="300" autocomplete="off"
+    <input class="campo" id={`busca-q-${escopo.replace('/', '-')}`} name="q" type="search" maxlength="300" autocomplete="off"
       placeholder="Ex.: creche, escala 6x1, dívida pública, Nordeste" />
     {escopo !== 'presidente' && <input type="hidden" name="escopo" value={escopo} />}
     <button class="botao" type="submit">Buscar</button>
   </div>
+  <p class="busca-estado" aria-live="polite"></p>
 </form>
+
+<script>
+  import { buscaPorPagina, destinoDaBusca } from '../lib/busca-navegador.mjs';
+  import { medir } from '../lib/medicao.mjs';
+
+  for (const form of document.querySelectorAll('form.busca-caixa')) {
+    const campo = form.querySelector('input[name="q"]');
+    const estado = form.querySelector('.busca-estado');
+    const escopo = form.dataset.escopo || 'presidente';
+    // na página filtrada, a caixa mostra a consulta em vigor
+    const params = new URLSearchParams(location.search);
+    if (params.get('q') && !campo.value) campo.value = params.get('q');
+
+    form.addEventListener('submit', async (ev) => {
+      ev.preventDefault();
+      const q = campo.value.trim();
+      if (!q) return;
+      estado.textContent = 'Buscando…';
+      let r;
+      try {
+        r = await buscaPorPagina(escopo, q);
+      } catch {
+        // sem índice, vale o caminho sem JavaScript: a página de resultados
+        form.submit();
+        return;
+      }
+      medir('busca_feita', { resultados: r.propostas.length, modo: r.modo, direto: !r.semDireto });
+      const destino = destinoDaBusca(escopo, q, r.porPagina, params.get('c') || '');
+      if (!destino) {
+        estado.textContent = 'Nenhuma proposta fala disso. Tente outras palavras, ou navegue pelos temas.';
+        return;
+      }
+      estado.textContent = r.porPagina.length > 1
+        ? `${r.propostas.length} propostas em ${r.porPagina.length} temas; abrindo ${r.porPagina[0].nome}…`
+        : `${r.propostas.length} propostas em ${r.porPagina[0].nome}; abrindo…`;
+      location.assign(destino);
+    });
+  }
+</script>
 
 <style>
   .busca-caixa { margin: 1.2rem 0 1.6rem; max-width: 46rem; }
@@ -22,6 +63,7 @@ const { escopo = 'presidente', compacta = false } = Astro.props;
   .busca-caixa .linha { display: flex; gap: .5rem; }
   .busca-caixa .campo { flex: 1 1 auto; min-width: 0; }
   .busca-caixa .botao { flex: none; }
+  .busca-caixa .busca-estado { margin: .35rem 0 0; min-height: 1.2rem; font-size: .88rem; color: var(--tinta-suave); }
   .busca-caixa.compacta { margin: .6rem 0 1rem; }
   @media (max-width: 480px) {
     .busca-caixa .linha { flex-wrap: wrap; }
