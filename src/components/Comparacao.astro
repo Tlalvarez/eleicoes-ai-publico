@@ -3,7 +3,7 @@
  * A comparação de um tema: uma coluna por candidato (ordem alfabética), cada
  * proposta escrita UMA vez, esticada sobre as colunas de quem a faz. Quem
  * propõe o contrário aparece em vermelho na própria coluna, dentro da mesma
- * faixa. Tocar na proposta abre os trechos do programa de cada candidato.
+ * caixa de temas. Tocar na proposta abre os trechos do programa de cada candidato.
  *
  * O layout (seções por número de candidatos, posição e largura de cada
  * cartão) sai de src/lib/comparacao.mjs — a MESMA função que o navegador
@@ -46,14 +46,15 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </ol>
   </nav>
 
-  <nav class="faixa-temas" aria-label="Temas">
-    <ul>
+  <div class="faixa-temas">
+    <label for="tema-atual">Tema</label>
+    <select id="tema-atual" class="seletor-tema" data-base={base}>
       {paginas.map((p) => (
-        <li><a href={`${base}/${p.id}`} aria-current={p.id === dados.pagina ? 'page' : undefined}
-          data-evento="tema_aberto" data-tema={p.id} data-origem="faixa">{p.nome}</a></li>
+        <option value={p.id} selected={p.id === dados.pagina}>{p.nome}</option>
       ))}
-    </ul>
-  </nav>
+    </select>
+    <span class="dica-tema" aria-hidden="true">{paginas.length} temas</span>
+  </div>
 
   <section class="abertura">
     <h1>{dados.titulo}</h1>
@@ -78,6 +79,11 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     <p class="contagem" aria-live="polite">
       <span class="contagem-n">{L.total}</span> propostas · <span class="contagem-contra">{comContra}</span> com posição contrária declarada
     </p>
+  </div>
+
+  <div class="aviso-girar" role="status" hidden>
+    <p><strong>Gire o celular</strong> para ver as colunas dos candidatos lado a lado.</p>
+    <button type="button" class="botao secundario fechar-aviso">Fechar</button>
   </div>
 
   <div class="quadro">
@@ -143,8 +149,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   </p>
 
   <dialog class="trechos" aria-labelledby="trechos-titulo">
-    <button type="button" class="botao secundario fechar">Fechar</button>
-    <p class="subtema"></p>
+    <div class="topo">
+      <p class="subtema"></p>
+      <button type="button" class="botao secundario fechar">Fechar</button>
+    </div>
     <h2 id="trechos-titulo"></h2>
     <div class="corpo"></div>
   </dialog>
@@ -220,10 +228,22 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       }
     }
 
+    const sufixo = (sel) => { const c = urlDaSelecao(sel, ordem); return c ? `?c=${c}` : ''; };
+
     function guardaNaUrl(sel) {
-      const c = urlDaSelecao(sel, ordem);
       // a vírgula fica legível (`?c=lula,romeu-zema`): o endereço é para ser compartilhado
-      history.replaceState(null, '', location.pathname + (c ? `?c=${c}` : '') + location.hash);
+      history.replaceState(null, '', location.pathname + sufixo(sel) + location.hash);
+    }
+
+    // a caixa de temas troca de página levando a seleção de candidatos junto
+    const seletorTema = raiz.querySelector('.seletor-tema');
+    if (seletorTema) {
+      seletorTema.addEventListener('change', () => {
+        const id = seletorTema.value;
+        if (id === D.tema) return;
+        medir('tema_aberto', { tema: id, origem: 'faixa' });
+        location.assign(`${seletorTema.dataset.base}/${id}${sufixo(selecao)}`);
+      });
     }
 
     for (const ch of chips) {
@@ -246,10 +266,15 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     // o cabeçalho congelado acompanha a rolagem lateral do corpo
     rolagem.addEventListener('scroll', () => { cabecalho.scrollLeft = rolagem.scrollLeft; }, { passive: true });
 
-    // o tema atual fica à vista na faixa
-    const faixa = raiz.querySelector('.faixa-temas');
-    const atual = faixa?.querySelector('[aria-current="page"]');
-    if (faixa && atual) faixa.scrollLeft = Math.max(0, atual.offsetLeft - faixa.clientWidth / 2 + atual.offsetWidth / 2);
+    // no celular em pé, as colunas não cabem: o aviso pede para girar, e some
+    // sozinho quando o aparelho gira (ou quando a pessoa o fecha)
+    const aviso = raiz.querySelector('.aviso-girar');
+    const emPe = matchMedia('(orientation: portrait) and (max-width: 760px)');
+    let avisoFechado = false;
+    const mostraAviso = () => { aviso.hidden = avisoFechado || !emPe.matches; };
+    aviso.querySelector('.fechar-aviso').addEventListener('click', () => { avisoFechado = true; mostraAviso(); });
+    emPe.addEventListener('change', mostraAviso);
+    mostraAviso();
 
     // ---------------------------------------------------------- os trechos
     const dlg = raiz.querySelector('dialog.trechos');
@@ -310,21 +335,29 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 <style is:global>
   /* A página da comparação. Tudo sob .comparacao, porque parte da estrutura
      é criada pelo navegador ao filtrar candidatos — estilo escopado não a alcançaria. */
-  .comparacao { --faixa-altura: 2.7rem; }
   .comparacao .trilha ol { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0 0 .6rem; padding: 0; list-style: none; font-size: .88rem; color: var(--tinta-suave); }
   .comparacao .trilha li + li::before { content: '›'; margin-right: .3rem; color: var(--tinta-suave); }
   .comparacao .trilha a { color: var(--acento); }
   .comparacao .trilha [aria-current] { font-weight: 700; color: var(--tinta); }
 
+  .comparacao { --faixa-altura: 3.3rem; }
   .comparacao .faixa-temas { position: sticky; top: 0; z-index: 20; height: var(--faixa-altura); margin: 0 0 1rem;
-    overflow-x: auto; overflow-y: hidden; -webkit-overflow-scrolling: touch; scrollbar-width: none;
-    background: var(--papel); border-bottom: 1px solid var(--linha); }
-  .comparacao .faixa-temas::-webkit-scrollbar { display: none; }
-  .comparacao .faixa-temas ul { display: flex; gap: .25rem; margin: 0; padding: .3rem 0; list-style: none; white-space: nowrap; }
-  .comparacao .faixa-temas a { display: inline-block; padding: .28rem .7rem; border-radius: 999px; color: var(--tinta); text-decoration: none;
-    font-size: .86rem; font-weight: 600; line-height: 1.3; }
-  .comparacao .faixa-temas a:hover { background: var(--realce); }
-  .comparacao .faixa-temas a[aria-current='page'] { background: var(--acento-forte); color: var(--branco); }
+    display: flex; align-items: center; gap: .6rem; background: var(--papel); border-bottom: 1px solid var(--linha); }
+  .comparacao .faixa-temas label { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
+  .comparacao .seletor-tema { flex: 0 1 26rem; min-width: 0; min-height: var(--alvo); padding: .35rem 2.2rem .35rem .8rem;
+    font: inherit; font-weight: 600; color: var(--tinta); background: var(--cartao); border: 1px solid var(--linha-forte); border-radius: 8px;
+    appearance: none; -webkit-appearance: none; cursor: pointer;
+    background-image: linear-gradient(45deg, transparent 50%, var(--acento-forte) 50%), linear-gradient(135deg, var(--acento-forte) 50%, transparent 50%);
+    background-position: calc(100% - 1.1rem) 50%, calc(100% - .7rem) 50%; background-size: .4rem .4rem; background-repeat: no-repeat; }
+  .comparacao .seletor-tema:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+  .comparacao .dica-tema { font-size: .82rem; color: var(--tinta-suave); white-space: nowrap; }
+
+  /* o aviso flutua no rodapé da tela: quem entra na página o vê sem rolar */
+  .comparacao .aviso-girar { position: fixed; left: .8rem; right: .8rem; bottom: .8rem; z-index: 30;
+    display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .6rem .9rem;
+    background: var(--cartao); border: 1px solid var(--azul-claro); border-radius: var(--raio); box-shadow: var(--sombra); }
+  .comparacao .aviso-girar[hidden] { display: none; }
+  .comparacao .aviso-girar p { margin: 0; font-size: .92rem; }
 
   .comparacao .abertura .lead { max-width: 52em; }
 
@@ -387,17 +420,22 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao dialog.trechos::backdrop { background: rgba(23, 54, 93, .35); }
   .comparacao dialog.trechos::before { content: ''; display: block; height: 5px; margin: 0 -1.3rem 1rem;
     background: linear-gradient(90deg, var(--amarelo) 0 34%, var(--verde) 34% 52%, var(--azul-claro) 52% 78%, var(--laranja) 78% 100%); }
-  .comparacao dialog.trechos h2 { font-size: 1.15rem; margin: 0 2.8rem .2rem 0; }
-  .comparacao dialog.trechos .subtema { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-suave); margin: 0; }
+  .comparacao dialog.trechos .topo { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin: 0 0 .3rem; }
+  .comparacao dialog.trechos h2 { font-size: 1.15rem; margin: 0 0 .4rem; overflow-wrap: anywhere; }
+  .comparacao dialog.trechos .subtema { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-suave); margin: 0; min-width: 0; }
+  .comparacao dialog.trechos .fechar { flex: none; }
   .comparacao dialog.trechos h3 { font-size: .84rem; text-transform: uppercase; letter-spacing: .09em; color: var(--acento-forte); margin: 1.3rem 0 .3rem; }
-  .comparacao dialog.trechos blockquote { margin: .5rem 0; padding: .1rem 1rem; border-left: 3px solid var(--acento); color: var(--tinta); font-size: .95rem; white-space: pre-wrap; }
+  .comparacao dialog.trechos blockquote { margin: .5rem 0; padding: .1rem 1rem; border-left: 3px solid var(--acento); color: var(--tinta); font-size: .95rem; white-space: pre-line; overflow-wrap: anywhere; }
   .comparacao dialog.trechos .nota { font-size: .9rem; color: var(--tinta-suave); margin: 0 0 .3rem; }
-  .comparacao dialog.trechos .fechar { position: absolute; top: .7rem; right: .7rem; }
   .comparacao dialog.trechos .link-tse { margin: .2rem 0 0; font-size: .86rem; }
   .comparacao dialog.trechos .link-tse a { color: var(--acento); font-weight: 600; }
 
   @media (max-width: 760px) {
     .comparacao .grade { grid-template-columns: repeat(var(--n), 15rem); }
+    .comparacao .dica-tema { display: none; }
+    .comparacao .seletor-tema { flex: 1 1 auto; }
+    .comparacao dialog.trechos { width: 94vw; padding: 0 .9rem .9rem; }
+    .comparacao dialog.trechos::before { margin: 0 -.9rem .8rem; }
     .comparacao .chip span { max-width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   }
 </style>

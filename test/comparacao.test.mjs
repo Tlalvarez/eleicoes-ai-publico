@@ -68,10 +68,13 @@ test('exclusivas sem contrário vão para a pilha da coluna; com contrário, vir
   assert.deepEqual(faixas.sort(), ['p4', 'p6']);
 });
 
-test('as seções são pelo número de candidatos que propõem, na ordem crescente', () => {
+test('as seções são pelo número de candidatos que propõem, do que todos propõem ao que só um propõe', () => {
   const L = layout(PROPOSTAS, ORDEM);
   const secoes = L.linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo);
-  assert.deepEqual(secoes, [rotuloDaSecao(1), rotuloDaSecao(2), rotuloDaSecao(5)]);
+  assert.deepEqual(secoes, [rotuloDaSecao(5), rotuloDaSecao(2), rotuloDaSecao(1)]);
+  assert.equal(L.linhas.at(-1).tipo, 'pilhas', 'as exclusivas sem contrário fecham a página');
+  const tipos = L.linhas.map((l) => l.tipo);
+  assert.ok(tipos.indexOf('pilhas') > tipos.lastIndexOf('secao'), 'as faixas com contrário vêm antes das pilhas');
   assert.equal(rotuloDaSecao(3), 'Três candidatos propõem');
   assert.equal(rotuloDaSecao(7), '7 candidatos propõem');
 });
@@ -85,7 +88,7 @@ test('filtrar candidatos recalcula só com quem está na tela', () => {
   assert.equal(p5.largura, 2, 'todos os cinco vira "os dois": faixa de a a c');
   assert.deepEqual(p5.colunas, ['concorda', 'concorda']);
   const secoes = L.linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo);
-  assert.deepEqual(secoes, [rotuloDaSecao(1), rotuloDaSecao(2)]);
+  assert.deepEqual(secoes, [rotuloDaSecao(2), rotuloDaSecao(1)]);
 });
 
 test('quem discorda fora da tela não entra na faixa', () => {
@@ -101,9 +104,9 @@ test('com um candidato só, não há seção — só a pilha dele', () => {
   assert.deepEqual(L.linhas[0].pilhas[0].map((c) => c.id), ['p3', 'p1', 'p5'], 'por subtema');
 });
 
-test('a ordem é: menos candidatos primeiro, depois a combinação de colunas, depois o subtema', () => {
+test('a ordem é: mais candidatos primeiro, depois a combinação de colunas, depois o subtema', () => {
   const ids = ordena(PROPOSTAS, ORDEM).map((x) => x.id);
-  assert.deepEqual(ids, ['p1', 'p4', 'p2', 'p6', 'p3', 'p5']);
+  assert.deepEqual(ids, ['p5', 'p3', 'p1', 'p4', 'p2', 'p6']);
 });
 
 test('a seleção da URL ignora slug desconhecido e trata vazio ou completo como "todos"', () => {

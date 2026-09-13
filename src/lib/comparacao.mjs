@@ -79,13 +79,18 @@ function faixa(p, ordem, idx) {
   return { ini: Math.min(...ii), fim: Math.max(...ii) };
 }
 
-/** Ordem de leitura: menos candidatos primeiro; depois pela combinação de quem propõe; depois o subtema. */
+/**
+ * Ordem de leitura: MAIS candidatos primeiro (o que todos propõem abre a
+ * página; o que só um propõe fecha — decisão do Thiago em 13/09: começar por
+ * onde se parecem e separá-los depois); dentro do mesmo número, pela
+ * combinação de quem propõe; depois o subtema.
+ */
 export function ordena(propostas, ordem) {
   const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
   return propostas.slice().sort((x, y) => {
     const qx = quem(x, ordem).map((s) => idx[s]);
     const qy = quem(y, ordem).map((s) => idx[s]);
-    if (qx.length !== qy.length) return qx.length - qy.length;
+    if (qx.length !== qy.length) return qy.length - qx.length;
     for (let i = 0; i < qx.length; i += 1) {
       if (qx[i] !== qy[i]) return qx[i] - qy[i];
     }
@@ -98,36 +103,36 @@ export function ordena(propostas, ordem) {
  * colunas). Uma proposta só aparece se ao menos um selecionado a faz;
  * quem está fora da seleção não conta nem como faixa nem como contrário.
  *
- * Devolve linhas, na ordem da página:
+ * Devolve linhas, na ordem da página (do que todos propõem ao que só um propõe):
  *   { tipo: 'secao', rotulo }
- *   { tipo: 'pilhas', pilhas: [[cartao...], ...] }   uma pilha por coluna (exclusivas sem contrário)
  *   { tipo: 'cartao', ...cartao }
+ *   { tipo: 'pilhas', pilhas: [[cartao...], ...] }   uma pilha por coluna (exclusivas sem contrário)
  */
 export function layout(propostas, ordem) {
   const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
   const n = ordem.length;
   const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0), ordem);
   const linhas = [];
-  const exclusivas = visiveis.filter((p) => quem(p, ordem).length === 1);
-  if (exclusivas.length) {
-    // com um candidato só na tela, não há o que rotular
-    if (n > 1) linhas.push({ tipo: 'secao', rotulo: rotuloDaSecao(1) });
-    // só quem não tem contrário fica na pilha da coluna; com contrário, a faixa cobre os dois
-    const pilhas = ordem.map((s, i) => exclusivas
-      .filter((p) => quem(p, ordem)[0] === s && !contra(p, ordem).length)
-      .map((p) => cartao(p, ordem, idx, i, 1)));
-    linhas.push({ tipo: 'pilhas', pilhas });
-    for (const p of exclusivas.filter((p) => contra(p, ordem).length)) {
-      const f = faixa(p, ordem, idx);
-      linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
-    }
-  }
-  let secao = 1;
+  let secao = 0;
   for (const p of visiveis.filter((p) => quem(p, ordem).length >= 2)) {
     const k = quem(p, ordem).length;
     if (k !== secao) { secao = k; linhas.push({ tipo: 'secao', rotulo: rotuloDaSecao(k) }); }
     const f = faixa(p, ordem, idx);
     linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
+  }
+  const exclusivas = visiveis.filter((p) => quem(p, ordem).length === 1);
+  if (exclusivas.length) {
+    // com um candidato só na tela, não há o que rotular
+    if (n > 1) linhas.push({ tipo: 'secao', rotulo: rotuloDaSecao(1) });
+    // com contrário, a faixa cobre os dois e vem antes; sem contrário, a proposta fica na pilha da coluna
+    for (const p of exclusivas.filter((p) => contra(p, ordem).length)) {
+      const f = faixa(p, ordem, idx);
+      linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
+    }
+    const pilhas = ordem.map((s, i) => exclusivas
+      .filter((p) => quem(p, ordem)[0] === s && !contra(p, ordem).length)
+      .map((p) => cartao(p, ordem, idx, i, 1)));
+    linhas.push({ tipo: 'pilhas', pilhas });
   }
   return { n, linhas, total: visiveis.length };
 }

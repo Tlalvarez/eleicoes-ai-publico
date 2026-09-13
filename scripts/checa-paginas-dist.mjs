@@ -7,7 +7,7 @@
  *     pronta (data/comparacao/presidente/*.json) — tema exportado e sem link
  *     é tema invisível;
  *   · cada /presidente/<tema>.html traz uma coluna por candidato do JSON, um
- *     cartão por proposta, o seletor de candidatos e a faixa de temas;
+ *     cartão por proposta, o seletor de candidatos e a caixa de temas;
  *   · /governador/<uf>.html existe para as 27 UFs; sem dados, diz "em
  *     preparação"; com dados, linka cada tema pronto, e cada tema existe;
  *   · nenhuma página construída traz o chat (formulário de pergunta) nem
@@ -51,8 +51,10 @@ function confereTema(rel, dados, base, paginas) {
     falhas.push(`${rel}: ${cartoes} cartões para ${dados.propostas.length} propostas do JSON`);
   }
   for (const id of paginas) {
-    if (!contaLinks(html, `${base}/${id}`)) falhas.push(`${rel}: a faixa de temas não linka ${base}/${id}`);
+    if (!new RegExp(`<option value="${escapa(id)}"`).test(html)) falhas.push(`${rel}: a caixa de temas não traz ${id}`);
   }
+  if (!new RegExp(`<option value="${escapa(dados.pagina)}"[^>]*selected`).test(html)) falhas.push(`${rel}: a caixa de temas não marca o tema atual`);
+  if (!new RegExp(`class="seletor-tema" data-base="${escapa(base)}"`).test(html)) falhas.push(`${rel}: a caixa de temas não sabe o escopo (${base})`);
   if (!/<dialog class="trechos"/.test(html)) falhas.push(`${rel}: sem o painel de trechos`);
   if (!/__comparacao/.test(html)) falhas.push(`${rel}: os dados da comparação não foram embutidos`);
 }
@@ -105,5 +107,5 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (páginas): home e hub linkam os ${prontas.length} temas de presidente; cada tema traz colunas, `
-  + `cartões, seletor e faixa; ${UFS.length} UFs por cargo (${CARGOS_POR_UF.map((c) => c.nome).join(', ')}), `
+  + `cartões, seletor e caixa de temas; ${UFS.length} UFs por cargo (${CARGOS_POR_UF.map((c) => c.nome).join(', ')}), `
   + 'com dados ou "em preparação"; nenhuma página traz o chat');
