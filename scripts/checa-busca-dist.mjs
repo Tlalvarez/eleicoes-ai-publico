@@ -45,6 +45,13 @@ for (const { id, pasta } of escopos) {
     falhas.push(`${id}: documentos.json tem ${docs.propostas.length}/${docs.blocos.length}, indice.json declara ${indice.propostas}/${indice.blocos}`);
   }
 }
+// a matriz cruza temas ao buscar: os JSONs de comparação têm de estar publicados
+for (const { id } of escopos) {
+  const pasta = join(DIST, 'comparacao', id);
+  if (!existsSync(pasta)) { falhas.push(`dist/comparacao/${id} não foi publicada — a busca não consegue trazer os outros temas`); continue; }
+  const jsons = readdirSync(pasta).filter((n) => n.endsWith('.json'));
+  if (!jsons.length) falhas.push(`dist/comparacao/${id} está vazia`);
+}
 const pagina = join(DIST, 'busca.html');
 if (!existsSync(pagina)) falhas.push('dist/busca.html não foi construída');
 else {

@@ -46,7 +46,7 @@ export async function buscaPorPagina(escopo, q) {
   return { modo: r.modo, propostas, porPagina, semDireto: r.sem_direto };
 }
 
-/** O endereço da matriz filtrada: a página do melhor resultado, com `q` (e a seleção de candidatos, se houver). */
+/** O endereço da matriz filtrada: a página do melhor resultado (a matriz cruza todos os temas de lá), com `q` (e a seleção de candidatos, se houver). */
 export function destinoDaBusca(escopo, q, porPagina, selecao = '') {
   if (!porPagina.length) return null;
   const partes = [`q=${encodeURIComponent(q)}`];

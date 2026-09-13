@@ -48,6 +48,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </ol>
   </nav>
 
+  <div class="busca-tema">
+    <button type="button" class="abrir-busca" aria-expanded="false" aria-controls="busca-no-tema">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span>Buscar nos programas</span>
+    </button>
+    <div id="busca-no-tema" class="busca-dobra" hidden>
+      <Busca compacta escopo={escopoBusca} />
+    </div>
+  </div>
+
   <div class="faixa-temas">
     <label for="tema-atual">Tema</label>
     <select id="tema-atual" class="seletor-tema" data-base={base}>
@@ -66,6 +76,11 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </p>
   </section>
 
+  <div class="filtro-busca" role="status" hidden>
+    <p class="filtro-texto"></p>
+    <p class="filtro-acoes"><a class="limpar" href={`${base}/${dados.pagina}`}>Limpar a busca e ver o tema inteiro</a></p>
+  </div>
+
   <div class="seletor" role="group" aria-label="Candidatos na comparação">
     <p class="seletor-rotulo">Comparar:</p>
     <ul>
@@ -81,22 +96,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     <p class="contagem" aria-live="polite">
       <span class="contagem-n">{L.total}</span> <span class="contagem-rotulo">{L.total === 1 ? 'proposta' : 'propostas'}</span>
     </p>
-  </div>
-
-  <div class="busca-tema">
-    <button type="button" class="abrir-busca" aria-expanded="false" aria-controls="busca-no-tema">
-      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-      <span>Buscar nos programas</span>
-    </button>
-    <div id="busca-no-tema" class="busca-dobra" hidden>
-      <Busca compacta escopo={escopoBusca} />
-    </div>
-  </div>
-
-  <div class="filtro-busca" role="status" hidden>
-    <p class="filtro-texto"></p>
-    <p class="filtro-outros"></p>
-    <p class="filtro-acoes"><a class="limpar" href={`${base}/${dados.pagina}`}>Ver todas as propostas deste tema</a></p>
   </div>
 
   <div class="aviso-girar" role="status" hidden>
@@ -190,6 +189,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const ordem = D.candidatos.map((c) => c.slug);
     const C = Object.fromEntries(D.candidatos.map((c) => [c.slug, c]));
     const porId = Object.fromEntries(D.propostas.map((p) => [p.id, p]));
+    const nomeDoTema = Object.fromEntries([...raiz.querySelectorAll('.seletor-tema option')].map((o) => [o.value, o.textContent]));
     const grade = raiz.querySelector('.grade-propostas');
     const cabecalho = raiz.querySelector('.cabecalho-colunas');
     const rolagem = raiz.querySelector('.rolagem');
@@ -207,13 +207,28 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
     // ---------------------------------------------------------- a seleção
     let selecao = ordem.slice();
-    // `?q=`: só os cartões que falam do assunto (ids vindos da busca); null = todos
+    // `?q=`: a busca cruza temas — a matriz passa a mostrar só o que fala do
+    // assunto, deste tema e dos outros (propostas trazidas dos JSONs das outras
+    // páginas, com id `tema/pid`); null = o tema inteiro
     let filtro = null;
+    let externas = [];
     const consulta = (new URLSearchParams(location.search).get('q') || '').trim();
-    const propostasVisiveis = () => (filtro ? D.propostas.filter((p) => filtro.has(p.id)) : D.propostas);
+    const propostasVisiveis = () => (filtro ? [...D.propostas, ...externas].filter((p) => filtro.has(p.id)) : D.propostas);
+
+    function criaCartao(p) {
+      const b = el('button', 'proposta');
+      b.type = 'button';
+      b.dataset.p = p.id;
+      b.append(el('span', 'colunas'));
+      const conteudo = el('span', 'conteudo');
+      conteudo.append(el('span', 'texto', p.proposta));
+      b.append(conteudo);
+      cartoes.set(p.id, b);
+      return b;
+    }
 
     function posiciona(c) {
-      const b = cartoes.get(c.id);
+      const b = cartoes.get(c.id) ?? criaCartao(porId[c.id]);
       b.style.gridColumn = `${c.ini + 1} / span ${c.largura}`;
       b.style.setProperty('--l', String(c.largura));
       b.classList.toggle('com-contra', c.comContra);
@@ -249,17 +264,18 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     }
 
     // `?c=lula,romeu-zema`: a vírgula fica legível, o endereço é para ser compartilhado
-    // `?q=` (a busca) e `?c=` (os candidatos) acompanham a troca de tema
-    const sufixo = (sel) => {
+    // `?c=` (os candidatos) acompanha a troca de tema; `?q=` não — o resultado
+    // da busca já é de todos os temas, e trocar de tema é sair dela
+    const sufixo = (sel, comBusca = false) => {
       const partes = [];
-      if (consulta) partes.push(`q=${encodeURIComponent(consulta)}`);
+      if (comBusca && consulta) partes.push(`q=${encodeURIComponent(consulta)}`);
       const c = urlDaSelecao(sel, ordem);
       if (c) partes.push(`c=${c}`);
       return partes.length ? `?${partes.join('&')}` : '';
     };
 
     function guardaNaUrl(sel) {
-      history.replaceState(null, '', location.pathname + sufixo(sel) + location.hash);
+      history.replaceState(null, '', location.pathname + sufixo(sel, true) + location.hash);
     }
 
     // a caixa de temas troca de página levando a seleção de candidatos junto
@@ -290,40 +306,63 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const daUrl = selecaoDaUrl(new URLSearchParams(location.search).get('c'), ordem);
     if (daUrl) aplica(daUrl);
 
-    // a matriz filtrada pela busca: a página mostra só o que fala do assunto e
-    // diz em que outros temas ele aparece
+    // a matriz filtrada pela busca: cruza todos os temas do escopo. As
+    // propostas dos outros temas vêm dos JSONs publicados em /comparacao/, com
+    // os blocos citados (o painel de trechos precisa deles)
     const barra = raiz.querySelector('.filtro-busca');
+    const titulo = raiz.querySelector('.abertura h1');
+    const lead = raiz.querySelector('.abertura .lead');
+    async function carregaTema(escopo, pagina) {
+      const r = await fetch(`/comparacao/${escopo}/${pagina}.json`);
+      if (!r.ok) throw new Error(`${pagina}: ${r.status}`);
+      return r.json();
+    }
     async function filtraPelaBusca(q) {
       const escopo = raiz.querySelector('.seletor-tema')?.dataset.base?.replace(/^\//, '') || 'presidente';
       barra.querySelector('.filtro-texto').textContent = `Buscando "${q}"…`;
       barra.hidden = false;
       let r;
       try { r = await buscaPorPagina(escopo, q); } catch {
-        barra.querySelector('.filtro-texto').textContent = 'Não consegui carregar a busca; mostrando todas as propostas do tema.';
+        barra.querySelector('.filtro-texto').textContent = 'Não consegui carregar a busca; mostrando o tema inteiro.';
         return;
       }
-      const aqui = r.porPagina.find((g) => g.pagina === D.tema);
-      filtro = new Set(aqui ? aqui.ids : []);
-      aplica(selecao);
-      const n = filtro.size;
-      barra.querySelector('.filtro-texto').textContent = n
-        ? `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" neste tema${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`
-        : `Nenhuma proposta sobre "${q}" neste tema.`;
-      const outros = r.porPagina.filter((g) => g.pagina !== D.tema);
-      const po = barra.querySelector('.filtro-outros');
-      po.replaceChildren();
-      if (outros.length) {
-        po.append(el('span', '', 'Também em: '));
-        outros.forEach((g, i) => {
-          const a = el('a', '', `${g.nome} (${g.n})`);
-          a.href = `/${escopo}/${g.pagina}${sufixo(selecao)}`;
-          a.dataset.evento = 'tema_aberto';
-          a.dataset.tema = g.pagina;
-          a.dataset.origem = 'busca';
-          po.append(a);
-          if (i < outros.length - 1) po.append(el('span', '', ' · '));
-        });
+      const ids = new Set();
+      externas = [];
+      for (const g of r.porPagina) {
+        if (g.pagina === D.tema) {
+          for (const pid of g.ids) ids.add(pid);
+          continue;
+        }
+        let outro;
+        try { outro = await carregaTema(escopo, g.pagina); } catch { continue; }
+        const quer = new Set(g.ids);
+        for (const p of outro.propostas) {
+          if (!quer.has(p.id)) continue;
+          const id = `${g.pagina}/${p.id}`;
+          const copia = { ...p, id, subtema: `${g.nome} · ${p.subtema}`, tema: g.pagina };
+          porId[id] = copia;
+          externas.push(copia);
+          ids.add(id);
+        }
+        // os blocos citados pelas propostas do outro tema, para o painel de trechos
+        for (const [slug, bl] of Object.entries(outro.blocos ?? {})) {
+          D.blocos[slug] = { ...(D.blocos[slug] ?? {}), ...bl };
+        }
       }
+      // as deste tema também ganham o nome do tema no cabeçalho, para a leitura ser uniforme
+      for (const p of D.propostas) {
+        if (ids.has(p.id) && !p.subtemaOriginal) { p.subtemaOriginal = p.subtema; p.subtema = `${nomeDoTema[D.tema] ?? D.tema} · ${p.subtema}`; }
+      }
+      filtro = ids;
+      aplica(selecao);
+      const n = ids.size;
+      const temas = r.porPagina.length;
+      barra.querySelector('.filtro-texto').textContent = n
+        ? `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" em ${temas} tema${temas > 1 ? 's' : ''}${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`
+        : `Nenhuma proposta sobre "${q}".`;
+      if (titulo) titulo.textContent = `"${q}": o que cada candidato propõe`;
+      if (lead) lead.textContent = 'Resultado da busca em todos os temas. Uma proposta feita por mais de um candidato aparece uma vez, sobre as colunas de quem a faz. Toque para ler o trecho do programa.';
+      document.title = `"${q}" · Busca · eleicoes.ai`;
     }
     if (consulta) filtraPelaBusca(consulta);
 
@@ -468,7 +507,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .chip:hover { border-color: var(--azul-claro); }
   .comparacao .contagem { flex-basis: 100%; }
 
-  .comparacao .busca-tema { margin: 0 0 .8rem; }
+  .comparacao .busca-tema { margin: .2rem 0 .8rem; }
   .comparacao .abrir-busca { display: inline-flex; align-items: center; gap: .45rem; min-height: var(--alvo); padding: .3rem .9rem .3rem .7rem;
     font: inherit; font-size: .9rem; font-weight: 600; color: var(--acento); background: var(--cartao); border: 1px solid var(--linha);
     border-radius: 999px; cursor: pointer; }
@@ -482,7 +521,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .filtro-busca[hidden] { display: none; }
   .comparacao .filtro-busca p { margin: 0; font-size: .92rem; }
   .comparacao .filtro-busca .filtro-texto { font-weight: 600; }
-  .comparacao .filtro-busca .filtro-outros:empty { display: none; }
   .comparacao .filtro-busca a { color: var(--acento); font-weight: 600; }
   .comparacao .filtro-busca .filtro-acoes { margin-top: .2rem; }
 
