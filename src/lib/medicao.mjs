@@ -58,6 +58,8 @@ export const EVENTOS = Object.freeze({
   comparacao_filtrada: ['tema', 'candidatos'],
   /** abriu o programa ou a candidatura no TSE */
   tse_aberto: ['slug'],
+  /** fez uma busca: quantos resultados, em que modo (lexical | hibrido), se houve resultado direto — nunca o texto */
+  busca_feita: ['resultados', 'modo', 'direto'],
 });
 
 const SLUGS_DE_CARGO = new Set(CARGOS.map((c) => c.slug));
@@ -164,6 +166,7 @@ export function contextoDoCaminho(caminho) {
   const limpo = String(caminho ?? '/').replace(/index\.html$/, '').replace(/\.html$/, '');
   const partes = limpo.split('/').filter(Boolean);
   if (!partes.length) return { cargo: '', uf: '', pagina: 'home' };
+  if (partes[0] === 'busca') return { cargo: '', uf: '', pagina: 'busca' };
   const [primeira, segunda, terceira] = partes;
   if (CARGOS_CONHECIDOS.has(primeira)) {
     // presidente é nacional: `/presidente/<tema>` é tema, nunca UF

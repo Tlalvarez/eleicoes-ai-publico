@@ -1,0 +1,203 @@
+---
+/**
+ * /busca — os resultados. A busca inteira roda no navegador
+ * (src/lib/busca.mjs): o índice é carregado de /busca/<escopo>/ sob demanda,
+ * e a única chamada de rede além disso é o vetor da consulta (/api/vetor);
+ * se ela falhar, a busca segue só lexical e a página diz.
+ *
+ * Os resultados são montados por createElement/textContent — o texto vem
+ * dos programas de governo, e o gate de render seguro vale aqui como em
+ * qualquer página.
+ */
+import Base from '../layouts/Base.astro';
+import Busca from '../components/Busca.astro';
+import { CARGOS_POR_UF, ufPorSigla } from '../lib/cargos.mjs';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
+import { RAIZ_PROJETO } from '../lib/comparacao-dados.mjs';
+import { paginas } from '../lib/comparacao-dados.mjs';
+
+// os escopos com índice exportado: presidente e, quando houver, governador/<uf>
+const escopos = [];
+if (existsSync(join(RAIZ_PROJETO, 'data', 'busca', 'presidente', 'indice.json'))) {
+  escopos.push({ id: 'presidente', nome: 'Presidente', base: '/presidente' });
+}
+for (const cargo of CARGOS_POR_UF) {
+  const pasta = join(RAIZ_PROJETO, 'data', 'busca', cargo.slug);
+  if (!existsSync(pasta)) continue;
+  for (const sigla of (await import('node:fs')).readdirSync(pasta)) {
+    if (!existsSync(join(pasta, sigla, 'indice.json'))) continue;
+    const uf = ufPorSigla(sigla);
+    if (uf) escopos.push({ id: `${cargo.slug}/${sigla}`, nome: `${cargo.nome} · ${uf.nome}`, base: `${cargo.href}/${sigla}` });
+  }
+}
+const nomesDePaginas = Object.fromEntries(paginas().map((p) => [p.id, p.nome]));
+const config = JSON.stringify({ escopos, paginas: nomesDePaginas }).replace(/</g, '\\u003c');
+---
+<Base title="Busca nos programas de governo"
+  description="Procure um assunto nos programas de governo registrados no TSE: propostas e trechos dos programas, por candidato.">
+  <div class="hero-home">
+    <p class="sobretitulo">Eleições gerais de 2026</p>
+    <h1>Buscar nos programas</h1>
+    <p class="lead">
+      Um assunto, uma palavra ou uma frase. A busca olha as propostas comparadas e o texto
+      integral dos programas registrados no TSE, e leva à proposta ou ao trecho.
+    </p>
+  </div>
+
+  <Busca compacta />
+
+  <p class="estado" aria-live="polite"></p>
+  <noscript><p class="estado">A busca precisa de JavaScript. Sem ele, navegue pelos <a href="/presidente">temas</a>.</p></noscript>
+
+  <section class="resultados" hidden>
+    <h2 class="titulo-propostas"></h2>
+    <ol class="lista-propostas lista-limpa"></ol>
+    <h2 class="titulo-trechos" hidden>Nos programas, fora das propostas comparadas</h2>
+    <ol class="lista-trechos lista-limpa"></ol>
+    <p class="sugestao-temas" hidden>Nenhuma proposta fala disso diretamente. Veja os <a href="/presidente">temas</a> ou tente outras palavras.</p>
+  </section>
+
+  <script is:inline define:vars={{ json: config }}>
+    globalThis.__busca = JSON.parse(json);
+  </script>
+
+  <script>
+    import { busca, carregaBusca, vetorDaConsulta } from '../lib/busca.mjs';
+    import { medir } from '../lib/medicao.mjs';
+
+    const cfg = globalThis.__busca;
+    const form = document.querySelector('form.busca-caixa');
+    const campo = form?.querySelector('input[name="q"]');
+    const estado = document.querySelector('p.estado');
+    const secao = document.querySelector('section.resultados');
+    const tituloP = secao.querySelector('.titulo-propostas');
+    const listaP = secao.querySelector('.lista-propostas');
+    const tituloT = secao.querySelector('.titulo-trechos');
+    const listaT = secao.querySelector('.lista-trechos');
+    const sugestao = secao.querySelector('.sugestao-temas');
+    const el = (tag, classe, texto) => {
+      const e = document.createElement(tag);
+      if (classe) e.className = classe;
+      if (texto !== undefined) e.textContent = texto;
+      return e;
+    };
+    const params = new URLSearchParams(location.search);
+    const escopo = cfg.escopos.find((e) => e.id === (params.get('escopo') || 'presidente')) ?? cfg.escopos[0];
+    let indice = null;
+
+    async function indicePronto() {
+      if (!indice) {
+        estado.textContent = 'Carregando o índice…';
+        indice = await carregaBusca(`/busca/${escopo.id}`);
+      }
+      return indice;
+    }
+
+    function nomes(slugs, dados) {
+      const por = Object.fromEntries(dados.candidatos.map((c) => [c.slug, c]));
+      return slugs.map((s) => por[s]?.nome ?? s).join(', ');
+    }
+
+    function itemProposta(p, dados) {
+      const li = el('li', `resultado${p.fraco ? ' fraco' : ''}`);
+      const a = el('a', 'cartao-resultado');
+      a.href = `${escopo.base}/${p.pagina}#p=${p.pid}`;
+      a.dataset.evento = 'tema_aberto';
+      a.dataset.tema = p.pagina;
+      a.dataset.origem = 'busca';
+      a.append(el('span', 'tema', cfg.paginas[p.pagina] ?? p.pagina));
+      a.append(el('span', 'subtema', p.subtema));
+      a.append(el('span', 'texto', p.texto));
+      li.append(a);
+      const quem = el('p', 'quem');
+      quem.append(el('span', '', `Propõem: ${nomes(p.candidatos, dados)}`));
+      if (p.contra?.length) quem.append(el('span', 'contra', ` · propõe o contrário: ${nomes(p.contra, dados)}`));
+      li.append(quem);
+      if (p.trechos?.length) {
+        const det = el('details', 'trechos-resultado');
+        det.append(el('summary', '', p.trechos.length === 1 ? 'Ver o trecho do programa' : `Ver ${p.trechos.length} trechos dos programas`));
+        for (const t of p.trechos.slice(0, 3)) {
+          const q = el('blockquote', '', t.texto);
+          q.append(el('span', 'fonte-chip', `${nomes([t.slug], dados)} · p. ${t.pdf_pagina}`));
+          det.append(q);
+        }
+        li.append(det);
+      }
+      return li;
+    }
+
+    function itemTrecho(t, dados) {
+      const li = el('li', `resultado trecho${t.fraco ? ' fraco' : ''}`);
+      const cab = el('p', 'quem');
+      cab.append(el('strong', '', nomes([t.slug], dados)));
+      cab.append(el('span', '', ` · ${cfg.paginas[t.pagina] ?? t.tema} · p. ${t.pdf_pagina}`));
+      li.append(cab);
+      li.append(el('blockquote', '', t.texto));
+      const c = dados.candidatos.find((x) => x.slug === t.slug);
+      if (c?.tse) {
+        const a = el('a', 'link-tse', 'Ver o programa no TSE ↗');
+        a.href = c.tse; a.target = '_blank'; a.rel = 'noopener noreferrer';
+        a.dataset.evento = 'tse_aberto'; a.dataset.slug = t.slug;
+        li.append(a);
+      }
+      return li;
+    }
+
+    async function executa(q) {
+      if (!q) { secao.hidden = true; estado.textContent = ''; return; }
+      document.title = `${q} · Busca · eleicoes.ai`;
+      let idx;
+      try { idx = await indicePronto(); } catch { estado.textContent = 'Não consegui carregar o índice da busca. Tente de novo.'; return; }
+      estado.textContent = 'Buscando…';
+      const vq = await vetorDaConsulta(q, { dims: idx.vetores.dims });
+      const r = busca(idx, q, vq);
+      listaP.replaceChildren(...r.propostas.map((p) => itemProposta(p, idx.dados)));
+      listaT.replaceChildren(...r.trechos.map((t) => itemTrecho(t, idx.dados)));
+      tituloP.textContent = r.propostas.length
+        ? (r.sem_direto ? 'Nenhuma proposta fala disso diretamente; as mais próximas' : `${r.propostas.length} proposta${r.propostas.length > 1 ? 's' : ''}`)
+        : 'Nenhuma proposta encontrada';
+      tituloT.hidden = !r.trechos.length;
+      sugestao.hidden = !r.sem_direto;
+      secao.hidden = false;
+      estado.textContent = r.modo === 'lexical' ? 'Busca por palavras (a busca por sentido está indisponível agora).' : '';
+      medir('busca_feita', { resultados: r.propostas.length + r.trechos.length, modo: r.modo, direto: !r.sem_direto });
+    }
+
+    if (form && campo) {
+      form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        const q = campo.value.trim();
+        const url = new URL(location.href);
+        if (q) url.searchParams.set('q', q); else url.searchParams.delete('q');
+        history.replaceState(null, '', url);
+        executa(q);
+      });
+      const inicial = (params.get('q') || '').trim();
+      if (inicial) { campo.value = inicial; executa(inicial); }
+    }
+  </script>
+
+  <style is:global>
+    .hero-home { margin-bottom: .6rem; }
+    .hero-home .lead { max-width: none; }
+    .sobretitulo { margin: 0 0 .6rem; color: var(--acento); font-size: .79rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+    p.estado { min-height: 1.4rem; margin: 0 0 .6rem; color: var(--tinta-suave); font-size: .92rem; }
+    .resultados h2 { font-size: 1.1rem; margin: 1.2rem 0 .6rem; }
+    .resultado { margin: 0 0 .8rem; padding: .8rem 1rem; border: 1px solid var(--linha); border-radius: var(--raio); background: var(--cartao); box-shadow: var(--sombra-leve); }
+    .resultado.fraco { opacity: .8; }
+    .cartao-resultado { display: flex; flex-direction: column; gap: .2rem; color: var(--tinta); text-decoration: none; }
+    .cartao-resultado .tema { font-size: .74rem; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; color: var(--acento); }
+    .cartao-resultado .subtema { font-size: .72rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta-suave); }
+    .cartao-resultado .texto { font-size: 1rem; font-weight: 600; line-height: 1.35; }
+    .cartao-resultado:hover .texto { color: var(--acento); text-decoration: underline; }
+    .resultado .quem { margin: .4rem 0 0; font-size: .88rem; color: var(--tinta-suave); }
+    .resultado .quem .contra { color: var(--atencao); font-weight: 600; }
+    .trechos-resultado { margin-top: .4rem; }
+    .trechos-resultado summary { cursor: pointer; font-size: .88rem; font-weight: 600; color: var(--acento); min-height: var(--alvo); display: flex; align-items: center; }
+    .resultado blockquote { margin: .4rem 0; padding: .1rem .9rem; border-left: 3px solid var(--acento); font-size: .93rem; overflow-wrap: anywhere; }
+    .resultado .fonte-chip { margin-left: .4rem; }
+    .resultado.trecho .quem { margin: 0 0 .3rem; }
+    .resultado .link-tse { font-size: .86rem; font-weight: 600; color: var(--acento); }
+  </style>
+</Base>

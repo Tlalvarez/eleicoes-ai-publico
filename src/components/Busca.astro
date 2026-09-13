@@ -1,0 +1,30 @@
+---
+/**
+ * A caixa de busca: um formulário GET para /busca, que funciona sem
+ * JavaScript (a página de resultados é que precisa dele). Usada na home e no
+ * hub de presidente.
+ */
+const { escopo = 'presidente', compacta = false } = Astro.props;
+---
+<form class={`busca-caixa${compacta ? ' compacta' : ''}`} action="/busca" method="get" role="search">
+  <label for={`busca-q-${escopo}`}>Buscar nos programas de governo</label>
+  <div class="linha">
+    <input class="campo" id={`busca-q-${escopo}`} name="q" type="search" maxlength="300" autocomplete="off"
+      placeholder="Ex.: creche, escala 6x1, dívida pública, Nordeste" />
+    {escopo !== 'presidente' && <input type="hidden" name="escopo" value={escopo} />}
+    <button class="botao" type="submit">Buscar</button>
+  </div>
+</form>
+
+<style>
+  .busca-caixa { margin: 1.2rem 0 1.6rem; max-width: 46rem; }
+  .busca-caixa label { display: block; margin: 0 0 .35rem; font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
+  .busca-caixa .linha { display: flex; gap: .5rem; }
+  .busca-caixa .campo { flex: 1 1 auto; min-width: 0; }
+  .busca-caixa .botao { flex: none; }
+  .busca-caixa.compacta { margin: .6rem 0 1rem; }
+  @media (max-width: 480px) {
+    .busca-caixa .linha { flex-wrap: wrap; }
+    .busca-caixa .botao { width: 100%; }
+  }
+</style>

@@ -5,19 +5,22 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node scripts/emite-cabecalhos-dist.mjs",
+    "build": "astro build && node scripts/publica-busca.mjs && node scripts/emite-cabecalhos-dist.mjs",
     "preview": "astro preview",
     "test": "npm run test:unit && npm run build && npm run test:dist",
     "deploy:pages": "wrangler pages deploy dist --project-name=eleicoes-ai --branch=main --commit-dirty=true",
     "test:unit": "npm run test:rotas && npm run test:medicao",
-    "test:dist": "npm run test:paginas-dist && npm run test:render-seguro && npm run test:cabecalhos && npm run test:acessibilidade",
+    "test:dist": "npm run test:paginas-dist && npm run test:busca-dist && npm run test:render-seguro && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:functions",
     "test:integracao": "npm run test",
     "test:rotas": "node --test test/*.test.mjs",
     "test:medicao": "node scripts/checa-medicao.mjs",
     "test:paginas-dist": "node scripts/checa-paginas-dist.mjs",
     "test:render-seguro": "node scripts/checa-render-seguro.mjs",
     "test:acessibilidade": "node scripts/checa-acessibilidade.mjs",
-    "test:cabecalhos": "node scripts/checa-cabecalhos-dist.mjs"
+    "test:cabecalhos": "node scripts/checa-cabecalhos-dist.mjs",
+    "test:busca-dist": "node scripts/checa-busca-dist.mjs",
+    "test:functions": "wrangler pages functions build --outdir .wrangler/functions-test",
+    "busca:gabarito-vetores": "node scripts/vetores-do-gabarito.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"
