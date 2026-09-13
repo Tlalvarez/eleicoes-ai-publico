@@ -321,6 +321,11 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     }
     async function filtraPelaBusca(q) {
       const escopo = raiz.querySelector('.seletor-tema')?.dataset.base?.replace(/^\//, '') || 'presidente';
+      // o resultado é de todos os temas: a caixa de temas sai da tela (senão
+      // parece que só este tema está sendo mostrado) e a trilha diz "Busca"
+      raiz.classList.add('em-busca');
+      const atual = raiz.querySelector('.trilha [aria-current="page"]');
+      if (atual) atual.textContent = 'Busca';
       barra.querySelector('.filtro-texto').textContent = `Buscando "${q}"…`;
       barra.hidden = false;
       let r;
@@ -475,6 +480,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .trilha [aria-current] { font-weight: 700; color: var(--tinta); }
 
   .comparacao { --faixa-altura: 3.3rem; }
+  .comparacao.em-busca { --faixa-altura: 0px; }
+  .comparacao.em-busca .faixa-temas { display: none; }
   .comparacao .faixa-temas { position: sticky; top: 0; z-index: 20; height: var(--faixa-altura); margin: 0 0 1rem;
     display: flex; align-items: center; gap: .6rem; background: var(--papel); border-bottom: 1px solid var(--linha); }
   .comparacao .faixa-temas label { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
