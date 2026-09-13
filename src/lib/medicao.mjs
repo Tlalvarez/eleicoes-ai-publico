@@ -56,8 +56,6 @@ export const EVENTOS = Object.freeze({
   proposta_aberta: ['tema', 'candidatos', 'com_contra'],
   /** tirou ou pôs um candidato na comparação (`candidatos`: quantos ficaram) */
   comparacao_filtrada: ['tema', 'candidatos'],
-  /** trocou a organização da página (`modo`: concordancia | assunto) */
-  comparacao_organizada: ['tema', 'modo'],
   /** abriu o programa ou a candidatura no TSE */
   tse_aberto: ['slug'],
   /** fez uma busca: quantos resultados, em que modo (lexical | hibrido), se houve resultado direto — nunca o texto */

@@ -120,7 +120,9 @@ export function modoDaUrl(param) {
   return MODOS.includes(param) ? param : 'concordancia';
 }
 
-export function layout(propostas, ordem, modo = 'concordancia') {
+// a página é organizada por ASSUNTO (decisão do Thiago em 13/09: sem
+// alternador); o modo por concordância continua disponível para quem chamar
+export function layout(propostas, ordem, modo = 'assunto') {
   const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
   const n = ordem.length;
   const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0), ordem);

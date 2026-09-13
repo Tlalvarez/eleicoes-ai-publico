@@ -33,7 +33,7 @@ test('quem e contra seguem a ordem das colunas', () => {
 });
 
 test('cada proposta aparece exatamente uma vez no layout', () => {
-  const L = layout(PROPOSTAS, ORDEM);
+  const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const ids = L.linhas.flatMap((l) => (l.tipo === 'cartao' ? [l.id] : l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => c.id) : []));
   assert.deepEqual(ids.slice().sort(), PROPOSTAS.map((x) => x.id).sort());
   assert.equal(L.total, PROPOSTAS.length);
@@ -41,7 +41,7 @@ test('cada proposta aparece exatamente uma vez no layout', () => {
 });
 
 test('a faixa cobre da primeira à última coluna de quem se posiciona, com o meio marcado', () => {
-  const L = layout(PROPOSTAS, ORDEM);
+  const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const p3 = L.linhas.find((l) => l.id === 'p3');
   assert.equal(p3.ini, 0);
   assert.equal(p3.largura, 3);
@@ -50,7 +50,7 @@ test('a faixa cobre da primeira à última coluna de quem se posiciona, com o me
 });
 
 test('quem discorda entra na faixa em vermelho, e o texto fica só sobre quem propõe', () => {
-  const L = layout(PROPOSTAS, ORDEM);
+  const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const p6 = L.linhas.find((l) => l.id === 'p6');       // d propõe, b contra: faixa b..d
   assert.equal(p6.ini, 1);
   assert.equal(p6.largura, 3);
@@ -61,7 +61,7 @@ test('quem discorda entra na faixa em vermelho, e o texto fica só sobre quem pr
 });
 
 test('exclusivas: um cabeçalho por subtema; sem contrário vão para a pilha da coluna, com contrário viram faixa', () => {
-  const L = layout(PROPOSTAS, ORDEM);
+  const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const i = L.linhas.findIndex((l) => l.tipo === 'secao' && l.rotulo === rotuloDaSecao(1));
   const depois = L.linhas.slice(i + 1);
   // subtemas em ordem alfabética, cada um com a sua linha de pilhas (só onde há cartão)
@@ -73,7 +73,7 @@ test('exclusivas: um cabeçalho por subtema; sem contrário vão para a pilha da
 });
 
 test('as seções são pelo número de candidatos que propõem, do que todos propõem ao que só um propõe', () => {
-  const L = layout(PROPOSTAS, ORDEM);
+  const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const secoes = L.linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo);
   assert.deepEqual(secoes, [rotuloDaSecao(5), rotuloDaSecao(2), rotuloDaSecao(1)]);
   assert.equal(L.linhas.at(-1).tipo, 'pilhas', 'as exclusivas sem contrário fecham a página');
@@ -86,7 +86,7 @@ test('as seções são pelo número de candidatos que propõem, do que todos pro
 });
 
 test('filtrar candidatos recalcula só com quem está na tela', () => {
-  const L = layout(PROPOSTAS, ['a', 'c']);
+  const L = layout(PROPOSTAS, ['a', 'c'], 'concordancia');
   assert.equal(L.n, 2);
   const ids = L.linhas.flatMap((l) => (l.tipo === 'cartao' ? [l.id] : l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => c.id) : []));
   assert.deepEqual(ids.sort(), ['p1', 'p2', 'p3', 'p5'], 'p4 e p6 somem: ninguém da tela as propõe');
@@ -98,7 +98,7 @@ test('filtrar candidatos recalcula só com quem está na tela', () => {
 });
 
 test('quem discorda fora da tela não entra na faixa', () => {
-  const L = layout(PROPOSTAS, ['b', 'c']);
+  const L = layout(PROPOSTAS, ['b', 'c'], 'concordancia');
   const p4 = L.linhas.find((l) => l.id === 'p4')
     ?? L.linhas.filter((l) => l.tipo === 'pilhas').flatMap((l) => l.pilhas.flat()).find((c) => c.id === 'p4');
   assert.equal(p4.largura, 1);
@@ -106,7 +106,7 @@ test('quem discorda fora da tela não entra na faixa', () => {
 });
 
 test('com um candidato só, não há seção — subtemas e a pilha dele', () => {
-  const L = layout(PROPOSTAS, ['a']);
+  const L = layout(PROPOSTAS, ['a'], 'concordancia');
   assert.deepEqual(L.linhas.map((l) => l.tipo), ['subtema', 'pilhas', 'subtema', 'pilhas', 'subtema', 'pilhas']);
   assert.deepEqual(L.linhas.filter((l) => l.tipo === 'pilhas').map((l) => l.pilhas[0][0].id), ['p3', 'p1', 'p5'], 'por subtema');
 });
@@ -165,4 +165,9 @@ test('o modo vem da URL só se for conhecido', () => {
   assert.equal(modoDaUrl('concordancia'), 'concordancia');
   assert.equal(modoDaUrl('xpto'), 'concordancia');
   assert.equal(modoDaUrl(null), 'concordancia');
+});
+
+test('sem modo, a página é por assunto', () => {
+  assert.deepEqual(layout(PROPOSTAS, ORDEM).linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo),
+    layout(PROPOSTAS, ORDEM, 'assunto').linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo));
 });
