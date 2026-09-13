@@ -20,23 +20,18 @@ const porUfNoMenu = CARGOS_NO_MENU.filter((c) => c.porUF);
 <Base title="Eleições 2026 - Compare os programas de governo"
   description="O que cada candidato de 2026 registrou no programa de governo, tema a tema: onde os programas convergem, onde divergem e sobre o que calam. Com o trecho de cada programa.">
   <div class="hero-home">
-    <p class="sobretitulo">Eleições gerais de 2026</p>
-    <h1>Compare os programas de governo, tema a tema</h1>
-    <p class="lead">
-      O que cada candidato <strong>registrou na Justiça Eleitoral</strong>: onde os programas
-      convergem, onde divergem e sobre o que calam. Só programas, com o trecho de cada um a um toque.
-      Sem recomendação de voto.
-    </p>
+    <p class="sobretitulo">Candidatos a presidente</p>
+    <h1>Compare os programas de governo</h1>
   </div>
 
-  <Busca />
+  <section class="bloco">
+    <h2>Temas</h2>
+    <GradeTemas resumo={resumo} base="/presidente" origem="home" />
+  </section>
 
   <section class="bloco">
-    <h2>Presidente</h2>
-    <p class="explica">
-      {resumo.length} temas, {totalPropostas} propostas dos programas de {candidatos.length} candidatos.
-    </p>
-    <GradeTemas resumo={resumo} base="/presidente" origem="home" />
+    <h2 id="busque">Busque por tópico</h2>
+    <Busca semRotulo rotuladoPor="busque" />
   </section>
 
   {porUfNoMenu.map((cargo) => (
@@ -58,7 +53,7 @@ const porUfNoMenu = CARGOS_NO_MENU.filter((c) => c.porUF);
       letter-spacing: .13em;
       text-transform: uppercase;
     }
-    .bloco h2 { margin-top: 1.6rem; }
-    .explica { margin: 0; color: var(--tinta-suave); }
+    .hero-home { margin-bottom: 1rem; }
+    .bloco h2 { margin-top: 1.4rem; }
   </style>
 </Base>

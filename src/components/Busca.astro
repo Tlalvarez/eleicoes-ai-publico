@@ -5,12 +5,15 @@
  * JavaScript, o formulário GET cai em /busca, que lista os resultados.
  * Usada na home, no hub e na própria página de tema.
  */
-const { escopo = 'presidente', compacta = false } = Astro.props;
+// `semRotulo` esconde o rótulo visual (a página já tem um título para a
+// caixa, apontado em `rotuladoPor`); o campo continua rotulado para leitor de tela
+const { escopo = 'presidente', compacta = false, semRotulo = false, rotuladoPor = null } = Astro.props;
+const idCampo = `busca-q-${escopo.replace('/', '-')}`;
 ---
-<form class={`busca-caixa${compacta ? ' compacta' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
-  <label for={`busca-q-${escopo.replace('/', '-')}`}>Buscar nos programas de governo</label>
+<form class={`busca-caixa${compacta ? ' compacta' : ''}${semRotulo ? ' sem-rotulo' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
+  <label for={idCampo} class={semRotulo ? 'so-leitor' : undefined}>Buscar nos programas de governo</label>
   <div class="linha">
-    <input class="campo" id={`busca-q-${escopo.replace('/', '-')}`} name="q" type="search" maxlength="300" autocomplete="off"
+    <input class="campo" id={idCampo} name="q" type="search" maxlength="300" autocomplete="off" aria-labelledby={rotuladoPor ?? undefined}
       placeholder="Ex.: creche, escala 6x1, dívida pública, Nordeste" />
     {escopo !== 'presidente' && <input type="hidden" name="escopo" value={escopo} />}
     <button class="botao" type="submit">Buscar</button>
@@ -65,6 +68,8 @@ const { escopo = 'presidente', compacta = false } = Astro.props;
   .busca-caixa .botao { flex: none; }
   .busca-caixa .busca-estado { margin: .35rem 0 0; min-height: 1.2rem; font-size: .88rem; color: var(--tinta-suave); }
   .busca-caixa.compacta { margin: .6rem 0 1rem; }
+  .busca-caixa.sem-rotulo { margin-top: .4rem; }
+  .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   @media (max-width: 480px) {
     .busca-caixa .linha { flex-wrap: wrap; }
     .busca-caixa .botao { width: 100%; }
