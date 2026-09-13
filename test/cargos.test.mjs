@@ -6,10 +6,10 @@ import {
 } from '../src/lib/cargos.mjs';
 import { fichaTse, urlCandidaturaTse, urlFotoCandidaturaTse } from '../src/lib/tse.mjs';
 
-test('quatro cargos, presidente na home e os outros três por UF', () => {
-  assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador', 'senador']);
-  assert.equal(cargoPorSlug('presidente').href, '/');
-  assert.deepEqual(CARGOS_POR_UF.map((c) => c.slug), ['governador', 'senador']);
+test('dois cargos do Executivo: presidente nacional, governador por UF', () => {
+  assert.deepEqual(CARGOS.map((c) => c.slug), ['presidente', 'governador']);
+  assert.equal(cargoPorSlug('presidente').href, '/presidente');
+  assert.deepEqual(CARGOS_POR_UF.map((c) => c.slug), ['governador']);
 });
 
 test('27 unidades da federação, siglas únicas', () => {
@@ -44,9 +44,9 @@ test('cada candidatura a presidente declara partido e número, do catálogo ofic
   assert.throws(() => fichaTse('ninguem'), /sem partido/);
 });
 
-test('senador no ar; deputado federal fora, por volume (06/09/2026)', () => {
-  assert.equal(cargoPorSlug('senador')?.slug, 'senador');
-  assert.ok(CARGOS.some((c) => c.href === '/senador'));
+test('senador (13/09/2026) e deputado federal (06/09/2026) fora: sem programa de governo no TSE', () => {
+  assert.equal(cargoPorSlug('senador'), null);
+  assert.ok(!CARGOS.some((c) => c.href === '/senador'));
   assert.equal(cargoPorSlug('deputado-federal'), null);
   assert.ok(!CARGOS.some((c) => c.href === '/deputado-federal'));
 });

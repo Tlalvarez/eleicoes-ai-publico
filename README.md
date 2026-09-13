@@ -1,154 +1,151 @@
 # eleicoes.ai — repositório público
 
-O [eleicoes.ai](https://eleicoes.ai) é um site para perguntar, em português comum, o que os
-candidatos às eleições gerais de 2026 registraram e disseram: programas de governo registrados no
-TSE, falas em vídeo, posts nas redes e pronunciamentos oficiais dos últimos cinco anos. Cada
-resposta separa o que está escrito nas fontes, o que é leitura a partir delas e o que não foi
-encontrado, e leva ao documento ou vídeo original.
+O [eleicoes.ai](https://eleicoes.ai) compara, tema a tema, os programas de governo que os
+candidatos às eleições gerais de 2026 registraram no TSE: onde os programas convergem, onde
+divergem e sobre o que calam. Em cada tema, uma proposta feita por mais de um candidato aparece
+uma vez, sobre as colunas de quem a faz; quem propõe o contrário aparece marcado; e cada proposta
+leva ao trecho do programa de onde saiu. Só programas, nenhuma fonte externa.
 
 **Este repositório é público por desenho.** O código do site, a metodologia, o dossiê de
 verificação e o histórico de mudanças ficam aqui para que qualquer pessoa confira como o site é
-feito. O canal de contato e de retirada de respostas está em
-[eleicoes.ai/sobre](https://eleicoes.ai/sobre); quem responde pelo site é Thiago Alvarez.
+feito. O canal de contato está em [eleicoes.ai/sobre](https://eleicoes.ai/sobre); quem responde
+pelo site é Thiago Alvarez.
 
 ## O que o site é hoje
 
-- **Um chat com o acervo.** A home e as páginas por cargo (Presidente, Governador e Senador,
-  por UF) são a mesma conversa com escopo diferente. A resposta é gerada por IA a partir dos
-  trechos recuperados para a pergunta, com as fontes citadas. Deputado federal está fora do ar
-  por volume: 7.772 candidaturas e material próprio de cerca de 820, porque a maioria não
-  declarou site ao TSE — o cargo pede outra forma de reunir e apresentar o material.
-- **Um acervo de evidências por candidato**, coletado por um harness privado e publicado como
-  índice (`data/acervo/indice.json`), que o gate de catálogo confere contra o canônico. As páginas
-  navegáveis do acervo, o hub por candidato e as menções saíram do build em 05/09/2026
-  (ninguém chegava nelas; o acervo não funcionava no celular); os endereços antigos
-  redirecionam para a conversa sobre o candidato (`public/_redirects`).
-- **Sem revisor humano por resposta.** As respostas são geradas e revisadas por IA, e dizem isso
-  no rodapé. O responsável editorial pelo site e pelas decisões é identificado em `/sobre`.
+- **A comparação para presidente.** `/presidente` lista os temas; `/presidente/<tema>` é a
+  comparação de um tema, com uma coluna por candidato (ordem alfabética), o seletor de
+  candidatos e o trecho de cada programa a um toque. Hoje são 5 candidatos em 15 temas.
+- **Governador, por estado.** `/governador` lista as 27 UFs; `/governador/<uf>` mostra os temas
+  quando a comparação daquele estado está pronta e diz **"em preparação"** quando não está
+  (com as candidaturas registradas no TSE). As rotas existem nos dois casos, para o endereço
+  não mudar quando os dados chegarem.
+- **Sem revisor humano por proposta.** A leitura e o agrupamento das propostas são feitos por IA
+  e conferidos pelo código contra o texto dos programas; a página diz isso. O responsável
+  editorial é identificado em `/sobre`.
 
 O que o site **não** é: não recomenda voto, não ranqueia candidatos, não é checagem de fatos.
+Ausência numa proposta é programa que não a menciona, não oposição.
 
-## Como o material é reunido
+Senador e deputado federal não registram programa de governo no TSE; os endereços antigos
+redirecionam (`public/_redirects`).
 
-A coleta alcança os endereços que os candidatos declararam ao TSE — sites, contas próprias e
-canais de vídeo. Muitos desses provedores recusam acesso automatizado; a coleta passa pelo
-[NativePort](https://nativeport.ai), gateway que dá acesso a eles. Sem ele, boa parte do
-material declarado ficaria fora do alcance. As respostas são escritas pelo Claude Opus 5, da
-Anthropic, a partir dos trechos recuperados para cada pergunta. O detalhamento está na
-[metodologia](https://eleicoes.ai/metodologia).
+## Como a comparação é feita
+
+O texto de cada programa é extraído do PDF registrado no TSE e congelado. O código o divide em
+blocos; um modelo (Claude Opus 5, da Anthropic) rotula cada bloco por tema, e a rotulagem é
+validada por uma pessoa. Depois, tema a tema, o modelo lê os blocos de todos os candidatos numa
+só passada e devolve propostas com a posição de cada candidato, citando blocos que o código
+confere. Um juiz cego confirma cada "propõe o contrário". O detalhamento está na
+[metodologia](https://eleicoes.ai/metodologia). Esse harness vive no repositório privado do
+projeto (`v3/`); o que chega aqui é o resultado, exportado por `v3/exporta_site.py` para
+`data/comparacao/`.
 
 ## O que está aqui
 
 | Caminho | Conteúdo |
 |---|---|
-| `src/` | O site (Astro). Páginas por cargo/UF, chat, metodologia, quem faz, privacidade |
-| `src/content/metodologia.md` | Metodologia atual: como as evidências são coletadas, como o chat responde, limitações |
+| `src/pages/` | As rotas: `/`, `/presidente`, `/presidente/[tema]`, `/governador` (`[cargo]/index`), `/governador/[uf]`, `/governador/[uf]/[tema]`, metodologia, sobre, privacidade, 404, verificação, deputado-federal |
+| `src/components/Comparacao.astro` | A página de comparação: colunas, cartões, seletor de candidatos, faixa de temas, painel de trechos |
+| `src/components/GradeTemas.astro`, `GradeUfs.astro`, `Candidatos.astro` | Os cartões de tema, a grade de UFs e os candidatos comparados |
+| `src/lib/comparacao.mjs` | O layout da comparação — a **mesma função** roda no build (Astro) e no navegador (ao filtrar candidatos) |
+| `src/lib/comparacao-dados.mjs` | Leitura e contrato dos JSONs de `data/comparacao/` |
+| `src/lib/cargos.mjs`, `candidaturas-uf.mjs`, `tse.mjs` | Cargos, UFs, candidaturas do snapshot do TSE e links do DivulgaCandContas |
+| `src/lib/medicao.mjs` | A única porta da medição, com vocabulário fechado |
+| `src/lib/contato.mjs` | O e-mail de contato |
+| `src/content/metodologia.md` | Metodologia: como os programas são lidos e comparados, limitações |
 | `src/content/verificacao/` | Dossiê: 7 anexos de verificação documental dos backtests 2002–2022 (registro histórico da v1.1) |
-| `src/data/candidatos.json` | Catálogo canônico de candidatos a presidente (fonte de autoridade, editado à mão) |
+| `src/data/candidatos.json` | Catálogo canônico de candidatos a presidente (usado nos redirecionamentos antigos) |
 | `src/data/candidaturas-*.json` | Identificadores oficiais das candidaturas no DivulgaCandContas (TSE) |
-| `data/itens/` | Índice de itens por candidato: metadados e link do original (`item.schema.json`) |
-| `functions/` | A única função de servidor: `/resposta/<id>`, que serve o app do chat para um link compartilhado |
-| `scripts/` | Os gates de qualidade e os emissores do build (`release.json`, `_headers`) |
+| `data/comparacao/` | **Versionado.** `paginas.json` e um JSON por página: `presidente/<pagina>.json`, `governador/<uf>/<pagina>.json` |
+| `scripts/` | Os gates de qualidade e o emissor de `_headers` |
 | `test/` | Suíte `node --test` |
 
-Os PDFs dos programas e o conteúdo dos itens não são redistribuídos aqui: o site aponta para o
-original.
+Os PDFs dos programas não são redistribuídos aqui: cada JSON traz o texto dos blocos citados
+e o link do programa no TSE.
 
 ## Princípios invariantes
 
-1. Toda afirmação cita a fonte; sem fonte, a resposta diz que não encontrou.
-2. Mesma varredura e mesma régua para todos os candidatos do escopo; o volume de material varia e
-   isso é dito, não escondido. Candidato sem coleta aparece como lacuna declarada.
-3. **Nenhuma resposta recomenda voto** ou conclui superioridade de candidato.
-4. Erros e correções são registrados no histórico público deste repositório.
-5. Conteúdo gerado por IA é rotulado como tal em toda superfície, inclusive no texto compartilhado.
-   Não há revisão humana por resposta; há um responsável editorial identificado.
+1. Toda proposta cita o trecho do programa; o código confere que o bloco citado existe e é do
+   candidato certo.
+2. Mesma régua para todos: as instruções ao modelo não citam tema nem candidato.
+3. **Nenhuma cor por candidato, nenhum placar.** Colunas em ordem alfabética; seções pelo número
+   de candidatos que propõem, nunca por quem.
+4. Nada no site monta HTML a partir de string: texto de terceiro só vira DOM por
+   `createElement`/`textContent` (gate `checa-render-seguro`).
+5. Conteúdo gerado por IA é rotulado como tal. Erros e correções ficam no histórico público.
 
 ## Desenvolvimento
 
 ```bash
 npm install
-npm run acervo:local   # monta data/acervo (ver abaixo)
 npm run dev            # servidor local
-npm run build          # gera o site estático em dist/ (+ release.json e _headers)
-npm test               # o gate completo
+npm run build          # gera o site estático em dist/ (+ _headers)
+npm test               # o gate completo: suíte + medição + build + verificação do dist
 ```
 
-- **`data/acervo/` não é versionado** (é derivado da coleta). Num clone limpo,
-  `npm run acervo:local` escreve um índice em que todo candidato é lacuna declarada, o suficiente
-  para compilar e passar o gate. Com uma exportação real por perto, `--origem <dir>` ou
-  `ACERVO_ORIGEM=<dir>` a usa por symlink. Nos dois casos o resultado é prévia interna, nunca
-  release oficial.
-- O chat fala com o serviço de evidências em `PUBLIC_PESQUISA_API` (padrão: mesma origem no
-  build, `http://localhost:8765` no `astro dev`). Em produção é `https://api.eleicoes.ai`.
-- O gate de navegador precisa de um Chrome/Chromium: defina `CHROME_BIN` se ele não estiver no
-  `PATH`.
-- No cliente há JavaScript só no chat; o resto é HTML estático. A medição de
-  audiência (PostHog) roda só no domínio publicado, sem cookies, sem perfil de pessoa e com o
-  texto da pergunta mascarado.
-  A Cloudflare injeta na borda o script do Web Analytics dela (segunda medição, sem cookies),
-  declarado em `/privacidade` e autorizado na CSP.
+- O site compila de um clone limpo: tudo o que ele lê está versionado (`data/comparacao/`,
+  `src/data/`). Não há harness, S3 nem serviço de API no caminho do build.
+- **Seletor de candidatos:** `?c=lula,romeu-zema` mostra só esses; o layout é recalculado no
+  navegador pela mesma função do build e a escolha vive só na URL (nada é gravado no navegador).
+- A medição de audiência (PostHog) roda só no domínio publicado, sem cookies e sem perfil de
+  pessoa. A Cloudflare injeta na borda o script do Web Analytics dela (segunda medição, sem
+  cookies), declarado em `/privacidade` e autorizado na CSP.
+- Deploy: `npm run deploy:pages` (Cloudflare Pages, upload direto do `dist`; roda o gate antes).
 
 ### Portões de qualidade
 
 | Comando | O que cobre | Quando |
 |---|---|---|
-| **`npm test`** | **o gate completo: origem da home, suíte `node --test`, gate de catálogo, `astro build` real, Function compilada e verificação do HTML construído** | **obrigatório antes de entregar mudança** |
-| `npm run test:unit` | o laço curto: as mesmas checagens, sem compilar | durante o desenvolvimento |
+| **`npm test`** | **o gate completo: suíte `node --test`, gate de medição, `astro build` real e verificação do HTML construído** | **obrigatório antes de entregar mudança** |
+| `npm run test:unit` | o laço curto: suíte e medição, sem compilar | durante o desenvolvimento |
 | `npm run test:integracao` | mesmo que `npm test` (nome mantido pelo operacional) | — |
 
-A verificação do dist confere: a home é o chat e lista o catálogo inteiro; nenhum arquivo usa `innerHTML`, `set:html`, `eval` ou
-`document.write` (a resposta de terceiro só vira DOM por `createElement`); a prévia não afirma
-oficialidade; `_headers` tem CSP coerente com os scripts embutidos; acessibilidade básica em todas
-as páginas; e o chat funciona num Chrome real contra uma API falsa — inclusive emitindo os eventos
-de medição sem deixar passar nenhum texto livre.
+A verificação do dist (`test:dist`):
+
+- `checa-paginas-dist` — a home e `/presidente` linkam todos os temas exportados; cada página
+  de tema traz uma coluna por candidato, um cartão por proposta, o seletor e a faixa; as 27 UFs
+  existem, com dados ou "em preparação"; nenhuma página traz o chat antigo.
+- `checa-render-seguro` — nenhum arquivo de `src/` ou `dist/` usa `innerHTML`, `set:html`,
+  `eval` ou `document.write`.
+- `checa-cabecalhos-dist` — `_headers` tem CSP coerente com os scripts embutidos.
+- `checa-acessibilidade` — idioma, título, viewport, link de pulo, um `<h1>`, `alt`, rótulos,
+  sem `tabindex` positivo; alvo de toque e foco visível na folha.
+
+E no laço curto, `checa-medicao`: `posthog.capture` só existe dentro de `medicao.mjs`, todo
+`medir()` usa um evento declarado, e todo evento declarado tem chamador.
 
 ### Medição
 
 A audiência é medida em modo sem cookies (PostHog, em `src/layouts/Base.astro`) e o produto é
 medido por eventos com **vocabulário fechado**: `src/lib/medicao.mjs` é a única porta, e ela recusa
 evento não declarado, propriedade fora da lista do evento e qualquer valor de texto com espaço —
-a invariante que se confere num olhar, já que **prosa tem espaço**. Pergunta e resposta nunca saem
-do navegador por essa via, e o identificador de uma resposta guardada é removido das propriedades
-de endereço antes do envio.
-
-Três coisas seguram a promessa: `test/medicao.test.mjs` (o filtro recusa), `npm run test:medicao`
-(`posthog.capture` só existe dentro de `medicao.mjs`, e todo evento declarado tem chamador) e o
-gate de navegador (o bundle publicado realmente emite). Evento novo entra em `EVENTOS` antes de
-ter chamador — o gate cobra os dois lados. O que cada número responde está descrito na página
+a invariante que se confere num olhar, já que **prosa tem espaço**. Os eventos são cinco: tema
+aberto, UF aberta, proposta aberta, comparação filtrada e link do TSE aberto. Os links medidos
+declaram `data-evento` e as propriedades em `data-*`; um ouvinte delegado no layout chama
+`medir()`. O que cada número responde está descrito em
 [/privacidade](https://eleicoes.ai/privacidade).
 
 Não há CI versionado neste repositório: o deploy é upload direto do `dist` e roda o gate antes.
 `npm test` é o gate porque obrigação documental não é obrigação.
 
-### O catálogo canônico
+### Os dados da comparação
 
-`src/data/candidatos.json` é a **fonte de autoridade** do catálogo de presidente: versionado,
-editado à mão, é ele que declara quem deve estar publicado. O gate compara contra ele
-`data/itens/resumo.json` e `data/acervo/indice.json`, que saem da mesma exportação e, sozinhos,
-não provariam nada. Não existe variável de ambiente que desligue a comparação, e a ausência do
-arquivo canônico é falha. Acrescentar candidato é editar esse arquivo.
-
-Governador e Deputado federal vêm de `src/data/candidaturas-2026-uf.json` (lista do
-DivulgaCandContas, uma candidatura por pessoa).
-
-### De onde vêm os dados
-
-O harness privado produz, por rodada, três produtos coerentes: itens, acervo e índice de
-pesquisa. O site resolve `data/current.json`, o manifesto da geração ativa, e lê `itens` e
-`acervo` de dentro dela. Esse manifesto não é versionado aqui: ele é artefato de deploy, e
-`dist/release.json` declara de qual release o site publicado saiu. Sem manifesto (clone de
-desenvolvimento), valem `data/itens` e `data/acervo` diretamente, como prévia.
+`data/comparacao/` é a entrada do site e é versionado: o build não depende de nada fora do
+repositório. Cada JSON segue o contrato `comparacao-site/1` (`src/lib/comparacao-dados.mjs`):
+candidatos na ordem das colunas, propostas com a posição de cada candidato e os blocos citados,
+e o texto dos blocos com a página. Nada do harness (laudo, tokens, modelo, prompt) chega aqui —
+`test/comparacao-dados.test.mjs` cobra o contrato e a ausência desses campos. Publicar um estado
+de governador é exportar `governador/<uf>/*.json`: as rotas já existem.
 
 ### Cabeçalhos de segurança
 
 `npm run build` emite `dist/_headers` (Cloudflare Pages) com Content-Security-Policy, HSTS,
 `X-Frame-Options: DENY`, `Referrer-Policy` e `Permissions-Policy`. A CSP proíbe script inline e
-autoriza pelo hash os dois que o build embute (o stub do PostHog e o filtro do acervo); por isso o
-arquivo é gerado sobre o dist, não digitado. O gate de navegador serve o dist com esses cabeçalhos,
-então uma CSP que quebrasse o chat cai no gate, não em produção.
+autoriza pelo hash os que o build embute (o stub do PostHog e os dados de cada página de
+comparação); por isso o arquivo é gerado sobre o dist, não digitado.
 
 ## Licenças
 
-Código sob MIT; metodologia, dossiê de verificação e índices de dados sob CC BY 4.0; retratos com
-licença própria declarada em `src/data/imagens-candidatos.json`. Ver [LICENSE](LICENSE).
+Código sob MIT; metodologia, dossiê de verificação e dados da comparação sob CC BY 4.0. Ver
+[LICENSE](LICENSE).

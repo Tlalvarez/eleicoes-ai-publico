@@ -1,0 +1,61 @@
+---
+/**
+ * Os candidatos cujos programas entram na comparação de um escopo: retrato
+ * oficial, nome, partido e número, com o programa no TSE. Ordem alfabética,
+ * nenhuma cor por candidato.
+ */
+const { candidatos } = Astro.props;
+---
+<ul class="grade-candidatos">
+  {candidatos.map((c) => (
+    <li class="cartao-candidato">
+      {c.foto && <img src={c.foto} width="161" height="225" loading="lazy" alt="" />}
+      <span class="nome-candidato">{c.nome}</span>
+      <p class="ficha-candidato">{c.partido}{c.numero ? ` · nº ${c.numero}` : ''}</p>
+      <p class="link-tse">
+        <a href={c.tse} target="_blank" rel="noopener noreferrer" data-evento="tse_aberto" data-slug={c.slug}>Programa no TSE ↗</a>
+      </p>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .grade-candidatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 161px);
+    justify-content: start;
+    gap: 1rem;
+    padding: 0;
+    margin: 1rem 0 1.5rem;
+    list-style: none;
+  }
+  .cartao-candidato {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    border: 1px solid var(--linha);
+    border-radius: var(--raio);
+    background: var(--cartao);
+    box-shadow: var(--sombra-leve);
+  }
+  .cartao-candidato img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    aspect-ratio: 161 / 225;
+    object-fit: cover;
+    background: var(--realce);
+  }
+  .nome-candidato {
+    display: block;
+    padding: .8rem 1rem .25rem;
+    font-family: var(--fonte-titulo);
+    font-size: 1.08rem;
+    font-weight: 750;
+    line-height: 1.2;
+  }
+  .ficha-candidato { flex: 1; margin: 0; padding: .2rem 1rem .4rem; color: var(--tinta-suave); font-size: .84rem; }
+  .link-tse { margin: 0; padding: .2rem 1rem .8rem; font-size: .86rem; }
+  .link-tse a { color: var(--acento); font-weight: 600; }
+</style>

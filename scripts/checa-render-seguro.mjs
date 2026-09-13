@@ -2,28 +2,16 @@
 /**
  * Nada no site publicado transforma STRING em ESTRUTURA.
  *
- * O chat renderiza Markdown que vem de um serviço e cita fontes de terceiros:
- * é texto que o site não escreveu, com endereços que o site não escolheu. A
- * versão anterior montava isso com `innerHTML` sobre um mini-markdown que
- * escapava `& < > " '` à mão — e o escape cobria o texto, não o endereço, de
- * modo que `[clique](javascript:…)` virava link executável. No formato
- * "Candidatos" quase toda linha carrega link de fonte: o caminho de ataque
- * era o caminho principal do produto.
+ * A página de comparação mostra texto que o site não escreveu — propostas
+ * resumidas por um modelo e trechos dos programas de governo — e monta parte
+ * da tela no navegador (os trechos ao tocar numa proposta, os cartões
+ * reposicionados ao filtrar candidatos). A versão anterior do site (o chat)
+ * chegou a montar isso com `innerHTML` sobre um mini-markdown que escapava à
+ * mão, e `[clique](javascript:…)` virava link executável.
  *
- * A correção foi arquitetural (src/lib/markdown.mjs materializa nó a nó), e
- * esta checagem é o que impede a volta: ela varre o BUNDLE PUBLICADO, não o
- * código-fonte. Entre um e outro há um empacotador, e "o .astro está limpo"
+ * Esta checagem é o que impede a volta: ela varre o BUNDLE PUBLICADO, não só
+ * o código-fonte. Entre um e outro há um empacotador, e "o .astro está limpo"
  * nunca foi prova de que o `dist/` está.
- *
- * **O escopo é o que roda no NAVEGADOR: `src/` e `dist/`.** Existe um lugar do
- * produto onde HTML é escrito como string por necessidade — a página pública de
- * uma resposta (`functions/resposta/[id].js`), servida pelo Cloudflare Pages,
- * onde não há DOM para materializar. Lá a defesa muda de forma sem afrouxar: a
- * mesma árvore de nós é serializada por src/lib/html-seguro.mjs, com escape
- * obrigatório de texto e de atributo e filtro de esquema em todo `href`, e o
- * que cobra isso é test/pagina-resposta.test.mjs (JSON hostil, endereço
- * executável, fuga de atributo de metadado). Este gate não varre `functions/`
- * porque os padrões abaixo são todos de DOM e não existem lá.
  *
  * Uso: npm run build && npm run test:render-seguro
  */
@@ -54,11 +42,10 @@ const PROIBIDOS_CODIGO = [
 /**
  * Tira comentários antes de procurar.
  *
- * Este repositório documenta o defeito que corrigiu: o cabeçalho de
- * src/lib/markdown.mjs explica, em português, por que `innerHTML` saiu. Um
- * gate que acusasse essa frase estaria proibindo a EXPLICAÇÃO em vez do
- * código — e gate que acusa o que não é problema é gate que alguém desliga na
- * primeira vez que atrapalha.
+ * Este repositório documenta o defeito que corrigiu (o cabeçalho deste
+ * arquivo explica por que `innerHTML` saiu). Um gate que acusasse essa frase
+ * estaria proibindo a EXPLICAÇÃO em vez do código — e gate que acusa o que
+ * não é problema é gate que alguém desliga na primeira vez que atrapalha.
  *
  * O corte de `//` exige que ele não venha logo depois de `:`, senão
  * `https://exemplo` seria lido como início de comentário.
@@ -114,8 +101,8 @@ const bundles = arquivos(DIST, ['.js', '.html']);
 const temRenderizador = bundles.some((c) => /createDocumentFragment|createElement/
   .test(readFileSync(c, 'utf8')));
 if (!temRenderizador) {
-  falhas.push('nenhum bundle publicado materializa nós de DOM — o renderizador seguro '
-    + 'não chegou ao dist/, e a resposta do chat não tem como aparecer');
+  falhas.push('nenhum bundle publicado materializa nós de DOM — o script da comparação '
+    + 'não chegou ao dist/, e os trechos dos programas não têm como aparecer');
 }
 
 if (falhas.length) {
@@ -123,5 +110,5 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (render): ${conferidos} arquivos de src/ e dist/ sem innerHTML, `
-  + 'set:html, document.write, eval ou new Function — a resposta de terceiro só vira '
-  + 'DOM por createElement/createTextNode');
+  + 'set:html, document.write, eval ou new Function — texto de terceiro só vira '
+  + 'DOM por createElement/textContent');

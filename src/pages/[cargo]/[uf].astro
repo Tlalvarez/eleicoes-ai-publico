@@ -1,14 +1,15 @@
 ---
 /**
- * A conversa sobre um cargo numa UF: o mesmo chat da home, com o escopo
- * ("Governador de São Paulo") na frente de cada pergunta, à vista.
+ * Um cargo numa UF: os temas comparados, quando a comparação está pronta; ou
+ * "em preparação", com as candidaturas do registro no TSE. A rota existe para
+ * as 27 UFs nos dois casos, para o endereço não mudar quando os dados chegarem.
  */
 import Base from '../../layouts/Base.astro';
-import Chat from '../../components/Chat.astro';
+import Candidatos from '../../components/Candidatos.astro';
+import GradeTemas from '../../components/GradeTemas.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, notaSituacao, separaPorDisputa } from '../../lib/candidaturas-uf.mjs';
-import { notaCard, notaColeta, situacaoFontes } from '../../lib/fontes-declaradas.mjs';
-import { causasDoCargoUf } from '../../lib/fontes-declaradas.mjs';
+import { comparacao, resumoDoEscopo } from '../../lib/comparacao-dados.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.map((uf) => ({
@@ -18,95 +19,105 @@ export function getStaticPaths() {
 }
 const { cargo, uf } = Astro.props;
 const escopo = rotuloEscopo(cargo, uf);
-const pagina = caminhoUf(cargo, uf);
-// os cards saem do snapshot do TSE: todo candidato do cargo nesta UF, em
-// ordem alfabética — nenhum nome escrito à mão, nenhuma hierarquia
-const cards = candidaturas(cargo.slug, uf.sigla);
-// quem está na disputa vai para a lista principal; renúncias e indeferidos
-// sem recurso vão para uma seção recolhida, com a situação e a data do TSE —
-// nem escondidos (o TSE é a fonte, não nós) nem misturados (ruído para o leitor)
-const { emDisputa, fora } = separaPorDisputa(cards);
-
-// o mesmo critério da home (ver index.astro): sem PUBLIC_PESQUISA_API, mesma
-// origem; localhost só em desenvolvimento
-const apiBase = import.meta.env.PUBLIC_PESQUISA_API
-  ?? (import.meta.env.DEV ? 'http://localhost:8765' : '');
+const base = caminhoUf(cargo, uf);
+const resumo = resumoDoEscopo(cargo.slug, uf.sigla);
+const pronta = resumo.length > 0;
+const comparados = pronta ? comparacao(cargo.slug, uf.sigla, resumo[0].id).candidatos : [];
+const totalPropostas = resumo.reduce((n, r) => n + r.propostas, 0);
+// as candidaturas do snapshot do TSE, em ordem alfabética: quem está na
+// disputa e quem saiu (renúncia, indeferimento sem recurso), com a situação do TSE
+const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla));
 ---
-<Base title={`${escopo} — pergunte à IA`} description={`Converse com as evidências reunidas sobre as candidaturas a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026.`}>
+<Base title={pronta ? `${escopo} — os programas comparados por tema` : `${escopo} — em preparação`}
+  description={pronta
+    ? `Os programas de governo das candidaturas a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026, comparados em ${resumo.length} temas.`
+    : `A comparação dos programas de governo das candidaturas a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026 está em preparação.`}>
   <div class="hero-home">
     <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome}</p>
     <h1>{escopo}</h1>
-    <p class="lead">
-      Pergunte à IA sobre os candidatos a {cargo.nome.toLowerCase()} — {uf.nome} ({uf.sigla}).
-      <a href={cargo.href}>Trocar de estado</a>
-    </p>
+    {pronta ? (
+      <p class="lead">
+        {totalPropostas} propostas em {resumo.length} temas, dos programas de {comparados.length} candidatos.
+        <a href={cargo.href}>Trocar de estado</a>
+      </p>
+    ) : (
+      <p class="lead">
+        A comparação dos programas de governo deste estado está <strong>em preparação</strong>.
+        Enquanto isso, as candidaturas registradas no TSE estão abaixo, com o link de cada uma.
+        <a href={cargo.href}>Trocar de estado</a> · <a href="/presidente">Ver a comparação para presidente</a>
+      </p>
+    )}
   </div>
 
-  <Chat apiBase={apiBase} escopo={escopo} cargo={cargo.slug} uf={uf.sigla} pagina={pagina} causas={causasDoCargoUf(cargo.slug, uf.sigla)}
-    placeholder={`Ex.: o que os candidatos a ${cargo.nome.toLowerCase()} propõem para a segurança pública?`} />
+  {pronta && (
+    <>
+      <h2>Temas</h2>
+      <GradeTemas resumo={resumo} base={base} origem="hub" />
+      <h2>Programas comparados</h2>
+      <Candidatos candidatos={comparados} />
+    </>
+  )}
 
   <section class="secao-catalogo">
-  <h2>Candidatos a {cargo.nome.toLowerCase()} — {uf.nome}</h2>
-  <ul class="grade-candidatos">
-    {emDisputa.map((c) => (
-      <li class="cartao-candidato">
-        <a class="retrato-link" href={`${pagina}/${c.slug}`}
-          title={`Conversar com a IA sobre ${c.nome}`}>
+    <h2>Candidatos a {cargo.nome.toLowerCase()} — {uf.nome}</h2>
+    <ul class="grade-candidatos">
+      {emDisputa.map((c) => (
+        <li class="cartao-candidato">
           <img src={c.foto} width="161" height="225" loading="lazy" alt="" />
           <span class="nome-candidato">{c.nome}</span>
-        </a>
-        <p class="ficha-candidato">
-          {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
-          <span class="situacao">{c.situacao}{notaSituacao(c.situacao) ? ` · ${notaSituacao(c.situacao)}` : ''}</span>
-          {notaCard(situacaoFontes(c.id))
-            ? <span class="nota-fontes">{notaCard(situacaoFontes(c.id))}</span>
-            : <span class="nota-fontes">{notaColeta(situacaoFontes(c.id))}</span>}
+          <p class="ficha-candidato">
+            {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
+            <span class="situacao">{c.situacao}{notaSituacao(c.situacao) ? ` · ${notaSituacao(c.situacao)}` : ''}</span>
+          </p>
+          <p class="link-tse">
+            <a href={c.tse} target="_blank" rel="noopener noreferrer" data-evento="tse_aberto" data-slug={c.slug}>Ver no TSE ↗</a>
+          </p>
+        </li>
+      ))}
+    </ul>
+    <p class="depois-da-faixa">
+      Foto, nome de urna, número, partido e situação são os do registro no TSE em {SNAPSHOT_BR}; o link
+      abre a candidatura no DivulgaCandContas, em nova aba. Candidatura indeferida com recurso pendente
+      pode fazer campanha até o julgamento, por isso continua na lista.
+    </p>
+    {fora.length > 0 && (
+      <details class="fora-da-disputa">
+        <summary>Fora da disputa segundo o TSE em {SNAPSHOT_BR} ({fora.length})</summary>
+        <p>
+          Renúncias e registros indeferidos sem recurso. Continuam aqui porque o registro existiu;
+          a situação é a do TSE, não uma avaliação nossa.
         </p>
-        <p class="link-tse">
-          <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
-        </p>
-      </li>
-    ))}
-  </ul>
-  <p class="depois-da-faixa">
-    Clique no candidato para conversar com a IA só sobre ele. Foto, nome de urna, número,
-    partido e situação são os do registro no TSE em {SNAPSHOT_BR}; o link abre a candidatura
-    no DivulgaCandContas, em nova aba. Candidatura indeferida com recurso pendente pode fazer
-    campanha até o julgamento, por isso continua na lista.
-  </p>
-  {fora.length > 0 && (
-    <details class="fora-da-disputa">
-      <summary>Fora da disputa segundo o TSE em {SNAPSHOT_BR} ({fora.length})</summary>
-      <p>
-        Renúncias e registros indeferidos sem recurso. Continuam aqui porque o registro existiu
-        e a conversa sobre cada um segue disponível; a situação é a do TSE, não uma avaliação nossa.
-      </p>
-      <ul class="grade-candidatos">
-        {fora.map((c) => (
-          <li class="cartao-candidato fora">
-            <a class="retrato-link" href={`${pagina}/${c.slug}`}
-              title={`Conversar com a IA sobre ${c.nome}`}>
+        <ul class="grade-candidatos">
+          {fora.map((c) => (
+            <li class="cartao-candidato fora">
               <img src={c.foto} width="161" height="225" loading="lazy" alt="" />
               <span class="nome-candidato">{c.nome}</span>
-            </a>
-            <p class="ficha-candidato">
-              {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
-              <span class="situacao"><strong>{c.situacao}</strong></span>
-            </p>
-            <p class="link-tse">
-              <a href={c.tse} target="_blank" rel="noopener noreferrer">Ver no TSE ↗</a>
-            </p>
-          </li>
-        ))}
-      </ul>
-    </details>
-  )}
+              <p class="ficha-candidato">
+                {c.partido ?? '—'}{c.numero ? ` · nº ${c.numero}` : ''}
+                <span class="situacao"><strong>{c.situacao}</strong></span>
+              </p>
+              <p class="link-tse">
+                <a href={c.tse} target="_blank" rel="noopener noreferrer" data-evento="tse_aberto" data-slug={c.slug}>Ver no TSE ↗</a>
+              </p>
+            </li>
+          ))}
+        </ul>
+      </details>
+    )}
   </section>
 
   <style>
     .hero-home { margin-bottom: 1.6rem; }
-    .depois-da-faixa { margin-top: 1rem; }
-    /* os mesmos cards da home */
+    .hero-home .lead { max-width: none; }
+    .sobretitulo {
+      margin: 0 0 .6rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .depois-da-faixa { margin-top: 1rem; color: var(--tinta-suave); font-size: .92rem; }
     .grade-candidatos {
       display: grid;
       grid-template-columns: repeat(auto-fill, 161px);
@@ -126,8 +137,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       background: var(--cartao);
       box-shadow: var(--sombra-leve);
     }
-    .retrato-link { color: var(--tinta); text-decoration: none; }
-    .retrato-link img {
+    .cartao-candidato img {
       display: block;
       width: 100%;
       margin: 0;
@@ -135,6 +145,7 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       object-fit: cover;
       background: var(--realce);
     }
+    .cartao-candidato.fora img { filter: grayscale(1); opacity: .75; }
     .nome-candidato {
       display: block;
       padding: .8rem 1rem .25rem;
@@ -143,30 +154,11 @@ const apiBase = import.meta.env.PUBLIC_PESQUISA_API
       font-weight: 750;
       line-height: 1.2;
     }
-    .retrato-link:hover .nome-candidato { color: var(--acento); text-decoration: underline; }
-    .ficha-candidato {
-      flex: 1;
-      margin: 0;
-      padding: .2rem 1rem .4rem;
-      color: var(--tinta-suave);
-      font-size: .84rem;
-    }
-    .ficha-candidato .situacao { display: block; font-size: .78rem; }
-    .ficha-candidato .nota-fontes { display: block; margin-top: .3rem; font-size: .78rem; color: var(--tinta-suave); font-style: italic; }
-    .fora-da-disputa { margin-top: 1.6rem; border-top: 1px dashed var(--linha); padding-top: .8rem; }
-    .fora-da-disputa summary { cursor: pointer; font-weight: 700; color: var(--tinta-suave); }
-    .fora-da-disputa p { margin: .6rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
-    .cartao-candidato.fora .retrato-link img { filter: grayscale(1); opacity: .8; }
-    .link-tse { margin: 0; padding: .2rem 1rem .75rem; font-size: .86rem; }
+    .ficha-candidato { flex: 1; margin: 0; padding: .2rem 1rem .4rem; color: var(--tinta-suave); font-size: .84rem; }
+    .situacao { display: block; margin-top: .2rem; font-size: .8rem; }
+    .link-tse { margin: 0; padding: .2rem 1rem .8rem; font-size: .86rem; }
     .link-tse a { color: var(--acento); font-weight: 600; }
-    .hero-home .lead { max-width: none; }
-    .sobretitulo {
-      margin: 0 0 .6rem;
-      color: var(--acento);
-      font-size: .79rem;
-      font-weight: 800;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
+    .fora-da-disputa { margin-top: 1.5rem; }
+    .fora-da-disputa summary { cursor: pointer; font-weight: 600; color: var(--acento); min-height: var(--alvo); display: flex; align-items: center; }
   </style>
 </Base>

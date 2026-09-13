@@ -12,7 +12,11 @@
  *
  *   1. `posthog.capture` só existe dentro de `src/lib/medicao.mjs`;
  *   2. todo `medir('<evento>')` usa um evento declarado em `EVENTOS` —
- *      evento com nome trocado seria descartado em silêncio no navegador;
+ *      evento com nome trocado seria descartado em silêncio no navegador.
+ *      Os links medidos por DELEGAÇÃO declaram o evento em `data-evento="…"`
+ *      (ou `dataset.evento = '…'`); esses literais são conferidos do mesmo
+ *      jeito, e o único `medir()` com nome variável permitido é o
+ *      despachante do layout (`medir(alvo.dataset.evento, …)`);
  *   3. todo evento declarado tem pelo menos um chamador — vocabulário que
  *      ninguém emite vira painel vazio que parece medida zerada.
  *
@@ -39,7 +43,7 @@ function arquivos(dir, saida = []) {
 
 const falhas = [];
 const emitidos = new Set();
-const fontes = [...arquivos(join(RAIZ, 'src')), ...arquivos(join(RAIZ, 'functions'))];
+const fontes = arquivos(join(RAIZ, 'src'));
 
 for (const caminho of fontes) {
   const texto = readFileSync(caminho, 'utf8');
@@ -65,9 +69,21 @@ for (const caminho of fontes) {
         + 'descartaria o evento em silêncio');
     }
   }
-  // medir() com nome montado em variável não é conferível aqui
-  if (/\bmedir\(\s*[^'"`)\s]/.test(texto)) {
-    falhas.push(`${onde}: medir() com nome de evento que não é literal — o gate não `
+  // os links medidos por delegação: o evento é literal no atributo
+  for (const m of texto.matchAll(/data-evento=["']([a-z_]+)["']|dataset\.evento\s*=\s*['"]([a-z_]+)['"]/g)) {
+    const evento = m[1] ?? m[2];
+    emitidos.add(evento);
+    if (!EVENTOS[evento]) {
+      falhas.push(`${onde}: data-evento="${evento}" não está em EVENTOS — o navegador `
+        + 'descartaria o evento em silêncio');
+    }
+  }
+  // medir() com nome montado em variável não é conferível aqui — exceto o
+  // despachante do layout, que só repassa o literal do atributo
+  const dinamicos = [...texto.matchAll(/\bmedir\(\s*([^'"`)\s][^,)]*)/g)].map((m) => m[1].trim())
+    .filter((arg) => arg !== 'alvo.dataset.evento');
+  if (dinamicos.length) {
+    falhas.push(`${onde}: medir(${dinamicos[0]}) com nome de evento que não é literal — o gate não `
       + 'consegue conferir o vocabulário');
   }
 }

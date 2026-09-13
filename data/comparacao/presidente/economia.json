@@ -1,0 +1,2291 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "presidente",
+ "uf": null,
+ "pagina": "economia",
+ "nome": "Economia",
+ "titulo": "Economia: o que cada candidato propõe",
+ "temas": [
+  "economia",
+  "fiscal",
+  "tributos"
+ ],
+ "origem": {
+  "arquivo": "economia-5.json",
+  "gerado_em": "2026-09-13T07:52:12Z",
+  "exportado_em": "2026-09-13T17:18:31Z"
+ },
+ "candidatos": [
+  {
+   "slug": "augusto-cury",
+   "nome": "Augusto Cury",
+   "partido": "AVANTE",
+   "numero": "70",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104778",
+   "foto": "/images/candidatos/cards/augusto-cury.webp"
+  },
+  {
+   "slug": "flavio-bolsonaro",
+   "nome": "Flávio Bolsonaro",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017104726",
+   "foto": "/images/candidatos/cards/flavio-bolsonaro.webp"
+  },
+  {
+   "slug": "lula",
+   "nome": "Lula",
+   "partido": "PT",
+   "numero": "13",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017016005",
+   "foto": "/images/candidatos/cards/lula.webp"
+  },
+  {
+   "slug": "renan-santos",
+   "nome": "Renan Santos",
+   "partido": "MISSÃO",
+   "numero": "14",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017002789",
+   "foto": "/images/candidatos/cards/renan-santos.webp"
+  },
+  {
+   "slug": "romeu-zema",
+   "nome": "Romeu Zema",
+   "partido": "NOVO",
+   "numero": "30",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
+   "foto": "/images/candidatos/cards/romeu-zema.webp"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Promover ajuste fiscal com corte e controle do crescimento das despesas públicas",
+   "n_concorda": 5,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      92,
+      135,
+      136
+     ],
+     "nota": "Ajuste da ordem de R$ 250 bi/ano iniciado já na transição"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      186,
+      187
+     ],
+     "nota": "Chama de choque fiscal nos gastos do governo"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      953,
+      982
+     ],
+     "nota": "Tesouraço: corte profundo para enxugar a máquina"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      460,
+      463,
+      464
+     ],
+     "nota": "Eliminar gastos improdutivos e redirecionar a áreas sociais"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      426
+     ],
+     "nota": "Controle do gasto primário com foco em eficiência e qualidade, sem cortes sociais"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Substituir o atual arcabouço fiscal por um novo conjunto de regras fiscais",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      135,
+      136
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      982
+     ],
+     "nota": "Reformulação das regras focada em estabilizar e reduzir a dívida"
+    },
+    "lula": {
+     "posicao": "discorda",
+     "blocos": [
+      425
+     ],
+     "nota": "Propõe manter o novo arcabouço fiscal"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Desindexar e desvincular despesas obrigatórias, revendo a correção automática de benefícios e os pisos vinculados à receita",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      133,
+      135
+     ],
+     "nota": "Corrigir benefícios só pela inflação e desvincular pisos de saúde e educação"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      186,
+      187
+     ],
+     "nota": "Desengessar o orçamento e ampliar espaço para investimento"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Aprovar uma PEC de transição com o pacote de ajuste antes da posse do novo governo",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      135,
+      136
+     ],
+     "nota": "Base na PEC do Equilíbrio Fiscal, com economia de R$ 1,1 tri até 2031"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Reformar a previdência e revisar o abono salarial",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      133,
+      135
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Reduzir renúncias, isenções e benefícios fiscais ineficientes",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      135,
+      136
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      426
+     ],
+     "nota": "Combate a privilégios e distorções como fonte do resultado fiscal"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      992
+     ],
+     "nota": "Redução das exceções para que grupos parecidos paguem impostos parecidos"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": "Mantém regimes legítimos, mas com custo estimado e divulgado"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Reformar o funcionalismo público e acabar com os supersalários",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      136
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      923,
+      924
+     ],
+     "nota": "Foco no excesso de pessoal e salários do Legislativo e do Judiciário"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Conter as despesas dos demais Poderes, com regra de controle dos gastos discricionários do Legislativo e do Judiciário",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      923,
+      924
+     ],
+     "nota": "Inclui verba de gabinete e cota parlamentar"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      982
+     ],
+     "nota": "Regra clara para os três Poderes da União"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Reformar o sistema de emendas parlamentares",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      136
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      918,
+      919
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      961
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      123,
+      126
+     ],
+     "nota": "Propõe enfrentar as emendas impositivas em debate com a sociedade"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Limitar as emendas parlamentares a percentual reduzido do orçamento discricionário e condicioná-las a critérios objetivos de interesse público",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      918,
+      919
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Dar rastreabilidade e transparência às emendas, priorizando sua alocação em políticas do Plano Plurianual",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      961
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Editar nova lei complementar de finanças públicas e racionalizar o uso do superávit financeiro",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      136
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Reduzir os gastos com publicidade estatal, mantendo apenas campanhas de interesse público",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      921,
+      922
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Perseguir déficit público próximo de zero durante todo o mandato",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      459,
+      460
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Estabilizar e reduzir a relação dívida pública/PIB",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      578,
+      982,
+      983
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      466,
+      467
+     ],
+     "nota": "Redução gradual via crescimento e modernização do Estado"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      218
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Entregar superávits primários de forma continuada",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      217,
+      218
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      982
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Contas públicas e ajuste fiscal",
+   "proposta": "Reformar o processo orçamentário e instituir avaliação permanente de políticas públicas, com metas de eficiência e medição do impacto de cada gasto",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      984
+     ],
+     "nota": "Identificação de beneficiários e agenda permanente de transparência"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      463,
+      464
+     ],
+     "nota": "Metas de eficiência por ministério"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Tributos",
+   "proposta": "Reduzir a carga tributária sobre a produção e o consumo",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      205
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      320,
+      548,
+      987,
+      992
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      486,
+      487
+     ],
+     "nota": "Compromisso de carga menor ao fim da transição da reforma"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Tributos",
+   "proposta": "Fixar metas progressivas de redução de impostos que obriguem o corte de gastos correspondente",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      205
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Tributos",
+   "proposta": "Revisar e redimensionar a reforma tributária em curso, corrigindo distorções e reduzindo a alíquota projetada do IVA",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      987,
+      992
+     ],
+     "nota": "Também revisar a majoração de impostos do governo atual"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      479,
+      487
+     ],
+     "nota": "Ajustes apenas se a avaliação identificar distorções relevantes"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Tributos",
+   "proposta": "Assegurar a não cumulatividade plena dos tributos sobre o consumo",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      992
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Tributos",
+   "proposta": "Evitar novas exceções, regimes especiais e tratamentos favorecidos na regulamentação da reforma tributária, com neutralidade da carga",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      236,
+      237
+     ],
+     "nota": "Monitoramento técnico e compromisso verificável de neutralidade"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      992
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": "Admite regimes legítimos, desde que com custo calculado e transparente"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Tributos",
+   "proposta": "Estimar e divulgar publicamente o custo de cada tratamento tributário diferenciado",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Tributos",
+   "proposta": "Simplificar o sistema tributário, unificar a legislação e reduzir obrigações acessórias e custos de conformidade",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      238,
+      239
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      992
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      345,
+      480,
+      2595
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Tributos",
+   "proposta": "Transferir ao Fisco o cálculo do imposto das empresas, com apuração automática a partir da nota fiscal eletrônica",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      238,
+      239
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Tributos",
+   "proposta": "Reduzir gradualmente o imposto de renda das empresas até o patamar dos países desenvolvidos",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      234,
+      235
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Tributos",
+   "proposta": "Desonerar exportações e investimentos produtivos",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      992
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2716,
+      2719
+     ],
+     "nota": "Regime competitivo para exportadoras e menos tributos sobre insumos"
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Tributos",
+   "proposta": "Rever a divisão federativa dos tributos para ampliar a participação dos municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      481,
+      484
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Tributos",
+   "proposta": "Conceder estímulos fiscais a zona econômica específica, com suspensão de direitos aduaneiros e regime próprio de IBS/CBS",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      467
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Tributos",
+   "proposta": "Criar incentivos fiscais específicos para empresas de tecnologia, inteligência artificial, robótica e inovação",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2596,
+      2722
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Tributos",
+   "proposta": "Aplicar tributação reduzida e incentivos fiscais à agricultura familiar e a pequenos produtores",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2245,
+      2246,
+      2247
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Tributos",
+   "proposta": "Garantir tratamento tributário justo às micro e pequenas empresas na implementação da reforma tributária",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      500
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      479
+     ],
+     "nota": "Atenção especial a micro e pequenas na avaliação de impactos"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Tributos",
+   "proposta": "Reduzir o IOF e demais tributos incidentes sobre operações de crédito",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      219,
+      220
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Criar condições para a queda sustentada da taxa de juros por meio de disciplina fiscal",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      217,
+      218
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      578,
+      983
+     ],
+     "nota": "Meta de juros básicos na média internacional"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      425
+     ],
+     "nota": "Redução sustentada dos juros mantendo o arcabouço fiscal"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      460,
+      467
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Manter a inflação controlada e trazê-la ao centro da meta",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      416,
+      427
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      578,
+      983
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Reduzir o crédito direcionado e subsidiado com recursos públicos a setores escolhidos",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      221,
+      222
+     ],
+     "nota": "Redução gradual inclusive de linhas subsidiadas do BNDES"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      982
+     ],
+     "nota": "Limitar crédito subsidiado com recursos do Tesouro"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Usar bancos públicos de fomento (BNDES, CAIXA) para financiar investimento produtivo e a internacionalização de empresas",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      532,
+      546
+     ],
+     "nota": "BNDES como gestor de consórcio e mitigador de risco em projetos estratégicos"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      503
+     ],
+     "nota": "Fundos de participação estruturados por bancos públicos com gestores privados"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      720,
+      725
+     ],
+     "nota": "CAIXA para pequenos negócios; BNDES e Apex para internacionalização"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Ampliar o acesso a crédito de micro, pequenos e médios negócios",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      500,
+      503
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      719,
+      720
+     ],
+     "nota": "Esteira de crédito e orientação pela rede da CAIXA"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      514,
+      517,
+      520,
+      2533
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Criar um banco/plataforma nacional de crédito ao pequeno empreendedor, com orientação técnica e educação financeira",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      514,
+      1889,
+      1890,
+      3130,
+      3140
+     ],
+     "nota": "Rede em parceria com bancos, cooperativas e fintechs, sem nova burocracia"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Instituir escada de crédito progressivo de até R$ 20 mil, com juros de 5% a 6% ao ano e meta de financiar 2 milhões de empreendedores em dez anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1609,
+      1610,
+      1895,
+      1896,
+      1897,
+      1898,
+      1899,
+      1900,
+      1901,
+      1902,
+      1903
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Criar fundo nacional de crédito ao empreendedor de R$ 30 a 50 bilhões, com capital rotativo e função de garantia",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1906,
+      1907,
+      1908,
+      1909,
+      1910,
+      1962,
+      1963
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Manter e ampliar fundos garantidores de crédito para viabilizar financiamento a pequenos negócios",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      429,
+      503
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1909,
+      1910
+     ],
+     "nota": "Governo assume apenas parte do risco das operações"
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Facilitar a portabilidade e a renegociação de dívidas das famílias, com uso do Open Finance",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      225,
+      226
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Ampliar a concorrência bancária e modernizar garantias, alienação fiduciária e recuperação de crédito para baratear os juros ao consumidor",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      221,
+      222,
+      227,
+      228
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Monitorar o endividamento de famílias e empresas e aprimorar as regras de oferta e concessão de crédito com proteção ao consumidor",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      429
+     ],
+     "nota": "Inclui controle de gastos excessivos em apostas on-line"
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Depositar R$ 1.000 para cada brasileiro ao nascer, aplicado em fundo de ações com saque aos 18 anos, como política de educação financeira",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      229,
+      230
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Criar programa de histórico positivo voluntário que dê crédito, juros menores e cashback a quem cumpre metas de qualificação e pagamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      729
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Transformar a CAIXA em banco de apoio à formação de patrimônio, com plataforma física e digital integrada de crédito, orientação e habitação",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      727,
+      728
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Aprofundar e aprimorar o mercado de capitais doméstico para financiar investimentos de longo prazo e de risco",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      428
+     ],
+     "nota": "Debêntures de infraestrutura, FIPs e investidores institucionais"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      280,
+      281
+     ],
+     "nota": "Foco em venture capital, vesting e equity"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Fortalecer os órgãos de regulação, fiscalização e controle do sistema financeiro",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      428
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Expandir as cooperativas de crédito para praticamente todos os municípios brasileiros",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2530,
+      2531,
+      2532,
+      2535,
+      2536
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Reduzir o spread bancário nas operações de crédito de menor porte",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      514
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Criar fundo soberano ou instrumento de estabilização de preços para proteger receitas de minerais estratégicos e dar previsibilidade fiscal",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      551
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Retomar o programa de desestatização e privatizar empresas estatais",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      195,
+      196
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      973
+     ],
+     "nota": "Retomada do PND avaliando caso a caso"
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Privatizar todas as empresas estatais",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      195,
+      196
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Fortalecer a Lei das Estatais e preencher a direção das empresas públicas por recrutamento técnico com regras de mercado",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      972
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Blindar os fundos de pensão das estatais de indicações políticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      973
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Ampliar as parcerias público-privadas na prestação de serviços e em projetos de infraestrutura",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      197,
+      198
+     ],
+     "nota": "Inclusive em saúde e educação"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      532
+     ],
+     "nota": "PPPs dentro de consórcio de financiamento em infraestrutura"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Mapear e vender imóveis e ativos públicos ociosos ou não essenciais, com metas anuais de arrecadação",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      199,
+      200
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Estado na economia e estatais",
+   "proposta": "Destinar parte dos lucros das empresas em que a União tem participação ao financiamento de políticas de empreendedorismo",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1618
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Garantir segurança jurídica e previsibilidade regulatória para quem investe, uniformizando regras e respeitando contratos",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      254,
+      255
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      762
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      476,
+      2715
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Criar mecanismos de estabilidade das regras por até 20 anos para projetos de longa maturação e responsabilizar o Estado por prejuízos quando revogar licença regular",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      762
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Estabelecer meta de crescimento econômico sustentado de 4% ao ano na próxima década",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      754
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Sustentar o crescimento com política macroeconômica que combine emprego, valorização do trabalho e redução das desigualdades",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      416,
+      420,
+      421
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Elevar a taxa de investimento da economia, ampliando investimentos públicos e privados em infraestrutura logística e social e em inovação industrial",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      417,
+      422
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Reduzir barreiras à entrada e usar a concorrência como motor de inovação e eficiência, ampliando a inserção comercial",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      278,
+      279
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Crescimento e competitividade",
+   "proposta": "Definir prazos para licenciamento ambiental e industrial e digitalizar a regulação",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2720,
+      2721,
+      2723
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Simplificar e digitalizar a abertura, a operação e o fechamento de empresas, reduzindo burocracia",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      240,
+      241,
+      242
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      345,
+      520,
+      526
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      719,
+      725
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      500
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Integrar todos os municípios à REDESIM e incentivar estados e municípios a regulamentar a Lei de Liberdade Econômica",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      240,
+      241,
+      242
+     ],
+     "nota": "Mesas executivas com o setor produtivo nas cadeias de suprimentos"
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Criar programa de apoio a quem abre o primeiro negócio, com capacitação pelo Sistema S e esteira de crédito bancário",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      719
+     ],
+     "nota": "Programa Minha Primeira Empresa"
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Criar um Ministério do Empreendedorismo e da economia distribuída",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1589
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Criar 10 mil clubes de empreendedorismo em escolas, universidades, igrejas e comunidades, com formação, mentoria e crédito próprio",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1591,
+      1592,
+      1596,
+      1597,
+      1612
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Elevar o Sebrae a centro estratégico de formação e acompanhamento do empreendedorismo nacional",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1615
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Estabelecer meta de formar 10 milhões de novos empreendedores com apoio técnico, crédito e desburocratização",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      517,
+      520
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Tratar o pequeno empreendedor como prioridade de política pública, valorizando quem produz riqueza",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      325,
+      345
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      725
+     ],
+     "nota": "Estado como parceiro, não obstáculo, de quem empreende"
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Ambiente de negócios e empreendedorismo",
+   "proposta": "Ampliar o acesso das pequenas empresas às compras governamentais",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      500
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Juros, crédito e sistema financeiro",
+   "proposta": "Fortalecer produtores rurais por meio do acesso a crédito local",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2534
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "augusto-cury": {
+   "325": {
+    "texto": "O governo brasileiro precisa valorizar pequenos empreendedores. Milhões de \nfamílias sobrevivem graças ao trabalho honesto de pessoas que arriscam, criam e \nproduzem. O empreendedorismo não deve ser tratado como inimigo social. Muitos \nempreendedores geram empregos, ajudam comunidades e sustentam sonhos \nfamiliares. Uma nação saudável estimula quem produz riqueza de forma ética.",
+    "pagina": 26
+   },
+   "345": {
+    "texto": "A economia brasileira precisa ser fortalecida com responsabilidade. Não existe \njustiça social sustentável em economia destruída. Precisamos estimular \nempreendedorismo, inovação, tecnologia e produtividade. Precisamos reduzir \nburocracia sufocante. Precisamos simplificar impostos. Precisamos criar ambiente \nonde empresas possam crescer sem serem esmagadas administrativamente.",
+    "pagina": 28
+   },
+   "459": {
+    "texto": "a) Déficit público próximo de zero durante o mandato",
+    "pagina": 36
+   },
+   "460": {
+    "texto": "O equilíbrio das contas públicas será uma prioridade nacional. Um país que gasta \ncontinuamente mais do que arrecada compromete o futuro de seus filhos, aumenta \nos juros, reduz investimentos e limita sua capacidade de crescer. Nossa meta será \nperseguir o déficit próximo de zero, sem aventuras fiscais, preservando \ninvestimentos estratégicos e fortalecendo a confiança dos brasileiros e dos \ninvestidores nacionais e internacionais.",
+    "pagina": 36
+   },
+   "463": {
+    "texto": "O dinheiro público pertence ao cidadão. Cada ministério deverá estabelecer metas \nde eficiência, redução de desperdícios e avaliação permanente dos resultados.",
+    "pagina": 36
+   },
+   "464": {
+    "texto": "Gastos improdutivos serão eliminados e os recursos direcionados para educação, \nsaúde, segurança, infraestrutura e inovação. O Estado deverá gastar melhor, e não \nsimplesmente gastar mais.",
+    "pagina": 36
+   },
+   "466": {
+    "texto": "c) Redução gradual e sustentável da dívida pública",
+    "pagina": 36
+   },
+   "467": {
+    "texto": "A elevada dívida pública compromete uma parcela significativa dos recursos do país \ne reduz a capacidade do Estado de investir em áreas essenciais. Nossa proposta é \npromover sua redução gradual e sustentável, por meio do crescimento econômico, \nda responsabilidade fiscal, do equilíbrio das contas públicas e da modernização do \nEstado. Uma trajetória consistente de redução do peso da dívida fortalece a \nconfiança na economia, contribui para a estabilidade fiscal e amplia, ao longo do \ntempo, a capacidade de investimento do país em áreas estratégicas para o \ndesenvolvimento econômico e social.",
+    "pagina": 36
+   },
+   "476": {
+    "texto": "Defenderemos estabilidade regulatória, respeito aos contratos, fortalecimento das \ninstituições e rapidez na solução de conflitos. Investidores precisam confiar que as \nregras não mudarão conforme o governo de ocasião, criando um ambiente favorável \nao desenvolvimento econômico.",
+    "pagina": 37
+   },
+   "479": {
+    "texto": "O sistema tributário brasileiro é um dos mais complexos do mundo. Iremos avaliar \nos impactos da reforma tributária sobre os diferentes setores da economia, com \nespecial atenção às micro e pequenas empresas e aos segmentos estratégicos para \no desenvolvimento e a geração de empregos. Caso sejam identificadas distorções \nou prejuízos relevantes, serão propostos os ajustes necessários, respeitando os \nprincípios constitucionais e a segurança jurídica.",
+    "pagina": 37
+   },
+   "480": {
+    "texto": "Defenderemos a simplificação dos tributos, a redução da burocracia, a unificação \nde procedimentos e a diminuição dos custos de conformidade para empresas e \ncidadãos. Um sistema tributário mais simples, transparente e eficiente aumenta a \ncompetitividade, reduz litígios, favorece o ambiente de negócios e estimula novos \ninvestimentos.",
+    "pagina": 37
+   },
+   "481": {
+    "texto": "Será revisto o atual formato de divisão federativa dos tributos que, atualmente, \nfavorece a União e os Estados desfavorecendo os Municípios. Entendemos que a dor \nhumana, como a saúde, a educação, a segurança, ocorre, em destaque, nos \nmunicípios, que carregam a responsabilidade e o custo de lidar com essas dores.",
+    "pagina": 37
+   },
+   "484": {
+    "texto": "Portanto, apresentaremos proposta de revisão do pacto federativo no aspecto \ntributário, o ideal seria menos União Federal e mais municípios.",
+    "pagina": 38
+   },
+   "486": {
+    "texto": "g) Compromisso com uma carga tributária menor ao fim da transição",
+    "pagina": 38
+   },
+   "487": {
+    "texto": "A simplificação do sistema tributário já está em curso e será conduzida com \nresponsabilidade até sua implantação plena. Nosso compromisso não será apenas \nadministrar a transição, mas trabalhar para que ela resulte em carga menor para o \ncidadão e para o setor produtivo. Regimes específicos podem ser legítimos quando \natendem a finalidades sociais ou econômicas relevantes, mas todos reduzem a base \nde incidência e influenciam a alíquota geral paga por todos. Por isso, cada \ntratamento diferenciado terá seu custo estimado e divulgado de forma clara, \npermitindo que a sociedade avalie seus benefícios e sua efetividade. Combinada ao \ncontrole rigoroso das despesas públicas e ao crescimento da economia, essa \ntransparência permitirá que o Brasil conclua a reforma com uma alíquota-referência \ninferior à hoje projetada.",
+    "pagina": 38
+   },
+   "514": {
+    "texto": "Criaremos um banco especializado em financiar pequenos empreendedores, \nmicroempresas e startups, oferecendo crédito acessível, orientação técnica e \neducação financeira. O objetivo será transformar ideias em negócios sustentáveis e \nampliar a geração de renda. Além disso, trabalharemos pela simplificação \nregulatória para esses negócios, garantindo que o empreendedor possa se \nformalizar com regras claras e sem a burocracia excessiva, com redução do spread \nbancário para o crédito de menor porte.",
+    "pagina": 39
+   },
+   "517": {
+    "texto": "Nos próximos anos, o Brasil poderá formar uma das maiores economias \nempreendedoras do mundo. Nosso plano prevê apoio técnico, crédito,",
+    "pagina": 39
+   },
+   "520": {
+    "texto": "desburocratização e incentivo à inovação para criar milhões de novos \nempreendedores capazes de impulsionar o crescimento econômico.",
+    "pagina": 40
+   },
+   "526": {
+    "texto": "Abrir uma empresa deverá ser rápido, simples e digital. Reduziremos exigências \ndesnecessárias, integraremos sistemas públicos e diminuiremos o tempo \nnecessário para formalização de novos negócios, estimulando investimentos e \ngeração de empregos. Esse formato aproxima-se dos grandes programas de governo \ninternacionais, como o Projeto Nacional de Desenvolvimento da Coreia do Sul e os \nplanos estratégicos adotados por países como Singapura e Irlanda.",
+    "pagina": 40
+   },
+   "1589": {
+    "texto": "Um ministério para preparar o país para a nova economia. Não apenas com crédito, \nmas com formação, estrutura e transformação mental.",
+    "pagina": 97
+   },
+   "1591": {
+    "texto": "Cada escola, universidade, igreja e comunidade terá um núcleo ativo. Esses clubes \nserão espaços de:",
+    "pagina": 97
+   },
+   "1592": {
+    "texto": "• Formação prática;",
+    "pagina": 97
+   },
+   "1596": {
+    "texto": "• Mentoria com empresários locais;",
+    "pagina": 98
+   },
+   "1597": {
+    "texto": "• Criação de negócios reais.",
+    "pagina": 98
+   },
+   "1609": {
+    "texto": "• Crédito De Até R$ 20.000,00;",
+    "pagina": 98
+   },
+   "1610": {
+    "texto": "• Juros Civilizados (5% a 6% ao ano);",
+    "pagina": 98
+   },
+   "1612": {
+    "texto": "Cada clube receberá crédito para o desenvolvimento de suas atividades.",
+    "pagina": 98
+   },
+   "1615": {
+    "texto": "Será elevado a um novo patamar: um centro estratégico de formação, \nacompanhamento e segurança do empreendedorismo nacional.",
+    "pagina": 98
+   },
+   "1618": {
+    "texto": "Parte dos lucros das empresas em que a União possui participação será direcionada \npara políticas públicas voltadas ao empreendedorismo.  Transformar uma riqueza \nconcentrada em uma riqueza distribuída. Usar a energia que polui para gerar \nimpacto social que transforma.",
+    "pagina": 98
+   },
+   "1889": {
+    "texto": "Será estruturado o Banco do Empreendedor, preferencialmente como plataforma \nnacional de crédito produtivo operada em parceria com instituições financeiras, \ncooperativas de crédito, bancos públicos, fintechs e agentes locais.",
+    "pagina": 107
+   },
+   "1890": {
+    "texto": "Não queremos criar uma gigantesca estrutura burocrática, mas construir uma \ngrande rede nacional de financiamento produtivo.",
+    "pagina": 107
+   },
+   "1895": {
+    "texto": "O empreendedor não começará necessariamente recebendo R$ 20 mil.",
+    "pagina": 108
+   },
+   "1896": {
+    "texto": "Poderá existir uma escada de crédito:",
+    "pagina": 108
+   },
+   "1897": {
+    "texto": "• 1ª etapa — até R$ 2 mil",
+    "pagina": 108
+   },
+   "1898": {
+    "texto": "• 2ª etapa — até R$ 5 mil",
+    "pagina": 108
+   },
+   "1899": {
+    "texto": "• 3ª etapa — até R$ 10 mil",
+    "pagina": 108
+   },
+   "1900": {
+    "texto": "• 4ª etapa — até R$ 20 mil",
+    "pagina": 108
+   },
+   "1901": {
+    "texto": "O empreendedor que demonstrar utilização produtiva do recurso e bom histórico de \npagamento poderá avançar progressivamente. O objetivo será construir histórico \nfinanceiro, reduzir inadimplência e aumentar a responsabilidade no uso do dinheiro.",
+    "pagina": 108
+   },
+   "1902": {
+    "texto": "O crédito poderá financiar máquinas, equipamentos, ferramentas, tecnologia, \nestoque inicial e capital de giro produtivo, segundo regras próprias de cada linha.",
+    "pagina": 108
+   },
+   "1903": {
+    "texto": "META: Financiar pelo menos 2 milhões de pequenos empreendedores e negócios \nem dez anos.",
+    "pagina": 108
+   },
+   "1906": {
+    "texto": "O Banco do Empreendedor poderá começar com um fundo na ordem de: R$ 30 \nbilhões a R$ 50 bilhões. Esse dinheiro não será necessariamente gasto e perdido.",
+    "pagina": 108
+   },
+   "1907": {
+    "texto": "Grande parte funcionará como capital rotativo.",
+    "pagina": 108
+   },
+   "1908": {
+    "texto": "O empreendedor recebe, produz, paga o financiamento e o dinheiro retorna para \nfinanciar outro brasileiro.",
+    "pagina": 108
+   },
+   "1909": {
+    "texto": "Uma parcela do fundo poderá funcionar como garantia para multiplicar a \ncapacidade de crédito por meio do sistema financeiro.",
+    "pagina": 108
+   },
+   "1910": {
+    "texto": "O governo assumirá apenas parte dos riscos, mantendo incentivos para que as \ninstituições financeiras façam análise responsável das operações.",
+    "pagina": 108
+   },
+   "1962": {
+    "texto": "• Capitalização inicial do Fundo/Banco do Empreendedor: aproximadamente",
+    "pagina": 111
+   },
+   "1963": {
+    "texto": "R$ 30 bilhões a R$ 50 bilhões.",
+    "pagina": 111
+   },
+   "2245": {
+    "texto": "Tributação reduzida;  \n•",
+    "pagina": 123
+   },
+   "2246": {
+    "texto": "Benefícios para produtores próprios;  \n•",
+    "pagina": 123
+   },
+   "2247": {
+    "texto": "Incentivos especiais para a agricultura familiar.",
+    "pagina": 123
+   },
+   "2530": {
+    "texto": "Por isso, propomos a expansão das cooperativas financeiras para praticamente \ntodos os municípios brasileiros.",
+    "pagina": 134
+   },
+   "2531": {
+    "texto": "As cooperativas de crédito poderão:",
+    "pagina": 134
+   },
+   "2532": {
+    "texto": "• Oferecer taxas mais justas;",
+    "pagina": 134
+   },
+   "2533": {
+    "texto": "• Financiar pequenos empreendedores;",
+    "pagina": 134
+   },
+   "2534": {
+    "texto": "• Fortalecer produtores rurais;",
+    "pagina": 134
+   },
+   "2535": {
+    "texto": "• Manter os recursos circulando nas próprias regiões;",
+    "pagina": 134
+   },
+   "2536": {
+    "texto": "• Democratizar o acesso aos serviços financeiros.",
+    "pagina": 134
+   },
+   "2595": {
+    "texto": "• Simplificação tributária;",
+    "pagina": 136
+   },
+   "2596": {
+    "texto": "• Incentivos fiscais;",
+    "pagina": 136
+   },
+   "2715": {
+    "texto": "Por isso, propomos um modelo regulatório moderno, baseado em segurança \njurídica, previsibilidade e simplificação. Entre as principais medidas estão:",
+    "pagina": 141
+   },
+   "2716": {
+    "texto": "• Regime tributário competitivo para empresas exportadoras;",
+    "pagina": 141
+   },
+   "2719": {
+    "texto": "• Redução de tributos sobre insumos destinados à produção para exportação;",
+    "pagina": 142
+   },
+   "2720": {
+    "texto": "• Licenciamento ambiental e industrial com prazos definidos;",
+    "pagina": 142
+   },
+   "2721": {
+    "texto": "• Regulamentação simplificada e digitalizada;",
+    "pagina": 142
+   },
+   "2722": {
+    "texto": "• Incentivos específicos para empresas de tecnologia, inteligência artificial, \nrobótica e inovação.",
+    "pagina": 142
+   },
+   "2723": {
+    "texto": "Nosso compromisso é reduzir a burocracia e aumentar a competitividade do Brasil.",
+    "pagina": 142
+   },
+   "3130": {
+    "texto": "• 10% destinados à criação do Banco Mundial do Empreendedor, oferecendo \nmicrocrédito, capacitação e apoio técnico para milhões de pequenos \nempreendedores, transformando assistência em autonomia econômica.",
+    "pagina": 158
+   },
+   "3140": {
+    "texto": "Por isso, propomos a criação do Banco Mundial do Empreendedor, destinado a \nfinanciar pequenos negócios, agricultura, comércio, serviços e inovação, permitindo \nque milhões de pessoas deixem a condição de dependência para assumir o \nprotagonismo de sua própria história.",
+    "pagina": 158
+   }
+  },
+  "flavio-bolsonaro": {
+   "320": {
+    "texto": "Menos imposto no que a família consome, conta de luz mais simples e mais \nbarata, custo de transporte menor na prateleira do supermercado e crédito \nque não afunda o orçamento.",
+    "pagina": 11
+   },
+   "548": {
+    "texto": "Vamos promover a revisão e o redimensionamento da reforma tributária em \ncurso e da majoração de impostos efetuada pelo atual governo, com o objetivo \nde reduzir efetivamente a carga sobre a produção e o consumo. Vamos corrigir \nsuas distorções, reduzir o IVA, hoje projetado num dos patamares mais altos \ndo mundo, e assegurar a não cumulatividade, para que não se cobre imposto \nsobre imposto. Assim a reforma fica mais equilibrada, preservando a \nsimplificação e a aderência às melhores práticas internacionais. O esforço de \nsimplificação continuará: menos impostos, legislação unificada, desoneração \ndas exportações e dos investimentos e redução das exceções, para que grupos \nparecidos paguem impostos parecidos. O círculo virtuoso é claro: menos \nimpostos, mais formalidade, mais crescimento.",
+    "pagina": 30
+   },
+   "578": {
+    "texto": "Ao estabilizar e reduzir a dívida pública, nosso governo vai criar as condições \npara que os juros básicos fiquem em linha com a média internacional e para \nque a inflação volte ao centro da meta. É o que permite que o crediário, o \nfinanciamento da casa e o capital de giro do pequeno negócio deixem de ser \nimpagáveis.",
+    "pagina": 33
+   },
+   "719": {
+    "texto": "Para quem está começando, vamos criar o Minha Primeira Empresa: menos \nburocracia para abrir e formalizar o negócio, capacitação e orientação pelo \nSistema S, para que o empreendedor aprenda a gerir o que criou, e uma \nesteira de crédito e serviços da CAIXA ao seu alcance, que o acompanhe do \nprimeiro balcão ao primeiro faturamento.",
+    "pagina": 45
+   },
+   "720": {
+    "texto": "Vamos apoiar o pequeno negócio com crédito para empreender e \norientação, pela rede da CAIXA, e apoiar a internacionalização de pequenas",
+    "pagina": 45
+   },
+   "725": {
+    "texto": "e médias empresas via BNDES e Apex-Brasil, para que o produto brasileiro \nchegue mais longe. Somado à redução de tributos sobre a produção que este \nplano defende e ao Brasil sem Fila, que corta a burocracia de abrir e tocar uma \nempresa, o recado é um só: quem quer empreender vai encontrar no Estado \num parceiro, não um obstáculo.",
+    "pagina": 46
+   },
+   "727": {
+    "texto": "O crédito para empreender, o financiamento da casa, a orientação para sair \ndas dívidas não chegam ao cidadão sozinhos. Precisa de quem leve. E o Brasil \ntem, para isso, um ativo que poucos países têm: a CAIXA, uma das maiores \nredes de atendimento do mundo, presente em quase todos os municípios, \ncom a confiança histórica da população. Não vamos criar estrutura nova: \nvamos dar uma nova missão à que já existe e já é do brasileiro.",
+    "pagina": 46
+   },
+   "728": {
+    "texto": "A CAIXA deixará de ser apenas a operadora de benefícios para se tornar o \nBanco da Prosperidade. Assim como os bancos privados ajudam seus \nclientes a construir patrimônio e realizar projetos, a CAIXA vai ajudar milhões \nde brasileiros a conquistar o primeiro patrimônio da vida e a autonomia \nfinanceira. Numa plataforma física e digital integrada, o cidadão encontrará \nnum lugar só o crédito, a orientação financeira, o apoio ao empreendedorismo, \na habitação e a regularização da casa, com inteligência artificial que \nidentifica as oportunidades certas para o momento de vida de cada um, em \nvez de deixar o cidadão adivinhar a que tem direito.",
+    "pagina": 46
+   },
+   "729": {
+    "texto": "A grande inovação será o Ganha-Ganha, um programa em que o Estado \nreconhece quem faz a sua parte. De adesão voluntária, ele permite que \natitudes como concluir um curso de qualificação, formalizar um negócio, \nconseguir um emprego ou manter as contas em dia formem um histórico \npositivo que trabalha a favor do cidadão: acesso a crédito, juros menores e \ncashback para quem hoje é invisível ao sistema financeiro. Os dados são do \ncidadão e ficam a serviço dele, não do Estado. Quem sempre fez a coisa certa, \nmas nunca teve como provar, passa a ter como.",
+    "pagina": 46
+   },
+   "754": {
+    "texto": "Vamos fazer o Brasil crescer, e esse é um compromisso central do nosso \ngoverno. O país cresceu, em média, 2% ao ano nas últimas duas décadas, \nmenos do que o mundo. Nossa meta é dobrar esse ritmo e alcançar um \ncrescimento sustentado de 4% ao ano ao longo da próxima década, apoiado \nno investimento privado, na segurança jurídica e na competitividade do agro, \nda indústria e dos serviços. Não é promessa vazia: é o resultado de escolhas \nconcretas, e é delas que trata este capítulo. O papel do Estado aqui não é ser \no empresário, é ser o país que funciona, para que quem produz possa produzir \ne para que o esforço de cada um renda ainda mais.",
+    "pagina": 49
+   },
+   "762": {
+    "texto": "Vamos também garantir que a regra combinada no início seja a regra do \nfim. Para os grandes projetos de longa maturação, criaremos mecanismos de \nestabilidade das regras de até 20 anos, para que o contrato não seja mudado \ndepois que a obra já estiver de pé. E quando o empreendedor age de boa-fé e \nobtém regularmente a sua licença, o Estado deve responder pelos prejuízos \nse voltar atrás sem que o empreendedor tenha dado causa, em vez de jogar \na conta sobre quem confiou na palavra que recebeu. Um país que honra o \ncombinado atrai o investimento e o emprego que vêm com ele, da logística à \nenergia, da mineração ao agro.",
+    "pagina": 50
+   },
+   "953": {
+    "texto": "Nossa bandeira é um grande TESOURAÇO: um corte profundo e por todos os \nlados, que enxuga a máquina, coloca as contas em ordem e reduz os impostos \nque pesam sobre quem produz. E é também um Estado organizado para \nprevenir a corrupção: com transparência, mérito e regras claras, fecha-se o \nespaço para o desvio. É o que detalham as próximas páginas.",
+    "pagina": 68
+   },
+   "961": {
+    "texto": "No mesmo esforço de organizar melhor o orçamento, daremos mais \ntransparência, controle e rastreabilidade às emendas parlamentares, \npriorizando sua alocação em políticas públicas prioritárias do Plano Plurianual, \naprovado pelo parlamento.",
+    "pagina": 69
+   },
+   "972": {
+    "texto": "Nas empresas públicas, essa proteção tem nome: a Lei das Estatais, de 2016, \ncriada depois da Lava Jato para blindar as estatais da indicação política, com \nexigência de qualificação técnica e quarentena para quem vem de campanha \neleitoral. Tentaram enfraquecê-la; nós vamos fortalecê-la. E vamos além: \nsempre que possível, o comando das estatais e dos cargos de direção será \npreenchido por recrutamento com regras de mercado, com busca ativa de \nprofissionais qualificados, como fazem as empresas privadas quando \nprocuram seus executivos, escolhendo pela competência comprovada, e não \npela conveniência política.",
+    "pagina": 70
+   },
+   "973": {
+    "texto": "Vamos blindar os fundos de pensão das estatais da indicação política, \nporque a aposentadoria do trabalhador não pode virar cofre de projeto de \npoder. E vamos retomar o Programa Nacional de Desestatização com \ncritério, avaliando caso a caso onde a presença do Estado deixou de fazer \nsentido. Estatal não é palanque nem cabide de apadrinhado: é patrimônio do \nbrasileiro, e vai ser tratada como tal.",
+    "pagina": 70
+   },
+   "982": {
+    "texto": "Vamos fazer o oposto: faremos nossos gastos caberem no orçamento, o que \npermitirá cobrar menos impostos e não empurrará dívida para as próximas \ngerações. Apresentaremos uma reformulação nas atuais regras fiscais, com \nregras claras focadas na estabilização e na redução da dívida pública \nconforme determina a Constituição. Vamos construir o equilíbrio fiscal \nduradouro, entregando superávits primários e limitando o crédito subsidiado \ncom recursos do Tesouro, mitigando pressões inflacionárias. E haverá uma \nregra clara de controle de gastos discricionários dos três Poderes da União.",
+    "pagina": 71
+   },
+   "983": {
+    "texto": "Regras claras trazem previsibilidade e credibilidade, tornando o país mais \natrativo e competitivo. A meta é alcançar, no menor prazo possível, a \nestabilidade e depois a queda da relação Dívida/PIB, o que puxa os juros para \na média internacional e leva a inflação ao centro da meta. Não é abstração de \neconomista: é o que faz o crediário caber no bolso, o financiamento da casa \nser possível e o salário parar de derreter no fim do mês.",
+    "pagina": 71
+   },
+   "984": {
+    "texto": "Junto disso, um choque de gestão vai colocar o patrimônio público a serviço \nda sociedade, com reforma do processo orçamentário e uma agenda \npermanente \nde \ntransparência \ne \navaliação \nde \npolíticas \npúblicas, \nidentificando quem são os beneficiários de cada programa e medindo o \nimpacto real de cada gasto. Dinheiro público é dinheiro do cidadão, e cada real \nprecisa mostrar o que entregou.",
+    "pagina": 71
+   },
+   "987": {
+    "texto": "Vamos promover a revisão e o redimensionamento da reforma tributária em \ncurso e da majoração de impostos efetuada pelo atual governo, com o objetivo \nde reduzir efetivamente a carga sobre a produção e o consumo. Vamos corrigir",
+    "pagina": 71
+   },
+   "992": {
+    "texto": "suas distorções, reduzir o IVA, hoje projetado num dos patamares mais altos \ndo mundo, e assegurar a não cumulatividade, para que não se cobre imposto \nsobre imposto. Assim a reforma fica mais equilibrada, preservando a \nsimplificação e a aderência às melhores práticas internacionais. O esforço de \nsimplificação continuará: menos impostos, legislação unificada, desoneração \ndas exportações e dos investimentos e redução das exceções, para que grupos \nparecidos paguem impostos parecidos. O círculo virtuoso é claro: menos \nimpostos, mais formalidade, mais crescimento.",
+    "pagina": 72
+   }
+  },
+  "lula": {
+   "123": {
+    "texto": "Propomos ainda enfrentar uma grave distorção na elaboração e gestão do \norçamento federal – o atual sistema de emendas parlamentares. No orçamento \nde 2026, as emendas somaram R$ 50 bilhões, consumindo aproximadamente um \nquinto dos recursos discricionários do Poder Executivo. As emendas impositivas",
+    "pagina": 15
+   },
+   "126": {
+    "texto": "e o orçamento secreto são práticas que mudaram as relações entre o Executivo e \no Legislativo, sequestram o orçamento público, dispersam os recursos e reduzem \na eficiência alocativa. Essas práticas se reproduzem nas assembleias legislativas e \ncâmaras municipais por todo o Brasil, dificultando a renovação do Legislativo. É \npreciso que o tema das emendas parlamentares seja debatido com a sociedade.",
+    "pagina": 16
+   },
+   "416": {
+    "texto": "esse ciclo e dar um salto de desenvolvimento, é necessário continuar \nimplementando uma política macroeconômica comprometida com o crescimento, \na redução das desigualdades, a valorização do trabalho, a responsabilidade \nambiental, a responsabilidade fiscal, a queda dos juros e a inflação controlada.",
+    "pagina": 48
+   },
+   "417": {
+    "texto": "Nosso desafio é sustentar taxas robustas de crescimento, ampliar os investimentos, \nelevar a produtividade e consolidar os avanços promovidos pela reforma tributária \ne pelas políticas de desenvolvimento produtivo.",
+    "pagina": 48
+   },
+   "420": {
+    "texto": "Vamos assegurar que a política econômica siga promovendo o crescimento e que \nele continue se traduzindo em melhoria real das condições de vida da população.",
+    "pagina": 48
+   },
+   "421": {
+    "texto": "É preciso sustentar esse crescimento, ano após ano, década após década.",
+    "pagina": 48
+   },
+   "422": {
+    "texto": "Para isso, vamos elevar a taxa de investimento da economia. Ampliar os \ninvestimentos em infraestrutura logística, para dar mais competitividade à \nprodução nacional, e em infraestrutura social, para aprimorar os serviços e os \ncuidados básicos prestados à população. Também continuaremos a incentivar os \ninvestimentos privados na indústria, com foco em inovação e em setores \nportadores de futuro, para que o Brasil avance posições na corrida tecnológica \nglobal.",
+    "pagina": 48
+   },
+   "425": {
+    "texto": "A taxa de juros é hoje o que a inflação foi no passado no Brasil: promove \nconcentração de renda e desorganiza a nossa economia. Para impulsionar ainda \nmais os investimentos produtivos e o crescimento econômico de longo prazo, \nvamos criar as condições para uma redução sustentada das taxas de juros, com \ninflação controlada e assegurando uma política fiscal responsável. Para isso, \nmanteremos o novo arcabouço fiscal, que controlou o crescimento das despesas \nsem prejudicar as políticas sociais e permitiu uma redução significativa do déficit \nprimário.",
+    "pagina": 49
+   },
+   "426": {
+    "texto": "O resultado fiscal virá, como fizemos até aqui, da retomada do crescimento \neconômico, do controle do aumento do gasto primário, investindo na melhoria da \neficiência e da qualidade do gasto público, da promoção de justiça tributária e do \ncombate aos privilégios e às distorções.",
+    "pagina": 49
+   },
+   "427": {
+    "texto": "A inflação baixa e a estabilidade de preços são pressupostos fundamentais do \nnosso governo. Manteremos a inflação sob controle de forma duradoura e \nsustentável, garantindo que a renda real da população cresça acima do custo de \nvida.",
+    "pagina": 49
+   },
+   "428": {
+    "texto": "Vamos também garantir a estabilidade e a saúde do sistema financeiro nacional \npor meio do fortalecimento dos órgãos de regulação, fiscalização e controle. E \nvamos aprofundar o mercado de capitais doméstico – aprimorando o uso das \ndebêntures de infraestrutura, dos fundos de investimento em participações e do \nmercado secundário de recebíveis – e ampliar a atuação de investidores \ninstitucionais como financiadores de longo prazo.",
+    "pagina": 49
+   },
+   "429": {
+    "texto": "Além disso, seguiremos monitorando a evolução do endividamento das famílias e \ndas empresas, assegurando a continuidade dos fundos garantidores, mantendo \nos mecanismos de controle de gastos excessivos em apostas on-line e \naprimorando as regras de oferta e responsabilidade na concessão de crédito, \nconferindo maior proteção aos consumidores.",
+    "pagina": 49
+   },
+   "500": {
+    "texto": "No próximo período, vamos simplificar ainda mais o ambiente de negócios, \nampliar o acesso das pequenas empresas às compras governamentais, assegurar \ntratamento tributário justo na implementação da reforma tributária e estimular \numa cultura de inovação tecnológica e inserção exportadora.",
+    "pagina": 57
+   },
+   "503": {
+    "texto": "Seguiremos potencializando o acesso a crédito para MPMEs por meio dos fundos \ngarantidores. Também ampliaremos investimentos para apoiar o crescimento de \npequenas e médias empresas em setores dinâmicos e portadores de futuro, por \nmeio de fundos de participação estruturados pelos bancos públicos, em parceria \ncom gestores privados e em conformidade com as diretrizes da política industrial.",
+    "pagina": 58
+   }
+  },
+  "renan-santos": {
+   "92": {
+    "texto": "via democrática, os defeitos legados desde o Estado Novo varguista, a primeira tentativa de centralização \npolítica e econômica da nossa República. A alusão a Getúlio Vargas, no entanto, não tem por objetivo imitar \nsuas soluções: reconhecemos que foi o projeto de Getúlio que forjou o Brasil industrial e moderno, e preten-\ndemos fazer algo similar, dentro dos limites da democracia representativa: sepultar a Nova República e forjar \num Brasil que aponte para o futuro. O primeiro capítulo, “Um Remédio Amargo”, detalha nosso plano de \najuste fiscal, que deve ser tocado ainda no período de transição entre governos.",
+    "pagina": 6
+   },
+   "133": {
+    "texto": "O ajuste fiscal necessário é da ordem de R$ 250 bilhões anuais, segundo Mansueto de Almeida. Para \nrealizar esse tipo de mudança, qualquer governo a partir de 2027 precisará desindexar e desvincular despesas \ne reformar a previdência.",
+    "pagina": 10
+   },
+   "135": {
+    "texto": "O primeiro ato de um governo da Missão, na verdade a ser endereçado mesmo antes da posse, será a \naprovação de uma PEC de Transição, como a promovida por Lula em 2022. No nosso caso, a PEC de \nTransição deverá utilizar como base um projeto já protocolado por nosso deputado Kim Kataguiri em 2024, \na chamada “PEC do Equilíbrio Fiscal”, que promove a desindexação de benefícios previdenciários e assisten-\nciais do salário mínimo (corrigindo-os apenas pela inflação), a desvinculação dos pisos de saúde e educação \nda receita, a revisão do abono salarial e a redução de renúncias fiscais (gastos tributários), com economia \nprojetada de R$ 1,1 trilhão até 2031.",
+    "pagina": 10
+   },
+   "136": {
+    "texto": "A essa PEC, pretendemos também adicionar uma série de medidas propostas pelo caderno Caminhos do \nDesenvolvimento: Estabilizar, Crescer, Incluir, publicado pelo CDPP (Centro de Debates de Políticas Públi-\ncas). O documento que contou com a contribuição de mais de 50 pesquisadores e economistas sistematizou \nde forma coerente uma política econômica baseada em evidências, com disciplina fiscal e racionalidade insti-\ntucional. Reconhecendo o valor do trabalho técnico e intelectual do CDPP, selecionamos as propostas mais \ninteressantes e as traduzimos à realidade política de hoje e ao nosso entendimento do Brasil: a racionalização \ndo superávit financeiro, a reforma do funcionalismo público com fim dos supersalários, mudanças nas emen-\ndas parlamentares, redução das isenções fiscais e uma nova lei complementar das finanças públicas. Essas \npropostas já deverão estar presentes no nosso projeto de PEC de Transição, que terá por objetivo substituir o \narcabouço fiscal por um novo modelo mais inteligente.",
+    "pagina": 10
+   },
+   "467": {
+    "texto": "▪\t estímulos fiscais por meio de suspensão de direitos aduaneiros e de regime específico de IBS/CBS para \na zona (LC 214/2025);",
+    "pagina": 35
+   },
+   "532": {
+    "texto": "▪\t Estabelecimento de consórcio de financiamento liderado pelo BNDES, reunindo entes públicos e in-\nvestidores privados, com o banco como gestor de investimentos, mitigador de risco e intermediador \nde parcerias internacionais, com recurso a Parcerias Público-Privadas quando envolver infraestrutura.",
+    "pagina": 39
+   },
+   "546": {
+    "texto": "▪\t mobilização de recursos via BNDES (50% do investimento), complementados por agências america-\nnas (35%), fundos verdes europeus (10%) e capital privado (5%), para um total de aproximadamente \n20 bilhões de reais ao longo de uma década;",
+    "pagina": 40
+   },
+   "551": {
+    "texto": "▪\t estabelecimento de fundo soberano ou instrumento de estabilização de preços que proteja a receita \nbrasileira de flutuações cíclicas no mercado internacional de terras raras, garantindo previsibilidade \nfiscal para financiamento de longo prazo e investimento em pesquisa e desenvolvimento.",
+    "pagina": 40
+   }
+  },
+  "romeu-zema": {
+   "186": {
+    "texto": "Desengessar o orçamento público, contendo os gastos que crescem \nno piloto automático:",
+    "pagina": 14
+   },
+   "187": {
+    "texto": "Revisar o crescimento automático das despesas obrigatórias e das regras que fazem \no gasto público se expandir sozinho, inclusive as emendas parlamentares, ampliando \no espaço do orçamento destinado a investimento e devolvendo ao país a capacidade \nde realizar obras, equipar hospitais e melhorar escolas.",
+    "pagina": 14
+   },
+   "195": {
+    "texto": "Privatizar todas as empresas estatais:",
+    "pagina": 15
+   },
+   "196": {
+    "texto": "Privatizar todas as empresas estatais para que o governo possa se concentrar na-\nquilo que de fato lhe cabe, como segurança pública e educação, reduzindo o espaço \npara escândalos de corrupção e garantindo maior eficiência no uso dos recursos \npúblicos e mais competição na economia brasileira.",
+    "pagina": 15
+   },
+   "197": {
+    "texto": "Ampliar as parcerias público-privadas em todos os serviços \npúblicos, inclusive saúde e educação:",
+    "pagina": 15
+   },
+   "198": {
+    "texto": "Aumentar o investimento privado no país por meio da ampliação das parcerias pú-\nblico-privadas em todos os setores da administração pública, inclusive em projetos \nque geram impacto direto na qualidade dos serviços e na vida da população, como \nsaúde e educação.",
+    "pagina": 15
+   },
+   "199": {
+    "texto": "Vender os imóveis e ativos públicos sem uso ou não essenciais:",
+    "pagina": 15
+   },
+   "200": {
+    "texto": "Mapear o patrimônio imobiliário federal e vender, por venda direta ao ocupante ou \nleilão, os imóveis desocupados, subutilizados ou sem função pública, com metas \nanuais de arrecadação e destinação dos recursos para investimentos públicos.",
+    "pagina": 15
+   },
+   "204": {
+    "texto": "Definir metas de redução de impostos que forcem o corte efetivo de \ngastos:",
+    "pagina": 16
+   },
+   "205": {
+    "texto": "Fixar metas progressivas de redução da carga tributária que imponham os cortes de \ngastos necessários para atingi-las, invertendo a lógica atual em que o gasto define \no imposto.",
+    "pagina": 16
+   },
+   "217": {
+    "texto": "Criar condições para a queda da taxa de juros:",
+    "pagina": 18
+   },
+   "218": {
+    "texto": "Garantir a queda da curva de juros por meio de um choque fiscal para estabilizar a \nrelação dívida/PIB, promovendo reformas e mantendo superávits primários que per-\nmitam o pagamento da dívida.",
+    "pagina": 18
+   },
+   "219": {
+    "texto": "Reduzir os impostos dos empréstimos:",
+    "pagina": 18
+   },
+   "220": {
+    "texto": "Reduzir os custos diretos das operações financeiras começando pela redução do \nIOF, alinhando o Brasil às práticas dos países desenvolvidos.",
+    "pagina": 18
+   },
+   "221": {
+    "texto": "Ampliar a concorrência entre bancos, reduzindo o direcionamento \npolítico do crédito a setores e programas específicos:",
+    "pagina": 18
+   },
+   "222": {
+    "texto": "Reduzir gradualmente os programas de crédito direcionado, incluindo linhas subsi-\ndiadas do BNDES, para setores escolhidos politicamente, visando ampliar a concor-\nrência entre bancos e baratear o crédito no Brasil.",
+    "pagina": 18
+   },
+   "225": {
+    "texto": "Facilitar a renegociação e a portabilidade de dívidas, gerando novas \noportunidades de refinanciamento:",
+    "pagina": 18
+   },
+   "226": {
+    "texto": "Facilitar a portabilidade do crédito com o uso do Open Finance, para que o cliente \npossa comparar propostas com mais facilidade e levar sua dívida para bancos com \njuros menores.",
+    "pagina": 18
+   },
+   "227": {
+    "texto": "Aumentar a segurança jurídica e a concorrência entre instituições \nfinanceiras para forçar a queda dos juros ao consumidor:",
+    "pagina": 18
+   },
+   "228": {
+    "texto": "Aumentar a concorrência no mercado e modernizar o sistema de garantias, aliena-\nção fiduciária e recuperação de crédito em casos de inadimplência, permitindo que \no mercado opere com menos riscos e abrindo espaço para redução dos juros finais \nao consumidor.",
+    "pagina": 18
+   },
+   "229": {
+    "texto": "Criar uma cultura de educação financeira na sociedade brasileira a \npartir do programa Sócios do Brasil:",
+    "pagina": 18
+   },
+   "230": {
+    "texto": "Depositar R$1.000 para cada brasileiro ao nascer, com o valor aplicado em fundos de \nações e saque permitido apenas aos 18 anos, para estimular desde cedo a formação \nde patrimônio e a educação financeira.",
+    "pagina": 18
+   },
+   "234": {
+    "texto": "Reduzir o imposto de renda das empresas para o nível dos países \ndesenvolvidos:",
+    "pagina": 19
+   },
+   "235": {
+    "texto": "Reduzir gradualmente o imposto de renda das empresas para aproximar o Brasil das \neconomias desenvolvidas e permitir que mais recursos fiquem na atividade produti-\nva impulsinando investimento, expansão e geração de empregos.",
+    "pagina": 19
+   },
+   "236": {
+    "texto": "Assegurar uma implementação eficaz da Reforma Tributária:",
+    "pagina": 19
+   },
+   "237": {
+    "texto": "Evitar que a regulamentação da Reforma Tributária replique a complexidade do sis-\ntema atual por meio de burocracias desnecessárias, regimes especiais, exceções \ne tratamentos favorecidos, garantindo monitoramento técnico, transparência sobre \nimpactos setoriais e compromisso verificável de neutralidade da carga tributária.",
+    "pagina": 19
+   },
+   "238": {
+    "texto": "Reformar o IRPJ e simplificar de vez o pagamento de impostos das \nempresas:",
+    "pagina": 19
+   },
+   "239": {
+    "texto": "Reformar a tributação das empresas, em especial os impostos diretos como o IRPJ, \npartindo do princípio de que é o Estado, e não o contribuinte, que deve calcular o \nimposto, com a Receita apurando o valor automaticamente a partir da nota fiscal \neletrônica e eliminando anexos, faixas e obrigações acessórias, para que o empreen-\ndedor troque tempo e dinheiro gastos com burocracia por investimento, crescimento \ne geração de empregos.",
+    "pagina": 19
+   },
+   "240": {
+    "texto": "Facilitar a abertura, operação e o fechamento de empresas:",
+    "pagina": 19
+   },
+   "241": {
+    "texto": "Promover o diálogo com o setor produtivo por meio de mesas executivas com vá-\nrios atores nas principais cadeias de suprimentos para eliminar todas as barreiras \nno Brasil e avançar com a integração dos municípios brasileiros à REDESIM, além \nde incentivar que todos os estados e municípios regulamentem a Lei de Liberdade",
+    "pagina": 19
+   },
+   "242": {
+    "texto": "Econômica, nos moldes da Lei Federal.",
+    "pagina": 19
+   },
+   "254": {
+    "texto": "Garantir segurança, previsibilidade e eficiência dos sistemas \njurídico e regulatório:",
+    "pagina": 20
+   },
+   "255": {
+    "texto": "Reduzir a insegurança jurídica e regulatória, uniformizando regras, padronizando \nfunções, prazos e procedimentos e dando mais previsibilidade a decisões tributá-\nrias, administrativas, regulatórias e de licenciamento em todos os níveis de governo.",
+    "pagina": 20
+   },
+   "278": {
+    "texto": "Fortalecer a concorrência na economia brasileira para fomentar a \ninovação:",
+    "pagina": 22
+   },
+   "279": {
+    "texto": "Reduzir as barreiras à entrada e ampliar a inserção comercial em todos os setores, \ngarantindo juros baixos e segurança jurídica para as empresas e usando a concor-\nrência como principal motor de inovação e ganho de eficiência para o consumidor.",
+    "pagina": 22
+   },
+   "280": {
+    "texto": "Aprimorar o mercado de capitais brasileiro para facilitar \ninvestimentos de risco:",
+    "pagina": 22
+   },
+   "281": {
+    "texto": "Aperfeiçoar os mecanismos do mercado de capitais brasileiro, como regras de ven-\nture capital, estruturação de fundos, garantias de investimento e segurança jurídica \npara vesting e equity, a fim de atrair capital nacional e estrangeiro para os setores \nestratégicos da economia do futuro.",
+    "pagina": 22
+   },
+   "918": {
+    "texto": "Racionalizar o uso das emendas parlamentares:",
+    "pagina": 75
+   },
+   "919": {
+    "texto": "Limitar as emendas parlamentares a um percentual reduzido do orçamento discri-\ncionário e condicionar sua destinação ao cumprimento de critérios objetivos de in-\nteresse público e transparência, evitando a fragmentação do orçamento em projetos \nde baixo impacto ou com finalidade meramente eleitoral.",
+    "pagina": 75
+   },
+   "921": {
+    "texto": "Reduzir os gastos com publicidade estatal, acabando com a promo-\nção do governo na imprensa e mantendo apenas campanhas de inte-\nresse público:",
+    "pagina": 76
+   },
+   "922": {
+    "texto": "Restringir a publicidade do governo apenas às campanhas essenciais de interesse \npúblico, como as de educação, saúde e segurança, para que o dinheiro do contri-\nbuinte deixe de financiar a autopromoção de quem governa.",
+    "pagina": 76
+   },
+   "923": {
+    "texto": "Conter os gastos excessivos do legislativo e do judiciário:",
+    "pagina": 76
+   },
+   "924": {
+    "texto": "Enxugar o custo do Legislativo e do Judiciário, atacando o excesso de pessoal e os \nsalários acima da média que sustentam essas estruturas, além de moralizar  despe-\nsas como verba de gabinete e cota parlamentar, devolvendo ao contribuinte recur-\nsos hoje gastos com o conforto dos ocupantes dos cargos.",
+    "pagina": 76
+   }
+  }
+ }
+}

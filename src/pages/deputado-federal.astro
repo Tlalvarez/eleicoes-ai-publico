@@ -1,38 +1,28 @@
 ---
 import Base from '../layouts/Base.astro';
-// Deputado federal saiu do ar em 06/09/2026, por decisão do Thiago, e a razão
-// é diferente da que tirou o cargo no dia 5. Ali era coleta incompleta; aqui é
-// TAMANHO: são 7.772 candidaturas no país, 1.130 só em São Paulo, e apenas 821
-// têm algum material — porque cerca de 6.700 não declararam site ao TSE e a
-// única lane que alcança o cargo hoje é a de sites. Publicar 7.772 páginas em
-// que nove de cada dez dizem "ainda não coletamos" não ajuda ninguém a votar.
-// A Cloudflare Pages conserva por 7 dias os arquivos apagados de uma
+// Deputado federal saiu do ar em 06/09/2026 (volume do acervo) e, com o fim do
+// chat em 13/09/2026, o motivo mudou: o site compara programas de governo
+// registrados no TSE, e candidatura ao Legislativo não registra programa. A
+// Cloudflare Pages conserva por 7 dias os arquivos apagados de uma
 // publicação, por isso esta página existe em vez de um 404, e o
 // `public/_redirects` manda /deputado-federal/* para cá.
 ---
 <Base title="Deputado federal"
-  description="A seção sobre as candidaturas a deputado federal em 2026 está em preparação.">
+  description="Candidaturas a deputado federal não registram programa de governo no TSE; o eleicoes.ai compara programas.">
   <div class="prose">
     <p class="sobretitulo">Eleições gerais de 2026 · Deputado federal</p>
-    <h1>Em preparação</h1>
+    <h1>Sem programa de governo a comparar</h1>
     <p class="lead">
-      São 7.772 candidaturas a deputado federal no país, e 1.130 só em São Paulo. Reunimos
-      material próprio de pouco mais de 800 delas: a maioria dos candidatos não informou
-      site nem endereço que a gente consiga ler hoje.
+      O eleicoes.ai compara os programas de governo registrados na Justiça Eleitoral. Candidaturas
+      ao Legislativo, como deputado federal, não registram programa de governo no TSE, então
+      não há o que comparar aqui.
     </p>
-    <p>
-      Publicar milhares de páginas em que quase todas dizem "ainda não coletamos" não ajuda
-      ninguém a votar. Um cargo desse tamanho precisa de outra forma de reunir e apresentar
-      o material, e é isso que estamos construindo. Enquanto não estiver pronto, preferimos
-      não publicar pela metade.
-    </p>
-    <p>Enquanto isso, você pode perguntar sobre:</p>
+    <p>Você pode comparar os programas de governo de:</p>
     <ul>
-      <li><a href="/">Presidente</a></li>
+      <li><a href="/presidente">Presidente</a></li>
       <li><a href="/governador">Governador</a></li>
-      <li><a href="/senador">Senador</a></li>
     </ul>
-    <p>Como o material é reunido e por que a régua tem de ser a mesma: <a href="/metodologia">metodologia</a>.</p>
+    <p>Como os programas são lidos e comparados: <a href="/metodologia">metodologia</a>.</p>
   </div>
   <style>
     .sobretitulo {

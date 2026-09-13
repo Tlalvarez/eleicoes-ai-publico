@@ -2,18 +2,18 @@
 /**
  * Emite `dist/_headers` — os cabeçalhos de segurança do site publicado.
  *
- * A Cloudflare Pages aplica este arquivo a todo ativo estático que serve (e ao
- * que a Function de /resposta/<id> lê de `env.ASSETS`). Sem ele o site sai
+ * A Cloudflare Pages aplica este arquivo a todo ativo estático que serve. Sem ele o site sai
  * sem CSP, sem HSTS e sem proteção contra ser embutido em iframe de terceiro —
  * num produto eleitoral, embutir a página numa moldura que a comente é o
  * ataque barato.
  *
  * Por que ele é GERADO, e não versionado em `public/_headers`: a CSP proíbe
- * script inline, e o build tem dois deles que não dá para tirar — o stub do
- * PostHog (`is:inline`, em todas as páginas) e o filtro do acervo, que o Astro
- * embute por ser pequeno. A saída é autorizar exatamente esses dois pelo hash
- * do conteúdo. O hash muda quando o script muda, então ele tem de ser
- * calculado sobre o dist que vai a público, e não digitado à mão.
+ * script inline, e o build tem os que não dá para tirar — o stub do PostHog
+ * (`is:inline`, em todas as páginas), os dados de cada página de comparação
+ * (`define:vars`) e o que o Astro embute por ser pequeno. A saída é autorizar
+ * exatamente esses pelo hash do conteúdo. O hash muda quando o script muda,
+ * então ele tem de ser calculado sobre o dist que vai a público, e não
+ * digitado à mão.
  *
  * O que a política autoriza, e só isso:
  *   · script: os do próprio site (`/_astro/*`), os inline por hash, o
@@ -23,8 +23,7 @@
  *     nos cartões: centenas deles, hash por hash não compensa e estilo inline
  *     não executa nada);
  *   · imagem: o site e as fotos oficiais do TSE;
- *   · conexão: o site (API na mesma origem, no gate), o serviço de evidências,
- *     o PostHog e o destino do beacon da Cloudflare;
+ *   · conexão: o site, o PostHog e o destino do beacon da Cloudflare;
  *   · nada de `object`, nada de `<base>` alheio, formulário só para o site,
  *     e a página não pode ser emoldurada por ninguém.
  *
@@ -37,7 +36,6 @@ import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from '
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { API_PADRAO } from '../src/lib/resposta-publica.mjs';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(RAIZ, 'dist');
@@ -95,18 +93,8 @@ export function inventarioDoDist(dist = DIST) {
   return { hashes, problemas };
 }
 
-/** A origem do serviço de evidências embutida no build, se houver, além do padrão. */
-function origensDaApi() {
-  const origens = new Set([API_PADRAO]);
-  const env = process.env.PUBLIC_PESQUISA_API;
-  if (env) {
-    try { origens.add(new URL(env).origin); } catch { /* relativo ou vazio: mesma origem */ }
-  }
-  return [...origens];
-}
-
 /** A CSP inteira, dados os hashes dos scripts inline. */
-export function politica(hashes, { api = origensDaApi() } = {}) {
+export function politica(hashes) {
   const inline = [...hashes].map((h) => `'sha256-${h}'`).join(' ');
   return [
     `default-src 'self'`,
@@ -114,8 +102,7 @@ export function politica(hashes, { api = origensDaApi() } = {}) {
       .replace(/\s+/g, ' '),
     `style-src 'self' 'unsafe-inline'`,
     `img-src 'self' ${ORIGENS.fotosTse}`,
-    `connect-src 'self' ${api.join(' ')} ${ORIGENS.posthogIngestao} ${ORIGENS.posthogAtivos} `
-      + ORIGENS.cloudflareInsightsBeacon,
+    `connect-src 'self' ${ORIGENS.posthogIngestao} ${ORIGENS.posthogAtivos} ${ORIGENS.cloudflareInsightsBeacon}`,
     `font-src 'self'`,
     `object-src 'none'`,
     `base-uri 'self'`,

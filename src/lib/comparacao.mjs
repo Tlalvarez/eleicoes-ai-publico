@@ -1,0 +1,145 @@
+/**
+ * O layout da comparação: uma coluna por candidato, cada proposta escrita
+ * UMA vez, esticada da primeira à última coluna de quem se posiciona.
+ *
+ * Esta função roda em dois lugares com o mesmo resultado: no build (o Astro
+ * desenha a página com todos os candidatos) e no navegador (quando a pessoa
+ * tira ou põe um candidato na comparação, o layout é recalculado e os cartões
+ * já desenhados são reposicionados). Um algoritmo só, testado em Node
+ * (test/comparacao.test.mjs), para as duas telas nunca discordarem.
+ *
+ * Nenhuma cor por candidato, nenhum placar: as seções são pelo NÚMERO de
+ * candidatos que propõem a mesma coisa, e a ordem das colunas é alfabética.
+ */
+
+/** Rótulos das seções por quantidade de candidatos que propõem. */
+export const ROTULOS = Object.freeze({
+  1: 'Só um candidato propõe',
+  2: 'Dois candidatos propõem',
+  3: 'Três candidatos propõem',
+  4: 'Quatro candidatos propõem',
+  5: 'Cinco candidatos propõem',
+});
+
+export function rotuloDaSecao(n) {
+  return ROTULOS[n] ?? `${n} candidatos propõem`;
+}
+
+/** Quem concorda com a proposta, na ordem das colunas visíveis. */
+export function quem(p, ordem) {
+  return ordem.filter((s) => p.posicoes[s]?.posicao === 'concorda');
+}
+
+/** Quem propõe o contrário, na ordem das colunas visíveis. */
+export function contra(p, ordem) {
+  return ordem.filter((s) => p.posicoes[s]?.posicao === 'discorda');
+}
+
+/**
+ * A seleção de candidatos a partir do parâmetro `c` da URL
+ * (`?c=lula,romeu-zema`). Slug desconhecido é ignorado; seleção vazia ou
+ * completa é "todos" e volta `null`, para a URL ficar limpa.
+ */
+export function selecaoDaUrl(param, ordem) {
+  if (!param) return null;
+  const pedidos = String(param).split(',').map((s) => s.trim()).filter(Boolean);
+  const sel = ordem.filter((s) => pedidos.includes(s));
+  if (!sel.length || sel.length === ordem.length) return null;
+  return sel;
+}
+
+/** O parâmetro `c` para uma seleção; `null` quando é "todos". */
+export function urlDaSelecao(sel, ordem) {
+  if (!sel || sel.length === ordem.length) return null;
+  return sel.join(',');
+}
+
+/**
+ * Um cartão: onde começa (`ini`, índice da coluna), quantas colunas ocupa
+ * (`largura`), o que cada coluna da faixa é (`colunas`: 'concorda' |
+ * 'contra' | 'fora') e em que colunas relativas o TEXTO fica (`a`..`b`, só
+ * sobre quem propõe — nunca começando sob quem discorda).
+ */
+function cartao(p, ordem, idx, ini, largura) {
+  const q = quem(p, ordem);
+  const c = contra(p, ordem);
+  const colunas = ordem.slice(ini, ini + largura)
+    .map((s) => (q.includes(s) ? 'concorda' : c.includes(s) ? 'contra' : 'fora'));
+  const qi = q.map((s) => idx[s]);
+  return {
+    id: p.id, ini, largura, colunas,
+    a: Math.min(...qi) - ini, b: Math.max(...qi) - ini,
+    comContra: c.length > 0, nConcorda: q.length,
+  };
+}
+
+/** A faixa: da primeira à última coluna de quem se posiciona (concorda ou discorda). */
+function faixa(p, ordem, idx) {
+  const ii = ordem.filter((s) => p.posicoes[s]).map((s) => idx[s]);
+  return { ini: Math.min(...ii), fim: Math.max(...ii) };
+}
+
+/** Ordem de leitura: menos candidatos primeiro; depois pela combinação de quem propõe; depois o subtema. */
+export function ordena(propostas, ordem) {
+  const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
+  return propostas.slice().sort((x, y) => {
+    const qx = quem(x, ordem).map((s) => idx[s]);
+    const qy = quem(y, ordem).map((s) => idx[s]);
+    if (qx.length !== qy.length) return qx.length - qy.length;
+    for (let i = 0; i < qx.length; i += 1) {
+      if (qx[i] !== qy[i]) return qx[i] - qy[i];
+    }
+    return String(x.subtema).localeCompare(String(y.subtema), 'pt-BR');
+  });
+}
+
+/**
+ * O layout para as colunas `ordem` (os candidatos SELECIONADOS, na ordem das
+ * colunas). Uma proposta só aparece se ao menos um selecionado a faz;
+ * quem está fora da seleção não conta nem como faixa nem como contrário.
+ *
+ * Devolve linhas, na ordem da página:
+ *   { tipo: 'secao', rotulo }
+ *   { tipo: 'pilhas', pilhas: [[cartao...], ...] }   uma pilha por coluna (exclusivas sem contrário)
+ *   { tipo: 'cartao', ...cartao }
+ */
+export function layout(propostas, ordem) {
+  const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
+  const n = ordem.length;
+  const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0), ordem);
+  const linhas = [];
+  const exclusivas = visiveis.filter((p) => quem(p, ordem).length === 1);
+  if (exclusivas.length) {
+    // com um candidato só na tela, não há o que rotular
+    if (n > 1) linhas.push({ tipo: 'secao', rotulo: rotuloDaSecao(1) });
+    // só quem não tem contrário fica na pilha da coluna; com contrário, a faixa cobre os dois
+    const pilhas = ordem.map((s, i) => exclusivas
+      .filter((p) => quem(p, ordem)[0] === s && !contra(p, ordem).length)
+      .map((p) => cartao(p, ordem, idx, i, 1)));
+    linhas.push({ tipo: 'pilhas', pilhas });
+    for (const p of exclusivas.filter((p) => contra(p, ordem).length)) {
+      const f = faixa(p, ordem, idx);
+      linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
+    }
+  }
+  let secao = 1;
+  for (const p of visiveis.filter((p) => quem(p, ordem).length >= 2)) {
+    const k = quem(p, ordem).length;
+    if (k !== secao) { secao = k; linhas.push({ tipo: 'secao', rotulo: rotuloDaSecao(k) }); }
+    const f = faixa(p, ordem, idx);
+    linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
+  }
+  return { n, linhas, total: visiveis.length };
+}
+
+/** Quantas propostas cada candidato faz (concorda) e quantas são só dele. */
+export function contagens(propostas, ordem) {
+  const saida = Object.fromEntries(ordem.map((s) => [s, { propoe: 0, exclusivas: 0, contraria: 0 }]));
+  for (const p of propostas) {
+    const q = quem(p, ordem);
+    for (const s of q) saida[s].propoe += 1;
+    if (q.length === 1) saida[q[0]].exclusivas += 1;
+    for (const s of contra(p, ordem)) saida[s].contraria += 1;
+  }
+  return saida;
+}

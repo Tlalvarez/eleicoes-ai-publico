@@ -1,0 +1,47 @@
+---
+/**
+ * Os temas de um escopo (Presidente, ou Governador de uma UF), um cartão por
+ * página de comparação pronta. Os números saem dos dados exportados, nunca de
+ * texto escrito à mão.
+ */
+const { resumo, base, origem = 'hub' } = Astro.props;
+// resumo: resumoDoEscopo(...); base: '/presidente' ou '/governador/sp'
+---
+<ul class="grade-temas">
+  {resumo.map((r) => (
+    <li>
+      <a class="tema" href={`${base}/${r.id}`} data-evento="tema_aberto" data-tema={r.id} data-origem={origem}>
+        <span class="nome">{r.nome}</span>
+        <span class="numeros">{r.propostas} propostas{r.comContra ? ` · ${r.comContra} com posição contrária` : ''}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .grade-temas {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: .6rem;
+    padding: 0;
+    margin: 1rem 0 1.5rem;
+    list-style: none;
+  }
+  .tema {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    min-height: var(--alvo);
+    padding: .7rem .9rem;
+    border: 1px solid var(--linha);
+    border-radius: var(--raio);
+    background: var(--cartao);
+    box-shadow: var(--sombra-leve);
+    color: var(--tinta);
+    text-decoration: none;
+  }
+  .tema:hover { border-color: var(--azul-claro); background: var(--realce); }
+  .tema:hover .nome { text-decoration: underline; }
+  .nome { font-family: var(--fonte-titulo); font-weight: 750; color: var(--acento-forte); line-height: 1.2; }
+  .numeros { font-size: .82rem; color: var(--tinta-suave); }
+</style>

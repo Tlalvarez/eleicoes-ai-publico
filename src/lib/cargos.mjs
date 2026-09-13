@@ -1,18 +1,20 @@
 /**
  * Os cargos da eleição de 2026 e as unidades da federação.
  *
- * O menu do site é POR CARGO: presidente, governador e senador. Senador voltou
- * em 06/09/2026 com a release rel_2026-09-06_01; deputado federal saiu no mesmo
- * dia, por volume (ver abaixo). Presidente é nacional e vive na home; os outros são por UF, e
- * a UF é escolhida numa página própria antes da conversa. Esta lista é a
- * autoridade do menu e das rotas — página nova de cargo entra aqui, não
+ * O menu do site é POR CARGO: presidente e governador — os cargos do Executivo,
+ * os únicos com programa de governo registrado no TSE, que é o que o site
+ * compara (v3, 13/09/2026). Presidente é nacional (/presidente); governador é
+ * por UF, e a UF é escolhida numa página própria antes dos temas. Esta lista é
+ * a autoridade do menu e das rotas — página nova de cargo entra aqui, não
  * escrita à mão em cada layout.
  */
 
 export const CARGOS = Object.freeze([
-  { slug: 'presidente', nome: 'Presidente', porUF: false, href: '/', preposicao: null },
+  { slug: 'presidente', nome: 'Presidente', porUF: false, href: '/presidente', preposicao: null },
   { slug: 'governador', nome: 'Governador', porUF: true, href: '/governador', preposicao: 'de' },
-  { slug: 'senador', nome: 'Senador', porUF: true, href: '/senador', preposicao: 'por' },
+  // Senador: FORA desde 13/09/2026, com o fim do chat. Candidatura ao Senado
+  // não registra programa de governo no TSE, e o site passou a comparar só
+  // programas. O endereço antigo redireciona (public/_redirects).
   // Deputado federal: FORA DO AR desde 06/09/2026, por decisão do Thiago. Não
   // é lacuna de coleta como foi no dia 5: são 7.772 candidaturas, das quais
   // 821 com material (11%), porque ~6.700 não declararam site ao TSE e a única
@@ -68,7 +70,7 @@ export function ufPorSigla(sigla) {
   return UFS.find((u) => u.sigla === alvo) ?? null;
 }
 
-/** `/governador/sp` — a página da conversa de um cargo numa UF. */
+/** `/governador/sp` — a página de um cargo numa UF (os temas comparados). */
 export function caminhoUf(cargo, uf) {
   return `${cargo.href}/${uf.sigla.toLowerCase()}`;
 }
@@ -79,14 +81,9 @@ const CONTRACOES = {
 };
 
 /**
- * O rótulo do escopo de uma conversa: "Governador de São Paulo",
- * "Senador pelo Rio de Janeiro", "Deputado federal pela Bahia".
- *
- * Ele vai na frente de cada pergunta enviada ao serviço de evidências, à
- * vista de quem pergunta. O serviço FILTRA por cargo e UF (o escopo vai
- * estruturado no corpo do pedido, ver chat.mjs); este rótulo é a mesma coisa
- * dita ao leitor, para o recorte não ser um acréscimo silencioso ao que a
- * pessoa escreveu.
+ * O rótulo do escopo: "Governador de São Paulo", "Governador do Pará",
+ * "Governador da Bahia". É o título da página da UF e o que vai na trilha
+ * das páginas de tema.
  */
 export function rotuloEscopo(cargo, uf) {
   if (!cargo.porUF) return cargo.nome;

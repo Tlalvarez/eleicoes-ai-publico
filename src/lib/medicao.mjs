@@ -2,11 +2,10 @@
  * A medição do site: UMA porta, um vocabulário fechado, nenhum texto livre.
  *
  * O eleicoes.ai mede audiência em modo sem cookies e promete, em
- * /privacidade, que "os eventos são anônimos" e que "o texto da pergunta é
- * mascarado nas medições". Uma promessa dessas não se cumpre por disciplina de
- * quem escreve a próxima linha: um `posthog.capture('x', { pergunta })` escrito
- * com pressa a quebra em silêncio, e o vazamento só aparece meses depois, num
- * painel, com o texto de alguém dentro.
+ * /privacidade, que "os eventos são anônimos" e que só vão números, siglas e
+ * códigos. Uma promessa dessas não se cumpre por disciplina de quem escreve a
+ * próxima linha: um `posthog.capture('x', { texto })` escrito com pressa a
+ * quebra em silêncio, e o vazamento só aparece meses depois, num painel.
  *
  * Por isso a medição inteira passa por `medir()`, e `medir()` é FECHADO:
  *
@@ -16,13 +15,10 @@
  *      lista é descartada, não enviada "por via das dúvidas";
  *   3. o valor tem de ser número finito, booleano ou um texto CURTO e SEM
  *      ESPAÇO (`RE_VALOR`). É a invariante que se pode conferir num olhar:
- *      **prosa tem espaço; logo prosa não passa**. Pergunta, resposta, nome de
- *      pessoa e trecho de fonte são prosa.
+ *      **prosa tem espaço; logo prosa não passa**. Texto de proposta, nome de
+ *      pessoa e trecho de programa são prosa.
  *
- * O que sobra é estrutura: cargo, UF, número de fontes, código de erro,
- * milissegundos. Conteúdo — o que se perguntou e o que se respondeu — vive no
- * registro do serviço de evidências, sem ligação com a sessão de navegação.
- * Os dois lados são medidos; eles é que não se cruzam.
+ * O que sobra é estrutura: cargo, UF, id de tema, contagens, booleanos.
  *
  * `scripts/checa-medicao.mjs` guarda a porta no build: `posthog.capture` fora
  * daqui reprova o gate.
@@ -35,8 +31,8 @@ export const LIMITE_TEXTO = 64;
 
 /**
  * A gramática de um valor de texto: letras, números e os separadores que
- * aparecem em slug (`romeu-zema`), código (`sem-followup`), release
- * (`rel_2026-09-06_01`) e caminho (`/governador/sp`). Sem espaço, sem
+ * aparecem em slug (`romeu-zema`), id de tema (`seguranca-justica`) e
+ * caminho (`/governador/sp`). Sem espaço, sem
  * acento, sem pontuação de frase.
  */
 export const RE_VALOR = /^[A-Za-z0-9_:/.-]{1,64}$/;
@@ -51,45 +47,22 @@ export const CONTEXTO = Object.freeze(['cargo', 'uf', 'pagina']);
  * quem lê este arquivo. Evento novo entra aqui ANTES de ter chamador.
  */
 export const EVENTOS = Object.freeze({
-  // --- o funil da conversa -------------------------------------------------
-  /** a pessoa mandou uma pergunta (`origem`: form | url | nova) */
-  pergunta_enviada: ['turno', 'origem', 'tamanho'],
-  /** o primeiro pedaço de texto chegou — o tempo até a tela deixar de esperar */
-  resposta_primeiro_texto: ['turno', 'ms'],
-  /** a resposta chegou inteira e validada */
-  resposta_recebida: ['turno', 'ms', 'fontes', 'candidatos', 'com_material',
-    'sem_material', 'sem_fontes', 'release_id', 'via_fallback'],
-  /** o serviço não respondeu (`codigo` vem de ErroConversa) */
-  resposta_falhou: ['turno', 'ms', 'codigo'],
-  /** a pessoa desistiu antes de a resposta chegar */
-  pergunta_cancelada: ['turno', 'ms'],
-
-  // --- a verificação: a promessa do produto é o link da fonte --------------
-  /** abriu a lista "Ver as N fontes desta resposta" */
-  fontes_abertas: ['turno', 'fontes'],
-  /** clicou no link de UMA fonte — o evento que diz se a evidência é usada */
-  fonte_aberta: ['turno', 'posicao', 'tipo', 'estatuto', 'candidato'],
-
-  // --- circulação ----------------------------------------------------------
-  resposta_compartilhada: ['turno', 'canal'],
-  resposta_copiada: ['turno', 'formato'],
-  problema_reportado: ['turno'],
-  /** alguém abriu um /resposta/<id> que recebeu de outra pessoa */
-  resposta_recebida_por_link: ['achou'],
-
-  // --- memória do navegador ------------------------------------------------
-  conversa_restaurada: ['turnos'],
-  conversa_reiniciada: ['turnos'],
-  turno_apagado: [],
-
-  // --- navegação do acervo -------------------------------------------------
-  candidato_aberto: ['posicao', 'slug', 'elegivel'],
+  // --- a navegação da comparação --------------------------------------------
+  /** abriu a página de um tema (`origem`: home | hub | faixa) */
+  tema_aberto: ['tema', 'origem'],
+  /** abriu a página de uma UF a partir da grade de estados (`destino`: a sigla) */
+  uf_aberta: ['destino'],
+  /** tocou numa proposta e viu os trechos dos programas */
+  proposta_aberta: ['tema', 'candidatos', 'com_contra'],
+  /** tirou ou pôs um candidato na comparação (`candidatos`: quantos ficaram) */
+  comparacao_filtrada: ['tema', 'candidatos'],
+  /** abriu o programa ou a candidatura no TSE */
   tse_aberto: ['slug'],
 });
 
 const SLUGS_DE_CARGO = new Set(CARGOS.map((c) => c.slug));
-/** Deputado federal saiu do menu em 06/09; endereço antigo ainda chega. */
-const CARGOS_CONHECIDOS = new Set([...SLUGS_DE_CARGO, 'deputado-federal']);
+/** Deputado federal e senador saíram do menu; endereço antigo ainda chega. */
+const CARGOS_CONHECIDOS = new Set([...SLUGS_DE_CARGO, 'deputado-federal', 'senador']);
 
 let contexto = {};
 
@@ -109,10 +82,9 @@ export function defineContexto(valores) {
 /**
  * Fixa o contexto SÓ SE ainda não houver um.
  *
- * O layout e o chat definem contexto cada um por sua conta, e a ordem em que
- * o Astro empacota os dois scripts não é contrato. O do chat é o bom (em
- * `/resposta/<id>` o endereço não diz o cargo, e o chat diz), então o do
- * layout cede: assim o resultado é o mesmo nas duas ordens possíveis.
+ * O layout define o contexto pelo endereço; uma página que saiba mais que o
+ * endereço pode definir o seu antes, e o do layout cede — o resultado é o
+ * mesmo em qualquer ordem de empacotamento dos scripts.
  */
 export function defineContextoPadrao(valores) {
   if (Object.keys(contexto).length) return { ...contexto };
@@ -164,7 +136,7 @@ export function saneia(evento, props = {}) {
 /**
  * Manda o evento, se houver medição carregada.
  *
- * Nunca lança: medição que derruba a conversa é pior que medição que falta.
+ * Nunca lança: medição que derruba a página é pior que medição que falta.
  * Fora de eleicoes.ai o PostHog nem é inicializado (ver Base.astro), então em
  * `astro dev`, nos gates e nas prévias `*.pages.dev` isto é um no-op.
  */
@@ -182,42 +154,26 @@ export function medir(evento, props = {}) {
 }
 
 /**
- * O contexto que se deduz do endereço, para as páginas sem chat.
+ * O contexto que se deduz do endereço.
  *
  * `cargo` e `uf` só saem daqui se forem reconhecidos: caminho inventado
- * (`/xpto/yz`) não vira dimensão nova no painel. `pagina` é o TIPO de página,
- * nunca o endereço completo — `/resposta/<id>` viraria identificador.
+ * (`/xpto/yz`) não vira dimensão nova no painel. `pagina` é o TIPO de página
+ * (home, cargo, uf, tema, outra), nunca o endereço completo.
  */
 export function contextoDoCaminho(caminho) {
   const limpo = String(caminho ?? '/').replace(/index\.html$/, '').replace(/\.html$/, '');
   const partes = limpo.split('/').filter(Boolean);
-  if (!partes.length) return { cargo: 'presidente', uf: '', pagina: 'home' };
+  if (!partes.length) return { cargo: '', uf: '', pagina: 'home' };
   const [primeira, segunda, terceira] = partes;
-  if (primeira === 'resposta') return { cargo: '', uf: '', pagina: 'resposta' };
   if (CARGOS_CONHECIDOS.has(primeira)) {
-    // presidente é nacional: `/presidente/<slug>` é candidato, nunca UF
+    // presidente é nacional: `/presidente/<tema>` é tema, nunca UF
     const porUF = primeira !== 'presidente';
     const uf = porUF && /^[a-z]{2}$/i.test(segunda ?? '') ? segunda.toLowerCase() : '';
     let pagina = 'cargo';
-    if (terceira) pagina = 'candidato';          // /governador/sp/<slug>
+    if (terceira) pagina = 'tema';               // /governador/sp/<tema>
     else if (uf) pagina = 'uf';                  // /governador/sp
-    else if (segunda) pagina = 'candidato';      // /presidente/<slug>
+    else if (segunda) pagina = 'tema';           // /presidente/<tema>
     return { cargo: primeira, uf, pagina };
   }
   return { cargo: '', uf: '', pagina: valorAceito(primeira) ? primeira : 'outra' };
-}
-
-/**
- * A faixa de tamanho da pergunta, em vez do tamanho exato.
- *
- * O número de caracteres de uma pergunta é uma impressão digital fraca mas
- * real: com poucos eventos por sessão, `147` casa com uma pergunta específica
- * no registro do serviço. Três faixas respondem o que se quer saber ("as
- * pessoas escrevem frases ou palavras soltas?") sem servir de chave.
- */
-export function faixaDeTamanho(texto) {
-  const n = String(texto ?? '').trim().length;
-  if (n <= 40) return 'curta';
-  if (n <= 140) return 'media';
-  return 'longa';
 }

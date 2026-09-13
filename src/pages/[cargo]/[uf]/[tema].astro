@@ -1,0 +1,43 @@
+---
+/**
+ * A comparação de um tema para um cargo numa UF: /governador/<uf>/<pagina>.
+ * Uma rota por arquivo em data/comparacao/<cargo>/<uf>/. Sem arquivo, sem
+ * rota: a página da UF diz "em preparação".
+ */
+import Base from '../../../layouts/Base.astro';
+import Comparacao from '../../../components/Comparacao.astro';
+import { CARGOS_POR_UF, caminhoUf, rotuloEscopo, ufPorSigla } from '../../../lib/cargos.mjs';
+import { comparacao, paginaPorId, paginasProntas, ufsProntas } from '../../../lib/comparacao-dados.mjs';
+
+export function getStaticPaths() {
+  return CARGOS_POR_UF.flatMap((cargo) => ufsProntas(cargo.slug).flatMap((sigla) => {
+    const uf = ufPorSigla(sigla.toUpperCase());
+    if (!uf) return [];
+    return paginasProntas(cargo.slug, sigla).map((id) => ({
+      params: { cargo: cargo.slug, uf: sigla, tema: id },
+      props: { cargo, uf, dados: comparacao(cargo.slug, sigla, id) },
+    }));
+  }));
+}
+const { cargo, uf, dados } = Astro.props;
+const escopo = rotuloEscopo(cargo, uf);
+const base = caminhoUf(cargo, uf);
+const paginas = paginasProntas(cargo.slug, uf.sigla).map((id) => paginaPorId(id));
+const n = dados.candidatos.length;
+---
+<Base title={`${dados.titulo} · ${escopo} 2026`}
+  description={`${dados.nome}: ${dados.propostas.length} propostas dos programas de governo de ${n} candidatos a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026, lado a lado.`}>
+  <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome} · {uf.sigla}</p>
+  <Comparacao dados={dados} base={base} paginas={paginas}
+    trilha={[{ nome: cargo.nome, href: cargo.href }, { nome: uf.nome, href: base }]} />
+  <style>
+    .sobretitulo {
+      margin: 0 0 .4rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+  </style>
+</Base>

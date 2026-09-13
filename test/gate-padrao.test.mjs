@@ -51,15 +51,15 @@ test('npm test compila o site de verdade', () => {
 test('npm test confere o HTML construído, não só o código-fonte', () => {
   const folhas = expande('test');
 
-  assert.ok(folhas.some((c) => c.includes('checa-home-dist')),
+  assert.ok(folhas.some((c) => c.includes('checa-paginas-dist')),
     `npm test não confere o dist: ${folhas.join(' | ')}`);
 });
 
-test('npm test roda o gate de catálogo', () => {
+test('npm test roda o gate de medição', () => {
   const folhas = expande('test');
 
-  assert.ok(folhas.some((c) => c.includes('checa-catalogo')),
-    `npm test não roda o gate de catálogo: ${folhas.join(' | ')}`);
+  assert.ok(folhas.some((c) => c.includes('checa-medicao')),
+    `npm test não roda o gate de medição: ${folhas.join(' | ')}`);
 });
 
 test('npm test confere que nada no dist monta HTML por string', () => {
@@ -69,11 +69,11 @@ test('npm test confere que nada no dist monta HTML por string', () => {
     `npm test não roda o gate de renderização segura: ${folhas.join(' | ')}`);
 });
 
-test('npm test confere o estado de release publicado', () => {
+test('npm test confere os cabeçalhos de segurança do dist', () => {
   const folhas = expande('test');
 
-  assert.ok(folhas.some((c) => c.includes('checa-previa')),
-    `npm test não roda o gate de prévia: ${folhas.join(' | ')}`);
+  assert.ok(folhas.some((c) => c.includes('checa-cabecalhos-dist')),
+    `npm test não roda o gate de cabeçalhos: ${folhas.join(' | ')}`);
 });
 
 test('npm test confere o piso de acessibilidade das páginas', () => {
@@ -87,8 +87,8 @@ test('todo gate pós-build roda DEPOIS do build, nunca antes', () => {
   const folhas = expande('test');
   const build = folhas.indexOf('astro build');
 
-  for (const gate of ['checa-home-dist', 'checa-render-seguro',
-    'checa-previa', 'checa-acessibilidade']) {
+  for (const gate of ['checa-paginas-dist', 'checa-render-seguro',
+    'checa-cabecalhos-dist', 'checa-acessibilidade']) {
     const onde = folhas.findIndex((c) => c.includes(gate));
     assert.ok(onde > build,
       `${gate} roda antes do build — ele conferiria o dist da rodada anterior`);

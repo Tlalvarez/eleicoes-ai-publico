@@ -1,0 +1,31 @@
+---
+/**
+ * A comparação de um tema para Presidente: /presidente/<pagina>.
+ * Uma rota por arquivo em data/comparacao/presidente/.
+ */
+import Base from '../../layouts/Base.astro';
+import Comparacao from '../../components/Comparacao.astro';
+import { comparacao, paginaPorId, paginasProntas } from '../../lib/comparacao-dados.mjs';
+
+export function getStaticPaths() {
+  return paginasProntas('presidente').map((id) => ({ params: { tema: id }, props: { dados: comparacao('presidente', null, id) } }));
+}
+const { dados } = Astro.props;
+const paginas = paginasProntas('presidente').map((id) => paginaPorId(id));
+const n = dados.candidatos.length;
+---
+<Base title={`${dados.titulo} · Presidente 2026`}
+  description={`${dados.nome}: ${dados.propostas.length} propostas dos programas de governo de ${n} candidatos a presidente em 2026, lado a lado, com o trecho de cada programa.`}>
+  <p class="sobretitulo">Eleições gerais de 2026 · Presidente</p>
+  <Comparacao dados={dados} base="/presidente" paginas={paginas} trilha={[{ nome: 'Presidente', href: '/presidente' }]} />
+  <style>
+    .sobretitulo {
+      margin: 0 0 .4rem;
+      color: var(--acento);
+      font-size: .79rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+  </style>
+</Base>
