@@ -46,9 +46,10 @@ const idCampo = `busca-q-${escopo.replace('/', '-')}`;
         form.submit();
         return;
       }
-      medir('busca_feita', { resultados: r.propostas.length, modo: r.modo, direto: !r.semDireto });
       const destino = destinoDaBusca(escopo, q, r.porPagina, params.get('c') || '');
       if (!destino) {
+        // a busca com resultado é medida na página de destino; a sem resultado, aqui
+        medir('busca_feita', { consulta: q, resultados: 0, temas: 0, modo: r.modo, direto: false });
         estado.textContent = 'Nenhuma proposta fala disso. Tente outras palavras, ou navegue pelos temas.';
         return;
       }

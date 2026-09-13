@@ -58,9 +58,29 @@ export const EVENTOS = Object.freeze({
   comparacao_filtrada: ['tema', 'candidatos'],
   /** abriu o programa ou a candidatura no TSE */
   tse_aberto: ['slug'],
-  /** fez uma busca: quantos resultados, em que modo (lexical | hibrido), se houve resultado direto — nunca o texto */
-  busca_feita: ['resultados', 'modo', 'direto'],
+  /**
+   * fez uma busca: O TEXTO da consulta (a única exceção de texto livre, ver
+   * TEXTO_LIVRE — decisão do Thiago em 13/09: as buscas são gravadas para
+   * entender o que as pessoas procuram), quantos resultados, em quantos temas,
+   * em que modo (lexical | hibrido), se houve resultado direto e o tema aberto
+   */
+  busca_feita: ['consulta', 'resultados', 'temas', 'modo', 'direto', 'destino'],
 });
+
+/**
+ * A exceção ao "prosa não passa": chaves que carregam texto livre, por
+ * evento. Hoje só a consulta da busca. Tamanho máximo, espaços colapsados,
+ * sem quebra de linha. Declarar aqui é o que a privacidade descreve — chave
+ * nova entra nesta lista E na página de privacidade no mesmo commit.
+ */
+export const TEXTO_LIVRE = Object.freeze({ busca_feita: ['consulta'] });
+export const LIMITE_TEXTO_LIVRE = 300;
+
+export function textoLivreAceito(valor) {
+  if (typeof valor !== 'string') return undefined;
+  const s = valor.replace(/\s+/g, ' ').trim().slice(0, LIMITE_TEXTO_LIVRE);
+  return s || undefined;
+}
 
 const SLUGS_DE_CARGO = new Set(CARGOS.map((c) => c.slug));
 /** Deputado federal e senador saíram do menu; endereço antigo ainda chega. */
@@ -127,9 +147,10 @@ export function saneia(evento, props = {}) {
   const aceitas = EVENTOS[evento];
   if (!aceitas) return null;
   const saida = { ...contexto };
+  const livres = TEXTO_LIVRE[evento] ?? [];
   for (const [chave, bruto] of Object.entries(props ?? {})) {
     if (!aceitas.includes(chave)) continue;
-    const valor = valorAceito(bruto);
+    const valor = livres.includes(chave) ? textoLivreAceito(bruto) : valorAceito(bruto);
     if (valor !== undefined) saida[chave] = valor;
   }
   return saida;
@@ -142,13 +163,16 @@ export function saneia(evento, props = {}) {
  * Fora de eleicoes.ai o PostHog nem é inicializado (ver Base.astro), então em
  * `astro dev`, nos gates e nas prévias `*.pages.dev` isto é um no-op.
  */
-export function medir(evento, props = {}) {
+export function medir(evento, props = {}, { beacon = false } = {}) {
   const limpas = saneia(evento, props);
   if (!limpas) return false;
   try {
     const ph = globalThis.posthog;
     if (!ph || typeof ph.capture !== 'function') return false;
-    ph.capture(evento, limpas);
+    // `beacon`: o evento é emitido logo antes de uma navegação; sendBeacon
+    // sobrevive à troca de página, o fetch normal pode ser cancelado
+    if (beacon) ph.capture(evento, limpas, { transport: 'sendBeacon' });
+    else ph.capture(evento, limpas);
     return true;
   } catch {
     return false;

@@ -286,7 +286,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       seletorTema.addEventListener('change', () => {
         const id = seletorTema.value;
         if (id === D.tema) return;
-        medir('tema_aberto', { tema: id, origem: 'faixa' });
+        medir('tema_aberto', { tema: id, origem: 'faixa' }, { beacon: true });
         location.assign(`${seletorTema.dataset.base}/${id}${sufixo(selecao)}`);
       });
     }
@@ -367,6 +367,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       barra.querySelector('.filtro-texto').textContent = n
         ? `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" em ${temas} tema${temas > 1 ? 's' : ''}${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`
         : `Nenhuma proposta sobre "${q}".`;
+      medir('busca_feita', { consulta: q, resultados: n, temas, modo: r.modo, direto: !r.semDireto, destino: D.tema });
       if (titulo) titulo.textContent = `"${q}": o que cada candidato propõe`;
       if (lead) lead.textContent = 'Resultado da busca em todos os temas. Uma proposta feita por mais de um candidato aparece uma vez, sobre as colunas de quem a faz. Toque para ler o trecho do programa.';
       document.title = `"${q}" · Busca · eleicoes.ai`;

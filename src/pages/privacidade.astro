@@ -23,10 +23,13 @@ import { EMAIL_CONTATO as email } from '../lib/contato.mjs';
         <strong>Nada disso é enviado a um serviço nosso</strong>: não há pergunta, não há conta,
         não há servidor que gere algo para você.</li>
       <li>Ao <strong>buscar</strong>, o índice da busca é baixado para o seu navegador e a busca por
-        palavras roda nele. Só o texto da consulta vai ao nosso serviço, para virar um vetor
-        numérico (é o que permite buscar por sentido); ele não é guardado, não é ligado a você e
-        segue ao provedor de embeddings (Jina, pelo gateway NativePort) só para esse cálculo.
-        O que medimos de uma busca é quantos resultados ela teve e em que modo — nunca o texto.</li>
+        palavras roda nele. O texto da consulta vai ao nosso serviço para virar um vetor numérico
+        (é o que permite buscar por sentido) e segue ao provedor de embeddings (Jina, pelo gateway
+        NativePort) só para esse cálculo; esse serviço não o guarda. <strong>O texto da busca é
+        gravado na medição de audiência</strong>, junto com quantos resultados teve, em quantos
+        temas e em que modo — é assim que vemos o que as pessoas procuram e o que o site ainda não
+        responde. A gravação é anônima: não há conta, cookie nem identificador seu ligado a ela.
+        Por isso, <strong>não escreva dados pessoais na busca</strong>, seus ou de terceiros.</li>
       <li>Ao filtrar candidatos, a escolha fica <strong>só no endereço da página</strong>
         (<code>?c=</code>, com os nomes dos candidatos escolhidos). Você pode copiar e compartilhar
         esse endereço; quem o abrir vê a mesma comparação. Nada é gravado no seu navegador: sair
@@ -42,15 +45,14 @@ import { EMAIL_CONTATO as email } from '../lib/contato.mjs';
         gravação de sessão. A medição só roda no domínio eleicoes.ai; os eventos são
         recebidos em servidores do PostHog nos <strong>Estados Unidos</strong>.</li>
       <li>Além das páginas vistas, medimos <strong>seis ações</strong>, e só elas: que um
-        tema foi aberto (qual tema, e de onde: da home, da página do cargo ou da faixa de
-        temas); que um estado foi aberto (a sigla); que uma proposta foi aberta (o tema,
+        tema foi aberto (qual tema, e de onde: da home, da caixa de temas ou da busca); que um estado foi aberto (a sigla); que uma proposta foi aberta (o tema,
         quantos candidatos a propõem e se há posição contrária); que a comparação foi
         filtrada (o tema e quantos candidatos ficaram); que um link do TSE foi aberto (o
-        candidato); e que uma busca foi feita (quantos resultados, em que modo, se houve
-        resultado direto). Vai só isso — <strong>números, siglas e códigos</strong>. O texto de uma
-        proposta ou de um trecho <strong>não entra</strong>, e o código recusa enviá-lo: um
-        valor com espaço, como qualquer frase, é descartado antes de sair do navegador, e um
-        evento fora dessa lista não é enviado.</li>
+        candidato); e que uma busca foi feita (o texto da consulta, quantos resultados, em quantos
+        temas, em que modo, se houve resultado direto e o tema aberto). Fora o texto da busca,
+        vai só <strong>números, siglas e códigos</strong>: o texto de uma proposta ou de um trecho
+        <strong>não entra</strong>, e o código recusa enviá-lo — um valor com espaço, como qualquer
+        frase, é descartado antes de sair do navegador, e um evento fora dessa lista não é enviado.</li>
       <li>A Cloudflare, que hospeda o site, também conta as visitas com o
         <strong>Cloudflare Web Analytics</strong>: sem cookies, sem identificar pessoa, com
         páginas vistas, origem da visita, país, tipo de aparelho e tempo de carregamento. Esses

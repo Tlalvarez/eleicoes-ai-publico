@@ -9,8 +9,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  CONTEXTO, EVENTOS, LIMITE_TEXTO, contextoAtual, contextoDoCaminho, defineContexto,
-  defineContextoPadrao, limpaContexto, medir, saneia, valorAceito,
+  CONTEXTO, EVENTOS, LIMITE_TEXTO, LIMITE_TEXTO_LIVRE, TEXTO_LIVRE, contextoAtual, contextoDoCaminho, defineContexto,
+  defineContextoPadrao, limpaContexto, medir, saneia, textoLivreAceito, valorAceito,
 } from '../src/lib/medicao.mjs';
 
 const PROSA = 'Tornar a melhoria da aprendizagem na educação básica a prioridade da ação federal';
@@ -28,7 +28,7 @@ test('propriedade fora da lista do evento é descartada — o `evento` do data-*
   assert.deepEqual(saida, { tema: 'educacao', origem: 'home' });
 });
 
-test('nenhum evento declara uma chave de conteúdo', () => {
+test('nenhum evento declara uma chave de conteúdo — salvo a consulta da busca, declarada em TEXTO_LIVRE', () => {
   const proibidas = ['pergunta', 'texto', 'resposta', 'proposta', 'q', 'url', 'nome', 'email', 'id'];
   for (const [evento, chaves] of Object.entries(EVENTOS)) {
     for (const chave of chaves) {
@@ -36,6 +36,34 @@ test('nenhum evento declara uma chave de conteúdo', () => {
       assert.ok(!CONTEXTO.includes(chave), `${evento} redeclara o contexto ${chave}`);
     }
   }
+  assert.deepEqual(TEXTO_LIVRE, { busca_feita: ['consulta'] }, 'texto livre só na consulta da busca');
+  for (const [evento, chaves] of Object.entries(TEXTO_LIVRE)) {
+    for (const chave of chaves) assert.ok(EVENTOS[evento].includes(chave), `${evento}.${chave} livre mas não declarada`);
+  }
+});
+
+test('a consulta da busca passa como texto, com espaço, colapsada e limitada; as outras chaves do evento, não', () => {
+  limpaContexto();
+  const saida = saneia('busca_feita', { consulta: '  escala   6x1\n e  férias ', resultados: 3, modo: PROSA, temas: 2 });
+  assert.deepEqual(saida, { consulta: 'escala 6x1 e férias', resultados: 3, temas: 2 });
+  assert.equal(textoLivreAceito('a'.repeat(LIMITE_TEXTO_LIVRE + 50)).length, LIMITE_TEXTO_LIVRE);
+  assert.equal(textoLivreAceito('   '), undefined);
+  assert.equal(textoLivreAceito(42), undefined);
+});
+
+test('medir com beacon manda o transporte sendBeacon ao PostHog', () => {
+  limpaContexto();
+  const enviados = [];
+  const antes = globalThis.posthog;
+  globalThis.posthog = { capture: (evento, props, opcoes) => enviados.push([evento, props, opcoes]) };
+  try {
+    assert.equal(medir('tema_aberto', { tema: 'saude', origem: 'faixa' }, { beacon: true }), true);
+    assert.equal(medir('tema_aberto', { tema: 'saude', origem: 'home' }), true);
+  } finally {
+    globalThis.posthog = antes;
+  }
+  assert.deepEqual(enviados[0][2], { transport: 'sendBeacon' });
+  assert.equal(enviados[1][2], undefined);
 });
 
 test('texto com espaço nunca passa — nem numa chave permitida', () => {

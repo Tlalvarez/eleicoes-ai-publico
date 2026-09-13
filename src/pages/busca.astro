@@ -161,7 +161,7 @@ const config = JSON.stringify({ escopos, paginas: nomesDePaginas }).replace(/</g
       sugestao.hidden = !r.sem_direto;
       secao.hidden = false;
       estado.textContent = r.modo === 'lexical' ? 'Busca por palavras (a busca por sentido está indisponível agora).' : '';
-      medir('busca_feita', { resultados: r.propostas.length + r.trechos.length, modo: r.modo, direto: !r.sem_direto });
+      medir('busca_feita', { consulta: q, resultados: r.propostas.length + r.trechos.length, modo: r.modo, direto: !r.sem_direto });
     }
 
     if (form && campo) {
