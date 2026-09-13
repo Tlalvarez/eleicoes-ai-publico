@@ -23,15 +23,16 @@ export function indiceDoEscopo(escopo) {
 
 /**
  * Busca `q` no escopo e agrupa por página (tema): devolve as propostas que
- * falam do assunto (as fracas ficam de fora — filtrar a matriz com vizinho
- * distante seria inventar relação), a contagem por página na ordem do melhor
+ * falam do assunto (cobertura total dos termos, ou vizinho vetorial forte —
+ * "escala 6x1" não pode trazer tudo o que tem "escala"), a contagem por página na ordem do melhor
  * resultado, e o modo usado.
  */
 export async function buscaPorPagina(escopo, q) {
   const idx = await indiceDoEscopo(escopo);
   const vq = await vetorDaConsulta(q, { dims: idx.vetores.dims });
   const r = busca(idx, q, vq, { maxPropostas: 200, maxTrechos: 0 });
-  const propostas = r.propostas.filter((p) => !p.fraco);
+  // só o que fala do assunto: todos os termos da consulta (ou vizinho vetorial forte)
+  const propostas = r.propostas.filter((p) => p.relevante);
   const porPagina = [];
   const vistas = new Map();
   for (const p of propostas) {

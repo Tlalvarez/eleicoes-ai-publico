@@ -260,6 +260,15 @@ export function busca(estado, consulta, vetorConsulta, { maxPropostas = 20, maxT
   for (const p of lista) {
     p.direto = noTexto(`${p.subtema} ${p.texto}`) || p.trechos.some((t) => t.termos.length);
     p.fraco = !p.direto && p.cos < COSSENO_FORTE;
+    // cobertura: que fração dos termos da consulta aparece na proposta (texto,
+    // subtema, sinônimos ou trechos). "escala 6x1" com só "escala" é 0,5 — e
+    // isso não é falar do assunto. `relevante` é o que a matriz filtrada
+    // mostra: todos os termos (ou quase, numa consulta longa), ou vizinho
+    // vetorial forte (a busca por sentido pode achar sem repetir as palavras)
+    const presentes = new Set(termos([p.subtema, p.texto, ...(p.sinonimos ?? []), ...p.trechos.map((t) => t.texto)].join(' ')));
+    p.cobertura = q.size ? [...q].filter((t) => presentes.has(t)).length / q.size : 0;
+    const quase = q.size >= 4 && p.cobertura >= 0.75;
+    p.relevante = p.cobertura === 1 || quase || p.cos >= COSSENO_FORTE;
   }
   for (const t of trechos) t.fraco = !t.termos.length && t.cos < COSSENO_FORTE;
   return { modo, propostas: lista, trechos, total: propostas.size, sem_direto: lista.length === 0 || lista.every((p) => p.fraco) };

@@ -124,3 +124,13 @@ test('a busca degrada para lexical sem vetor da consulta', () => {
   const h = ranqueia(estado, 'creche', unitario(vetoresConsulta.vetores.creche));
   assert.equal(h.modo, 'hibrido');
 });
+
+test('relevante exige todos os termos da consulta (ou vizinho vetorial forte): "escala 6x1" não traz tudo o que tem "escala"', () => {
+  const vq = vetoresConsulta.vetores['escala 6x1'] ? unitario(vetoresConsulta.vetores['escala 6x1']) : null;
+  const r = busca(estado, 'escala 6x1', vq, { maxPropostas: 200, maxTrechos: 0 });
+  const relevantes = r.propostas.filter((p) => p.relevante);
+  assert.ok(relevantes.length >= 1 && relevantes.length <= 3, `${relevantes.length} relevantes`);
+  assert.ok(relevantes.every((p) => p.cobertura === 1));
+  assert.ok(relevantes.some((p) => /6x1/.test(p.texto)));
+  assert.ok(r.propostas.filter((p) => !p.fraco).length > relevantes.length, 'o ranking amplo continua maior que o filtro');
+});
