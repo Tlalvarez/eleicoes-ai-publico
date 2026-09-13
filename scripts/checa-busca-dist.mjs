@@ -6,7 +6,7 @@
  *     os tamanhos dos .bin batem com o que indice.json declara (vetor faltando
  *     é busca que quebra em silêncio no navegador);
  *   · dist/busca.html existe, com o formulário e o índice de escopos;
- *   · a home e o hub de presidente trazem a caixa de busca (action="/busca");
+ *   · a home traz a caixa de busca (action="/busca");
  *   · a Function /api/vetor está no lugar (functions/api/vetor.js).
  *
  * Uso: npm run build && npm run test:busca-dist
@@ -63,7 +63,7 @@ else {
     if (!html.includes(`"id":"${id}"`) && !html.includes(`\\"id\\":\\"${id}\\"`)) falhas.push(`busca.html: não conhece o escopo ${id}`);
   }
 }
-for (const rel of ['index.html', 'presidente.html']) {
+for (const rel of ['index.html']) {
   const html = readFileSync(join(DIST, rel), 'utf8');
   if (!/<form[^>]*class="busca-caixa[^"]*"[^>]*action="\/busca"/.test(html)) falhas.push(`${rel}: sem a caixa de busca`);
 }
@@ -74,4 +74,4 @@ if (falhas.length) {
   process.exit(1);
 }
 console.log(`OK (busca): ${escopos.length} escopo(s) publicado(s) (${escopos.map((e) => e.id).join(', ')}) com índice e vetores coerentes; `
-  + 'busca.html, caixa na home e no hub, Function /api/vetor no lugar');
+  + 'busca.html, caixa na home, Function /api/vetor no lugar');

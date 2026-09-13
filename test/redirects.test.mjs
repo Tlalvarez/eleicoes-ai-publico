@@ -1,7 +1,7 @@
 /**
  * Os redirecionamentos de /mencoes/<slug> saem do catálogo canônico
  * (src/data/candidatos.json), não de uma lista escrita à mão em
- * astro.config.mjs. Com o fim do chat (13/09/2026) todos caem em /presidente.
+ * astro.config.mjs. Com o fim do chat (13/09/2026) todos caem na home.
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -13,8 +13,8 @@ const canonico = JSON.parse(readFileSync(new URL('../src/data/candidatos.json', 
 
 test('um redirecionamento por candidato do catálogo, para a comparação', () => {
   assert.deepEqual(redirectsDeMencoes([{ slug: 'ana-brito' }, { slug: 'zuleide-alves' }]), {
-    '/mencoes/ana-brito': '/presidente',
-    '/mencoes/zuleide-alves': '/presidente',
+    '/mencoes/ana-brito': '/',
+    '/mencoes/zuleide-alves': '/',
   });
 });
 
@@ -26,7 +26,8 @@ test('a configuração do Astro não tem slug escrito à mão', () => {
 test('os treze do catálogo canônico têm redirecionamento, e só eles', async () => {
   const { default: config } = await import('../astro.config.mjs');
   assert.equal(canonico.length, 13);
-  for (const { slug } of canonico) assert.equal(config.redirects[`/mencoes/${slug}`], '/presidente', slug);
+  for (const { slug } of canonico) assert.equal(config.redirects[`/mencoes/${slug}`], '/', slug);
+  assert.equal(config.redirects['/presidente'], '/', 'o hub virou a home');
   const deMencoes = Object.keys(config.redirects).filter((r) => r.startsWith('/mencoes/'));
   assert.equal(deMencoes.length, canonico.length);
 });
@@ -48,10 +49,10 @@ test('o chat saiu: respostas guardadas, senador e a conversa por candidato redir
   assert.match(pages, /^\/senador\/\* +\/ +302$/m);
   assert.match(pages, /^\/senador +\/ +302$/m);
   for (const { slug } of canonico) {
-    assert.match(pages, new RegExp(`^/presidente/${slug} +/presidente +302$`, 'm'), slug);
+    assert.match(pages, new RegExp(`^/presidente/${slug} +/ +302$`, 'm'), slug);
     for (const secao of ['acervo', 'candidato']) {
-      assert.match(pages, new RegExp(`^/${secao}/${slug}/\\* +/presidente +302$`, 'm'), `${secao}/${slug}`);
-      assert.match(pages, new RegExp(`^/${secao}/${slug} +/presidente +302$`, 'm'), `${secao}/${slug}`);
+      assert.match(pages, new RegExp(`^/${secao}/${slug}/\\* +/ +302$`, 'm'), `${secao}/${slug}`);
+      assert.match(pages, new RegExp(`^/${secao}/${slug} +/ +302$`, 'm'), `${secao}/${slug}`);
     }
   }
   // nenhum curinga sob /presidente ou /governador/<uf>: a Pages aplica

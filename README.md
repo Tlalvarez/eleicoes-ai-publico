@@ -13,7 +13,7 @@ pelo site é Thiago Alvarez.
 
 ## O que o site é hoje
 
-- **A comparação para presidente.** `/presidente` lista os temas; `/presidente/<tema>` é a
+- **A comparação para presidente.** `/presidente` redireciona para a home, que lista os temas; `/presidente/<tema>` é a
   comparação de um tema, com uma coluna por candidato (ordem alfabética), o seletor de
   candidatos e o trecho de cada programa a um toque. Hoje são 5 candidatos em 15 temas.
 - **Governador, por estado.** `/governador` lista as 27 UFs; `/governador/<uf>` mostra os temas
@@ -52,7 +52,7 @@ projeto (`v3/`); o que chega aqui é o resultado, exportado por `v3/exporta_site
 | `src/lib/comparacao-dados.mjs` | Leitura e contrato dos JSONs de `data/comparacao/` |
 | `src/lib/cargos.mjs`, `candidaturas-uf.mjs`, `tse.mjs` | Cargos, UFs, candidaturas do snapshot do TSE e links do DivulgaCandContas |
 | `src/lib/busca.mjs` | A busca: BM25 + cosseno sobre vetores int8 + fusão RRF, agrupada por proposta; roda em Node (gabarito) e no navegador |
-| `src/pages/busca.astro`, `src/components/Busca.astro` | A página de resultados e a caixa de busca (home e hub) |
+| `src/pages/busca.astro`, `src/components/Busca.astro` | A caixa de busca (home e página de tema) e a página de resultados sem JavaScript |
 | `functions/api/vetor.js` | A única Function: o vetor da consulta (Jina via NativePort), com o segredo `NATIVEPORT_API_KEY` no projeto Pages |
 | `data/busca/` | **Versionado.** Por escopo: `indice.json`, `documentos.json` (propostas com sinônimos + blocos dos programas) e os vetores `.bin` (int8) |
 | `test/busca-gabarito.json` | Consultas de gente comum e o esperado; `busca-gabarito-vetores.json` traz os vetores pré-calculados (`npm run busca:gabarito-vetores`) |

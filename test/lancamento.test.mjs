@@ -23,7 +23,7 @@ test('só a verificação pede noindex; as páginas do menu, não', async () => 
   for (const f of ['pages/verificacao/index.astro', 'pages/verificacao/[slug].astro']) {
     assert.match(await le(f), /<Base noindex/, f);
   }
-  for (const f of ['pages/index.astro', 'pages/presidente/index.astro', 'pages/presidente/[tema].astro',
+  for (const f of ['pages/index.astro', 'pages/presidente/[tema].astro',
     'pages/[cargo]/index.astro', 'pages/[cargo]/[uf].astro', 'pages/[cargo]/[uf]/[tema].astro',
     'pages/metodologia.astro', 'pages/sobre.astro', 'pages/privacidade.astro']) {
     assert.doesNotMatch(await le(f), /<Base noindex/, f);
@@ -70,7 +70,7 @@ test('acervo, hub por candidato e menções saíram do build; os endereços anti
   }
   const redirects = await readFile(new URL('../public/_redirects', import.meta.url), 'utf8');
   for (const raiz of ['/acervo', '/candidato', '/mencoes']) {
-    assert.match(redirects, new RegExp(`^${raiz} +/presidente +302$`, 'm'), raiz);
+    assert.match(redirects, new RegExp(`^${raiz} +/ +302$`, 'm'), raiz);
   }
 });
 

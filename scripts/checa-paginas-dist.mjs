@@ -3,7 +3,7 @@
  * Gate do dist: as páginas da comparação existem e trazem o que prometem.
  *
  * O que se confere no HTML construído, não no código-fonte:
- *   · a home e /presidente existem e linkam TODAS as páginas com comparação
+ *   · a home existe e linka TODAS as páginas com comparação
  *     pronta (data/comparacao/presidente/*.json) — tema exportado e sem link
  *     é tema invisível;
  *   · cada /presidente/<tema>.html traz uma coluna por candidato do JSON, um
@@ -64,10 +64,12 @@ function confereTema(rel, dados, base, paginas) {
 const prontas = paginasProntas('presidente');
 if (!prontas.length) falhas.push('data/comparacao/presidente/ não tem página nenhuma');
 const home = le('index.html');
-const hub = le('presidente.html');
+// /presidente redireciona para a home (13/09): o hub não existe mais
+if (existsSync(join(DIST, 'presidente.html')) && !/http-equiv=["']refresh["']/i.test(readFileSync(join(DIST, 'presidente.html'), 'utf8'))) {
+  falhas.push('presidente.html: o hub voltou a existir como página — ele redireciona para a home');
+}
 for (const id of prontas) {
   if (!contaLinks(home, `/presidente/${id}`)) falhas.push(`index.html: não linka /presidente/${id}`);
-  if (!contaLinks(hub, `/presidente/${id}`)) falhas.push(`presidente.html: não linka /presidente/${id}`);
   confereTema(join('presidente', `${id}.html`), comparacao('presidente', null, id), '/presidente', prontas);
 }
 for (const id of prontas) {
@@ -98,7 +100,7 @@ for (const cargo of CARGOS_POR_UF) {
 }
 
 // ------------------------------------------------------- o chat não voltou
-for (const rel of ['index.html', 'presidente.html', 'governador.html', 'sobre.html', 'privacidade.html', 'metodologia.html']) {
+for (const rel of ['index.html', 'governador.html', 'sobre.html', 'privacidade.html', 'metodologia.html']) {
   const html = le(rel);
   if (/id="form-chat"|<section class="chat"|\/api\/conversa/.test(html)) falhas.push(`${rel}: ainda traz o chat`);
   if (/\/resposta\/[A-Za-z0-9_-]{22}/.test(html)) falhas.push(`${rel}: linka uma resposta guardada do chat`);
@@ -108,6 +110,6 @@ if (falhas.length) {
   console.error('FALHOU (páginas):\n  ' + falhas.join('\n  '));
   process.exit(1);
 }
-console.log(`OK (páginas): home e hub linkam os ${prontas.length} temas de presidente; cada tema traz colunas, `
+console.log(`OK (páginas): a home linka os ${prontas.length} temas de presidente; cada tema traz colunas, `
   + `cartões, seletor e caixa de temas; ${UFS.length} UFs por cargo (${CARGOS_POR_UF.map((c) => c.nome).join(', ')}), `
   + 'com dados ou "em preparação"; nenhuma página traz o chat');

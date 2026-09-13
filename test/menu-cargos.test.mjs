@@ -32,8 +32,8 @@ test('cada cargo por UF tem a página de escolha da UF, a página da UF e a rota
   assert.match(uf, /em preparação/);
 });
 
-test('presidente tem o hub e a rota de tema; a conversa por candidato saiu', () => {
-  assert.ok(existsSync(`${ROOT}/src/pages/presidente/index.astro`));
+test('presidente tem a rota de tema; o hub virou a home e a conversa por candidato saiu', () => {
+  assert.ok(!existsSync(`${ROOT}/src/pages/presidente/index.astro`), 'o hub voltou: /presidente redireciona para a home');
   assert.ok(existsSync(`${ROOT}/src/pages/presidente/[tema].astro`));
   assert.ok(!existsSync(`${ROOT}/src/pages/presidente/[slug].astro`));
   assert.ok(!existsSync(`${ROOT}/src/pages/[cargo]/[uf]/[slug].astro`));

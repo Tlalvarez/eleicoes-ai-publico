@@ -9,7 +9,7 @@ import { readFileSync } from 'node:fs';
 const catalogo = JSON.parse(readFileSync(new URL('./src/data/candidatos.json', import.meta.url), 'utf8'));
 
 export function redirectsDeMencoes(candidatos) {
-  return Object.fromEntries(candidatos.map(({ slug }) => [`/mencoes/${slug}`, '/presidente']));
+  return Object.fromEntries(candidatos.map(({ slug }) => [`/mencoes/${slug}`, '/']));
 }
 
 export default defineConfig({
@@ -23,6 +23,9 @@ export default defineConfig({
     // As "fichas por candidato" eram a promessa da v1.1, nunca cumprida. O
     // endereço leva ao que descreve o método atual.
     '/fichas': '/metodologia',
+    // O hub de presidente virou a própria home (13/09): mesma grade de temas e
+    // mesma busca. O endereço continua valendo.
+    '/presidente': '/',
     ...redirectsDeMencoes(catalogo.candidatos),
   },
 });
