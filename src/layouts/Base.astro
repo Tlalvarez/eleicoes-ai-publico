@@ -1,6 +1,5 @@
 ---
 import '../styles/global.css';
-import { CARGOS_NO_MENU } from '../lib/cargos.mjs';
 const {
   title,
   description = 'Os programas de governo registrados no TSE pelos candidatos de 2026, comparados tema a tema: onde convergem, onde divergem e sobre o que calam. Com o trecho de cada programa, sem recomendação de voto.',
@@ -16,9 +15,6 @@ const path = Astro.url.pathname;
 // compartilha, então ele tem de ser o endereço público — senão o link
 // compartilhado vira `eleicoes.ai/sobre.html`.
 const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') || '/';
-// o item do menu fica marcado na página do cargo e em tudo abaixo dela
-// (/presidente/<tema>, /governador/sp/<tema>); a home não marca nenhum
-const atual = (p) => ((path === p || path.startsWith(p + '/') || path === p + '.html') ? 'page' : undefined);
 ---
 <!doctype html>
 <html lang="pt-BR">
@@ -75,14 +71,10 @@ const atual = (p) => ((path === p || path.startsWith(p + '/') || path === p + '.
     <header class="site">
       <div class="inner">
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
-        <input type="checkbox" id="menu-aberto" class="menu-caixa" />
-        <label for="menu-aberto" class="menu-botao">☰ Menu</label>
-        <!-- o menu é POR CARGO (src/lib/cargos.mjs, os com `menu: true`). -->
-        <nav class="main" aria-label="Principal">
-          {CARGOS_NO_MENU.map((cargo) => (
-            <a href={cargo.href} aria-current={atual(cargo.href)}>{cargo.nome}</a>
-          ))}
-        </nav>
+        <!-- Sem menu por enquanto (decisão do Thiago em 13/09): só presidente
+             está no ar, e a home já é a porta dele. O menu por cargo volta
+             quando houver mais de um cargo com comparação: os cargos com
+             `menu: true` em src/lib/cargos.mjs (CARGOS_NO_MENU). -->
       </div>
     </header>
     <main id="conteudo">
