@@ -56,27 +56,40 @@ export function urlDaSelecao(sel, ordem) {
 
 /**
  * Um cartão: onde começa (`ini`, índice da coluna), quantas colunas ocupa
- * (`largura`), o que cada coluna da faixa é (`colunas`: 'concorda' |
- * 'contra' | 'fora') e em que colunas relativas o TEXTO fica (`a`..`b`, só
- * sobre quem propõe — nunca começando sob quem discorda).
+ * (`largura`), o que cada coluna é (`colunas`: 'concorda' | 'contra') e em
+ * que colunas relativas o TEXTO fica (`a`..`b`: sobre quem propõe; num
+ * cartão só de quem discorda, sobre ele, abaixo do rótulo). `chave`
+ * distingue os cartões de uma mesma proposta quando ela vira mais de um.
  */
 function cartao(p, ordem, idx, ini, largura) {
   const q = quem(p, ordem);
   const c = contra(p, ordem);
   const colunas = ordem.slice(ini, ini + largura)
     .map((s) => (q.includes(s) ? 'concorda' : c.includes(s) ? 'contra' : 'fora'));
-  const qi = q.map((s) => idx[s]);
+  const qi = q.map((s) => idx[s]).filter((i) => i >= ini && i < ini + largura);
+  const a = qi.length ? Math.min(...qi) - ini : 0;
+  const b = qi.length ? Math.max(...qi) - ini : largura - 1;
   return {
-    id: p.id, ini, largura, colunas,
-    a: Math.min(...qi) - ini, b: Math.max(...qi) - ini,
-    comContra: c.length > 0, nConcorda: q.length,
+    id: p.id, chave: `${p.id}@${ini}`, ini, largura, colunas, a, b,
+    comContra: colunas.includes('contra'), nConcorda: q.length,
   };
 }
 
-/** A faixa: da primeira à última coluna de quem se posiciona (concorda ou discorda). */
-function faixa(p, ordem, idx) {
-  const ii = ordem.filter((s) => p.posicoes[s]).map((s) => idx[s]);
-  return { ini: Math.min(...ii), fim: Math.max(...ii) };
+/**
+ * Os cartões de uma proposta: um por trecho CONTÍGUO de colunas que se
+ * posicionam. Candidatos não adjacentes não são ligados por uma faixa que
+ * atravessa quem não fala do assunto — o texto se repete, um cartão em cada
+ * lado (decisão do Thiago em 13/09).
+ */
+function cartoes(p, ordem, idx) {
+  const posicionado = ordem.map((s) => Boolean(p.posicoes[s]) && p.posicoes[s].posicao !== 'nao_cita');
+  const saida = [];
+  let ini = null;
+  for (let i = 0; i <= ordem.length; i += 1) {
+    if (i < ordem.length && posicionado[i]) { if (ini === null) ini = i; continue; }
+    if (ini !== null) { saida.push({ tipo: 'cartao', ...cartao(p, ordem, idx, ini, i - ini) }); ini = null; }
+  }
+  return saida;
 }
 
 /**
@@ -134,8 +147,7 @@ export function layout(propostas, ordem, modo = 'assunto') {
     const k = quem(p, ordem).length;
     if (k !== secao) { secao = k; subtema = null; linhas.push({ tipo: 'secao', rotulo: rotuloDaSecao(k) }); }
     if (p.subtema !== subtema) { subtema = p.subtema; linhas.push({ tipo: 'subtema', rotulo: p.subtema }); }
-    const f = faixa(p, ordem, idx);
-    linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
+    linhas.push(...cartoes(p, ordem, idx));
   }
   const exclusivas = visiveis.filter((p) => quem(p, ordem).length === 1);
   if (exclusivas.length) {
@@ -145,10 +157,7 @@ export function layout(propostas, ordem, modo = 'assunto') {
       const doSubtema = exclusivas.filter((p) => p.subtema === st);
       linhas.push({ tipo: 'subtema', rotulo: st });
       // com contrário, a faixa cobre os dois e vem antes; sem contrário, a proposta fica na pilha da coluna
-      for (const p of doSubtema.filter((p) => contra(p, ordem).length)) {
-        const f = faixa(p, ordem, idx);
-        linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
-      }
+      for (const p of doSubtema.filter((p) => contra(p, ordem).length)) linhas.push(...cartoes(p, ordem, idx));
       const pilhas = ordem.map((s, i) => doSubtema
         .filter((p) => quem(p, ordem)[0] === s && !contra(p, ordem).length)
         .map((p) => cartao(p, ordem, idx, i, 1)));
@@ -183,10 +192,7 @@ function porAssunto(visiveis, ordem, idx, n) {
     const doAssunto = visiveis.filter((p) => p.subtema === st);
     linhas.push({ tipo: 'secao', rotulo: st });
     // faixas: quem concorda em mais de um, ou exclusiva com contrário (a faixa cobre os dois)
-    for (const p of doAssunto.filter((p) => quem(p, ordem).length >= 2 || contra(p, ordem).length)) {
-      const f = faixa(p, ordem, idx);
-      linhas.push({ tipo: 'cartao', ...cartao(p, ordem, idx, f.ini, f.fim - f.ini + 1) });
-    }
+    for (const p of doAssunto.filter((p) => quem(p, ordem).length >= 2 || contra(p, ordem).length)) linhas.push(...cartoes(p, ordem, idx));
     const pilhas = ordem.map((s, i) => doAssunto
       .filter((p) => quem(p, ordem).length === 1 && quem(p, ordem)[0] === s && !contra(p, ordem).length)
       .map((p) => cartao(p, ordem, idx, i, 1)));

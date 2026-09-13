@@ -128,7 +128,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
                 {pilha.map((c) => {
                   const p = porId[c.id];
                   return (
-                    <button type="button" class={`proposta${c.comContra ? ' com-contra' : ''}`} data-p={c.id} style={estiloCartao({ ...c, ini: 0 })}>
+                    <button type="button" class={`proposta${c.comContra ? ' com-contra' : ''}`} data-p={c.id} data-k={c.chave} style={estiloCartao({ ...c, ini: 0 })}>
                       <span class="colunas" style={`grid-template-columns:repeat(${c.largura},1fr)`}>
                         {c.colunas.map((k) => <span class={k === 'concorda' ? undefined : k}></span>)}
                       </span>
@@ -143,7 +143,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
           }
           const p = porId[linha.id];
           return (
-            <button type="button" class={`proposta${linha.comContra ? ' com-contra' : ''}`} data-p={linha.id} style={estiloCartao(linha)}>
+            <button type="button" class={`proposta${linha.comContra ? ' com-contra' : ''}`} data-p={linha.id} data-k={linha.chave} style={estiloCartao(linha)}>
               <span class="colunas" style={`grid-template-columns:repeat(${linha.largura},1fr)`}>
                 {linha.colunas.map((k) => <span class={k === 'concorda' ? undefined : k}></span>)}
               </span>
@@ -197,7 +197,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const contagemRotulo = raiz.querySelector('.contagem-rotulo');
     const chips = [...raiz.querySelectorAll('.seletor button[data-slug]')];
     // os cartões desenhados no build; o navegador só os reposiciona
-    const cartoes = new Map([...grade.querySelectorAll('button.proposta')].map((b) => [b.dataset.p, b]));
+    // uma proposta pode virar mais de um cartão (candidatos não adjacentes): o mapa é por chave
+    const cartoes = new Map([...grade.querySelectorAll('button.proposta')].map((b) => [b.dataset.k, b]));
     const el = (tag, classe, texto) => {
       const e = document.createElement(tag);
       if (classe) e.className = classe;
@@ -215,20 +216,21 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const consulta = (new URLSearchParams(location.search).get('q') || '').trim();
     const propostasVisiveis = () => (filtro ? [...D.propostas, ...externas].filter((p) => filtro.has(p.id)) : D.propostas);
 
-    function criaCartao(p) {
+    function criaCartao(p, chave) {
       const b = el('button', 'proposta');
       b.type = 'button';
       b.dataset.p = p.id;
+      b.dataset.k = chave;
       b.append(el('span', 'colunas'));
       const conteudo = el('span', 'conteudo');
       conteudo.append(el('span', 'texto', p.proposta));
       b.append(conteudo);
-      cartoes.set(p.id, b);
+      cartoes.set(chave, b);
       return b;
     }
 
     function posiciona(c) {
-      const b = cartoes.get(c.id) ?? criaCartao(porId[c.id]);
+      const b = cartoes.get(c.chave) ?? criaCartao(porId[c.id], c.chave);
       b.style.gridColumn = `${c.ini + 1} / span ${c.largura}`;
       b.style.setProperty('--l', String(c.largura));
       b.classList.toggle('com-contra', c.comContra);
@@ -385,8 +387,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     function destaca() {
       const m = /^#p=([A-Za-z0-9_-]+)$/.exec(location.hash);
       if (!m) return;
-      const b = cartoes.get(m[1]);
-      if (!b || !b.isConnected) return;
+      const b = grade.querySelector(`button.proposta[data-p="${CSS.escape(m[1])}"]`);
+      if (!b) return;
       for (const outro of grade.querySelectorAll('.proposta.destaque')) outro.classList.remove('destaque');
       b.classList.add('destaque');
       b.scrollIntoView({ block: 'center' });

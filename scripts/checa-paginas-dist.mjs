@@ -46,9 +46,10 @@ function confereTema(rel, dados, base, paginas) {
     if (!new RegExp(`class="candidato" data-slug="${escapa(c.slug)}"`).test(html)) falhas.push(`${rel}: sem a coluna de ${c.slug}`);
     if (!new RegExp(`class="chip" aria-pressed="true" data-slug="${escapa(c.slug)}"`).test(html)) falhas.push(`${rel}: sem o chip de ${c.slug} no seletor`);
   }
-  const cartoes = (html.match(/<button[^>]*class="proposta[^"]*"[^>]*data-p="/g) ?? []).length;
-  if (cartoes !== dados.propostas.length) {
-    falhas.push(`${rel}: ${cartoes} cartões para ${dados.propostas.length} propostas do JSON`);
+  // uma proposta pode virar mais de um cartão (candidatos não adjacentes): conta-se por id
+  const ids = new Set([...html.matchAll(/<button[^>]*class="proposta[^"]*"[^>]*data-p="([^"]+)"/g)].map((m) => m[1]));
+  if (ids.size !== dados.propostas.length) {
+    falhas.push(`${rel}: ${ids.size} propostas com cartão para ${dados.propostas.length} do JSON`);
   }
   for (const id of paginas) {
     if (!new RegExp(`<option value="${escapa(id)}"`).test(html)) falhas.push(`${rel}: a caixa de temas não traz ${id}`);
