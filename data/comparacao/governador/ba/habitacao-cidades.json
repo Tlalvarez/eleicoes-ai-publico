@@ -1,0 +1,754 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "BA",
+ "pagina": "habitacao-cidades",
+ "nome": "Habitação e cidades",
+ "titulo": "Habitação e cidades: o que cada candidato propõe",
+ "temas": [
+  "moradia_cidades"
+ ],
+ "origem": {
+  "arquivo": "habitacao-cidades-ba.json",
+  "gerado_em": "2026-09-14T01:21:33Z",
+  "exportado_em": "2026-09-14T02:08:04Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-ba-acm-neto-50002533190",
+   "nome": "Acm Neto",
+   "partido": "UNIÃO",
+   "numero": "44",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/50017136341",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/50002533190/BA"
+  },
+  {
+   "slug": "governador-ba-jeronimo-rodrigues-50002536314",
+   "nome": "Jerônimo Rodrigues",
+   "partido": "PT",
+   "numero": "13",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/50017113080",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/50002536314/BA"
+  },
+  {
+   "slug": "governador-ba-ronaldo-mansur-50002532269",
+   "nome": "Ronaldo Mansur",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/50016839948",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/50002532269/BA"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Produção de moradia",
+   "proposta": "Ampliar a produção de unidades habitacionais populares para reduzir o déficit habitacional do estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      983,
+      986
+     ],
+     "nota": ""
+    },
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      278,
+      281
+     ],
+     "nota": "Programa massivo de acesso à moradia com financiamento acessível"
+    },
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2363,
+      2367
+     ],
+     "nota": "Produção contínua com recursos próprios do estado"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Produção de moradia",
+   "proposta": "Expandir o programa federal Minha Casa Minha Vida em parceria com a União, com cadastramento de famílias, cessão de terrenos estaduais e agilidade na entrega das unidades",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      983,
+      984
+     ],
+     "nota": ""
+    },
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2366
+     ],
+     "nota": "Parceria federal como complemento, não substituto de política estadual"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Produção de moradia",
+   "proposta": "Estruturar política habitacional estadual própria, com eixos, orçamento garantido por lei, metas anuais públicas, prazos e indicadores verificáveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2363
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Produção de moradia",
+   "proposta": "Priorizar a construção de novas unidades nos municípios com maior déficit per capita e menor capacidade de execução, com condomínios integrados a escola, creche, praça e equipamento comunitário",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2367
+     ],
+     "nota": "Modelo Guerreira Zeferina"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Produção de moradia",
+   "proposta": "Criar programa estadual de reforma de moradias precárias com repasse de até R$ 15 mil por família e escolha das intervenções pelo próprio morador, com seleção por indicadores de vulnerabilidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2372,
+      2373
+     ],
+     "nota": "Morar Melhor Bahia; prioridade a casas chefiadas por mulheres, idosos e PcD"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Produção de moradia",
+   "proposta": "Realizar compras de material e contratação de mão de obra preferencialmente dentro do município onde a obra habitacional ocorre",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2379,
+      2383
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Produção de moradia",
+   "proposta": "Estabelecer parceria com institutos federais e Sistema S para formação profissional em construção civil nas comunidades beneficiadas pelas obras habitacionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2368
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Habitação rural e comunidades tradicionais",
+   "proposta": "Ampliar programas habitacionais no meio rural e para comunidades quilombolas, indígenas e povos tradicionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      986
+     ],
+     "nota": "Via MCMV Rural e Entidade e convênios de habitação"
+    },
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2383,
+      2386
+     ],
+     "nota": "Morar Melhor Rural, com prioridade a quilombolas com território reconhecido"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Habitação rural e comunidades tradicionais",
+   "proposta": "Focar o atendimento habitacional rural nos municípios com maior incidência de doença de Chagas e habitação precária, articulando a reforma com melhorias produtivas via extensão rural",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2384,
+      2385
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Regularização fundiária",
+   "proposta": "Executar programa de regularização fundiária urbana e rural para garantir posse segura e título aos moradores",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277,
+      281
+     ],
+     "nota": "Integrada ao programa de urbanização de periferias"
+    },
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2396
+     ],
+     "nota": "Ênfase em escala e metas para os 417 municípios"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Regularização fundiária",
+   "proposta": "Operar a regularização fundiária por escritórios de campo instalados nas localidades, com georreferenciamento dos imóveis e digitalização da documentação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2390,
+      2396
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Regularização fundiária",
+   "proposta": "Priorizar a regularização e a titulação de imóveis de agricultores familiares, quilombolas, indígenas e demais comunidades tradicionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2397
+     ],
+     "nota": "Titulação como condição de acesso ao crédito rural"
+    },
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      278
+     ],
+     "nota": "Foco em terrenos da União ocupados em áreas urbanas e periurbanas"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Regularização fundiária",
+   "proposta": "Garantir que a mulher seja titular ou cotitular do imóvel em 100% das regularizações e construções financiadas pelo estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2398
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Transparência e governança da política habitacional",
+   "proposta": "Assegurar transparência e critérios técnicos na seleção de beneficiários e na execução dos programas habitacionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      984
+     ],
+     "nota": ""
+    },
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2408,
+      2416
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Transparência e governança da política habitacional",
+   "proposta": "Criar cadastro único habitacional estadual cruzando CadÚnico, IPTU, ITIV e sistema fundiário para priorizar o atendimento por critério técnico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2414,
+      2417
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Transparência e governança da política habitacional",
+   "proposta": "Publicar plano habitacional com metas específicas, portal de transparência com execução físico-financeira e avaliação independente bienal dos programas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2415,
+      2416,
+      2418
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Equipamentos sociais urbanos",
+   "proposta": "Construir e requalificar redes de equipamentos sociais comunitários nos bairros (educação, creche, saúde, cultura, lazer e esporte)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      475
+     ],
+     "nota": "Foco nos Centros Sociais Urbanos"
+    },
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277,
+      281
+     ],
+     "nota": "Equipamentos seguros e planejados para populações vulnerabilizadas"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Equipamentos sociais urbanos",
+   "proposta": "Reformar os Centros Sociais Urbanos garantindo infraestrutura, equipe técnica e programação permanente de cursos e atividades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      475
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Moradia em áreas de risco",
+   "proposta": "Atender com ações habitacionais e de controle de riscos ambientais as famílias que ocupam áreas de risco",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2405,
+      2406
+     ],
+     "nota": ""
+    },
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277
+     ],
+     "nota": "Controle de riscos dentro do programa de urbanização de favelas"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Moradia em áreas de risco",
+   "proposta": "Criar plano de contingência habitacional para desastres, com prioridade absoluta das famílias removidas no programa de construção de moradias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2405
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Moradia em áreas de risco",
+   "proposta": "Criar programa específico para encostas ocupadas em Salvador e nas cidades serranas do interior",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2406
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Urbanização de periferias e favelas",
+   "proposta": "Criar grande programa de urbanização de periferias e favelas, com água, esgoto, mobilidade, áreas verdes, habitação e equipamentos sociais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Urbanização de periferias e favelas",
+   "proposta": "Elaborar planos populares como ferramenta de planejamento e executar as intervenções por parcerias público-populares com universidades, entidades e comunidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Urbanização de periferias e favelas",
+   "proposta": "Fortalecer organizações populares e espaços de participação na formulação e execução da política urbana",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277,
+      281
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Autogestão e parque público de moradia",
+   "proposta": "Promover produção habitacional por autogestão com movimentos populares e ampliar a assessoria técnica para habitação de interesse social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      278
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Autogestão e parque público de moradia",
+   "proposta": "Constituir parque habitacional público e programas de locação social, com moradias bem localizadas em áreas centrais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      278
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Autogestão e parque público de moradia",
+   "proposta": "Destinar imóveis e terrenos públicos ociosos à moradia e desapropriar terrenos privados abandonados que descumpram a função social da propriedade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      278
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Moradia para idosos",
+   "proposta": "Criar programa de moradia gratuita para idosos em vulnerabilidade, em condomínio horizontal acessível com áreas de convivência e concessão de uso não onerosa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2420,
+      2421,
+      2422
+     ],
+     "nota": "Programa Doce Lar, prioridade a beneficiários do BPC"
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Moradia para idosos",
+   "proposta": "Repartir responsabilidades com os municípios no programa de moradia para idosos: estado financia obra e mobiliário e define diretrizes; município cede terreno, seleciona beneficiários e mantém o equipamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2423,
+      2424,
+      2425,
+      2426
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Planejamento urbano e direito à cidade",
+   "proposta": "Criar fórum urbano permanente para planejar o crescimento das cidades e sua articulação com o entorno",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      57
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Planejamento urbano e direito à cidade",
+   "proposta": "Promover ampla reforma urbana que universalize o acesso à infraestrutura urbana e combata as desigualdades territoriais, com apoio a transporte público, habitação e saneamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      281
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-ba-acm-neto-50002533190": {
+   "2363": {
+    "texto": "A política habitacional do Novo Governo terá eixos, com metas anuais públicas e orçamento próprio garantido por lei. Cada eixo tem responsável, prazo e indicador verificável. A dependência federal permanece como parceria — não como substituto de uma política estadual.",
+    "pagina": 142
+   },
+   "2366": {
+    "texto": "O Novo Governo fará articulação com o governo federal seguindo três frentes: cadastramento rigoroso de famílias, cessão de terrenos próprios do Estado e aceleração dos procedimentos na Caixa Econômica Federal e nas agências de fomento.",
+    "pagina": 142
+   },
+   "2367": {
+    "texto": "As novas Unidades serão construídas prioritariamente em municípios com maior déficit per capita e menor capacidade de execução. Os condomínios serão integrados com escola, creche, praça e equipamento comunitário — modelo Guerreira Zeferina.",
+    "pagina": 142
+   },
+   "2368": {
+    "texto": "O Novo Governo irá estabelecer parceria com institutos federais para formação profissional em construção civil nas comunidades beneficiadas, somando-se às trilhas do Treinar para Empregar Bahia e à rede do Sistema S: mão de obra qualificada para a obra local é formada por essa mesma rede, não é público à parte.",
+    "pagina": 142
+   },
+   "2372": {
+    "texto": "Em escala estadual, o Morar Melhor Bahia chegará aos municípios no interior. Cada família receberá até R$ 15 mil em reformas escolhidas pelo próprio morador — valor calibrado ao custo atual de materiais e mão de obra na Bahia (SINAPI/IBGE, fevereiro de 2026: custo médio de construção residencial de R$ 1.925/m²) e compatível com intervenções pontuais de 8 a 10 m² em banheiros, coberturas e fachadas.",
+    "pagina": 142
+   },
+   "2373": {
+    "texto": "A seleção seguirá indicadores de renda, densidade habitacional, alvenaria sem revestimento e priorizará domicílios chefiados por mulheres, residências com idosos e com pessoas com deficiência.",
+    "pagina": 142
+   },
+   "2379": {
+    "texto": "As compras de material e a contratação de mão de obra serão preferencialmente realizadas dentro do município. Casa reformada é também geração de renda local e redução de doenças respiratórias, micoses e infecções — e um ambiente melhor para as crianças aprenderem.",
+    "pagina": 143
+   },
+   "2383": {
+    "texto": "O Morar Melhor Rural atenderá prioritariamente agricultores familiares que vivem em habitações frágeis, comunidades quilombolas, povos indígenas e outros grupos tradicionais. A metodologia será a mesma do programa urbano: seleção por indicadores de vulnerabilidade, escolha do que reformar pelo próprio morador, compras locais e obrigação de emprego comunitário. O programa chegará aos povoados e distritos onde a CONDER jamais atuou.\n•",
+    "pagina": 143
+   },
+   "2384": {
+    "texto": "Foco inicial nos municípios com maior incidência de Chagas e habitação precária rural.\n•",
+    "pagina": 143
+   },
+   "2385": {
+    "texto": "Articulação com o programa de extensão rural para reformar junto com melhorias produtivas.\n•",
+    "pagina": 143
+   },
+   "2386": {
+    "texto": "Prioridade para comunidades quilombolas com territórios reconhecidos.",
+    "pagina": 143
+   },
+   "2390": {
+    "texto": "O Novo Governo operará a regularização fundiária por escritórios de campo — unidades provisórias instaladas na localidade em processo de regularização, numa associação comunitária ou equipamento",
+    "pagina": 143
+   },
+   "2396": {
+    "texto": "público —, com georreferenciamento dos imóveis e digitalização da documentação. A Bahia é o estado nordestino com maior população e maior número absoluto de domicílios informais (FJP, Déficit Habitacional 2022); regularizá-los não é burocracia: é criar patrimônio para quem nunca teve.",
+    "pagina": 144
+   },
+   "2397": {
+    "texto": "Nos distritos, povoados e zonas rurais, a prioridade será a titulação de imóveis pertencentes a agricultores familiares, povos quilombolas e indígenas. Sem escritura, não há crédito rural. Sem crédito, a lavoura não escala e o criatório não cresce.",
+    "pagina": 144
+   },
+   "2398": {
+    "texto": "Nos programas habitacionais, o nome da mulher estará na escritura. Autonomia econômica é a forma mais duradoura de proteção contra a violência. Em 100% das regularizações e construções financiadas pelo estado, a mulher será co-titular ou titular principal do imóvel",
+    "pagina": 144
+   },
+   "2405": {
+    "texto": "Plano de Contingência Habitacional para desastres: famílias removidas terão prioridade absoluta no programa de construção\n•",
+    "pagina": 144
+   },
+   "2406": {
+    "texto": "Programa específico para encostas ocupadas em Salvador e nas cidades serranas do interior",
+    "pagina": 144
+   },
+   "2408": {
+    "texto": "O objetivo é saber, com precisão, quem precisa de moradia, quem já tem casa própria e quem acumula mais de uma. Sem essa informação, a política habitacional continua refém do critério político, não do técnico — e é isso que o Novo Governo vai reverter.",
+    "pagina": 144
+   },
+   "2414": {
+    "texto": "O instrumento central é o Cadastro Único Habitacional da Bahia, construído a partir do cruzamento do CadÚnico federal com os dados do IPTU, do ITIV e do sistema fundiário estadual. Os estudos para sua criação começam já no início da gestão. A partir dele, a governança da política habitacional passa a operar em quatro frentes:\n•",
+    "pagina": 145
+   },
+   "2415": {
+    "texto": "Plano Habitacional com metas específicas;\n•",
+    "pagina": 145
+   },
+   "2416": {
+    "texto": "Portal de transparência com execução físico-financeira atualizado\n•",
+    "pagina": 145
+   },
+   "2417": {
+    "texto": "Cadastro Único Habitacional da Bahia, cruzando as bases citadas para priorizar por critério técnico, não político;\n•",
+    "pagina": 145
+   },
+   "2418": {
+    "texto": "Avaliação independente bienal dos programas, com resultado publicado.",
+    "pagina": 145
+   },
+   "2420": {
+    "texto": "O Novo Governo criará o Programa Doce Lar: moradia gratuita para idosos com 60 anos ou mais, com autonomia para as atividades diárias, com vínculos familiares fragilizados ou rompidos, em situação de vulnerabilidade e risco social, sem acesso à moradia e inscritos no CadÚnico. A prioridade será para beneficiários do BPC e para idosos em extrema pobreza residentes no município há pelo menos dois anos.",
+    "pagina": 145
+   },
+   "2421": {
+    "texto": "O equipamento funcionará como um condomínio horizontal, com áreas de convivência comuns — salão com espaço para refeições e jogos, área de lazer, horta comunitária —, projetado segundo os princípios do desenho universal (NBR 9050), garantindo acessibilidade e segurança aos moradores.",
+    "pagina": 145
+   },
+   "2422": {
+    "texto": "Nenhum idoso paga aluguel: o vínculo é formalizado por Contrato de Concessão de Uso Não Onerosa.",
+    "pagina": 145
+   },
+   "2423": {
+    "texto": "O Estado financiará a construção, elaborará e executará o equipamento, doará o mobiliário básico.",
+    "pagina": 145
+   },
+   "2424": {
+    "texto": "A área Social do Estado definirá as diretrizes da política socioassistencial, aprovará o Projeto Social de cada equipamento e capacita as equipes técnicas municipais.",
+    "pagina": 145
+   },
+   "2425": {
+    "texto": "O município cederá o terreno, elaborará o Projeto Social, identificará os beneficiários pela rede de assistência (CRAS, CREAS), gerenciará o dia a dia do equipamento e custeia a manutenção predial.",
+    "pagina": 145
+   },
+   "2426": {
+    "texto": "A gestão cotidiana é municipal, feita pela secretaria de assistência social de cada cidade. Caberá ao município formar equipe técnica conforme a Norma Operacional Básica de Recursos Humanos do SUAS (NOB-RH/SUAS), garantir a articulação com a rede de saúde e assistência (CRAS, CREAS, SUS) e arcar com a manutenção predial do equipamento.",
+    "pagina": 145
+   }
+  },
+  "governador-ba-jeronimo-rodrigues-50002536314": {
+   "475": {
+    "texto": " Reformar e requalificar os Centros Sociais Urbanos (CSU), garantindo infraestrutura, equipe técnica e programação permanente de cursos profissionalizantes e atividades para todas as faixas etárias.",
+    "pagina": 37
+   },
+   "983": {
+    "texto": " Expandir, em parceria com o governo federal, o Minha Casa Minha Vida",
+    "pagina": 70
+   },
+   "984": {
+    "texto": "(MCMV) com transparência na seleção e agilidade na entrega das unidades.",
+    "pagina": 70
+   },
+   "986": {
+    "texto": " Ampliar a habitação rural e para comunidades originárias e tradicionais, fortalecendo o MCMV Rural e Entidade e viabilizando os convênios de habitação",
+    "pagina": 70
+   }
+  },
+  "governador-ba-ronaldo-mansur-50002532269": {
+   "57": {
+    "texto": "Criaremos um fórum urbano permanente que capte as tendências urbanas do Século XXI. Defendemos planejar o crescimento das cidades e das articulações com o seu entorno pois a sua falta contribui para o crescimento desordenado e predatório que deixa as cidades entregues aos efeitos danosos das chuvas, da economia e da sazonalidade. As principais cidades do estado sofrem com problemas de trânsito, com o crescimento vertical e horizontal descontrolado, num predatório “construa-onde-puder” urbano, de falta de mobilidade urbana.",
+    "pagina": 4
+   },
+   "277": {
+    "texto": "Criar um grande programa de investimento em urbanização das periferias e favelas (envolvendo água, esgoto, mobilidade, áreas verdes, habitação, regularização fundiária, produção habitacional, controle de riscos ambientais, entre outros.) e de construção de redes de equipamentos sociais de qualidade, de educação, creches, saúde, cultura, lazer e esporte. Esse programa deve focar na construção de planos populares como ferramentas de planejamento com alianças entre universidades, organizações sociais e atores comunitários e ter sua implementação a partir de parcerias público-populares, envolvendo diversos entes federados e entidades populares. A intervenção urgente na periferia é para a garantia de direitos. É com política e não polícia e militarização. Que esses investimentos apontem para cidades com justiça climática, no enfrentamento ao racismo ambiental e ao processo de violação de direitos das populações negras e indígenas.",
+    "pagina": 23
+   },
+   "278": {
+    "texto": "Promover produção habitacional por autogestão e relação com movimentos e organizações populares, a ser desenvolvida em terrenos ou edifícios públicos da União e em terrenos privados abandonados, que serão desapropriados por descumprirem a função social da propriedade. Fortalecer e ampliar a oferta de assessoria técnica para habitação de interesse social, a constituição de um parque habitacional público, desenvolver programas de locação social e produção de moradias bem localizadas e em áreas centrais. Desenvolver um programa de regularização e garantia da manutenção das comunidades tradicionais nos terrenos da União ocupados por indígenas, quilombolas, caiçaras, seringueiros, extrativistas, agricultores familiares das várzeas, nas áreas urbanas e periurbanas.",
+    "pagina": 23
+   },
+   "281": {
+    "texto": "1.Ampla reforma urbana que garanta o direito à cidade e combata desigualdades territoriais apoiando a infraestrutura, o transporte público, a habitação e o saneamento básico. Um programa massivo de acesso à moradia, com mecanismos de financiamento acessível; 2. Ampliar o planejamento dos espaços e equipamentos públicos seguros e voltados para as necessidades dessas populações; 3.Construir uma perspectiva de mobilidade como direito, com uma política tarifária que permita o acesso aos serviços, mas também pense sua modelagem; 4.Universalizar o acesso à infraestrutura urbana e a articulação das demais políticas públicas nos territórios, em diálogo com demandas desses segmentos; 5.Promover a posse segura da terra e da habitação priorizando esses setores; 6.Fortalecimento de organizações populares voltadas para produzir soluções e de espaços de participação.",
+    "pagina": 23
+   }
+  }
+ }
+}
