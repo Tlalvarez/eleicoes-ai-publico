@@ -5,11 +5,11 @@
  * as 27 UFs nos dois casos, para o endereço não mudar quando os dados chegarem.
  */
 import Base from '../../layouts/Base.astro';
-import Candidatos from '../../components/Candidatos.astro';
+import Busca from '../../components/Busca.astro';
 import GradeTemas from '../../components/GradeTemas.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, notaSituacao, separaPorDisputa } from '../../lib/candidaturas-uf.mjs';
-import { comparacao, resumoDoEscopo } from '../../lib/comparacao-dados.mjs';
+import { resumoDoEscopo } from '../../lib/comparacao-dados.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.map((uf) => ({
@@ -22,8 +22,8 @@ const escopo = rotuloEscopo(cargo, uf);
 const base = caminhoUf(cargo, uf);
 const resumo = resumoDoEscopo(cargo.slug, uf.sigla);
 const pronta = resumo.length > 0;
-const comparados = pronta ? comparacao(cargo.slug, uf.sigla, resumo[0].id).candidatos : [];
-const totalPropostas = resumo.reduce((n, r) => n + r.propostas, 0);
+// com a comparação pronta, a página é só a porta: os temas e a busca (pedido do
+// Thiago em 14/09); a lista de candidaturas do TSE fica só para "em preparação"
 // as candidaturas do snapshot do TSE, em ordem alfabética: quem está na
 // disputa e quem saiu (renúncia, indeferimento sem recurso), com a situação do TSE
 const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla));
@@ -35,12 +35,7 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
   <div class="hero-home">
     <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome}</p>
     <h1>{escopo}</h1>
-    {pronta ? (
-      <p class="lead">
-        {totalPropostas} propostas em {resumo.length} temas, dos programas de {comparados.length} candidatos.
-        <a href={cargo.href}>Trocar de estado</a>
-      </p>
-    ) : (
+    {!pronta && (
       <p class="lead">
         A comparação dos programas de governo deste estado está <strong>em preparação</strong>.
         Enquanto isso, as candidaturas registradas no TSE estão abaixo, com o link de cada uma.
@@ -51,13 +46,18 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
 
   {pronta && (
     <>
-      <h2>Temas</h2>
-      <GradeTemas resumo={resumo} base={base} origem="hub" />
-      <h2>Programas comparados</h2>
-      <Candidatos candidatos={comparados} />
+      <section class="bloco">
+        <h2>Temas</h2>
+        <GradeTemas resumo={resumo} base={base} origem="hub" />
+      </section>
+      <section class="bloco">
+        <h2 id="busque">Busque por tópico</h2>
+        <Busca escopo={`${cargo.slug}/${uf.sigla.toLowerCase()}`} semRotulo rotuladoPor="busque" />
+      </section>
     </>
   )}
 
+  {!pronta && (
   <section class="secao-catalogo">
     <h2>Candidatos a {cargo.nome.toLowerCase()} — {uf.nome}</h2>
     <ul class="grade-candidatos">
@@ -105,6 +105,7 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
       </details>
     )}
   </section>
+  )}
 
   <style>
     .hero-home { margin-bottom: 1.6rem; }
