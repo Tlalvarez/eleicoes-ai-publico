@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "ciencia-tecnologia-ma.json",
-  "gerado_em": "2026-09-14T08:15:44Z",
-  "exportado_em": "2026-09-14T08:29:37Z"
+  "gerado_em": "2026-09-14T21:56:58Z",
+  "exportado_em": "2026-09-14T21:58:42Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Ampliar a conectividade e o acesso à internet nos municípios maranhenses, incluindo áreas rurais e localidades do interior",
+   "proposta": "Ampliar a conectividade e o acesso à internet nos municípios do estado, em áreas urbanas e rurais",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -67,7 +67,7 @@
      "blocos": [
       43
      ],
-     "nota": "Programa Conecta MA, urbano e rural"
+     "nota": "Programa Conecta MA"
     },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -79,18 +79,19 @@
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
+      825,
+      826,
       1720,
-      1761,
       2412
      ],
-     "nota": "Inclui soluções satelitais transitórias na última milha"
+     "nota": "Conectividade tratada como infraestrutura pública e econômica"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Implantar programas de inclusão digital com formação para uso das ferramentas digitais e acesso a equipamentos",
+   "proposta": "Implantar programas de inclusão digital que combinem acesso, equipamentos e formação para uso das ferramentas digitais",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -98,7 +99,7 @@
      "blocos": [
       402
      ],
-     "nota": "Inclui fornecimento de equipamentos tecnológicos"
+     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -106,14 +107,14 @@
       1105,
       1764
      ],
-     "nota": "Prioriza idosos, população rural e baixa renda; vincula à qualificação profissional"
+     "nota": "Prioriza idosos, população rural e baixa renda; formação ligada à qualificação profissional"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Aproveitar redes acadêmicas, fibras e programas federais já existentes para expandir a conectividade, evitando investimentos duplicados",
+   "proposta": "Garantir internet de qualidade nas escolas e demais equipamentos públicos, com prioridade ao interior e à zona rural",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -121,7 +122,30 @@
      "blocos": [
       586
      ],
-     "nota": "Parceria com a rede acadêmica e programas federais"
+     "nota": ""
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1103,
+      1720
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Articular a expansão da conectividade com redes acadêmicas, redes federais e obrigações de cobertura já existentes, evitando duplicação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      586
+     ],
+     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -133,9 +157,44 @@
    }
   },
   {
-   "id": "p4",
+   "id": "p5",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Agregar a demanda pública de conectividade em lotes regionais, usando o poder de compra do Estado e permitindo adesão dos municípios",
+   "proposta": "Atingir 100% das escolas estaduais com conectividade de qualidade medida por SLA até 2028, com publicação do desempenho por escola",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2304,
+      2305,
+      2306,
+      2307,
+      2308
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Elaborar, no primeiro ano, inventário georreferenciado da conectividade pública com tecnologia, velocidade, latência, custo e necessidade projetada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1721,
+      1722
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Agregar a demanda pública de telecomunicações em lotes regionais, permitindo adesão de municípios e estimulando concorrência entre operadoras e provedores regionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -151,65 +210,25 @@
    }
   },
   {
-   "id": "p5",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Elaborar inventário georreferenciado da conectividade pública e mapa de vazios de cobertura no primeiro ano de governo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      825,
-      826,
-      1721,
-      1722
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Contratar conectividade com acordos de nível de serviço (SLA), medição automatizada, penalidades e pagamento vinculado à qualidade entregue",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1103,
-      1723,
-      1724,
-      2307
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Atingir 100% das escolas estaduais com conectividade de qualidade medida até 2028 e ponto público de acesso em 217 sedes municipais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2304,
-      2305,
-      2306,
-      2310,
-      2311,
-      2318
-     ],
-     "nota": "Publicação do desempenho por escola, prioridade à zona rural"
-    }
-   }
-  },
-  {
    "id": "p8",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Transformar escolas, unidades de saúde, praças e associações em pontos públicos ou assistidos de acesso à internet fora do horário regular",
+   "proposta": "Contratar conectividade com acordos de nível de serviço, medição automatizada, penalidades e pagamento vinculado à qualidade entregue",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1723,
+      1724
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Transformar escolas, unidades de saúde, praças e sedes de associações em pontos públicos ou assistidos de acesso à internet fora do horário regular",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -223,9 +242,41 @@
    }
   },
   {
-   "id": "p9",
+   "id": "p10",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Integrar a infraestrutura digital à estratégia econômica, levando conectividade a corredores produtivos, polos logísticos e áreas das ZPEs",
+   "proposta": "Instalar ponto público de conexão de qualidade em 217 sedes municipais até 2028, com medição pública de qualidade em 2029-2030",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2310,
+      2311,
+      2318
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Usar soluções satelitais ou outras tecnologias como alternativa transitória de última milha onde não houver viabilidade de infraestrutura terrestre",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1761
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Incorporar ao planejamento de conectividade os requisitos de corredores produtivos, polos logísticos e da Rede Maranhense de ZPEs, com redundância e segurança",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -242,9 +293,9 @@
    }
   },
   {
-   "id": "p10",
+   "id": "p13",
    "subtema": "Fomento à pesquisa",
-   "proposta": "Fomentar pesquisa científica e tecnológica orientada pelas prioridades estratégicas e pelos problemas concretos do Estado",
+   "proposta": "Fortalecer a Fundação de Amparo à Pesquisa e o sistema estadual de ciência e tecnologia como instrumento de fomento à pesquisa",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -253,7 +304,7 @@
       74,
       75
      ],
-     "nota": "Via FAPEMA, com foco em desenvolvimento socioeconômico e redução de desigualdades"
+     "nota": ""
     },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -266,16 +317,41 @@
     "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
      "blocos": [
-      357
+      147,
+      313
      ],
-     "nota": "Fortalecer o sistema estadual de CT&I, incluindo a FAPEMA"
+     "nota": "Fortalecer UEMA, UEMASUL, IEMA, IFMA e FAPEMA"
     }
    }
   },
   {
-   "id": "p11",
+   "id": "p14",
    "subtema": "Fomento à pesquisa",
-   "proposta": "Organizar o fomento por missões públicas prioritárias (saúde, bioeconomia, água, clima, agricultura), com chamadas por estágio de maturidade e seleção por mérito",
+   "proposta": "Alinhar o fomento à pesquisa às prioridades estratégicas do planejamento estadual e aos problemas concretos do estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      75
+     ],
+     "nota": "Foco em desenvolvimento socioeconômico e redução de desigualdades regionais"
+    },
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      558,
+      1011,
+      1012
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Fomento à pesquisa",
+   "proposta": "Orientar parte do fomento por missões públicas prioritárias (saúde, bioeconomia, água, clima e agricultura), com chamadas por estágio de maturidade e seleção por mérito",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -289,9 +365,33 @@
    }
   },
   {
-   "id": "p12",
+   "id": "p16",
    "subtema": "Fomento à pesquisa",
-   "proposta": "Financiar pesquisa dirigida aos maiores problemas do SUS estadual (hanseníase, tuberculose e sífilis), com prioridades definidas junto à Secretaria de Saúde",
+   "proposta": "Territorializar o ecossistema de ciência, tecnologia e inovação, levando pesquisa e fomento ao interior produtivo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      147,
+      313
+     ],
+     "nota": "Pilar Maranhão: Ciência dos Territórios e da Inovação Inclusiva"
+    },
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      572,
+      578
+     ],
+     "nota": "Prioridade ao interior em laboratórios e programas de pós-graduação"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Fomento à pesquisa",
+   "proposta": "Direcionar pesquisa aos maiores problemas do SUS estadual (hanseníase, tuberculose e sífilis), com prioridades definidas junto à Secretaria de Saúde",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -304,65 +404,25 @@
    }
   },
   {
-   "id": "p13",
+   "id": "p18",
    "subtema": "Fomento à pesquisa",
-   "proposta": "Interiorizar a política de ciência, tecnologia e inovação, desconcentrando o ecossistema da capital e levando pesquisa e fomento ao interior produtivo",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      166,
-      357
-     ],
-     "nota": "Territorializar UEMA, UEMASUL, IEMA, IFMA e FAPEMA, com eixo de inclusão e equidade"
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      570,
-      572,
-      578
-     ],
-     "nota": "Prioridade ao interior em bolsas, laboratórios e iniciação científica"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Fomento à pesquisa",
-   "proposta": "Estruturar a governança das políticas de CT&I, definindo prioridades estratégicas e levantando a infraestrutura científica disponível",
+   "proposta": "Garantir integridade científica e transparência plena do fomento, informando qual projeto recebeu, quanto, por quê e o que produziu",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      1011,
-      1012
+      552,
+      595
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Fomento à pesquisa",
-   "proposta": "Criar observatório científico que integre bases de dados existentes (IMESC, IBGE, universidades), mapeie lacunas e financie pesquisas sobre o território",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      581
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
+   "id": "p19",
    "subtema": "Startups e empreendedorismo inovador",
-   "proposta": "Estimular o surgimento e o desenvolvimento de startups em parceria com universidades e iniciativa privada, apoiadas em incubadoras e ambientes de inovação",
+   "proposta": "Estimular o desenvolvimento de startups e ambientes de inovação em parceria com universidades e iniciativa privada, com foco nas vocações econômicas regionais",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -370,7 +430,7 @@
      "blocos": [
       76
      ],
-     "nota": "Soluções atreladas às potencialidades regionais"
+     "nota": ""
     },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -391,24 +451,9 @@
    }
   },
   {
-   "id": "p17",
+   "id": "p20",
    "subtema": "Startups e empreendedorismo inovador",
-   "proposta": "Estruturar trilha contínua da ideação ao mercado com hubs regionais de inovação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      678
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Startups e empreendedorismo inovador",
-   "proposta": "Usar a compra pública de inovação (encomenda tecnológica e contrato de solução inovadora) com o Estado atuando como primeiro cliente",
+   "proposta": "Usar o poder de compra do Estado para contratar inovação, com encomenda tecnológica e contrato de solução inovadora",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -417,32 +462,77 @@
       589,
       678
      ],
-     "nota": ""
+     "nota": "Estado como primeiro cliente, não subsidiador permanente"
     }
    }
   },
   {
-   "id": "p19",
+   "id": "p21",
    "subtema": "Startups e empreendedorismo inovador",
-   "proposta": "Conectar escolas técnicas, universidades e estruturas de inovação aos polos industriais e ZPEs, transformando problemas das empresas em desafios de inovação",
+   "proposta": "Criar trilha contínua da ideação ao mercado com hubs regionais de inovação",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      1106,
-      1107,
-      1108,
-      1110
+      678
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p20",
-   "subtema": "Infraestrutura de pesquisa e parques tecnológicos",
-   "proposta": "Criar rede de laboratórios compartilhados, com inventário do que existe, plataforma de reserva, manutenção e construção apenas do que faltar",
+   "id": "p22",
+   "subtema": "Startups e empreendedorismo inovador",
+   "proposta": "Conectar escolas técnicas, universidades e estruturas de inovação aos polos produtivos, transformando problemas das empresas em desafios de inovação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1107,
+      1108,
+      1110
+     ],
+     "nota": "Vinculado à Rede Maranhense de ZPEs"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Startups e empreendedorismo inovador",
+   "proposta": "Fortalecer núcleos de inovação das universidades e a transferência de tecnologia, com regras de titularidade e repartição e ambiente sigiloso de aproximação com empresas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      561
+     ],
+     "nota": "Arena Bio como ponte entre pesquisadores e empresas"
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Infraestrutura científica e tecnológica",
+   "proposta": "Levantar e mapear a infraestrutura científica e laboratorial existente antes de novos investimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      546,
+      1012
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Infraestrutura científica e tecnológica",
+   "proposta": "Criar rede de laboratórios compartilhados com plataforma de reserva, manutenção e regras de uso, priorizando o interior",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -451,14 +541,14 @@
       546,
       578
      ],
-     "nota": "Regras de compartilhamento com prioridade ao interior"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p21",
-   "subtema": "Infraestrutura de pesquisa e parques tecnológicos",
-   "proposta": "Implantar centros tecnológicos, parques tecnológicos e infraestrutura de pesquisa aplicada ligados às vocações econômicas do Estado",
+   "id": "p26",
+   "subtema": "Infraestrutura científica e tecnológica",
+   "proposta": "Implantar centros tecnológicos, parques tecnológicos e infraestrutura de pesquisa aplicada ligados às vocações econômicas do estado",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -471,9 +561,9 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Infraestrutura de pesquisa e parques tecnológicos",
-   "proposta": "Criar Centro de Excelência em Tecnologias Aeroespaciais articulando UEMA, IFMA e parceiros acadêmicos nacionais",
+   "id": "p27",
+   "subtema": "Infraestrutura científica e tecnológica",
+   "proposta": "Criar Centro de Excelência em Tecnologias Aeroespaciais, articulando UEMA, IFMA e parceiros acadêmicos nacionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -486,9 +576,9 @@
    }
   },
   {
-   "id": "p23",
+   "id": "p28",
    "subtema": "Dados, inteligência artificial e governo digital",
-   "proposta": "Adotar política estadual de inteligência artificial responsável, em que a tecnologia apoia decisões públicas mas nunca decide sozinha",
+   "proposta": "Adotar política estadual de inteligência artificial responsável, em que a máquina apoia decisões públicas mas não decide sozinha",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -503,10 +593,10 @@
    }
   },
   {
-   "id": "p24",
+   "id": "p29",
    "subtema": "Dados, inteligência artificial e governo digital",
-   "proposta": "Abrir dados públicos com segurança e ampliar capacidade de computação científica por cooperação para apoiar políticas públicas",
-   "n_concorda": 1,
+   "proposta": "Integrar bases de dados públicas e abrir dados para apoiar políticas públicas e pesquisa sobre o território",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -514,21 +604,51 @@
       581,
       584
      ],
-     "nota": ""
+     "nota": "Observatório Científico integrando IMESC, IBGE e universidades"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1786,
+      1787
+     ],
+     "nota": "Ênfase em inteligência econômica para atração de investimentos"
     }
    }
   },
   {
-   "id": "p25",
+   "id": "p30",
    "subtema": "Dados, inteligência artificial e governo digital",
-   "proposta": "Instituir política de governança de dados com adequação à LGPD, controle de acesso, rastreabilidade e auditorias externas de sistemas críticos",
-   "n_concorda": 1,
+   "proposta": "Instituir política de governança de dados com adequação à LGPD, controle de acesso e rastreabilidade",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
       1793,
-      1794,
+      1794
+     ],
+     "nota": ""
+    },
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      584
+     ],
+     "nota": "Dados abertos e seguros"
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Dados, inteligência artificial e governo digital",
+   "proposta": "Estruturar capacidade permanente de segurança cibernética, com auditorias externas periódicas de sistemas críticos e formação local em parceria com universidades e o IEMA",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1795,
       1796
      ],
      "nota": ""
@@ -536,31 +656,14 @@
    }
   },
   {
-   "id": "p26",
+   "id": "p32",
    "subtema": "Dados, inteligência artificial e governo digital",
-   "proposta": "Estruturar capacidade permanente de segurança cibernética do Estado, diretamente ou em modelo híbrido com instituições especializadas",
+   "proposta": "Criar sala de dados integrada para apoiar decisões de localização e acompanhamento da implantação dos polos industriais",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1795
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Dados, inteligência artificial e governo digital",
-   "proposta": "Criar sala de dados e sistema de inteligência econômica com informações sobre empresas, fornecedores, infraestrutura e oportunidades de investimento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1786,
-      1787,
       1790
      ],
      "nota": ""
@@ -568,9 +671,25 @@
    }
   },
   {
-   "id": "p28",
+   "id": "p33",
+   "subtema": "Dados, inteligência artificial e governo digital",
+   "proposta": "Estruturar a governança das políticas públicas de ciência, tecnologia e inovação, com definição de prioridades estratégicas do estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      1011,
+      1012
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
    "subtema": "Formação e fixação de talentos",
-   "proposta": "Ampliar bolsas e programas de pós-graduação e criar linhas de fixação e atração de pesquisadores para que talentos permaneçam no Maranhão",
+   "proposta": "Ampliar bolsas, apoiar programas de pós-graduação no interior e criar linhas de fixação e atração de pesquisadores",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -578,21 +697,21 @@
      "blocos": [
       572
      ],
-     "nota": "Apoio a programas no interior e equidade de gênero"
+     "nota": "Inclui maranhenses formados fora e equidade de gênero"
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
       1110
      ],
-     "nota": "Fixação via oportunidades ligadas ao problema produtivo real"
+     "nota": "Fixação via ponte entre formação, pesquisa e problema produtivo"
     }
    }
   },
   {
-   "id": "p29",
+   "id": "p35",
    "subtema": "Formação e fixação de talentos",
-   "proposta": "Implantar programa de iniciação científica nas escolas estaduais, com formação de professores, feiras, olimpíadas e bolsas, priorizando o interior e escolas rurais",
+   "proposta": "Implantar iniciação científica nas escolas estaduais, com formação de professores, feiras, olimpíadas e bolsas, priorizando interior e escolas rurais",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -600,29 +719,14 @@
      "blocos": [
       570
      ],
-     "nota": ""
+     "nota": "Programa Jovem Cientista Maranhense"
     }
    }
   },
   {
-   "id": "p30",
-   "subtema": "Formação e fixação de talentos",
-   "proposta": "Promover formação local em cibersegurança, governança de dados e infraestrutura digital com universidades, IEMA e instituições parceiras",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1796
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Bioeconomia e propriedade intelectual",
-   "proposta": "Condicionar a bioeconomia à autorização legal de acesso (SisGen), ao consentimento das comunidades e à repartição de benefícios com quebradeiras, indígenas, quilombolas e extrativistas",
+   "id": "p36",
+   "subtema": "Bioeconomia e repartição de benefícios",
+   "proposta": "Condicionar projetos de bioeconomia à autorização legal de acesso (SisGen), ao consentimento das comunidades e à repartição de benefícios com quebradeiras, indígenas, quilombolas e extrativistas",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -631,61 +735,7 @@
       545,
       564
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Bioeconomia e propriedade intelectual",
-   "proposta": "Fortalecer os núcleos de inovação das universidades, com regras de titularidade e repartição e mecanismo sigiloso de aproximação entre pesquisadores e empresas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      561
-     ],
-     "nota": "Arena Bio como ponte, proteção antes da exposição"
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Integridade e transparência do fomento",
-   "proposta": "Adotar política de integridade científica e transparência plena do fomento, informando qual projeto recebeu, quanto, por que e o que produziu",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      552,
-      595
-     ],
-     "nota": "Inclui combate ao plágio, conflitos de interesse e proteção a denunciantes"
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Publicar o desempenho da conectividade por escola, priorizando o atendimento das escolas da zona rural",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      584,
-      586
-     ],
-     "nota": "Prioriza conectividade em escolas do interior e defende dados abertos, sem detalhar painel por escola."
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2308
-     ],
-     "nota": ""
+     "nota": "Exige agregação de valor dentro do estado"
     }
    }
   }
@@ -779,13 +829,13 @@
   },
   "governador-ma-eduardo-braide-100002545679": {},
   "governador-ma-felipe-camarao-100002542556": {
-   "166": {
-    "texto": "Maranhão do Conhecimento se propõe a levar ao interior produtivo. x\u0003 Participação e transparência. O Orçamento Participativo com escutas territoriais, o Portal da Transparência e o Fórum Interconselhos antecedem institucionalmente o Programa Maranhão Participativo e o Orçamento",
-    "pagina": 18
+   "147": {
+    "texto": "Maranhão do Conhecimento se propõe a levar ao interior produtivo.",
+    "pagina": 14
    },
-   "357": {
+   "313": {
     "texto": "(0,148), em um índice cuja média nacional é 0,296 e cujo líder, São Paulo, alcança 0,872. O ecossistema estadual concentra-se na capital e tem presença quase nula no interior produtivo. Enfrentar isso exige fortalecer o sistema estadual construído a partir de 2014 (UEMA, UEMASUL, IEMA, IFMA e FAPEMA) e territorializá-lo, em sintonia com a diretriz nacional de integrar ciência, tecnologia e inovação à política industrial e educacional e de corrigir as assimetrias regionais, garantindo ao Norte e ao Nordeste investimentos proporcionais ao seu potencial em bioeconomia e energias renováveis. É a inovação que permite às matrizes 1, 2 e 4 transformar conhecimento em riqueza no território.",
-    "pagina": 44
+    "pagina": 32
    }
   },
   "governador-ma-orleans-brandao-100002543869": {
@@ -829,10 +879,6 @@
    },
    "1105": {
     "texto": "A formação digital básica de jovens e adultos será vinculada à educação e à qualificação profissional. Conexão sem capacidade de uso não produz inclusão digital.",
-    "pagina": 72
-   },
-   "1106": {
-    "texto": "15.8 Juventude, inovação e empreendedorismo",
     "pagina": 72
    },
    "1107": {

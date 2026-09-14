@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "saude-ma.json",
-  "gerado_em": "2026-09-14T07:38:48Z",
-  "exportado_em": "2026-09-14T08:29:37Z"
+  "gerado_em": "2026-09-14T21:15:49Z",
+  "exportado_em": "2026-09-14T21:58:42Z"
  },
  "candidatos": [
   {
@@ -58,8 +58,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Construir novas unidades hospitalares públicas estaduais para ampliar a oferta de média e alta complexidade no interior",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Construir novos hospitais regionais ou macrorregionais para ampliar a oferta de média e alta complexidade no interior",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -71,29 +71,39 @@
       50,
       52
      ],
-     "nota": "Programa Hospital Novo, hospitais regionais e macrorregionais em todas as regiões"
+     "nota": "Programa Hospital Novo, em todas as regiões"
     },
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
       201,
+      220,
       231
      ],
-     "nota": ""
+     "nota": "Unidades nomeadas (Balsas, Hospital do Coração, maternidades)"
     },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
       751
      ],
-     "nota": "Apenas uma nova unidade, condicionada a estudo independente prévio"
+     "nota": "Só uma nova unidade, condicionada a estudo prévio"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "discorda",
+     "blocos": [
+      439,
+      1137,
+      1216
+     ],
+     "nota": "Diz que o desafio não é construir novos hospitais, e sim tornar a rede existente resolutiva"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Condicionar novas obras e equipamentos de saúde à definição prévia de custeio, equipe, manutenção, demanda e modelo de gestão",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Condicionar nova unidade hospitalar a estudo independente de demanda, localização técnica e modelo de gestão definidos antes da obra",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -107,48 +117,18 @@
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1178,
+      1207,
       1208,
       1209
      ],
-     "nota": ""
+     "nota": "Projetos completos com custeio, equipe e manutenção antes do financiamento"
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Ampliar especialidades e serviços nos hospitais macrorregionais já existentes em vez de apenas construir novas unidades",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      222,
-      223,
-      224,
-      227,
-      228,
-      229,
-      230
-     ],
-     "nota": "Baixada, Presidente Dutra, Caxias e Imperatriz nominalmente"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1152,
-      1153,
-      1156
-     ],
-     "nota": "Expansão guiada por demanda comprovada e fluxos reais"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Implantar um Hospital do Coração na rede estadual",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Implantar hospital estadual especializado em cardiologia (Hospital do Coração)",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -161,8 +141,8 @@
    }
   },
   {
-   "id": "p5",
-   "subtema": "Rede hospitalar regional",
+   "id": "p4",
+   "subtema": "Rede hospitalar e urgência",
    "proposta": "Implantar hospital de porta aberta para urgência e emergência de média e alta complexidade em Balsas",
    "n_concorda": 1,
    "posicoes": {
@@ -176,30 +156,64 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Implantar nova unidade estadual de urgência e emergência na Região Metropolitana",
+   "id": "p5",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Implantar novas maternidades de média e alta complexidade regionalizadas (Baixada, Caxias e região sul)",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
+    "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      751
+      220,
+      221,
+      226,
+      232
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Definir e publicar a carteira de serviços de cada hospital regional (especialidades, procedimentos e municípios atendidos)",
-   "n_concorda": 1,
+   "id": "p6",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Ampliar especialidades e serviços dos hospitais regionais e macrorregionais já existentes",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      222,
+      223,
+      224,
+      225,
+      227,
+      228,
+      230
+     ],
+     "nota": "Lista unidades e especialidades (ortopedia, neurocirurgia, cardiologia, radioterapia)"
+    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1152
+      1152,
+      1153,
+      1156
+     ],
+     "nota": "Expansão conforme demanda comprovada e carteira pública de serviços"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Criar rede de resposta rápida para infarto, AVC, sepse, trauma e emergência obstétrica com acionamento único e medição de cada etapa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      713,
+      747
      ],
      "nota": ""
     }
@@ -207,56 +221,67 @@
   },
   {
    "id": "p8",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Construir linha de base de origem-destino dos atendimentos para orientar a expansão da capacidade regional",
-   "n_concorda": 1,
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Implantar bases descentralizadas de ambulâncias e fortalecer a regulação das urgências (SAMU)",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      186
+     ],
+     "nota": ""
+    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1151,
-      1153
+      1183,
+      1186
      ],
-     "nota": ""
+     "nota": "Inclui planejamento do resgate aéreo integrado às referências"
     }
    }
   },
   {
    "id": "p9",
-   "subtema": "Rede hospitalar regional",
-   "proposta": "Montar carteira regional de projetos de investimento em infraestrutura de saúde preparada antes das janelas de financiamento",
-   "n_concorda": 1,
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Criar fila única estadual digital com painel público e consulta da própria posição pelo cidadão",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      711,
+      738,
+      753
+     ],
+     "nota": ""
+    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1206,
-      1207
+      1157,
+      1159,
+      1160,
+      1162,
+      2673
      ],
-     "nota": ""
+     "nota": "Publica tempo mediano e percentil 90 por região e procedimento"
     }
    }
   },
   {
    "id": "p10",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Ampliar a rede de atendimento especializado a pessoas com Transtorno do Espectro Autista",
-   "n_concorda": 2,
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Ordenar as filas por prioridade clínica e risco, com protocolos públicos e revisão de cadastros",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      53,
-      55,
-      57
-     ],
-     "nota": ""
-    },
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      195,
-      196
+      711,
+      738
      ],
      "nota": ""
     }
@@ -264,16 +289,15 @@
   },
   {
    "id": "p11",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Implantar espaços regionais de atendimento ao TEA e a neurodivergentes com suporte às famílias",
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Estabelecer prazos máximos de atendimento por prioridade clínica, com relógio assistencial que não reinicia nas transferências",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      53,
-      57,
-      59
+      712,
+      740
      ],
      "nota": ""
     }
@@ -281,88 +305,91 @@
   },
   {
    "id": "p12",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Expandir o diagnóstico precoce e o tratamento oncológico na rede pública estadual",
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Gerir a fila por capacidade e desfecho: validar indicação clínica, reduzir absenteísmo e reaproveitar vagas automaticamente",
    "n_concorda": 2,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      62,
-      66,
-      68
+      738,
+      749
      ],
      "nota": ""
     },
-    "governador-ma-orleans-brandao-100002543869": {
+    "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      190,
-      227,
-      228
+      1163,
+      1164,
+      1165,
+      1167
      ],
-     "nota": "Inclui radioterapia e oncologia pediátrica em Caxias e Imperatriz"
+     "nota": ""
     }
    }
   },
   {
    "id": "p13",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Construir hospitais especializados e centros regionais de câncer em parceria com o Hospital Aldenora Bello (Fundação Antônio Jorge Dino)",
-   "n_concorda": 1,
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Realizar mutirões e operações extraordinárias de redução da fila cirúrgica com metas e resultados publicados",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      62,
-      64,
-      66
+      749
      ],
-     "nota": ""
+     "nota": "Censo nominal da fila e ampliação de turnos só com equipe e retaguarda"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1166
+     ],
+     "nota": "Mutirão só após checar indicação e duplicidades"
     }
    }
   },
   {
    "id": "p14",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Implantar centros regionais de diagnóstico por imagem e laboratório, com fluxo digital do pedido ao laudo",
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Contratar capacidade complementar privada ou filantrópica para o SUS, com metas, auditoria e avaliação de vantajosidade",
    "n_concorda": 3,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      184
-     ],
-     "nota": "Lista de exames definida: tomografia, ressonância, endoscopia, entre outros"
-    },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
       744
      ],
-     "nota": "Laboratórios públicos fortalecidos e auditoria de pagamentos"
+     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1176,
-      1177,
-      1178
+      1166
      ],
-     "nota": "Instalação condicionada à capacidade de operação e manutenção"
+     "nota": ""
+    },
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      190
+     ],
+     "nota": "Parceria com a rede privada para oncologia"
     }
    }
   },
   {
    "id": "p15",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Ampliar a rede de policlínicas conforme diagnóstico socioterritorial",
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Implantar centrais macrorregionais de regulação vinculadas ao complexo regulador estadual",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      188
+      181
      ],
      "nota": ""
     }
@@ -370,14 +397,17 @@
   },
   {
    "id": "p16",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Instituir atenção especializada em oftalmologia na política estadual de saúde",
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Estruturar rede regional de transporte sanitário articulada à regulação, com compartilhamento de veículos entre municípios",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
+    "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      189
+      1165,
+      1180,
+      1182,
+      1187
      ],
      "nota": ""
     }
@@ -385,14 +415,14 @@
   },
   {
    "id": "p17",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Fortalecer a política estadual de transplantes de órgãos e tecidos",
+   "subtema": "Regulação, filas e acesso",
+   "proposta": "Criar plataforma estadual de acesso regulado a especialistas, com teleconsultoria e consulta de status pelo cidadão",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      199
+      742
      ],
      "nota": ""
     }
@@ -400,108 +430,9 @@
   },
   {
    "id": "p18",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Expandir os serviços de nefrologia na rede estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      200
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Implantar centros especializados de serviço vascular em hospitais regionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      202
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Fortalecer a rede de hemoterapia, com reestruturação física das agências transfusionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      203
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Implantar Centros Especializados em Reabilitação regionalizados, com dispensação de órteses, próteses e meios auxiliares de locomoção",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      205,
-      206
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Ampliar a atenção à saúde da pessoa idosa com serviços especializados e linha de cuidado regional",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      188
-     ],
-     "nota": "Nova unidade da Policlínica do Idoso"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2374
-     ],
-     "nota": "Linha de cuidado com reabilitação e doenças crônicas"
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Formar e contratar intérpretes de Libras para atuar nas unidades da rede estadual de saúde",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      179,
-      180
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
    "subtema": "Atenção primária e apoio aos municípios",
    "proposta": "Instituir estratégia estadual de fortalecimento da atenção primária em parceria com os municípios",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -515,30 +446,79 @@
      "blocos": [
       726
      ],
-     "nota": ""
+     "nota": "Inclui expansão faseada em vazios assistenciais e reforma de UBS"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1138
+     ],
+     "nota": "Atenção básica como primeiro elo da cadeia de resolutividade"
     }
    }
   },
   {
-   "id": "p25",
+   "id": "p19",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Criar cofinanciamento estadual permanente da Saúde da Família com critérios redistributivos e expansão nos vazios assistenciais",
+   "proposta": "Criar cofinanciamento estadual permanente da Saúde da Família com critérios redistributivos e vinculado a metas",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      726
+      726,
+      753
      ],
-     "nota": "Inclui reforma de UBS, exames básicos e teleconsultoria"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p26",
+   "id": "p20",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Garantir financiamento estadual de exames laboratoriais nas unidades de atenção primária municipais",
+   "proposta": "Simplificar e dar previsibilidade ao cofinanciamento estadual dos Agentes Comunitários de Saúde e de Combate às Endemias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      69,
+      71,
+      73,
+      75
+     ],
+     "nota": "Viabilizar o pagamento da gratificação aos agentes"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2464,
+      2466
+     ],
+     "nota": "Com metas de vacinação, pré-natal e vigilância"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Digitalizar o trabalho de campo dos agentes, integrando-os ao prontuário eletrônico e às filas nominais",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2465
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Garantir financiamento estadual de exames laboratoriais nas unidades de atenção primária dos municípios",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -546,67 +526,18 @@
       211
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Simplificar e dar previsibilidade ao cofinanciamento estadual aos municípios para agentes comunitários de saúde e agentes de combate às endemias",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
-     "posicao": "concorda",
-     "blocos": [
-      69,
-      73,
-      75
-     ],
-     "nota": ""
     },
-    "governador-ma-roberto-rocha-100002551399": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      2464
+      726
      ],
-     "nota": "Foco em previsibilidade e tempo de repasse"
+     "nota": "Exames básicos dentro do pacote de fortalecimento da APS"
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Viabilizar o pagamento da gratificação aos agentes comunitários de saúde e de combate às endemias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
-     "posicao": "concorda",
-     "blocos": [
-      69,
-      71
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Digitalizar o trabalho de campo dos agentes de saúde, com dispositivos integrados ao prontuário e às filas e metas de vacinação, pré-natal e vigilância",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2465,
-      2466
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
+   "id": "p23",
    "subtema": "Atenção primária e apoio aos municípios",
    "proposta": "Incentivar e apoiar consórcios intermunicipais de saúde para superar vazios assistenciais",
    "n_concorda": 1,
@@ -621,9 +552,9 @@
    }
   },
   {
-   "id": "p31",
+   "id": "p24",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Implantar equipamentos que reúnam saúde, educação, esporte e assistência social em pilotos avaliados antes de expandir",
+   "proposta": "Implantar equipamentos-piloto que reúnam saúde, educação, esporte e assistência social num só local",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -636,198 +567,9 @@
    }
   },
   {
-   "id": "p32",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Publicar painel público de filas e capacidade da rede, com dados por região e procedimento",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      738,
-      753
-     ],
-     "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1157,
-      1159,
-      2673
-     ],
-     "nota": "Fila única estadual digital integrada à regulação"
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Permitir que o paciente consulte sua posição ou situação na fila",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      711,
-      738
-     ],
-     "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1159,
-      1162
-     ],
-     "nota": "Consulta por identificação protegida, com LGPD"
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Ordenar as filas por prioridade clínica e risco, com protocolos públicos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      711,
-      738
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Estabelecer prazos máximos de atendimento com relógio assistencial que não reinicia nas transferências e obrigação de buscar alternativa antes do vencimento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      712,
-      740
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Revisar cadastros, confirmar presença ativamente e reaproveitar vagas para reduzir absenteísmo e depurar as filas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      738
-     ],
-     "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1164,
-      1165
-     ],
-     "nota": "Verificação de indicação clínica e duplicidades antes de mutirões"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Realizar operações extraordinárias e mutirões de redução da fila cirúrgica, com censo nominal e resultados publicados",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      749
-     ],
-     "nota": "Ampliação de turnos só onde houver equipe, UTI e pós-operatório seguros"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1166,
-      1167
-     ],
-     "nota": "Objetivo é corrigir o gargalo, não zerar fila temporariamente"
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Contratar capacidade complementar privada ou filantrópica para ampliar oferta, com metas e auditoria",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      190
-     ],
-     "nota": "Parceria com a rede privada para oncologia"
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      744
-     ],
-     "nota": "Credenciamento com metas, validação eletrônica e auditoria de pagamentos"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1166
-     ],
-     "nota": "Só quando vantajosa para o SUS, considerando custo e capacidade pública"
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Implantar centrais macrorregionais de regulação vinculadas ao Complexo Regulador Estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      181
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Regulação, filas e acesso",
-   "proposta": "Publicar tempo mediano e percentil 90 de espera como indicadores oficiais das filas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1160,
-      1161,
-      1211,
-      2335
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Saúde digital e telessaúde",
-   "proposta": "Implantar prontuário eletrônico do paciente na rede estadual e apoiar sua adoção pelas redes municipais",
+   "id": "p25",
+   "subtema": "Saúde digital",
+   "proposta": "Implantar prontuário eletrônico do paciente na rede estadual, com apoio à adoção pelos municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -844,30 +586,14 @@
       756,
       1006
      ],
-     "nota": ""
+     "nota": "Integrado à RNDS/SUS Digital, com logs e auditoria"
     }
    }
   },
   {
-   "id": "p42",
-   "subtema": "Saúde digital e telessaúde",
-   "proposta": "Integrar o prontuário eletrônico estadual à RNDS/SUS Digital, com linha do tempo clínica, controle de acesso, logs e auditoria",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      714,
-      756
-     ],
-     "nota": "Prevê atendimento assistido a quem não usa meios digitais"
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Saúde digital e telessaúde",
-   "proposta": "Implantar rede estadual de telessaúde e telemedicina para teleconsultoria, segunda opinião e acesso regulado a especialistas",
+   "id": "p26",
+   "subtema": "Saúde digital",
+   "proposta": "Implantar rede estadual de telessaúde/telemedicina para teleconsultoria, triagem e apoio a unidades do interior",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -880,9 +606,10 @@
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
+      726,
       742
      ],
-     "nota": "Plataforma com consulta de status pelo cidadão"
+     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -890,32 +617,17 @@
       1170,
       1171,
       1172,
-      1173
+      1173,
+      1174
      ],
-     "nota": "Não substitui o presencial; evita deslocamentos sem valor clínico"
+     "nota": "Sem substituir o presencial; foco em evitar deslocamentos"
     }
    }
   },
   {
-   "id": "p44",
-   "subtema": "Saúde digital e telessaúde",
-   "proposta": "Adotar telelaudo para que exames feitos no interior sejam analisados por especialistas de outros polos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1174,
-      1179
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Saúde digital e telessaúde",
-   "proposta": "Conectar as unidades de saúde à internet, usando a infraestrutura estadual de conectividade",
+   "id": "p27",
+   "subtema": "Saúde digital",
+   "proposta": "Conectar as unidades de saúde estaduais e municipais à internet como infraestrutura do cuidado",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -923,7 +635,7 @@
      "blocos": [
       176
      ],
-     "nota": "Inclui conexão das unidades com a Secretaria de Saúde"
+     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -931,14 +643,14 @@
       1139,
       1175
      ],
-     "nota": "Aproveita a infraestrutura do Maranhão Conectado"
+     "nota": "Usa a infraestrutura do Maranhão Conectado"
     }
    }
   },
   {
-   "id": "p46",
-   "subtema": "Saúde digital e telessaúde",
-   "proposta": "Implantar portal estadual de integração de dados em saúde",
+   "id": "p28",
+   "subtema": "Saúde digital",
+   "proposta": "Implantar portal/plataforma de integração dos dados da rede estadual de saúde",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -952,226 +664,56 @@
    }
   },
   {
-   "id": "p47",
-   "subtema": "Urgência e emergência",
-   "proposta": "Ampliar bases descentralizadas de ambulâncias e fortalecer as centrais de regulação de urgência",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      185,
-      186
-     ],
-     "nota": "Foco no SAMU 192"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1183
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Urgência e emergência",
-   "proposta": "Criar rede de resposta rápida para infarto, AVC, sepse, trauma e emergência obstétrica, com acionamento único e medição de cada etapa",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      713,
-      747
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Urgência e emergência",
-   "proposta": "Estruturar rede regional de transporte sanitário articulada à regulação, com compartilhamento de veículos entre municípios",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1180,
-      1181,
-      1182
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Urgência e emergência",
-   "proposta": "Planejar o resgate aéreo integrado às referências hospitalares para casos de distância e gravidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1183,
-      1186
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Urgência e emergência",
-   "proposta": "Implantar serviços de urgência em ortopedia, neurocirurgia e cardiologia em Timon e em Imperatriz",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      225,
-      230
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Fortalecer a vigilância em saúde no estado",
+   "id": "p29",
+   "subtema": "Diagnóstico e exames",
+   "proposta": "Implantar e fortalecer centrais regionais de diagnóstico por imagem e laboratório",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      208
+      184
      ],
-     "nota": ""
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      733,
-      1006
-     ],
-     "nota": ""
+     "nota": "Lista modalidades: tomografia, ressonância, mamografia, endoscopia etc."
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      766
+      1176,
+      1177,
+      1178
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Integrar os seis componentes da vigilância, fortalecer LACEN e CIEVS e executar estratégia anual de recuperação vacinal",
-   "n_concorda": 1,
-   "posicoes": {
+     "nota": "Equipamento só onde houver equipe, insumos e manutenção"
+    },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      733
+      744
      ],
-     "nota": ""
+     "nota": "Rede integrada com fluxo digital único do pedido ao laudo"
     }
    }
   },
   {
-   "id": "p54",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Estruturar a vigilância ambiental em parceria com Defesa Civil e Corpo de Bombeiros para monitoramento preventivo de desastres e resposta sanitária",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      208,
-      209
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Criar núcleo permanente de Uma Só Saúde articulando saúde humana, animal, ambiente, saneamento e agricultura, com planos para zoonoses e arboviroses",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      735
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Monitorar e tratar a qualidade da água em territórios prioritários, com divulgação acessível dos resultados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      728
-     ],
-     "nota": "Meta de reduzir doenças diarreicas em menores de 5 anos"
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Registrar e acompanhar casos de intoxicação e identificar territórios com recorrência",
+   "id": "p30",
+   "subtema": "Diagnóstico e exames",
+   "proposta": "Usar telelaudo para compartilhar capacidade especializada de laudo entre regiões",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      766
+      1174,
+      1179
      ],
-     "nota": "Vinculado à fiscalização do uso de agrotóxicos"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p58",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Reforçar o enfrentamento das endemias de tuberculose, hanseníase e outras doenças negligenciadas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      204
-     ],
-     "nota": "Inclui malária"
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      720,
-      761
-     ],
-     "nota": "Inclui sífilis"
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Construir macrolaboratórios centrais e regionais para exames rápidos de alta tecnologia no controle de surtos",
+   "id": "p31",
+   "subtema": "Diagnóstico e exames",
+   "proposta": "Construir macrolaboratórios central e regionais para exames rápidos de controle de endemias",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -1179,143 +721,217 @@
      "blocos": [
       204
      ],
-     "nota": ""
+     "nota": "Ênfase em hanseníase, tuberculose e malária"
     }
    }
   },
   {
-   "id": "p60",
-   "subtema": "Vigilância em saúde e endemias",
-   "proposta": "Medir as linhas de cuidado pela cura, com plano individual, tratamento acompanhado, busca ativa sigilosa e apoio social de transporte e alimentação",
+   "id": "p32",
+   "subtema": "Diagnóstico e exames",
+   "proposta": "Auditar pagamentos e validar eletronicamente a produção de exames contratada",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      720,
-      761
+      744
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p61",
-   "subtema": "Saúde materno-infantil",
-   "proposta": "Fortalecer o cuidado pré-natal, neonatal e da primeira infância de forma integrada entre atenção básica, maternidade e especializada",
-   "n_concorda": 3,
+   "id": "p33",
+   "subtema": "Atenção especializada",
+   "proposta": "Expandir o diagnóstico precoce e o tratamento oncológico na rede estadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      62,
+      64,
+      66,
+      68
+     ],
+     "nota": ""
+    },
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      190,
+      227,
+      228,
+      229
+     ],
+     "nota": "Radioterapia e oncologia pediátrica em Caxias; ampliação em Imperatriz"
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Atenção especializada",
+   "proposta": "Construir hospitais e centros regionais de câncer em parceria com o Hospital Aldenora Bello (Fundação Antônio Jorge Dino)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      62,
+      64,
+      66,
+      68
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Atenção especializada",
+   "proposta": "Ampliar o atendimento odontológico público na rede estadual",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      283
+      198
      ],
-     "nota": "Inclui puericultura, vacinação, nutrição e estimulação precoce até os 6 anos"
+     "nota": "Foco em alta complexidade e urgência odontológica"
     },
-    "governador-ma-andre-luis-100002544076": {
+    "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
      "blocos": [
-      759
+      135
      ],
      "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1188,
-      1189,
-      1190
-     ],
-     "nota": "Mortalidade infantil evitável como indicador transversal"
     }
    }
   },
   {
-   "id": "p62",
-   "subtema": "Saúde materno-infantil",
-   "proposta": "Criar referência estadual para gestação de alto risco articulada às regiões e à atenção primária",
+   "id": "p36",
+   "subtema": "Atenção especializada",
+   "proposta": "Garantir atendimento odontológico gratuito em todos os municípios, fixo ou por unidade móvel, da prevenção à prótese",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
+    "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
      "blocos": [
-      759
+      135
      ],
-     "nota": "Com teleapoio, regulação e plano de cuidado compartilhado"
+     "nota": "Expansão do programa Sorrir a todas as cidades"
     }
    }
   },
   {
-   "id": "p63",
-   "subtema": "Saúde materno-infantil",
-   "proposta": "Implantar novas maternidades de média e alta complexidade no interior do estado",
+   "id": "p37",
+   "subtema": "Atenção especializada",
+   "proposta": "Instituir atenção especializada em oftalmologia na política estadual de saúde",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      220,
-      221,
-      226,
-      232
-     ],
-     "nota": "Baixada, Caxias e região sul"
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Saúde materno-infantil",
-   "proposta": "Fazer busca ativa de gestantes e crianças com atraso vacinal, consultas incompletas ou risco nutricional",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1190,
-      2359
-     ],
-     "nota": "Gestante deve conhecer antecipadamente sua maternidade de referência"
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Saúde materno-infantil",
-   "proposta": "Instalar comitês de investigação de óbito infantil nas regionais de saúde, com publicação periódica dos achados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1191,
-      1192
+      189
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p66",
-   "subtema": "Saúde materno-infantil",
-   "proposta": "Reduzir a mortalidade infantil para menos de 13 óbitos por mil nascidos vivos até 2030",
+   "id": "p38",
+   "subtema": "Atenção especializada",
+   "proposta": "Expandir a rede de serviços de nefrologia",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
+    "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      2242,
-      2243,
-      2250
+      200
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p67",
+   "id": "p39",
+   "subtema": "Atenção especializada",
+   "proposta": "Implantar centros especializados de serviço vascular em hospitais regionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      202
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Atenção especializada",
+   "proposta": "Fortalecer a política estadual de transplantes de órgãos e tecidos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      199
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Atenção especializada",
+   "proposta": "Fortalecer a rede de hemoterapia, com reestruturação física das agências transfusionais e modernização da gestão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Atenção especializada",
+   "proposta": "Ampliar a rede de policlínicas conforme diagnóstico socioterritorial, incluindo nova Policlínica do Idoso",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Atenção especializada",
+   "proposta": "Estruturar linha de cuidado regional da pessoa idosa, com atenção primária, reabilitação e acompanhamento de doenças crônicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2374
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
    "subtema": "Assistência farmacêutica",
-   "proposta": "Ampliar e facilitar o acesso da população a medicamentos especializados fornecidos pelo Estado",
+   "proposta": "Ampliar e facilitar o acesso da população aos medicamentos especializados fornecidos pelo Estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -1329,7 +945,8 @@
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
-      182
+      182,
+      183
      ],
      "nota": ""
     },
@@ -1343,7 +960,7 @@
    }
   },
   {
-   "id": "p68",
+   "id": "p45",
    "subtema": "Assistência farmacêutica",
    "proposta": "Implantar unidades regionais de assistência farmacêutica especializada",
    "n_concorda": 1,
@@ -1359,9 +976,9 @@
    }
   },
   {
-   "id": "p69",
+   "id": "p46",
    "subtema": "Assistência farmacêutica",
-   "proposta": "Criar painel público de desabastecimento de medicamentos por unidade e limitar o ressarcimento a casos excepcionais e auditados",
+   "proposta": "Publicar painel de desabastecimento de medicamentos por unidade e auditar ressarcimentos",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1374,9 +991,9 @@
    }
   },
   {
-   "id": "p70",
+   "id": "p47",
    "subtema": "Assistência farmacêutica",
-   "proposta": "Instituir protocolo estadual para produtos à base de canabidiol regularizados, com prescrição especializada e farmacovigilância",
+   "proposta": "Criar protocolo estadual para produtos à base de canabidiol regularizados, com prescrição especializada e farmacovigilância",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1384,37 +1001,223 @@
      "blocos": [
       769
      ],
-     "nota": "Com comparativo público entre custo e judicialização"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p71",
-   "subtema": "Regionalização e gestão do SUS estadual",
-   "proposta": "Organizar as regiões de saúde como redes integradas capazes de resolver a demanda de média complexidade na própria região",
+   "id": "p48",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Fortalecer e integrar a vigilância em saúde, incluindo laboratório central e resposta a emergências",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
+      733,
+      1006
+     ],
+     "nota": "Integra os seis componentes, LACEN e CIEVS"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      766
+     ],
+     "nota": "Foco em registro de intoxicações e territórios de recorrência"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Executar estratégia de recuperação vacinal com busca ativa de crianças e gestantes",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      733
+     ],
+     "nota": ""
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2359
+     ],
+     "nota": ""
+    },
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      283
+     ],
+     "nota": "Vacinação dentro da política de primeira infância"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Estruturar a vigilância ambiental articulada com outras políticas para prevenção de riscos e doenças associadas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      208,
+      209
+     ],
+     "nota": "Parceria com Defesa Civil e Corpo de Bombeiros para desastres"
+    },
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      735
+     ],
+     "nota": "Núcleo Uma Só Saúde com zoonoses e arboviroses"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Monitorar e tratar a qualidade da água em territórios prioritários, com divulgação acessível dos resultados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      728
+     ],
+     "nota": "Meta de reduzir diarreia em menores de 5 anos"
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Reorientar as linhas de cuidado de tuberculose, hanseníase e sífilis para a cura, com plano individual, busca ativa e apoio social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      720,
+      761
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Materno-infantil e primeira infância",
+   "proposta": "Ampliar o acompanhamento pré-natal e o cuidado à primeira infância com busca ativa de gestantes e crianças",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      283
+     ],
+     "nota": "Puericultura, nutrição e estimulação precoce até os 6 anos"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1189,
+      1190,
+      2359
+     ],
+     "nota": "Gestante deve conhecer antes sua maternidade de referência"
+    },
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      759
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Materno-infantil e primeira infância",
+   "proposta": "Criar referência estadual para gestação de alto risco articulada às regiões e à atenção primária",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      759
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Materno-infantil e primeira infância",
+   "proposta": "Instalar comitês regionais de investigação de óbito infantil com publicação periódica dos achados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1191,
+      1192
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Materno-infantil e primeira infância",
+   "proposta": "Fixar meta de redução da mortalidade infantil para menos de 13 óbitos por mil nascidos vivos até 2030",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2242,
+      2243,
+      2250
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Governança e planejamento regional",
+   "proposta": "Organizar as regiões de saúde como redes integradas, com equipe executiva regional e cofinanciamento vinculado a metas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      705,
       753
      ],
-     "nota": "Equipe executiva regional e cofinanciamento vinculado a metas nas 19 regiões"
+     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
       374,
-      1138,
-      1150
+      1151,
+      1152
      ],
-     "nota": "Cadeia de resolutividade da atenção básica ao hospital regional"
+     "nota": "Regionalização a partir de fluxos origem–destino dos pacientes"
     }
    }
   },
   {
-   "id": "p72",
-   "subtema": "Regionalização e gestão do SUS estadual",
+   "id": "p58",
+   "subtema": "Governança e planejamento regional",
    "proposta": "Elaborar e implementar plano integrado estadual de assistência à saúde em parceria com os municípios",
    "n_concorda": 1,
    "posicoes": {
@@ -1428,9 +1231,9 @@
    }
   },
   {
-   "id": "p73",
-   "subtema": "Regionalização e gestão do SUS estadual",
-   "proposta": "Adotar gestão por resultados na saúde com indicadores de resolutividade regional, espera e deslocamentos evitáveis publicados",
+   "id": "p59",
+   "subtema": "Governança e planejamento regional",
+   "proposta": "Monitorar a política de saúde por indicadores de resolutividade regional, tempo de espera e deslocamentos evitados",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -1447,29 +1250,15 @@
    }
   },
   {
-   "id": "p74",
-   "subtema": "Regionalização e gestão do SUS estadual",
-   "proposta": "Selecionar dirigentes de unidades de saúde por competência técnica, com plano de gestão, contrato de metas e avaliação periódica",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      774
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p75",
-   "subtema": "Regionalização e gestão do SUS estadual",
-   "proposta": "Incorporar os novos polos econômicos e industriais ao planejamento da rede de saúde, antecipando demanda futura",
+   "id": "p60",
+   "subtema": "Governança e planejamento regional",
+   "proposta": "Incorporar os novos polos industriais e logísticos ao planejamento da expansão da rede de saúde",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
+      1139,
       1201,
       1202,
       1203,
@@ -1480,10 +1269,10 @@
    }
   },
   {
-   "id": "p76",
-   "subtema": "Regionalização e gestão do SUS estadual",
-   "proposta": "Realizar diagnóstico inicial da rede assistencial, das filas, da capacidade hospitalar, da assistência farmacêutica e da força de trabalho",
-   "n_concorda": 1,
+   "id": "p61",
+   "subtema": "Governança e planejamento regional",
+   "proposta": "Realizar diagnóstico inicial da rede assistencial, das filas, da capacidade hospitalar e da força de trabalho no início do governo",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1492,13 +1281,22 @@
       1006
      ],
      "nota": ""
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1151,
+      2670,
+      2671
+     ],
+     "nota": "Linha de base em 2027, com dados a confirmar em fonte primária"
     }
    }
   },
   {
-   "id": "p77",
+   "id": "p62",
    "subtema": "Saúde mental",
-   "proposta": "Implantar e qualificar CAPS, regionalizando e fortalecendo a Rede de Atenção Psicossocial",
+   "proposta": "Implantar e qualificar CAPS, regionalizando a Rede de Atenção Psicossocial",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -1506,7 +1304,7 @@
      "blocos": [
       207
      ],
-     "nota": "Integração com as redes estaduais de educação e assistência social"
+     "nota": "Integração com educação e assistência social"
     },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1514,14 +1312,14 @@
       765,
       766
      ],
-     "nota": "Inclui CAPS AD e infantojuvenil"
+     "nota": "Inclui CAPS AD e infantojuvenil e apoio matricial à APS"
     }
    }
   },
   {
-   "id": "p78",
+   "id": "p63",
    "subtema": "Saúde mental",
-   "proposta": "Garantir leitos de saúde mental em hospitais gerais, apoio matricial à atenção primária e programa estadual de prevenção do suicídio",
+   "proposta": "Criar leitos de saúde mental em hospitais gerais e programa estadual de prevenção do suicídio",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1534,7 +1332,7 @@
    }
   },
   {
-   "id": "p79",
+   "id": "p64",
    "subtema": "Saúde mental",
    "proposta": "Instalar ambulatórios regionais de saúde mental e de atendimento especializado a vítimas de violência",
    "n_concorda": 1,
@@ -1549,9 +1347,67 @@
    }
   },
   {
-   "id": "p80",
+   "id": "p65",
+   "subtema": "Pessoa com deficiência e TEA",
+   "proposta": "Ampliar a rede de atendimento especializado a pessoas com Transtorno do Espectro Autista",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      53,
+      55,
+      57,
+      59
+     ],
+     "nota": "Espaços TEA regionais com suporte às famílias"
+    },
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      195,
+      196
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Pessoa com deficiência e TEA",
+   "proposta": "Implantar novos Centros Especializados em Reabilitação regionalizados, com dispensação de órteses e próteses",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      205,
+      206
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Pessoa com deficiência e TEA",
+   "proposta": "Formar e contratar intérpretes de Libras para atuar nas unidades da rede estadual de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      179,
+      180
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
    "subtema": "Força de trabalho em saúde",
-   "proposta": "Instituir política de fixação de médicos e profissionais de saúde no interior, com incentivos proporcionais à dificuldade de provimento",
+   "proposta": "Criar política de fixação de médicos e demais profissionais no interior, com incentivos proporcionais à dificuldade de provimento",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1566,16 +1422,17 @@
      "blocos": [
       1144,
       1145,
+      1146,
       1149
      ],
-     "nota": "Avaliada pela redução da diferença capital-interior"
+     "nota": "Carreira estadual, remuneração diferenciada, moradia e transporte"
     }
    }
   },
   {
-   "id": "p81",
+   "id": "p69",
    "subtema": "Força de trabalho em saúde",
-   "proposta": "Ampliar residências e a formação de profissionais de saúde em polos regionais do estado",
+   "proposta": "Ampliar residências e a formação de profissionais de saúde em polos regionais do Estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1596,39 +1453,9 @@
    }
   },
   {
-   "id": "p82",
+   "id": "p70",
    "subtema": "Força de trabalho em saúde",
-   "proposta": "Criar carreira estadual própria com remuneração diferenciada por localização e apoio a moradia e transporte",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1146
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p83",
-   "subtema": "Força de trabalho em saúde",
-   "proposta": "Dimensionar a força de trabalho e criar plataforma transparente de plantões e valores, com saúde ocupacional",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      776
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p84",
-   "subtema": "Força de trabalho em saúde",
-   "proposta": "Elevar a proporção de médicos para pelo menos 1,60 por mil habitantes até 2030",
+   "proposta": "Fixar meta de elevar a proporção de médicos para pelo menos 1,60 por mil habitantes até 2030",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -1642,64 +1469,42 @@
    }
   },
   {
-   "id": "p85",
-   "subtema": "Saúde bucal",
-   "proposta": "Ampliar o acesso da população ao atendimento odontológico público e gratuito",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      198
-     ],
-     "nota": ""
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      159,
-      160
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p86",
-   "subtema": "Saúde bucal",
-   "proposta": "Garantir atendimento odontológico gratuito em todos os municípios, por unidade fixa ou móvel, da prevenção à prótese",
+   "id": "p71",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Dimensionar a força de trabalho e criar plataforma transparente de plantões e valores",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-felipe-camarao-100002542556": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      159,
-      160
+      719,
+      776
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p87",
-   "subtema": "Saúde bucal",
-   "proposta": "Ampliar a rede estadual de odontologia de alta complexidade, incluindo urgência e emergência",
+   "id": "p72",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Selecionar dirigentes de unidades de saúde por competência técnica, com plano de gestão, contrato de metas e avaliação periódica",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
+    "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
-      198
+      121,
+      774
      ],
-     "nota": ""
+     "nota": "Contrapõe-se ao loteamento político e à terceirização atual"
     }
    }
   },
   {
-   "id": "p88",
-   "subtema": "Povos indígenas e comunidades tradicionais",
-   "proposta": "Estruturar atenção à saúde específica para comunidades ribeirinhas, quilombolas, indígenas e demais povos tradicionais",
-   "n_concorda": 2,
+   "id": "p73",
+   "subtema": "Populações e territórios específicos",
+   "proposta": "Implantar assistência de saúde itinerante com unidades móveis fluviais e terrestres para comunidades ribeirinhas e quilombolas",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -1708,7 +1513,15 @@
       219
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Populações e territórios específicos",
+   "proposta": "Estruturar atenção específica a povos indígenas e comunidades tradicionais, articulada ao subsistema de saúde indígena e construída com as lideranças",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1717,29 +1530,13 @@
       1196,
       1197
      ],
-     "nota": "Articulação com o subsistema de saúde indígena e diálogo com lideranças"
-    }
-   }
-  },
-  {
-   "id": "p89",
-   "subtema": "Povos indígenas e comunidades tradicionais",
-   "proposta": "Implantar programa de assistência itinerante com unidades móveis fluviais e terrestres",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      218,
-      219
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p90",
-   "subtema": "Povos indígenas e comunidades tradicionais",
+   "id": "p75",
+   "subtema": "Populações e territórios específicos",
    "proposta": "Publicar indicadores de saúde desagregados por território e população prioritária",
    "n_concorda": 1,
    "posicoes": {
@@ -1753,15 +1550,98 @@
    }
   },
   {
-   "id": "p91",
-   "subtema": "Urgência e emergência",
-   "proposta": "Tratar a melhoria de rodovias e pontes como política de saúde, priorizando obras que reduzam o tempo de deslocamento entre comunidades e hospitais de referência",
+   "id": "p76",
+   "subtema": "Populações e territórios específicos",
+   "proposta": "Priorizar a expansão da capacidade de saúde em territórios com maior deslocamento de pacientes (Baixada, litoral ocidental, pré-Amazônia e pequenos municípios)",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
-      1187
+      1140,
+      1153
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Governança e planejamento regional",
+   "proposta": "Estruturar polos regionais de saúde capazes de resolver localmente os casos, reduzindo encaminhamentos à capital",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      44,
+      46,
+      48,
+      50,
+      52,
+      66
+     ],
+     "nota": "Hospitais regionais/macrorregionais e centros regionais para reduzir deslocamento de pacientes"
+    },
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      184,
+      188,
+      205,
+      206,
+      212,
+      222,
+      223,
+      224,
+      227,
+      231
+     ],
+     "nota": "Regionalização de diagnóstico, policlínicas, CER e ampliação de hospitais macrorregionais"
+    },
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      702,
+      752,
+      753
+     ],
+     "nota": "19 regiões de saúde como redes integradas que resolvem, com equipe executiva regional"
+    },
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1150
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Materno-infantil e primeira infância",
+   "proposta": "Adotar a mortalidade infantil evitável como indicador prioritário de monitoramento das ações de primeira infância",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1188
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Governança e planejamento regional",
+   "proposta": "Criar uma Fábrica de Projetos para estruturar e viabilizar projetos de infraestrutura de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1206
      ],
      "nota": ""
     }
@@ -1770,6 +1650,18 @@
  ],
  "blocos": {
   "governador-ma-andre-luis-100002544076": {
+   "121": {
+    "texto": "Terceirização da saúde: Organizações Sociais e empresas gerenciam UPAs e hospitais regionais, servindo como duto para desvio de verbas e inchaço de folhas de pagamento com parentes de políticos.",
+    "pagina": 5
+   },
+   "702": {
+    "texto": "Atenção primária forte, fila por prioridade clínica e 19 regiões de saúde que efetivamente resolvem. 9 eixos · 22 propostas.",
+    "pagina": 34
+   },
+   "705": {
+    "texto": "Regiões de Saúde organizam o SUS estadu‐ al — hoje sem equipe executiva regional nem painel público de filas e capacidade",
+    "pagina": 34
+   },
    "711": {
     "texto": "Na fila, quem mais precisa, primeiro fila por prioridade clínica e risco, com protocolos públicos e informação da posição ao paciente",
     "pagina": 34
@@ -1784,6 +1676,10 @@
    },
    "714": {
     "texto": "Meu Prontuário, Minha História prontuário eletrônico estadual integrado à RNDS/SUS Digital, com controle de acesso, logs e auditoria",
+    "pagina": 34
+   },
+   "719": {
+    "texto": "Somam-se a isso a gestão de unidades sem critério técnico — historicamente uma porta de entrada para o loteamento político — e a ausência de dimensionamento da força de trabalho, com plantões sem transparência de valores e sem política de fixação no interior.",
     "pagina": 34
    },
    "720": {
@@ -1836,6 +1732,10 @@
    },
    "751": {
     "texto": "Hospital do Povo Maranhense Nova unidade estadual de urgência e emergência na Região Metropolitana, condiciona‐ da a estudo independente de demanda, localização técnica e modelo de gestão definido antes da obra.",
+    "pagina": 35
+   },
+   "752": {
+    "texto": "P13",
     "pagina": 35
    },
    "753": {
@@ -1966,13 +1866,9 @@
    }
   },
   "governador-ma-felipe-camarao-100002542556": {
-   "159": {
-    "texto": "nacional em saúde bucal pública e gratuita, com o próprio governo anunciando que seria levado a todas as cidades. A nova etapa assume esse compromisso e garante a cada",
-    "pagina": 16
-   },
-   "160": {
-    "texto": "PXQLFtSLR\u0003DWHQGLPHQWR\u0003RGRQWROyJLFR\u0003JUDWXLWR\u0003SHOR\u0003686\u000f\u0003¿[R\u0003RX\u0003SRU\u0003XQLGDGH\u0003 móvel, da prevenção à prótese. x\u0003 Programa Mais Segurança. Apoiado na experiência do Pacto pela Paz, o Mais Segurança cria apoio estadual estruturado para que todas as cidades",
-    "pagina": 16
+   "135": {
+    "texto": "Sorrir em todo o Maranhão (dentista de graça para todos). O Sorrir nasceu nos governos de Flávio Dino e virou referência nacional em saúde bucal pública e gratuita, com o próprio governo anunciando que seria levado a todas as cidades. A nova etapa assume esse compromisso e garante a cada município atendimento odontológico gratuito pelo SUS, ﬁxo ou por unidade móvel, da prevenção à prótese.",
+    "pagina": 13
    }
   },
   "governador-ma-orleans-brandao-100002543869": {
@@ -2186,6 +2082,10 @@
     "texto": "Maior parte da demanda de média complexidade resolvida na própria região.",
     "pagina": 17
    },
+   "439": {
+    "texto": "Regionalização da saúde medida apenas por novas unidades",
+    "pagina": 20
+   },
    "440": {
     "texto": "Resolutividade regional, fila, distância percorrida e tempo de espera (Seção 16).",
     "pagina": 20
@@ -2194,12 +2094,20 @@
     "texto": "A vigilância em saúde será fortalecida para registro e acompanhamento dos casos de intoxicação e identificação de territórios com recorrência. Regra clara e fiscalização previsível protegem simultaneamente quem mora, quem trabalha e quem produz dentro da legislação.",
     "pagina": 46
    },
+   "1137": {
+    "texto": "O Maranhão dispõe de uma rede regional de hospitais, mas prédio não é atendimento. O desafio não é construir indiscriminadamente novos hospitais, e sim fazer a rede existente resolver mais perto de onde as pessoas vivem. Um hospital regional sem especialistas, diagnóstico ou conexão eficiente com a atenção básica não elimina a viagem do paciente: apenas acrescenta uma etapa ao percurso.",
+    "pagina": 75
+   },
    "1138": {
     "texto": "A estratégia seguirá uma cadeia de resolutividade: atenção básica, diagnóstico, especialista, hospital regional e alta com acompanhamento, utilizando telemedicina, conectividade e transporte sanitário para reduzir as distâncias entre esses níveis.",
     "pagina": 75
    },
    "1139": {
     "texto": "A integração com o Maranhão Conectado e com os polos estruturantes do desenvolvimento permitirá utilizar parte da mesma infraestrutura territorial de energia, conectividade e serviços que sustenta a Rede Maranhense de ZPEs para fortalecer a rede de saúde. Desenvolvimento regional significa também fazer com que a expansão da infraestrutura econômica seja acompanhada pela expansão da capacidade de atendimento às pessoas.",
+    "pagina": 75
+   },
+   "1140": {
+    "texto": "Territórios prioritários: Toda a Baixada Maranhense, litoral ocidental, préAmazônia e municípios de pequeno porte do centro do Estado, onde parcela significativa da população precisa deslocar-se para outro município em busca de atendimento. Entre os povos indígenas, a mortalidade infantil chega ao dobro da média estadual, com atenção especial para Barra do Corda, Grajaú, Jenipapo dos Vieiras, Fernando Falcão, Amarante do Maranhão, Arame e Itaipava do Grajaú. O problema central nesses territórios é a combinação de",
     "pagina": 75
    },
    "1144": {
@@ -2258,12 +2166,12 @@
     "texto": "O painel apresentará tempo mediano e percentil 90 de espera. A média isolada pode esconder pacientes que aguardam excessivamente; o percentil",
     "pagina": 77
    },
-   "1161": {
-    "texto": "90 permitirá visualizar também a situação daqueles submetidos às esperas mais longas.",
-    "pagina": 77
-   },
    "1162": {
     "texto": "A fila deverá conversar com o Balcão Único e com a infraestrutura do Maranhão Conectado, preservadas as exigências de sigilo, segurança da informação e LGPD.",
+    "pagina": 77
+   },
+   "1163": {
+    "texto": "16.4 Gestão da fila por capacidade e desfecho",
     "pagina": 77
    },
    "1164": {
@@ -2324,10 +2232,6 @@
    },
    "1180": {
     "texto": "16.7 Transporte sanitário e urgência como rede regional",
-    "pagina": 78
-   },
-   "1181": {
-    "texto": "Enquanto a oferta especializada permanecer distribuída entre diferentes polos, transporte sanitário continuará sendo parte do acesso à saúde.",
     "pagina": 78
    },
    "1182": {
@@ -2430,6 +2334,10 @@
     "texto": "O indicador territorial mais intuitivo será a distância evitada para cuidar da saúde: quantas viagens e quilômetros deixaram de ser necessários porque o diagnóstico, especialista ou tratamento passou a estar disponível mais perto do paciente.",
     "pagina": 81
    },
+   "1216": {
+    "texto": "Com apenas 1,27 médico por mil habitantes, grande desigualdade entre capital e interior e mortalidade infantil ainda acima da média nacional, o problema não será resolvido apenas com novas edificações. É necessário fazer profissionais, equipamentos e informações circularem de forma inteligente pela rede.",
+    "pagina": 81
+   },
    "2238": {
     "texto": "Pelo menos 1,60",
     "pagina": 147
@@ -2473,6 +2381,14 @@
    "2466": {
     "texto": "Metas relacionadas a vacinação, pré-natal, vigilância e prevenção, sem substituir direitos remuneratórios definidos em lei.",
     "pagina": 158
+   },
+   "2670": {
+    "texto": "Taxa de mortalidade infantil de 2024 e 2025, a confirmar junto ao DATASUS.",
+    "pagina": 171
+   },
+   "2671": {
+    "texto": "Ampliação de leitos de UTI e hospitais regionais em operação, a confirmar em fonte primária.",
+    "pagina": 171
    },
    "2673": {
     "texto": "Tamanho da fila estadual de cirurgia eletiva e de consulta especializada, por procedimento e por região.",
