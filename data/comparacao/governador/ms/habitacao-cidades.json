@@ -1,0 +1,807 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "MS",
+ "pagina": "habitacao-cidades",
+ "nome": "Habitação e cidades",
+ "titulo": "Habitação e cidades: o que cada candidato propõe",
+ "temas": [
+  "moradia_cidades"
+ ],
+ "origem": {
+  "arquivo": "habitacao-cidades-ms.json",
+  "gerado_em": "2026-09-14T11:49:43Z",
+  "exportado_em": "2026-09-14T12:41:08Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-ms-delcidio-amaral-120002552155",
+   "nome": "Delcidio Amaral",
+   "partido": "PRD",
+   "numero": "25",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017126668",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552155/MS"
+  },
+  {
+   "slug": "governador-ms-economista-renato-gomes-120002549681",
+   "nome": "Economista Renato Gomes",
+   "partido": "DC",
+   "numero": "27",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017089795",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002549681/MS"
+  },
+  {
+   "slug": "governador-ms-eduardo-riedel-120002536582",
+   "nome": "Eduardo Riedel",
+   "partido": "PP",
+   "numero": "11",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016868872",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002536582/MS"
+  },
+  {
+   "slug": "governador-ms-fabio-trad-120002539834",
+   "nome": "Fábio Trad",
+   "partido": "PT",
+   "numero": "13",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016993257",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002539834/MS"
+  },
+  {
+   "slug": "governador-ms-joao-henrique-catan-120002552191",
+   "nome": "João Henrique Catan",
+   "partido": "NOVO",
+   "numero": "30",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017115315",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552191/MS"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Produção de moradia",
+   "proposta": "Ampliar em escala a produção de unidades habitacionais para reduzir o déficit de moradia no estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      9,
+      576,
+      578
+     ],
+     "nota": "Amplia simultaneamente construção, aquisição subsidiada, lote urbanizado e troca de moradia precária"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      408
+     ],
+     "nota": "Ampliar investimento em habitação até 2030"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      878,
+      881
+     ],
+     "nota": "Prefere mix de instrumentos ao invés de só casa nova"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Produção de moradia",
+   "proposta": "Fixar meta de cerca de 30 mil famílias atendidas com moradia no mandato",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      9,
+      577
+     ],
+     "nota": "30 mil moradias até o fim do segundo ano de governo"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      878,
+      881,
+      1494
+     ],
+     "nota": "30-35 mil famílias em 4 anos, cerca de metade do déficit"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Produção de moradia",
+   "proposta": "Ampliar o programa de lote urbanizado com autoconstrução assistida",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      578
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      896,
+      899,
+      901,
+      1469
+     ],
+     "nota": "Aporte de ~R$20 mil por família, lote e infra pelo município; principal via no interior"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Produção de moradia",
+   "proposta": "Manter e ampliar o subsídio estadual do tipo Bônus Moradia como complemento ao programa federal de habitação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      408
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      904,
+      907,
+      909,
+      910
+     ],
+     "nota": "Subsídio de R$25-32 mil por família, prioridade à Faixa 1"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Produção de moradia",
+   "proposta": "Criar novo programa estadual de habitação voltado exclusivamente à população de baixa renda",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      408
+     ],
+     "nota": "Programa MS Moradia"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Produção de moradia",
+   "proposta": "Priorizar famílias de baixa renda, vulneráveis e territórios com maior déficit no atendimento habitacional",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      907
+     ],
+     "nota": "Prioridade à Faixa 1 do programa federal"
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      567
+     ],
+     "nota": "Prioriza localidades com maior déficit social e habitacional"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Produção de moradia",
+   "proposta": "Exigir padrões de sustentabilidade nas novas unidades habitacionais (conforto térmico, eficiência energética, economia de água e energia renovável)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      582
+     ],
+     "nota": "Programa Casa Sustentável MS"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Produção de moradia",
+   "proposta": "Direcionar os programas habitacionais às regiões impactadas por grandes investimentos produtivos, antecipando a demanda por moradia",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": "Foco em evitar pressão sobre aluguel e expansão desordenada"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Produção de moradia",
+   "proposta": "Prever contribuição de empreendimentos beneficiados por incentivos fiscais ao programa habitacional, com moradias, terrenos, infraestrutura ou aportes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Usar recursos estaduais em subsídios, terrenos e contrapartidas para alavancar recursos federais, FGTS e privados na habitação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      577,
+      579
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      883,
+      909,
+      1489,
+      1490,
+      1491
+     ],
+     "nota": "Cada R$25-32 mil estaduais mobilizam ~R$55 mil federais mais FGTS"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Fortalecer parcerias com a União e com os municípios para viabilizar projetos habitacionais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      408
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      577
+     ],
+     "nota": "Combina programas federais e contrapartidas municipais"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      889,
+      918,
+      1500,
+      1501
+     ],
+     "nota": "Cooperação com os 79 municípios e cofinanciamento do Novo PAC"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Garantir que o fundo estadual de habitação de interesse social seja aplicado exclusivamente em habitação, com transparência, auditoria e execução vinculada a metas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      921,
+      924,
+      925,
+      1169
+     ],
+     "nota": "Reage a R$17,5 mi transferidos do fundo ao Tesouro"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Publicar acompanhamento por município das moradias contratadas, em construção e entregues e dos recursos mobilizados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      584
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Definir aporte estadual de R$0,8 a 1,2 bilhão em habitação em quatro anos, com execução faseada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      883,
+      1478,
+      1496
+     ],
+     "nota": "Cerca de metade cofinanciada pela União"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Integrar o cadastro habitacional estadual ao programa federal de habitação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      1469,
+      1470
+     ],
+     "nota": "Cadastro Habix integrado ao MCMV no ano 1"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Vincular a política habitacional a indicadores anuais de atendimento (famílias atendidas, títulos e subsídios por ano)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      882,
+      890,
+      900,
+      908
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Planejamento urbano",
+   "proposta": "Integrar a política habitacional ao planejamento urbano e à infraestrutura dos municípios, com moradia bem localizada e acesso a serviços",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      567,
+      568,
+      583
+     ],
+     "nota": "Exige acesso a saneamento, transporte, escola, saúde e internet"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Planejamento urbano",
+   "proposta": "Apoiar os municípios na elaboração e atualização de instrumentos de planejamento urbano",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Planejamento urbano",
+   "proposta": "Promover cidades mais acessíveis, sustentáveis, inteligentes e resilientes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Regularização fundiária",
+   "proposta": "Executar frentes de regularização fundiária urbana para dar título e segurança jurídica às famílias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": "Diversas frentes até 2030"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      885,
+      1168
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Regularização fundiária",
+   "proposta": "Escalar a REURB-S em massa em cooperação com os 79 municípios, com meta de dezenas de milhares de títulos a baixo custo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      889,
+      891,
+      892,
+      1469
+     ],
+     "nota": "40 mil títulos a ~R$1,7 mil cada, como ação de 100 dias"
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Infraestrutura e qualificação urbana",
+   "proposta": "Executar pacotes urbanos integrados com pavimentação, drenagem, sinalização, calçadas acessíveis, iluminação e arborização",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      566
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Infraestrutura e qualificação urbana",
+   "proposta": "Requalificar praças, parques e espaços públicos integrando lazer, acessibilidade, iluminação e segurança",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      569
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Urbanização de assentamentos precários",
+   "proposta": "Urbanizar comunidades precárias com infraestrutura, equipamentos e regularização, usando recursos do Novo PAC e começando pelas maiores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      913,
+      916,
+      918,
+      1471,
+      1472
+     ],
+     "nota": "~3.500 famílias, ~R$360 mi, início em Campo Grande e Dourados"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Financiamento e gestão da habitação",
+   "proposta": "Financiar a política habitacional com recursos do fundo estadual de habitação de interesse social combinados à contrapartida municipal em terra",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      577,
+      579
+     ],
+     "nota": "Prevê recursos estaduais em subsídios/terrenos e contrapartidas municipais para financiar habitação."
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      1488
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-ms-delcidio-amaral-120002552155": {},
+  "governador-ms-economista-renato-gomes-120002549681": {
+   "878": {
+    "texto": "8.6.1 HAB-01, Programa habitacional para ~30-35 mil famílias em 4 anos",
+    "pagina": 45
+   },
+   "881": {
+    "texto": "Critério de escolha: Escolhe (B): casar cada família ao instrumento de menor custo que resolve o caso Ação (o como): Programa habitacional de instrumentos combinados, com meta de ~30-35 mil famílias em 4 anos (ver aba 'Habitação Orçamento-Fases')",
+    "pagina": 45
+   },
+   "882": {
+    "texto": "Meta / indicador (KPI): Nº de famílias atendidas/ano; déficit reduzido",
+    "pagina": 45
+   },
+   "883": {
+    "texto": "Custo e financiamento: INVESTIMENTO/aporte estadual ~R$0,8-1,2 bi em 4 anos (~metade cofinanciada federal). CUSTEIO recorrente BAIXO (habitação e CAPEX/subsídio, não folha) Prioridade: Estrutural (4 anos)",
+    "pagina": 45
+   },
+   "885": {
+    "texto": "8.6.2 HAB-02, Regularização fundiária (REURB-S) em massa com os municípios",
+    "pagina": 45
+   },
+   "889": {
+    "texto": "Ação (o como): Escalar a regularização fundiaria (REURB-S) para dezenas de milhares de títulos, em cooperação com os 79 municípios",
+    "pagina": 45
+   },
+   "890": {
+    "texto": "Meta / indicador (KPI): Nº de títulos/ano",
+    "pagina": 45
+   },
+   "891": {
+    "texto": "Custo e financiamento: INVESTIMENTO baixo: ~R$1,7k/título (40 mil títulos = ~R$68mi em 4 anos).",
+    "pagina": 45
+   },
+   "892": {
+    "texto": "Sem custeio recorrente",
+    "pagina": 45
+   },
+   "896": {
+    "texto": "8.6.3 HAB-03, “Terreno do Cidadão”: autoconstrução assistida no interior",
+    "pagina": 46
+   },
+   "899": {
+    "texto": "Ação (o como): Ampliar o Lote Urbanizado / Terreno do Cidadão como principal via de 'construir' no interior (autoconstrucao assistida)",
+    "pagina": 46
+   },
+   "900": {
+    "texto": "Meta / indicador (KPI): Nº de famílias/ano iniciando a casa própria",
+    "pagina": 46
+   },
+   "901": {
+    "texto": "Custo e financiamento: INVESTIMENTO ~R$20k/família (15 mil famílias = ~R$300mi em 4 anos); contrapartida municipal (terreno/infra). 5x mais barato que casa pronta",
+    "pagina": 46
+   },
+   "904": {
+    "texto": "8.6.4 HAB-04, Bônus Moradia complementando o Minha Casa Minha Vida",
+    "pagina": 46
+   },
+   "907": {
+    "texto": "Ação (o como): Manter/ampliar o Bonus Moradia complementando o MCMV, priorizando a Faixa 1 (baixa renda)",
+    "pagina": 46
+   },
+   "908": {
+    "texto": "Meta / indicador (KPI): Nº de famílias com subsídio/ano",
+    "pagina": 46
+   },
+   "909": {
+    "texto": "Custo e financiamento: INVESTIMENTO/subsídio R$25-32k/família (aporte) - alavanca recurso federal",
+    "pagina": 46
+   },
+   "910": {
+    "texto": "+ FGTS",
+    "pagina": 46
+   },
+   "913": {
+    "texto": "8.6.5 HAB-05, Urbanizar as comunidades precárias via Novo PAC",
+    "pagina": 46
+   },
+   "916": {
+    "texto": "Ação (o como): Urbanizar as comunidades precarias (infra + equipamentos + regularização) via Novo PAC, comecando pelas maiores (Homex/CG, Santa Felicidade/Dourados)",
+    "pagina": 46
+   },
+   "918": {
+    "texto": "Custo e financiamento: INVESTIMENTO ~R$103k/família (~3.500 famílias = ~R$360mi); majoritariamente co-financiado Novo PAC",
+    "pagina": 46
+   },
+   "921": {
+    "texto": "8.6.6 HAB-06, FEHIS só em habitação, com transparência e auditoria",
+    "pagina": 46
+   },
+   "924": {
+    "texto": "Evidência / dado: R$17,5 mi transferidos do fundo de habitação para o Tesouro Estadual Ação (o como): Garantir que o FEHIS seja usado só em habitação, com transparência e auditoria; vincular a execução a metas",
+    "pagina": 47
+   },
+   "925": {
+    "texto": "Meta / indicador (KPI): % do FEHIS aplicado em habitação",
+    "pagina": 47
+   },
+   "1168": {
+    "texto": "HAB-02, Regularização fundiária (REURB-S) em massa com os municípios \n•",
+    "pagina": 54
+   },
+   "1169": {
+    "texto": "HAB-06, FEHIS só em habitação, com transparência e auditoria \n•",
+    "pagina": 54
+   },
+   "1469": {
+    "texto": "Regularização fundiaria em massa (barata, quick-win) + ampliar Lote Urbanizado; integrar cadastro Habix ao",
+    "pagina": 57
+   },
+   "1470": {
+    "texto": "MCMV",
+    "pagina": 57
+   },
+   "1471": {
+    "texto": "Escalar autoconstrucao assistida + subsídio complementar ao MCMV; iniciar urbanização de favelas",
+    "pagina": 57
+   },
+   "1472": {
+    "texto": "Consolidar urbanização de comunidades + fechar meta de redução do déficit",
+    "pagina": 57
+   },
+   "1478": {
+    "texto": "~R$150-250 mi ~R$350-550 mi ~R$300-400 mi",
+    "pagina": 57
+   },
+   "1488": {
+    "texto": "Estadual (FEHIS) + municipal (terra)",
+    "pagina": 57
+   },
+   "1489": {
+    "texto": "FEHIS + MCMV",
+    "pagina": 57
+   },
+   "1490": {
+    "texto": "(federal) + Novo PAC",
+    "pagina": 57
+   },
+   "1491": {
+    "texto": "Novo PAC + FEHIS + crédito TOTAL (4 anos)",
+    "pagina": 57
+   },
+   "1494": {
+    "texto": "~30-35 mil famílias atendidas (~metade do déficit)",
+    "pagina": 58
+   },
+   "1496": {
+    "texto": "~R$0,8-1,2 bi (aporte estadual; ~metade co-financiada)",
+    "pagina": 58
+   },
+   "1500": {
+    "texto": "Estadual + MCMV +",
+    "pagina": 58
+   },
+   "1501": {
+    "texto": "PAC + municipal",
+    "pagina": 58
+   }
+  },
+  "governador-ms-eduardo-riedel-120002536582": {
+   "405": {
+    "texto": "A estratégia passa pelo fortalecimento de programas já existentes como o Bônus Moradia, pela criação e novos programas como o MS Moradia e pelo fortalecimento das parcerias com união e municípios para viabilizar novos projetos.",
+    "pagina": 30
+   },
+   "408": {
+    "texto": "•Ampliar o investimento em habitação até 2030 para: a.Expandir a entrega de novas moradias no Programa Bônus Moradia. b.Através do novo Programa Estadual MS Moradia, entregar unidades habitacionais exclusivamente para a população de baixa renda. c.Viabilizar unidades habitacionais, através da atuação junto a entes federais. d.Realizar diversas frentes de regularização fundiária urbana até 2030. •Direcionar programas habitacionais às regiões impactadas pela implantação de grandes investimentos produtivos. •Integrar a política habitacional ao planejamento urbano e à expansão da infraestrutura dos municípios. •Apoiar os municípios na elaboração e atualização de instrumentos de planejamento urbano. •Promover cidades mais acessíveis, sustentáveis, inteligentes e resilientes.",
+    "pagina": 30
+   }
+  },
+  "governador-ms-fabio-trad-120002539834": {},
+  "governador-ms-joao-henrique-catan-120002552191": {
+   "9": {
+    "texto": "Na habitação, vamos trabalhar para viabilizar 30 mil moradias, integradas à infraestrutura urbana, aos serviços públicos e às oportunidades de trabalho, enfrentando de forma objetiva o déficit habitacional.",
+    "pagina": 2
+   },
+   "566": {
+    "texto": "Pacotes urbanos integrados com pavimentação, drenagem, sinalização, calçadas acessíveis, iluminação e arborização.",
+    "pagina": 26
+   },
+   "567": {
+    "texto": "Integração dos programas habitacionais à infraestrutura urbana, priorizando localidades com maior déficit social e habitacional.",
+    "pagina": 26
+   },
+   "568": {
+    "texto": "Moradia bem localizada, com acesso a emprego, transporte, escola, saúde, saneamento e conectividade.",
+    "pagina": 26
+   },
+   "569": {
+    "texto": "Requalificação de praças, parques e espaços públicos, integrando lazer, acessibilidade, iluminação e segurança urbana.",
+    "pagina": 26
+   },
+   "576": {
+    "texto": "Mato Grosso do Sul ampliará a produção de moradias em escala, com planejamento contínuo para reduzir o déficit habitacional e acompanhar o crescimento das cidades.",
+    "pagina": 27
+   },
+   "577": {
+    "texto": "Meta: viabilizar 30 mil novas moradias até o final do segundo ano de governo, por meio da combinação de recursos estaduais, programas federais, FGTS, terrenos públicos, contrapartidas municipais e participação privada.",
+    "pagina": 27
+   },
+   "578": {
+    "texto": "Produção em escala: ampliar simultaneamente os programas de construção, aquisição subsidiada, lote urbanizado e substituição de moradias precárias.",
+    "pagina": 27
+   },
+   "579": {
+    "texto": "Recursos estaduais para multiplicar investimentos: utilizar recursos próprios principalmente em subsídios, terrenos, infraestrutura e contrapartidas, permitindo captar volumes maiores de recursos federais e de financiamento.",
+    "pagina": 27
+   },
+   "580": {
+    "texto": "Participação dos grandes investimentos: empreendimentos beneficiados por incentivos fiscais ou que gerem forte pressão habitacional poderão contribuir com moradias, terrenos, infraestrutura ou aportes ao programa, conforme critérios técnicos.",
+    "pagina": 27
+   },
+   "581": {
+    "texto": "Moradia onde o Estado cresce: antecipar a demanda habitacional nos municípios que receberem novas indústrias, polos logísticos e grandes investimentos, evitando pressão excessiva sobre aluguel e crescimento urbano desordenado.",
+    "pagina": 27
+   },
+   "582": {
+    "texto": "Casa Sustentável MS: as novas unidades terão soluções de conforto térmico, eficiência energética, economia de água, energia renovável quando viável e tecnologias construtivas modernas e duráveis.",
+    "pagina": 27
+   },
+   "583": {
+    "texto": "Moradia integrada à cidade: os empreendimentos serão implantados com acesso a saneamento, transporte, escola, saúde, internet e oportunidades de trabalho.",
+    "pagina": 27
+   },
+   "584": {
+    "texto": "Transparência: a população acompanhará, por município, as moradias contratadas, em construção e entregues e os recursos mobilizados.",
+    "pagina": 27
+   }
+  }
+ }
+}

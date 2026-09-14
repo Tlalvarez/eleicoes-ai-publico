@@ -1,0 +1,683 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "MS",
+ "pagina": "saneamento-agua",
+ "nome": "Saneamento e recursos hídricos",
+ "titulo": "Saneamento e recursos hídricos: o que cada candidato propõe",
+ "temas": [
+  "saneamento_agua"
+ ],
+ "origem": {
+  "arquivo": "saneamento-agua-ms.json",
+  "gerado_em": "2026-09-14T11:48:10Z",
+  "exportado_em": "2026-09-14T12:41:08Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-ms-delcidio-amaral-120002552155",
+   "nome": "Delcidio Amaral",
+   "partido": "PRD",
+   "numero": "25",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017126668",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552155/MS"
+  },
+  {
+   "slug": "governador-ms-economista-renato-gomes-120002549681",
+   "nome": "Economista Renato Gomes",
+   "partido": "DC",
+   "numero": "27",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017089795",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002549681/MS"
+  },
+  {
+   "slug": "governador-ms-eduardo-riedel-120002536582",
+   "nome": "Eduardo Riedel",
+   "partido": "PP",
+   "numero": "11",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016868872",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002536582/MS"
+  },
+  {
+   "slug": "governador-ms-fabio-trad-120002539834",
+   "nome": "Fábio Trad",
+   "partido": "PT",
+   "numero": "13",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016993257",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002539834/MS"
+  },
+  {
+   "slug": "governador-ms-joao-henrique-catan-120002552191",
+   "nome": "João Henrique Catan",
+   "partido": "NOVO",
+   "numero": "30",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017115315",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552191/MS"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Esgoto e universalização",
+   "proposta": "Ampliar a coleta e o tratamento de esgoto até a universalização dos serviços no Estado",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      415,
+      419
+     ],
+     "nota": "Meta de 100% de cobertura até 2028"
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      561,
+      562
+     ],
+     "nota": ""
+    },
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      225
+     ],
+     "nota": "Universalização executada pela própria estatal"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      809
+     ],
+     "nota": "Contesta o anúncio de universalização já alcançada"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Esgoto e universalização",
+   "proposta": "Priorizar na expansão do esgotamento as localidades e bairros com maior déficit de cobertura",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      562
+     ],
+     "nota": "Critério de déficit e pressão urbana"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      809
+     ],
+     "nota": "Começar pelo bairro esquecido do interior"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Esgoto e universalização",
+   "proposta": "Fixar metas de esgotamento sanitário por município para a companhia estadual, com indicador de percentual de domicílios com esgoto tratado e cobrança de resultados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      809,
+      810
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Esgoto e universalização",
+   "proposta": "Prestar apoio técnico e financeiro aos municípios para o cumprimento das metas do marco legal do saneamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      561
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Expandir ações de segurança hídrica para sustentar o abastecimento e as atividades produtivas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      473
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Integrar a política de recursos hídricos e a segurança hídrica ao planejamento territorial e econômico do Estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      876,
+      877
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Fortalecer a proteção e a recuperação de bacias hidrográficas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      872
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Fortalecer a recuperação de nascentes, matas ciliares e áreas sujeitas a erosão e assoreamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      875
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Ampliar o monitoramento de turbidez, vazão e qualidade da água, com resposta técnica rápida a anormalidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      873
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Proteger especificamente a qualidade e a transparência das águas, nascentes e bacias de Bonito e da Serra da Bodoquena",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      872
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Avaliar os impactos acumulados das atividades econômicas sobre bacias e áreas ambientalmente sensíveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      874
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Criar uma agência estadual de águas para a gestão das bacias hidrográficas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Revisar o Plano Estadual de Recursos Hídricos e fortalecer a gestão integrada das águas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Ampliar o programa de conservação de solo e bacias (PROSOLO) em número de municípios atendidos e em área sistematizada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Ampliar a infraestrutura hídrica para abastecimento e produção",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Incentivar o uso racional e eficiente da água e soluções de adaptação às mudanças climáticas relacionadas aos recursos hídricos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Manter o esgotamento sanitário sob execução da companhia pública estadual, rejeitando a transferência do faturamento e da operação a consórcio privado por PPP",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      225,
+      309
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Rever e auditar os Estudos de Viabilidade Técnica e Econômica que embasaram a PPP de esgoto, município por município, respeitando os contratos de programa vigentes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      231
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Investigar o destino dos recursos já pagos à concessionária privada e auditar os empréstimos tomados pelo Estado para obras que cabiam à parceira",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      232
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Aumentar a eficiência operacional dos serviços de saneamento",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      412,
+      419
+     ],
+     "nota": ""
+    },
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      233,
+      234
+     ],
+     "nota": "Via programa de revitalização e modernização da estatal"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Criar um programa de revitalização e modernização dos sistemas de tratamento de água e de esgoto da companhia estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      233,
+      234
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Estimular tecnologias inovadoras aplicadas ao saneamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      412,
+      419
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Companhia estadual e modelo de gestão",
+   "proposta": "Integrar o saneamento às estratégias de saúde, meio ambiente e desenvolvimento urbano",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      419
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Abastecimento de água",
+   "proposta": "Implantar programa de redução de perdas físicas de água na rede de distribuição, com geofonamento e substituição de tubulações antigas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      235
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Abastecimento de água",
+   "proposta": "Implantar soluções descentralizadas de abastecimento de água e esgotamento sanitário em comunidades isoladas e ribeirinhas do Pantanal, nos moldes do Ilumina Pantanal",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      415,
+      419
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Drenagem urbana",
+   "proposta": "Fortalecer a infraestrutura de drenagem urbana para reduzir alagamentos e erosões",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      419
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      563
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Drenagem urbana",
+   "proposta": "Executar a drenagem de forma integrada à infraestrutura viária, evitando pavimentação sem solução de escoamento das águas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      563
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Expandir soluções regionalizadas para a gestão de resíduos sólidos, com escala adequada para municípios menores",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      412,
+      419
+     ],
+     "nota": "Consolidando a atuação da MSB"
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      564
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Criar programa estadual de formalização e operacionalização de cooperativas de catadores, com formação e remuneração dos trabalhadores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      419
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-ms-delcidio-amaral-120002552155": {
+   "225": {
+    "texto": "A SANESUL é uma empresa pública sólida, superavitária e com total capacidade técnica e financeira de executar e universalizar esses serviços. Não permitiremos que uma estatal estratégica vire mera arrecadadora de tarifas para repassar o faturamento do esgoto a um consórcio privado.",
+    "pagina": 18
+   },
+   "231": {
+    "texto": "Rever e auditar imediatamente os Estudos de Viabilidade Técnica e Econômica (EVTE) que balizaram a PPP de esgoto em cada um dos municípios, respeitando os Contratos de Programa vigentes; ",
+    "pagina": 19
+   },
+   "232": {
+    "texto": "Investigar o destino de mais de R$ 300 milhões pagos à concessionária privada, além de auditar os empréstimos bancários tomados pelo Estado para realizar obras em municípios onde o investimento deveria ter sido integralmente feito pela empresa parceira; ",
+    "pagina": 19
+   },
+   "233": {
+    "texto": "Desenvolver na SANESUL um Programa de Revitalização e Modernização de seus Sistemas de Tratamento de Água e de Esgotos",
+    "pagina": 19
+   },
+   "234": {
+    "texto": "Domésticos, transformando-a novamente em referência nacional de eficiência pública; ",
+    "pagina": 19
+   },
+   "235": {
+    "texto": "Implementar o Programa de Redução de Perdas Físicas de Água na Rede, combatendo o desperdício na distribuição por meio de tecnologias de geofonamento e troca de tubulações antigas;",
+    "pagina": 19
+   },
+   "309": {
+    "texto": "Não é aceitável que a SANESUL, uma empresa pública sólida que capitalizamos com mais de meio bilhão de recursos federais durante nossa atuação no Senado, seja transformada em mera arrecadadora de tarifas para enriquecer consórcios privados por meio de uma PPP sem justificativa técnica.",
+    "pagina": 25
+   }
+  },
+  "governador-ms-economista-renato-gomes-120002549681": {
+   "809": {
+    "texto": "Ação (o como): Metas da Sanesul por município, comecando pelo bairro esquecido, com cobranca de resultado (esgoto não e luxo, e saúde)",
+    "pagina": 42
+   },
+   "810": {
+    "texto": "Meta / indicador (KPI): % de domicilios com esgoto tratado por município",
+    "pagina": 42
+   }
+  },
+  "governador-ms-eduardo-riedel-120002536582": {
+   "412": {
+    "texto": "O próximo ciclo deverá aprofundar essa agenda, ampliando a cobertura dos serviços, fortalecendo soluções regionalizadas para resíduos sólidos e incorporando novas tecnologias voltadas à eficiência operacional e à sustentabilidade. O saneamento continuará sendo tratado como infraestrutura essencial para o desenvolvimento econômico, a preservação ambiental e a qualidade de vida da população.",
+    "pagina": 30
+   },
+   "415": {
+    "texto": "•Universalizar o saneamento básico; •Desenvolver e implementar soluções de abastecimento de água e esgotamento sanitário descentralizado em comunidades isoladas no Pantanal, nos moldes do Ilumina Pantanal.",
+    "pagina": 30
+   },
+   "419": {
+    "texto": "•Universalizar o Ilumina Pantanal em todas as comunidades ribeirinhas do Pantanal. •Expandir soluções regionalizadas para gestão de resíduos sólidos, consolidando a atuação da MSB. •Fortalecer a infraestrutura de drenagem urbana. •Implantar um programa estadual para formalização e operacionalização de cooperativas de catadores, com formação e remuneração dos trabalhadores. •Estimular tecnologias inovadoras para saneamento. •Promover maior eficiência operacional dos serviços. •Integrar saneamento às estratégias de saúde, meio ambiente e desenvolvimento urbano.",
+    "pagina": 30
+   },
+   "447": {
+    "texto": "•Fortalecer políticas de conservação da biodiversidade. •Expandir mecanismos de valorização econômica dos ativos ambientais. •Consolidar e ampliar programas de pagamento por serviços ambientais, ampliando-os para todos os biomas presentes no estado. •Estimular mercados relacionados aos ativos ambientais. •Modernizar a gestão das unidades de conservação. •Revisar o Plano Estadual de Recursos Hídricos. •Estabelecer a Agência Estadual de Águas para a gestão das bacias hidrográficas do Estado. •Ampliar a atuação do PROSOLO, tanto em número de municípios atendidos, como em área sistematizada sob projetos do programa. •Fortalecer a gestão integrada dos recursos hídricos. •Expandir ações voltadas à segurança hídrica. •Incentivar o uso racional e eficiente da água. •Fortalecer a proteção e recuperação de bacias hidrográficas. •Ampliar a infraestrutura hídrica para abastecimento e produção. •Estimular soluções de adaptação às mudanças climáticas relacionadas à água. •Integrar políticas de recursos hídricos ao planejamento territorial.",
+    "pagina": 33
+   }
+  },
+  "governador-ms-fabio-trad-120002539834": {},
+  "governador-ms-joao-henrique-catan-120002552191": {
+   "473": {
+    "texto": "Mais segurança hídrica, energia e saneamento para sustentar a expansão das cidades e das atividades produtivas.",
+    "pagina": 20
+   },
+   "561": {
+    "texto": "Apoio técnico e financeiro aos municípios para o cumprimento das metas do marco legal do saneamento.",
+    "pagina": 26
+   },
+   "562": {
+    "texto": "Expansão da coleta e do tratamento de esgoto, priorizando localidades com maior déficit de cobertura e pressão urbana.",
+    "pagina": 26
+   },
+   "563": {
+    "texto": "Drenagem integrada à infraestrutura viária, reduzindo alagamentos, erosões e deterioração precoce do pavimento.",
+    "pagina": 26
+   },
+   "564": {
+    "texto": "Soluções regionalizadas para resíduos sólidos, com escala adequada para municípios menores e áreas de maior vulnerabilidade.",
+    "pagina": 26
+   },
+   "872": {
+    "texto": "• Bonito e Serra da Bodoquena: proteger a qualidade e a transparência das águas, nascentes e bacias hidrográficas.",
+    "pagina": 43
+   },
+   "873": {
+    "texto": "• Ampliar o monitoramento de alterações de turbidez, vazão e qualidade da água, com resposta técnica rápida quando houver anormalidades.",
+    "pagina": 43
+   },
+   "874": {
+    "texto": "• Avaliar os impactos acumulados das atividades sobre bacias e áreas ambientalmente sensíveis.",
+    "pagina": 43
+   },
+   "875": {
+    "texto": "• Fortalecer ações de recuperação de nascentes, matas ciliares e áreas sujeitas a erosão e assoreamento.",
+    "pagina": 43
+   },
+   "876": {
+    "texto": "• Tratar segurança hídrica como parte do planejamento econômico e territorial do",
+    "pagina": 43
+   },
+   "877": {
+    "texto": "Estado.",
+    "pagina": 43
+   }
+  }
+ }
+}
