@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "habitacao-cidades-sp.json",
-  "gerado_em": "2026-09-13T23:19:01Z",
-  "exportado_em": "2026-09-13T23:30:03Z"
+  "gerado_em": "2026-09-14T19:43:24Z",
+  "exportado_em": "2026-09-14T19:49:49Z"
  },
  "candidatos": [
   {
@@ -34,8 +34,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Habitação de interesse social",
-   "proposta": "Ampliar a produção de moradias populares e a política de habitação de interesse social para reduzir o déficit habitacional",
+   "subtema": "Produção de moradia",
+   "proposta": "Ampliar a produção e o acesso à moradia popular/de interesse social para enfrentar o déficit habitacional",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -43,27 +43,29 @@
      "blocos": [
       244
      ],
-     "nota": "Prioriza habitação de interesse social em articulação com programas federais e municípios"
+     "nota": "Prioriza habitação de interesse social articulada com União e municípios"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      935
+      911,
+      1223
      ],
-     "nota": "Foco na construção de moradias populares"
+     "nota": ""
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Habitação de interesse social",
-   "proposta": "Implantar equipamentos públicos de educação, saúde, assistência, esporte, cultura e lazer integrados aos novos empreendimentos habitacionais",
+   "subtema": "Produção de moradia",
+   "proposta": "Fortalecer e expandir o programa estadual de habitação (Casa Paulista), com construção e aquisição de moradias, reassentamento, cartas de crédito e subsídios a empreendimentos públicos ou privados",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      935
+      909,
+      911
      ],
      "nota": ""
     }
@@ -71,9 +73,24 @@
   },
   {
    "id": "p3",
-   "subtema": "Habitação de interesse social",
-   "proposta": "Articular a política habitacional estadual com programas federais e com os municípios",
+   "subtema": "Produção de moradia",
+   "proposta": "Triplicar o número de beneficiários da política habitacional em áreas de risco, palafitas, mananciais e favelas, atendendo mais de 30 mil famílias em quatro anos",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      912
+     ],
+     "nota": "Meta numérica e público-alvo definidos"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Regularização fundiária",
+   "proposta": "Ampliar a regularização fundiária de moradias e assentamentos",
+   "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
@@ -81,19 +98,11 @@
       244
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Regularização fundiária e melhoria de moradias",
-   "proposta": "Promover a regularização fundiária e a melhoria das moradias já existentes",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
+    },
+    "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      244
+      911
      ],
      "nota": ""
     }
@@ -101,14 +110,22 @@
   },
   {
    "id": "p5",
-   "subtema": "Urbanização de favelas e áreas de risco",
-   "proposta": "Urbanizar áreas vulneráveis, com foco em áreas de risco, favelas, palafitas e mananciais",
-   "n_concorda": 1,
+   "subtema": "Urbanização e melhoria habitacional",
+   "proposta": "Promover a melhoria das moradias existentes e a requalificação de núcleos habitacionais e áreas urbanas degradadas, com foco nas periferias",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": ""
+    },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      935
+      396,
+      864
      ],
      "nota": ""
     }
@@ -116,29 +133,31 @@
   },
   {
    "id": "p6",
-   "subtema": "Urbanização de favelas e áreas de risco",
-   "proposta": "Requalificar e estruturar núcleos habitacionais e áreas urbanas degradadas, especialmente nas periferias e em outros municípios",
+   "subtema": "Urbanização e melhoria habitacional",
+   "proposta": "Investir mais de R$ 3 bilhões em programa de intervenções em bairros periféricos, com recuperação de áreas condominiais, melhoria habitacional, saneamento, urbanização e infraestrutura",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      373
+      177,
+      862,
+      864
      ],
-     "nota": ""
+     "nota": "Programa SP Bairros Conectados, com valor definido"
     }
    }
   },
   {
    "id": "p7",
-   "subtema": "Revitalização do centro",
-   "proposta": "Revitalizar integralmente o centro da capital, reposicionando-o como espaço de convivência, cidadania e desenvolvimento econômico",
+   "subtema": "Urbanização e melhoria habitacional",
+   "proposta": "Urbanizar favelas e áreas vulneráveis, priorizando áreas de risco, palafitas e mananciais",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      370
+      1223
      ],
      "nota": ""
     }
@@ -146,14 +165,14 @@
   },
   {
    "id": "p8",
-   "subtema": "Revitalização do centro",
-   "proposta": "Executar grande projeto arquitetônico e urbanístico no centro, com criação do Parque do Moinho e projeto urbanístico e habitacional para o Largo São Francisco em parceria com a Faculdade de Direito da USP",
+   "subtema": "Urbanização e melhoria habitacional",
+   "proposta": "Requalificar regiões de palafitas com unidades habitacionais construídas sobre as águas, iluminação pública, espaços de lazer, comércio e infraestrutura urbana",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      371
+      866
      ],
      "nota": ""
     }
@@ -161,15 +180,15 @@
   },
   {
    "id": "p9",
-   "subtema": "Revitalização do centro",
-   "proposta": "Continuar o programa de recuperação de cenas abertas de uso de drogas com ações conjugadas de segurança, saúde, assistência social, habitação e desenvolvimento urbano",
+   "subtema": "Equipamentos públicos e convivência",
+   "proposta": "Implantar equipamentos públicos e sociais integrados aos novos empreendimentos habitacionais e territórios atendidos, articulando educação, saúde, assistência social, esporte, cultura e lazer",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      371,
-      372
+      864,
+      1223
      ],
      "nota": ""
     }
@@ -177,14 +196,14 @@
   },
   {
    "id": "p10",
-   "subtema": "Revitalização do centro",
-   "proposta": "Ampliar em mais de 40% a área verde do Parque Princesa Isabel e criar um conjunto urbano permeável e conectado à cidade no entorno do novo centro administrativo",
+   "subtema": "Equipamentos públicos e convivência",
+   "proposta": "Criar Praças da Cidadania, combinando melhorias urbanas e espaços de esporte, lazer e convivência com cursos de qualificação profissional e assistência social",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      991
+      864
      ],
      "nota": ""
     }
@@ -192,14 +211,14 @@
   },
   {
    "id": "p11",
-   "subtema": "Apoio a municípios e cidades inteligentes",
-   "proposta": "Apoiar os municípios na modernização dos serviços de iluminação pública",
+   "subtema": "Revitalização do centro",
+   "proposta": "Revitalizar integralmente o centro da capital, reposicionando-o como espaço de convivência, cidadania e desenvolvimento humano e econômico",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      373
+      393
      ],
      "nota": ""
     }
@@ -207,14 +226,75 @@
   },
   {
    "id": "p12",
-   "subtema": "Apoio a municípios e cidades inteligentes",
-   "proposta": "Implantar programa de cidades inteligentes mais eficientes, seguras e sustentáveis (Cidades Inteligentes SP 360)",
+   "subtema": "Revitalização do centro",
+   "proposta": "Executar grande projeto arquitetônico no centro da capital, com criação do Parque do Moinho e projeto urbanístico e habitacional para o Largo São Francisco em parceria com a Faculdade de Direito da USP",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      373
+      394
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Revitalização do centro",
+   "proposta": "Continuar o programa de recuperação de cenas abertas de uso de drogas, com ações conjugadas de segurança, saúde, assistência social, habitação e desenvolvimento urbano",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      394,
+      395
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Apoio a municípios e infraestrutura urbana",
+   "proposta": "Apoiar municípios na modernização dos serviços de iluminação pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      396
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Apoio a municípios e infraestrutura urbana",
+   "proposta": "Implantar programa de cidades inteligentes, mais eficientes, seguras e sustentáveis (Cidades Inteligentes SP 360)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      396
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Apoio a municípios e infraestrutura urbana",
+   "proposta": "Articular a política habitacional estadual com os programas federais e com os municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      244
      ],
      "nota": ""
     }
@@ -229,29 +309,53 @@
    }
   },
   "governador-sp-tarcisio-250002541303": {
-   "370": {
+   "177": {
+    "texto": "SP BAIRROS CONECTADOS",
+    "pagina": 4
+   },
+   "393": {
     "texto": "Por isso, o centro da capital será integralmente revitalizado. Após o fim da Cracolândia e o lançamento do Novo Centro Administrativo do Governo de SP na primeira gestão Tarcísio, agora faremos o reposicionamento do centro de São Paulo como um espaço de convivência, cidadania, desenvolvimento humano e econômico.",
     "pagina": 11
    },
-   "371": {
+   "394": {
     "texto": "Executaremos um dos maiores projetos arquitetônicos da história da capital paulista, que aliará recuperação do patrimônio histórico e transformação social. Será criado o Parque do Moinho e o projeto urbanístico e habitacional para o Largo São Francisco, em parceria com a Faculdade de Direito da USP (São Francisco). Também continuaremos o programa de recuperação de cenas abertas de uso, com ações conjugadas de segurança, saúde, assistência social, habitação e",
     "pagina": 11
    },
-   "372": {
+   "395": {
     "texto": "desenvolvimento urbano.",
     "pagina": 11
    },
-   "373": {
+   "396": {
     "texto": "Nas demais regiões e em outros municípios, atuaremos na requalificação e estruturação de núcleos habitacionais e áreas urbanas degradadas, especialmente nas periferias, no apoio à modernização dos serviços de iluminação pública, e na construção de cidades inteligentes mais eficientes, seguras e sustentáveis, com o Cidades Inteligentes SP 360.",
     "pagina": 11
    },
-   "935": {
+   "862": {
+    "texto": "SP BAIRROS CONECTADOS",
+    "pagina": 32
+   },
+   "864": {
+    "texto": "Com investimentos previstos que ultrapassarão R$ 3 bilhões, vamos criar iniciativas às famílias da periferia, com intervenções na recuperação de áreas condominiais e melhoria habitacional, associadas a obras de saneamento, urbanização, implantação ou adequação de infraestrutura. Viabilizaremos a implantação de equipamentos públicos e sociais, como as Praças da Cidadania, que combinam a realização de melhorias urbanas como a implantação de espaços destinados ao esporte, lazer e à convivência comunitária, com a oferta de cursos de qualificação profissional e de políticas de assistência social.",
+    "pagina": 32
+   },
+   "866": {
+    "texto": "Em regiões de palafitas, vamos fortalecer as ações habitacionais, sociais, ambientais e de saneamento, com foco na requalificação urbana e socioambiental, a partir de unidades habitacionais construídas sobre as águas, com iluminação pública, espaços de lazer e comércio, e infraestrutura urbana.",
+    "pagina": 32
+   },
+   "909": {
+    "texto": "CASA PAULISTA",
+    "pagina": 33
+   },
+   "911": {
+    "texto": "Vamos fortalecer as ações de construção e aquisição de moradias, regularização fundiária, reassentamento habitacional, concessão de cartas de crédito e fomento a empreendimentos de subsídios para habitacionais promovidos por agentes públicos ou privados, por meio do Programa Casa Paulista, o maior programa habitacional da história do estado.",
+    "pagina": 33
+   },
+   "912": {
+    "texto": "Nos próximos 4 anos, focaremos em áreas de risco, palafitas, mananciais e favelas, triplicando o número de beneficiários, com mais de 30 mil famílias atendidas nessas regiões.",
+    "pagina": 33
+   },
+   "1223": {
     "texto": "Na habitação, a construção de moradias populares e a urbanização de áreas vulneráveis, com foco em áreas de risco, favelas, palafitas e mananciais. Além disso, implantação integrada de equipamentos públicos nos novos empreendimentos e territórios atendidos, aproximando habitação, educação, saúde, assistência social, esporte, cultura e lazer.",
     "pagina": 49
-   },
-   "991": {
-    "texto": "No Parque Princesa Isabel, a área verde será ampliada em mais de 40%, com novos espaços de convivência e melhor integração entre o parque, as novas edificações e as ruas do entorno. Em vez de um centro administrativo fechado sobre si mesmo, teremos um conjunto urbano permeável, conectado à cidade e capaz de combinar trabalho, serviços públicos, cultura, comércio, lazer e áreas verdes.",
-    "pagina": 53
    }
   }
  }

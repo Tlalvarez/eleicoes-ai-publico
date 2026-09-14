@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "seguranca-sp.json",
-  "gerado_em": "2026-09-13T23:12:58Z",
-  "exportado_em": "2026-09-13T23:30:03Z"
+  "gerado_em": "2026-09-14T19:38:17Z",
+  "exportado_em": "2026-09-14T19:49:49Z"
  },
  "candidatos": [
   {
@@ -34,60 +34,96 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Inteligência e tecnologia",
-   "proposta": "Criar ou consolidar um centro estadual integrado de inteligência, comando e monitoramento em tempo real, reunindo as forças de segurança e outros órgãos",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Criar ou consolidar um centro estadual de inteligência, comando e controle que integre as bases de dados e a atuação das forças de segurança",
    "n_concorda": 2,
    "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      313,
-      314,
-      325
-     ],
-     "nota": "SP CIN, a partir da transformação do CICC, com funcionamento 24 horas"
-    },
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
       172,
+      173,
       187
      ],
-     "nota": "Sistema de inteligência integrado a câmeras e centros regionais de comando e controle"
+     "nota": "Integração de bases e centros regionais de comando e controle"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      312,
+      313,
+      314
+     ],
+     "nota": "Transformar o CICC no SP CIN, com funcionamento 24h"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Inteligência e tecnologia",
-   "proposta": "Integrar as bases de dados das forças de segurança e usar análise de dados para orientar a atuação policial",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Orientar o policiamento por análise de dados para direcionar o efetivo a locais e horários de maior risco",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      172,
-      173
+      172
      ],
-     "nota": "IA cruzando ocorrências e chamadas do 190 para mapas de calor"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      322,
-      324,
-      325
+      315,
+      316
      ],
-     "nota": "RIESP com identificação única por ocorrência e laboratórios de inovação"
+     "nota": ""
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Inteligência e tecnologia",
-   "proposta": "Unificar e ampliar os canais de atendimento e registro de ocorrências, com resposta rápida ao chamado do cidadão",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Usar inteligência artificial para cruzar dados de ocorrências e chamadas ao 190 e gerar mapas de calor da criminalidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      172
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Criar laboratórios de inovação dedicados à análise e tratamento de dados da segurança pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      325
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Aprimorar os canais de atendimento de emergência e de registro de ocorrências, integrando-os aos sistemas de inteligência e monitoramento",
    "n_concorda": 2,
    "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      172
+     ],
+     "nota": "Cruzamento em tempo real do 190 com inteligência e câmeras"
+    },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
@@ -95,35 +131,191 @@
       320,
       321
      ],
-     "nota": "Número único para PM, Polícia Civil, Bombeiros e SAMU"
-    },
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Unificar em um único número de contato o atendimento de Polícia Militar, Polícia Civil, Bombeiros e SAMU",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      319,
+      320
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Garantir resposta imediata às chamadas de emergência com acionamento automático da viatura mais próxima localizada pelo sistema",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
       172
      ],
-     "nota": "190 com cruzamento em tempo real e acionamento da viatura mais próxima"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p4",
-   "subtema": "Inteligência e tecnologia",
-   "proposta": "Ampliar a rede de videomonitoramento com integração de câmeras públicas, municipais e privadas",
+   "id": "p8",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Adotar identificação única por ocorrência (RIESP), reunindo todo o histórico do chamado ao desfecho e integrando outros serviços públicos ao atendimento",
    "n_concorda": 1,
    "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      322,
+      323
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Integrar câmeras e sensores de monitoramento ao sistema estadual de inteligência para localizar ocorrências e identificar suspeitos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      172
+     ],
+     "nota": ""
+    },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
       324,
       331
      ],
-     "nota": "Muralha Paulista ampliada em 30%, mais de 160 mil câmeras em 2 anos"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p5",
+   "id": "p10",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Ampliar o programa estadual de videomonitoramento em 30%, alcançando todos os municípios com mais de 160 mil câmeras e sensores interligados em dois anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      331
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Inteligência, tecnologia e integração",
+   "proposta": "Firmar parceria com os municípios para atuação conjunta das Guardas Civis Municipais com as polícias estaduais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      172
+     ],
+     "nota": "Pacto com municípios para ampliar presença policial nas ruas"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      314,
+      324
+     ],
+     "nota": "Inclui equipar e modernizar os órgãos de segurança municipais"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Ampliar e fortalecer a rede estadual de atendimento e proteção à mulher vítima de violência, acompanhando o caso do primeiro pedido de ajuda à responsabilização do agressor",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      174
+     ],
+     "nota": "Estrutura dedicada e permanente contra a violência doméstica"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      947,
+      949,
+      951
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Manter sistema de monitoramento eletrônico do agressor com alerta à vítima e acionamento policial em caso de aproximação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      174,
+      177
+     ],
+     "nota": "Adesão imediata ao programa federal Alerta Mulher Segura"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      948,
+      986
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Manter e expandir plataforma/aplicativo de proteção à mulher, com botão de pânico e acompanhamento dos sinais de risco",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      174
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      969,
+      970
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
    "subtema": "Violência contra a mulher",
    "proposta": "Ampliar o funcionamento 24 horas das Delegacias de Defesa da Mulher",
    "n_concorda": 2,
@@ -138,42 +330,16 @@
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      760
+      967
      ],
-     "nota": "Triplicar o número de DDMs 24 horas"
+     "nota": "Meta de triplicar o número de DDMs 24h"
     }
    }
   },
   {
-   "id": "p6",
+   "id": "p16",
    "subtema": "Violência contra a mulher",
-   "proposta": "Monitorar eletronicamente agressores e acionar a polícia automaticamente quando houver aproximação da vítima com medida protetiva",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      174,
-      177
-     ],
-     "nota": "Adesão ao programa federal Alerta Mulher Segura"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      741,
-      762,
-      763,
-      779
-     ],
-     "nota": "Expansão do app SP Mulher Segura com botão de pânico"
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Manter plataforma ou sistema de acompanhamento de risco das vítimas, do primeiro pedido de ajuda à responsabilização do agressor",
+   "proposta": "Manter patrulhamento especializado da Polícia Militar para proteger mulheres com medida protetiva",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -186,121 +352,106 @@
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      740,
-      747
+      983,
+      984,
+      985
      ],
-     "nota": "RIESP-VDM em todo o estado, com registro pela PM e FONAR"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p17",
    "subtema": "Violência contra a mulher",
-   "proposta": "Garantir proteção ostensiva da Polícia Militar às mulheres com medida protetiva",
+   "proposta": "Permitir o registro da ocorrência de violência doméstica pela Polícia Militar no primeiro atendimento, integrado à avaliação de risco e à rede de saúde e assistência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      954
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Instituir cadastro público de condenados por violência contra a mulher, vedando a esses condenados cargos públicos estaduais, crédito e programas habitacionais do estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      964,
+      971,
+      972
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Instalar novas Salas DDM, Salas Lilás de Perícia e Espaços Lilás em batalhões da Polícia Militar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      968
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Oferecer apoio material e abrigo às vítimas de violência doméstica, com auxílio-aluguel, hospedagem de curta duração e transporte gratuito e sigiloso em emergências",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      987,
+      998,
+      999
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Manter ações itinerantes de proteção às mulheres, como ônibus e circuito integrado de atendimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1000
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Crime organizado e facções",
+   "proposta": "Intensificar o combate ao crime organizado por investigação patrimonial e financeira, com asfixia financeira, bloqueio de bens e enfrentamento à lavagem de dinheiro e à infiltração na economia",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      174
-     ],
-     "nota": ""
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      776,
-      777,
-      778
-     ],
-     "nota": "Ampliação da Patrulha SP Mulher Segura"
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Criar cadastro público estadual de condenados por violência contra a mulher, com restrições a cargos públicos, crédito e programas habitacionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      757,
-      764,
-      765
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Instalar e ampliar espaços especializados de acolhimento e perícia (Salas DDM, Salas Lilás, Espaços Lilás em batalhões e hospitais)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      761,
-      794
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Oferecer apoio material e de abrigamento às vítimas de violência doméstica (auxílio-aluguel, hotéis, transporte gratuito e sigiloso)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      780,
-      791,
-      792
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Consolidar circuito integrado e atendimento móvel de proteção às mulheres em todas as regiões administrativas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      742,
-      744,
-      766,
-      767,
-      768,
-      769,
-      793
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Crime organizado",
-   "proposta": "Combater o crime organizado por investigação patrimonial e financeira, asfixiando o dinheiro das facções e enfrentando a lavagem e as empresas de fachada",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      145,
+      171,
       179
      ],
-     "nota": "Bloqueio de patrimônio e destinação social dos bens confiscados"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
@@ -312,9 +463,9 @@
    }
   },
   {
-   "id": "p14",
-   "subtema": "Crime organizado",
-   "proposta": "Criar uma agência estadual antifacção permanente, sob direção do governador, reunindo polícias, Receita e órgãos de controle, com convênios federais",
+   "id": "p23",
+   "subtema": "Crime organizado e facções",
+   "proposta": "Criar uma agência estadual antifacção permanente de inteligência e investigação, sob direção estratégica do governador, reunindo polícias, Receita Estadual e órgãos de controle",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -327,9 +478,32 @@
    }
   },
   {
-   "id": "p15",
-   "subtema": "Crime organizado",
-   "proposta": "Ampliar parcerias com a União, outros poderes e organismos internacionais e propor endurecimento da legislação federal antifacção",
+   "id": "p24",
+   "subtema": "Crime organizado e facções",
+   "proposta": "Ampliar a cooperação com a União, outros poderes e órgãos externos no combate ao crime organizado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      179
+     ],
+     "nota": "Convênios com Receita Federal, PF, Banco Central, COAF e MP"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      343,
+      345
+     ],
+     "nota": "Inclui organismos internacionais"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Crime organizado e facções",
+   "proposta": "Levar ao consórcio de estados do Sul e Sudeste uma agenda de endurecimento da legislação federal contra o crime organizado",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
@@ -338,129 +512,209 @@
       343,
       345
      ],
-     "nota": "Agenda levada ao COSUD"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "Policiamento",
-   "proposta": "Integrar as Guardas Civis Municipais e os órgãos de segurança dos municípios à atuação estadual",
+   "id": "p26",
+   "subtema": "Crime organizado e facções",
+   "proposta": "Dar destinação aos bens e valores apreendidos do crime organizado",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      172
+      179
      ],
-     "nota": "Pacto com municípios para GCMs atuarem junto à PM"
+     "nota": "Destinação social dos bens confiscados"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      353,
+      355
+     ],
+     "nota": "Reinvestimento em equipamentos e tecnologia via FISP"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Investigação e elucidação de crimes",
+   "proposta": "Estabelecer metas e indicadores de resolução de crimes e inquéritos, com monitoramento do desempenho da investigação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      171,
+      173
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      380
+     ],
+     "nota": "Gestão por resultados com metas por unidade e prazos de inquérito"
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Investigação e elucidação de crimes",
+   "proposta": "Publicar trimestralmente, em placar público com dados abertos por região, os índices de esclarecimento de roubo, furto, homicídio e feminicídio",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      173
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Investigação e elucidação de crimes",
+   "proposta": "Fortalecer a perícia e a polícia técnico-científica e integrá-las ao atendimento das ocorrências",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      173,
+      180
+     ],
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
       314,
-      324
+      322
      ],
-     "nota": "Guardas no SP CIN e modernização de equipamentos municipais"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p17",
-   "subtema": "Policiamento",
-   "proposta": "Ampliar o policiamento ostensivo orientado por dados, posicionando o efetivo nos pontos e horários de maior incidência criminal",
+   "id": "p30",
+   "subtema": "Investigação e elucidação de crimes",
+   "proposta": "Tratar cada ocorrência registrada como início de investigação, com tecnologia para converter boletins em casos resolvidos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      173
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Crimes cibernéticos e golpes digitais",
+   "proposta": "Ampliar a estrutura de investigação especializada em crimes digitais, com efetivo, laboratórios e inteligência dedicados",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      172
+      183,
+      186
      ],
      "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      312,
-      315,
-      316
-     ],
-     "nota": "Pontos fixos e móveis em corredores de roubo e transporte público"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Policiamento",
-   "proposta": "Criar equipes táticas de atuação matricial e batalhão especializado de motocicletas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      315
+      360,
+      362,
+      363
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Policiamento",
-   "proposta": "Fortalecer a segurança no campo com patrulhamento e inteligência territorial rural",
+   "id": "p32",
+   "subtema": "Crimes cibernéticos e golpes digitais",
+   "proposta": "Atuar com instituições financeiras para bloqueio rápido de valores e contas usadas em fraudes",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      187
+      183
      ],
-     "nota": "Foco em furto de gado, maquinário e insumos e articulação nas divisas"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      376,
-      377
-     ],
-     "nota": "Projeto SIT-SP Rural integrado ao SP CIN"
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Policiamento",
-   "proposta": "Criar programa estadual permanente de controle de distúrbios civis e perturbação do sossego, com apreensão de equipamentos e fechamento de estabelecimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      318
+      355,
+      363
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p21",
-   "subtema": "Policiamento",
-   "proposta": "Adotar câmeras corporais com gravação contínua durante todo o serviço, sem depender do acionamento do agente",
+   "id": "p33",
+   "subtema": "Crimes cibernéticos e golpes digitais",
+   "proposta": "Criar central estadual de reação imediata a golpes, com recebimento de denúncia e responsabilização de toda a cadeia do golpe",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      181
+      183,
+      186
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p22",
-   "subtema": "Valorização policial",
-   "proposta": "Investir na capacitação, formação técnica e psicológica e nas condições de trabalho dos profissionais de segurança",
+   "id": "p34",
+   "subtema": "Crimes cibernéticos e golpes digitais",
+   "proposta": "Monitorar comunidades e grupos on-line com equipes integradas para identificar redes criminosas, localizar vítimas e prevenir crimes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      360,
+      365
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Crimes cibernéticos e golpes digitais",
+   "proposta": "Implementar plano de proteção de crianças e adolescentes no ambiente digital, com inclusão digital e letramento tecnológico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      367
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Investir na valorização profissional, capacitação continuada e melhoria das condições de trabalho dos profissionais de segurança",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -469,23 +723,23 @@
       180,
       181
      ],
-     "nota": "Inclui saúde física e mental e equipamentos modernos"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      355,
-      356,
-      359
+      378,
+      379,
+      381
      ],
-     "nota": "Novas contratações e recomposição do efetivo da Polícia Penal"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p23",
-   "subtema": "Valorização policial",
-   "proposta": "Valorizar a remuneração e o reconhecimento das forças de segurança",
+   "id": "p37",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Elevar a remuneração dos profissionais de segurança pública do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -498,17 +752,78 @@
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      358,
-      359
+      381,
+      382
      ],
-     "nota": "Continuidade das Leis nº 18.443/2026 e 18.442/2026"
+     "nota": "Continuidade das leis de valorização de 2026"
     }
    }
   },
   {
-   "id": "p24",
-   "subtema": "Valorização policial",
-   "proposta": "Submeter as promoções na carreira policial a critérios profissionais, sem interferência política",
+   "id": "p38",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Cuidar da saúde mental e psicológica dos policiais como parte da formação e do apoio à carreira",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      382
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Modernizar equipamentos e infraestrutura das forças de segurança",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      181
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      353,
+      379
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Realizar novas contratações para ampliar e recompor o efetivo policial, inclusive da Polícia Penal",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      379,
+      382
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Basear as promoções na carreira policial em critérios exclusivamente profissionais, sem interferência política",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -521,63 +836,167 @@
    }
   },
   {
-   "id": "p25",
-   "subtema": "Investigação e elucidação",
-   "proposta": "Aumentar a taxa de elucidação dos crimes com fortalecimento da investigação e da perícia e metas de desempenho",
+   "id": "p42",
+   "subtema": "Valorização e capacitação policial",
+   "proposta": "Exigir gravação contínua das câmeras corporais durante todo o serviço na rua, sem depender de acionamento pelo agente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      181
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Bloquear e neutralizar as redes de comunicação ilícita usadas pelo crime organizado dentro das unidades prisionais",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      145,
-      171,
-      173
+      189
      ],
-     "nota": "Eixo Impunidade Zero; cada ocorrência inicia uma investigação"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      357
+      374
      ],
-     "nota": "Gestão por resultados, indicadores e metas por unidade para inquéritos"
+     "nota": "Monitoramento integrado ao SP CIN"
     }
    }
   },
   {
-   "id": "p26",
-   "subtema": "Investigação e elucidação",
-   "proposta": "Publicar periodicamente indicadores abertos de esclarecimento de crimes por região, com metas públicas",
+   "id": "p44",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Ampliar o trabalho e a qualificação profissional das pessoas presas durante o cumprimento da pena",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      189
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      375,
+      376
+     ],
+     "nota": "Oficinas nas unidades e parcerias com empresas"
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Expandir parcerias com prefeituras para uso de mão de obra de custodiados em zeladoria urbana e resposta a desastres",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      377
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Separar os presos por perfil criminal e por facção nas unidades prisionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      173
+      189
      ],
-     "nota": "Placar da Segurança trimestral"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Investigação e elucidação",
-   "proposta": "Assegurar prova pericial em prazo máximo definido nos casos de violência contra crianças e adolescentes",
+   "id": "p47",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Acompanhar o egresso do sistema prisional para romper o ciclo de reincidência",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      178
+      189
      ],
-     "nota": "Perícia em até 48 horas"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Roubo de celulares e crimes digitais",
-   "proposta": "Manter e ampliar programa de rastreamento, bloqueio e devolução de celulares roubados aos donos",
+   "id": "p48",
+   "subtema": "Policiamento e presença territorial",
+   "proposta": "Ampliar de forma expressiva a presença policial ostensiva nas ruas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      172
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      312,
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Policiamento e presença territorial",
+   "proposta": "Criar equipes táticas de atuação matricial e batalhão especializado de motocicletas para áreas de difícil acesso e grandes deslocamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Policiamento e presença territorial",
+   "proposta": "Instalar pontos fixos e móveis de presença policial visível em corredores de roubo de celular, furto, veículos e cargas e em saídas de transporte público",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      316
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Roubo e furto de celulares",
+   "proposta": "Manter e expandir programa estadual de recuperação e devolução de celulares roubados e furtados aos donos",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -585,21 +1004,21 @@
      "blocos": [
       182
      ],
-     "nota": "Meu Celular de Volta, em parceria com o governo federal, via IMEI"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
       317
      ],
-     "nota": "Expansão do SP Mobile integrado ao SP CIN"
+     "nota": "Expansão do SP Mobile integrada ao SP CIN"
     }
    }
   },
   {
-   "id": "p29",
-   "subtema": "Roubo de celulares e crimes digitais",
-   "proposta": "Regular e fiscalizar o comércio de aparelhos usados, com IMEI obrigatório na nota fiscal e vedação de venda sem comprovante de origem",
+   "id": "p52",
+   "subtema": "Roubo e furto de celulares",
+   "proposta": "Desmontar o mercado de aparelhos roubados com IMEI obrigatório na nota fiscal, proibição de venda sem comprovante de origem e fiscalização do comércio de usados",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -612,93 +1031,24 @@
    }
   },
   {
-   "id": "p30",
-   "subtema": "Roubo de celulares e crimes digitais",
-   "proposta": "Criar estrutura estadual especializada de combate a golpes e crimes cibernéticos, com bloqueio rápido de valores e responsabilização da cadeia do golpe",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      183,
-      186
-     ],
-     "nota": "Programa Golpe Zero com central de reação imediata"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      312
-     ],
-     "nota": "Combate qualificado aos crimes cibernéticos"
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Sistema prisional",
-   "proposta": "Bloquear e neutralizar as comunicações ilícitas das facções dentro dos presídios",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      189
-     ],
-     "nota": "Também separação dos presos por perfil e por facção"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      351
-     ],
-     "nota": "Integração do sistema prisional ao SP CIN"
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Sistema prisional",
-   "proposta": "Ampliar o trabalho e a qualificação profissional dos presos durante o cumprimento da pena",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      189
-     ],
-     "nota": ""
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      352,
-      353,
-      354
-     ],
-     "nota": "Oficinas, parcerias com empresas e com prefeituras em zeladoria urbana"
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Sistema prisional",
-   "proposta": "Acompanhar o egresso do sistema prisional para romper o ciclo do crime",
+   "id": "p53",
+   "subtema": "Roubo e furto de celulares",
+   "proposta": "Integrar o boletim de ocorrência ao rastreamento e bloqueio por IMEI em parceria com o governo federal, notificando quem comprou aparelho roubado sob pena de receptação",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      189
+      182
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p34",
-   "subtema": "Proteção de crianças e idosos",
-   "proposta": "Criar atendimento especializado e fluxos integrados de proteção para crianças, adolescentes e pessoas idosas vítimas de violência",
+   "id": "p54",
+   "subtema": "Proteção de crianças, idosos e pessoas com deficiência",
+   "proposta": "Fortalecer o atendimento especializado e os fluxos integrados de proteção a crianças, adolescentes e pessoas idosas vítimas de violência",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -707,46 +1057,127 @@
       174,
       178
      ],
-     "nota": "Canal de denúncia com acompanhamento de caso para a pessoa idosa"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      705,
-      706,
-      708
+      842,
+      843
      ],
-     "nota": "Inclui pessoas com deficiência e ambientes acolhedores em delegacias"
+     "nota": "Inclui pessoas com deficiência e integração com redes de proteção"
     }
    }
   },
   {
-   "id": "p35",
-   "subtema": "Prevenção e juventude",
-   "proposta": "Levar políticas sociais, educacionais e de oportunidade aos territórios mais violentos para prevenir o recrutamento de jovens pelo crime",
+   "id": "p55",
+   "subtema": "Proteção de crianças, idosos e pessoas com deficiência",
+   "proposta": "Garantir a realização da prova pericial em casos de violência contra crianças e adolescentes em até 48 horas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      178
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Proteção de crianças, idosos e pessoas com deficiência",
+   "proposta": "Criar canal de denúncia com resposta e acompanhamento de cada caso de violência contra a pessoa idosa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      178
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Proteção de crianças, idosos e pessoas com deficiência",
+   "proposta": "Instalar ambientes acolhedores nas delegacias para atendimento de vítimas vulneráveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      845
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Segurança rural",
+   "proposta": "Levar às áreas rurais patrulhamento e inteligência orientados por dados, integrados ao centro estadual de comando e controle",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      188
+      187
      ],
-     "nota": "Escola integral, esporte, cultura, mentoria e primeiro emprego"
+     "nota": ""
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      312,
-      369
+      399,
+      400
      ],
-     "nota": "Ocupação qualificada do território com desenvolvimento urbano e rural"
+     "nota": "Sistema de Inteligência Territorial Rural com dados georreferenciados"
     }
    }
   },
   {
-   "id": "p36",
-   "subtema": "Prevenção e juventude",
-   "proposta": "Criar alistamento civil remunerado para jovens em vulnerabilidade, com formação e perspectiva profissional",
+   "id": "p59",
+   "subtema": "Segurança rural",
+   "proposta": "Priorizar o combate ao furto de gado, maquinário e insumos e à receptação rural, com atenção a pequenos produtores e articulação com estados vizinhos nas divisas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      187
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Prevenção social e juventude",
+   "proposta": "Implantar plano de enfrentamento à violência e à vulnerabilidade social de crianças e adolescentes",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      367
+     ],
+     "nota": ""
+    },
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": "Foco em jovens expostos ao recrutamento pelo crime"
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Prevenção social e juventude",
+   "proposta": "Levar aos territórios mais violentos a atuação conjunta de polícia, escola em tempo integral, esporte, cultura, mentoria e primeiro emprego",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -759,41 +1190,47 @@
    }
   },
   {
-   "id": "p37",
-   "subtema": "Defesa civil e bombeiros",
-   "proposta": "Modernizar as estruturas do Corpo de Bombeiros, do Policiamento Ambiental e da Defesa Civil com tecnologia e integração ao centro de inteligência",
+   "id": "p62",
+   "subtema": "Prevenção social e juventude",
+   "proposta": "Criar alistamento civil remunerado para jovens em vulnerabilidade, com perspectiva profissional como alternativa ao recrutamento pelo crime",
    "n_concorda": 1,
    "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
+    "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      882,
-      883
+      188
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p38",
-   "subtema": "Inteligência e tecnologia",
-   "proposta": "Organizar os serviços públicos de segurança de forma integrada com saúde, assistência social, municípios e redes de proteção a grupos vulneráveis, para que o cidadão não precise percorrer diferentes órgãos para ser atendido",
-   "n_concorda": 2,
+   "id": "p63",
+   "subtema": "Ordem pública",
+   "proposta": "Consolidar programa estadual permanente de enfrentamento a distúrbios civis e perturbação do sossego, com atuação antecipada, apreensão de equipamentos e fechamento de estabelecimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      318
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Gestão e prioridade da segurança",
+   "proposta": "Definir a segurança pública como prioridade número um do governo, com acompanhamento direto do governador e política articulada por todas as secretarias",
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      172,
-      174,
-      178,
+      145,
+      171,
       188
-     ],
-     "nota": "Pacto com municípios, rede de proteção a mulheres/crianças/idosos e 'estado inteiro nos territórios'."
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      323
      ],
      "nota": ""
     }
@@ -940,173 +1377,169 @@
     "texto": "COSUD (Consórcio de Integração Sul e Sudeste) uma agenda de propostas de mudanças na legislação federal para tornar as normas mais duras e efetivas no combate ao crime organizado.",
     "pagina": 8
    },
-   "351": {
+   "353": {
+    "texto": "O programa inovador do primeiro mandato do Governo Tarcísio, que reinveste os bens e os valores apreendidos do crime organizado em equipamentos, infraestrutura para segurança, será tecnologia e intensificado por meio do Fundo de Incentivo à Segurança Pública (FISP).",
+    "pagina": 9
+   },
+   "355": {
+    "texto": "O programa já recuperou mais de R$ 136 milhões na primeira gestão. Em cooperação com instituições bancárias, ganharemos efetividade no congelamento rápido de valores, preservação de evidências e bloqueio de contas fraudulentas.",
+    "pagina": 9
+   },
+   "360": {
+    "texto": "Seguiremos com o fortalecimento do Núcleo de Observação e Análise Digital (NOAD) e a ampliação do projeto, pioneiro no país, de combate à violência digital e prevenção a crimes como estupros virtuais e a comercialização de pornografia infantil.",
+    "pagina": 9
+   },
+   "362": {
+    "texto": "Ampliaremos a estrutura da Divisão de Crimes",
+    "pagina": 9
+   },
+   "363": {
+    "texto": "Cibernéticos da Polícia Civil, com efetivo, laboratórios, inteligência e núcleos regionais de apoio técnico, além de integração permanente com instituições financeiras e plataformas digitais.",
+    "pagina": 9
+   },
+   "365": {
+    "texto": "Fortaleceremos o trabalho que reúne policiais civis, militares e peritos especializados, com atuação integrada no monitoramento de comunidades e grupos online, para identificar atividades e redes criminosas, localizar vítimas e acionar preventivamente unidades policiais diante da iminência de crimes.",
+    "pagina": 9
+   },
+   "367": {
+    "texto": "Implementaremos plano direcionado ao enfrentamento à violência, vulnerabilidade social e violação dos direitos de crianças e adolescentes, com ações, dentre outras, de inclusão digital, proteção de crianças e adolescentes no ambiente digital e letramento tecnológico.",
+    "pagina": 9
+   },
+   "374": {
     "texto": "Fortalecimento e integração entre a esfera da segurança pública e o sistema prisional com o SP CIN no monitoramento e neutralização de rede de comunicação ilícita.",
     "pagina": 10
    },
-   "352": {
+   "375": {
     "texto": "Daremos continuidade às ações voltadas à qualificação profissional e fomento ao trabalho dos custodiados.",
     "pagina": 10
    },
-   "353": {
+   "376": {
     "texto": "Ampliaremos o trabalho em oficinas nas unidades prisionais ou em parceria com empresas públicas e privadas.",
     "pagina": 10
    },
-   "354": {
+   "377": {
     "texto": "Expandiremos as parcerias com as prefeituras, em atividades como de zeladoria urbana e no caso da ocorrência de eventos como desastres que necessitem de mão de obra para a volta à normalidade das cidades.",
     "pagina": 10
    },
-   "355": {
+   "378": {
     "texto": "Seguiremos com as iniciativas que foram históricas na primeira gestão do Governo Tarcísio. Continuaremos os investimentos dedicados ao reconhecimento, qualificação e promoção de nossas forças policiais.",
     "pagina": 10
    },
-   "356": {
+   "379": {
     "texto": "Assim como no primeiro quadriênio, teremos como foco melhorar e ampliar a estrutura, proporcionar capacitação profissional, treinamento constante, novas contratações, e previsão de incentivos.",
     "pagina": 10
    },
-   "357": {
+   "380": {
     "texto": "Fortaleceremos a gestão por resultados na atividade de investigação policial, com o estabelecimento de indicadores de desempenho para o acompanhamento da resolução de inquéritos policiais, definição de metas por unidade e monitoramento contínuo dos prazos de conclusão.",
     "pagina": 10
    },
-   "358": {
+   "381": {
     "texto": "Seguiremos com as ações de reconhecimento e valorização das forças de segurança, conforme a Lei nº",
     "pagina": 10
    },
-   "359": {
+   "382": {
     "texto": "18.443/2026 e a Lei nº 18.442/2026, dando sequência também ao processo de recomposição do efetivo da Polícia Penal. Vamos investir ainda mais na formação técnica e psicológica dos policiais.",
     "pagina": 10
    },
-   "369": {
-    "texto": "A ocupação qualificada do território é estratégia de prevenção criminal, reduzindo as oportunidades para o crime.",
-    "pagina": 11
-   },
-   "376": {
+   "399": {
     "texto": "Na área rural, com o Projeto SIT-SP Rural (Sistema de Inteligência Territorial Rural), vamos fortalecer a segurança com inteligência, tecnologia, inovação e integração ao SP CIN, agregando informações georreferenciadas dos diversos sistemas e bases de dados de agricultura e abastecimento (SISCAR, Rotas",
     "pagina": 11
    },
-   "377": {
+   "400": {
     "texto": "Rurais, produção agropecuária).",
     "pagina": 11
    },
-   "705": {
+   "842": {
     "texto": "Fortaleceremos ações, serviços e procedimentos especiais de prevenção e combate à violência contra crianças, pessoas idosas e pessoas com deficiência, envolvendo:",
     "pagina": 31
    },
-   "706": {
+   "843": {
     "texto": "Aprimoramento e integração dos fluxos de atendimento dos casos registrados, com acolhimento e proteção legal;",
     "pagina": 31
    },
-   "708": {
+   "845": {
     "texto": "Estabelecimento de ambientes acolhedores delegacias; Integração com redes de proteção.",
     "pagina": 31
    },
-   "740": {
+   "947": {
     "texto": "A mulher paulista será acompanhada pela rede desde o primeiro pedido de ajuda até as providências de polícia judiciária, proteção, responsabilização do agressor e encaminhamento aos demais serviços públicos.",
     "pagina": 36
    },
-   "741": {
+   "948": {
     "texto": "Vamos impedir, cada vez mais, a atuação de potenciais agressores e tornozelados no Estado de São Paulo.",
     "pagina": 36
    },
-   "742": {
+   "949": {
     "texto": "Serão ampliadas as iniciativas criadas para que a mulher tenha confiança e todas as condições estruturais para denunciar com segurança.",
     "pagina": 36
    },
-   "744": {
+   "951": {
     "texto": "Para os próximos 4 anos, vamos fortalecer ainda mais nossa rede. Este é um ponto fundamental do nosso Plano de Governo para garantir a proteção dessas mulheres, considerando que aproximadamente 70% dos casos de feminicídio do país não têm nenhum registro de boletim de ocorrência antecedente ao crime.",
     "pagina": 36
    },
-   "747": {
+   "954": {
     "texto": "Estenderemos o Registro Integrado de Evento de Segurança Pública para violência doméstica (RIESPVDM) para todo o estado. Com o RIESP-VDM, a formalização do crime poderá ser feita imediatamente pela Polícia Militar, já no primeiro atendimento da ocorrência, sem que a vítima precise se deslocar até uma delegacia para registrar o boletim. As informações são integradas: à DDM Online, que faz a análise do caso e dá andamento aos procedimentos de polícia judiciária necessários; ao Formulário Nacional de Avaliação de Risco (FONAR) da Justiça, ferramenta que identifica o grau de vulnerabilidade da vítima; e às outras áreas da rede de apoio, como saúde e assistência social, para identificação dos casos de maior vulnerabilidade e acompanhamento ou busca ativa.",
     "pagina": 36
    },
-   "757": {
+   "964": {
     "texto": "Será instituído um cadastro de condenados por crime de violência contra a mulher, de acesso público por qualquer pessoa, em que os indivíduos com nome inscrito ficarão vedados de ocupar cargos públicos no estado, contratar operações de crédito, financiamento, aval ou qualquer modalidade de fomento com instituições financeiras e agências de fomento controladas pelo Estado, bem como participar, na condição de beneficiário, em programas de provisão habitacional ou de financiamento imobiliário mantidos ou operados pelo Estado, incluídos a A rede de Delegacias de Defesa da Mulher",
     "pagina": 37
    },
-   "760": {
+   "967": {
     "texto": "4 anos, o número de DDMs 24 horas/dia aumentará em mais de 3 vezes em todo o estado.",
     "pagina": 37
    },
-   "761": {
+   "968": {
     "texto": "Serão instaladas novas Salas DDM, Salas Lilás de Perícia e Espaços Lilás nas salas de operações em batalhões da Polícia Militar.",
     "pagina": 37
    },
-   "762": {
+   "969": {
     "texto": "Vamos expandir as funcionalidades do aplicativo SP",
     "pagina": 37
    },
-   "763": {
+   "970": {
     "texto": "Mulher Segura, que oferece acesso rápido a serviços de proteção, registro de boletins de ocorrência e um botão de pânico conectado diretamente às forças policiais para mulheres que possuem medidas protetivas.",
     "pagina": 37
    },
-   "764": {
+   "971": {
     "texto": "Companhia de Desenvolvimento Habitacional e Urbano do Estado de São Paulo (CDHU) e programas correlatos.",
     "pagina": 37
    },
-   "765": {
+   "972": {
     "texto": "Faremos tudo o que estiver ao nosso alcance para que agressores no nosso estado não tenham mais alternativas, a não ser passarem a cumprir a lei.",
     "pagina": 37
    },
-   "766": {
-    "texto": "Consolidaremos o Circuito Integrado de Proteção às",
-    "pagina": 37
-   },
-   "767": {
-    "texto": "Mulheres – SP Por Todas, para realizar ações integradas de órgãos públicos em todas as Regiões Administrativas, visando atendimento ágil, acolhedor e articulado a mulheres em situação de violência.",
-    "pagina": 37
-   },
-   "768": {
-    "texto": "A rede de proteção terá total apoio jurídico, policial e social, reunindo inteligência e tecnologia para a segurança das mulheres. Com o atendimento móvel, a partir do “Ônibus SP Por Todas”, intensificaremos as iniciativas de acolhimento psicológico, social, jurídico, autonomia profissional e financeira.",
-    "pagina": 37
-   },
-   "769": {
-    "texto": "Não mediremos esforços para que esta rede chegue a todas as mulheres de SP e que elas se sintam amparadas, com total segurança e confiança para denunciar e consequentemente para que possam estar dentro da rede de apoio e proteção do Governo do Estado.",
-    "pagina": 37
-   },
-   "776": {
+   "983": {
     "texto": "Primeira estrutura de ronda especializada da Polícia",
     "pagina": 38
    },
-   "777": {
+   "984": {
     "texto": "Militar dedicada exclusivamente ao enfrentamento da violência contra a mulher no estado será ampliada.",
     "pagina": 38
    },
-   "778": {
+   "985": {
     "texto": "A nova patrulha passou a atuar de forma preventiva e ostensiva no acompanhamento de ocorrências de violência doméstica, especialmente nos casos atendidos pela Cabine Lilás e nos acionamentos realizados pelo aplicativo SP Mulher Segura. Especificamente para proteção e segurança das vítimas, intensificaremos ações:",
     "pagina": 38
    },
-   "779": {
+   "986": {
     "texto": "No monitoramento ativo dos agressores;",
     "pagina": 38
    },
-   "780": {
+   "987": {
     "texto": "Nas parcerias com aplicativos de viagem, para emergências que demandam deslocamento gratuito, sigiloso e seguro das mulheres;",
     "pagina": 38
    },
-   "791": {
+   "998": {
     "texto": "Nas parcerias com a iniciativa privada para abrigamento de curta duração na modalidade de hotéis;",
     "pagina": 38
    },
-   "792": {
+   "999": {
     "texto": "No auxílio-aluguel para mulheres vítimas de violência doméstica em situação de vulnerabilidade;",
     "pagina": 38
    },
-   "793": {
+   "1000": {
     "texto": "Na realização das ações do Ônibus SP por Todas e do Circuito Integrado de Proteção às Mulheres;",
     "pagina": 38
-   },
-   "794": {
-    "texto": "Na ampliação das Salas Lilás nas unidades hospitalares estratégicas, criando ambientes reservados para acolhimento, escuta qualificada e atendimento humanizado.",
-    "pagina": 38
-   },
-   "882": {
-    "texto": "Modernizaremos ainda mais as estruturas do Corpo de Bombeiros, do Policiamento Ambiental, da Defesa Civil, e das equipes de fiscalização, com a expansão do uso de tecnologia e inteligência, incluindo integração com o",
-    "pagina": 43
-   },
-   "883": {
-    "texto": "SP CIN.",
-    "pagina": 43
    }
   }
  }

@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-sp.json",
-  "gerado_em": "2026-09-13T23:20:59Z",
-  "exportado_em": "2026-09-13T23:30:03Z"
+  "gerado_em": "2026-09-14T19:44:58Z",
+  "exportado_em": "2026-09-14T19:49:49Z"
  },
  "candidatos": [
   {
@@ -34,6 +35,100 @@
  "propostas": [
   {
    "id": "p1",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Instituir estrutura de governança central para coordenação, monitoramento e integração das políticas públicas setoriais, com ciclos regulares de avaliação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      271,
+      274
+     ],
+     "nota": "Liderança pessoal do governador, responsáveis nomeados e carreiras técnicas como instituições de estado"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1511
+     ],
+     "nota": "Estrutura de governança para coordenar as Trilhas e otimizar comitês internos"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Converter o programa de governo em plano de gestão com metas públicas, prazos e responsáveis no primeiro ano, com placar público atualizado a cada trimestre",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      158,
+      290
+     ],
+     "nota": "Placar aberto iniciado pela segurança pública"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Manter controle contínuo dos gastos e racionalização das despesas de custeio por ganho de eficiência, com cada compromisso vinculado a fonte identificada no orçamento",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      285
+     ],
+     "nota": "Fonte identificada no planejamento e rigor contra gasto que não entrega"
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1497,
+      1524
+     ],
+     "nota": "Continuidade do programa SP na Direção Certa e do Decreto 68.538/2024"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Ampliar a capacidade de investimento do estado por meio de alienação de ativos, revisão de benefícios fiscais e reestruturação de órgãos e agências reguladoras",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1496,
+      1497
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Reduzir a lista de itens sujeitos à substituição tributária do ICMS e dar previsibilidade às devoluções de créditos a contribuintes (ProAtivo)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1523,
+      1524
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
    "subtema": "Transparência e combate à corrupção",
    "proposta": "Fortalecer políticas de integridade e combate à corrupção no governo estadual",
    "n_concorda": 2,
@@ -44,112 +139,28 @@
       156,
       283
      ],
-     "nota": "Foca em fortalecer controladoria e órgãos de fiscalização"
+     "nota": "Fortalecer controladoria e órgãos de fiscalização, sem autoridade acima do escrutínio"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      1168
+      1533
      ],
-     "nota": "Continuidade do Plano Anticorrupção, Radar Anticorrupção e Política de Integridade"
-    }
-   }
-  },
-  {
-   "id": "p2",
-   "subtema": "Transparência e combate à corrupção",
-   "proposta": "Abrir os dados, contratos e filas do estado ao escrutínio público",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      156,
-      283
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Transparência e combate à corrupção",
-   "proposta": "Fortalecer a controladoria e os órgãos de controle e fiscalização do estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      156,
-      283
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Transparência e combate à corrupção",
-   "proposta": "Ampliar a participação social por meio de conselhos, ouvidorias e canais de escuta",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      283
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Transparência e combate à corrupção",
-   "proposta": "Manter ações de proteção e defesa do usuário do serviço público",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1168
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Responsabilidade fiscal e orçamento",
-   "proposta": "Manter o controle contínuo dos gastos públicos e a racionalização das despesas, com foco na eficiência do custeio",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      285
-     ],
-     "nota": "Rigor contra o gasto que não entrega"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1132,
-      1159
-     ],
-     "nota": "Otimização de estruturas e redução de custeio por ganho de eficiência"
+     "nota": "Continuidade do Plano Anticorrupção, Radar Anticorrupção e Política Paulista de Integridade"
     }
    }
   },
   {
    "id": "p7",
-   "subtema": "Responsabilidade fiscal e orçamento",
-   "proposta": "Condicionar cada compromisso do programa a uma fonte de financiamento identificada no planejamento e no orçamento do estado",
+   "subtema": "Transparência e combate à corrupção",
+   "proposta": "Abrir dados, filas e contratos públicos do estado, com transparência dos contratos desde a assinatura",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      285
+      156,
+      283
      ],
      "nota": ""
     }
@@ -157,15 +168,14 @@
   },
   {
    "id": "p8",
-   "subtema": "Responsabilidade fiscal e orçamento",
-   "proposta": "Executar um plano de ajuste e eficiência fiscal baseado em diretrizes já normatizadas (Decreto nº 68.538/2024), incluindo revisão de benefícios fiscais e alienação de ativos",
+   "subtema": "Transparência e combate à corrupção",
+   "proposta": "Ampliar a participação social no acompanhamento do governo por meio de conselhos, ouvidorias e escuta da sociedade",
    "n_concorda": 1,
    "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
+    "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      1132,
-      1133
+      283
      ],
      "nota": ""
     }
@@ -173,78 +183,8 @@
   },
   {
    "id": "p9",
-   "subtema": "Responsabilidade fiscal e orçamento",
-   "proposta": "Reduzir a lista de itens sujeitos à substituição tributária do ICMS e dar previsibilidade às devoluções de créditos do ProAtivo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1158,
-      1159
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Gestão por resultados e governança",
-   "proposta": "Instituir estrutura central de governança para coordenar e monitorar as prioridades de governo, com ciclos regulares de avaliação",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      271
-     ],
-     "nota": "Liderança pessoal do governador, metas públicas e responsáveis nomeados"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1146
-     ],
-     "nota": "Governança das Trilhas, otimizando comitês internos existentes"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Gestão por resultados e governança",
-   "proposta": "Converter o programa de governo em plano de gestão com metas públicas, prazos e responsáveis no primeiro ano",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      158,
-      290
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Gestão por resultados e governança",
-   "proposta": "Publicar placar aberto de resultados atualizado trimestralmente, começando pela segurança pública",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      158,
-      290
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Desburocratização e digitalização",
-   "proposta": "Criar esforço permanente de simplificação no centro do governo, revendo processos e eliminando exigências desnecessárias com uso de tecnologia",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Instalar esforço permanente de simplificação no centro do governo para revisar processos, eliminar exigências desnecessárias e digitalizar serviços, reduzindo burocracia para cidadãos e empresas",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -258,9 +198,9 @@
    }
   },
   {
-   "id": "p14",
-   "subtema": "Desburocratização e digitalização",
-   "proposta": "Reformular o Poupatempo, com atendimento multicanal (mensagem, voz e presencial) e servidor ao lado do cidadão",
+   "id": "p10",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Reformular o Poupatempo e o atendimento estatal para múltiplos canais (mensagem, voz e presencial), com servidor ao lado do cidadão",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -274,25 +214,9 @@
    }
   },
   {
-   "id": "p15",
-   "subtema": "Desburocratização e digitalização",
-   "proposta": "Reduzir a burocracia para quem empreende",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      153,
-      276
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
+   "id": "p11",
    "subtema": "Concessões, privatizações e regulação",
-   "proposta": "Fiscalizar com rigor o cumprimento dos contratos de concessão e privatização, com transparência desde a assinatura e aplicação das sanções contratuais",
+   "proposta": "Reforçar a fiscalização dos contratos de concessão e privatização, com agências reguladoras fortes e aplicação das sanções contratuais a quem não entrega",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -301,51 +225,53 @@
       156,
       278
      ],
-     "nota": ""
+     "nota": "Garante respeito aos contratos vigentes e segurança jurídica a quem cumpre"
     }
    }
   },
   {
-   "id": "p17",
-   "subtema": "Concessões, privatizações e regulação",
-   "proposta": "Fortalecer e reestruturar as agências reguladoras estaduais",
+   "id": "p12",
+   "subtema": "Relação com municípios",
+   "proposta": "Estabelecer parceria e apoio às prefeituras e consórcios na execução das políticas estaduais",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
-      278
+      271
      ],
-     "nota": "Agências fortes para fiscalizar concessionárias"
+     "nota": "Parceria com prefeituras nos ciclos de avaliação regionais"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      1131
-     ],
-     "nota": "Reestruturação de órgãos e agências como parte do ajuste fiscal"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Concessões, privatizações e regulação",
-   "proposta": "Alienar ativos do estado como forma de ampliar a capacidade de investimento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1131
+      1495
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Servidores, carreiras e estrutura do estado",
-   "proposta": "Valorizar o servidor público e estruturar carreiras técnicas como instituições de estado",
+   "id": "p13",
+   "subtema": "Estrutura administrativa",
+   "proposta": "Construir o novo Centro Administrativo do Governo nos Campos Elíseos, com cerca de R$ 6 bilhões de investimento, reunindo cerca de 22 mil servidores hoje dispersos em mais de 40 endereços",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1271,
+      1272,
+      1273
+     ],
+     "nota": "Inclui 25 mil m² de comércio e serviços como vetor de requalificação do centro"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Servidores públicos",
+   "proposta": "Valorizar o servidor público com formação e cobrança por resultados, estruturando carreiras técnicas permanentes de estado",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -354,45 +280,6 @@
       274
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Servidores, carreiras e estrutura do estado",
-   "proposta": "Construir novo Centro Administrativo estadual nos Campos Elíseos, reunindo cerca de 22 mil servidores hoje dispersos em mais de 40 endereços",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      983,
-      984,
-      985
-     ],
-     "nota": "Investimento estimado em R$ 6 bilhões e 250 mil m² construídos"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Relação com municípios",
-   "proposta": "Executar as políticas estaduais em parceria com prefeituras e consórcios municipais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      271
-     ],
-     "nota": "Parceria regionalizada dentro do modelo de gestão por metas"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1130
-     ],
-     "nota": "Apoio e parceria com prefeituras e consórcios"
     }
    }
   }
@@ -445,47 +332,43 @@
    }
   },
   "governador-sp-tarcisio-250002541303": {
-   "983": {
+   "1271": {
     "texto": "Vamos implantar nos Campos Elíseos o novo Centro",
     "pagina": 53
    },
-   "984": {
+   "1272": {
     "texto": "Administrativo do Governo de São Paulo, um dos maiores projetos de transformação urbana e de modernização da gestão pública da história do Estado. Com investimentos estimados em R$ 6 bilhões, o complexo terá mais de 250 mil metros quadrados de área construída e reunirá cerca de 22 mil servidores públicos hoje espalhados por mais de 40 endereços na capital.",
     "pagina": 53
    },
-   "985": {
+   "1273": {
     "texto": "Nosso projeto vai muito além da construção de uma nova sede para o Governo. Vamos criar um novo polo de gestão pública inteligente, integrada e eficiente, compartilhando estruturas e serviços. O Novo Centro Administrativo também será um dos principais vetores da transformação do centro de São Paulo. Serão cerca de 25 mil metros quadrados destinados a comércio, serviços, alimentação e convivência, conectando o complexo à vida cotidiana da cidade.",
     "pagina": 53
    },
-   "1130": {
+   "1495": {
     "texto": "Nosso propósito: otimizar gastos e ampliar investimentos com eficiência, apoio e parceria com as prefeituras e consórcios, transparência e responsabilidade fiscal, combatendo toda forma de corrupção. Seguir avançando juntos, na trilha certa com amplo diálogo e dignidade para as pessoas.",
     "pagina": 65
    },
-   "1131": {
+   "1496": {
     "texto": "O principal eixo dessa transformação é o SP na Direção Certa, um conjunto de medidas voltadas à responsabilidade fiscal, à melhoria do ambiente de negócios e à ampliação da capacidade de investimento do estado. O plano reúne ações como o fomento à atração de investimentos, a reestruturação de órgãos e agências reguladoras, a revisão de benefícios fiscais, a alienação de ativos, a racionalização das despesas públicas, sempre com o objetivo de tornar a máquina pública mais eficiente e sustentável.",
     "pagina": 65
    },
-   "1132": {
+   "1497": {
     "texto": "Com o SP na Direção Certa, daremos continuidade e potencializaremos iniciativas voltadas à ampliação dos investimentos, da eficiência, da eficácia e da efetividade do gasto público, e à otimização na utilização dos recursos, de acordo com as diretrizes do Decreto n.",
     "pagina": 65
    },
-   "1133": {
-    "texto": "68.538/2024.",
-    "pagina": 65
-   },
-   "1146": {
+   "1511": {
     "texto": "Instituiremos uma estrutura de governança para coordenação e monitoramento das Trilhas, que contemple e otimize os demais comitês internos de governo, a fim de conferir mais eficiência, celeridade e integração das políticas públicas setoriais.",
     "pagina": 66
    },
-   "1158": {
+   "1523": {
     "texto": "Seguiremos com a diminuição da relação de itens sujeitos ao regime de Substituição Tributária com retenção antecipada do ICMS e a previsibilidade das devoluções do Programa de Ampliação de Liquidez de Créditos a Contribuintes com Histórico de Aquisições de Bens",
     "pagina": 67
    },
-   "1159": {
+   "1524": {
     "texto": "Destinados ao Ativo Imobilizado (ProAtivo). Reiteramos nosso compromisso com a higidez fiscal, promovendo o controle contínuo dos gastos, estimulando a redução de gastos de custeio por meio de ganho de eficiência, otimização de estruturas e atividades.",
     "pagina": 67
    },
-   "1168": {
+   "1533": {
     "texto": "Prosseguiremos com o Plano Anticorrupção do Estado de São Paulo - o Radar Anticorrupção, a Política Paulista de Promoção de Integridade, e as ações de proteção e defesa do usuário do serviço público do estado, instituídos no primeiro ano da nossa gestão, por meio do Decreto nº 67.682/2023, do Decreto nº 67.683/2023 e do Decreto n° 68.156/2023, respectivamente.",
     "pagina": 67
    }

@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "saneamento-agua-sp.json",
-  "gerado_em": "2026-09-13T23:18:42Z",
-  "exportado_em": "2026-09-13T23:30:03Z"
+  "gerado_em": "2026-09-14T19:42:56Z",
+  "exportado_em": "2026-09-14T19:49:49Z"
  },
  "candidatos": [
   {
@@ -34,8 +34,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Universalização do saneamento",
-   "proposta": "Universalizar o acesso à água tratada e à coleta e tratamento de esgoto no estado",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Universalizar o acesso a abastecimento de água potável e coleta e tratamento de esgoto em todo o estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -43,28 +43,30 @@
      "blocos": [
       248
      ],
-     "nota": "Foca no papel do Estado de fiscalizar serviços contratados e priorizar áreas vulneráveis"
+     "nota": "Ênfase no papel do estado em fiscalizar a qualidade e a expansão dos serviços contratados"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      864,
-      865
+      882,
+      883,
+      895
      ],
-     "nota": "Via Sabesp desestatizada e apoio aos demais municípios"
+     "nota": ""
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Universalização do saneamento",
-   "proposta": "Antecipar a universalização do saneamento para 2029, quatro anos antes da meta nacional, na área de concessão da companhia estadual, incluindo áreas rurais e informais regularizáveis",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Antecipar a universalização do saneamento para 2029, quatro anos antes do prazo do novo marco legal, na área de concessão da companhia estadual (URAE-1, 371 municípios)",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      864
+      885,
+      1071
      ],
      "nota": ""
     }
@@ -72,14 +74,15 @@
   },
   {
    "id": "p3",
-   "subtema": "Universalização do saneamento",
-   "proposta": "Oferecer apoio técnico e financeiro às prefeituras fora da área de concessão da companhia estadual, por meio de programa específico (UniversalizaSP), para soluções regionalizadas de saneamento, combate a perdas e ampliação da disponibilidade hídrica",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Investir mais de R$ 70 bilhões em saneamento, alcançando 10 milhões de pessoas hoje sem acesso a água ou a coleta e tratamento de esgoto",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      865
+      887,
+      888
      ],
      "nota": ""
     }
@@ -87,23 +90,8 @@
   },
   {
    "id": "p4",
-   "subtema": "Universalização do saneamento",
-   "proposta": "Fiscalizar com rigor a qualidade e a expansão dos serviços de saneamento contratados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      248
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Segurança hídrica",
-   "proposta": "Garantir segurança hídrica para as próximas décadas, ampliando a disponibilidade e a resiliência do abastecimento",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Priorizar o atendimento de saneamento a populações vulneráveis e áreas sem cobertura: zonas rurais, favelas, palafitas, comunidades quilombolas e indígenas e áreas informais passíveis de regularização",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -111,13 +99,28 @@
      "blocos": [
       248
      ],
-     "nota": ""
+     "nota": "Atenção especial a áreas mais vulneráveis pelo impacto na saúde"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      866,
-      936
+      895,
+      1071
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Ampliar e modernizar o sistema de esgotamento sanitário da Região Metropolitana de São Paulo, com acréscimo de 75% na capacidade de tratamento e implantação de 2.100 km de redes e coletores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1104
      ],
      "nota": ""
     }
@@ -126,69 +129,7 @@
   {
    "id": "p6",
    "subtema": "Segurança hídrica",
-   "proposta": "Investir mais de R$ 9 bilhões, via novo contrato da companhia estadual, para reduzir perdas de água e acrescentar 6 mil litros por segundo ao abastecimento da Região Metropolitana de São Paulo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      866,
-      867
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Segurança hídrica",
-   "proposta": "Construir reservatórios, estação de tratamento, sistema Itatinga e adutora Santos-Guarujá na Baixada Santista até 2029",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      867,
-      869
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Segurança hídrica",
-   "proposta": "Construir mais de 400 reservatórios no interior paulista até 2029, com incremento de 120 milhões de litros",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      869
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Segurança hídrica",
-   "proposta": "Ampliar a água armazenada na Região de Campinas com as barragens de Pedreira e Duas Pontes e o sistema adutor PCJ",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      870
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Proteção de mananciais",
-   "proposta": "Proteger os mananciais de abastecimento",
+   "proposta": "Aumentar a segurança hídrica do estado, garantindo disponibilidade de água para as próximas décadas",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -201,7 +142,78 @@
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      872
+      885,
+      897
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Segurança hídrica",
+   "proposta": "Investir em redução de perdas de água e ampliação da oferta hídrica, com mais de R$ 9 bilhões e acréscimo de 6 mil litros por segundo ao abastecimento da Região Metropolitana de São Paulo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      892,
+      1073,
+      1074
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Segurança hídrica",
+   "proposta": "Construir e concluir reservatórios e novas estruturas de abastecimento até 2029 na Baixada Santista (23 reservatórios, estação de tratamento em Praia Grande, sistema Itatinga, adutora Santos-Guarujá) e no interior (mais de 400 reservatórios)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1074,
+      1076
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Segurança hídrica",
+   "proposta": "Ampliar o armazenamento de água na região de Campinas em 85 bilhões de litros por meio das barragens de Pedreira e Duas Pontes e do sistema adutor do PCJ",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1077
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Proteção de mananciais",
+   "proposta": "Proteger e recuperar mananciais de abastecimento",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      248
+     ],
+     "nota": ""
+    },
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1079
      ],
      "nota": ""
     }
@@ -210,14 +222,14 @@
   {
    "id": "p11",
    "subtema": "Proteção de mananciais",
-   "proposta": "Desenvolver projeto socioambiental de recuperação e conservação de mananciais com foco nas represas Billings e Guarapiranga e em áreas de risco, em parceria com os municípios",
+   "proposta": "Executar projeto socioambiental de recuperação e conservação de mananciais com foco nas represas Billings e Guarapiranga e em áreas de risco, em parceria com municípios, integrando ações ambientais, habitacionais e de saneamento",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      872,
-      873
+      1079,
+      1080
      ],
      "nota": ""
     }
@@ -225,14 +237,16 @@
   },
   {
    "id": "p12",
-   "subtema": "Proteção de mananciais",
-   "proposta": "Criar programa estadual de pagamento por serviços ambientais hídricos voltado a pequenas propriedades rurais, agricultura familiar e territórios tradicionais",
+   "subtema": "Gestão de recursos hídricos",
+   "proposta": "Integrar os serviços de saneamento básico à gestão de recursos hídricos, articulando planejamento com unidades de gerenciamento e comitês de bacias hidrográficas",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      877
+      890,
+      899,
+      901
      ],
      "nota": ""
     }
@@ -240,14 +254,15 @@
   },
   {
    "id": "p13",
-   "subtema": "Drenagem e enchentes",
-   "proposta": "Ampliar o desassoreamento de rios e cursos d'água, priorizando municípios com maior vulnerabilidade socioambiental e recorrência de alagamentos",
+   "subtema": "Gestão de recursos hídricos",
+   "proposta": "Implantar plataforma única de dados hídricos (Sistema Paulista de Informações sobre Recursos Hídricos) para integrar sistemas e ampliar o acesso à informação",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      871
+      1081,
+      1082
      ],
      "nota": ""
     }
@@ -255,14 +270,14 @@
   },
   {
    "id": "p14",
-   "subtema": "Drenagem e enchentes",
-   "proposta": "Integrar em um programa único investimentos em abastecimento, saneamento, macrodrenagem, desassoreamento, restauração ecológica e resiliência climática para prevenção de enchentes e resposta a eventos extremos",
+   "subtema": "Gestão de recursos hídricos",
+   "proposta": "Aprimorar a metodologia de curvas de prevenção e contingência e monitorar a situação hídrica do estado por meio do Hub da SP Águas, com governança integrada entre agências reguladoras",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      936
+      1083
      ],
      "nota": ""
     }
@@ -270,15 +285,15 @@
   },
   {
    "id": "p15",
-   "subtema": "Gestão e informação sobre recursos hídricos",
-   "proposta": "Implantar plataforma única de integração de dados sobre recursos hídricos (Sistema Paulista de Informações sobre Recursos Hídricos)",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Oferecer apoio técnico e financeiro aos municípios fora da área de concessão estadual (URAE-2) pelo programa UniversalizaSP, com linhas de financiamento na Desenvolve SP e soluções regionalizadas de saneamento",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      874,
-      875
+      890,
+      1072
      ],
      "nota": ""
     }
@@ -286,14 +301,140 @@
   },
   {
    "id": "p16",
-   "subtema": "Gestão e informação sobre recursos hídricos",
-   "proposta": "Aprimorar a metodologia de curvas de prevenção e contingência e monitorar a situação hídrica do estado por meio do Hub da SP Águas, com governança integrada entre agências reguladoras",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Financiar obras e serviços de drenagem municipal com recursos estaduais no âmbito de contratos regionalizados de longo prazo",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      876
+      892
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Cheias e drenagem",
+   "proposta": "Ampliar as ações de desassoreamento de rios e cursos d'água, priorizando municípios com maior vulnerabilidade socioambiental e recorrência de alagamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1078
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Cheias e drenagem",
+   "proposta": "Reunir em um programa integrado de investimentos as obras de prevenção a enchentes, macrodrenagem, resiliência climática, segurança hídrica e saneamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1224
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Revitalização do rio Tietê",
+   "proposta": "Executar programa de revitalização do rio Tietê e afluentes (IntegraTietê) com mais de R$ 30 bilhões até 2029, organizado em pilares de saneamento, controle de cheias, turismo e lazer, logística hidroviária e governança",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1098,
+      1100,
+      1101,
+      1102
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Revitalização do rio Tietê",
+   "proposta": "Revitalizar as margens do Tietê e do Pinheiros com parques, educação ambiental e espaços de lazer, cultura e esporte, incluindo a implantação do Parque Salesópolis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1104,
+      1105
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Revitalização do rio Tietê",
+   "proposta": "Implantar sistema de controle interativo de algas com ultrassom e algoritmos para impedir a formação de nata verde no médio Tietê",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1104
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Fiscalização e regulação",
+   "proposta": "Intensificar a fiscalização ambiental e hídrica com integração ao SP CIN, mais tecnologia e uso de inteligência artificial no monitoramento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1102,
+      1105
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Fiscalização e regulação",
+   "proposta": "Exercer com rigor a fiscalização estadual da qualidade e da expansão dos serviços de saneamento prestados por contrato",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      248
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Tarifas",
+   "proposta": "Promover justiça tarifária na conta de água por meio do programa Tarifa Social Paulista",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      903,
+      904
      ],
      "nota": ""
     }
@@ -308,59 +449,131 @@
    }
   },
   "governador-sp-tarcisio-250002541303": {
-   "864": {
+   "882": {
+    "texto": "Fornecer o acesso à água, coleta e tratamento de esgoto para todos continuará sendo nossa prioridade.",
+    "pagina": 33
+   },
+   "883": {
+    "texto": "Para isso, em todo o território paulista, nas áreas rurais e urbanas das cidades, vamos seguir com as obras e serviços para a universalização dos serviços de abastecimento de água potável e esgotamento sanitário.",
+    "pagina": 33
+   },
+   "885": {
+    "texto": "Será feita a universalização do saneamento até 2029, quatro anos antes do estabelecido no novo marco de saneamento, nos 371 municípios que compõem a Unidade Regional de Serviços de Abastecimento de Água Potável e Esgotamento Sanitário - URAE-1 do Estado de São Paulo, operada pela Sabesp, além de melhorar a segurança hídrica dos paulistas.",
+    "pagina": 33
+   },
+   "887": {
+    "texto": "Os investimentos superarão R$ 70 bilhões e alcançarão",
+    "pagina": 33
+   },
+   "888": {
+    "texto": "10 milhões de pessoas que hoje ou não tem acesso à água ou não tem coleta ou tratamento de esgoto.",
+    "pagina": 33
+   },
+   "890": {
+    "texto": "Nos municípios do Estado presentes na URAE2, vamos fortalecer a governança no setor de saneamento, com foco no planejamento de forma articulada às unidades de gerenciamento de recursos hídricos e aos comitês de bacias hidrográficas, apoio técnico e acesso a linhas de financiamento na Desenvolve SP. Os municípios que optarem, dentro da URAE-2, por ingressar no programa UniversalizaSP, terão suporte técnico e financeiro do estado para alcançar a universalização, inclusive em áreas rurais e informais passíveis de consolidação, aumentar a",
+    "pagina": 33
+   },
+   "892": {
+    "texto": "segurança hídrica, com programa robusto de obras e redução de perdas d’água, e melhorar a resiliência climática, tendo a possibilidade de realizar obras e serviços de drenagem a partir de recursos do estado, no âmbito de contratos regionalizados de longo prazo.",
+    "pagina": 33
+   },
+   "895": {
+    "texto": "Levar saneamento para todos, principalmente para aqueles que nunca tiveram acesso ao abastecimento de água, coleta e tratamento de esgoto, como famílias em áreas rurais, favelas, palafitas, comunidades quilombolas e indígenas;",
+    "pagina": 33
+   },
+   "897": {
+    "texto": "Aumentar a segurança hídrica no estado;",
+    "pagina": 33
+   },
+   "899": {
+    "texto": "Sempre buscar a saneamento básico à gestão dos recursos hídricos;",
+    "pagina": 33
+   },
+   "901": {
+    "texto": "integração dos serviços de",
+    "pagina": 33
+   },
+   "903": {
+    "texto": "Promover justiça tarifária por meio do programa Tarifa",
+    "pagina": 33
+   },
+   "904": {
+    "texto": "Social Paulista.",
+    "pagina": 33
+   },
+   "1071": {
     "texto": "Concluiremos a universalização quatro anos antes da meta nacional, até 2029, na área de concessão da Sabesp. Com isso, garantiremos acesso à água tratada, coleta e tratamento de esgoto aos paulistas, levando saúde, dignidade e qualidade de vida, inclusive para famílias residentes em áreas rurais e informais passíveis de regularização.",
     "pagina": 42
    },
-   "865": {
+   "1072": {
     "texto": "Nos demais municípios paulistas, apoiaremos o caminho da universalização e construção de resiliência hídrica por meio do UniversalizaSP, que oferece apoio técnico e financeiro às prefeituras para a construção de soluções regionalizadas de saneamento, combate às perdas e ampliação da disponibilidade hídrica nas cidades. Desde julho de 2024, quando a Sabesp foi desestatizada, 2,4 milhões de pessoas passaram a ter acesso à água tratada e 4,7 milhões passaram a contar com coleta e tratamento de esgoto.",
     "pagina": 42
    },
-   "866": {
+   "1073": {
     "texto": "Em segurança hídrica, por conta do novo contrato da Sabesp, serão mais de R$ 9 bilhões investidos nos próximos anos para reduzir perdas d’água e acrescentar",
     "pagina": 42
    },
-   "867": {
+   "1074": {
     "texto": "6 mil litros de água por segundo ao abastecimento de cerca de 22 milhões de pessoas na Região Metropolitana de São Paulo. Na Baixada Santista, serão 23 reservatórios finalizados até 2029, com 130 milhões de litros a mais para os nove municípios, uma nova estação",
     "pagina": 42
    },
-   "869": {
+   "1076": {
     "texto": "6.1 de tratamento de água em Praia Grande, a construção do sistema Itatinga, que interligará Bertioga à rede da baixada, além da adutora Santos-Guarujá, em processo de conclusão, que aumentará a resiliência hídrica de Guarujá em 500 L/s. No interior paulista, mais de 400 reservatórios serão construídos até 2029, com um incremento de volume de 120 milhões de litros.",
     "pagina": 43
    },
-   "870": {
+   "1077": {
     "texto": "Na Região de Campinas, serão 85 bilhões de litros a mais de água armazenada, aumentando a segurança hídrica e beneficiando 5,5 milhões de pessoas, por meio das barragens de Pedreira e Duas Pontes e do sistema adutor do Piracicaba, Capivari e Jundiaí (PCJ).",
     "pagina": 43
    },
-   "871": {
+   "1078": {
     "texto": "Ampliaremos as ações de desassoreamento em rios e cursos d’água dos municípios paulistas, mitigando efeitos das enchentes e gerando benefícios ao meio ambiente e à população. Priorizaremos novos trechos de rios e córregos em municípios com maior vulnerabilidade socioambiental e recorrência de eventos de alagamento.",
     "pagina": 43
    },
-   "872": {
+   "1079": {
     "texto": "Expandiremos as ações de proteção de mananciais superficiais estratégicos, distribuídos em diversas regiões do estado. Desenvolveremos um projeto socioambiental que envolve recuperação e conservação de mananciais, com especial atenção às represas",
     "pagina": 43
    },
-   "873": {
+   "1080": {
     "texto": "Billings e Guarapiranga, na Região Metropolitana de São Paulo, e também nas áreas de risco, em parceria com os municípios, a partir de ações ambientais, sociais, habitacionais, de saneamento, provisão e/ou adequação de infraestrutura e equipamentos públicos.",
     "pagina": 43
    },
-   "874": {
+   "1081": {
     "texto": "Promoveremos a integração de sistemas e bases de dados por meio da implantação de plataforma única denominada Sistema Paulista de Informações sobre",
     "pagina": 43
    },
-   "875": {
+   "1082": {
     "texto": "Recursos Hídricos (SPIRH), fortalecendo a gestão hídrica estratégica e o acesso à informação.",
     "pagina": 43
    },
-   "876": {
+   "1083": {
     "texto": "Seguiremos avançando no aprimoramento contínuo da metodologia de curvas de prevenção e contingência lançadas em 2025, com governança integrada entre agências reguladoras, e no âmbito do Comitê Gestor da Política Estadual de Mudanças Climáticas. Por meio dela e do Hub criado pela SP Águas, monitoraremos a situação hídrica do Estado de São Paulo e acompanharemos a evolução das obras previstas e em andamento para o fortalecimento da resiliência hídrica paulista.",
     "pagina": 43
    },
-   "877": {
-    "texto": "Criaremos o Programa Estadual de Pagamentos por Serviços Ambientais Hídricos, voltado à produção de água, melhoria da qualidade hídrica e aumento da resiliência climática das bacias paulistas, com foco em pequenas propriedades rurais, agricultura familiar e territórios tradicionais.",
-    "pagina": 43
+   "1098": {
+    "texto": "O Tietê, maior e mais importante rio de São Paulo, voltará a ser orgulho dos paulistas, por meio do IntegraTietê, maior programa de revitalização do rio e de seus afluentes da história, com investimentos previstos de mais de R$ 30 bilhões até 2029.",
+    "pagina": 44
    },
-   "936": {
+   "1100": {
+    "texto": "O programa está planejado em cinco pilares: (1) Saúde e Qualidade de Vida, que envolve a universalização do saneamento e redução da carga orgânica de esgoto até 2029; (2) Controle de Cheias, com foco no desassoreamento e retirada de resíduos sólidos; (3)",
+    "pagina": 44
+   },
+   "1101": {
+    "texto": "Turismo, Lazer e Integração, a partir da construção de novos parques, restauração ecológica e fomento ao turismo; (4) Eficiência Logística, com as melhorias na Hidrovia Tietê-Paraná; e (5) Governança, a partir do fórum de monitoramento com os comitês de bacias",
+    "pagina": 44
+   },
+   "1102": {
+    "texto": "(FIAR Tietê) e fiscalização integrada com municípios e órgãos estaduais.",
+    "pagina": 44
+   },
+   "1104": {
+    "texto": "Vamos ampliar e modernizar o sistema de esgotamento sanitário da Região Metropolitana de São Paulo, com o acréscimo de 75% na capacidade de tratamento e a implantação de 2.100 km de redes e coletores de esgoto, fundamental para o alcance da universalização da coleta e tratamento de esgoto até 2029. Concluiremos projeto de sistema de controle interativo de algas e utilização de ultrassom, com o uso de algoritmos, para impedir a formação da nata verde e melhorar a qualidade de vida na região de Sabino, no médio Tietê. Promoveremos a revitalização das margens do Tietê, incluindo ações de educação ambiental e a implementação do Parque",
+    "pagina": 44
+   },
+   "1105": {
+    "texto": "Salesópolis. Também fomentaremos mais espaços de lazer, atividades culturais e esportivas, nas margens do Rio Pinheiros. Intensificaremos a fiscalização com integração ao SP CIN, mais tecnologia e uso de IA para apoio ao monitoramento.",
+    "pagina": 44
+   },
+   "1224": {
     "texto": "Em água, clima e meio ambiente, reuniremos investimentos relacionados ao abastecimento de água, saneamento, restauração ecológica, parques naturais, desassoreamento de rios, macrodrenagem, resiliência climática, gestão de resíduos e energia. O programa permitirá integrar obras de prevenção às enchentes, recuperação ambiental, segurança hídrica, adaptação às mudanças climáticas e ampliação da infraestrutura de saneamento, garantindo maior capacidade de resposta do estado a eventos extremos e mais qualidade ambiental para as cidades.",
     "pagina": 49
    }

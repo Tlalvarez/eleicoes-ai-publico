@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "assistencia-social-sp.json",
-  "gerado_em": "2026-09-13T23:21:38Z",
-  "exportado_em": "2026-09-13T23:30:03Z"
+  "gerado_em": "2026-09-14T19:45:31Z",
+  "exportado_em": "2026-09-14T19:49:49Z"
  },
  "candidatos": [
   {
@@ -34,8 +34,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Segurança alimentar",
-   "proposta": "Garantir políticas estaduais de segurança alimentar e nutricional para eliminar a fome, articuladas com a produção agrícola paulista",
+   "subtema": "Rede de assistência social e SUAS",
+   "proposta": "Fortalecer a rede de assistência social e os serviços socioassistenciais em cooperação com os municípios, combatendo vazios assistenciais",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -43,52 +43,39 @@
      "blocos": [
       262
      ],
-     "nota": "Meta de que nenhum paulista conviva com a fome, ligada à agricultura paulista"
+     "nota": "Ênfase na cooperação federativa com municípios"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      715
+      764,
+      765
      ],
-     "nota": "Articulação com PPAIS e pagamento por serviços ambientais"
+     "nota": "Foco em reorientação dos serviços e territórios vulneráveis"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Segurança alimentar",
-   "proposta": "Manter e ampliar o fornecimento de refeições subsidiadas e a doação de alimentos por meio de restaurantes populares, bancos de alimentos, cestas e distribuição de leite",
+   "subtema": "Rede de assistência social e SUAS",
+   "proposta": "Criar programa estadual de cuidado integral centrado no ciclo de vida, da primeira infância à pessoa idosa, em parceria com prefeituras e organizações da sociedade civil",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      715,
-      717
+      764,
+      795,
+      806
      ],
-     "nota": "Nomeia Bom Prato, Rede de Banco de Alimentos, Cesta Verde, Cestas Básicas e Vivaleite"
+     "nota": "Programa Cuidar Para Todos, alinhado a diretrizes da OMS"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Segurança alimentar",
-   "proposta": "Apoiar prefeituras na implantação de cozinhas-piloto, com capacitação itinerante e ações de combate ao desperdício de alimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      716
-     ],
-     "nota": "Programa Cozinhalimento com apoio do FUSSP"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Rede de assistência social e SUAS",
-   "proposta": "Fortalecer a rede de assistência social em cooperação com os municípios",
+   "proposta": "Garantir segurança alimentar à população, articulando as políticas de combate à fome com a produção agrícola paulista",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -96,36 +83,84 @@
      "blocos": [
       262
      ],
-     "nota": ""
+     "nota": "Meta de que nenhum paulista conviva com a fome"
     },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      626,
-      627
+      921,
+      922
      ],
-     "nota": "Inclui combate a vazios assistenciais e parceria com organizações da sociedade civil"
+     "nota": "Articulação com PPAIS e pagamento por serviços ambientais"
     }
    }
   },
   {
-   "id": "p5",
-   "subtema": "Rede de assistência social e SUAS",
-   "proposta": "Criar um programa estadual de cuidado integral centrado no ciclo de vida, integrando proteção social, renda, saúde, educação e participação comunitária",
+   "id": "p4",
+   "subtema": "Segurança alimentar",
+   "proposta": "Manter e integrar programas estaduais de refeições subsidiadas e doação de alimentos (restaurantes populares, bancos de alimentos, cestas e distribuição de leite)",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      622,
-      626
+      921,
+      922
      ],
-     "nota": "Programa Cuidar Para Todos"
+     "nota": "Bom Prato, Rede de Banco de Alimentos, Cesta Verde e Vivaleite"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Segurança alimentar",
+   "proposta": "Apoiar prefeituras na implantação de cozinhas comunitárias, com capacitação itinerante e ações de combate ao desperdício de alimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      923
+     ],
+     "nota": "Programa Cozinhalimento com apoio do Fundo Social"
     }
    }
   },
   {
    "id": "p6",
+   "subtema": "Combate à pobreza e renda",
+   "proposta": "Ampliar programa estadual de superação da pobreza com acompanhamento familiar personalizado e integração de políticas de renda, qualificação e inclusão produtiva",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      801,
+      868,
+      870
+     ],
+     "nota": "SuperAção SP, com Agentes de SuperAção e programas do FUSSP"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Combate à pobreza e renda",
+   "proposta": "Atingir cerca de 200 mil famílias (mais de 600 mil pessoas) atendidas pelo programa de superação da pobreza na etapa 2028-2031",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      801,
+      802
+     ],
+     "nota": "Meta numérica após R$ 1,5 bilhão na primeira fase até 2027"
+    }
+   }
+  },
+  {
+   "id": "p8",
    "subtema": "Primeira infância e famílias vulneráveis",
    "proposta": "Priorizar a primeira infância e as famílias em situação de vulnerabilidade nas políticas de proteção social",
    "n_concorda": 2,
@@ -140,70 +175,40 @@
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      626,
-      627
+      764,
+      765
      ],
-     "nota": "Foco declarado nos territórios mais vulneráveis, do nascimento ao envelhecimento"
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "População em situação de rua",
-   "proposta": "Coordenar e fortalecer a rede interfederativa de atendimento à população em situação de rua, com apoio às iniciativas municipais, gestão participativa e formação dos profissionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      504,
-      505
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "População em situação de rua",
-   "proposta": "Oferecer apoio técnico e financeiro às prefeituras para implantar moradia assistida e moradia de transição voltada à reinserção social e produtiva",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      507,
-      511
-     ],
-     "nota": ""
+     "nota": "Proteção integral de crianças e adolescentes dentro do Cuidar Para Todos"
     }
    }
   },
   {
    "id": "p9",
-   "subtema": "População em situação de rua",
-   "proposta": "Atuar de forma articulada entre as políticas de saúde e de assistência social no atendimento à população em situação de rua",
+   "subtema": "Primeira infância e famílias vulneráveis",
+   "proposta": "Acompanhar de forma integrada crianças e adolescentes órfãos em decorrência de feminicídio, assistindo suas famílias com acesso prioritário a políticas públicas",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      509
+      773,
+      774,
+      775
      ],
-     "nota": ""
+     "nota": "Inclusão dessas famílias nos programas de proteção social e no SuperAção SP"
     }
    }
   },
   {
    "id": "p10",
-   "subtema": "Crianças e adolescentes",
-   "proposta": "Assegurar proteção integral a crianças e adolescentes na rede de serviços socioassistenciais",
+   "subtema": "Primeira infância e famílias vulneráveis",
+   "proposta": "Ampliar a produção e a integração de dados sobre orfandade por feminicídio para qualificar o planejamento e o monitoramento de políticas públicas",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      627
+      776
      ],
      "nota": ""
     }
@@ -211,62 +216,48 @@
   },
   {
    "id": "p11",
-   "subtema": "Crianças e adolescentes",
-   "proposta": "Garantir acompanhamento integrado e assistência prioritária a crianças e adolescentes órfãos por feminicídio e suas famílias",
+   "subtema": "População em situação de rua",
+   "proposta": "Intensificar a coordenação da rede interfederativa de atendimento à população em situação de rua, com apoio às iniciativas municipais, gestão participativa e formação dos profissionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      635,
-      636
+      555,
+      559
      ],
-     "nota": ""
+     "nota": "Atuação articulada entre saúde e assistência social"
     }
    }
   },
   {
    "id": "p12",
-   "subtema": "Crianças e adolescentes",
-   "proposta": "Incluir famílias vítimas de feminicídio em programas de proteção social e no programa estadual de superação da pobreza, com atendimento personalizado",
+   "subtema": "População em situação de rua",
+   "proposta": "Oferecer apoio técnico e financeiro às prefeituras para implantar moradia assistida e moradia de transição voltada à reinserção social e produtiva",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      637,
-      638
-     ],
-     "nota": "Cita nominalmente o SuperAção SP"
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Crianças e adolescentes",
-   "proposta": "Ampliar a produção e a integração de dados sobre orfandade por feminicídio para planejar e monitorar políticas permanentes",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      639
+      557,
+      561
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p14",
+   "id": "p13",
    "subtema": "Pessoa idosa",
-   "proposta": "Estruturar rede integrada de atenção à pessoa idosa, com plano de cuidado individual conectado a serviços e benefícios e promoção do envelhecimento ativo",
+   "proposta": "Promover envelhecimento ativo e saudável, com ações que previnam ou retardem a perda de capacidade funcional e a necessidade de cuidados de longa duração",
    "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
-      627,
-      645
+      765,
+      795,
+      806
      ],
      "nota": ""
     }
@@ -281,72 +272,80 @@
    }
   },
   "governador-sp-tarcisio-250002541303": {
-   "504": {
-    "texto": "POPULAÇÃO EM SITUAÇÃO DE RUA",
-    "pagina": 17
-   },
-   "505": {
+   "555": {
     "texto": "Intensificaremos as ações de coordenação e organização da rede interfederativa, com apoio e fortalecimento às iniciativas municipais, gestão integrada e participativa, buscando qualidade e a melhoria contínua dos processos através de discussão de casos e formação para os profissionais envolvidos no acolhimento, escuta e encaminhamento intersetorial das demandas.",
     "pagina": 17
    },
-   "507": {
+   "557": {
     "texto": "intermediária de transição para reinserção social e produtiva.",
     "pagina": 17
    },
-   "509": {
+   "559": {
     "texto": "A atuação se dará de forma articulada entre as políticas de saúde e assistência social.",
     "pagina": 17
    },
-   "511": {
+   "561": {
     "texto": "Promoveremos apoio técnico e financeiro para fortalecimento institucional das prefeituras na implementação de moradia assistida e moradia",
     "pagina": 17
    },
-   "622": {
-    "texto": "PROGRAMA CUIDAR PARA TODOS",
-    "pagina": 29
-   },
-   "626": {
+   "764": {
     "texto": "Criaremos o Programa Cuidar Para Todos baseado na abordagem do cuidado integral e centrado no ciclo de vida, da primeira infância à pessoa idosa, envolvendo ações de cuidado e proteção social, renda, saúde, educação e participação comunitária, a serem desenvolvidas pelo Governo Tarcísio em parceria e intensa articulação com as prefeituras e organizações da sociedade civil.",
     "pagina": 29
    },
-   "627": {
+   "765": {
     "texto": "Vamos fortalecer toda a rede de serviços existentes, combater vazios assistenciais, nas esferas estadual e municipal, visando a reorientação dos serviços para um cuidado cada vez mais coordenado e centrado nas pessoas e nas famílias. Em especial, promoveremos proteção integral de crianças e adolescentes, envelhecimento ativo e saudável, com foco especial nos territórios mais vulneráveis.",
     "pagina": 29
    },
-   "635": {
+   "773": {
     "texto": "Promoveremos o acompanhamento integrado a crianças e adolescentes em situação de orfandade decorrente do feminicídio;",
     "pagina": 29
    },
-   "636": {
+   "774": {
     "texto": "Daremos assistência às famílias vítimas e acesso prioritário às políticas públicas necessárias para seu desenvolvimento e proteção;",
     "pagina": 29
    },
-   "637": {
-    "texto": "Incluiremos essas famílias, conforme suas características e necessidades, nos Programas de Proteção Social e/ou no",
+   "775": {
+    "texto": "Incluiremos essas famílias, conforme suas características e necessidades, nos Programas de Proteção Social e/ou no SuperAção SP, assegurando atendimento personalizado, fortalecimento dos vínculos familiares, proteção integral e oportunidades para construção da autonomia;",
     "pagina": 29
    },
-   "638": {
-    "texto": "SuperAção SP, assegurando atendimento personalizado, fortalecimento dos vínculos familiares, proteção integral e oportunidades para construção da autonomia;",
-    "pagina": 29
-   },
-   "639": {
+   "776": {
     "texto": "Ampliaremos a produção e integração de dados sobre orfandade por feminicídio, qualificando o planejamento, o monitoramento e a implementação de políticas públicas permanentes de prevenção, proteção e garantia de direitos;",
     "pagina": 29
    },
-   "645": {
-    "texto": "Iremos estruturar uma rede integrada de atenção à pessoa idosa, com desenvolvimento de um plano de cuidado conectado aos serviços e benefícios mais adequados às necessidades;",
-    "pagina": 29
+   "795": {
+    "texto": "O Programa Cuidar Para Todos promoverá autonomia, participação social, proteção e qualidade de vida ao longo",
+    "pagina": 30
    },
-   "715": {
+   "801": {
+    "texto": "O Programa SuperAção SP será ampliado. Na primeira fase, que vai até 2027, estão sendo investidos R$",
+    "pagina": 30
+   },
+   "802": {
+    "texto": "1,5 bilhão. Ao final, na etapa que vai de 2028 a 2031, chegaremos a cerca de 200 mil famílias atendidas, mais de 600 mil pessoas.",
+    "pagina": 30
+   },
+   "806": {
+    "texto": "do ciclo de vida, de forma a prevenir ou retardar a perda da capacidade funcional e a necessidade de cuidados de longa duração, em consonância com as diretrizes da Organização Mundial da Saúde.",
+    "pagina": 30
+   },
+   "868": {
+    "texto": "Todas as ações serão centradas nas pessoas e contarão",
+    "pagina": 32
+   },
+   "870": {
+    "texto": "com iniciativas do programa SuperAção e dos programas do Fundo Social de São Paulo (FUSSP). O objetivo é oferecer apoio e criar oportunidades reais para que as pessoas tenham vidas com autonomia, dignidade e possibilidades concretas para que possam prosperar.",
+    "pagina": 32
+   },
+   "921": {
+    "texto": "Promoveremos um programa integrado de",
+    "pagina": 34
+   },
+   "922": {
     "texto": "segurança alimentar e nutricional, envolvendo o fornecimento de refeições subsidiadas pelo Bom Prato e a doação de alimentos, por meio da Rede de Banco de Alimentos, Cesta Verde, Cestas Básicas e do Programa Vivaleite, em articulação com o Programa Paulista da Agricultura de Interesse Social (PPAIS) e com os Programas de Pagamento por Serviços Ambientais (PSA).",
     "pagina": 34
    },
-   "716": {
+   "923": {
     "texto": "Continuaremos apoiando as prefeituras na implantação de cozinhas-piloto, pelo Programa Cozinhalimento, complementado por ações de capacitação itinerante realizadas pelo FUSSP. Manteremos as ações de combate ao desperdício e de melhor aproveitamento dos alimentos.",
-    "pagina": 34
-   },
-   "717": {
-    "texto": "Desde 2023, foram investidos R$ 892,4 milhões no Bom Prato, com 26 novas unidades entregues. Uma das maiores políticas de segurança alimentar da América Latina.",
     "pagina": 34
    }
   }
