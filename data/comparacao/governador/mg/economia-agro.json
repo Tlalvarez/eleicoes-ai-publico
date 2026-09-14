@@ -11,8 +11,8 @@
  ],
  "origem": {
   "arquivo": "economia-agro-mg.json",
-  "gerado_em": "2026-09-14T02:51:26Z",
-  "exportado_em": "2026-09-14T04:36:11Z"
+  "gerado_em": "2026-09-14T11:05:48Z",
+  "exportado_em": "2026-09-14T11:32:08Z"
  },
  "candidatos": [
   {
@@ -30,6 +30,14 @@
    "numero": "10",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017111301",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002552296/MG"
+  },
+  {
+   "slug": "governador-mg-flavio-roscoe-130002550834",
+   "nome": "Flávio Roscoe",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017092515",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002550834/MG"
   },
   {
    "slug": "governador-mg-gabriel-130002549557",
@@ -59,16 +67,17 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Assistência técnica, pesquisa e defesa agropecuária",
-   "proposta": "Fortalecer a pesquisa agropecuária e a assistência técnica e extensão rural, com valorização da Epamig e da Emater-MG",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer a assistência técnica e extensão rural por meio da Emater-MG, ampliando seu alcance junto a pequenos e médios produtores",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
      "blocos": [
+      66,
       68
      ],
-     "nota": ""
+     "nota": "Assistência técnica apoiada em soluções digitais"
     },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -81,7 +90,6 @@
      "posicao": "concorda",
      "blocos": [
       384,
-      385,
       398
      ],
      "nota": ""
@@ -106,16 +114,32 @@
   },
   {
    "id": "p2",
-   "subtema": "Assistência técnica, pesquisa e defesa agropecuária",
-   "proposta": "Apoiar a assistência técnica em soluções digitais e na difusão de tecnologias de agricultura de precisão",
-   "n_concorda": 2,
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer a pesquisa agropecuária estadual (Epamig) e a difusão de tecnologia ao produtor",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
      "blocos": [
-      66
+      68
      ],
      "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      384,
+      385
+     ],
+     "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      124,
+      125
+     ],
+     "nota": "Foco em adaptação climática e produtividade"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -128,77 +152,8 @@
   },
   {
    "id": "p3",
-   "subtema": "Assistência técnica, pesquisa e defesa agropecuária",
-   "proposta": "Fortalecer o sistema estadual de defesa sanitária animal e vegetal, modernizando o IMA e ampliando vigilância e capacidade laboratorial",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      444,
-      445
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1826,
-      1827,
-      1828
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      384,
-      385
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      180
-     ],
-     "nota": "Foco em preservar o status sanitário para abrir mercados"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Assistência técnica, pesquisa e defesa agropecuária",
-   "proposta": "Ampliar os sistemas de rastreabilidade e certificação da produção como condição de acesso a mercados exigentes",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      67
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      445
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1813
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Água, irrigação e sustentabilidade rural",
-   "proposta": "Ampliar a irrigação e a segurança hídrica da produção agropecuária",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar a segurança hídrica e a irrigação da produção agropecuária",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -206,7 +161,7 @@
      "blocos": [
       65
      ],
-     "nota": "Ênfase em projetos estruturantes e na agricultura familiar e média"
+     "nota": "Ênfase em projetos estruturantes e agricultura familiar e média"
     },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -233,15 +188,84 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Água, irrigação e sustentabilidade rural",
-   "proposta": "Fortalecer os polos irrigados existentes, como Jaíba e Vale do Picão, e ampliar reservatórios",
+   "id": "p4",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer polos irrigados já existentes, como Jaíba e Vale do Picão",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       173
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer e modernizar a defesa agropecuária estadual para preservar o status sanitário e o acesso a mercados",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      384,
+      385
+     ],
+     "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      444,
+      445
+     ],
+     "nota": "Modernizar o IMA, vigilância, laboratórios e rastreabilidade digital"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1826,
+      1827,
+      1828
+     ],
+     "nota": "Recuperar capacidade do IMA e facilitar formalização de pequenos"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar instrumentos de rastreabilidade e certificação da produção agropecuária",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      67
+     ],
+     "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      445
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1813
      ],
      "nota": ""
     }
@@ -249,57 +273,9 @@
   },
   {
    "id": "p7",
-   "subtema": "Água, irrigação e sustentabilidade rural",
-   "proposta": "Promover práticas de produção sustentável, com recuperação de pastagens e áreas degradadas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      69
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      173
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      403
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Água, irrigação e sustentabilidade rural",
-   "proposta": "Ampliar a transição agroecológica e reduzir o uso de agrotóxicos, regulamentando e implementando a Política e o Plano Estaduais de Agroecologia e Produção Orgânica",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      403,
-      404,
-      405,
-      406,
-      407
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Agroindústria e agregação de valor no campo",
-   "proposta": "Estimular a agroindustrialização e a agregação de valor à produção agropecuária dentro do estado",
-   "n_concorda": 5,
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Estimular a agroindustrialização e a agregação de valor à produção rural dentro do estado",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
@@ -311,7 +287,8 @@
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      177
+      177,
+      179
      ],
      "nota": ""
     },
@@ -322,27 +299,20 @@
      ],
      "nota": ""
     },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      125
-     ],
-     "nota": ""
-    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
       1804,
       1810
      ],
-     "nota": "Localizar a agroindústria nas próprias regiões produtoras"
+     "nota": "Agroindústria como instrumento de interiorização"
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Agroindústria e agregação de valor no campo",
-   "proposta": "Simplificar exigências sanitárias e apoiar a formalização de pequenos empreendimentos e da agroindústria artesanal",
+   "id": "p8",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Simplificar as exigências sanitárias e apoiar a formalização da agroindústria artesanal e dos produtos tradicionais",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -355,6 +325,7 @@
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
+      177,
       178,
       179
      ],
@@ -371,22 +342,15 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Agroindústria e agregação de valor no campo",
-   "proposta": "Expandir selos de qualidade, origem e indicação geográfica para produtos regionais mineiros",
-   "n_concorda": 3,
+   "id": "p9",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Expandir selos de qualidade, indicação geográfica e origem dos produtos regionais mineiros",
+   "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       179
-     ],
-     "nota": ""
-    },
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      68
      ],
      "nota": ""
     },
@@ -401,183 +365,8 @@
    }
   },
   {
-   "id": "p12",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Fortalecer a agricultura familiar e os pequenos produtores, ampliando acesso a assistência técnica, crédito, tecnologia e mercados",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      161,
-      396,
-      398
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1817
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      174
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      125
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Ampliar as compras públicas de alimentos da agricultura familiar para escolas, hospitais e redes públicas, articulando PAA e PNAE",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      175
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      159,
-      397
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Criar programa de sucessão rural e permanência da juventude no campo, com capacitação e oportunidades de trabalho",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      176
-     ],
-     "nota": "Capacitação em agricultura digital, gestão e empreendedorismo"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      399
-     ],
-     "nota": "Implementar a Lei Federal 15.178/2025 de juventude e sucessão rural"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Promover a reforma agrária com assistência técnica, crédito, infraestrutura e inclusão produtiva dos assentamentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      162,
-      399
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Aplicar rigor absoluto contra invasões de terra, com acionamento imediato das forças de segurança em defesa da propriedade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      182
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Ampliar políticas específicas para mulheres camponesas, com acesso à terra, à água, ao crédito e a equipamentos produtivos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      166,
-      401
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Efetivar a Política Estadual de Apoio à Agricultura Urbana e periurbana",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      411
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Fortalecer a Política Estadual de Desenvolvimento Rural Sustentável da Agricultura Familiar (PEDRAF)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      412
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Agricultura familiar e desenvolvimento rural",
-   "proposta": "Fortalecer o Conselho Estadual de Desenvolvimento Rural Sustentável como espaço de articulação das políticas rurais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1818
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
+   "id": "p10",
+   "subtema": "Agricultura e desenvolvimento rural",
    "proposta": "Ampliar o acesso ao crédito rural para o pequeno e o médio produtor",
    "n_concorda": 4,
    "posicoes": {
@@ -593,7 +382,7 @@
      "blocos": [
       180
      ],
-     "nota": ""
+     "nota": "Linhas de crédito subsidiado via BDMG"
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -601,7 +390,7 @@
       159,
       396
      ],
-     "nota": ""
+     "nota": "Inclui crédito diferenciado, seguro e acesso facilitado ao Pronaf"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -613,39 +402,9 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
-   "proposta": "Ofertar linhas de crédito rural subsidiado por meio do BDMG",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      180
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
-   "proposta": "Instituir subsídios e crédito diferenciado para a agricultura camponesa agroecológica",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      400
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
-   "proposta": "Dar continuidade e escala à regularização fundiária rural, conectando os regularizados a crédito e assistência",
+   "id": "p11",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Dar escala à regularização fundiária rural como condição de acesso a crédito e políticas públicas",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -655,6 +414,13 @@
      ],
      "nota": ""
     },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      162
+     ],
+     "nota": "Vinculada à reforma agrária"
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -663,22 +429,37 @@
       2276,
       2277
      ],
+     "nota": "Uso de geoinformação e conexão do titulado a crédito e ATER"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar a conectividade e a internet de alta velocidade no meio rural",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      66
+     ],
      "nota": ""
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      162
+      386
      ],
-     "nota": "Vinculada à reforma agrária"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p25",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
-   "proposta": "Ampliar a infraestrutura rural — estradas, logística, energia e conectividade — para o escoamento da produção",
-   "n_concorda": 3,
+   "id": "p13",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar investimentos em infraestrutura rural, estradas e logística de escoamento da produção",
+   "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -693,35 +474,215 @@
       1839,
       1840
      ],
-     "nota": "Parceria com municípios na identificação de trechos críticos"
-    },
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      66
-     ],
-     "nota": "Ênfase em internet de alta velocidade no meio rural"
+     "nota": "Parceria com municípios para identificar trechos críticos"
     }
    }
   },
   {
-   "id": "p26",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
-   "proposta": "Expandir a rede elétrica trifásica e fomentar energia renovável (solar e biodigestores) nas propriedades rurais",
-   "n_concorda": 1,
+   "id": "p14",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Promover práticas de produção sustentável no campo, com recuperação de pastagens e áreas degradadas",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      69
+     ],
+     "nota": "Inclui sistemas integrados de produção"
+    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      181
+      173,
+      187
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
+   "id": "p15",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar as compras públicas institucionais da agricultura familiar para abastecer escolas e unidades públicas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      175
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      159,
+      397
+     ],
+     "nota": "Articulação com PAA, PNAE e Conab"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer a agricultura familiar como política estratégica, ampliando acesso a tecnologia, infraestrutura e mercados",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      174
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      161,
+      396,
+      412
+     ],
+     "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      125
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1817
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Criar programa de sucessão rural e permanência da juventude no campo, com capacitação e agricultura digital",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      176
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      399
+     ],
+     "nota": "Implementar em MG a Lei Federal nº 15.178/2025"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Promover a reforma agrária com inclusão produtiva dos assentamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      162,
+      399
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Aplicar rigor máximo contra invasões de terra, com acionamento imediato das forças de segurança em defesa da propriedade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      182
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar a transição agroecológica e reduzir o uso de agrotóxicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      400,
+      403
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Regulamentar e implementar a Política e o Plano Estadual de Agroecologia e Produção Orgânica, com orçamento e metas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      404,
+      405,
+      406,
+      407
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar políticas para mulheres do campo, garantindo acesso à terra, à água, ao crédito e a tecnologias apropriadas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      166,
+      401
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Efetivar a Política Estadual de Apoio à Agricultura Urbana e periurbana",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      411
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Agricultura e desenvolvimento rural",
    "proposta": "Criar ambiente digital único para licenças, certidões e inspeções do setor agropecuário",
    "n_concorda": 1,
    "posicoes": {
@@ -735,8 +696,23 @@
    }
   },
   {
-   "id": "p28",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
+   "id": "p25",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Expandir a rede elétrica trifásica e fomentar energia renovável nas propriedades rurais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      181
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Agricultura e desenvolvimento rural",
    "proposta": "Ampliar o georreferenciamento e a patrulha rural digital para coibir crimes no campo",
    "n_concorda": 1,
    "posicoes": {
@@ -744,6 +720,9 @@
      "posicao": "concorda",
      "blocos": [
       183,
+      184,
+      185,
+      186,
       187
      ],
      "nota": ""
@@ -751,32 +730,341 @@
    }
   },
   {
-   "id": "p29",
-   "subtema": "Crédito rural, fundiário e infraestrutura no campo",
-   "proposta": "Organizar a política agrícola a partir das diferenças territoriais e das necessidades de cada cadeia produtiva",
+   "id": "p27",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer os conselhos e instâncias de participação do desenvolvimento rural",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1800,
-      1801
+      1818
+     ],
+     "nota": "Fortalecimento do CEDRAF-MG"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      412
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Implantar política estadual de qualificação profissional alinhada às cadeias produtivas e à demanda regional do mercado",
+   "n_concorda": 5,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      57
+     ],
+     "nota": ""
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      196
+     ],
+     "nota": "Cursos gratuitos regionais com empresas locais"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      346,
+      371
+     ],
+     "nota": "Parceria com universidades, IFs, Sistema S e escolas técnicas"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      186
+     ],
+     "nota": "Qualificação ligada às cadeias de minerais críticos"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1569,
+      1571,
+      1572,
+      1900,
+      2040,
+      2041
+     ],
+     "nota": "Mapas regionais de demanda profissional e avaliação por inserção"
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Vincular a qualificação profissional aos novos investimentos atraídos, formando trabalhadores antes da inauguração dos empreendimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2045,
+      2046
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Criar programa estadual de primeiro emprego e formação digital para jovens",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      197
+     ],
+     "nota": "Foco em jovens de periferias e do interior, em tecnologia e dados"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      368,
+      369
+     ],
+     "nota": "Plano Estadual de Emprego para a Juventude com incentivo a empresas"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2060,
+      2061
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Modernizar e integrar o Sistema Nacional de Emprego estadual para aproximar trabalhadores e vagas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1565
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      265
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Criar cadastro estadual de profissionais com mais de 50 anos e banco de trabalhadores com deficiência vinculados ao SINE",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      265
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Estender os cadastros de recolocação profissional a mães solo em retorno ao mercado de trabalho",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      266
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Oferecer requalificação a trabalhadores já no mercado, especialmente os afetados por automação e transição energética",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2050,
+      2055,
+      2056,
+      2921,
+      2923
      ],
      "nota": ""
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      383
+      371
      ],
-     "nota": "Articulação SEAPA-MAPA e fortalecimento de cadeias estratégicas"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p30",
-   "subtema": "Mineração e agregação de valor mineral",
-   "proposta": "Promover o beneficiamento e a industrialização da produção mineral dentro de Minas Gerais, em vez de exportar matéria-prima",
+   "id": "p35",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Considerar prioritariamente mulheres, população negra, jovens e pessoas com deficiência nas políticas de emprego, crédito e qualificação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1706,
+      1791,
+      1899,
+      2064,
+      2136
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      367
+     ],
+     "nota": "Enfrentar desigualdades salariais de gênero e raça"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Combater a pejotização, a terceirização abusiva e outras formas de precarização das relações de trabalho",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      366,
+      370
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Colaborar com a União no combate ao trabalho escravo contemporâneo, com proteção às vítimas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      352
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Fortalecer o Conselho Estadual do Trabalho, Emprego e Renda como espaço tripartite de diálogo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1566
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Criar política estadual de emprego verde e cadeias produtivas sustentáveis, com uso de compras públicas e fóruns regionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      375,
+      376
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1570,
+      1795
+     ],
+     "nota": "Sem política nominada; formação e indústria para economia de baixo carbono"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Instalar rede estadual de pontos de apoio a trabalhadores por aplicativo em ativos e equipamentos do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      258
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Articular a política de trabalho e renda com a assistência social e a inclusão produtiva de pessoas em vulnerabilidade",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1565,
+      1892
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      371
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Mineração, minerais críticos e diversificação",
+   "proposta": "Promover a agregação de valor à produção mineral, estimulando beneficiamento e transformação dentro do estado",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -798,7 +1086,7 @@
      "blocos": [
       261
      ],
-     "nota": ""
+     "nota": "Cita ferro, ouro, bauxita, manganês e nióbio"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -812,7 +1100,6 @@
      "posicao": "concorda",
      "blocos": [
       1713,
-      1714,
       1718,
       1719
      ],
@@ -821,10 +1108,10 @@
    }
   },
   {
-   "id": "p31",
-   "subtema": "Mineração e agregação de valor mineral",
-   "proposta": "Instituir política estadual específica para minerais críticos e terras raras, com pesquisa e formação de cadeias industriais",
-   "n_concorda": 4,
+   "id": "p43",
+   "subtema": "Mineração, minerais críticos e diversificação",
+   "proposta": "Instituir política estadual específica de minerais críticos e terras raras, com pesquisa, formação de fornecedores e atração industrial",
+   "n_concorda": 3,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -839,7 +1126,7 @@
      "blocos": [
       145
      ],
-     "nota": ""
+     "nota": "Programa Mineração do Futuro"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -849,21 +1136,14 @@
       1725,
       1726
      ],
-     "nota": "Usar o LABFAB de ímãs e direitos minerários da Codemge como base"
-    },
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      54
-     ],
-     "nota": ""
+     "nota": "Usar o LABFAB de ímãs e direitos minerários da Codemge"
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Mineração e agregação de valor mineral",
-   "proposta": "Criar polo estadual de industrialização do lítio, condicionando a exploração a etapas de beneficiamento e fabricação de componentes no estado",
+   "id": "p44",
+   "subtema": "Mineração, minerais críticos e diversificação",
+   "proposta": "Criar polo estadual de industrialização do lítio, condicionando a exploração a etapas locais de beneficiamento e fabricação de componentes",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -876,9 +1156,9 @@
    }
   },
   {
-   "id": "p33",
-   "subtema": "Mineração e agregação de valor mineral",
-   "proposta": "Incentivar o aproveitamento econômico de rejeitos da mineração",
+   "id": "p45",
+   "subtema": "Mineração, minerais críticos e diversificação",
+   "proposta": "Incentivar o aproveitamento econômico de rejeitos de mineração",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -891,19 +1171,11 @@
    }
   },
   {
-   "id": "p34",
-   "subtema": "Mineração e agregação de valor mineral",
+   "id": "p46",
+   "subtema": "Mineração, minerais críticos e diversificação",
    "proposta": "Diversificar a economia das regiões mineradoras para reduzir a dependência da mineração",
    "n_concorda": 3,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      265,
-      355
-     ],
-     "nota": ""
-    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
@@ -911,9 +1183,19 @@
      ],
      "nota": ""
     },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      265,
+      355,
+      356
+     ],
+     "nota": "Converter receitas minerais em educação, ciência e novas atividades"
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      1714,
       1769
      ],
      "nota": ""
@@ -921,18 +1203,19 @@
    }
   },
   {
-   "id": "p35",
-   "subtema": "Mineração e agregação de valor mineral",
-   "proposta": "Desenvolver e qualificar fornecedores mineiros para as cadeias minerais e industriais",
+   "id": "p47",
+   "subtema": "Mineração, minerais críticos e diversificação",
+   "proposta": "Desenvolver cadeia de fornecedores mineiros para os grandes investimentos minerais e industriais",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
       1734,
-      1735
+      1735,
+      1790
      ],
-     "nota": "Sem proteção artificial à competição"
+     "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -944,290 +1227,9 @@
    }
   },
   {
-   "id": "p36",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Implementar política estadual de desenvolvimento industrial/reindustrialização com foco em agregação de valor e empregos qualificados",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      349
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1704,
-      1755
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      119
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Priorizar setores com déficit estrutural e alta dependência de importações, como insumos químicos, farmacêuticos e cadeias agroindustriais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      119
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Construir a política industrial sobre condições permanentes de competitividade, e não sobre incentivos fiscais ou escolha pontual de empresas e setores",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1755,
-      1766
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Adotar estratégias regionalizadas de desenvolvimento conforme as vocações produtivas de cada território",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      55
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      146
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      356
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1770,
-      1784,
-      1785,
-      1787
-     ],
-     "nota": "Polos produtivos regionais sem vocação rígida por território"
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Fortalecer arranjos produtivos locais e governanças regionais, com reposicionamento da Codemge no financiamento de infraestrutura e feiras",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      146
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1790
-     ],
-     "nota": "Estímulo a APLs e redes de fornecedores"
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Apoiar inovação, transformação digital e capacitação gerencial de pequenas e médias empresas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      348
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      142
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1882
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Ampliar os editais do Compete Minas com metas regionalizadas e procedimentos simplificados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      142
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Aproximar universidades e centros de pesquisa do setor produtivo para transformar conhecimento em inovação",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      119,
-      125
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      990,
-      1845
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      142
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Apoiar startups, aceleração de negócios e economia criativa",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      351
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      142
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1875,
-      1895
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Atrair investimentos alinhados à sustentabilidade, energia limpa e economia de baixo carbono",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      59
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      990,
-      1795
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      374,
-      375
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Fomentar a economia do cuidado e da longevidade como nova cadeia econômica e de empregos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1874,
-      1875
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      375
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p47",
+   "id": "p48",
    "subtema": "Turismo",
-   "proposta": "Estruturar e integrar roteiros e circuitos turísticos regionais a partir das vocações locais",
+   "proposta": "Estruturar e regionalizar roteiros e circuitos turísticos integrando municípios e vocações locais",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -1258,11 +1260,12 @@
       158,
       159
      ],
-     "nota": ""
+     "nota": "Fortalecer consórcios regionais"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      1908,
       1917,
       1918
      ],
@@ -1271,9 +1274,40 @@
    }
   },
   {
-   "id": "p48",
+   "id": "p49",
    "subtema": "Turismo",
-   "proposta": "Qualificar profissionalmente os trabalhadores e pequenos empreendedores do setor turístico",
+   "proposta": "Estruturar política permanente de captação de eventos e calendário anual para reduzir a sazonalidade turística",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      107
+     ],
+     "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      157,
+      161
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1945,
+      1946
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Turismo",
+   "proposta": "Qualificar profissionalmente os trabalhadores do setor de turismo e hospitalidade",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -1286,7 +1320,6 @@
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      539,
       545
      ],
      "nota": ""
@@ -1297,20 +1330,22 @@
       1950,
       1951
      ],
-     "nota": ""
+     "nota": "Formação a partir da demanda de cada destino, com Sistema S e escolas técnicas"
     }
    }
   },
   {
-   "id": "p49",
+   "id": "p51",
    "subtema": "Turismo",
-   "proposta": "Investir em infraestrutura básica de recepção nos destinos: sinalização, acessibilidade e centros de atendimento ao turista",
-   "n_concorda": 2,
+   "proposta": "Investir em infraestrutura básica dos destinos: sinalização, acessibilidade e centros de atendimento ao turista",
+   "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       230,
+      231,
+      232,
       233
      ],
      "nota": ""
@@ -1318,46 +1353,24 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1940
+      1908,
+      1956
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Turismo",
-   "proposta": "Estruturar política permanente de captação e qualificação de eventos, com calendário anual que reduza a sazonalidade",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      107
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1945,
-      1946
-     ],
-     "nota": ""
+     "nota": "Organizar o destino antes de promovê-lo"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      161
+      157
      ],
-     "nota": "Calendário permanente nas estâncias hidrominerais"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p51",
+   "id": "p52",
    "subtema": "Turismo",
-   "proposta": "Ampliar a promoção de Minas Gerais como destino no Brasil e no exterior, incluindo presença em feiras",
+   "proposta": "Ampliar a promoção de Minas Gerais como destino no Brasil e no exterior, com presença em feiras e marca turística",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -1365,23 +1378,22 @@
      "blocos": [
       546
      ],
-     "nota": ""
+     "nota": "Destaque aos patrimônios da UNESCO"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1955,
-      1956
+      1955
      ],
-     "nota": "Promoção condicionada à estrutura real de recepção do destino"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p52",
+   "id": "p53",
    "subtema": "Turismo",
-   "proposta": "Profissionalizar a gestão do turismo e dos equipamentos, com perfil técnico e foco na experiência do visitante",
-   "n_concorda": 2,
+   "proposta": "Profissionalizar a gestão estadual do turismo e dos equipamentos culturais, com perfil técnico e padrão de manutenção",
+   "n_concorda": 1,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -1390,19 +1402,11 @@
       157
      ],
      "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1908,
-      1911
-     ],
-     "nota": ""
     }
    }
   },
   {
-   "id": "p53",
+   "id": "p54",
    "subtema": "Turismo",
    "proposta": "Criar programa estadual para transformar as estâncias hidrominerais em plataforma de turismo e serviços, com operação por concessão ou parceria",
    "n_concorda": 1,
@@ -1418,9 +1422,9 @@
    }
   },
   {
-   "id": "p54",
+   "id": "p55",
    "subtema": "Turismo",
-   "proposta": "Fortalecer o turismo rural e de base comunitária, com participação de comunidades tradicionais",
+   "proposta": "Apoiar o turismo rural, de base comunitária e de povos e comunidades tradicionais",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -1442,9 +1446,9 @@
    }
   },
   {
-   "id": "p55",
+   "id": "p56",
    "subtema": "Turismo",
-   "proposta": "Tornar destinos, equipamentos e serviços turísticos acessíveis e inclusivos a públicos com necessidades específicas",
+   "proposta": "Promover turismo acessível e inclusivo, adaptando destinos e serviços a pessoas com deficiência, idosas e famílias",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1458,9 +1462,9 @@
    }
   },
   {
-   "id": "p56",
+   "id": "p57",
    "subtema": "Turismo",
-   "proposta": "Apoiar pequenos negócios da cadeia turística com crédito, microcrédito e apoio à comercialização",
+   "proposta": "Apoiar pequenos negócios e empreendedores da cadeia do turismo com crédito, microcrédito e apoio à comercialização",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -1474,6 +1478,7 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      1912,
       1951
      ],
      "nota": ""
@@ -1481,16 +1486,16 @@
    }
   },
   {
-   "id": "p57",
+   "id": "p58",
    "subtema": "Turismo",
-   "proposta": "Regionalizar a política estadual de turismo com agenda permanente de cooperação com os municípios",
+   "proposta": "Estabelecer agenda permanente de cooperação com gestores municipais de turismo e articulação multissetorial da política",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      537,
       538,
+      539,
       540
      ],
      "nota": ""
@@ -1498,336 +1503,17 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1908
+      1908,
+      1936
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Implantar política estadual de qualificação profissional alinhada às cadeias produtivas e às demandas regionais do mercado de trabalho",
-   "n_concorda": 5,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      57
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": "Cursos gratuitos regionais em cooperação com empresas locais"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      346,
-      371
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1569,
-      1570,
-      1572,
-      1900,
-      2040
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      186
-     ],
-     "nota": "Qualificação vinculada às cadeias de minerais críticos"
     }
    }
   },
   {
    "id": "p59",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Ampliar parcerias com universidades, institutos federais, Sistema S e escolas técnicas na formação profissional",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      346
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1571,
-      2041,
-      2051
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      125
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Criar programa estadual de primeiro emprego, estágio e aprendizagem para jovens",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      368,
-      369
-     ],
-     "nota": "Com incentivo a empresas que contratem jovens"
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      197
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2060,
-      2061
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Oferecer formação em tecnologia, dados e programação para jovens das periferias e do interior",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      197
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Criar programas de requalificação para trabalhadores adultos afetados por automação, digitalização e transição energética",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2050,
-      2055,
-      2056,
-      2921,
-      2923
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Construir mapas regionais de demanda profissional e avaliar a política de qualificação pela inserção e permanência no emprego",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1571,
-      2036,
-      2040,
-      2042,
-      2073,
-      2075
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Antecipar a formação profissional vinculada aos novos investimentos atraídos, antes da inauguração dos empreendimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2045,
-      2046
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Reorganizar a política estadual de trabalho, modernizando o Sine e a intermediação de mão de obra e fortalecendo o Conselho Estadual do Trabalho",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1565,
-      1566
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      371
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p66",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Considerar mulheres, população negra, pessoas com deficiência e jovens vulneráveis nas políticas de qualificação, crédito e empreendedorismo",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1706,
-      1791,
-      1899,
-      2064,
-      2136
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      367
-     ],
-     "nota": "Foco no enfrentamento das desigualdades salariais de gênero e raça"
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Combater a pejotização, a terceirização abusiva e demais formas de precarização do trabalho",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      366
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p68",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Colaborar com a União no combate ao trabalho escravo contemporâneo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      352
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p69",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Defender a saúde e a segurança no trabalho",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      370
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p70",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Enfrentar a informalidade como agenda de competitividade e isonomia concorrencial",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      58
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Instalar rede estadual de pontos de apoio a trabalhadores por aplicativo em equipamentos e áreas sob gestão do Estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      258
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p72",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Criar política estadual de emprego verde articulada à reindustrialização, usando compras públicas e fóruns regionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      374,
-      376
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p73",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Desburocratizar e digitalizar a abertura e a operação de empresas no estado",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Dar continuidade à desburocratização e simplificação para abrir e operar empresas",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -1843,7 +1529,7 @@
       138,
       139
      ],
-     "nota": "Expandir REDESIM+Livre e as Salas Mineiras do Empreendedor com o Sebrae"
+     "nota": "Expansão da REDESIM+Livre e Salas Mineiras do Empreendedor, com Sebrae"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -1856,9 +1542,9 @@
    }
   },
   {
-   "id": "p74",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Garantir segurança jurídica e previsibilidade regulatória ao investimento produtivo",
+   "id": "p60",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Garantir segurança jurídica e previsibilidade regulatória ao investimento produtivo, com resposta tempestiva do Estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -1871,55 +1557,114 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1704
+      1704,
+      1776
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p75",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Acompanhar grandes projetos do anúncio à implantação, identificando e destravando entraves administrativos",
+   "id": "p61",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Enfrentar a informalidade como agenda de competitividade e isonomia concorrencial",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
+    "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
      "blocos": [
-      1776,
-      2085
+      58
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p76",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Dar capilaridade regional à atração de investimentos, com agentes da Invest Minas nas macrorregiões e metas para municípios de pequeno e médio porte",
-   "n_concorda": 2,
+   "id": "p62",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Revisar o regime de substituição tributária do ICMS, com grupo de trabalho que inclua a sociedade civil",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
+    "governador-mg-flavio-roscoe-130002550834": {
      "posicao": "concorda",
      "blocos": [
-      143
+      248
      ],
      "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Ampliar o limite mensal de transferência de crédito acumulado de ICMS e dispensar a exigência de CND para essa finalidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      249
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Tornar regra geral o diferimento do ICMS na importação de matéria-prima e ativo imobilizado, independentemente do estado de desembaraço, com liberação automática da carga",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      250
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Criar selo estadual de empresa cumpridora, renovável anualmente, com acesso facilitado a crédito de ICMS e regimes especiais para quem mantém regularidade fiscal e emprego",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      251
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Revisar o modelo de incentivos fiscais, reavaliando isenções a setores que não agregam valor no estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      274
+     ],
+     "nota": "Foco em isenções à mineração sem agregação de valor"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      2088,
-      2089
+      1755
      ],
-     "nota": "Atração regionalizada baseada em viabilidade, não em distribuição artificial"
+     "nota": "Política industrial não baseada apenas em incentivos fiscais"
     }
    }
   },
   {
-   "id": "p77",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Manter agenda permanente de formulação e avaliação de políticas com entidades do setor produtivo e trabalhadores",
+   "id": "p67",
+   "subtema": "Ambiente de negócios e tributação",
+   "proposta": "Manter agenda permanente de formulação e avaliação de políticas econômicas com entidades do setor produtivo e trabalhadores",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -1927,43 +1672,123 @@
      "blocos": [
       149
      ],
+     "nota": "Sebrae, Fiemg, Fecomércio, FCDL, associações e cooperativas"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2139,
+      2140,
+      2141
+     ],
+     "nota": "Governança com indicadores e carteira de iniciativas"
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Implementar política estadual de desenvolvimento industrial e reindustrialização articulando financiamento, inovação e infraestrutura",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      349
+     ],
      "nota": ""
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      2070,
-      2140
+      1755,
+      1766
      ],
      "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      119
+     ],
+     "nota": "Prioriza setores com déficit estrutural e dependência de importações"
     }
    }
   },
   {
-   "id": "p78",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Estruturar relacionamento permanente com empresas já instaladas para viabilizar retenção e expansão de investimentos",
-   "n_concorda": 1,
+   "id": "p69",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Adotar estratégias regionalizadas de desenvolvimento e polos produtivos conforme as vocações de cada território",
+   "n_concorda": 4,
    "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      55
+     ],
+     "nota": ""
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      146
+     ],
+     "nota": "Reposicionar a Codemge e governanças regionais"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      356,
+      372
+     ],
+     "nota": ""
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1775,
-      2093
+      1770,
+      1784,
+      1785,
+      1786,
+      1787
+     ],
+     "nota": "Lista vocações por macrorregião, sem vocação rígida"
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Fortalecer Arranjos Produtivos Locais e a cooperação entre empresas de uma mesma cadeia regional",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      142,
+      146
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1790
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p79",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Apoiar os municípios a preparar estratégias de desenvolvimento local e atendimento a investidores",
+   "id": "p71",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Apoiar os municípios na preparação de estratégias de desenvolvimento econômico local e de áreas empresariais",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      1787,
       2363,
       2364
      ],
@@ -1975,32 +1800,150 @@
       139,
       146
      ],
-     "nota": "Apoio à modernização de legislações municipais e governanças regionais"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p80",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Instituir governança única da política econômica, com prioridades, carteira de projetos e indicadores de investimento realizado, emprego e renda",
-   "n_concorda": 1,
+   "id": "p72",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Fortalecer a economia solidária, o cooperativismo e as atividades produtivas de base territorial, com acesso a mercados e compras públicas",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      350,
+      356
+     ],
+     "nota": ""
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1705,
-      1707,
-      2139,
-      2141
+      1891
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p81",
-   "subtema": "Crédito e fomento",
-   "proposta": "Ampliar o crédito público a micro, pequenas e médias empresas por meio do BDMG, com capilaridade no interior",
+   "id": "p73",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Desenvolver a economia do cuidado e da longevidade como nova frente de atividade econômica e emprego",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1874,
+      1875
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      375
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Inovação, PMEs e empreendedorismo",
+   "proposta": "Ampliar programas e editais estaduais de inovação e transformação digital voltados a micro, pequenas e médias empresas",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": "Compete Minas com metas regionalizadas e procedimentos simplificados"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      348
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1882
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Inovação, PMEs e empreendedorismo",
+   "proposta": "Apoiar aceleração de startups e a economia criativa como frentes de geração de renda",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      351
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1875,
+      1895
+     ],
+     "nota": ""
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Inovação, PMEs e empreendedorismo",
+   "proposta": "Integrar ambientes de inovação, universidades e centros de pesquisa ao setor produtivo",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      119,
+      125
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      990,
+      1845
+     ],
+     "nota": ""
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Crédito e fomento público",
+   "proposta": "Expandir o crédito do banco estadual de desenvolvimento para micro e pequenas empresas, com descentralização no interior",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -2023,44 +1966,46 @@
       1779,
       1780
      ],
-     "nota": "Crédito orientado às prioridades produtivas e a corrigir diferenças regionais"
+     "nota": "BDMG orientado a prioridades produtivas e correção de desigualdade regional"
     }
    }
   },
   {
-   "id": "p82",
-   "subtema": "Crédito e fomento",
-   "proposta": "Ampliar o acesso das pequenas e médias empresas às compras públicas estaduais",
+   "id": "p78",
+   "subtema": "Crédito e fomento público",
+   "proposta": "Ampliar o acesso de pequenas e médias empresas às compras públicas estaduais",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      347
+      347,
+      350
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p83",
-   "subtema": "Crédito e fomento",
-   "proposta": "Captar recursos de bancos nacionais e organismos multilaterais para ampliar a capacidade financeira das políticas de desenvolvimento",
+   "id": "p79",
+   "subtema": "Crédito e fomento público",
+   "proposta": "Buscar recursos de bancos nacionais e organismos multilaterais para ampliar a capacidade de financiamento do desenvolvimento",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1780
+      1780,
+      2105
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p84",
-   "subtema": "Exportações e internacionalização",
-   "proposta": "Criar programa de preparação técnica e comercial de pequenas e médias empresas para exportar",
+   "id": "p80",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Criar programa de apoio à internacionalização e exportação de pequenas e médias empresas, com consultoria e prospecção de compradores",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -2078,43 +2023,62 @@
       2079,
       2098
      ],
-     "nota": ""
+     "nota": "Inclui exportação de serviços"
     }
    }
   },
   {
-   "id": "p85",
-   "subtema": "Exportações e internacionalização",
-   "proposta": "Ampliar a participação de produtos processados e serviços de maior valor agregado na pauta exportadora",
+   "id": "p81",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Diversificar os mercados de destino das exportações mineiras e ampliar a exportação de produtos de maior valor agregado",
    "n_concorda": 2,
    "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      286,
+      287
+     ],
+     "nota": "Motivada pela exposição ao tarifaço americano"
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      2079,
       2101
      ],
      "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      383
-     ],
-     "nota": "Expansão de mercados com agregação de valor à produção mineira"
     }
    }
   },
   {
-   "id": "p86",
-   "subtema": "Exportações e internacionalização",
-   "proposta": "Construir uma marca territorial de Minas Gerais para produtos, serviços e destinos",
+   "id": "p82",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Criar estrutura permanente de monitoramento de risco comercial internacional, com relatório trimestral público por setor exportador",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      288,
+      289
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Construir marca territorial econômica de Minas e vincular missões internacionais a objetivos e acompanhamento de resultados",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1955,
       2106,
+      2107,
+      2108,
       2114
      ],
      "nota": ""
@@ -2122,23 +2086,80 @@
    }
   },
   {
-   "id": "p87",
-   "subtema": "Economia solidária e cooperativismo",
-   "proposta": "Fortalecer o cooperativismo, a economia solidária, o artesanato e as atividades de base territorial",
+   "id": "p84",
+   "subtema": "Atração de investimentos",
+   "proposta": "Regionalizar a atração de investimentos, com presença da agência estadual em todas as macrorregiões e metas para municípios de pequeno e médio porte",
    "n_concorda": 2,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      350,
-      356
+      143
      ],
-     "nota": "Com ampliação de mercados e compras públicas"
+     "nota": "Agentes regionais da Invest Minas e metas explícitas"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1891
+      2088,
+      2089
+     ],
+     "nota": "Atração regionalizada baseada em viabilidade"
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Atração de investimentos",
+   "proposta": "Acompanhar os projetos de investimento do anúncio à implantação e medir resultados efetivamente realizados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1707,
+      1776,
+      2082,
+      2085
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Atração de investimentos",
+   "proposta": "Estruturar relacionamento permanente com empresas já instaladas para retenção e expansão de investimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1775,
+      2093
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Atração de investimentos",
+   "proposta": "Alinhar a atração de investimentos à sustentabilidade, com foco em energia verde e descarbonização",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      59
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1795,
+      2082
      ],
      "nota": ""
     }
@@ -2146,72 +2167,18 @@
   },
   {
    "id": "p88",
-   "subtema": "Incentivos fiscais",
-   "proposta": "Revisar o modelo de incentivos fiscais, reavaliando isenções a setores que pouco agregam valor às cadeias internas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      274
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p89",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Construir projeto de desenvolvimento estadual orientado à geração de empregos de qualidade e à redução das desigualdades regionais",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Diversificar a estrutura produtiva do estado e articular investimentos públicos e privados como estratégia para ampliar a arrecadação e reduzir o peso da dívida estadual",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
      "blocos": [
       51,
-      55,
-      57
+      54,
+      59
      ],
-     "nota": "Estratégias regionalizadas, vocações territoriais e qualificação ligada às cadeias produtivas."
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      143,
-      146,
-      150
-     ],
-     "nota": "Impulsionar economia e emprego com atração de investimentos e APLs regionalizados"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      372
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      942
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p90",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Diversificar a estrutura produtiva mineira articulando investimentos públicos e privados para ampliar a arrecadação e reduzir o peso da dívida",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      145,
-      146
-     ],
-     "nota": "Diversificação econômica de regiões mineradoras e fortalecimento de APLs"
+     "nota": "Defende agregação de valor e diversificação além da exportação de matéria-prima"
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -2224,27 +2191,111 @@
      "posicao": "concorda",
      "blocos": [
       119,
+      185,
       186
      ],
-     "nota": "Foco em cadeias deficitárias e agregação de valor em minerais críticos."
+     "nota": "Prioriza setores com déficit estrutural e cadeias de minerais críticos para diversificar a produção"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      1704,
       1755,
       1769,
       1770,
-      2082,
+      1784,
       2926
      ],
-     "nota": "Programa propõe diversificação produtiva e atração/destrave de investimentos públicos e privados nas regiões."
+     "nota": "Propõe diversificação produtiva regional e articulação de investimentos públicos e privados, sem vincular explicitamente à dívida."
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Coordenar a estratégia de desenvolvimento econômico pela Secretaria de Desenvolvimento Econômico, articulando BDMG, Invest Minas, Codemge, Jucemg e Fapemig às prioridades econômicas e territoriais do governo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      143,
+      146,
+      148,
+      149
+     ],
+     "nota": "Articula Invest Minas, Codemge e BDMG em estratégia de desenvolvimento regional"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1705
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Coordenar a estratégia agropecuária pela Seapa em articulação com entidades vinculadas, SEDE, municípios, produtores, cooperativas, universidades e setor privado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      383,
+      385
+     ],
+     "nota": "Articulação da SEAPA com MAPA, EPAMIG, EMATER e IMA"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1800
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p91",
-   "subtema": "Exportações e internacionalização",
-   "proposta": "Criar ambiente favorável ao setor de serviços exportáveis (serviços prestados a distância), com conectividade, formação profissional e ambiente de inovação, ampliando produtividade e qualidade dos empregos",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Organizar a política agrícola estadual por diferenças territoriais e cadeias produtivas, com soluções de infraestrutura, assistência técnica, defesa sanitária, tecnologia e crédito adaptadas a cada região",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      172,
+      173,
+      174,
+      180
+     ],
+     "nota": "Assistência técnica, irrigação, defesa sanitária e crédito com foco em polos regionais"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      356,
+      386,
+      392
+     ],
+     "nota": "Políticas regionalizadas com infraestrutura, ATER, defesa sanitária e crédito"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1801
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Criar ambiente favorável ao setor de serviços de maior produtividade e à exportação de serviços, com conectividade, formação profissional e ambiente de inovação",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -2257,9 +2308,9 @@
    }
   },
   {
-   "id": "p92",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Considerar no planejamento territorial o papel dos centros urbanos regionais como polos de comércio e serviços para os municípios do entorno",
+   "id": "p93",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Considerar o papel dos centros urbanos regionais no comércio e na prestação de serviços aos municípios do entorno no planejamento territorial",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -2272,30 +2323,50 @@
    }
   },
   {
-   "id": "p93",
-   "subtema": "Turismo",
-   "proposta": "Avaliar a política de turismo por indicadores de gasto por visitante, geração de empregos, renda local, ocupação ao longo do ano e circulação entre municípios",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1912
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p94",
-   "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Compartilhar com as áreas de Educação e Desenvolvimento Social, municípios e instituições formadoras as informações sobre demandas de talentos e competências identificadas pela política econômica",
-   "n_concorda": 1,
+   "subtema": "Turismo",
+   "proposta": "Estruturar o turismo como cadeia econômica, com metas de ampliação da permanência média do visitante, além da promoção de destinos",
+   "n_concorda": 5,
    "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      107
+     ],
+     "nota": "Política permanente de eventos e ampliação/diversificação de rotas turísticas"
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      228,
+      229,
+      233
+     ],
+     "nota": "Estrutura roteiros, qualificação e infraestrutura turística"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      534,
+      544,
+      545
+     ],
+     "nota": "Turismo como cadeia produtiva geradora de renda nos territórios"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      156,
+      158,
+      159,
+      161
+     ],
+     "nota": "Turismo estruturado em roteiros/circuitos, operação profissional e calendário que reduz sazonalidade"
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      2037
+      1911
      ],
      "nota": ""
     }
@@ -2304,17 +2375,64 @@
   {
    "id": "p95",
    "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Incorporar ao planejamento da qualificação profissional a formação de cuidadores e trabalhadores da atenção domiciliar, reabilitação, assistência e serviços para pessoas idosas",
+   "proposta": "Produzir e divulgar continuamente informações sobre demanda por profissões, setores contratantes, competências em falta, distribuição regional das vagas, remuneração e empregabilidade após a formação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2036,
+      2037
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p96",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Envolver os municípios na identificação de demandas locais de qualificação e na articulação com empresas",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      139,
+      196
+     ],
+     "nota": "Cursos regionais com empresas locais e Salas Mineiras do Empreendedor"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      537,
+      538,
+      539
+     ],
+     "nota": "Regionalização e cooperação com municípios, incluindo qualificação"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2042
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p97",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Incorporar ao planejamento da qualificação profissional a formação de cuidadores e trabalhadores da atenção domiciliar, reabilitação e serviços para pessoas idosas",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      346,
-      371,
       375
      ],
-     "nota": "Fomento à economia do cuidado como setor de emprego, com política estadual de qualificação profissional."
+     "nota": "Fomento à economia do cuidado com geração de emprego"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -2326,10 +2444,10 @@
    }
   },
   {
-   "id": "p96",
+   "id": "p98",
    "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Envolver as empresas na definição das demandas de formação, na oferta de ambientes de aprendizagem prática e em projetos conjuntos com instituições educacionais",
-   "n_concorda": 2,
+   "proposta": "Envolver empresas na definição das demandas de formação profissional, na oferta de ambientes de aprendizagem prática e em projetos conjuntos com instituições educacionais",
+   "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -2338,6 +2456,14 @@
       196
      ],
      "nota": "Cursos em cooperação com empresas locais e agenda com setor produtivo"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      346,
+      540
+     ],
+     "nota": "Parcerias com Sistema S, escolas técnicas e empresas"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -2349,19 +2475,80 @@
    }
   },
   {
-   "id": "p97",
+   "id": "p99",
    "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Ampliar o alcance da qualificação profissional com cursos presenciais, modelos híbridos e uso de estruturas educacionais já existentes, permitindo formação perto de onde as pessoas vivem",
-   "n_concorda": 2,
+   "proposta": "Criar fóruns regionais com empresas, sindicatos, universidades, instituições formadoras e governo para acompanhar mudanças na demanda profissional",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      146,
+      149
+     ],
+     "nota": "Agenda permanente com entidades e governanças regionais"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      376
+     ],
+     "nota": "Fóruns regionais e diagnósticos participativos"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2070
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p100",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Aproximar a oferta de qualificação e universidades da atividade econômica regional, com soluções compartilhadas entre municípios quando necessário",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      55,
+      57
+     ],
+     "nota": "Qualificação alinhada às cadeias produtivas e vocações regionais"
+    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       196,
       197
      ],
-     "nota": "Cursos gratuitos regionais e formação digital no interior e periferias"
+     "nota": "Qualificação regional alinhada ao mercado local"
     },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      346,
+      376
+     ],
+     "nota": "Qualificação com universidades voltada a setores e vocações regionais"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2073
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p101",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Ampliar o alcance da qualificação profissional com cursos presenciais, modelos híbridos e uso de estruturas educacionais já existentes, sem criar novas unidades permanentes",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -2372,93 +2559,33 @@
    }
   },
   {
-   "id": "p98",
-   "subtema": "Ambiente de negócios e atração de investimentos",
-   "proposta": "Selecionar a atração de investimentos por qualidade e impacto potencial, e não apenas por tamanho, priorizando segmentos como transformação mineral, indústria, agroindústria, saúde, energia, tecnologia, logística, bioeconomia e serviços especializados",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      54,
-      59
-     ],
-     "nota": "Prioriza transformação mineral, manufatura, tecnologia e energia verde na atração de investimentos."
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      261,
-      282,
-      349,
-      356
-     ],
-     "nota": "Prioriza transformação mineral, industrialização do lítio e cadeias produtivas sustentáveis na atração/incentivo a investimentos."
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      119,
-      185,
-      186
-     ],
-     "nota": "Prioriza setores estratégicos (insumos químicos, farmacêuticos, agroindústria, minerais críticos) por impacto."
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2082
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p99",
-   "subtema": "Exportações e internacionalização",
-   "proposta": "Usar a presença internacional do Estado para acessar tecnologia, pesquisa, financiamento, projetos climáticos, cooperação universitária e novos mercados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2105
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p100",
-   "subtema": "Exportações e internacionalização",
-   "proposta": "Condicionar missões internacionais a objetivos definidos, com acompanhamento posterior e avaliação de resultados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2107,
-      2108
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p101",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Acompanhar a política econômica de longo prazo por indicadores de produtividade, renda, valor agregado, inovação e qualidade dos empregos, e não apenas pelo crescimento do PIB",
+   "id": "p102",
+   "subtema": "Emprego, trabalho e qualificação",
+   "proposta": "Avaliar a política de qualificação profissional pela inserção no mercado de trabalho e pela correspondência entre formação ofertada e oportunidades regionais",
    "n_concorda": 2,
    "posicoes": {
-    "governador-mg-gabriel-130002549557": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      107,
-      108,
-      117
+      196
      ],
-     "nota": "Define desenvolvimento como aumento persistente da produtividade, não só PIB."
+     "nota": "Cursos voltados à rápida inserção no mercado"
     },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2075
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p103",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Acompanhar a política econômica de longo prazo por indicadores de produtividade, renda, valor agregado, inovação e qualidade dos empregos, além do PIB",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -2469,9 +2596,9 @@
    }
   },
   {
-   "id": "p102",
+   "id": "p104",
    "subtema": "Emprego, trabalho e qualificação",
-   "proposta": "Organizar a formação profissional em torno de competências transversais (aprender a aprender, resolução de problemas, adaptação a novas ferramentas), e não apenas de tecnologias específicas",
+   "proposta": "Orientar a formação profissional ao desenvolvimento de competências transversais de aprender, resolver problemas e adaptar-se a novas ferramentas, e não apenas a tecnologias específicas",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -2484,9 +2611,9 @@
    }
   },
   {
-   "id": "p103",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Identificar, no planejamento de longo prazo (Minas 2040), as regiões com potencial para novos ciclos de desenvolvimento e antecipar infraestrutura, formação e políticas correspondentes",
+   "id": "p105",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Identificar, por meio da estratégia Minas 2040, regiões com potencial para novos ciclos de desenvolvimento e antecipar infraestrutura, formação e políticas correspondentes",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -2499,9 +2626,9 @@
    }
   },
   {
-   "id": "p104",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Monitorar a evolução de investimentos, empregos, atividades econômicas, infraestrutura e fluxos populacionais para orientar decisões sobre formação, logística, energia, habitação e apoio aos municípios",
+   "id": "p106",
+   "subtema": "Indústria e desenvolvimento regional",
+   "proposta": "Monitorar a evolução de investimentos, empregos, infraestrutura e fluxos populacionais para orientar decisões sobre formação, logística, energia, habitação e apoio aos municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -2514,11 +2641,28 @@
    }
   },
   {
-   "id": "p105",
-   "subtema": "Indústria, inovação e desenvolvimento regional",
-   "proposta": "Monitorar mudanças em cadeias produtivas, mercados e tecnologias na estratégia Minas 2040, integrando infraestrutura logística e digital, internacionalização de empresas e cooperação científica em uma mesma agenda",
-   "n_concorda": 1,
+   "id": "p107",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Acompanhar, pela estratégia Minas 2040, mudanças em cadeias produtivas, mercados e tecnologias, integrando infraestrutura logística e digital, internacionalização de empresas e acesso a novos mercados",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      140,
+      141
+     ],
+     "nota": "Exporta Mais Minas: internacionalização e acesso a novos mercados"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      287,
+      288,
+      289
+     ],
+     "nota": "Propõe diversificar mercados de destino e monitoramento permanente de risco comercial internacional."
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -2531,10 +2675,6 @@
  ],
  "blocos": {
   "governador-mg-alexandre-kalil-130002539775": {
-   "942": {
-    "texto": "O Governo atuará para destravar investimentos, fortalecer cadeias produtivas, estimular a agregação de valor, ampliar a competitividade e criar condições para que empresas e empreendedores possam investir, produzir e gerar empregos em Minas Gerais. O desenvolvimento será medido não apenas pelo crescimento da economia, mas também pela capacidade de gerar oportunidades e reduzir desigualdades entre pessoas e regiões.",
-    "pagina": 15
-   },
    "990": {
     "texto": "O Estado buscará fortalecer uma economia diversificada, apoiada na transformação mineral, indústria, agroindústria, serviços, turismo, economia criativa, bioeconomia, energias de baixo carbono, ciência, tecnologia e atividades intensivas em conhecimento. Universidades, instituições de pesquisa e setor produtivo serão aproximados para transformar conhecimento em soluções, empresas, produtividade e empregos.",
     "pagina": 18
@@ -2663,6 +2803,10 @@
     "texto": "● agroindústria, bioeconomia e energias renováveis no Norte e nos Vales; \n● agronegócio, logística, tecnologia e transformação no Triângulo e Alto Paranaíba; \n● alimentos, café, indústria, tecnologia e serviços no Sul; \n● saúde, biotecnologia, indústria, conhecimento e economia criativa na Zona da Mata; \n● metalmecânica, logística e indústria no Centro-Oeste; \n● economia digital, serviços avançados, ciência, tecnologia e indústria na Região",
     "pagina": 71
    },
+   "1786": {
+    "texto": "Metropolitana; \n● cadeias específicas vinculadas às vocações das demais regiões.",
+    "pagina": 72
+   },
    "1787": {
     "texto": "Essas referências não funcionarão como limites. Cada região poderá desenvolver atividades distintas sempre que existirem capacidade e oportunidade. O Estado trabalhará com os MUNICÍPIOS para estruturar áreas empresariais, infraestrutura, qualificação e demais condições necessárias aos polos. A interiorização industrial será medida também pela distribuição dos investimentos e empregos gerados.",
     "pagina": 72
@@ -2775,6 +2919,10 @@
     "texto": "Cooperativas têm papel importante em diversas áreas da economia mineira. Na agricultura, crédito, saúde, transporte, reciclagem, serviços e outras atividades, a organização coletiva pode gerar escala, acesso ao mercado e distribuição de renda. O Governo apoiará o cooperativismo de forma integrada às políticas de desenvolvimento econômico e social.",
     "pagina": 78
    },
+   "1892": {
+    "texto": "A economia solidária também poderá oferecer caminhos de inclusão produtiva para grupos que enfrentam maior dificuldade de inserção no mercado tradicional. O objetivo será transformar organização econômica em autonomia.",
+    "pagina": 78
+   },
    "1895": {
     "texto": "Audiovisual, design, moda, música, jogos digitais, arquitetura, publicidade, gastronomia, artesanato e produção cultural geram renda a partir de criatividade, talento e identidade. Essas atividades possuem uma característica especialmente relevante para Minas: podem crescer em diferentes territórios sem depender necessariamente de grandes estruturas industriais. A política econômica buscará conectar economia criativa a: \n● turismo; \n● cultura; \n● tecnologia; \n● formação profissional; \n● empreendedorismo; \n● identidade regional.",
     "pagina": 78
@@ -2817,6 +2965,10 @@
    },
    "1931": {
     "texto": "Também serão apoiadas experiências de turismo comunitário construídas com participação das próprias comunidades. Povos indígenas, comunidades quilombolas e tradicionais poderão desenvolver atividades turísticas quando houver interesse local, respeitando autonomia, cultura e formas de organização.",
+    "pagina": 81
+   },
+   "1936": {
+    "texto": "A política será articulada aos órgãos ambientais e aos MUNICÍPIOS.",
     "pagina": 81
    },
    "1940": {
@@ -3085,10 +3237,6 @@
     "texto": "10.Governança e Parceria com o Setor Produtivo: Agenda permanente de formulação e avaliação de políticas públicas em conjunto com Sebrae, Fiemg, Fecomércio, FCDL, associações comerciais e cooperativas.",
     "pagina": 10
    },
-   "150": {
-    "texto": "Impulsionar a economia e gerar emprego",
-    "pagina": 10
-   },
    "172": {
     "texto": "1.Simplificação e Digitalização dos Processos: Criar um ambiente digital único para centralizar licenças, documentos, certidões e inspeções, eliminando exigências duplicadas e garantindo acompanhamento online, mais agilidade e transparência aos processos.",
     "pagina": 12
@@ -3137,6 +3285,18 @@
     "texto": "10.Patrulha",
     "pagina": 12
    },
+   "184": {
+    "texto": "Rural",
+    "pagina": 12
+   },
+   "185": {
+    "texto": "Digital e Sustentabilidade",
+    "pagina": 12
+   },
+   "186": {
+    "texto": "Hídrica:",
+    "pagina": 12
+   },
    "187": {
     "texto": "Ampliação do georreferenciamento para coibir crimes no campo, aliada ao fomento da irrigação eficiente e proteção de nascentes.",
     "pagina": 12
@@ -3161,24 +3321,62 @@
     "texto": "9.Infraestrutura",
     "pagina": 15
    },
+   "231": {
+    "texto": "Básica nos Circuitos",
+    "pagina": 15
+   },
+   "232": {
+    "texto": "Turísticos:",
+    "pagina": 15
+   },
    "233": {
     "texto": "Investimento em sinalização, acessibilidade e centros de atendimento ao turista nos municípios vocacionados.",
     "pagina": 15
    }
   },
+  "governador-mg-flavio-roscoe-130002550834": {
+   "248": {
+    "texto": "A substituição tributária, técnica de arrecadação e combate à sonegação que se tornou padrão no ICMS mineiro, foi útil quando o estado não tinha como cruzar dados de venda em tempo real. Hoje, com nota fiscal eletrônica, Sped e cruzamento com dados federais e de cartões de crédito, boa parte da justificativa original perdeu força — e o instrumento passou a pesar mais sobre o capital de giro das empresas do que sobre a sonegação que deveria combater. Rio de Janeiro e São Paulo já vêm reduzindo gradualmente o uso da substituição tributária, movimento que se soma à chegada do novo Imposto sobre Bens e Serviços em 2027. Minas precisa revisar esse regime com um grupo de trabalho que inclua sociedade civil e monitore o que os demais estados já estão fazendo — não para abandonar o controle fiscal, mas para modernizá-lo.",
+    "pagina": 13
+   },
+   "249": {
+    "texto": "No crédito acumulado de ICMS, o Regulamento vigente (Decreto nº 48.589/2023, Anexo III) impõe um limite mensal global de transferência, exige pagamento mínimo em moeda corrente e condiciona a operação à apresentação de Certidão Negativa de Débitos — uma combinação que, na prática, retém indefinidamente créditos que a própria empresa já pagou ao longo da cadeia produtiva, comprometendo caixa e competitividade. A proposta é ampliar o limite mensal de transferência, dispensar a exigência de CND para essa finalidade específica e agilizar a análise dos projetos de expansão de empreendimento que hoje dependem desse crédito para sair do papel.",
+    "pagina": 13
+   },
+   "250": {
+    "texto": "Um problema mais estrutural aparece no comércio exterior: Minas não tem porto marítimo e seu aeroporto ainda não movimenta cargueiros no volume de São Paulo ou do Rio de Janeiro, o que obriga boa parte da indústria mineira a desembaraçar importações em outros estados. Hoje isso pode significar perda do diferimento do ICMS sobre matéria-prima e bens de capital, mesmo quando a mercadoria segue para uso em Minas. A alternativa de trânsito aduaneiro interno é lenta e cara, e a liberação ainda depende de conferência manual em boa parte dos casos. A proposta é tornar regra geral o diferimento do ICMS na importação de matéria-prima e ativo imobilizado independentemente do estado onde ocorre o desembaraço, com liberação automática da carga — alinhando Minas ao que já fazem São Paulo, Rio de Janeiro, Paraná e Pernambuco. \n●",
+    "pagina": 13
+   },
+   "251": {
+    "texto": "Criar um selo estadual de “empresa cumpridora”, renovável anualmente, que dê acesso facilitado a crédito de ICMS e regimes especiais para empresas com histórico comprovado de regularidade fiscal e manutenção de emprego — hoje o tratamento tributário é uniforme para bons e maus pagadores, o que trata igual quem não é igual.",
+    "pagina": 14
+   },
+   "265": {
+    "texto": "Dois programas específicos merecem estrutura própria. O primeiro é um Cadastro Estadual de Profissionais 50+, integrado ao SINE estadual e a bases federais, para enfrentar a escassez de mão de obra qualificada em setores que hoje descartam, por padrão de contratação, trabalhadores experientes que ainda têm capacidade produtiva plena — o cadastro permite mapear competências e aproximar oferta e demanda, em vez de deixar esse contingente simplesmente fora do radar das empresas que mais precisam de qualificação técnica. O segundo é um Banco de Trabalhadores com Deficiência, também vinculado ao SINE, que ajude as empresas a cumprir a cota legal de contratação com informação organizada, e não apenas com fiscalização — hoje o maior obstáculo ao cumprimento da cota não é a falta de vontade da empresa, é a dificuldade de encontrar candidatos qualificados e disponíveis. \n●",
+    "pagina": 15
+   },
+   "266": {
+    "texto": "Ampliar o cadastro 50+ e o Banco de Trabalhadores com Deficiência para incluir também mães solo em retorno ao mercado de trabalho após licença-maternidade estendida ou período de cuidado infantil — outro grupo com alta empregabilidade potencial e baixa visibilidade nos canais de recolocação profissional hoje disponíveis no estado.",
+    "pagina": 16
+   },
+   "286": {
+    "texto": "Compromissos deste eixo: \n●",
+    "pagina": 17
+   },
+   "287": {
+    "texto": "Diversificar os mercados de destino das exportações mineiras, reduzindo a exposição a decisões unilaterais de política comercial de qualquer parceiro específico. \n●",
+    "pagina": 17
+   },
+   "288": {
+    "texto": "Criar, dentro da Secretaria de Estado de Desenvolvimento Econômico, uma estrutura permanente de monitoramento de risco comercial internacional, com relatório trimestral público sobre a exposição de cada setor exportador mineiro a mudanças tarifárias ou",
+    "pagina": 17
+   },
+   "289": {
+    "texto": "regulatórias dos principais parceiros — hoje esse tipo de alerta chega ao setor produtivo apenas depois que a tarifa já foi anunciada, quando o espaço de negociação e adaptação já é muito menor.",
+    "pagina": 17
+   }
+  },
   "governador-mg-gabriel-130002549557": {
-   "107": {
-    "texto": "Desenvolvimento econômico é o aumento persistente da produtividade: produzir mais, de forma recorrente, com as pessoas e os meios de produção disponíveis. A produtividade do agronegócio no Brasil cresceu, em média, 3% ao ano nas últimas cinco décadas.2 A pesquisa com base em dados dos diversos países sobre desenvolvimento econômico mostra que o aumento recorrente da produtividade é o principal fator para o desenvolvimento dos países.",
-    "pagina": 10
-   },
-   "108": {
-    "texto": "Cuidar da formação das pessoas é cuidar do desenvolvimento. Esse é o resultado de quarenta anos de pesquisa sobre desenvolvimento econômico, um campo que rendeu vários prêmios Nobel nos últimos anos.",
-    "pagina": 10
-   },
-   "117": {
-    "texto": "Desenvolvimento econômico começa com gente e conhecimento, boa gestão e uma parceria construtiva entre o setor público e o setor privado.",
-    "pagina": 10
-   },
    "119": {
     "texto": "Priorizar setores com déficit estrutural e alta dependência de importações, como insumos químicos, farmacêuticos e cadeias agroindustriais, com foco em produtividade, competitividade e emprego qualificado. Ambientes de inovação não podem ficar isolados do setor produtivo e das universidades.",
     "pagina": 11
@@ -3419,6 +3617,10 @@
     "texto": "Ampliar a infraestrutura e os investimentos no meio rural, com prioridade para estradas, logística, irrigação, acesso à água e conectividade, criando melhores condições para a produção e a comercialização, com destaque para os processos de agregação de valor e geração e distribuição de renda no meio rural.",
     "pagina": 43
    },
+   "392": {
+    "texto": "A agricultura mineira ainda enfrenta desafios estruturais, como a baixa produtividade em grande parte das cadeias produtivas, a insuficiência de assistência técnica e extensão rural (especialmente para os médios e pequenos produtores) e a limitada articulação da pesquisa agropecuária com as demandas regionais. Essas dificuldades se concentram principalmente nas regiões do Norte de Minas, Jequitinhonha e Vale do Mucuri, onde vivem as maiores populações rurais e também os maiores índices de pobreza, evidenciando a necessidade de políticas voltadas à inclusão produtiva e ao fortalecimento da agricultura.",
+    "pagina": 43
+   },
    "396": {
     "texto": "Fortalecer a agricultura familiar como estratégica para o desenvolvimento de Minas Gerais e para a produção de alimentos, ampliando o acesso à assistência, crédito, seguro, tecnologias, infraestrutura e mercados.\n•",
     "pagina": 44
@@ -3474,6 +3676,10 @@
    "426": {
     "texto": "Fortalecer a economia mineira, diversificando a estrutura produtiva e articulando investimentos públicos e privados, condição indispensável para ampliar a arrecadação e reduzir o peso da dívida. \n•",
     "pagina": 48
+   },
+   "534": {
+    "texto": "A capacidade do turismo em proporcionar emprego e renda é conhecida e seu efeito multiplicador, ou seja, sua permeabilidade dentro do tecido social e econômico para impulsionar outros setores econômicos. Desta forma, o turismo deve ser tratado como política de desenvolvimento regional sustentável, capaz de conjugar a preservação e promoção do patrimônio, manter as características de seu território, mas também gerar oportunidades de desenvolvimento econômico e humano à sua população.",
+    "pagina": 61
    },
    "537": {
     "texto": "Fortalecer e regionalizar a Política Estadual de Turismo, ampliando a capacidade de coordenação do Governo de Minas e aproximando sua atuação dos municípios.",

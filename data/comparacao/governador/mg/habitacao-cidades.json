@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "habitacao-cidades-mg.json",
-  "gerado_em": "2026-09-14T02:41:42Z",
-  "exportado_em": "2026-09-14T04:36:11Z"
+  "gerado_em": "2026-09-14T10:56:36Z",
+  "exportado_em": "2026-09-14T11:32:08Z"
  },
  "candidatos": [
   {
@@ -29,6 +29,14 @@
    "numero": "10",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017111301",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002552296/MG"
+  },
+  {
+   "slug": "governador-mg-flavio-roscoe-130002550834",
+   "nome": "Flávio Roscoe",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017092515",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002550834/MG"
   },
   {
    "slug": "governador-mg-gabriel-130002549557",
@@ -59,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Regularização fundiária",
-   "proposta": "Ampliar e acelerar a regularização fundiária urbana, promovendo a titulação de imóveis para famílias de baixa renda",
+   "proposta": "Ampliar e promover a regularização fundiária urbana (e rural), com entrega de títulos de propriedade aos moradores",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -67,14 +75,14 @@
      "blocos": [
       46
      ],
-     "nota": "Inclui regularização rural além da urbana"
+     "nota": "Inclui expressamente a regularização rural"
     },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       195
      ],
-     "nota": ""
+     "nota": "Foco em títulos para famílias de baixa renda"
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -82,7 +90,7 @@
       179,
       192
      ],
-     "nota": "Associa a regularização à reforma urbana"
+     "nota": "Enquadra como reforma urbana"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -103,16 +111,92 @@
   },
   {
    "id": "p2",
-   "subtema": "Política habitacional estadual",
-   "proposta": "Instituir ou reconstruir uma política estadual de habitação de interesse social, articulada com municípios e com o Governo Federal",
+   "subtema": "Regularização fundiária",
+   "proposta": "Prestar suporte técnico e jurídico aos municípios, com articulação de cartórios e registros, para acelerar a titulação",
    "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      195
+     ],
+     "nota": "Suporte técnico e jurídico aos municípios na Reurb"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": "Articulação com cartórios, registros e prefeituras"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Regularização fundiária",
+   "proposta": "Ampliar e qualificar a regularização fundiária por meio do programa estadual Minas Reurb",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      486
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Regularização fundiária",
+   "proposta": "Complementar a entrega de títulos com urbanização e infraestrutura básica, para consolidar o bairro",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Regularização fundiária",
+   "proposta": "Fortalecer as ocupações urbanas como estratégia de garantia de moradia",
+   "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      179
+      192
      ],
-     "nota": "Vinculada ao Sistema Nacional de Habitação de Interesse Social"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Ampliar o acesso à moradia com produção e aquisição de habitações, reduzindo o déficit habitacional",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      46
+     ],
+     "nota": "Fala em ampliar alternativas de acesso à habitação"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      177,
+      179,
+      193
+     ],
+     "nota": ""
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -125,9 +209,31 @@
    }
   },
   {
-   "id": "p3",
-   "subtema": "Política habitacional estadual",
-   "proposta": "Recuperar o papel da Cohab Minas na produção habitacional e na estruturação das políticas estaduais de moradia",
+   "id": "p7",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Instituir ou reconstruir uma política estadual de habitação de interesse social articulada ao sistema nacional, aos municípios e ao Governo Federal",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      179
+     ],
+     "nota": "Articulada ao SNHIS"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1636
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Recuperar e ampliar o papel da Cohab Minas na produção habitacional e na estruturação das políticas estaduais",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -135,29 +241,82 @@
      "blocos": [
       193
      ],
-     "nota": "Foco na construção de moradias populares para baixa renda"
+     "nota": "Retomada da construção de moradias populares"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
       487
      ],
-     "nota": "Cohab como executora da expansão do Minas Reurb"
+     "nota": "Expansão do programa de regularização executado pela Cohab"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
       1636
      ],
-     "nota": "Recuperação da capacidade técnica para apoiar municípios"
+     "nota": "Recuperar capacidade técnica da Cohab-MG"
     }
    }
   },
   {
-   "id": "p4",
-   "subtema": "Acesso à casa própria",
-   "proposta": "Ampliar a produção e o acesso à moradia para famílias de baixa renda, reduzindo o déficit habitacional",
-   "n_concorda": 3,
+   "id": "p9",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Criar programa estadual de locação social e subsídio ao aluguel para famílias vulneráveis",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": "Auxílio financeiro e oferta de imóveis públicos e privados"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1637
+     ],
+     "nota": "Locação social 'quando adequada'"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Destinar imóveis públicos ociosos a programas habitacionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      179,
+      180
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Criar mecanismos de mediação para prevenir despejos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Ampliar a oferta de habitação por meio de parcerias com o setor privado",
+   "n_concorda": 1,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
@@ -165,7 +324,30 @@
       46
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Oferecer assistência técnica para habitação de interesse social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1637
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Priorizar as famílias de baixa renda e em maior vulnerabilidade no acesso aos programas habitacionais",
+   "n_concorda": 2,
+   "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
@@ -177,7 +359,6 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1637,
       1639
      ],
      "nota": ""
@@ -185,10 +366,10 @@
    }
   },
   {
-   "id": "p5",
-   "subtema": "Urbanização de assentamentos precários",
-   "proposta": "Urbanizar e recuperar assentamentos precários, integrando a titulação a infraestrutura básica e equipamentos urbanos",
-   "n_concorda": 3,
+   "id": "p15",
+   "subtema": "Urbanização de assentamentos e periferias",
+   "proposta": "Urbanizar e recuperar assentamentos precários",
+   "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -197,13 +378,6 @@
      ],
      "nota": ""
     },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": "Título complementado por urbanização para consolidar o bairro"
-    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -214,47 +388,26 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Aluguel e locação social",
-   "proposta": "Criar programa estadual de locação social e subsídio ao aluguel para famílias em vulnerabilidade",
-   "n_concorda": 2,
+   "id": "p16",
+   "subtema": "Urbanização de assentamentos e periferias",
+   "proposta": "Melhorar as condições de vida nas periferias urbanas, com ênfase em habitação, transporte, saneamento e equipamentos públicos",
+   "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      180
+      447
      ],
-     "nota": "Inclui mediação para prevenir despejos e uso de imóveis públicos e privados"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1637
-     ],
-     "nota": "Locação social prevista 'quando adequada'"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Apoio a municípios",
-   "proposta": "Prestar apoio técnico e jurídico aos municípios em políticas urbanas e habitacionais, especialmente aos de menor capacidade institucional",
-   "n_concorda": 3,
+   "id": "p17",
+   "subtema": "Apoio a municípios e planejamento urbano",
+   "proposta": "Apoiar os municípios, especialmente os de menor capacidade institucional, na política urbana e habitacional",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      195
-     ],
-     "nota": "Suporte voltado especificamente à Reurb"
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": "Articulação com cartórios, registros e prefeituras"
-    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -267,7 +420,54 @@
    }
   },
   {
-   "id": "p8",
+   "id": "p18",
+   "subtema": "Apoio a municípios e planejamento urbano",
+   "proposta": "Estruturar projetos municipais para acesso a programas federais de habitação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1637
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Apoio a municípios e planejamento urbano",
+   "proposta": "Dar atenção especial às cidades médias, com apoio ao planejamento urbano antecipado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      2269
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Apoio a municípios e planejamento urbano",
+   "proposta": "Territorializar o diagnóstico das necessidades habitacionais e integrar a habitação a saneamento, mobilidade, equipamentos públicos e planejamento urbano",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1637,
+      1638,
+      1639
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
    "subtema": "Habitação rural",
    "proposta": "Fortalecer programas de habitação rural e infraestrutura comunitária nos territórios rurais, com acesso a água, saneamento e energia",
    "n_concorda": 1,
@@ -277,91 +477,6 @@
      "blocos": [
       167,
       194
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Planejamento urbano e territorial",
-   "proposta": "Articular a política habitacional ao planejamento urbano, saneamento, mobilidade e equipamentos públicos, territorializando as necessidades",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1637,
-      1638
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      447
-     ],
-     "nota": "Foco nas periferias urbanas, com habitação, transporte e saneamento"
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Planejamento urbano e territorial",
-   "proposta": "Apoiar o planejamento antecipado das cidades médias, reconhecendo as diferenças entre os municípios mineiros",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      2268,
-      2269
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Acesso à casa própria",
-   "proposta": "Ampliar alternativas de acesso à habitação por meio de parcerias com o setor privado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      46
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Uso de imóveis públicos e ocupações",
-   "proposta": "Destinar imóveis públicos ociosos a programas habitacionais e fortalecer as ocupações urbanas como estratégia de enfrentamento do déficit",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      179,
-      192
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Assistência técnica",
-   "proposta": "Oferecer assistência técnica para habitação de interesse social e estruturação de projetos para acesso a programas federais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1637
      ],
      "nota": ""
     }
@@ -401,6 +516,7 @@
     "pagina": 13
    }
   },
+  "governador-mg-flavio-roscoe-130002550834": {},
   "governador-mg-gabriel-130002549557": {
    "486": {
     "texto": "Ampliação e qualificação da regularização fundiária pelo Minas Reurb.",
@@ -421,6 +537,10 @@
    "167": {
     "texto": "Fortalecer programas de habitação rural, infraestrutura comunitária e melhoria das condições de vida nos territórios rurais, assegurando moradia digna, acesso à água, saneamento, energia e demais serviços essenciais.",
     "pagina": 19
+   },
+   "177": {
+    "texto": "A crise da moradia continua sendo um dos principais desafios sociais de Minas Gerais, refletida na dificuldade de acesso à habitação adequada, no peso do aluguel sobre a renda das famílias, na persistência de moradias precárias e no aumento da população em situação de rua. Diante desse quadro, nosso plano de governo se compromete a ampliar o acesso à moradia e a criar mecanismos que reduzam o comprometimento da renda das famílias com aluguel.",
+    "pagina": 20
    },
    "179": {
     "texto": "Instituir uma Política Estadual de Habitação de Interesse Social, articulada ao Sistema Nacional de Habitação de Interesse Social, priorizando a produção e aquisição de moradias para famílias de baixa renda, a urbanização e regularização de assentamentos precários e a destinação de imóveis públicos ociosos para programas habitacionais, em parceria com municípios e com o Governo Federal. 3",

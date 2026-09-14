@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "educacao-mg.json",
-  "gerado_em": "2026-09-14T01:12:41Z",
-  "exportado_em": "2026-09-14T04:36:11Z"
+  "gerado_em": "2026-09-14T10:39:13Z",
+  "exportado_em": "2026-09-14T11:32:08Z"
  },
  "candidatos": [
   {
@@ -29,6 +29,14 @@
    "numero": "10",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017111301",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002552296/MG"
+  },
+  {
+   "slug": "governador-mg-flavio-roscoe-130002550834",
+   "nome": "Flávio Roscoe",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017092515",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002550834/MG"
   },
   {
    "slug": "governador-mg-gabriel-130002549557",
@@ -58,45 +66,47 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Educação inclusiva e diversidade",
-   "proposta": "Fortalecer a educação inclusiva e o atendimento educacional especializado a estudantes com deficiência e neurodivergentes, com profissionais de apoio e formação das equipes escolares",
+   "subtema": "Aprendizagem e ensino médio",
+   "proposta": "Adotar a melhoria da aprendizagem como prioridade da política educacional, com recomposição das defasagens e foco em leitura, escrita e matemática",
    "n_concorda": 5,
    "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      25
-     ],
-     "nota": "Apoia-se na formação continuada dos profissionais da rede"
-    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       125
      ],
-     "nota": "Garantia explícita do AEE e de profissionais de apoio"
+     "nota": "Foco em estudantes em vulnerabilidade educacional"
     },
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-flavio-roscoe-130002550834": {
      "posicao": "concorda",
      "blocos": [
-      46,
-      47
+      236
      ],
-     "nota": "Educação como direito, em perspectiva inclusiva e diversa"
+     "nota": "Prioridade ao Fundamental 2 e ao ensino médio"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      313,
-      314
+      291,
+      292,
+      301,
+      302
      ],
-     "nota": ""
+     "nota": "Método baseado em evidências e currículo claro"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1364,
-      1365
+      1310,
+      1311,
+      1312
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      60
      ],
      "nota": ""
     }
@@ -104,30 +114,68 @@
   },
   {
    "id": "p2",
-   "subtema": "Educação inclusiva e diversidade",
-   "proposta": "Dar prioridade aos estudantes com TEA na política de inclusão, com mediadores, monitores e protocolos de acompanhamento",
-   "n_concorda": 1,
+   "subtema": "Aprendizagem e ensino médio",
+   "proposta": "Fortalecer especificamente o ensino médio, etapa com pior desempenho, tornando-o mais relevante para os jovens",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      313,
-      314
+      303,
+      304
+     ],
+     "nota": "Implementar as mudanças recentes sem opor técnico e ensino comum"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      60,
+      66
      ],
      "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1318
+     ],
+     "nota": "Estratégia estadual de permanência no ensino médio"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236
+     ],
+     "nota": "Com orientação para projeto de vida e educação empreendedora"
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Educação inclusiva e diversidade",
-   "proposta": "Estender o atendimento especializado também aos estudantes com altas habilidades",
-   "n_concorda": 1,
+   "subtema": "Aprendizagem e ensino médio",
+   "proposta": "Usar avaliações diagnósticas e indicadores de aprendizagem como instrumento de correção de rota e apoio às escolas, e não como finalidade",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      25
+      293,
+      306
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1310,
+      1313
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236
      ],
      "nota": ""
     }
@@ -135,15 +183,15 @@
   },
   {
    "id": "p4",
-   "subtema": "Educação inclusiva e diversidade",
-   "proposta": "Garantir acessibilidade física, recursos pedagógicos e tecnologias assistivas nas escolas, com articulação com saúde e assistência social",
+   "subtema": "Aprendizagem e ensino médio",
+   "proposta": "Reativar e modernizar o Sistema Mineiro de Avaliação da Educação Pública (Simave)",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      1304,
-      1365
+      305,
+      306
      ],
      "nota": ""
     }
@@ -151,16 +199,226 @@
   },
   {
    "id": "p5",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Adotar política de valorização dos profissionais da educação, com plano de carreira, formação e condições de trabalho",
-   "n_concorda": 4,
+   "subtema": "Aprendizagem e ensino médio",
+   "proposta": "Implantar um modelo de Gestão para Resultados Pedagógicos, com metas, planos de ação e monitoramento escola por escola",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236
+     ],
+     "nota": "Apoio técnico da Fundação da CIDE (FDG)"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Aprendizagem e ensino médio",
+   "proposta": "Criar índice estadual de continuidade da aprendizagem, medido a cada dois anos, acompanhando a mesma coorte da alfabetização ao 9º ano",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      245
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Ampliar a educação profissional e técnica alinhando a oferta às vocações produtivas e demandas de cada região",
+   "n_concorda": 5,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      24
+     ],
+     "nota": ""
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      129
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      237
+     ],
+     "nota": "Parceria com sindicatos patronais e arranjos produtivos locais"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      85
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1333,
+      1334,
+      1335
+     ],
+     "nota": "Cursos definidos por diagnóstico territorial, além das áreas tecnológicas"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Reestruturar o programa Trilhas de Futuro para reduzir a evasão nos cursos técnicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      129
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Ofertar vagas de educação profissional técnica diretamente pelo Estado, com a construção de uma rede estadual de escolas técnicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      86,
+      87,
+      88
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Priorizar a expansão da rede profissionalizante em municípios de baixo IDH e forte presença industrial, com trilhas flexíveis e oferta híbrida",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      237
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Integrar o ensino médio à formação técnico-profissional",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      64
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Definir prioridades de formação técnica por macrorregião do estado, conforme a economia local",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1356,
+      1357,
+      1358,
+      1359,
+      1360
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Promover estágio, programa de aprendizagem e primeiro emprego em diálogo com empresas, indústria e comércio",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      93,
+      94
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Estimular empresas juniores e projetos de inovação e empreendedorismo para estudantes da educação profissional, com Fapemig e indústrias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      92
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Estruturar plataforma didática e formação de professores, técnicos e gestores da educação profissional em parceria com universidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      90,
+      91
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Professores e carreira",
+   "proposta": "Valorizar os profissionais da educação com atualização do plano de carreira, formação continuada e melhores condições de trabalho",
+   "n_concorda": 5,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       133
      ],
-     "nota": "Plano plurianual de carreira e valorização docente"
+     "nota": "Plano plurianual de carreira"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      239
+     ],
+     "nota": ""
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -188,10 +446,10 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Professores e valorização docente",
+   "id": "p17",
+   "subtema": "Professores e carreira",
    "proposta": "Realizar concursos públicos regulares e reduzir a dependência de contratos temporários na rede estadual",
-   "n_concorda": 3,
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -205,44 +463,41 @@
      "blocos": [
       57
      ],
-     "nota": "Nomear aprovados nos concursos vigentes; efetivos são cerca de 20% da categoria"
+     "nota": "Nomear aprovados nos concursos vigentes; hoje só ~20% são efetivos"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      309,
       310
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Garantir melhoria salarial e o pagamento do piso nacional aos profissionais da educação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      56,
-      68
+      1297
      ],
-     "nota": ""
+     "nota": "Foco em reduzir rotatividade e precariedade de vínculos"
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Criar programa de atenção à saúde mental dos educadores",
-   "n_concorda": 2,
+   "id": "p18",
+   "subtema": "Professores e carreira",
+   "proposta": "Criar ou fortalecer programas de saúde e bem-estar, incluindo saúde mental, dos profissionais da educação",
+   "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       133
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      239
      ],
      "nota": ""
     },
@@ -256,24 +511,9 @@
    }
   },
   {
-   "id": "p9",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Reduzir a carga burocrática que recai sobre os professores",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      133
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Organizar a formação inicial e continuada de professores em articulação com universidades públicas e institutos federais",
+   "id": "p19",
+   "subtema": "Professores e carreira",
+   "proposta": "Articular a formação inicial e continuada de professores com universidades públicas e institutos federais",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -289,199 +529,29 @@
       310,
       316
      ],
-     "nota": ""
+     "nota": "Formação vinculada à prática e reconhecida na progressão"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1298
+      1298,
+      1343
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Reorganizar a formação continuada a partir das necessidades dos territórios e das áreas de maior defasagem, vinculada à prática de sala de aula",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      310
-     ],
-     "nota": "Qualificação reconhecida na progressão da carreira"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1297
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Ampliar a participação de estudantes de licenciatura nas escolas públicas estaduais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1299
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Professores e valorização docente",
-   "proposta": "Criar programas de bolsas e projetos de pesquisa e extensão que aproximem escolas da educação básica e instituições de ensino superior",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1349
-     ],
-     "nota": "Com participação de FAPEMIG, universidades e fundações de apoio"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Alinhar a oferta de cursos técnicos e profissionais às vocações produtivas e às demandas de cada região",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      24
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      129
-     ],
-     "nota": "Objetivo declarado de reduzir a evasão nos cursos"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      85
-     ],
-     "nota": "Eixos prioritários definidos com setor produtivo e municípios"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1333,
-      1334,
-      1335
-     ],
-     "nota": "Cursos definidos por diagnóstico territorial, além das profissões tecnológicas"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Reestruturar o programa Trilhas de Futuro",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      129
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Ofertar vagas de educação profissional técnica diretamente pelo Estado, construindo uma rede estadual de escolas técnicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      86,
-      87,
-      88
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Integrar o ensino médio à formação técnico-profissional",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      64
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Definir estratégias específicas de educação profissional para cada macrorregião do Estado (Norte e Vales, Triângulo, Sul, Zona da Mata, Centro-Oeste e RMBH)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1356,
-      1357,
-      1358,
-      1359,
-      1360
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Promover programas de estágio, aprendizagem e primeiro emprego em diálogo com empresas, indústria e comércio",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      93,
-      94
-     ],
-     "nota": "Inclui aprendizagem fora da sala de aula, com visitas técnicas"
     }
    }
   },
   {
    "id": "p20",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Estimular empresas juniores e projetos de inovação e empreendedorismo para estudantes do ensino técnico, com Fapemig e indústrias",
+   "subtema": "Professores e carreira",
+   "proposta": "Oferecer a formação continuada dos docentes por meio de uma academia própria vinculada à metodologia CIDE",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-flavio-roscoe-130002550834": {
      "posicao": "concorda",
      "blocos": [
-      92
+      239,
+      242
      ],
      "nota": ""
     }
@@ -489,30 +559,29 @@
   },
   {
    "id": "p21",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Estruturar plataforma didática e formação específica para professores, técnicos e gestores da educação profissional técnica",
+   "subtema": "Professores e carreira",
+   "proposta": "Ampliar a formação de mestres e doutores dentro da rede estadual, com foco em problemas reais da escola",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-flavio-roscoe-130002550834": {
      "posicao": "concorda",
      "blocos": [
-      90,
-      91
+      239
      ],
-     "nota": "Formação em parceria com UEMG, Unimontes e federais"
+     "nota": ""
     }
    }
   },
   {
    "id": "p22",
-   "subtema": "Educação profissional e técnica",
-   "proposta": "Criar um Pé de Meia estadual de apoio financeiro à permanência escolar",
+   "subtema": "Professores e carreira",
+   "proposta": "Fortalecer o processo de seleção de diretores por competência de gestão e ampliar programas de desenvolvimento de lideranças escolares",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-flavio-roscoe-130002550834": {
      "posicao": "concorda",
      "blocos": [
-      89
+      239
      ],
      "nota": ""
     }
@@ -520,21 +589,14 @@
   },
   {
    "id": "p23",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Assegurar financiamento adequado e previsibilidade orçamentária para a UEMG e a Unimontes",
-   "n_concorda": 2,
+   "subtema": "Professores e carreira",
+   "proposta": "Reduzir a carga burocrática sobre os professores",
+   "n_concorda": 1,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      134
-     ],
-     "nota": "Previsibilidade orçamentária para expansão no interior"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      101
+      133
      ],
      "nota": ""
     }
@@ -542,37 +604,31 @@
   },
   {
    "id": "p24",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Respeitar e preservar a autonomia universitária das universidades estaduais",
-   "n_concorda": 2,
+   "subtema": "Professores e carreira",
+   "proposta": "Criar programas de bolsas e ampliar a presença de estudantes de licenciatura nas escolas estaduais, aproximando pesquisa e escola pública",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      103
+      1299,
+      1349
      ],
      "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      122,
-      123
-     ],
-     "nota": "Cooperação com empresas e governos sem subordinação acadêmica"
     }
    }
   },
   {
    "id": "p25",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Apoiar a realização de eleições diretas para as reitorias da UEMG e da Unimontes",
+   "subtema": "Professores e carreira",
+   "proposta": "Garantir o pagamento do piso salarial nacional e a melhoria salarial dos profissionais da educação",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      103
+      56,
+      68
      ],
      "nota": ""
     }
@@ -580,37 +636,52 @@
   },
   {
    "id": "p26",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Integrar a UEMG e a Unimontes à estratégia de desenvolvimento regional e à política educacional do Estado, com pesquisa aplicada e formação docente",
-   "n_concorda": 4,
+   "subtema": "Educação inclusiva e diversidade",
+   "proposta": "Fortalecer a educação inclusiva e o atendimento a estudantes com deficiência e neurodivergentes, com formação dos profissionais da rede",
+   "n_concorda": 6,
    "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      25
+     ],
+     "nota": "Inclui estudantes com altas habilidades"
+    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      134
+      125
      ],
-     "nota": ""
+     "nota": "Garantia de AEE e profissionais de apoio"
     },
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-flavio-roscoe-130002550834": {
      "posicao": "concorda",
      "blocos": [
-      102
+      237
      ],
-     "nota": "Institucionalizar financiamento de projetos de pesquisa e extensão"
+     "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      122,
-      315,
-      316
+      313,
+      314
      ],
-     "nota": "Universidades estaduais como parte da política da educação básica"
+     "nota": "Prioridade declarada a estudantes com TEA; mediadores e monitores"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1339
+      1364,
+      1365
+     ],
+     "nota": "Acessibilidade, tecnologias assistivas e articulação com saúde"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      46,
+      47
      ],
      "nota": ""
     }
@@ -618,22 +689,23 @@
   },
   {
    "id": "p27",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Criar uma rede de articulação entre as instituições públicas de ensino superior e as escolas da rede estadual para formular e executar políticas",
+   "subtema": "Educação inclusiva e diversidade",
+   "proposta": "Fortalecer a educação escolar indígena, quilombola e de comunidades tradicionais, com currículo e condições adequadas",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      110
+      47,
+      77
      ],
      "nota": ""
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1338,
-      1342
+      1365,
+      1366
      ],
      "nota": ""
     }
@@ -641,30 +713,38 @@
   },
   {
    "id": "p28",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Aprimorar as carreiras das universidades estaduais, com concursos, dedicação exclusiva docente e promoção dos técnico-administrativos",
-   "n_concorda": 1,
+   "subtema": "Educação inclusiva e diversidade",
+   "proposta": "Fortalecer a educação do campo, impedindo o fechamento de escolas rurais e assegurando currículo, transporte e infraestrutura próprios",
+   "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      101,
-      104
+      78,
+      79
      ],
-     "nota": ""
+     "nota": "Articulação com o Pronacampo"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1353,
+      1366
+     ],
+     "nota": "Atenção ao transporte e à organização das escolas rurais"
     }
    }
   },
   {
    "id": "p29",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Ampliar a assistência estudantil nas universidades estaduais, com bolsas e restaurantes universitários",
+   "subtema": "Educação inclusiva e diversidade",
+   "proposta": "Enfrentar nas políticas escolares a discriminação por raça, gênero, deficiência, orientação sexual ou condição social",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      107
+      1367
      ],
      "nota": ""
     }
@@ -672,40 +752,49 @@
   },
   {
    "id": "p30",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Retomar investimentos em infraestrutura predial e laboratórios das universidades estaduais, priorizando obras inacabadas",
-   "n_concorda": 1,
+   "subtema": "Colaboração com municípios e alfabetização",
+   "proposta": "Fortalecer o regime de colaboração com os municípios, com assistência técnica e apoio à gestão educacional municipal",
+   "n_concorda": 4,
    "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      125
+     ],
+     "nota": "Suporte técnico continuado para anos finais e ensino médio"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": ""
+    },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      108
+      46,
+      48,
+      55
      ],
      "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1278,
+      1279,
+      1385
+     ],
+     "nota": "Undime-MG como parceira permanente"
     }
    }
   },
   {
    "id": "p31",
-   "subtema": "Universidades e faculdades estaduais",
-   "proposta": "Avaliar a capacidade das instituições públicas mineiras antes de contratar externamente formação, materiais e soluções educacionais, evitando terceirizações desnecessárias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1343,
-      1345
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Garantir a alfabetização na idade certa como prioridade da política educacional",
-   "n_concorda": 3,
+   "subtema": "Colaboração com municípios e alfabetização",
+   "proposta": "Garantir a alfabetização na idade certa em cooperação com os municípios",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -724,143 +813,196 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
+      1310,
       1311
      ],
-     "nota": "Em cooperação com os municípios"
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": "Continuidade do Compromisso Nacional Criança Alfabetizada, sem ruptura a cada gestão"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Colaboração com municípios e alfabetização",
+   "proposta": "Implantar programa de cooperação técnica que insira os municípios nos sistemas estaduais de avaliação e gestão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p33",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Implantar política de recomposição da aprendizagem com identificação precoce de defasagens e apoio aos estudantes mais vulneráveis",
-   "n_concorda": 4,
+   "subtema": "Colaboração com municípios e alfabetização",
+   "proposta": "Apoiar os municípios na melhoria da oferta e da aprendizagem nos anos iniciais do ensino fundamental",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      55
+     ],
+     "nota": ""
+    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       125
      ],
      "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      301,
-      302
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1311,
-      1312,
-      1313
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      60
-     ],
-     "nota": "Foco nas etapas com IDEB mais baixo"
     }
    }
   },
   {
    "id": "p34",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Organizar o sistema de ensino em torno de currículo claro, métodos baseados em evidências e uso sistemático de indicadores para decisões de gestão",
-   "n_concorda": 2,
+   "subtema": "Colaboração com municípios e alfabetização",
+   "proposta": "Cuidar da transição entre etapas escolares (educação infantil, fundamental e médio) com compartilhamento de informações entre redes",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      291,
-      292,
-      293
-     ],
-     "nota": ""
-    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1310,
-      1384
+      1278,
+      1287,
+      1289,
+      1292
      ],
-     "nota": "Indicadores para orientar decisões, nunca como finalidade da educação"
+     "nota": ""
     }
    }
   },
   {
    "id": "p35",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Usar avaliações diagnósticas para corrigir defasagens e apoiar escolas, sem transformar resultados em ranking",
+   "subtema": "Tempo integral",
+   "proposta": "Ampliar a oferta de educação em tempo integral na rede pública",
+   "n_concorda": 5,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      23
+     ],
+     "nota": "Continuidade da expansão já em curso"
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      127
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236,
+      237
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      63
+     ],
+     "nota": "Meta de tempo integral para todos, articulada com municípios"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1320
+     ],
+     "nota": "Só onde houver estrutura, demanda e projeto pedagógico"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Tempo integral",
+   "proposta": "Reformular a matriz curricular do tempo integral incluindo educação financeira, empreendedorismo, cidadania e competências para a vida",
    "n_concorda": 2,
    "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      127
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236
+     ],
+     "nota": "Projeto de vida e educação empreendedora"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Universidades estaduais",
+   "proposta": "Assegurar financiamento adequado e previsibilidade orçamentária à UEMG e à Unimontes, com expansão e ampliação da infraestrutura",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      134
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      101,
+      108
+     ],
+     "nota": "Inclui concursos e finalização de obras inacabadas"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Universidades estaduais",
+   "proposta": "Articular UEMG e Unimontes ao desenvolvimento regional e à pesquisa aplicada às vocações dos territórios",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      134
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      102
+     ],
+     "nota": "Institucionalizar financiamento de pesquisa e extensão"
+    },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      305,
-      306
+      122,
+      123
      ],
      "nota": ""
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1313,
-      1314
-     ],
-     "nota": "Resultados lidos junto com condições sociais e estrutura da escola"
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Reativar e modernizar o Sistema Mineiro de Avaliação da Educação Pública (Simave)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      305,
-      306
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Definir leitura, escrita, matemática e educação científica como prioridades de aprendizagem, com laboratórios e atividades experimentais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1311,
-      1312,
-      1329
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Alfabetização, aprendizagem e avaliação",
-   "proposta": "Desenvolver ações de letramento midiático e combate à desinformação nas escolas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      76
+      1339
      ],
      "nota": ""
     }
@@ -868,50 +1010,37 @@
   },
   {
    "id": "p39",
-   "subtema": "Escolas em tempo integral",
-   "proposta": "Ampliar a oferta de ensino em tempo integral na rede pública",
-   "n_concorda": 4,
+   "subtema": "Universidades estaduais",
+   "proposta": "Preservar a autonomia universitária das instituições estaduais",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      23
-     ],
-     "nota": "Continuidade da política existente, tida como a de maior impacto"
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      127
+      123,
+      315
      ],
      "nota": ""
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      63
+      103
      ],
-     "nota": "Meta de escola em tempo integral para todos os estudantes"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1320
-     ],
-     "nota": "Ampliação condicionada a estrutura, demanda e projeto pedagógico"
+     "nota": ""
     }
    }
   },
   {
    "id": "p40",
-   "subtema": "Escolas em tempo integral",
-   "proposta": "Reformular a matriz curricular do tempo integral com educação financeira, empreendedorismo, cidadania e competências práticas",
+   "subtema": "Universidades estaduais",
+   "proposta": "Apoiar eleições diretas para as reitorias da UEMG e da Unimontes",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
+    "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      127
+      103
      ],
      "nota": ""
     }
@@ -919,14 +1048,15 @@
   },
   {
    "id": "p41",
-   "subtema": "Escolas em tempo integral",
-   "proposta": "Articular com os municípios a ampliação progressiva das matrículas em tempo integral em toda a educação básica",
+   "subtema": "Universidades estaduais",
+   "proposta": "Aprimorar os planos de carreira das universidades estaduais, com dedicação exclusiva docente e progressão dos técnico-administrativos",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      63
+      101,
+      104
      ],
      "nota": ""
     }
@@ -934,31 +1064,14 @@
   },
   {
    "id": "p42",
-   "subtema": "Infraestrutura e tecnologia nas escolas",
-   "proposta": "Instituir programa permanente de reforma, manutenção e qualificação da infraestrutura escolar, com laboratórios, bibliotecas e quadras esportivas",
-   "n_concorda": 3,
+   "subtema": "Universidades estaduais",
+   "proposta": "Ampliar a assistência estudantil nas universidades estaduais, com bolsas e restaurantes universitários",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      130
-     ],
-     "nota": "Inclui espaços de inovação"
-    },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      50,
-      56
-     ],
-     "nota": "Em conjunto com os municípios"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1303,
-      1304,
-      1329
+      107
      ],
      "nota": ""
     }
@@ -966,21 +1079,29 @@
   },
   {
    "id": "p43",
-   "subtema": "Infraestrutura e tecnologia nas escolas",
-   "proposta": "Ampliar a conectividade e a modernização tecnológica das escolas estaduais",
-   "n_concorda": 2,
+   "subtema": "Universidades estaduais",
+   "proposta": "Criar rede de cooperação entre as instituições públicas de ensino superior, escolas estaduais e municípios para formular políticas educacionais",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      22
-     ],
-     "nota": ""
-    },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      50
+      110
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1338,
+      1342
+     ],
+     "nota": "Inclui a Fundação Helena Antipoff na rede"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      316
      ],
      "nota": ""
     }
@@ -988,16 +1109,54 @@
   },
   {
    "id": "p44",
-   "subtema": "Infraestrutura e tecnologia nas escolas",
-   "proposta": "Incorporar recursos digitais e inteligência artificial à rotina educacional",
-   "n_concorda": 3,
+   "subtema": "Universidades estaduais",
+   "proposta": "Priorizar a capacidade das instituições públicas mineiras antes de contratar externamente formação, materiais e soluções educacionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1343,
+      1345
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Tecnologia e conectividade",
+   "proposta": "Modernizar tecnologicamente as escolas, ampliando conectividade e uso de plataformas e recursos digitais na aprendizagem",
+   "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
      "blocos": [
       22
      ],
-     "nota": "Como instrumento de personalização do ensino"
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      241,
+      242
+     ],
+     "nota": "Universalizar internet de alta velocidade nas escolas estaduais"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1323
+     ],
+     "nota": "Tecnologia como ferramenta do professor, não substituta"
     },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -1005,20 +1164,12 @@
       128
      ],
      "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1323,
-      1324
-     ],
-     "nota": "Prioriza apoio ao trabalho do professor; nunca substituição"
     }
    }
   },
   {
-   "id": "p45",
-   "subtema": "Infraestrutura e tecnologia nas escolas",
+   "id": "p46",
+   "subtema": "Tecnologia e conectividade",
    "proposta": "Incluir aulas de tecnologia, programação, robótica e inteligência artificial no currículo da rede estadual",
    "n_concorda": 1,
    "posicoes": {
@@ -1032,11 +1183,19 @@
    }
   },
   {
-   "id": "p46",
-   "subtema": "Infraestrutura e tecnologia nas escolas",
-   "proposta": "Formar os profissionais da educação para o uso crítico, ético e produtivo das tecnologias digitais",
-   "n_concorda": 1,
+   "id": "p47",
+   "subtema": "Tecnologia e conectividade",
+   "proposta": "Formar os profissionais da rede em metodologias ativas e uso crítico de tecnologias educacionais",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      241,
+      242
+     ],
+     "nota": ""
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
@@ -1047,24 +1206,24 @@
    }
   },
   {
-   "id": "p47",
-   "subtema": "Infraestrutura e tecnologia nas escolas",
-   "proposta": "Acompanhar regionalmente as condições dos prédios escolares e priorizar investimentos por critérios transparentes",
+   "id": "p48",
+   "subtema": "Tecnologia e conectividade",
+   "proposta": "Usar inteligência artificial como apoio ao planejamento pedagógico e à gestão escolar, sem substituir o professor",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1306
+      1324
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p48",
+   "id": "p49",
    "subtema": "Permanência e combate à evasão",
-   "proposta": "Estruturar busca ativa e combate à evasão escolar em articulação com assistência social e conselhos tutelares",
+   "proposta": "Realizar busca ativa de estudantes fora da escola, integrada com assistência social e outras políticas",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -1072,14 +1231,14 @@
      "blocos": [
       126
      ],
-     "nota": ""
+     "nota": "Atuação com conselhos tutelares"
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
       65
      ],
-     "nota": "Com apoio social a grupos vulnerabilizados"
+     "nota": "Monitoramento da frequência e apoio social"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -1088,51 +1247,14 @@
       1319,
       1370
      ],
-     "nota": "Compartilhamento de informações entre Estado e municípios"
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Permanência e combate à evasão",
-   "proposta": "Monitorar a frequência e a trajetória individual dos estudantes para identificar risco de abandono",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      65
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1312
-     ],
-     "nota": ""
+     "nota": "Em parceria com municípios, com retorno via EJA e educação profissional"
     }
    }
   },
   {
    "id": "p50",
    "subtema": "Permanência e combate à evasão",
-   "proposta": "Criar estratégia estadual de permanência no ensino médio combinando aprendizagem, esporte, cultura, ciência e orientação profissional",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1318
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Permanência e combate à evasão",
-   "proposta": "Consolidar os Jogos Escolares de Minas Gerais (JEMG) como política de formação esportiva e permanência escolar, com calendário estável e participação das redes municipais",
+   "proposta": "Consolidar os Jogos Escolares de Minas Gerais como política de formação esportiva e permanência escolar",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
@@ -1146,30 +1268,7 @@
    }
   },
   {
-   "id": "p52",
-   "subtema": "Permanência e combate à evasão",
-   "proposta": "Incorporar esporte, cultura e arte à formação integral dos estudantes da rede",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1329,
-      1330
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      317
-     ],
-     "nota": "Via formação esportiva escolar"
-    }
-   }
-  },
-  {
-   "id": "p53",
+   "id": "p51",
    "subtema": "Permanência e combate à evasão",
    "proposta": "Atuar para assegurar a matrícula de todas as crianças e adolescentes na idade adequada",
    "n_concorda": 1,
@@ -1184,10 +1283,132 @@
    }
   },
   {
-   "id": "p54",
-   "subtema": "Convivência e segurança escolar",
-   "proposta": "Criar programa de prevenção da violência escolar e mediação de conflitos, com apoio psicossocial e integração entre educação, saúde, assistência social, justiça e segurança",
+   "id": "p52",
+   "subtema": "Permanência e combate à evasão",
+   "proposta": "Criar um programa estadual de transferência de renda para estudantes do ensino médio nos moldes do Pé-de-Meia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      89
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Infraestrutura e alimentação escolar",
+   "proposta": "Executar programa de reforma, manutenção e qualificação da infraestrutura das escolas estaduais",
    "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      130
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      50,
+      56
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1303,
+      1304
+     ],
+     "nota": "Programa permanente com acompanhamento regional e critérios transparentes"
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Infraestrutura e alimentação escolar",
+   "proposta": "Equipar as escolas com bibliotecas, laboratórios de ciências, quadras esportivas e espaços de convivência e inovação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      130
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1304,
+      1329
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Infraestrutura e alimentação escolar",
+   "proposta": "Assegurar alimentação escolar adequada e nutritiva, com valorização da agricultura familiar e melhoria das cozinhas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      132
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
+      79
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Infraestrutura e alimentação escolar",
+   "proposta": "Fortalecer, em colaboração com os municípios, o transporte escolar seguro e regular",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      132
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1278,
+      1353
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      79
+     ],
+     "nota": "No contexto da educação do campo"
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Convivência e segurança escolar",
+   "proposta": "Criar programa de convivência escolar com apoio psicossocial, prevenção do bullying e mediação de conflitos, integrando educação, saúde, assistência e segurança",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -1195,7 +1416,7 @@
       70,
       72
      ],
-     "nota": "Programa Estadual de Boa Convivência nas Escolas"
+     "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -1203,19 +1424,26 @@
       311,
       312
      ],
-     "nota": "Práticas baseadas em evidências"
+     "nota": "Política estadual de escolas seguras baseada em evidências"
     },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
       131
      ],
-     "nota": "Ênfase em protocolos de prevenção e resposta"
+     "nota": "Ênfase em protocolos de prevenção e resposta à violência"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1306
+     ],
+     "nota": "Equipes interdisciplinares com psicólogos e assistentes sociais"
     }
    }
   },
   {
-   "id": "p55",
+   "id": "p58",
    "subtema": "Convivência e segurança escolar",
    "proposta": "Instalar sistemas de videomonitoramento nas escolas integrados às forças de segurança",
    "n_concorda": 1,
@@ -1230,95 +1458,25 @@
    }
   },
   {
-   "id": "p56",
-   "subtema": "Convivência e segurança escolar",
-   "proposta": "Garantir equipes interdisciplinares nas escolas, com psicólogos e assistentes sociais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1300,
-      1306
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      72
-     ],
-     "nota": "Ampliação do apoio psicossocial"
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Colaboração com os municípios",
-   "proposta": "Fortalecer o regime de colaboração com os municípios na alfabetização, nos anos iniciais, nas transições entre etapas e no compartilhamento de informações",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      125
-     ],
-     "nota": "Suporte técnico continuado aos municípios"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      46,
-      48,
-      55
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1278,
-      1310,
-      1385
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Colaboração com os municípios",
-   "proposta": "Dar apoio técnico específico aos municípios com menor capacidade de gestão educacional",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      125
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1287,
-      1288
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p59",
-   "subtema": "Colaboração com os municípios",
-   "proposta": "Institucionalizar a Undime-MG e o Conselho Estadual de Educação como parceiros permanentes da construção das políticas educacionais",
-   "n_concorda": 1,
+   "subtema": "Gestão e governança educacional",
+   "proposta": "Reorientar a supervisão e as Superintendências Regionais de Ensino para o apoio pedagógico e a solução de problemas concretos das escolas",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      307,
+      308
+     ],
+     "nota": ""
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1279,
-      1385
+      1277,
+      1355,
+      1384
      ],
      "nota": ""
     }
@@ -1326,14 +1484,32 @@
   },
   {
    "id": "p60",
-   "subtema": "Colaboração com os municípios",
-   "proposta": "Manter a responsabilidade do Estado pelos prédios das escolas estaduais, admitindo colaboração dos municípios apenas na verificação local",
-   "n_concorda": 1,
+   "subtema": "Gestão e governança educacional",
+   "proposta": "Planejar a política educacional de forma territorial, priorizando regiões com maior defasagem e desigualdade",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-mg-gabriel-130002549557": {
+    "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      308
+      47,
+      48
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236,
+      237
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1287,
+      1353,
+      1356
      ],
      "nota": ""
     }
@@ -1341,91 +1517,9 @@
   },
   {
    "id": "p61",
-   "subtema": "Ensino médio",
-   "proposta": "Priorizar a melhoria da aprendizagem e da relevância do ensino médio, etapa com os piores indicadores",
+   "subtema": "Gestão e governança educacional",
+   "proposta": "Ampliar a participação da comunidade escolar, famílias e estudantes na construção do projeto pedagógico e da política educacional",
    "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      303,
-      304
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      60
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1318
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Ensino médio",
-   "proposta": "Implementar adequadamente as mudanças recentes do ensino médio e diversificar as oportunidades de formação, sem opor ensino técnico e formação geral",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      304
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Ensino médio",
-   "proposta": "Oferecer programas de preparação do jovem do ensino médio para a cidadania e o trabalho",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      66
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1318
-     ],
-     "nota": "Formação cidadã e orientação profissional na estratégia de permanência"
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Gestão e planejamento da rede",
-   "proposta": "Elaborar novo Plano Estadual de Educação, precedido de Conferência Estadual de Educação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      58
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Gestão e planejamento da rede",
-   "proposta": "Assegurar a participação de profissionais, estudantes, famílias e comunidade na construção do projeto pedagógico e da política educacional",
-   "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -1442,37 +1536,124 @@
       1381
      ],
      "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      236
+     ],
+     "nota": "Participação da comunidade escolar na gestão por resultados"
     }
    }
   },
   {
-   "id": "p66",
-   "subtema": "Gestão e planejamento da rede",
-   "proposta": "Fortalecer a Secretaria de Educação e as Superintendências Regionais de Ensino como estruturas de apoio direto às escolas",
+   "id": "p62",
+   "subtema": "Gestão e governança educacional",
+   "proposta": "Elaborar novo Plano Estadual de Educação, precedido de Conferência Estadual de Educação",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
+    "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      1277,
-      1355,
-      1384
+      58
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p67",
-   "subtema": "Gestão e planejamento da rede",
-   "proposta": "Reorientar a supervisão pedagógica estadual da fiscalização burocrática para o apoio ao currículo, à aprendizagem e às devolutivas a professores",
-   "n_concorda": 1,
+   "id": "p63",
+   "subtema": "Gestão e governança educacional",
+   "proposta": "Construir uma política educacional de longo prazo, com continuidade além de programas isolados e trocas de gestão",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-mg-gabriel-130002549557": {
+    "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      307,
-      308
+      1389
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Modelos de escola e gestão da rede",
+   "proposta": "Reestatizar escolas estaduais entregues à gestão privada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      67
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Modelos de escola e gestão da rede",
+   "proposta": "Encerrar a militarização das escolas estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      67
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Modelos de escola e gestão da rede",
+   "proposta": "Transformar fundações educacionais estaduais (FUCAM, Helena Antipoff, Ultramig) em polos locais e regionais de educação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      73,
+      74,
+      75
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1338
+     ],
+     "nota": "Apenas quanto à Fundação Helena Antipoff, integrada à rede de formação"
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Modelos de escola e gestão da rede",
+   "proposta": "Ampliar experiências formativas complementares, inclusive intercâmbio, e assegurar às famílias escolha entre modelos pedagógicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      26
      ],
      "nota": ""
     }
@@ -1480,109 +1661,8 @@
   },
   {
    "id": "p68",
-   "subtema": "Gestão e planejamento da rede",
-   "proposta": "Ampliar a autonomia das equipes escolares para construir soluções adequadas à realidade de sua comunidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1379,
-      1380,
-      1381
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p69",
-   "subtema": "Gestão e planejamento da rede",
-   "proposta": "Planejar a educação territorialmente, considerando as desigualdades regionais na distribuição de recursos, infraestrutura e profissionais",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      47,
-      48
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1353
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      293,
-      306
-     ],
-     "nota": "Gestão da aprendizagem por etapa, escola e território"
-    }
-   }
-  },
-  {
-   "id": "p70",
-   "subtema": "Alimentação e transporte escolar",
-   "proposta": "Assegurar alimentação escolar nutritiva e de qualidade, com valorização da agricultura familiar e melhoria das cozinhas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      132
-     ],
-     "nota": "Inclui combate ao desperdício e acompanhamento nutricional"
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      56,
-      79
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Alimentação e transporte escolar",
-   "proposta": "Garantir transporte escolar seguro e regular em colaboração com os municípios, com atenção às áreas rurais e de grandes distâncias",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      132
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      79
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1278,
-      1353
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p72",
-   "subtema": "EJA e públicos específicos",
-   "proposta": "Ampliar e fortalecer a Educação de Jovens e Adultos, criando condições de permanência",
+   "subtema": "Educação de jovens e adultos e outras modalidades",
+   "proposta": "Ampliar e fortalecer a Educação de Jovens e Adultos, com condições de permanência",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -1598,29 +1678,14 @@
       1370,
       1371
      ],
-     "nota": "Modelo adaptado a quem trabalha ou tem dificuldade de deslocamento"
+     "nota": "Articulada à educação profissional e adaptada a quem trabalha"
     }
    }
   },
   {
-   "id": "p73",
-   "subtema": "EJA e públicos específicos",
-   "proposta": "Articular a oferta de EJA com a educação profissional e oportunidades de trabalho",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1370
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p74",
-   "subtema": "EJA e públicos específicos",
-   "proposta": "Garantir oferta educacional aos adolescentes do sistema socioeducativo e às pessoas privadas de liberdade",
+   "id": "p69",
+   "subtema": "Educação de jovens e adultos e outras modalidades",
+   "proposta": "Garantir oferta educacional nos sistemas socioeducativo e prisional",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1634,9 +1699,9 @@
    }
   },
   {
-   "id": "p75",
-   "subtema": "EJA e públicos específicos",
-   "proposta": "Criar uma rede de atualização de competências para adultos retornarem à formação ao longo da vida",
+   "id": "p70",
+   "subtema": "Educação de jovens e adultos e outras modalidades",
+   "proposta": "Estruturar uma rede estadual de aprendizagem permanente para adultos ao longo da vida",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1649,162 +1714,48 @@
    }
   },
   {
-   "id": "p76",
-   "subtema": "Educação do campo, indígena e comunidades tradicionais",
-   "proposta": "Fortalecer a educação escolar indígena diferenciada, intercultural e bilíngue, com infraestrutura e professores preparados",
+   "id": "p71",
+   "subtema": "Formação integral, cultura e ciência",
+   "proposta": "Fortalecer a educação científica, a cultura, a arte e o esporte como parte da formação integral dos estudantes",
    "n_concorda": 2,
    "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
+    "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      77
+      1329,
+      1330
      ],
      "nota": ""
     },
-    "governador-mg-alexandre-kalil-130002539775": {
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      1365
+      318
+     ],
+     "nota": "Via esporte escolar (JEMG)"
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Formação integral, cultura e ciência",
+   "proposta": "Desenvolver ações de letramento midiático e combate à desinformação nas escolas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      76
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p77",
-   "subtema": "Educação do campo, indígena e comunidades tradicionais",
-   "proposta": "Fortalecer a educação do campo, impedindo o fechamento de escolas rurais e garantindo currículo, transporte, alimentação e infraestrutura adequados",
+   "id": "p73",
+   "subtema": "Primeira infância e creches",
+   "proposta": "Apoiar os municípios na educação infantil, com formação de profissionais, integração com saúde e assistência e apoio a redes com menor capacidade técnica",
    "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      78,
-      79
-     ],
-     "nota": "Articulação com o Pronacampo e a Política Nacional de Educação do Campo"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1306,
-      1366
-     ],
-     "nota": "Critérios próprios de avaliação para escolas rurais e remotas"
-    }
-   }
-  },
-  {
-   "id": "p78",
-   "subtema": "Educação do campo, indígena e comunidades tradicionais",
-   "proposta": "Considerar as especificidades de comunidades quilombolas e povos tradicionais nas políticas educacionais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      47
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1366
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p79",
-   "subtema": "Educação do campo, indígena e comunidades tradicionais",
-   "proposta": "Incluir nas políticas de permanência o enfrentamento de discriminações por raça, gênero, deficiência, orientação sexual e condição social",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1367
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p80",
-   "subtema": "Modelos de gestão das escolas",
-   "proposta": "Reestatizar escolas estaduais privatizadas e encerrar a militarização das escolas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      67
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p81",
-   "subtema": "Modelos de gestão das escolas",
-   "proposta": "Preservar a diversidade de modelos pedagógicos na rede, assegurando às famílias a possibilidade de escolha",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      26
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p82",
-   "subtema": "Modelos de gestão das escolas",
-   "proposta": "Ampliar experiências formativas complementares para os estudantes, inclusive de intercâmbio",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      26
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p83",
-   "subtema": "Fundações educacionais do Estado",
-   "proposta": "Integrar as fundações educacionais estaduais (Fucam, Helena Antipoff e Ultramig) à política educacional, como polos de educação e formação",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      73,
-      74,
-      75
-     ],
-     "nota": "Como polos locais e regionais de educação"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1338
-     ],
-     "nota": "Cita apenas a Fundação Helena Antipoff"
-    }
-   }
-  },
-  {
-   "id": "p84",
-   "subtema": "Primeira infância e educação infantil",
-   "proposta": "Apoiar os municípios na educação infantil e na primeira infância, com formação de profissionais, integração entre educação, saúde e assistência e compartilhamento de diagnósticos",
-   "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -1813,7 +1764,79 @@
       1284,
       1285,
       1286,
-      1290,
+      1288,
+      1290
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      46
+     ],
+     "nota": "Cooperação com municípios para o desenvolvimento integral dos estudantes"
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Gestão e governança educacional",
+   "proposta": "Instituir diálogo permanente com a Undime-MG, o Conselho Estadual de Educação (CEE-MG), universidades, institutos federais, profissionais da educação, famílias e estudantes na construção das políticas educacionais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      58,
+      59,
+      62,
+      80,
+      110
+     ],
+     "nota": "Conferência Estadual de Educação, participação de profissionais, estudantes e famílias e articulação com universidades."
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      310,
+      316
+     ],
+     "nota": "Prevê articulação permanente com universidades públicas estaduais e institutos federais na política educacional."
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1279
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Primeira infância e creches",
+   "proposta": "Articular a rede educacional às políticas de proteção à infância",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      126
+     ],
+     "nota": "Busca ativa integrada com assistência social e conselhos tutelares."
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      46,
+      70,
+      72
+     ],
+     "nota": "Articulação da educação com saúde, assistência social, justiça e segurança para proteção de crianças e adolescentes."
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
       1291
      ],
      "nota": ""
@@ -1821,16 +1844,15 @@
    }
   },
   {
-   "id": "p85",
-   "subtema": "Primeira infância e educação infantil",
-   "proposta": "Melhorar a transição da educação infantil para o ensino fundamental, com compartilhamento de informações pedagógicas sem rótulos ou burocracia",
+   "id": "p76",
+   "subtema": "Permanência e combate à evasão",
+   "proposta": "Assegurar espaço e tempo para que conselhos de classe e equipes pedagógicas analisem a trajetória dos estudantes considerando aprendizagem, frequência, participação e circunstâncias que afetem o desenvolvimento",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1289,
-      1292
+      1380
      ],
      "nota": ""
     }
@@ -1937,10 +1959,6 @@
    },
    "1313": {
     "texto": "Avaliações diagnósticas permitirão compreender quais conteúdos precisam ser retomados e quais estudantes demandam maior acompanhamento. Essas informações serão analisadas juntamente com as condições sociais do território, infraestrutura da escola, composição das equipes, frequência e outras dimensões relevantes.",
-    "pagina": 40
-   },
-   "1314": {
-    "texto": "Nenhuma escola será reduzida a uma nota. Resultados de aprendizagem continuarão importantes, mas precisam ser interpretados dentro da realidade em que cada comunidade escolar está inserida.O objetivo será melhorar a educação. A melhoria dos indicadores deverá ser consequência.",
     "pagina": 40
    },
    "1318": {
@@ -2091,6 +2109,10 @@
     "texto": "A relação com os MUNICÍPIOS, por meio da Undime e de outros espaços de cooperação, permitirá organizar melhor a trajetória dos estudantes entre as diferentes redes.",
     "pagina": 44
    },
+   "1389": {
+    "texto": "Educação é uma política de longo prazo. O Governo trabalhará para construir uma agenda que ultrapasse programas isolados e mudanças administrativas de curto prazo. Professores, estudantes, escolas, universidades, MUNICÍPIOS e instituições públicas precisam compartilhar uma visão de futuro.",
+    "pagina": 45
+   },
    "2957": {
     "texto": "A educação de 2040 não terminará quando uma pessoa deixa a escola ou a universidade. As transformações no trabalho tornarão aprendizagem permanente uma necessidade. Educação Básica continuará responsável por conhecimento, formação humana e cidadania. Mas o Estado precisará criar um ambiente em que adultos também possam retornar à formação ao longo da vida. Universidades, escolas técnicas, empresas e plataformas de educação poderão formar uma rede de atualização de competências.",
     "pagina": 142
@@ -2136,6 +2158,36 @@
    "134": {
     "texto": "10.Apoio às Universidades Estaduais (UEMG e Unimontes): Previsibilidade orçamentária para a expansão do ensino superior, da pesquisa aplicada e da formação docente no interior.",
     "pagina": 9
+   }
+  },
+  "governador-mg-flavio-roscoe-130002550834": {
+   "236": {
+    "texto": "O objetivo é melhorar a aprendizagem com equidade em todas as etapas, com prioridade para o Ensino Fundamental 2 e o Ensino Médio, fortalecendo a orientação para o projeto de vida e ampliando a educação empreendedora e em tempo integral. O principal instrumento de gestão para isso é a Gestão para Resultados Pedagógicos (GRP): um modelo que identifica e ataca as causas de cada problema de aprendizagem, com metas claras, planos de ação, monitoramento contínuo, correção de rota e registro das práticas que funcionam, sempre com participação da comunidade escolar. É a partir da GRP que se torna possível identificar, escola por escola, onde recompor aprendizagem é mais urgente — com foco declarado na redução das desigualdades — e fortalecer especificamente o ensino de Língua Portuguesa e Matemática no Ensino Fundamental 2, etapa em que a defasagem começa a se consolidar.",
+    "pagina": 12
+   },
+   "237": {
+    "texto": "Dentro dessa mesma frente, três compromissos complementam o modelo de gestão: fortalecer a educação em tempo integral, hoje insuficiente diante da demanda; fortalecer a educação inclusiva, para estudantes com deficiência e necessidades específicas; e ampliar a rede de ensino profissionalizante, priorizando municípios de baixo IDH e forte presença industrial, com trilhas formativas flexíveis — do curso rápido à formação técnica completa — construídas em parceria com sindicatos patronais e arranjos produtivos locais, e com oferta híbrida para alcançar municípios mais distantes dos grandes centros.",
+    "pagina": 12
+   },
+   "239": {
+    "texto": "Fortalecer a carreira docente passa por valorização profissional, formação continuada e melhores condições de trabalho — não como discurso, mas como política de bem-estar do educador que se reflete diretamente na qualidade da aprendizagem. As linhas de ação são a formação continuada de docentes pela Academia Cide; a ampliação de programas de desenvolvimento de lideranças escolares, com gestão de competências voltada especificamente para liderança; a ampliação da formação de mestres e doutores dentro da rede, de forma equitativa e inclusiva e com foco na solução de problemas reais da escola; o fortalecimento do processo de seleção de diretores, para que a direção escolar deixe de ser cargo apenas político e passe a exigir competência de gestão comprovada; a atualização do plano de carreira docente; e o fortalecimento de programas de saúde e bem-estar dos profissionais da educação, área historicamente negligenciada nas políticas de valorização docente.",
+    "pagina": 12
+   },
+   "241": {
+    "texto": "A transformação digital da educação mineira ainda é desigual: parte da rede tem acesso pleno a plataformas e equipamentos, e parte segue com baixo letramento tecnológico, tanto de estudantes quanto de professores. O objetivo é universalizar o acesso à internet de alta velocidade nas escolas estaduais, ampliar o uso de plataformas digitais de aprendizagem, disponibilizar recursos tecnológicos a estudantes e professores e formar os profissionais da rede em metodologias ativas e tecnologias",
+    "pagina": 12
+   },
+   "242": {
+    "texto": "educacionais, também através da Academia Cide — de modo que a tecnologia deixe de ser vantagem de quem já tinha estrutura e passe a reduzir, e não a ampliar, a desigualdade entre regionais.",
+    "pagina": 12
+   },
+   "244": {
+    "texto": "Boa parte da defasagem educacional mineira nasce fora da governança direta do estado: municípios pequenos, sem orçamento e sem corpo técnico próprio, carregam responsabilidades educacionais que não conseguem cumprir sozinhos. Fortalecer o regime de colaboração significa assistência técnica permanente, formação continuada, compartilhamento de boas práticas entre redes e apoio direto à gestão educacional municipal, com dois compromissos objetivos: implementar um programa de cooperação técnica que insira os municípios nos próprios sistemas de avaliação e gestão do estado — em vez de deixá-los de fora dos indicadores que orientam a política estadual — e dar continuidade ao apoio a políticas de alfabetização já em curso, como o Compromisso Nacional Criança Alfabetizada (CNCA), sem descontinuidade a cada troca de gestão. \n●",
+    "pagina": 13
+   },
+   "245": {
+    "texto": "Criar um índice mineiro de continuidade da aprendizagem, medido a cada dois anos, que acompanhe a mesma coorte de estudantes da alfabetização ao nono ano — hoje o Ideb mede pontos fixos da trajetória escolar, mas não acompanha a mesma turma ao longo do tempo, o que impede saber se o ganho na alfabetização de fato se sustenta para os mesmos alunos mais adiante.",
+    "pagina": 13
    }
   },
   "governador-mg-gabriel-130002549557": {

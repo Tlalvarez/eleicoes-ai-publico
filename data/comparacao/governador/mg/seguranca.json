@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "seguranca-mg.json",
-  "gerado_em": "2026-09-14T01:07:11Z",
-  "exportado_em": "2026-09-14T04:36:11Z"
+  "gerado_em": "2026-09-14T10:30:00Z",
+  "exportado_em": "2026-09-14T11:32:08Z"
  },
  "candidatos": [
   {
@@ -29,6 +29,14 @@
    "numero": "10",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017111301",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002552296/MG"
+  },
+  {
+   "slug": "governador-mg-flavio-roscoe-130002550834",
+   "nome": "Flávio Roscoe",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/130017092515",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/130002550834/MG"
   },
   {
    "slug": "governador-mg-gabriel-130002549557",
@@ -58,8 +66,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Crime organizado e facções",
-   "proposta": "Enfrentar as organizações criminosas atacando suas bases econômico-financeiras, com foco na lavagem de dinheiro e no bloqueio dos fluxos de lucratividade",
+   "subtema": "Crime organizado e inteligência",
+   "proposta": "Enfrentar as organizações criminosas atacando suas bases econômico-financeiras, com combate à lavagem de dinheiro e descapitalização do crime",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -88,7 +96,7 @@
      "blocos": [
       379
      ],
-     "nota": "Investigação financeira e recuperação de ativos"
+     "nota": "Investigação financeira com destinação transparente dos ativos recuperados"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -97,81 +105,14 @@
       1447,
       1448
      ],
-     "nota": ""
+     "nota": "Programa nomeado 'Minas contra o Dinheiro do Crime'"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Crime organizado e facções",
-   "proposta": "Criar programa estadual específico de descapitalização do crime, integrando investigação criminal, inteligência, administração tributária e órgãos federais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1446
-     ],
-     "nota": "Programa nomeado 'Minas contra o Dinheiro do Crime', com uso do fisco"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Crime organizado e facções",
-   "proposta": "Priorizar o controle de rotas e fluxos ilícitos, com monitoramento de divisas, corredores rodoviários e interdição das rotas do tráfico",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      32
-     ],
-     "nota": "Foco nas divisas com sete estados"
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      110
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      373
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1429,
-      1430
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Crime organizado e facções",
-   "proposta": "Destinar de forma transparente os ativos recuperados do crime a inteligência, tecnologia e estrutura das forças",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      379
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Inteligência e integração das forças",
-   "proposta": "Ampliar o uso da inteligência e da análise criminal na atividade policial e na prevenção",
+   "subtema": "Crime organizado e inteligência",
+   "proposta": "Ampliar o uso de inteligência e análise de dados na atividade policial para prevenir e combater o crime organizado",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -198,7 +139,8 @@
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      378
+      378,
+      379
      ],
      "nota": ""
     },
@@ -212,9 +154,9 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Inteligência e integração das forças",
-   "proposta": "Criar um centro/comando integrado de inteligência criminal com base de dados única unificando Polícia Militar, Polícia Civil, Polícia Penal, Bombeiros e sistema prisional",
+   "id": "p3",
+   "subtema": "Crime organizado e inteligência",
+   "proposta": "Criar centro/comando integrado de inteligência criminal unificando as bases de dados das forças estaduais em plataforma única",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -222,7 +164,7 @@
      "blocos": [
       109
      ],
-     "nota": "Inclui Defesa Civil na plataforma integrada"
+     "nota": "Inclui Bombeiros, Defesa Civil e sistema prisional"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
@@ -230,44 +172,65 @@
       372,
       373
      ],
-     "nota": ""
+     "nota": "Centro com diagnóstico territorial contínuo e acompanhamento de rotas"
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Inteligência e integração das forças",
-   "proposta": "Instituir e consolidar a participação de Minas Gerais no Sistema Único de Segurança Pública (SUSP)",
-   "n_concorda": 2,
+   "id": "p4",
+   "subtema": "Crime organizado e inteligência",
+   "proposta": "Integrar a atuação das polícias estaduais e cooperar com União, outros estados e sistema de Justiça no âmbito do SUSP",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
       323
      ],
-     "nota": ""
+     "nota": "Instituir e consolidar o SUSP em Minas"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      357,
       373
      ],
-     "nota": ""
+     "nota": "Participação ativa no SUSP e cooperação com estados vizinhos"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1399,
+      1400
+     ],
+     "nota": "Cooperação federativa e com municípios, sem citar o SUSP"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      220
+     ],
+     "nota": "Integração Civil–Militar focada na capital"
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Inteligência e integração das forças",
-   "proposta": "Cooperar com outras unidades da federação, com a União e com as instituições do sistema de Justiça, incluindo integração de bases de dados",
-   "n_concorda": 3,
+   "id": "p5",
+   "subtema": "Crime organizado e inteligência",
+   "proposta": "Controlar os fluxos ilícitos e as rotas do tráfico nas divisas e corredores rodoviários do estado",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
      "blocos": [
       32
      ],
+     "nota": "Integração de bases de dados com outras UFs e a União"
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      110
+     ],
      "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
@@ -280,69 +243,18 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1400
+      1429,
+      1430
      ],
-     "nota": ""
+     "nota": "Monitoramento de rotas pela Muralha Digital"
     }
    }
   },
   {
-   "id": "p9",
-   "subtema": "Inteligência e integração das forças",
-   "proposta": "Criar portal público de dados criminais atualizados e territorializados, com metodologia aberta e proteção contra manipulação estatística",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      374,
-      375
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
+   "id": "p6",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar e interiorizar a rede especializada de atendimento às mulheres (delegacias especializadas, casas de acolhimento, centros de referência, unidades móveis)",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      111
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      328
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      387
-     ],
-     "nota": "Núcleos regionais e casas consorciadas no interior"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1464
-     ],
-     "nota": "Fluxos regionais para municípios sem serviço próprio"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Garantir resposta integrada entre segurança, saúde, assistência social e Justiça no atendimento a mulheres em situação de violência",
-   "n_concorda": 3,
+   "proposta": "Ampliar e integrar a rede de prevenção e proteção às mulheres em situação de violência, articulando segurança, saúde, assistência e Justiça",
+   "n_concorda": 6,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
      "posicao": "concorda",
@@ -351,10 +263,32 @@
      ],
      "nota": ""
     },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      111
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      221
+     ],
+     "nota": "Foco no ciclo avançado de violência, não só na denúncia"
+    },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
       328
+     ],
+     "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      386,
+      387
      ],
      "nota": ""
     },
@@ -363,19 +297,116 @@
      "blocos": [
       1462,
       1463,
+      1464,
       1465,
       1466,
-      1467,
-      1469
+      1467
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p12",
+   "id": "p7",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar o monitoramento eletrônico de agressores",
+   "proposta": "Interiorizar e capilarizar os serviços de proteção à mulher, garantindo atendimento em municípios sem estrutura especializada",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      328
+     ],
+     "nota": "Casas da Mulher Brasileira, centros de referência e unidades móveis"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      386,
+      387
+     ],
+     "nota": "Núcleos regionais e casas de acolhimento consorciadas"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1464
+     ],
+     "nota": "Fluxos regionais de atendimento"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Instituir política ou plano estadual de enfrentamento ao feminicídio com metas de redução",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      331
+     ],
+     "nota": "Inclui enfrentamento ao genocídio da juventude negra"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      387
+     ],
+     "nota": "Adesão ao Pacto Nacional e metas territoriais"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": "Meta de redução com foco em casos de risco extremo"
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      111
+     ],
+     "nota": "Combate ao feminicídio como prioridade absoluta"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Instituir avaliação e reavaliação periódica de risco das vítimas com medida protetiva ativa, com acompanhamento prioritário dos casos de risco extremo",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      222,
+      275
+     ],
+     "nota": "Protocolo obrigatório a cada 30 dias na Polícia Civil"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      387
+     ],
+     "nota": "Avaliação de risco e monitoramento de medidas protetivas"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1468,
+      1472
+     ],
+     "nota": "Protocolos de cumprimento e acompanhamento das protetivas"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Ampliar o monitoramento eletrônico de agressores em casos de risco qualificado",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -390,12 +421,34 @@
      "blocos": [
       387
      ],
-     "nota": "Restrito a casos de risco qualificado"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p13",
+   "id": "p11",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Expandir delegacias especializadas de atendimento à mulher",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      111
+     ],
+     "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      328
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
    "subtema": "Violência contra a mulher",
    "proposta": "Fortalecer as patrulhas de proteção à mulher (Patrulha Maria da Penha)",
    "n_concorda": 2,
@@ -417,39 +470,9 @@
    }
   },
   {
-   "id": "p14",
+   "id": "p13",
    "subtema": "Violência contra a mulher",
-   "proposta": "Instituir política/plano estadual de enfrentamento ao feminicídio",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      331
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      386,
-      387
-     ],
-     "nota": "Com adesão ao Pacto Nacional e metas territoriais"
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      111
-     ],
-     "nota": "Trata o combate ao feminicídio como prioridade absoluta"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Implantar ações educativas de prevenção à violência contra a mulher no ensino fundamental e médio, em escolas públicas e privadas",
+   "proposta": "Implantar ações educativas de prevenção à violência contra a mulher nas escolas de ensino fundamental e médio",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -457,14 +480,14 @@
      "blocos": [
       112
      ],
-     "nota": "Programa PEPROM"
+     "nota": "Programa PEPROM em escolas públicas e privadas"
     }
    }
   },
   {
-   "id": "p16",
+   "id": "p14",
    "subtema": "Violência contra a mulher",
-   "proposta": "Aprimorar a avaliação de risco e o acompanhamento do cumprimento das medidas protetivas",
+   "proposta": "Desenvolver ações de prevenção dirigidas ao público masculino/agressores",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
@@ -477,18 +500,17 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1468,
-      1472
+      1463
      ],
-     "nota": ""
+     "nota": "Responsabilização dos agressores integrada à rede"
     }
    }
   },
   {
-   "id": "p17",
+   "id": "p15",
    "subtema": "Violência contra a mulher",
-   "proposta": "Articular a proteção às mulheres com políticas de trabalho, habitação e qualificação para recuperação de autonomia da vítima",
-   "n_concorda": 1,
+   "proposta": "Articular a proteção às mulheres com políticas de habitação, qualificação, trabalho e apoio ao deslocamento para recuperação da autonomia",
+   "n_concorda": 2,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -496,29 +518,20 @@
       1473
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Reduzir a revitimização com protocolos que evitem repetição de relatos e organizem o compartilhamento de informações entre instituições",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
+    },
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      1470,
-      1471
+      387
      ],
-     "nota": ""
+     "nota": "Apoio ao deslocamento das vítimas"
     }
    }
   },
   {
-   "id": "p19",
+   "id": "p16",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Orientar o sistema prisional à ressocialização, ampliando trabalho, estudo e atividades educativas para os custodiados",
+   "proposta": "Ampliar as oportunidades de trabalho, estudo e qualificação profissional para pessoas privadas de liberdade como instrumento de ressocialização",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -526,7 +539,7 @@
      "blocos": [
       37
      ],
-     "nota": "Ênfase no trabalho e na responsabilização"
+     "nota": "Ênfase no trabalho, com responsabilização indissociável"
     },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
@@ -545,7 +558,7 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1501,
+      1502,
       1503
      ],
      "nota": ""
@@ -553,31 +566,9 @@
    }
   },
   {
-   "id": "p20",
+   "id": "p17",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Separar os custodiados segundo perfil e gravidade do crime, reduzindo a influência das facções",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      116
-     ],
-     "nota": ""
-    },
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      335
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Recuperar o controle estatal das unidades prisionais e interromper o comando de atividades criminosas a partir de dentro",
+   "proposta": "Impedir o comando de atividades criminosas a partir das unidades prisionais, com fortalecimento da inteligência penitenciária e do controle estatal do sistema",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -592,12 +583,13 @@
      "blocos": [
       335
      ],
-     "nota": "Reforço da fiscalização e da gestão das unidades"
+     "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      382
+      382,
+      383
      ],
      "nota": ""
     },
@@ -607,44 +599,109 @@
       1493,
       1494
      ],
-     "nota": ""
+     "nota": "Inteligência penitenciária conectada à investigação criminal"
     }
    }
   },
   {
-   "id": "p22",
+   "id": "p18",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Instalar bloqueadores de celular homologados, operados pelo próprio Estado, e isolar lideranças criminosas",
-   "n_concorda": 1,
+   "proposta": "Separar os custodiados conforme perfil e gravidade do delito, isolando lideranças de facções",
+   "n_concorda": 4,
    "posicoes": {
-    "governador-mg-gabriel-130002549557": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      383
+      116
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Ampliar as APACs e os centros de ressocialização como alternativa de execução penal",
-   "n_concorda": 3,
-   "posicoes": {
+    },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
-      338
+      335
      ],
-     "nota": "Justifica por menor custo e menor reincidência"
+     "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
       383
      ],
+     "nota": "Isolamento de lideranças"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1498
+     ],
+     "nota": "Estruturas de maior segurança para quem demanda maior controle"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Ampliar vagas prisionais para enfrentar o déficit e a superlotação",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      219
+     ],
+     "nota": "Plano de emergência para o déficit de 22 a 24 mil vagas"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      383
+     ],
+     "nota": "Novas vagas e reformas emergenciais"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1497
+     ],
+     "nota": "Vagas podem ser necessárias, mas não como política única"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Adotar parcerias público-privadas na gestão das unidades prisionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      219
+     ],
      "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Ampliar os métodos alternativos de execução penal voltados à ressocialização, como APACs e centros de ressocialização",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      383
+     ],
+     "nota": "Expansão das APACs"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      338
+     ],
+     "nota": "Centros de Ressocialização, por menor custo e reincidência"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -656,39 +713,10 @@
    }
   },
   {
-   "id": "p24",
+   "id": "p22",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Integrar a inteligência penitenciária aos sistemas de investigação e às bases de dados das demais forças",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      109
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      373
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1494
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Reduzir a superlotação e o número de pessoas em prisão provisória, em articulação com Judiciário, Ministério Público e Defensoria",
-   "n_concorda": 3,
+   "proposta": "Atuar com Judiciário, Ministério Público e Defensoria para reduzir a população em prisão provisória e a pressão sobre o sistema",
+   "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -696,13 +724,6 @@
       337
      ],
      "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      383
-     ],
-     "nota": "Enfrentamento da superlotação, sem menção à prisão provisória"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -715,32 +736,10 @@
    }
   },
   {
-   "id": "p26",
+   "id": "p23",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Criar novas vagas prisionais e realizar reformas emergenciais nas unidades",
+   "proposta": "Melhorar as condições físicas e o tratamento digno nas unidades prisionais, com reformas",
    "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      383
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1497
-     ],
-     "nota": "Admite novas vagas, mas rejeita que seja a única política"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Melhorar as condições das unidades prisionais, assegurando tratamento digno à população carcerária",
-   "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -748,11 +747,35 @@
       336
      ],
      "nota": ""
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      383
+     ],
+     "nota": "Reformas emergenciais"
     }
    }
   },
   {
-   "id": "p28",
+   "id": "p24",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Estruturar política de preparação para a saída da prisão e reintegração, com documentação e encaminhamento à rede do município de residência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1501,
+      1503,
+      1504
+     ],
+     "nota": "Prevê estruturas regionais de apoio à saída"
+    }
+   }
+  },
+  {
+   "id": "p25",
    "subtema": "Sistema prisional e ressocialização",
    "proposta": "Fortalecer a Polícia Penal",
    "n_concorda": 1,
@@ -767,26 +790,24 @@
    }
   },
   {
-   "id": "p29",
+   "id": "p26",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Estruturar política de preparação para a saída da prisão, com documentação, encaminhamento ao município de residência e estruturas regionais de apoio à reintegração",
+   "proposta": "Adquirir e operar bloqueadores de celular homologados nas unidades prisionais para cortar a comunicação ilícita",
    "n_concorda": 1,
    "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      1501,
-      1502,
-      1504
+      383
      ],
-     "nota": ""
+     "nota": "Equipamentos homologados pela Anatel operados pelo Estado"
     }
    }
   },
   {
-   "id": "p30",
+   "id": "p27",
    "subtema": "Valorização dos profissionais de segurança",
-   "proposta": "Implementar política de valorização dos profissionais de segurança, com melhores condições de trabalho, estrutura e equipamentos",
+   "proposta": "Valorizar os profissionais de segurança pública, com melhores condições de trabalho, estrutura e equipamentos",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -806,6 +827,7 @@
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
+      323,
       329
      ],
      "nota": ""
@@ -828,18 +850,11 @@
    }
   },
   {
-   "id": "p31",
+   "id": "p28",
    "subtema": "Valorização dos profissionais de segurança",
-   "proposta": "Promover recomposição salarial dos profissionais de segurança",
+   "proposta": "Promover recomposição salarial das forças de segurança",
    "n_concorda": 3,
    "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      36
-     ],
-     "nota": ""
-    },
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
@@ -847,9 +862,17 @@
      ],
      "nota": "Recomposição salarial contínua"
     },
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      36
+     ],
+     "nota": "Valorização considerando remuneração"
+    },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
+      366,
       367
      ],
      "nota": "Política salarial pactuada e compatível com o espaço fiscal"
@@ -857,63 +880,9 @@
    }
   },
   {
-   "id": "p32",
+   "id": "p29",
    "subtema": "Valorização dos profissionais de segurança",
-   "proposta": "Recompor os efetivos das forças de segurança com concursos e planejamento de quadros",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      115
-     ],
-     "nota": "Concursos públicos periódicos"
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      384,
-      385
-     ],
-     "nota": "Recusa prometer quantitativos sem diagnóstico regionalizado"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1411
-     ],
-     "nota": "Planejamento periódico do efetivo por demanda territorial"
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Valorização dos profissionais de segurança",
-   "proposta": "Investir na formação e na qualificação profissional permanente das forças de segurança",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      330,
-      332
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1458,
-      1459
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Valorização dos profissionais de segurança",
-   "proposta": "Garantir atenção à saúde mental dos profissionais de segurança, com prevenção ao adoecimento e ao suicídio",
+   "proposta": "Cuidar da saúde física e mental dos profissionais de segurança, com prevenção ao adoecimento e ao suicídio",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -935,37 +904,76 @@
      "blocos": [
       385
      ],
-     "nota": "Inclui segurança jurídica de quem atua dentro da lei"
+     "nota": "Inclui segurança jurídica de quem atua na lei"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
       1458
      ],
-     "nota": "Prevenção ao suicídio e apoio às famílias"
+     "nota": "Inclui prevenção ao suicídio e previsibilidade de escalas"
     }
    }
   },
   {
-   "id": "p35",
+   "id": "p30",
    "subtema": "Valorização dos profissionais de segurança",
-   "proposta": "Reconstruir a confiança institucional entre o governo e as forças de segurança por meio de diálogo permanente e compromissos públicos",
-   "n_concorda": 1,
+   "proposta": "Recompor os efetivos das forças de segurança, com concursos e planejamento da necessidade de pessoal",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      115
+     ],
+     "nota": "Concursos públicos periódicos"
+    },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      366,
-      367
+      384,
+      385
+     ],
+     "nota": "Recomposição a partir de diagnóstico regionalizado, sem prometer números"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1410,
+      1411
+     ],
+     "nota": "Distribuição do efetivo pela demanda real dos territórios"
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Valorização dos profissionais de segurança",
+   "proposta": "Qualificar permanentemente a formação policial, acompanhando as transformações da criminalidade e da tecnologia",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      330,
+      332
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1458,
+      1459
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p36",
+   "id": "p32",
    "subtema": "Investigação e perícia",
-   "proposta": "Fortalecer a perícia criminal e a medicina legal com estrutura, pessoal e tecnologia",
+   "proposta": "Fortalecer a perícia criminal e a medicina legal, com estrutura, pessoal e tecnologia para reduzir gargalos",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -999,9 +1007,9 @@
    }
   },
   {
-   "id": "p37",
+   "id": "p33",
    "subtema": "Investigação e perícia",
-   "proposta": "Fortalecer a capacidade investigativa da Polícia Civil, com estruturas especializadas para crimes de maior impacto",
+   "proposta": "Fortalecer a capacidade investigativa da Polícia Civil, com mais resolutividade e celeridade dos inquéritos",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -1009,51 +1017,38 @@
      "blocos": [
       114
      ],
-     "nota": ""
+     "nota": "Meta de reduzir o tempo de tramitação dos inquéritos"
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
      "blocos": [
       326
      ],
-     "nota": "Foco na estrutura especializada em crimes cibernéticos"
+     "nota": "Ampliação de estruturas especializadas"
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
+      378,
       379
      ],
-     "nota": "Sem opor Polícia Militar e Polícia Civil"
+     "nota": ""
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
       1439,
+      1440,
       1442
      ],
-     "nota": ""
+     "nota": "Estratégias específicas para homicídios e mercados criminais"
     }
    }
   },
   {
-   "id": "p38",
+   "id": "p34",
    "subtema": "Investigação e perícia",
-   "proposta": "Reduzir o tempo de tramitação dos inquéritos e ampliar a resolutividade das investigações",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      114
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Investigação e perícia",
-   "proposta": "Implantar plantão digital audiovisual e descentralizado na Polícia Civil, eliminando redigitação e burocracias no atendimento",
+   "proposta": "Digitalizar e desburocratizar o atendimento e o registro de ocorrências da Polícia Civil",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -1061,46 +1056,159 @@
      "blocos": [
       113
      ],
-     "nota": ""
+     "nota": "Plantão Digital Audiovisual e Descentralizado, sem redigitação"
     }
    }
   },
   {
-   "id": "p40",
-   "subtema": "Investigação e perícia",
-   "proposta": "Estruturar estratégias específicas de investigação de homicídios e de mercados criminais, com equipes especializadas para casos complexos",
+   "id": "p35",
+   "subtema": "Policiamento e território",
+   "proposta": "Orientar o policiamento por dados e análise territorial, concentrando presença nas áreas e horários de maior incidência criminal",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      108
+     ],
+     "nota": ""
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      220
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1405,
+      1406
+     ],
+     "nota": "Substituir alocação histórica por gestão pela demanda real"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Policiamento e território",
+   "proposta": "Estruturar atuação focalizada em territórios prioritários com maior concentração de homicídios e violência",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1420
+     ],
+     "nota": "Diagnóstico e plano por território prioritário"
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      220
+     ],
+     "nota": "Foco na reversão da alta de homicídios e tráfico em Belo Horizonte"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Policiamento e território",
+   "proposta": "Ampliar o policiamento, a investigação e a inteligência voltados à segurança no campo e nas regiões rurais e do interior",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      108
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1489,
+      1490,
+      1526
+     ],
+     "nota": "Construção em diálogo com produtores e uso de georreferenciamento"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Policiamento e território",
+   "proposta": "Definir planejamento, metas e prioridades regionais de segurança por região integrada (RISP), com responsabilização",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1440,
-      1442
+      1415,
+      1417,
+      1524,
+      1528
+     ],
+     "nota": "Estratégias diferenciadas por macrorregião"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Policiamento e território",
+   "proposta": "Estabelecer política permanente de cooperação com municípios e guardas municipais, apoiando capacidades locais de prevenção",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1400,
+      1484,
+      1485
      ],
      "nota": ""
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      327
+     ],
+     "nota": "Parceria com municípios em operações contra o comércio de celulares roubados"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Tecnologia e monitoramento",
+   "proposta": "Implantar sistema estadual integrado de videomonitoramento com leitura automática de placas e integração de câmeras municipais e rodoviárias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1428,
+      1430,
+      1431,
+      2350
+     ],
+     "nota": "Programa nomeado Muralha Digital, com implantação gradual"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      381
+     ],
+     "nota": "Processamento de imagens e alertas operacionais"
     }
    }
   },
   {
    "id": "p41",
    "subtema": "Tecnologia e monitoramento",
-   "proposta": "Ampliar o emprego de tecnologia na segurança pública, com critérios técnicos e respeito aos marcos legais",
-   "n_concorda": 4,
+   "proposta": "Usar reconhecimento facial e ferramentas automatizadas somente com auditoria, supervisão humana e salvaguardas legais",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-mg-mateus-simoes-130002541911": {
-     "posicao": "concorda",
-     "blocos": [
-      33
-     ],
-     "nota": ""
-    },
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      109
-     ],
-     "nota": ""
-    },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
@@ -1112,18 +1220,23 @@
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1515,
-      1516,
-      1517
+      1518
      ],
-     "nota": "Adoção em escala controlada com avaliação prévia de custos e integração"
+     "nota": "Exige base legal, avaliação de impacto e revisão"
+    },
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      33
+     ],
+     "nota": "Emprego de tecnologia observados os marcos legais"
     }
    }
   },
   {
    "id": "p42",
    "subtema": "Tecnologia e monitoramento",
-   "proposta": "Implantar progressivamente câmeras corporais nas forças de segurança estaduais",
+   "proposta": "Implantar câmeras corporais nas forças de segurança estaduais, com protocolos de uso e proteção das imagens",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -1131,61 +1244,38 @@
      "blocos": [
       332
      ],
-     "nota": "Inclui unidades especializadas e protocolos de proteção das imagens"
+     "nota": "Implantação progressiva, inclusive em unidades especializadas"
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
       1434
      ],
-     "nota": "Universalização progressiva, como equipamento de proteção do policial"
+     "nota": "Universalização progressiva, apresentada também como proteção ao policial"
     }
    }
   },
   {
    "id": "p43",
    "subtema": "Tecnologia e monitoramento",
-   "proposta": "Condicionar reconhecimento facial e tecnologias de dados pessoais a auditoria, supervisão humana e regras de acesso",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      381
-     ],
-     "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1518
-     ],
-     "nota": "Exige base legal, avaliação de impacto e mecanismos de revisão"
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Tecnologia e monitoramento",
-   "proposta": "Implantar rede estadual de videomonitoramento com leitura automática de placas e sensores, integrando câmeras municipais e rodoviárias",
+   "proposta": "Condicionar a adoção de novas tecnologias a avaliação técnica prévia, escala controlada e demonstração de resultados",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1428,
-      1429,
-      1431,
-      2350
+      1515,
+      1516,
+      1517
      ],
-     "nota": "Programa 'Muralha Digital de Minas Gerais', implantação gradual"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p45",
-   "subtema": "Crimes cibernéticos e roubo de celulares",
-   "proposta": "Estruturar o enfrentamento aos crimes cibernéticos e às fraudes digitais",
+   "id": "p44",
+   "subtema": "Crimes cibernéticos e crimes patrimoniais cotidianos",
+   "proposta": "Estruturar o enfrentamento aos crimes cibernéticos e às fraudes digitais com unidades e capacidades especializadas",
    "n_concorda": 4,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -1193,7 +1283,7 @@
      "blocos": [
       35
      ],
-     "nota": "Foco nos fluxos financeiros que sustentam esses crimes"
+     "nota": "Atuação sobre os fluxos financeiros que sustentam esses crimes"
     },
     "governador-mg-patrus-ananias-130002550464": {
      "posicao": "concorda",
@@ -1220,9 +1310,32 @@
    }
   },
   {
+   "id": "p45",
+   "subtema": "Crimes cibernéticos e crimes patrimoniais cotidianos",
+   "proposta": "Criar programa estadual de combate ao roubo e furto de celulares, com rastreamento, bloqueio e devolução dos aparelhos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      327
+     ],
+     "nota": "Estratégia Celular Seguro com operações contra o comércio de aparelhos"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      388,
+      389
+     ],
+     "nota": "Plataforma de IMEI inspirada no Piauí, integrada ao centro de inteligência"
+    }
+   }
+  },
+  {
    "id": "p46",
-   "subtema": "Crimes cibernéticos e roubo de celulares",
-   "proposta": "Criar sala integrada de resposta rápida com bancos, fintechs e operadoras para bloqueio de contas e linhas e rastreamento de transferências, com atendimento às vítimas junto ao Procon",
+   "subtema": "Crimes cibernéticos e crimes patrimoniais cotidianos",
+   "proposta": "Criar sala integrada de resposta rápida com bancos, fintechs e operadoras para bloqueio de contas, linhas e rastreamento de transferências",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -1230,14 +1343,14 @@
      "blocos": [
       326
      ],
-     "nota": ""
+     "nota": "Atendimento às vítimas integrado ao Procon"
     }
    }
   },
   {
    "id": "p47",
-   "subtema": "Crimes cibernéticos e roubo de celulares",
-   "proposta": "Promover a educação digital da população como prevenção aos crimes cibernéticos",
+   "subtema": "Crimes cibernéticos e crimes patrimoniais cotidianos",
+   "proposta": "Promover educação digital da população como prevenção a crimes cibernéticos",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -1251,156 +1364,98 @@
   },
   {
    "id": "p48",
-   "subtema": "Crimes cibernéticos e roubo de celulares",
-   "proposta": "Criar programa estadual de combate ao roubo e furto de celulares, com identificação, bloqueio, recuperação e devolução dos aparelhos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      327
-     ],
-     "nota": "Operações permanentes com municípios contra o comércio de aparelhos furtados"
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      388,
-      389
-     ],
-     "nota": "Plataforma de IMEI inspirada no Piauí, integrada ao Celular Seguro"
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Orientar o policiamento por dados e análise territorial, priorizando áreas e horários de maior incidência criminal",
+   "subtema": "Sistema socioeducativo e proteção de jovens",
+   "proposta": "Fortalecer o sistema socioeducativo com estrutura própria e foco na reinserção do adolescente",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
      "posicao": "concorda",
      "blocos": [
-      108
+      116
+     ],
+     "nota": "Modernização junto com o sistema prisional"
+    },
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      472,
+      473
+     ],
+     "nota": "Comando estatal claro, diferenciado do sistema prisional adulto"
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1478
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Sistema socioeducativo e proteção de jovens",
+   "proposta": "Garantir acompanhamento e conexão do adolescente com a rede local após o desligamento da medida socioeducativa, com meta de reduzir a reentrada",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1478
      ],
      "nota": ""
     },
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      373
+      473
      ],
-     "nota": "Diagnóstico territorial contínuo no centro de inteligência"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1405,
-      1406,
-      1410
-     ],
-     "nota": "Substitui alocação histórica por gestão pela demanda real"
+     "nota": "Redução da reentrada como indicador central"
     }
    }
   },
   {
    "id": "p50",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Ampliar a presença física das forças de segurança nos territórios, incluindo o interior e regiões mais vulneráveis",
+   "subtema": "Sistema socioeducativo e proteção de jovens",
+   "proposta": "Desenvolver ações intersetoriais focalizadas para prevenir o recrutamento de crianças e adolescentes pelo crime",
    "n_concorda": 2,
    "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      108
-     ],
-     "nota": ""
-    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1406,
-      1526
+      1477
      ],
-     "nota": "Ênfase no Norte, Jequitinhonha e Mucuri"
+     "nota": "Segurança, educação, saúde e assistência em territórios de risco"
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      331
+     ],
+     "nota": "Enfrentamento ao genocídio da juventude negra"
     }
    }
   },
   {
    "id": "p51",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Fortalecer o policiamento, a investigação e a inteligência voltados à segurança no campo",
-   "n_concorda": 2,
+   "subtema": "Gestão, financiamento e transparência",
+   "proposta": "Publicar dados criminais territorializados em portal com metodologia pública e proteção contra maquiagem estatística",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
+    "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      108
+      374,
+      375
      ],
      "nota": ""
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1489,
-      1490
-     ],
-     "nota": "Construção em diálogo com produtores e uso de georreferenciamento"
     }
    }
   },
   {
    "id": "p52",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Transformar as 19 RISPs em unidades efetivas de gestão, com diagnóstico, metas e planejamento regionalizado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1415,
-      1417,
-      1528
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Definir territórios prioritários de proteção à vida, com diagnóstico e plano de atuação próprios",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1420
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Estabelecer política permanente de cooperação com os municípios e apoio às Guardas Municipais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1484,
-      1485
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Custear pelo orçamento estadual as despesas ordinárias da segurança (combustível, viaturas, delegacias), reduzindo a dependência de repasses das prefeituras",
+   "subtema": "Gestão, financiamento e transparência",
+   "proposta": "Custear as despesas ordinárias da segurança pelo orçamento estadual, reduzindo a dependência de repasses das prefeituras",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
@@ -1414,115 +1469,25 @@
    }
   },
   {
-   "id": "p56",
-   "subtema": "Prevenção, juventude e sistema socioeducativo",
-   "proposta": "Fortalecer o sistema socioeducativo com foco em responsabilização e reinserção",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-mg-cleitinho-azevedo-130002552296": {
-     "posicao": "concorda",
-     "blocos": [
-      116
-     ],
-     "nota": ""
-    },
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      472,
-      473
-     ],
-     "nota": "Comando estatal claro e diferenciação do sistema prisional adulto"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1399,
-      1478
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Prevenção, juventude e sistema socioeducativo",
-   "proposta": "Recompor o efetivo dos Agentes de Segurança Socioeducativos e avaliar tecnicamente os modelos de cogestão e unidades híbridas",
+   "id": "p53",
+   "subtema": "Gestão, financiamento e transparência",
+   "proposta": "Reconstruir a confiança institucional entre governo e forças de segurança por meio de diálogo permanente e compromissos públicos",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-gabriel-130002549557": {
      "posicao": "concorda",
      "blocos": [
-      473
+      366,
+      367
      ],
-     "nota": ""
+     "nota": "Referência ao veto do PL 1.451/2020"
     }
    }
   },
   {
-   "id": "p58",
-   "subtema": "Prevenção, juventude e sistema socioeducativo",
-   "proposta": "Preparar o adolescente para a saída da medida socioeducativa, conectando-o ao município e à rede local, com acompanhamento da reentrada",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-gabriel-130002549557": {
-     "posicao": "concorda",
-     "blocos": [
-      473
-     ],
-     "nota": "Redução da reentrada como indicador central"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1478
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Prevenção, juventude e sistema socioeducativo",
-   "proposta": "Desenvolver ações focalizadas de prevenção com segurança, educação, saúde e assistência social para jovens e territórios de maior risco",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      331
-     ],
-     "nota": "Enfrentamento do genocídio da juventude negra"
-    },
-    "governador-mg-alexandre-kalil-130002539775": {
-     "posicao": "concorda",
-     "blocos": [
-      1477
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Prevenção, juventude e sistema socioeducativo",
-   "proposta": "Orientar a política estadual de segurança pelos direitos humanos e pela promoção da igualdade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-mg-patrus-ananias-130002550464": {
-     "posicao": "concorda",
-     "blocos": [
-      323,
-      331
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
+   "id": "p54",
    "subtema": "Bombeiros e Defesa Civil",
-   "proposta": "Ampliar e fortalecer o Corpo de Bombeiros e a Defesa Civil, com apoio aos municípios, mapeamento de áreas de risco e planos de contingência",
+   "proposta": "Ampliar a presença do Corpo de Bombeiros e da Defesa Civil, especialmente no interior, fortalecendo prevenção e resposta a desastres",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -1530,7 +1495,7 @@
      "blocos": [
       117
      ],
-     "nota": "Ênfase na ampliação da presença no interior"
+     "nota": ""
     },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
@@ -1538,12 +1503,34 @@
       1511,
       1512
      ],
-     "nota": "Articulação com adaptação às mudanças climáticas"
+     "nota": "Apoio técnico aos municípios menores e articulação com adaptação climática"
     }
    }
   },
   {
-   "id": "p62",
+   "id": "p55",
+   "subtema": "Bombeiros e Defesa Civil",
+   "proposta": "Realizar mapeamento permanente de áreas de risco e elaborar planos regionais de contingência",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      117
+     ],
+     "nota": ""
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1512
+     ],
+     "nota": "Sistemas de monitoramento de riscos e capacitação"
+    }
+   }
+  },
+  {
+   "id": "p56",
    "subtema": "Trânsito e segurança viária",
    "proposta": "Modernizar e digitalizar os serviços de trânsito, reduzindo filas, prazos e etapas presenciais",
    "n_concorda": 1,
@@ -1559,9 +1546,9 @@
    }
   },
   {
-   "id": "p63",
+   "id": "p57",
    "subtema": "Trânsito e segurança viária",
-   "proposta": "Estruturar política de segurança viária baseada em dados sobre locais e circunstâncias dos acidentes, com intervenções de engenharia e sinalização",
+   "proposta": "Estruturar política de segurança viária baseada em dados de acidentes, com intervenções de engenharia e sinalização nos trechos críticos",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1575,9 +1562,9 @@
    }
   },
   {
-   "id": "p64",
+   "id": "p58",
    "subtema": "Trânsito e segurança viária",
-   "proposta": "Realizar fiscalização de trânsito apoiada em tecnologia, com finalidade preventiva e não arrecadatória, compartilhando dados com a segurança pública",
+   "proposta": "Organizar a fiscalização de trânsito por tecnologia e risco, sem finalidade arrecadatória, integrando dados às estruturas de segurança",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1592,9 +1579,9 @@
    }
   },
   {
-   "id": "p65",
+   "id": "p59",
    "subtema": "Trânsito e segurança viária",
-   "proposta": "Desenvolver ações permanentes de educação para o trânsito, em parceria com municípios e escolas",
+   "proposta": "Desenvolver ações permanentes de educação para o trânsito, inclusive em escolas e em parceria com municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1608,24 +1595,92 @@
    }
   },
   {
-   "id": "p66",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Definir estratégias regionais diferenciadas de segurança, priorizando na Região Metropolitana de Belo Horizonte o enfrentamento aos crimes violentos, a integração metropolitana e o uso intensivo de tecnologia para monitoramento e investigação",
-   "n_concorda": 1,
+   "id": "p60",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Assegurar a investigação qualificada dos crimes de violência contra a mulher",
+   "n_concorda": 4,
    "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      111,
+      114
+     ],
+     "nota": "Prioridade ao feminicídio, delegacias especializadas e fortalecimento da perícia/investigação."
+    },
+    "governador-mg-flavio-roscoe-130002550834": {
+     "posicao": "concorda",
+     "blocos": [
+      222,
+      275
+     ],
+     "nota": "Protocolo de reavaliação de risco na Polícia Civil e foco em casos de risco extremo."
+    },
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      328,
+      331
+     ],
+     "nota": "Amplia Delegacias Especializadas e política de enfrentamento ao feminicídio."
+    },
     "governador-mg-alexandre-kalil-130002539775": {
      "posicao": "concorda",
      "blocos": [
-      1524
+      1469
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p67",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Priorizar no Triângulo Mineiro e Alto Paranaíba o combate aos crimes patrimoniais, a proteção das cadeias logísticas e o enfrentamento aos crimes relacionados ao transporte de cargas",
+   "id": "p61",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Compartilhar informações sobre casos de violência contra a mulher entre os órgãos da rede, dentro dos limites legais e das necessidades de proteção",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      34
+     ],
+     "nota": "Propõe resposta integrada entre segurança, saúde e assistência social à violência contra a mulher."
+    },
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      109
+     ],
+     "nota": "Comando de Inteligência unifica bases de dados das forças de segurança."
+    },
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1470
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Reduzir a revitimização, evitando a repetição desnecessária de relatos pela mulher atendida na rede",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1471
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Policiamento e território",
+   "proposta": "Adotar estratégia regional no Triângulo Mineiro e Alto Paranaíba com combate a crimes patrimoniais, proteção das cadeias logísticas e enfrentamento a crimes contra o transporte de cargas",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1638,9 +1693,9 @@
    }
   },
   {
-   "id": "p68",
-   "subtema": "Policiamento e gestão territorial",
-   "proposta": "Priorizar no Sul de Minas, Zona da Mata, Centro-Oeste e Vale do Rio Doce o fortalecimento do policiamento preventivo, da investigação qualificada e da integração regional entre as forças de segurança",
+   "id": "p64",
+   "subtema": "Policiamento e território",
+   "proposta": "Priorizar no Sul de Minas, Zona da Mata, Centro-Oeste e Vale do Rio Doce o policiamento preventivo, a investigação qualificada e a integração regional entre as forças de segurança",
    "n_concorda": 1,
    "posicoes": {
     "governador-mg-alexandre-kalil-130002539775": {
@@ -1978,6 +2033,28 @@
     "pagina": 8
    }
   },
+  "governador-mg-flavio-roscoe-130002550834": {
+   "219": {
+    "texto": "Plano de emergência para o déficit prisional, combinando ampliação de vagas com parcerias público-privadas de gestão, sem repetir os erros de superlotação que hoje geram interdição judicial em dois terços das unidades. \n●",
+    "pagina": 11
+   },
+   "220": {
+    "texto": "Reversão da alta específica de homicídios e tráfico em Belo Horizonte, com policiamento orientado por dados e integração entre as polícias Civil e Militar na capital. \n●",
+    "pagina": 11
+   },
+   "221": {
+    "texto": "Ampliação da rede de proteção à mulher com foco no momento de maior risco — o ciclo avançado de violência que hoje antecede a maioria dos feminicídios — e não só na porta de entrada da denúncia. \n●",
+    "pagina": 11
+   },
+   "222": {
+    "texto": "Criar, dentro da Polícia Civil, um protocolo de reavaliação obrigatória de risco a cada 30 dias para vítimas com medida protetiva ativa, com prioridade de acompanhamento para os casos classificados como risco extremo — hoje a medida protetiva é concedida, mas não há reavaliação periódica sistemática do risco enquanto ela está em vigor.",
+    "pagina": 11
+   },
+   "275": {
+    "texto": "Reduzir o número de feminicídios, com foco no acompanhamento de casos já classificados como risco extremo — não apenas na expansão do número de delegacias especializadas, que já são 70 no estado. \n●",
+    "pagina": 17
+   }
+  },
   "governador-mg-gabriel-130002549557": {
    "254": {
     "texto": "Modernização e digitalização dos serviços de trânsito, com atendimento mais rápido e menos burocracia para o cidadão.",
@@ -1986,10 +2063,6 @@
    "255": {
     "texto": "Integrar os serviços de trânsito a plataformas digitais seguras e acessíveis, reduzindo filas, prazos e etapas presenciais para quem precisa emplacar, transferir ou regularizar um veículo.",
     "pagina": 17
-   },
-   "357": {
-    "texto": "A piora dos homicídios, dos feminicídios e da presença do crime organizado em Minas Gerais exige o fortalecimento do sistema estadual de segurança pública, com integração entre as forças, cooperação com outros estados, diálogo permanente com o governo federal e transparência total dos dados. Minas Gerais deve apoiar e participar ativamente do Sistema Único de Segurança Pública",
-    "pagina": 23
    },
    "366": {
     "texto": "Reconstrução a confiança institucional entre governo e forças de segurança.",
