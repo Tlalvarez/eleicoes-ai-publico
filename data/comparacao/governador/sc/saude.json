@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "saude-sc.json",
-  "gerado_em": "2026-09-14T06:11:57Z",
-  "exportado_em": "2026-09-14T07:02:21Z"
+  "gerado_em": "2026-09-14T18:03:27Z",
+  "exportado_em": "2026-09-14T18:27:49Z"
  },
  "candidatos": [
   {
@@ -58,22 +58,24 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Filas e cirurgias eletivas",
-   "proposta": "Reduzir ou zerar as filas de espera por cirurgias, exames e consultas especializadas no SUS estadual",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Reduzir ou zerar o tempo de espera por cirurgias, exames e consultas com especialistas na rede pública",
    "n_concorda": 5,
    "posicoes": {
     "governador-sc-jorginho-mello-240002537073": {
      "posicao": "concorda",
      "blocos": [
+      123,
       124
      ],
-     "nota": "Programa Fila Zero via Tabela Catarinense de Cirurgias e hospitais filantrópicos"
+     "nota": "Continuidade do programa Fila Zero já existente"
     },
     "governador-sc-marcelo-brigadeiro-240002544118": {
      "posicao": "concorda",
      "blocos": [
       52,
-      192
+      192,
+      201
      ],
      "nota": ""
     },
@@ -89,13 +91,14 @@
      "blocos": [
       597
      ],
-     "nota": "Acabar com filas, inclusive de especialistas, dobrando o orçamento"
+     "nota": "Acabar com filas via duplicação do orçamento estadual"
     },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1031,
-      1172
+      1025,
+      1104,
+      1171
      ],
      "nota": ""
     }
@@ -103,30 +106,8 @@
   },
   {
    "id": "p2",
-   "subtema": "Filas e cirurgias eletivas",
-   "proposta": "Criar mutirões ou força-tarefa médica específica para eliminar as filas de cirurgias e consultas especializadas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sc-marcelo-brigadeiro-240002544118": {
-     "posicao": "concorda",
-     "blocos": [
-      201
-     ],
-     "nota": "Programa Fila Zero com mutirões permanentes de consultas"
-    },
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      203
-     ],
-     "nota": "Força-Tarefa Médica com convênios de residências cirúrgicas"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Filas e cirurgias eletivas",
-   "proposta": "Fixar prazo máximo legal para realização de cirurgia indicada pelo SUS, com contratação complementar de capacidade ociosa da rede privada",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Fixar prazo máximo legal de 60 dias para a realização de cirurgia indicada pelo sistema público",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-marcelo-brigadeiro-240002544118": {
@@ -137,36 +118,65 @@
       197,
       198
      ],
-     "nota": "Programa Tempo é Vida: 60 dias"
+     "nota": "Programa Tempo é Vida"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Contratar capacidade ociosa de unidades privadas para realizar procedimentos do SUS e reduzir filas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      198
+     ],
+     "nota": "Uso de horários de menor demanda da rede privada"
+    },
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "discorda",
+     "blocos": [
+      604,
+      611
+     ],
+     "nota": "Investimento público só para a rede pública; estatização do setor privado"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Filas e cirurgias eletivas",
-   "proposta": "Implantar mecanismos de regulação mais ágeis das filas e comunicação de agendamento de consultas e exames por aplicativo",
-   "n_concorda": 1,
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Organizar mutirões ou força-tarefa médica permanente para eliminar filas de consultas e cirurgias",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
      "posicao": "concorda",
      "blocos": [
-      1031,
-      1033
+      201
      ],
-     "nota": ""
+     "nota": "Programa Fila Zero, mutirões de consultas com especialistas"
+    },
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": "Força-Tarefa Médica com convênios com residências cirúrgicas"
     }
    }
   },
   {
    "id": "p5",
-   "subtema": "Filas e cirurgias eletivas",
-   "proposta": "Garantir a oferta de cirurgias eletivas de maior complexidade, com destaque para a bariátrica, incluindo medicamentos e acompanhamento multiprofissional",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Implantar mecanismos ágeis e transparentes de regulação das filas de espera, especialmente cirúrgicas",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1034
+      1030
      ],
      "nota": ""
     }
@@ -174,23 +184,93 @@
   },
   {
    "id": "p6",
-   "subtema": "Filas e cirurgias eletivas",
-   "proposta": "Ampliar o número de salas cirúrgicas em hospitais existentes, ativando e adequando unidades estratégicas",
-   "n_concorda": 1,
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Fortalecer a tabela estadual de remuneração de cirurgias e o programa de valorização dos hospitais filantrópicos e municipais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-jorginho-mello-240002537073": {
+     "posicao": "concorda",
+     "blocos": [
+      123,
+      124
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1018,
+      1173
+     ],
+     "nota": "Critérios transparentes de investimento por produção, prioridade a públicos e filantrópicos"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Ampliar e distribuir regionalmente centros de referência e de diagnóstico de média e alta complexidade",
+   "n_concorda": 3,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
-      204
+      205,
+      206
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1029,
+      1172
+     ],
+     "nota": "Centros Regionais de Especialidades nas 16 regionais de saúde"
+    },
+    "governador-sc-jorginho-mello-240002537073": {
+     "posicao": "concorda",
+     "blocos": [
+      123
+     ],
+     "nota": "Acesso regionalizado à média e alta complexidade"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Habilitar serviços estaduais por linhas de cuidado de alta complexidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1019
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p7",
+   "id": "p9",
+   "subtema": "Filas e atenção especializada",
+   "proposta": "Garantir a oferta de cirurgias eletivas de maior complexidade, como a bariátrica, com acompanhamento multiprofissional",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1033
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
    "subtema": "Rede hospitalar e leitos",
-   "proposta": "Ampliar os leitos hospitalares, especialmente de UTI, na rede pública estadual",
+   "proposta": "Ampliar leitos hospitalares e de UTI na rede pública estadual",
    "n_concorda": 3,
    "posicoes": {
     "governador-sc-jorginho-mello-240002537073": {
@@ -198,7 +278,7 @@
      "blocos": [
       124
      ],
-     "nota": "Custeio dos mais de 300 leitos de UTI abertos e expansão da rede"
+     "nota": "Custeio dos mais de 300 leitos de UTI abertos e nova expansão"
     },
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
@@ -212,12 +292,36 @@
      "blocos": [
       609
      ],
-     "nota": "Ampliação de hospitais gerais e pediátricos públicos e de leitos de UTI"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p11",
+   "subtema": "Rede hospitalar e leitos",
+   "proposta": "Construir novos hospitais públicos regionais para descentralizar o atendimento",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      187,
+      188,
+      220
+     ],
+     "nota": "Novas estruturas e conversão das antigas em pronto-atendimento e hospital-dia"
+    },
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      609
+     ],
+     "nota": "Hospitais gerais e pediátricos públicos"
+    }
+   }
+  },
+  {
+   "id": "p12",
    "subtema": "Rede hospitalar e leitos",
    "proposta": "Reformar e modernizar as unidades hospitalares de gestão estadual",
    "n_concorda": 2,
@@ -225,41 +329,26 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1015,
-      1174,
-      1192
+      1014,
+      1173,
+      1191
      ],
      "nota": ""
     },
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
+      186,
       187
-     ],
-     "nota": "Reforma das estruturas antigas após transferência para novos hospitais"
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Rede hospitalar e leitos",
-   "proposta": "Construir novos hospitais regionais para descentralizar o atendimento e acabar com a \"ambulanciaterapia\"",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      188,
-      220
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p10",
+   "id": "p13",
    "subtema": "Rede hospitalar e leitos",
-   "proposta": "Retomar e licitar a parceria público-privada para construção e operação do Complexo Hospitalar de Santa Catarina, unificando hospitais da Grande Florianópolis",
+   "proposta": "Retomar e licitar a parceria público-privada do Complexo Hospitalar de Santa Catarina, com apoio do BID",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-marcelo-brigadeiro-240002544118": {
@@ -268,83 +357,82 @@
       199,
       200
      ],
-     "nota": "Em parceria com o BID"
+     "nota": ""
     },
     "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "discorda",
      "blocos": [
-      607
+      607,
+      611
      ],
-     "nota": "Rejeita entrega de unidades públicas à gestão privada; quer retomá-las para o SUS"
+     "nota": "Defende retomar unidades entregues a entidades privadas e gestão 100% estatal"
     }
    }
   },
   {
-   "id": "p11",
+   "id": "p14",
    "subtema": "Rede hospitalar e leitos",
-   "proposta": "Retomar para gestão pública estadual os hospitais e unidades de saúde entregues a entidades privadas",
+   "proposta": "Retomar para o SUS a gestão estatal de hospitais e unidades públicas entregues a entidades privadas",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "concorda",
      "blocos": [
-      606,
       607
      ],
-     "nota": "Cita o Hospital Florianópolis e atendimento 100% estadualizado"
+     "nota": "Cita o Hospital Florianópolis e atendimento estadualizado"
     }
    }
   },
   {
-   "id": "p12",
+   "id": "p15",
    "subtema": "Rede hospitalar e leitos",
-   "proposta": "Apoiar financeiramente hospitais filantrópicos, municipais e de pequeno e médio porte para ampliar sua produção de exames e cirurgias",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-sc-jorginho-mello-240002537073": {
-     "posicao": "concorda",
-     "blocos": [
-      123,
-      124
-     ],
-     "nota": "Programa de Valorização dos Hospitais Filantrópicos e Municipais"
-    },
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      209
-     ],
-     "nota": "Busca tornar esses hospitais autossustentáveis e menos dependentes do Estado"
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1019,
-      1174
-     ],
-     "nota": "Critérios transparentes de investimento, com prioridade a públicos e filantrópicos"
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Rede hospitalar e leitos",
-   "proposta": "Adequar e melhorar as estruturas de urgência e emergência, com espaços físicos, equipamentos e equipes qualificadas",
+   "proposta": "Estatizar as grandes redes privadas de saúde",
    "n_concorda": 1,
    "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "concorda",
      "blocos": [
-      213
+      611
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Atenção especializada e regionalização",
-   "proposta": "Ampliar e distribuir regionalmente os serviços de média e alta complexidade para aproximar o atendimento especializado da moradia do paciente",
+   "id": "p16",
+   "subtema": "Rede hospitalar e leitos",
+   "proposta": "Aumentar o número de salas cirúrgicas nos hospitais existentes, ativando unidades em locais estratégicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      204
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Rede hospitalar e leitos",
+   "proposta": "Capacitar hospitais de pequeno e médio porte a realizar mais exames e cirurgias, reduzindo sua dependência de recursos estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      209
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Garantir acesso universal, regionalizado e humanizado aos serviços públicos de saúde, com atendimento próximo da moradia",
    "n_concorda": 4,
    "posicoes": {
     "governador-sc-jorginho-mello-240002537073": {
@@ -354,10 +442,42 @@
      ],
      "nota": ""
     },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      999,
+      1005,
+      1165
+     ],
+     "nota": ""
+    },
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
-      185,
+      190,
+      205
+     ],
+     "nota": ""
+    },
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      606,
+      607
+     ],
+     "nota": "Saúde 100% SUS, gratuita e estadualizada em todos os graus de complexidade"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Garantir regularidade dos repasses e do cofinanciamento estadual às políticas executadas pelos municípios",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
       205
      ],
      "nota": ""
@@ -365,134 +485,38 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1166,
-      1173
+      1015
      ],
-     "nota": ""
+     "nota": "Retorno do aporte para equipes multiprofissionais municipais"
     },
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      607
-     ],
-     "nota": "Atendimento estadualizado em todos os graus de complexidade"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Atenção especializada e regionalização",
-   "proposta": "Criar Centros Regionais de Especialidades para consultas, procedimentos ambulatoriais e exames de média complexidade nas 16 regionais de saúde",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1030
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Atenção especializada e regionalização",
-   "proposta": "Ampliar e criar centros de diagnóstico em localizações estratégicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      206
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Atenção especializada e regionalização",
-   "proposta": "Habilitar serviços por linhas de cuidado e ampliar habilitações estaduais de alta complexidade",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1020
-     ],
-     "nota": ""
-    },
-    "governador-sc-jorginho-mello-240002537073": {
-     "posicao": "concorda",
-     "blocos": [
-      42
-     ],
-     "nota": "Continuidade das habilitações estaduais criadas em cardiologia e ortopedia"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Atenção especializada e regionalização",
-   "proposta": "Levar unidades móveis de saúde para realizar exames preventivos em regiões de difícil acesso",
-   "n_concorda": 1,
-   "posicoes": {
     "governador-sc-jorginho-mello-240002537073": {
      "posicao": "concorda",
      "blocos": [
       124
      ],
-     "nota": "Carretas da Saúde da Mulher e da Família"
+     "nota": "Manutenção do cofinanciamento estadual aos municípios"
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Telessaúde e tecnologia",
-   "proposta": "Ampliar a telemedicina e as teleconsultas, especialmente para municípios menores e regiões distantes",
-   "n_concorda": 3,
+   "id": "p20",
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Fortalecer a governança regional do SUS e a cooperação técnica entre Estado e secretarias municipais",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-sc-marcelo-brigadeiro-240002544118": {
+    "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      203
+      1013,
+      1166,
+      1167
      ],
      "nota": ""
     },
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
-      196,
-      220
-     ],
-     "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1032
-     ],
-     "nota": "Telessaúde para qualificar encaminhamentos e reduzir filas"
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Telessaúde e tecnologia",
-   "proposta": "Implantar prontuário eletrônico integrado na rede estadual de saúde",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sc-marcelo-brigadeiro-240002544118": {
-     "posicao": "concorda",
-     "blocos": [
-      203
-     ],
-     "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1185
+      195
      ],
      "nota": ""
     }
@@ -500,66 +524,40 @@
   },
   {
    "id": "p21",
-   "subtema": "Telessaúde e tecnologia",
-   "proposta": "Desenvolver ciência de dados, inteligência artificial e inovação tecnológica aplicadas à gestão e à assistência em saúde",
-   "n_concorda": 2,
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Dobrar o orçamento estadual da saúde",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-sc-marcelo-brigadeiro-240002544118": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "concorda",
      "blocos": [
-      207
+      597
      ],
-     "nota": "Ciência de dados de interesse da Secretaria Estadual de Saúde"
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1160,
-      1161,
-      1162,
-      1186
-     ],
-     "nota": "Programa de inovação com CEIS, universidades e saúde digital"
+     "nota": ""
     }
    }
   },
   {
    "id": "p22",
-   "subtema": "Gestão do SUS estadual",
-   "proposta": "Implantar gestão por resultados, com metas, indicadores e ferramentas de correção de deficiências e desperdícios",
-   "n_concorda": 3,
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Lutar por investimento nacional de 10% do PIB em saúde, com recursos públicos destinados exclusivamente à rede pública",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-sc-marcelo-brigadeiro-240002544118": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "concorda",
      "blocos": [
-      40,
-      202
-     ],
-     "nota": "Metas de atendimento e satisfação integradas a indicadores públicos"
-    },
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      212,
-      214
+      603,
+      604
      ],
      "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1017,
-      1168
-     ],
-     "nota": "Qualificação da SES com transparência de dados"
     }
    }
   },
   {
    "id": "p23",
-   "subtema": "Gestão do SUS estadual",
+   "subtema": "Gestão, financiamento e regionalização do SUS",
    "proposta": "Elaborar plano estadual de investimentos em saúde com detalhamento regional",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
@@ -567,43 +565,57 @@
       190
      ],
      "nota": "Incrementado por recursos da PEC da Saúde"
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1168
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p24",
-   "subtema": "Gestão do SUS estadual",
-   "proposta": "Nomear gestores qualificados para a direção dos serviços de saúde",
-   "n_concorda": 1,
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Implantar instrumentos de gestão, metas e indicadores de desempenho nas unidades estaduais de saúde",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      202
+     ],
+     "nota": "Gestão por resultados com metas de atendimento e satisfação do usuário"
+    },
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
-      211,
-      222
+      212,
+      214
      ],
-     "nota": ""
+     "nota": "Ferramentas de gestão contra desperdícios e protocolos padronizados"
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1016
+     ],
+     "nota": "Qualificação da SES com transparência de dados"
     }
    }
   },
   {
    "id": "p25",
-   "subtema": "Gestão do SUS estadual",
-   "proposta": "Fortalecer a governança regional do SUS e consolidar a regionalização como instrumento de organização da rede",
-   "n_concorda": 1,
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Desenvolver ciência de dados e inteligência artificial aplicadas à gestão estadual da saúde",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      207
+     ],
+     "nota": ""
+    },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1014,
-      1166
+      1160,
+      1161
      ],
      "nota": ""
     }
@@ -611,163 +623,23 @@
   },
   {
    "id": "p26",
-   "subtema": "Gestão do SUS estadual",
-   "proposta": "Aumentar o financiamento público da saúde",
+   "subtema": "Gestão, financiamento e regionalização do SUS",
+   "proposta": "Priorizar a nomeação de gestores qualificados na saúde",
    "n_concorda": 1,
    "posicoes": {
-    "governador-sc-professor-marcus-sodre-240002541913": {
+    "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
-      597,
-      603,
-      604
+      211
      ],
-     "nota": "Dobrar o orçamento estadual e lutar por 10% do PIB, só para a rede pública"
+     "nota": ""
     }
    }
   },
   {
    "id": "p27",
-   "subtema": "Gestão do SUS estadual",
-   "proposta": "Estatizar as grandes redes privadas de saúde e destinar investimento público exclusivamente à rede pública e estatal",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      604,
-      606,
-      611
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Cofinanciamento e apoio aos municípios",
-   "proposta": "Garantir a regularidade dos repasses e o cofinanciamento estadual aos municípios nos programas com contrapartida do Estado",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-sc-marcelo-brigadeiro-240002544118": {
-     "posicao": "concorda",
-     "blocos": [
-      205
-     ],
-     "nota": ""
-    },
-    "governador-sc-jorginho-mello-240002537073": {
-     "posicao": "concorda",
-     "blocos": [
-      124
-     ],
-     "nota": "Manutenção do cofinanciamento estadual, citado nas políticas de assistência social"
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1016,
-      1167
-     ],
-     "nota": "Retomada do aporte para equipes multiprofissionais municipais"
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Cofinanciamento e apoio aos municípios",
-   "proposta": "Apoiar tecnicamente e integrar as secretarias municipais de saúde na gestão do SUS",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      195
-     ],
-     "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1016,
-      1167
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Saúde mental",
-   "proposta": "Ampliar e qualificar a rede pública de atenção à saúde mental e de cuidado a dependentes de álcool e outras drogas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      200,
-      221
-     ],
-     "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1046,
-      1051,
-      1175
-     ],
-     "nota": "Cofinanciamento da RAPS nas 16 regionais; inclui dependentes de jogos de aposta"
-    },
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      516
-     ],
-     "nota": "Política estatal e humanizada, com foco na população negra"
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Saúde mental",
-   "proposta": "Implantar CAPS III com atendimento 24 horas em municípios acima de 200 mil habitantes e leitos de saúde mental em hospitais gerais e pediátricos em municípios com mais de 100 mil habitantes",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1047,
-      1048,
-      1049
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Saúde mental",
-   "proposta": "Implantar estratégias de prevenção ao suicídio em escolas e comunidades e integrar saúde mental, assistência social e educação nos territórios vulneráveis",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1050,
-      1052,
-      1176,
-      1182,
-      1184
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
    "subtema": "Profissionais de saúde",
-   "proposta": "Valorizar os profissionais de saúde da rede pública, com melhores condições de trabalho e política de carreira",
+   "proposta": "Valorizar os trabalhadores da saúde e melhorar suas condições de trabalho",
    "n_concorda": 4,
    "posicoes": {
     "governador-sc-marcelo-brigadeiro-240002544118": {
@@ -794,17 +666,39 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1127,
-      1192
+      1126,
+      1191
      ],
      "nota": "Carreira interprofissional no SUS"
     }
    }
   },
   {
-   "id": "p34",
+   "id": "p28",
    "subtema": "Profissionais de saúde",
-   "proposta": "Promover capacitação continuada e educação permanente dos profissionais de saúde em todas as regiões",
+   "proposta": "Realizar concursos públicos e recompor o quadro de servidores com vínculo permanente",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      615
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1017
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Implementar capacitação continuada e educação permanente das equipes de saúde",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
@@ -818,17 +712,17 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1124,
-      1190
+      1123,
+      1189
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p35",
+   "id": "p30",
    "subtema": "Profissionais de saúde",
-   "proposta": "Ampliar a fixação e o número de médicos e profissionais nas regiões do interior e de maior escassez",
+   "proposta": "Ampliar e fixar profissionais médicos nas regiões do interior com maior escassez",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
@@ -841,36 +735,14 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1191
+      1190
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p36",
-   "subtema": "Profissionais de saúde",
-   "proposta": "Realizar concursos públicos e recompor o quadro de servidores da saúde com vínculo permanente",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      615
-     ],
-     "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1018
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
+   "id": "p31",
    "subtema": "Profissionais de saúde",
    "proposta": "Incentivar a criação de programas de residência médica nas especialidades",
    "n_concorda": 1,
@@ -885,10 +757,10 @@
    }
   },
   {
-   "id": "p38",
+   "id": "p32",
    "subtema": "Saúde da mulher, da criança e do idoso",
    "proposta": "Qualificar a atenção integral à saúde da mulher",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-sc-marcelo-brigadeiro-240002544118": {
      "posicao": "concorda",
@@ -902,29 +774,62 @@
      "blocos": [
       198
      ],
-     "nota": "Política estadual de atenção à mulher e à criança, com pré-natal, parto e recém-nascido"
+     "nota": ""
     },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1071,
-      1195
+      1066,
+      1194
      ],
      "nota": ""
-    },
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      549
-     ],
-     "nota": "Saúde diferenciada e de qualidade para a mulher indígena"
     }
    }
   },
   {
-   "id": "p39",
+   "id": "p33",
    "subtema": "Saúde da mulher, da criança e do idoso",
-   "proposta": "Garantir atenção à saúde do idoso e ao envelhecimento ativo",
+   "proposta": "Fortalecer a rede de atenção ao pré-natal, ao parto e ao recém-nascido, com monitoramento da gestação de alto risco",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      198
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1072,
+      1073,
+      1074
+     ],
+     "nota": "Ambulatórios de alto risco nas 16 regiões e rede de medicina fetal"
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Saúde da mulher, da criança e do idoso",
+   "proposta": "Reduzir a mortalidade materna com investigação de 100% dos óbitos de mulheres em idade fértil",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1070,
+      1071
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Saúde da mulher, da criança e do idoso",
+   "proposta": "Garantir atenção integral à saúde da pessoa idosa",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-marcelo-brigadeiro-240002544118": {
@@ -937,49 +842,119 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1082,
-      1083,
-      1084
+      1081
      ],
-     "nota": "Inclui Universidade Aberta da Terceira Idade e adesão ao Melhor em Casa"
+     "nota": "Envelhecimento ativo e prevenção de quedas"
     }
    }
   },
   {
-   "id": "p40",
+   "id": "p36",
    "subtema": "Saúde da mulher, da criança e do idoso",
-   "proposta": "Reduzir a mortalidade materna com investigação de óbitos de mulheres em idade fértil, ambulatórios de pré-natal de alto risco nas 16 regiões e acesso regional a UTIs neonatais",
+   "proposta": "Formar e certificar cuidadores de idosos e orientar famílias no cuidado domiciliar",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1071,
-      1072,
-      1073,
-      1074,
-      1075
+      1082
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p41",
+   "id": "p37",
    "subtema": "Saúde da mulher, da criança e do idoso",
-   "proposta": "Fortalecer o atendimento em saúde às mulheres vítimas de violência, com identificação precoce na atenção básica, serviços integrados e mecanismos ágeis de denúncia",
+   "proposta": "Conceder incentivo financeiro para adesão dos municípios à atenção domiciliar (Melhor em Casa)",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1104,
-      1105,
-      1111,
-      1113,
-      2242,
-      2244,
-      2246
+      1083
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Saúde da mulher, da criança e do idoso",
+   "proposta": "Implantar busca ativa vacinal e nutricional de crianças de 0 a 1 ano em áreas de maior vulnerabilidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1080
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Saúde da mulher, da criança e do idoso",
+   "proposta": "Estruturar na rede de saúde o acolhimento, o atendimento e o encaminhamento de mulheres vítimas de violência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1099,
+      1103,
+      1112,
+      2241,
+      2243,
+      2245
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Saúde mental",
+   "proposta": "Implementar política pública de atenção à saúde mental e de prevenção e cuidado ao uso de álcool e outras drogas",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      200
+     ],
+     "nota": ""
+    },
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      516
+     ],
+     "nota": "Política estatal e humanizada, com foco na população negra"
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1037,
+      1050
+     ],
+     "nota": "Inclui dependentes de jogos de aposta"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Saúde mental",
+   "proposta": "Expandir a Rede de Atenção Psicossocial em todas as regiões com cofinanciamento estadual em parceria com os municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1045,
+      1048,
+      1174
      ],
      "nota": ""
     }
@@ -987,57 +962,48 @@
   },
   {
    "id": "p42",
-   "subtema": "Vigilância, prevenção e vacinação",
-   "proposta": "Intensificar a vigilância e a prevenção de doenças transmissíveis, com campanhas e diagnóstico precoce",
-   "n_concorda": 2,
+   "subtema": "Saúde mental",
+   "proposta": "Implantar CAPS III em todos os municípios acima de 200 mil habitantes, com atenção 24 horas",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      193,
-      218
-     ],
-     "nota": ""
-    },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1095,
-      1096,
-      1189
+      1046
      ],
-     "nota": "Programa de controle de IST, hepatites e tuberculose; integração das vigilâncias"
+     "nota": ""
     }
    }
   },
   {
    "id": "p43",
-   "subtema": "Vigilância, prevenção e vacinação",
-   "proposta": "Ampliar a cobertura vacinal e os sistemas de monitoramento epidemiológico",
+   "subtema": "Saúde mental",
+   "proposta": "Criar leitos de saúde mental em hospitais gerais e pediátricos dos municípios com pelo menos 100 mil habitantes",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1081,
-      1187,
-      1188
+      1047
      ],
-     "nota": "Inclui busca ativa vacinal e nutricional de crianças de 0 a 1 ano"
+     "nota": ""
     }
    }
   },
   {
    "id": "p44",
-   "subtema": "Vigilância, prevenção e vacinação",
-   "proposta": "Criar programa estadual de eliminação da sífilis e de resposta ampliada ao HIV, com testagem rápida, PrEP/PEP e telemonitoramento",
+   "subtema": "Saúde mental",
+   "proposta": "Implantar estratégias de prevenção ao suicídio em escolas e comunidades e integrar saúde mental, assistência social e educação",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1093,
-      1094
+      1049,
+      1051,
+      1113,
+      1175,
+      1183
      ],
      "nota": ""
     }
@@ -1045,8 +1011,32 @@
   },
   {
    "id": "p45",
-   "subtema": "Vigilância, prevenção e vacinação",
-   "proposta": "Promover ações educativas de vida saudável em alimentação, atividade física e combate ao tabagismo",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Fortalecer e qualificar a atenção básica, ampliando a Estratégia Saúde da Família e as equipes multiprofissionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      192,
+      194
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1168,
+      1169
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Ampliar ações de promoção da saúde e prevenção de doenças, incluindo alimentação saudável, atividade física e combate ao tabagismo",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
@@ -1059,66 +1049,53 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1022,
-      1171,
-      1193
+      1170,
+      1192
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p46",
-   "subtema": "Atenção primária",
-   "proposta": "Fortalecer e qualificar a atenção básica como porta de entrada do sistema, com equipes municipais estruturadas para prevenir e tratar doenças crônicas",
+   "id": "p47",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Estruturar a prevenção, o diagnóstico precoce e o tratamento das doenças crônicas não transmissíveis",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
-      192,
-      221
+      192
      ],
      "nota": ""
     },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1169,
-      1170
+      1084,
+      1161
      ],
-     "nota": "Expansão da Estratégia Saúde da Família e das equipes multiprofissionais"
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Assistência farmacêutica",
-   "proposta": "Garantir o abastecimento e o acesso a medicamentos, vacinas e insumos na rede pública",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      648,
-      1021
-     ],
-     "nota": "Obtenção de todos os medicamentos em um mesmo local, com acompanhamento farmacêutico"
+     "nota": "Inclui tratamento medicamentoso da obesidade e diabetes"
     }
    }
   },
   {
    "id": "p48",
-   "subtema": "Assistência farmacêutica",
-   "proposta": "Assegurar acesso às práticas integrativas e complementares e à cannabis medicinal, com capacitação profissional e avaliação ágil dos pedidos de medicamentos prescritos",
-   "n_concorda": 1,
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Realizar campanhas permanentes de comunicação e conscientização sobre prevenção de doenças em todas as regiões",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      218
+     ],
+     "nota": ""
+    },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1150,
-      1151,
-      1152
+      1021
      ],
      "nota": ""
     }
@@ -1126,23 +1103,188 @@
   },
   {
    "id": "p49",
-   "subtema": "Assistência farmacêutica",
-   "proposta": "Ofertar tratamento medicamentoso para obesidade, diabetes e síndromes metabólicas",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Expandir unidades móveis de saúde para exames preventivos em regiões de difícil acesso",
    "n_concorda": 1,
    "posicoes": {
+    "governador-sc-jorginho-mello-240002537073": {
+     "posicao": "concorda",
+     "blocos": [
+      124
+     ],
+     "nota": "Carretas da Saúde da Mulher e da Família"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Ampliar a telemedicina e as teleconsultas, especialmente para municípios menores e regiões distantes",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": ""
+    },
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      196
+     ],
+     "nota": ""
+    },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1085
+      1031
+     ],
+     "nota": "Telessaúde para agilizar exames, consultas e encaminhamentos"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Implantar prontuário eletrônico integrado na rede estadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1184
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p50",
+   "id": "p52",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Disponibilizar aplicativo de celular para agendamento e comunicação de consultas e exames",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1032
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Vigilância e doenças transmissíveis",
+   "proposta": "Intensificar a vigilância, o diagnóstico precoce e o controle das doenças transmissíveis",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      193
+     ],
+     "nota": ""
+    },
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1088,
+      1094
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Vigilância e doenças transmissíveis",
+   "proposta": "Implantar programa estadual de eliminação da sífilis com testagem rápida e apoio financeiro e técnico aos municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1092
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Vigilância e doenças transmissíveis",
+   "proposta": "Fortalecer a resposta ao HIV com ampliação de PrEP, PEP, autotestes e TelePrEP/TelePEP",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1093
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Vigilância e doenças transmissíveis",
+   "proposta": "Apoiar o controle estadual da tuberculose",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1095
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Vigilância e doenças transmissíveis",
+   "proposta": "Ampliar a cobertura vacinal e os sistemas de monitoramento epidemiológico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1187
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Vigilância e doenças transmissíveis",
+   "proposta": "Integrar as vigilâncias sanitária, epidemiológica, ambiental e de saúde do trabalhador e fortalecer a resposta a epidemias e eventos climáticos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1186,
+      1188
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p59",
    "subtema": "Equidade e populações específicas",
-   "proposta": "Implementar políticas estaduais de saúde voltadas à população negra, incluindo atenção às enfermidades de maior incidência nesse grupo",
+   "proposta": "Implementar política estadual de saúde integral da população negra, com atenção às doenças de maior incidência nesse grupo",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-professor-marcus-sodre-240002541913": {
@@ -1155,14 +1297,29 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1194
+      1193
      ],
-     "nota": "Implementação da PESIPN"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p51",
+   "id": "p60",
+   "subtema": "Equidade e populações específicas",
+   "proposta": "Garantir atenção diferenciada e de qualidade à saúde da mulher indígena",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      549
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
    "subtema": "Equidade e populações específicas",
    "proposta": "Implantar em âmbito estadual a política de saúde integral da população LGBT",
    "n_concorda": 1,
@@ -1170,58 +1327,127 @@
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1196
+      1195
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p52",
-   "subtema": "Equidade e populações específicas",
-   "proposta": "Criar centros especializados de reabilitação e ampliar o diagnóstico e o apoio a crianças e adolescentes com TEA e transtornos do neurodesenvolvimento",
+   "id": "p62",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Garantir acesso integrado aos medicamentos em um mesmo local, com orientação e acompanhamento farmacoterapêutico",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
+      1020
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Reduzir a vulnerabilidade do SUS estadual quanto à falta de medicamentos, vacinas e materiais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      647
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Estimular a cadeia produtiva local de insumos, vacinas e medicamentos, com transferência de tecnologia e crédito para pesquisa e inovação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      645,
+      646,
+      1155,
+      1159,
+      1185
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Assegurar acesso às práticas integrativas e à cannabis medicinal, com capacitação profissional e análise ágil dos pedidos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1145,
+      1149,
+      1150,
+      1151
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Neurodesenvolvimento e TEA",
+   "proposta": "Qualificar o atendimento a crianças e adolescentes com TEA e transtornos de neurodesenvolvimento, com Centros Especializados de Reabilitação tipo IV em cada macrorregião",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1055,
+      1059,
       1060,
       1061,
-      1062,
-      1063
-     ],
-     "nota": "CER IV em cada macrorregião, integrando saúde e educação"
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Saúde do trabalhador",
-   "proposta": "Reestruturar a rede de atenção à saúde do trabalhador, com centros de referência, atendimento especializado e política de saúde mental no trabalho",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      1122,
-      1123,
-      1125,
-      1126
+      1062
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p54",
-   "subtema": "Saúde mental",
-   "proposta": "Promover ações de educação em saúde nas escolas, com integração entre as áreas de saúde, educação e segurança",
+   "id": "p67",
+   "subtema": "Saúde do trabalhador",
+   "proposta": "Reestruturar a rede de centros de referência em saúde do trabalhador e criar comitê estadual de combate a acidentes graves e fatais",
    "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
-      1114
+      1117,
+      1121,
+      1122,
+      1124,
+      1125
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Urgência e emergência",
+   "proposta": "Adequar as estruturas de urgência e emergência, com melhoria de espaços físicos, equipamentos e equipes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      213
      ],
      "nota": ""
     }
@@ -1230,352 +1456,392 @@
  ],
  "blocos": {
   "governador-sc-gelson-merisio-240002548628": {
-   "648": {
+   "645": {
+    "texto": "- • Estimular parcerias para o desenvolvimento produtivo da cadeia de insumos de materiais da saúde, vacinas e medicamentos, incluindo transferência de tecnologia;",
+    "pagina": 23
+   },
+   "646": {
+    "texto": "- • Promover linhas de crédito para pesquisa e inovação para medicamentos e materiais que sejam de alta relevância para SUS;",
+    "pagina": 23
+   },
+   "647": {
     "texto": "- • Reduzir a vulnerabilidade do SUS quanto à falta de medicamentos, vacinas e materiais necessários para o atendimento das unidades de saúde do Estado. GOVERNADOR",
     "pagina": 23
    },
-   "1014": {
+   "999": {
+    "texto": "Garantir acesso universal, regionalizado e humanizado aos serviços públicos de saúde será prioridade permanente.",
+    "pagina": 33
+   },
+   "1005": {
+    "texto": "Fortalecer o Sistema Único de Saúde como política pública universal, ampliando sua capacidade de atendimento, coordenação e resposta às necessidades da população. Excelência na oferta de serviços próprios, nos mecanismos de gestão da saúde e apoio aos municípios. GOVERNADOR",
+    "pagina": 33
+   },
+   "1013": {
     "texto": "- Fortalecimento da governança regional do SUS",
     "pagina": 34
    },
-   "1015": {
+   "1014": {
     "texto": "- Reforma das unidades hospitalares de gestão estadual.",
     "pagina": 34
    },
-   "1016": {
-    "texto": "- Apoio operacional e financeiro aos gestores municipais, retorno do aporte aos municípios para que possam ofertar de equipes multiprofissionais.",
+   "1015": {
+    "texto": "- Apoio operacional e financeiro aos gestores municipais. retorno do aporte aos municípios para que possam ofertar de equipes multiprofissionais.",
     "pagina": 34
    },
-   "1017": {
+   "1016": {
     "texto": "- Qualificação da atuação da Secretaria de Estado da Saúde com transparência dos dados",
     "pagina": 34
    },
-   "1018": {
+   "1017": {
     "texto": "- Recomposição do quadro de funcionários com vínculo permanente e assegurar a qualidade de atuação da SES.",
     "pagina": 34
    },
-   "1019": {
+   "1018": {
     "texto": "- Parâmetros e mecanismos transparentes de investimentos dos hospitais baseado no potencial e na produção prioridade aos públicos e filantrópicos em Santa Catarina.",
     "pagina": 34
    },
-   "1020": {
+   "1019": {
     "texto": "- Processo de habilitação de serviços por linhas de cuidado.",
     "pagina": 34
    },
-   "1021": {
+   "1020": {
     "texto": "- Acesso oportuno aos de forma integrada em todas as regiões: obtenção de todos os medicamentos em um mesmo local, com serviço farmacêutico de orientação para o uso seguro e eficaz, e o acompanhamento farmacoterapêutico, quando necessário.",
     "pagina": 34
    },
-   "1022": {
+   "1021": {
     "texto": "- Mecanismos de divulgação de informação e comunicação qualificada, de amplo alcance, sobre medidas de promoção e prevenção para todas as regiões de SC.",
     "pagina": 34
    },
-   "1030": {
+   "1025": {
+    "texto": "Promover a ampliação do acesso e redução do tempo de espera por cirurgias, exames e consultas com especialistas.",
+    "pagina": 34
+   },
+   "1029": {
     "texto": "- Centros Regionais de Especialidades para consultas, procedimentos ambulatoriais e exames de média complexidade nas 16 regionais de saúde.",
     "pagina": 34
    },
-   "1031": {
+   "1030": {
     "texto": "- Mecanismos ágeis e eficazes de regulação das filas de espera, especialmente as cirurgias.",
     "pagina": 34
    },
-   "1032": {
+   "1031": {
     "texto": "- Soluções de telessaúde para agilizar o acesso a exames, consultas, cirurgias, qualificar os encaminhamentos, reduzir filas de espera e evitar deslocamentos desnecessários:",
     "pagina": 34
    },
-   "1033": {
+   "1032": {
     "texto": "- Comunicação ágil e qualificada do agendamento de consultas e exames via aplicativo em celular.",
     "pagina": 34
    },
-   "1034": {
+   "1033": {
     "texto": "- Garantia das cirurgias eletivas de maior complexidade, destaque para a cirurgia bariátrica, com oferta de medicamentos e acompanhamento multiprofissional.",
     "pagina": 34
    },
-   "1046": {
+   "1037": {
+    "texto": "Ampliar e qualificar a Rede de Atenção em Saúde Mental com fortalecimento de políticas de promoção da saúde mental. GOVERNADOR",
+    "pagina": 34
+   },
+   "1045": {
     "texto": "- Cofinanciamento estadual para implantar e qualificar a Rede de Atenção Psicossocial - RAPS em todas as 16 regionais de saúde, em parceria com os municípios.",
     "pagina": 35
    },
-   "1047": {
+   "1046": {
     "texto": "- Centros de Atenção Psicossocial (CAPS) do tipo III em todos os municípios acima de 200.000 mil habitantes: atenção 24 horas/dia em todas as Macrorregiões do estado",
     "pagina": 35
    },
-   "1048": {
-    "texto": "- Leitos para internação em hospitais gerais e pediátricos em todos os municípios com pelo menos 100 mil habitantes:",
+   "1047": {
+    "texto": "- Leitos para internação em hospitais gerais e pediátricos em todos os municípios com pelo menos100 mil habitantes:",
     "pagina": 35
    },
-   "1049": {
+   "1048": {
     "texto": "- Integração dos serviços de saúde mental à Rede de Atenção Psicossocial, incluindo os leitos localizados nos municípios de menor porte.",
     "pagina": 35
    },
-   "1050": {
+   "1049": {
     "texto": "- Estratégias de prevenção ao suicídio, em escolas e comunidades em todo o Estado de SC.",
     "pagina": 35
    },
-   "1051": {
+   "1050": {
     "texto": "- Atenção qualificada às pessoas com transtornos mentais, dependência química e dependentes de jogos de aposta.",
     "pagina": 35
    },
-   "1052": {
+   "1051": {
     "texto": "- Integração entre saúde, assistência social e educação",
     "pagina": 35
    },
-   "1060": {
+   "1055": {
+    "texto": "Qualificar o atendimento a crianças e adolescentes com transtorno de neurodesenvolvimento e TEA.",
+    "pagina": 35
+   },
+   "1059": {
     "texto": "- Centros Especializados de Reabilitação do TIPO IV (deficiência física, auditiva, visual, intelectual e autismo) em cada macrorregião, integrando a saúde e a educação.",
     "pagina": 35
    },
-   "1061": {
+   "1060": {
     "texto": "- Ampliação do acesso aos testes para identificação dos problemas e disfunções em tempo oportuno;",
     "pagina": 35
    },
-   "1062": {
+   "1061": {
     "texto": "- Apoio especializado à distância para as famílias, profissionais das escolas e da atenção básica;",
     "pagina": 35
    },
-   "1063": {
+   "1062": {
     "texto": "- Incentivo financeiro para o desenvolvimento de pesquisas em tratamento e prevenção",
     "pagina": 35
    },
-   "1071": {
+   "1066": {
+    "texto": "Qualificar a atenção integral aos diferentes ciclos da vida.",
+    "pagina": 35
+   },
+   "1070": {
     "texto": "- Redução da mortalidade materna em Santa Catarina:",
     "pagina": 35
    },
-   "1072": {
+   "1071": {
     "texto": "- Investigação de 100% dos óbitos de mulheres em idade fértil em tempo ágil.",
     "pagina": 35
    },
-   "1073": {
+   "1072": {
     "texto": "- Ambulatórios Especializados em Pré-Natal de Alto Risco em todas as 16 regiões de saúde em SC e sistema de alerta e monitoramento da gestação de alto risco.",
     "pagina": 35
    },
-   "1074": {
+   "1073": {
     "texto": "- Rede Catarinense de Medicina Fetal e Genética Médica.",
     "pagina": 35
    },
-   "1075": {
+   "1074": {
     "texto": "- Acesso regional às UTIs neonatais: GOVERNADOR",
     "pagina": 35
    },
-   "1081": {
+   "1080": {
     "texto": "- Busca ativa vacinal e nutricional em SC: com sistema de monitoramento estadual das crianças de 0 a 1 ano em áreas de extrema vulnerabilidade periférica e rural.",
     "pagina": 36
    },
-   "1082": {
+   "1081": {
     "texto": "- Programa Estadual de Cuidado Integrado à Saúde do Idoso: incentivo a Promoção do Envelhecimento Ativo e Estratégias de Prevenção de Quedas.",
     "pagina": 36
    },
-   "1083": {
+   "1082": {
     "texto": "- Universidade Aberta da Terceira Idade: formação e certificação de cuidadores de idosos e cursos de apoio e orientação às famílias no cuidado domiciliar de idosos.",
     "pagina": 36
    },
-   "1084": {
+   "1083": {
     "texto": "- Incentivo financeiro para adesão dos municípios ao Programa Melhor em Casa.",
     "pagina": 36
    },
-   "1085": {
+   "1084": {
     "texto": "- Oferta de tratamento medicamentoso na abordagem à obesidade, diabetes, síndromes metabólicas e transtornos decorrentes.",
     "pagina": 36
    },
-   "1093": {
+   "1088": {
+    "texto": "Fortalecer ações de redução das infecções sexualmente transmissíveis, hepatites virais e tuberculose.",
+    "pagina": 36
+   },
+   "1092": {
     "texto": "- Programa Santa Catarina Livre da Sífilis: ampliação da testagem rápida; tratamento oportuno do paciente e parceiros; fortalecimento do pré-natal; campanhas permanentes de educação sexual; apoio financeiro e técnico aos municípios para aquisição de insumos e qualificação das equipes.",
     "pagina": 36
    },
-   "1094": {
+   "1093": {
     "texto": "- Fortalecimento da resposta ao HIV: diagnóstico, acompanhamento clínico e renovação de receitas próximos do domicílio; suporte especializado à distância; ampliação da distribuição de autotestes e estratégias extramuros de diagnóstico; expansão da oferta de PrEP e acesso oportuno à PEP; implantação de TelePrEP e TelePEP para triagem, seguimento e renovação de exames; início do tratamento antirretroviral no menor tempo possível após diagnóstico; fortalecimento das metas internacionais da UNAIDS de diagnóstico precoce, tratamento e supressão viral.",
     "pagina": 36
    },
-   "1095": {
+   "1094": {
     "texto": "- Ampliação do diagnóstico precoce e vinculação rápida ao tratamento de DT;",
     "pagina": 36
    },
-   "1096": {
+   "1095": {
     "texto": "- Apoio estadual ao controle da tuberculose",
     "pagina": 36
    },
-   "1104": {
+   "1099": {
+    "texto": "Intensificar e ampliar serviços e ações intersetoriais de prevenção e identificação precoce de mulheres vítimas de violência.",
+    "pagina": 36
+   },
+   "1103": {
     "texto": "- Identificação precoce dos sinais pelos profissionais das Unidades Básicas de Saúde",
     "pagina": 36
    },
-   "1105": {
+   "1104": {
     "texto": "- Encaminhamento oportuno dos casos para o cuidado de equipes de especialistas como GOVERNADOR",
     "pagina": 36
    },
-   "1111": {
-    "texto": "psicólogos, assistentes sociais e suporte jurídico.",
-    "pagina": 37
-   },
-   "1113": {
+   "1112": {
     "texto": "- Mecanismos ágeis de denúncia e atendimento jurídico e de saúde ágeis: serviços de denúncia e atendimento jurídico e de saúde (psicólogos e médicos) para mulheres vítimas de violência (presencial e a distância) operando nos finais de semana em todas as regiões.",
     "pagina": 37
    },
-   "1114": {
+   "1113": {
     "texto": "- Educação nas escolas: integração entre saúde, educação e segurança.",
     "pagina": 37
    },
-   "1122": {
+   "1117": {
+    "texto": "Valorizar o trabalhador do SUS e qualificar a saúde dos trabalhadores.",
+    "pagina": 37
+   },
+   "1121": {
     "texto": "- Reestruturação da Rede de Centros de Referência em Saúde do Trabalhador com o apoio da gestão federal.",
     "pagina": 37
    },
-   "1123": {
+   "1122": {
     "texto": "- Atendimento especializado e integrado ao trabalhador lesionado.",
     "pagina": 37
    },
-   "1124": {
+   "1123": {
     "texto": "- Ações de capacitação permanente aos servidores de saúde do SUS, para diagnóstico precoce, manejo e encaminhamento dos casos e lesões relacionados ao trabalho",
     "pagina": 37
    },
-   "1125": {
+   "1124": {
     "texto": "- Comitê estadual de combate aos acidentes graves e fatais;",
     "pagina": 37
    },
-   "1126": {
+   "1125": {
     "texto": "- Implantação de uma política de saúde mental no trabalho e combate ao assédio moral no trabalho.",
     "pagina": 37
    },
-   "1127": {
+   "1126": {
     "texto": "- Política de Valorização dos trabalhadores do SUS: capacitação continuada dos trabalhadores vinculados ao SUS; apoio para uma carreira interprofissional no SUS.",
     "pagina": 37
    },
-   "1150": {
+   "1145": {
+    "texto": "Assegurar acesso oportuno às PICS e cannabis medicinal.",
+    "pagina": 38
+   },
+   "1149": {
     "texto": "- Capacitação de profissionais para o desenvolvimento das PICS e uso correto de canabinoides.",
     "pagina": 38
    },
-   "1151": {
-    "texto": "- Adesão dos municípios à implementação de PICS e uso correto de da cannabis medicinal.",
+   "1150": {
+    "texto": "- Adesão dos municípios à implementação de PICs e uso correto de da cannabis medicinal.",
     "pagina": 38
    },
-   "1152": {
+   "1151": {
     "texto": "- Mecanismos ágeis e eficazes de avaliação de pedidos de acesso aos medicamentos prescritos.",
     "pagina": 38
    },
-   "1160": {
+   "1155": {
+    "texto": "Fortalecimento do complexo econômico-industrial da saúde (CEIS) e da inovação em saúde, promovendo soluções capazes de reduzir desigualdades regionais, aumentar a eficiência da gestão e estimular o desenvolvimento econômico do Estado.",
+    "pagina": 38
+   },
+   "1159": {
     "texto": "- Ações articuladas com instituições de pesquisa e setor produtivo para desenvolver e incorporar tecnologias voltadas às necessidades do SUS catarinense.",
     "pagina": 38
    },
-   "1161": {
+   "1160": {
     "texto": "- Fomento ao desenvolvimento e ampliação da Saúde Digital e Inteligência Artificial.",
     "pagina": 38
    },
-   "1162": {
+   "1161": {
     "texto": "- Desenvolvimento de tecnologias para diagnóstico laboratorial descentralizado, assistência farmacêutica, tecnologias assistivas, acompanhamento de pessoas com doenças crônicas, gestantes de alto risco, pacientes em reabilitação e saúde mental, priorizando soluções que reduzam as desigualdades regionais e fortaleçam a Atenção Primária e a Atenção Especializada.",
     "pagina": 38
    },
-   "1166": {
+   "1165": {
     "texto": "- Consolidar a regionalização da saúde como instrumento de organização da rede de serviços.",
     "pagina": 38
    },
-   "1167": {
+   "1166": {
     "texto": "- Fortalecer a cooperação entre Estado e municípios na gestão do SUS.",
     "pagina": 38
    },
-   "1168": {
+   "1167": {
     "texto": "- Integrar planejamento, financiamento e avaliação das políticas estaduais de saúde.",
     "pagina": 38
    },
-   "1169": {
+   "1168": {
     "texto": "- Expandir e qualificar a cobertura da Estratégia Saúde da Família.",
     "pagina": 38
    },
-   "1170": {
+   "1169": {
     "texto": "- Ampliar as equipes multiprofissionais de atenção primária.",
     "pagina": 38
    },
-   "1171": {
+   "1170": {
     "texto": "- Fortalecer ações de promoção da saúde e prevenção de doenças em todos os municípios.",
     "pagina": 38
    },
-   "1172": {
+   "1171": {
     "texto": "- Reduzir o tempo de espera para consultas, exames e cirurgias eletivas.",
     "pagina": 38
    },
-   "1173": {
+   "1172": {
     "texto": "- Fortalecer a rede regional de especialidades e alta complexidade.",
     "pagina": 38
    },
-   "1174": {
+   "1173": {
     "texto": "- Modernizar hospitais estaduais e apoiar a qualificação dos hospitais regionais e filantrópicos.",
     "pagina": 38
    },
-   "1175": {
+   "1174": {
     "texto": "- Expandir a Rede de Atenção Psicossocial em todas as regiões do Estado.",
     "pagina": 38
    },
-   "1176": {
+   "1175": {
     "texto": "- Fortalecer políticas de prevenção ao suicídio e atenção à saúde mental de crianças, GOVERNADOR",
     "pagina": 38
    },
-   "1182": {
-    "texto": "adolescentes e idosos.",
-    "pagina": 39
-   },
-   "1184": {
+   "1183": {
     "texto": "- • Integrar saúde mental, assistência social e educação nos territórios mais vulneráveis.",
     "pagina": 39
    },
-   "1185": {
+   "1184": {
     "texto": "- • Implantar o prontuário eletrônico integrado na rede estadual.",
     "pagina": 39
    },
-   "1186": {
+   "1185": {
     "texto": "- • Fortalecer a pesquisa e a inovação tecnológica em parceria com universidades e centros de excelência.",
     "pagina": 39
    },
-   "1187": {
+   "1186": {
     "texto": "- • Fortalecer a capacidade de resposta a epidemias, pandemias e eventos climáticos com impacto na saúde pública.",
     "pagina": 39
    },
-   "1188": {
+   "1187": {
     "texto": "- • Ampliar a cobertura vacinal e os sistemas de monitoramento epidemiológico.",
     "pagina": 39
    },
-   "1189": {
+   "1188": {
     "texto": "- • Integrar vigilância sanitária, epidemiológica, ambiental e saúde do trabalhador.",
     "pagina": 39
    },
-   "1190": {
+   "1189": {
     "texto": "- • Expandir programas de formação continuada e educação permanente.",
     "pagina": 39
    },
-   "1191": {
+   "1190": {
     "texto": "- • Implantar políticas de atração e fixação de profissionais nas regiões com maior escassez.",
     "pagina": 39
    },
-   "1192": {
+   "1191": {
     "texto": "- • Melhorar as condições de trabalho e infraestrutura das unidades estaduais de saúde.",
     "pagina": 39
    },
-   "1193": {
+   "1192": {
     "texto": "- • Ampliar programas de alimentação saudável, atividade física e saúde nas escolas.",
     "pagina": 39
    },
-   "1194": {
+   "1193": {
     "texto": "- • Implementar a Política Estadual de Saúde Integral da População Negra (PESIPN).",
     "pagina": 39
    },
-   "1195": {
+   "1194": {
     "texto": "- • Fortalecer a Política Estadual de Atenção Integral à Saúde da Mulher.",
     "pagina": 39
    },
-   "1196": {
+   "1195": {
     "texto": "- • Implantar a Política Nacional de Saúde Integral de Lésbicas, Gays, Bissexuais, Travestis e Transexuais (LGBT) em âmbito estadual.",
     "pagina": 39
    },
-   "2242": {
+   "2241": {
     "texto": "Fortalecimento da atenção às mulheres vítimas de violência na rede pública de saúde.",
     "pagina": 69
    },
-   "2244": {
+   "2243": {
     "texto": "Garantia de atendimento psicológico, assistência especializada, acolhimento humanizado e acompanhamento continuado.",
     "pagina": 69
    },
-   "2246": {
+   "2245": {
     "texto": "Integração entre os serviços de saúde, assistência social e segurança pública para evitar a revitimização das mulheres durante o atendimento.",
     "pagina": 69
    }
   },
   "governador-sc-jorginho-mello-240002537073": {
-   "42": {
-    "texto": "Pioneirismo na criação de habilitações estaduais de alta complexidade na Saúde, ampliando o atendimento gratuito em áreas como cardiologia e ortopedia no interior",
-    "pagina": 6
-   },
    "123": {
     "texto": "Diretriz Central: garantir acesso universal, rápido e regionalizado à saúde de alta e média complexidade, fortalecendo a rede ﬁlantrópica, os hospitais próprios e as redes municipais.",
     "pagina": 17
@@ -1586,8 +1852,8 @@
    }
   },
   "governador-sc-joao-rodrigues-240002551001": {
-   "185": {
-    "texto": "O livre e rápido acesso à saúde para todos os catarinenses será prioridade do Governo. É fundamental conceber um modelo que propicie atendimento médico com capilaridade suficiente para abranger todas as regiões e municípios do Estado, sem a necessidade de deslocamentos longos para cidades de maior porte.",
+   "186": {
+    "texto": "A rede hospitalar própria do Estado é antiga — construída majoritariamente nas décadas de 1960 e 1970, quando Santa Catarina tinha cerca de 3 milhões de habitantes — e encontra-se, em muitos casos, sucateada e obsoleta, necessitando de reformas e melhorias urgentes. A superlotação e a precariedade dos serviços de saúde persistem, apesar dos esforços diários dos servidores para manter a regularidade do atendimento.",
     "pagina": 12
    },
    "187": {
@@ -1697,21 +1963,9 @@
    "220": {
     "texto": "A construção de novos hospitais regionais, a ampliação de leitos de UTI, o aumento do número de salas cirúrgicas e a criação da Força-Tarefa Médica para zerar as filas de cirurgias são medidas concretas que impactarão diretamente a vida de milhares de famílias. A telemedicina e as vídeo-consultas reduzirão deslocamentos desnecessários e ampliarão o acesso em regiões mais distantes dos grandes centros.",
     "pagina": 14
-   },
-   "221": {
-    "texto": "A atenção básica será fortalecida como porta de entrada prioritária do sistema, com equipes qualificadas para prevenção, detecção precoce e tratamento de doenças crônicas. A saúde da mulher e da criança receberá atenção especial, com qualificação da rede de pré-natal, parto e cuidado ao recém-nascido. A saúde mental e a prevenção ao uso de álcool e outras drogas também serão priorizadas, reconhecendo a dimensão epidemiológica desses desafios.",
-    "pagina": 14
-   },
-   "222": {
-    "texto": "Nenhum esforço de investimento em estrutura física será suficiente se não vier acompanhado de gestão qualificada, de profissionais valorizados e de protocolos padronizados. Por isso, a nomeação de gestores competentes, a capacitação continuada das equipes e a implantação de ferramentas de gestão para eliminar desperdícios e deficiências são partes integrantes e inseparáveis deste Plano de Governo.",
-    "pagina": 14
    }
   },
   "governador-sc-marcelo-brigadeiro-240002544118": {
-   "40": {
-    "texto": "• Saúde baseada em gestão e redução de filas.",
-    "pagina": 4
-   },
    "52": {
     "texto": "- Reduzir filas na saúde.",
     "pagina": 4
