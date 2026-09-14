@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-rn.json",
-  "gerado_em": "2026-09-14T10:43:58Z",
-  "exportado_em": "2026-09-14T11:10:19Z"
+  "gerado_em": "2026-09-14T22:26:20Z",
+  "exportado_em": "2026-09-14T22:41:09Z"
  },
  "candidatos": [
   {
@@ -51,101 +52,80 @@
   {
    "id": "p1",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Organizar a administração estadual por gestão por resultados, com metas, indicadores e avaliação periódica das políticas públicas",
+   "proposta": "Adotar gestão por resultados, com metas, indicadores, responsáveis e avaliação periódica das políticas públicas, corrigindo rumos ao longo do mandato",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      76,
-      77,
-      79,
-      80
+      75,
+      76
      ],
-     "nota": "Foco em avaliar e corrigir o próprio programa de governo ao longo do mandato"
+     "nota": "Painéis e avaliações periódicas do próprio programa de governo"
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
       228,
-      247,
       248,
-      255,
-      256
+      255
      ],
-     "nota": "Avaliação por efetividade, equidade e experiência do usuário, não por atividades"
+     "nota": "Foco em efetividade, equidade e impacto, não só em atividades"
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
       450,
       471,
-      1935,
       1949
      ],
-     "nota": "Prazo, responsável e reuniões periódicas de avaliação por área"
+     "nota": "Prazos, responsáveis e reuniões periódicas de avaliação"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Divulgar painéis públicos de acompanhamento de metas, obras e execução orçamentária em linguagem acessível",
-   "n_concorda": 3,
+   "proposta": "Disponibilizar painéis públicos, em linguagem acessível, para a população acompanhar metas, execução orçamentária, obras e resultados",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      79,
-      80
+      75,
+      76
      ],
      "nota": ""
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      568
+      568,
+      1935
      ],
-     "nota": "Ampliação do Portal de Metas e do ObservaRN a todos os órgãos"
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      979
-     ],
-     "nota": "Transparência sobre prioridades, recursos, etapas e impactos dos projetos"
+     "nota": ""
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Integrar planejamento, orçamento, execução, monitoramento e controle como um único ciclo de gestão",
-   "n_concorda": 2,
+   "proposta": "Expandir as ferramentas do Portal de Metas e do ObservaRN para todos os órgãos e entidades da administração estadual",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      228,
-      255,
-      268
-     ],
-     "nota": ""
-    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      565,
-      566
+      568
      ],
-     "nota": "Integração explícita com PPA, LDO e LOA"
+     "nota": ""
     }
    }
   },
   {
    "id": "p4",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Instituir sistema estadual de planejamento estratégico de longo prazo, com elaboração de uma estratégia de futuro para o estado (RN 2050)",
+   "proposta": "Instituir sistema estadual de planejamento estratégico de longo prazo, com uma estratégia de futuro para 2050 integrada ao PPA, à LDO e à LOA",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -176,22 +156,44 @@
   },
   {
    "id": "p6",
-   "subtema": "Captação de recursos e projetos estratégicos",
-   "proposta": "Estruturar de forma permanente a captação de recursos federais, de bancos públicos e de fontes externas e multilaterais",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Manter carteira permanente de projetos estruturantes tecnicamente prontos para captação de recursos, concessões e parcerias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      269,
+      979
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      570
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Estruturar capacidade permanente de captação de recursos federais, de bancos públicos e de fontes externas e multilaterais",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      94
+      90
      ],
      "nota": ""
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
-      269,
-      979
+      269
      ],
      "nota": "Ênfase na parceria com o Governo Federal"
     },
@@ -202,52 +204,20 @@
       507,
       591
      ],
-     "nota": "Fortalecimento das equipes de elaboração de propostas e captação"
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Captação de recursos e projetos estratégicos",
-   "proposta": "Manter carteira permanente de projetos estruturados e aptos à captação de recursos e a investimentos",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      269,
-      979
-     ],
-     "nota": "Com estudos, licenciamento e planejamento de operação e manutenção"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      570
-     ],
-     "nota": "Carteira estadual de projetos e oportunidades de investimento"
-    },
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      94
-     ],
-     "nota": "Desenvolvimento de grandes projetos estratégicos pela nova secretaria"
+     "nota": ""
     }
    }
   },
   {
    "id": "p8",
-   "subtema": "Captação de recursos e projetos estratégicos",
-   "proposta": "Criar uma secretaria dedicada a captação de recursos, projetos estratégicos e aceleração da execução de investimentos",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Criar secretaria dedicada a programas e projetos estratégicos, captação de recursos e aceleração da execução de investimentos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      91,
-      92,
-      94
+      90
      ],
      "nota": ""
     }
@@ -255,8 +225,8 @@
   },
   {
    "id": "p9",
-   "subtema": "Captação de recursos e projetos estratégicos",
-   "proposta": "Estruturar agenda permanente de relacionamento institucional com a bancada federal para captação de recursos e emendas",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Estruturar agenda permanente de relacionamento institucional com a bancada federal do estado para captação de recursos e projetos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -271,17 +241,157 @@
   },
   {
    "id": "p10",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Implementar política permanente de transparência ativa e dados abertos, com publicação e atualização contínua de informações sobre obras, contratos, convênios e emendas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      247,
+      250
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      577,
+      578
+     ],
+     "nota": "Publicação imediata do catálogo estadual de dados abertos"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Fortalecer a política estadual de governo aberto, com inovação cívica e participação digital, e fortalecer o conselho de usuários dos serviços públicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      578,
+      629
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Tratar a integridade como política de todo o governo, com padrões de conduta, prevenção de riscos e prestação de contas em decisões, contratações, concessões e parcerias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      250,
+      258,
+      259
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Preservar a independência do controle interno, ampliando sua atuação preventiva e orientadora, com responsabilização proporcional que distinga erro de boa-fé de conduta dolosa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      260
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Fortalecer as ouvidorias como canal de escuta, proteção de direitos e aperfeiçoamento dos serviços",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      259
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Manter diálogo institucional permanente com o Judiciário, o Ministério Público, a Defensoria Pública e os tribunais e órgãos de controle",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      97,
+      98,
+      99
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      534
+     ],
+     "nota": "Órgãos de controle como partes do pacto fiscal"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Explicar publicamente à população as mudanças, prioridades e obstáculos do programa de governo ao longo do mandato",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      76
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1935
+     ],
+     "nota": "Divulgação do que é feito, quanto é investido e resultados"
+    }
+   }
+  },
+  {
+   "id": "p17",
    "subtema": "Relação com os municípios",
-   "proposta": "Estabelecer cooperação permanente e pactos de responsabilidades com os 167 municípios, respeitando sua autonomia",
+   "proposta": "Estabelecer cooperação permanente com os 167 municípios, com apoio técnico, simplificação de convênios e respeito à autonomia municipal",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      82,
-      85
+      81
      ],
-     "nota": "Compromissos territoriais com metas, fontes de recursos e prestação de contas"
+     "nota": "Compromissos territoriais com metas, fontes e prestação de contas"
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      239,
+      276
+     ],
+     "nota": ""
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
@@ -290,19 +400,12 @@
       532,
       1951
      ],
-     "nota": "Pacto Municipalista com a FEMURN, independentemente de posição política"
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      979
-     ],
-     "nota": ""
+     "nota": "Pacto municipalista com as prefeituras e a FEMURN, sem distinção política"
     }
    }
   },
   {
-   "id": "p11",
+   "id": "p18",
    "subtema": "Relação com os municípios",
    "proposta": "Regularizar os repasses estaduais devidos aos municípios",
    "n_concorda": 1,
@@ -317,31 +420,9 @@
    }
   },
   {
-   "id": "p12",
+   "id": "p19",
    "subtema": "Relação com os municípios",
-   "proposta": "Simplificar convênios e oferecer apoio técnico às prefeituras, especialmente às de pequeno porte",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      85
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      507
-     ],
-     "nota": "Apoio técnico voltado ao acesso a programas e captação de recursos"
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Relação com os municípios",
-   "proposta": "Disponibilizar sistemas eletrônicos de gestão documental e de processos administrativos às prefeituras",
+   "proposta": "Disponibilizar sistemas eletrônicos de gestão documental e de processos administrativos às prefeituras, especialmente dos pequenos municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -349,282 +430,44 @@
      "blocos": [
       580
      ],
-     "nota": "Ampliação do Programa RN+Inclusivo"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Transparência, integridade e controle",
-   "proposta": "Manter diálogo institucional permanente com o Poder Judiciário, o Ministério Público, os tribunais de contas e demais órgãos de controle",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      98,
-      99,
-      101,
-      102,
-      103
-     ],
      "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      502,
-      503,
-      534
-     ],
-     "nota": "Diálogo com órgãos de controle no âmbito do pacto fiscal"
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      260
-     ],
-     "nota": "Governança, diálogo e controle como dimensões complementares"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Transparência, integridade e controle",
-   "proposta": "Ampliar a transparência ativa e a publicação de dados abertos sobre obras, contratos, convênios e emendas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      577,
-      578,
-      629
-     ],
-     "nota": "Publicação imediata do catálogo estadual de dados abertos"
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      247,
-      250,
-      259
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Transparência, integridade e controle",
-   "proposta": "Fortalecer canais de escuta, ouvidorias e participação social na avaliação dos serviços públicos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      256,
-      259
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      578,
-      629
-     ],
-     "nota": "Conselho de Usuários dos Serviços Públicos e participação digital"
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Transparência, integridade e controle",
-   "proposta": "Instituir a integridade como política de governo, com padrões de conduta, prevenção de riscos e prestação de contas em decisões, contratações e parcerias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      229,
-      250,
-      258,
-      259
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Transparência, integridade e controle",
-   "proposta": "Preservar a independência do controle interno, com atuação também preventiva e orientadora e responsabilização proporcional",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      260
-     ],
-     "nota": "Distingue erro de boa-fé de conduta dolosa"
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Transparência, integridade e controle",
-   "proposta": "Criar programa itinerante de serviços e escuta do governo nos municípios e comunidades",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      557
-     ],
-     "nota": "Programa RN Presente"
     }
    }
   },
   {
    "id": "p20",
-   "subtema": "Desburocratização e governo digital",
-   "proposta": "Simplificar procedimentos, revisar exigências documentais e fixar prazos de resposta ao cidadão e às empresas",
-   "n_concorda": 2,
+   "subtema": "Relação com os municípios",
+   "proposta": "Oferecer apoio técnico aos municípios menores para elaboração de projetos e captação de recursos federais",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      249,
-      262
-     ],
-     "nota": "Simplificar sem reduzir direitos, controles ou proteção socioambiental"
-    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      572,
-      1972
+      507
      ],
-     "nota": "Mutirão inicial de agilização de processos e metas de redução de prazos"
+     "nota": ""
     }
    }
   },
   {
    "id": "p21",
-   "subtema": "Desburocratização e governo digital",
-   "proposta": "Ampliar a oferta de serviços públicos digitais e modernizar os sistemas do Estado",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Reorganizar as contas do estado com responsabilidade fiscal e qualidade do gasto, recuperando a capacidade de investimento sem cortar direitos e serviços essenciais",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
-      53,
-      263
-     ],
-     "nota": "Redesenhar processos antes de digitalizar; atendimento multicanal"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      497,
-      1976
-     ],
-     "nota": "Começa pelos serviços mais procurados pela população"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Desburocratização e governo digital",
-   "proposta": "Integrar órgãos e sistemas, adotando o princípio da informação única para evitar repetição de exigências",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      262,
-      263
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      497
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Desburocratização e governo digital",
-   "proposta": "Usar dados e inteligência artificial para atuação proativa do Estado, com proteção de dados, prevenção de vieses e revisão humana",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      229,
-      263
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Desburocratização e governo digital",
-   "proposta": "Fortalecer institucionalmente a área de tecnologia da informação do Estado, ampliando estrutura, equipes e capacidade de coordenação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1976
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Desburocratização e governo digital",
-   "proposta": "Revisar a estrutura administrativa do Estado, eliminando sobreposições de competências e reorganizando secretarias, autarquias e fundações",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      497,
-      537
-     ],
-     "nota": "Programa permanente com revisão periódica, sem cortes automáticos"
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Conduzir a gestão com responsabilidade fiscal e qualidade do gasto para recuperar a capacidade de investimento do Estado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      247,
       251,
       268
      ],
-     "nota": "Rejeita entender responsabilidade fiscal como cortes indiscriminados"
+     "nota": "Rejeita cortes indiscriminados; fiscal como proteção de serviços"
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
       133,
       319,
-      1930,
       1944,
       1945
      ],
@@ -633,9 +476,9 @@
    }
   },
   {
-   "id": "p27",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Firmar pacto pelo equilíbrio fiscal com a Assembleia Legislativa, órgãos de controle, servidores e sociedade, com metas de redução do comprometimento da despesa de pessoal em relação à Receita Corrente Líquida",
+   "id": "p22",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Firmar pacto pelo equilíbrio fiscal com a Assembleia, órgãos de controle, servidores e sociedade, com metas de redução gradual da despesa com pessoal em relação à Receita Corrente Líquida",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -644,15 +487,15 @@
       534,
       535
      ],
-     "nota": "Acompanhamento público pelo Portal de Metas"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Implantar programa de eficiência do gasto, revisando contratos, locações, terceirizações e despesas de custeio e centralizando compras",
-   "n_concorda": 2,
+   "id": "p23",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Implantar programa de eficiência do gasto, revisando contratos, aluguéis, serviços terceirizados e despesas de custeio e centralizando compras",
+   "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
@@ -661,53 +504,30 @@
       1947
      ],
      "nota": ""
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      268,
-      269
-     ],
-     "nota": "Revisão de iniciativas pouco efetivas guiada pela qualidade do gasto"
     }
    }
   },
   {
-   "id": "p29",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Divulgar levantamento completo da situação real das contas do Estado no início do governo, incluindo dívidas, restos a pagar e passivos previdenciários",
+   "id": "p24",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Ampliar a arrecadação sem elevar alíquotas ou criar impostos, combatendo sonegação",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1942
+      553,
+      555,
+      1945
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p30",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Resgatar e modernizar o Fundo de Equilíbrio Fiscal do Estado, formado por receitas extraordinárias de ativos, concessões e recuperação de créditos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      541,
-      542,
-      549
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Revisar periodicamente as renúncias fiscais, vinculando benefícios a metas de emprego e investimento e descontinuando incentivos sem resultado",
+   "id": "p25",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Revisar periodicamente as renúncias e incentivos fiscais, vinculando sua manutenção a metas de emprego e investimento e divulgando valores, setores e resultados",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -727,26 +547,42 @@
    }
   },
   {
-   "id": "p32",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Ampliar a arrecadação sem elevar impostos, com programa de cidadania fiscal e combate à sonegação",
+   "id": "p26",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Criar programa de cidadania fiscal, com campanhas e premiação para estimular a exigência de documento fiscal",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      555,
-      1945
+      555
      ],
-     "nota": "Premiação ao consumidor que exige documento fiscal"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p33",
-   "subtema": "Finanças públicas e equilíbrio fiscal",
-   "proposta": "Realizar otimização do patrimônio público, com levantamento de imóveis e ativos para gerar novas fontes de receita e reduzir custos",
+   "id": "p27",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Resgatar e modernizar o fundo estadual de equilíbrio fiscal como reserva financeira formada por receitas extraordinárias, com regras rígidas e transparência",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      541,
+      542,
+      549
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Fazer levantamento e otimização dos ativos e imóveis públicos, gerando novas fontes de receita para o equilíbrio financeiro e previdenciário",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
@@ -755,14 +591,36 @@
       1984,
       1985
      ],
-     "nota": "Receitas vinculadas ao equilíbrio financeiro e previdenciário"
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      269
+     ],
+     "nota": "Gestão do patrimônio orientada por eficiência e sustentabilidade"
     }
    }
   },
   {
-   "id": "p34",
-   "subtema": "Concessões, PPPs e compras públicas",
-   "proposta": "Estruturar concessões, PPPs e outras parcerias para destravar investimentos e melhorar serviços",
+   "id": "p29",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Realizar e divulgar, no início do governo, levantamento completo da situação das contas do estado (caixa, dívidas, restos a pagar, passivos e obrigações previdenciárias)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1942
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Usar concessões, PPPs e parcerias com o setor privado para destravar investimentos e melhorar serviços, selecionando projetos prioritários",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -770,17 +628,16 @@
      "blocos": [
       570,
       574,
-      575,
       1985
      ],
-     "nota": "Inclui PPP para infraestrutura digital e expansão da Infovia Potiguar"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p35",
-   "subtema": "Concessões, PPPs e compras públicas",
-   "proposta": "Condicionar concessões, parcerias e operações de crédito a estudos de viabilidade, sustentabilidade fiscal, distribuição de riscos e metas de desempenho",
+   "id": "p31",
+   "subtema": "Contas públicas e responsabilidade fiscal",
+   "proposta": "Submeter operações de crédito, concessões e parcerias a estudos de viabilidade, gestão de riscos, metas de desempenho e monitoramento permanente dos contratos",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
@@ -789,52 +646,28 @@
       259,
       270
      ],
-     "nota": "Avaliação também pelo retorno social e pela qualidade dos serviços"
+     "nota": "Critérios de sustentabilidade fiscal, risco e retorno social"
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
       929
      ],
-     "nota": "Governança, segurança jurídica e monitoramento permanente dos contratos"
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Concessões, PPPs e compras públicas",
-   "proposta": "Ampliar compras públicas centralizadas e o uso de pregões eletrônicos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      551,
-      574
-     ],
      "nota": ""
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      269
-     ],
-     "nota": "Compras e contratos orientados por eficiência, inovação e transparência"
     }
    }
   },
   {
-   "id": "p37",
+   "id": "p32",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Valorizar os servidores com formação continuada, segurança institucional para decidir e autonomia responsável",
+   "proposta": "Assegurar política permanente de valorização dos servidores, compatível com a responsabilidade fiscal",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
-      229,
-      256,
-      268
+      53,
+      229
      ],
      "nota": ""
     },
@@ -845,14 +678,53 @@
       530,
       534
      ],
-     "nota": "Valorização condicionada à compatibilidade com a responsabilidade fiscal"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p38",
+   "id": "p33",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Elaborar plano quadrienal de recomposição do quadro funcional, com mapeamento de vacâncias, déficits de pessoal e impacto fiscal",
+   "proposta": "Ampliar a formação continuada dos servidores, fortalecendo e modernizando a escola de governo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      530,
+      614
+     ],
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      256
+     ],
+     "nota": "Capacitação ligada à implementação das políticas"
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Servidores, carreiras e previdência",
+   "proposta": "Implementar plano de ação previdenciário articulado com o instituto de previdência, os demais Poderes e o TCE, com metas anuais de redução do déficit e divulgação dos resultados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      593,
+      594
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Servidores, carreiras e previdência",
+   "proposta": "Elaborar plano quadrienal de recomposição do quadro funcional, mapeando vacâncias, déficits reais e impacto fiscal das admissões",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -866,15 +738,14 @@
    }
   },
   {
-   "id": "p39",
+   "id": "p36",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Instituir calendário permanente e plurianual de concursos públicos para áreas estratégicas, compatível com a capacidade fiscal",
+   "proposta": "Instituir calendário permanente e plurianual de concursos públicos para áreas estratégicas como saúde, segurança, educação e tecnologia",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      518,
       605
      ],
      "nota": ""
@@ -882,9 +753,9 @@
    }
   },
   {
-   "id": "p40",
+   "id": "p37",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Implantar sistema unificado de avaliação de desempenho em todo o Poder Executivo estadual",
+   "proposta": "Implantar sistema unificado de avaliação de desempenho no Poder Executivo, com metodologia padronizada e feedback contínuo",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -897,9 +768,9 @@
    }
   },
   {
-   "id": "p41",
+   "id": "p38",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Promover a convergência gradual dos planos de cargos, carreiras e remuneração, priorizando as carreiras transversais",
+   "proposta": "Promover a convergência gradual dos planos de cargos, carreiras e remuneração, priorizando carreiras transversais, para ampliar a mobilidade funcional",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -913,9 +784,9 @@
    }
   },
   {
-   "id": "p42",
+   "id": "p39",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Estabelecer critérios técnicos de qualificação e experiência para cargos comissionados, ampliando a participação de servidores efetivos",
+   "proposta": "Estabelecer critérios objetivos de qualificação e experiência para cargos comissionados e funções de liderança, ampliando a participação de servidores efetivos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -928,24 +799,9 @@
    }
   },
   {
-   "id": "p43",
+   "id": "p40",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Fortalecer e modernizar a Escola de Governo, ampliando a capacitação dos servidores",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      614
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Criar política de retenção de quadros técnicos especializados com progressão de carreira em \"Y\", sem exigir funções de chefia",
+   "proposta": "Criar política de retenção de quadros técnicos especializados, com progressão em carreira técnica (modelo em “Y”) e parcerias com universidades",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -959,45 +815,234 @@
    }
   },
   {
-   "id": "p45",
+   "id": "p41",
    "subtema": "Servidores, carreiras e previdência",
-   "proposta": "Implementar plano de ação previdenciário com o IPERN, os demais Poderes e a Assembleia, com metas anuais de redução do déficit e base atuarial atualizada",
+   "proposta": "Dar aos servidores autonomia responsável e segurança institucional para decidir, com responsabilização que diferencie erro de boa-fé de má conduta",
    "n_concorda": 1,
    "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      229,
+      256,
+      260
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Simplificar e desburocratizar a administração, revisando exigências, formulários e fluxos, com linguagem simples e prazos definidos de resposta ao cidadão e às empresas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      249,
+      262
+     ],
+     "nota": "Simplificar sem reduzir direitos, controles ou proteção socioambiental"
+    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      593,
-      594,
-      601
+      572,
+      1972
      ],
-     "nota": "Em conformidade com determinações do TCE/RN e divulgação no Portal de Metas"
+     "nota": "Mutirão inicial e facilitação de atividades de baixo risco"
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Ampliar a oferta de serviços públicos digitais e integrar sistemas e órgãos, começando pelos serviços mais procurados",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      235,
+      263
+     ],
+     "nota": "Redesenhar o processo antes de digitalizar"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      497,
+      1976
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Implantar governo digital proativo e preditivo, com uso de inteligência artificial e dados, proteção de dados, prevenção de vieses, revisão humana e atendimento multicanal",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      229,
+      263
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Adotar o princípio da informação única, evitando que o cidadão repita dados já entregues ao Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      262
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p46",
-   "subtema": "Captação de recursos e projetos estratégicos",
-   "proposta": "Fortalecer a participação do Estado em redes nacionais e internacionais voltadas ao desenvolvimento sustentável, inovação, transformação digital, governança e adaptação às mudanças climáticas",
-   "n_concorda": 3,
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Fortalecer institucionalmente a área de tecnologia da informação do estado, ampliando estrutura, equipes e capacidade de coordenação",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rn-allyson-200002535255": {
+    "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      91,
-      92,
-      94
+      1976
      ],
-     "nota": "Secretaria dedicada à captação de recursos federais e multilaterais e projetos estratégicos."
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Implantar programa permanente de modernização administrativa, com revisão periódica das competências de secretarias, autarquias e fundações e eliminação de sobreposições",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      497,
+      537
+     ],
+     "nota": ""
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
-      269,
-      979
+      228,
+      235
      ],
-     "nota": "Prevê carteira permanente de projetos e mobilização de recursos federais, bancos públicos, universidades e parcerias."
+     "nota": "Integração de órgãos, sistemas, planejamento e execução"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Consolidar e ampliar compras públicas centralizadas com pregões eletrônicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      551,
+      574
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Estruturar parcerias público-privadas para infraestrutura digital, incluindo a expansão da infovia estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      574,
+      575
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Atendimento e escuta da população",
+   "proposta": "Organizar os serviços pela jornada do usuário e acompanhar a implementação com escuta de cidadãos, comunidades e servidores, considerando diferenças territoriais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      247,
+      249,
+      256
+     ],
+     "nota": ""
     },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      557
+     ],
+     "nota": "Escuta ativa por meio de programa itinerante nos municípios"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Atendimento e escuta da população",
+   "proposta": "Criar programa itinerante que leve serviços e atendimentos do governo estadual aos municípios e comunidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      557
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Relação com a Assembleia e articulação política",
+   "proposta": "Governar com diálogo suprapartidário, incluindo a Assembleia Legislativa e parceiros institucionais, colocando o interesse público acima das diferenças políticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      502,
+      503,
+      534
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Fortalecer a participação do estado em redes nacionais e internacionais voltadas ao desenvolvimento sustentável, inovação, transformação digital, governança e adaptação às mudanças climáticas",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
@@ -1010,59 +1055,31 @@
  ],
  "blocos": {
   "governador-rn-allyson-200002535255": {
-   "76": {
-    "texto": "AVALIAÇÃO E APERFEIÇOAMENTO",
-    "pagina": 9
-   },
-   "77": {
-    "texto": "PERMANENTE",
-    "pagina": 9
-   },
-   "79": {
+   "75": {
     "texto": "C iar painéis e avaliações periódicas para medir resultados, co rigir umos e aprimorar este",
     "pagina": 9
    },
-   "80": {
+   "76": {
     "texto": "Programa de Governo ao longo do mandato, explicando publicamente mudanças, p io idades e obstáculos.",
     "pagina": 9
    },
-   "82": {
-    "texto": "PACTOS COM OS 167 MUNICÍPIOS",
-    "pagina": 9
-   },
-   "85": {
+   "81": {
     "texto": "Simplificar convênios, oferecer apoio técnico e const uir compromissos ter ito iais com responsabilidades, fontes de recursos, metas e prestação de contas, respeitando a autonomia municipal.",
     "pagina": 9
    },
-   "91": {
-    "texto": "SECRETARIA DE PROGRAMAS E",
-    "pagina": 10
-   },
-   "92": {
-    "texto": "PROJETOS ESTRATÉGICOS",
-    "pagina": 10
-   },
-   "94": {
+   "90": {
     "texto": "C iar uma secreta ia dedicada a est uturar a captação de recursos federais e multilaterais, desenvolver grandes projetos estratégicos e acelerar a execução de investimentos, obras e ações para o povo do Rio Grande do Norte.",
     "pagina": 10
    },
-   "98": {
-    "texto": "DIÁLOGO COM O PODER JUDICIÁRIO",
-    "pagina": 10
-   },
-   "99": {
-    "texto": "E OS ÓRGÃOS DE CONTROLE",
-    "pagina": 10
-   },
-   "101": {
+   "97": {
     "texto": "Manter diálogo institucional permanente, respeitoso e transparente com o Poder",
     "pagina": 10
    },
-   "102": {
+   "98": {
     "texto": "Judiciário, o Ministério Público, a Defensoria",
     "pagina": 10
    },
-   "103": {
+   "99": {
     "texto": "Pública, os tribunais de contas e os demais órgãos de controle, respeitando a autonomia e as competências de cada instituição e const uindo soluções para ap imorar políticas, prevenir conflitos e dar segurança às decisões públicas.",
     "pagina": 10
    }
@@ -1078,6 +1095,14 @@
    },
    "229": {
     "texto": "A integridade será princípio permanente e prática cotidiana nas decisões, nos processos, nas contratações e nos serviços. Servidores valorizados terão autonomia responsável e segurança para decidir. Tecnologia, dados e inteligência artificial facilitarão o acesso a direitos e a antecipação de necessidades, com proteção de dados, acessibilidade, não discriminação e supervisão humana.",
+    "pagina": 16
+   },
+   "235": {
+    "texto": "Ainda há espaço para integrar órgãos, sistemas, planejamento e execução. Parte dos serviços segue a lógica interna da administração: as pessoas precisam conhecer competências, repetir informações e percorrer etapas que poderiam ser simplificadas. Digitalizar sem redesenhar apenas transfere a burocracia do papel para a tela.",
+    "pagina": 16
+   },
+   "239": {
+    "texto": "A implementação varia conforme as capacidades locais, a coordenação das equipes e as barreiras enfrentadas pelos usuários. Por isso, a gestão deverá acompanhar o percurso entre a decisão e a entrega, observar diferenças territoriais, ouvir servidores e cidadãos e adaptar respostas. A cooperação com municípios e a parceria estratégica com o presidente Lula ampliam as condições para modernizar o Estado e investir com responsabilidade.",
     "pagina": 16
    },
    "247": {
@@ -1138,6 +1163,10 @@
    },
    "270": {
     "texto": "Operações de crédito, concessões e parcerias serão avaliadas pela sustentabilidade fiscal, pela distribuição de riscos, pela qualidade dos serviços e pelo retorno social.",
+    "pagina": 18
+   },
+   "276": {
+    "texto": "Responsabilidade fiscal e capacidade de investir caminharão juntas. O Estado estará mais apto a estruturar projetos, mobilizar recursos e cooperar com municípios e Governo Federal. Os resultados serão acompanhados por território e grupos sociais, permitindo verificar se as políticas chegam a quem precisa e reduzem desigualdades.",
     "pagina": 18
    },
    "979": {
@@ -1311,10 +1340,6 @@
     "texto": "O plano estabelecerá metas anuais para reduzir gradualmente o déficit previdenciário, indicadores de desempenho, monitoramento permanente e ampla transparência, com divulgação dos resultados por meio do Portal de Metas, garantindo maior sustentabilidade financeira ao regime próprio de ☑ ☑ ☑ ☑ ☑ ☑ ☑",
     "pagina": 27
    },
-   "601": {
-    "texto": "| 27 | previdência.",
-    "pagina": 27
-   },
    "603": {
     "texto": "Estruturar o planejamento quadrienal da força de trabalho, elaborando o Plano Quadrienal de Recomposição do Quadro Funcional, com o mapeamento das vacâncias previstas por aposentadorias, dos déficits reais de pessoal e do impacto fiscal das futuras admissões, orientando concursos e seleções por critérios técnicos, planejamento de longo prazo e responsabilidade fiscal, em substituição a medidas casuísticas e reativas.",
     "pagina": 28
@@ -1362,10 +1387,6 @@
    "929": {
     "texto": "Fortalecer a governança e a segurança jurídica das parcerias, adotando estudos de viabilidade, transparência, gestão de riscos, metas de desempenho, fiscalização e monitoramento permanente dos contratos. ☑ ☑ ☑ ☑ ☑ ☑ ☑ ☑",
     "pagina": 43
-   },
-   "1930": {
-    "texto": "Nosso dever será cuidar do dinheiro público e fazer com que os recursos arrecadados retornem à população por meio de hospitais funcionando, escolas que ensinem, estradas seguras, mais proteção para as famílias e oportunidades para quem deseja trabalhar, produzir e empreender.",
-    "pagina": 90
    },
    "1935": {
     "texto": "Não será um período dedicado apenas a diagnósticos. Cada prioridade terá prazo, responsável e acompanhamento. A população saberá o que está sendo feito, quanto está sendo investido e quais resultados estão sendo alcançados.",
