@@ -1,0 +1,927 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "PI",
+ "pagina": "infraestrutura-mobilidade",
+ "nome": "Infraestrutura, transporte e mobilidade",
+ "titulo": "Infraestrutura, transporte e mobilidade: o que cada candidato propõe",
+ "temas": [
+  "infraestrutura",
+  "mobilidade"
+ ],
+ "origem": {
+  "arquivo": "infraestrutura-mobilidade-pi.json",
+  "gerado_em": "2026-09-14T10:34:35Z",
+  "exportado_em": "2026-09-14T11:10:19Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-pi-dra-lucia-santos-180002544216",
+   "nome": "Dra. Lúcia Santos",
+   "partido": "PSDB",
+   "numero": "45",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/180017036523",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/180002544216/PI"
+  },
+  {
+   "slug": "governador-pi-joel-rodrigues-180002538530",
+   "nome": "Joel Rodrigues",
+   "partido": "PP",
+   "numero": "11",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/180016896994",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/180002538530/PI"
+  },
+  {
+   "slug": "governador-pi-rafael-fonteles-180002532987",
+   "nome": "Rafael Fonteles",
+   "partido": "PT",
+   "numero": "13",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/180016838798",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/180002532987/PI"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Implantar programa permanente de recuperação, conservação e modernização da malha rodoviária estadual, substituindo a lógica de intervenções emergenciais/corretivas por manutenção preventiva planejada",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      200,
+      201,
+      202
+     ],
+     "nota": "Prioriza trechos com maior fluxo, acidentes e importância econômica"
+    },
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      978,
+      983
+     ],
+     "nota": "Continuidade do ciclo de recuperação e ampliação já em curso"
+    },
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1320,
+      1321
+     ],
+     "nota": "Política Estadual de recuperação, conservação e modernização da malha"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Monitorar permanentemente a condição da malha rodoviária com sistemas digitais, geotecnologias e inteligência artificial para priorizar investimentos por critérios técnicos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      991
+     ],
+     "nota": "Meta de 100% da malha monitorada por SIG/SGP com IA"
+    },
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1320,
+      1324
+     ],
+     "nota": "Estrutura permanente de monitoramento e avaliação da qualidade"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Atingir meta percentual definida de malha rodoviária estadual em condições regular, boa ou ótima (95%)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      983,
+      985
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Duplicar as principais rodovias estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      200,
+      201
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Firmar contratos regionais de manutenção permanente, com responsáveis por território pela conservação contínua das rodovias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1321,
+      1324
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Implantar sinalização viária adequada e acostamentos nos trechos com maior incidência de óbitos nas rodovias estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      988
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Construir novas rodovias pavimentadas, incluindo ligações entre centros urbanos e povoados rurais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      986,
+      989
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Consolidar os corredores rodoviários estruturantes nomeados (Rota do Norte, Rota do Paraíso, Rota da Fé, Corredor Leste) com 100% da extensão em boas condições",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      990
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Concluir todas as ligações rodoviárias estaduais de fronteira com outros estados, elevando-as a padrão único de qualidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1330,
+      1333,
+      1334
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Articular junto ao Governo Federal a duplicação de rodovias federais no estado (BR-343 e BR-316) e a inclusão de novos corredores federais estratégicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1335,
+      1338
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Instituir fórum permanente entre Estado, Governo Federal, DNIT, bancada federal, setor produtivo e municípios para acompanhar obras federais e acelerar licenciamentos e captação de recursos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1339,
+      1341,
+      1342
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Tratar a infraestrutura como política permanente e estratégica de desenvolvimento, com planejamento de longo prazo e ampliação dos investimentos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      196,
+      252,
+      253
+     ],
+     "nota": ""
+    },
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      978
+     ],
+     "nota": ""
+    },
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1311,
+      1320
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Elaborar e executar plano/política estadual de logística integrando rodovias, ferrovias, porto e aeroportos em uma única estratégia",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      240,
+      241,
+      242
+     ],
+     "nota": ""
+    },
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1325,
+      1329
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Criar um sistema/órgão estadual de coordenação da logística e do desenvolvimento territorial (SELDT) com indicadores de desempenho logístico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1328,
+      1329
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Melhorar os acessos aos polos produtivos e incentivar a instalação de centros de distribuição e armazenamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      242
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Concluir e consolidar os grandes corredores logísticos estratégicos do estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      978
+     ],
+     "nota": "Cita o Anel da Soja como corredor prioritário"
+    },
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      242
+     ],
+     "nota": "Fortalecimento dos corredores logísticos do agronegócio"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Investir volume definido de recursos (R$ 10 bilhões) em infraestrutura estratégica, combinando recursos estaduais e parcerias público-privadas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      175,
+      177
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Elaborar e implantar plano estadual de mobilidade urbana, em articulação com os municípios",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      213,
+      214
+     ],
+     "nota": "Parceria com o município de Teresina e iniciativa privada"
+    },
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1345,
+      1346,
+      1350
+     ],
+     "nota": "Plano de mobilidade inclusiva e segurança viária, urbano e rural"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Ampliar a acessibilidade urbana e dos serviços de transporte para pessoas com deficiência, idosos e pessoas com mobilidade reduzida",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      372
+     ],
+     "nota": ""
+    },
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1344,
+      1349
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Apoiar projetos estruturantes de mobilidade, drenagem, acessibilidade e qualificação de espaços públicos nas regiões metropolitanas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1352
+     ],
+     "nota": ""
+    },
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      208
+     ],
+     "nota": "Prevê estudos para novos corredores metropolitanos"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Construir elevados e viadutos nos principais cruzamentos de grande fluxo da capital",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      216
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Implantar passagens inferiores (rebaixamentos viários) em cruzamentos críticos de grandes corredores de tráfego",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      218,
+      219,
+      220,
+      221,
+      222
+     ],
+     "nota": "Lista cruzamentos prioritários na Avenida Frei Serafim"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Pavimentar vias públicas em bairros e comunidades rurais mais vulneráveis como política de requalificação urbana e redução de desigualdades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1350,
+      1352,
+      1353
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Transporte público e intermunicipal",
+   "proposta": "Fortalecer o transporte intermunicipal e a mobilidade da população mais vulnerável e de regiões isoladas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      370,
+      372
+     ],
+     "nota": ""
+    },
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      902
+     ],
+     "nota": "Via ampliação do Passe Livre Intermunicipal"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Transporte público e intermunicipal",
+   "proposta": "Ampliar o Passe Livre Intermunicipal para rotas rurais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      902
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Transporte público e intermunicipal",
+   "proposta": "Melhorar o transporte destinado a estudantes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      371
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Metrô e integração tarifária",
+   "proposta": "Reestruturar e modernizar o sistema metroviário de Teresina, com melhoria de estações, ampliação gradual da cobertura e aumento da frequência das viagens",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      227,
+      228,
+      229
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Metrô e integração tarifária",
+   "proposta": "Implantar integração tarifária entre o metrô, os ônibus e os demais modais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      229
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Pontes e travessias",
+   "proposta": "Construir novas pontes estratégicas para melhorar a mobilidade e a integração regional",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      206,
+      207
+     ],
+     "nota": "Inclui ponte da Avenida Raul Lopes à região da Cidade Verde"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Pontes e travessias",
+   "proposta": "Construir novas ligações entre Piauí e Maranhão sobre o Rio Parnaíba",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      208
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Porto e hidrovia",
+   "proposta": "Consolidar a operação do Porto de Luís Correia, incluindo seus terminais de minério, grãos, contêineres e pescados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      978,
+      1015,
+      1022
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Porto e hidrovia",
+   "proposta": "Implantar e consolidar as condições operacionais da hidrovia do rio Parnaíba",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      978,
+      1015,
+      1019
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Ferrovias",
+   "proposta": "Defender e promover a expansão da malha ferroviária estadual para escoamento da produção e transporte regional de passageiros",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      234
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-pi-dra-lucia-santos-180002544216": {
+   "196": {
+    "texto": "Nosso governo colocará a infraestrutura entre as prioridades estratégicas do Estado, com planejamento de longo prazo e investimentos capazes de preparar o Piauí para as próximas décadas.",
+    "pagina": 14
+   },
+   "200": {
+    "texto": "Nosso governo implantará um programa permanente de recuperação, modernização e duplicação das principais rodovias estaduais, priorizando os trechos com maior fluxo de veículos, maior número de acidentes e maior importância econômica.",
+    "pagina": 14
+   },
+   "201": {
+    "texto": "Os investimentos terão como objetivos: \n• aumentar a segurança viária; \n• reduzir acidentes; \n• diminuir o tempo de deslocamento; \n• facilitar o transporte de cargas; \n• integrar as regiões do Estado; \n• impulsionar o desenvolvimento do turismo e do agronegócio.",
+    "pagina": 14
+   },
+   "202": {
+    "texto": "A infraestrutura rodoviária deixará de ser apenas manutenção corretiva para se tornar uma política permanente de desenvolvimento.",
+    "pagina": 14
+   },
+   "206": {
+    "texto": "Nosso governo defenderá a construção de novas pontes estratégicas para melhorar a mobilidade urbana e fortalecer a integração regional.",
+    "pagina": 14
+   },
+   "207": {
+    "texto": "Entre as prioridades estão: \n• construção de uma ponte ligando a Avenida Raul Lopes à região da Cidade Verde, ampliando a mobilidade da zona leste de Teresina;",
+    "pagina": 14
+   },
+   "208": {
+    "texto": "• novas ligações entre Piauí e Maranhão sobre o Rio Parnaíba, fortalecendo o comércio, o turismo e o deslocamento diário da população; \n• estudos para novos corredores metropolitanos que acompanhem o crescimento urbano da capital.",
+    "pagina": 14
+   },
+   "213": {
+    "texto": "Nosso governo elaborará um Plano Estadual de Mobilidade Urbana em parceria com o município e com a iniciativa privada, priorizando intervenções que aumentem a fluidez do trânsito e preparem a cidade para as próximas décadas.",
+    "pagina": 15
+   },
+   "214": {
+    "texto": "Entre as principais obras previstas estão:",
+    "pagina": 15
+   },
+   "216": {
+    "texto": "Construção de elevados e viadutos nos principais cruzamentos de grande fluxo da capital, reduzindo conflitos entre veículos e melhorando a circulação urbana.",
+    "pagina": 15
+   },
+   "218": {
+    "texto": "Implantação de passagens inferiores (“rebaixamentos”) em cruzamentos críticos, especialmente nos grandes corredores de tráfego, permitindo maior fluidez sem necessidade de interrupções por semáforos.",
+    "pagina": 15
+   },
+   "219": {
+    "texto": "Entre os locais prioritários para estudos técnicos destacam-se: \n•",
+    "pagina": 15
+   },
+   "220": {
+    "texto": "Avenida Frei Serafim × Avenida Miguel Rosa; \n•",
+    "pagina": 15
+   },
+   "221": {
+    "texto": "Avenida Coelho de Resende × Avenida Frei Serafim; \n•",
+    "pagina": 15
+   },
+   "222": {
+    "texto": "Avenida Pires de Castro × Avenida Frei Serafim.",
+    "pagina": 15
+   },
+   "227": {
+    "texto": "Nosso governo promoverá uma ampla reestruturação do sistema metroviário, transformando-o em um verdadeiro eixo estruturante do transporte público metropolitano.",
+    "pagina": 15
+   },
+   "228": {
+    "texto": "As ações compreenderão:",
+    "pagina": 15
+   },
+   "229": {
+    "texto": "• modernização da infraestrutura existente; \n• ampliação gradual da cobertura do sistema; \n• integração tarifária com ônibus e demais modais; \n• melhoria das estações; \n• aumento da frequência das viagens; \n• planejamento de futuras expansões conforme estudos de demanda.",
+    "pagina": 15
+   },
+   "234": {
+    "texto": "Nosso governo defenderá a expansão da malha ferroviária como instrumento de desenvolvimento econômico, integração regional e redução dos custos logísticos.",
+    "pagina": 16
+   },
+   "240": {
+    "texto": "Nosso governo desenvolverá uma política integrada de logística estadual, articulando rodovias, ferrovias, aeroportos e centros de distribuição para reduzir custos e aumentar a competitividade das empresas piauienses.",
+    "pagina": 16
+   },
+   "241": {
+    "texto": "Entre as prioridades estão:",
+    "pagina": 16
+   },
+   "242": {
+    "texto": "• melhoria dos acessos aos polos produtivos; \n• fortalecimento dos corredores logísticos do agronegócio; \n• integração entre modais de transporte; \n• incentivo à instalação de centros de distribuição e armazenamento; \n• apoio aos municípios estratégicos para o desenvolvimento regional.",
+    "pagina": 16
+   },
+   "252": {
+    "texto": "A infraestrutura será tratada como uma política permanente de desenvolvimento, e não apenas como um conjunto de obras isoladas. Cada ponte construída, cada rodovia duplicada, cada ferrovia implantada e cada intervenção de mobilidade urbana terão um objetivo comum: aproximar pessoas, reduzir desigualdades regionais, impulsionar a economia e melhorar a qualidade de vida da população.",
+    "pagina": 17
+   },
+   "253": {
+    "texto": "Construiremos um Piauí mais conectado, mais competitivo e preparado para crescer com planejamento, segurança e visão de futuro.",
+    "pagina": 17
+   },
+   "370": {
+    "texto": "Nosso governo desenvolverá políticas para ampliar a mobilidade da população mais vulnerável, fortalecendo o transporte intermunicipal e apoiando iniciativas que facilitem o acesso da população aos serviços essenciais.",
+    "pagina": 25
+   },
+   "371": {
+    "texto": "Entre as ações previstas estão: \n• melhoria do transporte para estudantes;",
+    "pagina": 25
+   },
+   "372": {
+    "texto": "• fortalecimento da integração entre municípios; \n• ampliação da acessibilidade para pessoas com deficiência; \n• apoio às regiões com maior isolamento geográfico.",
+    "pagina": 25
+   }
+  },
+  "governador-pi-joel-rodrigues-180002538530": {
+   "1311": {
+    "texto": "Reduzir desigualdades territoriais por meio de infraestrutura estratégica, manutenção preventiva, mobilidade, habitação, saneamento e integração entre territórios, cidades e serviços públicos. Metas orientadoras: reduzir isolamento e tempo de deslocamento; elevar condição e segurança da malha; ampliar projetos maduros de habitação e saneamento; garantir operação e manutenção dos equipamentos apoiados.",
+    "pagina": 71
+   },
+   "1320": {
+    "texto": "Orientações Programáticas: desenvolver estrutura permanente de monitoramento, avaliação da qualidade e requalificação da malha viária do estado do Piauí, otimizando investimentos, reduzindo atrasos na conclusão de projetos prioritários, priorizando a qualidade dos serviços executados. Assim, até o final do mandato, o Piauí contará com uma rede rodoviária mais segura, moderna e eficiente, capaz de integrar todas as regiões do Estado, reduzir custos logísticos, impulsionar o agronegócio, fortalecer o turismo, atrair investimentos e garantir melhores condições de mobilidade para a população. A política rodoviária deixará de ser baseada em ações emergenciais para tornar-se um programa permanente de gestão da infraestrutura, orientado por planejamento, tecnologia, transparência e manutenção preventiva.",
+    "pagina": 72
+   },
+   "1321": {
+    "texto": "Ação Programática 7.1.1 – Implantar da Política Estadual de recuperação, conservação e modernização da malha rodoviária, com a implantação de contratos regionais de manutenção permanente.",
+    "pagina": 72
+   },
+   "1324": {
+    "texto": "Objetivo: Cada território contará com responsáveis pela conservação contínua das rodovias, reduzindo o tempo de resposta para reparos. Através do uso de inteligência artificial, geotecnologias e monitoramento contínuo, o Estado passará a antecipar problemas, priorizar investimentos com base em critérios técnicos e garantir maior eficiência na conservação da malha rodoviária, transformando a infraestrutura em um ativo estratégico para o desenvolvimento econômico e a integração regional.",
+    "pagina": 72
+   },
+   "1325": {
+    "texto": "Ação Programática 7.1.2 – Plano Estadual de Integração Logística: articulando os diferentes modais de transporte em uma única estratégia de desenvolvimento.",
+    "pagina": 72
+   },
+   "1328": {
+    "texto": "Objetivo: Implantação do Sistema Estadual de Logística e Desenvolvimento Territorial",
+    "pagina": 72
+   },
+   "1329": {
+    "texto": "(SELDT), para coordenação articulada das ações de infraestrutura, desenvolvimento econômico, mineração, agronegócio, indústria, comércio exterior e planejamento responsável por planejar os corredores logísticos; priorizar investimentos em infraestrutura complementar; integrar rodovias, ferrovia, porto, ZPE e aeroportos; atrair empreendimentos industriais acompanhar indicadores de desempenho logístico e competitividade.",
+    "pagina": 72
+   },
+   "1330": {
+    "texto": "Ação Programática 7.1.3 - Universalização das Ligações Rodoviárias Interestaduais.",
+    "pagina": 72
+   },
+   "1333": {
+    "texto": "Objetivo: Concluir todas as ligações rodoviárias estaduais de fronteira e elevar todas elas a um padrão único de qualidade. Quem entrar no Piauí perceberá imediatamente que chegou a um estado organizado, com-",
+    "pagina": 72
+   },
+   "1334": {
+    "texto": "7 3 petitivo e preparado para crescer. A placa de boas-vindas continuará existindo, mas o verdadeiro cartão de visitas será a qualidade da estrada, a segurança da viagem, a integração logística e a capacidade do Piauí de transformar suas fronteiras em portas de entrada para investimentos, empregos e oportunidades.",
+    "pagina": 72
+   },
+   "1335": {
+    "texto": "Ação Programática 7.1.3 – Programa Corredores Federais para o Desenvolvimento do Piauí.",
+    "pagina": 73
+   },
+   "1338": {
+    "texto": "Objetivo: Articular junto ao Governo Federal a execução dos projetos de duplicação da BR-343 - trechos Altos x Campo Maior e sua continuidade até Piripiri, e da BR-316, nos trechos Monsenhor Gil x Estaca Zero, além de defender a inclusão de novos corredores federais estratégicos para o desenvolvimento do Piauí.",
+    "pagina": 73
+   },
+   "1339": {
+    "texto": "Ação Programática 7.1.4 – Todos pela Infraestrutura viária Federal no Piauí.",
+    "pagina": 73
+   },
+   "1341": {
+    "texto": "Objetivo: Instituir fórum permanente entre",
+    "pagina": 73
+   },
+   "1342": {
+    "texto": "Governo do Estado, Governo Federal, DNIT, bancada federal, setor produtivo e municípios para acompanhar a execução das obras federais, atualizar prioridades e acelerar licenciamentos, projetos e captação de recursos.",
+    "pagina": 73
+   },
+   "1344": {
+    "texto": "Orientações Programáticas: Aumento da acessibilidade para pessoas com deficiência, idosos e pessoas com mobilidade reduzida, reduzir a exposição da população à poeira, lama e alagamentos; valorização dos bairros beneficiados e fortalecimento do desenvolvimento econômico local, reduzir acidentes e melhorar mobilidade nas cidades; promover inclusão e construir novos caminhos.",
+    "pagina": 73
+   },
+   "1345": {
+    "texto": "Ação 7.2.1 – Implantar Plano de Mobilidade",
+    "pagina": 73
+   },
+   "1346": {
+    "texto": "Inclusiva e Segurança Viária",
+    "pagina": 73
+   },
+   "1349": {
+    "texto": "Objetivo: Apoiar mobilidade ativa, acessibilidade e caminhos seguros nas cidades, através do desenvolvimento e apoio a projetos focados na implantação de infraestrutura urbana acessível como instrumento de promoção da mobilidade inclusiva e segura.",
+    "pagina": 73
+   },
+   "1350": {
+    "texto": "Ação 7.2.2 – Reestruturar o Programa Estadual de Mobilidade Urbana e rural – Caminho Seguro",
+    "pagina": 73
+   },
+   "1352": {
+    "texto": "Objetivo: Promover a requalificação da infraestrutura urbana dos municípios piauienses por meio da pavimentação de vias públicas, implantação de soluções de acessibilidade e melhoria da mobilidade, priorizando bairros e comunidades rurais com maior vulnerabilidade social, de forma a reduzir desigualdades, ampliar a qualidade de vida e impulsionar o desenvolvimento econômico local através da pavimentação também na Zona",
+    "pagina": 73
+   },
+   "1353": {
+    "texto": "Rural.",
+    "pagina": 73
+   }
+  },
+  "governador-pi-rafael-fonteles-180002532987": {
+   "96": {
+    "texto": "Meta 5. Infraestrutura: Expandir a infraestrutura econômica e produtiva, com investimentos em logística, abastecimento hídrico, energia e agroindustrialização, reduzindo custos de produção e ampliando a competitividade dos territórios.",
+    "pagina": 8
+   },
+   "175": {
+    "texto": "Investir R$ 10 bilhões, por meio de recursos estaduais e parcerias público-privadas, na ampliação e modernização da infraestrutura estratégica do Piauí.",
+    "pagina": 12
+   },
+   "177": {
+    "texto": "• Valor do investimento público em Infraestrutura, Transformação Social e",
+    "pagina": 12
+   },
+   "902": {
+    "texto": "Meta 135. Ampliar o Passe Livre Intermunicipal para rotas rurais.",
+    "pagina": 46
+   },
+   "978": {
+    "texto": "Neste novo ciclo, vamos consolidar uma infraestrutura integrada, moderna e sustentável. Investiremos na ampliação e manutenção da malha rodoviária, na conclusão dos grandes corredores logísticos, na operação do Porto de Luís Correia, na implantação da hidrovia do rio Parnaíba, na expansão do abastecimento de água e do esgotamento sanitário, na segurança hídrica das comunidades rurais e na consolidação do Piauí como referência nacional em transição energética e mineração sustentável. Nosso compromisso é conectar pessoas, territórios e mercados, construindo um estado mais competitivo, resiliente e preparado para o futuro.",
+    "pagina": 50
+   },
+   "983": {
+    "texto": "Consolidar 95% da malha rodoviária estadual em condições regular, boa ou ótima.",
+    "pagina": 50
+   },
+   "985": {
+    "texto": "• Percentual da malha rodoviária estadual em regulares/boas/ótimas condições.",
+    "pagina": 50
+   },
+   "986": {
+    "texto": "• Km de novas rodovias pavimentadas.",
+    "pagina": 50
+   },
+   "988": {
+    "texto": "Meta 144. Implantar sinalização viária adequada e acostamentos nos trechos críticos com maior incidência de óbitos em rodovias estaduais.",
+    "pagina": 50
+   },
+   "989": {
+    "texto": "Meta 145. Construir novas rodovias, incluindo novas ligações entre centros urbanos e povoados rurais.",
+    "pagina": 50
+   },
+   "990": {
+    "texto": "Meta 146. Consolidar os corredores rodoviários estruturantes (Rota do Norte, Rota do Paraíso, Rota da Fé, Corredor Leste) com 100% da extensão em boas condições.",
+    "pagina": 50
+   },
+   "991": {
+    "texto": "Meta 147. Consolidar o monitoramento e a modernização da gestão rodoviária, mantendo 100% da malha estadual monitorada por sistemas digitais SIG/SGP com inteligência artificial.",
+    "pagina": 50
+   },
+   "1015": {
+    "texto": "Consolidar a operação do Porto de Luís Correia e avançar a implantação da hidrovia do rio Parnaíba como eixo estratégico para o escoamento da produção estadual.",
+    "pagina": 51
+   },
+   "1019": {
+    "texto": "Meta 149. Consolidar as condições operacionais da Hidrovia do Rio Parnaíba.",
+    "pagina": 51
+   },
+   "1022": {
+    "texto": "Meta 150. Consolidar os terminais de minério de ferro, grãos, contêineres e pescados do Porto Piauí.",
+    "pagina": 52
+   },
+   "1352": {
+    "texto": "Meta 197. Apoiar a implantação de projetos estruturantes de mobilidade, drenagem urbana, infraestrutura logística, acessibilidade e qualificação dos espaços públicos nas Regiões Metropolitanas.",
+    "pagina": 67
+   }
+  }
+ }
+}
