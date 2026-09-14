@@ -1,0 +1,882 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "AL",
+ "pagina": "saude",
+ "nome": "Saúde",
+ "titulo": "Saúde: o que cada candidato propõe",
+ "temas": [
+  "saude"
+ ],
+ "origem": {
+  "arquivo": "saude-al.json",
+  "gerado_em": "2026-09-14T08:01:02Z",
+  "exportado_em": "2026-09-14T09:30:18Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-al-jhc-20002553350",
+   "nome": "Jhc",
+   "partido": "PSDB",
+   "numero": "45",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/20017121679",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/20002553350/AL"
+  },
+  {
+   "slug": "governador-al-marcio-jambo-20002552502",
+   "nome": "Márcio Jambo",
+   "partido": "DEMOCRATA",
+   "numero": "35",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/20017113582",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/20002552502/AL"
+  },
+  {
+   "slug": "governador-al-renan-filho-20002553745",
+   "nome": "Renan Filho",
+   "partido": "MDB",
+   "numero": "15",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/20017141344",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/20002553745/AL"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Regionalizar a atenção especializada, garantindo consultas, exames, cirurgias e tratamento na própria região de saúde, reduzindo deslocamentos à capital",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      88,
+      90
+     ],
+     "nota": "Inclui leito de referência e regulação integrada"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      176,
+      186
+     ],
+     "nota": "Programa Saúde da Gente Alagoana com polos regionais"
+    },
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      10
+     ],
+     "nota": "Ampliar acesso a serviços especializados, sem detalhar regionalização"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Implantar polos regionais de especialidades com consultas, exames de apoio diagnóstico e cirurgias eletivas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      186
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Filas e regulação",
+   "proposta": "Reduzir as filas de atendimento na rede estadual de saúde",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      10
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      176,
+      186
+     ],
+     "nota": ""
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      120,
+      122
+     ],
+     "nota": "Via monitoramento do tempo de espera no modelo de gestão regional"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Filas e regulação",
+   "proposta": "Criar regulação estadual única e transparente, com critérios técnicos auditáveis e acompanhamento público da fila",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      166,
+      186,
+      208
+     ],
+     "nota": "Fila Única para acabar com a 'carteirada'"
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      90
+     ],
+     "nota": "Menciona regulação integrada, sem fila única transparente"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Filas e regulação",
+   "proposta": "Realizar mutirões de exames e cirurgias para enfrentar as filas acumuladas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      186
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Saúde digital e tecnologia",
+   "proposta": "Ampliar o uso da telemedicina/telessaúde na rede estadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      11
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      188
+     ],
+     "nota": "Teleconsulta, telediagnóstico e tele-interconsulta"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Saúde digital e tecnologia",
+   "proposta": "Universalizar o prontuário eletrônico integrado na rede de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      11
+     ],
+     "nota": "Informatização completa e integração eletrônica de prontuários"
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      114,
+      115,
+      116,
+      117
+     ],
+     "nota": "Integração à atenção básica municipal e à RNDS, com acesso do paciente"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Saúde digital e tecnologia",
+   "proposta": "Priorizar investimentos em tecnologia médica na rede estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      10,
+      12
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Saúde mental",
+   "proposta": "Expandir e regionalizar a rede de atenção psicossocial, com atendimento à crise e leitos de saúde mental em hospitais gerais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      108,
+      109,
+      110
+     ],
+     "nota": "Com cofinanciamento estadual e prevenção do suicídio"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      206
+     ],
+     "nota": "Urgência psiquiátrica, atenção infantojuvenil e combate ao estigma"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Saúde mental",
+   "proposta": "Implantar CAPS regionais e equipes itinerantes para cobrir os 42 municípios sem CAPS",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      146,
+      206
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Saúde mental",
+   "proposta": "Ampliar o cuidado em rede para pessoas com necessidades decorrentes do uso de álcool e outras drogas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      110
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      206
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Rede materno-infantil",
+   "proposta": "Estruturar uma rede materno-infantil regionalizada, do pré-natal de alto risco ao pós-parto e ao recém-nascido",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      97,
+      98
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      204
+     ],
+     "nota": "Programa Alagoas de Mãe para Mãe, com protocolo estadual de pré-natal"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Rede materno-infantil",
+   "proposta": "Construir um Hospital da Mulher em Arapiraca",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      97
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Rede materno-infantil",
+   "proposta": "Garantir plantão médico e obstétrico nas maternidades do interior, vinculando cada gestante à maternidade de referência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      204
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Oncologia",
+   "proposta": "Organizar a linha de cuidado do câncer por percurso, do rastreamento e diagnóstico precoce ao tratamento e reabilitação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      111,
+      112,
+      113
+     ],
+     "nota": "Inclui infarto, AVC e trauma, com navegação do paciente"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      199
+     ],
+     "nota": "Com tempo entre diagnóstico e primeiro tratamento medido e publicado"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Oncologia",
+   "proposta": "Construir um Hospital do Câncer em Maceió",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      99
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Saúde da pessoa idosa",
+   "proposta": "Criar política estadual de cuidado integral à pessoa idosa",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      105,
+      106,
+      107
+     ],
+     "nota": "Prevenção de quedas, demência, cuidado domiciliar e apoio a cuidadores"
+    },
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      11
+     ],
+     "nota": "Via hospital especializado no atendimento à pessoa idosa"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Saúde da pessoa idosa",
+   "proposta": "Implantar hospital especializado no atendimento à pessoa idosa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      11
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Hospitais e urgência",
+   "proposta": "Construir novos hospitais estaduais para ampliar a capacidade de atendimento",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      10,
+      11
+     ],
+     "nota": "Novo Hospital Evangélico, também para turistas"
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      99,
+      100,
+      102
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Hospitais e urgência",
+   "proposta": "Construir um hospital de traumas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      100
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Hospitais e urgência",
+   "proposta": "Fortalecer e regionalizar a rede de urgência e emergência, com ampliação do SAMU",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      101
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Hospitais e urgência",
+   "proposta": "Implantar e qualificar hospitais de pequeno porte conforme a necessidade de cada região, integrados às linhas de cuidado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      102,
+      103,
+      104
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Gestão e cofinanciamento com municípios",
+   "proposta": "Implantar novo modelo de gestão regional da saúde com planejamento integrado Estado-municípios, cofinanciamento, protocolos únicos e metas de desempenho",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      120,
+      121,
+      122
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      173
+     ],
+     "nota": "Cofinanciamento com padrão de qualidade como eixo transversal"
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Atenção básica",
+   "proposta": "Fortalecer a atenção básica",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      11
+     ],
+     "nota": ""
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      123
+     ],
+     "nota": "Via construção de clínicas da família"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Atenção básica",
+   "proposta": "Construir 80 clínicas da família em Maceió",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      123
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Vigilância e prevenção",
+   "proposta": "Ampliar programas de prevenção de doenças e promoção da qualidade de vida",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      10,
+      12
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Vigilância e prevenção",
+   "proposta": "Recuperar a cobertura vacinal do estado com busca ativa, vacinação itinerante e metas por município",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      141,
+      145,
+      185,
+      195
+     ],
+     "nota": "Programa Imuniza Alagoas, com painel público de cobertura"
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Vigilância e prevenção",
+   "proposta": "Criar política estadual de prevenção de zoonoses e atendimento veterinário público para população de baixa renda e pequenos produtores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": "SUS Animal"
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Medicamentos",
+   "proposta": "Garantir entrega domiciliar de medicamentos de uso continuado e ampliar pontos descentralizados de retirada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      192,
+      193
+     ],
+     "nota": "Programa Remédio em Casa, com foco em idosos e áreas distantes"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Criar política estadual de atração, provimento e fixação de médicos e outros profissionais no interior, com residências regionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      197
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Transporte sanitário",
+   "proposta": "Criar sistema regional de transporte sanitário eletivo, com frota, rotas regulares e organização por regiões de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      188,
+      201
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Pessoa com deficiência e TEA",
+   "proposta": "Criar rede estadual de cuidado à pessoa com TEA, com diagnóstico, acompanhamento e reabilitação em bases regionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      118,
+      119
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-al-jhc-20002553350": {
+   "141": {
+    "texto": "1. Recuperar a cobertura vacinal. Hoje 11 dos 102 municípios atingem a meta de 95% nas nove vacinas do calendário da criança, e 4 não atingem",
+    "pagina": 13
+   },
+   "145": {
+    "texto": "em nenhuma. A frente IMUNIZA ALAGOAS quer ampliar a capacidade de imunização da rede estadual;",
+    "pagina": 13
+   },
+   "146": {
+    "texto": "2. Levar solução regional de saúde mental aos 42 municípios sem CAPS, com CAPS regionais, equipes itinerantes e retaguarda de leito em hospital geral;",
+    "pagina": 14
+   },
+   "166": {
+    "texto": "16. Acabar com a politização da fila da Saúde estadual: acesso com transparência e impessoalidade;",
+    "pagina": 15
+   },
+   "173": {
+    "texto": "Este eixo trata do que acompanha a pessoa: nascer com segurança, crescer com estímulo e proteção, aprender na idade certa, ser atendida quando adoece e ter amparo quando precisar. A criança que não é acompanhada no pré-natal chega pior à creche; a que não é alfabetizada no tempo certo abandona o ensino médio; a família que é atendida cinco vezes por políticas públicas que não se falam permanece no mesmo lugar. Por isso, a gestão integrada de casos, a busca ativa e o cofinanciamento com padrão de qualidade atravessam todas as áreas que dizem respeito a essa dimensão:",
+    "pagina": 15
+   },
+   "176": {
+    "texto": "O Plano de Governo propõe organizar a atenção especializada em rede regional, com regulação transparente e percurso acompanhado do pedido até a alta, para que o alagoano do interior não dependa de viajar à capital para ser atendido. Mais do que isso: vamos acabar com a politização das filas da saúde, isto é, com as “carteiradas”, assim como fizemos em Maceió. O objetivo das propostas é garantir que todo alagoano tenha acesso a atendimento de saúde no tempo certo e o mais perto possível de onde vive, reduzindo filas, deslocamentos até a capital e desigualdades entre a capital e o interior. A prioridade é organizar a rede estadual a partir das regiões de saúde, levando especialistas, exames, cirurgias, medicamentos e profissionais para mais perto da população e criando mecanismos transparentes de regulação e acompanhamento - afinal, o acesso à saúde é um direito de todo alagoano, e não um privilégio concedido por políticos clientelistas.",
+    "pagina": 17
+   },
+   "178": {
+    "texto": "O Saúde da Gente Alagoana será o eixo central dessa agenda, com polos regionais de especialidades, mutirões de exames e cirurgias, regulação única e transparente, ampliação da Telessaúde e transporte sanitário regional. O Remédio em Casa garantirá a entrega de medicamentos de",
+    "pagina": 17
+   },
+   "185": {
+    "texto": "uso continuado e ampliará os pontos de retirada. O Imuniza Alagoas organizará a recuperação das coberturas vacinais com busca ativa, vacinação itinerante e metas por município. Uma política estadual de força de trabalho em saúde buscará atrair e fixar médicos e outros profissionais no interior, articulando incentivos, formação e residências regionais. Na oncologia, o Estado passará a acompanhar o percurso completo do paciente, do diagnóstico ao primeiro tratamento, com tempo de espera medido e publicado. O Alagoas de Mãe para Mãe estruturará uma rede materno-infantil regionalizada, vinculando cada gestante à maternidade de referência e garantindo assistência ao parto, ao pós-parto e ao recém-nascido. A agenda se completa com uma nova política de saúde mental, baseada em CAPS regionais, equipes itinerantes, atenção à crise, cuidado infantojuvenil e ampliação da rede para dependência química, além de a criação de uma política inovadora de prevenção de zoonoses, saúde animal atendimento veterinário público com o SUS Animal voltado à população de baixa renda, para bichos de companhia, e aos rebanhos de micro e pequenos produtores rurais.",
+    "pagina": 17
+   },
+   "186": {
+    "texto": "Saúde da Gente Alagoana: vai regionalizar a atenção especializada em Alagoas para garantir que consultas, exames e cirurgias aconteçam mais perto de onde as pessoas vivem, reduzindo filas e a necessidade de deslocamento até Maceió. O programa prevê a implantação de polos regionais de especialidades, com consultas, exames de apoio diagnóstico e cirurgias eletivas; a realização de mutirões de exames e cirurgias para enfrentar as filas acumuladas; e a criação de uma regulação estadual única e transparente, com critérios auditáveis e acompanhamento público da fila.",
+    "pagina": 18
+   },
+   "188": {
+    "texto": "Ampliação da Telessaúde e do Transporte Sanitário Regional, com expansão das teleconsultas, do telediagnóstico e das tele- interconsultas para conectar pacientes e profissionais do interior a especialistas da rede estadual, reduzindo deslocamentos desnecessários e acelerando diagnósticos e encaminhamentos. A iniciativa será integrada a um sistema regional de transporte sanitário eletivo, com frota adequada, rotas regulares, escalas definidas e organização por regiões de saúde, garantindo o deslocamento de",
+    "pagina": 18
+   },
+   "192": {
+    "texto": "Remédio em Casa. O programa levará medicamentos de uso continuado diretamente à residência de pacientes com maior dificuldade de deslocamento, especialmente idosos, pessoas com deficiência, pacientes com doenças crônicas e moradores de áreas mais distantes dos centros urbanos.",
+    "pagina": 18
+   },
+   "193": {
+    "texto": "Paralelamente, ampliará os pontos descentralizados de retirada em unidades de saúde e equipamentos públicos, com integração à assistência farmacêutica estadual, acompanhamento dos estoques e organização periódica das entregas, eliminando a distância como barreira para o acesso aos medicamentos e reduzindo interrupções no tratamento por falta de transporte, deslocamentos longos ou dificuldade de acesso às unidades de dispensação.",
+    "pagina": 19
+   },
+   "195": {
+    "texto": "Imuniza Alagoas, para a recuperação da cobertura vacinal. Trata-se de um pacto estadual de recuperação vacinal com sala de situação por município, busca ativa integrada entre escola, unidade básica de saúde e Cadastro Único, vacinação itinerante em áreas rurais e de difícil acesso, apoio logístico e cadeia de frio, meta anual por imunizante e painel público de cobertura municipal.",
+    "pagina": 19
+   },
+   "197": {
+    "texto": "Ampliação do número de médicos no interior: política estadual de atração, provimento, fixação e formação, com dimensionamento por região de saúde, seleção permanente, incentivo de interiorização, residências médicas e multiprofissionais nos polos regionais, formação de especialistas e vínculo com prazo de permanência declarado.",
+    "pagina": 19
+   },
+   "199": {
+    "texto": "Tratamento contra o câncer com tempo medido. Ampliação do acesso ao tratamento oncológico organizada por percurso: rastreamento, confirmação diagnóstica, habilitação de serviços de referência, radioterapia, quimioterapia e cirurgia oncológica, com acompanhamento público do tempo entre o diagnóstico e o início do primeiro tratamento.",
+    "pagina": 19
+   },
+   "201": {
+    "texto": "pacientes que precisem realizar consultas, exames, tratamentos e procedimentos fora de seus municípios, com prioridade para áreas mais distantes dos polos de atendimento especializado.",
+    "pagina": 19
+   },
+   "204": {
+    "texto": "Alagoas de Mãe para Mãe. Implementação de rede materno-infantil regionalizada para que nenhuma gestante de risco tenha de procurar leito em outra região que não a sua, com criação de protocolo estadual de pré-natal vinculando a gestante à maternidade de referência e garantia de plantão médico e obstétrico nas maternidades do interior, além de linha de cuidado para a mulher no pós-parto e o recém-nascido.",
+    "pagina": 19
+   },
+   "206": {
+    "texto": "Saúde Mental: garantir cuidado em saúde mental de base territorial e regional em todo o estado, com atenção à crise e sem estigma, com a implementação de uma rede de CAPS regionais e equipes itinerantes de atendimento psicossocial, além do estabelecimento de urgência psiquiátrica e leitos de saúde mental em unidades hospitalares. Também será expandida a atenção especializada infantojuvenil e o apoio psicossocial à escola, com apoio a famílias cuidadoras, reinserção social de pacientes pelo trabalho e campanha permanente contra o estigma, bem como a ampliação do cuidado em rede para a dependência química.",
+    "pagina": 20
+   },
+   "208": {
+    "texto": "Fila Única e Transparente da Saúde. Acabar com a “carteirada” e garantir que ninguém passe na frente por influência política, amizade ou indicação. Consultas, exames e cirurgias reguladas pelo Estado terão fila única, critérios técnicos e ordem de prioridade claramente definidos, com acompanhamento pelo cidadão e mecanismos permanentes de auditoria. Casos urgentes continuarão tendo prioridade por razões médicas, nunca por privilégio. O objetivo é assegurar que o acesso à saúde pública seja decidido pela necessidade de cada paciente, e não por quem ele conhece.",
+    "pagina": 20
+   }
+  },
+  "governador-al-marcio-jambo-20002552502": {
+   "10": {
+    "texto": "SAÚDE A saúde será tratada como prioridade absoluta do Governo. Nossa gestão trabalhará para reduzir filas de atendimento, ampliar o acesso aos serviços especializados, investir em tecnologia e fortalecer a prevenção de doenças. Pretendemos construir um sistema de saúde mais eficiente, moderno e humanizado, garantindo atendimento digno tanto aos alagoanos quanto aos visitantes do Estado. Propostas I Construção de um novo",
+    "pagina": 2
+   },
+   "11": {
+    "texto": "Hospital Evangélico para atendimento da população alagoana e dos turistas; I Implantação de Hospital especializado no atendimento à pessoa idosa; I Informatização completa da rede estadual de saúde; I Integração eletrônica dos prontuários médicos; I Ampliação do uso da telemedicina; I Fortalecimento da atenção básica; I",
+    "pagina": 2
+   },
+   "12": {
+    "texto": "Ampliação dos programas preventivos; I Prioridade para investimentos em tecnologia médica; I Programas permanentes de promoção da qualidade de vida.",
+    "pagina": 2
+   }
+  },
+  "governador-al-renan-filho-20002553745": {
+   "88": {
+    "texto": "OBJETIVO 1 · REGIONALIZAR A ATENÇÃO ESPECIALIZADA E INTEGRAR A REDE",
+    "pagina": 7
+   },
+   "90": {
+    "texto": "Garantir consulta, exame, tratamento, cirurgia e leito de referência na própria região de saúde, com regulação integrada e continuidade do cuidado.",
+    "pagina": 7
+   },
+   "97": {
+    "texto": "1. IMPLANTAR O HOSPITAL DA MULHER EM ARAPIRACA E FORTALECER A REDE ESTADUAL DE ATENÇÃO",
+    "pagina": 7
+   },
+   "98": {
+    "texto": "MATERNO-INFANTIL, DO PRÉ-NATAL DE ALTO RISCO AO PUERPÉRIO E AOS PRIMEIROS ANOS DA CRIANÇA.",
+    "pagina": 8
+   },
+   "99": {
+    "texto": "2. CONSTRUIR O HOSPITAL DO CÂNCER EM MACEIÓ",
+    "pagina": 8
+   },
+   "100": {
+    "texto": "3. CONSTRUIR UM HOSPITAL DE TRAUMAS",
+    "pagina": 8
+   },
+   "101": {
+    "texto": "4. FORTALECER E REGIONALIZAR A REDE DE URGÊNCIA E EMERGÊNCIA, COM AMPLIAÇÃO DO SAMU",
+    "pagina": 8
+   },
+   "102": {
+    "texto": "5. IMPLANTAR E QUALIFICAR HOSPITAIS DE PEQUENO PORTE, DE ACORDO COM AS NECESSIDADES DE CADA",
+    "pagina": 8
+   },
+   "103": {
+    "texto": "REGIÃO, INTEGRADOS ÀS LINHAS DE CUIDADO MATERNO-INFANTIL, DE URGÊNCIA E DE CUIDADOS",
+    "pagina": 8
+   },
+   "104": {
+    "texto": "CONTINUADOS.",
+    "pagina": 8
+   },
+   "105": {
+    "texto": "6. CRIAR PROGRAMA PARA PROMOVER O CUIDADO INTEGRAL DA PESSOA IDOSA, COM PREVENÇÃO DE QUEDAS,",
+    "pagina": 8
+   },
+   "106": {
+    "texto": "ATENÇÃO À DEMÊNCIA, CUIDADO DOMICILIAR, APOIO AOS CUIDADORES E PROMOÇÃO DO ENVELHECIMENTO",
+    "pagina": 8
+   },
+   "107": {
+    "texto": "ATIVO.",
+    "pagina": 8
+   },
+   "108": {
+    "texto": "7. INTEGRAR E EXPANDIR A REDE DE ATENÇÃO PSICOSSOCIAL, COM COFINANCIAMENTO ESTADUAL,",
+    "pagina": 8
+   },
+   "109": {
+    "texto": "ATENDIMENTO REGIONALIZADO, RESPOSTA ÀS CRISES, LEITOS EM HOSPITAIS GERAIS, PREVENÇÃO DO SUICÍDIO",
+    "pagina": 8
+   },
+   "110": {
+    "texto": "E CUIDADO ÀS PESSOAS COM NECESSIDADES DECORRENTES DO USO DE ÁLCOOL E OUTRAS DROGAS.",
+    "pagina": 8
+   },
+   "111": {
+    "texto": "8. REGIONALIZAR AS LINHAS DE CUIDADO DO CÂNCER, DO INFARTO, DO AVC E DO TRAUMA, COM PREVENÇÃO,",
+    "pagina": 8
+   },
+   "112": {
+    "texto": "DIAGNÓSTICO PRECOCE, TRATAMENTO, REABILITAÇÃO, CUIDADOS PALIATIVOS E NAVEGAÇÃO DO PACIENTE",
+    "pagina": 8
+   },
+   "113": {
+    "texto": "DURANTE TODA A JORNADA DE CUIDADO.",
+    "pagina": 8
+   },
+   "114": {
+    "texto": "9. UNIVERSALIZAR O PRONTUÁRIO ELETRÔNICO NA REDE ESTADUAL, INTEGRADO À ATENÇÃO BÁSICA DOS",
+    "pagina": 8
+   },
+   "115": {
+    "texto": "MUNICÍPIOS E À REDE NACIONAL DE DADOS EM",
+    "pagina": 8
+   },
+   "116": {
+    "texto": "SAÚDE, COM SEGURANÇA DAS INFORMAÇÕES E ACESSO DO",
+    "pagina": 8
+   },
+   "117": {
+    "texto": "PACIENTE AO SEU HISTÓRICO.",
+    "pagina": 8
+   },
+   "118": {
+    "texto": "10. CRIAR A REDE ESTADUAL DE CUIDADO À PESSOA COM TEA, COM DIAGNÓSTICO, ACOMPANHAMENTO E",
+    "pagina": 8
+   },
+   "119": {
+    "texto": "REABILITAÇÃO EM BASES REGIONAIS",
+    "pagina": 8
+   },
+   "120": {
+    "texto": "11. IMPLANTAR UM NOVO MODELO DE GESTÃO REGIONAL DA SAÚDE, COM PLANEJAMENTO INTEGRADO ENTRE",
+    "pagina": 8
+   },
+   "121": {
+    "texto": "ESTADO E MUNICÍPIOS, COFINANCIAMENTO, PROTOCOLOS ASSISTENCIAIS ÚNICOS, METAS DE DESEMPENHO E",
+    "pagina": 8
+   },
+   "122": {
+    "texto": "MONITORAMENTO DA QUALIDADE, DA SEGURANÇA DO PACIENTE E DO TEMPO DE ESPERA.",
+    "pagina": 8
+   },
+   "123": {
+    "texto": "12. CONSTRUIR 80 CLÍNICAS DA FAMÍLIA EM MACEIÓ.",
+    "pagina": 8
+   }
+  }
+ }
+}

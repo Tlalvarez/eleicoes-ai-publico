@@ -1,0 +1,872 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "AL",
+ "pagina": "seguranca",
+ "nome": "Segurança pública",
+ "titulo": "Segurança pública: o que cada candidato propõe",
+ "temas": [
+  "seguranca"
+ ],
+ "origem": {
+  "arquivo": "seguranca-al.json",
+  "gerado_em": "2026-09-14T07:58:12Z",
+  "exportado_em": "2026-09-14T09:30:18Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-al-jhc-20002553350",
+   "nome": "Jhc",
+   "partido": "PSDB",
+   "numero": "45",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/20017121679",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/20002553350/AL"
+  },
+  {
+   "slug": "governador-al-marcio-jambo-20002552502",
+   "nome": "Márcio Jambo",
+   "partido": "DEMOCRATA",
+   "numero": "35",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/20017113582",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/20002552502/AL"
+  },
+  {
+   "slug": "governador-al-renan-filho-20002553745",
+   "nome": "Renan Filho",
+   "partido": "MDB",
+   "numero": "15",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/20017141344",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/20002553745/AL"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Inteligência e tecnologia",
+   "proposta": "Criar centro/rede estadual integrada de videomonitoramento, dados e inteligência para prevenção e resposta criminal",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      199,
+      200,
+      201,
+      202,
+      203
+     ],
+     "nota": "Centro Integrado de Operações e Inteligência reunindo SAMU, Detran, Defesa Civil e guardas"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      276,
+      277,
+      278,
+      279
+     ],
+     "nota": "Programa Olho Vivo, conectando câmeras estaduais e municipais em tempo real"
+    },
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      21,
+      22
+     ],
+     "nota": "Monitoramento eletrônico, drones e Programa Pindorama de integração tecnológica"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Inteligência e tecnologia",
+   "proposta": "Empregar inteligência artificial no combate ao crime",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      21
+     ],
+     "nota": ""
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      206
+     ],
+     "nota": "Programa \"IA contra o Crime\""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Interiorizar e regionalizar delegacias e serviços especializados de atendimento à mulher, com funcionamento 24 horas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      210,
+      211
+     ],
+     "nota": "Delegacias 24h também para pessoa idosa e pessoa com deficiência nas regionais"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      151,
+      271,
+      289
+     ],
+     "nota": "Programa Elas sem Medo amplia número e horário das Delegacias da Mulher no interior"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Ampliar o patrulhamento e o monitoramento do cumprimento de medidas protetivas para mulheres em risco",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      215,
+      216
+     ],
+     "nota": "Regionalização da Patrulha Maria da Penha"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      271,
+      289
+     ],
+     "nota": "Patrulhas de proteção com protocolo único de avaliação de risco"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Criar equipamentos integrados de acolhimento e proteção à mulher vítima de violência (centros integrados e casas-abrigo)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      195
+     ],
+     "nota": "Centros Integrados de Proteção à Mulher"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      271,
+      289
+     ],
+     "nota": "Casas-abrigo e acolhimento sigiloso"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Adotar o acompanhamento intensivo e transparente do indicador de feminicídio com meta de redução",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      196,
+      197,
+      198
+     ],
+     "nota": "Destacar o feminicídio nos números oficiais da segurança pública"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      151
+     ],
+     "nota": "Meta de redução da taxa de feminicídio"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Garantir orientação jurídica e trilha de autonomia econômica (renda, qualificação e crédito) para mulheres que rompem o ciclo de violência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      271,
+      289,
+      290
+     ],
+     "nota": "Prioridade no Banco da Mulher Alagoana"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Crime organizado e territórios",
+   "proposta": "Concentrar prevenção, inteligência e capacidade de resposta nos territórios de maior incidência criminal",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      93,
+      94
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      149,
+      150,
+      287
+     ],
+     "nota": "Programa Territórios da Paz, com critério estatístico público, plano, metas e prazo"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Crime organizado e territórios",
+   "proposta": "Integrar as forças de segurança estaduais e municipais com compartilhamento de dados e gestão por região",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      20
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      272,
+      273
+     ],
+     "nota": "Programa Força Alagoas, com Gabinete de Gestão Integrada técnico e metas por região"
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      199,
+      200
+     ],
+     "nota": "Integração inclui guardas municipais no centro integrado"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Crime organizado e territórios",
+   "proposta": "Criar estrutura de inteligência patrimonial, financeira e penitenciária voltada ao enfrentamento das facções",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      202
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Crime organizado e territórios",
+   "proposta": "Ampliar a cobertura dos Conselhos/Centros Integrados de Segurança Pública (CISPs)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      227
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Policiamento e efetivo",
+   "proposta": "Ampliar o efetivo das forças de segurança (policiais militares, civis e bombeiros)",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      20
+     ],
+     "nota": "Contratação de novos policiais militares, civis e bombeiros"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      266
+     ],
+     "nota": "Recomposição de efetivos"
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      205
+     ],
+     "nota": "Ampliação via criação de carreira administrativa que libera policiais para as ruas"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Policiamento e efetivo",
+   "proposta": "Modernizar equipamentos e viaturas das forças de segurança",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      21
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      273
+     ],
+     "nota": "Inclui apoio com equipamentos e viaturas aos municípios"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Policiamento e efetivo",
+   "proposta": "Ampliar a presença policial em todas as regiões do estado, com foco no interior",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      21
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      273,
+      287
+     ],
+     "nota": "Presença territorial prioritária no interior"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Policiamento e efetivo",
+   "proposta": "Instalar unidade de operações especiais com companhia de choque na região do Agreste",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      212,
+      213
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Valorização e formação profissional",
+   "proposta": "Instituir programa de valorização dos profissionais da segurança pública",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      20
+     ],
+     "nota": ""
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      222
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Valorização e formação profissional",
+   "proposta": "Criar academia estadual de formação com capacitação padronizada para policiais, bombeiros e guardas municipais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      273
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Valorização e formação profissional",
+   "proposta": "Criar cargos e carreira para as atividades administrativas dos órgãos de segurança pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      205
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Investigação e perícia",
+   "proposta": "Fortalecer a perícia e a Polícia Científica",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      21
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      273,
+      274
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Investigação e perícia",
+   "proposta": "Reduzir o estoque de inquéritos policiais e processos investigativos em até três anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      21
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Investigação e perícia",
+   "proposta": "Criar centro estadual de enfrentamento aos crimes cibernéticos, com investigação digital, perícia especializada e atendimento às vítimas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      207,
+      208,
+      209
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Presídios e ressocialização",
+   "proposta": "Fortalecer o sistema penitenciário e implantar política de ressocialização e apoio à reinserção social de presos e egressos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      226
+     ],
+     "nota": ""
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      281,
+      282,
+      286
+     ],
+     "nota": "Programa Recomeço, com educação, trabalho, inteligência penitenciária e monitoramento da reincidência"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Trânsito e segurança viária",
+   "proposta": "Implantar política estadual de segurança no trânsito das rodovias estaduais para reduzir mortes",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      224
+     ],
+     "nota": "Programa Estadual de Trânsito Seguro"
+    },
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      375
+     ],
+     "nota": "Alagoas Vida no Trânsito, com mapa de trechos críticos e avaliação antes/depois"
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Outras políticas de prevenção",
+   "proposta": "Implementar política integrada de segurança escolar com protocolo único entre escola, polícia, saúde e assistência social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      217,
+      218,
+      219,
+      220,
+      221
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Outras políticas de prevenção",
+   "proposta": "Implantar política estadual de segurança no campo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      225
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Outras políticas de prevenção",
+   "proposta": "Fortalecer a atuação do Corpo de Bombeiros Militar em todo o estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      223
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Outras políticas de prevenção",
+   "proposta": "Articular prevenção social (escola, esporte, cultura, emprego e assistência) com a ação policial para evitar o recrutamento de jovens pelo crime",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      287
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Metas e transparência",
+   "proposta": "Fixar metas públicas de redução da criminalidade por região, com critérios técnicos e monitoramento de resultados",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      149,
+      150,
+      287
+     ],
+     "nota": ""
+    },
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": "Monitoramento do tempo de resposta às ocorrências"
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-al-jhc-20002553350": {
+   "149": {
+    "texto": "5. Reduzir a taxa de crimes em cada uma das quatro RISPs (Regiões",
+    "pagina": 14
+   },
+   "150": {
+    "texto": "Integradas de Segurança Pública), com Territórios da Paz definidos por critério técnico publicado;",
+    "pagina": 14
+   },
+   "151": {
+    "texto": "6. Reduzir a taxa de feminicídio e interiorizar delegacias e serviços especializados;",
+    "pagina": 14
+   },
+   "266": {
+    "texto": "O Força Alagoas será o eixo de integração da política de segurança, com gestão pelas quatro Regiões Integradas de Segurança Pública, compartilhamento de dados entre Estado e municípios e atuação prioritária nos Territórios da Paz. O Olho Vivo ampliará e integrará câmeras, dados e inteligência, enquanto a Academia de Formação das Forças de Segurança estabelecerá padrões de capacitação para policiais, bombeiros e guardas municipais. A agenda inclui ainda recomposição de efetivos, equipamentos, viaturas, fortalecimento da perícia e da Polícia Científica e o Recomeço, voltado à ressocialização e à redução da reincidência no sistema prisional. O Elas sem Medo organizará uma frente própria de enfrentamento à violência contra a",
+    "pagina": 25
+   },
+   "271": {
+    "texto": "mulher, com delegacias e serviços especializados regionalizados, casas-abrigo, patrulhamento e monitoramento de medidas protetivas, acesso à justiça e uma trilha de autonomia econômica para que nenhuma mulher permaneça exposta à violência por falta de proteção ou independência financeira.",
+    "pagina": 25
+   },
+   "272": {
+    "texto": "Programa Força Alagoas. Parceria permanente entre",
+    "pagina": 26
+   },
+   "273": {
+    "texto": "Estado e municípios para integrar as forças de segurança e ampliar a capacidade de enfrentamento ao crime organizado, especialmente no interior. O programa criará um Gabinete de Gestão Integrada de caráter técnico, promoverá o compartilhamento de dados entre as forças estaduais e municipais e estabelecerá protocolos, metas e responsabilidades por região. Também prevê uma Academia de Formação das Forças de Segurança, com capacitação padronizada para policiais, bombeiros e guardas municipais, além de apoio aos municípios com equipamentos, viaturas, integração de sistemas e fortalecimento da perícia e da Polícia",
+    "pagina": 26
+   },
+   "274": {
+    "texto": "Científica",
+    "pagina": 26
+   },
+   "276": {
+    "texto": "Olho",
+    "pagina": 26
+   },
+   "277": {
+    "texto": "Vivo.",
+    "pagina": 26
+   },
+   "278": {
+    "texto": "Implantação de uma rede estadual integrada de videomonitoramento, inteligência e análise de dados para prevenir crimes, identificar suspeitos e ampliar a capacidade de resposta das forças de segurança.",
+    "pagina": 26
+   },
+   "279": {
+    "texto": "Câmeras estaduais e municipais serão conectadas a centros integrados de monitoramento, com compartilhamento de imagens e informações em tempo real e expansão prioritária para municípios e territórios com maior incidência criminal. O programa também utilizará tecnologia e análise de dados para orientar o patrulhamento, a investigação e o cumprimento de mandados, tendo a Central Integrada de Monitoramento de Maceió como modelo.",
+    "pagina": 26
+   },
+   "281": {
+    "texto": "Recomeço.",
+    "pagina": 26
+   },
+   "282": {
+    "texto": "Política estadual de ressocialização para reduzir a reincidência criminal e impedir que o sistema prisional continue funcionando como espaço de recrutamento pelo crime organizado. O programa ampliará educação, saúde, qualificação profissional e oportunidades de trabalho para pessoas privadas de liberdade, combinadas com inteligência penitenciária e melhoria da infraestrutura das unidades. Para quem deixa o sistema prisional, haverá",
+    "pagina": 26
+   },
+   "286": {
+    "texto": "acompanhamento do egresso, regularização documental, apoio para ingresso no mercado de trabalho e ações de reinserção social, com monitoramento permanente das taxas de reincidência.",
+    "pagina": 26
+   },
+   "287": {
+    "texto": "Programa Territórios da Paz. Concentração da presença do Estado nos bairros e municípios que apresentam os maiores índices de violência letal, definidos periodicamente por critérios estatísticos públicos. Cada território terá plano de ação, metas, prazo e responsável, reunindo inteligência, policiamento, investigação, perícia e videomonitoramento com políticas de prevenção social. Escola, esporte, cultura, juventude, iluminação pública, assistência social, qualificação e emprego atuarão de forma integrada para recuperar territórios vulneráveis e impedir o avanço das facções, com prioridade para o interior.",
+    "pagina": 27
+   },
+   "289": {
+    "texto": "Programa Elas sem Medo. Rede estadual integrada de prevenção e enfrentamento à violência contra a mulher, com proteção que funcione em todas as regiões de Alagoas e não dependa do deslocamento até a capital. O programa ampliará o número e o horário de atendimento - para 24 horas por dia - das Delegacias da Mulher no interior, além de criar casas-abrigo e acolhimento sigiloso, patrulhas de proteção e monitoramento de medidas protetivas, com protocolo único de avaliação de risco entre segurança, saúde e assistência social. Também garantirá orientação jurídica e acompanhamento dos casos e criará uma trilha de autonomia econômica, com prioridade no Banco da Mulher",
+    "pagina": 27
+   },
+   "290": {
+    "texto": "Alagoana, qualificação profissional e acesso ao trabalho para mulheres que precisam romper o ciclo de violência e reconstruir suas vidas com independência.",
+    "pagina": 27
+   },
+   "375": {
+    "texto": "Alagoas Vida no Trânsito. Política estadual de segurança viária para reduzir mortes e feridos graves nas rodovias e travessias urbanas de Alagoas. O programa criará um mapa estadual de trechos críticos a partir dos registros de acidentes e concentrará nesses locais intervenções de engenharia, reforço de sinalização, travessias urbanas e escolares seguras, fiscalização e integração com o atendimento pré-hospitalar. As campanhas educativas também serão orientadas pelo perfil real dos acidentes, e cada intervenção terá seus resultados acompanhados antes e depois da execução, permitindo medir efetivamente a redução da letalidade no trânsito.",
+    "pagina": 36
+   }
+  },
+  "governador-al-marcio-jambo-20002552502": {
+   "20": {
+    "texto": "SEGURANÇA PÚBLICA A segurança pública será baseada em inteligência, tecnologia, valorização profissional e integração das forças policiais. O objetivo é combater o crime organizado, reduzir os índices de violência e oferecer maior sensação de segurança à população. Propostas I Contratação de novos policiais militares, civis e bombeiros;",
+    "pagina": 3
+   },
+   "21": {
+    "texto": "I Modernização dos equipamentos das forças de segurança; I Ampliação do uso de drones, monitoramento eletrônico e inteligência artificial; I Redução do estoque de inquéritos policiais e processos investigativos em até três anos; I Fortalecimento da Polícia Científica; I Ampliação da presença policial em todas as regiões do Estado; I",
+    "pagina": 3
+   },
+   "22": {
+    "texto": "Implantação do Programa Pindorama para integração tecnológica da segurança pública.",
+    "pagina": 3
+   }
+  },
+  "governador-al-renan-filho-20002553745": {
+   "93": {
+    "texto": "OBJETIVO 3 · PROTEGER A VIDA E REDUZIR AS VIOLÊNCIAS",
+    "pagina": 7
+   },
+   "94": {
+    "texto": "Reduzir a violência letal e enfrentar a violência contra as mulheres e os grupos mais vulneráveis, concentrando prevenção, inteligência e capacidade de resposta nos territórios de maior incidência.",
+    "pagina": 7
+   },
+   "195": {
+    "texto": "1. CONSTRUIR CENTROS INTEGRADOS DE PROTEÇÃO À MULHER",
+    "pagina": 10
+   },
+   "196": {
+    "texto": "2. DESTACAR O INDICADOR DE FEMINICÍDIO NOS NÚMEROS DA SEGURANÇA PÚBLICA PARA UM",
+    "pagina": 10
+   },
+   "197": {
+    "texto": "ACOMPANHAMENTO MAIS INTENSIVO, TRANSPARÊNCIA E ESTRATÉGIA DE ENFRENTAMENTO",
+    "pagina": 10
+   },
+   "198": {
+    "texto": "INTERMITENTE.",
+    "pagina": 10
+   },
+   "199": {
+    "texto": "3. CRIAR O CENTRO INTEGRADO DE OPERAÇÕES E INTELIGÊNCIA, REUNINDO OS ÓRGÃOS DE SEGURANÇA",
+    "pagina": 10
+   },
+   "200": {
+    "texto": "PÚBLICA, SAMU, DETRAN, DEFESA CIVIL E GUARDAS MUNICIPAIS, COM INTEGRAÇÃO DE DADOS,",
+    "pagina": 10
+   },
+   "201": {
+    "texto": "VIDEOMONITORAMENTO, DISQUE-DENÚNCIA REGIONALIZADO, COMANDO DE CRISES, INTELIGÊNCIA",
+    "pagina": 10
+   },
+   "202": {
+    "texto": "PATRIMONIAL, FINANCEIRA E PENITENCIÁRIA PARA O ENFRENTAMENTO AO CRIME ORGANIZADO E",
+    "pagina": 10
+   },
+   "203": {
+    "texto": "MONITORAMENTO DO TEMPO DE RESPOSTA ÀS OCORRÊNCIAS.",
+    "pagina": 10
+   },
+   "204": {
+    "texto": "4. CRIAR CARGOS E CARREIRA PARA AS ATIVIDADES ADMINISTRATIVAS DOS ÓRGÃOS DE SEGURANÇA",
+    "pagina": 10
+   },
+   "205": {
+    "texto": "PÚBLICA, LIBERANDO POLICIAIS PARA AS ATIVIDADES OPERACIONAIS E AMPLIANDO O EFETIVO NAS RUAS.",
+    "pagina": 10
+   },
+   "206": {
+    "texto": "5. IMPLANTAR O PROGRAMA IA CONTRA O CRIME",
+    "pagina": 10
+   },
+   "207": {
+    "texto": "6. CRIAR O CENTRO ESTADUAL DE ENFRENTAMENTO AOS CRIMES CIBERNÉTICOS, COM INVESTIGAÇÃO",
+    "pagina": 10
+   },
+   "208": {
+    "texto": "DIGITAL, PERÍCIA ESPECIALIZADA, ATENDIMENTO ÀS VÍTIMAS E RESPOSTA A FRAUDES, EXTORSÕES,",
+    "pagina": 10
+   },
+   "209": {
+    "texto": "VIOLÊNCIA DIGITAL E CRIMES CONTRA CRIANÇAS E ADOLESCENTES.",
+    "pagina": 10
+   },
+   "210": {
+    "texto": "7. IMPLANTAR DELEGACIAS ESPECIALIZADAS COM ATENDIMENTO 24 HORAS À MULHER, À PESSOA IDOSA E",
+    "pagina": 10
+   },
+   "211": {
+    "texto": "À PESSOA COM DEFICIÊNCIA NAS REGIONAIS DE SEGURANÇA PÚBLICA",
+    "pagina": 10
+   },
+   "212": {
+    "texto": "8. INSTALAR UMA UNIDADE DE OPERAÇÕES ESPECIAIS, COM COMPANHIA DE CHOQUE, NA REGIÃO DO",
+    "pagina": 10
+   },
+   "213": {
+    "texto": "AGRESTE.",
+    "pagina": 10
+   },
+   "215": {
+    "texto": "9. REGIONALIZAR A PATRULHA MARIA DA PENHA, AMPLIANDO O ACOMPANHAMENTO DAS MULHERES COM",
+    "pagina": 10
+   },
+   "216": {
+    "texto": "MEDIDAS PROTETIVAS E A INTEGRAÇÃO COM A REDE DE ATENDIMENTO E PROTEÇÃO.",
+    "pagina": 11
+   },
+   "217": {
+    "texto": "10. IMPLEMENTAR UMA POLÍTICA INTEGRADA DE",
+    "pagina": 11
+   },
+   "218": {
+    "texto": "SEGURANÇA ESCOLAR, COM PROTOCOLO ÚNICO ENTRE",
+    "pagina": 11
+   },
+   "219": {
+    "texto": "ESCOLA, POLÍCIA, SAÚDE E ASSISTÊNCIA SOCIAL, FORMAÇÃO DAS EQUIPES, CANAL DE ALERTA,",
+    "pagina": 11
+   },
+   "220": {
+    "texto": "PREVENÇÃO DA VIOLÊNCIA, MONITORAMENTO DE AMEAÇAS E USO RESPONSÁVEL DE TECNOLOGIA E",
+    "pagina": 11
+   },
+   "221": {
+    "texto": "INTELIGÊNCIA ARTIFICIAL.",
+    "pagina": 11
+   },
+   "222": {
+    "texto": "11. INSTITUIR O PROGRAMA DE VALORIZAÇÃO DOS PROFISSIONAIS DA SEGURANÇA PÚBLICA.",
+    "pagina": 11
+   },
+   "223": {
+    "texto": "12. FORTALECER A ATUAÇÃO DO CORPO DE BOMBEIROS MILITAR DE ALAGOAS EM TODO O ESTADO.",
+    "pagina": 11
+   },
+   "224": {
+    "texto": "13. IMPLANTAR PROGRAMA ESTADUAL DE TRÂNSITO SEGURO NAS RODOVIAS ESTADUAIS.",
+    "pagina": 11
+   },
+   "225": {
+    "texto": "14. IMPLANTAR A POLÍTICA ESTADUAL DE SEGURANÇA NO CAMPO",
+    "pagina": 11
+   },
+   "226": {
+    "texto": "15. FORTALECER O SISTEMA PENITENCIÁRIO E FORTALECER O APOIO À REINSERÇÃO SOCIAL",
+    "pagina": 11
+   },
+   "227": {
+    "texto": "16. AMPLIAR A COBERTURA DOS CISPS",
+    "pagina": 11
+   }
+  }
+ }
+}
