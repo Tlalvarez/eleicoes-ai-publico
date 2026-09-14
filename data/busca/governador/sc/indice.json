@@ -1,0 +1,19 @@
+{
+ "contrato": "busca/1",
+ "cargo": "governador",
+ "uf": "SC",
+ "modelo": "jina-embeddings-v3",
+ "dimensoes": 256,
+ "quantizacao": "int8 (unitário × 127)",
+ "task_consulta": "retrieval.query",
+ "propostas": 655,
+ "blocos": 1993,
+ "com_sinonimos": 655,
+ "documentos_sha256": "9bcc05a923dc76ab20f32770679f2d2a1550e741b6434ad485be3e66a48716da",
+ "bytes": {
+  "documentos.json": 1069026,
+  "vetores-propostas.bin": 167680,
+  "vetores-blocos.bin": 510208
+ },
+ "exportado_em": "2026-09-14T07:02:21Z"
+}
