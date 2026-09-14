@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "ambiente-energia-pe.json",
-  "gerado_em": "2026-09-14T05:14:01Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "gerado_em": "2026-09-14T19:08:59Z",
+  "exportado_em": "2026-09-14T19:15:24Z"
  },
  "candidatos": [
   {
@@ -58,17 +58,613 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Implantar política estadual de economia circular e resíduos sólidos que reduza o volume enterrado em aterros, ampliando reciclagem, compostagem e reaproveitamento",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Expandir a geração de energias renováveis no estado, atraindo investimentos e gerando empregos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": ""
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      968
+     ],
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      148
+     ],
+     "nota": "Expansão subordinada à proteção ambiental e à consulta às comunidades"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Condicionar grandes projetos de energia, mineração e infraestrutura a critérios socioambientais rigorosos, consulta às comunidades e distribuição dos benefícios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      122,
+      148,
+      149
+     ],
+     "nota": "Projetos não podem comprometer água, alimentos, Caatinga e modos de vida"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Criar programa estadual de energia solar comunitária, com sistemas descentralizados em residências, associações, cooperativas e unidades da agricultura familiar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      149
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Expandir a rede de distribuição de gás natural para uso industrial, comercial e residencial",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      469
+     ],
+     "nota": "Foco em polos industriais e interiorização"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      977,
+      979
+     ],
+     "nota": "Gás como combustível estratégico de transição"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Levar gás natural a regiões sem rede encanada por meio de regaseificação e gasoduto virtual de GNC",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      469
+     ],
+     "nota": "Estações de regaseificação"
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      736,
+      793,
+      794
+     ],
+     "nota": "Manter e ampliar o gasoduto virtual de GNC no Araripe"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Promover a transição energética do Polo Gesseiro do Araripe, substituindo a lenha nativa por gás natural e fontes de maior eficiência",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      534
+     ],
+     "nota": "Inclui solar e produção local de energia"
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      791,
+      792
+     ],
+     "nota": "Meta de eliminar os 73% da matriz térmica em lenha"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      980
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Conceder subsídios de ICMS para equalizar o custo do gás natural comprimido ao da lenha extraída ilegalmente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      795
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Rastrear a origem da biomassa lenhosa consumida pelas calcinadoras para coibir o extrativismo clandestino",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      797,
+      799
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Financiar planos de manejo florestal sustentável em talhadia simples para assentamentos e pequenos produtores do Araripe",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      738,
+      796,
+      798
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Ampliar a infraestrutura de transmissão e conexão elétrica, integrando os polos de geração do Sertão a Suape e às áreas industriais do litoral",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      584,
+      585,
+      587
+     ],
+     "nota": "Articulação com ONS, Aneel e MME para leilões de transmissão"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      952,
+      954
+     ],
+     "nota": "Integração Sertão–Agreste–Litoral junto às concessionárias"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Apoiar sistemas de armazenamento de energia e gestão de demanda para ampliar a flexibilidade da rede",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      955,
+      968
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Atrair indústrias eletrointensivas e novas cadeias produtivas aproveitando a energia limpa e competitiva gerada no estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      957,
+      958
+     ],
+     "nota": "Plataforma Energética como instrumento de captação"
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      586
+     ],
+     "nota": "Uso da margem da subestação Suape II como âncora"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Consolidar um hub estadual de combustíveis sustentáveis com Suape como âncora industrial e portuária",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      962,
+      963,
+      964
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Avançar na descarbonização da mobilidade, com cadeias de baterias, sistemas de recarga e frota elétrica",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      953,
+      966
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Consolidar uma governança estadual de energia baseada em dados, planejamento de longo prazo e plataformas de inteligência territorial",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      958,
+      970
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Conceder isenção de ICMS a equipamentos de micro e minigeração distribuída solar e eólica instalados em plantas de saneamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      805
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Reestatizar a distribuidora de energia do estado, encerrando o contrato com a concessionária privada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      8
+     ],
+     "nota": "Reestatização da CELPE e fim do contrato com a Neoenergia"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Ampliar a rede estadual de unidades de conservação e fortalecer sua gestão",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      522
+     ],
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      555
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Implantar gestão compartilhada das unidades de conservação de uso sustentável e apoiar atividades econômicas sustentáveis geradoras de renda nas comunidades do entorno",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      522
+     ],
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      555,
+      557
+     ],
+     "nota": "Agroecologia, turismo de base comunitária e bioeconomia"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Instituir política estadual de conservação da biodiversidade e proteção dos biomas (Mata Atlântica, Caatinga, manguezais e restingas)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      549,
+      555
+     ],
+     "nota": ""
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1307
+     ],
+     "nota": "Escalar restauração ecológica e conservação da biodiversidade"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Reduzir e coibir o desmatamento e a supressão de vegetação nativa na Caatinga e na Mata Atlântica",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1309
+     ],
+     "nota": "Manter trajetória de redução via Programa Plantar Juntos"
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      785,
+      790
+     ],
+     "nota": "Meta de frear a supressão da Caatinga com alertas de satélite"
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      149,
+      920,
+      931
+     ],
+     "nota": "Defender a Caatinga frente ao agronegócio e à privatização dos bens comuns"
+    },
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      94
+     ],
+     "nota": "Proibição da destruição de florestas"
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Expandir a recuperação de áreas degradadas, matas ciliares e ecossistemas estratégicos por meio de programa estadual de reflorestamento",
    "n_concorda": 4,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      538,
-      541
+      530
      ],
-     "nota": "Aterros viram ecoparques e compras públicas puxam mercado de reciclados"
+     "nota": "Programa Estadual de Recuperação Ambiental"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1309
+     ],
+     "nota": "Continuidade do Plantar Juntos"
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      809
+     ],
+     "nota": "Foco em áreas degradadas e desertificadas"
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      547,
+      555,
+      918
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Unir recuperação ambiental e inclusão socioprodutiva, com mapeamento de áreas abandonadas, seleção de famílias vulneráveis, capacitação técnica e bolsa durante a restauração",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      809,
+      810,
+      811,
+      812,
+      813
+     ],
+     "nota": "Programa Raízes de Pernambuco com Bolsa Restaura PE"
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Expandir o pagamento por serviços ambientais, remunerando agricultores familiares, povos indígenas e comunidades tradicionais que preservam",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1310
+     ],
+     "nota": ""
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      812,
+      813
+     ],
+     "nota": "PSA como bolsa a famílias em recuperação de solo"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Condicionar a concessão de uso ou titulação de terras públicas à comprovação técnica da recuperação ambiental e à manutenção de vegetação nativa, sob pena de reversão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      814,
+      815
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Fomentar a agroecologia e os sistemas agroflorestais como estratégia de conservação e de resiliência produtiva",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1305
+     ],
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      555,
+      557
+     ],
+     "nota": ""
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      811
+     ],
+     "nota": "Capacitação em SAFs pelo IPA"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Criar programa de proteção e desenvolvimento sustentável da APA Aldeia-Beberibe, impedindo empreendimentos incompatíveis com sua função ecológica",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      555,
+      556,
+      557,
+      927
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Biodiversidade, florestas e unidades de conservação",
+   "proposta": "Instituir política de educação ambiental e participação popular, com fóruns territoriais e monitoramento comunitário das políticas ambientais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      149,
+      547
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Instituir política estadual de economia circular e resíduo zero, com metas de redução do volume de resíduos enviado a aterros",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      148,
+      547
+     ],
+     "nota": "Lógica do \"aterro mínimo\", com metas de redução"
     },
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
@@ -81,71 +677,32 @@
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1346
+      1313
      ],
      "nota": ""
     },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      148,
-      547,
-      911,
-      914
-     ],
-     "nota": "Lógica do 'aterro mínimo' com metas de redução"
-    }
-   }
-  },
-  {
-   "id": "p2",
-   "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Apoiar e fortalecer cooperativas e associações de catadores, com estrutura, formalização e contratação/remuneração pelo poder público",
-   "n_concorda": 4,
-   "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      540
+      538
      ],
-     "nota": "Via programa Pernambuco Recicla, com cofinanciamento a municípios"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      775
-     ],
-     "nota": "Canaliza recursos da Lei de Incentivo à Reciclagem"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1349
-     ],
-     "nota": "Via Projeto Recicla+Pernambuco, com incubação de cooperativas"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      148,
-      547
-     ],
-     "nota": "Remuneração por serviços ambientais e participação nas decisões"
+     "nota": "Redução do volume aterrado via ecoparques"
     }
    }
   },
   {
-   "id": "p3",
+   "id": "p30",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Implantar centrais/plantas regionais ou intermunicipais de triagem, compostagem e beneficiamento de resíduos",
+   "proposta": "Implantar centrais regionais/intermunicipais de triagem, compostagem e beneficiamento de recicláveis",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      772
+      772,
+      776
      ],
-     "nota": "Nos blocos regionais do marco legal do saneamento"
+     "nota": "Plantas nos blocos regionais do marco do saneamento"
     },
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
@@ -153,7 +710,7 @@
       148,
       547
      ],
-     "nota": "Centrais públicas em parceria com cooperativas e biodigestores"
+     "nota": "Centrais públicas em parceria com cooperativas"
     },
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -165,40 +722,33 @@
    }
   },
   {
-   "id": "p4",
+   "id": "p31",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Consolidar a erradicação dos lixões e garantir destinação final adequada em aterros licenciados, impedindo seu retorno",
-   "n_concorda": 3,
+   "proposta": "Apoiar os municípios na expansão da coleta seletiva com cofinanciamento estadual e assistência técnica",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      537
+      540
      ],
-     "nota": "Programa permanente com planos emergenciais e cofinanciamento"
+     "nota": "Programa Pernambuco Recicla"
     },
-    "governador-pe-renan-170002540337": {
+    "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
      "blocos": [
-      736,
-      770
-     ],
-     "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1348
+      547,
+      911
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p5",
+   "id": "p32",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Ampliar a coleta seletiva em larga escala com apoio técnico e financeiro aos municípios",
-   "n_concorda": 2,
+   "proposta": "Fortalecer cooperativas e associações de catadores com infraestrutura, formalização, capacitação e contratação pública",
+   "n_concorda": 4,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -207,6 +757,36 @@
      ],
      "nota": ""
     },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      775
+     ],
+     "nota": "Recursos da Lei de Incentivo à Reciclagem"
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      148,
+      547
+     ],
+     "nota": ""
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1316
+     ],
+     "nota": "Projeto Recicla+Pernambuco e incubação de cooperativas"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Reconhecer e remunerar catadores pelos serviços ambientais e urbanos prestados",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
      "blocos": [
@@ -218,53 +798,7 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Criar incentivos fiscais vinculados a metas de resíduos: regime fiscal 'Resíduo Zero' com desconto em taxas de licenciamento e ICMS Ecológico premiando municípios que enterrem menos lixo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      773,
-      774
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Elevar a taxa de coleta de resíduos na zona rural ao patamar urbano em até quatro anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      776
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Criar um Fundo Estadual de Economia Circular abastecido por recursos ambientais, compensações e fundos climáticos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      148
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
+   "id": "p34",
    "subtema": "Resíduos sólidos e economia circular",
    "proposta": "Usar as compras e contratações públicas para ampliar o mercado de produtos reciclados e circulares",
    "n_concorda": 2,
@@ -281,139 +815,106 @@
      "blocos": [
       148
      ],
-     "nota": ""
+     "nota": "Ampliar participação dos catadores nas compras públicas"
     }
    }
   },
   {
-   "id": "p10",
+   "id": "p35",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Recuperar ambientalmente áreas degradadas por antigos lixões e fortalecer a rastreabilidade dos resíduos",
+   "proposta": "Criar incentivos fiscais vinculados a metas de resíduos, com descontos em taxas de licenciamento e ICMS Ecológico premiando municípios que reduzam o lixo enterrado",
    "n_concorda": 1,
    "posicoes": {
-    "governador-pe-ivan-moraes-170002538097": {
+    "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      547
+      773,
+      774
      ],
-     "nota": ""
+     "nota": "Descontos de 40% a 100% no regime \"Resíduo Zero\""
     }
    }
   },
   {
-   "id": "p11",
-   "subtema": "Clima e adaptação",
-   "proposta": "Instituir política estadual de adaptação e resiliência climática articulada com os municípios, priorizando territórios e populações mais vulneráveis",
+   "id": "p36",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Consolidar a erradicação dos lixões e garantir destinação final adequada em aterros licenciados, impedindo seu retorno",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      524,
-      528
+      537
      ],
-     "nota": "Política de Resiliência Climática e Gestão Integrada de Riscos"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1333,
-      1335,
-      1336
-     ],
-     "nota": "Conclusão do PEAR-PE e estratégias por Região de Desenvolvimento"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547
-     ],
-     "nota": "Política Estadual de Justiça Climática e Adaptação, com plano estadual"
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Clima e adaptação",
-   "proposta": "Adotar soluções baseadas na natureza e infraestrutura verde e azul na adaptação climática e na prevenção de desastres",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      528,
-      532
-     ],
-     "nota": "Parques lineares de borda d'água, ampliando o Janelas para os Rios"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547
-     ],
-     "nota": "Programa Pernambuco Resiliente: jardins de chuva, parques climáticos"
+     "nota": "Programa permanente com planos emergenciais e transbordos"
     },
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      777
+      736,
+      770
      ],
-     "nota": "Infraestrutura azul-verde da orla como defesa natural"
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Clima e adaptação",
-   "proposta": "Ampliar a instalação de sensores meteorológicos e criar redes comunitárias de monitoramento e educação climática",
-   "n_concorda": 1,
-   "posicoes": {
+     "nota": ""
+    },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1337,
-      1452
+      1315
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Clima e adaptação",
-   "proposta": "Criar as condições institucionais, tecnológicas e financeiras para efetivar o Plano Estadual de Mudanças Climáticas",
+   "id": "p37",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Transformar aterros sanitários estratégicos em ecoparques capazes de reciclar, tratar orgânicos e gerar energia",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      523
+      538
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Clima e adaptação",
-   "proposta": "Fortalecer a Defesa Civil estadual com tecnologia, infraestrutura e capacitação, em cooperação com as defesas civis municipais",
-   "n_concorda": 1,
+   "id": "p38",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Implantar compostagem e biodigestão da fração orgânica dos resíduos",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
+    "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
      "blocos": [
-      1447,
-      1449,
-      1450
+      148,
+      547,
+      914
+     ],
+     "nota": ""
+    },
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      772
+     ],
+     "nota": ""
+    },
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      538
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "Clima e adaptação",
-   "proposta": "Apoiar os municípios na elaboração e implementação de planos climáticos locais",
+   "id": "p39",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Recuperar áreas degradadas por antigos lixões e coibir descarte clandestino, com rastreabilidade dos resíduos",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
@@ -426,9 +927,39 @@
    }
   },
   {
-   "id": "p17",
-   "subtema": "Zona costeira",
-   "proposta": "Enfrentar a erosão costeira com plano integrado entre Estado e municípios, baseado em estudos técnicos e ambientais",
+   "id": "p40",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Elevar a cobertura da coleta de resíduos na zona rural ao patamar urbano em até quatro anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      776
+     ],
+     "nota": "Sair dos atuais 17,4% na área rural"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Criar Fundo Estadual de Economia Circular, priorizando cooperativas, pequenos negócios e iniciativas territoriais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      148
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Instituir planejamento costeiro integrado entre Estado e municípios para enfrentar a erosão e adaptar as orlas",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -443,73 +974,50 @@
      "blocos": [
       272,
       300,
-      305,
-      783
+      305
      ],
-     "nota": "Plano Costeiro Integrado com coordenação de todos os municípios litorâneos no 1º ano"
+     "nota": "Coordenação com todos os municípios litorâneos no 1º ano"
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1351,
-      1353
+      1318,
+      1320
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p18",
-   "subtema": "Zona costeira",
-   "proposta": "Executar projetos de engorda das praias",
+   "id": "p43",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Executar projetos de engorda de praias com monitoramento contínuo e manutenção preventiva",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
       301,
+      302,
+      777,
       778,
       779
      ],
-     "nota": "De Itamaracá a Jaboatão, com monitoramento contínuo e batimetria"
+     "nota": "Projetos unificados de Itamaracá a Jaboatão"
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1360
+      1327
      ],
-     "nota": "Restrito à Região Metropolitana do Recife"
+     "nota": "Foco na Região Metropolitana do Recife"
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Zona costeira",
-   "proposta": "Recuperar e reflorestar manguezais, restingas e estuários com espécies endêmicas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      734,
-      780
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      549,
-      555
-     ],
-     "nota": "Dentro da Política Estadual de Conservação da Biodiversidade"
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Zona costeira",
-   "proposta": "Proibir licenças municipais para barreiras rígidas unilaterais (muros, enrocamentos, espigões) e centralizar o licenciamento costeiro na CPRH",
+   "id": "p44",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Proibir a concessão municipal de licenças para muros, enrocamentos e espigões rígidos unilaterais, centralizando o licenciamento costeiro no órgão ambiental estadual",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -523,400 +1031,19 @@
    }
   },
   {
-   "id": "p21",
-   "subtema": "Zona costeira",
-   "proposta": "Criar santuários de proteção e monitoramento dos recifes de arenito metropolitanos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      782
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Zona costeira",
-   "proposta": "Adotar diretrizes estéticas participativas com escuta da identidade cultural local em 100% das obras de orla financiadas pelo Estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      302,
-      303,
-      304
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Zona costeira",
-   "proposta": "Fortalecer o Comitê Estadual de Monitoramento de Incidentes com Tubarões, com pesquisa, segurança aquática e educação preventiva",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1361
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Expandir a geração de energias renováveis no estado, atraindo investimentos e gerando empregos",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      535
-     ],
-     "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      981,
-      992
-     ],
-     "nota": "Inclui armazenamento e projetos demonstrativos de transição justa"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      148,
-      149
-     ],
-     "nota": "Condiciona à consulta às comunidades e à distribuição justa dos benefícios"
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Promover a descarbonização das cadeias produtivas estaduais rumo a uma economia de baixo carbono",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1327,
-      1329
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547
-     ],
-     "nota": "Programa de Transição Ecológica Justa"
-    },
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      521
-     ],
-     "nota": "Economia de base regenerativa"
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Promover a transição energética do Polo Gesseiro do Araripe, substituindo a lenha nativa por gás natural e fontes menos poluentes",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      534
-     ],
-     "nota": "Inclui energia solar e eficiência energética, com produção local de energia"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      736,
-      791,
-      792,
-      793
-     ],
-     "nota": "Manter e ampliar o gasoduto virtual de GNC"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1004
-     ],
-     "nota": "Gás natural canalizado em substituição à lenha"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Expandir a rede e a infraestrutura de distribuição de gás natural para polos industriais e novos consumidores",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      469
-     ],
-     "nota": "Inclui estações de regaseificação onde não há rede encanada"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1001,
-      1003
-     ],
-     "nota": "Gás como combustível estratégico de transição"
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Conceder subsídios ou isenções de ICMS para viabilizar energia limpa (gás natural comprimido no Araripe e equipamentos de micro e minigeração distribuída)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      795,
-      805
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Criar um programa estadual de energia solar comunitária, com sistemas descentralizados em residências, associações, cooperativas e unidades da agricultura familiar",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      148,
-      149
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Consolidar o Hub de Combustíveis Sustentáveis com Suape como âncora industrial e portuária",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      986,
-      987,
-      988
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Ampliar a infraestrutura de transmissão elétrica, conectando os polos de geração do Sertão ao litoral industrial",
+   "id": "p45",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Recuperar estuários, manguezais e restingas, com replantio de espécies endêmicas e recomposição de margens",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      584,
-      585,
-      586,
-      587
+      734,
+      777,
+      780
      ],
-     "nota": "Articulação com ONS, Aneel e MME para entrar em leilões de transmissão"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      976,
-      977,
-      978
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Apoiar a ampliação de sistemas de armazenamento de energia e gestão de demanda",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      979,
-      992
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Avançar na descarbonização da mobilidade e fortalecer cadeias estaduais de baterias, recarga e tecnologias automotivas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      977,
-      990
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Consolidar uma governança estadual de energia baseada em dados e planejamento de longo prazo, com plataforma de inteligência territorial para atrair investimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      982,
-      994
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Reestatizar a distribuição de energia elétrica, encerrando o contrato de concessão com a empresa privada",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-professora-camila-170002537320": {
-     "posicao": "concorda",
-     "blocos": [
-      8
-     ],
-     "nota": "Reestatização da Celpe e fim do contrato com a Neoenergia"
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Proteger e conservar os biomas estaduais (Caatinga e Mata Atlântica), combatendo o desmatamento",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1340,
-      1342
-     ],
-     "nota": "Manter a redução do desmatamento via Programa Plantar Juntos"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      149,
-      549,
-      555,
-      920,
-      931
-     ],
-     "nota": "Política Estadual de Conservação da Biodiversidade e defesa da Caatinga"
-    },
-    "governador-pe-professora-camila-170002537320": {
-     "posicao": "concorda",
-     "blocos": [
-      94
-     ],
-     "nota": "Proibição da destruição de florestas"
-    },
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      518
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Expandir a recuperação de áreas degradadas, matas ciliares e ecossistemas estratégicos",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      530
-     ],
-     "nota": "Via Programa Estadual de Recuperação Ambiental"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      809,
-      811
-     ],
-     "nota": "Programa Raízes de Pernambuco, unindo restauração e inclusão socioprodutiva"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1340,
-      1342
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547,
-      555,
-      918
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Fortalecer e ampliar as unidades de conservação estaduais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      522
-     ],
-     "nota": "Gestão compartilhada das UCs de uso sustentável e apoio ao entorno"
+     "nota": "Associado a dragagem sustentável de estuários"
     },
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
@@ -928,84 +1055,221 @@
    }
   },
   {
-   "id": "p39",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Ampliar a política de Pagamento por Serviços Ambientais, remunerando quem preserva",
+   "id": "p46",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Proteger e monitorar os recifes e a biodiversidade marinha, articulando comunidades costeiras",
    "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      782
+     ],
+     "nota": "Santuários nos 18 km de recifes metropolitanos"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1320,
+      1469
+     ],
+     "nota": "Projeto Comunidades Costeiras e Recifes"
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Definir diretrizes estéticas participativas, com escuta da identidade cultural local, para as obras de orla financiadas pelo Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      303,
+      304
+     ],
+     "nota": "Aplicação a 100% das obras financiadas"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Fortalecer o comitê estadual de monitoramento de incidentes com tubarões, ampliando pesquisa, segurança aquática e educação preventiva",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1343
+      1328
      ],
-     "nota": "Foco em agricultores familiares, indígenas e comunidades tradicionais"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      812,
-      813
-     ],
-     "nota": "Bolsa Restaura PE para famílias em vulnerabilidade"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p40",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Instituir programa específico de proteção e desenvolvimento sustentável da APA Aldeia-Beberibe, impedindo empreendimentos incompatíveis com sua função ecológica",
+   "id": "p49",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Captar recursos para testar e implementar soluções inovadoras de uso sustentável e resiliência dos ambientes costeiros",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1321
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Clima, adaptação e riscos",
+   "proposta": "Instituir política estadual de resiliência climática e gestão integrada de riscos de desastres, articulando Estado e municípios",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      524,
+      528
+     ],
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      547
+     ],
+     "nota": "Política de Justiça Climática e Programa Pernambuco Resiliente"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1300
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Clima, adaptação e riscos",
+   "proposta": "Concluir e efetivar o plano estadual de clima/adaptação, com condições institucionais e financeiras para sua implementação",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": "Efetivação do Plano Estadual de Mudanças Climáticas"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1302
+     ],
+     "nota": "Concluir o PEAR-PE com estratégias por Região de Desenvolvimento"
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      547
+     ],
+     "nota": "Plano Estadual de Justiça Climática e Adaptação"
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Clima, adaptação e riscos",
+   "proposta": "Apoiar municípios em planos climáticos e de contingência, priorizando a proteção das populações mais vulneráveis",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
      "blocos": [
-      555,
-      556,
-      557,
-      927
+      547
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Financiar planos de Manejo Florestal Sustentável para pequenos produtores e assentamentos do Araripe e rastrear a origem da biomassa lenhosa consumida pelas calcinadoras",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
+    },
+    "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      738,
-      796,
-      797
+      1303
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Vincular a regularização fundiária de áreas recuperadas à comprovação técnica da restauração, com obrigação contratual de manter a vegetação nativa sob pena de reversão da posse",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
+    },
+    "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      810,
-      814,
-      815
+      524,
+      528
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p43",
+   "id": "p53",
+   "subtema": "Clima, adaptação e riscos",
+   "proposta": "Ampliar a instalação de sensores meteorológicos e criar redes comunitárias de monitoramento e educação climática",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1304,
+      1418
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Clima, adaptação e riscos",
+   "proposta": "Investir em infraestrutura resiliente e soluções baseadas na natureza (drenagem, contenção de encostas, arborização, parques e corredores ecológicos)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      547
+     ],
+     "nota": "Jardins de chuva, parques climáticos e urbanização de periferias"
+    },
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      528,
+      532
+     ],
+     "nota": "Infraestrutura verde e azul e parques lineares de borda d'água"
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Clima, adaptação e riscos",
+   "proposta": "Fortalecer a resiliência climática de famílias agricultoras com tecnologias de acesso à água e práticas adaptativas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1305
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
    "subtema": "Licenciamento e fiscalização ambiental",
-   "proposta": "Fortalecer a CPRH, ampliando sua capacidade de licenciamento, fiscalização, monitoramento e controle ambiental",
+   "proposta": "Fortalecer institucional, tecnológica e operacionalmente o órgão ambiental estadual para licenciamento, fiscalização e monitoramento",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -1013,12 +1277,12 @@
      "blocos": [
       529
      ],
-     "nota": "Plano de aprimoramento institucional, tecnológico e operacional"
+     "nota": "Plano de aprimoramento da CPRH"
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1344
+      1311
      ],
      "nota": ""
     },
@@ -1027,14 +1291,14 @@
      "blocos": [
       789
      ],
-     "nota": "Reestruturação tecnológica com plataformas de geoprocessamento"
+     "nota": "Aquisição de plataformas de geoprocessamento"
     }
    }
   },
   {
-   "id": "p44",
+   "id": "p57",
    "subtema": "Licenciamento e fiscalização ambiental",
-   "proposta": "Implantar fiscalização ambiental baseada em monitoramento remoto contínuo, com imagens de satélite e alertas em tempo real de desmatamento",
+   "proposta": "Substituir a fiscalização reativa por monitoramento remoto automatizado, com imagens de satélite e alertas de desmatamento em tempo real",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -1042,22 +1306,21 @@
      "blocos": [
       735,
       784,
-      785,
-      790
+      785
      ],
-     "nota": ""
+     "nota": "Uso também de drones e ANPP"
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1330
+      1297
      ],
-     "nota": "Consolidar a Plataforma Ecológico-Econômica de monitoramento automatizado"
+     "nota": "Consolidar a Plataforma Ecológico-Econômica de monitoramento"
     }
    }
   },
   {
-   "id": "p45",
+   "id": "p58",
    "subtema": "Licenciamento e fiscalização ambiental",
    "proposta": "Instalar sensores automáticos de qualidade da água nos principais rios do estado",
    "n_concorda": 1,
@@ -1065,7 +1328,6 @@
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      735,
       786
      ],
      "nota": ""
@@ -1073,25 +1335,25 @@
    }
   },
   {
-   "id": "p46",
+   "id": "p59",
    "subtema": "Licenciamento e fiscalização ambiental",
-   "proposta": "Unificar as bases de dados da CPRH, da polícia ambiental e do Ministério Público para antecipar e responder ao crime ambiental",
+   "proposta": "Unificar as bases de dados do órgão ambiental, da polícia ambiental e do Ministério Público para antecipar e reprimir o crime ambiental",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      735,
-      787
+      787,
+      790
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p47",
+   "id": "p60",
    "subtema": "Licenciamento e fiscalização ambiental",
-   "proposta": "Fortalecer os instrumentos de compensação ambiental associados à fiscalização e ao controle",
+   "proposta": "Fortalecer os instrumentos de controle e de compensação ambiental",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -1104,102 +1366,79 @@
    }
   },
   {
-   "id": "p48",
-   "subtema": "Grandes empreendimentos e conflitos socioambientais",
-   "proposta": "Condicionar grandes projetos de mineração, energia e infraestrutura a critérios socioambientais rigorosos e à consulta prévia das comunidades atingidas, vedando os que comprometam a produção de alimentos, a água, a Caatinga e os modos de vida locais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      148,
-      149
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Grandes empreendimentos e conflitos socioambientais",
-   "proposta": "Criar fóruns e instâncias territoriais permanentes de diálogo e participação social na formulação e avaliação das políticas ambientais e rurais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      149,
-      547
-     ],
-     "nota": "Inclui Política Estadual de Educação Ambiental e Participação Popular"
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Grandes empreendimentos e conflitos socioambientais",
-   "proposta": "Estabelecer controle popular sobre a Amazônia e expulsar os monopólios estrangeiros da região",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-professora-camila-170002537320": {
-     "posicao": "concorda",
-     "blocos": [
-      94
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Fernando de Noronha",
-   "proposta": "Substituir a matriz energética de Fernando de Noronha por geração solar com armazenamento em baterias",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1502,
-      1503
-     ],
-     "nota": "Conclusão da Fase 2 do Projeto Noronha Verde"
-    },
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      536
-     ],
-     "nota": "Investimento em energia limpa dentro da política ambiental da ilha"
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Fernando de Noronha",
-   "proposta": "Fortalecer a proteção ambiental de Fernando de Noronha, com gestão de resíduos, segurança hídrica, saneamento e proteção dos ecossistemas insulares",
-   "n_concorda": 2,
+   "id": "p61",
+   "subtema": "Economia de baixo carbono e transição justa",
+   "proposta": "Promover a economia regenerativa e de baixo carbono, acelerando a descarbonização das cadeias produtivas do estado",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      536
+      521
      ],
      "nota": ""
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1504,
-      1505
+      1285,
+      1294,
+      1296
      ],
-     "nota": "Conclusão do PGSI da Orla e revisão do Plano de Manejo da APA"
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      557
+     ],
+     "nota": "Programa de Transição Ecológica Justa, com bioeconomia e inclusão social"
     }
    }
   },
   {
-   "id": "p53",
-   "subtema": "Recursos hídricos e rios urbanos",
-   "proposta": "Instituir política estadual de gestão integrada das águas, com recuperação e proteção de rios, nascentes e bacias e prevenção da poluição hídrica",
+   "id": "p62",
+   "subtema": "Economia de baixo carbono e transição justa",
+   "proposta": "Fortalecer selo estadual de reconhecimento de negócios sustentáveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1298
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Rios e recursos hídricos",
+   "proposta": "Recuperar e revitalizar rios urbanos, com despoluição, matas ciliares, drenagem e parques lineares de borda d'água",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      530,
+      532
+     ],
+     "nota": "Ampliar o programa Janelas para os Rios a outros rios"
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      548,
+      549
+     ],
+     "nota": "Programa Rio Tejipió Vivo com participação comunitária"
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Rios e recursos hídricos",
+   "proposta": "Instituir política estadual das águas com gestão integrada dos recursos hídricos, proteção de nascentes e prevenção da poluição hídrica",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
@@ -1214,250 +1453,115 @@
    }
   },
   {
-   "id": "p54",
-   "subtema": "Recursos hídricos e rios urbanos",
-   "proposta": "Criar programa de revitalização de rios urbanos com despoluição, recuperação de matas ciliares, drenagem e parques de borda d'água",
+   "id": "p65",
+   "subtema": "Fernando de Noronha",
+   "proposta": "Substituir a matriz energética a diesel de Fernando de Noronha por geração solar fotovoltaica com armazenamento em baterias",
    "n_concorda": 2,
    "posicoes": {
-    "governador-pe-ivan-moraes-170002538097": {
+    "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      548,
-      549
+      1458,
+      1466,
+      1467
      ],
-     "nota": "Programa Rio Tejipió Vivo"
+     "nota": "Meta de substituir 85% da matriz (Fase 2 do Noronha Verde)"
     },
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
-      532
+      536
      ],
-     "nota": "Ampliação do programa Janelas para os Rios a outros rios"
+     "nota": "Investimento em energia limpa na ilha, sem meta definida"
     }
    }
   },
   {
-   "id": "p55",
-   "subtema": "Instrumentos econômicos e negócios verdes",
-   "proposta": "Fortalecer instrumentos de reconhecimento e fomento a negócios sustentáveis, como o Selo Empresa Verde",
+   "id": "p66",
+   "subtema": "Fernando de Noronha",
+   "proposta": "Fortalecer a política ambiental de Fernando de Noronha, com saneamento, gestão de resíduos, proteção dos ecossistemas insulares e planos de manejo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      536
+     ],
+     "nota": ""
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1466,
+      1468
+     ],
+     "nota": "Concluir o PGSI da Orla e revisar o plano de manejo da APA"
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Soberania sobre os recursos naturais",
+   "proposta": "Estabelecer controle popular sobre a Amazônia e expulsar os monopólios estrangeiros da região",
    "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1327,
-      1331
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Instrumentos econômicos e negócios verdes",
-   "proposta": "Apoiar a bioeconomia e iniciativas de economia regenerativa ligadas à diversidade natural do estado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      521
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Instrumentos econômicos e negócios verdes",
-   "proposta": "Promover o Sertão como polo de tecnologias e saberes inovadores para a adaptação climática e a economia do futuro",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1363
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      149
-     ],
-     "nota": "Interiorização de polos tecnológicos e inovação voltada ao Semiárido"
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Agricultura e resiliência no campo",
-   "proposta": "Fortalecer a resiliência climática de famílias agricultoras com práticas agroecológicas, sistemas agroflorestais e tecnologias de acesso à água",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1338
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547,
-      555
-     ],
-     "nota": ""
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      811
-     ],
-     "nota": "Capacitação do IPA em captação de chuva, contenção de erosão e SAFs"
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Zona costeira",
-   "proposta": "Fomentar o uso sustentável e a resiliência dos ambientes costeiros, captando recursos para desenvolvimento, teste e implementação de soluções inovadoras",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      528,
-      531
-     ],
-     "nota": "Plano de proteção da costa metropolitana com adaptação climática e soluções baseadas na natureza"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      272,
-      300,
-      301,
-      777,
-      780,
-      782
-     ],
-     "nota": "Plano Costeiro Integrado, engorda de praias, restauração de manguezais e santuários de recifes"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1354
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      547,
-      555
-     ],
-     "nota": "Prevê proteção de zonas costeiras, soluções baseadas na natureza e captação de recursos para adaptação/resiliência."
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Viabilizar o abastecimento de gás natural comprimido ao Polo Gesseiro do Araripe por meio de transporte sem depender de gasodutos físicos",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      469,
-      534
-     ],
-     "nota": "Transição do Polo Gesseiro para gás natural e estações de regaseificação onde não há rede encanada"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      794
-     ],
-     "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      915,
-      1003,
-      1004
-     ],
-     "nota": "Programa propõe levar gás natural ao Polo Gesseiro em substituição à lenha, sem especificar modal."
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Transição energética e energias renováveis",
-   "proposta": "Oferecer linhas de crédito verde, via BNDES, para a conversão energética das empresas do Polo Gesseiro, com execução por SDA, CPRH e Agefepe",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      798
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Biomas, desmatamento e unidades de conservação",
-   "proposta": "Eliminar o consumo ilegal de lenha nativa na matriz térmica do Polo Gesseiro do Araripe",
-   "n_concorda": 4,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
      "posicao": "concorda",
      "blocos": [
       94
      ],
-     "nota": "Defende proteção ambiental e proibição da destruição de florestas, o que abrange conter uso ilegal de lenha nativa."
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Gestão costeira e erosão",
+   "proposta": "Executar as ações de contenção da erosão costeira por meio da CPRH, SEMAS, CEHAB e consórcios intermunicipais litorâneos, com meta de conter a retração da linha de costa",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      529,
+      531
+     ],
+     "nota": "Propõe Plano Integrado de Proteção da Costa Metropolitana contra erosão costeira e fortalecimento da CPRH."
     },
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
-      799
+      783
      ],
      "nota": ""
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      915,
-      1004,
-      1342
+      1318,
+      1320,
+      1321,
+      1327
      ],
-     "nota": "Transição do Polo Gesseiro do uso de lenha para gás natural, com foco na preservação da caatinga."
+     "nota": "Propõe gestão costeira resiliente e projetos de engorda das praias na RMR."
     },
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
      "blocos": [
-      524,
-      557
+      547,
+      555
      ],
-     "nota": "Aponta pressão do polo gesseiro sobre a Caatinga e propõe descarbonização dos setores produtivos estratégicos."
+     "nota": "Prevê adaptação climática, infraestrutura resiliente e proteção das zonas costeiras, sem detalhar arranjo institucional."
     }
    }
   }
  ],
  "blocos": {
   "governador-pe-ivan-moraes-170002538097": {
+   "122": {
+    "texto": "Outro desafio é fazer com que a transição ecológica gere trabalho, renda e autonomia para as comunidades. A expansão de grandes empreendimentos de mineração, energia e agronegócio tem provocado conflitos pelo uso da terra e da água, pressão sobre a Caatinga e impactos sobre povos indígenas, comunidades quilombolas, agricultores e outros povos tradicionais. Uma política ambientalmente sustentável não pode reproduzir concentração econômica, privatização dos bens comuns ou expulsão das populações de seus territórios.",
+    "pagina": 11
+   },
    "148": {
     "texto": "●​ Implantar uma política de economia circular e Resíduo Zero: implantar o Programa Pernambuco Resíduo Zero, com metas de redução do envio de materiais aos aterros, coleta seletiva, compostagem e reaproveitamento de resíduos. Estruturar centrais públicas de triagem e beneficiamento em parceria com cooperativas de catadores, garantindo galpões, equipamentos, logística, assistência técnica, segurança do trabalho e participação nas decisões. Reconhecer e remunerar os catadores pelos serviços ambientais e urbanos prestados, ampliando sua participação nas compras e contratações públicas. ●​ Criar o Fundo Estadual de Economia Circular: Esse Fundo será abastecido por recursos ambientais, compensações, convênios, fundos climáticos e parcerias públicas e deverá priorizar cooperativas, pequenos negócios, comunidades tradicionais, iniciativas territoriais e projetos que comprovem geração de trabalho, redução de resíduos e distribuição social dos benefícios. ●​ Promover uma transição energética justa e popular: Incentivar a descarbonização dos setores produtivos e a expansão das energias renováveis, subordinando os projetos à proteção ambiental, à consulta das comunidades e à distribuição justa dos benefícios. Criar um Programa",
     "pagina": 14
@@ -1465,10 +1569,6 @@
    "149": {
     "texto": "Estadual de Energia Solar Comunitária, instalando sistemas descentralizados em residências, associações, cooperativas e unidades produtivas da agricultura familiar. Os grandes projetos de mineração, energia e infraestrutura deverão cumprir critérios ambientais e sociais rigorosos e não poderão comprometer a produção de alimentos, o acesso à água, a Caatinga e os modos de vida das populações locais. ●​ Defender o bioma Caatinga frente ao avanço do agronegócio e a privatização dos bens comuns. ●​ Instituir fóruns e instâncias territoriais de diálogo entre o Governo do Estado, agricultores, movimentos sociais, organizações de assistência técnica e comunidades tradicionais, garantindo participação na formulação, execução e avaliação das políticas rurais. ●​ Interiorizar a ciência, a tecnologia e a inovação: Expandir polos tecnológicos, centros de formação e ambientes de inovação para a Zona da Mata, o Agreste e o Sertão, articulando universidades, institutos federais, escolas técnicas, cooperativas e pequenos negócios. A inovação deverá estar voltada à solução de problemas concretos dos territórios, como convivência com o Semiárido, produção de alimentos, saúde, mobilidade, reciclagem, energias renováveis e inclusão digital. ●​ Gerar trabalho digno e inclusão socioprodutiva: Priorizar investimentos em atividades intensivas em mão de obra e capazes de gerar empregos estáveis nos diferentes territórios.",
     "pagina": 14
-   },
-   "524": {
-    "texto": "Pernambuco também mantém uma economia fortemente associada a setores de alto impacto ambiental, como polo gesseiro, petroquímica, plástico, transporte rodoviário, construção civil e logística portuária. O polo gesseiro do Araripe, responsável por parte central da produção nacional de gesso, ainda depende de práticas energéticas que pressionam a Caatinga e contribuem para emissões de carbono e processos de desertificação. Ao mesmo tempo, a cadeia do plástico e da petroquímica permanece fortalecida em um contexto global que exige redução da poluição, substituição de materiais descartáveis e transição para uma economia circular.",
-    "pagina": 48
    },
    "547": {
     "texto": "Propostas: ●​ Instituir a Política Estadual de Justiça Climática e Adaptação, integrando as políticas de meio ambiente, recursos hídricos, planejamento territorial, defesa civil, saúde, habitação e infraestrutura para reduzir as desigualdades socioambientais e proteger as populações mais vulneráveis aos impactos das mudanças climáticas. A política deverá elaborar o Plano Estadual de Justiça Climática e Adaptação, apoiar os municípios na implementação de planos climáticos locais, fortalecer a prevenção de desastres, ampliar investimentos em infraestrutura resiliente e soluções baseadas na natureza, além de captar recursos para adaptação climática e resiliência urbana. ●​ Instituir o Programa Pernambuco Resiliente, destinado a ampliar a capacidade de adaptação dos territórios pernambucanos às mudanças climáticas por meio de investimentos em infraestrutura resiliente, prevenção de desastres e soluções baseadas na natureza. O programa priorizará áreas de maior vulnerabilidade socioambiental, com ações de drenagem urbana, contenção de encostas, urbanização climática de periferias, arborização urbana, implantação de jardins de chuva, parques climáticos, corredores ecológicos e recuperação de áreas degradadas. ●​ Instituir a Política Estadual das Águas, orientada pela gestão integrada dos recursos hídricos, pela universalização do acesso à água potável e ao saneamento básico, pela recuperação e proteção de rios, nascentes e bacias hidrográficas e pela promoção da segurança hídrica em todas as regiões do estado. A política deverá fortalecer a prevenção da poluição hídrica, ampliar a resiliência frente às mudanças climáticas e promover a cooperação entre",
@@ -1527,10 +1627,6 @@
    "469": {
     "texto": "Expandir a rede de gás natural para pólos industriais, oferecendo energia mais competitiva e menos poluente. Implantar estações de regaseificação onde a rede encanada ainda não esteja disponível, acelerando a interiorização do serviço e a atração de investimentos. \n•",
     "pagina": 24
-   },
-   "518": {
-    "texto": "Nosso compromisso é construir uma política presente em todas as regiões, capaz de proteger a costa, os rios, as florestas e os demais ecossistemas, modernizar a gestão dos resíduos e apoiar uma economia de baixo carbono, ao mesmo tempo que assegure os direitos e o cuidado com os animais. Uma política planejada, integrada, transparente e orientada por resultados, que una desenvolvimento sustentável, justiça ambiental e climática, proteção da biodiversidade, saúde coletiva e respeito a todas as formas de vida. .",
-    "pagina": 26
    },
    "521": {
     "texto": "Promover a economia de base regenerativa, apoiando iniciativas disruptivas que dialoguem com modus operandi da diversidade do quadro natural do estado.\n•",
@@ -1608,187 +1704,175 @@
    }
   },
   "governador-pe-raquel-lyra-170002537227": {
-   "915": {
-    "texto": "**Transformamos Suape no epicentro dessa nova indústria** com a chegada do Senai Park, o primeiro eletrolisador de hidrogênio verde e a criação do Hub PE de Combustíveis Sustentáveis, que pretende conectar o potencial produtivo do interior à infraestrutura logística e industrial do litoral. Esse compromisso com a economia de baixo carbono foi interiorizado: levamos gás natural ao Polo Gesseiro do Araripe no lugar de lenha, transformamos biogás em energia na Região Metropolitana, inauguramos usinas solares pela Compesa e iniciamos a transição limpa da matriz energética de Fernando de Noronha.",
-    "pagina": 59
-   },
-   "976": {
+   "952": {
     "texto": "7. Fortalecer a infraestrutura elétrica de Pernambuco, ampliando a capacidade de conexão, a segurança energética e a integração entre o Sertão, o Agreste e o Litoral.",
     "pagina": 62
    },
-   "977": {
+   "953": {
     "texto": "a. Planejar de forma antecipada a infraestrutura necessária à conexão de novas indústrias, polos agropecuários e sistemas de recarga para mobilidade elétrica.",
     "pagina": 62
    },
-   "978": {
+   "954": {
     "texto": "b. Garantir, junto às concessionárias de distribuição e transmissão, a melhoria da qualidade, da confiabilidade e da resiliência da infraestrutura de energia elétrica do Estado.",
     "pagina": 62
    },
-   "979": {
+   "955": {
     "texto": "c. Apoiar a ampliação do uso de sistemas de armazenamento e gestão de demanda capazes de aumentar a flexibilidade e a eficiência da infraestrutura elétrica no Estado.",
     "pagina": 62
    },
-   "981": {
+   "957": {
     "texto": "8. Transformar a energia limpa e competitiva do Nordeste em investimentos produtivos, empregos qualificados e novas cadeias industriais em Pernambuco.",
     "pagina": 62
    },
-   "982": {
+   "958": {
     "texto": "a. Fomentar a atração de investimentos produtivos para o Estado, utilizando a Plataforma Energética de Pernambuco como instrumento de inteligência territorial, interlocução com investidores e planejamento de infraestruturas habilitadoras do desenvolvimento econômico.",
     "pagina": 62
    },
-   "986": {
+   "962": {
     "texto": "9. Consolidar o Hub PE de Combustíveis Sustentáveis como uma cadeia de desenvolvimento regional.",
     "pagina": 62
    },
-   "987": {
+   "963": {
     "texto": "a. Fomentar a cadeia dos combustíveis sustentáveis, tendo Suape como âncora industrial e portuária.",
     "pagina": 62
    },
-   "988": {
+   "964": {
     "texto": "b. Apoiar projetos de combustíveis sustentáveis, ampliando a capacidade de Pernambuco de atrair investimentos relacionados à transição energética.",
     "pagina": 62
    },
-   "990": {
+   "966": {
     "texto": "10. Avançar na descarbonização da mobilidade e fortalecer as cadeias estaduais de baterias, sistemas de recarga e tecnologias automotivas.",
     "pagina": 62
    },
-   "992": {
+   "968": {
     "texto": "11. Ampliar a geração renovável e o armazenamento de energia e desenvolver projetos demonstrativos de transição energética justa.",
     "pagina": 62
    },
-   "994": {
+   "970": {
     "texto": "12. Consolidar uma governança estadual de energia baseada em dados, planejamento de longo prazo e cooperação institucional. Raquel 55",
     "pagina": 62
    },
-   "1001": {
+   "977": {
     "texto": "**13. Consolidar o gás natural como combustível estratégico de transição, expandindo sua infraestrutura e integrando soluções de baixo carbono para fortalecer a segurança energética e a competitividade da indústria em Pernambuco.**",
     "pagina": 63
    },
-   "1003": {
+   "979": {
     "texto": "a. Ampliar as conexões industriais, residenciais e comerciais à rede de distribuição de gás, visando otimizar a matriz energética local, gerar maior eficiência operacional e promover o desenvolvimento social e econômico de Pernambuco.",
     "pagina": 63
    },
-   "1004": {
-    "texto": "b. Incentivar a transição energética dos Arranjos Produtivos Locais como o Polo Gesseiro do Araripe, estimulando o consumo do gás natural canalizado em substituição à lenha, com foco na redução de emissões e na preservação da caatinga e demais biomas.",
+   "980": {
+    "texto": "b. Incentivar a transição energética dos Arranjos Produtivos Locais como o Polo Gesseiro do Araripe, estimulando o consumo do gás natural canalizado em substituição à lenha, com foco na redução de emissões e na preservação da caatinga e demais biomas. Raquel 55",
     "pagina": 63
    },
-   "1327": {
+   "1285": {
+    "texto": "**Combater os efeitos das mudanças climáticas e preparar Pernambuco para um futuro justo e sustentável continuará sendo um compromisso e uma prioridade transversal da nossa gestão.** Queremos promover uma transição que nos faça superar de vez o antigo modelo de devastação do meio ambiente e inserir Pernambuco na vanguarda da economia regenerativa global. Nos próximos anos, seguiremos avançando na execução de políticas sustentáveis e na atração de investimentos estratégicos, garantindo a proteção contínua dos nossos biomas, a agricultura resiliente e a neoindustrialização verde, para que a adaptação climática dos nossos territórios se traduza em geração de renda sustentável, redução de desigualdades e mais qualidade de vida para nossa gente. Raquel 55 Priscila",
+    "pagina": 85
+   },
+   "1294": {
     "texto": "1. Consolidar as políticas de fomento ao desenvolvimento sustentável no estado.",
     "pagina": 86
    },
-   "1329": {
+   "1296": {
     "texto": "a. Acelerar a transição e a descarbonização das cadeias produtivas de Pernambuco.",
     "pagina": 86
    },
-   "1330": {
+   "1297": {
     "texto": "b. Consolidar a Plataforma Ecológico-Econômica de Pernambuco como instrumento de política pública.",
     "pagina": 86
    },
-   "1331": {
+   "1298": {
     "texto": "c. Fortalecer o Selo Empresa Verde como instrumento de reconhecimento de negócios sustentáveis",
     "pagina": 86
    },
-   "1333": {
+   "1300": {
     "texto": "2. Ampliar a resiliência e a adaptação climática nos territórios mais vulneráveis.",
     "pagina": 86
    },
-   "1335": {
+   "1302": {
     "texto": "a. Concluir o Plano de Adaptação e Resiliência Climática (PEAR-PE) e definir estratégias de adaptação nas Regiões de Desenvolvimento do estado.",
     "pagina": 86
    },
-   "1336": {
+   "1303": {
     "texto": "b. Garantir a proteção prioritária de pessoas vulnerabilizadas nos planos de contingência e de resposta a desastres nos municípios pernambucanos.",
     "pagina": 86
    },
-   "1337": {
+   "1304": {
     "texto": "c. Fortalecer a capacidade das comunidades de prevenir e responder a riscos climáticos, ampliando a instalação de sensores meteorológicos e a criação de redes comunitárias de monitoramento e educação climática.",
     "pagina": 86
    },
-   "1338": {
+   "1305": {
     "texto": "d. Fortalecer a capacidade produtiva e a resiliência climática de famílias agricultoras por meio da implementação de práticas agroecológicas e de tecnologias de acesso à água.",
     "pagina": 86
    },
-   "1340": {
+   "1307": {
     "texto": "3. Escalar as políticas de restauração ecológica e conservação da biodiversidade.",
     "pagina": 86
    },
-   "1342": {
+   "1309": {
     "texto": "a. Manter a trajetória de redução contínua do desmatamento, por meio do Programa Plantar Juntos.",
     "pagina": 86
    },
-   "1343": {
+   "1310": {
     "texto": "b. Expandir a política de Pagamento por Serviços Ambientais (PSA), remunerando diretamente agricultores familiares, povos indígenas e comunidades tradicionais que atuam na preservação ambiental.",
     "pagina": 86
    },
-   "1344": {
+   "1311": {
     "texto": "c. Fortalecer a Agência Estadual de Meio Ambiente (CPRH) para continuar otimizando a gestão, o licenciamento e a fiscalização ambiental em Pernambuco.",
     "pagina": 86
    },
-   "1346": {
+   "1313": {
     "texto": "4. Avançar na economia circular e na gestão de resíduos sólidos.",
     "pagina": 86
    },
-   "1348": {
+   "1315": {
     "texto": "a. Manter a destinação adequada de resíduos sólidos urbanos para aterros licenciados em Pernambuco.",
     "pagina": 86
    },
-   "1349": {
+   "1316": {
     "texto": "b. Fortalecer o Projeto Recicla+Pernambuco, garantindo a incubação de cooperativas e a inclusão socioprodutiva de catadores.",
     "pagina": 86
    },
-   "1351": {
+   "1318": {
     "texto": "5. Fortalecer a gestão das áreas costeiras, promovendo sua resiliência climática.",
     "pagina": 86
    },
-   "1353": {
+   "1320": {
     "texto": "a. Articular o poder público, a academia, as comunidades locais e o setor produtivo na construção de soluções que protejam a biodiversidade marinha e impulsionem a economia sustentável em todo o litoral pernambucano.",
     "pagina": 86
    },
-   "1354": {
+   "1321": {
     "texto": "b. Fomentar o uso sustentável e a resiliência dos ambientes costeiros, captando recursos para o desenvolvimento, teste e implementação de soluções inovadoras. Raquel 55",
     "pagina": 86
    },
-   "1360": {
+   "1327": {
     "texto": "c. Viabilizar projetos de engorda das praias da Região Metropolitana do Recife.",
     "pagina": 87
    },
-   "1361": {
+   "1328": {
     "texto": "d. Fortalecer o Comitê Estadual de Monitoramento de Incidentes com Tubarões (Cemit), ampliando investimentos em pesquisa tecnológica, segurança aquática e campanhas de educação preventiva.",
     "pagina": 87
    },
-   "1363": {
-    "texto": "**6. Promover o Sertão do Nordeste como polo estratégico de tecnologias e saberes inovadores para a economia do futuro e a adaptação climática.**",
-    "pagina": 87
-   },
-   "1447": {
-    "texto": "### **4. Fortalecer a Defesa Civil Estadual para proteger a população dos impactos de eventos climáticos extremos.**",
-    "pagina": 91
-   },
-   "1449": {
-    "texto": "a. Fortalecer a Defesa Civil Estadual com investimento contínuo em tecnologia, infraestrutura e capacitação técnica das equipes.",
-    "pagina": 91
-   },
-   "1450": {
-    "texto": "b. Aprofundar a cooperação técnica permanente com as Defesas Civis municipais.",
-    "pagina": 91
-   },
-   "1452": {
+   "1418": {
     "texto": "d. Fortalecer a capacidade das comunidades de prevenir e responder a riscos climáticos, ampliando a instalação de sensores meteorológicos e a criação de redes comunitárias de monitoramento e educação climática.",
     "pagina": 91
    },
-   "1502": {
+   "1458": {
+    "texto": "**Substituição de 85% da matriz energética de Fernando de Noronha por energia solar** Raquel 55",
+    "pagina": 94
+   },
+   "1466": {
     "texto": "1. Consolidar a Transição Energética e a Proteção Ambiental de Fernando de Noronha.",
     "pagina": 95
    },
-   "1503": {
+   "1467": {
     "texto": "a. Concluir a Fase 2 do Projeto Noronha Verde para implantar um sistema integrado de geração solar fotovoltaica e baterias, substituindo a matriz energética da ilha.",
     "pagina": 95
    },
-   "1504": {
+   "1468": {
     "texto": "b. Concluir e implementar o Plano de Gestão Sustentável Integrada (PGSI) da Orla e a revisão do Plano de Manejo da Área de Proteção Ambiental (APA).",
     "pagina": 95
    },
-   "1505": {
+   "1469": {
     "texto": "c. Avançar com o projeto Comunidades Costeiras e Recifes.",
     "pagina": 95
    }

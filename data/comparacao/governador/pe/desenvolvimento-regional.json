@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "desenvolvimento-regional-pe.json",
-  "gerado_em": "2026-09-14T05:54:38Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "gerado_em": "2026-09-14T19:14:26Z",
+  "exportado_em": "2026-09-14T19:15:24Z"
  },
  "candidatos": [
   {
@@ -58,40 +58,79 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Desconcentração regional e polos produtivos",
-   "proposta": "Interiorizar o desenvolvimento econômico, desconcentrando investimentos da Região Metropolitana do Recife e fortalecendo os polos e arranjos produtivos do Agreste, Zona da Mata, Sertão e Vale do São Francisco.",
-   "n_concorda": 3,
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Interiorizar o desenvolvimento e distribuir investimentos por todas as regiões do estado, reduzindo a concentração na Região Metropolitana do Recife",
+   "n_concorda": 5,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
       350,
       351,
-      366,
-      378
+      366
      ],
-     "nota": "Baseia-se em infraestrutura, inovação, qualificação e vocações territoriais"
+     "nota": "Afirma que o desenvolvimento não ficará concentrado na RMR"
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      951
+      927
      ],
-     "nota": "Foco nos Arranjos Produtivos Locais"
+     "nota": ""
+    },
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      99,
+      1163,
+      1164,
+      1169
+     ],
+     "nota": "Compromisso de fim da desigualdade territorial 'em tudo quanto é cidade'"
     },
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
       408
      ],
-     "nota": "Via cidades-polo como centros regionais de serviços"
+     "nota": "Via ampliação de serviços nas cidades-polo para municípios do entorno"
+    },
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      30
+     ],
+     "nota": "Menção genérica a investimentos para todo o estado"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Desconcentração regional e polos produtivos",
-   "proposta": "Criar uma política estadual de desenvolvimento por polos produtivos e arranjos territoriais com metas plurianuais para cada vocação econômica do estado.",
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Fortalecer polos produtivos e arranjos produtivos locais conforme as vocações econômicas de cada território (Agreste, Zona da Mata, Sertão, Vale do São Francisco)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      351,
+      366
+     ],
+     "nota": "Com infraestrutura, inovação e qualificação profissional"
+    },
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      927
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Instituir política estadual de desenvolvimento por polos produtivos e arranjos territoriais com metas plurianuais para cada vocação econômica",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -105,9 +144,9 @@
    }
   },
   {
-   "id": "p3",
-   "subtema": "Apoio a municípios e cidades-polo",
-   "proposta": "Oferecer cofinanciamento, assistência técnica e apoio à elaboração de projetos para implantação de equipamentos urbanos estratégicos (parques, terminais, mercados públicos, unidades de inovação, centrais de abastecimento) em cidades-polo, ampliando a oferta de serviços aos municípios do entorno.",
+   "id": "p4",
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Apoiar cidades-polo com cofinanciamento, assistência técnica e elaboração de projetos para implantar equipamentos urbanos estratégicos (parques, terminais, mercados públicos, unidades de inovação, centrais de abastecimento)",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -120,30 +159,15 @@
    }
   },
   {
-   "id": "p4",
-   "subtema": "Planejamento metropolitano",
-   "proposta": "Fortalecer a gestão e o planejamento territorial metropolitano com articulação entre o governo do estado e os municípios.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1593
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p5",
-   "subtema": "Planejamento metropolitano",
-   "proposta": "Reestruturar o CONDEPE/FIDEM, ampliando sua capacidade técnica para estudos, coordenação do planejamento metropolitano e regional e apoio aos municípios em desenvolvimento urbano, mobilidade, habitação, infraestrutura e ordenamento territorial.",
+   "subtema": "Regiões específicas",
+   "proposta": "Promover o Sertão como polo estratégico de tecnologias e saberes inovadores voltados à economia do futuro e à adaptação climática",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1594
+      1330
      ],
      "nota": ""
     }
@@ -151,53 +175,114 @@
   },
   {
    "id": "p6",
-   "subtema": "Territórios específicos",
-   "proposta": "Manter política territorial específica para o Arquipélago de Fernando de Noronha, com investimentos em infraestrutura, preservação ambiental e cidadania para moradores, trabalhadores e turistas.",
+   "subtema": "Regiões específicas",
+   "proposta": "Garantir infraestrutura, preservação ambiental e cidadania em Fernando de Noronha, consolidando o arquipélago como modelo de sustentabilidade",
    "n_concorda": 1,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
      "blocos": [
-      1478,
-      1492,
-      1500
+      1440,
+      1442,
+      1456,
+      1464
      ],
-     "nota": "Apresentada como continuidade de ações já iniciadas no arquipélago"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Região metropolitana e apoio a municípios",
+   "proposta": "Fortalecer a gestão e o planejamento territorial metropolitano com articulação entre o governo estadual e os municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1555
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Região metropolitana e apoio a municípios",
+   "proposta": "Reestruturar o CONDEPE/FIDEM, ampliando sua capacidade técnica de planejamento metropolitano e regional e de apoio aos municípios na formulação de políticas urbanas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1556
+     ],
+     "nota": ""
     }
    }
   }
  ],
  "blocos": {
-  "governador-pe-ivan-moraes-170002538097": {},
+  "governador-pe-ivan-moraes-170002538097": {
+   "99": {
+    "texto": "O atual modelo de desenvolvimento concentra investimentos, infraestrutura, formação tecnológica e oportunidades na Região Metropolitana do Recife. Embora grandes projetos tenham contribuído para ampliar a atividade econômica estadual, os benefícios não foram distribuídos de maneira equilibrada entre os territórios. A Zona da Mata, o Agreste e o Sertão ainda enfrentam limitações de infraestrutura, crédito, assistência técnica, conectividade, logística e acesso aos mercados, aprofundando as desigualdades regionais e estimulando a migração em busca de trabalho e serviços públicos.",
+    "pagina": 9
+   },
+   "1163": {
+    "texto": "Do oceano ao Velho Chico",
+    "pagina": 84
+   },
+   "1164": {
+    "texto": "Acabou desigualdade",
+    "pagina": 84
+   },
+   "1169": {
+    "texto": "Em tudo quanto é cidade",
+    "pagina": 84
+   }
+  },
   "governador-pe-joao-campos-170002537230": {
    "408": {
     "texto": "Fortalecer as cidades-polo como centros regionais de serviços e desenvolvimento, oferecendo cofinanciamento, assistência técnica e apoio à elaboração de projetos para implantação de equipamentos urbanos estratégicos como parques urbanos, terminais, mercados públicos, unidades de inovação e centrais de abastecimento, ampliando a oferta de serviços para os municípios do entorno.\n•",
     "pagina": 21
    }
   },
-  "governador-pe-professora-camila-170002537320": {},
+  "governador-pe-professora-camila-170002537320": {
+   "30": {
+    "texto": "Investimentos para todo o estado",
+    "pagina": 3
+   }
+  },
   "governador-pe-raquel-lyra-170002537227": {
-   "951": {
+   "927": {
     "texto": "#### 4. Interiorizar o desenvolvimento e fortalecer os Arranjos Produtivos Locais de Pernambuco.",
     "pagina": 61
    },
-   "1478": {
+   "1330": {
+    "texto": "**6. Promover o Sertão do Nordeste como polo estratégico de tecnologias e saberes inovadores para a economia do futuro e a adaptação climática.**",
+    "pagina": 87
+   },
+   "1440": {
+    "texto": "## ARQUIPÉLAGO DE FERNANDO DE NORONHA",
+    "pagina": 93
+   },
+   "1442": {
     "texto": "Fernando de Noronha é, sem dúvida, um dos lugares mais incríveis do mundo. Sua beleza natural é reconhecida nacional e internacionalmente, fazendo do arquipélago um dos principais cartões-postais do Brasil. No entanto, nos últimos anos, Fernando de Noronha se transformou num verdadeiro retrato do descaso da gestão pública. De tão mal cuidado, o aeroporto foi proibido pela Agência Nacional de Aviação Civil (ANAC) de receber aviões de grande porte em 2022, o que afetava tanto voos comerciais de grande porte quanto voos particulares, gerando prejuízos imensos ao turismo. O serviço de coleta e reciclagem do lixo era precário e altamente ineficiente. Apesar de todo o potencial de geração natural, a matriz energética ainda era altamente poluente, movida a combustíveis fósseis. Existia até uma disputa jurídica entre Pernambuco e a União sobre o domínio de Fernando de Noronha, o que ameaçava a governança pública e a segurança jurídica dos moradores.",
     "pagina": 93
    },
-   "1492": {
+   "1456": {
     "texto": "Continuaremos trabalhando para garantir que a infraestrutura, a preservação e a cidadania alcancem cada morador, trabalhador e turista que visita o arquipélago. Com responsabilidade social e ambiental, aliada à capacidade de gestão, seguiremos transformando Noronha em um modelo global de sustentabilidade, provando que é possível promover a convivência harmônica, justa e próspera entre o ser humano e a natureza.",
     "pagina": 94
    },
-   "1500": {
+   "1464": {
     "texto": "# FERNANDO DE NORONHA: PROPOSTAS PARA 2027>2030",
     "pagina": 95
    },
-   "1593": {
+   "1555": {
     "texto": "5. Fortalecer a Gestão e o Planejamento Territorial Metropolitano, articulando o Governo do Estado e os municípios",
     "pagina": 101
    },
-   "1594": {
+   "1556": {
     "texto": "a. Reestruturar o CONDEPE/FIDEM, fortalecendo sua capacidade técnica para elaborar estudos, coordenar o planejamento metropolitano e regional e apoiar os municípios na formulação de políticas de desenvolvimento urbano, mobilidade, habitação, infraestrutura e ordenamento do território.",
     "pagina": 101
    }
