@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "habitacao-cidades-se.json",
-  "gerado_em": "2026-09-14T08:42:18Z",
-  "exportado_em": "2026-09-14T09:16:13Z"
+  "gerado_em": "2026-09-14T22:19:02Z",
+  "exportado_em": "2026-09-14T22:38:19Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Produção de moradias",
-   "proposta": "Construir novas unidades habitacionais de interesse social para reduzir o déficit habitacional do estado",
+   "proposta": "Ampliar a construção e a oferta de novas moradias de interesse social para famílias de baixa renda",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -58,12 +58,12 @@
      "blocos": [
       860
      ],
-     "nota": ""
+     "nota": "Construção de moradias associada à urbanização de bairros"
     },
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      504
+      489
      ],
      "nota": ""
     }
@@ -71,8 +71,30 @@
   },
   {
    "id": "p2",
+   "subtema": "Produção de moradias",
+   "proposta": "Criar ou manter programa estadual nominado de produção habitacional, com priorização de públicos vulneráveis",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      228
+     ],
+     "nota": "Programa Casa Sergipana, com referência ao Residencial Parque da Vitória"
+    },
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      489
+     ],
+     "nota": "Programa 'Morar bem Sergipe', priorizando mulheres chefes de família, idosos, PcD, população de rua"
+    }
+   }
+  },
+  {
+   "id": "p3",
    "subtema": "Regularização fundiária",
-   "proposta": "Ampliar a regularização fundiária urbana, convertendo posse precária em titulação e segurança jurídica",
+   "proposta": "Ampliar a regularização fundiária urbana, convertendo posse precária em segurança jurídica",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -80,7 +102,7 @@
      "blocos": [
       228
      ],
-     "nota": "Via programa Casa Legal, de interesse social"
+     "nota": "Programa Casa Legal, de interesse social"
     },
     "governador-se-valmir-de-francisquinho-260002532010": {
      "posicao": "concorda",
@@ -92,17 +114,32 @@
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      504,
-      510
+      493
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p3",
+   "id": "p4",
+   "subtema": "Regularização fundiária",
+   "proposta": "Criar política estadual de regularização fundiária urbana e rural articulada com cartórios, Defensoria, Ministério Público e municípios, vinculando titulação a urbanização e infraestrutura",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      493,
+      494
+     ],
+     "nota": "Política 'Terra Legal Sergipe'"
+    }
+   }
+  },
+  {
+   "id": "p5",
    "subtema": "Apoio aos municípios",
-   "proposta": "Apoiar os municípios na estruturação e no planejamento de suas políticas urbanas e habitacionais",
+   "proposta": "Apoiar os municípios na estruturação da política urbana e habitacional local, com apoio técnico a planos, projetos e captação de recursos",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -122,40 +159,31 @@
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      519,
-      870
+      502,
+      854
+     ],
+     "nota": "Inclui apoio a fundos e conselhos municipais e banco de projetos"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Apoiar obras municipais de infraestrutura urbana, incluindo pavimentação, calçadas, iluminação e acessibilidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      854
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p4",
-   "subtema": "Urbanização de bairros e favelas",
-   "proposta": "Executar obras de urbanização em bairros, favelas e assentamentos precários em articulação com os municípios",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-se-valmir-de-francisquinho-260002532010": {
-     "posicao": "concorda",
-     "blocos": [
-      860,
-      863
-     ],
-     "nota": "Inclui incentivo a projetos de urbanização sustentável"
-    },
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      504,
-      513
-     ],
-     "nota": "Urbanização integrada com água, esgoto, pavimentação e iluminação"
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Urbanização de bairros e favelas",
+   "id": "p7",
+   "subtema": "Urbanização e drenagem",
    "proposta": "Apoiar obras de drenagem urbana e prevenção de alagamentos e de riscos em áreas urbanas",
    "n_concorda": 2,
    "posicoes": {
@@ -169,18 +197,54 @@
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      523,
-      524,
-      871
+      506,
+      507
      ],
-     "nota": "Integra drenagem, contenção de encostas e adaptação climática"
+     "nota": "Inclui mapeamento de áreas de risco, contenção de encostas e adaptação climática"
     }
    }
   },
   {
-   "id": "p6",
-   "subtema": "Melhoria de moradias existentes",
-   "proposta": "Ampliar programas de reforma e melhoria de habitações precárias para famílias de baixa renda",
+   "id": "p8",
+   "subtema": "Urbanização e drenagem",
+   "proposta": "Urbanizar bairros, favelas e assentamentos precários com obras integradas de infraestrutura e melhoria habitacional",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      860
+     ],
+     "nota": "Urbanização de bairros em parceria com municípios"
+    },
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      496
+     ],
+     "nota": "Água, esgoto, drenagem, pavimentação, iluminação e contenção de riscos"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Urbanização e drenagem",
+   "proposta": "Incentivar projetos de urbanização sustentável",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      863
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Melhoria de moradias",
+   "proposta": "Ampliar programas de reforma e melhoria de habitações precárias existentes",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -193,16 +257,16 @@
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      515
+      498
      ],
-     "nota": "Inclui assistência técnica e adequações de acessibilidade e salubridade"
+     "nota": "Inclui assistência técnica, acessibilidade e eficiência energética"
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Planejamento e dados da política habitacional",
-   "proposta": "Basear a política habitacional em diagnósticos e dados atualizados sobre déficit e precariedade",
+   "id": "p11",
+   "subtema": "Planejamento e gestão da política habitacional",
+   "proposta": "Elaborar diagnóstico do déficit habitacional e basear a política de habitação em evidências e dados atualizados",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -210,87 +274,27 @@
      "blocos": [
       228
      ],
-     "nota": "Gestão baseada em evidências, com diagnósticos e mapeamento"
+     "nota": "Diagnósticos precisos e gestão integrada com participação social"
     },
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      508
+      491
      ],
-     "nota": "Diagnóstico com Censo 2022 e PNAD Contínua"
+     "nota": "Uso do Censo 2022 e da PNAD Contínua"
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Planejamento e dados da política habitacional",
+   "id": "p12",
+   "subtema": "Planejamento e gestão da política habitacional",
    "proposta": "Elaborar e implementar o Plano Estadual de Habitação de Interesse Social",
    "n_concorda": 1,
    "posicoes": {
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      508
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Planejamento e dados da política habitacional",
-   "proposta": "Criar eixo permanente de habitação, regularização fundiária e precariedade urbana no Observatório de Sergipe",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      528
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Planejamento e dados da política habitacional",
-   "proposta": "Publicar critérios de seleção, cadastros, obras, investimentos e famílias beneficiadas da política habitacional",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      526
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Produção de moradias",
-   "proposta": "Criar programa estadual de habitação de interesse social com priorização de mulheres chefes de família, idosos, pessoas com deficiência, população em situação de rua e famílias em áreas de risco",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      506
-     ],
-     "nota": "Programa 'Morar Bem Sergipe'"
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Produção de moradias",
-   "proposta": "Organizar carteira estadual de terrenos, imóveis ociosos e vazios urbanos aptos à habitação de interesse social",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      521
+      491
      ],
      "nota": ""
     }
@@ -298,8 +302,23 @@
   },
   {
    "id": "p13",
-   "subtema": "Acesso à casa própria",
-   "proposta": "Ampliar subsídios e mecanismos de apoio à aquisição da casa própria, articulados com programas federais de financiamento habitacional",
+   "subtema": "Planejamento e gestão da política habitacional",
+   "proposta": "Criar eixo permanente de monitoramento de habitação, regularização fundiária e precariedade urbana em observatório estadual de dados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      511
+     ],
+     "nota": "No Observatório de Sergipe"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Planejamento e gestão da política habitacional",
+   "proposta": "Publicar critérios de seleção, cadastros, obras, investimentos e famílias beneficiadas da política habitacional, com controle social",
    "n_concorda": 1,
    "posicoes": {
     "governador-se-ricardo-marques-260002549466": {
@@ -307,77 +326,30 @@
      "blocos": [
       509
      ],
-     "nota": "Inclui articulação com Caixa Econômica Federal"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Atendimento habitacional emergencial",
-   "proposta": "Estruturar atendimento habitacional emergencial com aluguel ou locação social, reassentamento seguro e acolhimento de famílias removidas de áreas de risco",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      517
-     ],
      "nota": ""
     }
    }
   },
   {
    "id": "p15",
-   "subtema": "Regularização fundiária",
-   "proposta": "Criar política estadual de regularização fundiária urbana e rural articulando cartórios, Defensoria Pública e Ministério Público, com titulação vinculada a urbanização e infraestrutura",
+   "subtema": "Planejamento e gestão da política habitacional",
+   "proposta": "Organizar carteira estadual de terrenos, imóveis ociosos e vazios urbanos aptos à habitação de interesse social",
    "n_concorda": 1,
    "posicoes": {
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      510,
-      511
+      504
      ],
-     "nota": "Programa 'Terra Legal Sergipe'"
+     "nota": ""
     }
    }
   },
   {
    "id": "p16",
-   "subtema": "Requalificação de áreas centrais",
-   "proposta": "Requalificar o centro de Aracaju com governança compartilhada, preservação do patrimônio, novos equipamentos culturais, centro administrativo do Estado e ampliação da habitação na região",
+   "subtema": "Planejamento e gestão da política habitacional",
+   "proposta": "Mapear e capacitar instituições e movimentos sociais ligados à política habitacional",
    "n_concorda": 1,
-   "posicoes": {
-    "governador-se-fabio-260002542491": {
-     "posicao": "concorda",
-     "blocos": [
-      237
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Apoio aos municípios",
-   "proposta": "Apoiar municípios em obras de pavimentação, calçadas, iluminação e acessibilidade, com apoio técnico, banco de projetos e captação de recursos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-se-ricardo-marques-260002549466": {
-     "posicao": "concorda",
-     "blocos": [
-      870,
-      871
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Participação social",
-   "proposta": "Mapear, capacitar e envolver movimentos sociais e organizações comunitárias na política habitacional",
-   "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
      "posicao": "concorda",
@@ -385,13 +357,51 @@
       228
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Acesso à casa própria e atendimento emergencial",
+   "proposta": "Ampliar subsídios e apoio à aquisição da casa própria, articulados a programas federais de financiamento habitacional",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
-      504
+      492
      ],
-     "nota": "Articulação com movimentos sociais, universidades e setor privado"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Acesso à casa própria e atendimento emergencial",
+   "proposta": "Estruturar atendimento habitacional emergencial, com aluguel ou locação social, reassentamento de famílias em áreas de risco e apoio à população em situação de rua",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      500
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Requalificação de centros urbanos",
+   "proposta": "Requalificar o centro de Aracaju, com preservação do patrimônio histórico, novos equipamentos culturais, ampliação da habitação na região e transferência do centro administrativo do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      237
+     ],
+     "nota": "Governança articulada com o município e a sociedade civil"
     }
    }
   }
@@ -408,71 +418,63 @@
    }
   },
   "governador-se-ricardo-marques-260002549466": {
-   "504": {
-    "texto": "Reduzir o déficit habitacional e superar a precariedade urbana e fundiária em Sergipe, assegurando moradia digna, segura, regularizada e bem localizada para as famílias de menor renda. A política estadual deverá combinar produção de novas unidades habitacionais, subsídios à aquisição da moradia, melhoria de habitações existentes, regularização fundiária, urbanização de favelas e comunidades urbanas, prevenção de ocupações em áreas de risco e integração com saneamento, mobilidade, assistência social, trabalho, saúde, educação e desenvolvimento urbano. A atuação deverá ser contínua, territorializada e articulada com municípios, Governo Federal, Caixa Econômica Federal, movimentos sociais, setor privado, universidades e organizações comunitárias.",
-    "pagina": 42
-   },
-   "506": {
+   "489": {
     "texto": "Criação do programa ‘’Morar bem Sergipe’’ para ampliar a construção de moradias e conjuntos habitacionais de interesse social para famílias de baixa renda, priorizando mulheres chefes de família, famílias em situação de vulnerabilidade, pessoas idosas, pessoas com deficiência, população em situação de rua, famílias em áreas de risco e moradores de assentamentos precários.",
     "pagina": 42
    },
-   "508": {
+   "491": {
     "texto": "Fortalecer a capacidade institucional, o planejamento e a governança da política estadual de habitação de interesse social, elaborando e implementando o Plano Estadual de Habitação de Interesse Social, com diagnóstico atualizado a partir do Censo Demográfico 2022 do IBGE, da PNAD Contínua e dos dados territoriais sobre déficit habitacional, aluguel excessivo, coabitação, moradias precárias, favelas e comunidades urbanas, ausência de documentação da propriedade e áreas de risco.",
     "pagina": 42
    },
-   "509": {
+   "492": {
     "texto": "III. Ampliar e aperfeiçoar os mecanismos de subsídio habitacional e apoio à aquisição da casa própria, articulando a política estadual com programas federais de habitação, financiamento habitacional e modalidades de entrada subsidiada.",
     "pagina": 42
    },
-   "510": {
+   "493": {
     "texto": "IV. Criar a política pública ‘‘Terra Legal Sergipe’’ para maximizar e modernizar a regularização fundiária urbana e rural, transformando posse precária em segurança jurídica, patrimônio familiar e cidadania. A ação deverá articular",
     "pagina": 43
    },
-   "511": {
+   "494": {
     "texto": "Estado, municípios, cartórios, Defensoria Pública, Ministério Público, órgãos urbanísticos e comunidades, vinculando a titulação à urbanização, ao saneamento, à infraestrutura, à acessibilidade e à proteção social.",
     "pagina": 43
    },
-   "513": {
+   "496": {
     "texto": "Fortalecer a urbanização integrada de favelas, comunidades urbanas e assentamentos precários, com obras de abastecimento de água, esgotamento sanitário, drenagem, pavimentação, iluminação, contenção de riscos, acessibilidade, equipamentos públicos, áreas de convivência e melhoria habitacional.",
     "pagina": 43
    },
-   "515": {
+   "498": {
     "texto": "Ampliar os programas de melhoria habitacional, reforma e assistência técnica para famílias de baixa renda, apoiando adequações estruturais, banheiros, cozinhas, acessibilidade, ventilação, segurança, salubridade, eficiência energética e ampliação de moradias.",
     "pagina": 43
    },
-   "517": {
+   "500": {
     "texto": "Estruturar uma política de atendimento habitacional para situações emergenciais e de vulnerabilidade extrema, incluindo aluguel social ou locação social em casos específicos, reassentamento seguro, acolhimento de famílias removidas de áreas de risco e apoio habitacional a pessoas em situação de rua.",
     "pagina": 43
    },
-   "519": {
+   "502": {
     "texto": "Fortalecer a cooperação com os municípios na estruturação da política habitacional local, apoiando a elaboração de planos, cadastros, projetos, regularização de terrenos, licenciamento, captação de recursos e organização de fundos e conselhos municipais de habitação.",
     "pagina": 43
    },
-   "521": {
+   "504": {
     "texto": "Organizar uma carteira estadual de terrenos, imóveis e projetos habitacionais, identificando áreas públicas e privadas aptas à habitação de interesse social, imóveis ociosos, vazios urbanos e terrenos bem localizados.",
     "pagina": 43
    },
-   "523": {
+   "506": {
     "texto": "Integrar habitação, saneamento, mobilidade e prevenção de riscos urbanos e ambientais, evitando a produção de moradias isoladas, sem serviços ou distantes das oportunidades. A política deverá incorporar mapeamento de áreas de risco, drenagem, contenção de encostas,",
     "pagina": 43
    },
-   "524": {
+   "507": {
     "texto": "adaptação climática, recuperação ambiental e soluções urbanísticas que impeçam a reprodução da precariedade.",
     "pagina": 43
    },
-   "526": {
+   "509": {
     "texto": "Fortalecer a transparência e o controle social da política habitacional, com publicação de critérios de seleção, cadastros, obras, investimentos, famílias beneficiadas, municípios atendidos e resultados alcançados.",
     "pagina": 44
    },
-   "528": {
+   "511": {
     "texto": "Fortalecer o Observatório de Sergipe com um eixo permanente de habitação, regularização fundiária e precariedade urbana, reunindo e atualizando dados sobre déficit habitacional, aluguel excessivo, coabitação, domicílios precários, favelas e comunidades urbanas, ausência de documentação da propriedade, áreas de risco, obras habitacionais e famílias atendidas.",
     "pagina": 44
    },
-   "870": {
-    "texto": "IX.",
-    "pagina": 71
-   },
-   "871": {
+   "854": {
     "texto": "Apoiar os municípios na estruturação de projetos de infraestrutura urbana, especialmente pavimentação, drenagem, calçadas, iluminação, acessibilidade, contenção de riscos, requalificação de áreas degradadas e acesso a escolas, unidades de saúde e equipamentos públicos. O Estado deve oferecer apoio técnico, banco de projetos e articulação para captação de recursos.",
     "pagina": 71
    }
