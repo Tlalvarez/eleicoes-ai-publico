@@ -1,0 +1,19 @@
+{
+ "contrato": "busca/1",
+ "cargo": "governador",
+ "uf": "MG",
+ "modelo": "jina-embeddings-v3",
+ "dimensoes": 256,
+ "quantizacao": "int8 (unitário × 127)",
+ "task_consulta": "retrieval.query",
+ "propostas": 832,
+ "blocos": 3083,
+ "com_sinonimos": 832,
+ "documentos_sha256": "f0eb3fe982f03b124259ce8881d961f8f7dec61f831f8683a13704c8bc6ab38f",
+ "bytes": {
+  "documentos.json": 1805846,
+  "vetores-propostas.bin": 212992,
+  "vetores-blocos.bin": 789248
+ },
+ "exportado_em": "2026-09-14T04:36:11Z"
+}
