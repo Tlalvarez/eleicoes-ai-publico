@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "assistencia-social-ms.json",
-  "gerado_em": "2026-09-14T12:07:43Z",
-  "exportado_em": "2026-09-14T12:41:08Z"
+  "gerado_em": "2026-09-14T15:14:27Z",
+  "exportado_em": "2026-09-14T15:27:03Z"
  },
  "candidatos": [
   {
@@ -53,13 +53,21 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017115315",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552191/MS"
+  },
+  {
+   "slug": "governador-ms-lucien-rezende-120002532257",
+   "nome": "Lucien Rezende",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016837601",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002532257/MS"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Segurança alimentar",
-   "proposta": "Reformular e fortalecer a política estadual de segurança alimentar e nutricional",
+   "proposta": "Reformular e fortalecer a política estadual de segurança alimentar e nutricional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -67,21 +75,21 @@
      "blocos": [
       831
      ],
-     "nota": "Fala em recriar o programa estadual de segurança alimentar"
+     "nota": "Fala em recriar o programa estadual de segurança alimentar, com foco no combate à fome"
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
       271
      ],
-     "nota": "Fala em modernizar a política já existente"
+     "nota": "Modernização com foco em qualidade nutricional e dignidade no acesso"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Segurança alimentar",
-   "proposta": "Implantar cozinhas solidárias e bancos de alimentos, com apoio à agricultura familiar e incentivo à alimentação saudável",
+   "proposta": "Implantar cozinhas solidárias e bancos de alimentos, com apoio à agricultura familiar e incentivo à alimentação saudável.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -97,13 +105,14 @@
   {
    "id": "p3",
    "subtema": "Segurança alimentar",
-   "proposta": "Priorizar qualidade nutricional e dignidade no acesso aos alimentos como diretriz da política estadual",
+   "proposta": "Retomar a oferta de restaurantes populares no Estado.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
+    "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
-      271
+      814,
+      815
      ],
      "nota": ""
     }
@@ -112,7 +121,7 @@
   {
    "id": "p4",
    "subtema": "População em situação de rua",
-   "proposta": "Implantar política estadual específica para a população em situação de rua, com atendimento psicossocial e de saúde mental, acolhimento e reinserção social",
+   "proposta": "Implantar política estadual específica para a população em situação de rua, com acolhimento, atendimento psicossocial e de saúde mental e reinserção social.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -121,7 +130,7 @@
       792,
       830
      ],
-     "nota": "Inclui moradia assistida e qualificação profissional"
+     "nota": "Inclui moradia assistida, qualificação profissional e ação intersetorial"
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
@@ -134,8 +143,8 @@
   },
   {
    "id": "p5",
-   "subtema": "Inclusão produtiva e acompanhamento das famílias",
-   "proposta": "Integrar assistência social a qualificação profissional, geração de renda e inclusão produtiva, superando a fragmentação das políticas",
+   "subtema": "Inclusão produtiva e superação da vulnerabilidade",
+   "proposta": "Integrar a assistência social com qualificação profissional, geração de renda e demais políticas setoriais para promover autonomia das famílias.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -144,21 +153,22 @@
       761,
       835
      ],
-     "nota": "Inclui também saúde e educação na integração"
+     "nota": "Ênfase em superar a fragmentação entre assistência, saúde, educação e renda"
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
+      269,
       271
      ],
-     "nota": "Foco em encaminhamento ao emprego de beneficiários de programas sociais"
+     "nota": "Ênfase em encaminhamento ao emprego dos beneficiários de programas sociais"
     }
    }
   },
   {
    "id": "p6",
-   "subtema": "Inclusão produtiva e acompanhamento das famílias",
-   "proposta": "Implantar mecanismos permanentes de monitoramento e acompanhamento da superação da vulnerabilidade social das famílias",
+   "subtema": "Inclusão produtiva e superação da vulnerabilidade",
+   "proposta": "Implantar mecanismos permanentes de monitoramento e acompanhamento da superação da vulnerabilidade social das famílias.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -173,15 +183,15 @@
   },
   {
    "id": "p7",
-   "subtema": "Renda e combate à pobreza",
-   "proposta": "Criar programa estadual de combate à pobreza e à fome articulado com os programas federais (Bolsa Família, SUAS) e com a inclusão produtiva",
+   "subtema": "Cuidados e apoio às famílias",
+   "proposta": "Criar política estadual de cuidados com equipamentos de apoio às famílias vulneráveis, como centros-dia para idosos e lavanderias comunitárias.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
-      137,
-      812
+      814,
+      815
      ],
      "nota": ""
     }
@@ -189,56 +199,8 @@
   },
   {
    "id": "p8",
-   "subtema": "CRAS, CREAS e SUAS",
-   "proposta": "Ampliar CRAS e CREAS, com equipes multiprofissionais, regionalização do atendimento e apoio técnico aos municípios para fortalecer o SUAS",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      757,
-      813
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Política de cuidados",
-   "proposta": "Criar política estadual de cuidados e de apoio às famílias em situação de vulnerabilidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      814,
-      815
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Política de cuidados",
-   "proposta": "Reimplantar restaurantes populares e implantar lavanderias comunitárias e centros-dia para idosos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      814,
-      815
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Política de cuidados",
-   "proposta": "Ampliar em 500 vagas o programa de apoio a cuidadores de pessoas dependentes (Cuidar de Quem Cuida)",
+   "subtema": "Cuidados e apoio às famílias",
+   "proposta": "Ampliar em 500 vagas o programa estadual de apoio a pessoas cuidadoras (Cuidar de Quem Cuida).",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -252,9 +214,56 @@
    }
   },
   {
+   "id": "p9",
+   "subtema": "Rede socioassistencial e SUAS",
+   "proposta": "Ampliar CRAS e CREAS, com equipes multiprofissionais, regionalização do atendimento e apoio técnico aos municípios para fortalecer o SUAS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      757,
+      813
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Combate à pobreza e transferência de renda",
+   "proposta": "Criar programa estadual de combate à pobreza e à fome articulado com os programas federais, como Bolsa Família e SUAS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      137,
+      812
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Implantar cadastro estadual integrado das pessoas com deficiência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      271
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p12",
-   "subtema": "Crianças e adolescentes em acolhimento",
-   "proposta": "Estender programa de apoio a adolescentes acolhidos e desacolhidos (Recomeços Jovem) a 100% do público, até os 20 anos de idade",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Criar programa de emprego apoiado para pessoas com deficiência, com no mínimo 1.000 vagas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -268,8 +277,8 @@
   },
   {
    "id": "p13",
-   "subtema": "Crianças e adolescentes em acolhimento",
-   "proposta": "Criar programa de residências apoiadas nos quatro maiores municípios do Estado",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Fortalecer a rede estadual de atenção integral à pessoa com deficiência e ao autismo, com organizações da sociedade civil como polos regionais de atendimento.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -284,7 +293,7 @@
   {
    "id": "p14",
    "subtema": "Pessoas com deficiência",
-   "proposta": "Implantar cadastro estadual integrado das pessoas com deficiência",
+   "proposta": "Criar programa de residências apoiadas nos quatro maiores municípios do Estado.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -298,13 +307,14 @@
   },
   {
    "id": "p15",
-   "subtema": "Pessoas com deficiência",
-   "proposta": "Criar programa de emprego apoiado para pessoas com deficiência, com no mínimo mil vagas",
+   "subtema": "Crianças e adolescentes acolhidos",
+   "proposta": "Estender programa de apoio a adolescentes em unidades de acolhimento a 100% desse público, mantendo o acompanhamento após o desacolhimento até os 20 anos.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
+      36,
       271
      ],
      "nota": ""
@@ -313,8 +323,8 @@
   },
   {
    "id": "p16",
-   "subtema": "Pessoas com deficiência",
-   "proposta": "Fortalecer a rede estadual de atenção integral à pessoa com deficiência e autismo, com polos regionais e atuação de organizações da sociedade civil",
+   "subtema": "Mulheres em vulnerabilidade",
+   "proposta": "Abrir ao menos 600 novas vagas em programa estadual de qualificação e apoio destinado a mulheres vítimas de violência.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -329,7 +339,7 @@
   {
    "id": "p17",
    "subtema": "Mulheres em vulnerabilidade",
-   "proposta": "Estruturar políticas permanentes de promoção da autonomia econômica das mulheres",
+   "proposta": "Abrir nova casa abrigo em Campo Grande para mulheres vítimas de violência.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -344,12 +354,13 @@
   {
    "id": "p18",
    "subtema": "Mulheres em vulnerabilidade",
-   "proposta": "Ampliar em pelo menos 600 vagas o programa de qualificação e apoio a mulheres vítimas de violência e abrir nova casa abrigo em Campo Grande",
+   "proposta": "Estruturar políticas permanentes de promoção da autonomia econômica das mulheres.",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
+      269,
       271
      ],
      "nota": ""
@@ -420,6 +431,7 @@
     "pagina": 52
    }
   },
-  "governador-ms-joao-henrique-catan-120002552191": {}
+  "governador-ms-joao-henrique-catan-120002552191": {},
+  "governador-ms-lucien-rezende-120002532257": {}
  }
 }

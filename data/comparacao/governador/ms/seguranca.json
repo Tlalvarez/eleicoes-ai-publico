@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "seguranca-ms.json",
-  "gerado_em": "2026-09-14T11:33:19Z",
-  "exportado_em": "2026-09-14T12:41:08Z"
+  "gerado_em": "2026-09-14T14:39:47Z",
+  "exportado_em": "2026-09-14T15:27:03Z"
  },
  "candidatos": [
   {
@@ -53,15 +53,31 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017115315",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552191/MS"
+  },
+  {
+   "slug": "governador-ms-lucien-rezende-120002532257",
+   "nome": "Lucien Rezende",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016837601",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002532257/MS"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Fronteira e crime organizado",
-   "proposta": "Reforçar a presença e a atuação integrada das forças estaduais e federais nas regiões de fronteira para enfrentar o crime organizado transfronteiriço",
-   "n_concorda": 5,
+   "proposta": "Intensificar o combate ao crime organizado e aos crimes transfronteiriços com atuação integrada entre forças estaduais e federais",
+   "n_concorda": 6,
    "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      106,
+      112
+     ],
+     "nota": "Inclui cooperação com órgãos internacionais na fronteira"
+    },
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
@@ -74,7 +90,8 @@
      "posicao": "concorda",
      "blocos": [
       91,
-      751
+      751,
+      753
      ],
      "nota": "Inclui rotas críticas da Rota Bioceânica"
     },
@@ -83,7 +100,124 @@
      "blocos": [
       434
      ],
-     "nota": "Bases integradas permanentes em Ponta Porã, Corumbá e Porto Murtinho"
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      534,
+      546
+     ],
+     "nota": "Inclui cooperação com Bolívia e Paraguai"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Fronteira e crime organizado",
+   "proposta": "Implantar muralha digital de monitoramento eletrônico na faixa de fronteira (câmeras, leitura de placas, drones e satélites)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
+      62
+     ],
+     "nota": "Monitoramento por drones e satélites nas rotas do crime"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      536,
+      1514,
+      1828,
+      1829
+     ],
+     "nota": "Custo estimado em ~R$30 mi, alavancável no FNSP"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Fronteira e crime organizado",
+   "proposta": "Cobrar e implementar integralmente o SISFRON no Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
+      63
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Fronteira e crime organizado",
+   "proposta": "Instalar bases policiais permanentes em municípios de fronteira, com fortalecimento do policiamento especializado (DOF)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      434
+     ],
+     "nota": "Ponta Porã, Corumbá, Porto Murtinho e região sul-fronteira"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      1515
+     ],
+     "nota": "Bases do DOF em Ponta Porã e Corumbá na Fase 1"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Investir em inteligência policial e tecnologia como eixo central da política de segurança",
+   "n_concorda": 6,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      106
+     ],
+     "nota": ""
+    },
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      56
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      91,
+      747
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      437,
+      441
+     ],
+     "nota": ""
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
@@ -97,42 +231,16 @@
      "blocos": [
       534,
       536,
-      546
+      1805
      ],
-     "nota": "Prioriza a fronteira na alocação de efetivo e tecnologia"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p2",
-   "subtema": "Fronteira e crime organizado",
-   "proposta": "Implantar muralha digital na fronteira, com câmeras, leitura de placas, drones e monitoramento por satélite",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      62
-     ],
-     "nota": "Monitoramento por drones e satélites nas rotas do crime"
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      536,
-      548,
-      1503,
-      1514,
-      1828
-     ],
-     "nota": "Estima ~R$30 mi, alavancáveis no FNSP, já na fase 1"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Fronteira e crime organizado",
-   "proposta": "Criar central/centro integrado de inteligência reunindo Polícia Militar, Polícia Civil e DOF com forças federais",
+   "id": "p6",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Criar central integrada de inteligência unindo Polícia Militar, Polícia Civil e forças de fronteira, com plataforma única de dados",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -148,101 +256,146 @@
       543,
       546,
       1157,
-      1518
+      1518,
+      1828
      ],
-     "nota": "Prazo de 100 dias para a central"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Fronteira e crime organizado",
-   "proposta": "Cobrar e implementar integralmente o SISFRON no território estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      56,
-      63
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Fronteira e crime organizado",
-   "proposta": "Fortalecer o DOF com novas bases e policiamento especializado de fronteira em Ponta Porã e Corumbá",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      434
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      548,
-      1515
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Fronteira e crime organizado",
-   "proposta": "Criar plataforma única de dados tributários e criminais para rastrear o dinheiro do crime e combater a lavagem",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      536,
-      546
-     ],
-     "nota": "Integra Sefaz, DOF, PRF, PC, PM e Receita, com IA"
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      437
-     ],
-     "nota": "Foco no combate à lavagem de dinheiro pela Polícia Civil"
+     "nota": "Prazo de 100 dias; integração PM+PC+DOF"
     }
    }
   },
   {
    "id": "p7",
-   "subtema": "Fronteira e crime organizado",
-   "proposta": "Estabelecer cooperação policial formal com Bolívia e Paraguai",
-   "n_concorda": 1,
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Usar inteligência financeira para \"seguir o dinheiro\" do crime e combater a lavagem de dinheiro",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      437
+     ],
+     "nota": ""
+    },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      546
+      546,
+      1157
+     ],
+     "nota": "Plataforma tributária+criminal com Sefaz, PRF e Receita"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Implantar videomonitoramento urbano com leitura de placas e centros integrados de comando",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      747
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      536
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Criar ou fortalecer política estadual integrada de enfrentamento ao feminicídio e à violência contra a mulher",
-   "n_concorda": 5,
+   "id": "p9",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Orientar prevenção, patrulhamento e investigação por análise de dados e indicadores territoriais de criminalidade",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      746
+     ],
+     "nota": "Cria um observatório de dados"
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      441
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      585,
+      589
+     ],
+     "nota": "Alocação por mapa de risco e reunião mensal de dados"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Definir metas regionais de redução da criminalidade, com cobrança de resultados dos comandos locais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      441
+     ],
+     "nota": "Metas regionais e prevenção focalizada"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      585,
+      589,
+      1159
+     ],
+     "nota": "Modelo CompStat, com responsabilização do comandante da área"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Implantar o LabSEJUSP como laboratório de soluções tecnológicas para a segurança pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Fortalecer as políticas de prevenção e enfrentamento à violência contra a mulher e ao feminicídio",
+   "n_concorda": 6,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      110
+     ],
+     "nota": ""
+    },
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
       60
      ],
-     "nota": "Pacto de Enfrentamento ao Feminicídio com rede estadual de proteção"
+     "nota": "Pacto de Enfrentamento ao Feminicídio com rede estadual"
     },
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -256,7 +409,7 @@
      "blocos": [
       427
      ],
-     "nota": "Integração entre segurança, assistência social e justiça"
+     "nota": ""
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
@@ -272,14 +425,14 @@
       578,
       1158
      ],
-     "nota": "Meta de taxa de feminicídio e financiamento via FNSP"
+     "nota": "Política estadual específica, com dado público, na Fase 1"
     }
    }
   },
   {
-   "id": "p9",
+   "id": "p13",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar delegacias especializadas de atendimento à mulher",
+   "proposta": "Ampliar delegacias especializadas de atendimento à mulher, com atendimento regionalizado",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -294,7 +447,7 @@
      "blocos": [
       427
      ],
-     "nota": ""
+     "nota": "Atendimento 24h regionalizado"
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
@@ -306,24 +459,17 @@
    }
   },
   {
-   "id": "p10",
+   "id": "p14",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar a capilaridade do atendimento às mulheres vítimas de violência no interior e nos pequenos municípios",
-   "n_concorda": 3,
+   "proposta": "Ampliar a capilaridade da rede de proteção à mulher nos municípios do interior",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
       60
      ],
-     "nota": "Capacitação de agentes nos menores municípios"
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      427
-     ],
-     "nota": "Atendimento regionalizado 24h"
+     "nota": "Capacitar agentes dos menores municípios"
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
@@ -335,9 +481,24 @@
    }
   },
   {
-   "id": "p11",
+   "id": "p15",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar o monitoramento eletrônico de agressores por tornozeleira",
+   "proposta": "Implantar Patrulhas Maria da Penha integradas à rede de proteção",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      60
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Ampliar o monitoramento eletrônico de agressores, com tornozeleira e alerta de aproximação",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -352,36 +513,14 @@
      "blocos": [
       264
      ],
-     "nota": ""
+     "nota": "Inclui sistema de alerta via celular"
     }
    }
   },
   {
-   "id": "p12",
+   "id": "p17",
    "subtema": "Violência contra a mulher",
-   "proposta": "Implantar dispositivos de alerta e botão do pânico para mulheres em situação de risco",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": "Alerta de aproximação via celular"
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      578
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Garantir acolhimento e moradia às mulheres vítimas de violência (casas de acolhimento, aluguel social)",
+   "proposta": "Garantir acolhimento habitacional às mulheres vítimas de violência (casas de acolhimento, aluguel social)",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -401,10 +540,25 @@
    }
   },
   {
-   "id": "p14",
+   "id": "p18",
    "subtema": "Violência contra a mulher",
-   "proposta": "Implantar patrulhas Maria da Penha integradas à rede de proteção",
+   "proposta": "Disponibilizar botão do pânico às mulheres em situação de risco",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      578
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Qualificar e humanizar os protocolos de atendimento às mulheres vítimas de violência",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
@@ -412,15 +566,7 @@
       60
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Humanizar os protocolos de atendimento às mulheres vítimas de violência",
-   "n_concorda": 1,
-   "posicoes": {
+    },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
@@ -431,7 +577,7 @@
    }
   },
   {
-   "id": "p16",
+   "id": "p20",
    "subtema": "Violência contra a mulher",
    "proposta": "Incluir o tema da violência contra a mulher na grade escolar",
    "n_concorda": 1,
@@ -446,27 +592,25 @@
    }
   },
   {
-   "id": "p17",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Publicar dados abertos sobre feminicídio e monitorar indicador específico",
-   "n_concorda": 1,
+   "id": "p21",
+   "subtema": "Prevenção social da violência",
+   "proposta": "Integrar segurança pública a políticas sociais de educação, esporte, cultura e assistência em áreas vulneráveis",
+   "n_concorda": 6,
    "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
+    "governador-ms-lucien-rezende-120002532257": {
      "posicao": "concorda",
      "blocos": [
-      578,
-      579
+      108
+     ],
+     "nota": "Inclui geração de emprego nas periferias"
+    },
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      66
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Prevenção social da violência",
-   "proposta": "Implantar política de prevenção à violência articulando segurança com educação, esporte, cultura e assistência social nos territórios vulneráveis",
-   "n_concorda": 5,
-   "posicoes": {
+    },
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
@@ -480,7 +624,7 @@
      "blocos": [
       438
      ],
-     "nota": "Política Estadual de Prevenção à Violência, com foco em juventude e periferias"
+     "nota": ""
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
@@ -495,21 +639,36 @@
       552,
       554
      ],
-     "nota": "Escola integral, esporte e cultura nas regiões de risco"
-    },
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      66
-     ],
-     "nota": "Articula repressão com inclusão social de jovens vulneráveis"
+     "nota": "Escola integral nas regiões de risco contra o recrutamento"
     }
    }
   },
   {
-   "id": "p19",
+   "id": "p22",
    "subtema": "Prevenção social da violência",
-   "proposta": "Retomar a adesão e a parceria do Estado com o Pronasci e o Governo Federal",
+   "proposta": "Instituir política estadual permanente de prevenção à violência voltada à juventude e às periferias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      438
+     ],
+     "nota": "Inclui prevenção às drogas e inclusão produtiva"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Prevenção social da violência",
+   "proposta": "Retomar a adesão do Estado ao Pronasci, articulando repressão ao crime com inclusão social",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -523,105 +682,18 @@
    }
   },
   {
-   "id": "p20",
-   "subtema": "Prevenção social da violência",
-   "proposta": "Fortalecer o policiamento comunitário e os conselhos locais de segurança com participação da população",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      762
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": "Inclui canais digitais de participação"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Prevenção social da violência",
-   "proposta": "Integrar a segurança estadual com os municípios e suas guardas municipais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Prevenção social da violência",
-   "proposta": "Fortalecer as políticas de proteção infantojuvenil integradas à rede de assistência",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      761
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Efetivo e valorização policial",
-   "proposta": "Realizar concursos públicos para recompor o déficit de efetivo das forças de segurança",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      56,
-      69
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      435
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      534,
-      536,
-      1514,
-      1516,
-      1802,
-      1803
-     ],
-     "nota": "Concurso emergencial de 500 a 1.000 no ano 1, em rampa conforme capacidade fiscal"
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      748
-     ],
-     "nota": "Fortalecimento e interiorização da capacidade operacional"
-    }
-   }
-  },
-  {
    "id": "p24",
    "subtema": "Efetivo e valorização policial",
-   "proposta": "Valorizar os profissionais de segurança com progressão de carreira, formação continuada e melhores condições de trabalho",
-   "n_concorda": 4,
+   "proposta": "Valorizar os profissionais da segurança pública com formação continuada, progressão de carreira e melhores condições de trabalho",
+   "n_concorda": 5,
    "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      106
+     ],
+     "nota": ""
+    },
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
@@ -649,16 +721,24 @@
       556,
       558
      ],
-     "nota": "Foco na base da PM: soldo e promoções em dia"
+     "nota": "Foco na base da PM, com promoções em dia"
     }
    }
   },
   {
    "id": "p25",
    "subtema": "Efetivo e valorização policial",
-   "proposta": "Promover recomposição salarial dos profissionais de segurança",
-   "n_concorda": 2,
+   "proposta": "Recompor o efetivo policial por meio de novos concursos públicos",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
+      69
+     ],
+     "nota": ""
+    },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
@@ -669,30 +749,37 @@
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      558,
-      560
+      534,
+      536,
+      1514,
+      1516,
+      1518,
+      1802,
+      1803
      ],
-     "nota": "Financiada pelo fim de supersalários e desvios"
+     "nota": "Em rampa, prioridade na fronteira, sem meta rígida de 4 mil"
     }
    }
   },
   {
    "id": "p26",
    "subtema": "Efetivo e valorização policial",
-   "proposta": "Criar programa estadual de cuidado à saúde mental dos profissionais de segurança",
+   "proposta": "Recompor salários e remuneração da tropa, financiando a valorização com o fim de supersalários e desvios",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
-      436
+      435
      ],
-     "nota": "Inclui prevenção ao suicídio e combate ao adoecimento ocupacional"
+     "nota": "Propõe recomposição salarial, sem indicar a fonte do corte"
     },
-    "governador-ms-delcidio-amaral-120002552155": {
+    "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      67
+      556,
+      558,
+      560
      ],
      "nota": ""
     }
@@ -700,6 +787,35 @@
   },
   {
    "id": "p27",
+   "subtema": "Efetivo e valorização policial",
+   "proposta": "Criar política de cuidado à saúde mental dos profissionais de segurança",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      106
+     ],
+     "nota": ""
+    },
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      67
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      436
+     ],
+     "nota": "Programa Estadual com prevenção ao suicídio e acolhimento"
+    }
+   }
+  },
+  {
+   "id": "p28",
    "subtema": "Efetivo e valorização policial",
    "proposta": "Modernizar equipamentos, viaturas e estruturas físicas das forças de segurança",
    "n_concorda": 3,
@@ -721,19 +837,27 @@
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      539,
-      1517
+      1517,
+      1829
      ],
-     "nota": "Renovação de frota e construção de delegacias e presídios"
+     "nota": "Renovação de frota e drones com CAPEX no FNSP"
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Efetivo e valorização policial",
-   "proposta": "Adotar câmeras corporais nos uniformes policiais e armas não letais para reduzir a letalidade policial",
-   "n_concorda": 1,
+   "id": "p29",
+   "subtema": "Direitos humanos e grupos vulneráveis",
+   "proposta": "Adotar medidas para reduzir a letalidade policial e garantir respeito aos direitos humanos nas abordagens",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      104,
+      112
+     ],
+     "nota": "Rejeita o modelo repressivo da \"guerra às drogas\" e a criminalização da pobreza"
+    },
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
@@ -745,92 +869,46 @@
    }
   },
   {
-   "id": "p29",
-   "subtema": "Gestão por dados e tecnologia",
-   "proposta": "Implantar policiamento e prevenção orientados por dados, com análise territorial da criminalidade",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      746
-     ],
-     "nota": "Observatório de dados para prevenção, patrulhamento e investigação"
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      441
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      540,
-      589
-     ],
-     "nota": "Alocação por mapa de risco, modelo CompStat"
-    }
-   }
-  },
-  {
    "id": "p30",
-   "subtema": "Gestão por dados e tecnologia",
-   "proposta": "Definir metas regionais de redução da criminalidade com cobrança de resultados",
-   "n_concorda": 2,
+   "subtema": "Direitos humanos e grupos vulneráveis",
+   "proposta": "Implantar câmeras corporais nos uniformes policiais e investir em armas não letais",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
+    "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
-      441
+      61
      ],
      "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      585,
-      589,
-      1159
-     ],
-     "nota": "Reunião mensal de dados e responsabilização do comandante local"
     }
    }
   },
   {
    "id": "p31",
-   "subtema": "Gestão por dados e tecnologia",
-   "proposta": "Implantar videomonitoramento urbano com leitura de placas e centros integrados de comando em regiões estratégicas",
+   "subtema": "Direitos humanos e grupos vulneráveis",
+   "proposta": "Enfrentar o racismo e os crimes de ódio contra minorias no âmbito da segurança pública",
    "n_concorda": 2,
    "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
+    "governador-ms-lucien-rezende-120002532257": {
      "posicao": "concorda",
      "blocos": [
-      747
+      110
      ],
-     "nota": ""
+     "nota": "Foco no racismo estrutural das abordagens e do sistema de justiça"
     },
-    "governador-ms-economista-renato-gomes-120002549681": {
+    "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
-      536
+      70
      ],
-     "nota": ""
+     "nota": "Núcleos especializados contra racismo, homofobia e intolerância"
     }
    }
   },
   {
    "id": "p32",
-   "subtema": "Gestão por dados e tecnologia",
-   "proposta": "Implantar o LabSEJUSP como laboratório de soluções tecnológicas para segurança",
+   "subtema": "Direitos humanos e grupos vulneráveis",
+   "proposta": "Implantar canal telefônico de denúncia de violência contra a população LGBTQIA+",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -844,32 +922,99 @@
   },
   {
    "id": "p33",
-   "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Reestruturar o sistema prisional e ampliar vagas para enfrentar a superlotação",
-   "n_concorda": 2,
+   "subtema": "Direitos humanos e grupos vulneráveis",
+   "proposta": "Fortalecer a proteção das populações indígenas",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
+    "governador-ms-lucien-rezende-120002532257": {
      "posicao": "concorda",
      "blocos": [
-      440
+      110
      ],
-     "nota": "Inclui modernização da AGEPEN"
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      563,
-      567,
-      1517
-     ],
-     "nota": "Meta de 2 a 4 mil vagas via FUNPEN"
+     "nota": ""
     }
    }
   },
   {
    "id": "p34",
+   "subtema": "Direitos humanos e grupos vulneráveis",
+   "proposta": "Fortalecer as políticas de proteção à infância e à adolescência integradas à rede de assistência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      761
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Segurança rural",
+   "proposta": "Estruturar o policiamento rural para combater abigeato, furto de máquinas e defensivos e roubo de cargas no campo",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      58,
+      71
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      752,
+      753
+     ],
+     "nota": "Consolidação da patrulha rural e combate a crimes ambientais"
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      445
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Segurança rural",
+   "proposta": "Estruturar a delegacia especializada de crimes rurais (DELEAGRO) com pessoal treinado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      71
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Segurança rural",
+   "proposta": "Criar um Plano Estadual de Segurança Rural com mediação de conflitos fundiários e monitoramento tecnológico no campo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      445
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Implantar inteligência penitenciária para combater o domínio e a entrada de facções nos presídios",
+   "proposta": "Reestruturar o sistema prisional e combater o domínio de facções nas unidades com inteligência penitenciária",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -877,7 +1022,7 @@
      "blocos": [
       440
      ],
-     "nota": ""
+     "nota": "Modernização da AGEPEN"
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
@@ -890,29 +1035,24 @@
    }
   },
   {
-   "id": "p35",
+   "id": "p39",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Ampliar políticas de ressocialização, educação e profissionalização de presos e reinserção produtiva de egressos para reduzir a reincidência",
-   "n_concorda": 2,
+   "proposta": "Ampliar vagas prisionais para reduzir o déficit carcerário, com recursos do FUNPEN",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
+    "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      440
+      567,
+      1517,
+      1532
      ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
+     "nota": "Meta de 2 a 4 mil vagas, cerca de metade do déficit"
     }
    }
   },
   {
-   "id": "p36",
+   "id": "p40",
    "subtema": "Sistema prisional e ressocialização",
    "proposta": "Ampliar o uso de penas alternativas para crimes de baixo potencial ofensivo",
    "n_concorda": 1,
@@ -928,98 +1068,145 @@
    }
   },
   {
-   "id": "p37",
-   "subtema": "Segurança rural",
-   "proposta": "Estruturar e consolidar o policiamento/patrulha rural para proteger áreas produtivas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      58
-     ],
-     "nota": ""
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      752
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      445
-     ],
-     "nota": "Patrulhamento integrado dentro de um Plano Estadual de Segurança Rural"
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Segurança rural",
-   "proposta": "Combater com inteligência policial o abigeato e o furto de máquinas e defensivos agrícolas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      58,
-      71
-     ],
-     "nota": ""
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      753
-     ],
-     "nota": "Inclui crimes ambientais e roubo de cargas"
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      445
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Segurança rural",
-   "proposta": "Estruturar a DELEAGRO com quadro de pessoal treinado e especializado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      71
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Segurança rural",
-   "proposta": "Criar plano estadual de segurança rural com monitoramento e tecnologia no campo e mediação de conflitos fundiários",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      445
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p41",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Fortalecer a ressocialização e a reinserção produtiva de presos e egressos para reduzir a reincidência",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      440
+     ],
+     "nota": "Educação e profissionalização nas unidades"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Investigação e Polícia Civil",
+   "proposta": "Qualificar a investigação criminal como eixo prioritário da política de segurança",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      106
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      746
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      437
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Investigação e Polícia Civil",
+   "proposta": "Modernizar a Polícia Civil, ampliar a perícia técnica e a polícia científica e criar delegacias digitais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      437
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Investigação e Polícia Civil",
+   "proposta": "Criar centro estadual de combate a crimes cibernéticos e fraudes digitais em cooperação com o Ministério Público",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      447,
+      448,
+      449
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Policiamento comunitário e territorial",
+   "proposta": "Ampliar a presença preventiva das forças de segurança em áreas vulneráveis e interiorizar a capacidade operacional",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      748,
+      762
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      434,
+      441
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Policiamento comunitário e territorial",
+   "proposta": "Adotar policiamento comunitário com conselhos locais de participação da sociedade",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      762
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": "Inclui canais digitais de participação e integração com guardas municipais"
+    }
+   }
+  },
+  {
+   "id": "p47",
    "subtema": "Segurança escolar",
-   "proposta": "Criar programa de segurança nas escolas com patrulha escolar e policiamento preventivo no entorno",
+   "proposta": "Criar programa estadual de segurança nas escolas com patrulhamento preventivo no entorno escolar",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -1039,9 +1226,9 @@
    }
   },
   {
-   "id": "p42",
+   "id": "p48",
    "subtema": "Segurança escolar",
-   "proposta": "Instalar botões do pânico nas escolas interligados diretamente à emergência policial",
+   "proposta": "Instalar botões do pânico nas escolas com ligação direta à emergência policial",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -1054,9 +1241,9 @@
    }
   },
   {
-   "id": "p43",
+   "id": "p49",
    "subtema": "Segurança escolar",
-   "proposta": "Implantar mediação de conflitos, apoio psicossocial e prevenção ao bullying nas escolas em parceria entre educação e segurança",
+   "proposta": "Implantar mediação de conflitos, apoio psicossocial e prevenção ao bullying nas escolas",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -1069,40 +1256,23 @@
    }
   },
   {
-   "id": "p44",
-   "subtema": "Polícia Civil, perícia e crimes digitais",
-   "proposta": "Modernizar a Polícia Civil e a investigação, ampliando perícia técnica, polícia científica e delegacias digitais",
+   "id": "p50",
+   "subtema": "Trânsito e serviços ao cidadão",
+   "proposta": "Fortalecer a segurança viária e o combate a roubos e furtos patrimoniais",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
+    "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
-      437
+      264
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p45",
-   "subtema": "Polícia Civil, perícia e crimes digitais",
-   "proposta": "Criar centro estadual de combate a crimes cibernéticos, em articulação com a DERCC e o Ministério Público",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      447,
-      448,
-      449
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Polícia Civil, perícia e crimes digitais",
+   "id": "p51",
+   "subtema": "Trânsito e serviços ao cidadão",
    "proposta": "Melhorar os serviços de identificação civil e o acesso a documentos essenciais",
    "n_concorda": 1,
    "posicoes": {
@@ -1116,75 +1286,36 @@
    }
   },
   {
-   "id": "p47",
-   "subtema": "Proteção a grupos vulneráveis e minorias",
-   "proposta": "Criar núcleos especializados no combate ao racismo, à homofobia e à intolerância nas estruturas de segurança",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      70
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Proteção a grupos vulneráveis e minorias",
-   "proposta": "Implantar canal telefônico de denúncia de violência contra a população LGBTQIA+",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Segurança viária e patrimonial",
-   "proposta": "Fortalecer a segurança viária e o combate a roubos e furtos patrimoniais públicos e privados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Efetivo e valorização policial",
-   "proposta": "Financiar investimentos em segurança (câmeras e viaturas) com recursos do Fundo Nacional de Segurança Pública, além do Tesouro estadual para a folha",
+   "id": "p52",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Sequenciar os investimentos em segurança pública priorizando primeiro a muralha digital na fronteira (~R$ 30 milhões, com alavancagem do FNSP), depois a ampliação de folha em rampa e o investimento prisional via FUNPEN",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      1530
+      1503
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Utilizar recursos do FUNPEN para financiar a ampliação de vagas no sistema prisional",
+   "id": "p53",
+   "subtema": "Inteligência, tecnologia e gestão",
+   "proposta": "Financiar a segurança pública combinando Tesouro estadual para a folha e recursos federais do FNSP (câmeras e viaturas) e do FUNPEN (vagas prisionais)",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      1532
+      1530,
+      1531,
+      1533,
+      1534,
+      1535,
+      1536,
+      1804
      ],
      "nota": ""
     }
@@ -1255,14 +1386,6 @@
     "texto": "Ação (o como): Ampliar e reforçar o efetivo policial com novos concursos, priorizando a fronteira, com o número dimensionado pela capacidade fiscal ano a ano (sem fixar de antemão uma meta rígida de 4 mil). Em paralelo, e como MULTIPLICADOR do efetivo, investir forte em TECNOLOGIA e INTELIGÊNCIA: muralha digital na fronteira (câmeras, leitura de placa), integração de dados PM+PC+DOF e IA para seguir o dinheiro do crime (SEG-02), tudo CAPEX alavancável no FNSP. Mais policiais E mais tecnologia, com responsabilidade fiscal.",
     "pagina": 31
    },
-   "539": {
-    "texto": "CAPEX de tecnologia (muralha digital ~R$30mi + viaturas/drones) e infraestrutura (delegacias, presídios), alavancáveis no FNSP.",
-    "pagina": 31
-   },
-   "540": {
-    "texto": "Onde já funcionou / referência: RIGOR: NÃO existe \"padrão da ONU de X policiais por habitante\", é mito/estatística-fantasma (Africa Check; a própria ONU não tem essa norma). MS tem ~275 policiais/100 mil (PM+PC), NA MÉDIA/acima do Brasil (~250) e perto da mediana mundial do UNODC (~300). O déficit de 42,8% é de VAGAS LEGAIS NÃO PREENCHIDAS (concurso/reposição), não de padrão por habitante, enquadrar como \"cargos que a lei prevê e não foram preenchidos\". Mais policial ≠ menos crime (Amapá 4,2/mil e homicídio 50,6; SC 1,3/mil e 9,1). O MAIOR ganho é GESTÃO: distribuição por mapa de risco, tirar o PM da mesa (civilinizar o administrativo), inteligência integrada (CompStat) e tecnologia na fronteira, a reposição de efetivo vem depois e em rampa.",
-    "pagina": 31
-   },
    "543": {
     "texto": "7.1.2 SEG-02, Central integrada de inteligência para “seguir o dinheiro”",
     "pagina": 31
@@ -1270,10 +1393,6 @@
    "546": {
     "texto": "Ação (o como): Central integrada de inteligência (PM+PC+DOF) em 100 dias; plataforma única tributária+criminal (Sefaz/DOF/PRF/PC/PM/RF - seguir o dinheiro); metas por território de risco; cooperação Bolivia/Paraguai; alimenta a gestão por resultado com meta por região (ver SEG-07)",
     "pagina": 31
-   },
-   "548": {
-    "texto": "Meta / indicador (KPI): Queda de homicídios/roubos nas regiões criticas; tempo de resposta Custo e financiamento: INVESTIMENTO (CAPEX): muralha digital de câmeras/OCR na fronteira ~R$30mi (proxy MT, alavancável FNSP) + bases do DOF em Ponta Porã e Corumbá. PRAZO: Fase 1 (quick-win, alto retorno).",
-    "pagina": 32
    },
    "552": {
     "texto": "7.1.3 SEG-03, Prevenir o crime com escola integral, esporte e cultura",
@@ -1313,10 +1432,6 @@
    },
    "578": {
     "texto": "Ação (o como): Política estadual de enfrentamento (proteção, delegacias da mulher, botao do pânico, dado público); ha eixo do FNSP p/ isso (~R$3,7mi)",
-    "pagina": 33
-   },
-   "579": {
-    "texto": "Meta / indicador (KPI): Taxa de feminicidio/100 mil mulheres",
     "pagina": 33
    },
    "585": {
@@ -1367,8 +1482,28 @@
     "texto": "Tesouro (folha) + FNSP (câmeras/viaturas)",
     "pagina": 58
    },
+   "1531": {
+    "texto": "Tesouro (folha) +",
+    "pagina": 58
+   },
    "1532": {
     "texto": "FUNPEN (vagas) +",
+    "pagina": 58
+   },
+   "1533": {
+    "texto": "FNSP",
+    "pagina": 58
+   },
+   "1534": {
+    "texto": "Tesouro (folha) + federal (investimento)",
+    "pagina": 58
+   },
+   "1535": {
+    "texto": "Tesouro estadual (folha)",
+    "pagina": 58
+   },
+   "1536": {
+    "texto": "+ FNSP + FUNPEN",
     "pagina": 58
    },
    "1802": {
@@ -1379,8 +1514,20 @@
     "texto": "Novos concursos, com o número calibrado",
     "pagina": 61
    },
+   "1804": {
+    "texto": "Cortes + FNSP",
+    "pagina": 61
+   },
+   "1805": {
+    "texto": "tecnologia",
+    "pagina": 61
+   },
    "1828": {
     "texto": "pela capacidade fiscal e prioridade na fronteira, mais muralha digital e integração de dados",
+    "pagina": 62
+   },
+   "1829": {
+    "texto": "(SEG-01/02), CAPEX alavancável no FNSP.",
     "pagina": 62
    }
   },
@@ -1504,6 +1651,28 @@
    "767": {
     "texto": "Integração entre segurança, assistência social, educação e saúde mental para áreas de maior risco.",
     "pagina": 37
+   }
+  },
+  "governador-ms-lucien-rezende-120002532257": {
+   "104": {
+    "texto": "Nós do PSOL defendemos uma política de segurança pública baseada na inteligência, na prevenção e no respeito aos direitos humanos. Entendemos que o atual modelo, centrado apenas na repressão e na chamada “guerra às drogas”, fracassou. Nas últimas décadas, o que vimos foi o aumento do encarceramento de jovens negros e periféricos, enquanto os grandes financiadores e chefes do tráfico seguem protegidos por privilégios econômicos e estruturas de poder.",
+    "pagina": 6
+   },
+   "106": {
+    "texto": "Nosso governo irá priorizar o combate ao crime organizado por meio de investigação qualificada, integração das forças de segurança e cooperação com órgãos federais e internacionais nas regiões de fronteira. Defendemos investimentos em tecnologia, inteligência policial e valorização dos profissionais da segurança pública, com melhores condições de trabalho, formação continuada e políticas de saúde mental para os agentes.",
+    "pagina": 6
+   },
+   "108": {
+    "texto": "Também propomos ampliar políticas sociais nas periferias, com investimentos em educação, esporte, cultura, geração de emprego e assistência social, porque acreditamos que segurança pública se constrói com oportunidades e redução das desigualdades.",
+    "pagina": 6
+   },
+   "110": {
+    "texto": "O PSOL defende ainda o fortalecimento de políticas de prevenção à violência contra as mulheres, combate ao feminicídio, proteção às populações indígenas e enfrentamento ao racismo estrutural presente nas abordagens policiais e no sistema de justiça criminal.",
+    "pagina": 6
+   },
+   "112": {
+    "texto": "Nossa proposta é construir uma segurança pública eficiente, humana e democrática, que proteja a população sem criminalizar a pobreza e que enfrente os verdadeiros responsáveis pela violência e pelo crime organizado, queremos governar com o povo, venha para o nosso lado.",
+    "pagina": 6
    }
   }
  }

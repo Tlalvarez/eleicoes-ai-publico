@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "contas-gestao-ms.json",
-  "gerado_em": "2026-09-14T12:05:30Z",
-  "exportado_em": "2026-09-14T12:41:08Z"
+  "gerado_em": "2026-09-14T15:12:12Z",
+  "exportado_em": "2026-09-14T15:27:03Z"
  },
  "candidatos": [
   {
@@ -53,22 +53,30 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017115315",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552191/MS"
+  },
+  {
+   "slug": "governador-ms-lucien-rezende-120002532257",
+   "nome": "Lucien Rezende",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016837601",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002532257/MS"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Transparência e dados abertos",
-   "proposta": "Ampliar a transparência ativa, com divulgação em tempo real de contratos, licitações, pagamentos e execução orçamentária",
+   "proposta": "Ampliar a transparência ativa de gastos, contratos, licitações e execução orçamentária",
    "n_concorda": 4,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
-      896,
-      899
+      899,
+      926
      ],
-     "nota": ""
+     "nota": "Transparência em tempo real, inclusive do que foi entregue"
     },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
@@ -90,22 +98,21 @@
       33,
       102
      ],
-     "nota": "Promete ser o governo mais transparente da história do estado"
+     "nota": "Meta de ser o governo mais transparente da história do Estado"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Transparência e dados abertos",
-   "proposta": "Criar painéis públicos de acompanhamento de obras, contratos e metas, com valor, prazo, empresa e execução física",
+   "proposta": "Criar painel público de acompanhamento de obras e contratos com valor, empresa, prazo, execução física e pagamentos",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
       744,
-      900,
-      912
+      900
      ],
      "nota": ""
     },
@@ -124,14 +131,14 @@
       170,
       1161
      ],
-     "nota": "Medição com foto e GPS, fiscalizável pelo celular"
+     "nota": "Medição com foto/GPS, fiscalizável do celular"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Transparência e dados abertos",
-   "proposta": "Reconstruir o portal de transparência em linguagem simples, com dados abertos de verdade, sem login e com download em massa",
+   "proposta": "Reconstruir o portal de transparência com dados abertos e linguagem simples para o cidadão comum",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -139,7 +146,7 @@
      "blocos": [
       185
      ],
-     "nota": "Chama de Portal Estadual de Transparência Avançada"
+     "nota": "Portal Estadual de Transparência Avançada"
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
@@ -147,30 +154,12 @@
       240,
       244
      ],
-     "nota": "API pública, visão por município e trilha do dinheiro"
+     "nota": "API pública sem login, download em massa e visão por município"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Instalar painéis físicos de contas com QR code em pontos estratégicos do Estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      233,
-      236,
-      237,
-      1164
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
    "subtema": "Transparência e dados abertos",
    "proposta": "Criar aplicativo oficial de transparência, com notificações e busca em linguagem natural",
    "n_concorda": 1,
@@ -186,9 +175,26 @@
    }
   },
   {
+   "id": "p5",
+   "subtema": "Transparência e dados abertos",
+   "proposta": "Instalar painéis públicos de contas, físicos e com QR code, em pontos estratégicos de todos os municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      233,
+      236,
+      1164
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p6",
    "subtema": "Transparência e dados abertos",
-   "proposta": "Criar canal telefônico e digital (157) para tirar dúvidas sobre contas públicas e denunciar suspeitas, com protocolo rastreável",
+   "proposta": "Criar canal telefônico e digital único (157) para dúvidas sobre contas públicas e denúncias, integrado à Ouvidoria e à Controladoria",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -205,132 +211,8 @@
   {
    "id": "p7",
    "subtema": "Transparência e dados abertos",
-   "proposta": "Publicar folha de pagamento analítica e nominal, rubrica a rubrica, distinguindo concursados e comissionados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      109,
-      227,
-      315
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Publicar o destino da verba de publicidade oficial por veículo e submetê-la a auditoria ou CPI",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      208,
-      211,
-      1163
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Garantir a rastreabilidade do recurso, da previsão orçamentária até a entrega, dando transparência ao que foi efetivamente entregue",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      915,
-      926
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      244
-     ],
-     "nota": "Trilha 'siga o dinheiro', da arrecadação à obra"
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Fortalecer controle interno, auditoria preventiva, corregedoria e programas de integridade na administração estadual",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      898
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      186,
-      187
-     ],
-     "nota": "Fortalecimento da Controladoria-Geral e compliance"
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      522
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      183
-     ],
-     "nota": "Defende controladoria independente"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Adotar política de tolerância zero com corrupção e desvios, com prevenção e responsabilização",
+   "proposta": "Fortalecer canais de denúncia e a proteção ao denunciante, cidadão ou servidor",
    "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      897
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      522,
-      527
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      190
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Fortalecer canais de denúncia e garantir proteção a cidadãos e servidores que comuniquem irregularidades",
-   "n_concorda": 4,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -352,20 +234,188 @@
       527
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Transparência e dados abertos",
+   "proposta": "Publicar a folha de pagamento de forma nominal e detalhada por rubrica",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      259
+      109,
+      227,
+      315
      ],
      "nota": ""
     }
    }
   },
   {
+   "id": "p9",
+   "subtema": "Transparência e dados abertos",
+   "proposta": "Dar transparência total à verba de publicidade oficial, com destino por veículo e auditoria do gasto",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      208,
+      211,
+      1163
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Transparência e dados abertos",
+   "proposta": "Divulgar publicamente as filas dos serviços públicos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": "Filas da saúde"
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      744
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Transparência e dados abertos",
+   "proposta": "Garantir a rastreabilidade do recurso público da previsão orçamentária até a entrega final",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      915
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": "\"Siga o dinheiro\", da arrecadação ao repasse à obra"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Fortalecer o controle interno, a auditoria preventiva e a controladoria/corregedoria do Estado",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      898
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      186,
+      187
+     ],
+     "nota": "Fortalecimento da Controladoria-Geral do Estado"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      522
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      183
+     ],
+     "nota": "Defende controladoria independente"
+    }
+   }
+  },
+  {
    "id": "p13",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Usar tecnologia e inteligência de dados para identificar sobrepreço, pagamentos suspeitos, direcionamento e indícios de cartel",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Implantar programas de integridade e compliance e modelo integrado de gestão de riscos na administração",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      898
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      187
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      522
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Adotar política de tolerância zero com corrupção e desvios, com apuração e responsabilização dos envolvidos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      897
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      522,
+      527
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      190,
+      191
+     ],
+     "nota": "Método \"denúncia + desfecho criminal\": prova, delegacia e Ministério Público"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Usar inteligência de dados e inteligência artificial para detectar sobrepreço, direcionamento e indícios de cartel",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -381,54 +431,28 @@
       358,
       359
      ],
-     "nota": "Cruzamento de contratos, CNPJ/QSA e preços por IA"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Implantar modelo integrado de gestão de riscos governamentais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      519,
-      522
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Levar casos com prova documental à delegacia e ao Ministério Público, buscando desfecho criminal e não apenas repactuação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      189,
-      190,
-      191
-     ],
-     "nota": ""
+     "nota": "Cruzamento de contratos, CNPJ/QSA e preços"
     }
    }
   },
   {
    "id": "p16",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Representar ao Tribunal de Contas do Estado e ao CADE contra licitações com indícios de conluio e cartel",
-   "n_concorda": 1,
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Reduzir aditivos e contratos mal planejados, exigindo projetos completos e fiscalização",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      902
+     ],
+     "nota": ""
+    },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      139,
-      142
+      159,
+      162
      ],
      "nota": ""
     }
@@ -436,15 +460,15 @@
   },
   {
    "id": "p17",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Auditar e dar transparência aos contratos de tecnologia da informação do governo",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Fixar teto legal para aditivos contratuais (ex. 25%) e cancelar contrato que estoure o valor sem entrega, com responsabilização do gestor",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      153,
-      156
+      162,
+      163
      ],
      "nota": ""
     }
@@ -452,7 +476,23 @@
   },
   {
    "id": "p18",
-   "subtema": "Integridade e combate à corrupção",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Auditar o estoque de obras paradas e publicar número e valor envolvidos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      162,
+      163
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Combate à corrupção e integridade",
    "proposta": "Responsabilizar pessoalmente o fiscal que atestar medição falsa de obra",
    "n_concorda": 1,
    "posicoes": {
@@ -467,15 +507,64 @@
    }
   },
   {
-   "id": "p19",
-   "subtema": "Integridade e combate à corrupção",
+   "id": "p20",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Auditar e dar transparência aos contratos de tecnologia da informação do governo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      153,
+      156
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Representar ao Tribunal de Contas e ao CADE contra indícios de conluio e cartel em licitações de obras",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      139,
+      142
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Recuperar recursos desviados e destinar o valor recuperado a saúde e estradas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      180,
+      183,
+      1775,
+      1777
+     ],
+     "nota": "Meta de R$ 200-350 mi/ano recuperados"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Combate à corrupção e integridade",
    "proposta": "Vedar o nepotismo e o nepotismo cruzado nas nomeações, publicando vínculos de parentesco",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      116,
       202,
       204,
       1162
@@ -485,9 +574,9 @@
    }
   },
   {
-   "id": "p20",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Adotar quarentena entre a ocupação de cargo de confiança no Executivo e a nomeação para cargo no Judiciário",
+   "id": "p24",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Adotar quarentena entre o exercício de cargo de confiança no Executivo e a nomeação a cargo no Judiciário",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -501,27 +590,9 @@
    }
   },
   {
-   "id": "p21",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Recuperar recursos desviados por corrupção e destinar o valor recuperado à saúde e às estradas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      180,
-      183,
-      1775,
-      1777
-     ],
-     "nota": "Meta de R$ 200-350 milhões por ano recuperados"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Digitalizar e auditar permanentemente os serviços do Detran para estancar fraudes, com transparência de gravames e vistorias",
+   "id": "p25",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Digitalizar e dar rastreabilidade aos serviços do Detran, com auditoria permanente contra fraudes",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -535,205 +606,9 @@
    }
   },
   {
-   "id": "p23",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Estabelecer como rotina do governador a fiscalização direta do caixa das maiores secretarias e dos principais contratos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      313,
-      315,
-      1166
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Implantar modelo de gestão pública orientado a resultados, com metas por área, indicadores e monitoramento permanente",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      17,
-      912
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      96,
-      179
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      471,
-      478,
-      482
-     ],
-     "nota": "Apresenta como continuidade e amadurecimento do modelo atual"
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Integrar e convergir planejamento, orçamento e execução em todos os órgãos estaduais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      179
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      482,
-      515
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p26",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Institucionalizar a avaliação periódica de políticas públicas, programas e contratos, corrigindo ou encerrando o que não entrega resultado",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      904
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      189
-     ],
-     "nota": "Cria sistema estadual de avaliação com publicação anual"
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      482,
-      494
-     ],
-     "nota": "Metodologia padronizada de avaliação ex ante e ex post"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Criar e fortalecer um centro de governo transversal para coordenação e alinhamento estratégico das políticas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      478,
-      482
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Estruturar sistema de acompanhamento de metas e indicadores em tempo real, com alertas para atrasos e baixa execução",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      912
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      482,
-      494
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Priorizar investimentos por critérios técnicos de impacto, urgência, custo-benefício e capacidade de execução",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      914,
-      921
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      515
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Implantar metodologia única de gestão de portfólio de projetos estratégicos e investimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      482
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Elaborar planos estaduais estruturantes de longo prazo, com metas e integração entre políticas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      96,
-      179
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p32",
    "subtema": "Servidores, folha e carreiras",
-   "proposta": "Valorizar os servidores de carreira com política permanente de qualificação, reconhecimento do mérito e valorização das carreiras",
+   "proposta": "Valorizar os servidores de carreira com formação e qualificação continuadas e reconhecimento do mérito",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -763,7 +638,7 @@
    }
   },
   {
-   "id": "p33",
+   "id": "p27",
    "subtema": "Servidores, folha e carreiras",
    "proposta": "Conceder reajustes com ganho real aos servidores estaduais",
    "n_concorda": 1,
@@ -778,130 +653,31 @@
    }
   },
   {
-   "id": "p34",
+   "id": "p28",
    "subtema": "Servidores, folha e carreiras",
-   "proposta": "Modernizar a gestão de pessoas com gestão por competências e mecanismos de avaliação e monitoramento de desempenho",
+   "proposta": "Reestruturar os planos de carreira do Estado",
    "n_concorda": 2,
    "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      535
-     ],
-     "nota": ""
-    },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
       188
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Implantar política permanente de desenvolvimento de lideranças públicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      530,
-      535
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Promover ações de saúde, segurança e bem-estar e melhorar as condições de trabalho dos servidores",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      535
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      188
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Realizar concursos públicos para ampliar e fortalecer o quadro efetivo",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      90
-     ],
-     "nota": ""
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      116
+      292
      ],
-     "nota": "Plano de 5.000 concursos"
+     "nota": "Com dimensionamento da força de trabalho"
     }
    }
   },
   {
-   "id": "p38",
+   "id": "p29",
    "subtema": "Servidores, folha e carreiras",
-   "proposta": "Reduzir em 40% os cargos comissionados e substituir ao menos 60% deles por servidores efetivos em 24 meses",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      114,
-      116,
-      118,
-      1758,
-      1759
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Aplicar teto remuneratório sem exceções e acabar com penduricalhos, com lei estadual antipenduricalho, teto na base de cálculo e auditoria retroativa",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      106,
-      109,
-      110,
-      224,
-      227,
-      1754
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Reestruturar as carreiras estaduais com política salarial referenciada no DIEESE e dimensionamento do quadro",
+   "proposta": "Adotar política salarial referenciada no DIEESE, remunerando mais senioridade e experiência",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -915,9 +691,122 @@
    }
   },
   {
-   "id": "p41",
+   "id": "p30",
    "subtema": "Servidores, folha e carreiras",
-   "proposta": "Combater fraude em atestados médicos com perícia, juntas médicas e punição das fraudes comprovadas",
+   "proposta": "Realizar concursos públicos e priorizar o servidor efetivo em relação ao indicado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      90
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      116,
+      292
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Reduzir em 40% os cargos comissionados, ocupar 60% deles por efetivos em 24 meses e abrir plano de 5.000 concursos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      114,
+      116,
+      1758
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Instituir teto salarial sem exceções e lei estadual antipenduricalho, com auditoria retroativa pelo Tribunal de Contas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      106,
+      109,
+      110,
+      1754
+     ],
+     "nota": "Meta: zerar os cerca de 2.700 servidores acima do teto"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Submeter as verbas indenizatórias ao teto na base de cálculo, para não inflar 13º e aposentadoria",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      224,
+      227,
+      228
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Implantar política de desenvolvimento de lideranças públicas, gestão por competências e avaliação de desempenho",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      530,
+      535
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Promover ações de valorização, saúde, segurança e melhoria das condições de trabalho dos servidores",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Combater fraude em atestados médicos com perícia, juntas médicas e punição ao fraudador",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -932,25 +821,26 @@
    }
   },
   {
-   "id": "p42",
+   "id": "p37",
    "subtema": "Servidores, folha e carreiras",
-   "proposta": "Capacitar continuamente os servidores nas competências exigidas pela transformação digital",
+   "proposta": "Publicar mensalmente folha analítica comparando concursados e comissionados, função e produtividade",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
+    "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      487
+      315,
+      1166
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p43",
+   "id": "p38",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Digitalizar os principais serviços públicos estaduais e ampliar a oferta de serviços online ao cidadão",
-   "n_concorda": 2,
+   "proposta": "Digitalizar integralmente os serviços públicos estaduais e ampliar o atendimento online",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
@@ -965,14 +855,22 @@
       485,
       487
      ],
-     "nota": "Novo Plano de Transformação Digital, transformando e não só digitalizando"
+     "nota": "Novo Plano de Transformação Digital; transformar, não só digitalizar"
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      177,
+      359
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p44",
+   "id": "p39",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Revisar e simplificar processos administrativos, reduzindo burocracia antes da digitalização",
+   "proposta": "Simplificar e revisar processos administrativos, reduzindo burocracia antes da digitalização",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -993,38 +891,29 @@
    }
   },
   {
-   "id": "p45",
+   "id": "p40",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Integrar sistemas e plataformas estaduais em ambiente digital único, com interoperabilidade entre órgãos",
-   "n_concorda": 2,
+   "proposta": "Consolidar identidade digital única do cidadão e ambiente digital único de serviços, com padrão visual e de usabilidade",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      184
-     ],
-     "nota": ""
-    },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
-      487,
-      494
+      487
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p46",
+   "id": "p41",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Ampliar o uso de inteligência artificial na prestação de serviços públicos e na produtividade da administração",
-   "n_concorda": 2,
+   "proposta": "Ampliar o uso de inteligência artificial na prestação de serviços e na gestão pública",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
-      485,
       487
      ],
      "nota": ""
@@ -1037,19 +926,131 @@
       359
      ],
      "nota": "Programa em três frentes: produtividade, transparência e integridade"
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      901,
+      912
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p47",
+   "id": "p42",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Consolidar identidade digital única e segura do cidadão e padrão visual e de usabilidade dos canais digitais",
+   "proposta": "Garantir acessibilidade digital em todos os serviços e ampliar atendimento multicanal e autoatendimento",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
       487
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Modernizar a infraestrutura tecnológica e a segurança da informação do Estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      191
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Capacitar continuamente os servidores nas competências exigidas pela transformação digital e pela inovação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Implantar política de governança de dados com integração e interoperabilidade entre os sistemas do Estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      494
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      184,
+      191
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      912
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Usar dados para antecipação de demandas e gestão preditiva",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      494
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Criar centros de inovação governamental com parcerias com universidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      191
      ],
      "nota": ""
     }
@@ -1058,13 +1059,14 @@
   {
    "id": "p48",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Garantir acessibilidade digital em todos os serviços e expandir atendimento multicanal e autoatendimento",
+   "proposta": "Substituir funções cartorárias por blockchain e certificado digital, ampliando a fé pública a advogados",
    "n_concorda": 1,
    "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
+    "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      487
+      217,
+      219
      ],
      "nota": ""
     }
@@ -1072,99 +1074,7 @@
   },
   {
    "id": "p49",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Implantar política de governança de dados, com integração das bases estratégicas e uso de inteligência de dados na decisão",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      912
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      191
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      482,
-      494
-     ],
-     "nota": "Inclui gestão preditiva e antecipação de demandas"
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Modernizar a infraestrutura tecnológica e a segurança da informação que sustentam os serviços digitais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      191
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Implantar política de inovação pública, com centros de inovação governamental e parcerias com universidades",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      191
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      515,
-      535
-     ],
-     "nota": "Inovação como estímulo à produtividade e à cultura organizacional"
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Substituir funções cartorárias por tecnologia (blockchain, certificado digital e fé pública ampliada) para reduzir o custo ao cidadão",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      217,
-      219,
-      221
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Participação social e controle social",
+   "subtema": "Participação e controle social",
    "proposta": "Ampliar canais de participação e de fiscalização social sobre a ação do governo",
    "n_concorda": 3,
    "posicoes": {
@@ -1175,26 +1085,27 @@
      ],
      "nota": ""
     },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      94
-     ],
-     "nota": ""
-    },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
       522
      ],
      "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      94,
+      175
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p54",
-   "subtema": "Participação social e controle social",
-   "proposta": "Reativar os conselhos estaduais e realizar periodicamente conferências e audiências públicas com diálogo permanente com a sociedade civil",
+   "id": "p50",
+   "subtema": "Participação e controle social",
+   "proposta": "Reativar e fortalecer conselhos estaduais, conferências públicas e audiências públicas periódicas",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -1208,16 +1119,16 @@
    }
   },
   {
-   "id": "p55",
-   "subtema": "Participação social e controle social",
-   "proposta": "Permitir que a população avalie serviços, obras e políticas, incorporando essa avaliação aos indicadores e exigindo resposta e correção",
+   "id": "p51",
+   "subtema": "Participação e controle social",
+   "proposta": "Submeter serviços, obras e políticas à avaliação da população, incorporando essa percepção aos indicadores de desempenho",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
       923,
-      924
+      926
      ],
      "nota": ""
     },
@@ -1232,34 +1143,265 @@
    }
   },
   {
-   "id": "p56",
-   "subtema": "Participação social e controle social",
-   "proposta": "Convocar os Poderes e órgãos autônomos a debate público sobre eficiência e justiça orçamentária, com participação popular, usando a iniciativa da LDO",
+   "id": "p52",
+   "subtema": "Participação e controle social",
+   "proposta": "Garantir resposta, correção e acompanhamento pela área responsável para problemas recorrentes apontados pelos cidadãos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      924
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      527
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Participação e controle social",
+   "proposta": "Realizar audiências públicas de orçamento com participação e observação popular",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      275,
       278,
-      279,
-      1781
+      279
      ],
-     "nota": "Sem cortar duodécimo, para preservar autonomia"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p57",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Manter o equilíbrio fiscal e a responsabilidade fiscal como diretriz permanente do governo",
+   "id": "p54",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Implantar modelo de gestão orientada a resultados, com metas por área, prazos, indicadores e monitoramento permanente",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
+      17,
       90,
-      402
+      912
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      179
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      471,
+      478,
+      482
+     ],
+     "nota": "Aprofundar modelo já em curso, tornando-o cultura institucional permanente"
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Integrar e convergir planejamento, orçamento e execução em todos os órgãos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      179
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      482,
+      515
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Criar sistema de avaliação de políticas públicas e programas, com publicação de resultados e correção ou encerramento do que não entrega",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      904
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      189
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      482,
+      494
+     ],
+     "nota": "Metodologia padronizada de avaliação ex ante e monitoramento"
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Criar e fortalecer um Centro de Governo transversal para coordenação e alinhamento estratégico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      478,
+      482
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Estruturar sistema de acompanhamento de metas e indicadores em tempo real, com alertas de atraso e baixa execução",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      482
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      912
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Adotar metodologia única de portfólio de projetos e investimentos, priorizando por impacto, custo-benefício e capacidade de execução",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      482,
+      515
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      914,
+      921
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Elaborar planos estaduais estruturantes de longo prazo com metas e integração entre políticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      90,
+      96
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Fortalecer o planejamento regionalizado, com planos regionais, cidades-polo e descentralização administrativa para o interior",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Definir prioridades por município com acompanhamento público de investimento, prazo e entrega",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      18
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Gestão por resultados e planejamento",
+   "proposta": "Concentrar a rotina do governador na fiscalização direta do caixa das maiores secretarias e dos principais contratos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      313,
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Revisar despesas, contratos e custos, eliminando desperdício e realocando recursos para áreas prioritárias",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      902,
+      920
      ],
      "nota": ""
     },
@@ -1268,6 +1410,37 @@
      "blocos": [
       513,
       515
+     ],
+     "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      270,
+      271
+     ],
+     "nota": "Revisar contratos de custeio acima de R$ 5 mi, com meta de -10 a -15%"
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Consolidar o equilíbrio fiscal e a responsabilidade fiscal como política permanente do Estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      513,
+      515
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      90
      ],
      "nota": ""
     },
@@ -1281,79 +1454,9 @@
    }
   },
   {
-   "id": "p58",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Revisar periodicamente despesas, contratos e custos para eliminar desperdício e realocar recursos às prioridades",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      902,
-      920
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      187
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      515
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      266,
-      270,
-      1781
-     ],
-     "nota": "Revisão de contratos de custeio acima de R$ 5 milhões, com meta de -10 a -15%"
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Elevar a qualidade do gasto com sistema de controle de custos e análises de custo-benefício nas decisões alocativas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      513,
-      515
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Aprimorar os modelos de previsão orçamentária e de arrecadação com matrizes de risco fiscal",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      515
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Publicar metas fiscais verificáveis, com despesa de pessoal abaixo de 54% da RCL e resultado primário positivo nos quatro anos",
+   "id": "p66",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Fixar metas fiscais públicas de despesa de pessoal e de resultado primário para o mandato",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -1363,14 +1466,29 @@
       1383,
       1388
      ],
+     "nota": "Pessoal abaixo de 54% da RCL e primário positivo nos 4 anos"
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Aprimorar a previsão orçamentária e o controle de custos, com matrizes de risco fiscal e análise de custo-benefício nas decisões de investimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      515
+     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p62",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Publicar anexo orçamentário auditável ano a ano, com origem declarada de cada real de investimento",
+   "id": "p68",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Publicar anexo orçamentário auditável ano a ano, com origem declarada de cada real das propostas",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -1385,9 +1503,42 @@
    }
   },
   {
-   "id": "p63",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Cortar privilégios na máquina pública (supersalários, comissionados e publicidade) e redirecionar a economia para saúde, educação e segurança",
+   "id": "p69",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Renegociar a dívida do Estado com a União, com adesão ao PROPAG, para liberar espaço de investimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      270
+     ],
+     "nota": "Renegociar cerca de R$ 9,5 bi"
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Estabelecer meta de 30% de investimento ao fim do mandato, com piso de 15% da RCL, somando orçamento, banco de desenvolvimento e crédito",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      820,
+      822,
+      1140
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Cortar supersalários, cargos comissionados e publicidade oficial e redirecionar a economia a saúde, educação, segurança e estradas",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -1398,121 +1549,156 @@
       303,
       308,
       1175,
-      1769,
+      1761,
       1836
      ],
-     "nota": ""
+     "nota": "Piso verificado de R$ 0,5-0,7 bi/ano em cortes diretos"
     }
    }
   },
   {
-   "id": "p64",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Reduzir drasticamente a despesa com publicidade oficial e com eventos e patrocínios, mantendo apenas piso de utilidade pública",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      1761,
-      1763,
-      1765,
-      1766
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Fixar meta de 30% de investimento ao fim do mandato, com piso de 15% da RCL em investimento direto e alavancagem por banco de desenvolvimento e crédito",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      820,
-      821,
-      822,
-      1140
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p66",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Aderir ao PROPAG para renegociar a dívida do Estado com a União e liberar espaço para investimento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      266,
-      270
-     ],
-     "nota": "Cerca de R$ 9,5 bilhões renegociados e Capag de volta ao nível A"
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Fortalecer a gestão contratual baseada em desempenho, com monitoramento da execução por indicadores e dados",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      900,
-      912
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      533,
-      538
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      349
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p68",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Consolidar o planejamento anual das contratações públicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      533,
-      538
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p69",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Ampliar o uso de soluções digitais em todo o ciclo das contratações públicas",
+   "id": "p72",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Dar transparência e auditar os benefícios fiscais de ICMS, com perda e devolução do benefício em caso de descumprimento das contrapartidas",
    "n_concorda": 2,
    "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      147,
+      150
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      899
+     ],
+     "nota": "Transparência em tempo real das renúncias fiscais"
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Publicar cadastro anual dos beneficiários de ICMS, com valor, contrapartida pactuada e cumprida",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      648,
+      649
+     ],
+     "nota": "Meta de 100% da renúncia publicada em 12 meses"
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Fazer avaliação bienal de custo-benefício da renúncia fiscal por setor, publicada junto com a LDO",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      663,
+      664
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Reforçar a arrecadação com fiscalização integrada e modernização da Procuradoria-Geral do Estado para recuperar dívida ativa e combater sonegação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      769,
+      770
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Rever o critério de distribuição do fundo estadual de infraestrutura para dar maior retorno aos municípios que mais contribuem e produzem",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      381
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Retirar vinculações que desviem a finalidade do fundo estadual, concentrando seus recursos em infraestrutura de escoamento da produção",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      382
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Não institucionalizar a loteria estadual como fonte de receita do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      726
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Compras públicas e contratos",
+   "proposta": "Consolidar o planejamento anual das contratações e ampliar soluções digitais em todo o ciclo de compras",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
+      533,
+      538
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p80",
+   "subtema": "Compras públicas e contratos",
+   "proposta": "Fazer a gestão contratual com base em desempenho e resultados, monitorada por indicadores e evidências",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      533,
       538
      ],
      "nota": ""
@@ -1523,13 +1709,21 @@
       912
      ],
      "nota": ""
+    },
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      349,
+      351
+     ],
+     "nota": "Meta de resultado e de custo em todo contrato e organização social"
     }
    }
   },
   {
-   "id": "p70",
+   "id": "p81",
    "subtema": "Compras públicas e contratos",
-   "proposta": "Expandir compras compartilhadas e centralizadas para ganho de escala",
+   "proposta": "Expandir compras compartilhadas e central de compras para ganho de escala",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -1544,54 +1738,14 @@
      "blocos": [
       183
      ],
-     "nota": "Propõe central de compras"
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Reduzir aditivos e contratos mal planejados, exigindo projetos completos e responsabilização por falhas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      902
-     ],
-     "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      159,
-      162
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p72",
+   "id": "p82",
    "subtema": "Compras públicas e contratos",
-   "proposta": "Fixar teto legal para aditivos, cancelar contratos que estourem o valor sem entrega e auditar o estoque de obras paradas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      159,
-      162,
-      163
-     ],
-     "nota": "Teto sugerido de 25%, com responsabilização do gestor"
-    }
-   }
-  },
-  {
-   "id": "p73",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Estimular inovação e sustentabilidade nas compras públicas e desenvolver inteligência de mercado para planejá-las",
+   "proposta": "Estimular inovação e sustentabilidade nas compras públicas e desenvolver inteligência de mercado para planejar contratações",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -1605,121 +1759,9 @@
    }
   },
   {
-   "id": "p74",
-   "subtema": "Renúncias fiscais e receitas do Estado",
-   "proposta": "Condicionar benefícios fiscais de ICMS a contrapartidas auditadas, com perda do benefício e devolução em caso de descumprimento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      35,
-      147,
-      150
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p75",
-   "subtema": "Renúncias fiscais e receitas do Estado",
-   "proposta": "Publicar cadastro anual dos beneficiários de renúncias de ICMS, com valor e contrapartida pactuada e cumprida",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      648,
-      649
-     ],
-     "nota": "Meta de 100% da renúncia publicada em 12 meses"
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      899
-     ],
-     "nota": "Inclui renúncias fiscais na transparência em tempo real"
-    }
-   }
-  },
-  {
-   "id": "p76",
-   "subtema": "Renúncias fiscais e receitas do Estado",
-   "proposta": "Avaliar periodicamente o custo-benefício das renúncias e benefícios fiscais, realocando os de baixo retorno",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      663,
-      664,
-      665
-     ],
-     "nota": "Avaliação bienal por setor publicada junto à LDO"
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      904
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p77",
-   "subtema": "Renúncias fiscais e receitas do Estado",
-   "proposta": "Fortalecer a fiscalização integrada e modernizar a Procuradoria-Geral do Estado para recuperar dívida ativa e combater sonegação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      769,
-      770
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p78",
-   "subtema": "Renúncias fiscais e receitas do Estado",
-   "proposta": "Não institucionalizar a loteria estadual como fonte de receita",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      723,
-      726
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p79",
-   "subtema": "Renúncias fiscais e receitas do Estado",
-   "proposta": "Rever as vinculações do fundo estadual de infraestrutura e distribuir seus recursos conforme a contribuição e a produção de cada município",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      381,
-      382
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p80",
-   "subtema": "Relação com municípios e regionalização",
-   "proposta": "Ampliar a cooperação com os municípios por meio de consórcios regionais e assistência técnica aos municípios pequenos",
+   "id": "p83",
+   "subtema": "Relação com municípios e Poderes",
+   "proposta": "Ampliar a cooperação entre Estado e municípios, com consórcios regionais e assistência técnica aos municípios pequenos",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -1732,30 +1774,14 @@
    }
   },
   {
-   "id": "p81",
-   "subtema": "Relação com municípios e regionalização",
-   "proposta": "Fortalecer o planejamento regionalizado, com planos regionais, cidades-polo e descentralização administrativa",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      180
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p82",
-   "subtema": "Relação com municípios e regionalização",
-   "proposta": "Definir prioridades por município com acompanhamento público dos investimentos e prazos, e integração digital com as prefeituras",
+   "id": "p84",
+   "subtema": "Relação com municípios e Poderes",
+   "proposta": "Promover a integração digital do Estado com os municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
-      18,
       325
      ],
      "nota": ""
@@ -1763,9 +1789,27 @@
    }
   },
   {
-   "id": "p83",
+   "id": "p85",
+   "subtema": "Relação com municípios e Poderes",
+   "proposta": "Usar a iniciativa da LDO para fixar metas de eficiência e convocar Assembleia, Judiciário, Ministério Público e Tribunal de Contas ao debate público sobre orçamento, sem cortar duodécimos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      275,
+      278,
+      1779,
+      1781
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
    "subtema": "Estatais e administração indireta",
-   "proposta": "Submeter estatais e administração indireta a contratos de gestão com metas rígidas de eficiência, resultado e custo",
+   "proposta": "Administrar as empresas estatais estaduais por contratos de gestão com metas rígidas de eficiência e atendimento",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -1773,28 +1817,28 @@
      "blocos": [
       228
      ],
-     "nota": "Propõe fortalecer as estatais sob controle acionário do Estado"
+     "nota": "Fortalecer as estatais sob controle acionário do Estado"
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
       343,
-      349,
-      350
+      349
      ],
-     "nota": "Rejeita tanto reestatizar tudo quanto terceirizar sem controle"
+     "nota": "Contrato de gestão com meta de resultado e de custo e teto administrativo"
     }
    }
   },
   {
-   "id": "p84",
+   "id": "p87",
    "subtema": "Estatais e administração indireta",
-   "proposta": "Mapear e auditar terceirizações e organizações sociais, começando pela saúde, com metas de resultado e teto de despesa administrativa publicados",
+   "proposta": "Mapear e auditar a administração indireta e a terceirização, inclusive as organizações sociais da saúde, publicando custo e entrega",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
+      343,
       349,
       351
      ],
@@ -1803,9 +1847,9 @@
    }
   },
   {
-   "id": "p85",
+   "id": "p88",
    "subtema": "Previdência dos servidores",
-   "proposta": "Reconstruir a segregação de massas e o fundo de capitalização do regime próprio, com estudo atuarial anual público",
+   "proposta": "Reconstruir a segregação de massas e o Fundo de Capitalização do regime próprio, com estudo atuarial anual público e respeito a direitos adquiridos",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -1814,12 +1858,12 @@
       284,
       286
      ],
-     "nota": "Movimento inverso à liquidação do fundo em 2017"
+     "nota": "Meta de fundo reconstituído em cerca de R$ 2,5 bi em 4 anos"
     }
    }
   },
   {
-   "id": "p86",
+   "id": "p89",
    "subtema": "Previdência dos servidores",
    "proposta": "Substituir a alíquota previdenciária linear de 14% por tabela progressiva, aliviando os salários mais baixos",
    "n_concorda": 1,
@@ -1836,9 +1880,9 @@
    }
   },
   {
-   "id": "p87",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Auditar e reestruturar Agesul e Detran para romper o padrão de captura recorrente por fornecedores",
+   "id": "p90",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Adotar medidas específicas para romper a captura recorrente de contratos na Agesul e no Detran",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -1851,11 +1895,20 @@
    }
   },
   {
-   "id": "p88",
-   "subtema": "Integridade e combate à corrupção",
-   "proposta": "Rastrear e auditar o histórico de desvios em obras rodoviárias do Estado",
-   "n_concorda": 1,
+   "id": "p91",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Rastrear e auditar o histórico de desvios em contratos de obras rodoviárias",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      898,
+      900,
+      901
+     ],
+     "nota": "Prevê auditoria, painel de grandes obras e uso de dados para detectar sobrepreço e irregularidades"
+    },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
@@ -1866,21 +1919,11 @@
    }
   },
   {
-   "id": "p89",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Instituir medição independente da execução física das obras públicas",
-   "n_concorda": 2,
+   "id": "p92",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Instituir medição independente das obras públicas estaduais",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      744,
-      900,
-      902,
-      912
-     ],
-     "nota": "Prevê acompanhamento e fiscalização da execução física de obras e contratos, sem detalhar independência."
-    },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
@@ -1891,52 +1934,42 @@
    }
   },
   {
-   "id": "p90",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Reduzir o custeio em 10% a 15% ao ano e elevar a nota Capag do Estado para A, retornando a despesa de pessoal ao patamar de alerta da LRF",
-   "n_concorda": 3,
+   "id": "p93",
+   "subtema": "Combate à corrupção e integridade",
+   "proposta": "Acompanhar as denúncias até o desfecho criminal, medindo apuração e responsabilização e não apenas o número de denúncias",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      90,
-      402,
-      920,
-      921
-     ],
-     "nota": "Defende equilíbrio fiscal, corte de desperdício e revisão de despesas, sem metas numéricas."
-    },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
-      47,
-      513,
-      515
+      522,
+      527
      ],
-     "nota": "Defende excelência fiscal, revisão de despesas e qualidade do gasto; já reivindica Nota A, sem metas numéricas."
+     "nota": "Prevê fortalecer canais de denúncia, apuração e correição com tolerância zero a desvios."
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      271
+      189
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p91",
-   "subtema": "Compras públicas e contratos",
-   "proposta": "Auditar as parcerias público-privadas do Estado, a começar pela Rota da Celulose",
+   "id": "p94",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Auditar as parcerias público-privadas e concessões existentes, como a Rota da Celulose",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
-      899,
-      904
+      898,
+      904,
+      920
      ],
-     "nota": "Propõe avaliação permanente e transparência de contratos e benefícios públicos."
+     "nota": "Propõe avaliação e revisão permanente de contratos e benefícios públicos, com auditoria reforçada"
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
@@ -1948,15 +1981,46 @@
    }
   },
   {
-   "id": "p92",
-   "subtema": "Orçamento e gestão fiscal",
-   "proposta": "Elevar a aplicação em saúde de cerca de 12% para 18-20% do orçamento, em trajetória de 2 pontos por ano, financiada por parte da renúncia de ICMS e pelos cortes de despesa",
+   "id": "p95",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Ampliar o investimento por meio do banco de desenvolvimento e da captação de crédito junto a BID, BNDES e Novo PAC, sem onerar o custeio corrente",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
      "blocos": [
-      1139
+      821
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p96",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Reduzir a verba de publicidade oficial de cerca de R$ 90 milhões para um piso de cerca de R$ 30 milhões anuais, restrito a campanhas de utilidade pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      1763
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p97",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Reduzir pela metade os gastos com eventos e patrocínios do Estado (cerca de R$ 38 milhões por ano)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      1765,
+      1766
      ],
      "nota": ""
     }
@@ -2006,10 +2070,6 @@
    "116": {
     "texto": "Ação (o como): Preferência pelo Concursado (min. 60% dos comissionados por efetivos em 24 meses); veda nepotismo (SV13); auditoria em 90 dias; -40% de comissionados; plano de 5.000 concursos Meta / indicador (KPI): 40% comissionados; +5.000 efetivos; nepotismo -> zero",
     "pagina": 12
-   },
-   "118": {
-    "texto": "Custo e financiamento: −40% dos comissionados ≈ 1.040 cargos, concentrados no administrativo (não fragiliza o serviço-fim). Economia da folha comissionada + reposição por concurso; dimensionar em R$/ano ×13 (13º) pela folha média do grupo.",
-    "pagina": 13
    },
    "120": {
     "texto": "Fonte: Plano v0.7; comunicação_digital; Portal da Transparência MS, folha mar/2026 4.1.3 COR-03, Combater fraude em atestados médicos com perícia",
@@ -2139,10 +2199,6 @@
     "texto": "Ação (o como): Substituir função cartoraria por blockchain, certificado digital e fe pública ampliada a advogados (competência parcial - normas do CNJ/federal)",
     "pagina": 16
    },
-   "221": {
-    "texto": "Meta / indicador (KPI): Custo cartorario médio ao cidadão",
-    "pagina": 17
-   },
    "224": {
     "texto": "4.1.18 COR-18, Penduricalho não é salário: teto na base de cálculo",
     "pagina": 17
@@ -2151,16 +2207,16 @@
     "texto": "Ação (o como): Auditar as rubricas \"outras verbas\" das carreiras de topo; submeter o penduricalho ao teto na BASE DE CÁLCULO (não só no líquido), de modo que não infle 13º nem proventos de aposentadoria; publicar rubrica a rubrica.",
     "pagina": 17
    },
+   "228": {
+    "texto": "Meta / indicador (KPI): Nº de rubricas indenizatórias acima do teto zeradas; queda do bruto médio das carreiras de topo; % de \"outras verbas\" na folha.",
+    "pagina": 17
+   },
    "233": {
     "texto": "4.1.19 COR-19, Painéis públicos de contas (físicos e QR) em todo o Estado",
     "pagina": 17
    },
    "236": {
     "texto": "Ação (o como): PAINÉIS PÚBLICOS DE CONTAS, físicos e digitais (QR code), em pontos estratégicos do Estado (rodoviárias, UBS, escolas, praças, prédios públicos), mostrando em linguagem simples as contas do Estado E as contas locais que interessam àquele público (obras, saúde e educação do próprio município), com atualização em tempo real.",
-    "pagina": 17
-   },
-   "237": {
-    "texto": "Meta / indicador (KPI): Nº de painéis instalados; municípios cobertos; acessos aos QR codes Custo e financiamento: CUSTO BAIXO (telas/adesivos + integração de dados). PRAZO: Fase 1 (100 dias para o piloto).",
     "pagina": 17
    },
    "240": {
@@ -2275,10 +2331,6 @@
     "texto": "Ação (o como): Mapear a administração indireta e a terceirização (quanto custa, o que entrega); todo contrato e OS com meta de resultado e de custo, teto de despesa administrativa e publicação aberta; distinguir o que o Estado CONTROLA (estatais e autarquias) do que só REGULA (concessionárias, regular bem, sem fixar tarifa); auditar as OS a começar pela saúde.",
     "pagina": 23
    },
-   "350": {
-    "texto": "Resultado esperado: Gasto indireto sob controle e transparente; menos captura via contrato. · Administração indireta com meta e resultado publicados. · Eficiência sem reestatizar nem terceirizar às cegas.",
-    "pagina": 23
-   },
    "351": {
     "texto": "Meta / indicador (KPI): % do gasto via administração indireta/terceirização mapeado e com meta; nº de contratos/OS com meta publicada; economia por renegociação.",
     "pagina": 23
@@ -2311,12 +2363,8 @@
     "texto": "Meta / indicador (KPI): Relatório bienal publicado (sim/não); empregos gerados por R$1mi renunciado, por setor",
     "pagina": 36
    },
-   "665": {
-    "texto": "Custo e financiamento: Baixo (estudo técnico); realoca renúncia de baixo retorno",
-    "pagina": 36
-   },
-   "723": {
-    "texto": "8.2.6 BP-06, Loteria estadual (Lotesul): não institucionalizar o jogo",
+   "724": {
+    "texto": "Diagnóstico: Reativar a loteria estadual (Lotesul) institucionaliza o jogo e extrai renda de quem menos pode - 'imposto voluntario sobre o vicio'",
     "pagina": 39
    },
    "726": {
@@ -2342,10 +2390,6 @@
    "822": {
     "texto": "Meta / indicador (KPI): Investimento público total (orçamento + banco de desenvolvimento + crédito) como % do orçamento; execução realizada vs planejada",
     "pagina": 43
-   },
-   "1139": {
-    "texto": "Leitura: as duas grandes rampas do plano não brigam pelo custeio corrente. A aplicação em saúde sobe por trajetória, de ~12% para 18-20% do orçamento (+2 pontos/ano, cada ponto ~R$ 195 mi/ano), financiada capturando fração da renúncia de ICMS e dos cortes; um salto em bloco é que seria inviável.",
-    "pagina": 53
    },
    "1140": {
     "texto": "E o investimento do Estado, ampliado pelo banco de desenvolvimento público (ECO-05, INT-06), mira 30% somando orçamento e crédito, que é conta de capital e não disputa o custeio.",
@@ -2403,10 +2447,6 @@
     "texto": "Redução de 40% dos cargos comissionados",
     "pagina": 61
    },
-   "1759": {
-    "texto": "R$ 0,12-0,13 bi ~1.170-1.276 cargos, concentrados no 'meio' administrativo, × folha média (R$ 8.102), ×13.",
-    "pagina": 61
-   },
    "1761": {
     "texto": "Redução drástica da publicidade",
     "pagina": 61
@@ -2423,16 +2463,16 @@
     "texto": "R$ 0,02 bi ~Metade dos ~R$ 38 mi/ano gastos com eventos.",
     "pagina": 61
    },
-   "1769": {
-    "texto": "Corte de privilégio e propaganda; efeito já no 1º ano.",
-    "pagina": 61
-   },
    "1775": {
     "texto": "Recuperação de corrupção e desperdício",
     "pagina": 61
    },
    "1777": {
     "texto": "Recuperar ~metade do piso documentado; destinar a saúde e estrada.",
+    "pagina": 61
+   },
+   "1779": {
+    "texto": "Improdutividade e má alocação (LDO + debate)",
     "pagina": 61
    },
    "1781": {
@@ -2445,10 +2485,6 @@
    }
   },
   "governador-ms-eduardo-riedel-120002536582": {
-   "47": {
-    "texto": "MS obteve Nota A do Tesouro Nacional pelo quarto ano consecutivo na avaliação da qualidade fiscal. O Estado conquistou o Selo Diamante de transparência da ATRICON pelo terceiro ano seguido — único estado do Brasil a atingir o nível máximo nas três edições. MS está entre os dez estados mais digitais do Brasil, com mais de 700 serviços digitais e fibra ótica em todos os municípios. Um modelo de gestão por resultados foi implantado com indicadores acompanhados em tempo real.",
-    "pagina": 6
-   },
    "471": {
     "texto": "A dimensão busca consolidar um modelo de governança e gestão pública centrado no cidadão, apoiado por um planejamento robusto, por transformação digital, uso inteligente de dados, simplificação de processos e melhoria contínua dos serviços públicos, estes últimos, nos moldes de um Centro de Serviços Compartilhados - CSC.",
     "pagina": 36
@@ -2479,10 +2515,6 @@
    },
    "515": {
     "texto": "•Aprimorar os modelos de previsão orçamentária, com aperfeiçoamento da arrecadação baseada em matrizes de risco fiscal. •Aperfeiçoar mecanismos de avaliação e monitoramento da eficiência e conformidade do gasto público. •Aprimorar o sistema de controle de custos da administração e ampliar o modelo de gestão orçamentária focado na qualidade do gasto público. •Ampliar a utilização de análises de custo-benefício nas priorizações e decisões de investimento em programas, projetos e ações. •Fortalecer a aderência entre o planejamento e o orçamento, nas previsões de arrecadação e nas alocações de suas dotações, de médio e longo prazos. •Aprimorar os mecanismos de revisão e controle periódico de despesas públicas. •Estimular a inovação para aumento da produtividade da administração pública. •Aperfeiçoar instrumentos de monitoramento da execução orçamentária e de metas de produtos. •Consolidar políticas permanentes de responsabilidade fiscal e sustentabilidade financeira das contas públicas.",
-    "pagina": 41
-   },
-   "519": {
-    "texto": "O próximo passo será consolidar uma cultura institucional cada vez mais preventiva, baseada em gestão de riscos, integridade pública, transparência ativa e fortalecimento do controle social. A intenção é ampliar a confiança da sociedade nas instituições públicas, promovendo uma administração cada vez mais ética, aberta e responsável.",
     "pagina": 41
    },
    "522": {
@@ -2601,17 +2633,9 @@
     "texto": "Avaliar a retirada de vinculações que desvirtuem a finalidade do fundo, concentrando seus recursos na infraestrutura necessária ao escoamento e à competitividade da produção.",
     "pagina": 14
    },
-   "402": {
-    "texto": "A redução de impostos precisa caminhar junto com controle de despesas, combate ao desperdício e eficiência na arrecadação. O Estado deve buscar uma base econômica mais ampla, com menos distorções e maior atividade produtiva, em vez de depender continuamente do aumento da carga sobre quem já produz e paga.",
-    "pagina": 15
-   },
    "744": {
     "texto": "Painéis públicos que permitam ao cidadão acompanhar metas, filas, repasses e execução física das entregas.",
     "pagina": 36
-   },
-   "896": {
-    "texto": "Transparência não pode ser apenas publicação de dados: deve permitir controle, fiscalização e responsabilização.",
-    "pagina": 44
    },
    "897": {
     "texto": "Tolerância zero com corrupção, desvios e favorecimentos, fortalecendo prevenção, controle e responsabilização.",
@@ -2681,6 +2705,7 @@
     "texto": "Dar transparência não apenas ao que o Estado gastou, mas ao que foi efetivamente entregue à população.",
     "pagina": 46
    }
-  }
+  },
+  "governador-ms-lucien-rezende-120002532257": {}
  }
 }

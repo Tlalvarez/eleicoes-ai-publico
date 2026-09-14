@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "ciencia-tecnologia-ms.json",
-  "gerado_em": "2026-09-14T12:17:27Z",
-  "exportado_em": "2026-09-14T12:41:08Z"
+  "gerado_em": "2026-09-14T15:24:40Z",
+  "exportado_em": "2026-09-14T15:27:03Z"
  },
  "candidatos": [
   {
@@ -53,18 +53,27 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120017115315",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002552191/MS"
+  },
+  {
+   "slug": "governador-ms-lucien-rezende-120002532257",
+   "nome": "Lucien Rezende",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/120016837601",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/120002532257/MS"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Expandir a cobertura de internet de alta velocidade para todo o território estadual, alcançando todos os municípios",
+   "proposta": "Universalizar o acesso à internet de alta velocidade em todos os municípios do Estado, com prioridade para serviços públicos e o interior",
    "n_concorda": 4,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
+      245,
       246
      ],
      "nota": ""
@@ -75,79 +84,28 @@
       471,
       736
      ],
-     "nota": "Prioriza serviços públicos essenciais e o interior"
+     "nota": ""
     },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
       268
      ],
-     "nota": "Via Novo PAC, em parceria com o Governo Federal"
+     "nota": ""
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
       441
      ],
-     "nota": "Continuidade: fortalecer redes digitais de alta capacidade"
+     "nota": ""
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Levar conectividade a áreas rurais e comunidades remotas (assentamentos, aldeias indígenas, quilombolas e distritos isolados), reduzindo desigualdades digitais",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      245
-     ],
-     "nota": "Foco em segurança, telemedicina e educação do campo"
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      268
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      441
-     ],
-     "nota": "Formulação genérica de redução das desigualdades de acesso"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Articular com o Ministério das Comunicações e operadoras a universalização do sinal 4G e 5G, inclusive em rodovias estaduais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      245
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      441
-     ],
-     "nota": "Compromisso genérico de expandir telecomunicações em áreas estratégicas"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Conectar prédios públicos, escolas e unidades de saúde por rede de fibra óptica de alta velocidade",
+   "proposta": "Implantar rede estadual de fibra óptica interligando repartições públicas, escolas e unidades de saúde",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -155,85 +113,118 @@
      "blocos": [
       246
      ],
-     "nota": "Nomeia o programa: Cinturão Digital de MS"
+     "nota": "Nomeia o projeto como Cinturão Digital de MS"
     },
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
       471
      ],
-     "nota": ""
+     "nota": "Inclui empresas e comunidades na expansão da fibra"
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
       441
      ],
-     "nota": "Integrar conectividade a educação, saúde e segurança"
+     "nota": "Fortalecer redes digitais de alta capacidade"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Garantir conectividade em áreas rurais, assentamentos e comunidades tradicionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      245
+     ],
+     "nota": "Distritos isolados e assentamentos, para telemedicina e educação do campo"
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      268
+     ],
+     "nota": "Inclui aldeias indígenas e comunidades quilombolas"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Articular com o Governo Federal e operadoras a expansão da infraestrutura de telecomunicações (4G/5G e Novo PAC de conectividade)",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      245
+     ],
+     "nota": "Ministério das Comunicações e operadoras; sinal 4G/5G em rodovias estaduais"
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      268
+     ],
+     "nota": "Via Novo PAC, eixo Inclusão Digital e Conectividade"
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      441
+     ],
+     "nota": "Estimular expansão das telecomunicações em áreas estratégicas"
     }
    }
   },
   {
    "id": "p5",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Promover a digitalização de pequenas empresas e a inclusão tecnológica da população",
-   "n_concorda": 1,
+   "proposta": "Reduzir desigualdades digitais e promover inclusão tecnológica da população e das pequenas empresas",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      441
+     ],
+     "nota": ""
+    },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
       268
      ],
-     "nota": ""
+     "nota": "Foco em digitalização de pequenas empresas"
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      728
+     ],
+     "nota": "Canal telefônico e atendimento assistido a analfabetos digitais"
     }
    }
   },
   {
    "id": "p6",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Oferecer canal telefônico e atendimento assistido para pessoas com baixa alfabetização digital, além de ferramentas de acessibilidade nos serviços digitais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      727,
-      728
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Conectividade e inclusão digital",
-   "proposta": "Usar a infraestrutura digital como vetor de desenvolvimento econômico e de atração de investimentos, inclusive datacenters",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      434,
-      441
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Apoiar e implantar parques tecnológicos e incubadoras no Estado",
+   "subtema": "Ecossistema de inovação, parques tecnológicos e startups",
+   "proposta": "Apoiar e fomentar parques tecnológicos, incubadoras e startups no Estado",
    "n_concorda": 4,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
      "blocos": [
+      268,
       271,
-      272,
-      273
+      272
      ],
-     "nota": "Em parceria com a academia e o setor privado"
+     "nota": ""
     },
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -255,14 +246,36 @@
      "blocos": [
       334
      ],
-     "nota": "Fala em investir e profissionalizar ambientes de inovação"
+     "nota": "Investir recursos e profissionalizar ecossistemas de inovação"
     }
    }
   },
   {
-   "id": "p9",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Instalar parques tecnológicos em polos regionais definidos (Três Lagoas, Coxim, Paranaíba, Corumbá e Campo Grande)",
+   "id": "p7",
+   "subtema": "Ecossistema de inovação, parques tecnológicos e startups",
+   "proposta": "Descentralizar o ecossistema de inovação, estruturando ambientes de inovação nas diversas regiões do Estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      271
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      334
+     ],
+     "nota": "Ecossistemas regionais de inovação e empreendedorismo"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Ecossistema de inovação, parques tecnológicos e startups",
+   "proposta": "Instalar parques tecnológicos em polos regionais determinados (Três Lagoas, Coxim, Paranaíba, Corumbá e Campo Grande), em parceria com academia e setor privado",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -276,10 +289,10 @@
    }
   },
   {
-   "id": "p10",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Apoiar startups e o empreendedorismo de base tecnológica",
-   "n_concorda": 3,
+   "id": "p9",
+   "subtema": "Ecossistema de inovação, parques tecnológicos e startups",
+   "proposta": "Criar mecanismos de incentivo fiscal e econômico para empreendedorismo de base tecnológica, incubadoras e aceleradoras",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
      "posicao": "concorda",
@@ -289,7 +302,15 @@
       271
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Ecossistema de inovação, parques tecnológicos e startups",
+   "proposta": "Criar programa estadual de inovação articulando governo, universidades e setor produtivo em torno dos desafios regionais",
+   "n_concorda": 4,
+   "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
@@ -301,75 +322,31 @@
      "posicao": "concorda",
      "blocos": [
       842,
-      843
+      844
      ],
-     "nota": "Transformar pesquisa em empresa e apoiar ecossistemas criativos"
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      334
+     ],
+     "nota": "Aproximação entre universidades, centros de pesquisa e setor produtivo"
+    },
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      266,
+      267
+     ],
+     "nota": "Acordos com institutos de pesquisa e universidades"
     }
    }
   },
   {
    "id": "p11",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Criar incentivos fiscais e econômicos para descentralizar o ecossistema de inovação pelas regiões do Estado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      271
-     ],
-     "nota": "Instrumento explícito: incentivo fiscal e econômico"
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      334
-     ],
-     "nota": "Investir e profissionalizar ecossistemas regionais, sem citar incentivo fiscal"
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Articular parcerias entre governo, universidades, centros de pesquisa e setor produtivo para responder a desafios regionais",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      844
-     ],
-     "nota": ""
-    },
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      263
-     ],
-     "nota": "Dentro de um Programa Estadual de Inovação e Tecnologia"
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      334
-     ],
-     "nota": ""
-    },
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      261,
-      266
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Criar programa estadual para transformar resultados de pesquisa em produtos, patentes, processos e empresas",
+   "subtema": "Ecossistema de inovação, parques tecnológicos e startups",
+   "proposta": "Criar programa de transferência de tecnologia para converter pesquisa em produto, patente, processo e empresa",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -382,8 +359,53 @@
    }
   },
   {
+   "id": "p12",
+   "subtema": "Inovação aplicada aos setores produtivos",
+   "proposta": "Estimular a adoção de inteligência artificial e tecnologias emergentes no agro, na indústria e nos demais setores produtivos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      334
+     ],
+     "nota": ""
+    },
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      267
+     ],
+     "nota": ""
+    },
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      843,
+      845
+     ],
+     "nota": "Inclui inovação aplicada à saúde"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Inovação aplicada aos setores produtivos",
+   "proposta": "Direcionar a inovação para tecnologias verdes, biocombustíveis, energia renovável e agricultura inteligente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      845
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p14",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
+   "subtema": "Inovação aplicada aos setores produtivos",
    "proposta": "Firmar acordos com institutos de pesquisa e universidades para desenvolver e disponibilizar insumos, sementes selecionadas e matrizes tecnológicas a cooperativas e associações",
    "n_concorda": 1,
    "posicoes": {
@@ -399,60 +421,8 @@
   },
   {
    "id": "p15",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Estimular a adoção de inteligência artificial e tecnologias emergentes nos setores produtivos (agro, indústria e saúde)",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-ms-fabio-trad-120002539834": {
-     "posicao": "concorda",
-     "blocos": [
-      267
-     ],
-     "nota": ""
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      843,
-      845
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      334
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Ecossistema de inovação e empreendedorismo",
-   "proposta": "Priorizar inovação em tecnologias verdes, biocombustíveis, energia renovável e agricultura inteligente",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      845
-     ],
-     "nota": ""
-    },
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      257
-     ],
-     "nota": "Ciência e tecnologia orientadas à sustentabilidade e ao mercado de carbono"
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Fomento à pesquisa e formação científica",
-   "proposta": "Ampliar bolsas de pesquisa aplicada para graduação e pós-graduação",
+   "subtema": "Fomento à pesquisa e bolsas",
+   "proposta": "Ampliar bolsas e editais de apoio à pesquisa aplicada voltados aos desafios e gargalos do Estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -460,14 +430,14 @@
      "blocos": [
       274
      ],
-     "nota": "Editais exclusivos da FUNDECT, de graduação a pós-doutorado"
+     "nota": "Editais exclusivos via FUNDECT para laboratórios que atendam demandas locais"
     },
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
      "blocos": [
       334
      ],
-     "nota": "Ampliar os níveis atuais de bolsas"
+     "nota": "Ampliar níveis atuais de bolsas de graduação e pós-graduação via FUNDECT"
     },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
@@ -479,30 +449,8 @@
    }
   },
   {
-   "id": "p18",
-   "subtema": "Fomento à pesquisa e formação científica",
-   "proposta": "Lançar editais da fundação estadual de amparo à pesquisa (FUNDECT) direcionados aos gargalos tecnológicos e desafios específicos do Estado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      274
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      334
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Fomento à pesquisa e formação científica",
+   "id": "p16",
+   "subtema": "Fomento à pesquisa e bolsas",
    "proposta": "Criar bolsas de iniciação científica júnior para estudantes do ensino médio e técnico",
    "n_concorda": 1,
    "posicoes": {
@@ -516,8 +464,8 @@
    }
   },
   {
-   "id": "p20",
-   "subtema": "Fomento à pesquisa e formação científica",
+   "id": "p17",
+   "subtema": "Fomento à pesquisa e bolsas",
    "proposta": "Atrair centros de pesquisa, desenvolvimento e inovação para o Estado",
    "n_concorda": 2,
    "posicoes": {
@@ -526,7 +474,7 @@
      "blocos": [
       334
      ],
-     "nota": "Meta: pelo menos dois novos centros até 2030"
+     "nota": "Meta de pelo menos dois novos centros até 2030"
     },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
@@ -538,9 +486,9 @@
    }
   },
   {
-   "id": "p21",
-   "subtema": "Fomento à pesquisa e formação científica",
-   "proposta": "Valorizar a universidade estadual e integrá-la às demais instituições públicas de ensino superior, com retenção de talentos jovens",
+   "id": "p18",
+   "subtema": "Fomento à pesquisa e bolsas",
+   "proposta": "Valorizar a UEMS e integrar as instituições públicas de ensino superior (UFMS, UFGD, IFMS) com foco na retenção de talentos jovens",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -548,14 +496,14 @@
      "blocos": [
       280
      ],
-     "nota": "Cita UEMS, UFMS, UFGD e IFMS"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p22",
+   "id": "p19",
    "subtema": "Governo digital e cidades inteligentes",
-   "proposta": "Criar aplicativo único do Estado reunindo documentos, protocolos, saúde, matrícula, benefícios, obras e segurança",
+   "proposta": "Criar aplicativo único do Estado, com serviços integrados, navegação simples e acessibilidade",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -569,9 +517,9 @@
    }
   },
   {
-   "id": "p23",
+   "id": "p20",
    "subtema": "Governo digital e cidades inteligentes",
-   "proposta": "Integrar sistemas e bases de dados do Estado com os municípios, com padrões de interoperabilidade e suporte técnico regionalizado",
+   "proposta": "Integrar sistemas e bases de dados entre Estado e municípios, com padrões de interoperabilidade e suporte técnico regionalizado",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -586,31 +534,9 @@
    }
   },
   {
-   "id": "p24",
+   "id": "p21",
    "subtema": "Governo digital e cidades inteligentes",
-   "proposta": "Apoiar os municípios na implantação de soluções de cidades inteligentes (iluminação eficiente, sensores, videomonitoramento e gestão de tráfego)",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      734
-     ],
-     "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      441
-     ],
-     "nota": "Apoio à infraestrutura tecnológica para cidades inteligentes"
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Governo digital e cidades inteligentes",
-   "proposta": "Aplicar big data, inteligência artificial e internet das coisas à gestão pública, à prevenção de fraudes e à decisão de governo",
+   "proposta": "Usar big data, inteligência artificial e internet das coisas na gestão pública, para políticas públicas, indicadores e prevenção de fraudes",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -625,9 +551,31 @@
    }
   },
   {
-   "id": "p26",
+   "id": "p22",
+   "subtema": "Governo digital e cidades inteligentes",
+   "proposta": "Apoiar os municípios na implantação de infraestrutura e soluções de cidades inteligentes (iluminação eficiente, sensores, videomonitoramento, gestão de tráfego)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      734
+     ],
+     "nota": ""
+    },
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      441
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
    "subtema": "Governança da política de ciência e tecnologia",
-   "proposta": "Estruturar um órgão estadual próprio (secretaria ou coordenação) para governar, articular e monitorar as políticas de ciência, tecnologia e inovação",
+   "proposta": "Estruturar órgão estadual gestor de ciência, tecnologia e inovação, responsável por articular e monitorar os programas do setor",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -640,9 +588,9 @@
    }
   },
   {
-   "id": "p27",
+   "id": "p24",
    "subtema": "Governança da política de ciência e tecnologia",
-   "proposta": "Implementar a nova Política Estadual de Ciência, Tecnologia e Inovação recentemente criada",
+   "proposta": "Implementar a nova Política Estadual de Ciência, Tecnologia e Inovação",
    "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -664,14 +612,6 @@
    "246": {
     "texto": "Implantar o Cinturão Digital de Mato Grosso do Sul, conectando todas as repartições públicas, escolas estaduais e postos de saúde por fibra óptica de alta velocidade; ",
     "pagina": 20
-   },
-   "257": {
-    "texto": "As Atividades e o Modo de Produção: Dirige-se principalmente aos meios produtivos, que serão organizados em cadeias produtoras robustas. Esta proposta localiza a aplicação de C&T tomando as Cadeias Produtivas como a mediadora — mas não o centro — entre o ser humano e o meio ambiente. É justamente nos meios de produção onde as ações humanas oferecem as transformações mais significativas. Elas podem exaurir os recursos naturais ou pactuar novas formas de coexistência que gerem riqueza sem destruir nossas fontes de vida. Isso inclui o fortalecimento dos vários modelos de turismo, a exploração mineral responsável e o mercado de carbono ético e inclusivo.",
-    "pagina": 21
-   },
-   "261": {
-    "texto": "Para isso, o Poder Público assumirá seu papel indutor. O Estado vai reunir os agentes do setor científico, a sociedade organizada, os agentes públicos e as forças produtivas para consolidar na gestão estadual uma verdadeira cultura de inovação democrática.",
-    "pagina": 21
    },
    "264": {
     "texto": "Instituir o Órgão Gestor de C&T&I: Estruturar uma secretaria ou coordenação robusta focada exclusivamente em governar, articular e monitorar os programas de inovação, tecnologia e sustentabilidade aplicados em todo o território sul-mato-grossense; ",
@@ -715,10 +655,6 @@
    "334": {
     "texto": "Em 2025, a taxa anual de desocupação do Estado foi de 3,0%, uma das menores do país e a menor da série histórica local. No quarto trimestre de 2025, a desocupação caiu para 2,4%, ficando entre os menores índices nacionais. Já no primeiro trimestre de 2026, mesmo com alta sazonal em vários estados, Mato Grosso do Sul permaneceu •Implementar a nova Política Estadual de Ciência, Tecnologia e Inovação, criada recentemente. •Investir recursos e profissionalizar os ecossistemas regionais de inovação e empreendedorismo. •Aplicar recursos via FUNDECT em editais de pesquisa específicos voltados para os desafios do estado, buscando a aproximação entre universidades, centros de pesquisa e setor produtivo. •Ampliar programas de apoio à pesquisa aplicada e à inovação empresarial, ampliando os níveis atuais de bolsas, tanto para graduação, como para pós graduação. •Estimular a adoção de inteligência artificial e tecnologias emergentes nos setores produtivos. •Atrair centros de pesquisa, desenvolvimento e inovação para o Estado, atuando na implantação de pelo menos dois novos centros até 2030.",
     "pagina": 21
-   },
-   "434": {
-    "texto": "O próximo ciclo buscará ampliar a cobertura da conectividade, reduzir desigualdades digitais e consolidar uma infraestrutura tecnológica preparada para suportar a transformação digital da economia, das cidades e dos serviços públicos. O acesso à conectividade deverá ser tratado como elemento essencial da competitividade, da inclusão e do desenvolvimento regional, e como elemento básico para atração de investimentos em datacenters, em consonância com as vantagens competitivas da matriz energética sustentável do Estado.",
-    "pagina": 32
    },
    "441": {
     "texto": "•Expandir a cobertura da infraestrutura de conectividade em todo o território estadual. •Fortalecer redes digitais de alta capacidade. •Reduzir desigualdades de acesso à conectividade. •Apoiar a implantação de infraestrutura tecnológica para cidades inteligentes. •Estimular a expansão das telecomunicações em áreas estratégicas. •Promover infraestrutura digital como vetor de desenvolvimento econômico. •Integrar conectividade às políticas de educação, saúde, segurança e inovação. •Realizar a restauração do Parque Estadual das Nascentes do Rio Taquari e do Parque das Várzeas do Rio Ivinhema, explorando os créditos de carbono oriundos da restauração (ARR).",
@@ -808,6 +744,7 @@
     "texto": "Foco em tecnologias verdes, biocombustíveis, energia renovável, agricultura inteligente e inovação aplicada às cadeias produtivas do Estado.",
     "pagina": 41
    }
-  }
+  },
+  "governador-ms-lucien-rezende-120002532257": {}
  }
 }
