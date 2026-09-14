@@ -1,0 +1,19 @@
+{
+ "contrato": "busca/1",
+ "cargo": "governador",
+ "uf": "RS",
+ "modelo": "jina-embeddings-v3",
+ "dimensoes": 256,
+ "quantizacao": "int8 (unitário × 127)",
+ "task_consulta": "retrieval.query",
+ "propostas": 902,
+ "blocos": 3863,
+ "com_sinonimos": 902,
+ "documentos_sha256": "7a1fec8adfc2bccabc14baff5116f64d470d482b009c073e317c8d8907e99c17",
+ "bytes": {
+  "documentos.json": 2092395,
+  "vetores-propostas.bin": 230912,
+  "vetores-blocos.bin": 988928
+ },
+ "exportado_em": "2026-09-14T06:41:52Z"
+}

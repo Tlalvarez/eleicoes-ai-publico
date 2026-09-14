@@ -1,0 +1,1876 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "RS",
+ "pagina": "saude",
+ "nome": "Saúde",
+ "titulo": "Saúde: o que cada candidato propõe",
+ "temas": [
+  "saude"
+ ],
+ "origem": {
+  "arquivo": "saude-rs.json",
+  "gerado_em": "2026-09-14T03:45:27Z",
+  "exportado_em": "2026-09-14T06:41:52Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-rs-gabriel-souza-210002542892",
+   "nome": "Gabriel Souza",
+   "partido": "MDB",
+   "numero": "15",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/210017018692",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/210002542892/RS"
+  },
+  {
+   "slug": "governador-rs-juliana-brizola-210002551508",
+   "nome": "Juliana Brizola",
+   "partido": "PDT",
+   "numero": "12",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/210017104498",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/210002551508/RS"
+  },
+  {
+   "slug": "governador-rs-marcelo-maranata-210002535802",
+   "nome": "Marcelo Maranata",
+   "partido": "PSDB",
+   "numero": "45",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/210016868477",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/210002535802/RS"
+  },
+  {
+   "slug": "governador-rs-zucco-210002547857",
+   "nome": "Zucco",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/210017095572",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/210002547857/RS"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Filas, regulação e acesso",
+   "proposta": "Instituir política estadual permanente para reduzir os tempos de espera por consultas, exames, cirurgias e tratamentos especializados",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      162
+     ],
+     "nota": "Força-tarefa estadual com meta de zerar as filas"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      309,
+      315
+     ],
+     "nota": "Gestão regional das filas assistenciais"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      283,
+      285
+     ],
+     "nota": "Pagamento condicionado à produção qualificada e à redução da espera"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      126,
+      1242
+     ],
+     "nota": "Amplia o SUS Gaúcho com metas anuais e divulgação mensal"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Filas, regulação e acesso",
+   "proposta": "Integrar e digitalizar a regulação de consultas, exames, cirurgias e leitos em fila única transparente, com acompanhamento da posição e do tempo estimado pelo cidadão",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      165
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      287
+     ],
+     "nota": "Protocolos clínicos e classificação por risco"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      125,
+      1224,
+      1240,
+      1241
+     ],
+     "nota": "Central única auditável integrando GERCON, painéis e SUS Gaúcho"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Filas, regulação e acesso",
+   "proposta": "Publicar periodicamente tempos de espera, desfechos e indicadores de qualidade por região",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      325
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1235,
+      1815
+     ],
+     "nota": "Mapa de filas e plano de redução"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Filas, regulação e acesso",
+   "proposta": "Contratar capacidade ociosa de hospitais comunitários, filantrópicos e universitários com turnos extras e implantar unidades móveis de diagnóstico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      162
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Regionalizar a atenção especializada e a média e alta complexidade, ampliando oferta de especialistas, exames e cirurgias em polos regionais",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      163
+     ],
+     "nota": "Fortalecimento de hospitais-polo, UTIs e serviços no interior"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      309,
+      315,
+      317
+     ],
+     "nota": "Via Regionalização CIB 50 e SUS Gaúcho"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      294
+     ],
+     "nota": "Combina presencial, telessaúde e transporte sanitário"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      123,
+      1222
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Organizar a rede estadual em sete grandes polos regionais de saúde com centros de especialidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      123,
+      1238
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Reduzir deslocamentos longos de pacientes para consultas, exames e procedimentos que podem ser resolvidos na região",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      124,
+      1239
+     ],
+     "nota": "Combate explícito à \"ambulancioterapia\""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      304
+     ],
+     "nota": "Via telessaúde integrada à atenção primária e à regulação"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Fortalecer e expandir centros e redes regionais de referência em traumatologia, ortopedia, hemodiálise e outras especialidades nas regiões desassistidas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      128,
+      1244
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Reestruturar as 18 Coordenadorias Regionais de Saúde como núcleos de planejamento e apoio técnico do SUS",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      167,
+      170
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Fortalecer a atenção primária como porta de entrada e coordenadora do cuidado, com foco em prevenção e integração das redes",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      162
+     ],
+     "nota": "Ampliação do financiamento da Estratégia Saúde da Família"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      309,
+      314,
+      324
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      292
+     ],
+     "nota": "Meta de redução de internações evitáveis"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      132,
+      1248
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Ampliar o cofinanciamento estadual e o apoio técnico aos municípios para a atenção primária",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      161,
+      162
+     ],
+     "nota": "Repasses regulares e previsíveis aos municípios"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      325,
+      326
+     ],
+     "nota": "Consolidação do PIAPS e da Rede Bem Cuidar RS"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      292
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1221
+     ],
+     "nota": "Cofinanciamento por desempenho e equidade"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Expandir a telessaúde e o apoio clínico a distância às equipes municipais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      339
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      303,
+      304
+     ],
+     "nota": "Inclui teleinterconsulta, telediagnóstico e monitoramento remoto"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1226,
+      1247
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Saúde mental e álcool e drogas",
+   "proposta": "Ampliar e regionalizar a Rede de Atenção Psicossocial, com expansão e qualificação dos CAPS",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      163,
+      164
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      322,
+      323
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      307,
+      308,
+      311
+     ],
+     "nota": "Inclui resposta às crises e cuidado de crianças e adolescentes"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      133,
+      1230,
+      1249
+     ],
+     "nota": "Articulação entre CAPS, hospitais, atenção básica e assistência social"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Saúde mental e álcool e drogas",
+   "proposta": "Fortalecer a atenção às pessoas com uso prejudicial de álcool e outras drogas",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      533,
+      534
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      311
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1230,
+      1249
+     ],
+     "nota": "Dependência química articulada com assistência social"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Saúde mental e álcool e drogas",
+   "proposta": "Orientar a rede de cuidado a usuários de álcool e drogas pela estratégia de redução de danos e reinserção social, com ações territorializadas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      533,
+      534
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Saúde mental e álcool e drogas",
+   "proposta": "Implantar ações estaduais de prevenção do suicídio",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      311
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1613
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Saúde mental e álcool e drogas",
+   "proposta": "Capacitar profissionais dos CAPS e da atenção básica para identificar transtornos relacionados a apostas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      163,
+      1658
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Fortalecer e integrar a vigilância em saúde (epidemiológica, sanitária, ambiental e laboratorial)",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      166
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      311,
+      326,
+      327
+     ],
+     "nota": "Ampliação do Qualifica Vigilância"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      318,
+      319
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Ampliar a cobertura vacinal e as ações de prevenção de doenças",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      326,
+      327
+     ],
+     "nota": "Continuidade do Imuniza Escola"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      319
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      132,
+      1248
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Preparar a rede de saúde para emergências sanitárias, epidemias e desastres climáticos, com protocolos e capacidade de resposta rápida",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      165
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      311,
+      335,
+      336,
+      337
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      320,
+      321
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Promover a adaptação climática e a resiliência da infraestrutura das unidades de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      165
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      337
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Criar uma força estadual de resposta rápida do SUS para emergências sanitárias e desastres",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      165
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Manter planos de continuidade dos serviços com estoques estratégicos de medicamentos, oxigênio, energia e comunicação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      321
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Vigilância, prevenção e emergências",
+   "proposta": "Regionalizar os serviços do LACEN",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      166
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Aplicar no mínimo o piso constitucional de 12% das receitas estaduais em ações e serviços públicos de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      161
+     ],
+     "nota": "Base de cálculo na Receita Líquida de Impostos e Transferências"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      121,
+      1211
+     ],
+     "nota": "Trata o percentual como piso e não como teto"
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Aperfeiçoar o Programa Assistir e seus mecanismos de financiamento hospitalar",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      317
+     ],
+     "nota": "Aprimorar mantendo o programa criado na atual gestão"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      326,
+      327
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Revisar os critérios de alocação do Programa Assistir para corrigir distorções entre hospitais e regiões, considerando demanda atendida, fluxos intermunicipais e produção",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      327,
+      330
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Apoiar e fortalecer os consórcios intermunicipais de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      295,
+      296
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      134,
+      1250
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Absorver na contabilidade do Estado os pagamentos acima da tabela feitos pelas prefeituras, para mapear custo real e reduzir o aporte municipal",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      296
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Criar consórcios intermunicipais de compras de medicamentos, equipamentos e insumos para ganhar escala e reduzir custos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      134,
+      1250
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Financiamento da saúde",
+   "proposta": "Liderar articulação nacional pela revisão da tabela SUS, com estudos de custo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      127,
+      1243
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Saúde digital e informação",
+   "proposta": "Integrar e tornar interoperáveis prontuários e sistemas assistenciais, com histórico clínico longitudinal acessível",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      165,
+      166
+     ],
+     "nota": "Implantação do Prontuário Eletrônico Gaúcho Unificado"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      338,
+      339
+     ],
+     "nota": "Inclui governança de dados e inteligência analítica"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      305,
+      306
+     ],
+     "nota": "Consulta pelo próprio cidadão e redução de exames repetidos"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1228
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Saúde materno-infantil",
+   "proposta": "Qualificar a rede de atenção materno-infantil (pré-natal, parto, atenção neonatal, puerpério e desenvolvimento infantil)",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      163
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      328,
+      329,
+      332
+     ],
+     "nota": "Articulação com a Política Estadual da Primeira Infância"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      316,
+      317
+     ],
+     "nota": "Inclui pré-natal de alto risco"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1229
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Rede hospitalar",
+   "proposta": "Qualificar a gestão hospitalar com apoio técnico, protocolos e indicadores de desempenho",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      333,
+      334
+     ],
+     "nota": "Foco em hospitais de pequeno e médio porte"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      298
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      129,
+      1245
+     ],
+     "nota": "Replicar modelos hospitalares de alta eficiência"
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Rede hospitalar",
+   "proposta": "Garantir a sustentabilidade financeira da rede hospitalar, revisando incentivos e contratualização vinculada a metas de acesso, qualidade e resultados",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      310,
+      316,
+      317
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      297,
+      298
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Rede hospitalar",
+   "proposta": "Consolidar mecanismos estaduais de financiamento de obras, reformas, equipamentos e modernização tecnológica dos hospitais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      299,
+      300
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Urgência, emergência e transporte sanitário",
+   "proposta": "Organizar regionalmente a urgência e a emergência, com regulação de leitos, retaguarda e transporte sanitário e inter-hospitalar",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      166
+     ],
+     "nota": "Ênfase no SAMU e no transporte aeromédico"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      301,
+      302
+     ],
+     "nota": "Integra SAMU, UPAs, portas hospitalares e UTI"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1232
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Urgência, emergência e transporte sanitário",
+   "proposta": "Modernizar o SAMU 192 e o transporte aeromédico público",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      166
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Doenças crônicas e linhas de cuidado",
+   "proposta": "Fortalecer as linhas de cuidado das doenças crônicas não transmissíveis, com rastreamento, diagnóstico precoce e acompanhamento longitudinal",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      320,
+      321
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      319
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      132,
+      1229,
+      1248
+     ],
+     "nota": "Inclui linha de cuidado cardiovascular"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Doenças crônicas e linhas de cuidado",
+   "proposta": "Organizar linhas regionais de cuidado oncológico, reduzindo o tempo entre suspeita, diagnóstico e início do tratamento",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      312,
+      313
+     ],
+     "nota": "Inclui anatomia patológica, radioterapia e cuidados paliativos"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1229
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Atenção às pessoas com TEA",
+   "proposta": "Ampliar e qualificar a rede estadual de atendimento às pessoas com Transtorno do Espectro Autista e suas famílias",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      163
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      326,
+      327
+     ],
+     "nota": "Consolidação do TEAcolhe"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      331,
+      332
+     ],
+     "nota": "Escuta regionalizada e parcerias com entidades de acolhimento"
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Assistência farmacêutica",
+   "proposta": "Modernizar a assistência farmacêutica, integrando compras, estoques, distribuição e acompanhamento terapêutico para garantir acesso a medicamentos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      326,
+      327
+     ],
+     "nota": "Continuidade do Farmácia Cuidar+"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      314,
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Assistência farmacêutica",
+   "proposta": "Reduzir a judicialização evitável de medicamentos e tratamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Gestão por resultados e transparência",
+   "proposta": "Gerir a saúde por resultados, com metas anuais, monitoramento de indicadores, avaliação independente e revisão de programas de baixo desempenho",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      324,
+      325
+     ],
+     "nota": "Vincula incentivos financeiros aos resultados"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1213,
+      1252,
+      1253,
+      1255,
+      1256
+     ],
+     "nota": "Painel público atualizado ao menos trimestralmente"
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Pessoa idosa",
+   "proposta": "Ampliar a política Saúde 60+ e as linhas de cuidado à pessoa idosa, incluindo demências",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      318,
+      319,
+      719,
+      720,
+      723,
+      724
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1233,
+      1234
+     ],
+     "nota": "Inclui o Plano Estadual de Cuidado Integral em Demências"
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Complexo industrial da saúde e inovação",
+   "proposta": "Fomentar o complexo econômico-industrial da saúde articulando universidades, hospitais e setor produtivo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      170
+     ],
+     "nota": "Usa o poder de compra do Estado para atrair indústrias farmacêuticas e de biotecnologia"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      130,
+      1246
+     ],
+     "nota": "Cria um hub estadual de saúde, inovação e tecnologia"
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Complexo industrial da saúde e inovação",
+   "proposta": "Priorizar projetos de biotecnologia, dispositivos médicos e inteligência artificial aplicada à saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      131,
+      1247
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Adotar medidas de provimento e fixação de profissionais de saúde em pequenos municípios e regiões desassistidas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      162
+     ],
+     "nota": "Incentivos à fixação em pequenos municípios e periferias"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      322,
+      323
+     ],
+     "nota": "Planejamento da força de trabalho e educação permanente"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Interiorizar as residências médicas e multiprofissionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      166
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "IPE Saúde",
+   "proposta": "Revisar o modelo de gestão do IPE Saúde, incorporando práticas de eficiência e governança da saúde suplementar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      333,
+      334
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Gestão por resultados e transparência",
+   "proposta": "Publicar em painel aberto os contratos, custos, beneficiários e resultados dos serviços de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      298,
+      325
+     ],
+     "nota": "Divulgar indicadores, execução financeira e prestação de contas na contratualização"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1223,
+      1225,
+      1227,
+      1231,
+      1236
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Gestão por resultados e transparência",
+   "proposta": "Manter painel público de indicadores da saúde atualizado ao menos trimestralmente",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      165
+     ],
+     "nota": "Prevê regulação integrada e digitalizada com transparência das filas."
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      325
+     ],
+     "nota": "Monitorar e divulgar indicadores de acesso, espera, qualidade e desfechos"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1254
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-rs-gabriel-souza-210002542892": {
+   "309": {
+    "texto": "Diretrizes Estratégicas •Fortalecer a atenção primária e as redes regionalizadas de atenção à saúde, ampliando o acesso e a coordenação do cuidado, reduzindo filas e desigualdades territoriais.",
+    "pagina": 18
+   },
+   "310": {
+    "texto": "• Promover a sustentabilidade e a modernização do SUS gaúcho, qualificando o financiamento, a gestão, a transformação digital e a integração dos serviços.",
+    "pagina": 18
+   },
+   "311": {
+    "texto": "• Preparar o sistema de saúde para os desafios demográficos, epidemiológicos e climáticos, fortalecendo o cuidado integral, a vigilância em saúde e a capacidade de resposta às emergências.",
+    "pagina": 18
+   },
+   "314": {
+    "texto": "a. Atenção Integral à Saúde ao Longo do Ciclo da Vida: Consolidar a atenção primária como coordenadora do cuidado, promovendo ações de prevenção e integração da rede de atenção, assegurando cuidado integral e continuidade do acompanhamento da primeira infância ao envelhecimento.",
+    "pagina": 18
+   },
+   "315": {
+    "texto": "b. Redução das Filas e Ampliação do Acesso à Saúde: Reduzir os tempos de espera para consultas, exames e cirurgias por meio da gestão regional das filas assistenciais e da ampliação da oferta de serviços especializados, qualificando o acesso da população à atenção especializada.",
+    "pagina": 18
+   },
+   "316": {
+    "texto": "c. Sustentabilidade Hospitalar e",
+    "pagina": 18
+   },
+   "317": {
+    "texto": "Regionalização da Saúde: Aprimorar o Programa SUS Gaúcho, o Assistir e a Regionalização CIB 50, ampliando a capacidade resolutiva das regiões de saúde e garantindo maior sustentabilidade à rede hospitalar.",
+    "pagina": 18
+   },
+   "318": {
+    "texto": "d. Saúde 60+ e Cuidado da Pessoa Idosa:",
+    "pagina": 18
+   },
+   "319": {
+    "texto": "Ampliar e consolidar a política Saúde 60+, fortalecendo as linhas de cuidado da pessoa idosa, com atenção específica às demências e à interface com a oncologia, integrando atenção primária, atenção especializada e rede hospitalar.",
+    "pagina": 18
+   },
+   "320": {
+    "texto": "e. Atenção às Doenças Crônicas:",
+    "pagina": 18
+   },
+   "321": {
+    "texto": "Fortalecer as linhas de cuidado das doenças crônicas não transmissíveis, ampliando as ações de promoção da saúde, prevenção, rastreamento, diagnóstico precoce, tratamento, reabilitação e acompanhamento longitudinal, com integração entre a Atenção Primária, a Atenção Especializada e a Rede Hospitalar, visando reduzir a mortalidade prematura, as incapacidades e as desigualdades no acesso ao cuidado.",
+    "pagina": 18
+   },
+   "322": {
+    "texto": "f. Saúde Mental e Atenção Psicossocial:",
+    "pagina": 18
+   },
+   "323": {
+    "texto": "Reforçar a Rede de Atenção Psicossocial, ampliando o acesso aos serviços regionalizados, qualificando a atenção às diferentes faixas etárias e fortalecendo ações de prevenção e promoção da saúde mental.",
+    "pagina": 18
+   },
+   "324": {
+    "texto": "g. Atenção Primária e Redes Integradas de",
+    "pagina": 18
+   },
+   "325": {
+    "texto": "Cuidado: Consolidar e ampliar programas estruturantes como Rede Bem Cuidar",
+    "pagina": 18
+   },
+   "326": {
+    "texto": "RS, PIAPS, TEAcolhe, Ser Mulher, CRAIPs, Farmácia Cuidar+, Imuniza Escola e Qualifica",
+    "pagina": 18
+   },
+   "327": {
+    "texto": "Vigilância, fortalecendo a prevenção, a coordenação do cuidado e a integração entre os diferentes níveis de atenção.",
+    "pagina": 18
+   },
+   "328": {
+    "texto": "h. Saúde da Mulher, da Criança e da",
+    "pagina": 18
+   },
+   "329": {
+    "texto": "Primeira Infância: Qualificar as linhas de cuidado materno-infantil, ampliando a atenção à gestação, ao parto, ao puerpério, ao desenvolvimento infantil e à prevenção",
+    "pagina": 18
+   },
+   "332": {
+    "texto": "Gabriel Souza 2027-2030 da mortalidade materna e infantil, em articulação com a Política Estadual da Primeira Infância.",
+    "pagina": 19
+   },
+   "333": {
+    "texto": "i. Qualificação da Gestão Hospitalar:",
+    "pagina": 19
+   },
+   "334": {
+    "texto": "Fortalecer a gestão dos hospitais, especialmente de pequeno e médio porte, por meio de apoio técnico, capacitação, modernização de processos e implantação de indicadores de desempenho, ampliando a eficiência e a sustentabilidade das instituições.",
+    "pagina": 19
+   },
+   "335": {
+    "texto": "j. Saúde Resiliente e Resposta a",
+    "pagina": 19
+   },
+   "336": {
+    "texto": "Emergências Sanitárias e Climáticas:",
+    "pagina": 19
+   },
+   "337": {
+    "texto": "Robustecer a capacidade de resposta do SUS às emergências sanitárias e climáticas, fortalecendo a vigilância em saúde, a preparação da rede e a resiliência da infraestrutura assistencial.",
+    "pagina": 19
+   },
+   "338": {
+    "texto": "k. Saúde Digital, Interoperabilidade e",
+    "pagina": 19
+   },
+   "339": {
+    "texto": "Informação em Saúde: Consolidar a transformação digital do SUS, promovendo a interoperabilidade entre os sistemas de informação, a integração do prontuário eletrônico do cidadão em todos os níveis de atenção, a ampliação do uso da telemedicina e de outras soluções digitais, fortalecendo a governança dos dados, a segurança da informação, a inteligência analítica, a modernização da regulação e o uso de tecnologias inovadoras para qualificar a assistência, a gestão e o planejamento em saúde.",
+    "pagina": 19
+   },
+   "533": {
+    "texto": "e. Prevenção, Cuidado e Redução de Danos:",
+    "pagina": 28
+   },
+   "534": {
+    "texto": "Fortalecer a rede de prevenção, atenção e reinserção social voltada às pessoas com problemas relacionados ao uso de álcool e outras drogas, ampliando ações territorializadas, intersetoriais e orientadas pela estratégia de redução de danos.",
+    "pagina": 28
+   },
+   "719": {
+    "texto": "d. Saúde 60+ e Atenção Integral à",
+    "pagina": 36
+   },
+   "720": {
+    "texto": "Pessoa Idosa: Ampliar o acesso às ações de promoção da saúde, prevenção de fragilidades, cuidado às condições crônicas, atenção às demências, saúde mental e",
+    "pagina": 36
+   },
+   "723": {
+    "texto": "Gabriel Souza 2027-2030 reabilitação funcional, fortalecendo a política",
+    "pagina": 37
+   },
+   "724": {
+    "texto": "Saúde 60+ em todas as regiões do Estado.",
+    "pagina": 37
+   }
+  },
+  "governador-rs-juliana-brizola-210002551508": {
+   "161": {
+    "texto": "A Coligação Com o Povo garantirá a aplicação integral do piso constitucional de 12% da Receita Líquida de Impostos e Transferências (RLIT) em Ações e Serviços Públicos de Saúde, assegurando regularidade dos repasses ao SUS estadual e aos municípios. A Atenção",
+    "pagina": 7
+   },
+   "162": {
+    "texto": "Primária será fortalecida com ampliação do financiamento da Estratégia Saúde da Família e incentivos à fixação de profissionais em pequenos municípios e periferias. Será implementada uma força tarefa estadual para zerar as filas de espera por cirurgias eletivas, exames de alta complexidade e consultas especializadas, utilizando a capacidade ociosa de hospitais comunitários, filantrópicos e universitários, contratando turnos extras e implantando Unidades",
+    "pagina": 7
+   },
+   "163": {
+    "texto": "Móveis de Diagnósticos. A média e alta complexidade serão regionalizadas, fortalecendo hospitais-polo, UTIs e serviços especializados no interior. Também serão fortalecidas as redes de saúde mental, materno-infantil e de atenção às pessoas com Transtorno de Espectro Autista (TEA), com expansão dos Centros de Atenção",
+    "pagina": 7
+   },
+   "164": {
+    "texto": "Psicossocial (CAPS) e qualificação do atendimento.",
+    "pagina": 7
+   },
+   "165": {
+    "texto": "O governo criará a Força Estadual de Resposta Rápida do SUS, preparada para emergências sanitárias, epidemias e desastres socioambientais e promoverá a adaptação climática das unidades de saúde. A regulação será integrada e digitalizada, com transparência das filas e implantação do Prontuário Eletrônico",
+    "pagina": 7
+   },
+   "166": {
+    "texto": "Gaúcho Unificado. Serão interiorizadas as residências médicas e multiprofissionais, modernizados o SAMU 192 e o transporte aeromédico público e regionalizados os serviços do LACEN, fortalecendo a vigilância sanitária e ambiental. As 18",
+    "pagina": 7
+   },
+   "167": {
+    "texto": "Coordenadorias Regionais de Saúde",
+    "pagina": 7
+   },
+   "170": {
+    "texto": "serão reestruturadas como núcleos de planejamento e apoio técnico do SUS, enquanto o poder de compra do Estado, em articulação com universidades e o setor produtivo, será utilizado para atrair indústrias farmacêuticas, de equipamentos médicos e biotecnologia.",
+    "pagina": 8
+   }
+  },
+  "governador-rs-marcelo-maranata-210002535802": {
+   "121": {
+    "texto": "O Estado aplicará, no mínimo, o percentual constitucional - o que a atual gestão, infelizmente, não tem feito - em ações e serviços públicos de saúde. Esse percentual é obrigação legal dos Estados e deverá ser tratado como piso, não como teto.",
+    "pagina": 7
+   },
+   "123": {
+    "texto": "1. Organizar a rede estadual em sete grandes polos regionais de saúde, com centros de especialidades próximos à residência dos pacientes.",
+    "pagina": 7
+   },
+   "124": {
+    "texto": "2. Reduzir a chamada “ambulancioterapia”, evitando que cidadãos precisem percorrer centenas de quilômetros para consultas, exames ou procedimentos que podem ser regionalizados.",
+    "pagina": 7
+   },
+   "125": {
+    "texto": "3. Aperfeiçoar e integrar os sistemas estaduais de regulação e acompanhamento das filas do SUS, incluindo o GERCON, os painéis de regulação e o SUS Gaúcho, consolidando uma central estadual unificada e auditável, com posição do paciente, prioridade clínica, tempo estimado e capacidade disponível por região.",
+    "pagina": 7
+   },
+   "126": {
+    "texto": "4. Fortalecer e ampliar o SUS Gaúcho e as demais estratégias de redução das filas, estabelecendo metas anuais para consultas, exames e cirurgias, com divulgação mensal dos resultados.",
+    "pagina": 7
+   },
+   "127": {
+    "texto": "5. Liderar uma articulação nacional pela revisão da tabela SUS, apresentando estudos de custo e defendendo valores compatíveis com a realidade dos hospitais.",
+    "pagina": 7
+   },
+   "128": {
+    "texto": "6. Fortalecer e expandir os centros e as redes regionais de referência em traumatologia, ortopedia, hemodiálise e outras especialidades, priorizando as regiões desassistidas.",
+    "pagina": 7
+   },
+   "129": {
+    "texto": "7. Replicar modelos hospitalares de alta eficiência, com protocolos clínicos, gestão profissional, compras planejadas e acompanhamento de resultados.",
+    "pagina": 7
+   },
+   "130": {
+    "texto": "8. Desenvolver e fortalecer um hub estadual de saúde, inovação e tecnologia, articulando universidades, hospitais, startups, indústria e centros de pesquisa.",
+    "pagina": 7
+   },
+   "131": {
+    "texto": "9. Priorizar projetos de biotecnologia, telemedicina, dispositivos médicos, inteligência artificial aplicada à saúde e soluções voltadas ao envelhecimento populacional.",
+    "pagina": 7
+   },
+   "132": {
+    "texto": "10. Fortalecer a atenção primária, a prevenção, a vacinação, a saúde mental e o cuidado continuado das doenças crônicas.",
+    "pagina": 7
+   },
+   "133": {
+    "texto": "11. Ampliar a rede de atendimento em saúde mental e dependência química, articulando CAPS, hospitais, atenção básica e assistência social.",
+    "pagina": 7
+   },
+   "134": {
+    "texto": "12. Criar consórcios intermunicipais de compras de medicamentos, equipamentos e insumos, aumentando a escala e reduzindo custos.",
+    "pagina": 7
+   },
+   "163": {
+    "texto": "10. Capacitar profissionais dos CAPS e da atenção básica para identificar transtornos relacionados a apostas. O Ministério da Saúde reconhece a associação entre jogo problemático, sofrimento mental, impactos familiares e prejuízos financeiros.",
+    "pagina": 9
+   },
+   "1211": {
+    "texto": "O Estado aplicará, no mínimo, o percentual constitucional de 12% das receitas definidas em lei em ações e serviços públicos de saúde. Esse percentual é obrigação legal dos Estados e deverá ser tratado como piso, não como teto.",
+    "pagina": 57
+   },
+   "1213": {
+    "texto": "Transformar esta área em política de Estado orientada por resultados, com entregas regionalizadas, transparência, coordenação interinstitucional e melhoria mensurável da qualidade de vida.",
+    "pagina": 58
+   },
+   "1221": {
+    "texto": "1. Fortalecer atenção primária e cofinanciamento por desempenho e equidade. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1222": {
+    "texto": "2. Regionalizar consultas, exames e cirurgias especializadas. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente.",
+    "pagina": 58
+   },
+   "1223": {
+    "texto": "Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1224": {
+    "texto": "3. Criar fila única transparente para procedimentos eletivos. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente.",
+    "pagina": 58
+   },
+   "1225": {
+    "texto": "Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1226": {
+    "texto": "4. Expandir telessaúde e apoio clínico às equipes municipais. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente.",
+    "pagina": 58
+   },
+   "1227": {
+    "texto": "Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1228": {
+    "texto": "5. Integrar prontuários e informações assistenciais. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1229": {
+    "texto": "6. Ampliar linhas de cuidado para câncer, cardiovascular e saúde materno-infantil. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1230": {
+    "texto": "7. Fortalecer saúde mental e atenção a álcool e outras drogas. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente.",
+    "pagina": 58
+   },
+   "1231": {
+    "texto": "Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1232": {
+    "texto": "8. Melhorar regulação de leitos e transporte sanitário. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 58
+   },
+   "1233": {
+    "texto": "9. Fortalecer e ampliar a Política Estadual de Saúde da Pessoa Idosa, o Saúde 60+ RS e o Plano",
+    "pagina": 59
+   },
+   "1234": {
+    "texto": "Estadual de Cuidado Integral em Demências. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 59
+   },
+   "1235": {
+    "texto": "10. Publicar tempos de espera, desfechos e qualidade por região. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente.",
+    "pagina": 59
+   },
+   "1236": {
+    "texto": "Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 59
+   },
+   "1238": {
+    "texto": "11. Organizar a rede estadual em sete grandes polos regionais de saúde, com centros de especialidades próximos à residência dos pacientes. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1239": {
+    "texto": "12. Reduzir a chamada “ambulancioterapia”, evitando que cidadãos precisem percorrer centenas de quilômetros para consultas, exames ou procedimentos que podem ser regionalizados. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1240": {
+    "texto": "13. Aperfeiçoar e integrar os sistemas estaduais de regulação e acompanhamento das filas do",
+    "pagina": 59
+   },
+   "1241": {
+    "texto": "SUS, incluindo o GERCON, os painéis de regulação e o SUS Gaúcho, consolidando uma central estadual unificada e auditável, com posição do paciente, prioridade clínica, tempo estimado e capacidade disponível por região. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1242": {
+    "texto": "14. Fortalecer e ampliar o SUS Gaúcho e as demais estratégias de redução das filas, estabelecendo metas anuais para consultas, exames e cirurgias, com divulgação mensal dos resultados. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1243": {
+    "texto": "15. Liderar uma articulação nacional pela revisão da tabela SUS, apresentando estudos de custo e defendendo valores compatíveis com a realidade dos hospitais. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1244": {
+    "texto": "16. Fortalecer e expandir os centros e as redes regionais de referência em traumatologia, ortopedia, hemodiálise e outras especialidades, priorizando as regiões desassistidas. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1245": {
+    "texto": "17. Replicar modelos hospitalares de alta eficiência, com protocolos clínicos, gestão profissional, compras planejadas e acompanhamento de resultados. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1246": {
+    "texto": "18. Desenvolver e fortalecer um hub estadual de saúde, inovação e tecnologia, articulando universidades, hospitais, startups, indústria e centros de pesquisa. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 59
+   },
+   "1247": {
+    "texto": "19. Priorizar projetos de biotecnologia, telemedicina, dispositivos médicos, inteligência artificial aplicada à saúde e soluções voltadas ao envelhecimento populacional. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 60
+   },
+   "1248": {
+    "texto": "20. Fortalecer a atenção primária, a prevenção, a vacinação, a saúde mental e o cuidado continuado das doenças crônicas. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 60
+   },
+   "1249": {
+    "texto": "21. Ampliar a rede de atendimento em saúde mental e dependência química, articulando CAPS, hospitais, atenção básica e assistência social. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 60
+   },
+   "1250": {
+    "texto": "22. Criar consórcios intermunicipais de compras de medicamentos, equipamentos e insumos, aumentando a escala e reduzindo custos. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 60
+   },
+   "1252": {
+    "texto": "• linha de base validada no primeiro semestre",
+    "pagina": 60
+   },
+   "1253": {
+    "texto": "• plano de implementação publicado com metas anuais",
+    "pagina": 60
+   },
+   "1254": {
+    "texto": "• painel público atualizado ao menos trimestralmente",
+    "pagina": 60
+   },
+   "1255": {
+    "texto": "• avaliação anual de resultados e equidade territorial",
+    "pagina": 60
+   },
+   "1256": {
+    "texto": "• revisão de programas com baixo desempenho",
+    "pagina": 60
+   },
+   "1613": {
+    "texto": "5. Apoiar saúde mental e prevenção do suicídio. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 77
+   },
+   "1658": {
+    "texto": "10. Capacitar profissionais dos CAPS e da atenção básica para identificar transtornos relacionados a apostas. O Ministério da Saúde reconhece a associação entre jogo problemático, sofrimento mental, impactos familiares e prejuízos financeiros. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
+    "pagina": 80
+   },
+   "1815": {
+    "texto": "5. Publicar mapa de filas da saúde e plano de redução. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
+    "pagina": 86
+   }
+  },
+  "governador-rs-zucco-210002547857": {
+   "283": {
+    "texto": "Nosso governo conduzirá uma profunda reorganização da saúde pública estadual, colocando o cidadão no centro da política de saúde e fazendo do acesso oportuno ao atendimento sua principal prioridade. As ações estarão orientadas pela redução das filas, pela organização regional da assistência, pelo fortalecimento da atenção primária, pela qualificação da rede hospitalar e pela integração efetiva entre consultas, exames, internações e tratamentos. Ampliaremos o uso da saúde digital, da telessaúde e dos prontuários interoperáveis, fortaleceremos a saúde mental, a atenção materno-infantil, a assistência farmacêutica e a prevenção das doenças, ao mesmo tempo em que valorizaremos os profissionais de saúde e aperfeiçoaremos o financiamento dos serviços com foco em desempenho e qualidade. As propostas desta área consolidam um modelo de gestão baseado em evidências, transparência e resultados, capaz de reduzir desigualdades regionais, melhorar a experiência dos usuários e assegurar que os gaúchos tenham acesso mais rápido, mais eficiente e mais humanizado aos serviços do Sistema Único de Saúde. _",
+    "pagina": 23
+   },
+   "285": {
+    "texto": "Instituir política estadual permanente para ampliar consultas, exames, cirurgias e tratamentos especializados, integrando recursos estaduais e federais, remuneração adicional, metas regionais e pagamento condicionado à produção qualificada, à redução do tempo de espera e à conclusão do cuidado. _",
+    "pagina": 23
+   },
+   "287": {
+    "texto": "Integrar a regulação de consultas, exames, cirurgias e leitos, eliminando duplicidades, utilizando protocolos clínicos e classificação por risco e permitindo que o cidadão acompanhe a situação, a prioridade, as pendências e o tempo estimado de sua solicitação.",
+    "pagina": 23
+   },
+   "292": {
+    "texto": "Ampliar o apoio técnico e o cofinanciamento aos municípios para qualificar a principal porta de entrada do SUS, com foco em acesso, vacinação, pré-natal, saúde mental, saúde bucal, doenças crônicas, coordenação dos encaminhamentos e redução das internações evitáveis. _",
+    "pagina": 24
+   },
+   "294": {
+    "texto": "Reorganizar as referências regionais e macrorregionais de acordo com as necessidades da população, ampliando a oferta de especialistas, exames e tratamentos em polos estratégicos e combinando atendimento presencial, telessaúde e transporte sanitário. _",
+    "pagina": 24
+   },
+   "295": {
+    "texto": "FOMENTAR E FORTALECER OS CONSÓRCIOS MUNICIPAIS",
+    "pagina": 24
+   },
+   "296": {
+    "texto": "Apoiar os Consórcios Intermunicipais de Saúde, absorvendo no sistema de contabilidade do Estado os pagamentos acima da tabela efetuados pelas prefeituras. Isso permitirá mapear o custo real dos serviços aos valores da região, renegociar contratos mais justos e reduzir o aporte dos municípios. _",
+    "pagina": 24
+   },
+   "297": {
+    "texto": "QUALIFICAR A REDE HOSPITALAR",
+    "pagina": 24
+   },
+   "298": {
+    "texto": "Revisar os incentivos hospitalares e aperfeiçoar a contratualização, vinculando recursos estaduais a metas de acesso, qualidade, segurança, eficiência, integração regional e prestação de contas, com apoio técnico aos hospitais que necessitem melhorar sua gestão. _",
+    "pagina": 24
+   },
+   "299": {
+    "texto": "INVESTIR NA INFRAESTRUTURA DOS HOSPITAIS",
+    "pagina": 24
+   },
+   "300": {
+    "texto": "Consolidar mecanismos estaduais de financiamento para obras, reformas, equipamentos e modernização tecnológica, priorizando projetos compatíveis com a organização regional do SUS, a capacidade de custeio e as necessidades assistenciais comprovadas. _",
+    "pagina": 24
+   },
+   "301": {
+    "texto": "INTEGRAR URGÊNCIAS E EMERGÊNCIAS",
+    "pagina": 24
+   },
+   "302": {
+    "texto": "Organizar regionalmente Samu, unidades de pronto atendimento, portas hospitalares, leitos de retaguarda, terapia intensiva e transporte inter-hospitalar, reduzindo superlotação, tempo de transferência e permanência inadequada dos pacientes. _",
+    "pagina": 24
+   },
+   "303": {
+    "texto": "AMPLIAR A SAÚDE DIGITAL",
+    "pagina": 24
+   },
+   "304": {
+    "texto": "Expandir telessaúde, teleinterconsulta, telediagnóstico e monitoramento remoto, integrando essas ferramentas à atenção primária e à regulação para resolver mais casos perto da residência do paciente e reduzir encaminhamentos e deslocamentos desnecessários. _",
+    "pagina": 24
+   },
+   "305": {
+    "texto": "INTEGRAR OS DADOS DO PACIENTE",
+    "pagina": 24
+   },
+   "306": {
+    "texto": "Tornar interoperáveis os sistemas de regulação, prontuários e bases assistenciais, assegurando histórico clínico longitudinal, acesso seguro às informações necessárias, redução da repetição de exames, proteção dos dados e consulta pelo próprio cidadão. _",
+    "pagina": 24
+   },
+   "307": {
+    "texto": "FORTALECER A SAÚDE MENTAL",
+    "pagina": 24
+   },
+   "308": {
+    "texto": "Ampliar e regionalizar a Rede de Atenção Psicossocial, fortalecendo a atenção primária, os",
+    "pagina": 24
+   },
+   "311": {
+    "texto": "CAPS, a resposta às crises, o cuidado de crianças e adolescentes, a prevenção do suicídio e o atendimento relacionado ao uso prejudicial de álcool e outras drogas. _",
+    "pagina": 25
+   },
+   "312": {
+    "texto": "ACELERAR O DIAGNÓSTICO E O TRATAMENTO DO CÂNCER",
+    "pagina": 25
+   },
+   "313": {
+    "texto": "Organizar linhas regionais de cuidado oncológico, reduzindo o tempo entre suspeita, confirmação diagnóstica e início do tratamento e ampliando o acesso a anatomia patológica, cirurgia, quimioterapia, radioterapia e cuidados paliativos. _",
+    "pagina": 25
+   },
+   "314": {
+    "texto": "GARANTIR MEDICAMENTOS E TRATAMENTOS CONTÍNUOS",
+    "pagina": 25
+   },
+   "315": {
+    "texto": "Modernizar a assistência farmacêutica, integrando compras, estoques, distribuição, dispensação e acompanhamento terapêutico para reduzir faltas, perdas, interrupções de tratamento e judicialização evitável. _",
+    "pagina": 25
+   },
+   "316": {
+    "texto": "PROTEGER MÃES, BEBÊS E CRIANÇAS",
+    "pagina": 25
+   },
+   "317": {
+    "texto": "Qualificar a rede materna e infantil, assegurando pré-natal de risco habitual e alto risco, parto seguro, atenção neonatal, cuidado no puerpério, vacinação e acompanhamento do desenvolvimento infantil, em articulação com a política de Primeira Infância. _",
+    "pagina": 25
+   },
+   "318": {
+    "texto": "FORTALECER A VIGILÂNCIA E A PREVENÇÃO",
+    "pagina": 25
+   },
+   "319": {
+    "texto": "Integrar vigilância epidemiológica, sanitária, ambiental e laboratorial, ampliando vacinaç ão, controle de doenças transmissíveis, rastreamentos baseados em evidências e prevenção das complicações das doenças crônicas. _",
+    "pagina": 25
+   },
+   "320": {
+    "texto": "PREPARAR O SUS PARA EMERGÊNCIAS",
+    "pagina": 25
+   },
+   "321": {
+    "texto": "Manter planos de continuidade para hospitais e demais serviços, com estoques estratégicos, transporte, medicamentos, oxigênio, energia, comunicação, vigilância e protocolos de resposta a desastres, epidemias e períodos sazonais de maior demanda. _",
+    "pagina": 25
+   },
+   "322": {
+    "texto": "VALORIZAR E QUALIFICAR AS EQUIPES DE SAÚDE",
+    "pagina": 25
+   },
+   "323": {
+    "texto": "Planejar a força de trabalho, apoiar o provimento de profissionais em regiões desassistidas e ampliar educação permanente, protocolos baseados em evidências, segurança ocupacional e formação em áreas prioritárias da rede. _",
+    "pagina": 25
+   },
+   "324": {
+    "texto": "GERIR A SAÚDE POR RESULTADOS",
+    "pagina": 25
+   },
+   "325": {
+    "texto": "Monitorar e divulgar indicadores de acesso, tempo de espera, qualidade, segurança, desfechos, cobertura vacinal, disponibilidade de medicamentos, desigualdade regional, execução financeira e experiência do usuário, vinculando decisões e incentivos aos resultados alcançados. _",
+    "pagina": 25
+   },
+   "326": {
+    "texto": "REAVALIAR O PROGRAMA ASSISTIR",
+    "pagina": 25
+   },
+   "327": {
+    "texto": "Revisar o Programa Assistir, seus critérios, incentivos e mecanismos de financiamento, corrigindo distorções na distribuição dos recursos entre hospitais e regiões de saúde. Reavaliar os critérios de alocação considerando a demanda efetivamente atendida, os fluxos regionais e intermunicipais de pacientes, a complexidade dos serviços, a produção assistencial e os",
+    "pagina": 25
+   },
+   "330": {
+    "texto": "resultados alcançados, de modo a superar desequilíbrios que penalizam hospitais e regiões que concentram atendimentos e funcionam como referência para populações de outros municípios. _",
+    "pagina": 26
+   },
+   "331": {
+    "texto": "APRIMORAR PROGRAMAS DE ATENDIMENTO A PESSOAS COM TEA",
+    "pagina": 26
+   },
+   "332": {
+    "texto": "Escutar as demandas específicas e regionalizadas sobre o atendimento de pessoas com Transtorno do Espectro Autista (TEA), aprimorando programas como o TEAcolhe e aperfeiçoando parcerias com entidades de acolhimento. _",
+    "pagina": 26
+   },
+   "333": {
+    "texto": "MODERNIZAR A GESTÃO DO IPE SAÚDE",
+    "pagina": 26
+   },
+   "334": {
+    "texto": "Revisar o modelo de gestão do IPE Saúde, incorporando práticas de eficiência e governança adotadas na saúde suplementar privada, com foco na sustentabilidade financeira, na melhoria do atendimento aos segurados e na qualificação da relação com a rede credenciada.",
+    "pagina": 26
+   }
+  }
+ }
+}
