@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { CARGOS_NO_MENU } from '../lib/cargos.mjs';
 const {
   title,
   description = 'Os programas de governo registrados no TSE pelos candidatos de 2026, comparados tema a tema: onde convergem, onde divergem e sobre o que calam. Com o trecho de cada programa, sem recomendação de voto.',
@@ -81,10 +82,16 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
     <header class="site">
       <div class="inner">
         <a class="brand" href="/">eleicoes<span>.ai</span></a>
-        <!-- Sem menu por enquanto (decisão do Thiago em 13/09): só presidente
-             está no ar, e a home já é a porta dele. O menu por cargo volta
-             quando houver mais de um cargo com comparação: os cargos com
-             `menu: true` em src/lib/cargos.mjs (CARGOS_NO_MENU). -->
+        <!-- O menu por cargo (CARGOS_NO_MENU). A home é a porta de Presidente,
+             então Presidente leva a "/" e fica marcado na home e em
+             /presidente/*; cada cargo por UF fica marcado em toda a sua seção. -->
+        <nav class="main" aria-label="Cargos">
+          {CARGOS_NO_MENU.map((c) => {
+            const destino = c.porUF ? c.href : '/';
+            const atual = c.porUF ? caminhoPublico.startsWith(c.href) : (caminhoPublico === '/' || caminhoPublico.startsWith(c.href));
+            return <a href={destino} aria-current={atual ? 'page' : undefined}>{c.nome}</a>;
+          })}
+        </nav>
       </div>
     </header>
     <main id="conteudo">
@@ -95,7 +102,7 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
         <p><strong>Transparência:</strong> as propostas são lidas e agrupadas por inteligência artificial exclusivamente a partir dos programas de governo registrados no TSE, e cada uma leva ao trecho do programa.</p>
         <p><strong>Neutralidade:</strong> o eleicoes.ai não recomenda voto e não ranqueia candidatos.</p>
         <p><a href="/metodologia">Metodologia</a>: como os programas são lidos e comparados</p>
-        <p><a href="/sobre">Quem faz</a> · <a href="/privacidade">Privacidade</a> · <a href="/sobre#contato">Fale conosco ou aponte um erro</a></p>
+        <p><a href="/sobre">Quem somos</a> · <a href="/privacidade">Privacidade</a> · <a href="/contato">Fale conosco ou aponte um erro</a></p>
         <p class="aviso-independencia">O eleicoes.ai é uma <strong>iniciativa independente</strong>, sem vínculo, patrocínio ou endosso da Justiça Eleitoral.</p>
       </div>
     </footer>

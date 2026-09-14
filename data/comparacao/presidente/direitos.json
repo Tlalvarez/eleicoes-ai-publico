@@ -9,9 +9,9 @@
   "direitos_grupos"
  ],
  "origem": {
-  "arquivo": "direitos-5.json",
-  "gerado_em": "2026-09-13T08:54:06Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "direitos-6.json",
+  "gerado_em": "2026-09-14T07:11:55Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,34 +53,63 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar a rede de casas-abrigo, centros de referência e serviços de acolhimento para mulheres em situação de violência",
-   "n_concorda": 3,
+   "proposta": "Criar ou fortalecer uma política/pacto nacional integrado de prevenção ao feminicídio e enfrentamento à violência contra a mulher, articulando segurança, justiça, saúde e assistência",
+   "n_concorda": 5,
    "posicoes": {
-    "romeu-zema": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      810,
-      811
+      173,
+      176
      ],
-     "nota": "Foco em equipes capacitadas e acompanhamento até a reconstrução da vida"
+     "nota": "Continuidade do Pacto de Enfrentamento ao Feminicídio"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1300,
+      1310,
+      1311
+     ],
+     "nota": "Pacto Nacional pelo Fim do Feminicídio com metas e dados"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      749,
+      1368,
+      1376,
+      1379
+     ],
+     "nota": "Programa/Projeto de Estado Mulheres Vivas"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      432
+      363,
+      364
      ],
      "nota": ""
     },
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      176
+      101,
+      103
      ],
      "nota": ""
     }
@@ -89,23 +118,8 @@
   {
    "id": "p2",
    "subtema": "Violência contra a mulher",
-   "proposta": "Concluir as 30 Casas da Mulher Brasileira e os 15 Centros de Referência da Mulher Brasileira",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      176
-     ],
-     "nota": "Meta numérica dentro do Pacto de Enfrentamento ao Feminicídio"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Monitorar eletronicamente, por tornozeleira ou equipamentos equivalentes, agressores submetidos a medidas protetivas",
-   "n_concorda": 3,
+   "proposta": "Monitorar eletronicamente (tornozeleira) agressores submetidos a medidas protetivas",
+   "n_concorda": 4,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -113,99 +127,48 @@
       364,
       419
      ],
-     "nota": "Alerta imediato à vítima e às autoridades em caso de aproximação"
+     "nota": "Foco em agressores de maior risco, com alerta à vítima"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1312,
+      1313
+     ],
+     "nota": "Com interoperabilidade e cadastro de risco"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       1385
      ],
-     "nota": ""
+     "nota": "Nos casos determinados judicialmente"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       177
      ],
-     "nota": "Compra e distribuição de kits de monitoramento aos estados"
+     "nota": "Kits para aprimorar o monitoramento de agressores"
     }
    }
   },
   {
-   "id": "p4",
+   "id": "p3",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar as Salas Lilás de acolhimento a vítimas em unidades policiais",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      106
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      176
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Expandir as Patrulhas Maria da Penha para acompanhar o cumprimento de medidas protetivas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      105,
-      106
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar a rede de delegacias especializadas da mulher, com funcionamento 24 horas e equipes preferencialmente femininas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      103,
-      104
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Integrar sistemas e serviços de segurança, saúde, justiça e assistência social no atendimento à mulher vítima de violência",
+   "proposta": "Ampliar canais e tecnologias de denúncia e resposta rápida (botão de emergência, aplicativos com geolocalização, centrais integradas)",
    "n_concorda": 3,
    "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      104
-     ],
-     "nota": "Apoio aos estados para sistemas integrados Saúde–Segurança–delegacias"
-    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      750,
-      1379,
-      1386
+      754,
+      1383,
+      1385,
+      1386,
+      1388
      ],
-     "nota": "Inclui Juizados de Violência Doméstica, MP e Defensoria"
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -213,20 +176,36 @@
       414,
       419
      ],
-     "nota": "Unificação do Ligue 180, delegacias online e centrais de monitoramento"
+     "nota": "Integra Ligue 180, delegacia online e chat de IA"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1313,
+      1321
+     ],
+     "nota": "Porta digital segura e transporte protegido"
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p4",
    "subtema": "Violência contra a mulher",
-   "proposta": "Implantar sistema nacional de avaliação e classificação de risco para priorizar o atendimento dos casos mais graves",
-   "n_concorda": 2,
+   "proposta": "Adotar sistema nacional de avaliação e classificação de risco para priorizar o atendimento das vítimas mais ameaçadas",
+   "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       419
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1311,
+      1313
      ],
      "nota": ""
     },
@@ -236,41 +215,158 @@
       1377,
       1387
      ],
-     "nota": "Acompanhamento preventivo prioritário às mulheres de alto risco"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p9",
+   "id": "p5",
    "subtema": "Violência contra a mulher",
-   "proposta": "Disseminar botão de pânico e aplicativos de emergência com geolocalização para mulheres ameaçadas",
-   "n_concorda": 2,
+   "proposta": "Expandir a rede de acolhimento às vítimas (casas-abrigo, centros de referência, atendimento integrado)",
+   "n_concorda": 4,
    "posicoes": {
-    "augusto-cury": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      754,
-      1383,
-      1385
+      810,
+      811
      ],
      "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      414,
-      419
+      431,
+      432
      ],
-     "nota": "Registro de ocorrência e pedido de medida protetiva pelo chat da ClarIA"
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      176
+     ],
+     "nota": "Concluir 30 Casas da Mulher Brasileira e 15 Centros de Referência"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1320,
+      1321
+     ],
+     "nota": "Rede regional de acolhimento sigiloso"
     }
    }
   },
   {
-   "id": "p10",
+   "id": "p6",
    "subtema": "Violência contra a mulher",
-   "proposta": "Capacitar as forças de segurança e equipes de atendimento em violência de gênero",
-   "n_concorda": 2,
+   "proposta": "Ampliar delegacias especializadas de atendimento à mulher e atendimento policial 24 horas",
+   "n_concorda": 3,
    "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": "Equipes preferencialmente femininas e sistemas integrados"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1321
+     ],
+     "nota": "DEAMs onde houver escala; salas reservadas nas demais"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1379
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Ampliar as Salas Lilás e espaços de acolhimento nas unidades policiais",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      105,
+      106
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      176
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1315
+     ],
+     "nota": "Junto a protocolo nacional e perícia"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Expandir patrulhas especializadas de acompanhamento de mulheres sob medida protetiva (tipo Patrulha Maria da Penha)",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      106
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1313
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      750,
+      1378
+     ],
+     "nota": "Via policiamento comunitário e guardas municipais"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Capacitar profissionais de segurança e serviços públicos para o atendimento qualificado a mulheres vítimas de violência",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      177
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1324
+     ],
+     "nota": ""
+    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
@@ -278,78 +374,14 @@
       811
      ],
      "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      177
-     ],
-     "nota": ""
     }
    }
   },
   {
-   "id": "p11",
+   "id": "p10",
    "subtema": "Violência contra a mulher",
-   "proposta": "Manter política nacional integrada e permanente de prevenção ao feminicídio articulando União, estados, municípios e sistema de Justiça",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      749,
-      1368,
-      1374,
-      1376
-     ],
-     "nota": "Programa Mulheres Vivas como projeto de Estado"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      173,
-      176
-     ],
-     "nota": "Continuidade do Pacto de Enfrentamento ao Feminicídio"
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Fortalecer o policiamento comunitário e as Guardas Municipais com visitas preventivas às residências de mulheres em risco",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      750,
-      1378
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Endurecer a legislação penal e obrigar agressores e feminicidas ao cumprimento integral da pena",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      364
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Violência contra a mulher",
-   "proposta": "Promover ações culturais e educativas de mudança de comportamento para ampliar o respeito a meninas e mulheres",
-   "n_concorda": 2,
+   "proposta": "Promover ações educativas e culturais de prevenção da violência de gênero e mudança de comportamento",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -358,27 +390,140 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1323,
+      1324
+     ],
+     "nota": "Campanhas baseadas em evidências, engajando homens e escolas"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       1443
      ],
-     "nota": "Campanhas de valorização da diversidade e educação emocional nas redes"
+     "nota": "Campanhas de valorização da diversidade e educação emocional"
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Ampliar programas de qualificação profissional, empreendedorismo e acesso a crédito para mulheres",
-   "n_concorda": 3,
+   "id": "p11",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Endurecer a punição de agressores e feminicidas, exigindo cumprimento integral da pena",
+   "n_concorda": 2,
    "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      364
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      177
+     ],
+     "nota": "Fala em punição, sem cumprimento integral de pena"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Priorizar investigação e julgamento de feminicídio e violência sexual com protocolo nacional e redução da revitimização",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1314,
+      1315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Garantir reparação patrimonial e apoio econômico (renda temporária, aluguel, creche) a vítimas de violência e seus filhos",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1318,
+      1319
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1393,
+      1399
+     ],
+     "nota": "Acesso prioritário a programas de renda e trabalho"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Ampliar programas de qualificação profissional, empregabilidade e empreendedorismo feminino",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      179,
+      182
+     ],
+     "nota": "Mulheres Mil, Pronaf para agricultoras, mulheres na ciência"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       760,
       1394,
-      1396,
+      1395,
+      1396
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      434,
+      435,
+      437
+     ],
+     "nota": "Escola Brasil por Elas e banco de dados com RHs"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1335,
+      1336,
+      1337,
+      1338
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Ampliar o acesso das mulheres ao crédito com condições adequadas",
+   "n_concorda": 4,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      760,
       1398
      ],
      "nota": ""
@@ -386,33 +531,40 @@
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      430,
-      434,
-      435
+      424,
+      430
      ],
-     "nota": "Escola Brasil por Elas com Sistema S e ampliação do CAIXA Pra Elas"
+     "nota": "Pontuação por bom comportamento financeiro e CAIXA Pra Elas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1336
+     ],
+     "nota": "Garantias, mentoria e compras públicas"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      179,
-      182
+      179
      ],
-     "nota": "Mulheres Mil e apoio à participação feminina na ciência"
+     "nota": "Linhas do Pronaf para agricultoras e extrativistas"
     }
    }
   },
   {
    "id": "p16",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Dar acesso prioritário a mulheres vítimas de violência em programas de emprego, renda e reconstrução da autonomia econômica",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Revisar critérios e matrizes de risco do sistema financeiro para eliminar a diferença de juros cobrada das mulheres",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1393,
-      1399
+      783,
+      788,
+      1414,
+      1417
      ],
      "nota": ""
     }
@@ -420,8 +572,38 @@
   },
   {
    "id": "p17",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Garantir igualdade salarial entre homens e mulheres com transparência de remuneração e fiscalização",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Oferecer educação e orientação financeira voltada ao público feminino",
+   "n_concorda": 3,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      782,
+      1397
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      421
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1336
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Fazer cumprir a igualdade salarial entre homens e mulheres com transparência e fiscalização",
    "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
@@ -443,34 +625,15 @@
    }
   },
   {
-   "id": "p18",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Revisar as matrizes de risco e os critérios de concessão de crédito para eliminar a diferença de juros cobrada das mulheres",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      783,
-      788,
-      1414,
-      1417
-     ],
-     "nota": "Articulação com Banco Central, Sebrae e instituições financeiras"
-    }
-   }
-  },
-  {
    "id": "p19",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Criar sistema voluntário de pontuação por bom comportamento financeiro que converta atitudes em juros menores, cashback e crédito facilitado",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Apoiar as mulheres na obtenção de moradia e patrimônio próprio em seu nome (titulação e regularização)",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      424,
-      429
+      432
      ],
      "nota": ""
     }
@@ -478,63 +641,33 @@
   },
   {
    "id": "p20",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Oferecer educação e orientação financeira voltadas ao público feminino",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Criar centrais físicas e digitais de atendimento integrado à mulher, com serviços de proteção, saúde, emprego e crédito num só lugar",
    "n_concorda": 2,
    "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      782,
-      1397
-     ],
-     "nota": ""
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      421
+      400,
+      406,
+      407,
+      412
      ],
-     "nota": "Do orçamento doméstico ao primeiro patrimônio, incluindo saída do endividamento"
+     "nota": "Central da Mulher, aplicativo e assistente de IA ClarIA"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1321
+     ],
+     "nota": "Centros integrados de atendimento único"
     }
    }
   },
   {
    "id": "p21",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Criar centrais físicas e itinerantes que reúnam em um só lugar os serviços de proteção, saúde, emprego, crédito e benefícios para mulheres",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      400
-     ],
-     "nota": "Central da Mulher em parceria com estados, municípios e Sistema S"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Disponibilizar aplicativo e assistente de inteligência artificial para orientar e acompanhar a jornada de serviços das mulheres",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      406,
-      407,
-      412
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Garantir pacotes de internet subsidiados para mulheres como forma de inclusão digital e acesso a estudo, trabalho e proteção",
+   "subtema": "Autonomia econômica das mulheres",
+   "proposta": "Garantir pacotes de acesso à internet para mulheres de baixa renda como via de inclusão digital e econômica",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
@@ -549,55 +682,10 @@
    }
   },
   {
-   "id": "p24",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Criar sistema nacional de intermediação de mão de obra feminina conectado aos RHs das empresas",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      437
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Apoiar a regularização e a titulação da moradia em nome da mulher",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      432
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Oferecer linhas de crédito favorecidas a agricultoras e extrativistas no âmbito do Pronaf",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      179
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Promover a presença feminina em posições de liderança e decisão nos setores público e privado",
-   "n_concorda": 2,
+   "id": "p22",
+   "subtema": "Participação e representação das mulheres",
+   "proposta": "Promover a presença de mulheres em posições de liderança e decisão nos setores público e privado",
+   "n_concorda": 3,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
@@ -611,16 +699,24 @@
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      159
+      173
      ],
-     "nota": "Ênfase na população negra em espaços superiores da gestão"
+     "nota": "Igualdade de oportunidades como diretriz"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1300,
+      1338
+     ],
+     "nota": "Direito de participar das decisões e liderança em STEM"
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Priorizar a indicação de mulheres para as vagas do Supremo Tribunal Federal",
+   "id": "p23",
+   "subtema": "Participação e representação das mulheres",
+   "proposta": "Comprometer-se a indicar mulheres para vagas no Supremo Tribunal Federal",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -634,48 +730,76 @@
    }
   },
   {
-   "id": "p29",
-   "subtema": "Autonomia econômica e igualdade das mulheres",
-   "proposta": "Garantir os direitos sexuais e reprodutivos das mulheres",
+   "id": "p24",
+   "subtema": "Participação e representação das mulheres",
+   "proposta": "Combater a violência política de gênero e apoiar a formação de candidatas e lideranças femininas",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      173
+      1345,
+      1346
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p30",
-   "subtema": "Pessoas idosas",
-   "proposta": "Ampliar a oferta de vagas em Instituições de Longa Permanência para Idosos",
-   "n_concorda": 2,
+   "id": "p25",
+   "subtema": "Participação e representação das mulheres",
+   "proposta": "Publicar dados e orçamento desagregados por gênero e avaliar as políticas para mulheres por resultados",
+   "n_concorda": 1,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      647,
-      648
+      1302,
+      1347,
+      1348
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Pessoas idosas",
+   "proposta": "Criar ou ampliar política nacional de cuidado de longa duração para idosos, com centros-dia e atendimento domiciliar",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      184,
+      185,
+      186,
+      190
+     ],
+     "nota": "Ampliar Centros-Dia e dar escala ao PADI Brasil"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1410,
+      1411
      ],
      "nota": ""
     },
-    "lula": {
+    "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      187,
-      188
+      444,
+      647
      ],
-     "nota": "Ampliação de vagas públicas com apoio federal"
+     "nota": "Parcerias público-privadas e com organizações sociais"
     }
    }
   },
   {
-   "id": "p31",
+   "id": "p27",
    "subtema": "Pessoas idosas",
-   "proposta": "Aperfeiçoar a fiscalização e a qualidade do atendimento nas Instituições de Longa Permanência para Idosos",
+   "proposta": "Aprimorar a fiscalização e a qualidade das Instituições de Longa Permanência para Idosos",
    "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
@@ -684,50 +808,149 @@
       805,
       806
      ],
-     "nota": ""
+     "nota": "Condiciona repasses federais à fiscalização e capacitação"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      187,
       188
      ],
-     "nota": "Foco em identificar violações de direitos e maus-tratos"
+     "nota": "Também amplia vagas públicas"
     }
    }
   },
   {
-   "id": "p32",
+   "id": "p28",
    "subtema": "Pessoas idosas",
-   "proposta": "Condicionar os repasses federais às ILPIs à adoção de procedimentos de fiscalização e à capacitação das equipes",
-   "n_concorda": 1,
+   "proposta": "Ampliar a oferta de vagas em instituições de longa permanência para idosos",
+   "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      806
+      187
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      648
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p33",
+   "id": "p29",
    "subtema": "Pessoas idosas",
-   "proposta": "Expandir o atendimento domiciliar a idosos com dependência ou dificuldade de locomoção",
+   "proposta": "Proteger idosos contra violência, maus-tratos e fraudes financeiras e digitais",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       185,
-      190
+      193
      ],
-     "nota": "Dar escala nacional ao PADI Brasil no SUS"
+     "nota": "Letramento digital contra fraudes"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1411
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Pessoas idosas",
+   "proposta": "Promover o envelhecimento ativo com convivência, esporte, lazer e inserção produtiva de pessoas com mais de 60 anos",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      186,
+      192
+     ],
+     "nota": "Parcerias privadas para contratação de idosos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1411
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Pessoas idosas",
+   "proposta": "Subsidiar adaptações de acessibilidade na casa de idosos de menor renda e oferecer tecnologia de monitoramento e companhia",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      647,
+      648
+     ],
+     "nota": "Casa Segura para Envelhecer e aplicativo de companhia"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Assegurar acessibilidade universal, tecnologia assistiva, educação inclusiva, reabilitação e inclusão no trabalho das pessoas com deficiência",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      196
+     ],
+     "nota": "Viver sem Limites, cotas fiscalizadas, educação bilíngue de surdos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1408,
+      1409
+     ],
+     "nota": "Simplificar avaliação biopsicossocial e apoiar famílias cuidadoras"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      444
+      649
+     ],
+     "nota": "Políticas transversais e apoio a doenças raras"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Ampliar serviços especializados de saúde e reabilitação (centros especializados, oficinas ortopédicas)",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      196
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1409
      ],
      "nota": ""
     }
@@ -735,229 +958,33 @@
   },
   {
    "id": "p34",
-   "subtema": "Pessoas idosas",
-   "proposta": "Ampliar a rede de centros-dia e equipamentos de convivência para o envelhecimento ativo",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Implantar política nacional de atendimento a pessoas neurodivergentes, com centros de referência em autismo",
    "n_concorda": 2,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      186
-     ],
-     "nota": "Apoio a municípios e equipamentos como academias e praças"
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      444
+      649
      ],
-     "nota": "Via parcerias público-privadas e organizações sociais"
+     "nota": "Centros de Referência em TEA"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1253,
+      1257,
+      1258
+     ],
+     "nota": "Brasil Neuroinclusivo e Mapa Nacional da Neurodiversidade"
     }
    }
   },
   {
    "id": "p35",
-   "subtema": "Pessoas idosas",
-   "proposta": "Estruturar política nacional de cuidado que divida com as famílias o cuidado de idosos e pessoas com deficiência",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      444,
-      641
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      184,
-      185
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Pessoas idosas",
-   "proposta": "Subsidiar adaptações de acessibilidade na moradia de idosos de menor renda",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      648
-     ],
-     "nota": "Programa Casa Segura para Envelhecer"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Pessoas idosas",
-   "proposta": "Desenvolver aplicativo de companhia e alerta de perigo para idosos",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      648
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Pessoas idosas",
-   "proposta": "Promover letramento digital de idosos para acesso a serviços públicos e prevenção de fraudes",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      193
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Pessoas idosas",
-   "proposta": "Ampliar parcerias com a iniciativa privada para qualificação e contratação de pessoas com mais de 60 anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      192
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Adotar políticas transversais de garantia de direitos, acessibilidade e inclusão social das pessoas com deficiência",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      649
-     ],
-     "nota": "Inclui pessoas com doenças raras"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": "Continuidade do plano Viver sem Limites e aplicação rigorosa da legislação"
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Implantar Centros de Referência em Transtorno do Espectro Autista",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      649
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Instituir política permanente de Estado para acolhimento e aprendizagem de pessoas neurodivergentes (autismo, TDAH, dislexia, altas habilidades)",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1253,
-      1254,
-      1257
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Construir um mapa nacional da neurodiversidade com dados sobre a população neurodivergente",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1258
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Apoiar a educação inclusiva e a educação bilíngue de surdos, com tecnologia assistiva e acessibilidade nas escolas",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Fortalecer a fiscalização do cumprimento das cotas de contratação de pessoas com deficiência",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Pessoas com deficiência e neurodiversidade",
-   "proposta": "Ampliar os Centros Especializados em Reabilitação e as Oficinas Ortopédicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p47",
    "subtema": "Povos indígenas e quilombolas",
-   "proposta": "Assegurar aos povos indígenas e quilombolas autonomia para explorar economicamente suas terras, com regulamentação de atividades produtivas",
-   "n_concorda": 2,
+   "proposta": "Garantir autonomia aos povos indígenas para explorar economicamente suas terras com atividades produtivas",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -965,36 +992,28 @@
       310,
       311
      ],
-     "nota": "Agricultura, pecuária, extrativismo e turismo em terras indígenas"
+     "nota": "Regulamentar agricultura, pecuária, extrativismo e turismo"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       763
      ],
-     "nota": "Respeito às regras ambientais e ao desenvolvimento sustentável"
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Povos indígenas e quilombolas",
-   "proposta": "Indenizar restrições ao usufruto das terras tradicionais e criar mecanismos de compensação",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
+     "nota": "Estende a quilombolas, com indenização e compensação"
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      763
+      1537
      ],
-     "nota": ""
+     "nota": "Atividades sustentáveis escolhidas pelas comunidades"
     }
    }
   },
   {
-   "id": "p49",
+   "id": "p36",
    "subtema": "Povos indígenas e quilombolas",
-   "proposta": "Continuar a demarcação e a desintrusão de terras indígenas, garantindo proteção territorial",
+   "proposta": "Dar continuidade à demarcação e homologação de terras indígenas e à desintrusão de invasores",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -1007,10 +1026,56 @@
    }
   },
   {
-   "id": "p50",
+   "id": "p37",
    "subtema": "Povos indígenas e quilombolas",
-   "proposta": "Acelerar a titulação de territórios quilombolas acompanhada de políticas de desenvolvimento territorial",
-   "n_concorda": 1,
+   "proposta": "Proteger os territórios indígenas contra garimpo, invasão e crime organizado",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      169,
+      170
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1537
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Povos indígenas e quilombolas",
+   "proposta": "Fortalecer a saúde e a educação escolar indígena com abordagem intercultural e participação dos povos",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      170,
+      172
+     ],
+     "nota": "Implantar plenamente a Universidade Indígena"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1537
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Povos indígenas e quilombolas",
+   "proposta": "Acelerar a titulação e regularização dos territórios quilombolas com políticas de desenvolvimento associadas",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -1018,59 +1083,116 @@
       167
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1535
+     ],
+     "nota": "Com infraestrutura, assistência técnica e cadeias produtivas"
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Povos indígenas e quilombolas",
-   "proposta": "Garantir educação escolar indígena intercultural e multilíngue e implantar plenamente a Universidade Indígena",
-   "n_concorda": 1,
+   "id": "p40",
+   "subtema": "Igualdade racial",
+   "proposta": "Adotar política nacional de enfrentamento ao racismo e redução das desigualdades raciais com resultados mensuráveis",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      170
+      157,
+      158,
+      159
+     ],
+     "nota": "Implementa deliberações da V CONAPIR e regulamenta o Estatuto"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      124,
+      1518,
+      1519
+     ],
+     "nota": "Metas de equidade e planos de correção por indicador"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Igualdade racial",
+   "proposta": "Ampliar a presença da população negra no serviço público por políticas de cotas e inclusão em concursos",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      159
+     ],
+     "nota": "Inclui espaços superiores da gestão governamental"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1533
+     ],
+     "nota": "Aprimorar respeitando mérito; metas voluntárias nas empresas"
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Igualdade racial",
+   "proposta": "Reduzir a mortalidade violenta da juventude negra com prevenção territorial e oportunidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1520,
+      1521
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p52",
-   "subtema": "Povos indígenas e quilombolas",
-   "proposta": "Manter atenção diferenciada à saúde indígena com participação efetiva dos indígenas em sua gestão",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      172
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p53",
+   "id": "p43",
    "subtema": "Crianças e adolescentes",
-   "proposta": "Fortalecer a proteção digital de crianças e adolescentes, com aprimoramento do ECA Digital e regulamentação de plataformas e do uso de telas por faixa etária",
-   "n_concorda": 1,
+   "proposta": "Fortalecer a proteção de crianças e adolescentes contra violência e exploração sexual, com integração de canais de denúncia, investigação e escuta especializada",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      201,
       202
      ],
+     "nota": "Prioriza combate à pedofilia e inteligência policial"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1393,
+      1394,
+      1395
+     ],
      "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      4220,
+      4221
+     ],
+     "nota": "Acompanhamento pediátrico e psicossocial anual obrigatório"
     }
    }
   },
   {
-   "id": "p54",
+   "id": "p44",
    "subtema": "Crianças e adolescentes",
-   "proposta": "Reforçar a prevenção e a punição do abuso e da exploração sexual de crianças e adolescentes",
+   "proposta": "Proteger crianças e adolescentes no ambiente digital, regulando plataformas e uso de telas",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
@@ -1078,54 +1200,78 @@
      "blocos": [
       202
      ],
-     "nota": "Ações de inteligência e agilização das investigações"
+     "nota": "ECA Digital e regulamentação por faixa etária"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      4220,
-      4221,
-      4222
-     ],
-     "nota": "Via acompanhamento anual com escuta ativa periódica"
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Crianças e adolescentes",
-   "proposta": "Criar programa nacional de acompanhamento anual pediátrico e emocional de crianças e adolescentes",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      4219,
-      4220
+      1388
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p56",
+   "id": "p45",
    "subtema": "Crianças e adolescentes",
-   "proposta": "Ampliar políticas de enfrentamento da pobreza infantil e de garantia de acesso das crianças às políticas públicas",
-   "n_concorda": 1,
+   "proposta": "Tratar a infância como prioridade orçamentária, com orçamento identificado, metas e coordenação central",
+   "n_concorda": 2,
    "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1370,
+      1386,
+      1387
+     ],
+     "nota": ""
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       201
      ],
+     "nota": "Enfrentamento da pobreza infantil e ampliação de políticas"
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Reformular acolhimento e adoção, priorizando família de origem e famílias acolhedoras e reduzindo o tempo de decisão judicial",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1396,
+      1397,
+      1398
+     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p57",
+   "id": "p47",
    "subtema": "Crianças e adolescentes",
-   "proposta": "Apoiar pais e mães com políticas públicas de educação emocional e desenvolvimento da autoestima dos filhos",
+   "proposta": "Reestruturar o sistema socioeducativo com escolarização, saúde mental e separação por perfil para reduzir reincidência",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1401,
+      1402
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Apoiar as famílias com políticas de educação emocional e desenvolvimento afetivo dos filhos",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -1138,55 +1284,73 @@
    }
   },
   {
-   "id": "p58",
-   "subtema": "Igualdade racial",
-   "proposta": "Manter o combate ao racismo como eixo central da estratégia de desenvolvimento",
-   "n_concorda": 1,
+   "id": "p49",
+   "subtema": "Juventude",
+   "proposta": "Ampliar oportunidades de cultura, esporte, lazer e participação cívica para a juventude",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      157
+      203
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      812,
+      813
+     ],
+     "nota": "Participação em conselhos e espaços de decisão"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Saúde da mulher",
+   "proposta": "Organizar linhas de cuidado da saúde integral da mulher (pré-natal, câncer, saúde mental, climatério) e reduzir a mortalidade materna",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1325,
+      1326,
+      1328,
+      1329
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      173
+     ],
+     "nota": "Garantia de direitos sexuais e reprodutivos"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Saúde da mulher",
+   "proposta": "Enfrentar os padrões estéticos irreais e seus efeitos sobre a autoestima de meninas e mulheres com campanhas e educação emocional",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1372,
+      1443
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p59",
-   "subtema": "Igualdade racial",
-   "proposta": "Avançar na regulamentação do Estatuto da Igualdade Racial e implementar as deliberações da V CONAPIR",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      158,
-      159
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Igualdade racial",
-   "proposta": "Dar continuidade às políticas de cotas e de ampliação da presença da população negra no funcionalismo público, inclusive em cargos superiores",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      159
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Direitos humanos, LGBTQIA+ e migrantes",
-   "proposta": "Formular políticas públicas com recorte de gênero, identidade e orientação sexual para atender à população LGBTQIA+",
+   "id": "p52",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Garantir políticas públicas específicas para a população LGBTQIAP+ considerando identidade de gênero e orientação sexual",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -1200,9 +1364,9 @@
    }
   },
   {
-   "id": "p62",
-   "subtema": "Direitos humanos, LGBTQIA+ e migrantes",
-   "proposta": "Reforçar os compromissos internacionais do país em direitos humanos e igualdade de gênero e raça, evitando retrocessos",
+   "id": "p53",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Reforçar compromissos internacionais de direitos humanos e igualdade de gênero e raça, evitando retrocessos",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -1215,8 +1379,8 @@
    }
   },
   {
-   "id": "p63",
-   "subtema": "Direitos humanos, LGBTQIA+ e migrantes",
+   "id": "p54",
+   "subtema": "Direitos humanos e diversidade",
    "proposta": "Implementar política migratória humanista, com acolhimento de migrantes e refugiados e combate à xenofobia",
    "n_concorda": 1,
    "posicoes": {
@@ -1231,16 +1395,38 @@
    }
   },
   {
-   "id": "p64",
-   "subtema": "Juventude",
-   "proposta": "Incentivar a participação de jovens em conselhos, projetos sociais e espaços de decisão pública",
-   "n_concorda": 1,
+   "id": "p55",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Garantir a liberdade religiosa e combater a intolerância, com capacitação de polícias e justiça para investigar ataques",
+   "n_concorda": 2,
    "posicoes": {
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      812,
-      813
+      1538,
+      1539
+     ],
+     "nota": "Estado laico, sem privilegiar nem hostilizar religiões"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      294
+     ],
+     "nota": "Liberdade religiosa como valor inegociável"
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Atender a população em situação de rua com abordagem integrada de moradia, saúde mental e documentação",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1376
      ],
      "nota": ""
     }
@@ -1301,10 +1487,6 @@
     "texto": "PROJETO 2 - BRASIL NEUROINCLUSIVO",
     "pagina": 81
    },
-   "1254": {
-    "texto": "Nenhuma mente fica para trás",
-    "pagina": 81
-   },
    "1257": {
     "texto": "O Projeto Brasil Neuroinclusivo institui uma política permanente de Estado para acolher crianças, adolescentes e adultos neurodivergentes, particularmente pessoas com autismo, TDAH, dislexia, transtornos de aprendizagem e altas habilidades. Não queremos uma educação que apenas coloque o aluno diferente fisicamente dentro da sala; queremos uma escola que o faça sentir-se pertencente, ouvido, estimulado e capaz de participar dentro do programa de gestão da emoção.",
     "pagina": 81
@@ -1317,8 +1499,8 @@
     "texto": "O Estado brasileiro precisa enfrentar essas diferentes formas de violência e desigualdade de maneira integrada. Por isso, criaremos o Projeto de Estado",
     "pagina": 87
    },
-   "1374": {
-    "texto": "1. MULHERES VIVAS: PROTEÇÃO À VIDA E PREVENÇÃO DO FEMINICÍDIO",
+   "1372": {
+    "texto": "• Proteger a saúde emocional e a autoestima.",
     "pagina": 87
    },
    "1376": {
@@ -1353,12 +1535,20 @@
     "texto": "Mulheres classificadas como de alto risco deverão receber acompanhamento preventivo e prioritário.",
     "pagina": 88
    },
+   "1388": {
+    "texto": "Queremos utilizar a tecnologia não apenas para investigar crimes depois que aconteceram, mas para evitar que aconteçam.",
+    "pagina": 88
+   },
    "1393": {
     "texto": "Por isso, mulheres vítimas de violência e em situação de vulnerabilidade terão acesso prioritário a programas de:",
     "pagina": 88
    },
    "1394": {
     "texto": "• Qualificação e requalificação profissional;",
+    "pagina": 88
+   },
+   "1395": {
+    "texto": "• Empregabilidade;",
     "pagina": 88
    },
    "1396": {
@@ -1409,10 +1599,6 @@
     "texto": "No âmbito das competências constitucionais da Presidência da República, assumimos o compromisso de priorizar mulheres altamente qualificadas nas indicações para vagas que venham a surgir no Supremo Tribunal Federal, sempre observados os requisitos constitucionais para o exercício do cargo.",
     "pagina": 93
    },
-   "4219": {
-    "texto": "2. PROJETO DE LEI 5815 de 2025 – Lei AUGUSTO CURY",
-    "pagina": 195
-   },
    "4220": {
     "texto": "Institui e cria o Programa Nacional de Acompanhamento Anual Pediátrico/Médico e Emocional/Psicossocial da Infância e Adolescência - PNAPE, com o objetivo de colocar crianças e adolescentes, os filhos da sociedade brasileira, a salvo das mais diversas formas de transtorno mental, negligência, discriminação, exploração, violência, automutilação, crueldade, opressão, tráfico humano e especialmente prevenindo abuso e exploração sexual.",
     "pagina": 195
@@ -1420,13 +1606,17 @@
    "4221": {
     "texto": "A partir da Lei Augusto Cury o Estado brasileiro não será apenas o responsável teórico pelo desenvolvimento saudável dos seus filhos, mas acompanhará anualmente este desenvolvimento! Os predadores sexuais, em destaque, saberão que o Estado Brasileiro estará de olho em suas crianças e adolescentes através de escuta ativa e periódica.",
     "pagina": 195
-   },
-   "4222": {
-    "texto": "O Projeto Lei Augusto Cury é pioneiro no mundo e pode inaugurar um novo paradigma de proteção infantil ativa, preventiva e sistemática.",
-    "pagina": 195
    }
   },
   "flavio-bolsonaro": {
+   "294": {
+    "texto": "Nossa forma de governar permanece fiel a valores que consideramos inegociáveis e que sustentam a sociedade brasileira: o respeito à liberdade, à família, à vida desde a concepção, à propriedade privada, à democracia, à liberdade de expressão e à liberdade religiosa.",
+    "pagina": 9
+   },
+   "363": {
+    "texto": "Tolerância zero para o feminicídio",
+    "pagina": 14
+   },
    "364": {
     "texto": "Medida protetiva vai deixar de ser um pedaço de papel para ser um instrumento real de proteção às mulheres. Os agressores das mais de meio milhão de mulheres com medida protetiva no Brasil serão monitorados pelas autoridades com o uso de tornozeleiras eletrônicas. Vamos endurecer a lei e obrigar assassinos e agressores de mulheres a cumprir integralmente suas penas. Porque hoje o sistema liberta criminosos depois de 55% do tempo da pena. Isso vai acabar. É cadeia o tempo todo: do primeiro ao último dia.",
     "pagina": 14
@@ -1475,12 +1665,12 @@
     "texto": "Com o Ganha, Ganha, atitudes como concluir cursos de capacitação, trabalhar de forma regular, poupar e pagar as contas em dia passarão a gerar pontuação positiva. Esses pontos poderão ser convertidos em benefícios concretos: juros menores, cashback, acesso facilitado ao crédito, descontos em serviços e incentivo à poupança. Quem hoje é invisível ao sistema financeiro poderá construir um histórico positivo, baseado não só no passado financeiro, mas no compromisso com a família, o trabalho e o futuro.",
     "pagina": 19
    },
-   "429": {
-    "texto": "A participação será totalmente voluntária e as regras, transparentes: ninguém perde direitos ou benefícios por não aderir.",
-    "pagina": 20
-   },
    "430": {
     "texto": "A CAIXA Econômica Federal, o Banco da Amazônia e o Banco do Nordeste serão motores dessa prosperidade, ampliando o programa CAIXA Pra Elas e ajudando milhões de mulheres a construir reputação financeira e formar patrimônio ao longo da vida.",
+    "pagina": 20
+   },
+   "431": {
+    "texto": "Casa Segura a proteção começa pelo lar",
     "pagina": 20
    },
    "432": {
@@ -1502,10 +1692,6 @@
    "444": {
     "texto": "Nacional de Cuidado, ampliando o apoio a idosos e pessoas com deficiência, com centros-dia e atendimento domiciliar em parcerias público privado com estados, municípios e organizações sociais. Nosso compromisso é devolver às mulheres aquilo que hoje lhes falta: tempo, inclusive para cuidar de si mesmas.",
     "pagina": 21
-   },
-   "641": {
-    "texto": "Cuidar de alguém que depende de você é um dos gestos mais nobres que existem. Mas, quando se está sozinho, esse cuidado sobrecarrega. A mãe do bebê pequeno, a filha do pai com Alzheimer, a família da pessoa com deficiência: todos enfrentam a mesma escolha impossível entre sustentar a casa e cuidar de quem amam. Esse trabalho, que recai quase sempre sobre as mulheres da família, equivale a cerca de 8,5% do PIB brasileiro, uma economia inteira sustentada por quem abre mão do próprio trabalho para cuidar. O Estado não pode assumir esse cuidado no lugar da família, mas pode dividi-lo com ela.",
-    "pagina": 38
    },
    "647": {
     "texto": "O Brasil envelhece depressa, e a família mudou: são lares menores, mais mulheres trabalhando fora, mais idosos vivendo sozinhos e mais doenças crônicas. Cuidar de quem envelhece virou um desafio que a casa nem sempre dá conta. Por isso, para a população idosa, vamos oferecer o programa Casa",
@@ -1539,6 +1725,10 @@
    },
    "167": {
     "texto": "Temos orgulho da retomada do processo de titulação de territórios quilombolas, que permitiu, desde 2023, a expedição de 65 titulações e assinatura de 72 decretos de desapropriação por interesse social, recorde histórico. Vamos dar continuidade a este processo de reconhecimento do direito ao território, buscando acelerar os procedimentos e garantir que sejam acompanhados de políticas de desenvolvimento territorial.",
+    "pagina": 20
+   },
+   "169": {
+    "texto": "Publicamos 21 Portarias declaratórias terras indígenas. Realizamos desintrusão em 9 terras, retirando invasores e asseguro o usofruto dos povos indígenas. Na terra Yanomami enfrentamos a emergência em saúde e combatemos o garimpo ilegal, que foi reduzido em 99%.",
     "pagina": 20
    },
    "170": {
@@ -1621,6 +1811,10 @@
     "texto": "O combate à pedofilia continuará prioritário e persistirá sendo executado, envolvendo diferentes esferas governamentais e sociais. Reforçaremos ações de inteligência e justiça para agilizar as investigações e a punição de crimes contra crianças e adolescentes. Não recuaremos um passo sequer na proteção digital de crianças e adolescentes, com aprimoramento do ECA Digital, regulamentação do uso de telas por faixa etária, promoção do uso seguro das tecnologias e regulamentação das plataformas de jogos e dos ambientes digitais.",
     "pagina": 24
    },
+   "203": {
+    "texto": "A juventude brasileira está no centro dos desafios e das disputas que definirão o futuro do país. A persistência das desigualdades e das limitações do desenvolvimento brasileiro impede que a juventude realize plenamente seu potencial e construa perspectivas de futuro compatíveis com suas expectativas e direitos. Estamos comprometidos em ampliar, para os jovens, além de mais oportunidades na educação, o acesso ao lazer, à cultura, ao esporte, ao descanso e às oportunidades de desenvolvimento pessoal e profissional.",
+    "pagina": 24
+   },
    "217": {
     "texto": "Queremos um país que enfrente as desigualdades por meio da justiça tributária, da valorização do trabalho, da proteção social e da universalização do acesso à educação, à saúde, à renda e aos demais direitos fundamentais. Um país em que todas as pessoas, independentemente de origem, raça, etnia, gênero, orientação sexual, idade, crença ou condição social, possam desenvolver plenamente seu potencial e viver com dignidade. Um Brasil comprometido com a dignidade humana, democrático e inclusivo, que combata todas as formas de discriminação e assegure os direitos das mulheres, da população negra, dos povos indígenas e quilombolas, da população LGBTQIAP+, das pessoas com deficiência, dos povos do campo, das águas e das florestas, com amplo respeito às liberdades e aos direitos humanos.",
     "pagina": 26
@@ -1640,6 +1834,10 @@
   },
   "renan-santos": {},
   "romeu-zema": {
+   "101": {
+    "texto": "REDUZIR A SUBNOTIFICAÇÃO E REINCIDÊNCIA",
+    "pagina": 7
+   },
    "103": {
     "texto": "Fortalecer a porta de entrada da denúncia:",
     "pagina": 7
@@ -1679,6 +1877,220 @@
    "811": {
     "texto": "Expandir a oferta de casas-abrigo, centros de referência e serviços de acolhimento, com equipes capacitadas para responder aos diferentes tipos de violência que demandam atendimento específico, como violência doméstica, garantindo às vítimas proteção imediata e acompanhamento até a reconstrução de suas vidas.",
     "pagina": 66
+   }
+  },
+  "ronaldo-caiado": {
+   "124": {
+    "texto": "• Reduzir desigualdades raciais e de gênero por políticas mensuráveis de segurança, educação, saúde e oportunidades.",
+    "pagina": 7
+   },
+   "1300": {
+    "texto": "A política para mulheres será organizada em torno de quatro direitos: viver sem violência, cuidar da saúde, trabalhar e empreender com igualdade de oportunidades e participar das decisões. O combate ao feminicídio terá comando nacional, integração entre segurança, justiça, saúde e assistência e proteção econômica para romper ciclos de dependência.",
+    "pagina": 58
+   },
+   "1302": {
+    "texto": "Políticas serão avaliadas por resultado e alcançarão mulheres urbanas, rurais, negras, indígenas, idosas, com deficiência e de diferentes regiões.",
+    "pagina": 58
+   },
+   "1310": {
+    "texto": "1. Pacto Nacional pelo Fim do Feminicídio",
+    "pagina": 58
+   },
+   "1311": {
+    "texto": "Estabelecer metas, protocolo de risco, integração de dados e responsabilidades de União, estados e municípios. Priorizar territórios com maior incidência, publicar resultados e apoiar redes locais de segurança, justiça, saúde e assistência.",
+    "pagina": 58
+   },
+   "1312": {
+    "texto": "2. Medida protetiva cumprida e monitorada",
+    "pagina": 58
+   },
+   "1313": {
+    "texto": "Criar interoperabilidade nacional para medidas protetivas, cadastro de risco e alertas. Expandir monitoramento eletrônico de agressores de alto risco, botão de emergência e patrulhas especializadas, com decisão judicial e resposta rápida.",
+    "pagina": 58
+   },
+   "1314": {
+    "texto": "3. Investigação e julgamento prioritários",
+    "pagina": 58
+   },
+   "1315": {
+    "texto": "Adotar protocolo nacional de feminicídio, estupro e violência sexual, fortalecer perícia e Salas Lilás e reduzir revitimização. Integrar provas digitais, saúde e polícia e estabelecer gestão de casos para evitar perda de prazo e impunidade.",
+    "pagina": 58
+   },
+   "1318": {
+    "texto": "4. Reparação patrimonial e proteção econômica",
+    "pagina": 59
+   },
+   "1319": {
+    "texto": "Aprimorar bloqueio judicial, indenização, alimentos e destinação de bens do condenado às vítimas e filhos, dentro do devido processo. Oferecer renda temporária, aluguel, creche, qualificação, trabalho e crédito, priorizando mulheres com medida protetiva e dependentes.",
+    "pagina": 59
+   },
+   "1320": {
+    "texto": "5. Casas de acolhimento e atendimento único",
+    "pagina": 59
+   },
+   "1321": {
+    "texto": "Expandir rede regional de acolhimento sigiloso e centros integrados com atendimento policial, jurídico, psicossocial e de saúde. Criar porta digital segura e transporte protegido, inclusive para áreas rurais e municípios pequenos. Apoiar atendimento 24 horas em redes regionais, com Delegacias Especializadas de Atendimento à Mulher onde houver escala e salas reservadas nas demais delegacias, garantindo escuta protegida e encaminhamento imediato.",
+    "pagina": 59
+   },
+   "1323": {
+    "texto": "6. Prevenção e educação para relações sem violência",
+    "pagina": 59
+   },
+   "1324": {
+    "texto": "Formar profissionais, trabalhar prevenção em escolas e comunidades e engajar homens, famílias, empresas e lideranças. Campanhas serão baseadas em evidências, ensinarão sinais de risco e caminhos de ajuda e evitarão culpabilizar vítimas.",
+    "pagina": 59
+   },
+   "1325": {
+    "texto": "7. Saúde integral da mulher",
+    "pagina": 59
+   },
+   "1326": {
+    "texto": "Organizar linhas de cuidado para planejamento reprodutivo, pré-natal, parto, puerpério, câncer de mama e colo, endometriose, climatério, saúde mental e violência. Garantir acesso regional, telemedicina, exames e prazos. Incluir cuidado da depressão pós-parto, saúde mental na gestação e no puerpério, apoio a mães e cuidadoras sobrecarregadas e tratamentos indicados para climatério e menopausa.",
+    "pagina": 59
+   },
+   "1328": {
+    "texto": "8. Redução da mortalidade materna",
+    "pagina": 59
+   },
+   "1329": {
+    "texto": "Implantar auditoria de óbitos, protocolo de risco, transporte e regulação de leitos, com atenção especial a mulheres negras, indígenas e de áreas remotas. Hospitais terão metas de segurança e resposta a hemorragia, hipertensão e infecção.",
+    "pagina": 59
+   },
+   "1335": {
+    "texto": "11. Empreendedorismo e crédito para mulheres",
+    "pagina": 59
+   },
+   "1336": {
+    "texto": "Criar garantias, educação financeira, mentoria, compras e redes para empreendedoras, especialmente em periferias e áreas rurais. Medir sobrevivência, faturamento e empregos, evitando programas limitados à abertura formal do negócio.",
+    "pagina": 59
+   },
+   "1337": {
+    "texto": "12. Mulheres no agro, ciência, tecnologia e indústria",
+    "pagina": 59
+   },
+   "1338": {
+    "texto": "Ampliar formação, bolsas, extensão, sucessão rural e acesso a ativos produtivos. Incentivar participação em STEM, inovação e liderança por meio de orientação, redes, ambientes seguros e critérios transparentes de seleção.",
+    "pagina": 59
+   },
+   "1345": {
+    "texto": "14. Participação política sem violência",
+    "pagina": 60
+   },
+   "1346": {
+    "texto": "Combater violência política de gênero e ataques coordenados, garantir investigação e segurança e fortalecer formação de candidatas e lideranças. Partidos deverão cumprir regras de financiamento e transparência, sem candidaturas fictícias.",
+    "pagina": 60
+   },
+   "1347": {
+    "texto": "15. Dados e orçamento para mulheres",
+    "pagina": 60
+   },
+   "1348": {
+    "texto": "Identificar impacto de políticas e gastos sobre mulheres e publicar indicadores de segurança, saúde, trabalho e cuidado. Programas serão revisados por resultado, e recursos seguirão diagnóstico territorial, não apenas distribuição histórica. Estabelecer coordenação permanente, cofinanciamento por metas e painel público territorial de serviços, recursos e resultados, preservando dados pessoais e a segurança das vítimas.",
+    "pagina": 60
+   },
+   "1370": {
+    "texto": "Crianças e adolescentes serão prioridade absoluta na prática: orçamento identificado, metas, integração de dados e serviços, prevenção de violências e acompanhamento desde a gestação até a transição para o trabalho. O governo adotará gestão social por território e por família, respeitando a autonomia dos entes federativos e fortalecendo o Sistema Único de Assistência Social.",
+    "pagina": 61
+   },
+   "1376": {
+    "texto": "O envelhecimento aumenta demanda por cuidado de longa duração, prevenção de dependência, renda e combate à violência patrimonial. Pessoas com deficiência ainda enfrentam barreiras de acessibilidade, educação, transporte e trabalho. População em situação de rua precisa de abordagem que combine moradia, saúde mental, dependência, documentação e reinserção, e não apenas ações episódicas.",
+    "pagina": 61
+   },
+   "1386": {
+    "texto": "4. Prioridade Absoluta para Crianças e Adolescentes",
+    "pagina": 62
+   },
+   "1387": {
+    "texto": "Identificar orçamento federal da infância, publicar metas e criar instância de coordenação na Presidência.",
+    "pagina": 62
+   },
+   "1388": {
+    "texto": "Políticas de saúde, educação, assistência, segurança, cultura, esporte, cidades e internet deverão demonstrar impacto sobre crianças e adolescentes.",
+    "pagina": 62
+   },
+   "1393": {
+    "texto": "7. Proteção contra violências na infância",
+    "pagina": 62
+   },
+   "1394": {
+    "texto": "Integrar Disque 100, conselhos tutelares, escola, saúde, polícia, perícia e justiça em protocolo nacional.",
+    "pagina": 62
+   },
+   "1395": {
+    "texto": "Ampliar escuta especializada, atendimento sem revitimização, proteção a testemunhas, investigação digital e resposta a exploração sexual, trabalho infantil e tráfico.",
+    "pagina": 62
+   },
+   "1396": {
+    "texto": "8. Convivência familiar, acolhimento e adoção",
+    "pagina": 62
+   },
+   "1397": {
+    "texto": "Priorizar apoio à família de origem quando seguro, famílias acolhedoras e acolhimento de pequeno porte.",
+    "pagina": 62
+   },
+   "1398": {
+    "texto": "Reduzir tempo de decisão judicial, apoiar egressos, irmãos e crianças com deficiência e organizar resposta a orfandade por violência, epidemias e desastres.",
+    "pagina": 62
+   },
+   "1401": {
+    "texto": "10. Sistema socioeducativo que interrompa carreiras criminais",
+    "pagina": 62
+   },
+   "1402": {
+    "texto": "Garantir escolarização, formação, saúde mental, esporte, cultura e acompanhamento familiar, com segurança e separação por perfil. Medir reincidência e inserção após a medida e impedir recrutamento de adolescentes por facções dentro das unidades.",
+    "pagina": 62
+   },
+   "1408": {
+    "texto": "13. Inclusão das pessoas com deficiência",
+    "pagina": 62
+   },
+   "1409": {
+    "texto": "Assegurar acessibilidade universal, tecnologia assistiva, educação inclusiva com apoio especializado, reabilitação, transporte e trabalho. Simplificar avaliação biopsicossocial, reduzir espera e apoiar famílias cuidadoras, preservando autonomia e escolha.",
+    "pagina": 62
+   },
+   "1410": {
+    "texto": "14. Envelhecimento ativo e cuidado de longa duração",
+    "pagina": 62
+   },
+   "1411": {
+    "texto": "Criar política integrada de prevenção, convivência, atenção domiciliar, centros-dia, cuidadores, reabilitação e proteção contra violência e fraude. Desenvolver financiamento e padrões de qualidade para cuidados de longa duração, apoiando famílias e municípios.",
+    "pagina": 62
+   },
+   "1518": {
+    "texto": "1. Metas de equidade em todas as políticas",
+    "pagina": 67
+   },
+   "1519": {
+    "texto": "Exigir que programas relevantes de educação, saúde, segurança, trabalho, habitação e crédito publiquem resultados por raça, território e gênero, observada a proteção de dados. Diferenças persistentes gerarão planos de correção, recursos e assistência técnica.",
+    "pagina": 67
+   },
+   "1520": {
+    "texto": "2. Proteção da juventude negra contra a violência",
+    "pagina": 67
+   },
+   "1521": {
+    "texto": "Concentrar prevenção e investigação em territórios com alta mortalidade, combinando policiamento orientado por inteligência, elucidação de homicídios, escola integral, esporte, cultura, aprendizagem e apoio familiar. A meta será salvar vidas e impedir recrutamento por facções.",
+    "pagina": 67
+   },
+   "1533": {
+    "texto": "Aprimorar políticas de inclusão em concursos e formação, respeitando decisões judiciais e mérito. Estimular programas empresariais de diversidade com metas voluntárias, transparência e foco em recrutamento, desenvolvimento e liderança, sem burocracia simbólica.",
+    "pagina": 68
+   },
+   "1535": {
+    "texto": "Acelerar regularização territorial com segurança jurídica, saneamento, energia, conectividade, saúde, educação, assistência técnica e apoio a cadeias produtivas e turismo. Projetos serão construídos com participação das comunidades e respeito a patrimônio cultural.",
+    "pagina": 68
+   },
+   "1537": {
+    "texto": "Proteger territórios contra invasão, garimpo, madeira e crime organizado; fortalecer saúde e educação intercultural; e apoiar atividades sustentáveis escolhidas pelas comunidades. Consultas seguirão a Constituição e normas aplicáveis, sem tutela que impeça autonomia.",
+    "pagina": 68
+   },
+   "1538": {
+    "texto": "10. Liberdade religiosa e combate à intolerância",
+    "pagina": 68
+   },
+   "1539": {
+    "texto": "Capacitar polícias e justiça para investigar ataques a templos e pessoas, proteger patrimônio e monitorar crimes digitais. O Estado será laico, respeitará todas as crenças e não privilegiará nem hostilizará qualquer religião.",
+    "pagina": 68
    }
   }
  }

@@ -9,9 +9,9 @@
   "saude"
  ],
  "origem": {
-  "arquivo": "saude-5.json",
-  "gerado_em": "2026-09-13T08:06:00Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "saude-6.json",
+  "gerado_em": "2026-09-14T05:57:21Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,21 +53,29 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Saúde digital",
-   "proposta": "Implantar prontuário eletrônico nacional único e interoperável, integrando redes pública e privada, atenção primária, hospitais, laboratórios e farmácias",
-   "n_concorda": 5,
+   "proposta": "Implantar um prontuário eletrônico nacional único e interoperável, que acompanhe o cidadão entre as redes pública e privada",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       344
      ],
-     "nota": "Cria o PRONTO, prontuário eletrônico nacional interoperável"
+     "nota": "Chama de PRONTO, conectando hospitais, laboratórios e farmácias"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -77,15 +85,14 @@
       705,
       706
      ],
-     "nota": ""
+     "nota": "Registro nacional sob controle do cidadão, liderado pela União"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      446,
       499
      ],
-     "nota": "Vinculado ao CPF e ao Gov.br, concluindo o Conecte SUS"
+     "nota": "Vinculado ao CPF e ao Gov.br, a partir do Conecte SUS"
     },
     "lula": {
      "posicao": "concorda",
@@ -101,37 +108,24 @@
       595
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1985,
+      1986,
+      1988,
+      1998
+     ],
+     "nota": "Prontuário como instrumento ativo, com alertas clínicos"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Saúde digital",
-   "proposta": "Condicionar o acesso aos dados de saúde à autorização do cidadão, com garantia de privacidade e sigilo",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      704,
-      706
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      499
-     ],
-     "nota": "Consentimento, LGPD e sigilo médico"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Saúde digital",
-   "proposta": "Expandir a telemedicina e o teleatendimento no sistema público, levando consultas e laudos a regiões remotas e desassistidas",
-   "n_concorda": 5,
+   "proposta": "Expandir a telemedicina e a telessaúde para ampliar acesso a consultas e especialistas em regiões remotas",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -139,7 +133,7 @@
       338,
       341
      ],
-     "nota": ""
+     "nota": "Sistema inspirado no DoctorSV de El Salvador"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -147,21 +141,23 @@
       700,
       701
      ],
-     "nota": "Inclui investimento em infraestrutura e capacitação"
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
+      637,
       638
      ],
-     "nota": "Médicos de regiões ociosas atendem onde há fila"
+     "nota": "Médicos de regiões ociosas atendem onde a fila é longa"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      294
+      294,
+      323
      ],
-     "nota": "Teleconsulta, teleorientação e teleacolhimento na rede básica"
+     "nota": "Teleconsulta na rede básica, telecirurgia e salas de telessaúde"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -170,69 +166,24 @@
       3209,
       3212
      ],
-     "nota": "Meta de tornar o Brasil a maior plataforma pública de medicina digital"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Saúde digital",
-   "proposta": "Criar plataforma nacional pública única de telemedicina, com meta de atendimento digital em até 30 minutos e atendimento interestadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
+     "nota": "Quer tornar o Brasil a maior plataforma pública de medicina digital"
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3236,
-      3237,
-      3275,
-      3291
+      1610,
+      1781,
+      1933
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p5",
+   "id": "p3",
    "subtema": "Saúde digital",
-   "proposta": "Criar rede de pontos públicos de acesso digital assistido (UBS, escolas, centros comunitários) para quem não tem equipamento ou conexão",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3261,
-      3262,
-      3263,
-      3264,
-      3265,
-      3269
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Saúde digital",
-   "proposta": "Garantir internet de qualidade em todas as unidades públicas de saúde do país",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      707,
-      708
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Saúde digital",
-   "proposta": "Usar inteligência artificial para triagem, regulação e agendamento, otimizando a gestão das filas",
-   "n_concorda": 5,
+   "proposta": "Usar inteligência artificial para triagem, classificação de risco, apoio ao diagnóstico e gestão das filas",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -252,9 +203,10 @@
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      501
+      501,
+      639
      ],
-     "nota": "IA para encaixar o paciente na primeira vaga disponível"
+     "nota": "IA para agendamento e para identificar quem corre maior risco"
     },
     "lula": {
      "posicao": "concorda",
@@ -268,9 +220,100 @@
      "posicao": "concorda",
      "blocos": [
       3226,
-      3227,
       3228,
+      3229,
       3232
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1763,
+      1993
+     ],
+     "nota": "Exige validação, auditoria e supervisão profissional da IA"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Saúde digital",
+   "proposta": "Garantir conectividade e internet de qualidade nas unidades públicas de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      707,
+      708
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1781
+     ],
+     "nota": "Conectividade junto com prescrição eletrônica e testes rápidos na UBS"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Saúde digital",
+   "proposta": "Criar rede de pontos públicos de acesso digital assistido em UBS, escolas e comunidades para quem não tem equipamento ou conexão",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3261,
+      3262,
+      3263,
+      3269
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Saúde digital",
+   "proposta": "Oferecer aplicativo ou canal nacional ao cidadão com marcação de consultas, resultados de exames e posição na fila",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      298
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1989,
+      1990
+     ],
+     "nota": "Mantém alternativas não digitais e presenciais"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Saúde digital",
+   "proposta": "Criar plataforma nacional única de telemedicina com meta de atendimento digital em até 30 minutos e rede de médicos incentivados",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3236,
+      3237,
+      3242,
+      3243,
+      3291
      ],
      "nota": ""
     }
@@ -278,80 +321,9 @@
   },
   {
    "id": "p8",
-   "subtema": "Saúde digital",
-   "proposta": "Usar inteligência artificial para identificar previamente quem tem maior risco de adoecer e convocar a pessoa para cuidado preventivo",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      639
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Saúde digital",
-   "proposta": "Criar sistema digital de saúde que integre telemedicina, diagnóstico por IA, monitoramento clínico e histórico permanente, inspirado no DoctorSV de El Salvador, com piloto e depois escala nacional",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      98,
-      338,
-      341
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Saúde digital",
-   "proposta": "Implantar vigilância epidemiológica preditiva em tempo real apoiada nos dados do sistema digital de saúde",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      339,
-      342
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Saúde digital",
-   "proposta": "Ampliar o sequenciamento genômico e a formação de bancos de dados genômicos aplicados à saúde",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      339,
-      342
-     ],
-     "nota": "Integra o Genomas Brasil ao prontuário e mira o maior banco da América Latina"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      342
-     ],
-     "nota": "Foco em variantes ligadas a doenças infecciosas e crônicas"
-    }
-   }
-  },
-  {
-   "id": "p12",
    "subtema": "Atenção primária",
-   "proposta": "Ampliar a cobertura e fortalecer a atenção primária e a Estratégia Saúde da Família como porta de entrada do sistema",
-   "n_concorda": 4,
+   "proposta": "Ampliar a cobertura e as equipes da Estratégia Saúde da Família como porta de entrada do SUS",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -359,7 +331,7 @@
       711,
       712
      ],
-     "nota": "Conectada à saúde digital"
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -374,30 +346,65 @@
       291,
       293
      ],
-     "nota": ""
+     "nota": "Ênfase nas equipes multiprofissionais e em territórios vulneráveis"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      592,
-      3282
+      592
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1777,
+      1779
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p13",
+   "id": "p9",
    "subtema": "Atenção primária",
-   "proposta": "Ampliar as equipes multiprofissionais na atenção básica",
-   "n_concorda": 2,
+   "proposta": "Vincular cada cidadão a uma equipe de referência com estratificação de risco, lista nominal e busca ativa de quem precisa",
+   "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      293
+      1779,
+      1780,
+      1782,
+      1792
      ],
-     "nota": "Peça central no cuidado à população que envelhece"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Atenção primária",
+   "proposta": "Criar programa nacional de acompanhamento de pessoas com doenças crônicas (hipertensão, diabetes, obesidade, risco cardiovascular)",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      713,
+      714
+     ],
+     "nota": "Via incentivos por resultado no financiamento da APS"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1780,
+      1798,
+      1799
+     ],
+     "nota": "Busca ativa de pacientes fora de meta"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -409,9 +416,26 @@
    }
   },
   {
-   "id": "p14",
+   "id": "p11",
    "subtema": "Atenção primária",
-   "proposta": "Estabelecer meta de resolver cerca de 80% dos atendimentos básicos fora da atenção especializada",
+   "proposta": "Criar rede nacional de teleconsultoria entre atenção primária e especialistas para qualificar e evitar encaminhamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1767,
+      1784,
+      1792
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Atenção primária",
+   "proposta": "Estabelecer meta de resolver cerca de 80% da demanda no primeiro nível de atenção para desafogar a rede especializada",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
@@ -424,55 +448,19 @@
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      599
+      599,
+      3275,
+      3276
      ],
-     "nota": "80% das consultas básicas via telemedicina"
+     "nota": "80% das consultas básicas resolvidas por telemedicina"
     }
    }
   },
   {
-   "id": "p15",
+   "id": "p13",
    "subtema": "Atenção primária",
-   "proposta": "Manter e aprimorar o Programa Mais Médicos, com vinculação e fixação de profissionais e formação em medicina de família e comunidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      299
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Atenção primária",
-   "proposta": "Garantir acompanhamento e monitoramento contínuo de pessoas com doenças crônicas",
+   "proposta": "Ampliar a oferta de exames e recursos diagnósticos na rede básica para aumentar sua capacidade resolutiva",
    "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      713,
-      714
-     ],
-     "nota": "Via incentivos por resultados no financiamento"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      307
-     ],
-     "nota": "Exames de monitoramento incluídos no Farmácia Popular"
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Atenção primária",
-   "proposta": "Ampliar a oferta de exames e recursos diagnósticos na rede básica para aumentar a resolutividade e evitar encaminhamentos desnecessários",
-   "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -480,120 +468,21 @@
       294
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Atenção primária",
-   "proposta": "Universalizar o acesso à saúde bucal na rede pública",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      304
-     ],
-     "nota": "Apoio a municípios e compra de equipamentos, com Brasil Sorridente"
     },
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      446
+      1781
      ],
-     "nota": "Acesso à saúde bucal dentro da saúde da mulher"
+     "nota": "ECG conectado, testes rápidos e diagnóstico básico na UBS"
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Atenção primária",
-   "proposta": "Capacitar profissionais das UBS para identificar lesões de pele suspeitas, com dermatoscopia digital e envio remoto de imagens a dermatologistas",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3396
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Contratar clínicas e hospitais privados para realizar consultas, exames e cirurgias do SUS, aproveitando a capacidade ociosa",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      738,
-      739
-     ],
-     "nota": "Com metas de atendimento e qualidade"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      630
-     ],
-     "nota": "Contratação em horários ociosos da rede privada"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      319
-     ],
-     "nota": "Parceria em troca de créditos financeiros ou de dívidas"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Ampliar o uso de concessões, PPPs e organizações sociais para construir e gerir hospitais, UPAs e serviços especializados",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      740,
-      741
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Organizar a rede de forma regionalizada, concentrando a alta complexidade em centros de referência e integrando urgências, clínicas e hospitais entre municípios",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      345
-     ],
-     "nota": "Modelo Hub-and-Spoke, impedindo uso dos centros para demanda primária"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      728,
-      729
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Substituir a fila por ordem cronológica por fila única ordenada por risco clínico, com critérios objetivos de gravidade e vulnerabilidade",
-   "n_concorda": 3,
+   "id": "p14",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Substituir a fila cronológica por regulação do acesso ordenada por prioridade e risco clínico",
+   "n_concorda": 4,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -602,137 +491,162 @@
       333,
       343
      ],
-     "nota": "Cria a ENER (Escala Nacional de Estratificação de Risco)"
+     "nota": "Cria a ENER, escala nacional de estratificação de risco"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       324
      ],
-     "nota": "Fila única digital, com transparência e transporte sanitário"
+     "nota": "Fila única digital ordenada por risco clínico"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       3228,
-      3229
+      3229,
+      3230
+     ],
+     "nota": "Classificação de risco feita por sistemas de IA"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      119,
+      1745,
+      1755,
+      1756,
+      1759
+     ],
+     "nota": "Sistema Nacional de Acesso e Regulação Inteligente, com reavaliação dinâmica"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Dar transparência ao cidadão sobre posição na fila, prioridade, prazo estimado e serviço responsável",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      324
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      119,
+      1760,
+      1771
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p24",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Ampliar mutirões, terceiro turno nos serviços e carretas da saúde para aumentar a oferta de consultas, exames e cirurgias",
+   "id": "p16",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Fixar meta de redução do tempo mediano de espera nas filas prioritárias até 2030, com censo nacional das filas e metodologia única de medição",
    "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1773,
+      2091,
+      2160
+     ],
+     "nota": "Redução de pelo menos 50% nas regiões de maior espera"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Criar centrais de comando para gestão ativa de agendas, leitos e capacidade ociosa em tempo real",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1761,
+      1762,
+      1764
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Ampliar oferta de consultas, exames e cirurgias com mutirões, terceiro turno e unidades itinerantes",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       319
      ],
-     "nota": "Continuidade do Agora Tem Especialistas"
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Investir em equipamentos modernos e infraestrutura hospitalar pública (imagem, radioterapia, hemodinâmica, salas cirúrgicas, hospitais inteligentes)",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      320,
-      323
-     ],
-     "nota": ""
+     "nota": "Carretas da Saúde, mutirões e terceiro turno"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      635,
-      636
+      447
      ],
-     "nota": "Fortalecer a rede de hospitais inteligentes da EBSERH"
+     "nota": "Unidades móveis e barcos voltados à saúde da mulher"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3472
+     ],
+     "nota": "Rede de unidades móveis de prevenção do câncer"
     }
    }
   },
   {
-   "id": "p26",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Condicionar repasses federais a estados e municípios ao desempenho e a resultados assistenciais",
-   "n_concorda": 2,
+   "id": "p19",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Organizar a rede de saúde de forma regionalizada, concentrando a alta complexidade em centros de referência",
+   "n_concorda": 3,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      346
+      345
      ],
-     "nota": "Cria o Fundo Nacional de Modernização do Acesso (FNMA)"
+     "nota": "Modelo Hub-and-Spoke"
     },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      714
-     ],
-     "nota": "Incentivos por resultados no financiamento da atenção primária"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Ampliar as vagas de residência médica para suprir a carência de especialistas em regiões desassistidas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      731,
-      732
+      728,
+      729
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Corrigir a defasagem da tabela SUS, assegurando remuneração que cubra o custo real do atendimento a hospitais, santas casas e clínicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      628
+      1481,
+      1482,
+      1768,
+      1769
      ],
-     "nota": ""
+     "nota": "Redes interestaduais e macrorregionais com contratos por valor"
     }
    }
   },
   {
-   "id": "p29",
-   "subtema": "Filas e atenção especializada",
-   "proposta": "Adotar indicadores de desempenho e gestão eficiente para aprimorar continuamente os serviços do SUS",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      595
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Saúde mental e drogas",
-   "proposta": "Ampliar e fortalecer a rede pública de atenção à saúde mental",
-   "n_concorda": 4,
+   "id": "p20",
+   "subtema": "Saúde mental",
+   "proposta": "Fortalecer e ampliar a rede pública de atenção à saúde mental (RAPS e CAPS)",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -747,7 +661,7 @@
      "blocos": [
       650
      ],
-     "nota": "Depressão, ansiedade, TDAH e Alzheimer, com amparo às famílias"
+     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
@@ -755,22 +669,55 @@
       335,
       336
      ],
-     "nota": "Ampliação da RAPS e dos CAPS"
+     "nota": "Ampliar investimentos na RAPS e nos CAPS"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       602
      ],
-     "nota": "Política nacional envolvendo escolas, empresas, forças de segurança e comunidades"
+     "nota": "Programa Nacional de Saúde Mental envolvendo escolas e empresas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1893,
+      1894,
+      1925
+     ],
+     "nota": "Expansão conforme mapeamento de vazios assistenciais"
     }
    }
   },
   {
-   "id": "p31",
-   "subtema": "Saúde mental e drogas",
-   "proposta": "Priorizar a saúde mental de crianças, adolescentes e jovens, com atendimento psicológico em escolas e universidades",
-   "n_concorda": 3,
+   "id": "p21",
+   "subtema": "Saúde mental",
+   "proposta": "Integrar a saúde mental à atenção primária, com capacitação das equipes e fluxos de continuidade entre serviços",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      725
+     ],
+     "nota": "Capacitação de profissionais de Caps, Cras, Creas e escolas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1892,
+      1895,
+      1896
+     ],
+     "nota": "Seguimento estruturado após crise e alta"
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Saúde mental",
+   "proposta": "Ampliar atendimento psicológico e programas de prevenção de depressão, ansiedade e suicídio para crianças, adolescentes e jovens",
+   "n_concorda": 4,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -778,7 +725,7 @@
       209,
       336
      ],
-     "nota": "Foco na Política Nacional de Atenção Psicossocial e redução de danos"
+     "nota": ""
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -786,38 +733,29 @@
       606,
       810
      ],
+     "nota": "Atendimento em escolas e universidades, com educação emocional"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1898,
+      1899
+     ],
      "nota": ""
     },
-    "romeu-zema": {
+    "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      725
+      650
      ],
-     "nota": "Capacitação de escolas, Caps, Cras e Creas para identificar e encaminhar casos"
+     "nota": "Diagnóstico precoce e apoio a crianças com TDAH"
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Saúde mental e drogas",
-   "proposta": "Criar programas de prevenção da ansiedade, da automutilação e do suicídio, com educação emocional e identificação precoce de risco",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      606,
-      769,
-      810
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Saúde mental e drogas",
-   "proposta": "Adotar a gestão da emoção como política pública, ensinando a população técnicas de autorregulação emocional",
+   "id": "p23",
+   "subtema": "Saúde mental",
+   "proposta": "Implantar políticas públicas de educação emocional e gestão da emoção para a população",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -825,21 +763,42 @@
      "blocos": [
       227,
       228,
+      769,
       3251,
-      3252,
-      3254,
-      3257,
-      3340,
       3503
      ],
-     "nota": "Conteúdos emocionais inclusive durante a espera por atendimento"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p34",
-   "subtema": "Saúde mental e drogas",
-   "proposta": "Fortalecer o diagnóstico, o acompanhamento e o tratamento de pessoas com TEA",
+   "id": "p24",
+   "subtema": "Saúde mental",
+   "proposta": "Monitorar a política de saúde mental por indicadores de desfecho, com painel nacional público",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      725
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1920,
+      1921,
+      2111
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Saúde mental",
+   "proposta": "Ampliar o diagnóstico e o cuidado de pessoas com TEA e outras neurodivergências",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
@@ -847,7 +806,7 @@
      "blocos": [
       337
      ],
-     "nota": "Inclui outras neurodivergências"
+     "nota": "Pela rede pública, com diagnóstico e acompanhamento"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -855,29 +814,13 @@
       747,
       748
      ],
-     "nota": "Via credenciamento de clínicas e profissionais privados com recursos públicos"
+     "nota": "Via credenciamento de clínicas privadas financiadas com recurso público"
     }
    }
   },
   {
-   "id": "p35",
-   "subtema": "Saúde mental e drogas",
-   "proposta": "Estruturar programa nacional de internação involuntária de dependentes químicos em situação de rua, com acompanhamento em comunidades terapêuticas credenciadas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      791,
-      792
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Saúde mental e drogas",
+   "id": "p26",
+   "subtema": "Saúde mental",
    "proposta": "Ampliar profissionais e estratégias de cuidado a pessoas com problemas relacionados a jogos de apostas",
    "n_concorda": 1,
    "posicoes": {
@@ -891,71 +834,303 @@
    }
   },
   {
-   "id": "p37",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Manter e ampliar a cobertura vacinal com campanhas nacionais em todo o território",
-   "n_concorda": 3,
+   "id": "p27",
+   "subtema": "Saúde mental",
+   "proposta": "Cuidar da saúde mental dos profissionais de saúde, com prevenção de burnout e violência no trabalho",
+   "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      309,
-      312,
-      313
-     ],
-     "nota": "Inclui incorporação de novas vacinas ao calendário do SUS"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      629
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      711,
-      712
+      2047
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p38",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Manter a vacinação nas escolas como eixo prioritário, com destaque para o HPV",
+   "id": "p28",
+   "subtema": "Saúde da mulher",
+   "proposta": "Estruturar política de saúde integral da mulher em todas as fases da vida, para além da gestação",
+   "n_concorda": 4,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": "Atenção preventiva, telemedicina e ampliação de postos"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      328
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      766,
+      1423,
+      1429,
+      1432
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1834,
+      1835,
+      1849
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Saúde da mulher",
+   "proposta": "Ampliar rastreamento organizado e diagnóstico precoce dos cânceres de mama e de colo do útero, com busca ativa",
+   "n_concorda": 4,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      328
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1424,
+      3336
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1841,
+      1851
+     ],
+     "nota": "Jornada completa do exame alterado até biópsia e tratamento"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Saúde da mulher",
+   "proposta": "Organizar acesso a diagnóstico e tratamento de endometriose e outras condições ginecológicas crônicas",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      328
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1842,
+      2103
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Saúde da mulher",
+   "proposta": "Criar linha de cuidado específica para climatério e menopausa na atenção primária",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1844,
+      1845
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": "Cita cuidado da mulher na menopausa"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Saúde da mulher",
+   "proposta": "Garantir pré-natal completo e maternidade segura, reduzindo a mortalidade materna",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      715,
+      716
+     ],
+     "nota": "Conjunto completo de consultas e exames para todas as gestantes"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      331,
+      333
+     ],
+     "nota": "Rede Alyne, atenção a mulheres negras e ao parto em áreas remotas"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      766,
+      1425
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1836,
+      1837,
+      1838,
+      1851
+     ],
+     "nota": "Meta de reduzir 30% a mortalidade materna até 2030"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": "Cuidado da mulher na gestação, com rastreamento pelo prontuário"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Saúde da mulher",
+   "proposta": "Fortalecer o planejamento reprodutivo com ampliação do acesso a métodos contraceptivos",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      328,
+      329,
+      330
+     ],
+     "nota": "Contraceptivos de longa duração gratuitos no SUS"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1426
+     ],
+     "nota": "Nos termos da legislação brasileira"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1835
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Saúde da mulher",
+   "proposta": "Manter e fortalecer o programa de dignidade menstrual com distribuição de absorventes e insumos",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      310
+      331
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p39",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Incentivar a produção nacional de vacinas e imunizantes",
+   "id": "p35",
+   "subtema": "Saúde da mulher",
+   "proposta": "Integrar a rede de saúde à rede de proteção para atendimento de mulheres em situação de violência",
    "n_concorda": 3,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      629
+      337
+     ],
+     "nota": "Cuidado psicossocial a mulheres em situação de violência"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      766
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1847
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Fortalecer a produção nacional de vacinas, medicamentos e insumos estratégicos para reduzir a dependência externa",
+   "n_concorda": 5,
+   "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       342
      ],
-     "nota": "Criação de plataforma nacional de mRNA para vacinas e terapias"
+     "nota": "Plataforma nacional de mRNA para vacinas e terapias"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      744,
+      745
+     ],
+     "nota": "Via conexão entre universidades e empresas"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      629
+     ],
+     "nota": "Incentivo à produção nacional de vacinas"
     },
     "lula": {
      "posicao": "concorda",
@@ -963,15 +1138,378 @@
       341,
       342
      ],
-     "nota": "Via CEIS e parcerias para desenvolvimento produtivo"
+     "nota": "Complexo Econômico-Industrial da Saúde e PDPs"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2008,
+      2009,
+      2017,
+      2019,
+      2129
+     ],
+     "nota": "Carteira de produtos estratégicos e metas de nacionalização"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Articular universidades, institutos públicos de pesquisa e indústria em rede nacional de inovação em saúde",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      742,
+      743,
+      744
+     ],
+     "nota": "Startups conectadas a hospitais universitários"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      341
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1748,
+      2003,
+      2004,
+      2138,
+      2164
+     ],
+     "nota": "Aliança Nacional de Ciência e Produção em Saúde"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Manter e ampliar programa de distribuição gratuita de medicamentos à população",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      306
+     ],
+     "nota": "Farmácia Popular 100% gratuita, com mais pontos de retirada"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Incluir exames laboratoriais e de monitoramento de doenças crônicas no programa de farmácia popular",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      307
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p40",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Promover hábitos saudáveis (atividade física, alimentação equilibrada, redução de álcool e tabaco) com campanhas e integração entre saúde, educação e assistência social",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Implantar entrega domiciliar de medicamentos para idosos, pessoas com deficiência e doentes crônicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      638
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Incentivar cooperativas de profissionais de saúde e de compra coletiva de medicamentos para baratear o acesso",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2551,
+      2552,
+      2553
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Usar o poder de compra do SUS com negociação de preços, contratos plurianuais e acordos de compartilhamento de risco para tecnologias de alto custo",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2011,
+      2025,
+      2028,
+      2135
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Criar rede pública nacional de terapias avançadas (terapia celular e gênica, CAR-T) com registro de desfechos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2013,
+      2014,
+      2016,
+      2132
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Ampliar o sequenciamento genômico aplicado à saúde da população brasileira",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      339,
+      342
+     ],
+     "nota": "Integrar o Genomas Brasil ao prontuário e criar o maior banco genômico da região"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      342
+     ],
+     "nota": "Foco em variantes de resistência e suscetibilidade a doenças"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2015,
+      2070
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Setor privado e parcerias",
+   "proposta": "Contratar a capacidade ociosa de clínicas e hospitais privados para realizar consultas, exames e cirurgias do SUS",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      738,
+      739
+     ],
+     "nota": "Com metas de atendimento e qualidade"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      630
+     ],
+     "nota": "Contratação nos horários ociosos da rede privada"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      319
+     ],
+     "nota": "Parceria com hospitais privados em troca de créditos ou abatimento de dívidas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1769
+     ],
+     "nota": "Mobilizar privados contratados quando necessário, com contratos por valor"
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Setor privado e parcerias",
+   "proposta": "Ampliar concessões, PPPs e organizações sociais para construir e gerir unidades públicas de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      740,
+      741
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Setor privado e parcerias",
+   "proposta": "Modernizar e fortalecer os hospitais universitários federais como rede de referência",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      635,
+      636
+     ],
+     "nota": "Rede Nacional de Hospitais Inteligentes via EBSERH"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      742,
+      743
+     ],
+     "nota": "Conectando startups aos hospitais universitários"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2003
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Ampliar e sustentar a cobertura vacinal com campanhas nacionais e busca ativa de atrasados",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      711,
+      712
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      629
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      309,
+      312,
+      313
+     ],
+     "nota": "Incorporação de novas vacinas ao calendário do SUS"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1970,
+      1971,
+      1979
+     ],
+     "nota": "Meta de pelo menos 95% de cobertura nas vacinas prioritárias"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Fazer da vacinação em escolas eixo permanente da recuperação das coberturas",
    "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      310
+     ],
+     "nota": "Destaque para o HPV"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1971
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Integrar o registro nominal de vacinação ao prontuário para identificar bolsões de baixa cobertura em tempo real",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1972,
+      2108
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Fortalecer a vigilância epidemiológica, laboratorial e genômica com monitoramento em tempo real e preparação para emergências sanitárias",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      339,
+      342
+     ],
+     "nota": "Vigilância preditiva integrada ao sistema digital de saúde"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1974,
+      1975,
+      1979
+     ],
+     "nota": "Estoques estratégicos e contratos de contingência"
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Promover hábitos saudáveis (atividade física, alimentação, redução de álcool e tabaco) com campanhas e integração entre políticas",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -981,21 +1519,29 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1743,
+      1817
+     ],
+     "nota": ""
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1427,
+      3477,
       3487
      ],
-     "nota": "Cultura nacional de autocuidado e adesão a exames"
+     "nota": "Programa diário de educação preventiva e autocuidado"
     }
    }
   },
   {
-   "id": "p41",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Ampliar o acesso a exames preventivos e ao rastreamento organizado",
-   "n_concorda": 3,
+   "id": "p53",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Ampliar o acesso a exames preventivos de rotina para a população",
+   "n_concorda": 4,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1012,6 +1558,14 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1743,
+      1818
+     ],
+     "nota": ""
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
@@ -1023,9 +1577,9 @@
    }
   },
   {
-   "id": "p42",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Ampliar a rede pública de prevenção, diagnóstico precoce e tratamento do câncer",
+   "id": "p54",
+   "subtema": "Câncer",
+   "proposta": "Estruturar rede nacional de prevenção, diagnóstico precoce e tratamento do câncer",
    "n_concorda": 3,
    "posicoes": {
     "lula": {
@@ -1034,306 +1588,25 @@
       325,
       326
      ],
-     "nota": "Supercentro de telediagnóstico e expansão de UNACONs, CACONs e radioterapia"
+     "nota": "Expansão de UNACONs, CACONs e radioterapia e telediagnóstico"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       3336,
       3467,
-      3469
-     ],
-     "nota": "Projeto SEA, com rede nacional de prevenção"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": "Foco no cuidado à mulher com câncer"
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Expandir nacionalmente o modelo de prevenção do Hospital de Amor, adaptado às realidades regionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3467,
-      3468,
-      3470,
+      3469,
       3472
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Criar comitês municipais multissetoriais de prevenção e promoção da saúde, com busca ativa de pessoas resistentes aos exames",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3346,
-      3471,
-      3490,
-      3491,
-      3500,
-      3501,
-      3502,
-      3505
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Criar programa nacional permanente de educação preventiva com conteúdos diários para toda a população",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3253,
-      3255,
-      3256,
-      3477,
-      3478,
-      3479,
-      3480,
-      3481,
-      3484
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Usar unidades móveis para levar atendimento, prevenção e diagnóstico a regiões remotas e populações vulneráveis",
-   "n_concorda": 3,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      447,
-      637
-     ],
-     "nota": "Ônibus, caminhões e barcos para saúde da mulher e ribeirinhos"
+     "nota": "Projeto SEA, tomando o Hospital de Amor como modelo"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3472
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      304
-     ],
-     "nota": "Unidades Odontológicas Móveis"
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Saúde da mulher",
-   "proposta": "Fortalecer a atenção integral à saúde da mulher em todas as fases da vida, com atendimento humanizado",
-   "n_concorda": 3,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": "Foco preventivo, sem fila e com atendimento por telemedicina"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      328
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      766,
-      1423,
-      1429,
-      1430,
-      1432
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Saúde da mulher",
-   "proposta": "Garantir pré-natal completo e parto seguro a todas as gestantes, inclusive em áreas remotas",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      715,
-      716
-     ],
-     "nota": "Conjunto completo de consultas e exames do pré-natal"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      331,
-      333
-     ],
-     "nota": "Rede Alyne, casas de gestantes e enfermeiras obstétricas na Amazônia Legal"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      766,
-      1425
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Saúde da mulher",
-   "proposta": "Intensificar a redução da mortalidade materna, com atenção específica às mulheres negras",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      333
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Saúde da mulher",
-   "proposta": "Fortalecer o planejamento reprodutivo, ampliando o acesso gratuito a métodos contraceptivos modernos e de longa duração",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      328,
-      329,
-      330
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1426
-     ],
-     "nota": "Nos termos da legislação brasileira"
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Saúde da mulher",
-   "proposta": "Ampliar o diagnóstico precoce dos cânceres de mama e do colo do útero",
-   "n_concorda": 3,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      328
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1424
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Saúde da mulher",
-   "proposta": "Ampliar o cuidado a mulheres com endometriose e outras condições ginecológicas crônicas e na menopausa",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      328
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Saúde da mulher",
-   "proposta": "Manter e fortalecer a distribuição gratuita de absorventes e insumos de saúde menstrual",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      331
-     ],
-     "nota": "Programa Dignidade Menstrual via Farmácia Popular"
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Saúde da mulher",
-   "proposta": "Garantir cuidado psicossocial e resposta coordenada do Estado a mulheres em situação de violência",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      337
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      766
+      1814,
+      1818,
+      1823,
+      1824
      ],
      "nota": ""
     }
@@ -1341,29 +1614,32 @@
   },
   {
    "id": "p55",
-   "subtema": "Medicamentos e indústria da saúde",
-   "proposta": "Manter o Farmácia Popular 100% gratuito, revisando a lista de medicamentos e ampliando os pontos de retirada nas periferias",
+   "subtema": "Câncer",
+   "proposta": "Criar via rápida oncológica com monitoramento paciente a paciente do cumprimento dos prazos legais de diagnóstico e tratamento",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      306
+      1821,
+      1822,
+      1831,
+      2100
      ],
-     "nota": "Inclui continuidade da distribuição de fraldas geriátricas"
+     "nota": ""
     }
    }
   },
   {
    "id": "p56",
-   "subtema": "Medicamentos e indústria da saúde",
-   "proposta": "Incluir exames laboratoriais, de diagnóstico e de monitoramento de doenças crônicas no Farmácia Popular",
+   "subtema": "Câncer",
+   "proposta": "Expandir o rastreamento do câncer de colo do útero baseado em teste molecular de DNA-HPV",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      307
+      1819
      ],
      "nota": ""
     }
@@ -1371,31 +1647,42 @@
   },
   {
    "id": "p57",
-   "subtema": "Medicamentos e indústria da saúde",
-   "proposta": "Incentivar cooperativas de profissionais de saúde e cooperativas de compra coletiva de medicamentos para baratear o acesso",
-   "n_concorda": 1,
+   "subtema": "Câncer",
+   "proposta": "Incorporar terapias-alvo, imunoterapias e medicina de precisão ao tratamento oncológico público",
+   "n_concorda": 2,
    "posicoes": {
-    "augusto-cury": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      2551,
-      2552,
-      2553
+      325
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1826,
+      1827
+     ],
+     "nota": "Condicionada a evidência robusta e disponibilidade de biomarcador"
     }
    }
   },
   {
    "id": "p58",
-   "subtema": "Medicamentos e indústria da saúde",
-   "proposta": "Criar sistema de entrega domiciliar de medicamentos para idosos, pessoas com deficiência e doentes crônicos",
+   "subtema": "Câncer",
+   "proposta": "Criar comitês municipais de mobilização social para prevenção e busca de pessoas resistentes aos exames",
    "n_concorda": 1,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      638
+      3346,
+      3490,
+      3491,
+      3500,
+      3501,
+      3502
      ],
      "nota": ""
     }
@@ -1403,78 +1690,85 @@
   },
   {
    "id": "p59",
-   "subtema": "Medicamentos e indústria da saúde",
-   "proposta": "Fortalecer a produção nacional de insumos, medicamentos e equipamentos para reduzir a dependência externa",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      341,
-      342
-     ],
-     "nota": "Via CEIS, PDPs e IFAs da biodiversidade amazônica"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      744,
-      745
-     ],
-     "nota": "Via conexão entre universidades e empresas do setor"
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Medicamentos e indústria da saúde",
-   "proposta": "Conectar startups e empresas inovadoras aos hospitais universitários para desenvolver inovações em saúde",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      742,
-      743
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Populações específicas",
-   "proposta": "Fortalecer a atenção à saúde indígena, com profissionais capacitados, infraestrutura, telemedicina, logística de medicamentos e transporte de pacientes",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      718,
-      719
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Populações específicas",
-   "proposta": "Priorizar grupos vulneráveis (crianças, idosos, baixa renda, gestantes, pessoas com deficiência e moradores de regiões remotas) no acesso ao atendimento digital",
+   "subtema": "Câncer",
+   "proposta": "Capacitar a atenção primária para triagem de câncer de pele com dermatoscopia digital e laudo remoto",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3214,
-      3215,
-      3216,
-      3217,
-      3218,
-      3219,
-      3220,
-      3266,
-      3268
+      3396
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Condicionar repasses federais ao desempenho e a resultados aferidos por indicadores",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      346
+     ],
+     "nota": "Cria o Fundo Nacional de Modernização do Acesso"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      714
+     ],
+     "nota": "Incentivos por resultado na atenção primária"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1788,
+      2051,
+      2141
+     ],
+     "nota": "Migrar do pagamento por produção para pagamento por valor"
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Criar painel público nacional de qualidade, eficiência e desfechos do SUS com metas e relatório anual",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1747,
+      2049,
+      2147,
+      2169
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      595
+     ],
+     "nota": "Indicadores de desempenho para aprimorar serviços"
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Corrigir a defasagem da tabela de remuneração do SUS para cobrir o custo real do atendimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      628
      ],
      "nota": ""
     }
@@ -1482,28 +1776,32 @@
   },
   {
    "id": "p63",
-   "subtema": "Populações específicas",
-   "proposta": "Garantir atendimento de saúde às populações rurais, ribeirinhas, do campo e da floresta",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Preservar o SUS como sistema público e universal e modernizá-lo sem alterar seus princípios",
    "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      333
+      288,
+      345
      ],
-     "nota": "Acesso oportuno ao parto e transporte sanitário"
+     "nota": ""
     },
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      447
+      1703,
+      1704,
+      1708,
+      2170
      ],
-     "nota": "Barcos adaptados para ribeirinhos"
+     "nota": ""
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3267
+      595
      ],
      "nota": ""
     }
@@ -1511,15 +1809,16 @@
   },
   {
    "id": "p64",
-   "subtema": "Populações específicas",
-   "proposta": "Fortalecer o SAMU e o transporte sanitário em todas as regiões de saúde",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Reforçar a avaliação de tecnologias em saúde com monitoramento pós-incorporação e desinvestimento quando o benefício não se confirmar",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      324,
-      333
+      1746,
+      2033,
+      2055
      ],
      "nota": ""
     }
@@ -1527,8 +1826,8 @@
   },
   {
    "id": "p65",
-   "subtema": "Idosos e fim de vida",
-   "proposta": "Criar políticas específicas de saúde e bem-estar para a população idosa, com atendimento facilitado e prevenção do declínio físico e mental",
+   "subtema": "Longevidade e cuidados de longa duração",
+   "proposta": "Criar política nacional de saúde e bem-estar da pessoa idosa, com avaliação funcional e prevenção de fragilidade e quedas",
    "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
@@ -1537,28 +1836,69 @@
       722,
       723
      ],
-     "nota": "Apoio a estados e municípios, com atividades físicas e socialização"
+     "nota": "Apoio a estados e municípios, com atividade física e socialização"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       629
      ],
-     "nota": "Cria o Programa de Atendimento aos Idosos"
+     "nota": "Programa de Atendimento aos Idosos com acesso facilitado"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3216
+      1872,
+      1873,
+      1884,
+      2114
      ],
-     "nota": "Prioridade de idosos com dificuldade de locomoção na telemedicina"
+     "nota": ""
     }
    }
   },
   {
    "id": "p66",
-   "subtema": "Idosos e fim de vida",
-   "proposta": "Assegurar acesso a cuidados paliativos de qualidade no fim da vida, com alívio da dor e suporte à família",
+   "subtema": "Longevidade e cuidados de longa duração",
+   "proposta": "Expandir a atenção domiciliar a idosos dependentes e o apoio a cuidadores, com revisão de polifarmácia",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1877,
+      1878
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Longevidade e cuidados de longa duração",
+   "proposta": "Implantar linha de cuidado para demência e doenças neurodegenerativas em todas as regiões",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1874
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      650
+     ],
+     "nota": "Cuidado a idosos com Alzheimer e a quem cuida deles"
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Longevidade e cuidados de longa duração",
+   "proposta": "Assegurar acesso universal a cuidados paliativos e fim de vida humanizado",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -1572,25 +1912,348 @@
    }
   },
   {
-   "id": "p67",
-   "subtema": "Idosos e fim de vida",
-   "proposta": "Ampliar a atenção a idosos com Alzheimer e outras doenças neurológicas e a quem cuida deles",
-   "n_concorda": 1,
+   "id": "p69",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Fortalecer a atenção à saúde indígena com equipes estáveis, competência intercultural, logística de medicamentos e transporte de pacientes",
+   "n_concorda": 2,
    "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      718,
+      719
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1928,
+      1931,
+      1932,
+      1935,
+      1946
+     ],
+     "nota": "Fortalecer DSEIs e criar indicadores por território"
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Organizar estratégia de saúde para a Amazônia e populações ribeirinhas, com atenção fluvial e transporte aeromédico",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1609,
+      1610,
+      1611,
+      1612
+     ],
+     "nota": ""
+    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      650
+      447
+     ],
+     "nota": "Barcos adaptados para atender ribeirinhos"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      333
+     ],
+     "nota": "Ambulância perinatal e enfermeiras obstétricas na Amazônia Legal"
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Fortalecer a atenção à saúde da população negra, com protocolos e combate à discriminação no atendimento",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1528,
+      1529
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      333
+     ],
+     "nota": "Atenção específica à mortalidade materna de mulheres negras"
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Priorizar grupos vulneráveis (crianças, idosos, gestantes, pessoas com deficiência, baixa renda e moradores de áreas remotas) no acesso ao atendimento digital",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3214,
+      3215,
+      3216,
+      3217,
+      3218,
+      3219,
+      3220
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p68",
-   "subtema": "Regulação e judicialização",
-   "proposta": "Estabelecer critérios técnicos vinculantes para decisões judiciais em saúde, com protocolos clínicos e listas de referência obrigatórias",
+   "id": "p73",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Organizar rede nacional de urgência, emergência e paciente crítico com centrais de comando e regulação de UTI por prioridade clínica",
    "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1950,
+      1955,
+      1956,
+      1965
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Ampliar e fortalecer o SAMU, com cobertura populacional universal e ambulâncias conectadas",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1952,
+      1953,
+      2120
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      333
+     ],
+     "nota": "Samu integrado à Rede Alyne e ao cuidado perinatal"
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Criar redes tempo-dependentes de infarto e AVC, com hemodinâmica 24 horas, TeleAVC e trombectomia regionalizada",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1801,
+      1802,
+      1803,
+      1811
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Modernizar hospitais públicos com gestão digital de leitos, centro cirúrgico e apoio à decisão",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1991,
+      1992,
+      2126
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      323
+     ],
+     "nota": "Serviços e hospitais inteligentes, telecirurgia e cirurgia robótica"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      635,
+      636
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Continuar investindo em equipamentos e infraestrutura da rede pública (imagem, radioterapia, salas cirúrgicas, policlínicas e hospitais)",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      320,
+      323
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Criar rede nacional de trauma e queimados integrada à reabilitação, com indicadores de desfecho funcional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1960,
+      1961
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Ampliar vagas de residência médica e formação de especialistas em regiões com vazios assistenciais",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      731,
+      732
+     ],
+     "nota": "Aproveitando a capacidade operacional dos hospitais existentes"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2043,
+      2044,
+      2144
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p80",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Adotar mecanismos de provimento e fixação de profissionais no interior e em áreas vulneráveis",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      299
+     ],
+     "nota": "Continuidade e expansão do Mais Médicos, com formação em medicina de família"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1482,
+      2044
+     ],
+     "nota": "Carreira federativa e incentivos de fixação territorial"
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Álcool e outras drogas",
+   "proposta": "Estruturar programa nacional de internação involuntária de dependentes químicos em situação de rua, com acompanhamento em comunidades terapêuticas credenciadas",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      791,
+      792
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Álcool e outras drogas",
+   "proposta": "Tratar o uso de álcool e outras drogas como questão de saúde pública, com redução de danos e tratamento baseado em evidências",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      209
+     ],
+     "nota": "Redução de danos na política de saúde mental da juventude"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1908,
+      1911,
+      1914
+     ],
+     "nota": "Referência regional de CAPS AD e vigilância de novas substâncias"
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Álcool e outras drogas",
+   "proposta": "Ampliar ações educativas de prevenção ao uso de drogas entre crianças e adolescentes, com escolas e famílias",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1910,
+      1913
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      810
+     ],
+     "nota": "Campanhas contra dependência digital e comportamentos autodestrutivos"
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Saúde suplementar e judicialização",
+   "proposta": "Estabelecer critérios técnicos e protocolos vinculantes para reduzir a judicialização da saúde",
+   "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -1599,13 +2262,20 @@
       752
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2056
+     ],
+     "nota": "Reduzir judicialização por incorporação previsível e acesso organizado"
     }
    }
   },
   {
-   "id": "p69",
-   "subtema": "Regulação e judicialização",
-   "proposta": "Flexibilizar o marco regulatório da ANS para permitir planos de saúde com coberturas segmentadas e compartilhamento de custos",
+   "id": "p85",
+   "subtema": "Saúde suplementar e judicialização",
+   "proposta": "Flexibilizar o marco regulatório da ANS para permitir planos de saúde com coberturas segmentadas e mecanismos de custo compartilhado",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -1619,9 +2289,9 @@
    }
   },
   {
-   "id": "p70",
-   "subtema": "Regulação e judicialização",
-   "proposta": "Revisar obrigações regulatórias que oneram hospitais, clínicas e prestadores privados, inclusive as relativas ao uso de IA",
+   "id": "p86",
+   "subtema": "Saúde suplementar e judicialização",
+   "proposta": "Revisar obrigações regulatórias que oneram hospitais, clínicas e prestadores privados, inclusive quanto ao uso de IA",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -1635,19 +2305,110 @@
    }
   },
   {
-   "id": "p71",
-   "subtema": "Atenção primária",
+   "id": "p87",
+   "subtema": "Infância e saúde bucal",
+   "proposta": "Criar linha de cuidado integral da primeira infância, com acompanhamento longitudinal e passaporte digital da criança",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1855,
+      1857,
+      1858,
+      1866
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Infância e saúde bucal",
+   "proposta": "Garantir seguimento pós-alta de prematuros e busca ativa de crianças com atraso de desenvolvimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1859,
+      1862,
+      2106
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Infância e saúde bucal",
+   "proposta": "Universalizar a oferta de saúde bucal no SUS",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      304
+     ],
+     "nota": "Apoio a municípios e compra de equipamentos, via Brasil Sorridente"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": "Acesso à saúde bucal dentro da atenção à mulher"
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Doenças raras",
+   "proposta": "Criar coordenação nacional, cadastro e fluxo assistencial para doenças raras, reduzindo o tempo até o diagnóstico",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2064,
+      2066,
+      2074,
+      2150
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p91",
+   "subtema": "Doenças raras",
+   "proposta": "Adotar avaliação tecnológica proporcional a populações pequenas e pagamento por desempenho no acesso a terapias de alto custo",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2068,
+      2070
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Financiamento e gestão do SUS",
    "proposta": "Integrar a Atenção Primária, a Vigilância em Saúde, a Assistência Farmacêutica e a Atenção Especializada em uma rede articulada de cuidado",
    "n_concorda": 5,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      338,
+      339,
       344,
       345
      ],
-     "nota": "PRONTO conecta atenção primária, especializada, hospitais, laboratórios e farmácias; vigilância integrada"
+     "nota": "PRONTO conecta APS, especializados, hospitais, laboratórios e farmácias; vigilância integrada"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -1655,16 +2416,7 @@
       712,
       729
      ],
-     "nota": "Propõe rede regionalizada integrando atenção primária, urgência, clínicas especializadas e hospitais."
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      499,
-      501,
-      629
-     ],
-     "nota": "Prontuário único interoperável e integração das redes de cuidado, com ampliação da ESF."
+     "nota": "Rede integrada com APS como porta de entrada e regionalização."
     },
     "lula": {
      "posicao": "concorda",
@@ -1679,82 +2431,138 @@
      "blocos": [
       591,
       592,
-      595,
-      598,
-      3276,
-      3282
+      595
      ],
-     "nota": "Atenção primária como eixo, integração de sistemas/prontuários e rede conectando UBS, clínicas e especializada."
-    }
-   }
-  },
-  {
-   "id": "p72",
-   "subtema": "Saúde digital",
-   "proposta": "Criar incentivos específicos para atrair médicos de diferentes especialidades altamente qualificados a atuar na plataforma nacional de telemedicina",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
+     "nota": "Integração de sistemas e fortalecimento da atenção primária como eixo articulador"
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3242
+      1751
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p73",
-   "subtema": "Saúde digital",
-   "proposta": "Implantar sistema permanente de avaliação da qualidade dos atendimentos digitais, com indicadores clínicos, satisfação dos pacientes e atualização profissional contínua",
+   "id": "p93",
+   "subtema": "Saúde mental",
+   "proposta": "Disponibilizar em plataforma digital pública orientações sobre ansiedade e estresse, exercícios de respiração e relaxamento, vídeos educativos, conteúdos preventivos e suporte psicológico inicial",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3243
+      3253,
+      3254,
+      3255,
+      3256,
+      3257
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p74",
+   "id": "p94",
    "subtema": "Saúde digital",
-   "proposta": "Usar a plataforma digital como triagem para encaminhar à rede especializada apenas os casos que exijam exame físico ou procedimento presencial",
-   "n_concorda": 3,
+   "proposta": "Instalar pontos de telessaúde em escolas, centros comunitários, municípios de pequeno porte, comunidades rurais e regiões de difícil acesso",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      338,
-      343,
-      345
+      341,
+      342
      ],
-     "nota": "Triagem digital e modelo Hub-and-Spoke encaminham casos complexos aos centros de referência"
+     "nota": "Telemedicina no sistema digital de saúde, inspirado no DoctorSV"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      700,
+      701,
+      708,
+      719
+     ],
+     "nota": "Telemedicina para regiões remotas e vazios assistenciais, com conectividade nas unidades."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446,
+      638
+     ],
+     "nota": "Telessaúde e teleatendimento para regiões distantes e postos de saúde"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       294,
-      298,
-      324
+      298
      ],
-     "nota": "Telessaúde e IA para triagem/regulação por risco, evitando encaminhamentos desnecessários ao especializado"
+     "nota": "Telessaúde na rede básica e em regiões de vulnerabilidade e vazios assistenciais"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3276
+      3264,
+      3265,
+      3266,
+      3267,
+      3268
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1482,
+      1610,
+      1781,
+      1933
+     ],
+     "nota": "Telessaúde e telemedicina para interior, áreas remotas, fluviais e indígenas."
+    }
+   }
+  },
+  {
+   "id": "p95",
+   "subtema": "Saúde mental",
+   "proposta": "Integrar os programas de prevenção e educação emocional aos Comitês Sociedade Está Abraçando (SEA)",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3471
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p75",
-   "subtema": "Prevenção, vacinação e câncer",
-   "proposta": "Compor os comitês locais de prevenção com médico, psicólogo, educador, líder comunitário, representante da sociedade civil, comunicador e empresário",
+   "id": "p96",
+   "subtema": "Saúde mental",
+   "proposta": "Oferecer programa diário de gestão da emoção com ferramenta prática, pergunta reflexiva, exercício de autocuidado e reflexão ao final do dia",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3479,
+      3480,
+      3481,
+      3484
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p97",
+   "subtema": "Câncer",
+   "proposta": "Compor os comitês locais de mobilização e prevenção com médico, psicólogo, educador, líder comunitário, representante da sociedade civil, comunicador e empresário",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -1773,31 +2581,1402 @@
    }
   },
   {
-   "id": "p76",
-   "subtema": "Saúde mental e drogas",
+   "id": "p98",
+   "subtema": "Saúde mental",
    "proposta": "Oferecer apoio psicológico a pacientes e seus familiares",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3504
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1839,
+      1847,
+      1878,
+      1913
+     ],
+     "nota": "Suporte a cuidadores, famílias afetadas por drogas e cuidado psicológico a vítimas."
+    }
+   }
+  },
+  {
+   "id": "p99",
+   "subtema": "Prevenção, vacinação e vigilância",
+   "proposta": "Integrar instituições públicas, privadas e organizações da sociedade civil em ações de prevenção em saúde",
    "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      741,
+      748
+     ],
+     "nota": "Parcerias com setor privado e OSs em prevenção e atendimento."
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3505
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1612,
+      1910,
+      1915
+     ],
+     "nota": "Prevenção articulando escolas, famílias, redes de proteção e outros setores/instituições."
+    }
+   }
+  },
+  {
+   "id": "p100",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Adotar federalismo cooperativo na saúde, com a União definindo padrões nacionais, financiando prioridades estratégicas e integrando informações, e estados e municípios executando de forma regionalizada",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      693,
+      714,
+      725,
+      729
+     ],
+     "nota": "Governo federal lidera infraestrutura e incentivos; rede regionalizada executada por estados/municípios."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1744
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p101",
+   "subtema": "Saúde digital",
+   "proposta": "Usar tecnologia para reduzir burocracia e apoiar decisões preservando o julgamento clínico, a autonomia profissional e a relação humana no cuidado",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      98,
+      341
+     ],
+     "nota": "IA para diagnóstico e democratização do acesso"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      499,
+      501,
+      639
+     ],
+     "nota": "Uso de IA e digitalização para agilizar e prevenir"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3209,
+      3225,
+      3233
+     ],
+     "nota": "IA como aliada, não substituta do médico; reduzir burocracia e preservar cuidado humano"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1752
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p102",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Integrar consultas especializadas, exames, cirurgias, oncologia, cardiologia, neurologia, reabilitação e alta complexidade em plataformas interoperáveis de regulação",
+   "n_concorda": 5,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      333,
+      343,
+      344
+     ],
+     "nota": "ENER e prontuário interoperável para regulação do acesso"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      729,
+      739
+     ],
+     "nota": "Rede regionalizada com IA para gestão de filas e direcionamento de pacientes."
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      297,
+      298,
+      324
+     ],
+     "nota": "Integração de níveis, prontuário compartilhado, fila única digital e regulação por risco"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      595,
+      3236,
+      3276
+     ],
+     "nota": "Plataforma nacional integrada e integração de sistemas para encaminhamento"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1758
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p103",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Manter a UBS acompanhando o cidadão até a realização da consulta, exame ou procedimento, com acesso à prioridade e ao plano assistencial",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      297,
+      298
+     ],
+     "nota": "Fluxos de referência e contrarreferência e marcação via UBS"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1766
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p104",
+   "subtema": "Atenção primária",
+   "proposta": "Exigir que toda alta de paciente de alto risco gere comunicação eletrônica à equipe territorial, com reconciliação de medicamentos e plano de seguimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1785
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p105",
+   "subtema": "Atenção primária",
+   "proposta": "Avaliar a Atenção Primária por indicadores de controle de doenças, vacinação, diagnóstico precoce, internações evitáveis e mortalidade prematura, e não apenas por número de consultas",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      714
+     ],
+     "nota": "Incentivos por resultados na APS priorizando redução efetiva de doenças crônicas."
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      592,
+      595
+     ],
+     "nota": "Indicadores de desempenho e redução de internações evitáveis"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1786
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p106",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Utilizar transporte aeromédico em regiões onde a barreira geográfica impeça o tratamento dentro da janela terapêutica",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1805
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p107",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Estruturar rede regional regulada de angiotomografia coronariana, com indicação clínica, qualidade e laudo especializado, para diagnóstico precoce da doença coronariana",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1807
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p108",
+   "subtema": "Saúde da mulher",
+   "proposta": "Garantir cuidado estruturado no puerpério, incluindo saúde cardiovascular e saúde mental materna",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      715,
+      716
+     ],
+     "nota": "Pré-natal completo; foco em mãe e criança."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446,
+      650
+     ],
+     "nota": "Cuidado à mulher na gestação e saúde mental ampliada"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      328,
+      333,
+      337
+     ],
+     "nota": "Saúde integral da mulher, maternidade segura e cuidado psicossocial"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1839
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p109",
+   "subtema": "Infância e saúde bucal",
+   "proposta": "Acompanhar, além da mortalidade infantil, indicadores de desenvolvimento saudável da criança: crescimento, nutrição, vacinação, linguagem, cognição, visão, audição e saúde emocional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1861
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p110",
+   "subtema": "Longevidade e cuidados de longa duração",
+   "proposta": "Garantir avaliação e acesso à reabilitação após AVC, fratura, cirurgia, internação prolongada ou doença crítica",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1876
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p111",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Adotar nos hospitais mobilização precoce, prevenção de delirium, preservação do sono, cuidado nutricional, redução de dispositivos desnecessários e planejamento de alta",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1880
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p112",
+   "subtema": "Longevidade e cuidados de longa duração",
+   "proposta": "Medir a política de longevidade por anos de vida saudável e capacidade funcional, e não apenas por longevidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1882
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p113",
+   "subtema": "Saúde mental",
+   "proposta": "Priorizar no cuidado em saúde mental públicos específicos: gestantes e puérperas, idosos, pessoas com depressão e ansiedade, pessoas com transtornos mentais graves, pessoas com problemas de uso de álcool e drogas e populações em vulnerabilidade social",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       724,
       725,
-      734
+      792
      ],
-     "nota": "Fortalecimento da rede de saúde mental e suporte emocional em cuidados paliativos com presença da família."
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       650
      ],
-     "nota": "Amplia atenção à saúde mental incluindo apoio a famílias e cuidadores."
+     "nota": "Prioriza depressão, ansiedade, idosos, crianças com TDAH"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      209,
+      336,
+      337
+     ],
+     "nota": "Prioriza crianças, jovens, mulheres em violência, TEA, redução de danos"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3504
+      602,
+      606,
+      766,
+      810
+     ],
+     "nota": "Política nacional de saúde mental com foco em jovens, mulheres e vulneráveis"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1900,
+      1901,
+      1902,
+      1903,
+      1904,
+      1905
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p114",
+   "subtema": "Álcool e outras drogas",
+   "proposta": "Articular fluxo de cuidado para álcool e drogas entre APS, CAPS AD, emergência e hospital",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1912
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p115",
+   "subtema": "Saúde mental",
+   "proposta": "Integrar a política de saúde mental a outras políticas públicas, articulando saúde, assistência social, educação, justiça e segurança pública",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      721,
+      725
+     ],
+     "nota": "Integração saúde, educação e assistência social (Caps, Cras, Creas, escolas)."
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      602
+     ],
+     "nota": "Política de saúde mental envolvendo escolas, empresas, forças de segurança e comunidades"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1915
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p116",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Estruturar transporte sanitário terrestre, fluvial e aeromédico conforme geografia e gravidade, com planejamento para emergências obstétricas, pediátricas, infecciosas e de trauma",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": "Unidades móveis e barcos para ribeirinhos"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      324,
+      333
+     ],
+     "nota": "Transporte sanitário em todas as regiões e ambulância perinatal na Amazônia"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1936
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p117",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Garantir contrarreferência após alta, com plano terapêutico compreensível e retorno à equipe de origem",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      297
+     ],
+     "nota": "Fluxos claros de referência e contrarreferência"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1937
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p118",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Priorizar na saúde indígena ações de saúde materno-infantil, vacinação, tuberculose e outras infecções, doenças crônicas, saúde mental, nutrição, saúde bucal, água segura e vigilância ambiental",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      718,
+      719
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1939
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p119",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Criar indicadores próprios por DSEI e por povo/território na saúde indígena, evitando que médias nacionais escondam desigualdades",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1940
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p120",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Fortalecer a participação indígena na definição, no monitoramento e na avaliação das políticas de saúde, respeitando organização social, línguas e práticas culturais",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      719
+     ],
+     "nota": "Respeito à língua e cultura na saúde indígena."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1942
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p121",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Expandir cuidados intermediários, tele-UTI, protocolos de deterioração clínica e reabilitação pós-UTI",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1957
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p122",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Medir a qualidade das UTIs por mortalidade ajustada ao risco, infecção, ventilação mecânica, tempo de permanência, reinternação, tempo até admissão, mobilização precoce e desfecho funcional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1959
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p123",
+   "subtema": "Saúde digital",
+   "proposta": "Adotar nos sistemas de dados em saúde padrões abertos, segurança cibernética, governança, conformidade com a LGPD, registro de acesso e responsabilização clara",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      704,
+      706
+     ],
+     "nota": "Registro nacional com privacidade e controle dos dados pelo cidadão."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      499
+     ],
+     "nota": "LGPD, sigilo médico, protocolos de segurança e consentimento"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      298
+     ],
+     "nota": "RNDS e integração de sistemas interfederativos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1987
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p124",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Incorporar sustentabilidade energética, hídrica e ambiental à modernização hospitalar",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1994
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p125",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Financiar todas as etapas entre pesquisa e produção (prova de conceito, desenvolvimento pré-clínico, lotes piloto, ensaio clínico, registro, escalonamento e incorporação)",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      341,
+      342
+     ],
+     "nota": "CEIS, PDPs, pesquisa e desenvolvimento de IFAs"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2005
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p126",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Compartilhar infraestrutura de pesquisa de alto custo entre instituições, incluindo biobancos, plataformas ômicas, vetores virais, produção celular, manufatura avançada e computação de alto desempenho",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2006
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p127",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Fortalecer a produção nacional de biossimilares e biofármacos, incluindo anticorpos monoclonais, proteínas recombinantes e medicamentos para oncologia, doenças raras, autoimunes e transplantes",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      745
+     ],
+     "nota": "Reduzir dependência externa de insumos via parceria universidade-empresa."
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      325,
+      339,
+      342
+     ],
+     "nota": "Produção nacional de biofármacos, hemoderivados e novos imunoterápicos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2010
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p128",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Tratar Fiocruz/Bio-Manguinhos e Instituto Butantan como âncoras complementares de estratégia nacional de produção, conectadas a universidades e centros de pesquisa para desenvolvimento de novas plataformas",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      341,
+      342
+     ],
+     "nota": "Mobilização de instituições públicas de saúde com universidades e indústria"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2018
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p129",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Expandir a produção de soros, anticorpos monoclonais e outros imunobiológicos estratégicos, com plantas multipropósito capazes de atender demandas regulares e emergenciais",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      339,
+      342
+     ],
+     "nota": "Hemobrás e PDPs para imunobiológicos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2020
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p130",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Criar portfólio tecnológico prospectivo de vacinas prioritárias para o SUS, alinhando vigilância epidemiológica, pesquisa clínica e capacidade industrial",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      342
+     ],
+     "nota": "Plataforma de mRNA para vacinas e terapias"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      629
+     ],
+     "nota": "Incentivo à produção nacional de vacinas e imunização"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      313,
+      342
+     ],
+     "nota": "Incorporação de novas vacinas ao SUS e pesquisa"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2021
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p131",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Estabelecer mesa permanente de negociação estratégica entre Ministério da Saúde, Anvisa, CMED, Conitec, instituições públicas, indústria e representantes do sistema para tecnologias de alto impacto",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2023
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p132",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Integrar o planejamento de registro, precificação, avaliação de tecnologia e preparação de implementação para reduzir tempos mortos sem reduzir o rigor regulatório",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2024
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p133",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Vincular incentivos públicos à indústria a contrapartidas de transferência efetiva de conhecimento, desenvolvimento de fornecedores, pesquisa clínica no Brasil, formação de pessoas e segurança de abastecimento",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      342
+     ],
+     "nota": "PDPs para ampliar absorção tecnológica e indústria nacional"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2029
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p134",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Criar rede nacional de centros de pesquisa clínica do SUS, com contratos, ética, dados e monitoramento mais ágeis e padronizados",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      743,
+      745
+     ],
+     "nota": "Conexão de hospitais universitários e empresas para inovação."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2031
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p135",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Atrair estudos clínicos de fase inicial e de tecnologias avançadas, exigindo desenvolvimento de competências e participação científica nacional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2032
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p136",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Até 2030, estabelecer carteira nacional de produtos estratégicos com metas de nacionalização, ao menos uma rede pública nacional de terapias celulares/gênicas e avaliar 100% das novas incorporações de altíssimo impacto quanto a negociação por risco, desfecho ou transferência tecnológica",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2037
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p137",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Criar programas nacionais de qualificação profissional em emergência, UTI, telessaúde, segurança do paciente, dados e uso responsável de inteligência artificial",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      700,
+      719,
+      725
+     ],
+     "nota": "Capacitação de profissionais para telemedicina, saúde indígena e saúde mental."
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      606,
+      3242,
+      3243
+     ],
+     "nota": "Capacitação de profissionais e incentivos para telessaúde"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2045
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p138",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Comparar unidades de saúde de perfil semelhante para identificar oportunidades de melhoria e direcionar apoio técnico, evitando rankings simplistas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2050
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p139",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Simplificar normas e habilitações e estruturar contratos auditáveis orientados à jornada do paciente, combinando base populacional, vulnerabilidade, capacidade instalada e desempenho",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      346
+     ],
+     "nota": "FNMA com repasses condicionados a desempenho"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2053
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p140",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Até 2030, implantar painel público nacional de desempenho de redes e hospitais estratégicos, ampliar a parcela do financiamento federal associada a qualidade e resultado e adotar plano nacional de força de trabalho com metas regionais e indicadores anuais de vazios assistenciais",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      346
+     ],
+     "nota": "Financiamento federal vinculado a desempenho"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2060
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p141",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Executar o programa de saúde por missões nacionais, cada uma com linha de base, meta, indicador, fonte de dados, periodicidade, responsável institucional e plano federativo pactuado nas comissões intergestores",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2078
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p142",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Realizar em 2027 diagnóstico operacional e linha de base mapeando filas, vazios assistenciais, capacidade produtiva, interoperabilidade, força de trabalho e indicadores de qualidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2079
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p143",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Implantar prioritariamente em 2027-2028 a regulação inteligente, a busca ativa na APS, as redes tempo-dependentes, a saúde da mulher e indígena, as centrais de comando, a interoperabilidade e projetos industriais estratégicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2080
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p144",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Em 2029, expandir modelos que demonstrarem resultado e direcionar investimento para as regiões com maior déficit",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2081
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p145",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Em 2030, realizar avaliação nacional independente de metas, efetividade, eficiência, equidade e sustentabilidade, publicando resultados e plano para o ciclo seguinte",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2082
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p146",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Incorporar a todas as políticas de saúde avaliação de impacto, transparência de dados, participação social, auditoria e mecanismos de correção, com ajuste de metas conforme a linha de base",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2083
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p147",
+   "subtema": "Atenção primária",
+   "proposta": "Reduzir em 20% as internações por condições sensíveis à Atenção Primária e garantir que 100% das equipes tenham estratificação de risco e teleconsultoria",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      592,
+      3282
+     ],
+     "nota": "Redução de internações evitáveis e fortalecimento da APS"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2094
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p148",
+   "subtema": "Urgência, emergência e hospitais",
+   "proposta": "Reduzir em 30% a mortalidade cardiovascular prematura e implantar rotas regionais formais para infarto e AVC em 100% das regiões",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2097
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p149",
+   "subtema": "Populações específicas e territórios remotos",
+   "proposta": "Garantir que 100% dos DSEIs tenham plano assistencial e logístico, referência de média e alta complexidade e painel de indicadores territoriais",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      719
+     ],
+     "nota": "Infraestrutura, logística e referência de média e alta complexidade na saúde indígena."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2117
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p150",
+   "subtema": "Saúde digital",
+   "proposta": "Disponibilizar progressivamente a 100% dos cidadãos o histórico clínico digital essencial interoperável",
+   "n_concorda": 6,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      344
+     ],
+     "nota": "PRONTO como repositório acessível a qualquer tempo"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      702,
+      704,
+      706
+     ],
+     "nota": "Registro nacional de saúde unificado e interoperável."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      499,
+      501
+     ],
+     "nota": "Prontuário eletrônico único vinculado ao CPF e interoperável"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      298
+     ],
+     "nota": "Prontuário único do cidadão via RNDS, com acesso pelo celular"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      595
+     ],
+     "nota": "Digitalização de prontuários e integração dos sistemas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2123
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p151",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Instituir o Comitê Nacional das Missões de Saúde 2027-2030, com participação federativa, técnica e científica, responsável por metas, cronograma e monitoramento",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2159
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p152",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Lançar mapa nacional de vazios assistenciais em APS, oncologia, cardiologia/AVC, saúde mental, obstetrícia de alto risco, UTI, saúde indígena e especialidades críticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2161
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p153",
+   "subtema": "Filas e regulação do acesso",
+   "proposta": "Definir a arquitetura do Sistema Nacional de Acesso e Regulação Inteligente e selecionar as primeiras redes estaduais para implantação",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      333,
+      338,
+      343
+     ],
+     "nota": "ENER como sistema nacional de regulação por risco, com piloto e expansão"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      729
+     ],
+     "nota": "Regulação com IA para filas."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2162
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p154",
+   "subtema": "Saúde digital",
+   "proposta": "Publicar plano nacional de interoperabilidade 2027-2030, com padrões mínimos de troca de dados entre APS, hospitais, laboratórios, farmácia e regulação",
+   "n_concorda": 6,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      341,
+      344
+     ],
+     "nota": "Interoperabilidade entre APS, hospitais, laboratórios, farmácias"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      705,
+      706
+     ],
+     "nota": "Interoperabilidade entre sistemas público e privado."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      499,
+      501
+     ],
+     "nota": "Interoperabilidade entre redes pública e privada"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      297,
+      298
+     ],
+     "nota": "Integração dos sistemas de informação interfederativos"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      595,
+      3236
+     ],
+     "nota": "Integração de sistemas e plataforma nacional única"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2163
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p155",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Reunir Fiocruz, Instituto Butantan, laboratórios públicos, institutos de pesquisa e indústria para selecionar tecnologias estratégicas prioritárias",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      341,
+      342
+     ],
+     "nota": "Articulação de instituições públicas, empresas e universidades no CEIS"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2165
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p156",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Publicar carteira nacional de medicamentos de alto custo, vacinas, imunobiológicos, terapias avançadas e insumos críticos para negociação, nacionalização produtiva ou desenvolvimento tecnológico",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2166
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p157",
+   "subtema": "Medicamentos, insumos e soberania sanitária",
+   "proposta": "Constituir grupo permanente Anvisa-CMED-Conitec-Ministério da Saúde para planejamento coordenado de tecnologias de alto impacto",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2167
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p158",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Pactuar com estados e municípios metas nacionais de saúde da mulher, saúde indígena, infância, vacinação, saúde mental, longevidade, urgência e paciente crítico",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2168
      ],
      "nota": ""
     }
@@ -1870,16 +4049,8 @@
     "texto": "• Planejamento reprodutivo nos termos da legislação brasileira;",
     "pagina": 90
    },
-   "1427": {
-    "texto": "• Prevenção de doenças crônicas;",
-    "pagina": 90
-   },
    "1429": {
     "texto": "• Atenção às diferentes fases da vida;",
-    "pagina": 90
-   },
-   "1430": {
-    "texto": "• Atendimento humanizado.",
     "pagina": 90
    },
    "1432": {
@@ -1934,12 +4105,12 @@
     "texto": "• Moradores de regiões remotas e comunidades rurais.",
     "pagina": 161
    },
-   "3226": {
-    "texto": "Antes da consulta, sistemas inteligentes poderão realizar uma triagem clínica inicial, coletando sintomas, identificando fatores de risco e organizando informações que auxiliem o profissional de saúde.",
+   "3225": {
+    "texto": "A inteligência artificial não substituirá o médico, pelo contrário, será uma poderosa aliada da medicina.",
     "pagina": 162
    },
-   "3227": {
-    "texto": "Esses sistemas contribuirão para:",
+   "3226": {
+    "texto": "Antes da consulta, sistemas inteligentes poderão realizar uma triagem clínica inicial, coletando sintomas, identificando fatores de risco e organizando informações que auxiliem o profissional de saúde.",
     "pagina": 162
    },
    "3228": {
@@ -1950,8 +4121,16 @@
     "texto": "• Priorização dos casos mais graves;",
     "pagina": 162
    },
+   "3230": {
+    "texto": "• Redução das filas de espera;",
+    "pagina": 162
+   },
    "3232": {
     "texto": "• Maior precisão no encaminhamento dos pacientes.",
+    "pagina": 162
+   },
+   "3233": {
+    "texto": "A tecnologia deve reduzir burocracias para que o médico possa dedicar mais tempo ao que realmente importa: cuidar das pessoas.",
     "pagina": 162
    },
    "3236": {
@@ -1972,10 +4151,6 @@
    },
    "3251": {
     "texto": "Enquanto aguardam atendimento, os pacientes terão acesso a conteúdo de educação emocional inspirados na Gestão da Emoção.",
-    "pagina": 163
-   },
-   "3252": {
-    "texto": "Serão disponibilizados:",
     "pagina": 163
    },
    "3253": {
@@ -2054,10 +4229,6 @@
     "texto": "O projeto SOCIEDADE ESTÁ ABRAÇANDO (SEA) propõe a maior estratégia integrada de prevenção do câncer, unindo:",
     "pagina": 166
    },
-   "3340": {
-    "texto": "• Gestão da emoção",
-    "pagina": 166
-   },
    "3346": {
     "texto": "• Comitês regionais",
     "pagina": 166
@@ -2070,16 +4241,8 @@
     "texto": "A experiência do Hospital de Amor servirá como referência para a construção da maior rede nacional de prevenção do câncer já implementada no Brasil.",
     "pagina": 171
    },
-   "3468": {
-    "texto": "O modelo será:",
-    "pagina": 171
-   },
    "3469": {
     "texto": "• Expandido como referência nacional de qualidade;",
-    "pagina": 171
-   },
-   "3470": {
-    "texto": "• Adaptado às diferentes realidades regionais;",
     "pagina": 171
    },
    "3471": {
@@ -2092,10 +4255,6 @@
    },
    "3477": {
     "texto": "Por isso, será criado um programa permanente de educação preventiva, oferecendo diariamente conteúdos simples e cientificamente fundamentados para toda a população.",
-    "pagina": 171
-   },
-   "3478": {
-    "texto": "Cada dia contará com:",
     "pagina": 171
    },
    "3479": {
@@ -2238,6 +4397,10 @@
     "texto": "Aprimorar a política de saúde mental para a juventude é um de nossos compromissos, com foco na Política Nacional de Atenção Psicossocial, na redução de danos e na desconstrução de preconceitos nas comunidades escolares e universitárias. Vamos fortalecer ainda mais a produção cultural das juventudes, reconhecendo e apoiando a produção cultural nas periferias, garantindo acesso livre às comunidades e promovendo a integração entre as diferentes linguagens artísticas e as oportunidades da economia criativa. Queremos participação ainda maior da juventude nos espaços de decisão, para que o Estado se torne ainda mais responsivo às suas demandas.",
     "pagina": 25
    },
+   "288": {
+    "texto": "Avançamos muito, mas o SUS é um sistema que requer contínua evolução para assegurar, de fato, o direito universal à saúde. Este compromisso orientará as políticas a serem implementadas no novo mandato.",
+    "pagina": 34
+   },
    "291": {
     "texto": "Seguiremos mantendo o apoio à expansão e qualificação das equipes de saúde",
     "pagina": 34
@@ -2354,6 +4517,10 @@
     "texto": "Também fortaleceremos o diagnóstico e o acompanhamento de pessoas com TEA e outras neurodivergências, bem como o cuidado psicossocial a mulheres em situação de violência. Ampliaremos os profissionais e as estratégias voltadas às pessoas com problemas relacionados a jogos de apostas.",
     "pagina": 39
    },
+   "339": {
+    "texto": "(CEIS). Trata-se de ação fundamental para a soberania sanitária e tecnológica do Brasil e a ampliação da capacidade de resposta do SUS. Foram assinadas 31 parcerias para desenvolvimento produtivo a partir de 2024, entre as quais para a volta de produção nacional de insulina, e aprovados 54 Programas de Desenvolvimento e Inovação Local. Concluímos a fábrica Hemobrás, que nos coloca rumo a nacionalização completa da produção de hemoderivados, ampliando nossa soberania nesse tipo de insumo.",
+    "pagina": 39
+   },
    "341": {
     "texto": "Econômico-Industrial da Saúde. E, no próximo mandato, seguiremos mobilizando instituições públicas de saúde em articulação com empresas nacionais comprometidas com a inovação e com universidades e institutos de pesquisa.",
     "pagina": 39
@@ -2361,6 +4528,10 @@
    "342": {
     "texto": "Continuaremos aperfeiçoando os instrumentos das PDPs para ampliar a absorção tecnológica, a inovação e o fortalecimento da indústria nacional. Fortaleceremos a pesquisa e o desenvolvimento de insumos farmacêuticos ativos (IFAS) a partir da biodiversidade brasileira, com destaque para o potencial da Amazônia, e ampliaremos o sequenciamento genômico voltado ao estudo de variantes associadas à resistência ou à susceptibilidade a doenças infecciosas e crônicas.",
     "pagina": 39
+   },
+   "345": {
+    "texto": "A saúde é um direito de todos os brasileiros e brasileiras e um investimento estratégico para um Brasil soberano. Nosso compromisso com o fortalecimento do SUS público e universal é inalienável.",
+    "pagina": 40
    }
   },
   "renan-santos": {
@@ -2406,6 +4577,10 @@
    }
   },
   "romeu-zema": {
+   "693": {
+    "texto": "O orçamento da saúde já passa de R$230 bilhões por ano e boa parte desse recurso é mal aplicada. O problema é de gestão: o sistema é dividido entre União, estados e municípios, pouco articulado e com poucos mecanismos de incentivo a resultados.",
+    "pagina": 57
+   },
    "700": {
     "texto": "Investir em infraestrutura e capacitação dos profissionais para atendimento por telemedicina:",
     "pagina": 57
@@ -2589,6 +4764,948 @@
    "792": {
     "texto": "Estruturar um programa nacional que permita identificar, com avaliação médica e diálogo com as famílias, os casos em que a dependência química impede a ressocialização, garantindo a internação involuntária nos termos da legislação e o acompanhamento em comunidades terapêuticas credenciadas e fiscalizadas pelo poder público.",
     "pagina": 64
+   }
+  },
+  "ronaldo-caiado": {
+   "119": {
+    "texto": "• Organizar o SUS para oferecer fila transparente, atendimento no tempo certo e cuidado regionalizado.",
+    "pagina": 7
+   },
+   "1481": {
+    "texto": "12. Saúde regional e cuidado perto das pessoas",
+    "pagina": 66
+   },
+   "1482": {
+    "texto": "Organizar redes interestaduais e macrorregionais de especialidades, oncologia, cardiologia, trauma, saúde materno-infantil e reabilitação. Usar telessaúde, transporte sanitário e carreira federativa para reduzir viagens longas e fixar profissionais no semiárido, interior e periferias metropolitanas.",
+    "pagina": 66
+   },
+   "1528": {
+    "texto": "5. Saúde da população negra",
+    "pagina": 68
+   },
+   "1529": {
+    "texto": "Fortalecer atenção a hipertensão, diabetes, doença falciforme, saúde mental, câncer e mortalidade materna, com protocolos, formação e acesso regional. Combater discriminação no atendimento e melhorar qualidade dos registros de raça e cor.",
+    "pagina": 68
+   },
+   "1609": {
+    "texto": "9. Organizar uma Estratégia de Saúde Amazônica no SUS",
+    "pagina": 71
+   },
+   "1610": {
+    "texto": "Estruturar atenção primária fluvial e itinerante, telemedicina, transporte sanitário aéreo e fluvial, diagnóstico remoto, redes de referência e provimento de profissionais.",
+    "pagina": 71
+   },
+   "1611": {
+    "texto": "Integrar saúde indígena e ribeirinha, vigilância epidemiológica e cuidado relacionado a doenças tropicais, contaminação da água, fumaça, mineração e eventos climáticos.",
+    "pagina": 71
+   },
+   "1612": {
+    "texto": "Ampliar a cooperação logística com as Forças Armadas, universidades, estados e municípios para alcançar comunidades isoladas, sob coordenação do SUS e sem substituir a estrutura civil permanente.",
+    "pagina": 71
+   },
+   "1703": {
+    "texto": "Programa Nacional de Saúde 2027–2030: fortalecer o SUS, reduzir desigualdades, organizar o acesso, prevenir antes de tratar, incorporar ciência e tecnologia e construir autonomia estratégica em saúde.",
+    "pagina": 75
+   },
+   "1704": {
+    "texto": "O SUS será preservado como sistema universal e transformado em uma rede mais preventiva, integrada, digital e orientada por resultados. O cidadão deve saber qual equipe o acompanha, qual é sua prioridade, quanto tempo esperará e qual serviço é responsável por cada etapa. A saúde será organizada por regiões, com atenção primária resolutiva, acesso regulado por risco clínico, especialistas conectados, hospitais avaliados por qualidade e profissionais valorizados.",
+    "pagina": 75
+   },
+   "1708": {
+    "texto": "Preservá-lo é indispensável. Modernizá-lo é urgente. Vamos construir uma agenda nacional de transformação da saúde brasileira para 2027–2030: capaz de cuidar melhor das pessoas, reduzir desigualdades, incorporar inovação e preparar o SUS para o Brasil que já está surgindo.",
+    "pagina": 75
+   },
+   "1743": {
+    "texto": "• Prevenção e antecipação de risco: o sistema deve agir antes da doença e da complicação, fortalecendo promoção da saúde, vacinação, rastreamento baseado em evidências, diagnóstico precoce, controle de fatores de risco e acompanhamento ativo das populações mais vulneráveis.",
+    "pagina": 76
+   },
+   "1744": {
+    "texto": "• Federalismo cooperativo: a União define padrões nacionais, financia prioridades estratégicas, integra informações e induz qualidade; estados e municípios executam de forma regionalizada, respeitando as necessidades de cada território.",
+    "pagina": 76
+   },
+   "1745": {
+    "texto": "• Prioridade clínica e equidade: risco, gravidade, vulnerabilidade, tempo de espera e desigualdades territoriais devem orientar o acesso aos serviços, a regulação e a alocação de investimentos.",
+    "pagina": 76
+   },
+   "1746": {
+    "texto": "• Responsabilidade fiscal e valor em saúde: incorporar tecnologias com evidência, negociar preços, estimular contratos baseados em desempenho, medir desfechos, reduzir desperdícios e direcionar recursos para intervenções de maior impacto sanitário.",
+    "pagina": 76
+   },
+   "1747": {
+    "texto": "• Transparência e gestão por resultados: estabelecer metas públicas, indicadores comparáveis, monitoramento contínuo e avaliação periódica de acesso, qualidade, eficiência e desfechos.",
+    "pagina": 76
+   },
+   "1748": {
+    "texto": "• Ciência, inovação e soberania sanitária: integrar universidades, Fiocruz, Instituto Butantan, hospitais universitários, institutos de pesquisa, laboratórios públicos e indústria em uma rede nacional capaz de transformar conhecimento científico em medicamentos, vacinas, imunobiológicos, terapias avançadas, diagnósticos e tecnologias produzidos no Brasil.",
+    "pagina": 76
+   },
+   "1751": {
+    "texto": "• Integração e continuidade do cuidado: garantir que Atenção Primária, especialistas, hospitais, urgência, reabilitação, assistência farmacêutica e cuidado domiciliar funcionem como partes de uma mesma rede, com informação acompanhando o cidadão ao longo de sua trajetória.",
+    "pagina": 77
+   },
+   "1752": {
+    "texto": "• Humanização e tecnologia a serviço das pessoas: utilizar tecnologia para ampliar acesso, reduzir burocracia, apoiar decisões e devolver tempo aos profissionais e aos pacientes, preservando sempre o julgamento clínico, a autonomia profissional e a relação humana no cuidado.",
+    "pagina": 77
+   },
+   "1755": {
+    "texto": "Ação 1 — Zerar a espera evitável",
+    "pagina": 77
+   },
+   "1756": {
+    "texto": "Criar um Sistema Nacional de Acesso e Regulação Inteligente que substitua progressivamente a fila passiva por uma jornada clínica rastreável. A posição do cidadão não será definida apenas pela data do pedido, mas por gravidade, risco de progressão, impacto do atraso, vulnerabilidade e tempo já transcorrido.",
+    "pagina": 77
+   },
+   "1758": {
+    "texto": "• Integrar consultas especializadas, exames, cirurgias, oncologia, cardiologia, neurologia, reabilitação e procedimentos de alta complexidade em plataformas interoperáveis.",
+    "pagina": 77
+   },
+   "1759": {
+    "texto": "• Adotar critérios nacionais de prioridade clínica e reavaliação dinâmica; pacientes que piorarem terão sua prioridade atualizada.",
+    "pagina": 77
+   },
+   "1760": {
+    "texto": "• Permitir ao cidadão acompanhar situação do pedido, prioridade, prazo estimado e serviço responsável, com canais digitais e não digitais.",
+    "pagina": 77
+   },
+   "1761": {
+    "texto": "Centrais de comando e gestão ativa das agendas",
+    "pagina": 77
+   },
+   "1762": {
+    "texto": "• Acompanhar filas, capacidade ociosa, cancelamentos, absenteísmo, salas cirúrgicas, equipamentos, leitos e distribuição territorial da demanda.",
+    "pagina": 77
+   },
+   "1763": {
+    "texto": "• Usar análise de dados e inteligência artificial como apoio auditável à identificação de gargalos, duplicidades, risco de deterioração e alternativas assistenciais.",
+    "pagina": 77
+   },
+   "1764": {
+    "texto": "• Reaproveitar cancelamentos e vagas ociosas em tempo real, regionalizando a capacidade em vez de limitar o paciente a um único serviço.",
+    "pagina": 77
+   },
+   "1766": {
+    "texto": "• A UBS continuará acompanhando o cidadão até a consulta, exame ou procedimento, com acesso à prioridade e ao plano assistencial.",
+    "pagina": 77
+   },
+   "1767": {
+    "texto": "• Teleconsultoria entre APS e especialista deverá resolver parte dos casos sem encaminhamento presencial e qualificar os encaminhamentos necessários.",
+    "pagina": 77
+   },
+   "1768": {
+    "texto": "Rede regional e contratos orientados a valor",
+    "pagina": 77
+   },
+   "1769": {
+    "texto": "• Oferta regional integrada e contratualização inteligente. Definir carteira de serviços, referências e transporte sanitário por região; mobilizar hospitais públicos, filantrópicos, universitários e privados contratados quando necessário; e combinar pagamento por produção com população, complexidade, acesso, qualidade, desfecho, segurança e eficiência.",
+    "pagina": 77
+   },
+   "1771": {
+    "texto": "Reduzir o tempo de espera nas principais linhas de cuidado eletivas e eliminar espera sem prioridade, sem acompanhamento e sem transparência.",
+    "pagina": 77
+   },
+   "1773": {
+    "texto": "Até 2030, reduzir em pelo menos 50% o tempo mediano das filas prioritárias nas regiões com maior espera, usando 2027 como linha de base; 100% das filas estratégicas com prioridade clínica, rastreabilidade e indicador público.",
+    "pagina": 77
+   },
+   "1777": {
+    "texto": "A Estratégia Saúde da Família deve continuar sendo a principal porta de entrada do SUS, mas precisa evoluir de um modelo centrado em atender quem procura para outro capaz de conhecer sua população, identificar risco e buscar ativamente quem precisa.",
+    "pagina": 78
+   },
+   "1779": {
+    "texto": "• Vincular progressivamente cada cidadão a uma equipe de referência, com histórico longitudinal, estratificação de risco e plano de cuidado quando indicado.",
+    "pagina": 78
+   },
+   "1780": {
+    "texto": "• Busca ativa e Programa Nacional de Crônicos: criar listas nominais e acompanhamento ativo para hipertensão, diabetes, obesidade, alto risco cardiovascular, doença renal, vacinação, câncer, gestação de risco, fragilidade do idoso e pós-alta, com metas clínicas, atividade física, nutrição, adesão ao tratamento e apoio digital.",
+    "pagina": 78
+   },
+   "1781": {
+    "texto": "• Modernizar UBS com conectividade, prontuário interoperável, prescrição eletrônica, telemedicina, ECG conectado, testes rápidos e diagnóstico básico conforme necessidade regional.",
+    "pagina": 78
+   },
+   "1782": {
+    "texto": "• Centro de Comando da Atenção Primária: implantar painéis populacionais municipais e regionais capazes de integrar informações sobre população cadastrada, estratificação de risco, doenças crônicas, prevenção, vacinação, rastreamentos, internações, uso de serviços de emergência e continuidade do cuidado. Esses painéis permitirão identificar territórios com pior controle de hipertensão e diabetes, baixa cobertura vacinal, maior abandono de tratamento ou maior número de internações evitáveis, orientando equipes, recursos e programas para onde houver maior necessidade.",
+    "pagina": 78
+   },
+   "1784": {
+    "texto": "• Criar rede nacional de teleconsultoria para apoiar médicos e enfermeiros da APS.",
+    "pagina": 78
+   },
+   "1785": {
+    "texto": "• Toda alta de paciente de alto risco deverá gerar comunicação eletrônica à equipe territorial, com reconciliação de medicamentos e plano de seguimento.",
+    "pagina": 78
+   },
+   "1786": {
+    "texto": "• Medir APS por controle de doenças, vacinação, diagnóstico precoce, internações evitáveis e mortalidade prematura, não apenas por número de consultas.",
+    "pagina": 78
+   },
+   "1788": {
+    "texto": "• Recursos orientados à necessidade e ao impacto. Considerar vulnerabilidade, vazios assistenciais, vacinação, controle de doenças crônicas, pré-natal, saúde bucal, saúde mental, internações evitáveis, continuidade pós-alta e satisfação do usuário.",
+    "pagina": 78
+   },
+   "1792": {
+    "texto": "Até 2030, 100% das equipes de Saúde da Família com acesso a teleconsultoria e ferramentas de estratificação de risco; reduzir em 20% as internações por condições sensíveis à APS, com metas regionais ajustadas à linha de base de 2027.",
+    "pagina": 78
+   },
+   "1798": {
+    "texto": "• Estratificar risco cardiovascular na APS e intensificar controle de hipertensão, diabetes, dislipidemia, obesidade, tabagismo, doença renal, fibrilação atrial e insuficiência cardíaca.",
+    "pagina": 79
+   },
+   "1799": {
+    "texto": "• Criar busca ativa dos pacientes persistentemente fora de meta e transição estruturada de cuidado após infarto ou AVC.",
+    "pagina": 79
+   },
+   "1801": {
+    "texto": "• Organizar hemodinâmica regional 24/7, ECG conectado no SAMU e trombólise pré-hospitalar onde o acesso à angioplastia não ocorrer no tempo recomendado.",
+    "pagina": 79
+   },
+   "1802": {
+    "texto": "• Expandir Centros de AVC, TeleAVC 24/7 e acesso regional à trombectomia mecânica para pacientes elegíveis.",
+    "pagina": 79
+   },
+   "1803": {
+    "texto": "• Implantar Centrais de Comando Cardiovascular e Neurovascular integrando ambulância, regulação,",
+    "pagina": 79
+   },
+   "1805": {
+    "texto": "• Usar transporte aeromédico em regiões onde a barreira geográfica impedir tratamento dentro da janela terapêutica.",
+    "pagina": 79
+   },
+   "1807": {
+    "texto": "• Se incorporada conforme avaliação regular de tecnologia, estruturar rede regional regulada de angiotomografia coronariana com indicação clínica, qualidade e laudo especializado.",
+    "pagina": 79
+   },
+   "1811": {
+    "texto": "Meta nacional indicativa: reduzir em 30% a mortalidade cardiovascular prematura até 2030; 100% das regiões com rota formalizada para infarto e AVC e 100% dos pacientes elegíveis com estratégia de reperfusão definida segundo protocolo.",
+    "pagina": 79
+   },
+   "1814": {
+    "texto": "Ação 4 — Brasil contra o câncer",
+    "pagina": 80
+   },
+   "1817": {
+    "texto": "• Ampliar vacinação contra HPV, combate ao tabagismo, obesidade, consumo nocivo de álcool e exposições carcinogênicas.",
+    "pagina": 80
+   },
+   "1818": {
+    "texto": "• Migrar do rastreamento oportunístico para programas organizados: identificar população elegível, convocar, realizar exame, acompanhar resultado e concluir investigação.",
+    "pagina": 80
+   },
+   "1819": {
+    "texto": "• Expandir o rastreamento baseado em DNA-HPV e organizar fluxos de mama, colo uterino e colorretal conforme diretrizes nacionais e capacidade instalada.",
+    "pagina": 80
+   },
+   "1821": {
+    "texto": "• Criar categoria regulatória própria para suspeita de câncer e um relógio digital desde a suspeita até diagnóstico e tratamento.",
+    "pagina": 80
+   },
+   "1822": {
+    "texto": "• Assegurar o cumprimento efetivo dos prazos legais já existentes; investigação diagnóstica em até 30 dias quando houver suspeita fundamentada de neoplasia maligna e início do primeiro tratamento em até 60 dias após o diagnóstico, com monitoramento individual da trajetória de cada paciente. O compromisso do próximo governo não será criar prazos, mas fazer os prazos existentes acontecerem na prática e medi-los paciente por paciente.",
+    "pagina": 80
+   },
+   "1823": {
+    "texto": "• Integrar anatomia patológica, telepatologia, imuno-histoquímica, diagnóstico molecular e imagem oncológica em redes regionais.",
+    "pagina": 80
+   },
+   "1824": {
+    "texto": "• Separar cirurgia oncológica das filas eletivas convencionais e monitorar radioterapia como infraestrutura estratégica, com equipamento, equipe, manutenção e regulação regional.",
+    "pagina": 80
+   },
+   "1826": {
+    "texto": "• Incorporar terapias-alvo, imunoterapias e medicina de precisão quando houver benefício clínico relevante, evidência robusta e definição da população elegível.",
+    "pagina": 80
+   },
+   "1827": {
+    "texto": "• Vincular incorporação de terapias de precisão à disponibilidade do biomarcador necessário e, quando adequado, usar negociação de preço e compartilhamento de risco.",
+    "pagina": 80
+   },
+   "1831": {
+    "texto": "Até 2030, 100% dos pacientes com suspeita oncológica relevante rastreáveis por relógio assistencial; cumprimento monitorado dos prazos legais; redução progressiva da proporção de diagnósticos em estágio avançado, com metas específicas por tumor definidas a partir da linha de base de 2027.",
+    "pagina": 80
+   },
+   "1834": {
+    "texto": "Ação 5 — Saúde da mulher ao longo de toda a vida",
+    "pagina": 81
+   },
+   "1835": {
+    "texto": "A saúde da mulher não pode ser reduzida à gestação. A política nacional deverá integrar adolescência, saúde sexual e reprodutiva, maternidade segura, prevenção cardiovascular, câncer, endometriose, saúde mental, climatério, menopausa, saúde óssea e envelhecimento.",
+    "pagina": 81
+   },
+   "1836": {
+    "texto": "Maternidade segura e redução da mortalidade materna",
+    "pagina": 81
+   },
+   "1837": {
+    "texto": "• Classificar risco desde o pré-natal, garantir referência para gestação de alto risco e integrar maternidade, regulação, banco de sangue, UTI materna e transporte.",
+    "pagina": 81
+   },
+   "1838": {
+    "texto": "• Implantar vigilância em tempo real de sinais de gravidade obstétrica, protocolos para hemorragia, hipertensão, sepse e tromboembolismo e revisão de óbitos maternos com plano corretivo.",
+    "pagina": 81
+   },
+   "1839": {
+    "texto": "• Garantir cuidado estruturado no puerpério, incluindo saúde cardiovascular e saúde mental materna.",
+    "pagina": 81
+   },
+   "1841": {
+    "texto": "• Busca ativa para câncer do colo do útero e mama, com jornada completa do exame alterado até biópsia e tratamento.",
+    "pagina": 81
+   },
+   "1842": {
+    "texto": "• Organizar acesso a diagnóstico e tratamento de endometriose, dor pélvica, sangramento uterino anormal e outras condições que frequentemente levam anos até o diagnóstico.",
+    "pagina": 81
+   },
+   "1844": {
+    "texto": "• Criar linha de cuidado para climatério e menopausa na APS, com avaliação individualizada de sintomas, risco cardiovascular, saúde óssea, sono, saúde mental e sexual.",
+    "pagina": 81
+   },
+   "1845": {
+    "texto": "• Incluir risco cardiovascular feminino e prevenção de osteoporose nos protocolos de cuidado ao longo da vida.",
+    "pagina": 81
+   },
+   "1847": {
+    "texto": "• Integrar saúde, assistência social e rede de proteção para identificação e atendimento de mulheres em situação de violência, com fluxos seguros e acesso a cuidado físico e psicológico.",
+    "pagina": 81
+   },
+   "1849": {
+    "texto": "Reduzir mortes evitáveis e garantir cuidado integral em todas as fases da vida.",
+    "pagina": 81
+   },
+   "1851": {
+    "texto": "Meta nacional indicativa: reduzir em 30% a razão de mortalidade materna até 2030; 100% das regiões com referência de alto risco obstétrico e linha de cuidado para endometriose e climatério; ampliar rastreamento organizado de mama e colo uterino com busca ativa e rastreabilidade.",
+    "pagina": 81
+   },
+   "1855": {
+    "texto": "Os primeiros anos de vida concentram oportunidades únicas de prevenção e desenvolvimento. O núcleo intensivo será dos primeiros 2.000 dias, dentro de uma linha de cuidado que acompanhe a criança de forma longitudinal.",
+    "pagina": 82
+   },
+   "1857": {
+    "texto": "• Integrar pré-natal, parto, puerpério, aleitamento, nutrição, vacinação, crescimento, desenvolvimento neuropsicomotor, saúde mental, visão, audição e saúde bucal.",
+    "pagina": 82
+   },
+   "1858": {
+    "texto": "• Criar Passaporte Digital da Criança, integrado ao prontuário nacional, com alertas de vacinação atrasada, ausência em acompanhamento e triagens pendentes.",
+    "pagina": 82
+   },
+   "1859": {
+    "texto": "• Garantir seguimento pós-alta de prematuros e crianças de alto risco e apoio por telepediatria nas regiões sem especialistas suficientes.",
+    "pagina": 82
+   },
+   "1861": {
+    "texto": "• Além de mortalidade infantil, acompanhar desenvolvimento saudável: crescimento, nutrição, vacinação, linguagem, cognição, visão, audição e saúde emocional.",
+    "pagina": 82
+   },
+   "1862": {
+    "texto": "• Buscar ativamente crianças com atraso de desenvolvimento e organizar acesso precoce a diagnóstico, estimulação e reabilitação.",
+    "pagina": 82
+   },
+   "1866": {
+    "texto": "Até 2030, 100% das regiões com suporte pediátrico especializado presencial ou por telessaúde; plano de seguimento para 100% dos prematuros de maior risco; redução adicional e sustentada da mortalidade infantil e das desigualdades regionais, com linha de base de 2027.",
+    "pagina": 82
+   },
+   "1872": {
+    "texto": "• Implantar avaliação funcional e de vulnerabilidade na APS para pessoas idosas acompanhadas regularmente.",
+    "pagina": 83
+   },
+   "1873": {
+    "texto": "• Criar programa nacional de prevenção da fragilidade, quedas e fraturas, com exercício, nutrição, revisão de medicamentos, visão, audição e avaliação domiciliar.",
+    "pagina": 83
+   },
+   "1874": {
+    "texto": "• Implantar linha de cuidado para demência em todas as regiões, com teleconsultoria e referência especializada.",
+    "pagina": 83
+   },
+   "1876": {
+    "texto": "• Garantir avaliação de reabilitação após AVC, fratura, cirurgia, internação prolongada ou doença crítica.",
+    "pagina": 83
+   },
+   "1877": {
+    "texto": "• Atenção domiciliar, deficiência e continuidade do cuidado: expandir atenção domiciliar para idosos dependentes, ampliar apoio às pessoas com deficiência e integrar saúde e assistência social no plano de cuidado quando houver perda de autonomia.",
+    "pagina": 83
+   },
+   "1878": {
+    "texto": "• Criar revisão estruturada de polifarmácia e suporte aos cuidadores.",
+    "pagina": 83
+   },
+   "1880": {
+    "texto": "• Adotar mobilização precoce, prevenção de delirium, preservação do sono, nutrição, redução de dispositivos desnecessários e planejamento de alta.",
+    "pagina": 83
+   },
+   "1882": {
+    "texto": "Medir anos de vida saudável e capacidade funcional, e não somente longevidade.",
+    "pagina": 83
+   },
+   "1884": {
+    "texto": "Até 2030, 90% dos idosos acompanhados regularmente pela APS com avaliação funcional atualizada; plano individual para 100% dos frágeis ou de alto risco; 90% dos elegíveis após fratura de fragilidade com avaliação de osteoporose e prevenção secundária.",
+    "pagina": 83
+   },
+   "1892": {
+    "texto": "• Fortalecer a saúde mental na Atenção Primária: capacitar as equipes para reconhecer e manejar condições comuns, identificar sinais de gravidade e garantir acesso rápido ao cuidado especializado.",
+    "pagina": 84
+   },
+   "1893": {
+    "texto": "• Expandir a RAPS conforme necessidade regional: mapear vazios assistenciais de CAPS, CAPSi, CAPS AD, CAPS",
+    "pagina": 84
+   },
+   "1894": {
+    "texto": "III e leitos de saúde mental em hospitais gerais e direcionar a expansão para os territórios de maior necessidade.",
+    "pagina": 84
+   },
+   "1895": {
+    "texto": "• Garantir continuidade entre os serviços: criar fluxos formais entre APS, CAPS, urgência e emergência, psiquiatria, psicologia, hospitais e assistência social, com plano terapêutico e equipe de referência definidos para os pacientes de maior risco.",
+    "pagina": 84
+   },
+   "1896": {
+    "texto": "• Cuidar depois da crise: todo paciente de alto risco atendido em emergência ou hospital deverá ter encaminhamento estruturado, comunicação com a rede responsável e acompanhamento após a alta.",
+    "pagina": 84
+   },
+   "1898": {
+    "texto": "A política deverá prever estratégias específicas para:",
+    "pagina": 84
+   },
+   "1899": {
+    "texto": "• crianças e adolescentes;",
+    "pagina": 84
+   },
+   "1900": {
+    "texto": "• gestantes e puérperas;",
+    "pagina": 84
+   },
+   "1901": {
+    "texto": "• idosos;",
+    "pagina": 84
+   },
+   "1902": {
+    "texto": "• pessoas com depressão e ansiedade;",
+    "pagina": 84
+   },
+   "1903": {
+    "texto": "• pessoas com transtornos mentais graves;",
+    "pagina": 84
+   },
+   "1904": {
+    "texto": "• pessoas com problemas relacionados ao uso de álcool e outras drogas;",
+    "pagina": 84
+   },
+   "1905": {
+    "texto": "• populações em situação de maior vulnerabilidade social.",
+    "pagina": 84
+   },
+   "1908": {
+    "texto": "Na saúde, a prioridade será: prevenir o início e o uso problemático → identificar precocemente pessoas em risco → oferecer tratamento baseado em evidências → garantir atendimento adequado às crises → assegurar continuidade do cuidado e reinserção social.",
+    "pagina": 84
+   },
+   "1910": {
+    "texto": "• Prevenção: ampliar ações educativas e preventivas, especialmente entre crianças e adolescentes, com participação das escolas, famílias, Atenção Primária e redes de proteção.",
+    "pagina": 84
+   },
+   "1911": {
+    "texto": "• Cuidado regionalizado: garantir referência para álcool e outras drogas em todas as regiões de saúde, integrando",
+    "pagina": 84
+   },
+   "1912": {
+    "texto": "APS, CAPS AD, emergência e hospital.",
+    "pagina": 84
+   },
+   "1913": {
+    "texto": "• Populações prioritárias: desenvolver estratégias específicas para adolescentes, gestantes, pessoas em situação de rua, pessoas privadas de liberdade e famílias afetadas pelo uso problemático de substâncias.",
+    "pagina": 84
+   },
+   "1914": {
+    "texto": "• Redução de danos e prevenção de intoxicações: incorporar estratégias de redução de danos, vigilância epidemiológica, monitoramento de novas substâncias e fortalecimento da capacidade de resposta das emergências.",
+    "pagina": 84
+   },
+   "1915": {
+    "texto": "• Integração com outras políticas públicas: articular saúde, assistência social, educação, justiça e segurança pública.",
+    "pagina": 84
+   },
+   "1920": {
+    "texto": "A política de saúde mental não será avaliada apenas pelo número de consultas ou serviços existentes. Deverão ser monitorados: tempo até primeiro acolhimento → acesso territorial → continuidade do cuidado → reinternações → recorrência de atendimentos de emergência → abandono do tratamento → funcionalidade → mortalidade.",
+    "pagina": 85
+   },
+   "1921": {
+    "texto": "Também deverá ser criado Painel Nacional de Saúde Mental e Álcool e Outras Drogas, com indicadores nacionais, estaduais e regionais.",
+    "pagina": 85
+   },
+   "1925": {
+    "texto": "Até 2030, 100% das regiões com desenho completo da RAPS; 100% das equipes de Saúde da Família com acesso a protocolo e apoio especializado; pelo menos 90% dos pacientes de alto risco atendidos em emergência com seguimento estruturado.",
+    "pagina": 85
+   },
+   "1928": {
+    "texto": "Ação 9 — Saúde indígena com equidade, território e respeito cultural",
+    "pagina": 86
+   },
+   "1931": {
+    "texto": "• Planejar força de trabalho, infraestrutura, medicamentos, transporte e conectividade segundo população, distância, perfil epidemiológico e sazonalidade de cada território.",
+    "pagina": 86
+   },
+   "1932": {
+    "texto": "• Garantir equipes multidisciplinares estáveis, agentes indígenas de saúde e educação permanente com competência intercultural.",
+    "pagina": 86
+   },
+   "1933": {
+    "texto": "• Usar telessaúde como apoio clínico e educacional, preservando a presença territorial e a relação de confiança com as comunidades.",
+    "pagina": 86
+   },
+   "1935": {
+    "texto": "• Criar fluxos regulatórios específicos e rastreáveis entre DSEI, município, estado, hospitais de referência e casa de saúde indígena (CASAI), evitando que o paciente fique perdido ao sair do território.",
+    "pagina": 86
+   },
+   "1936": {
+    "texto": "• Estruturar transporte sanitário terrestre, fluvial e aeromédico conforme geografia e gravidade, com planejamento para emergências obstétricas, pediátricas, infecciosas e trauma.",
+    "pagina": 86
+   },
+   "1937": {
+    "texto": "• Garantir contrarreferência após alta, com plano terapêutico compreensível e retorno à equipe de origem.",
+    "pagina": 86
+   },
+   "1939": {
+    "texto": "• Foco em saúde materno-infantil, vacinação, tuberculose e outras infecções, doenças crônicas, saúde mental, nutrição, saúde bucal, água segura e vigilância ambiental.",
+    "pagina": 86
+   },
+   "1940": {
+    "texto": "• Criar indicadores próprios por DSEI e povo/território quando tecnicamente adequado, evitando que médias nacionais escondam desigualdades.",
+    "pagina": 86
+   },
+   "1942": {
+    "texto": "• Fortalecer participação indígena na definição, monitoramento e avaliação das políticas, respeitando organização social, línguas, práticas culturais e direitos assegurados.",
+    "pagina": 86
+   },
+   "1946": {
+    "texto": "Até 2030, 100% dos DSEIs com plano assistencial e logístico atualizado, conectividade mínima nos pontos estratégicos e referência formal para média/alta complexidade; painel nacional de acesso, vacinação, saúde materno-infantil e principais desfechos indígenas com metas territoriais anuais.",
+    "pagina": 86
+   },
+   "1950": {
+    "texto": "A emergência precisa funcionar como rede, não como conjunto de portas isoladas. SAMU, UPA, emergência hospitalar, centro cirúrgico, UTI, transferência e reabilitação devem compartilhar informação, prioridade e capacidade em tempo real.",
+    "pagina": 87
+   },
+   "1952": {
+    "texto": "• Buscar cobertura populacional universal do SAMU e padronizar medição nacional do tempo-resposta.",
+    "pagina": 87
+   },
+   "1953": {
+    "texto": "• Conectar ambulâncias prioritárias para transmissão de ECG, sinais vitais, teleconsultoria e aviso prévio ao hospital.",
+    "pagina": 87
+   },
+   "1955": {
+    "texto": "• Implantar fila dinâmica por prioridade clínica, com atualização de gravidade e visibilidade de leitos, equipes e capacidade real de funcionamento.",
+    "pagina": 87
+   },
+   "1956": {
+    "texto": "• Criar Centrais de Comando de Emergência e Terapia Intensiva nas macrorregiões e painel nacional para crises, desastres, epidemias e transferências interestaduais.",
+    "pagina": 87
+   },
+   "1957": {
+    "texto": "• Expandir cuidados intermediários, tele-UTI, protocolos de deterioração clínica e reabilitação pós-UTI.",
+    "pagina": 87
+   },
+   "1959": {
+    "texto": "• Medir mortalidade ajustada ao risco, infecção, ventilação mecânica, tempo de permanência, reinternação, tempo até admissão, mobilização precoce e desfecho funcional.",
+    "pagina": 87
+   },
+   "1960": {
+    "texto": "Rede Nacional de Trauma",
+    "pagina": 87
+   },
+   "1961": {
+    "texto": "• Trauma, queimados e reabilitação integrados. Articular SAMU, Corpo de Bombeiros, UPAs, emergências, centros cirúrgicos, UTIs e reabilitação, com foco em motociclistas, politrauma e queimados e com protocolos, regulação e indicadores nacionais de desfecho funcional.",
+    "pagina": 87
+   },
+   "1965": {
+    "texto": "Até 2030, 100% de cobertura populacional do SAMU; Centrais de Comando em todas as macrorregiões; reduzir em pelo menos 50% o tempo mediano de espera por UTI nas regiões com maior demora, tomando 2027 como linha de base.",
+    "pagina": 87
+   },
+   "1970": {
+    "texto": "PNI forte e busca ativa",
+    "pagina": 88
+   },
+   "1971": {
+    "texto": "• Atingir e sustentar altas coberturas das vacinas prioritárias, com busca ativa de atrasados pela APS, vacinação em escolas e estratégias móveis em territórios remotos.",
+    "pagina": 88
+   },
+   "1972": {
+    "texto": "• Integrar registro nominal de vacinação ao prontuário, permitindo identificar bolsões de baixa cobertura em tempo real.",
+    "pagina": 88
+   },
+   "1974": {
+    "texto": "• Fortalecer vigilância genômica, laboratorial e epidemiológica para arboviroses, influenza, covid-19, doenças emergentes e ameaças zoonóticas.",
+    "pagina": 88
+   },
+   "1975": {
+    "texto": "• Manter estoques estratégicos, contratos de contingência e capacidade de ampliar rapidamente produção de vacinas, insumos, diagnósticos e medicamentos essenciais.",
+    "pagina": 88
+   },
+   "1979": {
+    "texto": "Até 2030, atingir e sustentar pelo menos 95% de cobertura nas vacinas prioritárias em que essa meta for tecnicamente indicada, com redução dos municípios abaixo da meta e plano nacional de preparação para emergências atualizado anualmente.",
+    "pagina": 88
+   },
+   "1985": {
+    "texto": "Infraestrutura Nacional de Dados em Saúde",
+    "pagina": 89
+   },
+   "1986": {
+    "texto": "• Construir identidade clínica digital e interoperabilidade entre APS, especialista, laboratório, hospital, UTI, farmácia, reabilitação e vigilância.",
+    "pagina": 89
+   },
+   "1987": {
+    "texto": "• Adotar padrões abertos, segurança cibernética, governança, LGPD, registro de acesso e responsabilização clara.",
+    "pagina": 89
+   },
+   "1988": {
+    "texto": "• Transformar prontuários em instrumentos ativos de cuidado, com alertas para risco, rastreamento, vacinação, retorno pós-alta e abandono de tratamento.",
+    "pagina": 89
+   },
+   "1989": {
+    "texto": "Aplicativo nacional do cidadão e canais inclusivos",
+    "pagina": 89
+   },
+   "1990": {
+    "texto": "• Serviços digitais centrados no cidadão. Reunir vacinas, consultas, exames, receitas, resultados, posição na fila, alertas e remarcação em um canal nacional autenticado, preservando atendimento presencial e alternativas para pessoas com baixa conectividade ou letramento digital.",
+    "pagina": 89
+   },
+   "1991": {
+    "texto": "Hospitais públicos inteligentes",
+    "pagina": 89
+   },
+   "1992": {
+    "texto": "• Modernizar hospitais estratégicos com gestão de leitos, centro cirúrgico, farmácia, estoques, manutenção, controle de infecção, previsão de demanda, apoio à decisão e planejamento de alta, melhorar a eficiência e reduzir custos.",
+    "pagina": 89
+   },
+   "1993": {
+    "texto": "• Adotar IA somente com validação, transparência, supervisão profissional, avaliação de impacto e auditoria.",
+    "pagina": 89
+   },
+   "1994": {
+    "texto": "• Incorporar sustentabilidade energética, hídrica e ambiental à modernização hospitalar.",
+    "pagina": 89
+   },
+   "1998": {
+    "texto": "Até 2030, 100% dos cidadãos com acesso progressivo a histórico clínico digital interoperável essencial e 100% dos hospitais estratégicos do SUS integrados a sistemas digitais de gestão, segurança e avaliação de desempenho.",
+    "pagina": 89
+   },
+   "2003": {
+    "texto": "• Conectar universidades públicas, hospitais universitários, Fiocruz/Bio-Manguinhos, Instituto Butantan, laboratórios farmacêuticos oficiais, institutos de ciência e tecnologia, Embrapii, CNPEM, empresas nacionais e parceiros privados em uma rede permanente de pesquisa, desenvolvimento, ensaio clínico, produção e escalonamento industrial.",
+    "pagina": 90
+   },
+   "2004": {
+    "texto": "• Criar chamadas e missões tecnológicas nacionais com problema definido pelo SUS: vacina, anticorpo monoclonal, biossimilar, terapia celular, terapia gênica, diagnóstico molecular, radiofármaco, dispositivo, software médico ou insumo crítico.",
+    "pagina": 90
+   },
+   "2005": {
+    "texto": "• Financiar a travessia entre bancada e fábrica: prova de conceito, desenvolvimento pré-clínico, lotes piloto, ensaio clínico, registro, escalonamento e incorporação.",
+    "pagina": 90
+   },
+   "2006": {
+    "texto": "• Compartilhar infraestrutura de alto custo entre instituições, inclusive biobancos, plataformas ômicas, vetores virais, produção celular, caracterização de biológicos, manufatura avançada e computação de alto desempenho.",
+    "pagina": 90
+   },
+   "2008": {
+    "texto": "• Definir lista nacional de produtos estratégicos de alto impacto orçamentário e alto risco de desabastecimento, priorizando produção local e diversificação de fornecedores.",
+    "pagina": 90
+   },
+   "2009": {
+    "texto": "• Ampliar parcerias para desenvolvimento produtivo, encomendas tecnológicas e acordos de transferência de tecnologia com cláusulas verificáveis de domínio produtivo, capacitação nacional, cronograma e entrega de Insumo Farmacêutico Ativo (IFA) ou etapas críticas no país.",
+    "pagina": 90
+   },
+   "2010": {
+    "texto": "• Fortalecer biossimilares e biofármacos nacionais, incluindo anticorpos monoclonais, proteínas recombinantes e medicamentos para oncologia, doenças raras, autoimunes e transplantes.",
+    "pagina": 90
+   },
+   "2011": {
+    "texto": "• Utilizar o poder de compra do SUS para contratos plurianuais quando gerarem redução de preço, estabilidade de fornecimento, nacionalização produtiva e ganho tecnológico.",
+    "pagina": 90
+   },
+   "2013": {
+    "texto": "• Criar Rede Nacional de Terapias Avançadas, com centros acadêmicos e assistenciais credenciados para pesquisa, produção, infusão e seguimento de terapia celular e gênica.",
+    "pagina": 90
+   },
+   "2014": {
+    "texto": "• Estruturar plataformas públicas de CAR-T e outras terapias celulares, com produção em ambiente de boas práticas e expansão progressiva para indicações com evidência clínica robusta.",
+    "pagina": 90
+   },
+   "2015": {
+    "texto": "• Apoiar plataformas nacionais de vetores virais, plasmídeos, edição gênica, biomarcadores, sequenciamento e diagnóstico molecular, reduzindo dependência de insumos importados.",
+    "pagina": 90
+   },
+   "2016": {
+    "texto": "• Criar registro nacional de terapias avançadas para desfechos clínicos, segurança, duração de resposta e custo total do cuidado.",
+    "pagina": 90
+   },
+   "2017": {
+    "texto": "Vacinas e imunobiológicos: autonomia estratégica",
+    "pagina": 90
+   },
+   "2018": {
+    "texto": "• Tratar Fiocruz/Bio-Manguinhos e Instituto Butantan como âncoras complementares de uma estratégia nacional, conectadas às universidades e centros de pesquisa para desenvolvimento de novas plataformas.",
+    "pagina": 90
+   },
+   "2019": {
+    "texto": "• Garantir capacidade nacional para pesquisa, produção de IFA, formulação, envase, controle de qualidade e rápida adaptação de vacinas em emergências.",
+    "pagina": 90
+   },
+   "2020": {
+    "texto": "• Expandir produção de soros, anticorpos monoclonais e outros imunobiológicos estratégicos, com plantas multipropósito capazes de responder a demandas regulares e emergenciais.",
+    "pagina": 90
+   },
+   "2021": {
+    "texto": "• Criar portfólio tecnológico prospectivo de vacinas prioritárias para o SUS, alinhando vigilância epidemiológica, pesquisa clínica e capacidade industrial.",
+    "pagina": 90
+   },
+   "2023": {
+    "texto": "• Estabelecer mesa permanente de negociação estratégica entre Ministério da Saúde, Anvisa, CMED, Conitec, instituições públicas, indústria e representantes do sistema para tecnologias de alto impacto.",
+    "pagina": 90
+   },
+   "2024": {
+    "texto": "• Integrar, sempre que juridicamente e tecnicamente possível, planejamento de registro, precificação, avaliação de tecnologia e preparação de implementação, reduzindo tempos mortos sem reduzir rigor regulatório.",
+    "pagina": 90
+   },
+   "2025": {
+    "texto": "• Adotar acordos de compartilhamento de risco e pagamento por desempenho para terapias de alto custo quando houver incerteza relevante de efetividade ou duração do benefício, com dados auditáveis e regras de reembolso/desconto.",
+    "pagina": 90
+   },
+   "2028": {
+    "texto": "• Negociar preço considerando volume do SUS, comparação internacional, custo total da jornada, alternativas terapêuticas, investimento local e compromisso de geração de capacidade tecnológica.",
+    "pagina": 91
+   },
+   "2029": {
+    "texto": "• Vincular incentivos públicos a contrapartidas: transferência efetiva de conhecimento, desenvolvimento de fornecedores, pesquisa clínica no Brasil, formação de pessoas e segurança de abastecimento.",
+    "pagina": 91
+   },
+   "2031": {
+    "texto": "• Criar rede nacional de centros de pesquisa clínica do SUS, com contratos, ética, dados e monitoramento mais ágeis e padronizados.",
+    "pagina": 91
+   },
+   "2032": {
+    "texto": "• Atrair estudos de fase inicial e de tecnologias avançadas, sem transformar o Brasil apenas em recrutador de pacientes; exigir desenvolvimento de competências e participação científica nacional.",
+    "pagina": 91
+   },
+   "2033": {
+    "texto": "• Usar ensaios pragmáticos e dados de mundo real para avaliar efetividade após incorporação, apoiando desinvestimento quando a tecnologia não entregar o valor esperado.",
+    "pagina": 91
+   },
+   "2037": {
+    "texto": "Até 2030: carteira nacional de produtos estratégicos com metas de nacionalização; pelo menos uma rede pública nacional operacional para terapias celulares/gênicas; ampliação mensurável da produção nacional de vacinas, imunobiológicos, biossimilares e medicamentos de alto custo; 100% das novas incorporações de altíssimo impacto avaliadas quanto à possibilidade de negociação por risco, desfecho ou transferência tecnológica.",
+    "pagina": 91
+   },
+   "2043": {
+    "texto": "• Planejar nacionalmente necessidades de médicos, enfermagem, multiprofissionais, especialistas, intensivistas, emergencistas, saúde mental, oncologia, geriatria, pediatria, saúde indígena, tecnologia e gestão.",
+    "pagina": 92
+   },
+   "2044": {
+    "texto": "• Expandir formação e residência onde houver vazios assistenciais, com incentivos para fixação territorial, carreira acadêmico-assistencial e educação permanente.",
+    "pagina": 92
+   },
+   "2045": {
+    "texto": "• Criar programas nacionais de qualificação em emergência, UTI, telessaúde, segurança do paciente, dados e uso responsável de IA.",
+    "pagina": 92
+   },
+   "2047": {
+    "texto": "• Proteção e desenvolvimento dos profissionais. Fortalecer educação permanente, segurança no trabalho, apoio à saúde mental e prevenção de violência e burnout, além de exigir campos de prática, preceptoria e avaliação de qualidade na formação.",
+    "pagina": 92
+   },
+   "2049": {
+    "texto": "• Criar Painel Nacional de Eficiência do SUS com mortalidade ajustada, espera, permanência, reinternação, infecção, ocupação, produtividade, custo, experiência do paciente e desfechos.",
+    "pagina": 92
+   },
+   "2050": {
+    "texto": "• Comparar unidades de perfil semelhante para identificar oportunidades de melhoria e direcionar apoio técnico, não para produzir rankings simplistas.",
+    "pagina": 92
+   },
+   "2051": {
+    "texto": "• Migrar progressivamente de pagamento exclusivamente por produção para modelos que também considerem população, complexidade, qualidade, eficiência e resultados.",
+    "pagina": 92
+   },
+   "2053": {
+    "texto": "• Regras simples, responsabilidades claras e contratos auditáveis. Simplificar habilitação e normas, combinar base populacional, vulnerabilidade, capacidade instalada e desempenho e estruturar contratos orientados à jornada real do paciente, ao acesso, à qualidade, à segurança e ao resultado.",
+    "pagina": 92
+   },
+   "2055": {
+    "texto": "• Reforçar capacidade de avaliação econômica e de impacto orçamentário; monitorar tecnologias após incorporação e rever financiamento quando benefício real não se confirmar.",
+    "pagina": 92
+   },
+   "2056": {
+    "texto": "• Reduzir judicialização evitável por meio de incorporação mais previsível, protocolos transparentes, negociação de alto custo e acesso organizado.",
+    "pagina": 92
+   },
+   "2060": {
+    "texto": "Até 2030, painel público nacional de desempenho para redes e hospitais estratégicos; parcela crescente do financiamento federal associada a qualidade e resultado; plano nacional de força de trabalho com metas regionais e indicadores anuais de vazios assistenciais.",
+    "pagina": 92
+   },
+   "2064": {
+    "texto": "Pessoas com doenças raras e suas famílias enfrentam uma jornada marcada por diagnóstico tardio, concentração regional dos centros de referência, incerteza de acesso e alta judicialização. A resposta nacional combinará coordenação assistencial, avaliação tecnológica adequada a populações pequenas, registro de desfechos e negociação responsável de terapias de alto custo.",
+    "pagina": 93
+   },
+   "2066": {
+    "texto": "• Coordenação nacional e cadastro. Organizar centros de referência, diagnóstico, tratamento multidisciplinar, aconselhamento, reabilitação e telemedicina, reduzindo o tempo até o diagnóstico e as desigualdades regionais.",
+    "pagina": 93
+   },
+   "2068": {
+    "texto": "• Avaliação tecnológica proporcional e transparente. Considerar desfechos relevantes ao paciente, história natural, dados de vida real, análise multicritério, impacto orçamentário e revisão periódica, preservando rigor técnico, independência e transparência.",
+    "pagina": 93
+   },
+   "2070": {
+    "texto": "• Acesso sustentável e geração de evidências. Usar pagamento por desempenho para terapias de alto custo quando adequado, registrar resultados, negociar em escala, evitar interrupções de tratamento e fortalecer triagem neonatal, genômica, medicina de precisão e produção nacional.",
+    "pagina": 93
+   },
+   "2074": {
+    "texto": "Até 2030, cadastro e fluxo nacional implantados, centros de referência articulados regionalmente, indicadores públicos de tempo até o diagnóstico e registro de desfechos para terapias de alto custo elegíveis.",
+    "pagina": 93
+   },
+   "2078": {
+    "texto": "O programa será executado por missões nacionais, cada uma com linha de base, meta, indicador, fonte de dados, periodicidade, responsável institucional e plano federativo. A União deverá coordenar padrões nacionais e financiamento estratégico; estados organizarão redes regionais e alta complexidade; municípios fortalecerão APS, vigilância e execução local. As comissões intergestores serão centrais na pactuação.",
+    "pagina": 94
+   },
+   "2079": {
+    "texto": "• 2027 — diagnóstico operacional e linha de base: mapear filas, vazios assistenciais, capacidade produtiva, interoperabilidade, força de trabalho e indicadores de qualidade.",
+    "pagina": 94
+   },
+   "2080": {
+    "texto": "• 2027–2028 — implantação prioritária: regulação inteligente, busca ativa na APS, redes tempo-dependentes, saúde da mulher e indígena, centrais de comando, interoperabilidade e projetos industriais estratégicos.",
+    "pagina": 94
+   },
+   "2081": {
+    "texto": "• 2029 — expansão e correção de desigualdades: ampliar modelos que demonstraram resultado e direcionar investimento para regiões com maior déficit.",
+    "pagina": 94
+   },
+   "2082": {
+    "texto": "• 2030 — avaliação nacional independente: medir metas, efetividade, eficiência, equidade e sustentabilidade; publicar resultados e plano para o ciclo seguinte.",
+    "pagina": 94
+   },
+   "2083": {
+    "texto": "Toda política deverá incorporar avaliação de impacto, transparência de dados, participação social, auditoria e mecanismos de correção. Metas deverão ser ajustadas quando a linha de base oficial revelar inviabilidade técnica ou, ao contrário, oportunidade de ambição maior.",
+    "pagina": 94
+   },
+   "2091": {
+    "texto": "Reduzir em ≥50% o tempo mediano nas regiões de maior espera; 100% das filas estratégicas com prioridade clínica e rastreabilidade.",
+    "pagina": 95
+   },
+   "2094": {
+    "texto": "Reduzir em 20% internações por condições sensíveis à APS; 100% das equipes com estratificação de risco e teleconsultoria.",
+    "pagina": 95
+   },
+   "2097": {
+    "texto": "Meta indicativa de redução de 30% da mortalidade cardiovascular prematura; rotas regionais formais para infarto e AVC em 100% das regiões.",
+    "pagina": 95
+   },
+   "2100": {
+    "texto": "100% dos casos suspeitos prioritários com relógio assistencial; redução mensurável do diagnóstico tardio dos tumores prioritários.",
+    "pagina": 95
+   },
+   "2103": {
+    "texto": "Meta indicativa de redução de 30% da mortalidade materna; referência de alto risco e linhas de endometriose/climatério em todas as regiões.",
+    "pagina": 95
+   },
+   "2106": {
+    "texto": "Seguimento de 100% dos prematuros de maior risco; redução sustentada da mortalidade infantil e desigualdade territorial.",
+    "pagina": 95
+   },
+   "2108": {
+    "texto": "Vacinação ≥95% de cobertura nas vacinas prioritárias para as quais essa meta é indicada, com busca ativa nominal.",
+    "pagina": 95
+   },
+   "2111": {
+    "texto": "RAPS organizada em 100% das regiões; 90% dos pacientes de alto risco pós-emergência com seguimento estruturado.",
+    "pagina": 95
+   },
+   "2114": {
+    "texto": "90% dos idosos acompanhados na APS com avaliação funcional; plano de cuidado para 100% dos frágeis/alto risco.",
+    "pagina": 95
+   },
+   "2117": {
+    "texto": "100% dos DSEIs com plano assistencial/logístico, referência de média/alta complexidade e painel de indicadores territoriais.",
+    "pagina": 95
+   },
+   "2120": {
+    "texto": "100% de cobertura populacional do SAMU; reduzir em ≥50% espera mediana por UTI nas regiões mais críticas.",
+    "pagina": 95
+   },
+   "2123": {
+    "texto": "Histórico clínico digital essencial interoperável disponível progressivamente para 100% dos cidadãos.",
+    "pagina": 95
+   },
+   "2126": {
+    "texto": "100% dos hospitais estratégicos do SUS integrados a gestão digital, indicadores de qualidade e segurança.",
+    "pagina": 95
+   },
+   "2129": {
+    "texto": "Aumentar participação nacional em vacinas, imunobiológicos, biossimilares e medicamentos estratégicos, com carteira e metas públicas de nacionalização.",
+    "pagina": 95
+   },
+   "2132": {
+    "texto": "Rede pública nacional operacional de terapia celular/gênica, com centros credenciados, registro de desfechos e capacidade produtiva nacional.",
+    "pagina": 95
+   },
+   "2135": {
+    "texto": "100% das novas tecnologias de altíssimo impacto avaliadas para negociação de preço, compartilhamento de risco e/ou transferência tecnológica.",
+    "pagina": 95
+   },
+   "2138": {
+    "texto": "Rede nacional integrando universidades, hospitais universitários, Fiocruz, Butantan e ICTs em missões tecnológicas do SUS.",
+    "pagina": 95
+   },
+   "2141": {
+    "texto": "Painel nacional de qualidade e eficiência e incorporação progressiva de resultados aos mecanismos de financiamento.",
+    "pagina": 95
+   },
+   "2144": {
+    "texto": "Plano nacional de necessidades e vazios profissionais com metas regionais de formação, provimento e retenção.",
+    "pagina": 95
+   },
+   "2147": {
+    "texto": "Relatório anual público de execução das missões, com linha de base, meta, resultado, desigualdade regional e correções de rota.",
+    "pagina": 95
+   },
+   "2150": {
+    "texto": "Cadastro e fluxo nacional implantados; centros de referência articulados por região; redução mensurável do tempo até o diagnóstico e uso de acordos de risco compartilhado nas terapias elegíveis.",
+    "pagina": 95
+   },
+   "2159": {
+    "texto": "• Instituir o Comitê Nacional das Missões de Saúde 2027–2030, com participação federativa, técnica e científica, responsável por metas, cronograma e monitoramento.",
+    "pagina": 96
+   },
+   "2160": {
+    "texto": "• Iniciar o censo nacional das filas estratégicas e publicar metodologia única para medir tempo de espera, prioridade clínica e capacidade assistencial.",
+    "pagina": 96
+   },
+   "2161": {
+    "texto": "• Lançar o mapa nacional de vazios assistenciais em APS, oncologia, cardiologia/AVC, saúde mental, obstetrícia de alto risco, UTI, saúde indígena e especialidades críticas.",
+    "pagina": 96
+   },
+   "2162": {
+    "texto": "• Definir a arquitetura do Sistema Nacional de Acesso e Regulação Inteligente e selecionar as primeiras redes estaduais para implantação.",
+    "pagina": 96
+   },
+   "2163": {
+    "texto": "• Publicar o plano de interoperabilidade 2027–2030, com padrões mínimos de troca de dados entre APS, hospitais, laboratórios, farmácia e regulação.",
+    "pagina": 96
+   },
+   "2164": {
+    "texto": "• Criar a Aliança Nacional de Ciência e Produção em Saúde, reunindo universidades, hospitais universitários,",
+    "pagina": 96
+   },
+   "2165": {
+    "texto": "Fiocruz, Instituto Butantan, laboratórios públicos, institutos e indústria para selecionar tecnologias estratégicas prioritárias.",
+    "pagina": 96
+   },
+   "2166": {
+    "texto": "• Publicar a primeira carteira de medicamentos de alto custo, vacinas, imunobiológicos, terapias avançadas e insumos críticos para negociação, nacionalização produtiva ou desenvolvimento tecnológico.",
+    "pagina": 96
+   },
+   "2167": {
+    "texto": "• Constituir grupo permanente Anvisa–CMED–Conitec–Ministério da Saúde para planejar de forma coordenada tecnologias de alto impacto, preservando competências regulatórias e avaliação baseada em evidências.",
+    "pagina": 96
+   },
+   "2168": {
+    "texto": "• Pactuar com estados e municípios as metas nacionais de saúde da mulher, saúde indígena, infância, vacinação, saúde mental, longevidade, urgência e paciente crítico.",
+    "pagina": 96
+   },
+   "2169": {
+    "texto": "• Criar o Painel Público Saúde 2030, com linha de base, responsáveis, cronograma e atualização periódica das metas nacionais.",
+    "pagina": 96
+   },
+   "2170": {
+    "texto": "COMPROMISSO: preservar o SUS e fazê-lo funcionar para cada brasileiro, com prevenção, prioridade clínica, atendimento no tempo certo, cuidado regionalizado, profissionais valorizados, inovação responsável e dinheiro público acompanhado por resultado.",
+    "pagina": 96
    }
   }
  }

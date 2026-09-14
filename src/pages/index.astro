@@ -1,21 +1,17 @@
 ---
 /**
  * A home: a porta de entrada da comparação de programas — os temas de
- * Presidente. Governador entra quando houver comparação de alguma UF
- * (`menu: true` em src/lib/cargos.mjs). Sem chat: o produto é a comparação,
+ * Presidente. Governador tem a sua seção, pelo menu do cabeçalho. Sem chat: o produto é a comparação,
  * tema a tema, dos programas registrados no TSE.
  */
 import Base from '../layouts/Base.astro';
 import GradeTemas from '../components/GradeTemas.astro';
-import GradeUfs from '../components/GradeUfs.astro';
 import Busca from '../components/Busca.astro';
-import { CARGOS_NO_MENU } from '../lib/cargos.mjs';
 import { comparacao, resumoDoEscopo } from '../lib/comparacao-dados.mjs';
 
 const resumo = resumoDoEscopo('presidente');
 const candidatos = resumo.length ? comparacao('presidente', null, resumo[0].id).candidatos : [];
 const totalPropostas = resumo.reduce((n, r) => n + r.propostas, 0);
-const porUfNoMenu = CARGOS_NO_MENU.filter((c) => c.porUF);
 ---
 <Base title="Eleições 2026 - Compare os programas de governo"
   description="O que cada candidato de 2026 registrou no programa de governo, tema a tema: onde os programas convergem, onde divergem e sobre o que calam. Com o trecho de cada programa.">
@@ -33,14 +29,6 @@ const porUfNoMenu = CARGOS_NO_MENU.filter((c) => c.porUF);
     <h2 id="busque">Busque por tópico</h2>
     <Busca semRotulo rotuladoPor="busque" />
   </section>
-
-  {porUfNoMenu.map((cargo) => (
-    <section class="bloco">
-      <h2>{cargo.nome}</h2>
-      <p class="explica">Os programas são por estado. Escolha o seu.</p>
-      <GradeUfs cargo={cargo} />
-    </section>
-  ))}
 
   <style>
     .hero-home { margin-bottom: 1.6rem; }

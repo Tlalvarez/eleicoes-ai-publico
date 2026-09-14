@@ -120,7 +120,7 @@ test('consulta sem assunto no corpus é dita como tal: nenhum resultado direto',
 test('a busca degrada para lexical sem vetor da consulta', () => {
   const r = busca(estado, 'creche', null);
   assert.equal(r.modo, 'lexical');
-  assert.ok(r.propostas.some((p) => p.id === 'educacao/p71'));
+  assert.ok(r.propostas.some((p) => p.id === 'educacao/p4'));
   const h = ranqueia(estado, 'creche', unitario(vetoresConsulta.vetores.creche));
   assert.equal(h.modo, 'hibrido');
 });

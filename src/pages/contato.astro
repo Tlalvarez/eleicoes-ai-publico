@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+// Fale conosco: o canal de contato e de correção. Texto no estilo da
+// metodologia. O endereço vem de src/lib/contato.mjs.
+import { EMAIL_CONTATO as email } from '../lib/contato.mjs';
+const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
+---
+<Base title="Fale conosco"
+  description="Como falar com o eleicoes.ai ou apontar um erro numa comparação.">
+  <div class="prose">
+    <h1>Fale conosco</h1>
+    <p class="lead">
+      Escreva para <a href={`mailto:${email}`}><strong>{email}</strong></a>.
+    </p>
+
+    <h2>Para apontar um erro</h2>
+    <ul>
+      <li>Mande o endereço da página, o tema e a proposta.</li>
+      <li>Diga o que está errado. Por exemplo: um resumo que não bate com o trecho do programa, um "propõe o contrário" que não se sustenta, ou um candidato que deveria estar numa proposta e não está.</li>
+      <li>As correções entram no <a href={`${repo}/commits/main`} rel="noopener noreferrer">histórico público de mudanças</a>.</li>
+      <li>Se preferir, abra um registro público no <a href={`${repo}/issues`} rel="noopener noreferrer">GitHub</a>. Isso pede uma conta e fica visível a todos.</li>
+    </ul>
+  </div>
+</Base>

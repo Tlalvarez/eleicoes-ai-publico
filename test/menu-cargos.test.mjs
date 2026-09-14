@@ -8,18 +8,21 @@ import { CARGOS, CARGOS_NO_MENU } from '../src/lib/cargos.mjs';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const base = readFileSync(`${ROOT}/src/layouts/Base.astro`, 'utf8');
 
-test('sem menu enquanto só presidente está no ar; a lista de cargos continua sendo a autoridade', () => {
-  assert.doesNotMatch(base, /<nav class="main"/);
-  assert.doesNotMatch(base, /menu-aberto/);
+test('menu por cargo: Presidente e Governador, vindos da lista de cargos', () => {
+  assert.match(base, /<nav class="main" aria-label="Cargos">/);
+  assert.match(base, /CARGOS_NO_MENU\.map/);
+  assert.doesNotMatch(base, /menu-aberto|menu-caixa|menu-botao/);
   // só os cargos do Executivo: são os que registram programa de governo no TSE
   assert.deepEqual(CARGOS.map((c) => c.nome), ['Presidente', 'Governador']);
-  // governador fica fora da home até haver comparação de alguma UF (13/09)
-  assert.deepEqual(CARGOS_NO_MENU.map((c) => c.nome), ['Presidente']);
+  assert.deepEqual(CARGOS_NO_MENU.map((c) => c.nome), ['Presidente', 'Governador']);
   assert.equal(CARGOS.find((c) => c.slug === 'presidente').href, '/presidente');
 });
 
-test('o cabeçalho só tem a marca: nenhum link de seção', () => {
-  for (const href of ['/candidato', '/acervo', '/senador', '/governador', '/presidente']) assert.doesNotMatch(base, new RegExp(`href="${href}"`));
+test('o menu marca a seção atual: Presidente na home e em /presidente/*, Governador em /governador*', () => {
+  // Presidente leva à home, que é a porta dele
+  assert.match(base, /const destino = c\.porUF \? c\.href : '\/'/);
+  assert.match(base, /caminhoPublico === '\/' \|\| caminhoPublico\.startsWith\(c\.href\)/);
+  assert.match(base, /aria-current=\{atual \? 'page' : undefined\}/);
   for (const rotulo of ['>Candidatos<', '>Acervo<', '>Senador<']) assert.ok(!base.includes(rotulo), rotulo);
 });
 

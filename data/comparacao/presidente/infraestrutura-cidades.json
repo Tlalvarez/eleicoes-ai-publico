@@ -11,9 +11,9 @@
   "desenvolvimento_regional"
  ],
  "origem": {
-  "arquivo": "infraestrutura-cidades-5.json",
-  "gerado_em": "2026-09-13T08:39:43Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "infraestrutura-cidades-6.json",
+  "gerado_em": "2026-09-14T06:50:00Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -55,21 +55,78 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Ampliar concessões e parcerias público-privadas como instrumento central para financiar e executar a infraestrutura",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Ampliar o investimento em infraestrutura, elevando-o em direção a patamares próximos de 4% do PIB",
    "n_concorda": 5,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      97,
+      307
+     ],
+     "nota": "Condiciona o aumento do investimento estatal a reforma administrativa e fiscal prévia"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      319,
+      321,
+      322
+     ],
+     "nota": "Ênfase em portfólio e capital privado"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1037,
+      1041
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      457,
+      463
+     ],
+     "nota": "Via nova edição do Novo PAC"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      771,
+      772
+     ],
+     "nota": "Meta de R$ 900 bilhões em quatro anos"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Ampliar concessões e parcerias público-privadas como instrumento central de investimento em infraestrutura",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       308
      ],
-     "nota": "Inclui novo regime de autorização ferroviária"
+     "nota": ""
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -78,22 +135,15 @@
       245,
       246
      ],
-     "nota": "Conceder todos os ativos viáveis; PPP onde o mercado não chega"
+     "nota": ""
     },
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      766
+      1038,
+      1068
      ],
-     "nota": "Estratégia apoiada na iniciativa privada"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      463,
-      467
-     ],
-     "nota": "Concessões articuladas com obras públicas no Novo PAC"
+     "nota": "Calendário permanente de leilões via PPI"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -102,14 +152,29 @@
       686
      ],
      "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      766
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      463,
+      467
+     ],
+     "nota": "Concessões combinadas com obras públicas e arrendamentos portuários"
     }
    }
   },
   {
-   "id": "p2",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Modernizar e revisar os marcos regulatórios e legais dos setores de infraestrutura para facilitar investimentos",
-   "n_concorda": 2,
+   "id": "p3",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Modernizar e aprimorar os marcos regulatórios setoriais da infraestrutura para facilitar o investimento privado",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -121,7 +186,7 @@
       339,
       340
      ],
-     "nota": "Inclui modernizar Leis de Concessões e PPPs e marcos de ferrovias e hidrovias"
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -129,46 +194,70 @@
       766
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Elevar o patamar de investimento em infraestrutura como proporção do PIB",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      97,
-      307
-     ],
-     "nota": "Meta de passar de 2% para ao menos 4% do PIB, condicionada a reforma fiscal"
     },
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      771,
-      772
+      1063
      ],
-     "nota": "R$ 900 bilhões em quatro anos"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      457,
-      463
-     ],
-     "nota": "Via expansão do Novo PAC"
+     "nota": "Inclui AIR/ARR e sandbox regulatório"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Criar novos mecanismos de financiamento e mitigação de risco para projetos de infraestrutura (project finance, garantias, securitização, mercado de capitais)",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Fortalecer a autonomia e a capacidade técnica das agências reguladoras",
    "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      341,
+      343,
+      344,
+      347,
+      348
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1063
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Institucionalizar mecanismos consensuais de solução de controvérsias em contratos de infraestrutura (mediação, arbitragem, dispute boards)",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      337,
+      338
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1063
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Ampliar o financiamento privado de longo prazo para infraestrutura, com mercado de capitais, garantias e mitigação de riscos",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -178,46 +267,29 @@
       326,
       327
      ],
-     "nota": "Reduzir dependência de bancos públicos federais"
+     "nota": "Reduzir dependência de bancos públicos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1070,
+      1075
+     ],
+     "nota": "BNDES como estruturador; atrair fundos de pensão e capital estrangeiro"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       766
      ],
-     "nota": "Fundo lastreado em securitização de ativos da União e BNDES só para obras no Brasil"
+     "nota": "Fundo lastreado em securitização de ativos e imóveis da União"
     }
    }
   },
   {
-   "id": "p5",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Construir uma carteira/portfólio nacional de projetos de infraestrutura com cronograma previsível, apoiando estados e municípios na estruturação",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      319,
-      321,
-      322
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      457,
-      459
-     ],
-     "nota": "Via planos nacional e setoriais de logística e Novo PAC"
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Simplificar e acelerar o licenciamento ambiental e a governança de projetos para destravar obras",
+   "id": "p7",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Simplificar e acelerar o licenciamento ambiental de obras de infraestrutura",
    "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
@@ -228,18 +300,19 @@
       332,
       333
      ],
-     "nota": "Aplicar a nova Lei Geral do Licenciamento e criar regime de Projetos de Interesse Nacional"
+     "nota": "Regime de Projetos de Interesse Nacional com tramitação prioritária"
     },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       313
      ],
-     "nota": "Integração formal de EVTEA e EIA desde a pré-viabilidade"
+     "nota": "Integração de EVTEA e EIA desde a pré-viabilidade"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
+      889,
       2224
      ],
      "nota": ""
@@ -247,47 +320,179 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Fortalecer a governança institucional da infraestrutura: agências reguladoras autônomas, coordenação com órgãos de controle e ministério unificado",
+   "id": "p8",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Instituir planejamento nacional de infraestrutura de longo prazo, com carteira única de projetos priorizados por critérios técnicos",
+   "n_concorda": 4,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1047,
+      1049
+     ],
+     "nota": "Horizonte de 30 anos e instância técnica independente"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      321,
+      322,
+      345,
+      346
+     ],
+     "nota": "Via fortalecimento do PPI"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      457,
+      459
+     ],
+     "nota": "Revisão dos planos nacional e setoriais de logística"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      689
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Retomar ou dar destinação definitiva às obras públicas paralisadas",
    "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1061
+     ],
+     "nota": "Programa nacional de triagem com decisão obrigatória e prazo"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      97
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Priorizar a manutenção e conservação dos ativos de infraestrutura já existentes, com contratos por desempenho",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1051
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Reunificar o Ministério da Infraestrutura, concentrando planejamento e execução dos modais em uma única pasta",
+   "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      341,
-      343,
-      344,
-      345,
-      346,
-      347,
-      348,
       350,
       351
      ],
-     "nota": "Inclui reunificar o Ministério da Infraestrutura e robustecer o PPI"
-    },
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Capacitar tecnicamente estados e municípios para elaborar, estruturar e fiscalizar projetos de infraestrutura",
+   "n_concorda": 4,
+   "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       309
      ],
-     "nota": "Foco em capacitar engenheiros e órgãos municipais"
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      322
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1058,
+      1068
+     ],
+     "nota": "Também amplia autonomia dos entes para definir prioridades"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      393
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Transporte e logística",
-   "proposta": "Expandir e modernizar a malha ferroviária nacional, incluindo corredores estruturantes como FIOL e Ferrogrão",
-   "n_concorda": 5,
+   "id": "p13",
+   "subtema": "Infraestrutura e investimento",
+   "proposta": "Incorporar critérios de resiliência climática e sustentabilidade ao planejamento e à contratação de obras de infraestrutura",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1085
+     ],
+     "nota": "Inclui segurança cibernética de infraestruturas críticas"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      700
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      406,
+      407
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Transportes e logística",
+   "proposta": "Expandir e modernizar a malha ferroviária nacional",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
+      308,
       315
      ],
-     "nota": "Meta de 40 mil km de malha; FIOL, Ferrogrão, Alcântara-Açailândia, Transoceânica"
+     "nota": "Meta mínima de 40 mil km de malha; novo regime de autorização"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -295,7 +500,14 @@
       357,
       358
      ],
-     "nota": "Prioriza FICO, FIOL e Ferrogrão e autorizações/short lines"
+     "nota": "Autorizações, short lines e direito de passagem"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      463
+     ],
+     "nota": "Novos leilões e repactuação de contratos"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -303,49 +515,148 @@
       772,
       773
      ],
-     "nota": "Destravar Ferrogrão, Transnordestina e Trem do Nordeste"
+     "nota": ""
     },
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      463
+      521,
+      1077
      ],
-     "nota": "Leilões de novos projetos e repactuação de contratos"
+     "nota": ""
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       689
      ],
-     "nota": "Dentro de programa nacional de integração logística"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p9",
-   "subtema": "Transporte e logística",
-   "proposta": "Expandir a capacidade e a eficiência do sistema portuário",
-   "n_concorda": 5,
+   "id": "p15",
+   "subtema": "Transportes e logística",
+   "proposta": "Executar a Ferrogrão como obra prioritária",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": "Início imediato das obras"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      358
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      772
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      521
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Transportes e logística",
+   "proposta": "Concluir a Ferrovia de Integração Oeste-Leste (FIOL)",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      358
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      521,
+      1472
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Transportes e logística",
+   "proposta": "Concluir e ampliar o escopo da Transnordestina",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      773,
+      870
+     ],
+     "nota": "Ampliar para Paraíba e Rio Grande do Norte"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1472
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Transportes e logística",
+   "proposta": "Implantar uma malha ferroviária de passageiros ligando capitais do Nordeste (Trem do Nordeste)",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      773,
+      870
+     ],
+     "nota": "1.400 km ligando sete capitais"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Transportes e logística",
+   "proposta": "Expandir a capacidade e a eficiência do sistema portuário nacional",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       316
      ],
-     "nota": "Foco em Norte e Nordeste: Alcântara, Ilhéus, Itaqui e frota naval"
+     "nota": "Foco no Norte e Nordeste e modernização da frota naval"
     },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       359,
       360
-     ],
-     "nota": "Ampliar participação privada na gestão portuária"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      772
      ],
      "nota": ""
     },
@@ -356,27 +667,55 @@
      ],
      "nota": "Novos arrendamentos e concessão de canais de acesso"
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1472
+     ],
+     "nota": ""
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       689
      ],
      "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      772
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Transporte e logística",
-   "proposta": "Ampliar e melhorar a infraestrutura aeroportuária, com atenção aos aeroportos regionais",
-   "n_concorda": 5,
+   "id": "p20",
+   "subtema": "Transportes e logística",
+   "proposta": "Ampliar a infraestrutura aeroportuária, com atenção aos aeroportos regionais",
+   "n_concorda": 4,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       317
      ],
-     "nota": "Prioridade à conectividade aérea do Norte"
+     "nota": "Prioridade à conectividade do Norte"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      464
+     ],
+     "nota": "Incentivo a novas rotas aéreas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1472
+     ],
+     "nota": ""
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -385,73 +724,14 @@
       367
      ],
      "nota": "Via avanço das concessões aeroportuárias"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      464
-     ],
-     "nota": "Foco em aeroportos regionais e incentivo a novas rotas"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      772
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      689
-     ],
-     "nota": ""
     }
    }
   },
   {
-   "id": "p11",
-   "subtema": "Transporte e logística",
-   "proposta": "Implantar um programa nacional de integração logística multimodal para reduzir custos de transporte",
+   "id": "p21",
+   "subtema": "Transportes e logística",
+   "proposta": "Desenvolver as hidrovias e a navegação interior como corredor estratégico de transporte",
    "n_concorda": 4,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      689
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      772
-     ],
-     "nota": "Corredores Logísticos Inteligentes do Centro-Oeste aos portos"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      457,
-      459
-     ],
-     "nota": "Revisão de planos nacional e setoriais de logística"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      97,
-      314
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Transporte e logística",
-   "proposta": "Desenvolver a infraestrutura hidroviária e a navegação interior",
-   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -466,7 +746,15 @@
      "blocos": [
       774
      ],
-     "nota": "Cita a Hidrovia do Tapajós com diálogo com comunidades"
+     "nota": "Cita a Hidrovia do Tapajós"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      521,
+      1077
+     ],
+     "nota": "Manutenção permanente das hidrovias e cabotagem"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -478,30 +766,16 @@
    }
   },
   {
-   "id": "p13",
-   "subtema": "Transporte e logística",
-   "proposta": "Modernizar e ampliar a infraestrutura rodoviária federal",
-   "n_concorda": 4,
+   "id": "p22",
+   "subtema": "Transportes e logística",
+   "proposta": "Modernizar a gestão da infraestrutura rodoviária federal, com concessões e contratos por desempenho",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       362,
       363
-     ],
-     "nota": "Contratos por desempenho e tecnologias inteligentes"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2168
-     ],
-     "nota": "Duplicação das principais rodovias"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      772
      ],
      "nota": ""
     },
@@ -511,129 +785,128 @@
       463
      ],
      "nota": "Manter ritmo das concessões rodoviárias"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      772
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Transporte e logística",
-   "proposta": "Criar polos comerciais e de serviços às margens das rodovias, com áreas de descanso e estrutura para empreendedores, via PPP",
+   "id": "p23",
+   "subtema": "Transportes e logística",
+   "proposta": "Duplicar as principais rodovias do país",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2168
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Transportes e logística",
+   "proposta": "Implantar polos comerciais e de serviços para empreendedores e viajantes ao longo das rodovias, por meio de PPPs",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       2162,
-      2163,
       2187,
-      2188,
-      2189,
-      2190,
-      2191,
-      2192,
-      2193,
-      2194,
       2221,
-      2222,
-      2223,
-      2226,
-      2227,
-      2228,
-      2229,
-      2230
+      2223
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Mobilidade urbana",
-   "proposta": "Apoiar e cofinanciar a expansão de sistemas de transporte coletivo de alta capacidade (metrôs, trens urbanos, VLTs, BRTs)",
-   "n_concorda": 3,
+   "id": "p25",
+   "subtema": "Transportes e logística",
+   "proposta": "Rebalancear a matriz de transportes, reduzindo a dependência do modal rodoviário em favor de ferrovias, hidrovias, cabotagem e terminais intermodais",
+   "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      364,
-      365
-     ],
-     "nota": "Política nacional coordenada pelo Ministério da Infraestrutura"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      776
-     ],
-     "nota": "Bancos públicos priorizam metrô e trilhos"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      404
-     ],
-     "nota": "Articulado à política industrial nacional"
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Mobilidade urbana",
-   "proposta": "Renovar e eletrificar as frotas de transporte coletivo urbano",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      404
+      1077
      ],
      "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      776
-     ],
-     "nota": "Ônibus elétricos e a biocombustíveis"
     }
    }
   },
   {
-   "id": "p17",
-   "subtema": "Mobilidade urbana",
-   "proposta": "Planejar o desenvolvimento urbano de modo a reduzir distâncias e tempos de deslocamento, integrando moradia e infraestrutura",
+   "id": "p26",
+   "subtema": "Transportes e logística",
+   "proposta": "Criar corredores logísticos integrados de escoamento da produção até os portos",
    "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      776
+      772
      ],
-     "nota": "Contratos que conciliam moradia e infraestrutura"
+     "nota": "Corredores Logísticos Inteligentes, do Centro-Oeste aos portos"
     },
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      796,
-      797
+      521
      ],
-     "nota": "Adensamento em áreas centrais já estruturadas"
+     "nota": "Programa decenal para a logística do agronegócio e armazenagem"
     },
-    "lula": {
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      388,
-      403
+      689
      ],
-     "nota": "Reforma urbana integrando habitação, mobilidade e uso do solo"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p18",
-   "subtema": "Saneamento básico",
-   "proposta": "Universalizar o acesso à água tratada e ao esgotamento sanitário",
-   "n_concorda": 4,
+   "id": "p27",
+   "subtema": "Transportes e logística",
+   "proposta": "Atualizar a metodologia da tabela de pisos mínimos do frete rodoviário",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1077
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Transportes e logística",
+   "proposta": "Viabilizar uma ferrovia transoceânica de integração continental",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Saneamento e resíduos",
+   "proposta": "Acelerar a universalização do acesso à água tratada e ao esgotamento sanitário",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -643,14 +916,16 @@
       570,
       571
      ],
-     "nota": "Via regionalização, concessões e PPPs, cumprindo o Novo Marco"
+     "nota": "Via regionalização, concessões e PPPs"
     },
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      740
+      122,
+      1081,
+      1145
      ],
-     "nota": "Acelerar concessões e garantir aplicação do Marco Legal; atenção ao saneamento rural"
+     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
@@ -659,21 +934,90 @@
      ],
      "nota": "Apoio a estados e municípios, priorizando periferias"
     },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      740
+     ],
+     "nota": "Acelerar concessões e atenção ao saneamento rural"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       697,
       1919
      ],
-     "nota": "Cumprir o Marco Legal do Saneamento como prioridade nacional"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Saneamento básico",
-   "proposta": "Melhorar a gestão de resíduos sólidos e eliminar os lixões a céu aberto",
-   "n_concorda": 3,
+   "id": "p30",
+   "subtema": "Saneamento e resíduos",
+   "proposta": "Garantir a plena aplicação do Novo Marco Legal do Saneamento e suas metas para 2033",
+   "n_concorda": 4,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      740
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      372,
+      571
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      697
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1081
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Saneamento e resíduos",
+   "proposta": "Fortalecer a ANA como reguladora nacional do saneamento, com normas de referência de aplicação uniforme",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      352,
+      353,
+      354
+     ],
+     "nota": "Condiciona acesso a recursos federais à observância das normas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1081
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Saneamento e resíduos",
+   "proposta": "Encerrar os lixões a céu aberto e melhorar a gestão de resíduos sólidos",
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -690,6 +1034,13 @@
      ],
      "nota": "Programa Lixão Zero"
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1145
+     ],
+     "nota": "Logística reversa, reciclagem e inclusão de catadores"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -700,26 +1051,9 @@
    }
   },
   {
-   "id": "p20",
-   "subtema": "Saneamento básico",
-   "proposta": "Fortalecer a ANA como coordenadora nacional da regulação do saneamento, condicionando acesso a recursos federais às suas normas de referência",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      352,
-      353,
-      354
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Saneamento básico",
-   "proposta": "Garantir água em todas as escolas públicas até 2030",
+   "id": "p33",
+   "subtema": "Saneamento e resíduos",
+   "proposta": "Garantir água tratada em todas as escolas públicas até 2030",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
@@ -732,19 +1066,19 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Executar um programa nacional de regularização fundiária urbana com entrega de títulos de propriedade às famílias",
-   "n_concorda": 5,
+   "id": "p34",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Ampliar a regularização fundiária urbana, entregando títulos de propriedade às famílias",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      671,
       672,
+      673,
       678
      ],
-     "nota": "Amplia a REURB via Marco Nacional da Desfavelização; título individual obrigatório"
+     "nota": "Título de desfavelização como mortgage de 50 anos subsidiado"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -752,14 +1086,23 @@
       798,
       799
      ],
-     "nota": "Programa federal de apoio técnico a estados e municípios, urbano e rural"
+     "nota": "Programa federal de apoio técnico a estados e municípios"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       738
      ],
-     "nota": "Prioriza áreas consolidadas e título no nome da mulher"
+     "nota": "Prioriza áreas consolidadas e título em nome da mulher"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      523,
+      1837,
+      1839
+     ],
+     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
@@ -769,21 +1112,35 @@
      ],
      "nota": "Via Periferia Viva e Imóvel da Gente"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      523,
-      1837,
-      1839
+      1404
      ],
-     "nota": "Acelerar via REURB com cooperação federativa e cartórios"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p23",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Usar drones, satélites e georreferenciamento em cadastro fundiário nacional integrado para acelerar a titulação",
+   "id": "p35",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Estabelecer meta numérica de regularização fundiária de moradias",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1846,
+      1847
+     ],
+     "nota": "5 milhões de moradias em dez anos"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Criar cadastro/mapa fundiário nacional integrado, com uso de drones, satélites e georreferenciamento",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
@@ -791,7 +1148,7 @@
      "blocos": [
       674
      ],
-     "nota": "Cadastro Fundiário Unificado Nacional com certificação online"
+     "nota": "Cadastro Fundiário Unificado Nacional com emissão online"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -800,45 +1157,36 @@
       1841,
       1842
      ],
-     "nota": "Mapa Nacional da Regularização Fundiária, com supervisão humana"
+     "nota": "Mapa Nacional da Regularização Fundiária com supervisão humana"
     }
    }
   },
   {
-   "id": "p24",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Estabelecer meta quantificada de regularização de moradias em dez anos",
-   "n_concorda": 2,
+   "id": "p37",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Manter e ampliar o Minha Casa Minha Vida para todas as faixas de renda, com foco nas famílias de baixa renda",
+   "n_concorda": 1,
    "posicoes": {
-    "augusto-cury": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      1846,
-      1847
+      397
      ],
-     "nota": "5 milhões de moradias em dez anos, 500 mil por ano"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      671,
-      683
-     ],
-     "nota": "Desfavelização integral das 12.348 favelas em dez anos"
+     "nota": "Inclui Compra Assistida e Reforma Casa Brasil"
     }
    }
   },
   {
-   "id": "p25",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Reformular o Minha Casa Minha Vida para priorizar imóveis em áreas já estruturadas e dotadas de serviços",
+   "id": "p38",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Reformular o programa habitacional federal para priorizar imóveis em áreas já dotadas de infraestrutura e serviços, em vez de conjuntos periféricos",
    "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
+      762,
       800,
-      801,
       802
      ],
      "nota": ""
@@ -848,79 +1196,54 @@
      "blocos": [
       677
      ],
-     "nota": "Redirecionar recursos da construção periférica para compra de imóveis e desfavelização"
+     "nota": "Redireciona recursos do MCMV para aquisição de imóveis prontos e desfavelização"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      141,
       397
      ],
-     "nota": "Compra Assistida e uso de áreas centrais da União"
+     "nota": "Uso de áreas da União em regiões centrais para moradias do MCMV"
     }
    }
   },
   {
-   "id": "p26",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Manter e ampliar um grande programa federal de financiamento da casa própria com metas de unidades e juros baixos",
-   "n_concorda": 2,
+   "id": "p39",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Substituir o programa habitacional atual pelo Casa Verde e Amarela, com meta de 2,5 milhões de residências e juros reduzidos",
+   "n_concorda": 1,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      397
-     ],
-     "nota": "Manter e ampliar o MCMV para todas as faixas, com foco na baixa renda"
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       737
      ],
-     "nota": "Retomar o Casa Verde e Amarela com meta de 2,5 milhões de residências"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Destinar imóveis e terrenos da União à política habitacional por meio de fundo imobiliário público",
+   "id": "p40",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Destinar imóveis e terrenos da União a políticas de habitação e equipamentos públicos, por meio de fundo imobiliário público",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       141,
-      144,
-      397
+      144
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Apoiar municípios na revisão de planos diretores para remover restrições de zoneamento e permitir adensamento urbano",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      587,
-      588,
-      796,
-      797
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Ampliar moradia de interesse social para pessoas em situação de rua via aluguel social e modelo housing first",
-   "n_concorda": 1,
+   "id": "p41",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Ampliar a moradia de interesse social por meio de aluguel/locação social",
+   "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -928,39 +1251,23 @@
       789,
       790
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Apoiar a reforma e melhoria habitacional de moradias existentes",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      397
-     ],
-     "nota": "Ampliar o Reforma Casa Brasil"
+     "nota": "Modelo housing first para pessoas em situação de rua"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      1926,
-      1957,
-      1958
+      1404,
+      1405
      ],
-     "nota": ""
+     "nota": "Prioriza famílias com crianças, mulheres vítimas de violência, idosos"
     }
    }
   },
   {
-   "id": "p31",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Investir na urbanização das favelas e periferias, levando infraestrutura básica, drenagem, pavimentação e equipamentos públicos",
-   "n_concorda": 3,
+   "id": "p42",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Investir na urbanização de favelas e comunidades, com infraestrutura básica, drenagem, contenção de encostas e equipamentos públicos",
+   "n_concorda": 4,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -968,75 +1275,69 @@
       398,
       401
      ],
-     "nota": "Novas rodadas de seleção do Periferia Viva"
+     "nota": "Continuidade e novas rodadas do Periferia Viva"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       1917,
       1918,
-      1919,
       1921,
       1922,
-      1925,
-      1928,
+      1926,
       1929,
-      1936
+      1936,
+      1957
      ],
-     "nota": "Comunidade 4.0, com diagnóstico por território e remoções excepcionais"
+     "nota": "Urbanização 4.0, com remoções excepcionais"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       738
      ],
-     "nota": "Urbanização de áreas degradadas via PPPs"
+     "nota": "Urbanização de áreas degradadas com PPPs"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1404,
+      1464
+     ],
+     "nota": ""
     },
     "renan-santos": {
      "posicao": "discorda",
      "blocos": [
+      665,
       671
      ],
-     "nota": "Rejeita explicitamente a urbanização de favelas tipo Favela-Bairro em favor da desfavelização"
+     "nota": "Rejeita explicitamente o modelo de urbanização de favelas em favor da desfavelização integral"
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Extinguir a favela como modalidade de moradia, convertendo todas as comunidades em bairros formais com mistura social e serviços públicos obrigatórios",
+   "id": "p43",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Executar a desfavelização integral do país em dez anos, com marco legal federal próprio e conversão das favelas em bairros formais",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
+      104,
       671,
-      678,
+      672,
       683
-     ],
-     "nota": "Desfavelização integral em dez anos, com venda de parte das unidades a preço de mercado"
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Criar título de propriedade financiado de longo prazo (mortgage subsidiado e securitizável) para moradores de favelas",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      673
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p34",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Tipificar penalmente a favelização, com demolição administrativa em 48 horas de construções ilegais não habitadas",
+   "id": "p44",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Tipificar como crime a organização de ocupações ilegais e permitir demolição administrativa rápida de construções irregulares",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -1044,13 +1345,13 @@
      "blocos": [
       675
      ],
-     "nota": ""
+     "nota": "Demolição em 48 horas de construções não habitadas"
     }
    }
   },
   {
-   "id": "p35",
-   "subtema": "Favelas e urbanização de periferias",
+   "id": "p45",
+   "subtema": "Urbanização de favelas e cidades",
    "proposta": "Monitorar por satélite a expansão de ocupações urbanas irregulares",
    "n_concorda": 1,
    "posicoes": {
@@ -1064,47 +1365,24 @@
    }
   },
   {
-   "id": "p36",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Retomar o controle territorial de áreas dominadas por facções como condição para a política habitacional e urbana",
-   "n_concorda": 2,
+   "id": "p46",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Promover mistura social nos bairros populares, vendendo parte das unidades a preço de mercado e instalando serviços públicos obrigatórios",
+   "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      482
-     ],
-     "nota": "Fase inicial de segurança nas ZEEs de reurbanização"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      737
+      678
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p37",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Oferecer educação patrimonial e financeira e assistência jurídica contra fraudes e especulação aos moradores regularizados",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1856,
-      1944
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Criar zonas econômicas especiais de reurbanização e desfavelização, com uso misto vertical e fundos de retenção de riqueza local",
+   "id": "p47",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Criar zonas econômicas especiais de reurbanização em áreas urbanas degradadas, com uso misto e fundos de retenção de riqueza local",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -1112,8 +1390,6 @@
      "blocos": [
       477,
       478,
-      479,
-      480,
       481,
       482
      ],
@@ -1122,18 +1398,311 @@
    }
   },
   {
-   "id": "p39",
-   "subtema": "Conectividade e telecomunicações",
-   "proposta": "Levar internet de qualidade a regiões remotas, áreas rurais e serviços públicos como escolas e postos de saúde",
-   "n_concorda": 5,
+   "id": "p48",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Apoiar municípios na revisão de planos diretores para permitir adensamento urbano em áreas centrais já estruturadas",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      373,
-      374
+      587,
+      588,
+      796,
+      797
      ],
-     "nota": "Novas faixas de espectro 5G e parcerias privadas"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1267
+     ],
+     "nota": "Adensamento ao redor de eixos de transporte"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      388,
+      393
+     ],
+     "nota": "Reforma urbana integrando habitação, uso do solo e mobilidade"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Oferecer educação patrimonial e assistência jurídica às famílias regularizadas para evitar fraudes e especulação",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1855,
+      1856,
+      1944
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Instituir política nacional de apoio e cofinanciamento federal a sistemas de transporte coletivo de alta e média capacidade (metrôs, trens, VLT, BRT)",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      364,
+      365
+     ],
+     "nota": "Integrando a mobilidade ao Ministério da Infraestrutura"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      403,
+      404
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1079,
+      1230,
+      1239,
+      1260,
+      1261
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      776
+     ],
+     "nota": "Bancos públicos priorizando metrô e trilhos"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Criar política nacional de financiamento plurianual do transporte público coletivo, sem novo imposto geral",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1231,
+      1242
+     ],
+     "nota": "Acesso condicionado a metas de qualidade e transparência"
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Renovar e eletrificar progressivamente as frotas de ônibus, com veículos acessíveis e de baixa emissão",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      403,
+      404
+     ],
+     "nota": "Integra política urbana e política industrial nacional"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1257,
+      1258,
+      1259
+     ],
+     "nota": "Combina eletricidade, biometano e biocombustíveis"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      776
+     ],
+     "nota": "Ônibus elétricos e a biocombustíveis"
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Definir fonte de custeio explícita para gratuidades e benefícios tarifários, com tarifa social para baixa renda",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1243,
+      1244
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Modernizar o vale-transporte para novas formas de trabalho e integração digital",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1245,
+      1246,
+      1247
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Apoiar redes metropolitanas integradas, com bilhete único, governança interfederativa e integração tarifária",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1252,
+      1253,
+      1254
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      403
+     ],
+     "nota": "Foco na integração das regiões metropolitanas e cidades médias"
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Expandir a prioridade operacional do transporte coletivo com faixas e corredores exclusivos, prioridade semafórica e informação em tempo real",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1255,
+      1256
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      403
+     ],
+     "nota": "296 km de corredores BRT na carteira do Novo PAC"
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Investir em mobilidade ativa e acessibilidade: calçadas contínuas, travessias, ciclovias e desenho universal",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1262,
+      1263
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1928
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Adotar metas nacionais de redução de mortes e lesões graves no trânsito, com tratamento de pontos críticos e desenho viário seguro",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1264,
+      1265
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2168,
+      2195
+     ],
+     "nota": "Via duplicação de rodovias e cabines antiestresse"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Estabelecer padrões nacionais de contratos, custo aberto e qualidade mensurável no transporte público",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1240,
+      1250,
+      1251
+     ],
+     "nota": "Regulamentação integral da Lei nº 15.432/2026"
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Universalizar a conectividade de qualidade, levando internet a escolas, unidades de saúde, áreas rurais e regiões remotas",
+   "n_concorda": 6,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      122,
+      576,
+      1083,
+      1474
+     ],
+     "nota": "Meta de conectividade significativa com indicador por município"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      478
+     ],
+     "nota": "Reduzir déficit de fibra e ampliar 5G no campo, com FUST"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1141,21 +1710,23 @@
       476,
       477
      ],
-     "nota": "Pacotes de conexão e continuidade do Wi-Fi Brasil; prioridade a fronteiras"
+     "nota": "Pacotes de conexão e pontos de inclusão digital"
     },
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      478
+      373,
+      374
      ],
-     "nota": "Reduzir déficit de fibra óptica e ampliar 5G no campo usando o FUST"
+     "nota": "Via novas faixas de espectro e parcerias privadas"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      694
+      694,
+      1925
      ],
-     "nota": "Conectividade tratada como infraestrutura essencial"
+     "nota": ""
     },
     "renan-santos": {
      "posicao": "concorda",
@@ -1167,24 +1738,124 @@
    }
   },
   {
-   "id": "p40",
-   "subtema": "Desenvolvimento regional",
-   "proposta": "Adotar o equilíbrio territorial como critério das políticas federais para reduzir desigualdades regionais",
-   "n_concorda": 4,
+   "id": "p61",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Usar os recursos do FUST e demais fundos setoriais de universalização para financiar conectividade",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      478
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      576,
+      1083
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Acelerar a expansão de redes por compartilhamento de infraestrutura passiva e previsibilidade do direito de passagem",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1058,
+      1083
+     ],
+     "nota": "Inclui uso das faixas de domínio das rodovias"
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Abrir novas faixas de espectro e orientar editais por cobertura e qualidade, ampliando a concorrência",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      374
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      576
+     ],
+     "nota": "Inclui satélites de órbita baixa como complemento regulado"
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Reduzir a carga tributária sobre smartphones de entrada e ampliar doação e recondicionamento de equipamentos para inclusão digital",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      576
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Tratar centros de processamento de dados como infraestrutura estratégica, com ambiente regulatório e tributário competitivo",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1083,
+      1474
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Adotar estratégias territoriais diferenciadas para reduzir desigualdades regionais, com metas pactuadas e governança regional",
+   "n_concorda": 5,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      343,
+      344
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
       484,
-      485,
       488
      ],
-     "nota": "Fundos constitucionais FNE, FNO e FCO como instrumento central"
+     "nota": "Critério de equilíbrio territorial em compras públicas e inovação"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      886
+      886,
+      898
      ],
      "nota": ""
     },
@@ -1193,7 +1864,7 @@
      "blocos": [
       867
      ],
-     "nota": "Esforço especial no Norte e Nordeste"
+     "nota": ""
     },
     "renan-santos": {
      "posicao": "concorda",
@@ -1206,32 +1877,43 @@
    }
   },
   {
-   "id": "p41",
+   "id": "p67",
    "subtema": "Desenvolvimento regional",
-   "proposta": "Regulamentar e usar o Fundo Nacional de Desenvolvimento Regional com critérios técnicos para substituir a guerra fiscal",
-   "n_concorda": 2,
+   "proposta": "Usar os fundos constitucionais e o Fundo Nacional de Desenvolvimento Regional como instrumentos centrais do desenvolvimento regional",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      484,
+      485,
       486,
       487
      ],
-     "nota": ""
+     "nota": "Regulamentação do FNDR em substituição à guerra fiscal do ICMS"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       889
      ],
-     "nota": "Com metas, prazos e avaliação periódica de resultados"
+     "nota": "Critérios técnicos, metas, prazos e redirecionamento de recursos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1442,
+      1456,
+      1457
+     ],
+     "nota": "Fortalecer BNB, FNE e Sudene"
     }
    }
   },
   {
-   "id": "p42",
+   "id": "p68",
    "subtema": "Desenvolvimento regional",
-   "proposta": "Criar zonas econômicas especiais/zonas francas de exportação com regimes tributários e regulatórios diferenciados",
+   "proposta": "Criar zonas econômicas especiais ou zonas francas de exportação com regime tributário, regulatório e de infraestrutura diferenciado",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
@@ -1248,10 +1930,6 @@
      "blocos": [
       2704,
       2705,
-      2706,
-      2707,
-      2708,
-      2710,
       2711
      ],
      "nota": "Cinco zonas francas de exportação distribuídas pelo país"
@@ -1259,7 +1937,7 @@
    }
   },
   {
-   "id": "p43",
+   "id": "p69",
    "subtema": "Desenvolvimento regional",
    "proposta": "Preservar integralmente os regimes da Zona Franca de Manaus e das Áreas de Livre Comércio",
    "n_concorda": 1,
@@ -1274,17 +1952,40 @@
    }
   },
   {
-   "id": "p44",
+   "id": "p70",
    "subtema": "Desenvolvimento regional",
-   "proposta": "Transformar o Nordeste em polo industrial a partir da energia renovável abundante da região",
-   "n_concorda": 3,
+   "proposta": "Construir um pacto regional decenal para o Nordeste com banco de projetos maduros e execução coordenada com estados e municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1441,
+      1454
+     ],
+     "nota": "Pacto Nordeste 2030"
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Transformar o Nordeste em polo industrial atraído por energia renovável abundante",
+   "n_concorda": 4,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       490
      ],
-     "nota": "Atração de plantas eletrointensivas, hidrogênio de baixo carbono"
+     "nota": "Indústrias eletrointensivas, hidrogênio de baixo carbono"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      871
+     ],
+     "nota": "Data centers e nova indústria de tecnologia"
     },
     "renan-santos": {
      "posicao": "concorda",
@@ -1294,122 +1995,20 @@
      ],
      "nota": ""
     },
-    "flavio-bolsonaro": {
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      868
+      2705
      ],
-     "nota": "Ênfase em água como prioridade e energia limpa atraindo data centers"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p45",
+   "id": "p72",
    "subtema": "Desenvolvimento regional",
-   "proposta": "Desenvolver a Amazônia pela bioeconomia e pelo uso sustentável da biodiversidade, com respeito às populações locais",
+   "proposta": "Concluir e ampliar as obras hídricas do Nordeste e do semiárido (transposição, ramais, adutoras, canais)",
    "n_concorda": 3,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      489
-     ],
-     "nota": "Inclui regularização fundiária e Fundo Amazônia"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      877
-     ],
-     "nota": "Autonomia de indígenas e quilombolas sobre atividades produtivas"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3866,
-      3867,
-      3868,
-      3869,
-      3871,
-      3885
-     ],
-     "nota": "Microempresas de ribeirinhos e Banco Empreendedor Amazônico"
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Desenvolvimento regional",
-   "proposta": "Levar infraestrutura básica (saneamento, energia limpa, conectividade) às cidades amazônicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3874,
-      3875,
-      3876,
-      3880,
-      3881,
-      3882
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Desenvolvimento regional",
-   "proposta": "Fortalecer cidades médias e do interior como polos regionais de desenvolvimento, desconcentrando as metrópoles",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      898,
-      901,
-      2376
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      409
-     ],
-     "nota": "Rede policêntrica de cidades"
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Desenvolvimento regional",
-   "proposta": "Implantar programa de desenvolvimento produtivo do Semiárido com segurança hídrica, irrigação e agroindústrias adaptadas ao clima",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      892,
-      895
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      869,
-      870
-     ],
-     "nota": "Expansão do perímetro irrigado do Baixio do Irecê"
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Desenvolvimento regional",
-   "proposta": "Concluir e executar as obras hídricas do Nordeste (ramais da transposição, adutoras, canais do sertão)",
-   "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1418,39 +2017,151 @@
       868,
       869
      ],
-     "nota": "Lista Ramal do Apodi, Canal do Xingó, Eixão das Águas, entre outros"
+     "nota": "Lista obras específicas: Ramal do Apodi, Canal do Xingó, Eixão das Águas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      122,
+      1442
+     ],
+     "nota": "Segurança hídrica do litoral ao semiárido"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      892,
+      895
+     ],
+     "nota": "Semiárido Produtivo com irrigação e gestão de outorga"
     }
    }
   },
   {
-   "id": "p50",
+   "id": "p73",
    "subtema": "Desenvolvimento regional",
-   "proposta": "Apoiar a agroindustrialização do Nordeste e do MATOPIBA com polos integrados de grãos, proteína animal e energia",
-   "n_concorda": 1,
+   "proposta": "Desenvolver a Amazônia pela bioeconomia e pelo valor agregado à floresta em pé",
+   "n_concorda": 4,
    "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      877
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      489
+     ],
+     "nota": "Fundo Amazônia e regularização fundiária"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2375,
-      2387
+      3866,
+      3868,
+      3885
+     ],
+     "nota": "Banco Empreendedor Amazônico e microempresas locais"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1561
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Cidades resilientes e defesa civil",
-   "proposta": "Ampliar obras de drenagem, contenção de encostas e prevenção a enchentes e deslizamentos em áreas de risco",
-   "n_concorda": 4,
+   "id": "p74",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Criar plataforma integrada de governança fundiária da Amazônia e concluir o zoneamento territorial e ambiental da região",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1573,
+      1574,
+      1575
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      489
+     ],
+     "nota": "Reforço da política de regularização fundiária na Amazônia"
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Levar infraestrutura básica (saneamento, energia, conectividade) às cidades e comunidades amazônicas com soluções adaptadas às grandes distâncias",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3874,
+      3875,
+      3876,
+      3880,
+      3881
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      576,
+      1561
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Fortalecer cidades médias e o interior como polos regionais de crescimento, desconcentrando as metrópoles",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      901,
+      2375,
+      2387
+     ],
+     "nota": "Via agroindústria no Nordeste e MATOPIBA"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      409
+     ],
+     "nota": "Rede policêntrica de cidades e valorização das cidades médias"
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Defesa civil e adaptação climática urbana",
+   "proposta": "Ampliar obras de drenagem urbana, contenção de encostas e prevenção de enchentes em áreas de risco",
+   "n_concorda": 5,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      406,
       407
      ],
-     "nota": "Prioriza áreas mapeadas de risco alto e aprimoramento da Defesa Civil"
+     "nota": "Prioriza áreas mapeadas de risco alto ou muito alto"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1458,15 +2169,22 @@
       738,
       785
      ],
-     "nota": "Barragens, diques e fortalecimento do monitoramento e alerta da Defesa Civil"
+     "nota": "Barragens, reservatórios, diques e macrodrenagem"
     },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      587,
       588
      ],
-     "nota": "Via planos diretores, habitação em áreas seguras e drenagem"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1081,
+      1464
+     ],
+     "nota": ""
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -1480,11 +2198,49 @@
    }
   },
   {
-   "id": "p52",
-   "subtema": "Cidades resilientes e defesa civil",
-   "proposta": "Exigir que novas obras públicas sejam projetadas para resistir a eventos climáticos extremos",
+   "id": "p78",
+   "subtema": "Defesa civil e adaptação climática urbana",
+   "proposta": "Fortalecer a Defesa Civil e os sistemas de monitoramento, alerta e resposta a desastres",
    "n_concorda": 2,
    "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      407
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      785
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Defesa civil e adaptação climática urbana",
+   "proposta": "Preparar as cidades para eventos climáticos extremos com infraestrutura verde, proteção de mananciais e ocupação resiliente do território",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      406,
+      407
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1085,
+      1464
+     ],
+     "nota": "Inclui erosão costeira e elevação do nível do mar"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
@@ -1492,138 +2248,249 @@
      ],
      "nota": ""
     },
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      406,
-      407
+      588
      ],
-     "nota": "Infraestrutura verde e ocupação resiliente do território"
+     "nota": "Habitação em áreas seguras e planos diretores modernos"
     }
    }
   },
   {
-   "id": "p53",
-   "subtema": "Cidades resilientes e defesa civil",
-   "proposta": "Reforçar a capacidade técnica e financeira dos municípios para planejar, executar e fiscalizar investimentos urbanos",
+   "id": "p80",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Promover a integração vertical de cadeias produtivas locais como estratégia de desenvolvimento territorial",
    "n_concorda": 3,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      393
-     ],
-     "nota": ""
-    },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      309
+      479
      ],
-     "nota": "Capacitação de engenheiros e órgãos públicos municipais"
+     "nota": ""
     },
-    "romeu-zema": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      322
+      488,
+      489,
+      490
      ],
-     "nota": "Apoio a estados e municípios na estruturação de projetos"
+     "nota": "Defende que territórios retenham valor da produção via indústria e inovação locais"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      889,
+      2375,
+      2387
+     ],
+     "nota": "Polos regionais adensando cadeias produtivas locais e agroindústrias integradas"
     }
    }
   },
   {
-   "id": "p54",
-   "subtema": "Concessões, PPPs e investimento privado em infraestrutura",
-   "proposta": "Institucionalizar mecanismos consensuais de prevenção e solução de controvérsias em contratos de infraestrutura (mesas de conciliação, mediação, arbitragem e dispute boards), com atuação coordenada entre poder concedente, agências reguladoras, concessionárias e órgãos de controle",
-   "n_concorda": 1,
+   "id": "p81",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Estabelecer governança articulada do desenvolvimento territorial com segurança pública integrada",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      480
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      344,
+      1442,
+      1454
+     ],
+     "nota": "Pacto e carteira regional com governança pactuada, integrando segurança pública às estratégias territoriais."
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Instituir a Política Nacional de Financiamento do transporte público coletivo no primeiro ano de governo",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      337,
-      338
+      364,
+      365
+     ],
+     "nota": "Propõe política nacional de transporte coletivo de alta capacidade com cofinanciamento federal"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      776
+     ],
+     "nota": "Bancos públicos priorizarão financiamento de metrô, trilhos e ônibus elétricos/biocombustíveis."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1241
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p55",
-   "subtema": "Cidades resilientes e defesa civil",
-   "proposta": "Priorizar a preservação de vidas em áreas de risco geológico, ambiental ou estrutural grave, oferecendo soluções habitacionais adequadas às famílias",
-   "n_concorda": 4,
+   "id": "p83",
+   "subtema": "Mobilidade urbana",
+   "proposta": "Selecionar projetos de transporte de alta e média capacidade por demanda e custo-benefício, com neutralidade tecnológica, e apoiar estudos, desapropriações, licenciamento, engenharia e operação para evitar paralisação após o anúncio",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      364,
+      365
+     ],
+     "nota": "Apoio federal à estruturação de projetos, coordenação federativa e cofinanciamento"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      776
+     ],
+     "nota": "Prioriza financiamento de transporte de alta capacidade sem restrição tecnológica."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1261
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Orientar o planejamento urbano ao transporte coletivo (desenvolvimento urbano orientado ao transporte)",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       587,
-      588
+      588,
+      796,
+      797,
+      802
      ],
-     "nota": "Planos diretores com habitação em áreas seguras e drenagem para reduzir riscos de enchentes e deslizamentos."
+     "nota": "Adensamento em áreas centrais com infraestrutura e transporte público"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      738,
-      785
+      776
      ],
-     "nota": "Urbanização de áreas degradadas para evitar deslizamentos e infraestrutura de prevenção/Defesa Civil."
+     "nota": "Desenvolvimento urbano para reduzir deslocamentos, com transporte coletivo como base."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1266
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Telecomunicações e conectividade",
+   "proposta": "Universalizar fibra óptica e 5G em escolas, unidades de saúde, distritos produtivos e áreas rurais e atrair infraestrutura digital com energia limpa, eficiência hídrica, proteção de dados e formação local",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      373,
+      374
+     ],
+     "nota": "5G e conectividade no interior, campo, escolas e postos de saúde"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      476,
+      477
+     ],
+     "nota": "Conectividade em escolas, áreas rurais e fronteira; pacotes de conexão."
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      401,
-      407
+      478
      ],
-     "nota": "Investimento em contenção de encostas e drenagem priorizando áreas de risco alto e aprimoramento da Defesa Civil."
+     "nota": "Reduzir déficit de fibra e ampliar 5G no campo, com FUST"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1848
+      694,
+      1925,
+      3881
+     ],
+     "nota": "Conectividade como infraestrutura essencial: escolas, hospitais, rural e remoto"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1474
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p56",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Vincular a entrega do título de propriedade a um pacote integrado de educação, infraestrutura, acesso ao mercado e oportunidades econômicas para a família regularizada",
-   "n_concorda": 3,
+   "id": "p86",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Tornar as remoções excepcionais, restritas a casos de risco comprovado ou impossibilidade técnica, com devido processo e oferta de soluções habitacionais adequadas às famílias",
+   "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
+     "posicao": "discorda",
+     "blocos": [
+      675
+     ],
+     "nota": "Prevê demolição administrativa em 48h e, como objetivo final, demolição de toda construção ilegal."
+    },
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      477,
-      672,
-      673,
-      678
+      1848,
+      1937
      ],
-     "nota": "Título individual acompanhado de serviços públicos obrigatórios e integração econômica via ZEEs"
-    },
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Incluir ações de recuperação ambiental nos programas de urbanização de comunidades",
+   "n_concorda": 2,
+   "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      738
+      738,
+      740
      ],
-     "nota": "Regularização fundiária com PPPs que integram moradia e infraestrutura no mesmo contrato."
+     "nota": "Urbanização de áreas degradadas e saneamento como agenda ambiental."
     },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1855
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Incluir ações de recuperação ambiental nos programas de urbanização de comunidades",
-   "n_concorda": 1,
-   "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
@@ -1634,9 +2501,9 @@
    }
   },
   {
-   "id": "p58",
-   "subtema": "Favelas e urbanização de periferias",
-   "proposta": "Elaborar diagnóstico próprio para cada território atendido, diferenciando o tratamento de pequenas comunidades consolidadas e grandes complexos urbanos",
+   "id": "p88",
+   "subtema": "Urbanização de favelas e cidades",
+   "proposta": "Elaborar diagnóstico próprio para cada território, diferenciando o tratamento dado a pequenas comunidades consolidadas e a grandes complexos urbanos",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -1649,11 +2516,44 @@
    }
   },
   {
-   "id": "p59",
-   "subtema": "Habitação e regularização fundiária",
-   "proposta": "Destinar de R$ 10 bilhões a R$ 20 bilhões ao programa de regularização fundiária",
-   "n_concorda": 1,
+   "id": "p89",
+   "subtema": "Moradia e regularização fundiária",
+   "proposta": "Destinar entre R$ 10 bilhões e R$ 20 bilhões à regularização fundiária",
+   "n_concorda": 5,
    "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      672,
+      674,
+      678
+     ],
+     "nota": "Marco Nacional da Desfavelização amplia a REURB, com cadastro fundiário e títulos individuais."
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      798,
+      799
+     ],
+     "nota": "Programa federal de regularização fundiária, sem definir valor orçamentário"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      738
+     ],
+     "nota": "Incentivo à regularização fundiária, sem valor definido."
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      144,
+      398,
+      489
+     ],
+     "nota": "Mantém investimento em regularização fundiária, sem valor definido"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
@@ -1664,30 +2564,141 @@
    }
   },
   {
-   "id": "p60",
-   "subtema": "Transporte e logística",
-   "proposta": "Instalar cabines antiestresse nos polos de apoio às margens das rodovias para reduzir riscos de acidentes",
+   "id": "p90",
+   "subtema": "Transportes e logística",
+   "proposta": "Dotar os polos rodoviários de unidades comerciais padronizadas, energia solar, banheiros compartilhados, estacionamento seguro, acessibilidade, sinalização integrada e áreas de descanso para viajantes",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2195
+      2188,
+      2189,
+      2190,
+      2191,
+      2192,
+      2193,
+      2194
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p61",
-   "subtema": "Transporte e logística",
-   "proposta": "Conceder incentivos fiscais aos empreendimentos instalados nos polos comerciais e de serviços às margens das rodovias",
+   "id": "p91",
+   "subtema": "Transportes e logística",
+   "proposta": "Conceder incentivos fiscais e regulamentar e fiscalizar o programa de polos comerciais e turísticos ao longo das rodovias",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2225
+      2225,
+      2226
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Transportes e logística",
+   "proposta": "Atribuir à iniciativa privada a construção, a gestão operacional e a manutenção dos polos rodoviários",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2228,
+      2229,
+      2230
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p93",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Criar zonas francas estaduais com vocações setoriais definidas: Bahia (petroquímica e indústria pesada), Rio de Janeiro (petróleo, gás e naval), São Paulo (Indústria 4.0, semicondutores e inteligência artificial) e Rio Grande do Sul (agroindústria e máquinas agrícolas)",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      104,
+      441,
+      470
+     ],
+     "nota": "Zonas Econômicas Especiais regionais com polos de vocações setoriais definidas."
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2706,
+      2707,
+      2708,
+      2709,
+      2710
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p94",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Fomentar a criação de microempresas locais em pesca sustentável, artesanato e turismo ecológico, com capacitação técnica e empreendedora",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3867,
+      3869,
+      3870,
+      3871
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p95",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Criar polos econômicos sustentáveis nos territórios apoiados",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      441,
+      469,
+      470
+     ],
+     "nota": "Polos industriais em ZEEs ancorados em energia renovável e vantagens locais."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      869,
+      870,
+      877
+     ],
+     "nota": "Polos produtivos no Nordeste (irrigação) e bioeconomia no Norte."
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      489,
+      490
+     ],
+     "nota": "Polos industriais sustentáveis na Amazônia e Nordeste"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3882
      ],
      "nota": ""
     }
@@ -1848,6 +2859,10 @@
     "texto": "Sempre que tecnicamente possível, será priorizada a urbanização da própria comunidade.",
     "pagina": 109
    },
+   "1937": {
+    "texto": "Remoções deverão ser excepcionais, especialmente nos casos de risco comprovado ou impossibilidade técnica, respeitando direitos, devido processo e soluções habitacionais adequadas.",
+    "pagina": 109
+   },
    "1944": {
     "texto": "O programa terá, portanto, educação patrimonial e financeira, assistência jurídica contra fraudes e mecanismos legais adequados às diferentes modalidades de regularização.",
     "pagina": 110
@@ -1860,16 +2875,8 @@
     "texto": "• Urbanização, infraestrutura e melhorias habitacionais: aproximadamente R$",
     "pagina": 110
    },
-   "1958": {
-    "texto": "100 bilhões a R$ 200 bilhões.",
-    "pagina": 110
-   },
    "2162": {
     "texto": "PROJETO 7 - BEE: BRASIL EMPREENDEDOR NAS ESTRADAS - UMA REVOLUÇÃO",
-    "pagina": 120
-   },
-   "2163": {
-    "texto": "TURÍSTICA E ECONÔMICA NA MALHA RODOVIÁRIA BRASILEIRA",
     "pagina": 120
    },
    "2168": {
@@ -1916,10 +2923,6 @@
     "texto": "O programa será desenvolvido por meio de Parcerias Público-Privadas.",
     "pagina": 122
    },
-   "2222": {
-    "texto": "Ao Governo caberá:",
-    "pagina": 122
-   },
    "2223": {
     "texto": "• Definir as áreas;",
     "pagina": 122
@@ -1936,10 +2939,6 @@
     "texto": "• Regulamentar e fiscalizar o programa.",
     "pagina": 122
    },
-   "2227": {
-    "texto": "À iniciativa privada caberá: \n•",
-    "pagina": 122
-   },
    "2228": {
     "texto": "Construir os polos; \n•",
     "pagina": 122
@@ -1954,10 +2953,6 @@
    },
    "2375": {
     "texto": "Teremos atenção especial ao Nordeste e ao MATOPIBA, ampliando a integração entre produção de grãos, energia, alimentação animal, criação e processamento de aves, suínos e bovinos.",
-    "pagina": 127
-   },
-   "2376": {
-    "texto": "A agroindústria poderá levar uma nova onda de industrialização para cidades médias e pequenas do interior brasileiro, diminuindo a concentração econômica nas grandes metrópoles.",
     "pagina": 127
    },
    "2387": {
@@ -1984,6 +2979,10 @@
     "texto": "Zona Franca de São Paulo: Transformada no principal polo brasileiro de Indústria",
     "pagina": 141
    },
+   "2709": {
+    "texto": "4.0, inteligência artificial, semicondutores, robótica, automação, drones, softwares exportáveis e tecnologias avançadas.",
+    "pagina": 141
+   },
    "2710": {
     "texto": "Zona Franca do Rio Grande do Sul: Especializada em agroindústria, máquinas agrícolas inteligentes, robótica aplicada ao campo, drones agrícolas e fortalecimento da integração econômica com o Mercosul.",
     "pagina": 141
@@ -2006,6 +3005,10 @@
    },
    "3869": {
     "texto": "Pesca sustentável \n•",
+    "pagina": 183
+   },
+   "3870": {
+    "texto": "Artesanato e turismo ecológico \n•",
     "pagina": 183
    },
    "3871": {
@@ -2058,6 +3061,10 @@
     "texto": "Vamos promover a urbanização de áreas degradadas, evitando o risco de deslizamentos em encostas, e incentivar a regularização fundiária, priorizando as áreas urbanas já consolidadas e reduzindo os vazios urbanos, com parcerias público-privadas que integrem moradia e infraestrutura no mesmo contrato. Assim, a família que já mora há anos no mesmo lugar tem a escritura no próprio nome — de preferência, no nome da mulher, como prevê o Brasil por Elas. Sem esse documento, a casa não serve de garantia nem pode ser herdada com segurança; com ele, vira patrimônio de verdade.",
     "pagina": 47
    },
+   "739": {
+    "texto": "Moradia digna tem água e esgoto. O maior avanço do país nessa área tem nome e sobrenome: foi o Marco Legal do Saneamento, sancionado pelo governo Bolsonaro em 2020, que abriu o setor ao investimento privado e fixou a meta de levar água e esgoto a praticamente toda a população até 2033.",
+    "pagina": 47
+   },
    "740": {
     "texto": "Foi também uma das maiores agendas ambientais da nossa história — porque esgoto tratado é rio limpo, é praia sem contaminação, é criança que não adoece. O governo do PT tentou desarticulá-lo por decreto; nós vamos garantir sua plena aplicação e acelerar as concessões e parcerias para universalizar o acesso à água tratada e ao esgoto, com atenção especial ao saneamento rural. Água encanada e esgoto tratado são a forma mais barata de evitar doença que existe.",
     "pagina": 47
@@ -2108,6 +3115,10 @@
    },
    "870": {
     "texto": "Latina, que já transforma água e terra fértil em fruticultura, grãos, emprego e renda no campo, e vamos concluir sua expansão para multiplicar essa riqueza pelo sertão. Vamos viabilizar o Trem do Nordeste, 1.400 km de trilhos interligando Salvador, Aracaju, Maceió, Recife, João Pessoa, Natal e Fortaleza, abrindo um roteiro entre praias, cidades históricas e polos culturais para movimentar o turismo, a produção e a vida de quem vive ali. E porque não basta produzir, é preciso escoar, concluir a Transnordestina e ampliar o seu escopo para que a Paraíba e o Rio Grande do Norte sejam contemplados.",
+    "pagina": 60
+   },
+   "871": {
+    "texto": "O Nordeste não é só o passado que resistiu, é o futuro que começa. Tem sol e vento de sobra para ser a capital da energia limpa do país, e é essa energia farta e competitiva que vai atrair os data centers e a nova indústria de",
     "pagina": 60
    },
    "877": {
@@ -2254,10 +3265,6 @@
     "texto": "6 governança de projetos: integração formal de EVTEA e EIA desde a fase de pré-viabilidade, evitando o descompasso que hoje causa atrasos, aditivos e abandonos.",
     "pagina": 24
    },
-   "314": {
-    "texto": "Além disso, nos comprometemos com obras e modais específicos que deverão ser priorizados:",
-    "pagina": 24
-   },
    "315": {
     "texto": "▪ Ferrovias: meta mínima de 40 mil km de malha; conclusão antecipada da Ferrovia Alcântara-Açailândia, conclusão da Ferrovia de Integração Oeste-Leste (FIOL), início imediato das obras da Ferrogrão e viabilização da Ferrovia Transoceânica.",
     "pagina": 24
@@ -2305,6 +3312,10 @@
    "482": {
     "texto": "O processo ocorre em quatro fases sequenciais: segurança inicial, limpeza urbana, infraestrutura básica e implementação da ZEE, inspirando-se em experiências distintas: Shenzhen, a reurbanização do porto de Londres (London Docklands) e o complexo de Tanger Med (Marrocos).",
     "pagina": 36
+   },
+   "665": {
+    "texto": "As grandes políticas habitacionais dos séculos XX e XXI fracassaram em reverter essa dinâmica. O Banco Nacional de Habitação (BNH), o Favela-Bairro e mesmo o Minha Casa Minha Vida, que hoje mobiliza cerca de R$ 180 bilhões anuais (a maior parte em financiamentos reembolsáveis do FGTS), não foram capazes de romper o ciclo da favelização. Limitaram-se, na melhor das hipóteses, a urbanizar parcialmente as comunidades, ou a construir conjuntos habitacionais isolados, longe dos centros de emprego e frequentemente capturados pelo crime organizado. O resultado é que, a cada ciclo de governo, a favela se reproduz e se expande.",
+    "pagina": 48
    },
    "671": {
     "texto": "Nossa proposta é a desfavelização integral do Brasil em dez anos, transformando as 12.348 favelas em bairros formais, com títulos de propriedade, regras urbanísticas, presença do Estado e mistura de classes sociais. Essa não é uma agenda de “urbanização de favela”, como foi o Favela-Bairro: é o fim da favela como modalidade de moradia popular no Brasil.",
@@ -2560,6 +3571,10 @@
     "texto": "Apoiar estados e municípios na elaboração de planos diretores modernos, ampliando o ampliando o adensamento urbano nas áreas centrais, habitação em áreas seguras e investimentos em drenagem urbana, para reduzir a vulnerabilidade a enchentes e deslizamentos.",
     "pagina": 49
    },
+   "762": {
+    "texto": "Além disso, o Brasil convive com um déficit de 5,9 milhões de moradias, e programas como o Minha Casa, Minha Vida não se preocuparam na última década com a qualidade e localização dos imóveis, afastando famílias de empregos e serviços públicos.",
+    "pagina": 62
+   },
    "789": {
     "texto": "Facilitar o acesso a moradias de interesse social, conciliando essa política com ações alinhadas às necessidades de cada público e a entrada no mercado de trabalho:",
     "pagina": 64
@@ -2588,13 +3603,275 @@
     "texto": "Melhorar a qualidade e localização das casas entregues no Minha",
     "pagina": 65
    },
-   "801": {
-    "texto": "Casa, Minha Vida:",
-    "pagina": 65
-   },
    "802": {
     "texto": "Reformular o Minha Casa, Minha Vida para priorizar investimentos em áreas com infraestrutura e serviços públicos já instalados, superando o modelo atual que entrega moradias de baixa qualidade em regiões isoladas, longe de escolas, postos de saúde e transporte público.",
     "pagina": 65
+   }
+  },
+  "ronaldo-caiado": {
+   "122": {
+    "texto": "• Universalizar conectividade significativa e acelerar saneamento, mobilidade e segurança hídrica.",
+    "pagina": 7
+   },
+   "343": {
+    "texto": "10. Desenvolver todas as regiões a partir de suas vocações",
+    "pagina": 15
+   },
+   "344": {
+    "texto": "Combinar infraestrutura, crédito, educação, inovação e serviços públicos em estratégias territoriais para o Nordeste, Amazônia, Centro-Oeste, Sudeste e Sul, com metas pactuadas e governança regional.",
+    "pagina": 15
+   },
+   "521": {
+    "texto": "Estabelecer um programa decenal para a logística do agronegócio, assegurar manutenção permanente das hidrovias e ampliar a capacidade de armazenagem próxima às regiões produtoras. Priorizar obras estruturantes de escoamento, como a Ferrogrão, a Ferrovia Norte-Sul, a Fiol, a Malha Norte, a BR-163 e as hidrovias do Centro-Oeste e do Norte.",
+    "pagina": 23
+   },
+   "576": {
+    "texto": "4. Conectividade significativa como meta nacional. Levar fibra e backhaul ao interior e à Amazônia, acelerar infovias, usar satélites de órbita baixa como complemento regulado e orientar editais de espectro por cobertura e qualidade. Colocar o FUST a serviço de escolas, unidades de saúde e conectividade rural; ampliar recondicionamento e doação de equipamentos; reduzir a carga tributária do smartphone de entrada, como uma forma de subsídio e inclusão digital da população de baixa renda; promover letramento digital; e criar indicador oficial por município e faixa de renda.",
+    "pagina": 26
+   },
+   "1037": {
+    "texto": "Infraestrutura é o sistema circulatório da economia. O plano integrará logística, saneamento, habitação, conectividade e resiliência climática em uma carteira nacional de projetos, com manutenção, conclusão do que é viável e redução dos gargalos que elevam o custo do Brasil.",
+    "pagina": 46
+   },
+   "1038": {
+    "texto": "O setor privado terá papel central por concessões, parcerias e mercado de capitais, com contratos equilibrados, regulação técnica e proteção do usuário. Recursos públicos serão direcionados a projetos maduros, de alto retorno social e a regiões que não atraem capital apenas pela tarifa.",
+    "pagina": 46
+   },
+   "1041": {
+    "texto": "O Brasil investe, há décadas, menos do que precisa em infraestrutura. O investimento total do país, público e privado, situa-se em torno de 2% do PIB ao ano, quando o consenso técnico indica a necessidade de patamares próximos a 4% do PIB, de forma sustentada, para modernizar o estoque de ativos e alcançar padrões internacionais. Investir metade do necessário por tanto tempo produz um resultado que todo brasileiro conhece: estradas malconservadas, saneamento incompleto, mobilidade urbana precária e um custo logístico que encarece cada produto do campo e da fábrica.",
+    "pagina": 46
+   },
+   "1047": {
+    "texto": "Instituir um planejamento integrado de longo prazo, com horizonte de trinta anos e revisões periódicas, e uma carteira única de projetos priorizados por critérios técnicos de retorno econômico e social. Para que esse planejamento atravesse governos, contará com uma instância técnica independente, de mandato próprio, encarregada de avaliar os grandes projetos, mapear ativos estratégicos de interesse nacional e publicar suas análises de custo e benefício. Planejamento de Estado precisa de um guardião que sobreviva aos ciclos políticos.",
+    "pagina": 46
+   },
+   "1049": {
+    "texto": "Publicar a carteira e o cronograma plurianual das obras com antecedência suficiente para que a indústria nacional de máquinas e equipamentos programe capacidade, forme mão de obra e invista, tratando o programa de infraestrutura como aquilo que ele de fato é: o maior instrumento de política industrial de que o país dispõe. Obras previsíveis estimulam investimento e produção nacional; descontinuidade e incerteza favorecem soluções importadas de curto prazo.",
+    "pagina": 46
+   },
+   "1051": {
+    "texto": "Cuidar do que o país já construiu: nenhum ativo novo deve ser contratado sem plano de manutenção financiado, com contratos de conservação por desempenho e proteção do orçamento de conservação.",
+    "pagina": 46
+   },
+   "1058": {
+    "texto": "Aproximar a decisão de infraestrutura de quem conhece o território: assegurar a estados e municípios maior autonomia para definir prioridades e executar projetos, dentro de um planejamento nacional que garanta coordenação, padrões técnicos e visão de rede, estimulando uma competição sadia por eficiência e por atração de investimento. Ajustar a regulação para viabilizar o uso conjunto das infraestruturas, permitindo ofertar conectividade, energia e drenagem ao longo das faixas de domínio das rodovias, com previsibilidade que reduza custos e acelere a expansão das redes.",
+    "pagina": 47
+   },
+   "1061": {
+    "texto": "Instituir um programa nacional de triagem das obras paralisadas, com decisão obrigatória e prazo definido para cada empreendimento: concluir com gestão profissionalizada, transferir à iniciativa privada por concessão ou parceria, ou encerrar formalmente com transparência de custos. Obra parada consome recurso, não entrega serviço e corrói a confiança pública.",
+    "pagina": 47
+   },
+   "1063": {
+    "texto": "Fortalecer as agências reguladoras com autonomia técnica de fato, diretorias completas, orçamento adequado e quadros qualificados. Garantir a estabilidade dos contratos como fundamento da atração de investimento e consolidar a solução consensual de conflitos, com repactuações estruturadas e arbitragem, em lugar de disputas que paralisam ativos por anos. Elevar a qualidade da regulação com avaliação de impacto e de resultado (AIR e ARR) e ambientes regulatórios experimentais, o sandbox, que permitam testar soluções novas sob supervisão antes de generalizá-las. Contrato é para ser cumprido; regra clara é o melhor atrativo de capital.",
+    "pagina": 47
+   },
+   "1068": {
+    "texto": "Manter um calendário permanente e previsível de leilões (dando continuidade ao Programa de Parcerias em Investimentos, o PPI) em rodovias, ferrovias, portos, aeroportos, saneamento, energia e infraestrutura social, como hospitais, escolas e iluminação pública. Atacar o gargalo real da agenda, que é a capacidade de estruturar bons projetos, apoiando tecnicamente estados e municípios a desenvolver suas próprias parcerias, e usar a concessão de ativos públicos maduros para financiar a infraestrutura nova. Assegurar que as outorgas geradas pelas concessões sejam reinvestidas no próprio setor, reduzindo gargalos e ampliando a eficiência, em vez de dispersar-se no orçamento geral.",
+    "pagina": 47
+   },
+   "1070": {
+    "texto": "Aprofundar os instrumentos de financiamento privado que o país construiu na última década, os títulos incentivados, os fundos de infraestrutura e os demais veículos de mercado de capitais, com o BNDES atuando prioritariamente como estruturador de projetos e catalisador de capital privado. Desenvolver garantias e mecanismos de compartilhamento de risco que alonguem prazos, e instrumentos que reduzam o risco cambial do investidor estrangeiro de longo prazo, hoje a principal barreira à entrada desse capital. Reduzir o custo de capital é fundamental.",
+    "pagina": 47
+   },
+   "1075": {
+    "texto": "remover as barreiras que impedem esse capital de fluir por decisão própria: governança técnica protegida de indicações políticas, segurança para quem decide com diligência e responsabilidade, e tratamento regulatório e tributário adequado ao investidor de longo prazo, investindo ao lado de capital profissional e em condições de mercado.",
+    "pagina": 48
+   },
+   "1077": {
+    "texto": "Rebalancear a matriz de transportes, hoje excessivamente concentrada no modal rodoviário, com prioridade a ferrovias, hidrovias, cabotagem e terminais intermodais, conectando as regiões produtoras aos portos e colocando o custo logístico do país em trajetória firme de queda. Atualizar a metodologia da tabela de pisos mínimos do frete rodoviário, defasada desde 2022, para refletir os custos reais da atividade e dar previsibilidade tanto ao transportador quanto ao embarcador. Cada real economizado em logística é competitividade devolvida ao produtor brasileiro. Elevar a eficiência do transporte de cargas com digitalização e inteligência de dados, aplicando os mesmos instrumentos para desburocratizar processos ao longo de toda a cadeia de infraestrutura.",
+    "pagina": 48
+   },
+   "1079": {
+    "texto": "Integrar o transporte público coletivo à carteira nacional de projetos e aos instrumentos de financiamento de longo prazo da infraestrutura, respeitando o pacto federativo: a titularidade é dos Municípios e dos Estados, cabendo à União coordenar, legislar e criar as condições de financiamento que faltam. As diretrizes, instrumentos e as metas do setor estão detalhados no Tema 18 · Mobilidade Urbana.",
+    "pagina": 48
+   },
+   "1081": {
+    "texto": "Cumprir e acelerar as metas do marco legal do saneamento (universalização até 2033), água tratada e coleta e tratamento de esgoto para todos os brasileiros, tratando o tema como prioridade de saúde pública, dignidade e desenvolvimento regional, e preservando a segurança regulatória que destravou o maior ciclo de investimento privado da história do setor. Ir além da água e do esgoto: avançar na prestação regionalizada, que viabiliza a universalização nos municípios de menor atratividade, e tratar os resíduos sólidos e a drenagem urbana como parte do mesmo compromisso. Drenagem é prevenção de enchentes e de doenças, e pode ser objeto de novas concessões e parcerias. Assegurar à ANA autonomia decisória, orçamento e capacidade técnica para editar e fazer cumprir as normas de referência de aplicação nacional, garantindo padrão regulatório uniforme entre os entes. Incorporar componentes ESG às modelagens dos projetos de água e esgoto, valorando adequadamente os ganhos sociais e ambientais para ampliar sua financiabilidade.",
+    "pagina": 48
+   },
+   "1083": {
+    "texto": "Tratar conectividade, redes de telecomunicações e centros de processamento de dados como infraestrutura estratégica. O Brasil reúne o que a economia digital procura: energia majoritariamente limpa e renovável, escala continental e posição privilegiada para conectividade. Assegurar ambiente regulatório e tributário competitivo para transformar essa vantagem em investimento e empregos. Acelerar a expansão das redes pelo compartilhamento da infraestrutura passiva, postes, dutos, torres e fibra, e pela previsibilidade do direito de passagem, e aplicar de forma efetiva os recursos setoriais de universalização, hoje subutilizados, para levar conectividade de qualidade a todos os municípios. São 5.571 municípios no país, e a universalização não deve deixar nenhum de fora. Fortalecer a proteção de dados pessoais como pilar da economia digital: aplicação efetiva da LGPD na guarda e no uso das informações de empresas e cidadãos, com atenção especial à população menos familiarizada com o ambiente digital, e atualização da lei no ritmo da evolução tecnológica.",
+    "pagina": 48
+   },
+   "1085": {
+    "texto": "Incorporar critérios de resiliência climática, sustentabilidade e prevenção de desastres ao planejamento, à contratação e à manutenção da infraestrutura, com atenção especial à adaptação das cidades e à gestão de recursos hídricos, e converter esse atributo em acesso a capital de menor custo por meio dos instrumentos financeiros sustentáveis. Estender esse conceito de resiliência à proteção das infraestruturas críticas contra falhas, ataques cibernéticos e interrupções, integrando a segurança das redes físicas e digitais ao planejamento, à contratação e à operação, aplicando as diretrizes da Estratégia Nacional de Segurança Cibernética (E-Ciber).",
+    "pagina": 48
+   },
+   "1145": {
+    "texto": "Acelerar universalização de água e esgoto, regionalização, concessões e soluções adequadas a áreas rurais e periferias. Encerrar lixões, fortalecer logística reversa, reciclagem e inclusão de catadores, e induzir design circular e aproveitamento de resíduos.",
+    "pagina": 51
+   },
+   "1230": {
+    "texto": "Transporte é direito social e condição de acesso ao emprego, à escola, à saúde e à cidade. O governo federal colocará o transporte público coletivo no centro da agenda nacional, respeitando a titularidade de municípios e estados e assumindo sua responsabilidade de coordenar, financiar e dar segurança jurídica.",
+    "pagina": 56
+   },
+   "1231": {
+    "texto": "O eixo será uma Política Nacional de Financiamento no primeiro ano de governo, sem novo imposto geral, combinada a tarifa justa, integração metropolitana, padrões nacionais de qualidade, prioridade operacional, renovação de frotas, infraestrutura de média e alta capacidade, mobilidade ativa, acessibilidade e segurança viária.",
+    "pagina": 56
+   },
+   "1239": {
+    "texto": "1. Transporte público coletivo como política de Estado",
+    "pagina": 56
+   },
+   "1240": {
+    "texto": "Regulamentar e implementar integralmente a Lei nº 15.432/2026, definir responsabilidades federativas e tratar ônibus, trens, metrôs e sistemas estruturais como serviço essencial. A União coordenará diretrizes, informação, financiamento e apoio técnico sem centralizar a operação local.",
+    "pagina": 56
+   },
+   "1241": {
+    "texto": "2. Política Nacional de Financiamento no primeiro ano",
+    "pagina": 56
+   },
+   "1242": {
+    "texto": "Enviar ao Congresso proposta de financiamento plurianual, sem novo imposto geral e sem aumento da carga tributária. Reorganizar receitas existentes, recursos climáticos, contrapartidas de beneficiários indiretos, receitas de estacionamento e outorgas, recuperação de mais-valias urbanas e instrumentos de crédito. O acesso federal será condicionado a metas públicas de qualidade, eficiência e transparência.",
+    "pagina": 56
+   },
+   "1243": {
+    "texto": "3. Tarifa justa e mobilidade para quem mais precisa",
+    "pagina": 56
+   },
+   "1244": {
+    "texto": "Definir fonte explícita para gratuidades e benefícios criados por lei, evitando que seu custo seja embutido na tarifa de quem paga. Integrar apoio à mobilidade das famílias de baixa renda à rede federal de proteção social, com critérios transparentes, interoperabilidade e prevenção de fraude.",
+    "pagina": 56
+   },
+   "1245": {
+    "texto": "4. Modernizar o benefício de transporte do trabalhador",
+    "pagina": 56
+   },
+   "1246": {
+    "texto": "Atualizar o vale-transporte para a realidade de vínculos formais, trabalho híbrido e múltiplos modos coletivos.",
+    "pagina": 56
+   },
+   "1247": {
+    "texto": "Simplificar obrigações para empresas, ampliar a base de uso, permitir integração digital e recuperar sua capacidade de financiar o deslocamento do trabalhador sem estimular informalidade.",
+    "pagina": 56
+   },
+   "1250": {
+    "texto": "5. Contratos seguros, custo aberto e qualidade mensurável",
+    "pagina": 57
+   },
+   "1251": {
+    "texto": "Estabelecer referência nacional para contratos, revisão tarifária, matriz de risco e reequilíbrio econômico. Separar tarifa pública do custo real do serviço, publicar subsídios, frota, pontualidade e lotação e criar padrões de confiabilidade, conforto, acessibilidade, limpeza, informação e atendimento ao usuário.",
+    "pagina": 57
+   },
+   "1252": {
+    "texto": "6. Redes metropolitanas integradas",
+    "pagina": 57
+   },
+   "1253": {
+    "texto": "Apoiar consórcios e autoridades metropolitanas com governança interfederativa, bilhete único, integração física, tarifária e operacional e planejamento conjunto de ônibus, trens, metrôs, bicicletas e transporte sob demanda.",
+    "pagina": 57
+   },
+   "1254": {
+    "texto": "Recursos federais priorizarão redes com responsabilidades e financiamento compartilhados.",
+    "pagina": 57
+   },
+   "1255": {
+    "texto": "7. Prioridade operacional ao transporte coletivo",
+    "pagina": 57
+   },
+   "1256": {
+    "texto": "Expandir faixas e corredores exclusivos, prioridade semafórica, terminais, estações, pontos seguros e informação em tempo real. A medida mais rápida e barata para melhorar o serviço é retirar o ônibus do congestionamento, reduzir o tempo de viagem e aumentar a produtividade da frota.",
+    "pagina": 57
+   },
+   "1257": {
+    "texto": "8. Renovação de frotas acessíveis e de baixa emissão",
+    "pagina": 57
+   },
+   "1258": {
+    "texto": "Criar programa nacional para substituir veículos antigos por ônibus climatizados, acessíveis e de baixa emissão.",
+    "pagina": 57
+   },
+   "1259": {
+    "texto": "Combinar eletricidade, biometano e biocombustíveis segundo custo, infraestrutura e vocação local, alinhar financiamento climático à política industrial e proteger os sistemas da volatilidade do diesel.",
+    "pagina": 57
+   },
+   "1260": {
+    "texto": "9. Infraestrutura de média e alta capacidade",
+    "pagina": 57
+   },
+   "1261": {
+    "texto": "Retomar investimentos em corredores estruturais, BRT, VLT, trens metropolitanos, metrôs e integração ferroviária, escolhidos por demanda e melhor custo-benefício, e não por preferência tecnológica. Apoiar estudos, desapropriações, licenciamento, engenharia e operação para que projetos não parem após o anúncio.",
+    "pagina": 57
+   },
+   "1262": {
+    "texto": "10. Mobilidade ativa, acessibilidade e primeira e última milha",
+    "pagina": 57
+   },
+   "1263": {
+    "texto": "Apoiar redes contínuas de calçadas, travessias, ciclovias, bicicletários, integração com terminais e desenho universal. Priorizar rotas escolares, áreas de grande circulação e acesso de idosos, crianças e pessoas com deficiência, com manutenção e fiscalização permanentes.",
+    "pagina": 57
+   },
+   "1264": {
+    "texto": "11. Segurança viária e redução do trauma",
+    "pagina": 57
+   },
+   "1265": {
+    "texto": "Adotar metas de redução de mortes e lesões graves, tratamento de pontos críticos, fiscalização baseada em risco, desenho seguro de vias e integração com saúde e educação. Dar atenção especial a motociclistas, pedestres, ciclistas, transporte escolar e usuários vulneráveis.",
+    "pagina": 57
+   },
+   "1266": {
+    "texto": "12. Planejamento urbano orientado ao transporte",
+    "pagina": 57
+   },
+   "1267": {
+    "texto": "Integrar planos de mobilidade, uso do solo, habitação e desenvolvimento econômico. Estimular adensamento com qualidade ao redor de eixos de transporte, gestão de estacionamento, recuperação de valorização imobiliária e banco nacional de projetos, para reduzir distâncias e assegurar manutenção ao longo do ciclo de vida.",
+    "pagina": 57
+   },
+   "1404": {
+    "texto": "Integrar produção habitacional, urbanização, regularização fundiária, locação social e melhoria de moradias.",
+    "pagina": 62
+   },
+   "1405": {
+    "texto": "Priorizar famílias com crianças, mulheres vítimas de violência, pessoas com deficiência e idosos, com localização próxima a emprego, transporte e serviços.",
+    "pagina": 62
+   },
+   "1441": {
+    "texto": "O governo construirá, com os nove estados e seus municípios, um Pacto Nordeste 2030.",
+    "pagina": 64
+   },
+   "1442": {
+    "texto": "Segurança hídrica, educação, produtividade, energia, indústria, logística, inovação, segurança pública e inclusão serão integradas a uma carteira regional de projetos, com BNB, FNE e Sudene fortalecidos, metas territoriais e avaliação pública.",
+    "pagina": 64
+   },
+   "1454": {
+    "texto": "Construir com governadores, prefeitos, Sudene, BNB, universidades, setor produtivo e sociedade uma estratégia decenal com prioridades por território. Criar banco regional de projetos maduros, com engenharia, licenciamento, fonte de financiamento, cronograma e indicadores, para substituir anúncios dispersos por execução coordenada.",
+    "pagina": 64
+   },
+   "1456": {
+    "texto": "Dar previsibilidade, capacidade técnica e governança ao planejamento e ao financiamento regional.",
+    "pagina": 64
+   },
+   "1457": {
+    "texto": "Direcionar recursos para municípios de baixa renda e projetos que elevem produtividade, integrar crédito,",
+    "pagina": 64
+   },
+   "1464": {
+    "texto": "Acelerar água, esgoto, drenagem, resíduos e urbanização em periferias e pequenas cidades, com regionalização, tarifa social e apoio técnico. Preparar áreas urbanas para enchentes, deslizamentos, calor extremo, erosão costeira e elevação do nível do mar, vinculando infraestrutura a saúde, habitação e proteção ambiental.",
+    "pagina": 65
+   },
+   "1472": {
+    "texto": "Concluir e integrar Transnordestina, FIOL, ferrovias, portos, cabotagem, rodovias de conexão, terminais e aeroportos regionais com base em demanda e retorno. Resolver acessos urbanos e portuários, ampliar armazenagem e conectar polos produtivos ao mercado interno, à América do Sul, à Europa, à África e à América do Norte.",
+    "pagina": 65
+   },
+   "1474": {
+    "texto": "Universalizar fibra e 5G em escolas, unidades de saúde, distritos produtivos e áreas rurais. Apoiar parques tecnológicos, startups, laboratórios, computação de alto desempenho e ambientes de teste. Atrair infraestrutura digital com energia limpa, eficiência hídrica, proteção de dados e formação local, evitando enclaves que consumam recursos sem gerar capacidade regional.",
+    "pagina": 65
+   },
+   "1561": {
+    "texto": "A Amazônia será tratada como território de soberania, desenvolvimento e conservação. O objetivo será garantir presença efetiva do Estado, segurança fundiária, proteção das fronteiras, serviços públicos adaptados às grandes distâncias e uma economia capaz de gerar renda a partir da floresta conservada, da ciência, da produção sustentável e das vocações regionais.",
+    "pagina": 69
+   },
+   "1573": {
+    "texto": "Implantar uma Plataforma Integrada de Governança Fundiária da Amazônia, reunindo registros imobiliários, cadastros rurais e ambientais, georreferenciamento, terras públicas, assentamentos, unidades de conservação, terras indígenas e decisões judiciais.",
+    "pagina": 69
+   },
+   "1574": {
+    "texto": "Identificar sobreposições, cadeias dominiais suspeitas e ocupações legítimas, acelerar a destinação de terras públicas e apoiar a regularização fundiária com transparência, contraditório e segurança jurídica.",
+    "pagina": 69
+   },
+   "1575": {
+    "texto": "Concluir e atualizar o zoneamento territorial e ambiental, definindo áreas de conservação, produção, infraestrutura, mineração, cidades e serviços públicos.",
+    "pagina": 69
    }
   }
  }

@@ -79,14 +79,16 @@ for (const id of prontas) {
 // -------------------------------------------------------------- por UF
 for (const cargo of CARGOS_POR_UF) {
   const comDados = new Set(ufsProntas(cargo.slug));
-  if (cargo.menu && !contaLinks(home, cargo.href)) falhas.push(`index.html: não linka ${cargo.href}`);
+  // o cargo no menu é linkado pelo cabeçalho de toda página; a escolha da UF é a página do cargo
+  if (cargo.menu && !contaLinks(home, cargo.href)) falhas.push(`index.html: o menu não linka ${cargo.href}`);
   if (!cargo.menu && contaLinks(home, cargo.href)) falhas.push(`index.html: linka ${cargo.href}, que está fora do menu`);
+  const escolha = le(`${cargo.slug}.html`);
   for (const uf of UFS) {
     const sigla = uf.sigla.toLowerCase();
     const rel = join(cargo.slug, `${sigla}.html`);
     const html = le(rel);
     if (!html) continue;
-    if (cargo.menu && !contaLinks(home, `${cargo.href}/${sigla}`)) falhas.push(`index.html: não linka ${cargo.href}/${sigla}`);
+    if (escolha && !contaLinks(escolha, `${cargo.href}/${sigla}`)) falhas.push(`${cargo.slug}.html: não linka ${cargo.href}/${sigla}`);
     if (!comDados.has(sigla)) {
       if (!/em preparação/.test(html)) falhas.push(`${rel}: sem dados e sem dizer "em preparação"`);
       continue;

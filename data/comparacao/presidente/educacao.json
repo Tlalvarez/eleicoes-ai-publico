@@ -10,9 +10,9 @@
   "primeira_infancia"
  ],
  "origem": {
-  "arquivo": "educacao-5.json",
-  "gerado_em": "2026-09-13T07:59:38Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "educacao-6.json",
+  "gerado_em": "2026-09-14T05:20:55Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -54,26 +54,44 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Tornar a melhoria da aprendizagem na educação básica a prioridade da ação federal",
+   "subtema": "Alfabetização",
+   "proposta": "Garantir a alfabetização na idade certa como prioridade nacional, com apoio federal a estados e municípios",
    "n_concorda": 5,
    "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      414
-     ],
-     "nota": "Foco em língua portuguesa e matemática"
-    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      261
+      262
+     ],
+     "nota": "Compromisso Nacional Criança Alfabetizada, meta de 80%"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      22,
+      118,
+      725
+     ],
+     "nota": "Pacto Nacional pela Alfabetização e Matemática até o 2º ano"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      613,
+      614
      ],
      "nota": ""
     },
@@ -84,19 +102,11 @@
      ],
      "nota": ""
     },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      611,
-      612
-     ],
-     "nota": "Aprendizagem do aluno como centro do sistema"
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      593,
-      604
+      590,
+      602
      ],
      "nota": ""
     }
@@ -104,18 +114,1040 @@
   },
   {
    "id": "p2",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Ampliar a oferta de educação em tempo integral",
+   "subtema": "Alfabetização",
+   "proposta": "Adotar o método fônico de alfabetização, baseado em evidências científicas",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      406,
+      422
+     ],
+     "nota": "Adoção universal do sistema fônico"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      602
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Alfabetização",
+   "proposta": "Instituir estratégia nacional de recomposição das aprendizagens para estudantes com defasagem",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      263
+     ],
+     "nota": "Foco em anos finais do fundamental e ensino médio"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      614
+     ],
+     "nota": "A partir do Pacto Nacional pela Recomposição"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      729,
+      730,
+      1527
+     ],
+     "nota": "Diagnóstico por estudante e meta de redução do contingente abaixo do básico"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      603
+     ],
+     "nota": "Programa Acolher, com tutoria remunerada entre alunos"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Primeira infância",
+   "proposta": "Ampliar a oferta de vagas em creches e educação infantil",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      264,
+      284
+     ],
+     "nota": "Via Novo PAC, com metas do PNE"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      602,
+      603
+     ],
+     "nota": "Prioriza parcerias com o setor privado e comunitário"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      443,
+      642
+     ],
+     "nota": "Creche em período integral com alimentação"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      727,
+      1330,
+      1331
+     ],
+     "nota": "Universalizar pré-escola e ampliar horários compatíveis com o trabalho"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Primeira infância",
+   "proposta": "Conceder voucher-creche para acesso à rede privada credenciada onde faltar vaga pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      443,
+      642
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Primeira infância",
+   "proposta": "Integrar as políticas de primeira infância entre educação, saúde e assistência social, com acompanhamento de resultados",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      607,
+      608
+     ],
+     "nota": "Estratégia nacional com metas compartilhadas e integração de dados"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      727,
+      1390
+     ],
+     "nota": "Foco nos primeiros mil dias, pré-natal, parentalidade e visitas domiciliares"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Primeira infância",
+   "proposta": "Fortalecer o Programa Criança Feliz e as visitas domiciliares, condicionando repasses de transferência de renda ao cumprimento das visitas",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      807,
+      808
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Primeira infância",
+   "proposta": "Ampliar a avaliação nacional da educação básica para abranger a educação infantil, com parâmetros de qualidade e monitoramento do desenvolvimento infantil",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      604,
+      605
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      727
+     ],
+     "nota": "Avaliar qualidade e desenvolvimento infantil nas creches"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Ampliar a oferta de educação técnica e profissional articulada ao ensino médio e às demandas do mercado",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      593,
+      594,
+      633,
+      634
+     ],
+     "nota": "Educação profissional voltada a mercados agroambientais"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      616
+     ],
+     "nota": "Setor produtivo poderá custear bolsas de formação técnica"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      277
+     ],
+     "nota": "Expansão da rede de institutos federais com interiorização"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      574,
+      1165
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      1002,
+      1478
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Criar programas de formação em setores de fronteira tecnológica em parceria com o setor privado e atualizar currículos para IA, automação e tecnologias digitais",
    "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      615,
-      616
+      686,
+      687
      ],
-     "nota": "Via financiamento ao EMI e parcerias privadas condicionadas a resultados"
+     "nota": ""
     },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      618
+     ],
+     "nota": "Política Nacional de Formação de Talentos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      998,
+      999,
+      1003
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      799
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Implantar programa nacional de requalificação profissional e incentivar formação contínua nas empresas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1005,
+      1006
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Criar rede nacional de escolas de empreendedorismo e incluir empreendedorismo no currículo escolar",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      511,
+      1139,
+      1140,
+      1157,
+      1172,
+      1173,
+      1174,
+      1600
+     ],
+     "nota": "10 mil Escolas de Empreendedorismo"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Ensino superior",
+   "proposta": "Transferir a gestão do ensino superior do Ministério da Educação para o Ministério da Ciência e Tecnologia",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      620,
+      621,
+      660,
+      661
+     ],
+     "nota": "MEC ficaria só com educação básica"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      619
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Ensino superior",
+   "proposta": "Reorientar bolsas e critérios da Capes e do CNPq para pesquisas de impacto produtivo, inovação e transferência de tecnologia",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      673,
+      674
+     ],
+     "nota": "Inclui bolsas dentro de empresas privadas"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      619
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1191,
+      1192
+     ],
+     "nota": "Propõe ampliar ações e investimentos de Capes e CNPq"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Ensino superior",
+   "proposta": "Aproximar universidades do setor produtivo, estimulando startups, patentes e pesquisa aplicada",
+   "n_concorda": 5,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      577,
+      828,
+      1193,
+      1194,
+      1198,
+      1199
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      758
+     ],
+     "nota": "Mestrados profissionais e residências tecnológicas"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      624
+     ],
+     "nota": "Pós lato sensu voltada ao mercado"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      687
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      410
+     ],
+     "nota": "Centros de pesquisa em terras raras e faculdades ligadas ao plano industrial"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Ensino superior",
+   "proposta": "Ampliar vagas, bolsas e financiamento na formação em ciências, tecnologia, engenharia e matemática (STEM)",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      680,
+      681
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      410
+     ],
+     "nota": "Realocando recursos de cursos bacharelescos para STEM"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      756
+     ],
+     "nota": "Reforma da formação em engenharia, ciência e tecnologia"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      829
+     ],
+     "nota": "Estimular mestrado e doutorado em IA aplicada"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Ensino superior",
+   "proposta": "Expandir e interiorizar a rede federal de ensino superior público, com novos campi e obras de infraestrutura",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      278,
+      279
+     ],
+     "nota": "Inclui Universidade Indígena, do Esporte e nova unidade do ITA"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Ensino superior",
+   "proposta": "Ampliar a assistência estudantil (alimentação, moradia e permanência) no ensino superior",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      279
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Ensino superior",
+   "proposta": "Substituir a eleição interna de reitores por processo de escolha técnico, com conselhos externos",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      662,
+      664
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Ensino superior",
+   "proposta": "Substituir a autonomia universitária por alinhamento estratégico do ensino superior às prioridades nacionais de desenvolvimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      410,
+      418
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Ensino superior",
+   "proposta": "Premiar financeiramente universidades e institutos federais por indicadores de desempenho acadêmico e empregabilidade dos egressos",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      665,
+      666
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Ensino superior",
+   "proposta": "Permitir que professores de universidades federais se dediquem exclusivamente ao ensino ou à pesquisa",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      671,
+      672
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Ensino superior",
+   "proposta": "Elevar as exigências de avaliação no ensino superior, fechando ou reestruturando cursos de qualidade insuficiente",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      756
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Ensino superior",
+   "proposta": "Substituir o financiamento estudantil atual por empréstimo contingente à renda, com pagamento proporcional ao salário após o emprego",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      625
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Ensino superior",
+   "proposta": "Ampliar e qualificar a pós-graduação em áreas e regiões pouco atendidas",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      282
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Ensino superior",
+   "proposta": "Ampliar a rede de hospitais universitários e articulá-los à política de especialidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      283
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Ensino superior",
+   "proposta": "Manter cursinhos populares e programas preparatórios gratuitos para ampliar o acesso ao ensino superior e técnico",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      276
+     ],
+     "nota": "CPop e Partiu IF"
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Reformar e elevar o padrão da formação inicial de professores, aproximando-a da prática e das evidências científicas",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      624,
+      625
+     ],
+     "nota": "Ampliar residências pedagógicas e critérios de qualidade nas licenciaturas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      329,
+      741
+     ],
+     "nota": "Restringir cursos de baixa qualidade e exigir prática supervisionada"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": "Pé-de-Meia Licenciatura e Bolsa Mais Professores"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      605
+     ],
+     "nota": "Qualificação contínua baseada em evidências, sem modismos"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      356,
+      581
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Vincular a progressão na carreira docente ao desempenho e à qualificação, e não apenas ao tempo de serviço",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      628,
+      629
+     ],
+     "nota": "Diretrizes nacionais de carreira por desempenho"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": "Remuneração baseada também em qualificação"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Manter o Piso Nacional do Magistério",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Profissionalizar a seleção e a formação de diretores escolares com critérios técnicos",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      626,
+      627
+     ],
+     "nota": "Condiciona parte dos repasses a critérios técnicos de seleção"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      743
+     ],
+     "nota": "Seleção por competência com participação da comunidade"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      272
+     ],
+     "nota": "Apoio à formação de gestores e equipes técnicas"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Formar professores como provocadores da arte de pensar, com metodologia ativa baseada em perguntar, desafiar e elogiar a participação",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      311,
+      1117,
+      1118,
+      1119,
+      1120,
+      1261,
+      1262,
+      1264,
+      1267,
+      1269,
+      1270
+     ],
+     "nota": "Metodologia Psicoativa / Escola de Pensadores"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Criar programa nacional de formação de professores e gestores em neurodiversidade e gestão da emoção",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1280,
+      1281,
+      1284,
+      1285,
+      1289
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Avaliação e financiamento da educação básica",
+   "proposta": "Fortalecer o sistema nacional de avaliação da aprendizagem (Saeb/Ideb) para orientar políticas educacionais",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      611,
+      612,
+      645
+     ],
+     "nota": "Avaliação periódica em todos os modelos educacionais"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      715,
+      753,
+      754
+     ],
+     "nota": "Evitando rankings simplistas"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      604
+     ],
+     "nota": "Gestão baseada em indicadores de proficiência"
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Avaliação e financiamento da educação básica",
+   "proposta": "Vincular repasses financeiros às escolas a metas e resultados de aprendizagem",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      604
+     ],
+     "nota": "Orçamento por resultados, sem abandonar regiões mais difíceis"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      754
+     ],
+     "nota": "Recursos direcionados às escolas com melhor avaliação"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      420
+     ],
+     "nota": "Modulação do VAAR por ranking de disciplina"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Avaliação e financiamento da educação básica",
+   "proposta": "Centralizar na União competências hoje locais em educação, reformando as regras de competência federativa",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      407,
+      420,
+      422
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "discorda",
+     "blocos": [
+      715
+     ],
+     "nota": "União respeitará a gestão local, atuando em padrões, apoio e financiamento"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Avaliação e financiamento da educação básica",
+   "proposta": "Manter a liderança federal em regime de colaboração e apoio técnico a estados e municípios, com cumprimento das metas do PNE",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      261,
+      272
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      714,
+      715
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Manter e aprimorar o programa Pé-de-Meia de incentivo financeiro contra a evasão no ensino médio",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      270
+     ],
+     "nota": "Ampliação e continuidade sem novas condicionalidades de desempenho"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      638,
+      639
+     ],
+     "nota": "Melhorar a focalização nos alunos com maior risco de evasão"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      747
+     ],
+     "nota": "Bolsa de permanência focalizada, vinculada a matrícula e frequência"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Condicionar o benefício do Pé-de-Meia ao desempenho do aluno, com exigência de nota mínima no Enem e prêmio por excelência",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      636,
+      637
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Reformular o currículo do ensino médio equilibrando formação geral e profissional, com itinerários reais e projeto de vida",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      270
+     ],
+     "nota": "Nova lei do ensino médio aprovada"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      736,
+      737
+     ],
+     "nota": "Inclui transformar o Enem em instrumento de conclusão e acesso"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1150,
+      1153,
+      1168,
+      1169,
+      1170
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Apoiar os anos finais do ensino fundamental com tutoria, busca ativa e apoio socioemocional para prevenir abandono",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      734
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Restringir a progressão continuada, impedindo que o aluno avance de série sem ter aprendido",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      409,
+      423
+     ],
+     "nota": "Progressão parcial até sua revogação"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      595,
+      603
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Integrar a educação de jovens e adultos à qualificação profissional, certificação de competências e intermediação de trabalho",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      762
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      263
+     ],
+     "nota": "Enfrentamento do analfabetismo adulto"
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Ampliar a educação em tempo integral na educação básica",
+   "n_concorda": 5,
+   "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -123,6 +1155,22 @@
       268
      ],
      "nota": "Prioridade absoluta, com financiamento pelo Fundeb"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      615,
+      616
+     ],
+     "nota": "Com parcerias privadas condicionadas a resultados"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      745,
+      1478
+     ],
+     "nota": "Priorizando territórios vulneráveis"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -138,192 +1186,76 @@
       1129,
       1130
      ],
-     "nota": "Escola integral como 'clube de desenvolvimento humano'"
+     "nota": "Escola integral como clube de desenvolvimento humano"
     }
    }
   },
   {
-   "id": "p3",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Vincular repasses e financiamento das escolas a metas e indicadores de resultado",
+   "id": "p45",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Ampliar as escolas cívico-militares",
    "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      604
+      606
      ],
-     "nota": "Orçamento por resultados, sem abandonar regiões mais difíceis"
+     "nota": ""
     },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      616,
-      627
-     ],
-     "nota": "Condiciona repasses a critérios de gestão e qualidade"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      420
-     ],
-     "nota": "Modula o VAAR pelo ranking de disciplina"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Acabar com a progressão automática, condicionando o avanço de série à aprendizagem efetiva",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      409,
-      423
-     ],
-     "nota": "Progressão continuada parcial até sua revogação"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      595,
-      603
+      643
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Criar programa de reforço escolar com alunos de bom desempenho remunerados para ensinar colegas",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      603
-     ],
-     "nota": "Programa Acolher, presencial ou remoto"
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Levar internet de qualidade e equipamentos tecnológicos a todas as escolas",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      269
-     ],
-     "nota": "Universalizar conectividade adequada"
     },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      607
-     ],
-     "nota": "Robótica, computadores, tablets e internet"
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Apoiar estados e municípios na construção e melhoria da infraestrutura escolar",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      268
-     ],
-     "nota": "Nova edição do PAC e retomada de obras paralisadas"
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Manter as escolas abertas nas férias com atividades esportivas, artísticas e culturais",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      608,
-      613
-     ],
-     "nota": "Programa Escola nas Férias"
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Ampliar as competências da União na educação básica, reformando as regras de repartição federativa",
-   "n_concorda": 1,
-   "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       407,
-      420,
-      422
+      421
      ],
-     "nota": "Centralizar poderes na União sobre nova base do SNE"
+     "nota": "Imposição pela União em escolas críticas, como medida provisória"
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Prestar apoio técnico e coordenação federativa a estados e municípios, com compartilhamento de dados educacionais",
-   "n_concorda": 2,
+   "id": "p46",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Regulamentar o homeschooling e ampliar parcerias com escolas comunitárias, filantrópicas e confessionais para dar liberdade de escolha às famílias",
+   "n_concorda": 1,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      272
-     ],
-     "nota": ""
-    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      608
+      642,
+      643
      ],
-     "nota": "Metas compartilhadas e integração de dados na primeira infância"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p11",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Adotar nacionalmente as práticas do modelo educacional do Ceará",
+   "id": "p47",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Conceder voucher educacional para matrícula em outra escola onde faltar vaga na rede pública",
    "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
+    "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      406,
-      422
+      613
      ],
-     "nota": "Grupo de trabalho para implementação nacional"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p12",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Revisar a Base Nacional Comum Curricular para focá-la em aprendizagens essenciais",
-   "n_concorda": 1,
+   "id": "p48",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Revisar a Base Nacional Comum Curricular para focar em aprendizagens essenciais e competências do século XXI",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -331,29 +1263,163 @@
       617,
       618
      ],
-     "nota": "Prioridade a alfabetização, raciocínio lógico, ciências e competências digitais"
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Comprometer o governo federal com o cumprimento das metas do Plano Nacional de Educação 2026-2036",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
+     "nota": ""
+    },
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      261
+      799
+     ],
+     "nota": "Reforma curricular voltada a mercado, inovação e socioemocional"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      736
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Educação básica e gestão escolar",
-   "proposta": "Ampliar plataformas públicas digitais de leitura e idiomas para estudantes",
+   "id": "p49",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Incluir competências digitais, robótica e inteligência artificial no currículo escolar",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      607
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1160,
+      1161
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      618
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Incluir educação financeira no currículo da educação básica",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1139,
+      1156
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      607
+     ],
+     "nota": "Preparar o jovem para lidar com o próprio dinheiro"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Elevar a qualidade do ensino com foco nas disciplinas básicas de língua portuguesa e matemática",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      414
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      725,
+      730
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      570
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Incluir o ensino do cooperativismo nas escolas, universidades e cursos técnicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1158,
+      1177,
+      1178,
+      1179,
+      2561,
+      2562,
+      2603
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Garantir educação livre de doutrinação político-partidária, respeitando os valores transmitidos pelas famílias",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      593,
+      606
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Promover educação ambiental baseada em evidências e pensamento crítico, sem radicalismo",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      592
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Democratizar o acesso a livros e a idiomas por plataformas digitais públicas",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -366,397 +1432,230 @@
    }
   },
   {
-   "id": "p15",
-   "subtema": "Alfabetização",
-   "proposta": "Priorizar a alfabetização na idade certa como meta nacional",
-   "n_concorda": 5,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      613,
-      614
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      262
-     ],
-     "nota": "Continuidade do Compromisso Nacional Criança Alfabetizada"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      570
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      602
-     ],
-     "nota": ""
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      406
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Alfabetização",
-   "proposta": "Adotar o método fônico como método de alfabetização na rede escolar",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      406,
-      422
-     ],
-     "nota": "Adoção universal, amparada na BNCC e na PNA"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      602
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Alfabetização",
-   "proposta": "Instituir estratégia nacional de recomposição e aceleração das aprendizagens para estudantes com defasagem",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      613,
-      614
-     ],
-     "nota": "A partir do Pacto Nacional pela Recomposição das Aprendizagens"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      263
-     ],
-     "nota": "Atenção aos anos finais do fundamental e ao ensino médio"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Alfabetização",
-   "proposta": "Fortalecer as políticas de enfrentamento do analfabetismo na população adulta",
+   "id": "p56",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Manter as escolas abertas nas férias com atividades de esporte, arte, música e literatura",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      263
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Alfabetização",
-   "proposta": "Perseguir meta numérica de 80% das crianças alfabetizadas na idade certa",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      262
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Transferir a gestão do ensino superior do Ministério da Educação para o Ministério da Ciência e Tecnologia",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      620,
-      621,
-      660,
-      661
-     ],
-     "nota": "MEC ficaria só com educação básica e formação de professores"
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      619
+      608,
+      613
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p21",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Reformular os critérios das bolsas da Capes e do CNPq para priorizar impacto e aplicação prática da pesquisa",
+   "id": "p57",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Implantar programas permanentes de educação emocional nas escolas, com prevenção de ansiedade, depressão, automutilação e bullying",
    "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      673,
-      674
-     ],
-     "nota": "Inclui bolsas dentro de empresas privadas"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      619
-     ],
-     "nota": "Prioridade a impacto produtivo e transferência de tecnologia"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Aproximar universidades do setor produtivo, estimulando inovação, startups, patentes e transferência de tecnologia",
-   "n_concorda": 4,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      577,
-      828,
-      1193,
-      1194,
-      1198,
-      1199
-     ],
-     "nota": "Incubadoras, patentes e participação do pesquisador nos resultados"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      686,
-      687
-     ],
-     "nota": "Programas de formação em parceria com o setor privado"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      624
-     ],
-     "nota": "Pós lato sensu e recursos por formação demandada"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      410
-     ],
-     "nota": "Faculdades alinhadas ao plano industrial"
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Ampliar vagas e financiamento na formação em ciências, tecnologia, engenharia e matemática",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      680,
-      681
+      294,
+      303,
+      310,
+      344,
+      385,
+      584,
+      587,
+      1057,
+      1155,
+      1287,
+      1461
      ],
      "nota": ""
     },
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      410
+      734,
+      749
      ],
-     "nota": ""
+     "nota": "Apoio socioemocional e resposta precoce a bullying"
     }
    }
   },
   {
-   "id": "p24",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Realocar os recursos hoje aplicados em cursos de bacharelado para as áreas de STEM",
-   "n_concorda": 1,
+   "id": "p58",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Criar política nacional de prevenção à violência e melhoria da convivência escolar",
+   "n_concorda": 3,
    "posicoes": {
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      410
+      749
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Substituir a eleição interna de reitores por processo de escolha técnico com conselhos externos",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      662,
-      664
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Criar incentivos financeiros a universidades e institutos federais com base em desempenho acadêmico e empregabilidade",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      665,
-      666
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      624
-     ],
-     "nota": "Premiar quem forma para o emprego existente"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Permitir que professores das federais se dediquem exclusivamente ao ensino ou à pesquisa",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      671,
-      672
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Substituir a autonomia universitária por alinhamento estratégico definido pelo governo",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      410,
-      418
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Expandir e interiorizar a rede federal de ensino superior com novos campi",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      279
-     ],
-     "nota": "Inclui ITA no Ceará, Universidade Indígena e Universidade do Esporte"
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Ampliar a assistência estudantil, com alimentação e moradia, para permanência no ensino superior",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      204,
-      279
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Ampliar investimento em pesquisa e pós-graduação, inclusive em regiões e áreas pouco atendidas",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      282
-     ],
-     "nota": ""
+     "nota": "Protocolos de ameaça, mediação e equipes de apoio"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1191,
-      1192
+      775,
+      1288,
+      1467
      ],
-     "nota": "Ampliar as ações da Capes e do CNPq"
+     "nota": "Cultura de paz e resolução pacífica de conflitos"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      407
+     ],
+     "nota": "Via ranking de escolas violentas e sanções disciplinares"
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Substituir o financiamento estudantil atual por empréstimo contingente à renda",
+   "id": "p59",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Instituir código nacional de conduta disciplinar do estudante com punições objetivas e ranking oficial de disciplina das escolas",
    "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      407,
+      415,
+      419,
+      420
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Rever o Estatuto da Criança e do Adolescente para permitir maior responsabilização disciplinar do estudante",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Combater a intoxicação digital e promover cidadania digital entre crianças e jovens",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      356,
+      1444,
+      1447,
+      1461
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Educação inclusiva",
+   "proposta": "Ampliar o atendimento a estudantes com deficiência, TEA e transtornos de aprendizagem, com plano educacional individualizado e apoio especializado",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      648,
+      649
+     ],
+     "nota": "Inclui autorização de matrícula em escolas especializadas por escolha da família"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1272,
+      1273,
+      1274,
+      1276
+     ],
+     "nota": "Escola regular como espaço central, com AEE complementar"
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Educação inclusiva",
+   "proposta": "Garantir atendimento educacional a alunos com altas habilidades e superdotação",
+   "n_concorda": 2,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      625
+      606
      ],
-     "nota": "Pagamento só após emprego, parcela proporcional à renda"
+     "nota": "Implementar a política nacional já existente em lei"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1303
+     ],
+     "nota": "Via mapeamento nacional da neurodiversidade"
     }
    }
   },
   {
-   "id": "p33",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Abolir o sistema de cotas e substituí-lo por bolsas de mérito",
+   "id": "p64",
+   "subtema": "Educação inclusiva",
+   "proposta": "Criar mapa/levantamento nacional de dados sobre neurodiversidade, evasão, bullying e atendimento educacional especializado",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1295,
+      1299,
+      1300,
+      1301,
+      1302,
+      1304,
+      1305,
+      1306,
+      1307,
+      1308,
+      1310
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Educação inclusiva",
+   "proposta": "Organizar redes municipais integrando escola, família, atenção básica de saúde e assistência social para acompanhamento de estudantes",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1291,
+      1292,
+      1293
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Equidade e ação afirmativa",
+   "proposta": "Abolir o sistema de cotas na educação, substituindo-o por bolsas de mérito",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -773,29 +1672,94 @@
       163,
       164
      ],
-     "nota": "Defende e aprofunda a política de cotas e de equidade"
+     "nota": "Defende e aperfeiçoa a política de cotas, com reserva para quilombolas"
     }
    }
   },
   {
-   "id": "p34",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Criar centros universitários de pesquisa em terras raras e cadeia produtiva de componentes tecnológicos",
+   "id": "p67",
+   "subtema": "Equidade e ação afirmativa",
+   "proposta": "Acelerar a Política Nacional de Equidade, Educação para as Relações Étnico-Raciais e Educação Escolar Quilombola e ampliar campi quilombolas",
    "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      410
+      164,
+      165,
+      166
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p35",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Criar programa de retenção de talentos para conter a fuga de cérebros",
+   "id": "p68",
+   "subtema": "Equidade e ação afirmativa",
+   "proposta": "Direcionar recursos, tutoria e professores adicionais às escolas e estudantes com maiores defasagens, com financiamento por equidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      715,
+      1526,
+      1527
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Infraestrutura e conectividade escolar",
+   "proposta": "Universalizar a internet de qualidade e o acesso a tecnologia nas escolas",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      269
+     ],
+     "nota": "Via Novo PAC, meta de universalização"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      751,
+      752
+     ],
+     "nota": "Com proteção de dados e IA sem substituir professores"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      607
+     ],
+     "nota": "Computadores, tablets e robótica nas escolas"
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Infraestrutura e conectividade escolar",
+   "proposta": "Manter apoio federal à construção e reforma de escolas e creches, retomando obras paralisadas",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      264,
+      268
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Retenção de talentos",
+   "proposta": "Criar programa de retenção de talentos e combate à fuga de cérebros",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -808,800 +1772,107 @@
    }
   },
   {
-   "id": "p36",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Estimular a formação de mestres e doutores em inteligência artificial aplicada a setores produtivos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      829
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Manter rede pública de cursinhos populares e preparatórios gratuitos para acesso ao ensino superior e técnico",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      204,
-      276
-     ],
-     "nota": "CPop e Partiu IF"
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Ensino superior, ciência e pesquisa",
-   "proposta": "Implantar novos hospitais universitários articulados à rede de saúde",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      283
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Fortalecer a formação de professores com base em evidências científicas sobre aprendizagem",
-   "n_concorda": 4,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      624,
-      625
-     ],
-     "nota": "Residências pedagógicas e critérios de qualidade nas licenciaturas"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      605
-     ],
-     "nota": "Qualificação contínua, contra modismos pedagógicos"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      275
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      356,
-      581
-     ],
-     "nota": "Formação continuada e professor como provocador da arte de pensar"
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Valorizar a carreira docente com melhores condições de trabalho e remuneração",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      581
-     ],
-     "nota": "Remuneração também baseada em qualificação"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      275
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Manter o Piso Nacional do Magistério e programas de atração e fixação de docentes",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      275
-     ],
-     "nota": "Pé-de-Meia Licenciatura e Bolsa Mais Professores"
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Fazer a progressão na carreira docente depender de desempenho e desenvolvimento profissional, e não do tempo de serviço",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      628,
-      629
-     ],
-     "nota": "Diretrizes nacionais de carreira por desempenho"
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Investir na formação e na seleção técnica de diretores e gestores escolares",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      626,
-      627
-     ],
-     "nota": "Condiciona parte dos repasses a critérios técnicos de seleção"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      272
-     ],
-     "nota": "Formação de gestores e equipes técnicas"
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Restaurar a autoridade do professor em sala de aula",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      408,
-      415
-     ],
-     "nota": "Via ordem disciplinar rígida"
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Professores e gestão pedagógica",
-   "proposta": "Criar programa nacional de formação de professores em neurodiversidade e gestão da emoção",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1279,
-      1280,
-      1281,
-      1284,
-      1285
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Ampliar a oferta de ensino técnico e profissionalizante articulado ao ensino médio",
-   "n_concorda": 4,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      633,
-      634
-     ],
-     "nota": "Cursos concomitantes ou subsequentes, alinhados a vocações regionais"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      616
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      260,
-      277
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      574,
-      1168
-     ],
-     "nota": "Ensino técnico integrado ao médio"
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Expandir a rede de institutos federais priorizando interiorização, periferias e vazios educacionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      277
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Organizar a formação técnica em parceria com o setor produtivo, inclusive com bolsas custeadas por empresas",
-   "n_concorda": 3,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      616
-     ],
-     "nota": "Setor produtivo pode custear bolsas de formação técnica"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      634,
-      686,
-      687
-     ],
-     "nota": "Sistema S, instituições privadas e institutos federais"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      574,
-      1165,
-      1168
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Manter e fortalecer o programa de incentivo financeiro à permanência no ensino médio (Pé-de-Meia)",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      204,
-      270
-     ],
-     "nota": "Continuidade e aprimoramento do programa"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      638,
-      639
-     ],
-     "nota": "Mantém, mas com focalização mais estrita"
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Condicionar o pagamento do incentivo do Pé-de-Meia ao desempenho do aluno, com nota mínima no Enem e maior exigência de frequência",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      636,
-      637
-     ],
-     "nota": "Premia estudantes de excelência com valor máximo"
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Aprimorar a focalização do Pé-de-Meia nos estudantes com maior risco de evasão",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      638,
-      639
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Reformular o currículo do ensino médio para aproximá-lo do mundo do trabalho e das novas tecnologias",
-   "n_concorda": 3,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      799,
-      1150,
-      1152,
-      1153,
-      1154,
-      1163,
-      1168,
-      1169,
-      1170
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      607,
-      618
-     ],
-     "nota": "Competências para a economia digital e profissões do futuro"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      270
-     ],
-     "nota": "Nova lei do ensino médio reequilibrando formação geral e profissional"
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Criar uma política nacional de identificação e desenvolvimento de talentos para o mercado de trabalho",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      618
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Incluir empreendedorismo e educação financeira como conteúdos do currículo escolar",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1139,
-      1156,
-      1157,
-      1172,
-      1173,
-      1174,
-      1175
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      607
-     ],
-     "nota": "Preparar o jovem para lidar com o próprio dinheiro e empreender"
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Criar uma rede nacional de escolas de empreendedorismo para jovens e adultos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      511,
-      1140,
-      1600,
-      1601,
-      1602,
-      1605
-     ],
-     "nota": "Meta de 10 mil escolas"
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Incluir o ensino do cooperativismo nas escolas, universidades e cursos técnicos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1158,
-      1177,
-      1178,
-      1179,
-      2561,
-      2603
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Fortalecer a educação profissional voltada a mercados agroambientais, bioeconomia e energias renováveis",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      593,
-      594
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Ampliar o modelo de escolas cívico-militares",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      407,
-      421
-     ],
-     "nota": "Imposição pela União em escolas críticas, como medida provisória"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      606
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      643
-     ],
-     "nota": "Como parte da pluralidade de modelos educacionais"
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Criar um código nacional de conduta do estudante com punições objetivas",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      408,
-      419
-     ],
-     "nota": "Rol de comportamentos e classificação de sanções"
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Criar ranking oficial de disciplina e violência nas escolas, usado para distribuir recursos e premiar gestores",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      407,
-      420
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Reavaliar o Estatuto da Criança e do Adolescente para viabilizar sanções disciplinares escolares",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      408
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Implantar programas permanentes de gestão da emoção e saúde mental nas escolas",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      294,
-      344,
-      385,
-      584,
-      587,
-      1287,
-      1288,
-      1289,
-      1452
-     ],
-     "nota": "Prevenção de ansiedade, depressão e automutilação"
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Desenvolver programas escolares de prevenção do bullying e do cyberbullying e de cultura de paz",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      775,
-      1444,
-      1450,
-      1461,
-      1467
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Ampliar o atendimento a estudantes com deficiência e transtorno do espectro autista, com plano individualizado e apoio especializado",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      648,
-      649
-     ],
-     "nota": "Plano educacional individualizado obrigatório"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1272,
-      1273,
-      1274,
-      1276,
-      1285
-     ],
-     "nota": "Plano de Inclusão e Desenvolvimento em cada escola"
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Autorizar a matrícula em escolas especializadas conforme escolha da família",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      649
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p66",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Garantir atendimento educacional a alunos com altas habilidades",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      606
-     ],
-     "nota": "Implementar a política nacional já existente em lei"
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Criar um mapa nacional da neurodiversidade com dados sobre TEA, TDAH, dislexia, evasão e bullying",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1295,
-      1299,
-      1300,
-      1301,
-      1302,
-      1303,
-      1304,
-      1305,
-      1306,
-      1308
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p68",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Organizar em cada município uma rede integrada entre escola, família, saúde e assistência social para neuroinclusão",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1291,
-      1292,
-      1293,
-      1310,
-      1311
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p69",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Acelerar a implementação da Política Nacional de Equidade, Educação para Relações Étnico-Raciais e Educação Escolar Quilombola",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      164
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p70",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Implantar campi de institutos federais em territórios quilombolas",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      165,
-      166
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Ampliar a oferta de vagas em creches e pré-escolas",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      602,
-      603
-     ],
-     "nota": "Foco em famílias vulneráveis, com metas de aprendizagem"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      443,
-      642
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": "Meta do PNE, com fomento a estados e municípios"
-    }
-   }
-  },
-  {
    "id": "p72",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Expandir a educação infantil por meio de parcerias com entidades privadas, comunitárias e filantrópicas",
+   "subtema": "Avaliação e financiamento da educação básica",
+   "proposta": "Reorientar o Saeb para avaliar competências analíticas, resolução de problemas e aplicação prática do conhecimento",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      602,
-      603
+      612
      ],
-     "nota": "Com transparência e metas de atendimento"
+     "nota": ""
     }
    }
   },
   {
    "id": "p73",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Conceder voucher-creche para a rede privada credenciada onde faltar vaga pública",
-   "n_concorda": 1,
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Ampliar cursos técnicos concomitantes ou subsequentes ao ensino médio alinhados às vocações regionais, em parceria com o setor produtivo, instituições privadas, Sistema S, institutos federais e redes estaduais",
+   "n_concorda": 4,
    "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      634
+     ],
+     "nota": ""
+    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      443,
-      642
+      616,
+      618
      ],
-     "nota": ""
+     "nota": "Ampliação de ensino técnico no médio em parceria com setor produtivo"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      573,
+      574,
+      1168
+     ],
+     "nota": "Propõe ampliar ensino técnico articulado ao médio, com aproximação entre escolas, empresas e universidades."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      1002,
+      1004,
+      1477
+     ],
+     "nota": "Expansão de educação profissional com institutos federais, Sistema S, redes estaduais e empresas, por vocação regional"
     }
    }
   },
   {
    "id": "p74",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Ofertar creche em período integral, com alimentação e foco no desenvolvimento infantil",
+   "subtema": "Avaliação e financiamento da educação básica",
+   "proposta": "Monitorar a qualidade dos diferentes modelos educacionais para assegurar resultados",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      420
+     ],
+     "nota": "Propõe ranking oficial aliado a indicadores de qualidade para modular repasses (VAAR)."
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      644
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      604
+     ],
+     "nota": "Gestão por indicadores de resultado e proficiência"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      727,
+      730,
+      754
+     ],
+     "nota": "Avaliação de qualidade e indicadores por escola e território"
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Primeira infância",
+   "proposta": "Tratar a educação desde a primeira infância e a qualificação e empregabilidade dos jovens como política permanente de prevenção à violência",
    "n_concorda": 1,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
       443
@@ -1611,32 +1882,31 @@
    }
   },
   {
-   "id": "p75",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Financiar com recursos federais a construção de creches e escolas de educação infantil",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      264,
-      268
-     ],
-     "nota": "Via Novo PAC, incluindo retomada de obras paralisadas"
-    }
-   }
-  },
-  {
    "id": "p76",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Incluir a educação infantil no sistema nacional de avaliação, com parâmetros nacionais de qualidade e monitoramento",
-   "n_concorda": 1,
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Fortalecer o Sistema S, os institutos federais e as universidades tecnológicas",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      604,
-      605
+      633,
+      634
+     ],
+     "nota": "Ampliar cursos técnicos em parceria com Sistema S, institutos federais e redes estaduais."
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      276,
+      277
+     ],
+     "nota": "Expansão da rede de institutos federais, com interiorização e vazios educacionais."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1004
      ],
      "nota": ""
     }
@@ -1644,15 +1914,21 @@
   },
   {
    "id": "p77",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Coordenar uma estratégia nacional intersetorial de primeira infância entre educação, saúde, assistência e segurança",
-   "n_concorda": 1,
+   "subtema": "Primeira infância",
+   "proposta": "Ampliar os horários de funcionamento das creches para compatibilizá-los com a jornada de trabalho das famílias",
+   "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
+    "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      607,
-      608
+      443
+     ],
+     "nota": "Creche em período integral para a mãe trabalhar"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1331
      ],
      "nota": ""
     }
@@ -1660,15 +1936,14 @@
   },
   {
    "id": "p78",
-   "subtema": "Primeira infância e creche",
-   "proposta": "Fortalecer o Programa Criança Feliz, condicionando repasses de transferência de renda ao cumprimento das visitas domiciliares",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Assegurar busca ativa e flexibilidade acadêmica para a permanência de gestantes, puérperas e estudantes com filhos na educação básica e na Educação de Jovens e Adultos",
    "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      807,
-      808
+      1331
      ],
      "nota": ""
     }
@@ -1676,119 +1951,17 @@
   },
   {
    "id": "p79",
-   "subtema": "Modelos educacionais e papel da família",
-   "proposta": "Regulamentar o ensino domiciliar (homeschooling)",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      643
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p80",
-   "subtema": "Modelos educacionais e papel da família",
-   "proposta": "Facilitar parcerias e convênios com escolas comunitárias, filantrópicas e confessionais",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Formar estudantes pensadores críticos, ensinando a arte de pensar, duvidar, analisar, contemplar e dialogar, em vez de repetir informações",
    "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      642,
-      643
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2560
-     ],
-     "nota": "Incentivo a cooperativas educacionais e escolas comunitárias"
-    }
-   }
-  },
-  {
-   "id": "p81",
-   "subtema": "Modelos educacionais e papel da família",
-   "proposta": "Conceder voucher educacional para matrícula em outra escola onde faltar vaga na rede pública",
-   "n_concorda": 1,
-   "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      613
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p82",
-   "subtema": "Modelos educacionais e papel da família",
-   "proposta": "Submeter todos os modelos educacionais a avaliação periódica da aprendizagem e mecanismos de proteção dos estudantes",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      644,
-      645
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p83",
-   "subtema": "Modelos educacionais e papel da família",
-   "proposta": "Garantir educação livre de doutrinação político-partidária, respeitando os valores transmitidos pelas famílias",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      593,
       606
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p84",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Adotar metodologia que forme pensadores, com o professor como provocador da arte de perguntar e de pensar",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1057,
-      1115,
-      1117,
-      1118,
-      1119,
-      1120,
-      1261,
-      1262,
-      1264,
-      1269
-     ],
-     "nota": "Metodologia Psicoativa / Escola de Pensadores"
-    }
-   }
-  },
-  {
-   "id": "p85",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Ensinar pensamento crítico, tolerância intelectual e diálogo respeitoso na escola",
-   "n_concorda": 2,
-   "posicoes": {
+     "nota": "'Escola é lugar de aprender a pensar, não de aprender o que pensar'"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
@@ -1797,97 +1970,17 @@
       301,
       309,
       310,
-      311,
-      1267
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      592
-     ],
-     "nota": "Pensamento crítico aplicado à educação ambiental"
-    }
-   }
-  },
-  {
-   "id": "p86",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Incluir competências digitais e inteligência artificial no currículo escolar",
-   "n_concorda": 3,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      607
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1159,
-      1160,
-      1161
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      618
-     ],
-     "nota": "Via revisão da BNCC"
-    }
-   }
-  },
-  {
-   "id": "p87",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Promover educação ambiental baseada em evidências, sem viés ideológico",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      592
+      1057,
+      1115
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p88",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Incluir oratória, artes, música e esportes como parte integrante da rotina escolar",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1130,
-      1131,
-      1132,
-      1133,
-      1134,
-      1135
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      613
-     ],
-     "nota": "Esporte, arte, música e literatura no contraturno e nas férias"
-    }
-   }
-  },
-  {
-   "id": "p89",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Estimular a criatividade na escola, tratando o erro como parte do aprendizado e reduzindo a punição excessiva ao erro",
+   "id": "p80",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Estimular a criatividade na escola, tratando o erro como parte do aprendizado e reduzindo a punição excessiva ao fracasso",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -1900,24 +1993,9 @@
    }
   },
   {
-   "id": "p90",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Ensinar estudantes a lidar com frustrações e desenvolver resiliência emocional",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      303
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p91",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Treinar líderes, professores, famílias, jovens, empresários e servidores públicos para administrar conflitos",
+   "id": "p81",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Criar programa nacional de formação em gestão emocional e administração de conflitos voltado a líderes, professores, famílias, jovens, empresários e servidores públicos",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -1930,59 +2008,52 @@
    }
   },
   {
-   "id": "p92",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Adotar práticas de elogio mútuo no ambiente escolar",
-   "n_concorda": 1,
+   "id": "p82",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Criar nas escolas espaços e atividades de oratória, debates, teatro, música, esportes, eventos culturais, convivência e práticas de elogio mútuo",
+   "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1136
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p93",
-   "subtema": "Clima escolar, disciplina e saúde mental",
-   "proposta": "Criar ambientes escolares de convivência e interação entre estudantes",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
+      1131,
+      1132,
+      1133,
+      1134,
+      1135,
+      1136,
       1137
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p94",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Incluir gestão da emoção como componente curricular do ensino médio",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      1155
+      734,
+      745
      ],
-     "nota": ""
+     "nota": "Tempo integral e anos finais com esporte, cultura e projetos"
     }
    }
   },
   {
-   "id": "p95",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Incluir desenvolvimento de projetos e liderança no currículo do ensino médio",
-   "n_concorda": 1,
+   "id": "p83",
+   "subtema": "Ensino médio e permanência escolar",
+   "proposta": "Incluir no currículo do ensino médio conteúdos de inovação, desenvolvimento de projetos e liderança",
+   "n_concorda": 2,
    "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      607,
+      618
+     ],
+     "nota": "Competências para economia digital, empreender e novas tecnologias no currículo"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
+      1159,
       1162
      ],
      "nota": ""
@@ -1990,40 +2061,25 @@
    }
   },
   {
-   "id": "p96",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Implantar metodologia psicoativa de inclusão nas escolas",
+   "id": "p84",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Incentivar nas escolas projetos práticos, laboratórios de inovação e desafios colaborativos para desenvolver o protagonismo juvenil",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1260
+      1175
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p97",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Adotar avaliação escolar que valorize participação, cooperação, argumentação e criação, combatendo a cultura da comparação",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1270
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p98",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Estruturar nacionalmente pelo MEC uma política de inclusão educacional",
-   "n_concorda": 3,
+   "id": "p85",
+   "subtema": "Educação inclusiva",
+   "proposta": "Estruturar nacionalmente, pelo Ministério da Educação, uma metodologia educacional inclusiva para as redes de ensino",
+   "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -2031,14 +2087,7 @@
       648,
       649
      ],
-     "nota": "Propõe ampliar educação inclusiva com diretrizes nacionais, PEI obrigatório e avaliação específica."
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      606
-     ],
-     "nota": "Compromete-se a implementar a política nacional de altas habilidades e garantir atendimento a esses alunos."
+     "nota": "Propõe atendimento inclusivo com plano educacional individualizado e profissionais capacitados."
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -2050,36 +2099,38 @@
    }
   },
   {
-   "id": "p99",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Mapear e prover profissionais de apoio para estudantes com necessidades específicas nas escolas",
+   "id": "p86",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Capacitar professores para identificar sinais de sofrimento emocional e encaminhar estudantes às redes de saúde e proteção, sem substituir profissionais especializados",
    "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      649
-     ],
-     "nota": "Prevê professores e profissionais especializados capacitados para estudantes com deficiência e TEA."
-    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1307
+      1289
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      747,
+      749
+     ],
+     "nota": "Equipes de apoio, resposta precoce a sofrimento, saúde mental integrada"
     }
    }
   },
   {
-   "id": "p100",
-   "subtema": "Inclusão e equidade educacional",
-   "proposta": "Avaliar projetos educacionais por indicadores de participação, bem-estar e descoberta de habilidades, além da aprovação escolar",
+   "id": "p87",
+   "subtema": "Educação inclusiva",
+   "proposta": "Implantar progressivamente em todas as redes públicas de educação básica protocolos de inclusão em cada escola, formação continuada de professores e indicadores de redução de evasão, bullying e exclusão",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
+      1311,
       1312
      ],
      "nota": ""
@@ -2087,81 +2138,79 @@
    }
   },
   {
-   "id": "p101",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Incluir na escola temas de autoestima, identidade, imagem corporal e uso crítico das redes sociais",
-   "n_concorda": 1,
+   "id": "p88",
+   "subtema": "Clima escolar, disciplina e saúde emocional",
+   "proposta": "Incluir nas escolas conteúdos sobre autoestima e identidade, comparação social, filtros e manipulação digital de imagens, respeito ao próprio corpo, prevenção do bullying e do cyberbullying, valorização das diferenças e saúde emocional",
+   "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       1445,
       1446,
-      1447,
       1448,
-      1449
+      1449,
+      1450,
+      1451,
+      1452
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      749
+     ],
+     "nota": "Prevenção de bullying, proteção digital e convivência escolar"
     }
    }
   },
   {
-   "id": "p102",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Promover na escola a valorização das diferenças",
+   "id": "p89",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Oferecer formação a empreendedores em gestão da emoção aplicada ao empreendedorismo, gestão financeira, estratégias de crescimento, metas e execução e adaptação à nova economia",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1451
+      1601,
+      1602,
+      1603,
+      1604,
+      1605
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p103",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Ensinar estratégias de crescimento, definição de metas e execução na formação empreendedora",
+   "id": "p90",
+   "subtema": "Currículo e modelos de escola",
+   "proposta": "Incentivar cooperativas educacionais, escolas comunitárias e centros de formação técnica voltados ao empreendedorismo coletivo",
    "n_concorda": 2,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      607
+      642,
+      643
      ],
-     "nota": "Propõe incluir no currículo competências para empreender e lidar com o próprio dinheiro."
+     "nota": "Facilitar parcerias com instituições comunitárias e confessionais e escolas conveniadas."
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1603,
-      1604
+      2560
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p104",
-   "subtema": "Currículo e formação humana",
-   "proposta": "Ensinar às novas gerações a competir com ética e responsabilidade social, aliando cooperação e competição",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2562
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p105",
-   "subtema": "Ensino médio e educação profissional",
-   "proposta": "Formar cooperados para gestão, inovação e tomada de decisões coletivas",
+   "id": "p91",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Oferecer formação a cooperados para gestão, inovação, cooperação e tomada de decisões coletivas",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -2234,6 +2283,10 @@
    },
    "570": {
     "texto": "A educação será a principal política de transformação nacional. Investiremos na alfabetização na idade certa, na melhoria da aprendizagem, na valorização dos professores e na redução das desigualdades educacionais. Nenhum país alcançou elevado desenvolvimento econômico sem colocar a educação básica como prioridade absoluta.",
+    "pagina": 43
+   },
+   "573": {
+    "texto": "O Brasil precisa formar profissionais preparados para a economia moderna.",
     "pagina": 43
    },
    "574": {
@@ -2348,16 +2401,8 @@
     "texto": "O Novo Ensino Médio deve formar estudantes capazes de aprender continuamente, trabalhar em equipe, resolver problemas complexos, liderar projetos e transformar conhecimento em soluções para a sociedade.",
     "pagina": 76
    },
-   "1152": {
-    "texto": "b) Formação para a vida e para o trabalho.",
-    "pagina": 76
-   },
    "1153": {
     "texto": "Nosso compromisso é construir um Ensino Médio que integre formação acadêmica de qualidade com desenvolvimento humano e preparação profissional.",
-    "pagina": 76
-   },
-   "1154": {
-    "texto": "Além das disciplinas tradicionais, os estudantes terão acesso a conteúdos voltados para:",
     "pagina": 76
    },
    "1155": {
@@ -2390,10 +2435,6 @@
    },
    "1162": {
     "texto": "• Desenvolvimento de projetos e liderança.",
-    "pagina": 76
-   },
-   "1163": {
-    "texto": "O objetivo é formar jovens emocionalmente preparados, intelectualmente curiosos e profissionalmente competentes para enfrentar os desafios atuais.",
     "pagina": 76
    },
    "1165": {
@@ -2464,10 +2505,6 @@
     "texto": "O Brasil possui inteligência, criatividade e capacidade científica para ocupar posição de destaque no cenário mundial. O que precisamos é transformar nossas universidades em verdadeiros ecossistemas de inovação, onde ensinar, pesquisar, empreender e gerar riqueza deixem de ser atividades separadas para tornar-se parte de uma mesma missão: construir um país mais desenvolvido, competitivo e preparado para os desafios do futuro.",
     "pagina": 79
    },
-   "1260": {
-    "texto": "1. METODOLOGIA PSICOATIVA DE INCLUSÃO",
-    "pagina": 81
-   },
    "1261": {
     "texto": "O coração pedagógico do projeto será a Metodologia Psicoativa, fundada em três movimentos simples e profundos, preconizados pelo Dr. Augusto Cury:",
     "pagina": 81
@@ -2510,10 +2547,6 @@
    },
    "1277": {
     "texto": "Inclusiva, estruturada nacionalmente pelo MEC- Ministério da Educação e Culturan.",
-    "pagina": 82
-   },
-   "1279": {
-    "texto": "3. PROFESSOR NEUROINCLUSIVO",
     "pagina": 82
    },
    "1280": {
@@ -2706,6 +2739,10 @@
     "texto": "As mulheres dedicam quase o dobro de horas dos homens ao trabalho doméstico, um cuidado não remunerado que equivale a cerca de 8,5% do PIB brasileiro. Vamos ampliar a oferta de creches para as crianças desde a primeira infância, em período integral, com alimentação digna e foco no desenvolvimento infantil. Onde não houver vaga na rede pública, a família receberá um voucher-creche para acesso à rede privada credenciada até a vaga pública surgir, para que nenhuma mulher deixe de trabalhar, estudar ou empreender por falta de creche. Também estruturaremos uma Rede",
     "pagina": 21
    },
+   "590": {
+    "texto": "Preparar uma família para a vida envolve a criança que aprende a ler na idade certa e o jovem que sai da escola sabendo fazer algo que o mercado precisa.",
+    "pagina": 34
+   },
    "593": {
     "texto": "No governo Bolsonaro, voltamos a colocar a família no centro das políticas públicas e a defender uma escola que ensina, e não que doutrina, respeitando os valores que os pais passam em casa. Vamos retomar esse caminho, garantindo que os bons sistemas e as boas experiências sejam aproveitados por toda rede de ensino. Com isso, iremos muito além.",
     "pagina": 34
@@ -2792,10 +2829,6 @@
     "texto": "Aprimoraremos o Programa Pé-de-Meia, para continuar apoiando a juventude em seu processo educacional. Manteremos os investimentos na rede nacional de cursinhos populares (CPop), de modo a facilitar o acesso da juventude ao ensino superior. Fortaleceremos ainda mais a assistência estudantil, ampliando o acesso à alimentação e à moradia estudantil para os jovens que estão no ensino superior.",
     "pagina": 24
    },
-   "260": {
-    "texto": "regime de colaboração federativa para acelerar a superação dos gargalos e insuficiências ainda existentes neste nível de escolaridade. Mesmo priorizando a educação básica, voltamos a investir na expansão do ensino técnico e tecnológico, e retomamos o fomento ao ensino superior, em especial à rede federal.",
-    "pagina": 31
-   },
    "261": {
     "texto": "No novo mandato, a conciliação destes objetivos continuará orientando a ação federal, que será também pautada pelo compromisso em cumprir as metas do Plano Nacional de Educação 2026-2036.",
     "pagina": 31
@@ -2848,6 +2881,10 @@
     "texto": "No novo mandato, continuaremos a expansão da nossa rede de institutos federais, priorizando a interiorização, os vazios educacionais, as periferias urbanas e os municípios com baixa oferta de cursos técnicos.",
     "pagina": 33
    },
+   "278": {
+    "texto": "Uma marca de todos os mandatos do Presidente Lula é o financiamento ao ensino superior, fundamental para a formação e produção de conhecimento e condição para a soberania nacional e para a democracia. O orçamento das universidades, para custeio e para investimento, foi restaurado. O Novo PAC destinou recursos para 10 novos campi da rede federal e para 367 obras na infraestrutura das universidades, tais como laboratórios, restaurantes, salas de aula, novas sedes. O ProUni voltou a bater recorde de ofertas de bolsa e renegociamos, por duas vezes, as dívidas do FIES. Reajustamos as bolsas de estudo que estavam congeladas por uma década.",
+    "pagina": 33
+   },
    "279": {
     "texto": "Daremos sequência ao fomento ao ensino superior no próximo mandato. Além de concluir as obras em curso, inclusive dos novos campi, será concluída a implantação da nova unidade do ITA, no Ceará, e da Universidade Indígena e da Universidade do Esporte. Haverá também novo ciclo expansão e interiorização da educação superior pública para superar os vazios educacionais e as assimetrias regionais. Adotaremos medidas para aperfeiçoar a assistência estudantil, para garantir a permanência e a conclusão dos cursos pelos estudantes nas instituições públicas.",
     "pagina": 33
@@ -2858,6 +2895,10 @@
    },
    "283": {
     "texto": "Ampliamos a rede de hospitais universitários com a criação de 13 novas unidades, inclusive onde esta infraestrutura não existia, como Acre e Rondônia. No próximo mandato, avançaremos na implantação de novos hospitais universitários e na sua articulação com o Agora tem Especialistas.",
+    "pagina": 34
+   },
+   "284": {
+    "texto": "Ao priorizarmos a expansão da cobertura das creches, investirmos no ensino em tempo integral e criarmos mais oportunidades de acesso ao ensino técnico e superior, estaremos preparando nossas crianças e jovens para as exigências de um mundo em rápida transformação. A educação é o nosso pacto inegociável com o futuro, um investimento essencial para o desenvolvimento sustentável, inclusivo e soberano do Brasil.",
     "pagina": 34
    }
   },
@@ -3135,6 +3176,168 @@
    "808": {
     "texto": "Fortalecer o Programa Criança Feliz com foco em resultados mensuráveis de desenvolvimento infantil, condicionando os repasses de outros programas de transferência de renda às famílias ao cumprimento das visitas domiciliares e integrando o programa aos serviços de saúde e educação infantil para garantir uma rede coordenada de proteção nos primeiros anos de vida.",
     "pagina": 65
+   }
+  },
+  "ronaldo-caiado": {
+   "22": {
+    "texto": "A educação será tratada como a política mais poderosa de liberdade e mobilidade social. Toda criança deverá ser alfabetizada na idade certa; toda escola deverá acompanhar o que cada estudante aprendeu; todo jovem deverá encontrar uma ponte real entre ensino, formação técnica, universidade e trabalho. A saúde preservará os princípios do SUS, mas mudará sua capacidade de entrega: cuidado preventivo, atendimento perto de casa, prontuário interoperável, fila transparente, especialista no tempo certo e hospitais remunerados por qualidade e resultado.",
+    "pagina": 2
+   },
+   "118": {
+    "texto": "• Garantir alfabetização na idade certa e recompor aprendizagens em toda a educação básica.",
+    "pagina": 7
+   },
+   "329": {
+    "texto": "Alfabetizar na idade certa, recompor aprendizagens, expandir educação técnica, reformar a formação de professores e conectar escolas, institutos e universidades às necessidades produtivas de cada território.",
+    "pagina": 15
+   },
+   "443": {
+    "texto": "• Tratar a educação desde a primeira infância e a qualificação e a empregabilidade dos jovens como a principal política de prevenção à violência, transformando esse compromisso em prioridade permanente do Estado brasileiro. A experiência de Goiás demonstra que não se trata de promessa, mas de resultado alcançável.",
+    "pagina": 19
+   },
+   "714": {
+    "texto": "A aprendizagem será prioridade nacional. O Brasil praticamente universalizou o acesso à escola, aumentou recursos e criou instrumentos de avaliação, mas ainda aceita que muitas crianças não sejam alfabetizadas e que as defasagens se acumulem até o ensino médio. O governo federal liderará uma aliança com estados, municípios, professores, famílias e setor produtivo para garantir alfabetização, recomposição, escola atraente e formação conectada ao trabalho e à cidadania.",
+    "pagina": 32
+   },
+   "715": {
+    "texto": "A União respeitará a gestão local e concentrará sua atuação em padrões, avaliação, financiamento com equidade, apoio técnico, formação docente e disseminação de práticas eficazes. As metas serão públicas e a prioridade será o estudante que mais perdeu aprendizagem.",
+    "pagina": 32
+   },
+   "725": {
+    "texto": "Apoiar estados e municípios para que todas as crianças leiam, escrevam, compreendam e dominem fundamentos matemáticos até o fim do 2º ano. Oferecer formação, material baseado em evidências, avaliação diagnóstica, tutoria e incentivo por melhoria com equidade.",
+    "pagina": 32
+   },
+   "727": {
+    "texto": "Universalizar pré-escola e ampliar creches prioritariamente para famílias vulneráveis e territórios com baixa oferta, combinando construção, conveniamento regulado e apoio a municípios. Avaliar qualidade, formação de profissionais, desenvolvimento infantil e integração com saúde e assistência.",
+    "pagina": 32
+   },
+   "729": {
+    "texto": "Diagnosticar defasagens por estudante e rede, oferecer material, tempo adicional, tutoria e formação.",
+    "pagina": 32
+   },
+   "730": {
+    "texto": "Estabelecer meta de reduzir drasticamente o contingente abaixo do básico, com prioridade a português, matemática e ciências e acompanhamento público por escola e território.",
+    "pagina": 32
+   },
+   "734": {
+    "texto": "Apoiar escolas do 6º ao 9º ano com equipes estáveis, tutoria, projetos interdisciplinares, esporte, cultura, tecnologia e orientação. Adaptar o ensino à adolescência, fortalecer matemática e ciência e prevenir abandono por busca ativa e apoio socioemocional.",
+    "pagina": 33
+   },
+   "736": {
+    "texto": "Coordenar implementação curricular, ampliar carga horária com qualidade e assegurar base comum sólida.",
+    "pagina": 33
+   },
+   "737": {
+    "texto": "Oferecer itinerários reais, não apenas formais, e transformar o Enem em instrumento coerente de conclusão e acesso, com avaliação das competências essenciais.",
+    "pagina": 33
+   },
+   "739": {
+    "texto": "Expandir matrículas articuladas ao ensino médio e à educação de adultos, em parceria com institutos federais, redes estaduais, Sistema S e empresas. Mapear demanda regional, diversificar cursos e combinar formação geral, técnica, digital e experiência de trabalho.",
+    "pagina": 33
+   },
+   "741": {
+    "texto": "Elevar padrão das licenciaturas, exigir prática supervisionada robusta, restringir cursos de baixa qualidade e oferecer bolsas a bons estudantes que escolham docência. Apoiar carreiras atrativas, formação continuada na escola, mentoria de iniciantes e redução de burocracia.",
+    "pagina": 33
+   },
+   "743": {
+    "texto": "Estimular seleção de diretores por competência e participação da comunidade, com formação em gestão pedagógica, pessoas, orçamento e dados. Cada escola terá plano de aprendizagem e apoio para resolver problemas, evitando responsabilização sem recursos.",
+    "pagina": 33
+   },
+   "745": {
+    "texto": "Ampliar vagas priorizando educação infantil, anos finais e ensino médio em territórios vulneráveis. O tempo adicional incluirá aprendizagem, esporte, cultura, projeto de vida, ciência e apoio aos estudantes, não mera permanência física.",
+    "pagina": 33
+   },
+   "747": {
+    "texto": "Aperfeiçoar incentivos financeiros a estudantes de baixa renda com maior risco de abandono, vinculados à matrícula, frequência e conclusão, sem punir famílias por falhas da oferta escolar. Integrar benefício a orientação, saúde mental e formação profissional.",
+    "pagina": 33
+   },
+   "749": {
+    "texto": "Criar política nacional de prevenção à violência, protocolos de ameaça, mediação, equipes de apoio, proteção digital e articulação com saúde e segurança. Ambientes seguros exigem autoridade, vínculo, participação familiar e resposta precoce a sofrimento e bullying.",
+    "pagina": 33
+   },
+   "751": {
+    "texto": "Garantir internet de qualidade, dispositivos compartilhados, plataformas interoperáveis e proteção de dados.",
+    "pagina": 33
+   },
+   "752": {
+    "texto": "Tecnologia e IA apoiarão diagnóstico, planejamento e acessibilidade, sem substituir professores ou impor soluções sem evidência.",
+    "pagina": 33
+   },
+   "753": {
+    "texto": "13. Avaliação que gera ação",
+    "pagina": 33
+   },
+   "754": {
+    "texto": "Fortalecer Saeb, Ideb e avaliações formativas, com resultados rápidos e compreensíveis. Produzir indicadores de aprendizagem, equidade, clima escolar e trajetória, evitando rankings simplistas. Recursos e apoio serão direcionados às escolas com melhor avaliação.",
+    "pagina": 33
+   },
+   "756": {
+    "texto": "Elevar exigências de avaliação, fechar ou reestruturar cursos persistentemente insuficientes e combater evasão. Reformar formação em engenharia, ciência, saúde, educação e tecnologia, aproximando currículos de pesquisa, prática profissional e demandas sociais.",
+    "pagina": 33
+   },
+   "758": {
+    "texto": "Criar mestrados profissionais robustos, residências tecnológicas e mecanismos simples de parceria entre universidades, ICTs e empresas. Valorizar professores com experiência externa e pesquisadores que gerem conhecimento, patentes, soluções públicas e novos negócios.",
+    "pagina": 33
+   },
+   "762": {
+    "texto": "Integrar alfabetização e conclusão escolar a qualificação, certificação de competências, cuidado infantil e intermediação de trabalho. Oferecer horários flexíveis e modelos híbridos de qualidade para adultos, trabalhadores rurais.",
+    "pagina": 34
+   },
+   "998": {
+    "texto": "9. Formar trabalhadores para a economia do futuro",
+    "pagina": 44
+   },
+   "999": {
+    "texto": "Preparar as pessoas para as oportunidades reais de trabalho que a nova indústria cria, com formação técnica conectada às vocações de cada região.",
+    "pagina": 44
+   },
+   "1002": {
+    "texto": "• Expandir o ensino técnico e profissional.",
+    "pagina": 45
+   },
+   "1003": {
+    "texto": "• Atualizar os currículos para inteligência artificial, automação, análise de dados industriais, manutenção preditiva, integração de sistemas, cibersegurança de tecnologia operacional e tecnologias digitais.",
+    "pagina": 45
+   },
+   "1004": {
+    "texto": "• Fortalecer o Sistema S, os institutos federais e as universidades tecnológicas.",
+    "pagina": 45
+   },
+   "1005": {
+    "texto": "• Implantar programa nacional de requalificação profissional.",
+    "pagina": 45
+   },
+   "1006": {
+    "texto": "• Incentivar formação contínua dentro das empresas.",
+    "pagina": 45
+   },
+   "1330": {
+    "texto": "9. Creches e infraestrutura do cuidado",
+    "pagina": 59
+   },
+   "1331": {
+    "texto": "Acelerar oferta de creche em áreas de maior demanda, ampliar horários compatíveis com trabalho e apoiar serviços de cuidado a idosos e pessoas com deficiência. Assegurar busca ativa e flexibilidade acadêmica para a permanência de gestantes, puérperas e estudantes com filhos na educação básica, na Educação de Jovens e Adultos. Reconhecer o cuidado como infraestrutura que libera tempo e renda.",
+    "pagina": 59
+   },
+   "1390": {
+    "texto": "Integrar pré-natal, nutrição, vacinação, desenvolvimento, parentalidade, creche, visitas domiciliares e prevenção de violência. Priorizar famílias pobres, gestantes adolescentes, prematuros e crianças com deficiência, com acompanhamento compartilhado entre saúde e assistência.",
+    "pagina": 62
+   },
+   "1477": {
+    "texto": "11. Educação e formação ligadas às vocações do território",
+    "pagina": 65
+   },
+   "1478": {
+    "texto": "Priorizar alfabetização, recomposição de aprendizagem, tempo integral e ensino médio com educação profissional. Pactuar com institutos federais, Sistema S, universidades e empresas cursos voltados a energia, tecnologia, ciência da computação + IA, engenharia de software e de computação, logística, saúde, turismo, agroindústria, indústria digital e manutenção. Bolsas e estágios apoiarão permanência e inserção dos jovens no mercado local.",
+    "pagina": 65
+   },
+   "1526": {
+    "texto": "4. Aprendizagem com equidade",
+    "pagina": 68
+   },
+   "1527": {
+    "texto": "Direcionar tutoria, alfabetização, escola integral e professores adequados aos estudantes com maiores defasagens. Monitorar diferenças de aprendizagem e conclusão e apoiar escolas para corrigi-las, evitando baixar expectativas ou substituir conteúdo por retórica.",
+    "pagina": 68
    }
   }
  }

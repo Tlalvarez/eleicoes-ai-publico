@@ -9,9 +9,9 @@
   "cultura_esporte"
  ],
  "origem": {
-  "arquivo": "cultura-esporte-5.json",
-  "gerado_em": "2026-09-13T08:56:38Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "cultura-esporte-6.json",
+  "gerado_em": "2026-09-14T07:16:37Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,13 +53,21 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Patrimônio histórico e museus",
-   "proposta": "Preservar, restaurar e difundir o patrimônio histórico, artístico e cultural nacional",
+   "proposta": "Executar programa federal de preservação, restauração e manutenção do patrimônio histórico e cultural",
    "n_concorda": 4,
    "posicoes": {
     "lula": {
@@ -68,35 +76,37 @@
       359,
       362
      ],
-     "nota": "Cita 144 obras de restauração pelo Novo PAC e continuidade dos investimentos"
+     "nota": "Cita obras de restauração via Novo PAC"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      641,
+      642
+     ],
+     "nota": "Programa com uso sustentável e articulação com Iphan e privados"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      915,
+      916
+     ],
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       671
      ],
-     "nota": "Foco em centros históricos, obras e acervos deteriorados"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      916
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      851
-     ],
-     "nota": "Preservação conciliada com direitos de propriedade e incentivos"
+     "nota": "Foco em centros históricos, obras e acervos"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Patrimônio histórico e museus",
-   "proposta": "Modernizar a legislação e os instrumentos de tombamento e proteção do patrimônio, reduzindo restrições consideradas excessivas",
+   "proposta": "Modernizar a legislação de tombamento e demais instrumentos de proteção, reduzindo restrições aos direitos de propriedade",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
@@ -105,7 +115,7 @@
       365,
       376
      ],
-     "nota": "Critica política de tombamento excessiva e propõe reformular o IPHAN"
+     "nota": "Critica tombamentos excessivos do Iphan"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -113,14 +123,14 @@
       850,
       851
      ],
-     "nota": "Reduzir ou eliminar restrições a direitos de propriedade"
+     "nota": "Prevê política de incentivos no lugar de restrições"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Patrimônio histórico e museus",
-   "proposta": "Firmar parcerias com o setor privado e o terceiro setor para a gestão de museus e equipamentos culturais",
+   "proposta": "Firmar parcerias com organizações sociais, terceiro setor e empresas para a gestão de museus e equipamentos culturais",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
@@ -128,7 +138,7 @@
      "blocos": [
       377
      ],
-     "nota": "Parcerias com organizações sociais no âmbito do IBRAM"
+     "nota": "Parcerias com OSs dentro da reforma do IBRAM"
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -143,7 +153,7 @@
   {
    "id": "p4",
    "subtema": "Patrimônio histórico e museus",
-   "proposta": "Apoiar a criação de fundos patrimoniais (endowments) para instituições culturais",
+   "proposta": "Apoiar tecnicamente a criação de fundos patrimoniais (endowments) para instituições culturais",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -173,6 +183,21 @@
   {
    "id": "p6",
    "subtema": "Patrimônio histórico e museus",
+   "proposta": "Digitalizar acervos e implantar planos de prevenção a incêndios e desastres no patrimônio",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      642
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Patrimônio histórico e museus",
    "proposta": "Criar políticas de salvaguarda e valorização de mestras e mestres das culturas populares, com regras de direito autoral sobre seus saberes",
    "n_concorda": 1,
    "posicoes": {
@@ -186,76 +211,15 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Turismo",
-   "proposta": "Tratar o turismo como vetor de desenvolvimento econômico regional, geração de emprego e renda",
-   "n_concorda": 4,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      865,
-      866
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      859,
-      864
-     ],
-     "nota": "Ênfase em cidades do interior e regiões mais carentes"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      495
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      671
-     ],
-     "nota": "Foco no turismo rural como diversificação de renda no campo"
-    }
-   }
-  },
-  {
    "id": "p8",
-   "subtema": "Turismo",
-   "proposta": "Ampliar a promoção nacional e internacional dos destinos brasileiros",
-   "n_concorda": 4,
+   "subtema": "Patrimônio histórico e museus",
+   "proposta": "Fortalecer a preservação e o ensino da história e cultura afro-brasileira e indígena, com apoio a museus, arquivos e territórios",
+   "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      880,
-      881
-     ],
-     "nota": "Campanhas baseadas em inteligência de mercado"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      859
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      495
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2917,
-      2922
+      1541
      ],
      "nota": ""
     }
@@ -263,468 +227,9 @@
   },
   {
    "id": "p9",
-   "subtema": "Turismo",
-   "proposta": "Desenvolver destinos turísticos baseados na biodiversidade, nas belezas naturais e na diversidade cultural",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      576,
-      577
-     ],
-     "nota": "Inclui marco regulatório e qualificação de mão de obra local"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      495
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      859,
-      864
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Turismo",
-   "proposta": "Criar roteiros turísticos temáticos que integrem gastronomia, arte, cultura e ecoturismo",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      495
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      856,
-      857
-     ],
-     "nota": "Rotas culturais e patrimoniais com protagonismo do setor privado"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Turismo",
-   "proposta": "Conceder parques nacionais e atrativos naturais e históricos ao setor privado, com metas de visitação e conservação",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      577,
-      867,
-      868
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Turismo",
-   "proposta": "Ampliar a infraestrutura de apoio ao turismo (aeroportos, rodovias, terminais, equipamentos)",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      871,
-      872
-     ],
-     "nota": "Via concessões, parcerias e investimento privado"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      859
-     ],
-     "nota": "Aproveita a infraestrutura do plano, incluindo o Trem do Nordeste"
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Turismo",
-   "proposta": "Expandir a formação técnica e profissional em turismo, hotelaria, gastronomia e eventos em parceria com o Sistema S e instituições de ensino",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      877,
-      878
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Turismo",
-   "proposta": "Prestar apoio técnico a estados, municípios e regiões turísticas com planos de desenvolvimento, observatórios e indicadores de desempenho",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      882,
-      883
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Turismo",
-   "proposta": "Criar duas semanas promocionais internacionais de turismo por ano (Black Weeks), com descontos em passagens, hotéis e serviços",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2916,
-      2917,
-      2920,
-      2921,
-      2923
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Turismo",
-   "proposta": "Reforçar temporariamente a segurança e a hospitalidade nas cidades durante grandes períodos de fluxo turístico",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2924
-     ],
-     "nota": "Prevê aumento de 20% a 30% do efetivo de segurança"
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Turismo",
-   "proposta": "Incentivar o turismo rural e o agroturismo como diversificação de renda das propriedades rurais",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      671
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Esporte",
-   "proposta": "Atrair investimento e patrocínio privado para o esporte, reduzindo a dependência de recursos públicos",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      819,
-      820,
-      827
-     ],
-     "nota": "Foco em confederações e federações com potencial de captação privada"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      659,
-      662
-     ],
-     "nota": "Parcerias com estados, municípios e iniciativa privada"
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Esporte",
-   "proposta": "Levar a prática esportiva às escolas e integrar esporte e educação básica para reduzir evasão escolar",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      832,
-      833
-     ],
-     "nota": "Por meio de parcerias com organizações sociais e setor privado"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      660
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Esporte",
-   "proposta": "Criar programa de esporte competitivo escolar com times, treinos no contraturno e competições municipais e estaduais (Escola de Campeões)",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      660
-     ],
-     "nota": "Estruturado em parcerias público-privadas"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Esporte",
-   "proposta": "Usar a infraestrutura de clubes e universidades em parceria para otimizar os recursos do esporte",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      824,
-      825
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      662
-     ],
-     "nota": "Parceria com clubes, faculdades e universidades no alto rendimento"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Esporte",
-   "proposta": "Conectar as políticas de esporte às de saúde pública, com metas mensuráveis de prevenção de doenças",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      830,
-      831
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Esporte",
-   "proposta": "Condicionar repasses públicos a confederações e federações a exigências de governança, transparência e resultados mensuráveis",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      821,
-      822
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Esporte",
-   "proposta": "Focalizar os recursos públicos do esporte em projetos de formação de cidadãos e atletas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      826,
-      827
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Esporte",
-   "proposta": "Ampliar e aperfeiçoar as bolsas para atletas",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      378
-     ],
-     "nota": "Bolsa Atleta reajustado, 11 mil contemplados, com patrocínio de estatais"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      662
-     ],
-     "nota": "Aperfeiçoamento das bolsas combinado a patrocínio privado"
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Esporte",
-   "proposta": "Apoiar o esporte de alto rendimento e a preparação para Jogos Olímpicos e Paralímpicos",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      378,
-      379
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      662
-     ],
-     "nota": "Foco em eficiência e parceria com o setor privado"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Esporte",
-   "proposta": "Elaborar plano de isenções fiscais para atividades esportivas",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      347
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Esporte",
-   "proposta": "Incentivar o uso de tecnologia e ciência de dados no esporte por meio de editais para confederações e clubes",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      662
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Esporte",
-   "proposta": "Fomentar o paradesporto, com detecção de talentos paralímpicos na base e mais autonomia às entidades paralímpicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      661
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Esporte",
-   "proposta": "Assegurar que a categoria feminina, da base ao alto rendimento, seja disputada apenas por atletas do sexo feminino",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      669
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Esporte",
-   "proposta": "Realizar a Copa do Mundo de Futebol Feminino no Brasil e estimular a prática do futebol feminino",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      380
-     ],
-     "nota": "Evento em 8 capitais, com efeito sobre o turismo"
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Esporte",
-   "proposta": "Implementar a Universidade do Esporte e instituir rede nacional de pesquisa, inovação e tecnologia do esporte",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      381
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Esporte",
-   "proposta": "Ampliar equipamentos esportivos públicos comunitários (Arenas Brasil) em todo o território nacional",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      384
-     ],
-     "nota": "500 unidades apoiadas pelo Novo PAC, com ampliação prevista"
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Reformar e aperfeiçoar as leis de incentivo à cultura, corrigindo distorções do modelo atual",
-   "n_concorda": 4,
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Aperfeiçoar as leis de incentivo à cultura, corrigindo distorções do modelo atual",
+   "n_concorda": 5,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -732,11 +237,12 @@
       374,
       375
      ],
-     "nota": "Sanear os vícios da Lei Rouanet sem eliminar o fomento público"
+     "nota": "Foco em alterar a Lei Rouanet, sem eliminar o fomento"
     },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
+      843,
       844
      ],
      "nota": ""
@@ -754,66 +260,21 @@
       355,
       357
      ],
-     "nota": "Aperfeiçoar Lei Aldir Blanc e Lei Rouanet mantendo a ampliação de recursos"
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Manter o fomento público à cultura, sem extinguir os mecanismos de financiamento",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      364
-     ],
-     "nota": ""
+     "nota": "Aperfeiçoar Rouanet e Aldir Blanc mantendo a atual política"
     },
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      355
+      626
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p36",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Adotar critérios objetivos e publicizados de avaliação e elegibilidade dos projetos culturais, com transparência dos pareceres",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      375
-     ],
-     "nota": "Publicação detalhada dos pareceres técnicos e indicadores mensuráveis"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      844
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      355,
-      357
-     ],
-     "nota": "Implementação transparente e democrática dos instrumentos"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Estabelecer teto ou limite de captação de recursos incentivados para artistas e produtoras já consolidados",
+   "id": "p10",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Estabelecer teto ou limite de captação de recursos incentivados para artistas e produtores já consolidados",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
@@ -826,6 +287,7 @@
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
+      837,
       844
      ],
      "nota": ""
@@ -833,25 +295,47 @@
    }
   },
   {
-   "id": "p38",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Criar linhas, editais e reserva mínima de recursos para artistas iniciantes e projetos de primeira obra",
-   "n_concorda": 1,
+   "id": "p11",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Adotar critérios objetivos e públicos de seleção de projetos culturais, com publicação de pareceres, beneficiários e resultados",
+   "n_concorda": 4,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       375
      ],
+     "nota": "Indicadores mensuráveis e pareceres técnicos publicados"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      844
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      614,
+      648
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      673
+     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p39",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Desconcentrar regionalmente o financiamento cultural, priorizando artistas locais e polos regionais",
-   "n_concorda": 3,
+   "id": "p12",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Desconcentrar regionalmente os recursos da cultura, priorizando artistas locais e polos regionais",
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -871,19 +355,88 @@
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      357,
-      360
+      357
      ],
-     "nota": "Desconcentração regional e apoio a territórios periféricos"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      626
+     ],
+     "nota": "Critérios para corrigir desigualdades regionais"
     }
    }
   },
   {
-   "id": "p40",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Ampliar a autonomia de estados e municípios na definição das prioridades culturais e no uso dos recursos",
-   "n_concorda": 1,
+   "id": "p13",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Criar linhas, editais e reserva orçamentária específicos para artistas iniciantes e projetos de primeira obra",
+   "n_concorda": 2,
    "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      375
+     ],
+     "nota": "Percentual mínimo obrigatório para novos talentos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      640
+     ],
+     "nota": "Apoio a primeiras obras no audiovisual"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Vedar o uso do apoio público à cultura para propaganda político-partidária ou dirigismo ideológico",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      366,
+      367
+     ],
+     "nota": "Retirar viés ideológico dos órgãos de repasse"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      614,
+      647,
+      648
+     ],
+     "nota": "Veda também censura, com pluralismo de visões"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      673
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Consolidar o Sistema Nacional de Cultura com financiamento estável e maior autonomia de estados e municípios sobre os recursos",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      613,
+      625,
+      626
+     ],
+     "nota": "Transferências fundo a fundo e Fundo Nacional de Cultura"
+    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
@@ -895,66 +448,933 @@
    }
   },
   {
-   "id": "p41",
-   "subtema": "Financiamento e fomento à cultura",
-   "proposta": "Reservar o incentivo fiscal à cultura a finalidades educativas, retirando o uso político-ideológico dos recursos públicos",
-   "n_concorda": 2,
+   "id": "p16",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Fortalecer as instâncias de participação social na política cultural, como o Conselho Nacional de Política Cultural e comitês estaduais",
+   "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      366,
-      367
+      357,
+      358
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Manter e aperfeiçoar a Lei Aldir Blanc como mecanismo de repasse direto de recursos públicos à cultura",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      355
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Implementar Plano Nacional de Cultura 2027-2030 com metas, indicadores, orçamento e monitoramento público",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      622,
+      623,
+      624
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Estruturar sistema permanente de dados e avaliação da cultura, com informações desagregadas por território e perfil",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      627,
+      628
+     ],
+     "nota": "Em parceria com o IBGE e entes federados"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Turismo",
+   "proposta": "Tratar o turismo como vetor estratégico de desenvolvimento regional, emprego e renda",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      865,
+      866
      ],
      "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      673
+      859,
+      864
      ],
-     "nota": "Arte sem subordinação a agendas políticas, com liberdade de expressão"
+     "nota": "Ênfase no interior e regiões mais pobres"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      495
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2178,
+      2179
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p42",
-   "subtema": "Audiovisual, games e direitos autorais",
-   "proposta": "Incentivar a produção audiovisual nacional",
-   "n_concorda": 3,
+   "id": "p21",
+   "subtema": "Turismo",
+   "proposta": "Ampliar a promoção internacional do destino Brasil com base em inteligência de mercado",
+   "n_concorda": 4,
    "posicoes": {
-    "augusto-cury": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      908
+      880,
+      881
      ],
      "nota": ""
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      367
+      495
      ],
-     "nota": "Fundo do Audiovisual, Cota de Tela e programa Tela Brasil"
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      859,
+      864
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2204
+     ],
+     "nota": "Continuidade técnica da Embratur e medição de conversão"
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Turismo",
+   "proposta": "Conceder parques nacionais e outros atrativos naturais e históricos à iniciativa privada, com metas de visitação e conservação",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      576,
+      577,
+      867,
+      868
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2215
+     ],
+     "nota": "Concessões quando adequadas, com receita para conservação"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Turismo",
+   "proposta": "Investir na infraestrutura de apoio ao turismo (aeroportos, rodovias, saneamento, sinalização, equipamentos de visitação)",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      871,
+      872
+     ],
+     "nota": "Via concessões e investimento privado"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      859
+     ],
+     "nota": "Aproveita a infraestrutura prevista no plano, como o Trem do Nordeste"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2199,
+      2200
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Turismo",
+   "proposta": "Criar e estruturar roteiros temáticos integrando cultura, gastronomia, fé, patrimônio e natureza",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      495
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1486,
+      2217
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      856,
+      857
+     ],
+     "nota": "Com protagonismo privado na gestão das rotas"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Turismo",
+   "proposta": "Expandir a qualificação profissional e o ensino de idiomas para trabalhadores do turismo, hotelaria e gastronomia",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      877,
+      878
+     ],
+     "nota": "Parceria com Sistema S e iniciativa privada"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2212,
+      2213
+     ],
+     "nota": "Certificação de competências e trilhas de carreira"
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Turismo",
+   "proposta": "Profissionalizar a governança dos destinos turísticos com planos, observatórios e indicadores de desempenho",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      882,
+      883
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2193
+     ],
+     "nota": "Critérios de capacidade no Mapa do Turismo e consórcios municipais"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Turismo",
+   "proposta": "Adotar estratégia nacional decenal de turismo com metas de chegadas, receita, permanência e dispersão regional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2191
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Turismo",
+   "proposta": "Criar duas semanas promocionais internacionais anuais do turismo brasileiro, com descontos em passagens, hotéis e serviços",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2915,
+      2916,
+      2917,
+      2920,
+      2921,
+      2922,
+      2923
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Turismo",
+   "proposta": "Reforçar a segurança e a proteção ao visitante nos destinos turísticos",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2924
+     ],
+     "nota": "Aumento de 20% a 30% do efetivo durante as semanas promocionais"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2202
+     ],
+     "nota": "Polícia turística, atendimento multilíngue e protocolos de emergência"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Turismo",
+   "proposta": "Estruturar turismo sustentável e de base comunitária, respeitando a capacidade de carga e repartindo benefícios com as comunidades",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1600,
+      1601,
+      2223
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      577
+     ],
+     "nota": "Marco regulatório que preserve o patrimônio natural"
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Turismo",
+   "proposta": "Modernizar o crédito e as garantias ao setor turístico (Fungetur, BNDES, mercado de capitais)",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2208
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Turismo",
+   "proposta": "Facilitar vistos e autorizações eletrônicas e ampliar a conectividade aérea internacional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2197
+     ],
+     "nota": "Sem subsídios permanentes a rotas inviáveis"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Turismo",
+   "proposta": "Estimular o turismo doméstico fora de temporada, com férias escalonadas e programas para estudantes, idosos e trabalhadores",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2205,
+      2206
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Turismo",
+   "proposta": "Disputar e captar congressos, feiras, festivais e competições esportivas como estratégia turística",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      883
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2221
+     ],
+     "nota": "Com critérios de retorno e legado, e uso de locações audiovisuais"
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Turismo",
+   "proposta": "Incentivar o turismo rural e o agroturismo como diversificação de renda das propriedades rurais",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      670,
+      671
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1600,
+      2217
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Turismo",
+   "proposta": "Simplificar registro, licenciamento e tributação e digitalizar pequenos negócios do turismo",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      2210
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Ampliar a atração de investimento e patrocínio privado para o esporte, reduzindo a dependência de recursos públicos",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      819,
+      820,
+      827
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      659,
+      662
+     ],
+     "nota": "Romper com dependência do dinheiro público centralizado"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      900,
+      901
+     ],
+     "nota": "Combinar recursos públicos, loterias e investimento privado"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Condicionar repasses públicos a exigências de governança, transparência e resultados mensuráveis das confederações e federações",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      821,
+      822
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      888,
+      889,
+      890,
+      891
+     ],
+     "nota": "Contas auditadas e transparência de beneficiário final"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Firmar parcerias com clubes e universidades para aproveitar a infraestrutura esportiva existente na formação de atletas",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      824,
+      825
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      662
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      883,
+      884
+     ],
+     "nota": "Trajetória de talentos com carreira dupla"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Ampliar e aperfeiçoar as bolsas a atletas, como o Bolsa Atleta",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      378
+     ],
+     "nota": "Reajuste e recorde de 11 mil contemplados; seguir ampliando"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      662
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      883,
+      884
+     ],
+     "nota": "Critérios transparentes, previsibilidade e avaliação"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Manter o patrocínio de empresas estatais ao esporte",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      378
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Aperfeiçoar os incentivos fiscais ao esporte",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      900,
+      901
+     ],
+     "nota": "Revisão da Lei de Incentivo ao Esporte com critérios e avaliação"
     },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      366
+      347
      ],
-     "nota": "Condiciona o apoio à aproximação com o público e à retirada do viés ideológico"
+     "nota": "Plano de isenções fiscais para atividades esportivas"
     }
    }
   },
   {
    "id": "p43",
-   "subtema": "Audiovisual, games e direitos autorais",
-   "proposta": "Alterar os editais do cinema nacional para dar maior peso à viabilidade comercial dos filmes",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Permitir que projetos incentivados apoiem atletas individualmente, sobretudo em modalidades de menor estrutura",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      902
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Fortalecer a preparação olímpica e paralímpica com planejamento por ciclos e metas de desempenho",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      378,
+      379
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      662
+     ],
+     "nota": "Foco em eficiência e parceria privada"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      888,
+      889
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      826,
+      827
+     ],
+     "nota": "Focalizar recursos em projetos de formação de atletas"
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Estimular ciência, tecnologia e análise de dados aplicadas ao esporte",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      381
+     ],
+     "nota": "Rede nacional de pesquisa, inovação e tecnologia do esporte"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      662
+     ],
+     "nota": "Editais de tecnologia para confederações e clubes"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      885,
+      886,
+      898
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Implementar a Universidade do Esporte para formar quadros técnicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      381
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Organizar acesso regionalizado à medicina esportiva para atletas em formação em parceria com o SUS",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      887
+     ],
+     "nota": "Prioridade para jovens de baixa renda"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Criar trilhas de formação e certificação para treinadores, árbitros e gestores esportivos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      885,
+      886
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Aprovar Plano Nacional do Esporte decenal e implementar o sistema nacional de informações e indicadores esportivos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      861,
+      862,
+      863
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Fortalecer a integridade esportiva com antidopagem, combate à manipulação de resultados e monitoramento de apostas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      890,
+      891
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Melhorar a governança do futebol, com transparência de clubes e SAFs e combate à violência de torcidas e ao racismo",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      894,
+      895
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Exigir análise de custo-benefício e plano de legado para grandes eventos esportivos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      896,
+      898
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Realizar no Brasil a Copa do Mundo de Futebol Feminino",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      380
+     ],
+     "nota": "Evento em 8 capitais, com efeito sobre o turismo"
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Restringir a disputa da categoria feminina, da base ao alto rendimento, a atletas do sexo feminino",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      663,
+      669
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Ampliar a oferta e o apoio ao esporte feminino, com base, calendário, ambientes seguros e proteção à maternidade",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      879,
+      880
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      380
+     ],
+     "nota": "Estímulo à prática do futebol feminino via sediar a Copa"
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Expandir o paradesporto, com detecção de talentos na base, acessibilidade e apoio às entidades paralímpicas",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      661
+     ],
+     "nota": "Mais autonomia às entidades paralímpicas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      877,
+      878
+     ],
+     "nota": "Desenho universal obrigatório em obras esportivas federais"
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Audiovisual, direitos autorais e games",
+   "proposta": "Consolidar política industrial para o audiovisual, com fundos setoriais fortalecidos e melhor governança",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      367
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      639,
+      640
+     ],
+     "nota": "Fortalecer Ancine e Fundo Setorial do Audiovisual"
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Audiovisual, direitos autorais e games",
+   "proposta": "Reformular os editais do cinema nacional para dar mais peso à viabilidade comercial e à aproximação com o público",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
+      366,
       367,
       378
      ],
@@ -963,25 +1383,32 @@
    }
   },
   {
-   "id": "p44",
-   "subtema": "Audiovisual, games e direitos autorais",
-   "proposta": "Aprovar a regulamentação do streaming (VOD) e consolidar política industrial e governança para o audiovisual",
-   "n_concorda": 1,
+   "id": "p59",
+   "subtema": "Audiovisual, direitos autorais e games",
+   "proposta": "Regulamentar o streaming (VOD) com obrigações às plataformas e promoção do conteúdo brasileiro",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       367
      ],
-     "nota": ""
+     "nota": "Aprovação no Congresso, com foco em exportação de obras"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      644
+     ],
+     "nota": "Obrigações proporcionais às plataformas"
     }
    }
   },
   {
-   "id": "p45",
-   "subtema": "Audiovisual, games e direitos autorais",
-   "proposta": "Fortalecer a proteção dos direitos autorais, incluindo lei de direito autoral no ambiente digital e remuneração pelo uso de conteúdo por inteligência artificial",
-   "n_concorda": 1,
+   "id": "p60",
+   "subtema": "Audiovisual, direitos autorais e games",
+   "proposta": "Modernizar a proteção dos direitos autorais no ambiente digital, incluindo remuneração por plataformas e regras para uso de obras em inteligência artificial",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -989,112 +1416,46 @@
       368
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      643,
+      644
+     ],
+     "nota": "Transparência de remuneração e gestão coletiva"
     }
    }
   },
   {
-   "id": "p46",
-   "subtema": "Audiovisual, games e direitos autorais",
-   "proposta": "Apoiar o setor de games como braço estratégico da economia criativa, com acesso a mecanismos de fomento",
-   "n_concorda": 1,
+   "id": "p61",
+   "subtema": "Audiovisual, direitos autorais e games",
+   "proposta": "Apoiar a indústria de jogos eletrônicos como setor cultural, com acesso a mecanismos de fomento",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       371
      ],
-     "nota": "Marco Legal dos Games e inclusão do setor na CNAE e na CBO"
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Economia criativa e projeção internacional",
-   "proposta": "Impulsionar a economia criativa e o empreendedorismo cultural como geradores de emprego e renda",
-   "n_concorda": 3,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      911
-     ],
-     "nota": ""
+     "nota": "Marco Legal dos Games e formalização dos profissionais"
     },
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      370
-     ],
-     "nota": "Inclui ampliação de crédito para iniciativas de economia criativa"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      856,
-      857
+      614,
+      639,
+      640
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p48",
-   "subtema": "Economia criativa e projeção internacional",
-   "proposta": "Oferecer capacitação em gestão, finanças, prestação de contas e acesso a editais para artistas e produtores culturais",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      860,
-      861
-     ],
-     "nota": "Em parceria com o setor privado e o Sistema S"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      370
-     ],
-     "nota": "Via cursos técnicos e profissionalizantes de formação artística"
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Economia criativa e projeção internacional",
-   "proposta": "Criar programa permanente de diplomacia cultural e exportação da cultura brasileira",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      858,
-      859
-     ],
-     "nota": "Cultura como soft power, com promoção comercial"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      369
-     ],
-     "nota": "Inclui apoio a fazedores de cultura brasileiros no exterior"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      911
-     ],
-     "nota": "Exportação de conteúdo cultural brasileiro"
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Economia criativa e projeção internacional",
-   "proposta": "Tratar a cultura como ativo estratégico e vetor de identidade nacional",
-   "n_concorda": 3,
+   "id": "p62",
+   "subtema": "Audiovisual, direitos autorais e games",
+   "proposta": "Incentivar a produção artística, audiovisual, musical, literária e digital como ativo estratégico da identidade nacional",
+   "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
@@ -1104,51 +1465,406 @@
       908
      ],
      "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Esporte educacional, comunitário e saúde",
+   "proposta": "Ampliar a prática esportiva na educação básica, com parcerias com o setor privado e organizações sociais",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      832,
+      833
+     ],
+     "nota": "Esporte como ferramenta contra evasão e violência"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      671,
-      672
+      659,
+      660
      ],
-     "nota": "Valorização das tradições brasileiras e da formação miscigenada"
+     "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      864,
+      865
+     ],
+     "nota": "Educação física de qualidade e iniciação multiesportiva"
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Esporte educacional, comunitário e saúde",
+   "proposta": "Criar programa nacional de esporte competitivo escolar, com times, treinos no contraturno e competições municipais e estaduais",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      660
+     ],
+     "nota": "Programa Escola de Campeões, via PPPs"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      865
+     ],
+     "nota": "Jogos escolares e atividades no contraturno"
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Esporte educacional, comunitário e saúde",
+   "proposta": "Integrar as políticas de esporte às de saúde pública para prevenir doenças crônicas, com metas mensuráveis",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      830,
+      831
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      872,
+      873,
+      874
+     ],
+     "nota": "Brasil Ativo, com SUS, escolas e assistência social"
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Esporte educacional, comunitário e saúde",
+   "proposta": "Construir e recuperar equipamentos esportivos comunitários para ampliar o acesso à prática em todo o território",
+   "n_concorda": 2,
+   "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      349
+      384
+     ],
+     "nota": "Ampliação das Arenas Brasil, hoje com 500 unidades apoiadas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      866,
+      867,
+      870
+     ],
+     "nota": "Cadastro público de equipamentos e abertura das escolas à comunidade"
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Esporte educacional, comunitário e saúde",
+   "proposta": "Condicionar recursos públicos do esporte a protocolos de proteção de crianças e adolescentes contra abuso e violência",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      875,
+      876
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Gestão pública da cultura",
-   "proposta": "Modernizar a governança e a gestão das instituições federais de cultura",
-   "n_concorda": 2,
+   "id": "p68",
+   "subtema": "Esporte educacional, comunitário e saúde",
+   "proposta": "Apoiar práticas esportivas de povos indígenas, quilombolas, áreas rurais, periferias e idosos",
+   "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      376,
-      377
+      881,
+      882
      ],
-     "nota": "Foco em IPHAN e IBRAM"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Economia criativa e internacionalização da cultura",
+   "proposta": "Impulsionar a economia criativa com crédito, formalização, qualificação e apoio ao empreendedorismo cultural",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      370
+     ],
+     "nota": "Crédito e cursos técnicos de qualificação artística"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      637,
+      638
+     ],
+     "nota": "Inclui microsseguro e orientação previdenciária"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      911
+     ],
+     "nota": ""
     },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      852,
-      853
+      860,
+      861
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p52",
-   "subtema": "Gestão pública da cultura",
+   "id": "p70",
+   "subtema": "Economia criativa e internacionalização da cultura",
+   "proposta": "Capacitar artistas e produtores culturais em gestão, marketing, finanças e prestação de contas",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      860,
+      861
+     ],
+     "nota": "Em parceria com o Sistema S e o setor privado"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      637,
+      638
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      370
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Economia criativa e internacionalização da cultura",
+   "proposta": "Criar programa permanente de diplomacia cultural e exportação da cultura brasileira",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      369
+     ],
+     "nota": "Apoio a fazedores de cultura brasileiros no exterior"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      858,
+      859
+     ],
+     "nota": "Cultura como soft power, com promoção comercial"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      645,
+      646
+     ],
+     "nota": "Embaixadas e ApexBrasil apoiando exportação cultural"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      911
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Economia criativa e internacionalização da cultura",
+   "proposta": "Integrar cultura, turismo e economia criativa em estratégias de desenvolvimento regional, com apoio técnico federal a estados e municípios",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      856,
+      857
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1486
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      495
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Acesso à cultura e educação cultural",
+   "proposta": "Integrar cultura e educação, com atividades artísticas no currículo e na escola de tempo integral",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      373
+     ],
+     "nota": "Mais Cultura nas Escolas e Arte e Cultura na Educação Integral"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      629,
+      630
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      368,
+      381
+     ],
+     "nota": "Busca a integração por meio da fusão dos ministérios"
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Acesso à cultura e educação cultural",
+   "proposta": "Ampliar equipamentos culturais e programação em periferias e municípios sem oferta",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      360,
+      362
+     ],
+     "nota": "CEUs da Cultura e infraestrutura em territórios periféricos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      633,
+      634
+     ],
+     "nota": "Programação itinerante e participação das comunidades"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      673
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Acesso à cultura e educação cultural",
+   "proposta": "Consolidar a Política Nacional Cultura Viva e os Pontos de Cultura, com previsibilidade e segurança jurídica",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      360
+     ],
+     "nota": "Já são 16 mil pontos e pontões"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      634
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Acesso à cultura e educação cultural",
+   "proposta": "Desenvolver programas de formação de plateia e de público desde a infância",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      374
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      640
+     ],
+     "nota": "Formação de público no audiovisual"
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Acesso à cultura e educação cultural",
+   "proposta": "Executar política de livro, leitura e bibliotecas, com atualização de acervos, mediadores e apoio a autores, editoras e livrarias",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      635,
+      636
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Acesso à cultura e educação cultural",
    "proposta": "Fundir o Ministério da Cultura com o Ministério da Educação",
    "n_concorda": 1,
    "posicoes": {
@@ -1163,85 +1879,86 @@
    }
   },
   {
-   "id": "p53",
-   "subtema": "Gestão pública da cultura",
-   "proposta": "Fortalecer as instâncias de participação social na formulação e no acompanhamento das políticas culturais",
-   "n_concorda": 1,
+   "id": "p79",
+   "subtema": "Governança das instituições culturais",
+   "proposta": "Modernizar a gestão, a capacidade técnica e a transparência das instituições federais de cultura",
+   "n_concorda": 3,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      357,
-      358
-     ],
-     "nota": "Conselho Nacional de Política Cultural e comitês estaduais"
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Acesso à cultura e educação",
-   "proposta": "Integrar cultura e educação, com atividades artísticas no currículo e nas escolas",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      373
-     ],
-     "nota": "Mais Cultura nas Escolas e Arte e Cultura na Educação de Tempo Integral"
-    },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      368
+      376,
+      377
      ],
-     "nota": "Integração buscada pela reunificação dos ministérios"
+     "nota": "Foco em Iphan e IBRAM"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      852,
+      853
+     ],
+     "nota": "Com foco em atração de investimentos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      639,
+      640
+     ],
+     "nota": "Governança da Ancine e do Fundo Setorial do Audiovisual"
     }
    }
   },
   {
-   "id": "p55",
-   "subtema": "Acesso à cultura e educação",
-   "proposta": "Ampliar a rede de equipamentos culturais e o fomento à infraestrutura cultural em territórios periféricos e comunitários",
-   "n_concorda": 1,
+   "id": "p80",
+   "subtema": "Esporte de alto rendimento e gestão",
+   "proposta": "Apoiar as cadeias econômicas do esporte, incluindo equipamentos, vestuário, tecnologia, mídia, games, serviços, turismo esportivo e empreendedorismo",
+   "n_concorda": 4,
    "posicoes": {
-    "lula": {
+    "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      360,
-      362
+      347
      ],
-     "nota": "Consolidação dos Pontos de Cultura e dos CEUs da Cultura"
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Acesso à cultura e educação",
-   "proposta": "Fomentar programas de circulação e mobilidade artística e de formação de plateia",
-   "n_concorda": 2,
-   "posicoes": {
+     "nota": "Prevê plano de isenções fiscais para atividades esportivas, incentivando a cadeia econômica do esporte."
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      819,
+      820,
+      827,
+      883
+     ],
+     "nota": "Propõe atrair investimento privado no esporte para gerar empregos e dinamizar economias, e captar eventos esportivos."
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      362,
-      374
+      371,
+      379,
+      380,
+      385
+     ],
+     "nota": "Trata esporte e economia criativa/games como forças estratégicas de trabalho e renda, com turismo ligado a megaevento esportivo."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      897
      ],
      "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      673
-     ],
-     "nota": "Levar a arte para perto do público em todo o país"
     }
    }
   }
  ],
  "blocos": {
   "augusto-cury": {
+   "670": {
+    "texto": "f) Turismo Rural e Agroturismo",
+    "pagina": 49
+   },
    "671": {
     "texto": "O turismo rural e o agroturismo serão incentivados como instrumentos de diversificação da renda, valorização das propriedades rurais, fortalecimento da cultura do campo e desenvolvimento econômico das comunidades locais, promovendo novas oportunidades para os produtores rurais e ampliando a integração entre o campo e a sociedade.",
     "pagina": 49
@@ -1262,9 +1979,17 @@
     "texto": "A economia criativa será impulsionada como setor estratégico de geração de empregos, inovação e exportação de conteúdo cultural brasileiro.",
     "pagina": 62
    },
+   "915": {
+    "texto": "c) Preservação do patrimônio histórico",
+    "pagina": 63
+   },
    "916": {
     "texto": "O patrimônio histórico e cultural será protegido e restaurado, garantindo a preservação da memória nacional e o fortalecimento da identidade brasileira.",
     "pagina": 63
+   },
+   "2915": {
+    "texto": "7. DUAS BLACK WEEKS DO BRASIL POR ANO",
+    "pagina": 149
    },
    "2916": {
     "texto": "Serão criadas duas Black Weeks internacionais do turismo brasileiro por ano.",
@@ -1312,6 +2037,10 @@
     "texto": "No alto rendimento, vamos aperfeiçoar as bolsas esportivas e, sobretudo, trazer a iniciativa privada para o patrocínio, em parceria com clubes, faculdades e universidades. Vamos incentivar o uso de tecnologia e ciência de dados por meio de editais para confederações e clubes, e fortalecer a preparação para os Jogos Olímpicos e Paralímpicos com foco em eficiência e parceria com o setor privado.",
     "pagina": 40
    },
+   "663": {
+    "texto": "O esporte feminino foi criado justamente para dar às mulheres um espaço de competição justo. Vamos protegê-lo. Nos últimos anos, confederações internacionais reviram suas regras ao reconhecer que atletas que não nasceram do sexo feminino mantêm, mesmo após tratamento hormonal, vantagens de envergadura, densidade óssea e musculatura que a mulher não",
+    "pagina": 40
+   },
    "669": {
     "texto": "Vamos assegurar que a categoria feminina, da base ao alto rendimento, seja disputada por atletas do sexo feminino, protegendo a mulher e a lisura da competição de agendas ideológicas.",
     "pagina": 41
@@ -1338,10 +2067,6 @@
    }
   },
   "lula": {
-   "349": {
-    "texto": "A cultura é elemento essencial da identidade nacional e uma das principais fontes de riqueza simbólica, social e econômica do Brasil. A diversidade cultural brasileira constitui patrimônio imaterial de valor inestimável, fortalece a cidadania, a coesão social a projeção internacional do país, impulsiona a economia e promove o desenvolvimento territorial.",
-    "pagina": 40
-   },
    "355": {
     "texto": "No quarto mandato do presidente Lula, vamos dar sequência à revolução na política de fomento à cultura brasileira. Os principais instrumentos de fomento – Lei Aldir Blanc e Lei Rouanet – serão aperfeiçoados e implementados de forma",
     "pagina": 40
@@ -1414,6 +2139,10 @@
     "texto": "No atual mandato, começamos a implantação de Arenas Brasil em todos os estados com o Novo PAC, apoiamos 500 unidades por todo o Brasil. Ampliaremos este apoio no novo mandato, para assegurar acesso às práticas esportivas em todo o território nacional.",
     "pagina": 44
    },
+   "385": {
+    "texto": "Queremos um país que reconheça a cultura, a economia criativa, e o esporte como forças estratégicas do desenvolvimento nacional, capazes de gerar trabalho, renda, inovação, pertencimento, qualidade de vida e desenvolvimento em todos os territórios brasileiros.",
+    "pagina": 44
+   },
    "495": {
     "texto": "Vamos continuar apoiando o segmento para que o turismo, em seus múltiplos destinos regionais, contribua cada vez mais com o PIB. Atuaremos para desenvolver destinos turísticos assentados na riqueza natural e diversidade cultural. Vamos continuar estimulando a colaboração entre setores criativos (artes, música, gastronomia) e o turismo, criando experiências diferenciadas e atraentes. Buscaremos criar e promover novos roteiros turísticos baseados em temas como gastronomia, arte, cultura e ecoturismo, que atraem nichos de mercado específicos. Avançaremos na promoção internacional do Brasil no exterior.",
     "pagina": 57
@@ -1423,10 +2152,6 @@
    "347": {
     "texto": "7 Elaboração de um plano de isenções fiscais com atividades esportivas.",
     "pagina": 26
-   },
-   "364": {
-    "texto": "Entretanto, não devemos optar por eliminar o fomento à cultura no estado brasileiro, sob pena de prejudicar gravemente milhares de artistas, grupos culturais e associações que são fundamentais para a criação e disseminação da cultura no país. Isto significa que devemos delinear os traços de um saneamento dos vícios do fomento à cultura.",
-    "pagina": 28
    },
    "365": {
     "texto": "2 Uma vez saneado o fomento à cultura devemos nos voltar para as áreas da preservação de sítios históricos e patrimônio urbano, mediante a reformulação da atual política de tombamento, excessivamente judiciosa. Nisso nos inspiramos no programa da candidatura à prefeitura de Arthur do Val, de 2020.",
@@ -1525,6 +2250,10 @@
    "833": {
     "texto": "Aproximar o esporte da educação básica por meio de parcerias com organizações sociais e o setor privado, utilizando a prática esportiva como ferramenta de redução da evasão escolar e da exposição à violência entre jovens, além de desenvolver disciplina, foco e resiliência.",
     "pagina": 68
+   },
+   "837": {
+    "texto": "Mesmo assim, o Brasil insiste em tratar a cultura como bandeira ideológica e o turismo como pauta secundária. O resultado aparece dos dois lados: o patrimônio é negligenciado, o financiamento é ineficiente e mal direcionado, com a Lei Rouanet concentrando renúncias fiscais em grandes produtores que poderiam se sustentar por conta própria, enquanto mecanismos como a Lei Aldir Blanc ampliam a dependência do orçamento público sem avaliação de resultados.",
+    "pagina": 69
    },
    "843": {
     "texto": "Focar o dinheiro da cultura nos artistas locais e produções regionais:",
@@ -1637,6 +2366,352 @@
    "883": {
     "texto": "Apoiar tecnicamente estados, municípios e regiões turísticas na estruturação de planos de desenvolvimento, observatórios de turismo e sistemas de inteligência baseados em indicadores de desempenho e na captação de congressos, feiras, festivais culturais, eventos esportivos e encontros de negócios, promovendo uma gestão profissional, integrada e orientada por resultados, capaz de atrair investimentos privados e aumentar a competitividade do turismo brasileiro.",
     "pagina": 72
+   }
+  },
+  "ronaldo-caiado": {
+   "613": {
+    "texto": "Cultura é direito de cidadania, identidade nacional e cadeia econômica. O plano garantirá continuidade, acesso e profissionalização, superando a lógica de políticas que recomeçam a cada governo. O Sistema Nacional de Cultura será consolidado com metas, financiamento estável, dados, transparência e cooperação federativa.",
+    "pagina": 28
+   },
+   "614": {
+    "texto": "A prioridade será levar arte e patrimônio a crianças, escolas e territórios hoje descobertos, ao mesmo tempo em que se fortalecem economia criativa, audiovisual, livro, música, jogos, design, patrimônio e cultura digital. O apoio público terá seleção técnica, diversidade regional, prestação de contas proporcional e avaliação de resultado, sem dirigismo ideológico.",
+    "pagina": 28
+   },
+   "622": {
+    "texto": "1. Plano Nacional de Cultura 2027–2030 com metas",
+    "pagina": 28
+   },
+   "623": {
+    "texto": "Implementar o novo ciclo do plano com indicadores, responsáveis, orçamento e monitoramento público.",
+    "pagina": 28
+   },
+   "624": {
+    "texto": "União, estados e municípios pactuarão prioridades e continuidade, evitando que programas sejam desfeitos por mudança de governo.",
+    "pagina": 28
+   },
+   "625": {
+    "texto": "2. Sistema Nacional de Cultura e financiamento estável",
+    "pagina": 28
+   },
+   "626": {
+    "texto": "Consolidar transferências fundo a fundo, fortalecer o Fundo Nacional de Cultura e combinar investimento direto, incentivo fiscal, crédito e fundos retornáveis. Critérios corrigirão desigualdades regionais e simplificarão acesso de pequenos agentes.",
+    "pagina": 28
+   },
+   "627": {
+    "texto": "3. Dados e avaliação cultural",
+    "pagina": 28
+   },
+   "628": {
+    "texto": "Estruturar sistema permanente com IBGE e entes federados para medir acesso, emprego, renda, diversidade, circulação e resultado dos investimentos. Dados serão desagregados por território, raça, gênero, idade e deficiência.",
+    "pagina": 28
+   },
+   "629": {
+    "texto": "4. Cultura e arte na educação",
+    "pagina": 28
+   },
+   "630": {
+    "texto": "Assegurar as linguagens artísticas previstas na legislação, com professores, materiais, equipamentos e parcerias. Priorizar escola de tempo integral, bibliotecas vivas, leitura, música, teatro, dança, audiovisual e patrimônio local.",
+    "pagina": 28
+   },
+   "633": {
+    "texto": "5. Cultura nos territórios",
+    "pagina": 29
+   },
+   "634": {
+    "texto": "Apoiar bibliotecas, cinemas, museus, centros culturais, pontos de cultura e programação itinerante em municípios e periferias sem oferta. Comunidades participarão da definição de prioridades, com acessibilidade física e comunicacional.",
+    "pagina": 29
+   },
+   "635": {
+    "texto": "6. Livro, leitura e bibliotecas",
+    "pagina": 29
+   },
+   "636": {
+    "texto": "Atualizar acervos, formar mediadores, apoiar autores, editoras e livrarias, incentivar leitura em família e garantir bibliotecas escolares e públicas conectadas. Compras públicas serão transparentes, plurais e orientadas à qualidade e ao uso efetivo.",
+    "pagina": 29
+   },
+   "637": {
+    "texto": "7. Economia criativa e trabalho cultural",
+    "pagina": 29
+   },
+   "638": {
+    "texto": "Oferecer qualificação, formalização simplificada, crédito, microsseguro, orientação previdenciária e apoio ao empreendedorismo. Integrar cultura a turismo, tecnologia, moda, gastronomia, design, jogos e economia do cuidado, ampliando mercados e exportações.",
+    "pagina": 29
+   },
+   "639": {
+    "texto": "8. Política industrial para audiovisual e jogos",
+    "pagina": 29
+   },
+   "640": {
+    "texto": "Fortalecer Ancine e Fundo Setorial do Audiovisual com governança, financiamento estável e instrumentos para roteiro, produção, distribuição e formação de público. Apoiar primeiras obras, coproduções, animação, jogos e diversidade regional, avaliando retorno cultural e econômico.",
+    "pagina": 29
+   },
+   "641": {
+    "texto": "9. Patrimônio e memória",
+    "pagina": 29
+   },
+   "642": {
+    "texto": "Criar programa de manutenção, restauração, digitalização e uso sustentável do patrimônio material e imaterial. Articular Iphan, universidades, comunidades, turismo e iniciativa privada, com planos de prevenção a incêndios e desastres em acervos.",
+    "pagina": 29
+   },
+   "643": {
+    "texto": "10. Direitos autorais e plataformas digitais",
+    "pagina": 29
+   },
+   "644": {
+    "texto": "Modernizar regras de licenciamento, transparência de remuneração e gestão coletiva, protegendo criadores e consumidores. Estabelecer obrigações proporcionais para plataformas, promoção de conteúdo brasileiro e regras para uso de obras em sistemas de IA, respeitando a inovação e garantindo a liberdade.",
+    "pagina": 29
+   },
+   "645": {
+    "texto": "11. Cultura brasileira no mundo",
+    "pagina": 29
+   },
+   "646": {
+    "texto": "Fortalecer intercâmbios, tradução, feiras, festivais, coproduções e presença internacional de artistas e empresas. Embaixadas e ApexBrasil apoiarão exportação cultural, que também projeta língua, turismo, marcas e valores nacionais.",
+    "pagina": 29
+   },
+   "647": {
+    "texto": "12. Liberdade artística, pluralismo e transparência",
+    "pagina": 29
+   },
+   "648": {
+    "texto": "Garantir que apoio público não seja usado para censura ou propaganda partidária. Seleções terão critérios públicos, comissões qualificadas, diversidade de visões, prestação de contas proporcional e publicação de beneficiários e resultados.",
+    "pagina": 29
+   },
+   "861": {
+    "texto": "1. Plano Nacional do Esporte 2035",
+    "pagina": 39
+   },
+   "862": {
+    "texto": "Aprovar plano decenal com metas de acesso, formação, alto rendimento, integridade e economia esportiva.",
+    "pagina": 39
+   },
+   "863": {
+    "texto": "Implementar o Sinesp e o SNIIE, definir responsabilidades de União, estados e municípios, pactuar cofinanciamento e publicar dados por território, modalidade, gênero, idade, raça e deficiência. Manter instância permanente de diálogo com atletas, clubes, federações, confederações, Comitês Olímpico e Paralímpico, universidades e gestores das três esferas para acompanhar prioridades e resultados.",
+    "pagina": 39
+   },
+   "864": {
+    "texto": "2. Esporte e educação em todas as etapas",
+    "pagina": 39
+   },
+   "865": {
+    "texto": "Garantir educação física de qualidade, iniciação multiesportiva, jogos escolares e acesso a atividades no contraturno e na escola de tempo integral. Apoiar professores, materiais, espaços e parcerias locais sem substituir o currículo. A prioridade será formar hábitos, cooperação, disciplina e repertório motor.",
+    "pagina": 39
+   },
+   "866": {
+    "texto": "3. Rede de esporte comunitário e equipamentos vivos",
+    "pagina": 39
+   },
+   "867": {
+    "texto": "Recuperar quadras, campos, pistas, piscinas e centros esportivos com plano de uso, manutenção, acessibilidade e gestão compartilhada. Cofinanciar núcleos gratuitos em territórios vulneráveis, abrir",
+    "pagina": 39
+   },
+   "870": {
+    "texto": "equipamentos escolares à comunidade com segurança e integrar esporte, cultura e lazer. Integrar ao SNIIE cadastro público de equipamentos esportivos e centros de treinamento, públicos e privados, com informações sobre localização, modalidades, acessibilidade, conservação e utilização, para orientar manutenção, ampliação e novos investimentos.",
+    "pagina": 40
+   },
+   "872": {
+    "texto": "4. Brasil Ativo: esporte como prevenção em saúde",
+    "pagina": 40
+   },
+   "873": {
+    "texto": "Integrar SUS, escolas, assistência social, cidades e esporte para ampliar atividade física em todas as idades.",
+    "pagina": 40
+   },
+   "874": {
+    "texto": "Prescrição segura, academias ao ar livre, caminhada, ciclismo, grupos para idosos e programas de enfrentamento à obesidade e doenças crônicas terão metas e acompanhamento, sem medicalizar a prática esportiva.",
+    "pagina": 40
+   },
+   "875": {
+    "texto": "5. Proteção integral de crianças e adolescentes",
+    "pagina": 40
+   },
+   "876": {
+    "texto": "Condicionar recursos públicos a protocolos de prevenção, seleção de profissionais, canais de denúncia, resposta a abuso e violência sexual e formação em direitos. Organizações formadoras deverão cumprir a legislação, assegurar estudo, saúde, convivência familiar e contratos transparentes, com fiscalização e apoio aos conselhos de direitos.",
+    "pagina": 40
+   },
+   "877": {
+    "texto": "6. Paradesporto e acessibilidade universal",
+    "pagina": 40
+   },
+   "878": {
+    "texto": "Expandir centros de referência, núcleos municipais, transporte, classificação funcional, tecnologia assistiva e formação de técnicos. Integrar esporte escolar, comunitário e alto rendimento, apoiar eventos acessíveis e assegurar que toda obra esportiva financiada pela União cumpra desenho universal.",
+    "pagina": 40
+   },
+   "879": {
+    "texto": "7. Mulheres e meninas no esporte",
+    "pagina": 40
+   },
+   "880": {
+    "texto": "Garantir oferta equitativa, ambientes seguros, vestiários e equipamentos adequados, treinadoras e dirigentes, proteção à maternidade e continuidade de bolsas. Apoiar futebol feminino e outras modalidades com calendário, base, ciência, visibilidade e critérios de governança.",
+    "pagina": 40
+   },
+   "881": {
+    "texto": "8. Inclusão por território e diversidade",
+    "pagina": 40
+   },
+   "882": {
+    "texto": "Apoiar jogos e práticas de povos indígenas, comunidades quilombolas, áreas rurais e periferias, respeitando manifestações culturais. Criar programas para idosos, pessoas com deficiência e populações com menor acesso, usando esporte como convivência e cidadania, não como substituto de políticas sociais.",
+    "pagina": 40
+   },
+   "883": {
+    "texto": "9. Trajetória nacional de talentos e bolsas",
+    "pagina": 40
+   },
+   "884": {
+    "texto": "Conectar iniciação, clubes, escolas, universidades, federações e centros de treinamento. Aperfeiçoar BolsaAtleta e instrumentos federais com critérios transparentes, previsibilidade, avaliação e apoio a viagens, equipamentos e competições. A carreira dupla garantirá compatibilidade de estudo, trabalho e treinamento.",
+    "pagina": 40
+   },
+   "885": {
+    "texto": "10. Treinadores, ciência e medicina do esporte",
+    "pagina": 40
+   },
+   "886": {
+    "texto": "Criar trilhas de formação e certificação para técnicos, árbitros, gestores e profissionais de apoio. Integrar universidades e centros de ciência em fisiologia, biomecânica, nutrição, psicologia, análise de dados, prevenção de lesões e tecnologia, com serviços também disponíveis para modalidades de menor estrutura.",
+    "pagina": 40
+   },
+   "887": {
+    "texto": "Organizar, em parceria com o SUS, universidades e centros de referência, acesso regionalizado à medicina esportiva para atletas em formação, com avaliação, prevenção de lesões, fisioterapia, nutrição e saúde mental, priorizando jovens de baixa renda.",
+    "pagina": 40
+   },
+   "888": {
+    "texto": "11. Alto rendimento olímpico e paralímpico",
+    "pagina": 40
+   },
+   "889": {
+    "texto": "Definir planejamento por ciclos, metas técnicas e governança independente para confederações e centros apoiados. Priorizar modalidades com base, potencial e plano consistente, garantir calendário internacional e infraestrutura e avaliar resultados sem comprometer a diversidade esportiva e a formação de longo prazo.",
+    "pagina": 40
+   },
+   "890": {
+    "texto": "12. Integridade, antidopagem e combate à manipulação",
+    "pagina": 40
+   },
+   "891": {
+    "texto": "Fortalecer controle de dopagem, integridade de competições, monitoramento de apostas e cooperação entre reguladores, polícia, Ministério Público e entidades esportivas. Exigir transparência de beneficiário final, conflito de interesse e contas auditadas de organizações que recebem recursos públicos.",
+    "pagina": 40
+   },
+   "894": {
+    "texto": "13. Futebol com formação, governança e segurança",
+    "pagina": 41
+   },
+   "895": {
+    "texto": "Proteger categorias de base, desenvolver futebol feminino, profissionalizar gestão, aperfeiçoar transparência de clubes e SAFs e combater violência de torcidas e racismo. Modernizar estádios e operação de jogos com responsabilidade fiscal, acessibilidade, segurança e uso multipropósito.",
+    "pagina": 41
+   },
+   "896": {
+    "texto": "14. Economia do esporte, inovação e eventos com legado",
+    "pagina": 41
+   },
+   "897": {
+    "texto": "Apoiar equipamentos, vestuário, tecnologia, mídia, games, serviços, turismo esportivo e empreendedorismo.",
+    "pagina": 41
+   },
+   "898": {
+    "texto": "Grandes eventos terão análise de custo-benefício, financiamento transparente, plano de legado, calendário de uso e contratação local, evitando estruturas caras e ociosas. Articular empresas, universidades e centros tecnológicos para ampliar a pesquisa, o desenvolvimento e a produção competitiva no Brasil de materiais, equipamentos, tecnologias assistivas e soluções digitais para o esporte.",
+    "pagina": 41
+   },
+   "900": {
+    "texto": "15. Financiamento estável e incentivo com resultado",
+    "pagina": 41
+   },
+   "901": {
+    "texto": "Aperfeiçoar a Lei de Incentivo ao Esporte, fundos e transferências com critérios territoriais, contrapartida, controle e avaliação. Simplificar acesso de bons projetos pequenos, publicar patrocinadores e beneficiários e combinar recursos públicos, loterias e investimento privado sem capturar a política por poucas modalidades.",
+    "pagina": 41
+   },
+   "902": {
+    "texto": "Permitir que projetos aprovados apoiem atletas individualmente, sobretudo em modalidades com menor estrutura, com critérios públicos, limites, transparência e prestação de contas.",
+    "pagina": 41
+   },
+   "1486": {
+    "texto": "Estruturar rotas de litoral, patrimônio, fé, gastronomia, música, festas, natureza e comunidades, com saneamento, conectividade, segurança, qualificação e promoção. Apoiar produção cultural, audiovisual e eventos como cadeias econômicas, reduzir sazonalidade e distribuir o fluxo de visitantes para o interior, em articulação com o Tema 26.",
+    "pagina": 66
+   },
+   "1541": {
+    "texto": "Fortalecer ensino da história e cultura afro-brasileira e indígena, preservar patrimônios, apoiar museus, arquivos, territórios e produção cultural. A abordagem valorizará contribuição nacional e conhecimento, evitando instrumentalização partidária.",
+    "pagina": 68
+   },
+   "1600": {
+    "texto": "Estruturar rotas de turismo de natureza e de base comunitária com saneamento, conectividade, segurança, qualificação, promoção e proteção ambiental.",
+    "pagina": 70
+   },
+   "1601": {
+    "texto": "Assegurar que a expansão do turismo gere renda e empregos locais, respeite a capacidade dos territórios e valorize o patrimônio natural e cultural da região.",
+    "pagina": 70
+   },
+   "2178": {
+    "texto": "Turismo será tratado como cadeia produtiva estratégica, capaz de gerar emprego rápido, renda local, divisas, preservação do patrimônio e projeção internacional. O Brasil combinará natureza, cultura, gastronomia, fé, eventos, negócios e criatividade em destinos competitivos, seguros, acessíveis e sustentáveis.",
+    "pagina": 97
+   },
+   "2179": {
+    "texto": "O governo adotará estratégia de longo prazo com metas de visitantes, receita, permanência, emprego formal e dispersão regional. Infraestrutura, conectividade, promoção, qualificação, crédito, inteligência de mercado, conservação e segurança serão integradas, com protagonismo de estados, municípios e empresas.",
+    "pagina": 97
+   },
+   "2191": {
+    "texto": "Construir plano decenal com metas para chegadas internacionais, receita cambial, viagens domésticas, permanência, gasto, emprego formal, investimento e dispersão regional. Integrar turismo a infraestrutura, segurança, cultura, meio ambiente, esporte e política externa, com monitoramento anual e revisão por evidências.",
+    "pagina": 97
+   },
+   "2193": {
+    "texto": "Apoiar organizações de gestão de destino com participação pública e privada, plano, orçamento, dados e prestação de contas. O Mapa do Turismo terá critérios de capacidade, produto e governança, não apenas adesão formal. Consórcios permitirão que pequenos municípios compartilhem promoção, sinalização, calendários e serviços.",
+    "pagina": 97
+   },
+   "2197": {
+    "texto": "Coordenar rotas aéreas, aeroportos regionais, rodovias, ferrovias turísticas, navegação, cruzeiros e transporte local. Aperfeiçoar vistos e autorizações eletrônicas com reciprocidade e análise de risco, digitalizar entrada e informação ao visitante e negociar mais frequências internacionais sem subsídios permanentes a rotas inviáveis.",
+    "pagina": 98
+   },
+   "2199": {
+    "texto": "Priorizar saneamento, drenagem, resíduos, conectividade, sinalização, iluminação, acessibilidade, centros de atendimento, trilhas e equipamentos de uso público em destinos consolidados ou com projeto consistente.",
+    "pagina": 98
+   },
+   "2200": {
+    "texto": "Obras terão manutenção, capacidade de carga e integração ao planejamento urbano e ambiental.",
+    "pagina": 98
+   },
+   "2202": {
+    "texto": "Integrar polícia turística, inteligência, atendimento multilíngue, defesa do consumidor, prevenção de golpes, proteção de mulheres e crianças e protocolos de emergência. Destinos terão planos para eventos climáticos, surtos, acidentes e busca e salvamento, com informação clara e cooperação entre operadores.",
+    "pagina": 98
+   },
+   "2204": {
+    "texto": "Dar continuidade técnica à Embratur, segmentar mercados por potencial, medir conversão e apoiar comercialização, não apenas publicidade. Integrar diplomacia, audiovisual, cultura, esporte e presença digital, ampliar conectividade com mercados emissores e proteger uma marca Brasil plural, confiável, sustentável e livre de uso partidário.",
+    "pagina": 98
+   },
+   "2205": {
+    "texto": "7. Turismo doméstico, social e fora de temporada",
+    "pagina": 98
+   },
+   "2206": {
+    "texto": "Estimular viagens nacionais em baixa estação, férias escalonadas, turismo estudantil, de idosos e de trabalhadores, com crédito responsável, informação e parcerias. Calendários regionais, eventos e produtos combinados reduzirão sazonalidade sem criar subsídios regressivos ou competição predatória entre destinos.",
+    "pagina": 98
+   },
+   "2208": {
+    "texto": "Modernizar Fungetur e instrumentos do BNDES, bancos regionais e mercado de capitais para hotelaria, parques, centros de convenções, mobilidade, restauração e inovação. Usar garantias e assistência à estruturação para pequenos negócios, apoiar concessões responsáveis e exigir viabilidade, proteção ambiental, benefício local e segurança jurídica.",
+    "pagina": 98
+   },
+   "2210": {
+    "texto": "Simplificar registro, licenciamento e tributação, apoiar meios de pagamento, reservas, gestão de reputação, comércio eletrônico e adoção de inteligência artificial. Conectar artesãos, guias, restaurantes, pousadas, transportadores e produtores locais a roteiros e plataformas, com padrões mínimos de qualidade e proteção de dados.",
+    "pagina": 98
+   },
+   "2212": {
+    "texto": "Pactuar com Sistema S, institutos federais, universidades e empresas formação em hospitalidade, gastronomia, guiamento, eventos, idiomas, acessibilidade, segurança, gestão digital e sustentabilidade.",
+    "pagina": 98
+   },
+   "2213": {
+    "texto": "Certificar competências, aproximar cursos de vagas reais e criar trilhas de progressão para reduzir rotatividade e elevar produtividade e salários.",
+    "pagina": 98
+   },
+   "2215": {
+    "texto": "Estruturar parques, trilhas, rios, praias, cavernas, pesca esportiva e turismo de aventura com concessões ou parcerias quando adequadas, regras de segurança, monitoramento e benefício às comunidades. Parte da receita financiará conservação, manejo de visitantes, ciência e infraestrutura, transformando patrimônio natural em ativo preservado.",
+    "pagina": 98
+   },
+   "2217": {
+    "texto": "Apoiar rotas integradas de patrimônio, música, literatura, festas, peregrinação, culinária, vinhos, cafés, queijos, artesanato e propriedades rurais. Restaurar bens com plano de uso, formar guias e produtores e assegurar autenticidade, liberdade religiosa e participação das comunidades na renda gerada.",
+    "pagina": 98
+   },
+   "2221": {
+    "texto": "Disputar congressos, feiras, festivais e competições com critérios de retorno, calendário, infraestrutura e legado. Integrar turismo esportivo e cultural aos Temas 9 e 13 e usar locações de cinema, televisão e plataformas digitais para promover destinos, com regras simples e respeito ao patrimônio.",
+    "pagina": 99
+   },
+   "2223": {
+    "texto": "Adotar desenho universal, informação acessível, capacitação e auditoria em equipamentos e serviços. Criar roteiros e padrões para pessoas com deficiência, idosos e famílias, e ampliar a participação de comunidades tradicionais, indígenas e quilombolas com consulta, protagonismo e repartição justa dos benefícios. Integrar dados de fluxos, gasto, mobilidade, ocupação, água, resíduos, segurança e satisfação em observatórios interoperáveis, apoiar certificação de sustentabilidade e gerir capacidade, adaptação climática e metas de carbono, preservando o recurso que atrai o visitante.",
+    "pagina": 99
    }
   }
  }

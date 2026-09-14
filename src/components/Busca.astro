@@ -9,12 +9,23 @@
 // caixa, apontado em `rotuladoPor`); o campo continua rotulado para leitor de tela
 const { escopo = 'presidente', compacta = false, semRotulo = false, rotuladoPor = null } = Astro.props;
 const idCampo = `busca-q-${escopo.replace('/', '-')}`;
+// os exemplos do campo são do escopo: gerados por v3/exemplos_busca.py a partir
+// das propostas daquela UF e conferidos contra a própria busca
+// (scripts/confere-exemplos-busca.mjs); sem o arquivo, exemplos gerais
+import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { RAIZ_PROJETO } from '../lib/comparacao-dados.mjs';
+const arqExemplos = join(RAIZ_PROJETO, 'data', 'busca', escopo, 'exemplos.json');
+const exemplos = existsSync(arqExemplos)
+  ? JSON.parse(readFileSync(arqExemplos, 'utf8')).exemplos.slice(0, 4)
+  : (escopo === 'presidente' ? ['creche', 'escala 6x1', 'dívida pública', 'Nordeste'] : ['escolas', 'hospitais', 'segurança']);
+const placeholder = `Ex.: ${exemplos.join(', ')}`;
 ---
 <form class={`busca-caixa${compacta ? ' compacta' : ''}${semRotulo ? ' sem-rotulo' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
   <label for={idCampo} class={semRotulo ? 'so-leitor' : undefined}>Buscar nos programas de governo</label>
   <div class="linha">
     <input class="campo" id={idCampo} name="q" type="search" maxlength="300" autocomplete="off" aria-labelledby={rotuladoPor ?? undefined}
-      placeholder="Ex.: creche, escala 6x1, dívida pública, Nordeste" />
+      placeholder={placeholder} />
     {escopo !== 'presidente' && <input type="hidden" name="escopo" value={escopo} />}
     <button class="botao" type="submit">Buscar</button>
   </div>

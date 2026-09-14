@@ -11,10 +11,9 @@
 
 export const CARGOS = Object.freeze([
   { slug: 'presidente', nome: 'Presidente', porUF: false, href: '/presidente', preposicao: null, menu: true },
-  // Governador: rotas construídas (/governador, /governador/<uf>, "em
-  // preparação"), mas FORA do menu e da home até haver comparação de alguma
-  // UF — decisão do Thiago em 13/09. Volta com `menu: true`.
-  { slug: 'governador', nome: 'Governador', porUF: true, href: '/governador', preposicao: 'de', menu: false },
+  // Governador: no menu desde 14/09 (decisão do Thiago), com as UFs prontas e
+  // as demais "em preparação". A home continua sendo a porta de Presidente.
+  { slug: 'governador', nome: 'Governador', porUF: true, href: '/governador', preposicao: 'de', menu: true },
   // Senador: FORA desde 13/09/2026, com o fim do chat. Candidatura ao Senado
   // não registra programa de governo no TSE, e o site passou a comparar só
   // programas. O endereço antigo redireciona (public/_redirects).

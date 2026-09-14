@@ -9,9 +9,9 @@
   "industria_inovacao"
  ],
  "origem": {
-  "arquivo": "industria-ciencia-5.json",
-  "gerado_em": "2026-09-13T08:28:17Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "industria-ciencia-6.json",
+  "gerado_em": "2026-09-14T06:30:30Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,69 +53,45 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Inteligência artificial",
-   "proposta": "Desenvolver capacidade nacional de produzir inteligência artificial, com soberania tecnológica, e não apenas consumi-la",
+   "proposta": "Difundir o uso de inteligência artificial e a digitalização entre micro, pequenas e médias empresas",
    "n_concorda": 4,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      587,
-      592
-     ],
-     "nota": "Marco Brasileiro da IA com 14 medidas em cinco eixos"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      470,
-      471
-     ],
-     "nota": "Soberania digital e IA desenvolvida por empresas brasileiras"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      830,
-      831
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      817,
-      820,
-      824
-     ],
-     "nota": "IA tratada como infraestrutura estratégica de Estado"
-    }
-   }
-  },
-  {
-   "id": "p2",
-   "subtema": "Inteligência artificial",
-   "proposta": "Difundir o uso da inteligência artificial no setor produtivo, com prioridade para micro, pequenas e médias empresas",
-   "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       828
      ],
-     "nota": "Prioridade a indústria, agronegócio, saúde e logística"
+     "nota": "via Estratégia Nacional de IA, em larga escala"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      476
+      476,
+      504
      ],
-     "nota": "Foco em agro, saúde e serviços financeiros"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      983,
+      986
+     ],
+     "nota": ""
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -127,7 +103,170 @@
    }
   },
   {
+   "id": "p2",
+   "subtema": "Inteligência artificial",
+   "proposta": "Criar programa nacional de Indústria 4.0 e IA com metas de adoção por porte e setor e vouchers de digitalização com contrapartida privada",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      984,
+      986,
+      987
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p3",
+   "subtema": "Inteligência artificial",
+   "proposta": "Estabelecer marco legal e política nacional de inteligência artificial",
+   "n_concorda": 4,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      821,
+      824,
+      825
+     ],
+     "nota": "IA tratada como infraestrutura estratégica de Estado"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      577
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      831
+     ],
+     "nota": "legislação voltada à liberdade de criar e inovar"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      586,
+      587
+     ],
+     "nota": "Marco Brasileiro da IA com 14 medidas em cinco eixos"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Inteligência artificial",
+   "proposta": "Limitar a regulação da IA a usos, riscos e danos concretos, evitando regulação ampla e prévia",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      269,
+      270
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      558,
+      577
+     ],
+     "nota": "supervisão por reguladores setoriais e sandboxes"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      831,
+      836
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Inteligência artificial",
+   "proposta": "Aplicar inteligência artificial em setores prioritários (agro, saúde, educação, segurança, logística e gestão pública)",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      476
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      587
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      828
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      824
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Inteligência artificial",
+   "proposta": "Desenvolver IA e modelos próprios brasileiros, inclusive modelos de linguagem em português",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      471,
+      475
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      579,
+      988
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      591
+     ],
+     "nota": "IA proprietária aplicada ao agro"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      534,
+      817
+     ],
+     "nota": "tornar-se produtor e não só consumidor de IA"
+    }
+   }
+  },
+  {
+   "id": "p7",
    "subtema": "Inteligência artificial",
    "proposta": "Criar laboratório nacional de inteligência artificial com capital privado majoritário e governança independente",
    "n_concorda": 1,
@@ -142,57 +281,10 @@
    }
   },
   {
-   "id": "p4",
+   "id": "p8",
    "subtema": "Inteligência artificial",
-   "proposta": "Estabelecer marco legal e política nacional de regulação da inteligência artificial",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      821,
-      825
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "discorda",
-     "blocos": [
-      269,
-      270
-     ],
-     "nota": "Rejeita regulação precoce e ampla da IA"
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Inteligência artificial",
-   "proposta": "Adotar abordagem regulatória mínima e pró-inovação para tecnologia, com intervenção apenas pontual diante de danos concretos",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      269,
-      270
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      831
-     ],
-     "nota": "Legislação voltada à liberdade de criar e inovar"
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Inteligência artificial",
-   "proposta": "Desenvolver e manter modelos de linguagem em português voltados a problemas nacionais",
-   "n_concorda": 1,
+   "proposta": "Organizar bases públicas de dados de qualidade como ativo estratégico, com governança e regras de acesso, para treinar e avaliar IA",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -200,74 +292,43 @@
       475
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Inteligência artificial",
-   "proposta": "Constituir base/plataforma nacional de dados para treinamento e avaliação de sistemas de inteligência artificial",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      475
+      579
      ],
-     "nota": "Inclui regras e infraestrutura para economia de dados"
+     "nota": ""
     },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       591
      ],
-     "nota": "Base Agro-Bio Nacional, dados agropecuários"
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Inteligência artificial",
-   "proposta": "Aplicar inteligência artificial e soluções digitais aos serviços públicos e à gestão governamental",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      824
-     ],
      "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      827,
-      831
-     ],
-     "nota": "Estado Digital e GovTech"
     }
    }
   },
   {
    "id": "p9",
    "subtema": "Inteligência artificial",
-   "proposta": "Elevar a participação brasileira nas patentes de inteligência artificial",
+   "proposta": "Unificar tecnicamente o acervo nacional de dados agropecuários em base única para uso em IA",
    "n_concorda": 1,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      831
+      591
      ],
-     "nota": ""
+     "nota": "Base Agro-Bio Nacional"
     }
    }
   },
   {
    "id": "p10",
    "subtema": "Inteligência artificial",
-   "proposta": "Investir em instituições públicas de pesquisa em IA e na indústria nacional de hardware e software de alto desempenho",
-   "n_concorda": 1,
+   "proposta": "Investir em instituições públicas de pesquisa que desenvolvem inteligência artificial",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -275,20 +336,42 @@
       476
      ],
      "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      817
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p11",
-   "subtema": "Inteligência artificial",
-   "proposta": "Assegurar desenvolvimento ético e humanizado da inteligência artificial, preservando o valor das relações humanas",
-   "n_concorda": 1,
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Expandir crédito, subvenção, capital de risco e encomendas tecnológicas para inovação empresarial",
+   "n_concorda": 3,
    "posicoes": {
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      387,
-      825
+      574,
+      949
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      588
+     ],
+     "nota": "foco em venture capital de fundos brasileiros"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      439,
+      443
      ],
      "nota": ""
     }
@@ -296,9 +379,339 @@
   },
   {
    "id": "p12",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Ampliar os investimentos públicos em ciência, tecnologia e inovação",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Modernizar e simplificar a Lei do Bem, ampliando seu alcance às pequenas e médias empresas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      332,
+      574
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Reduzir impostos sobre empresas de tecnologia e facilitar a distribuição de stock options",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      588
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Fortalecer parques tecnológicos, incubadoras e startups de base tecnológica",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      836
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      332,
+      988,
+      1596
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Transformar micro e pequenas empresas em protagonistas da inovação, com crédito e programas de modernização",
    "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      497,
+      504
+     ],
+     "nota": "ampliação do Brasil Mais Produtivo"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      974,
+      1470
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2569,
+      2578
+     ],
+     "nota": "via redes cooperativas de microempresas"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Remover barreiras burocráticas e dar segurança jurídica para investimento em inovação e tecnologia",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      268,
+      274
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      831
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      574
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Atrair investimento estrangeiro direto para setores tecnológicos",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      273,
+      274
+     ],
+     "nota": "road shows com parceiros privados"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      529
+     ],
+     "nota": "via incentivos em ZEEs de terras raras"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      540
+     ],
+     "nota": "foco em chips e componentes"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      980
+     ],
+     "nota": "investimentos intensivos em energia limpa"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Atrair investimentos em data centers com ambiente tributário e regulatório competitivo",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      267,
+      268
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      590
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      558,
+      578
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      471
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      830
+     ],
+     "nota": "energia limpa e barata como vantagem para data centers"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Condicionar a instalação de data centers a contrapartidas (energia renovável, eficiência hídrica, conteúdo local e reserva de capacidade computacional nacional)",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      472,
+      474
+     ],
+     "nota": "salvaguardas socioambientais obrigatórias"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      558,
+      578
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Garantir infraestrutura computacional de alto desempenho soberana para universidades, pesquisa e serviços públicos",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      472
+     ],
+     "nota": "supercomputadores operados por instituições nacionais"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      579,
+      960
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Tornar o país exportador de capacidade de inferência computacional, com polo concentrado no Nordeste",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      590
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Assegurar soberania digital e tecnológica sobre tecnologias e infraestruturas críticas",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      470
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      820,
+      824
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      557,
+      960
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      590
+     ],
+     "nota": "foco em reduzir dependência computacional externa"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Ampliar infraestrutura de conectividade e cibersegurança (5G, preparação para 6G, nuvem e segurança industrial)",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      588,
+      989
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Infraestrutura digital e data centers",
+   "proposta": "Exportar soluções de infraestrutura pública digital (PIX, gov.br, open finance) e usar diplomacia tecnológica para ampliar parcerias",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      589
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Ampliar os investimentos públicos em ciência, pesquisa, desenvolvimento e inovação",
+   "n_concorda": 4,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -315,74 +728,52 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      557,
+      952
+     ],
+     "nota": "trajetória plurianual com prestação de contas anual"
+    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       827,
       831
      ],
-     "nota": "Alta prioridade a pesquisa e desenvolvimento"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p13",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Aproximar universidades, centros de pesquisa e setor produtivo, fortalecendo ecossistemas de inovação",
-   "n_concorda": 4,
+   "id": "p26",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Assegurar estabilidade, execução plurianual e não contingenciamento dos recursos do FNDCT",
+   "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      682,
-      683
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      836
-     ],
-     "nota": ""
-    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      477
+      443
      ],
      "nota": ""
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      825,
-      2738
+      332,
+      573,
+      949
      ],
-     "nota": ""
+     "nota": "inclui fundos patrimoniais e proteção contra contingenciamento"
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Remover barreiras regulatórias para instalação de centros de pesquisa e desenvolvimento de empresas dentro de universidades públicas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      682,
-      683
-     ],
-     "nota": "Busca financiamento privado complementar às universidades"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Adotar financiamento de pesquisa baseado em desempenho, concentrando recursos em instituições com produção científica comprovada",
+   "id": "p27",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Concentrar recursos de pesquisa nas instituições com desempenho comprovado, com financiamento baseado em resultados",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -396,9 +787,9 @@
    }
   },
   {
-   "id": "p16",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Publicar em formato aberto os beneficiários, valores e resultados do apoio público à inovação",
+   "id": "p28",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Publicar em formato aberto beneficiários, valores e resultados do apoio público à inovação",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -407,205 +798,91 @@
       675,
       676
      ],
-     "nota": "Lei do Bem, Finep, FNDCT, CNPq e organizações sociais"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p17",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Assegurar o uso estratégico e a não contingenciação dos recursos do FNDCT",
-   "n_concorda": 1,
+   "id": "p29",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Adotar avaliação independente por resultados, metas públicas e continuidade entre governos na política de ciência e inovação",
+   "n_concorda": 2,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      443
+      573,
+      590,
+      940
+     ],
+     "nota": "missões nacionais com prestação de contas"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      670
+     ],
+     "nota": "premiação por desempenho no financiamento"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Orientar o apoio público à P&D para complementar e alavancar o investimento privado, com a iniciativa privada como protagonista da inovação",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      277
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      26,
+      951
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p18",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Fortalecer parques tecnológicos, incubadoras e startups de base tecnológica",
-   "n_concorda": 1,
+   "id": "p31",
+   "subtema": "Ciência, pesquisa e financiamento",
+   "proposta": "Aproximar universidades e empresas, permitindo centros de P&D empresariais em universidades e transferência tecnológica",
+   "n_concorda": 5,
    "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      682,
+      683
+     ],
+     "nota": "centros privados dentro de universidades públicas"
+    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       836
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Ciência, pesquisa e inovação",
-   "proposta": "Reduzir a tributação sobre empresas de tecnologia, facilitar a distribuição de stock options e ampliar o venture capital nacional",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      588
+      331,
+      332,
+      953
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Adotar política industrial ativa de reindustrialização, com prioridade a setores de alta e média intensidade tecnológica",
-   "n_concorda": 3,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      436,
-      437,
-      451
-     ],
-     "nota": "Aprimorar a Nova Indústria Brasil e integrar políticas industrial e de CT&I"
+     "nota": "rede de fábricas-modelo e plantas-piloto com EMBRAPII"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      531,
-      2727,
-      2728,
-      2729,
-      2731,
-      2732,
-      2733,
-      2734,
-      2736
-     ],
-     "nota": ""
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      466
-     ],
-     "nota": "Via zonas econômicas especiais"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Criar programa nacional para instalação de 10 mil novas indústrias distribuídas por todas as regiões",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      529,
-      531
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Usar as compras públicas como instrumento de indução da inovação e da produção nacional",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      443,
-      471
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      831
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Condicionar benefícios e financiamentos públicos a conteúdo local, valor agregado nacional e margens de preferência para empresas brasileiras",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      443
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Difundir tecnologias da Indústria 4.0 (robótica, automação, IoT, manufatura avançada) e renovar o maquinário industrial",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      451
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      534,
-      537
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Desenvolver cadeias industriais de baixo carbono, como hidrogênio verde e aço de baixa emissão",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      471,
-      472
-     ],
-     "nota": "Polos de Suape, Pecém e Araripe"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      437
-     ],
-     "nota": "Descarbonização como objetivo da política industrial"
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Política industrial e neoindustrialização",
-   "proposta": "Priorizar a exportação de bens de alto valor agregado e de tecnologia em vez de matérias-primas",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2727,
-      2737,
+      825,
       2738
      ],
      "nota": ""
@@ -613,124 +890,53 @@
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      477
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Tratar a política industrial como política permanente de Estado, integrada às políticas de ciência, inovação, financiamento e comércio exterior",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      436,
       437
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Datacenters e infraestrutura computacional",
-   "proposta": "Expandir a instalação de data centers no Brasil aproveitando energia abundante e vantagens locacionais",
-   "n_concorda": 4,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      267,
-      268
-     ],
-     "nota": "Via ambiente regulatório estável e remoção de burocracias"
+     "nota": "continuidade e aprofundamento da neoindustrialização"
     },
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      590
-     ],
-     "nota": "Nordeste como polo exportador de inferência computacional"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      471
-     ],
-     "nota": "Da cadeia de datacenters aos serviços de nuvem"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      830
+      925,
+      929,
+      934,
+      935,
+      936,
+      939
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Datacenters e infraestrutura computacional",
-   "proposta": "Condicionar a expansão de data centers a salvaguardas socioambientais, fontes renováveis e contrapartidas de conteúdo local e capacidade computacional para o mercado interno",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      472,
-      474
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Datacenters e infraestrutura computacional",
-   "proposta": "Construir infraestrutura de supercomputação soberana, desenvolvida e operada por instituições nacionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      472
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Datacenters e infraestrutura computacional",
-   "proposta": "Criar regime tributário e regulatório específico para atrair data centers e viabilizar exportação de capacidade computacional",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      590,
-      592
-     ],
-     "nota": "Regime próprio nas Zonas Econômicas de Alta Inteligência"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      268
-     ],
-     "nota": "Ênfase em estabilidade regulatória e desburocratização"
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Minerais críticos, semicondutores e cadeias estratégicas",
-   "proposta": "Verticalizar e internalizar as cadeias de minerais críticos e terras raras, da extração ao processamento e a componentes de alto valor",
-   "n_concorda": 4,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      529
-     ],
-     "nota": "Zonas econômicas dedicadas ao processamento de terras raras"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3734,
-      3735
+      2727
      ],
-     "nota": "Ligas especiais e ímãs permanentes"
-    },
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Priorizar setores de alta intensidade tecnológica e agregar valor às cadeias produtivas em vez de exportar matéria-prima bruta",
+   "n_concorda": 4,
+   "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -739,91 +945,49 @@
      ],
      "nota": ""
     },
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      830
+      26,
+      334,
+      335,
+      957
      ],
-     "nota": "Minerais críticos como parte da estratégia tecnológica nacional"
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Minerais críticos, semicondutores e cadeias estratégicas",
-   "proposta": "Adotar política nacional para atrair e desenvolver a produção de semicondutores, componentes eletrônicos e sistemas embarcados",
-   "n_concorda": 2,
-   "posicoes": {
+     "nota": "oito eixos de oportunidade com instrumentos próprios"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      540,
-      2730
+      2727,
+      2728,
+      2731,
+      2734,
+      2736,
+      2737,
+      3734
      ],
      "nota": ""
     },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      473
-     ],
-     "nota": "Polo Aratu-Camaçari de baterias e semicondutores"
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Talentos e formação tecnológica",
-   "proposta": "Reter e repatriar talentos científicos e tecnológicos brasileiros",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      589
+      529
      ],
      "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      442
-     ],
-     "nota": "Continuidade do Programa Conhecimento Brasil"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      836
-     ],
-     "nota": "Ecossistema de inovação para o jovem trabalhar sem sair do país"
     }
    }
   },
   {
    "id": "p34",
-   "subtema": "Talentos e formação tecnológica",
-   "proposta": "Formar talentos e competências digitais articulados a polos de inovação, universidades e setor produtivo",
-   "n_concorda": 3,
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Conceder apoio industrial apenas com contrapartidas verificáveis e prazo definido, sem proteção permanente nem escolha arbitrária de empresas",
+   "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      477
-     ],
-     "nota": "Hub nacional de competências digitais"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      589
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      830
+      335,
+      941
      ],
      "nota": ""
     }
@@ -831,8 +995,253 @@
   },
   {
    "id": "p35",
-   "subtema": "Talentos e formação tecnológica",
-   "proposta": "Simplificar vistos e reconhecimento de qualificações para especialistas estrangeiros em setores de fronteira tecnológica",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Ampliar crédito de longo prazo e criar depreciação acelerada para modernizar o parque fabril",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      942,
+      943,
+      944,
+      945,
+      946,
+      948
+     ],
+     "nota": "programa definitivo de depreciação acelerada (PL 473/2026)"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      443
+     ],
+     "nota": "financiamento direcionado com parceria público-privada de crédito"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Criar programa nacional para implantação de 10 mil novas indústrias distribuídas por todas as regiões",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      531
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Estimular automação, digitalização e manufatura avançada na indústria (Indústria 4.0), inclusive retrofit digital de máquinas",
+   "n_concorda": 3,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      534,
+      537
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      947,
+      954,
+      982,
+      991
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      451
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Desenvolver a cadeia nacional de bens de capital e automação (máquinas, robôs, sensores, software industrial), elevando a densidade robótica",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      955,
+      965,
+      973
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2733
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Adotar padrões abertos de interoperabilidade industrial como critério no financiamento público",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      990
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Desenvolver cadeias industriais de baixo carbono (hidrogênio, biocombustíveis, baterias, aço verde) como vantagem competitiva",
+   "n_concorda": 4,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      958,
+      976,
+      977,
+      978,
+      979,
+      981
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      437
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      471,
+      472
+     ],
+     "nota": "polos de hidrogênio verde e aço de baixo carbono"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2732
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Talentos e formação",
+   "proposta": "Repatriar e reter pesquisadores e talentos científicos brasileiros",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      442
+     ],
+     "nota": "continuidade do Programa Conhecimento Brasil"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      575
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      589
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Talentos e formação",
+   "proposta": "Formar talentos em computação, matemática e inteligência artificial, articulando polos, universidades e setor produtivo",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      477
+     ],
+     "nota": "hub nacional de competências digitais"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      575
+     ],
+     "nota": "desde a educação básica"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      589
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      830,
+      836
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Talentos e formação",
+   "proposta": "Atrair pesquisadores e especialistas estrangeiros para universidades e empresas brasileiras",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      575
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      688,
+      689
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Talentos e formação",
+   "proposta": "Simplificar concessão de vistos e reconhecimento de qualificações de especialistas em setores de fronteira tecnológica",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -846,10 +1255,101 @@
    }
   },
   {
-   "id": "p36",
-   "subtema": "Tecnologia agropecuária, biotecnologia e saúde",
-   "proposta": "Ampliar a capacidade nacional de pesquisa, desenvolvimento e produção de medicamentos, vacinas, equipamentos médicos e biotecnologia",
-   "n_concorda": 2,
+   "id": "p45",
+   "subtema": "Semicondutores e minerais estratégicos",
+   "proposta": "Construir capacidade nacional em semicondutores e microeletrônica, reduzindo a dependência externa",
+   "n_concorda": 4,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      540,
+      2730
+     ],
+     "nota": "política nacional para atrair investimentos em chips"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      586,
+      954
+     ],
+     "nota": "construção gradual, por nichos, com Finep e BNDES"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      473
+     ],
+     "nota": "polo de baterias e semicondutores em Aratu-Camaçari"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      476
+     ],
+     "nota": "indústria nacional de hardware de alto desempenho"
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Semicondutores e minerais estratégicos",
+   "proposta": "Verticalizar a cadeia de minerais críticos e terras raras até materiais avançados, ímãs e componentes tecnológicos",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      529
+     ],
+     "nota": "ZEEs de processamento e hubs de tecnologia"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3734,
+      3735
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      963,
+      979
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      436
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Semicondutores e minerais estratégicos",
+   "proposta": "Participar da pesquisa e das aplicações emergentes em computação quântica",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      586
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Biotecnologia e complexo da saúde",
+   "proposta": "Ampliar a capacidade nacional de pesquisa e produção de medicamentos, vacinas, biotecnologia e equipamentos médicos",
+   "n_concorda": 3,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
@@ -858,19 +1358,27 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      335,
+      961
+     ],
+     "nota": ""
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       471
      ],
-     "nota": "Biotecnologia e fármacos avançados como áreas de liderança"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p37",
-   "subtema": "Tecnologia agropecuária, biotecnologia e saúde",
-   "proposta": "Modernizar o marco regulatório da biotecnologia agrícola (edição gênica, bioinsumos, SISGEN e propriedade intelectual) com prazos máximos de análise",
+   "id": "p49",
+   "subtema": "Biotecnologia e complexo da saúde",
+   "proposta": "Modernizar o marco regulatório da biotecnologia agrícola (edição gênica, bioinsumos, SISGEN) com prazos máximos de análise",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -884,22 +1392,103 @@
    }
   },
   {
-   "id": "p38",
-   "subtema": "Tecnologia agropecuária, biotecnologia e saúde",
-   "proposta": "Desenvolver drones e robótica agrícola e industrial com tecnologia nacional",
+   "id": "p50",
+   "subtema": "Biotecnologia e complexo da saúde",
+   "proposta": "Criar rede amazônica de biotecnologia e nanotecnologia com propriedade intelectual, repartição de benefícios e rastreabilidade digital",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1595,
+      1596,
+      1597
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Compras públicas e conteúdo local",
+   "proposta": "Usar o poder de compra do Estado e encomendas tecnológicas para criar demanda inicial por soluções e produção nacionais",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      443,
+      471
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      587,
+      968,
+      969,
+      973
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      831
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Compras públicas e conteúdo local",
+   "proposta": "Condicionar benefícios e prioridade em compras a conteúdo local, valor agregado nacional e transferência de tecnologia",
    "n_concorda": 2,
    "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      443
+     ],
+     "nota": "margens de preferência para empresas brasileiras"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      972,
+      975
+     ],
+     "nota": "com prazo definido e contrapartida"
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Robótica, drones e sistemas autônomos",
+   "proposta": "Estimular a indústria nacional de robótica, drones e sistemas autônomos",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      587,
+      973
+     ],
+     "nota": ""
+    },
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       591
      ],
-     "nota": "Movidos por IA proprietária brasileira"
+     "nota": "drones agrícolas movidos por IA brasileira"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2518,
+      2729,
       2735
      ],
      "nota": ""
@@ -907,86 +1496,15 @@
    }
   },
   {
-   "id": "p39",
-   "subtema": "Tecnologia agropecuária, biotecnologia e saúde",
-   "proposta": "Redirecionar o investimento público em P&D para complementar o investimento privado",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      277
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Micro e pequenas empresas e cooperativismo tecnológico",
-   "proposta": "Apoiar a modernização tecnológica e o aumento da produtividade das micro e pequenas empresas",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      497,
-      504
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2569,
-      2574
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Micro e pequenas empresas e cooperativismo tecnológico",
-   "proposta": "Ampliar o programa Brasil Mais Produtivo com linhas de crédito para digitalização de micro, pequenas e médias empresas",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      504
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Micro e pequenas empresas e cooperativismo tecnológico",
-   "proposta": "Estimular cooperativas industriais e de tecnologia para compartilhamento de estruturas, equipamentos e tecnologias avançadas",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2511,
-      2512,
-      2515,
-      2525
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Zonas econômicas especiais",
-   "proposta": "Criar zonas econômicas especiais com regime fiscal e regulatório próprio para atrair indústria e tecnologia",
+   "id": "p54",
+   "subtema": "Zonas econômicas especiais e polos",
+   "proposta": "Criar Zonas Econômicas Especiais com regime tributário e regulatório próprio para atrair indústria e tecnologia",
    "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
+      464,
       466,
       529
      ],
@@ -997,14 +1515,14 @@
      "blocos": [
       2738
      ],
-     "nota": "Zonas francas com centros de inovação"
+     "nota": "Zonas Francas com centros de inovação integrados"
     }
    }
   },
   {
-   "id": "p44",
-   "subtema": "Zonas econômicas especiais",
-   "proposta": "Implantar polos regionais específicos de zonas econômicas especiais (Suape, Pecém-Araripe e Aratu-Camaçari)",
+   "id": "p55",
+   "subtema": "Zonas econômicas especiais e polos",
+   "proposta": "Implantar polos industriais específicos em Suape, Pecém-Araripe e Aratu-Camaçari",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -1019,9 +1537,9 @@
    }
   },
   {
-   "id": "p45",
-   "subtema": "Zonas econômicas especiais",
-   "proposta": "Estruturar a governança dos polos industriais por parcerias público-privadas e consórcios públicos interestaduais",
+   "id": "p56",
+   "subtema": "Zonas econômicas especiais e polos",
+   "proposta": "Governar os polos industriais por parcerias público-privadas e consórcios públicos interestaduais",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -1034,9 +1552,9 @@
    }
   },
   {
-   "id": "p46",
-   "subtema": "Zonas econômicas especiais",
-   "proposta": "Criar zonas econômicas dedicadas à cadeia da inteligência artificial, com regime regulatório, tributário e energético próprio",
+   "id": "p57",
+   "subtema": "Zonas econômicas especiais e polos",
+   "proposta": "Criar Zonas Econômicas de Alta Inteligência, com regime regulatório, tributário e energético próprio para a cadeia de IA",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -1049,49 +1567,186 @@
    }
   },
   {
-   "id": "p47",
-   "subtema": "Investimento estrangeiro em tecnologia",
-   "proposta": "Facilitar a entrada de investimento estrangeiro qualificado em setores tecnológicos, removendo barreiras e promovendo o país junto a investidores",
+   "id": "p58",
+   "subtema": "Setor espacial",
+   "proposta": "Desenvolver o setor espacial brasileiro (satélites, veículos lançadores, espaçoporto de Alcântara) e atrair investimento aeroespacial",
    "n_concorda": 2,
    "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      588
+     ],
+     "nota": ""
+    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       273,
       274
      ],
-     "nota": "Road shows com parceiros privados"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      529
-     ],
-     "nota": "Incentivos fiscais em zonas de terras raras"
+     "nota": "foco em atrair empresas privadas de lançamento"
     }
    }
   },
   {
-   "id": "p48",
-   "subtema": "Investimento estrangeiro em tecnologia",
-   "proposta": "Atrair investimentos para o setor aeroespacial, explorando a vantagem locacional para lançamento de satélites e foguetes",
+   "id": "p59",
+   "subtema": "Cooperativismo tecnológico",
+   "proposta": "Estimular cooperativas de tecnologia (IA, robótica, drones, software, automação) e indústrias compartilhadas entre pequenos produtores",
    "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      273,
-      274
+      2511,
+      2512,
+      2515,
+      2516,
+      2517,
+      2518,
+      2519,
+      2522,
+      2523,
+      2524,
+      2525
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p49",
-   "subtema": "Micro e pequenas empresas e cooperativismo tecnológico",
-   "proposta": "Estimular a organização de microempresas em cooperativas ou redes para compartilhamento de compras, logística, marketing, capacitação, crédito e canais de venda",
+   "id": "p60",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Organizar a reindustrialização em eixos de oportunidade (energia e baixo carbono, infraestrutura e cidades, bioeconomia, defesa e uso dual, manufatura avançada), cada um com instrumentos próprios de crédito, inovação, compras públicas e formação",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      466,
+      471,
+      472,
+      473,
+      529,
+      592
+     ],
+     "nota": "Reindustrialização via ZEEs setoriais (baixo carbono, semicondutores, terras raras, defesa, IA)"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      436,
+      437,
+      443,
+      451
+     ],
+     "nota": "Neoindustrialização com crédito, compras públicas, conteúdo local e foco em setores estratégicos"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2727,
+      2728,
+      2730,
+      2731,
+      2732,
+      2738,
+      3734
+     ],
+     "nota": "Política industrial por setores estratégicos com centros de inovação; eixos de energia limpa, bioeconomia e manufatura avançada"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      956,
+      959,
+      962,
+      966
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Política industrial e reindustrialização",
+   "proposta": "Desenvolver a base industrial de defesa e as tecnologias de uso dual como eixo de segurança econômica",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      447,
+      592
+     ],
+     "nota": "ZEEs de defesa e redução da dependência de importações de duplo uso"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      817
+     ],
+     "nota": "Investimento em P&D com foco em áreas estratégicas, incluindo defesa"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      964
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Inteligência artificial",
+   "proposta": "Oferecer crédito, incentivos e garantias para aquisição de softwares, equipamentos e soluções de inteligência artificial pelas empresas",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      828
+     ],
+     "nota": "Estratégia Nacional de IA para difundir IA em micro, pequenas e médias empresas"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      476,
+      504
+     ],
+     "nota": "Difusão de IA no setor produtivo e crédito para digitalização de MPEs"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      985
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Inteligência artificial",
+   "proposta": "Promover o desenvolvimento e uso humanizado da inteligência artificial, preservando a empatia, o afeto e o sentido existencial humano",
    "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      387
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Inovação empresarial e startups",
+   "proposta": "Criar estruturas de compartilhamento entre microempresas, abrangendo compras, logística, marketing, tecnologia, capacitação, crédito e canais de venda",
+   "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
@@ -1100,11 +1755,21 @@
       2571,
       2572,
       2573,
+      2574,
       2575,
       2576,
       2577
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      953,
+      974,
+      1469
+     ],
+     "nota": "Rede de fábricas-modelo e plantas-piloto abertas a PMEs, programas de fornecedores, crédito, digitalização e exportação."
     }
    }
   }
@@ -1114,10 +1779,6 @@
    "387": {
     "texto": "Também precisamos humanizar urgentemente a tecnologia. A inteligência artificial pode produzir avanços extraordinários. Pode revolucionar medicina, educação, agricultura e comunicação. Mas nenhuma tecnologia substituirá a necessidade humana de afeto, empatia e sentido existencial. O perigo não é a máquina se tornar humana. O perigo é o ser humano se tornar máquina emocionalmente fria.",
     "pagina": 32
-   },
-   "529": {
-    "texto": "a) Programa Nacional para implantação de 10 mil novas indústrias (em destaque agroindústrias pequenas, médias e grandes)",
-    "pagina": 40
    },
    "531": {
     "texto": "Implantaremos um grande programa nacional para estimular a instalação de 10 mil novas indústrias ao longo dos próximos anos, distribuídas por todas as regiões do país, valorizando as vocações econômicas locais e reduzindo as desigualdades regionais.",
@@ -1175,9 +1836,33 @@
     "texto": "A economia cooperativa também deve ocupar os setores mais avançados da nova revolução industrial. Serão estimuladas cooperativas de:",
     "pagina": 133
    },
+   "2516": {
+    "texto": "• Inteligência artificial;",
+    "pagina": 133
+   },
+   "2517": {
+    "texto": "• Robótica;",
+    "pagina": 133
+   },
    "2518": {
     "texto": "• Drones;",
     "pagina": 133
+   },
+   "2519": {
+    "texto": "• Softwares;",
+    "pagina": 133
+   },
+   "2522": {
+    "texto": "• Automação;",
+    "pagina": 134
+   },
+   "2523": {
+    "texto": "• Plataformas digitais;",
+    "pagina": 134
+   },
+   "2524": {
+    "texto": "• Segurança e monitoramento inteligente.",
+    "pagina": 134
    },
    "2525": {
     "texto": "O cooperativismo não deve permanecer restrito aos setores tradicionais, mas participar da economia do futuro.",
@@ -1217,6 +1902,10 @@
    },
    "2577": {
     "texto": "• Canais de venda.",
+    "pagina": 136
+   },
+   "2578": {
+    "texto": "Isolado, o pequeno empreendedor tem pouca força de negociação. No entanto, cooperado, ele passa a fazer parte de uma rede econômica poderosa.",
     "pagina": 136
    },
    "2727": {
@@ -1361,6 +2050,14 @@
    }
   },
   "renan-santos": {
+   "447": {
+    "texto": "4 dependência de importações estratégicas e de duplo uso (estimadas pela CNI em cerca de R$70 bilhões por ano, abrangendo componentes e tecnologias sensíveis de uso civil e militar);",
+    "pagina": 34
+   },
+   "464": {
+    "texto": "Esses problemas convergem para um cenário de vulnerabilidade econômica e estratégica, que o nosso Plano de Ação trabalha para poder ser revertido por meio da implementação de Zonas Econômicas Especiais articuladas.",
+    "pagina": 35
+   },
    "466": {
     "texto": "O objetivo do presente capítulo é propor a criação de Zonas Econômicas Especiais (ZEEs) como instrumento estratégico de transformação industrial e desenvolvimento econômico brasileiro. A solução central integra três pilares complementares:",
     "pagina": 35
@@ -1384,6 +2081,10 @@
    "529": {
     "texto": "▪ Estabelecimento de zonas econômicas especiais (ZEEs) dedicadas ao processamento e manufatura de componentes de terras raras, com incentivos fiscais e regulatórios que atraiam investimento direto estrangeiro qualificado. Devemos investir na criação de hubs de tecnologia, aproximando a pesquisa, em especial nas áreas sensíveis como geologia, engenharia, geografia e química.",
     "pagina": 39
+   },
+   "586": {
+    "texto": "PARTE 2: MARCO BRASILEIRO DA INTELIGÊNCIA ARTIFICIAL",
+    "pagina": 43
    },
    "587": {
     "texto": "O MBIA é uma arquitetura de catorze medidas distribuídas também em cinco eixos. A tese é simples: nenhuma medida isolada resolve; o conjunto, sim, pode mudar o regime.",
@@ -1474,6 +2175,316 @@
    "689": {
     "texto": "Simplificar os processos de reconhecimento de qualificações e de concessão de vistos para especialistas em setores de fronteira tecnológica, reduzindo os obstáculos à entrada desses profissionais no mercado e nas universidades brasileiras e permitindo que o setor privado tenha acesso aos talentos de que necessita para crescer.",
     "pagina": 56
+   }
+  },
+  "ronaldo-caiado": {
+   "26": {
+    "texto": "O Brasil voltará a produzir, transformar e inovar. Não aceitaremos continuar exportando minério, grão e conhecimento bruto para importar máquinas, tecnologia e empregos qualificados. O agronegócio, a indústria, a mineração responsável, a energia, a infraestrutura e a ciência serão articulados em uma estratégia nacional de desenvolvimento. A iniciativa privada será o principal motor da economia; ao Estado caberá garantir estabilidade, concorrência, infraestrutura, capital humano, regulação de qualidade e instrumentos para que inovação e investimento de longo prazo aconteçam.",
+    "pagina": 3
+   },
+   "331": {
+    "texto": "6. Integrar ciência, inovação e empresas",
+    "pagina": 15
+   },
+   "332": {
+    "texto": "Dar estabilidade ao FNDCT, modernizar a Lei do Bem, apoiar plantas-piloto, propriedade intelectual, startups e cooperação universidade-empresa, orientando instrumentos à transformação de conhecimento em produtividade e exportação.",
+    "pagina": 15
+   },
+   "334": {
+    "texto": "7. Reindustrializar a partir das vantagens brasileiras",
+    "pagina": 15
+   },
+   "335": {
+    "texto": "Articular energia limpa, agro, minerais, saúde, defesa, digitalização e bioeconomia para atrair cadeias produtivas, agregar valor no país e gerar empregos qualificados, sem proteção permanente ou escolha arbitrária de empresas.",
+    "pagina": 15
+   },
+   "557": {
+    "texto": "Ciência, tecnologia, inovação e transformação digital serão bases do desenvolvimento, da produtividade e da soberania. O Brasil tem universidades, institutos, empresas e instrumentos relevantes, mas ainda opera com instabilidade, fragmentação e baixa conversão de conhecimento em produtos, empresas e empregos. O plano dará previsibilidade ao financiamento, modernizará os incentivos à inovação, aproximará pesquisadores e empresas e organizará missões nacionais em tecnologias críticas.",
+    "pagina": 25
+   },
+   "558": {
+    "texto": "A agenda digital combinará capacidade e regras: conectividade significativa, infraestrutura computacional, dados de qualidade, energia limpa, talentos, cibersegurança e governança coordenada. Data centers terão ambiente tributário competitivo e contrapartidas ambientais, tecnológicas e sociais; a inteligência artificial será regulada segundo usos e riscos concretos; e o país criará condições para competir em serviços digitais, semicondutores, sistemas autônomos, espaço e infraestrutura pública digital.",
+    "pagina": 25
+   },
+   "573": {
+    "texto": "1. Financiamento estável e previsível para a ciência. Assegurar execução plurianual do FNDCT, proteção contra contingenciamentos, governança transparente, avaliação por resultados e estímulo a fundos patrimoniais que deem estabilidade às instituições e aos projetos de longo prazo.",
+    "pagina": 26
+   },
+   "574": {
+    "texto": "2. Inovação empresarial com pontes que funcionam. Modernizar e simplificar a Lei do Bem, ampliar seu alcance a pequenas e médias empresas, dar segurança jurídica aos incentivos, expandir crédito, subvenção, capital de risco e encomendas tecnológicas e medir o sucesso por tecnologia transferida, produto no mercado, produtividade e exportação.",
+    "pagina": 26
+   },
+   "575": {
+    "texto": "3. Talento: formar, atrair e reter. Fortalecer ciência, matemática, computação e inteligência artificial desde a educação básica; valorizar bolsas e carreiras; repatriar brasileiros e atrair pesquisadores; apoiar formação nas melhores universidades; e criar contrapartidas que transformem o investimento público em capacidade nacional.",
+    "pagina": 26
+   },
+   "577": {
+    "texto": "5. Inteligência artificial: desenvolvimento antes da dependência. Adotar marco legal centrado no uso, no dano e no risco concreto, com transparência, responsabilização e não discriminação, supervisão dos reguladores setoriais, coordenação central leve, ambientes experimentais e tratamento proporcional para pesquisa e pequenas empresas. O objetivo será proteger direitos sem licenciar a matemática nem bloquear a inovação.",
+    "pagina": 26
+   },
+   "578": {
+    "texto": "6. Infraestrutura computacional e política competitiva para data centers. Criar regime tributário estável para bens de capital e serviços de data center, coerente com a reforma tributária, condicionado a energia nova e renovável, eficiência hídrica com métricas públicas e resfriamento de ciclo fechado, reserva de capacidade para universidades, pesquisa e empresas brasileiras, qualificação e emprego local e investimento na rede elétrica.",
+    "pagina": 26
+   },
+   "579": {
+    "texto": "7. Dados e modelos como ativos estratégicos. Organizar bases públicas de qualidade, interoperáveis e documentadas, com proteção de dados, segurança e regras claras de acesso; ampliar conteúdos e modelos em português; e garantir capacidade computacional de alto desempenho para universidades, saúde, pesquisa, empresas e serviços públicos.",
+    "pagina": 26
+   },
+   "586": {
+    "texto": "12. Semicondutores e computação quântica: presença na fronteira. Construir capacidade nacional de forma gradual, priorizando etapas em que o Brasil possa competir, apoiar nichos estratégicos com Finep e BNDES, desenvolver fornecedores e reduzir dependência em componentes críticos, ao mesmo tempo em que o país participa da pesquisa e das aplicações emergentes em computação quântica.",
+    "pagina": 27
+   },
+   "587": {
+    "texto": "13. Inteligência artificial, robótica e sistemas autônomos a serviço do país. Aplicar essas tecnologias à saúde, educação, agronegócio, segurança, Justiça, logística e gestão pública; estimular a indústria nacional de automação e aeronaves remotamente pilotadas; e usar compras públicas competitivas como primeira demanda para soluções brasileiras.",
+    "pagina": 27
+   },
+   "588": {
+    "texto": "14. Espaço, 6G e autonomia em posicionamento. Estimular satélites de observação, comunicações e defesa, inclusive órbita baixa para áreas remotas; consolidar Alcântara como espaçoporto; retomar veículos lançadores; adensar a indústria nacional; preparar o país para o 6G; e assegurar redundância de navegação e posicionamento sobre o território, a Amazônia Azul e a América do Sul.",
+    "pagina": 27
+   },
+   "589": {
+    "texto": "15. Infraestrutura pública digital e diplomacia tecnológica. Transformar PIX, gov.br, open finance e outras soluções brasileiras em instrumentos de cooperação e exportação; diversificar parcerias de computação e tecnologia; liderar coalizões de potências médias para ampliar o acesso global à capacidade computacional; e usar a política externa para atrair investimento, conhecimento e mercado.",
+    "pagina": 27
+   },
+   "590": {
+    "texto": "16. Ciência e inovação como política de Estado. Concentrar missões em bioeconomia, agricultura digital, saúde, transição energética, cibersegurança, semicondutores, economia espacial e serviços digitais, com metas públicas, avaliação independente, continuidade entre governos e prestação de contas sobre impacto tecnológico, econômico, social e regional.",
+    "pagina": 27
+   },
+   "925": {
+    "texto": "A política industrial será uma política permanente de Estado, integrada à estabilidade macroeconômica, ao equilíbrio fiscal e ao protagonismo da iniciativa privada. O governo coordenará crédito, inovação, formação, energia, compras públicas e comércio exterior, com prioridades transparentes, contrapartidas verificáveis e avaliação de resultados.",
+    "pagina": 42
+   },
+   "929": {
+    "texto": "Nosso governo fará da política industrial uma política permanente de Estado, integrada à estabilidade macroeconômica, ao equilíbrio fiscal e ao fortalecimento da iniciativa privada.",
+    "pagina": 42
+   },
+   "934": {
+    "texto": "1. Política industrial como política de Estado",
+    "pagina": 42
+   },
+   "935": {
+    "texto": "Dar à indústria a continuidade e a coordenação que ela nunca teve, com regras que atravessem governos e uma direção única para as políticas que hoje andam separadas.",
+    "pagina": 42
+   },
+   "936": {
+    "texto": "• Promover o desenvolvimento de uma política industrial nacional, garantindo continuidade entre governos.",
+    "pagina": 42
+   },
+   "939": {
+    "texto": "• Integrar todas as políticas de inovação, financiamento, ciência e tecnologia e comércio exterior - inclusive com modernização dos mecanismos de defesa comercial amparados nos compromissos de ESG – sob uma única estratégia nacional.",
+    "pagina": 43
+   },
+   "940": {
+    "texto": "• Implantar sistema permanente de avaliação de resultados, metas e indicadores de produtividade.",
+    "pagina": 43
+   },
+   "941": {
+    "texto": "• Selecionar prioridades nacionais por critérios transparentes: vantagens reais do país, potencial de agregar valor e risco da dependência externa com apoio sempre condicionado a contrapartida verificável e prazo definido: a estratégia indica rumos duradouros, não protege empresas específicas.",
+    "pagina": 43
+   },
+   "942": {
+    "texto": "2. Fortalecer o investimento produtivo e modernizar a indústria brasileira",
+    "pagina": 43
+   },
+   "943": {
+    "texto": "Baratear e alongar o capital que moderniza a fábrica, e reconhecer as novas formas de investir, para que grandes e pequenos possam renovar seu parque produtivo.",
+    "pagina": 43
+   },
+   "944": {
+    "texto": "• Ampliar significativamente o crédito de longo prazo para investimento produtivo.",
+    "pagina": 43
+   },
+   "945": {
+    "texto": "• Estabelecer programa definitivo de depreciação acelerada para modernização industrial (PL 473/2026), inclusive para pequenas e médias empresas.",
+    "pagina": 43
+   },
+   "946": {
+    "texto": "• Criar um grande programa nacional de renovação e modernização do parque fabril.",
+    "pagina": 43
+   },
+   "947": {
+    "texto": "• Estimular o investimento privado em automação, digitalização e Indústria 4.0, incluindo o retrofit digital de máquinas e linhas já existentes.",
+    "pagina": 43
+   },
+   "948": {
+    "texto": "• Mobilizar mercado de capitais para financiar projetos industriais de longo prazo.",
+    "pagina": 43
+   },
+   "949": {
+    "texto": "• Assegurar e fortalecer os recursos direcionados para apoio ao investimento produtivo e à inovação tecnológica, como os destionados ao BNDES por meio do FAT e à FINEP por meio do FNDCT.",
+    "pagina": 43
+   },
+   "951": {
+    "texto": "Transformar o conhecimento que o Brasil já produz em produtos, produtividade e empresas competitivas, com o setor privado como protagonista.",
+    "pagina": 43
+   },
+   "952": {
+    "texto": "• Ampliar de forma consistente os investimentos públicos e privados em pesquisa, desenvolvimento e inovação, com trajetória plurianual definida e prestação de contas anual.",
+    "pagina": 43
+   },
+   "953": {
+    "texto": "• Ampliar o ecossistema de PD&I e o desenvolvimento e extensão em tecnologia e inovação, com integração entre a EMBRAPII, universidades, institutos de ensino tecnológico e empresas, incluindo uma rede nacional de fábricas-modelo e plantas-piloto abertas ao uso pelas pequenas e médias indústrias.",
+    "pagina": 43
+   },
+   "954": {
+    "texto": "• Aprimorar, por meio de políticas públicas, os programas nacionais de inteligência artificial, semicondutores, robótica e automação industrial, biotecnologia, novos materiais e manufatura avançada, incluindo manufatura aditiva e construção industrializada e modular.",
+    "pagina": 43
+   },
+   "955": {
+    "texto": "• Desenvolver a cadeia nacional de bens de capital e automação: máquinas, robôs, sensores, sistemas de controle e software industrial, elevando a densidade robótica brasileira aos padrões das economias industriais de referência.",
+    "pagina": 43
+   },
+   "956": {
+    "texto": "4. Reindustrialização a partir de eixos de oportunidade e transformação produtiva",
+    "pagina": 43
+   },
+   "957": {
+    "texto": "Concentrar esforços nas cadeias capazes de elevar a produtividade, reduzir dependências e ampliar exportações, em oito eixos de futuro:",
+    "pagina": 43
+   },
+   "958": {
+    "texto": "• Segurança energética, transição e indústria de baixo carbono",
+    "pagina": 43
+   },
+   "959": {
+    "texto": "• Infraestrutura resiliente, mobilidade e cidades",
+    "pagina": 43
+   },
+   "960": {
+    "texto": "• Computação soberana, conectividade e inteligência produtiva",
+    "pagina": 43
+   },
+   "961": {
+    "texto": "• Saúde, longevidade e economia do cuidado",
+    "pagina": 43
+   },
+   "962": {
+    "texto": "• Bioeconomia, alimentos, água e biossegurança",
+    "pagina": 43
+   },
+   "963": {
+    "texto": "• Minerais estratégicos, novos materiais e circularidade",
+    "pagina": 43
+   },
+   "964": {
+    "texto": "• Defesa, segurança econômica e tecnologias de uso dual",
+    "pagina": 43
+   },
+   "965": {
+    "texto": "• Manufatura avançada, bens de capital e automação",
+    "pagina": 43
+   },
+   "966": {
+    "texto": "Cada eixo, que mobiliza distintas cadeias produtivas, contará com instrumentos específicos de crédito, inovação, compras públicas, desenvolvimento tecnológico e formação profissional.",
+    "pagina": 43
+   },
+   "968": {
+    "texto": "Usar o poder de compra e a encomenda do Estado para criar mercado inicial para a inovação nacional e adensar a cadeia de fornecedores do país.",
+    "pagina": 43
+   },
+   "969": {
+    "texto": "• Utilizar o poder de compra governamental para estimular inovação e produção nacional.",
+    "pagina": 43
+   },
+   "972": {
+    "texto": "• Priorizar produtos desenvolvidos e fabricados no Brasil, utilizando a valorização da produção e da tecnologia nacionais como motor para o adensamento tecnológico, com prazo definido e contrapartida de transferência de tecnologia.",
+    "pagina": 44
+   },
+   "973": {
+    "texto": "• Expandir as encomendas tecnológicas para áreas estratégicas, criando demanda inicial por soluções nacionais de automação, robótica e software industrial.",
+    "pagina": 44
+   },
+   "974": {
+    "texto": "• Estimular maior integração entre grandes e pequenas indústrias, com instrumentos específicos de política industrial.",
+    "pagina": 44
+   },
+   "975": {
+    "texto": "• Tratar a carteira de obras de infraestrutura como âncora de demanda da indústria nacional de máquinas, equipamentos e implementos, com publicação antecipada do cronograma físico, qualificação e certificação de fornecedores nacionais e financiamento à aquisição de bens de capital em prazo compatível com o dos contratos de obra.",
+    "pagina": 44
+   },
+   "976": {
+    "texto": "6. Liderar a transição energética e a indústria verde",
+    "pagina": 44
+   },
+   "977": {
+    "texto": "Transformar a liderança ambiental brasileira em liderança industrial, atraindo a produção que o mundo quer descarbonizar.",
+    "pagina": 44
+   },
+   "978": {
+    "texto": "• Desenvolver cadeias industriais ligadas à descarbonização.",
+    "pagina": 44
+   },
+   "979": {
+    "texto": "• Expandir investimentos em hidrogênio de baixa emissão, biometano, combustível sustentável de aviação, biocombustíveis, baterias e minerais estratégicos.",
+    "pagina": 44
+   },
+   "980": {
+    "texto": "• Atrair investimentos internacionais intensivos em energia limpa.",
+    "pagina": 44
+   },
+   "981": {
+    "texto": "• Apoiar projetos industriais de baixa emissão de carbono.",
+    "pagina": 44
+   },
+   "982": {
+    "texto": "7. Digitalizar a indústria e ampliar o uso da Inteligência Artificial",
+    "pagina": 44
+   },
+   "983": {
+    "texto": "Acelerar a transformação digital da indústria, com prioridade para as pequenas e médias empresas, e fazer da inteligência artificial um vetor de produtividade.",
+    "pagina": 44
+   },
+   "984": {
+    "texto": "• Criar um Programa Nacional de Indústria 4.0 e de IA, com prioridade para as pequenas e médias empresas e metas de adoção por porte e por setor.",
+    "pagina": 44
+   },
+   "985": {
+    "texto": "• Oferecer crédito, incentivos e garantias para a aquisição de softwares, equipamentos e soluções de inteligência artificial.",
+    "pagina": 44
+   },
+   "986": {
+    "texto": "• Expandir o programa de digitalização, com trilha específica de IA, automação e análise de dados, e apoiar diretamente as pequenas e médias indústrias por meio de vouchers de digitalização, com diagnóstico de maturidade, plano de implantação e contrapartida privada.",
+    "pagina": 44
+   },
+   "987": {
+    "texto": "• Fortalecer a capacitação de empresários e trabalhadores em IA, em parceria com SENAI, EMBRAPII, universidades e institutos tecnológicos.",
+    "pagina": 44
+   },
+   "988": {
+    "texto": "• Estimular startups e empresas nacionais desenvolvedoras de soluções de IA para a indústria.",
+    "pagina": 44
+   },
+   "989": {
+    "texto": "• Ampliar a infraestrutura digital, incluindo 5G, data centers, computação em nuvem e cibersegurança industrial, inclusive dos sistemas de tecnologia operacional que controlam as plantas.",
+    "pagina": 44
+   },
+   "990": {
+    "texto": "• Adotar padrões abertos de interoperabilidade industrial como critério no financiamento público, evitando que a digitalização crie dependência de fornecedores e de sistemas fechados.",
+    "pagina": 44
+   },
+   "991": {
+    "texto": "• Estimular os gêmeos digitais, a manutenção preditiva e a rastreabilidade de ponta a ponta, apoiados em espaços de dados industriais setoriais que permitam o compartilhamento seguro de informações entre grandes empresas e seus fornecedores, com governança clara e soberania sobre os dados.",
+    "pagina": 44
+   },
+   "1469": {
+    "texto": "7. Polos produtivos, indústria e pequenas empresas",
+    "pagina": 65
+   },
+   "1470": {
+    "texto": "Apoiar cadeias em que a região já tem competência ou vantagem: agroindústria, alimentos, têxtil e vestuário, calçados, saúde, petroquímica, fertilizantes, defesa, tecnologia digital, renováveis e economia do mar. Criar programas de fornecedores, certificação, digitalização, crédito e exportação para micro, pequenas e médias empresas, com integração a grandes investimentos.",
+    "pagina": 65
+   },
+   "1595": {
+    "texto": "Criar uma Rede Amazônica de Biotecnologia, Nanotecnologia, Propriedade Intelectual e Repartição de Benefícios, conectando universidades, institutos, empresas, comunidades tradicionais e órgãos federais.",
+    "pagina": 70
+   },
+   "1596": {
+    "texto": "Apoiar bioprospecção, laboratórios, bancos de amostras, pesquisa aplicada, provas de conceito, propriedade intelectual, startups e transferência tecnológica, respeitando o patrimônio genético, o conhecimento tradicional e a repartição de benefícios.",
+    "pagina": 70
+   },
+   "1597": {
+    "texto": "Implantar infraestrutura digital pública e auditável para rastrear pesquisas, acesso aos recursos genéticos e produtos desenvolvidos, permitindo o uso de tecnologias de registro distribuído quando tecnicamente justificadas.",
+    "pagina": 70
    }
   }
  }

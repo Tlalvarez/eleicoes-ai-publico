@@ -25,7 +25,7 @@ test('só a verificação pede noindex; as páginas do menu, não', async () => 
   }
   for (const f of ['pages/index.astro', 'pages/presidente/[tema].astro',
     'pages/[cargo]/index.astro', 'pages/[cargo]/[uf].astro', 'pages/[cargo]/[uf]/[tema].astro',
-    'pages/metodologia.astro', 'pages/sobre.astro', 'pages/privacidade.astro']) {
+    'pages/metodologia.astro', 'pages/sobre.astro', 'pages/privacidade.astro', 'pages/contato.astro']) {
     assert.doesNotMatch(await le(f), /<Base noindex/, f);
   }
 });
@@ -82,7 +82,7 @@ test('regra do Thiago: nenhuma superfície diz "na própria voz"', async () => {
 
 test('lançamento: rodapé leva a quem faz, privacidade e contato, e não fala em respostas', async () => {
   const base = await le('layouts/Base.astro');
-  for (const href of ['/sobre', '/privacidade', '/sobre#contato', '/metodologia']) {
+  for (const href of ['/sobre', '/privacidade', '/contato', '/metodologia']) {
     assert.match(base, new RegExp(`href="${href}"`), `falta ${href} no rodapé`);
   }
   const rodape = base.match(/<footer class="site">[\s\S]*?<\/footer>/)[0];
@@ -91,19 +91,20 @@ test('lançamento: rodapé leva a quem faz, privacidade e contato, e não fala e
   assert.match(rodape, /iniciativa independente/);
 });
 
-test('lançamento: a página Quem faz nomeia o responsável e o canal de contato', async () => {
+test('lançamento: Quem somos nomeia o responsável; Fale conosco tem o canal de contato', async () => {
   const sobre = await le('pages/sobre.astro');
   assert.match(sobre, /Thiago Alvarez/);
-  assert.match(sobre, /id="contato"/);
-  assert.match(sobre, /Não recomenda voto/);
+  assert.match(sobre, /Não recomendamos voto/);
   assert.match(sobre, /revisor humano/);
-  assert.match(sobre, /EMAIL_CONTATO/);
   assert.match(sobre, /linkedin\.com\/in\/thiagoalvarez/);
-  assert.match(sobre, /<h2 id="regras">Regras da casa<\/h2>/);
-  assert.ok((sobre.match(/<ol class="regras">[\s\S]*?<\/ol>/)[0].match(/<li>/g) || []).length >= 4);
+  assert.match(sobre, /href="\/contato"/);
+  assert.match(sobre, /href="\/metodologia"/);
+  const contato = await le('pages/contato.astro');
+  assert.match(contato, /EMAIL_CONTATO/);
+  assert.match(contato, /issues/);
   assert.match(await le('pages/privacidade.astro'), /EMAIL_CONTATO/);
   // nada de chat na superfície pública
-  for (const f of ['pages/sobre.astro', 'pages/privacidade.astro', 'content/metodologia.md']) {
+  for (const f of ['pages/sobre.astro', 'pages/privacidade.astro', 'pages/contato.astro', 'content/metodologia.md']) {
     const t = await le(f);
     assert.doesNotMatch(t, /\/resposta\//, `${f} ainda cita a resposta guardada`);
     assert.doesNotMatch(t, /\bchat\b/i, `${f} ainda fala em chat como produto`);
@@ -128,8 +129,7 @@ test('lançamento: existe página 404 própria, apontando para a comparação', 
   const p = await le('pages/404.astro');
   assert.match(p, /Página não encontrada/);
   assert.match(p, /href="\/presidente"/);
-  // governador está fora do menu e da home por enquanto (13/09): o 404 não o oferece
-  assert.doesNotMatch(p, /href="\/governador"/);
+  assert.match(p, /href="\/governador"/);
   assert.doesNotMatch(p, /senador/);
 });
 

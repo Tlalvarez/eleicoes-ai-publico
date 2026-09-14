@@ -9,9 +9,9 @@
   "comunicacao_digital"
  ],
  "origem": {
-  "arquivo": "liberdade-expressao-digital-5.json",
-  "gerado_em": "2026-09-13T08:18:51Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "liberdade-expressao-digital-6.json",
+  "gerado_em": "2026-09-14T06:19:15Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,14 +53,22 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Regulação de plataformas digitais",
-   "proposta": "Regular as plataformas digitais e redes sociais, com obrigações de transparência e responsabilidade sobre conteúdos nocivos",
-   "n_concorda": 2,
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Estabelecer em lei regras de regulação das plataformas digitais e redes sociais, com deveres de transparência e responsabilidade sobre conteúdos",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -68,7 +76,14 @@
       127,
       730
      ],
-     "nota": "Regulação democrática das plataformas e da IA para conter desinformação e ódio"
+     "nota": "Chama de regulação democrática, para conter desinformação e discurso de ódio"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": "Com devido processo, direito de recurso e preservação do Marco Civil"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -76,7 +91,7 @@
       281,
       1453
      ],
-     "nota": "Foco em transparência e responsabilidade sobre conteúdo prejudicial a crianças e adolescentes"
+     "nota": "Ênfase em estímulo à transparência dentro dos parâmetros constitucionais"
     },
     "renan-santos": {
      "posicao": "discorda",
@@ -84,69 +99,65 @@
       382
      ],
      "nota": "Oposição firme a propostas de regulação da mídia e da internet"
-    },
-    "romeu-zema": {
-     "posicao": "discorda",
-     "blocos": [
-      896,
-      897
-     ],
-     "nota": "Veda moderação de conteúdo pelas plataformas, inclusive por ordem judicial"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Liberdade de expressão e censura",
-   "proposta": "Extinguir ou impedir estruturas e atos estatais de combate à desinformação que funcionem como censura a críticos, jornalistas e cidadãos",
-   "n_concorda": 2,
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Adotar políticas e estruturas estatais de combate à desinformação",
+   "n_concorda": 1,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      937,
+      127,
+      138
+     ],
+     "nota": "Regulação das plataformas e letramento digital contra desinformação"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "discorda",
+     "blocos": [
       938,
       943
      ],
-     "nota": "\"Tesouraço da Censura\": fim do \"Ministério da Verdade\" e revogação de atos do governo atual"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      894,
-      895
-     ],
-     "nota": "Tipificar como abuso de autoridade atos estatais de censura e remoção de conteúdo"
+     "nota": "Propõe extinguir estruturas que rotulam conteúdo como desinformação"
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Liberdade de expressão e censura",
-   "proposta": "Tipificar como abuso de autoridade o ato estatal de censura, remoção arbitrária de conteúdo ou restrição injustificada da expressão",
-   "n_concorda": 1,
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Implementar regras específicas de proteção de crianças e adolescentes no ambiente digital",
+   "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      894,
-      895
+      581
      ],
      "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1453
+     ],
+     "nota": "Via transparência e responsabilidade das plataformas sobre conteúdo prejudicial"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Liberdade de expressão e censura",
-   "proposta": "Descriminalizar delitos de opinião, deslocando injúria e difamação para a esfera cível e revogando o crime de desacato",
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Instituir transparência algorítmica e rastreabilidade de conteúdo sintético, ancoradas em um centro nacional dedicado",
    "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      894,
-      895
+      479
      ],
      "nota": ""
     }
@@ -154,8 +165,38 @@
   },
   {
    "id": "p5",
-   "subtema": "Liberdade de expressão e censura",
-   "proposta": "Vedar a exclusão de perfis e a moderação de opiniões pelas plataformas, substituindo-as por procedimentos com direito a retratação e indenização",
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Regulamentar a inteligência artificial de forma democrática",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      730
+     ],
+     "nota": "Vinculada à soberania digital e à cooperação internacional"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Fortalecer a concorrência nos mercados digitais com interoperabilidade, portabilidade de dados, regras para agentes com poder estrutural e capacidade técnica do CADE",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Proibir a exclusão de perfis e a moderação de opiniões pelas plataformas, inclusive por ordem judicial, substituindo-as por procedimentos com direito a retratação e indenização",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -169,9 +210,341 @@
    }
   },
   {
-   "id": "p6",
+   "id": "p8",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Fortalecer a soberania digital, a segurança cibernética e a proteção de dados pessoais dos cidadãos",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      730
+     ],
+     "nota": "Associada a transferência de tecnologias estratégicas"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      833
+     ],
+     "nota": "Foco em reduzir dependências externas em áreas críticas"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      837
+     ],
+     "nota": "Dados do cidadão são dele, não do governo; proteção de infraestrutura crítica"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Criar autoridade nacional de cibersegurança com independência técnica, mandato e orçamento, padrões auditáveis e notificação obrigatória de incidentes em infraestruturas críticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Criar um conselho nacional de soberania digital com participação da sociedade",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      138
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Garantir que a inteligência artificial seja usada a serviço das pessoas, protegendo sistemas de IA contra manipulação",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      837
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": "Proteção contra manipulação e envenenamento de dados"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Liberdade de expressão e censura",
+   "proposta": "Extinguir estruturas estatais encarregadas de vigiar, rotular ou punir o que as pessoas dizem e revogar atos de censura do governo",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      938,
+      943
+     ],
+     "nota": "Chama de 'Tesouraço da Censura'"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      894,
+      895
+     ],
+     "nota": "Foco em punir agentes públicos que censuram"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Liberdade de expressão e censura",
+   "proposta": "Tipificar como abuso de autoridade qualquer ato estatal de censura, remoção arbitrária de conteúdo ou restrição injustificada da expressão",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      895,
+      899
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Liberdade de expressão e censura",
+   "proposta": "Deslocar injúria e difamação para a esfera cível e revogar o crime de desacato",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      895
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Liberdade de expressão e censura",
+   "proposta": "Reforçar na Constituição a proibição absoluta de censura prévia",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      899
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Liberdade de expressão e censura",
+   "proposta": "Assegurar que restrições a manifestações só ocorram pela via judicial, com regras claras e direito de defesa",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      943
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      370
+     ],
+     "nota": "Via estruturas transparentes de responsabilização em novo marco legal"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Apostas online",
+   "proposta": "Adotar medidas para conter o endividamento e a exploração de públicos vulneráveis causados pelas apostas online",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      579
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      454,
+      457
+     ],
+     "nota": "Trata o superendividamento como questão de saúde pública, com teto"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Apostas online",
+   "proposta": "Endurecer a regulamentação dos jogos e apostas online, com máximo rigor sobre fraudes, lavagem de dinheiro e integridade esportiva",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      453
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Apostas online",
+   "proposta": "Proibir a publicidade de apostas em veículos de comunicação de massa e em redes sociais",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      453
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Apostas online",
+   "proposta": "Proibir o uso de recursos de programas sociais em apostas",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      579
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Apostas online",
+   "proposta": "Promover campanhas educativas sobre os riscos do endividamento com jogos e ampliar a orientação financeira pela rede da Caixa",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      579
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Apostas online",
+   "proposta": "Oferecer prevenção, acolhimento e tratamento do jogo compulsivo (ludopatia) na saúde pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      454,
+      457
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Apostas online",
+   "proposta": "Priorizar a repressão policial às plataformas ilegais de apostas, com inteligência financeira, bloqueio administrativo e judicial e cooperação internacional",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      458
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Educação e inclusão digital",
+   "proposta": "Instituir política pública de letramento e educação digital para uso crítico e responsável das redes",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      138
+     ],
+     "nota": "Política Nacional de Letramento Digital para todas as idades"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      281
+     ],
+     "nota": "Foco em efeitos das redes sobre convivência social e saúde mental"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Educação e inclusão digital",
+   "proposta": "Ampliar programas de inclusão digital, capacitação tecnológica e acesso universal a ferramentas digitais em todo o território",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      836,
+      837
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
    "subtema": "Imprensa e comunicação pública",
-   "proposta": "Criar um novo marco legal unificado para a imprensa (código de imprensa), com critérios claros, garantias ao exercício do jornalismo e regras de responsabilização",
+   "proposta": "Criar um novo código de imprensa unificado, com critérios claros, garantias ao exercício do jornalismo e regras de responsabilização",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -187,23 +560,7 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Imprensa e comunicação pública",
-   "proposta": "Reforçar na Constituição a proibição absoluta de censura prévia e tipificar como abuso de autoridade condutas estatais que intimidem o jornalismo",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      898,
-      899
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
+   "id": "p27",
    "subtema": "Imprensa e comunicação pública",
    "proposta": "Acabar com o uso da publicidade estatal como instrumento de favorecimento político e despolitizar a concessão de rádios e TVs",
    "n_concorda": 1,
@@ -219,203 +576,29 @@
    }
   },
   {
-   "id": "p9",
-   "subtema": "Dados pessoais e soberania digital",
-   "proposta": "Fortalecer a soberania digital, a segurança cibernética e a proteção de dados pessoais dos cidadãos",
-   "n_concorda": 3,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      831,
-      832,
-      833
-     ],
-     "nota": "Reduzir dependências externas em áreas críticas"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      837
-     ],
-     "nota": "Proteção de serviços públicos e infraestrutura crítica; dados pertencem ao cidadão"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      730
-     ],
-     "nota": "Soberania digital com proteção de dados e transferência de tecnologias"
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Dados pessoais e soberania digital",
-   "proposta": "Criar um Conselho Nacional pela Soberania Digital com participação da sociedade",
+   "id": "p28",
+   "subtema": "Imprensa e comunicação pública",
+   "proposta": "Tipificar como abuso de autoridade condutas estatais que intimidem ou restrinjam o jornalismo",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      138
+      899
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Inteligência artificial e algoritmos",
-   "proposta": "Assegurar transparência algorítmica e rastreabilidade de conteúdo sintético gerado por inteligência artificial",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      479
-     ],
-     "nota": "Ancorada em um Centro Nacional de Transparência Algorítmica"
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Inteligência artificial e algoritmos",
-   "proposta": "Criar o Centro Nacional de Transparência Algorítmica",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      479
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Inteligência artificial e algoritmos",
-   "proposta": "Garantir que a inteligência artificial seja usada a serviço das pessoas, com regulamentação democrática",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      837
-     ],
-     "nota": "Sem menção a regulamentação, foco em uso a favor do cidadão"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      730
-     ],
-     "nota": "Regulamentação democrática da IA vinculada à soberania digital"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Educação digital e desinformação",
-   "proposta": "Instituir política pública de letramento e educação digital para uso crítico das redes, combate à desinformação e proteção da privacidade",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      138
-     ],
-     "nota": "Política Nacional de Letramento Digital para todas as idades"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      264,
-      277,
-      281
-     ],
-     "nota": "Prioriza educar usuários em vez de controlar as redes; foco em saúde mental e convivência"
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Educação digital e desinformação",
-   "proposta": "Ampliar programas de inclusão digital, capacitação tecnológica e acesso universal a ferramentas digitais em todo o território",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      835,
-      836,
-      837
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Apostas online",
-   "proposta": "Proibir o uso de recursos de programas sociais em apostas online",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      579
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Apostas online",
-   "proposta": "Promover campanhas educativas e de conscientização sobre os riscos do endividamento com jogos e apostas",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      579
-     ],
-     "nota": "Combinado com orientação financeira pela rede da Caixa"
     }
    }
   }
  ],
  "blocos": {
   "augusto-cury": {
-   "264": {
-    "texto": "O desafio não é controlar as redes, mas educar, nos próximos anos, esses pilotos.",
-    "pagina": 20
-   },
-   "277": {
-    "texto": "Outro fenômeno perigoso é a cultura do cancelamento. Muitas pessoas passaram a ter medo de expressar opiniões. O medo destrói criatividade intelectual. A democracia depende de debate livre. Quando indivíduos começam a se autocensurar para evitar ataques, a inteligência coletiva enfraquece. Uma sociedade saudável precisa permitir divergência respeitosa. Não existe evolução intelectual sem confronto de ideias e é importante compreender que as redes sociais possuem impacto na organização social, merecendo atenção de políticas públicas em diversas áreas, começando pela educação.",
-    "pagina": 22
-   },
    "281": {
     "texto": "Precisamos reconstruir a serenidade coletiva a partir de políticas públicas, terminando com o ciclo de omissão do Estado com relação a esse problema. Não é apenas uma questão de regulamentação das plataformas, mas de orientação sobre seus efeitos sobre a convivência social e saúde mental. Precisamos desacelerar a mente. Precisamos ensinar contemplação. Precisamos reaprender a escutar sem imediatamente atacar. A inteligência não floresce no barulho permanente. Floresce no silêncio reflexivo. Uma sociedade que não consegue contemplar não consegue pensar profundamente.",
     "pagina": 22
    },
-   "831": {
-    "texto": "d) Soberania digital e proteção de dados",
-    "pagina": 58
-   },
-   "832": {
-    "texto": "O Brasil deve proteger seus dados estratégicos e sua infraestrutura digital.",
-    "pagina": 58
-   },
    "833": {
     "texto": "Fortaleceremos a soberania digital, a segurança cibernética e a proteção de dados pessoais, reduzindo dependências externas em áreas críticas.",
-    "pagina": 58
-   },
-   "835": {
-    "texto": "e) Inclusão tecnológica nacional",
     "pagina": 58
    },
    "836": {
@@ -439,10 +622,6 @@
    "837": {
     "texto": "Toda essa transformação digital exige uma contrapartida inegociável: proteger quem está do outro lado da tela. Os dados do cidadão são dele, não do governo, e serão tratados com privacidade e segurança. Vamos fortalecer a defesa cibernética do país, protegendo serviços públicos, infraestrutura crítica e cidadãos contra ataques e fraudes, e garantir que a inteligência artificial seja usada a serviço das pessoas, não contra elas.",
     "pagina": 57
-   },
-   "937": {
-    "texto": "Numa democracia, todo cidadão tem o direito de concordar ou discordar, de criticar e de questionar, e nenhum governo pode punir quem pensa diferente dele. Sob o atual governo, porém, cresceu um aparato apelidado de “Ministério da Verdade”: estruturas criadas para tratar como desinformação aquilo que incomoda o poder, o que abre a porta para a censura de opositores, jornalistas e cidadãos comuns.",
-    "pagina": 66
    },
    "938": {
     "texto": "Vamos fazer um Tesouraço da Censura: acabar com qualquer estrutura estatal que funcione como um “Ministério da Verdade\", encarregada de vigiar, rotular ou punir o que as pessoas dizem. E vamos revogar todos os atos que o atual governo produziu para silenciar seus críticos, para que a censura já praticada",
@@ -513,6 +692,32 @@
    "899": {
     "texto": "Reforçar na Constituição a proibição absoluta de censura prévia, tipificar como abuso de autoridade qualquer conduta estatal que intimide ou restrinja o jornalismo, acabar com a publicidade estatal como instrumento de favorecimento político e despolitizar a concessão de rádios e TVs, para que a imprensa cumpra seu papel de fiscalizar o poder sem depender de verbas oficiais nem temer represálias de quem governa.",
     "pagina": 74
+   }
+  },
+  "ronaldo-caiado": {
+   "453": {
+    "texto": "• Regulamentar e endurecer as regras, com máximo rigor, dos jogos e das apostas on-line, atividade inexistente no país até 2018 e hoje associada à lavagem de dinheiro, uso de contas de terceiros, manipulação de identidades, fraudes, evasão fiscal e riscos à integridade esportiva, com proibição da publicidade em veículos de comunicação de massa e em redes sociais.",
+    "pagina": 19
+   },
+   "454": {
+    "texto": "• Tratar como questão de saúde pública o superendividamento, limitando através da criação de um teto, e a exploração de públicos vulneráveis produzidos pelas apostas. O jogo está destruindo famílias, levando ruina",
+    "pagina": 19
+   },
+   "457": {
+    "texto": "aos lares, atingindo a paz das famílias e a saúde mental e emocional dos brasileiros, com prevenção, acolhimento e tratamento do jogo compulsivo (ludopatia), classificado na CID-11 como Transtorno do Jogo.",
+    "pagina": 20
+   },
+   "458": {
+    "texto": "• Priorizar as ações do Ministério da Segurança Pública na repressão das plataformas ilegais de jogos e apostas, com trilha de inteligência financeira dedicada ao setor, mecanismos céleres de bloqueio administrativo e judicial, interrupção de fluxos financeiros, responsabilização de operadores clandestinos, combate à publicidade irregular e cooperação internacional permanente.",
+    "pagina": 20
+   },
+   "580": {
+    "texto": "8. Política nacional de cibersegurança. Criar autoridade nacional com independência técnica, mandato e orçamento; estabelecer padrões auditáveis e notificação de incidentes para infraestruturas críticas; priorizar inventário, autenticação forte, backups testados e exercícios no setor público; proteger sistemas de IA contra manipulação e envenenamento de dados; formar profissionais; e integrar segurança, privacidade e cooperação internacional.",
+    "pagina": 26
+   },
+   "581": {
+    "texto": "9. Mercados digitais competitivos e plataformas responsáveis. Consolidar em lei regras de responsabilidade, devido processo, transparência e recurso, implementar plenamente a proteção de crianças e adolescentes e preservar os princípios do Marco Civil. Fortalecer a concorrência com interoperabilidade, portabilidade de dados, regras para agentes com poder estrutural e capacidade técnica do CADE para a economia digital.",
+    "pagina": 26
    }
   }
  }

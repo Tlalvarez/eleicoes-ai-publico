@@ -9,9 +9,9 @@
   "agro"
  ],
  "origem": {
-  "arquivo": "agricultura-5.json",
-  "gerado_em": "2026-09-13T08:49:39Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "agricultura-6.json",
+  "gerado_em": "2026-09-14T07:01:29Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,21 +53,37 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Fertilizantes e insumos",
-   "proposta": "Ampliar a produção nacional de fertilizantes e de seus minerais (fosfato, potássio, nitrogênio) para reduzir a dependência de importações",
-   "n_concorda": 4,
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Reduzir a dependência externa de fertilizantes ampliando a produção nacional a partir das reservas minerais do país",
+   "n_concorda": 5,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       580
      ],
-     "nota": "Meta de zerar dependência de fornecedores russo, bielorrusso e marroquino até 2035"
+     "nota": "Meta: nenhuma colheita dependente de fertilizante russo, bielorrusso ou marroquino a partir de 2035"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      520,
+      521
+     ],
+     "nota": "Ênfase em destravar projetos minerais e abrir o mercado"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -75,34 +91,41 @@
       570,
       806
      ],
-     "nota": ""
+     "nota": "Potássio e fosfato como base da segurança alimentar"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       549
      ],
-     "nota": "Via unidades da Petrobras já retomadas"
+     "nota": "Via retomada das unidades da Petrobras"
     },
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      521
+      523
      ],
-     "nota": "Foco em destravar projetos minerais e burocracia"
+     "nota": "Potássio e nitrogenados, com diversificação de fornecedores"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Fertilizantes e insumos",
-   "proposta": "Executar e ampliar o Plano Nacional de Fertilizantes e regulamentar a Política Nacional de Minerais Críticos com licenciamento acelerado",
-   "n_concorda": 1,
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Executar e ampliar o Plano Nacional de Fertilizantes",
+   "n_concorda": 2,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       580
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      523
      ],
      "nota": ""
     }
@@ -110,39 +133,9 @@
   },
   {
    "id": "p3",
-   "subtema": "Fertilizantes e insumos",
-   "proposta": "Criar marco legal para exploração mineral controlada em terras indígenas com reservas de fosfato e potássio",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      580
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Fertilizantes e insumos",
-   "proposta": "Abrir o mercado à concorrência e facilitar a importação de fertilizantes e defensivos agrícolas",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      521
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Fertilizantes e insumos",
-   "proposta": "Fomentar a produção de bioinsumos e a reciclagem de nutrientes como alternativa a insumos químicos importados",
-   "n_concorda": 2,
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Fomentar a produção nacional de bioinsumos como substituto de insumos químicos importados",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -150,6 +143,13 @@
       525
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": "Programa nacional de bioinsumos"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -163,11 +163,280 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Comércio exterior agrícola",
-   "proposta": "Abrir novos mercados externos e ampliar acordos comerciais para os produtos do agronegócio",
-   "n_concorda": 5,
+   "id": "p4",
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Facilitar a importação de fertilizantes e defensivos, abrindo o mercado à concorrência",
+   "n_concorda": 1,
    "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      520,
+      521
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Criar marco legal para exploração mineral controlada em terras indígenas, visando reservas de fosfato e potássio",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Sancionar e regulamentar a Política Nacional de Minerais Críticos e Estratégicos com licenciamento acelerado para fosfato, potássio e nitrogênio",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Insumos e fertilizantes",
+   "proposta": "Incentivar a instalação e modernização de plantas formuladoras de defensivos e a produção nacional de ingredientes ativos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Acelerar a regularização fundiária e a emissão de títulos de propriedade rural, com prioridade ao pequeno produtor",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      552,
+      553
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      519,
+      524,
+      807
+     ],
+     "nota": "Retomar o ritmo de titulação do governo anterior (450 mil títulos)"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      526
+     ],
+     "nota": "Ênfase na região Norte"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      535,
+      1476
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Garantir segurança jurídica ao direito de propriedade rural contra invasões e relativizações",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      577
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      549,
+      550
+     ],
+     "nota": "Foco em combater ativismo judicial"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      807
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Revogar a Nota Técnica nº 4/2025 do MDA, instruir a polícia a reprimir invasões e endurecer a legislação penal sobre esbulho possessório",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      577
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Continuar a política de reforma agrária, assentando famílias acampadas, estruturando assentamentos e ampliando o crédito fundiário",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      526
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "discorda",
+     "blocos": [
+      564,
+      578
+     ],
+     "nota": "Não criará nenhum novo assentamento enquanto os existentes não forem produtivos"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Auditar os hectares já destinados à reforma agrária e condicionar novos assentamentos a metas de produtividade dos existentes",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      578
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Reformular os critérios de seleção de beneficiários da reforma agrária (Decreto 11.637/2023) para priorizar tempo de atividade agrária",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      579
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Tratar assentamentos e pequenas propriedades como cinturões produtivos de alimentos próximos às cidades e de empreendedorismo rural",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2084,
+      2099,
+      2100
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Acelerar a titulação dos territórios quilombolas e a regularização fundiária de povos e comunidades tradicionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      526
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Combater a grilagem e a entrada do crime organizado no campo com monitoramento por satélite",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      554,
+      555
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Terra, reforma agrária e regularização fundiária",
+   "proposta": "Criar soluções institucionais para conflitos territoriais, com mediação e indenização justa",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Comércio exterior e abertura de mercados",
+   "proposta": "Ampliar acordos comerciais e abrir novos mercados para os produtos do agronegócio brasileiro",
+   "n_concorda": 6,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": "Acordos bilaterais como instrumento de verticalização"
+    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
@@ -181,7 +450,7 @@
      "blocos": [
       543
      ],
-     "nota": ""
+     "nota": "Continuidade dos 656 mercados abertos"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -190,27 +459,27 @@
      ],
      "nota": ""
     },
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      581
+      535
      ],
-     "nota": "Acordos bilaterais como instrumento de verticalização"
+     "nota": "Diversificar para Sudeste Asiático, Oriente Médio e África"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       805
      ],
-     "nota": "Ênfase em reverter sanções de EUA, China e Europa"
+     "nota": "Foco em soluções diplomáticas contra sanções"
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Comércio exterior agrícola",
-   "proposta": "Promover ativamente a imagem internacional do agronegócio brasileiro junto a governos e consumidores",
-   "n_concorda": 3,
+   "id": "p19",
+   "subtema": "Comércio exterior e abertura de mercados",
+   "proposta": "Promover internacionalmente a imagem do agro brasileiro com base em ciência, sustentabilidade e rastreabilidade",
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -233,15 +502,23 @@
       674,
       675
      ],
-     "nota": "Marca de 'supermercado do mundo'"
+     "nota": "Vender o Brasil como 'supermercado do mundo'"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      502,
+      535
+     ],
+     "nota": "Marca-país da biocompetitividade"
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Comércio exterior agrícola",
-   "proposta": "Reforçar a atuação dos adidos agrícolas em mercados estratégicos e ampliar missões comerciais",
-   "n_concorda": 1,
+   "id": "p20",
+   "subtema": "Comércio exterior e abertura de mercados",
+   "proposta": "Reforçar a atuação dos adidos agrícolas e as missões comerciais em mercados estratégicos",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -249,14 +526,21 @@
       543
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p9",
-   "subtema": "Comércio exterior agrícola",
-   "proposta": "Obter o reconhecimento internacional dos padrões sanitários e ambientais adotados pelo setor produtivo brasileiro",
-   "n_concorda": 1,
+   "id": "p21",
+   "subtema": "Comércio exterior e abertura de mercados",
+   "proposta": "Rejeitar exigências ambientais estrangeiras usadas como protecionismo disfarçado, com reconhecimento dos padrões sanitários e ambientais nacionais",
+   "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -264,14 +548,21 @@
       532
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      492
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p10",
+   "id": "p22",
    "subtema": "Seguro rural e gestão de risco",
-   "proposta": "Ampliar e fortalecer a política de seguro rural",
-   "n_concorda": 4,
+   "proposta": "Ampliar e fortalecer o seguro rural como política permanente de proteção da renda do produtor",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -279,7 +570,7 @@
       535,
       536
      ],
-     "nota": ""
+     "nota": "Via desenvolvimento do mercado privado de seguros"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -304,13 +595,43 @@
       2071
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      491,
+      518
+     ],
+     "nota": "Sistema nacional público-privado vinculado ao crédito"
     }
    }
   },
   {
-   "id": "p11",
+   "id": "p23",
    "subtema": "Seguro rural e gestão de risco",
-   "proposta": "Criar fundo ou instrumento específico para cobrir perdas sistêmicas e catastróficas de safra",
+   "proposta": "Ampliar a cobertura do Programa de Subvenção ao Prêmio do Seguro Rural (PSR)",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      679
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      518
+     ],
+     "nota": "Modernizar o PSR e incorporar seguro de renda"
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Seguro rural e gestão de risco",
+   "proposta": "Criar fundo ou instrumento de catástrofe para cobrir perdas sistêmicas por eventos climáticos extremos",
    "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
@@ -325,37 +646,39 @@
      "blocos": [
       542
      ],
-     "nota": "Construído em diálogo com o setor produtivo"
+     "nota": ""
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      2087
+      518
      ],
-     "nota": "Fundo garantidor associado a crédito de longo prazo"
+     "nota": "Reestruturar e regulamentar o Fundo de Catástrofe e criar resseguro"
     }
    }
   },
   {
-   "id": "p12",
+   "id": "p25",
    "subtema": "Seguro rural e gestão de risco",
-   "proposta": "Ampliar significativamente a cobertura do Programa de Subvenção ao Prêmio do Seguro Rural (PSR)",
+   "proposta": "Desenvolver seguros paramétricos baseados em índices e monitoramento por satélite",
    "n_concorda": 1,
    "posicoes": {
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      679
+      518,
+      1465,
+      1466
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p13",
+   "id": "p26",
    "subtema": "Seguro rural e gestão de risco",
    "proposta": "Fortalecer o Garantia-Safra e ampliar o acesso da agricultura familiar ao seguro rural",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -363,36 +686,14 @@
       523
      ],
      "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      661
-     ],
-     "nota": "Seguro rural dentro do pacote ao pequeno produtor"
     }
    }
   },
   {
-   "id": "p14",
+   "id": "p27",
    "subtema": "Seguro rural e gestão de risco",
-   "proposta": "Integrar o seguro rural a instrumentos de comercialização e promover educação em gestão de riscos",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      542
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Seguro rural e gestão de risco",
-   "proposta": "Criar programa nacional de resiliência climática no campo com conservação de solos, monitoramento meteorológico e alerta precoce",
-   "n_concorda": 1,
+   "proposta": "Criar programa nacional de resiliência e adaptação climática no campo, com monitoramento meteorológico e alerta precoce",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -400,13 +701,21 @@
       536
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1465,
+      1466
+     ],
+     "nota": "Foco no semiárido e crédito para adaptação"
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "Crédito rural",
-   "proposta": "Ampliar os recursos do crédito rural e do Plano Safra com juros compatíveis com a atividade agropecuária",
+   "id": "p28",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Ampliar o crédito rural com juros compatíveis com a atividade agropecuária",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
@@ -415,7 +724,7 @@
       534,
       535
      ],
-     "nota": ""
+     "nota": "Ampliar recursos do Plano Safra e priorizar máquinas e irrigação"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -423,38 +732,104 @@
       72,
       2087
      ],
-     "nota": "Critica juros incompatíveis com o ciclo biológico da produção"
+     "nota": "Crédito de longo prazo, spread menor e linhas indexadas ao dólar"
     }
    }
   },
   {
-   "id": "p17",
-   "subtema": "Crédito rural",
-   "proposta": "Ampliar o crédito específico para a agricultura familiar",
+   "id": "p29",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Criar fundo garantidor para o crédito agrícola",
    "n_concorda": 2,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      514,
-      516
+      513
      ],
-     "nota": "Expansão do Pronaf e do Plano Safra da Agricultura Familiar"
+     "nota": "Voltado ao crédito privado"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      661,
-      2070,
-      2095
+      2087
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p18",
-   "subtema": "Crédito rural",
+   "id": "p30",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Estruturar um Plano Safra plurianual, com horizonte de cinco anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      513
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Reorganizar o Plano Safra e o crédito público para premiar processamento, verticalização e metas de exportação",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": "Inclui linhas do BNDES condicionadas a metas de exportação e Zonas Econômicas Especiais"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Expandir o financiamento do agro via mercado de capitais (CRA, Fiagro, CPR, debêntures, securitização)",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      515,
+      516
+     ],
+     "nota": "Complemento, e não substituto, do crédito oficial"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Direcionar prioritariamente os recursos públicos para garantias, seguro e redução de risco, em vez de equalização ampla de juros",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      492,
+      513
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Crédito rural e financiamento",
    "proposta": "Simplificar e desburocratizar o acesso ao crédito rural com soluções digitais",
    "n_concorda": 1,
    "posicoes": {
@@ -469,46 +844,9 @@
    }
   },
   {
-   "id": "p19",
-   "subtema": "Crédito rural",
-   "proposta": "Manter linhas de crédito diferenciadas para jovens agricultores e programas de sucessão familiar no campo",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      516
-     ],
-     "nota": "Inclui linhas para mulheres agricultoras e cooperativas"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      661
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Crédito rural",
-   "proposta": "Condicionar o crédito público (Plano Safra e BNDES) a metas de verticalização, processamento e exportação",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      581
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Crédito rural",
-   "proposta": "Oferecer securitização e reorganização das dívidas do setor agropecuário",
+   "id": "p35",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Securitizar e reorganizar as dívidas do setor agropecuário",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
@@ -521,453 +859,10 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Crédito rural",
-   "proposta": "Criar crédito rural de longo prazo e linhas indexadas ao dólar para cadeias exportadoras",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2087
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Crédito rural",
-   "proposta": "Diversificar as fontes de financiamento do agro estimulando o mercado de capitais e títulos do agronegócio",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      535
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Terra e segurança jurídica no campo",
-   "proposta": "Acelerar a regularização fundiária e a titulação de imóveis rurais, com prioridade ao pequeno proprietário",
-   "n_concorda": 3,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      519,
-      524,
-      807
-     ],
-     "nota": "Retomar o ritmo de mais de 450 mil títulos do governo anterior"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      552,
-      553
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      526
-     ],
-     "nota": "Ênfase na região Norte"
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Terra e segurança jurídica no campo",
-   "proposta": "Assegurar segurança jurídica plena ao direito de propriedade rural, sem novas restrições sem base técnica",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      549,
-      550
-     ],
-     "nota": "Cumprimento do Código Florestal sem restrições adicionais"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      807
-     ],
-     "nota": ""
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      577
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Terra e segurança jurídica no campo",
-   "proposta": "Reprimir invasões de propriedades rurais e endurecer a legislação penal sobre esbulho possessório",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      577
-     ],
-     "nota": "Instrução às polícias para repressão das invasões"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Terra e segurança jurídica no campo",
-   "proposta": "Revogar a Nota Técnica nº 4/2025 do Ministério do Desenvolvimento Agrário",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      577
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Terra e segurança jurídica no campo",
-   "proposta": "Combater a grilagem e o crime organizado no campo com monitoramento territorial por satélite",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      554,
-      555
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      525
-     ],
-     "nota": "Sistema único integrando cadastros fundiários e ambientais"
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Terra e segurança jurídica no campo",
-   "proposta": "Acelerar a titulação de territórios quilombolas e a regularização fundiária de povos e comunidades tradicionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      526
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Ampliar significativamente a área irrigada do país",
-   "n_concorda": 4,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      810
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      536
-     ],
-     "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      539
-     ],
-     "nota": "Modelos com acesso a pequenos e médios produtores"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      647,
-      2094
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Construir barragens, reservatórios e infraestrutura hídrica em parceria com o setor privado",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      538,
-      539
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2076,
-      2101
-     ],
-     "nota": "Inclui microaçudes, adutoras e coinvestimento de fundos soberanos"
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Simplificar e fixar prazos para as outorgas de uso da água para irrigação",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      519,
-      815
-     ],
-     "nota": "Prazo médio atual de 24 meses"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      648
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Desenvolver polos de agricultura irrigada no semiárido nordestino e no Matopiba",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      815
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2069,
-      2094
-     ],
-     "nota": "Projeto Brasil Oásis, com cultivo protegido e fertirrigação"
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Expandir o uso de água de reuso e de dessalinização para a produção agrícola",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      815
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2076,
-      2079
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Ampliar o Programa Cisternas e o acesso à água para consumo e produção em regiões de estresse hídrico",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      527
-     ],
-     "nota": "Inclui saneamento rural ecológico"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2076
-     ],
-     "nota": "Cisternas produtivas e armazenamento de água de chuva"
-    }
-   }
-  },
-  {
    "id": "p36",
-   "subtema": "Agroindústria e agregação de valor",
-   "proposta": "Verticalizar as cadeias agrícolas para exportar produtos processados em vez de matéria-prima",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      573,
-      581
-     ],
-     "nota": "Replicar o modelo do suco de laranja em café, soja, cacau e carne"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2336,
-      2339,
-      2411,
-      2413
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      515
-     ],
-     "nota": "Agregar valor à pauta exportadora reduzindo a primarização"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Agroindústria e agregação de valor",
-   "proposta": "Instalar ou atrair 10 mil agroindústrias e clusters regionais de proteína animal e leite em oito anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2072,
-      2088,
-      2096,
-      2335,
-      2342,
-      2344,
-      2345,
-      2346,
-      2347,
-      2348,
-      2349,
-      2350,
-      2351
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Agroindústria e agregação de valor",
-   "proposta": "Usar Zonas Econômicas Especiais como instrumento de atração de investimento agroindustrial",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      581
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Agroindústria e agregação de valor",
-   "proposta": "Fortalecer o cooperativismo agrícola e agroindustrial",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      665,
-      2343,
-      2500,
-      2507,
-      2508
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      516
-     ],
-     "nota": "Via linhas de crédito para cooperativas e associações"
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Agroindústria e agregação de valor",
-   "proposta": "Dobrar o número de cooperados no país, de 26 milhões para mais de 50 milhões em dez anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      668
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Agroindústria e agregação de valor",
-   "proposta": "Aperfeiçoar as regras de segurança agropecuária para agroindústrias familiares, facilitando a comercialização interestadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      521
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
    "subtema": "Agricultura familiar e assistência técnica",
    "proposta": "Ampliar a oferta de assistência técnica e extensão rural aos produtores",
-   "n_concorda": 3,
+   "n_concorda": 4,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -989,15 +884,23 @@
      "posicao": "concorda",
      "blocos": [
       661,
-      2070,
+      3129,
       3135
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1465,
+      1476
+     ],
+     "nota": "Inclui extensão rural digital e foco no semiárido"
     }
    }
   },
   {
-   "id": "p43",
+   "id": "p37",
    "subtema": "Agricultura familiar e assistência técnica",
    "proposta": "Condicionar os repasses às EMATERs ao cumprimento de metas de produtividade",
    "n_concorda": 1,
@@ -1012,17 +915,57 @@
    }
   },
   {
-   "id": "p44",
+   "id": "p38",
    "subtema": "Agricultura familiar e assistência técnica",
-   "proposta": "Apoiar a mecanização adaptada às pequenas propriedades rurais",
+   "proposta": "Ampliar o crédito e o Plano Safra específicos da agricultura familiar",
    "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      514,
+      516
+     ],
+     "nota": "Pronaf com juros por perfil e prioridade a alimentos da cesta básica"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      661,
+      2070,
+      2095
+     ],
+     "nota": "Programa Raízes do Brasil para 3,9 milhões de estabelecimentos"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Agricultura familiar e assistência técnica",
+   "proposta": "Manter linhas de crédito diferenciadas para agroecologia, produção orgânica, jovens, mulheres e cooperativas",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      516
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Agricultura familiar e assistência técnica",
+   "proposta": "Apoiar a mecanização adaptada e o acesso a máquinas pelos pequenos produtores",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       522
      ],
-     "nota": "Retomada e fortalecimento do programa Mais Alimentos"
+     "nota": "Programa Mais Alimentos"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -1030,32 +973,375 @@
       661,
       2080
      ],
-     "nota": "Mecanização leve e máquinas acessíveis, com parceria chinesa"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      505
+     ],
+     "nota": "Modernização do parque de máquinas com crédito e menor custo de capital"
     }
    }
   },
   {
-   "id": "p45",
+   "id": "p41",
    "subtema": "Agricultura familiar e assistência técnica",
-   "proposta": "Criar programa nacional para turbinar os 3,9 milhões de estabelecimentos da agricultura familiar com irrigação, cultivo protegido, energia solar e acesso a mercados",
-   "n_concorda": 1,
+   "proposta": "Fortalecer programas de sucessão familiar e de permanência dos jovens no campo",
+   "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2070,
-      2095,
-      3135
+      661
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      516
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p46",
+   "id": "p42",
    "subtema": "Agricultura familiar e assistência técnica",
-   "proposta": "Priorizar a produção agroecológica e orgânica, ampliando o PLANAPO, os sistemas agroflorestais e o crédito para agroecologia",
+   "proposta": "Identificar e cadastrar o pequeno produtor em sistema integrado para dar-lhe acesso a crédito e programas públicos",
    "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      525
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Irrigação e recursos hídricos",
+   "proposta": "Ampliar significativamente a área irrigada do país",
+   "n_concorda": 5,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      810
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      536
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      647,
+      2064,
+      2092
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      513,
+      1476
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      538,
+      539
+     ],
+     "nota": "Via parcerias com o setor privado, com acesso a pequenos e médios"
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Irrigação e recursos hídricos",
+   "proposta": "Expandir barragens, reservatórios e infraestrutura de reservação de água em parceria com o setor privado",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      538,
+      539
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2076,
+      2101
+     ],
+     "nota": "Barragens inteligentes, microaçudes, adutoras e capital internacional"
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Irrigação e recursos hídricos",
+   "proposta": "Simplificar e acelerar as outorgas de uso da água para irrigação",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      519,
+      815
+     ],
+     "nota": "Prazo médio atual de 24 meses"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      648
+     ],
+     "nota": "Prazos máximos legais e procedimento digital integrado"
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Irrigação e recursos hídricos",
+   "proposta": "Criar polos de irrigação e um programa de transformação produtiva do Semiárido",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      815
+     ],
+     "nota": "Matopiba e semiárido nordestino"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2069,
+      2075,
+      2094
+     ],
+     "nota": "Projeto Brasil Oásis"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1465,
+      1476
+     ],
+     "nota": "Ciência e convivência com o semiárido"
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Irrigação e recursos hídricos",
+   "proposta": "Expandir o uso de água de reuso e a dessalinização para a produção agrícola",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      815
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2076,
+      2079
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Irrigação e recursos hídricos",
+   "proposta": "Ampliar o acesso à água para consumo e produção no meio rural, incluindo cisternas e saneamento rural",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      527
+     ],
+     "nota": "Ampliação do Programa Cisternas"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2076
+     ],
+     "nota": "Cisternas produtivas e poços criteriosos"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Implantar sistema nacional de rastreabilidade das cadeias agropecuárias",
+   "n_concorda": 4,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      525
+     ],
+     "nota": "Integra cadastros fundiários, ambientais e guias de trânsito animal em um só sistema"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      544
+     ],
+     "nota": "Rastreabilidade individual do rebanho, do nascimento ao abate"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      527,
+      529
+     ],
+     "nota": "Da propriedade ao consumidor, com rastreabilidade animal e vegetal"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2397
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Ampliar os programas de recuperação de pastagens degradadas",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      544
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      491,
+      504
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Ampliar o fomento aos sistemas de integração lavoura-pecuária-floresta (ILPF)",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      537,
+      540
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      504
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      655
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Expandir a produção agrícola prioritariamente nas áreas já abertas, sem expansão ilegal da fronteira",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      491,
+      504,
+      537
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Dar estabilidade ao Código Florestal, garantindo seu cumprimento sem novas restrições sem base técnica",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      549,
+      550
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Concluir a validação do Cadastro Ambiental Rural e criar selo e certificação de sustentabilidade e créditos de carbono para o agro",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      527
+     ],
+     "nota": "Selo Brasil Sustentável e pagamento por serviços ambientais"
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Fortalecer a agroecologia e a produção orgânica por meio do PLANAPO e de florestas produtivas e sistemas agroflorestais",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -1064,28 +1350,20 @@
       524
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Agricultura familiar e assistência técnica",
-   "proposta": "Destinar percentual fixo de fundo público (10%) ao fortalecimento da agricultura sustentável e familiar",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3129
+      1465
      ],
-     "nota": ""
+     "nota": "Sistemas agroflorestais e restauração da Caatinga"
     }
    }
   },
   {
-   "id": "p48",
-   "subtema": "Agricultura familiar e assistência técnica",
-   "proposta": "Apoiar agricultores familiares na recuperação de áreas degradadas e na conservação de nascentes",
+   "id": "p56",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Apoiar a recuperação de áreas degradadas e a conservação de nascentes por agricultores familiares",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -1098,10 +1376,47 @@
    }
   },
   {
-   "id": "p49",
+   "id": "p57",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Fortalecer a pecuária sustentável com melhoramento genético, nutrição de precisão e redução de emissões",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      544
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      525
+     ],
+     "nota": "Pesquisa em microbioma e aditivos contra metano entérico"
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Sustentabilidade, pastagens e rastreabilidade",
+   "proposta": "Apoiar indicações geográficas, denominações de origem e certificação de produtos regionais e da sociobiodiversidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1599
+     ],
+     "nota": "Programa Origens da Amazônia"
+    }
+   }
+  },
+  {
+   "id": "p59",
    "subtema": "Logística e armazenagem",
-   "proposta": "Investir em infraestrutura de transporte (rodovias, ferrovias, hidrovias e portos) para reduzir o custo do frete agrícola",
-   "n_concorda": 3,
+   "proposta": "Expandir a infraestrutura de transporte (rodovias, ferrovias, hidrovias e portos) para reduzir o custo do frete agrícola",
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -1109,12 +1424,19 @@
       525,
       526
      ],
-     "nota": "Parcerias com o setor privado e redução dos juros"
+     "nota": "Via parcerias com o setor privado e redução de juros"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       562
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      520
      ],
      "nota": ""
     },
@@ -1129,11 +1451,40 @@
    }
   },
   {
-   "id": "p50",
+   "id": "p60",
    "subtema": "Logística e armazenagem",
-   "proposta": "Ampliar a capacidade de armazenagem das safras",
-   "n_concorda": 3,
+   "proposta": "Organizar a infraestrutura de escoamento em corredores logísticos estratégicos",
+   "n_concorda": 2,
    "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      562
+     ],
+     "nota": "Corredores Logísticos Inteligentes"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      520
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Logística e armazenagem",
+   "proposta": "Ampliar a capacidade de armazenagem de safras",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      526
+     ],
+     "nota": ""
+    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
@@ -1142,225 +1493,104 @@
      ],
      "nota": ""
     },
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      526
+      513,
+      520
      ],
      "nota": ""
     },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      690,
+      691
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Logística e armazenagem",
+   "proposta": "Conceder incentivos fiscais e firmar parcerias para a construção e ampliação de armazéns",
+   "n_concorda": 1,
+   "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       691
      ],
-     "nota": "Via incentivos fiscais e parcerias"
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Logística e armazenagem",
-   "proposta": "Criar Corredores Logísticos Inteligentes voltados à redução do custo de transporte de alimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      562
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p52",
-   "subtema": "Tecnologia e pesquisa agropecuária",
-   "proposta": "Fortalecer a Embrapa e a pesquisa agropecuária nacional",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      545
-     ],
-     "nota": "Biotecnologia, edição genômica e cultivares resistentes"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      523
-     ],
-     "nota": "Reorientar a Embrapa para inovação aplicada"
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Tecnologia e pesquisa agropecuária",
-   "proposta": "Expandir a conectividade digital no meio rural",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      523
-     ],
-     "nota": "Banda larga e 5G"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      545
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Tecnologia e pesquisa agropecuária",
-   "proposta": "Incentivar a adoção de agricultura de precisão e tecnologias digitais (satélites, drones, sensores, IA) nas propriedades de todos os portes",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      654,
-      658,
-      2391,
-      2392,
-      2393,
-      2394
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      536
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Tecnologia e pesquisa agropecuária",
-   "proposta": "Atrair capital internacional e privado para investimento e P&D no agro, conectando centros de pesquisa nacionais e estrangeiros",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      522,
-      523
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2080,
-      2081
-     ],
-     "nota": "Parcerias com Israel, China e fundos soberanos do Golfo"
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Pecuária, rastreabilidade e sistemas produtivos",
-   "proposta": "Fomentar sistemas produtivos integrados, como a integração lavoura-pecuária-floresta (ILPF)",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      537,
-      540
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      655
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Pecuária, rastreabilidade e sistemas produtivos",
-   "proposta": "Implantar sistemas de rastreabilidade das cadeias produtivas agropecuárias",
+   "id": "p63",
+   "subtema": "Agroindústria e valor agregado",
+   "proposta": "Agregar valor à produção agropecuária, processando no país o que hoje é exportado como matéria-prima",
    "n_concorda": 3,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      525
+      573,
+      581
      ],
-     "nota": "Sistema único com guias de trânsito animal e cadastros integrados"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      544
-     ],
-     "nota": "Rastreabilidade individual do rebanho do nascimento ao abate"
+     "nota": "Replicar o modelo do suco de laranja em café, soja, cacau e carne"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2397
+      2336,
+      2382,
+      2411,
+      2413
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      121,
+      491
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p58",
-   "subtema": "Pecuária, rastreabilidade e sistemas produtivos",
-   "proposta": "Apoiar o melhoramento genético do rebanho e a nutrição animal",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      544
-     ],
-     "nota": "Foco em reduzir ciclo de abate e emissões por quilo de carne"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2088,
-      2396
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Pecuária, rastreabilidade e sistemas produtivos",
-   "proposta": "Dar sequência ao programa de recuperação de pastagens degradadas",
+   "id": "p64",
+   "subtema": "Agroindústria e valor agregado",
+   "proposta": "Instalar ou atrair 10 mil agroindústrias e clusters de proteína animal em oito anos",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      544
+      2072,
+      2088,
+      2096,
+      2335,
+      2339,
+      2342,
+      2344,
+      2345,
+      2346,
+      2347,
+      2348,
+      2349,
+      2350,
+      2351
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p60",
-   "subtema": "Pecuária, rastreabilidade e sistemas produtivos",
+   "id": "p65",
+   "subtema": "Agroindústria e valor agregado",
    "proposta": "Criar centros regionais integrados de proteína animal aproveitando coprodutos do etanol de milho (DDGS)",
    "n_concorda": 1,
    "posicoes": {
@@ -1376,17 +1606,210 @@
       2369,
       2370,
       2374,
-      2411
+      2382
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p61",
-   "subtema": "Segurança alimentar e abastecimento",
-   "proposta": "Reduzir o preço dos alimentos ao consumidor por meio de ganhos de produtividade, logística, armazenagem e industrialização",
+   "id": "p66",
+   "subtema": "Agroindústria e valor agregado",
+   "proposta": "Usar Zonas Econômicas Especiais e crédito condicionado a metas de exportação como instrumentos de verticalização das cadeias agrícolas",
+   "n_concorda": 1,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      581
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Agroindústria e valor agregado",
+   "proposta": "Aperfeiçoar a inspeção sanitária das agroindústrias familiares para facilitar a comercialização interestadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      521
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1476
+     ],
+     "nota": "Processamento local ligado a pequenos produtores"
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Fortalecer a Embrapa e a pesquisa agropecuária nacional",
    "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      545
+     ],
+     "nota": "Biotecnologia, edição genômica e cultivares resistentes"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      525,
+      1465,
+      1466
+     ],
+     "nota": "Planejamento plurianual e Programa Nacional de Biotecnologia Tropical"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      522,
+      523
+     ],
+     "nota": "Reorientar a Embrapa para inovação aplicada"
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Ampliar a conectividade no meio rural (banda larga e 5G)",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      545
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      505
+     ],
+     "nota": "Metas de conectividade rural até 2030"
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Difundir a agricultura de precisão e o uso de satélites, drones, sensores e inteligência artificial na produção",
+   "n_concorda": 3,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      654,
+      658,
+      2391,
+      2392,
+      2393,
+      2394
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      504,
+      505
+     ],
+     "nota": "Centros de excelência em IA aplicada ao agro"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      536
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Modernizar as regras de edição genética e fortalecer o melhoramento genético vegetal e animal",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      525
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      545
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2396
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Atrair capital privado e internacional para pesquisa, desenvolvimento e infraestrutura no agro",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": "Conectar centros de pesquisa nacionais aos internacionais"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2080,
+      2081,
+      2101
+     ],
+     "nota": "Parcerias com Israel, China e fundos soberanos do Golfo"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      573
+     ],
+     "nota": "Capital privado nacional e internacional para verticalizar cadeias"
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Abastecimento e preço dos alimentos",
+   "proposta": "Reduzir o preço dos alimentos ao consumidor por meio de produtividade, logística, armazenagem e industrialização",
+   "n_concorda": 2,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1404,21 +1827,14 @@
       2416
      ],
      "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      515
-     ],
-     "nota": ""
     }
    }
   },
   {
-   "id": "p62",
-   "subtema": "Segurança alimentar e abastecimento",
-   "proposta": "Ampliar o Programa de Aquisição de Alimentos (PAA), priorizando alimentos frescos da agricultura familiar e da sociobiodiversidade",
-   "n_concorda": 1,
+   "id": "p74",
+   "subtema": "Abastecimento e preço dos alimentos",
+   "proposta": "Ampliar o Programa de Aquisição de Alimentos (PAA) e as compras públicas de alimentos da agricultura familiar",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -1426,100 +1842,52 @@
       517,
       520
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Segurança alimentar e abastecimento",
-   "proposta": "Apoiar estados e municípios no cumprimento dos percentuais mínimos de compra da agricultura familiar e de alimentos in natura na alimentação escolar",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      513
-     ],
-     "nota": "45% de compra da agricultura familiar e 80% de in natura"
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Segurança alimentar e abastecimento",
-   "proposta": "Desestimular o consumo de produtos nocivos à saúde por regras de publicidade e pelo Imposto Seletivo",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      513
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Segurança alimentar e abastecimento",
-   "proposta": "Fortalecer as instâncias de participação e governança da segurança alimentar e da produção de alimentos",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      508
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p66",
-   "subtema": "Segurança alimentar e abastecimento",
-   "proposta": "Criar cinturões verdes e de proteína no entorno das cidades para abastecimento de proximidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2084,
-      2099,
-      2100
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Energia e bioenergia no campo",
-   "proposta": "Universalizar o acesso à energia elétrica no meio rural priorizando fontes renováveis",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      527
-     ],
-     "nota": ""
+     "nota": "Prioridade a alimentos frescos e da sociobiodiversidade"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      2080,
-      2095
+      1476
      ],
-     "nota": "Energia solar rural e miniusinas"
+     "nota": "Conectar pequenos produtores às compras públicas"
     }
    }
   },
   {
-   "id": "p68",
+   "id": "p75",
+   "subtema": "Abastecimento e preço dos alimentos",
+   "proposta": "Manter percentuais mínimos de compra da agricultura familiar e de alimentos in natura na alimentação escolar",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      513
+     ],
+     "nota": "45% da agricultura familiar e 80% in natura, com apoio via Contrata+Brasil"
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Abastecimento e preço dos alimentos",
+   "proposta": "Desestimular o consumo de produtos nocivos à saúde por regras de publicidade e Imposto Seletivo",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      513
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
    "subtema": "Energia e bioenergia no campo",
-   "proposta": "Expandir a produção de bioenergia a partir da produção agrícola (biomassa, etanol de milho, biocombustíveis)",
-   "n_concorda": 2,
+   "proposta": "Articular a política agrícola à produção de bioenergia e biocombustíveis",
+   "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1528,18 +1896,25 @@
      ],
      "nota": "Plano Safra com incentivos à biomassa"
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      502
+     ],
+     "nota": "Estratégias decenais para biocombustíveis e bioinsumos"
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       2382,
       2411
      ],
-     "nota": ""
+     "nota": "Etanol de milho e coprodutos"
     }
    }
   },
   {
-   "id": "p69",
+   "id": "p78",
    "subtema": "Energia e bioenergia no campo",
    "proposta": "Implementar as metas legais de combustível sustentável de aviação a partir de 2027",
    "n_concorda": 1,
@@ -1549,105 +1924,38 @@
      "blocos": [
       816
      ],
-     "nota": "Coordenação entre Agricultura e Minas e Energia"
-    }
-   }
-  },
-  {
-   "id": "p70",
-   "subtema": "Reforma agrária",
-   "proposta": "Dar continuidade à reforma agrária, assentando famílias acampadas, estruturando assentamentos e ampliando o crédito fundiário",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      526
-     ],
-     "nota": ""
-    },
-    "renan-santos": {
-     "posicao": "discorda",
-     "blocos": [
-      578
-     ],
-     "nota": "Nenhum novo assentamento enquanto os atuais não atingirem produtividade"
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Reforma agrária",
-   "proposta": "Auditar os hectares já destinados à reforma agrária e condicionar novos assentamentos a metas de produtividade",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      578
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p72",
-   "subtema": "Reforma agrária",
-   "proposta": "Reformular o Decreto 11.637/2023 para que a seleção de beneficiários priorize o tempo de exercício de atividade agrária",
-   "n_concorda": 1,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      579
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p73",
-   "subtema": "Reforma agrária",
-   "proposta": "Tratar assentamentos e pequenas propriedades como projetos de empreendedorismo rural voltados ao abastecimento alimentar",
+   "id": "p79",
+   "subtema": "Energia e bioenergia no campo",
+   "proposta": "Ampliar o acesso à energia elétrica e à geração solar no meio rural",
    "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2075,
-      2084
-     ],
-     "nota": ""
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      579
-     ],
-     "nota": "Reforma agrária como instrumento econômico, não de filiação a movimentos"
-    }
-   }
-  },
-  {
-   "id": "p74",
-   "subtema": "Reforma agrária",
-   "proposta": "Ampliar o Programa Nacional de Educação na Reforma Agrária (PRONERA), garantindo ensino técnico e superior no campo",
-   "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       527
      ],
+     "nota": "Busca da universalização com fontes renováveis"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2080,
+      2095
+     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p75",
-   "subtema": "Licenciamento ambiental no campo",
-   "proposta": "Fixar prazos máximos e critérios técnicos objetivos no licenciamento, com classificação por nível de risco e simplificação para baixo impacto",
-   "n_concorda": 2,
+   "id": "p80",
+   "subtema": "Licenciamento ambiental e burocracia",
+   "proposta": "Simplificar o licenciamento ambiental de atividades de baixo impacto, com prazos definidos e critérios técnicos objetivos",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -1655,7 +1963,7 @@
       527,
       528
      ],
-     "nota": "Implementação da Nova Lei do Licenciamento Ambiental"
+     "nota": "Implementação efetiva da Nova Lei do Licenciamento Ambiental"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -1663,27 +1971,48 @@
       648,
       651
      ],
-     "nota": "Procedimento digital integrado entre União, estados e municípios"
-    }
-   }
-  },
-  {
-   "id": "p76",
-   "subtema": "Pesca e aquicultura",
-   "proposta": "Fomentar a pesca artesanal e a aquicultura familiar, implementando o Plano Nacional da Pesca Artesanal",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
+     "nota": "Prazos máximos legais e procedimento digital integrado entre entes"
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      530
+      535
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p77",
+   "id": "p81",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Fomentar a pesca artesanal e a aquicultura familiar",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      530
+     ],
+     "nota": "Implementar o Plano Nacional da Pesca Artesanal"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1476
+     ],
+     "nota": "Aquicultura, pesca sustentável e economia do mar"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2072
+     ],
+     "nota": "Pescado nos clusters de proteína"
+    }
+   }
+  },
+  {
+   "id": "p82",
    "subtema": "Pesca e aquicultura",
    "proposta": "Proteger os territórios pesqueiros e os modos de vida das comunidades das águas",
    "n_concorda": 1,
@@ -1698,30 +2027,141 @@
    }
   },
   {
-   "id": "p78",
-   "subtema": "Pesca e aquicultura",
-   "proposta": "Desenvolver clusters de piscicultura e processamento de pescado",
+   "id": "p83",
+   "subtema": "Cooperativismo",
+   "proposta": "Estimular a criação e o fortalecimento de cooperativas agropecuárias e agroindustriais",
+   "n_concorda": 3,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      665,
+      2343,
+      2500,
+      2507,
+      2508
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1476
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      516
+     ],
+     "nota": "Linhas de crédito para cooperativas e associações"
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Cooperativismo",
+   "proposta": "Dobrar o número de cooperados em dez anos, de 26 para mais de 50 milhões de brasileiros",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2072,
-      2088
+      668
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p79",
-   "subtema": "Metas de produção e fruticultura",
-   "proposta": "Dobrar a produção agropecuária de alimentos do país em oito a dez anos",
+   "id": "p85",
+   "subtema": "Defesa sanitária agropecuária",
+   "proposta": "Fortalecer os sistemas de defesa sanitária agropecuária e modernizar a vigilância epidemiológica",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      529,
+      532
+     ],
+     "nota": "Rede de laboratórios e monitoramento em tempo real com IA"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      521
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Governança da política agrícola",
+   "proposta": "Criar coordenação central e estratégia nacional de longo prazo para a política agrícola",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      491,
+      502,
+      529
+     ],
+     "nota": "Biocompetitividade e estratégias decenais por cadeia"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      573,
+      574
+     ],
+     "nota": "Plano AgroBrasil 2030"
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Governança da política agrícola",
+   "proposta": "Fortalecer as instâncias de participação e governança da segurança alimentar e da produção de alimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      508
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Governança da política agrícola",
+   "proposta": "Criar observatório nacional de dados produtivos do agro",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      529
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Metas de produção agrícola",
+   "proposta": "Estabelecer meta de dobrar a produção de alimentos do país em oito a dez anos",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
+      647,
       675,
       2071,
       2092
@@ -1731,9 +2171,9 @@
    }
   },
   {
-   "id": "p80",
-   "subtema": "Metas de produção e fruticultura",
-   "proposta": "Multiplicar por dez a receita de exportações brasileiras de frutas, priorizando cadeias do Semiárido e o cultivo protegido",
+   "id": "p90",
+   "subtema": "Metas de produção agrícola",
+   "proposta": "Multiplicar por dez as exportações de frutas, priorizando cadeias de fruticultura irrigada e cultivo protegido",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -1748,9 +2188,9 @@
    }
   },
   {
-   "id": "p81",
-   "subtema": "Imagem do agro na educação",
-   "proposta": "Submeter livros didáticos e materiais do MEC a auditoria técnica permanente, com participação da Embrapa e de universidades agrárias, para corrigir a representação do agronegócio",
+   "id": "p91",
+   "subtema": "Narrativa e imagem interna do agronegócio",
+   "proposta": "Submeter livros didáticos e materiais do MEC a auditoria técnica, com participação da Embrapa e de universidades agrárias, para corrigir a representação do agronegócio",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -1764,19 +2204,79 @@
    }
   },
   {
-   "id": "p82",
-   "subtema": "Tecnologia e pesquisa agropecuária",
-   "proposta": "Incentivar a automação e a robótica na produção agropecuária",
-   "n_concorda": 3,
+   "id": "p92",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Fortalecer Embrapa, Instituto Nacional do Semiárido, universidades e extensão rural para difundir sementes adaptadas, manejo de solo e água, pecuária resiliente, energia distribuída, sistemas agroflorestais e restauração da Caatinga",
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       523,
+      529,
       530
      ],
-     "nota": "Propõe P&D privado no campo, conectividade rural e acesso a tecnologias modernas, sem citar robótica."
+     "nota": "Reorienta Embrapa para inovação aplicada e amplia assistência técnica/extensão (EMATERs)"
     },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      520,
+      524,
+      545
+     ],
+     "nota": "Fortalecer Embrapa, ampliar ATER, sistemas agroflorestais e cultivares resistentes"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      647,
+      655,
+      2070,
+      2095,
+      3135
+     ],
+     "nota": "Propõe pesquisa, assistência técnica, sementes adaptadas, irrigação e bioinsumos para o campo"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1466
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p93",
+   "subtema": "Crédito rural e financiamento",
+   "proposta": "Criar linhas de crédito voltadas à adaptação climática no campo",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      516,
+      523,
+      536
+     ],
+     "nota": "Crédito para agroecologia e programa de resiliência climática no campo"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1466
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p94",
+   "subtema": "Pesquisa, inovação e tecnologia no campo",
+   "proposta": "Difundir automação e robótica na produção agropecuária",
+   "n_concorda": 3,
+   "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -1784,7 +2284,7 @@
       536,
       545
      ],
-     "nota": "Financia máquinas, agricultura de precisão, conectividade rural e biotecnologia via Embrapa."
+     "nota": "Financiamento de máquinas, agricultura de precisão e conectividade rural"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -1792,14 +2292,23 @@
       2395
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      504,
+      505,
+      525
+     ],
+     "nota": "Agricultura de precisão, sensores, IA e modernização do parque de máquinas."
     }
    }
   },
   {
-   "id": "p83",
+   "id": "p95",
    "subtema": "Irrigação e recursos hídricos",
-   "proposta": "Implantar gestão inteligente da água na produção agrícola",
-   "n_concorda": 4,
+   "proposta": "Adotar gestão inteligente da água na produção agrícola",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -1807,7 +2316,7 @@
       538,
       539
      ],
-     "nota": "Expandir reservatórios e sistemas de irrigação com o setor privado, reduzindo perdas por seca."
+     "nota": "Expansão de reservatórios e sistemas de irrigação com o setor privado, reduzindo perdas"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -1816,7 +2325,7 @@
       810,
       815
      ],
-     "nota": "Simplificação de outorgas, ampliação da área irrigada, polos de irrigação e água de reuso."
+     "nota": "Amplia área irrigada, simplifica outorgas, polos de irrigação e água de reuso na estiagem."
     },
     "lula": {
      "posicao": "concorda",
@@ -1825,7 +2334,7 @@
       536,
       540
      ],
-     "nota": "Amplia áreas irrigadas, financia sistemas de irrigação e retenção de água no solo."
+     "nota": "Ampliação de áreas irrigadas, conservação de solos e retenção de água"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -1833,6 +2342,15 @@
       2398
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      513,
+      1466,
+      1476
+     ],
+     "nota": "Investimento em irrigação eficiente, manejo de água e monitoramento."
     }
    }
   }
@@ -1891,9 +2409,17 @@
     "texto": "Ampliaremos significativamente a cobertura do Programa de Subvenção ao Prêmio do Seguro Rural (PSR), garantindo que o produtor tenha um antídoto contra eventos climáticos extremos. O seguro deixará de ser um luxo para tornar-se uma ferramenta indispensável de fomento ao crédito rural, gestão de risco e prevenção contra o endividamento sistêmico no campo.",
     "pagina": 49
    },
+   "690": {
+    "texto": "Além dos transportes, enfrentaremos o gargalo da armazenagem, que hoje pressiona os preços de venda e gera perdas no escoamento das safras.",
+    "pagina": 50
+   },
    "691": {
     "texto": "Estimularemos, por meio de incentivos fiscais e parcerias, a construção e ampliação de armazéns, permitindo que o produtor e as agroindústrias possam armazenar suas safras e negociá-la no momento mais adequado.",
     "pagina": 50
+   },
+   "2064": {
+    "texto": "Além disso, o Brasil já possui base para dar esse salto. A ANA informa que o país tem aproximadamente 10 milhões de hectares equipados para irrigação e potencial de chegar a 55 milhões de hectares, desde que a expansão ocorra com segurança hídrica, energia, armazenagem e governança. Em outras palavras: há espaço real",
+    "pagina": 114
    },
    "2069": {
     "texto": "1) Oásis do Semiárido - Transformação hídrica, frutícola, hortícola e agroindustrial do Semiárido nordestino e do Norte de Minas.",
@@ -2215,10 +2741,6 @@
     "texto": "A agricultura familiar contou, ao longo do atual mandato do Presidente Lula, com políticas consistentes com sua importância para o Brasil. O crédito disponibilizado por meio do Pronaf foi, ano após ano, recorde, e buscou atender às diferentes necessidades da agricultura familiar. No próximo mandato, vamos assegurar que quem alimenta o Brasil continue a ter condições adequadas para produzir e prosperar.",
     "pagina": 59
    },
-   "515": {
-    "texto": "Queremos um país que garanta segurança alimentar, fortaleça sua produção agropecuária e agroindustrial, promova a inclusão produtiva no meio rural, fortaleça a agricultura familiar, agregue valor às exportações, preserve o meio ambiente e assegure alimentos de qualidade a preços acessíveis. Um Brasil competitivo, inovador e sustentável, capaz de produzir riqueza, combater a fome e ampliar sua presença nos mercados internacionais.",
-    "pagina": 59
-   },
    "516": {
     "texto": "Vamos continuar expandindo o Plano Safra da Agricultura Familiar, com juros compatíveis com o perfil do agricultor e tipo de produto, com prioridade para produção de alimentos da cesta básica. Reforçaremos ainda mais as linhas de crédito específicas para agroecologia, produção orgânica e sociobiodiversidade, a inovação e a introdução de tecnologias e máquinas adaptadas. Manteremos linhas de crédito diferenciadas para jovens agricultores, promovendo a sucessão familiar e reduzindo o êxodo rural; para mulheres agricultoras, e para cooperativas e associações. Simplificaremos o acesso ao crédito, escalando soluções digitais, como o aplicativo Meu Imóvel Rural, e tornando processos menos burocráticos.",
     "pagina": 59
@@ -2313,8 +2835,16 @@
    }
   },
   "renan-santos": {
+   "564": {
+    "texto": "No agronegócio, somos a maior potência agrícola do mundo apenas em volume bruto. Quem agrega valor são outros. A Alemanha, grande reexportadora de café que sequer o produz, agrega ao produto, por meio do beneficiamento, da torrefação e dos canais de distribuição europeus, um valor que falta à nossa pauta. Nossos fertilizantes vêm 85% do exterior, deixando-nos vulneráveis a choques cambiais e a sanções a fornecedores como Rússia e Belarus. A política fundiária do atual governo, em vez de impulsionar a produtividade, estimulou direta e indiretamente a invasão de propriedades rurais. E o programa de reforma agrária acumulou cerca de 140 milhões de hectares destinados (dos quais aproximadamente 88 milhões em assentamentos consolidados, segundo o INCRA/SIPRA), sem controle efetivo de produtividade e com renda líquida média",
+    "pagina": 41
+   },
    "573": {
     "texto": "O plano da Missão para fazer do Brasil o Celeiro do Mundo se organiza em duas grandes frentes, articuladas por uma mesma lógica: combinar reformas regulatórias amplas com investimento estratégico do Estado, atraindo capital privado nacional e internacional para verticalizar as cadeias produtivas nas quais temos vantagem comparativa natural. A primeira frente, batizada AgroBrasil 2030, organiza a agenda agrícola; a segunda, o Marco Brasileiro da Inteligência Artificial (MBIA), organiza a agenda computacional.",
+    "pagina": 42
+   },
+   "574": {
+    "texto": "As duas convergem no projeto comum de transformar o Brasil em fornecedor preferencial global de alimento e inferência.",
     "pagina": 42
    },
    "577": {
@@ -2347,6 +2877,10 @@
    }
   },
   "romeu-zema": {
+   "520": {
+    "texto": "Facilitar a produção nacional e a compra de fertilizantes e defensivos agrícolas de alta qualidade do mundo:",
+    "pagina": 43
+   },
    "521": {
     "texto": "Abrir o mercado à concorrência, facilitando importações e reduzindo a dependência externa de insumos, além de destravar projetos minerais nacionais para eliminar burocracias que dificultam a produção nacional.",
     "pagina": 43
@@ -2438,6 +2972,96 @@
    "555": {
     "texto": "Aprimorar o monitoramento do território nacional e o combate à grilagem com uso de sensoriamento remoto por satélite, para enfrentar o avanço do crime organizado e proteger a reputação internacional do agronegócio brasileiro.",
     "pagina": 46
+   }
+  },
+  "ronaldo-caiado": {
+   "121": {
+    "texto": "• Transformar agro, minerais, energia e biodiversidade em cadeias de maior valor agregado no Brasil.",
+    "pagina": 7
+   },
+   "491": {
+    "texto": "O agronegócio será tratado como plataforma de liderança global do Brasil em alimentos, bioenergia, biotecnologia e sustentabilidade. O país já é potência produtiva, mas perde renda com logística cara, dependência de fertilizantes e máquinas, baixa cobertura de seguro, insegurança fundiária e barreiras comerciais. O plano busca elevar produtividade e valor agregado sem expansão ilegal da fronteira, recuperar pastagens, modernizar crédito e seguro, fortalecer agricultura familiar, defesa sanitária, irrigação, armazenagem, pesquisa e diplomacia comercial.",
+    "pagina": 22
+   },
+   "492": {
+    "texto": "A política agrícola será previsível e construída com produtores de todos os portes. Crédito público será mais focalizado em redução de risco, inovação, infraestrutura e sustentabilidade, enquanto mercado de capitais e seguro ampliarão a escala do financiamento. O Brasil defenderá sua produção com ciência, rastreabilidade e presença internacional, sem aceitar protecionismo disfarçado de exigência ambiental.",
+    "pagina": 22
+   },
+   "502": {
+    "texto": "Integrar alimentos, bioenergia, biotecnologia, ciência e sustentabilidade em uma política nacional de longo prazo. Estabelecer estratégias decenais para proteínas, grãos, biocombustíveis e bioinsumos e projetar internacionalmente a vantagem competitiva brasileira por meio de uma marca-país.",
+    "pagina": 22
+   },
+   "504": {
+    "texto": "Aprofundar programas de recuperação de pastagens degradadas e ampliar o financiamento aos sistemas de integração lavoura-pecuária-floresta. Utilizar satélites, inteligência artificial e extensão rural digital para orientar o uso do solo e elevar a eficiência produtiva por hectare.",
+    "pagina": 22
+   },
+   "505": {
+    "texto": "Estabelecer metas de conectividade rural até 2030 e apoiar a modernização do parque de máquinas e implementos agrícolas, com crédito e redução do custo de capital, integrando máquinas, sensores e plataformas digitais para ampliar a agricultura de precisão e a eficiência operacional no campo.",
+    "pagina": 22
+   },
+   "513": {
+    "texto": "Direcionar os recursos públicos prioritariamente para garantias, seguro, redução de riscos e investimentos em irrigação e armazenagem. Criar um fundo garantidor para o crédito agrícola privado e dar previsibilidade ao financiamento das safras e dos projetos de longo prazo. Estruturar um Plano Safra plurianual, com horizonte de cinco anos, para dar previsibilidade e planejamento de longo prazo ao setor produtivo.",
+    "pagina": 23
+   },
+   "515": {
+    "texto": "Padronizar e fortalecer os instrumentos de financiamento, incluindo CRA, Fiagro, debêntures e securitização.",
+    "pagina": 23
+   },
+   "516": {
+    "texto": "Assegurar estabilidade aos contratos e à cessão de recebíveis, aproximando o setor dos investidores institucionais e dos mercados internacionais de capital. Ampliar o uso da Cédula de Produto Rural e demais instrumentos de mercado como complemento, e não substituto, do crédito oficial, que permanece essencial à competitividade do setor.",
+    "pagina": 23
+   },
+   "518": {
+    "texto": "Estruturar um sistema nacional de seguro rural com participação pública e privada, vinculado à política de crédito. Desenvolver resseguro para eventos climáticos extremos e seguros paramétricos baseados em índices e monitoramento por satélite, com indenizações mais rápidas e objetivas. Modernizar o Programa de Subvenção ao Prêmio do Seguro Rural, incorporar o seguro de renda e reestruturar e regulamentar o Fundo de Catástrofe, reduzindo a dependência de contingenciamentos orçamentários.",
+    "pagina": 23
+   },
+   "520": {
+    "texto": "Organizar ferrovias, hidrovias, rodovias, portos e armazenagem em corredores logísticos estratégicos.",
+    "pagina": 23
+   },
+   "523": {
+    "texto": "Executar o Plano Nacional de Fertilizantes, ampliando a produção interna de potássio e nitrogenados e diversificando os fornecedores internacionais. Estruturar um programa nacional de bioinsumos para substituir parte dos insumos importados por soluções de base biológica. Incentivar a instalação, a modernização e a ampliação de plantas formuladoras de defensivos e estimular a produção nacional de ingredientes ativos estratégicos, reduzindo a dependência das importações e elevando a segurança de suprimento.",
+    "pagina": 23
+   },
+   "525": {
+    "texto": "Garantir planejamento plurianual e estabilidade de recursos para a Embrapa. Implantar um Programa Nacional de Biotecnologia Tropical, criar centros de excelência em inteligência artificial aplicada ao agro e modernizar as regras para edição genética e novas técnicas de melhoramento. Fortalecer o melhoramento genético vegetal e animal, com cultivares adaptadas às mudanças climáticas e resistentes a estresses hídricos, térmicos e fitossanitários, e apoiar a pesquisa em microbioma e aditivos que elevem a eficiência da pecuária e reduzam as emissões de metano entérico, organizando os centros de excelência em polos regionais segundo as vocações produtivas de cada região.",
+    "pagina": 23
+   },
+   "527": {
+    "texto": "Concluir a validação do Cadastro Ambiental Rural e implantar um sistema nacional de rastreabilidade da propriedade ao consumidor. Desenvolver o Selo Brasil Sustentável, ampliar o pagamento por serviços ambientais e estruturar certificação brasileira confiável para créditos de carbono.",
+    "pagina": 23
+   },
+   "529": {
+    "texto": "Estruturar coordenação central da política agrícola, com mandato transversal e articulação permanente entre agricultura, energia, comércio exterior, meio ambiente e indústria. Fortalecer os sistemas federal e estaduais de defesa sanitária, integrar a rastreabilidade animal e vegetal e criar um observatório nacional de dados produtivos. Ampliar a rede de laboratórios de diagnóstico e modernizar a vigilância epidemiológica",
+    "pagina": 23
+   },
+   "532": {
+    "texto": "com inteligência artificial e monitoramento em tempo real, elevando a agilidade na detecção e na contenção de focos.",
+    "pagina": 24
+   },
+   "535": {
+    "texto": "Diversificar as exportações para o Sudeste Asiático, Oriente Médio, África e mercados de maior valor, reforçando os adidos agrícolas e uma comunicação internacional baseada em ciência, sustentabilidade e segurança alimentar. Ao mesmo tempo, dar estabilidade ao Código Florestal, avançar na regularização fundiária, simplificar o licenciamento de atividades de baixo impacto e criar soluções institucionais para os conflitos territoriais, com mediação, convivência produtiva e indenização justa quando devida. Ampliar a rede de acordos comerciais, sanitários e fitossanitários para abrir novos mercados, consolidar os existentes e reduzir barreiras às exportações.",
+    "pagina": 24
+   },
+   "537": {
+    "texto": "Nosso compromisso é transformar a força da agricultura em um projeto nacional de desenvolvimento. O Brasil produzirá mais nas áreas já abertas, fortalecerá a Embrapa, protegerá o produtor contra riscos, reduzirá custos, agregará valor e conquistará novos mercados.",
+    "pagina": 24
+   },
+   "1465": {
+    "texto": "5. Ciência, produção e convivência com o semiárido",
+    "pagina": 65
+   },
+   "1466": {
+    "texto": "Fortalecer Embrapa, Instituto Nacional do Semiárido, universidades e extensão rural para difundir sementes adaptadas, manejo de solo e água, pecuária resiliente, energia distribuída, sistemas agroflorestais e restauração da Caatinga. Ampliar seguro paramétrico, monitoramento de seca e crédito para adaptação climática, transformando conhecimento local em produtividade e renda.",
+    "pagina": 65
+   },
+   "1476": {
+    "texto": "Expandir assistência técnica, cooperativismo, regularização fundiária, seguro, irrigação eficiente, armazenagem e processamento local. Fortalecer fruticultura, grãos, pecuária, apicultura, aquicultura, pesca sustentável e bioeconomia da Caatinga e do litoral, conectando pequenos produtores a compras públicas, indústria, exportação e segurança alimentar.",
+    "pagina": 65
+   },
+   "1599": {
+    "texto": "Implantar o Programa Origens da Amazônia, apoiando indicações geográficas, denominações de origem, marcas coletivas, certificações e rastreabilidade de alimentos, bebidas, óleos, fibras, cosméticos, artesanato e produtos florestais e pesqueiros sustentáveis.",
+    "pagina": 70
    }
   }
  }

@@ -1,99 +1,40 @@
 ---
 import Base from '../layouts/Base.astro';
-// A página que diz quem responde pelo site. Existe porque um produto eleitoral
-// sem rosto é um produto sem confiança: o leitor precisa saber quem faz, o que
-// o site é e não é, e para onde escrever. O texto é escrito à mão e versionado;
-// mudar isto é decisão editorial, como tudo no repositório público.
-import { EMAIL_CONTATO as email } from '../lib/contato.mjs';
+// Quem responde pelo site. Texto curto, no estilo da metodologia: o que o site
+// faz, o que não faz e quem responde. O passo a passo fica na metodologia, e o
+// contato, em /contato. Mudar isto é decisão editorial.
 const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
-// quem responde pelo site tem endereço público verificável
 const linkedin = 'https://www.linkedin.com/in/thiagoalvarez';
 ---
-<Base title="Quem faz o eleicoes.ai"
-  description="Quem responde pelo eleicoes.ai, o que o site é e não é, e como falar conosco ou apontar um erro.">
+<Base title="Quem somos"
+  description="Quem responde pelo eleicoes.ai, o que o site faz e o que não faz.">
   <div class="prose">
-    <h1>Quem faz o eleicoes.ai</h1>
+    <h1>Quem somos</h1>
     <p class="lead">
       O eleicoes.ai é uma iniciativa independente de
-      <strong><a href={linkedin} rel="noopener noreferrer">Thiago Alvarez</a></strong>, que
-      responde pelo site, pelo conteúdo e pelas decisões editoriais. Não tem vínculo com
-      partido, candidatura, governo ou com a Justiça Eleitoral.
+      <a href={linkedin} rel="noopener noreferrer">Thiago Alvarez</a>, que responde pelo site,
+      pelo conteúdo e pelas decisões editoriais.
     </p>
 
-    <h2>O que o site é</h2>
-    <p>
-      Uma comparação, tema a tema e assunto por assunto, dos <strong>programas de governo que os candidatos de 2026
-      registraram no TSE</strong>. Em cada tema, as propostas aparecem lado a lado: o que mais
-      de um candidato propõe aparece uma vez, sobre as colunas de quem propõe; o que só um
-      propõe fica na coluna dele; e, quando um programa se opõe explicitamente a uma proposta,
-      isso aparece marcado como "propõe o contrário". Cada proposta leva ao trecho do programa
-      de onde saiu, para você conferir. Só programas: nenhuma entrevista, rede social, notícia
-      ou fonte externa entra na comparação.
-    </p>
-    <p>
-      Hoje a comparação cobre os candidatos a presidente. Governador vem em seguida.
-    </p>
-
-    <h2>O que o site não é</h2>
+    <h2>O que fazemos</h2>
     <ul>
-      <li><strong>Não recomenda voto</strong> e não diz quem é melhor. Não há nota, ranking nem
-        placar: a ordem das colunas é alfabética e nenhum candidato tem cor própria.</li>
-      <li><strong>Não é checagem de fatos.</strong> Mostramos o que cada programa diz, com o
-        trecho; não julgamos se é possível, verdadeiro ou bom.</li>
-      <li><strong>Não diz o que um candidato pensa.</strong> Se um candidato não aparece numa
-        proposta, é porque o programa dele não a menciona — isso não é oposição. "Propõe o
-        contrário" só aparece quando o programa se opõe explicitamente.</li>
-      <li><strong>Não tem revisor humano por proposta.</strong> A leitura e o agrupamento das
-        propostas são feitos por inteligência artificial e conferidos pelo código contra o
-        texto dos programas. Por isso cada proposta vem com o trecho: confira antes de repassar.</li>
+      <li>Comparamos os programas de governo que os candidatos a presidente e a governador registraram no TSE.</li>
+      <li>Mostramos, tema a tema, as propostas de cada candidato lado a lado.</li>
+      <li>Cada proposta leva ao trecho do programa de onde saiu.</li>
     </ul>
 
-    <h2>Como as comparações são feitas</h2>
-    <p>
-      O texto de cada programa é extraído do PDF registrado no TSE e dividido em blocos. Um
-      modelo de inteligência artificial (Claude Opus 5, da Anthropic) classifica cada bloco por
-      tema; a classificação é validada por uma pessoa antes de qualquer comparação. Depois, tema
-      a tema, o modelo lê os blocos de todos os candidatos de uma vez e devolve as propostas com
-      a posição de cada programa — propõe, propõe o contrário ou não cita — citando os blocos em
-      que se baseou. O código confere que cada bloco citado existe e é do candidato certo; uma
-      segunda leitura, às cegas, confirma cada "propõe o contrário". O passo a passo,
-      com as limitações, está na <a href="/metodologia">metodologia</a>; o código do site e o
-      histórico de mudanças são públicos no <a href={repo} rel="noopener noreferrer">repositório</a>.
-      Com que ferramentas o site foi construído está em
-      <a href="/metodologia#como-este-site-foi-feito">Como este site foi feito</a>.
-    </p>
+    <h2>O que não fazemos</h2>
+    <ul>
+      <li>Não recomendamos voto nem ranqueamos candidatos.</li>
+      <li>Não checamos se uma proposta é possível ou verdadeira.</li>
+      <li>Não temos vínculo com partido, candidatura, governo ou com a Justiça Eleitoral.</li>
+    </ul>
 
-    <h2 id="regras">Regras da casa</h2>
-    <ol class="regras">
-      <li><strong>Use à vontade.</strong> Ler, copiar e compartilhar as comparações é livre. Ao
-        repassar, leve o link da página: ele leva aos trechos dos programas.</li>
-      <li><strong>Confira no programa.</strong> As propostas são resumidas por IA, sem revisão
-        humana. Cada uma tem o trecho e o link do programa no TSE. Antes de repassar como fato,
-        abra o trecho.</li>
-      <li><strong>Não é orientação de voto nem checagem.</strong> O site mostra o que os
-        programas registrados dizem. Não diz quem está certo nem em quem votar.</li>
-      <li><strong>Ausência não é oposição.</strong> Candidato fora de uma proposta é programa
-        que não a menciona. Só "propõe o contrário" significa oposição declarada no programa.</li>
-      <li><strong>Erros são corrigidos em público.</strong> Uma proposta mal resumida, um trecho
-        trocado ou uma posição errada são corrigidos no histórico público do repositório, a
-        partir do contato abaixo.</li>
-      <li><strong>Uso automatizado pode ser limitado.</strong> Robôs e raspagem em massa podem ser
-        bloqueados para o site continuar no ar para todo mundo.</li>
-    </ol>
-
-    <h2 id="contato">Fale conosco ou aponte um erro</h2>
-    <p>
-      Achou uma proposta mal resumida, um trecho que não diz o que a proposta diz, um "propõe o
-      contrário" que não se sustenta ou um candidato que deveria estar numa proposta e não está?
-      Escreva para <a href={`mailto:${email}`}><strong>{email}</strong></a> com o endereço da
-      página, o tema e a proposta. Correções entram no histórico público do
-      <a href={repo} rel="noopener noreferrer">repositório</a>. Quem preferir pode abrir um registro
-      público em <a href={`${repo}/issues`} rel="noopener noreferrer">{repo.replace('https://', '')}/issues</a>
-      (pede conta no GitHub e fica visível a todos).
-    </p>
-    <p>
-      O que o site guarda e o que não guarda sobre você está em
-      <a href="/privacidade">Privacidade</a>.
-    </p>
+    <h2>Como fazemos</h2>
+    <ul>
+      <li>A leitura e a comparação dos programas são feitas por inteligência artificial, sem revisor humano de cada proposta. O passo a passo está na <a href="/metodologia">metodologia</a>.</li>
+      <li>O código e o histórico de mudanças são públicos no <a href={repo} rel="noopener noreferrer">repositório</a>.</li>
+      <li>Para falar conosco ou apontar um erro, veja <a href="/contato">Fale conosco</a>.</li>
+    </ul>
   </div>
 </Base>

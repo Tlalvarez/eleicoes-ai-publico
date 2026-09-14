@@ -1,72 +1,45 @@
 ---
 import Base from '../layouts/Base.astro';
 import { EMAIL_CONTATO as email } from '../lib/contato.mjs';
-// O que o site guarda e o que não guarda. Cada frase daqui descreve um
-// comportamento real do código (Base.astro: PostHog sem cookies e o ouvinte
-// delegado; medicao.mjs: o vocabulário fechado dos eventos; Comparacao.astro:
-// o filtro de candidatos vive só no endereço, nada é gravado no navegador).
-// Mudou o comportamento, muda-se esta página no mesmo commit.
+// O que o site guarda e o que não guarda. Cada frase descreve um comportamento
+// real do código (Base.astro: PostHog em modo sem cookies; medicao.mjs: o
+// vocabulário fechado dos eventos; functions/api/vetor.js: o vetor da consulta,
+// sem guardar o texto; Comparacao.astro: a escolha de candidatos só no
+// endereço). Mudou o comportamento, muda-se esta página no mesmo commit.
 ---
 <Base title="Privacidade"
   description="O que o eleicoes.ai guarda e o que não guarda sobre quem usa o site.">
   <div class="prose">
     <h1>Privacidade</h1>
     <p class="lead">
-      O site não pede cadastro, não usa cookies, não tem campo para você escrever nada e não sabe
-      quem você é. Esta página diz, em linguagem direta, o que acontece com a sua visita.
+      O eleicoes.ai não pede cadastro, não usa cookies e não sabe quem você é.
     </p>
 
-    <h2>O que você faz no site</h2>
+    <h2>O que medimos</h2>
     <ul>
-      <li>O site é feito de páginas prontas: você abre um tema, lê as propostas, toca numa
-        proposta para ver o trecho do programa e pode tirar ou pôr candidatos na comparação.
-        <strong>Nada disso é enviado a um serviço nosso</strong>: não há pergunta, não há conta,
-        não há servidor que gere algo para você.</li>
-      <li>Ao <strong>buscar</strong>, o índice da busca é baixado para o seu navegador e a busca por
-        palavras roda nele. O texto da consulta vai ao nosso serviço para virar um vetor numérico
-        (é o que permite buscar por sentido) e segue ao provedor de embeddings (Jina, pelo gateway
-        NativePort) só para esse cálculo; esse serviço não o guarda. <strong>O texto da busca é
-        gravado na medição de audiência</strong>, junto com quantos resultados teve, em quantos
-        temas e em que modo — é assim que vemos o que as pessoas procuram e o que o site ainda não
-        responde. A gravação é anônima: não há conta, cookie nem identificador seu ligado a ela.
-        Por isso, <strong>não escreva dados pessoais na busca</strong>, seus ou de terceiros.</li>
-      <li>Ao filtrar candidatos, a escolha fica <strong>só no endereço da página</strong>
-        (<code>?c=</code>, com os nomes dos candidatos escolhidos). Você pode copiar e compartilhar
-        esse endereço; quem o abrir vê a mesma comparação. Nada é gravado no seu navegador: sair
-        da página apaga a escolha.</li>
-      <li>Fotos oficiais dos candidatos, os links "Ver no TSE" e os programas de governo vêm dos
-        servidores do Tribunal Superior Eleitoral; ao clicar, valem as regras deles.</li>
+      <li>Medimos a audiência com o PostHog, em modo sem cookies e sem identificar pessoas. Os eventos vão para servidores do PostHog nos Estados Unidos.</li>
+      <li>Além das páginas vistas, registramos seis ações: tema aberto, estado aberto, proposta aberta, comparação filtrada, link do TSE aberto e busca feita.</li>
+      <li>Nesses eventos vão só nomes de tema, siglas, códigos e números. O texto das propostas e dos trechos não é enviado.</li>
+      <li>A Cloudflare, que hospeda o site, também conta as visitas com o Cloudflare Web Analytics, sem cookies e sem identificar pessoas.</li>
+      <li>O servidor registra dados técnicos de cada acesso (endereço IP, horário e página), para segurança e operação.</li>
     </ul>
 
-    <h2>A sua visita</h2>
+    <h2>A busca</h2>
     <ul>
-      <li>Medimos a audiência com o PostHog em <strong>modo sem cookies</strong>: nada é
-        gravado no seu navegador, os eventos são anônimos, não há perfil de pessoa nem
-        gravação de sessão. A medição só roda no domínio eleicoes.ai; os eventos são
-        recebidos em servidores do PostHog nos <strong>Estados Unidos</strong>.</li>
-      <li>Além das páginas vistas, medimos <strong>seis ações</strong>, e só elas: que um
-        tema foi aberto (qual tema, e de onde: da home, da caixa de temas ou da busca); que um estado foi aberto (a sigla); que uma proposta foi aberta (o tema,
-        quantos candidatos a propõem e se há posição contrária); que a comparação foi
-        filtrada (o tema e quantos candidatos ficaram); que um link do TSE foi aberto (o
-        candidato); e que uma busca foi feita (o texto da consulta, quantos resultados, em quantos
-        temas, em que modo, se houve resultado direto e o tema aberto). Fora o texto da busca,
-        vai só <strong>números, siglas e códigos</strong>: o texto de uma proposta ou de um trecho
-        <strong>não entra</strong>, e o código recusa enviá-lo — um valor com espaço, como qualquer
-        frase, é descartado antes de sair do navegador, e um evento fora dessa lista não é enviado.</li>
-      <li>A Cloudflare, que hospeda o site, também conta as visitas com o
-        <strong>Cloudflare Web Analytics</strong>: sem cookies, sem identificar pessoa, com
-        páginas vistas, origem da visita, país, tipo de aparelho e tempo de carregamento. Esses
-        dados ficam com a Cloudflare, em servidores fora do Brasil.</li>
-      <li>O servidor que entrega as páginas registra dados técnicos de cada pedido (endereço IP,
-        horário e página pedida), para segurança e operação, sem prazo definido de retenção e
-        sem cruzamento com a medição de audiência.</li>
+      <li>O texto que você busca é gravado, sem identificar você, para sabermos o que as pessoas procuram. Não escreva dados pessoais na busca.</li>
+      <li>Para buscar por sentido, o texto também vai ao nosso servidor e dali ao provedor Jina, pelo gateway NativePort, só para esse cálculo. Esse serviço não guarda o texto.</li>
+    </ul>
+
+    <h2>O que fica no seu navegador</h2>
+    <ul>
+      <li>Nada é gravado. A escolha de candidatos fica só no endereço da página, e sair da página apaga a escolha.</li>
+      <li>As fotos dos candidatos a governador e os links "Ver no TSE" vêm dos servidores do TSE. Ao clicar num link do TSE, valem as regras deles.</li>
     </ul>
 
     <h2>Quem responde</h2>
-    <p>
-      Pelo site responde Thiago Alvarez, como descrito em <a href="/sobre">Quem faz</a>.
-      Dúvidas e pedidos de acesso: <a href={`mailto:${email}`}>{email}</a>
-      (ver <a href="/sobre#contato">Fale conosco</a>).
-    </p>
+    <ul>
+      <li>Pelo site responde Thiago Alvarez, como descrito em <a href="/sobre">Quem somos</a>.</li>
+      <li>Dúvidas e pedidos: <a href={`mailto:${email}`}>{email}</a>.</li>
+    </ul>
   </div>
 </Base>

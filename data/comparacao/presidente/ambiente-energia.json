@@ -10,9 +10,9 @@
   "energia"
  ],
  "origem": {
-  "arquivo": "ambiente-energia-5.json",
-  "gerado_em": "2026-09-13T08:31:28Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "ambiente-energia-6.json",
+  "gerado_em": "2026-09-14T06:40:02Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -54,14 +54,22 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Adotar política nacional de verticalização da cadeia de minerais críticos e terras raras, agregando valor no Brasil em vez de exportar minério bruto",
-   "n_concorda": 5,
+   "proposta": "Criar política nacional de minerais críticos e terras raras que promova verticalização e agregação de valor no país, em vez de exportar minério bruto",
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -69,16 +77,36 @@
       487,
       534
      ],
-     "nota": "Propõe ZEE de Terras Raras com oito estágios, da extração aos semicondutores"
+     "nota": "Propõe ZEE de Terras Raras com oito estágios, de extração a semicondutores"
     },
-    "romeu-zema": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      271,
-      272,
-      415
+      452
      ],
-     "nota": "Verticalização como consequência da facilitação à iniciativa privada"
+     "nota": "Estratégia regional de mapeamento, beneficiamento e agregação de valor"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      547,
+      3688,
+      3698,
+      3707,
+      3708,
+      3713,
+      3715
+     ],
+     "nota": "Projeto PETRA-BR"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1172,
+      1182,
+      1192
+     ],
+     "nota": "Estratégia Nacional de Minerais Críticos e Materiais Avançados"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -86,33 +114,89 @@
       819,
       825
      ],
-     "nota": "Estado como regulador e coordenador, não empresário"
+     "nota": "Estado como regulador e coordenador, não empresário; verticalização por incentivos de mercado"
     },
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      452
+      271,
+      272
      ],
-     "nota": "Política específica com estratégia regional de beneficiamento"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      547,
-      3688,
-      3707,
-      3708,
-      3713,
-      3715
-     ],
-     "nota": "Projeto PETRA-BR"
+     "nota": "Verticalização como consequência da atuação de empresas privadas"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Realizar mapeamento e levantamento geológico das reservas de minerais críticos e terras raras",
+   "proposta": "Criar zonas ou polos industriais específicos para o processamento de minerais críticos",
+   "n_concorda": 2,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3718,
+      3719,
+      3720,
+      3722
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Condicionar parcerias e acordos internacionais de minerais a transferência de tecnologia, formação de pessoal e processamento local",
+   "n_concorda": 4,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": "Transferência negociada por offset"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3725,
+      3726,
+      3727,
+      3728,
+      3731
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1173,
+      1194,
+      1195
+     ],
+     "nota": "Diversificação de parceiros para evitar dependência de um único polo"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      819
+     ],
+     "nota": "Atrair capital e tecnologia estrangeiros com transferência de conhecimento"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Retomar e ampliar o mapeamento geológico do território nacional com dados abertos",
    "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
@@ -121,101 +205,34 @@
       419,
       420
      ],
-     "nota": "Dados abertos e padrão internacional"
+     "nota": ""
     },
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      452
+      1056,
+      1184
      ],
-     "nota": "Estratégia regional de mapeamento"
+     "nota": ""
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3690,
       3691,
       3692,
       3693,
       3695
      ],
-     "nota": "Atlas Brasileiro de Minerais Críticos atualizado permanentemente"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Buscar parcerias e acordos internacionais com transferência de tecnologia como contrapartida na exploração mineral",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": "Transferência de tecnologia negociada por offset"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      819
-     ],
-     "nota": "Atrair capital estrangeiro e tecnologia já existentes no mundo"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3724,
-      3725,
-      3726,
-      3727,
-      3728,
-      3731
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Criar polos ou zonas industriais especiais dedicados ao processamento e transformação de minerais críticos",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": "Zona Econômica Especial de Terras Raras com regime tributário favorável"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3717,
-      3718,
-      3719,
-      3720,
-      3722
-     ],
-     "nota": "Clusters com universidades e centros tecnológicos"
+     "nota": "Atlas Brasileiro de Minerais Críticos"
     }
    }
   },
   {
    "id": "p5",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Acelerar e simplificar o licenciamento ambiental e a concessão de direitos minerários para projetos de mineração",
-   "n_concorda": 3,
+   "proposta": "Acelerar e dar prazos à análise de direitos minerários e autorizações de pesquisa e lavra",
+   "n_concorda": 4,
    "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      533
-     ],
-     "nota": "Com base na Lei 15.190/2025"
-    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
@@ -227,8 +244,22 @@
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      819,
       825
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1186,
+      1188
+     ],
+     "nota": "Fortalecer a ANM e licenciamento integrado sem reduzir exigências"
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      533
      ],
      "nota": ""
     }
@@ -237,7 +268,31 @@
   {
    "id": "p6",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Criar instrumentos de financiamento e garantias públicas dedicados a projetos de mineração e refino de minerais estratégicos",
+   "proposta": "Promover o aproveitamento econômico de rejeitos e a reciclagem de metais (mineração urbana e economia circular)",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      423,
+      424
+     ],
+     "nota": "Regras de titularidade e descomissionamento de barragens antigas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1198,
+      1199
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Criar instrumentos públicos de financiamento e garantias para projetos de minerais críticos",
    "n_concorda": 3,
    "posicoes": {
     "renan-santos": {
@@ -248,28 +303,28 @@
       549,
       550
      ],
-     "nota": "FGAM com aporte de R$ 2 a 5 bilhões e risco compartilhado público-privado"
+     "nota": "FGAM com aporte de R$ 2 a 5 bilhões e seguros contra retaliação"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       825
      ],
-     "nota": "Equacionar garantias de crédito ao financiamento dos projetos"
+     "nota": "Equacionar garantias de crédito"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3709
+      1192
      ],
-     "nota": "Políticas tributárias e creditícias para maior valor agregado"
+     "nota": "Crédito e incentivos com prazo, metas e contrapartidas"
     }
    }
   },
   {
-   "id": "p7",
+   "id": "p8",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Implantar planta-piloto de separação e refino de terras raras com cronograma faseado até a operação em escala comercial",
+   "proposta": "Implantar planta-piloto de separação e refino de terras raras com cronograma faseado até 2036",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -279,14 +334,14 @@
       547,
       548
      ],
-     "nota": "Planta-piloto em 2029-2030; expansão a ímãs e semicondutores até 2036"
+     "nota": "Planta-piloto em 2029-2030, expansão do MagBras"
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p9",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Aprovar emenda constitucional que declare as terras raras questão de segurança nacional, blindando a política setorial de ciclos eleitorais",
+   "proposta": "Aprovar emenda constitucional declarando as terras raras questão de segurança nacional",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -299,55 +354,48 @@
    }
   },
   {
-   "id": "p9",
+   "id": "p10",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Destinar a receita da exploração de terras raras ao financiamento de políticas públicas estratégicas (infraestrutura, segurança, saúde)",
-   "n_concorda": 1,
+   "proposta": "Criar centros de pesquisa, formação técnica e plantas-piloto em geologia, processamento mineral e materiais",
+   "n_concorda": 3,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      534
+      487
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1209
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3722,
+      3729,
+      3731
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Combater o garimpo e a mineração ilegais com integração de forças policiais, rastreabilidade do ouro e responsabilização de compradores",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      421,
-      422
-     ],
-     "nota": "Tratar mineração ilegal como política de segurança pública"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      849,
-      854
-     ],
-     "nota": "Foco nas organizações criminosas na Amazônia"
-    }
-   }
-  },
-  {
    "id": "p11",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Permitir o aproveitamento econômico de rejeitos e estruturas minerárias existentes, com regras de titularidade e descomissionamento de barragens",
+   "proposta": "Reforçar a segurança de barragens de rejeitos e exigir planos de fechamento com garantia financeira",
    "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      423,
-      424
+      1173,
+      1197,
+      1207
      ],
      "nota": ""
     }
@@ -355,41 +403,560 @@
   },
   {
    "id": "p12",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Orientar a política mineral pela demanda tecnológica futura (semicondutores, baterias, veículos elétricos, defesa)",
-   "n_concorda": 2,
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Reformar o licenciamento ambiental para garantir prazos definidos, critérios técnicos e previsibilidade",
+   "n_concorda": 4,
    "posicoes": {
-    "augusto-cury": {
+    "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      3697,
-      3698,
-      3699,
-      3700,
-      3701,
-      3704
+      311,
+      312,
+      533
      ],
-     "nota": "Mapa da demanda global"
+     "nota": "Implementação plena da Lei 15.190/2025 e uso ostensivo da Licença Ambiental Especial"
     },
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      452
+      565,
+      566
      ],
-     "nota": "Diferenciar usos tecnológicos das cadeias"
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      756
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1065,
+      1122
+     ],
+     "nota": "Exigências proporcionais ao risco, sem rebaixar exigência ambiental"
     }
    }
   },
   {
    "id": "p13",
-   "subtema": "Setor elétrico e tarifas",
-   "proposta": "Reduzir a conta de luz revisando encargos setoriais e subsídios cruzados embutidos na tarifa",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Conceder a licença ambiental automaticamente se o órgão não decidir dentro do prazo",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      761
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Combater com rigor o desmatamento ilegal, a grilagem e os crimes ambientais com integração de forças, inteligência e monitoramento por satélite",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      568,
+      569
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      847,
+      849,
+      854
+     ],
+     "nota": "Uso de IA, bases em tempo real e cooperação com países vizinhos"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      623,
+      624,
+      642
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      27,
+      1108,
+      1124,
+      1137
+     ],
+     "nota": "Responsabilizar financiadores e compradores de produtos ilegais"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3810,
+      3811,
+      3812
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Estabelecer meta de zerar o desmatamento ilegal ou líquido com prazo definido",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      623
+     ],
+     "nota": "Desmatamento líquido zero até 2030"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      847
+     ],
+     "nota": "Zerar desmatamento ilegal até 2029"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Combater o garimpo e a mineração ilegal com rastreabilidade da origem do ouro e responsabilização de compradores",
    "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      385,
+      421,
+      422
+     ],
+     "nota": "Tratar como política de segurança pública"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      27,
+      1173,
+      1201
+     ],
+     "nota": "Sistema de cadeia de custódia para ouro e minerais de alto risco"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      854
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Regularizar a pequena mineração e o garimpo legal com assistência técnica, cooperativismo e eliminação do mercúrio",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1203
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Combater a madeira ilegal e ampliar o manejo florestal sustentável com rastreabilidade e concessões",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1583,
+      1584,
+      1585
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      856
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Deixar de criminalizar o morador da floresta, dirigindo a fiscalização ao crime organizado e oferecendo regularização",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      855
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1120
+     ],
+     "nota": "Mutirão de regularização ambiental, sem anistia a dano doloso"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Destinar terras públicas não destinadas (a unidades de conservação, territórios indígenas, quilombolas ou assentamentos) e reforçar a regularização fundiária",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      626
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1137
+     ],
+     "nota": "Recuperação de terras públicas"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Exigir transparência sobre financiadores e projetos de ONGs que recebem recursos internacionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      857
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Desmatamento e crimes ambientais",
+   "proposta": "Eliminar superposições de competências entre órgãos ambientais e indigenistas federais",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      857
+     ],
+     "nota": "Ibama, Funai e ICMBio"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1118
+     ],
+     "nota": "Reduzir conflitos de competência via pacto federativo"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Consolidar e regulamentar o mercado de carbono brasileiro com integridade e segurança jurídica",
+   "n_concorda": 5,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      448
+     ],
+     "nota": "Regulamentação do SBCE articulada à Nova Indústria Brasil"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      840
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      578,
+      579
+     ],
+     "nota": "Foco no mercado voluntário, sem novos tributos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1131
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      718,
+      3851
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Ampliar o pagamento por serviços ambientais a quem conserva vegetação nativa e recursos hídricos",
+   "n_concorda": 4,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      817,
+      841
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      639,
+      640
+     ],
+     "nota": "Inclui reconhecer a restauração biocultural como estratégia de Estado"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1133,
+      1587
+     ],
+     "nota": "Prioridade a bacias críticas e povos indígenas e tradicionais"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      719,
+      3888,
+      3889
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Posicionar o Brasil como fornecedor global de remoção de carbono, engajando compradores internacionais e destravando reflorestamento e sequestro de carbono",
+   "n_concorda": 2,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      412,
+      413
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      798,
+      840
+     ],
+     "nota": "Ampliar o RenovaBio para venda de créditos ao exterior"
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Criar instrumentos financeiros e tributários para orientar capital a atividades sustentáveis (taxonomia, títulos verdes, fundos climáticos)",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      446,
+      448,
+      631,
+      632
+     ],
+     "nota": "Taxonomia Sustentável Brasileira, Fundo Clima, Eco Invest e TFFF"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1149
+     ],
+     "nota": "Títulos verdes e compras públicas sustentáveis, com antigreenwashing"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Bioeconomia e biodiversidade",
+   "proposta": "Impulsionar a bioeconomia e as cadeias produtivas da biodiversidade com pesquisa, crédito e agregação de valor",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      574,
+      575
+     ],
+     "nota": "Via simplificação de regras para o setor privado liderar"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      840,
+      856
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1135,
+      1588
+     ],
+     "nota": "Com repartição de benefícios e propriedade intelectual"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      714
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      454,
+      634
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Bioeconomia e biodiversidade",
+   "proposta": "Fortalecer unidades de conservação e políticas específicas por bioma",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      634,
+      641
+     ],
+     "nota": "Valorização dos 75 parques nacionais, RPPNs e Caatinga"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1147
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      847
+     ],
+     "nota": "Proteger todos os biomas respeitando diferenças regionais"
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Bioeconomia e biodiversidade",
+   "proposta": "Implementar plenamente o Código Florestal, acelerando análise e validação do Cadastro Ambiental Rural",
+   "n_concorda": 4,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      625
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      817
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1128,
+      1129
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      566
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Bioeconomia e biodiversidade",
+   "proposta": "Ampliar políticas de proteção e direitos animais, com castração, cadastro nacional e combate a maus-tratos",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      635,
+      638
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Reduzir encargos e subsídios embutidos na conta de luz para baratear a tarifa",
+   "n_concorda": 4,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
       389,
       390
      ],
@@ -403,6 +970,13 @@
      ],
      "nota": "Redução gradual da CDE e das fontes incentivadas, mantida a tarifa social"
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      790
+     ],
+     "nota": "Revisão gradual, com transparência e migração de políticas sociais ao orçamento"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -414,10 +988,10 @@
    }
   },
   {
-   "id": "p14",
+   "id": "p32",
    "subtema": "Setor elétrico e tarifas",
-   "proposta": "Reformar as regras de formação de preços e contratação de energia elétrica pelo critério do menor preço ao consumidor, sem privilegiar tecnologias",
-   "n_concorda": 2,
+   "proposta": "Contratar e expandir a geração pelo critério técnico do menor custo, sem privilegiar tecnologias específicas",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -426,6 +1000,13 @@
       388
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      803
+     ],
+     "nota": "Encerrar contratações impostas por jabutis legislativos"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -438,17 +1019,55 @@
    }
   },
   {
-   "id": "p15",
+   "id": "p33",
    "subtema": "Setor elétrico e tarifas",
-   "proposta": "Expandir e modernizar a rede de transmissão para eliminar o curtailment e integrar novas fontes renováveis",
+   "proposta": "Manter e aperfeiçoar a gratuidade/tarifa social de energia elétrica para famílias de baixa renda",
    "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      797
+     ],
+     "nota": "Com atualização cadastral e prevenção a fraudes"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      557,
+      796
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      562
+     ],
+     "nota": "Combate à pobreza energética"
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Expandir a transmissão e integrar o planejamento de geração e rede para acabar com o corte (curtailment) de energia renovável",
+   "n_concorda": 5,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
      "blocos": [
       318
      ],
-     "nota": "Novo marco regulatório da transmissão com foco no gargalo do Nordeste"
+     "nota": "Novo marco regulatório da transmissão, com foco no Nordeste"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      391,
+      392
+     ],
+     "nota": "Alocar custos do excedente aos próprios geradores"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -457,37 +1076,29 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      805,
+      1468
+     ],
+     "nota": "Critérios públicos e auditáveis para cortes e regras de compensação"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       572,
       574
      ],
-     "nota": "Continuidade dos leilões de transmissão e expansão integrada com geração"
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Setor elétrico e tarifas",
-   "proposta": "Alocar aos geradores os custos da energia renovável gerada em excesso e não aproveitada, evitando que o consumidor pague",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      391,
-      392
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p17",
+   "id": "p35",
    "subtema": "Setor elétrico e tarifas",
-   "proposta": "Implantar programa de armazenamento de energia com baterias de grande porte",
-   "n_concorda": 3,
+   "proposta": "Implantar armazenamento de energia em larga escala, com baterias e leilão específico",
+   "n_concorda": 4,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -502,117 +1113,146 @@
       563,
       574
      ],
-     "nota": "Nova fronteira de investimentos em baterias"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      808
+     ],
+     "nota": "Leilão de armazenamento com calendário previsível e usinas reversíveis"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       3618
      ],
-     "nota": "Integração de armazenamento com baterias e hidrogênio"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p18",
+   "id": "p36",
    "subtema": "Setor elétrico e tarifas",
-   "proposta": "Atrair indústrias intensivas em energia, data centers e inteligência artificial aproveitando a energia limpa e barata",
-   "n_concorda": 3,
+   "proposta": "Modernizar e repotenciar o parque hidrelétrico existente sem novos alagamentos",
+   "n_concorda": 2,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      406,
-      408,
-      409
+      808
      ],
      "nota": ""
     },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      796,
-      797
-     ],
-     "nota": "Polo global de data centers sustentáveis"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      454,
-      564
-     ],
-     "nota": "Vincula à neoindustrialização e cadeias de baterias e hidrogênio"
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Setor elétrico e tarifas",
-   "proposta": "Retomar as obras de Angra 3 e manter o desenvolvimento da tecnologia nuclear brasileira",
-   "n_concorda": 2,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      318
-     ],
-     "nota": "Retomada decisiva de Angra 3 e atenção à fusão nuclear"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      564,
-      602
-     ],
-     "nota": "Autonomia do ciclo do combustível e reatores modulares, sem citar Angra 3"
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Setor elétrico e tarifas",
-   "proposta": "Expandir a geração hidrelétrica com critérios socioambientais e repotenciar o parque existente, acelerando a redução do carvão",
-   "n_concorda": 1,
-   "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       573
      ],
-     "nota": ""
+     "nota": "Também expandir geração hidrelétrica por critérios socioambientais"
     }
    }
   },
   {
-   "id": "p21",
+   "id": "p37",
    "subtema": "Setor elétrico e tarifas",
-   "proposta": "Incorporar riscos climáticos como variável obrigatória no planejamento do setor energético",
+   "proposta": "Implementar a abertura do mercado livre de energia a todos os consumidores com proteção ao consumidor",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      572
+      792,
+      795
+     ],
+     "nota": "Medidores inteligentes e troca simples de fornecedor"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Estabelecer metas de qualidade e resiliência climática das redes de distribuição e combater perdas e ligações irregulares",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      810,
+      813
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p22",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Ampliar investimentos em fontes renováveis (solar, eólica, biomassa) e aumentar sua participação na matriz energética",
+   "id": "p39",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Adotar estratégia energética de Estado de longo prazo, com recomposição técnica das instituições e agências reguladoras",
    "n_concorda": 2,
    "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      801,
+      803
+     ],
+     "nota": "Horizonte de 30 anos, revisão quadrienal"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      562,
-      563
+      562
+     ],
+     "nota": "Planejamento e coordenação estratégica estatal"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Universalizar energia confiável em comunidades isoladas, substituindo geração a diesel por renováveis e armazenamento",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1603,
+      1604,
+      1605
      ],
      "nota": ""
     },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      562
+     ],
+     "nota": "Combate à pobreza energética com fontes limpas"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Estimular a eficiência energética e a resposta da demanda por meio de tarifas e incentivos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      806
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Ampliar a participação de fontes renováveis (solar, eólica, biomassa) na matriz energética",
+   "n_concorda": 3,
+   "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
@@ -621,18 +1261,33 @@
       3612,
       3614,
       3616,
-      3619,
-      3702
+      3619
      ],
-     "nota": "Meta de 90% de matriz limpa até 2040, incluindo eólica offshore e energia oceânica"
+     "nota": "Meta de 90% de matriz limpa até 2040 e inclusão de energia oceânica"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      562,
+      563
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      781,
+      1468
+     ],
+     "nota": "Transição pragmática e regional, avaliando cada fonte por custo e firmeza"
     }
    }
   },
   {
-   "id": "p23",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Desenvolver a cadeia do hidrogênio verde/de baixa emissão e posicionar o Brasil como exportador",
-   "n_concorda": 4,
+   "id": "p43",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Desenvolver o hidrogênio de baixa emissão e posicionar o Brasil como exportador",
+   "n_concorda": 5,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -647,7 +1302,18 @@
       410,
       411
      ],
-     "nota": "Via engajamento com Europa, EUA e Japão e certificações"
+     "nota": "Via adequação a certificações dos mercados europeu, americano e japonês"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      710,
+      3588,
+      3589,
+      3590,
+      3593
+     ],
+     "nota": "Corredor Nacional do Hidrogênio Verde; meta TOP 3 global até 2035"
     },
     "lula": {
      "posicao": "concorda",
@@ -657,34 +1323,79 @@
      ],
      "nota": ""
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      710,
-      3587,
-      3588,
-      3589,
-      3590,
-      3593
+      508,
+      821
      ],
-     "nota": "Corredor Nacional do Hidrogênio Verde e meta de TOP 3 global até 2035"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p24",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Criar plataforma nacional de mapeamento do potencial de energias renováveis com inteligência artificial",
+   "id": "p44",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Usar a energia limpa e barata para atrair indústrias intensivas em energia, data centers e inteligência artificial",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      408,
+      409
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      796,
+      797
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      827,
+      1468
+     ],
+     "nota": "Também atrair a indústria de equipamentos da transição"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      454,
+      564
+     ],
+     "nota": "Neoindustrialização com cadeias de baterias, hidrogênio e petroquímica verde"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3622,
+      3624,
+      3626
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Mapear o potencial nacional de energias renováveis em plataforma de dados com inteligência artificial",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3579,
       3580,
       3581,
       3582,
       3583,
+      3584,
       3585
      ],
      "nota": ""
@@ -692,88 +1403,156 @@
    }
   },
   {
-   "id": "p25",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Nacionalizar a cadeia industrial de equipamentos de energia renovável, com fábricas e centros de inovação no país",
-   "n_concorda": 2,
+   "id": "p46",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Manter e desenvolver o programa nuclear brasileiro para uso pacífico e geração elétrica",
+   "n_concorda": 3,
    "posicoes": {
-    "augusto-cury": {
+    "renan-santos": {
      "posicao": "concorda",
      "blocos": [
-      3621,
-      3622,
-      3624,
-      3626,
-      3628
+      318
      ],
-     "nota": ""
+     "nota": "Retomada de Angra 3 e atenção à fusão nuclear"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      564
+      564,
+      602
      ],
-     "nota": "Agregação de valor a baterias, petroquímica verde e reatores modulares"
+     "nota": "Autonomia do ciclo do combustível e reatores modulares"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      781
+     ],
+     "nota": "Nuclear como parte do mix avaliado por critério técnico"
     }
    }
   },
   {
-   "id": "p26",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Atrair capital internacional para o setor de energia limpa com segurança jurídica, incentivos fiscais e PPPs estruturadas",
+   "id": "p47",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Conduzir a transição energética como transição justa, com distribuição de renda e desenvolvimento regional",
    "n_concorda": 2,
    "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      455,
+      562,
+      603,
+      605
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      782
+     ],
+     "nota": "Transição pragmática, sem que baixa renda financie benefícios regressivos"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Descarbonizar o transporte, com eletrificação de frotas públicas e uso de biocombustíveis em frotas pesadas e aviação",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      564,
+      600
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      823
+     ],
+     "nota": "Híbridos flex para reduzir dependência de baterias importadas"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Usar a energia e a transição como eixo de política externa, diversificando parceiros e mercados",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      829,
+      830
+     ],
+     "nota": ""
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      411
+     ],
+     "nota": ""
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3595,
+      3591,
+      3592,
       3596,
       3597,
-      3598,
-      3599,
       3602,
       3606,
       3608
      ],
      "nota": ""
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      409
-     ],
-     "nota": ""
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Biocombustíveis e bioenergia",
-   "proposta": "Ampliar a produção de biocombustíveis (etanol, biodiesel, biogás, SAF) e posicionar o Brasil como protagonista global do setor",
-   "n_concorda": 4,
+   "id": "p50",
+   "subtema": "Biocombustíveis",
+   "proposta": "Ampliar a produção e a exportação de biocombustíveis (etanol, biodiesel, biometano, SAF, biogás)",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      410,
       542,
       543
      ],
-     "nota": "Foco em exportação e abertura de mercados"
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       798
      ],
-     "nota": "Aplicação da Lei do Combustível do Futuro e linhas especiais para biogás"
+     "nota": "Aplicação da Lei do Combustível do Futuro e linhas para biogás"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       547,
       548,
+      599,
       600
+     ],
+     "nota": "Aprimorar o RenovaBio com 2ª e 3ª geração e fortalecer a Pbio"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      508,
+      820,
+      821
      ],
      "nota": ""
     },
@@ -781,7 +1560,7 @@
      "posicao": "concorda",
      "blocos": [
       2503,
-      3584,
+      2504,
       3632,
       3634
      ],
@@ -790,31 +1569,54 @@
    }
   },
   {
-   "id": "p28",
-   "subtema": "Biocombustíveis e bioenergia",
-   "proposta": "Aprimorar o RenovaBio, incluindo sua projeção internacional e a venda de créditos de carbono",
+   "id": "p51",
+   "subtema": "Biocombustíveis",
+   "proposta": "Harmonizar metodologias e certificações de sustentabilidade dos biocombustíveis com padrões internacionais para acesso a mercados",
    "n_concorda": 2,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      798
+      511,
+      821
      ],
-     "nota": "Ampliar o Renovabio para o exterior"
+     "nota": "Inclui certificar o atributo renovável da rede elétrica brasileira"
     },
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      599
+      411
      ],
-     "nota": "Incorporar 2ª e 3ª geração e encadeamento com a indústria nacional"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p29",
-   "subtema": "Biocombustíveis e bioenergia",
-   "proposta": "Estimular a implantação de 100 usinas de etanol de milho com capacidade de processar mais de 100 milhões de toneladas por ano",
+   "id": "p52",
+   "subtema": "Biocombustíveis",
+   "proposta": "Elaborar um plano decenal de bioenergia integrando etanol, biodiesel, biometano e bioeletricidade",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      507
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      601
+     ],
+     "nota": "Políticas bioenergéticas integradas às cadeias de grãos e proteínas"
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Biocombustíveis",
+   "proposta": "Estimular a implantação de 100 grandes usinas de etanol de milho",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -828,51 +1630,18 @@
    }
   },
   {
-   "id": "p30",
-   "subtema": "Biocombustíveis e bioenergia",
-   "proposta": "Fomentar cooperativas de bioenergia integrando produção agrícola, energia e desenvolvimento regional",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2502,
-      2503,
-      2504
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      548,
-      601
-     ],
-     "nota": "Políticas bioenergéticas integradas às cadeias de grãos e proteínas"
-    }
-   }
-  },
-  {
-   "id": "p31",
+   "id": "p54",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Expandir a infraestrutura de escoamento, transporte e distribuição de gás natural para reduzir o custo ao consumidor e à indústria",
-   "n_concorda": 3,
+   "proposta": "Ampliar a oferta e a infraestrutura de gás natural (escoamento, processamento, transporte) para baratear o gás à indústria",
+   "n_concorda": 4,
    "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      404,
-      405
-     ],
-     "nota": "Eliminar o monopólio estadual na distribuição e racionalizar tarifas de transporte"
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       790,
       795
      ],
-     "nota": "Continuidade da Nova Lei do Gás e integração de estados desconectados"
+     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
@@ -881,47 +1650,67 @@
       587,
       589
      ],
-     "nota": "Interiorização das malhas e integração gasífera sul-americana"
+     "nota": "Inclui integração gasífera sul-americana e biometano"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      816
+     ],
+     "nota": "Meta de US$ 8/MMBtu, gas release e tarifa entrada-saída"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      404,
+      405
+     ],
+     "nota": "Eliminar o monopólio estadual da distribuição"
     }
    }
   },
   {
-   "id": "p32",
+   "id": "p55",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Manter e ampliar a exploração e produção de petróleo e gás, com investimentos em novas áreas e campos",
-   "n_concorda": 3,
+   "proposta": "Manter e ampliar a exploração e produção de petróleo e gás, inclusive em novas fronteiras",
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      393,
       395,
       396
      ],
-     "nota": "Calendário regular e previsível de leilões, com foco em exportação"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      788,
-      789
-     ],
-     "nota": "Inclui exploração de gás não convencional (fracking)"
+     "nota": "Calendário regular de leilões com análise ambiental prévia"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       590
      ],
-     "nota": "Via Petrobras, com exploração onshore e offshore e campos maduros"
+     "nota": "Via Petrobras, com cuidados socioambientais e campos maduros"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      818
+     ],
+     "nota": "Avaliação de novas fronteiras por rigor ambiental e evidência técnica"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      789
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p33",
+   "id": "p56",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Modernizar e expandir a capacidade de refino nacional",
-   "n_concorda": 2,
+   "proposta": "Modernizar e ampliar o parque nacional de refino",
+   "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -936,14 +1725,21 @@
      "blocos": [
       590
      ],
-     "nota": "Expansão do refino pela Petrobras e retorno à distribuição"
+     "nota": "Expansão via Petrobras, com retorno à distribuição de combustíveis"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      818
+     ],
+     "nota": "Refino integrado a biocombustíveis e soluções de baixo carbono"
     }
    }
   },
   {
-   "id": "p34",
+   "id": "p57",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Desverticalizar a Petrobras, separando produção, refino, transporte e logística em empresas distintas para abrir o setor à concorrência",
+   "proposta": "Desverticalizar a Petrobras, separando produção, refino, transporte e logística para abrir o setor à concorrência",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -958,17 +1754,17 @@
      "posicao": "discorda",
      "blocos": [
       590,
-      599
+      592
      ],
-     "nota": "Propõe o inverso: Petrobras integrada, retornando à distribuição e ampliando refino"
+     "nota": "Propõe o inverso: Petrobras ampliando atuação em refino, distribuição e logística"
     }
    }
   },
   {
-   "id": "p35",
+   "id": "p58",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Assegurar que os preços dos combustíveis sigam referências de mercado, sem interferência política do governo",
-   "n_concorda": 1,
+   "proposta": "Impedir a interferência política nos preços dos combustíveis, assegurando referências de mercado",
+   "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -978,20 +1774,26 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      782
+     ],
+     "nota": "Estatais sem uso partidário nem controle artificial de preços"
+    },
     "lula": {
      "posicao": "discorda",
      "blocos": [
-      584,
       585
      ],
-     "nota": "Defende atuação do governo e da Petrobras para mitigar repasse de preços internacionais"
+     "nota": "Defende atuação do governo para mitigar volatilidade e choques externos"
     }
    }
   },
   {
-   "id": "p36",
+   "id": "p59",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Flexibilizar as exigências de conteúdo local no setor de petróleo e gás, substituindo-as por incentivos por desempenho",
+   "proposta": "Substituir as exigências rígidas de conteúdo local no petróleo e gás por incentivos por desempenho",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -1012,7 +1814,81 @@
    }
   },
   {
-   "id": "p37",
+   "id": "p60",
+   "subtema": "Petróleo, gás e combustíveis",
+   "proposta": "Destinar parte das receitas do petróleo e gás a investimentos de longo prazo em ciência, redes e adaptação climática",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      818
+     ],
+     "nota": ""
+    },
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      534
+     ],
+     "nota": "Receita das terras raras, não do petróleo"
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Petróleo, gás e combustíveis",
+   "proposta": "Permitir a exploração de gás não convencional (fracking) com responsabilidade ambiental",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      788
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Petróleo, gás e combustíveis",
+   "proposta": "Favorecer a produção nacional de fertilizantes a partir do gás natural",
+   "n_concorda": 2,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      795
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      816
+     ],
+     "nota": "Direcionar gás reinjetado a fertilizantes nitrogenados"
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Petróleo, gás e combustíveis",
+   "proposta": "Manter e dar transparência ao apoio ao gás de cozinha para famílias de baixa renda",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      798
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
    "subtema": "Petróleo, gás e combustíveis",
    "proposta": "Reduzir impostos sobre energia elétrica e combustíveis",
    "n_concorda": 1,
@@ -1028,47 +1904,9 @@
    }
   },
   {
-   "id": "p38",
+   "id": "p65",
    "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Criar Programa Nacional de Segurança Energética com foco em refino, processamento, escoamento e transporte de combustíveis e gás",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      788
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Incentivar a produção nacional de fertilizantes a partir do gás natural para reduzir a dependência externa",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      795
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      564,
-      579
-     ],
-     "nota": "Via investimentos da Petrobras em gás e fertilizantes"
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Orientar a Petrobras para a transição energética, com investimentos em baixo carbono e redução de emissões operacionais, e readequar o REPETRO à descarbonização",
+   "proposta": "Alinhar a atuação da Petrobras à transição energética e à NDC, com investimentos em baixo carbono e revisão do REPETRO",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -1081,176 +1919,89 @@
    }
   },
   {
-   "id": "p41",
-   "subtema": "Petróleo, gás e combustíveis",
-   "proposta": "Participar do debate internacional sobre um mapa do caminho global para superação dos combustíveis fósseis, preservando soberania e segurança energéticas",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      630
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Licenciamento ambiental",
-   "proposta": "Tornar o licenciamento ambiental mais ágil e previsível, com critérios técnicos, prazos definidos e segurança jurídica",
-   "n_concorda": 3,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      311,
-      312,
-      533
-     ],
-     "nota": "Implementação plena da Lei 15.190/2025 e uso ostensivo da Licença Ambiental Especial"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      565,
-      566
-     ],
-     "nota": "Assegurando cumprimento do Código Florestal e análise do CAR"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      756
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Licenciamento ambiental",
-   "proposta": "Conceder automaticamente a licença ambiental caso o órgão não decida dentro do prazo definido",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      761
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Combater o desmatamento ilegal, a grilagem e os crimes ambientais com integração de forças de segurança, órgãos ambientais e justiça",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      568,
-      569
-     ],
-     "nota": "Com monitoramento por satélite e proteção às comunidades indígenas"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      847,
-      849
-     ],
-     "nota": "Foco em grilagem e crime organizado, sem novos custos ao produtor legal"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      623,
-      624,
-      642
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Ampliar o monitoramento por satélite e o uso de inteligência artificial na fiscalização ambiental",
+   "id": "p66",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Ampliar investimentos em prevenção, monitoramento e resposta a desastres climáticos, com planos de adaptação e sistemas de alerta",
    "n_concorda": 4,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      847
+      582,
+      584
      ],
-     "nota": "Integração de bases fundiárias e ambientais em tempo real"
+     "nota": "Com atração de investimento privado"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      642
+      645,
+      647
      ],
-     "nota": ""
+     "nota": "Institucionalizar a adaptação como eixo permanente do planejamento público"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1143,
+      1593
+     ],
+     "nota": "Recursos condicionados a planejamento e manutenção"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3809,
-      3810,
-      3811,
-      3812,
-      3813,
-      3814
-     ],
-     "nota": "Detecção precoce de focos de calor com modelos preditivos e sala de comando 24/7"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      569
+      3840,
+      3841
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p46",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Estabelecer meta de eliminação do desmatamento ilegal com prazo definido",
-   "n_concorda": 2,
+   "id": "p67",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Ampliar a infraestrutura de segurança hídrica (reservatórios, adutoras, recuperação de barragens, reuso e irrigação)",
+   "n_concorda": 4,
    "posicoes": {
-    "flavio-bolsonaro": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      847
+      585,
+      586
      ],
-     "nota": "Zerar o desmatamento ilegal até 2029"
+     "nota": "Com participação do setor privado"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      623
+      644
      ],
-     "nota": "Desmatamento líquido zero até 2030"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1141,
+      1462
+     ],
+     "nota": "Programa Água para o Futuro, com recuperação de nascentes e comitês de bacia"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      724
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p47",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Combater incêndios e queimadas ilegais com prevenção, manejo integrado do fogo e fortalecimento das brigadas",
-   "n_concorda": 3,
+   "id": "p68",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Criar sistema nacional integrado de prevenção e combate a incêndios florestais com brigadas, satélites e manejo do fogo",
+   "n_concorda": 4,
    "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      847
-     ],
-     "nota": ""
-    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -1259,335 +2010,193 @@
      ],
      "nota": "Implementação plena do Plano Nacional de Manejo Integrado do Fogo"
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1139,
+      1591,
+      1592
+     ],
+     "nota": ""
+    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3820,
-      3821,
-      3824,
+      3811,
+      3813,
+      3814,
       3825,
       3826,
       3827,
       3828
      ],
-     "nota": "Integração de drones, brigadas, aeronaves e sensores IoT"
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Criar frotas regionais de drones para detecção de focos de incêndio e apoio às brigadas, com agentes supressores de baixa toxicidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
+     "nota": "Projeto Floresta Viva, com drones de resposta rápida e sala de comando 24/7"
+    },
+    "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      3816,
-      3817,
-      3818,
-      3819,
-      3822
+      847
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p49",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Destinar terras públicas não destinadas a unidades de conservação, territórios indígenas, quilombolas ou assentamentos e reforçar a regularização fundiária",
-   "n_concorda": 1,
+   "id": "p69",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Incorporar os riscos climáticos como variável obrigatória no planejamento do sistema energético",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      610,
-      626
+      572
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      810
+     ],
+     "nota": "Redes de distribuição preparadas para eventos climáticos"
     }
    }
   },
   {
-   "id": "p50",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Fortalecer a conservação da biodiversidade e valorizar as unidades de conservação, incluindo incentivo a RPPNs e política para os parques nacionais",
+   "id": "p70",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Cumprir e implementar a NDC brasileira e os compromissos do Acordo de Paris",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      634
+      628,
+      629
      ],
-     "nota": "Integrando turismo sustentável e educação ambiental"
+     "nota": "Inclui articular o mapa do caminho global para eliminação do desmatamento"
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Estabelecer mecanismos de rastreabilidade e devida diligência socioambiental nas cadeias produtivas",
-   "n_concorda": 1,
+   "id": "p71",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Atuar na diplomacia climática defendendo soberania nacional sobre território e recursos",
+   "n_concorda": 3,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1151
+     ],
+     "nota": "Cooperação sem aceitar tutela externa"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      630
+     ],
+     "nota": "Participar do debate sobre afastamento dos fósseis preservando soberania"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      849
+     ],
+     "nota": "Proteção da Amazônia com soberania e presença do Estado"
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Criar instância permanente de cooperação federativa e pacto nacional para implementação da política ambiental",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1118
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      623
+     ],
+     "nota": "Atuação integrada de todas as instâncias de governo"
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Estabelecer rastreabilidade e devida diligência socioambiental nas cadeias produtivas",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       642
      ],
-     "nota": "Em diálogo com o setor produtivo"
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Consolidar o Cadastro Ambiental Rural e tratar o produtor que cumpre a legislação como parceiro da conservação, e não como suspeito",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      817,
-      846
-     ],
      "nota": ""
     },
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      566
+      1131,
+      1151
      ],
-     "nota": "Análise do CAR sem penalizar quem produz dentro da lei"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p53",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Promover campanhas permanentes de educação e conscientização ambiental nas escolas e mídias, com engajamento comunitário",
-   "n_concorda": 1,
+   "id": "p74",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Promover educação e conscientização ambiental permanente na sociedade e nas escolas",
+   "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3843,
       3844,
       3845,
       3846,
       3847
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Criar comitês de fiscalização ambiental com transparência total de contratos e participação da sociedade civil",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3855,
-      3856,
-      3857,
-      3859,
-      3860
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Desmatamento e proteção dos biomas",
-   "proposta": "Incluir a Caatinga e o Semiárido como prioridade de adaptação climática, com mecanismos permanentes de financiamento e combate à desertificação",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      641
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Mercado de carbono e serviços ambientais",
-   "proposta": "Ampliar o pagamento por serviços ambientais para remunerar quem conserva vegetação nativa e recupera áreas degradadas",
-   "n_concorda": 3,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      817,
-      841
-     ],
-     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      639,
-      640
+      634
      ],
-     "nota": "Inclui reconhecimento legal da restauração biocultural"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      719
-     ],
-     "nota": "Foco no produtor rural que preserva"
+     "nota": "Educação ambiental ligada aos parques nacionais"
     }
    }
   },
   {
-   "id": "p57",
-   "subtema": "Mercado de carbono e serviços ambientais",
-   "proposta": "Consolidar e regulamentar o mercado de carbono com segurança jurídica, posicionando o Brasil como fornecedor global de ativos ambientais",
-   "n_concorda": 4,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      578,
-      579
-     ],
-     "nota": "Foco no mercado voluntário, sem criar novos tributos"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      840
-     ],
-     "nota": "Mercado regulado de carbono"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      448
-     ],
-     "nota": "Regulamentação do SBCE articulada à Nova Indústria Brasil"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      717,
-      718
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Mercado de carbono e serviços ambientais",
-   "proposta": "Destravar investimentos em remoção de carbono e reflorestamento (sequestro no solo, bioenergia com captura, biocarvão) para mercados internacionais",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      412,
-      413
-     ],
-     "nota": "Fazer do Brasil o maior fornecedor global de remoção de carbono"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3849,
-      3850,
-      3851,
-      3852,
-      3853
-     ],
-     "nota": "Créditos auditados e reflorestamento com rastreabilidade digital"
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Bioeconomia",
-   "proposta": "Impulsionar a bioeconomia e a agregação de valor a produtos da biodiversidade (biotecnologia, fármacos, cosméticos, novos materiais)",
-   "n_concorda": 4,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      574,
-      575
-     ],
-     "nota": "Via simplificação de regras para indústrias e startups"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      840,
-      856
-     ],
-     "nota": "Vinculada a alternativas de renda na Amazônia"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      714
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      454,
-      564
-     ],
-     "nota": "Bioprodutos como vetor de reindustrialização"
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Bioeconomia",
-   "proposta": "Apoiar cadeias produtivas sustentáveis e geração de renda para populações da floresta como estratégia de preservação",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      855,
-      856
-     ],
-     "nota": "Fim da criminalização do morador da floresta, com regularização e oportunidade"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3887,
-      3888,
-      3889,
-      3892,
-      3894
-     ],
-     "nota": "População local como guardiã da floresta"
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Clima e transição ecológica",
-   "proposta": "Conciliar desenvolvimento econômico e preservação ambiental, tratando o meio ambiente como ativo e não como entrave",
-   "n_concorda": 4,
+   "id": "p75",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Tratar desenvolvimento econômico e preservação ambiental como objetivos complementares",
+   "n_concorda": 5,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       565,
       591
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      3898
      ],
      "nota": ""
     },
@@ -1599,310 +2208,19 @@
      ],
      "nota": ""
     },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      27,
+      1107
+     ],
+     "nota": ""
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       455,
       648
-     ],
-     "nota": "Enquadrado como transição justa para economia de baixo carbono"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      724,
-      3895,
-      3898
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Clima e transição ecológica",
-   "proposta": "Ampliar instrumentos de financiamento climático e mobilizar capital privado para a transformação ecológica",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      446,
-      448,
-      631,
-      632
-     ],
-     "nota": "Fundo Clima, Eco Invest, TFFF e Taxonomia Sustentável Brasileira"
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Clima e transição ecológica",
-   "proposta": "Cumprir e implementar a NDC brasileira e as metas do Acordo de Paris, mobilizando governo, setor privado e sociedade civil",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      628,
-      629
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Clima e transição ecológica",
-   "proposta": "Institucionalizar a adaptação climática como eixo permanente do planejamento público, com planos estaduais e municipais",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      645,
-      647
-     ],
-     "nota": "Fortalecimento do Plano Nacional de Adaptação e planos de calor extremo"
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Clima e transição ecológica",
-   "proposta": "Produzir base científica e modelagem climática em parceria com centros de pesquisa para orientar mitigação e adaptação",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3830,
-      3831,
-      3835,
-      3836,
-      3840,
-      3841
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p66",
-   "subtema": "Recursos hídricos e desastres",
-   "proposta": "Ampliar investimentos em infraestrutura de prevenção, monitoramento e resposta rápida a desastres climáticos",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      582,
-      584
-     ],
-     "nota": "Via atração de investimento privado"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      645,
-      647
-     ],
-     "nota": "Protocolos de proteção à população afetada ou deslocada"
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Recursos hídricos e desastres",
-   "proposta": "Ampliar a infraestrutura de segurança hídrica (reservatórios, barragens, adutoras, irrigação) e a proteção contra cheias",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      585,
-      586
-     ],
-     "nota": "Com participação do setor privado"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      783,
-      786
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      644
-     ],
-     "nota": "Inclui revitalização de bacias hidrográficas"
-    }
-   }
-  },
-  {
-   "id": "p68",
-   "subtema": "Recursos hídricos e desastres",
-   "proposta": "Promover programas de conservação do solo e dos recursos hídricos e recuperação produtiva de áreas degradadas",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      724
-     ],
-     "nota": ""
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      841
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p69",
-   "subtema": "Governança ambiental",
-   "proposta": "Eliminar superposições entre órgãos ambientais e indigenistas (Ibama, Funai, ICMBio) e exigir transparência de financiadores das ONGs que recebem recursos internacionais",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      857
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p70",
-   "subtema": "Governança ambiental",
-   "proposta": "Ampliar a cooperação internacional com países vizinhos contra crimes ambientais transfronteiriços na Amazônia",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      849
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Governança ambiental",
-   "proposta": "Fortalecer arranjos federativos e regionais de governança climática e ambiental entre União, estados e municípios",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      623,
-      647
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p72",
-   "subtema": "Pobreza energética",
-   "proposta": "Manter e ampliar programas de combate à pobreza energética, como tarifa social, gratuidade da conta de luz e gás para famílias de baixa renda",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      562,
-      605
-     ],
-     "nota": "Continuidade do Luz do Povo, Luz para Todos e Gás do Povo"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      557,
-      796
-     ],
-     "nota": "Manutenção da tarifa social ao reduzir encargos"
-    }
-   }
-  },
-  {
-   "id": "p73",
-   "subtema": "Proteção e direitos animais",
-   "proposta": "Ampliar as políticas de proteção e direitos animais, com castração, cadastro nacional e endurecimento do combate aos maus-tratos",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      635,
-      638
-     ],
-     "nota": "Ampliação do ProPatinhas e SinPatinhas e Conferência Nacional em 2028"
-    }
-   }
-  },
-  {
-   "id": "p74",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Promover a exportação de energia e combustíveis limpos brasileiros para Europa, Ásia e Oriente Médio",
-   "n_concorda": 3,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      396,
-      410,
-      411,
-      542,
-      543
-     ],
-     "nota": "Exportação de biocombustíveis e hidrogênio verde para Europa, EUA, Japão."
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      798,
-      840
-     ],
-     "nota": "Potência de biocombustíveis e venda de créditos de carbono/ativos ambientais ao exterior"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3591
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p75",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Estabelecer parcerias com grandes empresas globais de energia para investimento no setor energético brasileiro",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      819,
-      825
-     ],
-     "nota": "Atração de capital e tecnologia estrangeira e parcerias internacionais em minerais e energia"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3592
      ],
      "nota": ""
     }
@@ -1910,14 +2228,14 @@
   },
   {
    "id": "p76",
-   "subtema": "Energias renováveis e hidrogênio",
-   "proposta": "Levar energia ao campo como instrumento de aumento da produtividade agrícola",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Fortalecer a Agência Nacional de Mineração como órgão regulador do setor mineral",
    "n_concorda": 1,
    "posicoes": {
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3636
+      1173
      ],
      "nota": ""
     }
@@ -1926,21 +2244,13 @@
   {
    "id": "p77",
    "subtema": "Minerais críticos e terras raras",
-   "proposta": "Integrar governo, universidades, centros de pesquisa e iniciativa privada no desenvolvimento tecnológico dos setores estratégicos",
-   "n_concorda": 2,
+   "proposta": "Exigir dos projetos minerários planos de desenvolvimento local (qualificação, fornecedores, moradia, saúde, infraestrutura e diversificação econômica) e vincular royalties, com transparência, a investimentos de longo prazo",
+   "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      487,
-      531
-     ],
-     "nota": "Centro de P&D e articulação público-privada na cadeia de terras raras"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3694
+      1205
      ],
      "nota": ""
     }
@@ -1948,48 +2258,50 @@
   },
   {
    "id": "p78",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Ampliar progressivamente a participação brasileira nas cadeias tecnológicas internacionais",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Adotar contratos simples, verificação de resultados e repartição justa de benefícios nos instrumentos de pagamento por serviços ambientais e carbono",
    "n_concorda": 5,
    "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      487,
-      496,
-      548
-     ],
-     "nota": "Verticalização e integração em ímãs e semicondutores"
-    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      271,
-      272,
-      382
+      578,
+      579
      ],
-     "nota": "Processamento e cadeia produtiva de terras raras além da extração bruta."
+     "nota": "Defende ambiente seguro e desburocratizado para créditos de carbono, com certificação e renda a produtores e comunidades."
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      819,
-      825
+      840,
+      841
      ],
-     "nota": "Verticalização e agregação de valor conectando riqueza mineral às cadeias globais"
+     "nota": "Mercado regulado de carbono com segurança jurídica e ampliação do PSA"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      452,
-      454
+      448,
+      639,
+      640
      ],
-     "nota": "Política de minerais críticos e terras raras para inserção soberana nas cadeias globais de valor"
+     "nota": "Aprimorar PSA e regulamentar SBCE"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3714
+      718,
+      719,
+      3850,
+      3851,
+      3852
+     ],
+     "nota": "Regulamentação do mercado de carbono com segurança jurídica, PSA e créditos auditados/rastreáveis"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1589
      ],
      "nota": ""
     }
@@ -1997,39 +2309,14 @@
   },
   {
    "id": "p79",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Atrair empresas nacionais e internacionais de alta tecnologia para instalação no país",
-   "n_concorda": 4,
+   "subtema": "Bioeconomia e biodiversidade",
+   "proposta": "Priorizar na Amazônia transporte fluvial seguro, aeroportos regionais, infraestrutura digital e soluções de saneamento adaptadas à dispersão populacional",
+   "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      487,
-      549
-     ],
-     "nota": "Regime tributário favorável, offset e parceria com privados qualificados"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      408,
-      409
-     ],
-     "nota": "Atrair indústrias intensivas em energia, IA e data centers."
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      796,
-      797,
-      819
-     ],
-     "nota": "Atrair data centers e IA e capital/tecnologia de alta tecnologia"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      3721
+      1606
      ],
      "nota": ""
     }
@@ -2037,21 +2324,14 @@
   },
   {
    "id": "p80",
-   "subtema": "Minerais críticos e terras raras",
-   "proposta": "Formar pesquisadores e trabalhadores brasileiros para as cadeias tecnológicas estratégicas",
-   "n_concorda": 2,
+   "subtema": "Renováveis e transição energética",
+   "proposta": "Criar centros de inovação energética",
+   "n_concorda": 1,
    "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": "Centro de P&D e formação profissional"
-    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3729
+      3628
      ],
      "nota": ""
     }
@@ -2059,38 +2339,291 @@
   },
   {
    "id": "p81",
-   "subtema": "Governança ambiental",
-   "proposta": "Implantar monitoramento de recursos naturais com uso de tecnologia",
+   "subtema": "Setor elétrico e tarifas",
+   "proposta": "Ampliar o acesso à energia no campo como fator de aumento da produtividade rural",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3636
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      508,
+      1603,
+      1604
+     ],
+     "nota": "Universalizar energia confiável a comunidades e atividades produtivas, com bioenergia rural."
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Promover a integração entre governo, universidades, centros de pesquisa e iniciativa privada no desenvolvimento da política mineral e tecnológica",
+   "n_concorda": 3,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": "Centro de P&D e formação profissional na ZEE de Terras Raras"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3694
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1182,
+      1209
+     ],
+     "nota": "Governança integrando ministérios, setor privado, universidades, Senai e centros de pesquisa."
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Adotar políticas tributárias e creditícias que favoreçam a produção de bens minerais de maior valor agregado",
+   "n_concorda": 5,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      487,
+      531
+     ],
+     "nota": "Regime tributário favorável e financiamento para verticalização (refino, ímãs)"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      819,
+      825
+     ],
+     "nota": "Verticalização com incentivos de mercado, crédito e garantias para agregar valor mineral"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      452
+     ],
+     "nota": "Política de minerais críticos para agregar valor, evitando exportar matéria-prima"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3709
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1192
+     ],
+     "nota": "Crédito, inovação e incentivos com metas para refino, ligas, ímãs e baterias."
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Minerais críticos e terras raras",
+   "proposta": "Atrair empresas nacionais e internacionais de alta tecnologia para as cadeias de processamento mineral no Brasil",
+   "n_concorda": 6,
+   "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      487,
+      549
+     ],
+     "nota": "Transferência de tecnologia por offset e parcerias com privados qualificados"
+    },
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      271,
+      272,
+      418
+     ],
+     "nota": "Facilitar extração e processamento de terras raras por empresas privadas, indo além da extração bruta."
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      819
+     ],
+     "nota": "Atrair capital estrangeiro e tecnologia para processar minerais no Brasil"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      452
+     ],
+     "nota": "Estratégia de beneficiamento e inserção nas cadeias globais"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3721
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1173,
+      1192,
+      1195
+     ],
+     "nota": "Investimento estrangeiro condicionado a processamento e tecnologia no Brasil."
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Criar frotas regionais de drones para identificação de focos de incêndio em tempo real, mapeamento de áreas críticas e apoio às brigadas terrestres",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3818,
+      3819,
+      3820,
+      3821
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1124,
+      1591
+     ],
+     "nota": "Drones, satélites e IA para monitorar e antecipar incêndios, com brigadas."
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Empregar agentes supressores de incêndio químicos e biológicos de baixa toxicidade, sob protocolos ambientais rigorosos",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3822
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Adaptação climática e desastres",
+   "proposta": "Firmar parcerias com centros de excelência e universidades para modelagem climática e produção de dados sobre eventos extremos",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      633,
+      647
+     ],
+     "nota": "Cooperação com universidades e planos de adaptação a extremos"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3835,
+      3836
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Promover programas de reflorestamento com rastreabilidade digital",
    "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      569,
-      584,
-      586
+      412,
+      413
      ],
-     "nota": "Monitoramento por satélite do desmatamento e sistemas de monitoramento climático/hídrico."
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      847,
-      849
-     ],
-     "nota": "Monitoramento por satélite, IA e bases de dados integradas para fiscalização ambiental"
+     "nota": "Destravar investimentos em reflorestamento e remoção de carbono com certificação exigida pelos mercados."
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      610,
+      640,
       642
      ],
-     "nota": "Monitoramento satelital e IA no combate a crimes ambientais"
+     "nota": "Restauração florestal com rastreabilidade e monitoramento satelital"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      3858
+      3852
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1129,
+      1131
+     ],
+     "nota": "Recuperação como atividade econômica com carbono e padrões de rastreabilidade."
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Mercado de carbono e serviços ambientais",
+   "proposta": "Conceder incentivos a empresas que neutralizam suas emissões",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3853
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Política climática e diplomacia",
+   "proposta": "Integrar a gestão dos recursos ambientais a comitês anticorrupção, com monitoramento dos recursos, transparência total dos contratos e participação da sociedade civil",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3857,
+      3858,
+      3859,
+      3860
      ],
      "nota": ""
     }
@@ -2115,10 +2648,6 @@
     "texto": "Estimularemos pesquisas científicas, biotecnologia, bioindústria e novos produtos derivados da biodiversidade brasileira, agregando valor econômico à conservação ambiental e promovendo desenvolvimento sustentável.",
     "pagina": 51
    },
-   "717": {
-    "texto": "O Brasil poderá tornar-se protagonista mundial no mercado de créditos de carbono.",
-    "pagina": 51
-   },
    "718": {
     "texto": "Regulamentaremos esse setor com segurança jurídica, incentivando projetos de preservação ambiental, reflorestamento, agricultura regenerativa e tecnologias de baixa emissão de carbono.",
     "pagina": 51
@@ -2139,10 +2668,6 @@
     "texto": "Um dos pilares desse projeto será estimular a implantação de 100 grandes usinas de etanol de milho, capazes, em conjunto e quando plenamente implantadas, de processar mais de 100 milhões de toneladas de milho por ano.",
     "pagina": 126
    },
-   "2502": {
-    "texto": "4.2. COOPERATIVAS DE BIOENERGIA",
-    "pagina": 133
-   },
    "2503": {
     "texto": "Serão estimuladas cooperativas voltadas à produção de energia renovável, etanol de milho, biogás, biomassa e outras fontes sustentáveis.",
     "pagina": 133
@@ -2153,10 +2678,6 @@
    },
    "3577": {
     "texto": "Transformar o Brasil na maior potência mundial em energia limpa, com protagonismo em hidrogênio verde, solar, eólica e energia oceânica — convertendo abundância natural em riqueza, tecnologia e liderança global.",
-    "pagina": 175
-   },
-   "3579": {
-    "texto": "1. MAPEAMENTO TOTAL DAS ENERGIAS RENOVÁVEIS",
     "pagina": 175
    },
    "3580": {
@@ -2183,10 +2704,6 @@
     "texto": "• Hidrogênio verde (regiões com alta geração renovável)",
     "pagina": 175
    },
-   "3587": {
-    "texto": "2. BRASIL COMO CLUSTER GLOBAL DE HIDROGÊNIO VERDE",
-    "pagina": 175
-   },
    "3588": {
     "texto": "Transformar o país em referência mundial:",
     "pagina": 175
@@ -2211,24 +2728,12 @@
     "texto": "Meta: ser TOP 3 global em exportação de hidrogênio até 2035.",
     "pagina": 175
    },
-   "3595": {
-    "texto": "3. ATRAÇÃO DOS “GIGANTES DO CENTRO” (CAPITAL GLOBAL)",
-    "pagina": 175
-   },
    "3596": {
     "texto": "Atrair os maiores players mundiais:",
     "pagina": 175
    },
    "3597": {
     "texto": "• Fundos soberanos",
-    "pagina": 175
-   },
-   "3598": {
-    "texto": "• Big Techs energéticas",
-    "pagina": 175
-   },
-   "3599": {
-    "texto": "• Multinacionais de infraestrutura",
     "pagina": 175
    },
    "3602": {
@@ -2263,10 +2768,6 @@
     "texto": "Meta: 90% da matriz energética limpa até 2040.",
     "pagina": 176
    },
-   "3621": {
-    "texto": "5. INDUSTRIALIZAÇÃO DA ENERGIA",
-    "pagina": 176
-   },
    "3622": {
     "texto": "Não apenas gerar, mas transformar:",
     "pagina": 176
@@ -2299,10 +2800,6 @@
     "texto": "Transformar o Brasil em uma potência global de minerais estratégicos, deixando de ser predominantemente fornecedor de matérias-primas para ampliar sua capacidade de processamento, industrialização e produção de bens de alto valor agregado. O Brasil possui recursos minerais estratégicos para a nova economia mundial. O desafio será transformar essa riqueza geológica em tecnologia, indústria, empregos qualificados, pesquisa e desenvolvimento nacional.",
     "pagina": 178
    },
-   "3690": {
-    "texto": "1. MAPEAMENTO NACIONAL DE TERRAS RARAS",
-    "pagina": 178
-   },
    "3691": {
     "texto": "•",
     "pagina": 178
@@ -2323,32 +2820,8 @@
     "texto": "Investimentos em pesquisa geológica e novas tecnologias de prospecção.",
     "pagina": 178
    },
-   "3697": {
-    "texto": "2. MAPA DA DEMANDA GLOBAL",
-    "pagina": 178
-   },
    "3698": {
     "texto": "Construir uma política mineral orientada não apenas pelo que o Brasil possui no subsolo, mas pela demanda tecnológica das próximas décadas: \n•",
-    "pagina": 178
-   },
-   "3699": {
-    "texto": "Semicondutores e componentes eletrônicos. \n•",
-    "pagina": 178
-   },
-   "3700": {
-    "texto": "Baterias e armazenamento de energia. \n•",
-    "pagina": 178
-   },
-   "3701": {
-    "texto": "Veículos elétricos e motores de alta eficiência. \n•",
-    "pagina": 178
-   },
-   "3702": {
-    "texto": "Energia renovável. \n•",
-    "pagina": 178
-   },
-   "3704": {
-    "texto": "Robótica e tecnologias avançadas.",
     "pagina": 178
    },
    "3707": {
@@ -2367,16 +2840,8 @@
     "texto": "Desenvolvimento das etapas de separação, refino e transformação industrial. \n•",
     "pagina": 179
    },
-   "3714": {
-    "texto": "Ampliação progressiva da participação brasileira nas cadeias tecnológicas internacionais.",
-    "pagina": 179
-   },
    "3715": {
     "texto": "O objetivo será claro: sempre que econômica, tecnológica e ambientalmente viável, agregar valor no Brasil antes de exportar.",
-    "pagina": 179
-   },
-   "3717": {
-    "texto": "4. CRIAÇÃO DE ZONAS ESTRATÉGICAS DE INDUSTRIALIZAÇÃO",
     "pagina": 179
    },
    "3718": {
@@ -2397,10 +2862,6 @@
    },
    "3722": {
     "texto": "Formação de clusters envolvendo mineração, universidades, centros tecnológicos e indústrias.",
-    "pagina": 179
-   },
-   "3724": {
-    "texto": "5. PARCERIAS INTERNACIONAIS COM TRANSFERÊNCIA DE TECNOLOGIA",
     "pagina": 179
    },
    "3725": {
@@ -2427,10 +2888,6 @@
     "texto": "Instalação de centros de pesquisa e desenvolvimento no Brasil.",
     "pagina": 179
    },
-   "3809": {
-    "texto": "1. DETECÇÃO PRECOCE COM INTELIGÊNCIA ARTIFICIAL",
-    "pagina": 182
-   },
    "3810": {
     "texto": "•",
     "pagina": 182
@@ -2449,14 +2906,6 @@
    },
    "3814": {
     "texto": "Sala de comando integrada 24/7 (Federal + Estados)",
-    "pagina": 182
-   },
-   "3816": {
-    "texto": "2. DRONES DE RESPOSTA RÁPIDA",
-    "pagina": 182
-   },
-   "3817": {
-    "texto": "•",
     "pagina": 182
    },
    "3818": {
@@ -2479,10 +2928,6 @@
     "texto": "Uso de agentes supressores (químicos e biológicos) de baixa toxicidade, com protocolos ambientais rigorosos",
     "pagina": 182
    },
-   "3824": {
-    "texto": "3. COMBATE INTELIGENTE AO FOGO",
-    "pagina": 182
-   },
    "3825": {
     "texto": "• Integração:",
     "pagina": 182
@@ -2497,14 +2942,6 @@
    },
    "3828": {
     "texto": "• Logística otimizada por IA (alocação de recursos em minutos)",
-    "pagina": 182
-   },
-   "3830": {
-    "texto": "4. BASE CIENTÍFICA E CLIMÁTICA",
-    "pagina": 182
-   },
-   "3831": {
-    "texto": "•",
     "pagina": 182
    },
    "3835": {
@@ -2523,10 +2960,6 @@
     "texto": "Propostas de mitigação e adaptação",
     "pagina": 183
    },
-   "3843": {
-    "texto": "5. EDUCAÇÃO E CONSCIENTIZAÇÃO NACIONAL",
-    "pagina": 183
-   },
    "3844": {
     "texto": "• Campanha contínua:",
     "pagina": 183
@@ -2541,10 +2974,6 @@
    },
    "3847": {
     "texto": "• Engajamento comunitário em regiões críticas",
-    "pagina": 183
-   },
-   "3849": {
-    "texto": "6. PROGRAMA DE COMPENSAÇÃO AMBIENTAL INTELIGENTE",
     "pagina": 183
    },
    "3850": {
@@ -2563,14 +2992,6 @@
     "texto": "Incentivos a empresas que neutralizam emissões",
     "pagina": 183
    },
-   "3855": {
-    "texto": "7. COMITÊS DE PROTEÇÃO E FISCALIZAÇÃO",
-    "pagina": 183
-   },
-   "3856": {
-    "texto": "•",
-    "pagina": 183
-   },
    "3857": {
     "texto": "Integração com comitês anticorrupção: \n•",
     "pagina": 183
@@ -2587,28 +3008,12 @@
     "texto": "Participação da sociedade civil",
     "pagina": 183
    },
-   "3887": {
-    "texto": "8.4 GERAÇÃO DE RENDA COMO PROTEÇÃO AMBIENTAL",
-    "pagina": 184
-   },
    "3888": {
     "texto": "• Transformar a população local em guardiã da floresta.",
     "pagina": 184
    },
    "3889": {
     "texto": "• Incentivar economicamente a preservação.",
-    "pagina": 184
-   },
-   "3892": {
-    "texto": "•",
-    "pagina": 184
-   },
-   "3894": {
-    "texto": "Reduzir pressão sobre o desmatamento. \n•",
-    "pagina": 184
-   },
-   "3895": {
-    "texto": "Integrar dignidade humana com preservação ambiental. \n•",
     "pagina": 184
    },
    "3898": {
@@ -2628,14 +3033,6 @@
    "761": {
     "texto": "dois lados. Quando o empreendedor cumpre a lei e apresenta tudo o que a norma exige, o órgão responsável deve ter um prazo definido para concluir a análise. Se não decidir nem se manifestar dentro desse prazo, a licença deve ser concedida, porque a demora do Estado não pode ser um castigo para quem fez a sua parte. A responsabilidade de analisar continua sendo do poder público, mas a inércia deixa de ser uma forma de travar quem quer investir e gerar emprego.",
     "pagina": 50
-   },
-   "783": {
-    "texto": "Segurança hídrica água que chega, e enchente que não destrói",
-    "pagina": 52
-   },
-   "786": {
-    "texto": "Água que chega com segurança à torneira e à lavoura, e cidades protegidas da seca e da enchente.",
-    "pagina": 52
    },
    "788": {
     "texto": "Nosso objetivo é a segurança energética total ao menor preço possível para o consumidor. O Programa Nacional de Segurança Energética deverá ter foco em refino, processamento, escoamento e transporte de combustíveis e gás, permitir a exploração do gás não convencional (fracking) com responsabilidade ambiental e cumprindo a lei, e expandir e modernizar a rede de transmissão, integrando novas fontes renováveis e reduzindo congestionamentos.",
@@ -2779,14 +3176,6 @@
     "texto": "empresas, buscando garantir justiça tarifária e a preservar a sustentabilidade econômico-financeira do setor.",
     "pagina": 66
    },
-   "579": {
-    "texto": "O governo Lula III retomou os investimentos em petróleo e gás. A Petrobras tem batido sucessivos recordes de produção de petróleo e voltou a investir em refino e derivados, em gás e fertilizantes, ampliando suas encomendas às indústrias naval e petroquímica.",
-    "pagina": 66
-   },
-   "584": {
-    "texto": "A nova política de preços da Petrobras, combinada com a ação de subvenções governamentais, diminuiu a volatilidade dos preços do diesel, da gasolina e do GLP e teve um papel importante para não repassar os preços internacionais para o mercado doméstico, especialmente no período da Guerra do Estreito de Ormuz.",
-    "pagina": 66
-   },
    "585": {
     "texto": "Continuaremos a atuar para mitigar a volatilidade dos preços internacionais, garantindo que os brasileiros não fiquem expostos a choques externos.",
     "pagina": 66
@@ -2831,6 +3220,10 @@
     "texto": "A competência nuclear brasileira, como política de Estado, será preservada para uso exclusivamente pacífico, valorizando sua base científica, tecnológica e industrial e suas aplicações em energia, saúde, pesquisa, indústria e segurança radiológica. Avançaremos na autonomia do ciclo do combustível nuclear e aproveitaremos de forma responsável as reservas nacionais de urânio, sempre condicionado à viabilidade técnica, econômica, ambiental e social.",
     "pagina": 68
    },
+   "603": {
+    "texto": "O novo Brasil que queremos construir avançará, ao mesmo tempo, na segurança energética e na transição energética, somando as vantagens de ambas para",
+    "pagina": 68
+   },
    "605": {
     "texto": "fortalecer nossas matrizes elétrica e de combustíveis, combater a pobreza energética, impulsionar o desenvolvimento nacional e ampliar a soberania do país.",
     "pagina": 69
@@ -2873,6 +3266,10 @@
    },
    "632": {
     "texto": "Tropicais para Sempre implementará suas estruturas de governança para que os investimentos possam começar a ocorrer.",
+    "pagina": 71
+   },
+   "633": {
+    "texto": "Entendemos que o fortalecimento de arranjos regionais de planejamento e governança, envolvendo União, estados, municípios, consórcios públicos, universidades, instituições financeiras e setor produtivo, permitirá acelerar a implementação de políticas climáticas, compartilhar capacidades técnicas, estruturar projetos de escala regional e ampliar a eficiência dos investimentos públicos.",
     "pagina": 71
    },
    "634": {
@@ -2937,10 +3334,6 @@
     "texto": "A ZEE de Terras Raras busca verticalizar a cadeia produtiva nacional, aproveitando a segunda maior reserva mundial do Brasil (cerca de 23%, USGS 2026), integrando oito estágios: (1) extração, (2) separação química, (3) refino, (4) ligas, (5) ímãs, (6) motores, (7) componentes para baterias e (8) semicondutores/ defesa. As soluções incluem regime tributário favorável, transferência de tecnologia negociada por offset e condições de financiamento, centro de P&D e formação profissional, enfrentando a dominância chinesa no refino e nos ímãs.",
     "pagina": 36
    },
-   "496": {
-    "texto": "Mais de um século depois, é precisamente essa a tese deste capítulo: o Brasil só converterá suas reservas de terras raras e minerais críticos em poder nacional se reunir o martelo — a mineração e a indústria de transformação — à mente — o domínio tecnológico, a pesquisa e o refino de alto valor. Riqueza no subsolo não basta; sem ciência e indústria, exporta-se minério e importa-se dependência.",
-    "pagina": 37
-   },
    "531": {
     "texto": "▪ Criação de uma planta-piloto de separação e refino de terras raras em 2029-2030 como prova de conceito antes da operação em larga escala. Neste contexto, devemos expandir projetos como o MagBras (“Da Mina ao Ímã”, do Programa Mover), voltado ao domínio da cadeia que vai do minério aos ímãs permanentes de terras raras. O aporte pode vir do Fundo Garantidor da Atividade Mineral (FGAM), previsto no PL nº 2.780/2024 (aprovado na Câmara em 2026, em apreciação no Senado). Devemos trabalhar por sua aprovação e ampliar o aporte inicial (R$ 2 bilhões, podendo chegar a R$ 5 bilhões) à medida que ganharmos espaço orçamentário pelos ajustes fiscais. É preciso compromisso com o efetivo domínio da cadeia produtiva.",
     "pagina": 39
@@ -2987,14 +3380,6 @@
     "texto": "Facilitar a atuação de empresas privadas para a exploração sustentável das riquezas do nosso subsolo, principalmente terras raras e outros minerais de alto valor, o que por consequência promoverá a cadeia produtiva para além da extração bruta, transformando esse patrimônio mineral em geração de riqueza e empregos qualificados.",
     "pagina": 21
    },
-   "382": {
-    "texto": "Na mineração, o problema se repete. Temos a segunda maior reserva de terras raras do mundo, liderança global em nióbio e reservas relevantes de lítio, exatamente o que a indústria global de tecnologia disputa hoje, e ainda assim quem quer investir na mineração legal enfrenta anos de fila.",
-    "pagina": 32
-   },
-   "385": {
-    "texto": "BAIXAR A CONTA DE LUZ",
-    "pagina": 33
-   },
    "387": {
     "texto": "Reestruturar a forma como o preço da energia é definido",
     "pagina": 33
@@ -3017,10 +3402,6 @@
    },
    "392": {
     "texto": "Acabar com o desperdício de energia limpa, aprimorando a regulação para que os custos da energia gerada em excesso e não aproveitada sejam alocados aos próprios geradores, inclusive no mercado regulado, evitando que o consumidor pague pelas ineficiências do sistema e incentivando cada agente a buscar a solução mais eficiente para sua produção.",
-    "pagina": 33
-   },
-   "393": {
-    "texto": "DESTRAVAR OS INVESTIMENTOS",
     "pagina": 33
    },
    "395": {
@@ -3063,10 +3444,6 @@
     "texto": "Racionalizar as tarifas de transporte e eliminar o monopólio dos estados na distribuição do gás natural, permitindo uma redução significativa no custo do gás entregue ao consumidor.",
     "pagina": 34
    },
-   "406": {
-    "texto": "TRANSFORMAR A ENERGIA LIMPA",
-    "pagina": 34
-   },
    "408": {
     "texto": "Alavancar a energia limpa e barata para expansão dos investimentos na indústria e tecnologia:",
     "pagina": 34
@@ -3090,10 +3467,6 @@
    "413": {
     "texto": "Engajar os grandes compradores dos mercados voluntário e regulado e alinhar o país às exigências de certificação e sustentabilidade desses mercados, destravando investimentos em reflorestamento, sequestro de carbono no solo, bioenergia com captura e biocarvão, gerando uma nova frente de renda e empregos no Brasil.",
     "pagina": 34
-   },
-   "415": {
-    "texto": "APROVEITAR A RIQUEZA",
-    "pagina": 35
    },
    "417": {
     "texto": "Destravar a fila de autorizações da mineração:",
@@ -3186,6 +3559,320 @@
    "591": {
     "texto": "Promover visões que colocam preservação e desenvolvimento como objetivos complementares:",
     "pagina": 49
+   }
+  },
+  "ronaldo-caiado": {
+   "27": {
+    "texto": "Desenvolvimento e proteção ambiental serão tratados como aliados. Vamos combater com rigor o desmatamento, a grilagem e a mineração ilegal, ao mesmo tempo em que daremos previsibilidade ao empreendedor regular e remuneração a quem conserva. O Brasil transformará seus ativos ambientais em prosperidade por meio da bioeconomia, do pagamento por serviços ambientais, do mercado de carbono de alta integridade, da agricultura de baixo carbono, da restauração de bacias e da liderança na transição energética.",
+    "pagina": 3
+   },
+   "507": {
+    "texto": "Elaborar um Plano Decenal de Bioenergia que integre etanol, biodiesel, biometano e bioeletricidade.",
+    "pagina": 22
+   },
+   "508": {
+    "texto": "Consolidar o marco regulatório do biometano, ampliar o uso de combustível sustentável de aviação e financiar projetos de bioenergia integrados às propriedades rurais. Ampliar a produção de combustíveis de baixa emissão, incluindo combustível sustentável de aviação, combustíveis marítimos e hidrogênio de baixa",
+    "pagina": 22
+   },
+   "511": {
+    "texto": "emissão, e harmonizar as metodologias de Análise de Ciclo de Vida com padrões internacionais, atuando nos fóruns competentes para que a sustentabilidade dos biocombustíveis brasileiros seja reconhecida nos mercados globais.",
+    "pagina": 23
+   },
+   "781": {
+    "texto": "Energia competitiva, segura e limpa será vantagem industrial e proteção ao consumidor. O Brasil não sofre de falta de fontes, mas de custos, subsídios mal distribuídos, transmissão, gás caro, tributação, governança fragmentada e planejamento insuficiente. O plano combinará liberdade de escolha, revisão de encargos, expansão de redes, gás e biometano, petróleo responsável, biocombustíveis, renováveis, nuclear e eficiência.",
+    "pagina": 35
+   },
+   "782": {
+    "texto": "A transição será pragmática e regional. Cada fonte será avaliada por custo, firmeza, localização, emissões, segurança e contribuição ao sistema. Consumidores de baixa renda não financiarão benefícios regressivos. Petrobras e demais estatais terão governança, eficiência e investimento, sem uso partidário ou controle artificial de preços.",
+    "pagina": 35
+   },
+   "790": {
+    "texto": "Rever, de forma gradual e transparente e respeitando os contratos e competências institucionais, os subsídios e encargos embutidos na conta de luz: publicar com clareza quem paga, quem recebe e qual o custo de cada benefício; estabelecer prazo de vigência, avaliação periódica e critérios objetivos de continuidade; e transferir progressivamente para o orçamento público, mediante decisão do Congresso, as políticas de natureza social ou setorial que não estejam diretamente vinculadas ao funcionamento do sistema elétrico. A redução de distorções será feita com previsibilidade, transição adequada e sem mudanças retroativas, preservando a confiança de consumidores e investidores.",
+    "pagina": 35
+   },
+   "792": {
+    "texto": "Implementar o cronograma de abertura do mercado de energia com qualidade, previsibilidade e proteção ao consumidor, assegurando regulamentação tempestiva, processos simples para a troca de fornecedor,",
+    "pagina": 35
+   },
+   "795": {
+    "texto": "informações claras para a comparação de ofertas, fiscalização efetiva contra práticas abusivas e expansão dos medidores inteligentes. Promover a concorrência com regras adequadas, transparência e segurança, de modo a reduzir custos e ampliar a liberdade de escolha, sem transferir riscos de forma desproporcional aos consumidores mais vulneráveis.",
+    "pagina": 36
+   },
+   "797": {
+    "texto": "Manter e aperfeiçoar a gratuidade da energia elétrica para as famílias de baixa renda, com atualização permanente dos cadastros, integração de bases de dados e mecanismos efetivos de prevenção a fraudes.",
+    "pagina": 36
+   },
+   "798": {
+    "texto": "Assegurar tratamento igualmente transparente ao apoio destinado ao gás de cozinha, com divulgação periódica do custo, da cobertura e dos resultados de cada benefício. Promover, de forma complementar, medidas estruturais para ampliar a oferta e reduzir o custo do gás nacional, contribuindo para tornar o botijão mais acessível a todas as famílias.",
+    "pagina": 36
+   },
+   "801": {
+    "texto": "Energia se decide em décadas e se paga em gerações, e o Brasil vem decidindo em ciclos de quatro anos e pagando a diferença na tarifa. O país terá uma estratégia de longo prazo para energia e recursos estratégicos, com horizonte de 30 anos e revisão a cada quatro anos, integrando eletricidade, petróleo, gás, minerais, indústria e política externa, publicada com cenários, custos, metas e responsáveis por cada entrega. Quem investe em obra que leva dez anos precisa saber para onde o país vai antes da próxima eleição, e não depois dela.",
+    "pagina": 36
+   },
+   "803": {
+    "texto": "Devolver ao planejamento técnico as decisões de expansão e contratação de energia, pelo critério do menor custo ao consumidor, encerrando as contratações de usinas impostas por dispositivos inseridos em leis, à revelia do planejamento, que encarecem a conta de todos. As decisões difíceis que vêm sendo adiadas serão tomadas por critério técnico, com os números publicados. Recompor os quadros das instituições que planejam, regulam e operam o setor e devolver a cada uma o seu papel: conselhos formulam a política, agências regulam, outorgam e fiscalizam, com orçamento próprio, transparência, prestação de contas e proteção contra a captura por quem elas regulam. Agências fortes, contratos respeitados e decisões previsíveis: o capital de longo prazo só financia barato o que é regulado com previsibilidade.",
+    "pagina": 36
+   },
+   "805": {
+    "texto": "Planejar de forma integrada a expansão da geração e da transmissão, assegurando que a energia produzida possa chegar aos centros de consumo. Estabelecer critérios públicos, objetivos e auditáveis para eventuais cortes de geração, com medição transparente e regras claras de compensação, evitando que controvérsias se prolonguem por anos. Distribuir de forma equilibrada os custos do sistema elétrico, enfrentando suas causas e preservando integralmente os direitos de quem realizou investimentos com base nas regras vigentes.",
+    "pagina": 36
+   },
+   "806": {
+    "texto": "Estimular a participação da demanda, por meio de tarifas e mecanismos que incentivem o consumo nos períodos de maior disponibilidade de energia. Estimular a eficiência energética no lado da demanda, sobretudo nos processos industriais, onde cada unidade economizada tem efeito multiplicador e reduz a necessidade de nova geração.",
+    "pagina": 36
+   },
+   "808": {
+    "texto": "Realizar o leilão de armazenamento de energia, com calendário previsível, regras de conexão definidas previamente e condições que permitam a participação de baterias associadas a usinas existentes. Estabelecer requisitos de conteúdo e participação da indústria nacional compatíveis com o grau de maturidade da cadeia produtiva, como objetivo progressivo de médio prazo, sem criar barreiras que retardem a implantação dos primeiros projetos. Modernizar e repotenciar o parque hidrelétrico existente, ampliando sua capacidade de resposta sem novos alagamentos. Viabilizar os primeiros projetos de usinas reversíveis e remunerar adequadamente os serviços de flexibilidade, potência e estabilidade prestados ao sistema elétrico.",
+    "pagina": 36
+   },
+   "810": {
+    "texto": "Estabelecer metas progressivas, verificáveis e compatíveis com as características de cada área de concessão para elevar a qualidade, a continuidade e a resiliência das redes de distribuição, com indicadores divulgados por município e consequências proporcionais ao desempenho observado. Promover planos integrados entre",
+    "pagina": 36
+   },
+   "813": {
+    "texto": "distribuidoras, prefeituras, Defesa Civil e órgãos de segurança pública para reduzir a frequência e a duração das interrupções, especialmente por meio do manejo preventivo da vegetação, do ordenamento urbano, da liberação de acessos e da proteção das equipes em áreas de risco. Combater perdas e ligações irregulares com tecnologia, fiscalização coordenada e programas de regularização, protegendo o consumidor que paga em dia e ampliando o acesso seguro à energia.",
+    "pagina": 37
+   },
+   "816": {
+    "texto": "Ampliar a oferta competitiva de gás natural para a indústria, enfrentando os gargalos de escoamento, processamento e transporte que limitam seu aproveitamento econômico. Aplicar os instrumentos regulatórios existentes para reduzir a reinjeção associada à falta de infraestrutura ou de acesso ao mercado, respeitando as condições técnicas e a engenharia de cada reservatório. Realizar leilões competitivos do gás pertencente à União, assegurar o acesso de terceiros às infraestruturas essenciais em condições transparentes e não discriminatórias e promover maior harmonização entre as regras estaduais. Aproveitar a integração energética com os países vizinhos como fonte complementar de oferta e concorrência. Aplicar mecanismos de liberação de oferta e de capacidade (gas release e capacity release), disponibilizando a novos comercializadores e consumidores parte dos contratos e da capacidade de transporte hoje concentrados. Ter como referência de política a convergência do preço do gás ao consumidor industrial para patamares próximos de US$ 8 por MMBtu, meta viável com a implementação plena da Nova Lei do Gás. Avançar na revisão das normas de transporte de gás, com tarifas no modelo de entrada e saída, transparentes e proporcionais ao uso, e com integração das redes de transportadores distintos para dar liquidez à comercialização da molécula. Direcionar o gás hoje reinjetado a usos de maior valor, como a produção de fertilizantes nitrogenados e a substituição de termelétricas a óleo combustível e diesel, reduzindo emissões e a dependência de insumos importados.",
+    "pagina": 37
+   },
+   "818": {
+    "texto": "Assegurar previsibilidade na oferta de petróleo e derivados, orientando a avaliação de novas fronteiras pelo rigor ambiental, pela segurança operacional e pela melhor evidência técnica disponível. Fortalecer a segurança do abastecimento por meio de um parque nacional de refino competitivo, eficiente e progressivamente integrado aos biocombustíveis e às novas soluções de baixo carbono. Destinar parte das receitas extraordinárias provenientes da exploração de petróleo e gás a investimentos de longo prazo em redes, ciência e tecnologia, adaptação climática e desenvolvimento das regiões produtoras, com governança, transparência e responsabilidade fiscal. Transformar uma riqueza finita em capacidade permanente de desenvolvimento, reduzindo vulnerabilidades futuras e apoiando a transição energética do país.",
+    "pagina": 37
+   },
+   "820": {
+    "texto": "Transformar as lições acumuladas pelo Brasil em uma política de longo prazo para os combustíveis de baixa emissão, baseada em continuidade, inovação e aproveitamento das vantagens competitivas nacionais.",
+    "pagina": 37
+   },
+   "821": {
+    "texto": "Consolidar a liderança brasileira no biometano produzido a partir de resíduos do campo e das cidades, no etanol e nos biocombustíveis avançados de segunda geração, no biodiesel, no combustível sustentável de aviação e no hidrogênio de baixa emissão, promovendo desenvolvimento regional, segurança energética e novas oportunidades industriais. Regulamentar com celeridade e segurança jurídica os marcos legais já aprovados e ampliar o acesso desses produtos aos mercados internacionais. Reconhecer e certificar, ainda, o atributo renovável das redes elétricas brasileiras, incorporando-o ao planejamento energético e à comprovação da baixa intensidade de carbono dos combustíveis produzidos no país.",
+    "pagina": 37
+   },
+   "823": {
+    "texto": "Promover uma estratégia de mobilidade de baixa emissão que combine eletrificação, biocombustíveis e as vantagens produtivas do país. Estimular o desenvolvimento e a adoção de veículos híbridos flex, capazes de reduzir emissões, ampliar o uso do etanol e diminuir a dependência de baterias importadas em determinadas aplicações. Expandir a eletrificação do transporte público urbano e incentivar o uso de biometano e biodiesel nas frotas pesadas, bem como de combustível sustentável de aviação no transporte aéreo. Fortalecer uma transição tecnológica que gere empregos, agregue valor à produção nacional e reduza a dependência externa, sem impor ao Brasil uma escolha artificial entre eletrificação e bioenergia.",
+    "pagina": 37
+   },
+   "827": {
+    "texto": "Usar a energia limpa e barata para atrair indústrias, centros de dados e cadeias de baixo carbono voltadas à exportação: em vez de exportar só energia, exportar produtos feitos no Brasil com energia limpa. Unir as políticas de energia, indústria e comércio exterior e, enquanto a demanda nova amadurece, exportar excedentes pelas interconexões já existentes com países vizinhos, transformando em receita a energia que hoje se corta. Atrair também a indústria que a própria transição consome, de equipamentos de transmissão e transformadores a baterias, eletrolisadores e eletrônica de potência, usando os bancos públicos e os recursos obrigatórios de pesquisa do setor com metas tecnológicas e prazo definido, e não como proteção permanente. O país tem energia sobrando, barata e limpa, e uma fila global de demanda procurando exatamente isso: deixar essa janela passar seria o erro energético da década.",
+    "pagina": 38
+   },
+   "829": {
+    "texto": "Construir parcerias simultâneas e equilibradas com China, Estados Unidos, União Europeia, Índia, países árabes, África e América Latina para ampliar os mercados de energia limpa, combustíveis de baixa emissão e produtos industriais associados. Diversificar destinos comerciais, fontes de tecnologia e instrumentos de financiamento, reduzindo vulnerabilidades e evitando a substituição de uma dependência externa por outra.",
+    "pagina": 38
+   },
+   "830": {
+    "texto": "Posicionar o Brasil como parceiro estratégico nas cadeias globais da transição energética, com capacidade de agregar valor, atrair investimentos e negociar em melhores condições.",
+    "pagina": 38
+   },
+   "1056": {
+    "texto": "Mapear sistematicamente o subsolo e os recursos naturais do país, o potencial mineral, as reservas hídricas e a aptidão para irrigação, gerando a base de informação que orienta, com racionalidade e horizonte longo, as decisões de mineração, industrialização, agricultura e segurança hídrica.",
+    "pagina": 47
+   },
+   "1065": {
+    "texto": "Dar ao licenciamento prazos definidos, procedimentos simplificados para projetos padronizados e de baixo impacto, e coordenação unificada para os projetos estruturantes. O objetivo não é rebaixar a exigência ambiental: é trocar demora e incerteza por regra clara e rigor técnico. Previsibilidade de prazo é proteção ambiental bem-feita.",
+    "pagina": 47
+   },
+   "1107": {
+    "texto": "O Brasil será uma potência ambiental que transforma conservação em prosperidade. A política ambiental deixará de ser campo de polarização entre permissividade e punição indiscriminada.",
+    "pagina": 50
+   },
+   "1108": {
+    "texto": "O Estado será rigoroso contra desmatamento, grilagem, garimpo ilegal, incêndios criminosos e poluição, e parceiro de quem quer se regularizar, investir e produzir dentro da lei.",
+    "pagina": 50
+   },
+   "1118": {
+    "texto": "Reunir União, estados, municípios, setor produtivo, comunidades, ciência, sociedade civil, Judiciário e Ministério Público em instância permanente de implementação. Dar efetividade à cooperação federativa, pactuar prioridades por bioma e reduzir conflitos de competência.",
+    "pagina": 50
+   },
+   "1120": {
+    "texto": "Criar mutirão com orientação técnica e jurídica para pequenos produtores, agricultura familiar, comunidades e negócios que queiram se adequar. A sequência será orientação, suporte, financiamento, geração de ativos e fiscalização, sem anistia a dano doloso ou reincidência.",
+    "pagina": 50
+   },
+   "1122": {
+    "texto": "Implementar marco nacional com exigências proporcionais ao impacto, termos de referência padronizados, prazos públicos, coordenação entre órgãos e participação social. Processos complexos terão equipes multidisciplinares; baixo risco terá procedimentos simplificados; condicionantes serão monitoradas por resultado.",
+    "pagina": 50
+   },
+   "1124": {
+    "texto": "Integrar satélites, drones, inteligência artificial e bases fundiárias para monitorar desmatamento, incêndios, mineração, recuperação e uso da água. Digitalizar licenças, outorgas, autos e desembargos, com linguagem clara e rastreabilidade.",
+    "pagina": 50
+   },
+   "1128": {
+    "texto": "Acelerar análise e validação do CAR, Programas de Regularização Ambiental e compensações de reserva legal.",
+    "pagina": 51
+   },
+   "1129": {
+    "texto": "Corrigir sobreposições e fraudes, criar apoio a pequenos imóveis e transformar recuperação em atividade econômica com crédito, sementes, assistência e carbono.",
+    "pagina": 51
+   },
+   "1131": {
+    "texto": "Operacionalizar o sistema regulado brasileiro, integrar mercados voluntários, estabelecer padrões de mensuração e rastreabilidade e articular mecanismos internacionais. Receitas financiarão inovação, adaptação, infraestrutura verde e inclusão, com respeito a direitos territoriais e repartição de benefícios.",
+    "pagina": 51
+   },
+   "1133": {
+    "texto": "Remunerar conservação de água, solo, biodiversidade e carbono, articulando recursos públicos, privados e de mercados. Priorizar bacias críticas, corredores ecológicos, produtores responsáveis, povos indígenas, quilombolas e comunidades tradicionais, com contratos simples e verificação confiável.",
+    "pagina": 51
+   },
+   "1135": {
+    "texto": "Apoiar cadeias de fármacos, cosméticos, alimentos, óleos, fibras, sementes, madeira manejada e turismo de natureza. Investir em pesquisa, beneficiamento, logística, propriedade intelectual, crédito e repartição de benefícios, evitando exportação de matéria-prima sem conhecimento local.",
+    "pagina": 51
+   },
+   "1137": {
+    "texto": "Fortalecer fiscalização e inteligência financeira, recuperar terras públicas, responsabilizar financiadores e compradores de produtos ilegais e proteger agentes. Operações serão coordenadas com segurança pública e Receita, atingindo cadeias econômicas e não apenas executores na ponta.",
+    "pagina": 51
+   },
+   "1139": {
+    "texto": "Implantar sistema nacional integrado de risco, brigadas, manejo do fogo, equipamentos, alertas e responsabilização. Apoiar estados, municípios, propriedades rurais e comunidades, com prioridade a unidades de conservação, Pantanal, Cerrado e Amazônia.",
+    "pagina": 51
+   },
+   "1141": {
+    "texto": "Criar programa Água para o Futuro com proteção de nascentes, recuperação de matas ciliares, redução de perdas, reuso, reservação, recarga de aquíferos e infraestrutura resiliente. Fortalecer comitês de bacia, dados de disponibilidade e regras claras de alocação em escassez.",
+    "pagina": 51
+   },
+   "1143": {
+    "texto": "Atualizar planos nacionais e municipais de adaptação, mapear risco, implantar sistemas de alerta, obras de drenagem e contenção e soluções baseadas na natureza. Recursos serão condicionados a planejamento e manutenção, com prioridade a populações em áreas de risco.",
+    "pagina": 51
+   },
+   "1147": {
+    "texto": "Adotar políticas específicas para Amazônia, Cerrado, Caatinga, Mata Atlântica, Pantanal e Pampa. Regularizar unidades, atualizar planos de manejo, ampliar corredores, pesquisa, turismo e participação de comunidades, com financiamento estável e metas.",
+    "pagina": 51
+   },
+   "1149": {
+    "texto": "Padronizar ativos ambientais, ampliar títulos verdes e crédito para transição, exigir integridade e evitar greenwashing. Compras públicas considerarão ciclo de vida, eficiência energética, materiais reciclados e baixa emissão, criando demanda para soluções brasileiras.",
+    "pagina": 51
+   },
+   "1151": {
+    "texto": "Atuar nas negociações climáticas como fornecedor de soluções, defender reconhecimento da produção sustentável e responder a barreiras externas com ciência e rastreabilidade. O país cooperará internacionalmente sem aceitar tutela sobre seu território ou recursos.",
+    "pagina": 51
+   },
+   "1172": {
+    "texto": "O Brasil deixará de ser apenas exportador de minério bruto e construirá cadeias de processamento, materiais avançados e tecnologia. A mineração será responsável, segura e integrada ao desenvolvimento regional, com licenciamento previsível, fiscalização forte, dados geológicos, recuperação de áreas e participação das comunidades. Minerais críticos e terras raras serão tratados como ativos estratégicos de soberania, transição energética, defesa e indústria digital.",
+    "pagina": 53
+   },
+   "1173": {
+    "texto": "A política não fechará o país ao investimento estrangeiro, mas negociará acesso a recursos em troca de valor agregado, tecnologia, qualificação e fornecedores locais. A Agência Nacional de Mineração será fortalecida, barragens terão supervisão rigorosa e garimpo ilegal será enfrentado como cadeia criminosa e ambiental.",
+    "pagina": 53
+   },
+   "1182": {
+    "texto": "Definir minerais prioritários, vulnerabilidades, reservas, demanda industrial e metas de processamento, reciclagem e pesquisa. Integrar MME, MDIC, MCTI, Defesa, Itamaraty, BNDES, Finep, Serviço Geológico e setor privado em governança permanente.",
+    "pagina": 53
+   },
+   "1184": {
+    "texto": "Ampliar levantamentos geofísicos, geoquímicos e hidrogeológicos, digitalizar acervos e disponibilizar dados de qualidade para pesquisa e investimento. Priorizar áreas com potencial estratégico, respeitando territórios protegidos e consulta legal.",
+    "pagina": 53
+   },
+   "1186": {
+    "texto": "Recompor quadro, tecnologia e capacidade de fiscalização da Agência Nacional de Mineração. Implantar processos digitais, prazos, gestão por risco, transparência de títulos e beneficiários finais e cobrança eficiente de taxas e royalties.",
+    "pagina": 53
+   },
+   "1188": {
+    "texto": "Coordenar mineração, meio ambiente, patrimônio, água e uso do solo em processo único de gestão, sem reduzir exigências. Projetos terão termos de referência claros, análise proporcional ao risco, consulta às comunidades e acompanhamento de condicionantes durante todo o ciclo.",
+    "pagina": 53
+   },
+   "1192": {
+    "texto": "Usar crédito, inovação, infraestrutura e acordos de investimento para instalar separação, refino, metalurgia, química, produção de ligas, ímãs, cátodos, baterias e reciclagem. Incentivos terão prazo, metas e contrapartidas de tecnologia, emprego e exportação de maior valor.",
+    "pagina": 54
+   },
+   "1194": {
+    "texto": "Negociar com diferentes polos econômicos, evitando dependência de um único comprador ou fornecedor.",
+    "pagina": 54
+   },
+   "1195": {
+    "texto": "Acesso a recursos será associado a processamento no Brasil, formação de profissionais, pesquisa conjunta, transferência tecnológica e integração de empresas nacionais.",
+    "pagina": 54
+   },
+   "1197": {
+    "texto": "Fortalecer fiscalização independente, sensores, auditorias, planos de emergência, comunicação com comunidades e descaracterização de estruturas de maior risco. Responsabilidade financeira pelo fechamento e acidentes será garantida por seguros, garantias e fundos vinculados.",
+    "pagina": 54
+   },
+   "1198": {
+    "texto": "8. Mineração de baixo impacto e economia circular",
+    "pagina": 54
+   },
+   "1199": {
+    "texto": "Estimular reaproveitamento de rejeitos, recuperação de metais, eficiência hídrica e energética, eletrificação de equipamentos e redução de emissões. Desenvolver mineração urbana e reciclagem de eletrônicos, baterias e ímãs para diminuir dependência de extração primária.",
+    "pagina": 54
+   },
+   "1201": {
+    "texto": "Criar sistema de origem e cadeia de custódia para ouro e minerais de alto risco, integrar notas fiscais, imagens, logística e inteligência financeira e responsabilizar compradores e financiadores. Operações protegerão terras indígenas, rios e comunidades e removerão infraestrutura criminosa.",
+    "pagina": 54
+   },
+   "1203": {
+    "texto": "Oferecer assistência, cooperativismo, tecnologia limpa, saúde e formalização onde a atividade for legalmente possível. Eliminar mercúrio e práticas perigosas, condicionar acesso a mercado à rastreabilidade e fechar operações incompatíveis com proteção ambiental e direitos territoriais.",
+    "pagina": 54
+   },
+   "1205": {
+    "texto": "Exigir planos de desenvolvimento local, qualificação, fornecedores, moradia, saúde, infraestrutura e diversificação econômica. Royalties serão transparentes e vinculados a investimentos de longo prazo, evitando dependência fiscal e abandono após o fechamento da mina.",
+    "pagina": 54
+   },
+   "1207": {
+    "texto": "Todo projeto terá plano de fechamento, garantia financeira, recuperação progressiva e destinação futura da área. Passivos órfãos serão inventariados e tratados com fundos, responsabilização e parcerias, priorizando riscos à saúde e à água.",
+    "pagina": 54
+   },
+   "1209": {
+    "texto": "Criar centros de excelência em geologia, processamento mineral, materiais, reciclagem e segurança. Apoiar laboratórios, plantas-piloto e formação técnica e superior nas regiões produtoras, conectando universidades, Senai, empresas e centros internacionais.",
+    "pagina": 54
+   },
+   "1462": {
+    "texto": "Integrar grandes sistemas de oferta às redes locais: adutoras, reservatórios, distribuição rural, cisternas, poços regularizados, dessalinização onde for viável, reuso, irrigação eficiente e redução de perdas. Financiar operação e manutenção, fortalecer comitês de bacia, monitoramento e qualidade da água e garantir prioridade ao consumo humano e à produção sustentável.",
+    "pagina": 65
+   },
+   "1468": {
+    "texto": "Acelerar transmissão, armazenamento e gestão da rede para reduzir restrições à geração. Atrair indústrias intensivas em energia limpa, produção de equipamentos, hidrogênio e derivados de baixa emissão, combustível sustentável de aviação, data centers eficientes e eletrificação do transporte. Benefícios públicos serão condicionados a investimento, emprego, tecnologia, água responsável e integração local.",
+    "pagina": 65
+   },
+   "1583": {
+    "texto": "Combater a extração e o comércio de madeira ilegal por meio de rastreabilidade, fiscalização de transportadores e compradores, inteligência financeira e recuperação de terras públicas.",
+    "pagina": 70
+   },
+   "1584": {
+    "texto": "Elaborar planos territoriais de manejo sustentável, integrando inventário florestal, assistência técnica, concessões responsáveis, manejo comunitário e capacidade local de processamento.",
+    "pagina": 70
+   },
+   "1585": {
+    "texto": "Ampliar a produção e a industrialização de madeira legal e de produtos não madeireiros, assegurando que parte maior da renda e dos empregos permaneça na região.",
+    "pagina": 70
+   },
+   "1587": {
+    "texto": "Remunerar famílias, produtores e comunidades por serviços ambientais, conservação, recuperação, carbono, vigilância comunitária e produção sustentável.",
+    "pagina": 70
+   },
+   "1588": {
+    "texto": "Apoiar cadeias de alimentos, óleos, fibras, sementes, pesca, madeira manejada, artesanato e outros produtos da sociobiodiversidade, com crédito, assistência técnica, rastreabilidade e acesso a mercados.",
+    "pagina": 70
+   },
+   "1589": {
+    "texto": "Os instrumentos terão contratos simples, verificação de resultados e repartição justa dos benefícios.",
+    "pagina": 70
+   },
+   "1591": {
+    "texto": "Integrar satélites, dados meteorológicos, inteligência artificial, brigadas, bases aéreas e fluviais e manejo responsável do fogo para prever riscos e reduzir o tempo de resposta.",
+    "pagina": 70
+   },
+   "1592": {
+    "texto": "Fortalecer brigadas permanentes e comunitárias, logística de combate e coordenação entre União, estados e municípios.",
+    "pagina": 70
+   },
+   "1593": {
+    "texto": "Elaborar planos regionais para secas extremas, redução do nível dos rios, isolamento de comunidades, falta de água e interrupções nos sistemas de transporte, energia e saúde.",
+    "pagina": 70
+   },
+   "1603": {
+    "texto": "Levar energia confiável e conectividade significativa a comunidades, escolas, unidades de saúde e atividades produtivas.",
+    "pagina": 70
+   },
+   "1604": {
+    "texto": "Modernizar os sistemas isolados e substituir progressivamente a geração cara e poluente a óleo diesel por combinações adequadas de geração solar, armazenamento, bioenergia local, redes inteligentes e outras fontes renováveis.",
+    "pagina": 70
+   },
+   "1605": {
+    "texto": "Pequenas centrais hidrelétricas poderão ser consideradas onde houver viabilidade ambiental, hidrológica, econômica e social, sem adotar uma única tecnologia como solução uniforme para toda a região.",
+    "pagina": 70
+   },
+   "1606": {
+    "texto": "Priorizar transporte fluvial seguro, aeroportos regionais, infraestrutura digital e soluções de saneamento compatíveis com a dispersão da população.",
+    "pagina": 70
    }
   }
  }

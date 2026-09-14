@@ -9,9 +9,9 @@
   "assistencia_social"
  ],
  "origem": {
-  "arquivo": "assistencia-social-5.json",
-  "gerado_em": "2026-09-13T08:51:37Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "assistencia-social-6.json",
+  "gerado_em": "2026-09-14T07:04:46Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -53,37 +53,46 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Transferência de renda e Bolsa Família",
-   "proposta": "Manter os programas de transferência de renda existentes, como o Bolsa Família, aperfeiçoando sua gestão",
-   "n_concorda": 4,
+   "proposta": "Manter os programas de transferência de renda existentes para as famílias de baixa renda",
+   "n_concorda": 5,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      88,
-      151
-     ],
-     "nota": "Propõe manter, aperfeiçoar e ampliar as políticas de proteção social"
-    },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       295,
       685
      ],
-     "nota": "Compromisso explícito de não retirar benefícios de quem depende"
+     "nota": "Manter com aperfeiçoamento da gestão e combate a fraudes"
     },
-    "augusto-cury": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      1621
+      151
      ],
-     "nota": "Manteria o programa, mas como renda para impulsionar empreendedorismo"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      23,
+      1368,
+      1381
+     ],
+     "nota": ""
     },
     "romeu-zema": {
      "posicao": "concorda",
@@ -91,23 +100,31 @@
       778,
       779
      ],
-     "nota": "Mantém o Bolsa Família como programa único concentrador"
+     "nota": "Mantém o Bolsa Família como programa concentrador das transferências"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1621
+     ],
+     "nota": "Mantém o Bolsa Família, mas como renda para impulsionar empreendedorismo"
     },
     "renan-santos": {
      "posicao": "discorda",
      "blocos": [
       96,
       276,
-      281
+      281,
+      285
      ],
-     "nota": "Defende substituição integral do Bolsa Família"
+     "nota": "Propõe extinguir o Bolsa Família e substituí-lo"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Transferência de renda e Bolsa Família",
-   "proposta": "Substituir o Bolsa Família por um programa de frentes de trabalho remuneradas voltadas a projetos de bem público para beneficiários em idade economicamente ativa",
+   "proposta": "Substituir o Bolsa Família por frentes de trabalho remuneradas para beneficiários em idade economicamente ativa",
    "n_concorda": 1,
    "posicoes": {
     "renan-santos": {
@@ -118,28 +135,58 @@
       281,
       285
      ],
-     "nota": "Chamado de Frentes Cidadãs, reforma total do assistencialismo"
+     "nota": ""
     },
     "flavio-bolsonaro": {
      "posicao": "discorda",
      "blocos": [
       685
      ],
-     "nota": "Compromete-se a não tirar a ajuda de quem depende dela"
+     "nota": "Compromisso de não retirar o benefício de quem depende dele"
     },
     "lula": {
      "posicao": "discorda",
      "blocos": [
       151
      ],
-     "nota": "Propõe manter e ampliar os programas de transferência de renda"
+     "nota": "Manter, aperfeiçoar e ampliar a transferência de renda"
+    },
+    "ronaldo-caiado": {
+     "posicao": "discorda",
+     "blocos": [
+      1368,
+      1381
+     ],
+     "nota": "Transferência de renda permanece como direito"
+    },
+    "romeu-zema": {
+     "posicao": "discorda",
+     "blocos": [
+      779
+     ],
+     "nota": "Mantém o Bolsa Família, ainda que com condicionalidades"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Transferência de renda e Bolsa Família",
-   "proposta": "Condicionar a permanência de adultos aptos ao trabalho no programa de transferência de renda à busca de emprego, estudo ou qualificação, com suspensão do benefício para quem recusar oferta formal de trabalho sem justificativa",
+   "proposta": "Ampliar as políticas de proteção social e de transferência de renda para quem mais necessita",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      151
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Transferência de renda e Bolsa Família",
+   "proposta": "Condicionar a permanência de adultos aptos no benefício à busca de emprego, estudo ou qualificação, com suspensão para quem recusar oferta formal de trabalho",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -148,15 +195,54 @@
       770,
       771
      ],
-     "nota": "Exclui responsáveis por cuidados de crianças, idosos e PcD"
+     "nota": "Exceção para responsáveis por crianças pequenas, idosos e PcD"
     }
    }
   },
   {
-   "id": "p4",
+   "id": "p5",
    "subtema": "Transferência de renda e Bolsa Família",
-   "proposta": "Premiar financeiramente as famílias que deixarem o programa social após superar o limite de renda",
+   "proposta": "Criar regra de transição que evite a perda abrupta do benefício de quem se formaliza, emprega-se ou aumenta a renda",
    "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1374,
+      1381
+     ],
+     "nota": "Redução gradual conectada a qualificação, creche e intermediação"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1621,
+      1624
+     ],
+     "nota": "Não punir por tempo determinado quem assina carteira ou abre microempresa"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Transferência de renda e Bolsa Família",
+   "proposta": "Garantir retorno imediato e sem fila ao benefício após o término do seguro-desemprego, mantida a elegibilidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      691
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Transferência de renda e Bolsa Família",
+   "proposta": "Conceder prêmio em dinheiro de R$ 5 mil às famílias que deixarem o programa após superar o limite de renda",
+   "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -164,61 +250,77 @@
       772,
       773
      ],
-     "nota": "Prêmio de R$ 5 mil por família"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1624
-     ],
-     "nota": "Prêmio na forma de incentivos e juros mais baixos"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p5",
+   "id": "p8",
    "subtema": "Transferência de renda e Bolsa Família",
-   "proposta": "Garantir que a formalização no emprego ou a abertura de microempresa não implique perda imediata e definitiva do benefício, com período de transição ou retorno garantido ao programa",
-   "n_concorda": 2,
+   "proposta": "Unificar os programas federais de transferência de renda que atendem os mesmos públicos em um único programa",
+   "n_concorda": 1,
    "posicoes": {
-    "augusto-cury": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      1621,
-      1624
+      190,
+      778,
+      779
      ],
-     "nota": "Não punição por assinar carteira ou abrir empresa por prazo determinado"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      691
-     ],
-     "nota": "Retorno imediato e sem fila ao benefício após o seguro-desemprego"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p6",
-   "subtema": "Inclusão produtiva e porta de saída",
-   "proposta": "Criar trilhas de qualificação profissional, intermediação de mão de obra e inclusão produtiva voltadas aos beneficiários de programas sociais como porta de saída da pobreza",
+   "id": "p9",
+   "subtema": "Transferência de renda e Bolsa Família",
+   "proposta": "Unificar os critérios de pobreza adotados nas políticas públicas de assistência social",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      776,
+      777
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Articular a proteção social a qualificação profissional, intermediação de mão de obra e inclusão produtiva, como caminho de saída da pobreza",
    "n_concorda": 5,
    "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      295,
-      691
-     ],
-     "nota": "Prioridade do beneficiário em todas as ações de trabalho do Estado"
-    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
       760,
+      764,
+      768,
       769
      ],
-     "nota": "Porta de saída estruturada ligada a capacitação e emprego"
+     "nota": "Programa Casas da Cidadania como estrutura da porta de saída"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      295,
+      691,
+      692
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      23,
+      123,
+      1368,
+      1369
+     ],
+     "nota": "Integra também moradia, cuidado, crédito e documentação"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -226,29 +328,22 @@
       200,
       904
      ],
-     "nota": "Ampliação dos programas de inclusão produtiva"
+     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       151
      ],
-     "nota": "Inclusão produtiva como parte do combate às desigualdades"
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      276
-     ],
-     "nota": "Inserção dos beneficiários no mercado formal via frentes de trabalho"
+     "nota": "Inclusão produtiva como parte do combate às desigualdades, sem porta de saída condicionada"
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Inclusão produtiva e porta de saída",
-   "proposta": "Criar equipamentos e planos familiares individualizados de desenvolvimento social, integrando capacitação, emprego, renda, moradia e acesso a serviços a partir de diagnóstico de cada família",
-   "n_concorda": 1,
+   "id": "p11",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Oferecer a cada família em alta vulnerabilidade um diagnóstico individualizado, plano de desenvolvimento e acompanhamento por equipe de referência",
+   "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -256,31 +351,74 @@
       768,
       769
      ],
-     "nota": "Programa Casas da Cidadania"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1379
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Inclusão produtiva e porta de saída",
-   "proposta": "Incorporar aos programas sociais ações de cuidado emocional, autoestima e protagonismo, além da transferência de renda",
+   "id": "p12",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Dar prioridade a beneficiários de programas sociais nos programas de primeiro emprego, qualificação e intermediação de mão de obra",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      691
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Oferecer crédito em condições facilitadas, com juros menores e acompanhamento, a famílias de baixa renda que empreendem",
+   "n_concorda": 2,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1417
+     ],
+     "nota": "Capital semente com formação, mentoria e prioridade a mulheres e jovens"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1624
+     ],
+     "nota": "Incentivos e juros mais baixos a beneficiários que se formalizam"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Incorporar aos programas sociais dimensões de dignidade, pertencimento e protagonismo, além da transferência monetária",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      198,
       200
      ],
-     "nota": "Baseado na Gestão da Emoção"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p9",
-   "subtema": "Cadastro, focalização e fraudes",
-   "proposta": "Combater fraudes e corrigir distorções nos programas sociais para que o benefício chegue a quem realmente precisa",
-   "n_concorda": 2,
+   "id": "p15",
+   "subtema": "Cadastros, gestão e fraudes",
+   "proposta": "Combater fraudes e pagamentos indevidos nos programas sociais com cruzamento de bases de dados e atualização cadastral",
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -289,21 +427,30 @@
       783,
       784
      ],
-     "nota": "Cruzamento de bases federais e atualização cadastral pelos CRAS"
+     "nota": "Incentivar os CRAS a manter o CadÚnico atualizado"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       685
      ],
-     "nota": "Combate a fraudes sem retirar benefícios de quem precisa"
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      274,
+      275,
+      1381
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Cadastro, focalização e fraudes",
-   "proposta": "Modernizar o CadÚnico integrando fontes alternativas de dados, como consumo de energia, para aferir com mais precisão a vulnerabilidade das famílias",
+   "id": "p16",
+   "subtema": "Cadastros, gestão e fraudes",
+   "proposta": "Modernizar o CadÚnico integrando fontes alternativas de dados, como consumo de energia, para aferir a real vulnerabilidade",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -318,66 +465,100 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Cadastro, focalização e fraudes",
-   "proposta": "Unificar os programas federais de transferência de renda dirigidos ao mesmo público em um único programa",
+   "id": "p17",
+   "subtema": "Cadastros, gestão e fraudes",
+   "proposta": "Criar sistema nacional que integre Cadastro Único, SUAS, saúde, educação, trabalho e habitação, com governança e proteção de dados",
    "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      190,
-      778,
-      779
+      1378,
+      1379
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p12",
-   "subtema": "Cadastro, focalização e fraudes",
-   "proposta": "Unificar os critérios de pobreza adotados nas políticas públicas de assistência social, definindo com clareza o público-alvo dos programas",
+   "id": "p18",
+   "subtema": "Cadastros, gestão e fraudes",
+   "proposta": "Concentrar o controle em fraudes e desvios sem criar barreiras nem constranger o beneficiário vulnerável",
    "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      776,
-      777
+      275,
+      1381
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p13",
+   "id": "p19",
    "subtema": "Fome e segurança alimentar",
-   "proposta": "Ampliar as políticas de combate à fome e de garantia de acesso a alimentação adequada e saudável",
+   "proposta": "Fortalecer equipamentos públicos de alimentação, como restaurantes populares, cozinhas comunitárias e bancos de alimentos",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      507,
-      511
+      215
      ],
-     "nota": "Continuidade das políticas que tiraram o país do Mapa da Fome"
+     "nota": "Cozinhas solidárias e restaurantes populares como infraestrutura de cuidados"
     },
-    "augusto-cury": {
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      3111,
-      3128
+      1392
      ],
-     "nota": "Ênfase na liderança brasileira no combate à fome mundial"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p14",
+   "id": "p20",
    "subtema": "Fome e segurança alimentar",
-   "proposta": "Criar um fundo internacional de erradicação da fome financiado por 0,5% do comércio global e 2% da indústria mundial de armamentos, com 80% dos recursos para ações imediatas de alimentação e nutrição",
+   "proposta": "Fortalecer a alimentação escolar, as compras da agricultura familiar e a suplementação nutricional quando necessária",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1392
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Fome e segurança alimentar",
+   "proposta": "Avançar na garantia de alimentação saudável e de qualidade à população",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      511
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1392
+     ],
+     "nota": "Enfrenta simultaneamente desnutrição, insegurança alimentar e obesidade"
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Fome e segurança alimentar",
+   "proposta": "Criar fundo internacional de erradicação da fome financiado por 0,5% do comércio global e 2% da indústria de armamentos, com 80% dos recursos para ações imediatas contra a fome",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -392,25 +573,32 @@
    }
   },
   {
-   "id": "p15",
-   "subtema": "Fome e segurança alimentar",
-   "proposta": "Fomentar equipamentos públicos de alimentação e cuidado comunitário, como cozinhas solidárias, restaurantes populares e lavanderias públicas",
-   "n_concorda": 1,
+   "id": "p23",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Fortalecer o SUAS com mais recursos, expansão da rede de atendimento e valorização dos trabalhadores do cuidado",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      215
+      210
      ],
-     "nota": ""
+     "nota": "Foco em proteção social básica e especial e governança interfederativa"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1419
+     ],
+     "nota": "Previsibilidade do cofinanciamento e formação permanente das equipes"
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "SUAS e proteção social",
-   "proposta": "Fortalecer o SUAS como política permanente de Estado, com mais recursos e expansão e modernização da rede de proteção social básica e especial",
-   "n_concorda": 1,
+   "id": "p24",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Integrar a proteção social ao enfrentamento de desastres e emergências climáticas, com protocolos de atendimento rápido às famílias atingidas",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -418,14 +606,21 @@
       210
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1413
+     ],
+     "nota": "Cadastro e protocolo próprios, integrados à Defesa Civil"
     }
    }
   },
   {
-   "id": "p17",
-   "subtema": "SUAS e proteção social",
-   "proposta": "Integrar o SUAS à agenda de enfrentamento de desastres e mudanças climáticas e criar agenda nacional de proteção social para povos e comunidades tradicionais",
-   "n_concorda": 1,
+   "id": "p25",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Consolidar agenda de proteção social voltada a povos indígenas, quilombolas e comunidades tradicionais",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -433,36 +628,112 @@
       210
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Política de cuidados",
-   "proposta": "Implementar e dar escala à Política Nacional de Cuidados, apoiando espaços de acolhida de crianças de 3 a 12 anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      215
+      23
      ],
-     "nota": "Cuidotecas para liberar o tempo das mulheres cuidadoras"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p19",
+   "id": "p26",
    "subtema": "População em situação de rua",
-   "proposta": "Proibir barracas e abrigos improvisados em calçadas, praças e espaços públicos e facilitar sua remoção, com encaminhamento das pessoas a abrigos e serviços de saúde e assistência",
+   "proposta": "Adotar política nacional para a população em situação de rua baseada em moradia primeiro, articulada a saúde mental, tratamento de dependência, documentação e trabalho",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1407
+     ],
+     "nota": "Rejeita remoções sem solução e prevê equipes de rua"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "População em situação de rua",
+   "proposta": "Proibir barracas e abrigos improvisados em calçadas e praças, facilitando sua remoção com encaminhamento das pessoas a abrigos e serviços",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      761,
       787,
       788
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Política de cuidados",
+   "proposta": "Ampliar a política pública de cuidados, incluindo cuidado infantil, articulada à proteção social e à autonomia das mulheres",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      211,
+      215
+     ],
+     "nota": "Implementação e escala da Política Nacional de Cuidados"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      23,
+      123
+     ],
+     "nota": "Cuidado infantil como condição para inclusão produtiva"
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Política de cuidados",
+   "proposta": "Apoiar cuidotecas para crianças de 3 a 12 anos e infraestruturas comunitárias de cuidado, como lavanderias públicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      215
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Públicos prioritários da proteção social",
+   "proposta": "Transformar a prioridade absoluta de crianças e adolescentes em critério de orçamento, gestão e avaliação das políticas sociais",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      23,
+      123
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Públicos prioritários da proteção social",
+   "proposta": "Adotar políticas de proteção social com recortes específicos para mulheres, pessoas negras, idosos, pessoas com deficiência e territórios vulneráveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      23
      ],
      "nota": ""
     }
@@ -471,10 +742,6 @@
  ],
  "blocos": {
   "augusto-cury": {
-   "198": {
-    "texto": "A dor social não pode ser analisada apenas por estatísticas. Ela precisa ser compreendida também como ferida psíquica. A miséria não rouba apenas comida da mesa; rouba autoestima, esperança, repertório emocional e capacidade de sonhar. Por isso, uma política pública inteligente precisa cuidar da renda, mas também da emoção.",
-    "pagina": 14
-   },
    "200": {
     "texto": "A Gestão da Emoção propõe que programas sociais não sejam apenas transferência de renda, mas também transferência de dignidade, capacitação, pertencimento e protagonismo. A ferramenta central aqui é transformar o cidadão em autor da própria história. Proteger os vulneráveis não deve significar aprisioná-los na dependência, mas ajudá-los a reconstruir autonomia, autoestima e esperança.",
     "pagina": 14
@@ -490,10 +757,6 @@
    "1624": {
     "texto": "Bolsa Família não será punida se assinar a carteira ou se abrir uma microempresa, por determinado tempo. Ao contrário, serão premiados, com incentivos e juros mais baixos.",
     "pagina": 99
-   },
-   "3111": {
-    "texto": "O Brasil como o maior exportador mundial de alimentos deve ter um líder que não apenas se preocupa com o combate da fome em nosso país, mas deve ter o dever moral de propor soluções para combater a fome mundial.",
-    "pagina": 157
    },
    "3120": {
     "texto": "Destinar 0,5% do comércio global e 2% da indústria mundial de armamentos para a criação de um Fundo Internacional de Erradicação da Fome.",
@@ -520,13 +783,13 @@
    "691": {
     "texto": "Por isso, o beneficiário de programa social terá prioridade em todas as ações do Estado voltadas ao trabalho: prioridade nos programas de primeiro emprego, nas ações de qualificação profissional e na intermediação de mão de obra. Criaremos uma trilha de qualificação e intermediação desenhada especialmente para quem recebe o benefício, para que a saída não seja um salto no escuro, mas um caminho com apoio em cada passo. E garantiremos o retorno imediato e sem fila ao benefício após o seguro-desemprego, mantidas as condições de elegibilidade, para que ninguém tenha medo de tentar um emprego e acabar desamparado se não der certo.",
     "pagina": 43
+   },
+   "692": {
+    "texto": "Nosso foco é a superação da armadilha da pobreza, não a sua administração. Toda política deste governo será desenhada com uma pergunta em mente: isso ajuda a pessoa a depender menos do Estado amanhã do que ela depende hoje? Porque o objetivo de um bom governo não é ter mais gente na fila do auxílio. É ter cada vez mais brasileiros que conquistaram a própria autonomia e não precisam mais dele.",
+    "pagina": 43
    }
   },
   "lula": {
-   "88": {
-    "texto": "Alcançamos a maior renda real do trabalho e o menor desemprego da série histórica. O Bolsa Família foi recriado e expandido com benefícios especiais para crianças e adolescentes. A desigualdade, medida pelo coeficiente de Gini, atingiu o menor patamar histórico de 0,504, enquanto a pobreza extrema recuou para o menor nível da série de 4,6% da população.",
-    "pagina": 12
-   },
    "151": {
     "texto": "O combate às desigualdades requer justiça tributária, fortalecimento do Estado de bem-estar social, valorização do salário-mínimo, inclusão produtiva, educação, saúde, programas eficientes de transferência de renda. Por isso, devemos manter, aperfeiçoar e ampliar as políticas de proteção social para quem mais necessita.",
     "pagina": 18
@@ -535,13 +798,13 @@
     "texto": "Desde o início do atual mandato, vimos trabalhando para consolidar o SUAS como política estratégica do desenvolvimento social brasileiro, assegurando seu fortalecimento institucional, a valorização do controle social, o aprimoramento da governança interfederativa e sua sustentabilidade como política permanente de Estado. No próximo mandato, avançaremos ainda mais no fortalecimento da Proteção Social Básica e da Proteção Social Especial de média e alta complexidade, seja com mais recursos para atendimento às populações, seja por meio da expansão e modernização da rede de atendimento. Buscaremos também consolidar uma agenda nacional de proteção social para povos e comunidades tradicionais e integrar o SUAS à agenda de enfrentamento das mudanças climáticas e dos desastres, para amplificar a capacidade de o Estado proteger famílias atingidas por eventos extremos.",
     "pagina": 25
    },
+   "211": {
+    "texto": "A estratégia dos cuidados é a nova fronteira de um Estado de Bem-estar Social para enfrentar as desigualdades e orientar o desenvolvimento. Os investimentos em cuidados são fundamentais para responder aos desafios do envelhecimento da população, às transformações do mundo do trabalho e às necessidades das famílias. Por isso, o governo Lula instituiu a Política Nacional de Cuidados, que",
+    "pagina": 25
+   },
    "215": {
     "texto": "Começamos a implementar as ações no âmbito desta política, que, no novo mandato, serão fortalecidas, e ganharão escala e sustentabilidade. Apoiaremos as Cuidotecas, espaços de acolhida de crianças de 3 a 12 anos, que liberam o tempo das mulheres responsáveis pelo cuidado das crianças. Fomentaremos a construção de infraestruturas que ampliam os cuidados indiretos e comunitários, como as lavanderias públicas, as cozinhas solidárias e os restaurantes populares.",
     "pagina": 26
-   },
-   "507": {
-    "texto": "O Brasil saiu do Mapa da Fome – cumprimos um dos mais importantes compromissos políticos assumidos na eleição de 2022. Temos, hoje, o menor percentual de pessoas em insegurança alimentar severa da história. Estas conquistas devem-se às políticas de garantia de renda e elevação do poder de compra das famílias, como o Bolsa Família e a política de valorização do saláriomínimo; às medidas para ampliar o acesso à alimentação, como a recuperação do valor do repasse para a alimentação escolar e a retomada do PAA-Programa de Aquisição de Alimentos da agricultura familiar; ao fomento à produção de alimentos e a retomada dos estoques reguladores, fundamentais para reduzir a inflação de alimentos. E foram obtidas com a participação da sociedade civil e dos movimentos sociais, uma vez que restauramos a governança e as instâncias de participação que haviam sido abolidas ou fragilizadas no mandato anterior.",
-    "pagina": 58
    },
    "511": {
     "texto": "Latina. Daremos seguimento a estas iniciativas no âmbito internacional e, internamente, vamos avançar ainda mais na garantia de alimentação saudável",
@@ -579,8 +842,8 @@
     "texto": "Por isso, sem descuidar de quem está em situação de vulnerabilidade, é preciso criar uma porta de saída estruturada, que conecte os beneficiários dos programas sociais a oportunidades de capacitação e trabalho para superarmos a pobreza no Brasil.",
     "pagina": 62
    },
-   "761": {
-    "texto": "O país também observa o crescimento rápido da população em situação de rua, que já passa de 388 mil brasileiros. Essas pessoas, que tiveram suas vidas destruídas por questões como ruptura familiar, dependência química, falta de moradia e de desenvolvimento econômico, precisam ser tratadas com dignidade, mas o poder público também não pode aceitar a desordem e a insegurança nas cidades.",
+   "764": {
+    "texto": "Enfrentar esse conjunto de problemas exige uma agenda que conecte proteção social, inclusão produtiva e moradia digna, além de serviços públicos capazes de proteger os mais vulneráveis. O assistencialismo sem uma porta de saída não resolve os problemas do país. O Brasil precisa de políticas que ofereçam uma oportunidade de autonomia, geração de renda e superação da pobreza. Por isso, para acabar com a pobreza no Brasil de forma definitiva, apresentamos soluções em cinco eixos centrais:",
     "pagina": 62
    },
    "768": {
@@ -646,6 +909,68 @@
    "788": {
     "texto": "Facilitar a remoção de moradias irregulares, como barracas e abrigos improvisados instalados em espaços públicos, para preservar a ordem urbana, garantindo o encaminhamento das pessoas para abrigos e para os serviços de saúde e assistência social.",
     "pagina": 64
+   }
+  },
+  "ronaldo-caiado": {
+   "23": {
+    "texto": "A proteção social combinará acolhimento e emancipação. Manteremos a rede de transferência de renda para quem precisa, mas conectaremos benefícios a qualificação, cuidado infantil, inclusão produtiva, habitação, saúde e educação. A prioridade absoluta de crianças e adolescentes deixará de ser apenas uma declaração constitucional para se tornar critério de orçamento, gestão e avaliação. Mulheres, pessoas negras, idosos, pessoas com deficiência, povos indígenas, comunidades quilombolas e famílias em territórios vulneráveis terão políticas que reconheçam barreiras concretas e produzam autonomia, segurança e igualdade de oportunidades.",
+    "pagina": 2
+   },
+   "123": {
+    "texto": "• Integrar proteção social a qualificação, trabalho, moradia e cuidado, com prioridade absoluta à infância.",
+    "pagina": 7
+   },
+   "274": {
+    "texto": "7. Qualificar a gestão dos benefícios sociais",
+    "pagina": 13
+   },
+   "275": {
+    "texto": "Integrar bases, corrigir pagamentos indevidos, atualizar cadastros e preservar o acesso de quem tem direito, concentrando o controle em fraudes e desvios, não em barreiras ao cidadão vulnerável.",
+    "pagina": 13
+   },
+   "1368": {
+    "texto": "A proteção social será organizada para acolher quem enfrenta pobreza, fome, violência, deficiência, velhice desassistida ou perda de renda e, ao mesmo tempo, construir caminhos de autonomia. Transferência de renda continuará sendo direito de quem precisa, mas será integrada a educação, saúde, moradia, cuidado, qualificação, crédito, documentação e trabalho.",
+    "pagina": 61
+   },
+   "1369": {
+    "texto": "O objetivo é romper ciclos de pobreza, não administrar vulnerabilidade indefinidamente.",
+    "pagina": 61
+   },
+   "1374": {
+    "texto": "Transferências de renda reduziram privações e devem ser preservadas, mas a porta de saída permanece frágil. Qualificação muitas vezes não corresponde às vagas, mães não dispõem de creche, pessoas com deficiência enfrentam barreiras, jovens não encontram primeira experiência e pequenos empreendedores carecem de capital, mercado e acompanhamento. Benefícios podem ser perdidos de forma abrupta quando a renda melhora, desestimulando formalização.",
+    "pagina": 61
+   },
+   "1378": {
+    "texto": "1. Sistema Nacional de Gestão Social Integrada",
+    "pagina": 61
+   },
+   "1379": {
+    "texto": "Integrar Cadastro Único, SUAS, saúde, educação, trabalho e habitação com governança, consentimento e proteção de dados. Cada família em alta vulnerabilidade terá diagnóstico, plano de acompanhamento e equipe de referência, evitando duplicidade, lacunas e peregrinação.",
+    "pagina": 61
+   },
+   "1381": {
+    "texto": "Preservar os programas de transferência de renda, atualizar cadastros e combater fraude sem constranger beneficiários. Criar regra de transição para quem ingressa no trabalho formal ou amplia renda, reduzindo benefício gradualmente e conectando a qualificação, creche e intermediação.",
+    "pagina": 61
+   },
+   "1392": {
+    "texto": "Fortalecer merenda, compras da agricultura familiar, bancos de alimentos, restaurantes populares, cozinhas comunitárias e suplementação quando necessária. A política combaterá simultaneamente desnutrição, insegurança alimentar e obesidade, com foco em qualidade e educação alimentar.",
+    "pagina": 62
+   },
+   "1407": {
+    "texto": "Adotar estratégia de moradia primeiro quando adequada, combinada a saúde mental, tratamento de dependência, documentação, trabalho e proteção. Diferenciar perfis, fortalecer equipes de rua e pactuar responsabilidades municipais, evitando abandono e remoções sem solução.",
+    "pagina": 62
+   },
+   "1413": {
+    "texto": "Criar cadastro e protocolo para transferência rápida, abrigo, alimentação, documentação e reconstrução de vínculos após enchentes, secas, incêndios e epidemias. A integração com Defesa Civil permitirá antecipar vulnerabilidades e proteger crianças, idosos e pessoas com deficiência.",
+    "pagina": 62
+   },
+   "1417": {
+    "texto": "Oferecer pequeno capital associado a formação, plano, mentoria, formalização e acesso a mercado. O sucesso será medido por renda e sobrevivência do negócio, não pela quantidade de cartões ou contratos. Mulheres e jovens terão prioridade em territórios vulneráveis.",
+    "pagina": 63
+   },
+   "1419": {
+    "texto": "Dar previsibilidade ao cofinanciamento, qualificar Cras, Creas e acolhimento, reduzir burocracia e criar formação permanente. Assistentes sociais, psicólogos, educadores e cuidadores terão segurança, protocolos e sistemas simples para concentrar-se no atendimento.",
+    "pagina": 63
    }
   }
  }

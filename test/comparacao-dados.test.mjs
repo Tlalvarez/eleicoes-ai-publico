@@ -29,7 +29,7 @@ test('toda página de presidente exportada está em paginas.json e cumpre o cont
     const d = comparacao('presidente', null, id);
     assert.equal(d.contrato, CONTRATO);
     assert.equal(d.pagina, id);
-    assert.ok(d.candidatos.length >= 2 && d.candidatos.length <= 5, `${id}: ${d.candidatos.length} candidatos`);
+    assert.ok(d.candidatos.length >= 2 && d.candidatos.length <= 6, `${id}: ${d.candidatos.length} candidatos`);
     const ordem = d.candidatos.map((c) => c.slug);
     const nomes = d.candidatos.map((c) => c.nome);
     assert.deepEqual(nomes, nomes.slice().sort((a, b) => a.localeCompare(b, 'pt-BR', { sensitivity: 'base' })), `${id}: colunas fora da ordem alfabética`);

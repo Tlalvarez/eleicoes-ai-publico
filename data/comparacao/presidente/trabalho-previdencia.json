@@ -11,9 +11,9 @@
   "cooperativismo"
  ],
  "origem": {
-  "arquivo": "trabalho-previdencia-5.json",
-  "gerado_em": "2026-09-13T08:44:22Z",
-  "exportado_em": "2026-09-13T20:45:38Z"
+  "arquivo": "trabalho-previdencia-6.json",
+  "gerado_em": "2026-09-14T06:56:06Z",
+  "exportado_em": "2026-09-14T08:29:37Z"
  },
  "candidatos": [
   {
@@ -55,22 +55,242 @@
    "numero": "30",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280016919931",
    "foto": "/images/candidatos/cards/romeu-zema.webp"
+  },
+  {
+   "slug": "ronaldo-caiado",
+   "nome": "Ronaldo Caiado",
+   "partido": "PSD",
+   "numero": "55",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/280017106566",
+   "foto": "/images/candidatos/cards/ronaldo-caiado.webp"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Reduzir o custo de contratação e os encargos sobre a folha de pagamento para ampliar o emprego formal",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Ampliar programas de qualificação profissional alinhados às demandas reais do mercado de trabalho",
+   "n_concorda": 5,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      299,
+      300,
+      301,
+      302
+     ],
+     "nota": "Foco em ensino técnico direcionado a vagas abertas"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": "Integração das políticas de qualificação ao desenvolvimento econômico"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      347,
+      1383
+     ],
+     "nota": "Trilhas por perfil, da alfabetização à formação técnica"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      809
+     ],
+     "nota": "Qualificação voltada ao trabalho no campo"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1628,
+      1881
+     ],
+     "nota": "Capacitação técnica dentro da formação empreendedora"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Condicionar repasses e a remuneração de parceiros da qualificação a metas de empregabilidade e inserção efetiva",
    "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
+      302
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1383
+     ],
+     "nota": "Pagamento por conclusão e inserção sustentada, não por matrícula"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Financiar cursos técnicos por meio de vouchers, em parceria com o setor privado e o Sistema S",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      302
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Modernizar a intermediação de mão de obra com ferramentas digitais que conectem vagas e trabalhadores",
+   "n_concorda": 3,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      703
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      347,
+      1531
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Criar banco nacional de vagas conectado diretamente aos sistemas de RH das empresas",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      703
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Expandir na rede SINE plataforma pública nacional de empregabilidade com inteligência artificial, integrando vagas, cursos, certificações e orientação profissional",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Reconstruir e fortalecer o Sistema Público de Emprego, Trabalho e Renda",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Criar políticas de requalificação e transição profissional para categorias afetadas pela automação e pela inteligência artificial",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      663
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      347
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1539,
+      1542,
+      1628
+     ],
+     "nota": "Preparação de cem tipos de profissões para a nova economia"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Qualificação profissional e intermediação",
+   "proposta": "Criar formação específica para a economia do cuidado e a capacitação de cuidadores",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      216
+     ],
+     "nota": "Programa com currículos inclusivos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1383
+     ],
+     "nota": "Economia do cuidado como trilha formativa"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Reduzir o custo de contratar para ampliar o emprego formal e retirar trabalhadores da informalidade",
+   "n_concorda": 3,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      294,
       295,
-      296,
-      297,
-      298
+      297
      ],
      "nota": ""
     },
@@ -80,13 +300,20 @@
       695
      ],
      "nota": "Redução gradual e explicitamente sem retirada de direitos"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      347
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p2",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Zerar os encargos sobre o equivalente a um salário mínimo na contratação de quem está há mais de um ano na informalidade",
+   "id": "p11",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Zerar encargos sobre o equivalente a um salário mínimo na contratação de quem está há mais de um ano na informalidade",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -99,15 +326,14 @@
    }
   },
   {
-   "id": "p3",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Extinguir contribuições sobre a folha sem relação com o trabalho (como o repasse ao INCRA) e simplificar obrigações acessórias trabalhistas",
+   "id": "p12",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Extinguir contribuições sobre a folha sem relação com o trabalho, como o repasse ao INCRA, e simplificar obrigações acessórias",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      297,
       298
      ],
      "nota": ""
@@ -115,9 +341,69 @@
    }
   },
   {
-   "id": "p4",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Adotar a prevalência do negociado sobre o legislado nas condições de trabalho",
+   "id": "p13",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Dar continuidade à política de valorização real do salário mínimo",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      657
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Vincular crédito público, incentivos fiscais, assistência técnica e compras governamentais a compromissos de geração de empregos de qualidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      657
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Estimular ocupações sociais em atividades de interesse coletivo (conservação ambiental, cultura, patrimônio, esporte, cuidado)",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Emprego, custo do trabalho e informalidade",
+   "proposta": "Garantir que beneficiário de programa social que aceite emprego, inclusive temporário, possa retornar ao benefício se precisar",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      809
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Adotar a prevalência do negociado sobre o legislado nas relações de trabalho",
    "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
@@ -133,14 +419,14 @@
      "blocos": [
       702
      ],
-     "nota": "Negociação direta empresa-trabalhador dentro da lei, com jornada flexível"
+     "nota": "Negociação direta dentro da lei, com jornada flexível"
     }
    }
   },
   {
-   "id": "p5",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Criar um regime de contratação alternativo à CLT, de adesão consensual entre empregador e trabalhador",
+   "id": "p18",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Criar regime de contratação alternativo à CLT, com livre ajuste de remuneração variável, periodicidade de pagamento, jornada diária acima de 8 horas dentro do limite semanal, dias trabalhados e divisão de férias",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -156,24 +442,9 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Permitir a livre negociação da jornada diária acima de 8 horas, do número de dias trabalhados por semana, da periodicidade do salário e da divisão das férias, respeitado o limite de 44 horas semanais",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      291
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Acabar com a escala 6x1 e reduzir a jornada de trabalho para 40 horas semanais sem redução salarial",
+   "id": "p19",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Aprovar o fim da escala 6x1 e a redução da jornada para 40 horas semanais sem redução salarial",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -182,149 +453,13 @@
       664,
       665
      ],
-     "nota": "Nos termos já aprovados na Câmara, com atuação junto ao Senado"
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Criar incentivo à contratação de jovens em busca do primeiro emprego",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      696,
-      701
-     ],
-     "nota": "Via contrato com menor custo na folha"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      804
-     ],
-     "nota": "Via incentivos fiscais em programa nacional de inserção produtiva da juventude"
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Criar contrato de trabalho específico para jovens de 18 a 24 anos no primeiro emprego, com menor custo na folha",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      696,
-      701
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Criar contrato mais atrativo para a contratação de pessoas com 50 anos ou mais desempregadas há pelo menos 12 meses",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      701
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Modernizar a intermediação de mão de obra com plataforma nacional que integre vagas e candidatos",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      703
-     ],
-     "nota": "Banco nacional de vagas conectado ao RH das empresas"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      658
-     ],
-     "nota": "Plataforma Pública Nacional de Empregabilidade com IA na rede SINE"
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Reconstruir e fortalecer o Sistema Público de Emprego, Trabalho e Renda",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      658
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Dar continuidade à política de valorização real do salário mínimo",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      657
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Vincular crédito público, incentivos fiscais e compras governamentais a compromissos de geração de empregos de qualidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      657
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Combater a pejotização fraudulenta e fortalecer a fiscalização e a inspeção do trabalho",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      660
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Trabalho e emprego",
+   "id": "p20",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
    "proposta": "Alterar a legislação trabalhista para reverter marcos considerados regressivos, coibir fraudes em terceirizações e retomar a assistência sindical nas homologações de rescisão",
    "n_concorda": 1,
    "posicoes": {
@@ -338,24 +473,135 @@
    }
   },
   {
-   "id": "p17",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Tornar obrigatórios os planos de ação de igualdade salarial entre mulheres e homens, com metas progressivas de redução das disparidades",
+   "id": "p21",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Encerrar o monopólio sindical, assegurando o direito de não se filiar nem contribuir para sindicatos",
    "n_concorda": 1,
    "posicoes": {
-    "lula": {
+    "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
-      668
+      305,
+      306
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p18",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Fortalecer a erradicação do trabalho análogo ao escravo e do trabalho infantil e as políticas de inclusão produtiva de pessoas com deficiência",
+   "id": "p22",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Fortalecer a negociação coletiva e o diálogo social, com instrumentos de formação, mediação e arbitragem e estímulo à contratação coletiva em vários âmbitos",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      675,
+      676
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Regulamentar o direito de negociação coletiva no setor público e democratizar o sistema sindical",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      677,
+      679
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Desregulamentar profissões que não envolvam risco à saúde ou à segurança e limitar o poder regulatório e disciplinar dos conselhos profissionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      306,
+      308,
+      309
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Assegurar proteção e segurança jurídica aos trabalhadores de plataformas digitais",
+   "n_concorda": 3,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      661,
+      663
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      716
+     ],
+     "nota": "Proteção sem participação de dirigentes sindicais e preservando as oportunidades do setor"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      347,
+      1340
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Estabelecer, por norma, as regras da relação de trabalho em plataformas: remuneração, condições de trabalho, direitos laborais e transparência algorítmica",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      663
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Combater a pejotização fraudulenta com fiscalização, equiparação de responsabilidades e fortalecimento da inspeção do trabalho",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      660
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Relações de trabalho, jornada e sindicatos",
+   "proposta": "Fortalecer as políticas de erradicação do trabalho análogo ao escravo e do trabalho infantil, no meio urbano, rural e nas plataformas",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -368,88 +614,79 @@
    }
   },
   {
-   "id": "p19",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Estimular ocupações sociais, criando oportunidades de trabalho em atividades de interesse coletivo (conservação ambiental, cultura, patrimônio, esporte, cuidado)",
-   "n_concorda": 1,
+   "id": "p29",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Criar programa nacional de estímulo à inserção produtiva da juventude e ao primeiro emprego",
+   "n_concorda": 4,
    "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      696,
+      701
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      804
+     ],
+     "nota": ""
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      658
+      205,
+      208
+     ],
+     "nota": "Ênfase em emprego com proteção previdenciária e jornada não exaustiva"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1399,
+      1400
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p20",
-   "subtema": "Trabalho e emprego",
-   "proposta": "Assegurar o retorno ao benefício social a quem aceitar emprego, ainda que temporário, e perder a ocupação",
+   "id": "p30",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Criar contrato de trabalho específico para jovens de 18 a 24 anos em busca do primeiro emprego, com menor custo na folha",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      809
+      701
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p21",
-   "subtema": "Qualificação profissional",
-   "proposta": "Ampliar e direcionar a qualificação profissional às demandas reais do mercado de trabalho",
-   "n_concorda": 3,
+   "id": "p31",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Conceder incentivos fiscais a empresas que contratarem jovens no primeiro emprego",
+   "n_concorda": 1,
    "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      299,
-      300,
-      301,
-      302
-     ],
-     "nota": "Foco em ensino técnico ligado a vagas abertas"
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      658
-     ],
-     "nota": "Integração das políticas de qualificação ao Sistema Público de Emprego"
-    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1628,
-      1881
-     ],
-     "nota": "Capacitação técnica dentro da formação empreendedora"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Qualificação profissional",
-   "proposta": "Financiar cursos técnicos por vouchers e parcerias com o setor privado e o Sistema S, condicionando repasses a metas de empregabilidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      302
+      804
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p23",
-   "subtema": "Qualificação profissional",
-   "proposta": "Fortalecer e ampliar a política de aprendizagem e de estágios como via de inserção dos jovens no mercado de trabalho",
-   "n_concorda": 2,
+   "id": "p32",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Expandir a política de aprendizagem profissional e os estágios como porta de entrada no mundo do trabalho",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -457,6 +694,13 @@
       205
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1400
+     ],
+     "nota": "Expansão no setor público e privado"
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -468,39 +712,63 @@
    }
   },
   {
-   "id": "p24",
-   "subtema": "Qualificação profissional",
-   "proposta": "Criar programa de capacitação de cuidadores, com currículos inclusivos, para atender à expansão da demanda por esses trabalhadores",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      216
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Qualificação profissional",
-   "proposta": "Oferecer qualificação e intermediação de mão de obra específicas para o trabalho no campo",
+   "id": "p33",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Criar contrato mais atrativo para a contratação de pessoas com 50 anos ou mais desempregadas há pelo menos 12 meses",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
-      809
+      696,
+      701
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p26",
+   "id": "p34",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Fomentar o empreendedorismo jovem com crédito, incubadoras e capacitação em inovação",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      806,
+      807
+     ],
+     "nota": "Startups, parques tecnológicos, IA e economia criativa"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      208
+     ],
+     "nota": "Inclui apoio à juventude rural com crédito"
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Juventude e primeiro emprego",
+   "proposta": "Priorizar, nas políticas de trabalho para jovens, quem está fora da escola e do emprego, egressos do acolhimento e do socioeducativo e territórios de violência",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1400
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
    "subtema": "Previdência",
-   "proposta": "Reduzir a fila do INSS e modernizar e digitalizar a prestação dos serviços previdenciários",
+   "proposta": "Reduzir a fila do INSS e modernizar a prestação dos serviços previdenciários",
    "n_concorda": 2,
    "posicoes": {
     "flavio-bolsonaro": {
@@ -509,7 +777,7 @@
       505,
       1003
      ],
-     "nota": "Continuidade do Meu INSS e digitalização de processos"
+     "nota": ""
     },
     "lula": {
      "posicao": "concorda",
@@ -517,14 +785,14 @@
       680,
       681
      ],
-     "nota": "Conclusão da modernização já em curso"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p27",
+   "id": "p37",
    "subtema": "Previdência",
-   "proposta": "Profissionalizar a gestão do INSS, retirando a indicação por entidades sindicais e medindo o desempenho pelo tempo de espera do aposentado",
+   "proposta": "Digitalizar os processos do INSS e profissionalizar a gestão do órgão, medindo o desempenho pelo tempo de espera do segurado",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
@@ -533,14 +801,14 @@
       505,
       506
      ],
-     "nota": ""
+     "nota": "Fim da gestão voltada a entidades sindicais"
     }
    }
   },
   {
-   "id": "p28",
+   "id": "p38",
    "subtema": "Previdência",
-   "proposta": "Avisar automaticamente o segurado, em casa, quando ele cumprir os requisitos para o benefício",
+   "proposta": "Avisar proativamente o segurado, em casa, quando ele cumprir os requisitos do benefício",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
@@ -553,7 +821,7 @@
    }
   },
   {
-   "id": "p29",
+   "id": "p39",
    "subtema": "Previdência",
    "proposta": "Reeditar pacote antifraude na Previdência para coibir descontos indevidos em benefícios",
    "n_concorda": 1,
@@ -561,6 +829,7 @@
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
+      994,
       996
      ],
      "nota": ""
@@ -568,9 +837,9 @@
    }
   },
   {
-   "id": "p30",
+   "id": "p40",
    "subtema": "Previdência",
-   "proposta": "Mudar a governança do crédito consignado dos beneficiários do INSS, revendo quem opera os descontos e exigindo dupla checagem de autorização",
+   "proposta": "Mudar a governança do crédito consignado do INSS, revendo operadores e autorizações, com dupla checagem e mais transparência",
    "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
@@ -584,9 +853,9 @@
    }
   },
   {
-   "id": "p31",
+   "id": "p41",
    "subtema": "Previdência",
-   "proposta": "Fazer uma nova reforma da Previdência abrangendo estados, municípios e os regimes rural e militar",
+   "proposta": "Realizar nova reforma da Previdência abrangendo estados, municípios e os regimes rural e militar",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -600,9 +869,9 @@
    }
   },
   {
-   "id": "p32",
+   "id": "p42",
    "subtema": "Previdência",
-   "proposta": "Criar mecanismo de reajuste automático da idade mínima de aposentadoria conforme a expectativa de vida",
+   "proposta": "Criar mecanismo de reajuste automático da idade mínima de aposentadoria com base na expectativa de vida",
    "n_concorda": 1,
    "posicoes": {
     "romeu-zema": {
@@ -615,210 +884,15 @@
    }
   },
   {
-   "id": "p33",
-   "subtema": "Previdência",
-   "proposta": "Ampliar o acesso à Previdência Social com mecanismos contributivos mais flexíveis, adaptados a trajetórias ocupacionais descontínuas",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      680,
-      682
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Previdência",
-   "proposta": "Reestruturar a base de financiamento da Previdência, diversificando as fontes de custeio",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      682
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Previdência",
-   "proposta": "Estender cobertura previdenciária e proteção social (acidentes, doença, interrupção da atividade) a trabalhadores autônomos e pequenos empreendedores",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      674
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Trabalho por plataforma e tecnologia",
-   "proposta": "Assegurar proteção social e previdenciária aos trabalhadores de plataformas digitais",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      663,
-      683
-     ],
-     "nota": "Com financiamento previdenciário definido na regulação"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      716
-     ],
-     "nota": "Proteção sem participação de dirigentes sindicais e preservando o modelo atual de renda"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Trabalho por plataforma e tecnologia",
-   "proposta": "Regulamentar o trabalho mediado por plataformas definindo relação de trabalho, remuneração, condições, direitos laborais e transparência algorítmica",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      663
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Trabalho por plataforma e tecnologia",
-   "proposta": "Preparar e requalificar trabalhadores das categorias afetadas pela automação e pela inteligência artificial, com inserção em novas ocupações",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      663
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1539,
-      1628
-     ],
-     "nota": "Transição para 100 caminhos profissionais e mentalidade empreendedora"
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Apoiar cooperativas e empreendimentos solidários com crédito, juros reduzidos, assistência técnica e formação em gestão",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2592,
-      2593,
-      2594,
-      2599,
-      2600
-     ],
-     "nota": ""
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      669,
-      672
-     ],
-     "nota": "Foco em cooperativas populares e crédito produtivo orientado"
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Integrar cooperativas e empreendimentos econômicos solidários aos sistemas de compras públicas",
-   "n_concorda": 2,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      672
-     ],
-     "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2617
-     ],
-     "nota": "Via plataforma digital nacional do cooperativismo"
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Dobrar o número de cooperativas e de cooperados no país, passando de 27 para 54 milhões de cooperados em dez anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2466,
-      2484,
-      2485,
-      2486
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Criar a Autoridade Nacional do Cooperativismo (ANCOOP) para coordenar políticas e simplificar a regulamentação do setor",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2622,
-      2623,
-      2626
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p43",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Criar plataforma digital nacional integrando cooperativas, cooperados, crédito, comércio eletrônico e mercados",
+   "subtema": "Previdência",
+   "proposta": "Fortalecer e ampliar o acesso à Previdência Social como garantia de proteção de renda",
    "n_concorda": 1,
    "posicoes": {
-    "augusto-cury": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      2608,
-      2610,
-      2612
+      680
      ],
      "nota": ""
     }
@@ -826,15 +900,14 @@
   },
   {
    "id": "p44",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Fortalecer a Economia Popular e Solidária com incubação de empreendimentos, redes territoriais de produção e comercialização e inclusão produtiva de catadores e informais",
+   "subtema": "Previdência",
+   "proposta": "Reestruturar a base de financiamento da Previdência com diversificação das fontes de custeio e criar mecanismos contributivos flexíveis para trajetórias ocupacionais descontínuas",
    "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      669,
-      672
+      682
      ],
      "nota": ""
     }
@@ -842,25 +915,31 @@
   },
   {
    "id": "p45",
-   "subtema": "Cooperativismo e economia solidária",
-   "proposta": "Incluir o cooperativismo nos conteúdos dos programas públicos de formação e capacitação",
-   "n_concorda": 1,
+   "subtema": "Previdência",
+   "proposta": "Assegurar financiamento e cobertura previdenciária aos trabalhadores de plataformas digitais",
+   "n_concorda": 2,
    "posicoes": {
-    "augusto-cury": {
+    "lula": {
      "posicao": "concorda",
      "blocos": [
-      1867,
-      1876
+      683
      ],
-     "nota": ""
+     "nota": "Cobertura para aposentadoria, incapacidade, acidentes e maternidade"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      716
+     ],
+     "nota": "Proteção previdenciária sem protagonismo sindical"
     }
    }
   },
   {
    "id": "p46",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Ampliar o acesso a crédito, assistência técnica e apoio à comercialização para trabalhadores autônomos e pequenos empreendedores",
-   "n_concorda": 2,
+   "subtema": "Previdência",
+   "proposta": "Estender proteção previdenciária e contra acidentes, doenças e interrupção da atividade a trabalhadores autônomos e pequenos empreendedores",
+   "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -868,118 +947,43 @@
       674
      ],
      "nota": ""
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      807
-     ],
-     "nota": "Com incubadoras e parques tecnológicos voltados à juventude"
     }
    }
   },
   {
    "id": "p47",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Fomentar o empreendedorismo entre os jovens",
-   "n_concorda": 2,
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Simplificar e acelerar a formalização de pequenos negócios e trabalhadores informais",
+   "n_concorda": 3,
    "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      208
-     ],
-     "nota": ""
-    },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      806,
-      807
+      2236,
+      2237
      ],
      "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1531
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      674
+     ],
+     "nota": "Simplificação tributária e inclusão digital"
     }
    }
   },
   {
    "id": "p48",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Criar uma Secretaria Executiva ou Ministério do Empreendedorismo e da Economia Distribuída",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1525,
-      1526
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Estabelecer meta nacional de formação de 10 milhões de microempreendedores e microempresas",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1527,
-      1528,
-      2178
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Criar a Escola do Empreendedor em estruturas públicas já existentes, com meta de formar 5 milhões de brasileiros em dez anos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      1861,
-      1862,
-      1882,
-      1959
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Implantar polos estruturados de comércio popular ao longo das rodovias (Projeto BEE), priorizando agricultores familiares, pequenos produtores e artesãos",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      2183,
-      2184,
-      2212,
-      2213,
-      2214,
-      2215,
-      2216,
-      2217,
-      2250,
-      2251
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Criar mutirão nacional de formalização, com licença em até 48 horas, cadastro digital único, fiscalização orientadora e inclusão automática no Simples Nacional",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Criar mutirão nacional de formalização com licença em até 48 horas, cadastro digital único, fiscalização orientadora e inclusão automática no Simples Nacional",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
@@ -996,145 +1000,106 @@
    }
   },
   {
-   "id": "p53",
-   "subtema": "Sindicatos, conselhos e negociação coletiva",
-   "proposta": "Encerrar o monopólio sindical, assegurando o direito de não se filiar nem contribuir para sindicatos",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      305,
-      306
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Sindicatos, conselhos e negociação coletiva",
-   "proposta": "Limitar o poder regulatório e disciplinar dos conselhos profissionais e desregulamentar profissões que não envolvam risco à saúde ou à segurança",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      306,
-      308,
-      309
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Sindicatos, conselhos e negociação coletiva",
-   "proposta": "Fortalecer a negociação coletiva e o diálogo social, com formação, mediação, arbitragem e regras que favoreçam o processo negocial",
-   "n_concorda": 1,
+   "id": "p49",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Ampliar crédito produtivo, assistência técnica e acesso a compras públicas para autônomos e pequenos empreendedores",
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
-      675,
-      676
+      674
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Sindicatos, conselhos e negociação coletiva",
-   "proposta": "Regulamentar o direito de negociação coletiva no setor público",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
+    },
+    "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      677,
-      679
+      1531
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Sindicatos, conselhos e negociação coletiva",
-   "proposta": "Atualizar e democratizar o sistema sindical de representação de interesses nos setores público e privado",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      675,
-      677
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Qualificação profissional",
-   "proposta": "Permitir a participação de entidades privadas e organizações da sociedade civil na execução dos programas públicos de formação empreendedora, mediante critérios técnicos e de transparência",
-   "n_concorda": 2,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      301,
-      302
-     ],
-     "nota": "Propõe vouchers e parcerias com setor privado e Sistema S, com metas de empregabilidade."
+     "nota": "Foco em empreendedores de territórios vulneráveis, com metas de sobrevivência dos negócios"
     },
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      1865
+      807
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p59",
-   "subtema": "Qualificação profissional",
-   "proposta": "Incluir nos programas públicos de capacitação conteúdos de empreendedorismo, modelos de negócio, educação financeira, gestão de preços e fluxo de caixa, marketing digital, comércio eletrônico, vendas, inteligência artificial aplicada a pequenos negócios, abertura e administração de MEI e microempresa, liderança, gestão da emoção, negociação e prevenção ao superendividamento",
+   "id": "p50",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Criar Secretaria Executiva ou Ministério do Empreendedorismo e da Economia Distribuída",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
+      1525,
+      1526
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Formar 10 milhões de microempreendedores como política de prevenção ao desemprego estrutural",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1527,
+      1528,
+      2178
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Criar a Escola do Empreendedor em estruturas públicas já existentes, com meta de formar 5 milhões de brasileiros em dez anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1861,
+      1862,
+      1867,
       1868,
-      1869,
       1870,
       1871,
       1872,
       1873,
-      1874,
       1875,
       1877,
       1878,
       1879,
-      1880
+      1882,
+      1959
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p60",
-   "subtema": "Empreendedorismo e inclusão produtiva",
-   "proposta": "Priorizar nas unidades dos polos de comércio popular a venda de produtos regionais, como frutas, hortaliças, agricultura orgânica, alimentação, artesanato, produtos naturais, bebidas regionais, cultura local, produtos agrícolas e utensílios domésticos",
+   "id": "p53",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Implantar polos organizados de comércio e empreendedorismo ao longo das rodovias, priorizando agricultores familiares, produtores locais e artesãos",
    "n_concorda": 1,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
-      2197,
+      2183,
+      2184,
       2198,
       2199,
       2200,
@@ -1144,9 +1109,336 @@
       2204,
       2205,
       2206,
-      2207
+      2207,
+      2212,
+      2213,
+      2214,
+      2215,
+      2216,
+      2217,
+      2250,
+      2251
      ],
      "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Apoiar e fortalecer o cooperativismo com crédito, assistência técnica, formação em gestão e acesso a mercados",
+   "n_concorda": 3,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2592,
+      2593,
+      2594,
+      2599,
+      2600,
+      2602
+     ],
+     "nota": ""
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      669,
+      672
+     ],
+     "nota": "Foco em cooperativas populares e incubação"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1531
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Estabelecer meta de dobrar o número de cooperativas (mais de 10 mil) e de cooperados (54 milhões) em dez anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2466,
+      2484,
+      2485,
+      2486
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Criar a Autoridade Nacional do Cooperativismo (ANCOOP) para coordenar políticas e simplificar a regulamentação do setor",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2622,
+      2623,
+      2626
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Criar plataforma digital nacional integrando cooperativas, cooperados, crédito, comércio eletrônico e compras públicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2608,
+      2609,
+      2612,
+      2617
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Fortalecer a economia popular e solidária com redes territoriais de produção e comercialização, incubação de empreendimentos e integração às compras públicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      669,
+      672
+     ],
+     "nota": "Prioridade a catadores, agricultores familiares e ocupações informais"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Estimular cooperativas de consumo e de compras para reduzir preços e custos de famílias e pequenos negócios",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2556,
+      2581,
+      2582
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Cooperativismo e economia solidária",
+   "proposta": "Incluir cooperativismo e educação financeira nos currículos de formação empreendedora",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1869,
+      1876
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Implementar a legislação de igualdade salarial entre mulheres e homens, com critérios objetivos e correção das disparidades",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      668
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1332,
+      1333
+     ],
+     "nota": "Com proteção de dados e correção de discriminação comprovada"
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Tornar obrigatória a execução dos Planos de Ação nas empresas com desigualdade identificada, com metas progressivas de redução das disparidades salariais",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      668
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Criar selo de reconhecimento para empresas que promovam equidade de gênero e condições dignas de trabalho",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1332,
+      1333
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Fortalecer canais, inspeção, protocolos e responsabilização contra assédio e violência no trabalho, inclusive doméstico, rural, em plataformas e nas carreiras públicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1339,
+      1340,
+      1343
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Manter políticas de inclusão produtiva de pessoas com deficiência",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      667
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Combater discriminação racial, étnica, LGBTQIAP+, de classe e xenofobia no acesso ao trabalho, com atenção ao acolhimento de migrantes",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      668
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Igualdade e proteção no trabalho",
+   "proposta": "Estimular a avaliação de funções, o retorno ao trabalho após a maternidade e o desenvolvimento de lideranças femininas, com foco na contratação e permanência de mulheres periféricas, mães atípicas e mulheres acima de 50 anos",
+   "n_concorda": 2,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      668
+     ],
+     "nota": "Igualdade salarial com metas e ampliação da presença de mulheres, especialmente negras e PcD."
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1333
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Permitir a participação de entidades privadas e organizações da sociedade civil na formação empreendedora, desde que cumpram critérios técnicos e de transparência",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1865
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1383
+     ],
+     "nota": "Parcerias com empresas e Sistema S em trilhas de empreendedorismo, remuneradas por resultado."
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Incluir na formação empreendedora conteúdos de inteligência artificial aplicada ao pequeno negócio",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1874
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Empreendedorismo, formalização e renda",
+   "proposta": "Incluir na formação empreendedora conteúdos de educação financeira voltados à prevenção ao superendividamento",
+   "n_concorda": 2,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1880
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1531
+     ],
+     "nota": "Apoia educação financeira junto a formalização e empreendedorismo, sem citar superendividamento."
     }
    }
   }
@@ -1183,6 +1475,10 @@
    },
    "1539": {
     "texto": "Precisamos preparar a população para:",
+    "pagina": 95
+   },
+   "1542": {
+    "texto": "• Reinventar-se continuamente;",
     "pagina": 95
    },
    "1628": {
@@ -1281,10 +1577,6 @@
     "texto": "Cada polo funcionará como um microecossistema econômico capaz de fortalecer a agricultura familiar, incentivar a produção local, impulsionar o turismo e gerar milhares de oportunidades de trabalho e renda.",
     "pagina": 121
    },
-   "2197": {
-    "texto": "As unidades poderão priorizar:",
-    "pagina": 121
-   },
    "2198": {
     "texto": "• Frutas regionais;",
     "pagina": 121
@@ -1349,6 +1641,10 @@
     "texto": "• Empreendedores locais.",
     "pagina": 122
    },
+   "2236": {
+    "texto": "6. FORMALIZAÇÃO SIMPLES E INCENTIVO AO EMPREENDEDOR",
+    "pagina": 122
+   },
    "2237": {
     "texto": "Será criado um mutirão nacional de formalização com: \n•",
     "pagina": 122
@@ -1393,6 +1689,18 @@
     "texto": "• Alcançar 54 milhões de cooperados;",
     "pagina": 132
    },
+   "2556": {
+    "texto": "As cooperativas de consumo poderão organizar supermercados, centrais de compras e redes de comercialização coletiva. Ao comprar em escala, os cooperados poderão reduzir os preços de alimentos, medicamentos, materiais escolares e produtos essenciais.",
+    "pagina": 135
+   },
+   "2581": {
+    "texto": "As cooperativas de compras permitirão reunir empresas, produtores e consumidores para realizar aquisições em grande escala.",
+    "pagina": 136
+   },
+   "2582": {
+    "texto": "Com isso, será possível:",
+    "pagina": 136
+   },
    "2592": {
     "texto": "O Governo oferecerá:",
     "pagina": 136
@@ -1413,12 +1721,16 @@
     "texto": "• Formação em gestão;",
     "pagina": 137
    },
+   "2602": {
+    "texto": "• Apoio à inserção nos mercados nacional e internacional.",
+    "pagina": 137
+   },
    "2608": {
     "texto": "Será criada uma plataforma digital nacional para integrar cooperativas, cooperados, fornecedores, consumidores, instituições financeiras e mercados internacionais.",
     "pagina": 137
    },
-   "2610": {
-    "texto": "• Cadastro unificado;",
+   "2609": {
+    "texto": "Essa plataforma poderá oferecer:",
     "pagina": 137
    },
    "2612": {
@@ -1478,6 +1790,10 @@
    "809": {
     "texto": "Vamos aproximar as duas pontas, com qualificação e intermediação que liguem quem busca trabalho a quem precisa de trabalhador no campo. E vamos dar segurança a quem depende de um programa social para aceitar esse trabalho sem medo: quem consegue um emprego, ainda que temporário, poderá voltar ao benefício se precisar, como detalha o Brasil que Prospera. Assim, o trabalho no campo deixa de ser um risco para a família e passa a ser um caminho de renda e dignidade.",
     "pagina": 54
+   },
+   "994": {
+    "texto": "O nosso lugar sempre foi ao lado de quem trabalhou a vida inteira. Em janeiro de 2019, a primeira medida do nosso governo, logo após a redução dos ministérios, foi a MP Antifraudes (MP nº 871/2019), que exigiu a revalidação anual dos descontos associativos na aposentadoria, cancelando qualquer desconto feito sem o consentimento do aposentado. Foi o primeiro governo em quase trinta anos a enfrentar esse escárnio contra os idosos. A medida caiu como uma bomba entre sindicatos e partidos de esquerda, que se mobilizaram e conseguiram suprimir essa e outras barreiras antifraude. O resultado foi a Farra do INSS: a explosão de descontos indevidos que triplicou os valores roubados de idosos, pensionistas e beneficiários de programas sociais em 2023 e 2024.",
+    "pagina": 72
    },
    "996": {
     "texto": "Vamos retomar esse combate com prioridade máxima. Reeditaremos um pacote antifraude na Previdência, nos moldes do que fizemos em 2019, e não pouparemos esforços para coibir qualquer nova tentativa de roubar o dinheiro de quem já deu sua contribuição ao país.",
@@ -1620,6 +1936,10 @@
     "texto": "Permitir que trabalhador e empregador ajustem o modelo de contratação às suas preferências e à realidade de cada atividade, com prevalência do negociado sobre o legislado. Nesse marco trabalhista alternativo, as partes poderão definir consensualmente regras como o percentual e o valor da remuneração variável atrelada ao desempenho; a periodicidade do pagamento dos salários (diária, semanal ou quinzenal), a jornada diária, que poderá ultrapassar 8 horas, desde que respeitado o limite de 44 horas semanais, o número de dias trabalhados por semana; e a livre divisão dos períodos de férias.",
     "pagina": 23
    },
+   "294": {
+    "texto": "GERAÇÃO DE EMPREGOS FORMAIS",
+    "pagina": 24
+   },
    "295": {
     "texto": "Reduzir os custos de contratar para retirar os brasileiros da informalidade:",
     "pagina": 24
@@ -1667,6 +1987,48 @@
    "309": {
     "texto": "Desregulamentar profissões que não envolvam risco à saúde ou segurança da população, eliminando exigências corporativistas que existem apenas para proteger grupos estabelecidos e abrindo o mercado de trabalho a milhões de brasileiros hoje impedidos de exercer livremente seu ofício.",
     "pagina": 25
+   }
+  },
+  "ronaldo-caiado": {
+   "347": {
+    "texto": "Promover formação contínua, intermediação digital, apoio à transição profissional, inclusão de jovens e mulheres, segurança para novas formas de trabalho e redução dos custos que empurram pessoas e empresas à informalidade.",
+    "pagina": 15
+   },
+   "1332": {
+    "texto": "10. Igualdade de oportunidade e transparência salarial",
+    "pagina": 59
+   },
+   "1333": {
+    "texto": "Aplicar a legislação de igualdade remuneratória com critérios objetivos, proteção de dados e correção de discriminação comprovada. Estimular avaliação de funções, retorno após maternidade, desenvolvimento de liderança e ambientes sem assédio. Criar o Selo “Empresa pela Igualdade”, com critérios públicos, para reconhecer empresas que promovam equidade de gênero e condições dignas, inclusive na contratação e permanência de mulheres periféricas, mães atípicas e mulheres acima de 50 anos.",
+    "pagina": 59
+   },
+   "1339": {
+    "texto": "13. Proteção no trabalho e combate ao assédio",
+    "pagina": 59
+   },
+   "1340": {
+    "texto": "Fortalecer canais, inspeção, protocolos e responsabilização por assédio e violência, incluindo trabalho doméstico, rural e plataformas. Empresas contratadas pelo governo deverão ter mecanismos de integridade",
+    "pagina": 59
+   },
+   "1343": {
+    "texto": "e proteção. Estender igualdade de acesso, prevenção ao assédio e proteção à maternidade às carreiras públicas civis e militares, respeitadas suas exigências funcionais.",
+    "pagina": 60
+   },
+   "1383": {
+    "texto": "Oferecer trilhas por perfil: alfabetização, conclusão escolar, formação técnica, aprendizagem, emprego, empreendedorismo, agricultura familiar e economia do cuidado. Parcerias com empresas e Sistema S serão remuneradas por conclusão e inserção sustentada, não apenas matrícula.",
+    "pagina": 61
+   },
+   "1399": {
+    "texto": "9. Juventude, aprendizagem e primeiro trabalho",
+    "pagina": 62
+   },
+   "1400": {
+    "texto": "Expandir aprendizagem profissional no setor público e privado, formação digital, orientação e serviço civil voluntário em atividades comunitárias. Priorizar jovens fora da escola e do trabalho, egressos do acolhimento e do sistema socioeducativo e territórios de violência.",
+    "pagina": 62
+   },
+   "1531": {
+    "texto": "Ampliar qualificação, intermediação, crédito, garantias e compras públicas para empreendedores de territórios vulneráveis, com critérios econômicos e assistência. Apoiar formalização, cooperativismo, propriedade e educação financeira, medindo renda, sobrevivência de negócios e empregos.",
+    "pagina": 68
    }
   }
  }

@@ -570,7 +570,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .rolagem { overflow-x: auto; -webkit-overflow-scrolling: touch; background: var(--cartao);
     border: 1px solid var(--linha); border-top: 0; border-radius: 0 0 var(--raio) var(--raio); }
   .comparacao .rolagem:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
-  .comparacao .grade { display: grid; grid-template-columns: repeat(var(--n), minmax(13rem, 1fr)); gap: .5rem; align-items: start; padding: .5rem; min-width: 100%; }
+  .comparacao .grade { display: grid; grid-template-columns: repeat(var(--n), minmax(12rem, 1fr)); gap: .5rem; align-items: start; padding: .5rem; min-width: 100%; }
   .comparacao .grade > h2 { grid-column: 1 / -1; font-size: .84rem; text-transform: uppercase; letter-spacing: .09em; color: var(--acento-forte);
     margin: 1.4rem .35rem .1rem; padding-bottom: .3rem; border-bottom: 1px solid var(--linha); }
   .comparacao .grade > h2:first-child { margin-top: .4rem; }
