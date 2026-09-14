@@ -1,0 +1,677 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "AC",
+ "pagina": "habitacao-cidades",
+ "nome": "Habitação e cidades",
+ "titulo": "Habitação e cidades: o que cada candidato propõe",
+ "temas": [
+  "moradia_cidades"
+ ],
+ "origem": {
+  "arquivo": "habitacao-cidades-ac.json",
+  "gerado_em": "2026-09-14T09:51:08Z",
+  "exportado_em": "2026-09-14T10:22:19Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-ac-alan-rick-10002532492",
+   "nome": "Alan Rick",
+   "partido": "REPUBLICANOS",
+   "numero": "10",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/10017084181",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/10002532492/AC"
+  },
+  {
+   "slug": "governador-ac-mailza-assis-10002544107",
+   "nome": "Mailza Assis",
+   "partido": "PP",
+   "numero": "11",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/10017029377",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/10002544107/AC"
+  },
+  {
+   "slug": "governador-ac-thor-dantas-10002550719",
+   "nome": "Thor Dantas",
+   "partido": "PSB",
+   "numero": "40",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/10017091966",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/10002550719/AC"
+  },
+  {
+   "slug": "governador-ac-tiao-bocalom-10002544015",
+   "nome": "Tião Bocalom",
+   "partido": "PSDB",
+   "numero": "45",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/10017035102",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/10002544015/AC"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Implantar ou ampliar programa habitacional de interesse social para reduzir o déficit de moradias, com produção de novas unidades para famílias de baixa renda.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      131
+     ],
+     "nota": "Ampliar o programa de habitação popular para todos os municípios"
+    },
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      348
+     ],
+     "nota": "Retomada de programa de habitação social"
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      375
+     ],
+     "nota": ""
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      737,
+      740,
+      757
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Priorizar no acesso à moradia famílias em situação de risco ou vulnerabilidade, chefiadas por mulheres, com idosos ou pessoas com deficiência.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      348
+     ],
+     "nota": ""
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      532
+     ],
+     "nota": "Projeto Moradia Segura, focado em áreas de risco e vítimas de desastres"
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      758
+     ],
+     "nota": "Parceria com órgãos de assistência social de municípios e Estado"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Executar a política habitacional em parceria com programas e recursos do Governo Federal e dos municípios.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      348
+     ],
+     "nota": ""
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      375
+     ],
+     "nota": ""
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      752,
+      760,
+      764
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Adotar soluções construtivas adaptadas ao clima amazônico nas moradias (ventilação, proteção solar, saneamento simplificado).",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      348
+     ],
+     "nota": "Menciona genericamente 'soluções amazônicas'"
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      380
+     ],
+     "nota": "Detalha adaptações em habitações rurais e ribeirinhas"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Realizar melhorias habitacionais em imóveis de famílias de baixa renda (banheiro, cobertura, piso, acessibilidade, instalações elétricas, pequenas ampliações).",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      377
+     ],
+     "nota": ""
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      740
+     ],
+     "nota": "Compromisso genérico de melhoria das condições de moradia"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Criar programa de implantação de soluções sanitárias domiciliares em moradias precárias sem instalações hidrossanitárias adequadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      764
+     ],
+     "nota": "Programa Habitar com Saúde"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Criar banco público estadual de terras destinado à aquisição e preparação de áreas urbanas aptas à habitação social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      381
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Modernizar o sistema estadual de informações habitacionais, com base de dados georreferenciada para identificar demandas, áreas prioritárias e famílias beneficiárias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      756
+     ],
+     "nota": "Modernização do SISHAB"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Construir conjuntos habitacionais em formato de condomínios adaptados para pessoas idosas, com acessibilidade e integração a serviços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      759
+     ],
+     "nota": "Programa Viver Mais, em parceria com municípios"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Instituir programa estadual permanente de habitação articulado com infraestrutura urbana, saneamento, regularização fundiária e desenvolvimento territorial.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      723,
+      755
+     ],
+     "nota": ""
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374
+     ],
+     "nota": "Programa habitacional integrando produção, regularização e urbanização"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Desenvolvimento urbano e resiliência climática",
+   "proposta": "Promover política de desenvolvimento urbano voltada à adaptação das cidades às mudanças climáticas, integrando infraestrutura, saneamento e planejamento territorial.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      325
+     ],
+     "nota": "Apoio a municípios em intervenções urbanas integradas e acessíveis"
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      321
+     ],
+     "nota": "Inclui soluções baseadas na natureza"
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      726,
+      737,
+      746
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Desenvolvimento urbano e resiliência climática",
+   "proposta": "Investir em mobilidade urbana, acessibilidade, arborização, parques, drenagem e qualificação de espaços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      725,
+      737,
+      780
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Desenvolvimento urbano e resiliência climática",
+   "proposta": "Integrar a infraestrutura urbana à prevenção de desastres e à atuação da Defesa Civil.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      338
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Apoio técnico e cooperação com municípios",
+   "proposta": "Apoiar tecnicamente os projetos urbanos dos municípios com equipes técnicas multidisciplinares.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      337
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Apoio técnico e cooperação com municípios",
+   "proposta": "Planejar e articular os investimentos urbanos em cooperação entre Estado, municípios, Governo Federal e instituições financeiras e parceiras.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      733,
+      751,
+      752
+     ],
+     "nota": ""
+    },
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      375
+     ],
+     "nota": "Parcerias municipais e recursos federais e estaduais para moradia"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Regularização fundiária urbana",
+   "proposta": "Realizar a regularização fundiária urbana de imóveis e loteamentos, com emissão de títulos definitivos e registro em cartório.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      376
+     ],
+     "nota": "Prevê cadastro social, topografia e georreferenciamento"
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      737,
+      741,
+      765
+     ],
+     "nota": "Fortalecimento do Programa Minha Terra de Papel Passado"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Regularização fundiária urbana",
+   "proposta": "Criar programa de escrituração direta para facilitar a emissão de escrituras definitivas aos beneficiários dos programas habitacionais estaduais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      766
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Urbanização de assentamentos precários",
+   "proposta": "Urbanizar assentamentos precários e áreas vulneráveis com drenagem, pavimentação, iluminação, saneamento e equipamentos comunitários.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      378
+     ],
+     "nota": ""
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      760,
+      763
+     ],
+     "nota": "Programa Recomeçar, com recuperação ambiental"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Urbanização de assentamentos precários",
+   "proposta": "Reassentar gradualmente famílias que vivem em áreas de risco, especialmente margens de igarapés e áreas inundáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      379,
+      532
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Saneamento e infraestrutura urbana",
+   "proposta": "Expandir os serviços de saneamento básico, com ampliação das redes de água e esgoto nos municípios.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      131
+     ],
+     "nota": ""
+    },
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      737,
+      780
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Saneamento e infraestrutura urbana",
+   "proposta": "Apoiar as prefeituras na destinação correta de resíduos sólidos, priorizando a reciclagem.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      131
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Saneamento e infraestrutura urbana",
+   "proposta": "Articular junto à ANEEL a modernização de subestações e linhas de transmissão, viabilizando a geração fotovoltaica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      131
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-ac-alan-rick-10002532492": {
+   "321": {
+    "texto": "O Governo Alan Rick promoverá uma nova política de desenvolvimento urbano voltada à adaptação das cidades acreanas aos efeitos das mudanças climáticas, integrando infraestrutura, saneamento, soluções baseadas na natureza e planejamento territorial.",
+    "pagina": 15
+   },
+   "374": {
+    "texto": "Implantar programa habitacional para reduzir o déficit habitacional com ações voltadas a produção de moradias, regularização fundiária, melhoria habitacional, urbanização de assentamentos precários, reassentamento de famílias em áreas de risco e formação de banco público de terras.",
+    "pagina": 17
+   },
+   "375": {
+    "texto": "• Implantação de Programa de Moradias por meio de programas federais de habitação, recursos do estado e parcerias municipais;",
+    "pagina": 17
+   },
+   "376": {
+    "texto": "• realizar regularização fundiária urbana de imóveis, com cadastro social, levantamento topográfico, georreferenciamento, titulação e registro;",
+    "pagina": 17
+   },
+   "377": {
+    "texto": "• realizar melhorias habitacionais em imóveis de famílias de baixa renda, contemplando banheiro, cobertura, piso, acessibilidade, instalações elétricas e pequenas ampliações;",
+    "pagina": 17
+   },
+   "378": {
+    "texto": "• realizar a urbanização de assentamentos precários com drenagem, pavimentação, iluminação, saneamento, áreas públicas e equipamentos comunitários;",
+    "pagina": 17
+   },
+   "379": {
+    "texto": "• reassentar, gradualmente, famílias que habitam áreas de risco, especialmente inundáveis nas APPs urbanas de margens de igarapés;",
+    "pagina": 17
+   },
+   "380": {
+    "texto": "• realizar adaptações ao clima amazônico de habitações rurais e ribeirinhas, com soluções de ventilação, proteção solar, saneamento simplificado e logística regional;",
+    "pagina": 17
+   },
+   "381": {
+    "texto": "• Criar do Banco Estadual de Terras Habitacionais – Destinado a aquisição de áreas de terras, para cadastro e preparação de áreas urbanas aptas à habitação social.",
+    "pagina": 17
+   },
+   "532": {
+    "texto": "• implantar o Projeto Moradia Segura, com prioridade em programas habitacionais e regularização fundiária para famílias em áreas de risco ou vítimas de desastres;",
+    "pagina": 26
+   }
+  },
+  "governador-ac-mailza-assis-10002544107": {
+   "723": {
+    "texto": "Nosso compromisso é promover um modelo de desenvolvimento urbano que coloque as pessoas no centro das decisões. Queremos cidades mais inclusivas, onde as famílias tenham acesso à moradia digna, bairros bem estruturados, ruas mais seguras e acessíveis, espaços públicos de qualidade e serviços essenciais cada vez mais próximos da população.",
+    "pagina": 51
+   },
+   "724": {
+    "texto": "A política habitacional será orientada pela redução do déficit de moradias, pela ampliação da oferta de habitação de interesse social, pela urbanização de assentamentos precários e pelo fortalecimento da regularização fundiária urbana, garantindo mais segurança jurídica às famílias e promovendo a integração entre habitação, infraestrutura, saneamento e equipamentos públicos. Mais do que construir novas casas, queremos criar comunidades bem planejadas, com infraestrutura adequada e melhores condições para viver.",
+    "pagina": 51
+   },
+   "725": {
+    "texto": "O desenvolvimento urbano também será impulsionado por investimentos em mobilidade, acessibilidade, arborização, parques urbanos, drenagem e qualificação dos espaços públicos.",
+    "pagina": 51
+   },
+   "726": {
+    "texto": "Apoiaremos os municípios na implantação de soluções que tornem as cidades mais organizadas, seguras e preparadas para enfrentar os impactos das mudanças climáticas, ampliando a resiliência dos centros urbanos e promovendo maior bem-estar para a população.",
+    "pagina": 51
+   },
+   "733": {
+    "texto": "Toda essa estratégia será construída em estreita cooperação entre Estado, municípios, Governo Federal e instituições parceiras, fortalecendo o planejamento territorial e promovendo uma atuação integrada capaz de responder às diferentes realidades urbanas do Acre.",
+    "pagina": 52
+   },
+   "737": {
+    "texto": "Nos próximos quatro anos vamos trabalhar para:\n• ampliar o acesso à moradia digna e fortalecer a política habitacional do Estado;\n• promover a regularização fundiária urbana, garantindo mais segurança jurídica às famílias;\n• investir em saneamento básico para ampliar a qualidade de vida e a saúde da população;\n• apoiar os municípios na construção de cidades mais organizadas, acessíveis e resilientes;\n• fortalecer a mobilidade urbana e estimular soluções sustentáveis de deslocamento;\n• qualificar os espaços públicos, promovendo inclusão, segurança e bem-estar para toda a população.\n•",
+    "pagina": 52
+   },
+   "740": {
+    "texto": "Mais famílias vivendo em moradias dignas, com ampliação da oferta habitacional e melhorias nas condições de moradia.\n•",
+    "pagina": 52
+   },
+   "741": {
+    "texto": "Avanços na regularização fundiária urbana, garantindo segurança jurídica e valorização dos imóveis.\n•",
+    "pagina": 52
+   },
+   "746": {
+    "texto": "Cidades mais organizadas, sustentáveis e preparadas para enfrentar os desafios das mudanças climáticas.\n•",
+    "pagina": 53
+   },
+   "751": {
+    "texto": "Os investimentos serão planejados de forma articulada entre Estado e municípios, considerando as características de cada cidade, suas necessidades atuais e seus desafios futuros. Buscaremos integrar políticas habitacionais, infraestrutura urbana, saneamento, acessibilidade, mobilidade e planejamento territorial, promovendo soluções que melhorem a qualidade de vida da população e fortaleçam o desenvolvimento urbano sustentável.",
+    "pagina": 53
+   },
+   "752": {
+    "texto": "Também ampliaremos a cooperação com o Governo Federal, instituições financeiras, setor privado e organismos nacionais e internacionais para viabilizar investimentos em infraestrutura urbana, inovação, eficiência energética, adaptação às mudanças climáticas e modernização da gestão urbana.",
+    "pagina": 53
+   },
+   "755": {
+    "texto": "1. Instituir o Programa Estadual de Habitação e Desenvolvimento Urbano Integrado, com a implementação de uma política habitacional permanente, articulada com infraestrutura urbana, saneamento básico, regularização fundiária e desenvolvimento territorial local.",
+    "pagina": 53
+   },
+   "756": {
+    "texto": "2. Modernizar o Sistema de Habitação do Acre (SISHAB), investindo na sua modernização com a implementação de novas tecnologias e serviços que permitam a inclusão de novas funcionalidades para construir uma base de dados georreferenciada que permita identificar as demandas habitacionais, definir as regiões e localidades prioritárias de investimentos e as famílias beneficiárias, otimizando o gerenciamento do cadastro habitacional.",
+    "pagina": 53
+   },
+   "757": {
+    "texto": "3. Ampliar o Programa de Construção de Moradias de Interesse Social na Capital e",
+    "pagina": 53
+   },
+   "758": {
+    "texto": "Interior, atuando em parceria com os órgãos de assistência social dos municípios e Estado, priorizando famílias de baixa renda, mulheres chefes de família, idosos e pessoas em situação de vulnerabilidade social e residentes em áreas de risco.",
+    "pagina": 53
+   },
+   "759": {
+    "texto": "4. Instituir o Programa Viver Mais, promovendo a construção de conjuntos habitacionais no formato de condomínios fechados e adaptados para idosos, com acessibilidade, convivência comunitária e integração aos serviços públicos, em parceria com os governos municipais.",
+    "pagina": 53
+   },
+   "760": {
+    "texto": "5. Instituir o Programa Recomeçar – Urbanização de Assentamentos Precários, em parceria com os governos federal e municipais, investindo na urbanização integrada e na",
+    "pagina": 53
+   },
+   "763": {
+    "texto": "regularização fundiária de áreas vulneráveis de loteamentos urbanos, com ações de habitação, drenagem, saneamento, iluminação, pavimentação e recuperação ambiental.",
+    "pagina": 53
+   },
+   "764": {
+    "texto": "6. Instituir o Programa Habitar com Saúde, atuando em parceria com os governos federal e municipais, para implantação de soluções sanitárias domiciliares em moradias precárias, com instalações hidrossanitárias inexistentes ou inadequadas, pertencentes às famílias de baixa renda.",
+    "pagina": 54
+   },
+   "765": {
+    "texto": "7. Fortalecer o Programa Minha Terra de Papel Passado, promovendo em parceria com os governos municipais ações de regularização fundiária de loteamentos urbanos com a emissão de títulos definitivos e seu respectivo registro cartorário.",
+    "pagina": 54
+   },
+   "766": {
+    "texto": "8. Instituir o Programa Escrituração Direta, facilitando a regularização documental e a emissão de escrituras definitivas para beneficiários dos programas habitacionais do Executivo Estadual.",
+    "pagina": 54
+   },
+   "780": {
+    "texto": "Nosso compromisso é fortalecer cidades capazes de oferecer qualidade de vida, segurança, inclusão e oportunidades para todos. Vamos investir em habitação, desenvolvimento urbano, saneamento e mobilidade para que o crescimento dos municípios aconteça de forma organizada, sustentável e voltada às necessidades da população.",
+    "pagina": 55
+   }
+  },
+  "governador-ac-thor-dantas-10002550719": {
+   "325": {
+    "texto": "Apoiar os municípios em intervenções urbanas integradas, acessíveis e preparadas para enchentes, secas, calor e outros efeitos das mudanças climáticas.",
+    "pagina": 27
+   },
+   "337": {
+    "texto": "Apoiar projetos municipais com equipes técnicas multidisciplinares.",
+    "pagina": 27
+   },
+   "338": {
+    "texto": "Integrar infraestrutura urbana, prevenção de desastres e Defesa Civil.",
+    "pagina": 27
+   },
+   "348": {
+    "texto": "Retomar um programa de habitação social, com prioridade para famílias em risco ou vulnerabilidade, chefiadas por mulheres, com pessoas idosas ou com deficiência em parceria com os programas do Governo Federal, com soluções amazônicas, reduzindo o déficit habitacional e fortalecendo o setor da Construção Civil.",
+    "pagina": 28
+   }
+  },
+  "governador-ac-tiao-bocalom-10002544015": {
+   "131": {
+    "texto": "4.5 Construção Civil e Habitação •​ Expandir redes de água e esgoto nos municípios; •​ Apoiar as prefeituras na destinação correta de resíduos sólidos, priorizando a reciclagem; •​ Ampliar o programa de habitação popular para todos os municípios; •​ Articular junto à ANEEL a modernização das subestações e linhas de transmissão, viabilizando geração fotovoltaica.",
+    "pagina": 19
+   }
+  }
+ }
+}
