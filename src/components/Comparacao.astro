@@ -59,12 +59,18 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   </div>
 
   <div class="faixa-temas">
-    <label for="tema-atual">Tema</label>
-    <select id="tema-atual" class="seletor-tema" data-base={base}>
-      {paginas.map((p) => (
-        <option value={p.id} selected={p.id === dados.pagina}>{p.nome}</option>
-      ))}
-    </select>
+    <span class="rotulo-tema" id="rotulo-tema">Tema</span>
+    <details class="seletor-tema" data-base={base}>
+      <summary aria-labelledby="rotulo-tema tema-atual"><span id="tema-atual">{dados.nome}</span></summary>
+      <ul class="lista-temas" role="list">
+        {paginas.map((p) => (
+          <li>
+            <a href={`${base}/${p.id}`} data-tema={p.id} aria-current={p.id === dados.pagina ? 'page' : undefined}
+              data-evento="tema_aberto" data-origem="faixa">{p.nome}</a>
+          </li>
+        ))}
+      </ul>
+    </details>
     <span class="dica-tema" aria-hidden="true">{paginas.length} temas</span>
   </div>
 
@@ -189,7 +195,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const ordem = D.candidatos.map((c) => c.slug);
     const C = Object.fromEntries(D.candidatos.map((c) => [c.slug, c]));
     const porId = Object.fromEntries(D.propostas.map((p) => [p.id, p]));
-    const nomeDoTema = Object.fromEntries([...raiz.querySelectorAll('.seletor-tema option')].map((o) => [o.value, o.textContent]));
+    const nomeDoTema = Object.fromEntries([...raiz.querySelectorAll('.lista-temas a')].map((a) => [a.dataset.tema, a.textContent]));
     const grade = raiz.querySelector('.grade-propostas');
     const cabecalho = raiz.querySelector('.cabecalho-colunas');
     const rolagem = raiz.querySelector('.rolagem');
@@ -278,17 +284,21 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
     function guardaNaUrl(sel) {
       history.replaceState(null, '', location.pathname + sufixo(sel, true) + location.hash);
+      atualizaLinksDeTema();
     }
 
-    // a caixa de temas troca de página levando a seleção de candidatos junto
+    // o menu de temas é uma lista de links (funciona sem JavaScript); os links
+    // levam a seleção de candidatos junto, e o menu fecha ao clicar fora ou com Esc
     const seletorTema = raiz.querySelector('.seletor-tema');
+    const linksDeTema = [...raiz.querySelectorAll('.lista-temas a')];
+    function atualizaLinksDeTema() {
+      for (const a of linksDeTema) a.href = `${seletorTema.dataset.base}/${a.dataset.tema}${sufixo(selecao)}`;
+    }
     if (seletorTema) {
-      seletorTema.addEventListener('change', () => {
-        const id = seletorTema.value;
-        if (id === D.tema) return;
-        medir('tema_aberto', { tema: id, origem: 'faixa' }, { beacon: true });
-        location.assign(`${seletorTema.dataset.base}/${id}${sufixo(selecao)}`);
+      document.addEventListener('click', (e) => {
+        if (seletorTema.open && e.target instanceof Node && !seletorTema.contains(e.target)) seletorTema.open = false;
       });
+      seletorTema.addEventListener('keydown', (e) => { if (e.key === 'Escape') { seletorTema.open = false; seletorTema.querySelector('summary')?.focus(); } });
     }
 
     for (const ch of chips) {
@@ -306,7 +316,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     }
 
     const daUrl = selecaoDaUrl(new URLSearchParams(location.search).get('c'), ordem);
-    if (daUrl) aplica(daUrl);
+    if (daUrl) { aplica(daUrl); atualizaLinksDeTema(); }
 
     // a matriz filtrada pela busca: cruza todos os temas do escopo. As
     // propostas dos outros temas vêm dos JSONs publicados em /comparacao/, com
@@ -485,13 +495,26 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao.em-busca .faixa-temas { display: none; }
   .comparacao .faixa-temas { position: sticky; top: 0; z-index: 20; height: var(--faixa-altura); margin: 0 0 1rem;
     display: flex; align-items: center; gap: .6rem; background: var(--papel); border-bottom: 1px solid var(--linha); }
-  .comparacao .faixa-temas label { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
-  .comparacao .seletor-tema { flex: 0 1 26rem; min-width: 0; min-height: var(--alvo); padding: .35rem 2.2rem .35rem .8rem;
-    font: inherit; font-weight: 600; color: var(--tinta); background: var(--cartao); border: 1px solid var(--linha-forte); border-radius: 8px;
-    appearance: none; -webkit-appearance: none; cursor: pointer;
-    background-image: linear-gradient(45deg, transparent 50%, var(--acento-forte) 50%), linear-gradient(135deg, var(--acento-forte) 50%, transparent 50%);
-    background-position: calc(100% - 1.1rem) 50%, calc(100% - .7rem) 50%; background-size: .4rem .4rem; background-repeat: no-repeat; }
-  .comparacao .seletor-tema:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+  .comparacao .rotulo-tema { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
+  /* o menu de temas é nosso (details + lista), não o <select> nativo: o
+     popup do sistema saía com o dobro do tamanho no macOS e não se estiliza */
+  .comparacao .seletor-tema { position: relative; flex: 0 1 26rem; min-width: 0; }
+  .comparacao .seletor-tema summary { list-style: none; display: flex; align-items: center; justify-content: space-between; gap: .6rem;
+    min-height: var(--alvo); padding: .35rem .8rem; font-weight: 600; color: var(--tinta); background: var(--cartao);
+    border: 1px solid var(--linha-forte); border-radius: 8px; cursor: pointer; user-select: none; }
+  .comparacao .seletor-tema summary::-webkit-details-marker { display: none; }
+  .comparacao .seletor-tema summary::after { content: ''; flex: none; width: .5rem; height: .5rem; margin-right: .1rem;
+    border-right: 2px solid var(--acento-forte); border-bottom: 2px solid var(--acento-forte); transform: translateY(-.15rem) rotate(45deg); }
+  .comparacao .seletor-tema[open] summary::after { transform: translateY(.15rem) rotate(-135deg); }
+  .comparacao .seletor-tema summary:hover { border-color: var(--azul-claro); }
+  .comparacao .seletor-tema summary:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+  .comparacao .lista-temas { position: absolute; left: 0; right: 0; top: calc(100% + .3rem); z-index: 30; margin: 0; padding: .3rem; list-style: none;
+    max-height: min(60vh, 28rem); overflow-y: auto; background: var(--cartao); border: 1px solid var(--linha-forte); border-radius: 8px; box-shadow: var(--sombra); }
+  .comparacao .lista-temas a { display: block; min-height: 2.4rem; padding: .45rem .7rem; border-radius: 6px; color: var(--tinta); text-decoration: none; font-size: .95rem; }
+  .comparacao .lista-temas a:hover { background: var(--realce); }
+  .comparacao .lista-temas a:focus-visible { background: var(--realce); outline: 2px solid var(--acento); outline-offset: -2px; }
+  .comparacao .lista-temas a[aria-current='page'] { font-weight: 700; color: var(--acento-forte); background: var(--realce); }
+  .comparacao .lista-temas a[aria-current='page']::before { content: '✓ '; }
   .comparacao .dica-tema { font-size: .82rem; color: var(--tinta-suave); white-space: nowrap; }
 
   /* o aviso flutua no rodapé da tela: quem entra na página o vê sem rolar */
@@ -599,6 +622,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     .comparacao .grade { grid-template-columns: repeat(var(--n), 15rem); }
     .comparacao .dica-tema { display: none; }
     .comparacao .seletor-tema { flex: 1 1 auto; }
+    .comparacao .lista-temas { max-height: 60vh; }
     .comparacao dialog.trechos { width: 94vw; padding: 0 .9rem .9rem; }
     .comparacao dialog.trechos::before { margin: 0 -.9rem .8rem; }
     .comparacao .chip span { max-width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

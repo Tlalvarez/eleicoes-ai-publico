@@ -52,10 +52,10 @@ function confereTema(rel, dados, base, paginas) {
     falhas.push(`${rel}: ${ids.size} propostas com cartão para ${dados.propostas.length} do JSON`);
   }
   for (const id of paginas) {
-    if (!new RegExp(`<option value="${escapa(id)}"`).test(html)) falhas.push(`${rel}: a caixa de temas não traz ${id}`);
+    if (!new RegExp(`<a href="${escapa(base)}/${escapa(id)}"[^>]*data-tema="${escapa(id)}"`).test(html)) falhas.push(`${rel}: o menu de temas não linka ${base}/${id}`);
   }
-  if (!new RegExp(`<option value="${escapa(dados.pagina)}"[^>]*selected`).test(html)) falhas.push(`${rel}: a caixa de temas não marca o tema atual`);
-  if (!new RegExp(`class="seletor-tema" data-base="${escapa(base)}"`).test(html)) falhas.push(`${rel}: a caixa de temas não sabe o escopo (${base})`);
+  if (!new RegExp(`data-tema="${escapa(dados.pagina)}" aria-current="page"`).test(html)) falhas.push(`${rel}: o menu de temas não marca o tema atual`);
+  if (!new RegExp(`class="seletor-tema" data-base="${escapa(base)}"`).test(html)) falhas.push(`${rel}: o menu de temas não sabe o escopo (${base})`);
   if (!/<dialog class="trechos"/.test(html)) falhas.push(`${rel}: sem o painel de trechos`);
   if (!/__comparacao/.test(html)) falhas.push(`${rel}: os dados da comparação não foram embutidos`);
 }
