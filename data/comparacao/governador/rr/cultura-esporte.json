@@ -1,0 +1,891 @@
+{
+ "contrato": "comparacao-site/1",
+ "cargo": "governador",
+ "uf": "RR",
+ "pagina": "cultura-esporte",
+ "nome": "Cultura, esporte e lazer",
+ "titulo": "Cultura, esporte e lazer: o que cada candidato propõe",
+ "temas": [
+  "cultura_esporte"
+ ],
+ "origem": {
+  "arquivo": "cultura-esporte-rr.json",
+  "gerado_em": "2026-09-14T14:24:40Z",
+  "exportado_em": "2026-09-14T14:32:06Z"
+ },
+ "candidatos": [
+  {
+   "slug": "governador-rr-arthur-henrique-230002549223",
+   "nome": "Arthur Henrique",
+   "partido": "PL",
+   "numero": "22",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/230017078577",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/230002549223/RR"
+  },
+  {
+   "slug": "governador-rr-rosi-aires-230002552060",
+   "nome": "Rosi Aires",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/230017108199",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/230002552060/RR"
+  },
+  {
+   "slug": "governador-rr-soldado-sampaio-230002551571",
+   "nome": "Soldado Sampaio",
+   "partido": "REPUBLICANOS",
+   "numero": "10",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/230017107422",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/230002551571/RR"
+  }
+ ],
+ "propostas": [
+  {
+   "id": "p1",
+   "subtema": "Fomento e editais culturais",
+   "proposta": "Ampliar editais públicos de fomento à produção cultural, com apoio direto aos fazedores de cultura e descentralização dos recursos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      826,
+      828,
+      886,
+      887
+     ],
+     "nota": "Ancora nos editais da Lei de Incentivo à Cultura e da PNAB"
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      102,
+      103,
+      105
+     ],
+     "nota": "Editais descentralizados, simplificados e de produção local"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Fomento e editais culturais",
+   "proposta": "Ampliar e lançar especificamente os editais da Lei de Incentivo à Cultura e da Política Nacional Aldir Blanc (PNAB)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      828,
+      886,
+      887
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Fomento e editais culturais",
+   "proposta": "Criar vale-cultura para jovens da cidade e do campo, garantindo acesso a livros, cinema, teatro e música",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      102
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Calendário cultural e festivais",
+   "proposta": "Manter e fortalecer um calendário estadual de eventos culturais, com apoio aos festivais dos municípios e das diversas manifestações locais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      367
+     ],
+     "nota": ""
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      103,
+      105
+     ],
+     "nota": "Prioriza festivais de cultura indígena, popular e migrante"
+    },
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      825,
+      902
+     ],
+     "nota": "Fortalece o calendário oficial com grandes eventos no Parque Anauá"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Calendário cultural e festivais",
+   "proposta": "Fortalecer e ampliar a festa de São João no Parque Anauá como principal evento junino do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      824,
+      825,
+      880,
+      881
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Calendário cultural e festivais",
+   "proposta": "Realizar Réveillon no Parque Anauá com atrações culturais, musicais e turísticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      824,
+      825,
+      890,
+      891
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Calendário cultural e festivais",
+   "proposta": "Realizar a EXPOFERR valorizando artistas locais e a economia criativa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      882,
+      883
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Calendário cultural e festivais",
+   "proposta": "Reduzir o gasto público com shows e grandes eventos artísticos, redirecionando recursos para equipamentos culturais permanentes e formação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      99
+     ],
+     "nota": "Propõe suspender gastos com shows por dois anos"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Esporte e lazer",
+   "proposta": "Ampliar o acesso ao esporte e ao lazer em todo o Estado, com atividades e competições no interior e nos territórios",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      816,
+      838,
+      840
+     ],
+     "nota": "Programa 'Roraima em Movimento' com onze frentes"
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": ""
+    },
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      411,
+      415
+     ],
+     "nota": "Via areninhas em bairros periféricos e sedes do interior"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Esporte e lazer",
+   "proposta": "Realizar competições intermunicipais de futebol amador",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      841,
+      842
+     ],
+     "nota": ""
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Esporte e lazer",
+   "proposta": "Promover o esporte indígena, com jogos e competições próprias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      843
+     ],
+     "nota": "Jogos Indígenas de Futebol de Campo"
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Esporte e lazer",
+   "proposta": "Ampliar a participação feminina no esporte",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      841,
+      846
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Esporte e lazer",
+   "proposta": "Promover jogos escolares e programação esportiva vinculada às escolas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": ""
+    },
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      417
+     ],
+     "nota": "Monitoria esportiva no contraturno com escolas estaduais e IES"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Esporte e lazer",
+   "proposta": "Ampliar a oferta de novas modalidades esportivas e oficinas (como boxe e handebol de areia)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      847
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Esporte e lazer",
+   "proposta": "Capacitar profissionais do esporte: professores, técnicos, árbitros e gestores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      850
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Esporte e lazer",
+   "proposta": "Organizar e divulgar calendário esportivo estadual plurianual a partir de 2027",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      853,
+      854,
+      896
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Esporte e lazer",
+   "proposta": "Estimular parcerias e patrocínios para projetos esportivos sustentáveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      851
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Esporte e lazer",
+   "proposta": "Realizar torneio esportivo entre servidores públicos estaduais (intersecretarias)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      848,
+      849
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Equipamentos esportivos e culturais",
+   "proposta": "Construir e manter equipamentos esportivos públicos, incluindo quadras, campos e complexos esportivos regionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      411
+     ],
+     "nota": "Programa Areninhas: Estado constrói, município cede o terreno"
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": "Manter e ampliar vilas e complexos esportivos regionais"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Equipamentos esportivos e culturais",
+   "proposta": "Definir a prioridade territorial dos novos equipamentos esportivos por critério técnico de vulnerabilidade social e ausência de equipamento em uso, e não por conveniência política",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      411,
+      415
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Equipamentos esportivos e culturais",
+   "proposta": "Dotar os equipamentos esportivos de iluminação, cobertura ou sombreamento nas áreas de convivência, vestiário e acesso pavimentado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      411,
+      413,
+      414
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Equipamentos esportivos e culturais",
+   "proposta": "Implantar equipamentos culturais no interior do Estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      368
+     ],
+     "nota": "Parque do Rio Branco como modelo de referência"
+    },
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      99,
+      102
+     ],
+     "nota": "Pontos de Cultura em todos os territórios e equipamentos permanentes"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Equipamentos esportivos e culturais",
+   "proposta": "Implantar Pontos de Cultura em todos os territórios, com editais simplificados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      102
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Equipamentos esportivos e culturais",
+   "proposta": "Construir escolas de música públicas, com professores contratados por concurso público",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      99,
+      101
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Patrimônio e memória",
+   "proposta": "Reformar e reabrir os museus do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      101
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Patrimônio e memória",
+   "proposta": "Criar o Museu do Genocídio Indígena da Amazônia, com escolas de música integradas ao seu espaço",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      101
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Patrimônio e memória",
+   "proposta": "Proteger e valorizar o patrimônio cultural material e imaterial e as tradições indígenas e regionais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      105
+     ],
+     "nota": ""
+    },
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      359,
+      369
+     ],
+     "nota": "Valorização de artesanato, música e manifestações de cada região"
+    },
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      815,
+      825
+     ],
+     "nota": "Valorização das tradições populares via grandes festas"
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Economia criativa",
+   "proposta": "Fomentar a economia criativa como fonte de trabalho e renda, apoiando artesanato, audiovisual, literatura e artistas locais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      103,
+      105
+     ],
+     "nota": ""
+    },
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      815,
+      882,
+      883
+     ],
+     "nota": "Cultura e turismo como vetores de identidade e renda"
+    },
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      359,
+      369
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Economia criativa",
+   "proposta": "Firmar parcerias com escolas e universidades para formação e produção cultural",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      103
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Gestão e participação",
+   "proposta": "Estruturar o Sistema Estadual de Cultura, com plano estadual e conselho de cultura fortalecido",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      105
+     ],
+     "nota": ""
+    },
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      902
+     ],
+     "nota": "Plano cultural e turístico 2027–2030 atualizado"
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Gestão e participação",
+   "proposta": "Construir a política esportiva com escuta e participação social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      852
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Acesso descentralizado à cultura",
+   "proposta": "Criar ação cultural itinerante que leve apresentações e oportunidades a novos talentos em todos os municípios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      826,
+      827
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Comunicação pública",
+   "proposta": "Modernizar a Rádio Roraima, iniciando operação em simulcast AM/FM e expandindo a rede estadual de rádio pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      894,
+      895,
+      900,
+      901
+     ],
+     "nota": ""
+    }
+   }
+  }
+ ],
+ "blocos": {
+  "governador-rr-arthur-henrique-230002549223": {
+   "359": {
+    "texto": "Da mesma forma, a cultura é um importante ativo de desenvolvimento. O fortalecimento das manifestações culturais, da produção artística, da economia criativa, do patrimônio histórico e das tradições indígenas e regionais contribui para preservar a identidade de Roraima, fortalecer o sentimento de pertencimento e gerar novas oportunidades de trabalho e renda para artistas, produtores culturais, artesãos e empreendedores.",
+    "pagina": 30
+   },
+   "367": {
+    "texto": "• ​Calendário estadual de eventos e apoio aos festivais municipais.",
+    "pagina": 31
+   },
+   "368": {
+    "texto": "• ​Equipamentos culturais no interior, com o Parque do Rio Branco servindo de referência de modelo.",
+    "pagina": 31
+   },
+   "369": {
+    "texto": "• ​ Valorização da produção cultural roraimense: artesanato, música e as manifestações próprias de cada região do Estado.",
+    "pagina": 31
+   },
+   "411": {
+    "texto": "Quadra e campo de qualidade em bairro periférico não é luxo, é política de segurança pública e de permanência escolar. O modelo deve ser implantado justamente em áreas de baixo IDH e alta vulnerabilidade social, com campo de grama sintética, alambrado, vestiário, acesso pavimentado e iluminação. A engenharia do programa é simples e replicável: o Estado constrói, o município indica e cede o terreno.",
+    "pagina": 35
+   },
+   "413": {
+    "texto": "• ​ Iluminação não é item opcional, é o principal. Com o calor de Boa Vista e do lavrado, o uso real ocorre no fim da tarde e à noite. Campo sem torre de luz fica vazio metade do tempo.",
+    "pagina": 35
+   },
+   "414": {
+    "texto": "• Cobertura ou sombreamento nas áreas de convivência, pelo mesmo motivo.",
+    "pagina": 35
+   },
+   "415": {
+    "texto": "• Prioridade territorial definida por dado, e não por conveniência política: bairros com maior vulnerabilidade social em Boa Vista e sede dos municípios do interior, começando pelos que hoje não têm nenhum equipamento esportivo público em condições de uso.​",
+    "pagina": 35
+   },
+   "417": {
+    "texto": "Cada unidade virá acompanhada de programação no contraturno escolar, com monitoria esportiva, em articulação com as escolas estaduais e com as instituições de ensino superior do Estado.",
+    "pagina": 35
+   }
+  },
+  "governador-rr-rosi-aires-230002552060": {
+   "99": {
+    "texto": "Roraima precisa parar de gastar fortunas com shows por dois anos e investir em escolas de música e equipamentos culturais permanentes. A cultura é desenvolvimento, pertencimento, prevenção à violência e geração de renda.",
+    "pagina": 6
+   },
+   "101": {
+    "texto": "Escolas de Música e Museus: Construir escolas de música de verdade com concursos públicos para professores. Reformar e reabrir os museus, incluindo a criação do Museu do Genocídio Indígena da Amazônia, com escolas de música integradas ao seu espaço. \n•",
+    "pagina": 6
+   },
+   "102": {
+    "texto": "Pontos de Cultura e Vale-Cultura: Implementar Pontos de Cultura em todos os territórios com editais simplificados. Criar o Vale-Cultura para jovens da cidade e do campo, garantindo acesso a livros, cinema, teatro e música. \n•",
+    "pagina": 6
+   },
+   "103": {
+    "texto": "Festivais e Economia Criativa: Apoiar o calendário de festivais de cultura indígena, popular e migrante. Fomentar o audiovisual, a literatura e o artesanato como geradores de renda e identidade. Criar editais de produção local e formar parcerias com escolas e universidades. \n•",
+    "pagina": 6
+   },
+   "104": {
+    "texto": "Esporte nos Territórios: Promover jogos escolares, campeonatos intermunicipais, esporte indígena, ciclismo, canoagem, futebol comunitário e atividades ao ar livre. Manter e ampliar vilas e complexos esportivos regionais. \n•",
+    "pagina": 6
+   },
+   "105": {
+    "texto": "Sistema Estadual de Cultura: Plano estadual, conselho fortalecido, editais descentralizados, economia criativa, memória material e imaterial e calendário cultural regional.",
+    "pagina": 6
+   }
+  },
+  "governador-rr-soldado-sampaio-230002551571": {
+   "815": {
+    "texto": "• Fortalecer a cultura e o turismo como vetores de identidade e renda.",
+    "pagina": 53
+   },
+   "816": {
+    "texto": "• Ampliar o acesso ao esporte e ao lazer em todo o Estado.",
+    "pagina": 53
+   },
+   "824": {
+    "texto": "10.1. São João no Parque Anauá e Réveillon no Parque Anauá",
+    "pagina": 54
+   },
+   "825": {
+    "texto": "Fortalecimento e ampliação do São João no Parque Anauá, consolidado como o maior São João do Norte do Brasil, promovendo cultura, turismo, geração de emprego, renda e valorização das tradições populares de Roraima. Realização do Réveillon no Parque Anauá, com atrações culturais, musicais e turísticas, fortalecendo o calendário oficial de eventos e valorizando os artistas locais.",
+    "pagina": 54
+   },
+   "826": {
+    "texto": "10.2. Acesso Cultural e Editais de Incentivo",
+    "pagina": 54
+   },
+   "827": {
+    "texto": "Criação de ação itinerante para oportunizar novos talentos a apresentarem sua arte e seus projetos em todos os municípios.",
+    "pagina": 54
+   },
+   "828": {
+    "texto": "Ampliação e fortalecimento dos editais da Lei de Incentivo à Cultura e da PNAB, garantindo apoio aos fazedores de cultura, incentivo à produção artística e democratização do acesso aos recursos culturais.",
+    "pagina": 54
+   },
+   "838": {
+    "texto": "10.5. Roraima em Movimento: Esporte, Juventude e Cidadania",
+    "pagina": 55
+   },
+   "840": {
+    "texto": "• Esporte Perto do Povo. Festivais, FanFest comunitário e atividades recreativas.",
+    "pagina": 55
+   },
+   "841": {
+    "texto": "• Futebol Amador Forte. Projeto Futebol Amador com equipes masculinas e femininas.",
+    "pagina": 55
+   },
+   "842": {
+    "texto": "• Roraima Amador. Intermunicipal de Futebol Amador.",
+    "pagina": 55
+   },
+   "843": {
+    "texto": "• Nossas Raízes em Campo. Jogos Indígenas de Futebol de Campo.",
+    "pagina": 55
+   },
+   "846": {
+    "texto": "• Mulheres no Esporte, Roraima Mais Forte. Ampliação da participação feminina.",
+    "pagina": 56
+   },
+   "847": {
+    "texto": "• Novas Modalidades, Novas Oportunidades. Boxe, handebol de areia e oficinas diversas.",
+    "pagina": 56
+   },
+   "848": {
+    "texto": "• Servidor em Movimento, Governo Integrado. Torneio",
+    "pagina": 56
+   },
+   "849": {
+    "texto": "Intersecretarias.",
+    "pagina": 56
+   },
+   "850": {
+    "texto": "• Formar quem Forma Campeões. Capacitação de professores, técnicos, árbitros e gestores.",
+    "pagina": 56
+   },
+   "851": {
+    "texto": "• ProEsporte. Workshop e estímulo a parcerias para projetos esportivos sustentáveis.",
+    "pagina": 56
+   },
+   "852": {
+    "texto": "• Gestão Participativa. Construção da política esportiva com escuta e participação.",
+    "pagina": 56
+   },
+   "853": {
+    "texto": "• Planejamento Hoje, Esporte Forte Amanhã. Calendário esportivo",
+    "pagina": 56
+   },
+   "854": {
+    "texto": "2027 e anos subsequentes, organizado.",
+    "pagina": 56
+   },
+   "880": {
+    "texto": "• São João no Parque",
+    "pagina": 58
+   },
+   "881": {
+    "texto": "Anauá 2026 ampliado. \n•",
+    "pagina": 58
+   },
+   "882": {
+    "texto": "EXPOFERR 2026",
+    "pagina": 58
+   },
+   "883": {
+    "texto": "valorizando ainda mais os artistas locais e a economia criativa.",
+    "pagina": 58
+   },
+   "886": {
+    "texto": "• Lançamento dos editais culturais",
+    "pagina": 58
+   },
+   "887": {
+    "texto": "(PNAB e Lei de Incentivo).",
+    "pagina": 58
+   },
+   "890": {
+    "texto": "• Réveillon no Parque",
+    "pagina": 58
+   },
+   "891": {
+    "texto": "Anauá realizado.",
+    "pagina": 58
+   },
+   "894": {
+    "texto": "• Início da operação em simulcast da Rádio Roraima",
+    "pagina": 58
+   },
+   "895": {
+    "texto": "(AM/FM).",
+    "pagina": 58
+   },
+   "896": {
+    "texto": "• Calendário esportivo 2027 organizado e divulgado.",
+    "pagina": 58
+   },
+   "900": {
+    "texto": "• Rede Roraima de",
+    "pagina": 58
+   },
+   "901": {
+    "texto": "Rádio Pública em expansão.",
+    "pagina": 58
+   },
+   "902": {
+    "texto": "• Plano cultural e turístico 2027–2030 atualizado.",
+    "pagina": 58
+   }
+  }
+ }
+}
