@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "direitos-rj.json",
-  "gerado_em": "2026-09-14T01:41:37Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:43:37Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,23 +45,382 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Mulheres",
-   "proposta": "Promover a autonomia econômica das mulheres, com qualificação profissional e apoio a mulheres chefes de família em vulnerabilidade",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Garantir acessibilidade física em todos os prédios e equipamentos públicos estaduais, com plano de adaptação (rampas, sinalização, banheiros adaptados, circulação)",
    "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2801,
+      2809,
+      2815,
+      2829
+     ],
+     "nota": "Meta de universalização até 2030, com diagnóstico prévio"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1522,
+      1526,
+      2352
+     ],
+     "nota": "Inclui mapeamento prévio e adequação de espaços de cultura, esporte, educação e saúde"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Ampliar canais de denúncia e a rede de proteção contra violência e abandono de idosos e pessoas com deficiência, integrando serviços de proteção e saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2803,
+      2812,
+      2825
+     ],
+     "nota": "Foco em reduzir subnotificação, com canais acessíveis e fluxo de proteção"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      295,
+      296
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Garantir atendimento público acessível e acolhedor a pessoas com deficiência e neurodivergentes em prédios e serviços estaduais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      210,
+      247
+     ],
+     "nota": "Espaços sensoriais em prédios públicos para pessoas neurodivergentes"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2799,
+      2811,
+      2824
+     ],
+     "nota": "Intérpretes de LIBRAS no atendimento público e acessibilidade digital"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2349
+     ],
+     "nota": "Centros públicos de ensino e difusão de Libras nas regiões do estado"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Promover inclusão de pessoas com deficiência no mundo do trabalho, com qualificação e fiscalização da Lei de Cotas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      296
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2352
+     ],
+     "nota": "Inclui ampliar quadro de servidores com deficiência e apoio a cooperativas"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Apoiar as famílias cuidadoras de pessoas com deficiência e neurodivergentes, com acolhimento e política de cuidado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      210,
+      250
+     ],
+     "nota": "Mães atípicas: acolhimento psicológico, qualificação e polos regionais"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2802,
+      2807
+     ],
+     "nota": "Rede de Centros-Dia com cuidado diurno para aliviar famílias"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2352
+     ],
+     "nota": "Política de cuidado com alternativas à institucionalização"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Garantir acessibilidade universal nos sistemas de transporte estaduais (trens, metrô, barcas, ônibus intermunicipais) e no entorno das estações",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1526,
+      2349
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Instituir planos regionais de acessibilidade em cada região do estado com participação social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1528,
+      1529,
+      1532,
+      1535
+     ],
+     "nota": "Metas pactuadas com municípios para calçadas, praças, sinais sonoros e banheiros"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Criar uma Secretaria Estadual dos Direitos da Pessoa com Deficiência com autonomia administrativa e orçamentária",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2349
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Instituir Fundo Estadual dos Direitos da Pessoa com Deficiência para financiar acessibilidade, inclusão e tecnologias assistivas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2349
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Garantir educação inclusiva na rede estadual, com escolas acessíveis, salas de recursos e ampliação de cargos de Atendimento Educacional Especializado e profissionais de apoio",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2349
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Fortalecer a rede estadual de saúde para atendimento integral às pessoas com deficiência, ampliando habilitação, reabilitação, terapias, órteses, próteses e tecnologias assistivas pelo SUS",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2352
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Criar programa estadual de mobilidade inclusiva com crédito subsidiado e desburocratização de isenções para aquisição de veículos por pessoas com deficiência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2352
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Garantir prioridade às pessoas com deficiência nos programas estaduais de habitação e criar programa de adaptação e reforma de moradias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2352
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Incorporar pessoas com deficiência aos planos de prevenção e resposta a eventos climáticos extremos, com cadastro em áreas de risco e sistemas acessíveis de alerta e abrigamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2349,
+      2355
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Fomentar cultura e esporte para pessoas com deficiência, com editais específicos, acessibilidade comunicacional (Libras, audiodescrição) e fortalecimento do esporte paralímpico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2355
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Adotar o combate ao capacitismo como princípio transversal das políticas estaduais, com formação permanente de servidores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2349,
+      2355
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Garantir acessibilidade digital nos serviços e canais digitais do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2804,
+      2810
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Tratar as políticas para as mulheres como compromisso transversal a todas as áreas de governo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      11,
+      78,
+      79,
+      80
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      345,
+      346
+     ],
+     "nota": "Plano Estadual de Igualdade de Gênero e Raça como instrumento"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Promover a autonomia econômica das mulheres, com qualificação profissional e apoio à geração de renda, priorizando mulheres em vulnerabilidade e chefes de família",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       2694,
       2699,
+      2700,
       3544
      ],
-     "nota": "Programa Mulher que Avança, com crédito, capacitação e conexão com mercados"
+     "nota": "Programa Mulher que Avança, com cobertura nas 12 regiões"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -70,14 +429,21 @@
       210,
       296
      ],
-     "nota": "Autonomia e qualificação para mulheres chefes de família"
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      663
+     ],
+     "nota": "Organização produtiva de mulheres de favelas e bairros pobres"
     }
    }
   },
   {
-   "id": "p2",
-   "subtema": "Mulheres",
-   "proposta": "Criar cartão ou benefício de apoio direto de renda a mulheres em vulnerabilidade financeira, com contrapartidas de qualificação e inserção produtiva",
+   "id": "p20",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Criar cartão/benefício de apoio direto e microcrédito produtivo a mulheres em vulnerabilidade financeira, com contrapartidas de qualificação",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -85,33 +451,16 @@
      "blocos": [
       2702,
       2718,
-      2723
-     ],
-     "nota": "Cartão Autonomia"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Mulheres",
-   "proposta": "Oferecer microcrédito produtivo a mulheres empreendedoras, com expansão para o interior e periferias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2718,
-      2721,
-      2724,
-      2725
+      2723,
+      2724
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p4",
-   "subtema": "Mulheres",
+   "id": "p21",
+   "subtema": "Direitos das mulheres",
    "proposta": "Ampliar a rede de creches e equipamentos de cuidado como condição para a inserção da mulher no mercado de trabalho",
    "n_concorda": 1,
    "posicoes": {
@@ -127,50 +476,9 @@
    }
   },
   {
-   "id": "p5",
-   "subtema": "Mulheres",
-   "proposta": "Tratar a política para as mulheres como eixo transversal, presente em todas as áreas e decisões de governo",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      11,
-      78,
-      79,
-      80
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2700,
-      2732
-     ],
-     "nota": "Integração do programa às demais frentes, com coordenação pela pasta da mulher"
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Mulheres",
-   "proposta": "Garantir atendimento de saúde adequado à mulher em todas as etapas da vida",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      210
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Mulheres",
-   "proposta": "Apoiar a maternidade no ambiente de trabalho, com estímulo a salas de amamentação e selo de reconhecimento a empresas",
+   "id": "p22",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Apoiar a maternidade no ambiente de trabalho com salas de amamentação e selo de reconhecimento a empresas",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -183,8 +491,8 @@
    }
   },
   {
-   "id": "p8",
-   "subtema": "Mulheres",
+   "id": "p23",
+   "subtema": "Direitos das mulheres",
    "proposta": "Ampliar a participação mínima de mulheres na força de trabalho das obras públicas estaduais, com qualificação e fiscalização do cumprimento",
    "n_concorda": 1,
    "posicoes": {
@@ -198,231 +506,70 @@
    }
   },
   {
-   "id": "p9",
-   "subtema": "Enfrentamento à violência contra a mulher",
-   "proposta": "Fortalecer a rede estadual de proteção às mulheres em situação de violência, com prevenção, acolhimento e resposta rápida",
-   "n_concorda": 2,
+   "id": "p24",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Garantir atenção integral à saúde da mulher em todas as etapas da vida",
+   "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      80,
       210
      ],
      "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1027,
-      1067
-     ],
-     "nota": "Articulação de tecnologia, segurança pública e assistência social"
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Garantir atendimento acessível e inclusão de pessoas com deficiência nos serviços públicos estaduais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2799,
-      2801,
-      3548
-     ],
-     "nota": ""
-    },
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      296
-     ],
-     "nota": "Foco em inclusão pelo estudo, qualificação e trabalho"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Criar espaços sensoriais nos prédios públicos para atendimento de pessoas neurodivergentes",
+   "id": "p25",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Implementar programa e pacto estaduais de promoção da igualdade de gênero e enfrentamento à violência contra a mulher, sob supervisão do conselho estadual da mulher",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      247
+      363
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p12",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Estruturar atendimento estadual à pessoa com autismo e neurodivergências e a suas famílias, com polos regionais",
+   "id": "p26",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Liderar pacto com empresas e sociedade civil pela igualdade salarial entre homens e mulheres, brancos e negros, nos termos da Lei 14.611/2023",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      210,
-      250
+      345
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p13",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Apoiar mães atípicas com acolhimento psicológico, qualificação profissional e orientação às famílias",
+   "id": "p27",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Garantir paridade de gênero e raça no secretariado do governo estadual",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      250
+      345
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Executar plano de acessibilidade física em todos os prédios públicos estaduais, com meta de universalização",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2809,
-      2815,
-      2827,
-      2829
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Assegurar acessibilidade digital nos serviços e canais digitais do Estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2804,
-      2810,
-      2824
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Disponibilizar intérpretes de LIBRAS no atendimento público e em serviços essenciais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2811,
-      2824,
-      2827
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Idosos",
-   "proposta": "Fortalecer a rede de proteção do idoso contra violência e abandono, com ampliação de canais de denúncia e integração com serviços de saúde e proteção",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      295
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2803,
-      2812,
-      2825
-     ],
-     "nota": "Ênfase em reduzir a subnotificação e criar fluxo de proteção"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Idosos",
-   "proposta": "Criar rede de Centros-Dia para idosos e pessoas com deficiência, com cuidado diurno, reabilitação e convívio",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2807,
-      2814,
-      2828
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Idosos",
-   "proposta": "Implantar programas de convívio intergeracional para combater o isolamento e apoiar famílias cuidadoras",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2802,
-      2808,
-      2828
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Idosos",
-   "proposta": "Coordenar a política de idosos e pessoas com deficiência de forma intersetorial, com participação dos conselhos e painel público de monitoramento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2805,
-      2836,
-      2837
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
+   "id": "p28",
    "subtema": "Juventude",
-   "proposta": "Criar política estadual de juventude integrada e permanente, com porta única de entrada, busca ativa e priorização dos territórios mais vulneráveis",
-   "n_concorda": 1,
+   "proposta": "Criar política estadual de juventude integrada e permanente, articulando educação, esporte, qualificação e emprego, com priorização de territórios vulneráveis",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -433,31 +580,22 @@
       2639,
       3542
      ],
-     "nota": "Programa Trilhas de Vida"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Juventude",
-   "proposta": "Conceder bolsa-permanência mensal a jovens em territórios sob domínio armado, condicionada a matrícula, frequência mínima e qualificação, com mentor designado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+     "nota": "Programa Trilhas de Vida, com porta única, prontuário do jovem e busca ativa"
+    },
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2649,
-      2650,
-      2665
+      379,
+      380
      ],
-     "nota": ""
+     "nota": "Plano Estadual de Juventude sob supervisão do COJUERJ, com participação social"
     }
    }
   },
   {
-   "id": "p23",
+   "id": "p29",
    "subtema": "Juventude",
-   "proposta": "Oferecer oportunidades de inclusão pelo estudo, qualificação e trabalho a jovens em situação de vulnerabilidade",
+   "proposta": "Garantir oportunidades de inclusão de jovens vulneráveis por estudo, qualificação e trabalho",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -471,38 +609,40 @@
      "posicao": "concorda",
      "blocos": [
       2641,
-      2669
-     ],
-     "nota": "Mobilização do Sistema S e do setor privado como corresponsáveis"
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Juventude",
-   "proposta": "Estabelecer metas de redução do percentual de jovens fora da escola e do trabalho, com monitoramento por indicadores públicos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2656,
-      2657,
-      2678
+      2649
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p25",
-   "subtema": "Igualdade racial",
+   "id": "p30",
+   "subtema": "Juventude",
+   "proposta": "Criar bolsa-permanência mensal condicionada a matrícula, frequência mínima e qualificação, com mentor designado para jovens de 14 a 24 anos em territórios sob domínio armado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2649,
+      2650,
+      2665,
+      2669
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Juventude",
    "proposta": "Instituir política estadual de prevenção aos homicídios de crianças e adolescentes, com protocolo de proteção a jovens ameaçados de morte",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
+      2640,
       2643,
       2644,
       2666,
@@ -513,23 +653,80 @@
    }
   },
   {
-   "id": "p26",
-   "subtema": "Igualdade racial",
-   "proposta": "Criar comitê intersetorial de promoção da igualdade racial e mecanismos de enfrentamento ao racismo, com canais de denúncia e acompanhamento de casos",
+   "id": "p32",
+   "subtema": "Juventude",
+   "proposta": "Estabelecer meta de redução do índice de jovens de 15 a 29 anos fora da escola e do trabalho",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2640,
-      2644
+      2656,
+      2657
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p27",
+   "id": "p33",
+   "subtema": "Juventude",
+   "proposta": "Criar governança intersetorial da política de juventude com comitê gestor, painel público de metas por território e institucionalização permanente do programa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2670,
+      2678,
+      2679
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Juventude",
+   "proposta": "Revisar e fortalecer o Plano Estadual de Atendimento Socioeducativo para garantir reinserção social de jovens egressos do DEGASE",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      374,
+      375
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Igualdade racial",
+   "proposta": "Implementar política estadual de promoção da igualdade racial e de enfrentamento ao racismo, com instância intersetorial de coordenação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      350,
+      361
+     ],
+     "nota": "Plano Estadual de Igualdade Racial supervisionado pelo CEDINE"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2643,
+      2644
+     ],
+     "nota": "Comitê Intersetorial de Igualdade Racial e canais de denúncia de racismo"
+    }
+   }
+  },
+  {
+   "id": "p36",
    "subtema": "Igualdade racial",
    "proposta": "Fomentar o empreendedorismo negro e afrodescendente",
    "n_concorda": 1,
@@ -544,106 +741,379 @@
    }
   },
   {
-   "id": "p28",
-   "subtema": "Documentação e cidadania",
-   "proposta": "Universalizar o acesso à documentação civil básica, entregando o documento no momento em que a necessidade surge, como porta de entrada para políticas sociais",
+   "id": "p37",
+   "subtema": "Igualdade racial",
+   "proposta": "Criar fundo estadual de reparação histórica e humanitária para descendentes de escravizados e indígenas",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1028,
-      1043
+      2194
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p29",
-   "subtema": "Documentação e cidadania",
-   "proposta": "Implantar unidades interligadas de registro civil em todas as maternidades da rede estadual, para que o recém-nascido saia com CPF e certidão",
+   "id": "p38",
+   "subtema": "Participação social e conselhos",
+   "proposta": "Fortalecer os conselhos estaduais de direitos (direitos humanos, mulher, juventude, LGBT, igualdade racial, criança e adolescente, pessoa idosa e pessoa com deficiência), com estrutura e poder deliberativo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      279,
+      280,
+      281,
+      282,
+      2349
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2836
+     ],
+     "nota": "Apenas participação dos conselhos do idoso e da pessoa com deficiência na governança"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Povos e comunidades tradicionais",
+   "proposta": "Reconhecer e apoiar comunidades quilombolas e comunidades tradicionais, incorporando memória e sítios sagrados afrodescendentes e indígenas ao patrimônio estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      387,
+      2198
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Povos e comunidades tradicionais",
+   "proposta": "Disponibilizar espaço e recursos para um centro indígena autogestionado de preservação e ensino da cultura dos povos originários",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2200
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Pessoas idosas",
+   "proposta": "Criar rede de centros-dia e programas de convívio intergeracional para pessoas idosas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2807,
+      2808,
+      2814,
+      2827,
+      2828,
+      3548
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Pessoas idosas",
+   "proposta": "Implementar as diretrizes do Plano Estadual de Saúde da Pessoa Idosa sob supervisão do conselho estadual da pessoa idosa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      382
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Direitos LGBT",
+   "proposta": "Instituir plano estadual de políticas LGBT e políticas de combate à LGBTfobia, com supervisão do conselho estadual da população LGBT",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      352,
+      365,
+      366
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Direitos LGBT",
+   "proposta": "Oferecer cursos de formação profissional voltados a pessoas transexuais e travestis para inserção no mercado de trabalho",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      663
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Cidadania e documentação",
+   "proposta": "Universalizar o acesso a documentação civil básica, com unidades de registro civil em maternidades, centros de atendimento integrado de documentos e mutirões de busca ativa em comunidades e prisões",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
+      1043,
       1071
      ],
-     "nota": ""
+     "nota": "Gratuidade assistida para quem comprovar renda de até um salário mínimo"
     }
    }
   },
   {
-   "id": "p30",
-   "subtema": "Documentação e cidadania",
-   "proposta": "Reestruturar postos de atendimento (Poupa Tempo e DETRAN) como centros de documentação integral, reunindo RG, CPF e certidões em um único atendimento",
+   "id": "p46",
+   "subtema": "Trabalho e ações afirmativas",
+   "proposta": "Condicionar incentivos fiscais, crédito público e acesso a compras governamentais ao cumprimento de critérios de diversidade, igualdade salarial, acessibilidade, respeito ao nome social e combate à discriminação",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1071
+      663
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p31",
-   "subtema": "Documentação e cidadania",
-   "proposta": "Realizar mutirões de busca ativa documental em comunidades e unidades prisionais, com gratuidade assistida para quem comprovar renda de até um salário mínimo",
+   "id": "p47",
+   "subtema": "Trabalho e ações afirmativas",
+   "proposta": "Criar indicadores permanentes e territorializados sobre emprego, renda e progressão profissional de grupos vulnerabilizados, com fiscalização pelos movimentos sociais",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1071
+      663
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Apoio aos municípios em políticas sociais",
-   "proposta": "Prestar apoio técnico, repasse e cobrança de resultados aos municípios, sobretudo do interior, na execução das políticas sociais",
+   "id": "p48",
+   "subtema": "Trabalho e ações afirmativas",
+   "proposta": "Exigir de fornecedores e terceirizados do Estado boas práticas de igualdade, formação adequada e canais de denúncia",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      345
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Memória, verdade e justiça",
+   "proposta": "Instituir política estadual de memória e verdade com participação social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2156
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Memória, verdade e justiça",
+   "proposta": "Criar comissão estadual da verdade sobre execuções sumárias, desaparecimentos forçados e tortura praticados por agentes públicos desde 1988",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2190
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Memória, verdade e justiça",
+   "proposta": "Criar comissão estadual da verdade, memória e justiça da escravidão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2192
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Liberdade religiosa e laicidade",
+   "proposta": "Garantir a laicidade do Estado e a liberdade de crença e de não-crença, implementando o Plano Estadual e o Estatuto da Liberdade Religiosa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      354,
+      357,
+      368,
+      369
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Criança e adolescente",
+   "proposta": "Instituir plano estadual de atendimento à criança e ao adolescente sob supervisão do conselho estadual, com participação social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      371,
+      372
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Criança e adolescente",
+   "proposta": "Intensificar a fiscalização e o combate à exploração sexual de crianças e adolescentes em áreas de interesse turístico",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2320
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Garantir cobertura do programa de autonomia econômica das mulheres nas 12 regiões do estado, com presença no interior e nas periferias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      663
+     ],
+     "nota": "Propõe organização produtiva de mulheres vulneráveis em suas localidades, favelas e bairros pobres"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2721
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Avaliar o impacto do programa de autonomia econômica feminina, ajustar as linhas de crédito e institucionalizá-lo como política permanente até 2030",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2725
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Direitos das mulheres",
+   "proposta": "Coordenar o programa de autonomia econômica feminina pela pasta de políticas para as mulheres, em articulação com as secretarias de trabalho e desenvolvimento social e o banco de fomento estadual, com financiamento por orçamento, fundos de crédito produtivo, Sistema S e painel público de transparência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2732
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Pessoas com deficiência e acessibilidade",
+   "proposta": "Articular saúde, assistência social e direitos humanos em torno da autonomia das pessoas idosas e pessoas com deficiência",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      210
+      247,
+      250,
+      295,
+      296
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Juventude",
-   "proposta": "Universalizar até 2030 a cobertura do programa de juventude nos territórios prioritários, com avaliação de impacto independente e institucionalização permanente como política de Estado",
-   "n_concorda": 1,
-   "posicoes": {
+     "nota": "Programa articula proteção, saúde e inclusão de idosos e PCD com rede integrada."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2352,
+      2355
+     ],
+     "nota": "Política estadual de cuidado com autonomia e vida independente; transversalidade em saúde e assistência"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2670
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Juventude",
-   "proposta": "Financiar o programa de juventude combinando orçamento estadual, contrapartida do PROPAG, crédito de ICMS vinculado à geração de emprego, parcerias com o Sistema S, setor privado, organismos de fomento e recursos federais, com custo estimado de cerca de R$ 400 milhões por ano para as trilhas de escola-esporte-família",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2679
+      2805
      ],
      "nota": ""
     }
@@ -852,10 +1322,6 @@
     "texto": "Coordenação pelas pastas de direitos humanos, assistência social e saúde, com participação dos conselhos do idoso e da pessoa com deficiência e monitoramento por painel público.",
     "pagina": 114
    },
-   "2837": {
-    "texto": "Financiamento por orçamento estadual, recursos federais de assistência social e acessibilidade e parcerias com municípios e organizações da sociedade civil. Valores a confirmar na estimação técnica.",
-    "pagina": 114
-   },
    "3542": {
     "texto": "Programa Estadual de Juventude — Trilhas de Vida",
     "pagina": 139
@@ -870,21 +1336,9 @@
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
-   "1027": {
-    "texto": "DIREITOS HUMANOS DAS MULHERES E PROTEÇÃO ATIVA",
-    "pagina": 45
-   },
-   "1028": {
-    "texto": "UNIVERSALIZAÇÃO DOCUMENTAL E COMBATE AOS \"INVISÍVEIS\"",
-    "pagina": 45
-   },
    "1043": {
     "texto": "A documentação básica será tratada como porta de entrada para a cidadania, disponibilizada no próprio momento em que a necessidade surge — no nascimento, ou no primeiro atendimento —, e não como ônus burocrático adicional para quem já está em situação de vulnerabilidade.",
     "pagina": 46
-   },
-   "1067": {
-    "texto": "A proteção das mulheres em situação de violência exige políticas permanentes de prevenção, acolhimento e resposta rápida, articulando tecnologia, segurança pública e assistência social. O fortalecimento da rede estadual de proteção contribui para reduzir riscos, ampliar o acesso aos serviços especializados e garantir maior efetividade no cumprimento das medidas protetivas previstas na legislação.",
-    "pagina": 48
    },
    "1071": {
     "texto": "O Governo do Estado implantará unidades interligadas de registro civil em todas as maternidades da rede estadual, para que o recém-nascido saia do hospital já com CPF e certidão; reestruturará o Poupa Tempo e os postos do DETRAN-RJ como centros de documentação integral, reunindo RG, CPF e certidões em um único atendimento; e conduzirá mutirões de busca ativa em comunidades e unidades prisionais, com gratuidade assistida para quem comprovar renda de até um salário mínimo.",
@@ -937,6 +1391,172 @@
     "pagina": 42
    }
   },
-  "governador-rj-eduardo-paes-190002543380": {}
+  "governador-rj-eduardo-paes-190002543380": {},
+  "governador-rj-william-siri-190002536162": {
+   "279": {
+    "texto": "☼ Fortalecer os conselhos estaduais de politicas públicas, em especial, os conselhos de Defesa dos Direitos Humanos (CEDDH), de Juventude (COJUERJ), da Mulher (CEDIM), dos Direitos da População LGBT (CELGBT), dos Direitos do Negro",
+    "pagina": 11
+   },
+   "280": {
+    "texto": "(CEDINE), de Defesa da Criança e do Adolescente (CEDCA), dos Direitos da Pessoa",
+    "pagina": 11
+   },
+   "281": {
+    "texto": "Idosa (CEDEPI) e da Política de Integração das Pessoas Portadores de Deficiência",
+    "pagina": 11
+   },
+   "282": {
+    "texto": "(CEPDE), dando-lhes estrutura e capacidade de avaliação, consulta e deliberação sobre as políticas públicas de promoção, garantia e defesa dos direitos e liberdades dessas populações;",
+    "pagina": 11
+   },
+   "345": {
+    "texto": "☼ Implementar um Plano Estadual de Igualdade de Gênero e Raça; ●​ Garantir paridade de gênero e raça no secretariado do governo do Estado; ●​ Exigir de fornecedores e terceirizados a adoção de boas práticas, como formação adequada e canais de denúncia; ●​ Liderar um pacto entre governo do Estado, empresas e sociedade civil, para promoção da igualdade salarial entre homens, mulheres, brancos e negros nos setores públicos e privados do estado, nos termos da Lei Federal nº",
+    "pagina": 15
+   },
+   "346": {
+    "texto": "14611/2023; ●​ Promover a igualdade de gênero e o acesso igualitário de homens e mulheres à administração pública, assim como desenvolver políticas públicas para o combate às práticas machistas, à violência de gênero e a todas as formas de discriminação contra a mulher;",
+    "pagina": 15
+   },
+   "350": {
+    "texto": "☼ Promover a igualdade racial e o acesso igualitário de todas as etnias à administração pública, assim como desenvolver políticas públicas para o combate às práticas racistas, à violência racial e a todas as formas de discriminação contra qualquer etnia;",
+    "pagina": 15
+   },
+   "352": {
+    "texto": "☼ Promover os direitos LGBT e o acesso igualitário da população LGBT à administração pública, assim como desenvolver políticas públicas para o combate às práticas lesbo/homo/bi/transfóbicas, à violência lesbo/homo/bi/transfóbica e a todas as formas de discriminação contra a população LGBT;",
+    "pagina": 15
+   },
+   "354": {
+    "texto": "☼ Garantir a laicidade do Estado, em todas as suas instâncias e, em particular, na educação pública, a não ingerência das igrejas nas políticas públicas, a liberdade de crença e de não-crença e o pleno exercício dos direitos de todas as comunidades",
+    "pagina": 15
+   },
+   "357": {
+    "texto": "religiosas, assim como dos ateus e agnósticos, sem discriminação ou privilégios de qualquer tipo;",
+    "pagina": 16
+   },
+   "361": {
+    "texto": "☼ Implementar todas as diretrizes do Plano Estadual de Igualdade Racial, sob a supervisão do Conselho Estadual de Defesa dos Direitos do Negro (CEDINE), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 16
+   },
+   "363": {
+    "texto": "☼ Implementar e fortalecer todas as ações propostas pelo Programa Estadual de Promoção da Igualdade de Gênero, bem como o Pacto Estadual de Enfrentamento à Violência contra a Mulher, sob a supervisão do Conselho Estadual da Mulher (CEDM), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 16
+   },
+   "365": {
+    "texto": "☼ Instituir um Plano Estadual de Políticas LGBTIAPN+, sob a supervisão do Conselho Estadual dos Direitos da População LGBT (CELGBT), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação, em consonância com a Lei Estadual 9496/2021 (Rio",
+    "pagina": 16
+   },
+   "366": {
+    "texto": "Sem LGBTIFOBIA);",
+    "pagina": 16
+   },
+   "368": {
+    "texto": "☼ Implementar todas as diretrizes estabelecidas pelo Plano Estadual de Liberdade Religiosa e o Estatuto da Liberdade Religiosa (instituído pela Lei",
+    "pagina": 16
+   },
+   "369": {
+    "texto": "Estadual nº 8813/2018), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 16
+   },
+   "371": {
+    "texto": "☼ Instituir um Plano Estadual de Atendimento à Criança e ao Adolescente, sob a supervisão do Conselho Estadual de Defesa da Criança e do Adolescente",
+    "pagina": 16
+   },
+   "372": {
+    "texto": "(CEDCA), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 16
+   },
+   "374": {
+    "texto": "☼ Garantir a revisão e fortalecimento do Plano Estadual de Atendimento",
+    "pagina": 16
+   },
+   "375": {
+    "texto": "Socioeducativo, de modo a estabelecer a reinserção social plena de jovens egressos do Departamento Geral de Ações Socioeducativas (DEGASE);",
+    "pagina": 16
+   },
+   "379": {
+    "texto": "☼ Instituir um Plano Estadual de Juventude, sob a supervisão do Conselho",
+    "pagina": 17
+   },
+   "380": {
+    "texto": "Estadual de Juventude (COJUERJ), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 17
+   },
+   "382": {
+    "texto": "☼ Implementar as diretrizes estabelecidas pelo Plano Estadual de Saúde da Pessoa Idosa, sob a supervisão do Conselho Estadual para Defesa dos Direitos da Pessoa Idosa (CEDEPI), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de implantação, cujo plano atual vigorará até 2031;",
+    "pagina": 17
+   },
+   "387": {
+    "texto": "☼ Promover os direitos das comunidades tradicionais e a valorização da memória dos territórios, combatendo o preconceito e a discriminação cultural.",
+    "pagina": 17
+   },
+   "663": {
+    "texto": "☼ Promover políticas de ações afirmativas no mundo do trabalho, para afirmar o protagonismo de setores sociais em condições de vulnerabilidade social, levando em consideração sua experiência histórica, suas demandas e necessidades específicas. ●​ Promover igualdade no acesso ao emprego, à renda e à progressão profissional; ●​ Incentivar e oferecer condições para a organização produtiva de mulheres em condições de vulnerabilidade social em suas localidades, notadamente moradoras de favelas e bairros pobres; ●​ Oferecer, em conjunto com a Secretaria de Estado de Educação, cursos voltados para a formação profissional de transexuais e travestis, visando ampliar as alternativas de inserção no mundo do trabalho. ●​ Condicionar a concessão de incentivos fiscais, crédito público e acesso às compras governamentais ao cumprimento de critérios de diversidade, igualdade salarial, trabalho, acessibilidade, respeito ao nome social e combate ao assédio e à discriminação; ●​ Criar indicadores permanentes e territorializados sobre emprego, renda e progressão profissional desses grupos, garantindo a participação dos movimentos sociais no acompanhamento e na fiscalização das políticas.",
+    "pagina": 35
+   },
+   "1522": {
+    "texto": "☼ Mapear a situação dos serviços de transporte coletivo, prédios públicos e equipamentos urbanos do Governo do Estado;",
+    "pagina": 90
+   },
+   "1526": {
+    "texto": "☼ Planejar um programa de reforma e adaptação para garantir o direito de acessibilidade às pessoas com mobilidade reduzida; ●​ Garantir que os espaços de cultura, de esporte, de educação e de saúde do Governo do Estado, sejam adequados para deficientes: sinalização visual e sonora, signos em braille, banheiros adaptados, degraus rebaixados, rampas de acesso, entre outros investimentos; ●​ Garantir que no entorno das estações de trem, metrô e barcas as calçadas sejam planas, com regularização, rampas de acesso e, em algumas situações, corrimões de acessibilidade; ●​ Diminuir os degraus dos ônibus intermunicipais e ampliar a quantidade dos ônibus e veículos adaptados para pessoas em cadeiras de rodas;",
+    "pagina": 90
+   },
+   "1528": {
+    "texto": "☼ Instituir planos regionais de acessibilidade em cada região do estado",
+    "pagina": 90
+   },
+   "1529": {
+    "texto": "(Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 90
+   },
+   "1532": {
+    "texto": "●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para garantir que os espaços de cultura, de esporte, de educação e de saúde, sejam adequados para deficientes: sinalização visual e sonora, signos em braille, banheiros adaptados, degraus rebaixados, rampas de acesso, entre outros investimentos; ●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para diminuir os degraus dos ônibus municipais e ampliar a quantidade de veículos adaptados para pessoas em cadeiras de rodas;",
+    "pagina": 91
+   },
+   "1535": {
+    "texto": "●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para garantir que as calçadas sejam planas, com regularização, rampas de acesso e, em algumas situações, corrimões de acessibilidade; ●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para garantir rampas de acesso e corrimões em todas as praças públicas; ●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para garantir que os sinais luminosos sejam acompanhados por sinais sonoros; ●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para garantir sinalização adequada para as pessoas cegas poderem detectar obstáculos nas ruas; ●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para ampliar as dimensões das portas dos banheiros públicos para permitir que pessoas em cadeiras de rodas possam usar o recinto de forma independente; ●​ Estabelecer metas, em acordo com a estrutura orçamentária de cada município, para garantir um mecanismo (botão no poste) que prolongue o tempo dos sinais para que as pessoas que usam muletas possam andar com segurança pelas ruas;",
+    "pagina": 92
+   },
+   "2156": {
+    "texto": "☼ Instituir um Política Estadual de Memória e Verdade, garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 128
+   },
+   "2190": {
+    "texto": "☼ Criar a Comissão Estadual da Verdade da Democracia, para recontar a história, preservar a memória, promover justiça e reparação, assim como, indicar as reformas institucionais necessárias para superar a atual cultura de violência institucional, focando em casos de execução sumária, desaparecimento forçado e tortura praticados por agentes públicos desde 1988;",
+    "pagina": 129
+   },
+   "2192": {
+    "texto": "☼ Criar a Comissão Estadual da Verdade, Memória e Justiça da Escravidão, para recontar a história, preservar a memória, promover justiça e reparação, assim como, indicar as reformas institucionais necessárias para superar o legado racista e colonialista da escravidão;",
+    "pagina": 129
+   },
+   "2194": {
+    "texto": "☼ Criar o Fundo Estadual para Reparação Histórica e Humanitária para os Descendentes de Escravizados e Indígenas (previsto pela Declaração de Durban, 2011);",
+    "pagina": 129
+   },
+   "2198": {
+    "texto": "☼ Apoiar e reconhecer as comunidades remanescentes de Quilombos e incorporar a memória e os sítios sagrados dos afrodescendentes e dos indígenas ao Patrimônio Histórico e Cultural da Estado;",
+    "pagina": 130
+   },
+   "2200": {
+    "texto": "☼ Disponibilizar espaço e recurso para a criação de um centro indígena vivo, plenamente autogestionado pelos indígenas, tendo como objetivo preservar a cultura indígena viva e não apenas registrada, sendo um ponto de referência para ensino da cultura e tecnologia dos povos originários.",
+    "pagina": 130
+   },
+   "2320": {
+    "texto": "☼ Intensificar a fiscalização e o combate à exploração sexual de crianças e adolescentes nas áreas de interesse turístico;",
+    "pagina": 136
+   },
+   "2349": {
+    "texto": "☼ Instituir a Secretaria Estadual dos Direitos da Pessoa com Deficiência, com autonomia administrativa e orçamentária, fortalecendo a coordenação das políticas de inclusão, acessibilidade e combate ao capacitismo em todas as áreas do governo do Estado; ☼ Fortalecer o Conselho Estadual dos Direitos da Pessoa com Deficiência, garantindo estrutura, orçamento e participação efetiva das pessoas com deficiência na formulação, acompanhamento e fiscalização das políticas públicas, seguindo o princípio de “Nada sobre nós sem nós”; ☼ Instituir o Fundo Estadual dos Direitos da Pessoa com Deficiência para financiar políticas de acessibilidade, inclusão, autonomia e acesso a tecnologias assistivas; ☼ Incorporar as pessoas com deficiência aos planos estaduais de prevenção e resposta aos eventos climáticos extremos, com cadastramento das pessoas residentes em áreas de risco e implantação de sistemas acessíveis de alerta, evacuação, abrigamento e comunicação; ☼ Garantir a acessibilidade das escolas estaduais, com obras de adaptação, recursos pedagógicos e materiais didáticos acessíveis, salas de recursos e condições adequadas para o acesso e a permanência dos estudantes com deficiência; ☼ Criar e ampliar os cargos de Atendimento Educacional Especializado (AEE), professores e profissionais de apoio na rede estadual, garantindo equipes qualificadas e formação permanente dos profissionais da educação para uma política efetivamente inclusiva; ☼ Implantar centros públicos de ensino e difusão da Libras nas diferentes regiões do estado, ampliando o acesso à língua e fortalecendo a inclusão e a autonomia da comunidade surda; ☼ Garantir acessibilidade universal nos trens, metrô, barcas e demais sistemas de transporte sob responsabilidade estadual, com adaptação das estações e veículos, fiscalização permanente e participação das pessoas com deficiência no planejamento e",
+    "pagina": 138
+   },
+   "2352": {
+    "texto": "acompanhamento da política de mobilidade; ☼ Garantir acessibilidade universal nos equipamentos públicos estaduais, incluindo parques, praias, espaços culturais, esportivos e de lazer, eliminando barreiras físicas, comunicacionais e atitudinais; ☼ Criar um Programa Estadual de Mobilidade Inclusiva, com linhas de crédito acessíveis, juros subsidiados e fundo garantidor para facilitar a aquisição de veículos por pessoas com deficiência, além de ampliar e desburocratizar o acesso às isenções tributárias; ☼ Ampliar as políticas de inclusão das pessoas com deficiência no mundo do trabalho, fortalecendo a fiscalização do cumprimento da Lei de Cotas e da Lei Brasileira de Inclusão e combatendo práticas discriminatórias nos processos de contratação e no ambiente de trabalho; ☼ Ampliar o quadro de servidores de pessoas com deficiência nos órgãos e empresas públicas estaduais, garantindo acessibilidade, adaptações razoáveis e condições adequadas para ingresso, permanência e desenvolvimento profissional; ☼ Criar políticas de incentivo e financiamento para cooperativas, empreendimentos de economia solidária e iniciativas de geração de trabalho e renda formadas por pessoas com deficiência e pessoas responsáveis pelo cuidado; ☼ Fortalecer a rede estadual de saúde para garantir atendimento integral às pessoas com deficiência, ampliando o acesso à habilitação, reabilitação, terapias, medicamentos, órteses, próteses e demais tecnologias assistivas pelo SUS; ☼ Desenvolver uma política estadual de cuidado e apoio às pessoas com deficiência e às pessoas responsáveis pelo cuidado, promovendo autonomia, vida independente e alternativas à institucionalização; ☼ Garantir prioridade às pessoas com deficiência nos programas estaduais de habitação, assegurando que as novas moradias sejam planejadas com critérios de acessibilidade e ampliando políticas de locação social e moradia assistida não institucional; ☼ Criar um programa estadual de apoio à adaptação e reforma de moradias de pessoas com deficiência, garantindo condições de acessibilidade, segurança, autonomia e permanência no território;",
+    "pagina": 139
+   },
+   "2355": {
+    "texto": "☼ Garantir acessibilidade plena na rede estadual de acolhimento e abrigamento, inclusive nos equipamentos utilizados em situações de emergência e desastres climáticos, assegurando atendimento adequado às diferentes deficiências; ☼ Criar editais e políticas estaduais de fomento à cultura que garantam recursos para artistas, produtores, coletivos e trabalhadores da cultura com deficiência, ampliando seu protagonismo e sua participação na produção cultural fluminense; ☼ Garantir acessibilidade física e comunicacional nos equipamentos, atividades e políticas culturais do Estado, com Libras, audiodescrição, legendagem, comunicação acessível e adequação dos espaços às normas de acessibilidade; ☼ Fortalecer o esporte paralímpico e inclusivo no estado, estabelecendo parcerias com clubes, federações e instituições públicas para ampliar categorias paralímpicas, formar profissionais especializados, realizar competições e garantir espaços para projetos esportivos voltados às pessoas com deficiência; ☼ Adotar o combate ao capacitismo como princípio transversal das políticas estaduais, promovendo formação permanente dos servidores públicos e garantindo que educação, saúde, transporte, habitação, trabalho, cultura, esporte, assistência social e defesa civil incorporem os direitos e as necessidades das pessoas com deficiência.​",
+    "pagina": 140
+   }
+  }
  }
 }

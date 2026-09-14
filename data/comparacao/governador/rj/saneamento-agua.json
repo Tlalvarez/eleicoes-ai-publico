@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "saneamento-agua-rj.json",
-  "gerado_em": "2026-09-14T01:26:01Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:17:38Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,14 +45,22 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Esgoto e despoluição de corpos hídricos",
-   "proposta": "Ampliar a coleta e o tratamento de esgoto, com prioridade às áreas de maior déficit de cobertura, rumo à universalização dos serviços",
-   "n_concorda": 2,
+   "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
+   "proposta": "Ampliar a coleta e o tratamento de esgoto até a cobertura completa, com prioridade às áreas de maior déficit",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -61,67 +69,57 @@
      ],
      "nota": "Via cobrança de metas contratuais das concessionárias"
     },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1143,
+      1145
+     ],
+     "nota": "Prioriza áreas de baixa renda e ETEs descentralizadas"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       2320,
       2326
      ],
-     "nota": "Foco na bacia da Baía de Guanabara, com meta de volume tratado"
+     "nota": "Foco na bacia da Baía de Guanabara"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Esgoto e despoluição de corpos hídricos",
-   "proposta": "Despoluir a Baía de Guanabara e os principais corpos hídricos do estado, articulando a ação ao avanço do saneamento",
+   "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
+   "proposta": "Executar planos de despoluição das baías e bacias hidrográficas estaduais",
    "n_concorda": 3,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2306,
-      2312
-     ],
-     "nota": ""
-    },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       490
      ],
-     "nota": "Despoluição como meta cobrada das concessionárias"
+     "nota": "Despoluição via controle de lançamentos irregulares"
     },
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      939,
-      953,
-      983
+      899
      ],
-     "nota": "Programa Baía Viva RJ, com monitoramento científico contínuo"
+     "nota": "Planos regionais com prefeituras, universidades e comunidades"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2312
+     ],
+     "nota": "Emissário submarino, ecobarreiras e desassoreamento"
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Esgoto e despoluição de corpos hídricos",
-   "proposta": "Executar a despoluição da Baía com obras e tecnologias específicas: emissário submarino, ecobarreiras em rios e canais, desassoreamento de calhas e tecnologias de recuperação aquática",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2312
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Esgoto e despoluição de corpos hídricos",
-   "proposta": "Estruturar parceria público-privada para limpeza da Baía e gestão de resíduos",
+   "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
+   "proposta": "Criar uma parceria público-privada e programa específico de limpeza da Baía de Guanabara e gestão de resíduos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -130,48 +128,27 @@
       939,
       983
      ],
-     "nota": ""
+     "nota": "Programa Baía Viva RJ"
     }
    }
   },
   {
-   "id": "p5",
-   "subtema": "Esgoto e despoluição de corpos hídricos",
-   "proposta": "Combater e controlar os lançamentos clandestinos e irregulares de esgoto e resíduos nos corpos d'água",
+   "id": "p4",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Garantir a segurança hídrica do estado, protegendo mananciais, reduzindo perdas e ampliando a reservação frente às mudanças climáticas",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      490
+      1118
      ],
      "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2306
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Esgoto e despoluição de corpos hídricos",
-   "proposta": "Reduzir as perdas de água nos sistemas de distribuição",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      490
-     ],
-     "nota": "Acompanhamento de índices e exigência de investimentos corretivos"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
+      2408,
       2421
      ],
      "nota": ""
@@ -179,95 +156,73 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Fiscalização e governança do saneamento",
-   "proposta": "Fortalecer o monitoramento e a fiscalização das concessionárias de saneamento quanto ao cumprimento das metas contratuais",
-   "n_concorda": 2,
+   "id": "p5",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Concluir e executar o Plano Estadual de Segurança Hídrica com prioridade ao Sistema Imunana-Laranjal, com prazo definido",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      490
-     ],
-     "nota": "Acompanhamento permanente de índices e exigência de investimentos"
-    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2320
+      2416,
+      2417,
+      2423,
+      2434,
+      2436
      ],
-     "nota": "Em articulação com as agências reguladoras"
+     "nota": "Meta de finalizar até 2028"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Criar Fundo Estadual de Pagamento por Serviços Ambientais para remunerar quem conserva nascentes e florestas produtoras de água",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2418,
+      2419,
+      2424,
+      2437,
+      2438,
+      2446
+     ],
+     "nota": "Financiado por cobrança do uso da água e ativos ambientais"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Proteger e recuperar nascentes e matas ciliares nas áreas de recarga dos mananciais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2420,
+      2432,
+      2433
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      894,
+      897
+     ],
+     "nota": "Reflorestamento e proteção de mananciais via política estadual"
     }
    }
   },
   {
    "id": "p8",
-   "subtema": "Fiscalização e governança do saneamento",
-   "proposta": "Publicar de forma transparente os resultados e indicadores ambientais e de saneamento para acompanhamento da população",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      490
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Fiscalização e governança do saneamento",
-   "proposta": "Criar conselho estadual de vigilância da água e do saneamento, com universidades, sociedade civil, Ministério Público e escolas como polos de monitoramento cidadão e poder de requisitar auditorias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      960,
-      993,
-      994
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Fiscalização e governança do saneamento",
-   "proposta": "Instituir protocolo permanente entre a segurança pública e as concessionárias para retomar obras de saneamento paralisadas por ação de facções e milícias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      953,
-      960,
-      994
-     ],
-     "nota": "Operação Água Segura, contra o \"apartheid sanitário\""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Fiscalização e governança do saneamento",
-   "proposta": "Obrigar a existência de rampas públicas de acesso a rios de grande fluxo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      994
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Executar um plano estadual de obras e ações de prevenção de enchentes e deslizamentos, com prioridade às áreas de maior risco (Região Serrana, Costa Verde e Baixada Fluminense)",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Executar plano de obras e ações estruturais de prevenção de enchentes e deslizamentos nas regiões mais críticas do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
@@ -275,24 +230,22 @@
      "blocos": [
       59
      ],
-     "nota": ""
+     "nota": "Região Serrana, Costa Verde e Baixada Fluminense"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      501,
-      504,
-      505,
-      507
+      502,
+      508
      ],
-     "nota": "Ênfase em prevenção, tecnologia e apoio técnico aos municípios"
+     "nota": "Ênfase em limpeza de canais e monitoramento de encostas"
     }
    }
   },
   {
-   "id": "p13",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Manter cronograma anual de limpeza e desobstrução de canais, com mapeamento de áreas prioritárias, equipes permanentes e divulgação de resultados",
+   "id": "p9",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Implantar cronograma anual de limpeza e desobstrução de canais com áreas prioritárias mapeadas e resultados publicados",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -305,9 +258,9 @@
    }
   },
   {
-   "id": "p14",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Implantar parques alagáveis e soluções baseadas na natureza para retenção de águas pluviais, recuperação de várzeas e mangues e redução de alagamentos recorrentes",
+   "id": "p10",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Implantar soluções baseadas na natureza, como parques alagáveis e recuperação de várzeas e mangues, para retenção de águas pluviais",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -320,9 +273,9 @@
    }
   },
   {
-   "id": "p15",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Fortalecer o centro estadual de monitoramento e alertas de desastres, com alertas antecipados enviados ao celular dos moradores",
+   "id": "p11",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Fortalecer o sistema estadual de monitoramento e alerta de riscos climáticos, com alertas antecipados enviados à população",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -331,14 +284,14 @@
       504,
       505
      ],
-     "nota": "CEMADEN-RJ como centro de inteligência de riscos"
+     "nota": "Fortalecimento do CEMADEN-RJ com alerta por celular"
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Criar defesa civil comunitária, com núcleos de proteção e capacitação de lideranças nas comunidades de maior risco",
+   "id": "p12",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Criar defesa civil comunitária com núcleos nas comunidades de risco e capacitação de lideranças locais",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -351,24 +304,9 @@
    }
   },
   {
-   "id": "p17",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Monitorar encostas e áreas vulneráveis com tecnologia, fiscalização em parceria com os municípios e apoio técnico às prefeituras",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      508
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Prevenção de enchentes e desastres",
-   "proposta": "Manter estrutura estadual permanente de resposta rápida a desastres climáticos, com equipes, máquinas e assistência emergencial aos municípios",
+   "id": "p13",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Manter estrutura estadual permanente de resposta rápida a desastres climáticos para apoio imediato aos municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -381,39 +319,123 @@
    }
   },
   {
-   "id": "p19",
-   "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Concluir e executar o Plano Estadual de Segurança Hídrica, com prioridade ao Sistema Imunana-Laranjal e prazo até 2028",
+   "id": "p14",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Instituir Plano Estadual de Manejo de Águas Pluviais, com mapeamento de áreas inundáveis, diagnóstico da drenagem municipal e metas de investimento",
    "n_concorda": 1,
    "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1128,
+      1131
+     ],
+     "nota": "Metas de drenagem para 10 anos e participação social"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Fortalecer a fiscalização e o monitoramento das concessionárias de saneamento quanto ao cumprimento de metas contratuais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": "Exigência de investimentos corretivos e transparência"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1116
+     ],
+     "nota": "Auditoria e penalidades, com vistas a cancelar contratos"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2408,
-      2416,
-      2417,
-      2423,
-      2436,
-      3534
+      2320
      ],
-     "nota": ""
+     "nota": "Fiscalização de metas junto às agências reguladoras"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Reestatizar a CEDAE, cancelando os contratos de concessão e retomando o controle público do abastecimento de água e esgoto",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1116,
+      1122
+     ],
+     "nota": "Conferência estadual para discutir modelos de gestão pública"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Criar conselho estadual de vigilância cidadã da água e do saneamento, com poder de requisitar auditorias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      940,
+      994
+     ],
+     "nota": "CEVAS-RJ com universidades, MP e escolas públicas"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Criar protocolo permanente entre segurança pública e concessionárias para retomar obras de saneamento paralisadas por ação do crime organizado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      960,
+      994
+     ],
+     "nota": "Operação Água Segura"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Criar estrutura administrativa estadual dedicada ao saneamento ambiental, com capacidade de planejar e executar políticas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1120
+     ],
+     "nota": "Subsecretaria de Saneamento Ambiental na SEAS"
     }
    }
   },
   {
    "id": "p20",
-   "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Criar e regulamentar Fundo Estadual de Pagamento por Serviços Ambientais, firmando contratos com proprietários rurais e comunidades que conservam nascentes e florestas",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Criar fundo estadual de saneamento com dotação específica para investimento em favelas",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2418,
-      2419,
-      2424,
-      2437,
-      2438
+      1124
      ],
      "nota": ""
     }
@@ -421,31 +443,30 @@
   },
   {
    "id": "p21",
-   "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Financiar a política hídrica com cobrança pelo uso da água, recursos do saneamento, orçamento estadual, mercado de ativos ambientais e recursos confiscados do crime ambiental, sob coordenação da Secretaria de Ambiente, Inea e comitês de bacia",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Elaborar Plano Estadual de Saneamento Ambiental com participação social ampla e descentralizada",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2446
+      1126
      ],
-     "nota": ""
+     "nota": "Alinhado à Lei Federal 11.445/2007"
     }
    }
   },
   {
    "id": "p22",
-   "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Implantar programa de proteção e recuperação de nascentes e matas ciliares nas áreas de recarga dos mananciais que abastecem a Região Metropolitana",
+   "subtema": "Gestão e modelo institucional do saneamento",
+   "proposta": "Criar política estadual de recursos hídricos que implemente os planos dos comitês de bacia hidrográfica",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2420,
-      2432,
-      2433
+      894,
+      897
      ],
      "nota": ""
     }
@@ -453,26 +474,46 @@
   },
   {
    "id": "p23",
-   "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Reforçar a garantia de abastecimento do Sistema Imunana-Laranjal, com obras e ações que reduzam o risco de racionamento",
-   "n_concorda": 1,
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Ampliar progressivamente a rede de distribuição e reservação de água até a cobertura completa, priorizando áreas de baixa renda",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2434,
-      2437
+      1138
      ],
      "nota": ""
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": "Universalização como prioridade na cobrança dos contratos"
     }
    }
   },
   {
    "id": "p24",
-   "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Monitorar mananciais e planejar redundância dos sistemas de abastecimento de água",
-   "n_concorda": 1,
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Reduzir as perdas de água na distribuição, com acompanhamento de índices e reforma dos equipamentos de reservação",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1138
+     ],
+     "nota": ""
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
@@ -481,14 +522,41 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p25",
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Aperfeiçoar e implementar tarifa social de água e de esgoto para a população de baixa renda, inscritos no CadÚnico e moradores de favelas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1138,
+      1147
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Garantir volume mínimo diário gratuito de água a usuários residenciais inadimplentes por incapacidade de pagamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1138
+     ],
+     "nota": ""
+    }
+   }
   }
  ],
  "blocos": {
   "governador-rj-andre-marinho-190002537524": {
-   "2306": {
-    "texto": "• Articular a despoluição da Baía ao avanço do saneamento e ao combate ao lançamento clandestino de esgoto e resíduos.",
-    "pagina": 94
-   },
    "2312": {
     "texto": "• Despoluição da Baía de Guanabara com emissário submarino, ecobarreiras em rios e canais, desassoreamento de calhas e tecnologias inovadoras de recuperação aquática.",
     "pagina": 94
@@ -564,10 +632,6 @@
    "2446": {
     "texto": "Coordenação pela Secretaria de Estado do Ambiente, Inea e órgão gestor de recursos hídricos, em articulação com os comitês de bacia e os municípios abastecidos. Financiamento do Fundo de PSA por meio de cobrança pelo uso da água, recursos do saneamento, orçamento estadual, receitas do Mercado de Ativos Ambientais e recursos confiscados da Operação Asfixia Ambiental. Gestão transparente, com regras técnicas claras de elegibilidade e pagamento.",
     "pagina": 99
-   },
-   "3534": {
-    "texto": "Segurança Hídrica e Fundo de Serviços Ambientais",
-    "pagina": 139
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
@@ -575,9 +639,9 @@
     "texto": "PPP DA LIMPEZA DA BAÍA E GESTÃO DE RESÍDUOS — BAÍA VIVA RJ",
     "pagina": 41
    },
-   "953": {
-    "texto": "A recuperação da Baía de Guanabara segue incompleta apesar do investimento em curso, pela ausência de monitoramento científico contínuo e de fiscalização territorial. Na gestão da água e do saneamento, blocos de concessão que somam cerca de R$ 30 bilhões em investimento — com meta de universalização até 2033 — seguem paralisados em áreas da Zona Norte, da Zona Oeste e da Baixada Fluminense onde facções e milícias impedem o acesso das equipes técnicas, criando um verdadeiro apartheid sanitário dentro do próprio contrato de concessão.",
-    "pagina": 42
+   "940": {
+    "texto": "CEVAS-RJ — PROGRAMA VIGIA DAS ÁGUAS E OPERAÇÃO \"ÁGUA SEGURA\"",
+    "pagina": 41
    },
    "960": {
     "texto": "A governança da água combinará execução técnica com vigilância cidadã independente e, onde o crime organizado impedir a prestação do serviço, articulação explícita com a segurança pública para garantir a presença do Estado.",
@@ -586,10 +650,6 @@
    "983": {
     "texto": "PPP da Limpeza da Baía e Gestão de Resíduos — Baía Viva RJ",
     "pagina": 43
-   },
-   "993": {
-    "texto": "A gestão da água e do saneamento no Estado carece de vigilância independente, enquanto obras de saneamento em blocos de concessão que somam cerca de R$ 30 bilhões em investimento seguem paralisadas em áreas onde facções e milícias impedem o acesso das equipes técnicas.",
-    "pagina": 44
    },
    "994": {
     "texto": "O Governo do Estado criará o Conselho Estadual de Vigilância da Água e Saneamento (CEVAS-RJ), com participação de universidades, sociedade civil, Ministério Público e escolas públicas como polos de monitoramento cidadão, competência para requisitar auditorias e obrigatoriedade de rampas públicas de acesso a rios de grande fluxo; e instituirá a Operação Água Segura, protocolo permanente entre a Secretaria de Segurança Pública e as concessionárias de saneamento para mapear as zonas onde obras estão paralisadas por ação do crime organizado e garantir, com planejamento integrado, a retomada das frentes de obra.",
@@ -600,10 +660,6 @@
    "490": {
     "texto": "• \u0007Fortalecimento do monitoramento das concessionárias de saneamento para assegurar o cumprimento integral das metas contratuais, com prioridade à universalização dos serviços, à redução das perdas de água por meio do acompanhamento permanente dos índices de distribuição e da exigência de investimentos corretivos, à expansão das redes de coleta e tratamento de esgoto, especialmente em áreas e municípios com maior déficit de cobertura e à despoluição dos principais corpos hídricos do Estado, do controle dos lançamentos irregulares e da divulgação transparente dos resultados ambientais.",
     "pagina": 46
-   },
-   "501": {
-    "texto": "Antes da chuva, o plano. Antes da tragédia, o Estado presente.",
-    "pagina": 48
    },
    "502": {
     "texto": "• \u0007Cronograma anual de limpeza e desobstrução de canais, com mapeamento das áreas prioritárias, equipes permanentes e resultados publicados para acompanhamento da população.",
@@ -625,10 +681,6 @@
     "texto": "• \u0007Defesa civil comunitária, com núcleos de proteção nas comunidades de maior risco, capacitação de lideranças locais e comunicação simples, direta e acessível.",
     "pagina": 48
    },
-   "507": {
-    "texto": "O Estado do Rio convive com enchentes, deslizamentos e perdas que poderiam ser reduzidas com planejamento, prevenção e resposta rápida. O Estado vai mudar a lógica da reação para a prevenção, usando tecnologia, inteligência de risco, defesa civil fortalecida e apoio técnico aos municípios.",
-    "pagina": 48
-   },
    "508": {
     "texto": "• \u0007Monitoramento de encostas e áreas vulneráveis, com uso de tecnologia, fiscalização em parceria com os municípios e apoio técnico às prefeituras, com atuação coordenada antes que o risco se transforme em tragédia.",
     "pagina": 48
@@ -642,6 +694,68 @@
    "59": {
     "texto": "• Implantar um grande plano de obras para combater as enchentes e prevenir deslizamentos em todo o estado, com especial atenção à Região Serrana, Costa Verde e Baixada Fluminense.",
     "pagina": 7
+   }
+  },
+  "governador-rj-william-siri-190002536162": {
+   "894": {
+    "texto": "☼ Criar uma Política Estadual de recursos hídricos para implementar os planos de preservação elaborados pelos comitês de bacia hidrográfica dos rios localizados no estado do Rio de Janeiro, visando o reflorestamento das áreas",
+    "pagina": 48
+   },
+   "897": {
+    "texto": "degradadas, a proteção dos mananciais e cursos d’água, a mitigação de riscos ambientais e o planejamento de situações de emergência;",
+    "pagina": 49
+   },
+   "899": {
+    "texto": "☼ Construir planos regionais de despoluição das Baías de Guanabara, de Sepetiba, de Ilha Grande e das bacias hidrográficas estaduais, em parceria com as prefeituras dos municípios das regiões, envolvendo universidades, movimentos ambientalistas e as comunidades do entorno nas políticas de preservação e recuperação ambiental da região",
+    "pagina": 49
+   },
+   "1116": {
+    "texto": "☼ Iniciar o processo de retomada pública e reestatização da CEDAE, fortalecendo a Agenersa e os órgãos competentes para realizar uma auditoria rigorosa dos contratos de concessão, apurar irregularidades, cobranças abusivas, descumprimento de metas e falhas na prestação dos serviços. Aplicar multas e demais penalidades, priorizando o interesse público e o direito humano à água. Responsabilizar as empresas pelos casos de violações graves a direitos e iniciar o processo para o cancelamento dos contratos e recuperação do controle público sobre o abastecimento de água e o saneamento.",
+    "pagina": 64
+   },
+   "1118": {
+    "texto": "☼ Garantir a segurança hídrica do estado, protegendo mananciais estratégicos, ampliando a reservação de água e fortalecendo os sistemas de abastecimento diante das mudanças climáticas.",
+    "pagina": 64
+   },
+   "1120": {
+    "texto": "☼ Criar e fortalecer a Subsecretaria de Saneamento Ambiental da Secretaria de Estado de Ambiente, dando-lhe estrutura e capacidade de planejar e executar as políticas públicas de saneamento ambiental nas diferentes regiões do estado.",
+    "pagina": 64
+   },
+   "1122": {
+    "texto": "☼ Convocar uma Conferência Estadual de Saneamento para discutir modelos possíveis de gestão pública e articular a política de saneamento ao planejamento socioambiental de cada região do estado.",
+    "pagina": 64
+   },
+   "1124": {
+    "texto": "☼ Criar um Fundo Estadual de Saneamento com dotação específica para investimento em favelas.",
+    "pagina": 64
+   },
+   "1126": {
+    "texto": "☼ Elaborar um Plano Estadual de Saneamento Ambiental, garantindo que o mesmo esteja em acordo com os princípios da Lei Federal 11.445/2007, com a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração;",
+    "pagina": 64
+   },
+   "1128": {
+    "texto": "☼ Instituir um Plano Estadual de Manejo de Águas Pluviais, garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo",
+    "pagina": 64
+   },
+   "1131": {
+    "texto": "de revisão: ●​ Atualizar as curvas de intensidade, duração e frequências de chuvas para o estado com vistas a adequação das mesmas a mudança do regime de chuvas; ●​ Elaborar mapeamento de áreas suscetíveis à inundaçõe com base em modelos matemáticos e simulações computadorizadas utilizando informações de precipitação; ●​ Elaborar manchas de inundação e cartografia dos riscos hidrológicos, quantificando os habitantes em áreas de risco hidrológico e apresentando seu perfil demográfico; ●​ Produzir um​ diagnóstico detalhado dos sistemas de drenagem pluvial do território de cada Município fluminense; ●​ Realizar um levantamento da rede de microdrenagem de cada município fluminense; ●​ Revisar o histórico da atuação do poder público; ●​ Revisar o histórico de recursos financeiros destinados obras de drenagem; ●​ Organizar os dados cadastrais (onde estejam disponíveis) e produzir dados cadastrais (onde não existam) da rede de microdrenagem de cada município fluminense em grau de precisão e detalhamento compatível com um planejamento de longo prazo e a criação de banco de dados para subsidiar os projetos da prefeitura; ●​ Elaborar mapeamento atualizado e com maior grau de detalhamento dos pontos críticos da rede de microdrenagem, identificando as razões da insuficiência da rede para cada ponto; ●​ Apresentar os investimentos prioritários bem como alternativa de projeto básico, orçamento e hierarquização dos mesmos; ●​ Apresentar metas de investimento em drenagem e manejo de águas pluviais para os próximos 10 anos; ●​ Incentivar as​prefeituras a implementarem sistemas informatizados de gestão de informações georreferenciadas da rede de microdrenagem em cada município fluminense.",
+    "pagina": 65
+   },
+   "1138": {
+    "texto": "☼ Garantir a progressiva ampliação da rede de abastecimento de água (distribuição e reservação), priorizando as áreas de baixa renda, até atingir a cobertura completa de todas as regiões do estado. ☼ Reformar os equipamentos de reservação e distribuição da rede de abastecimento de água, de forma a reduzir as perdas e aumentar a regularidade da distribuição. ☼ Criar mecanismos de combate ao desperdício e à desigualdade social no acesso à água. ☼ Aperfeiçoar a aplicação da tarifa social para o consumo de água em áreas de baixa renda, em especial, para os inscritos no CAD Único ou Bolsa Família e para moradores de favelas. ☼ Garantir o fornecimento diário de um volume mínimo gratuito de água a todos os usuários residenciais em situação de inadimplência motivada pela incapacidade de pagamento, suficiente para as atividades de higiene necessárias à prevenção dos riscos e à promoção da saúde.",
+    "pagina": 66
+   },
+   "1143": {
+    "texto": "☼ Garantir a progressiva ampliação da rede de coleta de esgoto, priorizando as áreas de baixa renda, até atingir a cobertura completa de todas as regiões do estado.",
+    "pagina": 66
+   },
+   "1145": {
+    "texto": "☼ Garantir a progressiva implementação de estações de tratamento de esgoto, até atingir a cobertura completa de todas as regiões do estado, preferencialmente de forma descentralizada, reduzindo custos de implantação e manutenção, permitindo o uso de tecnologias como biossistemas, e viabilizando o reuso da água tratada, assim como do gás produzido, quando for o caso.",
+    "pagina": 66
+   },
+   "1147": {
+    "texto": "☼ Implementar uma tarifa social para os serviços de esgotamento sanitário para população de baixa renda inscrita no CAD Único ou Bolsa Família e para moradores de favelas.",
+    "pagina": 66
    }
   }
  }

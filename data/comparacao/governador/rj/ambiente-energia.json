@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "ambiente-energia-rj.json",
-  "gerado_em": "2026-09-14T01:40:19Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:40:54Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,28 +45,43 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Incentivar a expansão das fontes renováveis (solar, eólica, biogás, geração distribuída) para diversificar a matriz energética estadual",
-   "n_concorda": 3,
+   "subtema": "Energia e transição energética",
+   "proposta": "Promover a transição energética do estado, ampliando as fontes renováveis e diversificando a matriz energética.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       530
      ],
-     "nota": "Foca em eólica, solar fotovoltaica e geração distribuída no litoral fluminense"
+     "nota": "Foco em eólica, solar fotovoltaica e geração distribuída"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       1412
      ],
-     "nota": "Ênfase em eólica offshore e hidrogênio"
+     "nota": "Hidrogênio e eólica offshore como eixos"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      971
+     ],
+     "nota": "Prioriza solar e biomassa"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -80,37 +95,46 @@
   },
   {
    "id": "p2",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Instalar geração solar fotovoltaica em prédios públicos estaduais para reduzir a fatura de energia da rede",
-   "n_concorda": 2,
+   "subtema": "Energia e transição energética",
+   "proposta": "Instalar sistemas de geração solar fotovoltaica em prédios públicos estaduais.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       529
      ],
-     "nota": "RJ Solar: escolas, hospitais, batalhões e secretarias"
+     "nota": "Escolas, hospitais, batalhões e secretarias"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      990
+     ],
+     "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       660,
-      664,
+      669,
       675
      ],
-     "nota": "Restrito às escolas estaduais"
+     "nota": "Concentrado nas escolas estaduais"
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Implantar a geração solar nas escolas estaduais por meio de parceria público-privada, com contrato de eficiência e cronograma de escala até 2030",
+   "subtema": "Energia e transição energética",
+   "proposta": "Estruturar parceria público-privada para geração solar nas escolas estaduais, com contrato de eficiência e cronograma de instalação em escala.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
+      660,
+      664,
       669,
       689,
       690
@@ -121,8 +145,8 @@
   },
   {
    "id": "p4",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Criar marco regulatório estadual de geração solar distribuída e biogás, publicado e regulamentado até o fim de 2027",
+   "subtema": "Energia e transição energética",
+   "proposta": "Criar marco regulatório estadual para geração solar distribuída e biogás, com publicação e regulamentação até 2027.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -138,23 +162,30 @@
   },
   {
    "id": "p5",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Criar centro de pesquisa e desenvolvimento em energias limpas conectado ao potencial solar, eólico e de biogás do estado",
-   "n_concorda": 1,
+   "subtema": "Energia e transição energética",
+   "proposta": "Estruturar a cadeia de energia eólica offshore aproveitando o potencial do litoral fluminense.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      417
+      530
      ],
-     "nota": "Gestão pela UFF"
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1412
+     ],
+     "nota": "Integração com o Porto do Açu como hub energético"
     }
    }
   },
   {
    "id": "p6",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Adotar política tecnologicamente neutra para hidrogênio (verde e azul) com certificação estadual harmonizada ao marco federal",
+   "subtema": "Energia e transição energética",
+   "proposta": "Reconverter estaleiros ociosos em bases industriais para a eólica offshore (programa Estaleiros da Energia).",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -168,8 +199,8 @@
   },
   {
    "id": "p7",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Reconverter estaleiros ociosos em bases industriais para a eólica offshore e integrar o Porto do Açu como hub energético",
+   "subtema": "Energia e transição energética",
+   "proposta": "Adotar política tecnologicamente neutra para hidrogênio (verde e azul) com certificação estadual harmonizada ao marco federal.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -177,14 +208,80 @@
      "blocos": [
       1412
      ],
-     "nota": "Programa Estaleiros da Energia"
+     "nota": ""
     }
    }
   },
   {
    "id": "p8",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Ampliar a infraestrutura e a rede de distribuição de gás canalizado no estado, com revisão do modelo de concessão e novo contrato",
+   "subtema": "Energia e transição energética",
+   "proposta": "Fomentar a produção de biogás e biofertilizantes a partir de resíduos orgânicos e lodo de esgoto.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1152,
+      1155,
+      1159
+     ],
+     "nota": "Biodigestores e programa de co-digestão em ETEs"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1270,
+      1274
+     ],
+     "nota": "Via marco regulatório"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Energia e transição energética",
+   "proposta": "Criar estrutura de pesquisa e desenvolvimento em energias renováveis em parceria com universidades.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      417
+     ],
+     "nota": "Centro Cidade 06 — Energias Limpas, gerido pela UFF"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      971
+     ],
+     "nota": "Parceria com universidades, Petrobras e indústria"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Energia e transição energética",
+   "proposta": "Reduzir progressivamente o consumo de combustíveis fósseis e instituir metas estaduais de descarbonização da economia e da administração pública.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      889,
+      890,
+      966,
+      969,
+      990
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Energia e transição energética",
+   "proposta": "Ampliar a infraestrutura e a rede de distribuição de gás natural no estado, com revisão do modelo de concessão e novo contrato.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -193,7 +290,7 @@
       340,
       495
      ],
-     "nota": "Inclui expansão ao interior e fiscalização das obrigações do concessionário"
+     "nota": "Expansão do gás canalizado para a indústria do interior"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -205,75 +302,16 @@
    }
   },
   {
-   "id": "p9",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Reduzir perdas não técnicas de energia e combater ligações clandestinas com ações coordenadas entre concessionárias, agências reguladoras e segurança pública",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      340
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Estruturar as unidades de conservação para visitação e ecoturismo, com infraestrutura, concessões e parcerias que gerem receita e emprego",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      369,
-      370,
-      374
-     ],
-     "nota": "Trilhas, sinalização, segurança e atração de investimento privado"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      975
-     ],
-     "nota": "Turismo sustentável e educação ambiental nas Ilhas Cagarras"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Executar programa de reflorestamento e restauração da Mata Atlântica em unidades de conservação estaduais, com meta de 2,5 milhões de árvores em 20 UCs até 2030",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2310,
-      2323,
-      2329,
-      2331,
-      3530
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p12",
-   "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Elevar a cobertura de Mata Atlântica no estado rumo a 40% do bioma, em linha com o compromisso da COP26",
+   "subtema": "Energia e transição energética",
+   "proposta": "Reforçar a fiscalização das obrigações da concessão de gás e combater ligações clandestinas e perdas não técnicas de energia.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      2301,
-      2324,
-      2325
+      340,
+      495
      ],
      "nota": ""
     }
@@ -281,14 +319,29 @@
   },
   {
    "id": "p13",
-   "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Instalar viveiros regionais e contratar coletores de sementes, plantadores e brigadistas nas comunidades do entorno das unidades de conservação",
-   "n_concorda": 1,
+   "subtema": "Energia e transição energética",
+   "proposta": "Implantar programa de eficiência energética e uso racional de água e energia nos edifícios públicos, incluindo apoio a municípios.",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      523,
+      529
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      990
+     ],
+     "nota": "Inclui reuso e captação de água de chuva e iluminação LED"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2311
+      664
      ],
      "nota": ""
     }
@@ -297,7 +350,98 @@
   {
    "id": "p14",
    "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Criar programa estadual de passagens de fauna (ecodutos, pontes verdes e passagens subterrâneas) nas rodovias, financiado por naming rights, com meta de 50 estruturas e redução de 40% nos atropelamentos até 2030",
+   "proposta": "Modernizar e fortalecer as unidades de conservação estaduais, com infraestrutura, monitoramento e gestão qualificada.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      369,
+      370
+     ],
+     "nota": "Ênfase em infraestrutura de visitação e segurança"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      918
+     ],
+     "nota": "Sistema Estadual de UCs, com drones, sensores e conselhos gestores"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Desenvolver ecoturismo e turismo sustentável em áreas protegidas, inclusive por concessões e parcerias privadas.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      370,
+      374
+     ],
+     "nota": "Concessões e atração de investimento privado"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      975
+     ],
+     "nota": "Turismo sustentável nas Ilhas Cagarras"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      905
+     ],
+     "nota": "Regulamentação do turismo nas ilhas fluminenses"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Ampliar a rede de unidades de conservação do estado, criando novas áreas protegidas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      909,
+      920
+     ],
+     "nota": "Inclui UCs para todos os manguezais do estado"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Ampliar a conectividade ecológica entre remanescentes e unidades de conservação.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      924
+     ],
+     "nota": "Corredores ecológicos estaduais"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      972
+     ],
+     "nota": "Conectividade via estruturas de travessia de fauna"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Criar programa estadual de passagens de fauna (ecodutos e pontes verdes) financiado por naming rights, com meta de 50 estruturas e redução de 40% dos atropelamentos até 2030.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -310,142 +454,49 @@
    }
   },
   {
-   "id": "p15",
+   "id": "p19",
    "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Integrar a gestão estadual do Parque Estadual Marinho das Ilhas Cagarras com o órgão federal, incluindo monitoramento científico contínuo e fiscalização marítima especializada",
+   "proposta": "Manter as unidades de conservação de proteção integral, combatendo tentativas de redução ou flexibilização da proteção ambiental.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      975
-     ],
-     "nota": "Rastreamento por GPS com UFRJ e UFF, drones e lanchas elétricas"
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Proteger a fauna silvestre com ampliação dos centros de triagem e reabilitação e combate ao tráfico de animais integrado à segurança pública",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      528
+      926
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Executar programa de recuperação e despoluição da Baía de Guanabara com monitoramento permanente da qualidade da água e da vida aquática",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      985
-     ],
-     "nota": "Baía Viva RJ, com metas de 40% de melhora da água e 25 mil empregos verdes até 2030"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2301,
-      2321,
-      2330,
-      2339
-     ],
-     "nota": "Dados abertos e integração com saneamento e Pacto Guanabara"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Modernizar e ampliar o sistema estadual de alerta antecipado de eventos climáticos extremos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1009
-     ],
-     "nota": "Modelos meteorológicos com IA e envio automático via Cell Broadcast"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2366,
-      2380,
-      2385
-     ],
-     "nota": "Sensores de chuva e solo, sirenes e comunicação direta"
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Reflorestar encostas críticas como infraestrutura de proteção contra deslizamentos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1009
-     ],
-     "nota": "Redireciona parte dos recursos de obras estruturais; prioriza Serrana, Costa Verde e capital"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2368
-     ],
-     "nota": "Articulado ao Rio Verde e a créditos de carbono"
     }
    }
   },
   {
    "id": "p20",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Reassentar com dignidade famílias que ocupam áreas de risco e recuperar ambientalmente o território desocupado",
-   "n_concorda": 2,
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Elaborar Plano Estadual da Mata Atlântica com metas de preservação e restauração até 2050.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      962,
-      1003
+      922
      ],
      "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2354,
-      2381,
-      2383,
-      2384
-     ],
-     "nota": "Prioriza encostas de altíssimo risco na Serrana e Metropolitana"
     }
    }
   },
   {
    "id": "p21",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Contratar seguro-catástrofe paramétrico, com liberação de recursos a partir de índices objetivos de chuva",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Executar reflorestamento em escala da Mata Atlântica com metas numéricas: 2,5 milhões de árvores em 20 unidades de conservação e trajetória rumo a 40% de cobertura do bioma.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1009
+      2301,
+      2310,
+      2323,
+      2324,
+      2331
      ],
      "nota": ""
     }
@@ -453,31 +504,52 @@
   },
   {
    "id": "p22",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Concluir o mapeamento integral de risco geológico e hidrológico nos 92 municípios, com cadastro georreferenciado das famílias em área crítica",
-   "n_concorda": 1,
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Implantar programa de restauração ecológica e recuperação de áreas degradadas, com reflorestamento de encostas e nascentes.",
+   "n_concorda": 4,
    "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      932
+     ],
+     "nota": "Metas permanentes e espécies nativas"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2363,
-      2370
+      2310,
+      2368
      ],
-     "nota": "Prazo até 2028"
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1003,
+      1009
+     ],
+     "nota": "Reflorestamento técnico de encostas como infraestrutura de proteção"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": "Via cooperação técnica com municípios"
     }
    }
   },
   {
    "id": "p23",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Profissionalizar e equipar a defesa civil estadual, com protocolos padronizados e cooperação técnica internacional",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Instalar viveiros regionais e contratar coletores de sementes, plantadores e brigadistas nas comunidades do entorno das áreas protegidas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2367,
-      2384
+      2311
      ],
      "nota": ""
     }
@@ -485,23 +557,208 @@
   },
   {
    "id": "p24",
-   "subtema": "Clima e resiliência a desastres",
-   "proposta": "Financiar a política de adaptação climática com royalties do petróleo carimbados e fundos ambientais, sob governança transparente",
-   "n_concorda": 1,
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Transformar áreas degradadas e de risco em parques urbanos e lineares, com arborização, lazer e infraestrutura de convivência.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      2393
+      527
+     ],
+     "nota": "Rede Parque RJ, com LED, acessibilidade e videomonitoramento"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      920,
+      1034
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1003
+     ],
+     "nota": "Parques lineares com bases de segurança pública"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Fortalecer a proteção da fauna silvestre, ampliando os centros de triagem e reabilitação e combatendo o tráfico de animais.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      528
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      934
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p25",
-   "subtema": "Ativos ambientais e economia verde",
-   "proposta": "Estruturar um mercado estadual de ativos ambientais e créditos de carbono que gere renda a partir da conservação",
+   "id": "p26",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Implantar monitoramento científico contínuo e unidade marítima de fiscalização dos ecossistemas marinhos, com drones e parceria com universidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      975,
+      985
+     ],
+     "nota": "Ilhas Cagarras e Baía Viva RJ, com UFRJ e UFF"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Recuperar manguezais e restingas degradados.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      901,
+      909
+     ],
+     "nota": "Programa específico com comunidades e pescadores"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1003
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Elaborar Plano Estadual de Gestão Integrada da Zona Costeira.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      903
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Criar plano de gestão integrada das ilhas fluminenses em parceria com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      905
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Criar plano estadual de combate a incêndios em morros e encostas, com detecção em tempo real e brigadas permanentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      926
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Refazer o Zoneamento Ecológico-Econômico do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      876,
+      952
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Instituir política estadual de pagamento por serviços ambientais, remunerando quem conserva.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      870
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2472
+     ],
+     "nota": "PSA articulado à geração de créditos de carbono"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Executar programa de despoluição e recuperação da Baía de Guanabara com metas e monitoramento da qualidade da água.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2301,
+      2321,
+      2329,
+      2330,
+      2339
+     ],
+     "nota": "Ecobarreiras, emissário submarino e desassoreamento"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      985
+     ],
+     "nota": "Baía Viva RJ: +40% de qualidade da água e 25 mil empregos verdes até 2030"
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Criar mercado estadual de ativos ambientais e créditos de carbono, com apoio técnico a produtores rurais, municípios e comunidades para estruturar projetos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -515,199 +772,27 @@
      "posicao": "concorda",
      "blocos": [
       2461,
-      2472,
-      3536
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Ativos ambientais e economia verde",
-   "proposta": "Colocar em operação plataforma estadual de comercialização de créditos de carbono até 2028, com protocolos próprios de mensuração, registro e verificação",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
       2469,
-      2470,
+      2473,
       2475,
-      2477,
-      2488,
-      2489,
-      2497
+      2489
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Ativos ambientais e economia verde",
-   "proposta": "Oferecer apoio técnico e capacitação a produtores rurais, comunidades e municípios para desenvolver projetos de restauração, compensação e créditos de carbono",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      516
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2473
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Ativos ambientais e economia verde",
-   "proposta": "Posicionar o estado como hub nacional de bioeconomia, atraindo projetos, pesquisa e empresas do setor",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2471,
-      2485,
-      2486,
-      2490
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Reforçar a fiscalização ambiental com uso intensivo de tecnologia (satélite, drones, inteligência artificial) e integração com as forças de segurança",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      975,
-      985
-     ],
-     "nota": "Unidades marítimas de fiscalização com drones e IA"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2522,
-      2526,
-      2543
-     ],
-     "nota": "Núcleo de inteligência ambiental e presença fiscalizatória permanente"
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Combater o crime ambiental como crime organizado, com inteligência financeira, bloqueio e confisco do patrimônio de quem lucra com desmatamento, grilagem, aterro de mangue e extração ilegal de areia",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2513,
-      2523,
-      2529,
-      2541,
-      2542,
-      3538
-     ],
-     "nota": "Operação Asfixia Ambiental, com ações prioritárias na Pedra Branca e manguezais da Baixada"
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Destinar os bens e recursos confiscados do crime ambiental à recuperação das áreas degradadas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2525,
-      2539,
-      2551
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Criar núcleo integrado de inteligência ambiental reunindo órgão ambiental, Receita, polícias e Ministério Público no primeiro ano de mandato",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2522,
-      2528
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Áreas verdes e recuperação de áreas degradadas",
-   "proposta": "Transformar áreas degradadas em parques e espaços públicos de lazer e convivência",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      527
-     ],
-     "nota": "Rede Parque RJ, com iluminação LED, acessibilidade e videomonitoramento"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1003
-     ],
-     "nota": "Parques lineares em áreas de risco, com drenagem verde e bases de segurança"
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Áreas verdes e recuperação de áreas degradadas",
-   "proposta": "Firmar cooperação técnica com municípios para projetos de eficiência energética, recuperação ambiental, zeladoria e proteção de áreas verdes",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      523
-     ],
-     "nota": ""
+     "nota": "Plataforma estadual em operação até 2028"
     }
    }
   },
   {
    "id": "p35",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Encerrar os lixões ativos no estado por meio de consórcios intermunicipais de destinação adequada de resíduos",
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Publicar protocolos estaduais de mensuração, registro e verificação de créditos ambientais gerados em projetos fluminenses.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      521
+      2470,
+      2477,
+      2488
      ],
      "nota": ""
     }
@@ -715,23 +800,375 @@
   },
   {
    "id": "p36",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Fortalecer as cooperativas de catadores com equipamentos, crédito e capacitação e implantar ecopontos",
-   "n_concorda": 1,
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Estimular a bioeconomia baseada no uso sustentável da biodiversidade.",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2461,
+      2471
+     ],
+     "nota": "Rio como hub nacional de bioeconomia"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      992
+     ],
+     "nota": "Ancorada em agricultura familiar, pesca artesanal e sociobiodiversidade"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Criar programa de geração de empregos verdes vinculado às cadeias de conservação, reciclagem e restauração.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      973
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      985
+     ],
+     "nota": "Meta de 25 mil empregos verdes até 2030"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2311
+     ],
+     "nota": "Contratação local em viveiros e brigadas"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Instituir instrumentos de compensação de impactos socioambientais e de incentivo à mitigação.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      996
+     ],
+     "nota": ""
+    },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      522
+      516
+     ],
+     "nota": "Projetos de compensação acessíveis a municípios e produtores"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Estruturar política estadual de economia circular para reaproveitamento de resíduos e redução do desperdício.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      980,
+      1155
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p37",
-   "subtema": "Licenciamento ambiental",
-   "proposta": "Implantar licenciamento ambiental integrado e digital, com prazos máximos definidos para setores estratégicos, mantido o rigor ambiental",
+   "id": "p40",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Implementar política e plano estadual de adaptação às mudanças climáticas, com metas de redução de vulnerabilidade.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      882,
+      887
+     ],
+     "nota": "Aplicação da Lei 5.690/2010 e do Fórum de Mudanças Climáticas"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2354
+     ],
+     "nota": "Adaptação articulada à redução da dependência do petróleo"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Modernizar e expandir o sistema estadual de alerta antecipado de eventos climáticos extremos.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1009
+     ],
+     "nota": "IA e envio automático via Cell Broadcast, sem cadastro prévio"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1053,
+      1061
+     ],
+     "nota": "Rede hidrometeorológica em áreas de risco"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2366,
+      2380,
+      2385
+     ],
+     "nota": "Sensores de chuva e solo, sirenes e comunicação direta"
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Concluir o mapeamento e a cartografia de riscos geológicos e hidrológicos de todo o território estadual.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2363,
+      2370
+     ],
+     "nota": "Nos 92 municípios, até 2028"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1047,
+      1051,
+      1057,
+      1063,
+      1066
+     ],
+     "nota": "Foco em favelas e áreas informais, com planos revisados a cada década"
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Cadastrar as famílias residentes em áreas de risco para agilizar auxílios em caso de desastre.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1068
+     ],
+     "nota": "Inclui pré-cadastro biométrico voluntário"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2363
+     ],
+     "nota": "Cadastro georreferenciado"
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Reassentar com dignidade as famílias de áreas de altíssimo risco e recuperar ambientalmente as áreas desocupadas.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1003
+     ],
+     "nota": "Reaproveitamento produtivo via turismo e parques lineares"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2354,
+      2383,
+      2384
+     ],
+     "nota": "Prioridade à Região Serrana e Metropolitana"
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Contratar seguro-catástrofe paramétrico com liberação de recursos por índices objetivos de chuva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1009
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Adotar soluções baseadas na natureza e infraestrutura verde (drenagem verde, várzeas, cobertura vegetal) na prevenção de enchentes e deslizamentos.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1003,
+      1009
+     ],
+     "nota": "Redireciona parte das obras estruturais para reflorestamento"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      878,
+      1045
+     ],
+     "nota": "Parques alagáveis e renaturalização de rios urbanos"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2368
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Profissionalizar e equipar a defesa civil estadual, com protocolos padronizados e cooperação técnica internacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2367,
+      2384
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Criar centro estadual de operações e monitoramento integrando em tempo real dados de meio ambiente, defesa civil, segurança e infraestrutura.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      872,
+      1055
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Garantir fonte de financiamento carimbada e previsível para prevenção de desastres e adaptação climática.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2393
+     ],
+     "nota": "Royalties do petróleo carimbados"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1043
+     ],
+     "nota": "Recursos do FECAM"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Fortalecer os programas de monitoramento climático com universidades e atualizar anualmente o portal estadual de mudanças climáticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      884,
+      885
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Criar instâncias participativas e deliberativas sobre clima e prevenção de desastres socioambientais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      882,
+      1041,
+      1042
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Implementar plano geral de ação em emergências, integrando protocolos, gatilhos e estágios operacionais de todo o governo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1040,
+      1055
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Tornar o licenciamento ambiental integrado, digital e com prazos máximos definidos para setores estratégicos.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -744,29 +1181,88 @@
    }
   },
   {
-   "id": "p38",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Priorizar ações de fiscalização e proteção ambiental no Maciço da Pedra Branca, nos manguezais da Baixada Fluminense e nas APAs do interior sob pressão de grilagem",
+   "id": "p54",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Exigir no licenciamento ambiental a avaliação de impactos cumulativos e sinérgicos e a participação efetiva das comunidades impactadas.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2524
+      952
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p39",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Reduzir de forma expressiva o desmatamento e o loteamento ilegal nas áreas de maior pressão do estado",
+   "id": "p55",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Fortalecer o monitoramento e a fiscalização dos empreendimentos licenciados e poluidores, com sanções, suspensão de licenças e reparação integral dos danos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      943,
+      954
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Combater crimes ambientais com inteligência, monitoramento por satélite e drones e integração entre órgãos ambientais e de segurança pública.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2522,
+      2528,
+      2551
+     ],
+     "nota": "Núcleo de inteligência ambiental com Inea, Receita, polícias e MP"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      872,
+      918
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      985
+     ],
+     "nota": "Vigilância por IA articulada com forças de segurança"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      528
+     ],
+     "nota": "Foco no tráfico de animais"
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Identificar, bloquear e confiscar o patrimônio de quem lucra com loteamento ilegal, desmatamento, aterro de mangue e extração ilegal de areia.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
+      2513,
+      2523,
+      2524,
+      2529,
       2530
      ],
      "nota": ""
@@ -774,15 +1270,723 @@
    }
   },
   {
-   "id": "p40",
-   "subtema": "Fiscalização e crime ambiental",
-   "proposta": "Divulgar os resultados da política ambiental em painel público de transparência, com prestação de contas contínua aos órgãos de controle",
+   "id": "p58",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Destinar multas, indenizações e bens confiscados de crimes e irregularidades ambientais à recuperação ambiental.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2525,
+      2539,
+      2542
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      868,
+      956
+     ],
+     "nota": "Destinação ao FECAM"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Revisar os benefícios fiscais concedidos a empresas instaladas em zonas de sacrifício e monitorar seus descartes e impactos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      941
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Criar programa de monitoramento permanente da qualidade do ar, da água e do solo, com transparência e dados abertos.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      939
+     ],
+     "nota": "Foco em regiões industriais e participação das comunidades"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2321
+     ],
+     "nota": "Restrito à qualidade da água"
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Regulamentar e aplicar a lei do descomissionamento, com descontaminação de áreas em mudança de uso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      945
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Vincular a política de reindustrialização ao cumprimento rigoroso da legislação ambiental, priorizando indústrias de baixo impacto e baixo carbono.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      952
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Informar a população sobre a balneabilidade de praias, rios e lagoas in loco e por aplicativo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2245
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Manter presença fiscalizatória permanente nas áreas protegidas recuperadas para impedir sua reocupação.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
+      2526,
+      2543
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Apoiar os municípios na gestão regionalizada dos resíduos sólidos e da coleta seletiva, com convênios e planejamento integrado.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      521,
+      523
+     ],
+     "nota": "Via consórcios intermunicipais e cooperação técnica"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1157,
+      1163
+     ],
+     "nota": "Integração com saneamento e transição energética"
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Encerrar os lixões ainda ativos no estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      521
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Fortalecer e valorizar as cooperativas de catadores com equipamentos, crédito, capacitação e remuneração pelo serviço prestado.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      522
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1165,
+      1168,
+      1169
+     ],
+     "nota": "Inventário das organizações e contratação pelos municípios"
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Implantar ecopontos e pontos de entrega voluntária de resíduos.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      522
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      986
+     ],
+     "nota": "Voltados ao lixo eletrônico"
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Elaborar com as prefeituras um Plano Estadual de Lixo Zero baseado em coleta seletiva, reciclagem e compostagem.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1161
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Criar programas específicos de coleta seletiva e limpeza urbana em favelas e áreas de ocupação informal, com garis comunitários e catadores locais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1161
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Banir gradualmente a produção, comercialização e uso de plásticos de uso único e isopor, com metas e monitoramento de impacto.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      975,
+      977,
+      978
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Promover a logística reversa integrando consumidores, comércio e indústria.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      980
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Criar programa permanente de descarte e reciclagem certificada de lixo eletrônico, incluindo os equipamentos inservíveis dos órgãos públicos e catadores digitais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      986,
+      987,
+      988
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Fomentar a implantação de indústrias de reciclagem em todas as regiões do estado, com incentivos fiscais e integração às cooperativas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1171,
+      1172,
+      1173
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Criar política estadual de rotulagem ecológica com base em certificação e declaração ambiental de produto.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      983,
+      984
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Compensar financeiramente os municípios que prestam serviço ambiental sediando aterros sanitários.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1163
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Educação ambiental",
+   "proposta": "Desenvolver programas permanentes de educação ambiental comunitária com agentes populares e movimentos sociais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      961,
+      1011
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Educação ambiental",
+   "proposta": "Levar programas de educação ambiental às escolas da rede estadual.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      975
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      868
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Educação ambiental",
+   "proposta": "Criar programa de formação e capacitação ambiental para servidores públicos estaduais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      868,
+      1008,
+      1009
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p80",
+   "subtema": "Educação ambiental",
+   "proposta": "Criar centros de educação ambiental nas unidades de conservação estaduais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1002
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Gestão e planejamento ambiental",
+   "proposta": "Reestruturar a Secretaria de Estado do Ambiente, dotando-a de capacidade de produção de dados e de participação no planejamento regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      863
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Gestão e planejamento ambiental",
+   "proposta": "Criar Superintendência de Justiça Socioambiental integrada ao INEA, à Defesa Civil e aos municípios, voltada a populações em vulnerabilidade socioambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      867,
+      868
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Gestão e planejamento ambiental",
+   "proposta": "Instituir Plano Estadual de Justiça Socioambiental com participação ampla e descentralizada da sociedade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      865
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Gestão e planejamento ambiental",
+   "proposta": "Firmar cooperação técnica com municípios para projetos ambientais, zeladoria de espaços públicos e proteção de áreas verdes.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1157
+     ],
+     "nota": "Convênios com municípios, universidades e institutos"
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Instituir Política Estadual de Infraestrutura Verde, com soluções urbanas de permeabilidade e resiliência climática (\"Estado Esponja\").",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      878,
+      1034
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Instituir Plano Estadual de Permacultura com participação social na elaboração e implantação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1018
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Criar centros estaduais de formação em permacultura em cada região do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1023
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Fomentar e coordenar a implantação de sistemas agroflorestais como estratégia de recuperação de solos, encostas e nascentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1025
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Criar incubadoras de projetos sustentáveis em cada região do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1027,
+      1028
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Formar educadores e profissionais de saúde para implantar práticas permaculturais em escolas, unidades de saúde e prédios públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1030
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p91",
+   "subtema": "Permacultura e infraestrutura verde",
+   "proposta": "Mapear áreas subutilizadas e não habitadas dos municípios para manejo sustentável do território por moradores, via unidades de conservação de uso sustentável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1020,
+      1021
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Elaborar plano estadual de prevenção de desastres hidrológicos com diagnóstico do território, levantamento histórico de 50 anos de acidentes, revisão da atuação do poder público e dos recursos aplicados, e atualização decenal.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1058
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2354,
+      2363,
+      2370,
+      2383
+     ],
+     "nota": "Mapeamento integral de risco geológico/hidrológico nos 92 municípios e política estruturada de prevenção."
+    }
+   }
+  },
+  {
+   "id": "p93",
+   "subtema": "Clima e prevenção de desastres",
+   "proposta": "Implantar rede de monitoramento instrumentado de encostas críticas (estações totais robotizadas e detectores acústicos de movimento de massa) e banco de dados georreferenciado de laudos, acidentes e projetos geotécnicos, com projetos básicos hierarquizados, orçamento preliminar e metas de investimento para dez anos.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1066
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2363,
+      2366,
+      2380,
+      2389
+     ],
+     "nota": "Sistema de alerta com sensores de chuva e solo em encostas críticas e cadastro georreferenciado de risco."
+    }
+   }
+  },
+  {
+   "id": "p94",
+   "subtema": "Gestão e planejamento ambiental",
+   "proposta": "Divulgar os resultados dos programas ambientais estaduais em painel público de transparência, com prestação de contas contínua aos órgãos de controle.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      885,
+      939
+     ],
+     "nota": "Prevê transparência de dados ambientais e atualização anual de portal estadual."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2339,
       2552
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p95",
+   "subtema": "Mercado de ativos ambientais e economia verde",
+   "proposta": "Financiar a plataforma estadual de ativos ambientais por estruturação público-privada e taxas de registro e verificação, reinvestindo parte das receitas em conservação e programas ambientais, com governança alinhada a padrões de integridade de crédito de carbono.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      516
+     ],
+     "nota": "Propõe mercado de ativos ambientais e créditos de carbono com apoio técnico, gerando renda pela conservação."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2497
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p96",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Criar núcleo estadual de inteligência ambiental para mapeamento por satélite de áreas críticas e operações de bloqueio patrimonial contra infratores.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      975,
+      985
+     ],
+     "nota": "Prevê fiscalização com drones e vigilância por inteligência artificial articulada ao INEA e forças de segurança."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      872,
+      918
+     ],
+     "nota": "Centro de monitoramento com satélite/drones para combate a crimes ambientais."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2541
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p97",
+   "subtema": "Licenciamento e fiscalização ambiental",
+   "proposta": "Integrar as operações de confisco de bens de infratores ambientais com a Receita e o Ministério Público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2542
      ],
      "nota": ""
     }
@@ -855,10 +2059,6 @@
     "texto": "• Colocar o estado em trajetória para 40% de cobertura de Mata Atlântica, ante os cerca de",
     "pagina": 95
    },
-   "2325": {
-    "texto": "29,9% atuais (meta do plano, alinhada ao compromisso COP26 — a confirmar na estimação técnica).",
-    "pagina": 95
-   },
    "2329": {
     "texto": "Fase 1 — 2027: estruturação do Rio Verde, seleção das 20 UCs prioritárias, montagem dos viveiros regionais, primeiros plantios e instalação das primeiras ecobarreiras nos rios mais poluídos da Baía.",
     "pagina": 95
@@ -903,10 +2103,6 @@
     "texto": "• Implantar sistema de alerta antecipado cobrindo os municípios de maior risco (meta do plano — a confirmar na estimação técnica).",
     "pagina": 97
    },
-   "2381": {
-    "texto": "• Reduzir de forma expressiva o número de pessoas expostas a deslizamento e enxurrada em áreas críticas (meta do plano — a confirmar na estimação técnica).",
-    "pagina": 97
-   },
    "2383": {
     "texto": "Fase 1 — 2027: início do mapeamento integral de risco, priorização das encostas críticas, estruturação do sistema de alerta e primeiras realocações emergenciais na Serrana.",
     "pagina": 97
@@ -917,6 +2113,10 @@
    },
    "2385": {
     "texto": "Fase 3 — 2030: consolidação da rede de alerta, avaliação da redução de população exposta e integração definitiva da adaptação à estratégia de transição econômica.",
+    "pagina": 97
+   },
+   "2389": {
+    "texto": "• Cobertura e tempo de resposta do sistema de alerta antecipado.",
     "pagina": 97
    },
    "2393": {
@@ -955,24 +2155,12 @@
     "texto": "• Publicar os protocolos estaduais de mensuração e registro de ativos ambientais (meta do plano — a confirmar na estimação técnica).",
     "pagina": 100
    },
-   "2485": {
-    "texto": "• Estruturar os primeiros projetos de carbono e bioeconomia ancorados no patrimônio ambiental fluminense (meta do plano — a confirmar na estimação técnica).",
-    "pagina": 101
-   },
-   "2486": {
-    "texto": "• Posicionar o Rio como referência nacional em mercado de carbono e bioeconomia até 2030 (meta do plano — a confirmar na estimação técnica).",
-    "pagina": 101
-   },
    "2488": {
     "texto": "Fase 1 — 2027: desenho institucional da plataforma, definição dos protocolos de mensuração e registro e mapeamento do potencial de créditos nos programas ambientais do estado.",
     "pagina": 101
    },
    "2489": {
     "texto": "Fase 2 — 2028–2029: operação da plataforma de comercialização, estruturação dos primeiros projetos e consolidação do hub de bioeconomia com atração de investimento.",
-    "pagina": 101
-   },
-   "2490": {
-    "texto": "Fase 3 — 2030: escala do mercado, ampliação da carteira de projetos e projeção do Rio como referência nacional e internacional em ativos ambientais.",
     "pagina": 101
    },
    "2497": {
@@ -1042,25 +2230,9 @@
    "3497": {
     "texto": "Gasodutos do Pré-Sal e Novo Contrato de Gás",
     "pagina": 138
-   },
-   "3530": {
-    "texto": "Rio Verde e Despoluição da Baía de Guanabara",
-    "pagina": 139
-   },
-   "3536": {
-    "texto": "Mercado de Ativos Ambientais",
-    "pagina": 139
-   },
-   "3538": {
-    "texto": "Operação Asfixia Ambiental",
-    "pagina": 139
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
-   "962": {
-    "texto": "A ocupação de áreas de risco será enfrentada por reassentamento digno combinado com recuperação ambiental e reaproveitamento produtivo do território, priorizando as regiões com histórico comprovado de desastre.",
-    "pagina": 42
-   },
    "972": {
     "texto": "O Governo do Estado criará programa estadual de passagens de fauna — ecodutos, pontes verdes e passagens subterrâneas — financiado por concessão de naming rights a empresas patrocinadoras, com receita destinada integralmente à manutenção e expansão das estruturas, gestão compartilhada entre o INEA e as secretarias de Infraestrutura e de Transportes, e meta de 50 passagens implantadas e redução de 40% nos atropelamentos até 2030.",
     "pagina": 43
@@ -1144,6 +2316,368 @@
     "pagina": 50
    }
   },
-  "governador-rj-eduardo-paes-190002543380": {}
+  "governador-rj-eduardo-paes-190002543380": {},
+  "governador-rj-william-siri-190002536162": {
+   "863": {
+    "texto": "☼ Reestruturar a Secretaria de Estado do Ambiente, dando-lhe capacidade de produção de dados e garantindo sua participação nos processos de planejamento socioambiental das diferentes regiões do estado;",
+    "pagina": 47
+   },
+   "865": {
+    "texto": "☼ Instituir um Plano Estadual de Justiça Socioambiental, garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 47
+   },
+   "867": {
+    "texto": "☼ Criação da Superintendência de Justiça Socioambiental, integrando com o INEA, Defesa Civil e os municípios para articulação de políticas ambientais para pessoas que estão em vulnerabilidade sócio-ambiental, ou seja, comunidades em encostas, lugares sujeitos à enchentes, comunidades costeira e locais com risco à contaminação do solo, coletando também indicadores de saúde desses locais, promovendo mecanismos para prevenção e mediação de acidentes.",
+    "pagina": 47
+   },
+   "868": {
+    "texto": "A Superintendência também seria responsável por promover educação para justiça socioambiental, oferecendo capacitação aos servidores e campanhas educativas e em escolas estaduais, financiado pelo FECAM, convênios federais e com empresas privadas e multas aplicadas à condenações por crimes ambientais;",
+    "pagina": 47
+   },
+   "870": {
+    "texto": "☼ Instituir uma Política Estadual de Pagamento por Serviços Ambientais, destinada a remunerar pessoas, comunidades, agricultores e municípios que contribuam para a conservação da biodiversidade, a proteção dos recursos hídricos, a recuperação de áreas degradadas, a captura de carbono e outros serviços ecossistêmicos.",
+    "pagina": 47
+   },
+   "872": {
+    "texto": "☼ Criação do Centro Estadual de Operações e Monitoramento, integrando em tempo real informações de segurança pública, defesa civil, mobilidade, meio ambiente, recursos hídricos e infraestrutura estratégica, utilizando inteligência de dados, monitoramento por satélite e sistemas de alerta para apoiar a tomada de decisões, prevenir desastres, combater crimes ambientais e ampliar a capacidade de resposta do Estado em situações de emergência.",
+    "pagina": 47
+   },
+   "876": {
+    "texto": "☼ Refazer o Zoneamento Ecológico-Econômico do estado, priorizado estratégias de preservação de ecossistemas e modos de vida tradicionais (agroecologia urbana e periurbana, povos indígenas, quilombos, comunidades de pescadores, etc);",
+    "pagina": 48
+   },
+   "878": {
+    "texto": "☼ Instituir uma Política Estadual de Infraestrutura Verde, integrando soluções baseadas na natureza ao planejamento urbano e regional, visando reduzir enchentes, ampliar a cobertura vegetal, melhorar o conforto térmico e aumentar a resiliência climática das cidades.",
+    "pagina": 48
+   },
+   "882": {
+    "texto": "☼ Implementar a Política Estadual sobre Mudança do Clima e o Fórum Rio de Mudanças Climáticas, em acordo com a Lei 5.690/2010 com atuação do CONEMA; ●​ Incorporar as emissões dos gases de efeito estufa da Complexo Siderúrgico de Santa Cruz na Política de Mudanças Climáticas;",
+    "pagina": 48
+   },
+   "884": {
+    "texto": "☼ Fortalecer os programas de monitoramento de mudanças climáticas, que deverão ser coordenados pela Secretaria de Estado de Planejamento e Gestão",
+    "pagina": 48
+   },
+   "885": {
+    "texto": "(SEPLAG) em conjunto com a Secretaria de Estado do Ambiente e articulados à rede de universidades e institutos de pesquisa localizados no estado, com atualização anual do Portal de Mudanças Climáticas do Estado do Rio de Janeiro.",
+    "pagina": 48
+   },
+   "887": {
+    "texto": "☼ Elaborar um Plano Estadual de Adaptação às Mudanças Climáticas, estabelecendo metas de curto, médio e longo prazo para redução da vulnerabilidade das cidades, da agricultura, da infraestrutura pública e das populações mais expostas aos eventos climáticos extremos.",
+    "pagina": 48
+   },
+   "889": {
+    "texto": "☼ Instituir metas estaduais de descarbonização da economia e da Administração",
+    "pagina": 48
+   },
+   "890": {
+    "texto": "Pública, alinhadas aos compromissos nacionais e internacionais de enfrentamento às mudanças climáticas.",
+    "pagina": 48
+   },
+   "901": {
+    "texto": "☼ Implementar um Programa Estadual de Recuperação de Manguezais e Restingas, priorizando áreas degradadas por poluição, ocupações irregulares e grandes empreendimentos, em parceria com universidades, comunidades tradicionais e pescadores artesanais.",
+    "pagina": 49
+   },
+   "903": {
+    "texto": "☼ Elaborar um Plano Estadual de Gestão Integrada da Zona Costeira, articulando conservação ambiental, turismo sustentável, pesca artesanal, adaptação climática e proteção dos ecossistemas marinhos.",
+    "pagina": 49
+   },
+   "905": {
+    "texto": "☼ Criação de um plano de gestão integrada das Ilhas Fluminenses, buscando regulamentação da atividade econômica do turismo destas Ilhas, em parceria com os municípios, promovendo conservação ambiental e segurança náutica.",
+    "pagina": 49
+   },
+   "909": {
+    "texto": "☼ Implementar um programa de recuperação, conservação e uso sustentável dos ecossistemas aquáticos do estado (rios, lagoas, manguezais, praias, baías, etc), através de ações que envolvam a implantação de parques fluviais e lacustres nas áreas das faixas marginais de proteção dos corpos hídricos, e a criação de Unidades de Conservação para restauração, conservação e uso sustentável de todos os manguezais do estado;​",
+    "pagina": 49
+   },
+   "918": {
+    "texto": "☼ Criação do Sistema Estadual de Unidades de Conservação, juntamente com o INEA com o fortalecimento e modernização das UCs, através de monitoramento ambiental, apoio e capacitação dos Conselhos Gestores, atualização dos dados e identificação de queimadas, ocupação irregulares, recuperação ambiental, por meio de drones, sensores remotos, geoprocessamento e outros equipamentos e monitoramento das zonas de amortecimento.",
+    "pagina": 50
+   },
+   "920": {
+    "texto": "☼ Ampliar a rede de Unidades de Conservação do estado de forma integrada com a criação de parques urbanos, a restauração ecológica de praças e a arborização urbana das cidades, especialmente nas regiões menos arborizadas e providas destas áreas, com o objetivo de implementar uma política de manutenção e recuperação de ecossistemas nativos do estado, levando sempre em consideração as funções ecológicas dos diferentes espaços e sua relação com a população local; ●​ Revisar a categorização das áreas protegidas por Unidades de Conservação onde​ desenvolvem-se atividades agro florestais sustentáveis;",
+    "pagina": 50
+   },
+   "922": {
+    "texto": "☼ Elaborar um Plano Estadual da Mata Atlântica, com o objetivo de identificar, planejar e especificar os projetos, ações e medidas a serem adotadas visando a conservação e recuperação da Mata Atlântica, de maneira integrada às políticas sociais e ambientais vigentes no estado criando metas de preservação e restauração até 2050.",
+    "pagina": 50
+   },
+   "924": {
+    "texto": "☼ Criar corredores ecológicos estaduais entre Unidades de Conservação, ampliando a conectividade da Mata Atlântica e favorecendo a conservação da biodiversidade.",
+    "pagina": 50
+   },
+   "926": {
+    "texto": "☼ Plano Estadual de Combate à Incêndios nos Morros e Encostas, utilizando tecnologias como drones, sensores, câmeras e satélites, juntamente com dados do INEA, do Corpo de Bombeiros e da Defesa Civil, para identificação em tempo real dos focos de incêndios em morros, maciços, Unidades de Conservação, regiões serranas e na Mata Atlântica nos períodos críticos ●​ Criação de Brigadas Permanentes para atuação preventiva, eliminação de resíduos, instalação de placas educativas, entre outras ações. ☼ Lutar pela manutenção Unidades de Conservação de Proteção Integral, combatendo qualquer tentativa de regressão da proteção ambiental, ou mudança que",
+    "pagina": 50
+   },
+   "932": {
+    "texto": "☼ Implantar um Programa Estadual de Recuperação de Áreas Degradadas, estabelecendo metas permanentes de restauração ecológica, reflorestamento com espécies nativas e recuperação de nascentes.",
+    "pagina": 51
+   },
+   "934": {
+    "texto": "☼ Implementar um Programa Estadual de Conservação da Fauna Silvestre, fortalecendo o combate ao tráfico de animais, a recuperação de espécies ameaçadas e os Centros de Triagem de Animais Silvestres.",
+    "pagina": 51
+   },
+   "939": {
+    "texto": "☼ Criar um Programa Estadual de Monitoramento Permanente da Qualidade do Ar, da Água e do Solo nas regiões industriais, garantindo transparência dos dados e participação das comunidades atingidas.",
+    "pagina": 51
+   },
+   "941": {
+    "texto": "☼ Revisão dos benefícios fiscais dados às empresas situadas às “Zonas de Sacrifício”, monitoramento do descarte dos resíduos líquidos e sólidos destas empresas e dos reflexos nas comunidades que exploram o local, como pescadores e pequenos agricultores. Levantamento do prejuízo ambiental devido à extração e exploração hídrica.",
+    "pagina": 51
+   },
+   "943": {
+    "texto": "☼ Combater as indústrias poluidoras e devastadoras em geral, estabelecendo critérios rígidos de fiscalização e monitoramento dos impactos gerados por grandes empreendimentos poluidores já existentes no estado, garantindo metas claras de mitigação de impactos e compensação da população local;",
+    "pagina": 51
+   },
+   "945": {
+    "texto": "☼ Regulamentar e aplicar a lei do descomissionamento, que visa o controle e fiscalização de atividades poluidoras e a descontaminação de áreas em processo de mudança de uso;",
+    "pagina": 51
+   },
+   "952": {
+    "texto": "☼ Aplicar os procedimentos de concessão de licenças ambientais buscando promover a participação efetiva das comunidades impactadas e obrigar o poder público a considerar os impactos cumulativos e sinérgicos dos projetos previstos em cada região a partir de avaliações ambientais estratégicas e de um novo zoneamento ecológico-econômico; ☼ Vincular a política estadual de reindustrialização ao cumprimento rigoroso da legislação ambiental, priorizando a instalação de indústrias de baixo impacto, inovação tecnológica e economia de baixo carbono, assegurando que todos os empreendimentos cumpram integralmente os protocolos, condicionantes e metas ambientais estabelecidos pelos órgãos competentes.",
+    "pagina": 52
+   },
+   "954": {
+    "texto": "☼ Fortalecer o monitoramento e a fiscalização dos empreendimentos licenciados, garantindo o cumprimento das condicionantes ambientais durante toda a operação, com aplicação de sanções, suspensão de licenças e reparação integral dos danos em caso de descumprimento.",
+    "pagina": 52
+   },
+   "956": {
+    "texto": "☼ Promover a retomada e a recuperação de áreas, solos e recursos hídricos indevidamente apropriados ou degradados em razão de irregularidades no processo de licenciamento ambiental, destinando as multas e indenizações ao Fundo Estadual de Conservação Ambiental e Desenvolvimento Urbano (FECAM).",
+    "pagina": 52
+   },
+   "961": {
+    "texto": "☼ Instituir o Programa Estadual de Educadores Ambientais Comunitários para formar e apoiar agentes populares de educação ambiental, fortalecendo ações de reflorestamento, recuperação de nascentes, proteção dos rios, gestão de resíduos, agroecologia, agricultura familiar e pesca artesanal em parceria com escolas, universidades e movimentos sociais.",
+    "pagina": 52
+   },
+   "966": {
+    "texto": "☼ Garantir a redução progressiva do consumo de fontes de energia fósseis e diminuição gradativa da emissão de gases poluentes no estado, com foco nos",
+    "pagina": 52
+   },
+   "969": {
+    "texto": "transportes públicos e nos empreendimentos industriais;",
+    "pagina": 53
+   },
+   "971": {
+    "texto": "☼ Garantir a progressiva transformação da matriz energética do estado, priorizando a adoção de energias renováveis e estimulando o uso da energia solar e da biomassa; ●​ Fomentar a elaboração de projetos, pesquisa e produção de alternativas energéticas verdes em parceria com universidades, Petrobras, setor industrial entre outros.",
+    "pagina": 53
+   },
+   "973": {
+    "texto": "☼ Instituir um Programa Estadual de Empregos Verdes, incentivando cadeias produtivas voltadas à reciclagem, energias renováveis, restauração ecológica, saneamento ambiental e economia circular.",
+    "pagina": 53
+   },
+   "975": {
+    "texto": "☼ Implementar o Programa Rio sem Plástico, com o objetivo de eliminar, gradualmente, a produção, consumo e descarte de plástico e isopor no estado, estabelecendo metas de curto, médio e longo prazo; ●​ Banir, de forma gradual, a produção, comercialização e uso de embalagens e produtos descartáveis feitos de plástico e isopor; ●​ Criar mecanismos de monitoramento do impacto ecológico da produção, consumo e descarte de plástico (com foco nos microplásticos) e isopor no estado, em especial, na saúde da pessoas, na saúde dos animais, na cadeia alimentar, nos corpos hídricos, nos lençois freáticos, no solo e na atmosfera;",
+    "pagina": 53
+   },
+   "977": {
+    "texto": "☼ Programa de Monitoramento de Redução Progressiva de Plástico de Uso",
+    "pagina": 53
+   },
+   "978": {
+    "texto": "Único, que busca reduzir, para evitar a produção destes plásticos, com metas até a eliminação destes resíduos; substituir, utilizando outras matérias primas (vidro, inox, alumínio, etc); reutilização, por meio da economia circular (embalagens retornáveis, caixas reutilizáveis, copos permanentes, etc) e responsabilidade compartilhada, prevista na Política Nacional de Resíduos Sólidos (Lei nº 12.305/2010), com base na Lei Estadual na Lei nº 11.142, de 20 de março 2026, com levantamento de dados dos resíduos evitados; redução de lixo em praias e rios; economia para o poder público; emissões de carbono evitadas.",
+    "pagina": 53
+   },
+   "980": {
+    "texto": "☼ Promover a logística reversa na economia do estado, com o objetivo de integrar consumidores, comerciantes e indústrias em uma cadeia econômica circular, baseada na reciclagem e reutilização de produtos feitos de plástico e isopor;",
+    "pagina": 53
+   },
+   "983": {
+    "texto": "​ ☼ Criar a Política Estadual de Rotulagem Ecológica certificação ISO 14021 e ISO",
+    "pagina": 54
+   },
+   "984": {
+    "texto": "14025, baseada na Declaração Ambiental de Produto (DAP).",
+    "pagina": 54
+   },
+   "986": {
+    "texto": "☼ Promover campanhas informativas sobre técnicas de reaproveitamento de objetos antigos (upcycling) para reduzir o descarte de plástico (em especial, o plástico BOPP) e isopor no estado e poupar o meio ambiente; ☼ Programa Permanente de descarte de lixo eletrônico, com ampliação da coleta, incentivo à reciclagem, fortalecimento da logística reversa e à educação ambiental, implementando pontos de entrega voluntária e centros de recuperação de equipamentos, destinando à utilização pública, e o correto descarte, bem como campanhas de conscientização. ●​",
+    "pagina": 54
+   },
+   "987": {
+    "texto": "Determinação de que os equipamentos eletrônicos inservíveis aos órgãos públicos sejam inventariados, reciclados e destinados a reciclagem certificada. ●​",
+    "pagina": 54
+   },
+   "988": {
+    "texto": "Criação de programa de catadores digitais, capacitando cooperativas para triagem, desmontagem e reaproveitamento.",
+    "pagina": 54
+   },
+   "990": {
+    "texto": "☼ Implementar um plano de remodelamento dos edifícios públicos do Governo do Estado para garantir o uso eficiente de recursos críticos (especialmente água, gás e energia elétrica) e diminuir a produção de resíduos ●​ Implementar um Programa de Reuso e Captação de Água da Chuva em todas os prédios públicos do governo do Estado, utilizando técnicas permaculturais na reforma dos mesmos; ●​ Reaproveitamento dos bens públicos: além dos resíduos eletrônicos, móveis, materiais de construções, órgãos públicos antes de serem descartados; ●​ Redução da dependência em combustíveis fósseis em equipamentos estatais, ampliando a participação de energias renováveis, reduzindo a emissão de gases poluentes com inovações tecnológicas, como instalação de paineis solares em prédios públicos (escolas, hospitais, delegacias universidade e etc), sistemas inteligentes de consumo, iluminação por LED, aproveitamento de resíduos orgânicos urbanos, aterros, entre outros, em um processo de descarbonização da Administração Pública estadual",
+    "pagina": 54
+   },
+   "992": {
+    "texto": "☼ Estimular a bioeconomia fluminense, incentivando atividades econômicas baseadas no uso sustentável da biodiversidade, da agricultura familiar, da pesca artesanal e dos produtos da sociobiodiversidade.",
+    "pagina": 54
+   },
+   "996": {
+    "texto": "☼ Instituir instrumentos de compensação de impactos socioambientais e de incentivo à adoção de medidas de mitigação dos impactos socioambientais no estado;",
+    "pagina": 55
+   },
+   "1002": {
+    "texto": "☼ Criar centros de educação ambiental nas Unidades de Conservação do Estado",
+    "pagina": 55
+   },
+   "1008": {
+    "texto": "☼ Implementar um Programa Estadual de Formação Ambiental para Servidores",
+    "pagina": 55
+   },
+   "1009": {
+    "texto": "Públicos, fortalecendo a capacidade técnica da administração estadual para enfrentar os desafios das mudanças climáticas e da gestão ambiental.",
+    "pagina": 55
+   },
+   "1011": {
+    "texto": "☼ Desenvolver programas permanentes de educação ambiental comunitária em parceria com associações de moradores, cooperativas, movimentos sociais e universidades.",
+    "pagina": 55
+   },
+   "1018": {
+    "texto": "☼ Instituir um Plano Estadual de Permacultura garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 56
+   },
+   "1020": {
+    "texto": "☼ Mapear as áreas subutilizadas e não habitadas em cada município do estado, para a implantação de tecnologias sustentáveis de manejo de território protagonizados pelos moradores destas áreas, inaugurando uma nova perspectiva econômica e uso do solo através das Unidades de Conservação de Uso Sustentável",
+    "pagina": 56
+   },
+   "1021": {
+    "texto": "Estaduais;",
+    "pagina": 56
+   },
+   "1023": {
+    "texto": "☼ Criar um Centro Estadual de Formação em Permacultura em cada região do estado (Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde), com o objetivo de desenvolver técnicas de construção ecológica, manejo sustentável da água, produção de energia de fontes renováveis, gestão de sistemas agroflorestais, alimentação saudável e compostagem de resíduos orgânicos, formando servidores públicos e permacultores comunitários capazes de pensar o planejamento e a gestão dos territórios;",
+    "pagina": 56
+   },
+   "1025": {
+    "texto": "☼ Fomentar, assessorar e coordenar a implantação de Sistemas Agroflorestais enquanto estratégia de recuperação de solo, contenção de encostas, revitalização de nascentes, aumento de permeabilidade do solo para a diminuição de enchentes, produção de alimentos, melhoria de qualidade do ar e conforto térmico nas localidades.",
+    "pagina": 56
+   },
+   "1027": {
+    "texto": "☼ Criar uma incubadora de projetos sustentáveis em cada região do estado",
+    "pagina": 56
+   },
+   "1028": {
+    "texto": "(Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde) para fomentar a geração de renda e fortalecer a inserção das políticas permaculturais nas comunidades;",
+    "pagina": 56
+   },
+   "1030": {
+    "texto": "☼ Investir na formação de educadores e profissionais da saúde da rede estadual voltados para a implantação de atividades permaculturais nas escolas e unidades de saúde e outros prédios públicos, como implantação de captação de água de chuva, telhados verdes, hortas orgânicas, gestão de resíduos, redução de descartáveis, entre outros.",
+    "pagina": 56
+   },
+   "1034": {
+    "texto": "☼ Criação do “Estado Esponja”, em réplica ao conceito de cidade esponja, com medidas de transformação da estruturas urbanas em sustentáveis como: parques alagáveis, telhados verdes, calçamentos permeáveis e praças piscinas.",
+    "pagina": 57
+   },
+   "1040": {
+    "texto": "☼ Instituir um Sistema Estadual de Prevenção e Mitigação de Desastres",
+    "pagina": 57
+   },
+   "1041": {
+    "texto": "Socioambientais, garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação; ●​ Criar o Conselho Estadual de Prevenção e Mitigação de Desastres",
+    "pagina": 57
+   },
+   "1042": {
+    "texto": "Socioambientais, dando-lhe estrutura e capacidade de avaliação, consulta e deliberação sobre as políticas públicas de proteção socioambiental; ●​ Instituir um Plano Estadual de Prevenção e Mitigação de Desastres",
+    "pagina": 57
+   },
+   "1043": {
+    "texto": "Socioambientais, sob supervisão do Conselho Estadual de Prevenção e Mitigação de Desastres Socioambientais, com o objetivo de apresentar medidas para a prevenção e mitigação dos riscos geológicos, hidrológicos, meteorológicos, climatológicos e biológicos, conforme Classificação Brasileira de Desastres (Cobrade); ●​ Destinar recursos do FECAM para prevenção e mitigação de desastres socioambientais",
+    "pagina": 57
+   },
+   "1045": {
+    "texto": "☼ Implantar infraestrutura verde para prevenção de desastres, priorizando parques alagáveis, recuperação de várzeas, renaturalização de rios urbanos e ampliação da cobertura vegetal em áreas críticas.",
+    "pagina": 57
+   },
+   "1047": {
+    "texto": "☼ Elaborar uma Cartografia de Riscos Hidrológicos para todas as favelas e áreas informais do estado, áreas formais de baixa estruturação e alta suscetibilidade a enchentes e inundações, e ao longo de vias próximas a rios e lagoas com média ou alta suscetibilidade a enchentes e inundações; ●​ Realização de cadastro para as pessoas que residem nestas áreas, com base no Mapa Mapa Histórico das Áreas Mais Suscetíveis a Inundações, elaborado pelo Centro de Estudos e Pesquisas em Defesa Civil (CEPEDEC), com apoio do CEMADEN-RJ.Atlas Estadual de Riscos Hidrológicos,integrado ao Cadastro Estadual de Defesa Civil",
+    "pagina": 57
+   },
+   "1051": {
+    "texto": "☼ Expandir a Cartografia de Riscos Geológicos para todas as favelas e áreas informais do estado, áreas formais de baixa estruturação e alta suscetibilidade a deslizamentos e ao longo de vias à jusante de encostas com média ou alta suscetibilidade a deslizamentos;",
+    "pagina": 58
+   },
+   "1053": {
+    "texto": "☼ Expandir a rede de estações de monitoramento meteorológico de modo a alcançar o número preconizado pela Organização Meteorológica Mundial (OMM); ●​ Avaliar os impactos dos pontos cegos do radar meteorológico na capacidade de previsão de curtíssimo prazo com vistas a garantir que todas as áreas do estado disponham de igual capacidade preditiva para os eventos climáticos extremos;",
+    "pagina": 58
+   },
+   "1055": {
+    "texto": "☼ Implementar um Plano Geral de Ação durante Emergências para o estado, sob coordenação do Centro de Operações e Monitoramento do Estado e da Secretaria de Estado de Defesa Civil (SEDEC), com o objetivo de integrar os protocolos operacionais de todo o governo do Estado, contendo: temporalidades de ação e marcos cronológicos; critérios limítrofes para acionamento dos estágios operacionais do estado; critérios limítrofes para decretação de estado de calamidade; gatilhos operacionais e cronológicos para a adoção de medidas de contenção de crises; lista de prioridades na execução das ações mitigadores de medidas de contenção de crises; protocolos de atendimento e acolhimento aos atingidos; hierarquia de gestão nos diferentes estágios operacionais; calendário de ações conjuntas dos diversos órgãos; bem como, um ciclo de revisões;",
+    "pagina": 58
+   },
+   "1057": {
+    "texto": "☼ Elaborar um Plano Estadual de Monitoramento das Áreas de Risco",
+    "pagina": 58
+   },
+   "1058": {
+    "texto": "Hidrológicos para o estado, com horizonte histórico de 50 anos a ser revisado decenalmente, para: ●​ Produzir um diagnóstico detalhado do território do estado; ●​ Realizar um levantamento histórico de acidentes e desastres hidrológicos; ●​ Revisar o histórico da atuação do poder público na contenção de enchentes e inundações; ●​ Analisar as estatísticas produzidas pelas prefeituras e pelo governo do Estado até o presente momento (laudos de vistoria, tipos de acidentes etc); ●​ Revisar o histórico de recursos financeiros destinados para a prevenção de inundações; ●​ Produzir dados geográficos e hidrológicos em grau de precisão e",
+    "pagina": 58
+   },
+   "1061": {
+    "texto": "detalhamento compatível com um planejamento de longo prazo e a criação de banco de dados para subsidiar os projetos do governo do Estado, defininido critérios para priorização de investimentos em infraestrutura resiliente; ●​ Elaborar mapeamento atualizado das áreas de risco hidrológico para todas as favelas do estado, para as áreas formalizadas de baixa estruturação em áreas de alta suscetibilidade e para as áreas críticas para a dinâmica urbana (vias expressas ou arteriais) e rural; ●​ Apresentação alternativa de projeto básico para todos os pontos de risco identificados e apresentar uma hierarquização dos mesmos; ●​ Elaboração orçamento preliminar para os projetos básicos apresentados e apresentar metas de investimento para os próximos 10 anos; ●​ Implantação de rede de monitoramento hidrometeorológico nos corpos hídricos associados às áreas de risco que permita alertar antecipadamente para a ocorrência de inundações ou enchentes; ●​ Realização de estimativa de prejuízos econômicos decorrentes de desastres hidrológicos no estado; ●​ Implementação de sistemas informatizados de compartilhamento de dados e gestão de informações georreferenciadas de laudos de vistorias, de acidentes hidrológicos, e de projetos elaborados por institutos de gestão hídrica que atuam no estado; ●​ Incentivo para as prefeituras a criarem jardins de chuva (sistema de biorretenção para o manejo das águas pluviais urbanas) nas calçadas dos municípios fluminenses, privilegiando pontos críticos de alagamento e áreas menos arborizadas;",
+    "pagina": 59
+   },
+   "1063": {
+    "texto": "☼ Elaborar um Plano Estadual de Contenção e Monitoramento de Encostas e Áreas de Risco Geotécnicos para o estado, com horizonte histórico de 50 anos a ser revisado decenalmente, para: ●​ Produzir um diagnóstico detalhado do território do estado; ●​ Realizar um levantamento histórico de acidentes e desastres geológicos; ●​ Revisar o histórico da atuação do poder público na contenção de encostas; ●​ Analisar as estatísticas produzidas pelos institutos municipais de geotécnica até o presente momento (laudos de vistoria, tipos de acidentes etc); ●​ Revisar o histórico de recursos financeiros destinados para a prevenção",
+    "pagina": 59
+   },
+   "1066": {
+    "texto": "de deslizamento; ●​ Produzir dados geográficos, geológicos e geotécnicos em grau de precisão e detalhamento compatível com um planejamento de longo prazo e a criação de banco de dados para subsidiar os projetos do governo do Estado; ●​ Elaborar mapeamento atualizado​ das áreas de risco geológico-geotécnico para todas as favelas do estado, para as áreas formalizadas de baixa estruturação em áreas de alta suscetibilidade e para as áreas críticas para a dinâmica urbana (vias expressas ou arteriais) e rural; ●​ Apresentar alternativa de projeto básico para todos os pontos de risco identificados e apresentar uma hierarquização dos mesmos; ●​ Elaborar orçamento preliminar para os projetos básicos apresentados e apresentar metas de investimento para os próximos 10 anos; ●​ Implementar rede de monitoramento de encostas críticas através de instrumentos de medição automatizados, como estações totais robotizadas e detectores de movimentos de massa por emissão acústica; ●​ Realizar estimativa de prejuízos econômicos decorrentes de desastres geológicos no estado; ●​ Implementar sistemas informatizados de compartilhamentos de dados e gestão de informações georreferenciadas de laudos de vistorias, de acidentes geológicos-geotécnicos, e de projetos elaborados por institutos de geotécnica que atuam no estado.",
+    "pagina": 60
+   },
+   "1068": {
+    "texto": "☼ Elaborar censo e cadastramento dos moradores de áreas de risco geológico e hidrológico, com vistas a traçar o perfil demográfico desses habitantes e facilitar a concessão de auxílios habitacionais ou de assistência social no momento dos desastres; ●​ Realizar o pré-cadastramento biométrico voluntário dos moradores de áreas de risco de forma a garantir que os mesmos possam dar entrada no pedido de obtenção de auxílio habitação temporário ou outros benefícios mesmo em caso de perda de documentação em razão dos desastres.",
+    "pagina": 60
+   },
+   "1152": {
+    "texto": "☼ Implementar um Programa Estadual de Biodigestores para o tratamento",
+    "pagina": 66
+   },
+   "1155": {
+    "texto": "integrado de resíduos orgânicos e lodo de esgoto, promovendo a geração de biogás, energia e biofertilizantes; ☼ Estruturar uma Política Estadual de Economia Circular, estimulando o reaproveitamento de resíduos sólidos e orgânicos, a redução do desperdício e a geração de emprego e renda por meio de cadeias produtivas sustentáveis;",
+    "pagina": 67
+   },
+   "1157": {
+    "texto": "☼ Promover a integração entre as políticas de saneamento, gestão de resíduos sólidos e transição energética, por meio de planejamento regionalizado e convênios com municípios, universidades e instituições de pesquisa;​",
+    "pagina": 67
+   },
+   "1159": {
+    "texto": "☼ Criar o Programa Estadual de Co-digestão, integrando concessionárias de saneamento, municípios, CEASAs, restaurantes populares, universidades e cooperativas para o aproveitamento de resíduos orgânicos em Estações de Tratamento de Esgoto com viabilidade técnica, ampliando a produção de biogás e biofertilizantes, reduzindo o envio de resíduos aos aterros sanitários, as emissões de metano e os custos operacionais do sistema de saneamento.",
+    "pagina": 67
+   },
+   "1161": {
+    "texto": "☼ Elaborar, em conjunto com as prefeituras de cada região, um Plano Estadual de Lixo Zero baseado em coleta seletiva, reciclagem e compostagem, voltada para a limpeza urbana e a destinação adequada dos resíduos sólidos do estado; ●​ Elaborar, em conjunto com as prefeituras de cada região, programas específicos de coleta seletiva e limpeza urbana nas favelas, ampliando a abrangência e a capilaridade do serviço​ nestas​áreas,​ por exemplo,​ através dos garis comunitários e da integração com os catadores locais; ●​ Alternativas tecnológicas que possibilitem melhorar o sistema de coleta de resíduos sólidos nas favelas e áreas de ocupação informal do estado.",
+    "pagina": 67
+   },
+   "1163": {
+    "texto": "☼ Fortalecer a gestão regional da coleta seletiva e destinação adequada de resíduos sólidos, garantindo a equidade entre os municípios e a compensação financeira aos municípios que prestam serviço ambiental através do aterro sanitário (exemplo: Seropédica);",
+    "pagina": 67
+   },
+   "1165": {
+    "texto": "☼ Promover a valorização dos catadores de resíduos sólidos através de ações que visem a transformação dessa atividade em uma oportunidade digna de geração de renda, tais como capacitação técnica, fornecimento de equipamentos, apoio a formação de cooperativas, assistência social e educacional, e mecanismos de compensação e remuneração pelos serviços públicos prestados;",
+    "pagina": 67
+   },
+   "1168": {
+    "texto": "●​ Realizar um inventário da situação das organizações de catadores, avaliar como está o grau de formalização (trabalhista, societário e ambiental), a qualidade das infraestruturas de trabalho, bem como a capacidade produtiva das organizações; ●​ Incentivo aos Municípios à contratação de cooperativas por meio da Lei",
+    "pagina": 68
+   },
+   "1169": {
+    "texto": "Federal 11.445/06 (Plano Nacional de Saneamento Básico) para o serviço de coleta seletiva; ●​ Ampliar roteiros de coleta seletiva para regiões estratégicas do estado; ●​ Realizar campanhas de sensibilização da população com acesso ao serviço de coleta seletiva;​",
+    "pagina": 68
+   },
+   "1171": {
+    "texto": "☼ Fomentar a implantação de indústrias de reciclagem e reaproveitamento de resíduos em cada região do estado (Metropolitana, Noroeste Fluminense, Norte",
+    "pagina": 68
+   },
+   "1172": {
+    "texto": "Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio",
+    "pagina": 68
+   },
+   "1173": {
+    "texto": "Paraíba e Costa Verde), integrando-as às cooperativas de catadores e às empresas municipais de limpeza urbana, mediante incentivos fiscais, parcerias e convênios.",
+    "pagina": 68
+   },
+   "2245": {
+    "texto": "☼ Instituir, em parceria com o INEA, uma política de informação in loco sobre as condições de banho (“própria” ou “imprópria”) das praias, rios e lagoas do estado, que possa constar em aplicativo de fácil acesso à população;",
+    "pagina": 132
+   }
+  }
  }
 }

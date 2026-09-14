@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "assistencia-social-rj.json",
-  "gerado_em": "2026-09-14T01:38:36Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:36:11Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,14 +45,22 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Gestão do SUAS",
-   "proposta": "Fortalecer a gestão municipal da assistência social com apoio técnico às prefeituras, cofinanciamento estadual, uso de dados, metas e cobrança de resultados",
-   "n_concorda": 1,
+   "proposta": "Fortalecer a articulação entre o Estado e os municípios na gestão da assistência social, com apoio técnico, uso de dados e metas de resultado",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -60,14 +68,139 @@
       291,
       294
      ],
-     "nota": "Estado coordena e cofinancia; expansão da rede de atendimento"
+     "nota": "Inclui cofinanciamento e cobrança de resultados às prefeituras"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      525,
+      526
+     ],
+     "nota": "Programa estadual integrando proteção social básica e especial"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Gestão do SUAS",
-   "proposta": "Focalizar os programas sociais em quem mais precisa, condicionando-os a uma porta de saída por capacitação e trabalho, para evitar dependência permanente",
+   "proposta": "Articular a assistência social com outras políticas setoriais (saúde, educação, habitação, trabalho, segurança) em estratégia intersetorial",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      528,
+      569,
+      573
+     ],
+     "nota": "Planejamento territorial com Saúde, Cultura, Habitação, Trabalho e Educação"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      438,
+      1056
+     ],
+     "nota": "Estratégia única unindo assistência, saúde, segurança e educação"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Gestão do SUAS",
+   "proposta": "Instalar equipamentos territoriais que reúnam, no mesmo espaço, policiamento comunitário, CRAS e encaminhamento a qualificação e primeiro emprego",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      437,
+      438
+     ],
+     "nota": "Núcleos Integrados de Articulação Intersetorial em territórios prioritários"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Gestão do SUAS",
+   "proposta": "Fortalecer o Conselho Estadual de Assistência Social, garantindo estrutura e autonomia de avaliação, consulta e deliberação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      530
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Gestão do SUAS",
+   "proposta": "Valorizar os trabalhadores da assistência social, com concurso público estatutário e sem terceirização na execução dos serviços",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      532
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Gestão do SUAS",
+   "proposta": "Realizar campanha de valorização e programas de formação permanente dos profissionais da assistência social, em diálogo com conselhos e sindicatos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      534
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Renda e combate à pobreza",
+   "proposta": "Fortalecer programas de garantia de renda mínima e a ação intersetorial voltada à erradicação da extrema pobreza",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      539,
+      542
+     ],
+     "nota": "Qualificar a rede de serviços que atende beneficiários do Bolsa Família"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Renda e combate à pobreza",
+   "proposta": "Criar programa estadual permanente de transferência de renda para as 600 mil famílias mais pobres, com teto de meio salário mínimo por família e plano de expansão progressiva",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      628
+     ],
+     "nota": "Renda Básica Fluminense, valor variável conforme composição familiar"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Renda e combate à pobreza",
+   "proposta": "Focalizar as políticas sociais em quem mais precisa, condicionando-as a uma porta de saída por capacitação e trabalho, evitando dependência permanente",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -81,39 +214,112 @@
    }
   },
   {
-   "id": "p3",
+   "id": "p10",
    "subtema": "Segurança alimentar",
-   "proposta": "Estimular a doação de alimentos excedentes de supermercados e indústrias a um Banco de Alimentos estadual, com o Estado responsável pela certificação e logística de distribuição",
-   "n_concorda": 1,
+   "proposta": "Estruturar programa estadual de aquisição e distribuição de alimentos a populações vulneráveis à fome",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1208
+     ],
+     "nota": "PAA estadual com compra pública de alimentos"
+    },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       293
      ],
-     "nota": ""
+     "nota": "Doação de excedentes por supermercados e indústrias ao Banco de Alimentos estadual"
     }
    }
   },
   {
-   "id": "p4",
-   "subtema": "População em situação de rua e drogas",
-   "proposta": "Tratar a dependência química como doença crônica e ampliar a rede de acolhimento e tratamento, com prioridade à adesão voluntária e internação involuntária restrita aos critérios da Lei nº 13.840/2019",
+   "id": "p11",
+   "subtema": "Segurança alimentar",
+   "proposta": "Instituir Plano Estadual de Segurança Alimentar e Nutricional com participação social ampla e descentralizada",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1056
+      1187,
+      1188,
+      1189,
+      1190
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p5",
+   "id": "p12",
+   "subtema": "Segurança alimentar",
+   "proposta": "Fortalecer o Conselho Estadual de Segurança Alimentar e Nutricional (CONSEA-Rio), com estrutura e poder deliberativo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1184,
+      1185
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Segurança alimentar",
+   "proposta": "Organizar uma rede pública de feiras, mercados e restaurantes populares agroecológicos em todas as regiões do estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1262,
+      1263
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Segurança alimentar",
+   "proposta": "Ampliar e fortalecer as equipes de nutricionistas em escolas e hospitais estaduais para fiscalizar a qualidade dos alimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1210
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
    "subtema": "População em situação de rua e drogas",
-   "proposta": "Ordenar o espaço urbano das áreas centrais degradadas em conjunto com os órgãos municipais, articulando assistência social, saúde, segurança e educação",
+   "proposta": "Implementar política estadual voltada à população em situação de rua articulada com os conselhos de assistência social, saúde, criança e adolescente e psicologia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      552,
+      553
+     ],
+     "nota": "Adoção da Política Nacional e da Resolução 109/2009 do CNAS"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "População em situação de rua e drogas",
+   "proposta": "Tratar a dependência química como doença crônica, ampliando a rede de acolhimento e tratamento com prioridade à adesão voluntária e internação involuntária apenas nos casos legais",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -127,8 +333,23 @@
    }
   },
   {
-   "id": "p6",
+   "id": "p17",
    "subtema": "População em situação de rua e drogas",
+   "proposta": "Ordenar o espaço urbano das áreas centrais degradadas em conjunto com os órgãos municipais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1056
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Crianças e adolescentes",
    "proposta": "Garantir proteção integral a crianças e adolescentes em situação de rua",
    "n_concorda": 1,
    "posicoes": {
@@ -142,49 +363,171 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Equipamentos e articulação territorial",
-   "proposta": "Instalar, em territórios de alta vulnerabilidade, núcleos integrados que reúnam no mesmo espaço policiamento comunitário, CRAS e encaminhamento a curso técnico e primeiro emprego",
+   "id": "p19",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Apoiar os serviços de acolhimento institucional de crianças e adolescentes conforme as orientações técnicas, com formação continuada e garantia de brevidade e excepcionalidade da medida",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      437,
-      438
+      558,
+      560,
+      563
+     ],
+     "nota": "Pactuação com MP, Vara da Infância e Conselhos Tutelares"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Ampliar programas de família acolhedora e repúblicas para jovens como alternativa à institucionalização",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      565
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Proteção à infância vulnerável",
-   "proposta": "Assegurar suporte continuado — psicossocial, jurídico e material — a crianças e adolescentes que perdem as mães para a violência doméstica",
+   "id": "p21",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Criar força-tarefa para fiscalizar convênios e contratos de abrigos privados que recebem subvenções públicas estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      567
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Implementar Plano Estadual de Promoção, Proteção e Defesa do Direito à Convivência Familiar e Comunitária",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      583
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Fortalecer os Conselhos Tutelares em parceria com os municípios, com capacitação permanente, reajuste de remuneração, ampliação de equipes e melhoria de instalações e equipamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      547
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Crianças e adolescentes",
+   "proposta": "Assegurar suporte psicossocial, jurídico e material continuado a crianças e adolescentes órfãos de vítimas de violência doméstica e feminicídio",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       2753,
-      2760
+      2760,
+      2773
+     ],
+     "nota": "Meta de cobertura de 100% das crianças órfãs identificadas"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Socioeducativo",
+   "proposta": "Qualificar as medidas socioeducativas em meio aberto com equipes técnicas adequadas e projetos político-pedagógicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      587
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p9",
-   "subtema": "Proteção à infância vulnerável",
-   "proposta": "Atingir cobertura de 100% das crianças órfãs identificadas em casos de feminicídio com suporte do Estado",
+   "id": "p26",
+   "subtema": "Socioeducativo",
+   "proposta": "Integrar o CRAS do território de moradia da família ao atendimento do adolescente em cumprimento de medida de internação",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      2773
+      589
      ],
-     "nota": "Meta numérica com indicador de acompanhamento"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Socioeducativo",
+   "proposta": "Criar programa estadual de acesso à justiça e reinserção social de egressos do sistema socioeducativo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      591
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Proteção a vítimas",
+   "proposta": "Garantir acolhimento e assistência integral para proteção e reinserção de vítimas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      673
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Proteção a vítimas",
+   "proposta": "Instituir programa de assistência a vítimas de desastres socioambientais que ameacem a vida ou o patrimônio",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1070
+     ],
+     "nota": ""
     }
    }
   }
@@ -240,6 +583,148 @@
     "pagina": 26
    }
   },
-  "governador-rj-eduardo-paes-190002543380": {}
+  "governador-rj-eduardo-paes-190002543380": {},
+  "governador-rj-william-siri-190002536162": {
+   "525": {
+    "texto": "☼ Implementar um Programa Estadual de Assistência Social que garanta a integração da Rede de Proteção Social Básica (destinada à prevenção de riscos sociais e pessoais, por meio da oferta de projetos, serviços e benefícios a indivíduos e famílias em situação de vulnerabilidade social) com a Rede de Proteção Social",
+    "pagina": 27
+   },
+   "526": {
+    "texto": "Especial (destinada a famílias e indivíduos que já se encontram em situação de risco e que tiveram seus direitos violados por ocorrência de abandono, maus-tratos, abuso sexual, uso de drogas, entre outros aspectos), assegurando infraestrutura adequada para funcionamento dos equipamentos;",
+    "pagina": 27
+   },
+   "528": {
+    "texto": "☼ Desenvolver estratégias de articulação técnica e planejamento territorial com outras secretarias, como Saúde, Cultura, Habitação, Trabalho, Educação, entre outras;",
+    "pagina": 27
+   },
+   "530": {
+    "texto": "☼ Fortalecer o Conselho Estadual de Assistência Social, dando-lhes estrutura e capacidade autônoma de avaliação, consulta e deliberação sobre as políticas públicas de assistência social;",
+    "pagina": 27
+   },
+   "532": {
+    "texto": "☼ Valorizar o servidor público da assistência social em suas mais diferentes áreas, com a garantia concurso público estatutário em todas as áreas, evitando a terceirização na execução dos serviços e contratação de profissionais;",
+    "pagina": 27
+   },
+   "534": {
+    "texto": "☼ Iniciar uma campanha de valorização dos diferentes profissionais que atuam na assistência social no âmbito do estado, em todas as políticas públicas estaduais, buscando articulação e diálogo com os respectivos conselhos profissionais e sindicatos das categorias na construção de planos de trabalho e programas de formação condizentes com suas especificidades em uma abordagem multidisciplinar;",
+    "pagina": 27
+   },
+   "539": {
+    "texto": "☼ Aprimorar as ações intersetoriais da rede de serviços públicos que atende a",
+    "pagina": 27
+   },
+   "542": {
+    "texto": "população beneficiária do Bolsa Família para qualificar o investimento nas políticas voltadas à erradicação da extrema pobreza no estado, fortalecendo os programas de garantia de renda mínima;",
+    "pagina": 28
+   },
+   "547": {
+    "texto": "☼ Promover, em parceira com as prefeituras de cada município, uma política de fortalecimento dos Conselhos Tutelares localizados no estado, buscando a capacitação permanente de seus quadros, uma melhor distribuição conforme a população e indicadores sociais de cada região administrativa, um reajuste da remuneração, reformas das instalações físicas, aquisição de equipamentos de informática, carro, ampliação do quadro de funcionários para composição das equipes técnicas (assistentes sociais, psicólogos e pedagogos), criação de programas e cursos de capacitação técnica permanente, bem como a organização de encontros regionais para promover a troca de experiências e a articulação em rede;",
+    "pagina": 28
+   },
+   "552": {
+    "texto": "☼ Implementar a Política Nacional da Pessoa em Situação de Rua e a Resolução",
+    "pagina": 28
+   },
+   "553": {
+    "texto": "109/2009 do Conselho Nacional de Assistência Social (CNAS), em articulação com o Conselho Estadual de Saúde (CES), Conselho Estadual dos Direitos da Criança e do Adolescente (CEDCA), o Conselho Estadual de Assistência Social (CEAS) e o Conselho Regional de Psicologia (CRP);",
+    "pagina": 28
+   },
+   "558": {
+    "texto": "☼ Apoiar as modalidades de acolhimento institucional (Casa de Passagem, abrigo, casa-lar) nos parâmetros das Orientações Técnicas para os Serviços de Acolhimento para crianças e adolescentes, garantindo a brevidade e excepcionalidade da medida, bem como a formação contínua dos profissionais envolvidos;",
+    "pagina": 28
+   },
+   "560": {
+    "texto": "☼ Pactuar uma política com o Ministério Público, a Vara da Infância e Juventude e os Conselhos Tutelares, que garanta a excepcionalidade na aplicação e a",
+    "pagina": 28
+   },
+   "563": {
+    "texto": "brevidade no cumprimento da medida de acolhimento institucional;",
+    "pagina": 29
+   },
+   "565": {
+    "texto": "☼ Investir na ampliação dos programas de família acolhedora e repúblicas para jovens como medida alternativa à institucionalização;",
+    "pagina": 29
+   },
+   "567": {
+    "texto": "☼ Criar imediatamente uma força-tarefa, junto com o Conselho Estadual de Assistência Social, para fiscalizar e analisar a execução de convênios e contratos administrativos de abrigos privados que recebam subvenções públicas do Governo do Estado;",
+    "pagina": 29
+   },
+   "569": {
+    "texto": "☼ Integrar os abrigos localizados no estado aos equipamentos de saúde, educação pública, cultura, trabalho, esporte, lazer, habitação e geração de renda da rede estadual, implementando uma política integrada para pessoas em situação de vulnerabilidade social, visando a superação dessas condições;",
+    "pagina": 29
+   },
+   "573": {
+    "texto": "☼ Integrar o trabalho dos profissionais da assistência social às políticas habitacionais do Governo do Estado, em especial, aos serviços prestados nas favelas e bairros populares;",
+    "pagina": 29
+   },
+   "583": {
+    "texto": "☼ Implementar um Plano Estadual de Promoção, Proteção e Defesa do Direito à Convivência Familiar e Comunitária, em articulação com o Conselho Estadual dos Direitos da Criança e do Adolescente (CEDCA), Conselho Estadual de Assistência social (CEAS) e com o Conselho Regional de Psicologia (CRP);",
+    "pagina": 29
+   },
+   "587": {
+    "texto": "☼ Garantir uma equipe técnica adequada e elaborar projetos políticos pedagógicos para qualificar as medidas socioeducativas em meio aberto, envolvendo os adolescentes, os familiares e as instituições que compõem o Sistema de Garantia de Direitos;",
+    "pagina": 30
+   },
+   "589": {
+    "texto": "☼ Promover a integração do Centro de Referência de Assistência Social (CRAS) da região onde o familiar de adolescente em cumprimento de medida de internação mora e a unidade socioeducativa onde o jovem cumpre a medida;",
+    "pagina": 30
+   },
+   "591": {
+    "texto": "☼ Elaborar um programa estadual para garantir o acesso à justiça e a mecanismos de reinserção social de egressos do sistema socioeducativo",
+    "pagina": 30
+   },
+   "628": {
+    "texto": "☼ Criar o programa Renda Básica Fluminense para garantir um auxílio financeiro permanente às 600 mil famílias mais pobres do estado (as 10% mais pobres), tendo como objetivo consolidar uma política estrutural de transferência de renda voltada para a erradicação da extrema pobreza e a superação das desigualdades urbanas; ●​ Estabelecer o teto de meio salário mínimo por família como parâmetro de valor do auxílio financeiro, variando conforme o número de crianças e se há pessoa com deficiência ou idosos no núcleo familiar; ●​ Construir um plano para progressiva expansão do benefício para um número maior de famílias, conforme a necessidade e o aumento da arrecadação;",
+    "pagina": 32
+   },
+   "673": {
+    "texto": "☼ Proteger e reinserir as vítimas, garantindo acolhimento, assistência integral,",
+    "pagina": 35
+   },
+   "1070": {
+    "texto": "☼ Instituir um programa de assistência a vítimas de desastres socioambientais que redundem em ameaça à vida ou ao patrimônio das pessoas.",
+    "pagina": 60
+   },
+   "1184": {
+    "texto": "☼ Fortalecer o Conselho Estadual de Segurança Alimentar e Nutricional",
+    "pagina": 69
+   },
+   "1185": {
+    "texto": "(CONSEA-Rio), dando-lhe estrutura e capacidade de avaliação, consulta e deliberação sobre as políticas públicas de promoção, defesa e garantia da segurança alimentar e nutricional;",
+    "pagina": 69
+   },
+   "1187": {
+    "texto": "☼ Instituir um Plano Estadual de Segurança Alimentar e Nutricional, sob a supervisão do Conselho",
+    "pagina": 69
+   },
+   "1188": {
+    "texto": "Estadual de Segurança",
+    "pagina": 69
+   },
+   "1189": {
+    "texto": "Alimentar e Nutricional",
+    "pagina": 69
+   },
+   "1190": {
+    "texto": "(CONSEA-Rio), garantindo a participação ampla, direta e descentralizada da sociedade ao longo de todo o processo de elaboração e implantação;",
+    "pagina": 69
+   },
+   "1208": {
+    "texto": "☼ Criar o Programa de Aquisição de Alimentos (PAA) do Estado do Rio de Janeiro para destinar alimentos adquiridos pelo Estado a populações vulneráveis ao risco de fome e insegurança alimentar e nutricional;",
+    "pagina": 70
+   },
+   "1210": {
+    "texto": "☼ Fortalecer a equipe de nutricionistas em escolas e hospitais estaduais para fiscalizar a qualidade dos alimentos e a condição dos trabalhadores responsáveis pela alimentação;",
+    "pagina": 70
+   },
+   "1262": {
+    "texto": "☼ Organizar uma rede pública de feiras, mercados e restaurantes populares agroecológicos em cada região do estado (Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio",
+    "pagina": 73
+   },
+   "1263": {
+    "texto": "Paraíba e Costa Verde);",
+    "pagina": 73
+   }
+  }
  }
 }

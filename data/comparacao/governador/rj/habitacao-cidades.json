@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "habitacao-cidades-rj.json",
-  "gerado_em": "2026-09-14T01:27:24Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:21:00Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,30 +45,29 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Ampliar a oferta de moradias e o estoque de habitação de interesse social para famílias de baixa renda, com prioridade para as regiões de maior déficit habitacional",
-   "n_concorda": 3,
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Ampliar a oferta de habitação de interesse social para famílias de baixa renda",
+   "n_concorda": 4,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       284
      ],
-     "nota": "Inclui prioridade também para servidores da segurança"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2570,
-      2579,
-      2586
-     ],
-     "nota": ""
+     "nota": "Prioriza regiões com maior déficit e servidores da segurança"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
@@ -77,13 +76,30 @@
       1579
      ],
      "nota": "Produção vinculada prioritariamente à desfavelização"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1356,
+      1366
+     ],
+     "nota": "Foco em famílias de até 3 salários mínimos; programa Habita Rio"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2570,
+      2579,
+      2586
+     ],
+     "nota": "Programa Morada Fluminense, com metas 2027-2030"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Ampliar a oferta habitacional em parceria com municípios, programas federais e a iniciativa privada",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Produzir moradia em parceria com municípios, governo federal e iniciativa privada",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -97,8 +113,7 @@
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2584,
-      2609
+      2584
      ],
      "nota": ""
     }
@@ -106,27 +121,30 @@
   },
   {
    "id": "p3",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Criar programa estadual de habitação de interesse social denominado Morada Fluminense, com fases de estruturação, escala de produção e consolidação até 2030",
-   "n_concorda": 1,
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Apoiar a produção habitacional por mutirão e autogestão de cooperativas e entidades de moradores",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      2579,
-      2599,
-      2600,
-      2601,
-      3540
+      1579
      ],
-     "nota": ""
+     "nota": "Via Minha Casa Minha Vida Entidades, com crédito por dia de mutirão"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1373
+     ],
+     "nota": "Inspirado em 'Cada família, um lote' e mutirões com autogestão"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Manter o programa Habita+, com subsídio ao longo de todo o financiamento para famílias com renda de até R$ 8 mil",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Manter programa estadual de subsídio ao financiamento habitacional para famílias de baixa renda ao longo de todo o contrato",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -134,28 +152,13 @@
      "blocos": [
       1579
      ],
-     "nota": ""
+     "nota": "Habita+ para famílias de até R$ 8 mil"
     }
    }
   },
   {
    "id": "p5",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Apoiar a produção habitacional por autogestão de cooperativas de moradores (Minha Casa Minha Vida Entidades), com financiamento do FDS e crédito por dia de mutirão trabalhado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1579
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Produção e financiamento habitacional",
+   "subtema": "Produção de moradia e habitação de interesse social",
    "proposta": "Facilitar o financiamento da casa própria para servidores públicos estaduais",
    "n_concorda": 1,
    "posicoes": {
@@ -170,9 +173,9 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Criar moradia assistida e adaptada para idosos de baixa renda, integrada a serviços de saúde, convivência e assistência",
+   "id": "p6",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Criar moradia assistida, adaptada e integrada a serviços para idosos de baixa renda",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -180,20 +183,35 @@
      "blocos": [
       286
      ],
-     "nota": "Chamado de Vilas da Longevidade, com municípios e setor privado"
+     "nota": "Vilas da Longevidade, em parceria com municípios e setor privado"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Criar uma imobiliária pública estadual para produzir oferta imobiliária a preços acessíveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1366
+     ],
+     "nota": "Rio Imobiliária, com excedente financiando oferta aos mais pobres"
     }
    }
   },
   {
    "id": "p8",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Criar programa estadual de locação social com retrofit de imóveis públicos ociosos em áreas centrais para famílias realocadas de áreas de risco",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Fortalecer programas de arrendamento residencial com opção de compra ao fim do contrato",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1590
+      1371
      ],
      "nota": ""
     }
@@ -201,15 +219,15 @@
   },
   {
    "id": "p9",
-   "subtema": "Produção e financiamento habitacional",
-   "proposta": "Instituir programa de reutilização e alienação de imóveis estaduais ociosos, com inventário digital georreferenciado, comitê de destinação e meta de destinar ao menos 30 imóveis em quatro anos, revertendo receita ao fundo estadual de habitação",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Requalificar as habitações de interesse social já existentes e ampliar a provisão de serviços públicos nos conjuntos entregues",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      880,
-      906
+      1356,
+      1375
      ],
      "nota": ""
     }
@@ -217,8 +235,197 @@
   },
   {
    "id": "p10",
+   "subtema": "Produção de moradia e habitação de interesse social",
+   "proposta": "Elaborar um Plano Estadual de Habitação de Interesse Social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1356
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Ampliar e acelerar a regularização fundiária, com titulação de quem já ocupa o imóvel",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      281
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      890,
+      1601
+     ],
+     "nota": "Trata a regularização como infraestrutura jurídica e acesso a crédito"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1325
+     ],
+     "nota": "Foco no reconhecimento da posse mansa e pacífica e nas redes de solidariedade"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Articular Estado, municípios e cartórios para acelerar os processos de regularização",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      281
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1601
+     ],
+     "nota": "Combina atuação do ITERJ com a Reurb municipal na mesma visita"
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Realizar mutirões anuais de documentação em todas as regiões, com prioridade para mulheres chefes de família",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      281
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Enviar nova Lei Estadual de Terras que desburocratize a regularização e autorize a alienação onerosa de terras devolutas estaduais de até 50 hectares",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      890
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Garantir titulação gratuita de interesse social em núcleos urbanos informais pela Lei federal da Reurb (13.465/2017)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      884,
+      890
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Garantir título de propriedade individual a todos os moradores das comunidades urbanizadas, como direito e sem exceção",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1536,
+      1541
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Reconhecer a ocupação verticalizada consolidada, com individualização da titulação por andar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1601
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Realizar cadastramento social pelo CRAS simultâneo à regularização, com roteamento automático a benefícios e condicionalidades de permanência e matrícula escolar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1601
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Firmar convênios com universidades públicas estaduais e federais para apoio cartográfico e jurídico à política fundiária",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      890
+     ],
+     "nota": "Convênios com UERJ, UFRJ, UFF e UENF"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Integrar a regularização fundiária à fiscalização ambiental de propriedades rurais, industriais e florestais nas franjas urbanas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1325
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
    "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Executar obras de contenção de encostas e prevenção de riscos geológicos",
+   "proposta": "Executar obras de contenção de encostas, drenagem e desassoreamento nas áreas mais vulneráveis",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -226,54 +433,30 @@
      "blocos": [
       280
      ],
-     "nota": "Continuidade das tecnologias de contenção já em uso"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2582,
-      2596
-     ],
-     "nota": ""
+     "nota": "Continuidade das tecnologias de contenção, com foco na Região Serrana e Costa Verde"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       1558
      ],
-     "nota": "Obras complexas e contenção a cargo da CEHAB-RJ"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Priorizar a Região Serrana e demais áreas historicamente atingidas por desastres nas ações de risco e moradia",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      280
-     ],
-     "nota": "Região Serrana e Costa Verde"
+     "nota": "Execução pela CEHAB-RJ, com captação internacional"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2364,
-      2365,
-      2378,
-      2379
+      2582,
+      2596,
+      2600
      ],
-     "nota": "Petrópolis, Teresópolis, Nova Friburgo e Niterói"
+     "nota": "Macroprojetos integrados à política habitacional"
     }
    }
   },
   {
-   "id": "p12",
+   "id": "p22",
    "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Criar sistema estadual integrado de monitoramento e base unificada de dados sobre risco e ocupação, articulado com municípios e órgãos técnicos",
+   "proposta": "Criar sistema estadual integrado de monitoramento e base unificada de dados sobre risco e ocupação, em conjunto com municípios e órgãos técnicos",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -281,23 +464,31 @@
      "blocos": [
       280
      ],
-     "nota": "Base unificada de informações habitacionais e de risco com municípios"
+     "nota": "Base unificada de informações habitacionais e de risco com os municípios"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       1563
      ],
-     "nota": "Força-tarefa CEPERJ/IBGE/ITERJ/ISP com monitoramento do INEA e satélite"
+     "nota": "Força-tarefa CEPERJ/IBGE/ITERJ/ISP com tecnologia de satélite do INPE"
     }
    }
   },
   {
-   "id": "p13",
+   "id": "p23",
    "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Realocar de forma assistida as famílias que vivem em áreas de altíssimo risco, com reassentamento seguro",
+   "proposta": "Realocar de forma assistida as famílias que vivem em áreas de altíssimo risco",
    "n_concorda": 2,
    "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1571,
+      1590
+     ],
+     "nota": "Realocação restrita a risco real, com locação social em imóveis centrais"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
@@ -306,38 +497,31 @@
       2587,
       2597
      ],
-     "nota": "Integrado ao mapeamento do Adaptação Climática 2030"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1571,
-      1590
-     ],
-     "nota": "Realocação restrita a risco real; destino em imóveis públicos centrais"
+     "nota": "Integrada ao Morada Fluminense e ao mapeamento Adaptação Climática 2030"
     }
    }
   },
   {
-   "id": "p14",
+   "id": "p24",
    "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Executar macroprojetos de drenagem urbana e desassoreamento de rios nas bacias e áreas mais vulneráveis",
+   "proposta": "Priorizar Petrópolis, Teresópolis, Nova Friburgo e Niterói na realocação de famílias em encostas de altíssimo risco",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      2582,
-      2596
+      2364,
+      2365,
+      2378
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p15",
+   "id": "p25",
    "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Requalificar as áreas de risco desocupadas e impedir sua reocupação, com monitoramento permanente",
+   "proposta": "Requalificar as áreas de risco desocupadas e impedir sua reocupação",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -351,126 +535,9 @@
    }
   },
   {
-   "id": "p16",
-   "subtema": "Regularização fundiária e titulação",
-   "proposta": "Regularizar imóveis ocupados e entregar título de propriedade a quem já mora no local",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      281
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      890,
-      1536,
-      1541
-     ],
-     "nota": "Titulação individual a todos os moradores, gratuita nos casos de interesse social"
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Regularização fundiária e titulação",
-   "proposta": "Acelerar a regularização fundiária por meio da integração entre Estado, municípios e cartórios, com mutirões anuais de documentação e prioridade para mulheres chefes de família",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      281
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Regularização fundiária e titulação",
-   "proposta": "Enviar nova Lei Estadual de Terras que desburocratize a regularização fundiária e autorize a alienação onerosa de terras devolutas estaduais de até 50 hectares",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      878,
-      890
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Regularização fundiária e titulação",
-   "proposta": "Fortalecer o ITERJ como órgão executor da regularização fundiária em escala, com convênios com universidades públicas para apoio cartográfico e jurídico",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      890,
-      1558
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Regularização fundiária e titulação",
-   "proposta": "Realizar, na mesma visita, a regularização fundiária com individualização por andar em ocupações verticalizadas e o cadastramento social pelo CRAS, com roteamento automático a benefícios condicionado a permanência na moradia e matrícula escolar dos filhos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1601
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Urbanização de favelas e desfavelização",
-   "proposta": "Executar programa de desfavelização que transforme, em dez anos, as 1.724 favelas do estado em bairros formais com título de propriedade individual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1536,
-      1541
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Urbanização de favelas e desfavelização",
-   "proposta": "Realizar diagnóstico técnico prévio por comunidade, com estudos geotécnico, hidrológico, ambiental e topográfico e uso de tecnologia de satélite",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1563
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Urbanização de favelas e desfavelização",
-   "proposta": "Adotar diretrizes técnicas de reurbanização sem remoção total, com método construtivo padronizado e tipologias adaptadas a cada território",
+   "id": "p26",
+   "subtema": "Áreas de risco e prevenção de desastres",
+   "proposta": "Limitar a remoção às áreas de risco real ou de adensamento inviável, adotando reurbanização sem remoção total como regra",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -483,9 +550,295 @@
    }
   },
   {
-   "id": "p24",
-   "subtema": "Urbanização de favelas e desfavelização",
-   "proposta": "Condicionar a entrega de cada bairro desfavelizado à instalação de posto policial, escola modelo, clínica de saúde e creche",
+   "id": "p27",
+   "subtema": "Localização da moradia e uso do solo",
+   "proposta": "Localizar a habitação de interesse social em áreas com infraestrutura consolidada, próximas de emprego e transporte, evitando a periferização",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1590
+     ],
+     "nota": "Uso de imóveis centrais servidos por metrô, trens e barcas"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1308,
+      1356,
+      1375
+     ],
+     "nota": "Novos circuitos urbanos articulando trabalho, moradia e mobilidade"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      477
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Localização da moradia e uso do solo",
+   "proposta": "Planejar o uso e a ocupação do solo no entorno das estações de transporte, com adensamento e reserva de área para habitação de interesse social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      477
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Localização da moradia e uso do solo",
+   "proposta": "Delimitar novas zonas especiais de interesse social em áreas com infraestrutura urbana consolidada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1356
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Localização da moradia e uso do solo",
+   "proposta": "Conceder incentivos fiscais a construtoras para redirecionar a habitação popular a áreas com infraestrutura urbana consolidada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1375
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Localização da moradia e uso do solo",
+   "proposta": "Criar um banco estadual de terras e imóveis para controlar a valorização do solo urbano e facilitar o acesso à moradia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1368,
+      1371
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Localização da moradia e uso do solo",
+   "proposta": "Restabelecer a função social da propriedade como diretriz fundamental do planejamento estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1304,
+      1337
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Fortalecer o ITERJ, ampliando sua estrutura e capacidade técnica",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      890,
+      1558
+     ],
+     "nota": "ITERJ como executor da regularização fundiária em escala"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1332
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Dar à CEHAB-RJ papel central na execução da política habitacional estadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1558
+     ],
+     "nota": "CEHAB responsável por obras complexas e contenção de encostas"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1334,
+      1335
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Reestruturar a CEHAB-RJ como empresa pública articulada ao planejamento socioambiental regional",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1334,
+      1335
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Fortalecer o Conselho Estadual de Habitação e Saneamento, com capacidade deliberativa sobre a política de moradia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1330
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Fortalecer o Conselho Gestor do Fundo Estadual de Habitação de Interesse Social e elevar a 50% a representação dos movimentos populares",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1361,
+      1362
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Captar financiamento internacional e embutir metas de universalização nos contratos de concessão de saneamento para custear obras urbanas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1558
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Garantir governança transparente da política habitacional, com priorização técnica das famílias e prestação de contas em painel público",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2609
+     ],
+     "nota": "Financiamento com orçamento estadual, fundos federais e contrapartida do PROPAG"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Construir indicadores de habitabilidade para avaliar as condições de moradia nas regiões do estado e orientar projetos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1380
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Executar programa estadual de urbanização e requalificação de favelas e ocupações consolidadas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1536,
+      1541,
+      1571
+     ],
+     "nota": "Formula como 'desfavelização': fim da favela como modalidade de moradia"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1366,
+      1385
+     ],
+     "nota": "Programa Favela é Cidade e assistência técnica"
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Estabelecer meta de transformar as 1.724 favelas do estado em bairros formais em dez anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1536
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Condicionar a entrega de cada território urbanizado à instalação de posto policial, escola, clínica de saúde e creche",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -498,8 +851,8 @@
    }
   },
   {
-   "id": "p25",
-   "subtema": "Urbanização de favelas e desfavelização",
+   "id": "p44",
+   "subtema": "Urbanização de favelas",
    "proposta": "Instituir código de postura urbana com sanção e vender parte das novas unidades a preço de mercado para garantir mistura social",
    "n_concorda": 1,
    "posicoes": {
@@ -513,30 +866,339 @@
    }
   },
   {
-   "id": "p26",
-   "subtema": "Urbanização de favelas e desfavelização",
-   "proposta": "Coordenar a urbanização com o Estado como articulador central, combinando captação internacional de recursos e metas de universalização nos contratos de concessão de saneamento",
+   "id": "p45",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Realizar diagnóstico técnico prévio por comunidade (geotécnico, hidrológico, ambiental e topográfico) antes de intervir",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      1558
+      1541,
+      1563
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Planejamento urbano",
-   "proposta": "Elaborar plano de uso e ocupação do solo no entorno das estações de transporte, com adensamento planejado e reserva de área para habitação de interesse social",
+   "id": "p46",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Padronizar diretrizes técnicas e tipologias construtivas das intervenções urbanísticas, preservando a identidade de cada território",
    "n_concorda": 1,
    "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1571
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Executar obras de saneamento ambiental nas favelas contratando moradores das próprias comunidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1366
+     ],
+     "nota": "Começando pelas favelas com maior demanda por saneamento"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Urbanização de favelas",
+   "proposta": "Criar programa estadual de assistência técnica para requalificação urbana de favelas, loteamentos, assentamentos rurais e comunidades tradicionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1385
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Imóveis públicos ociosos e locação social",
+   "proposta": "Destinar imóveis públicos ociosos ou subutilizados à habitação de interesse social",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      906,
+      1590
+     ],
+     "nota": "Patrimônio estadual tratado como ativo produtivo a ser ativado"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1366
+     ],
+     "nota": "Reconversão articulada com União e municípios"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Imóveis públicos ociosos e locação social",
+   "proposta": "Criar programa estadual de locação social em imóveis públicos requalificados",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1590
+     ],
+     "nota": "Retrofit destinado a famílias realocadas de áreas de risco iminente"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1366
+     ],
+     "nota": "Aluguel subsidiado com valor atrelado à renda familiar"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Imóveis públicos ociosos e locação social",
+   "proposta": "Criar inventário digital georreferenciado do patrimônio imobiliário estadual e comitê permanente de destinação patrimonial",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      906
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Imóveis públicos ociosos e locação social",
+   "proposta": "Alienar ou conceder imóveis estaduais ociosos por leilão, concessão ou PPP, com receita revertida ao fundo estadual de habitação e meta de 30 imóveis em quatro anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      906
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Imóveis públicos ociosos e locação social",
+   "proposta": "Criar programa habitacional de renovação das áreas com maior estoque de imóveis públicos, transformando-as em áreas residenciais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1366
+     ],
+     "nota": "Programa Rio Moradia"
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Apoio aos municípios em planejamento urbano",
+   "proposta": "Prestar suporte técnico aos municípios com mais dificuldade para formular planos diretores participativos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1316
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Apoio aos municípios em planejamento urbano",
+   "proposta": "Incentivar os municípios a incorporar a dimensão ambiental nos planos diretores e nos Projetos de Estruturação Urbana",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1310
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Apoio aos municípios em planejamento urbano",
+   "proposta": "Incentivar os municípios a aplicar instrumentos do Estatuto da Cidade contra a gentrificação, como contribuição de melhoria e taxa de uso de área pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1312
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Apoio aos municípios em planejamento urbano",
+   "proposta": "Incentivar os municípios a aplicar instrumentos que desestimulem imóveis privados vazios, subutilizados ou abandonados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1314
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Apoio aos municípios em planejamento urbano",
+   "proposta": "Demandar da União medidas de regulação dos aluguéis por temporada para reduzir a especulação imobiliária",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1318,
+      1321
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Apoio aos municípios em planejamento urbano",
+   "proposta": "Elaborar com as prefeituras programa de reforma e adaptação de calçadas, praças, parques e prédios públicos para acessibilidade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2234
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Remoções, conflitos fundiários e auxílio habitacional",
+   "proposta": "Extinguir a atual política de remoções e substituí-la por modelo que respeite a inviolabilidade do domicílio",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1339
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Remoções, conflitos fundiários e auxílio habitacional",
+   "proposta": "Criar uma Mesa de Negociação de Conflitos Fundiários com Judiciário, Ministério Público, Defensoria e conselhos profissionais, priorizando soluções negociadas em vez de despejos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1341,
+      1344
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Remoções, conflitos fundiários e auxílio habitacional",
+   "proposta": "Reajustar e aprimorar o Auxílio Habitacional Temporário, corrigindo seu valor, simplificando a concessão e atualizando os critérios de renda",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1349,
+      1350,
+      1351
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Remoções, conflitos fundiários e auxílio habitacional",
+   "proposta": "Incentivar os municípios a regulamentar o Auxílio Habitacional Temporário como benefício emergencial exclusivo para calamidade pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1348,
+      1349
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Áreas de risco e prevenção de desastres",
+   "proposta": "Estruturar o programa Morada Fluminense em 2027, definindo áreas de risco prioritárias com base em mapeamento climático e iniciando obras de contenção e reassentamentos emergenciais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      280
+     ],
+     "nota": "Propõe sistema estadual de monitoramento de riscos, base unificada e contenção de encostas."
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1558,
+      1563,
+      1571,
+      1590
+     ],
+     "nota": "Prevê mapeamento técnico (geotécnico/hidrológico, INEA/Defesa Civil), contenção de encostas e realocação de áreas de risco."
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      477
+      2599
      ],
      "nota": ""
     }
@@ -559,10 +1221,6 @@
    },
    "2378": {
     "texto": "• Realocar as famílias das encostas de altíssimo risco prioritárias da Serrana e da",
-    "pagina": 97
-   },
-   "2379": {
-    "texto": "Metropolitana (meta do plano — a confirmar na estimação técnica).",
     "pagina": 97
    },
    "2570": {
@@ -620,19 +1278,11 @@
    "2609": {
     "texto": "Coordenação pela Secretaria de Estado responsável pela habitação, em articulação com a Defesa Civil, o Inea, os municípios e o programa Adaptação Climática 2030. Financiamento com recursos orçamentários estaduais, programas habitacionais federais, fundos de habitação e drenagem e a contrapartida de investimento prevista no PROPAG. Governança transparente, com priorização técnica das famílias e das áreas de maior risco e prestação de contas em painel público.",
     "pagina": 105
-   },
-   "3540": {
-    "texto": "Morada Fluminense e Redução de Risco",
-    "pagina": 139
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
-   "878": {
-    "texto": "A regularização fundiária será tratada como infraestrutura jurídica básica — condição para acesso a crédito e para redução de litígio —, e não como pauta acessória da política estadual.",
-    "pagina": 38
-   },
-   "880": {
-    "texto": "O patrimônio imobiliário estadual será tratado como ativo produtivo a ser ativado — para habitação, uso econômico ou alienação com receita revertida a políticas públicas —, e não como inventário passivo sob manutenção contínua.",
+   "884": {
+    "texto": "13.465/2017 (REURB).",
     "pagina": 38
    },
    "890": {
@@ -685,6 +1335,10 @@
    }
   },
   "governador-rj-douglas-ruas-190002542887": {
+   "204": {
+    "texto": "Fora da escola e do hospital, a insegurança continua. As famílias e os servidores fluminenses que cuidam da população atravessam horas de deslocamento porque não conseguem morar perto de onde trabalham. Encostas ocupadas há décadas seguem sem prevenção, à espera da próxima tragédia.",
+    "pagina": 17
+   },
    "208": {
     "texto": "Na habitação, significa facilitar o financiamento da casa própria para quem serve à população.",
     "pagina": 17
@@ -710,6 +1364,136 @@
     "pagina": 25
    }
   },
-  "governador-rj-eduardo-paes-190002543380": {}
+  "governador-rj-eduardo-paes-190002543380": {},
+  "governador-rj-william-siri-190002536162": {
+   "1304": {
+    "texto": "☼ Restabelecer a função social da propriedade como a diretriz fundamental do sistema de planejamento socioambiental do estado;",
+    "pagina": 77
+   },
+   "1308": {
+    "texto": "☼ Produzir, em conjunto com as prefeituras, novos circuitos urbanos que articulem trabalho, moradia e mobilidade para reverter tanto a concentração territorial dos postos de trabalho quanto a dispersão dos locais de moradia em espaços urbanamente precários e afastados das áreas com infraestrutura urbana consolidada;",
+    "pagina": 77
+   },
+   "1310": {
+    "texto": "☼ Incentivar os municípios fluminenses a incorporar a dimensão ambiental nas leituras técnicas e comunitárias voltadas para a aplicação do Plano Diretor e dos Projetos de Estruturação Urbana (PEU);",
+    "pagina": 77
+   },
+   "1312": {
+    "texto": "☼ Incentivar os municípios fluminenses a planejar, de acordo com o disposto no Estatuto da Cidade (Lei Federal 10.257/2001), a aplicação de instrumentos urbanísticos que combatam a gentrificação (aumento do custo de vida de um território que dificulta a permanência dos moradores de baixa renda) e promovam a justiça socioambiental tais como: contribuição de melhoria, regulamentação da taxa de uso de área pública, entre outros;",
+    "pagina": 77
+   },
+   "1314": {
+    "texto": "☼ Incentivar os municípios do estado a aplicar instrumentos previstos no Estatuto das Cidades para desestimular a presença de imóveis privados subutilizados, vazios ou abandonados;",
+    "pagina": 77
+   },
+   "1316": {
+    "texto": "☼ Prestar suporte técnico qualificado aos municípios que apresentem mais dificuldades para formular planos diretores participativos;",
+    "pagina": 77
+   },
+   "1318": {
+    "texto": "☼ Demandar junto ao governo federal medidas que ampliem a regulação dos alugueis por temporada, buscando diminuir a especulação imobiliária nos municípios",
+    "pagina": 77
+   },
+   "1321": {
+    "texto": "e aumentar a oferta habitacional",
+    "pagina": 78
+   },
+   "1325": {
+    "texto": "☼ Desenvolver uma política de regularização fundiária e fiscalização ambiental de propriedades rurais, industriais e florestais nas franjas da malha urbana e em áreas em processo de urbanização,focando no reconhecimento da posse mansa e pacífica, na manutenção das redes de solidariedade das comunidades, e integrando essa política às de mobilidade, educação, cultura, lazer, saneamento, saúde, assistência social, segurança pública, geração de emprego e distribuição de renda;",
+    "pagina": 78
+   },
+   "1330": {
+    "texto": "☼ Fortalecer o Conselho Estadual de Habitação e Saneamento do Rio de Janeiro, dando-lhe estrutura e capacidade de avaliação, consulta e deliberação sobre as políticas públicas de moradia;",
+    "pagina": 78
+   },
+   "1332": {
+    "texto": "☼ Fortalecer o Instituto de Terras e Cartografia do Estado do Rio de Janeiro, dando-lhe estrutura e capacidade de planejamento de políticas públicas de moradia;",
+    "pagina": 78
+   },
+   "1334": {
+    "texto": "☼ Reestruturar a Companhia Estadual de Habitação do Rio de Janeiro",
+    "pagina": 78
+   },
+   "1335": {
+    "texto": "(CEHAB-RJ) como empresa pública, com o objetivo de articular a política habitacional ao planejamento socioambiental de cada região do estado;",
+    "pagina": 78
+   },
+   "1337": {
+    "texto": "☼ Planejar uma política habitacional voltada para a integração regional, o desenvolvimento comunitário, a justiça socioambiental e a redução do preço do solo urbano;",
+    "pagina": 78
+   },
+   "1339": {
+    "texto": "☼ Extinguir a atual política de remoções, construindo um modelo de política habitacional que respeite os princípios constitucionais no que tange ao direito à integridade e inviolabilidade do domicílio;",
+    "pagina": 78
+   },
+   "1341": {
+    "texto": "☼ Criar, em parceria com o Tribunal de Justiça, o Ministério Público, a Defensoria Pública, a Ordem dos Advogados do Brasil/RJ, o Conselho Regional de Psicologia e o Conselho Regional de Serviço Social, uma Mesa de Negociação de",
+    "pagina": 78
+   },
+   "1344": {
+    "texto": "Conflitos Fundiários, primando por soluções negociadas em detrimento de despejos ou remoções forçadas;",
+    "pagina": 79
+   },
+   "1348": {
+    "texto": "☼ Incentivar os municípios fluminenses a regulamentar o Auxílio Habitacional",
+    "pagina": 79
+   },
+   "1349": {
+    "texto": "Temporário enquanto benefício emergencial e provisório exclusivo para situações de calamidade pública; ●​ Aprimorar o processo de concessão do Auxílio Habitacional Temporário, com vistas a simplificação do processo e aceleração da concessão do benefício; ●​ Elaborar estudo sobre os preços de alugueis de imóveis populares para subsidiar uma revisão do valor do Auxílio Habitacional Temporário (AHT); ●​ Atualizar os critérios de Renda Máxima Familiar do Auxílio Habitacional",
+    "pagina": 79
+   },
+   "1350": {
+    "texto": "Temporário, desvinculando-os das faixas de renda do programa Minha Casa",
+    "pagina": 79
+   },
+   "1351": {
+    "texto": "Minha Vida; ●​ Corrigir o valor do Auxílio Habitacional Temporário (AHT) de modo a repor as perdas inflacionárias e garantir um patamar mínimo que permita a locação de imóvel digno; ●​ Estabelecer seu reajuste anual de acordo com o IGP-M ou outros índices aplicáveis ao mercado imobiliário;",
+    "pagina": 79
+   },
+   "1356": {
+    "texto": "☼ Elaborar um Plano Estadual de Habitação de Interesse Social; ●​ Investir na requalificação das habitações de interesse social já existentes, com ênfase na integração urbana à rede de serviços públicos do estado; ●​ Delimitar novas zonas de especial interesse social para assentamentos habitacionais de população de baixa renda em áreas do estado com infraestrutura urbana consolidada; ●​ Implementar novos programas de habitação de interesse social para garantir acesso à moradia adequada aos segmentos populacionais de renda familiar mensal de até 3 salários mínimos, por meio da aquisição de imóveis para fins habitacionais e da realização de obras e serviços voltados à modificação de uso e ocupação de imóveis que resultem em lotes urbanizados",
+    "pagina": 79
+   },
+   "1361": {
+    "texto": "☼ Fortalecer o Conselho Gestor do Fundo Estadual de Habitação de Interesse",
+    "pagina": 80
+   },
+   "1362": {
+    "texto": "Social (FEHIS), a quem compete estabelecer diretrizes e critérios na priorização de ações, alocação de recursos do FEHIS e atendimento aos beneficiados pelos programas habitacionais; ●​ Elevar para 50% os representantes dos movimentos populares ligados à questão habitacional no estado;",
+    "pagina": 80
+   },
+   "1366": {
+    "texto": "☼ Criar o programa Habita Rio, que será constituído de três pilares: um programa de moradia popular; um programa de urbanização das favelas; e uma imobiliária pública voltada para a construção de moradias de qualidade a preço acessível; ●​ Criar o programa habitacional Rio Moradia, com o objetivo de transformar as regiões do estado que concentram o maior estoque de imóveis públicos com potencial de renovação em áreas residenciais com vida urbana pulsante; ●​ Promover, em articulação com a União e os municípios fluminenses, a reconversão de imóveis públicos vazios ou subutilizados em habitação de interesse social. A iniciativa se dará por meio de programas de locação social com aluguel subsidiado pelo Governo do Estado, com valores atrelados à renda familiar e não às flutuações do mercado. Dessa forma, o poder público atua para garantir o direito à moradia e proteger os locatários dos processos de gentrificação e especulação imobiliária. ●​ Criar o programa de urbanização Favela é Cidade, cujo objetivo será investir em obras de saneamento ambiental nas favelas, para garantir água limpa e esgoto tratado nas comunidades, oferecendo vagas de trabalho para os moradores dos locais onde forem realizadas as obras, começando pelas favelas com maior demanda por serviços de saneamento ambiental; ●​ Criar a Rio Imobiliária para o governo do Estado adotar um papel ativo na dinâmica de produção imobiliária do estado, produzindo oferta imobiliária a preços acessíveis para as camadas médias da população e utilizando o valor excedente para financiar solidariamente a oferta aos setores mais pobres;",
+    "pagina": 80
+   },
+   "1368": {
+    "texto": "☼ Criar um banco estadual de terras e imóveis para estabelecer mecanismos de controle da valorização do solo urbano e facilitar o acesso à moradia através da disponibilização de terras e imóveis (de domínio do Governo do Estado, das autarquias locais e de quaisquer outras entidades públicas, ou pertencentes a entidades privadas)",
+    "pagina": 80
+   },
+   "1371": {
+    "texto": "para arrendamento, venda ou para outros tipos de concessão, através de uma melhor identificação e promoção da sua oferta; ●​ Fortalecer programas de produção de moradias que não dependam de mecanismos de mercado (tais como os programas de arrendamento residencial, no qual o pretendente paga taxas mensais de arrendamento, como se fosse um aluguel, e no fim do contrato, que é de 15 anos, tem a opção de compra do imóvel);",
+    "pagina": 81
+   },
+   "1373": {
+    "texto": "☼ Criar um programa de construção de moradias populares através de multirões e autogestão, em conjunto com as famílias das comunidades locais e entidades da sociedade civil organizada (a exemplo do programa “Cada família, um lote”, do governo Brizola e do “Programa de Construção por Mutirão e Autogestão”, da gestão Erundina – esse modelo pode possibilitar a construção de moradias de qualidade a um custo 40 a 50% inferior ao de processos convencionais);",
+    "pagina": 81
+   },
+   "1375": {
+    "texto": "☼ Redirecionar os programas de habitação popular, dando incentivos fiscais para as construtoras, para áreas com infraestrutura urbana consolidada, bem como garantir maior provisão de serviços públicos aos projetos já concluídos e entregues em áreas desprovidas de infraestrutura, priorizando as pessoas que estejam inseridas no déficit habitacional;",
+    "pagina": 81
+   },
+   "1380": {
+    "texto": "☼ Construir indicadores que sirvam de parâmetro para a avaliação das condições de habitabilidade das diferentes regiões do estado e orientem a atuação das equipes de campo na construção de projetos físicos em cada localidade;",
+    "pagina": 81
+   },
+   "1385": {
+    "texto": "☼ Criar um programa estadual de assistência técnica para a requalificação urbana das favelas, loteamentos, assentamentos rurais, comunidades tradicionais e ocupações consolidadas;",
+    "pagina": 81
+   },
+   "2234": {
+    "texto": "☼ Elaborar, junto com as prefeituras de cada município, um programa de reforma e adaptação das calçadas, praças, parques, veículos de transporte coletivo, prédios e equipamentos públicos para garantir o direito de acessibilidade às pessoas com mobilidade reduzida (sejam idosos ou portadores de deficiências);",
+    "pagina": 132
+   }
+  }
  }
 }

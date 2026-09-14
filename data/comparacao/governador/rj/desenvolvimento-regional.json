@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "desenvolvimento-regional-rj.json",
-  "gerado_em": "2026-09-14T01:45:37Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:51:42Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,27 +45,34 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Planejamento e desenvolvimento regional",
-   "proposta": "Adotar como diretriz de governo a redução da desigualdade entre as regiões do estado, com priorização de territórios e municípios mais frágeis.",
-   "n_concorda": 3,
+   "subtema": "Desigualdade regional",
+   "proposta": "Adotar a redução das desigualdades entre as regiões do estado como objetivo explícito da política de desenvolvimento, levando investimento e desenvolvimento a todas as regiões, e não apenas à capital.",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
-      13,
       61
      ],
-     "nota": "Busca equilíbrio dos indicadores de desenvolvimento humano nas 8 regiões de planejamento"
+     "nota": "Busca equilíbrio nos indicadores de desenvolvimento humano das 8 regiões de planejamento"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      332,
+      330,
       439
      ],
      "nota": "Redução de desigualdades territoriais como critério de seleção de projetos"
@@ -73,91 +80,43 @@
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      324,
-      1827,
-      1833
+      1823,
+      1827
      ],
-     "nota": "Prioridade a municípios com menor capacidade técnica e fiscal"
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      258,
+      259
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      790,
+      810,
+      831
+     ],
+     "nota": "Prioridade territorial fora da capital, com Leste Fluminense e Baía de Guanabara como eixos"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Planejamento e desenvolvimento regional",
-   "proposta": "Elaborar planos regionais de desenvolvimento para as oito regiões do estado, orientados pelas vocações econômicas de cada território.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      329,
-      333
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Planejamento e desenvolvimento regional",
-   "proposta": "Criar escritórios regionais de desenvolvimento, um em cada uma das oito regiões, para apoiar prefeituras em projetos, captação de recursos e licenciamento.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      330,
-      435
-     ],
-     "nota": "Aproveitando preferencialmente estruturas já existentes"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Planejamento e desenvolvimento regional",
-   "proposta": "Fortalecer polos regionais e cadeias produtivas já existentes com crédito, qualificação, inovação, infraestrutura e acesso a mercado.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      334
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Planejamento e desenvolvimento regional",
-   "proposta": "Dar prioridade territorial ao desenvolvimento econômico fora da capital, elegendo o Leste Fluminense e o litoral da Baía de Guanabara como eixos de um novo ciclo produtivo.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      790,
-      810
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Governar em parceria com os 92 municípios, com escuta e cooperação adaptada à realidade local, sem distinção partidária.",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Estabelecer relação de parceria permanente do governo estadual com os 92 municípios, com escuta das necessidades locais e cooperação técnica adaptada a cada realidade.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
       36,
-      37,
-      61
+      37
      ],
-     "nota": "Ser o principal parceiro dos prefeitos, conforme necessidades e vocações de cada município"
+     "nota": "Sem distinção partidária, política ou ideológica"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -175,88 +134,44 @@
       1829,
       1830
      ],
-     "nota": "Cooperação por resultado inspirada no Regime de Colaboração do Ceará, com adesão voluntária"
+     "nota": "Cooperação por resultado, inspirada no Regime de Colaboração do Ceará"
     }
    }
   },
   {
-   "id": "p7",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Oferecer apoio e capacidade técnica às prefeituras com menor estrutura administrativa para elaborar estudos, projetos, licenciamento, execução e prestação de contas.",
-   "n_concorda": 2,
+   "id": "p3",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Criar uma instância permanente de articulação entre o governo estadual e as prefeituras, organizada por regiões do estado.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
-      435,
-      436,
-      437
-     ],
-     "nota": "Apoio prestado pelos escritórios regionais"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1839,
-      1852,
-      1856
-     ],
-     "nota": "Meta de elevar o investimento municipal a partir da base de 4,6% da receita"
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Firmar pactos de desenvolvimento com municípios e regiões, com metas públicas, contrapartidas, responsável designado e acompanhamento periódico de resultados.",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      331
+      61
      ],
      "nota": ""
     },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1823,
-      1827,
-      1832
-     ],
-     "nota": "Substitui o repasse sem contrapartida por pacto de resultado"
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Manter painel ou plataforma pública de acompanhamento dos projetos e compromissos com os municípios, com status, prazos, investimento e responsável.",
-   "n_concorda": 2,
-   "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      442,
-      443
+      330
      ],
      "nota": ""
     },
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1837,
-      1864
+      255,
+      256
      ],
-     "nota": "Painel aberto com diagnóstico e transparência total dos repasses municipais"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p10",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Criar um conselho das cidades ligado diretamente ao governador para articular o governo estadual com os prefeitos.",
+   "id": "p4",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Criar um Conselho das Cidades ligado diretamente ao governador, reunindo os prefeitos dos 92 municípios.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
@@ -269,31 +184,89 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Garantir sem atrasos os repasses estaduais aos municípios para saúde e educação.",
-   "n_concorda": 2,
+   "id": "p5",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Criar agências permanentes de gestão compartilhada em cada uma das oito regiões, para integrar administração estadual e municipal e pactuar compromissos interfederativos.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      37
+      255,
+      256
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Instalar Escritórios Regionais de Desenvolvimento, um em cada uma das oito regiões, aproveitando estruturas existentes, para apoiar prefeituras em projetos, captação de recursos, licenciamento e atração de investimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      330,
+      435
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Oferecer apoio e capacidade técnica às prefeituras com menor estrutura administrativa para elaboração de estudos, projetos, licenciamento, execução e prestação de contas.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      435,
+      437
      ],
      "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1864
+      1833,
+      1839,
+      1856
      ],
-     "nota": "Honrar e publicar automaticamente os compromissos financeiros com municípios"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p12",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Publicar, nos primeiros 90 dias de governo, diagnóstico de cada um dos 92 municípios em painel aberto (Pacto Rio 92).",
+   "id": "p8",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Firmar pactos com metas pactuadas, contrapartidas, responsáveis definidos e acompanhamento periódico dos resultados entre estado e municípios/regiões.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      331
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1832,
+      1837
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Publicar diagnóstico de cada um dos 92 municípios em painel aberto nos primeiros 90 dias de mandato, como base do pacto com as prefeituras.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -308,42 +281,68 @@
    }
   },
   {
-   "id": "p13",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Iniciar o pacto com uma primeira onda de 10 municípios pioneiros com sete desafios pactuados, expandindo a adesão até 2030.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1838,
-      1851,
-      1857
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Instituir prêmio por desempenho aos municípios que atingirem as metas pactuadas, com adesão voluntária dos demais.",
+   "id": "p10",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Iniciar o pacto com uma primeira onda de 10 municípios pioneiros com sete desafios pactuados, expandindo por adesão voluntária à maioria dos 92 até 2030.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       1834,
-      1840
+      1838,
+      1851,
+      1857,
+      3512
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Criar balcão estadual para que prefeituras apresentem demandas prioritárias e recebam resposta técnica em prazo definido.",
+   "id": "p11",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Conceder prêmio por desempenho aos municípios que atingirem as metas pactuadas, substituindo o repasse sem contrapartida.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1840,
+      1856,
+      1864
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Manter plataforma ou painel público de acompanhamento dos projetos e compromissos com os municípios, com status, prazos, investimento e responsáveis.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      443
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1837,
+      1864
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Criar um balcão estadual de projetos municipais, com canal direto para que prefeituras apresentem demandas prioritárias e recebam resposta técnica em prazo definido.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -356,9 +355,9 @@
    }
   },
   {
-   "id": "p16",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Organizar carteira estadual de projetos estruturantes por região, com critérios técnicos e transparentes de seleção.",
+   "id": "p14",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Organizar uma carteira estadual de projetos estruturantes por região, com critérios técnicos e transparentes de seleção (risco à vida, impacto regional, viabilidade e capacidade de entrega).",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -372,9 +371,9 @@
    }
   },
   {
-   "id": "p17",
-   "subtema": "Parceria e apoio aos municípios",
-   "proposta": "Modelar o financiamento das obras municipais com recursos estaduais e federais, operações de crédito, concessões e PPPs.",
+   "id": "p15",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Modelar o financiamento das obras municipais com recursos estaduais e federais, operações de crédito, concessões, PPPs e parcerias privadas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -387,9 +386,64 @@
    }
   },
   {
+   "id": "p16",
+   "subtema": "Cooperação com municípios",
+   "proposta": "Garantir sem atrasos os repasses estaduais de saúde e educação aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      13,
+      37
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Planejamento regional",
+   "proposta": "Elaborar ou revisar planos de desenvolvimento para cada uma das oito regiões do estado, com foco em problemas comuns e nas vocações e potencialidades econômicas locais.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      329,
+      333
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      258,
+      259
+     ],
+     "nota": "Revisão do Programa de Desenvolvimento Regional já existente"
+    }
+   }
+  },
+  {
    "id": "p18",
+   "subtema": "Planejamento regional",
+   "proposta": "Fortalecer os polos regionais e as cadeias produtivas já existentes em cada região, com crédito, qualificação, inovação, infraestrutura e acesso a mercado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      334
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
    "subtema": "Interiorização de serviços",
-   "proposta": "Levar serviços públicos estaduais integrados às comunidades mais distantes, com unidades fixas, móveis e atendimento digital, em todas as regiões.",
+   "proposta": "Levar serviços públicos estaduais integrados às comunidades mais distantes e ao interior, com unidades fixas, móveis e atendimento digital, em vez de obrigar o cidadão a se deslocar à capital.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -404,7 +458,7 @@
    }
   },
   {
-   "id": "p19",
+   "id": "p20",
    "subtema": "Interiorização de serviços",
    "proposta": "Modernizar a malha viária estadual para conectar municípios isolados às rotas de desenvolvimento.",
    "n_concorda": 1,
@@ -420,26 +474,26 @@
    }
   },
   {
-   "id": "p20",
-   "subtema": "Região metropolitana e Arco Metropolitano",
-   "proposta": "Estruturar o desenvolvimento territorial do entorno do Arco Metropolitano como sistema integrado, com um grande anel multimodal ligando a metrópole ao Sul Fluminense, ao norte e à Região dos Lagos.",
+   "id": "p21",
+   "subtema": "Região metropolitana como território",
+   "proposta": "Reorganizar o desenvolvimento do entorno do Arco Metropolitano como território integrado (ArcoMM), com Cidades Vocacionadas e um grande anel multimodal ligando a metrópole ao sul, norte e leste do estado.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      400,
       410,
+      411,
       453
      ],
-     "nota": "Projeto ArcoMM como eixo estruturante de todo o programa"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p21",
-   "subtema": "Região metropolitana e Arco Metropolitano",
-   "proposta": "Criar oito cidades vocacionadas ao longo do corredor do Arco, com incentivos especiais e legislação simplificada, geridas por uma autoridade metropolitana própria.",
+   "id": "p22",
+   "subtema": "Região metropolitana como território",
+   "proposta": "Criar uma Autoridade Metropolitana com administração própria para agilizar obras, autorizar indústrias e planejar núcleos residenciais e comerciais no corredor do Arco.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -452,9 +506,9 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Região metropolitana e Arco Metropolitano",
-   "proposta": "Definir faixa de 2 km de cada lado do Arco como área prioritária de políticas públicas, com licenciamento expresso, isenção ou redução de IPTU, uso misto do solo e regularização fundiária.",
+   "id": "p23",
+   "subtema": "Região metropolitana como território",
+   "proposta": "Definir faixa de 2 km de cada lado do Arco como área de influência prioritária para habitação, saneamento, segurança, saúde, educação e regularização fundiária, com instrumentos especiais como licenciamento expresso, isenção de IPTU e uso misto do solo.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -469,25 +523,9 @@
    }
   },
   {
-   "id": "p23",
-   "subtema": "Consórcios intermunicipais",
-   "proposta": "Firmar parceria do governo estadual com o consórcio intermunicipal da Região dos Lagos, incluindo o ferry boat e uma agenda de desenvolvimento regional.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      776,
-      777
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p24",
-   "subtema": "Fundos de compensação territorial",
-   "proposta": "Criar fundo de reparação da fusão dos estados da Guanabara e do Rio de Janeiro (Programa Fusão 50).",
+   "subtema": "Região metropolitana como território",
+   "proposta": "Criar fundo de reparação destinado a compensar os efeitos da fusão dos estados da Guanabara e do Rio de Janeiro.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -498,18 +536,27 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p25",
+   "subtema": "Regiões específicas",
+   "proposta": "Firmar parceria com consórcio intermunicipal da Região dos Lagos (CONDERLAGOS) em torno de uma agenda de desenvolvimento regional, incluindo a solução de travessia por ferry boat.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      775,
+      776,
+      777
+     ],
+     "nota": ""
+    }
+   }
   }
  ],
  "blocos": {
   "governador-rj-andre-marinho-190002537524": {
-   "324": {
-    "texto": "• Desequilíbrio regional severo entre a capital metropolitana e o interior do estado.",
-    "pagina": 12
-   },
-   "400": {
-    "texto": "O ArcoMM — Integrando os Municípios do Mar à Montanha, pela Baía e Planície — nasce como resposta estrutural a esse desafio. Não é apenas um projeto de infraestrutura: é uma visão de desenvolvimento territorial e geoeconômico que reconhece que o Rio só realizará seu potencial",
-    "pagina": 15
-   },
    "410": {
     "texto": "O ArcoMM propõe reorganizar o desenvolvimento do entorno do Arco Metropolitano a partir de duas grandes apostas: a criação de Cidades Vocacionadas e a implantação de um Grande Anel Multimodal que conecta toda a metrópole fluminense e faz as ligações desta nova região ao interior sul (o Sul Fluminense), ao norte do Estado e ao leste (Região dos Lagos e Campos), respectivamente.",
     "pagina": 16
@@ -598,10 +645,6 @@
     "texto": "• 10 municípios pioneiros no Pacto Rio 92 com metas pactuadas em 2027, expandindo para adesão da maioria dos 92 até 2030 (meta do plano — a confirmar na estimação técnica).",
     "pagina": 75
    },
-   "1852": {
-    "texto": "• Elevação do percentual médio de investimento dos municípios sobre a receita, a partir da linha de base de 4,6% (Firjan/IFGF) (meta do plano — a confirmar na estimação técnica).",
-    "pagina": 75
-   },
    "1853": {
     "texto": "• Presença do Rio em Todo Lugar em todas as regiões, priorizando as comunidades hoje sem atendimento regular do Estado (meta do plano — a confirmar na estimação técnica).",
     "pagina": 75
@@ -625,9 +668,17 @@
    "3489": {
     "texto": "Programa Fusão 50 — Fundo de Reparação da Fusão",
     "pagina": 138
+   },
+   "3512": {
+    "texto": "Rio em Todos os 92 Municípios",
+    "pagina": 139
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
+   "775": {
+    "texto": "CAPÍTULO V",
+    "pagina": 31
+   },
    "776": {
     "texto": "PARCERIA COM O CONDERLAGOS: DO FERRY BOAT À",
     "pagina": 31
@@ -643,6 +694,10 @@
    "810": {
     "texto": "O desenvolvimento econômico terá prioridade territorial fora da capital, com o Leste Fluminense e o litoral da Baía de Guanabara como eixos de um novo ciclo produtivo estadual.",
     "pagina": 33
+   },
+   "831": {
+    "texto": "PENSAR NO INTERIOR: DESENVOLVIMENTO ECONÔMICO",
+    "pagina": 35
    }
   },
   "governador-rj-douglas-ruas-190002542887": {
@@ -664,10 +719,6 @@
    },
    "331": {
     "texto": "• \u0007Pactos regionais e municipais de desenvolvimento, com metas públicas, contrapartidas claras, órgão responsável, gestor designado e acompanhamento periódico dos resultados.",
-    "pagina": 30
-   },
-   "332": {
-    "texto": "O desenvolvimento do Rio precisa chegar a todas as regiões, respeitando a vocação produtiva de cada território e apoiando os municípios na transformação de projetos em investimento, emprego e renda.",
     "pagina": 30
    },
    "333": {
@@ -706,10 +757,6 @@
     "texto": "• \u0007Critérios técnicos e transparentes de seleção, priorizando risco à vida, impacto regional, redução de desigualdades territoriais, desenvolvimento econômico e capacidade de entrega.",
     "pagina": 41
    },
-   "442": {
-    "texto": "ESTADO PARCEIRO DAS CIDADES",
-    "pagina": 42
-   },
    "443": {
     "texto": "• \u0007Plataforma pública de acompanhamento, com status de cada projeto, etapa de execução, prazo, investimento previsto, município beneficiado e responsável técnico.",
     "pagina": 42
@@ -731,6 +778,24 @@
    "61": {
     "texto": "• Governar em parceria com os prefeitos dos 92 municípios do nosso estado, sem distinção partidária, política ou ideológica, e por meio da criação de um Conselho das Cidades, ligado diretamente ao governador, com o objetivo de promover um maior equilíbrio nos indicadores de desenvolvimento humano nas oito regiões de planejamento do nosso estado - Metropolitana, Serrana, Norte Fluminense, Noroeste Fluminense, Região dos Lagos, Médio Paraíba, Centro-Sul Fluminense e Costa Verde.",
     "pagina": 7
+   }
+  },
+  "governador-rj-william-siri-190002536162": {
+   "255": {
+    "texto": "☼ Criar uma agência permanente de gestão compartilhada em cada região do estado (Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas",
+    "pagina": 10
+   },
+   "256": {
+    "texto": "Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde), como forma de integrar a administração pública estadual do Governo do Estado com a administração pública municipal das prefeituras de cada região, fomentando conectividade entre órgãos estaduais e municipais, além de garantir a pactuação de compromissos intersetoriais e interfederativos;",
+    "pagina": 10
+   },
+   "258": {
+    "texto": "☼ Revisar o Programa de Desenvolvimento Regional, com ênfase em cada região do estado (Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas",
+    "pagina": 10
+   },
+   "259": {
+    "texto": "Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde) para a análise de problemas comuns (ex: mobilidade urbana, saneamento ambiental, segurança pública, etc.) e desenvolvimento das potencialidades regionais, com compartilhamento de soluções entre o Governo do Estado e as prefeituras de cada região a partir de um diálogo coordenado entre todos os entes;",
+    "pagina": 10
    }
   }
  }

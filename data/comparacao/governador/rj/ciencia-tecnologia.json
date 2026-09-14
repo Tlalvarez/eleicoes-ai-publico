@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "ciencia-tecnologia-rj.json",
-  "gerado_em": "2026-09-14T01:44:08Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:50:19Z",
+  "exportado_em": "2026-09-14T09:58:52Z"
  },
  "candidatos": [
   {
@@ -45,14 +45,22 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Expandir a cobertura de internet de alta capacidade e 5G no estado, com prioridade para áreas hoje descobertas (interior, periferias, zonas rurais e equipamentos públicos)",
-   "n_concorda": 2,
+   "proposta": "Expandir a cobertura de internet de alta velocidade e 5G no estado, com prioridade para municípios, periferias e áreas hoje sem cobertura adequada",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -69,14 +77,21 @@
       1527,
       3493
      ],
-     "nota": "Trata o 5G como infraestrutura essencial, com plano estadual e mapeamento"
+     "nota": "Plano estadual de expansão do 5G com mapeamento de áreas descobertas"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      316
+     ],
+     "nota": "Foco em bairros e favelas mal atendidos pelo sistema privado"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Adotar modelos de parceria e incentivo com operadoras de telecomunicações para atrair investimento privado na expansão da rede em áreas de baixa atratividade comercial",
+   "proposta": "Expandir a conectividade por meio de parceria com operadoras privadas e modelos de incentivo ao investimento em áreas de baixa atratividade comercial",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -84,28 +99,27 @@
      "blocos": [
       342
      ],
-     "nota": "Parceria com operadoras e municípios, com uso de infraestrutura pública"
+     "nota": "Inclui simplificação do licenciamento de antenas e uso de infraestrutura pública"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1525,
-      1541
+      1525
      ],
-     "nota": "PPPs e modelos de incentivo sob regulação e metas do Estado"
+     "nota": "PPPs e incentivos sob regulação e metas do Estado"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Simplificar o licenciamento de antenas e permitir o uso de infraestrutura pública para acelerar a implantação de redes",
+   "proposta": "Criar rede pública de internet gratuita, com hotspots, telecentros e postos de conexão em praças, escolas, bibliotecas e órgãos públicos",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      342
+      316
      ],
      "nota": ""
     }
@@ -113,8 +127,32 @@
   },
   {
    "id": "p4",
-   "subtema": "Economia digital, games e startups",
-   "proposta": "Apoiar estúdios, startups e empresas de jogos digitais e software com acesso a financiamento, infraestrutura de inovação e integração com universidades e setor privado",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Promover alfabetização/letramento digital da população, incluindo combate à desinformação e centros de inclusão digital",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2126
+     ],
+     "nota": "Ênfase no combate coordenado à desinformação"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1522,
+      1528,
+      1529
+     ],
+     "nota": "Programa RJ Digital de formação massiva em tecnologia e IA"
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Startups e economia digital",
+   "proposta": "Apoiar startups, estúdios e empresas de jogos digitais e software com fomento, hubs de inovação e integração com universidades e setor privado",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -122,51 +160,21 @@
      "blocos": [
       380
      ],
-     "nota": "Crédito, hubs de inovação, conexão com investidores e qualificação técnica"
+     "nota": "Crédito, conexão com investidores e qualificação técnica"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      1174,
-      1211
+      1211,
+      1236
      ],
-     "nota": "Inclui banco público de assets digitais e fundo de internacionalização"
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Economia digital, games e startups",
-   "proposta": "Criar polos de economia digital com infraestrutura compartilhada de conectividade e energia no Centro do Rio, em Niterói e na Baixada Fluminense",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1211
-     ],
-     "nota": ""
+     "nota": "Banco público de assets digitais, fundo de internacionalização e polos de economia digital"
     }
    }
   },
   {
    "id": "p6",
-   "subtema": "Economia digital, games e startups",
-   "proposta": "Incluir formalmente o desenvolvimento de jogos eletrônicos no Sistema Estadual de Cultura",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1211
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Economia digital, games e startups",
+   "subtema": "Startups e economia digital",
    "proposta": "Criar fundo estadual de subvenção a startups de base científica em fase de validação de mercado",
    "n_concorda": 1,
    "posicoes": {
@@ -180,57 +188,38 @@
    }
   },
   {
-   "id": "p8",
-   "subtema": "Pesquisa e integração universidade-empresa",
-   "proposta": "Criar rede de articulação entre universidades, institutos de pesquisa e setor produtivo, com fundo de cofinanciamento de pesquisa aplicada gerido pela FAPERJ e núcleos de inovação para licenciamento de patentes e transferência tecnológica",
+   "id": "p7",
+   "subtema": "Startups e economia digital",
+   "proposta": "Instituir polos de economia digital com infraestrutura compartilhada de conectividade e energia no Centro, em Niterói e na Baixada Fluminense",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      1186,
-      1236
+      1211
      ],
-     "nota": "RedeConhecimento RJ, de adesão voluntária e convênio com federais"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Startups e economia digital",
+   "proposta": "Incluir formalmente o desenvolvimento de jogos no Sistema Estadual de Cultura",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1211
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p9",
-   "subtema": "Pesquisa e integração universidade-empresa",
-   "proposta": "Descentralizar o ecossistema de inovação com polos regionais no interior vinculados à vocação produtiva e a instituições de ensino locais, incluindo incubadoras",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1202,
-      1236
-     ],
-     "nota": "ECOINOV-RJ, começando por polo em Campos dos Goytacazes (UENF e IFF)"
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Inteligência artificial e inovação no governo",
-   "proposta": "Adotar soluções de inteligência artificial nos órgãos públicos para agilizar atendimento, combater fraudes e reduzir filas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1523,
-      1537,
-      1540
-     ],
-     "nota": "Meta de implantar em serviços prioritários até 2029"
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Inteligência artificial e inovação no governo",
+   "subtema": "Startups e economia digital",
    "proposta": "Atrair data centers e infraestrutura de inteligência artificial soberana aproveitando disponibilidade energética e conectividade do estado",
    "n_concorda": 1,
    "posicoes": {
@@ -244,8 +233,210 @@
    }
   },
   {
+   "id": "p10",
+   "subtema": "Fomento à pesquisa e FAPERJ",
+   "proposta": "Usar a FAPERJ como instrumento central de financiamento da pesquisa aplicada a temas de interesse público e ao desenvolvimento produtivo do estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      329,
+      333,
+      413,
+      414
+     ],
+     "nota": "Reorienta a FAPERJ para bolsas e metas sociais de emprego e desigualdade"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1236
+     ],
+     "nota": "Fundo de cofinanciamento de pesquisa aplicada gerido pela FAPERJ com setor produtivo"
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Fomento à pesquisa e FAPERJ",
+   "proposta": "Ampliar gradualmente o orçamento destinado às linhas de pesquisa do estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      337
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p12",
-   "subtema": "Inteligência artificial e inovação no governo",
+   "subtema": "Fomento à pesquisa e FAPERJ",
+   "proposta": "Fortalecer o Conselho Estadual de Ciência e Tecnologia, atribuindo-lhe a seleção dos projetos de pesquisa financiados pela FAPERJ",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      331
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Fomento à pesquisa e FAPERJ",
+   "proposta": "Criar editais da FAPERJ de apoio à pesquisa em agricultura familiar, pesca artesanal e agroecologia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1212,
+      1213
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Fomento à pesquisa e FAPERJ",
+   "proposta": "Condicionar a ciência e a tecnologia financiadas com recursos públicos a objetivos de soberania, garantia de direitos e melhoria das condições de vida",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      415
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Integração entre universidades, pesquisa e economia",
+   "proposta": "Articular universidades e institutos de pesquisa com o governo estadual por meio de convênios e redes formais de cooperação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1236
+     ],
+     "nota": "RedeConhecimento RJ, de adesão voluntária, ligando universidades e setor produtivo"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      325,
+      335
+     ],
+     "nota": "Convênios para qualificar servidores e produzir conhecimento para políticas públicas"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Integração entre universidades, pesquisa e economia",
+   "proposta": "Descentralizar o ecossistema de inovação para o interior, com polos regionais vinculados à vocação produtiva de cada território",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1236
+     ],
+     "nota": "ECOINOV-RJ, começando por polo em Campos dos Goytacazes com UENF e IF Fluminense"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Integração entre universidades, pesquisa e economia",
+   "proposta": "Criar rede de núcleos de inovação tecnológica para licenciamento de patentes e transferência de tecnologia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1236
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Integração entre universidades, pesquisa e economia",
+   "proposta": "Criar incubadoras vinculadas à FAETEC e às universidades estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1236
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Integração entre universidades, pesquisa e economia",
+   "proposta": "Vincular universidade pública e complexo industrial da saúde para desenvolver inovação, com novos cursos na área de saúde e hospital universitário na Zona Oeste",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      425
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Formação técnica em tecnologia",
+   "proposta": "Expandir a formação técnica em programação, design e arte digital integrada ao ensino médio, com ampliação do modelo NAVE para quatro unidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1211
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Inovação no governo",
+   "proposta": "Adotar inteligência artificial e digitalização em serviços públicos para agilizar atendimento, reduzir filas e combater fraudes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1523,
+      1537,
+      1540,
+      1542
+     ],
+     "nota": "Metas de implantação até 2029 e cronograma por fases"
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Inovação no governo",
    "proposta": "Implantar projetos-piloto de cidades inteligentes integrando conectividade, sensores e dados a serviços urbanos",
    "n_concorda": 1,
    "posicoes": {
@@ -261,32 +452,45 @@
    }
   },
   {
-   "id": "p13",
-   "subtema": "Formação e qualificação em tecnologia",
-   "proposta": "Criar programa estadual de formação massiva em tecnologia e letramento em inteligência artificial para estudantes e trabalhadores",
+   "id": "p23",
+   "subtema": "Inovação no governo",
+   "proposta": "Criar laboratório de inovação para a mobilidade vinculado à Secretaria de Transportes, com convênio com universidades e apoio da FAPERJ",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1522,
-      1528,
-      1529
+      1515
      ],
-     "nota": "Programa RJ Digital, com meta de contingente a confirmar"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p14",
-   "subtema": "Formação e qualificação em tecnologia",
-   "proposta": "Expandir o modelo NAVE para quatro unidades de ensino médio com formação técnica em programação, design e arte digital",
+   "id": "p24",
+   "subtema": "Inovação no governo",
+   "proposta": "Elaborar novos indicadores sociais para orientar ações públicas, em conjunto com universidades e instituições de pesquisa",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1211
+      325
+     ],
+     "nota": "Coordenação pelo Instituto Rio Metrópole"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Inovação no governo",
+   "proposta": "Incentivar o desenvolvimento de tecnologias e indústrias nacionais de mobilidade urbana sustentável, como ônibus a hidrogênio e elétricos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1517
      ],
      "nota": ""
     }
@@ -351,24 +555,16 @@
     "texto": "Fase 2 — 2028–2029: expansão da cobertura nas áreas prioritárias, ampliação da formação em tecnologia e implantação dos pilotos de cidades inteligentes.",
     "pagina": 63
    },
+   "1542": {
+    "texto": "Fase 3 — 2030: consolidação da infraestrutura digital como base dos serviços públicos e da economia estadual, com avaliação de impacto sobre inclusão e produtividade.",
+    "pagina": 63
+   },
    "3493": {
     "texto": "Conectividade 5G, IA e Cidades Inteligentes",
     "pagina": 138
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
-   "1174": {
-    "texto": "FOMENTO AO DESENVOLVIMENTO DE SOFTWARES E JOGOS",
-    "pagina": 54
-   },
-   "1186": {
-    "texto": "REDECONHECIMENTO RJ E ECOINOV-RJ — INTEGRAÇÃO ENTRE ENSINO SUPERIOR,",
-    "pagina": 54
-   },
-   "1202": {
-    "texto": "A política de inovação e competitividade terá prioridade de descentralização para além da capital, com polos regionais vinculados à vocação produtiva de cada território.",
-    "pagina": 55
-   },
    "1211": {
     "texto": "O Governo do Estado expandirá o modelo NAVE (Núcleo Avançado em Educação) para quatro unidades com formação técnica em programação, design e arte digital integrada ao ensino médio; incluirá formalmente o desenvolvimento de jogos no Sistema Estadual de Cultura; instituirá polos de economia digital no Centro, em Niterói e na Baixada Fluminense, com infraestrutura compartilhada de conectividade e energia; e criará banco público de assets digitais e fundo de internacionalização para reduzir a barreira de entrada de estúdios pequenos e médios.",
     "pagina": 56
@@ -388,6 +584,72 @@
     "pagina": 35
    }
   },
-  "governador-rj-eduardo-paes-190002543380": {}
+  "governador-rj-eduardo-paes-190002543380": {},
+  "governador-rj-william-siri-190002536162": {
+   "316": {
+    "texto": "☼ Implementar um sistema de rede sem fio que garanta internet pública, gratuita e de qualidade para redes móveis de alta velocidade em todo o estado (utilizando como parâmetro bairros e favelas precariamente atendidos pelo sistema privado de telefonia móvel e internet), com a progressiva ampliação do acesso por meio de “hotspots”, “telecentros” e “postos de conexão” (locais com equipamento e estrutura necessários) em lugares como praças, mercados, escolas, bibliotecas e órgãos públicos; ​",
+    "pagina": 13
+   },
+   "325": {
+    "texto": "☼ Elaborar novos indicadores sociais para ações públicas, em conjunto com as universidades e instituições de pesquisa localizadas no estado, buscando superar os indicadores tradicionais que não refletem as reais condições da população, orientados pelo Instituto Rio Metrópole (IRM) voltado à função estabelecida na Lei Complementar Estadual 184/2018;",
+    "pagina": 14
+   },
+   "329": {
+    "texto": "☼ Reorientar os financiamentos do Fundo de Amparo à Pesquisa do Estado do Rio de Janeiro (FAPERJ) para promover uma política de fomento a bolsas acadêmicas para estudantes e pesquisadores, visando a participação direta da comunidade universitária nos temas de interesse público do estado;",
+    "pagina": 14
+   },
+   "331": {
+    "texto": "☼ Fortalecer o Conselho Estadual de Ciência e Tecnologia, que terá a função de selecionar projetos de pesquisa aplicada em temas de interesse das políticas públicas estaduais a serem financiados pela FAPERJ;",
+    "pagina": 14
+   },
+   "333": {
+    "texto": "☼ Apoiar projetos de pesquisa e extensão voltados para o aperfeiçoamento de políticas públicas estaduais e problemas de alta complexidade técnica e social;",
+    "pagina": 14
+   },
+   "335": {
+    "texto": "☼ Estabelecer convênios com as universidades públicas e institutos de pesquisa localizados no estado para garantir um programa de aperfeiçoamento profissional e desenvolvimento de métodos operacionais para a qualificação dos servidores públicos do Governo do Estado e da ALERJ, bem como a produção de conhecimento que subsidie a formulação e avaliação de políticas públicas;",
+    "pagina": 14
+   },
+   "337": {
+    "texto": "☼ Buscar o fortalecimento orçamentário gradual nas linhas de pesquisa, de modo a ampliar os escopos de ação de pesquisas acadêmicas como maneira de estimular o desenvolvimento do ambiente socioeconômico do Estado do Rio de Janeiro;",
+    "pagina": 14
+   },
+   "413": {
+    "texto": "▪ Coordenar essa política por meio da FAPERJ, das universidades públicas, da",
+    "pagina": 20
+   },
+   "414": {
+    "texto": "FAETEC, das compras governamentais e do crédito público, estabelecendo metas de geração de emprego digno, conteúdo produtivo local, redução das desigualdades e acesso prioritário da juventude trabalhadora, negra e periférica;",
+    "pagina": 20
+   },
+   "415": {
+    "texto": "▪ Garantir que a ciência e a tecnologia financiadas com recursos públicos estejam voltadas para a soberania, a garantia de direitos e a melhoria das condições de vida da população.",
+    "pagina": 20
+   },
+   "425": {
+    "texto": "Oeste com o Complexo Industrial da Saúde Fluminense, buscando o desenvolvimento de inovação, através do ensino e da pesquisa. Também iremos estimular a criação de cursos voltados para a área da saúde na universidade, de forma progressiva e respeitando o diálogo com a comunidade acadêmica e o projeto político pedagógico da universidade, e estabelecer um hospital universitário no Hospital Estadual Eduardo Rabello (HEER)",
+    "pagina": 21
+   },
+   "1212": {
+    "texto": "☼ Elaborar editais do Fundo de Amparo à Pesquisa do Estado do Rio de Janeiro",
+    "pagina": 70
+   },
+   "1213": {
+    "texto": "(FAPERJ) de apoio à pesquisa em agricultura familiar, pesca artesanal e agroecologia;",
+    "pagina": 70
+   },
+   "1515": {
+    "texto": "☼ Criar um Laboratório de Inovação para a Mobilidade vinculado à Secretaria de Estado de Transportes, com convênio com universidades e apoio do Fundo de Amparo à Pesquisa do Estado do Rio de Janeiro, para realizar pesquisas, produzir análises de dados e auxiliar nas decisões para melhorar a mobilidade no estado;",
+    "pagina": 90
+   },
+   "1517": {
+    "texto": "☼ Incentivar o desenvolvimento de tecnologias e indústrias nacionais de mobilidade urbana sustentável (por exemplo, o ônibus movidos a hidrogênio e energia elétrica, desenvolvido na COPPE/UFRJ).",
+    "pagina": 90
+   },
+   "2126": {
+    "texto": "☼ Estimular e promover iniciativas voltadas para a Alfabetização Digital e o combate coordenado à desinformação, incluindo escolas e centros de inclusão tecnológica digital, possibilitando a apropriação e qualificação do uso da rede;",
+    "pagina": 126
+   }
+  }
  }
 }

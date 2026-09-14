@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "educacao-rj.json",
-  "gerado_em": "2026-09-14T01:16:17Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T08:59:57Z",
+  "exportado_em": "2026-09-14T09:58:51Z"
  },
  "candidatos": [
   {
@@ -45,14 +45,22 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Ampliar a oferta de ensino técnico e profissionalizante na rede estadual",
-   "n_concorda": 4,
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Ampliar a oferta de vagas e unidades de ensino médio técnico e profissionalizante da rede estadual",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
@@ -60,7 +68,7 @@
       32,
       52
      ],
-     "nota": "Expansão em tempo integral por todo o estado"
+     "nota": "Expansão em tempo integral em todo o estado"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -74,10 +82,16 @@
      "posicao": "concorda",
      "blocos": [
       661,
-      675,
       1219
      ],
      "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1849
+     ],
+     "nota": "Ampliar a FAETEC a todas as regiões"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -92,9 +106,9 @@
   },
   {
    "id": "p2",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Organizar os cursos técnicos segundo a vocação econômica e a demanda de trabalho de cada região",
-   "n_concorda": 4,
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Organizar os cursos técnicos segundo as vocações econômicas e a demanda de mercado de cada região",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
@@ -116,7 +130,15 @@
       661,
       1219
      ],
-     "nota": "Três modalidades regionalizadas de ensino médio técnico"
+     "nota": "Três modalidades regionalizadas e centros de laboratórios compartilhados"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1844,
+      1849
+     ],
+     "nota": "Alinhado ao Plano de Reindustrialização e à justiça climática"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -124,49 +146,15 @@
       1100,
       1168
      ],
-     "nota": "Trilha por região: offshore no Norte, siderurgia no Médio Paraíba"
+     "nota": ""
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Firmar parcerias com empresas e com o Sistema S para estágio, certificação e contratação dos formados",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      260
-     ],
-     "nota": "Rede de estágios e acompanhamento dos egressos"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      675,
-      1219
-     ],
-     "nota": "Incentivo a empresas parceiras e convênio com FIRJAN e Sistema S"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1101,
-      1105,
-      1113,
-      1116
-     ],
-     "nota": "Convênios obrigatórios com reserva de vagas de aprendizagem"
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Fortalecer e reorganizar a rede de escolas técnicas estaduais (FAETEC)",
-   "n_concorda": 3,
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Reorganizar e fortalecer a FAETEC como rede estadual de educação profissional",
+   "n_concorda": 4,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
@@ -178,60 +166,89 @@
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      1219,
-      1584
+      1219
      ],
-     "nota": "Plano único de metas e mais autonomia das unidades"
+     "nota": "Plano único de metas, currículo modular e mais autonomia das unidades"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1838,
+      1849
+     ],
+     "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       1115
      ],
-     "nota": "Modernização e novas unidades"
+     "nota": "Modernização de laboratórios e novas unidades"
     }
    }
   },
   {
-   "id": "p5",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Modernizar laboratórios da rede de ensino técnico",
-   "n_concorda": 2,
+   "id": "p4",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Firmar parcerias com empresas e com o Sistema S para estágio, certificação e contratação dos egressos",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      260
+     ],
+     "nota": "Rede de estágios e acompanhamento dos formados"
+    },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      661
+      661,
+      1219
      ],
-     "nota": "Centros regionais de laboratórios compartilhados entre escolas"
+     "nota": "Parceria com a FIRJAN e incentivo a empresas formadoras"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1115
+      1101,
+      1105,
+      1116,
+      1169
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p6",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Adotar o modelo dual de formação técnica, com alternância entre escola e empresa",
-   "n_concorda": 2,
+   "id": "p5",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Implantar aprendizagem dual, com divisão da semana entre escola e empresa, salário-aprendiz cofinanciado e contrato formal",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1219
-     ],
-     "nota": "Modelo dual alemão via parceria com a FIRJAN"
-    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       1096,
-      1099
+      1099,
+      1104,
+      1142
+     ],
+     "nota": "Programa Aprendiz Rio, Estado 30% e empresa 70%"
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Fixar meta de 200 mil jovens em aprendizagem dual em quatro anos, com maior concentração na Baixada Fluminense",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1114,
+      1119
      ],
      "nota": ""
     }
@@ -239,55 +256,24 @@
   },
   {
    "id": "p7",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Criar programa de aprendizagem dual com salário-aprendiz cofinanciado pelo Estado e contrato formal, com meta de 200 mil jovens em quatro anos",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Publicar ranking de desempenho, evasão e empregabilidade por unidade da rede técnica estadual",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      1104,
-      1119,
-      1142
+      1201,
+      1219
      ],
-     "nota": "Estado 30% e empresa 70%, 3 dias na escola e 2 na empresa"
+     "nota": ""
     }
    }
   },
   {
    "id": "p8",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Publicar ranking de desempenho, evasão e empregabilidade dos egressos por unidade técnica",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1219
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Adotar currículo técnico modular e empilhável, com certificações intermediárias reconhecidas nacionalmente",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1219
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Instalar polos de ensino técnico em comunidades vulneráveis, com cursos ligados à infraestrutura local",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Instalar polos de ensino técnico em comunidades e territórios vulneráveis",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -295,14 +281,44 @@
      "blocos": [
       1584
      ],
-     "nota": "Polos da FAETEC com mutirão remunerado e apoio da UERJ"
+     "nota": "Polos da FAETEC com cursos ligados a obras locais e mutirão remunerado"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Implantar eleição direta para a presidência da FAETEC e para a direção de suas unidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1836
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Triplicar as matrículas do ensino médio técnico estadual com os investimentos pactuados no PROPAG",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1849
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p11",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Criar trilhas de formação técnica para a economia criativa (audiovisual, games, moda, design, tecnologia)",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Criar trilhas de formação técnica voltadas à economia criativa e ao audiovisual",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -316,8 +332,8 @@
   },
   {
    "id": "p12",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Criar centro de formação e universidade voltados às atividades marítimas, com cursos técnicos e superiores",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Criar um centro de formação e uma universidade do mar com cursos técnicos e superiores em atividades marítimas",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -332,9 +348,9 @@
   },
   {
    "id": "p13",
-   "subtema": "Ensino integral e jornada escolar",
-   "proposta": "Ampliar o ensino em tempo integral ou a jornada escolar ampliada na rede estadual",
-   "n_concorda": 4,
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Ampliar a jornada escolar e o ensino em tempo integral na rede estadual",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
@@ -342,58 +358,205 @@
       32,
       52
      ],
-     "nota": "Integral associado ao ensino médio profissionalizante"
+     "nota": "Integral associado ao ensino profissionalizante"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       138
      ],
-     "nota": ""
+     "nota": "Escolas como complexos de cidadania, com qualificação à noite"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       661
      ],
-     "nota": "Expansão dos itinerários integrais com equidade territorial"
+     "nota": "Expansão dos itinerários com foco em equidade territorial"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762
+     ],
+     "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       1211,
+      1213,
+      1219,
       1226,
       2648
      ],
-     "nota": ""
+     "nota": "Escola 18h com contraturno e apoio psicossocial"
     }
    }
   },
   {
    "id": "p14",
-   "subtema": "Ensino integral e jornada escolar",
-   "proposta": "Implantar jornada escolar até as 18h com contraturno de reforço, esporte, cultura e apoio psicossocial, priorizando territórios vulneráveis",
-   "n_concorda": 1,
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Aproveitar a infraestrutura dos CIEPs para ampliar o ensino integral",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      1211,
-      1215,
-      1219,
-      1238,
-      3481
+      661
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762
+     ],
+     "nota": "Retomar a concepção original de Darcy Ribeiro"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Colocar 30 CIEPs em funcionamento no modelo integral já no primeiro ano de mandato, em áreas vulneráveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Ensino integral e jornada escolar",
-   "proposta": "Garantir alimentação e transporte compatíveis com a jornada ampliada",
-   "n_concorda": 1,
+   "id": "p16",
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Abrir as escolas estaduais à comunidade fora do horário de aula, inclusive fins de semana, com atividades de cultura, esporte e cursos",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      259
+     ],
+     "nota": "Cursos rápidos abertos às famílias"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      682
+     ],
+     "nota": "Escola 360 nos CIEPs com conselho comunitário de fim de semana"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1768
+     ],
+     "nota": "Escolas como equipamentos culturais"
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Levar conectividade e internet de alta velocidade a todas as escolas estaduais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      259
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": "Via PPPs com empresas de telecomunicações, até o 2º ano de governo"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1760
+     ],
+     "nota": "Internet pública e gratuita para a comunidade escolar"
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Climatizar as salas de aula e recuperar quadras, bibliotecas e salas de informática",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      259
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1758,
+      1782,
+      1849
+     ],
+     "nota": "Inclui adequação acústica e construção de quadras"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Renovar equipamentos e implantar laboratórios de inovação nas escolas, com prioridade para periferia e interior",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      658
+     ],
+     "nota": "Contratos com obrigação de manutenção por nível de serviço"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1115
+     ],
+     "nota": "Laboratórios alinhados às cadeias produtivas"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Reforçar a alimentação escolar e garantir refeições compatíveis com a jornada dos alunos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      259
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762,
+      1797
+     ],
+     "nota": "Pelo menos 4 refeições diárias nos CIEPs e alimentação na EJA"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
@@ -404,179 +567,48 @@
    }
   },
   {
-   "id": "p16",
-   "subtema": "Ensino integral e jornada escolar",
-   "proposta": "Aproveitar a infraestrutura ociosa dos CIEPs para expandir o ensino integral",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      632,
-      661
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Escolas cívico-militares",
-   "proposta": "Implantar e expandir escolas cívico-militares na rede estadual",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      271
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      662
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1159,
-      1167,
-      1173
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Escolas cívico-militares",
-   "proposta": "Selecionar as unidades cívico-militares por critérios de vulnerabilidade e violência, com expansão gradual avaliada por resultados",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      662
-     ],
-     "nota": "Protocolo estadual com consulta pública vinculante, adesão voluntária e meta de 25 unidades"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1163,
-      1165,
-      1186,
-      1195
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Escolas cívico-militares",
-   "proposta": "Integrar itinerários técnicos ao currículo cívico-militar, com certificação profissional aos concluintes",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1162,
-      1164,
-      1169,
-      1184
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Escolas cívico-militares",
-   "proposta": "Restringir o militar da reserva à disciplina e à ordem, mantendo civil a gestão pedagógica, com metas de desempenho por unidade",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      271
-     ],
-     "nota": "Neutralidade político-partidária como princípio da rede"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1161
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p21",
-   "subtema": "Aprendizagem e permanência escolar",
-   "proposta": "Criar programa de recuperação de aprendizagem e correção de fluxo para alunos defasados",
-   "n_concorda": 2,
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Implantar programa de café da manhã e jantar de qualidade para alunos da rede estadual e seus responsáveis",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      207,
-      256
+      1296,
+      1764
      ],
-     "nota": "Programa Ninguém Fica Para Atrás"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1170,
-      1216,
-      1221,
-      2655
-     ],
-     "nota": "Meta de levar a distorção idade-série a um dígito"
+     "nota": ""
     }
    }
   },
   {
    "id": "p22",
-   "subtema": "Aprendizagem e permanência escolar",
-   "proposta": "Fazer busca ativa dos alunos ausentes ou em risco de evasão, com alerta precoce e contato com a família",
-   "n_concorda": 2,
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Adquirir no mínimo 50% da alimentação escolar da agricultura familiar, com prioridade para alimentos agroecológicos",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      272
+      1289,
+      1758
      ],
-     "nota": "Alerta pela frequência e notas (Vem Pra Aula)"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1171,
-      1223,
-      2647
-     ],
-     "nota": "Visita à família em até 72 horas, integrada à assistência social"
+     "nota": ""
     }
    }
   },
   {
    "id": "p23",
-   "subtema": "Aprendizagem e permanência escolar",
-   "proposta": "Aplicar diagnóstico de aprendizagem na entrada do ensino médio e ofertar reforço intensivo de português e matemática no contraturno",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Restringir a venda de ultraprocessados e proibir publicidade de alimentos no ambiente escolar",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      256
+      1293,
+      1294
      ],
      "nota": ""
     }
@@ -584,14 +616,15 @@
   },
   {
    "id": "p24",
-   "subtema": "Aprendizagem e permanência escolar",
-   "proposta": "Combinar Educação de Jovens e Adultos com formação profissional para o adulto que retoma os estudos",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Limitar a 30 o número máximo de alunos por sala de aula, com plano de redução progressiva",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      256
+      1758,
+      1849
      ],
      "nota": ""
     }
@@ -599,14 +632,14 @@
   },
   {
    "id": "p25",
-   "subtema": "Aprendizagem e permanência escolar",
-   "proposta": "Oferecer caminhos flexíveis de conclusão do ensino médio para quem precisa trabalhar",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Impedir o fechamento de escolas e a redução de salas de aula na rede estadual",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      272
+      1756
      ],
      "nota": ""
     }
@@ -614,295 +647,24 @@
   },
   {
    "id": "p26",
-   "subtema": "Aprendizagem e permanência escolar",
-   "proposta": "Condicionar benefícios e vagas em programas socioesportivos à matrícula ativa e à frequência escolar",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Reabrir e reestruturar as Escolas do Campo com projeto pedagógico ligado à agricultura familiar e à agroecologia",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      1217,
-      2631,
-      2647
+      1203,
+      1206
      ],
-     "nota": "Exigência de 85% de frequência nos polos esportivo-pedagógicos"
+     "nota": "Reabertura das 147 escolas fechadas"
     }
    }
   },
   {
    "id": "p27",
-   "subtema": "Inclusão e educação especial",
-   "proposta": "Garantir educação inclusiva com plano educacional individualizado e apoio especializado aos estudantes com deficiência ou neurodivergentes",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
-     "posicao": "concorda",
-     "blocos": [
-      53
-     ],
-     "nota": "Atuação de apoio às prefeituras"
-    },
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      249
-     ],
-     "nota": "Salas de recursos, tutores e articulação escola-família-saúde"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": "Preserva o atendimento educacional especializado já previsto em lei"
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Inclusão e educação especial",
-   "proposta": "Formar professores e gestores para a educação inclusiva",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      249
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": "Formação em parceria com UERJ, UFRJ e UFF"
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Inclusão e educação especial",
-   "proposta": "Adotar o Desenho Universal para a Aprendizagem como padrão pedagógico da sala de aula comum",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Inclusão e educação especial",
-   "proposta": "Criar equipes multidisciplinares itinerantes para triagem anual nas escolas e atendimento terapêutico na própria escola em prazo máximo de 60 dias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": "Fonoaudiólogo, terapeuta ocupacional e psicólogo"
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Inclusão e educação especial",
-   "proposta": "Apoiar as famílias de crianças com autismo com assistência específica",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
-     "posicao": "concorda",
-     "blocos": [
-      53
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": "Rede de apoio estruturada às famílias dos neurodivergentes"
-    }
-   }
-  },
-  {
-   "id": "p32",
-   "subtema": "Saúde mental e proteção na escola",
-   "proposta": "Levar apoio psicossocial e atendimento em saúde mental para dentro das escolas, articulados com a rede de saúde",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      275
-     ],
-     "nota": "Plantões psicossociais e currículo socioemocional"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      695
-     ],
-     "nota": "Psicólogos e assistentes sociais da rede em rodas de conversa"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1214,
-      1220,
-      1236
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Saúde mental e proteção na escola",
-   "proposta": "Usar telessaúde/teleconsulta para ampliar o acolhimento psicológico dos estudantes",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      275
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1220,
-      1248
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Saúde mental e proteção na escola",
-   "proposta": "Instituir calendário anual de temas de saúde integrado ao ano letivo, com cada escola vinculada a uma unidade básica de saúde",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      695
-     ],
-     "nota": "Material conjunto de SEEDUC e SES-RJ por faixa etária"
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Saúde mental e proteção na escola",
-   "proposta": "Criar centros estaduais de apoio psicossocial às famílias com busca ativa cruzada entre escola e polo esportivo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      2647
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Saúde mental e proteção na escola",
-   "proposta": "Estruturar política escolar de enfrentamento à violência contra meninas, permanência de mães adolescentes e distribuição de absorventes na rede estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      274
-     ],
-     "nota": "Programa Escola Para Elas, com profissionais de referência nas regionais"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Saúde mental e proteção na escola",
-   "proposta": "Adotar protocolos de proteção de alunos e escolas em territórios afetados pela violência armada",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1171
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Levar conectividade de qualidade e equipamentos digitais a todas as escolas estaduais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      259
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      658
-     ],
-     "nota": "PPPs com telecomunicações e prazo até o fim do 2º ano de governo"
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Climatizar as escolas e garantir quadras, bibliotecas e merenda reforçada",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      138,
-      259
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Implantar laboratórios de inovação nos CIEPs e colégios, com contratos de manutenção aferidos por nível de serviço",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      658
-     ],
-     "nota": "Prioridade para periferia e interior"
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Gerar economia com energia solar nas escolas e reinvestir o recurso na própria infraestrutura escolar",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Instalar energia solar nas escolas e reinvestir a economia de custeio energético na própria rede escolar",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -917,11 +679,19 @@
    }
   },
   {
-   "id": "p42",
-   "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Fazer diagnóstico completo de infraestrutura e gestão das escolas estaduais",
-   "n_concorda": 1,
+   "id": "p28",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Fazer diagnóstico da capacidade, infraestrutura e gestão de todas as unidades escolares estaduais",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1805,
+      1806
+     ],
+     "nota": "Mapeamento por região para dimensionar a oferta de vagas"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
@@ -932,10 +702,297 @@
    }
   },
   {
-   "id": "p43",
-   "subtema": "Colaboração com municípios e alfabetização",
-   "proposta": "Apoiar os municípios na alfabetização na idade certa em regime de colaboração, com apoio técnico e avaliação de leitura",
+   "id": "p29",
+   "subtema": "Inclusão e educação especial",
+   "proposta": "Garantir educação inclusiva com plano educacional individualizado, salas de recursos e profissionais de apoio",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      53
+     ],
+     "nota": "Apoio às prefeituras e às famílias de crianças com autismo"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      249
+     ],
+     "nota": "Tutores especializados e articulação escola-família-saúde"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      687
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1792
+     ],
+     "nota": "Prioridade de vagas e ampliação das salas multifuncionais"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Inclusão e educação especial",
+   "proposta": "Formar professores e gestores para o atendimento de estudantes com deficiência e neurodivergentes",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      249
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      687
+     ],
+     "nota": "Formação em parceria com UERJ, UFRJ e UFF"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1792
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Inclusão e educação especial",
+   "proposta": "Criar equipes multidisciplinares itinerantes para triagem anual e atendimento terapêutico dentro da escola",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      687
+     ],
+     "nota": "Prazo máximo de 60 dias até o início do atendimento"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Inclusão e educação especial",
+   "proposta": "Adotar o Desenho Universal para a Aprendizagem como padrão pedagógico da sala de aula comum",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      687
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Inclusão e educação especial",
+   "proposta": "Garantir transporte adequado ao aluno com deficiência e ao seu responsável",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1792
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Inclusão e educação especial",
+   "proposta": "Oferecer educação escolar e preparação para o trabalho a estudantes da educação especial maiores de 17 anos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1792
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Garantir equipes de apoio psicossocial e atendimento em saúde mental dentro das escolas estaduais",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": "Plantões psicossociais e telessaúde, com atenção a meninas e mães"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1815
+     ],
+     "nota": "Apoio também a familiares e profissionais"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1214,
+      1220,
+      1236
+     ],
+     "nota": "Inclui teleconsulta e meta de reduzir fila de espera"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      695
+     ],
+     "nota": "Psicólogos e assistentes sociais da rede em rodas de conversa"
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Instituir calendário anual de temas de saúde integrado ao ano letivo, com cada escola vinculada a uma unidade básica de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      695
+     ],
+     "nota": "Material conjunto SEEDUC e SES-RJ"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Garantir a permanência escolar de estudantes mães com acompanhamento pedagógico e apoio social",
    "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      274
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1279,
+      1280
+     ],
+     "nota": "180 dias de licença com exercícios domiciliares e prioridade em creche"
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Capacitar equipes escolares para identificar e encaminhar casos de violência contra meninas e mulheres",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      274
+     ],
+     "nota": "Profissionais de referência nas regionais e canal para famílias"
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Distribuir absorventes em toda a rede estadual como política de dignidade menstrual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      274
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Incluir currículo socioemocional na rede estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Criar protocolos de proteção para escolas e alunos em territórios afetados pela violência armada",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1163,
+      1171,
+      1215
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Articular a escola com o Conselho Tutelar e a assistência social no atendimento a alunos em risco",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1817,
+      1819
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1223,
+      2647
+     ],
+     "nota": "Centros de apoio psicossocial à família e visita em até 72 horas"
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Alfabetização e colaboração com os municípios",
+   "proposta": "Garantir a alfabetização das crianças na idade certa em regime de colaboração com os municípios",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -943,21 +1000,29 @@
       207,
       255
      ],
-     "nota": ""
+     "nota": "Apoio técnico, avaliação de leitura e capacitação"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       675
      ],
-     "nota": "Eixo do regime de colaboração 'do berço ao primeiro emprego'"
+     "nota": "Eixo do regime de colaboração do berço ao primeiro emprego"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1746,
+      1748
+     ],
+     "nota": "Alfabetização até os 8 anos e letramento adequado no ingresso ao médio"
     }
    }
   },
   {
    "id": "p44",
-   "subtema": "Colaboração com municípios e alfabetização",
-   "proposta": "Condicionar repasses e investimentos aos municípios ao cumprimento de metas de aprendizagem",
+   "subtema": "Alfabetização e colaboração com os municípios",
+   "proposta": "Condicionar repasses e apoio financeiro aos municípios ao cumprimento de metas de aprendizagem",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -972,14 +1037,14 @@
      "blocos": [
       675
      ],
-     "nota": "Via critérios do ICMS Educacional por resultados e equidade"
+     "nota": "Regulamentação do ICMS Educacional por resultados e equidade"
     }
    }
   },
   {
    "id": "p45",
-   "subtema": "Colaboração com municípios e alfabetização",
-   "proposta": "Regulamentar os critérios de distribuição do ICMS Educacional e priorizar os municípios com piores indicadores de IDEB",
+   "subtema": "Alfabetização e colaboração com os municípios",
+   "proposta": "Priorizar no apoio estadual os municípios com piores indicadores educacionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -987,22 +1052,47 @@
      "blocos": [
       675
      ],
-     "nota": "Prioridade para os 30 municípios de pior desempenho"
+     "nota": "Os 30 municípios com piores IDEB"
     }
    }
   },
   {
    "id": "p46",
-   "subtema": "Colaboração com municípios e alfabetização",
-   "proposta": "Ampliar a oferta de vagas em creches e educação infantil",
-   "n_concorda": 2,
+   "subtema": "Alfabetização e colaboração com os municípios",
+   "proposta": "Mobilizar estudantes universitários como tutores e monitores em escolas de regiões de pior desempenho",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      675,
+      682
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Alfabetização e colaboração com os municípios",
+   "proposta": "Apoiar os municípios na ampliação de vagas em creches e educação infantil",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       675
      ],
-     "nota": "Como eixo do convênio com os municípios"
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1744,
+      1750,
+      1753
+     ],
+     "nota": "Meta de redução progressiva das filas de espera"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1010,37 +1100,450 @@
       2707,
       2719
      ],
-     "nota": "Foco em destravar a inserção feminina no mercado de trabalho"
+     "nota": "Creche como instrumento de inserção da mulher no mercado"
     }
    }
   },
   {
-   "id": "p47",
-   "subtema": "Professores e gestão escolar",
-   "proposta": "Bonificar professores e premiar escolas conforme os resultados de aprendizagem",
+   "id": "p48",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Criar política de identificação e busca ativa de alunos infrequentes ou em risco de abandono",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      272
+     ],
+     "nota": "Alerta precoce por frequência e notas e caminhos flexíveis de conclusão"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1811
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1171,
+      1223,
+      2647
+     ],
+     "nota": "Busca ativa cruzada escola-polo esportivo com visita em 72 horas"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Implantar programa de recuperação da aprendizagem e correção de fluxo no contraturno para reduzir a distorção idade-série",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      207,
-      258
+      256
+     ],
+     "nota": "Reforço intensivo em português e matemática"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1170,
+      1216,
+      1221,
+      2655
      ],
      "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Aplicar diagnóstico de aprendizagem a todo aluno na entrada do ensino médio",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      256
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Fortalecer a Educação de Jovens e Adultos na rede estadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      256
+     ],
+     "nota": "EJA combinada com formação profissional"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1797,
+      1798
+     ],
+     "nota": "Centros de referência, vagas garantidas e expansão territorializada"
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Conceder renda ou benefício aos estudantes de baixa renda para combater a evasão escolar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762
+     ],
+     "nota": "Renda básica para alunos inscritos no CadÚnico"
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Condicionar benefícios e vagas em programas sociais e esportivos à matrícula ativa e à frequência escolar",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1217,
+      2631,
+      2647
+     ],
+     "nota": "Exigência de 85% de frequência para a vaga no esporte"
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Garantir transporte gratuito ou adequado para o deslocamento dos estudantes à escola",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1813
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1117,
+      1224
+     ],
+     "nota": "Passe de transporte para o jovem aprendiz"
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Professores e carreira",
+   "proposta": "Pagar o piso nacional do magistério e recompor a remuneração dos profissionais da educação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      643
+     ],
+     "nota": "Cronograma plurianual compatível com a LRF"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1887
+     ],
+     "nota": "Atualização anual conforme legislação federal"
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Professores e carreira",
+   "proposta": "Enviar novo Plano de Cargos, Carreiras e Salários dos profissionais da educação",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      643
+     ],
+     "nota": "Progressão vinculada a mérito e formação continuada"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1885
+     ],
+     "nota": "Plano unificado entre professores e funcionários, por titulação e tempo"
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Professores e carreira",
+   "proposta": "Pagar bonificação a professores e gestores vinculada aos resultados de desempenho das escolas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      258
+     ],
+     "nota": "Premiação de escolas e bonificação de professores"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       643
      ],
-     "nota": "Bonificação vinculada a múltiplos indicadores, não a critério político"
+     "nota": "Múltiplos indicadores, calibrados por perfil socioeconômico"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "discorda",
+     "blocos": [
+      1903
+     ],
+     "nota": "Propõe extinguir a remuneração variável e transferir os recursos ao salário"
     }
    }
   },
   {
-   "id": "p48",
-   "subtema": "Professores e gestão escolar",
-   "proposta": "Instituir ciclo anual de gestão por resultados, com metas de aprendizagem e monitoramento periódico da rede",
+   "id": "p58",
+   "subtema": "Professores e carreira",
+   "proposta": "Criar programa de formação continuada dos professores da rede",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      646,
+      647
+     ],
+     "nota": "Professor Formador em regime híbrido, para 8 a 12 escolas"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1901,
+      1909
+     ],
+     "nota": "Em parceria com universidades públicas, com adicional por titulação"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Professores e carreira",
+   "proposta": "Realizar concursos públicos para recompor os quadros efetivos da rede estadual de ensino",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1838,
+      1880,
+      1905
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Professores e carreira",
+   "proposta": "Extinguir terceirizações e contratos precários entre os funcionários da educação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1907
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Professores e carreira",
+   "proposta": "Assegurar um terço da jornada docente para planejamento extraclasse e barrar a política de minutagem",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1891
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Professores e carreira",
+   "proposta": "Instituir data-base e negociação salarial permanente com as representações sindicais da educação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1889
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Professores e carreira",
+   "proposta": "Fixar jornada de 30 horas semanais para os funcionários administrativos da rede estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1920
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Professores e carreira",
+   "proposta": "Regulamentar a carreira de animadores culturais e garantir quatro profissionais por escola",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1922
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Escolas cívico-militares",
+   "proposta": "Implantar e expandir o modelo de escolas cívico-militares na rede estadual",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      271
+     ],
+     "nota": "Militar da reserva na disciplina e gestão pedagógica civil"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      661,
+      662
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1159,
+      1167,
+      1173,
+      1187
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Escolas cívico-militares",
+   "proposta": "Definir protocolo de seleção das unidades cívico-militares por vulnerabilidade, com consulta pública prévia, adesão voluntária e meta de 25 unidades",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      661,
+      662
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1186
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Escolas cívico-militares",
+   "proposta": "Integrar itinerários técnicos e certificação profissional ao currículo das escolas cívico-militares",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1162,
+      1164,
+      1169,
+      1181,
+      1184
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Escolas cívico-militares",
+   "proposta": "Priorizar a implantação das unidades cívico-militares em territórios de alta vulnerabilidade e violência",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      662
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1163,
+      1167
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Instituir ciclo de gestão por resultados, com metas de aprendizagem, monitoramento periódico e correção de rumo",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -1056,14 +1559,14 @@
      "blocos": [
       643
      ],
-     "nota": "Quatro momentos fixos de monitoramento e metas por banda socioeconômica"
+     "nota": "Quatro momentos de monitoramento por ano e coordenadorias pedagógicas"
     }
    }
   },
   {
-   "id": "p49",
-   "subtema": "Professores e gestão escolar",
-   "proposta": "Adequar os vencimentos dos professores ao piso nacional do magistério e enviar novo plano de cargos e carreiras",
+   "id": "p70",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Selecionar diretores escolares por processo técnico de prova e projeto de gestão",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -1071,114 +1574,208 @@
      "blocos": [
       643
      ],
-     "nota": "Cronograma plurianual com progressão por mérito e formação"
+     "nota": "Com aprovação da comunidade escolar na etapa final"
     }
    }
   },
   {
-   "id": "p50",
-   "subtema": "Professores e gestão escolar",
-   "proposta": "Selecionar diretores escolares por processo técnico, com prova, projeto de gestão e aprovação da comunidade",
+   "id": "p71",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Garantir gestão democrática com eleição direta de diretores e conselhos escolares deliberativos",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      643
+      1738,
+      1740
+     ],
+     "nota": "Inclui fortalecimento dos grêmios estudantis"
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Criar novo índice estadual de avaliação da qualidade do ensino, sem lógica punitiva",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1826,
+      1827
+     ],
+     "nota": "IQE-RJ, considerando infraestrutura, valorização e tamanho de turma"
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Fortalecer o Conselho Estadual de Educação e revisar o Plano Estadual de Educação com participação social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1734,
+      1736
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Professores e gestão escolar",
-   "proposta": "Criar programa de professores formadores da própria rede, em regime híbrido, responsáveis pela formação de colegas de sua região",
+   "id": "p74",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Auditar e encerrar contratos com empresas privadas que implementam projetos educacionais na rede estadual",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      646,
-      647
+      1806,
+      1807
      ],
-     "nota": "Cada formador cobre 8 a 12 escolas, prioridade às piores em IDEB e SAERJ"
+     "nota": "Substituição por projetos da própria rede ou de universidades públicas"
     }
    }
   },
   {
-   "id": "p52",
-   "subtema": "Professores e gestão escolar",
-   "proposta": "Transformar as coordenadorias regionais em estruturas de suporte pedagógico",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      643
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Escola aberta à comunidade",
-   "proposta": "Abrir as escolas estaduais à comunidade fora do horário de aula, com atividades de esporte, cultura e cursos para as famílias",
+   "id": "p75",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Garantir neutralidade político-partidária e critérios técnicos, e não políticos, nas nomeações e incentivos da rede",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      138,
-      259
+      271
      ],
-     "nota": "Complexos de cidadania com cursos rápidos às famílias"
+     "nota": ""
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      682
-     ],
-     "nota": "Abertura em fins de semana e feriados, com prioridade aos CIEPs"
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Escola aberta à comunidade",
-   "proposta": "Criar conselho comunitário para coconstruir a programação de fim de semana das escolas, com monitores universitários por convênio de estágio",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      682
+      643
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p55",
-   "subtema": "Escola aberta à comunidade",
-   "proposta": "Oferecer qualificação profissional noturna nas escolas estaduais",
+   "id": "p76",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Ampliar a autonomia pedagógica das unidades, valorizando os projetos político-pedagógicos com currículo mínimo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1821,
+      1822
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1219
+     ],
+     "nota": "Autonomia administrativa e pedagógica das escolas técnicas"
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Gestão e avaliação da rede",
+   "proposta": "Aprimorar o processo de matrícula, ampliando pontos de apoio à matrícula digital",
    "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1809
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Apoiar a permanência de estudantes de baixa renda e cotistas nas universidades estaduais",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      138
+      264
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1872,
+      1874
+     ],
+     "nota": "Plano estadual de assistência estudantil com aporte orçamentário"
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Modernizar laboratórios, instalações e conectividade das universidades estaduais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1855,
+      1858
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p56",
-   "subtema": "Ensino superior e universidades estaduais",
-   "proposta": "Aproximar os alunos da rede estadual da universidade, com mentoria, tutoria de universitários e iniciação científica",
+   "id": "p80",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Ampliar a oferta de vagas no ensino superior estadual",
    "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      264
+     ],
+     "nota": "Ampliação por meio de vagas de ensino a distância"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1869,
+      1870
+     ],
+     "nota": "Expansão presencial em todas as regiões, com ensino, pesquisa e extensão"
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Aproximar alunos da rede pública da universidade por iniciação científica e mentoria",
+   "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -1187,50 +1784,13 @@
       264
      ],
      "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      675
-     ],
-     "nota": "Universitários como tutores nas regiões de pior desempenho"
     }
    }
   },
   {
-   "id": "p57",
-   "subtema": "Ensino superior e universidades estaduais",
-   "proposta": "Apoiar a permanência de estudantes de baixa renda nas universidades estaduais e modernizar seus laboratórios e conectividade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Ensino superior e universidades estaduais",
-   "proposta": "Ampliar vagas de ensino superior a distância",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Ensino superior e universidades estaduais",
-   "proposta": "Firmar convênios entre as universidades estaduais e as secretarias para pesquisa aplicada a políticas públicas",
+   "id": "p82",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Firmar convênios entre universidades estaduais e secretarias para pesquisa aplicada às políticas públicas",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -1240,20 +1800,86 @@
      ],
      "nota": ""
     },
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      687,
-      1584
+      1806
      ],
-     "nota": "UERJ, UFRJ e UFF em formação docente e soluções de infraestrutura"
+     "nota": "Convênios com universidades públicas para projetos na rede"
     }
    }
   },
   {
-   "id": "p60",
-   "subtema": "Tecnologia e inteligência artificial na escola",
-   "proposta": "Universalizar o letramento em inteligência artificial e competências digitais na rede estadual, desde o ensino fundamental",
+   "id": "p83",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Garantir autonomia financeira às universidades estaduais, com meta de 6% da receita do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1853
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Implantar campi próprios da UERJ na Zona Oeste e em Vaz Lobo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1860,
+      1864,
+      1865,
+      1867
+     ],
+     "nota": "Com polo de inovação e hospital universitário no HEER"
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Criar carreira única e dedicação exclusiva para docentes e servidores das universidades estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1878,
+      1893,
+      1896,
+      1899
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Incluir a educação ambiental e climática como tema interdisciplinar e criar programa de escolas sustentáveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1004,
+      1006
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Universalizar o letramento em inteligência artificial e competências digitais na rede estadual",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -1263,59 +1889,266 @@
       1117,
       1123
      ],
-     "nota": "Meta de universalização até 2030"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p61",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Distribuir as vagas de aprendizagem por região conforme a demanda econômica, destinando o maior contingente à Baixada Fluminense",
-   "n_concorda": 2,
+   "id": "p88",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Acabar com o ensino religioso na rede estadual e ampliar a carga horária de filosofia e sociologia",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1829
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Incluir e valorizar as culturas de matriz africana e indígena no currículo e na formação docente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1831,
+      1913
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Ampliar o currículo para tratar do legado da ditadura militar e da escravidão e formar professores como pesquisadores das histórias locais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2176,
+      2178,
+      2179
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p91",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Criar programa de educação midiática e de combate a crimes cibernéticos nas escolas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      2120,
+      2121,
+      2123
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Integrar as escolas estaduais à produção cultural local, com cineclubes, pontos de cultura, escolas de samba e mestres da cultura popular",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1770,
+      1772,
+      1774,
+      1776,
+      1778,
+      1780
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p93",
+   "subtema": "Currículo, cultura e esporte na escola",
+   "proposta": "Oferecer esporte e cultura no contraturno em territórios vulneráveis, articulados à escola",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762,
+      1784,
+      1787
+     ],
+     "nota": "Uso das instalações de clubes de bairro"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1219,
+      2647
+     ],
+     "nota": "Polos esportivo-pedagógicos em territórios críticos"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      138
+     ],
+     "nota": "Esporte e lazer nos complexos de cidadania"
+    }
+   }
+  },
+  {
+   "id": "p94",
+   "subtema": "Combate à discriminação na escola",
+   "proposta": "Investir em formação continuada e material pedagógico para combater o machismo, a LGBTfobia e o racismo na rede estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1911
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p95",
+   "subtema": "Professores e carreira",
+   "proposta": "Implantar regime de dedicação exclusiva em todos os níveis da FAETEC, com valorização salarial dos docentes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1840
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p96",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Alinhar a oferta de cursos da rede de educação profissional ao Plano Estadual de Desenvolvimento Econômico e Reindustrialização, em diálogo com a comunidade escolar e respeitando o projeto político-pedagógico de cada unidade",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
+      32,
       52
      ],
-     "nota": "Expansão conforme vocações econômicas de cada região, voltada ao primeiro emprego."
+     "nota": "Propõe expandir ensino profissionalizante conforme vocações econômicas de cada região."
     },
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      1114
+      260,
+      384
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Implantar a aprendizagem dual por fases, com governança, convênios obrigatórios com grandes contratantes, mapeamento de vocações regionais e turmas-piloto na Baixada e no Norte Fluminense em 2027",
-   "n_concorda": 2,
-   "posicoes": {
+     "nota": "Cursos técnicos definidos pelas demandas reais do mercado em cada região."
+    },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       661,
+      1201,
       1219
      ],
-     "nota": "Adota modelo dual alemão com FIRJAN e organização da oferta por vocação regional"
+     "nota": "Oferta técnica organizada por vocação econômica regional, com plano de metas e parceria FIRJAN."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1847,
+      1863
+     ],
+     "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1125
+      1096,
+      1098,
+      1100,
+      1115,
+      1121
+     ],
+     "nota": "Propõe casar trilhas técnicas às vocações econômicas regionais e às cadeias produtivas"
+    }
+   }
+  },
+  {
+   "id": "p97",
+   "subtema": "Ensino superior estadual",
+   "proposta": "Fomentar a criação de um polo de inovação conectado à UERJ",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1863
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p63",
-   "subtema": "Tecnologia e inteligência artificial na escola",
-   "proposta": "Lançar trilha de formação em inteligência artificial na rede estadual",
+   "id": "p98",
+   "subtema": "Evasão e recuperação da aprendizagem",
+   "proposta": "Investir em formação continuada de professores e em material pedagógico específico para a Educação de Jovens e Adultos, respeitando a diversidade e as especificidades desse público",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      256
+     ],
+     "nota": "EJA combinada a formação profissional e reforço para quem ficou para trás."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1915,
+      1918
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p99",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Firmar convênios obrigatórios com grandes contratantes de setores estratégicos (siderurgia, automotivo, nuclear e portuário) para reserva de vagas de aprendizagem",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1113
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p100",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Implantar governança do programa de educação profissional em fases, com turmas-piloto de aprendizagem dual na Baixada e no Norte Fluminense e lançamento de trilha de inteligência artificial",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -1328,37 +2161,43 @@
    }
   },
   {
-   "id": "p64",
-   "subtema": "Ensino técnico e profissionalizante",
-   "proposta": "Expandir a rede de centros técnicos e as vagas de aprendizagem para as nove regiões do estado, com integração à plataforma estadual de emprego",
-   "n_concorda": 4,
+   "id": "p101",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Expandir a rede de centros técnicos e as vagas de aprendizagem para todas as nove regiões do estado, com integração à plataforma estadual de emprego",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
+      9,
       32,
       52
      ],
-     "nota": "Propõe expandir ensino técnico em todo o estado conforme vocações regionais e Faetecs."
+     "nota": "Expansão do ensino técnico em tempo integral em todo o estado e retomada das Faetecs."
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      138,
-      207,
-      260
+      260,
+      384
      ],
-     "nota": "Ensino técnico na escola com cursos por demanda regional, parceria com empresas e rede de estágios."
+     "nota": "Ensino técnico regionalizado com parceria de empresas e rede de estágios."
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       661,
-      675,
-      1219,
       1584
      ],
-     "nota": "Centros regionais de laboratórios, polos FAETEC e ampliação do técnico por vocação regional"
+     "nota": "Centros regionais de laboratórios compartilhados e polos da FAETEC em territórios prioritários."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1844,
+      1849
+     ],
+     "nota": "Ampliar FAETEC a todas as regiões e triplicar matrículas do ensino médio técnico"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1370,8 +2209,8 @@
    }
   },
   {
-   "id": "p65",
-   "subtema": "Ensino técnico e profissionalizante",
+   "id": "p102",
+   "subtema": "Ensino técnico e profissional",
    "proposta": "Institucionalizar em lei a aprendizagem dual como política permanente de Estado, com avaliação de resultados por região",
    "n_concorda": 1,
    "posicoes": {
@@ -1385,72 +2224,70 @@
    }
   },
   {
-   "id": "p66",
-   "subtema": "Escolas cívico-militares",
-   "proposta": "Garantir pelo menos uma trilha profissional em cada unidade cívico-militar",
+   "id": "p103",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Coordenar o programa de educação profissional pela Secretaria de Educação em articulação com Trabalho, Ciência e Tecnologia e Desenvolvimento Econômico, com créditos fiscais vinculados à manutenção do emprego",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1181
+      1142
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p67",
+   "id": "p104",
    "subtema": "Escolas cívico-militares",
-   "proposta": "Expandir o modelo cívico-militar a novas regiões e ajustá-lo a partir dos resultados de frequência, aprovação e clima escolar",
-   "n_concorda": 3,
+   "proposta": "Adotar rigor disciplinar, formação cidadã e foco em resultados acadêmicos como base do modelo cívico-militar, com gestão orientada à redução do abandono",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      271
+      271,
+      272
      ],
-     "nota": "Propõe escolas cívico-militares com metas de desempenho por unidade."
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      662
-     ],
-     "nota": "Protocolo de expansão criteriosa das cívico-militares, meta de 25 unidades"
+     "nota": "Militar da reserva pela disciplina, gestão pedagógica civil, metas de desempenho e combate à evasão."
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1187
+      1161
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p68",
+   "id": "p105",
    "subtema": "Escolas cívico-militares",
-   "proposta": "Avaliar o impacto do modelo cívico-militar, institucionalizá-lo e integrar as trilhas técnicas às cadeias produtivas regionais",
-   "n_concorda": 3,
+   "proposta": "Condicionar a expansão das escolas cívico-militares a avaliação de impacto sobre frequência, aprovação e clima escolar",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      260,
-      271
+      1165
      ],
-     "nota": "Metas de desempenho nas cívico-militares e ensino técnico ligado às demandas produtivas regionais."
-    },
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p106",
+   "subtema": "Escolas cívico-militares",
+   "proposta": "Avaliar o impacto e institucionalizar o modelo cívico-militar, integrando as trilhas técnicas às cadeias produtivas regionais",
+   "n_concorda": 2,
+   "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      661,
-      662,
-      1219
+      661
      ],
-     "nota": "Institucionaliza protocolo de expansão e alinha ensino técnico às vocações econômicas regionais"
+     "nota": "Protocolo estadual de expansão cívico-militar com critérios e meta de 25 unidades."
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1462,37 +2299,75 @@
    }
   },
   {
-   "id": "p69",
-   "subtema": "Ensino integral e jornada escolar",
-   "proposta": "Expandir a Escola 18h para novas unidades e regiões, com integração à rede de saúde mental e consolidação dos programas de correção de fluxo",
-   "n_concorda": 4,
+   "id": "p107",
+   "subtema": "Escolas cívico-militares",
+   "proposta": "Financiar as escolas cívico-militares com recursos ordinários da educação e a contrapartida do PROPAG destinada à educação profissional, com articulação das forças de segurança para o componente cívico-militar",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
+    "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      32,
-      52
+      1195
      ],
-     "nota": "Defende ampliação do ensino em tempo integral."
-    },
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p108",
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Implantar a jornada escolar ampliada (Escola 18h) primeiro nas escolas de territórios críticos, com equipes de apoio psicossocial e busca ativa",
+   "n_concorda": 4,
+   "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       138,
-      256,
       272,
       275
      ],
-     "nota": "Tempo integral, contraturno de reforço, apoio psicossocial e busca ativa contra evasão."
+     "nota": "Tempo integral com escola aberta, plantões psicossociais e busca ativa."
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
+      634,
       661,
-      682,
+      682
+     ],
+     "nota": "Ensino integral com equidade territorial e prioridade para Baixada, Norte e Noroeste."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762,
+      1811,
+      1815
+     ],
+     "nota": "CIEPs em tempo integral priorizando áreas vulneráveis, com apoio psicossocial e acompanhamento de infrequentes"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1238
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p109",
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Expandir a Escola 18h a novas unidades e regiões, com integração à rede de saúde mental e consolidação dos programas de correção de fluxo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      661,
       695
      ],
-     "nota": "Expansão do ensino integral com equidade territorial, uso dos CIEPs e saúde na escola"
+     "nota": "Expansão dos itinerários integrais e ciclo de saúde escolar articulado com a SES-RJ."
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1504,15 +2379,53 @@
    }
   },
   {
-   "id": "p70",
-   "subtema": "Ensino integral e jornada escolar",
-   "proposta": "Avaliar o impacto da jornada ampliada sobre frequência, aprendizagem e evasão e institucionalizá-la como política permanente",
-   "n_concorda": 1,
+   "id": "p110",
+   "subtema": "Ensino em tempo integral",
+   "proposta": "Institucionalizar a jornada ampliada com apoio psicossocial como política permanente, após avaliação de impacto sobre frequência, aprendizagem e evasão",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1762,
+      1815
+     ],
+     "nota": "Ensino integral em toda a rede com equipes multidisciplinares de apoio"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       1240
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p111",
+   "subtema": "Saúde mental e proteção na escola",
+   "proposta": "Articular a Escola 18h com a Secretaria de Saúde e a assistência social, usando teleconsulta para levar acolhimento em saúde mental aos 92 municípios",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": "Plantões psicossociais com telessaúde e integração com famílias."
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      687,
+      695
+     ],
+     "nota": "Cada escola vinculada a uma UBS; psicólogos e assistentes sociais em ações de saúde mental."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1248
      ],
      "nota": ""
     }
@@ -1685,6 +2598,10 @@
     "texto": "Ampliar a jornada escolar para até o fim da tarde (Escola 18h), integrando reforço acadêmico, esporte, cultura e apoio psicossocial, de modo a reter o jovem na escola, atacar a distorção idade-série e disputar seu tempo com o tráfico. A saúde mental deixa de ser serviço distante para se tornar parte da rotina escolar, aproximando o acolhimento de quem mais precisa.",
     "pagina": 50
    },
+   "1213": {
+    "texto": "• Jornada ampliada como política de proteção: mais tempo na escola significa menos tempo exposto ao recrutamento criminoso.",
+    "pagina": 50
+   },
    "1214": {
     "texto": "• Integração entre educação e saúde mental, com apoio psicossocial dentro da escola e articulação com a atenção básica.",
     "pagina": 50
@@ -1780,15 +2697,11 @@
    "3461": {
     "texto": "Escolas Solares e PPPs do ArcoMM",
     "pagina": 138
-   },
-   "3481": {
-    "texto": "Escola 18h com Saúde Mental",
-    "pagina": 138
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
-   "632": {
-    "texto": "O Estado priorizará qualificar e ampliar a infraestrutura e os modelos pedagógicos que já existem — CIEPs, itinerários de ensino integral, escolas cívico-militares, ensino técnico — antes de criar novas estruturas, corrigindo a fragmentação e a desigualdade territorial no acesso a eles.",
+   "634": {
+    "texto": "A escola será tratada como ponto de contato permanente do Estado com crianças e adolescentes, para além da instrução — em prevenção à evasão, em inclusão e em saúde —, com prioridade territorial para a Baixada Fluminense, o Norte e o Noroeste Fluminense.",
     "pagina": 22
    },
    "643": {
@@ -1830,6 +2743,10 @@
    "695": {
     "texto": "O Governo do Estado instituirá ciclo anual de dez meses temáticos de prevenção e promoção da saúde integrado ao calendário letivo, com cada escola vinculada formalmente a uma UBS do entorno responsável pela abertura mensal do tema, material técnico desenvolvido em conjunto por SEEDUC e SES-RJ e adaptado por faixa etária, e participação de psicólogos e assistentes sociais da própria rede nas rodas de conversa.",
     "pagina": 26
+   },
+   "1201": {
+    "texto": "A educação técnica e profissionalizante será conduzida por indicadores públicos de desempenho e alinhada à vocação econômica de cada região, seguindo modelos internacionais que associam formação técnica a empregabilidade comprovada.",
+    "pagina": 55
    },
    "1219": {
     "texto": "O Governo do Estado reorganizará a rede sob plano único de metas e indicadores, com ranking público de proficiência, evasão e empregabilidade dos egressos por unidade; ampliará a autonomia administrativa e pedagógica das escolas; adotará currículo modular e empilhável, com certificações intermediárias reconhecidas pelo Catálogo Nacional de Cursos Técnicos; e organizará a oferta por vocação regional, em parceria com a FIRJAN para antecipar a formação de mão de obra exigida pela instalação de novas indústrias, no modelo dual já consolidado na Alemanha.",
@@ -1907,6 +2824,10 @@
    }
   },
   "governador-rj-eduardo-paes-190002543380": {
+   "9": {
+    "texto": "As escolas estaduais, que também já formaram as melhores turmas do país, estão sucateadas. Os alunos abandonam o Ensino Médio cada vez mais cedo. Hoje, o nosso estado amarga a vice-lanterna do Brasil na qualidade do Ensino Médio, e não prepara nossos jovens para ingressarem no mercado de trabalho. Faltam escolas técnicas profissionalizantes e ensino em tempo integral.",
+    "pagina": 2
+   },
    "32": {
     "texto": "Ampliar o ensino técnico profissionalizante em tempo integral, fazer as Faetecs renascerem e recolocar nossa rede estadual de ensino entre as melhores do Brasil, como já foi no passado.",
     "pagina": 4
@@ -1918,6 +2839,392 @@
    "53": {
     "texto": "• Apoiar as prefeituras na educação inclusiva e na assistência às famílias de crianças com autismo.",
     "pagina": 6
+   }
+  },
+  "governador-rj-william-siri-190002536162": {
+   "1004": {
+    "texto": "☼ Garantir a inserção da educação ambiental na política educacional estadual como tema interdisciplinar, presente nos projetos político-pedagógicos das escolas estaduais;",
+    "pagina": 55
+   },
+   "1006": {
+    "texto": "☼ Criar um Programa Estadual de Escolas Sustentáveis, com atividades como criação de horta escolar, compostagem e arborização e educação climática, abordando temas como justiça socioambiental, mudanças climáticas, consumo consciente e biodiversidade, com criação de plataforma digital com esses conteúdos. ●​ Realização de captação de água de chuva, energia solar e monitoramento do consumo de água e energia elétrica, com participação dos alunos; ●​ Atividades para os alunos como monitoramento de rios, plantio de árvores, projetos científicos voltados à sustentabilidade, economia circular, redução de descartáveis, desperdício de alimentos, incentivo à reutilização, visita a Unidades de Conservação da região para aulas ao ar livre.",
+    "pagina": 55
+   },
+   "1203": {
+    "texto": "☼ Reabrir as 147 Escolas do Campo que foram fechadas nos últimos 18 anos e reestruturar as Escolas do Campo existentes que se encontram em condições precárias;",
+    "pagina": 70
+   },
+   "1206": {
+    "texto": "Efetivar nas Escolas do Campo projetos político-pedagógicos contextualizados na realidade da agricultura familiar, com base nos princípios da agroecologia;",
+    "pagina": 70
+   },
+   "1279": {
+    "texto": "☼ Garantir a permanência escolar de estudantes mães, assegurando 180 dias de licença-maternidade para aleitamento exclusivo, conforme recomendação da OMS.",
+    "pagina": 74
+   },
+   "1280": {
+    "texto": "Durante o período, o Estado garantirá: ●​ Regime de Exercícios Domiciliares Assistidos, com acompanhamento pedagógico remoto, material tecnológico e tutoria constante para evitar a defasagem de aprendizado. ●​ Articulação com a Rede de Proteção Social (Conselho Tutelar e CRAS), assegurando o amparo à saúde da mãe e do bebê, além de prioridade na articulação de vagas em creches para garantir o retorno da estudante à sala de aula após a licença.",
+    "pagina": 74
+   },
+   "1289": {
+    "texto": "☼ Efetivar o Programa Nacional de Alimentação Escolar (PNAE) nas escolas da rede estadual, com o compromisso de aquisição de no mínimo 50% de alimentos diretamente da agricultura familiar, com prioridade para a compra de alimentos agroecológicos, garantindo dotação orçamentária própria suficiente para complementar os recursos recebidos da União;",
+    "pagina": 75
+   },
+   "1293": {
+    "texto": "☼ Proteger as escolas dos apelos da publicidade de alimentos não saudáveis e da oferta ostensiva desses produtos para crianças; ●​ Proibir a promoção comercial e publicidade infantil no ambiente escolar, com destaque para atividades de educação alimentar e nutricional, livros didáticos e eventos patrocinados; ●​ Restringir a oferta e comercialização de alimentos ultraprocessados no ambiente escolar, com destaque para cantinas escolares e a venda de alimentos no entorno da escola; ●​ Estabelecer diretrizes para as secretarias estaduais de Saúde e Educação para ofertar atividades de educação alimentar e nutricional, destacando, porém, a proibição de parcerias com indústrias de alimentos e empresas que tenham conflito de interesse com o tema (ou seja, que produzam e comercializem alimentos ultraprocessados ou estejam em desacordo com os princípios e diretrizes consubstanciadas no Guia Alimentar da População",
+    "pagina": 76
+   },
+   "1294": {
+    "texto": "Brasileira); ●​ Desenvolver programa de incentivo e apoio aos comerciantes locais para produção e venda de alimentos adequados e saudáveis nas cantinas e no entorno das escolas; ●​ Instituir regulação sobre o recebimento de doações de alimentos pelas escolas públicas municipais, seja para consumo nas escolas ou para distribuição às famílias dos estudantes, que garanta alimentação adequada e saudável, proteja a saúde e a dignidade dos receptores das doações;",
+    "pagina": 76
+   },
+   "1296": {
+    "texto": "☼ Implementar o Programa Comida na Escola, garantindo café de manhã e jantar de qualidade a todos os alunos matriculados em escolas estaduais e seus responsáveis cadastrados;",
+    "pagina": 76
+   },
+   "1734": {
+    "texto": "☼ Fortalecer o Conselho Estadual de Educação, dando-lhe estrutura e capacidade de avaliação, consulta e deliberação sobre as políticas públicas de educação;",
+    "pagina": 105
+   },
+   "1736": {
+    "texto": "☼ Revisar o Plano Estadual de Educação, garantindo a participação ampla, direta e descentralizada da sociedade civil ao longo de todo o processo de elaboração e implantação, definindo prioridades e metas que deverão ser executadas pelo Governo do Estado;",
+    "pagina": 105
+   },
+   "1738": {
+    "texto": "☼ Garantir processos de gestão democrática em toda a rede estadual de ensino, com a eleição de diretores nas escolas e construção/valorização de conselhos gestores de caráter deliberativo nas comunidades pedagógicas;",
+    "pagina": 105
+   },
+   "1740": {
+    "texto": "☼ Fortalecer os Grêmios Estudantis garantido a participação dos alunos na elaboração dos Projetos Políticos Pedagógicos e na gestão das unidades escolares; ☼ Garantir a autonomia de realização de eventos pelas entidades de classe e pelo movimento estudantil nas unidades escolares estaduais",
+    "pagina": 105
+   },
+   "1744": {
+    "texto": "☼ Garantir o direito à Educação Infantil, reconhecendo as crianças como sujeitos de direitos;",
+    "pagina": 105
+   },
+   "1746": {
+    "texto": "☼ Garantir o direito à alfabetização para todas as crianças até 8 anos de idade;",
+    "pagina": 105
+   },
+   "1748": {
+    "texto": "☼ Garantir o nível de letramento adequado para ingresso de todos os estudantes no ensino médio;",
+    "pagina": 105
+   },
+   "1750": {
+    "texto": "☼ Coordenar e apoiar os municípios fluminenses no investimento, construção e",
+    "pagina": 105
+   },
+   "1753": {
+    "texto": "manutenção de creches locais, visando a redução progressiva das filas de espera em todo o estado",
+    "pagina": 106
+   },
+   "1756": {
+    "texto": "☼ Garantir a manutenção da rede estadual de ensino, impedindo a diminuição de salas de aula e o fechamento de escolas e buscando a recuperação e ampliação do atendimento para toda a rede;",
+    "pagina": 106
+   },
+   "1758": {
+    "texto": "☼ Garantir estrutura adequada nas escolas estaduais, em especial, a definição de uma quantidade máxima de 30 alunos por sala de aula (dentro de um plano que garanta a redução progressiva do número de alunos por sala de aula), a climatização e adequação acústica das salas de aula, a construção (ou reforma) de quadras poliesportivas, a ampliação das bibliotecas e salas de informática, bem como o estabelecimento de metas para que toda a comida servida nas unidades da rede estadual de ensino seja produzida a partir dos princípios da agroecologia (livre de agrotóxicos, adubos químicos e transgênicos);",
+    "pagina": 106
+   },
+   "1760": {
+    "texto": "☼ Instalar em cada unidade da rede estadual de ensino infraestrutura moderna de conectividade (redes sem fio de alta velocidade e fibra óptica), garantindo internet pública, gratuita e segura para a comunidade escolar;",
+    "pagina": 106
+   },
+   "1762": {
+    "texto": "☼ Retomar a política dos CIEPs como concebeu Darcy Ribeiro, com o ensino integral na rede estadual de ensino, incorporando esporte, arte e cultura aos programas de educação, fomentando a construção de pensamento crítico, promoção de cultura e o desenvolvimento social, especialmente em territórios vulneráveis ●​ Colocar em funcionamento 30 CIEPs no modelo integral, no primeiro ano de mandato, privilegiando as áreas mais vulneráveis do nosso estado; ●​ Fornecer uma renda básica para os alunos inscritos no Cadúnico, de forma a mantê-los na escola, combatendo a evasão escolar; ●​ Promover cultura, lazer, esporte, artes, incentivo à leitura, assistência básica médica e odontológica e pelo menos 4 refeições diárias; ●​ Incluir toda comunidade escolar – alunos, pais, funcionários e professores – na construção de programas educativos;",
+    "pagina": 106
+   },
+   "1764": {
+    "texto": "☼ Implementar o Programa Comida na Escola, garantindo café de manhã e jantar de qualidade a todos os alunos matriculados em escolas estaduais e seus responsáveis cadastrados;",
+    "pagina": 106
+   },
+   "1768": {
+    "texto": "☼ Utilizar as escolas estaduais como equipamentos culturais para o desenvolvimento de atividades culturais fora dos horários de aula, visando a integração entre educação e cultura em toda a rede ensino do estado, focado em arte com educação e educação com arte;",
+    "pagina": 107
+   },
+   "1770": {
+    "texto": "☼ Implementar um cineclube popular em cada escola estadual, realizando oficinas de formação e garantindo a infraestrutura e dotação orçamentária necessária para que as escolas possam viabilizar a manutenção dos equipamentos e a aquisição de materiais e insumos;",
+    "pagina": 107
+   },
+   "1772": {
+    "texto": "☼ Criar Pontos de Cultura em todos os municípios fluminenses e articular essa rede com as escolas estaduais de cada região, fortalecendo a relação das escolas com a produção cultural local;",
+    "pagina": 107
+   },
+   "1774": {
+    "texto": "☼ Desenvolver nas escolas estaduais, junto com os pontos de cultura, uma política de ocupação cultural das praças de cada bairro, que serviriam como espaços para promover atividades, apresentações e oficinas gratuitas ao ar livre;",
+    "pagina": 107
+   },
+   "1776": {
+    "texto": "☼ Articular as arenas, areninhas, lonas culturais, anfiteatros e teatros municipais com as escolas estaduais de cada região;",
+    "pagina": 107
+   },
+   "1778": {
+    "texto": "☼ Integrar a rede de ensino estadual com as escolas de samba, associando disciplinas formais (história, música, artes, língua portuguesa, ciências, etc.) ao universo de múltiplo saberes das agremiações e integrando a política de cultura com a política educacional do Estado",
+    "pagina": 107
+   },
+   "1780": {
+    "texto": "☼ Criar uma Rede de Mestres Griôs, em diálogo com as escolas estaduais, para promover a cultura popular e a troca de saberes;",
+    "pagina": 107
+   },
+   "1782": {
+    "texto": "☼ Reformar as quadras poliesportivas das escolas estaduais que se encontram em condições precárias e construir quadras nas escolas que não tem equipamentos esportivos, mas tem espaço físico para comportar quadras;",
+    "pagina": 107
+   },
+   "1784": {
+    "texto": "☼ Garantir às escolas estaduais acesso aos equipamentos e instalações esportivas dos clubes de bairro e integrá-los às estratégias de desenvolvimento da",
+    "pagina": 107
+   },
+   "1787": {
+    "texto": "educação física e do esporte de alto rendimento;​",
+    "pagina": 108
+   },
+   "1792": {
+    "texto": "☼ Oferecer educação especial na perspectiva inclusiva, garantindo a participação efetiva da família no processo educacional ●​ Disponibilizar transporte adequado para o aluno e seu responsável ●​ Priorizar a oferta de vagas em unidades escolares aos alunos com deficiências, transtornos globais do desenvolvimento, e/ou altas habilidades/superdotação ●​ Qualificar professores e funcionários com uma capacitação e formação continuada em serviço ●​ Ampliar o número de salas de recursos multifuncionais nas escolas e garantir atendimento pedagógico nas Classes Hospitalares ●​ Oferecer educação escolar e preparação para o trabalho aos maiores de 17 anos, através de ações interdisciplinares entre as demais secretarias do Governo do Estado;",
+    "pagina": 108
+   },
+   "1797": {
+    "texto": "☼ Fortalecer a política de Educação de Jovens e Adultos da rede estadual de ensino; ●​ Garantir vagas para adultos na rede estadual de ensino; ●​ Integrar a política de Educação de Jovens e Adultos com a de Educação",
+    "pagina": 108
+   },
+   "1798": {
+    "texto": "Infantil e Ensino Fundamental na modalidade regular a fim de facilitar acesso e permanência de mães e pais analfabetos ou com baixa escolaridade cujos filhos são atendidos na rede estadual de ensino; ●​ Fortalecer os Centros de Referência de Educação de Jovens e Adultos; ●​ Planejar a expansão da política a partir da territorialidade dos alunos (considerando a proximidade com local de moradia, de trabalho ou de estudo de seus filhos pequenos, quando for o caso); ●​ Fornecer alimentação para todos os alunos da EJA",
+    "pagina": 108
+   },
+   "1805": {
+    "texto": "☼ Mapear a capacidade de absorção das unidades de ensino da rede estadual, em todas as regiões do estado (Metropolitana, Noroeste Fluminense, Norte",
+    "pagina": 109
+   },
+   "1806": {
+    "texto": "Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde), com o objetivo de identificar as medidas necessárias para garantir uma oferta satisfatória de vagas à população fluminense; ☼ Auditar e verificar a possibilidade de encerramento dos contratos com empresas privadas que implementam projetos educacionais na rede estadual de ensino, dando condições e suporte para que os projetos construídos pelos próprios profissionais da rede ou em convênios com universidades públicas do estado sejam implementados, respeitando sempre a autonomia pedagógica e o Projeto Político",
+    "pagina": 109
+   },
+   "1807": {
+    "texto": "Pedagógico de cada unidade;",
+    "pagina": 109
+   },
+   "1809": {
+    "texto": "☼ Aprimorar o processo de matrícula na rede escolar, ampliando os pontos de apoio à matrícula digital e aproximando-os da população para favorecer a democratização do acesso às unidades escolares;",
+    "pagina": 109
+   },
+   "1811": {
+    "texto": "☼ Organizar uma política de proteção a alunos infrequentes e em risco de abandono escolar por meio de identificação e acompanhamento dos casos;",
+    "pagina": 109
+   },
+   "1813": {
+    "texto": "☼ Garantir o direito de ir e vir para a escola a todos alunos, seja pela gratuidade de transporte, seja por meio de serviço especializado;",
+    "pagina": 109
+   },
+   "1815": {
+    "texto": "☼ Garantir equipes multidisciplinares de apoio psicológico e social a alunos, familiares e profissionais de educação em toda a rede estadual de ensino;",
+    "pagina": 109
+   },
+   "1817": {
+    "texto": "☼ Fortalecer a capacidade do Conselho Tutelar para atuar no apoio às demandas da escola;",
+    "pagina": 109
+   },
+   "1819": {
+    "texto": "☼ Garantir, em parceria com o Conselho Tutelar, uma política de assistência social para atender jovens em risco de abandono escolar ou com problemas familiares e sociais mais graves;",
+    "pagina": 109
+   },
+   "1821": {
+    "texto": "☼ Promover a Autonomia Pedagógica, com a valorização dos Projetos Políticos",
+    "pagina": 109
+   },
+   "1822": {
+    "texto": "Pedagógicos elaborados por cada unidade da rede estadual de ensino, garantindo um currículo mínimo e estimulando a capacidade criativa dos profissionais da rede estadual de ensino;",
+    "pagina": 109
+   },
+   "1826": {
+    "texto": "☼ Iniciar o mandato com um processo de avaliação da rede estadual de ensino centrado na participação da comunidade e na geração de demandas sobre o poder público, buscando identificar as necessidades de cada unidade da rede estadual de ensino na formulação de medidas que visem a superação dos obstáculos ao processo de ensino aprendizagem; ☼ Criar um novo índice de avaliação diagnóstica da rede estadual, o IQE-RJ",
+    "pagina": 110
+   },
+   "1827": {
+    "texto": "(Índice de Qualidade do Ensino da Rede Estadual do Rio de Janeiro) que avalie periodicamente a qualidade do ensino, considerando a qualidade da infraestrutura, a valorização e qualificação dos educadores e o tamanho das turmas, entre outros fatores, alterando a lógica meritocrática dos índices atuais, que punem as escolas que não alcançam bons resultados ●​ Criar indicadores de aprendizagem para todas as áreas do conhecimento;",
+    "pagina": 110
+   },
+   "1829": {
+    "texto": "☼ Garantir a laicidade nas escolas da rede estadual de ensino, com envio de projeto à Assembleia Legislativa do Estado do Rio de Janeiro (ALERJ) para modificar o currículo apontando o fim do ensino religioso na rede e a ampliação da carga horária de filosofia e sociologia;",
+    "pagina": 110
+   },
+   "1831": {
+    "texto": "☼ Promover a inclusão e valorização das culturas de matriz africana e indígena nos conteúdos curriculares das escolas públicas do estado, visando a erradicação de todas as formas de preconceito contra elas e a valorização de sua contribuição à formação da sociedade brasileira;",
+    "pagina": 110
+   },
+   "1836": {
+    "texto": "☼ Regulamentar e implantar a eleição direta para presidência da FAETEC e de todas as unidades da rede;",
+    "pagina": 110
+   },
+   "1838": {
+    "texto": "☼ Garantir vagas em concursos públicos que recomponham os quadros efetivos e reflitam o dimensionamento atual da rede FAETEC, em consonância com o projeto político pedagógico definido democraticamente pelas comunidades escolares de cada unidade da rede;",
+    "pagina": 110
+   },
+   "1840": {
+    "texto": "☼ Implementar uma política de Dedicação Exclusiva em todos os níveis, com efetiva valorização salarial, com vistas a ampliação da qualidade do ensino oferecido pela FAETEC;",
+    "pagina": 110
+   },
+   "1844": {
+    "texto": "☼ Fomentar a criação de cursos que correspondam à demanda contemporânea de cada região ●​ Estimular, em especial, a abertura de vagas em áreas de conhecimento relativas ao desenvolvimento socioambiental, em consonância com a promoção de justiça climática ●​ Incentivar a implementação de cursos que atendam às necessidades atualizadas de cada região em consonância com o novo",
+    "pagina": 111
+   },
+   "1847": {
+    "texto": "Econômico e Reindustrialização, em diálogo com a comunidade escolar e respeitando o projeto político pedagógico de cada unidade",
+    "pagina": 111
+   },
+   "1849": {
+    "texto": "☼ Garantir estrutura (instalações e equipamentos) adequada nas unidades da FAETEC, em especial, a definição de uma quantidade máxima de 30 alunos por sala de aula (dentro de um plano que garanta a redução progressiva do número de alunos por sala de aula), a climatização e adequação acústica das salas de aula, a ampliação das bibliotecas e salas de informática, bem como o estabelecimento de metas para que toda a comida servida nas unidades da rede estadual de ensino seja produzida a partir dos princípios da agroecologia (livre de agrotóxicos, adubos químicos e transgênicos); ☼ Planejar a ampliação da rede FAETEC contemplando os municípios com maior deficiência de Ensino Técnico, fazendo com que chegue a todas as regiões do estado ☼ Promover os investimentos pactuados no PROPAG visando triplicar o número de matrículas no Ensino Médio Técnico estadual através do fortalecimento e ampliação da Faetec e da articulação da Seeduc, abrindo novos cursos nas diferentes regiões de acordo com as vocações regionais",
+    "pagina": 111
+   },
+   "1853": {
+    "texto": "☼ Garantir autonomia financeira para as universidades estaduais, com a ampliação progressiva dos recursos públicos reservados ao ensino, à pesquisa e a programas de extensão, com a meta de atingir 6% da receita do Governo do Estado para as universidades estaduais até o último ano do mandato;",
+    "pagina": 111
+   },
+   "1855": {
+    "texto": "☼ Garantir estrutura (instalações e equipamentos) adequada nas unidades da rede estadual de educação superior, em especial, a climatização e adequação acústica das salas de aula, a ampliação das bibliotecas e salas de informática, bem como o estabelecimento de metas para que toda a comida servida nas universidades",
+    "pagina": 111
+   },
+   "1858": {
+    "texto": "estaduais e Institutos Superiores de Educação seja produzida a partir dos princípios da agroecologia (livre de agrotóxicos, adubos químicos e transgênicos);",
+    "pagina": 112
+   },
+   "1860": {
+    "texto": "☼ Efetivar a implementação do campus próprio da UERJ Zona Oeste, direcionando recursos para a reforma e adequação do prédio, dotação de equipamentos e toda a estrutura necessária para o funcionamento da universidade em sede própria ●​ Incentivar a implementação de cursos que atendam às necessidades atualizadas de cada região em consonância com o novo",
+    "pagina": 112
+   },
+   "1863": {
+    "texto": "Econômico e Reindustrialização, em diálogo com a comunidade escolar e respeitando o projeto político pedagógico de cada unidade ●​ Fomentar a criação de um pólo de inovação que conecte a UERJ",
+    "pagina": 112
+   },
+   "1864": {
+    "texto": "Zona Oeste com o Complexo Industrial da Saúde Fluminense, buscando o desenvolvimento de inovação, através do ensino e da pesquisa ●​ Estimular a criação de cursos voltados para a área da saúde, de forma progressiva e respeitando o diálogo com a comunidade acadêmica e o projeto político pedagógico da universidade, e estabelecer um hospital universitário no Hospital Estadual Eduardo",
+    "pagina": 112
+   },
+   "1865": {
+    "texto": "Rabello (HEER)",
+    "pagina": 112
+   },
+   "1867": {
+    "texto": "☼ Efetivar a implementação do campus próprio da UERJ em Vaz Lobo, direcionando recursos para a reforma e adequação do prédio, dotação de equipamentos e toda a estrutura necessária para o funcionamento dos cursos",
+    "pagina": 112
+   },
+   "1869": {
+    "texto": "☼ Expandir o ensino superior estadual público, garantindo a qualidade da educação, a integração entre ensino, pesquisa e extensão e a ampliação da oferta de vagas em cada região do estado (Metropolitana, Noroeste Fluminense, Norte",
+    "pagina": 112
+   },
+   "1870": {
+    "texto": "Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde);",
+    "pagina": 112
+   },
+   "1872": {
+    "texto": "☼ Implementar uma política de permanência para alunos cotistas;",
+    "pagina": 112
+   },
+   "1874": {
+    "texto": "☼ Elaborar, em conjunto com os conselhos universitários e com as representações estudantis, um plano estadual de assistência estudantil, com aportes orçamentários que assegurem sua implementação em cada instituição;",
+    "pagina": 112
+   },
+   "1878": {
+    "texto": "☼ Implementar a Dedicação Exclusiva com paridade para os aposentados em todas as universidades e institutos superiores;",
+    "pagina": 113
+   },
+   "1880": {
+    "texto": "☼ Garantir vagas em concursos públicos que recomponham os quadros efetivos e reflitam o dimensionamento atual da rede estadual de educação superior, em consonância com o projeto político pedagógico definido democraticamente pelas comunidades acadêmicas de cada unidade da rede;",
+    "pagina": 113
+   },
+   "1885": {
+    "texto": "☼ Atualizar o Plano de Cargos, Carreiras e Remuneração para promover a valorização salarial dos profissionais de educação, tornando-o unificado entre professores e funcionários da rede estadual de ensino, com progressões significativas por formação acadêmica e tempo de serviço;",
+    "pagina": 113
+   },
+   "1887": {
+    "texto": "☼ Garantir o pagamento do piso nacional docente, atualizado anualmente segundo legislação federal e respeitando o Plano de Cargos, Carreiras e Remuneração",
+    "pagina": 113
+   },
+   "1889": {
+    "texto": "☼ Instituir e regulamentar a data-base para todos os profissionais da rede estadual de ensino, garantindo a existência de processos de negociação salarial e de melhorias nas condições de trabalho permanentes, reconhecendo e respeitando as representações sindicais de cada segmento dos profissionais da rede estadual de ensino;",
+    "pagina": 113
+   },
+   "1891": {
+    "texto": "☼ Assegurar um terço de planejamento extraclasse para o professor, e ter o compromisso de impedir que a política da minutagem avance sobre a rede estadual, com o objetivo de garantir que o educador tenha tempo hábil e remunerado para preparar suas aulas e corrigir avaliações, respeitando a sua jornada real de trabalho e combatendo a sobrecarga da profissão.",
+    "pagina": 113
+   },
+   "1893": {
+    "texto": "☼ Elaborar, junto com os servidores das três universidades estaduais e dos Institutos Superiores de Educação, um novo Plano de Carreira para promover a valorização salarial dos profissionais de educação da rede estadual de educação superior e o fim da defasagem, tornando-o unificado entre professores e",
+    "pagina": 113
+   },
+   "1896": {
+    "texto": "funcionários, com progressões significativas por formação acadêmica e tempo de serviço, sem perdas de direitos ou vantagens para qualquer segmento da categoria hoje existente;",
+    "pagina": 114
+   },
+   "1899": {
+    "texto": "Garantir a construção (com participação dos servidores das três universidades estaduais e dos Institutos Superiores de Educação) de uma carreira única para a educação superior no estado, sem perdas de direitos ou vantagens para qualquer segmento da categoria hoje existente;",
+    "pagina": 114
+   },
+   "1901": {
+    "texto": "☼ Incentivar o aprimoramento acadêmico dos professores, por meio de adicional para pós-lato sensu, mestrado e doutorado, bem como a garantia de licenças para estudo;",
+    "pagina": 114
+   },
+   "1903": {
+    "texto": "☼ Extinguir as formas de remuneração variável, transferindo tais recursos para efetiva valorização salarial;",
+    "pagina": 114
+   },
+   "1905": {
+    "texto": "☼ Garantir vagas em concursos públicos que recomponham os quadros efetivos e reflitam o dimensionamento atual da rede estadual de ensino;",
+    "pagina": 114
+   },
+   "1907": {
+    "texto": "☼ Implementar um plano que tenha por objetivo a extinção das terceirizações e contratos precários com a gradativa abertura de concurso público para funcionários da rede estadual de educação;",
+    "pagina": 114
+   },
+   "1909": {
+    "texto": "☼ Desenvolver um programa de formação continuada para os profissionais da educação em parceria com as universidades públicas localizadas no estado;",
+    "pagina": 114
+   },
+   "1911": {
+    "texto": "☼ Investir na formação continuada de professores e em material pedagógico para combater o machismo, a homo/lesbo/bi/transfobia e a discriminação racial na rede estadual de ensino;",
+    "pagina": 114
+   },
+   "1913": {
+    "texto": "☼ Investir na formação continuada de professores e em material pedagógico para promover a valorização e o reconhecimento das comunidades tradicionais e da herança cultural de matriz indígena e africana na rede estadual de ensino;",
+    "pagina": 114
+   },
+   "1915": {
+    "texto": "☼ Investir na formação continuada de professores e em material pedagógico para a Educação de Jovens e Adultos, respeitando e valorizando a diversidade e as",
+    "pagina": 114
+   },
+   "1918": {
+    "texto": "especificidades destes sujeitos, restabelecendo o direito à educação historicamente negado;",
+    "pagina": 115
+   },
+   "1920": {
+    "texto": "☼ Garantir 30 horas de jornada semanal para os funcionários administrativos da rede estadual de ensino;",
+    "pagina": 115
+   },
+   "1922": {
+    "texto": "☼Regulamentar a carreira de Animadores Culturais dentro do quadro da Secretaria de Estado de Educação e realizar concursos públicos para aumentar o corpo de animadores culturais do estado: a meta é garantir 04 animadores por escola, cada um em uma área de formação artística diferente (audiovisual, teatro, dança, arte plásticas).",
+    "pagina": 115
+   },
+   "2120": {
+    "texto": "☼ Criar o Programa Estadual de Educação Midiática e Combate à Crimes",
+    "pagina": 125
+   },
+   "2121": {
+    "texto": "Cibernéticos na rede estadual de ensino, em diálogo com os profissionais e respeitando a autonomia pedagógica de cada unidade. ●​ Com o objetivo de estimular atividades interdisciplinares que fomentem a avaliação crítica do que é publicado nas redes, estimulem o combate às “fake news” e gerem conscientização sobre crimes virtuais como cyberbullying, aliciamento de menores e divulgação de discursos de ódio online ●​ Promover formação continuada aos educadores e profissionais da educação, possibilitando o conhecimento da metodologia, a apreensão e utilização crítica dos conteúdos midiáticos, e a identificação de sinais de risco e violência online",
+    "pagina": 125
+   },
+   "2123": {
+    "texto": "☼ Incentivar e promover experiências e projetos de educomunicação, em parceria com organizações da sociedade civil, direcionados à população local;",
+    "pagina": 125
+   },
+   "2176": {
+    "texto": "☼ Ampliar os currículos escolares, a fim de aprofundar o debate sobre o legado autoritário da ditadura-militar e o legado racista e colonialista da escravidão na rede estadual de ensino;",
+    "pagina": 129
+   },
+   "2178": {
+    "texto": "☼ Investir na formação dos professores das escolas estaduais como pesquisadores das histórias locais de suas regiões (Metropolitana, Noroeste",
+    "pagina": 129
+   },
+   "2179": {
+    "texto": "Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde);",
+    "pagina": 129
    }
   }
  }

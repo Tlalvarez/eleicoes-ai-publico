@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "saude-rj.json",
-  "gerado_em": "2026-09-14T01:20:16Z",
-  "exportado_em": "2026-09-14T02:09:25Z"
+  "gerado_em": "2026-09-14T09:08:47Z",
+  "exportado_em": "2026-09-14T09:58:51Z"
  },
  "candidatos": [
   {
@@ -45,20 +45,27 @@
    "numero": "55",
    "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190017138970",
    "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002543380/RJ"
+  },
+  {
+   "slug": "governador-rj-william-siri-190002536162",
+   "nome": "William Siri",
+   "partido": "PSOL",
+   "numero": "50",
+   "tse": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/doc/190016871149",
+   "foto": "https://divulgacandcontas.tse.jus.br/divulga/rest/arquivo/img/20322002026/190002536162/RJ"
   }
  ],
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Filas e regulação",
-   "proposta": "Reduzir o tempo de espera por consultas, exames e cirurgias no SUS estadual, tratando a fila como prioridade com prazo definido.",
+   "subtema": "Regulação e filas",
+   "proposta": "Reduzir as filas de consultas, exames e cirurgias da rede estadual do SUS",
    "n_concorda": 4,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
-      31,
-      49
+      31
      ],
      "nota": ""
     },
@@ -68,61 +75,69 @@
       206,
       217
      ],
-     "nota": "Fila com prazo e transparência, nas duas pontas: consulta/exame e cirurgia"
+     "nota": "Fila com prazo e transparência"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      914,
+      916,
+      938
+     ],
+     "nota": "Meta de zerar filas e baixar espera para menos de 30 dias"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       531
      ],
-     "nota": "Ataca o descarte de solicitações por guias incompletas"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      914,
-      916
-     ],
-     "nota": "Meta de zerar as principais filas eletivas, não só reduzir"
+     "nota": "Ataca o descarte de guias por preenchimento incorreto"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Filas e regulação",
-   "proposta": "Unificar a regulação estadual em uma central digital única, com informação de leitos e vagas em tempo real e acesso dos municípios.",
-   "n_concorda": 3,
+   "subtema": "Regulação e filas",
+   "proposta": "Criar central estadual única de regulação, integrando leitos e fila ambulatorial com estado e municípios",
+   "n_concorda": 4,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       219
      ],
-     "nota": ""
+     "nota": "Fila ordenada por gravidade"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       521
      ],
-     "nota": "Central de Vagas RJ funde SISREG, SER e regulação de leitos sob uma governança"
+     "nota": "Central de Vagas RJ unificando SISREG e SER, com auditoria do TCE"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1642,
+      1645
+     ],
+     "nota": "Central Única com gestão de leitos pactuada e regulação por linha de cuidado"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       920,
       980,
-      994,
-      995
+      994
      ],
-     "nota": ""
+     "nota": "Regulação de leitos em tempo real"
     }
    }
   },
   {
    "id": "p3",
-   "subtema": "Filas e regulação",
-   "proposta": "Implantar prontuário eletrônico único interoperável entre unidades estaduais e municipais.",
+   "subtema": "Regulação e filas",
+   "proposta": "Implantar prontuário eletrônico único interoperável entre unidades estaduais e municipais",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -138,95 +153,25 @@
      "blocos": [
       527
      ],
-     "nota": "Implantação faseada em 3 anos, com adesão municipal voluntária e integração à RNDS"
+     "nota": "Rollout faseado em três anos, integrado à RNDS"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       976,
-      978,
       984,
+      995,
       998,
       1004
      ],
-     "nota": "Meta de adesão dos 92 municípios até 2030"
+     "nota": "Adesão dos 92 municípios até 2030"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Filas e regulação",
-   "proposta": "Ordenar a fila exclusivamente por critério clínico e gravidade do caso, com dados auditáveis.",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      219
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      521
-     ],
-     "nota": "Médicos reguladores com dados anonimizados, para encerrar a discricionariedade"
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Filas e regulação",
-   "proposta": "Publicar painel com indicadores de desempenho da rede e da espera, acessível à população.",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      217,
-      224
-     ],
-     "nota": "Ranking público de desempenho dos hospitais do interior"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      535
-     ],
-     "nota": "Indicadores mensais por unidade, inclusive infecção hospitalar e metas de OS"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      919,
-      931,
-      996
-     ],
-     "nota": "Painel 'Rio Sem Fila' com meta e percentual de zeramento por especialidade"
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Filas e regulação",
-   "proposta": "Impor às Organizações Sociais e unidades contratadas reporte obrigatório de dados, penalidade automática e auditoria por descumprimento de metas.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      521,
-      535
-     ],
-     "nota": "Auditoria trimestral do TCE e auditoria compulsória após dois trimestres de descumprimento"
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Filas e regulação",
-   "proposta": "Realizar mutirões permanentes de exames e cirurgias eletivas usando centros cirúrgicos em horários ociosos (noite e fins de semana) e contratação da rede privada e filantrópica.",
+   "subtema": "Regulação e filas",
+   "proposta": "Realizar mutirões de exames e cirurgias eletivas, inclusive em horários ociosos e com contratação da rede privada/filantrópica",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -234,7 +179,7 @@
      "blocos": [
       218
      ],
-     "nota": "Circuito rápido reunindo avaliação, exames e cirurgia"
+     "nota": "Centro cirúrgico à noite e fim de semana"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -244,120 +189,54 @@
       942,
       944
      ],
-     "nota": "Remuneração pela tabela SUS e mutirão institucionalizado como política permanente"
+     "nota": "Operação Mutirão Rio paga pela tabela SUS"
     }
    }
   },
   {
-   "id": "p8",
-   "subtema": "Filas e regulação",
-   "proposta": "Fixar metas numéricas de espera: zerar filas de oftalmologia, cirurgia geral e ortopedia e reduzir o tempo médio regulado para menos de 30 dias.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      936,
-      937,
-      938
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Filas e regulação",
-   "proposta": "Criar força-tarefa estadual da fila com sala de situação, metas por especialidade e região e responsabilização de gestores.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      916,
-      930,
-      960
-     ],
-     "nota": "Prioridade inicial ao interior e à Baixada Fluminense"
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Filas e regulação",
-   "proposta": "Corrigir o fluxo de solicitações ambulatoriais com checklists obrigatórios por especialidade, alertas automáticos de prazo, comunicação ativa ao paciente e indicador de taxa de exigência por profissional.",
-   "n_concorda": 1,
+   "id": "p5",
+   "subtema": "Regulação e filas",
+   "proposta": "Publicar painel público com indicadores de fila, espera e desempenho das unidades de saúde",
+   "n_concorda": 4,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      531
+      535
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Descentralizar a atenção especializada, ampliando a oferta de diagnóstico e tratamento nas regiões distantes da capital.",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
+     "nota": "Painel Saúde RJ com auditoria automática de OS que descumprirem metas"
+    },
+    "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      50
+      919,
+      931,
+      996
      ],
-     "nota": ""
+     "nota": "Painel Rio Sem Fila"
     },
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      225,
-      227
+      224
      ],
-     "nota": "Rede organizada por região com pactuação de atendimento e prestação de contas"
+     "nota": "Ranking público de desempenho dos hospitais do interior"
     },
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      548,
-      563
+      1607,
+      1613
      ],
-     "nota": "Padrão de acesso do interior equivalente ao da capital"
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      918,
-      932,
-      939
-     ],
-     "nota": "Meta de ao menos um polo de alta complexidade em cada região desassistida"
+     "nota": "Mapa interativo e transparência submetida ao controle social"
     }
    }
   },
   {
-   "id": "p12",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Recuperar os hospitais e as UPAs estaduais para que funcionem com mais eficiência e agilidade.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
-     "posicao": "concorda",
-     "blocos": [
-      31,
-      49
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Criar centros regionais que reúnam consulta com especialista, exame e diagnóstico no mesmo lugar e no mesmo dia.",
-   "n_concorda": 1,
+   "id": "p6",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Descentralizar a atenção especializada com centros/polos regionais que reúnam consulta, exame e diagnóstico",
+   "n_concorda": 5,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
@@ -366,29 +245,44 @@
       214,
       215
      ],
-     "nota": "CIAME em cada região, para baixa e média complexidade"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Criar hospitais de alta resolução que resolvam avaliação, exame, diagnóstico e cirurgia de alta complexidade numa só ida.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+     "nota": "CIAME em cada região, com carretas de exames"
+    },
+    "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      216
+      918,
+      939
      ],
      "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1645,
+      1653
+     ],
+     "nota": ""
+    },
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": "Ampliar rede e atendimento nas regiões distantes da capital"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      548
+     ],
+     "nota": "Via telemedicina com polos regionais"
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Expandir a rede pública de oncologia no interior, encurtando o tempo entre diagnóstico e início do tratamento.",
+   "id": "p7",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Expandir a rede de oncologia, com novo instituto na capital e polos no interior",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -396,98 +290,114 @@
      "blocos": [
       226
      ],
-     "nota": ""
+     "nota": "Novo Instituto Estadual de Oncologia"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       932,
-      939
+      939,
+      943
      ],
-     "nota": "Institutos em Nova Iguaçu e Nova Friburgo e polo Norte/Noroeste em Campos"
+     "nota": "Institutos em Nova Iguaçu, Nova Friburgo e polo em Campos"
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Criar um novo Instituto Estadual de Oncologia na capital.",
-   "n_concorda": 1,
+   "id": "p8",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Organizar a rede estadual por regiões de saúde, em pactuação com os municípios",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      226
+      225,
+      227
      ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Priorizar o reaproveitamento e a requalificação de unidades hospitalares existentes em vez de construir novas.",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+     "nota": "Prioriza reaproveitar unidades existentes"
+    },
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      225
+      1551,
+      1623
      ],
-     "nota": ""
+     "nota": "Pactuação via COSEMS e prioridade a territórios vulneráveis"
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      563
+      513
      ],
-     "nota": "Equipar hospitais existentes com UTI, sem construção do zero"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p18",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Ampliar leitos de UTI adulto e neonatal nas regiões de maior déficit, com integração obrigatória à regulação estadual e suporte de tele-UTI.",
-   "n_concorda": 1,
+   "id": "p9",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Construir novos hospitais regionais estaduais",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      563
+      1551
      ],
-     "nota": "Prioriza Noroeste, Serrana, Baixada Litorânea e Médio Paraíba"
+     "nota": "Ao menos dois: Noroeste Fluminense e Baixada"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      216
+     ],
+     "nota": "Hospitais de Alta Resolução"
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Condicionar repasses e custeio de hospitais e prestadores ao cumprimento de metas contratuais de produção e prazo.",
+   "id": "p10",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Apoiar e custear hospitais do interior com metas de desempenho por unidade",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
       224,
-      227,
-      229
+      225
      ],
-     "nota": "Metas por unidade e fiscalização do giro de leitos"
+     "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       934
      ],
-     "nota": "Contratualização com rede filantrópica e prestadores privados"
+     "nota": "Contratualização com filantrópicas condicionando repasses a metas"
     }
    }
   },
   {
-   "id": "p20",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Criar transporte sanitário eletivo integrado à regulação estadual para que nenhum paciente perca consulta, exame ou tratamento por falta de condução.",
+   "id": "p11",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Instalar leitos de UTI nas regiões de maior déficit aproveitando hospitais existentes",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      563
+     ],
+     "nota": "UTI adulto e neonatal em quatro regiões, com tele-UTI"
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Criar transporte sanitário eletivo integrado à regulação estadual",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -500,10 +410,163 @@
    }
   },
   {
-   "id": "p21",
-   "subtema": "Rede hospitalar e atenção especializada",
-   "proposta": "Humanizar o atendimento nas unidades públicas de saúde.",
+   "id": "p13",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Qualificar a rede de urgência e emergência (UPAs e SAMU) com protocolos de tempo-resposta e retaguarda de leitos",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      933,
+      943
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1634,
+      1640
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      568
+     ],
+     "nota": "Frota de suporte avançado em municípios acima de 15 mil hab. e protocolo único com Bombeiros"
+    },
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      31,
+      49
+     ],
+     "nota": "Recuperar hospitais e UPAs estaduais"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Ampliar a cobertura da atenção primária/Estratégia Saúde da Família em parceria com os municípios",
+   "n_concorda": 5,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      544
+     ],
+     "nota": "Cofinanciar 1.200 novas equipes com adscrição nominal"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1627,
+      1629,
+      1632
+     ],
+     "nota": "Inclui NASF e Consultórios de Rua"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      940
+     ],
+     "nota": ""
+    },
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": "Via garantia de repasses aos municípios"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      229
+     ],
+     "nota": "Repasse vinculado a metas de saúde"
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Garantir repasses estaduais aos municípios sem critério político-partidário",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      31,
+      50
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      513,
+      579
+     ],
+     "nota": "Projeto de lei com fórmula técnica obrigatória e transição de 4 anos"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1562
+     ],
+     "nota": "Reformular a PPI por critérios epidemiológicos e populacionais"
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Condicionar repasses e financiamento a metas de saúde e prestação de contas",
    "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      227,
+      229
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      934
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Ampliar o financiamento estadual da saúde com aplicação de 12% da receita estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1543
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Contratar mais médicos e especialistas para a rede estadual",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
@@ -516,182 +579,81 @@
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      216
+      229
      ],
-     "nota": "Unidades modernas, digitalizadas e humanizadas"
+     "nota": "Incentivos e concursos direcionados para fixar especialistas no interior"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1571,
+      1579
+     ],
+     "nota": "Concursos públicos e PCCS contra a pejotização"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Instituir política de formação e educação permanente dos profissionais de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1585,
+      1589,
+      1591,
+      1596
+     ],
+     "nota": "Inclui residências e rede de ensino a serviço do SUS"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      246
+     ],
+     "nota": "Capacitação focada em autismo, com apoio às prefeituras"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Combater a precarização do trabalho na saúde estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1575,
+      1577
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Criar hospital universitário estadual a partir de unidade existente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1598
+     ],
+     "nota": "Hospital Municipal Rocha Faria ligado à UERJ Zona Oeste"
     }
    }
   },
   {
    "id": "p22",
-   "subtema": "Atenção primária e cofinanciamento aos municípios",
-   "proposta": "Ampliar a cobertura da atenção primária nos municípios com apoio e cofinanciamento estadual.",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
-     "posicao": "concorda",
-     "blocos": [
-      50
-     ],
-     "nota": ""
-    },
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      229
-     ],
-     "nota": "Repasse vinculado a metas de saúde"
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      544
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      940
-     ],
-     "nota": "Meta de sair do último lugar nacional (57,2%)"
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Atenção primária e cofinanciamento aos municípios",
-   "proposta": "Cofinanciar 1.200 novas equipes de saúde da família em municípios com cobertura abaixo de 60%, com adscrição nominal de cada cidadão a um médico responsável.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      544
-     ],
-     "nota": "Prioridade para Baixada Fluminense e Zona Oeste da capital"
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Atenção primária e cofinanciamento aos municípios",
-   "proposta": "Garantir os repasses estaduais de saúde aos municípios por critério técnico e público, sem condicionamento político-partidário.",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Ampliar a rede de atenção psicossocial com novas unidades de saúde mental",
    "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
-     "posicao": "concorda",
-     "blocos": [
-      31,
-      50
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      579
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Atenção primária e cofinanciamento aos municípios",
-   "proposta": "Enviar à Assembleia Legislativa projeto de lei com fórmula técnica obrigatória de repasse (porte populacional, perfil epidemiológico, complexidade da rede e vulnerabilidade), com transição de quatro anos e publicação anual auditável.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      579
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Estruturar linha estadual de cuidado à dependência química integrada à rede de saúde.",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      292
-     ],
-     "nota": ""
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1041
-     ],
-     "nota": ""
-    },
-    "governador-rj-andre-marinho-190002537524": {
-     "posicao": "concorda",
-     "blocos": [
-      1046,
-      1059,
-      1069
-     ],
-     "nota": "Integrada às ações sociais e às populações em vulnerabilidade extrema"
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Ampliar e credenciar comunidades terapêuticas com vistoria técnica, equipe mínima especializada e regulação de vagas integrada à rede.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      292
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Tratar a dependência química como doença crônica, com abordagem individualizada e adesão ao tratamento predominantemente voluntária.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1041
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Firmar cooperação técnica e científica com a UFMG para apoiar as fases clínicas da vacina Calixcoca, com possível sediamento dos testes no HUPE/UERJ e articulação com a rede de CAPS.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1053
-     ],
-     "nota": "Participação voluntária, maiores de 18 anos, condicionada a resultados de segurança"
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Ampliar a rede física de saúde mental, com implantação de 15 novas unidades priorizando interior e periferia metropolitana.",
-   "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -700,47 +662,123 @@
       1048,
       1062
      ],
-     "nota": ""
+     "nota": "15 novas unidades, priorizando interior e periferia"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1703,
+      1704,
+      1707
+     ],
+     "nota": "CAPS III, CAPSi, CAPS AD, residências terapêuticas e redução de danos"
     }
    }
   },
   {
-   "id": "p31",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Levar teleconsulta e teleatendimento em saúde mental aos 92 municípios.",
-   "n_concorda": 1,
+   "id": "p23",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Instituir política estadual intersetorial de atenção integral a pessoas que usam álcool e outras drogas",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      578,
+      1709
+     ],
+     "nota": ""
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1042,
-      1049,
-      1063
+      1059
+     ],
+     "nota": "Linha de cuidado integrada às ações sociais"
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1041
+     ],
+     "nota": "Dependência química como doença crônica, adesão voluntária"
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Ampliar e credenciar comunidades terapêuticas com vistoria técnica e vagas reguladas pela rede de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      292
+     ],
+     "nota": ""
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "discorda",
+     "blocos": [
+      1700,
+      1701
+     ],
+     "nota": "Propõe extinguir os convênios com comunidades terapêuticas"
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Fechar progressivamente manicômios e espaços asilares, redirecionando recursos à rede substitutiva",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1698
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Matriciar as equipes de atenção básica por profissionais de saúde mental.",
+   "id": "p26",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Garantir psiquiatras plantonistas nas emergências hospitalares",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1710
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Integrar a saúde mental à atenção básica por matriciamento das equipes",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       1044,
-      1050
+      1050,
+      1068
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p33",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Integrar apoio psicossocial às escolas estaduais, com atendimento a estudantes e famílias.",
+   "id": "p28",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Levar apoio psicossocial em saúde mental às escolas estaduais",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -748,31 +786,55 @@
      "blocos": [
       1045,
       1051,
-      1066
+      1066,
+      1069
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p34",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Publicar painel de acompanhamento da fila e da produção assistencial em saúde mental por região.",
+   "id": "p29",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Apoiar pesquisa científica de tratamento farmacológico para dependência de cocaína e crack",
    "n_concorda": 1,
    "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1053
+     ],
+     "nota": "Cooperação com a UFMG para a vacina Calixcoca, testes voluntários"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Criar rede estadual de telemedicina/teleatendimento para levar especialistas ao interior",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      548
+     ],
+     "nota": "Pagamento por consulta realizada; cinco especialidades prioritárias"
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1060
+      1049,
+      1063
      ],
-     "nota": ""
+     "nota": "Teleconsulta em saúde mental nos 92 municípios"
     }
    }
   },
   {
-   "id": "p35",
+   "id": "p31",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Implantar triagem digital que classifique o risco e oriente o usuário ao nível assistencial correto.",
+   "proposta": "Oferecer aplicativo público de triagem e orientação do cidadão ao nível de atendimento adequado",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -780,7 +842,7 @@
      "blocos": [
       558
      ],
-     "nota": ""
+     "nota": "RJ Saúde App com agendamento e versão offline"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -788,45 +850,14 @@
       985,
       1000
      ],
-     "nota": "Triagem com IA em 100% das unidades estaduais de urgência"
+     "nota": "Triagem inteligente com IA"
     }
    }
   },
   {
-   "id": "p36",
+   "id": "p32",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Oferecer aplicativo gratuito ao cidadão com agendamento na unidade de referência, acompanhamento do status da solicitação e versão offline.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      531,
-      558
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Saúde digital e telemedicina",
-   "proposta": "Criar rede estadual de telemedicina com especialistas atendendo por videoconferência pacientes encaminhados pela atenção básica do interior, com pagamento por consulta realizada.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      548
-     ],
-     "nota": "Prioridade para cardiologia, neurologia, endocrinologia, psiquiatria e dermatologia"
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Saúde digital e telemedicina",
-   "proposta": "Incorporar inteligência artificial ao apoio ao diagnóstico e à gestão da rede, subordinada à decisão do profissional de saúde.",
+   "proposta": "Usar inteligência artificial como apoio ao diagnóstico nas unidades do interior e da atenção básica",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -842,55 +873,64 @@
    }
   },
   {
-   "id": "p39",
+   "id": "p33",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Garantir governança de dados, rastreabilidade de acesso e conformidade com a LGPD nos sistemas de saúde.",
+   "proposta": "Criar sistema estadual de informação em saúde integrando bases de dados com municípios e União",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      527
+      1607,
+      1609
      ],
      "nota": ""
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      981,
-      1004,
-      1015
+      978,
+      996
      ],
-     "nota": "Comitê de governança de dados na SES"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p40",
+   "id": "p34",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Fortalecer a rede de atenção à gestação de risco, com leitos de referência e retaguarda materno-infantil.",
-   "n_concorda": 2,
+   "proposta": "Fortalecer a atenção materno-infantil com pré-natal qualificado e atendimento humanizado ao parto",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      234
-     ],
-     "nota": "Nova maternidade de referência na região metropolitana mais desassistida"
-    },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
       571
      ],
-     "nota": "Pré-natal universal com estratificação de risco, transporte materno-fetal e UTIs neonatais"
+     "nota": "Programa Mãe Fluminense: pré-natal universal, transporte materno-fetal e UTIs neonatais"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1666,
+      1668,
+      1670
+     ],
+     "nota": "Combate à violência obstétrica e estímulo ao parto normal"
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      234
+     ],
+     "nota": "Nova maternidade de referência para gestação de risco e leitos no interior"
     }
    }
   },
   {
-   "id": "p41",
+   "id": "p35",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Criar Centros de Saúde da Mulher em todas as regiões, com rastreamento de câncer de mama e colo de útero, ginecologia especializada e acolhimento a vítimas de violência.",
+   "proposta": "Criar centros de saúde da mulher em todas as regiões com rastreamento de câncer de mama e colo de útero",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -899,14 +939,14 @@
       235,
       236
      ],
-     "nota": ""
+     "nota": "Inclui carretas da mulher com mamografia no interior"
     }
    }
   },
   {
-   "id": "p42",
+   "id": "p36",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Executar programa de vacinação e rastreamento ativo contra o HPV, com meta de erradicar o câncer de colo de útero no estado.",
+   "proposta": "Implantar programa de vacinação e rastreamento contra o HPV com meta de erradicar o câncer de colo de útero",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -919,16 +959,122 @@
    }
   },
   {
-   "id": "p43",
+   "id": "p37",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Levar exames e diagnóstico aos municípios do interior por meio de unidades móveis (carretas).",
+   "proposta": "Garantir informação e acompanhamento para aborto legal em todos os hospitais públicos do estado",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      215,
-      235
+      1664
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p38",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Garantir atuação de doulas em todas as maternidades e estimular casas de parto",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1672,
+      1674,
+      1676
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Ampliar bancos de leite humano e ações de promoção da amamentação na rede pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1272,
+      1277,
+      1284
+     ],
+     "nota": "Inclui Hospital Amigo da Criança e salas de apoio à amamentação"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Fortalecer a fiscalização da NBCAL, com canal de denúncias de violações",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1274,
+      1275
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Rever e auditar contratos de terceirização e gestão privada (OS, OSCIP, PPP) na saúde estadual",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1553,
+      1556,
+      1571
+     ],
+     "nota": ""
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      535
+     ],
+     "nota": "Auditoria compulsória de OS que descumprirem metas, não revisão geral"
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Encerrar progressivamente a gestão privada e terceirizada na saúde, com transição para gestão pública direta e estatização da Fundação Saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1558,
+      1560,
+      1571
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Criar laboratórios públicos de patologia e análises clínicas nos hospitais, substituindo serviços terceirizados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1647,
+      1649
      ],
      "nota": ""
     }
@@ -936,14 +1082,16 @@
   },
   {
    "id": "p44",
-   "subtema": "Urgência e emergência",
-   "proposta": "Ampliar e regionalizar o SAMU, com suporte avançado de vida em municípios acima de 15 mil habitantes, bases regionais e protocolo único com o Corpo de Bombeiros.",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Democratizar a gestão do SUS estadual com conselhos gestores paritários nas unidades e fortalecimento do Conselho Estadual de Saúde",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      568
+      1545,
+      1547,
+      1603
      ],
      "nota": ""
     }
@@ -951,15 +1099,23 @@
   },
   {
    "id": "p45",
-   "subtema": "Urgência e emergência",
-   "proposta": "Qualificar a rede de urgência e emergência com protocolos de tempo-resposta e retaguarda de leitos.",
-   "n_concorda": 1,
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Humanizar o atendimento nas unidades de saúde do estado",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rj-andre-marinho-190002537524": {
+    "governador-rj-eduardo-paes-190002543380": {
      "posicao": "concorda",
      "blocos": [
-      933,
-      943
+      31,
+      49,
+      51
+     ],
+     "nota": ""
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      216
      ],
      "nota": ""
     }
@@ -967,8 +1123,8 @@
   },
   {
    "id": "p46",
-   "subtema": "Profissionais de saúde",
-   "proposta": "Contratar mais médicos e especialistas para a rede estadual.",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Garantir o fornecimento e a distribuição gratuita de medicamentos em todo o estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
@@ -979,50 +1135,20 @@
      ],
      "nota": ""
     },
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      229
+      1651,
+      1722
      ],
-     "nota": ""
+     "nota": "Retomada do controle público sobre compra e distribuição"
     }
    }
   },
   {
    "id": "p47",
-   "subtema": "Profissionais de saúde",
-   "proposta": "Atrair e fixar especialistas no interior com incentivos e concursos direcionados.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      229
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Medicamentos e insumos",
-   "proposta": "Assegurar o fornecimento e a distribuição de medicamentos em todo o estado.",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rj-eduardo-paes-190002543380": {
-     "posicao": "concorda",
-     "blocos": [
-      31,
-      51
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Medicamentos e insumos",
-   "proposta": "Dar preferência, nos editais da Secretaria de Saúde, a fornecedores que produzam radioisótopos localmente e criar protocolo logístico rápido para transporte de material radioativo.",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Estimular a produção local de radiofármacos e criar logística especial para transporte de material radioativo",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -1030,20 +1156,52 @@
      "blocos": [
       1417
      ],
-     "nota": "Corredor Azul entre o Galeão e o Parque Tecnológico da UFRJ, contra a falta de radiofármacos"
+     "nota": "Preferência em editais da SES e Corredor Azul"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Qualificar as ações de vigilância epidemiológica, sanitária e ambiental com plano estadual de controle de endemias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1715,
+      1718
+     ],
+     "nota": "Inclui farmacovigilância e controle social das inspeções"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Restringir publicidade, oferta e comercialização de alimentos ultraprocessados em órgãos públicos estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1229,
+      1232
+     ],
+     "nota": ""
     }
    }
   },
   {
    "id": "p50",
-   "subtema": "Atenção à pessoa com autismo",
-   "proposta": "Criar polos regionais de alta complexidade reunindo diagnóstico, intervenções terapêuticas e orientação às famílias de pessoas com autismo.",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Fazer cumprir a legislação sobre propaganda de bebidas alcoólicas, tabaco e medicamentos",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      244
+      1724
      ],
      "nota": ""
     }
@@ -1051,14 +1209,15 @@
   },
   {
    "id": "p51",
-   "subtema": "Atenção à pessoa com autismo",
-   "proposta": "Levar avaliação especializada para diagnóstico do autismo aos municípios do interior por carretas itinerantes.",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Criar rede estadual de ensino, pesquisa e inovação em biotecnologia e vigilância em saúde",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      245
+      1566,
+      1569
      ],
      "nota": ""
     }
@@ -1066,29 +1225,35 @@
   },
   {
    "id": "p52",
-   "subtema": "Atenção à pessoa com autismo",
-   "proposta": "Capacitar profissionais de saúde e de educação, incluindo professores e monitores escolares, para o atendimento de pessoas com autismo.",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Estruturar rede estadual de diagnóstico e cuidado à pessoa com transtorno do espectro autista, com coordenação estadual junto aos municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
      "posicao": "concorda",
      "blocos": [
-      246
+      244,
+      245,
+      248
      ],
-     "nota": ""
+     "nota": "Polos regionais de alta complexidade e carretas de diagnóstico"
     }
    }
   },
   {
    "id": "p53",
-   "subtema": "Atenção à pessoa com autismo",
-   "proposta": "Assumir, no nível estadual, a coordenação da rede de atenção ao autismo junto aos municípios, garantindo atendimento em todo o território.",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Implementar no estado políticas de saúde integral para população negra, LGBT e pessoas privadas de liberdade",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
+    "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
      "blocos": [
-      248
+      1681,
+      1684,
+      1686,
+      1690,
+      1692
      ],
      "nota": ""
     }
@@ -1096,8 +1261,470 @@
   },
   {
    "id": "p54",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Garantir o processo transexualizador na rede estadual, com reabertura de filas cirúrgicas e capacitação de profissionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1657,
+      1658,
+      1661,
+      1662
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Criar programas de acesso à saúde para populações de difícil acesso, comunidades tradicionais, quilombolas e indígenas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1625
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Fortalecer serviços de apoio ao idoso, como atenção e internação domiciliar e casas de convivência",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1655
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Fortalecer e ampliar a rede de Centros de Referência em Saúde do Trabalhador (CEREST)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1678,
+      1679
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Estruturar acolhimento em saúde a vítimas de violência",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1694
+     ],
+     "nota": ""
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      235
+     ],
+     "nota": "Acolhimento à mulher vítima de violência nos Centros de Saúde da Mulher"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Desenvolver estratégias de articulação técnica e planejamento territorial da saúde com outras secretarias (Cultura, Trabalho e Renda, Educação, Direitos Humanos, Ambiente, Defesa Civil)",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1549
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1045,
+      1051,
+      1079
+     ],
+     "nota": "Prevê articulação intersetorial da saúde com educação, juventude e assistência social."
+    }
+   }
+  },
+  {
+   "id": "p60",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Pactuar a adesão dos 92 municípios ao prontuário eletrônico unificado, com apoio técnico do Estado às redes de menor capacidade.",
+   "proposta": "Reforçar os setores de documentação, informação, comunicação, informática (com uso de softwares livres) e educação em saúde nas unidades de saúde",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1594
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      984,
+      996,
+      1015
+     ],
+     "nota": "Propõe reforço de informação/informática (prontuário unificado, painéis), sem citar software livre."
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Incluir o direito à saúde e as formas de participação e controle social do SUS na grade curricular da rede estadual de ensino",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1594
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Desenvolver, junto ao Conselho Estadual de Saúde, políticas editoriais de informação e comunicação em saúde, com disseminação ampla de dados e avaliação de impacto submetida ao controle social",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1611
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Garantir políticas de saúde voltadas a todos os ciclos de vida",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1621
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Atenção especializada e regionalização",
+   "proposta": "Construir unidades de atendimento a partir das necessidades de saúde dos territórios, abandonando modelos padronizados pré-fabricados de serviços",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      215,
+      225,
+      227
+     ],
+     "nota": "Rede organizada por região, com pactuação e aproveitamento de estruturas existentes."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1636
+     ],
+     "nota": ""
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      918,
+      932,
+      944,
+      1070
+     ],
+     "nota": "Descentralização e polos regionais dimensionados pela demanda real de cada região."
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Organizar sistema de monitoramento, avaliação e supervisão da Estratégia Saúde da Família e da Atenção Básica",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": "Garante repasses para fortalecer a atenção primária nos municípios."
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      227,
+      229
+     ],
+     "nota": "Qualificação da atenção básica com repasse vinculado a metas e prestação de contas."
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1638
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Atenção a públicos específicos",
+   "proposta": "Promover cursos de formação sobre especificidades das minorias étnico-raciais para servidores e gestores da saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1688
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Incentivar o uso racional de medicamentos e a alimentação saudável e segura",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1720
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Regulação e filas",
+   "proposta": "Criar força-tarefa estadual da fila com sala de situação e metas por especialidade e por região, priorizando o interior e a Baixada Fluminense",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-eduardo-paes-190002543380": {
+     "posicao": "concorda",
+     "blocos": [
+      31,
+      49,
+      50
+     ],
+     "nota": "Propõe reduzir filas e ampliar atendimento em regiões distantes da capital."
+    },
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      206,
+      217,
+      218,
+      219
+     ],
+     "nota": "Mutirões permanentes, regulação unificada e fila com prazo, com foco no interior."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      930,
+      942
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Regulação e filas",
+   "proposta": "Zerar as filas de exames e cirurgias eletivas de oftalmologia, cirurgia geral e ortopedia no primeiro ano de operação plena do mutirão, começando pelo interior e pela Baixada Fluminense",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      216,
+      218
+     ],
+     "nota": "Mutirão permanente das eletivas que mais travam, inclusive com rede privada."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      936
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p70",
+   "subtema": "Regulação e filas",
+   "proposta": "Reduzir em pelo menos 60% a fila estadual de oftalmologia, com espera máxima de 30 dias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      937
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p71",
+   "subtema": "Regulação e filas",
+   "proposta": "Lançar painel público \"Rio Sem Fila\" com acompanhamento das filas de exames, consultas e cirurgias",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      217,
+      224
+     ],
+     "nota": "Fila com prazo e transparência; ranking público de desempenho."
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      462,
+      531,
+      535
+     ],
+     "nota": "Painel Saúde RJ com tempo médio de espera e status da fila ao paciente no app"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1611,
+      1642
+     ],
+     "nota": "Defende transparência das filas de espera e critérios de priorização na regulação."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      942
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p72",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Adotar governança de resultados na Secretaria de Estado de Saúde, com metas públicas por especialidade, contratualização por metas e responsabilização de gestores vinculada à entrega medida e divulgada",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      224,
+      227,
+      229
+     ],
+     "nota": "Metas por unidade, repasse condicionado a metas e prestação de contas."
+    },
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      521,
+      535
+     ],
+     "nota": "Metas contratuais públicas, auditoria automática e penalidade por descumprimento"
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      960
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Incorporar inteligência artificial à triagem e à gestão de leitos na rede estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      976
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Garantir proteção de dados e privacidade do paciente por padrão, em conformidade com a LGPD, com governança sobre acesso e auditoria nos sistemas de saúde",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      527
+     ],
+     "nota": "Prontuário único com rastreabilidade de acesso e conformidade com a LGPD"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1607
+     ],
+     "nota": "Acesso às informações resguardando confidencialidade prevista em lei."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      981
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Pactuar a adesão dos 92 municípios ao prontuário eletrônico unificado, com apoio técnico do Estado às redes de menor capacidade",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -1106,15 +1733,15 @@
       206,
       219
      ],
-     "nota": "Propõe prontuário eletrônico único aberto aos municípios na regulação estadual."
+     "nota": "Prontuário eletrônico único aberto aos municípios."
     },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      510,
+      460,
       527
      ],
-     "nota": "Prontuário único com rollout faseado e adesão da rede municipal no terceiro ano."
+     "nota": "Rollout faseado com adesão da rede municipal e interoperabilidade com RNDS"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1126,19 +1753,35 @@
    }
   },
   {
-   "id": "p55",
+   "id": "p76",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Cumprir cronograma faseado da saúde digital: até 2028-2029 expandir o prontuário unificado aos 92 municípios, colocar em operação a triagem inteligente e a central de regulação de leitos em tempo real e implantar o apoio ao diagnóstico por inteligência artificial no interior.",
-   "n_concorda": 2,
+   "proposta": "Implantar central de regulação de leitos em tempo real e triagem inteligente, com apoio ao diagnóstico por IA no interior",
+   "n_concorda": 4,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      206,
+      219,
+      225
+     ],
+     "nota": "Central estadual de regulação digital e acompanhamento em tempo real do giro de leitos."
+    },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
-      521,
-      527,
-      558
+      459,
+      521
      ],
-     "nota": "Prontuário faseado, triagem digital via app e Central de Vagas com reporte em tempo real."
+     "nota": "Central de Vagas RJ com reporte obrigatório de ocupação em tempo real"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1642,
+      1645
+     ],
+     "nota": "Central Única de Regulação de leitos, ambulatorial e diagnóstica, com gestão pactuada."
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1150,10 +1793,10 @@
    }
   },
   {
-   "id": "p56",
+   "id": "p77",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Consolidar até 2030 a plataforma estadual de saúde digital, com uso de analítica preditiva para planejamento da rede e publicação contínua de indicadores e avaliação de impacto sobre filas, desperdício e desfechos clínicos.",
-   "n_concorda": 2,
+   "proposta": "Consolidar plataforma estadual de saúde digital com analítica preditiva para planejamento da rede e publicação contínua de indicadores e avaliação de impacto",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
@@ -1161,7 +1804,16 @@
       462,
       535
      ],
-     "nota": "Painel Saúde RJ com indicadores mensais públicos por unidade."
+     "nota": "Plataforma pública com indicadores mensais por unidade"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1566,
+      1607,
+      1611
+     ],
+     "nota": "Sistema Estadual de Informação do SUS, integração de bases e divulgação de indicadores."
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1173,24 +1825,24 @@
    }
   },
   {
-   "id": "p57",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Adotar a meta de espera zero em saúde mental, enfrentando a fila atual de até dois anos com ampliação combinada de oferta presencial e remota.",
+   "id": "p78",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Instituir comitê de governança de dados em saúde responsável por padrões de interoperabilidade, segurança e conformidade com a LGPD, com parcerias tecnológicas e transferência de conhecimento ao servidor",
    "n_concorda": 1,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
-      1043
+      1015
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p58",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Realizar em 2027 diagnóstico regional da demanda reprimida e da oferta em saúde mental, com implantação do teleatendimento, início da instalação das novas unidades e estruturação do matriciamento na atenção básica.",
+   "id": "p79",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Implantar teleatendimento em saúde mental nos 92 municípios do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
@@ -1198,11 +1850,13 @@
      "blocos": [
       548
      ],
-     "nota": "Telemedicina estadual com prioridade para psiquiatria, acionada pela atenção básica."
+     "nota": "Rede estadual de telemedicina com prioridade para psiquiatria"
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
+      1040,
+      1042,
       1068
      ],
      "nota": ""
@@ -1210,11 +1864,58 @@
    }
   },
   {
-   "id": "p59",
-   "subtema": "Saúde mental e dependência química",
-   "proposta": "Atribuir à Secretaria de Estado de Saúde a coordenação da política de saúde mental, articulada com educação e assistência social, com metas públicas e painel de acompanhamento, e investimento estimado de R$ 400 a 600 milhões em quatro anos financiado por recursos do SUS, estaduais e contrapartida do PROPAG.",
+   "id": "p80",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Criar painel público de acompanhamento da fila e da produção assistencial em saúde mental, por região",
    "n_concorda": 1,
    "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1060
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Construir 15 novas unidades de saúde mental no estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1703,
+      1704
+     ],
+     "nota": "Ampliar rede substitutiva: CAPS III, CAPSi, CAPS AD, residências terapêuticas."
+    },
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      1069
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Investir cerca de R$ 400 a 600 milhões em quatro anos na rede estadual de saúde mental, com recursos do SUS, estaduais e contrapartida do PROPAG",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1543,
+      1698,
+      1700
+     ],
+     "nota": "Reorienta recursos para a rede de saúde mental e amplia o gasto em saúde."
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
@@ -1395,20 +2096,12 @@
     "texto": "• Acesso universal e próximo: rede de cuidado presente em todas as regiões, com o teleatendimento superando a barreira da distância no interior.",
     "pagina": 43
    },
-   "1043": {
-    "texto": "• Espera zero como meta: enfrentar a fila de até dois anos com ampliação combinada de oferta presencial e remota.",
-    "pagina": 43
-   },
    "1044": {
     "texto": "• Integração à atenção primária, porta de entrada preferencial, e matriciamento das equipes de saúde da família.",
     "pagina": 43
    },
    "1045": {
     "texto": "• Saúde mental na escola, com apoio psicossocial ao estudante e à família, articulada às políticas de juventude e à busca ativa.",
-    "pagina": 43
-   },
-   "1046": {
-    "texto": "• Cuidado em rede e continuidade, evitando a interrupção do tratamento e a peregrinação do usuário.",
     "pagina": 43
    },
    "1048": {
@@ -1455,19 +2148,31 @@
     "texto": "Fase 2 — 2028–2029: conclusão das 15 novas unidades; expansão do teleatendimento aos 92 municípios; integração plena da saúde mental às escolas e às políticas de juventude; consolidação das linhas de cuidado para dependência química e vulnerabilidade extrema.",
     "pagina": 44
    },
+   "1070": {
+    "texto": "Fase 3 — 2030: consolidação da rede estadual de saúde mental com espera reduzida e acesso descentralizado; avaliação de desfechos e ajuste da oferta conforme a demanda real de cada região.",
+    "pagina": 44
+   },
    "1079": {
     "texto": "A coordenação caberá à Secretaria de Estado de Saúde, em articulação com a educação e a assistência social, sob governança de resultados com metas públicas e acompanhamento por painel. O investimento estimado é da ordem de R$ 400 a 600 milhões em quatro anos (meta do plano — a confirmar na estimação técnica), financiado pela combinação de recursos do SUS destinados à saúde mental — incluindo os aportes federais para novos serviços —, recursos estaduais e a contrapartida de investimento prevista no PROPAG. O desenho que combina unidades físicas com teleatendimento amplia o alcance a um custo marginal menor, permitindo cobrir os 92 municípios sem depender exclusivamente de nova infraestrutura em cada localidade.",
     "pagina": 44
    }
   },
   "governador-rj-coronel-busnello-190002544120": {
+   "459": {
+    "texto": "CENTRAL DE VAGAS RJ",
+    "pagina": 15
+   },
+   "460": {
+    "texto": "PRONTUÁRIO UNIFICADO RJ",
+    "pagina": 15
+   },
    "462": {
     "texto": "PAINEL SAÚDE RJ",
     "pagina": 15
    },
-   "510": {
-    "texto": "A integração de dados — prontuário único, regulação unificada, telemedicina — será tratada como infraestrutura básica da política de saúde, condição prévia para qualquer ganho de eficiência ou de equidade territorial.",
-    "pagina": 16
+   "513": {
+    "texto": "O interior fluminense receberá padrão de acesso equivalente ao da capital em leitos críticos, cobertura de urgência e especialistas, e os repasses estaduais aos municípios seguirão critério técnico e público, e não negociação política caso a caso.",
+    "pagina": 17
    },
    "521": {
     "texto": "O Governo do Estado criará a Central de Vagas RJ, unificando sob uma só governança técnica a regulação de leitos hospitalares e a fila ambulatorial hoje dividida entre SISREG e SER, com médicos reguladores operando por critério clínico e dados anonimizados, obrigação contratual de reporte em tempo real por Organizações Sociais e unidades da Fundação Saúde, penalidade automática em caso de descumprimento e auditoria trimestral do Tribunal de Contas do Estado.",
@@ -1632,6 +2337,348 @@
    "51": {
     "texto": "• Contratar mais médicos e especialistas e oferecer um atendimento humanizado para as pessoas, além de assegurar o fornecimento e distribuição de remédios em todo o estado.",
     "pagina": 6
+   }
+  },
+  "governador-rj-william-siri-190002536162": {
+   "578": {
+    "texto": "☼ Colaborar com a Secretaria de Estado de Saúde na implementação de uma Política Estadual de atenção integral a pessoas que usam álcool e outras drogas;",
+    "pagina": 29
+   },
+   "1229": {
+    "texto": "☼ Proteger ambientes institucionais e ambientes públicos da publicidade e oferta ostensiva de alimentos não saudáveis; ●​ Proibir a publicidade, oferta e comercialização de alimentos ultraprocessados nos órgãos e instituições públicas estaduais visando a",
+    "pagina": 71
+   },
+   "1232": {
+    "texto": "proteção da saúde dos seus trabalhadores; ●​ Incentivar os municípios fluminenses a restringir a publicidade de alimentos não saudáveis em locais públicos e no transporte público (como outdoors, pontos de ônibus, etc); ●​ Restringir o patrocínio por empresas de alimentos ultraprocessados de eventos promovidos ou apoiados pelo poder público;▪ Incentivar os municípios fluminenses a estabelecer altura mínima das prateleiras de exposição de alimentos ultraprocessados em supermercados para proteger as crianças da oferta ostensiva desses produtos nos pontos de venda; ●​ Instituir regulação sobre o recebimento e destinação de doações de alimentos pelas instituições públicas estaduais, que garanta alimentação adequada e saudável, proteja a saúde e a dignidade dos receptores das doações;",
+    "pagina": 72
+   },
+   "1272": {
+    "texto": "☼ Promover, proteger e apoiar a amamentação e a alimentação complementar saudável;",
+    "pagina": 74
+   },
+   "1274": {
+    "texto": "☼ Fortalecer a implementação da Norma Brasileira de Comercialização de Alimentos para Lactentes e Crianças de 1a Infância, Bicos, Chupetas e Mamadeiras (NBCAL) e sua regulamentação (Lei 11.265/2006 e Decreto nº",
+    "pagina": 74
+   },
+   "1275": {
+    "texto": "9.579/2018): ●​ Incentivar os municípios fluminenses a fortalecer as ações de fiscalização da NBCAL pela vigilância sanitária municipal; ●​ Criar canal de denúncias exclusivo para violações à NBCAL;",
+    "pagina": 74
+   },
+   "1277": {
+    "texto": "☼ Apoiar e proteger a família trabalhadora que amamenta; ●​ Incentivar a adesão ao programa \"empresa cidadã\" pelo setor privado (por exemplo, estabelecendo a adoção desse modelo como um dos critérios para a contratação de empresas terceirizadas);",
+    "pagina": 74
+   },
+   "1284": {
+    "texto": "☼ Implementar e fortalecer redes e estruturas de promoção e apoio à amamentação e a alimentação saudável nos primeiros anos de vida; ●​ Ampliar, junto com as prefeituras de municípios fluminenses a rede de postos de coleta e de Bancos de Leite Humano localizados no estado; ●​ Fortalecer e ampliar a Iniciativa Hospital Amigo da Criança na rede pública estadual de atenção à saúde, além de incentivar a implementação dessa iniciativa nos hospitais municipais, federais e privados do estado; ●​ Implantar salas de apoio à amamentação nas repartições públicas estaduais e incentivar a criação das mesmas nas esferas municipais, federais e na iniciativa privada ●​ Incentivar a alimentação saudável nos primeiros anos de vida junto às famílias e comunidades, com base nas diretrizes do Guia Alimentar para Crianças Brasileiras Menores de 2 Anos e em políticas e programas como a Estratégia Amamenta e Alimenta Brasil; ●​ Incentivar os municípios fluminenses a qualificar a rede pública de educação infantil para que as unidades sejam facilitadoras da amamentação e promovam a alimentação saudável, com base nas diretrizes do Guia Alimentar para Crianças Brasileiras Menores de 2 Anos; ●​ Incentivar os municípios fluminenses a promover os benefícios da amamentação e apoiar as mães a manter essa prática, estimulando sua acolhida na creche para amamentar e o recebimento do leite materno para ser oferecido à criança na unidade educacional; ●​ Incentivar os municípios fluminenses a garantir a oferta variada de alimentos in natura e minimamente processados e a não oferta de alimentos ultraprocessados nas creches e centros de educação infantil; ●​ Incentivar os municípios fluminenses a promover atividades cotidianas de educação alimentar e nutricional que mobilizem a comunidade escolar para valorização da amamentação e da alimentação adequada e saudável;",
+    "pagina": 75
+   },
+   "1543": {
+    "texto": "☼ Ampliar os recursos destinados à saúde com a aplicação do mínimo constitucional de 12% das verbas estaduais, observando criteriosamente a sétima diretriz da Resolução 322 do Conselho Nacional de Saúde que descaracteriza alguns outros investimentos como ações deste financiamento, bem como a legislação pertinente em vigor;",
+    "pagina": 93
+   },
+   "1545": {
+    "texto": "☼ Democratizar a gestão das políticas públicas de saúde, incentivando a criação de conselhos gestores, com eleições diretas realizadas entre os trabalhadores e usuários de cada unidade, e a criação de colegiados de gestão, garantindo a participação dos trabalhadores e usuários; ●​ Implementar conselhos gestores paritários em todas as Unidades de Saúde;",
+    "pagina": 93
+   },
+   "1547": {
+    "texto": "☼ Fortalecer o Conselho Estadual de Saúde, dando-lhes estrutura e capacidade de avaliação, consulta e deliberação sobre as políticas públicas de saúde;",
+    "pagina": 93
+   },
+   "1549": {
+    "texto": "☼ Desenvolver estratégias de articulação técnica e planejamento territorial com outras secretarias, como Cultura, Trabalho e Renda, Educação, Direitos Humanos, Ambiente, Defesa Civil, etc.;",
+    "pagina": 93
+   },
+   "1551": {
+    "texto": "☼ Regionalizar as ações da Secretaria de Estado de Saúde, em articulação com as prefeituras do estado, garantindo o fortalecimento das estruturas existentes em cada região (Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde) e dando prioridade para os territórios mais vulneráveis e com menos recursos; ●​ Retomar a pactuação via COSEMS, realizando o planejamento conjunto entre secretários municipais para regionalizar serviços, otimizando a escala e gestão de serviços complexos ☼ Implementar pelo menos dois novos hospitais regionais estaduais: Um no Noroeste Fluminense e outro na Baixada Fluminense, na Rodovia Rio-Santos",
+    "pagina": 93
+   },
+   "1553": {
+    "texto": "☼ Promover a revisão e auditoria de todos os contratos de terceirização de",
+    "pagina": 93
+   },
+   "1556": {
+    "texto": "serviços e privatização da gestão celebrados pelo governo anterior: OS’s e OSCIP’s, Fundações Estatais de Direito Privado, Empresas Públicas de Direito Privado e Parcerias Público-Privadas;",
+    "pagina": 94
+   },
+   "1558": {
+    "texto": "☼ Garantir o progressivo encerramento dos contratos de aluguel de equipamentos e dos contratos sem licitação;",
+    "pagina": 94
+   },
+   "1560": {
+    "texto": "☼ Implementar um plano de transição do sistema atual, que prioriza a gestão privada, para um sistema de gestão pública e direta com a realização de concursos públicos na área da saúde, evitando a desorganização do serviço e a desassistência, garantindo o progressivo encerramento de todas as formas de privatização e terceirização da Saúde;",
+    "pagina": 94
+   },
+   "1562": {
+    "texto": "☼ Reformular a Programação Pactuada e Integrada (PPI), de acordo com critérios epidemiológicos e populacionais, para diminuir as desigualdades regionais de acesso e orientar investimentos nas regiões com maior demanda;",
+    "pagina": 94
+   },
+   "1566": {
+    "texto": "☼ Criar a Rede Fluminense de Ensino, Pesquisa e Altos Estudos em Saúde, voltada para a inovação tecnológica em biotecnologia, cuidado em saúde e vigilância epidemiológica, sanitária e ambiental; ●​ Estimular a produção e publicação de pesquisas sobre biotecnologia, cuidado em saúde e vigilância epidemiológica, sanitária e ambiental; ●​ Estimular o intercâmbio de conhecimentos técnicos e científicos entre as agências públicas de biotecnologia, cuidado em saúde e vigilância epidemiológica, sanitária e ambiental (municipais, estaduais e federais) que atuam no estado; ●​ Criar um sistema permanente de compartilhamento de dados e informações sobre biotecnologia, cuidado em saúde e vigilância epidemiológica, sanitária e ambiental, entre governo do Estado, prefeituras",
+    "pagina": 94
+   },
+   "1569": {
+    "texto": "flumineses, Fundação Oswaldo Cruz, Instituto Vital Brazil, universidades e institutos de pesquisa localizados no estado;",
+    "pagina": 95
+   },
+   "1571": {
+    "texto": "☼ Realizar auditoria e revisão imediatas de todos os contratos realizados pela Fundação Saúde ☼ Reestruturar os quadros da instituição com profissionais especialistas e empregados públicos, combatendo os contratos precários e a pejotização, realizando concursos e implementando um Plano de Carreiras, Cargos e Salários (PCCS), de forma a acabar com a alta rotatividade de médicos e a desqualificação profissional, fixando profissionais qualificados no sistema público. ☼ Elaborar um planejamento de médio prazo para a progressiva estatização da Fundação Saúde",
+    "pagina": 95
+   },
+   "1575": {
+    "texto": "☼ Valorizar os trabalhadores do SUS, desenvolvendo ações para eliminar a precarização do trabalho nas estruturas estaduais, como UPAs, hospitais e outros serviços de saúde;",
+    "pagina": 95
+   },
+   "1577": {
+    "texto": "☼ Estabelecer políticas de gestão que busquem compatibilizar a lotação de servidores com suas formações, perfis e interesses em relação às tarefas desenvolvidas;",
+    "pagina": 95
+   },
+   "1579": {
+    "texto": "☼ Realizar concursos públicos para a recomposição do quadro de servidores da saúde;",
+    "pagina": 95
+   },
+   "1585": {
+    "texto": "☼ Instituir uma política de formação e educação permanente, transinclusivo, antirracista, antimachista e anti-homofóbico, investindo na capacitação dos profissionais que executam os programas de saúde existentes no estado e nos municípios fluminenses para oferecer um atendimento de qualidade, com foco no cuidado ao cidadão;",
+    "pagina": 95
+   },
+   "1589": {
+    "texto": "☼ Utilizar os espaços de prática do Sistema Único de Saúde (SUS) para a formação e o desenvolvimento profissional dos trabalhadores, com o objetivo de promover uma saúde libertária e integral, baseada nos princípios que norteiam o SUS, em articulação com as instituições de ensino e pesquisa;",
+    "pagina": 96
+   },
+   "1591": {
+    "texto": "☼ Desenvolver programas de Residência em Área Profissional da Saúde e em Medicina de Família e Comunidade, afirmando a modalidade de residência como uma formação em serviço do Sistema Único de Saúde (SUS), e não como substituição de mão de obra; ☼ Unificar as ações das secretarias de Saúde e de Educação com base na Política",
+    "pagina": 96
+   },
+   "1594": {
+    "texto": "●​ Reforçar os setores de documentação, informação, comunicação, informática (com uso de softwares livres) e educação em saúde nas unidades de saúde; ●​ Incluir o direito à saúde e as formas de participação e controle social do SUS na grade curricular da rede estadual de ensino;",
+    "pagina": 96
+   },
+   "1596": {
+    "texto": "☼ Constituir uma rede de ensino, pesquisa e extensão a serviço do SUS do Estado do Rio de Janeiro, integrando a Escola Técnica Izabel dos Santos, a Fundação de Apoio à Escola Técnica (FAETEC), o Centro de Educação Superior a Distância do Estado do Rio de Janeiro (CEDERJ) e as universidades estaduais;​",
+    "pagina": 96
+   },
+   "1598": {
+    "texto": "☼ Estabelecer um hospital universitário no Hospital Municipal Rocha Faria, conectado à UERJ Zona Oeste, em parceria com a Prefeitura do Rio e através de um planejamento de médio prazo para a implementação de cursos de saúde nesse campus e a adaptação total do hospital, em diálogo com a equipe e sem prejuízo aos serviços prestados atualmente à população",
+    "pagina": 96
+   },
+   "1603": {
+    "texto": "☼ Implementar uma política de informação e comunicação em saúde, atuando em defesa do SUS e mobilizando a sociedade com vistas ao fortalecimento do controle social, com a criação da Comissão de Comunicação e Informação em Saúde, vinculada à Secretaria de Estado de Saúde, atuando de forma articulada com os conselhos de políticas públicas;",
+    "pagina": 96
+   },
+   "1607": {
+    "texto": "☼ Investir em um Sistema Estadual de Informação para o SUS, em parceria com os municípios de cada região do estado (Metropolitana, Noroeste Fluminense, Norte Fluminense, Baixadas Litorâneas, Serrana, Centro-Sul Fluminense, Médio Paraíba e Costa Verde), em parceria com as prefeituras fluminenses, a Assembleia Legislativa do Estado do Rio de Janeiro, a Câmara Metropolitana e a União; ●​ Criar mecanismos de gestão integrada das ações de saúde na região metropolitana, potencializando as instâncias de pactuação já existentes e previstas na legislação do Sistema Único de Saúde (SUS); ●​ Investir no aperfeiçoamento da produção de dados, com a organização, integração e sistematização dos bancos de dados já existentes (SIM, Sinasc, Sinan, SIA, SIH, SIAB, Sismasus e outros), bem como fortalecer a interatividade e o acesso livre às informações de saúde para cada cidadão, resguardados os princípios de confidencialidade previstos na legislação; ●​ Desenvolver um mapa interativo da saúde no estado, com indicadores que permitam analisar a situação de cada bairro dos municípios da região; ●​ Garantir um sistema permanente de compartilhamento de dados e informações com os municípios fluminenses, a Câmara Metropolitana e a União;",
+    "pagina": 97
+   },
+   "1609": {
+    "texto": "☼ Capacitar os trabalhadores do SUS, incluindo os gestores e os formuladores de políticas, no acesso, processamento e análise dos dados de interesse da saúde no estado do Rio de Janeiro, para que a informação em saúde sirva à tomada de decisão, incluindo acesso a bases de dados especializados com protocolos clínicos, literaturas setoriais e redes bibliográfica (BVS, BiblioSUS, SaúdeLegis, ColecionaSUS, etc.);",
+    "pagina": 97
+   },
+   "1611": {
+    "texto": "☼ Desenvolver, junto ao Conselho Estadual de Saúde, políticas editoriais de informação que garantam a disseminação de dados de forma democrática e ampla, investindo em tecnologia e garantindo recursos para a implementação de ações de comunicação e informação em saúde, com a avaliação de impacto pré e pós distribuição destes veículos sendo submetida ao controle social;",
+    "pagina": 97
+   },
+   "1613": {
+    "texto": "☼ Ampliar a capacidade dos conselheiros e equipes de saúde para a gestão pública da informação e da comunicação em saúde, por meio de capacitação e garantia de acesso às fontes de informação, sistemas técnicos e instituições públicas, assegurando total transparência dos processos de: execução orçamentária e financeira; repasse de recursos; transferência fundo a fundo; convênios; acordos de cooperação; patrocínios; licitações; cartas-convite; registro de preço; formas de",
+    "pagina": 97
+   },
+   "1621": {
+    "texto": "☼ Garantir políticas de saúde para todos os ciclos de vida;",
+    "pagina": 98
+   },
+   "1623": {
+    "texto": "☼ Organizar redes de atenção integral, articulando os diversos serviços equipamentos de saúde do estado com os serviços e equipamentos municipais e federais localizados em cada município;",
+    "pagina": 98
+   },
+   "1625": {
+    "texto": "☼ Criar programas especiais de acesso à saúde para populações residentes em locais de difícil acesso ao sistema de saúde, garantido mecanismos para atender situações de emergência; ●​ Criar programas especiais de acesso à saúde para comunidades tradicionais, quilombolas e povos indígenas localizados no estado;",
+    "pagina": 98
+   },
+   "1627": {
+    "texto": "☼ Defender e fortalecer a Atenção Primária como principal porta de entrada para o acesso à saúde, bem como o acesso organizado e hierarquizado às tecnologias em saúde necessárias à preservação da vida; ●​ Garantir a progressiva ampliação da cobertura da Atenção Primária nos municípios com maior déficit de cobertura, até atingir a cobertura completa de todas as regiões do estado (Metropolitana, Noroeste Fluminense, Norte",
+    "pagina": 98
+   },
+   "1629": {
+    "texto": "Paraíba e Costa Verde); ●​ Organizar um sistema estadual de monitoramento, avaliação e supervisão da Atenção Primária, com o intuito de acompanhar o seu desenvolvimento e melhorar a qualidade dos serviços; ●​ Realizar, em parceria com os municípios fluminenses, investimentos para que os serviços da Atenção Primária ampliem sua capacidade de resolver problemas comuns da população, em especial, os atendimentos de urgência que fazem parte da atribuição do cuidado das Unidades Básicas de Saúde; ●​ Investir, em parceria com os municípios fluminenses, nas unidades ambulatoriais e na expansão da Estratégia Saúde da Família, dos Núcleos de Apoio à Saúde da Família e dos Consultórios de Rua, de forma a trabalhar no território reconhecendo as necessidades locais e garantindo a participação da comunidade;",
+    "pagina": 98
+   },
+   "1632": {
+    "texto": "●​ Investir, em parceria com os municípios fluminenses, na qualificação das equipes da Estratégia de Saúde da Família (ESF), dos Núcleos de Apoio à Saúde da Família e dos Consultórios de Rua, estimulando a formação profissional (superior e técnica) com perfil multidisciplinar; ●​ Auxiliar os municípios fluminenses a garantir que a composição das equipes da Estratégia de Saúde da Família, dos Núcleos de Apoio à Saúde da Família e dos Consultórios de Rua atendam às necessidades e particularidade locais de cada território do estado; ●​ Fortalecer a Política Nacional de Práticas Integrativas e Complementares do Sistema Único de Saúde (SUS);",
+    "pagina": 99
+   },
+   "1634": {
+    "texto": "☼ Organizar o pronto atendimento de forma articulada com serviços de atenção básica;",
+    "pagina": 99
+   },
+   "1636": {
+    "texto": "☼ Construir unidades de atendimento a partir das necessidades de saúde dos territórios, dando fim à padronização de serviços de saúde segundo modelos pré-fabricados, estimulando as demandas e criações locais;",
+    "pagina": 99
+   },
+   "1638": {
+    "texto": "☼ Organizar um sistema de monitoramento, avaliação e supervisão da Estratégia de Saúde da Família e Atenção Básica, com o intuito de acompanhar o seu desenvolvimento e melhorar a qualidade dos serviços;",
+    "pagina": 99
+   },
+   "1640": {
+    "texto": "☼ Reorganizar a Rede de Urgência e Emergência do estado, hospitalar e pré-hospitalar – fixa (Unidades de Pronto Atendimento) e móvel (SAMU) –, de maneira a garantir pleno acesso e tempo de resposta adequado para a população, atuando de forma hierarquizada, regulada de forma transparente (tanto para o cidadão, quanto para o profissional de saúde) e articulada com demais serviços assistenciais;",
+    "pagina": 99
+   },
+   "1642": {
+    "texto": "☼ Criar uma Central Única de Regulação, acabando com a fragmentação entre estado e municípios, reestruturando os sistemas de regulação de leitos, serviços ambulatoriais e diagnósticos, bem como serviços de alta complexidade, de forma que as vagas sejam preenchidas a partir de um modelo baseado na territorialização e no conhecimento da capacidade instalada das unidades de saúde, visando ampliar a sua agilidade e eficácia, garantindo transparência no que se refere aos recursos disponíveis e sua utilização (como informações sobre as filas de espera e critérios de priorização); ●​ Reorganizar a gestão dos leitos hospitalares do estado, inclusive os complementares, de forma descentralizada e pactuada com os municípios, para",
+    "pagina": 99
+   },
+   "1645": {
+    "texto": "constituir uma rede capaz de promover suficiência de recursos e acesso efetivo à população, privilegiando os agravos e doenças que atingem os grupos sociais mais vulneráveis; ●​ Implementar a regulação por linha de cuidado, buscando centralizar exames, consultas, procedimentos e terapias em unidades de saúde especializadas, para agilizar o tratamento e evitar o deslocamento excessivo dos pacientes",
+    "pagina": 100
+   },
+   "1647": {
+    "texto": "☼ Desenvolver ações de suporte diagnóstico na rede estadual, qualificando estruturas já existentes (como o Laboratório Central Noel Nutels e o Rio Imagem), além de conformar uma rede técnica integrada aos serviços municipais e federais localizados no estado;",
+    "pagina": 100
+   },
+   "1649": {
+    "texto": "☼ Criar laboratórios públicos de patologia e análises clínicas nos hospitais, e progressivamente substituir todo o serviço que foi terceirizado ao longo dos últimos anos",
+    "pagina": 100
+   },
+   "1651": {
+    "texto": "☼ Fortalecer a logística em Saúde do estado, visando retomar o controle público sobre a compra e distribuição de medicamentos e insumos na rede municipal de saúde;",
+    "pagina": 100
+   },
+   "1653": {
+    "texto": "☼ Reestruturar, em parceria com a rede federal pública, as universidades e as redes municipais, a atenção especializada na rede assistencial do estado, concentrando investimentos nas estruturas em que haja maior dificuldade de acesso;",
+    "pagina": 100
+   },
+   "1655": {
+    "texto": "☼ Fortalecer os serviços de apoio ao idoso, como casas de convivência, programas de atenção domiciliar, programas de internação domiciliar, cuidador de idosos, entre outros;",
+    "pagina": 100
+   },
+   "1657": {
+    "texto": "☼ Garantir a efetiva aplicação das portarias do Ministério da Saúde do governo federal e do Sistema Único de Saúde (SUS) para o processo transexualizador, aplicando verbas e desenvolvendo um programa para a formação e capacitação de profissionais da saúde, criando unidades de atendimento em hospitais públicos do Estado e estabelecendo a não-patologização das identidades trans e a redução das barreiras burocrático-administrativas para o acesso a esse direito no estado; ●​ Reabrir a fila para a cirurgia de transgenitalização do Hospital",
+    "pagina": 100
+   },
+   "1658": {
+    "texto": "Universitário Pedro Ernesto (que, desde 2011, encontra-se fechada para",
+    "pagina": 100
+   },
+   "1661": {
+    "texto": "novos usuários); ●​ Reabrir a fila para as cirurgias plásticas realizadas na Policlínica Piquet",
+    "pagina": 101
+   },
+   "1662": {
+    "texto": "Carneiro, contempladas pelo processo transexualizador, de acordo com a Portaria nº2.803 de 2013;",
+    "pagina": 101
+   },
+   "1664": {
+    "texto": "☼ Garantir, em todos os hospitais públicos do estado, a informação e o acompanhamento necessários para a prática do aborto nos casos autorizados pela lei, respeitando o princípio de autodeterminação da mulher sobre seu próprio corpo;",
+    "pagina": 101
+   },
+   "1666": {
+    "texto": "☼ Desenvolver políticas públicas para combater a violência obstétrica, evitar cesarianas desnecessárias e estimular os partos normais, naturais e humanizados, de acordo com a escolha da mulher;",
+    "pagina": 101
+   },
+   "1668": {
+    "texto": "☼ Promover o atendimento integral, humanizado, transdisciplinar e de qualidade em toda a rede de atenção materno-infantil desde o início da gravidez até a atenção ao recém-nascido;",
+    "pagina": 101
+   },
+   "1670": {
+    "texto": "☼ Investir em equipamentos (salas e quartos) que facilitem o parto humanizado em todas as maternidades do município, com profissionais capacitados e envolvidos nos processos de cuidado;",
+    "pagina": 101
+   },
+   "1672": {
+    "texto": "☼ Desenvolver políticas de formação para doulas;",
+    "pagina": 101
+   },
+   "1674": {
+    "texto": "☼ Garantir a atuação de doulas em todas as maternidades;",
+    "pagina": 101
+   },
+   "1676": {
+    "texto": "☼ Estimular o funcionamento de casas de parto no conjunto do território do estado;",
+    "pagina": 101
+   },
+   "1678": {
+    "texto": "☼ Fortalecer e ampliar a rede de Centros de Referência em Saúde do Trabalhador",
+    "pagina": 101
+   },
+   "1679": {
+    "texto": "(CEREST), capacitando os trabalhadores da rede de saúde para as demandas oriundas da saúde do trabalhador e atuando, junto a sindicatos, para fortalecer a capacidade de identificar e reduzir riscos à saúde produzidos pelo trabalho;",
+    "pagina": 101
+   },
+   "1681": {
+    "texto": "☼ Criar um Comitê Técnico de Saúde da População Negra para combater o racismo institucional na saúde; ●​ Implementar​ no âmbito estadual os​ parâmetros estabelecidos pela",
+    "pagina": 101
+   },
+   "1684": {
+    "texto": "Política Nacional de Saúde Integral da População Negra, com o objetivo de promover a equidade étnico-racial nas políticas de saúde do estado; ●​ Elaborar diagnóstico epidemiológico periódico da saúde da população negra do estado;",
+    "pagina": 102
+   },
+   "1686": {
+    "texto": "☼ Implantar o registro da variável raça/cor nos impressos oficiais da Secretaria de Estado de Saúde;",
+    "pagina": 102
+   },
+   "1688": {
+    "texto": "☼ Promover cursos de formação sobre as especificidades das minorias étnico-raciais, capacitando os servidores e gestores da saúde para lidar com as questões específicas dessas populações;",
+    "pagina": 102
+   },
+   "1690": {
+    "texto": "☼ Implementar no âmbito estadual a Política Nacional de Saúde Integral LGBT;",
+    "pagina": 102
+   },
+   "1692": {
+    "texto": "☼ Implementar no âmbito estadual a Política Nacional de Atenção Integral à Saúde das populações privadas de liberdade;",
+    "pagina": 102
+   },
+   "1694": {
+    "texto": "☼ Promover iniciativas na rede de saúde para o acolhimento de vítimas e enfretamento das consequências relacionadas às situações de violência, seja do ponto de vista individual ou coletivo;",
+    "pagina": 102
+   },
+   "1698": {
+    "texto": "☼ Garantir o progressivo fechamento dos manicômios e espaços asilares existentes no estado do Rio de Janeiro, com a reorientação dos recursos para a rede de saúde mental e outros equipamentos de cuidado a idosos e pessoas com deficiência;",
+    "pagina": 102
+   },
+   "1700": {
+    "texto": "☼ Extinguir os convênios existentes com Comunidades Terapêuticas e outras estruturas não caracterizadas como serviço de saúde da Rede de Atenção",
+    "pagina": 102
+   },
+   "1701": {
+    "texto": "Psicossocial, reorientando os recursos para a rede de saúde mental;",
+    "pagina": 102
+   },
+   "1703": {
+    "texto": "☼ Garantir, em parceria com as prefeituras do estado, a ampliação da rede substitutiva de serviços de saúde mental nos municípios com maior demanda:",
+    "pagina": 102
+   },
+   "1704": {
+    "texto": "Dispositivos de residenciais terapêuticos, CAPS III, CAPSi, CAPS AD, CAPS AD III, Centros de Convivência/Cultura, Cooperativas Sociais, Consultórios de Rua, Escolas",
+    "pagina": 102
+   },
+   "1707": {
+    "texto": "de Redutores de Danos, entre outros;",
+    "pagina": 103
+   },
+   "1709": {
+    "texto": "☼ Implementar uma política estadual intersetorial de atenção integral a pessoas que usam álcool e outras drogas, coordenada pela Secretaria de Estado de Saúde; ☼",
+    "pagina": 103
+   },
+   "1710": {
+    "texto": "Garantir a presença de psiquiatras plantonistas nas emergências das unidades hospitalares. Com o objetivo de assegurar o atendimento imediato e especializado a pacientes em crise de saúde mental, evitando condutas inadequadas por falta de especialistas e integrando o cuidado psiquiátrico à rede de urgência.",
+    "pagina": 103
+   },
+   "1715": {
+    "texto": "☼ Qualificar as ações de vigilância epidemiológica, sanitária e ambiental, prestando assessoria técnica e estabelecendo um plano de ação articulado, que dê respostas aos problemas sanitários e ambientais do estado e de cada município; ●​ Investir na formação e na capacitação em vigilância sanitária e ambiental dos servidores públicos de vigilância que atuam no estado; ●​ Qualificar o trabalho de vigilância sanitária e ambiental por meio da incorporação de tecnologias de informação e do aprimoramento do uso daquelas que estão disponíveis; ●​ Submeter, periodicamente, ao controle social do SUS, o resultado das ações de vigilância sanitária e ambiental;",
+    "pagina": 103
+   },
+   "1718": {
+    "texto": "●​ Desenvolver​ um programa de comunicação com informações de interesse público sobre situações de risco à saúde da população, em parcerias com mídias populares e movimentos sociais; ●​ Estimular que os serviços de saúde adotem medidas e incorporem práticas para o controle de risco, por meio de ações educativas e divulgação de material de apoio; ●​ Incentivar a participação de representantes da sociedade civil organizada para o acompanhamento das inspeções de vigilância sanitária e ambiental; ●​ Instituir,​ em​ articulação​ com​ as​ prefeituras​ de​ cada município, um plano estadual de saúde ambiental e controle de endemias, com foco no controle de agravos como coronavírus, dengue, chikungunya, zika, febre amarela, leishmaniose, bem como doenças causadas por desastres (ex: leptospirose) e epidemias causadas por habitações insalubres e condições de vida precárias (ex: tuberculose); ●​ Fortalecer o programa de Farmacovigilância, por meio de ações de vigilância sanitária, interlocução com a indústria farmacêutica e parcerias com instituições científicas especializadas no tema;",
+    "pagina": 104
+   },
+   "1720": {
+    "texto": "☼ Incentivar o uso racional de medicamentos e a alimentação saudável e segura;",
+    "pagina": 104
+   },
+   "1722": {
+    "texto": "☼ Promover uma política de assistência farmacêutica que seja acessível à população de maneira gratuita e descentralizada, ofertando todos os insumos necessários ao cuidado integral da população;",
+    "pagina": 104
+   },
+   "1724": {
+    "texto": "☼ Implementar ações para fazer cumprir a legislação sobre propaganda de bebidas alcoólicas, tabaco, medicamentos e outras áreas da saúde.",
+    "pagina": 104
    }
   }
  }
