@@ -44,6 +44,7 @@ O resultado final é uma matriz de comparação entre os candidatos.
 - Um modelo pode errar ao resumir uma proposta ou ao juntar duas parecidas. O trecho do programa vale mais que o resumo.
 - A divisão em propostas é uma escolha; outra leitura poderia dividir ou juntar de outro jeito. O que não muda é o trecho de onde cada uma saiu.
 - Os programas têm tamanhos muito diferentes. Mais propostas num tema significa que o candidato escreveu mais sobre ele, não que escreveu melhor.
+- Na comparação de governador, trechos sobre assuntos que não são atribuição do governo estadual, como política externa e sistema judiciário, não entram.
 
 ## Como este site foi feito
 

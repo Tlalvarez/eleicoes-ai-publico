@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-to.json",
-  "gerado_em": "2026-09-14T13:42:32Z",
-  "exportado_em": "2026-09-14T14:05:35Z"
+  "gerado_em": "2026-09-14T17:58:43Z",
+  "exportado_em": "2026-09-14T17:59:54Z"
  },
  "candidatos": [
   {
@@ -50,29 +51,30 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Adotar gestão por resultados, com metas e indicadores de desempenho para órgãos e programas e monitoramento permanente da execução",
-   "n_concorda": 4,
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Adotar planejamento estratégico permanente com metas, indicadores de desempenho e monitoramento contínuo da execução das políticas.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
+      72,
       75,
       76,
-      91,
-      504
+      89
      ],
-     "nota": "Metas anuais por secretaria e indicadores de custo e satisfação"
+     "nota": ""
     },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
       63,
+      64,
       100,
       101,
       157,
-      192,
-      222
+      159,
+      192
      ],
      "nota": ""
     },
@@ -83,27 +85,43 @@
       2339
      ],
      "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      734,
-      814
-     ],
-     "nota": "Auditoria de metas de trabalho e painel de BI no gabinete"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Decidir com base em dados e evidências, com painéis e centralização de informações para gestores",
-   "n_concorda": 4,
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Manter painel público de acompanhamento das prioridades, investimentos, metas, prazos e resultados, com atualização periódica.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
-      89,
+      77,
+      92,
+      506,
+      580
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1464
+     ],
+     "nota": "Painel desde o início do mandato"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Implantar painéis de dados em tempo real para apoiar a decisão dos gestores e do gabinete.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
       143,
       145
      ],
@@ -113,73 +131,22 @@
      "posicao": "concorda",
      "blocos": [
       814,
-      815,
-      816
+      815
      ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      64,
-      145,
-      158
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2339
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Criar unidade central de governança para coordenar prioridades, integrar secretarias e destravar a execução",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      72,
-      90,
-      503,
-      505
-     ],
-     "nota": "Núcleo de governança instalado nos 100 primeiros dias"
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      193,
-      216
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1462
-     ],
-     "nota": "Escritório Estadual de Projetos e Investimentos para obras"
+     "nota": "Painel de BI no gabinete do Governador"
     }
    }
   },
   {
    "id": "p4",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Rever ou descontinuar programas e despesas que não apresentem resultados, por revisão permanente de gastos",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Rever periodicamente programas e despesas que não apresentem resultados ou retorno social.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
       78,
-      512,
       513,
       581
      ],
@@ -197,16 +164,25 @@
   },
   {
    "id": "p5",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Firmar compromissos formais de desempenho dos secretários, com responsável, cronograma, custo e relatório por projeto estratégico",
-   "n_concorda": 1,
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Criar unidade central de governança para coordenar prioridades, integrar secretarias e identificar atrasos e riscos de execução.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
-      56,
-      73,
-      88
+      72,
+      90,
+      91,
+      503,
+      505
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      193
      ],
      "nota": ""
     }
@@ -214,36 +190,96 @@
   },
   {
    "id": "p6",
-   "subtema": "Gestão por resultados e planejamento",
-   "proposta": "Realizar diagnóstico inicial da situação fiscal, da folha, dos contratos, das obras e das obrigações previdenciárias nos primeiros meses de governo",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Exigir de cada secretário compromissos formais de desempenho, com responsável, cronograma, custo e relatório periódico por projeto estratégico.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
-      109,
-      509,
-      510,
-      511,
-      535
+      73,
+      504
      ],
-     "nota": "Integra o plano dos 100 primeiros dias"
+     "nota": ""
     }
    }
   },
   {
    "id": "p7",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Vincular o orçamento às prioridades e metas do plano de governo, articulando ações, metas e indicadores ao PPA.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      81,
+      82
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2339
+     ],
+     "nota": "Ferramentas tecnológicas de monitoramento ligadas ao orçamento"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Criar sistema de acompanhamento trimestral da execução orçamentária por região, com alerta automático de atraso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1779
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Publicar relatórios periódicos de prestação de contas com o planejado, o executado, obstáculos e providências adotadas.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      79,
+      149,
+      583
+     ],
+     "nota": "Prestação de contas por entregas, não só por despesa executada"
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      222,
+      223
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
    "subtema": "Transparência e integridade",
-   "proposta": "Ampliar a transparência ativa, publicando contratos, despesas, metas, indicadores e resultados em linguagem acessível",
+   "proposta": "Ampliar a transparência ativa e o acesso a informações sobre contratos, obras, despesas, metas e resultados, em linguagem compreensível.",
    "n_concorda": 4,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
       60,
+      146,
       148,
-      533,
-      580
+      533
      ],
      "nota": "Ampliação do Portal da Transparência"
     },
@@ -255,84 +291,26 @@
      ],
      "nota": ""
     },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2392
+     ],
+     "nota": ""
+    },
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
       686
      ],
      "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2392
-     ],
-     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p11",
    "subtema": "Transparência e integridade",
-   "proposta": "Implantar painel público em tempo real de obras, investimentos, metas e execução orçamentária",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      77,
-      146,
-      506
-     ],
-     "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      686,
-      687
-     ],
-     "nota": "Portal de obras georreferenciado"
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1464,
-      2392
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Transparência e integridade",
-   "proposta": "Publicar relatórios periódicos de prestação de contas baseados em entregas, comparando planejado e executado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      79,
-      92,
-      149,
-      583
-     ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      223
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p10",
-   "subtema": "Transparência e integridade",
-   "proposta": "Instituir política de dados abertos com dados reutilizáveis para controle social",
+   "proposta": "Implantar política de dados abertos, com dados reutilizáveis para controle social e inovação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
@@ -352,42 +330,10 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Transparência e integridade",
-   "proposta": "Implantar programas de integridade e prevenção à corrupção nos órgãos, com mapeamento de riscos de fraude",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      151,
-      152,
-      155,
-      156
-     ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      170
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2399
-     ],
-     "nota": "Comissão de Integridade Estadual, com selo e ranking municipal"
-    }
-   }
-  },
-  {
    "id": "p12",
    "subtema": "Transparência e integridade",
-   "proposta": "Fortalecer a Controladoria-Geral do Estado, o controle interno e as auditorias",
-   "n_concorda": 4,
+   "proposta": "Fortalecer a Controladoria-Geral do Estado, o controle interno e as auditorias.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
@@ -409,21 +355,44 @@
       2403
      ],
      "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      674,
-      675
-     ],
-     "nota": "Controladoria e PGE analisando previamente editais acima de R$ 10 milhões"
     }
    }
   },
   {
    "id": "p13",
    "subtema": "Transparência e integridade",
-   "proposta": "Criar canal de denúncia com anonimato e proteção institucional ao denunciante",
+   "proposta": "Implantar programas de integridade, ética e prevenção à corrupção na administração estadual, com mapeamento de riscos.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      151,
+      152,
+      155
+     ],
+     "nota": "Programa de integridade em todas as secretarias"
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      170
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2399
+     ],
+     "nota": "Via Comissão de Integridade Estadual"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Transparência e integridade",
+   "proposta": "Criar canal de denúncia com anonimato e proteção ao denunciante de boa-fé.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -446,67 +415,52 @@
       750,
       751
      ],
-     "nota": "Canal voltado a assédio moral contra servidores"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Transparência e integridade",
-   "proposta": "Criar mecanismos de participação social no planejamento, monitoramento e avaliação das políticas públicas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      84
-     ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      76,
-      172
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2394
-     ],
-     "nota": ""
+     "nota": "Canal restrito a denúncias de assédio moral"
     }
    }
   },
   {
    "id": "p15",
    "subtema": "Transparência e integridade",
-   "proposta": "Implantar plataforma digital de participação social para o cidadão contribuir e acompanhar políticas públicas",
+   "proposta": "Submeter contratos e editais de alto valor à análise prévia dos órgãos de controle jurídico e de integridade.",
    "n_concorda": 2,
    "posicoes": {
-    "governador-to-laurez-moreira-270002544494": {
+    "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      143,
-      184
+      674,
+      675
      ],
-     "nota": ""
+     "nota": "Controladoria e PGE em editais acima de R$ 10 milhões"
     },
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
-      2394
+      2399
      ],
-     "nota": ""
+     "nota": "Comissão de Integridade acompanha contratos acima de R$ 1 milhão"
     }
    }
   },
   {
    "id": "p16",
    "subtema": "Transparência e integridade",
-   "proposta": "Usar inteligência artificial para acelerar as respostas a pedidos da Lei de Acesso à Informação",
+   "proposta": "Publicar ranking de transparência dos municípios e conceder selo de integridade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2399
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Transparência e integridade",
+   "proposta": "Empregar inteligência artificial para agilizar as respostas a pedidos feitos com base na Lei de Acesso à Informação.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
@@ -520,56 +474,16 @@
    }
   },
   {
-   "id": "p17",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Reunir os serviços estaduais em plataforma única digital, com identidade ou login integrado e coleta única de informações",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      140,
-      578
-     ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      147,
-      180,
-      182
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1449
-     ],
-     "nota": "Redesenho dos serviços com cartas de serviço"
-    }
-   }
-  },
-  {
    "id": "p18",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Integrar sistemas e bases de dados da administração direta e indireta, com interoperabilidade",
-   "n_concorda": 2,
+   "subtema": "Transparência e integridade",
+   "proposta": "Responsabilizar administrativamente agentes públicos e empresas quando houver irregularidades e rever processos de contratação vulneráveis.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
-      142
-     ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      84,
-      144,
-      146
+      155,
+      156
      ],
      "nota": ""
     }
@@ -577,109 +491,8 @@
   },
   {
    "id": "p19",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Instituir política estadual de transformação e governança digital como estratégia permanente",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      85,
-      142
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2341
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Promover desburocratização e simplificação administrativa, reduzindo etapas, exigências e tempo de atendimento",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      110,
-      577
-     ],
-     "nota": ""
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      152,
-      156,
-      305
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1449
-     ],
-     "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      339,
-      340
-     ],
-     "nota": "Modelo de Estado-Plataforma nos ritos fiscais"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Eliminar o papel na administração, com cronograma de recolhimento de impressoras nas secretarias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      758,
-      759
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Adotar soluções de inteligência artificial na gestão pública com diretrizes éticas e seguras",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      154
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2396
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Governo digital e desburocratização",
-   "proposta": "Fortalecer a proteção de dados, a segurança da informação e a governança de dados pessoais conforme a LGPD",
+   "subtema": "Transparência e integridade",
+   "proposta": "Estabelecer política de qualidade, segurança e proteção de dados pessoais na administração estadual, em conformidade com a LGPD.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -706,17 +519,133 @@
    }
   },
   {
+   "id": "p20",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Reunir os serviços estaduais em plataforma única digital, com identidade/login integrado e princípio da coleta única de informações.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      140
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      147
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1449
+     ],
+     "nota": "Redesenho de serviços com cartas de serviço"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Promover desburocratização e simplificação administrativa, reduzindo etapas, exigências e tempo de atendimento.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      110,
+      577,
+      578
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      84,
+      85,
+      152,
+      156,
+      305
+     ],
+     "nota": ""
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      338,
+      339
+     ],
+     "nota": "Modelo de Estado-Plataforma nos ritos fiscais"
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1449
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p22",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Integrar sistemas e bases de dados dos órgãos estaduais, garantindo interoperabilidade e compartilhamento seguro.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      144,
+      146
+     ],
+     "nota": "Arquitetura de Governo como Plataforma"
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Instituir política estadual de transformação/governança digital como estratégia permanente de modernização.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2341
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p24",
    "subtema": "Governo digital e desburocratização",
-   "proposta": "Criar laboratórios e parcerias de inovação pública (GovTech, universidades, projetos-piloto) aplicados à gestão",
+   "proposta": "Instituir diretrizes para uso ético, seguro e responsável de inteligência artificial na administração pública.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
-      159,
-      160,
-      161
+      154,
+      175
      ],
      "nota": ""
     }
@@ -725,21 +654,14 @@
   {
    "id": "p25",
    "subtema": "Governo digital e desburocratização",
-   "proposta": "Avaliar a qualidade e a satisfação dos usuários dos serviços públicos e usar os resultados para melhoria contínua",
-   "n_concorda": 2,
+   "proposta": "Estruturar laboratórios e ambientes de inovação pública e parcerias GovTech com universidades e setor produtivo.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
-      181,
-      183
-     ],
-     "nota": ""
-    },
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      76
+      160,
+      161
      ],
      "nota": ""
     }
@@ -747,9 +669,102 @@
   },
   {
    "id": "p26",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Revisar e cumprir os planos de cargos, carreiras e remuneração dos servidores estaduais",
-   "n_concorda": 3,
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Medir a satisfação e a qualidade percebida pelos usuários dos serviços públicos e usar os resultados para melhoria contínua.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      76
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      183
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Ampliar canais digitais e implantar atendimento multicanal integrado ao cidadão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      180,
+      181,
+      182
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Eliminar o uso de papel nas secretarias, com cronograma de recolhimento de impressoras.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      758,
+      759
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Valorizar o servidor público, fortalecendo carreiras técnicas e modernizando a gestão de pessoas.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      115
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      176,
+      177
+     ],
+     "nota": ""
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      726
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2360
+     ],
+     "nota": "Valorização condicionada à responsabilidade fiscal"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Rever e cumprir os planos de cargos, carreiras e remuneração dos servidores do Executivo.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
@@ -757,41 +772,23 @@
       724,
       725
      ],
-     "nota": "Revisão comparada a índices nacionais, começando pelo Quadro Geral"
+     "nota": "Revisão comparada a índices nacionais, iniciando pelo Quadro Geral"
     },
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
-      2349,
-      2360
+      2349
      ],
-     "nota": "Cumprimento dos PCCR com responsabilidade fiscal"
-    },
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      115
-     ],
-     "nota": "Foco em carreiras técnicas e mérito"
+     "nota": "Foco em garantir o cumprimento dos PCCR vigentes"
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Investir na capacitação permanente e na qualificação profissional dos servidores",
-   "n_concorda": 4,
+   "id": "p31",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Investir em capacitação permanente e desenvolvimento profissional dos servidores.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      727,
-      728,
-      745,
-      746
-     ],
-     "nota": "Convênios com universidades de referência e licença capacitação"
-    },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
@@ -800,56 +797,58 @@
      ],
      "nota": "Ênfase em competências digitais e IA"
     },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      727,
+      728
+     ],
+     "nota": "Convênios com universidades e institutos de referência"
+    },
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
       2358
      ],
-     "nota": ""
-    },
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      124
-     ],
-     "nota": "Capacitação de gestores e fiscais de contratos"
+     "nota": "Ampliação do programa Gestão para o Amanhã"
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Promover ações de saúde, saúde mental e qualidade de vida dos servidores",
+   "id": "p32",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Promover ações de saúde, saúde mental e qualidade de vida dos servidores.",
    "n_concorda": 2,
    "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      730,
-      731
-     ],
-     "nota": "Plantão psicológico online 24h para segurança e saúde"
-    },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
       177
      ],
      "nota": ""
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      730,
+      731
+     ],
+     "nota": "Plantão psicológico on-line 24h para Segurança e Saúde"
     }
    }
   },
   {
-   "id": "p29",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Ampliar a cobertura e a rede credenciada do plano de assistência à saúde do servidor em todas as regiões",
+   "id": "p33",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Ampliar a cobertura e a rede credenciada do plano de assistência à saúde do servidor (SERVIR) no interior do Estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
       739,
-      740
+      740,
+      741
      ],
      "nota": ""
     },
@@ -863,40 +862,9 @@
    }
   },
   {
-   "id": "p30",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Reconhecer mérito e boas práticas na administração, inclusive por premiação de eficiência e inovação",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      736,
-      737
-     ],
-     "nota": "Prêmio com dinheiro e bônus"
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      176,
-      178
-     ],
-     "nota": ""
-    },
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      115
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Realizar concursos públicos planejados, com estudos técnicos de necessidade e impacto e calendário antecipado, reduzindo vínculos temporários",
+   "id": "p34",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Realizar concursos públicos planejados, com estudo de necessidade e impacto financeiro, calendário antecipado e substituição de vínculos temporários.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -918,9 +886,49 @@
    }
   },
   {
-   "id": "p32",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Instituir teletrabalho no setor administrativo, com meta de 50% e auditoria de metas",
+   "id": "p35",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Realizar concurso público para auditor fiscal da receita estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      324,
+      325,
+      326
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Reconhecer o mérito e premiar boas práticas de inovação e eficiência na administração estadual.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      178
+     ],
+     "nota": ""
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      736,
+      737
+     ],
+     "nota": "Prêmio com pagamento em dinheiro e bônus"
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Adotar teletrabalho para metade do quadro administrativo, com auditoria de metas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -935,9 +943,25 @@
    }
   },
   {
-   "id": "p33",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Mapear a acessibilidade de todos os órgãos e promover a inclusão de servidores com deficiência",
+   "id": "p38",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Dar prioridade na licença capacitação a servidores que produzam trabalhos acadêmicos sobre melhorias na administração estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      745,
+      746
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p39",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Mapear a acessibilidade em todos os órgãos e promover a inclusão de servidores com deficiência.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -951,9 +975,9 @@
    }
   },
   {
-   "id": "p34",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Manter a despesa com pessoal em patamar compatível com a receita, perseguindo meta de folha de até 49% da receita corrente líquida",
+   "id": "p40",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Conter a despesa com pessoal, perseguindo meta de aproximar a folha de até 49% da receita corrente líquida.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -966,28 +990,9 @@
    }
   },
   {
-   "id": "p35",
-   "subtema": "Reforma administrativa",
-   "proposta": "Reorganizar e reduzir a estrutura administrativa, com meta de cerca de 18 secretarias e fim de sobreposições",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      106,
-      107,
-      112,
-      507,
-      577
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Reforma administrativa",
-   "proposta": "Revisar cargos comissionados e funções de confiança",
+   "id": "p41",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Rever cargos comissionados e funções de confiança, reduzindo o excesso.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -1001,9 +1006,40 @@
    }
   },
   {
-   "id": "p37",
-   "subtema": "Reforma administrativa",
-   "proposta": "Centralizar atividades-meio, como compras, patrimônio, tecnologia e gestão de contratos, em central de compras",
+   "id": "p42",
+   "subtema": "Compras, contratos e obras",
+   "proposta": "Divulgar publicamente, em tempo real, o andamento das obras com recursos estaduais.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      686,
+      687
+     ],
+     "nota": "Portal de obras georreferenciado"
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1464,
+      2392
+     ],
+     "nota": ""
+    },
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      148
+     ],
+     "nota": "Execução de obras no Portal da Transparência"
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Compras, contratos e obras",
+   "proposta": "Centralizar compras e atividades-meio em central de compras governamentais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -1016,34 +1052,16 @@
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      561,
-      562
-     ],
-     "nota": "Central de compras priorizando microempresas locais"
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Compras, contratos e obras",
-   "proposta": "Rever contratos terceirizados e despesas continuadas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      117,
-      510,
-      513
+      561
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p39",
+   "id": "p44",
    "subtema": "Compras, contratos e obras",
-   "proposta": "Adotar compras eletrônicas, banco de preços e análise de custos para ampliar a competição",
+   "proposta": "Ampliar compras eletrônicas e a competição entre fornecedores, com banco de preços e análise de custos.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -1057,9 +1075,24 @@
    }
   },
   {
-   "id": "p40",
+   "id": "p45",
    "subtema": "Compras, contratos e obras",
-   "proposta": "Padronizar editais e adotar matriz de risco nos contratos públicos",
+   "proposta": "Capacitar gestores e fiscais de contratos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      124
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Compras, contratos e obras",
+   "proposta": "Padronizar editais e adotar matriz de risco nos contratos, por meio de central de licitações.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1069,21 +1102,36 @@
       670,
       671
      ],
-     "nota": "Via Central de Licitações"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p41",
+   "id": "p47",
    "subtema": "Compras, contratos e obras",
-   "proposta": "Fazer inventário das obras paralisadas e proibir início de obras sem projeto, licenças, orçamento e fonte de recursos",
+   "proposta": "Priorizar microempresas locais nas contratações de serviços de manutenção e limpeza.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      562,
+      563
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Compras, contratos e obras",
+   "proposta": "Levantar as obras paralisadas e definir critérios transparentes para retomada.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
       127,
-      128,
       511
      ],
      "nota": ""
@@ -1091,9 +1139,25 @@
    }
   },
   {
-   "id": "p42",
+   "id": "p49",
    "subtema": "Compras, contratos e obras",
-   "proposta": "Criar unidade técnica para selecionar, contratar e monitorar obras públicas com transparência",
+   "proposta": "Proibir o início de obras sem projeto, licenças, orçamento e fonte de recursos definidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      81,
+      128
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Compras, contratos e obras",
+   "proposta": "Criar escritório estadual de projetos e investimentos para selecionar, contratar e monitorar obras públicas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
@@ -1106,16 +1170,15 @@
    }
   },
   {
-   "id": "p43",
-   "subtema": "Responsabilidade fiscal",
-   "proposta": "Manter o equilíbrio fiscal e a eficiência do gasto como condição para sustentar serviços e investimentos",
+   "id": "p51",
+   "subtema": "Responsabilidade fiscal e previdência",
+   "proposta": "Assegurar o equilíbrio das contas públicas e a gestão fiscal responsável como condição para investimentos e serviços.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
      "blocos": [
       57,
-      130,
       579
      ],
      "nota": ""
@@ -1133,61 +1196,15 @@
      "blocos": [
       2337
      ],
-     "nota": "Sustentabilidade fiscal e previdenciária como base do plano"
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Responsabilidade fiscal",
-   "proposta": "Alinhar o orçamento às prioridades do plano, integrando planejamento físico-financeiro e revisando programas sem aderência",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      81,
-      82
-     ],
-     "nota": "Conversão do plano no PPA 2028–2031"
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      2339
-     ],
-     "nota": "Ferramentas tecnológicas ligando metas e indicadores ao orçamento"
-    },
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      190,
-      194
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p45",
-   "subtema": "Responsabilidade fiscal",
-   "proposta": "Criar acompanhamento trimestral da execução orçamentária por região, com alerta automático de atraso",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1779
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Fortalecer a estrutura de controle e de gestão do instituto de previdência estadual (IGEPREV)",
-   "n_concorda": 1,
+   "id": "p52",
+   "subtema": "Responsabilidade fiscal e previdência",
+   "proposta": "Assegurar a sustentabilidade previdenciária, fortalecendo a estrutura de controle e gestão do instituto de previdência estadual (IGEPREV).",
+   "n_concorda": 2,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
@@ -1196,44 +1213,77 @@
       2351
      ],
      "nota": ""
+    },
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      109
+     ],
+     "nota": "Apenas diagnóstico inicial das obrigações previdenciárias"
     }
    }
   },
   {
-   "id": "p47",
-   "subtema": "Relação com municípios",
-   "proposta": "Apoiar tecnicamente os 139 municípios na modernização administrativa e na transformação digital, com compartilhamento de soluções",
-   "n_concorda": 3,
+   "id": "p53",
+   "subtema": "Responsabilidade fiscal e previdência",
+   "proposta": "Realizar, no início do mandato, diagnóstico/auditoria da situação financeira, folha, contratos, obras, dívidas e restos a pagar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      109,
+      509,
+      510,
+      542
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Responsabilidade fiscal e previdência",
+   "proposta": "Rever contratos terceirizados e despesas continuadas e executar plano de redução de desperdícios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      117,
+      512,
+      513
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Relação com os municípios",
+   "proposta": "Apoiar tecnicamente os 139 municípios na modernização administrativa e na transformação digital.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
       162
      ],
-     "nota": ""
+     "nota": "Compartilhamento de soluções respeitada a autonomia municipal"
     },
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
-      1449,
       1451
      ],
      "nota": "Rede cooperativa de transformação digital"
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      96,
-      97
-     ],
-     "nota": "Tecnologia de georreferenciamento para cadastro imobiliário e código tributário municipal"
     }
    }
   },
   {
-   "id": "p48",
-   "subtema": "Relação com municípios",
-   "proposta": "Criar unidade estadual de apoio aos municípios na estruturação de projetos, captação de recursos e modelagem de parcerias",
+   "id": "p56",
+   "subtema": "Relação com os municípios",
+   "proposta": "Criar unidade técnica estadual para apoiar municípios na estruturação de projetos e parcerias.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
@@ -1250,14 +1300,30 @@
       504,
       505
      ],
-     "nota": "Escritório de Parcerias Estratégicas para modelar PPPs municipais"
+     "nota": "Escritório de Parcerias para modelar PPPs municipais"
     }
    }
   },
   {
-   "id": "p49",
-   "subtema": "Relação com municípios",
-   "proposta": "Manter diálogo institucional permanente com municípios, Poderes, setor produtivo e universidades no planejamento",
+   "id": "p57",
+   "subtema": "Relação com os municípios",
+   "proposta": "Fornecer tecnologia de georreferenciamento para municípios atualizarem cadastro imobiliário e código tributário, elevando a arrecadação própria.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      97
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Participação social e diálogo institucional",
+   "proposta": "Manter diálogo permanente com municípios, Poderes, setor produtivo, universidades e sociedade civil no planejamento das políticas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -1270,25 +1336,48 @@
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
-      76
+      76,
+      172
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p50",
-   "subtema": "Concessões, PPPs e parcerias",
-   "proposta": "Ampliar investimentos privados em infraestrutura por concessões e PPPs, com carteira estruturada, segurança jurídica e gestão de riscos contratuais",
+   "id": "p59",
+   "subtema": "Participação social e diálogo institucional",
+   "proposta": "Implantar plataforma digital de participação social para o cidadão contribuir e acompanhar as políticas públicas.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      143,
+      184
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2394
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Ampliar investimentos privados em infraestrutura por meio de concessões e PPPs, com carteira estruturada, gestão de riscos e transparência.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
-      1469,
-      1471
+      1469
      ],
-     "nota": "Diversificação de fontes: orçamento, crédito, concessões e PPPs"
+     "nota": "Atualização do Programa de Parcerias de Investimentos"
     },
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
@@ -1296,31 +1385,45 @@
       503,
       504
      ],
-     "nota": "PPPs de pequeno e médio vulto para municípios"
+     "nota": "PPPs de pequeno e médio vulto voltadas a municípios"
     }
    }
   },
   {
-   "id": "p51",
-   "subtema": "Concessões, PPPs e parcerias",
-   "proposta": "Incluir cláusula de arbitragem nos contratos de concessão",
+   "id": "p61",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Diversificar as fontes de financiamento da infraestrutura, combinando orçamento, transferências federais, operações de crédito, concessões e PPPs.",
    "n_concorda": 1,
    "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
+    "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
-      683,
-      684,
-      685
+      1471
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p52",
-   "subtema": "Concessões, PPPs e parcerias",
-   "proposta": "Fortalecer a agência reguladora estadual com corpo técnico próprio e investimento em tecnologia",
+   "id": "p62",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Incluir cláusula de arbitragem nos contratos de concessão para solução célere de conflitos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      683,
+      684
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Fortalecer a agência reguladora estadual com corpo técnico próprio e investimento em tecnologia.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1334,9 +1437,25 @@
    }
   },
   {
-   "id": "p53",
-   "subtema": "Concessões, PPPs e parcerias",
-   "proposta": "Regulamentar o marco das organizações da sociedade civil no Estado para simplificar e dar transparência a repasses a entidades",
+   "id": "p64",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Criar conselho de segurança jurídica com reuniões bimestrais entre governo, órgãos de controle e setor empresarial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      660,
+      661
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Regulamentar o marco das organizações da sociedade civil no Estado, simplificando e dando transparência aos repasses a entidades.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1351,16 +1470,14 @@
    }
   },
   {
-   "id": "p54",
-   "subtema": "Concessões, PPPs e parcerias",
-   "proposta": "Criar incentivos e vitrine digital para investimento privado e uso local de incentivos fiscais em projetos sociais",
+   "id": "p66",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Criar vitrine digital de projetos de entidades do terceiro setor certificados pelo Estado para uso de incentivos fiscais locais.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      488,
-      489,
       491,
       492
      ],
@@ -1369,26 +1486,60 @@
    }
   },
   {
-   "id": "p55",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Criar força-tarefa para calcular e auditar a receita média do Estado na transição da Reforma Tributária",
+   "id": "p67",
+   "subtema": "Concessões, parcerias e segurança jurídica",
+   "proposta": "Conceder selo e simplificação de processos a empresas que investirem na manutenção de equipamentos públicos.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      282,
-      283,
-      284
+      488,
+      489
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p56",
+   "id": "p68",
+   "subtema": "Reforma administrativa",
+   "proposta": "Reduzir e reorganizar a estrutura administrativa do Estado, com meta de cerca de 18 secretarias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      106,
+      107,
+      112,
+      507,
+      577
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Reforma administrativa",
+   "proposta": "Definir para cada órgão missão, metas e responsabilidades claras, com estrutura compatível com suas atribuições.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
+      88
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p70",
    "subtema": "Receita e administração tributária",
-   "proposta": "Implantar auditoria fiscal em tempo real, processando 100% das notas fiscais e transações com big data",
+   "proposta": "Modernizar a administração tributária com auditoria em tempo real e uso de big data sobre notas fiscais e transações.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1404,9 +1555,9 @@
    }
   },
   {
-   "id": "p57",
+   "id": "p71",
    "subtema": "Receita e administração tributária",
-   "proposta": "Editar novo Código Tributário Estadual digital, capturando receitas da nova economia e garantindo transição com segurança jurídica",
+   "proposta": "Editar novo Código Tributário Estadual digital, alcançando receitas da nova economia e garantindo estabilidade regulatória.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1422,27 +1573,27 @@
    }
   },
   {
-   "id": "p58",
+   "id": "p72",
    "subtema": "Receita e administração tributária",
-   "proposta": "Classificar contribuintes por conformidade, com canal verde para bons pagadores e alerta de erro antes da multa",
+   "proposta": "Preparar o Estado para a reforma tributária, com força-tarefa de auditoria da receita média e integração ao split payment do IBS.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      288,
-      289,
-      677,
-      678
+      282,
+      283,
+      341,
+      342
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p59",
+   "id": "p73",
    "subtema": "Receita e administração tributária",
-   "proposta": "Implantar comitê interinstitucional de recuperação de créditos com uso de algoritmos e IA contra fraudes",
+   "proposta": "Implantar comitê interinstitucional de recuperação de créditos com uso de algoritmos e IA contra fraudes.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1456,127 +1607,43 @@
    }
   },
   {
-   "id": "p60",
+   "id": "p74",
    "subtema": "Receita e administração tributária",
-   "proposta": "Regulamentar a monetização e compensação de créditos acumulados de ICMS mediante lei específica",
+   "proposta": "Classificar contribuintes por conformidade e oferecer tratamento diferenciado aos bons pagadores.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      300,
-      301
+      288,
+      289
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p61",
+   "id": "p75",
    "subtema": "Receita e administração tributária",
-   "proposta": "Automatizar o ITCD com parâmetros objetivos, reduzindo em 90% os processos manuais",
+   "proposta": "Adotar fiscalização orientativa e preventiva, com malha fiscal que avisa o erro antes da multa e capacitação de servidores e contadores.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      318,
-      319,
-      320
+      315,
+      316,
+      677,
+      678
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p62",
+   "id": "p76",
    "subtema": "Receita e administração tributária",
-   "proposta": "Digitalizar integralmente a concessão de benefícios fiscais (TARE) com transparência das renúncias",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      332,
-      333,
-      334
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Julgar o estoque de processos do Conselho de Contribuintes e digitalizar o contencioso administrativo fiscal",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      327,
-      328,
-      330
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Realizar concurso público para auditor fiscal da receita estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      324,
-      325,
-      326
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Integrar os sistemas da Fazenda à plataforma do Comitê Gestor do IBS para o split payment",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      341,
-      342,
-      343
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p66",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Regulamentar o uso do Fundo de Desenvolvimento Regional, substituindo renúncia fiscal por investimento em competitividade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      285,
-      286,
-      287
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Reformular programa de nota fiscal premiada e educação fiscal cidadã com sorteios mensais",
+   "proposta": "Reformular programa de educação fiscal com sorteios de nota fiscal premiada.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1592,26 +1659,78 @@
    }
   },
   {
-   "id": "p68",
+   "id": "p77",
    "subtema": "Receita e administração tributária",
-   "proposta": "Fiscalizar a mineração com drones volumétricos em parceria com órgãos federais",
+   "proposta": "Digitalizar integralmente os processos tributários (ITCD, TARE, contencioso administrativo) e liquidar o estoque de processos do Conselho de Contribuintes.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
-      309,
-      310,
-      311
+      318,
+      319,
+      327,
+      328,
+      332,
+      333
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p69",
+   "id": "p78",
    "subtema": "Receita e administração tributária",
-   "proposta": "Criar regime especial de fiscalização para e-commerce na BR-153 e na ferrovia",
+   "proposta": "Regulamentar por lei a monetização e compensação de créditos acumulados de ICMS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      300,
+      301
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Receita e administração tributária",
+   "proposta": "Regulamentar o uso do Fundo de Desenvolvimento Regional, substituindo renúncia fiscal por investimento em competitividade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      285,
+      286,
+      287
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p80",
+   "subtema": "Receita e administração tributária",
+   "proposta": "Fiscalizar a mineração com drones volumétricos em parceria com órgãos federais para ampliar a receita.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      309,
+      310
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Receita e administração tributária",
+   "proposta": "Criar regime especial de fiscalização para o comércio eletrônico na BR-153 e na ferrovia.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1625,37 +1744,230 @@
    }
   },
   {
-   "id": "p70",
+   "id": "p82",
    "subtema": "Receita e administração tributária",
-   "proposta": "Capacitar servidores da Fazenda em auditoria orientativa e oferecer manuais de autorregularização a contadores e empresários",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      315,
-      316,
-      317
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Receita e administração tributária",
-   "proposta": "Instituir conselhos de diálogo entre Estado e setor produtivo sobre segurança jurídica e Reforma Tributária, com reuniões bimestrais",
+   "proposta": "Instituir conselho consultivo paritário entre setor produtivo e fisco, com encontros bimestrais sobre a reforma tributária.",
    "n_concorda": 1,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
       335,
-      336,
-      660,
-      661
+      336
      ],
      "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Construir um Estado inteligente, integrado, inovador e orientado por dados, fortalecendo a eficiência da gestão pública.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      140,
+      142,
+      143,
+      145,
+      578
+     ],
+     "nota": "Plataforma única, integração de bases e painéis de dados"
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      333,
+      339,
+      758,
+      776,
+      814
+     ],
+     "nota": "Estado-Plataforma, Governo Sem Papel, digitalização e BI/IA"
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      145
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      450,
+      451,
+      1389,
+      1449,
+      2341
+     ],
+     "nota": "Digitalização de serviços, política estadual de governança digital e decisão baseada em dados."
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Incentivar soluções inovadoras e o uso de dados e evidências na formulação, execução, monitoramento e avaliação das políticas públicas.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      76,
+      89,
+      145,
+      581
+     ],
+     "nota": "Decisões baseadas em dados e avaliação de impacto"
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      306,
+      307,
+      814,
+      815,
+      816
+     ],
+     "nota": "Matriz de efetividade algorítmica e painel de BI para decisão por evidência"
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      158
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      451,
+      2326,
+      2331,
+      2419
+     ],
+     "nota": "Uso de dados, IA e evidências; cultura de inovação na administração."
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Fortalecer a cultura do planejamento governamental de longo prazo.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      69,
+      81,
+      82,
+      542
+     ],
+     "nota": "PPA 2028-2031 e planejamento integrado"
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      190
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1958,
+      2315,
+      2339
+     ],
+     "nota": "Planejamento estratégico permanente, com continuidade além do ciclo eleitoral."
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Priorizar investimentos estratégicos voltados à modernização da administração pública e à melhoria contínua dos serviços públicos.",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      110,
+      114,
+      130,
+      137,
+      140
+     ],
+     "nota": ""
+    },
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      291,
+      292,
+      339,
+      663,
+      664,
+      758
+     ],
+     "nota": "Investimento em tecnologia e modernização da administração e do fisco"
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      194
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1449,
+      1462,
+      2341,
+      2358
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Executar o plano de governo de forma integrada entre órgãos e entidades estaduais, desdobrando as diretrizes estratégicas em programas, projetos e ações.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      69,
+      72,
+      73,
+      90,
+      506
+     ],
+     "nota": ""
+    },
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      216
+     ],
+     "nota": ""
+    },
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1391,
+      1464,
+      1779,
+      2339
+     ],
+     "nota": "Articulação de eixos, diretrizes, ações, metas e indicadores ao orçamento e governança de projetos."
     }
    }
   }
@@ -1673,6 +1985,10 @@
    "60": {
     "texto": "5. Implantar transparência ativa, indicadores públicos e avaliação permanente.",
     "pagina": 4
+   },
+   "69": {
+    "texto": "O modelo de governo é o elo entre propostas e resultados. Sem método, até boas ideias se perdem em burocracia, descontinuidade e improvisação. A administração será organizada para transformar prioridades políticas em planos de trabalho, orçamento, responsáveis, prazos e indicadores.",
+    "pagina": 5
    },
    "72": {
     "texto": "Será instituído um núcleo central de governança responsável por acompanhar as prioridades do governo, integrar secretarias e identificar obstáculos de execução. As reuniões de monitoramento não se limitarão à apresentação de atividades; deverão analisar metas, prazos, riscos e soluções.",
@@ -1806,6 +2122,10 @@
     "texto": "A reforma deverá liberar recursos para saúde, educação, segurança e infraestrutura, reduzir tempo de decisão, melhorar a qualidade dos contratos e restabelecer a capacidade de investimento do Estado.",
     "pagina": 8
    },
+   "137": {
+    "texto": "A transformação digital não se resume a converter formulários em arquivos eletrônicos. Ela exige redesenhar serviços, eliminar exigências desnecessárias e permitir que o cidadão resolva demandas sem deslocamentos, filas ou repetição de documentos.",
+    "pagina": 9
+   },
    "140": {
     "texto": "O governo buscará reunir serviços estaduais em uma plataforma única, com identidade digital, acompanhamento de solicitações e integração entre órgãos. O cidadão não deverá apresentar ao Estado informações que o próprio Estado já possui, salvo quando houver exigência legal ou necessidade de atualização.",
     "pagina": 9
@@ -1906,9 +2226,9 @@
     "texto": "• Ampliação do Portal da Transparência.",
     "pagina": 28
    },
-   "535": {
-    "texto": "Ao final dos 100 dias, o governo deverá possuir diagnóstico confiável, estrutura reorganizada em andamento, prioridades orçamentárias definidas, painéis de acompanhamento, planos setoriais iniciais e primeiras medidas de simplificação e transparência implementadas.",
-    "pagina": 28
+   "542": {
+    "texto": "O plano de metas traduz as diretrizes em resultados que possam ser acompanhados. Os valores de linha de base e metas numéricas definitivas serão estabelecidos após auditoria inicial e incorporados ao PPA e aos planos setoriais.",
+    "pagina": 29
    },
    "577": {
     "texto": "• Reduzir estruturas e burocracias.",
@@ -2134,6 +2454,22 @@
    }
   },
   "governador-to-professora-dorinha-270002544599": {
+   "450": {
+    "texto": "2. Serviços Digitais e Atendimento ao Cidadão​",
+    "pagina": 18
+   },
+   "451": {
+    "texto": "3. Dados, Inteligência Artificial e Decisão Baseada em Evidência​",
+    "pagina": 18
+   },
+   "1389": {
+    "texto": "●​ Digitalizar serviços, integrar dados e apoiar os 139 municípios na modernização de sua gestão;​",
+    "pagina": 56
+   },
+   "1391": {
+    "texto": "●​ Implantar governança de projetos.",
+    "pagina": 56
+   },
    "1449": {
     "texto": "●​ Digitalizar e redesenhar os principais serviços estaduais, com login integrado e cartas de serviço, reduzindo etapas e tempo de atendimento e tornando-os acessíveis, proativos e centrados na experiência do cidadão.​",
     "pagina": 58
@@ -2165,6 +2501,18 @@
    "1958": {
     "texto": "●​ Consolidar a gestão por resultados e o planejamento estratégico como método permanente de condução das políticas do setor.",
     "pagina": 80
+   },
+   "2315": {
+    "texto": "Este eixo resulta da associação de quatro fontes. As demandas da sociedade, captadas em audiências públicas, consultas setoriais e escuta direta de lideranças comunitárias, conferem legitimidade e definem as urgências imediatas. Os diagnósticos já produzidos pelo próprio Estado, planos plurianuais, cartas de intenção estratégica e políticas institucionalizadas demonstram o que está em execução, o que permanece apenas propositivo e onde estão as lacunas de capacidade de entrega. As megatendências globais e nacionais situam o Tocantins em um movimento de transformação mais amplo, impedindo que o plano se limite a responder ao passado recente. E as análises prospectivas do território traduzem essas tendências para a realidade local, considerando a economia, a capacidade fiscal, a base institucional e as vantagens comparativas do Estado. Essas análises foram sintetizadas em objetivos factíveis, inovadores e éticos, expressos em metas mensuráveis e passíveis de auditoria e não apenas de declaração, desdobrados em ações priorizadas segundo a capacidade real de execução do Estado e formulados para ter continuidade para além do ciclo eleitoral. Planejamento, governança, transparência e transformação digital são os instrumentos que organizam um Estado eficiente nos meios, eficaz nas metas e efetivo nos resultados entregues à população, sustentado pelo trabalho de seus agentes públicos.",
+    "pagina": 93
+   },
+   "2326": {
+    "texto": "●​ Consolidar a cultura da inovação na administração pública;​",
+    "pagina": 93
+   },
+   "2331": {
+    "texto": "●​ Fundamentar cada política na realidade do território e em evidência técnica.",
+    "pagina": 93
    },
    "2337": {
     "texto": "●​ Assegurar a sustentabilidade fiscal e previdenciária do Estado como base de execução de todo o plano.",
@@ -2252,10 +2600,6 @@
     "texto": "Ação: Criar equipe capacitada para calcular e auditar a Receita Média do Estado (2024-2028) para a Reforma Tributária.",
     "pagina": 12
    },
-   "284": {
-    "texto": "Resultado Esperado: Garantia do repasse federal futuro, evitando perdas bilionárias.",
-    "pagina": 12
-   },
    "285": {
     "texto": "082. Gestão Estratégica do Fundo de Desenvolvimento Regional (FDR)",
     "pagina": 12
@@ -2332,10 +2676,6 @@
     "texto": "Ação: Fiscalização da Mineração com drones volumétricos em parceira com a Agência Nacional de Mineração e com o Serviço Geológico do Brasil.",
     "pagina": 13
    },
-   "311": {
-    "texto": "Resultado Esperado: Parceria para a regularização e faturamento empresarial e aumento da receita.",
-    "pagina": 13
-   },
    "312": {
     "texto": "091. Programa Tocantins Logística Fast",
     "pagina": 13
@@ -2352,20 +2692,12 @@
     "texto": "Ação: Instituir ciclos contínuos de capacitação para servidores da Fazenda em metodologias de auditoria orientativa e elaborar manuais práticos e workshops de autorregularização direcionados a contadores e empresários locais.",
     "pagina": 13
    },
-   "317": {
-    "texto": "Resultado Esperado: Fortalecer a cultura interna de arrecadação, priorizando a orientação preventiva em detrimento da autuação primária, o que reduz o contencioso administrativo e judicial e eleva o cumprimento voluntário das obrigações fiscais.",
-    "pagina": 13
-   },
    "318": {
     "texto": "093. Desburocratização e Automação do ITCD",
     "pagina": 13
    },
    "319": {
     "texto": "Ação: Estabelecer parâmetros de cálculo e avaliação patrimonial estritamente objetivos para o lançamento do ITCD, visando diminuir em 90% o fluxo de processos manuais e burocráticos mediante declaração automatizada.",
-    "pagina": 13
-   },
-   "320": {
-    "texto": "Resultado Esperado: Garantir a celeridade na regularização de sucessões e doações, reduzir o tempo de espera do cidadão, acelerar o ingresso de receitas e otimizar a máquina pública, liberando a força de trabalho da fiscalização para demandas de maior complexidade.",
     "pagina": 13
    },
    "321": {
@@ -2396,20 +2728,12 @@
     "texto": "Ação: Julgar, por critérios de Justiça Fiscal, o estoque histórico de processos do Conselho de Contribuintes até o final ano fiscal, promovendo a digitalização integral dos procedimentos fiscais e a adaptação do rito processual administrativo ao novo modelo do Imposto sobre Bens e Serviços",
     "pagina": 13
    },
-   "330": {
-    "texto": "Resultado Esperado: Zerar o contencioso represado para destravar créditos tributários retidos, garantindo o devido processo tecnológico aos cidadãos e empresas, e preparando a estrutura",
-    "pagina": 13
-   },
    "332": {
     "texto": "097. Concessão Digital de Benefícios Fiscais (TARE 100% digital)",
     "pagina": 14
    },
    "333": {
     "texto": "Ação: Digitalizar e virtualizar integralmente os processos administrativos de concessão de benefícios fiscais, consubstanciados nos Termos de Acordo de Regime Especial (TARE), implementando um fluxo procedimental 100% eletrônico e integrado.",
-    "pagina": 14
-   },
-   "334": {
-    "texto": "Resultado Esperado: Eliminar o passivo burocrático e físico, garantindo celeridade, rastreabilidade e segurança jurídica na atração de novos investimentos. A medida assegura, ainda, o devido processo tecnológico e a transparência governamental na gestão das renúncias fiscais.",
     "pagina": 14
    },
    "335": {
@@ -2420,12 +2744,12 @@
     "texto": "Ação: Instituir um conselho consultivo com composição paritária entre representantes do setor produtivo e servidores da Secretaria da Fazenda (SEFAZ), estabelecendo um calendário de encontros bimestrais focados no debate sobre as regulamentações da Reforma Tributária e na formulação conjunta de propostas para a melhoria do ambiente fiscal tocantinense.",
     "pagina": 14
    },
-   "339": {
-    "texto": "Ação: Implementar a simplificação, virtualização e digitalização integral dos ritos processuais tributários, promovendo a transição para um modelo de “Estado-Plataforma”, com a meta objetiva de diminuir o volume de novos e atuais litígios administrativos fiscais.",
+   "338": {
+    "texto": "099. Simplificação e Redução do Litígio Administrativo Fiscal",
     "pagina": 14
    },
-   "340": {
-    "texto": "Resultado Esperado: Desafogar o contencioso do Estado e reduzir os custos de conformidade para o setor produtivo, assegurando sempre o devido processo tecnológico ao contribuinte. O ambiente processual digitalizado promove maior celeridade, eficiência institucional e segurança jurídica na resolução de conflitos.",
+   "339": {
+    "texto": "Ação: Implementar a simplificação, virtualização e digitalização integral dos ritos processuais tributários, promovendo a transição para um modelo de “Estado-Plataforma”, com a meta objetiva de diminuir o volume de novos e atuais litígios administrativos fiscais.",
     "pagina": 14
    },
    "341": {
@@ -2434,10 +2758,6 @@
    },
    "342": {
     "texto": "Ação: Desenvolver e integrar os sistemas de processamento da SEFAZ à plataforma do futuro Comitê Gestor do IBS, preparando a infraestrutura do Estado-Plataforma para a liquidação financeira simultânea (split payment) nas transações comerciais eletrônicas.",
-    "pagina": 14
-   },
-   "343": {
-    "texto": "Resultado Esperado: Assegurar a arrecadação em tempo real do novo IVA estadual no momento da transação, zerar a evasão e a inadimplência e proteger o fluxo de caixa do Estado durante o complexo período de transição tributária estipulado pela EC 132/2023.",
     "pagina": 14
    },
    "485": {
@@ -2486,6 +2806,10 @@
    },
    "562": {
     "texto": "Ação: Priorizar microempresas locais para serviços de manutenção e limpeza. Resultado Esperado:",
+    "pagina": 22
+   },
+   "563": {
+    "texto": "Custeio da máquina irrigando a economia local.",
     "pagina": 22
    },
    "660": {
@@ -2548,10 +2872,6 @@
     "texto": "Ação: Cláusula de arbitragem em concessões.",
     "pagina": 26
    },
-   "685": {
-    "texto": "Resultado Esperado: Solução célere de conflitos.",
-    "pagina": 26
-   },
    "686": {
     "texto": "210. Transparência Ativa",
     "pagina": 26
@@ -2566,6 +2886,10 @@
    },
    "725": {
     "texto": "Ação: Revisão das leis de todos os servidores públicos, seus planos de cargos e salários, buscando a valorização em comparação com os índices nacionais, envolvendo todos os agentes públicos, iniciando pelo Quadro Geral.",
+    "pagina": 27
+   },
+   "726": {
+    "texto": "Resultado Esperado: Cultura de promoção, incentivo e proteção aos servidores.",
     "pagina": 27
    },
    "727": {
@@ -2610,6 +2934,10 @@
    },
    "740": {
     "texto": "Ação: Credenciamento ativo de unidades de saúde em todas as regiões do Tocantins e centros especializados",
+    "pagina": 28
+   },
+   "741": {
+    "texto": "Resultado Esperado: Atendimento digno no interior.",
     "pagina": 28
    },
    "742": {

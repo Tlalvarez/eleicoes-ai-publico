@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-rr.json",
-  "gerado_em": "2026-09-14T14:20:40Z",
-  "exportado_em": "2026-09-14T14:32:06Z"
+  "gerado_em": "2026-09-14T17:47:38Z",
+  "exportado_em": "2026-09-14T17:47:58Z"
  },
  "candidatos": [
   {
@@ -42,8 +43,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Reformular e ampliar o portal da transparência do estado, elevando a qualidade e a quantidade das informações públicas divulgadas",
+   "subtema": "Transparência e acesso à informação",
+   "proposta": "Ampliar e reformular o portal da transparência/dados abertos do estado, com divulgação de contratos, despesas e informações de gestão",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -51,7 +52,7 @@
      "blocos": [
       112
      ],
-     "nota": "Parte de diagnóstico de que o estado é penúltimo em transparência"
+     "nota": "Inclui contratos, obras, filas, licenças ambientais e indicadores sociais"
     },
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
@@ -59,45 +60,23 @@
       117,
       126
      ],
-     "nota": "Ampliação do Portal Roraima Aberto"
+     "nota": "Ampliação do Portal Roraima Aberto e portal de dados abertos"
     },
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
      "blocos": [
       670,
       691,
-      692
+      692,
+      702
      ],
-     "nota": ""
+     "nota": "Programa estadual de elevação do índice de transparência com revisão integral do portal"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Publicar em formato aberto e pesquisável contratos, despesas, obras e nomeações do governo estadual",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      112
-     ],
-     "nota": "Inclui filas, licenças ambientais e indicadores sociais"
-    },
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      126,
-      127
-     ],
-     "nota": "Publicação periódica em formato pesquisável"
-    }
-   }
-  },
-  {
-   "id": "p3",
-   "subtema": "Transparência e dados abertos",
+   "subtema": "Transparência e acesso à informação",
    "proposta": "Criar painel público de metas, resultados e indicadores do governo, com monitoramento acessível ao cidadão",
    "n_concorda": 3,
    "posicoes": {
@@ -106,7 +85,7 @@
      "blocos": [
       112
      ],
-     "nota": "Portal de metas com monitoramento público"
+     "nota": ""
     },
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
@@ -128,25 +107,24 @@
    }
   },
   {
-   "id": "p4",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Instituir programa estadual específico de elevação do índice de transparência, com plano publicado",
+   "id": "p3",
+   "subtema": "Transparência e acesso à informação",
+   "proposta": "Publicar periodicamente despesas, contratos e nomeações em formato pesquisável",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rr-soldado-sampaio-230002551571": {
+    "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
      "blocos": [
-      692,
-      702
+      127
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p5",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Divulgar relatórios de execução fiscal também em versão de linguagem simples, além do formato técnico legal",
+   "id": "p4",
+   "subtema": "Transparência e acesso à informação",
+   "proposta": "Publicar relatórios de execução fiscal também em linguagem simples, além do formato técnico legal",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -159,8 +137,8 @@
    }
   },
   {
-   "id": "p6",
-   "subtema": "Transparência e dados abertos",
+   "id": "p5",
+   "subtema": "Transparência e acesso à informação",
    "proposta": "Publicar o Diário Oficial diariamente",
    "n_concorda": 1,
    "posicoes": {
@@ -174,9 +152,9 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Transparência e dados abertos",
-   "proposta": "Realizar auditoria geral nas contas e atos da gestão estadual anterior",
+   "id": "p6",
+   "subtema": "Transparência e acesso à informação",
+   "proposta": "Realizar auditoria geral das contas e atos da gestão estadual anterior",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -190,9 +168,26 @@
    }
   },
   {
+   "id": "p7",
+   "subtema": "Transparência e acesso à informação",
+   "proposta": "Modernizar e aperfeiçoar os sistemas contábeis, fiscais e orçamentários do estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      671,
+      691,
+      692
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p8",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Modernizar a gestão pública com governo digital, simplificação de processos e combate à burocracia",
+   "proposta": "Modernizar a gestão pública com governo digital, ampliação de serviços on-line e simplificação de processos e burocracia",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -215,7 +210,8 @@
      "blocos": [
       665,
       666,
-      667
+      667,
+      707
      ],
      "nota": ""
     }
@@ -231,8 +227,7 @@
      "posicao": "concorda",
      "blocos": [
       675,
-      676,
-      707
+      676
      ],
      "nota": ""
     }
@@ -241,7 +236,7 @@
   {
    "id": "p10",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Implantar centrais de atendimento integrado tipo Poupa Tempo, com autoatendimento e aplicativo único do cidadão",
+   "proposta": "Implantar centrais de atendimento integrado ao cidadão no modelo Poupa Tempo",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -259,22 +254,23 @@
   {
    "id": "p11",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Dispensar licenças e alvarás para atividades de baixo risco e fixar prazo definido de resposta nas autorizações estaduais",
+   "proposta": "Dispensar licenças e alvarás estaduais para atividades de baixo risco, com prazo definido de resposta e digitalização dos processos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
      "blocos": [
+      98,
       134
      ],
-     "nota": "Levar o modelo Descomplica de Boa Vista ao âmbito estadual"
+     "nota": "Levar o modelo Descomplica de Boa Vista para a esfera estadual"
     }
    }
   },
   {
    "id": "p12",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Integrar sistemas e dados do estado com interoperabilidade, cadastro unificado do cidadão e barramento de APIs",
+   "proposta": "Integrar sistemas e dados do estado, com interoperabilidade, barramento de APIs e cadastro unificado do cidadão",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -291,7 +287,7 @@
   {
    "id": "p13",
    "subtema": "Digitalização e desburocratização",
-   "proposta": "Modernizar a infraestrutura tecnológica do estado com nuvem híbrida, backup, monitoramento e conformidade com a LGPD",
+   "proposta": "Modernizar a infraestrutura tecnológica do estado, com datacenter, nuvem híbrida, monitoramento contínuo, conformidade com a LGPD e gestão de riscos cibernéticos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -306,25 +302,8 @@
   },
   {
    "id": "p14",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Executar plano estratégico plurianual de transformação digital do estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      661,
-      710,
-      711
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Participação e controle social",
-   "proposta": "Instituir mecanismo permanente de participação da população na definição de parcelas do orçamento estadual",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Instituir participação popular na definição do orçamento estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -332,7 +311,7 @@
      "blocos": [
       113
      ],
-     "nota": "Orçamento participativo com audiências"
+     "nota": "Orçamento participativo com audiências públicas"
     },
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
@@ -340,150 +319,16 @@
       618,
       619,
       643,
-      695,
-      696,
       697
      ],
-     "nota": "Consulta Popular institucionalizada"
+     "nota": "Consulta Popular institucionalizada sobre parcelas do orçamento"
     }
    }
   },
   {
-   "id": "p16",
-   "subtema": "Participação e controle social",
-   "proposta": "Dividir o estado em regiões administrativas para realização das audiências públicas e do orçamento participativo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      113
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Participação e controle social",
-   "proposta": "Realizar audiências públicas periódicas de prestação de contas do governo, presenciais e transmitidas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      466
-     ],
-     "nota": ""
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      916
-     ],
-     "nota": "Prestação de contas periódica à sociedade como compromisso do plano"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Participação e controle social",
-   "proposta": "Reestruturar os conselhos estaduais de participação (juventude, mulheres, indígenas, LGBT+, cultura, segurança alimentar e meio ambiente)",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      114
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Participação e controle social",
-   "proposta": "Fortalecer ouvidorias e corregedorias, com proteção a denunciantes de irregularidades",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      114
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Captação de recursos e escritório de projetos",
-   "proposta": "Estruturar captação de recursos federais, internacionais, de fundos constitucionais e climáticos para investimento do estado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      115
-     ],
-     "nota": ""
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      549,
-      550,
-      593,
-      636
-     ],
-     "nota": "Carteira de projetos bancáveis em infraestrutura, saneamento e meio ambiente"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Captação de recursos e escritório de projetos",
-   "proposta": "Criar escritório de projetos no núcleo de governo para estruturar e acompanhar iniciativas estratégicas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      115
-     ],
-     "nota": "Foco em captação de recursos"
-    },
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      122
-     ],
-     "nota": "Foco em prazo, custo e entrega das prioridades"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Captação de recursos e escritório de projetos",
-   "proposta": "Implantar o Sistema Estadual de Captação (SECAP) na SECONV, com etapas de prospecção, estruturação, captação, execução e prestação de contas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      605,
-      606,
-      607,
-      635
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Planejamento e orçamento",
-   "proposta": "Elaborar planejamento plurianual com metas de mandato vinculadas ao orçamento",
+   "id": "p15",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Adotar planejamento plurianual com metas de mandato orientando o orçamento",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -501,37 +346,14 @@
       641,
       642
      ],
-     "nota": "PPA 2027–2030 alinhado à estratégia de captação"
+     "nota": "PPA 2027–2030 alinhado à estratégia de captação de recursos"
     }
    }
   },
   {
-   "id": "p24",
-   "subtema": "Planejamento e orçamento",
-   "proposta": "Monitorar periodicamente a execução orçamentária para elevar o índice de sucesso do planejamento",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      116
-     ],
-     "nota": ""
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      695,
-      697
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Planejamento e orçamento",
-   "proposta": "Vincular a destinação de recursos ao desempenho dos programas, priorizando os que atingem metas e reavaliando os que não atingem",
+   "id": "p16",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Vincular a destinação de recursos ao desempenho: cada programa com objetivos, metas e indicadores, com reavaliação dos que não cumprirem resultados",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -544,8 +366,24 @@
    }
   },
   {
-   "id": "p26",
-   "subtema": "Planejamento e orçamento",
+   "id": "p17",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Monitorar periodicamente a execução orçamentária para elevar o índice de sucesso do planejamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      695,
+      697
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Orçamento e planejamento",
    "proposta": "Realizar diagnóstico fiscal completo nos primeiros 45 dias de governo como base do planejamento",
    "n_concorda": 1,
    "posicoes": {
@@ -559,41 +397,23 @@
    }
   },
   {
-   "id": "p27",
-   "subtema": "Planejamento e orçamento",
-   "proposta": "Modernizar os sistemas contábeis, fiscais e orçamentários do estado",
+   "id": "p19",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Dividir o estado em regiões administrativas para realizar audiências públicas descentralizadas",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rr-soldado-sampaio-230002551571": {
+    "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
      "blocos": [
-      55,
-      671,
-      691,
-      692
+      113
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Planejamento e orçamento",
-   "proposta": "Instalar sala de situação permanente no governo, com reuniões periódicas do secretariado e painel de indicadores",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      465
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Servidores, folha e carreiras",
+   "id": "p20",
+   "subtema": "Servidor público",
    "proposta": "Promover capacitação continuada dos servidores estaduais",
    "n_concorda": 2,
    "posicoes": {
@@ -607,16 +427,17 @@
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
      "blocos": [
-      734
+      734,
+      750
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p30",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Criar universidade digital do servidor para formação em governo digital, segurança da informação e inteligência artificial",
+   "id": "p21",
+   "subtema": "Servidor público",
+   "proposta": "Criar a Universidade Digital do Servidor para formação em governo digital, segurança da informação e inteligência artificial",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -632,8 +453,8 @@
    }
   },
   {
-   "id": "p31",
-   "subtema": "Servidores, folha e carreiras",
+   "id": "p22",
+   "subtema": "Servidor público",
    "proposta": "Garantir o pagamento em dia da folha e tratar pendências históricas com cronograma público e lastro fiscal demonstrado",
    "n_concorda": 1,
    "posicoes": {
@@ -642,14 +463,14 @@
      "blocos": [
       130
      ],
-     "nota": "Recusa reajuste sem estudo de impacto"
+     "nota": "Recusa reajuste sem estudo prévio de impacto"
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Construir planos de carreira com estudo atuarial prévio nas categorias sem plano ou com plano defasado",
+   "id": "p23",
+   "subtema": "Servidor público",
+   "proposta": "Construir planos de carreira precedidos de estudo atuarial nas categorias sem plano ou com plano defasado",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -662,9 +483,9 @@
    }
   },
   {
-   "id": "p33",
-   "subtema": "Servidores, folha e carreiras",
-   "proposta": "Manter diálogo permanente com sindicatos e categorias, com calendário de negociação definido",
+   "id": "p24",
+   "subtema": "Servidor público",
+   "proposta": "Manter diálogo permanente com sindicatos e categorias, com calendário fixo de negociação",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -677,23 +498,21 @@
    }
   },
   {
-   "id": "p34",
-   "subtema": "Responsabilidade fiscal",
-   "proposta": "Conduzir a execução do plano de governo com disciplina fiscal e respeito à Lei de Responsabilidade Fiscal",
+   "id": "p25",
+   "subtema": "Gestão e governança",
+   "proposta": "Fazer prestação de contas periódica à sociedade, com indicadores, responsáveis e prazos por compromisso",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
      "blocos": [
-      54,
-      111
+      466
      ],
-     "nota": ""
+     "nota": "Audiências públicas presenciais e transmitidas"
     },
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
      "blocos": [
-      600,
       916
      ],
      "nota": ""
@@ -701,24 +520,130 @@
    }
   },
   {
-   "id": "p35",
-   "subtema": "Receitas e política tributária",
-   "proposta": "Reduzir a carga tributária estadual sobre trabalhadores e famílias",
+   "id": "p26",
+   "subtema": "Gestão e governança",
+   "proposta": "Instalar sala de situação permanente no núcleo de governo, com reuniões periódicas do secretariado e painel de indicadores",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rr-soldado-sampaio-230002551571": {
+    "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
      "blocos": [
-      592
+      465
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p36",
-   "subtema": "Receitas e política tributária",
-   "proposta": "Enviar à Assembleia Legislativa projeto de lei de isenção de IPVA para motocicletas de até 160 cilindradas",
+   "id": "p27",
+   "subtema": "Gestão e governança",
+   "proposta": "Criar escritório de projetos ligado ao núcleo de governo para acompanhar prazo, custo e entrega das iniciativas prioritárias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      120,
+      122
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Gestão e governança",
+   "proposta": "Estabelecer canais formais e permanentes de cooperação com o Tribunal de Contas, o Ministério Público e a Controladoria-Geral do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      468,
+      469
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Captação de recursos",
+   "proposta": "Estruturar unidade dedicada à captação de recursos federais e internacionais para projetos do estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      115
+     ],
+     "nota": "Escritório de projetos estratégicos para captação"
+    },
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      549,
+      550,
+      593,
+      605,
+      606,
+      607,
+      635
+     ],
+     "nota": "SECAP com cinco etapas, na estrutura da SECONV"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Captação de recursos",
+   "proposta": "Montar carteira de projetos bancáveis em infraestrutura, saneamento e meio ambiente para acessar bancos e fundos climáticos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      550,
+      636
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Participação e controle social",
+   "proposta": "Reestruturar os conselhos estaduais de participação social (juventude, mulheres, indígenas, LGBT+, cultura, segurança alimentar e meio ambiente)",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      114
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Participação e controle social",
+   "proposta": "Fortalecer ouvidorias e corregedorias, com proteção a denunciantes de irregularidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      114
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Receita e tributos",
+   "proposta": "Conceder isenção de IPVA para motocicletas de até 160 cilindradas, por projeto de lei enviado à Assembleia Legislativa",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -736,9 +661,9 @@
    }
   },
   {
-   "id": "p37",
-   "subtema": "Receitas e política tributária",
-   "proposta": "Regulamentar e operacionalizar a lei do ITCMD com desconto de 10% à vista e parcelamento em até 36 vezes",
+   "id": "p34",
+   "subtema": "Receita e tributos",
+   "proposta": "Regulamentar e operacionalizar a lei estadual do ITCMD, com desconto de 10% à vista e parcelamento em até 36 vezes",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -757,9 +682,59 @@
    }
   },
   {
+   "id": "p35",
+   "subtema": "Receita e tributos",
+   "proposta": "Aliviar a carga tributária sobre trabalhadores e famílias, preservando o equilíbrio fiscal",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      592,
+      600
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p36",
+   "subtema": "Comunicação pública",
+   "proposta": "Modernizar e expandir a comunicação pública estadual, incluindo a Rádio Roraima, com licença de operação em FM, novos estúdios, núcleo de mídias sociais e portal de notícias",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      820,
+      857,
+      859,
+      862
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Comunicação pública",
+   "proposta": "Firmar cooperação técnica com a EBC e integrar a rádio pública estadual à Rede Nacional de Comunicação Pública",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      863,
+      864
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p38",
-   "subtema": "Relação com municípios e órgãos de controle",
-   "proposta": "Manter cooperação institucional com os 15 municípios sem distinção partidária",
+   "subtema": "Relação com municípios",
+   "proposta": "Cooperar institucionalmente com os 15 municípios do estado, sem distinção partidária",
    "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -773,15 +748,32 @@
   },
   {
    "id": "p39",
-   "subtema": "Relação com municípios e órgãos de controle",
-   "proposta": "Criar canais formais e permanentes de cooperação com o Tribunal de Contas do Estado, o Ministério Público e a Controladoria-Geral do Estado",
-   "n_concorda": 1,
+   "subtema": "Digitalização e desburocratização",
+   "proposta": "Elaborar e executar um Plano Estratégico de Transformação Digital do estado para o período 2027–2030",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      115
+     ],
+     "nota": "Propõe modernizar a gestão com governo digital, simplificação de serviços e combate à burocracia."
+    },
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
      "blocos": [
-      468,
-      469
+      54,
+      123,
+      133,
+      134
+     ],
+     "nota": "Propõe Descomplica Roraima com digitalização de processos e desburocratização estadual, embora sem plano formal 2027-2030."
+    },
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      710,
+      711
      ],
      "nota": ""
     }
@@ -794,9 +786,9 @@
     "texto": "Com desburocratização e tecnologia, tornar Roraima um Estado muito aberto a quem quer empreender e ganhar dinheiro. Reduzir de vez também a pobreza e a miséria. Tudo isso sem descuidar das contas públicas e da gestão.",
     "pagina": 6
    },
-   "111": {
-    "texto": "Não existe conquista social efetiva sem estabilidade fiscal. Finanças em ordem significam previsibilidade para introduzir políticas públicas que vão beneficiar efetivamente a população. De nada adianta iniciar projetos que não irão à frente por falta de recursos no longo prazo. Por isso, a disciplina fiscal que orientou o plano da eleição suplementar continua sendo a base deste plano.",
-    "pagina": 13
+   "98": {
+    "texto": "• Programa Descomplica: primeiro lugar no Ranking Nacional de Dispensa de Alvarás e",
+    "pagina": 11
    },
    "112": {
     "texto": "Num mandato de quatro anos, ela ganha duas ferramentas que há cinco meses não comportavam: planejamento plurianual e orçamento vinculado ao resultado.",
@@ -816,6 +808,10 @@
    },
    "117": {
     "texto": "• Ampliação do Portal Roraima Aberto com painel público de resultados, atualizado periodicamente e acessível a qualquer cidadão.",
+    "pagina": 13
+   },
+   "120": {
+    "texto": "Entrega mais rápida de obra e serviço público depende de processo ágil, projeto bem feito, servidor capacitado e acompanhamento sistemático — o tipo de investimento que não aparece em nenhum balanço, mas é o que determina se a obra sai do papel no prazo certo.",
     "pagina": 13
    },
    "121": {
@@ -852,6 +848,10 @@
    },
    "132": {
     "texto": "• ​Plano de carreira construído com estudo atuarial prévio, nas categorias em que ele ainda não existe ou está defasado.",
+    "pagina": 14
+   },
+   "133": {
+    "texto": "2.5. Descomplica Roraima",
     "pagina": 14
    },
    "134": {
@@ -906,10 +906,6 @@
    }
   },
   "governador-rr-soldado-sampaio-230002551571": {
-   "55": {
-    "texto": "• Gestão e transparência: necessidade de modernizar e aperfeiçoar os sistemas contábeis, fiscais e orçamentários do governo, ampliar a oferta de serviços públicos digitais e elevar o índice de transparência.",
-    "pagina": 7
-   },
    "549": {
     "texto": "6.6. Articulação e Captação",
     "pagina": 38
@@ -1018,10 +1014,6 @@
     "texto": "• Consulta popular institucionalizada.",
     "pagina": 44
    },
-   "661": {
-    "texto": "Modernizar o Estado é tornar a vida do cidadão mais simples e o governo mais eficiente. Este eixo organiza a transformação digital dos serviços do Estado, a transparência ativa, a integridade contábil-fiscal e a modernização administrativa, com base no Plano Estratégico de Transformação Digital 2027–2030, na Lei Estadual nº 1.826/2023, no PDTIC da SEGOD e na Lei Federal de Governo Digital.",
-    "pagina": 45
-   },
    "665": {
     "texto": "• Aproximar o cidadão dos serviços públicos por meio do digital.",
     "pagina": 45
@@ -1094,10 +1086,6 @@
     "texto": "8.9. Sucesso do Planejamento Orçamentário e Orçamento",
     "pagina": 48
    },
-   "696": {
-    "texto": "Participativo",
-    "pagina": 48
-   },
    "697": {
     "texto": "Implantação de instrumentos para elevar o índice de sucesso do planejamento orçamentário, com monitoramento periódico da execução, e instituição da Consulta Popular (em sintonia com o Eixo 7).",
     "pagina": 48
@@ -1153,6 +1141,30 @@
    "778": {
     "texto": "Digital do Servidor em operação.",
     "pagina": 52
+   },
+   "820": {
+    "texto": "• Modernizar a comunicação pública estadual.",
+    "pagina": 54
+   },
+   "857": {
+    "texto": "10.7. Rádio Roraima — Modernização, Expansão e Integração",
+    "pagina": 56
+   },
+   "859": {
+    "texto": "Acompanhamento ágil dos trâmites regulatórios junto ao Ministério das Comunicações e à Anatel para emissão da Licença de Operação em FM;",
+    "pagina": 56
+   },
+   "862": {
+    "texto": "Visual com câmeras robóticas e sistemas de corte automatizado por voz; estruturação do núcleo de mídias sociais e portal de notícias integrado.",
+    "pagina": 57
+   },
+   "863": {
+    "texto": "10.8. Cooperação com a EBC e Sistema de Comunicação Pública",
+    "pagina": 57
+   },
+   "864": {
+    "texto": "Adoção de Termo de Cooperação Técnica com a Empresa Brasileira de Comunicação (EBC), com a Rádio Roraima integrando oficialmente a Rede Nacional de Comunicação Pública (RNCP), com intercâmbio bidirecional de conteúdo, capacitação profissional e projeção de Roraima no debate nacional.",
+    "pagina": 57
    },
    "916": {
     "texto": "A coligação Roraima Segue em Frente assume, com este documento, o compromisso de execução transparente e fiscalmente responsável, com prestação de contas periódica à sociedade roraimense. Cada eixo tem indicadores; cada compromisso terá responsáveis; cada entrega terá prazo. Esse é o pacto.",

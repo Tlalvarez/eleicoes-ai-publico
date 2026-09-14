@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-pb.json",
-  "gerado_em": "2026-09-14T07:35:59Z",
-  "exportado_em": "2026-09-14T07:51:49Z"
+  "gerado_em": "2026-09-14T17:32:49Z",
+  "exportado_em": "2026-09-14T17:33:09Z"
  },
  "candidatos": [
   {
@@ -58,8 +59,8 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Adotar gestão por resultados na administração estadual, com metas, indicadores e avaliação periódica dos programas e secretarias",
+   "subtema": "Metas e resultados",
+   "proposta": "Adotar gestão por resultados, com metas e indicadores definidos para os programas e secretarias e apuração pública dos resultados",
    "n_concorda": 4,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -67,15 +68,21 @@
      "blocos": [
       169
      ],
-     "nota": "Metas e indicadores para todos os grandes programas estaduais"
+     "nota": "Metas, indicadores e avaliação em todos os grandes programas estaduais"
+    },
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      175
+     ],
+     "nota": "Mecanismos de monitoramento de desempenho da gestão"
     },
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
      "blocos": [
-      70,
-      71
+      70
      ],
-     "nota": "Metas pactuadas, nominadas e apuradas publicamente"
+     "nota": ""
     },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
@@ -84,21 +91,14 @@
       1052,
       1064
      ],
-     "nota": "Metas por secretaria em painel único"
-    },
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      175
-     ],
-     "nota": "Mecanismos de monitoramento de desempenho"
+     "nota": ""
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Publicar painel aberto com indicadores e execução, permitindo acompanhamento pela sociedade",
+   "subtema": "Metas e resultados",
+   "proposta": "Publicar painel aberto de acompanhamento da execução do gasto, das metas e das obras estaduais",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -108,7 +108,7 @@
       198,
       1052
      ],
-     "nota": "Painel único de metas e acompanhamento de cada real e das obras"
+     "nota": "Painel único de metas por secretaria e acompanhamento de cada real"
     },
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
@@ -121,15 +121,16 @@
   },
   {
    "id": "p3",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Atrelar bônus de desempenho a indicadores auditáveis com verificação independente",
+   "subtema": "Metas e resultados",
+   "proposta": "Vincular bônus de desempenho de secretarias e servidores a indicadores auditáveis, com verificação independente",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
       1052,
-      1064
+      1064,
+      1083
      ],
      "nota": ""
     }
@@ -137,23 +138,8 @@
   },
   {
    "id": "p4",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Firmar contratos de gestão entre governo e secretarias, com avaliação periódica e revisão anual do planejamento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-efraim-filho-150002538692": {
-     "posicao": "concorda",
-     "blocos": [
-      71
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p5",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Instituir um Centro de Governo responsável por conduzir o ciclo do planejamento à entrega",
+   "subtema": "Metas e resultados",
+   "proposta": "Criar um Centro de Governo responsável por conduzir o ciclo completo do planejamento à entrega",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -166,9 +152,24 @@
    }
   },
   {
+   "id": "p5",
+   "subtema": "Metas e resultados",
+   "proposta": "Firmar contratos de gestão com metas claras entre o governo e as secretarias, com avaliação periódica e revisão anual do planejamento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      71
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p6",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Concluir obras paralisadas, com mapa/painel público, comitê de retomada e metas anuais de conclusão",
+   "subtema": "Metas e resultados",
+   "proposta": "Concluir as obras paralisadas do Estado, com mapa público, comitê de retomada e metas anuais de conclusão",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -183,23 +184,8 @@
   },
   {
    "id": "p7",
-   "subtema": "Gestão por resultados e metas",
-   "proposta": "Usar inteligência artificial para aperfeiçoar a governança da administração pública estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      1053
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
    "subtema": "Transparência e integridade",
-   "proposta": "Ampliar a transparência ativa e o acesso à informação sobre gastos e ações do governo",
+   "proposta": "Ampliar a transparência ativa e o acesso à informação sobre o governo estadual",
    "n_concorda": 4,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -215,19 +201,34 @@
       175,
       178
      ],
-     "nota": "Melhorias permanentes no Portal da Transparência"
+     "nota": ""
     },
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
      "blocos": [
       70
      ],
-     "nota": "Transparência de segunda geração e controle social fortalecido"
+     "nota": "Transparência de \"segunda geração\", com dados que respondem ao cidadão"
     },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
       1069
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Transparência e integridade",
+   "proposta": "Aperfeiçoar continuamente o Portal da Transparência do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      178
      ],
      "nota": ""
     }
@@ -251,7 +252,7 @@
   {
    "id": "p10",
    "subtema": "Transparência e integridade",
-   "proposta": "Estruturar política permanente de integridade, compliance e combate à corrupção e ao desperdício",
+   "proposta": "Instituir política permanente de integridade e combate à corrupção e ao desperdício na administração estadual",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -259,14 +260,14 @@
      "blocos": [
       166
      ],
-     "nota": "Controle de despesas e combate ao desperdício"
+     "nota": ""
     },
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
      "blocos": [
       70
      ],
-     "nota": "Integridade por lei, com planos em todos os órgãos"
+     "nota": "Integridade estabelecida por lei, com planos em todos os órgãos"
     },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
@@ -280,7 +281,7 @@
   {
    "id": "p11",
    "subtema": "Transparência e integridade",
-   "proposta": "Fortalecer a Controladoria-Geral, integrando auditoria, corregedoria e ouvidoria em plataforma única",
+   "proposta": "Fortalecer a Controladoria-Geral, reunindo auditoria, corregedoria e ouvidoria em plataforma única",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -294,8 +295,54 @@
   },
   {
    "id": "p12",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Valorizar os servidores públicos com capacitação, modernização das carreiras e melhores condições de trabalho",
+   "subtema": "Transparência e integridade",
+   "proposta": "Fortalecer o controle social, permitindo que a sociedade civil fiscalize o progresso das entregas do governo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      70,
+      71
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Realizar concursos públicos regulares para repor e renovar os quadros do Estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-pb-camilo-duarte-150002552603": {
+     "posicao": "concorda",
+     "blocos": [
+      62
+     ],
+     "nota": "Concursos periódicos para repor o quadro"
+    },
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      171
+     ],
+     "nota": ""
+    },
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      1055,
+      1084
+     ],
+     "nota": "Calendário regular com foco em saúde, educação, segurança e fiscalização"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Modernizar as carreiras e os planos de carreira do funcionalismo estadual",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -310,22 +357,21 @@
      "blocos": [
       171
      ],
-     "nota": "Atualização da Política de Gestão de Pessoas"
+     "nota": "Vinculada à atualização da Política de Gestão de Pessoas"
     },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
-      1055,
       1083
      ],
-     "nota": "Planos de carreira fiscalmente responsáveis e mesa permanente de diálogo"
+     "nota": "Planos fiscalmente responsáveis"
     }
    }
   },
   {
-   "id": "p13",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Adotar mérito e desempenho como critério de progressão na carreira, com bônus por metas cumpridas",
+   "id": "p15",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Adotar critérios de mérito e desempenho na progressão e na valorização dos servidores",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -346,39 +392,38 @@
    }
   },
   {
-   "id": "p14",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Realizar concursos públicos regulares para repor e renovar os quadros do Estado",
+   "id": "p16",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Investir na capacitação e formação continuada dos servidores públicos",
    "n_concorda": 3,
    "posicoes": {
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      174
+     ],
+     "nota": ""
+    },
     "governador-pb-lucas-ribeiro-150002551789": {
      "posicao": "concorda",
      "blocos": [
-      171
+      173
      ],
-     "nota": ""
+     "nota": "Foco em tecnologia, gestão digital e análise de dados"
     },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
-      1055,
-      1084
+      1085
      ],
-     "nota": "Calendário regular, com foco em saúde, educação, segurança e fiscalização"
-    },
-    "governador-pb-camilo-duarte-150002552603": {
-     "posicao": "concorda",
-     "blocos": [
-      62
-     ],
-     "nota": "Concursos periódicos para repor o quadro"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p15",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Fortalecer a escola de governo estadual (ESPEP) como centro de formação e inovação para servidores",
+   "id": "p17",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Modernizar e ampliar a Escola de Serviço Público da Paraíba (ESPEP) como escola de governo",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -394,44 +439,14 @@
      "blocos": [
       1085
      ],
-     "nota": "EaD para alcançar o servidor do interior"
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Capacitar os servidores para a era digital com formação contínua em tecnologia, gestão digital e análise de dados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      173
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Promover a saúde e o bem-estar dos servidores, com monitoramento de riscos psicossociais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      173
-     ],
-     "nota": ""
+     "nota": "Formação de lideranças e EAD para o servidor do interior"
     }
    }
   },
   {
    "id": "p18",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Conceder reajustes salariais aos servidores dentro dos limites de sustentabilidade fiscal",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Conceder reajustes salariais aos servidores dentro de parâmetros fiscalmente sustentáveis",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -445,15 +460,52 @@
   },
   {
    "id": "p19",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Manter a estabilidade dos servidores, acabar com as terceirizações e efetivar os contratados precariamente com isonomia de direitos e salários",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Promover a saúde e o bem-estar dos servidores, com monitoramento de riscos psicossociais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      173
+     ],
+     "nota": ""
+    },
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      174
+     ],
+     "nota": "Melhoria das condições de trabalho, sem detalhar instrumento"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Manter a estabilidade do servidor público, rejeitando propostas que a extingam",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-camilo-duarte-150002552603": {
      "posicao": "concorda",
      "blocos": [
       56,
-      57,
+      57
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Acabar com as terceirizações no serviço público e efetivar os contratados precários, com isonomia de direitos e salários",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-camilo-duarte-150002552603": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
       61
      ],
      "nota": ""
@@ -461,9 +513,9 @@
    }
   },
   {
-   "id": "p20",
-   "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Auditar a folha de pagamento e fixar teto para cargos comissionados por lei de eficiência na gestão",
+   "id": "p22",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Instituir mesa permanente de diálogo com o funcionalismo estadual",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -476,9 +528,54 @@
    }
   },
   {
-   "id": "p21",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Digitalizar os serviços públicos estaduais para reduzir burocracia, papel e deslocamentos do cidadão",
+   "id": "p23",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Realizar auditoria da folha de pagamento do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      1055
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Estabelecer teto legal para cargos comissionados por meio de uma Lei de Eficiência na Gestão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      1055
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Reduzir o tamanho da estrutura administrativa do Estado e eliminar privilégios",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      34
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Digitalizar os serviços públicos estaduais, reduzindo filas, papel e burocracia para o cidadão",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -492,13 +589,14 @@
      "posicao": "concorda",
      "blocos": [
       175,
-      178
+      179
      ],
      "nota": ""
     },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
+      196,
       1070
      ],
      "nota": ""
@@ -506,9 +604,9 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Digitalização e desburocratização",
-   "proposta": "Unificar os serviços estaduais em um superaplicativo do cidadão",
+   "id": "p27",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Unificar todos os serviços do Estado em um superaplicativo do cidadão",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -521,8 +619,8 @@
    }
   },
   {
-   "id": "p23",
-   "subtema": "Digitalização e desburocratização",
+   "id": "p28",
+   "subtema": "Governo digital e desburocratização",
    "proposta": "Expandir o programa Paraíba Digital",
    "n_concorda": 1,
    "posicoes": {
@@ -537,84 +635,48 @@
    }
   },
   {
-   "id": "p24",
-   "subtema": "Orçamento e finanças",
-   "proposta": "Modernizar a administração fazendária e preparar o Estado para a transição da reforma tributária (IBS e CBS)",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      174,
-      175
-     ],
-     "nota": "Inclui inteligência fiscal e contencioso tributário"
-    },
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": "Modernizar a SEFAZ para a era do IBS e da CBS"
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Orçamento e finanças",
-   "proposta": "Ampliar a participação social na definição das prioridades orçamentárias do Estado",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      180
-     ],
-     "nota": "Fortalecimento do Orçamento Democrático Estadual (ODE)"
-    },
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      1079
-     ],
-     "nota": "Escuta regional que alimenta PPA, LDO e LOA"
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Orçamento e finanças",
-   "proposta": "Captar recursos junto a fundos e bancos de fomento (Fundo Clima, BNDES, BNB) e a organismos multilaterais para financiar programas",
+   "id": "p29",
+   "subtema": "Governo digital e desburocratização",
+   "proposta": "Usar sistemas de Inteligência Artificial para aperfeiçoar a governança da administração estadual",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
-      230
+      1053
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p27",
-   "subtema": "Orçamento e finanças",
-   "proposta": "Implantar gestão patrimonial eficiente e fortalecer a capacidade institucional na gestão pública",
-   "n_concorda": 1,
+   "id": "p30",
+   "subtema": "Contas públicas e finanças",
+   "proposta": "Implantar política permanente de controle de despesas e redução do desperdício, com governança fiscal integrada",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-pb-lucas-ribeiro-150002551789": {
+    "governador-pb-pedro-coutinho-150002551911": {
      "posicao": "concorda",
      "blocos": [
-      175
+      166,
+      167
+     ],
+     "nota": ""
+    },
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      198,
+      1055
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p28",
-   "subtema": "Orçamento e finanças",
-   "proposta": "Revogar o teto de gastos e a Lei de Responsabilidade Fiscal, acabando com o congelamento dos gastos públicos",
+   "id": "p31",
+   "subtema": "Contas públicas e finanças",
+   "proposta": "Revogar o teto de gastos, a Lei de Responsabilidade Fiscal e o congelamento dos gastos públicos",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-camilo-duarte-150002552603": {
@@ -628,8 +690,24 @@
    }
   },
   {
-   "id": "p29",
-   "subtema": "Orçamento e finanças",
+   "id": "p32",
+   "subtema": "Contas públicas e finanças",
+   "proposta": "Ampliar as verbas destinadas à saúde, à educação e aos demais serviços públicos essenciais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-camilo-duarte-150002552603": {
+     "posicao": "concorda",
+     "blocos": [
+      56,
+      58
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Contas públicas e finanças",
    "proposta": "Cancelar as dívidas externa e interna com bancos e grandes credores",
    "n_concorda": 1,
    "posicoes": {
@@ -643,62 +721,62 @@
    }
   },
   {
-   "id": "p30",
-   "subtema": "Orçamento e finanças",
-   "proposta": "Ampliar as verbas destinadas à saúde, à educação e aos demais serviços públicos essenciais",
+   "id": "p34",
+   "subtema": "Contas públicas e finanças",
+   "proposta": "Captar recursos junto ao BNDES, ao BNB, ao Fundo Clima e a organismos multilaterais para financiar os programas do governo",
    "n_concorda": 1,
    "posicoes": {
-    "governador-pb-camilo-duarte-150002552603": {
+    "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
-      58
+      230
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p31",
-   "subtema": "Relação com municípios e regiões",
-   "proposta": "Estabelecer cooperação permanente com os municípios, com apoio técnico e escuta na definição das políticas estaduais",
+   "id": "p35",
+   "subtema": "Orçamento e participação social",
+   "proposta": "Ampliar a participação social na definição das prioridades de investimento e do orçamento estadual",
    "n_concorda": 2,
    "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
-      196,
-      1051
+      1079
      ],
-     "nota": "Apoio técnico às 223 prefeituras"
-    },
-    "governador-pb-efraim-filho-150002538692": {
-     "posicao": "concorda",
-     "blocos": [
-      71
-     ],
-     "nota": "Revisão anual do planejamento com escuta dos municípios"
+     "nota": "Escuta regional alimentando PPA, LDO e LOA"
     }
    }
   },
   {
-   "id": "p32",
-   "subtema": "Relação com municípios e regiões",
-   "proposta": "Assinar, nos primeiros cem dias, pacto de gestão com cada um dos 223 municípios, com metas verificáveis",
+   "id": "p36",
+   "subtema": "Orçamento e participação social",
+   "proposta": "Fortalecer o Orçamento Democrático Estadual (ODE) como instrumento de participação e transparência",
    "n_concorda": 1,
    "posicoes": {
-    "governador-pb-cicero-lucena-150002544133": {
+    "governador-pb-lucas-ribeiro-150002551789": {
      "posicao": "concorda",
      "blocos": [
-      1051
+      179,
+      180
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p33",
-   "subtema": "Relação com municípios e regiões",
-   "proposta": "Levar a administração estadual ao interior com governo itinerante e agenda do primeiro escalão em todas as regiões",
+   "id": "p37",
+   "subtema": "Orçamento e participação social",
+   "proposta": "Levar o governo ao interior com agenda itinerante do primeiro escalão em todas as regiões",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -713,94 +791,69 @@
    }
   },
   {
-   "id": "p34",
-   "subtema": "Compras públicas e licitações",
-   "proposta": "Reduzir o custo das compras públicas estaduais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      196,
-      198
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Compras públicas e licitações",
-   "proposta": "Digitalizar 100% das compras públicas, com central estadual, marketplace governamental e auditoria algorítmica dos gastos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      1068
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Privatizações, concessões e tamanho do Estado",
-   "proposta": "Ampliar concessões e parcerias público-privadas para acelerar investimentos e melhorar serviços",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-pedro-coutinho-150002551911": {
-     "posicao": "concorda",
-     "blocos": [
-      34,
-      103
-     ],
-     "nota": "Critério de melhor serviço e menor desperdício"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Privatizações, concessões e tamanho do Estado",
-   "proposta": "Promover política de privatização de empresas estatais, com o Estado deixando de gerenciar empresas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-pb-pedro-coutinho-150002551911": {
-     "posicao": "concorda",
-     "blocos": [
-      34
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p38",
-   "subtema": "Privatizações, concessões e tamanho do Estado",
-   "proposta": "Reduzir o tamanho da máquina estadual, enxugando a estrutura administrativa e eliminando privilégios",
-   "n_concorda": 1,
+   "subtema": "Relação com os municípios",
+   "proposta": "Prestar apoio técnico e institucional aos municípios, com escuta permanente na gestão estadual",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-pb-pedro-coutinho-150002551911": {
+    "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
-      34
+      196
      ],
-     "nota": ""
+     "nota": "Apoio técnico às 223 prefeituras"
     },
-    "governador-pb-camilo-duarte-150002552603": {
-     "posicao": "discorda",
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
      "blocos": [
-      56,
-      60
+      71
      ],
-     "nota": "Rejeita corte de gastos e o que classifica como destruição dos serviços públicos"
+     "nota": "Revisão anual do planejamento com escuta dos municípios"
     }
    }
   },
   {
    "id": "p39",
+   "subtema": "Relação com os municípios",
+   "proposta": "Assinar Pacto de Gestão com cada um dos 223 municípios nos primeiros cem dias, com metas verificáveis",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      1051
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Fisco e reforma tributária",
+   "proposta": "Modernizar a administração tributária estadual e a inteligência fiscal para a transição do IBS e da CBS",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      174,
+      175
+     ],
+     "nota": ""
+    },
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      196
+     ],
+     "nota": "Modernização da SEFAZ para a era do IBS e da CBS"
+    }
+   }
+  },
+  {
+   "id": "p41",
    "subtema": "Previdência dos servidores",
-   "proposta": "Reverter a reforma da Previdência, em defesa das aposentadorias e pensões",
+   "proposta": "Reverter os efeitos da reforma da Previdência sobre aposentadorias e pensões",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-camilo-duarte-150002552603": {
@@ -813,9 +866,9 @@
    }
   },
   {
-   "id": "p40",
+   "id": "p42",
    "subtema": "Previdência dos servidores",
-   "proposta": "Fixar aposentadoria em no máximo 25 anos de trabalho para mulheres e 30 anos para homens",
+   "proposta": "Fixar aposentadoria em, no máximo, 25 anos de trabalho para mulheres e 30 anos para homens",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-camilo-duarte-150002552603": {
@@ -828,9 +881,9 @@
    }
   },
   {
-   "id": "p41",
+   "id": "p43",
    "subtema": "Previdência dos servidores",
-   "proposta": "Cobrar as dívidas das grandes empresas com a Previdência, inclusive com estatização dessas empresas se necessário",
+   "proposta": "Cobrar as dívidas das grandes empresas com a Previdência, inclusive com a tomada do controle dessas empresas pelo Estado",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-camilo-duarte-150002552603": {
@@ -843,9 +896,9 @@
    }
   },
   {
-   "id": "p42",
+   "id": "p44",
    "subtema": "Previdência dos servidores",
-   "proposta": "Criar imposto sobre grandes fortunas para custear aposentadorias e pensões",
+   "proposta": "Criar imposto sobre grandes fortunas para financiar aposentadorias e pensões",
    "n_concorda": 1,
    "posicoes": {
     "governador-pb-camilo-duarte-150002552603": {
@@ -858,7 +911,7 @@
    }
   },
   {
-   "id": "p43",
+   "id": "p45",
    "subtema": "Previdência dos servidores",
    "proposta": "Reajustar aposentadorias e pensões com reposição de 100% das perdas",
    "n_concorda": 1,
@@ -873,7 +926,7 @@
    }
   },
   {
-   "id": "p44",
+   "id": "p46",
    "subtema": "Previdência dos servidores",
    "proposta": "Acabar com os privilégios previdenciários de oficiais militares, juízes e seus familiares",
    "n_concorda": 1,
@@ -888,7 +941,7 @@
    }
   },
   {
-   "id": "p45",
+   "id": "p47",
    "subtema": "Previdência dos servidores",
    "proposta": "Entregar a gestão dos fundos previdenciários aos trabalhadores",
    "n_concorda": 1,
@@ -897,6 +950,83 @@
      "posicao": "concorda",
      "blocos": [
       42
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Privatizações e concessões",
+   "proposta": "Promover uma política de privatizações de empresas estatais, retirando o Estado da gestão de empresas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      34
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Privatizações e concessões",
+   "proposta": "Ampliar concessões e Parcerias Público-Privadas para acelerar investimentos e melhorar serviços",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      34,
+      103
+     ],
+     "nota": "Critério de melhor serviço e menor desperdício"
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Compras públicas e licitações",
+   "proposta": "Reduzir o custo das compras públicas estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      196,
+      198
+     ],
+     "nota": "Apresentada como meta de eixo"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Compras públicas e licitações",
+   "proposta": "Digitalizar 100% das compras públicas, com central estadual, marketplace governamental e auditoria algorítmica dos gastos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      1068
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Comunicação e meios",
+   "proposta": "Cancelar as concessões dos grandes meios de comunicação e estatizar essas empresas sob controle dos trabalhadores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-camilo-duarte-150002552603": {
+     "posicao": "concorda",
+     "blocos": [
+      106
      ],
      "nota": ""
     }
@@ -960,6 +1090,10 @@
    "62": {
     "texto": "Pela realização de concursos públicos periódicos para repor o quadro de servidores.",
     "pagina": 4
+   },
+   "106": {
+    "texto": "Acabar com a ditadura do \"PIG\" (\"Partido da Imprensa Golpista\"): cancelamento da concessão da Rede Globo (e dos demais grandes meios de comunicação) por crimes contra o País. Estatização das empresas, sob o controle dos trabalhadores\n•",
+    "pagina": 6
    },
    "117": {
     "texto": "Cancelamento das dívidas externa e interna com os bancos e grandes credores\n•",
@@ -1111,6 +1245,10 @@
    },
    "166": {
     "texto": "Implantar uma política permanente de controle de despesas, transparência, integridade e combate ao desperdício.",
+    "pagina": 8
+   },
+   "167": {
+    "texto": "Cada real economizado será um real que poderá retornar à sociedade na forma de serviços, investimentos ou redução de custos.",
     "pagina": 8
    },
    "169": {

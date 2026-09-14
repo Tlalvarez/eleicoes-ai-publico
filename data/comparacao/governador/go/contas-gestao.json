@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-go.json",
-  "gerado_em": "2026-09-14T08:19:33Z",
-  "exportado_em": "2026-09-14T08:45:16Z"
+  "gerado_em": "2026-09-14T17:28:39Z",
+  "exportado_em": "2026-09-14T17:30:10Z"
  },
  "candidatos": [
   {
@@ -67,7 +68,7 @@
   {
    "id": "p1",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Condicionar toda nova despesa, obra ou programa à definição prévia de fonte de recursos, custo de manutenção, responsável e avaliação de impacto",
+   "proposta": "Condicionar a criação de despesa, programa ou obra à definição prévia de fonte de recurso, custo de manutenção, responsável e meta",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -75,56 +76,124 @@
      "blocos": [
       188,
       444,
+      1042,
       1243
      ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1171,
-      1173,
-      1177
-     ],
-     "nota": ""
+     "nota": "Ficha de execução com custo, fonte, risco e indicador"
     },
     "governador-go-luis-cesar-bueno-90002545476": {
      "posicao": "concorda",
      "blocos": [
       382,
       386,
+      397,
       909
      ],
-     "nota": "Regra fiscal explícita e validação atuarial antes de despesa permanente"
+     "nota": "Regra fiscal com filtros obrigatórios por projeto"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1173,
+      1177
+     ],
+     "nota": ""
     },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
      "blocos": [
       1693
      ],
-     "nota": "Sustentabilidade de custeio rastreada no planejamento estratégico"
+     "nota": "Sustentabilidade de custeio rastreada em matriz de risco"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Concentrar o orçamento nos programas prioritários e reduzir gasto que não entrega resultado",
-   "n_concorda": 3,
+   "proposta": "Preservar o equilíbrio das contas públicas e a capacidade de investimento do Estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1167,
+      1176
+     ],
+     "nota": ""
+    },
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      54,
+      1026
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Orçamento e responsabilidade fiscal",
+   "proposta": "Revogar o teto de gastos e a Lei de Responsabilidade Fiscal e ampliar as verbas para serviços públicos essenciais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      58,
+      59,
+      60
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Orçamento e responsabilidade fiscal",
+   "proposta": "Reduzir gastos que não entregam resultado, revisando contratos, compras e programas",
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      413,
-      1262
+      56,
+      1262,
+      1263
      ],
      "nota": ""
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1167,
+      1055,
       1183
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Orçamento e responsabilidade fiscal",
+   "proposta": "Vincular orçamento, contratos e programas ao desempenho medido, revisando prioridades periodicamente",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      413,
+      1252,
+      1253
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1061,
+      1113
      ],
      "nota": ""
     },
@@ -134,49 +203,19 @@
       1788
      ],
      "nota": ""
-    },
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "discorda",
-     "blocos": [
-      56,
-      58,
-      60
-     ],
-     "nota": "Rejeita corte de gastos públicos e defende ampliação de verbas"
     }
    }
   },
   {
-   "id": "p3",
+   "id": "p6",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Revisar contratos, compras e incentivos para gerar economia sem romper obrigações legais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1263
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1183
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Conceder benefício fiscal somente com cálculo de impacto, prazo, contrapartida e avaliação anual publicada",
+   "proposta": "Avaliar benefícios e incentivos fiscais com cálculo de impacto, prazo, contrapartida e publicação anual de resultados",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
+      1263,
       1266
      ],
      "nota": ""
@@ -184,7 +223,7 @@
    }
   },
   {
-   "id": "p5",
+   "id": "p7",
    "subtema": "Orçamento e responsabilidade fiscal",
    "proposta": "Não criar novo imposto para financiar o plano de governo",
    "n_concorda": 1,
@@ -199,66 +238,40 @@
    }
   },
   {
-   "id": "p6",
+   "id": "p8",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Compatibilizar os compromissos do plano com o Plano Plurianual, as diretrizes orçamentárias e os orçamentos anuais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1243
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1170,
-      1172
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p7",
-   "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Ampliar a capacidade de investimento com captação de recursos da União e crédito responsável, medindo o valor executado",
+   "proposta": "Captar recursos da União e usar crédito responsável a partir de carteira de projetos prontos",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      54,
       187,
       1264
      ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1176,
-      1178
-     ],
-     "nota": ""
+     "nota": "Medir valor executado e não o anunciado"
     },
     "governador-go-luis-cesar-bueno-90002545476": {
      "posicao": "concorda",
      "blocos": [
-      367,
       369,
       370
      ],
-     "nota": "Articulação com o Novo PAC como fonte central"
+     "nota": "Ancorado no Novo PAC"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1178
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p9",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Usar concessões e parcerias público-privadas como fonte de investimento apenas após comparação de custo, risco, prazo e interesse público",
+   "proposta": "Usar concessões e parcerias público-privadas como fonte de investimento, após comparação de custo, risco, prazo e interesse público",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -274,7 +287,7 @@
       375,
       376
      ],
-     "nota": "Exige viabilidade, competição e interesse público"
+     "nota": "Rodovias, saneamento, iluminação e equipamentos"
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
@@ -286,17 +299,16 @@
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
      "blocos": [
-      1751,
-      1752
+      1751
      ],
      "nota": "PPP para financiar o novo centro administrativo"
     }
    }
   },
   {
-   "id": "p9",
+   "id": "p10",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Criar fundo imobiliário do Estado para alienar e rentabilizar imóveis públicos ociosos",
+   "proposta": "Criar fundo imobiliário estadual para alienar e rentabilizar imóveis públicos ociosos",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -310,9 +322,9 @@
    }
   },
   {
-   "id": "p10",
+   "id": "p11",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Construir novo centro administrativo estadual, com aquisição e reforma de edifício, reunindo órgãos hoje dispersos em imóveis alugados",
+   "proposta": "Construir novo centro administrativo estadual reunindo secretarias em um único endereço para reduzir aluguéis e custos",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -326,53 +338,29 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Revogar o teto de gastos, a Lei de Responsabilidade Fiscal e o congelamento de gastos públicos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      59,
-      60
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p12",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Cancelar as dívidas pública externa e interna com bancos e grandes credores",
-   "n_concorda": 1,
+   "proposta": "Priorizar a manutenção do patrimônio e dos equipamentos públicos existentes em vez de novas obras",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
+    "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      117
+      1187
      ],
      "nota": ""
+    },
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1048
+     ],
+     "nota": "Via inventário e manutenção preventiva de ativos municipais"
     }
    }
   },
   {
    "id": "p13",
-   "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Ampliar as verbas destinadas a saúde, educação e demais serviços públicos essenciais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      58
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
    "subtema": "Orçamento e responsabilidade fiscal",
    "proposta": "Oferecer canais permanentes de regularização de débitos estaduais, com simulação transparente e tratamento proporcional à capacidade de pagamento",
    "n_concorda": 1,
@@ -387,23 +375,30 @@
    }
   },
   {
-   "id": "p15",
+   "id": "p14",
    "subtema": "Orçamento e responsabilidade fiscal",
-   "proposta": "Priorizar a manutenção e a conservação do patrimônio público existente antes de novas obras",
-   "n_concorda": 2,
+   "proposta": "Monitorar e cobrar o prazo de pagamento a fornecedores, especialmente pequenos negócios e entidades prestadoras",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1187
-     ],
-     "nota": ""
-    },
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      421,
-      1048
+      1013
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Orçamento e responsabilidade fiscal",
+   "proposta": "Cancelar as dívidas externa e interna com bancos e grandes credores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      117
      ],
      "nota": ""
     }
@@ -411,8 +406,32 @@
   },
   {
    "id": "p16",
+   "subtema": "Orçamento e responsabilidade fiscal",
+   "proposta": "Traduzir os compromissos do plano no Plano Plurianual, nas diretrizes orçamentárias e nos orçamentos anuais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1243
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1170,
+      1171,
+      1172
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Publicar painel único e acessível com metas, custos, execução física e financeira e resultados das prioridades de governo",
+   "proposta": "Publicar painel aberto com metas, cronogramas, custos, execução e resultados acompanháveis pela sociedade",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -420,29 +439,7 @@
      "blocos": [
       200,
       201,
-      202,
-      203,
-      205,
-      412
-     ],
-     "nota": "Inclui resultado por região e linguagem simples"
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      355,
-      356,
-      392,
-      414
-     ],
-     "nota": "Painel trimestral por zona, com empregos e fornecedores"
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1112,
-      1193,
-      1194
+      202
      ],
      "nota": ""
     },
@@ -452,20 +449,84 @@
       1790,
       1794
      ],
+     "nota": "Painéis de dados em tempo real"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1112,
+      1193
+     ],
      "nota": ""
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      355,
+      356,
+      392,
+      414
+     ],
+     "nota": "Inclui empregos, fornecedores e indicadores socioambientais"
     }
    }
   },
   {
-   "id": "p17",
+   "id": "p18",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Prestar contas em ciclo fixo e periódico (trimestral) sobre metas, gasto e etapa de cada entrega",
+   "proposta": "Apresentar a informação pública em linguagem simples e acessível, mantendo dados completos para quem quiser conferir",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      988,
+      205,
+      412
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1194
+     ],
+     "nota": "Acessível a cidadãos, imprensa, sociedade civil e controle"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Divulgar resultados desagregados por região ou território",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": ""
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      413,
+      414
+     ],
+     "nota": "Dados por zona de desenvolvimento"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Prestar contas em ciclo periódico fixo, com publicação trimestral de metas, gastos e correções",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1248,
       1249,
       1250
      ],
@@ -476,14 +537,14 @@
      "blocos": [
       414
      ],
-     "nota": ""
+     "nota": "Painel publicado trimestralmente"
     }
    }
   },
   {
-   "id": "p18",
+   "id": "p21",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Publicar relatório de prestação de contas no centésimo dia de governo, indicando o que começou, o que atrasou e a providência tomada",
+   "proposta": "Publicar no 100º dia de governo relatório do que começou, do que atrasou e das providências tomadas",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -498,9 +559,9 @@
    }
   },
   {
-   "id": "p19",
+   "id": "p22",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Consolidar, auditar e publicar os números herdados do exercício anterior nos primeiros cem dias, como linha de base das metas",
+   "proposta": "Consolidar, auditar e publicar os dados de linha de base do Estado no início do mandato",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -509,7 +570,7 @@
       437,
       1227
      ],
-     "nota": ""
+     "nota": "Números de 2026 auditados nos cem primeiros dias"
     },
     "governador-go-luis-cesar-bueno-90002545476": {
      "posicao": "concorda",
@@ -517,37 +578,15 @@
       388,
       900
      ],
-     "nota": "Atualização das metas com linhas de base oficiais no início do mandato"
+     "nota": "Linhas de base oficiais e mapas de gargalos"
     }
    }
   },
   {
-   "id": "p20",
-   "subtema": "Transparência e prestação de contas",
-   "proposta": "Abrir em dados reutilizáveis informações de filas, obras, contratos e metas, preservando sigilo legal",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      989
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      413
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p21",
+   "id": "p23",
    "subtema": "Transparência e prestação de contas",
    "proposta": "Explicar publicamente cada atraso ou mudança de meta, com motivo, responsável e nova data",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
@@ -556,61 +595,275 @@
       204
      ],
      "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Abrir dados de filas, obras, contratos e metas em formato simples e reutilizável, protegendo informação pessoal",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      1191,
-      1192
+      989
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p22",
+   "id": "p25",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Garantir proteção de dados pessoais, controle de acessos e registro de auditoria nas integrações e serviços digitais",
+   "proposta": "Publicar custo, fonte e risco das prioridades de governo antes de transformá-las em despesa permanente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      188,
+      1227
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Implantar gestão por resultados, com metas, indicadores, monitoramento contínuo e correção de rota",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      441,
-      905,
-      1005
+      1243,
+      1245,
+      1247
+     ],
+     "nota": "Reunião mensal de gargalos e balanço 2026-2030"
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1786,
+      1789,
+      1790,
+      1792
      ],
      "nota": ""
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1086,
-      1096
+      1190,
+      1191,
+      1192
      ],
      "nota": ""
     },
     "governador-go-luis-cesar-bueno-90002545476": {
      "posicao": "concorda",
      "blocos": [
-      340,
-      341
+      90,
+      348
      ],
      "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1716
-     ],
-     "nota": "Governança de dados no programa de digitalização municipal"
     }
    }
   },
   {
-   "id": "p23",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Ampliar formação, qualificação continuada e desenvolvimento de competências dos servidores públicos",
+   "id": "p27",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Criar instância central de coordenação ligada ao chefe do Executivo para integrar órgãos, destravar gargalos e acompanhar projetos estratégicos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      993,
+      1015
+     ],
+     "nota": "Escritório Estadual de Projetos"
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      86,
+      349,
+      350
+     ],
+     "nota": "Escritório de Grandes Projetos, sem retirar competências dos órgãos técnicos"
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1700,
+      1701
+     ],
+     "nota": "Estrutura Estadual de Governança Integrada, modelo de Centro de Governo da OCDE"
+    }
+   }
+  },
+  {
+   "id": "p28",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Adotar indicadores de governo alinhados aos padrões da OCDE e à Agenda 2030/ODS",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1793
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Firmar acordos de resultado e metas compartilhadas entre o governador e as secretarias",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      988
+     ],
+     "nota": "Ligado aos doze programas e à avaliação trimestral"
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      889
+     ],
+     "nota": "Metas compartilhadas nos territórios prioritários"
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1787,
+      1788
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Criar conselho plural com participação de municípios, universidades, setor produtivo e sociedade civil para definir diretrizes e acompanhar resultados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      347,
+      348,
+      889
+     ],
+     "nota": "Conselho Goiás 2030"
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Evitar criar novas estruturas administrativas quando as existentes puderem resolver",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      421,
+      444
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1125
+     ],
+     "nota": ""
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      889
+     ],
+     "nota": "Sem estruturas burocráticas paralelas desnecessárias"
+    }
+   }
+  },
+  {
+   "id": "p32",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Instituir matrizes de risco formais e gestão de riscos nos projetos e políticas públicas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1693,
+      1702
+     ],
+     "nota": ""
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      383,
+      385
+     ],
+     "nota": "Filtros de maturidade, risco e integridade por projeto"
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Monitorar carteira definida de grandes projetos com responsável e cronograma para cada um",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      350,
+      400
+     ],
+     "nota": "Meta de 50 projetos monitorados"
+    },
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1032
+     ],
+     "nota": "Banco de projetos e responsável por prioridade"
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Publicar por decreto o método de governo, os eixos e os programas, com responsável por entrega",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1186
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Servidores públicos",
+   "proposta": "Ampliar formação, capacitação e desenvolvimento continuado dos servidores públicos",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -620,7 +873,7 @@
       1011,
       1093
      ],
-     "nota": ""
+     "nota": "Formação prática ligada às metas de cada órgão"
     },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -640,9 +893,9 @@
    }
   },
   {
-   "id": "p24",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Oferecer intercâmbio institucional, missões técnicas e pós-graduação no Brasil e no exterior para servidores",
+   "id": "p36",
+   "subtema": "Servidores públicos",
+   "proposta": "Oferecer intercâmbios institucionais, missões técnicas e cursos de mestrado e doutorado a servidores, inclusive no exterior",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -655,9 +908,9 @@
    }
   },
   {
-   "id": "p25",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Tratar carreira e remuneração em mesa permanente de diálogo com as categorias, com regras claras e impacto fiscal calculado",
+   "id": "p37",
+   "subtema": "Servidores públicos",
+   "proposta": "Discutir carreiras e remuneração em mesa permanente de negociação com o funcionalismo",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -666,35 +919,20 @@
       1094,
       1096
      ],
-     "nota": ""
+     "nota": "Com impacto fiscal e tratamento igual para situações iguais"
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
       1105
      ],
-     "nota": ""
+     "nota": "Diálogo com as carreiras e recomposição salarial"
     }
    }
   },
   {
-   "id": "p26",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Retomar política de recomposição salarial do funcionalismo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1105
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Servidores, carreiras e folha",
+   "id": "p38",
+   "subtema": "Servidores públicos",
    "proposta": "Realizar concursos públicos periódicos para repor o quadro de servidores",
    "n_concorda": 1,
    "posicoes": {
@@ -708,9 +946,9 @@
    }
   },
   {
-   "id": "p28",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Manter a estabilidade do servidor público, rejeitando seu fim",
+   "id": "p39",
+   "subtema": "Servidores públicos",
+   "proposta": "Manter a estabilidade dos servidores públicos",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-danilo-pinheiro-90002553733": {
@@ -723,9 +961,9 @@
    }
   },
   {
-   "id": "p29",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Acabar com as terceirizações no serviço público e efetivar os contratados precariamente com isonomia de direitos e salários",
+   "id": "p40",
+   "subtema": "Servidores públicos",
+   "proposta": "Acabar com as terceirizações e efetivar os contratados precariamente, com isonomia de direitos e salários",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-danilo-pinheiro-90002553733": {
@@ -739,9 +977,9 @@
    }
   },
   {
-   "id": "p30",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Implantar plataforma única de gestão de pessoas integrando cadastro de servidores, folha de pagamento e processos funcionais",
+   "id": "p41",
+   "subtema": "Servidores públicos",
+   "proposta": "Implantar plataforma estadual única de gestão de pessoas, integrando cadastro, folha de pagamento e processos funcionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -749,14 +987,14 @@
      "blocos": [
       1707
      ],
-     "nota": "Programa Integra, com uso de IA no planejamento da força de trabalho"
+     "nota": "Programa Integra, com uso de inteligência artificial"
     }
    }
   },
   {
-   "id": "p31",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Definir lotação de servidores a partir da carência de serviço, com atenção ao interior e permanência prevista em edital",
+   "id": "p42",
+   "subtema": "Servidores públicos",
+   "proposta": "Definir a lotação de servidores a partir da carência de serviço, com prioridade ao interior e permanência prevista em edital",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -769,24 +1007,9 @@
    }
   },
   {
-   "id": "p32",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Reconhecer e premiar servidores por qualidade, solução de casos e economia, não apenas por volume de atendimento",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      990
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Acompanhar de forma preventiva a saúde e a segurança do trabalho do servidor",
+   "id": "p43",
+   "subtema": "Servidores públicos",
+   "proposta": "Acompanhar de forma preventiva a saúde e a segurança do trabalho dos servidores",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -799,9 +1022,24 @@
    }
   },
   {
-   "id": "p34",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Revisar o modelo do Ipasgo, fortalecendo a rede de atendimento e adequando as cobranças aos servidores e dependentes",
+   "id": "p44",
+   "subtema": "Servidores públicos",
+   "proposta": "Reconhecer servidores por qualidade, solução e economia, e não apenas por volume de atendimento",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      990
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Servidores públicos",
+   "proposta": "Rever o modelo do Ipasgo, fortalecendo a rede de atendimento e adequando as cobranças aos servidores e dependentes",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -814,303 +1052,20 @@
    }
   },
   {
-   "id": "p35",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Criar estrutura central de coordenação de projetos e políticas vinculada ao chefe do Executivo, para destravar gargalos e acompanhar entregas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      993,
-      1015
-     ],
-     "nota": "Escritório Estadual de Projetos"
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      86,
-      349,
-      350
-     ],
-     "nota": "Escritório de Grandes Projetos, sem suprimir órgãos técnicos e de controle"
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1700,
-      1701
-     ],
-     "nota": "Estrutura de Governança Integrada, no modelo de Centro de Governo da OCDE"
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Adotar monitoramento contínuo, com painéis atualizados e correção rápida de rota das políticas",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1702,
-      1789,
-      1790,
-      1792
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1061,
-      1190,
-      1192
-     ],
-     "nota": ""
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1245,
-      1247
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      400,
-      413
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Definir responsável, cronograma e indicador para cada entrega, com reunião periódica de solução de gargalos entre governador e secretários",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      190,
-      1042,
-      1186,
-      1243,
-      1247
-     ],
-     "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1787,
-      1789
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      400
-     ],
-     "nota": "50 grandes projetos monitorados com responsável e cronograma"
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Firmar acordo de resultados entre governador e secretários, ligado aos programas, ao orçamento e à avaliação periódica",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      988
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Instituir matrizes formais de risco e planos de mitigação para projetos e obras",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1693
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      385,
-      397
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Alinhar os indicadores de governo a padrões internacionais da OCDE e à Agenda 2030/ODS",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1793
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Criar conselho com representação plural da sociedade para definir diretrizes e acompanhar resultados do plano",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      347,
-      348,
-      358
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Trabalhar com metas compartilhadas entre secretarias, evitando criar estruturas administrativas novas quando as existentes puderem resolver",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      889
-     ],
-     "nota": ""
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      421,
-      444
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1059,
-      1060
-     ],
-     "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1786,
-      1788
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Submeter metas e projetos a auditoria e avaliação independente",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      90,
-      413
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Publicar decreto inicial fixando o método de governo, os eixos e os programas prioritários",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1186
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Manter programas e contratos apenas quando comprovarem resultado, avaliando-os pelo que entregam",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      56,
-      413,
-      1253
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1055,
-      1192
-     ],
-     "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1659,
-      1693
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p46",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Implantar agenda permanente de desburocratização, revisando normas, exigências e etapas desnecessárias",
+   "proposta": "Implantar agenda permanente de desburocratização e simplificação administrativa, revisando exigências e etapas dos serviços estaduais",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
       87,
+      131,
       401,
-      402,
-      992
+      402
      ],
-     "nota": "Programa Goiás Mais Simples"
+     "nota": "Programas Goiás Mais Simples e Agiliza Goiás"
     },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -1125,8 +1080,7 @@
      "blocos": [
       1072,
       1073,
-      1074,
-      1077
+      1074
      ],
      "nota": ""
     }
@@ -1135,7 +1089,7 @@
   {
    "id": "p47",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Realizar revisão e revogação em bloco de normas e regulamentos estaduais desatualizados",
+   "proposta": "Fazer revisão e revogação em bloco de normas e regulamentos estaduais desatualizados",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -1151,17 +1105,18 @@
   {
    "id": "p48",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Adotar o princípio de informar uma única vez: não exigir documento ou dado que o poder público já possui",
+   "proposta": "Adotar o princípio de pedir a informação uma única vez, integrando cadastros e vedando exigir documento que o Estado já possui",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
+      411,
       904,
       905,
       992
      ],
-     "nota": ""
+     "nota": "Cada integração com base legal e registro de acesso"
     },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -1173,7 +1128,8 @@
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1076
+      1076,
+      1085
      ],
      "nota": ""
     }
@@ -1182,14 +1138,79 @@
   {
    "id": "p49",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Modernizar e integrar a rede Vapt-Vupt, mantendo e ampliando o atendimento presencial de qualidade",
-   "n_concorda": 2,
+   "proposta": "Simplificar e acelerar licenciamentos, autorizações e abertura de empresas para quem produz e investe",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      88,
+      131
+     ],
+     "nota": "Uma porta, uma lista de documentos e prazo"
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1684
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1077
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Ampliar serviços públicos digitais completos e integrar sistemas e órgãos do Estado",
+   "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
       133,
       134,
+      987
+     ],
+     "nota": ""
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1659,
+      1672,
+      1684
+     ],
+     "nota": "Compromisso Goiás na Palma da Mão"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1060,
+      1083,
+      1084,
+      1087
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Modernizar e integrar os serviços do Vapt-Vupt",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      133,
       987
      ],
      "nota": ""
@@ -1201,21 +1222,20 @@
       1051,
       1075
      ],
-     "nota": ""
+     "nota": "Expansão do atendimento presencial combinada a serviços digitais"
     }
    }
   },
   {
-   "id": "p50",
+   "id": "p52",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Ampliar serviços públicos digitais completos, mantendo alternativa presencial e apoio a quem não domina tecnologia",
-   "n_concorda": 3,
+   "proposta": "Garantir atendimento presencial, telefônico e acessível a quem não consegue usar serviços digitais",
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
       441,
-      987,
       1007
      ],
      "nota": ""
@@ -1223,34 +1243,46 @@
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1084,
-      1088,
+      929,
       1089
      ],
      "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1672,
-      1684
-     ],
-     "nota": "Programa Goiás na Palma da Mão"
     }
    }
   },
   {
-   "id": "p51",
+   "id": "p53",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Publicar carta de serviços com documentos, prazo, canal, responsável e caminho de reclamação para ao menos 50 serviços de maior impacto no primeiro ano",
-   "n_concorda": 1,
+   "proposta": "Publicar carta dos principais serviços estaduais com documentos exigidos, prazo, canal, responsável e caminho de reclamação",
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
       183,
       410,
-      983,
+      983
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1088
+     ],
+     "nota": "Informações claras sobre solicitações, prazos e andamento"
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Selecionar pelo menos 50 serviços de maior volume e impacto no primeiro ano e publicar suas cartas de serviço",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
       986,
       1212
      ],
@@ -1259,9 +1291,9 @@
    }
   },
   {
-   "id": "p52",
+   "id": "p55",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Dar protocolo único e rastreável a cada solicitação, com histórico, prazo e aviso de decisão ao cidadão",
+   "proposta": "Dar a cada solicitação protocolo único rastreável, com etapa, prazo e histórico compreensível ao cidadão",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -1282,106 +1314,22 @@
    }
   },
   {
-   "id": "p53",
+   "id": "p56",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Integrar sistemas, cadastros e bases de dados dos órgãos estaduais para que o governo funcione de forma unificada",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      134,
-      904
-     ],
-     "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1659,
-      1684
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1085,
-      1087
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Usar dados, automação e inteligência artificial para apoiar decisões e reduzir tarefas repetitivas na administração",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1707,
-      1716
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1062,
-      1091,
-      1092,
-      1093,
-      1094,
-      1096,
-      1104
-     ],
-     "nota": "Exige supervisão humana e revisão de decisões automatizadas"
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1011
-     ],
-     "nota": "Uso responsável de IA tratado na formação dos servidores"
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Reforçar segurança da informação, continuidade dos sistemas e resposta a incidentes",
+   "proposta": "Organizar os serviços por eventos da vida do cidadão, como nascimento, abertura de negócio e aposentadoria",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      991
+      1002
      ],
      "nota": ""
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1086
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Acelerar licenciamentos ambientais e autorizações para atividade produtiva, com porta única e prazo definido",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      88,
-      131
+      1059
      ],
      "nota": ""
     }
@@ -1390,7 +1338,7 @@
   {
    "id": "p57",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Transformar a ouvidoria em instância que acompanha prazos, reincidências e qualidade da resposta, gerando recomendações de melhoria",
+   "proposta": "Fortalecer a ouvidoria para acompanhar prazos, reincidências e qualidade das respostas até a conclusão",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -1405,13 +1353,20 @@
   {
    "id": "p58",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Organizar os serviços por momento de vida do cidadão (nascimento, abertura de negócio, falecimento, aposentadoria)",
-   "n_concorda": 1,
+   "proposta": "Redesenhar o processo antes de digitalizá-lo, eliminando exigências sem base legal em vez de informatizar o procedimento antigo",
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      1002
+      992
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1074
      ],
      "nota": ""
     }
@@ -1420,53 +1375,215 @@
   {
    "id": "p59",
    "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Monitorar e reduzir o prazo de pagamento a fornecedores, especialmente pequenos negócios e entidades prestadoras",
-   "n_concorda": 1,
+   "proposta": "Garantir proteção de dados pessoais, segurança da informação e governança digital nos serviços do Estado",
+   "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      1013
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Garantir atendimento acolhedor e acessível, sem que o cidadão precise repetir o mesmo problema em vários canais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      180,
-      411,
-      1007
+      441,
+      991,
+      1005
      ],
      "nota": ""
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1060,
-      1087
+      1086
+     ],
+     "nota": ""
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      340,
+      341
+     ],
+     "nota": "LGPD, controle de acesso e auditoria"
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Ampliar o uso de dados, automação e inteligência artificial na gestão pública, com supervisão humana e regras de governança",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1056,
+      1062,
+      1091,
+      1092,
+      1094,
+      1096,
+      1104
+     ],
+     "nota": ""
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1707,
+      1716
+     ],
+     "nota": ""
+    },
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1011
+     ],
+     "nota": "Uso responsável de IA na formação dos servidores"
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Cooperar com universidades, centros de pesquisa, startups e empresas para desenvolver soluções inovadoras para problemas públicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1095
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p61",
+   "id": "p62",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Fortalecer a sustentabilidade atuarial do regime próprio de previdência, com fundo capitalizado, governança e regularidade junto às normas federais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1734
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Reverter os efeitos da reforma da Previdência sobre aposentadorias e pensões",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      35
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Fixar aposentadoria em no máximo 25 anos de trabalho para mulheres e 30 anos para homens",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      37
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Reajustar aposentadorias e pensões com reposição integral das perdas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      40
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p66",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Acabar com a cobrança previdenciária de 14,25% incidente sobre aposentadorias e pensões dos servidores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1106
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p67",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Entregar a gestão dos fundos previdenciários aos trabalhadores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      42
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p68",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Acabar com privilégios previdenciários de oficiais militares, juízes e familiares",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      41
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Cobrar as dívidas das grandes empresas com a Previdência, inclusive com tomada do controle dessas empresas pelo Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      38
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p70",
    "subtema": "Relação com os municípios",
-   "proposta": "Oferecer apoio técnico estadual aos municípios em projetos, engenharia, licenciamento, convênios e captação de recursos",
+   "proposta": "Prestar apoio técnico aos municípios em projetos, engenharia, licenciamento, convênios e captação de recursos",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      1026,
       1028,
       1031,
       1044
@@ -1483,74 +1600,9 @@
    }
   },
   {
-   "id": "p62",
+   "id": "p71",
    "subtema": "Relação com os municípios",
-   "proposta": "Manter banco de projetos maduros antes da abertura de recursos, priorizados por impacto e equilíbrio regional",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1032,
-      1227
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      363,
-      383,
-      388
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p63",
-   "subtema": "Relação com os municípios",
-   "proposta": "Criar mesa única e atendimento regionalizado para a relação com as prefeituras, reduzindo balcões e decisões sem critério",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      414,
-      1033
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p64",
-   "subtema": "Relação com os municípios",
-   "proposta": "Criar unidade de apoio aos municípios na transição da reforma tributária, acompanhando o IBS e protegendo receitas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1035,
-      1227
-     ],
-     "nota": ""
-    },
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1378,
-      1382
-     ],
-     "nota": "Núcleo técnico conjunto Estado-municípios"
-    }
-   }
-  },
-  {
-   "id": "p65",
-   "subtema": "Relação com os municípios",
-   "proposta": "Apoiar a modernização da administração tributária municipal (cadastro, nota fiscal, dívida ativa, planta de valores) para ampliar receita própria sem elevar alíquotas",
+   "proposta": "Apoiar a modernização das administrações tributárias municipais, com sistemas compartilhados de cadastro, nota fiscal e dívida ativa",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -1566,14 +1618,37 @@
      "blocos": [
       1053
      ],
-     "nota": ""
+     "nota": "Sem elevar alíquota automaticamente"
     }
    }
   },
   {
-   "id": "p66",
+   "id": "p72",
    "subtema": "Relação com os municípios",
-   "proposta": "Ampliar a digitalização das prefeituras, substituindo processos físicos por fluxos digitais em cooperação com o Estado",
+   "proposta": "Criar unidade técnica de apoio à transição da reforma tributária, acompanhando o novo imposto e protegendo receitas",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1035,
+      1227
+     ],
+     "nota": "Instalada nos primeiros cem dias"
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1382
+     ],
+     "nota": "Núcleo técnico conjunto entre Estado e municípios"
+    }
+   }
+  },
+  {
+   "id": "p73",
+   "subtema": "Relação com os municípios",
+   "proposta": "Apoiar a digitalização das prefeituras e a integração de dados já enviados ao Estado, evitando retrabalho",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -1589,14 +1664,14 @@
      "blocos": [
       1051
      ],
-     "nota": "Integração de dados já enviados e painéis para prefeituras"
+     "nota": "Painéis para prefeituras acompanharem convênios"
     }
    }
   },
   {
-   "id": "p67",
+   "id": "p74",
    "subtema": "Relação com os municípios",
-   "proposta": "Publicar critérios, calendário e resultado das transferências voluntárias, com prestação de contas proporcional ao risco e ao valor",
+   "proposta": "Publicar critérios, calendário e resultados das transferências voluntárias a municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -1609,9 +1684,25 @@
    }
   },
   {
-   "id": "p68",
+   "id": "p75",
    "subtema": "Relação com os municípios",
-   "proposta": "Apoiar municípios em compras íntegras, fiscalização, controle interno e transparência",
+   "proposta": "Organizar mesa única de relação com as prefeituras e atendimento descentralizado em núcleos regionais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      414,
+      1033
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Relação com os municípios",
+   "proposta": "Apoiar os municípios em compras íntegras, fiscalização, controle interno e transparência",
    "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -1624,138 +1715,23 @@
    }
   },
   {
-   "id": "p69",
-   "subtema": "Relação com os municípios",
-   "proposta": "Apoiar inventário de ativos municipais e financiar manutenção preventiva via convênios",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      1048
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p70",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Fortalecer a sustentabilidade atuarial do regime próprio de previdência, com fundo capitalizado, monitoramento de indicadores e manutenção do Certificado de Regularidade Previdenciária",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1734
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p71",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Acabar com a cobrança previdenciária de 14,25% incidente sobre aposentadorias e pensões",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      1106
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p72",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Reverter as perdas da reforma da Previdência e reajustar aposentadorias e pensões com reposição de 100% das perdas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      35,
-      40
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p73",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Reduzir o tempo de trabalho exigido para aposentadoria a 25 anos para mulheres e 30 anos para homens",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      37
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p74",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Cobrar as dívidas previdenciárias das grandes empresas, inclusive com tomada do controle das empresas pelo Estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      38
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p75",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Acabar com os privilégios previdenciários de oficiais militares, juízes e seus familiares",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      41
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p76",
-   "subtema": "Previdência dos servidores",
-   "proposta": "Entregar a gestão dos fundos previdenciários aos trabalhadores",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-go-danilo-pinheiro-90002553733": {
-     "posicao": "concorda",
-     "blocos": [
-      42
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p77",
-   "subtema": "Integridade e controle interno",
-   "proposta": "Fortalecer integridade, controle interno e prevenção de riscos, usando informações dos órgãos de controle para corrigir processos",
-   "n_concorda": 2,
+   "subtema": "Integridade e controle",
+   "proposta": "Aprimorar integridade, prevenção de riscos e controle interno, usando informações dos órgãos de controle para corrigir processos",
+   "n_concorda": 3,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
       1110,
-      1111,
-      1113
+      1111
+     ],
+     "nota": ""
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1702
      ],
      "nota": ""
     },
@@ -1770,43 +1746,106 @@
   },
   {
    "id": "p78",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Institucionalizar painel de acompanhamento das prioridades e publicar carteira de projetos de longo prazo (Goiás 2035), com avaliação das metas econômicas, turísticas e sociais",
+   "subtema": "Integridade e controle",
+   "proposta": "Submeter metas e projetos a auditoria e avaliação independente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      90,
+      414
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Comunicação e meios de comunicação",
+   "proposta": "Cancelar as concessões das grandes emissoras e estatizar as empresas de comunicação sob controle dos trabalhadores",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      106
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p80",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Planejar, licenciar, estruturar, contratar, iniciar e entregar as prioridades de competência estadual, deixando carteira de projetos madura para continuidade nos governos seguintes",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      993,
+      1015,
+      1032,
+      1227,
+      1256
+     ],
+     "nota": "Escritório de Projetos, banco de projetos e legado organizado para Goiás"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1126,
+      1170,
+      1171,
+      1172
+     ],
+     "nota": "Planejamento de prioridades, execução e continuidade das políticas ao longo do tempo"
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      363
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Institucionalizar painel de acompanhamento das entregas e publicar a carteira de projetos Goiás 2035",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      190,
+      200,
       201,
       202,
       203,
-      989,
-      1032,
-      1243,
+      1227,
+      1233,
       1250
      ],
-     "nota": "Régua única com número de partida, meta e resultado publicados; banco de projetos e prestação trimestral."
+     "nota": "Régua única, dados abertos, relatórios periódicos e banco de projetos"
     },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
      "blocos": [
-      1693,
-      1787,
       1790,
       1794
      ],
-     "nota": "Painéis de monitoramento em tempo real, portfólio governamental e resultados públicos"
+     "nota": "Painéis de dados em tempo real e resultados públicos e acessíveis"
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1061,
       1112,
       1190,
       1193
      ],
-     "nota": "Prevê acompanhamento e divulgação acessível da execução das prioridades do Plano"
+     "nota": "Sociedade deve acompanhar execução e entregas das prioridades do plano"
     },
     "governador-go-luis-cesar-bueno-90002545476": {
      "posicao": "concorda",
@@ -1818,33 +1857,118 @@
    }
   },
   {
-   "id": "p79",
-   "subtema": "Desburocratização e serviços digitais",
-   "proposta": "Ampliar a cooperação com universidades, institutos de pesquisa, startups e empresas de tecnologia para desenvolver, testar e incorporar soluções inovadoras nos serviços públicos",
-   "n_concorda": 2,
+   "id": "p82",
+   "subtema": "Orçamento e responsabilidade fiscal",
+   "proposta": "Selecionar projetos por critérios de maturidade e viabilidade (projeto executivo, licença, fonte de recurso, custo de manutenção, capacidade de execução e risco)",
+   "n_concorda": 4,
    "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      188,
+      444,
+      1032,
+      1243,
+      1265
+     ],
+     "nota": "Critérios de maturidade, custo, fonte e risco antes de contratar"
+    },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
      "blocos": [
-      1716,
-      1725
+      1693,
+      1788
      ],
-     "nota": "Cooperação com universidades, centros de pesquisa e soluções inovadoras/IA"
+     "nota": "Portfólio com matrizes de risco, sustentabilidade de custeio e vínculo à capacidade de entrega"
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1095
+      1171,
+      1173
+     ],
+     "nota": "Custos, fontes, capacidade de execução e manutenção como critérios"
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      397
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p80",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Ouvir usuários e servidores sobre a qualidade dos serviços, publicar os resultados dessa escuta e corrigir rapidamente o que não funcionar",
-   "n_concorda": 1,
+   "id": "p83",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Assegurar o funcionamento regular de todos os serviços públicos ofertados pelo Estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-danilo-pinheiro-90002553733": {
+     "posicao": "concorda",
+     "blocos": [
+      55,
+      56,
+      58,
+      62
+     ],
+     "nota": "Defende fim da destruição dos serviços públicos, mais verbas e concursos para repor quadros"
+    },
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1173,
+      1187
+     ],
+     "nota": "Garantir condições de funcionamento e manutenção dos serviços/estruturas"
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Desburocratização e serviços digitais",
+   "proposta": "Garantir atendimento acolhedor por servidor preparado, com orientação clara, evitando que o cidadão tenha de repetir o mesmo problema em vários canais",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      411
+     ],
+     "nota": ""
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1684,
+      1685
+     ],
+     "nota": "Lógica de 'uma única vez' e integração de bases evitam repetição pelo cidadão"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      929,
+      1060,
+      1087,
+      1103
+     ],
+     "nota": "Serviços integrados, servidor qualificado, cidadão não precisa peregrinar entre órgãos"
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Ouvir usuários e servidores sobre os serviços, publicar os resultados dessa escuta e corrigir rapidamente o que não funcionar",
+   "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
@@ -1852,42 +1976,80 @@
       443
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p81",
-   "subtema": "Governança, planejamento e monitoramento",
-   "proposta": "Revisar anualmente as prioridades de governo, reordenando programas e metas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-wilder-morais-90002551791": {
+    },
+    "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
      "blocos": [
-      1252
+      1792,
+      1794
      ],
-     "nota": ""
+     "nota": "Correção de rota imediata e publicidade dos resultados"
     },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
-      1172,
+      1074,
+      1105,
       1192
      ],
-     "nota": "Prevê reavaliar e corrigir políticas e reordenar prioridades, sem fixar periodicidade anual"
+     "nota": "Escuta de usuários e carreiras e correção do que não funciona"
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      347,
+      348,
+      355,
+      356,
+      414
+     ],
+     "nota": "Conselho plural acompanha resultados e painel trimestral publica indicadores."
     }
    }
   },
   {
-   "id": "p82",
+   "id": "p86",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Definir responsável, linha de base e meta para cada proposta antes da contratação, priorizando iniciativas complementares pelo diagnóstico e pelo orçamento disponível",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1042
+     ],
+     "nota": ""
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1787,
+      1788
+     ],
+     "nota": "Objetivos, metas e indicadores claros por eixo, com alinhamento de orçamento e equipes"
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      382,
+      383,
+      386,
+      400,
+      900
+     ],
+     "nota": "Regra fiscal exige fonte, responsável e cronograma; linhas de base atualizadas."
+    }
+   }
+  },
+  {
+   "id": "p87",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Publicar balanço de fim de mandato avaliando o impacto das políticas, comparando indicadores de 2026 e 2030 e entregando dados e projetos organizados ao Estado",
+   "proposta": "Publicar ao fim do mandato balanço comparando indicadores de 2026 e 2030, deixando dados e projetos organizados para a continuidade",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
      "blocos": [
-      1255,
       1256
      ],
      "nota": ""
@@ -1899,7 +2061,51 @@
       392,
       414
      ],
-     "nota": "Prevê avaliação final de metas, painel institucionalizado e entrega de carteira madura (Goiás 2035)."
+     "nota": "Avaliar metas ao fim, institucionalizar painel e publicar carteira Goiás 2035 para continuidade."
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Usar dados para identificar necessidades e diferenças regionais, antecipar problemas e orientar a alocação de recursos públicos",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      203,
+      989,
+      1033,
+      1051
+     ],
+     "nota": "Resultado por região, dados abertos e decisão nos núcleos regionais"
+    },
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1693,
+      1702,
+      1790
+     ],
+     "nota": "Decisão baseada em evidências, dados e monitoramento preventivo"
+    },
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1093
+     ],
+     "nota": ""
+    },
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      340,
+      388,
+      413,
+      890
+     ],
+     "nota": "Governança de dados, mapas de gargalos e painéis por zona orientam alocação."
     }
    }
   }
@@ -2048,6 +2254,10 @@
     "texto": "Gestão dos trabalhadores sobre os fundos previdenciários.",
     "pagina": 3
    },
+   "55": {
+    "texto": "Fim da destruição dos serviços públicos e dos ataques ao funcionalismo",
+    "pagina": 4
+   },
    "56": {
     "texto": "O ataque aos serviços públicos é parte fundamental da destruição da vida de todo o povo. É preciso lutar contra essa política de toda a direita e defender os direitos do funcionalismo, lutar contra a terceirização e o corte nos gastos públicos.\n•",
     "pagina": 4
@@ -2075,6 +2285,10 @@
    "62": {
     "texto": "Pela realização de concursos públicos periódicos para repor o quadro de servidores.",
     "pagina": 4
+   },
+   "106": {
+    "texto": "Acabar com a ditadura do \"PIG\" (\"Partido da Imprensa Golpista\"): cancelamento da concessão da Rede Globo (e dos demais grandes meios de comunicação) por crimes contra o País. Estatização das empresas, sob o controle dos trabalhadores\n•",
+    "pagina": 6
    },
    "117": {
     "texto": "Cancelamento das dívidas externa e interna com os bancos e grandes credores\n•",
@@ -2130,10 +2344,6 @@
    "363": {
     "texto": "Compromete-se a planejar, licenciar, estruturar, contratar, iniciar e entregar prioridades sob competência estadual, deixando carteira madura para continuidade.",
     "pagina": 12
-   },
-   "367": {
-    "texto": "Tesouro Estadual",
-    "pagina": 13
    },
    "369": {
     "texto": "Novo PAC e União",
@@ -2195,6 +2405,10 @@
     "texto": "As Secretarias de Educação, Mobilidade/Infraestrutura, Desenvolvimento Econômico, Segurança, Planejamento e Fazenda deverão trabalhar com metas compartilhadas nos territórios prioritários. Municípios, universidades, setor produtivo e sociedade civil participarão de instâncias de acompanhamento, sem criar estruturas burocráticas paralelas desnecessárias.",
     "pagina": 28
    },
+   "890": {
+    "texto": "Indicadores integrados",
+    "pagina": 28
+   },
    "900": {
     "texto": "As metas programáticas devem ser atualizadas no início do mandato com linhas de base oficiais e estudos de impacto financeiro. As referências abaixo sustentam os principais pontos institucionais e de partida utilizados neste documento.",
     "pagina": 28
@@ -2215,6 +2429,10 @@
    },
    "1055": {
     "texto": "Modernizar a gestão também significa cuidar da qualidade do gasto público. Cada recurso utilizado pelo Estado deverá estar relacionado a uma finalidade clara, com acompanhamento da execução e avaliação dos resultados alcançados. Responsabilidade fiscal e eficiência administrativa serão condições para que o Governo tenha capacidade de investir e manter políticas públicas ao longo do tempo.",
+    "pagina": 55
+   },
+   "1056": {
+    "texto": "Nenhuma transformação será possível, entretanto, sem servidores valorizados, preparados e com condições adequadas para desempenhar suas funções. Tecnologia deverá apoiar o trabalho das pessoas, simplificar processos e ampliar a capacidade do Estado, e não substituir planejamento, conhecimento técnico e responsabilidade na tomada de decisões.",
     "pagina": 55
    },
    "1059": {
@@ -2260,6 +2478,10 @@
    "1077": {
     "texto": "Processos relacionados à atividade econômica também deverão ser permanentemente revisados, reduzindo prazos e exigências desnecessárias e tornando mais simples a relação de quem pretende empreender, investir e produzir em Goiás.",
     "pagina": 56
+   },
+   "1083": {
+    "texto": "Construir um Governo digital e integrado",
+    "pagina": 57
    },
    "1084": {
     "texto": "Ampliar progressivamente a oferta de serviços públicos digitais completos, permitindo que uma parcela cada vez maior das demandas possa ser iniciada, acompanhada e concluída de forma digital, reduzindo deslocamentos e tempo de espera.",
@@ -2344,6 +2566,14 @@
    "1113": {
     "texto": "Planejamento, orçamento, execução e avaliação deverão estar conectados também aos mecanismos de transparência e controle, permitindo identificar onde os recursos estão sendo aplicados e quais resultados estão produzindo para a população.",
     "pagina": 58
+   },
+   "1125": {
+    "texto": "Modernizar não significará criar estruturas administrativas desnecessárias, multiplicar sistemas ou incorporar tecnologias apenas porque são novas. Cada mudança deverá responder a uma necessidade concreta e produzir melhoria perceptível para quem utiliza os serviços públicos ou para quem trabalha para entregá-los.",
+    "pagina": 59
+   },
+   "1126": {
+    "texto": "A qualidade da gestão também deverá ser medida pela capacidade de cumprir prioridades, executar investimentos, utilizar os recursos com responsabilidade, dar transparência aos resultados e manter políticas públicas capazes de funcionar ao longo do tempo.",
+    "pagina": 59
    },
    "1167": {
     "texto": "Nossa orientação será combinar responsabilidade fiscal, capacidade de investimento, qualidade do gasto, planejamento, acompanhamento de resultados e transparência.",
@@ -2707,6 +2937,10 @@
     "texto": "Governador, secretários e unidade de entrega examinam atraso e decisão pendente.",
     "pagina": 63
    },
+   "1248": {
+    "texto": "A cada trimestre",
+    "pagina": 63
+   },
    "1249": {
     "texto": "Prestar contas",
     "pagina": 63
@@ -2721,10 +2955,6 @@
    },
    "1253": {
     "texto": "Orçamento e contratos regionais são atualizados com base no que entregou resultado.",
-    "pagina": 63
-   },
-   "1255": {
-    "texto": "Avaliar impacto",
     "pagina": 63
    },
    "1256": {

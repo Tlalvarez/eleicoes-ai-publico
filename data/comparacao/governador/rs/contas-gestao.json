@@ -6,12 +6,13 @@
  "nome": "Contas do estado e gestão pública",
  "titulo": "Contas do estado e gestão pública: o que cada candidato propõe",
  "temas": [
-  "financas_gestao"
+  "financas_gestao",
+  "comunicacao"
  ],
  "origem": {
   "arquivo": "contas-gestao-rs.json",
-  "gerado_em": "2026-09-14T04:46:25Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "gerado_em": "2026-09-14T17:51:57Z",
+  "exportado_em": "2026-09-14T17:54:27Z"
  },
  "candidatos": [
   {
@@ -50,25 +51,24 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Dívida com a União",
-   "proposta": "Negociar com a União condições mais sustentáveis para a dívida do Estado, com base em critérios técnicos e visão de longo prazo",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Negociar com a União condições mais sustentáveis para a dívida do Estado, reduzindo encargos e preservando a capacidade de investimento",
    "n_concorda": 4,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
      "blocos": [
       12,
-      648,
-      688
+      648
      ],
-     "nota": "Negociar redução dos encargos da dívida em cooperação com o Governo Federal"
+     "nota": "Negociar redução dos encargos da dívida em cooperação com o governo federal"
     },
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
       145
      ],
-     "nota": ""
+     "nota": "Renegociação e gestão da dívida, incluindo adesão ao Propag"
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
@@ -78,7 +78,7 @@
       1216,
       1217
      ],
-     "nota": "Articula outros estados numa agenda federativa da dívida"
+     "nota": "Avaliar renegociações pelo custo total e articular estados em torno da pauta"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
@@ -87,15 +87,81 @@
       253,
       353
      ],
-     "nota": "Revisão do histórico de formação do estoque, juros e indexadores"
+     "nota": "Revisar histórico de formação do estoque, juros e indexadores"
     }
    }
   },
   {
    "id": "p2",
-   "subtema": "Dívida com a União",
-   "proposta": "Prorrogar a suspensão do pagamento da dívida com a União e manter o FUNRIGS como fonte de investimentos",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Manter presença e representação técnica permanente do Estado em Brasília para defender seus interesses estratégicos",
    "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1208,
+      1210,
+      1211,
+      1212
+     ],
+     "nota": "Profissionalizar o escritório estadual e coordenar a bancada federal"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      253,
+      254,
+      255
+     ],
+     "nota": "Cada viagem e reunião com pauta, objetivo e prestação de contas"
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      685,
+      688
+     ],
+     "nota": "Articulação permanente com o governo federal independentemente do resultado eleitoral"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Defender a criação de fundo constitucional/regional de desenvolvimento para os estados do Sul",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      645
+     ],
+     "nota": "Defende a PEC nº 27/2023 do Fundo de Desenvolvimento da Região Sul"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      147,
+      148
+     ],
+     "nota": "Fundo Constitucional do Sul e Sudeste, junto ao Congresso"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1218,
+      1219
+     ],
+     "nota": "Fundo Constitucional do Sul"
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Buscar a prorrogação da suspensão do pagamento da dívida com a União e a continuidade do FUNRIGS",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
@@ -104,10 +170,9 @@
       648,
       682,
       683,
-      684,
-      685
+      684
      ],
-     "nota": "Prorrogação por três anos, com articulação permanente com o Governo Federal"
+     "nota": "Prorrogação por mais três anos, com recursos para infraestrutura e sustentabilidade"
     },
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
@@ -115,59 +180,22 @@
       146
      ],
      "nota": "Inclui também as dívidas garantidas"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      89
-     ],
-     "nota": "Preservar recursos da reconstrução, com metas públicas e fiscalização"
     }
    }
   },
   {
-   "id": "p3",
-   "subtema": "Dívida com a União",
-   "proposta": "Defender a criação de um fundo constitucional ou de desenvolvimento permanente para os estados do Sul",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      645
-     ],
-     "nota": "Fundo de Desenvolvimento da Região Sul via PEC nº 27/2023"
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      147,
-      148
-     ],
-     "nota": "Fundo Constitucional do Sul e Sudeste"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1218,
-      1219
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p4",
-   "subtema": "Dívida com a União",
-   "proposta": "Aderir e executar o Programa de Pleno Pagamento das Dívidas dos Estados (Propag) com planejamento e transparência sobre seus efeitos",
+   "id": "p5",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Aderir ao Programa de Pleno Pagamento das Dívidas dos Estados (Propag) e executá-lo com planejamento e transparência",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
+      132,
       145
      ],
-     "nota": "Compromisso explícito de adesão ao Propag"
+     "nota": ""
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
@@ -175,14 +203,373 @@
       1002,
       1003
      ],
-     "nota": "Foco em publicizar efeitos sobre juros, amortização e investimentos"
+     "nota": "Exige demonstrar efeitos da opção adotada e entregas verificáveis"
     }
    }
   },
   {
-   "id": "p5",
+   "id": "p6",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Administrar o Regime de Recuperação Fiscal e o Fundo do Plano Rio Grande com transparência, metas públicas e fiscalização permanente",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      89
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Modernizar o Portal da Transparência com dados abertos e painéis de acompanhamento de obras, contratos e repasses",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      312,
+      630
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1019,
+      1020,
+      1131,
+      1132
+     ],
+     "nota": "Conectar planejamento, orçamento, contratos, obras, metas e resultados"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      174,
+      487,
+      1820
+     ],
+     "nota": "Portal único de transparência de obras e recursos nos 100 dias"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      59,
+      88
+     ],
+     "nota": "Transparência e governança como pilares, sem detalhar instrumento"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Fortalecer o sistema de controle interno e a auditoria do Estado, preservando sua autonomia técnica",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      651
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1110,
+      1111,
+      1114,
+      1115
+     ],
+     "nota": "Auditoria baseada em risco, integrando CAGE, ouvidoria e corregedorias"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      171,
+      172,
+      484,
+      485
+     ],
+     "nota": "Preservar competências da CAGE contra interferências políticas"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Publicar contratos, aditivos, pagamentos, obras e fornecedores em formatos abertos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1123,
+      1124
+     ],
+     "nota": "Inclui identificação de controladores e vínculos empresariais"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      174,
+      309,
+      312,
+      314,
+      316,
+      348,
+      351,
+      354,
+      385,
+      388,
+      392,
+      395,
+      427,
+      430,
+      436,
+      470,
+      472,
+      475,
+      487,
+      959,
+      961,
+      1814,
+      1821
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Criar proteção institucional a denunciantes de boa-fé e fortalecer os canais de ouvidoria",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1135,
+      1136
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      177,
+      473,
+      491
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Divulgar as agendas e compromissos públicos das autoridades do governo",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1129,
+      1130
+     ],
+     "nota": "Foco em autoridades ligadas a regulação, contratos e incentivos"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      469
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Adotar linguagem simples em atos, serviços e comunicações do Estado",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1045,
+      1046
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      170,
+      478
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Criar uma secretaria estadual de transparência, integridade e governança de dados, reunindo controle interno, correição, ouvidoria e dados abertos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      169,
+      465,
+      482,
+      483
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "discorda",
+     "blocos": [
+      1111
+     ],
+     "nota": "Propõe integrar os órgãos existentes sem criar estruturas paralelas"
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Estabelecer regras de prevenção de conflitos de interesse na alta administração",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1127,
+      1128
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Usar cruzamento de dados de compras, contratos, folha e transferências para detectar indícios de irregularidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1112,
+      1113,
+      1121,
+      1122
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Monitorar o cumprimento da Lei de Acesso à Informação, exigindo fundamentação para negativas e ampliando a transparência ativa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1133,
+      1134
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Rastrear cada recurso transferido até a entrega, com prestação de contas proporcional ao risco",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1144,
+      1145
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p18",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Realizar auditoria inicial das contas do Estado e das obras paralisadas e contratos críticos, com divulgação pública dos resultados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      1798,
+      1809,
+      1813
+     ],
+     "nota": "Auditoria nos primeiros 100 dias"
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Ampliar o programa estadual de governança e integridade a todos os órgãos e empresas estatais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      471
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1109,
+      1110
+     ],
+     "nota": "Política estadual de integridade baseada em prevenção e gestão de riscos"
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Exigir programas de integridade proporcionais ao risco nas contratações públicas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      909,
+      910,
+      1125,
+      1126
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p21",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Integrar planejamento, orçamento, execução e metas em um modelo de gestão orientada por resultados, com monitoramento permanente",
+   "proposta": "Integrar planejamento, orçamento, metas e monitoramento em um modelo de gestão por resultados",
    "n_concorda": 4,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
@@ -209,9 +596,7 @@
       938,
       939,
       985,
-      986,
-      987,
-      988
+      986
      ],
      "nota": ""
     },
@@ -223,14 +608,14 @@
       457,
       1801
      ],
-     "nota": ""
+     "nota": "Integrar PPA, LDO, orçamento, contratos e metas físicas em painel único"
     }
    }
   },
   {
-   "id": "p6",
+   "id": "p22",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Converter o programa de governo em plano de metas mensuráveis com responsáveis, prazos e marcos periódicos",
+   "proposta": "Converter o programa de governo em plano de metas mensuráveis, com responsáveis, prazos e prioridades definidas",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -242,12 +627,13 @@
       951,
       952
      ],
-     "nota": "Plano de metas compatibilizado com PPA, LDO e orçamento"
+     "nota": ""
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
       306,
+      307,
       308,
       321,
       360,
@@ -258,12 +644,12 @@
       1623,
       1827
      ],
-     "nota": "Até vinte prioridades estratégicas e cartas anuais de compromisso das secretarias"
+     "nota": "Até vinte prioridades com marcos trimestrais e cartas anuais por secretaria"
     }
    }
   },
   {
-   "id": "p7",
+   "id": "p23",
    "subtema": "Planejamento e gestão por resultados",
    "proposta": "Criar unidade central de entrega e resultados vinculada ao gabinete do governador / fortalecer o centro de governo",
    "n_concorda": 2,
@@ -282,15 +668,15 @@
       304,
       1810
      ],
-     "nota": "Unidade de entrega instalada nos primeiros 100 dias"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p24",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Instituir avaliação sistemática (ex ante e ex post) de programas, com correção ou encerramento dos que não justificarem os recursos",
-   "n_concorda": 2,
+   "proposta": "Instituir avaliação sistemática de programas, com revisão periódica e encerramento dos de baixo desempenho",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
@@ -319,7 +705,6 @@
       490,
       498,
       499,
-      531,
       968,
       969,
       1625,
@@ -327,14 +712,76 @@
       1829,
       1830
      ],
-     "nota": "Avaliações independentes das principais políticas"
+     "nota": "Avaliação ex ante e ex post e avaliações independentes"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      60,
+      93
+     ],
+     "nota": ""
     }
    }
   },
   {
-   "id": "p9",
+   "id": "p25",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Adotar metodologia de priorização e monitoramento de investimentos públicos que incorpore riscos fiscais e climáticos e avaliação de maturidade dos projetos",
+   "proposta": "Realizar prestação de contas pública e periódica das metas do governo, com painéis atualizados trimestralmente",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      630
+     ],
+     "nota": "Mecanismos participativos de monitoramento e prestação de contas"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      175,
+      315,
+      322,
+      361,
+      402,
+      442,
+      489,
+      497,
+      967,
+      1624,
+      1828
+     ],
+     "nota": "Reuniões trimestrais públicas e painéis regionais de metas"
+    }
+   }
+  },
+  {
+   "id": "p26",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Regionalizar metas e políticas segundo COREDEs e regiões funcionais",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      313
+     ],
+     "nota": ""
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      628
+     ],
+     "nota": "Fortalecer o planejamento regional valorizando os COREDEs"
+    }
+   }
+  },
+  {
+   "id": "p27",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Adotar metodologia de priorização e monitoramento de investimentos públicos com gestão de riscos fiscais e climáticos",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-gabriel-souza-210002542892": {
@@ -342,7 +789,7 @@
      "blocos": [
       95
      ],
-     "nota": "Metodologia com inteligência territorial"
+     "nota": "Inteligência territorial incorporada ao planejamento"
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
@@ -357,9 +804,41 @@
    }
   },
   {
-   "id": "p10",
+   "id": "p28",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Manter banco/carteira de projetos maduros para captação de crédito e recursos federais e não reembolsáveis",
+   "proposta": "Consolidar uma estratégia estadual de desenvolvimento de longo prazo articulada aos instrumentos legais de planejamento",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      955,
+      956,
+      987,
+      988
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      140
+     ],
+     "nota": "Planejamento de longo prazo vinculado ao equilíbrio fiscal"
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      625
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Criar banco ou carteira de projetos maduros para captação de crédito e recursos não reembolsáveis",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -383,732 +862,64 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Transparência e integridade",
-   "proposta": "Publicar em formato aberto contratos, aditivos, pagamentos, obras, fornecedores e resultados, integrando transparência e dados abertos",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      630
-     ],
-     "nota": "Ênfase no acompanhamento público de obras e investimentos"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1019,
-      1020,
-      1123,
-      1124,
-      1131,
-      1132
-     ],
-     "nota": "Aperfeiçoamento do Portal da Transparência"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      174,
-      307,
-      309,
-      312,
-      314,
-      316,
-      348,
-      351,
-      354,
-      385,
-      388,
-      392,
-      395,
-      427,
-      430,
-      434,
-      436,
-      470,
-      472,
-      475,
-      487,
-      954,
-      959,
-      961,
-      1814,
-      1820,
-      1821,
-      1824
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Transparência e integridade",
-   "proposta": "Consolidar política estadual de integridade integrando controle interno, correição, ouvidoria e ética, com foco em prevenção",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      627,
-      651
-     ],
-     "nota": "Fortalecimento do Sistema de Controle Interno do Estado"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1109,
-      1110,
-      1111
-     ],
-     "nota": "Sem criar estruturas paralelas, preservando autonomia de cada função"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      170,
-      471,
-      483
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Transparência e integridade",
-   "proposta": "Criar uma secretaria estadual de Transparência, Integridade e Governança de Dados reunindo controle interno, correição, ouvidoria e dados abertos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      169,
-      465,
-      482
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Transparência e integridade",
-   "proposta": "Criar proteção institucional a denunciantes de boa-fé e fortalecer canais de ouvidoria",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1135,
-      1136
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      177,
-      473,
-      491
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Transparência e integridade",
-   "proposta": "Dar publicidade às agendas e compromissos de autoridades e prevenir conflitos de interesse na alta administração",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1127,
-      1128,
-      1129,
-      1130
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      469
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Transparência e integridade",
-   "proposta": "Preservar e fortalecer as competências constitucionais e técnicas da Contadoria e Auditoria-Geral do Estado (CAGE), evitando interferência política",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      171,
-      172,
-      484,
-      485
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Transparência e integridade",
-   "proposta": "Realizar auditoria inicial das contas do Estado e de obras paralisadas e contratos críticos, divulgando os resultados à sociedade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      1798,
-      1809,
-      1813
-     ],
-     "nota": "Auditoria nos primeiros 100 dias"
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Transparência e integridade",
-   "proposta": "Planejar auditorias internas com base em risco e materialidade e usar cruzamento de dados para detectar irregularidades em compras e contratos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1112,
-      1113,
-      1114,
-      1115,
-      1121,
-      1122
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Transparência e integridade",
-   "proposta": "Rastrear cada recurso transferido até a entrega, com prestação de contas proporcional ao risco e ao valor",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1144,
-      1145
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p20",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Ampliar e integrar os serviços públicos digitais em plataforma única, com identidade digital, interoperabilidade de dados e acompanhamento das solicitações",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      627
-     ],
-     "nota": "Menciona avanço na transformação digital sem detalhar instrumentos"
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      89,
-      100,
-      101,
-      102,
-      103
-     ],
-     "nota": "Ampliação da rede Tudo Fácil e da assistente GurIA"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1024,
-      1025,
-      1028,
-      1029,
-      1030,
-      1031,
-      1043,
-      1044,
-      1427,
-      1428
-     ],
-     "nota": "RS.GOV.BR organizado por jornadas de vida e autenticação gov.br"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      384,
-      389,
-      397
-     ],
-     "nota": "Atendimento omnicanal com balcões municipais conveniados"
-    }
-   }
-  },
-  {
-   "id": "p21",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Adotar política de uso responsável de inteligência artificial na administração, com supervisão e revisão humana das decisões",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      100,
-      101
-     ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1051,
-      1052
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      387,
-      391,
-      396
-     ],
-     "nota": "Publicação de algoritmos de alto impacto e auditorias"
-    }
-   }
-  },
-  {
-   "id": "p22",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Fortalecer a segurança cibernética e a proteção da infraestrutura digital crítica do Estado",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      104
-     ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1058,
-      1059
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      393
-     ],
-     "nota": "Criação de centro estadual de cibersegurança e resposta a incidentes"
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Instituir programa permanente de simplificação regulatória e revisão de normas e exigências, eliminando obrigações obsoletas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1026,
-      1027,
-      1041,
-      1042
-     ],
-     "nota": "Simplificar antes de digitalizar; fortalecimento do Descomplica RS"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      577,
-      580,
-      581
-     ],
-     "nota": "Porta única digital integrando Junta Comercial, Receita e demais órgãos"
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Criar catálogo público de bases de dados e governança estadual de dados com padrões de qualidade e interoperabilidade",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1049,
-      1050
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      173,
-      389,
-      486
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p25",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Universalizar o processo administrativo eletrônico e a assinatura digital na administração estadual",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1047,
-      1048,
-      1428
-     ],
-     "nota": "Conclusão do SEI RS e princípio do documento uma única vez"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      386
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Medir e publicar tempo, custo e satisfação dos serviços públicos prioritários",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1039,
-      1040,
-      1429
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      398
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p27",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Adotar linguagem simples em atos, formulários e comunicações públicas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1045,
-      1046
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      170,
-      478
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Oferecer serviços proativos e automatizados, com pré-preenchimento e concessões automáticas quando houver base legal e dados confiáveis",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1037,
-      1038
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      390
-     ],
-     "nota": "Assistente digital para orientar cidadãos sobre serviços e benefícios"
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Valorizar e qualificar os servidores públicos com política permanente de capacitação, formação de lideranças e desenvolvimento de competências",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      625,
-      627
-     ],
-     "nota": "Diálogo permanente com entidades representativas dos servidores"
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      90,
-      96,
-      97
-     ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1066,
-      1090,
-      1091,
-      1092,
-      1093
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      425,
-      428
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p30",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Fortalecer a Escola de Governo como instância central de formação dos servidores",
-   "n_concorda": 3,
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Manter protocolos de continuidade administrativa e preservação da memória institucional para crises e transições de governo",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      627
-     ],
-     "nota": ""
-    },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      1091,
-      1093
+      974,
+      975,
+      976,
+      977
      ],
      "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      428
-     ],
-     "nota": "Trilhas de formação obrigatórias"
     }
    }
   },
   {
    "id": "p31",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Estruturar política de saúde ocupacional, saúde mental e qualidade de vida dos servidores",
-   "n_concorda": 4,
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Revisar a estrutura administrativa do Estado, eliminando sobreposições e órgãos redundantes",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      627
-     ],
-     "nota": "Inclui prevenção ao assédio"
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      98,
-      99
-     ],
-     "nota": "Fortalecimento do IPE Saúde com ampliação da rede assistencial"
-    },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      1099,
-      1100
+      23,
+      957,
+      958,
+      959,
+      960
      ],
-     "nota": ""
+     "nota": "Racionalizar o tamanho do aparelho estatal, reduzindo secretarias e órgãos"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      431
+      86,
+      167,
+      480
      ],
-     "nota": "Fortalecimento e ampliação do PROSER"
+     "nota": "Conceito de Estado Necessário"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      94
+     ],
+     "nota": "Programa permanente de modernização administrativa"
     }
    }
   },
   {
    "id": "p32",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Planejar a força de trabalho por dimensionamento de necessidades e realizar concursos e reposição conforme os serviços essenciais",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      624,
-      627
-     ],
-     "nota": "Recomposição gradual de carreiras e quadros por concurso público"
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      97
-     ],
-     "nota": "Dimensionamento da força de trabalho"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1067,
-      1068,
-      1069,
-      1070
-     ],
-     "nota": "Programação plurianual de concursos condicionada à disponibilidade fiscal"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      425,
-      435
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Reestruturar e modernizar carreiras com critérios transparentes de progressão e maior mobilidade entre órgãos",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      90,
-      97
-     ],
-     "nota": "Carreiras que atraiam e retenham talentos"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1080,
-      1081
-     ],
-     "nota": "Revisão de cargos vagos ou obsoletos e de carreiras fragmentadas"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      426,
-      433
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Adotar avaliação de desempenho vinculada a feedback, desenvolvimento e reconhecimento por resultados",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      97
-     ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1082,
-      1083,
-      1084,
-      1085
-     ],
-     "nota": "Inclui estágio probatório efetivo e tratamento do baixo desempenho"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      432,
-      437
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Instituir seleção por critérios técnicos e perfis definidos para cargos de direção e funções estratégicas",
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Reduzir cargos de confiança e políticos, ampliando critérios técnicos para funções estratégicas de direção",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      21,
-      1088,
-      1089
-     ],
-     "nota": ""
-    },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
@@ -1117,122 +928,79 @@
       481
      ],
      "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      21,
+      1088,
+      1089
+     ],
+     "nota": "Perfis e processos de seleção para funções estratégicas, sem meta de redução"
     }
    }
   },
   {
-   "id": "p36",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Instituir incentivos ou premiações variáveis não incorporáveis vinculados a resultados coletivos verificáveis",
-   "n_concorda": 2,
+   "id": "p33",
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Simplificar processos e reduzir exigências burocráticas antes de digitalizar os serviços",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      1086,
-      1087
+      965,
+      966,
+      1025,
+      1026,
+      1027,
+      1041,
+      1042
      ],
-     "nota": ""
+     "nota": "Fortalecer o Descomplica RS e revisar normas com análise de impacto"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      437
+      577
      ],
-     "nota": "Premiação de equipes por inovação e melhoria comprovada"
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Publicar indicadores e painéis gerenciais sobre força de trabalho, absenteísmo, capacitação e custos de pessoal",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1103,
-      1104
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      438
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p38",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Organizar o trabalho em modalidades presencial, remota ou híbrida conforme a natureza do serviço e metas de resultado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1101,
-      1102
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p39",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Restringir contratações temporárias a necessidades transitórias e manter no Estado funções estratégicas, regulatórias e de poder de polícia",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1094,
-      1095,
-      1098
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Conduzir a política fiscal buscando o equilíbrio das contas sem aumento de impostos, por crescimento, eficiência e qualidade do gasto",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      645,
-      648
-     ],
-     "nota": "Aumento sustentável de receita sem aumento de impostos"
+     "nota": "Programa agressivo de simplificação regulatória"
     },
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      138,
-      140
+      72,
+      88
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Centralizar e modernizar compras públicas e serviços administrativos compartilhados para reduzir custos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      105,
+      106
      ],
      "nota": ""
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      982,
-      984
+      961,
+      962
      ],
-     "nota": "Inclui combate à sonegação como fonte de equilíbrio"
+     "nota": "Somente quando houver ganho comprovado, com catálogo e níveis de serviço"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      86,
       355
      ],
      "nota": ""
@@ -1240,515 +1008,8 @@
    }
   },
   {
-   "id": "p41",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Adotar orçamento realista com projeções plurianuais de receitas e despesas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      996,
-      997
-     ],
-     "nota": "Financiar despesas permanentes só com receitas permanentes"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      345
-     ],
-     "nota": "Chamado de 'orçamento da verdade'"
-    }
-   }
-  },
-  {
-   "id": "p42",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Publicar periodicamente relatórios de riscos fiscais, passivos contingentes e fluxo de caixa, com cenários de estresse",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      648
-     ],
-     "nota": "Fortalecer a gestão de passivos contingentes e riscos fiscais"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      998,
-      999,
-      1017,
-      1018
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      346
-     ],
-     "nota": "Relatório trimestral"
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Instituir programa permanente de revisão e avaliação de benefícios e incentivos fiscais, reformulando ou encerrando os ineficazes",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      159
-     ],
-     "nota": "Aprimorar incentivos como instrumento de desenvolvimento"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1015,
-      1016
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      188,
-      349
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Preservar e proteger o investimento público e a manutenção da infraestrutura na alocação orçamentária",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      681,
-      684
-     ],
-     "nota": ""
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      88,
-      140
-     ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1006,
-      1007
-     ],
-     "nota": "Evitar novas obras sem previsão de operação e manutenção"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      347
-     ],
-     "nota": "Regra formal de proteção do investimento essencial"
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Adotar teto interno para o crescimento das despesas discricionárias compatível com a receita",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      357
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p46",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Preparar as finanças para calamidades com reservas, fundos, seguros e regras de execução emergencial",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      163
-     ],
-     "nota": "Fundos de proteção contra vulnerabilidades climáticas"
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      976,
-      977,
-      1000,
-      1001
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Aperfeiçoar a cobrança da dívida ativa e modernizar a fiscalização tributária com análise de dados",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      350,
-      352
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p48",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Concluir a reestruturação do passivo judicial e reduzir o estoque de precatórios",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      149
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Aperfeiçoar a gestão da previdência dos servidores estaduais, com acompanhamento das projeções atuariais e do déficit",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      651
-     ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1017,
-      1018
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Participação social e planejamento regional",
-   "proposta": "Ampliar e modernizar a Consulta Popular, com rastreabilidade das propostas e devolutiva à população",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      628,
-      629
-     ],
-     "nota": "Retomada e ampliação também do Orçamento Participativo"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      178,
-      466,
-      492
-     ],
-     "nota": "Plataforma auditável e devolutiva obrigatória"
-    }
-   }
-  },
-  {
-   "id": "p51",
-   "subtema": "Participação social e planejamento regional",
-   "proposta": "Fortalecer os COREDEs e os conselhos estaduais como instâncias de planejamento regional e participação",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      628,
-      630
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      467,
-      468
-     ],
-     "nota": "Inclui COMUDEs e reativação de conselho de desenvolvimento econômico e social"
-    }
-   }
-  },
-  {
-   "id": "p52",
-   "subtema": "Participação social e planejamento regional",
-   "proposta": "Regionalizar metas e criar painéis públicos regionais de acompanhamento, com prestação de contas periódica à sociedade",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      630
-     ],
-     "nota": "Monitoramento e prestação de contas participativos"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      175,
-      313,
-      315,
-      477,
-      489
-     ],
-     "nota": "Painéis trimestrais, reuniões públicas e observatórios cidadãos"
-    }
-   }
-  },
-  {
-   "id": "p53",
-   "subtema": "Participação social e planejamento regional",
-   "proposta": "Realizar consultas e audiências públicas sobre políticas e projetos de grande impacto",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      907,
-      908
-     ],
-     "nota": "No ciclo de concessões e PPPs, antes de decisões definitivas"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      476,
-      955
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p54",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Estruturar carteira plurianual de concessões e PPPs com fortalecimento da unidade central de parcerias e equipes técnicas",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      892,
-      895,
-      896,
-      897,
-      898,
-      902
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      951,
-      953
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p55",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Escolher o modelo de contratação (concessão, PPP ou execução pública) mediante análise comparativa de valor pelo dinheiro e vantagem para o interesse público",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      892,
-      893,
-      894
-     ],
-     "nota": "Nenhum modelo tratado como solução ideológica"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      940,
-      952
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p56",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Publicar estudos, matrizes de risco, contratos, aditivos e indicadores de desempenho das parcerias ao longo de todo o ciclo contratual",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      911,
-      912,
-      913,
-      914,
-      926,
-      927
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      956,
-      960
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p57",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Vincular a remuneração dos parceiros privados a metas objetivas de desempenho, qualidade e disponibilidade",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      892,
-      922,
-      923
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      960
-     ],
-     "nota": "Monitoramento por indicadores independentes"
-    }
-   }
-  },
-  {
-   "id": "p58",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Tratar pedidos de reequilíbrio contratual com critérios técnicos, comprovação de impactos e transparência",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      924,
-      925
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      963
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p59",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Fortalecer a regulação e a fiscalização dos serviços concedidos, assegurando independência técnica e recursos à agência reguladora estadual",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      917,
-      918
-     ],
-     "nota": "Modernização da Agergs"
-    }
-   }
-  },
-  {
-   "id": "p60",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Destinar receitas obtidas com ativos e concessões a investimento, e não a custeio recorrente",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      997
-     ],
-     "nota": "Receitas extraordinárias para investimentos, dívida e reservas"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      962
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p61",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Criar mecanismos de proteção tarifária para usuários vulneráveis nos serviços concedidos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      915,
-      916
-     ],
-     "nota": "Modicidade tarifária e descontos com justificativa técnica"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      957
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p62",
-   "subtema": "Concessões, PPPs e ativos públicos",
+   "id": "p35",
+   "subtema": "Estrutura administrativa e desburocratização",
    "proposta": "Modernizar a gestão patrimonial e dos ativos públicos do Estado",
    "n_concorda": 2,
    "posicoes": {
@@ -1770,76 +1031,861 @@
    }
   },
   {
-   "id": "p63",
-   "subtema": "Estrutura administrativa e compras públicas",
-   "proposta": "Revisar a estrutura administrativa do Estado, eliminando sobreposições, órgãos sem finalidade e instâncias redundantes",
-   "n_concorda": 2,
+   "id": "p36",
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Delegar decisões e revisar alçadas administrativas para reduzir tramitações desnecessárias",
+   "n_concorda": 1,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      23,
-      957,
-      958,
-      959,
-      960
+      963,
+      964
      ],
-     "nota": "Racionalizar o tamanho do aparelho estatal sem gerar descontinuidade"
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p37",
+   "subtema": "Governo digital e dados",
+   "proposta": "Expandir os serviços públicos digitais e a rede de atendimento integrado (Tudo Fácil e portal do Estado)",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      89,
+      100,
+      102,
+      103
+     ],
+     "nota": "Ampliar a rede Tudo Fácil e o uso da GurIA"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1028,
+      1029,
+      1043,
+      1044
+     ],
+     "nota": "Organizar serviços por jornadas de vida e integrar todos os canais"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      86,
-      167,
-      480
+      384,
+      397
      ],
-     "nota": ""
+     "nota": "Atendimento omnicanal com balcões municipais conveniados"
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      627
+     ],
+     "nota": "Transformação digital como diretriz da administração"
     }
    }
   },
   {
-   "id": "p64",
-   "subtema": "Estrutura administrativa e compras públicas",
-   "proposta": "Reduzir o número de cargos de confiança e cargos políticos na administração estadual",
-   "n_concorda": 1,
+   "id": "p38",
+   "subtema": "Governo digital e dados",
+   "proposta": "Integrar bases de dados e garantir interoperabilidade entre órgãos, evitando exigir do cidadão documentos já disponíveis",
+   "n_concorda": 3,
    "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1025,
+      1030,
+      1031,
+      1427,
+      1428
+     ],
+     "nota": "Princípio do documento uma única vez e autenticação gov.br"
+    },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      167,
-      168,
-      481
+      187,
+      389
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      89,
+      101
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p65",
-   "subtema": "Estrutura administrativa e compras públicas",
-   "proposta": "Modernizar e centralizar compras públicas e serviços administrativos compartilhados para reduzir custos e padronizar processos",
+   "id": "p39",
+   "subtema": "Governo digital e dados",
+   "proposta": "Adotar inteligência artificial na administração pública com governança, transparência e revisão humana das decisões",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1025,
+      1038,
+      1051,
+      1052
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      387,
+      391,
+      396
+     ],
+     "nota": "Publicar algoritmos de alto impacto e suas auditorias"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      100,
+      101
+     ],
+     "nota": "Não detalha salvaguardas de revisão humana"
+    }
+   }
+  },
+  {
+   "id": "p40",
+   "subtema": "Governo digital e dados",
+   "proposta": "Fortalecer a segurança cibernética e a proteção da infraestrutura digital crítica do Estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      105,
-      106
+      104
      ],
      "nota": ""
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      961,
-      962
+      1025,
+      1049,
+      1050,
+      1058,
+      1059
      ],
-     "nota": "Centralização condicionada a ganho comprovado e níveis de serviço"
+     "nota": ""
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      355
+      393,
+      394
+     ],
+     "nota": "Criação de centro estadual de cibersegurança e resposta a incidentes"
+    }
+   }
+  },
+  {
+   "id": "p41",
+   "subtema": "Governo digital e dados",
+   "proposta": "Instituir governança estadual de dados com catálogo público de bases, padrões de qualidade e registro de uso de algoritmos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      173,
+      389,
+      486
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1049,
+      1050
+     ],
+     "nota": "Define responsáveis, fontes oficiais, auditoria e prazos de retenção"
+    }
+   }
+  },
+  {
+   "id": "p42",
+   "subtema": "Governo digital e dados",
+   "proposta": "Medir e publicar tempo, custo, prazo e satisfação de cada serviço público prioritário",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      398
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1039,
+      1040,
+      1060,
+      1061
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p43",
+   "subtema": "Governo digital e dados",
+   "proposta": "Universalizar o processo administrativo eletrônico e a assinatura digital",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      386
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1047,
+      1048,
+      1428
+     ],
+     "nota": "Conclusão do SEI RS e assinaturas proporcionais ao risco"
+    }
+   }
+  },
+  {
+   "id": "p44",
+   "subtema": "Governo digital e dados",
+   "proposta": "Oferecer serviços proativos e automáticos ao cidadão, com pré-preenchimento e antecipação de avisos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1037,
+      1038
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      390
+     ],
+     "nota": "Assistente digital para orientar sobre serviços e benefícios"
+    }
+   }
+  },
+  {
+   "id": "p45",
+   "subtema": "Governo digital e dados",
+   "proposta": "Contratar tecnologia com arquitetura modular, interoperável e portabilidade de dados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1053,
+      1054,
+      1057
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p46",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Fortalecer a Escola de Governo e a formação continuada dos servidores",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      627
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      90,
+      96,
+      97
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1066,
+      1090,
+      1091,
+      1092,
+      1093
+     ],
+     "nota": "Trilhas por carreira e função com avaliação da aplicação do aprendizado"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      428
+     ],
+     "nota": "Trilhas de formação obrigatórias"
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Estruturar política de saúde, saúde mental e bem-estar dos servidores públicos",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      627
+     ],
+     "nota": "Inclui prevenção ao assédio"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      98,
+      99
+     ],
+     "nota": "Fortalecimento do IPE Saúde e ampliação da rede assistencial"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1099,
+      1100
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      431
+     ],
+     "nota": "Fortalecer e ampliar o PROSER"
+    }
+   }
+  },
+  {
+   "id": "p48",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Planejar a força de trabalho com dimensionamento por órgão e região para orientar concursos e reposição de pessoal",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      97
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1066,
+      1067,
+      1068,
+      1069,
+      1070
+     ],
+     "nota": "Programação plurianual de concursos condicionada à disponibilidade fiscal"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      425,
+      435
+     ],
+     "nota": ""
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      627
+     ],
+     "nota": "Recomposição gradual de carreiras e quadros por concurso público"
+    }
+   }
+  },
+  {
+   "id": "p49",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Implantar avaliação de desempenho dos servidores vinculada a feedback, desenvolvimento e reconhecimento",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      97
+     ],
+     "nota": "Reconhecimento vinculado à entrega de resultados"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1066,
+      1078,
+      1079,
+      1082,
+      1083,
+      1084,
+      1085
+     ],
+     "nota": "Inclui estágio probatório efetivo e tratamento do baixo desempenho"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      432
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p50",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Reestruturar e modernizar carreiras do serviço público com critérios transparentes de progressão",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      90,
+      96,
+      97
+     ],
+     "nota": "Carreiras que atraiam e retenham talentos"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1080,
+      1081
+     ],
+     "nota": "Revisar cargos obsoletos e carreiras fragmentadas, ampliando mobilidade"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      426,
+      433
+     ],
+     "nota": ""
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      627
+     ],
+     "nota": "Recomposição de carreiras com diálogo permanente com as entidades"
+    }
+   }
+  },
+  {
+   "id": "p51",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Manter diálogo permanente com as entidades representativas dos servidores",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      627
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1103,
+      1104
+     ],
+     "nota": "Canais para servidores proporem melhorias e acompanharem resultados"
+    }
+   }
+  },
+  {
+   "id": "p52",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Premiar e reconhecer equipes por resultados, com incentivos vinculados a metas verificáveis",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1086,
+      1087
+     ],
+     "nota": "Incentivos variáveis não incorporáveis, sem criar privilégios"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      437
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p53",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Publicar indicadores e painéis sobre força de trabalho, absenteísmo, capacitação e custos de pessoal",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      438
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1103,
+      1104
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p54",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Organizar o trabalho presencial, remoto ou híbrido conforme a natureza do serviço e as metas da equipe",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1101,
+      1102
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p55",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Restringir contratações temporárias e terceirizações a necessidades transitórias e serviços auxiliares, mantendo funções estratégicas no Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1094,
+      1095,
+      1098
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p56",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Promover mobilidade interna dos servidores entre órgãos e criar banco de talentos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      433,
+      434
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1080,
+      1081
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p57",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Buscar o equilíbrio fiscal sem aumento da carga tributária, priorizando crescimento econômico, eficiência do gasto e combate à sonegação",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      643,
+      644,
+      645
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      982,
+      984
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      140,
+      162
+     ],
+     "nota": "Manutenção da alíquota modal do ICMS em 17%"
+    }
+   }
+  },
+  {
+   "id": "p58",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Adotar orçamento realista, com projeções plurianuais de receitas e despesas",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      345
+     ],
+     "nota": "\"Orçamento da verdade\""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      70,
+      88
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      996,
+      997
+     ],
+     "nota": "Financiar despesas permanentes com receitas permanentes"
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Publicar relatórios periódicos de riscos fiscais, passivos contingentes e fluxo de caixa",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      346,
+      1809
+     ],
+     "nota": "Relatório trimestral"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      998,
+      999,
+      1017,
+      1018
+     ],
+     "nota": "Cenários básicos, adversos e de estresse com gatilhos definidos"
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      648
+     ],
+     "nota": "Fortalecer a gestão dos passivos contingentes e riscos fiscais"
+    }
+   }
+  },
+  {
+   "id": "p60",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Instituir revisão periódica de benefícios e incentivos fiscais, com avaliação de custo e retorno",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      349,
+      525
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1015,
+      1016
+     ],
+     "nota": "Reformular ou encerrar instrumentos ineficazes"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      57,
+      159
+     ],
+     "nota": "Revisar políticas de incentivo diante da reforma tributária"
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      647,
+      648
+     ],
+     "nota": "Atualizar FUNDOPEM/RS e INTEGRAR/RS"
+    }
+   }
+  },
+  {
+   "id": "p61",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Proteger os investimentos públicos essenciais e a manutenção da infraestrutura na programação orçamentária",
+   "n_concorda": 4,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      347
+     ],
+     "nota": "Regra de proteção do investimento público essencial"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1006,
+      1007
+     ],
+     "nota": "Evitar novas obras sem previsão de operação e manutenção"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      140
+     ],
+     "nota": ""
+    },
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      681,
+      684
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p62",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Adotar teto interno para o crescimento das despesas discricionárias compatível com a receita",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      357
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p63",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Aperfeiçoar a cobrança da dívida ativa e modernizar a fiscalização tributária com análise de dados",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      350,
+      352
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      140
+     ],
+     "nota": "Modernização da arrecadação"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      982
+     ],
+     "nota": "Combate à sonegação como via de equilíbrio fiscal"
+    }
+   }
+  },
+  {
+   "id": "p64",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Preparar as finanças estaduais para calamidades com reservas, fundos, seguros e regras de execução emergencial",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1000,
+      1001
+     ],
+     "nota": ""
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      163
+     ],
+     "nota": "Fundos de proteção financeira contra vulnerabilidades climáticas"
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Reduzir o estoque de precatórios e concluir a reestruturação do passivo judicial do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      149
      ],
      "nota": ""
     }
@@ -1847,106 +1893,105 @@
   },
   {
    "id": "p66",
-   "subtema": "Estrutura administrativa e compras públicas",
-   "proposta": "Instituir programa permanente de modernização administrativa com capacitação e apoio às equipes na implantação de novos processos",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Participar ativamente da regulamentação e implementação da reforma tributária, preparando o Estado para o novo ambiente tributário",
    "n_concorda": 2,
    "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      645,
+      646
+     ],
+     "nota": "Atuar pela transferência de recursos do FNDR e do fundo de compensação"
+    },
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      87,
-      94
+      142,
+      143,
+      163
      ],
-     "nota": ""
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      963,
-      964,
-      965,
-      966
-     ],
-     "nota": "Redesenho de processos críticos e delegação de decisões"
+     "nota": "Criação de fundos específicos e instrumentos financeiros inovadores"
     }
    }
   },
   {
    "id": "p67",
-   "subtema": "Estrutura administrativa e compras públicas",
-   "proposta": "Exigir e fiscalizar programas de integridade nos contratos públicos de maior risco, com exigências proporcionais ao porte do fornecedor",
+   "subtema": "Orçamento e equilíbrio fiscal",
+   "proposta": "Aperfeiçoar a gestão da previdência dos servidores estaduais, acompanhando projeções atuariais e sustentabilidade",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rs-zucco-210002547857": {
+    "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
      "blocos": [
-      909,
-      910,
-      1125,
-      1126
+      651
      ],
      "nota": ""
     },
-    "governador-rs-marcelo-maranata-210002535802": {
+    "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      471
+      1017,
+      1018
      ],
-     "nota": "Ampliação do Programa Gaúcho de Governança e Integridade"
+     "nota": "Monitorar previdência, estatais e passivos contingentes"
     }
    }
   },
   {
    "id": "p68",
-   "subtema": "Estrutura administrativa e compras públicas",
-   "proposta": "Preservar a memória institucional e padronizar registros para garantir continuidade de políticas e transições organizadas",
-   "n_concorda": 1,
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Ampliar e modernizar a Consulta Popular, com rastreabilidade das propostas e devolutiva à população",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-rs-zucco-210002547857": {
+    "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
      "blocos": [
-      974,
-      975
+      628,
+      629
      ],
-     "nota": ""
+     "nota": "Retomar também o Orçamento Participativo"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      466,
+      492
+     ],
+     "nota": "Plataforma auditável e devolutiva obrigatória"
     }
    }
   },
   {
    "id": "p69",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Manter representação profissional e permanente do Estado em Brasília, com prioridades definidas e prestação de contas das articulações",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Fortalecer os COREDEs e os conselhos e espaços de participação social do Estado",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rs-zucco-210002547857": {
+    "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
      "blocos": [
-      1208,
-      1209,
-      1210,
-      1211,
-      1212,
-      1213,
-      1234
+      628,
+      630
      ],
-     "nota": "Coordenação da bancada federal em torno de carteira limitada de projetos"
+     "nota": ""
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      253,
-      254,
-      255,
-      256
+      467,
+      468
      ],
-     "nota": ""
+     "nota": "Inclui COMUDEs e reativação de conselho de desenvolvimento econômico e social"
     }
    }
   },
   {
    "id": "p70",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Prestar apoio técnico e escritório de projetos aos municípios e consórcios intermunicipais",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Prestar apoio técnico do Estado aos municípios, especialmente os pequenos, na estruturação de projetos",
    "n_concorda": 3,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
@@ -1954,7 +1999,7 @@
      "blocos": [
       629
      ],
-     "nota": "Atenção especial aos pequenos municípios"
+     "nota": ""
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
@@ -1962,35 +2007,36 @@
       903,
       904
      ],
-     "nota": "Assistência técnica para estruturar projetos intermunicipais de parceria"
+     "nota": "Assistência técnica e apoio a projetos intermunicipais"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      179,
-      311,
-      493
+      311
      ],
-     "nota": "Consórcios para compras coletivas e serviços compartilhados"
+     "nota": "Escritório estadual de projetos para municípios e consórcios"
     }
    }
   },
   {
    "id": "p71",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Manter relação institucional e transparente com a Assembleia Legislativa, publicando agenda legislativa e respeitando as prerrogativas da oposição",
-   "n_concorda": 1,
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Usar consórcios intermunicipais para compras coletivas e compartilhamento de serviços e equipamentos",
+   "n_concorda": 2,
    "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      179,
+      493
+     ],
+     "nota": ""
+    },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      1195,
-      1197,
-      1198,
-      1199,
-      1200,
-      1201,
-      1202
+      903,
+      904
      ],
      "nota": ""
     }
@@ -1998,8 +2044,8 @@
   },
   {
    "id": "p72",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Instituir mesa federativa periódica entre Estado e municípios para pactuar competências, financiamento e metas das políticas compartilhadas",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Instituir mesa federativa periódica para pactuar competências, financiamento e metas entre Estado e municípios",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -2014,26 +2060,446 @@
   },
   {
    "id": "p73",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Ampliar a cooperação com os demais estados do Sul e com países vizinhos, usando fóruns já existentes como o Cosud e o Mercosul",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Ampliar a integração tributária com os municípios e os programas de cidadania fiscal",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rs-zucco-210002547857": {
+    "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      1229,
-      1230,
-      1231,
-      1232
+      150,
+      151,
+      152
+     ],
+     "nota": "Evolução do PIT e do Receita Certa, com gamificação"
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Criar observatórios cidadãos regionais para acompanhamento das metas do governo",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      477
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p74",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Manter canais técnicos permanentes com Judiciário, Ministério Público, Defensoria e Tribunal de Contas e reforçar a atuação preventiva da PGE para reduzir litígios",
+   "id": "p75",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Realizar consultas públicas digitais e presenciais para políticas de grande impacto",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      476
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      907,
+      908
+     ],
+     "nota": "Consultas e audiências enquanto as decisões ainda podem ser alteradas"
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Escolher o modelo de contratação (concessão, PPP ou execução direta) com base em análise técnica comparativa de vantagem para o interesse público",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      892,
+      893,
+      894
+     ],
+     "nota": "Nenhum modelo tratado como solução ideológica"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      940,
+      952
+     ],
+     "nota": "Análise de valor pelo dinheiro comparada com execução pública"
+    }
+   }
+  },
+  {
+   "id": "p77",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Fortalecer a unidade central de parcerias com equipe técnica multidisciplinar permanente",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      897,
+      898,
+      902
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      953
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p78",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Manter carteira plurianual de concessões e PPPs priorizada por maturidade e viabilidade",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      895,
+      896,
+      905,
+      906
+     ],
+     "nota": "Suspender projetos sem viabilidade e só anunciar leilão com projeto maduro"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      951,
+      954
+     ],
+     "nota": "Prioriza irrigação, saneamento, mobilidade, logística e equipamentos sociais"
+    }
+   }
+  },
+  {
+   "id": "p79",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Publicar estudos, matrizes de risco, contratos, aditivos e indicadores de desempenho das parcerias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      913,
+      914,
+      926,
+      927
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      956,
+      960
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p80",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Vincular a remuneração dos parceiros privados a metas verificáveis de desempenho e qualidade dos serviços",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      892,
+      922,
+      923
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      960
+     ],
+     "nota": "Monitoramento por indicadores independentes"
+    }
+   }
+  },
+  {
+   "id": "p81",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Avaliar pedidos de reequilíbrio contratual com critérios técnicos, transparência e comprovação de impactos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      924,
+      925
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      963
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Fortalecer e modernizar a regulação e a fiscalização dos serviços concedidos, com independência técnica do regulador",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      917,
+      918
+     ],
+     "nota": "Modernização da Agergs"
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Destinar receitas da venda ou concessão de ativos ao financiamento de investimentos, não ao custeio recorrente",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      962
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      997
+     ],
+     "nota": "Receitas extraordinárias destinadas a investimentos, dívida e reservas"
+    }
+   }
+  },
+  {
+   "id": "p84",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Criar mecanismos de proteção tarifária para usuários vulneráveis nos serviços concedidos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      957,
+      958
+     ],
+     "nota": ""
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      915,
+      916
+     ],
+     "nota": "Modicidade tarifária e limites à maximização de outorgas"
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Orientar a publicidade oficial por critérios republicanos, transparentes e auditáveis, priorizando campanhas educativas e de utilidade pública em vez da promoção da gestão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      310,
+      312
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Destinar parcela prioritária do orçamento de publicidade a ações permanentes de educação, prevenção e informação sobre eventos climáticos extremos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      312
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Fortalecer a TVE-RS e a FM Cultura como rede pública de comunicação voltada à cultura, ciência, educação e produção regional",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      313
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Regulamentar o Conselho Estadual de Comunicação Pública e Social com participação da sociedade",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      313,
+      314
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Criar ação intersetorial de enfrentamento à desinformação em cooperação com universidades, imprensa e agências independentes de checagem",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      310,
+      313
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Garantir acessibilidade em Libras, audiodescrição, legendas e linguagem simples em portais, campanhas e transmissões oficiais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p91",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Implantar programas de educomunicação e letramento midiático nas escolas estaduais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      315
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Comunicação pública e desinformação",
+   "proposta": "Valorizar a imprensa regional e comunitária na política de comunicação pública do Estado",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      310
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p93",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Manter relação institucional permanente e transparente com a Assembleia Legislativa, apresentando prioridades e impactos fiscais dos projetos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1195,
+      1197,
+      1198
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p94",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Publicar anualmente a agenda legislativa do governo, com objetivos, justificativas e cronograma",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1199,
+      1200
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p95",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Assegurar acesso a informações e respostas a requerimentos das bancadas de oposição",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1201,
+      1202,
+      1207
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p96",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Estabelecer canais técnicos permanentes com Judiciário, Ministério Público, Defensoria e Tribunal de Contas para reduzir a judicialização de políticas públicas",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -2044,14 +2510,32 @@
       1222,
       1223
      ],
-     "nota": ""
+     "nota": "Inclui integração da PGE desde a elaboração de normas e contratos"
     }
    }
   },
   {
-   "id": "p75",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Monitorar programas e editais federais para captar transferências e evitar devolução de recursos por falhas de execução",
+   "id": "p97",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Ampliar a cooperação com os demais estados do Sul e as políticas de fronteira e integração ao Mercosul",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1229,
+      1230,
+      1231,
+      1232
+     ],
+     "nota": "Uso do Cosud e acordos específicos"
+    }
+   }
+  },
+  {
+   "id": "p98",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Monitorar convênios e transferências federais para evitar perda de prazos e devolução de recursos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -2065,9 +2549,9 @@
    }
   },
   {
-   "id": "p76",
-   "subtema": "Capacidade estatística e avaliação",
-   "proposta": "Recriar ou fortalecer instituição estadual de estatística e estudos econômicos com autonomia técnica, retomando séries históricas e estudos regionais",
+   "id": "p99",
+   "subtema": "Capacidade estatística e evidências",
+   "proposta": "Recriar ou fortalecer instituição estadual autônoma de economia e estatística, retomando séries históricas e estudos regionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-marcelo-maranata-210002535802": {
@@ -2086,28 +2570,26 @@
    }
   },
   {
-   "id": "p77",
-   "subtema": "Capacidade estatística e avaliação",
-   "proposta": "Criar repositório público e interoperável de dados estaduais e firmar parcerias com IBGE, Ipea e universidades",
+   "id": "p100",
+   "subtema": "Capacidade estatística e evidências",
+   "proposta": "Firmar parcerias com IBGE, Ipea, universidades e centros de pesquisa para produção de evidências",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      187,
       189,
-      524,
-      526,
-      530
+      522,
+      526
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p78",
-   "subtema": "Capacidade estatística e avaliação",
-   "proposta": "Adotar gestão baseada em evidências e dados na formulação e decisão das políticas públicas",
+   "id": "p101",
+   "subtema": "Capacidade estatística e evidências",
+   "proposta": "Adotar gestão baseada em evidências e dados na formulação das políticas públicas estaduais",
    "n_concorda": 3,
    "posicoes": {
     "governador-rs-gabriel-souza-210002542892": {
@@ -2121,42 +2603,25 @@
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      937,
-      939,
-      953,
-      954
+      938,
+      939
      ],
      "nota": ""
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      512,
-      525
+      187,
+      512
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p79",
+   "id": "p102",
    "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Atualizar o FUNDOPEM como instrumento de incentivo fiscal do Estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      647
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p80",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Simplificar a tributação estadual, construindo um ambiente tributário mais simples, estável e previsível e reduzindo a burocracia para as empresas",
+   "proposta": "Simplificar a tributação estadual, reduzindo a burocracia e construindo ambiente tributário mais simples, estável e previsível para estimular investimentos e a competitividade das empresas gaúchas",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-gabriel-souza-210002542892": {
@@ -2169,57 +2634,29 @@
    }
   },
   {
-   "id": "p81",
+   "id": "p103",
    "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Conduzir a adaptação do Estado à Reforma Tributária com instrumentos financeiros inovadores e mecanismos de atração de investimentos que substituam gradualmente os incentivos fiscais tradicionais",
-   "n_concorda": 2,
+   "proposta": "Modernizar a política de tributação do IPVA",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      645,
-      647,
-      648
-     ],
-     "nota": "Participação ativa na reforma tributária e atualização de FUNDOPEM/INTEGRAR para atrair investimentos."
-    },
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      142,
-      143
+      153
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p82",
+   "id": "p104",
    "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Evoluir o Programa de Integração Tributária (PIT) e o Receita Certa, ampliando a integração com os municípios e usando gamificação e novas funcionalidades para estimular a cidadania fiscal e a conformidade tributária",
+   "proposta": "Criar o IPVA Verde, com critérios de incentivo à sustentabilidade ambiental e à renovação da frota de veículos",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      150,
-      151,
-      152
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p83",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Criar o IPVA Verde, incorporando critérios de sustentabilidade ambiental à tributação de veículos e incentivando a renovação da frota, especialmente no transporte de cargas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      153,
       154,
       155
      ],
@@ -2228,7 +2665,7 @@
    }
   },
   {
-   "id": "p84",
+   "id": "p105",
    "subtema": "Orçamento e equilíbrio fiscal",
    "proposta": "Fortalecer políticas de justiça tributária, como o programa Devolve ICMS",
    "n_concorda": 1,
@@ -2243,158 +2680,76 @@
    }
   },
   {
-   "id": "p85",
-   "subtema": "Orçamento e equilíbrio fiscal",
-   "proposta": "Manter a alíquota modal do ICMS em 17%",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      162
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p86",
-   "subtema": "Concessões, PPPs e ativos públicos",
-   "proposta": "Exigir estudos prévios consistentes (demanda, engenharia, ambiente, desapropriações, financiamento, interesse de mercado e capacidade regulatória) antes do edital, anunciando datas de leilão apenas com o projeto maduro",
+   "id": "p106",
+   "subtema": "Concessões, PPPs e patrimônio",
+   "proposta": "Alocar os riscos dos contratos de concessão e PPP (construção, operação, demanda, financiamento, licenciamento e eventos extraordinários) à parte que possa administrá-los a menor custo, publicando matrizes específicas e incorporando riscos climáticos, seguros e continuidade operacional",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      906
+      912
      ],
      "nota": ""
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      951,
+      940,
       952,
-      955,
-      956
+      956,
+      963
      ],
-     "nota": "Exige value for money, estudos, matriz de riscos e consulta pública antes de concessões."
+     "nota": "Alocação equilibrada de riscos e publicação de matriz de riscos e contratos"
     }
    }
   },
   {
-   "id": "p87",
+   "id": "p107",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Consolidar uma estratégia estadual de longo prazo articulada ao Plano Rio Grande, ao plano de metas do mandato, aos planos setoriais e aos instrumentos legais de planejamento e orçamento, sem duplicá-los",
+   "proposta": "Aprimorar o Sistema de Monitoramento Estratégico para integrar cronograma, orçamento, riscos, decisões e evidências, com responsáveis e prazos definidos para destravar entraves jurídicos, técnicos, financeiros e administrativos",
    "n_concorda": 4,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
      "blocos": [
-      625,
-      628
+      627,
+      630
      ],
-     "nota": "Planejamento estratégico de longo prazo e fortalecimento do planejamento regional."
+     "nota": "Gestão por resultados e mecanismos permanentes de monitoramento e avaliação de metas"
     },
     "governador-rs-gabriel-souza-210002542892": {
      "posicao": "concorda",
      "blocos": [
-      88,
       92,
       93,
       95
      ],
-     "nota": "Propõe consolidar modelo que integra planejamento, orçamento, metas e monitoramento."
+     "nota": "Modelo de gestão integrando planejamento, orçamento, metas, monitoramento e gestão de riscos"
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      956
+      954
      ],
      "nota": ""
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      89,
       304,
       305,
-      306
+      306,
+      1810
      ],
-     "nota": "Integra PPA/LDO/orçamento e metas em painel único, com Plano Rio Grande distinto do RRF."
+     "nota": "Unidade de entrega e painel integrando PPA/orçamento/contratos/metas"
     }
    }
   },
   {
-   "id": "p88",
-   "subtema": "Transformação digital e desburocratização",
-   "proposta": "Adotar arquitetura digital comum, integrações padronizadas e componentes reutilizáveis e contratar soluções modulares e interoperáveis, com portabilidade de dados, documentação e plano de saída do fornecedor",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1054,
-      1057
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      384,
-      386,
-      389
-     ],
-     "nota": "Catálogo de dados e arquitetura de interoperabilidade entre órgãos."
-    }
-   }
-  },
-  {
-   "id": "p89",
+   "id": "p108",
    "subtema": "Servidores, carreiras e folha",
-   "proposta": "Ampliar a qualificação dos servidores em dados, automação, inteligência artificial, segurança e desenho de serviços, vinculando a adoção de novas tecnologias a resultados de redução de custos, tempo, erros e burocracia",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      627
-     ],
-     "nota": "Qualificação do servidor, Escola de Governo, transformação digital e gestão por resultados."
-    },
-    "governador-rs-gabriel-souza-210002542892": {
-     "posicao": "concorda",
-     "blocos": [
-      89,
-      90,
-      94,
-      97
-     ],
-     "nota": "Capacitação e competências estratégicas aliadas a IA, dados e automação na gestão."
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1061
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      387,
-      428,
-      438
-     ],
-     "nota": "Escola de governo com trilhas obrigatórias e política de IA responsável."
-    }
-   }
-  },
-  {
-   "id": "p90",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Modernizar os concursos públicos com critérios objetivos ligados às atribuições do cargo, uso de provas práticas ou cursos de formação e integração dos novos servidores por ambientação e formação específica",
+   "proposta": "Modernizar os concursos públicos com critérios objetivos ligados às atribuições do cargo, uso de provas práticas ou cursos de formação, e integrar os novos servidores com ambientação geral e formação específica",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -2407,57 +2762,9 @@
    }
   },
   {
-   "id": "p91",
-   "subtema": "Servidores, carreiras e folha",
-   "proposta": "Tornar o estágio probatório efetivo, com avaliação em ciclos, expectativas claras, evidências, feedback, formação, apoio e direito a recurso",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1079
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p92",
-   "subtema": "Transparência e integridade",
-   "proposta": "Monitorar o cumprimento da Lei de Acesso à Informação (prazos, negativas, recursos e qualidade das respostas), exigir fundamentação específica para restrições e ampliar a transparência ativa",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
-     "posicao": "concorda",
-     "blocos": [
-      630,
-      651
-     ],
-     "nota": "Ampliação da transparência e fortalecimento do controle interno."
-    },
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      1134
-     ],
-     "nota": ""
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      170,
-      472,
-      483,
-      487
-     ],
-     "nota": "Transparência ativa, dados abertos e publicação de contratos e pagamentos."
-    }
-   }
-  },
-  {
-   "id": "p93",
-   "subtema": "Transparência e integridade",
-   "proposta": "Qualificar a corregedoria com equipes especializadas, sistemas e gestão de prazos para concluir processos disciplinares sem prescrição, preservando contraditório e ampla defesa",
+   "id": "p109",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Qualificar a corregedoria do Estado com capacidade especializada, sistemas e gestão de prazos para concluir apurações e processos disciplinares, evitando prescrição, assegurando contraditório e ampla defesa",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -2470,17 +2777,18 @@
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
+      170,
       465,
       483
      ],
-     "nota": "Secretaria reunindo correição, controle interno e ouvidoria."
+     "nota": "Secretaria integrando correição, controle interno e ouvidoria"
     }
    }
   },
   {
-   "id": "p94",
-   "subtema": "Transparência e integridade",
-   "proposta": "Aplicar responsabilização proporcional, distinguindo falhas de processo, erros justificáveis, negligência, dolo, fraude e corrupção, com orientação, correção, ressarcimento ou sanção conforme gravidade, sem punir o gestor de boa-fé",
+   "id": "p110",
+   "subtema": "Transparência, integridade e controle",
+   "proposta": "Adotar critérios de responsabilização proporcional, distinguindo falhas de processo, erros justificáveis, negligência, dolo, fraude e corrupção, aplicando orientação, correção, ressarcimento ou sanção conforme gravidade, intenção, dano e reincidência, sem punir o gestor de boa-fé",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
@@ -2493,9 +2801,155 @@
    }
   },
   {
-   "id": "p95",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Articular estados e bancadas parlamentares para defender mecanismos nacionais permanentes de financiamento, prevenção, seguros, adaptação e reconstrução diante de eventos climáticos extremos",
+   "id": "p111",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Manter agenda regular com a bancada federal gaúcha (deputados e senadores) e apresentar carteira limitada de projetos e pautas maduras para orientar emendas, recursos, legislação e articulações junto à União",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1209
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      251,
+      253,
+      255,
+      256
+     ],
+     "nota": "Presença permanente em Brasília com pauta e prestação de contas"
+    }
+   }
+  },
+  {
+   "id": "p112",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Selecionar poucos projetos e pautas federais de alta relevância e maturidade (infraestrutura, dívida, saúde, proteção contra desastres e desenvolvimento), com responsáveis, estratégia, prazos e decisões federais necessárias",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1213
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      253,
+      254,
+      306
+     ],
+     "nota": "Pautas federais definidas (dívida, enchentes, SUS) e prioridades com responsáveis"
+    }
+   }
+  },
+  {
+   "id": "p113",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Articular estados e bancadas para criar mecanismos nacionais permanentes de financiamento, prevenção, seguros, adaptação e reconstrução diante de eventos climáticos extremos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      147,
+      148,
+      163
+     ],
+     "nota": "Atuação junto ao Congresso/União e fundos de proteção contra vulnerabilidades climáticas"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1217
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p114",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Profissionalizar as relações institucionais com equipes técnicas permanentes, registro de compromissos firmados com órgãos, municípios e entidades e divulgação de prioridades, responsáveis, prazos e resultados",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      1234
+     ],
+     "nota": ""
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      254,
+      255,
+      469
+     ],
+     "nota": "Representação profissional/técnica e agenda pública de compromissos"
+    }
+   }
+  },
+  {
+   "id": "p115",
+   "subtema": "Capacidade estatística e evidências",
+   "proposta": "Constituir equipe multidisciplinar de economistas, estatísticos, demógrafos, geógrafos, cientistas de dados e especialistas em políticas públicas no órgão estadual de pesquisa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p116",
+   "subtema": "Capacidade estatística e evidências",
+   "proposta": "Produzir estudos prévios (ex ante) e avaliações posteriores (ex post) sobre incentivos fiscais, concessões, programas sociais e investimentos públicos",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      58,
+      60,
+      159
+     ],
+     "nota": "Gestão baseada em evidências, avaliação de políticas e aprimoramento de incentivos fiscais"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      973,
+      1009,
+      1016,
+      1323
+     ],
+     "nota": "Avaliação de incentivos fiscais, programas e grandes projetos ex ante/ex post"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p117",
+   "subtema": "Dívida com a União e relação federativa",
+   "proposta": "Manter relação institucional com o governo federal pautada pela defesa dos interesses do Estado acima de divergências partidárias, sem submissão nem isolamento",
    "n_concorda": 3,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
@@ -2505,142 +2959,104 @@
       685,
       688
      ],
-     "nota": "Articulação permanente com a União como política de Estado para reconstrução climática."
+     "nota": "Defende cooperação institucional e articulação com a União como política de Estado, não eleitoral"
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      1217
+      20,
+      1195,
+      1210,
+      1213
      ],
-     "nota": ""
+     "nota": "Nova relação com governo federal e representação técnica em Brasília"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      253,
       256
      ],
-     "nota": "Presença permanente em Brasília por recursos de proteção contra enchentes e reconstrução."
-    }
-   }
-  },
-  {
-   "id": "p96",
-   "subtema": "Capacidade estatística e avaliação",
-   "proposta": "Compor equipe técnica multidisciplinar (economistas, estatísticos, demógrafos, geógrafos, cientistas de dados e especialistas em políticas públicas) na instituição estadual de estatística e estudos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      185,
-      522
-     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p97",
+   "id": "p118",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Implementar as medidas por programas específicos com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais, iniciando por diagnóstico e priorização de riscos, com projetos-piloto, expansão progressiva e avaliação independente",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      941,
-      943,
-      954,
-      986
-     ],
-     "nota": "Metas com indicadores, responsáveis, orçamento, cronograma e monitoramento contínuo"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      307,
-      354,
-      394,
-      434,
-      474,
-      488,
-      958
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p98",
-   "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Validar linha de base dos indicadores no primeiro semestre de governo",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rs-zucco-210002547857": {
-     "posicao": "concorda",
-     "blocos": [
-      943
-     ],
-     "nota": "Plano de metas com entregas anuais, linhas de base e indicadores objetivos"
-    },
-    "governador-rs-marcelo-maranata-210002535802": {
-     "posicao": "concorda",
-     "blocos": [
-      320,
-      359,
-      400,
-      440,
-      495,
-      965,
-      1622,
-      1826
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p99",
-   "subtema": "Transparência e integridade",
-   "proposta": "Manter painel público de acompanhamento das metas e políticas atualizado ao menos trimestralmente",
+   "proposta": "Implantar programas por etapas: diagnóstico e priorização de riscos, projetos-piloto, expansão progressiva e avaliação independente",
    "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      95
+     ],
+     "nota": "Metodologia integrada de priorização com gestão de riscos fiscais e climáticos"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      939,
+      954,
+      1112,
+      1113
+     ],
+     "nota": "Priorização por risco, monitoramento e avaliação contínua"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      354,
+      474
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p119",
+   "subtema": "Governo digital e dados",
+   "proposta": "Criar repositório público e interoperável de dados estaduais, com órgão responsável, cronograma, financiamento, metas anuais e painel público de acompanhamento",
+   "n_concorda": 4,
    "posicoes": {
     "governador-rs-juliana-brizola-210002551508": {
      "posicao": "concorda",
      "blocos": [
-      630
+      312
      ],
-     "nota": "Acompanhamento público de obras e mecanismos permanentes de monitoramento e prestação de contas."
+     "nota": "Portal da Transparência modernizado, com dados abertos e painéis de acompanhamento"
+    },
+    "governador-rs-gabriel-souza-210002542892": {
+     "posicao": "concorda",
+     "blocos": [
+      89,
+      101
+     ],
+     "nota": "Ampliação do uso de inteligência de dados e integração de dados na gestão pública"
     },
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      1020,
+      1049,
+      1050,
+      1131,
       1132
      ],
-     "nota": "Transparência de metas, entregas e resultados em portal atualizado"
+     "nota": "Portal da Transparência com dados abertos, atualizados e reutilizáveis; governança de dados"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      322,
-      361,
-      402,
-      442,
-      497,
-      967,
-      1624,
-      1828
+      524
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p100",
-   "subtema": "Capacidade estatística e avaliação",
-   "proposta": "Realizar diagnóstico institucional e estudo de impacto fiscal da instituição estadual de estatística no primeiro ano",
+   "id": "p120",
+   "subtema": "Capacidade estatística e evidências",
+   "proposta": "Realizar diagnóstico institucional e estudo de impacto fiscal do órgão estadual de estatística no primeiro ano de governo",
    "n_concorda": 1,
    "posicoes": {
     "governador-rs-marcelo-maranata-210002535802": {
@@ -2653,8 +3069,8 @@
    }
   },
   {
-   "id": "p101",
-   "subtema": "Capacidade estatística e avaliação",
+   "id": "p121",
+   "subtema": "Capacidade estatística e evidências",
    "proposta": "Publicar relatórios regionais periódicos sobre economia, demografia e produtividade",
    "n_concorda": 1,
    "posicoes": {
@@ -2668,41 +3084,78 @@
    }
   },
   {
-   "id": "p102",
-   "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Priorizar, na carteira de investimentos públicos, projetos de irrigação, saneamento, mobilidade, logística e equipamentos sociais",
+   "id": "p122",
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Integrar Junta Comercial, Receita Estadual, órgãos ambientais, municípios e Corpo de Bombeiros em porta única digital para abertura e licenciamento de empresas",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rs-juliana-brizola-210002551508": {
+    "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
-      648
+      1029,
+      1031,
+      1041,
+      1042
      ],
-     "nota": "Recursos para infraestrutura e projetos de sustentabilidade, inclusive irrigação."
+     "nota": "Serviços por jornadas (empreendedorismo) e Descomplica RS"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
      "blocos": [
-      954
+      580,
+      581
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p103",
-   "subtema": "Relação com a União, Assembleia e municípios",
-   "proposta": "Encaminhar à Assembleia Legislativa pacote legislativo de integridade, governo digital e simplificação",
+   "id": "p123",
+   "subtema": "Participação social e relação com municípios",
+   "proposta": "Realizar consulta e audiência pública em todos os projetos relevantes do Estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rs-juliana-brizola-210002551508": {
+     "posicao": "concorda",
+     "blocos": [
+      628,
+      629,
+      630
+     ],
+     "nota": "Retomada do OP/Consulta Popular e ampliação de espaços de participação e acompanhamento público"
+    },
+    "governador-rs-zucco-210002547857": {
+     "posicao": "concorda",
+     "blocos": [
+      907,
+      908
+     ],
+     "nota": "Consultas e audiências transparentes em projetos de concessão/PPP"
+    },
+    "governador-rs-marcelo-maranata-210002535802": {
+     "posicao": "concorda",
+     "blocos": [
+      955
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p124",
+   "subtema": "Relação com a Assembleia e outros Poderes",
+   "proposta": "Encaminhar à Assembleia Legislativa pacote legislativo de integridade, governo digital e simplificação administrativa",
    "n_concorda": 2,
    "posicoes": {
     "governador-rs-zucco-210002547857": {
      "posicao": "concorda",
      "blocos": [
+      1025,
       1109,
       1199,
       1200
      ],
-     "nota": "Agenda legislativa anual publicada, incluindo reformas de integridade e simplificação"
+     "nota": "Agenda legislativa anual com pautas de integridade e simplificação"
     },
     "governador-rs-marcelo-maranata-210002535802": {
      "posicao": "concorda",
@@ -2716,13 +3169,29 @@
  ],
  "blocos": {
   "governador-rs-gabriel-souza-210002542892": {
+   "57": {
+    "texto": "Responsabilidade Fiscal significa sobretudo dar sentido, critério e eficiência ao gasto público, com orientação às políticas públicas essenciais como saúde, educação, segurança pública e desenvolvimento econômico. Nosso Estado terá que responder ao cenário de inovação fiscal que decorre da reforma tributária, revisando as políticas de incentivo e promovendo um novo arranjo institucional que fortaleça nossa matriz econômica e incentive novos negócios.",
+    "pagina": 5
+   },
    "58": {
     "texto": "Dar continuidade às políticas de inovação, avançar em um modelo de gestão baseado em evidências e promover a formação de novos atores no ambiente de negócios será a pauta principal para cuidar das contas do RS. Esse compromisso exige uma gestão orientada por resultados e voltada para as pessoas. Planejamento, orçamento, execução e avaliação de forma integrada, reconhecendo a estratégia do Estado frente a cada setor econômico e promovendo um diálogo produtivo capaz de fortalecer o ambiente de negócios.",
     "pagina": 5
    },
-   "87": {
-    "texto": "• Estado mais eficiente para entregar melhores resultados à população:",
-    "pagina": 7
+   "59": {
+    "texto": "Governança, transparência e integridade sustentam esse modelo de gestão.",
+    "pagina": 5
+   },
+   "60": {
+    "texto": "Monitorar resultados, avaliar políticas públicas e aperfeiçoar processos de forma permanente fortalece a capacidade institucional do Estado. Também qualifica a aplicação dos recursos públicos e amplia a confiança da sociedade.",
+    "pagina": 5
+   },
+   "70": {
+    "texto": "Esse avanço também foi marcado pela adoção de orçamentos mais realistas, alinhados à efetiva capacidade financeira do Estado, fortalecendo a integração entre planejamento, orçamento e execução. A maior aderência entre essas etapas permitiu melhor alocação dos recursos públicos, maior previsibilidade da gestão e ampliação da eficiência governamental. Do mesmo modo, a consolidação de uma cultura de gestão orientada por resultados permitiu elevar a qualidade das decisões, garantindo maior transparência e, consequentemente, mais confiança da sociedade.",
+    "pagina": 6
+   },
+   "72": {
+    "texto": "Nesse contexto, a transformação digital se consolidou como uma das principais agendas de modernização da administração nos últimos anos. Ações como a ampliação dos serviços digitais e o desenvolvimento de soluções baseadas em inteligência artificial ampliaram a eficiência administrativa, desburocratizando a gestão e ampliando o acesso da população aos serviços públicos.",
+    "pagina": 6
    },
    "88": {
     "texto": "Consolidar a responsabilidade fiscal, a qualidade do gasto, a integração entre planejamento, orçamento e execução, a modernização administrativa, a transformação digital e a gestão orientada por resultados, assegurando capacidade permanente de investimento e melhoria dos serviços públicos.",
@@ -2803,6 +3272,10 @@
    "108": {
     "texto": "Modernizar a gestão patrimonial, promover",
     "pagina": 7
+   },
+   "132": {
+    "texto": "No campo fiscal, a adesão ao Programa de Pleno Pagamento das Dívidas dos Estados (Propag) representará uma nova etapa da gestão da dívida pública",
+    "pagina": 8
    },
    "138": {
     "texto": "Nosso governo será dedicado a consolidar esses avanços, preservando o equilíbrio das contas públicas e ampliando a capacidade de investimento do Estado. O compromisso é manter um governo que paga em dia, investe com responsabilidade e cria as condições para o desenvolvimento sustentável do Rio Grande do Sul.",
@@ -2890,9 +3363,25 @@
     "texto": "A formação de um governo liderado por Juliana Brizola e Edegar Pretto no Estado, com Lula e Alckmin à frente do Governo Federal, permitirá construir um ambiente de cooperação institucional no tratamento de demandas centrais para o Rio Grande do Sul. Temas como a reconstrução do Estado e o equacionamento da dívida com a União serão tratados de forma responsável, respeitosa e altiva, tendo como objetivo recuperar a capacidade de investimento do Rio Grande do Sul e assegurar as condições necessárias à retomada de seu desenvolvimento.",
     "pagina": 2
    },
-   "624": {
-    "texto": "O Rio Grande do Sul enfrenta o desafio de fortalecer a capacidade institucional do Estado, valorizar o serviço público e aperfeiçoar seus instrumentos de planejamento, gestão e participação social. A qualificação das carreiras, a recomposição de quadros em áreas estratégicas, o enfrentamento das desigualdades regionais e a participação da sociedade na definição das prioridades governamentais são condições essenciais para uma gestão pública moderna, eficiente, transparente e orientada para resultados.",
-    "pagina": 33
+   "310": {
+    "texto": "A Coligação Com o Povo compreende a comunicação pública como serviço essencial, instrumento de transparência e cidadania e garantia do direito à informação de qualidade. O Governo construirá uma política de comunicação pública democrática, descentralizada e acessível, voltada à prestação de serviços, ao enfrentamento da desinformação e à valorização da imprensa regional e comunitária, aproximando o Estado da sociedade.",
+    "pagina": 15
+   },
+   "312": {
+    "texto": "A comunicação institucional será orientada por critérios republicanos, transparentes e auditáveis na contratação de agências, veículos e distribuição das verbas publicitárias, priorizando campanhas educativas e de utilidade pública em lugar da promoção da gestão. Do orçamento anual de publicidade, serão priorizados recursos a ações permanentes de educação, prevenção e informação sobre eventos climáticos extremos. O Portal da Transparência será modernizado, com dados abertos e painéis de fácil acesso para acompanhamento de obras, licitações, contratos e repasses aos municípios.",
+    "pagina": 15
+   },
+   "313": {
+    "texto": "O Estado organizar-se-á, de forma intersetorial, no enfrentamento à desinformação, em cooperação com universidades, imprensa e agências independentes de checagem, especialmente em temas como emergências climáticas, vacinação, segurança e serviços públicos. A TVE-RS e a FM Cultura serão fortalecidas como rede pública de comunicação dedicada à cultura gaúcha, à ciência, à educação e à produção regional. Será também regulamentado o Conselho",
+    "pagina": 15
+   },
+   "314": {
+    "texto": "Estadual de Comunicação Pública e Social, com participação da sociedade no acompanhamento das políticas do setor.",
+    "pagina": 15
+   },
+   "315": {
+    "texto": "Portais, campanhas e transmissões oficiais terão acessibilidade em Libras, audiodescrição, legendas e linguagem simples. Nas escolas estaduais, programas de educomunicação e letramento midiático contribuirão para que os estudantes reconheçam a desinformação e utilizem as redes digitais de forma crítica e responsável.",
+    "pagina": 15
    },
    "625": {
     "texto": "A Coligação Com o Povo entende que um Estado capaz de responder às necessidades da população exige servidores valorizados, planejamento estratégico de longo prazo e diálogo permanente com a sociedade. O Governo promoverá a valorização e a qualificação do serviço público, fortalecerá o planejamento e o desenvolvimento regional e ampliará os mecanismos de participação cidadã, consolidando uma gestão integrada, transparente e eficiente, comprometida com a redução das desigualdades e o desenvolvimento equilibrado de todas as regiões.",
@@ -2918,8 +3407,20 @@
     "texto": "Rio Grande – FUNRIGS, que recebeu R$ 6,2 bilhões entre junho de 2024 e dezembro de 2025, razão pela qual buscar a sua prorrogação por mais três anos será uma das metas prioritárias do nosso governo.",
     "pagina": 34
    },
+   "643": {
+    "texto": "O diagnóstico das finanças estaduais conduz, portanto, a uma conclusão: o equilíbrio fiscal sustentável não pode depender de receitas extraordinárias, nem de aumento de impostos ou da redução da capacidade de atuação do Estado. É preciso, isto sim, combinar responsabilidade fiscal, otimização das receitas, eficiência do gasto, gestão da dívida e capacidade de investimento com uma estratégia permanente de crescimento e desenvolvimento.",
+    "pagina": 34
+   },
+   "644": {
+    "texto": "O caminho correto para fortalecer as finanças públicas é fazer o estado voltar a crescer economica e socialmente, o que compõe a estratégia proposta pela Coligação Com o Povo para a inauguração de um novo ciclo de desenvolvimento no Estado do Rio Grande do Sul.",
+    "pagina": 34
+   },
    "645": {
     "texto": "Para tanto, lutaremos pela aprovação da proposta de emenda constitucional que cria o Fundo de Desenvolvimento da Região Sul; buscaremos o aumento sustentável da receita estadual, sem aumento de impostos; participaremos ativamente da regulamentação e da implementação da reforma tributária de consumo; atuaremos para a implementação e a transferência de recursos do Fundo Nacional de Desenvolvimento Regional e do Fundo para Compensação de Benefícios",
+    "pagina": 34
+   },
+   "646": {
+    "texto": "Fiscais do ICMS criados pela Reforma",
     "pagina": 34
    },
    "647": {
@@ -3052,6 +3553,10 @@
     "texto": "7. Firmar parcerias com IBGE, Ipea, universidades e centros de pesquisa.",
     "pagina": 10
    },
+   "251": {
+    "texto": "UM GOVERNO PRESENTE EM BRASÍLIA",
+    "pagina": 12
+   },
    "253": {
     "texto": "Será necessário manter presença permanente em Brasília para defender a renegociação da dívida, buscar recursos para a proteção contra enchentes, revisar valores do SUS, financiar infraestrutura, fortalecer a segurança pública e participar das decisões nacionais que afetam as famílias gaúchas.",
     "pagina": 12
@@ -3128,10 +3633,6 @@
     "texto": "10. Padronizar indicadores de resultado, esforço, qualidade e equidade territorial. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
     "pagina": 15
    },
-   "320": {
-    "texto": "• linha de base validada no primeiro semestre",
-    "pagina": 15
-   },
    "321": {
     "texto": "• plano de implementação publicado com metas anuais",
     "pagina": 15
@@ -3198,10 +3699,6 @@
    },
    "357": {
     "texto": "10. Adotar teto interno para crescimento de despesas discricionárias compatível com a receita. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
-    "pagina": 17
-   },
-   "359": {
-    "texto": "• linha de base validada no primeiro semestre",
     "pagina": 17
    },
    "360": {
@@ -3280,10 +3777,6 @@
     "texto": "10. Medir e publicar tempo, custo e satisfação em cada serviço prioritário. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
     "pagina": 19
    },
-   "400": {
-    "texto": "• linha de base validada no primeiro semestre",
-    "pagina": 19
-   },
    "401": {
     "texto": "• plano de implementação publicado com metas anuais",
     "pagina": 19
@@ -3354,10 +3847,6 @@
    },
    "438": {
     "texto": "10. Publicar indicadores de força de trabalho, absenteísmo e capacitação. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
-    "pagina": 21
-   },
-   "440": {
-    "texto": "• linha de base validada no primeiro semestre",
     "pagina": 21
    },
    "441": {
@@ -3468,10 +3957,6 @@
     "texto": "18. Publicar contratos, aditivos, pagamentos, obras, cronogramas, medições e beneficiários em formatos abertos. A implementação deverá definir órgão responsável, cronograma, fonte de",
     "pagina": 23
    },
-   "488": {
-    "texto": "financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
-    "pagina": 23
-   },
    "489": {
     "texto": "19. Criar painéis regionais de metas do governo, atualizados trimestralmente. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
     "pagina": 24
@@ -3490,10 +3975,6 @@
    },
    "493": {
     "texto": "23. Utilizar consórcios intermunicipais para compras coletivas, compartilhamento de equipamentos, gestão de resíduos, saúde, tecnologia e engenharia. A implementação deverá definir órgão responsável, cronograma, fonte de financiamento, recorte territorial, metas anuais e painel público de acompanhamento, com avaliação periódica de resultados.",
-    "pagina": 24
-   },
-   "495": {
-    "texto": "• linha de base validada no primeiro semestre",
     "pagina": 24
    },
    "496": {
@@ -3550,14 +4031,6 @@
    },
    "529": {
     "texto": "• retomada progressiva das séries estatísticas prioritárias",
-    "pagina": 25
-   },
-   "530": {
-    "texto": "• repositório público de dados implantado e atualizado",
-    "pagina": 25
-   },
-   "531": {
-    "texto": "• avaliações ex ante e ex post dos principais programas estaduais",
     "pagina": 25
    },
    "532": {
@@ -3632,10 +4105,6 @@
     "texto": "10. Avaliar reequilíbrios contratuais com critérios técnicos e transparência. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
     "pagina": 46
    },
-   "965": {
-    "texto": "• linha de base validada no primeiro semestre",
-    "pagina": 46
-   },
    "966": {
     "texto": "• plano de implementação publicado com metas anuais",
     "pagina": 46
@@ -3651,10 +4120,6 @@
    "969": {
     "texto": "• revisão de programas com baixo desempenho",
     "pagina": 46
-   },
-   "1622": {
-    "texto": "• linha de base validada no primeiro semestre",
-    "pagina": 78
    },
    "1623": {
     "texto": "• plano de implementação publicado com metas anuais",
@@ -3706,10 +4171,6 @@
    },
    "1824": {
     "texto": "10. Encaminhar pacote de integridade, governo digital e simplificação. A medida será implementada por programa específico, com órgão responsável, cronograma, fonte de financiamento, recorte territorial e metas anuais. A execução deverá começar por diagnóstico e priorização de riscos, seguida de projetos-piloto quando necessário, expansão progressiva e avaliação independente. Os contratos, custos, beneficiários e resultados serão publicados em painel aberto.",
-    "pagina": 87
-   },
-   "1826": {
-    "texto": "• linha de base validada no primeiro semestre",
     "pagina": 87
    },
    "1827": {
@@ -3782,6 +4243,10 @@
     "texto": "Aperfeiçoar com assistência técnica, capacitação, modelos adaptáveis e apoio à estruturação de projetos intermunicipais, priorizando serviços que possuam escala, demanda, capacidade de pagamento e fiscalização adequadas. _",
     "pagina": 70
    },
+   "905": {
+    "texto": "PREPARAR ANTES DE LICITAR",
+    "pagina": 70
+   },
    "906": {
     "texto": "Realizar estudos consistentes de demanda, engenharia, ambiente, desapropriações, financiamento, interesse de mercado e capacidade regulatória antes do edital, anunciando datas de leilão somente quando o projeto estiver suficientemente maduro. _",
     "pagina": 70
@@ -3800,10 +4265,6 @@
    },
    "910": {
     "texto": "Estruturar lotes e exigências capazes de atrair concorrentes qualificados e exigir beneficiários finais identificados, programas de integridade, prevenção de conflitos e cooperação com os órgãos de defesa da concorrência. _",
-    "pagina": 70
-   },
-   "911": {
-    "texto": "DISTRIBUIR OS RISCOS COM RESPONSABILIDADE",
     "pagina": 70
    },
    "912": {
@@ -3858,10 +4319,6 @@
     "texto": "Publicar estudos, custos de modelagem, contratos, aditivos, contraprestações, tarifas, garantias, decisões regulatórias, investimentos, indicadores e reclamações e manter equipes responsáveis e memória institucional desde a preparação até o encerramento da parceria. _",
     "pagina": 71
    },
-   "937": {
-    "texto": "Nosso governo promoverá uma profunda modernização da",
-    "pagina": 73
-   },
    "938": {
     "texto": "gestão pública, orientando toda a administração estadual por resultados, evidências, responsabilidade fiscal e foco no cidadão. O centro de governo será fortalecido para coordenar prioridades estratégicas, acompanhar permanentemente a execução das políticas públicas e remover obstáculos à sua implementação.",
     "pagina": 73
@@ -3898,12 +4355,12 @@
     "texto": "Reduzir e qualificar as metas pactuadas com secretários e dirigentes, diferenciando atividades, entregas e resultados e vinculando projetos, recursos, responsáveis e revisões periódicas às prioridades gerais do governo. _",
     "pagina": 74
    },
-   "953": {
-    "texto": "MODERNIZAR O MONITORAMENTO E A GESTÃO DOS GARGALOS",
-    "pagina": 74
-   },
    "954": {
     "texto": "Aprimorar o Sistema de Monitoramento Estratégico para integrar cronograma, orçamento, riscos, decisões e evidências e estabelecer responsáveis e prazos para solucionar entraves jurídicos, técnicos, financeiros e administrativos. _",
+    "pagina": 74
+   },
+   "955": {
+    "texto": "INTEGRAR O PLANEJAMENTO DE LONGO E MÉDIO PRAZO",
     "pagina": 74
    },
    "956": {
@@ -4098,10 +4555,6 @@
     "texto": "Disponibilizar informações acessíveis sobre arrecadação, despesas, benefícios fiscais, investimentos, dívida, riscos, metas e entregas, distinguindo valores autorizados, empenhados, liquidados, pagos e efetivamente convertidos em serviços.",
     "pagina": 78
    },
-   "1024": {
-    "texto": "Nosso governo fará da",
-    "pagina": 79
-   },
    "1025": {
     "texto": "transformação digital um instrumento para construir um Estado mais simples, ágil, transparente e eficiente, colocando o cidadão no centro da prestação dos serviços públicos. A prioridade será eliminar burocracias desnecessárias antes da digitalização dos processos, integrar bases de dados e plataformas, ampliar a interoperabilidade entre órgãos, fortalecer o uso responsável da inteligência artificial, assegurar elevados padrões de segurança e proteção de dados e oferecer serviços públicos organizados conforme as necessidades da vida das pessoas, e não segundo a estrutura administrativa do Estado. A tecnologia deixará de ser um fim em si mesma para se tornar uma ferramenta de redução de custos, aumento da produtividade, melhoria da experiência do usuário e fortalecimento da capacidade do Estado de entregar resultados concretos à sociedade, em plena coerência com as propostas de simplificação, integração e inovação apresentadas neste programa. _",
     "pagina": 79
@@ -4194,6 +4647,10 @@
     "texto": "Aplicar inteligência artificial em triagem, análise documental, atendimento, fiscalização e apoio à decisão, registrando finalidade, dados, limitações e responsáveis e impedindo decisões sensíveis integralmente automatizadas sem revisão e contestação.concepção de cada serviço e sistema. _",
     "pagina": 80
    },
+   "1053": {
+    "texto": "COMPARTILHAR PLATAFORMAS E CONTRATAR TECNOLOGIA COM MODULARIDADE",
+    "pagina": 80
+   },
    "1054": {
     "texto": "Adotar arquitetura digital comum, integrações padronizadas e componentes reutilizáveis e",
     "pagina": 80
@@ -4208,6 +4665,10 @@
    },
    "1059": {
     "texto": "Fortalecer prevenção, monitoramento, resposta a incidentes, backups testados, redundância e recuperação, priorizando sistemas essenciais e avaliando continuamente a segurança dos órgãos e fornecedores. _",
+    "pagina": 81
+   },
+   "1060": {
+    "texto": "DESENVOLVER CAPACIDADES E AVALIAR OS RESULTADOS DIGITAIS",
     "pagina": 81
    },
    "1061": {
@@ -4237,6 +4698,10 @@
    "1072": {
     "texto": "Modernizar concursos com critérios objetivos relacionados às atribuições e utilizar provas práticas ou cursos de formação quando necessários, integrando os novos servidores por meio de ambientação geral e formação específica para o exercício do cargo.",
     "pagina": 82
+   },
+   "1078": {
+    "texto": "TORNAR O ESTÁGIO PROBATÓRIO EFETIVO",
+    "pagina": 83
    },
    "1079": {
     "texto": "Avaliar o servidor em ciclos, com expectativas claras, evidências, feedback, formação, apoio e possibilidade de recurso, considerando assiduidade, responsabilidade, competências, qualidade das entregas e adaptação às atribuições do cargo. _",
@@ -4410,6 +4875,10 @@
     "texto": "Aperfeiçoar o Portal da Transparência para conectar planejamento, orçamento, contratos, obras, transferências, fornecedores, metas e resultados e garantir dados atualizados, documentados, comparáveis e reutilizáveis. _",
     "pagina": 86
    },
+   "1133": {
+    "texto": "CUMPRIR A LEI DE ACESSO COM QUALIDADE",
+    "pagina": 86
+   },
    "1134": {
     "texto": "Monitorar prazos, negativas, recursos, omissões e qualidade das respostas, exigir fundamentação específica para restrições de acesso e ampliar a transparência ativa para reduzir pedidos repetidos. _",
     "pagina": 86
@@ -4465,6 +4934,10 @@
    "1202": {
     "texto": "Assegurar acesso a informações, respostas aos requerimentos e tratamento institucional às bancadas de oposição, reconhecendo a divergência e a fiscalização como partes legítimas do",
     "pagina": 92
+   },
+   "1207": {
+    "texto": "processo democrático. _",
+    "pagina": 93
    },
    "1208": {
     "texto": "COORDENAR A BANCADA FEDERAL EM TORNO DE PRIORIDADES",
@@ -4576,10 +5049,6 @@
    },
    "1428": {
     "texto": "Principais entregas: integrar autenticação, dados, pagamentos, processos e notificações; concluir o SEI RS; aplicar o princípio do documento uma única vez; modernizar serviços prioritários; fortalecer segurança; estruturar governança da inteligência artificial.",
-    "pagina": 106
-   },
-   "1429": {
-    "texto": "Indicadores de resultado: serviços integrados; documentos eliminados; tempo e custo reduzidos; usuários; disponibilidade; incidentes; sistemas desativados; satisfação e produtividade.",
     "pagina": 106
    }
   }
