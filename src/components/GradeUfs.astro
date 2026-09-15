@@ -1,21 +1,21 @@
 ---
 /**
  * As 27 unidades da federação de um cargo por estado. Sem JavaScript: um link
- * por UF. Quem tem comparação pronta diz quantos temas; quem não tem, "em
- * preparação" — a rota existe nos dois casos.
+ * por UF. Quem tem comparação pronta diz quantas propostas foram comparadas;
+ * quem não tem, "em preparação" — a rota existe nos dois casos.
  */
 import { UFS, caminhoUf } from '../lib/cargos.mjs';
-import { paginasProntas } from '../lib/comparacao-dados.mjs';
+import { resumoDoEscopo } from '../lib/comparacao-dados.mjs';
 const { cargo } = Astro.props;
-const linhas = UFS.map((uf) => ({ uf, prontas: paginasProntas(cargo.slug, uf.sigla).length }));
+const linhas = UFS.map((uf) => ({ uf, propostas: resumoDoEscopo(cargo.slug, uf.sigla).reduce((n, r) => n + r.propostas, 0) }));
 ---
 <nav aria-label={`Estados — ${cargo.nome}`}>
   <ul class="grade-ufs">
-    {linhas.map(({ uf, prontas }) => (
+    {linhas.map(({ uf, propostas }) => (
       <li>
         <a class="uf" href={caminhoUf(cargo, uf)} data-evento="uf_aberta" data-destino={uf.sigla.toLowerCase()}>
           <span class="sigla" aria-hidden="true">{uf.sigla}</span>
-          <span class="nome">{uf.nome}<span class="estado">{prontas ? `${prontas} temas` : 'em preparação'}</span></span>
+          <span class="nome">{uf.nome}<span class="estado">{propostas ? `${propostas.toLocaleString('pt-BR')} propostas` : 'em preparação'}</span></span>
         </a>
       </li>
     ))}

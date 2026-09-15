@@ -6,13 +6,11 @@
 import Base from '../../layouts/Base.astro';
 import GradeUfs from '../../components/GradeUfs.astro';
 import { CARGOS_POR_UF } from '../../lib/cargos.mjs';
-import { ufsProntas } from '../../lib/comparacao-dados.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.map((cargo) => ({ params: { cargo: cargo.slug }, props: { cargo } }));
 }
 const { cargo } = Astro.props;
-const prontas = ufsProntas(cargo.slug).length;
 ---
 <Base title={cargo.nome} description={`Escolha o estado para comparar os programas de governo das candidaturas a ${cargo.nome.toLowerCase()} em 2026.`}>
   <div class="hero-home">
@@ -20,9 +18,6 @@ const prontas = ufsProntas(cargo.slug).length;
     <h1>Escolha o estado</h1>
     <p class="lead">
       As candidaturas a {cargo.nome.toLowerCase()} são por unidade da federação.
-      {prontas
-        ? `A comparação dos programas está pronta em ${prontas} de 27 estados; nos demais, em preparação.`
-        : 'A comparação dos programas por estado está em preparação: a página de cada estado diz o que já há.'}
     </p>
   </div>
 
