@@ -207,7 +207,7 @@ function porAssunto(visiveis, ordem, idx, n) {
       for (const d of derivadas.filter((d) => d.derivada_de === p.id)) linhas.push(...cartoes(d, ordem, idx));
     }
     const pilhas = ordem.map((s, i) => doAssunto
-      .filter((p) => !idsDerivadas.has(p.id) && quem(p, ordem).length === 1 && quem(p, ordem)[0] === s && !contra(p, ordem).length)
+      .filter((p) => !idsDerivadas.has(p.id) && !idsFaixas.has(p.id) && quem(p, ordem).length === 1 && quem(p, ordem)[0] === s && !contra(p, ordem).length)
       .map((p) => cartao(p, ordem, idx, i, 1)));
     if (pilhas.some((x) => x.length)) linhas.push({ tipo: 'pilhas', pilhas });
   }
