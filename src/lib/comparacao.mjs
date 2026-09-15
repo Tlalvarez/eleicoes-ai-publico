@@ -192,11 +192,15 @@ function porAssunto(visiveis, ordem, idx, n) {
     const doAssunto = visiveis.filter((p) => p.subtema === st);
     linhas.push({ tipo: 'secao', rotulo: st });
     // faixas: quem concorda em mais de um, ou exclusiva com contrário (a faixa cobre os dois)
-    const faixas = doAssunto.filter((p) => quem(p, ordem).length >= 2 || contra(p, ordem).length);
+    // proposta própria derivada (correção de fidelidade, pedido do Thiago em 15/09): vem logo abaixo
+    // do cartão de onde saiu, e não na pilha da coluna — por isso o cartão de origem vira faixa
+    // mesmo quando ficou com um candidato só
+    const idsVisiveis = new Set(doAssunto.map((p) => p.id));
+    const temFilhas = new Set(doAssunto.filter((p) => p.derivada_de && idsVisiveis.has(p.derivada_de)).map((p) => p.derivada_de));
+    const faixas = doAssunto.filter((p) => !(p.derivada_de && idsVisiveis.has(p.derivada_de))
+      && (quem(p, ordem).length >= 2 || contra(p, ordem).length || temFilhas.has(p.id)));
     const idsFaixas = new Set(faixas.map((p) => p.id));
-    // proposta própria derivada de uma faixa (correção de fidelidade, pedido do Thiago em 15/09):
-    // vem logo abaixo da faixa de onde saiu, e não na pilha da coluna
-    const derivadas = doAssunto.filter((p) => p.derivada_de && idsFaixas.has(p.derivada_de) && !idsFaixas.has(p.id));
+    const derivadas = doAssunto.filter((p) => p.derivada_de && idsFaixas.has(p.derivada_de));
     const idsDerivadas = new Set(derivadas.map((p) => p.id));
     for (const p of faixas) {
       linhas.push(...cartoes(p, ordem, idx));

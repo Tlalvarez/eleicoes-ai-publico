@@ -191,3 +191,17 @@ test('proposta própria derivada (correção de fidelidade) vem logo abaixo da f
   const seq2 = L2.linhas.flatMap((l) => (l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => c.id) : []));
   assert.ok(seq2.includes('propria-c'));
 });
+
+test('cartão de origem com um candidato só também traz as derivadas logo abaixo', () => {
+  const pai = p('pai', { a: ok() }, 'blocos');
+  const f1 = { ...p('f1', { b: ok() }, 'blocos'), derivada_de: 'pai' };
+  const f2 = { ...p('f2', { d: ok(), e: ok() }, 'blocos'), derivada_de: 'pai' };
+  const solta = p('solta', { c: ok() }, 'blocos');
+  const L = layout([solta, f2, f1, pai], ORDEM, 'assunto');
+  const seq = L.linhas.flatMap((l) => (l.tipo === 'cartao' ? [l.id] : l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => `pilha:${c.id}`) : []));
+  const i = seq.indexOf('pai');
+  assert.ok(i >= 0, `o pai vira faixa: ${seq}`);
+  assert.deepEqual(seq.slice(i + 1, i + 3).sort(), ['f1', 'f2'], `derivadas logo abaixo: ${seq}`);
+  assert.ok(!seq.includes('pilha:pai') && !seq.includes('pilha:f1'));
+  assert.ok(seq.includes('pilha:solta'));
+});
