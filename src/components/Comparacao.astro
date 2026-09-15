@@ -149,7 +149,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
           }
           const p = porId[linha.id];
           return (
-            <button type="button" class={`proposta${linha.comContra ? ' com-contra' : ''}`} data-p={linha.id} data-k={linha.chave} style={estiloCartao(linha)}>
+            <button type="button" class={`proposta${linha.comContra ? ' com-contra' : ''}${linha.lacuna ? ' com-lacuna' : ''}`} data-p={linha.id} data-k={linha.chave} style={estiloCartao(linha)}>
               <span class="colunas" style={`grid-template-columns:repeat(${linha.largura},1fr)`}>
                 {linha.colunas.map((k) => <span class={k === 'concorda' ? undefined : k}></span>)}
               </span>
@@ -240,6 +240,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       b.style.gridColumn = `${c.ini + 1} / span ${c.largura}`;
       b.style.setProperty('--l', String(c.largura));
       b.classList.toggle('com-contra', c.comContra);
+      b.classList.toggle('com-lacuna', Boolean(c.lacuna));
       const colunas = b.querySelector('.colunas');
       colunas.style.gridTemplateColumns = `repeat(${c.largura},1fr)`;
       colunas.replaceChildren(...c.colunas.map((k) => el('span', k === 'concorda' ? '' : k)));
@@ -600,6 +601,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   /* com discordância na faixa, o rótulo "propõe o contrário" ganha uma linha própria acima do texto */
   .comparacao .proposta .texto { font-size: .95rem; line-height: 1.4; margin-top: .6rem; }
   .comparacao .proposta.com-contra .texto { margin-top: 1.9rem; }
+  /* candidatos não adjacentes (15/09): um cartão só; cada trecho é uma caixa, a lacuna é uma linha
+     tracejada, e os trechos depois do primeiro dizem só "Concorda" */
+  .comparacao .proposta.com-lacuna { background: transparent; border: 0; border-radius: 0; overflow: visible; }
+  .comparacao .proposta.com-lacuna:hover { background: transparent; }
+  .comparacao .proposta.com-lacuna .colunas span:not(.fora) { background: var(--papel); border: 1px solid var(--linha); border-top: 5px solid var(--azul);
+    border-left-width: 0; border-right-width: 0; border-radius: 0; }
+  .comparacao .proposta.com-lacuna:hover .colunas span:not(.fora) { background: var(--realce); border-color: var(--azul-claro); border-top-color: var(--azul); }
+  .comparacao .proposta.com-lacuna .colunas span.contra { border-top-color: var(--atencao); background: #f6ece7; }
+  .comparacao .proposta.com-lacuna .colunas span.ini { border-left-width: 1px; border-top-left-radius: 8px; border-bottom-left-radius: 8px; }
+  .comparacao .proposta.com-lacuna .colunas span.fim { border-right-width: 1px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
+  .comparacao .proposta.com-lacuna .colunas span.fora { position: relative; border: 0; background: none; }
+  .comparacao .proposta.com-lacuna .colunas span.fora::before { content: ''; position: absolute; left: 0; right: 0; top: 1.4rem; border-top: 2px dashed var(--tinta-suave); }
+  .comparacao .proposta.com-lacuna .colunas span.rotulo::after { content: 'Concorda'; display: block; margin: .6rem .8rem 0; font-size: .7rem; font-weight: 800;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--azul); white-space: nowrap; }
 
   .comparacao .nota-rodape { margin: 1.2rem 0 0; font-size: .88rem; color: var(--tinta-suave); max-width: 60em; }
 

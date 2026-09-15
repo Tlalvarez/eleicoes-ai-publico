@@ -42,20 +42,24 @@ test('cada proposta aparece no layout, e só mais de uma vez quando os candidato
   assert.equal(L.n, 5);
 });
 
-test('candidatos não adjacentes não são ligados por uma faixa: o texto se repete, um cartão em cada lado', () => {
+test('candidatos não adjacentes: um cartão só, lacuna tracejada, texto no primeiro trecho e "Concorda" nos outros', () => {
   const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const p3 = L.linhas.filter((l) => l.id === 'p3');   // a e c propõem, b no meio não fala do assunto
-  assert.deepEqual(p3.map((c) => [c.chave, c.ini, c.largura, c.colunas]), [['p3@0', 0, 1, ['concorda']], ['p3@2', 2, 1, ['concorda']]]);
-  assert.ok(p3.every((c) => !c.colunas.includes('fora')), 'nenhum cartão atravessa quem não se posiciona');
-  const p5 = L.linhas.filter((l) => l.id === 'p5');   // todos: um cartão só, de ponta a ponta
-  assert.deepEqual(p5.map((c) => [c.ini, c.largura]), [[0, 5]]);
+  assert.deepEqual(p3.map((c) => [c.chave, c.ini, c.largura, c.colunas, c.lacuna, c.a, c.b]),
+    [['p3@0', 0, 3, ['concorda ini fim', 'fora', 'concorda ini fim rep rotulo'], true, 0, 0]]);
+  const p5 = L.linhas.filter((l) => l.id === 'p5');   // todos: um cartão só, de ponta a ponta, sem lacuna
+  assert.deepEqual(p5.map((c) => [c.ini, c.largura, c.lacuna]), [[0, 5, undefined]]);
+  // trecho de dois candidatos depois da lacuna: "Concorda" uma vez só
+  const L2 = layout([p('y', { a: ok(), d: ok(), e: ok() }, 's')], ORDEM, 'concordancia');
+  assert.deepEqual(L2.linhas.filter((l) => l.id === 'y')[0].colunas,
+    ['concorda ini fim', 'fora', 'fora', 'concorda ini rep rotulo', 'concorda fim rep']);
 });
 
-test('quem discorda ganha o próprio cartão vermelho quando não é adjacente; o texto fica sob quem propõe', () => {
+test('quem discorda sem ser adjacente fica no mesmo cartão, ligado pela lacuna; o texto fica sob quem propõe', () => {
   const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const p6 = L.linhas.filter((l) => l.id === 'p6');   // d propõe, b contra, c no meio
   assert.deepEqual(p6.map((c) => [c.ini, c.largura, c.colunas, c.comContra, c.a, c.b]),
-    [[1, 1, ['contra'], true, 0, 0], [3, 1, ['concorda'], false, 0, 0]]);
+    [[1, 3, ['contra ini fim', 'fora', 'concorda ini fim'], true, 2, 2]]);
   // adjacentes: um cartão só, texto sobre quem propõe
   const L2 = layout([p('x', { b: ok(), c: nao() }, 's')], ORDEM, 'concordancia');
   const x = L2.linhas.filter((l) => l.id === 'x');
@@ -71,7 +75,7 @@ test('exclusivas: um cabeçalho por subtema; sem contrário vão para a pilha da
   const pilhas = depois.filter((l) => l.tipo === 'pilhas').map((l) => l.pilhas.map((x) => x.map((c) => c.id)));
   assert.deepEqual(pilhas, [[['p1'], [], [], [], []], [[], [], ['p2'], [], []]]);
   const faixas = depois.filter((l) => l.tipo === 'cartao').map((l) => l.id);
-  assert.deepEqual(faixas, ['p4', 'p4', 'p6', 'p6']);
+  assert.deepEqual(faixas, ['p4', 'p6'], 'não adjacentes: um cartão só, ligado pela lacuna');
 });
 
 test('as seções são pelo número de candidatos que propõem, do que todos propõem ao que só um propõe', () => {
@@ -143,7 +147,7 @@ test('modo assunto: cada subtema é uma seção com faixas e pilhas lado a lado'
   const i = L.linhas.findIndex((l) => l.tipo === 'secao' && l.rotulo === 'b, d contra');
   assert.equal(L.linhas[i + 1].tipo, 'cartao');
   assert.equal(L.linhas[i + 1].id, 'p4');
-  assert.equal(L.linhas[i + 2].id, 'p4', 'b propõe e d discorda, c no meio: dois cartões');
+  assert.ok(L.linhas[i + 1].lacuna && L.linhas[i + 2].id !== 'p4', 'b propõe e d discorda, c no meio: um cartão com lacuna');
   // "só a": pilha na coluna de a
   const j = L.linhas.findIndex((l) => l.tipo === 'secao' && l.rotulo === 'só a');
   assert.deepEqual(L.linhas[j + 1].pilhas.map((x) => x.map((c) => c.id)), [['p1'], [], [], [], []]);

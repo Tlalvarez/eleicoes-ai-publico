@@ -76,20 +76,45 @@ function cartao(p, ordem, idx, ini, largura) {
 }
 
 /**
- * Os cartões de uma proposta: um por trecho CONTÍGUO de colunas que se
- * posicionam. Candidatos não adjacentes não são ligados por uma faixa que
- * atravessa quem não fala do assunto — o texto se repete, um cartão em cada
- * lado (decisão do Thiago em 13/09).
+ * O cartão de uma proposta: da primeira à última coluna que se posiciona.
+ * Quando há colunas no meio que não falam do assunto (lacuna), os trechos são
+ * ligados por uma linha tracejada e o texto aparece só no primeiro trecho de
+ * quem propõe; os outros trechos de quem propõe dizem apenas "Concorda"
+ * (decisão do Thiago em 15/09, no lugar de repetir o texto, de 13/09).
+ * Colunas de trecho com lacuna levam classes: 'concorda'|'contra', mais 'ini'
+ * e 'fim' nas bordas do trecho, 'rep' nos trechos de quem propõe depois do
+ * primeiro e 'rotulo' na coluna que mostra "Concorda"; a lacuna é 'fora'.
  */
 function cartoes(p, ordem, idx) {
   const posicionado = ordem.map((s) => Boolean(p.posicoes[s]) && p.posicoes[s].posicao !== 'nao_cita');
-  const saida = [];
-  let ini = null;
-  for (let i = 0; i <= ordem.length; i += 1) {
-    if (i < ordem.length && posicionado[i]) { if (ini === null) ini = i; continue; }
-    if (ini !== null) { saida.push({ tipo: 'cartao', ...cartao(p, ordem, idx, ini, i - ini) }); ini = null; }
-  }
-  return saida;
+  const ini = posicionado.indexOf(true);
+  if (ini < 0) return [];
+  const c = cartao(p, ordem, idx, ini, posicionado.lastIndexOf(true) - ini + 1);
+  const cols = c.colunas;
+  if (!cols.includes('fora')) return [{ tipo: 'cartao', ...c }];
+  const trechos = [];
+  let t = null;
+  cols.forEach((k, i) => {
+    if (k === 'fora') { if (t) trechos.push(t); t = null; } else if (t) t.fim = i; else t = { ini: i, fim: i };
+  });
+  if (t) trechos.push(t);
+  const primeiro = trechos.find((x) => cols.slice(x.ini, x.fim + 1).includes('concorda')) ?? trechos[0];
+  const classes = cols.map((k, i) => {
+    if (k === 'fora') return 'fora';
+    const tr = trechos.find((x) => i >= x.ini && i <= x.fim);
+    const partes = [k];
+    if (i === tr.ini) partes.push('ini');
+    if (i === tr.fim) partes.push('fim');
+    if (k === 'concorda' && tr !== primeiro) {
+      partes.push('rep');
+      if (!cols.slice(tr.ini, i).includes('concorda')) partes.push('rotulo');
+    }
+    return partes.join(' ');
+  });
+  const doPrimeiro = cols.map((k, i) => (k === 'concorda' && i >= primeiro.ini && i <= primeiro.fim ? i : -1)).filter((i) => i >= 0);
+  const a = doPrimeiro.length ? Math.min(...doPrimeiro) : primeiro.ini;
+  const b = doPrimeiro.length ? Math.max(...doPrimeiro) : primeiro.fim;
+  return [{ tipo: 'cartao', ...c, colunas: classes, lacuna: true, a, b }];
 }
 
 /**
