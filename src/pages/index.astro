@@ -7,6 +7,7 @@
 import Base from '../layouts/Base.astro';
 import GradeTemas from '../components/GradeTemas.astro';
 import Busca from '../components/Busca.astro';
+import CandidatosComparados from '../components/CandidatosComparados.astro';
 import { comparacao, resumoDoEscopo } from '../lib/comparacao-dados.mjs';
 
 const resumo = resumoDoEscopo('presidente');
@@ -29,6 +30,8 @@ const totalPropostas = resumo.reduce((n, r) => n + r.propostas, 0);
     <h2 id="busque">Busque por tópico</h2>
     <Busca semRotulo rotuladoPor="busque" />
   </section>
+
+  <CandidatosComparados candidatos={candidatos} cargo="presidente" />
 
   <style>
     .hero-home { margin-bottom: 1.6rem; }

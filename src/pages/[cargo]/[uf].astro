@@ -6,6 +6,7 @@
  */
 import Base from '../../layouts/Base.astro';
 import Busca from '../../components/Busca.astro';
+import CandidatosComparados from '../../components/CandidatosComparados.astro';
 import GradeTemas from '../../components/GradeTemas.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, notaSituacao, separaPorDisputa } from '../../lib/candidaturas-uf.mjs';
@@ -54,6 +55,7 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
         <h2 id="busque">Busque por tópico</h2>
         <Busca escopo={`${cargo.slug}/${uf.sigla.toLowerCase()}`} semRotulo rotuladoPor="busque" />
       </section>
+      <CandidatosComparados candidatos={resumo[0].candidatos} cargo={cargo.slug} uf={uf.sigla} />
     </>
   )}
 
