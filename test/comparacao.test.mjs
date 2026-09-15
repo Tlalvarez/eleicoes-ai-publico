@@ -174,3 +174,20 @@ test('sem modo, a página é por assunto', () => {
   assert.deepEqual(layout(PROPOSTAS, ORDEM).linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo),
     layout(PROPOSTAS, ORDEM, 'assunto').linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo));
 });
+
+test('proposta própria derivada (correção de fidelidade) vem logo abaixo da faixa de onde saiu, fora da pilha', () => {
+  const pai = p('comum', { a: ok(), b: ok() }, 'blocos');
+  const derivada = { ...p('propria-c', { c: ok() }, 'blocos'), derivada_de: 'comum' };
+  const outra = p('outra', { d: ok(), e: ok() }, 'blocos');
+  const solta = p('solta', { c: ok() }, 'blocos');
+  const L = layout([outra, solta, derivada, pai], ORDEM, 'assunto');
+  const seq = L.linhas.flatMap((l) => (l.tipo === 'cartao' ? [l.id] : l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => `pilha:${c.id}`) : []));
+  const i = seq.indexOf('comum');
+  assert.equal(seq[i + 1], 'propria-c', `a derivada vem logo depois da faixa: ${seq}`);
+  assert.ok(!seq.includes('pilha:propria-c'), 'a derivada não vai para a pilha');
+  assert.ok(seq.includes('pilha:solta'), 'exclusiva comum continua na pilha');
+  // sem o pai na tela, a derivada volta ao lugar normal
+  const L2 = layout([derivada, solta], ORDEM, 'assunto');
+  const seq2 = L2.linhas.flatMap((l) => (l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => c.id) : []));
+  assert.ok(seq2.includes('propria-c'));
+});

@@ -192,9 +192,18 @@ function porAssunto(visiveis, ordem, idx, n) {
     const doAssunto = visiveis.filter((p) => p.subtema === st);
     linhas.push({ tipo: 'secao', rotulo: st });
     // faixas: quem concorda em mais de um, ou exclusiva com contrário (a faixa cobre os dois)
-    for (const p of doAssunto.filter((p) => quem(p, ordem).length >= 2 || contra(p, ordem).length)) linhas.push(...cartoes(p, ordem, idx));
+    const faixas = doAssunto.filter((p) => quem(p, ordem).length >= 2 || contra(p, ordem).length);
+    const idsFaixas = new Set(faixas.map((p) => p.id));
+    // proposta própria derivada de uma faixa (correção de fidelidade, pedido do Thiago em 15/09):
+    // vem logo abaixo da faixa de onde saiu, e não na pilha da coluna
+    const derivadas = doAssunto.filter((p) => p.derivada_de && idsFaixas.has(p.derivada_de) && !idsFaixas.has(p.id));
+    const idsDerivadas = new Set(derivadas.map((p) => p.id));
+    for (const p of faixas) {
+      linhas.push(...cartoes(p, ordem, idx));
+      for (const d of derivadas.filter((d) => d.derivada_de === p.id)) linhas.push(...cartoes(d, ordem, idx));
+    }
     const pilhas = ordem.map((s, i) => doAssunto
-      .filter((p) => quem(p, ordem).length === 1 && quem(p, ordem)[0] === s && !contra(p, ordem).length)
+      .filter((p) => !idsDerivadas.has(p.id) && quem(p, ordem).length === 1 && quem(p, ordem)[0] === s && !contra(p, ordem).length)
       .map((p) => cartao(p, ordem, idx, i, 1)));
     if (pilhas.some((x) => x.length)) linhas.push({ tipo: 'pilhas', pilhas });
   }
