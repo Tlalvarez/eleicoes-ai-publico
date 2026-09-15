@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "ambiente-energia-rn.json",
-  "gerado_em": "2026-09-14T22:31:15Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "gerado_em": "2026-09-14T23:51:26Z",
+  "exportado_em": "2026-09-14T23:59:11Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Ampliar investimentos e o apoio público à expansão da geração de energia eólica e solar no estado",
+   "proposta": "Ampliar e incentivar a expansão da geração de energia renovável (eólica e solar) no estado",
    "n_concorda": 4,
    "posicoes": {
     "governador-rn-rodrigo-bolsonaro-200002546756": {
@@ -59,18 +59,23 @@
      "blocos": [
       33
      ],
-     "nota": "Menciona apenas mais investimentos em parques eólicos e solares"
+     "nota": "Mais investimentos em parques eólicos e solares"
     },
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      144
+      89,
+      90,
+      91,
+      99
      ],
      "nota": ""
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
+      1105,
+      1111,
       1112,
       1114
      ],
@@ -89,13 +94,47 @@
   {
    "id": "p2",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Viabilizar e apoiar a implantação da energia eólica offshore (no mar)",
+   "proposta": "Transformar a liderança em energia renovável em indústria, fornecedores locais, qualificação profissional e empregos no estado",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      89,
+      90,
+      91
+     ],
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1088,
+      1112,
+      1129
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      852,
+      1794
+     ],
+     "nota": "Cita atração de fornecedores, centros de manutenção e pesquisa"
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Viabilizar e desenvolver a energia eólica offshore no estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      144
+      99
      ],
      "nota": ""
     },
@@ -106,20 +145,20 @@
       1109,
       1110
      ],
-     "nota": "Prevê estruturar a cadeia produtiva e articulação federal"
+     "nota": "Articulação com Governo Federal, pesquisa e iniciativa privada"
     }
    }
   },
   {
-   "id": "p3",
+   "id": "p4",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Apoiar a cadeia produtiva do hidrogênio verde/de baixa emissão e seus derivados",
+   "proposta": "Apoiar a implantação da cadeia produtiva do hidrogênio verde/de baixa emissão e seus derivados",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      144
+      99
      ],
      "nota": ""
     },
@@ -128,7 +167,7 @@
      "blocos": [
       1114
      ],
-     "nota": "Condiciona ao 'quando viável'"
+     "nota": "Hidrogênio verde 'quando viável'"
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
@@ -136,20 +175,21 @@
       852,
       1122
      ],
-     "nota": "Inclui certificação e articulação com projetos portuários"
+     "nota": "Inclui certificação e articulação com infraestrutura portuária"
     }
    }
   },
   {
-   "id": "p4",
+   "id": "p5",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Estimular projetos de armazenamento de energia e soluções de estabilidade do sistema elétrico",
+   "proposta": "Estimular projetos de armazenamento de energia e soluções para estabilidade do sistema elétrico",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      144
+      91,
+      99
      ],
      "nota": ""
     },
@@ -164,15 +204,15 @@
    }
   },
   {
-   "id": "p5",
+   "id": "p6",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Estimular a produção de combustíveis sustentáveis e rotas tecnológicas de baixo carbono",
+   "proposta": "Estimular a produção de combustíveis sustentáveis e novas rotas tecnológicas de baixo carbono",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      144
+      99
      ],
      "nota": ""
     },
@@ -182,14 +222,68 @@
       1132,
       1134
      ],
-     "nota": "Foca setores aéreo, marítimo e terrestre e descarbonização industrial"
+     "nota": "Foco nos setores aéreo, marítimo e terrestre"
     }
    }
   },
   {
-   "id": "p6",
+   "id": "p7",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Elaborar e implementar uma Estratégia Estadual de Transição Energética, com diretrizes de longo prazo e articulação entre governo, setor produtivo e universidades",
+   "proposta": "Garantir que os benefícios da transição energética cheguem às comunidades, trabalhadores e municípios afetados, com diálogo territorial",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      99
+     ],
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1088,
+      1104,
+      1113
+     ],
+     "nota": "Enquadra como 'transição justa' e participação nas decisões"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1124,
+      1794
+     ],
+     "nota": "Interiorização dos investimentos para municípios do Semiárido"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Promover eficiência energética e descarbonização da produção industrial",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1114
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1132
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Elaborar e implementar uma Estratégia Estadual de Transição Energética de longo prazo",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -202,127 +296,9 @@
    }
   },
   {
-   "id": "p7",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Converter a geração de energia renovável em industrialização local, com fornecedores do estado, centros de manutenção, pesquisa e qualificação de trabalhadores",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      144
-     ],
-     "nota": "Menciona benefícios concretos a trabalhadores e comunidades"
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1088,
-      1105,
-      1112,
-      1129
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      852,
-      1794
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p8",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Interiorizar os investimentos e benefícios da transição energética, alcançando os municípios do Semiárido e todas as regiões",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1112,
-      1129
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1124
-     ],
-     "nota": "Cita expressamente os municípios do Semiárido"
-    }
-   }
-  },
-  {
-   "id": "p9",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Condicionar a expansão energética ao diálogo com comunidades e municípios e à mitigação dos impactos socioambientais",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      144
-     ],
-     "nota": ""
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1088,
-      1089,
-      1113
-     ],
-     "nota": "Formula como 'transição justa' e participação nas decisões territoriais"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1794,
-      1832
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p10",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Incentivar a geração distribuída de energia renovável, com sistemas solares em equipamentos públicos, empreendimentos produtivos e comunidades",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1118
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Criar programa de transição energética da administração pública estadual, com eficiência energética, eletrificação gradual da frota e redução de emissões dos prédios públicos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1139
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Energia renovável e transição energética",
-   "proposta": "Articular com o Governo Federal, a ANEEL e o setor privado a ampliação da infraestrutura de transmissão de energia para reduzir gargalos de escoamento",
+   "proposta": "Articular a ampliação da infraestrutura de transmissão de energia para reduzir gargalos de escoamento",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -335,9 +311,39 @@
    }
   },
   {
+   "id": "p11",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Incentivar a geração distribuída e a adoção de energia solar em equipamentos públicos, empreendimentos produtivos e comunidades",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1118
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Criar programa de transição energética da administração pública estadual, com eletrificação gradual da frota e redução de emissões dos prédios públicos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1139
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p13",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Ampliar o aproveitamento do gás natural, fortalecendo a infraestrutura de distribuição e seu uso pela indústria, comércio, serviços e transportes",
+   "proposta": "Ampliar o aproveitamento do gás natural, fortalecendo a infraestrutura de distribuição e seu uso pela indústria e pelos transportes",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -352,29 +358,31 @@
   {
    "id": "p14",
    "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Reduzir prazos e dar previsibilidade ao licenciamento ambiental, com regras claras, acompanhamento transparente e segurança jurídica",
+   "proposta": "Modernizar o licenciamento ambiental, reduzindo prazos de análise e ampliando transparência e previsibilidade, sem reduzir a proteção ambiental",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      111
+      66,
+      99
      ],
-     "nota": ""
+     "nota": "Fila transparente e critérios definidos"
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
+      1109,
       1122
      ],
-     "nota": "Ressalva que a modernização não pode enfraquecer a proteção ambiental"
+     "nota": "Exige participação social e manutenção dos direitos dos territórios"
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
       676,
       858,
-      1792,
+      1784,
       1806,
       1812
      ],
@@ -385,14 +393,17 @@
   {
    "id": "p15",
    "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Realizar força-tarefa (mutirão técnico) no órgão ambiental estadual para organizar processos, corrigir pendências e criar fila transparente de análise",
+   "proposta": "Adotar licenciamento digital, integrado e com procedimentos proporcionais ao risco/impacto da atividade",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rn-allyson-200002535255": {
+    "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      110,
-      111
+      858,
+      1784,
+      1804,
+      1806,
+      1812
      ],
      "nota": ""
     }
@@ -401,24 +412,23 @@
   {
    "id": "p16",
    "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Adotar licenciamento digital e integrado, com procedimentos proporcionais ao risco e ao potencial de impacto da atividade",
+   "proposta": "Realizar mutirão/força-tarefa técnica no órgão ambiental estadual para organizar processos e corrigir pendências acumuladas",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
+    "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      858,
-      1784,
-      1806
+      65,
+      66
      ],
-     "nota": ""
+     "nota": "Mutirão técnico do Idema"
     }
    }
   },
   {
    "id": "p17",
    "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Descentralizar o licenciamento ambiental para municípios habilitados e consórcios públicos, com apoio técnico à estruturação das equipes locais",
+   "proposta": "Descentralizar a gestão e o licenciamento ambiental para municípios e consórcios públicos, concentrando o Estado nos empreendimentos de maior impacto",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -426,6 +436,8 @@
      "blocos": [
       728,
       1788,
+      1789,
+      1792,
       1827
      ],
      "nota": "Inclui licenciamento de empreendimentos turísticos"
@@ -435,46 +447,30 @@
   {
    "id": "p18",
    "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Concentrar a atuação estadual nos empreendimentos de maior impacto, na coordenação regional e na fiscalização estratégica",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      728,
-      1789
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p19",
-   "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Fortalecer o sistema estadual de gestão ambiental, ampliando capacidade institucional, técnica e tecnológica dos órgãos ambientais",
+   "proposta": "Fortalecer o Sistema Estadual de Gestão Ambiental, ampliando capacidade institucional, técnica e tecnológica dos órgãos ambientais",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1122,
-      1123
-     ],
-     "nota": ""
-    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
       1804
      ],
      "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1109,
+      1121
+     ],
+     "nota": "Ênfase em integridade e política ambiental participativa"
     }
    }
   },
   {
-   "id": "p20",
+   "id": "p19",
    "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Modernizar o licenciamento minerário, com processos digitais, prazos definidos e acompanhamento eletrônico",
+   "proposta": "Modernizar e agilizar o licenciamento minerário",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -488,39 +484,93 @@
    }
   },
   {
-   "id": "p21",
-   "subtema": "Licenciamento e gestão ambiental",
-   "proposta": "Assegurar participação social, integridade e transparência nos processos de licenciamento e na política ambiental",
-   "n_concorda": 2,
+   "id": "p20",
+   "subtema": "Mineração e minerais estratégicos",
+   "proposta": "Apoiar o desenvolvimento da cadeia de terras raras e minerais estratégicos no estado, com pesquisa e beneficiamento local",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
+    "governador-rn-rodrigo-bolsonaro-200002546756": {
      "posicao": "concorda",
      "blocos": [
-      1109,
-      1122
+      33
+     ],
+     "nota": "Menciona mais investimentos em terras raras"
+    },
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      85,
+      86,
+      87
+     ],
+     "nota": "Prevê mapeamento do potencial e formação profissional"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      860
+     ],
+     "nota": "Foco em pesquisa mineral e beneficiamento dentro do Estado"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Mineração e minerais estratégicos",
+   "proposta": "Condicionar a atividade mineradora à segurança ambiental, recuperação de áreas degradadas e diálogo com as comunidades",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      87
      ],
      "nota": ""
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1804
+      860
      ],
-     "nota": "Trata sobretudo de transparência e digitalização"
+     "nota": ""
     }
    }
   },
   {
    "id": "p22",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Apoiar soluções regionalizadas de gestão de resíduos sólidos por meio de consórcios públicos e municípios, com coleta seletiva, reciclagem e destinação adequada",
-   "n_concorda": 2,
+   "subtema": "Mineração e minerais estratégicos",
+   "proposta": "Apoiar pequenos e médios empreendimentos minerários e estimular sua formalização",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      860
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Apoiar municípios e consórcios em coleta seletiva, reciclagem e destinação adequada de resíduos, com regionalização das soluções",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      440,
-      442
+      395,
+      396,
+      397
+     ],
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1089,
+      1132
      ],
      "nota": ""
     },
@@ -529,21 +579,20 @@
      "blocos": [
       1843
      ],
-     "nota": ""
+     "nota": "Inclui valorização energética e redução do envio a aterros"
     }
    }
   },
   {
-   "id": "p23",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Promover a economia circular, com redução da geração de resíduos, reaproveitamento de materiais e aproveitamento econômico dos resíduos",
+   "id": "p24",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Promover a economia circular, a redução da geração de resíduos e o aproveitamento econômico de materiais",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      441,
-      442
+      397
      ],
      "nota": ""
     },
@@ -565,30 +614,15 @@
    }
   },
   {
-   "id": "p24",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Encerrar os lixões existentes no estado",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      442
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p25",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Fortalecer as cooperativas de catadores e incluir catadoras e catadores na economia circular",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Fortalecer e incluir cooperativas de catadoras e catadores na política de resíduos",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      442
+      397
      ],
      "nota": ""
     },
@@ -603,14 +637,14 @@
   },
   {
    "id": "p26",
-   "subtema": "Resíduos sólidos",
-   "proposta": "Incentivar a recuperação de materiais e a valorização energética dos resíduos, reduzindo a disposição em aterros sanitários",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Encerrar os lixões existentes no estado",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
+    "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      1843
+      397
      ],
      "nota": ""
     }
@@ -618,103 +652,100 @@
   },
   {
    "id": "p27",
-   "subtema": "Mineração e minerais estratégicos",
-   "proposta": "Atrair e ampliar investimentos na cadeia de terras raras e minerais estratégicos no estado",
+   "subtema": "Clima, adaptação e economia verde",
+   "proposta": "Fortalecer o planejamento e a governança climática do estado e a capacidade de captar recursos verdes e climáticos",
    "n_concorda": 2,
    "posicoes": {
-    "governador-rn-rodrigo-bolsonaro-200002546756": {
+    "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
-      33
+      1109,
+      1123,
+      1127,
+      1131
+     ],
+     "nota": "Cooperação com governo federal, municípios e bancos públicos"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1822,
+      1825
      ],
      "nota": ""
-    },
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      130,
-      132
-     ],
-     "nota": "Exige agregação de valor, segurança ambiental e fornecedores locais"
     }
    }
   },
   {
    "id": "p28",
-   "subtema": "Mineração e minerais estratégicos",
-   "proposta": "Mapear o potencial mineral do estado e apoiar a pesquisa mineral",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      132
-     ],
-     "nota": "Foco em minerais estratégicos e terras raras"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      860
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Mineração e minerais estratégicos",
-   "proposta": "Estimular o beneficiamento dos minerais dentro do estado, agregando valor nas regiões produtoras",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      132
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      860
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Mineração e minerais estratégicos",
-   "proposta": "Condicionar a mineração à segurança ambiental, à recuperação das áreas degradadas e ao diálogo com as comunidades",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      132
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      860
-     ],
-     "nota": "Ênfase em recuperação ambiental e formalização"
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Mineração e minerais estratégicos",
-   "proposta": "Apoiar pequenos e médios empreendimentos minerários e estimular sua formalização",
+   "subtema": "Clima, adaptação e economia verde",
+   "proposta": "Elaborar e implementar um Plano Estadual de Adaptação e Mitigação às Mudanças Climáticas, com metas de redução de emissões e governança permanente",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      860
+      1822,
+      1823,
+      1980,
+      1981,
+      1982
+     ],
+     "nota": "Início do plano já nas primeiras ações de governo"
+    }
+   }
+  },
+  {
+   "id": "p29",
+   "subtema": "Clima, adaptação e economia verde",
+   "proposta": "Orientar a política de adaptação climática pela proteção prioritária das populações mais vulneráveis a secas, calor extremo, chuvas e erosão costeira",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1088,
+      1089,
+      1104
+     ],
+     "nota": "Justiça climática como critério de prioridade"
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Clima, adaptação e economia verde",
+   "proposta": "Criar mecanismos de pagamento por serviços ambientais e participação em mercados de carbono, com regras de mensuração e verificação",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1825
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Clima, adaptação e economia verde",
+   "proposta": "Estimular a bioeconomia e a economia verde como estratégia de desenvolvimento e atração de investimentos",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      79,
+      1111,
+      1114
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1825
      ],
      "nota": ""
     }
@@ -722,23 +753,8 @@
   },
   {
    "id": "p32",
-   "subtema": "Mineração e minerais estratégicos",
-   "proposta": "Promover formação profissional voltada à cadeia da mineração e dos minerais estratégicos",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      132
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p33",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Proteger, conservar e recuperar a Caatinga, com combate à desertificação e recuperação de áreas degradadas",
+   "subtema": "Conservação, territórios e uso do solo",
+   "proposta": "Proteger e recuperar a Caatinga, o litoral, manguezais, dunas e demais ecossistemas como patrimônio e ativo econômico",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
@@ -748,44 +764,22 @@
       1120,
       1131
      ],
-     "nota": ""
+     "nota": "Associa conservação ao turismo interiorizado e à economia do mar"
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1816
-     ],
-     "nota": "Detalha reflorestamento com nativas, matas ciliares e manejo sustentável"
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Proteger e recuperar os ecossistemas litorâneos (manguezais, dunas, restingas, estuários e falésias) com ordenamento da ocupação costeira",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1120,
-      1131
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
+      1816,
       1841
      ],
-     "nota": "Propõe Política Estadual de Gestão Costeira e enfrentamento da erosão"
+     "nota": "Inclui reflorestamento com nativas e combate à desertificação"
     }
    }
   },
   {
-   "id": "p35",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Modernizar e fortalecer as unidades de conservação estaduais, com regularização, planos de manejo atualizados, infraestrutura, equipes técnicas e fiscalização",
+   "id": "p33",
+   "subtema": "Conservação, territórios e uso do solo",
+   "proposta": "Modernizar e fortalecer as unidades de conservação estaduais, com regularização, planos de manejo, equipes e fiscalização",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -798,24 +792,9 @@
    }
   },
   {
-   "id": "p36",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Criar um programa estadual de infraestrutura verde, integrando áreas verdes e unidades de conservação e apoiando municípios em parques, corredores ecológicos e arborização",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1814
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p37",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Apoiar soluções baseadas na natureza na infraestrutura urbana, como parques lineares, jardins de chuva e drenagem sustentável",
+   "id": "p34",
+   "subtema": "Conservação, territórios e uso do solo",
+   "proposta": "Implantar programa estadual de infraestrutura verde e soluções baseadas na natureza (parques, corredores ecológicos, arborização, drenagem sustentável)",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -824,13 +803,28 @@
       1065,
       1814
      ],
+     "nota": "PROVERDE-RN, com apoio técnico aos municípios"
+    }
+   }
+  },
+  {
+   "id": "p35",
+   "subtema": "Conservação, territórios e uso do solo",
+   "proposta": "Implementar política estadual de gestão costeira e recuperação dos ecossistemas litorâneos, com enfrentamento da erosão",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1841
+     ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p38",
-   "subtema": "Conservação, Caatinga e litoral",
+   "id": "p36",
+   "subtema": "Conservação, territórios e uso do solo",
    "proposta": "Atualizar e implementar o Zoneamento Ecológico-Econômico do estado para orientar o ordenamento territorial e a localização de empreendimentos",
    "n_concorda": 1,
    "posicoes": {
@@ -845,49 +839,9 @@
    }
   },
   {
-   "id": "p39",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Ampliar o uso público, a pesquisa e o turismo ecológico em áreas protegidas, articulado à interiorização do turismo",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1120
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1818
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p40",
-   "subtema": "Clima e adaptação",
-   "proposta": "Elaborar e implementar um Plano Estadual de Adaptação e Mitigação às Mudanças Climáticas, com metas de redução de emissões, ações contra secas, erosão costeira e eventos extremos e governança permanente",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1822,
-      1823,
-      1981,
-      1982
-     ],
-     "nota": "Compromisso de dar início já no começo da gestão"
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Clima e adaptação",
-   "proposta": "Fortalecer o planejamento climático, a produção de dados e o monitoramento ambiental como base da política pública",
+   "id": "p37",
+   "subtema": "Fiscalização, monitoramento e educação ambiental",
+   "proposta": "Fortalecer o monitoramento ambiental e a produção de dados sobre cobertura vegetal, clima e recursos naturais",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
@@ -901,95 +855,23 @@
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1820,
-      1822
+      1804,
+      1820
      ],
-     "nota": ""
+     "nota": "Propõe um Observatório Ambiental do RN integrando bases existentes"
     }
    }
   },
   {
-   "id": "p42",
-   "subtema": "Clima e adaptação",
-   "proposta": "Orientar a prevenção e a adaptação climática prioritariamente para as populações mais vulneráveis (justiça climática)",
+   "id": "p38",
+   "subtema": "Fiscalização, monitoramento e educação ambiental",
+   "proposta": "Fortalecer a fiscalização ambiental com geotecnologias e sensoriamento remoto para prevenir desmatamento, queimadas e ocupações irregulares",
    "n_concorda": 1,
    "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      79,
-      1088,
-      1089,
-      1104
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p43",
-   "subtema": "Clima e adaptação",
-   "proposta": "Estruturar mecanismos de economia verde e bioeconomia, incluindo pagamento por serviços ambientais e participação em mercados de carbono",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      79,
-      1114
-     ],
-     "nota": "Trata de economia verde e bioeconomia, sem citar mercado de carbono"
-    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1825
-     ],
-     "nota": "Define regras de governança, mensuração e verificação"
-    }
-   }
-  },
-  {
-   "id": "p44",
-   "subtema": "Clima e adaptação",
-   "proposta": "Ampliar a capacidade estadual de captar recursos verdes e climáticos nacionais e internacionais, com projetos estruturados",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1109,
-      1127,
-      1131
-     ],
-     "nota": "Via cooperação com o governo federal, bancos públicos e universidades"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1825
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p45",
-   "subtema": "Fiscalização e monitoramento",
-   "proposta": "Fortalecer a fiscalização ambiental e o monitoramento territorial, com geotecnologias e sensoriamento remoto, para prevenir desmatamento, queimadas e ocupações irregulares",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1123,
-      1131
-     ],
-     "nota": "Compromisso genérico de monitoramento ambiental"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
+      1791,
       1836
      ],
      "nota": ""
@@ -997,24 +879,9 @@
    }
   },
   {
-   "id": "p46",
-   "subtema": "Fiscalização e monitoramento",
-   "proposta": "Implantar um observatório ambiental estadual, integrando bases de dados sobre cobertura vegetal, biodiversidade, clima e uso do solo, sem criar estruturas paralelas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1820
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p47",
-   "subtema": "Fiscalização e monitoramento",
-   "proposta": "Adotar fiscalização orientadora para quem busca se adequar à lei, concentrando o rigor sobre quem efetivamente degrada",
+   "id": "p39",
+   "subtema": "Fiscalização, monitoramento e educação ambiental",
+   "proposta": "Adotar fiscalização orientadora para quem busca se adequar à lei, concentrando o rigor sobre quem causa dano ambiental",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -1022,6 +889,7 @@
      "blocos": [
       676,
       1784,
+      1789,
       1791
      ],
      "nota": ""
@@ -1029,9 +897,9 @@
    }
   },
   {
-   "id": "p48",
-   "subtema": "Educação ambiental e apoio aos municípios",
-   "proposta": "Fortalecer a educação ambiental e climática permanente em escolas, comunidades e instituições públicas",
+   "id": "p40",
+   "subtema": "Fiscalização, monitoramento e educação ambiental",
+   "proposta": "Fortalecer a educação ambiental e climática em escolas, comunidades e instituições públicas",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
@@ -1046,54 +914,6 @@
      "blocos": [
       1829
      ],
-     "nota": "Inclui formação de gestores públicos"
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Educação ambiental e apoio aos municípios",
-   "proposta": "Apoiar os municípios na estruturação de suas políticas ambientais locais, com cooperação técnica, consórcios intermunicipais e ações de adaptação climática",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1123,
-      1127
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1788,
-      1827
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p50",
-   "subtema": "Conservação, Caatinga e litoral",
-   "proposta": "Instituir políticas estaduais de proteção ambiental e de proteção animal",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1107,
-      1120,
-      1131
-     ],
-     "nota": "Propõe proteção da Caatinga, litoral, manguezais, dunas e áreas protegidas; não trata de proteção animal."
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1980
-     ],
      "nota": ""
     }
    }
@@ -1101,35 +921,51 @@
  ],
  "blocos": {
   "governador-rn-allyson-200002535255": {
-   "110": {
+   "65": {
     "texto": "MUTIRÃO TÉCNICO DO IDEMA",
     "pagina": 12
    },
-   "111": {
+   "66": {
     "texto": "Realizar força-tarefa para organizar processos ambientais, corrigir pendências e reduzir prazos de análise, com fila transparente e critérios bem definidos.",
     "pagina": 12
    },
-   "130": {
+   "85": {
     "texto": "TERRAS RARAS E MINERAÇÃO",
     "pagina": 12
    },
-   "132": {
+   "86": {
+    "texto": "ESTRATÉGICA",
+    "pagina": 12
+   },
+   "87": {
     "texto": "Mapear o potencial de minerais estratégicos e terras raras, apoiar pesquisa, beneficiamento responsável e formação profissional e atrair investimentos que agreguem valor no RN, com segurança ambiental, diálogo com as comunidades e fornecedores locais.",
     "pagina": 12
    },
-   "144": {
+   "89": {
+    "texto": "RN POTÊNCIA ENERGÉTICA E",
+    "pagina": 12
+   },
+   "90": {
+    "texto": "INDUSTRIAL",
+    "pagina": 12
+   },
+   "91": {
+    "texto": "Transformar a liderança em energia renovável em indústria, inovação e empregos, articulando geração, transmissão, armazenamento, fornecedores, formação profissional e atração de empreendimentos que agreguem valor no Estado.",
+    "pagina": 12
+   },
+   "99": {
     "texto": "Apoiar eólica em terra e no mar, energia solar, armazenamento, hidrogênio de baixa emissão e combustíveis sustentáveis, licenciamento, segurança hídrica e benefícios concretos para trabalhadores e comunidades.",
     "pagina": 12
    },
-   "440": {
+   "395": {
     "texto": "CONSÓRCIOS DE RESÍDUOS E",
     "pagina": 26
    },
-   "441": {
+   "396": {
     "texto": "ECONOMIA CIRCULAR",
     "pagina": 26
    },
-   "442": {
+   "397": {
     "texto": "Apoiar soluções regionais para coleta seletiva, reciclagem, destinação adequada e encerramento dos lixões, fortalecendo cooperativas de catadores e aproveitamento econômico dos resíduos.",
     "pagina": 26
    }
@@ -1163,6 +999,10 @@
     "texto": "Política ambiental previsível, participativa, íntegra e capaz de captar investimentos verdes.",
     "pagina": 72
    },
+   "1111": {
+    "texto": "1. Transição energética justa e economia verde",
+    "pagina": 72
+   },
    "1112": {
     "texto": "Aprofundar a liderança do RN em energias renováveis, conectando a geração de energia à indústria, à inovação, à formação profissional e ao desenvolvimento regional. O Estado buscará ampliar os encadeamentos produtivos, a participação de fornecedores locais e a qualificação de trabalhadores, para que os benefícios econômicos e sociais permaneçam nos territórios.",
     "pagina": 72
@@ -1177,6 +1017,10 @@
    },
    "1120": {
     "texto": "A Caatinga, o litoral, manguezais, dunas, falésias, áreas protegidas e recursos naturais serão reconhecidos como parte da identidade e da economia potiguar. Conservação, recuperação ambiental e uso responsável deverão caminhar com o desenvolvimento das comunidades, a interiorização do turismo e a economia do mar.",
+    "pagina": 72
+   },
+   "1121": {
+    "texto": "4. Governança ambiental, inovação e capacidade de investimento",
     "pagina": 72
    },
    "1122": {
@@ -1197,6 +1041,10 @@
    },
    "1131": {
     "texto": "A Caatinga, o Litoral e os recursos hídricos deverão estar mais protegidos, com monitoramento, recuperação ambiental e uso responsável. O Estado deverá possuir projetos maduros, governança climática e capacidade ampliada de captar recursos nacionais e internacionais.",
+    "pagina": 73
+   },
+   "1132": {
+    "texto": "A efetividade será reconhecida nas mudanças concretas: água chegando, resíduos tratados, riscos reduzidos, territórios protegidos, energia limpa gerando oportunidades e desenvolvimento sustentável produzindo qualidade de vida.",
     "pagina": 73
    }
   },

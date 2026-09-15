@@ -10,8 +10,8 @@
  ],
  "origem": {
   "arquivo": "saneamento-agua-rn.json",
-  "gerado_em": "2026-09-14T22:18:22Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "gerado_em": "2026-09-14T23:30:48Z",
+  "exportado_em": "2026-09-14T23:59:11Z"
  },
  "candidatos": [
   {
@@ -50,17 +50,310 @@
  "propostas": [
   {
    "id": "p1",
-   "subtema": "Saneamento básico",
-   "proposta": "Ampliar a cobertura de abastecimento de água e de coleta e tratamento de esgoto no estado",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Concluir, ampliar e recuperar a infraestrutura hídrica do Estado (adutoras, barragens, reservatórios e sistemas de abastecimento), com operação e manutenção permanentes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      436,
-      437
+      388
      ],
-     "nota": "Fala em acelerar a expansão com planejamento e cooperação federativa"
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      968,
+      1116
+     ],
+     "nota": "Enfatiza conectar grandes obras às redes locais de distribuição"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1089,
+      1101,
+      1779
+     ],
+     "nota": "Prioriza obras estruturantes em articulação com o Governo Federal"
+    }
+   }
+  },
+  {
+   "id": "p2",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Reduzir as perdas de água nos sistemas de adução e distribuição.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      388
+     ],
+     "nota": ""
+    },
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      968,
+      1116
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1091,
+      1779
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p3",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Instituir política permanente de redução de perdas com hidrometração, macromedição, telemetria, setorização, combate a vazamentos e modernização das redes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1091
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p4",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Planejar a segurança hídrica por bacias e regiões, com metas e prioridades de médio e longo prazo.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      384
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1071,
+      1073,
+      1868
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p5",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Elaborar e implementar um Plano Estadual de Segurança Hídrica com horizonte até 2035.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1071,
+      1072,
+      1073
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p6",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Organizar e aproveitar as águas da transposição do Rio São Francisco.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      384
+     ],
+     "nota": "Foco em uso organizado e com qualidade"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      932
+     ],
+     "nota": "Aproveitamento voltado à produção rural"
+    }
+   }
+  },
+  {
+   "id": "p7",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Assegurar inspeção periódica, manutenção e planos de segurança das barragens estaduais.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      388
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1097
+     ],
+     "nota": "Articulação com Defesa Civil e municípios afetados"
+    }
+   }
+  },
+  {
+   "id": "p8",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Apoiar soluções descentralizadas de acesso à água em comunidades rurais (poços, açudes, cisternas, pequenos reservatórios e redes comunitárias).",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      388,
+      428
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1103
+     ],
+     "nota": "Prevê gestão compartilhada com municípios e comunidades"
+    }
+   }
+  },
+  {
+   "id": "p9",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Garantir água para as atividades produtivas e para a agricultura familiar no semiárido.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      968,
+      1116
+     ],
+     "nota": "Convivência com o semiárido guiada por ciência e tecnologias sociais"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      932
+     ],
+     "nota": "Via Programa Água para Produzir"
+    }
+   }
+  },
+  {
+   "id": "p10",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Criar programa específico de segurança hídrica para a produção rural, com reservação, irrigação eficiente e monitoramento climático.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      932
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p11",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Implantar planos de contingência e protocolos de resposta a emergências de desabastecimento e secas prolongadas.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      968
+     ],
+     "nota": "Capacidade de resposta às secas como parte da gestão"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1095
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Executar ação emergencial de avaliação de barragens, adutoras, reservatórios, poços e dessalinizadores, com aceleração das obras em curso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1978
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p13",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Integrar e modernizar a operação dos grandes sistemas hídricos estaduais com automação e interoperabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1075,
+      1087
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p14",
+   "subtema": "Segurança hídrica e infraestrutura",
+   "proposta": "Ampliar o monitoramento da qualidade da água destinada ao abastecimento humano, com transparência dos resultados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1099,
+      1779
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p15",
+   "subtema": "Saneamento básico",
+   "proposta": "Ampliar a cobertura de abastecimento de água e de coleta e tratamento de esgoto, priorizando regiões com maior déficit.",
+   "n_concorda": 3,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      391,
+      392
+     ],
+     "nota": "Cooperação entre Estado, União e municípios"
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
@@ -84,9 +377,9 @@
    }
   },
   {
-   "id": "p2",
+   "id": "p16",
    "subtema": "Saneamento básico",
-   "proposta": "Priorizar, na expansão dos serviços, as regiões e populações com maior déficit de atendimento e maior vulnerabilidade",
+   "proposta": "Tratar abastecimento, esgotamento, drenagem e resíduos como política integrada de saúde e proteção ambiental, priorizando as populações mais vulneráveis.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
@@ -95,27 +388,29 @@
       969,
       1117
      ],
-     "nota": "Prioriza populações vulneráveis a eventos extremos"
+     "nota": ""
     },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1186
+      1173,
+      1174
      ],
-     "nota": "Critério é o déficit de atendimento dos municípios"
+     "nota": "Integração pelo plano estadual, articulada à proteção dos recursos hídricos"
     }
    }
   },
   {
-   "id": "p3",
+   "id": "p17",
    "subtema": "Saneamento básico",
-   "proposta": "Alinhar o saneamento estadual às metas nacionais de universalização do Marco Legal do Saneamento",
+   "proposta": "Alinhar as ações estaduais de saneamento às metas nacionais de universalização previstas no Marco Legal do Saneamento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      437
+      391,
+      392
      ],
      "nota": ""
     },
@@ -130,9 +425,9 @@
    }
   },
   {
-   "id": "p4",
+   "id": "p18",
    "subtema": "Saneamento básico",
-   "proposta": "Elaborar e implementar um Plano Estadual de Universalização do Saneamento Básico com metas e prioridades de investimento",
+   "proposta": "Elaborar e implementar um Plano Estadual de Universalização do Saneamento Básico.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -146,58 +441,40 @@
    }
   },
   {
-   "id": "p5",
+   "id": "p19",
    "subtema": "Saneamento básico",
-   "proposta": "Atuar em cooperação com União e municípios, apoiando prefeituras no planejamento e no financiamento das ações de saneamento",
-   "n_concorda": 2,
+   "proposta": "Modernizar a gestão da companhia estadual de saneamento (CAERN), com avaliação do modelo de prestação, governança corporativa e sustentabilidade econômico-financeira.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      436,
-      437
-     ],
-     "nota": ""
-    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1101,
-      1174,
-      1782
-     ],
-     "nota": "Inclui papel do Estado de cobrar resultados e atrair investimentos"
-    }
-   }
-  },
-  {
-   "id": "p6",
-   "subtema": "Saneamento básico",
-   "proposta": "Tratar abastecimento, esgotamento, drenagem e resíduos como política integrada de saúde pública e proteção ambiental",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      969,
-      1117
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1173,
-      1174
+      1176,
+      1182
      ],
      "nota": ""
     }
    }
   },
   {
-   "id": "p7",
+   "id": "p20",
    "subtema": "Saneamento básico",
-   "proposta": "Criar programa de ampliação e regularização de ligações domiciliares de água e esgoto, com apoio a famílias de baixa renda",
+   "proposta": "Apoiar a estruturação de concessões, parcerias público-privadas e outros modelos de cooperação para os serviços de saneamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1184
+     ],
+     "nota": "Com metas de universalização e modicidade tarifária"
+    }
+   }
+  },
+  {
+   "id": "p21",
+   "subtema": "Saneamento básico",
+   "proposta": "Criar programa de ampliação e regularização das ligações domiciliares de água e esgoto, com apoio às famílias de baixa renda e saneamento rural.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -205,14 +482,29 @@
      "blocos": [
       1188
      ],
-     "nota": "Nomeado Programa Liga RN, com soluções de saneamento rural"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p8",
+   "id": "p22",
    "subtema": "Saneamento básico",
-   "proposta": "Implantar painel público de indicadores do saneamento (cobertura, perdas, investimentos e metas) para transparência e controle social",
+   "proposta": "Criar escritório estadual especializado em estruturação de projetos de saneamento, modelagem de contratos e captação de recursos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1190
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Saneamento básico",
+   "proposta": "Implantar painel público de indicadores do saneamento com dados de cobertura, perdas, investimentos e metas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -225,9 +517,9 @@
    }
   },
   {
-   "id": "p9",
+   "id": "p24",
    "subtema": "Saneamento básico",
-   "proposta": "Promover programas permanentes de educação sanitária e ambiental sobre uso racional da água e uso correto das redes de esgoto",
+   "proposta": "Promover programas permanentes de educação sanitária e ambiental para uso racional da água e uso correto das redes de esgoto.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -241,208 +533,17 @@
    }
   },
   {
-   "id": "p10",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Concluir, ampliar e recuperar a infraestrutura hídrica estadual (adutoras, barragens, reservatórios e sistemas de abastecimento), com manutenção permanente",
+   "id": "p25",
+   "subtema": "Drenagem e adaptação climática",
+   "proposta": "Apoiar os municípios em drenagem urbana sustentável e prevenção de enchentes e riscos climáticos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      433
+      401
      ],
-     "nota": ""
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      968,
-      1116
-     ],
-     "nota": "Enfatiza conectar as grandes obras já retomadas às redes locais"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1089,
-      1101,
-      1779
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p11",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Reduzir as perdas de água nos sistemas de abastecimento",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      433
-     ],
-     "nota": ""
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      968,
-      1116
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1091,
-      1779
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p12",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Instituir política permanente de redução de perdas com hidrometração, macromedição, telemetria, setorização e modernização de redes",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1091
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Garantir a segurança das barragens estaduais com inspeções periódicas, monitoramento e planos de emergência",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      433
-     ],
-     "nota": "Menciona inspeção de barragens junto à governança das águas"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1097
-     ],
-     "nota": "Articulação com Defesa Civil e municípios afetados"
-    }
-   }
-  },
-  {
-   "id": "p14",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Integrar e modernizar a operação dos grandes sistemas hídricos estaduais, com automação e interoperabilidade",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      433
-     ],
-     "nota": "Fala em sistemas integrados de infraestrutura hídrica"
-    },
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      968,
-      1116
-     ],
-     "nota": "Integração de reservatórios, canais, adutoras e redes locais"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1075,
-      1087
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p15",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Implantar planos de contingência e protocolos de resposta a emergências hídricas, como secas prolongadas e falhas de adutoras",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      968
-     ],
-     "nota": "Capacidade de resposta às secas"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1095
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p16",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Executar ação emergencial de avaliação de barragens, adutoras, poços e dessalinizadores, com aceleração das obras em curso e recuperação das estruturas críticas",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1978
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p17",
-   "subtema": "Infraestrutura hídrica",
-   "proposta": "Ampliar o monitoramento da qualidade da água destinada ao abastecimento humano, com transparência e resposta rápida a riscos de contaminação",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      429
-     ],
-     "nota": "Uso das águas da transposição com qualidade"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1099,
-      1779
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p18",
-   "subtema": "Drenagem e resiliência climática",
-   "proposta": "Apoiar municípios em obras e projetos de drenagem urbana sustentável e prevenção de enchentes",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": "Inclui erosão, arborização e conforto térmico"
+     "nota": "Inclui arborização, conforto térmico e recuperação de áreas vulneráveis"
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
@@ -455,64 +556,69 @@
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1174,
-      1782
+      1173,
+      1174
      ],
-     "nota": ""
+     "nota": "Apoio ao planejamento e financiamento da drenagem municipal"
     }
    }
   },
   {
-   "id": "p19",
-   "subtema": "Drenagem e resiliência climática",
-   "proposta": "Planejar saneamento e drenagem como política de adaptação climática, preparando cidades e comunidades para secas, chuvas intensas e outros eventos extremos",
-   "n_concorda": 2,
+   "id": "p26",
+   "subtema": "Drenagem e adaptação climática",
+   "proposta": "Preparar cidades e comunidades para eventos climáticos extremos (secas, chuvas intensas, calor e erosão), com infraestrutura resiliente.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      446
+      401
      ],
      "nota": ""
     },
     "governador-rn-cadu-de-lula-200002534001": {
      "posicao": "concorda",
      "blocos": [
-      969,
       982,
-      1117,
+      1106,
       1130
      ],
-     "nota": "Inclui áreas rurais, comunidades costeiras e erosão costeira"
+     "nota": "Planejamento climático com mapeamento de riscos e prevenção de desastres"
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1073
+     ],
+     "nota": "Adaptação climática incorporada ao plano de segurança hídrica"
     }
    }
   },
   {
-   "id": "p20",
-   "subtema": "Drenagem e resiliência climática",
-   "proposta": "Recuperar áreas urbanas degradadas por drenagem deficiente e erosão, com ação conjunta entre Estado, prefeitura, companhia de saneamento, órgãos ambientais e universidades",
+   "id": "p27",
+   "subtema": "Drenagem e adaptação climática",
+   "proposta": "Implantar obras de drenagem e correção de impactos ambientais na praia de Ponta Negra, em articulação com prefeitura, companhia de saneamento, órgãos ambientais e universidades.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      422,
-      446
+      377
      ],
-     "nota": "Caso específico: recuperação da Praia de Ponta Negra, em Natal"
+     "nota": ""
     }
    }
   },
   {
-   "id": "p21",
-   "subtema": "Abastecimento rural e fontes alternativas",
-   "proposta": "Ampliar e recuperar sistemas de dessalinização e outras soluções alternativas de abastecimento para comunidades rurais e áreas de maior vulnerabilidade hídrica",
+   "id": "p28",
+   "subtema": "Fontes alternativas e reúso",
+   "proposta": "Ampliar e recuperar sistemas de dessalinização para comunidades rurais e localidades com maior vulnerabilidade hídrica.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      473
+      428
      ],
      "nota": ""
     },
@@ -528,54 +634,9 @@
    }
   },
   {
-   "id": "p22",
-   "subtema": "Abastecimento rural e fontes alternativas",
-   "proposta": "Apoiar sistemas simplificados e descentralizados de acesso à água no meio rural (poços, cisternas, açudes, pequenos reservatórios e redes comunitárias)",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      433,
-      473
-     ],
-     "nota": "Cita construção de açudes e perfuração de poços"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1103
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p23",
-   "subtema": "Abastecimento rural e fontes alternativas",
-   "proposta": "Ampliar o aproveitamento de águas pluviais e de águas subterrâneas como fontes alternativas de abastecimento",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      473
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1860
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p24",
-   "subtema": "Abastecimento rural e fontes alternativas",
-   "proposta": "Incentivar o reuso de água, inclusive de efluentes tratados, em usos industriais, agrícolas, paisagísticos e em equipamentos públicos",
+   "id": "p29",
+   "subtema": "Fontes alternativas e reúso",
+   "proposta": "Incentivar o reúso de água, inclusive de efluentes tratados, em usos industriais, agrícolas e paisagísticos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-cadu-de-lula-200002534001": {
@@ -597,39 +658,38 @@
    }
   },
   {
-   "id": "p25",
-   "subtema": "Abastecimento rural e fontes alternativas",
-   "proposta": "Garantir água para a produção rural e a agricultura familiar, com reservação e irrigação eficiente",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      968,
-      1116
-     ],
-     "nota": "Foco na agricultura familiar e em tecnologias sociais"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      932,
-      1862
-     ],
-     "nota": "Nomeia o Programa Água para Produzir e modernização da irrigação"
-    }
-   }
-  },
-  {
-   "id": "p26",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Fortalecer a governança dos recursos hídricos, definindo responsabilidades dos órgãos gestores, reguladores e municípios",
+   "id": "p30",
+   "subtema": "Fontes alternativas e reúso",
+   "proposta": "Ampliar a captação e o aproveitamento de águas pluviais e de águas subterrâneas como fontes alternativas de abastecimento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
      "blocos": [
-      433
+      428
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1103,
+      1860
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Fortalecer a governança das águas, com definição clara de responsabilidades dos órgãos gestores, reguladores e municípios.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      388
      ],
      "nota": ""
     },
@@ -644,93 +704,9 @@
    }
   },
   {
-   "id": "p27",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Planejar a segurança hídrica por bacias hidrográficas e regiões, com planos de recursos hídricos atualizados",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      429
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1868
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p28",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Elaborar e implementar um plano estadual de segurança hídrica com metas de médio e longo prazo",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1071,
-      1072,
-      1073
-     ],
-     "nota": "Nomeado RN Água Segura 2035"
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Organizar e aproveitar as águas da transposição do Rio São Francisco no abastecimento e na produção",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-allyson-200002535255": {
-     "posicao": "concorda",
-     "blocos": [
-      429
-     ],
-     "nota": ""
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      932
-     ],
-     "nota": "Uso voltado à produção rural"
-    }
-   }
-  },
-  {
-   "id": "p30",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Proteger e revitalizar bacias, nascentes, mananciais e áreas de recarga, com recuperação de matas ciliares e controle da erosão",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1116
-     ],
-     "nota": "Proteção de mananciais como parte da gestão integrada"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1779,
-      1858
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p31",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Fortalecer os comitês de bacia e demais instâncias de participação na gestão das águas",
+   "id": "p32",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Fortalecer os comitês de bacias hidrográficas e os instrumentos de participação na gestão das águas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -743,9 +719,32 @@
    }
   },
   {
-   "id": "p32",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Integrar bases de dados hídricos em painel estadual de segurança hídrica, com informações sobre reservatórios, outorgas, perdas e qualidade da água",
+   "id": "p33",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Proteger e revitalizar mananciais, nascentes, matas ciliares, áreas de recarga e aquíferos.",
+   "n_concorda": 2,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      1116
+     ],
+     "nota": ""
+    },
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1779,
+      1858
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p34",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Modernizar e integrar as bases de dados sobre reservatórios, outorgas, perdas e qualidade da água em painel estadual de segurança hídrica.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -759,9 +758,9 @@
    }
   },
   {
-   "id": "p33",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Aprimorar e desburocratizar a gestão das outorgas de uso da água, com processos digitais e critérios técnicos",
+   "id": "p35",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Aprimorar e desburocratizar a gestão das outorgas de uso da água, com processos digitais e critérios técnicos transparentes.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -774,24 +773,9 @@
    }
   },
   {
-   "id": "p34",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Avançar no enquadramento de rios, reservatórios e corpos d'água em classes de qualidade",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      1870
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p35",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Fortalecer cadastro, regularização, monitoramento e fiscalização de poços e captações subterrâneas",
+   "id": "p36",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Fortalecer o cadastro, a regularização, o monitoramento e a fiscalização de poços e captações de águas subterrâneas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -804,31 +788,15 @@
    }
   },
   {
-   "id": "p36",
-   "subtema": "Gestão e governança das águas",
-   "proposta": "Orientar a convivência com o semiárido por conhecimento científico e tecnologias sociais",
-   "n_concorda": 1,
-   "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      1116
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p37",
-   "subtema": "Companhia estadual e modelos de prestação",
-   "proposta": "Modernizar a gestão da companhia estadual de saneamento, com avaliação técnica do modelo de prestação, governança corporativa e sustentabilidade econômico-financeira",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Avançar no enquadramento dos rios, reservatórios e corpos d'água em classes de qualidade.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1176,
-      1182
+      1870
      ],
      "nota": ""
     }
@@ -836,29 +804,29 @@
   },
   {
    "id": "p38",
-   "subtema": "Companhia estadual e modelos de prestação",
-   "proposta": "Apoiar a estruturação de concessões, parcerias público-privadas e outros modelos de cooperação na prestação dos serviços de saneamento",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Atualizar e implementar os planos de recursos hídricos das bacias hidrográficas.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1184
+      1868
      ],
-     "nota": "Com metas de universalização, modicidade tarifária e respeito às competências municipais"
+     "nota": ""
     }
    }
   },
   {
    "id": "p39",
-   "subtema": "Companhia estadual e modelos de prestação",
-   "proposta": "Criar escritório estadual de estruturação de projetos de saneamento para estudos, modelagem de contratos, regionalização e captação de recursos",
+   "subtema": "Gestão e governança dos recursos hídricos",
+   "proposta": "Apoiar a modernização da agricultura irrigada com tecnologias que reduzam perdas e aumentem a eficiência do uso da água.",
    "n_concorda": 1,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
-      1190
+      1862
      ],
      "nota": ""
     }
@@ -867,31 +835,31 @@
  ],
  "blocos": {
   "governador-rn-allyson-200002535255": {
-   "422": {
+   "377": {
     "texto": "Atuar com a Prefeitura de Natal, CAERN, órgãos ambientais, universidades e instituições de controle para implantar a drenagem necessária, corrigir impactos e devolver dignidade ao principal cartão-postal do Rio Grande do Norte.",
     "pagina": 25
    },
-   "429": {
+   "384": {
     "texto": "Planejar a segurança hídrica por bacias e regiões e organizar o uso das águas da transposição do São Francisco com qualidade.",
     "pagina": 25
    },
-   "433": {
+   "388": {
     "texto": "Concluir, ampliar e manter infraestrutura hídrica, reduzir perdas, diversificar fontes com segurança e fortalecer governança das águas, inspeção de barragens, construção de açudes e perfuração de poços.",
     "pagina": 25
    },
-   "436": {
+   "391": {
     "texto": "Acelerar a expansão de água e esgotamento sanitário com planejamento e cooperação entre",
     "pagina": 25
    },
-   "437": {
+   "392": {
     "texto": "Estado, União e municípios, respeitando as metas nacionais.",
     "pagina": 25
    },
-   "446": {
+   "401": {
     "texto": "Apoiar municípios em drenagem sustentável, prevenção de enchentes, erosão e outros riscos climáticos, arborização, conforto térmico e recuperação de áreas vulneráveis.",
     "pagina": 26
    },
-   "473": {
+   "428": {
     "texto": "Ampliar sistemas de dessalinização, captação de águas pluviais, aproveitamento de águas subterrâneas e outras soluções tecnológicas para garantir abastecimento às comunidades urais e regiões com maior vulnerabilidade hídrica.",
     "pagina": 26
    }
@@ -912,6 +880,10 @@
    "982": {
     "texto": "Mais pessoas deverão ter abastecimento de água regular, saneamento, mobilidade acessível e internet de qualidade. As cidades e comunidades deverão estar mais preparadas para secas, chuvas intensas e outros eventos climáticos, com infraestrutura que proteja vidas e reduza vulnerabilidades.",
     "pagina": 63
+   },
+   "1106": {
+    "texto": "Água, saneamento e infraestrutura resiliente ampliando saúde, dignidade e segurança.",
+    "pagina": 72
    },
    "1116": {
     "texto": "Integrar reservatórios, canais, adutoras, redes locais, proteção de mananciais, reuso e redução de perdas para garantir água às famílias, à agricultura familiar e às atividades produtivas. A convivência com o Semiárido será orientada por conhecimento científico, tecnologias sociais e gestão eficiente dos recursos hídricos.",
