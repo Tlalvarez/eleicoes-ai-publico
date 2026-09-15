@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "liberdade-expressao-digital-6.json",
   "gerado_em": "2026-09-14T06:19:15Z",
-  "exportado_em": "2026-09-14T08:29:37Z"
+  "exportado_em": "2026-09-15T19:27:55Z"
  },
  "candidatos": [
   {
@@ -67,8 +67,8 @@
   {
    "id": "p1",
    "subtema": "Regulação de plataformas e redes sociais",
-   "proposta": "Estabelecer em lei regras de regulação das plataformas digitais e redes sociais, com deveres de transparência e responsabilidade sobre conteúdos",
-   "n_concorda": 3,
+   "proposta": "Regular as plataformas digitais e redes sociais",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -84,14 +84,6 @@
       581
      ],
      "nota": "Com devido processo, direito de recurso e preservação do Marco Civil"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      281,
-      1453
-     ],
-     "nota": "Ênfase em estímulo à transparência dentro dos parâmetros constitucionais"
     },
     "renan-santos": {
      "posicao": "discorda",
@@ -129,7 +121,7 @@
   {
    "id": "p3",
    "subtema": "Regulação de plataformas e redes sociais",
-   "proposta": "Implementar regras específicas de proteção de crianças e adolescentes no ambiente digital",
+   "proposta": "Promover a proteção de crianças e adolescentes no ambiente digital.",
    "n_concorda": 2,
    "posicoes": {
     "ronaldo-caiado": {
@@ -276,32 +268,10 @@
    }
   },
   {
-   "id": "p11",
-   "subtema": "Dados pessoais, cibersegurança e soberania digital",
-   "proposta": "Garantir que a inteligência artificial seja usada a serviço das pessoas, protegendo sistemas de IA contra manipulação",
-   "n_concorda": 2,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      837
-     ],
-     "nota": ""
-    },
-    "ronaldo-caiado": {
-     "posicao": "concorda",
-     "blocos": [
-      580
-     ],
-     "nota": "Proteção contra manipulação e envenenamento de dados"
-    }
-   }
-  },
-  {
    "id": "p12",
    "subtema": "Liberdade de expressão e censura",
    "proposta": "Extinguir estruturas estatais encarregadas de vigiar, rotular ou punir o que as pessoas dizem e revogar atos de censura do governo",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -310,14 +280,6 @@
       943
      ],
      "nota": "Chama de 'Tesouraço da Censura'"
-    },
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      894,
-      895
-     ],
-     "nota": "Foco em punir agentes públicos que censuram"
     }
    }
   },
@@ -371,7 +333,7 @@
    "id": "p16",
    "subtema": "Liberdade de expressão e censura",
    "proposta": "Assegurar que restrições a manifestações só ocorram pela via judicial, com regras claras e direito de defesa",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
@@ -379,13 +341,6 @@
       943
      ],
      "nota": ""
-    },
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      370
-     ],
-     "nota": "Via estruturas transparentes de responsabilização em novo marco legal"
     }
    }
   },
@@ -507,7 +462,7 @@
    "id": "p24",
    "subtema": "Educação e inclusão digital",
    "proposta": "Instituir política pública de letramento e educação digital para uso crítico e responsável das redes",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -515,13 +470,6 @@
       138
      ],
      "nota": "Política Nacional de Letramento Digital para todas as idades"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      281
-     ],
-     "nota": "Foco em efeitos das redes sobre convivência social e saúde mental"
     }
    }
   },
@@ -589,14 +537,73 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p29",
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Avançar na regulação democrática das plataformas digitais e redes sociais, para impedir a difusão de desinformação e campanhas de ódio, garantindo a liberdade de expressão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      127,
+      730
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p31",
+   "subtema": "Regulação de plataformas e redes sociais",
+   "proposta": "Estimular maior transparência e responsabilidade das plataformas digitais quanto a conteúdos prejudiciais a crianças e adolescentes, nos limites constitucionais e legais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      1453
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p32",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Garantir que a inteligência artificial seja usada a serviço das pessoas, e não contra elas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      837
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p33",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Proteger sistemas de inteligência artificial contra manipulação e envenenamento de dados, no âmbito de uma política nacional de cibersegurança.",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   }
   }
  ],
  "blocos": {
   "augusto-cury": {
-   "281": {
-    "texto": "Precisamos reconstruir a serenidade coletiva a partir de políticas públicas, terminando com o ciclo de omissão do Estado com relação a esse problema. Não é apenas uma questão de regulamentação das plataformas, mas de orientação sobre seus efeitos sobre a convivência social e saúde mental. Precisamos desacelerar a mente. Precisamos ensinar contemplação. Precisamos reaprender a escutar sem imediatamente atacar. A inteligência não floresce no barulho permanente. Floresce no silêncio reflexivo. Uma sociedade que não consegue contemplar não consegue pensar profundamente.",
-    "pagina": 22
-   },
    "833": {
     "texto": "Fortaleceremos a soberania digital, a segurança cibernética e a proteção de dados pessoais, reduzindo dependências externas em áreas críticas.",
     "pagina": 58
@@ -669,10 +676,6 @@
    }
   },
   "romeu-zema": {
-   "894": {
-    "texto": "Descriminalizar a opinião e punir quem censura:",
-    "pagina": 74
-   },
    "895": {
     "texto": "Deslocar os crimes de injúria e difamação para a esfera cível, revogar o crime de desacato e tipificar como abuso de autoridade qualquer ato estatal de censura, remoção arbitrária de conteúdo ou restrição injustificada da expressão, para que nenhum brasileiro viva com medo de ser preso ou perseguido por aquilo que pensa, diz ou escreve.",
     "pagina": 74

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-rj.json",
   "gerado_em": "2026-09-14T09:21:00Z",
-  "exportado_em": "2026-09-14T09:58:52Z"
+  "exportado_em": "2026-09-15T19:27:56Z"
  },
  "candidatos": [
   {
@@ -251,7 +251,7 @@
   {
    "id": "p11",
    "subtema": "Regularização fundiária e titulação",
-   "proposta": "Ampliar e acelerar a regularização fundiária, com titulação de quem já ocupa o imóvel",
+   "proposta": "Ampliar a regularização fundiária.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -281,7 +281,7 @@
   {
    "id": "p12",
    "subtema": "Regularização fundiária e titulação",
-   "proposta": "Articular Estado, municípios e cartórios para acelerar os processos de regularização",
+   "proposta": "Articular Estado e municípios nos processos de regularização fundiária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -425,7 +425,7 @@
   {
    "id": "p21",
    "subtema": "Áreas de risco e prevenção de desastres",
-   "proposta": "Executar obras de contenção de encostas, drenagem e desassoreamento nas áreas mais vulneráveis",
+   "proposta": "Executar obras de contenção de encostas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -675,29 +675,6 @@
      "posicao": "concorda",
      "blocos": [
       1332
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p34",
-   "subtema": "Instituições e governança da política habitacional",
-   "proposta": "Dar à CEHAB-RJ papel central na execução da política habitacional estadual",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1558
-     ],
-     "nota": "CEHAB responsável por obras complexas e contenção de encostas"
-    },
-    "governador-rj-william-siri-190002536162": {
-     "posicao": "concorda",
-     "blocos": [
-      1334,
-      1335
      ],
      "nota": ""
     }
@@ -1175,30 +1152,91 @@
    "id": "p64",
    "subtema": "Áreas de risco e prevenção de desastres",
    "proposta": "Estruturar o programa Morada Fluminense em 2027, definindo áreas de risco prioritárias com base em mapeamento climático e iniciando obras de contenção e reassentamentos emergenciais",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      204,
-      280
-     ],
-     "nota": "Propõe sistema estadual de monitoramento de riscos, base unificada e contenção de encostas."
-    },
-    "governador-rj-coronel-busnello-190002544120": {
-     "posicao": "concorda",
-     "blocos": [
-      1558,
-      1563,
-      1571,
-      1590
-     ],
-     "nota": "Prevê mapeamento técnico (geotécnico/hidrológico, INEA/Defesa Civil), contenção de encostas e realocação de áreas de risco."
-    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
       2599
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p65",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Criar política de regularização fundiária e fiscalização ambiental de propriedades rurais, industriais e florestais nas franjas urbanas, reconhecendo a posse mansa e pacífica dos ocupantes e integrando-a às políticas sociais, de infraestrutura e de renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1325
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p66",
+   "subtema": "Regularização fundiária e titulação",
+   "proposta": "Realizar, na mesma visita, a regularização fundiária pelo ITERJ e pela Reurb municipal, com individualização por andar nas ocupações verticalizadas, junto ao cadastramento social no CRAS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1601
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p67",
+   "subtema": "Áreas de risco e prevenção de desastres",
+   "proposta": "Atribuir à CEHAB-RJ as obras complexas de contenção de encostas, com o Estado articulando captação internacional de recursos e atuação integrada com o ITERJ na regularização fundiária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1558
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p68",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Integrar a atuação da CEHAB-RJ, responsável por obras complexas e contenção de encostas, à do ITERJ, encarregado da regularização fundiária em escala, sob articulação do Governo do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-coronel-busnello-190002544120": {
+     "posicao": "concorda",
+     "blocos": [
+      1558
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p69",
+   "subtema": "Instituições e governança da política habitacional",
+   "proposta": "Reestruturar a CEHAB-RJ como empresa pública, para articular a política habitacional ao planejamento socioambiental de cada região do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1334,
+      1335
      ],
      "nota": ""
     }
@@ -1335,10 +1373,6 @@
    }
   },
   "governador-rj-douglas-ruas-190002542887": {
-   "204": {
-    "texto": "Fora da escola e do hospital, a insegurança continua. As famílias e os servidores fluminenses que cuidam da população atravessam horas de deslocamento porque não conseguem morar perto de onde trabalham. Encostas ocupadas há décadas seguem sem prevenção, à espera da próxima tragédia.",
-    "pagina": 17
-   },
    "208": {
     "texto": "Na habitação, significa facilitar o financiamento da casa própria para quem serve à população.",
     "pagina": 17

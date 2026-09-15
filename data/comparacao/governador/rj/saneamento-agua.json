@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-rj.json",
   "gerado_em": "2026-09-14T09:17:38Z",
-  "exportado_em": "2026-09-14T09:58:52Z"
+  "exportado_em": "2026-09-15T19:27:56Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
-   "proposta": "Ampliar a coleta e o tratamento de esgoto até a cobertura completa, com prioridade às áreas de maior déficit",
+   "proposta": "Ampliar a coleta e o tratamento de esgoto.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -90,7 +90,7 @@
   {
    "id": "p2",
    "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
-   "proposta": "Executar planos de despoluição das baías e bacias hidrográficas estaduais",
+   "proposta": "Promover a despoluição de corpos hídricos do estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -135,7 +135,7 @@
   {
    "id": "p4",
    "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Garantir a segurança hídrica do estado, protegendo mananciais, reduzindo perdas e ampliando a reservação frente às mudanças climáticas",
+   "proposta": "Garantir a segurança hídrica do estado, protegendo seus mananciais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-william-siri-190002536162": {
@@ -197,7 +197,7 @@
   {
    "id": "p7",
    "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Proteger e recuperar nascentes e matas ciliares nas áreas de recarga dos mananciais",
+   "proposta": "Proteger e recuperar os mananciais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-andre-marinho-190002537524": {
@@ -222,7 +222,7 @@
   {
    "id": "p8",
    "subtema": "Enchentes, drenagem e defesa civil",
-   "proposta": "Executar plano de obras e ações estruturais de prevenção de enchentes e deslizamentos nas regiões mais críticas do estado",
+   "proposta": "Executar ações de prevenção de enchentes e deslizamentos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rj-eduardo-paes-190002543380": {
@@ -476,7 +476,7 @@
    "id": "p23",
    "subtema": "Abastecimento de água e tarifas",
    "proposta": "Ampliar progressivamente a rede de distribuição e reservação de água até a cobertura completa, priorizando áreas de baixa renda",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rj-william-siri-190002536162": {
      "posicao": "concorda",
@@ -484,20 +484,13 @@
       1138
      ],
      "nota": ""
-    },
-    "governador-rj-douglas-ruas-190002542887": {
-     "posicao": "concorda",
-     "blocos": [
-      490
-     ],
-     "nota": "Universalização como prioridade na cobrança dos contratos"
     }
    }
   },
   {
    "id": "p24",
    "subtema": "Abastecimento de água e tarifas",
-   "proposta": "Reduzir as perdas de água na distribuição, com acompanhamento de índices e reforma dos equipamentos de reservação",
+   "proposta": "Reduzir as perdas de água na distribuição.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rj-douglas-ruas-190002542887": {
@@ -553,6 +546,138 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p27",
+   "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
+   "proposta": "Ampliar as metas de coleta e tratamento de esgoto na bacia da Baía de Guanabara, com fiscalização junto à concessionária e às agências reguladoras, elevando de forma expressiva o volume de esgoto tratado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2320,
+      2326
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p28",
+   "subtema": "Esgotamento sanitário e despoluição de corpos hídricos",
+   "proposta": "Promover a despoluição dos principais corpos hídricos do Estado, com controle dos lançamentos irregulares, expansão da coleta e do tratamento de esgoto e fiscalização das metas contratuais das concessionárias de saneamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p29",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Garantir a segurança hídrica do estado por meio do Plano Estadual de Segurança Hídrica, de um fundo estadual de pagamento por serviços ambientais para conservar florestas e nascentes, da redução de perdas, do monitoramento de mananciais e da redundância dos sistemas de abastecimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2408,
+      2421
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p30",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Criar uma Política Estadual de recursos hídricos que implemente os planos dos comitês de bacia, com reflorestamento de áreas degradadas e proteção dos mananciais e cursos d'água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      894,
+      897
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p31",
+   "subtema": "Enchentes, drenagem e defesa civil",
+   "proposta": "Manter cronograma anual de limpeza e desobstrução de canais, com áreas prioritárias mapeadas e equipes permanentes, e monitorar encostas e áreas vulneráveis com tecnologia, fiscalização junto aos municípios e apoio técnico às prefeituras.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      502,
+      508
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p32",
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Reduzir as perdas de água por meio do acompanhamento permanente dos índices de distribuição e da exigência de investimentos corretivos às concessionárias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p33",
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Reformar os equipamentos de reservação e distribuição da rede de abastecimento, reduzindo perdas e ampliando a regularidade do fornecimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1138
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p34",
+   "subtema": "Abastecimento de água e tarifas",
+   "proposta": "Reduzir as perdas de água, com monitoramento de mananciais e planejamento de redundância dos sistemas de abastecimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-andre-marinho-190002537524": {
+     "posicao": "concorda",
+     "blocos": [
+      2421
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
   }
  ],
  "blocos": {
