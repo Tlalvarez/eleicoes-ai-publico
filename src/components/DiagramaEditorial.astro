@@ -1,97 +1,77 @@
 ---
 import IconeFluxo from './IconeFluxo.astro';
 /**
- * O fluxograma editorial: o que entra, quem transforma, o que sai — em estilo
- * infográfico (pedido do Thiago, 15/09/2026), com ícone para cada OBJETO e
- * para cada ATOR. Rigor antes de estilo: cada caixa e cada seta existem no
- * pipeline real da v3 (harness): congela_entradas → fatia_blocos →
- * rotula_blocos → confere_rotulos → compara_tema → varredura_tema → cruza_tema
- * → confere_discordancias → confere_fidelidade → aplica_fidelidade →
- * funde_proprias → tira_espelhos → exporta_site. Mudou o pipeline, muda aqui.
+ * O fluxograma editorial, em linhas que se leem como frase (pedido do Thiago,
+ * 15/09/2026): ATOR + AÇÃO + objeto que ENTRA + "em" + objeto que SAI. Lido na
+ * transversal dá "Candidato registra Programa de governo em PDF público no
+ * TSE"; lido de cima para baixo, a saída de uma linha é a entrada da seguinte.
  *
- * `fluxo` alterna objeto e transformação: o objeto acima de uma faixa é a
- * entrada dela; o objeto abaixo é a saída. Quando duas faixas se seguem, é
- * porque duas conferências agem sobre o mesmo objeto antes de ele mudar.
+ * Rigor antes de estilo: cada linha existe no pipeline real da v3 (harness):
+ * congela_entradas → fatia_blocos → rotula_blocos → confere_rotulos →
+ * compara_tema → varredura_tema → cruza_tema → confere_discordancias →
+ * confere_fidelidade → aplica_fidelidade → funde_proprias → tira_espelhos →
+ * exporta_site. Mudou o pipeline, muda aqui.
  */
-const fluxo = [
+const linhas = [
   {
-    tipo: 'objeto', icone: 'programa', nome: 'Programa de governo',
-    detalhe: 'O documento escrito pela campanha, do tamanho que ela quiser: de 20 a 1.742 páginas.',
+    quem: 'candidato', ator: 'Candidato', icone: 'candidato', acao: 'registra',
+    entrada: { nome: 'Programa de governo', icone: 'programa' },
+    saida: { nome: 'PDF público no site do TSE', icone: 'pdf' },
+    detalhe: 'O programa é escrito pela campanha e entregue ao TSE junto com o pedido de registro da candidatura. É este documento — e nenhum outro — que comparamos.',
   },
   {
-    tipo: 'acao', ator: 'Candidato', quem: 'candidato', icone: 'candidato', acao: 'registra',
-    detalhe: 'Ao pedir o registro da candidatura, o candidato entrega o programa ao TSE. É este documento — e nenhum outro — que comparamos.',
-  },
-  {
-    tipo: 'objeto', icone: 'pdf', nome: 'PDF público no site do TSE',
-    detalhe: 'Um arquivo por candidatura, com o carimbo do TSE.',
-  },
-  {
-    tipo: 'acao', ator: 'Código de extração', quem: 'codigo', icone: 'codigo', acao: 'extrai o texto',
+    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'extrai',
+    entrada: { nome: 'PDF público no site do TSE', icone: 'pdf' },
+    saida: { nome: 'Programa em texto, congelado', icone: 'texto' },
     detalhe: 'O PDF vira texto, página a página, e é congelado: guardamos a impressão digital (sha256) do arquivo e do texto. Tudo o que vem depois aponta para essa versão.',
   },
   {
-    tipo: 'objeto', icone: 'texto', nome: 'Programa em texto, congelado',
-    detalhe: 'O texto inteiro, com o número da página de cada parte.',
+    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'fatia',
+    entrada: { nome: 'Programa em texto, congelado', icone: 'texto' },
+    saida: { nome: 'Trechos numerados', icone: 'trechos' },
+    detalhe: 'O corte segue fronteiras gerais: seção, página, linha em branco, item de lista, fim de frase. Juntando os trechos de volta, sai o texto inteiro — sem sobra nem repetição. O número vira o endereço do trecho, e é por ele que tudo se cita depois.',
   },
   {
-    tipo: 'acao', ator: 'Código', quem: 'codigo', icone: 'codigo', acao: 'fatia em trechos',
-    detalhe: 'O corte segue fronteiras gerais: seção, página, linha em branco, item de lista, fim de frase. Juntando os trechos de volta, sai o texto inteiro — sem sobra nem repetição.',
+    quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'etiqueta',
+    entrada: { nome: 'Trechos numerados', icone: 'trechos' },
+    saida: { nome: 'Trechos com tema', icone: 'trechos-tema' },
+    detalhe: 'O modelo devolve o tema de cada trecho — economia, saúde, segurança… — pelo número, nunca copiando o texto. O código confere: trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
   },
   {
-    tipo: 'objeto', icone: 'trechos', nome: 'Trechos numerados',
-    detalhe: 'Centenas por programa. O número é o endereço do trecho, e é por ele que tudo se cita depois.',
+    quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'compara e redige',
+    entrada: { nome: 'Trechos com tema', icone: 'trechos-tema' },
+    saida: { nome: 'Propostas com posições', icone: 'propostas' },
+    detalhe: 'Entram juntos os trechos daquele tema nos seis programas. Numa leitura só, o modelo escreve cada proposta uma vez, em frase neutra, e diz, para cada candidato, se ele propõe, propõe o contrário ou não cita — apontando os trechos em que se baseou. Duas passadas de repescagem recuperam o que ficou de fora.',
   },
   {
-    tipo: 'acao', ator: 'Modelo de IA', quem: 'modelo', icone: 'modelo', acao: 'etiqueta por tema',
-    detalhe: 'O modelo recebe os trechos numerados e devolve o tema de cada um — economia, saúde, segurança… Devolve número e tema, nunca o texto. O código confere: trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
-  },
-  {
-    tipo: 'objeto', icone: 'trechos-tema', nome: 'Trechos com tema',
-    detalhe: 'Agora dá para juntar, num tema só, o que os seis programas dizem sobre ele.',
-  },
-  {
-    tipo: 'acao', ator: 'Modelo de IA', quem: 'modelo', icone: 'modelo', acao: 'compara e escreve as propostas',
-    entrada: 'Entram juntos os trechos daquele tema nos seis programas',
-    detalhe: 'Numa leitura só, o modelo escreve cada proposta uma vez, em frase neutra, e diz, para cada candidato, se ele propõe, propõe o contrário ou não cita — apontando os trechos em que se baseou. Duas passadas de repescagem recuperam o que ficou de fora.',
-  },
-  {
-    tipo: 'objeto', icone: 'propostas', nome: 'Propostas com posições',
-    detalhe: 'Cada proposta com a lista de quem propõe, quem se opõe e quem não cita, e os trechos de cada um.',
-  },
-  {
-    tipo: 'acao', ator: 'Código', quem: 'codigo', icone: 'codigo', acao: 'confere as citações',
+    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'confere as citações de',
+    entrada: { nome: 'Propostas com posições', icone: 'propostas' },
+    saida: { nome: 'Posições com trecho válido', icone: 'conferidas' },
     detalhe: 'Cada trecho citado tem de existir, ser daquele candidato e estar na entrada da leitura. O que não passa é recusado — o modelo não tem como inventar uma fonte.',
   },
   {
-    tipo: 'acao', ator: 'Modelo às cegas', quem: 'cego', icone: 'cego', acao: 'julga as oposições',
-    entrada: 'Entra cada posição marcada como "propõe o contrário", sem nome de candidato',
-    detalhe: 'Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição. Propor outro caminho para o mesmo fim, não — e essa posição cai para "não cita".',
+    quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga as oposições de',
+    entrada: { nome: 'Posições com trecho válido', icone: 'conferidas' },
+    saida: { nome: 'Oposições conferidas', icone: 'contra' },
+    detalhe: 'Vão ao juiz só as posições marcadas como "propõe o contrário", uma a uma: a proposta e o trecho, sem nome de candidato. Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição. Propor outro caminho para o mesmo fim, não — e essa posição cai para "não cita".',
   },
   {
-    tipo: 'acao', ator: 'Modelo às cegas', quem: 'cego', icone: 'cego', acao: 'julga a sustentação',
-    entrada: 'Entra cada candidato de uma proposta compartilhada, com os trechos dele e sem nome',
-    detalhe: 'Sustenta: fica. Sustenta só em parte: a proposta passa a ter só o núcleo comum, e o detalhe dele vira uma proposta própria. Não sustenta: sai — e só vira "propõe o contrário" se duas leituras cegas confirmarem.',
+    quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga a sustentação de',
+    entrada: { nome: 'Oposições conferidas', icone: 'contra' },
+    saida: { nome: 'Propostas conferidas', icone: 'conferidas' },
+    detalhe: 'Agora vai ao juiz cada candidato de uma proposta que dois ou mais fazem, com os trechos dele e sem nome. Sustenta: fica. Sustenta só em parte: a proposta passa a ter só o núcleo comum, e o detalhe dele vira uma proposta própria. Não sustenta: sai — e só vira "propõe o contrário" se duas leituras cegas confirmarem.',
   },
   {
-    tipo: 'objeto', icone: 'conferidas', nome: 'Propostas conferidas',
-    detalhe: 'Mais as propostas próprias que nasceram de quem sustentava só parte da frase.',
-  },
-  {
-    tipo: 'acao', ator: 'Código', quem: 'codigo', icone: 'codigo', acao: 'funde e tira espelhos',
+    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'funde e tira espelhos de',
+    entrada: { nome: 'Propostas conferidas', icone: 'conferidas' },
+    saida: { nome: 'Comparação da página', icone: 'comparacao' },
     detalhe: 'Propostas próprias quase iguais do mesmo candidato viram uma. Propostas espelhadas — o mesmo assunto escrito duas vezes, uma de cada lado, como "permanecer no BRICS" e "retirar o Brasil do BRICS" — viram uma, depois de uma leitura cega confirmar que decidem a mesma coisa.',
   },
   {
-    tipo: 'objeto', icone: 'comparacao', nome: 'Comparação da página',
-    detalhe: 'A lista final de propostas daquele tema, com as posições e os trechos de origem.',
-  },
-  {
-    tipo: 'acao', ator: 'Pessoa', quem: 'pessoa', icone: 'pessoa', acao: 'revisa e publica',
+    quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa e publica',
+    entrada: { nome: 'Comparação da página', icone: 'comparacao' },
+    saida: { nome: 'Página no site', icone: 'pagina' },
     detalhe: 'Uma pessoa lê a página pronta e decide o que entra. É aqui que ficam as escolhas editoriais que o código não toma sozinho.',
-  },
-  {
-    tipo: 'objeto', icone: 'pagina', nome: 'Página no site', fim: true,
-    detalhe: 'Os cartões que você lê, os trechos que abrem ao toque e a busca daquele tema.',
   },
 ];
 
@@ -106,7 +86,8 @@ const legendas = [
 
 <figure class="fluxo-editorial" aria-labelledby="diagrama-editorial-titulo">
   <figcaption id="diagrama-editorial-titulo">
-    O que entra, quem transforma, o que sai — do programa registrado à página que você lê.
+    Cada linha se lê como uma frase: quem faz, o que faz, o que entra e o que sai.
+    O que sai de uma linha é o que entra na seguinte.
   </figcaption>
 
   <p class="legenda">
@@ -119,26 +100,27 @@ const legendas = [
   </p>
 
   <ol class="cadeia">
-    {fluxo.map((p) => (p.tipo === 'objeto' ? (
-      <li class={`objeto${p.fim ? ' fim' : ''}`}>
-        <span class="figura" aria-hidden="true"><IconeFluxo nome={p.icone} tamanho={30} /></span>
-        <div class="corpo">
-          <span class="tag">Objeto</span>
-          <h3>{p.nome}</h3>
-          <p>{p.detalhe}</p>
-        </div>
+    {linhas.map((l) => (
+      <li class={`passo ${l.quem}`}>
+        <p class="frase">
+          <span class="ator">
+            <span class="avatar" aria-hidden="true"><IconeFluxo nome={l.icone} tamanho={20} /></span>
+            <span class="nome-ator">{l.ator}</span>
+          </span>
+          <span class="acao">{l.acao}</span>
+          <span class="objeto entra">
+            <span class="figura" aria-hidden="true"><IconeFluxo nome={l.entrada.icone} tamanho={18} /></span>
+            <span class="nome-objeto">{l.entrada.nome}</span>
+          </span>
+          <span class="em">em</span>
+          <span class="objeto sai">
+            <span class="figura" aria-hidden="true"><IconeFluxo nome={l.saida.icone} tamanho={18} /></span>
+            <span class="nome-objeto">{l.saida.nome}</span>
+          </span>
+        </p>
+        <p class="detalhe">{l.detalhe}</p>
       </li>
-    ) : (
-      <li class={`transformacao ${p.quem}`}>
-        <span class="trilho" aria-hidden="true"></span>
-        <span class="avatar" aria-hidden="true"><IconeFluxo nome={p.icone} tamanho={22} /></span>
-        <div class="corpo">
-          <p class="cabeca"><span class="ator">{p.ator}</span><span class="acao">{p.acao}</span></p>
-          {p.entrada && <p class="entrada">{p.entrada}</p>}
-          <p>{p.detalhe}</p>
-        </div>
-      </li>
-    )))}
+    ))}
   </ol>
 
   <p class="nota">
@@ -163,58 +145,57 @@ const legendas = [
     background: var(--realce); color: var(--tinta-suave); }
   .fluxo-editorial .chip.candidato, .fluxo-editorial .chip.codigo { border-color: var(--linha-forte); }
   .fluxo-editorial .chip.modelo { border-color: var(--azul-claro); color: var(--azul); }
-  .fluxo-editorial .chip.modelo .bolinha { background: var(--realce); color: var(--azul); }
+  .fluxo-editorial .chip.modelo .bolinha { color: var(--azul); }
   .fluxo-editorial .chip.cego { border-color: var(--atencao); color: var(--atencao); }
   .fluxo-editorial .chip.cego .bolinha { background: rgba(165, 68, 42, .1); color: var(--atencao); }
   .fluxo-editorial .chip.pessoa { border-color: var(--verde); color: var(--verde); }
   .fluxo-editorial .chip.pessoa .bolinha { background: rgba(46, 125, 50, .1); color: var(--verde); }
 
-  .fluxo-editorial .cadeia { list-style: none; margin: 0; padding: 0; }
+  /* a cadeia: uma linha por transformação, numerada, com a frase em cima e o detalhe embaixo */
+  .fluxo-editorial .cadeia { list-style: none; counter-reset: passo; margin: 0; padding: 0;
+    border: 1px solid var(--linha-forte); border-radius: var(--raio); background: var(--cartao); overflow: hidden; }
+  .fluxo-editorial .passo { counter-increment: passo; position: relative; padding: .85rem 1rem .85rem 2.6rem;
+    border-top: 1px solid var(--linha); }
+  .fluxo-editorial .passo:first-child { border-top: 0; }
+  .fluxo-editorial .passo::before { content: counter(passo); position: absolute; left: .8rem; top: .95rem;
+    font-size: .8rem; font-weight: 800; color: var(--tinta-suave); }
+  /* o fio que liga uma linha à seguinte: o que sai de uma entra na outra */
+  .fluxo-editorial .passo::after { content: ''; position: absolute; left: 1.1rem; top: 2.1rem; bottom: -.1rem;
+    border-left: 2px solid var(--linha); }
+  .fluxo-editorial .passo:last-child::after { display: none; }
 
-  /* OBJETO: a caixa do fluxograma — o estado em que a informação está */
-  .fluxo-editorial .objeto { display: grid; grid-template-columns: 3.4rem 1fr; align-items: center; gap: .9rem;
-    background: var(--cartao); border: 1px solid var(--linha-forte); border-left: 4px solid var(--azul);
-    border-radius: var(--raio); padding: .75rem .95rem; box-shadow: var(--sombra-leve); }
-  .fluxo-editorial .objeto.fim { border-left-color: var(--verde); }
-  .fluxo-editorial .objeto .figura { display: grid; place-items: center; width: 3.4rem; height: 3.4rem; border-radius: 12px;
-    background: var(--realce); color: var(--azul); }
-  .fluxo-editorial .objeto.fim .figura { background: rgba(46, 125, 50, .1); color: var(--verde); }
-  .fluxo-editorial .objeto .tag { display: block; font-size: .65rem; font-weight: 800; letter-spacing: .1em;
-    text-transform: uppercase; color: var(--tinta-suave); }
-  .fluxo-editorial .objeto h3 { margin: .05rem 0 .25rem; font-size: 1rem; line-height: 1.3; }
-  .fluxo-editorial .objeto p { margin: 0; font-size: .92rem; color: var(--tinta-suave); }
-
-  /* TRANSFORMAÇÃO: a seta do fluxograma, com o ator dentro dela */
-  .fluxo-editorial .transformacao { position: relative; display: grid; grid-template-columns: 3.4rem 1fr; gap: .9rem;
-    padding: .55rem 0 .55rem 0; align-items: start; }
-  /* o trilho desce do objeto de cima ao de baixo, atrás do avatar, e termina em ponta de seta */
-  .fluxo-editorial .transformacao .trilho { position: absolute; left: 1.65rem; top: -.6rem; bottom: -.6rem;
-    border-left: 2px solid var(--linha-forte); }
-  .fluxo-editorial .transformacao .trilho::after { content: ''; position: absolute; left: -.37rem; bottom: -.15rem;
-    border: .35rem solid transparent; border-top-color: var(--linha-forte); }
-  .fluxo-editorial .transformacao .avatar { position: relative; z-index: 1; display: grid; place-items: center;
-    width: 2.6rem; height: 2.6rem; margin: 0 auto; border-radius: 50%; border: 2px solid var(--linha-forte);
-    background: var(--cartao); color: var(--tinta-suave); }
-  .fluxo-editorial .transformacao.modelo .avatar { border-color: var(--azul-claro); color: var(--azul); }
-  .fluxo-editorial .transformacao.cego .avatar { border-color: var(--atencao); color: var(--atencao); }
-  .fluxo-editorial .transformacao.pessoa .avatar { border-color: var(--verde); color: var(--verde); }
-  .fluxo-editorial .transformacao .corpo { padding: .15rem 0; }
-  .fluxo-editorial .transformacao .cabeca { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem; margin: 0 0 .2rem; }
-  .fluxo-editorial .transformacao .ator { font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+  .fluxo-editorial .frase { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; margin: 0 0 .35rem; }
+  .fluxo-editorial .ator { display: inline-flex; align-items: center; gap: .4rem; }
+  .fluxo-editorial .avatar { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+    border: 2px solid var(--linha-forte); background: var(--cartao); color: var(--tinta-suave); flex: none; }
+  .fluxo-editorial .passo.modelo .avatar { border-color: var(--azul-claro); color: var(--azul); }
+  .fluxo-editorial .passo.cego .avatar { border-color: var(--atencao); color: var(--atencao); }
+  .fluxo-editorial .passo.pessoa .avatar { border-color: var(--verde); color: var(--verde); }
+  .fluxo-editorial .nome-ator { font-size: .78rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
     color: var(--tinta-suave); }
-  .fluxo-editorial .transformacao.modelo .ator { color: var(--azul); }
-  .fluxo-editorial .transformacao.cego .ator { color: var(--atencao); }
-  .fluxo-editorial .transformacao.pessoa .ator { color: var(--verde); }
-  .fluxo-editorial .transformacao .acao { font-weight: 800; font-size: 1rem; color: var(--tinta); }
-  .fluxo-editorial .transformacao .entrada { margin: 0 0 .2rem; font-size: .82rem; font-weight: 600; color: var(--tinta-suave); }
-  .fluxo-editorial .transformacao .corpo p:last-child { margin: 0; font-size: .92rem; }
+  .fluxo-editorial .passo.modelo .nome-ator { color: var(--azul); }
+  .fluxo-editorial .passo.cego .nome-ator { color: var(--atencao); }
+  .fluxo-editorial .passo.pessoa .nome-ator { color: var(--verde); }
+  .fluxo-editorial .acao { font-weight: 800; font-size: 1rem; color: var(--tinta); }
+  .fluxo-editorial .em { font-size: .9rem; color: var(--tinta-suave); }
 
-  .fluxo-editorial .nota { margin: 1.1rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
+  /* os objetos: o que entra e o que sai, sempre com o mesmo ícone em todo o fluxo */
+  .fluxo-editorial .objeto { display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .6rem .3rem .35rem;
+    border-radius: 999px; border: 1px solid var(--linha-forte); background: var(--papel); }
+  .fluxo-editorial .objeto .figura { display: grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%;
+    background: var(--realce); color: var(--azul); flex: none; }
+  .fluxo-editorial .objeto.sai { border-color: var(--azul-claro); background: var(--realce); }
+  .fluxo-editorial .passo:last-child .objeto.sai { border-color: var(--verde); background: rgba(46, 125, 50, .08); }
+  .fluxo-editorial .passo:last-child .objeto.sai .figura { color: var(--verde); }
+  .fluxo-editorial .nome-objeto { font-size: .9rem; font-weight: 600; color: var(--tinta); }
 
-  @media (max-width: 30rem) {
-    .fluxo-editorial .objeto, .fluxo-editorial .transformacao { grid-template-columns: 2.6rem 1fr; gap: .6rem; }
-    .fluxo-editorial .objeto .figura { width: 2.6rem; height: 2.6rem; border-radius: 10px; }
-    .fluxo-editorial .transformacao .trilho { left: 1.25rem; }
-    .fluxo-editorial .transformacao .avatar { width: 2.2rem; height: 2.2rem; }
+  .fluxo-editorial .detalhe { margin: 0; font-size: .9rem; color: var(--tinta-suave); }
+
+  @media (max-width: 34rem) {
+    .fluxo-editorial .passo { padding: .8rem .75rem .8rem 2.1rem; }
+    .fluxo-editorial .passo::before { left: .55rem; }
+    .fluxo-editorial .passo::after { left: .85rem; }
+    .fluxo-editorial .avatar { width: 1.7rem; height: 1.7rem; }
+    .fluxo-editorial .nome-objeto { font-size: .85rem; }
   }
 </style>
