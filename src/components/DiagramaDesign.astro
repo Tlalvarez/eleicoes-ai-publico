@@ -1,6 +1,6 @@
 ---
 /**
- * O diagrama de design: como a matriz é lida na tela. É uma maquete real das
+ * O diagrama de design: como a comparação é lida na tela. É uma maquete real das
  * regras do layout (`src/lib/comparacao.mjs` + `Comparacao.astro`), com
  * candidatos fictícios A a D — nenhuma proposta aqui é de gente de verdade.
  *
@@ -25,10 +25,10 @@ const notas = [
 
 <figure class="maquete" aria-labelledby="diagrama-design-titulo">
   <figcaption id="diagrama-design-titulo">
-    Como ler a matriz: uma página de exemplo, com candidatos fictícios.
+    Uma página de exemplo, com candidatos fictícios.
   </figcaption>
 
-  <div class="rolagem" tabindex="0" role="group" aria-label="Maquete da matriz de comparação">
+  <div class="rolagem" tabindex="0" role="group" aria-label="Exemplo de uma página de comparação">
     <div class="grade">
       <div class="cabecalho">
         {colunas.map((c, i) => (
@@ -87,8 +87,8 @@ const notas = [
 
   <p class="nota">
     Tocar em qualquer cartão abre os trechos do programa que sustentam aquela proposta,
-    com a página e o link do programa no TSE. É por isso que a matriz não precisa ser
-    acreditada: ela se abre na fonte.
+    com a página e o link do programa no TSE. É por isso que a comparação não
+    precisa ser acreditada: ela se abre na fonte.
   </p>
 </figure>
 

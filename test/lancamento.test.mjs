@@ -104,7 +104,7 @@ test('lançamento: Quem somos nomeia o responsável; Fale conosco tem o canal de
   assert.match(contato, /issues/);
   assert.match(await le('pages/privacidade.astro'), /EMAIL_CONTATO/);
   // nada de chat na superfície pública
-  for (const f of ['pages/sobre.astro', 'pages/privacidade.astro', 'pages/contato.astro', 'content/metodologia.md']) {
+  for (const f of ['pages/sobre.astro', 'pages/privacidade.astro', 'pages/contato.astro', 'pages/metodologia.astro']) {
     const t = await le(f);
     assert.doesNotMatch(t, /\/resposta\//, `${f} ainda cita a resposta guardada`);
     assert.doesNotMatch(t, /\bchat\b/i, `${f} ainda fala em chat como produto`);
@@ -165,13 +165,19 @@ test('og:url é o endereço público, sem .html (é o destino que o WhatsApp usa
   assert.match(base, /og:url" content=\{new URL\(caminhoPublico/);
 });
 
-test('metodologia diz como os programas são lidos e comparados, com o histórico do código', async () => {
-  const m = await readFile(new URL('../src/content/metodologia.md', import.meta.url), 'utf8');
-  assert.match(m, /## Como este site foi feito/);
+test('metodologia é o guia: o que o site faz, como ler, como é feito, quem entra e onde erra', async () => {
+  const m = await le('pages/metodologia.astro');
+  // a página é o guia de quem não conhece o site: a ordem das seções é a de quem usa
+  for (const id of ['o-que-e', 'como-usar', 'design', 'editorial', 'quem-entra', 'limites', 'quem-faz']) {
+    assert.match(m, new RegExp(`id="${id}"`), `falta a seção ${id}`);
+  }
+  // os dois diagramas são o enquadramento (15/09): a página não os descreve em prosa, ela os mostra
+  assert.match(m, /<DiagramaDesign \/>/);
+  assert.match(m, /<DiagramaEditorial \/>/);
   assert.match(m, /commits\/main/);
   assert.match(m, /TSE/);
   assert.match(m, /propõe o contrário/);
-  assert.doesNotMatch(m, /\]\(\/acervo\)/, 'o acervo saiu do build: link morto');
+  assert.doesNotMatch(m, /href="\/acervo"/, 'o acervo saiu do build: link morto');
 });
 
 test('a página de comparação: rótulo de IA, trecho do programa a um toque, sem cor por candidato', async () => {

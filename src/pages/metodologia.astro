@@ -2,29 +2,104 @@
 import Base from '../layouts/Base.astro';
 import DiagramaEditorial from '../components/DiagramaEditorial.astro';
 import DiagramaDesign from '../components/DiagramaDesign.astro';
-const mods = import.meta.glob('../content/metodologia.md', { eager: true });
-const doc = Object.values(mods)[0];
-const { Content } = doc;
+/**
+ * A metodologia é o guia do site: quem chega aqui pode não saber o que o
+ * eleicoes.ai faz. A ordem é a de quem usa — o que é, onde achar, como ler,
+ * como é feito, quem entra, onde erra, quem responde — e o texto é para leigo,
+ * sem jargão nosso ("matriz", "bloco", "rótulo" não aparecem).
+ *
+ * Os dois diagramas são o enquadramento do trabalho (decisão do Thiago,
+ * 15/09/2026): mudou o pipeline ou o layout, o diagrama muda junto.
+ */
+const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
+const historico = `${repo}/commits/main`;
 ---
-<Base title="Metodologia">
+<Base title="Metodologia"
+  description="O guia do eleicoes.ai: o que o site mostra, como ler a comparação de programas, como ela é feita e onde ela pode errar.">
   <div class="prose">
-    <Content />
-
-    <h2 id="editorial">Editorial: como a matriz é construída</h2>
-    <p>
-      Chamamos de editorial tudo o que decide o que está escrito na comparação: qual proposta existe,
-      com que palavras, e qual candidato aparece em cada cartão. O caminho abaixo é o mesmo para
-      todos os programas, e cada etapa diz quem a faz.
+    <h1>Metodologia</h1>
+    <p class="lead">
+      Esta página é o guia do eleicoes.ai. Ela explica o que você encontra no site, como ler a
+      comparação de propostas, como ela é feita e onde ela pode errar.
     </p>
-    <DiagramaEditorial />
 
-    <h2 id="design">Design: como a matriz é lida</h2>
+    <h2 id="o-que-e">O que é o eleicoes.ai</h2>
     <p>
-      A tela também é uma escolha editorial: a forma do cartão diz quem propõe o quê, e um desenho
-      errado faz o leitor atribuir a um candidato o que ele não escreveu. Estas são as regras de
-      leitura da comparação.
+      Todo candidato a presidente ou a governador precisa registrar um programa de governo no TSE
+      quando pede o registro da candidatura. É um documento público, que quase ninguém lê: são
+      dezenas ou centenas de páginas por candidato.
+    </p>
+    <ul>
+      <li>O eleicoes.ai lê esses programas e coloca as propostas lado a lado, tema a tema.</li>
+      <li>Você vê onde os candidatos propõem a mesma coisa, onde propõem o contrário e onde um deles simplesmente não fala do assunto.</li>
+      <li>Cada proposta leva ao trecho do programa de onde ela saiu, com a página e o link do documento no TSE.</li>
+      <li>Nada vem de entrevista, rede social, debate ou notícia. Só o programa registrado.</li>
+    </ul>
+
+    <h2 id="como-usar">Como achar o que você quer</h2>
+    <ol>
+      <li><strong>Presidente</strong>: na <a href="/">página inicial</a>, escolha um tema — economia, saúde, segurança, educação e outros 11.</li>
+      <li><strong>Governador</strong>: em <a href="/governador">Governador</a>, escolha o seu estado e depois o tema.</li>
+      <li><strong>Buscar um assunto</strong>: a caixa de busca dentro de cada comparação procura pelo que você digitar, inclusive por palavras parecidas com as do programa.</li>
+      <li><strong>Comparar menos gente</strong>: dá para desmarcar candidatos e deixar só os que você quer comparar.</li>
+      <li><strong>Conferir a fonte</strong>: toque em qualquer proposta para abrir os trechos do programa que a sustentam.</li>
+    </ol>
+
+    <h2 id="design">Como ler a comparação</h2>
+    <p>
+      A comparação é uma tabela: uma coluna por candidato, e cada proposta é um cartão sobre as
+      colunas de quem a faz. O desenho do cartão é o que diz quem propõe o quê — inclusive o rótulo
+      "propõe o contrário", que marca quem rejeita aquela proposta —, então vale entender as regras
+      antes de tirar conclusão.
     </p>
     <DiagramaDesign />
+
+    <h2 id="editorial">Como a comparação é feita</h2>
+    <p>
+      Chamamos de editorial tudo o que decide o que está escrito: qual proposta existe, com que
+      palavras e qual candidato aparece em cada cartão. O caminho é o mesmo para todos os
+      programas, e cada etapa diz quem faz — o código, o modelo de inteligência artificial, uma
+      leitura de conferência às cegas ou uma pessoa.
+    </p>
+    <DiagramaEditorial />
+    <p>
+      "Às cegas" quer dizer que, na hora de conferir, o modelo recebe a proposta e o trecho sem
+      saber de qual candidato é. É assim que a mesma régua vale para todo mundo.
+    </p>
+
+    <h2 id="quem-entra">Quem entra na comparação</h2>
+    <ul>
+      <li>Os seis candidatos a presidente, e os seis candidatos a governador de cada estado, mais bem colocados na pesquisa de intenção de voto mais recente quando a comparação foi gerada, desde que tenham pelo menos 1% das intenções de voto.</li>
+      <li>Presidente: pesquisa Datafolha de 8 a 11 de setembro de 2026. Governador: a pesquisa mais recente de cada estado, com campo entre 2 e 12 de setembro de 2026.</li>
+      <li>Não entra quem teve o registro indeferido pelo TSE, nem quem não registrou programa de governo.</li>
+      <li>Uma exceção: o programa de Omar Aziz (governador do Amazonas) tem 1.742 páginas em 9 volumes, quase tudo diagnóstico do estado. Dele, só os trechos com propostas entram.</li>
+      <li>Em cada comparação, os candidatos comparados aparecem com foto logo abaixo da caixa de busca, e dizemos quem ficou de fora e por quê.</li>
+    </ul>
+
+    <h2 id="o-que-nao-fazemos">O que não fazemos</h2>
+    <ul>
+      <li>Não recomendamos voto, não damos nota e não ordenamos candidatos.</li>
+      <li>Não dizemos se uma proposta é boa, possível ou verdadeira. Dizemos que ela está escrita ali.</li>
+      <li>Não atribuímos a um candidato nada que não esteja no programa dele.</li>
+      <li>Não usamos nenhuma fonte além dos programas registrados.</li>
+    </ul>
+
+    <h2 id="limites">Onde isso pode errar</h2>
+    <ul>
+      <li>Um modelo pode errar ao resumir uma proposta ou ao juntar duas parecidas. Por isso o trecho do programa está sempre a um toque: <strong>o trecho vale mais que o resumo</strong>.</li>
+      <li>Dividir um programa em propostas é uma escolha. Outra leitura poderia separar ou juntar de outro jeito; o que não muda é o trecho de onde cada proposta saiu.</li>
+      <li>Os programas têm tamanhos muito diferentes. Mais propostas num tema quer dizer que o candidato escreveu mais sobre ele, não que escreveu melhor.</li>
+      <li>Coluna em branco quer dizer que o programa não trata daquela proposta. Não quer dizer que o candidato seja contra.</li>
+      <li>Na comparação de governador, ficam de fora os trechos sobre assuntos que não são atribuição do governo estadual, como política externa e sistema judiciário.</li>
+      <li>Achou um erro? <a href="/contato">Fale conosco</a> — a correção entra no histórico público.</li>
+    </ul>
+
+    <h2 id="quem-faz">Quem faz, e como conferir</h2>
+    <ul>
+      <li>O site é feito e operado por uma pessoa, com agentes de inteligência artificial fazendo a leitura, a classificação e a comparação dos programas. Quem responde pelo site está em <a href="/sobre">Quem somos</a>.</li>
+      <li>As instruções dadas ao modelo são gerais: não citam tema nem candidato, para a mesma régua valer para todos.</li>
+      <li>O <a href={repo} rel="noopener noreferrer">código é público</a>, e o <a href={historico} rel="noopener noreferrer">histórico de mudanças</a> mostra o que mudou, quando e por quê.</li>
+    </ul>
 
     <p class="historico">
       Histórico: antes de 2026, testamos a leitura de programas às cegas em registros de 2002 a 2022;
