@@ -184,9 +184,8 @@ const legendas = [
     border-radius: 999px; border: 1px solid var(--linha-forte); background: var(--papel); }
   .fluxo-editorial .objeto .figura { display: grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%;
     background: var(--realce); color: var(--azul); flex: none; }
-  .fluxo-editorial .objeto.sai { border-color: var(--azul-claro); background: var(--realce); }
-  .fluxo-editorial .passo:last-child .objeto.sai { border-color: var(--verde); background: rgba(46, 125, 50, .08); }
-  .fluxo-editorial .passo:last-child .objeto.sai .figura { color: var(--verde); }
+  /* o MESMO objeto tem sempre o mesmo desenho, entre ou saia (decisão do Thiago, 15/09): cor
+     diferente por posição fazia "Programa em texto" parecer duas coisas em duas linhas seguidas */
   .fluxo-editorial .nome-objeto { font-size: .9rem; font-weight: 600; color: var(--tinta); }
 
   .fluxo-editorial .detalhe { margin: 0; font-size: .9rem; color: var(--tinta-suave); }
