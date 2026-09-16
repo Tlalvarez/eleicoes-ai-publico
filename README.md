@@ -107,7 +107,12 @@ npm test               # o gate completo: suíte + medição + build + verifica�
 - A medição de audiência (PostHog) roda só no domínio publicado, sem cookies e sem perfil de
   pessoa. A Cloudflare injeta na borda o script do Web Analytics dela (segunda medição, sem
   cookies), declarado em `/privacidade` e autorizado na CSP.
-- Deploy: `npm run deploy:pages` (Cloudflare Pages, upload direto do `dist`; roda o gate antes).
+- Deploy: `npm run deploy:pages` (Cloudflare Pages, upload direto do `dist`). **Ele NÃO roda
+  portão nenhum**: rode você mesmo, nesta ordem, antes de publicar — `python3
+  v3/audita_metodologia.py --escopos <ufs>` (sem FALHA), `python3 v3/confere_pesquisas.py
+  --dados <cadastro do TSE>` (toda pesquisa com registro) e `npm test`. A publicação sai
+  desta máquina com `CLOUDFLARE_API_TOKEN="$(cat ~/Keys/cloudflare-pages.token)"`: o login
+  padrão do wrangler aqui é de outra conta e o deploy morre em 403 antes de subir arquivo.
 
 ### Portões de qualidade
 
