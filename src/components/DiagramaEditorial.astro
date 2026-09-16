@@ -1,0 +1,142 @@
+---
+/**
+ * O diagrama editorial: como a matriz de comparação é construída, do PDF do
+ * TSE ao cartão publicado. Cada etapa diz QUEM faz — código, modelo ou pessoa —
+ * porque é isso que separa o que é regra do que é leitura.
+ *
+ * Espelha o pipeline real da v3 (harness): congela_entradas → fatia_blocos →
+ * rotula_blocos → confere_rotulos → compara_tema → varredura_tema → cruza_tema
+ * → confere_discordancias → confere_fidelidade → aplica_fidelidade →
+ * funde_proprias → tira_espelhos → exporta_site. Mudou o pipeline, muda aqui.
+ */
+const etapas = [
+  {
+    n: 1,
+    titulo: 'Programa registrado no TSE',
+    quem: 'codigo',
+    texto: 'O PDF vem do site do TSE e é congelado: guardamos a impressão digital (sha256) do arquivo e do texto extraído. Toda posição da comparação aponta para esse texto, e não para uma cópia posterior.',
+  },
+  {
+    n: 2,
+    titulo: 'Texto dividido em blocos',
+    quem: 'codigo',
+    texto: 'O programa vira texto página a página e é fatiado em blocos por fronteiras gerais: seção, página, linha em branco, item de lista, fim de frase. Os blocos remontam o texto inteiro, sem sobra nem repetição.',
+  },
+  {
+    n: 3,
+    titulo: 'Cada bloco recebe um tema',
+    quem: 'modelo',
+    texto: 'O modelo recebe os blocos numerados e devolve o tema de cada um — nunca o texto de volta. O código confere: um tema válido por bloco, senão o bloco fica marcado como perdido. Perdido acima de 5% reprova a rodada.',
+  },
+  {
+    n: 4,
+    titulo: 'As propostas de uma página, lado a lado',
+    quem: 'modelo',
+    texto: 'Por página de tema, o modelo lê os blocos de todos os candidatos juntos e escreve cada proposta uma vez, em frase neutra, dizendo quem propõe, quem propõe o contrário e quem não cita. Toda posição cita blocos, e o código recusa bloco que não existe, não é do candidato ou não estava na entrada.',
+  },
+  {
+    n: 5,
+    titulo: 'Duas passadas de repescagem',
+    quem: 'modelo',
+    texto: 'Uma passada varre os blocos de proposta que nenhuma proposta citou, para o que ficou de fora virar proposta. Outra leva as propostas novas de cada candidato de volta aos programas dos outros, para ninguém ficar de fora por ordem de leitura.',
+  },
+  {
+    n: 6,
+    titulo: 'Juiz cego: "propõe o contrário" é oposição explícita',
+    quem: 'juiz',
+    texto: 'Cada célula marcada como contrária vai a uma leitura cega — a proposta e o trecho, sem nome de candidato. Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição. Propor outro caminho para o mesmo fim não é: a célula cai para "não cita".',
+  },
+  {
+    n: 7,
+    titulo: 'Juiz cego: o trecho sustenta mesmo a proposta?',
+    quem: 'juiz',
+    texto: 'Num cartão compartilhado, cada candidato é lido de novo às cegas contra a frase escrita. Sustenta: fica. Sustenta só em parte: o cartão passa a ter só o núcleo comum, e o detalhe daquele candidato vira uma proposta própria logo abaixo. Não sustenta: sai do cartão — e só vira "propõe o contrário" se duas leituras cegas confirmarem a oposição.',
+  },
+  {
+    n: 8,
+    titulo: 'Limpeza por regra, sem modelo',
+    quem: 'codigo',
+    texto: 'O código junta as propostas próprias quase repetidas do mesmo candidato na mesma página (fica a mais completa, com a união dos trechos) e tira propostas espelhadas — o mesmo assunto escrito duas vezes, uma de cada lado, como "permanecer no BRICS" e "retirar o Brasil do BRICS". A espelhada só sai depois de uma leitura cega confirmar que as duas decidem a mesma coisa.',
+  },
+  {
+    n: 9,
+    titulo: 'Publicação',
+    quem: 'pessoa',
+    texto: 'A matriz é exportada para o site com os trechos de origem e o índice de busca. Antes de publicar, uma pessoa lê a página e decide o que entra: é aqui que ficam as escolhas editoriais que o código não toma sozinho.',
+  },
+];
+
+const legendas = {
+  codigo: 'Código',
+  modelo: 'Modelo lê o programa',
+  juiz: 'Leitura cega de conferência',
+  pessoa: 'Pessoa decide',
+};
+---
+
+<figure class="diagrama" aria-labelledby="diagrama-editorial-titulo">
+  <figcaption id="diagrama-editorial-titulo">
+    Do PDF ao cartão: as nove etapas, e quem faz cada uma.
+  </figcaption>
+  <p class="legenda">
+    {Object.entries(legendas).map(([k, v]) => (
+      <span class={`chip ${k}`}>{v}</span>
+    ))}
+  </p>
+  <ol class="fluxo">
+    {etapas.map((e) => (
+      <li class={`etapa ${e.quem}`}>
+        <span class="n" aria-hidden="true">{e.n}</span>
+        <div class="corpo">
+          <h3>{e.titulo}</h3>
+          <p class="quem">{legendas[e.quem]}</p>
+          <p>{e.texto}</p>
+        </div>
+      </li>
+    ))}
+  </ol>
+  <p class="nota">
+    O modelo é sempre o mesmo (Claude Opus 5, da Anthropic), e as instruções dadas a ele
+    são gerais: não citam tema, caso nem candidato. As leituras de conferência são cegas —
+    quem julga não sabe de quem é o trecho.
+  </p>
+</figure>
+
+<style>
+  .diagrama { margin: 1.5rem 0 2rem; padding: 0; }
+  .diagrama figcaption { font-weight: 700; color: var(--tinta); margin-bottom: .6rem; }
+  .diagrama .legenda { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1rem; }
+  .diagrama .chip { font-size: .75rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+    padding: .25rem .55rem; border-radius: 999px; border: 1px solid var(--linha); color: var(--tinta-suave); background: var(--cartao); }
+  .diagrama .chip.codigo { border-color: var(--linha-forte); }
+  .diagrama .chip.modelo { border-color: var(--azul-claro); color: var(--azul); }
+  .diagrama .chip.juiz { border-color: var(--atencao); color: var(--atencao); }
+  .diagrama .chip.pessoa { border-color: var(--verde); color: var(--verde); }
+
+  .diagrama .fluxo { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0; }
+  .diagrama .etapa { position: relative; display: grid; grid-template-columns: 2.2rem 1fr; gap: .8rem;
+    padding: 0 0 1.1rem 0; }
+  /* a linha que liga as etapas passa atrás dos números */
+  .diagrama .etapa::before { content: ''; position: absolute; left: 1.1rem; top: 2.2rem; bottom: 0;
+    border-left: 2px solid var(--linha-forte); }
+  .diagrama .etapa:last-child::before { display: none; }
+  .diagrama .n { grid-column: 1; width: 2.2rem; height: 2.2rem; border-radius: 50%; display: grid; place-items: center;
+    font-weight: 800; font-size: .95rem; color: var(--branco); background: var(--azul); position: relative; z-index: 1; }
+  .diagrama .etapa.modelo .n { background: var(--azul-claro); }
+  .diagrama .etapa.juiz .n { background: var(--atencao); }
+  .diagrama .etapa.pessoa .n { background: var(--verde); }
+  .diagrama .corpo { grid-column: 2; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio);
+    padding: .8rem 1rem; }
+  .diagrama .etapa.juiz .corpo { border-color: var(--linha-atencao); }
+  .diagrama .corpo h3 { margin: 0; font-size: 1rem; line-height: 1.3; }
+  .diagrama .corpo .quem { margin: .15rem 0 .5rem; font-size: .72rem; font-weight: 800; letter-spacing: .06em;
+    text-transform: uppercase; color: var(--tinta-suave); }
+  .diagrama .corpo p:last-child { margin: 0; }
+  .diagrama .nota { margin: .4rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
+
+  @media (max-width: 30rem) {
+    .diagrama .etapa { grid-template-columns: 1.8rem 1fr; gap: .6rem; }
+    .diagrama .etapa::before { left: .9rem; top: 1.8rem; }
+    .diagrama .n { width: 1.8rem; height: 1.8rem; font-size: .85rem; }
+  }
+</style>

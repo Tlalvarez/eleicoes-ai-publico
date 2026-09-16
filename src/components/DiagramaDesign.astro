@@ -1,0 +1,140 @@
+---
+/**
+ * O diagrama de design: como a matriz é lida na tela. É uma maquete real das
+ * regras do layout (`src/lib/comparacao.mjs` + `Comparacao.astro`), com
+ * candidatos fictícios A a D — nenhuma proposta aqui é de gente de verdade.
+ *
+ * Regras espelhadas: coluna por candidato em ordem alfabética; página por
+ * assunto; cartão escrito uma vez, esticado de quem propõe; lacuna tracejada
+ * com "Concorda"; "propõe o contrário" em vermelho; proposta própria logo
+ * abaixo do cartão de origem; exclusivas em pilha por coluna; coluna sem
+ * proposta no assunto fica em branco.
+ */
+const colunas = ['Candidata A', 'Candidato B', 'Candidata C', 'Candidato D'];
+
+const notas = [
+  { m: '1', texto: 'Uma coluna por candidato, em ordem alfabética do nome. A ordem nunca muda de página para página, e nenhuma cor identifica candidato ou partido.' },
+  { m: '2', texto: 'A página é dividida por assunto. Dentro do assunto vêm primeiro as propostas que mais de um candidato faz, e depois as que são de um só.' },
+  { m: '3', texto: 'A proposta é escrita uma vez e o cartão se estende sobre as colunas de quem a propõe. O texto fica sob a primeira coluna de quem propõe.' },
+  { m: '4', texto: 'Quando quem propõe não está lado a lado, o cartão continua sendo um só: a coluna do meio vira linha tracejada e o outro trecho diz apenas "Concorda", sem repetir o texto.' },
+  { m: '5', texto: 'Quem propõe o contrário aparece no mesmo cartão, com o topo vermelho e o rótulo "propõe o contrário". Não quer dizer que ele fale de outra coisa: quer dizer que o programa dele rejeita aquela proposta.' },
+  { m: '6', texto: 'Quando um candidato sustenta só parte da proposta, ele fica no cartão comum e ganha uma proposta própria com o detalhe dele, logo abaixo do cartão de onde ela saiu.' },
+  { m: '7', texto: 'As propostas que só um candidato faz ficam empilhadas na coluna dele. Coluna em branco significa que o programa daquele candidato não trata do assunto — não que ele seja contra.' },
+];
+---
+
+<figure class="maquete" aria-labelledby="diagrama-design-titulo">
+  <figcaption id="diagrama-design-titulo">
+    Como ler a matriz: uma página de exemplo, com candidatos fictícios.
+  </figcaption>
+
+  <div class="rolagem" tabindex="0" role="group" aria-label="Maquete da matriz de comparação">
+    <div class="grade">
+      <div class="cabecalho">
+        {colunas.map((c, i) => (
+          <div class="col">
+            <span class="foto" aria-hidden="true"></span>
+            <span class="nome">{c}</span>
+            {i === 0 && <span class="marca">1</span>}
+          </div>
+        ))}
+      </div>
+
+      <h4 class="assunto">Assunto do tema <span class="marca">2</span></h4>
+
+      <div class="linha">
+        <div class="cartao" style="grid-column: 1 / span 2">
+          <span class="texto">Proposta que dois candidatos fazem, escrita uma vez só</span>
+          <span class="marca">3</span>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="cartao lacuna" style="grid-column: 1 / span 4">
+          <span class="seg s1"><span class="texto">Proposta com quem a faz separado por uma coluna</span></span>
+          <span class="seg vazio"></span>
+          <span class="seg s3"><span class="rotulo">Concorda</span><span class="marca">4</span></span>
+          <span class="seg contra"><span class="rotulo vermelho">propõe o contrário</span><span class="marca">5</span></span>
+        </div>
+      </div>
+
+      <div class="linha">
+        <div class="cartao propria" style="grid-column: 3 / span 1">
+          <span class="texto">O detalhe que só a Candidata C escreveu</span>
+          <span class="marca">6</span>
+        </div>
+      </div>
+
+      <div class="linha pilhas">
+        <div class="pilha">
+          <div class="cartao"><span class="texto">Proposta só da Candidata A</span></div>
+          <div class="cartao"><span class="texto">Outra proposta só dela</span><span class="marca">7</span></div>
+        </div>
+        <div class="pilha vazia"></div>
+        <div class="pilha">
+          <div class="cartao"><span class="texto">Proposta só da Candidata C</span></div>
+        </div>
+        <div class="pilha vazia"></div>
+      </div>
+    </div>
+  </div>
+
+  <ol class="notas">
+    {notas.map((n) => (
+      <li><span class="marca fixa">{n.m}</span>{n.texto}</li>
+    ))}
+  </ol>
+
+  <p class="nota">
+    Tocar em qualquer cartão abre os trechos do programa que sustentam aquela proposta,
+    com a página e o link do programa no TSE. É por isso que a matriz não precisa ser
+    acreditada: ela se abre na fonte.
+  </p>
+</figure>
+
+<style>
+  .maquete { margin: 1.5rem 0 2rem; padding: 0; }
+  .maquete figcaption { font-weight: 700; color: var(--tinta); margin-bottom: .6rem; }
+  .maquete .rolagem { overflow-x: auto; border: 1px solid var(--linha); border-radius: var(--raio);
+    background: var(--papel); padding: .6rem; }
+  .maquete .rolagem:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+  .maquete .grade { min-width: 32rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+
+  .maquete .cabecalho { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem;
+    background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); padding: .5rem; }
+  .maquete .cabecalho .col { display: flex; align-items: center; gap: .4rem; font-size: .8rem; font-weight: 700; color: var(--azul); }
+  .maquete .foto { width: 1.4rem; height: 1.4rem; border-radius: 4px; background: var(--linha); flex: none; }
+
+  .maquete .assunto { grid-column: 1 / -1; margin: .7rem 0 0; font-size: .72rem; font-weight: 800; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--tinta-suave); }
+  .maquete .linha { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, 1fr); gap: .5rem; }
+
+  .maquete .cartao { position: relative; background: var(--papel); border: 1px solid var(--linha); border-top: 4px solid var(--azul);
+    border-radius: 8px; padding: .5rem .6rem; font-size: .8rem; line-height: 1.35; min-height: 2.4rem; }
+  .maquete .cartao.propria { border-top-style: solid; }
+  .maquete .cartao.lacuna { background: none; border: 0; border-radius: 0; padding: 0; display: grid;
+    grid-template-columns: repeat(4, 1fr); gap: 0; }
+  .maquete .seg { position: relative; padding: .5rem .6rem; font-size: .8rem; line-height: 1.35; min-height: 3.2rem;
+    background: var(--papel); border: 1px solid var(--linha); border-left-width: 0; border-right-width: 0; border-top: 4px solid var(--azul); }
+  .maquete .seg.s1 { border-left-width: 1px; border-radius: 8px 0 0 8px; }
+  .maquete .seg.s3 { border-left-width: 1px; border-radius: 8px 0 0 8px; }
+  .maquete .seg.contra { border-right-width: 1px; border-radius: 0 8px 8px 0; border-top-color: var(--atencao);
+    background: rgba(165, 68, 42, .07); }
+  .maquete .seg.vazio { background: none; border: 0; }
+  .maquete .seg.vazio::before { content: ''; position: absolute; left: 0; right: 0; top: 1.3rem;
+    border-top: 2px dashed var(--tinta-suave); }
+  .maquete .rotulo { font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--azul); }
+  .maquete .rotulo.vermelho { color: var(--atencao); }
+
+  .maquete .pilhas .pilha { display: flex; flex-direction: column; gap: .4rem; }
+  .maquete .pilha.vazia { position: relative; min-height: 2.4rem; }
+
+  .maquete .marca { display: inline-grid; place-items: center; width: 1.15rem; height: 1.15rem; border-radius: 50%;
+    background: var(--azul); color: var(--branco); font-size: .68rem; font-weight: 800; margin-left: .35rem; }
+  .maquete .seg .marca, .maquete .cartao > .marca, .maquete .pilha.vazia .marca { position: absolute; right: .3rem; bottom: .3rem; margin: 0; }
+  .maquete .marca.fixa { position: static; margin: 0 .4rem 0 0; }
+
+  .maquete .notas { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }
+  .maquete .notas li { display: flex; align-items: flex-start; font-size: .95rem; }
+  .maquete .nota { margin: .8rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
+</style>

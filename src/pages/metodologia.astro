@@ -1,5 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
+import DiagramaEditorial from '../components/DiagramaEditorial.astro';
+import DiagramaDesign from '../components/DiagramaDesign.astro';
 const mods = import.meta.glob('../content/metodologia.md', { eager: true });
 const doc = Object.values(mods)[0];
 const { Content } = doc;
@@ -7,6 +9,23 @@ const { Content } = doc;
 <Base title="Metodologia">
   <div class="prose">
     <Content />
+
+    <h2 id="editorial">Editorial: como a matriz é construída</h2>
+    <p>
+      Chamamos de editorial tudo o que decide o que está escrito na comparação: qual proposta existe,
+      com que palavras, e qual candidato aparece em cada cartão. O caminho abaixo é o mesmo para
+      todos os programas, e cada etapa diz quem a faz.
+    </p>
+    <DiagramaEditorial />
+
+    <h2 id="design">Design: como a matriz é lida</h2>
+    <p>
+      A tela também é uma escolha editorial: a forma do cartão diz quem propõe o quê, e um desenho
+      errado faz o leitor atribuir a um candidato o que ele não escreveu. Estas são as regras de
+      leitura da comparação.
+    </p>
+    <DiagramaDesign />
+
     <p class="historico">
       Histórico: antes de 2026, testamos a leitura de programas às cegas em registros de 2002 a 2022;
       o <a href="/verificacao">dossiê de verificação</a> guarda esses testes e as correções que vieram deles.
