@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-am.json",
   "gerado_em": "2026-09-14T23:35:29Z",
-  "exportado_em": "2026-09-15T02:14:01Z"
+  "exportado_em": "2026-09-16T21:44:59Z"
  },
  "candidatos": [
   {
@@ -68,21 +68,12 @@
    "id": "p1",
    "subtema": "Ensino médio e educação profissional",
    "proposta": "Ampliar a oferta gratuita de cursos técnicos e profissionalizantes alinhados às vocações econômicas regionais e às demandas do mercado de trabalho",
-   "n_concorda": 5,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
      "blocos": [
       7
-     ],
-     "nota": ""
-    },
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      439,
-      441,
-      442
      ],
      "nota": ""
     },
@@ -92,13 +83,6 @@
       202
      ],
      "nota": "evita cursos sem infraestrutura ou perspectiva de trabalho"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      591
-     ],
-     "nota": ""
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -138,14 +122,20 @@
      "blocos": [
       28722
      ],
-     "nota": "modelo dual com meta inicial de 46.250 alunos"
+     "nota": "modelo dual com meta inicial de 46.250 alunos",
+     "metas": [
+      {
+       "rotulo": "alunos no EM integrado",
+       "valor": "46.250 alunos no primeiro ano"
+      }
+     ]
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Ensino médio e educação profissional",
-   "proposta": "Firmar parcerias com CETAM, Sistema S, IFAM, universidades e setor produtivo para a formação técnica",
+   "proposta": "Firmar parcerias com instituições de ensino e o setor produtivo.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -185,15 +175,8 @@
    "id": "p4",
    "subtema": "Ensino médio e educação profissional",
    "proposta": "Ofertar formação técnica em formato modular, itinerante ou híbrido para alcançar o interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      444
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -277,7 +260,7 @@
   {
    "id": "p8",
    "subtema": "Ensino médio e educação profissional",
-   "proposta": "Criar programa de recomposição e recuperação das aprendizagens, com atenção às etapas de transição",
+   "proposta": "Criar programa de recomposição e recuperação das aprendizagens.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -380,7 +363,13 @@
       30169,
       30179
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "centros-piloto",
+       "valor": "1 a 2 centros-piloto, estratégia decenal"
+      }
+     ]
     }
    }
   },
@@ -409,7 +398,7 @@
   {
    "id": "p14",
    "subtema": "Professores e gestão escolar",
-   "proposta": "Realizar concursos públicos para a rede estadual, reduzindo vínculos precários",
+   "proposta": "Realizar concursos públicos para a rede estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -535,7 +524,7 @@
   {
    "id": "p19",
    "subtema": "Professores e gestão escolar",
-   "proposta": "Oferecer formação continuada presencial na própria escola, vinculada às lacunas de aprendizagem e com mentoria posterior, em parceria com UFAM e UEA",
+   "proposta": "Oferecer formação continuada aos professores em parceria com universidades públicas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
@@ -563,7 +552,7 @@
   {
    "id": "p20",
    "subtema": "Professores e gestão escolar",
-   "proposta": "Assegurar a formação continuada dentro do horário de trabalho, com tempo protegido",
+   "proposta": "Assegurar a formação continuada dos docentes com tempo protegido.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -693,7 +682,13 @@
       28766,
       28968
      ],
-     "nota": "dimensionamento semestral e meta de reposição em até 15 dias úteis"
+     "nota": "dimensionamento semestral e meta de reposição em até 15 dias úteis",
+     "metas": [
+      {
+       "rotulo": "vacância prolongada",
+       "valor": "≤15 dias úteis; ≤2% das turmas"
+      }
+     ]
     }
    }
   },
@@ -731,7 +726,7 @@
   {
    "id": "p28",
    "subtema": "Professores e gestão escolar",
-   "proposta": "Manter equipes de apoio completas nas escolas (merendeiras, intérpretes, cuidadores, psicólogos e assistentes sociais)",
+   "proposta": "Assegurar profissionais de apoio à rede escolar, com psicólogos e assistentes sociais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -762,7 +757,13 @@
       30134,
       30139
      ],
-     "nota": "início com 200 bolsas no 1º ano"
+     "nota": "início com 200 bolsas no 1º ano",
+     "metas": [
+      {
+       "rotulo": "bolsas de licenciatura",
+       "valor": "200 bolsas no 1º ano"
+      }
+     ]
     }
    }
   },
@@ -832,23 +833,8 @@
    "id": "p34",
    "subtema": "Tecnologia e cultura digital",
    "proposta": "Implementar letramento digital e pensamento computacional no currículo da educação básica",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      387,
-      391
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      205
-     ],
-     "nota": "cultura digital crítica"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -904,51 +890,11 @@
    }
   },
   {
-   "id": "p37",
-   "subtema": "Tecnologia e cultura digital",
-   "proposta": "Fortalecer o Centro de Mídias de Educação como apoio pedagógico ao interior, com mediadores e melhoria das telessalas",
-   "n_concorda": 3,
-   "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      26
-     ],
-     "nota": "uso complementar ao tempo integral"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      594
-     ],
-     "nota": "melhoria dos ambientes de mediação tecnológica"
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      28598,
-      28742,
-      30060,
-      38118
-     ],
-     "nota": "autenticação por matrícula e professores mediadores formados"
-    }
-   }
-  },
-  {
    "id": "p38",
    "subtema": "Tecnologia e cultura digital",
    "proposta": "Expandir programas de robótica educacional e espaços maker para todos os municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      390,
-      391
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -958,7 +904,13 @@
       38232,
       38294
      ],
-     "nota": "Edutech em 100% das escolas e Lab Mares nas escolas-sede das CREs"
+     "nota": "Edutech em 100% das escolas e Lab Mares nas escolas-sede das CREs",
+     "metas": [
+      {
+       "rotulo": "espaços makers",
+       "valor": "150 espaços na Fase 1, nos 62 municípios"
+      }
+     ]
     }
    }
   },
@@ -1007,7 +959,7 @@
    "id": "p41",
    "subtema": "Tecnologia e cultura digital",
    "proposta": "Usar inteligência artificial na gestão da rede e na personalização pedagógica",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1021,13 +973,6 @@
       28853
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      159
-     ],
-     "nota": "admite tecnologia apenas como ampliação, nunca substituindo o professor"
     }
    }
   },
@@ -1085,7 +1030,7 @@
   {
    "id": "p43",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Universalizar a conectividade de internet nas escolas, com equipamentos e suporte técnico",
+   "proposta": "Universalizar a conectividade de internet nas escolas, com os equipamentos necessários.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1120,7 +1065,13 @@
       38121,
       38236
      ],
-     "nota": "meta de 100% das escolas conectadas e velocidade mínima definida"
+     "nota": "meta de 100% das escolas conectadas e velocidade mínima definida",
+     "metas": [
+      {
+       "rotulo": "conectividade nas escolas",
+       "valor": "100% funcional até o Ano 5"
+      }
+     ]
     }
    }
   },
@@ -1146,7 +1097,7 @@
   {
    "id": "p45",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Garantir energia elétrica confiável nas escolas, inclusive com energia solar e armazenamento em bateria nas unidades remotas",
+   "proposta": "Garantir energia elétrica confiável nas escolas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1173,7 +1124,7 @@
   {
    "id": "p46",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Assegurar padrão mínimo de infraestrutura escolar, com água potável, saneamento, banheiros e acessibilidade",
+   "proposta": "Garantir água potável nas escolas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1199,7 +1150,7 @@
   {
    "id": "p47",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Estabelecer plano de reforma e manutenção preventiva das escolas estaduais",
+   "proposta": "Reformar as escolas estaduais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1230,7 +1181,7 @@
   {
    "id": "p48",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Implantar laboratórios escolares equipados e mantidos",
+   "proposta": "Implantar laboratórios nas escolas",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1260,7 +1211,7 @@
   {
    "id": "p49",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Garantir bibliotecas escolares com acervo e profissional responsável",
+   "proposta": "Garantir bibliotecas nas escolas",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1283,28 +1234,13 @@
   {
    "id": "p50",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Modernizar e adaptar as escolas rurais, ribeirinhas e indígenas ao clima, ao território e à cultura local",
-   "n_concorda": 3,
+   "proposta": "Adaptar a arquitetura escolar ao clima, ao território e à cultura local.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      596
-     ],
-     "nota": ""
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
       188
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      28744,
-      29026
      ],
      "nota": ""
     }
@@ -1322,7 +1258,13 @@
       28629,
       28738
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "reserva de merenda",
+       "valor": "equivalente a 60 dias"
+      }
+     ]
     }
    }
   },
@@ -1330,20 +1272,13 @@
    "id": "p52",
    "subtema": "Educação em tempo integral",
    "proposta": "Ampliar a oferta de escolas e centros de educação em tempo integral na rede estadual",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
       24,
       25
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      155
      ],
      "nota": ""
     },
@@ -1438,8 +1373,8 @@
   {
    "id": "p57",
    "subtema": "Alfabetização e colaboração com municípios",
-   "proposta": "Priorizar e garantir a alfabetização na idade certa",
-   "n_concorda": 4,
+   "proposta": "Garantir a alfabetização das crianças na idade certa.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -1455,13 +1390,6 @@
      ],
      "nota": "com apoio pedagógico, bibliotecas e materiais contextualizados"
     },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      577
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1469,14 +1397,20 @@
       28677,
       28700
      ],
-     "nota": "alfabetização plena ao final do 2º ano como obrigação do Estado"
+     "nota": "alfabetização plena ao final do 2º ano como obrigação do Estado",
+     "metas": [
+      {
+       "rotulo": "alfabetização",
+       "valor": "todas as crianças ao final do 2º ano"
+      }
+     ]
     }
    }
   },
   {
    "id": "p58",
    "subtema": "Alfabetização e colaboração com municípios",
-   "proposta": "Instituir pacto estadual de alfabetização com os municípios, com metas desagregadas por escola e acompanhamento conjunto",
+   "proposta": "Cooperar com os municípios para garantir a alfabetização das crianças.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1499,7 +1433,13 @@
       30111,
       30112
      ],
-     "nota": "Câmara de Coordenação Estado-Municípios com reuniões bimestrais"
+     "nota": "Câmara de Coordenação Estado-Municípios com reuniões bimestrais",
+     "metas": [
+      {
+       "rotulo": "pactos com municípios",
+       "valor": "62 municípios, metas por escola"
+      }
+     ]
     }
    }
   },
@@ -1538,7 +1478,7 @@
    "id": "p61",
    "subtema": "Alfabetização e colaboração com municípios",
    "proposta": "Produzir e distribuir sequências didáticas e materiais estruturados às escolas, adequados às realidades locais",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -1546,13 +1486,6 @@
       577
      ],
      "nota": "sequências estaduais para alfabetização, português, matemática e ciências"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      151
-     ],
-     "nota": ""
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1568,7 +1501,7 @@
    "id": "p62",
    "subtema": "Alfabetização e colaboração com municípios",
    "proposta": "Apoiar tecnicamente os municípios nos anos iniciais, com suporte diferenciado a quem tem piores resultados",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1579,13 +1512,6 @@
       39261
      ],
      "nota": "Termo de Pactuação Federativa com os 62 municípios"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      606
-     ],
-     "nota": "pactuação de metas por município e território"
     }
    }
   },
@@ -1608,7 +1534,7 @@
    "id": "p64",
    "subtema": "Alfabetização e colaboração com municípios",
    "proposta": "Tratar os anos finais do ensino fundamental como política própria, com rotinas de acolhimento na transição do 5º para o 6º ano",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1620,13 +1546,6 @@
       30266
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      158
-     ],
-     "nota": "atenção especial aos anos de transição"
     }
    }
   },
@@ -1634,23 +1553,8 @@
    "id": "p65",
    "subtema": "Educação indígena, do campo e das águas",
    "proposta": "Fortalecer a educação escolar indígena específica, diferenciada, intercultural e bilíngue",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      9
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      185,
-      192
-     ],
-     "nota": ""
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -1673,7 +1577,7 @@
   {
    "id": "p66",
    "subtema": "Educação indígena, do campo e das águas",
-   "proposta": "Produzir materiais didáticos em línguas indígenas, com autoria de professores e sábios dos povos",
+   "proposta": "Produzir materiais didáticos para a educação escolar indígena.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1750,7 +1654,7 @@
   {
    "id": "p69",
    "subtema": "Educação indígena, do campo e das águas",
-   "proposta": "Ofertar formação em nível superior e formação continuada aos professores indígenas, em formato modular",
+   "proposta": "Ofertar formação continuada aos professores indígenas",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
@@ -1862,7 +1766,7 @@
   {
    "id": "p75",
    "subtema": "Transporte escolar e permanência",
-   "proposta": "Garantir transporte escolar seguro e regular, inclusive fluvial",
+   "proposta": "Garantir transporte escolar seguro.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -1951,7 +1855,7 @@
   {
    "id": "p79",
    "subtema": "Transporte escolar e permanência",
-   "proposta": "Criar bolsas de permanência, moradia estudantil e apoio ao deslocamento para jovens do interior, indígenas e de baixa renda",
+   "proposta": "Criar bolsas de permanência para estudantes.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1974,7 +1878,7 @@
   {
    "id": "p80",
    "subtema": "Alimentação escolar",
-   "proposta": "Garantir merenda escolar de qualidade em todas as escolas",
+   "proposta": "Garantir merenda escolar nas escolas",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2056,7 +1960,7 @@
   {
    "id": "p83",
    "subtema": "Permanência, busca ativa e apoio ao estudante",
-   "proposta": "Executar busca ativa de crianças e adolescentes fora da escola e prevenir a evasão",
+   "proposta": "Prevenir a evasão escolar de crianças e adolescentes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -2151,7 +2055,7 @@
    "id": "p87",
    "subtema": "Permanência, busca ativa e apoio ao estudante",
    "proposta": "Estruturar comunicação regular com as famílias, com devolutivas de aprendizagem e alternativas não digitais para ribeirinhos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -2165,13 +2069,6 @@
       29022
      ],
      "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      581
-     ],
-     "nota": "acompanhamento familiar pela plataforma"
     }
    }
   },
@@ -2179,15 +2076,8 @@
    "id": "p88",
    "subtema": "Gestão, metas e avaliação da rede",
    "proposta": "Pactuar metas por escola, município e território, com painel público de acompanhamento e transparência dos resultados",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      30
-     ],
-     "nota": ""
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -2222,23 +2112,12 @@
    "id": "p89",
    "subtema": "Gestão, metas e avaliação da rede",
    "proposta": "Dar apoio técnico prioritário às escolas e municípios com piores resultados, com plano de melhoria e acompanhamento frequente",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
       30
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      28712,
-      29507,
-      29689,
-      29834,
-      29919
      ],
      "nota": ""
     }
@@ -2291,8 +2170,8 @@
   {
    "id": "p92",
    "subtema": "Gestão, metas e avaliação da rede",
-   "proposta": "Publicar relatórios semestrais em linguagem acessível e submeter a rede a auditoria externa anual",
-   "n_concorda": 2,
+   "proposta": "Publicar relatórios semestrais em linguagem acessível.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -2306,13 +2185,6 @@
       39557
      ],
      "nota": ""
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      30
-     ],
-     "nota": "transparência dos resultados por escola"
     }
    }
   },
@@ -2382,7 +2254,7 @@
   {
    "id": "p96",
    "subtema": "Educação inclusiva",
-   "proposta": "Ampliar o atendimento educacional especializado, as salas de recursos multifuncionais e a acessibilidade para estudantes com deficiência e autismo",
+   "proposta": "Ampliar o atendimento educacional especializado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2443,7 +2315,7 @@
   {
    "id": "p99",
    "subtema": "Ensino superior, pesquisa e internacionalização",
-   "proposta": "Expandir a presença da universidade estadual no interior, com polos e cursos presenciais e híbridos",
+   "proposta": "Expandir a presença da universidade estadual no interior",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -2477,7 +2349,7 @@
    "id": "p100",
    "subtema": "Ensino superior, pesquisa e internacionalização",
    "proposta": "Fortalecer a pesquisa e a extensão universitárias voltadas às vocações regionais",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -2485,21 +2357,6 @@
       405,
       408,
       409
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      204
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      12356,
-      30179
      ],
      "nota": ""
     }
@@ -2526,7 +2383,13 @@
       30150,
       30155
      ],
-     "nota": "piloto com 10 a 20 estudantes do ensino médio por mérito"
+     "nota": "piloto com 10 a 20 estudantes do ensino médio por mérito",
+     "metas": [
+      {
+       "rotulo": "intercâmbio piloto",
+       "valor": "10 a 20 estudantes no 1º ano"
+      }
+     ]
     }
    }
   },
@@ -2615,7 +2478,13 @@
       30118,
       30124
      ],
-     "nota": "piloto em 20 unidades, com bolsa aos idosos participantes"
+     "nota": "piloto em 20 unidades, com bolsa aos idosos participantes",
+     "metas": [
+      {
+       "rotulo": "piloto de leitura intergeracional",
+       "valor": "20 unidades de Educação Infantil no 1º ano"
+      }
+     ]
     }
    }
   },
@@ -2645,7 +2514,7 @@
    "id": "p108",
    "subtema": "Convivência, proteção e saúde na escola",
    "proposta": "Instituir protocolo estadual de proteção a estudantes vítimas de violência, com fluxos entre escola, saúde, assistência, Conselho Tutelar e justiça",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -2657,13 +2526,6 @@
       30314
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      152
-     ],
-     "nota": "articulação intersetorial na busca ativa e proteção de direitos"
     }
    }
   },
@@ -2704,7 +2566,7 @@
   {
    "id": "p111",
    "subtema": "EJA e educação prisional",
-   "proposta": "Fortalecer a educação de jovens e adultos contextualizada e o reingresso de trajetórias interrompidas",
+   "proposta": "Fortalecer a educação de jovens e adultos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -2900,7 +2762,7 @@
   {
    "id": "p121",
    "subtema": "Modernização da educação profissional pública",
-   "proposta": "Firmar parcerias para doação ou empréstimo de equipamentos modernos aos cursos técnicos",
+   "proposta": "Firmar parcerias.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -2943,23 +2805,9 @@
   {
    "id": "p123",
    "subtema": "Tecnologia e cultura digital",
-   "proposta": "Acelerar a aquisição e distribuição de dispositivos digitais às escolas usando o guia de planejamento e a ata de registro de preços do FNDE",
-   "n_concorda": 3,
+   "proposta": "Acelerar a aquisição e distribuição de dispositivos digitais às escolas com uso do guia de planejamento e da ata de registro de preços do FNDE.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      153
-     ],
-     "nota": "Universalizar conectividade e dispositivos de uso pedagógico nas escolas."
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      594
-     ],
-     "nota": "Ampliar conectividade com equipamentos e suporte técnico nas escolas."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3020,24 +2868,8 @@
    "id": "p127",
    "subtema": "Permanência, busca ativa e apoio ao estudante",
    "proposta": "Instituir Pacto Estadual de Permanência no Ensino Médio, articulado ao programa federal Pé-de-Meia e à redução da distorção idade-série",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      26,
-      30
-     ],
-     "nota": "Prevê prevenção da evasão, permanência escolar e fortalecimento do Ensino Médio"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      152,
-      203
-     ],
-     "nota": "Busca ativa e bolsas de permanência para garantir conclusão."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3132,7 +2964,7 @@
   {
    "id": "p133",
    "subtema": "Gestão, metas e avaliação da rede",
-   "proposta": "Fixar metas educacionais desagregadas obrigatoriamente por território e público (interior, rural, indígenas, estudantes do AEE), com critérios transparentes de priorização",
+   "proposta": "Fixar metas educacionais desagregadas por território.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -3168,16 +3000,8 @@
    "id": "p134",
    "subtema": "Educação indígena, do campo e das águas",
    "proposta": "Desenvolver modelo pedagógico e operacional próprio para o interior, em vez de replicar o modelo urbano de Manaus",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      25,
-      27
-     ],
-     "nota": "Política adaptada às condições territoriais, culturais e sociais, com foco no interior"
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -3186,15 +3010,6 @@
       188
      ],
      "nota": "Currículos, calendários e arquitetura próprios do território, não modelo urbano."
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      577,
-      596,
-      604
-     ],
-     "nota": "Currículos contextualizados e materiais próprios para realidades do interior."
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -3224,7 +3039,7 @@
   {
    "id": "p136",
    "subtema": "Professores e gestão escolar",
-   "proposta": "Realizar planejamento territorial da força de trabalho docente, com dimensionamento semestral por necessidade real e processos padronizados e transparentes de atribuição, remoção e alocação",
+   "proposta": "Realizar planejamento territorial da força de trabalho docente conforme as necessidades de cada território.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -3250,7 +3065,7 @@
   {
    "id": "p137",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Criar polos híbridos regionais com infraestrutura compartilhada para formação docente, ensino técnico e atendimento ao estudante",
+   "proposta": "Expandir polos educacionais regionais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -3374,16 +3189,8 @@
    "id": "p144",
    "subtema": "Gestão, metas e avaliação da rede",
    "proposta": "Integrar o sistema de informação da educação aos sistemas de saúde, assistência social e proteção da infância",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      152,
-      174
-     ],
-     "nota": "Articulação com assistência, saúde e proteção; melhoria dos sistemas de informação."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3412,16 +3219,8 @@
    "id": "p146",
    "subtema": "Tecnologia e cultura digital",
    "proposta": "Fazer curadoria de recursos digitais e definir protocolos de uso responsável de inteligência artificial pelos estudantes, preservando o raciocínio independente",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      159,
-      205
-     ],
-     "nota": "Cultura digital crítica; tecnologia não substitui professor."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3451,7 +3250,7 @@
   {
    "id": "p148",
    "subtema": "Ensino médio e educação profissional",
-   "proposta": "Organizar a recomposição da aprendizagem por trilhas conforme o nível real da turma, com reensino, agrupamento flexível e metas quinzenais",
+   "proposta": "Organizar a recomposição da aprendizagem dos estudantes.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -3489,7 +3288,7 @@
   {
    "id": "p149",
    "subtema": "Gestão, metas e avaliação da rede",
-   "proposta": "Instituir estrutura de governança do plano educacional, com comitê executivo, comitê de implementação, comitê de monitoramento e coordenações regionais, com cadências e registros definidos",
+   "proposta": "Instituir estrutura de governança do plano educacional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -3585,15 +3384,8 @@
    "id": "p154",
    "subtema": "Educação indígena, do campo e das águas",
    "proposta": "Criar Plano Estadual de Contingência Educacional para estiagem e cheias, com pré-posicionamento de kits Aula em Casa e Merenda em Casa nas calhas vulneráveis",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      189
-     ],
-     "nota": "Plano para eventos extremos no transporte/acesso escolar."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3608,15 +3400,8 @@
    "id": "p155",
    "subtema": "Educação indígena, do campo e das águas",
    "proposta": "Firmar protocolo integrado com a Defesa Civil, a Marinha e a secretaria estadual de saúde para acesso fluvial alternativo e atendimento às comunidades ribeirinhas durante a vazante",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      189
-     ],
-     "nota": "Regularização e fiscalização do transporte fluvial com rotas e plano de emergência."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3738,24 +3523,8 @@
    "id": "p163",
    "subtema": "Ensino médio e educação profissional",
    "proposta": "Criar a Rede Técnica da Bioeconomia, articulando o CETAM e os programas de formação em engenharias e tecnologia da informação",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      439,
-      443
-     ],
-     "nota": "Amplia cursos do CETAM em bioeconomia, TI e tecnologia com parcerias."
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      200,
-      202
-     ],
-     "nota": "Ensino técnico ligado a manejo florestal, agroecologia e tecnologia."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3784,16 +3553,8 @@
    "id": "p165",
    "subtema": "Ensino médio e educação profissional",
    "proposta": "Criar polos regionais de treinamento e clubes de estudo no contraturno para olimpíadas científicas, com sistema de premiação e parceria com UEA, UFAM e IFAM",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      204,
-      205
-     ],
-     "nota": "Feiras científicas, iniciação científica júnior e pacto com UEA/Ufam/Ifam."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3806,8 +3567,8 @@
   {
    "id": "p166",
    "subtema": "Infraestrutura escolar e conectividade",
-   "proposta": "Implantar laboratórios Lab Mares e bibliotecas digitais de última geração nas escolas, começando pelas escolas-sede das coordenadorias regionais",
-   "n_concorda": 3,
+   "proposta": "Implantar laboratórios modernos nas escolas.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -3817,14 +3578,6 @@
       390
      ],
      "nota": "Modernizar escolas com laboratórios e conectividade."
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      151,
-      205
-     ],
-     "nota": "Bibliotecas e laboratórios escolares."
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -3935,16 +3688,8 @@
    "id": "p173",
    "subtema": "Modernização da educação profissional pública",
    "proposta": "Adequar os currículos dos cursos profissionais às cadeias produtivas locais e à formação em empreendedorismo comunitário, cooperativismo, economia solidária e comercialização digital de produtos regionais",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      6,
-      7
-     ],
-     "nota": "Propõe cursos técnicos gratuitos conectados às oportunidades reais de emprego no Amazonas."
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
@@ -4091,7 +3836,13 @@
      "blocos": [
       38129
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "Escolas da Floresta Digitais",
+       "valor": "10 operacionais até 2030"
+      }
+     ]
     }
    }
   },
@@ -4199,17 +3950,776 @@
   {
    "id": "p186",
    "subtema": "Alfabetização e colaboração com municípios",
-   "proposta": "Promover a transferência de capacidade institucional dos municípios com melhores resultados em alfabetização para os municípios sem selo, com articulação prioritária com Manaus",
-   "n_concorda": 2,
+   "proposta": "Promover a transferência de capacidade institucional dos municípios com melhores resultados em alfabetização para os municípios sem selo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      39824
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios envolvidos na difusão",
+       "valor": "5 municípios Ouro para 24 sem selo"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "p187",
+   "subtema": "Ensino médio e educação profissional",
+   "proposta": "Ampliar cursos técnicos e tecnológicos em áreas como IA, programação, robótica, indústria 4.0, energia, logística, turismo, saúde, bioeconomia e economia criativa, com expansão regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      439,
+      441,
+      442
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p188",
+   "subtema": "Ensino médio e educação profissional",
+   "proposta": "Integrar o ensino médio à formação técnica em parceria com CETAM, UEA, Sistema S e setor produtivo, alinhando o currículo às vocações econômicas de cada calha de rio.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
-      241,
-      249
+      591
      ],
-     "nota": "Disseminar as boas práticas da rede de Manaus para os municípios."
-    },
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p190",
+   "subtema": "Ensino médio e educação profissional",
+   "proposta": "Ofertar formação em formato móvel e híbrido.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      444
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p193",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Realizar concurso público com prova de conteúdo específico por área de atuação, aplicando a mudança já no próximo edital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      28761
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p194",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Garantir formação continuada aos professores dentro do horário de trabalho, em parceria com universidades e institutos públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      171
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p195",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Garantir formação continuada regular, com tempo protegido, incentivos e reconhecimento profissional, articulada à avaliação diagnóstica não punitiva dos docentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      27994,
+      29900
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p196",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Garantir psicólogo e assistente social por coordenadoria regional, com formação de merendeiras e auxiliares para identificar e encaminhar casos de violência, e protocolo de articulação entre escola, CRAS e rede de saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      28745
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p198",
+   "subtema": "Tecnologia e cultura digital",
+   "proposta": "Apoiar a cultura digital crítica nas escolas, junto a laboratórios escolares e iniciação científica júnior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      205
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p199",
+   "subtema": "Tecnologia e cultura digital",
+   "proposta": "Prever o uso complementar do Centro de Mídias no planejamento da expansão da educação em tempo integral, com metas regionais progressivas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      26
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p200",
+   "subtema": "Tecnologia e cultura digital",
+   "proposta": "Otimizar o Centro de Mídias com professores mediadores formados nas escolas do interior, autenticação por matrícula para acompanhar o uso, aulas preparatórias para ENEM e vestibular e formação docente permanente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      28598,
+      28742,
+      30060,
+      38118
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p203",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Universalizar a conectividade escolar até 2032, levando a cobertura de 64,2% para 100% das escolas estaduais, com uso de antenas Starlink e velocidade mínima de 100 Mbps na capital e 50 Mbps no interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      38121,
+      38236
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "antenas Starlink",
+       "valor": "expansão progressiva para 3.000 antenas"
+      }
+     ]
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p204",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Universalizar energia confiável e internet de qualidade nas escolas, adaptando a arquitetura escolar ao clima e ao território, com garantia de água, energia e conectividade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      153,
+      188
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p205",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Reformar escolas garantindo água potável, banheiros, acessibilidade, conforto térmico, cozinha, espaços de esporte e prevenção de incêndios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      154
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p46"
+  },
+  {
+   "id": "p209",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Assegurar bibliotecas nas escolas como parte do apoio à alfabetização na idade certa, com materiais contextualizados e cooperação com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      151
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p210",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Modernizar as escolas rurais e indígenas, garantindo condições para ensinar, aprender e permanecer.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      596
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
+  },
+  {
+   "id": "p211",
+   "subtema": "Alfabetização e colaboração com municípios",
+   "proposta": "Criar sequências didáticas estaduais para alfabetização, Língua Portuguesa, Matemática, Ciências e recomposição das aprendizagens, respeitando as realidades indígenas, ribeirinhas, rurais e urbanas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      577
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p57"
+  },
+  {
+   "id": "p213",
+   "subtema": "Educação indígena, do campo e das águas",
+   "proposta": "Fortalecer a educação escolar indígena.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      9
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p214",
+   "subtema": "Educação indígena, do campo e das águas",
+   "proposta": "Construir currículos e calendários junto às comunidades, reconhecendo suas línguas, conhecimentos e formas próprias de organização, com participação das organizações representativas na formulação, execução e avaliação das políticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      185,
+      192
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p216",
+   "subtema": "Educação indígena, do campo e das águas",
+   "proposta": "Ampliar a produção de materiais didáticos em línguas indígenas e criar plataformas educacionais em dez línguas prioritárias, integrando conhecimento científico e saber tradicional, com política estadual de diversidade linguística e educação bilíngue.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      30292,
+      38128
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p66"
+  },
+  {
+   "id": "p217",
+   "subtema": "Educação indígena, do campo e das águas",
+   "proposta": "Fortalecer a educação intercultural, indígena, quilombola e ribeirinha, com currículos contextualizados, materiais didáticos específicos e formação continuada de professores, respeitando as identidades de cada comunidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      577,
+      604
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p69"
+  },
+  {
+   "id": "p218",
+   "subtema": "Transporte escolar e permanência",
+   "proposta": "Assegurar transporte escolar seguro, além de professor em sala e merenda, como condições essenciais para o aprendizado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      5
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p75"
+  },
+  {
+   "id": "p219",
+   "subtema": "Transporte escolar e permanência",
+   "proposta": "Fortalecer parcerias com os municípios para compartilhar o transporte escolar, com rotas seguras e modernizadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      587
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p75"
+  },
+  {
+   "id": "p220",
+   "subtema": "Transporte escolar e permanência",
+   "proposta": "Criar programa de bolsas de estudo e auxílio-permanência e assegurar, na Amazônia, transporte fluvial e busca ativa como parte do direito de aprendizagem.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      2351,
+      30057
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p79"
+  },
+  {
+   "id": "p222",
+   "subtema": "Alimentação escolar",
+   "proposta": "Garantir alimentação escolar saudável e regional, adquirida da agricultura familiar e de comunidades tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      156
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p80"
+  },
+  {
+   "id": "p223",
+   "subtema": "Alimentação escolar",
+   "proposta": "Garantir merenda escolar de qualidade e regionalizada, valorizando produtos locais e a agricultura familiar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      595
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p80"
+  },
+  {
+   "id": "p224",
+   "subtema": "Permanência, busca ativa e apoio ao estudante",
+   "proposta": "Prevenir a evasão escolar como parte da política de tempo integral e da recomposição da aprendizagem, com diagnóstico por escola, acompanhamento de matrículas e apoio prioritário às escolas com maior dificuldade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      26,
+      30
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p226",
+   "subtema": "Gestão, metas e avaliação da rede",
+   "proposta": "Destinar suporte técnico diferenciado às escolas prioritárias e aos municípios com maior desvio de resultados, com controle bimestral de progressão, alertas automáticos e acordos de metas com diretores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      28712,
+      29507,
+      29689,
+      29834,
+      29919
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p89"
+  },
+  {
+   "id": "p227",
+   "subtema": "Gestão, metas e avaliação da rede",
+   "proposta": "Publicar relatórios semestrais em linguagem acessível, com os 12 indicadores-mãe e a execução física e financeira, e realizar auditoria anual do Data Book quanto a consistência, completude e atualidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      27714,
+      29695,
+      29696
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p92"
+  },
+  {
+   "id": "p228",
+   "subtema": "Educação inclusiva",
+   "proposta": "Ampliar o atendimento a estudantes com deficiência e autismo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      9
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p96"
+  },
+  {
+   "id": "p229",
+   "subtema": "Educação inclusiva",
+   "proposta": "Fortalecer a educação especial e inclusiva, ampliando salas de recursos multifuncionais e garantindo padrões mínimos de acessibilidade, atendimento educacional especializado e tecnologias assistivas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      29027,
+      30283
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p96"
+  },
+  {
+   "id": "p230",
+   "subtema": "Ensino superior, pesquisa e internacionalização",
+   "proposta": "Firmar pacto com UEA, Ufam, Ifam e instituições de pesquisa para interiorização coordenada e pesquisa aplicada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      204
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p99"
+  },
+  {
+   "id": "p232",
+   "subtema": "Ensino superior, pesquisa e internacionalização",
+   "proposta": "Criar Centros Regionais de Formação Científica e Tecnológica, em parceria com universidades amazonenses e institutos de pesquisa, com iniciação científica voltada a temas da Amazônia, até cobrir todas as regiões do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      12356,
+      30179
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "centros-piloto iniciais",
+       "valor": "1 a 2 centros-piloto"
+      }
+     ]
+    }
+   },
+   "derivada_de": "p100"
+  },
+  {
+   "id": "p233",
+   "subtema": "EJA e educação prisional",
+   "proposta": "Fortalecer a educação de jovens e adultos contextualizada, as casas familiares rurais e a pedagogia da alternância.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      190
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p111"
+  },
+  {
+   "id": "p234",
+   "subtema": "EJA e educação prisional",
+   "proposta": "Criar estratégias de reingresso para trajetórias interrompidas, com reconhecimento de aprendizagens anteriores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      29028
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p111"
+  },
+  {
+   "id": "p235",
+   "subtema": "Modernização da educação profissional pública",
+   "proposta": "Firmar parcerias com empresas de tecnologia e universidades para custear a modernização de laboratórios e da infraestrutura tecnológica das escolas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      395,
+      443
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p121"
+  },
+  {
+   "id": "p237",
+   "subtema": "Tecnologia e cultura digital",
+   "proposta": "Ampliar a conectividade escolar, com internet, equipamentos, suporte técnico e melhoria dos ambientes de mediação tecnológica, em integração com o Programa Norte Conectado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      594
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p123"
+  },
+  {
+   "id": "p239",
+   "subtema": "Gestão, metas e avaliação da rede",
+   "proposta": "Criar governança estadual da educação com pactuação de metas por escola, município, etapa e território e painel público de acompanhamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      606
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p133"
+  },
+  {
+   "id": "p240",
+   "subtema": "Educação indígena, do campo e das águas",
+   "proposta": "Adaptar a política de educação integral às condições territoriais, culturais e sociais do Amazonas, respeitando as especificidades das comunidades indígenas, do campo, das águas e das florestas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      25,
+      27
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p134"
+  },
+  {
+   "id": "p242",
+   "subtema": "Professores e gestão escolar",
+   "proposta": "Organizar concursos públicos conforme as necessidades territoriais, reduzindo vínculos precários e garantindo equipes completas nas escolas, com adicional e política de permanência no interior baseados em critérios públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      166,
+      169,
+      170
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p136"
+  },
+  {
+   "id": "p243",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Expandir polos regionais e cursos presenciais e híbridos, com laboratórios, pesquisa e extensão, incluindo ensino móvel.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      442,
+      444
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p137"
+  },
+  {
+   "id": "p244",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Expandir o ensino médio integrado e a formação técnica nos polos regionais, com infraestrutura adequada e pacto com universidades e institutos para interiorização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      202,
+      204
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p137"
+  },
+  {
+   "id": "p246",
+   "subtema": "Ensino médio e educação profissional",
+   "proposta": "Criar programa de recuperação das aprendizagens, com atenção especial aos anos de transição.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      158
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p148"
+  },
+  {
+   "id": "p249",
+   "subtema": "Infraestrutura escolar e conectividade",
+   "proposta": "Modernizar as escolas com conectividade e laboratórios modernos, além de tecnologia, educação financeira e ensino de idiomas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      387,
+      389,
+      390,
+      391
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p166"
+  },
+  {
+   "id": "p250",
+   "subtema": "Modernização da educação profissional pública",
+   "proposta": "Oferecer cursos técnicos e profissionalizantes gratuitos conectados às oportunidades reais de emprego no Amazonas, tornando o ensino médio porta de entrada para o trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      6,
+      7
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p173"
+  },
+  {
+   "id": "p251",
+   "subtema": "Alfabetização e colaboração com municípios",
+   "proposta": "Operacionalizar, pelo Eixo de Equidade Territorial do Plano, a transferência de capacidade institucional dos 5 municípios Ouro, que atuarão como hubs de difusão de boas práticas, para os 24 municípios sem selo, prioritariamente.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4217,7 +4727,8 @@
      ],
      "nota": ""
     }
-   }
+   },
+   "derivada_de": "p186"
   }
  ],
  "blocos": {
@@ -4244,14 +4755,6 @@
    }
   },
   "governador-am-david-almeida-40002536086": {
-   "241": {
-    "texto": "Esses resultados refletem os investimentos realizados pela Prefeitura de Manaus na modernização da infraestrutura escolar, na ampliação da educação infantil, na valorização dos profissionais da educação, na formação continuada, na melhoria da gestão pedagógica, na alfabetização na idade certa, na inovação tecnológica e no acompanhamento permanente da aprendizagem. A experiência da capital demonstra que políticas públicas consistentes, associadas à gestão eficiente e ao monitoramento de resultados, produzem avanços concretos na qualidade da educação.",
-    "pagina": 19
-   },
-   "249": {
-    "texto": "O principal desafio para os próximos anos consiste em reduzir a distância existente entre os resultados obtidos pela rede municipal de Manaus e aqueles observados em grande parte dos municípios do interior, disseminando para todo o Estado as boas práticas de gestão educacional, os investimentos em infraestrutura física e digital, a valorização dos profissionais e as políticas de acompanhamento da aprendizagem que vêm produzindo resultados positivos na capital. Mais do que ampliar o acesso, será necessário garantir permanência, aprendizagem e oportunidades, conectando a educação às vocações econômicas e sociais do Amazonas e preparando as novas gerações para os desafios do século XXI.",
-    "pagina": 20
-   },
    "577": {
     "texto": "- Criar sequências didáticas estaduais para alfabetização, Língua Portuguesa, Matemática, Ciências e recomposição das aprendizagens, respeitando as realidades indígenas, ribeirinhas, rurais e urbanas.",
     "pagina": 49
@@ -4368,10 +4871,6 @@
    },
    "158": {
     "texto": "Criar programa de recuperação das aprendizagens com atenção especial aos anos de transição.",
-    "pagina": 10
-   },
-   "159": {
-    "texto": "PRINCÍPIO Nenhuma tecnologia substituirá professor, comunidade escolar ou vínculo humano; ela deverá ampliar possibilidades de aprendizagem.",
     "pagina": 10
    },
    "166": {
@@ -5195,10 +5694,6 @@
    "29022": {
     "texto": "• Calendário de encontros com pauta padronizada: o que o estudante desenvolveu e o que pode melhorar.",
     "pagina": 1216
-   },
-   "29026": {
-    "texto": "• Requisitos de desenho por território: urbano de Manaus e do interior; rural e ribeirinho; indígena; multisseriado;",
-    "pagina": 1217
    },
    "29027": {
     "texto": "• Padrões mínimos de acessibilidade e integração com AEE e tecnologias assistivas;",

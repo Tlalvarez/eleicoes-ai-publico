@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-rn.json",
   "gerado_em": "2026-09-14T23:58:07Z",
-  "exportado_em": "2026-09-14T23:59:11Z"
+  "exportado_em": "2026-09-16T21:37:14Z"
  },
  "candidatos": [
   {
@@ -116,7 +116,7 @@
   {
    "id": "p4",
    "subtema": "Ecossistema de inovação",
-   "proposta": "Difundir ferramentas digitais, automação, inteligência de dados, comércio eletrônico e inteligência artificial entre os negócios locais, inclusive pequenos empreendimentos do interior",
+   "proposta": "Difundir ferramentas digitais, comércio eletrônico e outras tecnologias entre os negócios locais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
@@ -200,7 +200,7 @@
   {
    "id": "p9",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Ampliar a infraestrutura digital e a oferta de internet de alta capacidade em todo o território, incluindo interior, zona rural, escolas, hospitais e equipamentos públicos",
+   "proposta": "Ampliar a infraestrutura digital e a oferta de internet de alta capacidade.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
@@ -266,7 +266,7 @@
   {
    "id": "p12",
    "subtema": "Inteligência artificial e governo digital",
-   "proposta": "Usar dados e inteligência artificial nos serviços públicos com proteção das informações, segurança digital, supervisão humana e transparência",
+   "proposta": "Usar dados e inteligência artificial na administração pública com supervisão humana nas decisões",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
@@ -447,6 +447,72 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p23",
+   "subtema": "Ecossistema de inovação",
+   "proposta": "Difundir automação, inteligência de dados, comércio eletrônico e outras tecnologias entre os negócios potiguares, conectando empresas a universidades, laboratórios, incubadoras e parques tecnológicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      118
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p24",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Reconhecer a conectividade digital como infraestrutura essencial, com redes estáveis e de alta capacidade que ampliem o acesso a educação, telemedicina, serviços públicos, agricultura, turismo, inovação e trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      972
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p25",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Expandir e concluir a Infovia Potiguar e o programa RN Mais Conectado, garantindo internet de alta velocidade em todas as repartições públicas estaduais e ampliando a cooperação com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      619,
+      620,
+      621
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p26",
+   "subtema": "Inteligência artificial e governo digital",
+   "proposta": "Criar uma política estadual de governança da inteligência artificial, com marco normativo para uso ético, seguro e responsável na administração pública, supervisão humana nas decisões, comitê técnico consultivo e capacitação dos servidores em competências digitais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      623
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
   }
  ],
  "blocos": {

@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-al.json",
   "gerado_em": "2026-09-14T09:18:04Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -328,7 +328,7 @@
    "id": "p16",
    "subtema": "Transparência e prestação de contas",
    "proposta": "Criar plataforma pública de transparência das finanças e da execução orçamentária em linguagem acessível ao cidadão",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
@@ -338,14 +338,6 @@
       946
      ],
      "nota": "Inclui emendas parlamentares e transferências a municípios"
-    },
-    "governador-al-jhc-20002553350": {
-     "posicao": "concorda",
-     "blocos": [
-      491,
-      498
-     ],
-     "nota": "Programa Contas Abertas, ligado à avaliação da qualidade do gasto"
     }
    }
   },
@@ -654,7 +646,13 @@
       406,
       408
      ],
-     "nota": "Painel Alagoas Gigante, com metas até 2030"
+     "nota": "Painel Alagoas Gigante, com metas até 2030",
+     "metas": [
+      {
+       "rotulo": "metas do painel",
+       "valor": "meta até 2030 por programa"
+      }
+     ]
     }
    }
   },
@@ -772,7 +770,7 @@
   {
    "id": "p40",
    "subtema": "Servidores, carreiras e folha",
-   "proposta": "Dimensionar a força de trabalho por órgão e território para distribuir servidores conforme a necessidade dos serviços",
+   "proposta": "Distribuir os servidores conforme as necessidades dos serviços.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -849,7 +847,7 @@
   {
    "id": "p44",
    "subtema": "Servidores, carreiras e folha",
-   "proposta": "Instituir política de saúde, saúde mental e bem-estar do servidor, com melhoria das condições de trabalho",
+   "proposta": "Instituir política de saúde do servidor.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -1070,6 +1068,57 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p56",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Instituir o programa Contas Abertas, dando transparência às finanças estaduais e mostrando onde e com que resultado cada recurso público é aplicado, com avaliação de benefícios fiscais e controle do endividamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      491,
+      498
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p57",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Realizar o planejamento plurianual da força de trabalho, orientando concursos, reposição de quadros e distribuição de servidores conforme as necessidades dos serviços.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      955,
+      956,
+      957
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p58",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Criar política estadual de fortalecimento da capacidade humana do governo, incluindo ações de saúde e saúde mental do servidor, qualificação e mobilidade interna.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      416
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
   }
  ],
  "blocos": {

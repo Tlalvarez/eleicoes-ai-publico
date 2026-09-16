@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-ma.json",
   "gerado_em": "2026-09-14T21:57:53Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
    "id": "p1",
    "subtema": "Apoio aos municípios",
    "proposta": "Criar programa estadual de apoio técnico e institucional às prefeituras, com execução de obras, serviços e investimentos prioritários nos municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -71,15 +71,6 @@
       201
      ],
      "nota": "Programa de Apoio às Prefeituras (PAP)"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1618,
-      1704,
-      2697
-     ],
-     "nota": "Foco em capacidade técnica, não em transferências"
     }
    }
   },
@@ -159,7 +150,7 @@
   {
    "id": "p6",
    "subtema": "Redução das desigualdades regionais",
-   "proposta": "Adotar estratégia de desenvolvimento territorial com planejamento próprio por região, carteira de projetos e metas, levando o crescimento além dos corredores já dinâmicos",
+   "proposta": "Adotar estratégia de desenvolvimento territorial.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -233,7 +224,7 @@
   {
    "id": "p9",
    "subtema": "Governança e participação regional",
-   "proposta": "Instituir fóruns regionais de desenvolvimento com participação da sociedade civil para pactuar vocações locais e priorizar projetos",
+   "proposta": "Instituir fóruns regionais de desenvolvimento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -256,7 +247,7 @@
    "id": "p10",
    "subtema": "Governança e participação regional",
    "proposta": "Implantar estruturas regionais de gestão do Estado para integrar, implementar, monitorar e avaliar políticas públicas no território",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -264,15 +255,6 @@
       45
      ],
      "nota": "Unidades Regionais de Gestão"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2008,
-      2009,
-      2010
-     ],
-     "nota": "Escritórios regionais ligados à Unidade de Entregas"
     }
    }
   },
@@ -294,7 +276,7 @@
   {
    "id": "p12",
    "subtema": "Economia dos municípios pequenos",
-   "proposta": "Implantar pacote integrado de dinamização econômica para municípios dependentes da administração pública, com seleção por critério técnico público",
+   "proposta": "Implantar ações de dinamização econômica dos municípios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -318,7 +300,7 @@
   {
    "id": "p13",
    "subtema": "Economia dos municípios pequenos",
-   "proposta": "Usar a alimentação escolar e demais compras públicas como mercado inicial para a produção local",
+   "proposta": "Usar a alimentação escolar como mercado inicial para a produção local",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -340,7 +322,7 @@
   {
    "id": "p14",
    "subtema": "Economia dos municípios pequenos",
-   "proposta": "Apoiar arranjos produtivos locais e vocações econômicas, turísticas e culturais dos municípios por meio de programa ou edital específico",
+   "proposta": "Apoiar as vocações econômicas e produtivas locais dos municípios.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -514,6 +496,140 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p24",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Criar apoio estadual para ampliar a capacidade institucional das prefeituras, acompanhando o ciclo de projetos desde a demanda municipal até a entrega, com prioridade aos municípios pequenos na captação e na execução de recursos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1618,
+      1704,
+      2697
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Levar o crescimento para além dos corredores já dinâmicos, garantindo emprego, renda, acesso e investimento em cada região.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      177,
+      178
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p26",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Retomar e atualizar o Plano Mais IDH com enfoque territorial, articulado à inclusão produtiva e à governança territorial, com polos regionais e prioridade a municípios, territórios quilombolas, comunidades tradicionais e periferias mais vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      297
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p27",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Implantar Unidades Regionais de Gestão para integrar, implementar, monitorar e avaliar políticas públicas voltadas à redução das desigualdades regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      45
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p28",
+   "subtema": "Governança e participação regional",
+   "proposta": "Realizar fóruns regionais semestrais em cada região de planejamento, com estratégia própria por região, incluindo diagnóstico, carteira de projetos e metas, e apoiar arranjos produtivos locais por edital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      671
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p29",
+   "subtema": "Economia dos municípios pequenos",
+   "proposta": "Planejar o desenvolvimento dos municípios pequenos em escala regional, identificando as vocações produtivas de cada território e organizando a cadeia de produção local, beneficiamento regional, logística, polo ou ZPE e mercado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1024,
+      1027,
+      1030
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p30",
+   "subtema": "Economia dos municípios pequenos",
+   "proposta": "Adotar a merenda local como parte de um pacote integrado de desenvolvimento em municípios dependentes da administração pública, ao lado de formalização, microcrédito, beneficiamento, conectividade e agente de desenvolvimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      673
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p31",
+   "subtema": "Economia dos municípios pequenos",
+   "proposta": "Instituir Fóruns Regionais de Desenvolvimento nas Regiões de Desenvolvimento, com participação da sociedade civil, para pactuar vocações locais, priorizar projetos e articular municípios e arranjos produtivos locais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      385
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
   }
  ],
  "blocos": {
@@ -764,18 +880,6 @@
    },
    "2007": {
     "texto": "Sua função será identificar gargalos locais, apoiar municípios, acompanhar projetos e alimentar a Unidade de Entregas com informações territoriais.",
-    "pagina": 138
-   },
-   "2008": {
-    "texto": "A governança seguirá duas direções: Centro de governo, prioridade, região e município.",
-    "pagina": 138
-   },
-   "2009": {
-    "texto": "E O fluxo de resposta será: município, problema, região, Unidade de Entregas e decisão.",
-    "pagina": 138
-   },
-   "2010": {
-    "texto": "Isso reduzirá a distância entre planejamento estadual e realidade local, especialmente nos municípios de menor capacidade administrativa.",
     "pagina": 138
    },
    "2597": {

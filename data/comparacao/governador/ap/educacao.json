@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-ap.json",
   "gerado_em": "2026-09-14T20:11:21Z",
-  "exportado_em": "2026-09-14T20:40:20Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -105,7 +105,7 @@
   {
    "id": "p3",
    "subtema": "Alfabetização e aprendizagem",
-   "proposta": "Recompor as aprendizagens defasadas e reduzir a evasão escolar na educação básica.",
+   "proposta": "Recompor as aprendizagens defasadas na educação básica.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -180,24 +180,22 @@
   {
    "id": "p7",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Ampliar a oferta de educação profissional e tecnológica alinhada às demandas do mercado de trabalho e às vocações econômicas regionais.",
-   "n_concorda": 3,
+   "proposta": "Ampliar a oferta de educação profissional e tecnológica, com cursos alinhados às vocações econômicas regionais.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ap-delegado-marcos-30002552017": {
-     "posicao": "concorda",
-     "blocos": [
-      113,
-      123
-     ],
-     "nota": ""
-    },
     "governador-ap-clecio-30002536311": {
      "posicao": "concorda",
      "blocos": [
       211,
       316
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "vagas em educação profissional",
+       "valor": "50 mil vagas em quatro anos"
+      }
+     ]
     },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
@@ -294,7 +292,7 @@
   {
    "id": "p12",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Estruturar formação técnica e superior para as cadeias de petróleo e gás e operação portuária, em articulação com as instituições federais de ensino.",
+   "proposta": "Expandir a educação profissional, tecnológica e superior voltada às cadeias produtivas de petróleo e gás, em articulação com as instituições federais de ensino.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -361,7 +359,7 @@
   {
    "id": "p16",
    "subtema": "Valorização dos profissionais da educação",
-   "proposta": "Implementar política permanente de formação continuada dos professores e profissionais da educação.",
+   "proposta": "Promover a formação continuada dos professores e profissionais da educação.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -682,7 +680,7 @@
   {
    "id": "p32",
    "subtema": "Ciência, pesquisa e inovação na educação básica",
-   "proposta": "Fortalecer a iniciação científica na rede, com feiras de ciências e olimpíadas do conhecimento.",
+   "proposta": "Fortalecer a iniciação científica na rede de ensino.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -1204,7 +1202,7 @@
    "id": "p60",
    "subtema": "Regime de colaboração com os municípios",
    "proposta": "Fortalecer o regime de colaboração entre Estado e municípios, implementando as diretrizes do Sistema Nacional de Educação e as metas dos planos nacional e estadual de educação.",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
@@ -1214,13 +1212,6 @@
       408
      ],
      "nota": ""
-    },
-    "governador-ap-clecio-30002536311": {
-     "posicao": "concorda",
-     "blocos": [
-      318
-     ],
-     "nota": "Apoio técnico aos municípios na alfabetização"
     }
    }
   },
@@ -1266,7 +1257,13 @@
       126,
       129
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "vagas em creches públicas",
+       "valor": "100% de vagas"
+      }
+     ]
     },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
@@ -1274,7 +1271,13 @@
       401,
       794
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "centros de educação infantil",
+       "valor": "10 centros"
+      }
+     ]
     }
    }
   },
@@ -1647,6 +1650,89 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p85",
+   "subtema": "Alfabetização e aprendizagem",
+   "proposta": "Consolidar a alfabetização na idade certa e recompor as defasagens de aprendizagem, com formação de professores, acompanhamento da aprendizagem e apoio técnico aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      318
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p86",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Oferecer ensino técnico e profissionalizante que prepare o estudante para a cidadania, a continuidade dos estudos, o mercado de trabalho e o empreendedorismo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      113,
+      123
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p87",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Promover formação continuada dos professores, com melhores condições de trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      118,
+      159
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p88",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Fortalecer a formação de professores para a alfabetização na idade certa e promover formação continuada dos profissionais da educação para a educação inclusiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      318,
+      330
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p89",
+   "subtema": "Ciência, pesquisa e inovação na educação básica",
+   "proposta": "Promover a iniciação científica e a preparação profissional dos estudantes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      122
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p32"
   }
  ],
  "blocos": {

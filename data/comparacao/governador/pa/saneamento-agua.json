@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-pa.json",
   "gerado_em": "2026-09-14T04:02:55Z",
-  "exportado_em": "2026-09-15T20:56:34Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Universalização de água e esgoto",
-   "proposta": "Ampliar e universalizar o abastecimento de água tratada e a coleta e tratamento de esgoto no estado",
+   "proposta": "Ampliar o abastecimento de água tratada e a coleta e tratamento de esgoto no estado",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -236,7 +236,7 @@
   {
    "id": "p10",
    "subtema": "Tarifas e acesso à água",
-   "proposta": "Garantir tarifa de água justa, limitada ao custo real do serviço, sem margens de lucro privado",
+   "proposta": "Garantir tarifa de água justa aos usuários.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -464,6 +464,40 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p23",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Tratar o saneamento básico como prioridade e ampliar, em cooperação com os municípios, o abastecimento de água potável, a coleta e o tratamento de esgoto, a drenagem urbana e a gestão de resíduos sólidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      906,
+      907
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p24",
+   "subtema": "Tarifas e acesso à água",
+   "proposta": "Rever a privatização da Cosanpa e criar uma nova empresa pública de saneamento, com serviço de qualidade e preço justo, além de investimento em esgoto nas cidades e nas comunidades rurais e ribeirinhas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      103,
+      287
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

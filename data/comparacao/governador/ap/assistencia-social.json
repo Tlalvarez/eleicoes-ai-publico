@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-ap.json",
   "gerado_em": "2026-09-14T20:25:38Z",
-  "exportado_em": "2026-09-14T20:40:20Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -127,7 +127,7 @@
   {
    "id": "p5",
    "subtema": "Segurança alimentar",
-   "proposta": "Fortalecer a política estadual de segurança alimentar e nutricional como eixo do combate à fome",
+   "proposta": "Fortalecer a política estadual de segurança alimentar e nutricional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -282,17 +282,9 @@
   {
    "id": "p14",
    "subtema": "População em situação de rua e acolhimento",
-   "proposta": "Ampliar a rede estadual de acolhimento, com casas e centros especializados para pessoas em situação de rua e dependentes químicos",
-   "n_concorda": 2,
+   "proposta": "Ampliar a rede estadual de acolhimento, com casas de acolhimento e centros especializados para pessoas em situação de rua e dependentes químicos.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ap-delegado-marcos-30002552017": {
-     "posicao": "concorda",
-     "blocos": [
-      458,
-      459
-     ],
-     "nota": ""
-    },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
      "blocos": [
@@ -695,6 +687,40 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p37",
+   "subtema": "Segurança alimentar",
+   "proposta": "Implantar política estadual transversal de proteção social, articulando transferência de renda, qualificação profissional, inclusão produtiva e segurança alimentar, com ampliação da segurança alimentar nos 16 municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      1058,
+      1059
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p38",
+   "subtema": "População em situação de rua e acolhimento",
+   "proposta": "Garantir à população em situação de rua acolhimento, documentação, atenção à saúde, tratamento e qualificação profissional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      458,
+      459
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
   }
  ],
  "blocos": {

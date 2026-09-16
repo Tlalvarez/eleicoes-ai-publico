@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "economia-agro-ce.json",
   "gerado_em": "2026-09-14T04:51:47Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T21:45:08Z"
  },
  "candidatos": [
   {
@@ -107,7 +107,7 @@
   {
    "id": "p4",
    "subtema": "Desenvolvimento econômico e industrial",
-   "proposta": "Fortalecer a inserção internacional da economia cearense e a atração de investimentos externos",
+   "proposta": "Fortalecer a inserção internacional da economia cearense.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -297,7 +297,7 @@
   {
    "id": "p15",
    "subtema": "Agricultura e desenvolvimento rural",
-   "proposta": "Ampliar a irrigação eficiente e tecnologias de convivência com o semiárido",
+   "proposta": "Ampliar a irrigação eficiente na agricultura.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -490,7 +490,7 @@
   {
    "id": "p26",
    "subtema": "Turismo",
-   "proposta": "Tratar o turismo como política permanente de desenvolvimento regional, distribuindo os fluxos turísticos por todo o Estado",
+   "proposta": "Desenvolver o turismo de forma regionalizada, abrangendo todo o Estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -582,16 +582,9 @@
   {
    "id": "p30",
    "subtema": "Economia do mar, pesca e aquicultura",
-   "proposta": "Fortalecer as cadeias produtivas da pesca e da aquicultura de forma sustentável, com infraestrutura, assistência técnica e acesso a mercados",
-   "n_concorda": 2,
+   "proposta": "Fortalecer de forma sustentável as cadeias produtivas da pesca e da aquicultura, com infraestrutura produtiva, assistência técnica e acesso a mercados.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ce-ciro-gomes-60002531351": {
-     "posicao": "concorda",
-     "blocos": [
-      135
-     ],
-     "nota": ""
-    },
     "governador-ce-elmano-de-freitas-60002543969": {
      "posicao": "concorda",
      "blocos": [
@@ -605,7 +598,7 @@
   {
    "id": "p31",
    "subtema": "Economia do mar, pesca e aquicultura",
-   "proposta": "Desenvolver a economia azul como política estadual de aproveitamento sustentável do potencial marítimo e costeiro",
+   "proposta": "Desenvolver a economia azul, promovendo o aproveitamento sustentável do potencial marítimo e costeiro.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -644,7 +637,7 @@
   {
    "id": "p33",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Ampliar a qualificação profissional da mão de obra para as novas cadeias produtivas e para o futuro do trabalho",
+   "proposta": "Ampliar a qualificação profissional da mão de obra",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -805,6 +798,74 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p43",
+   "subtema": "Desenvolvimento econômico e industrial",
+   "proposta": "Fortalecer a inserção internacional da economia cearense consolidando o Complexo Industrial e Portuário do Pecém como polo exportador, com ampliação da Zona de Processamento de Exportação e atração de novos empreendimentos industriais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      150,
+      151
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p44",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar a irrigação eficiente, junto com crédito rural, assistência técnica, pesquisa agropecuária, inovação tecnológica e mecanização no campo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      155
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p45",
+   "subtema": "Turismo",
+   "proposta": "Fortalecer a Política Estadual de Regionalização do Turismo, ampliando a integração entre municípios e a governança regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-elmano-de-freitas-60002543969": {
+     "posicao": "concorda",
+     "blocos": [
+      476,
+      477
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p47",
+   "subtema": "Economia do mar, pesca e aquicultura",
+   "proposta": "Desenvolver a economia do mar no litoral estadual, integrando pesca, aquicultura e turismo costeiro às oportunidades da transição energética, com investimento em infraestrutura portuária, qualificação profissional e ordenamento sustentável da zona costeira.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      135,
+      137,
+      156
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-rr.json",
   "gerado_em": "2026-09-14T14:25:41Z",
-  "exportado_em": "2026-09-14T14:32:06Z"
+  "exportado_em": "2026-09-16T20:02:13Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Fomentar o ecossistema estadual de inovação e o surgimento e crescimento de startups",
+   "proposta": "Fomentar o surgimento e crescimento de startups",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -118,7 +118,7 @@
   {
    "id": "p5",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Expandir a internet de alta velocidade a todos os municípios, priorizando escolas, unidades de saúde, comunidades do interior e órgãos públicos",
+   "proposta": "Expandir a internet, priorizando escolas, unidades de saúde e comunidades do interior",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -143,7 +143,7 @@
   {
    "id": "p6",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Combinar fibra óptica, rádio digital e satélite para atender regiões isoladas",
+   "proposta": "Expandir a conectividade combinando fibra óptica, rádio e satélite",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -166,20 +166,13 @@
    "id": "p7",
    "subtema": "Conectividade e inclusão digital",
    "proposta": "Promover a inclusão digital da população",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
      "blocos": [
       673,
       684
-     ],
-     "nota": ""
-    },
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      454
      ],
      "nota": ""
     }
@@ -251,7 +244,7 @@
   {
    "id": "p12",
    "subtema": "Fomento à pesquisa",
-   "proposta": "Fomentar a pesquisa aplicada nas vocações regionais amazônicas e na bioeconomia",
+   "proposta": "Fomentar a pesquisa aplicada na bioeconomia",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -445,6 +438,72 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p24",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Fomentar startups e pesquisa aplicada em bioeconomia e tecnologia, nas cadeias de cosméticos, fitoterápicos, alimentos regionais, bioinsumos, madeira legal rastreada e energia solar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      129
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Criar um programa estadual de conectividade pública que leve internet a municípios, vilas, comunidades, escolas, postos de saúde e órgãos públicos, usando backbone estadual, fibra óptica, rádio digital e satélite nas regiões isoladas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      672,
+      680,
+      713
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p26",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Expandir a internet de alta velocidade a todos os municípios por fibra óptica, rádio e satélite, priorizando escolas, unidades de saúde e comunidades indígenas e rurais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      453
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p27",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Conectar todas as escolas e unidades de saúde à internet de alta velocidade até 2030 e formar milhares de jovens em competências digitais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      454
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
   }
  ],
  "blocos": {

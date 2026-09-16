@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-es.json",
   "gerado_em": "2026-09-14T09:28:21Z",
-  "exportado_em": "2026-09-14T23:10:50Z"
+  "exportado_em": "2026-09-16T21:29:10Z"
  },
  "candidatos": [
   {
@@ -53,19 +53,12 @@
    "id": "p1",
    "subtema": "Gestão de pessoas e servidores",
    "proposta": "Modernizar a política estadual de gestão de pessoas, com valorização e reconhecimento dos servidores",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
      "blocos": [
       455
-     ],
-     "nota": ""
-    },
-    "governador-es-helder-salomao-80002551833": {
-     "posicao": "concorda",
-     "blocos": [
-      39
      ],
      "nota": ""
     },
@@ -169,7 +162,7 @@
   {
    "id": "p7",
    "subtema": "Gestão de pessoas e servidores",
-   "proposta": "Criar programa permanente de formação e desenvolvimento de lideranças na administração pública estadual",
+   "proposta": "Desenvolver lideranças na administração pública estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -449,7 +442,7 @@
    "id": "p22",
    "subtema": "Governo digital e uso de dados",
    "proposta": "Expandir o governo digital e a oferta de serviços públicos estaduais digitais",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
@@ -463,14 +456,6 @@
      "blocos": [
       41,
       61
-     ],
-     "nota": ""
-    },
-    "governador-es-ricardo-ferraco-80002552172": {
-     "posicao": "concorda",
-     "blocos": [
-      1720,
-      1723
      ],
      "nota": ""
     }
@@ -496,7 +481,7 @@
   {
    "id": "p24",
    "subtema": "Governo digital e uso de dados",
-   "proposta": "Garantir atendimento presencial assistido e inclusão digital para que a transformação digital alcance regiões vulneráveis e rurais",
+   "proposta": "Promover a inclusão digital.",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-helder-salomao-80002551833": {
@@ -600,7 +585,7 @@
   {
    "id": "p29",
    "subtema": "Planejamento, orçamento e gasto público",
-   "proposta": "Fortalecer o planejamento estratégico de longo prazo e sua articulação com o orçamento",
+   "proposta": "Fortalecer o planejamento estratégico governamental.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -630,7 +615,7 @@
   {
    "id": "p30",
    "subtema": "Planejamento, orçamento e gasto público",
-   "proposta": "Revisar permanentemente o gasto público, cortando despesas ineficientes e desperdícios",
+   "proposta": "Revisar permanentemente o gasto público",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -767,7 +752,7 @@
   {
    "id": "p38",
    "subtema": "Reforma tributária e receitas",
-   "proposta": "Criar ou consolidar estrutura estadual permanente para coordenar a estratégia e a transição da reforma tributária",
+   "proposta": "Criar ou consolidar uma estrutura dedicada à reforma tributária.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -836,7 +821,13 @@
       1597,
       1598
      ],
-     "nota": "Meta de 100% via GESCOB/FCBF"
+     "nota": "Meta de 100% via GESCOB/FCBF",
+     "metas": [
+      {
+       "rotulo": "programas de incentivo elegíveis",
+       "valor": "100% validados e compensados"
+      }
+     ]
     }
    }
   },
@@ -966,7 +957,7 @@
   {
    "id": "p49",
    "subtema": "Estrutura administrativa e desburocratização",
-   "proposta": "Simplificar a organização administrativa e reduzir a burocracia e a rigidez de processos do Estado",
+   "proposta": "Reduzir a burocracia do Estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -1079,7 +1070,13 @@
      "blocos": [
       458
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios parceiros",
+       "valor": "78 municípios"
+      }
+     ]
     },
     "governador-es-ricardo-ferraco-80002552172": {
      "posicao": "concorda",
@@ -1183,6 +1180,137 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p62",
+   "subtema": "Gestão de pessoas e servidores",
+   "proposta": "Promover o desenvolvimento de lideranças para a transformação do Estado, como parte da modernização da gestão de pessoas no serviço público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      455
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p63",
+   "subtema": "Governo digital e uso de dados",
+   "proposta": "Expandir o Governo Digital como canal de informação e participação, usando a inovação e a inclusão digital para enfrentar a exclusão e a desigualdade territorial de conectividade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      41,
+      61
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p64",
+   "subtema": "Planejamento, orçamento e gasto público",
+   "proposta": "Fortalecer os organismos de planejamento do governo, com estrutura e investimentos, para dar suporte às políticas públicas de Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      42
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p65",
+   "subtema": "Planejamento, orçamento e gasto público",
+   "proposta": "Institucionalizar o Marco Fiscal e o Marco Orçamentário de Médio Prazo como instrumentos permanentes de planejamento, com marcador orçamentário multietiqueta para agendas estratégicas transversais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      1605,
+      1606
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p66",
+   "subtema": "Planejamento, orçamento e gasto público",
+   "proposta": "Institucionalizar a revisão sistemática do gasto público (spending review), integrando a avaliação de políticas ao ciclo orçamentário e publicando relatório anual de revisão do gasto.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      1600,
+      1604
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p67",
+   "subtema": "Reforma tributária e receitas",
+   "proposta": "Instituir comitê estadual permanente para modelar os efeitos fiscais e econômicos da reforma tributária, com formulação estratégica e gestão intensiva da transição.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      457
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p68",
+   "subtema": "Reforma tributária e receitas",
+   "proposta": "Instituir o Comitê Gestor Estadual da Reforma Tributária, encarregado de elaborar a estratégia estadual frente aos impactos da reforma e coordenar a transição para o novo sistema tributário nacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      792
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p69",
+   "subtema": "Estrutura administrativa e desburocratização",
+   "proposta": "Simplificar o acesso aos serviços públicos, reduzindo burocracias e integrando serviços e informações em uma experiência única para o cidadão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      1723
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
   }
  ],
  "blocos": {
@@ -1511,10 +1639,6 @@
    "1696": {
     "texto": "Implantar um sistema estadual de inteligência analítica para monitorar indicadores da força de trabalho, apoiar o planejamento estratégico de pessoal, subsidiar decisões governamentais e ampliar a transparência da política de gestão de pessoas.",
     "pagina": 139
-   },
-   "1720": {
-    "texto": "O próximo passo é tornar essa experiência mais simples, integrada e acessível.",
-    "pagina": 141
    },
    "1721": {
     "texto": "Para isso, os serviços estaduais serão concentrados em um único ambiente digital, com maior integração de dados para eliminar exigências e etapas desnecessárias. O uso responsável da inteligência artificial permitirá orientar o cidadão, personalizar o atendimento e antecipar necessidades. Ao mesmo tempo, a ampliação do atendimento presencial assistido garantirá acesso aos serviços digitais para quem mais precisa de apoio, especialmente em comunidades rurais, localidades de difícil acesso e regiões mais vulneráveis.",

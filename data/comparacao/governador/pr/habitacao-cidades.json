@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-pr.json",
   "gerado_em": "2026-09-14T04:58:07Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "exportado_em": "2026-09-16T21:46:21Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Acesso à casa própria",
-   "proposta": "Ampliar a oferta de novas unidades habitacionais para famílias de baixa renda, com subsídio público e parceria entre Estado, municípios e agentes financeiros.",
+   "proposta": "Ampliar a oferta de novas unidades habitacionais para famílias de baixa renda.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -77,7 +77,7 @@
   {
    "id": "p2",
    "subtema": "Acesso à casa própria",
-   "proposta": "Expandir o programa de subsídio à entrada da casa própria (Casa Fácil Paraná), ampliando faixas de renda, municípios atendidos e valor do subsídio.",
+   "proposta": "Ampliar o subsídio à entrada da casa própria para mais famílias.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -302,7 +302,7 @@
   {
    "id": "p13",
    "subtema": "Áreas de risco e reassentamento",
-   "proposta": "Construir novas moradias para substituir habitações precárias em locais insalubres, com agilidade na doação de terrenos e no licenciamento.",
+   "proposta": "Prover novas moradias para substituir habitações precárias de famílias que vivem em locais insalubres ou de risco.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -370,7 +370,7 @@
   {
    "id": "p17",
    "subtema": "Urbanização de bairros e infraestrutura urbana",
-   "proposta": "Urbanizar assentamentos e bairros sem infraestrutura adequada, com água, esgoto, drenagem, iluminação, acessibilidade e espaços públicos.",
+   "proposta": "Realizar intervenções urbanas de infraestrutura, com acessibilidade e qualificação dos espaços públicos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -461,8 +461,8 @@
   {
    "id": "p20",
    "subtema": "Urbanização de bairros e infraestrutura urbana",
-   "proposta": "Apoiar os municípios na ampliação e modernização da iluminação pública.",
-   "n_concorda": 3,
+   "proposta": "Ampliar a iluminação pública.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
      "posicao": "concorda",
@@ -471,13 +471,6 @@
       164
      ],
      "nota": ""
-    },
-    "governador-pr-sergio-moro-160002540833": {
-     "posicao": "concorda",
-     "blocos": [
-      1503
-     ],
-     "nota": "Tecnologia LED e eficiência energética"
     },
     "governador-pr-sandro-alex-160002549553": {
      "posicao": "concorda",
@@ -631,7 +624,7 @@
   {
    "id": "p28",
    "subtema": "Planejamento urbano e apoio a municípios",
-   "proposta": "Apoiar os municípios na elaboração e revisão de planos diretores e no ordenamento do uso do solo.",
+   "proposta": "Apoiar os municípios no ordenamento do uso do solo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -654,7 +647,7 @@
    "id": "p29",
    "subtema": "Planejamento urbano e apoio a municípios",
    "proposta": "Fortalecer o apoio técnico às prefeituras na elaboração de projetos, convênios e viabilização de obras urbanas.",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
      "posicao": "concorda",
@@ -662,13 +655,6 @@
       1486
      ],
      "nota": "Programa Paraná + Municípios"
-    },
-    "governador-pr-sandro-alex-160002549553": {
-     "posicao": "concorda",
-     "blocos": [
-      2517
-     ],
-     "nota": "Ênfase em consórcios e cooperação intermunicipal"
     }
    }
   },
@@ -763,6 +749,121 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p36",
+   "subtema": "Acesso à casa própria",
+   "proposta": "Ampliar o acesso à moradia combinando novas unidades, reforma de casas, urbanização, locação social, mutirões e aproveitamento de imóveis adequados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      153
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p37",
+   "subtema": "Acesso à casa própria",
+   "proposta": "Levar 60 mil novas famílias à conquista do primeiro imóvel, com subsídios progressivos conforme a renda e a vulnerabilidade, além de locação social e moradia transitória.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      2432,
+      2434
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p39",
+   "subtema": "Áreas de risco e reassentamento",
+   "proposta": "Garantir reassentamento digno às famílias em áreas de risco não mitigável, com moradia definitiva ou locação transitória, participação das comunidades e manutenção do acesso a trabalho, escola, saúde e transporte.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      2482
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p40",
+   "subtema": "Urbanização de bairros e infraestrutura urbana",
+   "proposta": "Revitalizar áreas urbanas degradadas com intervenções de infraestrutura, paisagismo, mobilidade, acessibilidade e segurança, valorizando os espaços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      1507
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p41",
+   "subtema": "Urbanização de bairros e infraestrutura urbana",
+   "proposta": "Levar iluminação pública aos bairros sem infraestrutura adequada e aos percursos de pedestres, junto a calçadas acessíveis e travessias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      162,
+      164
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p42",
+   "subtema": "Urbanização de bairros e infraestrutura urbana",
+   "proposta": "Ampliar a iluminação urbana na urbanização de assentamentos e na requalificação de centros e bairros, com acessibilidade e qualificação de espaços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      2466,
+      2515
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p43",
+   "subtema": "Planejamento urbano e apoio a municípios",
+   "proposta": "Oferecer apoio técnico aos municípios para controle do uso do solo, proteção de áreas desocupadas e prevenção de novas ocupações vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      2483
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
   }
  ],
  "blocos": {
@@ -921,10 +1022,6 @@
     "texto": "• Territórios vulneráveis e centralidades locais: prioridade para áreas degradadas e territórios com baixa oferta de equipamentos, melhoria de vilas, distritos e aglomerações urbanas do meio rural e fortalecimento de centralidades locais;",
     "pagina": 171
    },
-   "2517": {
-    "texto": "• Cooperação intermunicipal: soluções urbanas compartilhadas, apoio a consórcios e associações municipais e intervenções rápidas e de alto impacto.",
-    "pagina": 171
-   },
    "2532": {
     "texto": "• Parques lineares e novos usos urbanos: transformação do trecho entre o Terminal do Cachoeira e a",
     "pagina": 172
@@ -997,10 +1094,6 @@
    },
    "1499": {
     "texto": "Fim da poeira e do barro: asfalto de qualidade no bairro. Apoiar os municípios na expansão da pavimentação urbana com soluções duráveis, melhor drenagem e acessibilidade, reduzindo custos de manutenção, ampliando a mobilidade e elevando a qualidade de vida da população.",
-    "pagina": 62
-   },
-   "1503": {
-    "texto": "Cidade bem iluminada é cidade mais segura. Apoiar os municípios na modernização da iluminação pública com tecnologia LED e eﬁciência energética, ampliando a segurança, reduzindo o consumo de energia e tornando as cidades mais sustentáveis.",
     "pagina": 62
    },
    "1507": {

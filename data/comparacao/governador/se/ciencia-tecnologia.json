@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-se.json",
   "gerado_em": "2026-09-14T22:37:24Z",
-  "exportado_em": "2026-09-14T23:10:55Z"
+  "exportado_em": "2026-09-16T21:41:06Z"
  },
  "candidatos": [
   {
@@ -77,7 +77,7 @@
   {
    "id": "p2",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Articular uma rede estadual de inovação integrando fundação de amparo à pesquisa, parque tecnológico, universidades, institutos, incubadoras e núcleos de inovação tecnológica",
+   "proposta": "Articular uma rede estadual de inovação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -176,7 +176,7 @@
   {
    "id": "p8",
    "subtema": "Fomento à pesquisa e formação de talentos",
-   "proposta": "Ampliar o fomento à pesquisa e à inovação por meio da fundação estadual de amparo à pesquisa, com mais editais e linhas de financiamento para áreas estratégicas",
+   "proposta": "Ampliar o fomento à pesquisa e à inovação",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -283,7 +283,7 @@
   {
    "id": "p14",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Expandir a infraestrutura de conectividade e universalizar o acesso à internet de alta velocidade nos municípios, incluindo áreas rurais e órgãos públicos",
+   "proposta": "Expandir a infraestrutura de conectividade digital nos municípios.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -346,7 +346,7 @@
   {
    "id": "p17",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Promover inclusão e letramento digital de cidadãos e servidores",
+   "proposta": "Promover a inclusão digital.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -368,7 +368,7 @@
   {
    "id": "p18",
    "subtema": "Incentivos à inovação empresarial",
-   "proposta": "Estimular o investimento empresarial em P&D e as parcerias entre governo, instituições de ensino e empresas, com compartilhamento de riscos da inovação",
+   "proposta": "Estimular o investimento empresarial em pesquisa e desenvolvimento.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -443,7 +443,7 @@
   {
    "id": "p22",
    "subtema": "Inovação no governo e transformação digital",
-   "proposta": "Integrar serviços, sistemas e bases de dados governamentais em ambiente único",
+   "proposta": "Integrar sistemas e bases de dados governamentais",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -584,6 +584,119 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p31",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Estimular a criação de Centros de Inovação e articular uma rede sergipana de inovação, fortalecendo a cultura empreendedora e o ecossistema inovador do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      593
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p32",
+   "subtema": "Fomento à pesquisa e formação de talentos",
+   "proposta": "Ampliar a oferta de editais de pesquisa e de formação de talentos alinhados às cadeias produtivas locais, com parcerias público-privadas em CT&I e integração das agências de fomento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      126
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p33",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Ampliar o acesso à internet de alta velocidade nos municípios sergipanos, com expansão da cobertura 5G, da rede estadual de fibra óptica, internet em espaços públicos e conectividade para órgãos públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      899,
+      1201
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p34",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Incentivar a inclusão digital por meio da expansão da infraestrutura de internet e da oferta de acesso em espaços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      1201
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p35",
+   "subtema": "Incentivos à inovação empresarial",
+   "proposta": "Estimular o investimento empresarial em P&D e fomentar parcerias público-privadas em ciência, tecnologia e inovação, integrando o setor privado ao ecossistema sergipano de inovação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      126
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p36",
+   "subtema": "Incentivos à inovação empresarial",
+   "proposta": "Criar o \"ICMS Tecnológico\", com incentivos tributários proporcionais às empresas que investirem em pesquisa e desenvolvimento de novas tecnologias no estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      367
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p37",
+   "subtema": "Inovação no governo e transformação digital",
+   "proposta": "Promover ações de transformação digital que integrem serviços, sistemas e bases de dados, no âmbito do programa estadual de aceleração digital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      128
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
   }
  ],
  "blocos": {

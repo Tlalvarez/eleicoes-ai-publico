@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-pb.json",
   "gerado_em": "2026-09-14T07:42:24Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -99,7 +99,7 @@
   {
    "id": "p2",
    "subtema": "Interiorização e polos regionais de inovação",
-   "proposta": "Implantar polos/distritos regionais de inovação para desconcentrar a ciência e a tecnologia pelo interior do estado",
+   "proposta": "Desconcentrar a ciência e a tecnologia, levando-as ao interior do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -195,7 +195,7 @@
    "id": "p7",
    "subtema": "Apoio a startups e financiamento da inovação",
    "proposta": "Apoiar o ecossistema de startups, hubs de inovação e incubadoras",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
      "posicao": "concorda",
@@ -217,13 +217,6 @@
      "blocos": [
       811,
       834
-     ],
-     "nota": ""
-    },
-    "governador-pb-pedro-coutinho-150002551911": {
-     "posicao": "concorda",
-     "blocos": [
-      177
      ],
      "nota": ""
     }
@@ -372,8 +365,8 @@
   {
    "id": "p15",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Ampliar a conectividade e reduzir a exclusão digital, levando internet e competências digitais a todos os municípios",
-   "n_concorda": 4,
+   "proposta": "Reduzir a exclusão digital na população.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
@@ -382,13 +375,6 @@
       82
      ],
      "nota": "Capacitação em larga escala de servidores e cidadãos"
-    },
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      157
-     ],
-     "nota": "Ampliação da conectividade por fibra óptica"
     },
     "governador-pb-camilo-duarte-150002552603": {
      "posicao": "concorda",
@@ -424,7 +410,7 @@
   {
    "id": "p17",
    "subtema": "Infraestrutura digital e computação",
-   "proposta": "Implantar data centers estaduais em parceria com universidades",
+   "proposta": "Implantar data centers.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -530,8 +516,8 @@
   {
    "id": "p23",
    "subtema": "Governança da inovação e governo digital",
-   "proposta": "Monitorar publicamente indicadores do ecossistema de inovação e revisar o plano periodicamente com os atores locais",
-   "n_concorda": 2,
+   "proposta": "Acompanhar publicamente indicadores do ecossistema de inovação e revisar o plano a cada ciclo junto com os atores locais.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
@@ -539,14 +525,6 @@
       88
      ],
      "nota": ""
-    },
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      824,
-      825
-     ],
-     "nota": "Avaliação de resultado e prestação pública de contas do fundo"
     }
    }
   },
@@ -554,7 +532,7 @@
    "id": "p24",
    "subtema": "Pesquisa aplicada e vocações regionais",
    "proposta": "Fomentar pesquisa aplicada às vocações regionais, como energias renováveis, bioeconomia da Caatinga e tecnologias para o semiárido",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
@@ -562,15 +540,107 @@
       843
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p25",
+   "subtema": "Interiorização e polos regionais de inovação",
+   "proposta": "Fortalecer a interiorização da ciência e da tecnologia com a consolidação do Complexo Científico do Sertão e do CIQUANTA como polo de excelência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      157,
+      158
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p26",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Capacitar servidores e cidadãos em competências digitais em larga escala, com serviços públicos digitais e atendimento humano para quem não domina as ferramentas.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
      "blocos": [
-      86
+      81,
+      82
      ],
-     "nota": "Energia limpa como credencial para atrair o novo parque tecnológico"
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p27",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Ampliar a conectividade por fibra óptica e qualificar talentos com formação técnica, científica e digital, interiorizando ciência e tecnologia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      157
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p28",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Promover inclusão digital e capacitação profissional nos municípios mais vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      833
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p29",
+   "subtema": "Infraestrutura digital e computação",
+   "proposta": "Consolidar o CIQUANTA como polo de excelência, com instalação de novos data centers e ampliação da conectividade por fibra óptica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      157
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p30",
+   "subtema": "Governança da inovação e governo digital",
+   "proposta": "Estruturar o Sistema Estadual de Inovação com governança única e avaliação de resultado, e operar o Fundo Estadual de Inovação com governança independente e prestação pública de contas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      824,
+      825
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
   }
  ],
  "blocos": {

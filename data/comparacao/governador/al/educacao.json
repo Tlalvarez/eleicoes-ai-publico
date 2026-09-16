@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-al.json",
   "gerado_em": "2026-09-14T07:59:59Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Ensino técnico e profissional",
-   "proposta": "Ampliar a oferta de educação profissional e técnica na rede estadual, com criação/expansão de escolas técnicas estaduais",
+   "proposta": "Ampliar a oferta de educação profissional e técnica na rede estadual.",
    "n_concorda": 3,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
@@ -160,15 +160,8 @@
    "id": "p6",
    "subtema": "Tecnologia e inovação no ensino",
    "proposta": "Incluir robótica, tecnologia e inteligência artificial na formação dos estudantes da rede",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-al-marcio-jambo-20002552502": {
-     "posicao": "concorda",
-     "blocos": [
-      16
-     ],
-     "nota": ""
-    },
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
      "blocos": [
@@ -221,7 +214,7 @@
   {
    "id": "p9",
    "subtema": "Tecnologia e inovação no ensino",
-   "proposta": "Garantir conectividade de alta velocidade, equipamentos e laboratórios em todas as escolas, com manutenção permanente",
+   "proposta": "Garantir conectividade de alta velocidade e laboratórios em escolas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -468,20 +461,12 @@
    "id": "p22",
    "subtema": "Alfabetização e recomposição da aprendizagem",
    "proposta": "Rever a progressão automática, impedindo que o estudante avance de ano sem dominar as competências essenciais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
      "posicao": "concorda",
      "blocos": [
       15
-     ],
-     "nota": ""
-    },
-    "governador-al-jhc-20002553350": {
-     "posicao": "concorda",
-     "blocos": [
-      218,
-      227
      ],
      "nota": ""
     }
@@ -490,7 +475,7 @@
   {
    "id": "p23",
    "subtema": "Permanência, incentivos e combate à evasão",
-   "proposta": "Conceder incentivo financeiro aos estudantes da rede estadual para estimular permanência e conclusão dos estudos",
+   "proposta": "Conceder incentivo financeiro aos estudantes da rede estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -897,6 +882,74 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p45",
+   "subtema": "Ensino técnico e profissional",
+   "proposta": "Ampliar a oferta de educação profissional e técnica com recursos do Propag destinados à educação profissional, oferecendo cursos conectados às vocações econômicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      287,
+      288
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p46",
+   "subtema": "Tecnologia e inovação no ensino",
+   "proposta": "Criar o Programa Escola Gigante, com unidades de ensino médio em tempo integral dotadas de internet de alta velocidade, laboratórios, bibliotecas, salas climatizadas e ambientes de inovação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      229
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p47",
+   "subtema": "Alfabetização e recomposição da aprendizagem",
+   "proposta": "Implantar programa de recomposição da aprendizagem nos anos iniciais do ensino fundamental, com avaliações periódicas, reforço escolar e formação de professores, garantindo que nenhuma criança avance de ano sem dominar as competências essenciais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      218,
+      227
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p48",
+   "subtema": "Permanência, incentivos e combate à evasão",
+   "proposta": "Ampliar o repasse de recursos aos alunos em até R$ 1.000 pelo Cartão Escola 1000, para estimular a aprendizagem e melhores notas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      253,
+      254,
+      255
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
   }
  ],
  "blocos": {

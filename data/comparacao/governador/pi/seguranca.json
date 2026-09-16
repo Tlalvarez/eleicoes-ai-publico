@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "seguranca-pi.json",
   "gerado_em": "2026-09-14T10:24:08Z",
-  "exportado_em": "2026-09-14T23:10:53Z"
+  "exportado_em": "2026-09-16T21:46:13Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Violência contra a mulher",
-   "proposta": "Fortalecer a política estadual de prevenção e enfrentamento à violência doméstica e ao feminicídio, com articulação entre segurança, justiça, saúde e assistência",
+   "proposta": "Fortalecer a política estadual de prevenção e enfrentamento à violência doméstica e ao feminicídio.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -66,7 +66,7 @@
   {
    "id": "p2",
    "subtema": "Violência contra a mulher",
-   "proposta": "Garantir dispositivo de acionamento emergencial (botão do pânico) conectado às forças de segurança para mulheres com medida protetiva",
+   "proposta": "Assegurar às mulheres com medida protetiva dispositivo conectado às forças de segurança para acionamento em situação de risco.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -90,7 +90,7 @@
   {
    "id": "p3",
    "subtema": "Violência contra a mulher",
-   "proposta": "Assegurar acolhimento e atendimento emergencial a mulheres em situação de risco com medidas protetivas",
+   "proposta": "Assegurar acolhimento a mulheres em situação de risco.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -298,7 +298,7 @@
   {
    "id": "p14",
    "subtema": "Inteligência e crime organizado",
-   "proposta": "Enfrentar as facções criminosas por meio de investigação patrimonial e financeira, com asfixia dos fluxos financeiros e recuperação de ativos",
+   "proposta": "Enfrentar as facções criminosas por meio de investigação patrimonial e financeira",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -471,20 +471,12 @@
    "id": "p23",
    "subtema": "Policiamento e presença territorial",
    "proposta": "Consolidar política estadual de prevenção à violência",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
      "posicao": "concorda",
      "blocos": [
       413
-     ],
-     "nota": ""
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      943,
-      988
      ],
      "nota": ""
     }
@@ -494,7 +486,7 @@
    "id": "p24",
    "subtema": "Policiamento e presença territorial",
    "proposta": "Apoiar tecnicamente a criação e estruturação de guardas municipais e integrá-las ao sistema estadual de informações de segurança",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
      "posicao": "concorda",
@@ -504,13 +496,6 @@
       426
      ],
      "nota": ""
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      974
-     ],
-     "nota": "Cooperação com guardas municipais na proteção às mulheres"
     }
    }
   },
@@ -705,7 +690,7 @@
   {
    "id": "p36",
    "subtema": "Trânsito e Detran",
-   "proposta": "Reduzir as mortes e lesões graves no trânsito com operações integradas de fiscalização (alcoolemia, velocidade, habilitação e condições dos veículos)",
+   "proposta": "Reduzir as mortes no trânsito",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -714,7 +699,13 @@
       477,
       483
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "mortalidade no trânsito",
+       "valor": "redução de 25% sobre 2025"
+      }
+     ]
     },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
@@ -746,7 +737,7 @@
   {
    "id": "p38",
    "subtema": "Trânsito e Detran",
-   "proposta": "Priorizar a proteção de motociclistas com apoio à obtenção de capacetes certificados por condutores de baixa renda e ações de educação para o trânsito",
+   "proposta": "Priorizar a proteção de motociclistas, com apoio à obtenção de capacetes certificados.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -888,7 +879,7 @@
   {
    "id": "p46",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Ampliar a participação de pessoas privadas de liberdade na remição pela leitura e na realização de exames educacionais como ENEM e ENCCEJA",
+   "proposta": "Ampliar a participação de pessoas privadas de liberdade em atividades de educação e remição da pena",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -922,6 +913,106 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p48",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Fortalecer as políticas de enfrentamento à violência contra a mulher, reduzindo a taxa de feminicídio em relação a 2025.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      459
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p49",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Implantar a tornozeleira rosa para monitorar eletronicamente agressores sob medida protetiva, com áreas de exclusão e central de alerta, ligando o equipamento ao telefone da vítima e às forças de segurança, e ampliar a Patrulha Maria da Penha com geolocalização conectada aos dispositivos das vítimas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      964,
+      974
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p50",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Implantar Casas de Passagem e Centros de Autonomia Financeira da Mulher.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      976
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p51",
+   "subtema": "Inteligência e crime organizado",
+   "proposta": "Estruturar o Núcleo de Inteligência Financeira da DRACO, com equipe dedicada, protocolo de análise patrimonial e integração com órgãos estaduais e federais de controle e fiscalização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      415,
+      416
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p52",
+   "subtema": "Trânsito e Detran",
+   "proposta": "Reduzir em 25% a taxa de mortalidade no trânsito até o fim do período, com base em 2025, e diminuir a mortalidade de motociclistas por meio da ampliação da CNH Social, da distribuição de capacetes certificados e de fiscalização intensiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      477,
+      483
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p54",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Implantar polos de trabalho, educação e qualificação profissional nas unidades prisionais, com remuneração e remição da pena, como instrumentos de disciplina e reintegração social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1003,
+      1010
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p46"
   }
  ],
  "blocos": {
@@ -929,10 +1020,6 @@
   "governador-pi-joel-rodrigues-180002538530": {
    "937": {
     "texto": "4.1 Proteção e cuidado da mulher e combate à impunidade",
-    "pagina": 51
-   },
-   "943": {
-    "texto": "Segurança pública exige presença territorial do Estado, prevenção orientada por dados, capacidade investigativa, resposta rápida e proteção efetiva às pessoas. O Piauí precisa superar uma atuação predominantemente reativa e adotar um modelo integrado, capaz de antecipar riscos, enfrentar organizações criminosas, reduzir a violência contra as mulheres e proteger a população no trânsito.",
     "pagina": 51
    },
    "945": {

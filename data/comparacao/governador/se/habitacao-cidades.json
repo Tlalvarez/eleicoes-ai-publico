@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-se.json",
   "gerado_em": "2026-09-14T22:19:02Z",
-  "exportado_em": "2026-09-14T23:10:55Z"
+  "exportado_em": "2026-09-16T21:41:06Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Produção de moradias",
-   "proposta": "Ampliar a construção e a oferta de novas moradias de interesse social para famílias de baixa renda",
+   "proposta": "Ampliar a construção e a oferta de novas moradias.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -72,7 +72,7 @@
   {
    "id": "p2",
    "subtema": "Produção de moradias",
-   "proposta": "Criar ou manter programa estadual nominado de produção habitacional, com priorização de públicos vulneráveis",
+   "proposta": "Criar ou manter programa estadual nominado de produção habitacional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -94,7 +94,7 @@
   {
    "id": "p3",
    "subtema": "Regularização fundiária",
-   "proposta": "Ampliar a regularização fundiária urbana, convertendo posse precária em segurança jurídica",
+   "proposta": "Ampliar a regularização fundiária urbana",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -139,8 +139,8 @@
   {
    "id": "p5",
    "subtema": "Apoio aos municípios",
-   "proposta": "Apoiar os municípios na estruturação da política urbana e habitacional local, com apoio técnico a planos, projetos e captação de recursos",
-   "n_concorda": 3,
+   "proposta": "Apoiar os municípios na estruturação da política habitacional local",
+   "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
      "posicao": "concorda",
@@ -148,13 +148,6 @@
       228
      ],
      "nota": "Incentivo à estruturação de políticas municipais de habitação"
-    },
-    "governador-se-valmir-de-francisquinho-260002532010": {
-     "posicao": "concorda",
-     "blocos": [
-      864
-     ],
-     "nota": "Foco em instrumentos modernos de planejamento urbano"
     },
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
@@ -207,16 +200,9 @@
   {
    "id": "p8",
    "subtema": "Urbanização e drenagem",
-   "proposta": "Urbanizar bairros, favelas e assentamentos precários com obras integradas de infraestrutura e melhoria habitacional",
-   "n_concorda": 2,
+   "proposta": "Urbanizar favelas, comunidades urbanas e assentamentos precários com obras integradas de infraestrutura e melhoria habitacional.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-se-valmir-de-francisquinho-260002532010": {
-     "posicao": "concorda",
-     "blocos": [
-      860
-     ],
-     "nota": "Urbanização de bairros em parceria com municípios"
-    },
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
@@ -404,6 +390,86 @@
      "nota": "Governança articulada com o município e a sociedade civil"
     }
    }
+  },
+  {
+   "id": "p21",
+   "subtema": "Produção de moradias",
+   "proposta": "Construir novas moradias e urbanizar bairros em parceria com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      860
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p22",
+   "subtema": "Produção de moradias",
+   "proposta": "Ampliar os programas estaduais de habitação Casa Sergipana, Casa Legal e Novo Lar, com oferta de novas moradias, regularização fundiária urbana de interesse social e melhoria de habitações precárias, para reduzir o déficit habitacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      228
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p24",
+   "subtema": "Regularização fundiária",
+   "proposta": "Ampliar e estimular a regularização fundiária dos imóveis urbanos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      861
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p25",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Incentivar a estruturação de políticas municipais de habitação, com diagnósticos, mapeamento e capacitação de instituições e movimentos sociais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      228
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p26",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Apoiar os municípios na elaboração de instrumentos modernos de planejamento urbano.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      864
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
   }
  ],
  "blocos": {

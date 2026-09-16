@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-am.json",
   "gerado_em": "2026-09-15T00:59:03Z",
-  "exportado_em": "2026-09-15T02:14:01Z"
+  "exportado_em": "2026-09-16T21:44:59Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Transferência de renda e benefícios",
-   "proposta": "Ampliar o valor do benefício estadual de transferência de renda (Auxílio Estadual Permanente)",
+   "proposta": "Fortalecer o benefício estadual de transferência de renda (Auxílio Estadual Permanente).",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -75,7 +75,13 @@
      "blocos": [
       35
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "valor do Auxílio Estadual",
+       "valor": "R$ 300,00"
+      }
+     ]
     },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -83,14 +89,26 @@
       482,
       484
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "Auxílio Estadual ampliado",
+       "valor": "R$ 250 mensais, 300 mil famílias"
+      }
+     ]
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
       736
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "valor do Auxílio Estadual",
+       "valor": "de R$ 150 para R$ 300/mês"
+      }
+     ]
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -144,33 +162,10 @@
    }
   },
   {
-   "id": "p4",
-   "subtema": "Transferência de renda e benefícios",
-   "proposta": "Ampliar o número de famílias beneficiárias da transferência de renda estadual",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      485
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      26157,
-      26447
-     ],
-     "nota": "Expansão gradual condicionada a focalização e sustentabilidade fiscal"
-    }
-   }
-  },
-  {
    "id": "p5",
    "subtema": "Transferência de renda e benefícios",
-   "proposta": "Integrar os programas de benefício e a assistência social a qualificação profissional, emprego e inclusão produtiva, como porta de saída",
-   "n_concorda": 5,
+   "proposta": "Integrar a assistência social à qualificação profissional, ao emprego e à inclusão produtiva, como porta de saída",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -193,13 +188,6 @@
       341
      ],
      "nota": "Conecta assistência a documentação, moradia e demais serviços"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      737
-     ],
-     "nota": ""
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -231,22 +219,8 @@
    "id": "p7",
    "subtema": "Transferência de renda e benefícios",
    "proposta": "Realizar busca ativa e cadastramento descentralizado para incluir famílias no Cadastro Único e nos benefícios, com cadastro permanentemente atualizado",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      487
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      676
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -286,7 +260,7 @@
   {
    "id": "p9",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Expandir e fortalecer a rede física de CRAS e CREAS nos municípios",
+   "proposta": "Apoiar os CRAS e CREAS nos municípios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -312,7 +286,7 @@
   {
    "id": "p10",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Cofinanciar com recursos estaduais os serviços, equipes e equipamentos do SUAS nos municípios",
+   "proposta": "Cofinanciar com recursos estaduais o SUAS nos municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -355,7 +329,7 @@
   {
    "id": "p12",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Interiorizar e regionalizar os serviços socioassistenciais, adaptando-os às realidades ribeirinhas, rurais e indígenas",
+   "proposta": "Interiorizar os serviços socioassistenciais no estado, levando-os aos municípios e territórios distantes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -387,7 +361,7 @@
   {
    "id": "p13",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Implantar assistência social itinerante com barcos/lanchas sociais, CRAS volantes e equipes fluviais multifuncionais",
+   "proposta": "Implantar assistência social itinerante com equipes fluviais para atender comunidades remotas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -415,7 +389,7 @@
   {
    "id": "p14",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Garantir emissão de documentação civil em territórios remotos, com equipes móveis e parcerias com Defensoria Pública e cartórios",
+   "proposta": "Garantir a emissão de documentação civil à população.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -478,7 +452,7 @@
   {
    "id": "p16",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Criar plataforma estadual unificada de monitoramento e vigilância socioassistencial com painéis de indicadores",
+   "proposta": "Criar sistema integrado de monitoramento do SUAS.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -507,15 +481,8 @@
    "id": "p17",
    "subtema": "SUAS e rede socioassistencial",
    "proposta": "Expandir postos estaduais de atendimento ao cidadão (PAC) integrados e digitais em todos os municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      138
-     ],
-     "nota": "Com ressalva de que os PACs não substituem CRAS, CREAS nem serviços municipais"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -525,7 +492,13 @@
       38159,
       38238
      ],
-     "nota": "Meta de 62 municípios até 2030, com pontos móveis fluviais"
+     "nota": "Meta de 62 municípios até 2030, com pontos móveis fluviais",
+     "metas": [
+      {
+       "rotulo": "PACs digitais integrados",
+       "valor": "todos os 62 municípios"
+      }
+     ]
     }
    }
   },
@@ -606,7 +579,7 @@
   {
    "id": "p22",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Fortalecer o controle social e a impessoalidade na assistência social, com regras claras e apoio aos conselhos",
+   "proposta": "Fortalecer o controle social na assistência social.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -655,29 +628,14 @@
    "id": "p24",
    "subtema": "Primeira infância, crianças e adolescentes",
    "proposta": "Integrar as ações de primeira infância entre saúde, nutrição, vacinação, educação e proteção social, com orientação e apoio às famílias",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      3
-     ],
-     "nota": ""
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
       552,
       556,
       557
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      26343,
-      26351
      ],
      "nota": ""
     }
@@ -695,7 +653,13 @@
       26359,
       26765
      ],
-     "nota": "Meta de ampliar em 40% crianças e gestantes acompanhadas"
+     "nota": "Meta de ampliar em 40% crianças e gestantes acompanhadas",
+     "metas": [
+      {
+       "rotulo": "crianças e gestantes acompanhadas",
+       "valor": "+40%; 100% dos municípios em 10 anos"
+      }
+     ]
     }
    }
   },
@@ -703,15 +667,8 @@
    "id": "p26",
    "subtema": "Primeira infância, crianças e adolescentes",
    "proposta": "Criar e reestruturar unidades de acolhimento institucional, com cofinanciamento estadual para construção, reforma e custeio",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      669
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -794,7 +751,7 @@
   {
    "id": "p31",
    "subtema": "Idosos e pessoas com deficiência",
-   "proposta": "Apoiar cuidadores familiares e famílias de idosos e pessoas com deficiência em situação de vulnerabilidade",
+   "proposta": "Apoiar cuidadores familiares e famílias de pessoas com deficiência.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -905,7 +862,13 @@
       26424,
       26425
      ],
-     "nota": "7 unidades modernizadas, 3 novos centros na capital e 35 no interior"
+     "nota": "7 unidades modernizadas, 3 novos centros na capital e 35 no interior",
+     "metas": [
+      {
+       "rotulo": "centros de convivência",
+       "valor": "modernizar 7 e construir 3 novos"
+      }
+     ]
     }
    }
   },
@@ -946,7 +909,7 @@
   {
    "id": "p38",
    "subtema": "Segurança alimentar",
-   "proposta": "Levar a rede de segurança alimentar aos municípios do interior, com metas de novas unidades",
+   "proposta": "Levar a rede de segurança alimentar aos municípios do interior",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -954,7 +917,13 @@
      "blocos": [
       585
      ],
-     "nota": "Expansão para os 62 municípios"
+     "nota": "Expansão para os 62 municípios",
+     "metas": [
+      {
+       "rotulo": "expansão da rede alimentar",
+       "valor": "62 municípios"
+      }
+     ]
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -965,15 +934,21 @@
       26778,
       26779
      ],
-     "nota": "35 novas unidades no interior até 2036"
+     "nota": "35 novas unidades no interior até 2036",
+     "metas": [
+      {
+       "rotulo": "unidades no interior",
+       "valor": "35 unidades"
+      }
+     ]
     }
    }
   },
   {
    "id": "p39",
    "subtema": "Segurança alimentar",
-   "proposta": "Abastecer os equipamentos de alimentação com compras da agricultura familiar local",
-   "n_concorda": 3,
+   "proposta": "Realizar compras da agricultura familiar local.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -981,14 +956,13 @@
       585,
       589
      ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      671
-     ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "compras da agricultura familiar",
+       "valor": "62 municípios"
+      }
+     ]
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -997,7 +971,13 @@
       26713,
       26714
      ],
-     "nota": "Integração ao PAA com 30% da agricultura familiar local"
+     "nota": "Integração ao PAA com 30% da agricultura familiar local",
+     "metas": [
+      {
+       "rotulo": "aquisição da agricultura familiar",
+       "valor": "30% da agricultura familiar local"
+      }
+     ]
     }
    }
   },
@@ -1015,31 +995,6 @@
       26669
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p41",
-   "subtema": "Segurança alimentar",
-   "proposta": "Criar programa de doação de alimentos e combate ao desperdício",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      590
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      26676,
-      26684,
-      26692,
-      26881
-     ],
-     "nota": "Projeto piloto \"Alimento para Todos\" com parcerias público-privadas"
     }
    }
   },
@@ -1097,16 +1052,9 @@
   {
    "id": "p45",
    "subtema": "População em situação de rua, drogas e migrantes",
-   "proposta": "Implantar política integrada para pessoas em situação de rua articulando moradia, saúde, documentação, assistência e trabalho",
-   "n_concorda": 3,
+   "proposta": "Implantar política integrada para pessoas em situação de rua, articulando saúde, assistência social e trabalho.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      28
-     ],
-     "nota": ""
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -1143,7 +1091,7 @@
   {
    "id": "p47",
    "subtema": "População em situação de rua, drogas e migrantes",
-   "proposta": "Integrar o atendimento a pessoas com dependência química à rede de saúde e de assistência social",
+   "proposta": "Promover a articulação integrada entre as áreas de assistência social e de saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -1178,7 +1126,13 @@
       26630,
       26645
      ],
-     "nota": "10 unidades para 80 pessoas cada e 1.200 vagas conveniadas"
+     "nota": "10 unidades para 80 pessoas cada e 1.200 vagas conveniadas",
+     "metas": [
+      {
+       "rotulo": "unidades e vagas",
+       "valor": "10 unidades (80 cada) e 1.200 vagas"
+      }
+     ]
     }
    }
   },
@@ -1201,7 +1155,7 @@
    "id": "p50",
    "subtema": "População em situação de rua, drogas e migrantes",
    "proposta": "Organizar o acolhimento e a inserção profissional de imigrantes e refugiados",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -1209,13 +1163,6 @@
       28
      ],
      "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      20523
-     ],
-     "nota": "Migrantes, refugiados e apátridas como público prioritário do Núcleo de Acolhimento"
     }
    }
   },
@@ -1303,7 +1250,7 @@
   {
    "id": "p55",
    "subtema": "Financiamento da proteção social",
-   "proposta": "Custear a proteção social com o Tesouro Estadual e os fundos estaduais de assistência social e de combate à pobreza, com prioridade orçamentária",
+   "proposta": "Custear a proteção social com os fundos estaduais de assistência social e de combate à pobreza.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1326,16 +1273,9 @@
   {
    "id": "p56",
    "subtema": "Financiamento da proteção social",
-   "proposta": "Implantar o reajuste e a expansão do benefício de forma gradual, dentro da capacidade fiscal e com previsão na LOA",
-   "n_concorda": 2,
+   "proposta": "Implantar o reajuste e a expansão do benefício de forma gradual, dentro da capacidade fiscal e com previsão de recursos na LOA.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      491
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1392,7 +1332,7 @@
   {
    "id": "p59",
    "subtema": "Emergências e desastres",
-   "proposta": "Garantir resposta rápida da assistência social a famílias atingidas por seca, cheia, incêndio, erosão e deslocamento",
+   "proposta": "Garantir resposta rápida da assistência social em situações de emergência ou desastre.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1501,7 +1441,7 @@
   {
    "id": "p65",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Adotar a intersetorialidade como princípio operacional, articulando permanentemente assistência social, saúde, educação, segurança e direitos humanos no atendimento integral às famílias",
+   "proposta": "Promover o atendimento integral às famílias por meio da articulação entre políticas setoriais, evitando ações isoladas.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -1643,7 +1583,7 @@
   {
    "id": "p72",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Ter CRAS/CREAS ativos e estruturados em 70% dos municípios e cobertura plena em 95% deles",
+   "proposta": "Ter CRAS/CREAS ativos e estruturados nos municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1659,14 +1599,20 @@
       26748,
       26749
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios com unidades ativas",
+       "valor": "70% e depois 95% com cobertura plena"
+      }
+     ]
     }
    }
   },
   {
    "id": "p73",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Colocar em operação 15 unidades itinerantes de assistência social (barcos/ônibus), ampliando para 30 unidades",
+   "proposta": "Colocar em operação unidades itinerantes de assistência social.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1682,24 +1628,22 @@
       26751,
       26752
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "unidades itinerantes operacionais",
+       "valor": "15 e depois 30 unidades"
+      }
+     ]
     }
    }
   },
   {
    "id": "p74",
    "subtema": "Transferência de renda e benefícios",
-   "proposta": "Ampliar em 15% e depois em 30% a inclusão de famílias ribeirinhas e indígenas no Cadastro Único em relação à linha de base de 2025",
-   "n_concorda": 2,
+   "proposta": "Ampliar a inclusão de famílias ribeirinhas e indígenas no Cadastro Único em 15% e, depois, em 30% em relação à linha de base de 2025.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      670,
-      676
-     ],
-     "nota": "Busca ativa para acesso a benefícios e equipes fluviais de documentação."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1791,7 +1735,7 @@
   {
    "id": "p80",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Implantar sistema de monitoramento e avaliação com coleta mensal de indicadores (RMA, VISDATA, SAA), avaliação semestral de resultados e avaliação bienal de impacto",
+   "proposta": "Implantar sistema de monitoramento das ações socioassistenciais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -1864,7 +1808,7 @@
   {
    "id": "p84",
    "subtema": "Povos indígenas e comunidades tradicionais",
-   "proposta": "Criar programa de acolhimento a povos tradicionais com busca ativa e equipes interculturais",
+   "proposta": "Implementar busca ativa para alcançar as populações atendidas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1918,7 +1862,7 @@
   {
    "id": "p87",
    "subtema": "SUAS e rede socioassistencial",
-   "proposta": "Integrar os serviços de assistência social às Unidades Flutuantes Digitais (barcos), com equipamentos para atualização de cadastros, emissão de documentos, acesso a benefícios e acompanhamento de casos em comunidades ribeirinhas",
+   "proposta": "Levar serviços de assistência social e documentação a comunidades ribeirinhas por meio de equipes fluviais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1966,6 +1910,493 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p90",
+   "subtema": "Transferência de renda e benefícios",
+   "proposta": "Expandir o Auxílio Estadual por meio do Bolsa Amazonas, com avaliação periódica da adequação do valor e da cobertura, baseada em indicadores socioeconômicos e nos limites fiscais do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26148,
+      26156,
+      26431,
+      26447
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p91",
+   "subtema": "Transferência de renda e benefícios",
+   "proposta": "Atender cerca de 300 mil famílias com a transferência de renda estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      485
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p92",
+   "subtema": "Transferência de renda e benefícios",
+   "proposta": "Expandir o número de beneficiários de forma gradual, conforme critérios de elegibilidade, focalização e sustentabilidade fiscal, com avaliações periódicas do valor do benefício e estudos sobre a cobertura.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26157,
+      26447
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p93",
+   "subtema": "Transferência de renda e benefícios",
+   "proposta": "Conectar a assistência social à documentação, segurança alimentar, qualificação, emprego, empreendedorismo e moradia, apoiando as famílias com condições de alcançar autonomia econômica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      341
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p94",
+   "subtema": "Transferência de renda e benefícios",
+   "proposta": "Combinar a proteção social da assistência com inclusão produtiva e geração de renda, construindo autonomia progressiva das famílias e pontes para emprego e renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      15945,
+      26039,
+      26158
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p95",
+   "subtema": "Transferência de renda e benefícios",
+   "proposta": "Manter o cadastro permanentemente atualizado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p98",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Recompor o repasse anual do cofinanciamento estadual e criar um fundo estadual de apoio à estruturação do SUAS, voltado ao cofinanciamento de obras e reformas municipais, com contrapartida mínima dos municípios, além de apoio técnico para garantir o financiamento tripartite.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26045,
+      26137,
+      26277
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p99",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Interiorizar a assistência social cofinanciando CRAS, CREAS, equipes volantes e unidades de acolhimento nos municípios e criando equipes fluviais de atendimento e documentação civil para comunidades remotas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      669,
+      670,
+      676
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p100",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Interiorizar os serviços socioassistenciais e reduzir desigualdades territoriais de acesso por meio de uma plataforma estadual unificada de monitoramento do SUAS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      742
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p102",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Incluir a emissão e regularização de documentação civil entre os serviços de assistência social do Estado, com orientação, encaminhamento e acompanhamento das famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      341
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p104",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Firmar parcerias com a Defensoria Pública e cartórios para emissão de RG, CPF e certidões em territórios remotos, articuladas a unidades itinerantes como barcos sociais e CRAS volantes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26127,
+      26176
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p106",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Integrar os sistemas de informação, vigilância socioassistencial e monitoramento em painel único, com painéis de indicadores socioassistenciais acessíveis à gestão, aos municípios e aos conselhos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26144,
+      26221,
+      26793
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p107",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Garantir que a assistência social não seja usada para controlar votos, com regras definidas, controle social e atendimento respeitoso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      677
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p109",
+   "subtema": "Idosos e pessoas com deficiência",
+   "proposta": "Criar auxílio mensal de R$ 500 para famílias vulneráveis no cuidado atípico, com apoio permanente às famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      498,
+      503
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p110",
+   "subtema": "Idosos e pessoas com deficiência",
+   "proposta": "Oferecer formação técnica a familiares e demais cuidadores de idosos e pessoas com deficiência, para prevenir negligência, violência e institucionalização precoce.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      743
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p112",
+   "subtema": "Segurança alimentar",
+   "proposta": "Ampliar as compras da agricultura familiar e expandir restaurantes populares, cozinhas comunitárias e bancos de alimentos para os 62 municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      585,
+      589
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p113",
+   "subtema": "Segurança alimentar",
+   "proposta": "Garantir cofinanciamento estadual e integração ao Programa de Aquisição de Alimentos (PAA), com 30% de compras da agricultura familiar local.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26668,
+      26713,
+      26714
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p114",
+   "subtema": "Segurança alimentar",
+   "proposta": "Combater a fome e o desperdício de alimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      590
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p115",
+   "subtema": "Segurança alimentar",
+   "proposta": "Criar o programa Alimento para Todos do Estado do Amazonas, com banco de alimentos, para assegurar à população carente acesso permanente e regular a alimentos de qualidade e em quantidade suficiente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26676,
+      26692,
+      26881
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p116",
+   "subtema": "População em situação de rua, drogas e migrantes",
+   "proposta": "Criar núcleo de acolhimento como espaço de atendimento intersetorial a pessoas em situação de rua.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      20523
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p125",
+   "subtema": "População em situação de rua, drogas e migrantes",
+   "proposta": "Criar casas de acolhimento transitório com atendimento de equipes de assistência social, apoio psicológico e familiar, acesso a benefícios e acompanhamento por CRAS e CREAS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26164
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p126",
+   "subtema": "População em situação de rua, drogas e migrantes",
+   "proposta": "Articular ações intersetoriais entre assistência social, saúde, educação, trabalho, segurança pública e direitos humanos para a população em situação de rua.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26161
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p127",
+   "subtema": "População em situação de rua, drogas e migrantes",
+   "proposta": "Instituir programa integrado de enfrentamento ao uso de drogas e reinserção social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26630
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p118",
+   "subtema": "Financiamento da proteção social",
+   "proposta": "Financiar as ações de assistência social com o Fundo Estadual de Assistência Social (FEAS), o Fundo de Promoção Social e Erradicação da Pobreza (FPS) e emendas parlamentares, destinando esses recursos a ações estruturantes e emergenciais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26128,
+      26837
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p119",
+   "subtema": "Financiamento da proteção social",
+   "proposta": "Implantar o reajuste do benefício de forma gradual e responsável, dentro da capacidade fiscal, garantindo seu caráter permanente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      491
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p56"
+  },
+  {
+   "id": "p120",
+   "subtema": "Emergências e desastres",
+   "proposta": "Criar gabinete de crise para respostas emergenciais a situações de calamidade, com planejamento antecipado, protocolos emergenciais, unidades itinerantes e barcos sociais, além de apoio técnico ao SUAS em cenários de emergência ou desastre.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      26140,
+      26803,
+      26868
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p121",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Integrar os programas de assistência social ao sistema de saúde no atendimento à população em situação de rua e a pessoas com dependência química, e vincular famílias beneficiárias à qualificação, ao emprego e ao empreendedorismo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      26,
+      28
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p122",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Garantir atendimento integrado entre saúde, educação e assistência, incluindo a articulação da educação infantil com nutrição, vacinação, proteção social e apoio às famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      502,
+      552,
+      556
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p124",
+   "subtema": "SUAS e rede socioassistencial",
+   "proposta": "Fortalecer e territorializar a política de assistência social, integrando-a a trabalho, habitação, saúde e segurança alimentar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      666
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
   }
  ],
  "blocos": {
@@ -1986,10 +2417,6 @@
    },
    "736": {
     "texto": "Dobrar o valor do Auxílio Estadual Permanente de R$ 150 para R$ 300 por mês. Além de garantir mais comida na mesa de quem precisa, essa medida colocará mais dinheiro em circulação, movimentará o comércio da capital e do interior e, consequentemente, gerará mais emprego e renda para a nossa população.",
-    "pagina": 61
-   },
-   "737": {
-    "texto": "- Melhorar a autonomia econômica e ampliar a capacidade de inclusão produtiva de famílias em situação de vulnerabilidade, com foco na segurança alimentar das famílias.",
     "pagina": 61
    },
    "742": {
@@ -2420,14 +2847,6 @@
     "texto": "• Recursos necessários: suplementação de recursos para OSCs; cofinanciamento para construção, reforma e custeio.",
     "pagina": 1093
    },
-   "26343": {
-    "texto": "Ampliação das ações Primeira Infância no SUAS.",
-    "pagina": 1093
-   },
-   "26351": {
-    "texto": "Ampliação das ações Primeira Infância no SUAS",
-    "pagina": 1093
-   },
    "26359": {
     "texto": "• Meta: ampliar em 40% o número de crianças e gestantes acompanhadas; garantir que 100% dos municípios priorizados realizem visitas domiciliares regulares e planos de acompanhamento familiar em até 10 anos.",
     "pagina": 1094
@@ -2642,10 +3061,6 @@
    },
    "26676": {
     "texto": "Criação do Alimento para Todos do Estado do Amazonas.",
-    "pagina": 1105
-   },
-   "26684": {
-    "texto": "Criação do Alimento para Todos do Estado do Amazonas",
     "pagina": 1105
    },
    "26686": {

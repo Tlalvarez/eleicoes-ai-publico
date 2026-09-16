@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-se.json",
   "gerado_em": "2026-09-14T22:17:23Z",
-  "exportado_em": "2026-09-14T22:38:19Z"
+  "exportado_em": "2026-09-16T21:41:06Z"
  },
  "candidatos": [
   {
@@ -45,15 +45,8 @@
    "id": "p1",
    "subtema": "Rodovias e conservação viária",
    "proposta": "Criar ou fortalecer um programa estadual permanente de recuperação, manutenção e conservação das rodovias estaduais, substituindo ações emergenciais por gestão contínua da malha",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-se-fabio-260002542491": {
-     "posicao": "concorda",
-     "blocos": [
-      235
-     ],
-     "nota": "Fortalecimento do Acelera Sergipe e do Pró-Rodovias"
-    },
     "governador-se-valmir-de-francisquinho-260002532010": {
      "posicao": "concorda",
      "blocos": [
@@ -76,7 +69,7 @@
   {
    "id": "p2",
    "subtema": "Rodovias e conservação viária",
-   "proposta": "Concluir obras rodoviárias e obras públicas estaduais paralisadas ou já iniciadas, priorizando as de maior impacto",
+   "proposta": "Concluir obras rodoviárias estaduais paralisadas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -169,7 +162,7 @@
   {
    "id": "p6",
    "subtema": "Rodovias e conservação viária",
-   "proposta": "Executar programa específico de inspeção, manutenção preventiva e recuperação de pontes",
+   "proposta": "Realizar manutenção preventiva de pontes.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -221,7 +214,7 @@
   {
    "id": "p9",
    "subtema": "Logística e integração de modais",
-   "proposta": "Modernizar a infraestrutura logística estadual e ampliar a competitividade do Estado com integração entre rodovias, ferrovias, portos e aeroportos",
+   "proposta": "Modernizar a infraestrutura logística estadual.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -368,7 +361,7 @@
   {
    "id": "p16",
    "subtema": "Mobilidade metropolitana e transporte público",
-   "proposta": "Implantar sistema multimodal integrado na Região Metropolitana de Aracaju, incluindo VLT",
+   "proposta": "Contemplar o VLT no transporte público da Região Metropolitana de Aracaju.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -497,7 +490,7 @@
   {
    "id": "p24",
    "subtema": "Planejamento e gestão da infraestrutura",
-   "proposta": "Elaborar plano ou política integrada de infraestrutura, logística e desenvolvimento regional com visão de médio e longo prazo",
+   "proposta": "Elaborar plano ou política integrada de infraestrutura, logística e desenvolvimento regional",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -550,6 +543,138 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p27",
+   "subtema": "Rodovias e conservação viária",
+   "proposta": "Fortalecer os programas Acelera Sergipe e Pró-Rodovias, com uma carteira de projetos de infraestrutura rodoviária e apoio aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      235
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p28",
+   "subtema": "Rodovias e conservação viária",
+   "proposta": "Concluir as obras rodoviárias paralisadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      844
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p29",
+   "subtema": "Rodovias e conservação viária",
+   "proposta": "Executar programa de conservação rodoviária que inclua conservação preventiva, drenagem, sinalização, acostamentos, recuperação de pontes, tratamento de pontos críticos, controle de peso, iluminação em travessias urbanas e contratos por desempenho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      394
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p30",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Implantar o Arco Metropolitano, a nova entrada de Aracaju e o Quadrilátero Viário, formando um corredor logístico que amplia a capacidade de transporte e a competitividade das regiões.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      231
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p31",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Estruturar uma rede integrada de infraestrutura estadual, articulada com obras federais e municipais, que conecte regiões, polos produtivos, áreas rurais, destinos turísticos, o Porto de Sergipe e as rodovias, com eficiência logística e segurança viária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      385
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p32",
+   "subtema": "Mobilidade metropolitana e transporte público",
+   "proposta": "Implantar o VLT na Grande Aracaju, ligando São Cristóvão, Aracaju, Nossa Senhora do Socorro e Laranjeiras, e estruturar um novo Sistema de Transporte Público Intermunicipal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      231,
+      232
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p33",
+   "subtema": "Mobilidade metropolitana e transporte público",
+   "proposta": "Elaborar estudos para implantar sistema multimodal na Região Metropolitana de Aracaju, integrando ônibus, VLT, bicicletas e transporte hidroviário.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      857
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p34",
+   "subtema": "Planejamento e gestão da infraestrutura",
+   "proposta": "Promover política integrada de infraestrutura e desenvolvimento regional, articulando investimentos públicos e privados para fortalecer a logística e integrar o território estadual, com planejamento territorial e estratégico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      779,
+      786,
+      812,
+      990
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
   }
  ],
  "blocos": {

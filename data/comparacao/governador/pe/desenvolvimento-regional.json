@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-pe.json",
   "gerado_em": "2026-09-14T19:14:26Z",
-  "exportado_em": "2026-09-14T19:15:24Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -59,8 +59,8 @@
   {
    "id": "p1",
    "subtema": "Interiorização do desenvolvimento",
-   "proposta": "Interiorizar o desenvolvimento e distribuir investimentos por todas as regiões do estado, reduzindo a concentração na Região Metropolitana do Recife",
-   "n_concorda": 5,
+   "proposta": "Promover o desenvolvimento no interior do estado.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
@@ -77,16 +77,6 @@
       927
      ],
      "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      99,
-      1163,
-      1164,
-      1169
-     ],
-     "nota": "Compromisso de fim da desigualdade territorial 'em tudo quanto é cidade'"
     },
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -107,7 +97,7 @@
   {
    "id": "p2",
    "subtema": "Interiorização do desenvolvimento",
-   "proposta": "Fortalecer polos produtivos e arranjos produtivos locais conforme as vocações econômicas de cada território (Agreste, Zona da Mata, Sertão, Vale do São Francisco)",
+   "proposta": "Fortalecer os polos produtivos e arranjos produtivos locais no interior do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -220,27 +210,58 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p10",
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Fortalecer as cidades-polo como centros regionais de serviços e desenvolvimento, com cofinanciamento, assistência técnica e apoio a projetos de equipamentos urbanos estratégicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p11",
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Levar investimentos para todo o estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      30
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p12",
+   "subtema": "Interiorização do desenvolvimento",
+   "proposta": "Interiorizar o desenvolvimento de Pernambuco e fortalecer os Arranjos Produtivos Locais do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      927
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
   }
  ],
  "blocos": {
-  "governador-pe-ivan-moraes-170002538097": {
-   "99": {
-    "texto": "O atual modelo de desenvolvimento concentra investimentos, infraestrutura, formação tecnológica e oportunidades na Região Metropolitana do Recife. Embora grandes projetos tenham contribuído para ampliar a atividade econômica estadual, os benefícios não foram distribuídos de maneira equilibrada entre os territórios. A Zona da Mata, o Agreste e o Sertão ainda enfrentam limitações de infraestrutura, crédito, assistência técnica, conectividade, logística e acesso aos mercados, aprofundando as desigualdades regionais e estimulando a migração em busca de trabalho e serviços públicos.",
-    "pagina": 9
-   },
-   "1163": {
-    "texto": "Do oceano ao Velho Chico",
-    "pagina": 84
-   },
-   "1164": {
-    "texto": "Acabou desigualdade",
-    "pagina": 84
-   },
-   "1169": {
-    "texto": "Em tudo quanto é cidade",
-    "pagina": 84
-   }
-  },
+  "governador-pe-ivan-moraes-170002538097": {},
   "governador-pe-joao-campos-170002537230": {
    "408": {
     "texto": "Fortalecer as cidades-polo como centros regionais de serviços e desenvolvimento, oferecendo cofinanciamento, assistência técnica e apoio à elaboração de projetos para implantação de equipamentos urbanos estratégicos como parques urbanos, terminais, mercados públicos, unidades de inovação e centrais de abastecimento, ampliando a oferta de serviços para os municípios do entorno.\n•",

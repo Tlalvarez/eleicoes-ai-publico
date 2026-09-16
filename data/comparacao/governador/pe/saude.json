@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-pe.json",
   "gerado_em": "2026-09-14T18:16:08Z",
-  "exportado_em": "2026-09-14T19:15:24Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Rede hospitalar e regionalização",
-   "proposta": "Descentralizar e interiorizar os serviços de média e alta complexidade, fortalecendo os hospitais regionais como referência e reduzindo a dependência da Região Metropolitana do Recife",
+   "proposta": "Descentralizar e interiorizar os serviços de saúde especializados, reduzindo a dependência da Região Metropolitana do Recife",
    "n_concorda": 5,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
@@ -109,7 +109,7 @@
   {
    "id": "p2",
    "subtema": "Rede hospitalar e regionalização",
-   "proposta": "Construir novos hospitais de referência no interior do estado",
+   "proposta": "Construir novos hospitais no interior do estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
@@ -177,7 +177,13 @@
      "blocos": [
       460
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "leitos do novo hospital",
+       "valor": "mais de 200 leitos"
+      }
+     ]
     }
    }
   },
@@ -278,7 +284,7 @@
   {
    "id": "p11",
    "subtema": "Atenção especializada, filas e regulação",
-   "proposta": "Expandir a telessaúde e a telemedicina para levar especialistas ao interior e reduzir deslocamentos",
+   "proposta": "Expandir a telessaúde e a telemedicina no estado.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -337,17 +343,9 @@
   {
    "id": "p13",
    "subtema": "Atenção especializada, filas e regulação",
-   "proposta": "Universalizar a Rede Estadual de Dados em Saúde (REDS) com prontuário eletrônico integrado em toda a rede",
-   "n_concorda": 3,
+   "proposta": "Universalizar a Rede Estadual de Dados em Saúde (REDS).",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      167,
-      168
-     ],
-     "nota": ""
-    },
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
      "blocos": [
@@ -454,8 +452,8 @@
   {
    "id": "p19",
    "subtema": "Atenção especializada, filas e regulação",
-   "proposta": "Ampliar a oferta de consultas especializadas, exames e cirurgias eletivas em unidades ambulatoriais regionais para reduzir filas",
-   "n_concorda": 4,
+   "proposta": "Ampliar a oferta de atendimentos e procedimentos especializados para reduzir as filas de espera",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -477,13 +475,6 @@
       513
      ],
      "nota": "Cofinanciamento de cirurgias eletivas em redes municipais pelo Cuida PE"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      739
-     ],
-     "nota": "Inclui reduzir filas de laqueadura com técnicas menos invasivas"
     }
    }
   },
@@ -530,7 +521,7 @@
   {
    "id": "p22",
    "subtema": "Atenção especializada, filas e regulação",
-   "proposta": "Fortalecer a linha de cuidado às doenças crônicas não transmissíveis com atendimento especializado descentralizado",
+   "proposta": "Fortalecer o cuidado às pessoas com doenças crônicas não transmissíveis.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -591,7 +582,7 @@
   {
    "id": "p25",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Criar política estadual de fortalecimento e cofinanciamento da atenção primária, apoiando municípios na estruturação das equipes de Saúde da Família",
+   "proposta": "Criar política estadual de fortalecimento da atenção primária, apoiando os municípios na estruturação das equipes de Saúde da Família",
    "n_concorda": 4,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -634,7 +625,7 @@
   {
    "id": "p26",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Fortalecer a atenção primária em saúde bucal, com recomposição de equipes e ampliação do acesso",
+   "proposta": "Fortalecer a atenção primária em saúde bucal",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -687,8 +678,8 @@
   {
    "id": "p29",
    "subtema": "Saúde mental e políticas de drogas",
-   "proposta": "Cofinanciar com recursos estaduais a expansão e a manutenção de CAPS, inclusive de funcionamento 24 horas nos polos regionais",
-   "n_concorda": 4,
+   "proposta": "Cofinanciar com recursos estaduais a expansão e a manutenção de CAPS.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -711,21 +702,13 @@
       74
      ],
      "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      524,
-      526
-     ],
-     "nota": "Ênfase na descentralização e desinstitucionalização"
     }
    }
   },
   {
    "id": "p30",
    "subtema": "Saúde mental e políticas de drogas",
-   "proposta": "Ampliar e regular leitos integrais de saúde mental e de álcool e outras drogas em hospitais gerais",
+   "proposta": "Ampliar leitos integrais de saúde mental em hospitais gerais",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
@@ -792,7 +775,7 @@
   {
    "id": "p33",
    "subtema": "Saúde mental e políticas de drogas",
-   "proposta": "Qualificar a atenção primária em saúde mental com matriciamento e capacitação das equipes das UBS",
+   "proposta": "Capacitar as equipes das Unidades Básicas de Saúde para a atenção em saúde mental.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -893,7 +876,7 @@
    "id": "p39",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Implantar e fortalecer maternidades e hospitais de referência em gestação de alto risco nas macrorregiões, garantindo parto perto de casa",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -914,21 +897,6 @@
       487
      ],
      "nota": "Conclusão das maternidades de Ouricuri, Igarassu, Garanhuns e Serra Talhada e do CISAM"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      80,
-      739
-     ],
-     "nota": ""
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      858
-     ],
-     "nota": "Reverter o fechamento dos partos de alto risco no Hospital Regional de Salgueiro"
     }
    }
   },
@@ -957,7 +925,7 @@
   {
    "id": "p41",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Oferecer orientação e triagem a distância para gestantes e puérperas, com teleconsultas e suporte permanente",
+   "proposta": "Ampliar serviços de orientação e triagem a distância para gestantes e puérperas",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -965,7 +933,13 @@
      "blocos": [
       172
      ],
-     "nota": "Programa Atende Gestante, com atendimento 24 horas"
+     "nota": "Programa Atende Gestante, com atendimento 24 horas",
+     "metas": [
+      {
+       "rotulo": "atendimento a distância",
+       "valor": "24 horas por dia"
+      }
+     ]
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
@@ -1010,8 +984,8 @@
   {
    "id": "p43",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Ampliar a política de saúde da mulher para todo o ciclo de vida, além do pré-natal e do parto",
-   "n_concorda": 3,
+   "proposta": "Ampliar a política de saúde da mulher para além do pré-natal e do parto.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -1026,13 +1000,6 @@
       739
      ],
      "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1553
-     ],
-     "nota": "Foco em mulheres servidoras e mães cuidadoras"
     }
    }
   },
@@ -1055,7 +1022,7 @@
   {
    "id": "p45",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Criar política estadual de enfrentamento à violência obstétrica e garantia do parto humanizado",
+   "proposta": "Garantir o parto humanizado nos serviços de saúde do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
@@ -1078,20 +1045,13 @@
    "id": "p46",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Ampliar o acesso a métodos contraceptivos e à orientação em saúde sexual e reprodutiva, articulada com as escolas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
      "blocos": [
       87,
       739
-     ],
-     "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      491
      ],
      "nota": ""
     }
@@ -1101,7 +1061,7 @@
    "id": "p47",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Intensificar prevenção, diagnóstico e tratamento de ISTs, com prioridade para sífilis congênita e transmissão vertical do HIV",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
@@ -1109,13 +1069,6 @@
       492
      ],
      "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      87
-     ],
-     "nota": "Via política intersetorial de educação sexual nas escolas"
     }
    }
   },
@@ -1123,7 +1076,7 @@
    "id": "p48",
    "subtema": "Pessoa com deficiência e TEA",
    "proposta": "Descentralizar e regionalizar os serviços de reabilitação e de atendimento a pessoas com TEA e outros transtornos do neurodesenvolvimento",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
      "posicao": "concorda",
@@ -1148,13 +1101,6 @@
       506
      ],
      "nota": "Conclusão das UPAE-R de Caruaru, Serra Talhada e Petrolina"
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      739
-     ],
-     "nota": ""
     }
    }
   },
@@ -1162,7 +1108,7 @@
    "id": "p49",
    "subtema": "Pessoa com deficiência e TEA",
    "proposta": "Criar programa de acolhimento e acompanhamento integrado às famílias de crianças com TEA, articulando saúde, assistência social e educação",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -1176,13 +1122,6 @@
      "posicao": "concorda",
      "blocos": [
       505
-     ],
-     "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      739
      ],
      "nota": ""
     }
@@ -1221,7 +1160,7 @@
   {
    "id": "p52",
    "subtema": "Profissionais de saúde e gestão",
-   "proposta": "Adotar política de fixação de profissionais de saúde no interior, com incentivos, carreira e residências",
+   "proposta": "Adotar política de fixação de profissionais de saúde no interior do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
@@ -1251,7 +1190,7 @@
   {
    "id": "p53",
    "subtema": "Profissionais de saúde e gestão",
-   "proposta": "Realizar concursos públicos para a rede estadual de saúde, reduzindo vínculos precários e seleções simplificadas",
+   "proposta": "Realizar concursos públicos para a rede estadual de saúde",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
@@ -1273,7 +1212,7 @@
   {
    "id": "p54",
    "subtema": "Profissionais de saúde e gestão",
-   "proposta": "Valorizar os servidores da saúde e fortalecer o SUS com prioridade à rede própria estatal",
+   "proposta": "Fortalecer o SUS com prioridade à rede pública própria.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -1374,7 +1313,7 @@
   {
    "id": "p60",
    "subtema": "Profissionais de saúde e gestão",
-   "proposta": "Investir na formação de profissionais da atenção básica, incluindo agentes comunitários, dentistas e enfermagem",
+   "proposta": "Investir na formação de profissionais de saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
@@ -1397,7 +1336,7 @@
    "id": "p61",
    "subtema": "Vigilância em saúde",
    "proposta": "Ampliar o financiamento e o apoio estadual à vigilância em saúde dos municípios, com monitoramento permanente e resposta rápida a arboviroses e outros agravos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-ivan-moraes-170002538097": {
      "posicao": "concorda",
@@ -1405,14 +1344,6 @@
       73
      ],
      "nota": ""
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      871,
-      872
-     ],
-     "nota": "Uso de drones, mapas de calor do LIRAa e canais digitais de denúncia"
     }
    }
   },
@@ -1466,7 +1397,7 @@
   {
    "id": "p65",
    "subtema": "Medicamentos e assistência farmacêutica",
-   "proposta": "Ampliar a assistência farmacêutica estadual com garantia de abastecimento e entrega domiciliar de medicamentos a pacientes crônicos",
+   "proposta": "Ampliar a assistência farmacêutica estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -1597,6 +1528,370 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p73",
+   "subtema": "Rede hospitalar e regionalização",
+   "proposta": "Aproximar os serviços hospitalares da população, garantindo atendimento próximo de casa e dispensando o deslocamento à capital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      1187,
+      1189,
+      1190,
+      1191,
+      1192
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p74",
+   "subtema": "Rede hospitalar e regionalização",
+   "proposta": "Concluir o novo prédio e ampliar o Hospital Regional do Agreste, em Caruaru, dobrando sua capacidade, e construir um novo hospital municipal em Petrolina, com atendimento adulto e pediátrico, leitos, exames diagnósticos e cirurgias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      461,
+      468
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p75",
+   "subtema": "Atenção especializada, filas e regulação",
+   "proposta": "Expandir a telemedicina no estado, interiorizando o acesso a especialistas para reduzir a superlotação das unidades estaduais e agilizar diagnósticos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      478,
+      479
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p76",
+   "subtema": "Atenção especializada, filas e regulação",
+   "proposta": "Garantir telessaúde e tecnologias de apoio ao diagnóstico nas unidades básicas, para que resolvam mais problemas no próprio território.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      72
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p77",
+   "subtema": "Atenção especializada, filas e regulação",
+   "proposta": "Modernizar e integrar totalmente a Rede Estadual de Dados em Saúde (REDS), auditando e publicando o percentual real de unidades e municípios já integrados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      836,
+      837,
+      838
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p78",
+   "subtema": "Atenção especializada, filas e regulação",
+   "proposta": "Cofinanciar cirurgias eletivas nas redes municipais pelo Cuida PE, descentralizando o atendimento e reduzindo filas de espera",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      513
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p79",
+   "subtema": "Atenção especializada, filas e regulação",
+   "proposta": "Ampliar o acompanhamento de pacientes com condições crônicas por meio de consultas e consultorias com endocrinologistas, cardiologistas, pneumologistas e nutricionistas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      166
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p80",
+   "subtema": "Atenção especializada, filas e regulação",
+   "proposta": "Criar programa estadual de cofinanciamento e complementação ao Requalifica UBS, ampliando equipes de Saúde da Família e de Enfermagem para acompanhar doenças crônicas e evitar internações.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      867
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p81",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Criar política estadual de fortalecimento da atenção primária para expandir a Estratégia de Saúde da Família, com prioridade para áreas rurais, comunidades de difícil acesso e territórios com vazios assistenciais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      180
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p82",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Apoiar os municípios no fortalecimento da atenção primária, implementando o Programa Qualifica APS e reestruturando as equipes da Estratégia de Saúde da Família.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      406,
+      509,
+      511
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p83",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Instituir política estadual de apoio aos municípios para universalizar a atenção básica, com formação de profissionais, estrutura, equipamentos, exames e telessaúde nas unidades básicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      72
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p84",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Fortalecer a atenção primária em saúde bucal por meio do Programa Pernambuco Sorrindo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      512
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p85",
+   "subtema": "Saúde mental e políticas de drogas",
+   "proposta": "Criar uma política estadual de cofinanciamento da Rede de Atenção Psicossocial, com apoio à abertura e à manutenção de novos CAPS, ampliação das equipes de redução de danos e fortalecimento dos consultórios na rua.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      73,
+      74
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p86",
+   "subtema": "Saúde mental e políticas de drogas",
+   "proposta": "Abrir e ampliar leitos integrais de saúde mental e de álcool e outras drogas em hospitais gerais, com atendimento de base territorial e comunitária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      74
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p87",
+   "subtema": "Saúde mental e políticas de drogas",
+   "proposta": "Incentivar treinamentos intersetoriais nas Unidades Básicas de Saúde para acolhimento humanizado, com ênfase na proteção da saúde mental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      491
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p88",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Ampliar os serviços de orientação e triagem a distância em saúde da mulher, com monitoramento intersetorial de gestantes, puérperas e crianças.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      489
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p89",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Garantir cuidado integral em todos os eventos da vida reprodutiva, com serviços descentralizados de aborto legal, ampliação do acesso a contraceptivos e política estadual contra a violência obstétrica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      739
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p90",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Ampliar e interiorizar a rede de hospitais da mulher, com foco em parto humanizado e gestação de alto risco.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      235
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p91",
+   "subtema": "Profissionais de saúde e gestão",
+   "proposta": "Interiorizar profissionais de saúde contratando médicos, enfermeiros e equipes técnicas por concurso público estatutário, com salários dignos, para fixá-los no interior do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      52
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p52"
+  },
+  {
+   "id": "p93",
+   "subtema": "Profissionais de saúde e gestão",
+   "proposta": "Fortalecer o SUS com o fim do repasse de verbas públicas a organizações sociais privadas e garantia de saúde pública e gratuita para todos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      48,
+      96
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p94",
+   "subtema": "Profissionais de saúde e gestão",
+   "proposta": "Ampliar a formação médica na universidade estadual, as residências e a rede de preceptores, com adesão ao Mais Médicos e ao Mais Médicos Especialistas, para garantir profissionais em todo o estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      163
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p60"
+  },
+  {
+   "id": "p95",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Ampliar a assistência farmacêutica estadual com entrega domiciliar de medicamentos pelo Programa Remédio na Porta.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      533
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
   }
  ],
  "blocos": {
@@ -1999,10 +2294,6 @@
     "texto": "g. Ampliar o Programa Planifica PE (Planificação da Atenção à Saúde) para as Macrorregiões de Saúde II e III, fortalecendo o atendimento à população desde a Atenção Primária até a Atenção Especializada. Raquel 55",
     "pagina": 34
    },
-   "524": {
-    "texto": "8. Consolidar a Linha de Cuidado da Rede de Atenção Psicossocial (RAPS), assegurando um acolhimento humanizado, descentralizado e focado na desinstitucionalização.",
-    "pagina": 35
-   },
    "526": {
     "texto": "a. Garantir a descentralização da rede de Saúde Mental, integrando o cuidado aos municípios por meio da ampliação e regulação de leitos integrais em hospitais gerais, contemplando unidades estratégicas.",
     "pagina": 35
@@ -2034,10 +2325,6 @@
    "1475": {
     "texto": "a. Concluir a modernização e ampliação do Hospital São Lucas.",
     "pagina": 95
-   },
-   "1553": {
-    "texto": "b. Aperfeiçoar as políticas de saúde voltadas às mulheres servidoras e às mães cuidadoras.",
-    "pagina": 101
    }
   },
   "governador-pe-renan-170002540337": {
@@ -2147,14 +2434,6 @@
    },
    "870": {
     "texto": "b) Criar linha estadual complementar de investimento em UBS não contempladas pelo programa federal.",
-    "pagina": 55
-   },
-   "871": {
-    "texto": "7. Modernizar o Controle de Vetores e Zoonoses com Inteligência Epidemiológico-",
-    "pagina": 55
-   },
-   "872": {
-    "texto": "Articulado entre a Vigilância em Saúde e a Agência Estadual de Meio Ambiente, migrando de políticas reativas para a prevenção baseada em inteligência epidemiológica, com uso de drones, mapas de calor do LIRAa e canais digitais de denúncia.",
     "pagina": 55
    },
    "874": {

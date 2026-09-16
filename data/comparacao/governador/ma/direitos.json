@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "direitos-ma.json",
   "gerado_em": "2026-09-14T21:54:12Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
    "id": "p1",
    "subtema": "Igualdade racial",
    "proposta": "Adotar e ampliar políticas públicas estaduais de promoção da igualdade racial e de enfrentamento à discriminação",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -76,14 +76,6 @@
      "blocos": [
       420,
       421
-     ],
-     "nota": ""
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      350,
-      632
      ],
      "nota": ""
     },
@@ -178,7 +170,7 @@
   {
    "id": "p7",
    "subtema": "Quilombolas e povos indígenas",
-   "proposta": "Garantir consulta prévia, livre e informada aos povos e comunidades tradicionais em projetos com impacto territorial",
+   "proposta": "Garantir processos de consulta.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-felipe-camarao-100002542556": {
@@ -307,7 +299,7 @@
   {
    "id": "p15",
    "subtema": "Mulheres",
-   "proposta": "Promover a autonomia econômica das mulheres por meio de capacitação profissional e acesso facilitado a crédito",
+   "proposta": "Promover a autonomia econômica das mulheres.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -412,8 +404,8 @@
   {
    "id": "p21",
    "subtema": "Pessoas com deficiência",
-   "proposta": "Garantir acessibilidade nos prédios e equipamentos públicos estaduais, com as adequações necessárias",
-   "n_concorda": 2,
+   "proposta": "Garantir acessibilidade nos prédios públicos da administração estadual, promovendo as adequações necessárias.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -421,14 +413,6 @@
       163
      ],
      "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2379,
-      2382
-     ],
-     "nota": "Acessibilidade física, comunicacional e digital como padrão"
     }
    }
   },
@@ -614,7 +598,7 @@
    "id": "p33",
    "subtema": "População LGBTQIAPN+",
    "proposta": "Implantar política estadual de prevenção e combate à violência e à discriminação contra pessoas LGBTQIAPN+, com acesso a direitos e atendimento às vítimas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -622,13 +606,6 @@
       428
      ],
      "nota": "Programa com atendimento jurídico e psicológico gratuito"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2422
-     ],
-     "nota": "Foco em atendimento humanizado e registro padronizado de denúncias"
     }
    }
   },
@@ -935,6 +912,72 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p54",
+   "subtema": "Igualdade racial",
+   "proposta": "Dar prioridade à população negra, a quilombolas e a povos tradicionais no crédito, nas compras públicas e nas cadeias produtivas, tomando a redução da desigualdade como critério de sucesso do plano econômico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      350,
+      632
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p55",
+   "subtema": "Quilombolas e povos indígenas",
+   "proposta": "Adotar protocolos de consulta e escuta presencial e digital em projetos estaduais com impacto territorial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2411
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p56",
+   "subtema": "Mulheres",
+   "proposta": "Promover a autonomia econômica das mulheres de forma articulada ao enfrentamento da violência de gênero e do feminicídio e à paridade nos espaços de decisão, com o Programa Mulheres Negras Protagonistas voltado a mulheres negras, quilombolas e de comunidades tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      294
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p57",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Realizar auditoria progressiva de acessibilidade nos principais equipamentos estaduais e exigir desenho universal desde a concepção dos novos projetos públicos, com acessibilidade física, comunicacional e digital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2379,
+      2382
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
   }
  ],
  "blocos": {

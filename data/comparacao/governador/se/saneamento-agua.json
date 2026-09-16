@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-se.json",
   "gerado_em": "2026-09-14T22:18:25Z",
-  "exportado_em": "2026-09-14T23:10:55Z"
+  "exportado_em": "2026-09-16T21:41:06Z"
  },
  "candidatos": [
   {
@@ -44,25 +44,8 @@
    "id": "p1",
    "subtema": "Segurança hídrica",
    "proposta": "Ampliar a segurança hídrica e a infraestrutura hídrica do estado, com gestão integrada dos recursos hídricos",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-se-fabio-260002542491": {
-     "posicao": "concorda",
-     "blocos": [
-      287,
-      288
-     ],
-     "nota": ""
-    },
-    "governador-se-valmir-de-francisquinho-260002532010": {
-     "posicao": "concorda",
-     "blocos": [
-      817,
-      823,
-      1027
-     ],
-     "nota": ""
-    },
     "governador-se-ricardo-marques-260002549466": {
      "posicao": "concorda",
      "blocos": [
@@ -76,7 +59,7 @@
   {
    "id": "p2",
    "subtema": "Segurança hídrica",
-   "proposta": "Implantar sistema permanente de monitoramento hidrológico e da qualidade da água",
+   "proposta": "Fortalecer os sistemas de monitoramento da água, incluindo a qualidade da água.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -105,7 +88,7 @@
   {
    "id": "p3",
    "subtema": "Segurança hídrica",
-   "proposta": "Elaborar e implementar o Plano Estadual de Segurança Hídrica",
+   "proposta": "Atuar sobre o Plano Estadual de Segurança Hídrica",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -157,7 +140,7 @@
   {
    "id": "p5",
    "subtema": "Gestão de bacias e mananciais",
-   "proposta": "Fortalecer os comitês de bacia hidrográfica e a gestão participativa da água",
+   "proposta": "Fortalecer os comitês de bacia hidrográfica",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -179,7 +162,7 @@
   {
    "id": "p6",
    "subtema": "Gestão de bacias e mananciais",
-   "proposta": "Fortalecer o controle e a fiscalização das outorgas e dos usos da água",
+   "proposta": "Fortalecer o controle das outorgas e dos usos da água",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -239,7 +222,7 @@
   {
    "id": "p9",
    "subtema": "Abastecimento de água e esgoto",
-   "proposta": "Universalizar os serviços de abastecimento de água e esgotamento sanitário",
+   "proposta": "Ampliar a cobertura dos serviços de saneamento.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -292,7 +275,7 @@
   {
    "id": "p11",
    "subtema": "Abastecimento de água e esgoto",
-   "proposta": "Levar abastecimento de água e soluções de saneamento a comunidades rurais, povoados e assentamentos historicamente desassistidos",
+   "proposta": "Levar abastecimento de água e soluções de saneamento a comunidades rurais e povoados.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -362,7 +345,7 @@
   {
    "id": "p15",
    "subtema": "Concessão e regulação do saneamento",
-   "proposta": "Fortalecer a regulação, a fiscalização e a transparência sobre a concessionária dos serviços de água e esgoto",
+   "proposta": "Fortalecer a regulação, a fiscalização e a transparência sobre os serviços de água e esgoto",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -522,7 +505,7 @@
   {
    "id": "p23",
    "subtema": "Adaptação climática e eventos extremos",
-   "proposta": "Fortalecer a capacidade de adaptação às mudanças climáticas e a prevenção de eventos extremos ligados à água",
+   "proposta": "Fortalecer a prevenção de eventos extremos ligados à água.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -542,6 +525,204 @@
      "nota": "Integra defesa civil e monitoramento de áreas inundáveis"
     }
    }
+  },
+  {
+   "id": "p24",
+   "subtema": "Segurança hídrica",
+   "proposta": "Promover a gestão sustentável e integrada dos recursos hídricos, com implementação do Plano Estadual de Segurança Hídrica, modernização do monitoramento e conservação das bacias hidrográficas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      287,
+      288
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Segurança hídrica",
+   "proposta": "Ampliar a infraestrutura hídrica e a segurança hídrica, com foco na convivência com o semiárido.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      817,
+      823,
+      1027
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p26",
+   "subtema": "Segurança hídrica",
+   "proposta": "Modernizar os sistemas de monitoramento e conservar as bacias hidrográficas, garantindo disponibilidade e qualidade da água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      288
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p27",
+   "subtema": "Segurança hídrica",
+   "proposta": "Implantar sistema permanente de monitoramento da qualidade da água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      930
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p29",
+   "subtema": "Segurança hídrica",
+   "proposta": "Elaborar o Plano Estadual de Segurança Hídrica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      929
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p30",
+   "subtema": "Gestão de bacias e mananciais",
+   "proposta": "Fortalecer os comitês de bacias hidrográficas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      931
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p31",
+   "subtema": "Gestão de bacias e mananciais",
+   "proposta": "Fortalecer o controle das outorgas de uso da água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      935
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p32",
+   "subtema": "Abastecimento de água e esgoto",
+   "proposta": "Apoiar os municípios na universalização do saneamento básico e expandir a infraestrutura urbana.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      859,
+      937
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p33",
+   "subtema": "Abastecimento de água e esgoto",
+   "proposta": "Acelerar a expansão, manutenção e recuperação da rede de esgoto, priorizando áreas densamente ocupadas, municípios com maior déficit e territórios ambientalmente vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      694
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p34",
+   "subtema": "Abastecimento de água e esgoto",
+   "proposta": "Levar abastecimento de água e soluções descentralizadas de esgotamento sanitário a povoados, assentamentos, comunidades tradicionais e áreas rurais distantes das redes convencionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      677,
+      696
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p35",
+   "subtema": "Concessão e regulação do saneamento",
+   "proposta": "Fortalecer o controle, a regulação e a transparência das operações dos serviços de água e esgoto, garantindo o cumprimento das metas contratuais e a execução acelerada dos investimentos previstos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      290
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p36",
+   "subtema": "Adaptação climática e eventos extremos",
+   "proposta": "Aperfeiçoar o sistema estadual integrado de informações, monitoramento e alerta hídrico, abrangendo eventos críticos, áreas inundáveis e riscos de desabastecimento, com cooperação entre órgãos de recursos hídricos, defesa civil, municípios, comitês de bacia e universidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      665,
+      699
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-sc.json",
   "gerado_em": "2026-09-14T18:26:48Z",
-  "exportado_em": "2026-09-14T18:27:49Z"
+  "exportado_em": "2026-09-16T20:04:59Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Redução das desigualdades regionais",
-   "proposta": "Adotar política de desenvolvimento regional voltada a reduzir as desigualdades entre as regiões do estado, por meio de investimentos estratégicos e descentralizados",
+   "proposta": "Adotar política de desenvolvimento regional voltada a reduzir as desigualdades entre as regiões do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
@@ -85,15 +85,8 @@
    "id": "p2",
    "subtema": "Redução das desigualdades regionais",
    "proposta": "Reconhecer e potencializar as vocações produtivas e potencialidades de cada região como base de estratégias regionais de desenvolvimento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      343
-     ],
-     "nota": ""
-    },
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
      "blocos": [
@@ -107,7 +100,7 @@
   {
    "id": "p3",
    "subtema": "Cooperação com municípios e consórcios",
-   "proposta": "Fortalecer a cooperação entre o Estado e os municípios, respeitando a autonomia municipal",
+   "proposta": "Fortalecer a cooperação entre o Estado e os municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
@@ -364,6 +357,74 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p17",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Adotar política de desenvolvimento regional que reduza as desigualdades entre as regiões do estado por meio de investimentos estratégicos, fortalecendo as economias locais e o acesso a serviços públicos de qualidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      340,
+      344
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p18",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Fortalecer o planejamento regional e reduzir as desigualdades entre regiões e municípios por meio da diversificação econômica e da valorização das potencialidades regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      282,
+      437,
+      564
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p19",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Reconhecer e potencializar as vocações produtivas de cada região.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-joao-rodrigues-240002551001": {
+     "posicao": "concorda",
+     "blocos": [
+      343
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p20",
+   "subtema": "Cooperação com municípios e consórcios",
+   "proposta": "Ampliar a cooperação do Estado com a União, os municípios, os consórcios públicos e as universidades, inclusive na área técnica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      283,
+      825
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
   }
  ],
  "blocos": {

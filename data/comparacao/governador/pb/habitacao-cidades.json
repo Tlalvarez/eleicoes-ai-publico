@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-pb.json",
   "gerado_em": "2026-09-14T07:25:20Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -97,7 +97,7 @@
   {
    "id": "p2",
    "subtema": "Regularização fundiária",
-   "proposta": "Executar regularização fundiária urbana e rural em larga escala, entregando título de propriedade e segurança jurídica às famílias",
+   "proposta": "Realizar regularização fundiária urbana e rural, garantindo segurança jurídica às famílias.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -153,7 +153,7 @@
   {
    "id": "p4",
    "subtema": "Povos e comunidades tradicionais",
-   "proposta": "Garantir moradia e regularização territorial a comunidades quilombolas, indígenas e ciganas, com respeito à identidade cultural",
+   "proposta": "Garantir moradia e regularização territorial a comunidades tradicionais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -228,7 +228,7 @@
    "id": "p7",
    "subtema": "Imóveis ociosos",
    "proposta": "Destinar imóveis vazios, subutilizados ou ociosos à habitação",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
@@ -239,13 +239,6 @@
       1143
      ],
      "nota": "Imóveis públicos estaduais e incentivos fiscais para imóveis privados degradados"
-    },
-    "governador-pb-camilo-duarte-150002552603": {
-     "posicao": "concorda",
-     "blocos": [
-      74
-     ],
-     "nota": "Via expropriação dos imóveis vagos dos especuladores"
     }
    }
   },
@@ -477,14 +470,42 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p23",
+   "subtema": "Regularização fundiária",
+   "proposta": "Regularizar áreas urbanas e rurais, assegurando segurança jurídica às famílias, comunidades quilombolas, povos indígenas e comunidades ciganas, com proteção de territórios vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      133
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p25",
+   "subtema": "Povos e comunidades tradicionais",
+   "proposta": "Garantir moradia com identidade às populações tradicionais, com casas adaptadas a cada região e regularização de títulos em larga escala.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      164
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
   }
  ],
  "blocos": {
   "governador-pb-camilo-duarte-150002552603": {
-   "74": {
-    "texto": "Expropriação dos imóveis vagos dos especuladores do mercado imobiliário\n•",
-    "pagina": 4
-   },
    "75": {
     "texto": "Proibição de despejos e desocupações\n•",
     "pagina": 4

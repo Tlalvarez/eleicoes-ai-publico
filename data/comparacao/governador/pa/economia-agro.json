@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "economia-agro-pa.json",
   "gerado_em": "2026-09-14T04:21:16Z",
-  "exportado_em": "2026-09-14T07:02:20Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -52,7 +52,7 @@
   {
    "id": "p1",
    "subtema": "Emprego, trabalho e renda",
-   "proposta": "Instituir piso salarial regional com base no cálculo do DIEESE",
+   "proposta": "Elevar o salário mínimo com base no cálculo do DIEESE.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -63,14 +63,26 @@
       308,
       309
      ],
-     "nota": "Fixa o valor em R$ 2.200"
+     "nota": "Fixa o valor em R$ 2.200",
+     "metas": [
+      {
+       "rotulo": "salário-mínimo regional",
+       "valor": "R$ 2.200"
+      }
+     ]
     },
     "governador-pa-well-macedo-140002554108": {
      "posicao": "concorda",
      "blocos": [
       40
      ],
-     "nota": "Aumento de 100% no mínimo, rumo ao valor do DIEESE"
+     "nota": "Aumento de 100% no mínimo, rumo ao valor do DIEESE",
+     "metas": [
+      {
+       "rotulo": "aumento do salário-mínimo",
+       "valor": "100%"
+      }
+     ]
     }
    }
   },
@@ -78,16 +90,8 @@
    "id": "p2",
    "subtema": "Emprego, trabalho e renda",
    "proposta": "Acabar com a escala 6x1 e reduzir a jornada de trabalho sem redução de salários",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pa-araceli-140002542386": {
-     "posicao": "concorda",
-     "blocos": [
-      115,
-      116
-     ],
-     "nota": ""
-    },
     "governador-pa-well-macedo-140002554108": {
      "posicao": "concorda",
      "blocos": [
@@ -131,7 +135,7 @@
   {
    "id": "p5",
    "subtema": "Emprego, trabalho e renda",
-   "proposta": "Adotar políticas estaduais específicas de apoio e proteção aos trabalhadores de plataformas digitais",
+   "proposta": "Apoiar e proteger os trabalhadores de plataformas digitais",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -334,7 +338,7 @@
   {
    "id": "p17",
    "subtema": "Qualificação profissional e primeiro emprego",
-   "proposta": "Executar política estadual de qualificação profissional alinhada às cadeias produtivas estratégicas",
+   "proposta": "Executar política estadual de qualificação profissional.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -372,7 +376,7 @@
   {
    "id": "p18",
    "subtema": "Qualificação profissional e primeiro emprego",
-   "proposta": "Criar programa de primeiro emprego e estágio para a juventude",
+   "proposta": "Criar programa voltado à inserção da juventude no mercado de trabalho",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -502,7 +506,7 @@
   {
    "id": "p24",
    "subtema": "Agricultura e desenvolvimento rural",
-   "proposta": "Fortalecer e modernizar a assistência técnica e a extensão rural",
+   "proposta": "Apoiar a assistência técnica à produção agrícola.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -533,16 +537,9 @@
   {
    "id": "p25",
    "subtema": "Agricultura e desenvolvimento rural",
-   "proposta": "Ampliar e democratizar o acesso ao crédito rural",
-   "n_concorda": 3,
+   "proposta": "Ampliar o acesso ao crédito rural.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      275
-     ],
-     "nota": "Apoio financeiro voltado à agricultura familiar"
-    },
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
      "blocos": [
@@ -578,7 +575,7 @@
   {
    "id": "p27",
    "subtema": "Agricultura e desenvolvimento rural",
-   "proposta": "Fortalecer e expandir a agricultura familiar como política prioritária",
+   "proposta": "Fortalecer a agricultura familiar.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -616,7 +613,7 @@
   {
    "id": "p28",
    "subtema": "Agricultura e desenvolvimento rural",
-   "proposta": "Priorizar a agricultura familiar nas compras públicas, ampliando PAA e PNAE",
+   "proposta": "Priorizar a agricultura familiar nas compras públicas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -887,7 +884,7 @@
   {
    "id": "p43",
    "subtema": "Turismo",
-   "proposta": "Fortalecer o turismo de base comunitária, gerido pelas próprias comunidades",
+   "proposta": "Fortalecer o turismo de base comunitária",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -1091,7 +1088,7 @@
    "id": "p54",
    "subtema": "Turismo",
    "proposta": "Estruturar e interiorizar circuitos e roteiros turísticos integrados no estado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -1101,13 +1098,6 @@
       775
      ],
      "nota": ""
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      928
-     ],
-     "nota": "Foco em roteiros de turismo afro-amazônico"
     }
    }
   },
@@ -1144,7 +1134,7 @@
   {
    "id": "p57",
    "subtema": "Turismo",
-   "proposta": "Promover a gastronomia e a produção artesanal das comunidades como atrativo turístico",
+   "proposta": "Apoiar e promover a gastronomia e a produção artesanal das comunidades",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1229,7 +1219,7 @@
   {
    "id": "p62",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Ampliar a industrialização e a agregação de valor à produção estadual, reduzindo a dependência da exportação de matérias-primas",
+   "proposta": "Ampliar a industrialização e a agregação de valor à produção estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1256,7 +1246,7 @@
   {
    "id": "p63",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Ampliar o beneficiamento e a verticalização mineral dentro do estado",
+   "proposta": "Ampliar a verticalização mineral dentro do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1289,7 +1279,13 @@
      "blocos": [
       643
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "novos distritos industriais",
+       "valor": "3 distritos"
+      }
+     ]
     },
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
@@ -1318,7 +1314,7 @@
   {
    "id": "p66",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Atrair investimentos nacionais e internacionais para o estado",
+   "proposta": "Atrair investimentos para o estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1395,7 +1391,7 @@
   {
    "id": "p70",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Transformar a bioeconomia em política estratégica permanente do Estado",
+   "proposta": "Apoiar e impulsionar a bioeconomia no estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -1429,7 +1425,7 @@
   {
    "id": "p71",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Apoiar as atividades econômicas geridas por povos indígenas, ribeirinhos, quilombolas e comunidades tradicionais",
+   "proposta": "Apoiar as comunidades tradicionais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -1541,7 +1537,7 @@
   {
    "id": "p76",
    "subtema": "Empreendedorismo e ambiente de negócios",
-   "proposta": "Apoiar micro e pequenas empresas e microempreendedores individuais, reduzindo a informalidade",
+   "proposta": "Apoiar micro e pequenas empresas",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1564,7 +1560,7 @@
   {
    "id": "p77",
    "subtema": "Empreendedorismo e ambiente de negócios",
-   "proposta": "Fortalecer o empreendedorismo com capacitação empresarial e apoio à comercialização",
+   "proposta": "Fortalecer o empreendedorismo.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -1612,7 +1608,7 @@
   {
    "id": "p79",
    "subtema": "Empreendedorismo e ambiente de negócios",
-   "proposta": "Fomentar o artesanato local com estímulo à abertura de mercado",
+   "proposta": "Fomentar o artesanato local.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1673,16 +1669,8 @@
    "id": "p82",
    "subtema": "Turismo",
    "proposta": "Ampliar a articulação entre o Estado, instituições de ensino, Visitors Bureau e entidades representativas do setor na condução da política turística regional",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      822,
-      824
-     ],
-     "nota": "Defende planejamento público e democrático do turismo com participação das comunidades locais."
-    },
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
      "blocos": [
@@ -1696,42 +1684,8 @@
    "id": "p83",
    "subtema": "Agricultura e desenvolvimento rural",
    "proposta": "Adotar política de desenvolvimento rural que reconheça a diversidade dos produtores e promova ampliação da produtividade, acesso a mercados e aumento de renda",
-   "n_concorda": 4,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pa-araceli-140002542386": {
-     "posicao": "concorda",
-     "blocos": [
-      117,
-      136,
-      325,
-      326,
-      345
-     ],
-     "nota": "Prioriza agricultura familiar nas compras públicas e economias de populações tradicionais, ampliando mercado e renda."
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      275,
-      841
-     ],
-     "nota": "Apoio financeiro e técnico à agricultura familiar e cooperativas, mas contra o agronegócio exportador."
-    },
-    "governador-pa-hana-ghassan-140002551598": {
-     "posicao": "concorda",
-     "blocos": [
-      633,
-      636,
-      645,
-      648,
-      659,
-      660,
-      661,
-      664,
-      666
-     ],
-     "nota": "Fortalece agropecuária, agricultura familiar, ATER, crédito e acesso a mercados"
-    },
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
      "blocos": [
@@ -1745,7 +1699,378 @@
    "id": "p84",
    "subtema": "Desenvolvimento econômico e industrialização",
    "proposta": "Estimular a instalação de agroindústrias, centros tecnológicos e empresas inovadoras que transformem conhecimento científico em produtos, mercados e empregos qualificados",
-   "n_concorda": 2,
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      1025
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p85",
+   "subtema": "Emprego, trabalho e renda",
+   "proposta": "Aumentar o salário mínimo em 100%, rumo ao valor calculado pelo DIEESE",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      40
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p86",
+   "subtema": "Emprego, trabalho e renda",
+   "proposta": "Instituir por decreto a escala 5x2 para todos os trabalhadores terceirizados da administração estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      115,
+      116
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p87",
+   "subtema": "Emprego, trabalho e renda",
+   "proposta": "Garantir aos trabalhadores de plataformas de aplicativos todos os direitos: previdência, férias, 13º, descanso remunerado, seguro contra acidentes, licença-maternidade e proteção social efetiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      45,
+      47
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p89",
+   "subtema": "Qualificação profissional e primeiro emprego",
+   "proposta": "Criar programa estadual de treinamento para setores produtivos, com estágio remunerado de um salário mínimo e garantia de inserção dos jovens no mercado de trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      355
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p90",
+   "subtema": "Qualificação profissional e primeiro emprego",
+   "proposta": "Fortalecer programas de primeiro emprego, empreendedorismo juvenil e inclusão produtiva para jovens.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      656
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p92",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar o acesso ao crédito rural, junto com assistência técnica, mecanização e difusão de novas tecnologias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      604
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p93",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Oferecer apoio financeiro e técnico à agricultura familiar, à agroecologia e à produção de alimentos para a população, em oposição à monocultura de exportação, junto com a reforma agrária sob controle dos trabalhadores e povos da floresta.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p94",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Tornar a agricultura familiar prioridade nas compras públicas, para baratear a cesta básica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      117,
+      325,
+      326
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p95",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Ampliar os programas de compras governamentais da agricultura familiar, com estímulo a cooperativas e à agroindustrialização de pequeno porte.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      605
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p96",
+   "subtema": "Turismo",
+   "proposta": "Dar apoio efetivo à bioeconomia e ao turismo de base comunitária, bem como à economia de povos indígenas, ribeirinhos e quilombolas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      136,
+      345
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p97",
+   "subtema": "Turismo",
+   "proposta": "Potencializar o turismo de base comunitária, projetando saberes, cultura e modo de vida das comunidades paraenses, e criar o Programa Experiências Pará para promover microempreendedores de gastronomia, vivências ribeirinhas, cultura popular e artesanato.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      780,
+      781
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p98",
+   "subtema": "Turismo",
+   "proposta": "Fortalecer os roteiros de turismo afro-amazônico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      928
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p99",
+   "subtema": "Turismo",
+   "proposta": "Apoiar a produção artesanal e gastronômica das comunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      867
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p57"
+  },
+  {
+   "id": "p100",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Incentivar a verticalização da produção estadual, ampliar a inserção no comércio exterior e fortalecer a verticalização mineral, a bioeconomia e a industrialização sustentável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      625,
+      626,
+      630
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p62"
+  },
+  {
+   "id": "p102",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Atrair investimentos e melhorar o ambiente de negócios para fortalecer a economia dos municípios paraenses.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      43,
+      657
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p66"
+  },
+  {
+   "id": "p104",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Impulsionar a bioeconomia paraense e a industrialização sustentável do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      630,
+      665
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p70"
+  },
+  {
+   "id": "p106",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Desenvolver a bioeconomia em articulação com comunidades tradicionais, cooperativas, universidades e centros de pesquisa, fortalecendo cadeias produtivas sustentáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      1026,
+      1291
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p71"
+  },
+  {
+   "id": "p108",
+   "subtema": "Empreendedorismo e ambiente de negócios",
+   "proposta": "Oferecer bolsa e cursos de formação profissional e de criação de empreendimentos populares, com recorte racial na definição dos beneficiários.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      477,
+      478
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p77"
+  },
+  {
+   "id": "p109",
+   "subtema": "Empreendedorismo e ambiente de negócios",
+   "proposta": "Ampliar programas de capacitação empresarial, crédito, inovação e compras governamentais para pequenos negócios, além do empreendedorismo juvenil e da economia solidária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      638,
+      656,
+      1280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p77"
+  },
+  {
+   "id": "p111",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Apoiar técnica e financeiramente a agricultura familiar, a agroecologia, as cooperativas locais e a produção de alimentos, com prioridade a empreendimentos comunitários no financiamento público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      275,
+      841
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p112",
+   "subtema": "Agricultura e desenvolvimento rural",
+   "proposta": "Fortalecer o desenvolvimento rural com modernização produtiva da agricultura familiar, assistência técnica e extensão rural, microcrédito desburocratizado e ampliação de mercados por cooperativismo e venda direta ao consumidor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      633,
+      645,
+      659,
+      660,
+      661,
+      664
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p113",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Implantar três novos distritos industriais (Castanhal, Breves e Santarém) e incentivar a verticalização da produção, consolidando política estadual de desenvolvimento econômico baseada em inovação, bioeconomia e agregação de valor às cadeias produtivas.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -1756,16 +2081,10 @@
       655,
       665
      ],
-     "nota": "Verticalização, distritos industriais, inovação e bioeconomia"
-    },
-    "governador-pa-dr-daniel-140002549930": {
-     "posicao": "concorda",
-     "blocos": [
-      1025
-     ],
      "nota": ""
     }
-   }
+   },
+   "derivada_de": "p84"
   }
  ],
  "blocos": {

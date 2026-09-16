@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-ap.json",
   "gerado_em": "2026-09-14T20:24:05Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -187,7 +187,7 @@
   {
    "id": "p8",
    "subtema": "Fundo de royalties e receitas do petróleo",
-   "proposta": "Criar fundo estadual alimentado por receitas de royalties e participações do petróleo e gás",
+   "proposta": "Criar um fundo estadual",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -219,7 +219,7 @@
   {
    "id": "p9",
    "subtema": "Fundo de royalties e receitas do petróleo",
-   "proposta": "Instituir marco estadual de governança das receitas de royalties, com regras claras de aplicação e vedação ao uso em despesa corrente (poupança intergeracional)",
+   "proposta": "Instituir governança estadual das receitas provenientes do petróleo (royalties), voltada ao longo prazo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-dr-furlan-30002530014": {
@@ -316,7 +316,7 @@
   {
    "id": "p14",
    "subtema": "Servidores, carreiras e folha",
-   "proposta": "Realizar concursos públicos periódicos para repor vacâncias e renovar o quadro de servidores",
+   "proposta": "Realizar concursos públicos para provimento de cargos no quadro de servidores",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -368,7 +368,7 @@
   {
    "id": "p17",
    "subtema": "Transparência e prestação de contas",
-   "proposta": "Manter portal de transparência com despesas, contratos, obras, filas e resultados da gestão",
+   "proposta": "Manter portal de transparência da gestão",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -714,6 +714,72 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p38",
+   "subtema": "Fundo de royalties e receitas do petróleo",
+   "proposta": "Criar o Fundo de Desenvolvimento do Futuro, destinando parte de eventuais royalties a saúde, educação, ciência, infraestrutura e energia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      402,
+      403,
+      523
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p39",
+   "subtema": "Fundo de royalties e receitas do petróleo",
+   "proposta": "Criar um Fundo Soberano Estadual com receitas do óleo e gás, como reserva financeira de longo prazo, com gestão profissional, transparência e governança, destinada a investimentos permanentes em infraestrutura, educação e inovação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p40",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Realizar concursos públicos para renovar o quadro funcional, no âmbito de uma gestão de pessoas moderna e voltada à valorização das carreiras.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      496
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p41",
+   "subtema": "Transparência e prestação de contas",
+   "proposta": "Modernizar o Portal da Transparência e ampliar o controle interno, a auditoria, a gestão de riscos e a prevenção à corrupção.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      1487
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
   }
  ],
  "blocos": {

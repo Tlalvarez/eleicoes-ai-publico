@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-sc.json",
   "gerado_em": "2026-09-14T18:08:43Z",
-  "exportado_em": "2026-09-14T18:27:49Z"
+  "exportado_em": "2026-09-16T20:04:59Z"
  },
  "candidatos": [
   {
@@ -236,7 +236,7 @@
   {
    "id": "p11",
    "subtema": "Regularização fundiária e áreas de risco",
-   "proposta": "Atuar sobre áreas de risco, prevenindo novas ocupações e oferecendo moradia digna às famílias que já vivem nelas",
+   "proposta": "Atuar sobre as áreas de risco.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
@@ -261,7 +261,7 @@
    "id": "p12",
    "subtema": "Planejamento urbano e apoio aos municípios",
    "proposta": "Apoiar tecnicamente os municípios na elaboração e revisão dos planos diretores e instrumentos de planejamento territorial",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
@@ -269,15 +269,6 @@
       670,
       671,
       804
-     ],
-     "nota": ""
-    },
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      649,
-      650,
-      651
      ],
      "nota": ""
     }
@@ -414,7 +405,13 @@
      "blocos": [
       656
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "limite do aluguel social",
+       "valor": "nunca superior a 1/3 da renda"
+      }
+     ]
     }
    }
   },
@@ -571,6 +568,40 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p30",
+   "subtema": "Regularização fundiária e áreas de risco",
+   "proposta": "Prevenir e reduzir a ocupação de áreas de risco por meio do planejamento urbano e da política habitacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      390,
+      690,
+      822
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p31",
+   "subtema": "Regularização fundiária e áreas de risco",
+   "proposta": "Oferecer alternativas públicas de moradia digna a quem vive em áreas de risco e regularizar as ocupações, sem repressão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      647
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
   }
  ],
  "blocos": {
@@ -774,10 +805,6 @@
    },
    "647": {
     "texto": "A regularização das ocupações do povo trabalhador e oferecimento por parte do poder público de alternativas de moradia digna para os que vivem em áreas de risco. Não à repressão das ocupações;",
-    "pagina": 34
-   },
-   "649": {
-    "texto": "Incentivar",
     "pagina": 34
    },
    "650": {

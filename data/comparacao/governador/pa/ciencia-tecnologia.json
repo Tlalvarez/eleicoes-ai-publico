@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-pa.json",
   "gerado_em": "2026-09-14T06:00:46Z",
-  "exportado_em": "2026-09-14T07:02:20Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Ampliar a conectividade e o acesso à internet em todas as regiões do estado, com política de inclusão digital",
+   "proposta": "Ampliar a conectividade e o acesso à internet.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -83,7 +83,7 @@
    "id": "p2",
    "subtema": "Pesquisa científica",
    "proposta": "Ampliar o apoio e o investimento em pesquisa científica",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -100,22 +100,14 @@
       1030
      ],
      "nota": ""
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      948,
-      950
-     ],
-     "nota": "Prioriza pesquisa em turismo sustentável e necessidades da Amazônia"
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Pesquisa científica",
-   "proposta": "Orientar a produção científica às necessidades da sociedade e da Amazônia, com prioridade para bioeconomia, biodiversidade, saúde e clima",
-   "n_concorda": 3,
+   "proposta": "Orientar a produção científica às necessidades da sociedade, com prioridade para bioeconomia, biodiversidade, saúde e mudanças climáticas.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
@@ -124,20 +116,6 @@
       1032
      ],
      "nota": ""
-    },
-    "governador-pa-hana-ghassan-140002551598": {
-     "posicao": "concorda",
-     "blocos": [
-      882
-     ],
-     "nota": "Soluções tecnológicas para bioeconomia e desenvolvimento regional"
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      950
-     ],
-     "nota": "Conhecimento voltado às necessidades da Amazônia"
     }
    }
   },
@@ -230,8 +208,8 @@
   {
    "id": "p8",
    "subtema": "Parques tecnológicos",
-   "proposta": "Redirecionar e fortalecer o Parque de Ciência e Tecnologia Guamá",
-   "n_concorda": 2,
+   "proposta": "Modernizar o Parque de Ciência e Tecnologia Guamá, com foco no desenvolvimento de novos produtos de biotecnologia.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -239,13 +217,6 @@
       883
      ],
      "nota": "Modernização voltada a novos produtos de biotecnologia"
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      370
-     ],
-     "nota": "Voltado à soberania tecnológica da região"
     }
    }
   },
@@ -379,6 +350,54 @@
      "nota": "Inclui espaços de leitura para jovens do interior"
     }
    }
+  },
+  {
+   "id": "p17",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Investir em infraestrutura para garantir acesso à internet aos jovens do interior, com espaços de leitura.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      390
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p18",
+   "subtema": "Pesquisa científica",
+   "proposta": "Produzir conhecimento científico voltado às necessidades da Amazônia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      950
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p19",
+   "subtema": "Parques tecnológicos",
+   "proposta": "Direcionar o Parque de Ciência e Tecnologia Guamá à construção da soberania tecnológica da região.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      370
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
   }
  ],
  "blocos": {
@@ -470,10 +489,6 @@
     "texto": "entre governo, universidades e setor produtivo.",
     "pagina": 58
    },
-   "882": {
-    "texto": "• Incentivar soluções tecnológicas voltadas à bioeconomia, sustentabilidade, serviços públicos e desenvolvimento regional.",
-    "pagina": 58
-   },
    "883": {
     "texto": "• Modernizar o Parque de Ciência e Tecnologia Guamá, para fomentar o desenvolvimento de novos produtos de biotecnologia.",
     "pagina": 58
@@ -511,10 +526,6 @@
    "904": {
     "texto": "— Internet pública em áreas turísticas.",
     "pagina": 39
-   },
-   "948": {
-    "texto": "— Fortalecimento das pesquisas sobre turismo sustentável;",
-    "pagina": 40
    },
    "950": {
     "texto": "— Produção de conhecimento voltado às necessidades da Amazônia.",

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-sc.json",
   "gerado_em": "2026-09-14T18:07:14Z",
-  "exportado_em": "2026-09-14T18:27:49Z"
+  "exportado_em": "2026-09-16T20:04:59Z"
  },
  "candidatos": [
   {
@@ -191,7 +191,7 @@
   {
    "id": "p7",
    "subtema": "Universalização do saneamento",
-   "proposta": "Prestar apoio técnico aos municípios para elaboração de planos e projetos de saneamento",
+   "proposta": "Prestar apoio técnico aos municípios na área de saneamento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
@@ -252,7 +252,7 @@
   {
    "id": "p10",
    "subtema": "Enchentes, drenagem e barragens",
-   "proposta": "Executar desassoreamento de rios e córregos para evitar enchentes",
+   "proposta": "Executar desassoreamento de rios",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-jorginho-mello-240002537073": {
@@ -260,7 +260,13 @@
      "blocos": [
       63
      ],
-     "nota": "Apresentado como programa em curso, com R$ 267 milhões e 400 km"
+     "nota": "Apresentado como programa em curso, com R$ 267 milhões e 400 km",
+     "metas": [
+      {
+       "rotulo": "desassoreamento de rios",
+       "valor": "R$ 267 milhões, mais de 400 km"
+      }
+     ]
     },
     "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "concorda",
@@ -304,7 +310,7 @@
   {
    "id": "p13",
    "subtema": "Recursos hídricos e mananciais",
-   "proposta": "Estruturar programas de proteção e recuperação de mananciais e nascentes estratégicas para o abastecimento humano",
+   "proposta": "Atuar na proteção dos mananciais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
@@ -445,6 +451,54 @@
      "nota": "Propõe apoiar PPPs e concessões para coleta de resíduos"
     }
    }
+  },
+  {
+   "id": "p21",
+   "subtema": "Universalização do saneamento",
+   "proposta": "Apoiar técnica e financeiramente parcerias público-privadas e concessões municipais, para ampliar a capacidade de investimento em abastecimento de água, tratamento de esgoto e coleta de resíduos sólidos urbanos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      183
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p22",
+   "subtema": "Enchentes, drenagem e barragens",
+   "proposta": "Destinar verbas a um plano de obras que inclua drenagem e desassoreamento de rios e córregos, saneamento ambiental, sistemas de alerta nas cidades e investimentos em defesa civil.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      767
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p23",
+   "subtema": "Recursos hídricos e mananciais",
+   "proposta": "Recuperar áreas estratégicas de proteção de mananciais e nascentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      1702
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
   }
  ],
  "blocos": {

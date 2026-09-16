@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-sp.json",
   "gerado_em": "2026-09-14T19:45:31Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -35,7 +35,7 @@
   {
    "id": "p1",
    "subtema": "Rede de assistência social e SUAS",
-   "proposta": "Fortalecer a rede de assistência social e os serviços socioassistenciais em cooperação com os municípios, combatendo vazios assistenciais",
+   "proposta": "Fortalecer a rede de assistência social e os serviços socioassistenciais em cooperação com os municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -163,7 +163,7 @@
    "id": "p8",
    "subtema": "Primeira infância e famílias vulneráveis",
    "proposta": "Priorizar a primeira infância e as famílias em situação de vulnerabilidade nas políticas de proteção social",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
@@ -171,14 +171,6 @@
       262
      ],
      "nota": ""
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      764,
-      765
-     ],
-     "nota": "Proteção integral de crianças e adolescentes dentro do Cuidar Para Todos"
     }
    }
   },
@@ -262,6 +254,39 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p14",
+   "subtema": "Rede de assistência social e SUAS",
+   "proposta": "Fortalecer a rede de assistência social em cooperação com os municípios, com prioridade à primeira infância e às famílias em vulnerabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      262
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p15",
+   "subtema": "Primeira infância e famílias vulneráveis",
+   "proposta": "Criar programa de cuidado integral centrado no ciclo de vida, da primeira infância à pessoa idosa, e fortalecer a rede de serviços com foco nos territórios mais vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      764,
+      765
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
   }
  ],
  "blocos": {

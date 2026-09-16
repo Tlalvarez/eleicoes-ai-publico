@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-ma.json",
   "gerado_em": "2026-09-14T21:48:56Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Assistência social e SUAS",
-   "proposta": "Regionalizar a oferta dos serviços de proteção social especial, garantindo cobertura em todas as regiões do estado",
+   "proposta": "Regionalizar a oferta dos serviços de proteção social especial.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -160,7 +160,7 @@
   {
    "id": "p7",
    "subtema": "Primeira infância",
-   "proposta": "Instituir uma política estadual integrada e intersetorial para a primeira infância, articulando saúde, educação, assistência social e proteção da criança desde a gestação",
+   "proposta": "Instituir uma política estadual integrada e intersetorial para a primeira infância, articulando saúde, educação, assistência social e proteção da criança.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -300,15 +300,8 @@
    "id": "p14",
    "subtema": "Segurança alimentar",
    "proposta": "Vincular o abastecimento dos equipamentos públicos de alimentação à compra de alimentos da agricultura familiar",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
-     "posicao": "concorda",
-     "blocos": [
-      28
-     ],
-     "nota": ""
-    },
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
@@ -388,7 +381,7 @@
   {
    "id": "p19",
    "subtema": "Renda e combate à pobreza",
-   "proposta": "Fortalecer e ampliar o programa estadual de transferência de renda Maranhão Livre da Fome",
+   "proposta": "Fortalecer o programa estadual de transferência de renda Maranhão Livre da Fome",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -427,7 +420,7 @@
   {
    "id": "p21",
    "subtema": "Renda e combate à pobreza",
-   "proposta": "Fazer busca ativa para identificar e incluir no benefício pessoas em situação de fome ainda não contempladas",
+   "proposta": "Realizar busca ativa no âmbito das políticas de combate à fome e à pobreza.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -484,7 +477,13 @@
       2104,
       2107
      ],
-     "nota": "Pobreza abaixo de 33% e extrema pobreza abaixo de 5,5% até 2030"
+     "nota": "Pobreza abaixo de 33% e extrema pobreza abaixo de 5,5% até 2030",
+     "metas": [
+      {
+       "rotulo": "pobreza monetária",
+       "valor": "taxa abaixo de 25%"
+      }
+     ]
     }
    }
   },
@@ -518,6 +517,91 @@
      "nota": "Programa Mais Renda"
     }
    }
+  },
+  {
+   "id": "p26",
+   "subtema": "Assistência social e SUAS",
+   "proposta": "Implantar CREAS regionais para assegurar a oferta de serviços de proteção social especial e ampliar o atendimento a famílias e indivíduos em situação de violação de direitos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      29,
+      31,
+      34,
+      36
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p27",
+   "subtema": "Primeira infância",
+   "proposta": "Implantar a Política Estadual Integrada para a Primeira Infância, articulando saúde, educação, assistência social, segurança alimentar, cultura e proteção integral para crianças de 0 a 6 anos, em colaboração com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      278,
+      279
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p28",
+   "subtema": "Primeira infância",
+   "proposta": "Tratar a primeira infância como estratégia integrada de proteção e cuidados, saúde, educação, combate à pobreza e redução das desigualdades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      359
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p29",
+   "subtema": "Renda e combate à pobreza",
+   "proposta": "Instituir o 13º pagamento do benefício do Maranhão Livre da Fome.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      20,
+      22
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p30",
+   "subtema": "Renda e combate à pobreza",
+   "proposta": "Reduzir a pobreza extrema de 10,1% para 5,5% até 2030, combinando busca ativa, proteção de renda, qualificação e inclusão produtiva nos territórios mais atingidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2105
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
   }
  ],
  "blocos": {
@@ -553,10 +637,6 @@
    },
    "26": {
     "texto": "3. Ampliar e qualificar a rede de Restaurantes Populares e a",
-    "pagina": 5
-   },
-   "28": {
-    "texto": "compra de alimentos da agricultura familiar",
     "pagina": 5
    },
    "29": {

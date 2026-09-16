@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-ap.json",
   "gerado_em": "2026-09-14T20:18:11Z",
-  "exportado_em": "2026-09-14T20:40:20Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -99,7 +99,7 @@
   {
    "id": "p3",
    "subtema": "Regularização fundiária",
-   "proposta": "Modernizar a gestão fundiária com digitalização e integração de cadastros.",
+   "proposta": "Modernizar a gestão fundiária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -122,7 +122,7 @@
    "id": "p4",
    "subtema": "Regularização fundiária",
    "proposta": "Usar a titulação para reduzir conflitos agrários e viabilizar acesso das famílias ao crédito.",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
      "posicao": "concorda",
@@ -130,13 +130,6 @@
       286
      ],
      "nota": ""
-    },
-    "governador-ap-clecio-30002536311": {
-     "posicao": "concorda",
-     "blocos": [
-      236
-     ],
-     "nota": "Enfatiza crédito, valorização do imóvel e acesso a políticas públicas"
     }
    }
   },
@@ -158,7 +151,7 @@
   {
    "id": "p6",
    "subtema": "Moradia e casa própria",
-   "proposta": "Ampliar a política habitacional com construção e melhoria de moradias para famílias em situação de vulnerabilidade.",
+   "proposta": "Ampliar a política habitacional com a construção de moradias.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -178,7 +171,13 @@
       529,
       530
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "novas moradias",
+       "valor": "3 mil novas moradias"
+      }
+     ]
     },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
@@ -231,7 +230,7 @@
    "id": "p9",
    "subtema": "Infraestrutura urbana e apoio aos municípios",
    "proposta": "Requalificar e pavimentar vias urbanas nos municípios, com drenagem, calçadas acessíveis e sinalização.",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
      "posicao": "concorda",
@@ -248,14 +247,13 @@
      "blocos": [
       736
      ],
-     "nota": "Execução pela Secretaria de Desenvolvimento das Cidades"
-    },
-    "governador-ap-delegado-marcos-30002552017": {
-     "posicao": "concorda",
-     "blocos": [
-      484
-     ],
-     "nota": "Menciona mobilidade e acessibilidade sem meta"
+     "nota": "Execução pela Secretaria de Desenvolvimento das Cidades",
+     "metas": [
+      {
+       "rotulo": "municípios atendidos",
+       "valor": "16 municípios"
+      }
+     ]
     }
    }
   },
@@ -286,7 +284,7 @@
   {
    "id": "p11",
    "subtema": "Infraestrutura urbana e apoio aos municípios",
-   "proposta": "Executar obras urbanas com adaptação climática e prevenção de alagamentos e erosões.",
+   "proposta": "Executar obras urbanas com prevenção de alagamentos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -333,7 +331,13 @@
       382,
       383
      ],
-     "nota": "Expansão do programa Ponte Firme, com 60 km de passarelas"
+     "nota": "Expansão do programa Ponte Firme, com 60 km de passarelas",
+     "metas": [
+      {
+       "rotulo": "passarelas do Ponte Firme",
+       "valor": "mais 60 km"
+      }
+     ]
     },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
@@ -375,6 +379,87 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p16",
+   "subtema": "Regularização fundiária",
+   "proposta": "Fortalecer, modernizar e dar transparência aos processos de regularização fundiária conduzidos pelo instituto de terras estadual, com mais celeridade e segurança jurídica na titulação de imóveis rurais e urbanos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      927
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p17",
+   "subtema": "Regularização fundiária",
+   "proposta": "Ampliar a regularização fundiária urbana e rural no Amapá, com a entrega de 10 mil títulos de propriedade, garantindo segurança jurídica e acesso das famílias ao crédito, à moradia digna e às políticas públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      236
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p18",
+   "subtema": "Moradia e casa própria",
+   "proposta": "Ampliar a moradia por meio de parcerias, com construção e melhoria de moradias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      480,
+      481
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p19",
+   "subtema": "Moradia e casa própria",
+   "proposta": "Construir 2.000 unidades habitacionais de interesse social em parceria com o Governo Federal, pelo Programa Minha Casa, Minha Vida.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      740
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p20",
+   "subtema": "Infraestrutura urbana e apoio aos municípios",
+   "proposta": "Executar obras urbanas de mobilidade, iluminação e acessibilidade, com prevenção de alagamentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      484
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
   }
  ],
  "blocos": {

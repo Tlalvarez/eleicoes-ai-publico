@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-pa.json",
   "gerado_em": "2026-09-14T04:13:57Z",
-  "exportado_em": "2026-09-14T07:02:20Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -51,8 +51,8 @@
   {
    "id": "p1",
    "subtema": "Urbanização e infraestrutura urbana",
-   "proposta": "Urbanizar periferias e comunidades populares, implantando infraestrutura urbana completa (pavimentação, drenagem, água, esgoto) e melhorando as condições dos territórios já ocupados",
-   "n_concorda": 4,
+   "proposta": "Urbanizar periferias e comunidades populares, melhorando as condições dos territórios já ocupados.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
      "posicao": "concorda",
@@ -76,13 +76,6 @@
       971
      ],
      "nota": "Melhoria da infraestrutura das comunidades"
-    },
-    "governador-pa-hana-ghassan-140002551598": {
-     "posicao": "concorda",
-     "blocos": [
-      506
-     ],
-     "nota": "Política integrada de desenvolvimento urbano"
     }
    }
   },
@@ -197,8 +190,8 @@
   {
    "id": "p8",
    "subtema": "Habitação de interesse social",
-   "proposta": "Ampliar a produção de moradias de interesse social para reduzir o déficit habitacional do estado",
-   "n_concorda": 3,
+   "proposta": "Ampliar a construção de moradias de interesse social para enfrentar o déficit habitacional do estado.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -206,14 +199,6 @@
       506,
       563,
       564
-     ],
-     "nota": ""
-    },
-    "governador-pa-dr-daniel-140002549930": {
-     "posicao": "concorda",
-     "blocos": [
-      970,
-      971
      ],
      "nota": ""
     },
@@ -339,7 +324,7 @@
   {
    "id": "p15",
    "subtema": "Regularização fundiária",
-   "proposta": "Ampliar a regularização fundiária urbana, com entrega de títulos definitivos às famílias",
+   "proposta": "Ampliar a regularização fundiária urbana",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -385,7 +370,7 @@
   {
    "id": "p17",
    "subtema": "Regularização fundiária",
-   "proposta": "Acelerar e simplificar os processos de regularização fundiária, integrando os órgãos de gestão territorial",
+   "proposta": "Acelerar os processos de regularização fundiária",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-dr-daniel-140002549930": {
@@ -687,6 +672,72 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p36",
+   "subtema": "Urbanização e infraestrutura urbana",
+   "proposta": "Executar urbanização climática das periferias, com contenção de riscos em baixadas e encostas, parques lineares inundáveis e recuperação das margens de igarapés urbanos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      261
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p38",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Reduzir o déficit habitacional e assegurar moradia digna às famílias, fortalecendo a política habitacional em parceria com o Governo Federal, os municípios e a iniciativa privada, com mais regularização fundiária urbana e melhoria da infraestrutura das comunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      970,
+      971
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p40",
+   "subtema": "Regularização fundiária",
+   "proposta": "Oferecer regularização fundiária gratuita às famílias de baixa renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p41",
+   "subtema": "Regularização fundiária",
+   "proposta": "Acelerar a regularização fundiária urbana e ampliar a entrega de títulos definitivos, no âmbito de uma política integrada de desenvolvimento urbano.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      506,
+      566
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
   }
  ],
  "blocos": {

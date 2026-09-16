@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-am.json",
   "gerado_em": "2026-09-15T00:02:15Z",
-  "exportado_em": "2026-09-15T02:14:01Z"
+  "exportado_em": "2026-09-16T21:44:59Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Telessaúde e saúde digital",
-   "proposta": "Expandir a telessaúde e a telemedicina para conectar unidades e pacientes do interior a especialistas, reduzindo deslocamentos",
+   "proposta": "Expandir a telessaúde e a telemedicina.",
    "n_concorda": 6,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -125,7 +125,13 @@
       38273,
       38277
      ],
-     "nota": "Cobertura nos 62 municípios até 2030 e 240 mil consultas/mês"
+     "nota": "Cobertura nos 62 municípios até 2030 e 240 mil consultas/mês",
+     "metas": [
+      {
+       "rotulo": "digitalização para telemedicina",
+       "valor": "todos os municípios do interior até 2030"
+      }
+     ]
     }
    }
   },
@@ -149,14 +155,20 @@
       25348,
       25415
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "estações modulares de telessaúde",
+       "valor": "nos 62 municípios do Estado"
+      }
+     ]
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Telessaúde e saúde digital",
-   "proposta": "Usar inteligência artificial na saúde para apoio diagnóstico, priorização da regulação, previsão de demanda de insumos e alertas epidemiológicos",
+   "proposta": "Usar inteligência artificial na saúde",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -184,7 +196,7 @@
   {
    "id": "p4",
    "subtema": "Telessaúde e saúde digital",
-   "proposta": "Implantar prontuário eletrônico integrado e interoperável na rede estadual, com funcionamento offline e conexão à Rede Nacional de Dados em Saúde",
+   "proposta": "Implantar prontuário eletrônico integrado e interoperável.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -253,7 +265,13 @@
       630,
       654
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "polos regionais",
+       "valor": "9 polos regionais"
+      }
+     ]
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -290,14 +308,20 @@
      "blocos": [
       654
      ],
-     "nota": "Nove polos classificados por nível de complexidade"
+     "nota": "Nove polos classificados por nível de complexidade",
+     "metas": [
+      {
+       "rotulo": "polos regionais",
+       "valor": "9 polos regionais"
+      }
+     ]
     }
    }
   },
   {
    "id": "p7",
    "subtema": "Rede regional e hospitais",
-   "proposta": "Ampliar leitos de UTI fora de Manaus, desconcentrando a terapia intensiva para as macrorregiões e hospitais regionais",
+   "proposta": "Ampliar leitos fora de Manaus, em hospitais regionais e do interior.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -421,8 +445,8 @@
   {
    "id": "p12",
    "subtema": "Regulação e filas",
-   "proposta": "Reorganizar a regulação estadual com critérios clínicos, rastreabilidade e transparência da fila",
-   "n_concorda": 5,
+   "proposta": "Reorganizar a regulação estadual com transparência da fila",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -449,14 +473,6 @@
      ],
      "nota": "Central única com apoio aos municípios e publicação da fila"
     },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      76,
-      642
-     ],
-     "nota": "Meta de zerar a fila do SISREG"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -471,7 +487,7 @@
   {
    "id": "p13",
    "subtema": "Regulação e filas",
-   "proposta": "Fixar metas públicas de tempo de espera por especialidade, com monitoramento por região e busca ativa de pacientes",
+   "proposta": "Estabelecer metas públicas de tempo de espera no atendimento, com monitoramento por região.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -497,7 +513,13 @@
       25402,
       25469
      ],
-     "nota": "Menos de 30 dias em especialidades críticas; 120 dias no interior"
+     "nota": "Menos de 30 dias em especialidades críticas; 120 dias no interior",
+     "metas": [
+      {
+       "rotulo": "espera em especialidades críticas",
+       "valor": "menos de 30 dias"
+      }
+     ]
     }
    }
   },
@@ -581,7 +603,7 @@
   {
    "id": "p17",
    "subtema": "Regulação e filas",
-   "proposta": "Padronizar protocolos de encaminhamento, referência e contrarreferência entre os níveis de atenção",
+   "proposta": "Organizar fluxos de encaminhamento, referência e contrarreferência entre os níveis de atenção",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -615,8 +637,8 @@
   {
    "id": "p18",
    "subtema": "Saúde mental e drogas",
-   "proposta": "Ampliar e fortalecer a rede de atenção psicossocial, com mais equipes e serviços de saúde mental",
-   "n_concorda": 5,
+   "proposta": "Fortalecer a rede de atenção psicossocial",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -634,13 +656,6 @@
       302
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      101
-     ],
-     "nota": "Saúde mental como linha de cuidado regional"
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -671,16 +686,9 @@
   {
    "id": "p19",
    "subtema": "Saúde mental e drogas",
-   "proposta": "Criar novos CAPS no interior e na capital, incluindo CAPS AD III de funcionamento 24 horas e CAPS infanto-juvenil",
-   "n_concorda": 2,
+   "proposta": "Criar novos CAPS no interior e na capital.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      300
-     ],
-     "nota": "Ampliação progressiva de CAPS e serviços equivalentes"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -716,7 +724,13 @@
       24281,
       24295
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "leitos psiquiátricos habilitados",
+       "valor": "de zero para 36 leitos"
+      }
+     ]
     }
    }
   },
@@ -748,7 +762,7 @@
   {
    "id": "p22",
    "subtema": "Saúde mental e drogas",
-   "proposta": "Estruturar atendimento à crise psíquica e ações de prevenção do suicídio com continuidade do cuidado após a alta",
+   "proposta": "Estruturar o atendimento à crise psíquica.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -857,7 +871,7 @@
   {
    "id": "p27",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Fortalecer o cuidado integral à saúde da mulher, com diagnóstico oportuno e redução do tempo até o tratamento dos cânceres de mama e colo do útero",
+   "proposta": "Fortalecer o cuidado integral à saúde da mulher.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -981,42 +995,14 @@
    "id": "p31",
    "subtema": "Medicamentos e insumos",
    "proposta": "Garantir o abastecimento regular de medicamentos e insumos, com programação de compras e gestão de estoques",
-   "n_concorda": 5,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      68
-     ],
-     "nota": "Logística de medicamentos para os povos indígenas"
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
       296
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      121
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      644
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      22013
-     ],
-     "nota": "Consolida compras em fonte única e amplia base de fornecedores"
     }
    }
   },
@@ -1085,7 +1071,7 @@
   {
    "id": "p35",
    "subtema": "Atenção especializada e linhas de cuidado",
-   "proposta": "Expandir a oferta de exames laboratoriais e de imagem no interior, com laudo remoto e manutenção garantida",
+   "proposta": "Expandir a oferta de exames laboratoriais e de imagem no interior.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1123,7 +1109,7 @@
   {
    "id": "p36",
    "subtema": "Atenção especializada e linhas de cuidado",
-   "proposta": "Fortalecer a atenção oncológica, com diagnóstico precoce, acesso regulado e serviços de tratamento no interior",
+   "proposta": "Fortalecer a atenção oncológica no Estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1154,7 +1140,7 @@
   {
    "id": "p37",
    "subtema": "Atenção especializada e linhas de cuidado",
-   "proposta": "Estruturar linhas de cuidado para doenças crônicas não transmissíveis articuladas entre atenção primária e serviços especializados",
+   "proposta": "Estruturar linhas de cuidado para doenças crônicas não transmissíveis",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1214,21 +1200,14 @@
   {
    "id": "p39",
    "subtema": "Atenção especializada e linhas de cuidado",
-   "proposta": "Ampliar a oferta de saúde bucal e odontologia na rede territorial e itinerante",
-   "n_concorda": 3,
+   "proposta": "Ampliar a oferta de serviços de saúde bucal e odontologia na rede pública de atendimento",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
       236,
       344
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      124
      ],
      "nota": ""
     },
@@ -1329,7 +1308,7 @@
    "id": "p44",
    "subtema": "Atenção fluvial e itinerante",
    "proposta": "Ampliar equipes de saúde fluviais e itinerantes e a cobertura da atenção primária fluvial",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -1365,13 +1344,6 @@
       25468
      ],
      "nota": "Meta de 100% das calhas e 200 mil ribeirinhos atendidos"
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      287
-     ],
-     "nota": "Sem assumir responsabilidades municipais da atenção primária"
     }
    }
   },
@@ -1420,8 +1392,8 @@
   {
    "id": "p47",
    "subtema": "Atenção fluvial e itinerante",
-   "proposta": "Estabelecer manutenção preventiva de embarcações, ambulâncias, equipamentos e geradores com contratos transparentes",
-   "n_concorda": 3,
+   "proposta": "Estabelecer manutenção preventiva de embarcações, ambulâncias, equipamentos e geradores.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -1429,13 +1401,6 @@
       123
      ],
      "nota": ""
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      282
-     ],
-     "nota": "Condiciona novos equipamentos a manutenção e custeio"
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1449,7 +1414,7 @@
   {
    "id": "p48",
    "subtema": "Profissionais de saúde",
-   "proposta": "Criar incentivos de fixação de profissionais no interior, com adicional, moradia funcional e progressão diferenciada",
+   "proposta": "Criar incentivos para a fixação de profissionais de saúde no interior",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1497,7 +1462,7 @@
   {
    "id": "p49",
    "subtema": "Profissionais de saúde",
-   "proposta": "Criar residências médicas e multiprofissionais em especialidades críticas voltadas ao interior, em parceria com universidades",
+   "proposta": "Criar residências médicas voltadas à atuação no interior.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -1524,15 +1489,8 @@
    "id": "p50",
    "subtema": "Profissionais de saúde",
    "proposta": "Instituir ou atualizar o Plano de Cargos, Carreiras e Salários dos trabalhadores da saúde estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      659
-     ],
-     "nota": "Fortalecimento das carreiras e gestão de pessoas"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1557,7 +1515,7 @@
    "id": "p51",
    "subtema": "Profissionais de saúde",
    "proposta": "Implantar programa permanente de educação continuada e matriciamento para os profissionais da rede",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -1589,13 +1547,6 @@
       25037
      ],
      "nota": "40 horas anuais garantidas por servidor"
-    },
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      68
-     ],
-     "nota": "Formação para atendimento intercultural"
     }
    }
   },
@@ -1603,19 +1554,12 @@
    "id": "p52",
    "subtema": "Profissionais de saúde",
    "proposta": "Realizar concurso público para prover os cargos permanentes necessários à expansão da rede estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
       52
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      24985
      ],
      "nota": ""
     }
@@ -1624,8 +1568,8 @@
   {
    "id": "p53",
    "subtema": "Governança e financiamento",
-   "proposta": "Revisar e repactuar os contratos de gestão, terceirização e prestação complementar de serviços de saúde, vinculando repasses a indicadores de desempenho",
-   "n_concorda": 3,
+   "proposta": "Revisar e repactuar os contratos de gestão, terceirização e prestação complementar de serviços de saúde.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -1656,13 +1600,6 @@
       25489
      ],
      "nota": "Mantém organizações sociais com indicadores por unidade"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      670
-     ],
-     "nota": "Revisão das pactuações e redes com os municípios"
     }
    }
   },
@@ -1686,7 +1623,7 @@
   {
    "id": "p55",
    "subtema": "Governança e financiamento",
-   "proposta": "Publicar painel público de indicadores da saúde com atualização periódica e dados por unidade e região",
+   "proposta": "Publicar painel público de indicadores da saúde",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1786,7 +1723,13 @@
       25456,
       25492
      ],
-     "nota": "De 11,34% para menos de 5% até 2030"
+     "nota": "De 11,34% para menos de 5% até 2030",
+     "metas": [
+      {
+       "rotulo": "taxa de glosa",
+       "valor": "de 11,34% para menos de 5%"
+      }
+     ]
     }
    }
   },
@@ -1851,7 +1794,13 @@
       24154,
       25434
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "catálogo de prioridades",
+       "valor": "30 principais demandas"
+      }
+     ]
     }
    }
   },
@@ -1884,7 +1833,7 @@
   {
    "id": "p62",
    "subtema": "Vigilância em saúde",
-   "proposta": "Fortalecer a vigilância epidemiológica, sanitária e ambiental como função estadual estruturante",
+   "proposta": "Fortalecer a vigilância epidemiológica, sanitária e ambiental em saúde.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1922,7 +1871,7 @@
   {
    "id": "p63",
    "subtema": "Vigilância em saúde",
-   "proposta": "Criar plataforma ou centro de inteligência epidemiológica com dados em tempo real e alertas automáticos de surtos",
+   "proposta": "Criar plataforma ou centro de inteligência epidemiológica.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -1955,7 +1904,7 @@
   {
    "id": "p64",
    "subtema": "Vigilância em saúde",
-   "proposta": "Executar estratégias específicas de controle de malária, dengue e tuberculose ajustadas às calhas de rio e à sazonalidade",
+   "proposta": "Executar estratégias específicas de controle de malária, dengue e tuberculose",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -2001,14 +1950,20 @@
       25412,
       25463
      ],
-     "nota": "Vacina flutuante e meta de 95% de cobertura infantil"
+     "nota": "Vacina flutuante e meta de 95% de cobertura infantil",
+     "metas": [
+      {
+       "rotulo": "cobertura vacinal infantil",
+       "valor": "de 66,6% para 95%"
+      }
+     ]
     }
    }
   },
   {
    "id": "p66",
    "subtema": "Populações indígenas e tradicionais",
-   "proposta": "Fortalecer a atenção à saúde indígena com modelo culturalmente adequado e articulação com a União e a SESAI",
+   "proposta": "Fortalecer a atenção à saúde indígena.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2076,7 +2031,13 @@
       24062,
       25050
      ],
-     "nota": "Meta de 300 agentes capacitados com a Fiocruz"
+     "nota": "Meta de 300 agentes capacitados com a Fiocruz",
+     "metas": [
+      {
+       "rotulo": "agentes indígenas capacitados",
+       "valor": "300 AIS"
+      }
+     ]
     }
    }
   },
@@ -2084,7 +2045,7 @@
    "id": "p68",
    "subtema": "Populações indígenas e tradicionais",
    "proposta": "Implantar telessaúde nos Distritos Sanitários Especiais Indígenas, integrada à rede estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -2095,22 +2056,20 @@
       24063,
       38831
      ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      623,
-      624
-     ],
-     "nota": "Telessaúde integrada à saúde indígena e ribeirinha"
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "público atendido pela telessaúde",
+       "valor": "490,9 mil indígenas"
+      }
+     ]
     }
    }
   },
   {
    "id": "p69",
    "subtema": "Populações indígenas e tradicionais",
-   "proposta": "Estruturar políticas específicas de saúde para populações ribeirinhas e quilombolas, com cadastramento ativo",
+   "proposta": "Estruturar políticas de saúde voltadas às populações ribeirinhas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -2135,7 +2094,7 @@
   {
    "id": "p70",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Ampliar o cofinanciamento estadual e o apoio técnico aos municípios para fortalecer a atenção primária",
+   "proposta": "Ampliar o apoio técnico aos municípios para fortalecer a atenção primária",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -2179,7 +2138,7 @@
   {
    "id": "p72",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Firmar pactos formais com os municípios definindo metas sanitárias, apoio técnico e monitoramento compartilhado",
+   "proposta": "Firmar pactos formais com os municípios na área da saúde",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -2203,14 +2162,20 @@
       23820,
       25507
      ],
-     "nota": "Pacto Estadual pela Saúde Municipal com os 62 municípios"
+     "nota": "Pacto Estadual pela Saúde Municipal com os 62 municípios",
+     "metas": [
+      {
+       "rotulo": "pactos com municípios",
+       "valor": "cada um dos 62 municípios"
+      }
+     ]
     }
    }
   },
   {
    "id": "p73",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Articular a saúde com outras políticas públicas (saneamento, assistência social, educação e segurança alimentar) por meio de protocolos intersetoriais",
+   "proposta": "Articular a saúde com outras políticas públicas, como assistência social e educação.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -2301,7 +2266,7 @@
   {
    "id": "p77",
    "subtema": "Saúde e clima",
-   "proposta": "Integrar a resposta à emergência climática na política de saúde, com planos de continuidade de tratamentos e proteção em episódios de fumaça, seca e cheia",
+   "proposta": "Integrar a resposta à emergência climática na política de saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -2343,16 +2308,8 @@
    "id": "p79",
    "subtema": "Pesquisa e cooperação",
    "proposta": "Firmar parcerias com instituições de ensino e pesquisa para inovação em saúde amazônica e doenças negligenciadas",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      266,
-      270
-     ],
-     "nota": ""
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -2445,27 +2402,8 @@
    "id": "p84",
    "subtema": "Telessaúde e saúde digital",
    "proposta": "Digitalizar e integrar, com uso de inteligência artificial, os sistemas de saúde de todos os municípios do interior até 2030",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      117,
-      118
-     ],
-     "nota": "Prontuário eletrônico interoperável e telemedicina no interior"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      266,
-      268,
-      623,
-      646,
-      672
-     ],
-     "nota": "Propõe integração dos sistemas de informação e IA na regulação e dados em saúde."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2479,18 +2417,9 @@
   {
    "id": "p85",
    "subtema": "Saúde mental e drogas",
-   "proposta": "Oferecer atendimento especializado a pessoas com transtornos do neurodesenvolvimento, com apoio às famílias e articulação com as redes de educação e assistência social",
-   "n_concorda": 3,
+   "proposta": "Oferecer atendimento especializado a pessoas com transtornos do neurodesenvolvimento.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      360,
-      361,
-      366
-     ],
-     "nota": "Amplia equipes e programas de saúde mental para crianças e adolescentes, com apoio às famílias."
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -2561,17 +2490,9 @@
   {
    "id": "p89",
    "subtema": "Governança e financiamento",
-   "proposta": "Implantar sistema integrado de análise de dados da SES-AM, com dados do SIH, CNES, SIOPS, SISREG e sistemas fiscais, como instrumento permanente de governança",
-   "n_concorda": 2,
+   "proposta": "Implantar sistema integrado de análise de dados da SES-AM, alimentado por SIH, CNES, SIOPS, SISREG e sistemas fiscais, como instrumento permanente de governança.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      662,
-      672
-     ],
-     "nota": "Painel de bordo integrado e Centro de Inteligência em Saúde com dados em tempo real."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2599,8 +2520,8 @@
   {
    "id": "p91",
    "subtema": "Rede regional e hospitais",
-   "proposta": "Dividir o estado em regiões de saúde integradas, com lógicas urbana e fluvial diferenciadas e unidades de referência organizadas por calha de rio",
-   "n_concorda": 5,
+   "proposta": "Organizar a saúde do estado em regiões, com unidades de referência regionais integradas à rede.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -2618,14 +2539,6 @@
      ],
      "nota": "Regionalização da rede estadual com hospitais de referência por região"
     },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      101,
-      115
-     ],
-     "nota": "Linhas de cuidado regionais e rotas sanitárias por calha"
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -2633,7 +2546,13 @@
       665,
       670
      ],
-     "nota": "Nove polos regionais com referência/contrarreferência e estratégias por calha de rio."
+     "nota": "Nove polos regionais com referência/contrarreferência e estratégias por calha de rio.",
+     "metas": [
+      {
+       "rotulo": "polos regionais",
+       "valor": "9 polos regionais"
+      }
+     ]
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -2710,15 +2629,8 @@
    "id": "p96",
    "subtema": "Atenção primária e apoio aos municípios",
    "proposta": "Alocar equipes técnicas da SES-AM nas nove regiões de saúde para apoiar os municípios na alimentação dos sistemas de informação, nos relatórios de gestão e nos fluxos de regulação",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      102
-     ],
-     "nota": "Central de regulação com apoio aos municípios"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2746,17 +2658,9 @@
   {
    "id": "p98",
    "subtema": "Profissionais de saúde",
-   "proposta": "Criar a Carreira Médica de Estado do Amazonas, com progressão vinculada ao tempo de serviço no interior e a indicadores de desempenho",
-   "n_concorda": 2,
+   "proposta": "Atuar pela Carreira Médica de Estado do Amazonas, com progressão vinculada ao tempo de serviço no interior e a indicadores de desempenho.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      659,
-      661
-     ],
-     "nota": "Fortalecimento de carreiras e incentivos vinculados à atuação no interior."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2770,7 +2674,7 @@
   {
    "id": "p99",
    "subtema": "Profissionais de saúde",
-   "proposta": "Garantir 40 horas anuais de capacitação por servidor da saúde, com foco nas especialidades de maior demanda da rede estadual",
+   "proposta": "Promover capacitação continuada dos servidores da saúde da rede estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -2786,7 +2690,13 @@
      "blocos": [
       23772
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "capacitação por servidor",
+       "valor": "40 horas anuais"
+      }
+     ]
     }
    }
   },
@@ -2823,17 +2733,9 @@
   {
    "id": "p102",
    "subtema": "Atenção fluvial e itinerante",
-   "proposta": "Criar equipes volantes de especialidades para atendimento em municípios remotos",
-   "n_concorda": 5,
+   "proposta": "Levar atendimento itinerante a municípios remotos por meio de equipes móveis",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      62,
-      63
-     ],
-     "nota": "Leva consultas com especialistas e média/alta complexidade ao interior"
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
@@ -2842,14 +2744,6 @@
       344
      ],
      "nota": "Propõe carretas itinerantes e seis barcos-hospital com especialidades para municípios remotos."
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      278,
-      287
-     ],
-     "nota": "Provimento e fixação de especialistas no interior; oferta itinerante implícita"
     },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -2865,7 +2759,13 @@
       23854,
       25350
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios com equipes volantes",
+       "valor": "44 em deserto assistencial, 29 críticos"
+      }
+     ]
     }
    }
   },
@@ -2888,24 +2788,8 @@
    "id": "p104",
    "subtema": "Urgência e transporte sanitário",
    "proposta": "Integrar o protocolo de emergências obstétricas ao SAMU fluvial e aéreo",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      291,
-      299
-     ],
-     "nota": "Remoção regulada terrestre/fluvial/aérea e linhas materno-infantis"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      101,
-      105
-     ],
-     "nota": "Linha de gestação de risco e transporte aeromédico/fluvial com prioridade clínica"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2926,7 +2810,13 @@
      "blocos": [
       23866
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios priorizados",
+       "valor": "10 municípios com índice crítico"
+      }
+     ]
     }
    }
   },
@@ -2934,16 +2824,8 @@
    "id": "p106",
    "subtema": "Telessaúde e saúde digital",
    "proposta": "Implantar infraestrutura de conectividade de saúde em todos os 62 municípios até 2030, em parceria com a PRODAM",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      115,
-      118
-     ],
-     "nota": "Conectividade e pontos de telemedicina nas calhas"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2990,7 +2872,7 @@
    "id": "p109",
    "subtema": "Telessaúde e saúde digital",
    "proposta": "Estender a rede de telessaúde à tele-reabilitação, à teleconsultoria e ao apoio matricial remoto às equipes de Saúde da Família",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -2999,14 +2881,6 @@
       294
      ],
      "nota": "Telemedicina para apoio a profissionais do interior e reabilitação integrada"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      118,
-      124
-     ],
-     "nota": "Telemedicina assistida e reabilitação na rede territorial"
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -3036,33 +2910,9 @@
   {
    "id": "p111",
    "subtema": "Vigilância em saúde",
-   "proposta": "Reduzir o tempo médio de detecção e resposta a surtos de 14 para 3 dias, com fortalecimento da FVS-RCP",
-   "n_concorda": 4,
+   "proposta": "Reduzir o tempo médio de detecção e resposta a surtos de 14 para 3 dias.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      297
-     ],
-     "nota": "Vigilância orientada por dados e resposta integrada a riscos"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      106,
-      134
-     ],
-     "nota": "Reforço da vigilância e alertas de risco epidemiológico"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      628,
-      671,
-      672
-     ],
-     "nota": "Vigilância genômica e centro de inteligência para resposta epidemiológica rápida."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3076,24 +2926,8 @@
    "id": "p112",
    "subtema": "Atenção fluvial e itinerante",
    "proposta": "Implantar UBS fluviais de pequeno porte em comunidades de várzea com mais de 200 habitantes",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      60,
-      61
-     ],
-     "nota": "Amplia equipes de saúde fluvial e ribeirinha para municípios sem cobertura"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      115,
-      117
-     ],
-     "nota": "Barcos de saúde regionais com equipes e laboratório"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3122,16 +2956,8 @@
    "id": "p114",
    "subtema": "Populações indígenas e tradicionais",
    "proposta": "Regularizar o acesso da população indígena ao sistema estadual de regulação (SISREG)",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      102,
-      107
-     ],
-     "nota": "Regulação única e pactuação do atendimento aos povos indígenas"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3245,7 +3071,13 @@
       24166,
       24239
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "transplantes hepáticos",
+       "valor": "24 por ano até 2028"
+      }
+     ]
     }
    }
   },
@@ -3277,7 +3109,13 @@
       24219,
       24220
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "reperfusão em casos STEMI",
+       "valor": "menos de 90 minutos em 100% dos casos"
+      }
+     ]
     }
    }
   },
@@ -3294,14 +3132,20 @@
       24272,
       24273
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "consolidação do comitê",
+       "valor": "até 2030"
+      }
+     ]
     }
    }
   },
   {
    "id": "p125",
    "subtema": "Saúde mental e drogas",
-   "proposta": "Implantar 10 CAPS I nos municípios com maior déficit, classificados em deserto assistencial de nível elevado ou crítico e sem serviço de saúde mental habilitado",
+   "proposta": "Ampliar a capacidade de atendimento dos CAPS.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -3317,7 +3161,13 @@
      "blocos": [
       24285
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "CAPS I implantados",
+       "valor": "10 CAPS I"
+      }
+     ]
     }
    }
   },
@@ -3325,16 +3175,8 @@
    "id": "p126",
    "subtema": "Saúde mental e drogas",
    "proposta": "Implantar CAPS II nos municípios de médio porte que exerçam função de referência regional",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      300,
-      302
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3395,16 +3237,9 @@
   {
    "id": "p130",
    "subtema": "Saúde mental e drogas",
-   "proposta": "Implantar CAPS I em todos os municípios elegíveis, cobrindo 100% dos municípios com mais de 15.000 habitantes",
-   "n_concorda": 2,
+   "proposta": "Implantar progressivamente CAPS I em todos os municípios elegíveis, alcançando cobertura de 100% dos municípios com mais de 15.000 habitantes.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      300
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3418,15 +3253,8 @@
    "id": "p131",
    "subtema": "Saúde mental e drogas",
    "proposta": "Implantar 71 leitos psiquiátricos adicionais em hospitais gerais, atingindo o parâmetro de 187 leitos e captando o custeio federal disponível",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      302
-     ],
-     "nota": "Articulação CAPS-hospitais gerais e internação quando indicada"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3517,16 +3345,8 @@
    "id": "p137",
    "subtema": "Saúde mental e drogas",
    "proposta": "Ampliar o SAMU com protocolo específico para crises psíquicas e atendimento à população em situação de rua, em articulação com a Guarda Municipal e a Polícia Civil",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      291,
-      302
-     ],
-     "nota": "Atendimento em crise articulado com urgência"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3603,16 +3423,8 @@
    "id": "p142",
    "subtema": "Saúde mental e drogas",
    "proposta": "Prestar supervisão clínica por telessaúde às equipes dos CAPS AD regionais nos municípios-polo",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      284,
-      300
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3697,7 +3509,13 @@
       24793,
       24794
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "capacidade do ambulatório",
+       "valor": "80 pacientes simultaneamente"
+      }
+     ]
     }
    }
   },
@@ -3797,15 +3615,8 @@
    "id": "p154",
    "subtema": "Profissionais de saúde",
    "proposta": "Realizar, nos primeiros 12 meses, estudo técnico de necessidade e dimensionamento da força de trabalho da saúde estadual para embasar provimentos e concurso público",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      52
-     ],
-     "nota": "Expansão de cargos permanentes por concurso conforme necessidade"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3836,16 +3647,8 @@
    "id": "p156",
    "subtema": "Pesquisa e cooperação",
    "proposta": "Criar a Rede de Saúde-Educação SES-AM/Fiocruz, articulando qualificação profissional, pesquisa aplicada e inovação",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      660,
-      669
-     ],
-     "nota": "Formação continuada em parceria com academias e cooperação em pesquisa."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3893,23 +3696,8 @@
    "id": "p159",
    "subtema": "Medicamentos e insumos",
    "proposta": "Integrar a cadeia de frio de imunobiológicos à logística sanitária estadual",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      296
-     ],
-     "nota": "Gestão de estoques e logística da assistência farmacêutica/hemorrede"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      115,
-      121
-     ],
-     "nota": "Cadeia de frio e estoques regionais na logística sanitária"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3938,18 +3726,8 @@
    "id": "p161",
    "subtema": "Telessaúde e saúde digital",
    "proposta": "Implantar plano decenal de saúde digital abrangendo vigilância epidemiológica digital, monitoramento remoto de doenças crônicas e rastreamento de surtos em tempo real, integrado à RNDS",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      623,
-      646,
-      671,
-      672
-     ],
-     "nota": "Inovação digital, vigilância genômica e integração de dados epidemiológicos."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3962,7 +3740,7 @@
   {
    "id": "p162",
    "subtema": "Telessaúde e saúde digital",
-   "proposta": "Ampliar a infraestrutura estadual de telessaúde para cobertura em 25 especialidades, com programação em todos os municípios",
+   "proposta": "Ampliar a infraestrutura estadual de telessaúde.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -4010,23 +3788,8 @@
    "id": "p163",
    "subtema": "Telessaúde e saúde digital",
    "proposta": "Expandir o portal Saúde AM em Tempo Real a todas as sedes municipais, com mapa de calor de demanda, disponibilidade de leitos, estoques e alertas automáticos, integrado ao SISREG",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      279,
-      285
-     ],
-     "nota": "Regulação transparente e acompanhamento público de filas"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      662
-     ],
-     "nota": "Painel de Bordo Integrado com indicadores e acesso público."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4055,25 +3818,8 @@
    "id": "p165",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Implantar programa de acompanhamento digital da gestante e do recém-nascido no interior, com aplicativo de monitoramento, alertas de risco e teleconsulta com obstetra e pediatra",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      284,
-      299
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      101,
-      118,
-      136
-     ],
-     "nota": "Linha de gestação de risco, teleassistência e continuidade do pré-natal"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4094,7 +3840,13 @@
      "blocos": [
       38108
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "profissionais capacitados",
+       "valor": "15 mil até 2032"
+      }
+     ]
     }
    }
   },
@@ -4102,25 +3854,8 @@
    "id": "p167",
    "subtema": "Populações indígenas e tradicionais",
    "proposta": "Promover ações integradas de saneamento, vigilância em saúde ambiental e educação sanitária culturalmente adequada em áreas indígenas, com metas anuais pactuadas com a SES-AM e a SESAI",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      106,
-      107,
-      139
-     ],
-     "nota": "Vigilância ambiental e ações interculturais pactuadas"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      664,
-      666
-     ],
-     "nota": "Saúde indígena com articulação intersetorial incluindo saneamento."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4129,6 +3864,823 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p168",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Ampliar a telessaúde e as equipes de saúde fluvial e ribeirinha, priorizando municípios sem cobertura e requalificando estruturas existentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      61
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p169",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Implantar telessaúde e inteligência artificial nas comunidades da floresta e criar o Laboratório de Inovação em Saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      623,
+      646
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p171",
+   "subtema": "Rede regional e hospitais",
+   "proposta": "Fortalecer hospitais e unidades regionais conforme capacidade e demanda, ampliando diagnóstico, cirurgias eletivas, leitos e especialidades, com transporte sanitário e referência e contrarreferência pactuadas com municípios e União.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      277,
+      278,
+      289
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p172",
+   "subtema": "Regulação e filas",
+   "proposta": "Modernizar a regulação estadual, com ampliação de horários, telemedicina e rede complementar, e tornar a fila transparente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      282,
+      285,
+      287
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p173",
+   "subtema": "Regulação e filas",
+   "proposta": "Reduzir o tempo entre encaminhamento, deslocamento e atendimento especializado, publicando os resultados por região e acompanhando o tempo de espera como indicador da saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      125,
+      808
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p174",
+   "subtema": "Regulação e filas",
+   "proposta": "Estabelecer metas públicas de tempo de resposta com painel aberto da fila e reduzir o tempo médio de espera em especialidades críticas para menos de 30 dias, com acompanhamento no interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      23656,
+      25402,
+      25469
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p176",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Criar o programa \"Amazonas Azul\", de fortalecimento da Rede de Atenção Psicossocial voltada à população com TEA.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      667
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p178",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Implantar CAPS III 24h na capital, garantindo acolhimento em crise com suporte noturno e evitando internações desnecessárias em leitos clínicos de pronto-socorro.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      24282
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p179",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Construir hospital de referência em ginecologia, obstetrícia, mastologia, oncologia e medicina fetal, com atendimento especializado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      251,
+      253
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p180",
+   "subtema": "Medicamentos e insumos",
+   "proposta": "Organizar a logística de medicamentos e o transporte nos territórios indígenas, respeitando a língua e a cultura de cada povo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      68
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p181",
+   "subtema": "Medicamentos e insumos",
+   "proposta": "Manter estoques regionais de medicamentos essenciais e insumos para surtos e emergências climáticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      121
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p182",
+   "subtema": "Medicamentos e insumos",
+   "proposta": "Regularizar o abastecimento de medicamentos e produtos para saúde na rede.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      644
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p183",
+   "subtema": "Medicamentos e insumos",
+   "proposta": "Consolidar as aquisições de medicamentos em uma única fonte de compra, com protocolo formal de distribuição às unidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      22013
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p184",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Ampliar exames de imagem no interior, fortalecendo hospitais estratégicos com especialidades, leitos de UTI e centros cirúrgicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      312,
+      316
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p185",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Ampliar serviços de imagem e análises clínicas no interior conforme necessidade comprovada, incorporando equipamentos apenas com equipe, manutenção, insumos e custeio assegurados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      282
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p186",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Oferecer exames de telediagnóstico com laudo emitido à distância, apoiado por inteligência artificial, e testes laboratoriais rápidos nos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      23726,
+      38100
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p187",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Organizar linhas de cuidado regionais para câncer, integradas às demais linhas prioritárias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      101
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p188",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Organizar linhas de cuidado regionais para câncer, doenças cardiovasculares, saúde mental, gestação de risco, urgência, trauma e doenças infecciosas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      101
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p37"
+  },
+  {
+   "id": "p189",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Integrar a saúde bucal à rede territorial de atenção à saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      124
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p190",
+   "subtema": "Atenção especializada e linhas de cuidado",
+   "proposta": "Oferecer atendimentos odontológicos básicos de saúde bucal e prevenção em núcleo de saúde e atendimentos básicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      20525,
+      20526
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p191",
+   "subtema": "Atenção fluvial e itinerante",
+   "proposta": "Implantar plano rigoroso de manutenção preventiva e preditiva, com estoque de peças críticas em bases avançadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      24877
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
+  },
+  {
+   "id": "p192",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Combinar provimento, formação, educação permanente, apoio remoto e incentivos juridicamente cabíveis para fixar especialistas no interior, com expansão baseada em necessidades assistenciais demonstradas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      287
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p48"
+  },
+  {
+   "id": "p193",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Criar residência médica estratégica com bolsas condicionadas a pelo menos três anos de atuação no interior, com moradia subsidiada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      661
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p194",
+   "subtema": "Governança e financiamento",
+   "proposta": "Revisar os contratos de terceirização, gestão e prestação complementar de saúde, decidindo entre manter, substituir ou internalizar cada serviço após exame de legalidade, custo, qualidade, resultados assistenciais, capacidade pública, impacto financeiro e continuidade do atendimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      51
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p53"
+  },
+  {
+   "id": "p195",
+   "subtema": "Governança e financiamento",
+   "proposta": "Acompanhar publicamente filas, tempo de espera e resolutividade da saúde, com resultados por região e metas de redução de espera.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      279,
+      289
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p196",
+   "subtema": "Governança e financiamento",
+   "proposta": "Publicar indicadores de saúde por região, como tempo de espera, cobertura territorial, mortalidade evitável e vacinação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      125,
+      808
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p200",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Criar observatório de saúde e clima com alertas de fumaça, calor, qualidade da água e risco epidemiológico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      134
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p63"
+  },
+  {
+   "id": "p201",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Enfrentar malária, arboviroses e outras doenças transmissíveis do território amazônico com vigilância em saúde orientada por dados epidemiológicos e ambientais, integrando vigilância, assistência, laboratório e municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      297
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p64"
+  },
+  {
+   "id": "p202",
+   "subtema": "Populações indígenas e tradicionais",
+   "proposta": "Fortalecer as ações de saúde indígena e ribeirinha, capacitando agentes indígenas para atuar na capital e no interior conforme a divisão de competências.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      624,
+      664
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p66"
+  },
+  {
+   "id": "p203",
+   "subtema": "Populações indígenas e tradicionais",
+   "proposta": "Fortalecer a saúde indígena e ribeirinha, associada à sociobiodiversidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      624
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p69"
+  },
+  {
+   "id": "p204",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Apoiar os municípios na modernização das unidades de saúde da família.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      649
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p70"
+  },
+  {
+   "id": "p206",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Revisar as pactuações integradas e as redes de saúde com os municípios do Amazonas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      670
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p72"
+  },
+  {
+   "id": "p207",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Integrar a saúde às políticas de saneamento, educação e segurança alimentar por meio de ações de articulação intersetorial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      666
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p73"
+  },
+  {
+   "id": "p208",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Promover o envelhecimento ativo e saudável com articulação intersetorial entre saúde, assistência social, cultura, educação e esporte, priorizando os 20 municípios com maior proporção de idosos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      24080
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p73"
+  },
+  {
+   "id": "p209",
+   "subtema": "Saúde e clima",
+   "proposta": "Monitorar a incidência de doenças sensíveis ao clima cruzando-a com indicadores ambientais para antecipar surtos e orientar ações de campo da Defesa Civil e da secretaria estadual de saúde",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      31150
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p77"
+  },
+  {
+   "id": "p230",
+   "subtema": "Saúde e clima",
+   "proposta": "Incorporar o calendário hidrológico como variável estratégica do planejamento estadual",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      22736
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p77"
+  },
+  {
+   "id": "p212",
+   "subtema": "Rede regional e hospitais",
+   "proposta": "Regionalizar o atendimento hospitalar, com hospitais regionais em São Gabriel da Cachoeira, Tefé, Tabatinga, Humaitá, Itacoatiara e Eirunepé para média e alta complexidade no interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      62,
+      63
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p91"
+  },
+  {
+   "id": "p213",
+   "subtema": "Rede regional e hospitais",
+   "proposta": "Fortalecer a média e a alta complexidade no interior respeitando a regionalização do SUS, com hospitais de referência, policlínicas e centros diagnósticos de funções definidas por região.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      277,
+      281
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p91"
+  },
+  {
+   "id": "p214",
+   "subtema": "Rede regional e hospitais",
+   "proposta": "Implantar nove polos regionais de saúde classificados por nível de complexidade, com referência e contrarreferência, e rever as pactuações integradas com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      654,
+      670
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p91"
+  },
+  {
+   "id": "p215",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Elaborar estudo técnico para a criação da Carreira Médica de Estado do Amazonas, com progressão vinculada ao tempo de serviço no interior e a indicadores de desempenho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      23768,
+      23769
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p98"
+  },
+  {
+   "id": "p217",
+   "subtema": "Atenção fluvial e itinerante",
+   "proposta": "Criar rotas sanitárias regulares, com equipes fluviais e terrestres financiadas, calendário público e integração à regulação e aos hospitais regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      103,
+      115
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p102"
+  },
+  {
+   "id": "p218",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Criar rotas sanitárias regulares em cada calha, com embarcações e bases equipadas com conectividade, cadeia de frio, medicamentos e laboratório rápido, além de pontos comunitários de telemedicina assistida.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      115,
+      118,
+      121
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p106"
+  },
+  {
+   "id": "p219",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Fortalecer a vigilância epidemiológica com monitoramento genômico contínuo de patógenos e criação de um Centro de Inteligência em Saúde que integre dados epidemiológicos em tempo real, em articulação com a FVS-AM.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      628,
+      662,
+      671,
+      672
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p111"
+  },
+  {
+   "id": "p220",
+   "subtema": "Atenção fluvial e itinerante",
+   "proposta": "Implantar barcos de saúde regionais com rotas sanitárias regulares em cada calha, agenda anual, equipes, cadeia de frio, laboratório rápido, prontuário eletrônico interoperável e controle social, integrados à regulação e aos hospitais regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      115,
+      117
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p112"
+  },
+  {
+   "id": "p221",
+   "subtema": "Saúde mental e drogas",
+   "proposta": "Ampliar progressivamente a capacidade dos CAPS e serviços equivalentes, com atendimento em crise, prevenção do suicídio, cuidado continuado e apoio às famílias, articulados com urgência, hospitais gerais, atenção básica e rede de proteção social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      300,
+      302
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p125"
+  },
+  {
+   "id": "p224",
+   "subtema": "Pesquisa e cooperação",
+   "proposta": "Criar polos da Escola de Saúde Pública, com formação continuada por telessaúde em parceria com instituições de ensino, e um ecossistema de pesquisa e cooperação internacional, com bolsas e aplicação das descobertas nos protocolos da rede estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      659,
+      660,
+      669
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p156"
+  },
+  {
+   "id": "p227",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Levar atendimento especializado a todo o Estado por telemedicina, conectando hospitais, unidades e barcos-hospital a especialistas da capital e da UEA.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      282,
+      327,
+      329
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p162"
+  },
+  {
+   "id": "p228",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Usar a telemedicina para conectar unidades locais a centros de referência, apoiando diagnóstico e reduzindo viagens de pacientes do interior, com expansão conforme necessidades assistenciais demonstradas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      284,
+      287
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p162"
+  },
+  {
+   "id": "p229",
+   "subtema": "Telessaúde e saúde digital",
+   "proposta": "Expandir o Telessaúde em Manaus e no interior, com uso de inteligência artificial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      623,
+      647
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p162"
   }
  ],
  "blocos": {
@@ -4246,14 +4798,6 @@
    "76": {
     "texto": "O Plano de Governo que coloco agora à apreciação e ao debate públicos indica os caminhos que pretendemos trilhar. Ele contém propostas de curto, médio e longo prazo, elaboradas por técnicos experientes que me acompanham há tempos, e detalham o trabalho que vamos realizar caso o eleitor nos dê essa honra. Entre as nossas prioridades, adianto desde já, estão zerar a fila do SISREG e aparelhar os hospitais e prontos-socorros estaduais, dobrar o valor do Auxílio Estadual Permanente dos atuais R$ 150 para R$ 300 por mês, e ampliar a presença da Polícia Militar e incentivar a criação de Guardas Municipais armadas no interior.",
     "pagina": 5
-   },
-   "266": {
-    "texto": "A fragmentação do SISREG entre Estado e capital dificulta a integração das informações, a rastreabilidade dos pacientes e a utilização de ferramentas de inteligência artificial para qualificar a regulação dos serviços, monitorar os atendimentos e melhorar a qualidade do serviço.",
-    "pagina": 22
-   },
-   "268": {
-    "texto": "Diante desse contexto, o Amazonas necessita de um novo modelo de saúde. Um bom exemplo do que pode ser feito é o trabalho realizado pela gestão David Almeida que fez a saúde básica de Manaus ser eleita por sete vezes consecutiva a melhor entre as capitais brasileiras, graças a valorização dos profissionais da área e a construção, reforma e ampliação de 128 unidades. Agora, os desafios envolvem a ampliação da telemedicina, a implantação de hubs tecnológicos em saúde, a integração dos sistemas de informação, o fortalecimento da assistência especializada no interior e a aplicação correta dos recursos públicos para ampliar o acesso e garantir atendimento de qualidade em todas as regiões do Estado.",
-    "pagina": 22
    },
    "622": {
     "texto": "1. Descentralização da saúde com a criação de Polos Regionais de Média e Alta Complexidade;",
@@ -6405,10 +6949,6 @@
    }
   },
   "governador-am-professora-maria-do-carmo-40002541626": {
-   "60": {
-    "texto": "Levar atenção à saúde básica a todo o interior",
-    "pagina": 7
-   },
    "61": {
     "texto": "Ampliar as equipes de saúde fluvial e ribeirinha e a telessaúde, priorizando os municípios ainda sem cobertura e requalificar as estruturas já existentes.",
     "pagina": 7
@@ -6457,10 +6997,6 @@
    },
    "268": {
     "texto": "Mais leitos.",
-    "pagina": 32
-   },
-   "270": {
-    "texto": "Pesquisa fortalecida.",
     "pagina": 32
    },
    "282": {
@@ -6537,10 +7073,6 @@
    },
    "364": {
     "texto": "CESMAM fortalecidos.",
-    "pagina": 44
-   },
-   "366": {
-    "texto": "Apoio às famílias.",
     "pagina": 44
    }
   }

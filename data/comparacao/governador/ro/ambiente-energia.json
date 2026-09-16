@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-ro.json",
   "gerado_em": "2026-09-14T19:29:10Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "exportado_em": "2026-09-16T21:46:50Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Licenciamento ambiental",
-   "proposta": "Modernizar e agilizar o licenciamento ambiental (digitalização, simplificação de procedimentos, redução de prazos e reforço das equipes técnicas), mantendo o rigor técnico e os padrões de proteção ambiental",
+   "proposta": "Modernizar e agilizar o licenciamento ambiental, com digitalização, simplificação de procedimentos e redução de prazos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -144,7 +144,7 @@
   {
    "id": "p5",
    "subtema": "Licenciamento ambiental",
-   "proposta": "Realizar mutirões para zerar os passivos de análise do Cadastro Ambiental Rural e demais processos ambientais pendentes (PRA, PRADA, outorgas de água, tanques escavados)",
+   "proposta": "Dar andamento à análise do Cadastro Ambiental Rural e dos demais processos de regularização e licenciamento ambiental pendentes.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -169,7 +169,7 @@
    "id": "p6",
    "subtema": "Bioeconomia e economia florestal",
    "proposta": "Fomentar cadeias produtivas da sociobiodiversidade e do extrativismo sustentável (castanha, açaí, cacau, óleos, mel, manejo florestal), com geração de renda e conservação",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -197,20 +197,13 @@
       861
      ],
      "nota": "Foco em agroindustrialização de bioativos"
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      153
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p7",
    "subtema": "Bioeconomia e economia florestal",
-   "proposta": "Criar selo e sistema de rastreabilidade de origem e legalidade para a produção estadual, como passaporte de mercado",
+   "proposta": "Instituir rastreabilidade para a produção do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -319,7 +312,7 @@
   {
    "id": "p12",
    "subtema": "Clima e mercado de carbono",
-   "proposta": "Estruturar política estadual de serviços ambientais e mercado de carbono com critérios públicos, transparência e repartição justa de benefícios com comunidades",
+   "proposta": "Estruturar política estadual de pagamento por serviços ambientais e de mercado de carbono.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -362,7 +355,7 @@
   {
    "id": "p13",
    "subtema": "Clima e mercado de carbono",
-   "proposta": "Regulamentar integralmente, no primeiro ano de mandato, a lei estadual de governança climática e de pagamento por serviços ambientais (Lei 4.437/2018), com registro público auditável",
+   "proposta": "Regulamentar o pagamento por serviços ambientais no estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -464,7 +457,13 @@
      "blocos": [
       166
      ],
-     "nota": "Meta de pelo menos 3 consórcios até 2029, sem repasse do Tesouro estadual"
+     "nota": "Meta de pelo menos 3 consórcios até 2029, sem repasse do Tesouro estadual",
+     "metas": [
+      {
+       "rotulo": "consórcios intermunicipais",
+       "valor": "pelo menos 3 até 2029"
+      }
+     ]
     }
    }
   },
@@ -566,7 +565,7 @@
    "id": "p24",
    "subtema": "Recuperação de áreas degradadas",
    "proposta": "Executar programas de recuperação de áreas degradadas, nascentes e vegetação nativa, integrados a sistemas produtivos sustentáveis",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -593,13 +592,6 @@
       868
      ],
      "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      161
-     ],
-     "nota": ""
     }
    }
   },
@@ -616,7 +608,13 @@
       163,
       165
      ],
-     "nota": "Prioriza o Parque Estadual de Guajará-Mirim e contratação de viveiristas locais"
+     "nota": "Prioriza o Parque Estadual de Guajará-Mirim e contratação de viveiristas locais",
+     "metas": [
+      {
+       "rotulo": "restauração florestal",
+       "valor": "50.000 hectares até 2030"
+      }
+     ]
     }
    }
   },
@@ -678,7 +676,7 @@
   {
    "id": "p29",
    "subtema": "Energia e transição energética",
-   "proposta": "Expandir e modernizar a infraestrutura energética estadual com incentivo a fontes renováveis e aumento da segurança do sistema elétrico",
+   "proposta": "Adotar políticas públicas estaduais voltadas ao fornecimento de energia elétrica.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -742,7 +740,7 @@
    "id": "p31",
    "subtema": "Energia e transição energética",
    "proposta": "Apoiar geração distribuída renovável e eficiência energética (solar, biomassa, biogás) para propriedades rurais e atividades produtivas",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -766,14 +764,6 @@
       738
      ],
      "nota": ""
-    },
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      2898,
-      2899
-     ],
-     "nota": ""
     }
    }
   },
@@ -795,7 +785,7 @@
   {
    "id": "p33",
    "subtema": "Energia e transição energética",
-   "proposta": "Instalar geração fotovoltaica própria e medidas de eficiência energética nos prédios e equipamentos públicos estaduais",
+   "proposta": "Adotar medidas de eficiência energética nos prédios e equipamentos públicos estaduais",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -895,7 +885,7 @@
   {
    "id": "p39",
    "subtema": "Fiscalização e desmatamento",
-   "proposta": "Combater o desmatamento ilegal, o garimpo e as ocupações irregulares com monitoramento por satélite, inteligência territorial e fiscalização em campo",
+   "proposta": "Combater o desmatamento ilegal.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -920,7 +910,7 @@
   {
    "id": "p40",
    "subtema": "Mineração",
-   "proposta": "Fortalecer a regularidade ambiental, a rastreabilidade e a recuperação de áreas da atividade mineral, em cooperação com a União e a Agência Nacional de Mineração",
+   "proposta": "Fortalecer a regularidade ambiental e a rastreabilidade da atividade mineral.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -960,7 +950,7 @@
    "id": "p42",
    "subtema": "Educação ambiental e resíduos sólidos",
    "proposta": "Implantar programas permanentes de educação ambiental nas escolas e comunidades, incluindo resíduos, reciclagem, uso consciente de água e energia e mudanças climáticas",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -978,13 +968,6 @@
       1008
      ],
      "nota": ""
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      633
-     ],
-     "nota": "Educação ambiental focada na prevenção de queimadas"
     }
    }
   },
@@ -1062,7 +1045,7 @@
   {
    "id": "p47",
    "subtema": "Recuperação de áreas degradadas",
-   "proposta": "Priorizar a restauração florestal com remoção de carbono no Parque Estadual de Guajará-Mirim e em unidades de conservação com situação territorial pacificada e degradação mapeada",
+   "proposta": "Promover a restauração florestal em áreas degradadas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1070,7 +1053,13 @@
      "blocos": [
       163
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "restauração florestal",
+       "valor": "50.000 hectares até 2030"
+      }
+     ]
     },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1093,6 +1082,310 @@
      "nota": "Prevê recuperação de áreas degradadas com nativas, gestão das UCs e iniciativas de carbono, sem citar Guajará-Mirim."
     }
    }
+  },
+  {
+   "id": "p48",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Implantar esteiras digitais de análise com inteligência artificial e grupos de trabalho especializados para acelerar o licenciamento ambiental urbano e rural",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      852
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p62",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Realizar mutirões para zerar os passivos de análise de CAR, PRA, PRADA, outorgas de uso da água e licenciamento de tanques escavados",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      852
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p63",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Instituir licenciamento ambiental autodeclaratório e automatizado, com emissão em até 48 horas, para atividades agropecuárias de baixo e médio impacto, com fiscalização rigorosa posterior",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      852
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p64",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Adotar a orientação e notificação prévia ao pequeno produtor para adequação de pendências antes da aplicação de autos de infração ou multas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      739
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p49",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Priorizar a análise do CAR e a regularização ambiental, integrando cadastro, regularização fundiária, licenciamento, assistência técnica e crédito, com processos previsíveis e decisão técnica sem flexibilizar normas de proteção ambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      985,
+      994
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p50",
+   "subtema": "Bioeconomia e economia florestal",
+   "proposta": "Apoiar as cadeias de produtos da floresta e das águas assegurando rastreabilidade e repartição justa de benefícios, com respeito aos direitos e às formas de organização dos povos indígenas e das comunidades tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      538
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p52",
+   "subtema": "Clima e mercado de carbono",
+   "proposta": "Fortalecer instrumentos econômicos ambientais, como pagamento por serviços ambientais, mercado de carbono, financiamento verde e bioeconomia, aliando conservação e desenvolvimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2600,
+      2904
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p53",
+   "subtema": "Clima e mercado de carbono",
+   "proposta": "Regulamentar e consolidar o Sistema Estadual de Pagamento por Serviços Ambientais, remunerando produtores rurais e comunidades tradicionais que preservem nascentes, APPs e vegetação nativa",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      755
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p65",
+   "subtema": "Clima e mercado de carbono",
+   "proposta": "Criar o Selo Verde Rondônia para certificar conformidade legal das propriedades rurais e rastreabilidade da produção sustentável",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      755,
+      758
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p66",
+   "subtema": "Clima e mercado de carbono",
+   "proposta": "Fomentar a agroindustrialização dos bioativos da floresta, como cacau, castanha, açaí e óleos essenciais",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      758
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p54",
+   "subtema": "Energia e transição energética",
+   "proposta": "Promover eficiência energética, bioenergia e geração distribuída e defender a qualidade e a continuidade do fornecimento de energia a produtores e pequenos negócios, articulando-se com municípios, concessionárias e órgãos competentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      744,
+      752,
+      753
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p55",
+   "subtema": "Energia e transição energética",
+   "proposta": "Criar programa de energização rural trifásica e geração distribuída solar nas bacias produtoras, em articulação com o Luz para Todos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      41
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p56",
+   "subtema": "Energia e transição energética",
+   "proposta": "Implementar estratégia estadual de eletrificação trifásica para garantir energia estável e de alta capacidade aos produtores rurais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      737
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p57",
+   "subtema": "Energia e transição energética",
+   "proposta": "Avaliar e apoiar, nos equipamentos públicos estaduais, projetos viáveis de eficiência energética e geração própria renovável, considerando custo, economia e segurança do abastecimento, além de ampliar soluções de energia de respaldo em unidades essenciais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      756,
+      761
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p58",
+   "subtema": "Fiscalização e desmatamento",
+   "proposta": "Combater o desmatamento ilegal por meio de concessões de florestas públicas para manejo sustentável e do Selo Verde, com rastreabilidade digital em cadeia de custódia, aliando licenciamento simplificado a rigor na fiscalização posterior de quem comete crimes ambientais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      752,
+      852
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p59",
+   "subtema": "Mineração",
+   "proposta": "Legalizar e verticalizar a exploração mineral com rastreabilidade tecnológica, por meio do programa Ouro Legal de Rondônia, e oferecer suporte técnico, laboratorial e ambiental à legalização das cooperativas de garimpeiros.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      857,
+      993
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p60",
+   "subtema": "Recuperação de áreas degradadas",
+   "proposta": "Executar programas permanentes de recuperação de áreas degradadas e nascentes, reflorestamento e restauração da vegetação nativa, integrando conservação ambiental, produção sustentável e geração de renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      1792,
+      1793,
+      2873,
+      2874
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
+  },
+  {
+   "id": "p61",
+   "subtema": "Recuperação de áreas degradadas",
+   "proposta": "Apoiar a recuperação de áreas degradadas com espécies nativas, sistemas agroflorestais e sistemas florestais adequados ao território, qualificar a gestão das unidades de conservação estaduais e estruturar critérios públicos para serviços ambientais e iniciativas de carbono.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      996,
+      997,
+      1000,
+      1002
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
   }
  ],
  "blocos": {

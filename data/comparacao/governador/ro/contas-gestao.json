@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-ro.json",
   "gerado_em": "2026-09-14T18:44:42Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "exportado_em": "2026-09-16T21:46:50Z"
  },
  "candidatos": [
   {
@@ -97,7 +97,7 @@
   {
    "id": "p2",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Criar centro de governo ligado ao governador para coordenar prioridades transversais e destravar decisões",
+   "proposta": "Criar uma estrutura central de governo para coordenar prioridades transversais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -175,7 +175,7 @@
   {
    "id": "p4",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Definir e publicar carteira limitada de prioridades estratégicas do governo, com responsável, prazo e recursos para cada entrega",
+   "proposta": "Definir e publicar uma carteira de prioridades estratégicas do governo, com responsável, prazo e recursos para cada entrega",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -185,7 +185,13 @@
       3243,
       3245
      ],
-     "nota": "Até 30 prioridades com marco de 12 meses e meta 2030"
+     "nota": "Até 30 prioridades com marco de 12 meses e meta 2030",
+     "metas": [
+      {
+       "rotulo": "prioridades estratégicas",
+       "valor": "até 30 prioridades"
+      }
+     ]
     },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -202,7 +208,7 @@
    "id": "p5",
    "subtema": "Planejamento e gestão por resultados",
    "proposta": "Integrar PPA, LDO, LOA, programação financeira e contratações, exigindo problema, custo e cronograma antes de assumir cada compromisso",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -212,22 +218,13 @@
       1194
      ],
      "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      23,
-      25,
-      26
-     ],
-     "nota": "Cada proposta declara natureza e fonte de recurso"
     }
    }
   },
   {
    "id": "p6",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Manter carteira permanente de projetos prontos (estudos, engenharia, licenciamento) para captação e execução de investimentos",
+   "proposta": "Manter uma carteira de projetos prioritários com estudos técnicos e projetos preparados",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -283,7 +280,7 @@
   {
    "id": "p9",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Consolidar agenda de avaliação das políticas públicas, com divulgação das conclusões e revisão do que não produz resultado",
+   "proposta": "Consolidar uma agenda de avaliação das políticas públicas, com revisão do que não produz resultado",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -307,7 +304,7 @@
   {
    "id": "p10",
    "subtema": "Planejamento e gestão por resultados",
-   "proposta": "Gerir os ativos públicos pelo ciclo de vida completo, com plano de manutenção e custo de conservação previstos desde o projeto",
+   "proposta": "Gerir os ativos públicos prevendo o custo de manutenção e conservação desde o projeto.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -386,7 +383,7 @@
   {
    "id": "p13",
    "subtema": "Transparência e integridade",
-   "proposta": "Fortalecer programas de integridade, gestão de riscos e controle interno na administração estadual",
+   "proposta": "Fortalecer programas de integridade.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -423,7 +420,7 @@
   {
    "id": "p14",
    "subtema": "Transparência e integridade",
-   "proposta": "Mapear preventivamente os riscos de integridade nos processos críticos (compras, obras, folha, convênios), com matriz de riscos e monitoramento",
+   "proposta": "Identificar e tratar preventivamente os riscos de integridade na administração estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -448,8 +445,8 @@
   {
    "id": "p15",
    "subtema": "Transparência e integridade",
-   "proposta": "Cumprir e dar seguimento às determinações e recomendações do controle externo, com relatórios públicos de cumprimento",
-   "n_concorda": 3,
+   "proposta": "Dar cumprimento às determinações e apontamentos do Tribunal de Contas, com relatórios públicos periódicos de cumprimento.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -459,13 +456,6 @@
       242
      ],
      "nota": "Determinações do TCE viram metas do PPA 2028-2031"
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      1228
-     ],
-     "nota": ""
     },
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -480,7 +470,7 @@
   {
    "id": "p16",
    "subtema": "Transparência e integridade",
-   "proposta": "Assegurar participação social na definição de prioridades, com ouvidoria, canais de escuta e devolutiva às demandas",
+   "proposta": "Assegurar a participação social na gestão pública.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -552,39 +542,13 @@
    "id": "p20",
    "subtema": "Servidores, carreiras e folha",
    "proposta": "Revisar e atualizar os planos de cargos, carreiras e remuneração, corrigindo distorções com observância da responsabilidade fiscal",
-   "n_concorda": 4,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      53,
-      182
-     ],
-     "nota": "Somente com fonte de compensação demonstrada"
-    },
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      983,
-      984,
-      3002,
-      3003
-     ],
-     "nota": ""
-    },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
      "blocos": [
       1093,
       1094
-     ],
-     "nota": ""
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      970,
-      971
      ],
      "nota": ""
     }
@@ -593,8 +557,8 @@
   {
    "id": "p21",
    "subtema": "Servidores, carreiras e folha",
-   "proposta": "Instituir mesa ou canal permanente de diálogo com os servidores e suas entidades representativas",
-   "n_concorda": 3,
+   "proposta": "Dialogar com os servidores e suas entidades representativas.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -603,13 +567,6 @@
       1013,
       3008,
       3009
-     ],
-     "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      184
      ],
      "nota": ""
     },
@@ -656,7 +613,7 @@
   {
    "id": "p23",
    "subtema": "Servidores, carreiras e folha",
-   "proposta": "Ampliar a formação continuada dos servidores por meio da escola de governo e de parcerias com instituições de ensino",
+   "proposta": "Ampliar a formação continuada dos servidores públicos",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -869,7 +826,13 @@
       966,
       969
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "juros do consignado",
+       "valor": "a partir de 1% ao mês"
+      }
+     ]
     }
    }
   },
@@ -908,7 +871,7 @@
    "id": "p35",
    "subtema": "Responsabilidade fiscal e orçamento",
    "proposta": "Condicionar toda nova despesa continuada, reajuste ou expansão de serviço à demonstração prévia de fonte de custeio e impacto fiscal",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -926,14 +889,6 @@
       1142
      ],
      "nota": ""
-    },
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      984,
-      3003
-     ],
-     "nota": "Condiciona atualizações de carreira à disponibilidade orçamentária"
     }
    }
   },
@@ -941,15 +896,8 @@
    "id": "p36",
    "subtema": "Responsabilidade fiscal e orçamento",
    "proposta": "Restringir novas operações de crédito a investimentos, com finalidade, capacidade de pagamento e retorno demonstrados",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      51
-     ],
-     "nota": "Regra de ouro interna publicada no primeiro dia"
-    },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
      "blocos": [
@@ -962,8 +910,8 @@
   {
    "id": "p37",
    "subtema": "Responsabilidade fiscal e orçamento",
-   "proposta": "Realizar diagnóstico e planejamento financeiro plurianual das contas, contratos, passivos e capacidade de investimento do Estado",
-   "n_concorda": 3,
+   "proposta": "Acompanhar as contas, os passivos e a capacidade de investimento do Estado.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -984,13 +932,6 @@
       1145
      ],
      "nota": "Acompanhamento de dívida, precatórios e riscos fiscais"
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      30
-     ],
-     "nota": "Revalidação dos diagnósticos por estudo técnico no início do governo"
     }
    }
   },
@@ -1092,7 +1033,7 @@
   {
    "id": "p44",
    "subtema": "Responsabilidade fiscal e orçamento",
-   "proposta": "Estruturar a captação de recursos federais, emendas e fundos para financiar investimentos estaduais",
+   "proposta": "Buscar recursos federais e fundos para financiar investimentos estaduais",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1170,7 +1111,13 @@
       174,
       257
      ],
-     "nota": "Censo da Precarização em 90 dias, com a CGE"
+     "nota": "Censo da Precarização em 90 dias, com a CGE",
+     "metas": [
+      {
+       "rotulo": "censo da precarização",
+       "valor": "primeiros 90 dias"
+      }
+     ]
     },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -1186,16 +1133,8 @@
    "id": "p49",
    "subtema": "Concursos e provimento de pessoal",
    "proposta": "Instituir plano plurianual de concursos e provimento de pessoal, com cronograma e divulgação pública do déficit por órgão e carreira",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      175,
-      258
-     ],
-     "nota": "Calendário vinculante em lei, priorizado por criticidade"
-    },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
      "blocos": [
@@ -1209,7 +1148,7 @@
   {
    "id": "p50",
    "subtema": "Concursos e provimento de pessoal",
-   "proposta": "Reduzir a contratação temporária e substituí-la por servidores efetivos nas atividades permanentes",
+   "proposta": "Fortalecer o provimento de servidores efetivos nas atividades permanentes do Estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1294,8 +1233,8 @@
   {
    "id": "p54",
    "subtema": "Desburocratização e governo digital",
-   "proposta": "Ampliar a digitalização dos serviços públicos estaduais, com plataformas eletrônicas e integração de sistemas",
-   "n_concorda": 4,
+   "proposta": "Ampliar a digitalização dos serviços públicos, com uso de soluções digitais e integração de sistemas.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1322,20 +1261,13 @@
       745
      ],
      "nota": "Digitalização do licenciamento do Corpo de Bombeiros"
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      244
-     ],
-     "nota": "Uso da infraestrutura pública digital federal e letramento digital"
     }
    }
   },
   {
    "id": "p55",
    "subtema": "Desburocratização e governo digital",
-   "proposta": "Simplificar procedimentos e reduzir exigências burocráticas nos serviços prestados ao cidadão, com linguagem clara e prazos informados",
+   "proposta": "Simplificar procedimentos e reduzir exigências burocráticas nos serviços prestados ao cidadão.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -1412,20 +1344,13 @@
    "id": "p58",
    "subtema": "Desburocratização e governo digital",
    "proposta": "Estabelecer padrões de interoperabilidade e qualidade de dados entre órgãos, evitando que o cidadão repita informações já entregues ao Estado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
      "blocos": [
       1109,
       1170
-     ],
-     "nota": ""
-    },
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      3134
      ],
      "nota": ""
     }
@@ -1435,7 +1360,7 @@
    "id": "p59",
    "subtema": "Desburocratização e governo digital",
    "proposta": "Priorizar a digitalização dos serviços de maior demanda a partir do diagnóstico da jornada do usuário, com metas de redução do tempo de atendimento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1445,13 +1370,6 @@
       3418
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      1102
-     ],
-     "nota": "Transparência sobre prazos, canais e experiência do usuário"
     }
    }
   },
@@ -1459,7 +1377,7 @@
    "id": "p60",
    "subtema": "Previdência dos servidores",
    "proposta": "Manter avaliações atuariais atualizadas e divulgar publicamente a situação e a sustentabilidade do regime próprio",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -1468,13 +1386,6 @@
       1138
      ],
      "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      63
-     ],
-     "nota": "Estudo atuarial específico do sistema de proteção dos militares no 1º ano"
     }
    }
   },
@@ -1503,7 +1414,7 @@
   {
    "id": "p62",
    "subtema": "Previdência dos servidores",
-   "proposta": "Fortalecer o Iperon na gestão cadastral, atuarial e financeira e no atendimento a servidores, aposentados e pensionistas",
+   "proposta": "Fortalecer o Iperon.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1557,7 +1468,7 @@
   {
    "id": "p65",
    "subtema": "Licitações e compras públicas",
-   "proposta": "Qualificar o planejamento e a fiscalização das contratações, com estudos técnicos, análise de riscos e divulgação de preços, prazos e aditivos",
+   "proposta": "Melhorar o planejamento das contratações públicas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1669,7 +1580,13 @@
       950,
       959
      ],
-     "nota": "Projeto enviado à Assembleia nos primeiros 100 dias"
+     "nota": "Projeto enviado à Assembleia nos primeiros 100 dias",
+     "metas": [
+      {
+       "rotulo": "apresentação da reforma administrativa",
+       "valor": "nos primeiros 100 dias"
+      }
+     ]
     }
    }
   },
@@ -1691,7 +1608,7 @@
   {
    "id": "p72",
    "subtema": "Reforma administrativa e estrutura do Estado",
-   "proposta": "Fortalecer a capacidade institucional e a continuidade das políticas, preservando conhecimento e memória institucional",
+   "proposta": "Fortalecer a capacidade institucional.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1755,7 +1672,7 @@
    "id": "p75",
    "subtema": "Estatais, concessões e patrimônio",
    "proposta": "Condicionar concessões, PPPs e transferências de operação a estudos técnicos, transparência de custos e riscos, participação social e proteção ao usuário",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -1763,13 +1680,6 @@
       1208
      ],
      "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      244
-     ],
-     "nota": "Painel público de concessões entre os dados abertos"
     }
    }
   },
@@ -1893,7 +1803,7 @@
    "id": "p83",
    "subtema": "Responsabilidade fiscal e orçamento",
    "proposta": "Priorizar a expansão de soluções tecnológicas comprovadamente eficientes antes de ampliar a folha de pessoal, condicionando novos concursos à demonstração prévia de compensação fiscal",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -1901,14 +1811,6 @@
       28
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      1091,
-      1142
-     ],
-     "nota": "Concursos conforme necessidade demonstrada, observando capacidade fiscal e sustentabilidade da despesa de pessoal."
     }
    }
   },
@@ -1946,16 +1848,8 @@
    "id": "p86",
    "subtema": "Servidores, carreiras e folha",
    "proposta": "Estudar formas de reconhecimento remuneratório aos profissionais que exercem atividades finalísticas de segurança viária, respeitados os limites legais e orçamentários",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      53,
-      182
-     ],
-     "nota": "Prevê revisão de planos de cargos das áreas críticas (inclui segurança) com compensação demonstrada."
-    },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
      "blocos": [
@@ -1969,7 +1863,7 @@
    "id": "p87",
    "subtema": "Planejamento e gestão por resultados",
    "proposta": "Elaborar, nos primeiros 100 dias de governo, planos executivos para segurança, saúde, educação, infraestrutura, saneamento, meio ambiente, habitação e produção, com diagnósticos objetivos, responsabilidades definidas e caminhos de execução",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1977,18 +1871,422 @@
       3287
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Adotar o Sistema Integrado de Governança proposto pelo controle externo, com centro de governo encarregado de coordenar prioridades transversais e painéis públicos de metas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      241
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p89",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Publicar carteira pública de prioridades do governo, integrando planejamento, orçamento e execução, com responsável, prazo, recursos, território e situação de cada entrega, e corrigir desvios ao longo da execução.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1187,
+      1203,
+      1304
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p90",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Organizar e acompanhar uma carteira de projetos prioritários, com estudos técnicos, projetos e licitações preparadas, além de análise de riscos e monitoramento físico e financeiro, com informação de custo, prazo, estágio e benefício por território.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1196,
+      1197
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p91",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Fortalecer a gestão com planejamento estratégico, metas, indicadores e monitoramento permanente, avaliando as políticas públicas e corrigindo rumos quando necessário",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      448,
+      3118
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p92",
+   "subtema": "Planejamento e gestão por resultados",
+   "proposta": "Criar cadastro estadual integrado de imóveis, veículos e demais bens, com dados de conservação e custo, e exigir estimativa de manutenção e fonte de custeio para toda nova obra ou investimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1140,
+      1142
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p93",
+   "subtema": "Transparência e integridade",
+   "proposta": "Exigir que todas as empresas estatais mantenham programas de integridade auditáveis, firmem acordos de gestão com metas plurianuais e preencham conselhos com membros certificados.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
      "blocos": [
-      944,
-      948,
-      950,
-      954
+      986,
+      989
      ],
-     "nota": "Prevê choque de gestão e reforma administrativa nos 100 dias e contratos anuais de metas por órgão, com indicadores e responsáveis."
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p94",
+   "subtema": "Transparência e integridade",
+   "proposta": "Ampliar o Programa Rondoniense de Integridade, com planos de ação ajustados a cada órgão, prevenção de conflitos de interesse, proteção do patrimônio público e tratamento de riscos concretos, além de auditorias baseadas em risco e acompanhamento das recomendações do controle.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1225,
+      1228
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p95",
+   "subtema": "Transparência e integridade",
+   "proposta": "Fortalecer auditorias baseadas em risco e acompanhar as recomendações e determinações dirigidas ao Executivo, divulgando de forma acessível os benefícios financeiros, administrativos e sociais do controle.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1228
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p96",
+   "subtema": "Transparência e integridade",
+   "proposta": "Reforçar mecanismos de integridade pública, transparência, controle interno, governo aberto, participação social e fiscalização dos recursos públicos na administração estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      594
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p97",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Revisar os planos de cargos e carreiras das áreas críticas, sempre com a fonte de compensação demonstrada conforme exige a LDO.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      182,
+      53
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p98",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Atualizar o PCCR em diálogo com a categoria e revisar os planos de carreira e as estruturas remuneratórias, com base em estudos técnicos e observada a responsabilidade fiscal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      983,
+      984,
+      3002,
+      3003
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p99",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Realizar estudos técnicos, jurídicos, orçamentários e fiscais para corrigir as maiores defasagens das carreiras e das faixas de menor remuneração e uniformizar os auxílios dos servidores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      970,
+      971
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p100",
+   "subtema": "Servidores, carreiras e folha",
+   "proposta": "Acompanhar as condições de trabalho junto com servidores, chefias e entidades representativas, fortalecendo saúde ocupacional, prevenção do adoecimento, acolhimento psicossocial e enfrentamento ao assédio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1097
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p102",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Adotar regra de ouro interna, publicada como diretriz de governo no primeiro dia, permitindo operações de crédito apenas para investimento e nunca para custeio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      51
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p103",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Acompanhar receitas, despesas permanentes, dívida, precatórios, riscos fiscais e compromissos de longo prazo, com indicadores públicos de resultado fiscal, aportes, passivos e patrimônio, autorizando novas operações de crédito apenas com finalidade definida e capacidade de pagamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1129,
+      1145
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p37"
+  },
+  {
+   "id": "p104",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Buscar recursos em Brasília com planilha e projeto, acessando o Fundo de Equalização Federativa, crédito com garantia da União, o Fundo Amazônia e programas federais de infraestrutura, sempre destinados a investimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      16,
+      46,
+      47
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "Fundo de Equalização Federativa",
+       "valor": "~R$ 250 milhões já em 2026"
+      }
+     ]
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p105",
+   "subtema": "Concursos e provimento de pessoal",
+   "proposta": "Instituir por lei o Plano Estadual de Reposição de Pessoal, com calendário quadrienal vinculante de concursos por área e ano, priorizando saúde, educação, segurança, área socioassistencial e carreiras técnicas de gestão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      175,
+      258
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p106",
+   "subtema": "Concursos e provimento de pessoal",
+   "proposta": "Fortalecer o quadro efetivo nas atividades finalísticas do DETRAN-RO, respeitadas as normas de pessoal vigentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      992,
+      993
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
+  },
+  {
+   "id": "p107",
+   "subtema": "Desburocratização e governo digital",
+   "proposta": "Ampliar soluções digitais e a integração entre sistemas nos processos de licenciamento, vistorias e emissão de certificados do Corpo de Bombeiros Militar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      745
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p108",
+   "subtema": "Desburocratização e governo digital",
+   "proposta": "Instituir política estadual de simplificação dos serviços públicos, com revisão permanente dos serviços do Estado, redução de exigências burocráticas e ampliação dos canais digitais de atendimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      3173,
+      3174
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p109",
+   "subtema": "Desburocratização e governo digital",
+   "proposta": "Modernizar de forma permanente o licenciamento, as vistorias e a emissão de certificados do Corpo de Bombeiros, com fluxos simplificados, critérios padronizados, comunicação clara com o cidadão e metas formais de desempenho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      745
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p110",
+   "subtema": "Previdência dos servidores",
+   "proposta": "Profissionalizar a gestão previdenciária, escolhendo o dirigente do Iperon por lista tríplice com certificação, conforme determinação do TCE-RO.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      64
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p62"
+  },
+  {
+   "id": "p111",
+   "subtema": "Licitações e compras públicas",
+   "proposta": "Criar central corporativa de compras, com catálogo padronizado, atas corporativas e planejamento anual das contratações, e só licitar obras com projeto e orçamento validados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      964,
+      984
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p112",
+   "subtema": "Reforma administrativa e estrutura do Estado",
+   "proposta": "Fortalecer a cultura organizacional com programas permanentes de desenvolvimento institucional, liderança, inovação e gestão pública, voltados à melhoria contínua dos serviços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      989,
+      990,
+      3014,
+      3015,
+      3067,
+      3068
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p72"
   }
  ],
  "blocos": {
@@ -2307,20 +2605,8 @@
     "texto": "E aprendi a lição que orienta cada página deste plano: Rondônia produz, e quem governa precisa saber buscar. Os fatos são públicos e estão documentados: o Fundo Amazônia destinou ao nosso estado, apenas nos últimos três anos, o mesmo volume de recursos dos oito anos anteriores à sua retomada; o Propag, sancionado em 2025, zera os juros da nossa dívida e economiza mais de R$ 11 bilhões. Não peço que ninguém mude de lado. Peço que façamos a conta. Vou tratar Brasília como trato um mercado internacional: com planilha, projeto e mão estendida — porque cada real que deixa de vir para Rondônia por birra política é um real a menos na estrada, no hospital e na escola do seu filho.",
     "pagina": 2
    },
-   "23": {
-    "texto": "Toda proposta declara sua natureza: investimento (obra, equipamento, tecnologia",
-    "pagina": 3
-   },
    "24": {
     "texto": "— viável por captação) ou custeio permanente (só entra acompanhado da fonte de compensação, como exige a LDO). \n•",
-    "pagina": 3
-   },
-   "25": {
-    "texto": "Toda proposta nomeia sua fonte: neste documento, cada eixo termina com a seção",
-    "pagina": 3
-   },
-   "26": {
-    "texto": "\"De onde vem o dinheiro\". Proposta sem fonte não entrou neste plano. \n•",
     "pagina": 3
    },
    "27": {
@@ -2333,10 +2619,6 @@
    },
    "29": {
     "texto": "O controle externo como aliado: determinações e recomendações do TCE-RO viram metas do PPA 2028–2031, com relatório anual público de cumprimento. \n•",
-    "pagina": 3
-   },
-   "30": {
-    "texto": "Evidência viva: governar por evidência inclui atualizar a evidência. Cada diagnóstico que fundamenta este plano será revalidado por estudo técnico próprio no início do governo — atuarial, fiscal ou setorial — antes de se converter em meta do PPA 2028– 2031. Números públicos são o ponto de partida da decisão, não o ponto final: quando a realidade se mover, o plano se recalibra, com a mesma transparência com que foi escrito. A âncora não existe para impedir o navio de navegar — existe para impedir que ele vá à deriva; a evidência viva é o guincho que a levanta quando a maré muda.",
     "pagina": 3
    },
    "46": {
@@ -2369,10 +2651,6 @@
    },
    "62": {
     "texto": "C11. Cumprimento integral do plano de amortização, sem manobras nem adiamentos — o não recolhimento agrava o déficit e empurra a conta para os filhos dos servidores de hoje.",
-    "pagina": 6
-   },
-   "63": {
-    "texto": "C12. Estudo atuarial específico do sistema de proteção dos militares no primeiro ano de governo, com apresentação pública dos cenários — nenhum estado enfrenta o que não mede.",
     "pagina": 6
    },
    "64": {

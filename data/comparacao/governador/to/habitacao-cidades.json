@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-to.json",
   "gerado_em": "2026-09-14T13:23:19Z",
-  "exportado_em": "2026-09-14T23:10:56Z"
+  "exportado_em": "2026-09-16T20:09:33Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Regularização fundiária urbana",
-   "proposta": "Promover e ampliar a regularização fundiária urbana, com titulação de imóveis para as famílias ocupantes",
+   "proposta": "Promover e ampliar a regularização fundiária urbana",
    "n_concorda": 4,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -192,7 +192,7 @@
    "id": "p8",
    "subtema": "Regularização fundiária urbana",
    "proposta": "Implantar indicadores anuais de desempenho da regularização fundiária (municípios atendidos, lotes georreferenciados, títulos registrados, famílias beneficiadas)",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
@@ -200,13 +200,6 @@
       1985
      ],
      "nota": ""
-    },
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      452
-     ],
-     "nota": "Indicador de moradias entregues e regularizadas"
     }
    }
   },
@@ -374,7 +367,7 @@
   {
    "id": "p17",
    "subtema": "Infraestrutura urbana e apoio a municípios",
-   "proposta": "Implantar infraestrutura urbana, saneamento, mobilidade e equipamentos públicos associados aos conjuntos habitacionais e às áreas de moradia",
+   "proposta": "Implantar infraestrutura urbana.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -404,7 +397,7 @@
   {
    "id": "p18",
    "subtema": "Infraestrutura urbana e apoio a municípios",
-   "proposta": "Apoiar os municípios na execução de obras urbanas de pavimentação, drenagem, saneamento e acessibilidade",
+   "proposta": "Apoiar os municípios na execução de obras urbanas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -477,6 +470,71 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p22",
+   "subtema": "Regularização fundiária urbana",
+   "proposta": "Incluir a regularização fundiária na política habitacional, junto com infraestrutura, saneamento, mobilidade e equipamentos públicos, em parceria com União, municípios, setor privado e instituições financeiras.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      429,
+      572
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p23",
+   "subtema": "Regularização fundiária urbana",
+   "proposta": "Apoiar ações de regularização fundiária urbana, promovendo segurança jurídica, inclusão social e melhoria da qualidade de vida das famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      473
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p24",
+   "subtema": "Infraestrutura urbana e apoio a municípios",
+   "proposta": "Ampliar o acesso à moradia digna, à infraestrutura urbana, ao saneamento e à regularização fundiária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1385
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p25",
+   "subtema": "Infraestrutura urbana e apoio a municípios",
+   "proposta": "Apoiar, em parceria com os municípios, ações de revitalização urbana e requalificação de áreas públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      465
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
   }
  ],
  "blocos": {
@@ -484,10 +542,6 @@
    "429": {
     "texto": "O déficit habitacional será enfrentado por parcerias com União, municípios, setor privado e instituições financeiras. A política não se limitará à construção de unidades: incluirá regularização fundiária, infraestrutura, saneamento, mobilidade e equipamentos públicos.",
     "pagina": 23
-   },
-   "452": {
-    "texto": "• Moradias entregues e regularizadas.",
-    "pagina": 24
    },
    "572": {
     "texto": "• Expandir habitação e regularização.",

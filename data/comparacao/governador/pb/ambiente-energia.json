@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-pb.json",
   "gerado_em": "2026-09-14T07:37:45Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -59,8 +59,8 @@
   {
    "id": "p1",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Ampliar a produção e o aproveitamento de energia renovável (solar e eólica) no estado, atraindo investimentos e indústrias associadas à cadeia energética",
-   "n_concorda": 3,
+   "proposta": "Ampliar a produção e o aproveitamento de energia renovável, solar e eólica, no estado, atraindo investimentos e indústrias ligadas à cadeia energética.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
      "posicao": "concorda",
@@ -68,22 +68,6 @@
       106
      ],
      "nota": "Foco em tornar a Paraíba referência nacional em energia limpa"
-    },
-    "governador-pb-efraim-filho-150002538692": {
-     "posicao": "concorda",
-     "blocos": [
-      169,
-      171
-     ],
-     "nota": "Ênfase em consumir localmente a energia gerada, atraindo indústria verde e data centers"
-    },
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      229,
-      1207
-     ],
-     "nota": "Inclui pesquisa aplicada em renováveis e estudo de complexo eólico Lucena–Mataraca"
     }
    }
   },
@@ -392,7 +376,13 @@
      "blocos": [
       1220
      ],
-     "nota": "Diagnóstico-base previsto para 2027"
+     "nota": "Diagnóstico-base previsto para 2027",
+     "metas": [
+      {
+       "rotulo": "diagnóstico-base",
+       "valor": "levantado em 2027"
+      }
+     ]
     }
    }
   },
@@ -532,6 +522,40 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p29",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Fazer com que a energia limpa gerada no estado abasteça o próprio estado, atraindo indústria verde e centros de dados, e colocar a Paraíba na vanguarda da transição energética.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      169,
+      171
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p30",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Expandir o uso de energia solar em escolas e a pesquisa aplicada em energias renováveis, além de estudar a viabilidade socioambiental de complexo eólico no trecho Lucena–Mataraca.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      229,
+      1207
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
   }
  ],
  "blocos": {

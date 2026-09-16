@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-mt.json",
   "gerado_em": "2026-09-14T06:11:19Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T19:54:49Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Universalização de água e esgoto",
-   "proposta": "Ampliar o abastecimento de água e a coleta e o tratamento de esgoto até a universalização dos serviços",
+   "proposta": "Ampliar o abastecimento de água e a coleta e o tratamento de esgoto",
    "n_concorda": 4,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -188,17 +188,9 @@
   {
    "id": "p6",
    "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Criar sistema estadual de monitoramento de qualidade e vazão da água com dados públicos por bacia",
-   "n_concorda": 2,
+   "proposta": "Criar sistema estadual de monitoramento de qualidade e vazão da água, com dados públicos por bacia.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mt-wellington-fagundes-110002551737": {
-     "posicao": "concorda",
-     "blocos": [
-      1136,
-      1318
-     ],
-     "nota": "Geoprocessamento, sensoriamento remoto e inteligência analítica"
-    },
     "governador-mt-mauricio-coelho-110002553058": {
      "posicao": "concorda",
      "blocos": [
@@ -292,7 +284,7 @@
   {
    "id": "p12",
    "subtema": "Governança e gestão do setor",
-   "proposta": "Prestar apoio técnico permanente às prefeituras na elaboração de projetos, formação de servidores e acesso a financiamento para saneamento",
+   "proposta": "Apoiar os municípios em saneamento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -340,6 +332,71 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p15",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Promover ações de ampliação do abastecimento de água e da coleta e tratamento de esgoto.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      1121
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p16",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Garantir água e saneamento adequados a cada território, com redes e tratamento dimensionados nas cidades médias e soluções seguras e de fácil operação em comunidades rurais e isoladas, pactuando metas a partir dos dados do SNIS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      1054
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p17",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Desenvolver sistema estadual de monitoramento dos recursos hídricos e da qualidade da água, com geoprocessamento, sensoriamento remoto e inteligência analítica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      1136,
+      1318
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p18",
+   "subtema": "Governança e gestão do setor",
+   "proposta": "Apoiar os municípios em soluções conjuntas para água, esgoto e resíduos, garantindo aterros sanitários adequados e universalizando o abastecimento de água e o tratamento de esgoto.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      941
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
   }
  ],
  "blocos": {

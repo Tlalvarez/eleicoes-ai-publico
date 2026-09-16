@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-ap.json",
   "gerado_em": "2026-09-14T20:27:33Z",
-  "exportado_em": "2026-09-14T20:40:20Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -82,7 +82,7 @@
   {
    "id": "p2",
    "subtema": "Energia renovável e acesso à energia",
-   "proposta": "Garantir energia elétrica contínua a comunidades isoladas, com soluções híbridas e sistemas fotovoltaicos",
+   "proposta": "Garantir energia elétrica a comunidades isoladas",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -107,7 +107,7 @@
   {
    "id": "p3",
    "subtema": "Energia renovável e acesso à energia",
-   "proposta": "Promover eficiência energética e uso de equipamentos mais eficientes",
+   "proposta": "Promover a eficiência energética.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -258,7 +258,7 @@
    "id": "p12",
    "subtema": "Resíduos sólidos",
    "proposta": "Estruturar política estadual de gestão integrada de resíduos sólidos, apoiando os municípios em coleta, tratamento e destinação final",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
      "posicao": "concorda",
@@ -267,13 +267,6 @@
       532
      ],
      "nota": "Programa Lixo Zero, para todos os municípios"
-    },
-    "governador-ap-dr-furlan-30002530014": {
-     "posicao": "concorda",
-     "blocos": [
-      926
-     ],
-     "nota": ""
     }
    }
   },
@@ -347,7 +340,7 @@
   {
    "id": "p17",
    "subtema": "Petróleo e Foz do Amazonas",
-   "proposta": "Exigir licenciamento rigoroso da exploração de petróleo, com planos de emergência e capacidade de resposta a vazamentos dimensionada e testada",
+   "proposta": "Exigir planos de emergência para a exploração de petróleo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-dr-furlan-30002530014": {
@@ -442,7 +435,7 @@
   {
    "id": "p22",
    "subtema": "Licenciamento ambiental",
-   "proposta": "Modernizar e agilizar o licenciamento ambiental, com processos digitais, critérios públicos, transparência e segurança jurídica",
+   "proposta": "Aprimorar o licenciamento ambiental, assegurando decisões em conformidade com a legislação vigente.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -469,15 +462,8 @@
    "id": "p23",
    "subtema": "Licenciamento ambiental",
    "proposta": "Fortalecer o órgão ambiental estadual com equipes técnicas qualificadas para licenciar e fiscalizar",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ap-delegado-marcos-30002552017": {
-     "posicao": "concorda",
-     "blocos": [
-      290
-     ],
-     "nota": ""
-    },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
      "blocos": [
@@ -593,7 +579,7 @@
    "id": "p30",
    "subtema": "Carbono e serviços ambientais",
    "proposta": "Estruturar política estadual de mercado de carbono, com segurança jurídica, medição confiável e certificação reconhecida",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
      "posicao": "concorda",
@@ -605,13 +591,6 @@
       516
      ],
      "nota": "Programa Amapá Carbono Verde"
-    },
-    "governador-ap-clecio-30002536311": {
-     "posicao": "concorda",
-     "blocos": [
-      202
-     ],
-     "nota": "Valorização do mercado de carbono como fonte de renda"
     }
    }
   },
@@ -666,7 +645,7 @@
   {
    "id": "p34",
    "subtema": "Mineração",
-   "proposta": "Combater o garimpo e a mineração ilegal com regularização, fiscalização e recuperação de áreas degradadas",
+   "proposta": "Combater o garimpo e a mineração ilegal",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-dr-furlan-30002530014": {
@@ -842,6 +821,124 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p44",
+   "subtema": "Energia renovável e acesso à energia",
+   "proposta": "Levar energia elétrica a comunidades isoladas para iluminação, conservação de medicamentos e alimentos, abastecimento de água, comunicação, escolas e pequenos negócios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      352,
+      353,
+      519
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p45",
+   "subtema": "Energia renovável e acesso à energia",
+   "proposta": "Apoiar a pesquisa em hidrogênio e em eficiência energética.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      346
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p46",
+   "subtema": "Petróleo e Foz do Amazonas",
+   "proposta": "Assegurar exploração responsável de petróleo, com cumprimento da legislação ambiental, planos de emergência e prevenção de acidentes, além de fiscalização, transparência e diálogo com as comunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      387,
+      388,
+      389,
+      390
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p47",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Agilizar a emissão de licenças ambientais e autorizações de supressão vegetal, aprimorando a análise para garantir eficiência e segurança jurídica conforme a legislação ambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      919,
+      976
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p48",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Assegurar critérios públicos, orientação prévia e equipes técnicas qualificadas na atuação ambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      290
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p49",
+   "subtema": "Carbono e serviços ambientais",
+   "proposta": "Remunerar quem preserva a floresta por meio do pagamento por serviços ambientais e da valorização do mercado de carbono, gerando renda e inclusão produtiva no Amapá.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      202
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p50",
+   "subtema": "Mineração",
+   "proposta": "Combater a mineração ilegal, o desmatamento e os crimes contra rios e fauna.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      489
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
   }
  ],
  "blocos": {

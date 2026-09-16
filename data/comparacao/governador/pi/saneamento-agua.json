@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-pi.json",
   "gerado_em": "2026-09-14T10:35:28Z",
-  "exportado_em": "2026-09-14T23:10:53Z"
+  "exportado_em": "2026-09-16T21:46:13Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Abastecimento de água",
-   "proposta": "Ampliar a cobertura do abastecimento de água e reduzir as interrupções no fornecimento",
+   "proposta": "Ampliar a cobertura do abastecimento de água.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -76,16 +76,9 @@
   {
    "id": "p2",
    "subtema": "Abastecimento de água",
-   "proposta": "Fiscalizar e exigir maior eficiência e cumprimento das metas contratuais da concessionária de água e esgoto",
-   "n_concorda": 3,
+   "proposta": "Acompanhar o cumprimento das metas contratuais dos serviços de água e esgoto.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-pi-dra-lucia-santos-180002544216": {
-     "posicao": "concorda",
-     "blocos": [
-      270
-     ],
-     "nota": ""
-    },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
      "blocos": [
@@ -107,7 +100,7 @@
   {
    "id": "p3",
    "subtema": "Segurança hídrica e convivência com o semiárido",
-   "proposta": "Levar água a comunidades rurais dispersas por meio de cisternas, dessalinizadores e outras tecnologias sociais de convivência com o semiárido",
+   "proposta": "Ampliar o acesso à água para consumo humano.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -132,7 +125,7 @@
    "id": "p4",
    "subtema": "Segurança hídrica e convivência com o semiárido",
    "proposta": "Instituir política estadual permanente de segurança hídrica com foco no semiárido, incluindo plano regional de infraestrutura hídrica",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
@@ -143,13 +136,6 @@
       1386
      ],
      "nota": "Plano Estadual de Segurança Hídrica e Saneamento Básico"
-    },
-    "governador-pi-rafael-fonteles-180002532987": {
-     "posicao": "concorda",
-     "blocos": [
-      1053
-     ],
-     "nota": "Foco em segurança hídrica das populações rurais"
     }
    }
   },
@@ -197,7 +183,7 @@
   {
    "id": "p7",
    "subtema": "Segurança de barragens",
-   "proposta": "Consolidar Planos de Segurança de Barragens e Planos de Ação de Emergência para as barragens de alto dano potencial",
+   "proposta": "Consolidar Planos de Segurança de Barragens e Planos de Ação de Emergência para as barragens",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -295,7 +281,7 @@
    "id": "p11",
    "subtema": "Abastecimento rural",
    "proposta": "Implantar e manter sistemas coletivos permanentes de abastecimento de água em comunidades rurais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
      "posicao": "concorda",
@@ -304,14 +290,6 @@
       1039
      ],
      "nota": "Prioriza localidades integráveis à infraestrutura hídrica estadual"
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      1283,
-      1286
-     ],
-     "nota": "Rede Regional de Operação e Manutenção da Água Produtiva"
     }
    }
   },
@@ -368,7 +346,7 @@
   {
    "id": "p15",
    "subtema": "Esgotamento sanitário e drenagem",
-   "proposta": "Ampliar a cobertura de esgotamento sanitário e da drenagem urbana, priorizando municípios com menores índices de atendimento",
+   "proposta": "Ampliar a cobertura dos serviços de esgotamento sanitário.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-joel-rodrigues-180002538530": {
@@ -385,7 +363,13 @@
       1031,
       1034
      ],
-     "nota": "Sem menção a drenagem urbana"
+     "nota": "Sem menção a drenagem urbana",
+     "metas": [
+      {
+       "rotulo": "investimento em esgotamento sanitário",
+       "valor": "R$ 2 bilhões"
+      }
+     ]
     }
    }
   },
@@ -453,6 +437,90 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p21",
+   "subtema": "Abastecimento de água",
+   "proposta": "Exigir maior eficiência operacional da concessionária de água, ampliando o abastecimento e reduzindo interrupções no fornecimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      270
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p22",
+   "subtema": "Abastecimento de água",
+   "proposta": "Monitorar o cumprimento das metas contratuais de água e esgoto e publicá-lo em painel estadual atualizado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1037
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p23",
+   "subtema": "Segurança hídrica e convivência com o semiárido",
+   "proposta": "Criar uma política estadual permanente de segurança hídrica para o semiárido, ampliando programas de captação e armazenamento de água para consumo humano e animal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1383,
+      1386
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p24",
+   "subtema": "Segurança de barragens",
+   "proposta": "Exigir Planos de Segurança e Planos de Ação de Emergência das barragens sob fiscalização estadual, com classificação de riscos, inspeções e prioridade às estruturas mais críticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1672,
+      1675
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p25",
+   "subtema": "Esgotamento sanitário e drenagem",
+   "proposta": "Investir R$ 2 bilhões, com recursos estaduais, federais e da concessionária, em obras de infraestrutura hídrica e esgotamento sanitário, ampliando a cobertura do serviço.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1031,
+      1033,
+      1034
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
   }
  ],
  "blocos": {
@@ -477,14 +545,6 @@
    },
    "1278": {
     "texto": "Objetivo: Antecipar os efeitos das estiagens e distribuir a água disponível de forma transparente, técnica e participativa, mediante planos proativos de seca para reservatórios, bacias e territórios produtivos prioritários. A ação deverá combinar previsão climática, volume dos reservatórios, nível dos aquíferos, umidade do solo, demanda humana, dessedentação animal e necessidades produtivas para definir cenários, vazões, limites de retirada e medidas graduais de contingência.",
-    "pagina": 69
-   },
-   "1283": {
-    "texto": "Ação Programática 6.5.3 – Implantar a Rede Regional de Operação e Manutenção da Água Produtiva",
-    "pagina": 69
-   },
-   "1286": {
-    "texto": "Objetivo: Assegurar funcionamento contínuo das infraestruturas coletivas destinadas à produção rural, evitando que bombas, redes, reservatórios, sistemas de irrigação e unidades de tratamento sejam abandonados por falta de manutenção, peças, operador, energia ou definição de responsabilidades. A rede deverá atender infraestruturas produtivas coletivas não abrangidas pelos serviços públicos de abastecimento concedidos",
     "pagina": 69
    },
    "1287": {

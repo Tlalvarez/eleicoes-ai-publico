@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-ms.json",
   "gerado_em": "2026-09-14T14:54:29Z",
-  "exportado_em": "2026-09-14T23:10:51Z"
+  "exportado_em": "2026-09-16T19:47:43Z"
  },
  "candidatos": [
   {
@@ -67,8 +67,8 @@
   {
    "id": "p1",
    "subtema": "Esgotamento sanitário",
-   "proposta": "Ampliar a coleta e o tratamento de esgoto até a universalização dos serviços no Estado",
-   "n_concorda": 4,
+   "proposta": "Ampliar a coleta e o tratamento de esgoto no Estado.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
      "posicao": "concorda",
@@ -77,27 +77,6 @@
       415
      ],
      "nota": "Meta de universalização antes do prazo do marco legal"
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      562
-     ],
-     "nota": ""
-    },
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      225
-     ],
-     "nota": "Universalização executada pela empresa pública estadual"
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      809
-     ],
-     "nota": "Questiona o anúncio de universalização já alcançada"
     }
    }
   },
@@ -195,7 +174,7 @@
   {
    "id": "p6",
    "subtema": "Recursos hídricos e segurança hídrica",
-   "proposta": "Promover o uso racional e eficiente da água e combater o desperdício na distribuição",
+   "proposta": "Promover o uso racional e eficiente da água.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -217,7 +196,7 @@
   {
    "id": "p7",
    "subtema": "Resíduos sólidos",
-   "proposta": "Adotar soluções regionalizadas para a gestão de resíduos sólidos, com escala adequada para municípios menores",
+   "proposta": "Adotar soluções regionalizadas para a gestão de resíduos sólidos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -524,6 +503,70 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p27",
+   "subtema": "Esgotamento sanitário",
+   "proposta": "Expandir a coleta e o tratamento de esgoto, com prioridade para localidades de maior déficit de cobertura e pressão urbana.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      562
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p28",
+   "subtema": "Esgotamento sanitário",
+   "proposta": "Definir metas de esgotamento sanitário da Sanesul por município, começando pelos bairros mais carentes, com cobrança de resultados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      809
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p29",
+   "subtema": "Recursos hídricos e segurança hídrica",
+   "proposta": "Incentivar o uso racional e eficiente da água, com fortalecimento da gestão integrada dos recursos hídricos e ampliação de ações de segurança hídrica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      447
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p30",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Expandir soluções regionalizadas para a gestão de resíduos sólidos, consolidando a atuação da empresa estadual de saneamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      419
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
   }
  ],
  "blocos": {

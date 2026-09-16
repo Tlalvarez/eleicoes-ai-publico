@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-ac.json",
   "gerado_em": "2026-09-14T09:51:08Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T21:44:39Z"
  },
  "candidatos": [
   {
@@ -173,7 +173,7 @@
   {
    "id": "p5",
    "subtema": "Habitação de interesse social",
-   "proposta": "Realizar melhorias habitacionais em imóveis de famílias de baixa renda (banheiro, cobertura, piso, acessibilidade, instalações elétricas, pequenas ampliações).",
+   "proposta": "Promover melhorias nas condições de moradia.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -257,7 +257,7 @@
   {
    "id": "p10",
    "subtema": "Habitação de interesse social",
-   "proposta": "Instituir programa estadual permanente de habitação articulado com infraestrutura urbana, saneamento, regularização fundiária e desenvolvimento territorial.",
+   "proposta": "Instituir programa estadual de habitação que inclua regularização fundiária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
@@ -280,7 +280,7 @@
   {
    "id": "p11",
    "subtema": "Desenvolvimento urbano e resiliência climática",
-   "proposta": "Promover política de desenvolvimento urbano voltada à adaptação das cidades às mudanças climáticas, integrando infraestrutura, saneamento e planejamento territorial.",
+   "proposta": "Promover a adaptação das cidades aos efeitos das mudanças climáticas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
@@ -359,7 +359,7 @@
    "id": "p15",
    "subtema": "Apoio técnico e cooperação com municípios",
    "proposta": "Planejar e articular os investimentos urbanos em cooperação entre Estado, municípios, Governo Federal e instituições financeiras e parceiras.",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -369,13 +369,6 @@
       752
      ],
      "nota": ""
-    },
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      375
-     ],
-     "nota": "Parcerias municipais e recursos federais e estaduais para moradia"
     }
    }
   },
@@ -465,21 +458,13 @@
   {
    "id": "p20",
    "subtema": "Saneamento e infraestrutura urbana",
-   "proposta": "Expandir os serviços de saneamento básico, com ampliação das redes de água e esgoto nos municípios.",
-   "n_concorda": 2,
+   "proposta": "Expandir os serviços de saneamento básico.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-tiao-bocalom-10002544015": {
      "posicao": "concorda",
      "blocos": [
       131
-     ],
-     "nota": ""
-    },
-    "governador-ac-mailza-assis-10002544107": {
-     "posicao": "concorda",
-     "blocos": [
-      737,
-      780
      ],
      "nota": ""
     }
@@ -514,6 +499,71 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p23",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Ampliar a oferta habitacional e melhorar as condições de moradia, levando mais famílias a viver em moradias dignas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      740
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p24",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Implantar programa habitacional para reduzir o déficit de moradias, com produção de unidades, regularização fundiária, melhoria habitacional, urbanização de assentamentos precários, reassentamento de famílias em áreas de risco e criação de banco público de terras.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      374
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p25",
+   "subtema": "Desenvolvimento urbano e resiliência climática",
+   "proposta": "Apoiar os municípios em intervenções urbanas integradas e acessíveis, preparadas para enchentes, secas, calor e outros efeitos das mudanças climáticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      325
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p26",
+   "subtema": "Saneamento e infraestrutura urbana",
+   "proposta": "Investir em saneamento básico para ampliar a qualidade de vida e a saúde da população.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      737,
+      780
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
   }
  ],
  "blocos": {

@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "economia-agro-ma.json",
   "gerado_em": "2026-09-14T21:35:58Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p1",
    "subtema": "Assistência técnica rural",
-   "proposta": "Ampliar e reestruturar a assistência técnica e extensão rural (ATER) para agricultores familiares",
+   "proposta": "Prover assistência técnica e extensão rural (ATER) para agricultores familiares.",
    "n_concorda": 5,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -126,7 +126,13 @@
       486,
       660
      ],
-     "nota": "Expandir dos 88 municípios; 30% na merenda"
+     "nota": "Expandir dos 88 municípios; 30% na merenda",
+     "metas": [
+      {
+       "rotulo": "agricultura familiar na merenda",
+       "valor": "mínimo de 30% cumprido"
+      }
+     ]
     },
     "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
@@ -151,7 +157,7 @@
   {
    "id": "p3",
    "subtema": "Agricultura familiar e mercados",
-   "proposta": "Apoiar cooperativas e associações de pequenos produtores com capacitação, gestão e acesso a mercados",
+   "proposta": "Apoiar cooperativas e associações",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -242,7 +248,7 @@
   {
    "id": "p5",
    "subtema": "Agroindustrialização e agregação de valor",
-   "proposta": "Fortalecer a cadeia do babaçu com beneficiamento e valorização das quebradeiras de coco",
+   "proposta": "Fortalecer a cadeia do babaçu com beneficiamento e agregação de valor.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -398,8 +404,8 @@
   {
    "id": "p9",
    "subtema": "Crédito e financiamento produtivo",
-   "proposta": "Ampliar o acesso a crédito para produtores rurais, micro e pequenos empreendedores",
-   "n_concorda": 4,
+   "proposta": "Ampliar o acesso a crédito para produtores rurais e para micro e pequenos empreendedores.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -416,14 +422,13 @@
       513,
       651
      ],
-     "nota": "Rota do Crédito Rural, microcrédito orientado, vedação a indicação política"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      393
-     ],
-     "nota": "Financiamento após planejamento e organização das cadeias"
+     "nota": "Rota do Crédito Rural, microcrédito orientado, vedação a indicação política",
+     "metas": [
+      {
+       "rotulo": "Observatório do Crédito",
+       "valor": "nos primeiros 100 dias"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -477,7 +482,7 @@
   {
    "id": "p12",
    "subtema": "Atração de investimentos e industrialização",
-   "proposta": "Atrair empresas e investimentos privados para o estado, com promoção de potencialidades e condições de instalação",
+   "proposta": "Atrair empresas e investimentos privados para o estado.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -518,7 +523,7 @@
    "id": "p13",
    "subtema": "Atração de investimentos e industrialização",
    "proposta": "Implantar programa de desenvolvimento de fornecedores locais ligados a grandes empreendimentos",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -541,21 +546,14 @@
       2460
      ],
      "nota": ""
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      668
-     ],
-     "nota": "MPEs do zero ao primeiro embarque com ApexBrasil e Sebrae"
     }
    }
   },
   {
    "id": "p14",
    "subtema": "Atração de investimentos e industrialização",
-   "proposta": "Selecionar cadeias produtivas prioritárias e montar planos específicos por cadeia",
-   "n_concorda": 3,
+   "proposta": "Selecionar cadeias produtivas prioritárias por critérios públicos e montar um plano específico para cada cadeia.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -563,29 +561,20 @@
       618,
       656
      ],
-     "nota": "5 a 8 cadeias, avaliação bienal com substituição"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      498,
-      505
-     ],
-     "nota": "Programa Maranhão que Agrega Valor e mapa de vazamentos"
-    },
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      59
-     ],
-     "nota": "Plano estadual da economia do mar"
+     "nota": "5 a 8 cadeias, avaliação bienal com substituição",
+     "metas": [
+      {
+       "rotulo": "cadeias prioritárias",
+       "valor": "5 a 8, avaliação bienal"
+      }
+     ]
     }
    }
   },
   {
    "id": "p15",
    "subtema": "Atração de investimentos e industrialização",
-   "proposta": "Requalificar e ampliar distritos industriais, com revisão de concessões e novos polos no interior",
+   "proposta": "Apoiar o desenvolvimento de distritos industriais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -665,7 +654,7 @@
   {
    "id": "p18",
    "subtema": "Incentivos fiscais e tributação",
-   "proposta": "Condicionar incentivos fiscais a metas de emprego, investimento e desempenho, com avaliação pública",
+   "proposta": "Condicionar incentivos fiscais a metas de emprego.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -730,7 +719,7 @@
   {
    "id": "p21",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Implantar programas de qualificação profissional alinhados à demanda real de setores e empreendimentos",
+   "proposta": "Implantar programas de qualificação profissional.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -772,7 +761,7 @@
   {
    "id": "p22",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Reestruturar a intermediação pública de mão de obra e criar trilha de primeiro emprego",
+   "proposta": "Criar trilha de primeiro emprego, incluindo aprendizagem.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -780,7 +769,13 @@
      "blocos": [
       643
      ],
-     "nota": "SINE reestruturado, colocações verificadas no Caged"
+     "nota": "SINE reestruturado, colocações verificadas no Caged",
+     "metas": [
+      {
+       "rotulo": "acompanhamento do primeiro emprego",
+       "valor": "12 meses"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -796,7 +791,7 @@
    "id": "p23",
    "subtema": "Emprego e qualificação profissional",
    "proposta": "Estabelecer metas públicas de redução da informalidade e aumento do emprego formal e da renda",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -808,23 +803,21 @@
       2085,
       2109
      ],
-     "nota": "Informalidade a 50% e renda a 60% da média nacional até 2030"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      412,
-      620
-     ],
-     "nota": "Painel público de PIB versus emprego e renda"
+     "nota": "Informalidade a 50% e renda a 60% da média nacional até 2030",
+     "metas": [
+      {
+       "rotulo": "taxa de informalidade",
+       "valor": "-1,4 p.p./ano, referência 40%"
+      }
+     ]
     }
    }
   },
   {
    "id": "p24",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Criar programa integrado de apoio a MEIs e micro e pequenas empresas com formalização, gestão, digitalização e mercado",
-   "n_concorda": 3,
+   "proposta": "Criar programa de apoio a micro e pequenas empresas, com assistência à gestão e à digitalização dos negócios.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -844,21 +837,13 @@
       676
      ],
      "nota": ""
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      337,
-      627
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p25",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Simplificar e digitalizar a abertura de empresas e o licenciamento estadual, com balcão único",
+   "proposta": "Simplificar e digitalizar a abertura de empresas e o licenciamento estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1025,8 +1010,8 @@
   {
    "id": "p33",
    "subtema": "Regularização fundiária rural",
-   "proposta": "Acelerar a regularização fundiária rural como processo completo até o registro, ligada ao acesso a crédito e produção",
-   "n_concorda": 4,
+   "proposta": "Promover a regularização fundiária rural.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -1042,13 +1027,6 @@
       521
      ],
      "nota": "Do reconhecimento ao registro em cartório"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      399
-     ],
-     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -1081,7 +1059,7 @@
   {
    "id": "p35",
    "subtema": "Regularização ambiental e defesa agropecuária",
-   "proposta": "Intensificar a validação do Cadastro Ambiental Rural e a regularização ambiental das propriedades",
+   "proposta": "Promover a regularização ambiental das propriedades rurais por meio do Cadastro Ambiental Rural",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -1128,7 +1106,13 @@
       510,
       660
      ],
-     "nota": "AGED reorganizada, SUSAF ampliado, rumo ao SISBI-POA"
+     "nota": "AGED reorganizada, SUSAF ampliado, rumo ao SISBI-POA",
+     "metas": [
+      {
+       "rotulo": "diagnóstico da defesa agropecuária",
+       "valor": "nos 100 dias"
+      }
+     ]
     }
    }
   },
@@ -1136,7 +1120,7 @@
    "id": "p37",
    "subtema": "Regularização ambiental e defesa agropecuária",
    "proposta": "Consolidar selos de origem e indicações geográficas para produtos maranhenses",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1144,20 +1128,13 @@
       496
      ],
      "nota": "IGs junto ao INPI, como a tiquira"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p38",
    "subtema": "Infraestrutura rural e logística",
-   "proposta": "Criar programa estadual de recuperação e conservação de estradas vicinais e acessos produtivos",
+   "proposta": "Apoiar, no âmbito estadual, estradas vicinais e acessos produtivos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1221,7 +1198,7 @@
   {
    "id": "p41",
    "subtema": "Água e irrigação",
-   "proposta": "Ampliar infraestrutura hídrica e irrigação eficiente para produção agrícola, com inventário dos sistemas existentes",
+   "proposta": "Ampliar a infraestrutura hídrica e a irrigação eficiente para a produção agrícola.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1247,7 +1224,7 @@
    "id": "p42",
    "subtema": "Gestão de riscos e informação agrícola",
    "proposta": "Criar sistema público de informação climática, de solos e de gestão de riscos para o produtor",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1256,13 +1233,6 @@
       518
      ],
      "nota": "Plataforma agroclimática e Central de Gestão de Riscos"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1348
-     ],
-     "nota": ""
     }
    }
   },
@@ -1270,7 +1240,7 @@
    "id": "p43",
    "subtema": "Gestão de riscos e informação agrícola",
    "proposta": "Ampliar a adesão dos agricultores a seguros rurais e ao Garantia-Safra",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1278,22 +1248,14 @@
       518
      ],
      "nota": "Mutirões de adesão; R$ 1.200 por inscrição"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1345,
-      1351
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p44",
    "subtema": "Comercialização e redução de intermediários",
-   "proposta": "Criar plataformas ou centrais de comercialização e inteligência de preços para produtores",
-   "n_concorda": 3,
+   "proposta": "Estruturar plataformas ou centrais de comercialização para produtores",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1309,13 +1271,6 @@
       1447
      ],
      "nota": "Centrais Regionais físicas e digitais com preços diários"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      264
-     ],
-     "nota": "Feiras e comercialização direta"
     }
    }
   },
@@ -1374,7 +1329,7 @@
   {
    "id": "p47",
    "subtema": "Governança do desenvolvimento econômico",
-   "proposta": "Elaborar planos territoriais de autonomia produtiva e mapas de gargalos por região rural",
+   "proposta": "Elaborar planos para o desenvolvimento produtivo rural.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -1403,7 +1358,7 @@
    "id": "p48",
    "subtema": "Governança do desenvolvimento econômico",
    "proposta": "Apoiar municípios na criação e fortalecimento de órgãos, conselhos e fundos de agricultura, pesca e abastecimento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -1411,13 +1366,6 @@
       292
      ],
      "nota": ""
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      262
-     ],
-     "nota": "Retomada do Sistema Estadual de Produção e Abastecimento"
     }
    }
   },
@@ -1471,7 +1419,7 @@
    "id": "p52",
    "subtema": "Turismo",
    "proposta": "Elaborar e implementar plano estadual de desenvolvimento sustentável do turismo",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -1480,20 +1428,13 @@
       345
      ],
      "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      916
-     ],
-     "nota": "Carteira de projetos de turismo e patrimônio na Fábrica de Projetos"
     }
    }
   },
   {
    "id": "p53",
    "subtema": "Turismo",
-   "proposta": "Ordenar a visitação em áreas naturais protegidas, respeitando capacidade de suporte e normas de uso",
+   "proposta": "Ordenar a visitação em áreas naturais protegidas conforme as normas de uso",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -1556,7 +1497,7 @@
    "id": "p56",
    "subtema": "Turismo",
    "proposta": "Conectar a economia criativa e o artesanato a mercados nacionais e internacionais por meio da infraestrutura logística e das ZPEs",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -1567,21 +1508,14 @@
       913
      ],
      "nota": ""
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      444
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p57",
    "subtema": "Inovação e economia digital",
-   "proposta": "Criar polos e programas de formação digital e tecnológica no interior e periferias conectados a oportunidades de trabalho",
-   "n_concorda": 3,
+   "proposta": "Promover programas de formação digital e tecnológica vinculados a oportunidades de trabalho.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1597,13 +1531,6 @@
       1800
      ],
      "nota": ""
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      210
-     ],
-     "nota": "Economia do conhecimento como nova matriz"
     }
    }
   },
@@ -1611,7 +1538,7 @@
    "id": "p58",
    "subtema": "Atração de investimentos e industrialização",
    "proposta": "Estruturar a política econômica estadual em novas matrizes de geração de renda: industrialização e agregação de valor no território, bioeconomia e economia da sociobiodiversidade, transição energética com repartição local de valor e economia do conhecimento, do cuidado e da cultura, tendo como vetores de distribuição os pequenos e médios negócios urbanos e a agricultura familiar cooperativada",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -1645,33 +1572,15 @@
       616
      ],
      "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2413
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p59",
    "subtema": "Agricultura familiar e mercados",
-   "proposta": "Estruturar matriz econômica da agricultura familiar e do cooperativismo voltada à produção de alimentos saudáveis, convertendo transferência de renda em renda própria e segurança alimentar",
-   "n_concorda": 5,
+   "proposta": "Estruturar matriz econômica da agricultura familiar e do cooperativismo",
+   "n_concorda": 4,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
-     "posicao": "concorda",
-     "blocos": [
-      154,
-      158,
-      160,
-      172,
-      174
-     ],
-     "nota": "Prevê ATER e valorização de cadeias da agricultura familiar."
-    },
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
@@ -1715,16 +1624,9 @@
   {
    "id": "p60",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Direcionar as novas matrizes de geração de renda e a economia do cuidado para a absorção da juventude no mercado de trabalho nos territórios",
-   "n_concorda": 3,
+   "proposta": "Direcionar as novas matrizes de geração de renda para o mercado de trabalho nos territórios.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      643
-     ],
-     "nota": "Trilha do primeiro emprego com acompanhamento"
-    },
     "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
      "blocos": [
@@ -1794,7 +1696,7 @@
    "id": "p64",
    "subtema": "Crédito e financiamento produtivo",
    "proposta": "Assegurar que a decisão de crédito seja técnica e não política, cabendo ao Estado avalizar e preparar o tomador e ao banco decidir o empréstimo",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1802,17 +1704,6 @@
       625
      ],
      "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      1019,
-      1345,
-      1347,
-      1423,
-      1565
-     ],
-     "nota": "Garantia estadual e preparo do tomador (projeto, ATER, capacidade de pagamento), decisão bancária"
     }
    }
   },
@@ -1836,17 +1727,8 @@
    "id": "p66",
    "subtema": "Emprego e qualificação profissional",
    "proposta": "Estabelecer meta de reduzir a taxa de informalidade para abaixo de 40%, com aumento sustentado da ocupação formal",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      335,
-      336,
-      337
-     ],
-     "nota": "Assume combater a informalidade de 57,3% via formalização e trabalho decente, sem fixar a meta numérica."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1860,27 +1742,8 @@
    "id": "p67",
    "subtema": "Regularização fundiária rural",
    "proposta": "Criar trilha única de autonomia do pequeno produtor, com interoperabilidade cadastral e acompanhamento pós-título, integrando regularização fundiária, CAR, crédito, assistência técnica, mercado e segurança rural",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      290,
-      293,
-      305
-     ],
-     "nota": "Regularização fundiária com inclusão socioprodutiva, validação do CAR e ampliação da ATER"
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      481,
-      513,
-      521,
-      523
-     ],
-     "nota": "Regularização completa, CAR, crédito e ATER integrados"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1895,7 +1758,7 @@
   {
    "id": "p68",
    "subtema": "Atração de investimentos e industrialização",
-   "proposta": "Definir funções econômicas complementares para os polos da rede estadual (São Luís/Bacabeira portuário-industrial, Açailândia ferroviário-industrial, Imperatriz integrando o sudoeste e o eixo Norte-Sul, Caxias conectando o leste ao Nordeste), incorporando portos secos, terminais e distritos industriais conforme estudos de viabilidade",
+   "proposta": "Definir funções econômicas complementares para os polos da rede estadual (São Luís/Bacabeira, Açailândia, Imperatriz e Caxias), conforme suas vocações portuárias, ferroviárias e regionais",
    "n_concorda": 1,
    "posicoes": {
     "governador-ma-roberto-rocha-100002551399": {
@@ -1909,28 +1772,26 @@
    }
   },
   {
+   "id": "p153",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Incorporar portos secos, terminais e distritos industriais à rede de polos quando estudos de viabilidade demonstrarem sua contribuição",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      496
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
    "id": "p69",
    "subtema": "Atração de investimentos e industrialização",
-   "proposta": "Selecionar polos industriais e logísticos no interior por critérios técnicos (demanda, acesso ferroviário e rodoviário, energia, água, conectividade, mão de obra e viabilidade ambiental), com etapas e gates de decisão explícitos",
-   "n_concorda": 3,
+   "proposta": "Selecionar polos industriais e logísticos no interior por critérios técnicos — demanda, acesso ferroviário e rodoviário, energia, água, conectividade, mão de obra e viabilidade ambiental —, com etapas e gates de decisão explícitos.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      656,
-      658
-     ],
-     "nota": "Distritos/condomínios industriais no interior com critérios e edital"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      386,
-      393,
-      629
-     ],
-     "nota": "Zonas de Produção e Comercialização planejadas pelo ZEE, com logística, crédito e qualificação."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2015,7 +1876,7 @@
   {
    "id": "p74",
    "subtema": "Atração de investimentos e industrialização",
-   "proposta": "Incluir componentes, equipamentos, serviços especializados e atividades industriais ligados às energias renováveis na estratégia de atração de investimentos dos polos e ZPEs",
+   "proposta": "Incluir as energias renováveis na estratégia de atração de investimentos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -2039,25 +1900,8 @@
    "id": "p75",
    "subtema": "Turismo",
    "proposta": "Priorizar na política de turismo os destinos de Barreirinhas, Santo Amaro do Maranhão, Primeira Cruz, Paulino Neves, Tutóia e Araioses, o corredor de acesso desde São Luís, a recuperação e ocupação econômica do Centro Histórico da capital e destinos como Alcântara",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      346,
-      349
-     ],
-     "nota": "Recursos a municípios dos polos turísticos e normas de visitação aos Lençóis"
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      427,
-      438,
-      439
-     ],
-     "nota": "Roteiros com Lençóis, Alcântara e centros históricos"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2104,17 +1948,8 @@
    "id": "p78",
    "subtema": "Atração de investimentos e industrialização",
    "proposta": "Elaborar Mapa de Oportunidades Produtivas em cada polo, identificando bens e serviços hoje adquiridos fora do estado que possam ser fornecidos por empresas maranhenses",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      65,
-      66,
-      67
-     ],
-     "nota": "PDF de fornecedores, Integra ZPE e incentivos a insumos e serviços locais"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2127,7 +1962,7 @@
   {
    "id": "p79",
    "subtema": "Crédito e financiamento produtivo",
-   "proposta": "Ofertar microcrédito combinado com orientação, digitalização e acompanhamento, utilizando contratos, pedidos e histórico de fornecimento para estruturar soluções financeiras às empresas com potencial de integrar cadeias maiores",
+   "proposta": "Ofertar microcrédito combinado com orientação, digitalização e acompanhamento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -2151,16 +1986,8 @@
    "id": "p80",
    "subtema": "Crédito e financiamento produtivo",
    "proposta": "Criar Fábrica de Projetos para apoiar cooperativas, consórcios e empreendimentos coletivos na elaboração de projetos econômicos para agroindústria, beneficiamento, armazenamento e prestação de serviços",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      488,
-      513
-     ],
-     "nota": "Apoio técnico/jurídico a cooperativas e preparação de projetos"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2173,7 +2000,7 @@
   {
    "id": "p81",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Oferecer orientação previdenciária, financeira e empresarial, presencial e digital, a trabalhadores informais e por conta própria durante o processo de formalização",
+   "proposta": "Acompanhar o processo de formalização.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -2182,7 +2009,13 @@
       638,
       653
      ],
-     "nota": "Mutirões itinerantes de formalização com acompanhamento de 12 meses"
+     "nota": "Mutirões itinerantes de formalização com acompanhamento de 12 meses",
+     "metas": [
+      {
+       "rotulo": "acompanhamento da formalização",
+       "valor": "12 meses"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -2220,8 +2053,8 @@
   {
    "id": "p83",
    "subtema": "Crédito e financiamento produtivo",
-   "proposta": "Apoiar o produtor rural a cumprir requisitos e elaborar projetos para acessar os instrumentos federais de financiamento, com acompanhamento após a contratação para identificar precocemente riscos climáticos, produtivos ou comerciais",
-   "n_concorda": 4,
+   "proposta": "Apoiar o produtor rural a acessar financiamento, ajudando-o a cumprir requisitos e a elaborar projetos.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -2240,15 +2073,6 @@
      ],
      "nota": "Rota do Crédito Rural e gestão de riscos"
     },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      262,
-      270,
-      393
-     ],
-     "nota": "Financiamento (PRONAF, PROCAF) articulado a ATER e organização das cadeias; agência estadual de fomento."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2262,26 +2086,8 @@
    "id": "p84",
    "subtema": "Comercialização e redução de intermediários",
    "proposta": "Planejar trajetória de diversificação de clientes das cooperativas e produtores apoiados, partindo do mercado institucional para supermercados, restaurantes, hotéis, agroindústrias, distribuidores e mercados interestaduais",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      486,
-      494,
-      496
-     ],
-     "nota": "Ponte com mercado privado e plataformas de comercialização"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      262,
-      264,
-      380
-     ],
-     "nota": "Acesso a mercados via SEPAB, PAA/PNAE, selos e feiras, com cooperativas vendendo direto."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2295,26 +2101,9 @@
   {
    "id": "p85",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Usar as compras públicas estaduais (alimentação escolar, hospitais e demais equipamentos públicos) como demanda inicial previsível para pescado inspecionado e preparar cooperativas e pescadores para acessar supermercados, hotéis, restaurantes, distribuidores e mercados de outras regiões",
-   "n_concorda": 3,
+   "proposta": "Usar as compras públicas estaduais, na alimentação escolar, hospitais e demais equipamentos públicos, como demanda inicial previsível para pescado inspecionado.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      526,
-      660,
-      688
-     ],
-     "nota": "Sanidade do pescado e poder de compra do Estado"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      205,
-      264
-     ],
-     "nota": "Compras públicas (merenda, restaurantes populares) e valorização da pesca na bioeconomia."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2407,7 +2196,7 @@
   {
    "id": "p91",
    "subtema": "Agroindustrialização e agregação de valor",
-   "proposta": "Garantir o livre acesso aos babaçuais por meio de lei estadual e de mediação fundiária, conectando a produção a mercados de cosméticos e alimentos que pagam prêmio por origem extrativista certificada",
+   "proposta": "Garantir o livre acesso aos babaçuais por meio de lei estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -2459,27 +2248,9 @@
   {
    "id": "p94",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Identificar nas cadeias do babaçu, pescado, mariscos, frutas, alimentos processados e artesanato os pontos em que maior parcela do valor pode permanecer com as mulheres produtoras, apoiando beneficiamento, padronização, marca e comercialização",
-   "n_concorda": 3,
+   "proposta": "Identificar, nas cadeias do babaçu, pescado, mariscos, frutas, alimentos processados e artesanato, os pontos em que maior parcela do valor pode permanecer com as mulheres produtoras.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      311,
-      312,
-      315
-     ],
-     "nota": "Centros de empreendedorismo feminino, unidades produtivas geridas por mulheres"
-    },
-    "governador-ma-felipe-camarao-100002542556": {
-     "posicao": "concorda",
-     "blocos": [
-      189,
-      205,
-      315
-     ],
-     "nota": "Beneficiamento e certificação da sociobiodiversidade para reter renda; programas para mulheres."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -2510,7 +2281,7 @@
   {
    "id": "p96",
    "subtema": "Turismo",
-   "proposta": "Conectar a revitalização do Centro Histórico de São Luís e a expansão do turismo às políticas de autonomia econômica das mulheres",
+   "proposta": "Conectar a expansão do turismo às políticas de autonomia econômica das mulheres",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-felipe-camarao-100002542556": {
@@ -2609,7 +2380,7 @@
   {
    "id": "p102",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Direcionar as ações de qualificação profissional e de apoio ao empreendedorismo para os territórios de maior vulnerabilidade",
+   "proposta": "Direcionar as ações de qualificação profissional.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -2709,6 +2480,700 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p106",
+   "subtema": "Assistência técnica rural",
+   "proposta": "Oferecer ATER especializada em agroecologia, articulada ao programa estadual de agroecologia, ao uso de bioinsumos e à ampliação da produção agroecológica certificada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      262
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p107",
+   "subtema": "Agricultura familiar e mercados",
+   "proposta": "Incentivar cooperativas, associações e economia solidária como mecanismo central de distribuição da economia territorial, fortalecendo a economia do campo organizada em cooperativas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      380,
+      627
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p108",
+   "subtema": "Agroindustrialização e agregação de valor",
+   "proposta": "Ampliar o beneficiamento do babaçu (óleo, leite, farinha, carvão e artesanato), garantir o acesso livre aos babaçuais e integrar a produção às compras públicas e à política de preços mínimos da sociobiodiversidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      528
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p109",
+   "subtema": "Agroindustrialização e agregação de valor",
+   "proposta": "Transformar o babaçu e a sociobiodiversidade em renda local, com beneficiamento, certificação, inovação e repartição de benefícios nas comunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      205
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p110",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Implementar estratégias estaduais de fomento nos territórios, inclusive uma agência estadual de fomento, financiando os elos das cadeias produtivas após o planejamento territorial e a organização da cadeia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      393
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p111",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Elaborar portfólio de oportunidades de investimento para o setor privado, alinhado às prioridades do estado, à formação de mão de obra, ao desenvolvimento científico e tecnológico e a recursos estratégicos como petróleo e gás, energia renovável, terras raras e minerais críticos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      58,
+      64
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p112",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Criar a Central do Investidor, porta única com protocolo, gerente de projeto, mapa de pendências e comitê com poder de destravamento, em operação nos primeiros 100 dias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      616,
+      663
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p113",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Estruturar carteira de empresas-âncora e fornecedores locais por cadeia produtiva e vincular cada grande investimento apoiado pelo Estado a um Contrato de Desenvolvimento Territorial, com metas de fornecedores locais, formação profissional, infraestrutura e mitigação ambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      502,
+      518
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p114",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Analisar cadeia por cadeia quais etapas produtivas feitas fora do estado podem ser internalizadas de forma competitiva, mapeando vazamentos de valor e definindo as condições de infraestrutura, tecnologia, financiamento e qualificação necessárias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      498,
+      505
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p116",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Apoiar distritos industriais, portos secos, terminais de transbordo e centros de distribuição quando estudos comprovarem viabilidade e complementaridade com a rede logística.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      504
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p117",
+   "subtema": "Incentivos fiscais e tributação",
+   "proposta": "Exigir emprego e conteúdo local como contrapartida de quem recebe incentivo, agregando etapas produtivas no estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      623
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p118",
+   "subtema": "Emprego e qualificação profissional",
+   "proposta": "Instituir política estadual de inclusão produtiva e autonomia econômica com programas específicos para grupos socialmente vulnerabilizados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      315,
+      316
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p121",
+   "subtema": "Empreendedorismo e pequenos negócios",
+   "proposta": "Fortalecer e formalizar os pequenos e médios negócios urbanos e a economia territorial organizada em cooperativas, convertendo ocupação precária em trabalho decente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      337,
+      627
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p122",
+   "subtema": "Empreendedorismo e pequenos negócios",
+   "proposta": "Tornar 100% digital a abertura de empresas, com registro automático para atividades de baixo risco, e simplificar o licenciamento estadual por nível de risco, com tabela única, prazos máximos e aprovação tácita nas hipóteses legais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      638,
+      640
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p123",
+   "subtema": "Regularização fundiária rural",
+   "proposta": "Fortalecer a política de regularização fundiária articulada à inclusão socioprodutiva, com apoio técnico a pequenos produtores rurais e comunidades tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      305
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p124",
+   "subtema": "Regularização ambiental e defesa agropecuária",
+   "proposta": "Elevar, com meta anual crescente por território, o percentual de títulos rurais registrados que resultem em CAR regular e em acesso a crédito produtivo em até 12 meses.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2333
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p125",
+   "subtema": "Infraestrutura rural e logística",
+   "proposta": "Apoiar os municípios, por meio dos escritórios regionais, na elaboração de projetos de estradas vicinais e outros investimentos de integração produtiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1674,
+      1410
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p126",
+   "subtema": "Água e irrigação",
+   "proposta": "Ampliar infraestrutura hídrica, energia e conectividade nos territórios produtivos e apoiar reserva hídrica e irrigação eficiente nos Planos de Autonomia Produtiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1351,
+      2429
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p127",
+   "subtema": "Comercialização e redução de intermediários",
+   "proposta": "Integrar as plataformas de comercialização já existentes, públicas e privadas, sem criar sistemas duplicados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      494
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p128",
+   "subtema": "Governança do desenvolvimento econômico",
+   "proposta": "Elaborar planos estratégicos para assistência técnica, infraestrutura rural, abastecimento, crédito, regularização fundiária, defesa agropecuária e cadeias produtivas, com metas, responsáveis e indicadores definidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      1004
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
+  },
+  {
+   "id": "p129",
+   "subtema": "Turismo",
+   "proposta": "Assegurar, junto com municípios e o setor de turismo, o cumprimento das normas de visitação nos parques nacionais dos Lençóis Maranhenses e da Chapada das Mesas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      349
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p53"
+  },
+  {
+   "id": "p130",
+   "subtema": "Inovação e economia digital",
+   "proposta": "Formar profissionais maranhenses em redes, programação, análise de dados, suporte técnico, cibersegurança, automação, inteligência artificial e nuvem, usando a expansão da infraestrutura digital para gerar emprego e renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1799,
+      1800
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p57"
+  },
+  {
+   "id": "p131",
+   "subtema": "Agricultura familiar e mercados",
+   "proposta": "Apoiar o cooperativismo e o associativismo de pequenos produtores e ampliar o Programa de Compras da Agricultura Familiar, com centrais de recebimento em parceria com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      294,
+      299,
+      300,
+      301
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p133",
+   "subtema": "Agricultura familiar e mercados",
+   "proposta": "Construir uma cadeia de autonomia da agricultura familiar, ligando terra, água, crédito, beneficiamento e mercado, com apoio a cooperativas condicionado a resultados e compras públicas garantidas, tendo a renda líquida anual da família como indicador central.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1316,
+      1337,
+      1356,
+      1358,
+      1421
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p134",
+   "subtema": "Emprego e qualificação profissional",
+   "proposta": "Promover o primeiro emprego e a aprendizagem da juventude conectados às cadeias produtivas das ZPEs, turismo, economia digital e economia espacial, com qualificação e empreendedorismo focados nos territórios de maior vulnerabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      2370,
+      2371,
+      2397
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p60"
+  },
+  {
+   "id": "p135",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Tratar o crédito como instrumento de investimento produtivo, e não como resultado da política, oferecendo garantia estadual a quem não acessa o crédito bancário tradicional, com avaliação da capacidade de pagamento, projeto produtivo simplificado, assistência técnica e acompanhamento após a contratação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1019,
+      1345,
+      1347,
+      1423,
+      1565
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p64"
+  },
+  {
+   "id": "p136",
+   "subtema": "Regularização fundiária rural",
+   "proposta": "Articular as ações rurais como um percurso integrado: regularização fundiária completa até o registro, mutirões de CAR com adesão ao PRA, crédito orientado pela Rota do Crédito Rural e assistência técnica regionalizada em três níveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      481,
+      513,
+      521,
+      523
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p67"
+  },
+  {
+   "id": "p137",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Requalificar distritos industriais e implantar condomínios industriais no interior com situação fundiária resolvida, infraestrutura e licenciamento prévio por área, distribuindo lotes por edital com cláusula de reversão; selecionar de 5 a 8 cadeias prioritárias por critérios públicos, com avaliação bienal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      656,
+      658
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p69"
+  },
+  {
+   "id": "p138",
+   "subtema": "Atração de investimentos e industrialização",
+   "proposta": "Criar Zonas de Produção e Comercialização planejadas territorialmente, definindo onde e o que produzir com base no Zoneamento Ecológico-Econômico, depois organizando a cadeia até o mercado e só então financiando cada elo, sob coordenação de uma Câmara de Desenvolvimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      386,
+      393,
+      629
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p69"
+  },
+  {
+   "id": "p140",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Operar microcrédito produtivo orientado por instituições especializadas e cooperativas, com aval de fundo garantidor estadual, capacitação obrigatória e decisão de crédito técnica, somado a extensão tecnológica com diagnóstico, implantação assistida de soluções e acompanhamento por seis meses.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      651,
+      676
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p79"
+  },
+  {
+   "id": "p141",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Fortalecer cooperativas e associações com capacitação em gestão, regularização, apoio contábil e jurídico e integração a compras públicas e crédito, além de criar serviço público de preparação e encaminhamento de projetos técnicos de crédito rural aos bancos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      486,
+      488,
+      513,
+      660
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p80"
+  },
+  {
+   "id": "p142",
+   "subtema": "Emprego e qualificação profissional",
+   "proposta": "Realizar mutirões itinerantes de formalização, com acompanhamento por 12 meses, e profissionalizar cooperativas por meio de incubação e rodadas de negócio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      653
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p81"
+  },
+  {
+   "id": "p143",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Apoiar o acesso a linhas de crédito para produtores rurais, agricultores familiares, empreendedores, comerciantes e micro e pequenas empresas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      161,
+      163,
+      165
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p144",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Criar serviço público de preparação, orientação e encaminhamento de produtores aos bancos, com CAF, projeto técnico e escolha da linha de crédito adequada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      513
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p150",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Instituir Observatório do Crédito nos primeiros 100 dias, com vedação a indicação política no acesso ao crédito rural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      513
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p151",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Realizar mutirões de adesão ao Garantia-Safra e orientação sobre Proagro e seguro rural subvencionado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      518
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p152",
+   "subtema": "Crédito e financiamento produtivo",
+   "proposta": "Criar Central de Gestão de Riscos integrada ao monitoramento climático.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      518
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p83"
+  },
+  {
+   "id": "p145",
+   "subtema": "Comercialização e redução de intermediários",
+   "proposta": "Ampliar as compras públicas (Procaf, PNAE, PAA) para novos municípios, apoiando a documentação dos fornecedores e fazendo a ponte com o mercado privado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      486
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p84"
+  },
+  {
+   "id": "p146",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Garantir demanda para o pescado beneficiado por meio de compras públicas, com inspeção sanitária proporcional ao risco, unidades coletivas de beneficiamento, selo estadual e cumprimento do mínimo de 30% da agricultura familiar na merenda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      660,
+      688,
+      526
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p85"
+  },
+  {
+   "id": "p148",
+   "subtema": "Empreendedorismo e pequenos negócios",
+   "proposta": "Identificar, nas cadeias do babaçu, pescado, mariscos, frutas, alimentos processados, artesanato e outros produtos territoriais, os pontos em que parcela maior do valor pode permanecer com a produtora.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1571
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p94"
+  },
+  {
+   "id": "p149",
+   "subtema": "Turismo",
+   "proposta": "Diversificar a matriz de serviços com turismo de base comunitária e economia criativa e do patrimônio, gerando renda e ocupação para mulheres e juventudes qualificadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      210
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p96"
   }
  ],
  "blocos": {
@@ -2741,10 +3206,6 @@
     "texto": "Maranhão de Portas Abertas pousada familiar, guia, barqueiro, artesão e restaurante local como produto turístico",
     "pagina": 22
    },
-   "427": {
-    "texto": "O turista chega, fica pouco, conhece um único atrativo e gasta fora da comunidade. Enquanto isso, o pescador, o agricultor familiar, o artesão e o pequeno empreendedor permanecem à margem da cadeia que se forma no seu próprio território. Some-se a isso o acesso precário aos destinos prioritários — a MA-106, eixo de Alcântara, é a segunda pior ligação do Brasil — e o quadro se fecha.",
-    "pagina": 22
-   },
    "435": {
     "texto": "Maranhão à Beira D’Água Valorização das áreas ribeirinhas: cais turísticos, áreas de convivência, espaços gastronômicos e lazer nas margens dos rios, respeitando as características de cada município. Municípios-piloto: Turilândia e São José de Ribamar.",
     "pagina": 23
@@ -2767,10 +3228,6 @@
    },
    "443": {
     "texto": "Maranhão Sabor e Cultura Gastronomia e cultura como atração turística: rotas gastronômicas e culturais regionais conectando turismo e produção local — arroz de cuxá, caranguejo, camarão, juçara, buriti, bacuri, produtos da agricultura familiar",
-    "pagina": 23
-   },
-   "444": {
-    "texto": "— e valorização do bumba meu boi, tambor de crioula, cacuriá, reggae e produção artesanal.",
     "pagina": 23
    },
    "446": {
@@ -2937,10 +3394,6 @@
     "texto": "Central do Investidor Porta única: protocolo, gerente de projeto, mapa de pendências e comitê com poder de destrava‐ mento. METAS-CHAVE Operando nos primeiros 100 dias.",
     "pagina": 31
    },
-   "668": {
-    "texto": "Maranhão Exportador Adensar a retroárea do Itaqui como plataforma industrial e logística e levar MPEs do zero ao primeiro embarque, pela trilha Exporta MA, com ApexBrasil e Sebrae.",
-    "pagina": 32
-   },
    "676": {
     "texto": "Tecnologia que Chega Extensão tecnológica para pequenos negócios — o “ATER digital”: diagnóstico, implantação assistida de duas a três soluções e acompanhamento de 6 meses.",
     "pagina": 32
@@ -2973,10 +3426,6 @@
    },
    "158": {
     "texto": "reestruturação da AGERP e da articulação com",
-    "pagina": 12
-   },
-   "160": {
-    "texto": "instituições parceiras",
     "pagina": 12
    },
    "161": {
@@ -3057,10 +3506,6 @@
     "texto": "Dessa proposta decorrem quatro novas matrizes de geração de renda, a industrialização e agregação de valor no território, a bioeconomia e economia da sociobiodiversidade, a transição energética com repartição local e a economia do conhecimento, do cuidado e da cultura. Decorrem também dois vetores concretos de distribuição, o tecido de pequenos e médios negócios nas cidades e a economia territorial da agricultura familiar cooperativada no campo.",
     "pagina": 8
    },
-   "189": {
-    "texto": "É a que efetivamente distribui renda, emprega em larga escala e ﬁxa as famílias no território. É potente e ao mesmo tempo sufocada. Só no Médio Mearim, a economia do babaçu é estimada em cerca de R$ 100 milhões, o triplo do que os registros oﬁciais captam. Ainda assim, a renda escapa das comunidades, capturada por atravessadores e comprometida pela falta de beneﬁciamento e de crédito, pela insegurança fundiária e pelos conﬂitos com a expansão do enclave.",
-    "pagina": 18
-   },
    "202": {
     "texto": "Deixar de exportar valor bruto e passar a transformá-lo localmente: adensar a cadeia de grãos do Sul (armazenagem, esmagamento, biocombustíveis), agregar etapas à mineração e à metalurgia e exigir contrapartidas de emprego e conteúdo local. Frente diretamente sintonizada com a Nova Indústria Brasil, e o maior ponto cego dos relatórios setoriais.",
     "pagina": 19
@@ -3079,10 +3524,6 @@
    },
    "264": {
     "texto": "origem e as feiras — com a meta de ampliar a compra da alimentação escolar e regulamentar a aquisição dos produtos consumidos nos Restaurantes Populares e outros serviços públicos da agricultura familiar. É a tradução local da diretriz nacional de estimular a comercialização direta entre quem produz em pequena escala e quem consome e de articular política agrícola, social e ambiental em um só sistema alimentar.",
-    "pagina": 27
-   },
-   "270": {
-    "texto": "Distribuir riqueza no território exige que três engrenagens girem juntas e na ordem certa. Primeiro o planejamento, com o Zoneamento EcológicoEconômico e os planos territoriais, deﬁne onde e o que produzir, respeitando conservação e vocação. Depois a organização das cadeias, por meio de cooperativas, assistência técnica, agroindústrias, do Sistema Estadual de Produção e $bastecimento e da certiﬁcação, estrutura o caminho da produção até o mercado. Por ﬁm, o ﬁnanciamento irriga cada elo, com o PRONAF, o PROCAF, o PAA e o PNAE, o Fundo de Economia Solidária, o BNDES, o Banco do Nordeste e os fundos climáticos. Quando essas engrenagens operam desarticuladas, seja crédito sem cadeia organizada, seja cadeia sem planejamento territorial, o recurso se dispersa e o valor volta a escapar.",
     "pagina": 27
    },
    "315": {
@@ -3105,14 +3546,6 @@
     "texto": "O que a matriz responde. A absorção da juventude pelas novas matrizes de renda, articulada à economia do cuidado e à presença do Estado nos territórios, tratando a redução da letalidade como resultado também socioeconômico.",
     "pagina": 34
    },
-   "335": {
-    "texto": "Evidência convergente dos GTs. A desocupação recuou para 6,8% em 2025, a menor taxa anual de toda a série iniciada em 2012, contra 7,2% em 2024, e o estado alcançou o maior contingente ocupado já registrado, 2,722 milhões de pessoas no quarto trimestre. Ainda assim, a informalidade permaneceu em 57,3% da população ocupada naquele trimestre, a mais alta do país, e a taxa de desalento maranhense, de 9,5%, é mais de três vezes a média nacional",
-    "pagina": 34
-   },
-   "336": {
-    "texto": "(PNAD Contínua/IBGE). O saldo formal é atribuído sobretudo ao ciclo nacional de crescimento, e não a uma mudança na estrutura produtiva do estado (GT de Trabalho e Economia Solidária).",
-    "pagina": 34
-   },
    "337": {
     "texto": "O que a matriz responde. A formalização e o fortalecimento dos dois vetores de distribuição, os pequenos e médios negócios e a economia territorial cooperativada, para transformar ocupação precária em trabalho decente.",
     "pagina": 34
@@ -3131,10 +3564,6 @@
    },
    "393": {
     "texto": "A regra de ouro é a ordem. Primeiro planejar onde e o que produzir, respeitando a conservação e a vocação de cada zona. Depois organizar a cadeia que leva a produção ao mercado. Só então ﬁnanciar cada elo. Quando o ﬁnanciamento chega antes da cadeia estar organizada, ou a cadeia se estrutura sem planejamento territorial, o recurso se dispersa e o valor escapa do território. É a articulação dessas três engrenagens, e não cada uma isolada, que converte riqueza em desenvolvimento distribuído. Para tanto, o governo buscará as condições para implementar diferentes estratégias de fomento nos territórios, a exemplo de agência estadual de fomento.",
-    "pagina": 39
-   },
-   "399": {
-    "texto": "Segundo pilar da distribuição, organiza a economia rural como sistema produtivo completo, da terra ao mercado, e é o principal veículo do eixo ambiental, hídrico e alimentar. Consolida propostas que os GTs de Políticas para o Campo, de Quilombolas e de Economia Solidária já trazem com nome e meta próprios.",
     "pagina": 39
    },
    "412": {
@@ -3681,10 +4110,6 @@
     "texto": "A política estadual atuará para integrar os instrumentos federais existentes às condições locais, ajudando o produtor a cumprir requisitos, elaborar projetos, acessar financiamento e utilizar adequadamente mecanismos de proteção. O acompanhamento continuará depois da contratação, permitindo identificar precocemente problemas climáticos, produtivos ou comerciais capazes de comprometer o pagamento.",
     "pagina": 92
    },
-   "1348": {
-    "texto": "Para atividades expostas a risco climático, o planejamento produtivo deverá considerar zoneamento agrícola, disponibilidade hídrica, calendário de plantio e instrumentos de proteção aplicáveis. A política de crédito será, portanto, integrada à política de gestão de riscos.",
-    "pagina": 92
-   },
    "1351": {
     "texto": "Os Planos de Autonomia Produtiva poderão combinar diversificação produtiva, reserva hídrica, irrigação eficiente, sementes e variedades adequadas, seguro, armazenamento, formação de estoque, produção para autoconsumo e fontes complementares de renda.",
     "pagina": 92
@@ -4036,10 +4461,6 @@
    "2397": {
     "texto": "Qualificação e empreendedorismo com foco territorial em áreas de maior vulnerabilidade.",
     "pagina": 154
-   },
-   "2413": {
-    "texto": "Apoio a cadeias produtivas sustentáveis e economia da sociobiodiversidade.",
-    "pagina": 155
    },
    "2420": {
     "texto": "Inclusão produtiva e acesso aos programas estaduais de qualificação e intermediação de mão de obra para pessoas em situação de vulnerabilidade.",

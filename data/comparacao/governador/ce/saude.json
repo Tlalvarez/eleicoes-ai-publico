@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-ce.json",
   "gerado_em": "2026-09-14T04:49:14Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T21:45:08Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p2",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Modernizar a gestão e a rede hospitalar estadual, ampliando capacidade assistencial e incorporando novas tecnologias",
+   "proposta": "Modernizar a gestão hospitalar estadual, incorporando novas tecnologias",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -349,7 +349,7 @@
    "id": "p17",
    "subtema": "Gestão e avaliação do SUS",
    "proposta": "Adotar gestão orientada por resultados, com monitoramento permanente da qualidade assistencial, transparência e avaliação de resultados",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
      "posicao": "concorda",
@@ -358,13 +358,6 @@
       86
      ],
      "nota": ""
-    },
-    "governador-ce-elmano-de-freitas-60002543969": {
-     "posicao": "concorda",
-     "blocos": [
-      640
-     ],
-     "nota": "Associa avaliação a uso de evidências e transparência"
     }
    }
   },
@@ -725,6 +718,38 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p41",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Modernizar a gestão hospitalar e a atenção especializada com critérios técnicos, implantando sistemas integrados de regulação, telemedicina e prontuário.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      87
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p42",
+   "subtema": "Gestão e avaliação do SUS",
+   "proposta": "Modernizar e regionalizar o SUS estadual, fortalecendo o uso de evidências na tomada de decisão, a transparência e a avaliação de resultados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-elmano-de-freitas-60002543969": {
+     "posicao": "concorda",
+     "blocos": [
+      640
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-rr.json",
   "gerado_em": "2026-09-14T14:15:29Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "exportado_em": "2026-09-16T20:02:13Z"
  },
  "candidatos": [
   {
@@ -136,7 +136,7 @@
   {
    "id": "p4",
    "subtema": "Filas e regulação",
-   "proposta": "Implantar Central Estadual de Regulação com fila única digital e monitoramento integrado",
+   "proposta": "Implantar uma Central Estadual de Regulação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -236,7 +236,7 @@
   {
    "id": "p8",
    "subtema": "Interiorização e regionalização",
-   "proposta": "Usar telemedicina e teleassistência para ampliar acesso a especialistas no interior",
+   "proposta": "Usar telemedicina no interior do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -342,7 +342,13 @@
      "blocos": [
       323
      ],
-     "nota": "Frota estadual própria com mamografia digital e biópsia nos 15 municípios"
+     "nota": "Frota estadual própria com mamografia digital e biópsia nos 15 municípios",
+     "metas": [
+      {
+       "rotulo": "municípios atendidos",
+       "valor": "15 municípios"
+      }
+     ]
     },
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
@@ -441,7 +447,7 @@
    "id": "p18",
    "subtema": "Profissionais de saúde",
    "proposta": "Realizar novos concursos públicos para profissionais de saúde",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
@@ -456,13 +462,6 @@
       328
      ],
      "nota": "Com cronograma definido"
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      232
-     ],
-     "nota": "Concurso regionalizado"
     }
    }
   },
@@ -491,7 +490,7 @@
   {
    "id": "p20",
    "subtema": "Saúde indígena e de fronteira",
-   "proposta": "Atuar de forma articulada com a União, SESAI e DSEIs em plano específico para a saúde indígena",
+   "proposta": "Atuar de forma articulada com órgãos federais da saúde indígena na atenção à saúde dos povos indígenas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -537,7 +536,7 @@
    "id": "p22",
    "subtema": "Infraestrutura hospitalar",
    "proposta": "Ampliar, modernizar e equipar hospitais e unidades de saúde do interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
@@ -546,13 +545,6 @@
       327
      ],
      "nota": "Nomeia hospitais de Pacaraima, Normandia, Alto Alegre e Rorainópolis"
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      172
-     ],
-     "nota": "Médicos e equipamentos para o interior"
     }
    }
   },
@@ -568,7 +560,13 @@
       299,
       300
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "novos leitos no HGR",
+       "valor": "cerca de 180 leitos"
+      }
+     ]
     }
    }
   },
@@ -687,7 +685,7 @@
    "id": "p31",
    "subtema": "Saúde mental",
    "proposta": "Ampliar a rede de atenção à saúde mental e ao uso de substâncias",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
@@ -695,14 +693,6 @@
       80
      ],
      "nota": "Quadriplicar o atendimento dos CAPS, com rede pós-pandemia"
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      221,
-      384
-     ],
-     "nota": "Inclui psiquiatria por telemedicina"
     }
    }
   },
@@ -739,6 +729,55 @@
      "nota": "Programa Bem-Te-Vi com escaneador ocular e mutirão de consultas"
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Filas e regulação",
+   "proposta": "Ampliar a Central Estadual de Regulação de Leitos com painel público que divulgue o tempo de espera de cada unidade da rede estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      300,
+      307
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p35",
+   "subtema": "Interiorização e regionalização",
+   "proposta": "Recuperar os hospitais do interior em padrão UPA e fortalecer a saúde básica nos municípios-polo com uso de tecnologia e telemedicina, reduzindo disparidades regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      310
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p36",
+   "subtema": "Saúde indígena e de fronteira",
+   "proposta": "Atuar de forma cooperativa com a União e os DSEIs para garantir vigilância, nutrição, saneamento, logística humanitária e proteção contra violência aos povos indígenas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      82
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
   }
  ],
  "blocos": {
@@ -985,10 +1024,6 @@
    },
    "231": {
     "texto": "Educação permanente, incentivo à fixação no interior, qualificação técnica e melhoria das condições de trabalho, com painel público de indicadores, metas hospitalares e monitoramento contínuo da produtividade.",
-    "pagina": 19
-   },
-   "232": {
-    "texto": "Regionalização do próximo concurso público para a saúde.",
     "pagina": 19
    },
    "247": {

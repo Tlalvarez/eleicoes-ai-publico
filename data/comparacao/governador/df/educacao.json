@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-df.json",
   "gerado_em": "2026-09-14T11:42:36Z",
-  "exportado_em": "2026-09-14T12:41:08Z"
+  "exportado_em": "2026-09-16T21:45:29Z"
  },
  "candidatos": [
   {
@@ -76,7 +76,13 @@
       176,
       182
      ],
-     "nota": "Meta de 35% dos estudantes e 50% das escolas até 2030"
+     "nota": "Meta de 35% dos estudantes e 50% das escolas até 2030",
+     "metas": [
+      {
+       "rotulo": "educação em tempo integral",
+       "valor": "35% dos estudantes e 50% das escolas"
+      }
+     ]
     },
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -149,7 +155,7 @@
   {
    "id": "p3",
    "subtema": "Educação em tempo integral",
-   "proposta": "Preparar a infraestrutura e a equipe de cada escola antes de ampliar a jornada integral",
+   "proposta": "Preparar a infraestrutura de cada escola na ampliação da jornada integral",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -224,7 +230,7 @@
   {
    "id": "p5",
    "subtema": "Alfabetização e aprendizagem",
-   "proposta": "Garantir a alfabetização de todas as crianças até o final do 2º ano",
+   "proposta": "Garantir a alfabetização das crianças na idade certa",
    "n_concorda": 5,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -269,16 +275,9 @@
   {
    "id": "p6",
    "subtema": "Alfabetização e aprendizagem",
-   "proposta": "Implantar estratégia de avaliação diagnóstica e recomposição das aprendizagens, com reforço e acompanhamento individualizado",
-   "n_concorda": 4,
+   "proposta": "Implantar avaliação diagnóstica e recomposição das aprendizagens, com reforço e acompanhamento individualizado dos estudantes com dificuldades.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-df-cappelli-70002551557": {
-     "posicao": "concorda",
-     "blocos": [
-      175
-     ],
-     "nota": "Tutoria, materiais curriculares e bibliotecas ativas"
-    },
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
      "blocos": [
@@ -307,7 +306,7 @@
   {
    "id": "p7",
    "subtema": "Alfabetização e aprendizagem",
-   "proposta": "Estabelecer metas públicas de aprendizagem monitoradas por escola e por região, sem uso punitivo dos indicadores",
+   "proposta": "Acompanhar a aprendizagem por meio de indicadores.",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
@@ -348,15 +347,8 @@
    "id": "p9",
    "subtema": "Infraestrutura escolar",
    "proposta": "Executar plano permanente de manutenção, reforma e modernização das unidades escolares",
-   "n_concorda": 5,
+   "n_concorda": 3,
    "posicoes": {
-    "governador-df-celina-leao-70002553055": {
-     "posicao": "concorda",
-     "blocos": [
-      226
-     ],
-     "nota": "Inclui climatização, energia e conectividade"
-    },
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
      "blocos": [
@@ -375,14 +367,6 @@
      ],
      "nota": ""
     },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      724,
-      748
-     ],
-     "nota": "Plano quadrienal de reforma e construção"
-    },
     "governador-df-kiko-caputo-70002547775": {
      "posicao": "concorda",
      "blocos": [
@@ -395,8 +379,8 @@
   {
    "id": "p10",
    "subtema": "Infraestrutura escolar",
-   "proposta": "Construir novas escolas e ampliar a rede física conforme demanda territorial",
-   "n_concorda": 5,
+   "proposta": "Construir novas escolas.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -426,13 +410,6 @@
       474
      ],
      "nota": "Plano Territorial de Expansão da Rede de Ensino"
-    },
-    "governador-df-cappelli-70002551557": {
-     "posicao": "concorda",
-     "blocos": [
-      635
-     ],
-     "nota": "Mapa territorial de expansão"
     }
    }
   },
@@ -476,7 +453,7 @@
   {
    "id": "p12",
    "subtema": "Infraestrutura escolar",
-   "proposta": "Garantir conectividade e internet de qualidade em todas as escolas",
+   "proposta": "Garantir conectividade nas escolas públicas",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -529,8 +506,8 @@
   {
    "id": "p14",
    "subtema": "Infraestrutura escolar",
-   "proposta": "Implantar biblioteca em todas as escolas que ainda não possuem, com acervo, profissional e mediação de leitura",
-   "n_concorda": 3,
+   "proposta": "Ampliar as bibliotecas nas escolas públicas.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -538,13 +515,6 @@
       726
      ],
      "nota": ""
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      462
-     ],
-     "nota": "Transformar bibliotecas em centros de leitura e pesquisa"
     },
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -591,7 +561,7 @@
   {
    "id": "p17",
    "subtema": "Infraestrutura escolar",
-   "proposta": "Implantar central de inteligência territorial para antecipar demanda por vagas e orientar obras",
+   "proposta": "Antecipar a demanda por vagas e usar essas informações para orientar obras e a expansão da rede escolar",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-kiko-caputo-70002547775": {
@@ -658,7 +628,7 @@
    "id": "p19",
    "subtema": "Valorização dos profissionais da educação",
    "proposta": "Reduzir a dependência de contratos temporários, realizando concursos e ampliando o quadro efetivo",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
@@ -682,21 +652,14 @@
       717
      ],
      "nota": "Concursos periódicos para Magistério e Assistência à Educação"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      471
-     ],
-     "nota": "Convocação de aprovados em concursos vigentes e planejamento plurianual"
     }
    }
   },
   {
    "id": "p20",
    "subtema": "Valorização dos profissionais da educação",
-   "proposta": "Reestruturar a carreira e elevar a remuneração do magistério",
-   "n_concorda": 4,
+   "proposta": "Reestruturar a carreira do magistério público, com valorização dos profissionais da educação",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -721,20 +684,13 @@
       715
      ],
      "nota": "Equiparação à média dos cargos de nível superior do GDF e piso para temporários"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      472
-     ],
-     "nota": "Política de valorização das carreiras do Magistério e da PPGE"
     }
    }
   },
   {
    "id": "p21",
    "subtema": "Valorização dos profissionais da educação",
-   "proposta": "Fortalecer políticas de saúde ocupacional e atenção à saúde dos profissionais da educação",
+   "proposta": "Fortalecer a atenção à saúde dos profissionais da educação",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -765,7 +721,7 @@
    "id": "p22",
    "subtema": "Valorização dos profissionais da educação",
    "proposta": "Valorizar e recompor a carreira de Assistência à Educação, com mesa permanente de negociação e dimensionamento de pessoal",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -774,20 +730,13 @@
       718
      ],
      "nota": ""
-    },
-    "governador-df-paula-belmonte-70002552965": {
-     "posicao": "concorda",
-     "blocos": [
-      278
-     ],
-     "nota": "Fortalecimento das equipes de apoio da rotina escolar"
     }
    }
   },
   {
    "id": "p23",
    "subtema": "Valorização dos profissionais da educação",
-   "proposta": "Garantir um terço da jornada docente para atividades extraclasse e planejamento pedagógico",
+   "proposta": "Assegurar tempo da jornada docente destinado ao planejamento pedagógico",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
@@ -856,7 +805,7 @@
   {
    "id": "p25",
    "subtema": "Educação inclusiva",
-   "proposta": "Integrar educação, saúde e assistência social para identificação precoce e encaminhamento de necessidades de desenvolvimento",
+   "proposta": "Integrar as ações de educação, saúde e assistência social voltadas às crianças.",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
@@ -885,7 +834,7 @@
   {
    "id": "p26",
    "subtema": "Convivência, segurança e saúde mental na escola",
-   "proposta": "Implantar política de cultura de paz, mediação de conflitos, enfrentamento ao bullying e cuidado com a saúde emocional na escola",
+   "proposta": "Implantar política de enfrentamento ao bullying e de cuidado com a saúde emocional na escola",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -946,7 +895,7 @@
   {
    "id": "p28",
    "subtema": "Convivência, segurança e saúde mental na escola",
-   "proposta": "Reforçar o policiamento especializado e a estratégia integrada de segurança nas escolas",
+   "proposta": "Reforçar o policiamento especializado nas escolas",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1000,7 +949,7 @@
    "id": "p31",
    "subtema": "Educação profissional e ensino médio",
    "proposta": "Expandir a educação profissional e técnica articulada ao ensino médio",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1015,7 +964,13 @@
       178,
       183
      ],
-     "nota": "Meta de 30 mil matrículas na educação profissional"
+     "nota": "Meta de 30 mil matrículas na educação profissional",
+     "metas": [
+      {
+       "rotulo": "matrículas na educação profissional",
+       "valor": "ampliar para 30 mil"
+      }
+     ]
     },
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -1033,14 +988,6 @@
       723
      ],
      "nota": "Um centro de referência por região, com IFB, UnDF e Sistema S"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      321,
-      469
-     ],
-     "nota": "Modernização da rede pública de educação profissional conforme vocações regionais"
     }
    }
   },
@@ -1113,16 +1060,9 @@
   {
    "id": "p35",
    "subtema": "Educação profissional e ensino médio",
-   "proposta": "Reformular a EJA com percursos flexíveis, modulares e articulados à qualificação profissional",
-   "n_concorda": 3,
+   "proposta": "Articular a EJA à qualificação profissional.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      469
-     ],
-     "nota": ""
-    },
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
      "blocos": [
@@ -1143,7 +1083,7 @@
   {
    "id": "p36",
    "subtema": "Educação profissional e ensino médio",
-   "proposta": "Reduzir a evasão e o abandono no ensino médio, especialmente no noturno",
+   "proposta": "Reduzir a evasão e o abandono escolar.",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -1218,8 +1158,8 @@
   {
    "id": "p38",
    "subtema": "Permanência e enfrentamento da evasão",
-   "proposta": "Conceder bolsa ou incentivo financeiro a estudantes do ensino médio da rede pública vinculado à frequência e ao desempenho",
-   "n_concorda": 2,
+   "proposta": "Conceder bolsa ou incentivo financeiro a estudantes do ensino médio da rede pública, vinculado à frequência e ao desempenho escolar.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1227,14 +1167,6 @@
       221
      ],
      "nota": "Programa Futuro Agora"
-    },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      102,
-      772
-     ],
-     "nota": "Universalização do Pé-de-Meia e bolsa-formação para a juventude"
     }
    }
   },
@@ -1256,7 +1188,7 @@
   {
    "id": "p40",
    "subtema": "Creches e educação infantil",
-   "proposta": "Zerar a fila de creche, atendendo toda a demanda por vagas na educação infantil",
+   "proposta": "Ampliar a oferta de vagas na educação infantil, priorizando os territórios de maior déficit.",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -1321,7 +1253,7 @@
    "id": "p42",
    "subtema": "Gestão educacional e financiamento",
    "proposta": "Reformular o PDAF para dar mais autonomia, transparência e agilidade às escolas na gestão de recursos",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -1339,20 +1271,13 @@
      ],
      "nota": "PDAF transparente, previsível e orientado à equidade"
     },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      474
-     ],
-     "nota": "Autonomia com recursos e apoio técnico para manutenção e pequenos reparos"
-    },
     "governador-df-celina-leao-70002553055": {
-     "posicao": "concorda",
+     "posicao": "discorda",
      "blocos": [
       229,
       230
      ],
-     "nota": "Propõe substituir o Cartão PDAF e o Educa-DF por soluções com inteligência artificial"
+     "nota": ""
     }
    }
   },
@@ -1437,7 +1362,7 @@
    "id": "p47",
    "subtema": "Gestão educacional e financiamento",
    "proposta": "Fortalecer a gestão democrática com eleição de diretores, conselhos escolares e grêmios estudantis",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -1446,13 +1371,6 @@
       733
      ],
      "nota": ""
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      474
-     ],
-     "nota": "Preservar a gestão democrática e a participação da comunidade"
     }
    }
   },
@@ -1468,29 +1386,6 @@
       736
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p49",
-   "subtema": "Gestão educacional e financiamento",
-   "proposta": "Criar rede de apoio e formação para gestores escolares, com mentoria, suporte técnico e simplificação de processos",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      474,
-      476
-     ],
-     "nota": ""
-    },
-    "governador-df-paula-belmonte-70002552965": {
-     "posicao": "concorda",
-     "blocos": [
-      258
-     ],
-     "nota": "Foco em reduzir burocracia para diretores"
     }
    }
   },
@@ -1513,8 +1408,8 @@
   {
    "id": "p51",
    "subtema": "Tecnologia e currículo",
-   "proposta": "Integrar ciência, tecnologia, inovação e empreendedorismo ao currículo e à formação dos estudantes",
-   "n_concorda": 4,
+   "proposta": "Incluir a tecnologia na formação dos estudantes.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1531,13 +1426,6 @@
      ],
      "nota": "Currículo para a Economia 4.0, com programação, IA, robótica e dados"
     },
-    "governador-df-paula-belmonte-70002552965": {
-     "posicao": "concorda",
-     "blocos": [
-      283
-     ],
-     "nota": ""
-    },
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
      "blocos": [
@@ -1550,8 +1438,8 @@
   {
    "id": "p52",
    "subtema": "Tecnologia e currículo",
-   "proposta": "Definir diretrizes para o uso ético e pedagógico da inteligência artificial na rede de ensino",
-   "n_concorda": 3,
+   "proposta": "Orientar o uso da inteligência artificial na rede de ensino.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1566,13 +1454,6 @@
       727
      ],
      "nota": "Formação dos professores antes da chegada da ferramenta e regra sobre celulares"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      490
-     ],
-     "nota": "Com supervisão humana e proteção de dados"
     }
    }
   },
@@ -1595,8 +1476,8 @@
   {
    "id": "p54",
    "subtema": "Alimentação escolar",
-   "proposta": "Garantir alimentação escolar de qualidade, nutritiva e adequada às diferentes faixas etárias, com controle da qualidade",
-   "n_concorda": 4,
+   "proposta": "Garantir alimentação escolar de qualidade nas escolas",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -1614,13 +1495,6 @@
       728
      ],
      "nota": "Mesmo padrão no noturno e na EJA"
-    },
-    "governador-df-celina-leao-70002553055": {
-     "posicao": "concorda",
-     "blocos": [
-      238
-     ],
-     "nota": "Alimentação saudável em ação integrada com saúde"
     },
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
@@ -1697,7 +1571,7 @@
    "id": "p58",
    "subtema": "Escola e comunidade",
    "proposta": "Fortalecer a parceria e a participação das famílias na vida escolar",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1713,21 +1587,14 @@
       306
      ],
      "nota": ""
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      478
-     ],
-     "nota": "Interface 'Minha Jornada' para famílias acompanharem a trajetória"
     }
    }
   },
   {
    "id": "p59",
    "subtema": "Ensino superior",
-   "proposta": "Fortalecer e expandir a UnDF, com mais vagas, cursos e articulação com a rede pública e as vocações econômicas do DF",
-   "n_concorda": 4,
+   "proposta": "Fortalecer a UnDF, articulando-a com a rede pública de educação do DF",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
@@ -1751,13 +1618,6 @@
       738
      ],
      "nota": "Expansão de vagas e políticas de permanência"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      469
-     ],
-     "nota": "Prioriza Saúde e Tecnologias, com residências e pesquisa aplicada"
     }
    }
   },
@@ -1765,7 +1625,7 @@
    "id": "p60",
    "subtema": "Ensino superior",
    "proposta": "Conceder apoio financeiro a estudantes universitários de baixa renda",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1773,20 +1633,6 @@
       243
      ],
      "nota": "Programa Bolsa Universitária DF"
-    },
-    "governador-df-cappelli-70002551557": {
-     "posicao": "concorda",
-     "blocos": [
-      178
-     ],
-     "nota": "Assistência estudantil na UnDF"
-    },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      738
-     ],
-     "nota": "Políticas de permanência no ensino superior"
     }
    }
   },
@@ -1809,7 +1655,7 @@
    "id": "p62",
    "subtema": "Saúde na escola",
    "proposta": "Ampliar a presença de equipes de saúde nas escolas, incluindo atendimento odontológico preventivo",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -1818,13 +1664,6 @@
       291
      ],
      "nota": ""
-    },
-    "governador-df-celina-leao-70002553055": {
-     "posicao": "concorda",
-     "blocos": [
-      238
-     ],
-     "nota": "Ações de vacinação, prevenção e acompanhamento do desenvolvimento"
     }
    }
   },
@@ -1877,7 +1716,7 @@
   {
    "id": "p64",
    "subtema": "Educação profissional e ensino médio",
-   "proposta": "Ampliar a articulação da rede pública com UnDF, UnB, IFB e instituições de formação profissional para integrar ensino médio, qualificação técnica, ensino superior e mercado de trabalho",
+   "proposta": "Fortalecer e ampliar a educação profissional e técnica na rede pública de ensino.",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1897,7 +1736,13 @@
       184,
       186
      ],
-     "nota": "Expandir educação profissional articulada ao ensino médio e EJA e fortalecer a UnDF."
+     "nota": "Expandir educação profissional articulada ao ensino médio e EJA e fortalecer a UnDF.",
+     "metas": [
+      {
+       "rotulo": "matrículas na educação profissional",
+       "valor": "ampliar para 30 mil"
+      }
+     ]
     },
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -1916,6 +1761,627 @@
      "nota": "Amplia rede de educação profissional, consolida UniDF e articula formação técnica, superior e trabalho"
     }
    }
+  },
+  {
+   "id": "p65",
+   "subtema": "Educação em tempo integral",
+   "proposta": "Ampliar a educação em tempo integral com pessoal, alimentação e infraestrutura adequados, priorizando os territórios de maior déficit e vulnerabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      167,
+      176
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p66",
+   "subtema": "Educação em tempo integral",
+   "proposta": "Expandir gradualmente a educação integral, começando pelas regiões de maior vulnerabilidade e preparando previamente as escolas, inclusive cozinhas e refeitórios, para receber os estudantes o dia inteiro.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      244,
+      257
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p67",
+   "subtema": "Educação em tempo integral",
+   "proposta": "Ampliar a jornada integral com recomposição e valorização de toda a equipe escolar, do magistério à assistência à educação, para que a escola inteira possa acolher, alimentar e acompanhar o estudante.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      742
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p68",
+   "subtema": "Alfabetização e aprendizagem",
+   "proposta": "Fortalecer a alfabetização no tempo certo e recompor a aprendizagem, com avaliação diagnóstica, reforço e acompanhamento dos estudantes com dificuldades ao longo da trajetória escolar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      245,
+      246
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p69",
+   "subtema": "Alfabetização e aprendizagem",
+   "proposta": "Promover a alfabetização na idade adequada e as aprendizagens essenciais, com acompanhamento da trajetória de cada estudante, diagnósticos, formação e materiais para as escolas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      462
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p70",
+   "subtema": "Alfabetização e aprendizagem",
+   "proposta": "Garantir a recomposição das aprendizagens com avaliação diagnóstica, materiais alinhados ao currículo, tutoria e apoio intensivo às escolas e aos estudantes de maior vulnerabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      175
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p71",
+   "subtema": "Alfabetização e aprendizagem",
+   "proposta": "Acompanhar a aprendizagem por avaliações formativas, tutoria e apoio pedagógico, sem rankings punitivos, e publicar linhas de base de aprendizagem no Censo da Verdade da Educação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      166,
+      635
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p72",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Modernizar e ampliar a infraestrutura da rede pública de ensino, com reformas, manutenção preventiva, acessibilidade, conectividade, energia elétrica e climatização dos ambientes escolares.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      226
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p73",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Executar plano quadrienal de reforma e construção de escolas, com bibliotecas, laboratórios, quadras cobertas, conforto térmico, acessibilidade e conectividade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      724,
+      748
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p74",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Construir novas unidades escolares próprias para reduzir a dependência de imóveis alugados na rede pública.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      227
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p76",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Ampliar a conectividade nas escolas públicas, com modernização da infraestrutura e distribuição de tablets a estudantes e professores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      226,
+      237
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p77",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Ampliar as bibliotecas das escolas públicas do Distrito Federal, junto com refeitórios, quadras, banheiros e espaços de convivência e acessibilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      273
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p78",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Usar inteligência territorial para antecipar demandas e orientar obras, ampliações e reorganizações da rede, instituindo Plano Territorial de Expansão vinculado a orçamento, metas e cronogramas públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      474
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p79",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Mapear as regiões com maior falta de vagas e demanda por transporte escolar e usar esses dados para orientar a expansão da rede e a construção de novas escolas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      261
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p80",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Instituir planejamento plurianual da força de trabalho, com mapa transparente das carências por escola e território e regras claras para substituição de profissionais afastados, a fim de reduzir a rotatividade e garantir continuidade pedagógica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      471
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p81",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Reestruturar o plano de carreira e valorizar os profissionais da educação básica, em alinhamento com as metas 17 e 18 do Plano Nacional de Educação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      242
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p82",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Instituir uma Política de Desenvolvimento, Formação e Valorização das carreiras do Magistério Público e de Políticas Públicas e Gestão Educacional, com formação no trabalho, mentoria e atenção à saúde ocupacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      472
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p83",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Valorizar os profissionais da educação com atenção à saúde dos servidores, formação continuada e planejamento da força de trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      241
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p84",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Fortalecer os profissionais e as equipes de apoio escolar com formação continuada e melhores condições de trabalho, ampliando a articulação com a UnDF para formação e aperfeiçoamento da rede.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      278
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p85",
+   "subtema": "Valorização dos profissionais da educação",
+   "proposta": "Fortalecer o tempo de planejamento pedagógico do magistério, junto com a carreira, a formação continuada e a saúde do trabalhador.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      174
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p86",
+   "subtema": "Educação inclusiva",
+   "proposta": "Desenvolver ações integradas de educação, saúde e proteção social, com vacinação, prevenção, alimentação saudável, acompanhamento do desenvolvimento e orientação às famílias, articuladas com os órgãos responsáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      238
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p87",
+   "subtema": "Educação inclusiva",
+   "proposta": "Organizar a atenção à primeira infância de forma coordenada entre educação, saúde, assistência social e rede de proteção, desde a gestação até a permanência na escola, para que nenhuma criança fique invisível entre os serviços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      460
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p88",
+   "subtema": "Convivência, segurança e saúde mental na escola",
+   "proposta": "Promover ambientes escolares seguros e acolhedores, com mediação de conflitos, enfrentamento ao bullying, prevenção da violência e cuidado com a saúde emocional de estudantes e profissionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      231
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p89",
+   "subtema": "Convivência, segurança e saúde mental na escola",
+   "proposta": "Garantir equipes multiprofissionais de saúde mental nas escolas, com protocolo distrital de enfrentamento ao bullying e ao sofrimento psíquico e prevenção da violência escolar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      515,
+      721
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p90",
+   "subtema": "Convivência, segurança e saúde mental na escola",
+   "proposta": "Reforçar o efetivo e a capacidade operacional do Batalhão Escolar, ampliando a cobertura das escolas públicas do Distrito Federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      228
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p91",
+   "subtema": "Educação profissional e ensino médio",
+   "proposta": "Fortalecer a educação profissional segundo as vocações econômicas dos territórios, os setores estratégicos do DF e as novas ocupações, criando o Passaporte de Talentos e Futuro com cursos, certificações, mentorias, estágios e aprendizagem profissional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      321,
+      469
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p92",
+   "subtema": "Educação profissional e ensino médio",
+   "proposta": "Expandir a educação profissional e articular 25% das matrículas da EJA à qualificação profissional, reduzindo o abandono no ensino médio noturno.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      184
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p93",
+   "subtema": "Educação profissional e ensino médio",
+   "proposta": "Articular a EJA à rede de educação profissional e ao ensino superior, fortalecendo a UnDF com expansão de vagas e políticas de permanência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      738
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p94",
+   "subtema": "Educação profissional e ensino médio",
+   "proposta": "Reduzir a evasão escolar por meio da identificação precoce de estudantes em risco e de atuação integrada que garanta a permanência ou o retorno à escola.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      247,
+      295
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p95",
+   "subtema": "Permanência e enfrentamento da evasão",
+   "proposta": "Universalizar o Pé-de-Meia a todos os estudantes com direito e oferecer bolsa-formação aos jovens.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      102,
+      772
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p96",
+   "subtema": "Creches e educação infantil",
+   "proposta": "Ampliar progressivamente a oferta de creches e pré-escolas, com prioridade aos territórios de maior déficit, transparência sobre a demanda e padrões permanentes de qualidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      460
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p97",
+   "subtema": "Tecnologia e currículo",
+   "proposta": "Atualizar o currículo e implantar o Currículo para a Economia 4.0, trabalhando ciência, tecnologia e inovação de forma interdisciplinar, com programação, pensamento computacional, inteligência artificial, robótica, dados, cibersegurança e produção digital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
+  },
+  {
+   "id": "p98",
+   "subtema": "Tecnologia e currículo",
+   "proposta": "Ampliar a educação em tempo integral no ensino fundamental e médio, com tecnologia e iniciação profissional no contraturno.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      714
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
+  },
+  {
+   "id": "p99",
+   "subtema": "Tecnologia e currículo",
+   "proposta": "Promover o uso ético e responsável da inteligência artificial na educação, preparando os estudantes para o futuro.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      225
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p52"
+  },
+  {
+   "id": "p100",
+   "subtema": "Alimentação escolar",
+   "proposta": "Assegurar merenda de qualidade com cardápios de alimentos frescos e no mínimo 45% das compras da agricultura familiar local, com o mesmo padrão no turno noturno e na EJA.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      728
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p102",
+   "subtema": "Ensino superior",
+   "proposta": "Fortalecer a UnDF como instrumento de formação, pesquisa e desenvolvimento, aproximando-a das necessidades da rede pública e das vocações econômicas do DF e integrando-a ao ecossistema de inovação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      285,
+      286
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p104",
+   "subtema": "Ensino superior",
+   "proposta": "Fortalecer a UnDF com assistência estudantil, carreira docente, infraestrutura e cursos ligados às vocações econômicas, tecnológicas, sociais e culturais do Distrito Federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      178
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p60"
+  },
+  {
+   "id": "p106",
+   "subtema": "Educação profissional e ensino médio",
+   "proposta": "Aproximar Projeto de Vida, educação profissional, ensino superior e inserção produtiva, fortalecendo a formação técnica conforme as vocações econômicas dos territórios e oferecendo preparação para o Enem, mentorias, estágios e aprendizagem profissional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      321,
+      469
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p64"
   }
  ],
  "blocos": {
@@ -2430,10 +2896,6 @@
    },
    "257": {
     "texto": "Fortalecer o acompanhamento da qualidade dos alimentos, das compras ao preparo e à distribuição, e melhorar a infraestrutura de cozinhas e refeitórios. A expansão da Educação Integral será acompanhada das condições necessárias para oferecer alimentação de qualidade durante toda a jornada.",
-    "pagina": 23
-   },
-   "258": {
-    "texto": "6. DAR MAIS AUTONOMIA A DIRETORES E GESTORES",
     "pagina": 23
    },
    "259": {

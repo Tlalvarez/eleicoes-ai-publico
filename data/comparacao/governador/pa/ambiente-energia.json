@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-pa.json",
   "gerado_em": "2026-09-14T05:54:59Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -155,7 +155,7 @@
   {
    "id": "p5",
    "subtema": "Desmatamento e fiscalização",
-   "proposta": "Manter e fortalecer a fiscalização ambiental permanente",
+   "proposta": "Manter e fortalecer a fiscalização ambiental.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -278,7 +278,13 @@
      "blocos": [
       253
      ],
-     "nota": "Suporte técnico e financeiro aos 144 municípios para planos locais"
+     "nota": "Suporte técnico e financeiro aos 144 municípios para planos locais",
+     "metas": [
+      {
+       "rotulo": "municípios com planos locais",
+       "valor": "144 municípios paraenses"
+      }
+     ]
     },
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -316,7 +322,7 @@
   {
    "id": "p13",
    "subtema": "Clima e adaptação",
-   "proposta": "Executar programa de arborização urbana em parceria com os municípios",
+   "proposta": "Executar programa de arborização urbana.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -339,7 +345,7 @@
    "id": "p14",
    "subtema": "Clima e adaptação",
    "proposta": "Estruturar e implementar o mercado de carbono e o programa estadual de REDD+",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -354,13 +360,6 @@
       1080
      ],
      "nota": "Mercado regulado e voluntário, com segurança jurídica"
-    },
-    "governador-pa-araceli-140002542386": {
-     "posicao": "concorda",
-     "blocos": [
-      249
-     ],
-     "nota": "Captação de recursos do mercado de carbono pela nova secretaria"
     },
     "governador-pa-well-macedo-140002554108": {
      "posicao": "discorda",
@@ -435,7 +434,7 @@
   {
    "id": "p18",
    "subtema": "Energia e transição energética",
-   "proposta": "Estimular e apoiar a implantação de fontes renováveis de energia no estado",
+   "proposta": "Estimular e apoiar a implantação de fontes renováveis de energia",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -762,7 +761,7 @@
   {
    "id": "p35",
    "subtema": "Bioeconomia e conservação",
-   "proposta": "Fomentar a bioeconomia e agregar valor às cadeias produtivas da sociobiodiversidade, como açaí, cacau e castanha",
+   "proposta": "Fomentar a bioeconomia no estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -854,7 +853,7 @@
   {
    "id": "p40",
    "subtema": "Recuperação de áreas degradadas",
-   "proposta": "Promover a recuperação de áreas degradadas, nascentes e matas ciliares",
+   "proposta": "Promover a recuperação ambiental.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -955,7 +954,7 @@
   {
    "id": "p44",
    "subtema": "Licenciamento e ordenamento territorial",
-   "proposta": "Acelerar e fortalecer a regularização ambiental rural integrada às políticas fundiárias",
+   "proposta": "Fortalecer a regularização ambiental.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -1089,6 +1088,119 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p52",
+   "subtema": "Desmatamento e fiscalização",
+   "proposta": "Combater o desmatamento ilegal com fiscalização inteligente e responsabilização de quem derruba e de quem financia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      937
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p53",
+   "subtema": "Desmatamento e fiscalização",
+   "proposta": "Fortalecer a fiscalização das áreas protegidas, com novas tecnologias e planos de manejo atualizados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      1061
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p54",
+   "subtema": "Clima e adaptação",
+   "proposta": "Expandir a infraestrutura verde com arborização urbana, parques lineares, jardins públicos e recuperação de áreas degradadas, para ampliar o conforto térmico e reduzir alagamentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      559
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p55",
+   "subtema": "Energia e transição energética",
+   "proposta": "Liderar a transição energética nas cidades paraenses, em parceria com os municípios, fomentando painéis solares em habitação de interesse social, eletrificação do transporte público metropolitano e padrões rigorosos de eficiência energética.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p56",
+   "subtema": "Bioeconomia e conservação",
+   "proposta": "Ampliar a bioeconomia e o uso sustentável da biodiversidade, com incentivo a atividades produtivas sustentáveis e à pesquisa científica, posicionando o estado como referência em inovação ambiental e economia de baixo carbono.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      135,
+      403
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p57",
+   "subtema": "Recuperação de áreas degradadas",
+   "proposta": "Oferecer aos produtores em situação regular acesso a crédito, assistência técnica, inovação tecnológica e programas de recuperação ambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      1050
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p58",
+   "subtema": "Licenciamento e ordenamento territorial",
+   "proposta": "Acelerar a regularização ambiental rural com o novo sistema estadual de CAR, destravando a análise dos cadastros e dando segurança jurídica ao produtor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      930
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
   }
  ],
  "blocos": {

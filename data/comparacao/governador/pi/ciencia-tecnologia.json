@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-pi.json",
   "gerado_em": "2026-09-14T10:51:54Z",
-  "exportado_em": "2026-09-14T11:10:19Z"
+  "exportado_em": "2026-09-16T21:46:13Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Ambientes de inovação",
-   "proposta": "Fortalecer e consolidar uma rede estadual de ambientes de inovação (parques tecnológicos, hubs, incubadoras e centros de inovação)",
+   "proposta": "Fortalecer e consolidar ambientes de inovação, como parques tecnológicos, hubs, incubadoras e centros de inovação",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -60,7 +60,13 @@
       658,
       659
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "hubs de inovação",
+       "valor": "7 hubs"
+      }
+     ]
     },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
@@ -102,7 +108,13 @@
       661,
       663
      ],
-     "nota": "Meta de cobertura das 4 macrorregiões"
+     "nota": "Meta de cobertura das 4 macrorregiões",
+     "metas": [
+      {
+       "rotulo": "macrorregiões cobertas",
+       "valor": "4 macrorregiões"
+      }
+     ]
     }
    }
   },
@@ -141,8 +153,8 @@
   {
    "id": "p6",
    "subtema": "Pesquisa científica e fomento",
-   "proposta": "Ampliar o incentivo e o financiamento à pesquisa científica aplicada voltada às demandas do setor produtivo e da sociedade",
-   "n_concorda": 3,
+   "proposta": "Incentivar a pesquisa científica aplicada.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
      "posicao": "concorda",
@@ -158,13 +170,6 @@
       710
      ],
      "nota": ""
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      1154
-     ],
-     "nota": "Pesquisa aplicada como serviço da rede de inovação"
     }
    }
   },
@@ -226,14 +231,20 @@
       713,
       717
      ],
-     "nota": "Cobertura dos 12 Territórios de Desenvolvimento"
+     "nota": "Cobertura dos 12 Territórios de Desenvolvimento",
+     "metas": [
+      {
+       "rotulo": "territórios atendidos",
+       "valor": "12 Territórios de Desenvolvimento"
+      }
+     ]
     }
    }
   },
   {
    "id": "p11",
    "subtema": "Startups e empreendedorismo inovador",
-   "proposta": "Apoiar startups e empresas de base tecnológica com incentivos, aceleração, mentoria e acesso a crédito e investidores",
+   "proposta": "Apoiar startups.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -308,7 +319,7 @@
   {
    "id": "p14",
    "subtema": "Formação e inclusão digital",
-   "proposta": "Qualificar mão de obra e formar talentos para a economia digital, conectando a formação tecnológica às demandas das empresas",
+   "proposta": "Qualificar mão de obra e formar talentos para a economia digital",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -362,7 +373,13 @@
      "blocos": [
       700
      ],
-     "nota": "28 microrregiões, programa CapacitIA"
+     "nota": "28 microrregiões, programa CapacitIA",
+     "metas": [
+      {
+       "rotulo": "turmas presenciais",
+       "valor": "em cada uma das 28 microrregiões"
+      }
+     ]
     }
    }
   },
@@ -493,6 +510,105 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p25",
+   "subtema": "Ambientes de inovação",
+   "proposta": "Fortalecer os parques tecnológicos e centros de inovação do estado, com incentivo a startups e empresas de base tecnológica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p26",
+   "subtema": "Ambientes de inovação",
+   "proposta": "Estruturar sete Hubs de Inovação voltados às vocações estratégicas do estado, promovendo pesquisa aplicada, empreendedorismo e inovação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      653,
+      658,
+      659
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p27",
+   "subtema": "Pesquisa científica e fomento",
+   "proposta": "Incentivar a pesquisa científica aplicada, junto ao apoio a startups, parques tecnológicos e à aproximação entre universidades, setor produtivo e governo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p28",
+   "subtema": "Startups e empreendedorismo inovador",
+   "proposta": "Apoiar startups lideradas por jovens com programas de aceleração, mentoria e crédito.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      883
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p29",
+   "subtema": "Formação e inclusão digital",
+   "proposta": "Formar mão de obra qualificada para a economia digital, com aproximação entre universidades, setor produtivo e governo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      185
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p30",
+   "subtema": "Formação e inclusão digital",
+   "proposta": "Formar 25 mil agentes comunitários digitais como multiplicadores de habilidades de autonomia digital em todos os territórios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      653,
+      693
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
   }
  ],
  "blocos": {

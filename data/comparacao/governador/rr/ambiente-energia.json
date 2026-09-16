@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-rr.json",
   "gerado_em": "2026-09-14T14:22:39Z",
-  "exportado_em": "2026-09-14T14:32:06Z"
+  "exportado_em": "2026-09-16T20:02:13Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Resíduos sólidos",
-   "proposta": "Encerrar os lixões e implantar destinação final ambientalmente adequada de resíduos sólidos",
+   "proposta": "Encerrar os lixões",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -86,14 +86,20 @@
       562,
       572
      ],
-     "nota": "Campanhas nos 15 municípios e redes municipais consolidadas"
+     "nota": "Campanhas nos 15 municípios e redes municipais consolidadas",
+     "metas": [
+      {
+       "rotulo": "municípios com coleta seletiva",
+       "valor": "todos os 15 municípios"
+      }
+     ]
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Resíduos sólidos",
-   "proposta": "Apoiar cooperativas de catadores com inclusão socioeconômica na cadeia da reciclagem",
+   "proposta": "Apoiar cooperativas de catadores",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -258,29 +264,6 @@
    }
   },
   {
-   "id": "p12",
-   "subtema": "Fiscalização, desmatamento e queimadas",
-   "proposta": "Fortalecer a fiscalização ambiental com monitoramento por satélite e sistemas de comando e controle",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      135
-     ],
-     "nota": "Monitoramento por satélite e presença territorial do órgão"
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      450,
-      451
-     ],
-     "nota": "Instrumentaliza o SIGGARR como ferramenta de comando e controle"
-    }
-   }
-  },
-  {
    "id": "p13",
    "subtema": "Fiscalização, desmatamento e queimadas",
    "proposta": "Combater o garimpo ilegal, a grilagem, a extração ilegal de madeira e a poluição por mercúrio",
@@ -298,7 +281,7 @@
   {
    "id": "p14",
    "subtema": "Fiscalização, desmatamento e queimadas",
-   "proposta": "Executar ações de prevenção e combate a queimadas por meio do plano estadual de prevenção e controle do desmatamento e queimadas, comitê específico e operação sazonal",
+   "proposta": "Executar ações de prevenção a queimadas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -505,6 +488,85 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p27",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Encerrar progressivamente os lixões e criar política de coleta seletiva, logística reversa, compostagem e cooperativas, com inclusão socioeconômica dos catadores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      137
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p28",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Apoiar catadores e cooperativas em campanhas estaduais de reciclagem e coleta seletiva nos 15 municípios, junto a escolas e órgãos públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      548
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p29",
+   "subtema": "Fiscalização, desmatamento e queimadas",
+   "proposta": "Fortalecer a fiscalização ambiental com monitoramento por satélite e combater garimpo ilegal, grilagem, extração ilegal de madeira e poluição por mercúrio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      135
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Fiscalização, desmatamento e queimadas",
+   "proposta": "Usar o Sistema de Informação Geográfica e Gestão Ambiental de Roraima como ferramenta de comando e controle ambiental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      450,
+      451
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p31",
+   "subtema": "Fiscalização, desmatamento e queimadas",
+   "proposta": "Prevenir queimadas por meio do Plano Estadual de Desenvolvimento de Baixo Carbono, com metas de redução do desmatamento, restauração e recuperação de áreas degradadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      134
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
   }
  ],
  "blocos": {

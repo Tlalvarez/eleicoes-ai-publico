@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-ba.json",
   "gerado_em": "2026-09-14T01:38:33Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T18:36:46Z"
  },
  "candidatos": [
   {
@@ -52,7 +52,13 @@
       404,
       407
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "linhas de transmissão",
+       "valor": "6.000 km de rede básica 230/500 kV"
+      }
+     ]
     },
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
@@ -401,7 +407,7 @@
    "id": "p21",
    "subtema": "Desmatamento, queimadas e restauração",
    "proposta": "Dar apoio permanente às brigadas de prevenção e combate a incêndios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
@@ -409,13 +415,6 @@
       3201
      ],
      "nota": "Brigadas municipais e voluntárias"
-    },
-    "governador-ba-ronaldo-mansur-50002532269": {
-     "posicao": "concorda",
-     "blocos": [
-      256
-     ],
-     "nota": "Ênfase em brigadas indígenas anti-incêndio"
     }
    }
   },
@@ -595,7 +594,7 @@
    "id": "p32",
    "subtema": "Clima, carbono e serviços ambientais",
    "proposta": "Adotar política estadual de enfrentamento e adaptação às mudanças climáticas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
@@ -604,13 +603,6 @@
       3182
      ],
      "nota": ""
-    },
-    "governador-ba-ronaldo-mansur-50002532269": {
-     "posicao": "concorda",
-     "blocos": [
-      256
-     ],
-     "nota": "Compromisso genérico, sem instrumento definido"
     }
    }
   },
@@ -664,7 +656,7 @@
   {
    "id": "p36",
    "subtema": "Clima, carbono e serviços ambientais",
-   "proposta": "Remunerar quem presta serviços ambientais, incluindo comunidades tradicionais, povos indígenas e quilombolas",
+   "proposta": "Criar mecanismos de reconhecimento de quem presta serviços ambientais, incluindo comunidades tradicionais",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
@@ -742,27 +734,26 @@
      "blocos": [
       3205
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "estratégia economia verde",
+       "valor": "horizonte 2035"
+      }
+     ]
     }
    }
   },
   {
    "id": "p41",
    "subtema": "Mineração",
-   "proposta": "Criar política estadual para minerais críticos e terras raras voltada ao beneficiamento e à industrialização no território baiano",
-   "n_concorda": 2,
+   "proposta": "Estruturar política estadual para minerais críticos e terras raras, com prioridade ao beneficiamento e à agregação de valor em território baiano.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
      "posicao": "concorda",
      "blocos": [
       385
-     ],
-     "nota": ""
-    },
-    "governador-ba-acm-neto-50002533190": {
-     "posicao": "concorda",
-     "blocos": [
-      1553
      ],
      "nota": ""
     }
@@ -877,7 +868,7 @@
   {
    "id": "p49",
    "subtema": "Biomas, unidades de conservação e biodiversidade",
-   "proposta": "Proteger e conservar os biomas do estado, com uso sustentável da biodiversidade",
+   "proposta": "Proteger e conservar biomas do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -1043,8 +1034,8 @@
   {
    "id": "p59",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Fortalecer a reciclagem e as cadeias produtivas de reaproveitamento de resíduos sólidos urbanos e industriais",
-   "n_concorda": 2,
+   "proposta": "Fortalecer a reciclagem e estimular cadeias produtivas de reaproveitamento de resíduos sólidos urbanos e industriais.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
      "posicao": "concorda",
@@ -1052,13 +1043,6 @@
       387
      ],
      "nota": "Complexo industrial de reciclagem e logística reversa"
-    },
-    "governador-ba-acm-neto-50002533190": {
-     "posicao": "concorda",
-     "blocos": [
-      3219
-     ],
-     "nota": "Via política estadual de economia circular"
     }
    }
   },
@@ -1183,6 +1167,70 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p68",
+   "subtema": "Clima, carbono e serviços ambientais",
+   "proposta": "Criar mecanismos de reconhecimento do serviço ambiental prestado por povos indígenas, quilombolas e comunidades tradicionais na preservação da biodiversidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      254
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p69",
+   "subtema": "Mineração",
+   "proposta": "Criar o Comitê de Minerais Críticos e de Transição Energética da Bahia, vinculado à SDE, para mapear a cadeia de valor de cada mineral estratégico e propor rotas de industrialização no estado, com resultados publicados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      1553
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p70",
+   "subtema": "Biomas, unidades de conservação e biodiversidade",
+   "proposta": "Proteger o Cerrado e a Caatinga baianos, com prioridade para nascentes, veredas, áreas de recarga hídrica, corredores ecológicos e remanescentes de vegetação nativa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      634
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p71",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Criar a Política Estadual de Economia Circular, com polo físico de pesquisa e inovação em resíduos sólidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      3219
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
   }
  ],
  "blocos": {
@@ -1466,10 +1514,6 @@
    "254": {
     "texto": "1. Propor medidas legislativas e administrativas que estabeleçam mecanismos de rastreabilidade de produtos, em respeito à devida diligência, para garantir que não sejam resultantes de conflitos territoriais, explorações ilegais de terras indígenas e áreas ilegalmente degradadas; 2.Reconhecer a contribuição dos povos indígenas, quilombolas e comunidades tradicionais na preservação da biodiversidade brasileira, criando mecanismos de reconhecimento pelo serviço ambiental prestado e incentivando iniciativas Nossa juventude merece respeito, garantia de emprego, segurança, alimentação e perspectiva. Pretendemos garantir na Bahia novas e mais oportunidades para a juventude, com acesso à educação e à cultura e geração de empregos de qualidade, além do direito à vida com dignidade e aos sonhos.",
     "pagina": 21
-   },
-   "256": {
-    "texto": "indígenas, como as brigadas indígenas anti-incêndio; 3.Especial atenção ambiental, as mudanças climáticas, cuidando de nossas riquezas naturais assim como com a produção e consumo responsável. 4.",
-    "pagina": 22
    },
    "257": {
     "texto": "Apoiar sistemas alimentares saudáveis e avanço na transição ecológica e energética, assim como a conservação, e o uso sustentável da biodiversidade dos biomas do estado. 5. Combate a milícias, grilagem e a qualquer organização que aja ao arrepio da lei, assim como ao desmatamento ilegal pugnando pela recomposição das áreas degradadas e pelo reflorestamento dos biomas.",

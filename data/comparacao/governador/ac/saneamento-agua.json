@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-ac.json",
   "gerado_em": "2026-09-14T09:49:57Z",
-  "exportado_em": "2026-09-14T10:22:19Z"
+  "exportado_em": "2026-09-16T21:44:39Z"
  },
  "candidatos": [
   {
@@ -114,7 +114,7 @@
   {
    "id": "p3",
    "subtema": "Água e esgoto",
-   "proposta": "Adotar soluções de saneamento adaptadas às realidades locais, de baixo custo operacional, para pequenos municípios e comunidades rurais, ribeirinhas e de difícil acesso",
+   "proposta": "Adotar soluções de saneamento adaptadas às diferentes realidades locais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
@@ -138,7 +138,7 @@
    "id": "p4",
    "subtema": "Drenagem e cheias",
    "proposta": "Ampliar os investimentos em drenagem urbana e manejo de águas pluviais para prevenir alagamentos, priorizando áreas vulneráveis",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
      "posicao": "concorda",
@@ -148,21 +148,6 @@
       389
      ],
      "nota": "Programa Estadual de Drenagem Urbana com galerias e redes pluviais"
-    },
-    "governador-ac-mailza-assis-10002544107": {
-     "posicao": "concorda",
-     "blocos": [
-      731,
-      742
-     ],
-     "nota": ""
-    },
-    "governador-ac-thor-dantas-10002550719": {
-     "posicao": "concorda",
-     "blocos": [
-      335
-     ],
-     "nota": "Prioriza macrodrenagem e fundos de vale"
     }
    }
   },
@@ -289,8 +274,8 @@
   {
    "id": "p11",
    "subtema": "Segurança hídrica e bacias",
-   "proposta": "Melhorar a gestão dos recursos hídricos e das bacias hidrográficas, garantindo segurança hídrica",
-   "n_concorda": 2,
+   "proposta": "Melhorar a gestão dos recursos hídricos e das bacias hidrográficas",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -298,15 +283,73 @@
       773
      ],
      "nota": ""
-    },
-    "governador-ac-thor-dantas-10002550719": {
+    }
+   }
+  },
+  {
+   "id": "p12",
+   "subtema": "Água e esgoto",
+   "proposta": "Incentivar soluções inovadoras e sustentáveis de abastecimento de água e esgotamento sanitário para comunidades rurais, ribeirinhas e localidades de difícil acesso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
      "posicao": "concorda",
      "blocos": [
-      328
+      341
      ],
      "nota": ""
     }
-   }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p13",
+   "subtema": "Drenagem e cheias",
+   "proposta": "Ampliar o acesso à drenagem urbana como parte da prioridade estratégica do saneamento básico, em parceria com os municípios e rumo à universalização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      731,
+      742
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p14",
+   "subtema": "Drenagem e cheias",
+   "proposta": "Priorizar obras de macrodrenagem, fundos de vale e recuperação de áreas degradadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      335
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p15",
+   "subtema": "Segurança hídrica e bacias",
+   "proposta": "Melhorar a gestão dos recursos hídricos e das bacias hidrográficas, em parceria com os governos federal e municipais, ampliando a rede de água, modernizando captação e tratamento e reduzindo perdas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      773
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
   }
  ],
  "blocos": {

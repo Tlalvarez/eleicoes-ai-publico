@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-ac.json",
   "gerado_em": "2026-09-14T10:05:47Z",
-  "exportado_em": "2026-09-14T10:22:19Z"
+  "exportado_em": "2026-09-16T21:44:39Z"
  },
  "candidatos": [
   {
@@ -288,7 +288,7 @@
   {
    "id": "p10",
    "subtema": "Inclusão produtiva e superação da pobreza",
-   "proposta": "Promover a inclusão produtiva, a qualificação profissional e a geração de renda das famílias em vulnerabilidade para superar a dependência de benefícios",
+   "proposta": "Promover a inclusão produtiva, a qualificação profissional e a geração de renda das famílias em situação de vulnerabilidade",
    "n_concorda": 4,
    "posicoes": {
     "governador-ac-tiao-bocalom-10002544015": {
@@ -374,15 +374,8 @@
    "id": "p14",
    "subtema": "Segurança alimentar",
    "proposta": "Ampliar ações de combate à fome e de acesso à alimentação adequada às famílias em insegurança alimentar",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ac-thor-dantas-10002550719": {
-     "posicao": "concorda",
-     "blocos": [
-      410
-     ],
-     "nota": "Integra segurança alimentar à superação da pobreza e à moradia"
-    },
     "governador-ac-alan-rick-10002532492": {
      "posicao": "concorda",
      "blocos": [
@@ -464,7 +457,7 @@
   {
    "id": "p19",
    "subtema": "Territorialização e descentralização dos serviços",
-   "proposta": "Descentralizar e interiorizar os serviços socioassistenciais, levando atendimento a todas as regiões e comunidades isoladas",
+   "proposta": "Descentralizar e interiorizar os serviços socioassistenciais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
@@ -731,6 +724,73 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p33",
+   "subtema": "Inclusão produtiva e superação da pobreza",
+   "proposta": "Integrar qualificação profissional, assistência social, cuidado, acessibilidade, moradia, segurança alimentar e oportunidades de trabalho digno e renda para famílias e grupos em situação de vulnerabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      265,
+      410
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p34",
+   "subtema": "Inclusão produtiva e superação da pobreza",
+   "proposta": "Promover a inclusão produtiva e a geração de renda das famílias vulneráveis por meio de ações integradas de assistência social, segurança alimentar e combate à fome.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      377,
+      417
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p35",
+   "subtema": "Territorialização e descentralização dos serviços",
+   "proposta": "Ampliar o cofinanciamento, o apoio técnico e a vigilância socioassistencial no interior, consolidando o SUAS e redes territorializadas de proteção.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      402,
+      409
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p36",
+   "subtema": "Territorialização e descentralização dos serviços",
+   "proposta": "Ampliar os serviços socioassistenciais especializados em todas as regionais do Estado, com oferta descentralizada, expansão da infraestrutura e integração da rede de proteção social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      412
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
   }
  ],
  "blocos": {

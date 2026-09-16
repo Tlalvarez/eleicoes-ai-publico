@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-sp.json",
   "gerado_em": "2026-09-14T19:48:13Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -35,7 +35,7 @@
   {
    "id": "p1",
    "subtema": "Inteligência artificial",
-   "proposta": "Posicionar o estado como polo de inteligência artificial, com infraestrutura, pesquisa e atração de investimentos do setor",
+   "proposta": "Posicionar o estado como polo de inteligência artificial, com infraestrutura e pesquisa no setor",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -114,8 +114,8 @@
   {
    "id": "p5",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Fomentar startups, empresas de tecnologia e centros privados de P&D no estado",
-   "n_concorda": 2,
+   "proposta": "Fomentar startups, empresas de tecnologia e centros privados de pesquisa e desenvolvimento no estado.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
@@ -124,13 +124,6 @@
       1359
      ],
      "nota": ""
-    },
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      219
-     ],
-     "nota": "Aposta no ecossistema de startups para disputar investimentos de IA"
     }
    }
   },
@@ -290,7 +283,7 @@
   {
    "id": "p13",
    "subtema": "Dados, soberania digital e governo",
-   "proposta": "Modernizar a gestão pública com serviços digitais, dados e tecnologia aplicados ao atendimento ao cidadão",
+   "proposta": "Aplicar tecnologia e dados na gestão pública para servir ao cidadão.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-tarcisio-250002541303": {
@@ -361,7 +354,7 @@
   {
    "id": "p17",
    "subtema": "Instituições de pesquisa e formação",
-   "proposta": "Formar talentos em escala nas áreas de tecnologia para sustentar a economia do conhecimento",
+   "proposta": "Formar talentos nas áreas de tecnologia para sustentar a economia do conhecimento",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -473,6 +466,73 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p24",
+   "subtema": "Inteligência artificial",
+   "proposta": "Criar infraestrutura digital estratégica estadual, com supercomputação e capacidade própria de treinar grandes modelos de inteligência artificial, e polos de GovTech e FinTech, tornando São Paulo referência mundial em pesquisa e inovação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1266,
+      1285,
+      1326
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Disputar investimentos ligados à inteligência artificial, incluindo data centers movidos a energia limpa, apoiando o ecossistema de startups com regras estáveis, ambientes de teste e formação de talentos em escala.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      219
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p26",
+   "subtema": "Dados, soberania digital e governo",
+   "proposta": "Assegurar a soberania do estado sobre seus dados e plataformas, com proteção da privacidade, regras públicas para o uso de inteligência artificial no governo e tecnologia contratada para servir ao cidadão, sem dependências caras e opacas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      281
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p27",
+   "subtema": "Instituições de pesquisa e formação",
+   "proposta": "Desenvolver, com as Fatecs e Etecs, formação técnica e tecnológica ajustada às necessidades de cada polo de inovação, integrando a formação de pessoas ao ciclo de pesquisa, desenvolvimento e produção.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1319,
+      1320
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
   }
  ],
  "blocos": {

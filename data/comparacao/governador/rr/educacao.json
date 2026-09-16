@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-rr.json",
   "gerado_em": "2026-09-14T14:14:11Z",
-  "exportado_em": "2026-09-14T14:32:06Z"
+  "exportado_em": "2026-09-16T20:02:13Z"
  },
  "candidatos": [
   {
@@ -76,20 +76,12 @@
    "id": "p2",
    "subtema": "Infraestrutura escolar",
    "proposta": "Climatizar as salas de aula da rede estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
      "blocos": [
       60
-     ],
-     "nota": ""
-    },
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      193,
-      196
      ],
      "nota": ""
     }
@@ -117,7 +109,7 @@
   {
    "id": "p4",
    "subtema": "Infraestrutura escolar",
-   "proposta": "Adotar plano de obras escolares com cronograma público e metas de infraestrutura vinculadas a diagnóstico oficial da rede",
+   "proposta": "Adotar plano de obras escolares com cronograma público.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -292,29 +284,6 @@
      "blocos": [
       281,
       297
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p13",
-   "subtema": "Professores e profissionais da educação",
-   "proposta": "Garantir plano de carreira e o pagamento das progressões e revisão das promoções funcionais",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      58
-     ],
-     "nota": ""
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      291,
-      321
      ],
      "nota": ""
     }
@@ -568,7 +537,7 @@
   {
    "id": "p26",
    "subtema": "Educação indígena e do campo",
-   "proposta": "Formar professores indígenas e ampliar o quadro docente nas comunidades",
+   "proposta": "Promover a formação de professores indígenas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -676,19 +645,12 @@
    "id": "p31",
    "subtema": "Permanência, frequência e alfabetização",
    "proposta": "Implementar políticas de permanência dos estudantes na escola",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
      "blocos": [
       67
-     ],
-     "nota": ""
-    },
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      190
      ],
      "nota": ""
     },
@@ -764,7 +726,7 @@
   {
    "id": "p36",
    "subtema": "Ensino superior e acesso",
-   "proposta": "Melhorar a estrutura e a qualidade acadêmica da Universidade Estadual de Roraima",
+   "proposta": "Melhorar a estrutura da Universidade Estadual de Roraima",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -855,15 +817,8 @@
    "id": "p41",
    "subtema": "Transporte escolar",
    "proposta": "Ampliar os trechos e rotas atendidas pelo transporte escolar, inclusive em comunidades indígenas e rurais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rr-rosi-aires-230002552060": {
-     "posicao": "concorda",
-     "blocos": [
-      66
-     ],
-     "nota": ""
-    },
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
      "blocos": [
@@ -1001,14 +956,20 @@
      "blocos": [
       188
      ],
-     "nota": "Anos finais 4,4→5,0; médio 3,8→4,5; iniciais 5,9→6,5 até 2029"
+     "nota": "Anos finais 4,4→5,0; médio 3,8→4,5; iniciais 5,9→6,5 até 2029",
+     "metas": [
+      {
+       "rotulo": "Ideb até 2029",
+       "valor": "anos finais 4,4→5,0; médio 3,8→4,5; iniciais 5,9→6,5"
+      }
+     ]
     }
    }
   },
   {
    "id": "p50",
    "subtema": "Qualidade e metas de aprendizagem",
-   "proposta": "Monitorar indicadores de aprendizagem de forma sistemática, por escola, município e modalidade de ensino",
+   "proposta": "Monitorar sistematicamente os indicadores de aprendizagem.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -1387,6 +1348,101 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p73",
+   "subtema": "Infraestrutura escolar",
+   "proposta": "Executar plano de construção e revitalização das escolas das sedes municipais e indígenas, com cronograma público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      320
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p74",
+   "subtema": "Professores e profissionais da educação",
+   "proposta": "Assegurar planos de carreira a professores e servidores da educação, com formação continuada, saúde mental e condições dignas de trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      58
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p75",
+   "subtema": "Professores e profissionais da educação",
+   "proposta": "Efetuar o pagamento das progressões e a revisão das promoções funcionais dos servidores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      291,
+      321
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p76",
+   "subtema": "Educação indígena e do campo",
+   "proposta": "Formar professores indígenas e apoiar projetos político-pedagógicos próprios, com línguas maternas, material bilíngue e infraestrutura adequada nas comunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      66
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p77",
+   "subtema": "Ensino superior e acesso",
+   "proposta": "Ampliar a UERR com novos campi no interior do estado e criar o Centro Indígena da UERR no Uiramutã, além de parceria com o Governo Federal para uma unidade federal da Universidade Indígena em Pacaraima.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      59
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p78",
+   "subtema": "Qualidade e metas de aprendizagem",
+   "proposta": "Monitorar em tempo real os indicadores de aprendizagem, com plataformas digitais e uso de tecnologia na gestão escolar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      312
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
   }
  ],
  "blocos": {

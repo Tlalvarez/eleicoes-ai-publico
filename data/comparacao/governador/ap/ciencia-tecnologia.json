@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-ap.json",
   "gerado_em": "2026-09-14T20:31:52Z",
-  "exportado_em": "2026-09-14T20:40:20Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -52,30 +52,14 @@
    "id": "p1",
    "subtema": "Parques tecnológicos e ecossistema de inovação",
    "proposta": "Implantar e equipar um parque tecnológico estadual como infraestrutura âncora de inovação",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ap-clecio-30002536311": {
-     "posicao": "concorda",
-     "blocos": [
-      133,
-      214
-     ],
-     "nota": "Parque Tecnológico do Amapá integrando universidades, centros de pesquisa, empresas e governo"
-    },
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
      "blocos": [
       983
      ],
      "nota": "Parque como âncora para abrigar centros de P&D e atrair investimento de base tecnológica"
-    },
-    "governador-ap-delegado-marcos-30002552017": {
-     "posicao": "concorda",
-     "blocos": [
-      429,
-      430
-     ],
-     "nota": "Parque de inovação integrando universidades, institutos, startups, empresas e escolas"
     }
    }
   },
@@ -302,7 +286,7 @@
    "id": "p14",
    "subtema": "Talentos e fixação de pesquisadores",
    "proposta": "Implementar políticas de formação e fixação de talentos qualificados (pesquisadores, engenheiros e técnicos) no Estado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ap-dr-furlan-30002530014": {
      "posicao": "concorda",
@@ -311,13 +295,6 @@
       1022
      ],
      "nota": "Explicitamente para reverter a fuga de capital intelectual para o Sudeste"
-    },
-    "governador-ap-clecio-30002536311": {
-     "posicao": "concorda",
-     "blocos": [
-      210
-     ],
-     "nota": "Programa de talentos para a nova economia"
     }
    }
   },
@@ -340,7 +317,7 @@
   {
    "id": "p16",
    "subtema": "Startups e empreendedorismo tecnológico",
-   "proposta": "Consolidar o Estado como polo de inovação da Amazônia, com ambiente favorável ao empreendedorismo tecnológico e à atração de investimentos",
+   "proposta": "Criar um ambiente favorável à inovação e à atração de investimentos no Estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -364,7 +341,7 @@
   {
    "id": "p17",
    "subtema": "Pesquisa aplicada e áreas prioritárias",
-   "proposta": "Fortalecer a pesquisa aplicada voltada às necessidades e vocações econômicas do Estado",
+   "proposta": "Fortalecer a pesquisa e o desenvolvimento tecnológico no Estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -389,6 +366,89 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p18",
+   "subtema": "Parques tecnológicos e ecossistema de inovação",
+   "proposta": "Implantar o Parque Tecnológico do Amapá, integrando universidades, centros de pesquisa, empresas, startups e governo para acelerar a inovação e atrair investimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      133,
+      214
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p19",
+   "subtema": "Parques tecnológicos e ecossistema de inovação",
+   "proposta": "Criar um parque de inovação que integre universidades, institutos, startups, empresas e escolas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      429,
+      430
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p20",
+   "subtema": "Startups e empreendedorismo tecnológico",
+   "proposta": "Expandir a infraestrutura de inovação do Estado e implantar o Parque Tecnológico como âncora, para abrigar centros de pesquisa e atrair investimentos de base tecnológica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      814,
+      983
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p21",
+   "subtema": "Pesquisa aplicada e áreas prioritárias",
+   "proposta": "Estruturar como política de governo um ecossistema de ciência e tecnologia voltado à energia, com pesquisa aplicada e software científico produzidos no Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      971
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p22",
+   "subtema": "Pesquisa aplicada e áreas prioritárias",
+   "proposta": "Apoiar projetos tecnológicos ligados às necessidades do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      431
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
   }
  ],
  "blocos": {
@@ -397,10 +457,6 @@
    "133": {
     "texto": "No próximo ciclo, esse avanço será ampliado com a implantação do Parque Tecnológico do Amapá, que integrará universidades, centros de pesquisa, empresas, startups e governo para acelerar a inovação, atrair investimentos e gerar empregos. A iniciativa reforçará o protagonismo do Estado na economia da floresta e no desenvolvimento de soluções tecnológicas capazes de diversificar a economia e ampliar as oportunidades para a população.",
     "pagina": 7
-   },
-   "210": {
-    "texto": "● Talentos para a nova economia",
-    "pagina": 13
    },
    "212": {
     "texto": "● Ecossistema de inovação",

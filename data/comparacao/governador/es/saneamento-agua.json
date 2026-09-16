@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-es.json",
   "gerado_em": "2026-09-14T09:15:50Z",
-  "exportado_em": "2026-09-14T09:58:51Z"
+  "exportado_em": "2026-09-16T21:29:10Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Universalização de água e esgoto",
-   "proposta": "Ampliar a cobertura de abastecimento de água potável e de esgotamento sanitário até a universalização dos serviços em todo o estado",
+   "proposta": "Ampliar a cobertura dos serviços de abastecimento de água e de esgotamento sanitário.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
@@ -83,7 +83,7 @@
   {
    "id": "p2",
    "subtema": "Segurança hídrica e barragens",
-   "proposta": "Implantar, ampliar e modernizar barragens e reservatórios para garantir disponibilidade de água em períodos de estiagem",
+   "proposta": "Ampliar barragens.",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
@@ -106,7 +106,7 @@
   {
    "id": "p3",
    "subtema": "Segurança hídrica e barragens",
-   "proposta": "Criar programa estadual permanente de infraestrutura e segurança hídrica, com carteira de investimentos em reservação e distribuição de água",
+   "proposta": "Criar programa estadual permanente de infraestrutura hídrica voltado à ampliação da reservação de água.",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
@@ -131,7 +131,7 @@
   {
    "id": "p4",
    "subtema": "Recuperação de nascentes e microbacias",
-   "proposta": "Priorizar a recuperação de nascentes, a conservação de água e solo e a ampliação da infiltração em regiões críticas",
+   "proposta": "Apoiar a recuperação e a preservação de nascentes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -164,7 +164,7 @@
   {
    "id": "p5",
    "subtema": "Infraestrutura hídrica rural",
-   "proposta": "Implantar política de infraestrutura hídrica e saneamento no meio rural, com pequenas obras de retenção de água (barraginhas, caixas secas) contra estiagem",
+   "proposta": "Implantar política de infraestrutura hídrica no meio rural, com pequenas obras de retenção de água contra a estiagem.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-helder-salomao-80002551833": {
@@ -286,7 +286,7 @@
    "id": "p10",
    "subtema": "Gestão de recursos hídricos",
    "proposta": "Fortalecer os comitês de bacias hidrográficas e a participação social na gestão das águas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
      "posicao": "concorda",
@@ -294,13 +294,6 @@
       1392
      ],
      "nota": ""
-    },
-    "governador-es-lorenzo-pazolini-80002552682": {
-     "posicao": "concorda",
-     "blocos": [
-      415
-     ],
-     "nota": "Integração dos comitês com AGERH, SEAG e Incaper"
     }
    }
   },
@@ -490,6 +483,56 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p23",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Expandir a infraestrutura de água e esgoto nos municípios capixabas, com gestão comprometida da Cesan, agência reguladora independente e apoio aos municípios não atendidos pela empresa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      401
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Segurança hídrica e barragens",
+   "proposta": "Estruturar programa permanente de reservação, ampliando barragens públicas e incentivando pequenas barragens rurais, com integração entre órgãos estaduais e comitês de bacia e prioridade para recuperação de nascentes, conservação do solo e infiltração em regiões críticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      415
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p26",
+   "subtema": "Recuperação de nascentes e microbacias",
+   "proposta": "Ampliar o ProBacias para novas regiões do Estado, com recuperação de nascentes, conservação de água e solo e saneamento rural nas microbacias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      1389,
+      1400,
+      1401
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
   }
  ],
  "blocos": {

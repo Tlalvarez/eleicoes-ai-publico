@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-es.json",
   "gerado_em": "2026-09-14T09:17:04Z",
-  "exportado_em": "2026-09-14T09:58:51Z"
+  "exportado_em": "2026-09-16T21:29:10Z"
  },
  "candidatos": [
   {
@@ -52,7 +52,7 @@
    "id": "p1",
    "subtema": "Habitação de interesse social",
    "proposta": "Produzir novas unidades habitacionais de interesse social para reduzir o déficit habitacional no estado",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
@@ -67,22 +67,6 @@
       433
      ],
      "nota": ""
-    },
-    "governador-es-ricardo-ferraco-80002552172": {
-     "posicao": "concorda",
-     "blocos": [
-      698,
-      700
-     ],
-     "nota": "Amplia o protagonismo estadual com municípios, União e iniciativa privada"
-    },
-    "governador-es-breno-barcelos-80002541012": {
-     "posicao": "concorda",
-     "blocos": [
-      163,
-      164
-     ],
-     "nota": "Novas moradias vinculadas ao programa de desfavelização"
     }
    }
   },
@@ -111,7 +95,7 @@
   {
    "id": "p3",
    "subtema": "Habitação de interesse social",
-   "proposta": "Financiar a política habitacional em parceria com o Governo Federal",
+   "proposta": "Atuar na política habitacional em parceria com o Governo Federal",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-helder-salomao-80002551833": {
@@ -236,7 +220,7 @@
   {
    "id": "p10",
    "subtema": "Regularização fundiária",
-   "proposta": "Promover a regularização fundiária de assentamentos informais, com entrega de títulos de propriedade às famílias",
+   "proposta": "Promover a regularização fundiária.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-breno-barcelos-80002541012": {
@@ -301,7 +285,7 @@
    "id": "p13",
    "subtema": "Planejamento urbano e apoio aos municípios",
    "proposta": "Prestar apoio técnico aos municípios e fomentar a cooperação intermunicipal no planejamento urbano e habitacional",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
@@ -317,13 +301,6 @@
       702
      ],
      "nota": "Apoio às prefeituras via Escritórios de Habitação"
-    },
-    "governador-es-breno-barcelos-80002541012": {
-     "posicao": "concorda",
-     "blocos": [
-      154
-     ],
-     "nota": "Planejamento conjunto com os municípios voltado ao fim das favelas"
     }
    }
   },
@@ -451,6 +428,56 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p22",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Assegurar que as novas habitações e as reformadas cumpram as normas técnicas de engenharia e que seus moradores obtenham título de propriedade por ampla regularização fundiária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-breno-barcelos-80002541012": {
+     "posicao": "concorda",
+     "blocos": [
+      163,
+      164
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p23",
+   "subtema": "Habitação de interesse social",
+   "proposta": "Ampliar o protagonismo estadual na política habitacional, em cooperação com municípios, Governo Federal e iniciativa privada, para reduzir o déficit habitacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      698
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p24",
+   "subtema": "Regularização fundiária",
+   "proposta": "Criar o Programa CidadES, com Escritórios de Habitação e Regularização Fundiária que articulem habitação, regularização fundiária e saneamento básico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      700,
+      701
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

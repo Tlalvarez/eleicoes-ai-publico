@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "direitos-sc.json",
   "gerado_em": "2026-09-14T18:23:14Z",
-  "exportado_em": "2026-09-14T18:27:49Z"
+  "exportado_em": "2026-09-16T20:04:59Z"
  },
  "candidatos": [
   {
@@ -384,8 +384,8 @@
   {
    "id": "p21",
    "subtema": "Pessoas com deficiência",
-   "proposta": "Promover a inclusão plena das pessoas com deficiência como política transversal das políticas públicas estaduais",
-   "n_concorda": 2,
+   "proposta": "Promover a inclusão plena das pessoas com deficiência em todas as políticas públicas estaduais.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
@@ -393,14 +393,6 @@
       445,
       1812,
       1814
-     ],
-     "nota": ""
-    },
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      751,
-      753
      ],
      "nota": ""
     }
@@ -495,7 +487,13 @@
      "blocos": [
       755
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "educação e saúde",
+       "valor": "100% públicas"
+      }
+     ]
     }
    }
   },
@@ -642,7 +640,7 @@
    "id": "p35",
    "subtema": "Igualdade racial",
    "proposta": "Fortalecer políticas de promoção da igualdade racial e de combate à discriminação",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
@@ -651,15 +649,6 @@
       1761,
       1763,
       1877
-     ],
-     "nota": ""
-    },
-    "governador-sc-professor-marcus-sodre-240002541913": {
-     "posicao": "concorda",
-     "blocos": [
-      461,
-      490,
-      494
      ],
      "nota": ""
     }
@@ -1048,6 +1037,23 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p59",
+   "subtema": "Pessoas com deficiência",
+   "proposta": "Garantir verbas e projetos de acessibilidade para que pessoas com deficiência usem com segurança e autonomia espaços urbanos, edificações, transportes e meios de comunicação, conforme a legislação vigente e as reivindicações do setor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-professor-marcus-sodre-240002541913": {
+     "posicao": "concorda",
+     "blocos": [
+      751,
+      753
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
   }
  ],
  "blocos": {
@@ -1473,10 +1479,6 @@
   "governador-sc-joao-rodrigues-240002551001": {},
   "governador-sc-marcelo-brigadeiro-240002544118": {},
   "governador-sc-professor-marcus-sodre-240002541913": {
-   "461": {
-    "texto": "Os efeitos da crise econômica, das políticas de ajuste fiscal e do aumento da violência atingem mais gravemente as mulheres, negras e negros, indígenas, LGBTs e imigrantes pobres. Por isso defendemos:",
-    "pagina": 28
-   },
    "465": {
     "texto": "Salário igual para trabalho igual;",
     "pagina": 28
@@ -1499,10 +1501,6 @@
    },
    "484": {
     "texto": "Licença paternidade de 45 dias;",
-    "pagina": 29
-   },
-   "490": {
-    "texto": "NEGRAS E NEGROS.",
     "pagina": 29
    },
    "494": {

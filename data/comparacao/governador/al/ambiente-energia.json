@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-al.json",
   "gerado_em": "2026-09-14T09:20:25Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -406,7 +406,7 @@
   {
    "id": "p18",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Estimular a expansão das fontes renováveis no estado com carteira de projetos e atração de investimentos privados",
+   "proposta": "Estimular a expansão das fontes renováveis no estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -456,7 +456,13 @@
       785,
       786
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "plano de transição energética",
+       "valor": "Alagoas 2035"
+      }
+     ]
     }
    }
   },
@@ -615,7 +621,13 @@
       718,
       719
      ],
-     "nota": "Pacto Alagoas Sustentável 2035"
+     "nota": "Pacto Alagoas Sustentável 2035",
+     "metas": [
+      {
+       "rotulo": "pacto de participação permanente",
+       "valor": "Alagoas Sustentável 2035"
+      }
+     ]
     }
    }
   },
@@ -674,7 +686,7 @@
    "id": "p33",
    "subtema": "Rastreabilidade e economia de baixo carbono",
    "proposta": "Fomentar bioeconomia e empregos verdes como fonte de renda a partir da conservação",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-jhc-20002553350": {
      "posicao": "concorda",
@@ -682,16 +694,24 @@
       434
      ],
      "nota": ""
-    },
-    "governador-al-renan-filho-20002553745": {
-     "posicao": "concorda",
-     "blocos": [
-      769,
-      771
-     ],
-     "nota": "Via pagamento por serviços ambientais e valorização de estoques de carbono"
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Expandir as fontes renováveis no estado por meio de energia solar para pequenos produtores, biodigestores no Canal do Sertão e atração de fabricantes de componentes fotovoltaicos e de sistemas de armazenamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      404
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
   }
  ],
  "blocos": {

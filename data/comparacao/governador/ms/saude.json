@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-ms.json",
   "gerado_em": "2026-09-14T14:47:18Z",
-  "exportado_em": "2026-09-14T23:10:51Z"
+  "exportado_em": "2026-09-16T19:47:43Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Descentralizar a rede estadual de saúde, fortalecendo os hospitais regionais e a média e alta complexidade em cada região para reduzir deslocamentos de pacientes",
+   "proposta": "Descentralizar a rede estadual de saúde, fortalecendo os hospitais regionais.",
    "n_concorda": 6,
    "posicoes": {
     "governador-ms-lucien-rezende-120002532257": {
@@ -127,7 +127,7 @@
   {
    "id": "p2",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Garantir hospitais regionais funcionando 24 horas, com urgência, internação, diagnóstico, cirurgias e especialidades",
+   "proposta": "Garantir hospitais regionais funcionando 24 horas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -151,7 +151,7 @@
   {
    "id": "p3",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Construir novos hospitais regionais em regiões hoje descobertas",
+   "proposta": "Construir novos hospitais regionais",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
@@ -192,7 +192,7 @@
   {
    "id": "p5",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Ampliar leitos hospitalares e de UTI no interior do estado",
+   "proposta": "Ampliar leitos hospitalares no interior do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -246,7 +246,13 @@
       1153,
       1427
      ],
-     "nota": "Meta de 10 a 15 unidades reativadas nos 100 dias"
+     "nota": "Meta de 10 a 15 unidades reativadas nos 100 dias",
+     "metas": [
+      {
+       "rotulo": "unidades reativadas",
+       "valor": "10-15 unidades, ~R$50-120mi/ano"
+      }
+     ]
     }
    }
   },
@@ -265,14 +271,20 @@
       1152,
       1426
      ],
-     "nota": "Quick-win de 100 dias, com renegociação da dívida legada"
+     "nota": "Quick-win de 100 dias, com renegociação da dívida legada",
+     "metas": [
+      {
+       "rotulo": "reequilíbrio de hospitais-âncora",
+       "valor": "~R$150-210mi/ano, Fase 1"
+      }
+     ]
     }
    }
   },
   {
    "id": "p9",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Ampliar o acesso a consultas, exames e procedimentos especializados fora da capital",
+   "proposta": "Ampliar o acesso a consultas e exames com especialistas",
    "n_concorda": 6,
    "posicoes": {
     "governador-ms-lucien-rezende-120002532257": {
@@ -377,14 +389,20 @@
      "blocos": [
       1435
      ],
-     "nota": "Fase 3, financiado por Novo PAC/crédito"
+     "nota": "Fase 3, financiado por Novo PAC/crédito",
+     "metas": [
+      {
+       "rotulo": "aceleradores lineares no interior",
+       "valor": "1-2 aceleradores"
+      }
+     ]
     }
    }
   },
   {
    "id": "p14",
    "subtema": "Filas e regulação",
-   "proposta": "Reduzir as filas de espera por consultas, exames e cirurgias",
+   "proposta": "Reduzir as filas de espera na saúde",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-lucien-rezende-120002532257": {
@@ -449,7 +467,7 @@
   {
    "id": "p17",
    "subtema": "Filas e regulação",
-   "proposta": "Tornar a regulação estadual transparente, com critérios objetivos, prazos e rastreabilidade das alterações de prioridade",
+   "proposta": "Tornar a regulação estadual transparente.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -577,7 +595,7 @@
    "id": "p23",
    "subtema": "Profissionais da saúde",
    "proposta": "Fixar médicos e profissionais de saúde em regiões de difícil provimento e no interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
@@ -586,14 +604,6 @@
       389
      ],
      "nota": ""
-    },
-    "governador-ms-economista-renato-gomes-120002549681": {
-     "posicao": "concorda",
-     "blocos": [
-      369,
-      378
-     ],
-     "nota": "Transparência mensal do número de médicos fixados"
     }
    }
   },
@@ -662,7 +672,7 @@
   {
    "id": "p28",
    "subtema": "Vigilância, prevenção e promoção",
-   "proposta": "Fortalecer e modernizar as ações de vigilância epidemiológica e sanitária no estado",
+   "proposta": "Fortalecer as ações de vigilância epidemiológica no estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -770,16 +780,8 @@
    "id": "p34",
    "subtema": "Gestão pública e contratos",
    "proposta": "Retomar para o Estado a gestão direta dos hospitais regionais hoje entregues a entidades privadas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      40,
-      41
-     ],
-     "nota": "Hospitais 100% públicos, sob controle direto do Estado"
-    },
     "governador-ms-fabio-trad-120002539834": {
      "posicao": "concorda",
      "blocos": [
@@ -792,7 +794,7 @@
   {
    "id": "p35",
    "subtema": "Gestão pública e contratos",
-   "proposta": "Auditar e rever os contratos de terceirização com Organizações Sociais e PPPs na saúde estadual",
+   "proposta": "Auditar os contratos de PPPs na saúde estadual",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-delcidio-amaral-120002552155": {
@@ -880,8 +882,8 @@
   {
    "id": "p40",
    "subtema": "Saúde digital e gestão por resultados",
-   "proposta": "Expandir a telessaúde e a telemedicina para aproximar especialidades do interior",
-   "n_concorda": 2,
+   "proposta": "Ampliar a telessaúde e a telemedicina para aproximar especialidades médicas da população do interior.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -889,13 +891,6 @@
       624
      ],
      "nota": "Telessaúde integrada à regulação"
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      280
-     ],
-     "nota": "Expansão em todas as regiões, dando continuidade ao programa atual"
     }
    }
   },
@@ -932,7 +927,7 @@
   {
    "id": "p43",
    "subtema": "Saúde digital e gestão por resultados",
-   "proposta": "Adotar gestão por desempenho na rede, com indicadores públicos de produção, ocupação de leitos, tempo de espera e resolutividade",
+   "proposta": "Adotar indicadores de desempenho dos serviços de saúde, incluindo a ocupação de leitos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -1036,7 +1031,13 @@
       1154,
       1428
      ],
-     "nota": "Cota estadual em modelo tripartite"
+     "nota": "Cota estadual em modelo tripartite",
+     "metas": [
+      {
+       "rotulo": "cofinanciamento de UPAs",
+       "valor": "~R$60-120mi/ano, Fase 1"
+      }
+     ]
     }
    }
   },
@@ -1078,7 +1079,7 @@
   {
    "id": "p51",
    "subtema": "Deficiência, autismo e primeira infância",
-   "proposta": "Fortalecer a rede de atendimento a pessoas com autismo e com deficiência, com centros de referência e continuidade do cuidado também para adultos e idosos",
+   "proposta": "Fortalecer a rede de atendimento a pessoas com autismo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -1199,28 +1200,6 @@
    }
   },
   {
-   "id": "p58",
-   "subtema": "Urgência e trauma",
-   "proposta": "Tratar as violências e o trânsito violento como problema de saúde pública, com prevenção orientada por dados",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      34
-     ],
-     "nota": "Inclui violência física, psicológica e sexual"
-    },
-    "governador-ms-joao-henrique-catan-120002552191": {
-     "posicao": "concorda",
-     "blocos": [
-      628
-     ],
-     "nota": "Integração entre saúde, segurança e infraestrutura nos pontos de maior risco"
-    }
-   }
-  },
-  {
    "id": "p59",
    "subtema": "Urgência e trauma",
    "proposta": "Criar rede regional de trauma e proteger a capacidade cirúrgica eletiva diante das emergências",
@@ -1270,7 +1249,13 @@
       404,
       406
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "aplicação em saúde",
+       "valor": "de 12% para 18-20%, +2 pts/ano"
+      }
+     ]
     }
    }
   },
@@ -1293,7 +1278,13 @@
       1457,
       1798
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "recursos adicionais em saúde",
+       "valor": "+R$1,5-2,3bi/ano em 4 anos"
+      }
+     ]
     }
    }
   },
@@ -1315,8 +1306,8 @@
   {
    "id": "p64",
    "subtema": "Regionalização e rede hospitalar",
-   "proposta": "Ampliar a oferta de leitos para o equivalente a cerca de 3 leitos por mil habitantes, construindo 2,5/mil, com cerca de 1.000 novos leitos no interior e cerca de 100 leitos de UTI em polos como Dourados, Corumbá/Pantanal e Costa Leste",
-   "n_concorda": 4,
+   "proposta": "Ampliar a oferta de leitos hospitalares no interior do estado.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -1335,14 +1326,6 @@
       379
      ],
      "nota": "Propõe novos hospitais regionais e ampliação de leitos/serviços de média e alta complexidade no interior"
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      37,
-      280
-     ],
-     "nota": "Amplia leitos via PPP do Hospital Regional (362→577), implanta Hospital Regional do Pantanal e fortalece média complexidade regional."
     },
     "governador-ms-economista-renato-gomes-120002549681": {
      "posicao": "concorda",
@@ -1414,6 +1397,292 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p69",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Consolidar a regionalização e a integração da rede estadual de saúde, fortalecendo os hospitais de média complexidade como base da assistência regional e ampliando o acesso a consultas, exames e procedimentos especializados em todas as regiões.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p70",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Implantar hospitais regionais 24 horas de alta complexidade, de forma regionalizada, com fixação de médicos no interior e ampliação de leitos do SUS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      373,
+      378,
+      1436
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "leitos SUS",
+       "valor": "2,1 → 3,0/mil hab"
+      }
+     ]
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p71",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Implantar e operacionalizar o Hospital Regional do Pantanal, fortalecendo os hospitais de média complexidade na assistência regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p73",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Ampliar o acesso a exames e cirurgias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      38
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p75",
+   "subtema": "Filas e regulação",
+   "proposta": "Reduzir as filas e tornar o atendimento mais rápido.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      36,
+      37
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p76",
+   "subtema": "Filas e regulação",
+   "proposta": "Garantir rastreabilidade da regulação, com registro e justificativa das alterações de prioridade e da situação do paciente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      603
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p77",
+   "subtema": "Filas e regulação",
+   "proposta": "Tornar a regulação estadual transparente, com prazo legal e avanço da fila por critério definido.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      378,
+      424
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p78",
+   "subtema": "Profissionais da saúde",
+   "proposta": "Criar programa de fixação de médicos no interior, com bolsa e residência, levando média e alta complexidade às regiões interioranas e divulgando mensalmente o número de médicos fixados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      369,
+      378
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p79",
+   "subtema": "Vigilância, prevenção e promoção",
+   "proposta": "Adotar prevenção orientada por dados, com foco em doenças crônicas, saúde da mulher e da criança, vacinação e vigilância epidemiológica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      625
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p80",
+   "subtema": "Gestão pública e contratos",
+   "proposta": "Realizar auditoria transparente das PPPs, com prioridade para o interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      434
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p82",
+   "subtema": "Saúde digital e gestão por resultados",
+   "proposta": "Adotar gestão por desempenho na rede, com indicadores de produção, ocupação de leitos, tempo de permanência, qualidade e resolutividade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      595
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p83",
+   "subtema": "Saúde digital e gestão por resultados",
+   "proposta": "Divulgar mensalmente, com metas públicas, indicadores de tempo de espera, leitos abertos, taxa de ocupação e médicos fixados no interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      378,
+      389
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p84",
+   "subtema": "Deficiência, autismo e primeira infância",
+   "proposta": "Organizar e implantar, em cidades-polo e na Capital, centros de referência em fisioterapia, terapia ocupacional e atendimento a pessoas com autismo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      382
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
+  },
+  {
+   "id": "p85",
+   "subtema": "Urgência e trauma",
+   "proposta": "Tratar as violências física, psicológica e sexual e o trânsito violento como graves problemas de saúde pública, e não apenas de polícia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-delcidio-amaral-120002552155": {
+     "posicao": "concorda",
+     "blocos": [
+      34
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p86",
+   "subtema": "Urgência e trauma",
+   "proposta": "Prevenir acidentes com base em dados, integrando saúde, segurança e infraestrutura para agir nos pontos e comportamentos de maior risco.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      628
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p87",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Ampliar a capacidade hospitalar regional, com mais leitos, exames e especialistas nas áreas com vazios assistenciais, e manter hospitais regionais em funcionamento 24 horas para urgência, internação, diagnóstico e cirurgias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      593,
+      594
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p64"
+  },
+  {
+   "id": "p88",
+   "subtema": "Regionalização e rede hospitalar",
+   "proposta": "Construir hospitais regionais em Corumbá, Naviraí e Jardim e fortalecer os de Dourados, Três Lagoas, Ponta Porã, Nova Andradina e Coxim, aumentando leitos e serviços de média e alta complexidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-fabio-trad-120002539834": {
+     "posicao": "concorda",
+     "blocos": [
+      376,
+      377,
+      378,
+      379
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p64"
   }
  ],
  "blocos": {
@@ -1714,10 +1983,6 @@
    }
   },
   "governador-ms-eduardo-riedel-120002536582": {
-   "37": {
-    "texto": "A saúde em Mato Grosso do Sul passou por uma reorganização estrutural. A Nova Arquitetura da Saúde reorganiza o sistema em camadas integradas: o ecossistema de atendimento pretende funcionar a partir de uma atenção primária, porta de entrada do sistema, mais eficiente e homogênea nos 79 municípios, com cinturões de média complexidade e oferta de especialidades regionalizadas, complementados por hospitais de alta complexidade modernizados e plataforma digital de regulação. O Hospital Regional de MS avança via PPP, ampliando de 362 para 577 leitos. A Telessaúde levou consultas especializadas ao interior sem exigir deslocamento do paciente.",
-    "pagina": 5
-   },
    "280": {
     "texto": "•Consolidar a regionalização e integração da rede estadual de saúde. •Implantar e operacionalizar o Hospital Regional do Pantanal. •Fortalecer os hospitais de média complexidade como elemento estruturante da assistência regional. •Implantar modelo integrado de regulação estadual em articulação com os municípios. •Expandir a saúde digital, com suas diferentes modalidades, em todas as regiões do Estado. •Ampliar o acesso às consultas, exames e procedimentos especializados. •Fortalecer as ações de vigilância epidemiológica, sanitária e ambiental. •Aprimorar a capacidade estadual de resposta a emergências em saúde pública. •Integrar dados e inteligência em saúde para qualificar a gestão e o planejamento.",
     "pagina": 15

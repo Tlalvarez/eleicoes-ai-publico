@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "direitos-pr.json",
   "gerado_em": "2026-09-14T05:52:50Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "exportado_em": "2026-09-16T21:46:21Z"
  },
  "candidatos": [
   {
@@ -108,7 +108,7 @@
   {
    "id": "p3",
    "subtema": "Mulheres",
-   "proposta": "Criar centros integrados de atendimento à mulher em rede estadual, reunindo proteção, orientação, qualificação e crédito em um mesmo espaço",
+   "proposta": "Criar centros integrados de atendimento à mulher.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -220,7 +220,7 @@
    "id": "p9",
    "subtema": "Pessoas com deficiência",
    "proposta": "Ampliar a oferta de serviços especializados de reabilitação e o fornecimento de órteses, próteses e tecnologia assistiva às pessoas com deficiência",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
      "posicao": "concorda",
@@ -228,13 +228,6 @@
       185
      ],
      "nota": "Inclui cofinanciamento da saúde especializada"
-    },
-    "governador-pr-sergio-moro-160002540833": {
-     "posicao": "concorda",
-     "blocos": [
-      731
-     ],
-     "nota": ""
     },
     "governador-pr-sandro-alex-160002549553": {
      "posicao": "concorda",
@@ -371,7 +364,7 @@
    "id": "p17",
    "subtema": "Pessoa idosa e cuidado",
    "proposta": "Estruturar rede estadual de cuidados de longa duração à pessoa idosa, com atenção domiciliar, centros-dia e proteção contra violência",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
      "posicao": "concorda",
@@ -379,21 +372,13 @@
       190
      ],
      "nota": ""
-    },
-    "governador-pr-sandro-alex-160002549553": {
-     "posicao": "concorda",
-     "blocos": [
-      3925,
-      3927
-     ],
-     "nota": "Política Paraná Longevo e moradia adaptada Viver Mais"
     }
    }
   },
   {
    "id": "p18",
    "subtema": "Pessoa idosa e cuidado",
-   "proposta": "Criar programa de apoio aos cuidadores familiares, com orientação, apoio psicológico e períodos de descanso",
+   "proposta": "Criar apoio aos cuidadores familiares.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -694,6 +679,71 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p36",
+   "subtema": "Mulheres",
+   "proposta": "Criar centros integrados de atendimento à mulher inspirados na Casa da Mulher Brasileira, com reformulação da Secretaria e implementação do pacto contra o feminicídio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      187
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p37",
+   "subtema": "Pessoa idosa e cuidado",
+   "proposta": "Expandir a moradia adaptada do Condomínio do Idoso (Viver Mais) e criar centros intergeracionais, com saúde especializada e cuidado contínuo pela política Paraná Longevo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      3925,
+      3927
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p38",
+   "subtema": "Pessoa idosa e cuidado",
+   "proposta": "Apoiar os cuidadores como parte de uma rede de cuidados de longa duração para a pessoa idosa, com atenção domiciliar e centros-dia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      190
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p39",
+   "subtema": "Pessoa idosa e cuidado",
+   "proposta": "Implementar ações de apoio aos cuidadores de pessoas com deficiência, com expansão dos Centros-Dia e fortalecimento da rede socioassistencial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      731
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
   }
  ],
  "blocos": {

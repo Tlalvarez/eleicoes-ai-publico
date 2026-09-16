@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-ma.json",
   "gerado_em": "2026-09-14T21:55:23Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Patrimônio histórico e cultural",
-   "proposta": "Recuperar, conservar e valorizar bens do patrimônio histórico e arquitetônico, integrando-os a usos culturais, turísticos e econômicos",
+   "proposta": "Recuperar e conservar bens do patrimônio histórico e arquitetônico.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -91,7 +91,7 @@
   {
    "id": "p2",
    "subtema": "Patrimônio histórico e cultural",
-   "proposta": "Ampliar investimentos na conservação e revitalização do Centro Histórico de São Luís",
+   "proposta": "Promover a conservação e a revitalização do Centro Histórico de São Luís",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -184,7 +184,7 @@
   {
    "id": "p7",
    "subtema": "Fomento cultural e economia criativa",
-   "proposta": "Fortalecer a cultura e a economia criativa como vetor de desenvolvimento econômico, trabalho e renda",
+   "proposta": "Fortalecer a cultura e a economia criativa como fonte de trabalho e renda",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -289,7 +289,7 @@
   {
    "id": "p12",
    "subtema": "Esporte e lazer",
-   "proposta": "Implantar e modernizar espaços e equipamentos esportivos nas diferentes regiões e municípios do estado",
+   "proposta": "Implantar espaços esportivos",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -463,7 +463,7 @@
   {
    "id": "p22",
    "subtema": "Festas e tradições populares",
-   "proposta": "Apoiar manifestações culturais e festas tradicionais maranhenses, fortalecendo sua realização e circulação",
+   "proposta": "Apoiar manifestações culturais maranhenses",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -567,6 +567,90 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p28",
+   "subtema": "Patrimônio histórico e cultural",
+   "proposta": "Ampliar, em parceria com a iniciativa privada e com os governos federal e municipal, os investimentos na conservação e revitalização dos centros históricos de São Luís e de Alcântara.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      366
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p29",
+   "subtema": "Patrimônio histórico e cultural",
+   "proposta": "Recuperar o Centro Histórico de São Luís como patrimônio vivo, associando restauração, ocupação econômica compatível (moradia, cultura, turismo, comércio e serviços) e obrigação permanente de conservação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      847,
+      880,
+      881
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p30",
+   "subtema": "Fomento cultural e economia criativa",
+   "proposta": "Gerar oportunidades para artistas, grupos culturais e trabalhadores da economia criativa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      325,
+      327
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p31",
+   "subtema": "Esporte e lazer",
+   "proposta": "Implantar centros de prática esportiva com quadra coberta, em parceria com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      382
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p32",
+   "subtema": "Festas e tradições populares",
+   "proposta": "Assegurar a salvaguarda do patrimônio imaterial, com inventário e difusão das manifestações culturais e dos saberes tradicionais maranhenses, e criar apoio financeiro permanente a fazedores de cultura e grupos artísticos tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      360,
+      361
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
   }
  ],
  "blocos": {

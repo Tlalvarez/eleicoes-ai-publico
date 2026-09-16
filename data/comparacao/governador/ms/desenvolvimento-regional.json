@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-ms.json",
   "gerado_em": "2026-09-14T15:25:39Z",
-  "exportado_em": "2026-09-14T15:27:03Z"
+  "exportado_em": "2026-09-16T19:47:43Z"
  },
  "candidatos": [
   {
@@ -114,7 +114,7 @@
   {
    "id": "p3",
    "subtema": "Desigualdades regionais e interiorização",
-   "proposta": "Agregar valor à produção no próprio território onde a riqueza é gerada, para que ela seja retida nos municípios produtores.",
+   "proposta": "Agregar valor à produção.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-economista-renato-gomes-120002549681": {
@@ -166,7 +166,13 @@
       955,
       968
      ],
-     "nota": "Define 9 regiões com prioridades específicas cada"
+     "nota": "Define 9 regiões com prioridades específicas cada",
+     "metas": [
+      {
+       "rotulo": "regiões com missão própria",
+       "valor": "9 regiões, 9 missões"
+      }
+     ]
     }
    }
   },
@@ -413,15 +419,8 @@
    "id": "p20",
    "subtema": "Regiões específicas e fronteira",
    "proposta": "Completar as ligações rodoviárias entre polos regionais, com pavimentações estratégicas e pontes definitivas, para dar confiabilidade à produção, ao deslocamento das pessoas e ao acesso regional aos serviços.",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ms-delcidio-amaral-120002552155": {
-     "posicao": "concorda",
-     "blocos": [
-      293
-     ],
-     "nota": "Prevê investimentos em acessos asfálticos e sinalização para integrar municípios de menor porte."
-    },
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
      "blocos": [
@@ -429,16 +428,24 @@
       958
      ],
      "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      56,
-      57
-     ],
-     "nota": "MS Ativo prevê pavimentação, recapeamento e obras viárias estruturantes nos 79 municípios."
     }
    }
+  },
+  {
+   "id": "p21",
+   "subtema": "Desigualdades regionais e interiorização",
+   "proposta": "Ampliar a industrialização, o valor agregado, a inovação e o emprego qualificado na região, aproveitando sua força produtiva e acadêmica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      951
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
   }
  ],
  "blocos": {
@@ -458,16 +465,7 @@
     "pagina": 42
    }
   },
-  "governador-ms-eduardo-riedel-120002536582": {
-   "56": {
-    "texto": "Outro marco desse período foi a consolidação do programa MS Ativo, que fortaleceu o municipalismo como estratégia de desenvolvimento regional. O MS Ativo 1 soma R$ 1,5 bilhão em obras finalizadas, em execução e com projetos em análise na AGESUL; o MS Ativo 2 projeta R$ 995 milhões, contemplando as 79 cidades com pavimentação, recapeamento, drenagem e obras estruturantes. Somados, os investimentos do MS Ativo chegam a R$ 3 bilhões, consolidando um novo modelo de cooperação entre Estado e municípios e garantindo que o desenvolvimento chegue de forma equilibrada a todas as regiões de Mato Grosso do Sul. Além das obras viárias, a Agesul acompanha aproximadamente R$ 763 milhões em obras civis nas áreas de saúde, segurança pública, esporte, cultura, lazer e cidadania, ampliando a capacidade de prestação de serviços públicos à população.",
-    "pagina": 7
-   },
-   "57": {
-    "texto": "O programa venceu o Prêmio Excelência em Competitividade 2025 do Centro de Liderança Pública (CLP). A lógica é invertida: cada obra é definida em parceria com o prefeito e vereadores, não imposta pelo Estado.",
-    "pagina": 7
-   }
-  },
+  "governador-ms-eduardo-riedel-120002536582": {},
   "governador-ms-fabio-trad-120002539834": {
    "91": {
     "texto": "• Desenvolvimento regional: redução das desigualdades entre capital e interior, com políticas territorializadas;",

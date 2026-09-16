@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-pa.json",
   "gerado_em": "2026-09-14T03:28:50Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Filas e regulação",
-   "proposta": "Reduzir as filas de consultas especializadas, exames e cirurgias, ampliando a capacidade de atendimento da rede pública",
+   "proposta": "Reduzir as filas de consultas especializadas, exames e cirurgias",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -146,17 +146,9 @@
   {
    "id": "p5",
    "subtema": "Atenção especializada e rede regionalizada",
-   "proposta": "Fortalecer a regionalização da saúde e consolidar uma rede estadual integrada, com hospitais regionais estruturados",
-   "n_concorda": 3,
+   "proposta": "Fortalecer a regionalização da saúde no estado.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      660,
-      661
-     ],
-     "nota": ""
-    },
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
      "blocos": [
@@ -203,7 +195,7 @@
   {
    "id": "p7",
    "subtema": "Atenção especializada e rede regionalizada",
-   "proposta": "Interiorizar a média e alta complexidade para reduzir o deslocamento de pacientes até Belém",
+   "proposta": "Interiorizar o atendimento especializado em saúde no Estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
@@ -226,7 +218,7 @@
    "id": "p8",
    "subtema": "Atenção especializada e rede regionalizada",
    "proposta": "Implantar e concluir novas policlínicas estaduais no interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -234,13 +226,6 @@
       154
      ],
      "nota": "Policlínicas no Xingu, Marajó e Tapajós"
-    },
-    "governador-pa-dr-daniel-140002549930": {
-     "posicao": "concorda",
-     "blocos": [
-      753
-     ],
-     "nota": ""
     }
    }
   },
@@ -248,7 +233,7 @@
    "id": "p9",
    "subtema": "Atenção especializada e rede regionalizada",
    "proposta": "Construir novos hospitais estaduais e regionais em municípios definidos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -263,13 +248,6 @@
       146
      ],
      "nota": "Lista nominal: Hospital dos Olhos, do Coração, Câncer Infantil, regionais"
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      660
-     ],
-     "nota": "Expansão genérica da rede estadual de hospitais públicos"
     }
    }
   },
@@ -286,7 +264,13 @@
       147,
       148
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "hospitais e unidades reformados",
+       "valor": "20"
+      }
+     ]
     },
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
@@ -378,7 +362,7 @@
   {
    "id": "p16",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Combater prioritariamente a mortalidade materna e infantil",
+   "proposta": "Combater a mortalidade materna e infantil.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -487,7 +471,13 @@
       145,
       427
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "novos Hospitais da Mulher",
+       "valor": "2"
+      }
+     ]
     }
    }
   },
@@ -555,8 +545,8 @@
   {
    "id": "p23",
    "subtema": "Pessoas com deficiência e autismo",
-   "proposta": "Ampliar os centros especializados em reabilitação e o atendimento às pessoas com deficiência",
-   "n_concorda": 4,
+   "proposta": "Ampliar os centros de reabilitação e o atendimento especializado às pessoas com deficiência.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
      "posicao": "concorda",
@@ -582,13 +572,6 @@
       173
      ],
      "nota": "Articulação com municípios, inclui oficinas ortopédicas"
-    },
-    "governador-pa-dr-daniel-140002549930": {
-     "posicao": "concorda",
-     "blocos": [
-      779
-     ],
-     "nota": "Foco em crianças com deficiência"
     }
    }
   },
@@ -610,7 +593,7 @@
   {
    "id": "p25",
    "subtema": "Saúde mental",
-   "proposta": "Expandir e fortalecer a rede de atenção psicossocial e os CAPS, integrando a saúde mental à atenção básica",
+   "proposta": "Expandir e fortalecer a rede de atenção psicossocial em saúde mental.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -775,8 +758,8 @@
   {
    "id": "p33",
    "subtema": "Oncologia",
-   "proposta": "Interiorizar e ampliar a rede de diagnóstico e tratamento oncológico",
-   "n_concorda": 4,
+   "proposta": "Ampliar o tratamento oncológico",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
      "posicao": "concorda",
@@ -793,13 +776,6 @@
       152
      ],
      "nota": "Castanhal, Marabá, Tucuruí, Santarém e Belém"
-    },
-    "governador-pa-dr-daniel-140002549930": {
-     "posicao": "concorda",
-     "blocos": [
-      765
-     ],
-     "nota": "Ênfase na prevenção do câncer via atenção básica"
     },
     "governador-pa-well-macedo-140002554108": {
      "posicao": "concorda",
@@ -946,7 +922,7 @@
   {
    "id": "p40",
    "subtema": "Profissionais de saúde",
-   "proposta": "Melhorar as condições de trabalho na saúde, com redução da sobrecarga, jornadas regulamentadas e política de saúde mental para os trabalhadores",
+   "proposta": "Melhorar as condições de trabalho na saúde",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -987,7 +963,7 @@
   {
    "id": "p42",
    "subtema": "Financiamento e gestão do SUS",
-   "proposta": "Ampliar o financiamento estadual do SUS e fortalecer o sistema público universal",
+   "proposta": "Fortalecer o Sistema Único de Saúde (SUS) como sistema público de saúde no estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -1275,7 +1251,7 @@
   {
    "id": "p56",
    "subtema": "Pessoas com deficiência e autismo",
-   "proposta": "Garantir atendimento integral às crianças com deficiência",
+   "proposta": "Assegurar atendimento às crianças com deficiência",
    "n_concorda": 4,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -1334,7 +1310,7 @@
    "id": "p58",
    "subtema": "Saúde mental",
    "proposta": "Combater a lógica manicomial na atenção à saúde mental, em favor do modelo de atenção psicossocial",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
      "posicao": "concorda",
@@ -1342,15 +1318,188 @@
       739
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p59",
+   "subtema": "Filas e regulação",
+   "proposta": "Garantir prazo máximo de 60 dias para a realização de exames e procedimentos especializados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      106,
+      331
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p60",
+   "subtema": "Filas e regulação",
+   "proposta": "Reduzir as filas de consultas, exames e cirurgias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      665
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p61",
+   "subtema": "Atenção especializada e rede regionalizada",
+   "proposta": "Expandir a rede estadual de hospitais públicos e fortalecer os hospitais regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      660,
+      661
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p62",
+   "subtema": "Atenção especializada e rede regionalizada",
+   "proposta": "Fortalecer a regionalização da saúde, com atenção primária como porta de entrada integrada à média e alta complexidade e ampliação do acesso a exames e consultas especializadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      83,
+      176
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p63",
+   "subtema": "Atenção especializada e rede regionalizada",
+   "proposta": "Priorizar investimentos em média e alta complexidade no interior do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      158
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p65",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Combater a mortalidade materna.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      674
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p66",
+   "subtema": "Pessoas com deficiência e autismo",
+   "proposta": "Fortalecer a atenção especializada às crianças com deficiência ou necessidades específicas, no âmbito da proteção à infância.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
      "blocos": [
-      782
+      779
      ],
-     "nota": "Fortalece CAPS e atenção psicossocial integrada à atenção básica."
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p67",
+   "subtema": "Saúde mental",
+   "proposta": "Expandir a rede de saúde mental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      160
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p68",
+   "subtema": "Oncologia",
+   "proposta": "Ampliar os serviços de prevenção e tratamento dos cânceres de mama e de colo do útero.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      677
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p69",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Melhorar as condições de trabalho na saúde por meio de qualificação permanente, inovação e fortalecimento das equipes multiprofissionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      787
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p70",
+   "subtema": "Financiamento e gestão do SUS",
+   "proposta": "Fortalecer o SUS no estado, ampliando o acesso, reduzindo desigualdades regionais e aproximando o atendimento da população em todas as regiões.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      40,
+      81
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
   }
  ],
  "blocos": {

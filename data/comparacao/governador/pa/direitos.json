@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "direitos-pa.json",
   "gerado_em": "2026-09-14T05:57:54Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -82,7 +82,7 @@
   {
    "id": "p2",
    "subtema": "Mulheres",
-   "proposta": "Criar benefícios financeiros e crédito próprio para mulheres em situação de violência, garantindo renda própria",
+   "proposta": "Criar apoio financeiro para mulheres em situação de violência.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -296,7 +296,13 @@
       400,
       401
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "prédios públicos acessíveis",
+       "valor": "100% das escolas, unidades de saúde e prédios"
+      }
+     ]
     },
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
@@ -445,22 +451,8 @@
    "id": "p24",
    "subtema": "Pessoas idosas",
    "proposta": "Fortalecer as políticas estaduais voltadas às pessoas idosas, com foco em envelhecimento ativo e saudável",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pa-dr-daniel-140002549930": {
-     "posicao": "concorda",
-     "blocos": [
-      950
-     ],
-     "nota": ""
-    },
-    "governador-pa-araceli-140002542386": {
-     "posicao": "concorda",
-     "blocos": [
-      148
-     ],
-     "nota": "Programa Vida Mais 60, com nome, endereço e data de início"
-    },
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
      "blocos": [
@@ -646,8 +638,8 @@
   {
    "id": "p35",
    "subtema": "Povos indígenas, quilombolas e comunidades tradicionais",
-   "proposta": "Fortalecer políticas públicas e organizações dos povos indígenas, quilombolas e comunidades tradicionais, respeitando seus modos de vida e assegurando sua participação na formulação das políticas",
-   "n_concorda": 2,
+   "proposta": "Fortalecer políticas públicas e organizações dos povos indígenas, quilombolas e comunidades tradicionais, respeitando seus modos de vida.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
@@ -657,21 +649,13 @@
       1098
      ],
      "nota": ""
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      262,
-      849
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p36",
    "subtema": "Povos indígenas, quilombolas e comunidades tradicionais",
-   "proposta": "Apoiar o turismo de base comunitária organizado pelos próprios povos indígenas e comunidades quilombolas",
+   "proposta": "Apoiar o turismo de base comunitária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-well-macedo-140002554108": {
@@ -783,7 +767,7 @@
   {
    "id": "p42",
    "subtema": "População LGBT",
-   "proposta": "Garantir o uso do nome social nos serviços públicos estaduais",
+   "proposta": "Garantir o uso do nome social",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -1031,8 +1015,8 @@
   {
    "id": "p56",
    "subtema": "Direitos humanos e diversidade",
-   "proposta": "Combater a discriminação, a intolerância e a violência contra grupos historicamente oprimidos e promover a diversidade nas políticas do Estado",
-   "n_concorda": 2,
+   "proposta": "Combater a discriminação, a intolerância e a violência contra grupos historicamente oprimidos",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -1040,14 +1024,6 @@
       491
      ],
      "nota": "Abrange PcD, autistas, idosos, LGBTQIA+, povos tradicionais, quilombolas e indígenas"
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      411,
-      942
-     ],
-     "nota": ""
     }
    }
   },
@@ -1110,6 +1086,122 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p61",
+   "subtema": "Mulheres",
+   "proposta": "Criar benefícios sociais e financeiros para mulheres social e economicamente vulneráveis e em situação de violência doméstica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      419,
+      474
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p62",
+   "subtema": "Pessoas idosas",
+   "proposta": "Fortalecer as políticas voltadas às pessoas idosas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      950
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p63",
+   "subtema": "Pessoas idosas",
+   "proposta": "Criar o programa VIDA MAIS 60, com data definida para início.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      148
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p64",
+   "subtema": "Povos indígenas, quilombolas e comunidades tradicionais",
+   "proposta": "Fortalecer as políticas públicas e as organizações dos povos indígenas, quilombolas, ribeirinhos, extrativistas e demais comunidades tradicionais, respeitando seus modos de vida, conhecimentos e direitos e ampliando oportunidades de geração de renda compatíveis com suas tradições.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      972,
+      974,
+      1098
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p65",
+   "subtema": "Povos indígenas, quilombolas e comunidades tradicionais",
+   "proposta": "Valorizar o turismo de base comunitária e outras atividades sustentáveis que conciliem conservação ambiental e desenvolvimento econômico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-dr-daniel-140002549930": {
+     "posicao": "concorda",
+     "blocos": [
+      1099
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p66",
+   "subtema": "População LGBT",
+   "proposta": "Garantir o nome social a todas as pessoas, com respeito ao seu uso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      332,
+      939
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
+  },
+  {
+   "id": "p67",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Combater a discriminação, a intolerância e a violência contra pessoas com deficiência, autistas, idosos, população LGBTQIA+, povos tradicionais, quilombolas e indígenas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      491
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p56"
   }
  ],
  "blocos": {
@@ -1484,17 +1576,9 @@
     "texto": "— Demarcação e Titulação das terras indígenas e quilombolas no estado.",
     "pagina": 19
    },
-   "411": {
-    "texto": "— Incentivo a diversidade nos órgãos do estado e na sociedade, sem oportunidade não há como acabar com o ciclo de preconceito;",
-    "pagina": 23
-   },
    "412": {
     "texto": "— Palestras e ações educativas nas escolas e espaços públicos para o respeito à diversidade.",
     "pagina": 23
-   },
-   "849": {
-    "texto": "— Respeito integral à autonomia dos povos indígenas;",
-    "pagina": 38
    },
    "850": {
     "texto": "— Consulta livre, prévia e informada para qualquer atividade turística em seus territórios;",

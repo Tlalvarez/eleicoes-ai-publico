@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-to.json",
   "gerado_em": "2026-09-14T13:53:55Z",
-  "exportado_em": "2026-09-14T23:10:56Z"
+  "exportado_em": "2026-09-16T20:09:33Z"
  },
  "candidatos": [
   {
@@ -99,7 +99,7 @@
   {
    "id": "p3",
    "subtema": "Apoio técnico aos municípios",
-   "proposta": "Prestar assistência técnica do Estado às prefeituras, especialmente as de menor porte, para planejamento e elaboração de projetos",
+   "proposta": "Prestar assistência técnica do Estado às prefeituras.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -180,7 +180,7 @@
   {
    "id": "p7",
    "subtema": "Redução das desigualdades regionais",
-   "proposta": "Direcionar investimentos públicos considerando as diferentes realidades regionais, de modo a reduzir as desigualdades entre regiões do Estado",
+   "proposta": "Direcionar investimentos públicos considerando as diferentes realidades regionais",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
@@ -250,7 +250,7 @@
   {
    "id": "p10",
    "subtema": "Planejamento territorial e regionalização",
-   "proposta": "Fortalecer cidades-polo como indutoras do desenvolvimento e da oferta de serviços aos municípios do entorno",
+   "proposta": "Fortalecer cidades-polo como indutoras do desenvolvimento",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
@@ -330,7 +330,7 @@
    "id": "p14",
    "subtema": "Cooperação Estado-municípios",
    "proposta": "Atuar como parceiro permanente dos municípios, integrando políticas estaduais e municipais e respeitando a autonomia local",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
@@ -340,15 +340,13 @@
       441,
       445
      ],
-     "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      88,
-      89
-     ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios parceiros",
+       "valor": "139 municípios tocantinenses"
+      }
+     ]
     }
    }
   },
@@ -404,8 +402,8 @@
   {
    "id": "p18",
    "subtema": "Integração econômica regional",
-   "proposta": "Integrar economicamente as regiões do Estado valorizando vocações locais e apoiando projetos estruturantes de desenvolvimento regional",
-   "n_concorda": 2,
+   "proposta": "Integrar economicamente as regiões do Estado, valorizando as vocações locais e apoiando projetos estruturantes de desenvolvimento regional.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
@@ -415,15 +413,89 @@
       442
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p19",
+   "subtema": "Apoio técnico aos municípios",
+   "proposta": "Promover cooperação institucional entre os entes públicos, com diálogo, assistência técnica e construção de soluções conjuntas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      59
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p20",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Regionalizar serviços e investimentos públicos, aproximando o Estado dos 139 municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      59
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p21",
+   "subtema": "Planejamento territorial e regionalização",
+   "proposta": "Instituir regiões estratégicas de desenvolvimento como modelo permanente de planejamento territorial, fortalecendo as cidades-polo e criando conselhos regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1767
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p22",
+   "subtema": "Cooperação Estado-municípios",
+   "proposta": "Desenvolver uma agenda municipalista voltada ao fortalecimento institucional, à economia de escala e ao apoio técnico aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      88,
+      89
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p23",
+   "subtema": "Integração econômica regional",
+   "proposta": "Integrar a infraestrutura logística, a produção agropecuária e o potencial turístico das regiões às cadeias de valor estadual e nacional.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
       1754
      ],
-     "nota": "Integração de logística, agropecuária e turismo regional às cadeias de valor"
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p18"
   }
  ],
  "blocos": {

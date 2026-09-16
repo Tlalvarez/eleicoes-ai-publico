@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-al.json",
   "gerado_em": "2026-09-14T08:02:56Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -44,7 +44,7 @@
   {
    "id": "p1",
    "subtema": "Transporte público e mobilidade metropolitana",
-   "proposta": "Modernizar o transporte público coletivo, com renovação e modernização da frota",
+   "proposta": "Modernizar o transporte público coletivo",
    "n_concorda": 3,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
@@ -600,7 +600,13 @@
       585,
       586
      ],
-     "nota": "Programa Logística Urbana 2035"
+     "nota": "Programa Logística Urbana 2035",
+     "metas": [
+      {
+       "rotulo": "horizonte da logística urbana",
+       "valor": "2035"
+      }
+     ]
     }
    }
   },
@@ -669,6 +675,22 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Transporte público e mobilidade metropolitana",
+   "proposta": "Modernizar o transporte público, apoiar o transporte alternativo regulamentado e investir na mobilidade urbana e rural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      39
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
   }
  ],
  "blocos": {

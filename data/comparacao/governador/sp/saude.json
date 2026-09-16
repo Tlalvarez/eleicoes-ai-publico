@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-sp.json",
   "gerado_em": "2026-09-14T19:41:31Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -35,7 +35,7 @@
   {
    "id": "p1",
    "subtema": "Filas e acesso à atenção especializada",
-   "proposta": "Reduzir o tempo de espera por consultas especializadas, exames e cirurgias eletivas na rede estadual",
+   "proposta": "Reduzir o tempo de espera por consultas especializadas e exames na rede estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -146,7 +146,7 @@
    "id": "p6",
    "subtema": "Telessaúde e saúde digital",
    "proposta": "Usar meios digitais para lembretes e convocação periódica dos pacientes para consultas, exames e cuidados preventivos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
@@ -154,13 +154,6 @@
       232
      ],
      "nota": ""
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      420
-     ],
-     "nota": "Foco em reduzir absenteísmo e perdas primárias"
     }
    }
   },
@@ -183,7 +176,7 @@
   {
    "id": "p8",
    "subtema": "Regulação e organização da rede",
-   "proposta": "Integrar os serviços da rede (UBS, ambulatório, hospital e laboratório) com mecanismos padronizados de referência entre atenção primária e atenção especializada",
+   "proposta": "Integrar os serviços da rede (UBS, ambulatório, hospital e laboratório) entre si.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -207,7 +200,7 @@
   {
    "id": "p9",
    "subtema": "Regulação e organização da rede",
-   "proposta": "Reorganizar a rede pública por regiões de saúde, a partir de necessidades, capacidade instalada e vazios assistenciais",
+   "proposta": "Reorganizar a rede pública de saúde por regiões.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -318,7 +311,7 @@
   {
    "id": "p15",
    "subtema": "Vigilância em saúde",
-   "proposta": "Fortalecer o sistema de vigilância em saúde integrado à atenção à saúde",
+   "proposta": "Fortalecer o sistema de vigilância em saúde",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -334,7 +327,13 @@
       423,
       471
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios cobertos pela vigilância",
+       "valor": "todos os 645 municípios"
+      }
+     ]
     }
    }
   },
@@ -744,7 +743,7 @@
   {
    "id": "p41",
    "subtema": "Prevenção e promoção da saúde",
-   "proposta": "Deslocar o modelo de atenção para a prevenção, com cuidado que antecede a doença e acompanhamento personalizado do paciente",
+   "proposta": "Promover o cuidado que antecede a doença, com ações de prevenção.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -886,6 +885,89 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p49",
+   "subtema": "Filas e acesso à atenção especializada",
+   "proposta": "Reduzir filas e tempos de espera no acesso a consultas especializadas, exames e tratamentos, com uso de tecnologias digitais e menor necessidade de deslocamentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      420,
+      457
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p50",
+   "subtema": "Regulação e organização da rede",
+   "proposta": "Formar uma rede única, com posto, ambulatório, hospital e laboratório trabalhando de forma integrada e com registros clínicos unificados, sob coordenação estadual da regionalização e da regulação da atenção especializada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      233,
+      236
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p51",
+   "subtema": "Regulação e organização da rede",
+   "proposta": "Retomar a coordenação da rede e a organização da regionalização, com regulação da atenção especializada e participação no financiamento dos serviços de saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      236
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p52",
+   "subtema": "Vigilância em saúde",
+   "proposta": "Criar um sistema de detecção precoce de surtos de doenças de notificação obrigatória, reunindo dados de diferentes sistemas e usando inteligência artificial para emitir alertas rápidos e monitorar o desempenho da vigilância.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      423
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p53",
+   "subtema": "Prevenção e promoção da saúde",
+   "proposta": "Orientar o modelo de saúde para a prevenção de doenças e o envelhecimento saudável, com promoção da atividade física e rede integrada de atendimento humanizado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      416,
+      566
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
   }
  ],
  "blocos": {

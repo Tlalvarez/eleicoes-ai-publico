@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-pe.json",
   "gerado_em": "2026-09-14T18:43:28Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p1",
    "subtema": "Orçamento e planejamento",
-   "proposta": "Adotar gestão por resultados, com metas claras e monitoramento permanente das políticas públicas",
+   "proposta": "Adotar gestão por resultados na administração pública.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -98,7 +98,7 @@
   {
    "id": "p3",
    "subtema": "Orçamento e planejamento",
-   "proposta": "Manter programa permanente de revisão e qualificação do gasto público, em vez de cortes emergenciais pontuais",
+   "proposta": "Manter a qualificação do gasto público como política contínua.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -143,7 +143,7 @@
   {
    "id": "p5",
    "subtema": "Orçamento e planejamento",
-   "proposta": "Estruturar uma carteira permanente de projetos prioritários prontos para captação de recursos",
+   "proposta": "Estruturar e manter uma carteira permanente de projetos prioritários do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-renan-170002540337": {
@@ -340,7 +340,7 @@
    "id": "p16",
    "subtema": "Transparência e controle do gasto",
    "proposta": "Fortalecer a governança e a abertura de dados governamentais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -348,13 +348,6 @@
       563
      ],
      "nota": "Governo aberto, transparência ativa e ampliação de dados abertos"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1549
-     ],
-     "nota": "Foco em governança e infraestrutura de dados"
     }
    }
   },
@@ -605,7 +598,7 @@
   {
    "id": "p32",
    "subtema": "Servidores, carreiras e concursos",
-   "proposta": "Valorizar os servidores estaduais, com reconhecimento salarial, carreiras e formação continuada em diálogo com as categorias",
+   "proposta": "Valorizar os servidores estaduais, com reconhecimento salarial",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -659,7 +652,7 @@
    "id": "p35",
    "subtema": "Receita, tributos e arrecadação",
    "proposta": "Fortalecer a administração fazendária e a recuperação de créditos, combatendo a sonegação sem elevar a carga tributária de forma indiscriminada",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
@@ -668,14 +661,6 @@
       372
      ],
      "nota": ""
-    },
-    "governador-pe-ivan-moraes-170002538097": {
-     "posicao": "concorda",
-     "blocos": [
-      103,
-      104
-     ],
-     "nota": "Foco da fiscalização em grandes devedores e fraudes estruturadas"
     }
    }
   },
@@ -785,7 +770,13 @@
       35,
       36
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "assembleias populares microrregionais",
+       "valor": "todas as 19 microrregionais"
+      }
+     ]
     }
    }
   },
@@ -1040,6 +1031,105 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p58",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Transformar o orçamento estadual em ferramenta de gestão por resultados, com modernização da gestão orçamentária e transparência fiscal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      389
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p59",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Consolidar as diretrizes do Plano de Qualidade do Gasto Público, preservando a capacidade de pagamento do estado e o acesso a linhas de crédito com garantia da União para grandes investimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1536,
+      1537
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p60",
+   "subtema": "Orçamento e planejamento",
+   "proposta": "Estruturar e manter uma carteira estadual de projetos prioritários, selecionados por critérios técnicos de impacto socioeconômico, redução das desigualdades regionais e alinhamento ao planejamento territorial, para orientar os investimentos públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1557
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p61",
+   "subtema": "Transparência e controle do gasto",
+   "proposta": "Fortalecer a governança e a infraestrutura de dados governamentais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1549
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p62",
+   "subtema": "Servidores, carreiras e concursos",
+   "proposta": "Promover a valorização contínua dos servidores estaduais, com reestruturação de carreiras, realização de concursos públicos e ampliação da assistência à saúde do servidor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1524,
+      1551
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p32"
+  },
+  {
+   "id": "p63",
+   "subtema": "Receita, tributos e arrecadação",
+   "proposta": "Fortalecer a Secretaria da Fazenda e a Procuradoria-Geral do Estado, com mais equipes técnicas e sistemas modernos, concentrando a fiscalização em grandes devedores, fraudes estruturadas e planejamento tributário abusivo, e criando mecanismos de orientação, mediação e regularização para contribuintes de boa-fé.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-ivan-moraes-170002538097": {
+     "posicao": "concorda",
+     "blocos": [
+      103,
+      104
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
   }
  ],
  "blocos": {

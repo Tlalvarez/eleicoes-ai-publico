@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-pi.json",
   "gerado_em": "2026-09-14T10:46:21Z",
-  "exportado_em": "2026-09-14T23:10:53Z"
+  "exportado_em": "2026-09-16T21:46:13Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Converter o potencial de energias renováveis do estado em desenvolvimento econômico, tornando-o referência nacional em transição energética",
+   "proposta": "Desenvolver o potencial de energias renováveis do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -74,7 +74,7 @@
   {
    "id": "p2",
    "subtema": "Energia renovável e transição energética",
-   "proposta": "Atrair investimentos e fortalecer cadeias produtivas associadas à transição energética, com geração de emprego qualificado",
+   "proposta": "Atrair investimentos associados à transição energética",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -270,7 +270,7 @@
   {
    "id": "p13",
    "subtema": "Desmatamento, queimadas e fiscalização",
-   "proposta": "Combater o desmatamento ilegal e as queimadas com fortalecimento da fiscalização ambiental",
+   "proposta": "Combater o desmatamento ilegal e as queimadas",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -396,7 +396,7 @@
   {
    "id": "p20",
    "subtema": "Resíduos sólidos",
-   "proposta": "Fortalecer a gestão integrada dos resíduos sólidos com soluções regionalizadas e destinação final ambientalmente adequada, apoiando os municípios",
+   "proposta": "Fortalecer a gestão dos resíduos sólidos",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -528,7 +528,7 @@
   {
    "id": "p27",
    "subtema": "Clima, riscos e resiliência",
-   "proposta": "Apoiar os municípios na prevenção e resposta a eventos climáticos extremos, incluindo planos de contingência",
+   "proposta": "Apoiar os municípios na prevenção e resposta a eventos climáticos extremos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -567,8 +567,8 @@
   {
    "id": "p29",
    "subtema": "Clima, riscos e resiliência",
-   "proposta": "Ampliar e modernizar o monitoramento climático, hidrológico e meteorológico, convertendo-o em alertas e protocolos de resposta",
-   "n_concorda": 2,
+   "proposta": "Ampliar e modernizar o monitoramento climático, hidrológico e meteorológico",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
      "posicao": "concorda",
@@ -577,15 +577,6 @@
       1210
      ],
      "nota": "Fortalece o CEGRID e cria plataforma preditiva com IA"
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      1757,
-      1767,
-      1770
-     ],
-     "nota": "Painel de riscos com gatilhos para calor, seca, cheias e fumaça"
     }
    }
   },
@@ -661,7 +652,7 @@
   {
    "id": "p34",
    "subtema": "Unidades de conservação e biodiversidade",
-   "proposta": "Estruturar e assegurar a gestão efetiva das unidades de conservação estaduais",
+   "proposta": "Estruturar as unidades de conservação estaduais",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -813,7 +804,7 @@
   {
    "id": "p42",
    "subtema": "Instrumentos econômicos e financiamento climático",
-   "proposta": "Implantar e fortalecer o Pagamento por Serviços Ambientais para quem conserva ou recupera vegetação, nascentes e áreas de recarga",
+   "proposta": "Fortalecer o Pagamento por Serviços Ambientais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -926,7 +917,7 @@
   {
    "id": "p48",
    "subtema": "Recuperação ambiental e recursos hídricos",
-   "proposta": "Recuperar áreas degradadas com reflorestamento de espécies nativas e sistemas produtivos sustentáveis",
+   "proposta": "Promover a recuperação de áreas degradadas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -1115,6 +1106,155 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p59",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Tornar o estado referência nacional em geração distribuída e energias renováveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      159
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p61",
+   "subtema": "Energia renovável e transição energética",
+   "proposta": "Assegurar que o potencial estadual em energias renováveis se converta em crescimento econômico, atração de investimentos e desenvolvimento regional, ampliando a infraestrutura de transmissão e distribuição e reduzindo restrições à conexão de novos empreendimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1355,
+      1360
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p62",
+   "subtema": "Desmatamento, queimadas e fiscalização",
+   "proposta": "Reduzir em 50% os focos de queimadas e em 50% o desmatamento ilegal, no âmbito de uma política ambiental integrada de proteção e recuperação do meio ambiente nos territórios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1116,
+      1124
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p63",
+   "subtema": "Resíduos sólidos",
+   "proposta": "Fortalecer a gestão dos resíduos sólidos como parte de uma política ambiental integrada, que articule preservação, adaptação climática e desenvolvimento sustentável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1116
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p64",
+   "subtema": "Clima, riscos e resiliência",
+   "proposta": "Apoiar os municípios conforme seu grau de vulnerabilidade, executando o planejamento climático estadual, convertendo o monitoramento em alertas e respostas e incorporando o risco climático às obras públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1757
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p65",
+   "subtema": "Clima, riscos e resiliência",
+   "proposta": "Ampliar e modernizar a cobertura de monitoramento hidrológico, climático e meteorológico, fortalecer o Centro de Gerenciamento de Riscos e Desastres e criar plataforma de gestão de riscos com mecanismos preditivos baseados em inteligência artificial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1209,
+      1210
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p66",
+   "subtema": "Unidades de conservação e biodiversidade",
+   "proposta": "Estruturar as unidades de conservação de responsabilidade do Estado e ampliar a proteção da biodiversidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1116,
+      1132
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p67",
+   "subtema": "Instrumentos econômicos e financiamento climático",
+   "proposta": "Fortalecer instrumentos de incentivo à conservação ambiental nos municípios, como o ICMS Ecológico e o Pagamento por Serviços Ambientais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      1134,
+      1135
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
+  },
+  {
+   "id": "p68",
+   "subtema": "Recuperação ambiental e recursos hídricos",
+   "proposta": "Regularizar imóveis rurais com validação do CAR, adesão ao PRA e projetos de recuperação ambiental, priorizando pequenos produtores, assentamentos, territórios tradicionais e áreas de recarga hídrica, com assistência técnica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1646
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p48"
   }
  ],
  "blocos": {
@@ -1371,14 +1511,6 @@
    },
    "1766": {
     "texto": "Objetivo: Assegurar que as brigadas municipais estejam operacionais, equipadas, treinadas e integradas a protocolos estaduais de commando, através da ampliação, prevenção, aceiros, manejo integrado, monitoramento de focos, investigação de causas, resposta rápida, proteção de unidades de conservação e apoio às populações expostas à fumaça.",
-    "pagina": 93
-   },
-   "1767": {
-    "texto": "Ação Programática 9.6.3 – Implantar o Painel de Riscos e Protocolos de Alerta Climático",
-    "pagina": 93
-   },
-   "1770": {
-    "texto": "Objetivo: Integrar previsões de chuva, seca, temperatura, umidade, incêndios, níveis de rios e riscos territoriais em protocolos de resposta. A ação deverá estabelecer gatilhos para ondas de calor, estiagens, cheias, baixa qualidade do ar e incêndios, definindo responsabilidades para saúde, educação, defesa civil, assistência social, segurança e infraestrutura.",
     "pagina": 93
    }
   },

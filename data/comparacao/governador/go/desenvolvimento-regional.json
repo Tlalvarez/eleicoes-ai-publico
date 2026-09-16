@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-go.json",
   "gerado_em": "2026-09-14T08:33:25Z",
-  "exportado_em": "2026-09-14T08:45:17Z"
+  "exportado_em": "2026-09-16T21:45:41Z"
  },
  "candidatos": [
   {
@@ -78,7 +78,13 @@
       784,
       786
      ],
-     "nota": "Chama de 'Governo nas Dez Regiões', com prioridade, responsável, custo e prazo"
+     "nota": "Chama de 'Governo nas Dez Regiões', com prioridade, responsável, custo e prazo",
+     "metas": [
+      {
+       "rotulo": "presença regional do governo",
+       "valor": "pelo menos 10 regiões"
+      }
+     ]
     },
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -111,7 +117,7 @@
   {
    "id": "p2",
    "subtema": "Planejamento e política regional",
-   "proposta": "Dividir o território estadual em um número definido de regiões de planejamento, cada uma com plano/carteira própria e instância de coordenação ou comitê regional",
+   "proposta": "Organizar o território estadual em regiões de planejamento, cada uma com instância de coordenação ou comitê regional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -172,7 +178,7 @@
   {
    "id": "p5",
    "subtema": "Planejamento e política regional",
-   "proposta": "Definir prioridades regionais em pactuação periódica com municípios, setor produtivo e sociedade, com responsável, orçamento e prazo",
+   "proposta": "Definir prioridades regionais com a participação de municípios, setor produtivo e sociedade.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -223,8 +229,8 @@
   {
    "id": "p7",
    "subtema": "Planejamento e política regional",
-   "proposta": "Manter uma carteira/banco permanente de projetos regionais e municipais, com estágio, custo, licença e fonte, para captação de recursos",
-   "n_concorda": 2,
+   "proposta": "Manter uma carteira permanente de projetos municipais e regionais, com estágio, custo, licença e fonte, para captação de recursos.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
@@ -232,14 +238,6 @@
       803
      ],
      "nota": "Equipes de engenharia e captação para transformar ideia em projeto"
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      137,
-      389
-     ],
-     "nota": "Escolher 50 projetos e preparar projetos executivos e financiamento"
     }
    }
   },
@@ -262,7 +260,7 @@
    "id": "p9",
    "subtema": "Economia regional e interiorização",
    "proposta": "Fortalecer cadeias produtivas regionais, agregar valor à produção local e diversificar a economia dos municípios",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -279,21 +277,13 @@
       775
      ],
      "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      30,
-      137
-     ],
-     "nota": "Rede de fornecedores e carteira por zona"
     }
    }
   },
   {
    "id": "p10",
    "subtema": "Economia regional e interiorização",
-   "proposta": "Levar investimento e emprego para perto de onde as pessoas vivem, reduzindo deslocamentos e beneficiando regiões menos atendidas",
+   "proposta": "Levar investimento e emprego para perto de onde as pessoas vivem",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -340,7 +330,13 @@
       137,
       389
      ],
-     "nota": "Uma 'Área Pronta para Investir' por zona"
+     "nota": "Uma 'Área Pronta para Investir' por zona",
+     "metas": [
+      {
+       "rotulo": "projetos e áreas prontas",
+       "valor": "50 projetos e oito áreas prontas"
+      }
+     ]
     }
    }
   },
@@ -401,7 +397,7 @@
   {
    "id": "p15",
    "subtema": "Regiões específicas",
-   "proposta": "Adotar agenda própria para o Entorno do Distrito Federal, com geração de emprego local, transporte e integração de serviços com o DF",
+   "proposta": "Adotar agenda própria para o Entorno do Distrito Federal.",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -439,8 +435,8 @@
   {
    "id": "p17",
    "subtema": "Regiões específicas",
-   "proposta": "Tratar a Região Metropolitana de Goiânia como território único, com soluções em rede de mobilidade, saneamento e segurança",
-   "n_concorda": 2,
+   "proposta": "Tratar a Região Metropolitana de Goiânia como território único.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
@@ -448,13 +444,6 @@
       1113
      ],
      "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      108
-     ],
-     "nota": "Foco em mobilidade, saneamento, inovação e segurança"
     }
    }
   },
@@ -493,7 +482,7 @@
   {
    "id": "p20",
    "subtema": "Regiões específicas",
-   "proposta": "Definir agendas regionais para as áreas de maior dinamismo econômico (eixo central/Anápolis, Sul, Sudeste, Sudoeste e Oeste), unindo logística, indústria, agro e serviços",
+   "proposta": "Definir agendas econômicas regionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -520,8 +509,8 @@
   {
    "id": "p21",
    "subtema": "Apoio aos municípios",
-   "proposta": "Oferecer apoio técnico aos municípios com menor capacidade administrativa na elaboração de projetos, planejamento e captação de recursos estaduais e federais",
-   "n_concorda": 2,
+   "proposta": "Oferecer apoio técnico aos municípios com menor capacidade administrativa na elaboração de projetos, no planejamento e na captação de recursos estaduais e federais.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
@@ -532,13 +521,6 @@
       1143
      ],
      "nota": ""
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      803
-     ],
-     "nota": "Equipes de engenharia e captação ligadas ao banco regional de projetos"
     }
    }
   },
@@ -612,6 +594,141 @@
      "nota": "Indicador: atendimentos resolvidos já na primeira vez"
     }
    }
+  },
+  {
+   "id": "p27",
+   "subtema": "Planejamento e política regional",
+   "proposta": "Definir prioridades regionais ouvindo municípios, setor produtivo e sociedade, ajustando infraestrutura, qualificação e investimentos às necessidades de cada região.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      1151,
+      1155
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p28",
+   "subtema": "Planejamento e política regional",
+   "proposta": "Criar comitês regionais para organizar as prioridades das zonas e acompanhar os impactos locais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      351,
+      352
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p29",
+   "subtema": "Planejamento e política regional",
+   "proposta": "Montar uma carteira de projetos em cada zona, selecionando 50 projetos e preparando projetos executivos e financiamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      137,
+      389
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p30",
+   "subtema": "Economia regional e interiorização",
+   "proposta": "Distribuir infraestrutura, serviços e investimentos pelas diversas regiões, com atenção aos pequenos municípios, para ampliar trabalho, produção e renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      726,
+      787
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p31",
+   "subtema": "Regiões específicas",
+   "proposta": "Ampliar a presença do Estado junto à população que vive e se desloca diariamente entre Goiás e Brasília.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1139
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p32",
+   "subtema": "Regiões específicas",
+   "proposta": "Fazer a metrópole funcionar como rede, superando a atuação isolada dos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      1113
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p33",
+   "subtema": "Regiões específicas",
+   "proposta": "Organizar o estado em oito zonas econômicas, cada uma com vocações definidas, plano diretor econômico e territorial, comitê regional, carteira de projetos, plano de talentos e rede de fornecedores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      30,
+      100,
+      137,
+      351
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p34",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Manter uma carteira permanente de projetos municipais e regionais, com equipes de engenharia e captação para transformar ideias em projetos aptos a receber recursos, sob critérios de seleção publicados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      803
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
   }
  ],
  "blocos": {
@@ -642,10 +759,6 @@
    },
    "100": {
     "texto": "As zonas não serão novas divisões administrativas nem novas autarquias. Serão territórios funcionais, com planejamento regional, comitês plurais e projetos coordenados pelas estruturas já existentes do Estado.",
-    "pagina": 6
-   },
-   "108": {
-    "texto": "Mobilidade, saneamento, venues, inovação e segurança.",
     "pagina": 6
    },
    "116": {

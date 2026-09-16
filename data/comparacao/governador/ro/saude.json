@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-ro.json",
   "gerado_em": "2026-09-14T18:14:50Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "exportado_em": "2026-09-16T21:46:50Z"
  },
  "candidatos": [
   {
@@ -51,8 +51,8 @@
   {
    "id": "p1",
    "subtema": "Regulação e filas",
-   "proposta": "Reestruturar e modernizar a central estadual de regulação, com protocolos clínicos vinculantes e ordenação por risco e tempo de espera",
-   "n_concorda": 4,
+   "proposta": "Reestruturar e modernizar a central estadual de regulação.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -77,14 +77,6 @@
       243
      ],
      "nota": "plataforma SIRO ligada aos 52 municípios, implantada por fases"
-    },
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      3314,
-      3315
-     ],
-     "nota": "reorganização de fluxos a partir do mapeamento de gargalos"
     }
    }
   },
@@ -115,7 +107,7 @@
   {
    "id": "p3",
    "subtema": "Regulação e filas",
-   "proposta": "Executar operação emergencial nos primeiros meses de governo para zerar/reduzir o passivo de consultas especializadas, exames e cirurgias eletivas",
+   "proposta": "Executar uma operação concentrada para reduzir o passivo de consultas especializadas, exames e cirurgias eletivas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -125,7 +117,13 @@
       235,
       236
      ],
-     "nota": "S.O.S. Saúde, 180 dias, pagamento por atendimento validado"
+     "nota": "S.O.S. Saúde, 180 dias, pagamento por atendimento validado",
+     "metas": [
+      {
+       "rotulo": "prazo para zerar passivo",
+       "valor": "180 dias"
+      }
+     ]
     },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -181,7 +179,7 @@
   {
    "id": "p5",
    "subtema": "Regulação e filas",
-   "proposta": "Instituir indicadores públicos e metas de redução do tempo de espera por especialidade, com responsáveis definidos",
+   "proposta": "Instituir indicadores públicos, com responsáveis definidos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -212,7 +210,7 @@
   {
    "id": "p6",
    "subtema": "Regulação e filas",
-   "proposta": "Adotar contratualização por desempenho com prestadores, cruzando agendado, realizado e faturado, com sanções e redistribuição de cotas",
+   "proposta": "Adotar contratualização por desempenho com prestadores de serviços de saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -252,7 +250,7 @@
   {
    "id": "p8",
    "subtema": "Regulação e filas",
-   "proposta": "Criar programa permanente de cirurgias, consultas e exames após a operação emergencial, para impedir a recomposição do passivo",
+   "proposta": "Criar programa permanente de cirurgias, consultas e exames.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -323,7 +321,7 @@
   {
    "id": "p12",
    "subtema": "Rede hospitalar e urgência",
-   "proposta": "Dar solução definitiva ao novo hospital de urgência e emergência de alta complexidade da capital (HEURO/substituição do João Paulo II)",
+   "proposta": "Dar solução definitiva ao novo hospital de urgência e emergência de alta complexidade.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -439,7 +437,7 @@
   {
    "id": "p17",
    "subtema": "Rede hospitalar e urgência",
-   "proposta": "Implantar novo hospital de média e alta complexidade em Ji-Paraná",
+   "proposta": "Implantar um novo hospital em Ji-Paraná",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -495,7 +493,7 @@
   {
    "id": "p20",
    "subtema": "Rede hospitalar e urgência",
-   "proposta": "Reformar, ampliar, equipar e modernizar os hospitais estaduais e regionais existentes, ampliando leitos e procedimentos",
+   "proposta": "Requalificar os hospitais estaduais existentes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -574,7 +572,7 @@
    "id": "p23",
    "subtema": "Regionalização e atenção especializada",
    "proposta": "Regionalizar efetivamente a assistência, descentralizando consultas, exames e cirurgias especializadas para reduzir deslocamentos à capital",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -602,14 +600,6 @@
       254
      ],
      "nota": "programa Saúde Perto de Casa, frentes ambulatorial e hospitalar"
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      74,
-      79
-     ],
-     "nota": "foco em polo neonatal fora da capital e telessaúde de apoio ao interior"
     }
    }
   },
@@ -632,7 +622,7 @@
    "id": "p25",
    "subtema": "Regionalização e atenção especializada",
    "proposta": "Criar tabela estadual complementar de financiamento para cofinanciar consultas e exames especializados realizados nos municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -641,20 +631,13 @@
       255
      ],
      "nota": "Tabela SUS Rondoniense vinculada a metas e auditoria"
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      227
-     ],
-     "nota": "cofinanciamento de ações pactuadas com municípios"
     }
    }
   },
   {
    "id": "p26",
    "subtema": "Regionalização e atenção especializada",
-   "proposta": "Firmar contratos de gestão regionalizada com hospitais municipais e filantrópicos, com metas e pagamento vinculado a resultados",
+   "proposta": "Firmar contratualizações regionalizadas com hospitais municipais para ampliar a oferta de serviços de saúde nas regiões.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -678,7 +661,7 @@
   {
    "id": "p27",
    "subtema": "Regionalização e atenção especializada",
-   "proposta": "Ampliar a oferta de serviços especializados por parcerias com o setor privado e filantrópico, inclusive PPPs",
+   "proposta": "Ampliar a oferta de serviços especializados por meio de parcerias com o setor privado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -770,7 +753,7 @@
   {
    "id": "p30",
    "subtema": "Regionalização e atenção especializada",
-   "proposta": "Organizar linhas de cuidado integradas com diagnóstico precoce e continuidade entre atenção primária, média e alta complexidade",
+   "proposta": "Organizar linhas de cuidado integradas",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -811,15 +794,8 @@
    "id": "p32",
    "subtema": "Saúde materno-infantil",
    "proposta": "Reorganizar a atenção materno-infantil em cooperação com os municípios, reforçando pré-natal e identificação de gestação de risco para reduzir mortalidade materna e infantil",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      72
-     ],
-     "nota": "Pacto Mãe-Bebê com busca ativa de gestantes"
-    },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
      "blocos": [
@@ -843,7 +819,7 @@
   {
    "id": "p33",
    "subtema": "Saúde materno-infantil",
-   "proposta": "Firmar pacto/plano estadual materno-infantil com metas por região, responsabilidades definidas e relatório público",
+   "proposta": "Firmar um pacto estadual materno-infantil.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -866,7 +842,7 @@
   {
    "id": "p34",
    "subtema": "Saúde materno-infantil",
-   "proposta": "Garantir exames de pré-natal (inclusive urocultura e ultrassom obstétrico) em todas as regiões de saúde",
+   "proposta": "Garantir exames de pré-natal às gestantes",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -888,7 +864,7 @@
   {
    "id": "p35",
    "subtema": "Saúde materno-infantil",
-   "proposta": "Concluir e pôr em funcionamento a maternidade de alto risco de Ji-Paraná, com equipe, leitos e custeio garantidos",
+   "proposta": "Atuar para viabilizar a maternidade de alto risco de Ji-Paraná e seu funcionamento.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -918,8 +894,8 @@
   {
    "id": "p36",
    "subtema": "Saúde materno-infantil",
-   "proposta": "Criar polo de UTI neonatal fora da capital, encerrando as transferências de longa distância de recém-nascidos",
-   "n_concorda": 3,
+   "proposta": "Criar um polo de UTI neonatal fora da capital.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -935,14 +911,6 @@
       291
      ],
      "nota": "UTI neonatal viabilizada por cooperação com outros entes"
-    },
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      3322,
-      3324
-     ],
-     "nota": "ampliação da capacidade neonatal fora da capital"
     }
    }
   },
@@ -979,7 +947,7 @@
   {
    "id": "p39",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Ampliar telemedicina e teleconsultas para acesso a atendimento especializado, reduzindo deslocamentos",
+   "proposta": "Ampliar o uso da telemedicina e da saúde digital no atendimento à população",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -1020,7 +988,7 @@
   {
    "id": "p40",
    "subtema": "Saúde digital e telemedicina",
-   "proposta": "Implantar teleconsultoria e telematriciamento de especialistas para apoio aos médicos e equipes da atenção primária municipal",
+   "proposta": "Implantar teleconsultoria.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -1060,7 +1028,7 @@
   {
    "id": "p42",
    "subtema": "Força de trabalho em saúde",
-   "proposta": "Instituir programa estadual de força de trabalho em saúde, com dimensionamento, concursos e substituição gradual dos vínculos precários",
+   "proposta": "Instituir uma política estadual de planejamento da força de trabalho em saúde.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1092,8 +1060,8 @@
   {
    "id": "p43",
    "subtema": "Força de trabalho em saúde",
-   "proposta": "Instituir educação permanente e qualificação continuada dos profissionais da rede",
-   "n_concorda": 3,
+   "proposta": "Promover formação continuada e educação permanente dos profissionais da saúde da rede pública.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1111,20 +1079,13 @@
       272
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      216
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p44",
    "subtema": "Força de trabalho em saúde",
-   "proposta": "Orientar contratação e fixação de especialistas pelas filas, especialidades críticas e necessidades de cada região",
+   "proposta": "Orientar a contratação de profissionais de saúde pelas necessidades de cada região.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1217,8 +1178,8 @@
   {
    "id": "p48",
    "subtema": "Atenção primária e apoio aos municípios",
-   "proposta": "Manter em dia os repasses estaduais aos municípios e apoiar a melhoria de suas estruturas e serviços de saúde, em vez de interdições e bloqueios",
-   "n_concorda": 2,
+   "proposta": "Apoiar os municípios na melhoria de suas estruturas e serviços de saúde, com parceria e cooperação em vez de interdições e bloqueios.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -1226,20 +1187,13 @@
       257
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      227
-     ],
-     "nota": "respeito às competências municipais sem permitir abandono"
     }
    }
   },
   {
    "id": "p49",
    "subtema": "Gestão, orçamento e logística",
-   "proposta": "Orientar o orçamento da saúde por necessidades reais e metas assistenciais, encerrando o uso rotineiro de créditos adicionais e reconhecimentos de dívida",
+   "proposta": "Orientar o orçamento da saúde pelas necessidades e prioridades assistenciais da rede.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1265,7 +1219,7 @@
    "id": "p50",
    "subtema": "Gestão, orçamento e logística",
    "proposta": "Realizar diagnóstico inicial completo da rede (gargalos, contratos, dívidas, estoques e capacidade) para embasar plano de recuperação",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -1283,13 +1237,6 @@
       3335
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      216
-     ],
-     "nota": "foco em contratos, compras, dados e auditoria"
     }
    }
   },
@@ -1312,7 +1259,7 @@
    "id": "p52",
    "subtema": "Gestão, orçamento e logística",
    "proposta": "Modernizar a assistência farmacêutica com sistema integrado de gestão que assegure abastecimento regular de medicamentos",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1328,13 +1275,6 @@
       274
      ],
      "nota": "centro logístico único (CELAD) com automação e áreas climatizadas"
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      194
-     ],
-     "nota": "ampliação do acesso à assistência farmacêutica"
     }
    }
   },
@@ -1356,7 +1296,7 @@
   {
    "id": "p54",
    "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
-   "proposta": "Instituir política estadual de atenção à pessoa com deficiência e neurodivergente, com linha de cuidado contínua e governança intersetorial",
+   "proposta": "Instituir política estadual de atenção à pessoa com deficiência e neurodivergente.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1393,15 +1333,8 @@
    "id": "p55",
    "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
    "proposta": "Criar centros especializados regionais de terapias e neurodesenvolvimento, com equipes multiprofissionais e atendimento continuado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      280
-     ],
-     "nota": "estudos para centros em Porto Velho, Ariquemes, Ji-Paraná, Cacoal e Vilhena"
-    },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
      "blocos": [
@@ -1435,7 +1368,7 @@
    "id": "p57",
    "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
    "proposta": "Criar fluxo de regulação prioritário com prazo máximo para diagnóstico de deficiência em crianças de 0 a 6 anos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1444,13 +1377,6 @@
       1495
      ],
      "nota": "limite de 90 dias para consulta especializada"
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      176
-     ],
-     "nota": "acesso transparente e acompanhamento da demanda no neurodesenvolvimento"
     }
    }
   },
@@ -1458,16 +1384,8 @@
    "id": "p58",
    "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
    "proposta": "Capacitar profissionais da atenção básica e da educação infantil para identificação precoce de sinais de atraso do desenvolvimento e encaminhamento qualificado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ro-hildon-chaves-220002542916": {
-     "posicao": "concorda",
-     "blocos": [
-      1422,
-      1512
-     ],
-     "nota": ""
-    },
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
      "blocos": [
@@ -1510,7 +1428,13 @@
       1527,
       1528
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "estimulação precoce",
+       "valor": "ênfase entre 0 e 3 anos"
+      }
+     ]
     }
    }
   },
@@ -1549,8 +1473,8 @@
   {
    "id": "p63",
    "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
-   "proposta": "Oferecer tecnologia assistiva e estimulação sensorial com empréstimo de equipamentos às famílias",
-   "n_concorda": 2,
+   "proposta": "Oferecer tecnologia assistiva e estimulação sensorial, com empréstimo de equipamentos às famílias.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1558,13 +1482,6 @@
       1503
      ],
      "nota": ""
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      293
-     ],
-     "nota": "modernização do banco estadual de órteses e próteses"
     }
    }
   },
@@ -1586,7 +1503,7 @@
   {
    "id": "p65",
    "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
-   "proposta": "Apoiar cuidadores e familiares com grupos de orientação, informação e apoio",
+   "proposta": "Apoiar cuidadores e familiares.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1727,7 +1644,7 @@
   {
    "id": "p72",
    "subtema": "Populações indígenas, tradicionais e ribeirinhas",
-   "proposta": "Implantar política estadual de saúde ribeirinha com embarcações de saúde recuperadas e roteiros periódicos de atendimento",
+   "proposta": "Implantar política estadual de saúde para atendimento das comunidades ribeirinhas e de difícil acesso.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -1751,7 +1668,7 @@
    "id": "p73",
    "subtema": "Doenças crônicas e pessoa idosa",
    "proposta": "Modernizar, ampliar e regionalizar os serviços especializados de atenção a doenças crônicas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1760,20 +1677,13 @@
       1131
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      227
-     ],
-     "nota": "acompanhamento de hipertensão e diabetes na atenção primária"
     }
    }
   },
   {
    "id": "p74",
    "subtema": "Doenças crônicas e pessoa idosa",
-   "proposta": "Estruturar atenção integral à pessoa idosa, com linha de cuidado às demências e apoio a famílias e cuidadores",
+   "proposta": "Ampliar a atenção integral à pessoa idosa, com apoio a famílias e cuidadores",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -1797,7 +1707,7 @@
    "id": "p75",
    "subtema": "Saúde bucal",
    "proposta": "Instituir política estadual de saúde bucal, com fortalecimento da cirurgia bucomaxilofacial, dentistas em UTI e atendimento odontológico com sedação",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -1807,20 +1717,13 @@
       280
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      227
-     ],
-     "nota": "apenas ampliação da saúde bucal na atenção primária"
     }
    }
   },
   {
    "id": "p76",
    "subtema": "Saúde e enfrentamento da violência",
-   "proposta": "Preparar e fortalecer a rede estadual de saúde para identificação, acolhimento e atendimento a vítimas de violência, com acionamento da rede de proteção",
+   "proposta": "Fortalecer a rede estadual de saúde no atendimento a vítimas de violência.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -1855,6 +1758,589 @@
      "nota": "Programa e Caravana Mulher Plena"
     }
    }
+  },
+  {
+   "id": "p78",
+   "subtema": "Regulação e filas",
+   "proposta": "Modernizar a central estadual de regulação, com fila única transparente por especialidade e região, protocolos vinculantes de transferência entre unidades e painel público das filas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      77,
+      79
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p79",
+   "subtema": "Regulação e filas",
+   "proposta": "Reestruturar a Central de Regulação e Oferta de Vagas da Macro I, implantar estrutura equivalente na Macro II e criar painel público de acompanhamento das filas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      175,
+      1279
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p80",
+   "subtema": "Regulação e filas",
+   "proposta": "Realizar mutirões estaduais programados e permanentes de consultas especializadas, exames diagnósticos e cirurgias eletivas, na capital e no interior, priorizando as especialidades e exames de maior espera, com fila inicial publicada e divulgação dos resultados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      1278
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p81",
+   "subtema": "Regulação e filas",
+   "proposta": "Instituir indicadores públicos de redução das filas, com linha de base, metas anuais para 2027 a 2030, unidade responsável e divulgação quadrimestral em painel público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      207,
+      232,
+      233
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p82",
+   "subtema": "Regulação e filas",
+   "proposta": "Implantar força-tarefa estadual contra as filas, com linha de base dos tempos de espera e plano de redução das filas prioritárias sob monitoramento contínuo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      3318
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p83",
+   "subtema": "Regulação e filas",
+   "proposta": "Firmar contratos de gestão regionalizada da saúde com metas quantitativas e qualitativas e indicadores de acesso, qualidade, resultado e eficiência, vinculando parte do pagamento ao cumprimento das metas pactuadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      207,
+      256,
+      257
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p85",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Construir, como prioridade de governo, um novo hospital e pronto-socorro de alta complexidade, com tecnologia avançada, classificação de risco e equipes multiprofissionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      1050,
+      1054,
+      1055
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p87",
+   "subtema": "Rede hospitalar e urgência",
+   "proposta": "Requalificar os hospitais estaduais e reestruturar as referências hospitalares regionais, definindo carteiras de serviços, fluxos de encaminhamento e responsabilidades dos polos regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      207,
+      208
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p88",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Criar ao menos um polo de terapia intensiva neonatal fora da capital, evitando o transporte de recém-nascidos em risco por longas distâncias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      74
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p89",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Descentralizar cirurgias eletivas, consultas e exames especializados, ampliando a oferta regional por contratualizações e parcerias com os municípios, com critérios transparentes, controle de qualidade e integração à regulação estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      200
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p90",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Contratar a capacidade disponível de hospitais privados e filantrópicos por meio de contratos com metas e controle de qualidade, para ampliar o atendimento e reduzir filas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      207,
+      235
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p91",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Ampliar consultas, exames e cirurgias especializadas por meio de contratualizações e parcerias com municípios, hospitais filantrópicos e prestadores habilitados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      178,
+      200
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p92",
+   "subtema": "Regionalização e atenção especializada",
+   "proposta": "Garantir tratamento e cuidado continuado por meio de linhas de cuidado que acompanhem a pessoa ao longo da vida, integrando atenção especializada, reabilitação, saúde mental e apoio social, com telemedicina complementando as redes regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      194
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p93",
+   "subtema": "Saúde materno-infantil",
+   "proposta": "Garantir pré-natal completo com exames assegurados em todas as regiões de saúde, busca ativa de gestantes sem acompanhamento e meta pública de redução da mortalidade materna e neonatal, com relatório anual e articulação com a Rede Alyne.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      72
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p32"
+  },
+  {
+   "id": "p95",
+   "subtema": "Saúde materno-infantil",
+   "proposta": "Integrar pré-natal, identificação de gestação de risco, exames, transporte, parto seguro, atenção neonatal, puerpério, vacinação e acompanhamento infantil, com fortalecimento da referência materno-infantil de alto risco em Ji-Paraná e análise de cada óbito evitável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      230
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p96",
+   "subtema": "Saúde materno-infantil",
+   "proposta": "Concluir a maternidade de alto risco de Ji-Paraná, usando os recursos federais já liberados e a retomada pactuada de obras paralisadas com o ministério.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      73,
+      82
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p97",
+   "subtema": "Saúde materno-infantil",
+   "proposta": "Assegurar equipe, leitos, equipamentos, custeio e fluxos de regulação na referência materno-infantil de alto risco de Ji-Paraná, em articulação com o Município e a União.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      230
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p98",
+   "subtema": "Saúde materno-infantil",
+   "proposta": "Viabilizar maternidade de alto risco descentralizada e UTI neonatal mediante cooperação com outros entes para alocação de recursos humanos, com cada obra classificada por maturidade, financiamento, cronograma e custo anual de funcionamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      291
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p100",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Implantar saúde digital, telemedicina, teleconsultoria e telematriciamento para ampliar acesso e resolutividade, dando apoio ao médico que atende no município.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      218,
+      258
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p101",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Oferecer telessaúde de apoio às equipes do interior, integrada à regulação e ao prontuário único do cidadão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      79
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p102",
+   "subtema": "Saúde digital e telemedicina",
+   "proposta": "Usar telemedicina, teleconsultas e teleconsultoria como complemento ao cuidado presencial e à atuação das redes regionais, no diagnóstico, tratamento e cuidado continuado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      194
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p103",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Planejar a força de trabalho da saúde, com levantamento público de especialidades críticas, plantões incompletos e necessidades regionais, além de formação, qualificação, fixação e contratação de profissionais conforme a necessidade assistencial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      216,
+      1283
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
+  },
+  {
+   "id": "p105",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Recompor a força de trabalho da saúde estadual por concurso, com redução da rotatividade e das contratações temporárias e redistribuição de profissionais conforme a demanda assistencial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      81
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p106",
+   "subtema": "Força de trabalho em saúde",
+   "proposta": "Criar programa estadual de força de trabalho em saúde, com dimensionamento das necessidades por unidade e região, concursos programados, substituição de vínculos precários e distribuição equilibrada de profissionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      272
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p107",
+   "subtema": "Atenção primária e apoio aos municípios",
+   "proposta": "Fortalecer a atenção primária em cooperação com os municípios, com apoio técnico, pactuação de prioridades e cofinanciamento de ações quando necessário.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      227
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p48"
+  },
+  {
+   "id": "p108",
+   "subtema": "Gestão, orçamento e logística",
+   "proposta": "Orientar o orçamento da saúde por prioridades, metas assistenciais e indicadores públicos de filas, produção e qualidade, com execução divulgada em painel público quadrimestral.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      207,
+      232,
+      233
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p109",
+   "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
+   "proposta": "Implantar política estadual para pessoas com deficiência e neurodivergentes, com identificação precoce na atenção primária, centros especializados regionais em autismo e neurodesenvolvimento e integração permanente entre saúde, educação e assistência social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      229,
+      277,
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p110",
+   "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
+   "proposta": "Tornar permanente o mutirão estadual de consultas especializadas para pessoas com deficiência e crianças com suspeita de neurodesenvolvimento atípico e criar um Centro Multidisciplinar de Terapias vinculado ao CERO, com atendimento contínuo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      1418,
+      1490,
+      1491
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p111",
+   "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
+   "proposta": "Executar estudos para implantar Centros Especializados em Autismo e Neurodesenvolvimento em Porto Velho, Ariquemes, Ji-Paraná, Cacoal e Vilhena, ampliando teleconsultoria e apoio matricial aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p112",
+   "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
+   "proposta": "Capacitar pediatras e equipes da Atenção Básica nas UBS para triagem precoce de sinais de TEA e de doenças raras, com encaminhamento qualificado e redução do tempo até o diagnóstico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      1422,
+      1512
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p58"
+  },
+  {
+   "id": "p113",
+   "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
+   "proposta": "Modernizar o Banco Estadual de Órteses e Próteses, integrando-o ao complexo de trauma, para garantir a entrega da prótese ao paciente no tempo certo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      293
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p63"
+  },
+  {
+   "id": "p114",
+   "subtema": "Deficiência, neurodesenvolvimento e doenças raras",
+   "proposta": "Financiar programas estruturados de treinamento de pais e cuidadores, baseados em evidências científicas, integrados à rede de atenção às pessoas neurodivergentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p115",
+   "subtema": "Populações indígenas, tradicionais e ribeirinhas",
+   "proposta": "Expandir a política estadual de atendimento itinerante em saúde, com unidades móveis terrestres e fluviais e embarcações de saúde, em parceria com municípios e União, para ampliar o atendimento em comunidades de difícil acesso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      1159,
+      1160
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p72"
+  },
+  {
+   "id": "p116",
+   "subtema": "Doenças crônicas e pessoa idosa",
+   "proposta": "Ampliar a atenção às pessoas idosas e apoiar cuidadores familiares, com grupos de orientação, informação e apoio às famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      235
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p74"
+  },
+  {
+   "id": "p117",
+   "subtema": "Saúde e enfrentamento da violência",
+   "proposta": "Fortalecer a rede estadual de atendimento em saúde às vítimas de violência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      1632
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p76"
   }
  ],
  "blocos": {
@@ -2377,10 +2863,6 @@
    },
    "3314": {
     "texto": "O primeiro movimento será conhecer com precisão quem está esperando, por qual atendimento, há quanto tempo e em qual região do Estado. Ao mesmo tempo, será levantada a capacidade disponível da rede, identificando serviços ociosos ou subutilizados, gargalos de regulação, limitações de equipes e equipamentos e possibilidades de ampliação imediata dos atendimentos.",
-    "pagina": 131
-   },
-   "3315": {
-    "texto": "Com essas informações, o Governo deverá mobilizar a rede e colocar em execu‐ ção um plano de enfrentamento das filas prioritárias, reorganizando fluxos, ampli‐ ando a capacidade onde for possível, concentrando esforços sobre as situações mais críticas e adotando medidas específicas para reduzir a demanda represada.",
     "pagina": 131
    },
    "3316": {

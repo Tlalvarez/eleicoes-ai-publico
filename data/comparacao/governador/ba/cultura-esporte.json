@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-ba.json",
   "gerado_em": "2026-09-14T01:45:51Z",
-  "exportado_em": "2026-09-14T02:08:22Z"
+  "exportado_em": "2026-09-16T18:36:46Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p2",
    "subtema": "Esporte e lazer",
-   "proposta": "Utilizar a infraestrutura esportiva das escolas estaduais para ações de esporte, inclusive abrindo os espaços à comunidade",
+   "proposta": "Utilizar a infraestrutura esportiva das escolas estaduais para ações de esporte.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -113,7 +113,7 @@
   {
    "id": "p4",
    "subtema": "Esporte e lazer",
-   "proposta": "Organizar calendário estadual de competições esportivas e paradesportivas em diferentes cidades, com apoio logístico do Estado",
+   "proposta": "Apoiar a organização de competições esportivas em diferentes cidades do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -379,7 +379,7 @@
   {
    "id": "p20",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Fomentar a cultura por meio de editais, prêmios e fundos com descentralização territorial, apoio técnico aos proponentes e desburocratização",
+   "proposta": "Fomentar a cultura por meio de editais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ba-ronaldo-mansur-50002532269": {
@@ -722,7 +722,7 @@
   {
    "id": "p39",
    "subtema": "Economia criativa e audiovisual",
-   "proposta": "Instituir política estadual permanente de economia criativa com base territorial e foco em geração de trabalho e renda",
+   "proposta": "Fomentar a economia criativa com base territorial nas regiões do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -762,7 +762,7 @@
    "id": "p41",
    "subtema": "Economia criativa e audiovisual",
    "proposta": "Consolidar a Bahia Filmes e a política estadual de audiovisual, valorizando toda a cadeia produtiva do setor",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
      "posicao": "concorda",
@@ -770,13 +770,6 @@
       932
      ],
      "nota": "Consolidação como empresa pública do audiovisual"
-    },
-    "governador-ba-acm-neto-50002533190": {
-     "posicao": "concorda",
-     "blocos": [
-      2925
-     ],
-     "nota": "Considera a estrutura criada insuficiente sem fundo garantido"
     }
    }
   },
@@ -994,7 +987,7 @@
   {
    "id": "p55",
    "subtema": "Gestão e institucionalidade da cultura",
-   "proposta": "Ampliar e fortalecer o sistema estadual de cultura e sua articulação com os municípios",
+   "proposta": "Ampliar e fortalecer o sistema estadual de cultura.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-ronaldo-mansur-50002532269": {
@@ -1120,6 +1113,122 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p63",
+   "subtema": "Esporte e lazer",
+   "proposta": "Fortalecer ações de incentivo ao esporte aproveitando a infraestrutura esportiva já existente nas escolas estaduais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      906
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p64",
+   "subtema": "Esporte e lazer",
+   "proposta": "Apoiar a realização de eventos de competições esportivas e paradesportivas em diferentes cidades do estado, movimentando a economia local e dando visibilidade a atletas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      910
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p65",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Publicar, até dezembro do ano anterior, calendário anual de editais setoriais do Fundo de Cultura, com editais escalonados por níveis de complexidade, automação de fluxos, redução de exigências desproporcionais e prazos de pagamento previsíveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2875,
+      2930
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p66",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Institucionalizar programa estadual de culturas populares e fortalecer o fomento às manifestações afro-brasileiras, com editais, premiações e convênios para pesquisa, formação, circulação e produção.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      927,
+      928,
+      939
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p67",
+   "subtema": "Economia criativa e audiovisual",
+   "proposta": "Criar polos e centros de economia criativa nas macrorregiões, estruturados pelas vocações culturais de cada território, com espaços de formação, produção e comercialização ligados às cadeias produtivas locais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      1895,
+      2897
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p68",
+   "subtema": "Economia criativa e audiovisual",
+   "proposta": "Dotar a Bahia Filmes de fundo garantido e orçamento permanente plurianual, com integração à FUNCEB, para assegurar a distribuição e a comercialização de obras audiovisuais baianas além de um único mandato.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2925
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p69",
+   "subtema": "Gestão e institucionalidade da cultura",
+   "proposta": "Ampliar a ação das instituições culturais e do sistema estadual de cultura, com articulação em âmbito nacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      273
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
   }
  ],
  "blocos": {

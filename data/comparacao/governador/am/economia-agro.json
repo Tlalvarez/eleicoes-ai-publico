@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "economia-agro-am.json",
   "gerado_em": "2026-09-15T00:33:08Z",
-  "exportado_em": "2026-09-15T02:14:01Z"
+  "exportado_em": "2026-09-16T21:44:59Z"
  },
  "candidatos": [
   {
@@ -68,7 +68,7 @@
   {
    "id": "p1",
    "subtema": "Assistência técnica e extensão rural",
-   "proposta": "Ampliar a assistência técnica e extensão rural aos produtores rurais, pesqueiros e aquícolas",
+   "proposta": "Ampliar a assistência técnica e extensão rural aos produtores",
    "n_concorda": 6,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -124,16 +124,9 @@
   {
    "id": "p2",
    "subtema": "Crédito e fomento",
-   "proposta": "Ampliar o crédito rural e produtivo com linhas de financiamento estaduais e orientação técnica ao tomador",
-   "n_concorda": 6,
+   "proposta": "Ampliar o acesso ao crédito produtivo.",
+   "n_concorda": 4,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      79
-     ],
-     "nota": "Facilitar crédito via regularização"
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
@@ -142,14 +135,6 @@
       713
      ],
      "nota": ""
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      137,
-      311
-     ],
-     "nota": "Crédito sempre acompanhado de orientação, via AFEAM"
     },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -182,8 +167,8 @@
   {
    "id": "p3",
    "subtema": "Turismo",
-   "proposta": "Elaborar plano estadual de desenvolvimento do turismo, com promoção do destino e estruturação da oferta",
-   "n_concorda": 5,
+   "proposta": "Promover o destino turístico do estado e estruturar a oferta turística.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -198,15 +183,13 @@
       725,
       727
      ],
-     "nota": "Plano para os 62 municípios"
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      324,
-      325
-     ],
-     "nota": "Calendários em doze polos ao longo do ano"
+     "nota": "Plano para os 62 municípios",
+     "metas": [
+      {
+       "rotulo": "municípios com promoção turística",
+       "valor": "62 municípios"
+      }
+     ]
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -282,7 +265,7 @@
   {
    "id": "p5",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Estruturar cadeias produtivas da bioeconomia e da sociobiodiversidade com beneficiamento e agregação de valor no interior",
+   "proposta": "Estruturar cadeias produtivas da bioeconomia e da sociobiodiversidade",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -337,7 +320,7 @@
    "id": "p6",
    "subtema": "Bioeconomia e cadeias da floresta",
    "proposta": "Criar sistema de certificação, rastreabilidade e selo de origem para produtos amazônicos",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -365,13 +348,6 @@
       40073
      ],
      "nota": "Sistema estadual, selo Bioativos Amazonas e IG"
-    },
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      18
-     ],
-     "nota": "Certificação restrita ao ecoturismo"
     }
    }
   },
@@ -480,7 +456,7 @@
   {
    "id": "p9",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Criar atendimento integrado e desburocratizado para abertura, formalização e licenciamento de empresas",
+   "proposta": "Criar atendimento integrado e desburocratizado para abertura e formalização de empresas",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -519,7 +495,7 @@
   {
    "id": "p10",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Usar o poder de compra do Estado para priorizar micro e pequenos negócios e produtos locais",
+   "proposta": "Usar o poder de compra do Estado, por meio das compras públicas, para priorizar micro e pequenos negócios",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -569,17 +545,9 @@
   {
    "id": "p11",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Defender e fortalecer o modelo da Zona Franca de Manaus, buscando segurança jurídica e competitividade do Polo Industrial",
-   "n_concorda": 5,
+   "proposta": "Defender e fortalecer o modelo da Zona Franca de Manaus.",
+   "n_concorda": 4,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      635,
-      640
-     ],
-     "nota": ""
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -619,15 +587,8 @@
    "id": "p12",
    "subtema": "Zona Franca e política industrial",
    "proposta": "Criar política de encadeamento produtivo entre o Polo Industrial de Manaus e fornecedores locais e do interior",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      639
-     ],
-     "nota": "Integração indústria-universidades"
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -663,8 +624,8 @@
   {
    "id": "p13",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Diversificar a matriz industrial do estado, atraindo novos segmentos e estimulando inovação, automação e indústria de baixo carbono",
-   "n_concorda": 5,
+   "proposta": "Diversificar a matriz industrial do estado",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -680,13 +641,6 @@
       314
      ],
      "nota": "Diversificação para complementar, não enfraquecer, a ZFM"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      255
-     ],
-     "nota": "Foco em barcos eficientes, motores elétricos e sistemas solares"
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -721,7 +675,7 @@
   {
    "id": "p14",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Criar um novo distrito industrial em Manaus, com área e infraestrutura para novos projetos",
+   "proposta": "Ampliar a área e a infraestrutura disponíveis para a instalação de novos projetos industriais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -751,7 +705,7 @@
   {
    "id": "p15",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Fortalecer a cadeia do pescado e a piscicultura com infraestrutura de beneficiamento, alevinos, ração e comercialização",
+   "proposta": "Fortalecer a cadeia do pescado e a piscicultura no estado.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -805,15 +759,8 @@
    "id": "p16",
    "subtema": "Pesca e aquicultura",
    "proposta": "Apoiar a pesca artesanal e o manejo comunitário de espécies como o pirarucu",
-   "n_concorda": 5,
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      696
-     ],
-     "nota": ""
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -830,20 +777,19 @@
      ],
      "nota": "Proteção de lagos de manejo e acordos de pesca"
     },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      863
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
       31045,
       32153
      ],
-     "nota": "Meta de manejo em pelo menos 100 lagos naturais"
+     "nota": "Meta de manejo em pelo menos 100 lagos naturais",
+     "metas": [
+      {
+       "rotulo": "manejo comunitário em lagos",
+       "valor": "pelo menos 100 lagos naturais"
+      }
+     ]
     }
    }
   },
@@ -892,7 +838,7 @@
   {
    "id": "p18",
    "subtema": "Regularização fundiária e ambiental rural",
-   "proposta": "Acelerar a regularização fundiária, ambiental e sanitária das áreas produtivas",
+   "proposta": "Avançar na regularização das atividades produtivas rurais.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -961,7 +907,7 @@
   {
    "id": "p20",
    "subtema": "Agricultura familiar e produção de alimentos",
-   "proposta": "Apoiar sistemas agroflorestais e a recuperação produtiva de áreas degradadas",
+   "proposta": "Apoiar sistemas agroflorestais.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1004,7 +950,7 @@
   {
    "id": "p21",
    "subtema": "Agricultura familiar e produção de alimentos",
-   "proposta": "Fomentar a produção orgânica e agroecológica com apoio técnico e certificação",
+   "proposta": "Fomentar a produção orgânica e agroecológica.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1041,7 +987,7 @@
   {
    "id": "p22",
    "subtema": "Agricultura familiar e produção de alimentos",
-   "proposta": "Fortalecer cooperativas e associações de produtores",
+   "proposta": "Fortalecer a organização coletiva de produtores.",
    "n_concorda": 6,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -1094,7 +1040,7 @@
   {
    "id": "p23",
    "subtema": "Agricultura familiar e produção de alimentos",
-   "proposta": "Apoiar casas de farinha e a cadeia da mandioca com mecanização e agregação de valor",
+   "proposta": "Apoiar casas de farinha.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1116,8 +1062,8 @@
   {
    "id": "p24",
    "subtema": "Agricultura familiar e produção de alimentos",
-   "proposta": "Distribuir sementes e mudas adaptadas aos territórios e criar bancos comunitários de sementes",
-   "n_concorda": 2,
+   "proposta": "Distribuir sementes e mudas adaptadas aos territórios.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -1125,13 +1071,6 @@
       271
      ],
      "nota": "Sementes e mudas crioulas"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      852
-     ],
-     "nota": ""
     }
    }
   },
@@ -1161,15 +1100,8 @@
    "id": "p26",
    "subtema": "Comercialização e escoamento da produção",
    "proposta": "Ampliar a infraestrutura de armazenagem, frigoríficos e agroindústrias para reduzir perdas e escoar a produção",
-   "n_concorda": 6,
+   "n_concorda": 5,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      76
-     ],
-     "nota": ""
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
@@ -1208,7 +1140,13 @@
       4354,
       4916
      ],
-     "nota": "Meta de dez agroindústrias de aquicultura e nove de fruticultura"
+     "nota": "Meta de dez agroindústrias de aquicultura e nove de fruticultura",
+     "metas": [
+      {
+       "rotulo": "agroindústrias construídas",
+       "valor": "10 (dez) agroindústrias"
+      }
+     ]
     }
    }
   },
@@ -1216,7 +1154,7 @@
    "id": "p27",
    "subtema": "Comercialização e escoamento da produção",
    "proposta": "Fortalecer feiras, mercados populares e circuitos curtos de comercialização",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -1234,13 +1172,6 @@
      ],
      "nota": "Reduzir dependência de atravessadores"
     },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      866
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1254,7 +1185,7 @@
   {
    "id": "p28",
    "subtema": "Comercialização e escoamento da produção",
-   "proposta": "Recuperar e manter estradas vicinais para o escoamento da produção rural",
+   "proposta": "Atuar nas estradas vicinais rurais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1283,8 +1214,8 @@
   {
    "id": "p29",
    "subtema": "Comercialização e escoamento da produção",
-   "proposta": "Criar programa estadual de aquisição da produção em período de safra para reduzir perdas e apoiar o escoamento",
-   "n_concorda": 3,
+   "proposta": "Adotar medidas estaduais de apoio ao escoamento da produção.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -1292,13 +1223,6 @@
       244
      ],
      "nota": "PROSAFRA, sem fixação administrativa de preço"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      844
-     ],
-     "nota": "Subvenção a produtos da sociobiodiversidade"
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1313,7 +1237,7 @@
   {
    "id": "p30",
    "subtema": "Mecanização e infraestrutura produtiva",
-   "proposta": "Ampliar a mecanização agrícola com máquinas e hora-máquina para produtores",
+   "proposta": "Ampliar a mecanização agrícola",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1343,7 +1267,7 @@
    "id": "p31",
    "subtema": "Comércio exterior e internacionalização",
    "proposta": "Criar política estadual de comércio exterior com inteligência comercial, missões e participação em feiras internacionais",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -1370,20 +1294,13 @@
       14587
      ],
      "nota": "Programa Exporta PIM, missões anuais e escritório na Ásia"
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      314
-     ],
-     "nota": "Exportação como foco de atenção específica"
     }
    }
   },
   {
    "id": "p32",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Criar estrutura estadual dedicada à atração e captação de investimentos",
+   "proposta": "Fortalecer os mecanismos estaduais de atendimento e promoção a investidores.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -1417,7 +1334,7 @@
   {
    "id": "p33",
    "subtema": "Incentivos fiscais e tributação",
-   "proposta": "Rever a política estadual de incentivos fiscais, com avaliação periódica e transparência sobre os benefícios concedidos",
+   "proposta": "Rever a política estadual de incentivos fiscais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -1448,7 +1365,7 @@
   {
    "id": "p34",
    "subtema": "Incentivos fiscais e tributação",
-   "proposta": "Condicionar os incentivos estaduais a contrapartidas sociais, ambientais e de trabalho decente verificáveis",
+   "proposta": "Condicionar a concessão de incentivos a contrapartidas sociais e ambientais verificáveis.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1498,14 +1415,20 @@
       32629,
       40083
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios atendidos",
+       "valor": "todos os 62 municípios"
+      }
+     ]
     }
    }
   },
   {
    "id": "p37",
    "subtema": "Governança e planejamento econômico",
-   "proposta": "Elaborar plano estadual de desenvolvimento econômico com metas e prioridades setoriais",
+   "proposta": "Elaborar plano estadual de desenvolvimento econômico",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1542,7 +1465,7 @@
   {
    "id": "p38",
    "subtema": "Governança e planejamento econômico",
-   "proposta": "Criar observatório de monitoramento do mercado de trabalho, renda e economia",
+   "proposta": "Criar um observatório estadual.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -1606,7 +1529,7 @@
    "id": "p40",
    "subtema": "Economia criativa e cultural",
    "proposta": "Desenvolver a economia criativa (audiovisual, moda, design, games, artesanato, gastronomia) como setor econômico estratégico",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -1633,13 +1556,6 @@
       728
      ],
      "nota": "Via fortalecimento de festivais e manifestações culturais"
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      259
-     ],
-     "nota": "Economia criativa ligada ao turismo rural"
     }
    }
   },
@@ -1647,7 +1563,7 @@
    "id": "p41",
    "subtema": "Infraestrutura turística",
    "proposta": "Executar obras de infraestrutura turística e de eventos, incluindo equipamentos âncora",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -1667,21 +1583,6 @@
       10370
      ],
      "nota": "Novo centro de eventos e parques temáticos"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      505,
-      509
-     ],
-     "nota": "Foco em Manaus como porta de entrada"
-    },
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      18
-     ],
-     "nota": "Ampliar conectividade e viabilizar concessões"
     }
    }
   },
@@ -1706,7 +1607,7 @@
    "id": "p43",
    "subtema": "Defesa agropecuária e sanitária",
    "proposta": "Fortalecer a defesa agropecuária e a inspeção sanitária animal e vegetal",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -1721,20 +1622,6 @@
       864
      ],
      "nota": "Fortalecer a ADAF e a vacinação dos rebanhos"
-    },
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      696
-     ],
-     "nota": "Certificação sanitária do pescado"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      243
-     ],
-     "nota": "Procedimentos proporcionais para a produção comunitária"
     }
    }
   },
@@ -1829,8 +1716,8 @@
   {
    "id": "p49",
    "subtema": "Conhecimento tradicional e repartição de benefícios",
-   "proposta": "Criar política estadual de repartição justa de benefícios e proteção do conhecimento tradicional associado à biodiversidade",
-   "n_concorda": 2,
+   "proposta": "Criar política estadual de repartição justa de benefícios e de proteção do conhecimento tradicional associado à biodiversidade.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -1839,23 +1726,14 @@
       241
      ],
      "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      11195,
-      11386,
-      11583
-     ],
-     "nota": "Via alteração da Resolução CAPDA nº 09/2019"
     }
    }
   },
   {
    "id": "p50",
    "subtema": "Conhecimento tradicional e repartição de benefícios",
-   "proposta": "Estruturar cadeias produtivas da sociobiodiversidade indígena com consulta prévia e inserção em compras institucionais",
-   "n_concorda": 2,
+   "proposta": "Estruturar cadeias produtivas da sociobiodiversidade indígena e ampliar sua inserção em compras institucionais.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -1865,21 +1743,13 @@
       38856
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      234,
-      239
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p51",
    "subtema": "Microcrédito e inclusão produtiva",
-   "proposta": "Ampliar linhas de microcrédito e crédito orientado voltadas a mulheres, jovens e negócios comunitários",
+   "proposta": "Ampliar linhas de crédito.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -1997,7 +1867,7 @@
    "id": "p55",
    "subtema": "Tecnologia para a produção rural",
    "proposta": "Criar plataforma digital de assistência técnica e informação de mercado para produtores",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -2005,14 +1875,6 @@
       240
      ],
      "nota": "ATER Digital com funcionamento offline quando possível"
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      4255,
-      13081
-     ],
-     "nota": "Vouchers tecnológicos e banco de dados da produção"
     }
    }
   },
@@ -2020,7 +1882,7 @@
    "id": "p56",
    "subtema": "Tecnologia para a produção rural",
    "proposta": "Formar extensionistas rurais em parceria com universidades e instituições de ensino técnico",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -2028,13 +1890,6 @@
       237
      ],
      "nota": "Parcerias com UEA e CETAM"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      492
-     ],
-     "nota": "Programa Qualifica Interior, com foco na sucessão produtiva"
     }
    }
   },
@@ -2042,7 +1897,7 @@
    "id": "p57",
    "subtema": "Manejo florestal madeireiro",
    "proposta": "Ampliar a produção florestal madeireira e não madeireira por meio de concessões florestais e industrialização",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -2052,13 +1907,6 @@
       8038
      ],
      "nota": "Criação da \"Agenda Forte\" e atração de investidores florestais"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      839
-     ],
-     "nota": "Apoio às cadeias da sociobiodiversidade, sem menção a concessões"
     }
    }
   },
@@ -2110,7 +1958,7 @@
   {
    "id": "p61",
    "subtema": "Tecnologia para a produção rural",
-   "proposta": "Investir em pesquisa de novos produtos e processos biotecnológicos e implantar unidades demonstrativas e áreas de referência tecnológica para difusão de boas práticas agrícolas e manejo sustentável",
+   "proposta": "Investir em pesquisa de novos produtos e processos biotecnológicos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -2138,7 +1986,7 @@
   {
    "id": "p62",
    "subtema": "Comercialização e escoamento da produção",
-   "proposta": "Ampliar as compras públicas da agricultura familiar e garantir pagamento pontual aos fornecedores",
+   "proposta": "Ampliar as compras públicas da agricultura familiar.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -2180,23 +2028,9 @@
   {
    "id": "p63",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Fiscalizar a pesca industrial predatória e assegurar os direitos dos pescadores artesanais",
-   "n_concorda": 3,
+   "proposta": "Fiscalizar a pesca industrial predatória e respeitar os direitos dos pescadores artesanais.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      696
-     ],
-     "nota": "Apoio à pesca artesanal e manejo sustentável"
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      235
-     ],
-     "nota": "Política Estadual de Pesca com apoio a pescadores e organizações"
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -2210,30 +2044,14 @@
    "id": "p64",
    "subtema": "Regularização fundiária e ambiental rural",
    "proposta": "Condicionar as políticas fundiárias ao cumprimento da função social, da legislação ambiental e à ausência de trabalho degradante",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      232
-     ],
-     "nota": "Regularização condicionada a regras ambientais e fundiárias"
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
       418
      ],
      "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      4272,
-      4311,
-      32165
-     ],
-     "nota": "Regularização fundiária/ambiental integrada e rastreabilidade vinculada ao CAR para crédito rural."
     }
    }
   },
@@ -2318,7 +2136,7 @@
   {
    "id": "p69",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Promover a fruticultura amazonense em âmbito internacional",
+   "proposta": "Promover produtos amazonenses em âmbito internacional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -2357,7 +2175,7 @@
   {
    "id": "p71",
    "subtema": "Fruticultura",
-   "proposta": "Promover a agregação de valor a partir de princípios ativos da fruticultura (fitocosméticos, fitofármacos, alimentos funcionais, bioembalagens, corantes, aromatizantes, suplementos e insumos para ração)",
+   "proposta": "Promover a agregação de valor por meio de produtos como fitocosméticos, fitofármacos, alimentos funcionais, bioembalagens, corantes, aromatizantes, suplementos e insumos para ração.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -2380,7 +2198,7 @@
    "id": "p72",
    "subtema": "Comercialização e escoamento da produção",
    "proposta": "Estabelecer infraestrutura logística no interior (comunicação, transporte, armazenamento, rede lógica e eletricidade) para as cadeias produtivas",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -2402,14 +2220,6 @@
      "posicao": "concorda",
      "blocos": [
       237
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      379,
-      459
      ],
      "nota": ""
     },
@@ -2561,7 +2371,7 @@
   {
    "id": "p82",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Apoiar a Feira Internacional da Gastronomia Amazonense associando os setores da agropecuária estadual",
+   "proposta": "Apoiar eventos de promoção da gastronomia amazônica, associando-os aos setores da agropecuária estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -2598,7 +2408,7 @@
   {
    "id": "p84",
    "subtema": "Regularização fundiária e ambiental rural",
-   "proposta": "Instituir programas de regularização ambiental, fundiária, fiscal e sanitária para as cadeias produtivas agrícolas e da sociobiodiversidade",
+   "proposta": "Promover a regularização das cadeias produtivas agrícolas e da sociobiodiversidade.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2644,7 +2454,7 @@
   {
    "id": "p85",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Elaborar plano estratégico de desenvolvimento da aquicultura, com cadeia produtiva estruturada, certificada e voltada à agregação de valor",
+   "proposta": "Estruturar a cadeia produtiva da aquicultura com foco na agregação de valor.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -2843,7 +2653,7 @@
   {
    "id": "p97",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Construir agroindústrias da aquicultura com infraestrutura de armazenamento e transporte da produção e apoio à comercialização",
+   "proposta": "Implantar agroindústrias de beneficiamento da produção da aquicultura.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -2890,16 +2700,8 @@
    "id": "p99",
    "subtema": "Comercialização e escoamento da produção",
    "proposta": "Dobrar o valor investido no Programa de Regionalização da Merenda Escolar",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      239,
-      275
-     ],
-     "nota": "Ampliar compras regionais e da agricultura familiar para escolas"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2928,15 +2730,8 @@
    "id": "p101",
    "subtema": "Pesca e aquicultura",
    "proposta": "Criar programa de certificação e rastreabilidade da aquicultura do Amazonas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      696
-     ],
-     "nota": "Certificação sanitária do pescado"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2982,15 +2777,8 @@
    "id": "p104",
    "subtema": "Comércio exterior e internacionalização",
    "proposta": "Realizar a Feira Internacional da Gastronomia Amazonense com foco em produtos regionais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      511
-     ],
-     "nota": "Política de gastronomia e eventos de promoção da culinária amazônica"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3018,7 +2806,7 @@
   {
    "id": "p106",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Duplicar até 2030 a oferta de proteína animal proveniente da aquicultura para os mercados local e nacional",
+   "proposta": "Ampliar a oferta de proteína animal proveniente da aquicultura para os mercados local e nacional",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -3086,16 +2874,9 @@
   {
    "id": "p110",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Simplificar exigências legais para pequenos produtores aquícolas e regulamentar o uso de ingredientes alternativos na ração",
-   "n_concorda": 2,
+   "proposta": "Simplificar exigências legais para pequenos produtores da aquicultura e regulamentar o uso de ingredientes alternativos na ração.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      243
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3109,16 +2890,8 @@
    "id": "p111",
    "subtema": "Pesca e aquicultura",
    "proposta": "Criar linhas de crédito diferenciadas para produtores familiares e médios empreendedores aquícolas e incentivar a formação de cooperativas regionais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      696,
-      704
-     ],
-     "nota": "Crédito rural e da agência de fomento para o pescado"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3195,7 +2968,7 @@
   {
    "id": "p115",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Criar polos de bioeconomia e beneficiamento de produtos florestais madeireiros e não madeireiros no interior, ampliar linhas de financiamento (BASA, BNDES, Fundo Amazônia, BID) e adotar compras públicas verdes",
+   "proposta": "Fomentar a bioeconomia e o beneficiamento de produtos florestais.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -3245,32 +3018,8 @@
    "id": "p116",
    "subtema": "Bioeconomia e cadeias da floresta",
    "proposta": "Organizar Arranjos Produtivos Locais das cadeias florestais e capacitar e fomentar cooperativas, com foco em comunidades tradicionais, mulheres e jovens",
-   "n_concorda": 4,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      653,
-      655
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      221,
-      238
-     ],
-     "nota": "Cooperativas, mulheres e juventudes com crédito e assistência"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      839,
-      848
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3299,15 +3048,8 @@
    "id": "p118",
    "subtema": "Crédito e fomento",
    "proposta": "Firmar convênios com fundos internacionais (Fundo Amazônia, BID, Fundo Verde) e criar garantias de risco para atrair investidores privados ao setor florestal",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      659
-     ],
-     "nota": "Fundos ambientais e climáticos internacionais e crédito verde"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3339,16 +3081,8 @@
    "id": "p120",
    "subtema": "Comercialização e escoamento da produção",
    "proposta": "Criar marketplace estadual para produtos regionais e adotar compras públicas verdes",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      239,
-      274
-     ],
-     "nota": "Compras públicas de produtos regionais e circuitos curtos"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3361,18 +3095,9 @@
   {
    "id": "p121",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Consolidar polos industriais e bioindustriais em microrregiões estratégicas e estruturar cadeias de serviços ambientais e crédito de carbono em horizonte de dez anos",
-   "n_concorda": 2,
+   "proposta": "Consolidar polos industriais e bioindustriais em microrregiões estratégicas e estruturar cadeias de serviços ambientais e crédito de carbono no horizonte de dez anos.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      635,
-      651,
-      653
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3385,7 +3110,7 @@
   {
    "id": "p122",
    "subtema": "Governança e planejamento econômico",
-   "proposta": "Criar linha de ação de governança, marco legal e gestão estratégica dos fundos de desenvolvimento ligados à Zona Franca e à reforma tributária",
+   "proposta": "Instituir ação específica dedicada à Zona Franca de Manaus no contexto da reforma tributária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -3423,7 +3148,7 @@
   {
    "id": "p124",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Transformar o Amazonas em polo nacional de bioindústria de fitofármacos, fitoterápicos, fitocosméticos e insumos farmacêuticos ativos vegetais",
+   "proposta": "Desenvolver no Amazonas a produção industrial de fitoterápicos, fitofármacos, cosméticos e outros derivados da biodiversidade vegetal.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -3454,16 +3179,8 @@
    "id": "p125",
    "subtema": "Emprego e qualificação profissional",
    "proposta": "Criar Programa de Requalificação do Trabalho Extrativista para requalificar extrativistas e agricultores familiares como atores da bioeconomia",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      236,
-      256
-     ],
-     "nota": "Formação e transição para extrativistas/trabalhadores"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3478,33 +3195,9 @@
   {
    "id": "p126",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Criar o Programa Bioindústrias Amazônicas de apoio à implantação e modernização de unidades de beneficiamento de produtos da floresta e da agroindústria regional",
-   "n_concorda": 4,
+   "proposta": "Criar o Programa Bioindústrias Amazônicas, de apoio à implantação e à modernização de unidades de beneficiamento de produtos da floresta e da agroindústria regional.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      651,
-      684
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      237,
-      238
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      850,
-      867
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3628,8 +3321,8 @@
   {
    "id": "p134",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Simplificar e padronizar o licenciamento dentro dos limites legais e estimular compras públicas de inovação",
-   "n_concorda": 5,
+   "proposta": "Simplificar o licenciamento.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -3637,21 +3330,6 @@
       11
      ],
      "nota": "Simplificar licenciamento de baixo risco e digitalizar processos"
-    },
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      715,
-      716
-     ],
-     "nota": "Compras governamentais e apoio à inovação"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      243
-     ],
-     "nota": ""
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -3673,7 +3351,7 @@
   {
    "id": "p135",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Transformar o Polo Industrial de Manaus em plataforma de Indústria 4.0 e de baixa intensidade de carbono",
+   "proposta": "Impulsionar a modernização tecnológica do Polo Industrial de Manaus, com automação, digitalização e inovação (Indústria 4.0).",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -3714,17 +3392,8 @@
    "id": "p136",
    "subtema": "Zona Franca e política industrial",
    "proposta": "Interiorizar a atividade industrial com investimentos em qualificação, infraestrutura logística e mecanismos de financiamento territorializados",
-   "n_concorda": 5,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      651,
-      653,
-      684
-     ],
-     "nota": ""
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -3734,28 +3403,12 @@
      ],
      "nota": ""
     },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      222,
-      251,
-      261
-     ],
-     "nota": ""
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
       379,
       482,
       488
-     ],
-     "nota": ""
-    },
-    "governador-am-omar-aziz-40002532272": {
-     "posicao": "concorda",
-     "blocos": [
-      8931
      ],
      "nota": ""
     }
@@ -3779,8 +3432,8 @@
   {
    "id": "p138",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Ampliar instrumentos de incentivo a inovação, PD&I e transferência tecnológica para modernização, digitalização e automação industrial",
-   "n_concorda": 4,
+   "proposta": "Impulsionar a inovação tecnológica na indústria.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -3788,14 +3441,6 @@
       635,
       637,
       639
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      253,
-      261
      ],
      "nota": ""
     },
@@ -3820,30 +3465,8 @@
    "id": "p139",
    "subtema": "Zona Franca e política industrial",
    "proposta": "Fortalecer o marco legal da Zona Franca e ampliar a participação do governo estadual na formulação dos Processos Produtivos Básicos, com transparência dos fluxos de decisão",
-   "n_concorda": 4,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      313
-     ],
-     "nota": "ZFM defendida como patrimônio econômico estratégico"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      253
-     ],
-     "nota": "Defende segurança jurídica e modernização do modelo ZFM"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      480,
-      481
-     ],
-     "nota": "Mesa Permanente da ZFM e defesa institucional do modelo"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3886,7 +3509,7 @@
   {
    "id": "p142",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Construir Plano de Atração de Investimentos para o Amazonas, com atualização do portfólio industrial, modernização do PPB, roadshows e missões internacionais",
+   "proposta": "Articular ações voltadas à atração de investimentos para o Amazonas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -3976,7 +3599,7 @@
   {
    "id": "p147",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Atrair e consolidar novos segmentos industriais de química fina, fármacos de base biológica, fitocosméticos, equipamentos para energias renováveis e serviços ambientais por meio de instrumentos não tributários",
+   "proposta": "Atrair e consolidar novos segmentos industriais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -4053,7 +3676,7 @@
   {
    "id": "p151",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Prestar suporte técnico para padrões de qualidade, rastreabilidade e design de produtos, apoiar obtenção de certificações (orgânica, comércio justo, indicações geográficas) e articular compras públicas e exportação",
+   "proposta": "Apoiar a obtenção de certificações (como comércio justo e indicações geográficas) e a rastreabilidade dos produtos, e articular as compras públicas para sua comercialização.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -4085,25 +3708,9 @@
   {
    "id": "p152",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Ampliar o Fundo de Encadeamento Produtivo PIM–Interior (FTI/AFEAM) com crédito, garantias e assistência técnica a fornecedores do interior e metas progressivas monitoradas de participação nas compras do PIM",
-   "n_concorda": 4,
+   "proposta": "Ampliar a participação de fornecedores locais nas cadeias de suprimento do Polo Industrial de Manaus.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      313,
-      314,
-      317
-     ],
-     "nota": "Fornecedores locais nas cadeias do PIM"
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      222
-     ],
-     "nota": "Encadeamentos PIM-fornecedores locais"
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -4123,23 +3730,9 @@
   {
    "id": "p153",
    "subtema": "Indústria naval",
-   "proposta": "Apoiar a modernização e expansão de estaleiros e oficinas metalmecânicas com crédito, garantias, assistência técnica e inovação em projeto e motorização",
-   "n_concorda": 3,
+   "proposta": "Apoiar a modernização e expansão de estaleiros e oficinas metalmecânicas, com acesso a crédito, garantias, assistência técnica e inovação em projeto.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      255
-     ],
-     "nota": "Produção e manutenção de barcos e motores eficientes"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      475
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4168,15 +3761,8 @@
    "id": "p155",
    "subtema": "Indústria naval",
    "proposta": "Definir padrões técnicos de segurança, emissões, acessibilidade e conforto para embarcações em articulação com órgãos federais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      255
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4205,15 +3791,8 @@
    "id": "p157",
    "subtema": "Indústria naval",
    "proposta": "Criar o Programa Indústria Naval e Logística Fluvial",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      475
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4226,8 +3805,8 @@
   {
    "id": "p158",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Integrar a política da Zona Franca de Manaus a uma política estadual de pesquisa, desenvolvimento e inovação",
-   "n_concorda": 5,
+   "proposta": "Articular a política da Zona Franca de Manaus com a pesquisa, o desenvolvimento e a inovação, aproximando o parque industrial das universidades.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -4252,14 +3831,6 @@
       222,
       253,
       261
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      461,
-      463
      ],
      "nota": ""
     },
@@ -4290,17 +3861,9 @@
   {
    "id": "p160",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Criar o Fundo de Encadeamento Produtivo PIM–Interior para que empresas do interior substituam insumos adquiridos de outras regiões",
-   "n_concorda": 4,
+   "proposta": "Promover o encadeamento produtivo entre o Polo Industrial de Manaus e fornecedores locais.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      313,
-      314
-     ],
-     "nota": ""
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -4327,7 +3890,7 @@
   {
    "id": "p161",
    "subtema": "Indústria naval",
-   "proposta": "Descentralizar estaleiros, oficinas e serviços de manutenção naval ao longo dos rios do interior",
+   "proposta": "Descentralizar a atividade naval, levando-a também para o interior.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -4379,17 +3942,9 @@
   {
    "id": "p164",
    "subtema": "Turismo",
-   "proposta": "Integrar o comércio a atividades culturais, turísticas e ambientais, fomentando o consumo local e o turismo interno em meses selecionados",
-   "n_concorda": 2,
+   "proposta": "Integrar o comércio a atividades culturais, turísticas e ambientais, fomentando o consumo local e o turismo interno.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      510,
-      511
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4435,7 +3990,7 @@
   {
    "id": "p167",
    "subtema": "Empreendedorismo e pequenos negócios",
-   "proposta": "Ampliar o diálogo público-privado, estimular a adoção de tecnologias digitais e diversificar atividades comerciais com foco em micro e pequenas empresas",
+   "proposta": "Estimular a adoção de tecnologias digitais com foco em micro e pequenas empresas",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -4459,17 +4014,8 @@
    "id": "p168",
    "subtema": "Empreendedorismo e pequenos negócios",
    "proposta": "Criar polos comerciais regionais no interior integrados a melhorias logísticas, com formalização, simplificação tributária, acesso a crédito e capacitação em gestão e digitalização",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      221,
-      223,
-      638
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -4838,7 +4384,7 @@
   {
    "id": "p191",
    "subtema": "Turismo",
-   "proposta": "Segmentar a oferta turística e consolidar um calendário turístico estadual",
+   "proposta": "Segmentar a oferta turística em diferentes modalidades.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -4877,7 +4423,7 @@
    "id": "p192",
    "subtema": "Turismo",
    "proposta": "Interiorizar as políticas públicas de turismo",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -4893,13 +4439,6 @@
       325
      ],
      "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      225
-     ],
-     "nota": "Turismo de base comunitária sob controle local"
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -4937,7 +4476,7 @@
    "id": "p194",
    "subtema": "Infraestrutura turística",
    "proposta": "Aprimorar a logística de acesso ao estado e aos destinos do interior, ampliando a conectividade aérea, fluvial e rodoviária",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
@@ -4945,14 +4484,6 @@
       18
      ],
      "nota": "Ampliar conectividade e acesso aos destinos"
-    },
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      725,
-      729
-     ],
-     "nota": ""
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -5074,7 +4605,7 @@
   {
    "id": "p200",
    "subtema": "Turismo",
-   "proposta": "Fortalecer a promoção, a qualificação e a governança do turismo no estado",
+   "proposta": "Fortalecer a promoção e a qualificação do turismo no estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -5119,30 +4650,15 @@
   {
    "id": "p202",
    "subtema": "Turismo",
-   "proposta": "Digitalizar a promoção turística, captar novos voos nacionais e internacionais, fortalecer o turismo de cruzeiros e a pesca esportiva e consolidar produtos de base comunitária com certificação e rastreabilidade",
-   "n_concorda": 5,
+   "proposta": "Fortalecer o turismo de cruzeiros e a pesca esportiva e consolidar produtos turísticos de base comunitária.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      18
-     ],
-     "nota": "Promoção internacional, certificação do ecoturismo"
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
       730
      ],
      "nota": ""
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      259,
-      324
-     ],
-     "nota": "Pesca esportiva e turismo de base comunitária"
     },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
@@ -5179,7 +4695,7 @@
   {
    "id": "p204",
    "subtema": "Turismo",
-   "proposta": "Fortalecer Manaus como hub turístico e logístico e assegurar financiamento contínuo do turismo por meio do uso estratégico do Fundo de Fomento ao Turismo (FTI)",
+   "proposta": "Fortalecer Manaus como polo turístico.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -5308,7 +4824,7 @@
   {
    "id": "p212",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Criar sistema integrado de qualificação profissional e empreendedora para o turismo",
+   "proposta": "Promover a qualificação profissional para o turismo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -5331,15 +4847,8 @@
    "id": "p213",
    "subtema": "Turismo",
    "proposta": "Criar núcleos municipais de turismo, qualificar comunidades locais e incentivar a formalização de empreendimentos turísticos no interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      225
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5352,17 +4861,9 @@
   {
    "id": "p214",
    "subtema": "Turismo",
-   "proposta": "Criar calendário turístico-cultural integrado para ampliar fluxos a diferentes regiões e reduzir a sazonalidade",
-   "n_concorda": 4,
+   "proposta": "Criar calendário turístico-cultural integrado para ampliar o fluxo de visitantes a diferentes regiões.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      727,
-      728
-     ],
-     "nota": ""
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -5422,16 +4923,8 @@
    "id": "p216",
    "subtema": "Zona Franca e política industrial",
    "proposta": "Adaptar os incentivos da Zona Franca para reconhecer produtos da biodiversidade como estratégicos, flexibilizando critérios do Processo Produtivo Básico e estimulando plantas industriais no interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      251,
-      261
-     ],
-     "nota": "Contrapartidas e encadeamentos locais na ZFM"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5490,15 +4983,8 @@
    "id": "p220",
    "subtema": "Incentivos fiscais e tributação",
    "proposta": "Atualizar a Portaria Interministerial nº 300/1996 para permitir a importação de insumos e equipamentos essenciais à bioindústria",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      253
-     ],
-     "nota": "Modernização do marco da ZFM com metas verificáveis"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5527,7 +5013,7 @@
   {
    "id": "p222",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Interiorizar a produção e a inovação com instalação de unidades fabris e laboratórios fora da capital",
+   "proposta": "Interiorizar a produção.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -5655,16 +5141,8 @@
    "id": "p229",
    "subtema": "Incentivos fiscais e tributação",
    "proposta": "Expandir o uso dos incentivos fiscais da Zona Franca para acelerar a industrialização com matéria-prima regional",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      220,
-      251
-     ],
-     "nota": "Incentivos condicionados a metas e conteúdo local"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5678,16 +5156,8 @@
    "id": "p230",
    "subtema": "Bioeconomia e cadeias da floresta",
    "proposta": "Mapear a produção, as áreas de incidência de espécies e as pesquisas existentes, garantindo rastreabilidade, certificação de origem e manejo sustentável",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      489,
-      845
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5716,7 +5186,7 @@
   {
    "id": "p232",
    "subtema": "Governança e planejamento econômico",
-   "proposta": "Melhorar a coordenação entre governo, academia e setor produtivo, integrando bioeconomia, saúde, ciência e indústria",
+   "proposta": "Melhorar a coordenação entre governo, academia e setor produtivo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -5740,25 +5210,8 @@
    "id": "p233",
    "subtema": "Crédito e fomento",
    "proposta": "Criar linhas exclusivas de financiamento para cooperativas e agricultores familiares com produtos éticos, veganos e sustentáveis, melhorando sua governança",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      221,
-      238
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      489,
-      848,
-      862
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5772,15 +5225,8 @@
    "id": "p234",
    "subtema": "Regularização fundiária e ambiental rural",
    "proposta": "Atualizar normas fiscais, ambientais e fundiárias e ampliar certificações e rastreabilidade das cadeias produtivas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      79
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -5841,7 +5287,7 @@
   {
    "id": "p238",
    "subtema": "Conhecimento tradicional e repartição de benefícios",
-   "proposta": "Propor alteração da Resolução CAPDA nº 09/2019 para incluir no Programa Prioritário de Bioeconomia a valorização e proteção do conhecimento tradicional com participação ativa das comunidades",
+   "proposta": "Promover a valorização e a proteção do conhecimento tradicional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -5897,7 +5343,7 @@
   {
    "id": "p241",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Definir localização e implantar Unidades Piloto de Beneficiamento e Extração de Bioativos",
+   "proposta": "Implantar unidades de beneficiamento de produtos da biodiversidade.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -5922,7 +5368,7 @@
   {
    "id": "p242",
    "subtema": "Crédito e fomento",
-   "proposta": "Criar a Linha de Crédito Bioativos Amazonas para fomento do setor de fitofármacos e fitoterápicos",
+   "proposta": "Criar linhas de crédito para fomentar cadeias produtivas da biodiversidade amazônica.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -5995,7 +5441,7 @@
   {
    "id": "p246",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Apoiar a participação de produtores e empreendedores em feiras, rodadas de negócios e eventos nacionais e internacionais",
+   "proposta": "Apoiar a participação de produtores e empreendedores em feiras e eventos",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -6043,7 +5489,13 @@
       11422,
       11423
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "Unidades Piloto de Beneficiamento",
+       "valor": "9 unidades"
+      }
+     ]
     }
    }
   },
@@ -6090,7 +5542,13 @@
      "blocos": [
       11507
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "missões institucionais internacionais",
+       "valor": "3 missões por ano"
+      }
+     ]
     }
    }
   },
@@ -6210,7 +5668,7 @@
   {
    "id": "p259",
    "subtema": "Zona Franca e política industrial",
-   "proposta": "Reorientar a Zona Franca de Manaus para apoiar cadeias produtivas regionais até 2073",
+   "proposta": "Reorientar a Zona Franca de Manaus para apoiar cadeias produtivas regionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -6248,16 +5706,9 @@
   {
    "id": "p261",
    "subtema": "Tecnologia para a produção rural",
-   "proposta": "Apoiar linha de pesquisa em tecnologias para produção agropecuária, aquícola e pesqueira adaptadas à Amazônia",
-   "n_concorda": 4,
+   "proposta": "Apoiar pesquisa voltada à produção sustentável na região.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      76
-     ],
-     "nota": "Aproximar pesquisa e produtores rurais, pesqueiros e aquícolas"
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -6286,7 +5737,7 @@
   {
    "id": "p262",
    "subtema": "Tecnologia para a produção rural",
-   "proposta": "Apoiar pesquisa em sistemas agroflorestais e produtivos de base hídrica de alta produtividade",
+   "proposta": "Apoiar sistemas agroflorestais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -6317,39 +5768,13 @@
   {
    "id": "p263",
    "subtema": "Tecnologia para a produção rural",
-   "proposta": "Apoiar pesquisa de valorização da agricultura familiar, pesca artesanal e cadeias curtas de abastecimento com suporte tecnológico",
-   "n_concorda": 5,
+   "proposta": "Apoiar pesquisa de valorização da agricultura familiar e da pesca artesanal com suporte tecnológico",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
      "posicao": "concorda",
      "blocos": [
       76
-     ],
-     "nota": ""
-    },
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      236,
-      237,
-      257
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      272,
-      274,
-      275
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      855,
-      866
      ],
      "nota": ""
     },
@@ -6366,7 +5791,7 @@
    "id": "p264",
    "subtema": "Tecnologia para a produção rural",
    "proposta": "Apoiar pesquisa em inovação no processamento, conservação e agregação de valor a produtos agroflorestais e pesqueiros",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -6374,14 +5799,6 @@
       262,
       263,
       269
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      237,
-      240
      ],
      "nota": ""
     },
@@ -6421,16 +5838,8 @@
    "id": "p266",
    "subtema": "Bioeconomia e cadeias da floresta",
    "proposta": "Apoiar startups e bionegócios que usem inteligência artificial para rastreabilidade, manejo sustentável e agregação de valor a produtos da floresta",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      240,
-      261
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -6514,7 +5923,7 @@
   {
    "id": "p269",
    "subtema": "Governança e planejamento econômico",
-   "proposta": "Interiorizar o desenvolvimento econômico e reduzir desigualdades territoriais",
+   "proposta": "Interiorizar o desenvolvimento econômico, gerando emprego e renda no interior do Estado.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -6604,25 +6013,9 @@
   {
    "id": "p272",
    "subtema": "Microcrédito e inclusão produtiva",
-   "proposta": "Incentivar a inclusão produtiva de jovens, mulheres e comunidades tradicionais na economia criativa",
-   "n_concorda": 3,
+   "proposta": "Incentivar a inclusão produtiva de jovens, mulheres e comunidades tradicionais.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      238,
-      724
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      473,
-      476
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -6757,17 +6150,9 @@
   {
    "id": "p281",
    "subtema": "Turismo",
-   "proposta": "Criar rotas culturais e de turismo de experiência baseadas em música, festivais, gastronomia e patrimônio",
-   "n_concorda": 4,
+   "proposta": "Promover o turismo integrado à cultura, aos festivais e à gastronomia regional.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      728,
-      730
-     ],
-     "nota": ""
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -6919,7 +6304,7 @@
   {
    "id": "p290",
    "subtema": "Economia criativa e cultural",
-   "proposta": "Estruturar Arranjos Produtivos Locais de artesanato, moda regional, gastronomia, audiovisual, turismo cultural e economia digital",
+   "proposta": "Fomentar os setores de artesanato, moda regional, gastronomia e audiovisual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -6973,7 +6358,7 @@
   {
    "id": "p292",
    "subtema": "Microcrédito e inclusão produtiva",
-   "proposta": "Criar linhas de crédito adaptadas às dinâmicas dos territórios tradicionais",
+   "proposta": "Criar linhas de crédito",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -7004,7 +6389,7 @@
   {
    "id": "p293",
    "subtema": "Comercialização e escoamento da produção",
-   "proposta": "Criar rotas de comercialização territorial para produtos locais",
+   "proposta": "Apoiar a comercialização de produtos locais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -7135,7 +6520,7 @@
   {
    "id": "p301",
    "subtema": "Microcrédito e inclusão produtiva",
-   "proposta": "Ofertar linhas de crédito, mentorias e qualificação voltadas a mulheres da economia criativa",
+   "proposta": "Ofertar linhas de crédito acompanhadas de orientação e qualificação a empreendedores, com prioridade para mulheres.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -7232,7 +6617,7 @@
   {
    "id": "p307",
    "subtema": "Turismo",
-   "proposta": "Desenvolver o turismo de experiência sustentável",
+   "proposta": "Desenvolver o turismo no estado.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -7330,7 +6715,7 @@
   {
    "id": "p311",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Firmar parcerias com organismos multilaterais (BID, CAF, Banco Mundial, JICA, Fundo Amazônia) para captação de investimentos",
+   "proposta": "Captar investimentos e recursos internacionais para projetos estratégicos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -7427,15 +6812,8 @@
    "id": "p316",
    "subtema": "Comércio exterior e internacionalização",
    "proposta": "Instituir a agência estadual de promoção de investimentos Amazonas Invest",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      16
-     ],
-     "nota": "Fortalecer porta de entrada para investidores e exportadores"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -7499,16 +6877,8 @@
    "id": "p320",
    "subtema": "Comércio exterior e internacionalização",
    "proposta": "Realizar roadshows, missões técnicas e apresentações em capitais internacionais (Programa Amazonas Global)",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      501,
-      502
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -7594,8 +6964,8 @@
   {
    "id": "p325",
    "subtema": "Emprego e qualificação profissional",
-   "proposta": "Articular empregadores e o SINE/AM para inserção e reinserção no mercado de trabalho de jovens, adultos e egressos do sistema penal, com acesso às linhas de fomento da AFEAM para empreender",
-   "n_concorda": 3,
+   "proposta": "Articular empregadores, o SINE/AM e as linhas de crédito da AFEAM para inserção e reinserção no mercado de trabalho e apoio a quem quer empreender.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
@@ -7604,14 +6974,6 @@
       307,
       308,
       311
-     ],
-     "nota": ""
-    },
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      208,
-      724
      ],
      "nota": ""
     },
@@ -7649,8 +7011,8 @@
   {
    "id": "p327",
    "subtema": "Microcrédito e inclusão produtiva",
-   "proposta": "Ampliar o programa de crédito para mulheres (Crédito Rosa) como política de geração de renda",
-   "n_concorda": 3,
+   "proposta": "Oferecer crédito a mulheres como política de geração de renda.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
@@ -7658,13 +7020,6 @@
       238
      ],
      "nota": "Crédito orientado para mulheres"
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      473
-     ],
-     "nota": ""
     },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
@@ -7708,7 +7063,7 @@
   {
    "id": "p330",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Apoiar o cooperativismo e o empreendedorismo de base florestal, ampliando o acesso ao crédito verde e à inovação tecnológica",
+   "proposta": "Apoiar o empreendedorismo de base florestal.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -7772,7 +7127,7 @@
   {
    "id": "p332",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Promover industrialização leve e descentralizada no interior com bioindústrias, agroindústrias e serviços ambientais, reduzindo perdas e fortalecendo cadeias curtas",
+   "proposta": "Promover a industrialização e o beneficiamento descentralizados no interior, com bioindústrias e agroindústrias.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -7843,15 +7198,8 @@
    "id": "p334",
    "subtema": "Pesca e aquicultura",
    "proposta": "Promover o desenvolvimento sustentável da aquicultura e piscicultura, fortalecendo suas bases produtiva, ambiental e tecnológica",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
-    "governador-am-professora-maria-do-carmo-40002541626": {
-     "posicao": "concorda",
-     "blocos": [
-      76
-     ],
-     "nota": ""
-    },
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
      "blocos": [
@@ -7890,16 +7238,9 @@
   {
    "id": "p335",
    "subtema": "Crédito e fomento",
-   "proposta": "Ampliar o acesso ao crédito verde e a instrumentos de financiamento climático no interior e mobilizar a implementação dos fundos de sustentabilidade previstos no art. 92-B do ADCT",
-   "n_concorda": 4,
+   "proposta": "Ampliar o acesso ao crédito.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      659
-     ],
-     "nota": ""
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -7928,7 +7269,7 @@
   {
    "id": "p336",
    "subtema": "Crédito e fomento",
-   "proposta": "Criar o Fundo Estadual de Crédito Verde para empreendedores da floresta, cooperativas e comunidades",
+   "proposta": "Oferecer crédito a cooperativas e comunidades.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -7954,7 +7295,7 @@
   {
    "id": "p337",
    "subtema": "Comércio exterior e internacionalização",
-   "proposta": "Articular mercados internacionais por meio de acordos de comércio sustentável, certificações (FSC, Rainforest Alliance), apoio a feiras, selo de origem e indicação geográfica",
+   "proposta": "Promover o acesso a mercados por meio da valorização da origem dos produtos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -8003,17 +7344,9 @@
   {
    "id": "p339",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Criar o Programa de Fomento ao Cultivo de Espécies Nativas, com linhas de crédito, cartilha de fomento e integração dos produtores ao fornecimento da merenda escolar",
-   "n_concorda": 3,
+   "proposta": "Oferecer linhas de crédito aos produtores e integrá-los ao fornecimento da merenda escolar.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      273,
-      275
-     ],
-     "nota": "Manejo de espécies nativas e compras da agricultura familiar"
-    },
     "governador-am-david-almeida-40002536086": {
      "posicao": "concorda",
      "blocos": [
@@ -8037,7 +7370,7 @@
   {
    "id": "p340",
    "subtema": "Pesca e aquicultura",
-   "proposta": "Fortalecer o manejo comunitário de espécies nativas em pelo menos 100 lagos naturais e monitorar a qualidade da água em pelo menos 50 pontos de produção aquícola",
+   "proposta": "Fortalecer o manejo comunitário de espécies nativas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -8061,7 +7394,13 @@
       31712,
       40516
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "lagos com manejo comunitário",
+       "valor": "pelo menos 100 lagos naturais"
+      }
+     ]
     }
    }
   },
@@ -8153,7 +7492,7 @@
   {
    "id": "p346",
    "subtema": "Bioeconomia e cadeias da floresta",
-   "proposta": "Implantar unidades piloto de processamento em polos regionais para insumos farmacêuticos ativos vegetais, produtos florestais, piscicultura/aquicultura e fruticultura",
+   "proposta": "Implantar unidades de processamento e beneficiamento da produção.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
@@ -8203,7 +7542,7 @@
    "id": "p347",
    "subtema": "Pesca e aquicultura",
    "proposta": "Estruturar a cadeia fria da piscicultura com agroindústrias da aquicultura, armazenamento, transporte refrigerado e pontos de desembarque em polos regionais",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-am-roberto-cidade-40002541741": {
      "posicao": "concorda",
@@ -8218,14 +7557,6 @@
      "blocos": [
       263,
       265
-     ],
-     "nota": ""
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      846,
-      867
      ],
      "nota": ""
     },
@@ -8273,16 +7604,9 @@
   {
    "id": "p350",
    "subtema": "Conhecimento tradicional e repartição de benefícios",
-   "proposta": "Implantar rede de unidades regionais de beneficiamento de produtos da sociobiodiversidade, com localização e capacidade definidas por estudo de viabilidade e pactuação participativa",
-   "n_concorda": 4,
+   "proposta": "Implantar unidades de beneficiamento de produtos da sociobiodiversidade.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      269
-     ],
-     "nota": ""
-    },
     "governador-am-isael-munduruku-40002550776": {
      "posicao": "concorda",
      "blocos": [
@@ -8311,16 +7635,8 @@
    "id": "p351",
    "subtema": "Conhecimento tradicional e repartição de benefícios",
    "proposta": "Ampliar progressivamente a produção indígena certificada e rastreável, com apoio técnico à certificação socioambiental e metas pactuadas anualmente",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      240,
-      241
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -8334,16 +7650,8 @@
    "id": "p352",
    "subtema": "Conhecimento tradicional e repartição de benefícios",
    "proposta": "Expandir de forma estruturada a bioeconomia indígena",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      233,
-      241
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -8356,7 +7664,7 @@
   {
    "id": "p353",
    "subtema": "Agricultura familiar e produção de alimentos",
-   "proposta": "Identificar as áreas degradadas do estado e incentivar a implantação de Planos de Recuperação de Áreas Degradadas",
+   "proposta": "Incentivar a recuperação de áreas degradadas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -8374,6 +7682,1457 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p354",
+   "subtema": "Assistência técnica e extensão rural",
+   "proposta": "Criar uma rede estadual de assistência técnica e extensão rural especializada em produção orgânica e agroecologia, com apoio permanente às famílias produtoras, e ampliar a assistência técnica às comunidades produtoras da sociobiodiversidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      839,
+      849
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p356",
+   "subtema": "Crédito e fomento",
+   "proposta": "Oferecer atendimento da AFEAM para crédito e apoio empresarial, com crédito acompanhado de orientação e planejamento ao tomador.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      137,
+      311
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p358",
+   "subtema": "Crédito e fomento",
+   "proposta": "Criar linhas estaduais de crédito para aquicultura, bioativos e outras atividades produtivas, ampliando o acesso dos pequenos produtores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4262,
+      4907,
+      11208,
+      11427
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p359",
+   "subtema": "Turismo",
+   "proposta": "Reorganizar o turismo do Amazonas em cinco eixos, com marketing do destino e interiorização, tornando o setor vetor de desenvolvimento socioeconômico sustentável e de aumento da arrecadação estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      10068,
+      10258,
+      10399
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p361",
+   "subtema": "Empreendedorismo e pequenos negócios",
+   "proposta": "Organizar uma jornada integrada de atendimento a MEIs, micro e pequenas empresas, autônomos e cooperativas, articulando formalização, capacitação, crédito orientado, gestão e acesso a mercado, com atendimento regional e digital assistido.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      310,
+      311
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p362",
+   "subtema": "Empreendedorismo e pequenos negócios",
+   "proposta": "Usar as compras governamentais como instrumento de apoio a micro e pequenos negócios, ao lado de microcrédito, qualificação, inovação, incubação e digitalização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      680,
+      711,
+      713,
+      715
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p363",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Ampliar a competitividade do Polo Industrial, estimulando setores como automação, inteligência artificial, semicondutores, biotecnologia e indústria de baixo carbono, e construindo um novo Distrito Industrial com área e infraestrutura para novas fábricas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      635,
+      640,
+      641,
+      651,
+      653,
+      659,
+      684,
+      699
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p364",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Defender a Zona Franca de Manaus como patrimônio econômico estratégico, sem alterar o regime tributário federal, ampliando a participação de empresas locais nas cadeias do Polo Industrial e o conteúdo tecnológico regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      160,
+      313,
+      314,
+      317
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p365",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Defender a segurança jurídica do modelo da Zona Franca de Manaus e sua modernização, com metas sociais, tecnológicas e ambientais verificáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      253
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p367",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Diversificar a economia estadual com um Plano Estadual de Diversificação Econômica e consolidar o estado como polo de inovação, baixo carbono, inteligência artificial, robótica e biotecnologia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      461,
+      488
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p368",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Realizar estudos para a criação do Distrito Industrial III, em parceria com a Suframa e a Prefeitura de Manaus, com infraestrutura viária, drenagem, saneamento, energia e mobilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      483
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p369",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Expandir e modernizar a infraestrutura física e territorial do Polo Industrial de Manaus, garantindo espaço e condições para novos empreendimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      9259
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p371",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Incentivar a piscicultura e atrair indústrias de ração para regiões com potencial aquícola.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      863,
+      865
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p373",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Incentivar o manejo sustentável de pirarucu, jacaré e quelônios, junto com a piscicultura e a criação animal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      863
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p374",
+   "subtema": "Regularização fundiária e ambiental rural",
+   "proposta": "Ampliar o apoio à produção rural com assistência técnica, mecanização, crédito, regularização, armazenagem, agroindústria e estradas vicinais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      680
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p376",
+   "subtema": "Agricultura familiar e produção de alimentos",
+   "proposta": "Incentivar sistemas agroflorestais que integrem produção agrícola, recuperação ambiental e geração de renda na agricultura familiar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      861
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p378",
+   "subtema": "Agricultura familiar e produção de alimentos",
+   "proposta": "Fortalecer programas estaduais de produção orgânica e cadeias sustentáveis, com certificação e rastreabilidade dos produtos, especialmente os voltados à exportação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4273
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p379",
+   "subtema": "Agricultura familiar e produção de alimentos",
+   "proposta": "Apoiar a organização de produtores para compras coletivas de insumos, reduzindo custos e melhorando a logística de aquisição.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      249
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p381",
+   "subtema": "Agricultura familiar e produção de alimentos",
+   "proposta": "Distribuir sementes e mudas crioulas e apoiar viveiros, casas de farinha, sistemas agroflorestais e recuperação de áreas degradadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      271
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p383",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Dotar os assentamentos de estradas vicinais de baixo impacto, ao lado de água, energia, saúde, educação e assistência técnica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      416
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p384",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Estudar um programa de aquisição da produção em período de safra, para reduzir perdas, ampliar mercados e apoiar o escoamento, sem fixação administrativa de preços.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      244
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p385",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Ampliar e aperfeiçoar a subvenção a produtos estratégicos da sociobiodiversidade, garantindo maior estabilidade de renda aos produtores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      844
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p386",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Criar programa de comercialização e escoamento, com contratos de compra de regras claras e preços de referência para produtos florestais e agroextrativistas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4369,
+      9007
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p388",
+   "subtema": "Mecanização e infraestrutura produtiva",
+   "proposta": "Modernizar o parque tecnológico rural, com avanços em mecanização, armazenagem, processamento, eletrificação e escoamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4445
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p390",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Criar o Balcão Único do Empreendedor e do Investidor, canal integrado para abertura de empresas, licenciamento, incentivos, crédito e regularização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      468,
+      472
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p32"
+  },
+  {
+   "id": "p392",
+   "subtema": "Incentivos fiscais e tributação",
+   "proposta": "Revisar os incentivos fiscais, alinhando-os à diversificação econômica, com mais governança e transparência na alocação dos benefícios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      8344,
+      14417,
+      14539
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p393",
+   "subtema": "Incentivos fiscais e tributação",
+   "proposta": "Condicionar os incentivos estaduais a transparência, trabalho decente, metas ambientais e contrapartidas sociais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      220
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p394",
+   "subtema": "Incentivos fiscais e tributação",
+   "proposta": "Atuar no Conselho de Administração da Suframa para que a habilitação aos benefícios da Zona Franca exija conformidade ambiental e social, práticas sustentáveis, indicadores de desempenho socioambiental, auditorias independentes e relatórios de transparência, em diálogo com o setor produtivo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      11791
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p396",
+   "subtema": "Governança e planejamento econômico",
+   "proposta": "Elaborar Plano Estadual de Desenvolvimento da Zona Rural, de forma participativa e regionalizada, com prioridades orientadas por vocação econômica, logística, segurança alimentar, insumos e sustentabilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      229
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p37"
+  },
+  {
+   "id": "p397",
+   "subtema": "Governança e planejamento econômico",
+   "proposta": "Criar o Observatório Estadual da Aquicultura, com sistema de monitoramento contínuo da produção para subsidiar políticas públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4886,
+      4255
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p398",
+   "subtema": "Conhecimento tradicional e repartição de benefícios",
+   "proposta": "Incluir o conhecimento tradicional e etnobotânico das populações locais na Resolução CAPDA nº 09/2019 e no Decreto nº 10.521/2020, articulando-o ao cooperativismo e à marca Amazônia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      11195,
+      11583
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p402",
+   "subtema": "Tecnologia para a produção rural",
+   "proposta": "Criar linhas de pesquisa e editais junto à FAPEAM e ao Programa Prioritário de Bioeconomia, com foco em fruticultura, aquicultura e soluções tecnológicas para recuperação de áreas degradadas e modelos produtivos sustentáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4332,
+      4336,
+      4893,
+      40631
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p61"
+  },
+  {
+   "id": "p403",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Expandir as compras públicas da agricultura familiar e criar um calendário agrícola de compras governamentais, com planejamento regional da produção conforme safra, logística e vocação produtiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      236,
+      243
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p62"
+  },
+  {
+   "id": "p405",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Ampliar o acesso da produção familiar e comunitária às compras públicas, com editais próprios, contratos de compras públicas verdes para alimentação escolar e saúde, e duplicação do investimento no programa de regionalização da merenda escolar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      4452,
+      4925,
+      8021,
+      38826
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p62"
+  },
+  {
+   "id": "p406",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Instituir política estadual de pesca, com fortalecimento do atendimento técnico, produtivo, social e institucional aos pescadores e suas organizações.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      235
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p63"
+  },
+  {
+   "id": "p407",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Criar a certificação “Origem do Amazonas” para abrir mercados internacionais de alto valor a produtos como castanha, café, cacau, açaí e óleos da floresta, no âmbito de uma Política Estadual de Comércio Exterior voltada à internacionalização das empresas amazonenses.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      502,
+      845
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p69"
+  },
+  {
+   "id": "p410",
+   "subtema": "Regularização fundiária e ambiental rural",
+   "proposta": "Integrar a regularização fundiária, ambiental e sanitária, ampliando o georreferenciamento e o acesso ao crédito e combatendo grilagem e títulos irregulares.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      79
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p84"
+  },
+  {
+   "id": "p411",
+   "subtema": "Regularização fundiária e ambiental rural",
+   "proposta": "Acelerar a regularização fundiária e ambiental nas terras de titularidade estadual, com apoio técnico e documental ao CAR e ao licenciamento, e manter vigilância, inspeção e defesa sanitária animal e vegetal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      232,
+      238
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p84"
+  },
+  {
+   "id": "p412",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Fortalecer a piscicultura com recuperação de viveiros, novos tanques, assistência técnica, alevinagem e apoio ao beneficiamento do pescado para produtos de maior valor agregado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      255,
+      263
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p85"
+  },
+  {
+   "id": "p416",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Expandir a piscicultura em todas as regiões do estado e fortalecer a cadeia do pescado, com infraestrutura de beneficiamento e armazenamento, assistência técnica, certificação sanitária e abertura de novos mercados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      696,
+      698,
+      699,
+      704
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p106"
+  },
+  {
+   "id": "p417",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Adotar procedimentos proporcionais de licenciamento, vigilância sanitária e tributação para a produção comunitária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      243
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p110"
+  },
+  {
+   "id": "p420",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Estimular cadeias de produtos florestais não madeireiros, como castanha-do-brasil, andiroba, copaíba e buriti, com beneficiamento, financiamento, comercialização e agregação de valor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      269
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p115"
+  },
+  {
+   "id": "p422",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Implantar a Política Estadual de Bioeconomia, com linhas específicas de financiamento e ampliação do crédito, e instalar unidades de beneficiamento de óleos essenciais e polpas no interior do Amazonas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      489,
+      850,
+      867
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p115"
+  },
+  {
+   "id": "p425",
+   "subtema": "Governança e planejamento econômico",
+   "proposta": "Instituir a Mesa Permanente da Zona Franca de Manaus e o Observatório da Competitividade da Economia Amazonense, com coordenação das ações institucionais de defesa do modelo e monitoramento da competitividade do Polo Industrial diante da reforma tributária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      480,
+      481
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p122"
+  },
+  {
+   "id": "p427",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Industrializar e beneficiar produtos da floresta, como óleos essenciais e fitoterápicos, e conceder incentivos fiscais a investimentos em bioeconomia, inclusive fármacos e cosméticos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      127,
+      435
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p124"
+  },
+  {
+   "id": "p431",
+   "subtema": "Empreendedorismo e pequenos negócios",
+   "proposta": "Simplificar o licenciamento de atividades de baixo risco, integrar todos os municípios à RedeSim e reduzir prazos com digitalização e análise simultânea dos processos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      11
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p134"
+  },
+  {
+   "id": "p435",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Consolidar o Amazonas como polo de inovação tecnológica, com ciência, pesquisa, inteligência artificial, robótica e biotecnologia, e impulsionar processos de inovação na Zona Franca de Manaus.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      461,
+      463
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p138"
+  },
+  {
+   "id": "p438",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Fortalecer a porta de entrada para investidores e exportadores, ampliar a inteligência comercial, estruturar corredores regionais e captar recursos nacionais e internacionais para projetos estratégicos do Amazonas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      16
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p142"
+  },
+  {
+   "id": "p439",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Articular ações de atração de investimentos, expansão industrial e geração de empregos, com monitoramento dos fatores que afetam a competitividade do Polo Industrial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      481
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p142"
+  },
+  {
+   "id": "p507",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Implantar o Observatório da Competitividade da Economia Amazonense.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      481
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p142"
+  },
+  {
+   "id": "p508",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Criar a Política Estadual de Comércio Exterior, voltada à promoção comercial e à internacionalização das empresas amazonenses.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      502
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p142"
+  },
+  {
+   "id": "p441",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Atrair e consolidar segmentos de bioeconomia, como fármacos, cosméticos, fitoterápicos, agroindústria e economia circular, por meio do aprimoramento da política de concessão de incentivos fiscais, com painel de benefícios e avaliação periódica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      127,
+      435
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p147"
+  },
+  {
+   "id": "p442",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Apoiar marcas coletivas, indicação geográfica, rastreabilidade comunitária e comércio justo, e ampliar as compras públicas de produtos regionais para escolas, hospitais, presídios e assistência social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      53,
+      221,
+      234,
+      237,
+      238,
+      239,
+      240,
+      241,
+      638,
+      724,
+      810
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p151"
+  },
+  {
+   "id": "p443",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Implantar o Programa Amazonas Fornecedor, para fortalecer empresas amazonenses na cadeia de suprimentos do Polo Industrial de Manaus e ampliar a participação de fornecedores locais na produção industrial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      482
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p152"
+  },
+  {
+   "id": "p444",
+   "subtema": "Indústria naval",
+   "proposta": "Apoiar a produção e a manutenção de barcos eficientes, motores elétricos, baterias, sistemas solares e equipamentos de saneamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      255
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p153"
+  },
+  {
+   "id": "p445",
+   "subtema": "Indústria naval",
+   "proposta": "Fortalecer a indústria naval regional, apoiando investimentos para ampliar e modernizar estaleiros e a cadeia produtiva de embarcações de passageiros, cargas, turismo e atividades produtivas, em Manaus e no interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      475
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p153"
+  },
+  {
+   "id": "p446",
+   "subtema": "Zona Franca e política industrial",
+   "proposta": "Promover a integração entre indústria e universidades e estimular setores de alta tecnologia, como automação, inteligência artificial, semicondutores e biotecnologia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      635,
+      639
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p158"
+  },
+  {
+   "id": "p453",
+   "subtema": "Turismo",
+   "proposta": "Promover segmentos turísticos do estado, como ecoturismo, pesca esportiva, aventura, cultura, gastronomia e base comunitária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      730
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p191"
+  },
+  {
+   "id": "p454",
+   "subtema": "Infraestrutura turística",
+   "proposta": "Ampliar a infraestrutura turística dos destinos do interior, com obras estratégicas, sinalização e acessibilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      725,
+      729
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p194"
+  },
+  {
+   "id": "p455",
+   "subtema": "Turismo",
+   "proposta": "Desenvolver o turismo amazonense como cadeia econômica completa, em suas diversas modalidades, assegurando acesso, qualificação, saneamento, conectividade, segurança, informação e promoção.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      324
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p200"
+  },
+  {
+   "id": "p456",
+   "subtema": "Turismo",
+   "proposta": "Ampliar a conectividade, certificar o ecoturismo e promover o estado internacionalmente, com revisão do planejamento turístico estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      18
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p202"
+  },
+  {
+   "id": "p458",
+   "subtema": "Turismo",
+   "proposta": "Elaborar plano estadual de turismo que fortaleça a temporada de cruzeiros, o turismo de base comunitária e a atração de grandes eventos, e criar rotas integradas com pesca esportiva e turismo de natureza.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      504,
+      510
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p202"
+  },
+  {
+   "id": "p459",
+   "subtema": "Turismo",
+   "proposta": "Fortalecer Manaus como principal porta de entrada da Amazônia, com receptivo, informação turística, promoção e qualificação dos serviços, conexão com os municípios do interior e valorização do Centro Histórico, do Teatro Amazonas, do Rio Negro, da gastronomia, dos eventos culturais e dos atrativos naturais da capital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      505,
+      509
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p204"
+  },
+  {
+   "id": "p460",
+   "subtema": "Emprego e qualificação profissional",
+   "proposta": "Elaborar Plano Estadual de Desenvolvimento do Turismo no Amazonas, contemplando qualificação profissional, destinos prioritários, infraestrutura e linhas de crédito para o setor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      504
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p212"
+  },
+  {
+   "id": "p461",
+   "subtema": "Turismo",
+   "proposta": "Desenvolver novos destinos e calendários turístico-culturais nos doze polos ao longo do ano, tendo Parintins como referência de escala.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      325
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p214"
+  },
+  {
+   "id": "p462",
+   "subtema": "Turismo",
+   "proposta": "Criar rotas integradas de turismo que conectem municípios e experiências, com calendários e circuitos de circulação de artistas e espetáculos em Manaus e no interior, ampliando a permanência dos visitantes e distribuindo os benefícios econômicos entre mais regiões.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      504,
+      510,
+      511
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p214"
+  },
+  {
+   "id": "p468",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Implantar unidades comunitárias de beneficiamento de frutas, sementes, óleos vegetais e outros produtos florestais em regiões com capacidade produtiva consolidada, em parceria com governo federal, municípios e organismos internacionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      850,
+      867
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p241"
+  },
+  {
+   "id": "p470",
+   "subtema": "Comércio exterior e internacionalização",
+   "proposta": "Usar a Expoagro e eventos regionais como instrumentos de venda, capacitação, acesso a crédito e tecnologia e atração de investimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      246
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p246"
+  },
+  {
+   "id": "p472",
+   "subtema": "Tecnologia para a produção rural",
+   "proposta": "Apoiar o manejo comunitário do pirarucu e de outras espécies com pesquisa, vigilância e comercialização justa, e criar Plano Estadual de Agroecologia e Produção Orgânica com participação de instituições de pesquisa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      270,
+      273,
+      362
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p261"
+  },
+  {
+   "id": "p473",
+   "subtema": "Tecnologia para a produção rural",
+   "proposta": "Apoiar sistemas agroflorestais e a produção agroecológica, com participação de instituições de pesquisa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      270,
+      271
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p262"
+  },
+  {
+   "id": "p474",
+   "subtema": "Tecnologia para a produção rural",
+   "proposta": "Incentivar sistemas agroflorestais e investir em pesquisa de produtos e processos biotecnológicos para elevar a produtividade agrícola.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      861,
+      868
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p262"
+  },
+  {
+   "id": "p475",
+   "subtema": "Tecnologia para a produção rural",
+   "proposta": "Ampliar a assistência técnica à produção rural, pesqueira e aquícola, aproximar pesquisa e produtores, fortalecer cooperativas e melhorar o escoamento e o acesso a mercados, respeitando as vocações regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      76
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p263"
+  },
+  {
+   "id": "p476",
+   "subtema": "Governança e planejamento econômico",
+   "proposta": "Gerar emprego, renda e desenvolvimento no interior, apoiados em polos regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-roberto-cidade-40002541741": {
+     "posicao": "concorda",
+     "blocos": [
+      653,
+      656,
+      685,
+      701
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p269"
+  },
+  {
+   "id": "p477",
+   "subtema": "Governança e planejamento econômico",
+   "proposta": "Elaborar Plano Estadual de Desenvolvimento Justo, com metas de emprego e redução de desigualdades, e criar política de encadeamentos produtivos entre o Polo Industrial de Manaus, universidades e fornecedores locais, com participação do interior na renda e nas compras locais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      219,
+      222,
+      810
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p269"
+  },
+  {
+   "id": "p479",
+   "subtema": "Microcrédito e inclusão produtiva",
+   "proposta": "Oferecer crédito com condições diferenciadas a pequenos negócios e empreendimentos comunitários, priorizando mulheres e jovens, e impulsionar a economia criativa em audiovisual, design, moda, música, artesanato, jogos digitais e produção cultural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      473,
+      476,
+      511
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p272"
+  },
+  {
+   "id": "p480",
+   "subtema": "Turismo",
+   "proposta": "Fomentar o turismo rural e de base comunitária, integrando produção, gastronomia, cultura, natureza e economia criativa, e desenvolver destinos e calendários de eventos nos doze polos do estado ao longo do ano.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      259,
+      325
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p281"
+  },
+  {
+   "id": "p484",
+   "subtema": "Comercialização e escoamento da produção",
+   "proposta": "Fortalecer feiras, mercados populares e circuitos curtos entre produtores e consumidores, reduzindo a dependência de atravessadores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      274,
+      638
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p293"
+  },
+  {
+   "id": "p485",
+   "subtema": "Microcrédito e inclusão produtiva",
+   "proposta": "Criar linhas de crédito com condições diferenciadas e orientação técnica para micro, pequenas e médias empresas, autônomos, empreendedores individuais e negócios comunitários, priorizando o empreendedorismo feminino e juvenil.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      473,
+      478
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p301"
+  },
+  {
+   "id": "p487",
+   "subtema": "Turismo",
+   "proposta": "Estruturar o turismo como cadeia econômica completa, incluindo turismo rural, de base comunitária, natureza, pesca esportiva, aventura, gastronomia, cultura e turismo fluvial, com consulta a povos indígenas e comunidades tradicionais nos projetos que os afetem.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      259,
+      324
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p307"
+  },
+  {
+   "id": "p488",
+   "subtema": "Turismo",
+   "proposta": "Apoiar o turismo de base comunitária e cultural, sob controle local e com limites ambientais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      225
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p307"
+  },
+  {
+   "id": "p490",
+   "subtema": "Emprego e qualificação profissional",
+   "proposta": "Garantir estágio remunerado e primeiro emprego em projetos estaduais, com critérios sociais e territoriais, e apoiar aprendizagem e empreendedorismo solidário com direitos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      208,
+      724
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p325"
+  },
+  {
+   "id": "p494",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Estruturar agroindústria e agregação de valor no interior, com unidades regionais de economia circular que aproveitem subprodutos da mandioca e do pescado, beneficiamento do pescado e cadeias da bioeconomia florestal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      260,
+      262,
+      263,
+      269
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p332"
+  },
+  {
+   "id": "p500",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Criar linhas de crédito e apoio técnico para a economia da floresta e os pequenos negócios, incentivar a piscicultura e o manejo sustentável de espécies nativas e ampliar as compras institucionais da agricultura familiar para a alimentação escolar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      478,
+      489,
+      848,
+      862,
+      863,
+      866
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p339"
+  },
+  {
+   "id": "p504",
+   "subtema": "Bioeconomia e cadeias da floresta",
+   "proposta": "Apoiar o beneficiamento do pescado com estruturas de salga, defumação, filetagem e conservação, além de abatedouros sob inspeção oficial e fábricas de gelo em polos estratégicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      263,
+      264,
+      265
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p346"
+  },
+  {
+   "id": "p506",
+   "subtema": "Pesca e aquicultura",
+   "proposta": "Distribuir aos pequenos produtores equipamentos de apoio à produção, como barcos frigoríficos e fábricas de gelo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      846
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p347"
   }
  ],
  "blocos": {
@@ -8580,10 +9339,6 @@
     "texto": "O desenvolvimento econômico será uma das prioridades centrais do nosso Governo. Gerar empregos, ampliar a renda das famílias, atrair investimentos, fortalecer quem já produz, estimular novos negócios e criar oportunidades em todas as regiões do Estado será o caminho para reduzir desigualdades, combater a pobreza e melhorar a qualidade de vida da população.",
     "pagina": 39
    },
-   "459": {
-    "texto": "O Amazonas reúne condições únicas para liderar um novo ciclo de desenvolvimento sustentável. Possui uma das maiores riquezas ambientais do planeta, uma base industrial consolidada, enorme potencial para bioeconomia, logística, turismo, inovação e comércio exterior, além de uma população empreendedora, trabalhadora e preparada para construir um futuro de mais prosperidade.",
-    "pagina": 39
-   },
    "461": {
     "texto": "Objetivo Geral: impulsionar a transição do Amazonas para uma economia dinâmica, diversificada, competitiva e de baixo carbono, consolidando o Estado como o principal polo de inovação tecnológica e sustentabilidade da Amazônia. “ACELERA AMAZONAS” integrará a cultura amazônica, os conhecimentos tradicionais, as riquezas naturais, a biodiversidade, a educação tecnológica, a ciência, a pesquisa, a inovação, o governo digital, a inteligência artificial, a robótica e a biotecnologia para produzir riquezas, gerar empregos qualificados, distribuir renda e promover a inclusão social, garantindo a proteção do meio-ambiente, águas e floresta, como nosso maior ativo econômico.",
     "pagina": 39
@@ -8664,10 +9419,6 @@
     "texto": "- Implantar o Observatório do Mercado de Trabalho: acompanhamento dos indicadores de emprego, renda, ocupações e demandas profissionais, permitindo ao Governo ajustar continuamente suas políticas de qualificação e geração de oportunidades, sobretudo para pessoas com deficiência e profissionais 50+ e pessoas em situação de vulnerabilidade.",
     "pagina": 41
    },
-   "501": {
-    "texto": "Amazonas Global: Maior Presença do Amazonas nos Mercados Internacionais.",
-    "pagina": 42
-   },
    "502": {
     "texto": "- Criar a Política Estadual de Comércio Exterior: política permanente para coordenar as ações estaduais relacionadas às exportações, importações, promoção comercial, inteligência de mercado e internacionalização das empresas amazonenses.",
     "pagina": 42
@@ -8726,10 +9477,6 @@
    },
    "850": {
     "texto": "- Atuar em conjunto com o Governo Federal, municípios e organismos internacionais para beneficiamento de óleos essenciais (ex.: copaíba e andiroba) e polpas (ex.: açaí e buriti) no interior do Amazonas.",
-    "pagina": 70
-   },
-   "852": {
-    "texto": "- Criar bancos comunitários de sementes: produção, conservação e distribuição de sementes de qualidade, respeitando as características produtivas de cada território.",
     "pagina": 70
    },
    "853": {
@@ -8853,10 +9600,6 @@
    "243": {
     "texto": "Garantir que licenciamento, vigilância sanitária e tributação tenham procedimentos proporcionais para produção comunitária.",
     "pagina": 15
-   },
-   "251": {
-    "texto": "O Polo Industrial de Manaus protege empregos e arrecadação, mas pode contribuir muito mais para uma transição produtiva justa. O governo defenderá a Zona Franca e negociará contrapartidas para qualificação, pesquisa, eficiência energética, mobilidade limpa, redução de resíduos e encadeamentos locais.",
-    "pagina": 16
    },
    "253": {
     "texto": "Defender segurança jurídica do modelo e sua modernização com metas sociais, tecnológicas e ambientais verificáveis.",
@@ -9570,10 +10313,6 @@
    },
    "8930": {
     "texto": "Embora o Amazonas apresente um núcleo industrial de alta relevância, persistem fragilidades que comprometem a expansão sustentável do setor. A primeira delas é a alta concentração produtiva em poucas NCMs e segmentos, reduzindo a resiliência da economia frente a crises externas, mudanças tecnológicas ou variações de mercado. Para mitigar essa vulnerabilidade, a estratégia prioriza a diversificação produtiva na indústria de transformação tradicional e na bioeconomia, ampliando a gama de produtos, estimulando inovação incremental e incorporando novos atores produtivos – especialmente empresas de base tecnológica e bioindústrias.",
-    "pagina": 319
-   },
-   "8931": {
-    "texto": "A baixa interiorização da atividade industrial, concentrada fortemente em Manaus, podemos elencar como uma segunda fraqueza, pois a falta de encadeamento econômico nos municípios reduz geração de renda e limita a competitividade das cadeias produtivas baseadas na biodiversidade. A mitigação exige investimentos em qualificação, infraestrutura logística regulada, estruturação de cadeias extrativistas e mecanismos de financiamento territorializados.",
     "pagina": 319
    },
    "8932": {
@@ -10312,10 +11051,6 @@
     "texto": "4. Propor alteração da Portaria Interministerial nº 300, de 1996 para revisar os produtos incentivados de forma a viabilizar a diversificação econômica do interior do Amazonas a partir do regulatório da Amazônia",
     "pagina": 428
    },
-   "11386": {
-    "texto": "6. Propor alteração da Resolução CAPDA nº 09, de",
-    "pagina": 429
-   },
    "11388": {
     "texto": "Prioritário de Bioeconomia a valorização, proteção e integração do conhecimento tradicional associado à biodiversidade, com participação ativa das comunidades detentoras desses saberes nos processos de pesquisa, desenvolvimento e inovação.",
     "pagina": 429
@@ -10467,10 +11202,6 @@
    "12910": {
     "texto": "Do ponto de vista econômico, a dependência da Zona Franca de Manaus e a baixa diversificação produtiva são geridas por meio da implantação de polos tecnológicos regionais, do estímulo à bioeconomia e da criação de fundos temáticos para inovação.",
     "pagina": 512
-   },
-   "13081": {
-    "texto": "• T5. Produtividade para pequenos negócios: vouchers tecnológicos voltados a ajudar empresas, empreendedores, instituições ou organizações sociais a acessar serviços, soluções ou infraestrutura tecnológica que elas não conseguiriam contratar sozinhas, catálogo de soluções auditadas e rede de mentoria.",
-    "pagina": 528
    },
    "13442": {
     "texto": "No campo econômico, o PIA impulsiona a bioeconomia por meio do apoio a startups e bionegócios que utilizam IA para rastreabilidade, manejo sustentável e agregação de valor aos produtos da floresta. Isso fortalecerá cadeias produtivas locais, gerará empregos qualificados e criará novas fontes de renda para comunidades extrativistas, agricultores familiares e empreendedores regionais.",

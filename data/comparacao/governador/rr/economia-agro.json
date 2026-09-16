@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "economia-agro-rr.json",
   "gerado_em": "2026-09-14T14:18:44Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "exportado_em": "2026-09-16T20:02:13Z"
  },
  "candidatos": [
   {
@@ -44,7 +44,7 @@
   {
    "id": "p1",
    "subtema": "Agricultura familiar e assistência técnica",
-   "proposta": "Fortalecer a assistência técnica e extensão rural pública para agricultores familiares",
+   "proposta": "Fortalecer a assistência técnica rural.",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -201,8 +201,8 @@
   {
    "id": "p6",
    "subtema": "Turismo",
-   "proposta": "Estruturar roteiros e circuitos turísticos do interior, com base comunitária e protagonismo indígena",
-   "n_concorda": 3,
+   "proposta": "Estruturar roteiros e circuitos turísticos no estado.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
@@ -210,14 +210,6 @@
       128
      ],
      "nota": "Circuitos culturais, indígenas, de natureza e integração com países vizinhos"
-    },
-    "governador-rr-arthur-henrique-230002549223": {
-     "posicao": "concorda",
-     "blocos": [
-      362,
-      365
-     ],
-     "nota": "Integração dos roteiros ao plano de estradas vicinais"
     },
     "governador-rr-soldado-sampaio-230002551571": {
      "posicao": "concorda",
@@ -349,7 +341,7 @@
   {
    "id": "p11",
    "subtema": "Desenvolvimento econômico e atração de investimentos",
-   "proposta": "Usar a interligação ao Sistema Interligado Nacional como base para atrair investimentos e abrir um novo ciclo de desenvolvimento",
+   "proposta": "Usar a interligação ao Sistema Interligado Nacional como base para abrir um novo ciclo de desenvolvimento",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -380,7 +372,7 @@
   {
    "id": "p12",
    "subtema": "Desenvolvimento econômico e atração de investimentos",
-   "proposta": "Aproveitar economicamente a fronteira e o crescimento da Guiana por meio de integração e acordos",
+   "proposta": "Aproveitar economicamente a fronteira por meio da integração com a Guiana",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
@@ -580,7 +572,7 @@
    "id": "p23",
    "subtema": "Regularização fundiária e ambiental rural",
    "proposta": "Simplificar licenças, alvarás e a regularização ambiental para produtores rurais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
@@ -588,14 +580,6 @@
       175
      ],
      "nota": "Integrada ao Descomplica Roraima"
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      438,
-      494
-     ],
-     "nota": "Mutirão de regularização em municípios-piloto"
     }
    }
   },
@@ -831,7 +815,7 @@
   {
    "id": "p38",
    "subtema": "Turismo",
-   "proposta": "Criar plano único de marketing e posicionamento do Estado como destino turístico",
+   "proposta": "Posicionar o Estado como destino turístico.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -973,7 +957,7 @@
    "id": "p46",
    "subtema": "Turismo",
    "proposta": "Desenvolver segmentos de etnoturismo, turismo de natureza e pesca esportiva no Estado",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
@@ -991,15 +975,90 @@
       365
      ],
      "nota": "Aposta em ecoturismo, natureza, pesca esportiva e turismo de base comunitária indígena."
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
+    }
+   }
+  },
+  {
+   "id": "p47",
+   "subtema": "Agricultura familiar e assistência técnica",
+   "proposta": "Apoiar a expansão da assistência técnica, da infraestrutura rural, da irrigação, da pesquisa agropecuária, do crédito, da regularização fundiária e da agroindustrialização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
      "posicao": "concorda",
      "blocos": [
-      836
+      176
      ],
      "nota": ""
     }
-   }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p48",
+   "subtema": "Turismo",
+   "proposta": "Estruturar circuitos turísticos internos de cultura, natureza, esporte de aventura, gastronomia e artesanato, incluindo roteiros indígenas e integração com Guiana, Venezuela e Amazonas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      128
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p49",
+   "subtema": "Desenvolvimento econômico e atração de investimentos",
+   "proposta": "Aproveitar a interligação energética e a posição fronteiriça para iniciar um novo ciclo de desenvolvimento, com segurança jurídica, infraestrutura e inclusão produtiva, e estruturar distrito industrial sustentável e ZPE com energia estável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      119,
+      127
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p51",
+   "subtema": "Regularização fundiária e ambiental rural",
+   "proposta": "Promover mutirões de regularização fundiária e ambiental em municípios-piloto, garantindo segurança jurídica da terra às famílias rurais e periurbanas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      438,
+      494
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p52",
+   "subtema": "Turismo",
+   "proposta": "Posicionar o estado nacional e internacionalmente como destino de etnoturismo, turismo de natureza e pesca esportiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      897
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
   }
  ],
  "blocos": {
@@ -1394,10 +1453,6 @@
    },
    "835": {
     "texto": "Fortalecimento da EXPOFERR como espaço de promoção da cultura, do agronegócio, do empreendedorismo, do turismo e da identidade roraimense, incentivo às manifestações culturais regionais, ampliação da participação de produtores, empreendedores e fazedores de cultura, estimulando geração de renda, inclusão produtiva e fortalecimento da economia criativa em todo o Estado.",
-    "pagina": 55
-   },
-   "836": {
-    "texto": "10.4. Etnoturismo, Turismo de Natureza e Pesca Esportiva",
     "pagina": 55
    },
    "837": {

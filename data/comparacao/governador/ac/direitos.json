@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "direitos-ac.json",
   "gerado_em": "2026-09-14T10:09:00Z",
-  "exportado_em": "2026-09-14T10:22:19Z"
+  "exportado_em": "2026-09-16T21:44:39Z"
  },
  "candidatos": [
   {
@@ -86,7 +86,7 @@
   {
    "id": "p2",
    "subtema": "Direitos humanos e diversidade",
-   "proposta": "Garantir atendimento público sem discriminação por raça, etnia, gênero, idade, deficiência, orientação sexual ou modo de vida",
+   "proposta": "Assegurar a ausência de discriminação por raça, etnia, gênero, idade, deficiência ou orientação sexual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
@@ -111,7 +111,7 @@
   {
    "id": "p3",
    "subtema": "Direitos humanos e diversidade",
-   "proposta": "Ampliar canais de denúncia e acolhimento e combater sistematicamente violência, preconceito e discriminação",
+   "proposta": "Combater a discriminação",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
@@ -134,8 +134,8 @@
   {
    "id": "p4",
    "subtema": "Direitos humanos e diversidade",
-   "proposta": "Criar políticas de proteção e acolhimento a migrantes, refugiados e população em situação de rua",
-   "n_concorda": 3,
+   "proposta": "Fortalecer políticas de direitos voltadas a migrantes.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -151,13 +151,6 @@
       413
      ],
      "nota": ""
-    },
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      576
-     ],
-     "nota": "Cita população em situação de rua"
     }
    }
   },
@@ -210,16 +203,9 @@
   {
    "id": "p8",
    "subtema": "Povos indígenas e comunidades tradicionais",
-   "proposta": "Fortalecer as ações de apoio, acolhimento e proteção aos povos indígenas e comunidades tradicionais, respeitando territórios e especificidades culturais",
-   "n_concorda": 3,
+   "proposta": "Respeitar os territórios e as especificidades culturais dos povos indígenas e das comunidades tradicionais.",
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ac-tiao-bocalom-10002544015": {
-     "posicao": "concorda",
-     "blocos": [
-      50
-     ],
-     "nota": "Apoio genérico dentro da diretriz de desenvolvimento social"
-    },
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
      "blocos": [
@@ -463,7 +449,7 @@
    "id": "p20",
    "subtema": "Pessoas com deficiência e acessibilidade",
    "proposta": "Aplicar desenho universal, eliminar barreiras físicas, digitais e comunicacionais e assegurar Libras e Comunicação Aumentativa e Alternativa no atendimento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
      "posicao": "concorda",
@@ -472,13 +458,6 @@
       137
      ],
      "nota": ""
-    },
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      525
-     ],
-     "nota": "Cita acessibilidade física e comunicacional, sem detalhar instrumentos"
     }
    }
   },
@@ -509,7 +488,13 @@
       537,
       540
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "círculos de prevenção primária",
+       "valor": "nos 22 municípios"
+      }
+     ]
     },
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -564,7 +549,7 @@
    "id": "p25",
    "subtema": "Mulheres",
    "proposta": "Descentralizar e regionalizar os serviços especializados de atenção e proteção às mulheres, alcançando o interior",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -572,14 +557,6 @@
       421
      ],
      "nota": "Ações itinerantes e articulação com municípios"
-    },
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      486,
-      541
-     ],
-     "nota": ""
     }
    }
   },
@@ -700,6 +677,104 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p33",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Combater todas as formas de discriminação e assegurar direitos e dignidade a todas as pessoas, independentemente de raça, etnia, origem, identidade de gênero, orientação sexual, crença, deficiência, idade ou condição social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      376,
+      384
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p34",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Criar plano estadual de promoção de direitos e centros de referência especializados para a população LGBTQIAPN+, com combate à discriminação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      523
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p35",
+   "subtema": "Direitos humanos e diversidade",
+   "proposta": "Garantir direitos humanos à população em situação de rua, com presença do Estado em cada território.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      576
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p36",
+   "subtema": "Povos indígenas e comunidades tradicionais",
+   "proposta": "Apoiar as populações indígenas como parte da diretriz de desenvolvimento social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p37",
+   "subtema": "Povos indígenas e comunidades tradicionais",
+   "proposta": "Respeitar e valorizar os direitos, territórios, conhecimentos, consulta, participação e formas próprias de organização dos povos indígenas e populações tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      132,
+      133
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p38",
+   "subtema": "Mulheres",
+   "proposta": "Ampliar a rede de Centros de Referência de Atendimento à Mulher.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      541
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
   }
  ],
  "blocos": {

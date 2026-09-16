@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-mt.json",
   "gerado_em": "2026-09-14T06:37:13Z",
-  "exportado_em": "2026-09-14T07:02:21Z"
+  "exportado_em": "2026-09-16T19:54:49Z"
  },
  "candidatos": [
   {
@@ -83,7 +83,7 @@
   {
    "id": "p2",
    "subtema": "Desenvolvimento regional",
-   "proposta": "Implementar política de desenvolvimento regional baseada nas vocações econômicas de cada região do estado",
+   "proposta": "Implementar política de desenvolvimento regional baseada nas vocações econômicas regionais",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -106,7 +106,7 @@
   {
    "id": "p3",
    "subtema": "Cooperação intermunicipal",
-   "proposta": "Fortalecer a articulação regional entre municípios para soluções compartilhadas e ganho de escala",
+   "proposta": "Promover soluções compartilhadas entre municípios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -182,7 +182,13 @@
      "blocos": [
       933
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "prefeituras com convênios diretos",
+       "valor": "142 prefeituras"
+      }
+     ]
     }
    }
   },
@@ -201,6 +207,38 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p9",
+   "subtema": "Desenvolvimento regional",
+   "proposta": "Estimular a geração de oportunidades de negócios nas regiões menos desenvolvidas do estado, potencializando as vocações regionais e fomentando atividades integradas às indústrias já presentes, como a geração de biomassa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      678
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p10",
+   "subtema": "Cooperação intermunicipal",
+   "proposta": "Criar a Rede Mato-Grossense de Planejamento e Gestão Municipal, com cooperação voluntária e soluções compartilhadas, oferecendo suporte técnico, escritórios de projetos e dados estaduais para elevar a capacidade técnica dos municípios e reduzir custos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      934
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
   }
  ],
  "blocos": {

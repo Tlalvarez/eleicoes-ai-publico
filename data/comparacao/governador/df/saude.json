@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-df.json",
   "gerado_em": "2026-09-14T11:46:34Z",
-  "exportado_em": "2026-09-14T12:41:08Z"
+  "exportado_em": "2026-09-16T21:45:29Z"
  },
  "candidatos": [
   {
@@ -112,7 +112,7 @@
   {
    "id": "p2",
    "subtema": "Filas e regulação",
-   "proposta": "Implantar fila única integrada e transparente, com critérios clínicos de prioridade e acompanhamento público da espera",
+   "proposta": "Implantar fila única integrada e transparente, com acompanhamento público da espera.",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -151,7 +151,7 @@
   {
    "id": "p3",
    "subtema": "Filas e regulação",
-   "proposta": "Realizar mutirões de consultas, exames e cirurgias usando a capacidade ociosa da rede e contratação complementar quando necessário",
+   "proposta": "Realizar mutirões de consultas, exames e cirurgias, com contratação complementar quando necessário",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -225,7 +225,13 @@
      "blocos": [
       148
      ],
-     "nota": "Redução de até 70% em 24 meses"
+     "nota": "Redução de até 70% em 24 meses",
+     "metas": [
+      {
+       "rotulo": "fila de cirurgias eletivas",
+       "valor": "reduzir até 70% em 24 meses"
+      }
+     ]
     },
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -233,7 +239,13 @@
       398,
       399
      ],
-     "nota": "Zerar espera acima de 1 ano e reduzir média de 254 para 180 dias"
+     "nota": "Zerar espera acima de 1 ano e reduzir média de 254 para 180 dias",
+     "metas": [
+      {
+       "rotulo": "tempo médio cirurgia eletiva",
+       "valor": "de 254 para 180 dias"
+      }
+     ]
     }
    }
   },
@@ -279,7 +291,7 @@
   {
    "id": "p9",
    "subtema": "Atenção primária",
-   "proposta": "Fortalecer a Atenção Primária como porta de entrada e coordenadora do cuidado, ampliando a cobertura da Estratégia Saúde da Família e completando equipes",
+   "proposta": "Fortalecer a Atenção Primária à Saúde.",
    "n_concorda": 5,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -333,21 +345,13 @@
   {
    "id": "p10",
    "subtema": "Atenção primária",
-   "proposta": "Ampliar, reformar e modernizar a rede de Unidades Básicas de Saúde conforme as necessidades de cada território",
-   "n_concorda": 4,
+   "proposta": "Ampliar a rede de Unidades Básicas de Saúde.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
      "blocos": [
       192
-     ],
-     "nota": ""
-    },
-    "governador-df-cappelli-70002551557": {
-     "posicao": "concorda",
-     "blocos": [
-      130,
-      135
      ],
      "nota": ""
     },
@@ -371,7 +375,7 @@
   {
    "id": "p11",
    "subtema": "Atenção primária",
-   "proposta": "Atingir cobertura total (100%) da Atenção Primária com equipe de referência a distância caminhável",
+   "proposta": "Ampliar a cobertura da Atenção Primária (Estratégia Saúde da Família)",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
@@ -389,7 +393,13 @@
      "blocos": [
       144
      ],
-     "nota": "Meta de 85% de cobertura real até 2030"
+     "nota": "Meta de 85% de cobertura real até 2030",
+     "metas": [
+      {
+       "rotulo": "cobertura da ESF",
+       "valor": "85% até 2030"
+      }
+     ]
     }
    }
   },
@@ -458,7 +468,7 @@
   {
    "id": "p15",
    "subtema": "Atenção primária",
-   "proposta": "Fortalecer o acompanhamento contínuo das pessoas com doenças crônicas pela Atenção Primária, com estratificação de risco e monitoramento ativo",
+   "proposta": "Fortalecer o acompanhamento contínuo das pessoas com doenças crônicas pela Atenção Primária",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-kiko-caputo-70002547775": {
@@ -506,7 +516,13 @@
       130,
       147
      ],
-     "nota": "Meta de 75% das ESF com saúde bucal"
+     "nota": "Meta de 75% das ESF com saúde bucal",
+     "metas": [
+      {
+       "rotulo": "cobertura de saúde bucal",
+       "valor": "75% das ESF"
+      }
+     ]
     },
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -520,14 +536,20 @@
      "blocos": [
       421
      ],
-     "nota": "Sorriso de Brasília: 70% das ESF com equipe bucal e mutirões de próteses"
+     "nota": "Sorriso de Brasília: 70% das ESF com equipe bucal e mutirões de próteses",
+     "metas": [
+      {
+       "rotulo": "equipes de saúde bucal",
+       "valor": "70% das ESF, cerca de 770"
+      }
+     ]
     }
    }
   },
   {
    "id": "p17",
    "subtema": "Saúde digital e informação",
-   "proposta": "Implantar prontuário eletrônico único e integrado entre os pontos da rede",
+   "proposta": "Implantar prontuário eletrônico integrado entre os pontos da rede de saúde.",
    "n_concorda": 5,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -574,7 +596,7 @@
   {
    "id": "p18",
    "subtema": "Saúde digital e informação",
-   "proposta": "Ampliar telemedicina e teleconsultas para aproximar especialistas da Atenção Primária e agilizar diagnósticos",
+   "proposta": "Ampliar a telemedicina e as teleconsultas para agilizar diagnósticos e atendimentos.",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -644,22 +666,14 @@
   {
    "id": "p20",
    "subtema": "Saúde digital e informação",
-   "proposta": "Adotar gestão por resultados na saúde, com indicadores públicos de acesso, filas, qualidade e desempenho",
-   "n_concorda": 5,
+   "proposta": "Adotar gestão da saúde orientada por metas e indicadores, com monitoramento de resultados e divulgação pública das informações de desempenho da rede.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
      "blocos": [
       402,
       403
-     ],
-     "nota": ""
-    },
-    "governador-df-cappelli-70002551557": {
-     "posicao": "concorda",
-     "blocos": [
-      134,
-      154
      ],
      "nota": ""
     },
@@ -678,20 +692,13 @@
       452
      ],
      "nota": ""
-    },
-    "governador-df-celina-leao-70002553055": {
-     "posicao": "concorda",
-     "blocos": [
-      196
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p21",
    "subtema": "Rede hospitalar e infraestrutura",
-   "proposta": "Concluir e colocar em funcionamento os hospitais em obra ou contratados no DF (São Sebastião, Recanto das Emas, Guará, Ceilândia e Oncológico)",
+   "proposta": "Entregar novos hospitais no DF, entre eles o Hospital Oncológico (do Câncer).",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -711,7 +718,13 @@
       458,
       459
      ],
-     "nota": "Com prazo, responsável e painel público por obra"
+     "nota": "Com prazo, responsável e painel público por obra",
+     "metas": [
+      {
+       "rotulo": "leitos contratados a entregar",
+       "valor": "cerca de 360 leitos"
+      }
+     ]
     },
     "governador-df-kiko-caputo-70002547775": {
      "posicao": "concorda",
@@ -725,7 +738,7 @@
   {
    "id": "p22",
    "subtema": "Rede hospitalar e infraestrutura",
-   "proposta": "Modernizar instalações e equipamentos da rede pública, com manutenção preventiva e corretiva",
+   "proposta": "Recuperar e modernizar os equipamentos da rede pública de saúde",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -749,15 +762,21 @@
       411,
       413
      ],
-     "nota": "Contrato único cobrindo 100% dos equipamentos e painel de aparelho parado"
+     "nota": "Contrato único cobrindo 100% dos equipamentos e painel de aparelho parado",
+     "metas": [
+      {
+       "rotulo": "equipamentos com manutenção",
+       "valor": "100% da rede"
+      }
+     ]
     }
    }
   },
   {
    "id": "p23",
    "subtema": "Rede hospitalar e infraestrutura",
-   "proposta": "Melhorar a gestão de leitos, centros cirúrgicos e fluxos hospitalares, reduzindo cancelamentos e permanências desnecessárias",
-   "n_concorda": 3,
+   "proposta": "Melhorar a gestão de leitos e os fluxos hospitalares, reduzindo permanências e esperas desnecessárias.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
@@ -774,20 +793,13 @@
       473
      ],
      "nota": ""
-    },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      414
-     ],
-     "nota": "Terceiro turno cirúrgico e uso pleno de salas hoje a 30% da capacidade"
     }
    }
   },
   {
    "id": "p24",
    "subtema": "Rede hospitalar e infraestrutura",
-   "proposta": "Reorganizar a rede hospitalar por regiões de saúde, definindo o papel e a vocação assistencial de cada unidade",
+   "proposta": "Reorganizar a rede hospitalar.",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -824,7 +836,7 @@
   {
    "id": "p25",
    "subtema": "Rede hospitalar e infraestrutura",
-   "proposta": "Construir novas UPAs nas regiões administrativas sem cobertura",
+   "proposta": "Construir novas UPAs.",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -833,7 +845,13 @@
       200,
       201
      ],
-     "nota": "7 UPAs: Águas Claras, Água Quente, Guará 2, Taguatinga, Estrutural, Arapoanga e Ceilândia"
+     "nota": "7 UPAs: Águas Claras, Água Quente, Guará 2, Taguatinga, Estrutural, Arapoanga e Ceilândia",
+     "metas": [
+      {
+       "rotulo": "novas UPAs",
+       "valor": "7 unidades"
+      }
+     ]
     },
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -841,7 +859,13 @@
       432,
       436
      ],
-     "nota": "Concluir as 7 UPAs já contratadas; novas só por critério de tempo-resposta"
+     "nota": "Concluir as 7 UPAs já contratadas; novas só por critério de tempo-resposta",
+     "metas": [
+      {
+       "rotulo": "UPAs concluídas",
+       "valor": "7 UPAs; rede de 13 para 20"
+      }
+     ]
     }
    }
   },
@@ -849,7 +873,7 @@
    "id": "p26",
    "subtema": "Rede hospitalar e infraestrutura",
    "proposta": "Recompor e ampliar os leitos SUS, com prioridade para UTI adulta, pediátrica e neonatal",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -858,14 +882,13 @@
       432,
       434
      ],
-     "nota": "Cerca de 2 mil leitos em 4 anos, com habilitação federal e equipe correspondente"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      449
-     ],
-     "nota": ""
+     "nota": "Cerca de 2 mil leitos em 4 anos, com habilitação federal e equipe correspondente",
+     "metas": [
+      {
+       "rotulo": "leitos SUS recompostos",
+       "valor": "cerca de 2 mil em quatro anos"
+      }
+     ]
     }
    }
   },
@@ -889,7 +912,7 @@
    "id": "p28",
    "subtema": "Atenção especializada e diagnóstico",
    "proposta": "Ampliar a atenção especializada ambulatorial e de diagnóstico com organização regional (policlínicas, centros especializados e serviços de reabilitação)",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -922,21 +945,14 @@
       418
      ],
      "nota": "Policlínicas regionais de especialidades"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      428
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p29",
    "subtema": "Atenção especializada e diagnóstico",
-   "proposta": "Estruturar linha de cuidado oncológico integrada, da prevenção e do diagnóstico precoce ao tratamento e cuidados paliativos",
-   "n_concorda": 3,
+   "proposta": "Organizar a atenção oncológica de forma integrada em rede.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -947,13 +963,6 @@
       471
      ],
      "nota": ""
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": "Rede Integrada de Atenção Oncológica do DF"
     },
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
@@ -1067,7 +1076,7 @@
   {
    "id": "p34",
    "subtema": "Saúde mental",
-   "proposta": "Ampliar e fortalecer a Rede de Atenção Psicossocial, expandindo os CAPS e integrando-os à Atenção Primária, urgência e hospitais",
+   "proposta": "Fortalecer a Rede de Atenção Psicossocial.",
    "n_concorda": 5,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1115,7 +1124,7 @@
   {
    "id": "p35",
    "subtema": "Saúde mental",
-   "proposta": "Garantir cuidado continuado às pessoas com necessidades decorrentes do uso de álcool e outras drogas, com apoio às famílias e reinserção social",
+   "proposta": "Garantir cuidado continuado às pessoas com necessidades decorrentes do uso de álcool e outras drogas, com apoio às famílias.",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1153,7 +1162,7 @@
   {
    "id": "p37",
    "subtema": "Saúde mental",
-   "proposta": "Implantar plano distrital de prevenção ao suicídio com busca ativa, monitoramento de risco e capacitação das redes de apoio",
+   "proposta": "Implantar ações de prevenção ao suicídio na rede pública distrital.",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-kiko-caputo-70002547775": {
@@ -1205,7 +1214,7 @@
   {
    "id": "p39",
    "subtema": "Urgência e emergência",
-   "proposta": "Integrar SAMU, UPAs, hospitais e centrais de regulação para reduzir o tempo de resposta e direcionar o paciente ao serviço adequado",
+   "proposta": "Integrar os serviços de urgência e emergência aos demais serviços da rede de saúde.",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -1247,7 +1256,7 @@
   {
    "id": "p40",
    "subtema": "Urgência e emergência",
-   "proposta": "Organizar fluxos e classificação de risco para desafogar as portas de urgência e garantir continuidade do cuidado após o atendimento",
+   "proposta": "Organizar fluxos entre os serviços para reduzir a procura às portas de urgência por casos que podem ser resolvidos em outros níveis da rede.",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
@@ -1311,8 +1320,8 @@
   {
    "id": "p42",
    "subtema": "Profissionais de saúde",
-   "proposta": "Distribuir melhor os profissionais entre regiões e níveis de atenção para reduzir vazios assistenciais",
-   "n_concorda": 4,
+   "proposta": "Melhorar a distribuição dos profissionais de saúde na rede pública",
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1333,13 +1342,6 @@
      "posicao": "concorda",
      "blocos": [
       452
-     ],
-     "nota": ""
-    },
-    "governador-df-cappelli-70002551557": {
-     "posicao": "concorda",
-     "blocos": [
-      142
      ],
      "nota": ""
     }
@@ -1385,8 +1387,8 @@
   {
    "id": "p44",
    "subtema": "Profissionais de saúde",
-   "proposta": "Cuidar da saúde ocupacional e mental dos trabalhadores da saúde e melhorar condições de trabalho",
-   "n_concorda": 4,
+   "proposta": "Promover a saúde ocupacional e mental dos trabalhadores da saúde e melhorar suas condições de trabalho.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1395,35 +1397,13 @@
       209
      ],
      "nota": ""
-    },
-    "governador-df-paula-belmonte-70002552965": {
-     "posicao": "concorda",
-     "blocos": [
-      395
-     ],
-     "nota": ""
-    },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      404,
-      420
-     ],
-     "nota": "Meta de reduzir absenteísmo de 9,5% para menos de 5%"
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      452
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p45",
    "subtema": "Profissionais de saúde",
-   "proposta": "Reestruturar carreiras e remuneração da saúde, com plano de carreira e retenção de médicos e enfermeiros",
+   "proposta": "Reestruturar as carreiras e a remuneração dos profissionais de saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1445,7 +1425,7 @@
   {
    "id": "p46",
    "subtema": "Medicamentos e assistência farmacêutica",
-   "proposta": "Reorganizar a assistência farmacêutica para reduzir a falta de medicamentos, com planejamento de compras, controle de estoques e integração de dados",
+   "proposta": "Fortalecer a assistência farmacêutica.",
    "n_concorda": 5,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1575,7 +1555,7 @@
   {
    "id": "p50",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Fortalecer o pré-natal, o parto e o puerpério com captação precoce das gestantes e acompanhamento contínuo",
+   "proposta": "Fortalecer o pré-natal, o parto e o puerpério com acompanhamento contínuo das gestantes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
@@ -1592,7 +1572,13 @@
       423,
       512
      ],
-     "nota": "Captação de 90% das gestantes até a 12ª semana e parto humanizado"
+     "nota": "Captação de 90% das gestantes até a 12ª semana e parto humanizado",
+     "metas": [
+      {
+       "rotulo": "captação de gestantes",
+       "valor": "90% até a 12ª semana"
+      }
+     ]
     },
     "governador-df-kiko-caputo-70002547775": {
      "posicao": "concorda",
@@ -1687,7 +1673,7 @@
    "id": "p55",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Integrar a rede de saúde à política de prevenção e enfrentamento da violência contra a mulher, capacitando equipes da Atenção Primária",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -1697,13 +1683,6 @@
       482
      ],
      "nota": ""
-    },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      512
-     ],
-     "nota": "Combate à violência obstétrica"
     }
    }
   },
@@ -1775,7 +1754,7 @@
    "id": "p58",
    "subtema": "Pessoa idosa e atenção domiciliar",
    "proposta": "Estruturar rede integrada de cuidado ao envelhecimento, articulando Atenção Primária, especialidades, reabilitação e convivência comunitária",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
      "posicao": "concorda",
@@ -1799,20 +1778,13 @@
       438
      ],
      "nota": "Política Distrital de Envelhecimento Saudável e Centros de Bem Viver"
-    },
-    "governador-df-leandro-grass-70002552496": {
-     "posicao": "concorda",
-     "blocos": [
-      403
-     ],
-     "nota": "Primeiros Centros Dia do DF"
     }
    }
   },
   {
    "id": "p59",
    "subtema": "Integração da rede e jornada do paciente",
-   "proposta": "Organizar o SUS distrital como rede regional integrada, com acompanhamento da jornada do paciente entre os níveis de atenção",
+   "proposta": "Organizar o SUS distrital como rede regional integrada.",
    "n_concorda": 5,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1847,7 +1819,13 @@
       428,
       1386
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "posição da rede pública",
+       "valor": "DF entre as 3 melhores do país"
+      }
+     ]
     },
     "governador-df-kiko-caputo-70002547775": {
      "posicao": "concorda",
@@ -1862,7 +1840,7 @@
   {
    "id": "p60",
    "subtema": "Pessoas com deficiência e neurodivergentes",
-   "proposta": "Organizar linha de cuidado para pessoas com deficiência e neurodivergentes, com diagnóstico, terapias, reabilitação e acompanhamento multiprofissional",
+   "proposta": "Organizar linha de cuidado para pessoas neurodivergentes.",
    "n_concorda": 4,
    "posicoes": {
     "governador-df-celina-leao-70002553055": {
@@ -1984,7 +1962,7 @@
   {
    "id": "p65",
    "subtema": "Financiamento e cooperação federativa",
-   "proposta": "Aderir plenamente aos programas e ao cofinanciamento federal da saúde para captar recursos hoje não utilizados pelo DF",
+   "proposta": "Aderir aos programas e ao cofinanciamento federal da saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
@@ -2031,7 +2009,13 @@
      "blocos": [
       440
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "moradores do Entorno cobertos",
+       "valor": "cerca de 1,2 milhão de pessoas"
+      }
+     ]
     }
    }
   },
@@ -2056,7 +2040,7 @@
    "id": "p69",
    "subtema": "Vigilância e imunização",
    "proposta": "Fortalecer a vigilância em saúde e a capacidade laboratorial da rede pública",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-cappelli-70002551557": {
      "posicao": "concorda",
@@ -2065,13 +2049,6 @@
       153
      ],
      "nota": ""
-    },
-    "governador-df-kiko-caputo-70002547775": {
-     "posicao": "concorda",
-     "blocos": [
-      410
-     ],
-     "nota": "Antecipação de riscos para planejar a rede"
     }
    }
   },
@@ -2079,7 +2056,7 @@
    "id": "p70",
    "subtema": "Vigilância e imunização",
    "proposta": "Realizar ações itinerantes de exames, prevenção e educação em saúde nos territórios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
@@ -2088,14 +2065,6 @@
       426
      ],
      "nota": "Parcerias com empresas e carretas do programa federal"
-    },
-    "governador-df-celina-leao-70002553055": {
-     "posicao": "concorda",
-     "blocos": [
-      197,
-      198
-     ],
-     "nota": ""
     }
    }
   },
@@ -2133,7 +2102,7 @@
    "id": "p73",
    "subtema": "Atenção primária",
    "proposta": "Usar a proximidade das equipes de Atenção Primária com as famílias para identificar vulnerabilidades e conectar os usuários às demais políticas de proteção social",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
     "governador-df-paula-belmonte-70002552965": {
      "posicao": "concorda",
@@ -2141,28 +2110,623 @@
       349
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Filas e regulação",
+   "proposta": "Criar fila única regulada em central única, com mutirão permanente de consultas, exames e cirurgias usando capacidade ociosa das redes pública, privada e filantrópica, e painel público de tempos de espera por procedimento, especialidade e região administrativa.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-df-leandro-grass-70002552496": {
      "posicao": "concorda",
      "blocos": [
-      418,
-      423,
-      442,
-      443
+      409,
+      450
      ],
-     "nota": "Equipes de Saúde da Família e ACS com visita e busca ativa; Cheque Gestante liga assistência social à saúde."
-    },
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p75",
+   "subtema": "Filas e regulação",
+   "proposta": "Realizar mutirões de consultas, exames e cirurgias quando necessários, com ampliação de turnos e contratação complementar regulada caso a capacidade pública não baste.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      84,
+      134
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p76",
+   "subtema": "Filas e regulação",
+   "proposta": "Realizar mutirões emergenciais orientados por dados, critérios clínicos e demanda regulada, com uso coordenado da capacidade dos serviços públicos, complementares e contratualizados.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-df-kiko-caputo-70002547775": {
      "posicao": "concorda",
      "blocos": [
-      432,
-      434,
-      437,
-      441
+      428,
+      429
      ],
-     "nota": "UBS/ACS identificam precocemente riscos e articulam saúde, educação e assistência social."
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p77",
+   "subtema": "Atenção primária",
+   "proposta": "Fortalecer a Atenção Primária ampliando as Unidades Básicas de Saúde e qualificando o atendimento com equipes multidisciplinares, incluindo assistência farmacêutica e atendimento domiciliar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      67,
+      121,
+      192
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p78",
+   "subtema": "Atenção primária",
+   "proposta": "Transformar progressivamente as Unidades Básicas de Saúde em UBS Plena, com protocolos assistenciais, ferramentas digitais, telemedicina e apoio remoto de especialistas, e funcionamento noturno e em fins de semana em regiões prioritárias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      308,
+      426
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p80",
+   "subtema": "Atenção primária",
+   "proposta": "Ampliar a cobertura real da Estratégia Saúde da Família para 85% até 2030.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      144
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p81",
+   "subtema": "Atenção primária",
+   "proposta": "Ampliar a cobertura da Estratégia Saúde da Família e integrar o cuidado das condições crônicas na Atenção Primária, reduzindo em 20% as internações por condições sensíveis a esse nível de atenção.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      135,
+      145
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p82",
+   "subtema": "Atenção primária",
+   "proposta": "Fortalecer a Atenção Primária com mais equipes de Saúde da Família e atendimento multiprofissional, garantindo prevenção, diagnóstico precoce e acompanhamento das doenças crônicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      338,
+      347
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p83",
+   "subtema": "Saúde digital e informação",
+   "proposta": "Integrar prontuários e sistemas de saúde e disponibilizar plataforma pública com agendamento, receitas, histórico assistencial e acompanhamento de filas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      138
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p85",
+   "subtema": "Saúde digital e informação",
+   "proposta": "Usar a telessaúde, junto com regulação clínica e ampliação regional da atenção especializada, para reduzir as filas de consultas, exames e cirurgias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      84,
+      131
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p86",
+   "subtema": "Saúde digital e informação",
+   "proposta": "Implantar fila única e transparente para consultas, exames, cirurgias e reabilitação, com prioridade clínica, medindo a redução das filas por tempo de espera, estoque de procedimentos e produção por região de saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      134,
+      154
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p87",
+   "subtema": "Saúde digital e informação",
+   "proposta": "Modernizar a gestão da saúde com prontuário eletrônico unificado, acompanhamento digital de agendamentos e filas e uso de dados para planejamento, transparência e redução do tempo de espera.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      67,
+      190,
+      196
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p88",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Ampliar a infraestrutura hospitalar do DF com a construção do Novo Hospital da Ceilândia e do Hospital do Câncer (SAIN).",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      452
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p89",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Recuperar a infraestrutura e os equipamentos da rede pública de saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p90",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Implantar terceiro turno cirúrgico e usar a capacidade ociosa, com equipe cirúrgica completa, contrato permanente de órteses, próteses e materiais especiais e fluxo garantido de insumos, elevando a utilização dos centros cirúrgicos acima dos atuais 30%, e ampliar leitos apenas com pessoal correspondente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      414
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p91",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Reorganizar a rede de saúde como sistema regional integrado, organizando policlínicas e serviços especializados em redes regionais, com a Atenção Primária como porta de entrada e coordenadora do cuidado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      120,
+      142
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p92",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Fortalecer a rede hospitalar para internações, cirurgias e tratamentos de maior complexidade, articulando os hospitais às demais unidades do SUS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      374
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p93",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Organizar e expandir a rede de alta complexidade, definindo vocações assistenciais para os hospitais e ampliando a capacidade instalada quando necessário.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      449
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p94",
+   "subtema": "Rede hospitalar e infraestrutura",
+   "proposta": "Construir 7 novas UPAs em Águas Claras, Água Quente, Guará 2, Taguatinga, Estrutural, Arapoanga e Ceilândia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      200,
+      201
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p97",
+   "subtema": "Saúde mental",
+   "proposta": "Garantir atendimento contínuo em saúde mental, com CAPS, UBS e hospitais trabalhando de forma integrada e com Plano Distrital de Prevenção ao Suicídio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      434,
+      435
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p98",
+   "subtema": "Saúde mental",
+   "proposta": "Assegurar cuidado continuado e resposta integrada às pessoas com problemas relacionados ao uso de álcool e outras drogas, evitando que as famílias peregrinem entre serviços.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      386
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p99",
+   "subtema": "Saúde mental",
+   "proposta": "Oferecer atenção psicossocial a jovens nas escolas e nas UBS, com foco em prevenção ao suicídio e acolhimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      776
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p37"
+  },
+  {
+   "id": "p100",
+   "subtema": "Urgência e emergência",
+   "proposta": "Integrar a Atenção Primária aos serviços especializados, de diagnóstico, de urgência e hospitalares, reduzindo o tempo de espera, inclusive por meio do IntegraSaúde, articulado com as emergências e os CAPS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      188,
+      195
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p102",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Planejar a reposição de profissionais de saúde e adotar estratégias para ampliar a disponibilidade de especialistas nas regiões com maior necessidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      199
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
+  },
+  {
+   "id": "p103",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Garantir condições adequadas de trabalho aos servidores da saúde, com valorização e formação continuada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      395
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p104",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Implantar programa permanente de saúde mental do servidor, reduzindo o absenteísmo de 9,5% para menos de 5%.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      404,
+      420
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p105",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Fortalecer as condições de trabalho dos profissionais da saúde, com desenvolvimento profissional, melhor gestão de pessoas e distribuição mais equilibrada das equipes na rede pública.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      452
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p106",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Reestruturar as carreiras da saúde com valorização salarial e repor profissionais por meio de concursos públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      203
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p108",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Fortalecer o pré-natal, a assistência ao parto e ao puerpério e o acompanhamento da criança desde os primeiros dias, integrando maternidades, pediatria, vacinação e atenção primária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-paula-belmonte-70002552965": {
+     "posicao": "concorda",
+     "blocos": [
+      390,
+      478
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
+  },
+  {
+   "id": "p109",
+   "subtema": "Integração da rede e jornada do paciente",
+   "proposta": "Organizar policlínicas, CAPS, reabilitação, oncologia, trauma e saúde mental em redes regionais integradas, com atendimento regionalizado e Atenção Primária fortalecida.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      126,
+      142,
+      153
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p110",
+   "subtema": "Integração da rede e jornada do paciente",
+   "proposta": "Reorganizar a rede hospitalar por regiões de saúde, definindo o papel de cada unidade, com regulação única e prontuário único.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      428,
+      1386
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p111",
+   "subtema": "Pessoas com deficiência e neurodivergentes",
+   "proposta": "Criar rede integrada de prevenção, identificação precoce, diagnóstico, intervenção especializada e apoio às famílias para o desenvolvimento emocional e o neurodesenvolvimento de crianças e adolescentes, articulando escola, UBS e equipes especializadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      432
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p60"
+  },
+  {
+   "id": "p112",
+   "subtema": "Pessoas com deficiência e neurodivergentes",
+   "proposta": "Implantar o Hospital da Criança como topo da rede de atenção à infância, com o autismo e outras condições do desenvolvimento como linha prioritária para reduzir a espera em neuropediatria.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      435
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p60"
+  },
+  {
+   "id": "p113",
+   "subtema": "Financiamento e cooperação federativa",
+   "proposta": "Expandir a rede de saúde de forma gradual, priorizando vulnerabilidade, impacto sanitário e capacidade de financiamento, com aproveitamento dos programas e recursos do Ministério da Saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-cappelli-70002551557": {
+     "posicao": "concorda",
+     "blocos": [
+      124
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p114",
+   "subtema": "Vigilância e imunização",
+   "proposta": "Ampliar o acesso à saúde bucal com unidades móveis de atendimento odontológico nas escolas públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-celina-leao-70002553055": {
+     "posicao": "concorda",
+     "blocos": [
+      197,
+      198
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p70"
+  },
+  {
+   "id": "p115",
+   "subtema": "Atenção primária",
+   "proposta": "Levar equipe de Saúde da Família de referência a distância caminhável para toda família do DF, ampliando de cerca de 600 para 1.100 equipes, com prioridade a Sol Nascente, Estrutural, Itapoã e Paranoá.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-leandro-grass-70002552496": {
+     "posicao": "concorda",
+     "blocos": [
+      418
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p73"
+  },
+  {
+   "id": "p116",
+   "subtema": "Atenção primária",
+   "proposta": "Criar uma rede permanente de identificação de sinais de risco, busca ativa e acompanhamento das pessoas em maior vulnerabilidade, articulando saúde, educação e assistência social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-df-kiko-caputo-70002547775": {
+     "posicao": "concorda",
+     "blocos": [
+      434,
+      432
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p73"
   }
  ],
  "blocos": {
@@ -2382,10 +2946,6 @@
    "308": {
     "texto": "Macro-compromissos de governo​ ​Macro-compromisso 1 — Cuidado integral desde o começo da vida​ ​Conectar​ ​pré-natal,​ ​parto,​ ​puerpério,​ ​vacinação,​ ​nutrição,​ ​neurodesenvolvimento,​ ​proteção​ ​familiar​​e​ ​educação infantil, reconhecendo riscos cedo e apoiando as famílias.​ ​Compromissos​ ​associados,​ ​detalhados​ ​no​ ​ATO​ ​V​​deste​​Plano​​de​​Governo:​​Pré-natal​​acompanhado;​ ​saúde​​emocional​​e​​neurodesenvolvimento;​​rede​​da​​primeira​​infância;​​acompanhamento​​da​​demanda​ ​por educação infantil; apoio familiar.​ ​Macro-compromisso​ ​2​ ​—​ ​Saúde​ ​próxima,​ ​contínua​ ​e​ ​resolutiva:​ ​Fortalecer​ ​atenção​​primária,​​saúde​ ​mental,​ ​regulação,​ ​diagnóstico,​ ​cuidado​ ​especializado,​ ​condições​ ​crônicas,​ ​alta​ ​complexidade,​ ​reabilitação, urgência e atenção domiciliar como jornadas conectadas.​ ​Compromissos​​associados,​​detalhados​​no​​ATO​​V​​deste​​Plano​​de​​Governo​​UBS​​resolutiva;​​regulação​​e​ ​transparência​​de​​filas;​​medicamentos;​​saúde​​mental;​​oncologia;​​transplantes;​​doenças​​raras;​​urgência;​ ​cirurgia; reabilitação.​ ​Página​​37​",
     "pagina": 37
-   },
-   "410": {
-    "texto": "​riscos​​de​​forma​​antecipada​​e​​melhorar​​o​​planejamento​​da​​rede​​de​​saúde.​​Reduzir​​desigualdades​​no​​acesso​​aos​​serviços​​e​​tornar​​o​​atendimento​ ​mais eficiente, especialmente nas regiões com maior demanda assistencial.​ ​Página​​55​",
-    "pagina": 55
    },
    "425": {
     "texto": "​Saúde​ ​Saúde​​é​​cuidado,​​prevenção,​​autonomia​​e​​qualidade​​de​​vida​​em​​todas​​as​​etapas​​da​​Jornada​​da​​Vida.​​A​​política​​proposta​​parte​​da​​necessidade​​de​​um​​sistema​​mais​​próximo​​das​​pessoas,​ ​mais humano e mais capaz de conectar atenção primária, serviços especializados, profissionais, informação e acompanhamento contínuo.​ ​A​​transformação​​exige​​resultados​​no​​mandato​​e​​construção​​de​​capacidades​​que​​amadurecem​​ao​​longo​​do​​tempo.​​Reorganizar​​fluxos,​​utilizar​​melhor​​a​​estrutura​​existente,​​reduzir​​esperas​​e​ ​fortalecer​ ​a​ ​gestão​​pode​​produzir​​avanços​​imediatos;​​outras​​mudanças​​dependem​​de​​equipes,​​tecnologia,​​ampliação​​gradual​​da​​capacidade​​assistencial​​e​​continuidade​​institucional.​​Os​ ​compromissos indicam essa trajetória, do cuidado perto de casa às redes especializadas.​ ​",

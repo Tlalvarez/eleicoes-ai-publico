@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-ac.json",
   "gerado_em": "2026-09-14T10:07:29Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T21:44:39Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Áreas verdes urbanas",
-   "proposta": "Ampliar áreas verdes urbanas com implantação de parques, praças e arborização das cidades, em parceria com os municípios",
+   "proposta": "Ampliar as áreas verdes urbanas nas cidades.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ac-tiao-bocalom-10002544015": {
@@ -151,7 +151,13 @@
       705,
       706
      ],
-     "nota": "Três viveiros, com recursos do Fundo Clima"
+     "nota": "Três viveiros, com recursos do Fundo Clima",
+     "metas": [
+      {
+       "rotulo": "viveiros públicos estaduais",
+       "valor": "3 viveiros"
+      }
+     ]
     }
    }
   },
@@ -159,15 +165,8 @@
    "id": "p6",
    "subtema": "Resíduos sólidos",
    "proposta": "Apoiar os municípios na gestão e no manejo adequado dos resíduos sólidos urbanos",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ac-thor-dantas-10002550719": {
-     "posicao": "concorda",
-     "blocos": [
-      346
-     ],
-     "nota": ""
-    },
     "governador-ac-alan-rick-10002532492": {
      "posicao": "concorda",
      "blocos": [
@@ -233,7 +232,7 @@
    "id": "p9",
    "subtema": "Clima, desastres e defesa civil",
    "proposta": "Preparar políticas, serviços e investimentos de prevenção e adaptação a eventos climáticos extremos (enchentes, secas, calor, queimadas)",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
      "posicao": "concorda",
@@ -251,20 +250,13 @@
       807
      ],
      "nota": ""
-    },
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      752
-     ],
-     "nota": "Ênfase em resposta rápida em todas as regiões"
     }
    }
   },
   {
    "id": "p10",
    "subtema": "Clima, desastres e defesa civil",
-   "proposta": "Ampliar a capacidade institucional da Defesa Civil e fortalecer as coordenadorias municipais em parceria com os municípios",
+   "proposta": "Fortalecer a Defesa Civil em parceria com os municípios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -288,7 +280,7 @@
   {
    "id": "p11",
    "subtema": "Clima, desastres e defesa civil",
-   "proposta": "Elaborar plano estadual de prevenção e resposta a desastres e eventos climáticos extremos",
+   "proposta": "Elaborar plano estadual de resposta.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -310,7 +302,7 @@
   {
    "id": "p12",
    "subtema": "Clima, desastres e defesa civil",
-   "proposta": "Implantar sistema integrado de monitoramento de queimadas e rede de alerta antecipado para cheias e estiagens",
+   "proposta": "Implantar sistema integrado de monitoramento de queimadas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -433,15 +425,8 @@
    "id": "p18",
    "subtema": "Energia e transição energética",
    "proposta": "Instalar geração solar fotovoltaica em prédios públicos estaduais, escolas e unidades de saúde, com prioridade a localidades isoladas ou de difícil acesso",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      371
-     ],
-     "nota": ""
-    },
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
      "blocos": [
@@ -511,7 +496,7 @@
   {
    "id": "p22",
    "subtema": "Bioeconomia e serviços ambientais",
-   "proposta": "Estruturar o mercado de créditos de carbono do estado, com certificação e comercialização",
+   "proposta": "Estruturar o mercado de créditos de carbono do estado, com certificação",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
@@ -534,7 +519,7 @@
   {
    "id": "p23",
    "subtema": "Bioeconomia e serviços ambientais",
-   "proposta": "Fortalecer o sistema estadual de incentivos a serviços ambientais (SISA) e suas instâncias de governança e repartição de benefícios",
+   "proposta": "Fortalecer o sistema estadual de incentivos a serviços ambientais (SISA)",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-thor-dantas-10002550719": {
@@ -711,6 +696,137 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Áreas verdes urbanas",
+   "proposta": "Ampliar parques, praças, matas ciliares e arborização urbana.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      336
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p35",
+   "subtema": "Áreas verdes urbanas",
+   "proposta": "Implementar o Projeto Parque da Cidade, ampliando áreas verdes urbanas, espaços públicos de convivência e corredores ecológicos, com replicação nos municípios acreanos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      326
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p36",
+   "subtema": "Clima, desastres e defesa civil",
+   "proposta": "Fortalecer as coordenadorias de Defesa Civil em parceria com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      739,
+      740
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p37",
+   "subtema": "Clima, desastres e defesa civil",
+   "proposta": "Ampliar a capacidade institucional da Defesa Civil para apoiar os municípios na gestão de riscos e desastres, aprimorando parcerias e incorporando novas tecnologias e protocolos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      396,
+      438
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p38",
+   "subtema": "Clima, desastres e defesa civil",
+   "proposta": "Elaborar o Plano Estadual de Resposta a Desastres e fortalecer as Comissões Municipais de Defesa Civil (COMPDEC).",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      741
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p39",
+   "subtema": "Clima, desastres e defesa civil",
+   "proposta": "Estruturar Sistema Integrado de Monitoramento contra o desmatamento e as queimadas ilegais, integrando órgãos ambientais, forças de segurança e Defesa Civil em uma rede única de resposta rápida.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      821,
+      822
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p40",
+   "subtema": "Energia e transição energética",
+   "proposta": "Estimular a geração distribuída e as fontes renováveis, sobretudo energia solar, em prédios públicos, escolas, unidades de saúde e comunidades isoladas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      371
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p41",
+   "subtema": "Bioeconomia e serviços ambientais",
+   "proposta": "Estruturar o mercado de carbono com rastreabilidade e certificação, fortalecendo o Sistema Estadual de Pagamento por Serviços Ambientais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-thor-dantas-10002550719": {
+     "posicao": "concorda",
+     "blocos": [
+      248
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
   }
  ],
  "blocos": {
@@ -761,10 +877,6 @@
    },
    "743": {
     "texto": "• implantar sistema integrado de monitoramento de queimadas e rede de alerta antecipado para cheias e estiagens.",
-    "pagina": 35
-   },
-   "752": {
-    "texto": "• Resposta mais rápida a queimadas, cheias e estiagens, em todas as regiões do Estado.",
     "pagina": 35
    }
   },

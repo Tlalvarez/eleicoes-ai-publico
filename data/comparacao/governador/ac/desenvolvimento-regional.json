@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-ac.json",
   "gerado_em": "2026-09-14T10:12:32Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T21:44:40Z"
  },
  "candidatos": [
   {
@@ -51,8 +51,8 @@
   {
    "id": "p1",
    "subtema": "Redução de desigualdades regionais",
-   "proposta": "Adotar o planejamento por territórios/regiões como base das políticas estaduais, reduzindo desigualdades entre as regiões do estado",
-   "n_concorda": 2,
+   "proposta": "Adotar o planejamento por territórios e regiões como base das políticas estaduais, reduzindo as desigualdades entre as regiões do estado.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -63,21 +63,13 @@
       583
      ],
      "nota": "Planejamento orientado por vocações de cada território"
-    },
-    "governador-ac-alan-rick-10002532492": {
-     "posicao": "concorda",
-     "blocos": [
-      133,
-      809
-     ],
-     "nota": "Cooperação com prefeitos respeitando realidades regionais"
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Interiorização de serviços",
-   "proposta": "Descentralizar e interiorizar serviços públicos estaduais, ampliando a presença do Estado nos municípios e regiões distantes da capital",
+   "proposta": "Descentralizar e interiorizar serviços públicos estaduais, ampliando a presença do Estado nos municípios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -100,7 +92,7 @@
   {
    "id": "p3",
    "subtema": "Apoio aos municípios",
-   "proposta": "Fortalecer os municípios com apoio técnico e financeiro do Estado para melhorar a gestão e a entrega de obras e serviços",
+   "proposta": "Fortalecer os municípios para melhorar a gestão e a entrega de serviços",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -277,6 +269,57 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p14",
+   "subtema": "Redução de desigualdades regionais",
+   "proposta": "Planejar as políticas estaduais em cooperação permanente com os 22 municípios, tratados como parceiros estratégicos, com cooperação técnica, presença territorial, recursos previsíveis e respeito às realidades de cada região.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      133,
+      809
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p15",
+   "subtema": "Interiorização de serviços",
+   "proposta": "Planejar as ações estaduais por região, fortalecendo a presença do Estado em todos os municípios e ampliando o atendimento a populações urbanas, rurais, indígenas, ribeirinhas, extrativistas e demais comunidades tradicionais, para reduzir desigualdades territoriais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      380
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p16",
+   "subtema": "Apoio aos municípios",
+   "proposta": "Fortalecer o protagonismo dos municípios, apoiando-os no planejamento do crescimento urbano, na qualificação da infraestrutura, na formação de mão de obra e na atração de investimentos, com uso dos instrumentos estaduais de planejamento para reduzir desigualdades regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      49,
+      727,
+      748
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
   }
  ],
  "blocos": {

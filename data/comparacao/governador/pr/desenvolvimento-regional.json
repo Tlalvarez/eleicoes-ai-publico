@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-pr.json",
   "gerado_em": "2026-09-14T05:58:20Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "exportado_em": "2026-09-16T21:46:21Z"
  },
  "candidatos": [
   {
@@ -52,7 +52,13 @@
       36,
       38
      ],
-     "nota": "Equipes estaduais e regionais de engenharia e assistência técnica"
+     "nota": "Equipes estaduais e regionais de engenharia e assistência técnica",
+     "metas": [
+      {
+       "rotulo": "municípios atendidos",
+       "valor": "399 municípios"
+      }
+     ]
     },
     "governador-pr-sergio-moro-160002540833": {
      "posicao": "concorda",
@@ -68,14 +74,20 @@
       262,
       3943
      ],
-     "nota": "Fábrica de Projetos para Municípios, com planos executivos e apoio jurídico"
+     "nota": "Fábrica de Projetos para Municípios, com planos executivos e apoio jurídico",
+     "metas": [
+      {
+       "rotulo": "municípios atendidos",
+       "valor": "todas as 399 cidades"
+      }
+     ]
     }
    }
   },
   {
    "id": "p2",
    "subtema": "Planejamento regional",
-   "proposta": "Organizar o planejamento estadual por territórios, com diagnósticos e indicadores regionais permanentemente atualizados para orientar decisões",
+   "proposta": "Organizar o planejamento estadual por territórios.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -104,14 +116,20 @@
       1928,
       2497
      ],
-     "nota": "Planos a partir das 15 regiões de planejamento"
+     "nota": "Planos a partir das 15 regiões de planejamento",
+     "metas": [
+      {
+       "rotulo": "regiões de planejamento",
+       "valor": "15 regiões"
+      }
+     ]
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Redução das desigualdades regionais",
-   "proposta": "Adotar política estadual de redução das desigualdades entre regiões, priorizando os territórios de menor desenvolvimento",
+   "proposta": "Adotar política estadual de redução das desigualdades entre regiões",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -145,7 +163,7 @@
   {
    "id": "p4",
    "subtema": "Pactos e metas territoriais",
-   "proposta": "Pactuar com municípios e atores regionais compromissos com metas, responsáveis, prazos e acompanhamento público dos resultados",
+   "proposta": "Pactuar com municípios e atores regionais prioridades e projetos para o desenvolvimento das regiões.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -177,7 +195,7 @@
   {
    "id": "p5",
    "subtema": "Cooperação intermunicipal e consórcios",
-   "proposta": "Apoiar e integrar consórcios intermunicipais e colegiados regionais na execução e construção de políticas públicas",
+   "proposta": "Apoiar consórcios intermunicipais em políticas públicas",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -459,9 +477,99 @@
       3741,
       3742
      ],
-     "nota": "Programa Por Dentro do Paraná, com Passaporte Paraná"
+     "nota": "Programa Por Dentro do Paraná, com Passaporte Paraná",
+     "metas": [
+      {
+       "rotulo": "abrangência do intercâmbio",
+       "valor": "15 regiões de planejamento"
+      }
+     ]
     }
    }
+  },
+  {
+   "id": "p22",
+   "subtema": "Planejamento regional",
+   "proposta": "Fortalecer o IPARDES e firmar pactos regionais de planejamento que integrem saúde, educação, logística, ambiente, turismo e desenvolvimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      40
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p23",
+   "subtema": "Planejamento regional",
+   "proposta": "Organizar o planejamento estadual nas 15 regiões de planejamento, com planos de convergência territorial, diagnósticos e indicadores territoriais e coordenação interfederativa com municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      261,
+      1928,
+      2497
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p24",
+   "subtema": "Redução das desigualdades regionais",
+   "proposta": "Fortalecer o planejamento regional e a cooperação com os municípios, com diagnósticos atualizados e participação social, para reduzir as desigualdades entre as regiões.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      182,
+      183
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p25",
+   "subtema": "Pactos e metas territoriais",
+   "proposta": "Realizar fóruns regionais com prefeitos, setor produtivo, universidades, cooperativas e sociedade civil para definir prioridades, pactuar projetos e acompanhar investimentos e resultados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      152,
+      1782
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p26",
+   "subtema": "Cooperação intermunicipal e consórcios",
+   "proposta": "Apoiar consórcios intermunicipais para soluções compartilhadas em saúde, resíduos, defesa civil, inspeção, máquinas e serviços especializados, sem duplicar estruturas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      43
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
   }
  ],
  "blocos": {

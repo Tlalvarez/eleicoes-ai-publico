@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-sp.json",
   "gerado_em": "2026-09-14T19:47:31Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -35,7 +35,7 @@
   {
    "id": "p1",
    "subtema": "Fomento cultural e acesso à cultura",
-   "proposta": "Apoiar financeiramente a produção cultural em todas as regiões do estado, ampliando a cobertura territorial e o alcance a públicos e grupos vulneráveis",
+   "proposta": "Apoiar a produção cultural.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -126,7 +126,7 @@
   {
    "id": "p5",
    "subtema": "Esporte e lazer",
-   "proposta": "Apoiar o esporte de base e a formação de atletas por meio de centros de formação esportiva",
+   "proposta": "Apoiar o esporte.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -247,7 +247,13 @@
      "blocos": [
       1274
      ],
-     "nota": "Meta de 17 imóveis, incluindo o Palácio dos Campos Elíseos"
+     "nota": "Meta de 17 imóveis, incluindo o Palácio dos Campos Elíseos",
+     "metas": [
+      {
+       "rotulo": "imóveis tombados restaurados",
+       "valor": "17 imóveis tombados"
+      }
+     ]
     }
    }
   },
@@ -357,6 +363,54 @@
      "nota": "Programa Hospitais Musicais com a EMESP Tom Jobim"
     }
    }
+  },
+  {
+   "id": "p20",
+   "subtema": "Fomento cultural e acesso à cultura",
+   "proposta": "Apoiar a produção cultural em todas as regiões, garantindo o acesso da população aos equipamentos e às linguagens culturais e tratando a economia criativa como setor estratégico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      256
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p21",
+   "subtema": "Fomento cultural e acesso à cultura",
+   "proposta": "Apoiar financeiramente projetos culturais por meio do Fomento CultSP, ampliando a cobertura territorial e o alcance a novos públicos, regiões e grupos vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1463
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p22",
+   "subtema": "Esporte e lazer",
+   "proposta": "Apoiar o esporte de base e ampliar o acesso à prática esportiva nas escolas e nos territórios, usando o esporte como política pública de inclusão da juventude.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      258
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
   }
  ],
  "blocos": {

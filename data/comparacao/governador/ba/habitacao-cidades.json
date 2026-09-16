@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-ba.json",
   "gerado_em": "2026-09-14T01:21:33Z",
-  "exportado_em": "2026-09-14T02:08:22Z"
+  "exportado_em": "2026-09-16T18:36:46Z"
  },
  "candidatos": [
   {
@@ -214,7 +214,7 @@
   {
    "id": "p10",
    "subtema": "Regularização fundiária",
-   "proposta": "Executar programa de regularização fundiária urbana e rural para garantir posse segura e título aos moradores",
+   "proposta": "Executar programa de regularização fundiária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-ronaldo-mansur-50002532269": {
@@ -253,8 +253,8 @@
   {
    "id": "p12",
    "subtema": "Regularização fundiária",
-   "proposta": "Priorizar a regularização e a titulação de imóveis de agricultores familiares, quilombolas, indígenas e demais comunidades tradicionais",
-   "n_concorda": 2,
+   "proposta": "Priorizar a titulação de imóveis de agricultores familiares, quilombolas e indígenas.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
@@ -262,13 +262,6 @@
       2397
      ],
      "nota": "Titulação como condição de acesso ao crédito rural"
-    },
-    "governador-ba-ronaldo-mansur-50002532269": {
-     "posicao": "concorda",
-     "blocos": [
-      278
-     ],
-     "nota": "Foco em terrenos da União ocupados em áreas urbanas e periurbanas"
     }
    }
   },
@@ -290,7 +283,7 @@
   {
    "id": "p14",
    "subtema": "Transparência e governança da política habitacional",
-   "proposta": "Assegurar transparência e critérios técnicos na seleção de beneficiários e na execução dos programas habitacionais",
+   "proposta": "Assegurar transparência nos programas habitacionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -346,16 +339,9 @@
   {
    "id": "p17",
    "subtema": "Equipamentos sociais urbanos",
-   "proposta": "Construir e requalificar redes de equipamentos sociais comunitários nos bairros (educação, creche, saúde, cultura, lazer e esporte)",
-   "n_concorda": 2,
+   "proposta": "Construir redes de equipamentos sociais comunitários nos bairros, nas áreas de educação, creche, saúde, cultura, lazer e esporte.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ba-jeronimo-rodrigues-50002536314": {
-     "posicao": "concorda",
-     "blocos": [
-      475
-     ],
-     "nota": "Foco nos Centros Sociais Urbanos"
-    },
     "governador-ba-ronaldo-mansur-50002532269": {
      "posicao": "concorda",
      "blocos": [
@@ -384,7 +370,7 @@
   {
    "id": "p19",
    "subtema": "Moradia em áreas de risco",
-   "proposta": "Atender com ações habitacionais e de controle de riscos ambientais as famílias que ocupam áreas de risco",
+   "proposta": "Implementar ações habitacionais e de controle de riscos ambientais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
@@ -589,6 +575,103 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p32",
+   "subtema": "Regularização fundiária",
+   "proposta": "Promover regularização fundiária urbana em periferias e favelas, com posse segura da terra e da moradia para as famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277,
+      281
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p33",
+   "subtema": "Regularização fundiária",
+   "proposta": "Regularizar os domicílios informais do estado, com georreferenciamento dos imóveis e digitalização da documentação, gerando patrimônio para os moradores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2396
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p34",
+   "subtema": "Regularização fundiária",
+   "proposta": "Criar programa de regularização das áreas da União ocupadas por indígenas, quilombolas, caiçaras, seringueiros, extrativistas e agricultores familiares das várzeas, garantindo sua permanência nesses territórios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      278
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p35",
+   "subtema": "Transparência e governança da política habitacional",
+   "proposta": "Garantir transparência na seleção dos beneficiários do Minha Casa Minha Vida e agilidade na entrega das unidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      984
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p36",
+   "subtema": "Equipamentos sociais urbanos",
+   "proposta": "Reformar e requalificar os Centros Sociais Urbanos, com infraestrutura, equipe técnica e programação permanente de cursos profissionalizantes e atividades para todas as faixas etárias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      475
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p37",
+   "subtema": "Moradia em áreas de risco",
+   "proposta": "Criar um grande programa de urbanização de periferias e favelas, com produção habitacional, regularização fundiária e controle de riscos ambientais, planejado por planos populares e executado em parcerias público-populares.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      277
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
   }
  ],
  "blocos": {

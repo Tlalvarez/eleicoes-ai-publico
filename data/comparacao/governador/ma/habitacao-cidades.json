@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-ma.json",
   "gerado_em": "2026-09-14T21:22:52Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -117,7 +117,7 @@
   {
    "id": "p4",
    "subtema": "Moradia e habitação de interesse social",
-   "proposta": "Ampliar a oferta de moradia digna para famílias de baixa renda em articulação com o Governo Federal e os municípios",
+   "proposta": "Ampliar a oferta de moradia em articulação com os municípios.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -265,7 +265,7 @@
   {
    "id": "p12",
    "subtema": "Áreas de risco e reassentamento",
-   "proposta": "Apoiar municípios na evacuação de moradias em áreas de risco e na realocação das famílias para áreas seguras",
+   "proposta": "Promover a remoção de moradias em áreas de risco e a realocação das famílias para áreas seguras",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -406,6 +406,40 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p20",
+   "subtema": "Moradia e habitação de interesse social",
+   "proposta": "Construir novas unidades habitacionais onde houver déficit por coabitação, aluguel excessivo, moradia irrecuperável ou risco, exigindo terrenos com saneamento, energia, transporte e serviços, com integração a programas federais, financiamento habitacional e contrapartidas municipais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      658,
+      661
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p21",
+   "subtema": "Áreas de risco e reassentamento",
+   "proposta": "Adotar o reassentamento como última alternativa em áreas de risco, garantindo solução habitacional concluída antes da remoção definitiva das famílias e priorizando obras de redução de risco quando tecnicamente viáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      662,
+      674
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
   }
  ],
  "blocos": {

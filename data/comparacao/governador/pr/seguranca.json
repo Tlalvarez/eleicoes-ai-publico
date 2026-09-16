@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "seguranca-pr.json",
   "gerado_em": "2026-09-14T03:30:11Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "exportado_em": "2026-09-16T21:46:21Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Efetivo, carreira e valorização policial",
-   "proposta": "Realizar concursos periódicos e repor/ampliar o efetivo das forças de segurança do Estado",
+   "proposta": "Assegurar o efetivo das forças de segurança do Estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -373,7 +373,7 @@
   {
    "id": "p17",
    "subtema": "Inteligência, tecnologia e investigação",
-   "proposta": "Criar estrutura especializada de inteligência financeira, rastreamento patrimonial e combate à lavagem de dinheiro",
+   "proposta": "Fortalecer a inteligência financeira no enfrentamento ao crime.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -419,7 +419,7 @@
   {
    "id": "p19",
    "subtema": "Policiamento e presença territorial",
-   "proposta": "Ampliar a presença policial ostensiva e preventiva no território, em bairros, rodovias e áreas rurais",
+   "proposta": "Ampliar a presença policial ostensiva e preventiva no território.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -427,7 +427,13 @@
      "blocos": [
       91
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "presença policial em municípios",
+       "valor": "399 municípios, atendimento 24 horas"
+      }
+     ]
     },
     "governador-pr-sergio-moro-160002540833": {
      "posicao": "concorda",
@@ -683,7 +689,7 @@
   {
    "id": "p31",
    "subtema": "Crime organizado, facções e fronteiras",
-   "proposta": "Criar estratégia estadual de redução de crimes patrimoniais com repressão à receptação e recuperação de bens",
+   "proposta": "Reprimir a receptação, fechando o mercado a produtos roubados.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -836,7 +842,7 @@
   {
    "id": "p39",
    "subtema": "Sistema prisional e ressocialização",
-   "proposta": "Construir, ampliar e modernizar unidades penais, substituindo cadeias públicas por unidades regionais",
+   "proposta": "Modernizar unidades penais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -939,7 +945,7 @@
   {
    "id": "p45",
    "subtema": "Emergências e defesa civil",
-   "proposta": "Integrar o atendimento de emergência em central única/regionalizada, com despacho conjunto de polícias, bombeiros e SAMU",
+   "proposta": "Integrar o atendimento de emergência entre os diferentes serviços de socorro.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -971,7 +977,7 @@
    "id": "p46",
    "subtema": "Emergências e defesa civil",
    "proposta": "Mapear riscos, realizar obras de mitigação e apoiar planos municipais de prevenção a desastres",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
      "posicao": "concorda",
@@ -984,14 +990,6 @@
      "posicao": "concorda",
      "blocos": [
       2173
-     ],
-     "nota": ""
-    },
-    "governador-pr-sandro-alex-160002549553": {
-     "posicao": "concorda",
-     "blocos": [
-      933,
-      937
      ],
      "nota": ""
     }
@@ -1069,7 +1067,7 @@
   {
    "id": "p50",
    "subtema": "Violência contra a mulher e proteção de vítimas",
-   "proposta": "Usar inteligência artificial e integração de dados para identificar precocemente casos de risco letal e prevenir feminicídios",
+   "proposta": "Identificar precocemente casos de risco letal, com integração de dados entre os serviços, para prevenir feminicídios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -1375,7 +1373,7 @@
   {
    "id": "p66",
    "subtema": "Violência contra a mulher e proteção de vítimas",
-   "proposta": "Instituir protocolos intersetoriais unificados entre Justiça, Segurança Pública, Saúde, Educação e Assistência Social, com compartilhamento seguro de informações",
+   "proposta": "Promover a articulação intersetorial entre a Assistência Social e os demais órgãos envolvidos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -1395,6 +1393,173 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p67",
+   "subtema": "Efetivo, carreira e valorização policial",
+   "proposta": "Garantir a reposição permanente do efetivo das forças de segurança, com aperfeiçoamento remuneratório contínuo da carreira.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      948,
+      3887
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p68",
+   "subtema": "Inteligência, tecnologia e investigação",
+   "proposta": "Fortalecer a inteligência financeira e as operações contra armas, drogas, contrabando e roubo de cargas na fronteira, no litoral e no campo, com reforço do BPFRON.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      97
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p69",
+   "subtema": "Inteligência, tecnologia e investigação",
+   "proposta": "Fortalecer os Gabinetes de Gestão Integrada e o DRACO, com integração das unidades anticorrupção e análise de fluxos financeiros, no combate ao tráfico, contrabando, descaminho e lavagem de dinheiro.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      902,
+      917
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p70",
+   "subtema": "Policiamento e presença territorial",
+   "proposta": "Garantir presença policial permanente e atendimento operacional 24 horas nos 399 municípios, por equipes locais ou regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      91
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p71",
+   "subtema": "Crime organizado, facções e fronteiras",
+   "proposta": "Criar registro de procedência de peças automotivas, com integração entre desmanches, oficinas, concessionárias, seguradoras e órgãos de segurança, para fechar o mercado à receptação e à clonagem e reduzir o roubo de veículos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      2349,
+      2350,
+      2356
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p72",
+   "subtema": "Sistema prisional e ressocialização",
+   "proposta": "Construir, ampliar e modernizar unidades penais por meio de parcerias público-privadas, com redução de custos e melhores condições de custódia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      2144
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p73",
+   "subtema": "Emergências e defesa civil",
+   "proposta": "Fortalecer a coordenação entre Defesa Civil, Bombeiros, forças de segurança e municípios para resposta rápida e integrada a desastres, acidentes e crises.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      2164
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p74",
+   "subtema": "Violência contra a mulher e proteção de vítimas",
+   "proposta": "Adotar protocolo estadual único de identificação de risco letal nas portas de atendimento e manter painel estadual de casos de alto risco, com compartilhamento seguro de informações entre órgãos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      1047,
+      1050,
+      1053
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
+  },
+  {
+   "id": "p75",
+   "subtema": "Violência contra a mulher e proteção de vítimas",
+   "proposta": "Padronizar os procedimentos de atendimento a mulheres em situação de violência entre polícias, assistência social, saúde e justiça, reduzindo a revitimização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      2199,
+      2200
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p66"
+  },
+  {
+   "id": "p76",
+   "subtema": "Violência contra a mulher e proteção de vítimas",
+   "proposta": "Articular a Assistência Social e demais órgãos parceiros com compartilhamento seguro de informações.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      1010
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p66"
   }
  ],
  "blocos": {
@@ -1539,10 +1704,6 @@
    },
    "935": {
     "texto": "✓ emergências atendidas com mais rapidez e coordenação;",
-    "pagina": 79
-   },
-   "937": {
-    "texto": "✓ resposta especializada a eventos climáticos e ambientais;",
     "pagina": 79
    },
    "938": {

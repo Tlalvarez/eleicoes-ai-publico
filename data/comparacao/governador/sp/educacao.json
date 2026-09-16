@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-sp.json",
   "gerado_em": "2026-09-14T19:39:56Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:08Z"
  },
  "candidatos": [
   {
@@ -36,7 +36,7 @@
    "id": "p1",
    "subtema": "Alfabetização e colaboração com municípios",
    "proposta": "Garantir que toda criança seja alfabetizada na idade certa por meio de regime de colaboração com os 645 municípios, com apoio técnico, pedagógico e financeiro e avaliações periódicas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
@@ -45,14 +45,6 @@
       195
      ],
      "nota": "Pacto com os 645 municípios e estado como coordenador das redes"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      599,
-      767
-     ],
-     "nota": "Continuidade e apoio à implantação da metodologia do Alfabetiza Juntos SP"
     }
    }
   },
@@ -89,7 +81,7 @@
   {
    "id": "p4",
    "subtema": "Ensino médio e educação profissional",
-   "proposta": "Ampliar a oferta de ensino técnico e profissionalizante conectada ao ensino médio, integrando escolas estaduais, Etecs e Fatecs do Centro Paula Souza",
+   "proposta": "Conectar o ensino médio à formação técnica e profissionalizante, integrando escolas estaduais, Etecs e Fatecs do Centro Paula Souza.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -199,7 +191,7 @@
   {
    "id": "p10",
    "subtema": "Recomposição da aprendizagem e permanência",
-   "proposta": "Implantar reforço estruturado de aprendizagem em língua portuguesa e matemática, com diagnóstico e acompanhamento contínuo dos estudantes",
+   "proposta": "Implantar reforço de aprendizagem para os estudantes da rede pública.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -330,7 +322,7 @@
   {
    "id": "p17",
    "subtema": "Professores e formação docente",
-   "proposta": "Investir em formação continuada de professores e valorizar a carreira docente com melhores condições de trabalho",
+   "proposta": "Investir em formação continuada de professores",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -353,7 +345,7 @@
   {
    "id": "p18",
    "subtema": "Professores e formação docente",
-   "proposta": "Aproximar a formação inicial de professores da prática escolar, fortalecendo licenciaturas, residência pedagógica e apoio a docentes iniciantes",
+   "proposta": "Aproximar a formação inicial de professores da prática escolar, fortalecendo as licenciaturas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -693,15 +685,8 @@
    "id": "p38",
    "subtema": "Ensino médio e educação profissional",
    "proposta": "Oferecer vagas gratuitas nas Etecs e Fatecs nas modalidades presencial e a distância (EaD)",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      199
-     ],
-     "nota": "Propõe aproveitar Centro Paula Souza, Etecs e Fatecs para formação profissional, sem detalhar EaD."
-    },
     "governador-sp-tarcisio-250002541303": {
      "posicao": "concorda",
      "blocos": [
@@ -710,6 +695,89 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p39",
+   "subtema": "Alfabetização e colaboração com municípios",
+   "proposta": "Apoiar as prefeituras na implantação da metodologia do Programa Alfabetiza Juntos SP e elevar a alfabetização na idade certa de 61% para 90% até o fim do quadriênio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      599,
+      767
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p40",
+   "subtema": "Ensino médio e educação profissional",
+   "proposta": "Conectar o ensino médio à formação profissional que emprega, aproveitando o Centro Paula Souza, as Etecs e as Fatecs, para que o jovem conclua a educação básica com diploma e profissão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      151,
+      199
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p41",
+   "subtema": "Recomposição da aprendizagem e permanência",
+   "proposta": "Oferecer reforço de aprendizagem, busca ativa e apoio à permanência aos estudantes em risco de abandono, com pacto com os municípios pela alfabetização na idade certa e metas medidas pela régua federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      195
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p42",
+   "subtema": "Professores e formação docente",
+   "proposta": "Ampliar a formação de professores em didáticas específicas e em novas tecnologias, inteligência artificial e gestão pedagógica por dados, formando coordenadores pedagógicos como multiplicadores na rede.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      730,
+      731
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p43",
+   "subtema": "Professores e formação docente",
+   "proposta": "Fortalecer a formação inicial e continuada dos professores por meio das universidades públicas paulistas, aproximando a universidade da escola, com respeito à autonomia universitária e financiamento estável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      201
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-go.json",
   "gerado_em": "2026-09-14T08:22:31Z",
-  "exportado_em": "2026-09-14T08:45:16Z"
+  "exportado_em": "2026-09-16T21:45:41Z"
  },
  "candidatos": [
   {
@@ -67,17 +67,9 @@
   {
    "id": "p1",
    "subtema": "Transferência de renda",
-   "proposta": "Manter e fortalecer programas de transferência de renda para famílias em situação de pobreza e vulnerabilidade",
-   "n_concorda": 4,
+   "proposta": "Manter e fortalecer programas de transferência de renda.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      382,
-      954
-     ],
-     "nota": "Manter a rede de proteção já existente como porto seguro"
-    },
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
@@ -189,7 +181,7 @@
   {
    "id": "p6",
    "subtema": "Rede socioassistencial e SUAS",
-   "proposta": "Organizar o atendimento socioassistencial de forma integrada com saúde, educação, habitação, trabalho e demais políticas, em articulação com os municípios",
+   "proposta": "Organizar o atendimento socioassistencial de forma integrada com as demais políticas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -222,7 +214,7 @@
   {
    "id": "p7",
    "subtema": "Rede socioassistencial e SUAS",
-   "proposta": "Fazer busca ativa para alcançar pessoas e famílias que ainda estão fora da rede de proteção social",
+   "proposta": "Realizar busca ativa de famílias em situação de vulnerabilidade.",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -293,7 +285,7 @@
    "id": "p11",
    "subtema": "Segurança alimentar",
    "proposta": "Criar, recuperar ou ampliar equipamentos públicos de alimentação popular para pessoas em insegurança alimentar",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-luciana-amorim-90002550707": {
      "posicao": "concorda",
@@ -308,13 +300,6 @@
       906
      ],
      "nota": "Retomada do Restaurante Cidadão"
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      662
-     ],
-     "nota": "Cozinhas comunitárias e bancos de alimentos em rede"
     }
    }
   },
@@ -383,7 +368,7 @@
   {
    "id": "p16",
    "subtema": "Primeira infância e proteção da criança",
-   "proposta": "Integrar as políticas de primeira infância (gestação, saúde, assistência social, creche e proteção de direitos) para crianças de zero a seis anos",
+   "proposta": "Integrar as políticas voltadas à primeira infância.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -561,7 +546,7 @@
   {
    "id": "p26",
    "subtema": "Família, creche e cuidado",
-   "proposta": "Organizar as políticas de proteção e cuidado segundo as fases da vida (primeira infância, juventude, mulheres, idosos e pessoas com deficiência)",
+   "proposta": "Desenvolver políticas de proteção e cuidado voltadas à primeira infância e às pessoas idosas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -623,8 +608,8 @@
   {
    "id": "p29",
    "subtema": "Continuidade das políticas sociais",
-   "proposta": "Dar continuidade aos programas sociais já existentes, modernizando-os em vez de substituí-los por novos nomes",
-   "n_concorda": 2,
+   "proposta": "Dar continuidade aos programas sociais existentes, modernizando-os em vez de substituí-los por novos nomes.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
@@ -633,15 +618,124 @@
       953
      ],
      "nota": "Retomada de programas de gestões anteriores do próprio candidato"
-    },
+    }
+   }
+  },
+  {
+   "id": "p30",
+   "subtema": "Transferência de renda",
+   "proposta": "Garantir auxílio emergencial de forma permanente à população goiana, até que haja oferta plena de emprego.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luciana-amorim-90002550707": {
+     "posicao": "concorda",
+     "blocos": [
+      72
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p31",
+   "subtema": "Rede socioassistencial e SUAS",
+   "proposta": "Organizar o acesso integrado à assistência social, tratando moradia e cuidado junto com creche, água, transporte, escola, saúde e renda, com plano familiar e encaminhamento acompanhado nos casos de maior risco.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      626,
+      629
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p32",
+   "subtema": "Rede socioassistencial e SUAS",
+   "proposta": "Fortalecer a rede integrada de proteção social da primeira infância à terceira idade, ampliando o acompanhamento das famílias vulneráveis com uso do Cadastro Único e combinando proteção social, qualificação e geração de renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      954,
+      955
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p33",
+   "subtema": "Rede socioassistencial e SUAS",
+   "proposta": "Construir uma política social integrada que aproxime assistência social, segurança alimentar, habitação, cidadania, qualificação, trabalho, crédito e proteção de direitos, evitando atendimentos isolados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      893,
+      894,
+      954
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p34",
+   "subtema": "Rede socioassistencial e SUAS",
+   "proposta": "Fazer busca ativa de famílias vulneráveis na primeira infância, com acompanhamento dos marcos do desenvolvimento e orientação sobre benefícios e serviços.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      648
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p36",
+   "subtema": "Família, creche e cuidado",
+   "proposta": "Atribuir à vice-governadora a condução das pautas do cuidado, com prioridade às pessoas mais carentes e atenção à mulher, à primeira infância, ao idoso e à família, em articulação com municípios e comunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      265
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p37",
+   "subtema": "Continuidade das políticas sociais",
+   "proposta": "Manter a rede de proteção social como amparo permanente e convertê-la em ponte para o trabalho, a qualificação e a mobilidade social das famílias.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
      "blocos": [
       382
      ],
-     "nota": "Continuidade da rede de programas da atual gestão"
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p29"
   }
  ],
  "blocos": {

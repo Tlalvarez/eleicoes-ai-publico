@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "seguranca-ap.json",
   "gerado_em": "2026-09-14T20:07:19Z",
-  "exportado_em": "2026-09-14T20:40:20Z"
+  "exportado_em": "2026-09-16T21:25:15Z"
  },
  "candidatos": [
   {
@@ -144,7 +144,7 @@
   {
    "id": "p4",
    "subtema": "Integração e inteligência policial",
-   "proposta": "Criar ou fortalecer um Centro Integrado de Inteligência em Segurança Pública, com compartilhamento de informações entre os níveis municipal, estadual e federal",
+   "proposta": "Criar ou fortalecer um Centro Integrado de Inteligência em Segurança Pública.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -341,7 +341,7 @@
   {
    "id": "p13",
    "subtema": "Crime organizado, facções e fronteiras",
-   "proposta": "Reforçar a atuação integrada nas regiões de fronteira contra crimes transfronteiriços e contrabando",
+   "proposta": "Reforçar o combate aos crimes transfronteiriços e ao contrabando nas regiões de fronteira",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -366,7 +366,7 @@
   {
    "id": "p14",
    "subtema": "Crime organizado, facções e fronteiras",
-   "proposta": "Priorizar a descapitalização das organizações criminosas, atacando fluxos financeiros, lavagem de dinheiro e ocultação de patrimônio",
+   "proposta": "Combater os fluxos financeiros das organizações criminosas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -388,7 +388,7 @@
   {
    "id": "p15",
    "subtema": "Crime organizado, facções e fronteiras",
-   "proposta": "Fortalecer o combate aos crimes ambientais com atuação integrada entre forças de segurança e órgãos de fiscalização",
+   "proposta": "Fortalecer o combate aos crimes ambientais",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -432,7 +432,7 @@
   {
    "id": "p17",
    "subtema": "Crime organizado, facções e fronteiras",
-   "proposta": "Estruturar o patrulhamento fluvial permanente nos rios e bacias do estado",
+   "proposta": "Estruturar o patrulhamento fluvial",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -454,7 +454,7 @@
   {
    "id": "p18",
    "subtema": "Crime organizado, facções e fronteiras",
-   "proposta": "Instalar bases operacionais integradas em áreas de fronteira, rurais, ribeirinhas e de difícil acesso",
+   "proposta": "Instalar bases operacionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-delegado-marcos-30002552017": {
@@ -593,7 +593,7 @@
   {
    "id": "p25",
    "subtema": "Violência contra a mulher",
-   "proposta": "Ampliar a rede estadual de proteção e enfrentamento à violência contra a mulher e ao feminicídio, com alcance aos municípios do interior",
+   "proposta": "Ampliar a proteção e o enfrentamento à violência contra a mulher e ao feminicídio.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ap-carlos-cley-30002536313": {
@@ -624,7 +624,7 @@
   {
    "id": "p26",
    "subtema": "Violência contra a mulher",
-   "proposta": "Expandir a Casa da Mulher Brasileira como equipamento central da rede de proteção",
+   "proposta": "Expandir a Casa da Mulher Brasileira.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
@@ -849,21 +849,14 @@
   {
    "id": "p39",
    "subtema": "Policiamento e presença territorial",
-   "proposta": "Reforçar o policiamento ostensivo orientado por inteligência com ocupação estratégica de áreas críticas",
-   "n_concorda": 2,
+   "proposta": "Reforçar o policiamento ostensivo orientado por inteligência, com ocupação estratégica de áreas críticas.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ap-clecio-30002536311": {
      "posicao": "concorda",
      "blocos": [
       455,
       457
-     ],
-     "nota": ""
-    },
-    "governador-ap-dr-furlan-30002530014": {
-     "posicao": "concorda",
-     "blocos": [
-      182
      ],
      "nota": ""
     }
@@ -1054,6 +1047,140 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p52",
+   "subtema": "Integração e inteligência policial",
+   "proposta": "Instituir um Centro Integrado de Inteligência voltado à análise criminal e ao compartilhamento de informações.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      169,
+      170,
+      514
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p53",
+   "subtema": "Crime organizado, facções e fronteiras",
+   "proposta": "Combater o tráfico, o contrabando, os crimes ambientais e demais crimes de fronteira.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      171,
+      180,
+      182
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p54",
+   "subtema": "Crime organizado, facções e fronteiras",
+   "proposta": "Combater as organizações criminosas e seus fluxos financeiros, com integração das forças de segurança, ampliação da inteligência e cooperação federativa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-clecio-30002536311": {
+     "posicao": "concorda",
+     "blocos": [
+      455
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p56",
+   "subtema": "Crime organizado, facções e fronteiras",
+   "proposta": "Implantar bases integradas e patrulhamento fluvial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-delegado-marcos-30002552017": {
+     "posicao": "concorda",
+     "blocos": [
+      181
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p57",
+   "subtema": "Crime organizado, facções e fronteiras",
+   "proposta": "Ampliar a presença do Estado em áreas rurais, fluviais, ribeirinhas e indígenas com bases operacionais e policiamento especializado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      217
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p58",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Fortalecer a rede estadual de enfrentamento à violência contra a mulher e ao feminicídio, ampliando a cobertura dos serviços especializados e o atendimento humanizado, com proteção integral às mulheres em situação de violência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      191,
+      1170,
+      1212
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p59",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Construir a Casa da Mulher Brasileira em Santana e Laranjal do Jari, ampliando a rede de enfrentamento à violência contra a mulher.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      752
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p60",
+   "subtema": "Policiamento e presença territorial",
+   "proposta": "Implantar e expandir videomonitoramento, inteligência artificial, análise de dados, radiocomunicação e perícia digital como apoio ao policiamento ostensivo e à investigação criminal, com prioridade para a Região Metropolitana de Macapá e Santana.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ap-dr-furlan-30002530014": {
+     "posicao": "concorda",
+     "blocos": [
+      182
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
   }
  ],
  "blocos": {

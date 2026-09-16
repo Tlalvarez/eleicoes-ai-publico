@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-rr.json",
   "gerado_em": "2026-09-14T14:24:40Z",
-  "exportado_em": "2026-09-14T14:32:06Z"
+  "exportado_em": "2026-09-16T20:02:13Z"
  },
  "candidatos": [
   {
@@ -102,7 +102,7 @@
   {
    "id": "p4",
    "subtema": "Calendário cultural e festivais",
-   "proposta": "Manter e fortalecer um calendário estadual de eventos culturais, com apoio aos festivais dos municípios e das diversas manifestações locais",
+   "proposta": "Manter e fortalecer um calendário estadual de eventos culturais, com apoio às manifestações culturais locais",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-arthur-henrique-230002549223": {
@@ -200,7 +200,7 @@
   {
    "id": "p9",
    "subtema": "Esporte e lazer",
-   "proposta": "Ampliar o acesso ao esporte e ao lazer em todo o Estado, com atividades e competições no interior e nos territórios",
+   "proposta": "Ampliar o acesso ao esporte e ao lazer em todo o Estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -232,7 +232,7 @@
   {
    "id": "p10",
    "subtema": "Esporte e lazer",
-   "proposta": "Realizar competições intermunicipais de futebol amador",
+   "proposta": "Realizar competições intermunicipais",
    "n_concorda": 2,
    "posicoes": {
     "governador-rr-soldado-sampaio-230002551571": {
@@ -612,7 +612,7 @@
    "id": "p30",
    "subtema": "Gestão e participação",
    "proposta": "Estruturar o Sistema Estadual de Cultura, com plano estadual e conselho de cultura fortalecido",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-rr-rosi-aires-230002552060": {
      "posicao": "concorda",
@@ -620,13 +620,6 @@
       105
      ],
      "nota": ""
-    },
-    "governador-rr-soldado-sampaio-230002551571": {
-     "posicao": "concorda",
-     "blocos": [
-      902
-     ],
-     "nota": "Plano cultural e turístico 2027–2030 atualizado"
     }
    }
   },
@@ -678,6 +671,55 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Calendário cultural e festivais",
+   "proposta": "Fortalecer e ampliar o São João no Parque Anauá e realizar o Réveillon no mesmo local, consolidando o calendário oficial de eventos e valorizando os artistas e as tradições populares locais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-soldado-sampaio-230002551571": {
+     "posicao": "concorda",
+     "blocos": [
+      825
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p35",
+   "subtema": "Esporte e lazer",
+   "proposta": "Construir quadras e campos de qualidade em bairros de baixo IDH e alta vulnerabilidade social de Boa Vista e nas sedes dos municípios do interior, com grama sintética, alambrado, vestiário, iluminação e acesso pavimentado, priorizando quem não tem equipamento esportivo público em uso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-arthur-henrique-230002549223": {
+     "posicao": "concorda",
+     "blocos": [
+      411,
+      415
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p36",
+   "subtema": "Esporte e lazer",
+   "proposta": "Promover campeonatos esportivos intermunicipais, jogos escolares e futebol comunitário nos territórios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rr-rosi-aires-230002552060": {
+     "posicao": "concorda",
+     "blocos": [
+      104
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

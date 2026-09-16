@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-pb.json",
   "gerado_em": "2026-09-14T17:32:49Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p1",
    "subtema": "Metas e resultados",
-   "proposta": "Adotar gestão por resultados, com metas e indicadores definidos para os programas e secretarias e apuração pública dos resultados",
+   "proposta": "Adotar gestão por resultados, com acompanhamento do desempenho da gestão pública.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -185,7 +185,7 @@
   {
    "id": "p7",
    "subtema": "Transparência e integridade",
-   "proposta": "Ampliar a transparência ativa e o acesso à informação sobre o governo estadual",
+   "proposta": "Ampliar a transparência ativa sobre o governo estadual",
    "n_concorda": 4,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -423,7 +423,7 @@
   {
    "id": "p17",
    "subtema": "Servidores e carreiras",
-   "proposta": "Modernizar e ampliar a Escola de Serviço Público da Paraíba (ESPEP) como escola de governo",
+   "proposta": "Modernizar a Escola de Serviço Público da Paraíba (ESPEP)",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -462,7 +462,7 @@
    "id": "p19",
    "subtema": "Servidores e carreiras",
    "proposta": "Promover a saúde e o bem-estar dos servidores, com monitoramento de riscos psicossociais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
      "posicao": "concorda",
@@ -470,13 +470,6 @@
       173
      ],
      "nota": ""
-    },
-    "governador-pb-pedro-coutinho-150002551911": {
-     "posicao": "concorda",
-     "blocos": [
-      174
-     ],
-     "nota": "Melhoria das condições de trabalho, sem detalhar instrumento"
     }
    }
   },
@@ -576,20 +569,12 @@
    "id": "p26",
    "subtema": "Governo digital e desburocratização",
    "proposta": "Digitalizar os serviços públicos estaduais, reduzindo filas, papel e burocracia para o cidadão",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
      "posicao": "concorda",
      "blocos": [
       163
-     ],
-     "nota": ""
-    },
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      175,
-      179
      ],
      "nota": ""
     },
@@ -652,7 +637,7 @@
   {
    "id": "p30",
    "subtema": "Contas públicas e finanças",
-   "proposta": "Implantar política permanente de controle de despesas e redução do desperdício, com governança fiscal integrada",
+   "proposta": "Reduzir o desperdício e os custos na administração estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -793,8 +778,8 @@
   {
    "id": "p38",
    "subtema": "Relação com os municípios",
-   "proposta": "Prestar apoio técnico e institucional aos municípios, com escuta permanente na gestão estadual",
-   "n_concorda": 2,
+   "proposta": "Prestar apoio técnico e institucional aos municípios.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
@@ -802,13 +787,6 @@
       196
      ],
      "nota": "Apoio técnico às 223 prefeituras"
-    },
-    "governador-pb-efraim-filho-150002538692": {
-     "posicao": "concorda",
-     "blocos": [
-      71
-     ],
-     "nota": "Revisão anual do planejamento com escuta dos municípios"
     }
    }
   },
@@ -1031,6 +1009,105 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p53",
+   "subtema": "Metas e resultados",
+   "proposta": "Exigir metas, indicadores e mecanismos de avaliação em todos os grandes programas estaduais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      169
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p54",
+   "subtema": "Metas e resultados",
+   "proposta": "Implantar mecanismos de monitoramento de desempenho na gestão pública, com gestão patrimonial eficiente e fortalecimento da capacidade institucional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      175
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p56",
+   "subtema": "Servidores e carreiras",
+   "proposta": "Modernizar a Escola de Serviço Público da Paraíba (ESPEP) com foco na capacitação tecnológica dos servidores, na inovação no setor público e na liderança digital, com formação contínua em tecnologia, gestão digital e análise de dados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      172,
+      173
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p57",
+   "subtema": "Contas públicas e finanças",
+   "proposta": "Implantar política permanente de controle de despesas, transparência, integridade e combate ao desperdício, revertendo a economia em serviços, investimentos e redução de custos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-pedro-coutinho-150002551911": {
+     "posicao": "concorda",
+     "blocos": [
+      166,
+      167
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p58",
+   "subtema": "Contas públicas e finanças",
+   "proposta": "Reduzir o custo das compras públicas sob governança fiscal integrada, com auditoria da folha, teto para cargos comissionados e painel público de acompanhamento das obras estaduais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      198,
+      1055
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p59",
+   "subtema": "Relação com os municípios",
+   "proposta": "Apoiar tecnicamente as 223 prefeituras, com metas públicas e acompanhamento de gastos em painel aberto ao cidadão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      196
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-rn.json",
   "gerado_em": "2026-09-14T23:58:37Z",
-  "exportado_em": "2026-09-14T23:59:11Z"
+  "exportado_em": "2026-09-16T21:37:14Z"
  },
  "candidatos": [
   {
@@ -52,7 +52,7 @@
    "id": "p1",
    "subtema": "Planejamento regional",
    "proposta": "Planejar e organizar políticas e investimentos por regiões, reconhecendo vocações e necessidades territoriais de cada território do estado",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
      "posicao": "concorda",
@@ -69,14 +69,6 @@
       978
      ],
      "nota": "Articula infraestrutura a educação profissional, inovação, turismo e economia do mar"
-    },
-    "governador-rn-alvaro-dias-200002534442": {
-     "posicao": "concorda",
-     "blocos": [
-      691,
-      693
-     ],
-     "nota": "Nomeia Seridó, Agreste, Oeste, Alto Oeste, Vale do Assú, Mato Grande, Trairi, Potengi e Costa Branca"
     }
    }
   },
@@ -105,7 +97,7 @@
   {
    "id": "p3",
    "subtema": "Região metropolitana",
-   "proposta": "Elaborar e executar o Plano de Desenvolvimento Urbano Integrado (PDUI) da Região Metropolitana, articulando Estado e municípios em mobilidade, uso do solo, habitação, saneamento, segurança, meio ambiente e desenvolvimento econômico",
+   "proposta": "Elaborar o Plano de Desenvolvimento Urbano Integrado (PDUI) da Região Metropolitana, articulando Estado e municípios em mobilidade, uso do solo, habitação, saneamento, meio ambiente e desenvolvimento econômico.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
@@ -237,15 +229,8 @@
    "id": "p10",
    "subtema": "Redução de desigualdades territoriais",
    "proposta": "Reduzir as desigualdades entre capital e interior e entre regiões com diferentes capacidades econômicas, evitando a concentração de investimentos em poucas regiões",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-rn-cadu-de-lula-200002534001": {
-     "posicao": "concorda",
-     "blocos": [
-      973
-     ],
-     "nota": "Apoia-se na cooperação com o governo federal"
-    },
     "governador-rn-alvaro-dias-200002534442": {
      "posicao": "concorda",
      "blocos": [
@@ -301,6 +286,39 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p14",
+   "subtema": "Região metropolitana",
+   "proposta": "Fortalecer a governança da Região Metropolitana de Natal, com a elaboração do Plano de Desenvolvimento Urbano Integrado e a coordenação das funções públicas de interesse comum em mobilidade, saneamento, habitação, uso do solo, desenvolvimento econômico, segurança e meio ambiente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      586,
+      587
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p15",
+   "subtema": "Redução de desigualdades territoriais",
+   "proposta": "Reduzir, em cooperação com o governo federal, as desigualdades entre capital e interior, áreas urbanas e rurais e regiões com diferentes capacidades econômicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-cadu-de-lula-200002534001": {
+     "posicao": "concorda",
+     "blocos": [
+      973
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {
@@ -397,10 +415,6 @@
    },
    "689": {
     "texto": "Hoje, o Governo do Estado não exerce como deveria seu papel de articulação, apoio e investimento em Natal e na Região Metropolitana. Vamos mudar essa realidade. A capital e os municípios metropolitanos receberão a atenção que sua importância exige, com ações integradas em mobilidade, segurança, saneamento, infraestrutura e serviços.",
-    "pagina": 32
-   },
-   "691": {
-    "texto": "Ao mesmo tempo, vamos ampliar as oportunidades no Seridó, Agreste,",
     "pagina": 32
    },
    "693": {

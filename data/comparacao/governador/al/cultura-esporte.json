@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-al.json",
   "gerado_em": "2026-09-14T09:22:29Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -103,7 +103,7 @@
   {
    "id": "p3",
    "subtema": "Esporte e lazer",
-   "proposta": "Ampliar a oferta de atividades esportivas para pessoas idosas e pessoas com deficiência, com apoio ao paradesporto",
+   "proposta": "Apoiar o paradesporto.",
    "n_concorda": 3,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
@@ -330,7 +330,7 @@
    "id": "p14",
    "subtema": "Fomento cultural",
    "proposta": "Descentralizar a política cultural, levando programação e apoio à produção cultural a todas as regiões, ao interior e às periferias",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
      "posicao": "concorda",
@@ -338,14 +338,6 @@
       30
      ],
      "nota": "Incentivo às manifestações culturais em todas as regiões"
-    },
-    "governador-al-renan-filho-20002553745": {
-     "posicao": "concorda",
-     "blocos": [
-      376,
-      377
-     ],
-     "nota": "Programação permanente do Circuito Cultural Alagoas"
     },
     "governador-al-jhc-20002553350": {
      "posicao": "concorda",
@@ -360,7 +352,7 @@
   {
    "id": "p15",
    "subtema": "Fomento cultural",
-   "proposta": "Apoiar e profissionalizar artistas e trabalhadores da cultura locais",
+   "proposta": "Apoiar artistas e trabalhadores da cultura locais",
    "n_concorda": 3,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
@@ -420,7 +412,7 @@
   {
    "id": "p18",
    "subtema": "Equipamentos culturais",
-   "proposta": "Implantar, qualificar e articular em rede os equipamentos culturais do estado (casas de cultura, museus, teatros e bibliotecas)",
+   "proposta": "Implantar e qualificar equipamentos culturais do estado, como casas de cultura, museus, teatros e bibliotecas",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -538,7 +530,7 @@
   {
    "id": "p24",
    "subtema": "Turismo cultural",
-   "proposta": "Incentivar o turismo apoiado nas vocações culturais locais e em novos destinos fora do eixo já consolidado",
+   "proposta": "Incentivar o turismo no estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
@@ -556,6 +548,70 @@
      "nota": "Programa Alagoas de Ponta a Ponta, além do litoral"
     }
    }
+  },
+  {
+   "id": "p25",
+   "subtema": "Esporte e lazer",
+   "proposta": "Criar uma rede estadual de espaços esportivos comunitários multiuso com programação permanente e apoio ao paradesporto, priorizando territórios sem equipamentos esportivos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      358
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p27",
+   "subtema": "Equipamentos culturais",
+   "proposta": "Implantar e qualificar espaços culturais no interior, com editais regionalizados e descentralizados, para ampliar o acesso à cultura fora da capital.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      348
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p28",
+   "subtema": "Turismo cultural",
+   "proposta": "Incentivar o turismo cultural, com apoio às manifestações culturais de todas as regiões, aos artistas locais e à identidade regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      30
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p29",
+   "subtema": "Turismo cultural",
+   "proposta": "Ampliar o turismo para além do litoral já consolidado, estruturando novos destinos e distribuindo melhor a renda do setor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      347
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
   }
  ],
  "blocos": {

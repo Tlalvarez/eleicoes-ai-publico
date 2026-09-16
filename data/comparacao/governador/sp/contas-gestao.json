@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-sp.json",
   "gerado_em": "2026-09-14T19:44:58Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -34,29 +34,6 @@
  ],
  "propostas": [
   {
-   "id": "p1",
-   "subtema": "Gestão por resultados e governança",
-   "proposta": "Instituir estrutura de governança central para coordenação, monitoramento e integração das políticas públicas setoriais, com ciclos regulares de avaliação",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-sp-fernando-haddad-250002549705": {
-     "posicao": "concorda",
-     "blocos": [
-      271,
-      274
-     ],
-     "nota": "Liderança pessoal do governador, responsáveis nomeados e carreiras técnicas como instituições de estado"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1511
-     ],
-     "nota": "Estrutura de governança para coordenar as Trilhas e otimizar comitês internos"
-    }
-   }
-  },
-  {
    "id": "p2",
    "subtema": "Gestão por resultados e governança",
    "proposta": "Converter o programa de governo em plano de gestão com metas públicas, prazos e responsáveis no primeiro ano, com placar público atualizado a cada trimestre",
@@ -76,7 +53,7 @@
    "id": "p3",
    "subtema": "Responsabilidade fiscal e orçamento",
    "proposta": "Manter controle contínuo dos gastos e racionalização das despesas de custeio por ganho de eficiência, com cada compromisso vinculado a fonte identificada no orçamento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
@@ -84,14 +61,6 @@
       285
      ],
      "nota": "Fonte identificada no planejamento e rigor contra gasto que não entrega"
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1497,
-      1524
-     ],
-     "nota": "Continuidade do programa SP na Direção Certa e do Decreto 68.538/2024"
     }
    }
   },
@@ -282,6 +251,54 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p15",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Liderar pessoalmente um modelo de gestão com prioridades claras, metas públicas e responsáveis nomeados, cobrados em ciclos regulares de avaliação, e consolidar estruturas de coordenação, sistemas de dados e carreiras técnicas como instituições de estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      271,
+      274
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p16",
+   "subtema": "Gestão por resultados e governança",
+   "proposta": "Instituir estrutura de governança para coordenação e monitoramento das Trilhas, que abarque e otimize os comitês internos de governo e promova integração das políticas públicas setoriais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1511
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p17",
+   "subtema": "Responsabilidade fiscal e orçamento",
+   "proposta": "Promover o controle contínuo dos gastos e estimular a redução do custeio por ganho de eficiência e otimização de estruturas e atividades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1497,
+      1524
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
   }
  ],
  "blocos": {

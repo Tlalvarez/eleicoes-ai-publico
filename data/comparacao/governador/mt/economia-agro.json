@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "economia-agro-mt.json",
   "gerado_em": "2026-09-14T06:21:34Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T19:54:49Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p1",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Promover a verticalização e a industrialização da produção agropecuária estadual, agregando valor e processando localmente a matéria-prima",
+   "proposta": "Promover a industrialização e a agregação de valor à produção do estado",
    "n_concorda": 5,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
@@ -70,7 +70,13 @@
       37,
       61
      ],
-     "nota": "Meta de elevar de 20% para 32% os grãos industrializados no estado"
+     "nota": "Meta de elevar de 20% para 32% os grãos industrializados no estado",
+     "metas": [
+      {
+       "rotulo": "grãos industrializados no estado",
+       "valor": "elevar de 20% para 32%"
+      }
+     ]
     },
     "governador-mt-doutora-natasha-110002544985": {
      "posicao": "concorda",
@@ -110,7 +116,7 @@
   {
    "id": "p2",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Desburocratizar o ambiente de negócios e agilizar o licenciamento ambiental de empreendimentos produtivos",
+   "proposta": "Desburocratizar o ambiente de negócios.",
    "n_concorda": 4,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
@@ -190,7 +196,7 @@
   {
    "id": "p5",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Fomentar o polo têxtil e a verticalização da cadeia do algodão, da fiação à confecção",
+   "proposta": "Fomentar a indústria têxtil e de fiação de algodão no estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
@@ -254,32 +260,9 @@
    }
   },
   {
-   "id": "p8",
-   "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Posicionar o estado como polo de biocombustíveis avançados e energia a partir da produção local",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-mt-wellington-fagundes-110002551737": {
-     "posicao": "concorda",
-     "blocos": [
-      895
-     ],
-     "nota": ""
-    },
-    "governador-mt-mauricio-coelho-110002553058": {
-     "posicao": "concorda",
-     "blocos": [
-      296,
-      302
-     ],
-     "nota": "Etanol com desconto verificável ao consumidor local"
-    }
-   }
-  },
-  {
    "id": "p9",
    "subtema": "Desenvolvimento econômico e industrialização",
-   "proposta": "Fomentar o setor mineral com agregação de valor nos municípios minerados",
+   "proposta": "Fomentar o setor mineral",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -335,7 +318,7 @@
   {
    "id": "p12",
    "subtema": "Agricultura familiar",
-   "proposta": "Ampliar a assistência técnica e extensão rural para pequenos produtores e agricultores familiares",
+   "proposta": "Ampliar a assistência técnica e extensão rural.",
    "n_concorda": 4,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -374,7 +357,7 @@
   {
    "id": "p13",
    "subtema": "Agricultura familiar",
-   "proposta": "Criar ou ampliar linha de crédito estadual específica e subsidiada para a agricultura familiar",
+   "proposta": "Oferecer crédito para a agricultura familiar",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -405,7 +388,7 @@
   {
    "id": "p14",
    "subtema": "Agricultura familiar",
-   "proposta": "Criar linhas de crédito e ações de sucessão voltadas aos jovens rurais",
+   "proposta": "Criar medidas de apoio voltadas aos jovens rurais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -427,7 +410,7 @@
   {
    "id": "p15",
    "subtema": "Agricultura familiar",
-   "proposta": "Ampliar a mecanização da agricultura familiar com máquinas e implementos, inclusive por uso compartilhado com municípios e cooperativas",
+   "proposta": "Ampliar a mecanização da agricultura familiar com máquinas e implementos, inclusive mediante uso compartilhado com municípios.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -450,7 +433,7 @@
   {
    "id": "p16",
    "subtema": "Agricultura familiar",
-   "proposta": "Ampliar o acesso a sistemas de irrigação para a agricultura familiar",
+   "proposta": "Ampliar o acesso a sistemas de irrigação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -494,7 +477,7 @@
   {
    "id": "p18",
    "subtema": "Agricultura familiar",
-   "proposta": "Fomentar a diversificação produtiva e cultivos de maior valor agregado na pequena produção",
+   "proposta": "Fomentar a diversificação produtiva na pequena produção.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -516,7 +499,7 @@
   {
    "id": "p19",
    "subtema": "Agricultura familiar",
-   "proposta": "Apoiar a comercialização da agricultura familiar por feiras, canais digitais e compras públicas",
+   "proposta": "Apoiar a comercialização, inclusive por compras públicas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -562,7 +545,7 @@
   {
    "id": "p21",
    "subtema": "Agricultura familiar",
-   "proposta": "Apoiar a regularização fundiária e ambiental (CAR/PRA) das pequenas propriedades rurais",
+   "proposta": "Apoiar a regularização ambiental por meio do CAR e do PRA.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-mauricio-coelho-110002553058": {
@@ -631,7 +614,7 @@
   {
    "id": "p25",
    "subtema": "Turismo",
-   "proposta": "Instituir política estadual de turismo com regionalização de roteiros, infraestrutura e qualificação dos destinos",
+   "proposta": "Fortalecer o turismo no estado com investimento em infraestrutura e qualificação dos destinos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -663,7 +646,7 @@
   {
    "id": "p26",
    "subtema": "Turismo",
-   "proposta": "Promover o turismo mato-grossense nos mercados nacional e internacional com programa permanente de promoção e comercialização",
+   "proposta": "Promover o turismo mato-grossense por meio de ações de promoção e comercialização dos seus destinos e produtos turísticos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -719,7 +702,7 @@
   {
    "id": "p28",
    "subtema": "Turismo",
-   "proposta": "Qualificar profissionais e guias para o setor turístico",
+   "proposta": "Qualificar profissionais para o setor turístico",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -750,7 +733,7 @@
   {
    "id": "p29",
    "subtema": "Turismo",
-   "proposta": "Estruturar o turismo de observação de fauna silvestre no Pantanal como produto internacional",
+   "proposta": "Estruturar o turismo de observação de fauna silvestre no Pantanal como produto turístico.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -780,7 +763,7 @@
   {
    "id": "p30",
    "subtema": "Turismo",
-   "proposta": "Fomentar a pesca esportiva como atividade turística, com regras de manejo e infraestrutura",
+   "proposta": "Fomentar a pesca esportiva como atividade turística.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -921,7 +904,7 @@
   {
    "id": "p37",
    "subtema": "Crédito e fomento",
-   "proposta": "Ampliar as linhas de crédito, avais e garantias estaduais para micro, pequenas e médias empresas",
+   "proposta": "Ampliar as linhas de crédito para pequenas e médias empresas",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -1140,7 +1123,13 @@
       89,
       90
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "renúncias fiscais revertidas",
+       "valor": "R$ 10 bilhões"
+      }
+     ]
     }
    }
   },
@@ -1214,7 +1203,7 @@
   {
    "id": "p52",
    "subtema": "Emprego, renda e qualificação",
-   "proposta": "Estruturar programa de qualificação profissional alinhado às vocações econômicas de cada região",
+   "proposta": "Estruturar programa de qualificação profissional.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -1245,7 +1234,7 @@
   {
    "id": "p53",
    "subtema": "Emprego, renda e qualificação",
-   "proposta": "Implantar política de inclusão produtiva e geração de renda para jovens e populações vulneráveis",
+   "proposta": "Implantar política de inclusão produtiva e geração de renda para populações vulneráveis",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -1344,7 +1333,7 @@
   {
    "id": "p58",
    "subtema": "Comércio exterior e atração de investimentos",
-   "proposta": "Implantar política de promoção comercial e apoio às exportações das empresas mato-grossenses",
+   "proposta": "Atuar para ampliar a inserção das empresas mato-grossenses no mercado externo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -1367,7 +1356,7 @@
   {
    "id": "p59",
    "subtema": "Comércio exterior e atração de investimentos",
-   "proposta": "Consolidar a Zona de Processamento de Exportação de Cáceres, ocupando os lotes industriais e integrando-a à hidrovia do Rio Paraguai",
+   "proposta": "Consolidar a Zona de Processamento de Exportação de Cáceres, atraindo indústrias para o complexo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -1448,7 +1437,7 @@
   {
    "id": "p63",
    "subtema": "Agropecuária e sustentabilidade produtiva",
-   "proposta": "Criar estratégia de diferenciação e valorização da origem da produção mato-grossense, com marcas coletivas e indicações geográficas",
+   "proposta": "Criar estratégia de diferenciação e valorização da origem da produção mato-grossense.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -1612,7 +1601,7 @@
   {
    "id": "p73",
    "subtema": "Crédito e fomento",
-   "proposta": "Fortalecer pequenos e médios empreendimentos industriais por meio da agência de fomento estadual (Desenvolve MT) e do fundo MT Garante",
+   "proposta": "Fortalecer empreendimentos industriais com crédito e garantias estaduais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -1724,16 +1713,8 @@
    "id": "p79",
    "subtema": "Turismo",
    "proposta": "Estruturar a Chapada dos Guimarães como destino de aventura, bem-estar e contemplação, com hospedagens integradas à paisagem, balonismo, trilhas seguras, observação do céu, gastronomia regional e a Rota do Vinho",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mt-doutora-natasha-110002544985": {
-     "posicao": "concorda",
-     "blocos": [
-      417,
-      418
-     ],
-     "nota": "Política estadual de turismo com roteiros regionalizados inclui Chapada dos Guimarães e ecoturismo."
-    },
     "governador-mt-mauricio-coelho-110002553058": {
      "posicao": "concorda",
      "blocos": [
@@ -1772,6 +1753,482 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p82",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Diversificar a economia estadual para além do agro, com incentivo à indústria de transformação e à bioeconomia e criação de uma política estadual de geologia e recursos minerais, incluindo mapeamento geológico, qualificação de mão de obra nos municípios minerados e centro tecnológico com as universidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      384,
+      386
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p83",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Agregar valor à produção do Estado, avançando na indústria, tecnologia, inovação, turismo e economia criativa, e fomentar a implantação de indústrias fornecedoras e empresas de serviços para as cadeias produtivas consolidadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      15,
+      926
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p84",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Criar programa de desburocratização e crédito para pequenas e médias empresas, com meta de emprego formal no interior medida por indicador regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      393,
+      394
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p85",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Consolidar um governo desburocratizado, com segurança jurídica e liberdade para quem produz e empreende.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p86",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Fomentar a instalação de indústrias de fiação de algodão, como parte do estímulo à agroindústria de valor agregado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-rafaell-milas-110002543953": {
+     "posicao": "concorda",
+     "blocos": [
+      37
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p87",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Posicionar Mato Grosso como polo atrator de investimentos em biocombustíveis avançados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      895
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p88",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Transformar o gás local em fertilizantes, energia e combustível, com o Hub de Fertilizantes de Cáceres, e garantir etanol de milho mato-grossense ao consumidor com desconto verificável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      296,
+      302
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Desenvolvimento econômico e industrialização",
+   "proposta": "Fomentar o setor mineral sustentável, junto à expansão da rede de frigoríficos e ao manejo florestal sustentável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      683
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p90",
+   "subtema": "Agricultura familiar",
+   "proposta": "Executar os serviços de ATER em parceria direta com os municípios, com veículos, integração de sistemas e cooperação técnica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      606
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p91",
+   "subtema": "Agricultura familiar",
+   "proposta": "Criar linha de crédito dedicada à agricultura familiar, acompanhada de assistência técnica, para corrigir o desequilíbrio de acesso ao financiamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      380,
+      381
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p92",
+   "subtema": "Agricultura familiar",
+   "proposta": "Criar programa integrado de crédito, assistência técnica e regularização sanitária e ambiental para agroindústrias familiares, com capacitação dos agricultores para acessar financiamentos como o Pronaf.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      872,
+      882
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p93",
+   "subtema": "Agricultura familiar",
+   "proposta": "Criar ações de sucessão rural e de empreendedorismo jovem no campo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      878
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p94",
+   "subtema": "Agricultura familiar",
+   "proposta": "Criar linhas de crédito exclusivas para jovens rurais, incentivando sua permanência no campo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      624
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p95",
+   "subtema": "Agricultura familiar",
+   "proposta": "Fornecer máquinas, tratores, implementos e veículos aos municípios para atender agricultores familiares e incentivar a mecanização de pequeno porte adequada às cadeias produtivas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      608,
+      610
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p96",
+   "subtema": "Agricultura familiar",
+   "proposta": "Ampliar o acesso a sistemas de irrigação e criar linhas de crédito específicas para a compra de equipamentos de irrigação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      611
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p97",
+   "subtema": "Agricultura familiar",
+   "proposta": "Criar programa de capacitação técnica de produtores, difusão de tecnologias sociais e diversificação da produção agrícola.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      874
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p98",
+   "subtema": "Agricultura familiar",
+   "proposta": "Apoiar a comercialização da produção das mulheres do campo e incluí-las nas compras públicas, junto a capacitação, crédito e assistência produtiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      406
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p99",
+   "subtema": "Agricultura familiar",
+   "proposta": "Integrar a regularização ambiental à atividade produtiva, permitindo ao proprietário vincular o projeto ao CAR, ao PRA e ao PRADA, com recomposição, compensação e acompanhamento por indicadores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      853
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p100",
+   "subtema": "Turismo",
+   "proposta": "Garantir infraestrutura de saneamento, energia e telecomunicações nas cidades-destino e incentivar novas atrações turísticas em segmentos como negócios, histórico, religioso, gastronômico e cultural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      940,
+      965
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p101",
+   "subtema": "Turismo",
+   "proposta": "Criar programa de qualificação dos produtos turísticos de alto valor na Chapada dos Guimarães, no Pantanal e na Transpantaneira, com plano de produto por destino que defina infraestrutura mínima, licenciamento, formação de operadores, acessibilidade e segurança.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      759,
+      774
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p102",
+   "subtema": "Turismo",
+   "proposta": "Estruturar programa permanente de promoção e inteligência turística, com campanhas publicitárias, feiras, material promocional, marketing digital e plataforma unificada, além de divulgar os pontos turísticos pelos canais oficiais do Estado e por parcerias com produtores de conteúdo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      184,
+      956
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p105",
+   "subtema": "Turismo",
+   "proposta": "Qualificar o Pantanal como destino de observação da vida selvagem, pesca esportiva e cultura pantaneira, com financiamento de estruturas de observação da fauna e hospedagem integrada à paisagem.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      712,
+      765
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p106",
+   "subtema": "Turismo",
+   "proposta": "Apoiar a pesca esportiva como parte de uma política estadual de turismo com roteiros regionalizados, infraestrutura de acesso, sinalização e capacitação profissional, de forma compatível com os planos de conservação de cada bioma.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      418
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p109",
+   "subtema": "Emprego, renda e qualificação",
+   "proposta": "Fortalecer os programas estaduais de apoio à mulher chefe de família e de inserção produtiva, com prioridade de vagas em empresas contratadas pelo Estado ou beneficiadas por incentivos fiscais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      507,
+      508
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p53"
+  },
+  {
+   "id": "p110",
+   "subtema": "Comércio exterior e atração de investimentos",
+   "proposta": "Ampliar a rede de escritórios comerciais de Mato Grosso em países estratégicos e manter agenda permanente de missões comerciais internacionais, para atrair investimentos e abrir mercados à produção do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      397,
+      398
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p58"
+  },
+  {
+   "id": "p111",
+   "subtema": "Comércio exterior e atração de investimentos",
+   "proposta": "Acelerar, junto ao Governo Federal, a aprovação de projetos no Conselho Nacional de ZPEs e promover a ocupação dos lotes industriais, com atração de indústrias-âncora e integração logística do complexo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      834
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p112",
+   "subtema": "Comércio exterior e atração de investimentos",
+   "proposta": "Consolidar a infraestrutura da ZPE de Cáceres, com benefícios tributários e cambiais para atrair indústrias exportadoras e integração com a hidrovia do Rio Paraguai.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      685
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
+  },
+  {
+   "id": "p113",
+   "subtema": "Agropecuária e sustentabilidade produtiva",
+   "proposta": "Estruturar uma estratégia estadual de diferenciação da produção mato-grossense.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      863
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p63"
+  },
+  {
+   "id": "p115",
+   "subtema": "Crédito e fomento",
+   "proposta": "Aprimorar os instrumentos estaduais de fomento, crédito e garantias e criar linhas de crédito com juros competitivos para modernizar o parque industrial e adquirir máquinas e equipamentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      830,
+      891
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p73"
   }
  ],
  "blocos": {

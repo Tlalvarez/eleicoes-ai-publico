@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-rn.json",
   "gerado_em": "2026-09-14T23:31:18Z",
-  "exportado_em": "2026-09-14T23:59:11Z"
+  "exportado_em": "2026-09-16T21:37:14Z"
  },
  "candidatos": [
   {
@@ -75,7 +75,7 @@
   {
    "id": "p2",
    "subtema": "Produção e melhoria de moradias",
-   "proposta": "Apoiar a produção habitacional, a melhoria de moradias e a urbanização em parceria com a União e os municípios, priorizando famílias vulneráveis",
+   "proposta": "Apoiar a produção habitacional, a melhoria de moradias e a urbanização em parceria com a União e os municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-allyson-200002535255": {
@@ -208,7 +208,7 @@
   {
    "id": "p10",
    "subtema": "Urbanização e infraestrutura urbana",
-   "proposta": "Apoiar projetos de urbanização e requalificação de assentamentos precários, com infraestrutura, pavimentação, drenagem, iluminação pública, áreas de lazer e equipamentos comunitários, em parceria com municípios e Governo Federal",
+   "proposta": "Apoiar a urbanização em parceria com os municípios e o Governo Federal.",
    "n_concorda": 2,
    "posicoes": {
     "governador-rn-alvaro-dias-200002534442": {
@@ -272,6 +272,39 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p14",
+   "subtema": "Produção e melhoria de moradias",
+   "proposta": "Articular produção habitacional, regularização fundiária, urbanização de assentamentos precários e melhoria da moradia com municípios e União, ampliando a oferta de moradias de interesse social e retomando empreendimentos paralisados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-alvaro-dias-200002534442": {
+     "posicao": "concorda",
+     "blocos": [
+      1200,
+      1202
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p15",
+   "subtema": "Urbanização e infraestrutura urbana",
+   "proposta": "Apoiar habitação, melhoria de moradias e urbanização em parceria com a União e os municípios, priorizando famílias vulneráveis, pessoas com deficiência, mulheres responsáveis pelo domicílio e áreas de risco.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rn-allyson-200002535255": {
+     "posicao": "concorda",
+     "blocos": [
+      617
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

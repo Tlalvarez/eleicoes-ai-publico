@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-ce.json",
   "gerado_em": "2026-09-14T04:47:47Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T21:45:08Z"
  },
  "candidatos": [
   {
@@ -35,16 +35,9 @@
   {
    "id": "p1",
    "subtema": "Educação básica e regime de colaboração",
-   "proposta": "Manter e fortalecer o regime de colaboração entre Estado e municípios na educação básica, ampliando a oferta na educação infantil e no ensino fundamental",
-   "n_concorda": 2,
+   "proposta": "Fortalecer a educação infantil e o ensino fundamental em regime de colaboração com os municípios, ampliando a oferta de vagas.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ce-ciro-gomes-60002531351": {
-     "posicao": "concorda",
-     "blocos": [
-      81
-     ],
-     "nota": "Compromete-se a preservar os avanços do regime de colaboração"
-    },
     "governador-ce-elmano-de-freitas-60002543969": {
      "posicao": "concorda",
      "blocos": [
@@ -175,7 +168,7 @@
    "id": "p9",
    "subtema": "Ensino médio, educação profissional e tempo integral",
    "proposta": "Consolidar e ampliar a educação em tempo integral na rede estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
      "posicao": "concorda",
@@ -183,13 +176,6 @@
       81
      ],
      "nota": ""
-    },
-    "governador-ce-elmano-de-freitas-60002543969": {
-     "posicao": "concorda",
-     "blocos": [
-      770
-     ],
-     "nota": "Amplia oferta de educação profissional nas escolas de tempo integral"
     }
    }
   },
@@ -485,16 +471,9 @@
   {
    "id": "p27",
    "subtema": "Ensino superior e universidades estaduais",
-   "proposta": "Aproximar universidades e setor produtivo, alinhando ensino e pesquisa às vocações econômicas regionais",
-   "n_concorda": 2,
+   "proposta": "Alinhar o ensino e a pesquisa às vocações econômicas regionais.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ce-ciro-gomes-60002531351": {
-     "posicao": "concorda",
-     "blocos": [
-      91
-     ],
-     "nota": ""
-    },
     "governador-ce-elmano-de-freitas-60002543969": {
      "posicao": "concorda",
      "blocos": [
@@ -594,20 +573,13 @@
   {
    "id": "p33",
    "subtema": "Inclusão e equidade escolar",
-   "proposta": "Reduzir as desigualdades de aprendizagem e elevar a qualidade do ensino na rede pública",
-   "n_concorda": 2,
+   "proposta": "Elevar a qualidade do ensino na rede pública.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
      "posicao": "concorda",
      "blocos": [
       81
-     ],
-     "nota": ""
-    },
-    "governador-ce-elmano-de-freitas-60002543969": {
-     "posicao": "concorda",
-     "blocos": [
-      743
      ],
      "nota": ""
     }
@@ -645,6 +617,38 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p37",
+   "subtema": "Ensino superior e universidades estaduais",
+   "proposta": "Integrar as políticas de educação, ciência, tecnologia e inovação às vocações econômicas e aos arranjos produtivos das 14 macrorregiões de planejamento do estado, estimulando pesquisa, empreendedorismo e retenção de talentos nos territórios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-elmano-de-freitas-60002543969": {
+     "posicao": "concorda",
+     "blocos": [
+      743
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p38",
+   "subtema": "Inclusão e equidade escolar",
+   "proposta": "Ampliar a qualidade da aprendizagem na rede pública, fortalecendo a alfabetização, consolidando o ensino em tempo integral e valorizando os profissionais da educação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      81
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
   }
  ],
  "blocos": {

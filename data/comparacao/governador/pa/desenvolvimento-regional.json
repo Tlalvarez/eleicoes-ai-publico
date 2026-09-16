@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-pa.json",
   "gerado_em": "2026-09-14T06:01:31Z",
-  "exportado_em": "2026-09-14T07:02:20Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Desigualdades regionais",
-   "proposta": "Planejar e executar as políticas públicas de forma regionalizada, levando desenvolvimento a todas as regiões do estado e reduzindo as desigualdades históricas entre elas",
+   "proposta": "Levar desenvolvimento a todas as regiões do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-dr-daniel-140002549930": {
@@ -176,7 +176,7 @@
    "id": "p7",
    "subtema": "Marajó",
    "proposta": "Promover o desenvolvimento do Marajó, com melhoria de seus indicadores sociais e fortalecimento das atividades econômicas locais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
@@ -185,14 +185,6 @@
       305
      ],
      "nota": "Aposta em infraestrutura, turismo, pesca e pecuária"
-    },
-    "governador-pa-araceli-140002542386": {
-     "posicao": "concorda",
-     "blocos": [
-      327,
-      329
-     ],
-     "nota": ""
     }
    }
   },
@@ -314,15 +306,8 @@
    "id": "p15",
    "subtema": "Interiorização de serviços",
    "proposta": "Governar com escuta e proximidade dos territórios, dialogando com municípios, universidades, setor produtivo, comunidades tradicionais e trabalhadores na definição das políticas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pa-hana-ghassan-140002551598": {
-     "posicao": "concorda",
-     "blocos": [
-      50
-     ],
-     "nota": "Compromisso de parceria com todos os municípios, respeitando suas realidades e regiões."
-    },
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
      "blocos": [
@@ -331,6 +316,39 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p16",
+   "subtema": "Desigualdades regionais",
+   "proposta": "Manter parceria com todos os municípios, respeitando suas realidades, para levar desenvolvimento a cada região do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      50
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p17",
+   "subtema": "Marajó",
+   "proposta": "Implantar um plano de desenvolvimento territorial para superar os péssimos indicadores sociais que marcam essa região paraense.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      327,
+      329
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
   }
  ],
  "blocos": {

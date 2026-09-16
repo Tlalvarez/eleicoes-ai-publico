@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-to.json",
   "gerado_em": "2026-09-14T13:43:25Z",
-  "exportado_em": "2026-09-14T14:05:35Z"
+  "exportado_em": "2026-09-16T20:09:33Z"
  },
  "candidatos": [
   {
@@ -52,16 +52,8 @@
    "id": "p1",
    "subtema": "Gestão do SUAS",
    "proposta": "Fortalecer a rede estadual de assistência social em articulação com os municípios e o SUAS",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      419,
-      421
-     ],
-     "nota": "Ênfase em fortalecimento dos municípios e da rede de proteção"
-    },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
@@ -74,7 +66,13 @@
      "blocos": [
       1266
      ],
-     "nota": "Via implementação da Lei Estadual do SUAS com cofinanciamento"
+     "nota": "Via implementação da Lei Estadual do SUAS com cofinanciamento",
+     "metas": [
+      {
+       "rotulo": "municípios integrados ao SUAS",
+       "valor": "139 municípios"
+      }
+     ]
     }
    }
   },
@@ -82,7 +80,7 @@
    "id": "p2",
    "subtema": "Gestão do SUAS",
    "proposta": "Apoiar a estrutura e a capacidade de atendimento dos equipamentos públicos de assistência social dos municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
@@ -90,13 +88,6 @@
       757
      ],
      "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1268
-     ],
-     "nota": "Dobrar o cofinanciamento do Benefício Eventual aos municípios"
     }
    }
   },
@@ -207,16 +198,9 @@
   {
    "id": "p9",
    "subtema": "Proteção social e públicos vulneráveis",
-   "proposta": "Ampliar o acesso da população aos serviços de proteção social e o atendimento a famílias em risco",
-   "n_concorda": 2,
+   "proposta": "Ampliar o acesso da população aos serviços de proteção social",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      423
-     ],
-     "nota": ""
-    },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
@@ -279,15 +263,8 @@
    "id": "p13",
    "subtema": "Intersetorialidade e inclusão produtiva",
    "proposta": "Integrar a assistência social com educação, saúde, qualificação profissional e geração de emprego para superar a vulnerabilidade",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      419
-     ],
-     "nota": "Coordenação entre políticas como eixo do plano social"
-    },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
@@ -316,7 +293,7 @@
    "id": "p15",
    "subtema": "Segurança alimentar e pobreza",
    "proposta": "Ampliar ações de enfrentamento à pobreza e à insegurança alimentar, fortalecendo a política de segurança alimentar e nutricional",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
@@ -324,13 +301,6 @@
       753
      ],
      "nota": "Prioriza famílias em maior vulnerabilidade"
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1268
-     ],
-     "nota": "Via ampliação do Projeto Alimento"
     }
    }
   },
@@ -380,6 +350,55 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p19",
+   "subtema": "Gestão do SUAS",
+   "proposta": "Fortalecer a rede de proteção social e os municípios, com coordenação entre políticas e atendimento prioritário a crianças, mulheres, idosos, pessoas com deficiência, juventude e comunidades vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      419,
+      421
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p20",
+   "subtema": "Proteção social e públicos vulneráveis",
+   "proposta": "Ampliar o acesso da população aos serviços de proteção social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      756
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p21",
+   "subtema": "Segurança alimentar e pobreza",
+   "proposta": "Ampliar o Projeto Alimento, com prioridade para a segurança alimentar na primeira infância, e dobrar o cofinanciamento do Benefício Eventual aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1268
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
   }
  ],
  "blocos": {
@@ -394,10 +413,6 @@
    },
    "422": {
     "texto": "• Integração de cadastros e serviços.",
-    "pagina": 23
-   },
-   "423": {
-    "texto": "• Atendimento a famílias em risco.",
     "pagina": 23
    },
    "424": {

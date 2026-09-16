@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "desenvolvimento-regional-ro.json",
   "gerado_em": "2026-09-14T19:37:59Z",
-  "exportado_em": "2026-09-14T19:49:48Z"
+  "exportado_em": "2026-09-16T21:46:50Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Redução de desigualdades regionais",
-   "proposta": "Formular e executar as políticas estaduais com recortes regionais, respeitando as vocações e realidades de cada parte do território, para reduzir as desigualdades entre regiões do estado",
+   "proposta": "Formular as políticas estaduais respeitando as vocações e realidades de cada parte do território.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -67,7 +67,13 @@
       1173,
       1258
      ],
-     "nota": "Organiza as políticas por sete regiões e 52 municípios"
+     "nota": "Organiza as políticas por sete regiões e 52 municípios",
+     "metas": [
+      {
+       "rotulo": "abrangência territorial das políticas",
+       "valor": "sete regiões e 52 municípios"
+      }
+     ]
     },
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -100,7 +106,13 @@
       843,
       897
      ],
-     "nota": "Atendimento aos 52 municípios independentemente de alinhamento político"
+     "nota": "Atendimento aos 52 municípios independentemente de alinhamento político",
+     "metas": [
+      {
+       "rotulo": "municípios apoiados tecnicamente",
+       "valor": "52 municípios"
+      }
+     ]
     }
    }
   },
@@ -164,7 +176,13 @@
       1257,
       1258
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "rede de atendimento",
+       "valor": "sete regiões e 52 municípios"
+      }
+     ]
     }
    }
   },
@@ -197,7 +215,13 @@
       921,
       922
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "regiões metropolitanas instituídas",
+       "valor": "7"
+      }
+     ]
     }
    }
   },
@@ -221,7 +245,7 @@
    "id": "p10",
    "subtema": "Fronteira",
    "proposta": "Fortalecer a cooperação na faixa de fronteira com a Bolívia, articulando Estado, União e municípios para comércio, turismo e desenvolvimento, com prevenção de ilícitos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -229,13 +253,6 @@
       1013
      ],
      "nota": ""
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      921
-     ],
-     "nota": "Consolidação do corredor de exportação para a Bolívia via RM Guaporé-Mamoré"
     }
    }
   },
@@ -255,6 +272,40 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p12",
+   "subtema": "Redução de desigualdades regionais",
+   "proposta": "Integrar as políticas estaduais às realidades das sete regiões e dos 52 municípios, considerando distâncias, vocações locais e dificuldades de acesso, e acompanhar essas políticas com recortes regionais, urbanos e rurais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      1173,
+      1258
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p13",
+   "subtema": "Redução de desigualdades regionais",
+   "proposta": "Organizar a ação do estado junto aos municípios respeitando a realidade de cada um, com apoio técnico, banco de projetos e governança regional e metropolitana, incluindo consórcios de gestão metropolitana.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      898,
+      902
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
   }
  ],
  "blocos": {

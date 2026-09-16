@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-ms.json",
   "gerado_em": "2026-09-14T14:55:55Z",
-  "exportado_em": "2026-09-14T23:10:51Z"
+  "exportado_em": "2026-09-16T19:47:43Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Produção habitacional",
-   "proposta": "Criar ou ampliar programa estadual de habitação popular, em parceria com os municípios, para reduzir o déficit habitacional",
+   "proposta": "Criar ou ampliar programa estadual de habitação popular para reduzir o déficit habitacional",
    "n_concorda": 4,
    "posicoes": {
     "governador-ms-lucien-rezende-120002532257": {
@@ -124,14 +124,20 @@
       881,
       1494
      ],
-     "nota": "30-35 mil famílias em 4 anos, com orçamento fasado"
+     "nota": "30-35 mil famílias em 4 anos, com orçamento fasado",
+     "metas": [
+      {
+       "rotulo": "famílias atendidas",
+       "valor": "~30-35 mil famílias em 4 anos"
+      }
+     ]
     }
    }
   },
   {
    "id": "p3",
    "subtema": "Produção habitacional",
-   "proposta": "Priorizar famílias de baixa renda e grupos vulneráveis no acesso às unidades habitacionais",
+   "proposta": "Priorizar famílias de baixa renda no acesso às unidades habitacionais",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-lucien-rezende-120002532257": {
@@ -215,7 +221,7 @@
   {
    "id": "p6",
    "subtema": "Produção habitacional",
-   "proposta": "Manter e ampliar o subsídio estadual do tipo Bônus Moradia, complementando o Minha Casa Minha Vida",
+   "proposta": "Manter e ampliar o subsídio estadual do tipo Bônus Moradia",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-eduardo-riedel-120002536582": {
@@ -233,14 +239,20 @@
       907,
       909
      ],
-     "nota": "Subsídio de R$25-32 mil por família"
+     "nota": "Subsídio de R$25-32 mil por família",
+     "metas": [
+      {
+       "rotulo": "subsídio por família",
+       "valor": "R$25-32 mil/família"
+      }
+     ]
     }
    }
   },
   {
    "id": "p7",
    "subtema": "Produção habitacional",
-   "proposta": "Ampliar o lote urbanizado com autoconstrução assistida como via principal de acesso à casa própria no interior",
+   "proposta": "Ampliar o lote urbanizado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -257,7 +269,13 @@
       899,
       901
      ],
-     "nota": "Terreno do Cidadão: R$20 mil/família, 15 mil famílias"
+     "nota": "Terreno do Cidadão: R$20 mil/família, 15 mil famílias",
+     "metas": [
+      {
+       "rotulo": "lote urbanizado",
+       "valor": "15 mil famílias, ~R$300 mi em 4 anos"
+      }
+     ]
     }
    }
   },
@@ -332,7 +350,7 @@
    "id": "p12",
    "subtema": "Urbanização e infraestrutura urbana",
    "proposta": "Garantir que os empreendimentos habitacionais sejam bem localizados e integrados à cidade, com acesso a saneamento, transporte, escola, saúde e trabalho",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -342,20 +360,6 @@
       583
      ],
      "nota": ""
-    },
-    "governador-ms-eduardo-riedel-120002536582": {
-     "posicao": "concorda",
-     "blocos": [
-      408
-     ],
-     "nota": "Integrar a política habitacional ao planejamento urbano municipal"
-    },
-    "governador-ms-lucien-rezende-120002532257": {
-     "posicao": "concorda",
-     "blocos": [
-      136
-     ],
-     "nota": "Foco em água, energia, saneamento, transporte e lazer"
     }
    }
   },
@@ -396,7 +400,13 @@
       1471,
       1472
      ],
-     "nota": "~R$103 mil/família, ~3.500 famílias"
+     "nota": "~R$103 mil/família, ~3.500 famílias",
+     "metas": [
+      {
+       "rotulo": "urbanização de favelas",
+       "valor": "~R$103k/família, ~3.500 famílias, ~R$360mi"
+      }
+     ]
     }
    }
   },
@@ -426,7 +436,7 @@
    "id": "p16",
    "subtema": "Urbanização e infraestrutura urbana",
    "proposta": "Requalificar praças, parques e espaços públicos, com lazer, acessibilidade, iluminação e segurança",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
      "posicao": "concorda",
@@ -434,20 +444,13 @@
       569
      ],
      "nota": ""
-    },
-    "governador-ms-lucien-rezende-120002532257": {
-     "posicao": "concorda",
-     "blocos": [
-      136
-     ],
-     "nota": "Áreas de lazer nos bairros periféricos"
     }
    }
   },
   {
    "id": "p17",
    "subtema": "Regularização fundiária",
-   "proposta": "Ampliar as frentes de regularização fundiária urbana para dar título às famílias sem titularidade",
+   "proposta": "Ampliar as frentes de regularização fundiária urbana",
    "n_concorda": 3,
    "posicoes": {
     "governador-ms-lucien-rezende-120002532257": {
@@ -488,14 +491,20 @@
       1168,
       1469
      ],
-     "nota": "40 mil títulos a ~R$1,7 mil cada, como quick-win de 100 dias"
+     "nota": "40 mil títulos a ~R$1,7 mil cada, como quick-win de 100 dias",
+     "metas": [
+      {
+       "rotulo": "títulos de regularização",
+       "valor": "40 mil títulos, ~R$68mi em 4 anos"
+      }
+     ]
     }
    }
   },
   {
    "id": "p19",
    "subtema": "Gestão e transparência da política habitacional",
-   "proposta": "Garantir transparência e acompanhamento público da execução da política habitacional, com indicadores e metas",
+   "proposta": "Garantir transparência e acompanhamento público da execução da política habitacional",
    "n_concorda": 2,
    "posicoes": {
     "governador-ms-joao-henrique-catan-120002552191": {
@@ -578,6 +587,143 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p24",
+   "subtema": "Produção habitacional",
+   "proposta": "Ampliar a produção estadual de moradias em escala, combinando construção, aquisição subsidiada, lote urbanizado e substituição de moradias precárias, para reduzir o déficit habitacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      576,
+      578
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Produção habitacional",
+   "proposta": "Executar programa habitacional com instrumentos combinados, atendendo cerca de 30 a 35 mil famílias em quatro anos, com escolha do instrumento de menor custo para cada caso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      878,
+      881
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "famílias atendidas",
+       "valor": "~30-35 mil famílias em 4 anos"
+      }
+     ]
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p26",
+   "subtema": "Produção habitacional",
+   "proposta": "Manter e ampliar o Bônus Moradia como complemento ao Minha Casa Minha Vida, priorizando a Faixa 1, de baixa renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-economista-renato-gomes-120002549681": {
+     "posicao": "concorda",
+     "blocos": [
+      907
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p27",
+   "subtema": "Produção habitacional",
+   "proposta": "Fortalecer o Bônus Moradia e expandir a entrega de novas moradias pelo programa, ampliando o investimento estadual em habitação até 2030.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      405,
+      408
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p29",
+   "subtema": "Urbanização e infraestrutura urbana",
+   "proposta": "Integrar a política habitacional ao planejamento urbano e à expansão da infraestrutura dos municípios, direcionando programas habitacionais às regiões impactadas por grandes investimentos produtivos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p30",
+   "subtema": "Regularização fundiária",
+   "proposta": "Ampliar programas de regularização fundiária, urbanização de bairros periféricos e acesso à infraestrutura básica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-lucien-rezende-120002532257": {
+     "posicao": "concorda",
+     "blocos": [
+      136
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p31",
+   "subtema": "Regularização fundiária",
+   "proposta": "Realizar diversas frentes de regularização fundiária urbana até 2030, integradas à política habitacional e ao planejamento urbano.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-eduardo-riedel-120002536582": {
+     "posicao": "concorda",
+     "blocos": [
+      408
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p17"
+  },
+  {
+   "id": "p32",
+   "subtema": "Gestão e transparência da política habitacional",
+   "proposta": "Divulgar à população, por município, as moradias contratadas, em construção e entregues e os recursos mobilizados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ms-joao-henrique-catan-120002552191": {
+     "posicao": "concorda",
+     "blocos": [
+      584
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
   }
  ],
  "blocos": {

@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-es.json",
   "gerado_em": "2026-09-14T09:14:53Z",
-  "exportado_em": "2026-09-14T23:10:50Z"
+  "exportado_em": "2026-09-16T21:29:10Z"
  },
  "candidatos": [
   {
@@ -78,7 +78,7 @@
   {
    "id": "p2",
    "subtema": "Mobilidade metropolitana e transporte coletivo",
-   "proposta": "Instituir governança metropolitana coordenada com todos os municípios da Grande Vitória para gerir e integrar o transporte coletivo",
+   "proposta": "Coordenar os municípios na gestão metropolitana para integrar e gerir o transporte coletivo",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -186,7 +186,7 @@
   {
    "id": "p8",
    "subtema": "Mobilidade metropolitana e transporte coletivo",
-   "proposta": "Modernizar e reformar os terminais de integração do Transcol, garantindo acessibilidade e conforto",
+   "proposta": "Modernizar os terminais do Transcol.",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -232,7 +232,7 @@
   {
    "id": "p10",
    "subtema": "Mobilidade metropolitana e transporte coletivo",
-   "proposta": "Promover a transição para meios de transporte coletivo mais sustentáveis e de baixa emissão",
+   "proposta": "Promover a transição para meios de transporte mais sustentáveis.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -550,7 +550,7 @@
   {
    "id": "p26",
    "subtema": "Logística, portos e ferrovias",
-   "proposta": "Priorizar a remoção dos gargalos logísticos do Estado, garantindo recursos para concluir os projetos de infraestrutura já existentes",
+   "proposta": "Priorizar a remoção dos gargalos logísticos do Estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-breno-barcelos-80002541012": {
@@ -574,15 +574,8 @@
    "id": "p27",
    "subtema": "Logística, portos e ferrovias",
    "proposta": "Formular política ou plano diretor estadual integrado de logística multimodal, articulando portos, aeroportos, ferrovias e rodovias",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-es-lorenzo-pazolini-80002552682": {
-     "posicao": "concorda",
-     "blocos": [
-      359
-     ],
-     "nota": "Adensamento da infraestrutura multimodal com integração portos-ferrovias"
-    },
     "governador-es-helder-salomao-80002551833": {
      "posicao": "concorda",
      "blocos": [
@@ -626,7 +619,7 @@
    "id": "p29",
    "subtema": "Logística, portos e ferrovias",
    "proposta": "Instituir estrutura permanente de governança do setor logístico-portuário compartilhada entre Estado, municípios e iniciativa privada",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-helder-salomao-80002551833": {
      "posicao": "concorda",
@@ -636,14 +629,6 @@
       923
      ],
      "nota": "Comitê Gestor de Desenvolvimento Portuário e Logístico"
-    },
-    "governador-es-ricardo-ferraco-80002552172": {
-     "posicao": "concorda",
-     "blocos": [
-      1031,
-      1032
-     ],
-     "nota": "Governança dos Parklogs compartilhada entre Sedes e entidades privadas"
     }
    }
   },
@@ -741,7 +726,7 @@
   {
    "id": "p35",
    "subtema": "Mobilidade ativa e micromobilidade",
-   "proposta": "Ampliar a infraestrutura cicloviária e integrá-la ao transporte público, com construção de bicicletários",
+   "proposta": "Integrar o transporte por bicicleta ao transporte público.",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-breno-barcelos-80002541012": {
@@ -939,6 +924,88 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p46",
+   "subtema": "Mobilidade metropolitana e transporte coletivo",
+   "proposta": "Coordenar municípios e regiões por meio de consórcios de transporte, urbanismo e logística, tornando a gestão metropolitana um processo compartilhado, com plano estadual de mobilidade que priorize o transporte público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      12
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p47",
+   "subtema": "Mobilidade metropolitana e transporte coletivo",
+   "proposta": "Reformar e modernizar os terminais de integração remanescentes do Transcol, com melhoria operacional, da infraestrutura de apoio e inserção de tecnologia nos terminais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      731,
+      732
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p48",
+   "subtema": "Mobilidade metropolitana e transporte coletivo",
+   "proposta": "Promover o uso de meios de transporte mais sustentáveis e eficientes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      364
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p49",
+   "subtema": "Logística, portos e ferrovias",
+   "proposta": "Articular junto à União para remover gargalos logísticos, duplicar as BR-101, BR-262 e BR-259, ampliar a malha ferroviária e integrar os portos, consolidando o estado como hub de comércio exterior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      362,
+      463
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p50",
+   "subtema": "Mobilidade ativa e micromobilidade",
+   "proposta": "Integrar o transporte coletivo metropolitano em seus diversos modais, incluindo o cicloviário, em articulação com todos os municípios da Grande Vitória.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      363
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
   }
  ],
  "blocos": {

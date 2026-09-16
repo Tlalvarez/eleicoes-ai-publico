@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-go.json",
   "gerado_em": "2026-09-14T07:59:52Z",
-  "exportado_em": "2026-09-14T08:45:16Z"
+  "exportado_em": "2026-09-16T21:45:41Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Segurança hídrica",
-   "proposta": "Adotar a segurança hídrica como prioridade estratégica do Estado, integrando abastecimento humano, produção, proteção de mananciais e uso eficiente da água",
+   "proposta": "Promover a segurança hídrica por meio da ação do Estado.",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -225,7 +225,7 @@
   {
    "id": "p7",
    "subtema": "Segurança hídrica",
-   "proposta": "Fortalecer os comitês de bacia e a cooperação com municípios e usuários na gestão da água",
+   "proposta": "Valorizar o papel dos comitês de bacia na gestão da água.",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-luis-cesar-bueno-90002545476": {
@@ -280,7 +280,7 @@
    "id": "p10",
    "subtema": "Saneamento básico",
    "proposta": "Ampliar os investimentos em abastecimento de água e em coleta e tratamento de esgoto, avançando rumo à universalização",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -295,13 +295,6 @@
      "blocos": [
       757,
       758
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      228
      ],
      "nota": ""
     }
@@ -496,7 +489,7 @@
    "id": "p22",
    "subtema": "Resíduos sólidos",
    "proposta": "Apoiar municípios e consórcios intermunicipais na erradicação dos lixões e na destinação ambientalmente adequada dos resíduos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
      "posicao": "concorda",
@@ -504,13 +497,6 @@
       1501
      ],
      "nota": ""
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      764
-     ],
-     "nota": "Via soluções descentralizadas em pequenas localidades"
     }
    }
   },
@@ -544,6 +530,70 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p25",
+   "subtema": "Segurança hídrica",
+   "proposta": "Investir em infraestrutura resiliente, com drenagem, segurança hídrica, prevenção a incêndios e proteção de ativos críticos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      232
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p26",
+   "subtema": "Segurança hídrica",
+   "proposta": "Acelerar os investimentos estruturais em coleta e tratamento de esgoto, na eficiência do abastecimento de água e na segurança hídrica urbana, com efeito sobre a drenagem.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1499
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p27",
+   "subtema": "Segurança hídrica",
+   "proposta": "Fortalecer os comitês de bacia, com rigoroso controle da retirada de água e das outorgas emitidas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      1516
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p28",
+   "subtema": "Saneamento básico",
+   "proposta": "Executar obras de água, esgoto, drenagem, resíduos e urbanização, com reúso industrial, gestão regional e parcerias público-privadas quando tecnicamente adequadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      228
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

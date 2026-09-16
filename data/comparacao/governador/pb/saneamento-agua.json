@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-pb.json",
   "gerado_em": "2026-09-14T07:24:36Z",
-  "exportado_em": "2026-09-14T07:51:49Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -285,7 +285,7 @@
   {
    "id": "p12",
    "subtema": "Perdas e eficiência na distribuição",
-   "proposta": "Implantar sistemas de monitoramento em tempo real da rede (macromedição, telemetria, sensores de vazão e pressão) para identificar vazamentos e usos irregulares",
+   "proposta": "Fortalecer sistemas de monitoramento da rede de distribuição de água para reduzir perdas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -419,7 +419,7 @@
   {
    "id": "p19",
    "subtema": "Governança e planejamento hídrico",
-   "proposta": "Instituir política estadual de segurança hídrica de longo prazo com prioridade ao abastecimento humano",
+   "proposta": "Garantir o abastecimento de água no estado com prioridade ao consumo humano.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -472,7 +472,7 @@
   {
    "id": "p22",
    "subtema": "Convivência com o semiárido e reuso",
-   "proposta": "Implantar sistemas de dessalinização para atender comunidades que dependem de água salobra",
+   "proposta": "Implantar sistemas de dessalinização.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -496,7 +496,7 @@
   {
    "id": "p23",
    "subtema": "Convivência com o semiárido e reuso",
-   "proposta": "Tratar e reutilizar água e efluentes para fins agrícolas e industriais",
+   "proposta": "Tratar água e efluentes.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -561,6 +561,86 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p27",
+   "subtema": "Perdas e eficiência na distribuição",
+   "proposta": "Fortalecer sistemas de monitoramento para reduzir as perdas na distribuição de água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      201
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p28",
+   "subtema": "Perdas e eficiência na distribuição",
+   "proposta": "Reduzir perdas na rede com macromedição, telemetria, setorização e substituição de trechos críticos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      659
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p29",
+   "subtema": "Governança e planejamento hídrico",
+   "proposta": "Garantir água com obras estruturantes — conclusão de adutoras, recuperação de reservatórios, dessalinização e reuso —, reduzir perdas na distribuição e assegurar prioridade absoluta da água potável ao consumo humano, com gestão hídrica transparente e participativa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      152
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p30",
+   "subtema": "Convivência com o semiárido e reuso",
+   "proposta": "Implementar sistemas de dessalinização e de reuso de água para fins industriais e agrícolas, mantendo a água potável como prioridade para o consumo humano.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      152
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p31",
+   "subtema": "Convivência com o semiárido e reuso",
+   "proposta": "Ampliar a dessalinização solar, as cisternas e o uso de esgoto tratado nas áreas de convivência com a seca.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      210
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
   }
  ],
  "blocos": {

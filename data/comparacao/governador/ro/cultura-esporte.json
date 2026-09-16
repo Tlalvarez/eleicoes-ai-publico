@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-ro.json",
   "gerado_em": "2026-09-14T19:36:21Z",
-  "exportado_em": "2026-09-14T23:10:54Z"
+  "exportado_em": "2026-09-16T21:46:50Z"
  },
  "candidatos": [
   {
@@ -51,16 +51,9 @@
   {
    "id": "p1",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Ampliar o fomento à cultura por meio de editais com critérios claros e distribuição territorial equilibrada entre capital e interior",
-   "n_concorda": 4,
+   "proposta": "Ampliar o fomento à cultura",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      229
-     ],
-     "nota": "Fixa cota mínima para o interior"
-    },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
      "blocos": [
@@ -103,7 +96,7 @@
   {
    "id": "p3",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Estabelecer calendário anual fixo e permanente de editais de fomento à cultura",
+   "proposta": "Instituir editais de fomento à cultura de forma permanente e regular.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -113,7 +106,13 @@
       229,
       261
      ],
-     "nota": "Publicação do calendário até 31 de janeiro"
+     "nota": "Publicação do calendário até 31 de janeiro",
+     "metas": [
+      {
+       "rotulo": "calendário anual de editais",
+       "valor": "publicado até 31 de janeiro de cada ano"
+      }
+     ]
     },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -149,7 +148,7 @@
   {
    "id": "p5",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Simplificar editais culturais e a prestação de contas, reduzindo barreiras burocráticas ao produtor do interior",
+   "proposta": "Tornar os editais culturais mais acessíveis aos produtores culturais do interior.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -194,7 +193,7 @@
   {
    "id": "p7",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Oferecer assessoria técnica gratuita para elaboração de projetos e prestação de contas aos agentes culturais",
+   "proposta": "Oferecer apoio técnico aos agentes culturais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -225,7 +224,13 @@
      "blocos": [
       221
      ],
-     "nota": "Meta de devolução zero a partir de 2027, com força-tarefa"
+     "nota": "Meta de devolução zero a partir de 2027, com força-tarefa",
+     "metas": [
+      {
+       "rotulo": "execução de recursos federais",
+       "valor": "100%, nenhum real devolvido desde 2027"
+      }
+     ]
     },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -444,7 +449,7 @@
   {
    "id": "p19",
    "subtema": "Equipamentos culturais, esportivos e de lazer",
-   "proposta": "Construir novos equipamentos culturais em municípios que não dispõem de estrutura",
+   "proposta": "Construir novos equipamentos culturais em municípios do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -488,7 +493,7 @@
   {
    "id": "p21",
    "subtema": "Equipamentos culturais, esportivos e de lazer",
-   "proposta": "Condicionar a entrega de obras e equipamentos à existência de plano de operação, manutenção e uso público",
+   "proposta": "Prever plano de manutenção para obra ou equipamento público.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -534,7 +539,13 @@
      "blocos": [
       205
      ],
-     "nota": "Reforma, iluminação e gestão comunitária nos 52 municípios"
+     "nota": "Reforma, iluminação e gestão comunitária nos 52 municípios",
+     "metas": [
+      {
+       "rotulo": "quadras e ginásios reformados",
+       "valor": "nos 52 municípios"
+      }
+     ]
     },
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -558,14 +569,20 @@
    "id": "p23",
    "subtema": "Equipamentos culturais, esportivos e de lazer",
    "proposta": "Cofinanciar, em cooperação com os municípios, a reforma e a manutenção de equipamentos esportivos e de lazer municipais",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
      "blocos": [
       205
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "cofinanciamento a municípios",
+       "valor": "nos 52 municípios"
+      }
+     ]
     },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -573,13 +590,6 @@
       703
      ],
      "nota": ""
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      521
-     ],
-     "nota": "Convênios e repasse a empresas públicas de desenvolvimento urbano"
     }
    }
   },
@@ -680,7 +690,7 @@
   {
    "id": "p30",
    "subtema": "Cultura popular, festas e tradições",
-   "proposta": "Apoiar financeiramente festas tradicionais, festivais e circuitos culturais dos municípios como política permanente",
+   "proposta": "Apoiar festas tradicionais, festivais e circuitos culturais dos municípios.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -689,7 +699,13 @@
       222,
       234
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "festivais apoiados",
+       "valor": "dos 52 municípios"
+      }
+     ]
     },
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -780,7 +796,13 @@
       222,
       223
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "blocos tradicionais apoiados",
+       "valor": "dos 52 municípios"
+      }
+     ]
     },
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -794,8 +816,8 @@
   {
    "id": "p35",
    "subtema": "Cultura popular, festas e tradições",
-   "proposta": "Assegurar que o recurso dos eventos chegue a brincantes, artesãos e músicos, e não apenas à estrutura do evento",
-   "n_concorda": 2,
+   "proposta": "Garantir que os recursos dos eventos culturais cheguem a brincantes, artesãos e músicos, e não apenas à estrutura do evento.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -803,13 +825,6 @@
       222
      ],
      "nota": ""
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": "Prioriza contratação de profissionais locais"
     }
    }
   },
@@ -846,7 +861,7 @@
   {
    "id": "p37",
    "subtema": "Cultura popular, festas e tradições",
-   "proposta": "Promover a circulação de artistas e produções rondonienses nos municípios e fora do estado",
+   "proposta": "Promover a circulação de artistas e produções rondonienses nos municípios do estado",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -854,7 +869,13 @@
      "blocos": [
       2256
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios com circulação",
+       "valor": "52 municípios de Rondônia"
+      }
+     ]
     },
     "governador-ro-marcos-rogerio-220002541939": {
      "posicao": "concorda",
@@ -891,7 +912,7 @@
   {
    "id": "p39",
    "subtema": "Esporte de rendimento e apoio a atletas",
-   "proposta": "Instituir programa permanente de apoio financeiro a atletas, paratletas e jovens talentos, com critérios públicos",
+   "proposta": "Instituir programa de apoio financeiro a atletas.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -975,7 +996,7 @@
   {
    "id": "p43",
    "subtema": "Esporte de rendimento e apoio a atletas",
-   "proposta": "Custear transporte, alimentação e hospedagem das delegações do interior nas competições estaduais",
+   "proposta": "Custear o transporte para participação em competições estaduais.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1036,7 +1057,7 @@
   {
    "id": "p46",
    "subtema": "Esporte educacional, iniciação e inclusão",
-   "proposta": "Implantar rede estadual de iniciação esportiva para crianças e adolescentes em parceria com os municípios",
+   "proposta": "Implantar programas estaduais de iniciação esportiva para crianças e adolescentes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-marcos-rogerio-220002541939": {
@@ -1108,7 +1129,13 @@
      "blocos": [
       514
      ],
-     "nota": "Jogos escolares como porta de entrada para bolsa estadual"
+     "nota": "Jogos escolares como porta de entrada para bolsa estadual",
+     "metas": [
+      {
+       "rotulo": "infraestrutura dos jogos escolares",
+       "valor": "100% da infraestrutura necessária"
+      }
+     ]
     },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -1137,8 +1164,8 @@
   {
    "id": "p50",
    "subtema": "Esporte educacional, iniciação e inclusão",
-   "proposta": "Ampliar o esporte adaptado e a acessibilidade para pessoas com deficiência",
-   "n_concorda": 3,
+   "proposta": "Ampliar a oferta de atividades esportivas para pessoas com deficiência.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
      "posicao": "concorda",
@@ -1154,20 +1181,13 @@
       690
      ],
      "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      206
-     ],
-     "nota": "Via faixas de horário reservadas nas quadras de bairro"
     }
    }
   },
   {
    "id": "p51",
    "subtema": "Esporte educacional, iniciação e inclusão",
-   "proposta": "Oferecer atividades esportivas e de lazer regulares e gratuitas para todas as faixas etárias, inclusive idosos",
+   "proposta": "Oferecer atividades esportivas para todas as faixas etárias, inclusive idosos",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -1266,7 +1286,7 @@
   {
    "id": "p55",
    "subtema": "Economia criativa e profissionalização",
-   "proposta": "Criar programas permanentes de formação, qualificação técnica e empreendedorismo para artistas, produtores, artesãos e gestores culturais",
+   "proposta": "Criar programas de formação e qualificação técnica para profissionais da cultura.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1484,7 +1504,7 @@
   {
    "id": "p65",
    "subtema": "Gestão e institucionalidade da cultura e do esporte",
-   "proposta": "Fortalecer o quadro técnico das pastas de cultura e esporte com servidores efetivos",
+   "proposta": "Fortalecer o quadro técnico da pasta de cultura.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -1524,28 +1544,6 @@
       502
      ],
      "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p67",
-   "subtema": "Gestão e institucionalidade da cultura e do esporte",
-   "proposta": "Monitorar e divulgar os resultados das políticas de cultura e esporte por município e público atendido",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      679
-     ],
-     "nota": ""
-    },
-    "governador-ro-expedito-netto-220002542185": {
-     "posicao": "concorda",
-     "blocos": [
-      221
-     ],
-     "nota": "Painel público de execução"
     }
    }
   },
@@ -1662,8 +1660,8 @@
   {
    "id": "p73",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Criar escritórios regionais de apoio ao produtor cultural (Casa da Cultura Regional) em Ariquemes, Ji-Paraná, Cacoal, Vilhena, Rolim de Moura e Guajará-Mirim, com assessoria gratuita para elaboração de projetos e prestação de contas, em convênio com IFRO e universidades públicas e custeio pelo percentual de operacionalização da PNAB",
-   "n_concorda": 2,
+   "proposta": "Criar escritórios regionais de apoio ao produtor cultural (Casa da Cultura Regional) em seis municípios, com assessoria gratuita para elaboração de projetos e prestação de contas.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -1671,15 +1669,367 @@
       230
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p74",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Destinar no mínimo 50% dos recursos do FEDEC-RO e da PNAB a proponentes sediados fora de Porto Velho, com reserva para coletivos indígenas, quilombolas e ribeirinhos, repasse com pelo menos seis meses de antecedência do evento e calendário de editais publicado até 31 de janeiro.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      229
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p75",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Reformular a legislação estadual de incentivo à cultura, ampliando o acesso aos mecanismos de financiamento e reforçando a produção cultural em todas as regiões do estado, com transparência e descentralização territorial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2229
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p76",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Ampliar o orçamento da cultura e democratizar o acesso aos recursos, distribuindo os investimentos de forma equilibrada entre capital e interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      494,
+      496
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p77",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Criar editais de cultura contínuos e permanentes, com fortalecimento do Fundo Estadual de Cultura, descentralização dos investimentos e simplificação das exigências burocráticas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      495
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p78",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Ampliar o fomento à cultura com editais, mecanismos de financiamento e apoio técnico de critérios claros, acessíveis e transparentes, com distribuição territorial equilibrada e atenção aos municípios com menor acesso.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
      "blocos": [
-      677,
-      683,
-      685
+      683
      ],
-     "nota": "Prevê apoio técnico aos produtores e editais regionalizados, sem detalhar escritórios regionais nomeados."
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p80",
+   "subtema": "Equipamentos culturais, esportivos e de lazer",
+   "proposta": "Construir novos espaços culturais nos municípios do estado e manter, modernizar e ampliar os equipamentos culturais já existentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2243
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p81",
+   "subtema": "Equipamentos culturais, esportivos e de lazer",
+   "proposta": "Todo equipamento cultural novo será criado com plano e custo de manutenção definidos desde o projeto.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      233
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p82",
+   "subtema": "Equipamentos culturais, esportivos e de lazer",
+   "proposta": "Definir previamente o modelo de operação, manutenção, calendário e sustentabilidade financeira do Complexo Arena Aluízio Ferreira.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      511
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p83",
+   "subtema": "Equipamentos culturais, esportivos e de lazer",
+   "proposta": "Criar o Programa Local de Lazer Vivo, com gestão descentralizada e convênios e parcerias com municípios para reformar e manter espaços públicos estaduais, inclusive por contratação direta ou repasse a empresas públicas de desenvolvimento urbano.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      521
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p84",
+   "subtema": "Cultura popular, festas e tradições",
+   "proposta": "Ampliar o calendário estadual de eventos culturais, turísticos e econômicos na capital e no interior, criando um Circuito Estadual de Cultura Popular e Economia Criativa que inclua quadrilhas juninas, boi-bumbá, carnaval e o Arraial Flor do Maracujá no calendário oficial de atração de negócios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      488,
+      503
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p85",
+   "subtema": "Cultura popular, festas e tradições",
+   "proposta": "Apoiar festas tradicionais, festivais, feiras e circuitos culturais priorizando iniciativas que promovam artistas e produtores locais, contratem profissionais da região e gerem renda nos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      687
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p87",
+   "subtema": "Esporte de rendimento e apoio a atletas",
+   "proposta": "Instituir programas permanentes de incentivo a atletas de alto rendimento, com prioridade aos de baixa renda, cobrindo treinamento, competições, equipamentos e acompanhamento técnico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2343,
+      2344
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p88",
+   "subtema": "Esporte de rendimento e apoio a atletas",
+   "proposta": "Garantir 100% da infraestrutura das etapas municipais, microrregionais e estaduais dos Jogos Escolares, incluindo transporte de qualidade, equipes médicas e segurança.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      514
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p89",
+   "subtema": "Esporte de rendimento e apoio a atletas",
+   "proposta": "Aperfeiçoar o apoio estadual a atletas e paratletas, com critérios públicos e cobertura de despesas de treinamento, transporte, equipamentos, inscrições e participação em competições, ampliando o acesso de atletas de municípios distantes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      696
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p90",
+   "subtema": "Esporte educacional, iniciação e inclusão",
+   "proposta": "Implementar programas permanentes de iniciação esportiva para crianças e adolescentes, usando o esporte como instrumento de desenvolvimento humano, prevenção da violência, promoção da saúde, cidadania e identificação de novos talentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2324,
+      2325
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p46"
+  },
+  {
+   "id": "p91",
+   "subtema": "Esporte educacional, iniciação e inclusão",
+   "proposta": "Implantar equipamentos de esporte e lazer de bairro com faixas de uso dedicadas a pessoas com deficiência, idosos e juventude, em cofinanciamento federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      206
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
+  },
+  {
+   "id": "p92",
+   "subtema": "Esporte educacional, iniciação e inclusão",
+   "proposta": "Ampliar e modernizar a infraestrutura esportiva do estado, garantindo a crianças, jovens, adultos e idosos oportunidades de prática de esporte e lazer em todas as regiões.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2289,
+      2302
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
+  },
+  {
+   "id": "p94",
+   "subtema": "Economia criativa e profissionalização",
+   "proposta": "Oferecer trilhas de qualificação em economia criativa (costura de fantasias, alegorias, som, luz e produção de eventos) nos 7 municípios-chave, articuladas às compras públicas e ao microcrédito do Banco do Trabalhador.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      225
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p95",
+   "subtema": "Gestão e institucionalidade da cultura e do esporte",
+   "proposta": "Fortalecer o quadro técnico da área cultural, avaliando a forma de contratação prevista em lei, conforme o planejamento de pessoal e o orçamento estadual.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2189
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p96",
+   "subtema": "Gestão e institucionalidade da cultura e do esporte",
+   "proposta": "Criar unidade exclusiva para a gestão da cultura, separada do esporte e lazer, com equipe técnica especializada, autonomia administrativa e orçamento próprio.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-marcos-rogerio-220002541939": {
+     "posicao": "concorda",
+     "blocos": [
+      493
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p65"
+  },
+  {
+   "id": "p97",
+   "subtema": "Gestão e institucionalidade da cultura e do esporte",
+   "proposta": "Acompanhar os resultados das políticas por município, público atendido e impacto sobre renda, participação e oportunidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      679
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p98",
+   "subtema": "Gestão e institucionalidade da cultura e do esporte",
+   "proposta": "Manter painel público de execução da Política Nacional Aldir Blanc, com calendário anual fixo de editais e meta de nenhum recurso federal da cultura devolvido a partir de 2027.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      221
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "execução da PNAB",
+       "valor": "100%, zero devolução a partir de 2027"
+      }
+     ]
     }
    }
   }

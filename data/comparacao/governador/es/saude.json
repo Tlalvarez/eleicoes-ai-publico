@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-es.json",
   "gerado_em": "2026-09-14T09:11:42Z",
-  "exportado_em": "2026-09-14T09:58:51Z"
+  "exportado_em": "2026-09-16T21:29:10Z"
  },
  "candidatos": [
   {
@@ -259,7 +259,7 @@
   {
    "id": "p11",
    "subtema": "Saúde digital e prontuário eletrônico",
-   "proposta": "Ampliar a telessaúde e a teleconsulta com especialistas na rede pública",
+   "proposta": "Ampliar a telessaúde na rede pública",
    "n_concorda": 3,
    "posicoes": {
     "governador-es-breno-barcelos-80002541012": {
@@ -310,7 +310,7 @@
    "id": "p13",
    "subtema": "Saúde digital e prontuário eletrônico",
    "proposta": "Aplicar inteligência artificial e análise de dados à gestão, ao apoio diagnóstico e à antecipação de riscos em saúde",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
      "posicao": "concorda",
@@ -320,13 +320,6 @@
       365
      ],
      "nota": ""
-    },
-    "governador-es-helder-salomao-80002551833": {
-     "posicao": "concorda",
-     "blocos": [
-      215
-     ],
-     "nota": "Plataformas e aplicativos públicos com IA"
     }
    }
   },
@@ -334,7 +327,7 @@
    "id": "p14",
    "subtema": "Regionalização e interiorização",
    "proposta": "Descentralizar serviços especializados e de diagnóstico para as regiões do interior, com centros e polos regionais",
-   "n_concorda": 4,
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
@@ -352,23 +345,6 @@
       338
      ],
      "nota": "Expansão de polos regionais e Centros de Especialidades"
-    },
-    "governador-es-breno-barcelos-80002541012": {
-     "posicao": "concorda",
-     "blocos": [
-      458,
-      462,
-      467
-     ],
-     "nota": ""
-    },
-    "governador-es-helder-salomao-80002551833": {
-     "posicao": "concorda",
-     "blocos": [
-      186,
-      197
-     ],
-     "nota": ""
     }
    }
   },
@@ -422,7 +398,7 @@
   {
    "id": "p18",
    "subtema": "Regionalização e interiorização",
-   "proposta": "Fortalecer as regiões de saúde e as Comissões Intergestores Regionais com planejamento integrado",
+   "proposta": "Fortalecer as regiões de saúde de forma integrada",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -571,7 +547,7 @@
    "id": "p25",
    "subtema": "Infraestrutura hospitalar",
    "proposta": "Renovar equipamentos hospitalares e ampliar leitos estratégicos da rede estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
@@ -579,13 +555,6 @@
       185
      ],
      "nota": "Leitos de UTI e cuidados paliativos; hospitais inteligentes e digitais"
-    },
-    "governador-es-ricardo-ferraco-80002552172": {
-     "posicao": "concorda",
-     "blocos": [
-      338
-     ],
-     "nota": ""
     }
    }
   },
@@ -616,7 +585,13 @@
      "blocos": [
       179
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "cobertura de CAPS",
+       "valor": "100% dos municípios-polo"
+      }
+     ]
     },
     "governador-es-helder-salomao-80002551833": {
      "posicao": "concorda",
@@ -655,19 +630,12 @@
    "id": "p29",
    "subtema": "Saúde mental, álcool e drogas",
    "proposta": "Instituir programa estadual de prevenção ao suicídio",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
      "blocos": [
       180
-     ],
-     "nota": ""
-    },
-    "governador-es-ricardo-ferraco-80002552172": {
-     "posicao": "concorda",
-     "blocos": [
-      371
      ],
      "nota": ""
     }
@@ -724,7 +692,7 @@
   {
    "id": "p32",
    "subtema": "Saúde mental, álcool e drogas",
-   "proposta": "Estruturar rede estadual de atenção a pessoas com TEA e neurodiversidade, com diagnóstico precoce, terapias e apoio às famílias",
+   "proposta": "Ampliar e estruturar, no âmbito estadual, a rede de atenção às pessoas com Transtorno do Espectro Autista (TEA).",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -873,7 +841,7 @@
   {
    "id": "p40",
    "subtema": "Atenção primária e prevenção",
-   "proposta": "Fortalecer a atenção primária como coordenadora do cuidado, com mais investimento e qualificação",
+   "proposta": "Fortalecer a atenção primária.",
    "n_concorda": 4,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
@@ -913,19 +881,12 @@
    "id": "p41",
    "subtema": "Atenção primária e prevenção",
    "proposta": "Ampliar programas de prevenção e a cobertura vacinal em parceria com os municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-helder-salomao-80002551833": {
      "posicao": "concorda",
      "blocos": [
       192
-     ],
-     "nota": ""
-    },
-    "governador-es-lorenzo-pazolini-80002552682": {
-     "posicao": "concorda",
-     "blocos": [
-      175
      ],
      "nota": ""
     }
@@ -934,7 +895,7 @@
   {
    "id": "p42",
    "subtema": "Atenção primária e prevenção",
-   "proposta": "Levar ações de saúde às escolas com equipes multiprofissionais (atendimento psicológico e social, saúde bucal, vacinação, prevenção da gravidez precoce)",
+   "proposta": "Levar ações de saúde às escolas, com atendimentos, acompanhamento em saúde e vacinação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -957,7 +918,7 @@
   {
    "id": "p43",
    "subtema": "Atenção primária e prevenção",
-   "proposta": "Fortalecer a rede materno-infantil e o pré-natal qualificado para reduzir a mortalidade evitável",
+   "proposta": "Promover o pré-natal como ação de prevenção",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -1009,8 +970,8 @@
   {
    "id": "p46",
    "subtema": "Atenção primária e prevenção",
-   "proposta": "Implantar política estadual de envelhecimento saudável, com atenção domiciliar e reabilitação",
-   "n_concorda": 3,
+   "proposta": "Implantar política estadual de envelhecimento saudável.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
      "posicao": "concorda",
@@ -1027,21 +988,14 @@
       369
      ],
      "nota": ""
-    },
-    "governador-es-helder-salomao-80002551833": {
-     "posicao": "concorda",
-     "blocos": [
-      227
-     ],
-     "nota": ""
     }
    }
   },
   {
    "id": "p47",
    "subtema": "Atenção primária e prevenção",
-   "proposta": "Ampliar a saúde bucal na rede pública, com equipes na estratégia de saúde da família e centros de especialidades odontológicas",
-   "n_concorda": 2,
+   "proposta": "Ampliar a saúde bucal na rede pública.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-es-helder-salomao-80002551833": {
      "posicao": "concorda",
@@ -1050,13 +1004,6 @@
       225
      ],
      "nota": "Inclui laboratório de próteses"
-    },
-    "governador-es-lorenzo-pazolini-80002552682": {
-     "posicao": "concorda",
-     "blocos": [
-      190
-     ],
-     "nota": "Via cofinanciamento estadual da saúde bucal"
     }
    }
   },
@@ -1135,7 +1082,7 @@
   {
    "id": "p51",
    "subtema": "Medicamentos e assistência farmacêutica",
-   "proposta": "Ampliar o acesso e a disponibilidade de medicamentos na rede pública, com gestão de estoques e transparência",
+   "proposta": "Ampliar o acesso e a disponibilidade de medicamentos na rede pública.",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -1191,7 +1138,7 @@
    "id": "p54",
    "subtema": "Profissionais de saúde",
    "proposta": "Ampliar a política de valorização, qualificação e formação continuada dos profissionais da saúde",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-es-ricardo-ferraco-80002552172": {
      "posicao": "concorda",
@@ -1209,13 +1156,6 @@
       449
      ],
      "nota": ""
-    },
-    "governador-es-helder-salomao-80002551833": {
-     "posicao": "concorda",
-     "blocos": [
-      207
-     ],
-     "nota": "Educação permanente em direitos da população negra e povos tradicionais"
     }
    }
   },
@@ -1258,7 +1198,7 @@
   {
    "id": "p57",
    "subtema": "Equidade e populações específicas",
-   "proposta": "Ampliar o acesso à saúde de populações vulneráveis com acolhimento humanizado e serviços adaptados",
+   "proposta": "Ampliar o acesso à saúde de populações vulneráveis",
    "n_concorda": 2,
    "posicoes": {
     "governador-es-lorenzo-pazolini-80002552682": {
@@ -1399,6 +1339,270 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p65",
+   "subtema": "Saúde digital e prontuário eletrônico",
+   "proposta": "Criar programa de digitalização da saúde com telemedicina aplicada conforme o porte de cada localidade e integrada ao Prontuário Único.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-breno-barcelos-80002541012": {
+     "posicao": "concorda",
+     "blocos": [
+      493,
+      499
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p66",
+   "subtema": "Regionalização e interiorização",
+   "proposta": "Levar especialistas presenciais a hospitais já existentes em regiões afastadas, com salas ambulatoriais dedicadas a consultas de cardiologia, ortopedia e neurologia.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-breno-barcelos-80002541012": {
+     "posicao": "concorda",
+     "blocos": [
+      462,
+      467
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p67",
+   "subtema": "Regionalização e interiorização",
+   "proposta": "Ampliar consultas e exames especializados no interior e implantar a rede de oncologia de forma regionalizada.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      186,
+      197
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p68",
+   "subtema": "Regionalização e interiorização",
+   "proposta": "Consolidar uma rede regional integrada de saúde, com expansão dos polos regionais e dos microssistemas regionais, aproximando os serviços da população.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      329,
+      330
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p69",
+   "subtema": "Saúde mental, álcool e drogas",
+   "proposta": "Expandir o atendimento às pessoas com Transtorno do Espectro Autista dentro da política estadual de saúde mental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      371
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p32"
+  },
+  {
+   "id": "p70",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Fortalecer a atenção primária como coordenadora do cuidado, ao lado da expansão de polos regionais e ambulatórios especializados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      324,
+      330
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p72",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Garantir cofinanciamento estadual para a atenção primária, qualificando o atendimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      182
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p73",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Criar remuneração por produtividade e qualidade para profissionais de saúde, priorizando a atenção primária, a fim de retê-los na rede pública.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-breno-barcelos-80002541012": {
+     "posicao": "concorda",
+     "blocos": [
+      443,
+      449,
+      450
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p74",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Instituir programa estadual de prevenção cardiovascular, ampliar o rastreamento de câncer e a cobertura vacinal, com pré-natal qualificado e monitoramento de óbitos evitáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      175
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p75",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Fortalecer, junto aos municípios, o programa Saúde nas Escolas, com palestras, atendimentos, acompanhamento em saúde e vacinação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      194
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
+  },
+  {
+   "id": "p76",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Promover, em parceria com os municípios, programas de prevenção como vacinação e pré-natal, com metodologia ajustada às realidades regionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      192
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p43"
+  },
+  {
+   "id": "p77",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Fortalecer a atenção domiciliar articulada ao programa de atenção ao idoso.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      227
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p46"
+  },
+  {
+   "id": "p78",
+   "subtema": "Atenção primária e prevenção",
+   "proposta": "Instituir cofinanciamento estadual para a atenção primária e ambulatórios regionais, incluindo a saúde bucal, com incentivos para regiões mais vulneráveis e repasses vinculados a metas e desempenho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-lorenzo-pazolini-80002552682": {
+     "posicao": "concorda",
+     "blocos": [
+      190
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
+  },
+  {
+   "id": "p79",
+   "subtema": "Medicamentos e assistência farmacêutica",
+   "proposta": "Ampliar a rede de Farmácias Cidadãs Estaduais e a capacidade de atendimento das unidades, garantindo o fornecimento gratuito de medicamentos de alto custo e de uso continuado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-ricardo-ferraco-80002552172": {
+     "posicao": "concorda",
+     "blocos": [
+      345,
+      346
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
+  },
+  {
+   "id": "p80",
+   "subtema": "Profissionais de saúde",
+   "proposta": "Revisitar os programas de formação e educação permanente dos trabalhadores da saúde, com foco nos direitos da pessoa negra e dos povos tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      207
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p54"
+  },
+  {
+   "id": "p81",
+   "subtema": "Equidade e populações específicas",
+   "proposta": "Fortalecer a atenção integral à saúde da população negra e dos povos tradicionais, com estratégias de saúde da família voltadas a quilombolas, ciganos, pomeranos e indígenas e valorização dos saberes tradicionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-es-helder-salomao-80002551833": {
+     "posicao": "concorda",
+     "blocos": [
+      211
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p57"
   }
  ],
  "blocos": {
@@ -1473,10 +1677,6 @@
    },
    "453": {
     "texto": "(II) elevar, consideravelmente, a qualidade assistencial, com base em indicadores clínicos e de satisfação; e (III) instituir uma cultura de reconhecimento por mérito, pautada em critérios transparentes e regionalmente justos.",
-    "pagina": 54
-   },
-   "458": {
-    "texto": "Diante desse cenário, implementaremos um programa voltado a essas populações, organizado em duas frentes:",
     "pagina": 54
    },
    "459": {
@@ -1627,10 +1827,6 @@
    },
    "213": {
     "texto": "䬌Implementar a rede de atenção a oncologia de forma regionalizada.",
-    "pagina": 17
-   },
-   "215": {
-    "texto": "䬌Modernizar e ampliar a utilização de plataforma e aplicativos públicos com uso de inteligência artificial.",
     "pagina": 17
    },
    "217": {

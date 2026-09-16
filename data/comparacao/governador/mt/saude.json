@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-mt.json",
   "gerado_em": "2026-09-14T06:06:28Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T19:54:49Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Regulação e filas",
-   "proposta": "Implantar sistema estadual único e integrado de regulação, unificando as filas do estado e dos municípios",
+   "proposta": "Implantar um sistema estadual único e integrado de regulação, com fila única estadual.",
    "n_concorda": 4,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
@@ -99,8 +99,8 @@
   {
    "id": "p2",
    "subtema": "Regulação e filas",
-   "proposta": "Publicar em tempo real a posição do paciente na fila e o tempo estimado de espera, com consulta pública/aplicativo",
-   "n_concorda": 4,
+   "proposta": "Informar ao paciente a sua posição na fila.",
+   "n_concorda": 3,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
      "posicao": "concorda",
@@ -126,14 +126,6 @@
       472
      ],
      "nota": "Monitoramento central e transparência de dados"
-    },
-    "governador-mt-otaviano-pivetta-110002551480": {
-     "posicao": "concorda",
-     "blocos": [
-      237,
-      240
-     ],
-     "nota": "Aviso ativo por WhatsApp/SMS"
     }
    }
   },
@@ -171,7 +163,7 @@
    "id": "p4",
    "subtema": "Atenção especializada e cirurgias",
    "proposta": "Ampliar o acesso a exames diagnósticos e cirurgias eletivas por meio de mutirões ou programas de ampliação da oferta",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
      "posicao": "concorda",
@@ -203,13 +195,6 @@
       466
      ],
      "nota": "Transformar mutirões em política permanente"
-    },
-    "governador-mt-otaviano-pivetta-110002551480": {
-     "posicao": "concorda",
-     "blocos": [
-      241
-     ],
-     "nota": "Evolução do programa Fila Zero"
     }
    }
   },
@@ -217,7 +202,7 @@
    "id": "p5",
    "subtema": "Atenção especializada e cirurgias",
    "proposta": "Contratar de forma complementar serviços privados, filantrópicos ou conveniados para ampliar a oferta de exames e cirurgias",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
      "posicao": "concorda",
@@ -239,20 +224,13 @@
       213
      ],
      "nota": "Só se esgotada a capacidade pública e filantrópica, em caráter excepcional e temporário"
-    },
-    "governador-mt-mauricio-coelho-110002553058": {
-     "posicao": "concorda",
-     "blocos": [
-      552
-     ],
-     "nota": "Só quando o privado entregar mais, melhor ou mais rápido pelo mesmo recurso"
     }
    }
   },
   {
    "id": "p6",
    "subtema": "Atenção especializada e cirurgias",
-   "proposta": "Descentralizar o diagnóstico com rede regional de coleta, laboratórios e centros de exames de imagem",
+   "proposta": "Descentralizar o diagnóstico, aproximando a realização de exames das regiões do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-mauricio-coelho-110002553058": {
@@ -273,7 +251,13 @@
       247,
       248
      ],
-     "nota": "8 Centros Regionais de Diagnóstico nomeados"
+     "nota": "8 Centros Regionais de Diagnóstico nomeados",
+     "metas": [
+      {
+       "rotulo": "centros regionais de diagnóstico",
+       "valor": "8 centros"
+      }
+     ]
     },
     "governador-mt-rafaell-milas-110002543953": {
      "posicao": "concorda",
@@ -287,7 +271,7 @@
   {
    "id": "p7",
    "subtema": "Atenção especializada e cirurgias",
-   "proposta": "Garantir presença de médicos especialistas nos hospitais regionais e municipais, inclusive por rodízio",
+   "proposta": "Garantir a presença de médicos especialistas nos hospitais regionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -325,8 +309,8 @@
   {
    "id": "p9",
    "subtema": "Telessaúde e digitalização",
-   "proposta": "Ampliar a telessaúde (teleconsulta, telediagnóstico e teleconsultoria) integrada à atenção primária em todas as regiões",
-   "n_concorda": 5,
+   "proposta": "Ampliar a telessaúde integrada à atenção primária.",
+   "n_concorda": 4,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
      "posicao": "concorda",
@@ -351,13 +335,6 @@
       502
      ],
      "nota": "Inclui interconsulta com especialistas"
-    },
-    "governador-mt-mauricio-coelho-110002553058": {
-     "posicao": "concorda",
-     "blocos": [
-      489
-     ],
-     "nota": "Ampliar o Saúde Digital MT na UBS"
     },
     "governador-mt-otaviano-pivetta-110002551480": {
      "posicao": "concorda",
@@ -464,7 +441,7 @@
   {
    "id": "p15",
    "subtema": "Rede hospitalar regional",
-   "proposta": "Fortalecer e ampliar a capacidade resolutiva dos hospitais regionais existentes",
+   "proposta": "Fortalecer hospitais regionais e ampliar sua capacidade de atendimento.",
    "n_concorda": 4,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
@@ -643,7 +620,7 @@
   {
    "id": "p23",
    "subtema": "Gestão, contratos e controle",
-   "proposta": "Realizar auditorias permanentes dos contratos, compras de medicamentos e serviços terceirizados da saúde",
+   "proposta": "Auditar os contratos, as compras de medicamentos e os serviços terceirizados da saúde.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -725,7 +702,7 @@
   {
    "id": "p27",
    "subtema": "Gestão, contratos e controle",
-   "proposta": "Implantar programa estadual de humanização e acolhimento no atendimento, com melhoria das condições físicas das unidades",
+   "proposta": "Implantar programa estadual de humanização e acolhimento no atendimento em saúde",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-mauricio-coelho-110002553058": {
@@ -817,7 +794,7 @@
    "id": "p31",
    "subtema": "Apoio aos municípios e atenção primária",
    "proposta": "Reconstruir, reequipar e garantir insumos às Unidades Básicas de Saúde com apoio do Estado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-mt-mauricio-coelho-110002553058": {
      "posicao": "concorda",
@@ -825,13 +802,6 @@
       482
      ],
      "nota": ""
-    },
-    "governador-mt-otaviano-pivetta-110002551480": {
-     "posicao": "concorda",
-     "blocos": [
-      234
-     ],
-     "nota": "Tecnologia no posto: exames na hora e laudos digitais"
     }
    }
   },
@@ -860,8 +830,8 @@
   {
    "id": "p33",
    "subtema": "Apoio aos municípios e atenção primária",
-   "proposta": "Custear a presença de médicos e especialistas nas unidades básicas dos municípios, com rodízio e capacitação em serviço",
-   "n_concorda": 2,
+   "proposta": "Custear a presença de médicos e especialistas nas unidades básicas de saúde dos municípios, com rodízio entre unidades e capacitação em serviço.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
      "posicao": "concorda",
@@ -869,20 +839,13 @@
       215
      ],
      "nota": "Pediatra, cardiologista, ginecologista e endocrinologista"
-    },
-    "governador-mt-mauricio-coelho-110002553058": {
-     "posicao": "concorda",
-     "blocos": [
-      482
-     ],
-     "nota": "Reforço de profissionais onde a rede municipal não alcança"
     }
    }
   },
   {
    "id": "p34",
    "subtema": "Apoio aos municípios e atenção primária",
-   "proposta": "Estruturar programa estadual de saúde bucal",
+   "proposta": "Fortalecer a saúde bucal na rede pública.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -927,7 +890,7 @@
   {
    "id": "p36",
    "subtema": "Saúde mental",
-   "proposta": "Fortalecer e expandir a rede de atenção psicossocial e os CAPS no interior",
+   "proposta": "Fortalecer a atenção à saúde mental (atenção psicossocial).",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -958,7 +921,7 @@
   {
    "id": "p37",
    "subtema": "Saúde mental",
-   "proposta": "Ampliar o cuidado à dependência química",
+   "proposta": "Oferecer cuidado e atendimento a pessoas com dependência química.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -1139,14 +1102,20 @@
       178,
       179
      ],
-     "nota": "Aporte anual de R$ 300 milhões, com análise técnica e prazo"
+     "nota": "Aporte anual de R$ 300 milhões, com análise técnica e prazo",
+     "metas": [
+      {
+       "rotulo": "fundo doenças raras",
+       "valor": "aporte anual de R$ 300 milhões"
+      }
+     ]
     }
    }
   },
   {
    "id": "p48",
    "subtema": "Urgência e transporte de pacientes",
-   "proposta": "Ampliar a cobertura do atendimento pré-hospitalar móvel e das centrais de regulação de urgência",
+   "proposta": "Ampliar a cobertura do atendimento pré-hospitalar móvel",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-otaviano-pivetta-110002551480": {
@@ -1157,7 +1126,13 @@
       274,
       275
      ],
-     "nota": "100% de cobertura até 2028 com modelo SAMU/Bombeiros"
+     "nota": "100% de cobertura até 2028 com modelo SAMU/Bombeiros",
+     "metas": [
+      {
+       "rotulo": "cobertura de APH móvel",
+       "valor": "100% até 2028"
+      }
+     ]
     },
     "governador-mt-rafaell-milas-110002543953": {
      "posicao": "concorda",
@@ -1203,7 +1178,7 @@
   {
    "id": "p51",
    "subtema": "Saúde da mulher e materno-infantil",
-   "proposta": "Instituir política estadual permanente de atenção à gestante, ao puerpério e à primeira infância",
+   "proposta": "Assegurar atenção à gestante na rede estadual de saúde.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -1278,7 +1253,7 @@
   {
    "id": "p55",
    "subtema": "Populações e linhas de cuidado específicas",
-   "proposta": "Regionalizar e ampliar centros de reabilitação e atendimento a pessoas com deficiência, autismo e doenças raras",
+   "proposta": "Ampliar e descentralizar o atendimento especializado, levando os serviços ao interior.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -1535,7 +1510,7 @@
    "id": "p70",
    "subtema": "Regulação e filas",
    "proposta": "Encaminhar automaticamente, pelo sistema de fila única, o paciente triado ao hospital regional ou consórcio local",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-mt-rafaell-milas-110002543953": {
      "posicao": "concorda",
@@ -1543,14 +1518,6 @@
       149
      ],
      "nota": ""
-    },
-    "governador-mt-wellington-fagundes-110002551737": {
-     "posicao": "concorda",
-     "blocos": [
-      492,
-      500
-     ],
-     "nota": "Propõe sistema de regulação unificado e integrado com os municípios para todas as demandas."
     },
     "governador-mt-otaviano-pivetta-110002551480": {
      "posicao": "concorda",
@@ -1597,15 +1564,8 @@
    "id": "p73",
    "subtema": "Rede hospitalar regional",
    "proposta": "Criar central estadual de desospitalização para coordenar a alta e o cuidado pós-hospitalar",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mt-wellington-fagundes-110002551737": {
-     "posicao": "concorda",
-     "blocos": [
-      448
-     ],
-     "nota": "Prevê medidas de desospitalização coordenada com home care, embora sem citar central estadual."
-    },
     "governador-mt-otaviano-pivetta-110002551480": {
      "posicao": "concorda",
      "blocos": [
@@ -1633,17 +1593,9 @@
   {
    "id": "p75",
    "subtema": "Saúde mental",
-   "proposta": "Formar equipes multiprofissionais regionalizadas de controle, avaliação e monitoramento de doenças psicossociais e do neurodesenvolvimento, com supervisão técnico-clínica de complexo hospitalar de referência",
-   "n_concorda": 2,
+   "proposta": "Formar equipes multiprofissionais regionalizadas de controle, avaliação e monitoramento de doenças psicossociais e do neurodesenvolvimento, sob supervisão técnico-clínica de complexo hospitalar de referência.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mt-doutora-natasha-110002544985": {
-     "posicao": "concorda",
-     "blocos": [
-      238,
-      244
-     ],
-     "nota": "Propõe unidades regionais em cidades-polo com equipes multiprofissionais e fortalecimento da rede psicossocial."
-    },
     "governador-mt-otaviano-pivetta-110002551480": {
      "posicao": "concorda",
      "blocos": [
@@ -1682,31 +1634,14 @@
    "id": "p77",
    "subtema": "Atenção especializada e cirurgias",
    "proposta": "Transformar os programas existentes de cirurgias e exames em política permanente, com protocolos clínicos revisados, auditoria independente e transparência dos dados",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mt-rafaell-milas-110002543953": {
-     "posicao": "concorda",
-     "blocos": [
-      143,
-      144,
-      145
-     ],
-     "nota": "Mutirões regionalizados via consórcios e transparência absoluta dos dados de regulação."
-    },
     "governador-mt-mauricio-coelho-110002553058": {
      "posicao": "concorda",
      "blocos": [
       473
      ],
      "nota": ""
-    },
-    "governador-mt-otaviano-pivetta-110002551480": {
-     "posicao": "concorda",
-     "blocos": [
-      241,
-      242
-     ],
-     "nota": "Propõe evolução do Fila Zero e institucionalização/normatização da Tabela SUS/MT."
     }
    }
   },
@@ -1729,22 +1664,8 @@
    "id": "p79",
    "subtema": "Gestão, contratos e controle",
    "proposta": "Confrontar sistematicamente os medicamentos comprados com os efetivamente entregues e os exames pagos com os efetivamente realizados",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-mt-doutora-natasha-110002544985": {
-     "posicao": "concorda",
-     "blocos": [
-      250
-     ],
-     "nota": "Auditoria técnica e contábil em contratos da SES, especialmente compra de medicamentos e insumos."
-    },
-    "governador-mt-wellington-fagundes-110002551737": {
-     "posicao": "concorda",
-     "blocos": [
-      472
-     ],
-     "nota": "Prevê informações gerenciais de todas as etapas, até a dispensação de medicamentos e materiais."
-    },
     "governador-mt-mauricio-coelho-110002553058": {
      "posicao": "concorda",
      "blocos": [
@@ -1800,6 +1721,302 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p83",
+   "subtema": "Regulação e filas",
+   "proposta": "Criar central estadual de regulação com fila única pública e auditável para consultas especializadas, exames e cirurgias, com publicação da posição de cada paciente e do tempo de espera por especialidade e região, e meta de redução acompanhada em aplicativo da Secretaria Estadual de Saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      205
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p84",
+   "subtema": "Regulação e filas",
+   "proposta": "Monitorar centralmente, em tempo real, filas, tempos de espera e capacidade das unidades, e informar ao paciente sua posição na fila e o que esperar do atendimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      448,
+      472
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p85",
+   "subtema": "Atenção especializada e cirurgias",
+   "proposta": "Apoiar técnica e financeiramente consórcios intermunicipais de saúde para mutirões regionais de exames especializados nos municípios polos e implantar telediagnóstico em municípios pequenos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-rafaell-milas-110002543953": {
+     "posicao": "concorda",
+     "blocos": [
+      145
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p86",
+   "subtema": "Atenção especializada e cirurgias",
+   "proposta": "Ampliar a capacidade resolutiva dos hospitais regionais existentes, contratualizando novas especialidades médicas de alta demanda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-rafaell-milas-110002543953": {
+     "posicao": "concorda",
+     "blocos": [
+      144
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p87",
+   "subtema": "Telessaúde e digitalização",
+   "proposta": "Implantar postos de telemedicina e telediagnóstico especializado em unidades de saúde de municípios de pequeno porte, permitindo consulta em tempo real a especialistas dos grandes centros hospitalares.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-rafaell-milas-110002543953": {
+     "posicao": "concorda",
+     "blocos": [
+      145
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p88",
+   "subtema": "Telessaúde e digitalização",
+   "proposta": "Ampliar o telediagnóstico e a teleconsulta em especialidades médicas nos municípios do interior, com tecnologia nos postos de saúde e laudos digitais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      234,
+      249
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p89",
+   "subtema": "Rede hospitalar regional",
+   "proposta": "Concluir, entregar e colocar em operação novos hospitais regionais em Juína, Tangará da Serra e Confresa, além da fase 2 do Hospital Central de Cuiabá, com gestão de alta performance.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      250,
+      251,
+      252
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p90",
+   "subtema": "Gestão, contratos e controle",
+   "proposta": "Realizar auditoria técnica e contábil em todos os contratos da Secretaria Estadual de Saúde, especialmente os de terceirização de serviços e de compra de medicamentos e insumos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      250
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p91",
+   "subtema": "Gestão, contratos e controle",
+   "proposta": "Fiscalizar os contratos de gestão da saúde por meio da Controladoria-Geral do Estado, em articulação da SES com as secretarias municipais e o COSEMS.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-rafaell-milas-110002543953": {
+     "posicao": "concorda",
+     "blocos": [
+      151
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p92",
+   "subtema": "Gestão, contratos e controle",
+   "proposta": "Adotar protocolos de atendimento humanizado na rede do SUS, com atenção às necessidades epidemiológicas femininas no orçamento da saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      516
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p93",
+   "subtema": "Apoio aos municípios e atenção primária",
+   "proposta": "Financiar de forma complementar os municípios, reconstruir e reequipar as UBSs e reforçar a presença de profissionais onde a rede municipal não alcança.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-mauricio-coelho-110002553058": {
+     "posicao": "concorda",
+     "blocos": [
+      482
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p94",
+   "subtema": "Apoio aos municípios e atenção primária",
+   "proposta": "Universalizar a Estratégia Saúde da Família e as equipes de saúde bucal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      232
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p95",
+   "subtema": "Saúde mental",
+   "proposta": "Modernizar o atendimento a pacientes com transtornos mentais, Transtorno do Espectro Autista e dependência química.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      426
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p97",
+   "subtema": "Urgência e transporte de pacientes",
+   "proposta": "Consolidar o SAMU Aeromédico estadual, zerando o déficit de cobertura nas macrorregiões Norte e Araguaia, e criar centrais regionais de frotas com ambulâncias rastreadas por satélite para transporte e transferências de pacientes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-rafaell-milas-110002543953": {
+     "posicao": "concorda",
+     "blocos": [
+      145,
+      156
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p48"
+  },
+  {
+   "id": "p98",
+   "subtema": "Saúde da mulher e materno-infantil",
+   "proposta": "Pactuar com os municípios a busca ativa e o acompanhamento de todas as gestantes do território, com protocolo de parto humanizado em toda a rede, acompanhante garantido, centros regionais de referência em saúde da mulher e revisão obrigatória de cada morte materna.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      322
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
+  },
+  {
+   "id": "p99",
+   "subtema": "Populações e linhas de cuidado específicas",
+   "proposta": "Fortalecer a linha de cuidado do autismo e do neurodesenvolvimento e expandir a rede de CAPS no interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      266
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p55"
+  },
+  {
+   "id": "p100",
+   "subtema": "Saúde mental",
+   "proposta": "Implantar e fortalecer unidades regionais em cidades-polo, com equipes multiprofissionais e cuidado individualizado para pessoas autistas, com deficiência e com doenças raras, e ampliar o número de profissionais da rede de atenção psicossocial nos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      238,
+      244
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p75"
+  },
+  {
+   "id": "p101",
+   "subtema": "Atenção especializada e cirurgias",
+   "proposta": "Dar evolução ao programa Fila Zero e institucionalizar a Tabela SUS/MT por meio de normatização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      241,
+      242
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p77"
   }
  ],
  "blocos": {
@@ -2042,10 +2259,6 @@
     "texto": "Primária, com plano, cronograma, prestação de contas e acompanhamento público. O município receberá apoio para fazer a unidade funcionar; o Estado verificará se a unidade está funcionando.",
     "pagina": 58
    },
-   "489": {
-    "texto": "A proposta será ampliar esses instrumentos para que a UBS não seja apenas o lugar onde o paciente recebe um encaminhamento, mas o lugar onde ele começa e acompanha seu cuidado.",
-    "pagina": 58
-   },
    "500": {
     "texto": "Vamos criar o programa Mato Grosso Sem Dor. O cidadão poderá acessar uma triagem digital inicial, que identificará a natureza e a urgência da dor. Quando indicado, será encaminhado para teleconsulta ou atendimento presencial na rede de saúde. A Atenção",
     "pagina": 59
@@ -2174,10 +2387,6 @@
     "texto": "Haverá auditoria independente, revisão periódica das metas, sanções por descumprimento e possibilidade de rescisão quando a falha for persistente. A rede própria do Estado será usada como referência de custo e qualidade.",
     "pagina": 65
    },
-   "552": {
-    "texto": "Contratar o privado só fará sentido quando ele entregar mais, melhor ou mais rápido pelo mesmo recurso.",
-    "pagina": 65
-   },
    "553": {
     "texto": "O Estado não comprará estruturas. Comprará saúde. E",
     "pagina": 65
@@ -2216,20 +2425,12 @@
     "texto": "“A Saúde na Palma da Mão”: Regulação, Fila Zero e Tecnologia.",
     "pagina": 14
    },
-   "237": {
-    "texto": "Eliminar filas cegas, unificar a jornada do paciente e integrar o histórico médico em todo o estado.",
-    "pagina": 14
-   },
    "238": {
     "texto": "Unificação da fila de regulação do estado e municípios por meio do Regula MT.",
     "pagina": 14
    },
    "239": {
     "texto": "Prontuário Único Estadual para que o médico veja o histórico do paciente em qualquer município.",
-    "pagina": 14
-   },
-   "240": {
-    "texto": "Aviso ativo automático aos pacientes (WhatsApp/SMS).",
     "pagina": 14
    },
    "241": {

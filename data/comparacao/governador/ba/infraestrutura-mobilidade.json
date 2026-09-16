@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-ba.json",
   "gerado_em": "2026-09-14T01:17:36Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T18:36:46Z"
  },
  "candidatos": [
   {
@@ -82,7 +82,7 @@
   {
    "id": "p3",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Concluir e expandir a rede do VLT de Salvador",
+   "proposta": "Atuar sobre o VLT de Salvador",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -105,7 +105,7 @@
   {
    "id": "p4",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Ampliar o transporte sobre trilhos na Região Metropolitana de Salvador para atender cidades metropolitanas e distritos industriais",
+   "proposta": "Ampliar o transporte sobre trilhos na Região Metropolitana de Salvador",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -158,16 +158,9 @@
   {
    "id": "p7",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Promover a transição energética da frota de transporte público, substituindo combustíveis fósseis",
-   "n_concorda": 2,
+   "proposta": "Promover a transição energética da frota de transporte público.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ba-ronaldo-mansur-50002532269": {
-     "posicao": "concorda",
-     "blocos": [
-      285
-     ],
-     "nota": ""
-    },
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
      "blocos": [
@@ -290,7 +283,7 @@
    "id": "p15",
    "subtema": "Ponte Salvador–Itaparica",
    "proposta": "Submeter o projeto e o contrato da ponte a reavaliação técnica, financeira e jurídica antes de prosseguir",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
@@ -300,13 +293,6 @@
       2259
      ],
      "nota": "Grupo de avaliação instalado ainda na transição"
-    },
-    "governador-ba-ronaldo-mansur-50002532269": {
-     "posicao": "concorda",
-     "blocos": [
-      59
-     ],
-     "nota": "Propõe discutir publicamente a construção e o contrato"
     }
    }
   },
@@ -619,7 +605,7 @@
    "id": "p33",
    "subtema": "Portos e hidrovias",
    "proposta": "Fortalecer a competitividade do complexo portuário da Baía de Todos os Santos com melhoria de acessos e infraestrutura retroportuária",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
      "posicao": "concorda",
@@ -627,13 +613,6 @@
       470
      ],
      "nota": "Via Parque Logístico no CIA/Norte"
-    },
-    "governador-ba-acm-neto-50002533190": {
-     "posicao": "concorda",
-     "blocos": [
-      2227
-     ],
-     "nota": "Exame de arranjos para cabotagem e navegação de longo curso"
     }
    }
   },
@@ -758,7 +737,7 @@
    "id": "p41",
    "subtema": "Aeroportos e aviação regional",
    "proposta": "Construir novos aeroportos regionais",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
      "posicao": "concorda",
@@ -766,13 +745,6 @@
       463
      ],
      "nota": "Novo aeroporto do Médio Rio de Contas/Vale do Jiquiriçá"
-    },
-    "governador-ba-acm-neto-50002533190": {
-     "posicao": "concorda",
-     "blocos": [
-      2193
-     ],
-     "nota": "Analisar o aeroporto do Litoral Norte, em Esplanada"
     }
    }
   },
@@ -884,6 +856,71 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p49",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Expandir a rede do VLT de Salvador, alcançando novas áreas da cidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      453
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p50",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Concluir o VLT de Salvador e melhorar a microacessibilidade e a intermodalidade das estações, com edifícios-garagem integrados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2274
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p51",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Viabilizar a construção do VLT entre Camaçari e Alagoinhas, em parceria com o Governo Federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      455
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p52",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Modernizar a frota de ônibus, preferencialmente elétrica, e integrá-la aos novos modais, retomando o diálogo com a Prefeitura de Salvador.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      2262,
+      2276
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
   }
  ],
  "blocos": {
@@ -1034,10 +1071,6 @@
    },
    "2225": {
     "texto": "Ao longo desse importante “rio da unidade nacional”, serão estudados e implementados novos terminais e ancoradouros, para servir à dinamização da economia baiana, sem negligenciar a necessária articulação com os vizinhos estados de Minas Gerais e Pernambuco.",
-    "pagina": 133
-   },
-   "2227": {
-    "texto": "Serão examinados os arranjos necessários e indispensáveis para aproveitar o potencial portuário do litoral, tirando partido da privilegiada posição geográfica da Bahia em relação ao território brasileiro e o Atlântico Sul, com vistas à navegação de longo curso e a cabotagem.",
     "pagina": 133
    },
    "2238": {
@@ -1207,10 +1240,6 @@
    "58": {
     "texto": "Aplicam uma “gestão palaciana” ao arrepio das necessidades populares com decisões centradas no capital imobiliário, tem, assim, seu patrimônio mobiliário, paisagístico e arquitetônico ameaçado. Ampliaremos as obras do Metrô de Salvador e abriremos uma investigação dos desmandos que a",
     "pagina": 4
-   },
-   "59": {
-    "texto": "marcaram, assim como discutiremos o contrato estabelecido com a Arena Fonte Nova lesivo ao estado e a construção da Ponte Salvador-Itaparica.",
-    "pagina": 5
    },
    "283": {
     "texto": "22. Mobilidade urbana como direito social",

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-sp.json",
   "gerado_em": "2026-09-14T19:46:23Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -122,7 +122,7 @@
   {
    "id": "p6",
    "subtema": "Proteção da natureza e áreas verdes",
-   "proposta": "Proteger o patrimônio ambiental e a biodiversidade do estado",
+   "proposta": "Proteger o patrimônio ambiental do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -363,20 +363,12 @@
    "id": "p21",
    "subtema": "Energia e transição energética",
    "proposta": "Promover a transição ecológica da economia estadual rumo a uma economia de baixo carbono",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
      "posicao": "concorda",
      "blocos": [
       253
-     ],
-     "nota": ""
-    },
-    "governador-sp-tarcisio-250002541303": {
-     "posicao": "concorda",
-     "blocos": [
-      1064,
-      1157
      ],
      "nota": ""
     }
@@ -531,7 +523,13 @@
       1168,
       1169
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "plano estadual de mineração",
+       "valor": "Plano Estadual de Mineração 2050"
+      }
+     ]
     }
    }
   },
@@ -598,6 +596,39 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p36",
+   "subtema": "Proteção da natureza e áreas verdes",
+   "proposta": "Proteger o patrimônio ambiental paulista, cuidar das áreas de risco em parceria com os municípios e apoiar a adaptação das cidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      253
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p37",
+   "subtema": "Energia e transição energética",
+   "proposta": "Promover o desenvolvimento sustentável do estado com economia circular, energia renovável e fomento à bioeconomia, ao agro e à indústria, avançando com o Plano Estadual de Energia 2050 e lançando o Plano Paulista Decenal de Energia 2034.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      1064,
+      1157
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
   }
  ],
  "blocos": {

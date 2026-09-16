@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-pr.json",
   "gerado_em": "2026-09-14T04:18:20Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "exportado_em": "2026-09-16T21:46:21Z"
  },
  "candidatos": [
   {
@@ -85,7 +85,13 @@
       2698,
       3909
      ],
-     "nota": "Meta de ser o primeiro estado a universalizar antecipadamente"
+     "nota": "Meta de ser o primeiro estado a universalizar antecipadamente",
+     "metas": [
+      {
+       "rotulo": "investimento para antecipar universalização",
+       "valor": "mais de R$ 13 bilhões"
+      }
+     ]
     }
    }
   },
@@ -239,7 +245,7 @@
   {
    "id": "p10",
    "subtema": "Segurança hídrica e mananciais",
-   "proposta": "Proteger nascentes, mananciais, bacias e reservatórios, com recuperação de matas ciliares e áreas de recarga",
+   "proposta": "Proteger nascentes, mananciais, bacias e reservatórios",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -648,6 +654,22 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p32",
+   "subtema": "Segurança hídrica e mananciais",
+   "proposta": "Proteger nascentes, bacias e reservatórios, fiscalizar barragens e apoiar a segurança hídrica urbana e rural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      173
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

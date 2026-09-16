@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-pi.json",
   "gerado_em": "2026-09-14T10:34:35Z",
-  "exportado_em": "2026-09-14T23:10:53Z"
+  "exportado_em": "2026-09-16T21:46:13Z"
  },
  "candidatos": [
   {
@@ -44,7 +44,7 @@
   {
    "id": "p1",
    "subtema": "Rodovias estaduais",
-   "proposta": "Implantar programa permanente de recuperação, conservação e modernização da malha rodoviária estadual, substituindo a lógica de intervenções emergenciais/corretivas por manutenção preventiva planejada",
+   "proposta": "Recuperar, conservar e modernizar a malha rodoviária estadual.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -77,7 +77,7 @@
   {
    "id": "p2",
    "subtema": "Rodovias estaduais",
-   "proposta": "Monitorar permanentemente a condição da malha rodoviária com sistemas digitais, geotecnologias e inteligência artificial para priorizar investimentos por critérios técnicos",
+   "proposta": "Monitorar permanentemente a malha rodoviária estadual com sistemas digitais e inteligência artificial.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -85,7 +85,13 @@
      "blocos": [
       991
      ],
-     "nota": "Meta de 100% da malha monitorada por SIG/SGP com IA"
+     "nota": "Meta de 100% da malha monitorada por SIG/SGP com IA",
+     "metas": [
+      {
+       "rotulo": "malha estadual monitorada digitalmente",
+       "valor": "100%"
+      }
+     ]
     },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
@@ -244,7 +250,7 @@
   {
    "id": "p12",
    "subtema": "Logística e integração de modais",
-   "proposta": "Tratar a infraestrutura como política permanente e estratégica de desenvolvimento, com planejamento de longo prazo e ampliação dos investimentos",
+   "proposta": "Ampliar os investimentos em infraestrutura como instrumento de desenvolvimento.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
@@ -333,7 +339,7 @@
   {
    "id": "p16",
    "subtema": "Logística e integração de modais",
-   "proposta": "Concluir e consolidar os grandes corredores logísticos estratégicos do estado",
+   "proposta": "Fortalecer os corredores logísticos estratégicos do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -373,7 +379,7 @@
    "id": "p18",
    "subtema": "Mobilidade urbana e metropolitana",
    "proposta": "Elaborar e implantar plano estadual de mobilidade urbana, em articulação com os municípios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
      "posicao": "concorda",
@@ -382,15 +388,6 @@
       214
      ],
      "nota": "Parceria com o município de Teresina e iniciativa privada"
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      1345,
-      1346,
-      1350
-     ],
-     "nota": "Plano de mobilidade inclusiva e segurança viária, urbano e rural"
     }
    }
   },
@@ -421,7 +418,7 @@
    "id": "p20",
    "subtema": "Mobilidade urbana e metropolitana",
    "proposta": "Apoiar projetos estruturantes de mobilidade, drenagem, acessibilidade e qualificação de espaços públicos nas regiões metropolitanas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
      "posicao": "concorda",
@@ -429,13 +426,6 @@
       1352
      ],
      "nota": ""
-    },
-    "governador-pi-dra-lucia-santos-180002544216": {
-     "posicao": "concorda",
-     "blocos": [
-      208
-     ],
-     "nota": "Prevê estudos para novos corredores metropolitanos"
     }
    }
   },
@@ -654,6 +644,90 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Investir na ampliação e na manutenção da malha rodoviária estadual, de modo a consolidar 95% dela em condições regular, boa ou ótima.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      978,
+      983
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p35",
+   "subtema": "Rodovias estaduais",
+   "proposta": "Manter 100% da malha rodoviária estadual monitorada por sistemas digitais SIG/SGP com inteligência artificial, consolidando a modernização da gestão rodoviária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      991
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p36",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Expandir a infraestrutura econômica e produtiva com investimentos em logística, abastecimento hídrico, energia e agroindustrialização, consolidando corredores logísticos, porto, hidrovia, saneamento e transição energética.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      96,
+      978
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p37",
+   "subtema": "Logística e integração de modais",
+   "proposta": "Fortalecer os corredores logísticos do agronegócio, integrar modais de transporte e melhorar os acessos aos polos produtivos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-dra-lucia-santos-180002544216": {
+     "posicao": "concorda",
+     "blocos": [
+      242
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p16"
+  },
+  {
+   "id": "p38",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Implantar plano de mobilidade inclusiva e segurança viária e reestruturar o programa estadual de mobilidade urbana e rural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      1345,
+      1346,
+      1350
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
   }
  ],
  "blocos": {

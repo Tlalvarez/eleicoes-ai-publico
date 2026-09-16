@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-sp.json",
   "gerado_em": "2026-09-14T19:42:56Z",
-  "exportado_em": "2026-09-14T19:49:49Z"
+  "exportado_em": "2026-09-16T17:19:09Z"
  },
  "candidatos": [
   {
@@ -129,7 +129,7 @@
   {
    "id": "p6",
    "subtema": "Segurança hídrica",
-   "proposta": "Aumentar a segurança hídrica do estado, garantindo disponibilidade de água para as próximas décadas",
+   "proposta": "Aumentar a segurança hídrica do estado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -200,7 +200,7 @@
   {
    "id": "p10",
    "subtema": "Proteção de mananciais",
-   "proposta": "Proteger e recuperar mananciais de abastecimento",
+   "proposta": "Proteger mananciais de abastecimento",
    "n_concorda": 2,
    "posicoes": {
     "governador-sp-fernando-haddad-250002549705": {
@@ -439,6 +439,45 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p25",
+   "subtema": "Segurança hídrica",
+   "proposta": "Aumentar a segurança hídrica no estado e universalizar o saneamento até 2029 nos municípios atendidos pela URAE-1.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-tarcisio-250002541303": {
+     "posicao": "concorda",
+     "blocos": [
+      885,
+      897
+     ],
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "municípios da URAE-1",
+       "valor": "371 municípios"
+      }
+     ]
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p26",
+   "subtema": "Proteção de mananciais",
+   "proposta": "Proteger os mananciais e garantir segurança hídrica para as próximas décadas, fiscalizando a qualidade e a expansão dos serviços de saneamento contratados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sp-fernando-haddad-250002549705": {
+     "posicao": "concorda",
+     "blocos": [
+      248
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
   }
  ],
  "blocos": {

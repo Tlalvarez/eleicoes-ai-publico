@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-al.json",
   "gerado_em": "2026-09-14T09:19:18Z",
-  "exportado_em": "2026-09-14T09:30:18Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Gestão do SUAS e cofinanciamento",
-   "proposta": "Fortalecer a cooperação e o apoio do governo estadual aos municípios na política de assistência social e proteção social",
+   "proposta": "Fortalecer a cooperação e o apoio do governo estadual aos municípios",
    "n_concorda": 3,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
@@ -75,7 +75,7 @@
   {
    "id": "p2",
    "subtema": "Gestão do SUAS e cofinanciamento",
-   "proposta": "Garantir cofinanciamento estadual regular aos municípios para manutenção dos serviços continuados do SUAS",
+   "proposta": "Garantir cofinanciamento estadual regular aos municípios na assistência social",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -116,7 +116,7 @@
   {
    "id": "p4",
    "subtema": "Gestão do SUAS e cofinanciamento",
-   "proposta": "Regionalizar a proteção social especializada, com implantação de CREAS regionais",
+   "proposta": "Regionalizar os serviços de proteção social especializada.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -235,7 +235,7 @@
   {
    "id": "p10",
    "subtema": "Acompanhamento das famílias",
-   "proposta": "Realizar busca ativa de famílias vulneráveis para inclusão e atualização cadastral e acesso aos serviços",
+   "proposta": "Realizar busca ativa de famílias vulneráveis para garantir o acesso aos serviços",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -260,7 +260,7 @@
   {
    "id": "p11",
    "subtema": "Acompanhamento das famílias",
-   "proposta": "Dar acesso prioritário a creche, cuidado, qualificação profissional, emprego e inclusão produtiva às famílias em maior vulnerabilidade socioeconômica",
+   "proposta": "Oferecer cuidado às famílias em maior vulnerabilidade socioeconômica",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -454,7 +454,7 @@
    "id": "p22",
    "subtema": "Presença territorial do Estado",
    "proposta": "Ampliar as políticas públicas de inclusão social em todas as regiões do estado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
      "posicao": "concorda",
@@ -462,16 +462,93 @@
       23
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p23",
+   "subtema": "Gestão do SUAS e cofinanciamento",
+   "proposta": "Fortalecer a cooperação entre Estado e municípios, com Governo Itinerante em cada região e ampliação das políticas de inclusão social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-marcio-jambo-20002552502": {
+     "posicao": "concorda",
+     "blocos": [
+      23
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p24",
+   "subtema": "Gestão do SUAS e cofinanciamento",
+   "proposta": "Instituir o Piso Alagoano do SUAS, com regra pública de cofinanciamento e repasses regulares aos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      148,
+      254
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p25",
+   "subtema": "Gestão do SUAS e cofinanciamento",
+   "proposta": "Promover a regionalização dos serviços de proteção social especializada e sustentar os serviços continuados do CRAS/PAIF e do CREAS/PAEFI.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
      "blocos": [
-      91,
-      92
+      126,
+      127
      ],
-     "nota": "Trajetória contínua de proteção social ao longo da vida"
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p26",
+   "subtema": "Acompanhamento das famílias",
+   "proposta": "Fazer busca ativa das famílias do Cartão Cria para garantir o acesso aos serviços, mantendo as condicionalidades de vacinação e pré-natal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      150,
+      151,
+      152
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p27",
+   "subtema": "Acompanhamento das famílias",
+   "proposta": "Oferecer cuidado, qualificação profissional, emprego e inclusão produtiva às famílias em maior vulnerabilidade socioeconômica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      155,
+      156
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
   }
  ],
  "blocos": {

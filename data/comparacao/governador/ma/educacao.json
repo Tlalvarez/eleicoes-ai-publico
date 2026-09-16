@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "educacao-ma.json",
   "gerado_em": "2026-09-14T21:06:02Z",
-  "exportado_em": "2026-09-14T23:10:50Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Ampliar e fortalecer a oferta de educação profissional técnica na rede pública estadual, com cursos alinhados às vocações econômicas regionais e à inserção no mercado de trabalho",
+   "proposta": "Fortalecer a educação profissional técnica na rede pública estadual.",
    "n_concorda": 5,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -110,7 +110,7 @@
   {
    "id": "p2",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Levar o ensino profissionalizante a todas as cidades do estado",
+   "proposta": "Expandir o ensino profissionalizante, levando-o também aos municípios pequenos, de acordo com as vocações econômicas de cada região",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-felipe-camarao-100002542556": {
@@ -185,7 +185,7 @@
   {
    "id": "p6",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Articular em rede as instituições de formação profissional (IEMA, universidades, IFMA, Sistema S) com informação pública unificada da oferta e sem duplicação de cursos",
+   "proposta": "Articular em rede as instituições de formação profissional (IEMA, IFMA, Sistema S, universidades e parceiras) na oferta de educação profissional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -207,7 +207,7 @@
   {
    "id": "p7",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Avaliar os cursos técnicos por indicadores de inserção dos egressos no emprego, em painel público, revendo ou ampliando a oferta conforme o resultado",
+   "proposta": "Avaliar os cursos técnicos por indicadores de inserção dos egressos no emprego, em painel público",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -226,7 +226,13 @@
       1120,
       2680
      ],
-     "nota": "Inserção em 6 e 12 meses, salário de entrada e evolução de renda"
+     "nota": "Inserção em 6 e 12 meses, salário de entrada e evolução de renda",
+     "metas": [
+      {
+       "rotulo": "acompanhamento de inserção",
+       "valor": "em 6 e 12 meses"
+      }
+     ]
     }
    }
   },
@@ -349,7 +355,13 @@
       1060,
       2205
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "Ideb ensino médio",
+       "valor": "4,3 em 2029"
+      }
+     ]
     }
    }
   },
@@ -371,7 +383,7 @@
   {
    "id": "p15",
    "subtema": "Ensino médio e tempo integral",
-   "proposta": "Implantar programa de projeto de vida e orientação profissional para estudantes do ensino médio",
+   "proposta": "Implantar programa de projeto de vida para estudantes do ensino médio",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -386,7 +398,13 @@
      "blocos": [
       911
      ],
-     "nota": "Projeto de vida da 1ª à 3ª série"
+     "nota": "Projeto de vida da 1ª à 3ª série",
+     "metas": [
+      {
+       "rotulo": "projeto de vida",
+       "valor": "da 1ª à 3ª série"
+      }
+     ]
     }
    }
   },
@@ -486,7 +504,7 @@
   {
    "id": "p20",
    "subtema": "Alfabetização e educação de jovens e adultos",
-   "proposta": "Implantar política permanente de alfabetização na idade certa em regime de colaboração com os municípios, com formação de alfabetizadores, materiais e acompanhamento de resultados",
+   "proposta": "Implantar política permanente de alfabetização, com formação de alfabetizadores, materiais e acompanhamento de resultados",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -511,7 +529,7 @@
   {
    "id": "p21",
    "subtema": "Alfabetização e educação de jovens e adultos",
-   "proposta": "Implantar programa estadual de alfabetização de jovens e adultos para erradicar o analfabetismo, com turmas comunitárias próximas aos moradores",
+   "proposta": "Implantar programa estadual de alfabetização de jovens e adultos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -553,7 +571,13 @@
       2222,
       2448
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "taxa de analfabetismo",
+       "valor": "abaixo de 7,5%, -3,4 p.p. em quatro anos"
+      }
+     ]
     }
    }
   },
@@ -561,7 +585,7 @@
    "id": "p23",
    "subtema": "Alfabetização e educação de jovens e adultos",
    "proposta": "Articular a alfabetização de adultos com continuidade na EJA e com qualificação profissional",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -577,13 +601,6 @@
       2450
      ],
      "nota": "Inclui módulos curtos do IEMA e inclusão digital"
-    },
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      270
-     ],
-     "nota": "EJA com letramento digital e segurança online"
     }
    }
   },
@@ -620,7 +637,7 @@
   {
    "id": "p26",
    "subtema": "Permanência, busca ativa e proteção",
-   "proposta": "Implantar programa permanente de busca ativa de crianças e adolescentes fora da escola, articulando educação, assistência social, saúde e conselhos tutelares",
+   "proposta": "Implantar programa permanente de busca ativa de crianças e adolescentes fora da escola",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -636,7 +653,13 @@
      "blocos": [
       944
      ],
-     "nota": "Conectado à plataforma Busca Ativa Escolar (UNICEF)"
+     "nota": "Conectado à plataforma Busca Ativa Escolar (UNICEF)",
+     "metas": [
+      {
+       "rotulo": "prazos da busca ativa",
+       "valor": "análise em 48h, resposta em 7 dias"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -651,7 +674,7 @@
   {
    "id": "p27",
    "subtema": "Permanência, busca ativa e proteção",
-   "proposta": "Criar sistema de alerta precoce contra o abandono escolar baseado em frequência e desempenho, com prazos de resposta definidos",
+   "proposta": "Criar sistema de alerta precoce contra o abandono escolar baseado na frequência escolar.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -659,7 +682,13 @@
      "blocos": [
       944
      ],
-     "nota": "Análise humana em 48h, resposta em 7 dias e acompanhamento por 6 meses"
+     "nota": "Análise humana em 48h, resposta em 7 dias e acompanhamento por 6 meses",
+     "metas": [
+      {
+       "rotulo": "prazos do alerta",
+       "valor": "análise em 48h, resposta em 7 dias"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -707,7 +736,13 @@
       2227,
       2228
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "reinserção de jovens",
+       "valor": "120 mil (≈20%), 30 mil por ano"
+      }
+     ]
     }
    }
   },
@@ -877,7 +912,7 @@
   {
    "id": "p38",
    "subtema": "Inclusão e diversidade",
-   "proposta": "Garantir educação indígena e quilombola que respeite especificidades culturais e territoriais das comunidades",
+   "proposta": "Garantir educação indígena e quilombola",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -953,7 +988,7 @@
   {
    "id": "p41",
    "subtema": "Educação infantil e creches",
-   "proposta": "Ampliar a oferta de creches e pré-escolas em parceria com os municípios, com apoio técnico e financeiro e prioridade às áreas de maior vulnerabilidade",
+   "proposta": "Ampliar a oferta de creches e pré-escolas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -1030,7 +1065,7 @@
   {
    "id": "p44",
    "subtema": "Infraestrutura, alimentação e conectividade",
-   "proposta": "Universalizar e qualificar a conectividade das escolas, priorizando a zona rural, com medição da qualidade e do uso",
+   "proposta": "Universalizar e qualificar a conectividade das escolas",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1062,7 +1097,13 @@
       887,
       968
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "escola sem merenda",
+       "valor": "nenhuma por mais de 5 dias úteis"
+      }
+     ]
     }
    }
   },
@@ -1084,7 +1125,7 @@
   {
    "id": "p47",
    "subtema": "Avaliação, metas e gestão escolar",
-   "proposta": "Elevar o IDEB da rede estadual em direção à média nacional",
+   "proposta": "Elevar o IDEB da rede estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -1126,7 +1167,7 @@
   {
    "id": "p49",
    "subtema": "Avaliação, metas e gestão escolar",
-   "proposta": "Aplicar avaliações diagnósticas no início do ano e ofertar recomposição/reforço da aprendizagem, com ênfase em português e matemática",
+   "proposta": "Ofertar recomposição/reforço da aprendizagem aos estudantes da rede pública",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -1166,7 +1207,13 @@
       906,
       934
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "devolutiva do SEAMA",
+       "valor": "em 60 dias"
+      }
+     ]
     }
    }
   },
@@ -1211,7 +1258,7 @@
   {
    "id": "p53",
    "subtema": "Regime de colaboração com municípios",
-   "proposta": "Institucionalizar o regime de colaboração Estado-municípios na educação básica por instrumento formal e permanente",
+   "proposta": "Fortalecer o regime de colaboração entre o Estado e os municípios na educação básica.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -1337,7 +1384,7 @@
    "id": "p60",
    "subtema": "Esporte, cultura e protagonismo estudantil",
    "proposta": "Garantir a prática de educação física e esporte na rede estadual com espaços, professores e materiais adequados",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -1359,13 +1406,6 @@
       971
      ],
      "nota": "Apoio às delegações dos JEMs e ParaJEMs; competir é voluntário"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      2363
-     ],
-     "nota": ""
     }
    }
   },
@@ -1448,17 +1488,8 @@
    "id": "p66",
    "subtema": "Avaliação, metas e gestão escolar",
    "proposta": "Acompanhar a educação por indicadores de aprendizagem, permanência, conclusão na idade adequada e trajetória posterior do estudante, e não apenas por matrícula",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
-    "governador-ma-eduardo-braide-100002545679": {
-     "posicao": "concorda",
-     "blocos": [
-      93,
-      99,
-      100
-     ],
-     "nota": "Elevar IDEB e acompanhar resultados da alfabetização"
-    },
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
      "blocos": [
@@ -1490,7 +1521,7 @@
   {
    "id": "p67",
    "subtema": "Educação profissional e técnica",
-   "proposta": "Definir a oferta de cursos técnicos por região conforme as vocações de cada polo (São Luís/Bacabeira, Açailândia, Imperatriz, Caxias, Balsas/MATOPIBA e litoral)",
+   "proposta": "Definir a oferta de cursos técnicos por região.",
    "n_concorda": 5,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -1544,26 +1575,8 @@
    "id": "p68",
    "subtema": "Permanência, busca ativa e proteção",
    "proposta": "Fixar como meta a redução do abandono escolar e a elevação da conclusão na idade adequada",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      240,
-      246,
-      281
-     ],
-     "nota": "Metas de indicadores e programa permanente de busca ativa/prevenção da evasão."
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      913,
-      944,
-      959
-     ],
-     "nota": "Busca ativa com prazos, acolhimento na entrada do médio e EJA/noturno"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1593,16 +1606,8 @@
    "id": "p70",
    "subtema": "Educação infantil e creches",
    "proposta": "Considerar a demanda por serviços de cuidado infantil no planejamento territorial dos novos polos de desenvolvimento, para permitir o acesso das mulheres às novas oportunidades de trabalho",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      247,
-      280
-     ],
-     "nota": "Apoio à implantação/ampliação de creches, inclusive tempo integral."
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1631,17 +1636,8 @@
    "id": "p72",
    "subtema": "Avaliação, metas e gestão escolar",
    "proposta": "Definir metas de redução das desigualdades de desempenho entre escolas e territórios nos anos iniciais e finais, evitando que a média estadual oculte bolsões de baixo desempenho",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      900,
-      906,
-      939
-     ],
-     "nota": "Assessoria intensiva onde resultados são mais baixos; comparação por contextos semelhantes"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1655,16 +1651,8 @@
    "id": "p73",
    "subtema": "Inclusão e diversidade",
    "proposta": "Priorizar jovens locais na formação técnica e conceder bolsas de ciência e tecnologia e apoio a empreendedores e fornecedores quilombolas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      920,
-      955
-     ],
-     "nota": "Bolsas de iniciação científica júnior e educação quilombola territorializada"
-    },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
@@ -1678,16 +1666,8 @@
    "id": "p74",
    "subtema": "Avaliação, metas e gestão escolar",
    "proposta": "Assumir compromissos transversais na educação: linha de base de dados auditada no primeiro ano, prioridade a quem mais precisa, proibição de decisão automatizada por tecnologia sobre estudantes com proteção reforçada de dados de menores, participação de professores e comunidades, colaboração pactuada com municípios e continuidade de programas existentes (Pacto pela Aprendizagem, SEAMA e IEMA)",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-ma-orleans-brandao-100002543869": {
-     "posicao": "concorda",
-     "blocos": [
-      239,
-      250
-     ],
-     "nota": "Plano integrado pactuado com municípios e continuidade/fortalecimento do IEMA."
-    },
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
      "blocos": [
@@ -1708,6 +1688,395 @@
      "nota": "Prevê proteção de dados/finalidade educacional, validação da linha de base, priorização territorial e uso do IEMA."
     }
    }
+  },
+  {
+   "id": "p75",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Levar o IEMA a todas as cidades, ampliando o ensino profissionalizante e em tempo integral para a juventude.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      132,
+      133
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p76",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Territorializar a educação profissional segundo as vocações e os investimentos de cada polo produtivo, organizando a oferta a partir dos mapas de demanda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1014,
+      1064,
+      1065,
+      1115
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p78",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Descentralizar a educação profissional, com cursos presenciais, unidades descentralizadas e modelos itinerantes para atender municípios pequenos, organizados por regiões econômicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1111,
+      1112
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p80",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Articular IEMA, universidades, Sistema S e instituições parceiras em uma rede de formação profissional orientada pela demanda, evitando duplicação de cursos e aproximando os currículos das competências requeridas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1075
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p82",
+   "subtema": "Ensino médio e tempo integral",
+   "proposta": "Garantir projeto de vida da 1ª à 3ª série do ensino médio, com catálogo de itinerários de qualidade e ao menos duas opções reais por rede regional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      911
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p83",
+   "subtema": "Alfabetização e educação de jovens e adultos",
+   "proposta": "Consolidar e interiorizar o Pacto pela Alfabetização na Idade Certa, com formação de alfabetizadores, material por criança, avaliação de fluência duas vezes por ano com devolutiva em 60 dias e assessoria intensiva onde os resultados forem mais baixos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      900
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p84",
+   "subtema": "Alfabetização e educação de jovens e adultos",
+   "proposta": "Unir entidades para ensinar jovens e adultos a ler e escrever e acabar com o analfabetismo em todo o estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      272
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p85",
+   "subtema": "Alfabetização e educação de jovens e adultos",
+   "proposta": "Alfabetizar adultos em turmas comunitárias, com EJA modular integrada à formação profissional e busca ativa por CRAS, sindicatos e igrejas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      959
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p86",
+   "subtema": "Alfabetização e educação de jovens e adultos",
+   "proposta": "Implantar programa estadual de alfabetização de jovens e adultos com turmas próximas aos povoados e locais de trabalho, prioridade à zona rural e meta de reduzir a taxa de analfabetismo a 8% ou menos até 2030.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1081,
+      2448,
+      2451
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p87",
+   "subtema": "Permanência, busca ativa e proteção",
+   "proposta": "Criar sistema de alerta precoce e busca ativa com frequência digital: análise humana em 48 horas, primeira resposta em 7 dias e acompanhamento por 6 meses do estudante reintegrado, integrado à plataforma Busca Ativa Escolar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      944
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p88",
+   "subtema": "Permanência, busca ativa e proteção",
+   "proposta": "Criar sistema de alerta precoce contra o abandono escolar, reunindo indicadores de frequência, queda de desempenho e fatores sociais, com proteção de dados e acionamento de políticas de permanência quando o risco for econômico.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1091,
+      1092,
+      1094
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p89",
+   "subtema": "Inclusão e diversidade",
+   "proposta": "Ampliar a rede de escolas de ensino médio em tempo integral, com inclusão e respeito à diversidade dos estudantes indígenas, quilombolas e afrodescendentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      249
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p90",
+   "subtema": "Educação infantil e creches",
+   "proposta": "Construir creches de tempo integral em parceria com os municípios, priorizando as regiões de maior vulnerabilidade social e menor atendimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      88,
+      90,
+      92
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p91",
+   "subtema": "Educação infantil e creches",
+   "proposta": "Ampliar a oferta de creches e pré-escolas, inclusive em tempo integral, apoiando técnica e financeiramente os municípios na construção, modernização, equipamentos e capacitação profissional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      247,
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p92",
+   "subtema": "Educação infantil e creches",
+   "proposta": "Expandir creche e pré-escola de forma articulada à demanda territorial e à autonomia econômica das famílias, relacionando a expansão a indicadores de participação feminina no mercado de trabalho, gravidez na adolescência, abandono escolar e vulnerabilidade social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1552,
+      2362
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p93",
+   "subtema": "Infraestrutura, alimentação e conectividade",
+   "proposta": "Levar internet a todas as escolas, atendendo primeiro as rurais, com banda por aluno, Wi-Fi nas salas, energia solar onde falta rede e satélite onde não chega fibra.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      964
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p94",
+   "subtema": "Infraestrutura, alimentação e conectividade",
+   "proposta": "Avançar da escola conectada ao estudante conectado, medindo qualidade da conexão, utilização e capacidade de acesso dos estudantes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      1097,
+      1121
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p44"
+  },
+  {
+   "id": "p95",
+   "subtema": "Avaliação, metas e gestão escolar",
+   "proposta": "Melhorar a aprendizagem na rede estadual e elevar o IDEB.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      100
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
+  },
+  {
+   "id": "p96",
+   "subtema": "Avaliação, metas e gestão escolar",
+   "proposta": "Fortalecer o programa de reforço escolar no Ensino Médio da rede pública, com ênfase em português e matemática.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      260,
+      261
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p97",
+   "subtema": "Avaliação, metas e gestão escolar",
+   "proposta": "Realizar diagnóstico de aprendizagem em março e formar grupos temporários de reforço por habilidade, com avaliação de acolhimento e plano de nivelamento para estudantes transferidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      902,
+      904
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p49"
+  },
+  {
+   "id": "p98",
+   "subtema": "Regime de colaboração com municípios",
+   "proposta": "Elaborar e implementar, em parceria com os municípios, o Plano Integrado da Educação Básica do Maranhão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      239
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p53"
+  },
+  {
+   "id": "p99",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Ampliar a rede IEMA com educação profissional integrada ao ensino médio e cursos técnicos alinhados às vocações econômicas regionais e à inserção dos jovens no mercado de trabalho.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      111,
+      113,
+      118,
+      120,
+      122
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p67"
+  },
+  {
+   "id": "p100",
+   "subtema": "Educação profissional e técnica",
+   "proposta": "Abrir curso técnico somente com demanda comprovada, estágio, laboratório e professor definidos, avaliando cada curso pelo emprego dos egressos em painel público, e criar portal único da oferta técnica por cidade e curso com comitê SEDUC, IEMA, IFMA e Sistema S.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      916,
+      918
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p67"
   }
  ],
  "blocos": {
@@ -2162,10 +2531,6 @@
     "texto": "24.\tAtendimento Educacional Especializado - Municípios | Apoiar municípios para a implantação de Salas de Recursos Multifuncionais (SRMs) e a capacitação de profissionais de apoio para atuação no Atendimento Educacional Especializado (AEE) em escolas de Ensino Fundamental.",
     "pagina": 16
    },
-   "270": {
-    "texto": "25.\tSmart EJA | Fortalecer a Educação de Jovens e Adultos, incluindo programa de letramento digital e segurança online para mais gente.",
-    "pagina": 16
-   },
    "271": {
     "texto": "26.\tEducação do Campo | Assegurar a qualidade do ensino nas escolas estaduais da zona rural, a partir da oferta de educação do campo voltada à promoção da cidadania, inclusão socioprodutiva e desenvolvimento sustentável, observando características identitárias e ambientais.",
     "pagina": 16
@@ -2434,10 +2799,6 @@
    },
    "2362": {
     "texto": "Expansão de creche e pré-escola articulada à demanda territorial e à autonomia econômica das famílias.",
-    "pagina": 153
-   },
-   "2363": {
-    "texto": "Ambientes escolares seguros, esporte, cultura e prevenção à violência.",
     "pagina": 153
    },
    "2367": {

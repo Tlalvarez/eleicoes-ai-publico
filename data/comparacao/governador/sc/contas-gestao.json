@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-sc.json",
   "gerado_em": "2026-09-14T18:16:45Z",
-  "exportado_em": "2026-09-14T18:27:49Z"
+  "exportado_em": "2026-09-16T20:04:59Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p1",
    "subtema": "Transparência e combate à corrupção",
-   "proposta": "Ampliar a transparência ativa do governo estadual, com portais de fácil acesso e divulgação ampla de contratos, despesas e resultados",
+   "proposta": "Ampliar a transparência ativa do governo estadual",
    "n_concorda": 3,
    "posicoes": {
     "governador-sc-marcelo-brigadeiro-240002544118": {
@@ -311,7 +311,13 @@
      "blocos": [
       70
      ],
-     "nota": "Corte de 25% na administração direta e indireta"
+     "nota": "Corte de 25% na administração direta e indireta",
+     "metas": [
+      {
+       "rotulo": "redução de cargos comissionados",
+       "valor": "25% na administração direta e indireta"
+      }
+     ]
     },
     "governador-sc-professor-marcus-sodre-240002541913": {
      "posicao": "concorda",
@@ -610,20 +616,13 @@
    "id": "p27",
    "subtema": "Digitalização e desburocratização",
    "proposta": "Medir resultados e a satisfação do usuário dos serviços públicos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
      "blocos": [
       103,
       110
-     ],
-     "nota": ""
-    },
-    "governador-sc-gelson-merisio-240002548628": {
-     "posicao": "concorda",
-     "blocos": [
-      287
      ],
      "nota": ""
     }
@@ -768,7 +767,7 @@
    "id": "p35",
    "subtema": "Orçamento, receitas e política fiscal",
    "proposta": "Adotar política fiscal austera, com controle rigoroso das despesas de custeio e qualificação dos gastos públicos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-joao-rodrigues-240002551001": {
      "posicao": "concorda",
@@ -778,14 +777,6 @@
       89,
       127,
       130
-     ],
-     "nota": ""
-    },
-    "governador-sc-marcelo-brigadeiro-240002544118": {
-     "posicao": "concorda",
-     "blocos": [
-      71,
-      104
      ],
      "nota": ""
     }
@@ -819,7 +810,13 @@
       64,
       90
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "recursos próprios para investimento",
+       "valor": "R$ 40,5 bilhões no quadriênio"
+      }
+     ]
     }
    }
   },
@@ -1013,7 +1010,7 @@
    "id": "p49",
    "subtema": "Participação social e controle social",
    "proposta": "Fortalecer e ampliar os mecanismos permanentes de participação social: conselhos, conferências, audiências, fóruns regionais e consultas públicas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-sc-gelson-merisio-240002548628": {
      "posicao": "concorda",
@@ -1031,13 +1028,6 @@
       2163
      ],
      "nota": ""
-    },
-    "governador-sc-joao-rodrigues-240002551001": {
-     "posicao": "concorda",
-     "blocos": [
-      323
-     ],
-     "nota": "Menciona participação qualificada da sociedade civil na gestão"
     }
    }
   },
@@ -1367,6 +1357,42 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p67",
+   "subtema": "Transparência e combate à corrupção",
+   "proposta": "Ampliar os mecanismos de transparência ativa, a prestação de contas e o acesso a informações e dados públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-gelson-merisio-240002548628": {
+     "posicao": "concorda",
+     "blocos": [
+      279,
+      290,
+      2088,
+      2171
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p68",
+   "subtema": "Orçamento, receitas e política fiscal",
+   "proposta": "Reduzir gradualmente as despesas e custos administrativos do governo estadual, começando por um corte de 10%, para diminuir desperdícios e ampliar a eficiência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-sc-marcelo-brigadeiro-240002544118": {
+     "posicao": "concorda",
+     "blocos": [
+      71,
+      104
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
   }
  ],
  "blocos": {
@@ -1469,10 +1495,6 @@
    },
    "286": {
     "texto": "- Expandir a digitalização dos serviços estaduais.",
-    "pagina": 13
-   },
-   "287": {
-    "texto": "- Melhorar a qualidade do atendimento ao cidadão.",
     "pagina": 13
    },
    "288": {

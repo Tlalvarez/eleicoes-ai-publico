@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "contas-gestao-ba.json",
   "gerado_em": "2026-09-14T01:32:17Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T18:36:46Z"
  },
  "candidatos": [
   {
@@ -151,7 +151,7 @@
    "id": "p6",
    "subtema": "Transparência e controle",
    "proposta": "Instituir política de dados abertos e painel público de transparência e desempenho da gestão estadual",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
      "posicao": "concorda",
@@ -167,21 +167,13 @@
       3484
      ],
      "nota": "Plano de dados abertos e publicação semestral de resultados e metas"
-    },
-    "governador-ba-ronaldo-mansur-50002532269": {
-     "posicao": "concorda",
-     "blocos": [
-      294,
-      295
-     ],
-     "nota": "Garantia de cumprimento da Lei de Acesso à Informação"
     }
    }
   },
   {
    "id": "p7",
    "subtema": "Transparência e controle",
-   "proposta": "Reestruturar e fortalecer os órgãos de controle interno, auditoria e fiscalização, com prazos e cobrança de cumprimento",
+   "proposta": "Fortalecer os órgãos de controle.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
@@ -390,7 +382,7 @@
    "id": "p19",
    "subtema": "Servidores, folha e carreiras",
    "proposta": "Reformar o plano de assistência à saúde dos servidores (Planserv) para reequilíbrio financeiro e controle estrutural de custos",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ba-acm-neto-50002533190": {
      "posicao": "concorda",
@@ -399,20 +391,13 @@
       3477
      ],
      "nota": "Trata como obrigação legal diante do déficit e da falta de estudo atuarial"
-    },
-    "governador-ba-jeronimo-rodrigues-50002536314": {
-     "posicao": "concorda",
-     "blocos": [
-      1126
-     ],
-     "nota": "Fortalecimento com ampliação de cobertura e qualificação da gestão de custos"
     }
    }
   },
   {
    "id": "p20",
    "subtema": "Participação social e orçamento",
-   "proposta": "Manter e ampliar instâncias de participação social na formulação das políticas públicas (conselhos, conferências e planejamento participativo)",
+   "proposta": "Manter instâncias de participação social na formulação das políticas públicas, entre elas os conselhos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -502,7 +487,7 @@
   {
    "id": "p25",
    "subtema": "Planejamento e governança",
-   "proposta": "Fortalecer o planejamento estadual de longo prazo com monitoramento, avaliação e governança integrada",
+   "proposta": "Fortalecer o planejamento estadual com governança integrada entre as áreas de governo.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ba-jeronimo-rodrigues-50002536314": {
@@ -689,6 +674,91 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p35",
+   "subtema": "Transparência e controle",
+   "proposta": "Fortalecer o Ministério Público, outros órgãos fiscalizadores e as carreiras de auditoria e fiscalização, com apoio à sua profissionalização e garantia do cumprimento da Lei de Acesso à Informação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      204,
+      294,
+      295
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p36",
+   "subtema": "Servidores, folha e carreiras",
+   "proposta": "Fortalecer o Planserv, ampliando a cobertura assistencial, qualificando a gestão de custos e incorporando tecnologias para um atendimento mais ágil e de qualidade aos beneficiários.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      1126
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p37",
+   "subtema": "Participação social e orçamento",
+   "proposta": "Manter os espaços de participação social — Programa de Governo Participativo, PPA Participativo, conferências e conselhos — na construção coletiva das políticas públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-jeronimo-rodrigues-50002536314": {
+     "posicao": "concorda",
+     "blocos": [
+      728,
+      1104
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p38",
+   "subtema": "Planejamento e governança",
+   "proposta": "Instituir um planejamento estadual efetivo que oriente os investimentos de longo prazo e subordine transporte, expansão imobiliária e uso do solo, com um Conselho de Desenvolvimento responsável pelas diretrizes gerais e planejamento intersetorial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-ronaldo-mansur-50002532269": {
+     "posicao": "concorda",
+     "blocos": [
+      183,
+      184
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
+  },
+  {
+   "id": "p39",
+   "subtema": "Planejamento e governança",
+   "proposta": "Organizar o governo em torno de resultados que atravessam pastas, com metas compartilhadas, orçamento coordenado e aferição do desempenho pelo conjunto da ação governamental.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ba-acm-neto-50002533190": {
+     "posicao": "concorda",
+     "blocos": [
+      1097,
+      1105
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
   }
  ],
  "blocos": {

@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-pb.json",
   "gerado_em": "2026-09-14T07:23:20Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -60,7 +60,7 @@
   {
    "id": "p1",
    "subtema": "Rodovias e malha viária",
-   "proposta": "Ampliar, modernizar e recuperar a malha rodoviária estadual, priorizando corredores logísticos que ligam a produção aos mercados",
+   "proposta": "Melhorar a malha rodoviária estadual.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -121,7 +121,7 @@
   {
    "id": "p3",
    "subtema": "Rodovias e malha viária",
-   "proposta": "Incorporar a segurança viária como critério de gestão das rodovias, com sinalização moderna nos trechos críticos",
+   "proposta": "Implantar sinalização nas rodovias, visando à segurança viária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -294,7 +294,7 @@
   {
    "id": "p13",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Apoiar os municípios na elaboração e implementação de planos de mobilidade urbana inclusiva",
+   "proposta": "Apoiar os municípios na elaboração de planos de mobilidade urbana inclusiva.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
@@ -582,16 +582,9 @@
   {
    "id": "p29",
    "subtema": "Obras estruturantes",
-   "proposta": "Concluir e destravar as grandes obras estruturantes paralisadas ou em ritmo lento",
-   "n_concorda": 2,
+   "proposta": "Destravar obras públicas paradas ou em ritmo lento.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pb-lucas-ribeiro-150002551789": {
-     "posicao": "concorda",
-     "blocos": [
-      200
-     ],
-     "nota": ""
-    },
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
      "blocos": [
@@ -600,6 +593,56 @@
      "nota": "Manter projeto pronto para destravar obra parada"
     }
    }
+  },
+  {
+   "id": "p31",
+   "subtema": "Rodovias e malha viária",
+   "proposta": "Executar plano de recapeamento e sinalização da malha rodoviária estadual, com defensas metálicas e adequação geométrica nas serras de maior risco, para reduzir as mortes no trânsito.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      224,
+      1156,
+      1172
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p32",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Apoiar os municípios na elaboração de planos de mobilidade urbana inclusiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      208
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p33",
+   "subtema": "Obras estruturantes",
+   "proposta": "Concluir as grandes obras estruturantes do Estado, com planejamento e investimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-lucas-ribeiro-150002551789": {
+     "posicao": "concorda",
+     "blocos": [
+      200
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
   }
  ],
  "blocos": {

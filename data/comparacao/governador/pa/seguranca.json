@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "seguranca-pa.json",
   "gerado_em": "2026-09-14T03:11:05Z",
-  "exportado_em": "2026-09-14T07:02:20Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -62,7 +62,13 @@
       420,
       421
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "delegacias especializadas",
+       "valor": "em todos os municípios do Pará, 24h"
+      }
+     ]
     },
     "governador-pa-well-macedo-140002554108": {
      "posicao": "concorda",
@@ -160,7 +166,7 @@
   {
    "id": "p5",
    "subtema": "Violência contra a mulher",
-   "proposta": "Garantir o cumprimento prioritário das medidas protetivas e dos mandados contra agressores",
+   "proposta": "Garantir o cumprimento das medidas protetivas contra agressores",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -248,7 +254,7 @@
    "id": "p9",
    "subtema": "Violência contra a mulher",
    "proposta": "Tratar o enfrentamento à violência doméstica e ao feminicídio como prioridade permanente, com rede integrada de atendimento às vítimas",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -265,13 +271,6 @@
       849
      ],
      "nota": "Inclui crianças, idosos e pessoas com deficiência"
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      333
-     ],
-     "nota": "Foco na aplicação e ampliação da Lei Maria da Penha"
     }
    }
   },
@@ -584,7 +583,7 @@
   {
    "id": "p26",
    "subtema": "Prevenção social da violência",
-   "proposta": "Adotar modelo de segurança comunitária, com força policial próxima e sob controle da comunidade",
+   "proposta": "Adotar modelo de segurança comunitária.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
@@ -663,8 +662,8 @@
   {
    "id": "p30",
    "subtema": "Inteligência, tecnologia e integração das forças",
-   "proposta": "Fortalecer a inteligência policial e a investigação qualificada como base da política de segurança",
-   "n_concorda": 3,
+   "proposta": "Fortalecer a inteligência policial na política de segurança",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pa-hana-ghassan-140002551598": {
      "posicao": "concorda",
@@ -682,14 +681,6 @@
       1543
      ],
      "nota": ""
-    },
-    "governador-pa-araceli-140002542386": {
-     "posicao": "concorda",
-     "blocos": [
-      465,
-      466
-     ],
-     "nota": "Inteligência associada à redução da letalidade policial"
     }
    }
   },
@@ -697,16 +688,8 @@
    "id": "p31",
    "subtema": "Inteligência, tecnologia e integração das forças",
    "proposta": "Promover a atuação integrada e o compartilhamento de informações entre as polícias e demais órgãos do sistema de segurança",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pa-hana-ghassan-140002551598": {
-     "posicao": "concorda",
-     "blocos": [
-      244,
-      251
-     ],
-     "nota": ""
-    },
     "governador-pa-dr-daniel-140002549930": {
      "posicao": "concorda",
      "blocos": [
@@ -1086,7 +1069,7 @@
    "id": "p52",
    "subtema": "Letalidade e controle da atividade policial",
    "proposta": "Criar política de redução da letalidade e da violência policial, com protocolos criteriosos de uso da força e fiscalização independente",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pa-araceli-140002542386": {
      "posicao": "concorda",
@@ -1096,14 +1079,6 @@
       468
      ],
      "nota": ""
-    },
-    "governador-pa-well-macedo-140002554108": {
-     "posicao": "concorda",
-     "blocos": [
-      335,
-      397
-     ],
-     "nota": "Associa o fim da violência policial ao fim da PM"
     }
    }
   },
@@ -1377,6 +1352,92 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p69",
+   "subtema": "Violência contra a mulher",
+   "proposta": "Garantir o cumprimento e fortalecer a fiscalização das medidas protetivas com uso de tecnologia de monitoramento de vítimas e agressores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      250,
+      446
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p70",
+   "subtema": "Prevenção social da violência",
+   "proposta": "Implementar política integrada de presença permanente do Estado, baseada em segurança comunitária e na oferta de esporte, lazer, cultura e formação profissional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-araceli-140002542386": {
+     "posicao": "concorda",
+     "blocos": [
+      472,
+      473,
+      474
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
+  },
+  {
+   "id": "p71",
+   "subtema": "Inteligência, tecnologia e integração das forças",
+   "proposta": "Ampliar o uso da inteligência policial, modernizar a infraestrutura e valorizar os profissionais de segurança, com mais presença das forças no campo, nos rios e nas cidades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      41,
+      187
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p72",
+   "subtema": "Inteligência, tecnologia e integração das forças",
+   "proposta": "Integrar as forças de segurança no combate ao crime organizado, com uso de inteligência avançada e financeira, monitoramento ampliado no estado e modernização do Sistema Estadual de Planejamento Operacional Integrado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-hana-ghassan-140002551598": {
+     "posicao": "concorda",
+     "blocos": [
+      244,
+      251
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p73",
+   "subtema": "Letalidade e controle da atividade policial",
+   "proposta": "Acabar com a violência policial e o genocídio da juventude negra, desmilitarizando a Polícia Militar e criando uma força de segurança única e civil, controlada pelos trabalhadores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pa-well-macedo-140002554108": {
+     "posicao": "concorda",
+     "blocos": [
+      335,
+      397
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p52"
   }
  ],
  "blocos": {
@@ -1519,14 +1580,6 @@
    },
    "460": {
     "texto": "36 - CRIAÇÃO DE POLÍTICA DE REDUÇÃO DA LETALIDADE POLICIAL, COM O INVESTIMENTO",
-    "pagina": 20
-   },
-   "465": {
-    "texto": "INTELIGÊNCIA",
-    "pagina": 20
-   },
-   "466": {
-    "texto": "POLICIAL,",
     "pagina": 20
    },
    "467": {

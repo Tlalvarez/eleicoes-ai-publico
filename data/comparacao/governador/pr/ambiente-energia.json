@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-pr.json",
   "gerado_em": "2026-09-14T05:51:38Z",
-  "exportado_em": "2026-09-14T06:41:52Z"
+  "exportado_em": "2026-09-16T21:46:21Z"
  },
  "candidatos": [
   {
@@ -76,7 +76,7 @@
   {
    "id": "p2",
    "subtema": "Energia e transição energética",
-   "proposta": "Apoiar projetos de hidrogênio de baixo carbono e posicioná-lo como plataforma industrial",
+   "proposta": "Apoiar projetos de hidrogênio de baixo carbono.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -523,7 +523,7 @@
   {
    "id": "p24",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Converter resíduos em energia e insumos (biogás, biometano, fertilizantes), com biodigestão e compostagem",
+   "proposta": "Converter resíduos em biogás para uso como energia.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -747,7 +747,7 @@
   {
    "id": "p36",
    "subtema": "Conservação, biodiversidade e unidades de conservação",
-   "proposta": "Proteger e conservar os biomas, a biodiversidade e a base natural do estado como política permanente",
+   "proposta": "Proteger e conservar os biomas e a base natural do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-pr-sergio-moro-160002540833": {
@@ -794,7 +794,7 @@
   {
    "id": "p38",
    "subtema": "Conservação, biodiversidade e unidades de conservação",
-   "proposta": "Recuperar áreas degradadas, matas ciliares e nascentes por meio de restauração florestal",
+   "proposta": "Recuperar áreas degradadas",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -923,7 +923,7 @@
   {
    "id": "p45",
    "subtema": "Conservação, biodiversidade e unidades de conservação",
-   "proposta": "Apoiar produtores, cooperativas e trabalhadores na transição para uma produção agropecuária sustentável e de baixo carbono",
+   "proposta": "Apoiar a transição para uma produção agropecuária sustentável.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pr-requiao-filho-160002547666": {
@@ -1106,6 +1106,103 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p55",
+   "subtema": "Energia e transição energética",
+   "proposta": "Apoiar a expansão do hidrogênio verde e projetos de geração de hidrogênio, junto a baterias e outras soluções de segurança energética.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      1304,
+      1697
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p56",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Aproveitar o biogás gerado em aterros sanitários como energia elétrica ou combustível para caminhões de coleta e transporte coletivo, apoiando municípios e consórcios na coleta seletiva e no reaproveitamento de materiais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      1546
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p57",
+   "subtema": "Conservação, biodiversidade e unidades de conservação",
+   "proposta": "Preservar e proteger o bioma e as riquezas naturais do estado, com planejamento sustentável que alie desenvolvimento e respeito ao meio ambiente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      96
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p58",
+   "subtema": "Conservação, biodiversidade e unidades de conservação",
+   "proposta": "Recuperar áreas degradadas, remunerar serviços ambientais e apoiar produtores, cooperativas e trabalhadores na transição ecológica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-requiao-filho-160002547666": {
+     "posicao": "concorda",
+     "blocos": [
+      178
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p38"
+  },
+  {
+   "id": "p60",
+   "subtema": "Conservação, biodiversidade e unidades de conservação",
+   "proposta": "Criar um mecanismo estadual de finanças híbridas, que combine recursos públicos, crédito e capital privado, para financiar projetos de agropecuária sustentável, bioeconomia e recuperação de áreas degradadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sergio-moro-160002540833": {
+     "posicao": "concorda",
+     "blocos": [
+      1310
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
+  },
+  {
+   "id": "p61",
+   "subtema": "Conservação, biodiversidade e unidades de conservação",
+   "proposta": "Mobilizar financiamento verde e climático para agricultura de baixo carbono, bioeconomia e economia circular.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pr-sandro-alex-160002549553": {
+     "posicao": "concorda",
+     "blocos": [
+      1460
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p45"
   }
  ],
  "blocos": {

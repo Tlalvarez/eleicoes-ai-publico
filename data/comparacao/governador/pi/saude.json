@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-pi.json",
   "gerado_em": "2026-09-14T10:32:46Z",
-  "exportado_em": "2026-09-14T23:10:53Z"
+  "exportado_em": "2026-09-16T21:46:13Z"
  },
  "candidatos": [
   {
@@ -44,7 +44,7 @@
    "id": "p1",
    "subtema": "Organização e gestão da rede estadual",
    "proposta": "Reorganizar a rede estadual de saúde, ampliando sua capacidade de atendimento e a resolutividade dos serviços.",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pi-dra-lucia-santos-180002544216": {
      "posicao": "concorda",
@@ -53,13 +53,6 @@
       63
      ],
      "nota": "Parte de diagnóstico de colapso, filas e superlotação, sem detalhar instrumentos"
-    },
-    "governador-pi-rafael-fonteles-180002532987": {
-     "posicao": "concorda",
-     "blocos": [
-      321
-     ],
-     "nota": "Continuidade e aprofundamento do modelo atual"
     },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
@@ -92,7 +85,7 @@
   {
    "id": "p3",
    "subtema": "Organização e gestão da rede estadual",
-   "proposta": "Ampliar a regionalização da assistência, garantindo atendimento no ponto adequado e reduzindo a dependência da capital.",
+   "proposta": "Ampliar a regionalização da assistência.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -224,7 +217,13 @@
       345,
       355
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "espera consultas e exames",
+       "valor": "10 dias; cirurgias eletivas 20 dias"
+      }
+     ]
     },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
@@ -299,16 +298,8 @@
    "id": "p14",
    "subtema": "Filas, regulação e acesso a especialidades",
    "proposta": "Ampliar a oferta regional de atendimento ambulatorial especializado próximo à residência do usuário.",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-pi-rafael-fonteles-180002532987": {
-     "posicao": "concorda",
-     "blocos": [
-      37,
-      321
-     ],
-     "nota": ""
-    },
     "governador-pi-joel-rodrigues-180002538530": {
      "posicao": "concorda",
      "blocos": [
@@ -584,7 +575,7 @@
   {
    "id": "p29",
    "subtema": "Saúde mental",
-   "proposta": "Implantar política de saúde mental nas escolas da rede estadual, com equipes e fluxos de identificação e encaminhamento.",
+   "proposta": "Implantar política de saúde mental no âmbito da rede estadual de educação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -886,7 +877,7 @@
   {
    "id": "p46",
    "subtema": "Diagnóstico e laboratórios",
-   "proposta": "Modernizar o LACEN e ampliar sua capacidade diagnóstica, reduzindo o tempo de resposta dos exames prioritários.",
+   "proposta": "Modernizar o LACEN e ampliar sua capacidade diagnóstica.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -925,7 +916,7 @@
   {
    "id": "p48",
    "subtema": "Telessaúde",
-   "proposta": "Ampliar o uso da telessaúde para levar atendimento especializado a todos os municípios.",
+   "proposta": "Ampliar o uso da telessaúde para levar atendimento especializado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
@@ -982,8 +973,8 @@
   {
    "id": "p51",
    "subtema": "Linhas de cuidado e atenção especializada",
-   "proposta": "Ampliar a rede de Centros Especializados em Reabilitação e implantar centros de atendimento a pessoas com transtorno do espectro autista nas macrorregiões.",
-   "n_concorda": 2,
+   "proposta": "Ampliar a rede de Centros Especializados em Reabilitação e implantar centros de atendimento a pessoas com transtorno do espectro autista nas macrorregiões de saúde.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-pi-rafael-fonteles-180002532987": {
      "posicao": "concorda",
@@ -991,15 +982,6 @@
       860
      ],
      "nota": ""
-    },
-    "governador-pi-joel-rodrigues-180002538530": {
-     "posicao": "concorda",
-     "blocos": [
-      646,
-      649,
-      1968
-     ],
-     "nota": "Integração de CETEA, CERs e salas de estimulação em rede estadual regionalizada"
     }
    }
   },
@@ -1314,7 +1296,7 @@
   {
    "id": "p70",
    "subtema": "Rede hospitalar e urgência",
-   "proposta": "Fortalecer o Hospital Lucídio Portella como referência pediátrica estadual, com urgência, internação, UTI pediátrica, cirurgia pediátrica, neurocirurgia, ortopedia e especialidades infantis, mediante plano com obras, equipamentos, força de trabalho, ensino e residência, metas contratuais e integração à regulação, implantação faseada e custeio permanente",
+   "proposta": "Fortalecer o Hospital Lucídio Portella como referência pediátrica estadual, com urgência, internação, UTI, cirurgia pediátrica e especialidades infantis, em implantação faseada.",
    "n_concorda": 1,
    "posicoes": {
     "governador-pi-joel-rodrigues-180002538530": {
@@ -1325,6 +1307,124 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p72",
+   "subtema": "Organização e gestão da rede estadual",
+   "proposta": "Ampliar a regionalização da assistência à saúde, modernizar os hospitais estaduais e fortalecer a vigilância em saúde.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      321
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p73",
+   "subtema": "Filas, regulação e acesso a especialidades",
+   "proposta": "Ampliar a regionalização da assistência especializada, com Centrais de Exames nas 28 microrregiões e tempo médio de espera de 10 dias por consultas especializadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      37,
+      321
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p74",
+   "subtema": "Saúde mental",
+   "proposta": "Implantar política de saúde mental com equipes multidisciplinares nas 21 Gerências Regionais de Educação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      378
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p75",
+   "subtema": "Diagnóstico e laboratórios",
+   "proposta": "Modernizar o LACEN-PI, fortalecer o controle de qualidade, ampliar a vigilância genômica e criar rede macrorregional de apoio para coleta, triagem e exames.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      678,
+      682
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p46"
+  },
+  {
+   "id": "p76",
+   "subtema": "Telessaúde",
+   "proposta": "Consolidar o Piauí Saúde Digital como política permanente de telessaúde, com meta de 10 dias de espera média por consultas especializadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-rafael-fonteles-180002532987": {
+     "posicao": "concorda",
+     "blocos": [
+      37,
+      334
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p48"
+  },
+  {
+   "id": "p77",
+   "subtema": "Telessaúde",
+   "proposta": "Requalificar o teleatendimento digital, ofertando novas especialidades, integrando o prontuário e tornando o atendimento mais resolutivo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      513,
+      516
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p48"
+  },
+  {
+   "id": "p78",
+   "subtema": "Linhas de cuidado e atenção especializada",
+   "proposta": "Reorganizar a política estadual de reabilitação, integrando CETEA, CER e salas de estimulação precoce em uma rede estadual regionalizada, com regulação, apoio matricial, teleatendimento e apoio às famílias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pi-joel-rodrigues-180002538530": {
+     "posicao": "concorda",
+     "blocos": [
+      646,
+      649,
+      1968
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p51"
   }
  ],
  "blocos": {

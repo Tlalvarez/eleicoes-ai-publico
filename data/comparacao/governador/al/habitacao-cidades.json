@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-al.json",
   "gerado_em": "2026-09-14T08:04:22Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -138,7 +138,7 @@
   {
    "id": "p5",
    "subtema": "Urbanização de periferias e grotas",
-   "proposta": "Implantar política estadual de urbanização integrada de grotas, periferias e bairros vulneráveis, com infraestrutura, equipamentos e serviços",
+   "proposta": "Implantar política de urbanização integrada de bairros, com infraestrutura e equipamentos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -251,15 +251,8 @@
    "id": "p11",
    "subtema": "Financiamento e subsídio à casa própria",
    "proposta": "Criar mecanismo estadual de financiamento ou subsídio para aquisição da casa própria por famílias de baixa renda",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-al-marcio-jambo-20002552502": {
-     "posicao": "concorda",
-     "blocos": [
-      48
-     ],
-     "nota": "Estudo de linhas de financiamento via futuro Banco do Estado"
-    },
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
      "blocos": [
@@ -442,6 +435,25 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p22",
+   "subtema": "Urbanização de periferias e grotas",
+   "proposta": "Implantar o Bairro Empreendedor e uma rede de bairros inteligentes, com urbanização integrada, iluminação, acessibilidade, conectividade, áreas de convivência, equipamentos públicos, apoio ao comércio local e participação dos moradores na definição das prioridades.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      630,
+      631,
+      632,
+      633
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
   }
  ],
  "blocos": {

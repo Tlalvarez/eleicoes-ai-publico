@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-ac.json",
   "gerado_em": "2026-09-14T10:10:27Z",
-  "exportado_em": "2026-09-14T10:22:19Z"
+  "exportado_em": "2026-09-16T21:44:39Z"
  },
  "candidatos": [
   {
@@ -51,7 +51,7 @@
   {
    "id": "p1",
    "subtema": "Infraestrutura esportiva e espaços de lazer",
-   "proposta": "Ampliar e revitalizar quadras, arenas e demais espaços públicos de esporte e lazer",
+   "proposta": "Ampliar os espaços públicos de esporte.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ac-tiao-bocalom-10002544015": {
@@ -113,7 +113,7 @@
   {
    "id": "p4",
    "subtema": "Esporte de rendimento e apoio a atletas",
-   "proposta": "Apoiar atletas acreanos na participação em competições estaduais, nacionais e internacionais, com suporte logístico de deslocamento",
+   "proposta": "Apoiar atletas acreanos na participação em competições nacionais",
    "n_concorda": 3,
    "posicoes": {
     "governador-ac-tiao-bocalom-10002544015": {
@@ -242,19 +242,12 @@
    "id": "p10",
    "subtema": "Esporte de rendimento e apoio a atletas",
    "proposta": "Ampliar a inclusão de pessoas com deficiência no esporte e apoiar o paradesporto",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
      "posicao": "concorda",
      "blocos": [
       559
-     ],
-     "nota": ""
-    },
-    "governador-ac-mailza-assis-10002544107": {
-     "posicao": "concorda",
-     "blocos": [
-      433
      ],
      "nota": ""
     }
@@ -263,7 +256,7 @@
   {
    "id": "p11",
    "subtema": "Acesso e descentralização do esporte e do lazer",
-   "proposta": "Regionalizar as políticas esportivas e ampliar o acesso ao esporte e ao lazer em todas as regiões e municípios do Estado",
+   "proposta": "Regionalizar as políticas esportivas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -419,14 +412,20 @@
       563,
       580
      ],
-     "nota": "No âmbito do Programa Cultura Viva Acre"
+     "nota": "No âmbito do Programa Cultura Viva Acre",
+     "metas": [
+      {
+       "rotulo": "abrangência dos editais",
+       "valor": "22 municípios, todas as regionais"
+      }
+     ]
     }
    }
   },
   {
    "id": "p20",
    "subtema": "Fomento e acesso à cultura",
-   "proposta": "Descentralizar a política cultural, ampliando o acesso da população à cultura em todos os municípios e regiões",
+   "proposta": "Descentralizar a política cultural e ampliar o acesso da população à cultura",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -435,7 +434,13 @@
       562,
       580
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "abrangência da política cultural",
+       "valor": "22 municípios"
+      }
+     ]
     },
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -495,7 +500,7 @@
   {
    "id": "p24",
    "subtema": "Patrimônio e diversidade cultural",
-   "proposta": "Valorizar a diversidade cultural acreana e fortalecer as manifestações culturais existentes em todas as regiões",
+   "proposta": "Valorizar a diversidade cultural acreana e fortalecer as manifestações culturais existentes.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ac-tiao-bocalom-10002544015": {
@@ -510,7 +515,13 @@
      "blocos": [
       562
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "manifestações culturais valorizadas",
+       "valor": "22 municípios"
+      }
+     ]
     },
     "governador-ac-mailza-assis-10002544107": {
      "posicao": "concorda",
@@ -542,7 +553,7 @@
   {
    "id": "p26",
    "subtema": "Economia criativa e audiovisual",
-   "proposta": "Apoiar a economia criativa, com fomento ao artesanato, à música, ao audiovisual e à gastronomia regional",
+   "proposta": "Apoiar a economia criativa.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ac-alan-rick-10002532492": {
@@ -653,6 +664,123 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p33",
+   "subtema": "Infraestrutura esportiva e espaços de lazer",
+   "proposta": "Ampliar a implantação de quadras esportivas cobertas, em parceria com prefeituras, federações e entidades afins.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      273
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p34",
+   "subtema": "Infraestrutura esportiva e espaços de lazer",
+   "proposta": "Ampliar os espaços de esporte, lazer e convivência comunitária, promovendo saúde, inclusão social e prevenção da violência.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      381,
+      395
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p35",
+   "subtema": "Esporte de rendimento e apoio a atletas",
+   "proposta": "Criar programa de apoio ao esporte de rendimento e ao paradesporto, com bolsas e apoio a atletas acreanos em competições estaduais e nacionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      433
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p36",
+   "subtema": "Acesso e descentralização do esporte e do lazer",
+   "proposta": "Organizar o território em cinco polos esportivos regionais e usar o esporte como ferramenta de desenvolvimento humano, social e territorial, da capital às comunidades ribeirinhas e indígenas do interior.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-alan-rick-10002532492": {
+     "posicao": "concorda",
+     "blocos": [
+      551,
+      557
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p37",
+   "subtema": "Fomento e acesso à cultura",
+   "proposta": "Fortalecer os sistemas estadual e municipais de cultura, com maior participação social e descentralização das políticas culturais, ampliando o acesso da população às atividades culturais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      76,
+      136
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p38",
+   "subtema": "Patrimônio e diversidade cultural",
+   "proposta": "Apoiar artistas e as manifestações culturais existentes, ampliar eventos culturais e divulgar a riqueza cultural do Estado nacional e internacionalmente.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-tiao-bocalom-10002544015": {
+     "posicao": "concorda",
+     "blocos": [
+      275
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p39",
+   "subtema": "Economia criativa e audiovisual",
+   "proposta": "Impulsionar a economia criativa e o turismo cultural, apoiando artistas, produtores culturais e empreendedores criativos, com geração de emprego e renda a partir da cultura.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ac-mailza-assis-10002544107": {
+     "posicao": "concorda",
+     "blocos": [
+      76,
+      89,
+      138
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p26"
   }
  ],
  "blocos": {

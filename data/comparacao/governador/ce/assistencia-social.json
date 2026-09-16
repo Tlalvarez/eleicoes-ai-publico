@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-ce.json",
   "gerado_em": "2026-09-14T04:53:09Z",
-  "exportado_em": "2026-09-14T23:10:49Z"
+  "exportado_em": "2026-09-16T21:45:08Z"
  },
  "candidatos": [
   {
@@ -35,7 +35,7 @@
   {
    "id": "p1",
    "subtema": "SUAS e gestão da assistência social",
-   "proposta": "Fortalecer o Sistema Único de Assistência Social (SUAS) como eixo estruturador da proteção social estadual",
+   "proposta": "Fortalecer o Sistema Único de Assistência Social (SUAS)",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -126,16 +126,9 @@
   {
    "id": "p5",
    "subtema": "SUAS e gestão da assistência social",
-   "proposta": "Adotar gestão da política social orientada por evidências, indicadores e avaliação permanente de resultados",
-   "n_concorda": 2,
+   "proposta": "Adotar gestão da política social baseada em evidências.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-ce-ciro-gomes-60002531351": {
-     "posicao": "concorda",
-     "blocos": [
-      113
-     ],
-     "nota": "Modelo de gestão com inteligência territorial e avaliação contínua"
-    },
     "governador-ce-elmano-de-freitas-60002543969": {
      "posicao": "concorda",
      "blocos": [
@@ -197,7 +190,7 @@
   {
    "id": "p8",
    "subtema": "População em situação de rua",
-   "proposta": "Articular a política para população em situação de rua com qualificação profissional e inclusão produtiva",
+   "proposta": "Articular a política para população em situação de rua com qualificação profissional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -220,7 +213,7 @@
   {
    "id": "p9",
    "subtema": "População em situação de rua",
-   "proposta": "Executar a política para população em situação de rua em parceria com municípios, Judiciário, Ministério Público, entidades religiosas, comunidades terapêuticas e sociedade civil",
+   "proposta": "Executar a política para a população em situação de rua.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -243,7 +236,7 @@
   {
    "id": "p10",
    "subtema": "Equipamentos e serviços socioassistenciais",
-   "proposta": "Ampliar e qualificar os equipamentos da rede socioassistencial (CRAS, CREAS, Centros POP e afins)",
+   "proposta": "Apoiar a qualificação da rede socioassistencial.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ce-ciro-gomes-60002531351": {
@@ -467,6 +460,72 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p24",
+   "subtema": "SUAS e gestão da assistência social",
+   "proposta": "Implantar na assistência social um modelo de gestão orientado por indicadores, inteligência territorial e avaliação permanente de resultados.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      113
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p25",
+   "subtema": "População em situação de rua",
+   "proposta": "Articular a política para população em situação de rua com acolhimento, tratamento da dependência química, acesso à documentação, qualificação profissional, moradia e reconstrução de vínculos familiares e comunitários, visando à reinserção social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-ciro-gomes-60002531351": {
+     "posicao": "concorda",
+     "blocos": [
+      117,
+      119
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p26",
+   "subtema": "População em situação de rua",
+   "proposta": "Ampliar o cofinanciamento, o apoio técnico, a articulação interfederativa e os serviços regionalizados de proteção social, saúde, qualificação profissional e inclusão produtiva para a população em situação de rua.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-elmano-de-freitas-60002543969": {
+     "posicao": "concorda",
+     "blocos": [
+      330
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p28",
+   "subtema": "SUAS e gestão da assistência social",
+   "proposta": "Fortalecer o SUAS ampliando progressivamente o cofinanciamento estadual, reforçando a regionalização dos serviços de proteção social especial e apoiando técnica e financeiramente os municípios na qualificação da rede socioassistencial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ce-elmano-de-freitas-60002543969": {
+     "posicao": "concorda",
+     "blocos": [
+      317,
+      318
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
   }
  ],
  "blocos": {

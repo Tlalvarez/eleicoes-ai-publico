@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-al.json",
   "gerado_em": "2026-09-14T08:03:37Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -69,7 +69,7 @@
   {
    "id": "p2",
    "subtema": "Universalização de água e esgoto",
-   "proposta": "Criar programa estadual estruturado de universalização de água e esgoto, com organização de projetos e captação de recursos",
+   "proposta": "Criar programa estadual estruturado de universalização do acesso à água e ao esgotamento sanitário",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -171,7 +171,7 @@
   {
    "id": "p6",
    "subtema": "Regulação e fiscalização das concessões",
-   "proposta": "Fortalecer a fiscalização e a regulação dos contratos das concessionárias de água e esgoto, exigindo cumprimento de metas e aplicação de penalidades",
+   "proposta": "Fortalecer a fiscalização e a regulação dos contratos das concessionárias de água e esgoto",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -236,7 +236,7 @@
   {
    "id": "p9",
    "subtema": "Regulação e fiscalização das concessões",
-   "proposta": "Estruturar novos blocos regionais/microrregionais de saneamento para os municípios ainda não concedidos",
+   "proposta": "Estruturar blocos regionais/microrregionais de saneamento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -260,7 +260,7 @@
   {
    "id": "p10",
    "subtema": "Segurança hídrica e convivência com a seca",
-   "proposta": "Levar a água do Canal do Sertão até comunidades, propriedades rurais e polos produtivos por meio de ramais, adutoras secundárias, bombeamento e perímetros irrigados",
+   "proposta": "Levar a água do Canal do Sertão até as comunidades e as propriedades rurais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -295,7 +295,13 @@
       660,
       661
      ],
-     "nota": "26,6 km entre São José da Tapera, Olho d'Água das Flores e Monteirópolis"
+     "nota": "26,6 km entre São José da Tapera, Olho d'Água das Flores e Monteirópolis",
+     "metas": [
+      {
+       "rotulo": "trecho 5 do canal",
+       "valor": "26,6 quilômetros"
+      }
+     ]
     }
    }
   },
@@ -343,7 +349,7 @@
   {
    "id": "p14",
    "subtema": "Redução de perdas na distribuição",
-   "proposta": "Implantar política permanente de redução das perdas de água na distribuição",
+   "proposta": "Reduzir as perdas de água na distribuição",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-jhc-20002553350": {
@@ -376,7 +382,13 @@
       675,
       676
      ],
-     "nota": "Atualização anual"
+     "nota": "Atualização anual",
+     "metas": [
+      {
+       "rotulo": "municípios apoiados",
+       "valor": "102 municípios, atualização anual"
+      }
+     ]
     }
    }
   },
@@ -396,6 +408,93 @@
      "nota": "Inclui potencial de bioenergia/biomassa"
     }
    }
+  },
+  {
+   "id": "p17",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Implementar o programa Alagoas 100% Saneada, integrando os 102 municípios à estratégia de universalização do saneamento por meio de soluções regionalizadas, novas concessões ou parcerias, com metas de universalização e qualidade dos serviços.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      640,
+      641,
+      642,
+      643,
+      644
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p18",
+   "subtema": "Regulação e fiscalização das concessões",
+   "proposta": "Auditar os contratos das concessões de água e esgoto, ampliar a fiscalização sobre sua execução e fortalecer a regulação do saneamento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      152,
+      163,
+      448
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p19",
+   "subtema": "Regulação e fiscalização das concessões",
+   "proposta": "Estruturar blocos microrregionais de saneamento, com auditoria das concessões de água e esgoto e fortalecimento da regulação, para acelerar a universalização.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      448
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p20",
+   "subtema": "Segurança hídrica e convivência com a seca",
+   "proposta": "Levar a água do Canal do Sertão a comunidades e propriedades por meio de obras de última milha, com ampliação de adutoras, reservação e sistemas estruturantes e criação de gestão própria do canal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-jhc-20002553350": {
+     "posicao": "concorda",
+     "blocos": [
+      447,
+      450
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p21",
+   "subtema": "Redução de perdas na distribuição",
+   "proposta": "Investir na rede de água e reduzir as perdas na distribuição.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      686
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-mt.json",
   "gerado_em": "2026-09-14T06:35:39Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T19:54:49Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Fomento cultural",
-   "proposta": "Financiar a produção cultural por meio de editais públicos regulares, transparentes e com calendário previsível",
+   "proposta": "Financiar a produção cultural por meio de editais públicos.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -91,15 +91,8 @@
    "id": "p2",
    "subtema": "Fomento cultural",
    "proposta": "Descentralizar e regionalizar os recursos do fomento cultural, evitando concentração na capital e nos grandes polos",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
-    "governador-mt-doutora-natasha-110002544985": {
-     "posicao": "concorda",
-     "blocos": [
-      188
-     ],
-     "nota": "Apoio aos movimentos culturais do interior"
-    },
     "governador-mt-wellington-fagundes-110002551737": {
      "posicao": "concorda",
      "blocos": [
@@ -189,7 +182,7 @@
   {
    "id": "p7",
    "subtema": "Esporte escolar e de base",
-   "proposta": "Ofertar iniciação e prática esportiva de base em escolas, bairros e projetos sociais",
+   "proposta": "Ofertar iniciação e prática esportiva de base nas escolas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -263,7 +256,7 @@
   {
    "id": "p10",
    "subtema": "Alto rendimento e apoio ao atleta",
-   "proposta": "Manter e ampliar o apoio financeiro ao atleta por meio de bolsas e auxílio para participação em competições",
+   "proposta": "Manter o apoio ao atleta.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mt-doutora-natasha-110002544985": {
@@ -354,7 +347,7 @@
   {
    "id": "p14",
    "subtema": "Paradesporto e inclusão",
-   "proposta": "Construir, manter e expandir centros de referência esportiva para pessoas com deficiência, inclusive no interior",
+   "proposta": "Manter e expandir centros de referência esportiva para pessoas com deficiência",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -561,7 +554,7 @@
   {
    "id": "p25",
    "subtema": "Esporte e políticas sociais",
-   "proposta": "Implementar projetos esportivos permanentes em áreas de vulnerabilidade social, articulados às políticas sociais",
+   "proposta": "Implementar projetos esportivos articulados às políticas sociais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mt-wellington-fagundes-110002551737": {
@@ -790,6 +783,88 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p39",
+   "subtema": "Fomento cultural",
+   "proposta": "Descentralizar o fomento à cultura, distribuindo os recursos dos editais para além da capital e dos grandes polos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      315,
+      316
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p40",
+   "subtema": "Esporte escolar e de base",
+   "proposta": "Fortalecer os Jogos Escolares e Estudantis com calendário permanente, integração ao currículo e treinamento no contraturno.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-wellington-fagundes-110002551737": {
+     "posicao": "concorda",
+     "blocos": [
+      639
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p7"
+  },
+  {
+   "id": "p41",
+   "subtema": "Alto rendimento e apoio ao atleta",
+   "proposta": "Levar esporte de base e paradesporto às escolas e aos bairros, com apoio ao atleta e aos jogos estudantis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-doutora-natasha-110002544985": {
+     "posicao": "concorda",
+     "blocos": [
+      188
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p42",
+   "subtema": "Paradesporto e inclusão",
+   "proposta": "Construir e manter centros de referência esportiva para pessoas com deficiência, com incentivo a competições paradesportivas e apoio a atletas classificados para disputas nacionais e internacionais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      304
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p43",
+   "subtema": "Esporte e políticas sociais",
+   "proposta": "Ofertar iniciação esportiva a crianças em escolas e projetos sociais, com atividades no contraturno escolar, identificando vulnerabilidades e encaminhando os casos à educação, à saúde e à assistência social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mt-otaviano-pivetta-110002551480": {
+     "posicao": "concorda",
+     "blocos": [
+      300,
+      356
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p25"
   }
  ],
  "blocos": {

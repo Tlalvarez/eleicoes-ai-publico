@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-al.json",
   "gerado_em": "2026-09-14T08:01:02Z",
-  "exportado_em": "2026-09-14T23:10:48Z"
+  "exportado_em": "2026-09-16T19:37:17Z"
  },
  "candidatos": [
   {
@@ -44,7 +44,7 @@
    "id": "p1",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Regionalizar a atenção especializada, garantindo consultas, exames, cirurgias e tratamento na própria região de saúde, reduzindo deslocamentos à capital",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
@@ -61,13 +61,6 @@
       186
      ],
      "nota": "Programa Saúde da Gente Alagoana com polos regionais"
-    },
-    "governador-al-marcio-jambo-20002552502": {
-     "posicao": "concorda",
-     "blocos": [
-      10
-     ],
-     "nota": "Ampliar acesso a serviços especializados, sem detalhar regionalização"
     }
    }
   },
@@ -91,7 +84,7 @@
    "id": "p3",
    "subtema": "Filas e regulação",
    "proposta": "Reduzir as filas de atendimento na rede estadual de saúde",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-al-marcio-jambo-20002552502": {
      "posicao": "concorda",
@@ -107,14 +100,6 @@
       186
      ],
      "nota": ""
-    },
-    "governador-al-renan-filho-20002553745": {
-     "posicao": "concorda",
-     "blocos": [
-      120,
-      122
-     ],
-     "nota": "Via monitoramento do tempo de espera no modelo de gestão regional"
     }
    }
   },
@@ -122,7 +107,7 @@
    "id": "p4",
    "subtema": "Filas e regulação",
    "proposta": "Criar regulação estadual única e transparente, com critérios técnicos auditáveis e acompanhamento público da fila",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-jhc-20002553350": {
      "posicao": "concorda",
@@ -132,13 +117,6 @@
       208
      ],
      "nota": "Fila Única para acabar com a 'carteirada'"
-    },
-    "governador-al-renan-filho-20002553745": {
-     "posicao": "concorda",
-     "blocos": [
-      90
-     ],
-     "nota": "Menciona regulação integrada, sem fila única transparente"
     }
    }
   },
@@ -289,7 +267,7 @@
   {
    "id": "p12",
    "subtema": "Rede materno-infantil",
-   "proposta": "Estruturar uma rede materno-infantil regionalizada, do pré-natal de alto risco ao pós-parto e ao recém-nascido",
+   "proposta": "Fortalecer a rede materno-infantil, do pré-natal de alto risco ao pós-parto e ao recém-nascido",
    "n_concorda": 2,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
@@ -384,7 +362,7 @@
    "id": "p17",
    "subtema": "Saúde da pessoa idosa",
    "proposta": "Criar política estadual de cuidado integral à pessoa idosa",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
@@ -394,13 +372,6 @@
       107
      ],
      "nota": "Prevenção de quedas, demência, cuidado domiciliar e apoio a cuidadores"
-    },
-    "governador-al-marcio-jambo-20002552502": {
-     "posicao": "concorda",
-     "blocos": [
-      11
-     ],
-     "nota": "Via hospital especializado no atendimento à pessoa idosa"
     }
    }
   },
@@ -495,7 +466,7 @@
    "id": "p23",
    "subtema": "Gestão e cofinanciamento com municípios",
    "proposta": "Implantar novo modelo de gestão regional da saúde com planejamento integrado Estado-municípios, cofinanciamento, protocolos únicos e metas de desempenho",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-al-renan-filho-20002553745": {
      "posicao": "concorda",
@@ -505,13 +476,6 @@
       122
      ],
      "nota": ""
-    },
-    "governador-al-jhc-20002553350": {
-     "posicao": "concorda",
-     "blocos": [
-      173
-     ],
-     "nota": "Cofinanciamento com padrão de qualidade como eixo transversal"
     }
    }
   },
@@ -665,6 +629,39 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p33",
+   "subtema": "Filas e regulação",
+   "proposta": "Garantir consulta, exame, tratamento, cirurgia e leito de referência na própria região de saúde, com regulação integrada e continuidade do cuidado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      90
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p34",
+   "subtema": "Rede materno-infantil",
+   "proposta": "Implantar o Hospital da Mulher em Arapiraca e fortalecer a rede estadual de atenção materno-infantil, do pré-natal de alto risco ao puerpério e aos primeiros anos da criança.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-al-renan-filho-20002553745": {
+     "posicao": "concorda",
+     "blocos": [
+      97,
+      98
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
   }
  ],
  "blocos": {
@@ -684,10 +681,6 @@
    "166": {
     "texto": "16. Acabar com a politização da fila da Saúde estadual: acesso com transparência e impessoalidade;",
     "pagina": 15
-   },
-   "173": {
-    "texto": "Este eixo trata do que acompanha a pessoa: nascer com segurança, crescer com estímulo e proteção, aprender na idade certa, ser atendida quando adoece e ter amparo quando precisar. A criança que não é acompanhada no pré-natal chega pior à creche; a que não é alfabetizada no tempo certo abandona o ensino médio; a família que é atendida cinco vezes por políticas públicas que não se falam permanece no mesmo lugar. Por isso, a gestão integrada de casos, a busca ativa e o cofinanciamento com padrão de qualidade atravessam todas as áreas que dizem respeito a essa dimensão:",
-    "pagina": 17
    },
    "176": {
     "texto": "O Plano de Governo propõe organizar a atenção especializada em rede regional, com regulação transparente e percurso acompanhado do pedido até a alta, para que o alagoano do interior não dependa de viajar à capital para ser atendido. Mais do que isso: vamos acabar com a politização das filas da saúde, isto é, com as “carteiradas”, assim como fizemos em Maceió. O objetivo das propostas é garantir que todo alagoano tenha acesso a atendimento de saúde no tempo certo e o mais perto possível de onde vive, reduzindo filas, deslocamentos até a capital e desigualdades entre a capital e o interior. A prioridade é organizar a rede estadual a partir das regiões de saúde, levando especialistas, exames, cirurgias, medicamentos e profissionais para mais perto da população e criando mecanismos transparentes de regulação e acompanhamento - afinal, o acesso à saúde é um direito de todo alagoano, e não um privilégio concedido por políticos clientelistas.",

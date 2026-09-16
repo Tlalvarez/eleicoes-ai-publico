@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-to.json",
   "gerado_em": "2026-09-14T13:22:36Z",
-  "exportado_em": "2026-09-14T23:10:56Z"
+  "exportado_em": "2026-09-16T20:09:33Z"
  },
  "candidatos": [
   {
@@ -52,7 +52,7 @@
    "id": "p1",
    "subtema": "Água e esgoto",
    "proposta": "Ampliar a cobertura de abastecimento de água tratada e de esgotamento sanitário no estado",
-   "n_concorda": 4,
+   "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
@@ -61,13 +61,6 @@
       571
      ],
      "nota": "Apoio a municípios e prestadores na expansão dos serviços"
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      454
-     ],
-     "nota": ""
     },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
@@ -81,7 +74,13 @@
      "blocos": [
       1763
      ],
-     "nota": "Meta explícita: 119 municípios sem sistema de esgotamento sanitário"
+     "nota": "Meta explícita: 119 municípios sem sistema de esgotamento sanitário",
+     "metas": [
+      {
+       "rotulo": "municípios sem esgotamento",
+       "valor": "119 municípios"
+      }
+     ]
     }
    }
   },
@@ -121,8 +120,8 @@
   {
    "id": "p3",
    "subtema": "Gestão de recursos hídricos",
-   "proposta": "Implantar monitoramento hídrico com novas tecnologias e sistemas de informação para prevenir conflitos e apoiar decisões",
-   "n_concorda": 3,
+   "proposta": "Implantar monitoramento hídrico.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
@@ -141,29 +140,15 @@
       2095
      ],
      "nota": "Modernizar rede hidrometeorológica e criar Centro Estadual de Inteligência Hídrica"
-    },
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      472
-     ],
-     "nota": "Gestão baseada em dados e monitoramento"
     }
    }
   },
   {
    "id": "p4",
    "subtema": "Segurança hídrica",
-   "proposta": "Apoiar ações e projetos de segurança hídrica, incluindo armazenamento e uso eficiente da água nas regiões mais vulneráveis",
-   "n_concorda": 3,
+   "proposta": "Apoiar ações e projetos de segurança hídrica, com incentivo ao armazenamento, ao uso eficiente e à conservação da água, especialmente nas regiões de maior vulnerabilidade hídrica.",
+   "n_concorda": 1,
    "posicoes": {
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      219
-     ],
-     "nota": "Foco em segurança hídrica para o agronegócio"
-    },
     "governador-to-laurez-moreira-270002544494": {
      "posicao": "concorda",
      "blocos": [
@@ -171,13 +156,6 @@
       492
      ],
      "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1329
-     ],
-     "nota": "Poços artesianos fotovoltaicos e estações comunitárias de purificação"
     }
    }
   },
@@ -185,15 +163,8 @@
    "id": "p5",
    "subtema": "Segurança hídrica",
    "proposta": "Proteger e revitalizar nascentes e bacias hidrográficas por meio de programa estadual",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-to-laurez-moreira-270002544494": {
-     "posicao": "concorda",
-     "blocos": [
-      490
-     ],
-     "nota": ""
-    },
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
@@ -229,7 +200,7 @@
   {
    "id": "p7",
    "subtema": "Soluções descentralizadas e sustentáveis",
-   "proposta": "Incentivar soluções alternativas e sustentáveis de abastecimento e tratamento de esgoto em áreas sem viabilidade de rede",
+   "proposta": "Incentivar soluções alternativas e sustentáveis de abastecimento de água.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-laurez-moreira-270002544494": {
@@ -252,7 +223,7 @@
   {
    "id": "p8",
    "subtema": "Organização regional da prestação",
-   "proposta": "Estruturar blocos regionais de prestação dos serviços de saneamento para dar escala aos municípios menores",
+   "proposta": "Estruturar blocos regionais de prestação dos serviços de saneamento",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -320,10 +291,92 @@
    }
   },
   {
-   "id": "p12",
+   "id": "p13",
+   "subtema": "Gestão de recursos hídricos",
+   "proposta": "Modernizar a Rede Estadual Hidrometeorológica, ampliando sua cobertura territorial e a confiabilidade das informações produzidas, e transformar a atual Sala de Situação em um Centro Estadual de Inteligência Hídrica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      2093,
+      2095
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p3"
+  },
+  {
+   "id": "p14",
+   "subtema": "Segurança hídrica",
+   "proposta": "Garantir segurança hídrica para o agro, gerando renda extra ao produtor.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      219
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p15",
+   "subtema": "Segurança hídrica",
+   "proposta": "Ampliar o acesso à água por meio de prospecção hidrogeológica, poços artesianos fotovoltaicos, estações comunitárias de purificação e formação de zeladores da água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1329
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p16",
+   "subtema": "Segurança hídrica",
+   "proposta": "Apoiar projetos de segurança hídrica, proteção de nascentes e conservação de bacias hidrográficas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      490
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p18",
+   "subtema": "Organização regional da prestação",
+   "proposta": "Realizar leilão de parcerias público-privadas de saneamento em blocos regionais, com arranjos produtivos próprios, por meio da Tocantins Parcerias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      452,
+      453
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p19",
    "subtema": "Outorga e usos múltiplos",
-   "proposta": "Modernizar os sistemas de outorga de uso da água e conciliar abastecimento humano, produção, energia e preservação por meio do planejamento",
-   "n_concorda": 2,
+   "proposta": "Conciliar abastecimento humano, produção, energia e preservação por meio de planejamento, outorga e monitoramento.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
@@ -331,7 +384,15 @@
       473
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p20",
+   "subtema": "Outorga e usos múltiplos",
+   "proposta": "Modernizar os sistemas de emissão de outorgas de uso dos recursos hídricos.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
      "blocos": [
@@ -472,10 +533,6 @@
    },
    "453": {
     "texto": "Ação: Leilão com arranjos produtivos próprios em blocos regionais pela Tocantins Parcerias.",
-    "pagina": 18
-   },
-   "454": {
-    "texto": "Resultado Esperado: Universalização do serviço.",
     "pagina": 18
    },
    "796": {

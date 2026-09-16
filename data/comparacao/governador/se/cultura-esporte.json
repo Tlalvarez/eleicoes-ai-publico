@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "cultura-esporte-se.json",
   "gerado_em": "2026-09-14T22:35:43Z",
-  "exportado_em": "2026-09-14T22:38:19Z"
+  "exportado_em": "2026-09-16T21:41:06Z"
  },
  "candidatos": [
   {
@@ -43,7 +43,7 @@
   {
    "id": "p1",
    "subtema": "Fomento e financiamento da cultura",
-   "proposta": "Ampliar os mecanismos de financiamento e fomento à cultura, assegurando recursos permanentes para o setor",
+   "proposta": "Ampliar os mecanismos de financiamento e fomento à cultura",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -346,7 +346,7 @@
   {
    "id": "p15",
    "subtema": "Patrimônio e equipamentos culturais",
-   "proposta": "Garantir acessibilidade nos equipamentos culturais",
+   "proposta": "Garantir acessibilidade.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -641,7 +641,7 @@
   {
    "id": "p30",
    "subtema": "Festas, eventos e tradições",
-   "proposta": "Estruturar calendário permanente de eventos culturais e turísticos regionais articulado com os municípios",
+   "proposta": "Apoiar os municípios na realização de eventos culturais no interior do estado",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -712,7 +712,7 @@
   {
    "id": "p34",
    "subtema": "Festas, eventos e tradições",
-   "proposta": "Valorizar a gastronomia regional como patrimônio cultural, com festivais e roteiros gastronômicos",
+   "proposta": "Valorizar a gastronomia regional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-valmir-de-francisquinho-260002532010": {
@@ -735,7 +735,7 @@
   {
    "id": "p35",
    "subtema": "Gestão da política cultural",
-   "proposta": "Fortalecer a capacidade institucional da política estadual de cultura, modernizando a estrutura de gestão do setor",
+   "proposta": "Fortalecer a política estadual de cultura",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -773,7 +773,7 @@
   {
    "id": "p37",
    "subtema": "Esporte e lazer para todos",
-   "proposta": "Democratizar o acesso ao esporte, ao lazer e à atividade física, articulando esporte e promoção da saúde",
+   "proposta": "Ampliar o acesso da população ao esporte e às atividades esportivas e de lazer.",
    "n_concorda": 3,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -840,7 +840,7 @@
   {
    "id": "p40",
    "subtema": "Esporte e lazer para todos",
-   "proposta": "Ampliar a cooperação com os municípios na política de esporte e lazer, com apoio técnico e gestão compartilhada de equipamentos",
+   "proposta": "Ampliar a cooperação com os municípios na política de esporte e lazer",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -856,7 +856,13 @@
       861,
       862
      ],
-     "nota": "Programas descentralizados nos 75 municípios"
+     "nota": "Programas descentralizados nos 75 municípios",
+     "metas": [
+      {
+       "rotulo": "municípios com cooperação esportiva",
+       "valor": "75 municípios"
+      }
+     ]
     }
    }
   },
@@ -978,7 +984,7 @@
   {
    "id": "p47",
    "subtema": "Esporte de rendimento",
-   "proposta": "Apoiar federações, associações e clubes esportivos com suporte técnico, jurídico e institucional e critérios transparentes",
+   "proposta": "Apoiar federações e associações esportivas.",
    "n_concorda": 2,
    "posicoes": {
     "governador-se-fabio-260002542491": {
@@ -1170,6 +1176,137 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p58",
+   "subtema": "Fomento e financiamento da cultura",
+   "proposta": "Ampliar os mecanismos de financiamento para projetos culturais e para a economia criativa.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      1388,
+      1389,
+      1393
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p59",
+   "subtema": "Patrimônio e equipamentos culturais",
+   "proposta": "Realizar adequações de acessibilidade e expografia no Museu.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      142
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p60",
+   "subtema": "Festas, eventos e tradições",
+   "proposta": "Interiorizar as políticas culturais por meio de apoio permanente aos municípios para a realização de festivais culturais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      1347,
+      1348
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
+  },
+  {
+   "id": "p61",
+   "subtema": "Festas, eventos e tradições",
+   "proposta": "Apoiar a gastronomia tradicional como segmento da economia cultural e criativa, gerando trabalho, renda e turismo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      651
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p34"
+  },
+  {
+   "id": "p62",
+   "subtema": "Gestão da política cultural",
+   "proposta": "Fortalecer a política estadual de cultura ampliando os mecanismos de financiamento e fomento, com recursos permanentes e interiorização das ações culturais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      131
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p35"
+  },
+  {
+   "id": "p63",
+   "subtema": "Esporte e lazer para todos",
+   "proposta": "Ampliar as atividades esportivas, culturais, musicais e educativas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-valmir-de-francisquinho-260002532010": {
+     "posicao": "concorda",
+     "blocos": [
+      1173
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p37"
+  },
+  {
+   "id": "p64",
+   "subtema": "Esporte e lazer para todos",
+   "proposta": "Fomentar a atuação conjunta com municípios, organizações sociais e parcerias público-privadas em esporte, lazer e atividade física, incluindo a criação de uma rede estadual de atividade física e esportiva inclusiva articulada com os municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-fabio-260002542491": {
+     "posicao": "concorda",
+     "blocos": [
+      213
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p40"
+  },
+  {
+   "id": "p65",
+   "subtema": "Esporte de rendimento",
+   "proposta": "Adotar critérios transparentes no apoio a atletas, municípios, federações, clubes, associações e projetos comunitários, com metas anuais, indicadores e participação social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-se-ricardo-marques-260002549466": {
+     "posicao": "concorda",
+     "blocos": [
+      624
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p47"
   }
  ],
  "blocos": {

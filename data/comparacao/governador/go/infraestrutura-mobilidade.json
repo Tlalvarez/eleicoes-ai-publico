@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-go.json",
   "gerado_em": "2026-09-14T07:56:26Z",
-  "exportado_em": "2026-09-14T08:45:16Z"
+  "exportado_em": "2026-09-16T21:45:41Z"
  },
  "candidatos": [
   {
@@ -68,7 +68,7 @@
   {
    "id": "p1",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Planejar e implantar corredores de transporte coletivo, terminais e melhorias da rede nas regiões metropolitanas",
+   "proposta": "Planejar melhorias da rede de transporte coletivo nas regiões metropolitanas",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -110,7 +110,7 @@
   {
    "id": "p2",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Integrar a governança e o planejamento metropolitano do transporte entre Estado e municípios",
+   "proposta": "Promover o planejamento integrado do transporte nas regiões metropolitanas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -169,7 +169,7 @@
   {
    "id": "p4",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Oferecer informação em tempo real ao passageiro sobre horários, trajetos e alterações",
+   "proposta": "Oferecer informação ao passageiro do transporte coletivo.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -214,7 +214,7 @@
   {
    "id": "p6",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Reforçar a segurança em terminais e pontos de embarque do transporte coletivo",
+   "proposta": "Reforçar a segurança nos terminais do transporte coletivo",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-daniel-vilela-90002540993": {
@@ -302,7 +302,13 @@
       1128,
       1129
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "veículos novos acessíveis",
+       "valor": "100%"
+      }
+     ]
     }
    }
   },
@@ -496,7 +502,7 @@
   {
    "id": "p20",
    "subtema": "Tarifa e gratuidade no transporte",
-   "proposta": "Subsidiar a tarifa dos passageiros do Entorno do Distrito Federal, priorizando quem estuda e trabalha",
+   "proposta": "Subsidiar a tarifa dos passageiros do Entorno do Distrito Federal",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -563,7 +569,7 @@
   {
    "id": "p23",
    "subtema": "Logística, cargas e multimodalidade",
-   "proposta": "Fortalecer a infraestrutura logística do Estado, articulando rodovias, ferrovias, aeroportos, terminais e armazenagem como sistema integrado",
+   "proposta": "Fortalecer a infraestrutura logística do Estado",
    "n_concorda": 4,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -607,8 +613,8 @@
   {
    "id": "p24",
    "subtema": "Logística, cargas e multimodalidade",
-   "proposta": "Estruturar plataformas e terminais multimodais no Estado",
-   "n_concorda": 3,
+   "proposta": "Estruturar plataforma multimodal.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
      "posicao": "concorda",
@@ -627,14 +633,6 @@
       403
      ],
      "nota": "Meta de três plataformas intermodais estruturadas ou contratadas"
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      743,
-      746
-     ],
-     "nota": ""
     }
    }
   },
@@ -658,19 +656,12 @@
    "id": "p26",
    "subtema": "Logística, cargas e multimodalidade",
    "proposta": "Identificar e superar os gargalos logísticos que elevam custos, com prioridade técnica",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
      "posicao": "concorda",
      "blocos": [
       744
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      32
      ],
      "nota": ""
     }
@@ -703,29 +694,6 @@
      "blocos": [
       744,
       745
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p29",
-   "subtema": "Logística, cargas e multimodalidade",
-   "proposta": "Ampliar capacidade de armazenagem, retroáreas e acessos junto aos corredores de carga",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      196,
-      217
-     ],
-     "nota": ""
-    },
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      743
      ],
      "nota": ""
     }
@@ -852,37 +820,9 @@
    }
   },
   {
-   "id": "p35",
-   "subtema": "Gestão, contratos e transparência do transporte coletivo",
-   "proposta": "Manter a bilhetagem eletrônica mesmo com tarifa zero, para medir demanda, planejar e auditar o sistema",
-   "n_concorda": 2,
-   "posicoes": {
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      930,
-      931,
-      1018,
-      1019,
-      1083,
-      1122,
-      1123
-     ],
-     "nota": ""
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      716
-     ],
-     "nota": "Bilhetagem e dados como base para redes mais simples"
-    }
-   }
-  },
-  {
    "id": "p36",
    "subtema": "Infraestrutura regional e territorial",
-   "proposta": "Definir prioridades de infraestrutura a partir de diagnóstico de cada região, levando obras e serviços a todo o território",
+   "proposta": "Definir prioridades de infraestrutura",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -957,7 +897,7 @@
   {
    "id": "p39",
    "subtema": "Aeroportos regionais",
-   "proposta": "Qualificar e integrar aeroportos regionais à malha logística e ao desenvolvimento das regiões",
+   "proposta": "Tratar os aeroportos como parte da infraestrutura logística e do desenvolvimento das regiões.",
    "n_concorda": 3,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -1002,62 +942,15 @@
    }
   },
   {
-   "id": "p41",
-   "subtema": "Ferrovias e hidrovias",
-   "proposta": "Ampliar e integrar a rede ferroviária que atravessa o Estado, com conexões à Ferrovia Norte-Sul e à FICO",
-   "n_concorda": 4,
-   "posicoes": {
-    "governador-go-marconi-perillo-90002543463": {
-     "posicao": "concorda",
-     "blocos": [
-      743,
-      745
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      153,
-      196,
-      207,
-      226
-     ],
-     "nota": "Acessos, terminais e retroáreas para a FICO gerarem riqueza em Goiás"
-    },
-    "governador-go-luciana-amorim-90002550707": {
-     "posicao": "concorda",
-     "blocos": [
-      94
-     ],
-     "nota": ""
-    },
-    "governador-go-wilder-morais-90002551791": {
-     "posicao": "concorda",
-     "blocos": [
-      687
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
    "id": "p42",
    "subtema": "Ferrovias e hidrovias",
    "proposta": "Investir na ampliação e qualificação da rede hidroviária para integrar o território",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-go-luciana-amorim-90002550707": {
      "posicao": "concorda",
      "blocos": [
       94
-     ],
-     "nota": ""
-    },
-    "governador-go-luis-cesar-bueno-90002545476": {
-     "posicao": "concorda",
-     "blocos": [
-      271
      ],
      "nota": ""
     }
@@ -1239,7 +1132,7 @@
   {
    "id": "p52",
    "subtema": "Rodovias estaduais e estradas vicinais",
-   "proposta": "Incluir sinalização, pontes, acessos e adequação de capacidade viária nas intervenções, além do pavimento",
+   "proposta": "Contemplar sinalização e pontes nas intervenções em rodovias, além do pavimento",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-marconi-perillo-90002543463": {
@@ -1448,16 +1341,8 @@
    "id": "p64",
    "subtema": "Mobilidade urbana e metropolitana",
    "proposta": "Acelerar o embarque nos terminais e pontos com reorganização de fluxos e tecnologia operacional",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-go-daniel-vilela-90002540993": {
-     "posicao": "concorda",
-     "blocos": [
-      1503,
-      1504
-     ],
-     "nota": "Modernização de terminais e tecnologia digital para superar gargalos operacionais."
-    },
     "governador-go-luis-cesar-bueno-90002545476": {
      "posicao": "concorda",
      "blocos": [
@@ -1485,7 +1370,7 @@
   {
    "id": "p66",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Implantar a Rede Rápida de transporte coletivo em corredores prioritários e o programa Ponto Seguro, com ampliação de frota",
+   "proposta": "Atuar em corredores prioritários de transporte coletivo.",
    "n_concorda": 2,
    "posicoes": {
     "governador-go-wilder-morais-90002551791": {
@@ -1534,6 +1419,350 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p70",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Apoiar municípios e regiões metropolitanas em soluções de mobilidade e transporte coletivo e estimular o planejamento integrado da mobilidade nas áreas urbanas mais populosas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      753,
+      754,
+      756
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p71",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Dar continuidade ao programa Nova RMTC, com renovação da frota por veículos elétricos e a biometano, modernização de terminais, fortalecimento do Batalhão dos Terminais e acesso digital gratuito a horários, rotas e recarga.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1504
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p75",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Garantir consulta gratuita de horários, rotas, saldo e recarga de cartões nos canais digitais do transporte coletivo, sem consumo da franquia de dados do passageiro.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1503,
+      1504
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p4"
+  },
+  {
+   "id": "p76",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Fortalecer o Batalhão dos Terminais e modernizar os terminais do transporte coletivo.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1504
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p77",
+   "subtema": "Tarifa e gratuidade no transporte",
+   "proposta": "Implantar progressivamente a Tarifa Zero no transporte metropolitano, com prioridade para a Região Metropolitana de Goiânia e, mediante cooperação entre Goiás, DF e União, para o Entorno do Distrito Federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      915,
+      961,
+      1116
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p78",
+   "subtema": "Logística, cargas e multimodalidade",
+   "proposta": "Estruturar a Plataforma Multimodal de Anápolis, com governança, licenças e acessos reorganizados, conectando-a à ferrovia, às rodovias, ao aeroporto e ao distrito industrial, com calendário público de decisões e divulgação de investimentos, empregos e pendências.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      687,
+      709
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p79",
+   "subtema": "Logística, cargas e multimodalidade",
+   "proposta": "Fortalecer a infraestrutura estadual para sustentar o desenvolvimento, ampliando a logística, universalizando serviços essenciais e garantindo segurança energética e hídrica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-daniel-vilela-90002540993": {
+     "posicao": "concorda",
+     "blocos": [
+      1459
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
+  },
+  {
+   "id": "p80",
+   "subtema": "Logística, cargas e multimodalidade",
+   "proposta": "Estruturar a plataforma multimodal de Anápolis, com conexões ferroviária, rodoviária e aeroportuária, governança definida e etapas com calendário público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      687,
+      709
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p81",
+   "subtema": "Gestão, contratos e transparência do transporte coletivo",
+   "proposta": "Manter a bilhetagem com 100% das viagens registradas por cartão, aplicativo ou QR Code, usando os dados de origem, destino, horário e lotação para planejamento e auditoria do sistema.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      931,
+      1018,
+      1019,
+      1083,
+      1122,
+      1123
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p82",
+   "subtema": "Gestão, contratos e transparência do transporte coletivo",
+   "proposta": "Usar a bilhetagem e seus dados no planejamento integrado de linhas, terminais e corredores das regiões metropolitanas, buscando redes mais simples e menor espera, com publicação de custo, subsídio e cumprimento de viagens.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      716
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p83",
+   "subtema": "Infraestrutura regional e territorial",
+   "proposta": "Levar infraestrutura cuidada e presença do governo às dez regiões, com manutenção rápida, transporte pontual e obras iniciadas apenas com projeto e recursos definidos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      57,
+      90,
+      91
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p84",
+   "subtema": "Infraestrutura regional e territorial",
+   "proposta": "Implantar em cada região a infraestrutura exigida por sua vocação econômica: estradas e corredores rodoviários, ferrovias, energia, água e saneamento, conectividade digital, armazenagem e estrutura turística e de eventos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      120,
+      124,
+      128,
+      186,
+      207,
+      217
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p85",
+   "subtema": "Infraestrutura regional e territorial",
+   "proposta": "Definir as prioridades de infraestrutura pelos efeitos de cada ligação sobre a economia e sobre a vida das pessoas, articulando os investimentos às demais políticas do Estado e às necessidades dos municípios, para conectar as regiões e ampliar oportunidades em todo o território.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      727,
+      728,
+      740
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p36"
+  },
+  {
+   "id": "p86",
+   "subtema": "Aeroportos regionais",
+   "proposta": "Articular rodovias, ferrovias, terminais, plataformas logísticas, aeroportos e estruturas de armazenagem para fortalecer a posição de Goiás no sistema logístico nacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      743
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p87",
+   "subtema": "Aeroportos regionais",
+   "proposta": "Integrar aeroportos, rodovias e distritos como infraestrutura prioritária, junto a conectividade, centros de eventos e hotelaria.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      153,
+      259,
+      280
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p39"
+  },
+  {
+   "id": "p88",
+   "subtema": "Ferrovias e hidrovias",
+   "proposta": "Atuar institucionalmente para acelerar a implantação e a integração dos grandes projetos ferroviários que atravessam Goiás, ampliando a conexão com a Ferrovia Norte-Sul e com os corredores nacionais de transporte.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-marconi-perillo-90002543463": {
+     "posicao": "concorda",
+     "blocos": [
+      743,
+      745
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p89",
+   "subtema": "Ferrovias e hidrovias",
+   "proposta": "Tratar rodovias, FICO, Norte-Sul, aeroportos, terminais e armazenagem como um sistema logístico único, garantindo acessos à FICO, terminais intermodais e três plataformas intermodais estruturadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luis-cesar-bueno-90002545476": {
+     "posicao": "concorda",
+     "blocos": [
+      153,
+      196,
+      207,
+      226
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p90",
+   "subtema": "Ferrovias e hidrovias",
+   "proposta": "Investir na ampliação e na qualificação da rede ferroviária e hidroviária para maior integração do território estadual e nacional.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-luciana-amorim-90002550707": {
+     "posicao": "concorda",
+     "blocos": [
+      94
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p91",
+   "subtema": "Rodovias estaduais e estradas vicinais",
+   "proposta": "Mapear a condição de rodovias, pontes e sinalização, com atualização pública, e criar um sistema de resposta rápida em vias estaduais para vistoria, sinalização e solução de buracos, erosões e falhas em pontes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      684,
+      685
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p52"
+  },
+  {
+   "id": "p92",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Planejar novos corredores de ônibus, terminais, segurança viária e informação ao passageiro nas Regiões Metropolitanas de Goiânia e do entorno do Distrito Federal, com planejamento integrado de linhas e divulgação de custo, subsídio e qualidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-go-wilder-morais-90002551791": {
+     "posicao": "concorda",
+     "blocos": [
+      689,
+      716
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p66"
   }
  ],
  "blocos": {
@@ -1672,10 +1901,6 @@
     "texto": "Rodovias turísticas, internet, resíduos, prevenção a incêndios e segurança turística.",
     "pagina": 10
    },
-   "271": {
-    "texto": "Acessos, saneamento sazonal, salvamento, conectividade e infraestrutura fluvial.",
-    "pagina": 10
-   },
    "274": {
     "texto": "Acessos, terminais, hotelaria, comunicação, energia e espaços multifuncionais.",
     "pagina": 10
@@ -1726,10 +1951,6 @@
    },
    "929": {
     "texto": "Gratuidade acompanhada de aumento de oferta",
-    "pagina": 29
-   },
-   "930": {
-    "texto": "Fim da bilhetagem",
     "pagina": 29
    },
    "931": {

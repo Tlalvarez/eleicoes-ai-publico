@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-ma.json",
   "gerado_em": "2026-09-14T21:21:48Z",
-  "exportado_em": "2026-09-14T21:58:42Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -59,7 +59,7 @@
   {
    "id": "p1",
    "subtema": "Abastecimento de água e esgotamento sanitário",
-   "proposta": "Ampliar e universalizar o acesso a água tratada e à coleta e tratamento de esgoto no estado",
+   "proposta": "Ampliar o acesso a água tratada e à coleta e tratamento de esgoto no estado",
    "n_concorda": 5,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -212,7 +212,13 @@
       611,
       614
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "investimento em esgotamento",
+       "valor": "R$ 6,25 bilhões"
+      }
+     ]
     }
    }
   },
@@ -228,14 +234,26 @@
       291,
       306
      ],
-     "nota": "Cofinanciamento e assistência técnica aos municípios; foco na Baixada"
+     "nota": "Cofinanciamento e assistência técnica aos municípios; foco na Baixada",
+     "metas": [
+      {
+       "rotulo": "diagnóstico de áreas críticas",
+       "valor": "no 1º ano"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
      "blocos": [
       636
      ],
-     "nota": "Carteira territorial estimada em R$ 13,63 bilhões"
+     "nota": "Carteira territorial estimada em R$ 13,63 bilhões",
+     "metas": [
+      {
+       "rotulo": "investimento em drenagem urbana",
+       "valor": "cerca de R$ 13,63 bilhões"
+      }
+     ]
     }
    }
   },
@@ -259,7 +277,7 @@
    "id": "p9",
    "subtema": "Drenagem, cheias e resiliência",
    "proposta": "Incorporar a adaptação climática a secas e enchentes à política hídrica e produtiva",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
@@ -267,14 +285,6 @@
       259
      ],
      "nota": "Foco no impacto sobre produção de alimentos e preços"
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      291,
-      306
-     ],
-     "nota": ""
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -407,7 +417,13 @@
       300,
       996
      ],
-     "nota": "Prazo de 100 dias para o diagnóstico e painel público"
+     "nota": "Prazo de 100 dias para o diagnóstico e painel público",
+     "metas": [
+      {
+       "rotulo": "diagnóstico por município publicado",
+       "valor": "em 100 dias"
+      }
+     ]
     }
    }
   },
@@ -486,7 +502,7 @@
    "id": "p21",
    "subtema": "Cooperação federativa e assistência técnica",
    "proposta": "Atuar em cooperação com os municípios, titulares dos serviços, por meio de termos de cooperação, assistência técnica e cofinanciamento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -495,14 +511,13 @@
       300,
       306
      ],
-     "nota": "Termos de cooperação com prioritários já no 1º ano"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      601
-     ],
-     "nota": "Ênfase em apoio a municípios pequenos sem projeto pronto"
+     "nota": "Termos de cooperação com prioritários já no 1º ano",
+     "metas": [
+      {
+       "rotulo": "termos de cooperação",
+       "valor": "no 1º ano"
+      }
+     ]
     }
    }
   },
@@ -525,7 +540,7 @@
   {
    "id": "p23",
    "subtema": "Saneamento e saúde",
-   "proposta": "Integrar saneamento, vigilância em saúde e política econômica, priorizando intervenções onde há maior incidência de doenças de veiculação hídrica",
+   "proposta": "Integrar saneamento, saúde e política econômica.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-felipe-camarao-100002542556": {
@@ -689,6 +704,56 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p33",
+   "subtema": "Abastecimento de água e esgotamento sanitário",
+   "proposta": "Ampliar a oferta de água tratada e a coleta e tratamento de esgoto, com investimentos prioritários nas regiões de menor cobertura.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-eduardo-braide-100002545679": {
+     "posicao": "concorda",
+     "blocos": [
+      245
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p34",
+   "subtema": "Drenagem, cheias e resiliência",
+   "proposta": "Prevenir alagamentos e erosões com diagnóstico estadual de áreas críticas, planos municipais de drenagem, soluções baseadas na natureza e alerta integrado à Defesa Civil.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      291,
+      306
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p35",
+   "subtema": "Saneamento e saúde",
+   "proposta": "Integrar saneamento, saúde e economia territorial, tratando a água como direito humano e bem público, com universalização do abastecimento prioritária em territórios rurais, quilombolas, indígenas e ribeirinhos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      259,
+      340
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p23"
   }
  ],
  "blocos": {

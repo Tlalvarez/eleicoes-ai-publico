@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-pe.json",
   "gerado_em": "2026-09-14T18:24:36Z",
-  "exportado_em": "2026-09-14T19:15:24Z"
+  "exportado_em": "2026-09-16T18:36:48Z"
  },
  "candidatos": [
   {
@@ -59,8 +59,8 @@
   {
    "id": "p1",
    "subtema": "Universalização de água e esgoto",
-   "proposta": "Ampliar as redes de distribuição e universalizar o acesso à água tratada nos domicílios do estado",
-   "n_concorda": 4,
+   "proposta": "Ampliar as redes de distribuição de água no estado",
+   "n_concorda": 3,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
      "posicao": "concorda",
@@ -85,13 +85,6 @@
       1237
      ],
      "nota": ""
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      731
-     ],
-     "nota": ""
     }
    }
   },
@@ -99,7 +92,7 @@
    "id": "p2",
    "subtema": "Universalização de água e esgoto",
    "proposta": "Cumprir e monitorar as metas de universalização do Marco Legal do Saneamento até 2033",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
@@ -107,13 +100,6 @@
       1237
      ],
      "nota": ""
-    },
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      510
-     ],
-     "nota": "Monitoramento com priorização de territórios vulneráveis"
     },
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
@@ -326,7 +312,7 @@
   {
    "id": "p13",
    "subtema": "Abastecimento rural e convivência com a seca",
-   "proposta": "Implantar soluções descentralizadas de abastecimento em comunidades rurais (cisternas, poços, dessalinizadores, reservação e pequenos sistemas)",
+   "proposta": "Ampliar o acesso à água em comunidades rurais.",
    "n_concorda": 4,
    "posicoes": {
     "governador-pe-professora-camila-170002537320": {
@@ -351,7 +337,13 @@
       754,
       756
      ],
-     "nota": "Inclui barragens subterrâneas e biodigestores"
+     "nota": "Inclui barragens subterrâneas e biodigestores",
+     "metas": [
+      {
+       "rotulo": "comunidades rurais dispersas",
+       "valor": "100% até 2028"
+      }
+     ]
     },
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
@@ -390,7 +382,7 @@
    "id": "p15",
    "subtema": "Abastecimento rural e convivência com a seca",
    "proposta": "Transferir a gestão dos sistemas rurais de água às comunidades, capacitando moradores como autogestores",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-renan-170002540337": {
      "posicao": "concorda",
@@ -400,13 +392,6 @@
       757
      ],
      "nota": "Expansão do modelo SISAR a 100% das comunidades dispersas até 2028"
-    },
-    "governador-pe-joao-campos-170002537230": {
-     "posicao": "concorda",
-     "blocos": [
-      472
-     ],
-     "nota": "Prevê participação comunitária na operação dos sistemas"
     }
    }
   },
@@ -444,7 +429,7 @@
   {
    "id": "p18",
    "subtema": "Obras hídricas e barragens",
-   "proposta": "Concluir os grandes complexos adutores para ampliar o abastecimento no Agreste e no Sertão",
+   "proposta": "Ampliar o abastecimento de água no Agreste",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
@@ -496,7 +481,7 @@
   {
    "id": "p20",
    "subtema": "Obras hídricas e barragens",
-   "proposta": "Entregar a Barragem do Engenho Pereira, para controle das cheias do Rio Jaboatão",
+   "proposta": "Concluir e entregar a Barragem do Engenho Pereira",
    "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -519,7 +504,7 @@
    "id": "p21",
    "subtema": "Obras hídricas e barragens",
    "proposta": "Concluir as barragens de contenção de cheias de Igarapeba e Gatos, no sistema da Bacia do Rio Una",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
@@ -527,13 +512,6 @@
       1257
      ],
      "nota": ""
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      749
-     ],
-     "nota": "Prioriza Igarapeba entre as obras paralisadas a retomar"
     }
    }
   },
@@ -541,7 +519,7 @@
    "id": "p22",
    "subtema": "Obras hídricas e barragens",
    "proposta": "Concluir a Barragem de Barra de Guabiraba para conter as cheias do Rio Sirinhaém",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-raquel-lyra-170002537227": {
      "posicao": "concorda",
@@ -549,13 +527,6 @@
       1258
      ],
      "nota": "Em parceria com o Governo Federal"
-    },
-    "governador-pe-renan-170002540337": {
-     "posicao": "concorda",
-     "blocos": [
-      749
-     ],
-     "nota": ""
     }
    }
   },
@@ -687,19 +658,12 @@
    "id": "p31",
    "subtema": "Obras hídricas e barragens",
    "proposta": "Tratar a segurança hídrica como prioridade estratégica do Estado, ampliando e modernizando a infraestrutura de abastecimento",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
      "blocos": [
       456
-     ],
-     "nota": ""
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1255
      ],
      "nota": ""
     }
@@ -869,7 +833,7 @@
   {
    "id": "p41",
    "subtema": "Irrigação e uso produtivo da água",
-   "proposta": "Implantar e recuperar perímetros irrigados, democratizando o acesso a sistemas de micro e pequena irrigação",
+   "proposta": "Implantar sistemas de irrigação no campo.",
    "n_concorda": 3,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
@@ -898,8 +862,8 @@
   {
    "id": "p42",
    "subtema": "Despoluição de rios e bacias",
-   "proposta": "Criar política integrada de recuperação de bacias e despoluição de rios, enfrentando efluentes irregulares e ocupação de margens",
-   "n_concorda": 3,
+   "proposta": "Promover a despoluição de rios e bacias, enfrentando os efluentes.",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pe-joao-campos-170002537230": {
      "posicao": "concorda",
@@ -915,13 +879,6 @@
       762
      ],
      "nota": "Prioriza ETAs e ETEs nas bacias mais poluídas"
-    },
-    "governador-pe-raquel-lyra-170002537227": {
-     "posicao": "concorda",
-     "blocos": [
-      1249
-     ],
-     "nota": ""
     }
    }
   },
@@ -986,9 +943,177 @@
       78,
       79
      ],
-     "nota": "Isenção da tarifa mínima para beneficiários da Tarifa Social com fornecimento intermitente"
+     "nota": "Isenção da tarifa mínima para beneficiários da Tarifa Social com fornecimento intermitente",
+     "metas": [
+      {
+       "rotulo": "cobrança por volume consumido",
+       "valor": "consumo até 10 m³ por mês"
+      }
+     ]
     }
    }
+  },
+  {
+   "id": "p47",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Tornar a segurança hídrica prioridade estratégica do Estado, ampliando e modernizando a infraestrutura de abastecimento para garantir água com regularidade nas cidades, no campo e nas regiões mais afetadas pela escassez.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      456
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p48",
+   "subtema": "Universalização de água e esgoto",
+   "proposta": "Monitorar o cumprimento das metas de universalização do saneamento em Pernambuco, com fortalecimento da regulação e da fiscalização das concessionárias e prioridade aos territórios mais vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      510
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p49",
+   "subtema": "Abastecimento rural e convivência com a seca",
+   "proposta": "Ampliar o acesso à água potável para comunidades rurais isoladas e famílias de baixa renda do estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1032,
+      1247
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p50",
+   "subtema": "Obras hídricas e barragens",
+   "proposta": "Executar obras hídricas prioritárias para ampliar o abastecimento de água, incluindo a viabilização da segunda etapa da Adutora do Agreste.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      470
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p52",
+   "subtema": "Obras hídricas e barragens",
+   "proposta": "Concluir a Barragem do Engenho Pereira, dentro de um conjunto de obras hídricas para ampliar o abastecimento de água, reduzir os impactos das secas e proteger áreas urbanas contra enchentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-joao-campos-170002537230": {
+     "posicao": "concorda",
+     "blocos": [
+      470
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p20"
+  },
+  {
+   "id": "p53",
+   "subtema": "Obras hídricas e barragens",
+   "proposta": "Priorizar a retomada das barragens de contenção de cheias de Igarapeba e Barra de Guabiraba, junto com as adutoras estruturantes da Mata Sul e do Agreste.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      749
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
+  },
+  {
+   "id": "p55",
+   "subtema": "Obras hídricas e barragens",
+   "proposta": "Fortalecer a infraestrutura de segurança hídrica e a proteção civil das cidades diante de desastres climáticos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1255
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p56",
+   "subtema": "Irrigação e uso produtivo da água",
+   "proposta": "Implantar e recuperar perímetros irrigados no interior, captando recursos para projetos e modelagem econômica, e concluir as obras do PISF em parceria com o Governo Federal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-raquel-lyra-170002537227": {
+     "posicao": "concorda",
+     "blocos": [
+      1245
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p57",
+   "subtema": "Irrigação e uso produtivo da água",
+   "proposta": "Implementar programas estatais de cisternas, pequenos barreiros e sistemas de irrigação voltados aos assentamentos da reforma agrária e à agricultura familiar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-professora-camila-170002537320": {
+     "posicao": "concorda",
+     "blocos": [
+      60
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p41"
+  },
+  {
+   "id": "p58",
+   "subtema": "Despoluição de rios e bacias",
+   "proposta": "Universalizar o esgotamento sanitário e despoluir bacias, reformando e ampliando tecnologicamente estações de tratamento nas bacias mais poluídas e populosas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pe-renan-170002540337": {
+     "posicao": "concorda",
+     "blocos": [
+      761,
+      762
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
   }
  ],
  "blocos": {

@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "habitacao-cidades-mg.json",
   "gerado_em": "2026-09-14T10:56:36Z",
-  "exportado_em": "2026-09-14T23:10:51Z"
+  "exportado_em": "2026-09-16T21:46:08Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Regularização fundiária",
-   "proposta": "Ampliar e promover a regularização fundiária urbana (e rural), com entrega de títulos de propriedade aos moradores",
+   "proposta": "Ampliar e promover a regularização fundiária urbana.",
    "n_concorda": 5,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -112,7 +112,7 @@
   {
    "id": "p2",
    "subtema": "Regularização fundiária",
-   "proposta": "Prestar suporte técnico e jurídico aos municípios, com articulação de cartórios e registros, para acelerar a titulação",
+   "proposta": "Atuar junto aos municípios para acelerar a titulação de imóveis.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-cleitinho-azevedo-130002552296": {
@@ -179,7 +179,7 @@
   {
    "id": "p6",
    "subtema": "Política habitacional e produção de moradia",
-   "proposta": "Ampliar o acesso à moradia com produção e aquisição de habitações, reduzindo o déficit habitacional",
+   "proposta": "Ampliar o acesso à moradia.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-mateus-simoes-130002541911": {
@@ -233,7 +233,7 @@
   {
    "id": "p8",
    "subtema": "Política habitacional e produção de moradia",
-   "proposta": "Recuperar e ampliar o papel da Cohab Minas na produção habitacional e na estruturação das políticas estaduais",
+   "proposta": "Fortalecer e ampliar a atuação da Cohab Minas.",
    "n_concorda": 3,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -262,7 +262,7 @@
   {
    "id": "p9",
    "subtema": "Política habitacional e produção de moradia",
-   "proposta": "Criar programa estadual de locação social e subsídio ao aluguel para famílias vulneráveis",
+   "proposta": "Prever a locação social como ação da política habitacional estadual.",
    "n_concorda": 2,
    "posicoes": {
     "governador-mg-patrus-ananias-130002550464": {
@@ -481,6 +481,88 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p22",
+   "subtema": "Regularização fundiária",
+   "proposta": "Avançar em moradia e regularização fundiária urbana e rural, ampliando as alternativas de acesso à habitação, inclusive com parcerias com o setor privado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-mateus-simoes-130002541911": {
+     "posicao": "concorda",
+     "blocos": [
+      46
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p23",
+   "subtema": "Regularização fundiária",
+   "proposta": "Instituir política estadual de habitação de interesse social que promova a regularização fundiária e a urbanização de assentamentos precários, com fortalecimento das ocupações urbanas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-patrus-ananias-130002550464": {
+     "posicao": "concorda",
+     "blocos": [
+      179,
+      192
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p25",
+   "subtema": "Regularização fundiária",
+   "proposta": "Prestar suporte técnico e jurídico aos municípios para acelerar a entrega de títulos de propriedade a famílias de baixa renda.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-cleitinho-azevedo-130002552296": {
+     "posicao": "concorda",
+     "blocos": [
+      195
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p26",
+   "subtema": "Regularização fundiária",
+   "proposta": "Expandir o programa de regularização fundiária da Cohab Minas, articulando cartórios, registros e prefeituras, e complementar a titulação com urbanização e infraestrutura básica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-gabriel-130002549557": {
+     "posicao": "concorda",
+     "blocos": [
+      487
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p2"
+  },
+  {
+   "id": "p28",
+   "subtema": "Política habitacional e produção de moradia",
+   "proposta": "Reconstruir a política estadual de habitação com municípios e União, priorizando a produção habitacional, a urbanização de assentamentos precários e a regularização fundiária urbana, com a Cohab-MG fortalecida.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-mg-alexandre-kalil-130002539775": {
+     "posicao": "concorda",
+     "blocos": [
+      1636,
+      1637
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
   }
  ],
  "blocos": {

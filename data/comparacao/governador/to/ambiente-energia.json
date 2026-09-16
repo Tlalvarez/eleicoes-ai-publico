@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ambiente-energia-to.json",
   "gerado_em": "2026-09-14T13:46:38Z",
-  "exportado_em": "2026-09-14T23:10:56Z"
+  "exportado_em": "2026-09-16T20:09:33Z"
  },
  "candidatos": [
   {
@@ -51,16 +51,9 @@
   {
    "id": "p1",
    "subtema": "Fiscalização e desmatamento",
-   "proposta": "Reforçar o monitoramento e a fiscalização ambiental para conter o desmatamento ilegal",
-   "n_concorda": 4,
+   "proposta": "Adotar medidas de combate ao desmatamento ilegal.",
+   "n_concorda": 3,
    "posicoes": {
-    "governador-to-ataides-de-oliveira-270002548412": {
-     "posicao": "concorda",
-     "blocos": [
-      467
-     ],
-     "nota": "Fala de monitoramento e fiscalização inteligente"
-    },
     "governador-to-vicentinho-junior-270002544544": {
      "posicao": "concorda",
      "blocos": [
@@ -140,7 +133,7 @@
    "id": "p5",
    "subtema": "Licenciamento ambiental",
    "proposta": "Tornar o licenciamento ambiental mais ágil e previsível, com prazos e critérios técnicos definidos",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
      "posicao": "concorda",
@@ -148,30 +141,13 @@
       466
      ],
      "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      666,
-      667,
-      668
-     ],
-     "nota": ""
-    },
-    "governador-to-professora-dorinha-270002544599": {
-     "posicao": "concorda",
-     "blocos": [
-      1694,
-      2035
-     ],
-     "nota": "Meta de reduzir o tempo médio de análise"
     }
    }
   },
   {
    "id": "p6",
    "subtema": "Licenciamento ambiental",
-   "proposta": "Adotar licenciamento simplificado e autodeclaratório digital para atividades de baixo risco",
+   "proposta": "Adotar licenciamento diferenciado conforme o nível de risco da atividade.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -256,7 +232,7 @@
   {
    "id": "p11",
    "subtema": "Incêndios florestais e queimadas",
-   "proposta": "Fortalecer a prevenção e o combate a incêndios florestais e queimadas ilegais em ação integrada com municípios e órgãos parceiros",
+   "proposta": "Fortalecer a prevenção e o combate a incêndios florestais",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-ataides-de-oliveira-270002548412": {
@@ -399,7 +375,7 @@
   {
    "id": "p18",
    "subtema": "Instrumentos econômicos de conservação",
-   "proposta": "Implantar mecanismos permanentes de pagamento por serviços ambientais que remunerem quem conserva",
+   "proposta": "Adotar mecanismos de pagamento por serviços ambientais que remunerem quem conserva",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -489,7 +465,7 @@
   {
    "id": "p22",
    "subtema": "Resíduos sólidos e economia circular",
-   "proposta": "Apoiar consórcios regionais de municípios para implantar aterros sanitários licenciados e erradicar os lixões a céu aberto",
+   "proposta": "Erradicar os lixões a céu aberto.",
    "n_concorda": 3,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -640,7 +616,7 @@
    "id": "p30",
    "subtema": "Energia renovável e transição energética",
    "proposta": "Posicionar o estado como polo de geração de energia renovável e atrair investimentos da transição energética",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
@@ -648,14 +624,6 @@
       1526
      ],
      "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      448,
-      449
-     ],
-     "nota": "Inserção na nova matriz via hidrogênio verde"
     }
    }
   },
@@ -911,7 +879,7 @@
    "id": "p46",
    "subtema": "Mineração e seus impactos",
    "proposta": "Promover mineração sustentável, com redução de impactos ambientais e práticas ESG",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-to-professora-dorinha-270002544599": {
      "posicao": "concorda",
@@ -919,15 +887,6 @@
       1724
      ],
      "nota": ""
-    },
-    "governador-to-vicentinho-junior-270002544544": {
-     "posicao": "concorda",
-     "blocos": [
-      416,
-      430,
-      431
-     ],
-     "nota": "Via cooperativas para gestão ambiental e sondagens públicas"
     }
    }
   },
@@ -1007,7 +966,13 @@
       430,
       431
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "escala da pesquisa aerogeofísica",
+       "valor": "escala de 1/100 e depois 1/25"
+      }
+     ]
     }
    }
   },
@@ -1123,7 +1088,7 @@
   {
    "id": "p59",
    "subtema": "Clima e mercado de carbono",
-   "proposta": "Viabilizar o acesso de produtores e comunidades ao mercado de créditos de carbono, com repartição de benefícios",
+   "proposta": "Viabilizar o acesso ao mercado de créditos de carbono.",
    "n_concorda": 2,
    "posicoes": {
     "governador-to-vicentinho-junior-270002544544": {
@@ -1375,6 +1340,155 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p72",
+   "subtema": "Fiscalização e desmatamento",
+   "proposta": "Implantar monitoramento e fiscalização ambiental inteligentes.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      467
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p73",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Agilizar o licenciamento ambiental por meio de sistema digital autodeclaratório para atividades de baixo risco, destravando investimentos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      666,
+      667,
+      668
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p74",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Simplificar os processos de licenciamento ambiental e autorizações estaduais, com mais previsibilidade, eficiência e redução do tempo médio de análise.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1694,
+      2035
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p5"
+  },
+  {
+   "id": "p75",
+   "subtema": "Licenciamento ambiental",
+   "proposta": "Estruturar o licenciamento com prazos definidos, critérios técnicos e análise de risco.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      466
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p76",
+   "subtema": "Incêndios florestais e queimadas",
+   "proposta": "Promover a prevenção e o combate a incêndios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-ataides-de-oliveira-270002548412": {
+     "posicao": "concorda",
+     "blocos": [
+      468
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p77",
+   "subtema": "Instrumentos econômicos de conservação",
+   "proposta": "Pagar compensação por serviços ambientais a produtores que recuperarem nascentes em bacias críticas, pelo Programa Produtor de Água.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-vicentinho-junior-270002544544": {
+     "posicao": "concorda",
+     "blocos": [
+      217,
+      218
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p78",
+   "subtema": "Instrumentos econômicos de conservação",
+   "proposta": "Incentivar mecanismos de pagamento por serviços ambientais que valorizem a conservação dos recursos naturais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-laurez-moreira-270002544494": {
+     "posicao": "concorda",
+     "blocos": [
+      508
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p79",
+   "subtema": "Resíduos sólidos e economia circular",
+   "proposta": "Consolidar a regionalização da gestão de resíduos sólidos e apoiar o encerramento ambientalmente adequado dos lixões, ampliando a eficiência dos serviços e reduzindo custos municipais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1410,
+      2107
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p80",
+   "subtema": "Clima e mercado de carbono",
+   "proposta": "Fomentar o acesso de propriedades rurais ao mercado de créditos de carbono, ao lado da agroenergia e da energia solar.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-to-professora-dorinha-270002544599": {
+     "posicao": "concorda",
+     "blocos": [
+      1932
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p59"
   }
  ],
  "blocos": {

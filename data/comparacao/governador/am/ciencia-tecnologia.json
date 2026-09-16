@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "ciencia-tecnologia-am.json",
   "gerado_em": "2026-09-15T01:31:49Z",
-  "exportado_em": "2026-09-15T02:14:01Z"
+  "exportado_em": "2026-09-16T21:44:59Z"
  },
  "candidatos": [
   {
@@ -67,7 +67,7 @@
   {
    "id": "p1",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Ampliar a cobertura de internet nos municípios e comunidades do interior do estado",
+   "proposta": "Ampliar a cobertura de internet no estado.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -272,7 +272,7 @@
   {
    "id": "p9",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Oferecer atendimento digital assistido a quem não tem aparelho, conexão ou letramento, com apoio presencial nos municípios",
+   "proposta": "Oferecer atendimento digital assistido.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -344,16 +344,9 @@
   {
    "id": "p12",
    "subtema": "Pesquisa científica e fomento",
-   "proposta": "Fortalecer o fomento estadual à pesquisa científica e à inovação",
-   "n_concorda": 5,
+   "proposta": "Fortalecer a atuação estadual de apoio à inovação.",
+   "n_concorda": 4,
    "posicoes": {
-    "governador-am-roberto-cidade-40002541741": {
-     "posicao": "concorda",
-     "blocos": [
-      654
-     ],
-     "nota": "Menção genérica, sem detalhamento"
-    },
     "governador-am-cabo-daciolo-40002551740": {
      "posicao": "concorda",
      "blocos": [
@@ -451,7 +444,7 @@
   {
    "id": "p15",
    "subtema": "Pesquisa científica e fomento",
-   "proposta": "Criar programa de atração e retenção de pesquisadores, com incentivos para retorno de doutores amazonenses",
+   "proposta": "Criar programa de atração de pesquisadores.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -474,7 +467,7 @@
   {
    "id": "p16",
    "subtema": "Pesquisa científica e fomento",
-   "proposta": "Ampliar laboratórios e infraestrutura de pesquisa, com presença fora de Manaus",
+   "proposta": "Ampliar laboratórios e infraestrutura de pesquisa",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -672,7 +665,7 @@
   {
    "id": "p24",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Apoiar startups e empresas de base tecnológica do estado",
+   "proposta": "Apoiar startups",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -788,7 +781,7 @@
   {
    "id": "p29",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Criar rede de extensão tecnológica para cooperativas, pequenos negócios e governos municipais",
+   "proposta": "Criar rede de extensão tecnológica voltada aos governos municipais",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -827,7 +820,7 @@
   {
    "id": "p31",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Ampliar a complexidade tecnológica da economia, apoiando setores como eletrônicos, semicondutores, engenharia e hardware",
+   "proposta": "Ampliar a complexidade tecnológica da economia, apoiando o desenvolvimento de eletrônicos e hardware.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -875,7 +868,7 @@
   {
    "id": "p33",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Fomentar startups de bioeconomia e ambientais por editais específicos, com metas de número de empresas apoiadas",
+   "proposta": "Apoiar startups de bioeconomia.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -902,14 +895,20 @@
       32549,
       40369
      ],
-     "nota": "10 bio-startups de IA e apoio a 50 startups ambientais"
+     "nota": "10 bio-startups de IA e apoio a 50 startups ambientais",
+     "metas": [
+      {
+       "rotulo": "startups de bioeconomia",
+       "valor": "10 startups de base tecnológica"
+      }
+     ]
     }
    }
   },
   {
    "id": "p34",
    "subtema": "Governança da política de CT&I",
-   "proposta": "Implantar estratégia e plano estadual de ciência, tecnologia e inovação articulando governo, universidades e setor produtivo",
+   "proposta": "Implantar estratégia estadual de ciência, tecnologia e inovação articulando governo, universidades e setor produtivo",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-david-almeida-40002536086": {
@@ -1072,7 +1071,7 @@
   {
    "id": "p42",
    "subtema": "Inteligência artificial e governo digital",
-   "proposta": "Garantir uso ético da inteligência artificial no setor público, com supervisão humana, auditabilidade e vedação de decisão exclusivamente algorítmica",
+   "proposta": "Garantir uso ético da inteligência artificial no setor público, com supervisão humana e auditabilidade.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1099,15 +1098,8 @@
    "id": "p43",
    "subtema": "Inteligência artificial e governo digital",
    "proposta": "Digitalizar integralmente os serviços públicos estaduais em portal único, com identidade digital e aplicativo do cidadão",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      474
-     ],
-     "nota": "Soluções de governo digital no distrito de inovação"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1142,7 +1134,13 @@
       38265,
       38345
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "catálogo estadual de dados",
+       "valor": "200 bases"
+      }
+     ]
     }
    }
   },
@@ -1179,7 +1177,13 @@
       13061,
       13063
      ],
-     "nota": "Cobertura de 80% do território até 2030"
+     "nota": "Cobertura de 80% do território até 2030",
+     "metas": [
+      {
+       "rotulo": "monitoramento por IA",
+       "valor": "80% do território até 2030"
+      }
+     ]
     }
    }
   },
@@ -1428,16 +1432,8 @@
    "id": "p60",
    "subtema": "Ecossistema de inovação e startups",
    "proposta": "Orientar os investimentos em CT&I para toda a cadeia produtiva (manejo, beneficiamento, certificação e acesso a mercados), e não apenas para a pesquisa básica",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      206,
-      242
-     ],
-     "nota": "Extensão tecnológica e inovação aplicada à produção, não só pesquisa básica."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1450,7 +1446,7 @@
   {
    "id": "p61",
    "subtema": "Governança da política de CT&I",
-   "proposta": "Adotar modelo de execução público-privada na política de CT&I, com o Estado como articulador e execução por cooperativas, organizações sociais e empresas",
+   "proposta": "Adotar na política de CT&I um modelo em que o Estado atue como articulador estratégico.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1502,7 +1498,7 @@
   {
    "id": "p64",
    "subtema": "Pesquisa científica e fomento",
-   "proposta": "Firmar parcerias com instituições nacionais e internacionais para programas de dupla titulação e estágios em centros de excelência científica",
+   "proposta": "Firmar parcerias com instituições nacionais e internacionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1540,16 +1536,8 @@
    "id": "p66",
    "subtema": "Pesquisa científica e fomento",
    "proposta": "Investir em infraestrutura crítica de apoio à pesquisa: conectividade de alta velocidade, energia confiável e logística para insumos e produtos de pesquisa",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-cabo-daciolo-40002551740": {
-     "posicao": "concorda",
-     "blocos": [
-      159,
-      162
-     ],
-     "nota": "Investimento em infraestrutura e ampliação de laboratórios de pesquisa"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -1749,7 +1737,7 @@
   {
    "id": "p78",
    "subtema": "Governança da política de CT&I",
-   "proposta": "Promover intercâmbio e cooperação internacional com países tropicais para troca de soluções e boas práticas em CT&I",
+   "proposta": "Promover intercâmbio e cooperação internacional em CT&I",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -1869,16 +1857,8 @@
    "id": "p85",
    "subtema": "Ecossistema de inovação e startups",
    "proposta": "Fortalecer o Polo de Computação de Manaus como hub de inovação para todo o estado",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      474,
-      496
-     ],
-     "nota": "Fortalecimento de parques tecnológicos e ambientes de inovação"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2016,16 +1996,8 @@
    "id": "p94",
    "subtema": "Conectividade e inclusão digital",
    "proposta": "Oferecer capacitação e apoio técnico em polos regionais, com conteúdos em formatos offline e transmissão por rádio comunitária para comunidades ribeirinhas e indígenas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      500,
-      503
-     ],
-     "nota": "Formação técnica local e serviços assistidos a quem tem baixo letramento."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2053,7 +2025,7 @@
   {
    "id": "p96",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Implantar o Programa Amazonas Conectado, articulado ao Programa Norte Conectado federal",
+   "proposta": "Expandir a conectividade no estado.",
    "n_concorda": 4,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2207,7 +2179,7 @@
   {
    "id": "p104",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Integrar a ciência, tecnologia e inovação à agenda estadual de atração de investimentos",
+   "proposta": "Promover a ciência, a tecnologia e a inovação de forma articulada com o desenvolvimento econômico do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -2239,7 +2211,7 @@
   {
    "id": "p105",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Fortalecer a infraestrutura digital e energética do Estado para a competitividade",
+   "proposta": "Fortalecer a infraestrutura digital, ampliando a conectividade no Estado.",
    "n_concorda": 5,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2381,7 +2353,7 @@
   {
    "id": "p112",
    "subtema": "Conectividade e inclusão digital",
-   "proposta": "Contratar conectividade por satélites de baixa órbita (LEO) para todas as calhas dos rios, apoiando monitoramento e gestão pública",
+   "proposta": "Contratar conectividade por satélite.",
    "n_concorda": 3,
    "posicoes": {
     "governador-am-professora-maria-do-carmo-40002541626": {
@@ -2428,15 +2400,8 @@
    "id": "p114",
    "subtema": "CT&I para bioeconomia e meio ambiente",
    "proposta": "Utilizar drones e satélites no monitoramento ambiental",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      497
-     ],
-     "nota": "Green tech inclui monitoramento ambiental e florestal"
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2449,7 +2414,7 @@
   {
    "id": "p115",
    "subtema": "Pesquisa científica e fomento",
-   "proposta": "Intensificar a formação de capital humano junto a universidades locais e instituições internacionais, priorizando povos originários e tradicionais e equipes técnicas dos órgãos ambientais",
+   "proposta": "Intensificar a formação de capital humano junto a universidades locais e instituições internacionais.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-cabo-daciolo-40002551740": {
@@ -2488,16 +2453,8 @@
    "id": "p117",
    "subtema": "Pesquisa científica e fomento",
    "proposta": "Criar laboratórios regionais de inovação junto às ICTs públicas para testar tecnologias de baixo custo e anfíbias, adaptadas a cheias e secas dos rios",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      242,
-      258
-     ],
-     "nota": "Inovação apropriada e aberta com ICTs para tecnologias adaptadas."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2537,7 +2494,13 @@
       35304,
       35305
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "revisão de editais",
+       "valor": "próximos 5 anos"
+      }
+     ]
     }
    }
   },
@@ -2606,15 +2569,8 @@
    "id": "p124",
    "subtema": "Inteligência artificial e governo digital",
    "proposta": "Editar lei estadual de governança de dados e normas complementares de adequação à LGPD",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      504
-     ],
-     "nota": "Proteção de dados pessoais e padrões de segurança no governo."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2696,16 +2652,8 @@
    "id": "p129",
    "subtema": "Conectividade e inclusão digital",
    "proposta": "Formar Agentes de Digitalização Comunitária e desenvolver plataformas em línguas nativas para inclusão digital de populações tradicionais e indígenas",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      500,
-      503
-     ],
-     "nota": "Redes comunitárias com formação técnica e atendimento digital assistido."
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -2871,7 +2819,7 @@
   {
    "id": "p140",
    "subtema": "Ecossistema de inovação e startups",
-   "proposta": "Criar Fundo Estadual de Inovação de R$ 200 milhões em parceria com FAPEAM, BNDES e FINEP",
+   "proposta": "Criar um fundo estadual de inovação.",
    "n_concorda": 2,
    "posicoes": {
     "governador-am-isael-munduruku-40002550776": {
@@ -2886,7 +2834,13 @@
      "blocos": [
       38252
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "Fundo Estadual de Inovação",
+       "valor": "R$ 200 milhões"
+      }
+     ]
     }
    }
   },
@@ -2924,23 +2878,8 @@
    "id": "p143",
    "subtema": "Conectividade e inclusão digital",
    "proposta": "Elaborar Plano Estadual de Conectividade Digital articulado às redes de teleatendimento em saúde e às soluções de educação digital em áreas remotas",
-   "n_concorda": 3,
+   "n_concorda": 1,
    "posicoes": {
-    "governador-am-isael-munduruku-40002550776": {
-     "posicao": "concorda",
-     "blocos": [
-      496,
-      498
-     ],
-     "nota": "Conectar escolas e unidades de saúde com metas."
-    },
-    "governador-am-david-almeida-40002536086": {
-     "posicao": "concorda",
-     "blocos": [
-      531
-     ],
-     "nota": ""
-    },
     "governador-am-omar-aziz-40002532272": {
      "posicao": "concorda",
      "blocos": [
@@ -3036,6 +2975,307 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p149",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Apoiar redes comunitárias e provedores locais, com formação técnica e uso compartilhado de infraestrutura, e negociar com operadoras a redução de preços e a expansão da rede mediante obrigações verificáveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      500,
+      502
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p1"
+  },
+  {
+   "id": "p150",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Expandir os Postos de Atendimento ao Cidadão (PAC) para cobertura estadual plena, com balcão único digital integrando serviços federais, estaduais e municipais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      37778
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p176",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Implantar estruturas físicas municipais de atendimento com computadores, internet e atendentes qualificados e unidades digitais flutuantes nas calhas dos rios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      38384
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p177",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Formar e contratar agentes de digitalização comunitária em cada município do interior para apoiar cidadãos no acesso a serviços digitais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      38080
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p151",
+   "subtema": "Pesquisa científica e fomento",
+   "proposta": "Estimular a inovação aberta em parceria com universidades e institutos de pesquisa do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      258
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p155",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Apoiar startups e soluções de inteligência artificial voltadas à produção, logística, gestão e bioeconomia, no âmbito da expansão da conectividade rural.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      241
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p24"
+  },
+  {
+   "id": "p156",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Implantar Núcleos de Integração Universidade-Município nos campi do interior, articulados com as prefeituras, fortalecendo a extensão tecnológica e mapeando as demandas de conhecimento técnico dos municípios.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      12417,
+      12418,
+      12419
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p157",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Usar a expertise industrial do Polo Industrial de Manaus como âncora para o desenvolvimento de hardware e internet das coisas, com programa de fomento junto à Suframa e ao FNDCT integrando hardware, IoT e biodiversidade amazônica apoiados por inteligência artificial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      13038,
+      13039
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p31"
+  },
+  {
+   "id": "p160",
+   "subtema": "Inteligência artificial e governo digital",
+   "proposta": "Instituir marco estadual de uso ético da inteligência artificial no serviço público, com supervisão humana em áreas sensíveis, auditoria de modelos, relatórios de impacto e comitê ético independente de avaliação periódica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-omar-aziz-40002532272": {
+     "posicao": "concorda",
+     "blocos": [
+      13130,
+      29815,
+      29922,
+      37916
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p42"
+  },
+  {
+   "id": "p161",
+   "subtema": "Governança da política de CT&I",
+   "proposta": "Ampliar a complexidade tecnológica da economia estadual, com o Estado atuando como articulador, investidor em formação e infraestrutura, parceiro de pesquisa e indutor de novos negócios em áreas como semicondutores, componentes eletrônicos, engenharia e tecnologias amazônicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      159
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p61"
+  },
+  {
+   "id": "p164",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Ampliar a conectividade no interior do Amazonas, levando internet a mais municípios e comunidades por satélite e fibra óptica.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-professora-maria-do-carmo-40002541626": {
+     "posicao": "concorda",
+     "blocos": [
+      87,
+      88
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p96"
+  },
+  {
+   "id": "p165",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Criar o programa Conexão Rural, expandindo a conectividade por contratação pública, infraestrutura, parcerias e integração com programas federais e prestadoras autorizadas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      241
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p96"
+  },
+  {
+   "id": "p167",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Implantar a Estratégia Estadual de Inovação, coordenando ações de ciência, tecnologia e inovação entre universidades, centros de pesquisa, setor produtivo e Governo, e apoiar o Distrito de Inovação do Largo de São Vicente para atrair empresas de tecnologia ao Centro de Manaus.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      474,
+      496
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p104"
+  },
+  {
+   "id": "p169",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Investir em infraestrutura tecnológica e expandir a conectividade rural para adensar a economia do Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      159,
+      241
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p105"
+  },
+  {
+   "id": "p171",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Ampliar o acesso à internet de qualidade no interior, associando tecnologia ao desenvolvimento sustentável.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-david-almeida-40002536086": {
+     "posicao": "concorda",
+     "blocos": [
+      531
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p105"
+  },
+  {
+   "id": "p173",
+   "subtema": "Conectividade e inclusão digital",
+   "proposta": "Universalizar sinal de internet funcional, reduzindo custos e garantindo segurança digital, com fibra, rádio, satélite e redes comunitárias, e conectar escolas, unidades de saúde, centros de assistência e comunidades prioritárias com metas de velocidade e disponibilidade.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      496,
+      498,
+      502,
+      506
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p112"
+  },
+  {
+   "id": "p174",
+   "subtema": "Pesquisa científica e fomento",
+   "proposta": "Firmar cooperação com universidades, institutos federais e centros de pesquisa nacionais e internacionais para ampliar laboratórios, formação avançada, intercâmbio, programas de engenharia e atração de pesquisadores.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-cabo-daciolo-40002551740": {
+     "posicao": "concorda",
+     "blocos": [
+      162
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p115"
+  },
+  {
+   "id": "p175",
+   "subtema": "Ecossistema de inovação e startups",
+   "proposta": "Criar fundo de inovação com governança pública e social, impedindo a privatização do conhecimento financiado pelo Estado.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-am-isael-munduruku-40002550776": {
+     "posicao": "concorda",
+     "blocos": [
+      260
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p140"
   }
  ],
  "blocos": {
@@ -4973,11 +5213,6 @@
     "pagina": 9
    }
   },
-  "governador-am-roberto-cidade-40002541741": {
-   "654": {
-    "texto": "Pesquisa e inovação.",
-    "pagina": 79
-   }
-  }
+  "governador-am-roberto-cidade-40002541741": {}
  }
 }

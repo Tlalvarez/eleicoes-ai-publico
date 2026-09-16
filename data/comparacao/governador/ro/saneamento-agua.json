@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-ro.json",
   "gerado_em": "2026-09-14T18:22:51Z",
-  "exportado_em": "2026-09-14T19:49:48Z"
+  "exportado_em": "2026-09-16T21:46:50Z"
  },
  "candidatos": [
   {
@@ -84,7 +84,13 @@
      "blocos": [
       141
      ],
-     "nota": "Meta de cobertura de água ≥ 85% em 2031 sob gestão pública"
+     "nota": "Meta de cobertura de água ≥ 85% em 2031 sob gestão pública",
+     "metas": [
+      {
+       "rotulo": "cobertura de água",
+       "valor": "≥ 85% em 2031"
+      }
+     ]
     }
    }
   },
@@ -168,7 +174,7 @@
   {
    "id": "p6",
    "subtema": "CAERD e modelo de prestação",
-   "proposta": "Manter a companhia estadual de saneamento pública, sem privatização, com fortalecimento institucional, financeiro e operacional",
+   "proposta": "Fortalecer a companhia estadual de saneamento nos planos institucional, financeiro e operacional.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -244,7 +250,7 @@
   {
    "id": "p9",
    "subtema": "CAERD e modelo de prestação",
-   "proposta": "Realizar diagnóstico e auditoria independente da situação econômico-financeira, operacional e do passivo da companhia estadual",
+   "proposta": "Levantar e diagnosticar o passivo da companhia estadual de saneamento.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
@@ -373,7 +379,7 @@
    "id": "p16",
    "subtema": "Regulação, transparência e controle",
    "proposta": "Fortalecer a agência reguladora estadual, ampliando fiscalização, transparência tarifária e defesa do usuário",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -390,13 +396,6 @@
       142
      ],
      "nota": "AGERO fortalecida certificando metas e reajustes"
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      923
-     ],
-     "nota": "Estado atuando com regulação e fiscalização na descentralização"
     }
    }
   },
@@ -413,7 +412,13 @@
       885,
       905
      ],
-     "nota": "Painel dos 52 municípios com distância até as metas"
+     "nota": "Painel dos 52 municípios com distância até as metas",
+     "metas": [
+      {
+       "rotulo": "painel público",
+       "valor": "52 municípios"
+      }
+     ]
     },
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -427,8 +432,8 @@
   {
    "id": "p18",
    "subtema": "Financiamento e tarifas",
-   "proposta": "Proteger tarifariamente as famílias de baixa renda nos serviços de água e esgoto",
-   "n_concorda": 3,
+   "proposta": "Proteger as famílias de baixa renda nos serviços de água e esgoto",
+   "n_concorda": 2,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -444,13 +449,6 @@
       893
      ],
      "nota": "Proteção das famílias vulneráveis nos contratos regionalizados"
-    },
-    "governador-ro-marcos-rogerio-220002541939": {
-     "posicao": "concorda",
-     "blocos": [
-      992
-     ],
-     "nota": "Compromisso com tarifa módica na transição"
     }
    }
   },
@@ -529,7 +527,13 @@
       141,
       143
      ],
-     "nota": "Redução de cerca de 20 pontos percentuais em seis anos"
+     "nota": "Redução de cerca de 20 pontos percentuais em seis anos",
+     "metas": [
+      {
+       "rotulo": "redução de perdas",
+       "valor": "~20 pontos percentuais em seis anos"
+      }
+     ]
     },
     "governador-ro-adailton-furia-220002536806": {
      "posicao": "concorda",
@@ -599,7 +603,7 @@
    "id": "p27",
    "subtema": "Saneamento rural e áreas remotas",
    "proposta": "Captar recursos de programas federais de saneamento para ampliar a cobertura",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ro-expedito-netto-220002542185": {
      "posicao": "concorda",
@@ -607,14 +611,6 @@
       146
      ],
      "nota": "Programas federais de saneamento rural em qualquer cenário"
-    },
-    "governador-ro-adailton-furia-220002536806": {
-     "posicao": "concorda",
-     "blocos": [
-      884,
-      905
-     ],
-     "nota": ""
     }
    }
   },
@@ -645,7 +641,7 @@
   {
    "id": "p29",
    "subtema": "Recursos hídricos e mananciais",
-   "proposta": "Implantar monitoramento permanente da qualidade da água e dos mananciais",
+   "proposta": "Implantar monitoramento dos mananciais",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-hildon-chaves-220002542916": {
@@ -667,7 +663,7 @@
   {
    "id": "p30",
    "subtema": "Recursos hídricos e mananciais",
-   "proposta": "Fortalecer o planejamento estadual dos recursos hídricos em articulação com comitês de bacia e usuários, prevenindo conflitos pelo uso da água",
+   "proposta": "Fortalecer a gestão e o planejamento estadual dos recursos hídricos",
    "n_concorda": 2,
    "posicoes": {
     "governador-ro-adailton-furia-220002536806": {
@@ -808,6 +804,153 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p38",
+   "subtema": "CAERD e modelo de prestação",
+   "proposta": "Recuperar a CAERD como empresa pública pelo Programa Água Pública Sustentável, com AFAC do Tesouro, financiamento de longo prazo e mútuo estadual ponte.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      138,
+      139
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p44",
+   "subtema": "CAERD e modelo de prestação",
+   "proposta": "Condicionar todos os desembolsos a metas auditadas pelo TCE-RO e pela AGERO, com suspensão automática em caso de descumprimento e vedação de uso em custeio e folha.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      141
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p45",
+   "subtema": "CAERD e modelo de prestação",
+   "proposta": "Aplicar à CAERD a governança da Lei das Estatais e proteger a tarifa social, isentando famílias do CadÚnico do componente de investimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      141
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p46",
+   "subtema": "CAERD e modelo de prestação",
+   "proposta": "Contratar auditoria independente do passivo da CAERD e apresentar posição pública definitiva sobre a concessão.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-expedito-netto-220002542185": {
+     "posicao": "concorda",
+     "blocos": [
+      254
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p39",
+   "subtema": "CAERD e modelo de prestação",
+   "proposta": "Realizar diagnóstico completo da situação econômico-financeira e operacional da CAERD, abrangendo custos, dívidas, ativos, perdas, contratos, pessoal e necessidades de investimento.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      889
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p9"
+  },
+  {
+   "id": "p40",
+   "subtema": "Financiamento e tarifas",
+   "proposta": "Fiscalizar permanentemente metas, investimentos, qualidade e tarifas dos contratos regionalizados de água e esgoto, com transparência dos resultados e proteção das famílias vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      893
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p18"
+  },
+  {
+   "id": "p41",
+   "subtema": "Saneamento rural e áreas remotas",
+   "proposta": "Apoiar municípios e prestadores na elaboração de projetos e na captação de recursos para água, esgoto, resíduos, drenagem e segurança hídrica, com metas de 99% de acesso à água potável e 90% de coleta e tratamento de esgoto até 31 de dezembro de 2033.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      884,
+      905
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p27"
+  },
+  {
+   "id": "p42",
+   "subtema": "Recursos hídricos e mananciais",
+   "proposta": "Fortalecer o monitoramento da qualidade da água, a proteção de nascentes e áreas de recarga e a recuperação de mananciais, em articulação com municípios, comitês de bacias e órgãos ambientais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-adailton-furia-220002536806": {
+     "posicao": "concorda",
+     "blocos": [
+      902
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p29"
+  },
+  {
+   "id": "p43",
+   "subtema": "Recursos hídricos e mananciais",
+   "proposta": "Fortalecer a gestão sustentável dos recursos hídricos, com monitoramento permanente dos mananciais, recuperação de APPs, incentivo ao reuso da água e uso eficiente na irrigação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ro-hildon-chaves-220002542916": {
+     "posicao": "concorda",
+     "blocos": [
+      2868,
+      2869
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p30"
   }
  ],
  "blocos": {

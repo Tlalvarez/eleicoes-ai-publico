@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "infraestrutura-mobilidade-ma.json",
   "gerado_em": "2026-09-14T21:19:45Z",
-  "exportado_em": "2026-09-14T23:10:51Z"
+  "exportado_em": "2026-09-16T21:45:56Z"
  },
  "candidatos": [
   {
@@ -88,7 +88,13 @@
       227,
       994
      ],
-     "nota": "Política única e permanente; admite recuperação por etapas do passivo"
+     "nota": "Política única e permanente; admite recuperação por etapas do passivo",
+     "metas": [
+      {
+       "rotulo": "malha inventariada",
+       "valor": "100% em 12 meses"
+      }
+     ]
     },
     "governador-ma-felipe-camarao-100002542556": {
      "posicao": "concorda",
@@ -144,7 +150,13 @@
       207,
       227
      ],
-     "nota": "Meta de 100% da malha inventariada em 12 meses"
+     "nota": "Meta de 100% da malha inventariada em 12 meses",
+     "metas": [
+      {
+       "rotulo": "malha e pontes inventariadas",
+       "valor": "100% em 12 meses"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -198,7 +210,13 @@
       2180,
       2181
      ],
-     "nota": "Redução de ao menos 45% dos 489 pontos críticos até 2030"
+     "nota": "Redução de ao menos 45% dos 489 pontos críticos até 2030",
+     "metas": [
+      {
+       "rotulo": "redução de pontos críticos",
+       "valor": "ao menos 45% (≤269) em quatro anos"
+      }
+     ]
     }
    }
   },
@@ -279,7 +297,7 @@
    "id": "p10",
    "subtema": "Integração regional e acessos",
    "proposta": "Executar estradas, acessos e travessias para interligar municípios e eliminar o isolamento de regiões",
-   "n_concorda": 5,
+   "n_concorda": 4,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
      "posicao": "concorda",
@@ -310,15 +328,6 @@
      "posicao": "concorda",
      "blocos": [
       137
-     ],
-     "nota": ""
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      551,
-      552,
-      555
      ],
      "nota": ""
     }
@@ -383,7 +392,7 @@
   {
    "id": "p13",
    "subtema": "Logística, portos, ferrovias e aeroportos",
-   "proposta": "Ampliar e requalificar a infraestrutura logística do estado (rodoviária, portuária, ferroviária e aeroportuária) para o escoamento da produção e a competitividade",
+   "proposta": "Requalificar a infraestrutura logística do estado, incluindo a malha rodoviária.",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -421,7 +430,7 @@
   {
    "id": "p14",
    "subtema": "Logística, portos, ferrovias e aeroportos",
-   "proposta": "Estruturar uma rede estadual de corredores logísticos, com matriz origem-destino das cargas e carteira de intervenções classificada por critérios técnicos",
+   "proposta": "Estruturar uma rede estadual de corredores logísticos, com carteira de intervenções classificada por critérios técnicos.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -431,7 +440,13 @@
       232,
       233
      ],
-     "nota": "Inclui terceiras faixas, acessos a terminais e contornos urbanos"
+     "nota": "Inclui terceiras faixas, acessos a terminais e contornos urbanos",
+     "metas": [
+      {
+       "rotulo": "matriz origem-destino e rede",
+       "valor": "publicadas em 12 meses"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -447,7 +462,7 @@
   {
    "id": "p15",
    "subtema": "Logística, portos, ferrovias e aeroportos",
-   "proposta": "Implantar plataformas logísticas, portos secos e terminais intermodais em polos estratégicos, com participação da iniciativa privada",
+   "proposta": "Implantar estruturas logísticas em polos estratégicos do estado.",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
@@ -529,7 +544,13 @@
       261,
       262
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "agendamento digitalizado",
+       "valor": "100%"
+      }
+     ]
     }
    }
   },
@@ -584,7 +605,7 @@
   {
    "id": "p22",
    "subtema": "Rodovias federais e articulação com a União",
-   "proposta": "Articular com o Governo Federal a recuperação, manutenção e ampliação das rodovias federais no estado",
+   "proposta": "Articular com o Governo Federal investimentos em rodovias no estado",
    "n_concorda": 4,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -658,7 +679,7 @@
    "id": "p25",
    "subtema": "Rodovias federais e articulação com a União",
    "proposta": "Pleitear a federalização de trechos remanescentes de rodovias estaduais que intercalam a BR-222 (MA-232 e MA-010)",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -666,13 +687,6 @@
       131
      ],
      "nota": ""
-    },
-    "governador-ma-andre-luis-100002544076": {
-     "posicao": "concorda",
-     "blocos": [
-      270
-     ],
-     "nota": "Só avalia delegação de trechos caso a caso, quando sustentável"
     }
    }
   },
@@ -752,7 +766,13 @@
       207,
       255
      ],
-     "nota": "100% das pontes inventariadas em 12 meses"
+     "nota": "100% das pontes inventariadas em 12 meses",
+     "metas": [
+      {
+       "rotulo": "pontes inventariadas",
+       "valor": "100% em 12 meses"
+      }
+     ]
     }
    }
   },
@@ -775,7 +795,13 @@
       250,
       251
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "ligações candidatas estudadas",
+       "valor": "4 ligações"
+      }
+     ]
     }
    }
   },
@@ -799,7 +825,7 @@
   {
    "id": "p32",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Atuar em parceria com os municípios para melhorar a mobilidade urbana e reduzir o tempo de deslocamento",
+   "proposta": "Atuar em parceria com os municípios para melhorar a mobilidade urbana",
    "n_concorda": 3,
    "posicoes": {
     "governador-ma-eduardo-braide-100002545679": {
@@ -832,7 +858,7 @@
   {
    "id": "p33",
    "subtema": "Mobilidade urbana e metropolitana",
-   "proposta": "Instalar governança metropolitana da Grande Ilha com os quatro municípios, com plano metropolitano e pesquisa origem-destino",
+   "proposta": "Articular a cooperação entre os municípios da Grande Ilha.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -881,7 +907,13 @@
       240,
       241
      ],
-     "nota": "Projeto executivo da primeira etapa viável até o fim do mandato"
+     "nota": "Projeto executivo da primeira etapa viável até o fim do mandato",
+     "metas": [
+      {
+       "rotulo": "decisão pública por corredor",
+       "valor": "até o 3º ano"
+      }
+     ]
     }
    }
   },
@@ -999,7 +1031,7 @@
    "id": "p43",
    "subtema": "Acessos rodoviários ao turismo",
    "proposta": "Garantir implantação, recuperação e manutenção dos acessos rodoviários aos principais destinos turísticos do estado",
-   "n_concorda": 3,
+   "n_concorda": 2,
    "posicoes": {
     "governador-ma-orleans-brandao-100002543869": {
      "posicao": "concorda",
@@ -1014,14 +1046,13 @@
       257,
       258
      ],
-     "nota": "Lençóis, Delta, Chapada das Mesas e Alcântara, com hierarquização SINFRA+SETUR"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      866
-     ],
-     "nota": ""
+     "nota": "Lençóis, Delta, Chapada das Mesas e Alcântara, com hierarquização SINFRA+SETUR",
+     "metas": [
+      {
+       "rotulo": "hierarquização de acessos publicada",
+       "valor": "no 1º ano; obras iniciadas no mandato"
+      }
+     ]
     }
    }
   },
@@ -1067,7 +1098,7 @@
   {
    "id": "p46",
    "subtema": "Planejamento, transparência e governança das obras",
-   "proposta": "Instituir plano e carteira pública estadual de projetos de infraestrutura de longo prazo, com critérios de priorização publicados e integração ao orçamento",
+   "proposta": "Instituir carteira pública estadual de projetos de infraestrutura.",
    "n_concorda": 2,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
@@ -1075,7 +1106,13 @@
      "blocos": [
       221
      ],
-     "nota": "Plano de 10 a 20 anos, revisão anual e consulta pública; comitê gestor"
+     "nota": "Plano de 10 a 20 anos, revisão anual e consulta pública; comitê gestor",
+     "metas": [
+      {
+       "rotulo": "carteira/plano publicado",
+       "valor": "12 meses; 100% projetos inventariados"
+      }
+     ]
     },
     "governador-ma-roberto-rocha-100002551399": {
      "posicao": "concorda",
@@ -1127,7 +1164,13 @@
       233,
       262
      ],
-     "nota": "Tempo e custo de deslocamento medidos e publicados anualmente"
+     "nota": "Tempo e custo de deslocamento medidos e publicados anualmente",
+     "metas": [
+      {
+       "rotulo": "tempo e custo publicados",
+       "valor": "anualmente; linha de base no 1º ano"
+      }
+     ]
     }
    }
   },
@@ -1157,8 +1200,8 @@
   {
    "id": "p50",
    "subtema": "Infraestrutura resiliente e drenagem",
-   "proposta": "Tornar obrigatórios padrões técnicos de drenagem e resiliência climática nas obras rodoviárias, com mapa de vulnerabilidade e correção dos pontos de interrupção recorrente",
-   "n_concorda": 2,
+   "proposta": "Tornar obrigatórios padrões técnicos de drenagem e resiliência climática nas obras rodoviárias, com mapa público de vulnerabilidade da malha e correção dos pontos de interrupção recorrente.",
+   "n_concorda": 1,
    "posicoes": {
     "governador-ma-andre-luis-100002544076": {
      "posicao": "concorda",
@@ -1166,16 +1209,13 @@
       272,
       273
      ],
-     "nota": "Caderno técnico regionalizado e integração com a Defesa Civil"
-    },
-    "governador-ma-roberto-rocha-100002551399": {
-     "posicao": "concorda",
-     "blocos": [
-      566,
-      2176,
-      2183
-     ],
-     "nota": "Drenagem nos contratos e verificação após dois ciclos chuvosos"
+     "nota": "Caderno técnico regionalizado e integração com a Defesa Civil",
+     "metas": [
+      {
+       "rotulo": "mapa e caderno técnico",
+       "valor": "publicados no 1º ano; 100% novos contratos"
+      }
+     ]
     }
    }
   },
@@ -1194,6 +1234,172 @@
      "nota": "Auditoria do ferry São Luís–Cujupe e segurança das travessias com a Capitania"
     }
    }
+  },
+  {
+   "id": "p52",
+   "subtema": "Integração regional e acessos",
+   "proposta": "Priorizar as obras rodoviárias por impacto social, integração produtiva, população atendida, redução do custo logístico e conexão com a rede estruturante estadual, aproximando as pessoas de hospitais, escolas, comércio e serviços públicos.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      551,
+      552,
+      555
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p53",
+   "subtema": "Logística, portos, ferrovias e aeroportos",
+   "proposta": "Levantar as condições da malha rodoviária, recuperar emergencialmente trechos críticos, avaliar a segurança viária e as travessias e articular a logística entre portos e rodovias federais, com transparência das obras públicas.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-andre-luis-100002544076": {
+     "posicao": "concorda",
+     "blocos": [
+      994
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p54",
+   "subtema": "Logística, portos, ferrovias e aeroportos",
+   "proposta": "Elaborar, no primeiro ano, inventário georreferenciado de rodovias, pontes, bueiros, estradas vicinais, tráfego, produção e risco.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      560
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p61",
+   "subtema": "Logística, portos, ferrovias e aeroportos",
+   "proposta": "Constituir a Carteira Estadual de Corredores de Integração, classificando intervenções por população beneficiada, produção mobilizada, custo logístico, acesso a serviços e segurança viária.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      562
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p62",
+   "subtema": "Logística, portos, ferrovias e aeroportos",
+   "proposta": "Incluir rodovias, pontes e acessos logísticos no Banco Maranhão de Projetos, acompanhando cada intervenção do diagnóstico à execução.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      580
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p63",
+   "subtema": "Logística, portos, ferrovias e aeroportos",
+   "proposta": "Consolidar um mapa logístico único do Maranhão conectando produção, municípios, rodovias, ferrovias, Portos Secos, ZPEs e Porto do Itaqui.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      584
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p14"
+  },
+  {
+   "id": "p55",
+   "subtema": "Logística, portos, ferrovias e aeroportos",
+   "proposta": "Implantar portos secos, terminais intermodais e demais estruturas logísticas articulados à Rede Maranhense de ZPEs, conectando os polos de São Luís/Bacabeira, Açailândia, Imperatriz e Caxias.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      549,
+      550,
+      1888
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p56",
+   "subtema": "Rodovias federais e articulação com a União",
+   "proposta": "Construir parceria com o Governo Federal para investimentos estratégicos e estruturantes em cada território, incluindo rodovias que fortaleçam a integração regional e a infraestrutura de escoamento e exportação.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-felipe-camarao-100002542556": {
+     "posicao": "concorda",
+     "blocos": [
+      387
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p22"
+  },
+  {
+   "id": "p58",
+   "subtema": "Mobilidade urbana e metropolitana",
+   "proposta": "Firmar parceria com os municípios da Grande Ilha para harmonizar as revisões dos planos diretores, do zoneamento, do uso e ocupação do solo e do plano de mobilidade inter e intramunicipal.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-orleans-brandao-100002543869": {
+     "posicao": "concorda",
+     "blocos": [
+      148
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p33"
+  },
+  {
+   "id": "p60",
+   "subtema": "Infraestrutura resiliente e drenagem",
+   "proposta": "Incluir drenagem e trafegabilidade como indicadores objetivos nos contratos rodoviários por desempenho, com verificação após dois ciclos chuvosos e divulgação em painel público.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-ma-roberto-rocha-100002551399": {
+     "posicao": "concorda",
+     "blocos": [
+      566,
+      2176,
+      2183
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p50"
   }
  ],
  "blocos": {
@@ -1669,10 +1875,6 @@
    "587": {
     "texto": "O Maranhão possui uma infraestrutura logística de alcance internacional, mas essa vantagem perde valor quando a produção local não consegue chegar a ela com eficiência. A Rede Maranhense de ZPEs será tanto mais poderosa quanto maior for sua capacidade de conectar o pequeno produtor, a cooperativa, a indústria e os municípios do interior às ferrovias e ao Porto do Itaqui. A política rodoviária fará essa conexão: do caminho vicinal ao mercado internacional, transformando infraestrutura de transporte em infraestrutura de desenvolvimento.",
     "pagina": 32
-   },
-   "866": {
-    "texto": "Rodovias e acessos turísticos serão articulados à política da Seção 7, enquanto energia e conectividade serão integradas às Seções 12 e 21. A lógica é fazer a infraestrutura chegar antes que o crescimento desordenado transforme oportunidade em gargalo.",
-    "pagina": 55
    },
    "1888": {
     "texto": "Logística e desenvolvimento territorial: corredores rodoviários estruturantes, acessos ferroviários, terminais intermodais, portos secos, infraestrutura de conexão às ZPEs e sistemas logísticos regionais.",

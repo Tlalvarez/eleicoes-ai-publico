@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-pb.json",
   "gerado_em": "2026-09-14T07:36:56Z",
-  "exportado_em": "2026-09-14T23:10:52Z"
+  "exportado_em": "2026-09-16T21:32:42Z"
  },
  "candidatos": [
   {
@@ -145,7 +145,7 @@
   {
    "id": "p6",
    "subtema": "Primeira infância e famílias",
-   "proposta": "Criar política integrada de proteção à primeira infância, articulando saúde, educação, nutrição e apoio às famílias",
+   "proposta": "Criar política de proteção à primeira infância",
    "n_concorda": 3,
    "posicoes": {
     "governador-pb-pedro-coutinho-150002551911": {
@@ -237,8 +237,8 @@
   {
    "id": "p11",
    "subtema": "Rede SUAS e equipamentos",
-   "proposta": "Fortalecer e ampliar o acesso aos serviços do SUAS, priorizando famílias em maior vulnerabilidade",
-   "n_concorda": 3,
+   "proposta": "Fortalecer os serviços do SUAS",
+   "n_concorda": 2,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
      "posicao": "concorda",
@@ -253,13 +253,6 @@
       189
      ],
      "nota": "Foco no fortalecimento de CRAS e CREAS e na governança do sistema"
-    },
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      771
-     ],
-     "nota": "CRAS e CREAS como porta de entrada da rede"
     }
    }
   },
@@ -267,7 +260,7 @@
    "id": "p12",
    "subtema": "Rede SUAS e equipamentos",
    "proposta": "Implantar novos CREAS, Centros-Dia e serviços especializados de proteção social nos territórios de maior demanda",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-lucas-ribeiro-150002551789": {
      "posicao": "concorda",
@@ -276,20 +269,13 @@
       132
      ],
      "nota": ""
-    },
-    "governador-pb-cicero-lucena-150002544133": {
-     "posicao": "concorda",
-     "blocos": [
-      788
-     ],
-     "nota": "Centros Dia com acompanhante para pessoas idosas"
     }
    }
   },
   {
    "id": "p13",
    "subtema": "Rede SUAS e equipamentos",
-   "proposta": "Executar a política de assistência social em regime de cofinanciamento e pactuação permanente com os municípios",
+   "proposta": "Executar a política de assistência social em regime de cofinanciamento com os municípios",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
@@ -327,7 +313,7 @@
   {
    "id": "p15",
    "subtema": "Informação e monitoramento social",
-   "proposta": "Criar cadastro social estadual integrado e qualificado, reunindo dados de assistência, saúde e educação para identificar quem precisa",
+   "proposta": "Criar um cadastro social qualificado.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -429,7 +415,7 @@
   {
    "id": "p21",
    "subtema": "Inclusão produtiva e porta de saída",
-   "proposta": "Criar porta de saída da rede socioassistencial, priorizando famílias acompanhadas em vagas de qualificação e inclusão produtiva",
+   "proposta": "Criar porta de saída da rede socioassistencial.",
    "n_concorda": 2,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
@@ -468,7 +454,7 @@
    "id": "p23",
    "subtema": "Busca ativa e acompanhamento familiar",
    "proposta": "Adotar busca ativa das famílias vulneráveis, com acompanhamento continuado e fortalecimento de vínculos familiares em vez de esperar a demanda espontânea",
-   "n_concorda": 2,
+   "n_concorda": 1,
    "posicoes": {
     "governador-pb-cicero-lucena-150002544133": {
      "posicao": "concorda",
@@ -477,16 +463,105 @@
       795
      ],
      "nota": ""
-    },
+    }
+   }
+  },
+  {
+   "id": "p24",
+   "subtema": "Primeira infância e famílias",
+   "proposta": "Proteger a primeira infância como eixo da política estadual de assistência social, fortalecendo CRAS e CREAS e combatendo a fome com cozinhas comunitárias, bancos de alimentos e transferência de renda estadual.",
+   "n_concorda": 1,
+   "posicoes": {
     "governador-pb-efraim-filho-150002538692": {
      "posicao": "concorda",
      "blocos": [
-      190,
-      191
+      189
      ],
-     "nota": "Acompanhamento da evolução socioeconômica das famílias atendidas"
+     "nota": ""
     }
-   }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p25",
+   "subtema": "Primeira infância e famílias",
+   "proposta": "Instituir rede de proteção social que busca ativamente as famílias, com prioridade para a primeira infância e acompanhamento continuado das famílias mais vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      762,
+      795
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p6"
+  },
+  {
+   "id": "p27",
+   "subtema": "Rede SUAS e equipamentos",
+   "proposta": "Ampliar os Centros-Dia com acompanhante, as Instituições de Longa Permanência para Idosos, o teleatendimento social e o transporte intermunicipal gratuito para pessoas em vulnerabilidade social.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      788
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p12"
+  },
+  {
+   "id": "p28",
+   "subtema": "Rede SUAS e equipamentos",
+   "proposta": "Executar as ações de assistência social em regime de cofinanciamento com os municípios, tendo CRAS e CREAS como porta de entrada da rede.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-cicero-lucena-150002544133": {
+     "posicao": "concorda",
+     "blocos": [
+      771
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p13"
+  },
+  {
+   "id": "p29",
+   "subtema": "Informação e monitoramento social",
+   "proposta": "Combater a fome como política de Estado, com cadastro qualificado das famílias e porta de saída para a autonomia, vinculado à qualificação e à inclusão produtiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      189
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p15"
+  },
+  {
+   "id": "p30",
+   "subtema": "Inclusão produtiva e porta de saída",
+   "proposta": "Criar porta de saída para a autonomia na assistência social, vinculando os programas estaduais de transferência de renda a ações de qualificação e inclusão produtiva.",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-pb-efraim-filho-150002538692": {
+     "posicao": "concorda",
+     "blocos": [
+      189
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p21"
   }
  ],
  "blocos": {
