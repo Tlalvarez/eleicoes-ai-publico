@@ -74,10 +74,15 @@ function cartao(p, ordem, idx, ini, largura) {
   const metas = ordem.slice(ini, ini + largura)
     .map((s, i) => ({ col: i, itens: (p.posicoes[s]?.posicao === 'concorda' && p.posicoes[s]?.metas) || [] }))
     .filter((m) => m.itens.length);
+  // selo "contestado pelo candidato" (decisão do Thiago em 16/09, revisão jurídica §3.6):
+  // quando uma campanha pediu correção sobre esta proposta, o cartão diz isso e leva ao
+  // registro público. Sem texto livre no cartão: só o selo e o link para a entrada.
+  const contestada = Array.isArray(p.contestacoes) && p.contestacoes.length ? p.contestacoes : null;
   return {
     id: p.id, chave: `${p.id}@${ini}`, ini, largura, colunas, a, b,
     comContra: colunas.includes('contra'), nConcorda: q.length,
     ...(metas.length ? { metas } : {}),
+    ...(contestada ? { contestada } : {}),
   };
 }
 

@@ -15,6 +15,7 @@
  */
 import Busca from './Busca.astro';
 import { layout, contagens } from '../lib/comparacao.mjs';
+import { indiceDeContestacoes } from '../lib/correcoes.mjs';
 
 const { dados, base, trilha, paginas } = Astro.props;
 // o escopo da busca é o mesmo da página: 'presidente' ou 'governador/sp'
@@ -23,16 +24,25 @@ const escopoBusca = base.replace(/^\//, '');
 // trilha: [{ nome, href }] até o escopo; paginas: as páginas do escopo com comparação pronta
 const ordem = dados.candidatos.map((c) => c.slug);
 const porSlug = Object.fromEntries(dados.candidatos.map((c) => [c.slug, c]));
-const porId = Object.fromEntries(dados.propostas.map((p) => [p.id, p]));
-const L = layout(dados.propostas, ordem);
-const numeros = contagens(dados.propostas, ordem);
+// selo "contestado pelo candidato" (§3.6 da revisão jurídica, 16/09): o pedido de
+// campanha registrado em data/correcoes.json viaja DENTRO da proposta, porque a
+// mesma função de layout roda no navegador, onde não há arquivo para ler.
+const escopoCorrecoes = base.replace(/^\//, '');
+const contestacoes = indiceDeContestacoes();
+const propostas = dados.propostas.map((p) => {
+  const ids = contestacoes[`${escopoCorrecoes}|${dados.pagina}|${p.id}`];
+  return ids ? { ...p, contestacoes: ids } : p;
+});
+const porId = Object.fromEntries(propostas.map((p) => [p.id, p]));
+const L = layout(propostas, ordem);
+const numeros = contagens(propostas, ordem);
 
 // o que o navegador precisa para reposicionar e abrir trechos; `<` escapado
 // para o JSON nunca fechar a tag em que viaja
 const embutido = JSON.stringify({
   tema: dados.pagina,
   candidatos: dados.candidatos,
-  propostas: dados.propostas,
+  propostas,
   blocos: dados.blocos,
 }).replace(/</g, '\\u003c');
 
@@ -151,6 +161,9 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
                           ))}
                         </span>
                       )}
+                      {c.contestada && (
+                        <span class="selo-contestado">contestado pelo candidato</span>
+                      )}
                     </button>
                   );
                 })}
@@ -175,6 +188,9 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
                     </span>
                   ))}
                 </span>
+              )}
+              {linha.contestada && (
+                <span class="selo-contestado">contestado pelo candidato</span>
               )}
             </button>
           );
@@ -281,6 +297,12 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
         return cel;
       }));
       metas.hidden = !(c.metas && c.metas.length);
+      let selo = b.querySelector('.selo-contestado');
+      if (!selo) {
+        selo = el('span', 'selo-contestado', 'contestado pelo candidato');
+        b.append(selo);
+      }
+      selo.hidden = !(c.contestada && c.contestada.length);
       return b;
     }
 
@@ -482,6 +504,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       dlg.querySelector('.subtema').textContent = p.subtema;
       dlg.querySelector('#trechos-titulo').textContent = p.proposta;
       const frag = document.createDocumentFragment();
+      // §3.6 da revisão jurídica (16/09): o selo no cartão é só o aviso; o link para o
+      // registro público vive aqui, porque o cartão inteiro é um botão e link dentro de
+      // botão é HTML inválido. O pedido aparece tenha sido aceito ou recusado.
+      if (p.contestacoes && p.contestacoes.length) {
+        const aviso = el('p', 'contestado');
+        aviso.append(document.createTextNode(
+          p.contestacoes.length > 1
+            ? 'Campanhas pediram correção nesta proposta. '
+            : 'Uma campanha pediu correção nesta proposta. '));
+        const a = el('a', '', 'Ver o pedido e a decisão no registro público');
+        a.href = `/correcoes#pedido-${p.contestacoes[0]}`;
+        aviso.append(a);
+        frag.append(aviso);
+      }
       for (const s of selecao) {
         const v = p.posicoes[s];
         if (!v) continue;
@@ -683,4 +719,19 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     .comparacao dialog.trechos::before { margin: 0 -.9rem .8rem; }
     .comparacao .chip span { max-width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   }
+
+  /* selo "contestado pelo candidato" (§3.6 da revisão jurídica, 16/09): discreto, sem
+     cor de candidato ou partido, e sem texto livre — quem explica é o registro público. */
+  .proposta .selo-contestado {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin: .35rem .5rem 0;
+    padding: .1rem .45rem;
+    border: 1px solid var(--linha);
+    border-radius: 999px;
+    font-size: .78rem;
+    color: var(--tinta-suave);
+    background: var(--papel);
+  }
+  .proposta .selo-contestado[hidden] { display: none; }
 </style>

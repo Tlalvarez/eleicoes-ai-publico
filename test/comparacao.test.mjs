@@ -229,3 +229,30 @@ test('cartão sem meta não ganha o campo', () => {
   const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   assert.ok(L.linhas.filter((l) => l.tipo === 'cartao').every((c) => c.metas === undefined));
 });
+
+// o cartão nasce de duas formas: faixa (linha própria) e pilha (proposta de um
+// candidato só, empilhada na coluna dele). O selo vale nas duas.
+const cartoesDoLayout = (L) => L.linhas.flatMap(
+  (l) => (l.tipo === 'cartao' ? [l] : l.tipo === 'pilhas' ? l.pilhas.flat() : []));
+
+test('selo de contestação: só a proposta que uma campanha contestou o recebe, e o cartão não ganha texto livre', () => {
+  // §3.6 da revisão jurídica (16/09): o pedido de campanha registrado em correcoes.json
+  // acende um selo no cartão, ligado à entrada do registro. Pedido recusado também
+  // aparece, porque a recusa é pública.
+  const L = layout([{ ...PROPOSTAS[4], contestacoes: ['2026-09-16-1'] }, PROPOSTAS[2], PROPOSTAS[0]], ORDEM);
+  const cartoes = cartoesDoLayout(L);
+  assert.deepEqual(cartoes.filter((c) => c.contestada).map((c) => [c.id, c.contestada]),
+    [['p5', ['2026-09-16-1']]]);
+  for (const id of ['p3', 'p1']) {
+    assert.equal(cartoes.find((c) => c.id === id).contestada, undefined, `${id} não tem pedido: sem selo`);
+  }
+  // o selo não carrega texto do candidato: só os ids do registro
+  assert.ok(cartoes.find((c) => c.contestada).contestada.every((x) => typeof x === 'string'));
+});
+
+test('lista de contestações vazia não acende selo, e a proposta de um candidato só também pode ser contestada', () => {
+  const vazia = cartoesDoLayout(layout([{ ...PROPOSTAS[4], contestacoes: [] }], ORDEM));
+  assert.equal(vazia[0].contestada, undefined);
+  const naPilha = cartoesDoLayout(layout([{ ...PROPOSTAS[0], contestacoes: ['2026-09-16-9'] }], ORDEM));
+  assert.deepEqual(naPilha.map((c) => c.contestada), [['2026-09-16-9']], 'na pilha o selo também acende');
+});
