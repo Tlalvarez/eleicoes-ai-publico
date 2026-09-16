@@ -69,9 +69,15 @@ function cartao(p, ordem, idx, ini, largura) {
   const qi = q.map((s) => idx[s]).filter((i) => i >= ini && i < ini + largura);
   const a = qi.length ? Math.min(...qi) - ini : 0;
   const b = qi.length ? Math.max(...qi) - ini : largura - 1;
+  // metas (decisão do Thiago em 15/09): o número que só um candidato escreveu vive na posição dele
+  // e aparece numa tarja na coluna dele, dentro do cartão. `col` é relativa ao cartão.
+  const metas = ordem.slice(ini, ini + largura)
+    .map((s, i) => ({ col: i, itens: (p.posicoes[s]?.posicao === 'concorda' && p.posicoes[s]?.metas) || [] }))
+    .filter((m) => m.itens.length);
   return {
     id: p.id, chave: `${p.id}@${ini}`, ini, largura, colunas, a, b,
     comContra: colunas.includes('contra'), nConcorda: q.length,
+    ...(metas.length ? { metas } : {}),
   };
 }
 

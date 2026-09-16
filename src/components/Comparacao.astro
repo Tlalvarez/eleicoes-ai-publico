@@ -141,6 +141,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
                       <span class="conteudo" style={estiloConteudo(c)}>
                         <span class="texto">{p.proposta}</span>
                       </span>
+                      {c.metas && (
+                        <span class="metas" style={`grid-template-columns:repeat(${c.largura},1fr)`}>
+                          {c.metas.map((m) => (
+                            <span class="meta" style={`grid-column:${m.col + 1}`}>
+                              <b>Meta no programa</b>
+                              {m.itens.map((x) => <span class="item">{x.rotulo}: {x.valor}</span>)}
+                            </span>
+                          ))}
+                        </span>
+                      )}
                     </button>
                   );
                 })}
@@ -156,6 +166,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
               <span class="conteudo" style={estiloConteudo(linha)}>
                 <span class="texto">{p.proposta}</span>
               </span>
+              {linha.metas && (
+                <span class="metas" style={`grid-template-columns:repeat(${linha.largura},1fr)`}>
+                  {linha.metas.map((m) => (
+                    <span class="meta" style={`grid-column:${m.col + 1}`}>
+                      <b>Meta no programa</b>
+                      {m.itens.map((x) => <span class="item">{x.rotulo}: {x.valor}</span>)}
+                    </span>
+                  ))}
+                </span>
+              )}
             </button>
           );
         })}
@@ -231,6 +251,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       const conteudo = el('span', 'conteudo');
       conteudo.append(el('span', 'texto', p.proposta));
       b.append(conteudo);
+      b.append(el('span', 'metas'));
       cartoes.set(chave, b);
       return b;
     }
@@ -245,6 +266,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       colunas.style.gridTemplateColumns = `repeat(${c.largura},1fr)`;
       colunas.replaceChildren(...c.colunas.map((k) => el('span', k === 'concorda' ? '' : k)));
       b.querySelector('.conteudo').style.gridColumn = `${c.a + 1} / span ${c.b - c.a + 1}`;
+      const metas = b.querySelector('.metas');
+      metas.style.gridTemplateColumns = `repeat(${c.largura},1fr)`;
+      metas.replaceChildren(...(c.metas ?? []).map((m) => {
+        const cel = el('span', 'meta');
+        cel.style.gridColumn = String(m.col + 1);
+        cel.append(el('b', '', 'Meta no programa'));
+        for (const x of m.itens) cel.append(el('span', 'item', `${x.rotulo}: ${x.valor}`));
+        return cel;
+      }));
+      metas.hidden = !(c.metas && c.metas.length);
       return b;
     }
 
@@ -599,6 +630,13 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   /* com discordância na faixa, o rótulo "propõe o contrário" ganha uma linha própria acima do texto */
   .comparacao .proposta .texto { font-size: .95rem; line-height: 1.4; margin-top: .6rem; }
   .comparacao .proposta.com-contra .texto { margin-top: 1.9rem; }
+  /* meta do candidato (15/09): o número que só ele escreveu, na coluna dele, dentro do cartão */
+  .comparacao .proposta .metas { grid-column: 1 / -1; display: grid; margin-top: .45rem; }
+  .comparacao .proposta .meta { background: #fdf3dc; border-top: 1px dashed #e0be6a; padding: .35rem .8rem .4rem;
+    font-size: .8rem; line-height: 1.35; }
+  .comparacao .proposta .meta b { display: block; font-size: .62rem; font-weight: 800; letter-spacing: .07em;
+    text-transform: uppercase; color: #7a5c12; }
+  .comparacao .proposta .meta .item { display: block; }
   /* candidatos não adjacentes (15/09): um cartão só; cada trecho é uma caixa, a lacuna é uma linha
      tracejada, e os trechos depois do primeiro dizem só "Concorda" */
   .comparacao .proposta.com-lacuna { background: transparent; border: 0; border-radius: 0; overflow: visible; }

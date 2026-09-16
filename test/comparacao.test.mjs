@@ -209,3 +209,23 @@ test('cartão de origem com um candidato só também traz as derivadas logo abai
   assert.ok(!seq.includes('pilha:pai') && !seq.includes('pilha:f1'));
   assert.ok(seq.includes('pilha:solta'));
 });
+
+
+test('meta do candidato vira tarja na coluna dele, dentro do cartão', () => {
+  const comMeta = {
+    id: 'm1', subtema: 's', proposta: 'Ampliar e fortalecer o seguro rural.',
+    posicoes: {
+      a: { posicao: 'concorda', blocos: [1], nota: '', metas: [{ rotulo: 'produção agropecuária', valor: 'dobrar em 8 a 10 anos' }] },
+      c: { posicao: 'concorda', blocos: [2], nota: '' },
+    },
+  };
+  const L = layout([comMeta], ORDEM, 'concordancia');
+  const cartao = L.linhas.find((l) => l.tipo === 'cartao');
+  assert.deepEqual(cartao.metas, [{ col: 0, itens: [{ rotulo: 'produção agropecuária', valor: 'dobrar em 8 a 10 anos' }] }]);
+  assert.equal(cartao.largura, 3, 'a tarja não muda a largura do cartão');
+});
+
+test('cartão sem meta não ganha o campo', () => {
+  const L = layout(PROPOSTAS, ORDEM, 'concordancia');
+  assert.ok(L.linhas.filter((l) => l.tipo === 'cartao').every((c) => c.metas === undefined));
+});
