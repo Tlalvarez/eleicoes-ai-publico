@@ -1,102 +1,140 @@
 ---
+import IconeFluxo from './IconeFluxo.astro';
 /**
- * O diagrama editorial como fluxo de objetos: o que entra, quem transforma,
- * o que sai. Pedido do Thiago (15/09/2026) no lugar da lista de etapas: cada
- * caixa é um OBJETO (PDF, texto, trechos, propostas, página) e cada faixa é um
- * ATOR aplicando uma AÇÃO que muda o objeto de estado.
- *
- * Espelha o pipeline real da v3 (harness): congela_entradas → fatia_blocos →
+ * O fluxograma editorial: o que entra, quem transforma, o que sai — em estilo
+ * infográfico (pedido do Thiago, 15/09/2026), com ícone para cada OBJETO e
+ * para cada ATOR. Rigor antes de estilo: cada caixa e cada seta existem no
+ * pipeline real da v3 (harness): congela_entradas → fatia_blocos →
  * rotula_blocos → confere_rotulos → compara_tema → varredura_tema → cruza_tema
  * → confere_discordancias → confere_fidelidade → aplica_fidelidade →
  * funde_proprias → tira_espelhos → exporta_site. Mudou o pipeline, muda aqui.
  *
- * `fluxo` alterna objeto e transformação, sempre nesta ordem: o objeto de cima
- * é a entrada da faixa seguinte, e o objeto de baixo é a saída dela.
+ * `fluxo` alterna objeto e transformação: o objeto acima de uma faixa é a
+ * entrada dela; o objeto abaixo é a saída. Quando duas faixas se seguem, é
+ * porque duas conferências agem sobre o mesmo objeto antes de ele mudar.
  */
 const fluxo = [
-  { tipo: 'objeto', nome: 'Programa de governo', detalhe: 'O documento escrito pela campanha, do tamanho que ela quiser: de 20 a 1.742 páginas.' },
   {
-    tipo: 'acao', ator: 'Candidato', quem: 'candidato', acao: 'registra',
+    tipo: 'objeto', icone: 'programa', nome: 'Programa de governo',
+    detalhe: 'O documento escrito pela campanha, do tamanho que ela quiser: de 20 a 1.742 páginas.',
+  },
+  {
+    tipo: 'acao', ator: 'Candidato', quem: 'candidato', icone: 'candidato', acao: 'registra',
     detalhe: 'Ao pedir o registro da candidatura, o candidato entrega o programa ao TSE. É este documento — e nenhum outro — que comparamos.',
   },
-  { tipo: 'objeto', nome: 'PDF público no site do TSE', detalhe: 'Um arquivo por candidatura, com o carimbo do TSE.' },
   {
-    tipo: 'acao', ator: 'Código de extração', quem: 'codigo', acao: 'extrai o texto',
+    tipo: 'objeto', icone: 'pdf', nome: 'PDF público no site do TSE',
+    detalhe: 'Um arquivo por candidatura, com o carimbo do TSE.',
+  },
+  {
+    tipo: 'acao', ator: 'Código de extração', quem: 'codigo', icone: 'codigo', acao: 'extrai o texto',
     detalhe: 'O PDF vira texto, página a página, e é congelado: guardamos a impressão digital (sha256) do arquivo e do texto. Tudo o que vem depois aponta para essa versão.',
   },
-  { tipo: 'objeto', nome: 'Programa em texto, congelado', detalhe: 'O texto inteiro, com o número da página de cada parte.' },
   {
-    tipo: 'acao', ator: 'Código', quem: 'codigo', acao: 'fatia em trechos',
+    tipo: 'objeto', icone: 'texto', nome: 'Programa em texto, congelado',
+    detalhe: 'O texto inteiro, com o número da página de cada parte.',
+  },
+  {
+    tipo: 'acao', ator: 'Código', quem: 'codigo', icone: 'codigo', acao: 'fatia em trechos',
     detalhe: 'O corte segue fronteiras gerais: seção, página, linha em branco, item de lista, fim de frase. Juntando os trechos de volta, sai o texto inteiro — sem sobra nem repetição.',
   },
-  { tipo: 'objeto', nome: 'Trechos numerados', detalhe: 'Centenas por programa. O número é o endereço do trecho, e é por ele que tudo se cita depois.' },
   {
-    tipo: 'acao', ator: 'Modelo de IA', quem: 'modelo', acao: 'etiqueta por tema',
-    detalhe: 'O modelo recebe os trechos numerados e devolve o tema de cada um — economia, saúde, segurança… Ele devolve número e tema, nunca o texto. O código confere: trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
+    tipo: 'objeto', icone: 'trechos', nome: 'Trechos numerados',
+    detalhe: 'Centenas por programa. O número é o endereço do trecho, e é por ele que tudo se cita depois.',
   },
-  { tipo: 'objeto', nome: 'Trechos com tema', detalhe: 'Agora dá para juntar, num tema só, o que os seis programas dizem sobre ele.' },
   {
-    tipo: 'acao', ator: 'Modelo de IA', quem: 'modelo', acao: 'compara e escreve as propostas',
-    detalhe: 'Os trechos daquele tema, de todos os candidatos, entram juntos numa leitura só. O modelo escreve cada proposta uma vez, em frase neutra, e diz, para cada candidato, se ele propõe, propõe o contrário ou não cita — apontando os trechos em que se baseou. Duas passadas de repescagem recuperam o que ficou de fora.',
+    tipo: 'acao', ator: 'Modelo de IA', quem: 'modelo', icone: 'modelo', acao: 'etiqueta por tema',
+    detalhe: 'O modelo recebe os trechos numerados e devolve o tema de cada um — economia, saúde, segurança… Devolve número e tema, nunca o texto. O código confere: trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
   },
-  { tipo: 'objeto', nome: 'Propostas com posições', detalhe: 'Cada proposta com a lista de quem propõe, quem se opõe e quem não cita, e os trechos de cada um.' },
   {
-    tipo: 'acao', ator: 'Código', quem: 'codigo', acao: 'confere as citações',
+    tipo: 'objeto', icone: 'trechos-tema', nome: 'Trechos com tema',
+    detalhe: 'Agora dá para juntar, num tema só, o que os seis programas dizem sobre ele.',
+  },
+  {
+    tipo: 'acao', ator: 'Modelo de IA', quem: 'modelo', icone: 'modelo', acao: 'compara e escreve as propostas',
+    entrada: 'Entram juntos os trechos daquele tema nos seis programas',
+    detalhe: 'Numa leitura só, o modelo escreve cada proposta uma vez, em frase neutra, e diz, para cada candidato, se ele propõe, propõe o contrário ou não cita — apontando os trechos em que se baseou. Duas passadas de repescagem recuperam o que ficou de fora.',
+  },
+  {
+    tipo: 'objeto', icone: 'propostas', nome: 'Propostas com posições',
+    detalhe: 'Cada proposta com a lista de quem propõe, quem se opõe e quem não cita, e os trechos de cada um.',
+  },
+  {
+    tipo: 'acao', ator: 'Código', quem: 'codigo', icone: 'codigo', acao: 'confere as citações',
     detalhe: 'Cada trecho citado tem de existir, ser daquele candidato e estar na entrada da leitura. O que não passa é recusado — o modelo não tem como inventar uma fonte.',
   },
   {
-    tipo: 'acao', ator: 'Modelo às cegas', quem: 'juiz', acao: 'julga as oposições',
-    detalhe: 'Entra cada posição marcada como "propõe o contrário", sem nome de candidato. Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição; propor outro caminho para o mesmo fim, não — e essa posição cai para "não cita".',
+    tipo: 'acao', ator: 'Modelo às cegas', quem: 'cego', icone: 'cego', acao: 'julga as oposições',
+    entrada: 'Entra cada posição marcada como "propõe o contrário", sem nome de candidato',
+    detalhe: 'Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição. Propor outro caminho para o mesmo fim, não — e essa posição cai para "não cita".',
   },
   {
-    tipo: 'acao', ator: 'Modelo às cegas', quem: 'juiz', acao: 'julga a sustentação',
-    detalhe: 'Entra cada candidato de uma proposta compartilhada, com os trechos dele e sem nome. Sustenta: fica. Sustenta só em parte: a proposta passa a ter só o núcleo comum, e o detalhe dele vira uma proposta própria. Não sustenta: sai — e só vira "propõe o contrário" se duas leituras cegas confirmarem.',
+    tipo: 'acao', ator: 'Modelo às cegas', quem: 'cego', icone: 'cego', acao: 'julga a sustentação',
+    entrada: 'Entra cada candidato de uma proposta compartilhada, com os trechos dele e sem nome',
+    detalhe: 'Sustenta: fica. Sustenta só em parte: a proposta passa a ter só o núcleo comum, e o detalhe dele vira uma proposta própria. Não sustenta: sai — e só vira "propõe o contrário" se duas leituras cegas confirmarem.',
   },
-  { tipo: 'objeto', nome: 'Propostas conferidas', detalhe: 'Mais as propostas próprias que nasceram de quem sustentava só parte da frase.' },
   {
-    tipo: 'acao', ator: 'Código', quem: 'codigo', acao: 'funde e tira espelhos',
+    tipo: 'objeto', icone: 'conferidas', nome: 'Propostas conferidas',
+    detalhe: 'Mais as propostas próprias que nasceram de quem sustentava só parte da frase.',
+  },
+  {
+    tipo: 'acao', ator: 'Código', quem: 'codigo', icone: 'codigo', acao: 'funde e tira espelhos',
     detalhe: 'Propostas próprias quase iguais do mesmo candidato viram uma. Propostas espelhadas — o mesmo assunto escrito duas vezes, uma de cada lado, como "permanecer no BRICS" e "retirar o Brasil do BRICS" — viram uma, depois de uma leitura cega confirmar que decidem a mesma coisa.',
   },
-  { tipo: 'objeto', nome: 'Comparação da página', detalhe: 'A lista final de propostas daquele tema, com as posições e os trechos de origem.' },
   {
-    tipo: 'acao', ator: 'Pessoa', quem: 'pessoa', acao: 'revisa e publica',
+    tipo: 'objeto', icone: 'comparacao', nome: 'Comparação da página',
+    detalhe: 'A lista final de propostas daquele tema, com as posições e os trechos de origem.',
+  },
+  {
+    tipo: 'acao', ator: 'Pessoa', quem: 'pessoa', icone: 'pessoa', acao: 'revisa e publica',
     detalhe: 'Uma pessoa lê a página pronta e decide o que entra. É aqui que ficam as escolhas editoriais que o código não toma sozinho.',
   },
-  { tipo: 'objeto', nome: 'Página no site', detalhe: 'Os cartões que você lê, os trechos que abrem ao toque e a busca daquele tema.', fim: true },
+  {
+    tipo: 'objeto', icone: 'pagina', nome: 'Página no site', fim: true,
+    detalhe: 'Os cartões que você lê, os trechos que abrem ao toque e a busca daquele tema.',
+  },
 ];
 
-const legendas = {
-  candidato: 'Candidato',
-  codigo: 'Código',
-  modelo: 'Modelo de IA',
-  juiz: 'Modelo lendo às cegas',
-  pessoa: 'Pessoa',
-};
+const legendas = [
+  { quem: 'candidato', icone: 'candidato', rotulo: 'Candidato' },
+  { quem: 'codigo', icone: 'codigo', rotulo: 'Código' },
+  { quem: 'modelo', icone: 'modelo', rotulo: 'Modelo de IA' },
+  { quem: 'cego', icone: 'cego', rotulo: 'Modelo lendo às cegas' },
+  { quem: 'pessoa', icone: 'pessoa', rotulo: 'Pessoa' },
+];
 ---
 
 <figure class="fluxo-editorial" aria-labelledby="diagrama-editorial-titulo">
   <figcaption id="diagrama-editorial-titulo">
     O que entra, quem transforma, o que sai — do programa registrado à página que você lê.
   </figcaption>
+
   <p class="legenda">
     <span class="rotulo-legenda">Quem transforma:</span>
-    {Object.entries(legendas).map(([k, v]) => (
-      <span class={`chip ${k}`}>{v}</span>
+    {legendas.map((l) => (
+      <span class={`chip ${l.quem}`}>
+        <span class="bolinha"><IconeFluxo nome={l.icone} tamanho={14} /></span>{l.rotulo}
+      </span>
     ))}
   </p>
 
   <ol class="cadeia">
     {fluxo.map((p) => (p.tipo === 'objeto' ? (
       <li class={`objeto${p.fim ? ' fim' : ''}`}>
-        <span class="tag">Objeto</span>
-        <h3>{p.nome}</h3>
-        <p>{p.detalhe}</p>
+        <span class="figura" aria-hidden="true"><IconeFluxo nome={p.icone} tamanho={30} /></span>
+        <div class="corpo">
+          <span class="tag">Objeto</span>
+          <h3>{p.nome}</h3>
+          <p>{p.detalhe}</p>
+        </div>
       </li>
     ) : (
       <li class={`transformacao ${p.quem}`}>
-        <span class="seta" aria-hidden="true"></span>
+        <span class="trilho" aria-hidden="true"></span>
+        <span class="avatar" aria-hidden="true"><IconeFluxo nome={p.icone} tamanho={22} /></span>
         <div class="corpo">
-          <p class="cabeca"><span class={`chip ${p.quem}`}>{p.ator}</span><span class="acao">{p.acao}</span></p>
+          <p class="cabeca"><span class="ator">{p.ator}</span><span class="acao">{p.acao}</span></p>
+          {p.entrada && <p class="entrada">{p.entrada}</p>}
           <p>{p.detalhe}</p>
         </div>
       </li>
@@ -114,51 +152,69 @@ const legendas = {
 <style>
   .fluxo-editorial { margin: 1.5rem 0 2rem; padding: 0; }
   .fluxo-editorial figcaption { font-weight: 700; color: var(--tinta); margin-bottom: .6rem; }
-  .fluxo-editorial .legenda { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 1rem; }
+
+  .fluxo-editorial .legenda { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 1.1rem; }
   .fluxo-editorial .rotulo-legenda { font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
     color: var(--tinta-suave); margin-right: .2rem; }
-  .fluxo-editorial .chip { font-size: .72rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
-    padding: .2rem .5rem; border-radius: 999px; border: 1px solid var(--linha); color: var(--tinta-suave); background: var(--cartao); }
-  .fluxo-editorial .chip.candidato { border-color: var(--linha-forte); color: var(--tinta); }
-  .fluxo-editorial .chip.codigo { border-color: var(--linha-forte); }
+  .fluxo-editorial .chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .72rem; font-weight: 800;
+    letter-spacing: .04em; text-transform: uppercase; padding: .2rem .55rem .2rem .25rem; border-radius: 999px;
+    border: 1px solid var(--linha); color: var(--tinta-suave); background: var(--cartao); }
+  .fluxo-editorial .chip .bolinha { display: grid; place-items: center; width: 1.35rem; height: 1.35rem; border-radius: 50%;
+    background: var(--realce); color: var(--tinta-suave); }
+  .fluxo-editorial .chip.candidato, .fluxo-editorial .chip.codigo { border-color: var(--linha-forte); }
   .fluxo-editorial .chip.modelo { border-color: var(--azul-claro); color: var(--azul); }
-  .fluxo-editorial .chip.juiz { border-color: var(--atencao); color: var(--atencao); }
+  .fluxo-editorial .chip.modelo .bolinha { background: var(--realce); color: var(--azul); }
+  .fluxo-editorial .chip.cego { border-color: var(--atencao); color: var(--atencao); }
+  .fluxo-editorial .chip.cego .bolinha { background: rgba(165, 68, 42, .1); color: var(--atencao); }
   .fluxo-editorial .chip.pessoa { border-color: var(--verde); color: var(--verde); }
+  .fluxo-editorial .chip.pessoa .bolinha { background: rgba(46, 125, 50, .1); color: var(--verde); }
 
   .fluxo-editorial .cadeia { list-style: none; margin: 0; padding: 0; }
 
-  /* objeto: o estado em que a informação está */
-  .fluxo-editorial .objeto { background: var(--cartao); border: 1px solid var(--linha-forte); border-left: 4px solid var(--azul);
-    border-radius: var(--raio); padding: .7rem .9rem; }
+  /* OBJETO: a caixa do fluxograma — o estado em que a informação está */
+  .fluxo-editorial .objeto { display: grid; grid-template-columns: 3.4rem 1fr; align-items: center; gap: .9rem;
+    background: var(--cartao); border: 1px solid var(--linha-forte); border-left: 4px solid var(--azul);
+    border-radius: var(--raio); padding: .75rem .95rem; box-shadow: var(--sombra-leve); }
   .fluxo-editorial .objeto.fim { border-left-color: var(--verde); }
-  .fluxo-editorial .objeto .tag { display: inline-block; font-size: .65rem; font-weight: 800; letter-spacing: .1em;
+  .fluxo-editorial .objeto .figura { display: grid; place-items: center; width: 3.4rem; height: 3.4rem; border-radius: 12px;
+    background: var(--realce); color: var(--azul); }
+  .fluxo-editorial .objeto.fim .figura { background: rgba(46, 125, 50, .1); color: var(--verde); }
+  .fluxo-editorial .objeto .tag { display: block; font-size: .65rem; font-weight: 800; letter-spacing: .1em;
     text-transform: uppercase; color: var(--tinta-suave); }
-  .fluxo-editorial .objeto h3 { margin: .1rem 0 .25rem; font-size: 1rem; line-height: 1.3; }
+  .fluxo-editorial .objeto h3 { margin: .05rem 0 .25rem; font-size: 1rem; line-height: 1.3; }
   .fluxo-editorial .objeto p { margin: 0; font-size: .92rem; color: var(--tinta-suave); }
 
-  /* transformação: quem pega o objeto de cima e devolve o de baixo */
-  .fluxo-editorial .transformacao { position: relative; display: grid; grid-template-columns: 2rem 1fr; gap: .6rem;
-    padding: .45rem 0 .45rem .2rem; }
-  .fluxo-editorial .transformacao .seta { position: relative; width: 2rem; }
-  /* a linha desce do objeto de cima até o de baixo, com a ponta da seta no fim */
-  .fluxo-editorial .transformacao .seta::before { content: ''; position: absolute; left: .85rem; top: -.45rem; bottom: -.45rem;
+  /* TRANSFORMAÇÃO: a seta do fluxograma, com o ator dentro dela */
+  .fluxo-editorial .transformacao { position: relative; display: grid; grid-template-columns: 3.4rem 1fr; gap: .9rem;
+    padding: .55rem 0 .55rem 0; align-items: start; }
+  /* o trilho desce do objeto de cima ao de baixo, atrás do avatar, e termina em ponta de seta */
+  .fluxo-editorial .transformacao .trilho { position: absolute; left: 1.65rem; top: -.6rem; bottom: -.6rem;
     border-left: 2px solid var(--linha-forte); }
-  .fluxo-editorial .transformacao .seta::after { content: ''; position: absolute; left: .45rem; bottom: -.5rem;
+  .fluxo-editorial .transformacao .trilho::after { content: ''; position: absolute; left: -.37rem; bottom: -.15rem;
     border: .35rem solid transparent; border-top-color: var(--linha-forte); }
-  .fluxo-editorial .transformacao .corpo { border-left: 3px solid var(--linha); padding: .1rem 0 .1rem .7rem; }
-  .fluxo-editorial .transformacao.modelo .corpo { border-left-color: var(--azul-claro); }
-  .fluxo-editorial .transformacao.juiz .corpo { border-left-color: var(--atencao); }
-  .fluxo-editorial .transformacao.pessoa .corpo { border-left-color: var(--verde); }
-  .fluxo-editorial .transformacao .cabeca { display: flex; flex-wrap: wrap; align-items: center; gap: .45rem; margin: 0 0 .25rem; }
-  .fluxo-editorial .transformacao .acao { font-weight: 800; color: var(--tinta); }
+  .fluxo-editorial .transformacao .avatar { position: relative; z-index: 1; display: grid; place-items: center;
+    width: 2.6rem; height: 2.6rem; margin: 0 auto; border-radius: 50%; border: 2px solid var(--linha-forte);
+    background: var(--cartao); color: var(--tinta-suave); }
+  .fluxo-editorial .transformacao.modelo .avatar { border-color: var(--azul-claro); color: var(--azul); }
+  .fluxo-editorial .transformacao.cego .avatar { border-color: var(--atencao); color: var(--atencao); }
+  .fluxo-editorial .transformacao.pessoa .avatar { border-color: var(--verde); color: var(--verde); }
+  .fluxo-editorial .transformacao .corpo { padding: .15rem 0; }
+  .fluxo-editorial .transformacao .cabeca { display: flex; flex-wrap: wrap; align-items: baseline; gap: .45rem; margin: 0 0 .2rem; }
+  .fluxo-editorial .transformacao .ator { font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--tinta-suave); }
+  .fluxo-editorial .transformacao.modelo .ator { color: var(--azul); }
+  .fluxo-editorial .transformacao.cego .ator { color: var(--atencao); }
+  .fluxo-editorial .transformacao.pessoa .ator { color: var(--verde); }
+  .fluxo-editorial .transformacao .acao { font-weight: 800; font-size: 1rem; color: var(--tinta); }
+  .fluxo-editorial .transformacao .entrada { margin: 0 0 .2rem; font-size: .82rem; font-weight: 600; color: var(--tinta-suave); }
   .fluxo-editorial .transformacao .corpo p:last-child { margin: 0; font-size: .92rem; }
 
-  .fluxo-editorial .nota { margin: 1rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
+  .fluxo-editorial .nota { margin: 1.1rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
 
   @media (max-width: 30rem) {
-    .fluxo-editorial .transformacao { grid-template-columns: 1.2rem 1fr; gap: .45rem; }
-    .fluxo-editorial .transformacao .seta { width: 1.2rem; }
-    .fluxo-editorial .transformacao .seta::before { left: .5rem; }
-    .fluxo-editorial .transformacao .seta::after { left: .1rem; }
+    .fluxo-editorial .objeto, .fluxo-editorial .transformacao { grid-template-columns: 2.6rem 1fr; gap: .6rem; }
+    .fluxo-editorial .objeto .figura { width: 2.6rem; height: 2.6rem; border-radius: 10px; }
+    .fluxo-editorial .transformacao .trilho { left: 1.25rem; }
+    .fluxo-editorial .transformacao .avatar { width: 2.2rem; height: 2.2rem; }
   }
 </style>

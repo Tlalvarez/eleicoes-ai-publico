@@ -1,0 +1,124 @@
+---
+/**
+ * Os ícones do fluxo editorial (`DiagramaEditorial.astro`): objetos e atores.
+ *
+ * SVG literal, no traço da lupa da busca (viewBox 24, `currentColor`,
+ * `aria-hidden`): o gate de render seguro proíbe `set:html`, e o de
+ * acessibilidade cobra `alt` em `<img>` — ícone que é decoração entra como
+ * SVG inline e some para o leitor de tela. O significado está sempre no texto
+ * ao lado, nunca no desenho.
+ */
+interface Props { nome: string; tamanho?: number; }
+const { nome, tamanho = 28 } = Astro.props;
+const t = String(tamanho);
+---
+{nome === 'programa' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M5 3h10l4 4v14H5z" /><path d="M15 3v4h4" /><path d="M8 11h8M8 14.5h8M8 18h5" />
+  </svg>
+)}
+{nome === 'pdf' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M5 3h9l5 5v8H5z" /><path d="M14 3v5h5" />
+    <circle cx="12" cy="19" r="3" /><path d="M10.7 19l.9.9 1.7-1.8" />
+  </svg>
+)}
+{nome === 'texto' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M5 3h9l5 5v13H5z" /><path d="M14 3v5h5" />
+    <path d="M9 12.5h2.2M13.4 12.5h1.8M9 16h1.6M12.4 16h2.6" />
+    <path d="M8 19.5h3" />
+  </svg>
+)}
+{nome === 'trechos' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <rect x="3.5" y="3.5" width="17" height="4.6" rx="1.4" />
+    <rect x="3.5" y="9.7" width="17" height="4.6" rx="1.4" />
+    <rect x="3.5" y="15.9" width="17" height="4.6" rx="1.4" />
+    <path d="M6.3 5.8h.01M6.3 12h.01M6.3 18.2h.01" stroke-width="2.6" />
+  </svg>
+)}
+{nome === 'trechos-tema' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <rect x="2.5" y="4" width="11.5" height="4.4" rx="1.3" />
+    <rect x="2.5" y="10" width="11.5" height="4.4" rx="1.3" />
+    <rect x="2.5" y="16" width="11.5" height="4.4" rx="1.3" />
+    <path d="M17 5.2h3.2a1 1 0 0 1 1 1v2.1a1 1 0 0 1-1 1H17z" />
+    <path d="M17 14.5h3.2a1 1 0 0 1 1 1v2.1a1 1 0 0 1-1 1H17z" />
+  </svg>
+)}
+{nome === 'propostas' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M3 4.5h18" stroke-width="2.4" />
+    <rect x="3" y="7.5" width="12" height="4.2" rx="1.2" />
+    <rect x="9" y="13.5" width="12" height="4.2" rx="1.2" />
+    <path d="M3 19.5h4.5" />
+  </svg>
+)}
+{nome === 'conferidas' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M3 4.5h18" stroke-width="2.4" />
+    <rect x="3" y="7.5" width="10" height="4.2" rx="1.2" />
+    <rect x="3" y="13.5" width="7" height="4.2" rx="1.2" />
+    <path d="M14.5 16.5l2 2 4.2-4.6" stroke-width="2.2" />
+  </svg>
+)}
+{nome === 'comparacao' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <rect x="2.5" y="3.5" width="19" height="17" rx="2" />
+    <path d="M2.5 8h19" /><path d="M9 8v12.5M15.5 8v12.5" />
+    <path d="M4.6 11.5h2.8M11 11.5h2.8M11 15.5h2.8M17.5 15.5h2" stroke-width="2.2" />
+  </svg>
+)}
+{nome === 'pagina' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <rect x="2.5" y="3.5" width="19" height="17" rx="2" />
+    <path d="M2.5 7.5h19" /><path d="M5 5.5h.01M7.5 5.5h.01M10 5.5h.01" stroke-width="2" />
+    <rect x="5" y="10" width="8.5" height="3.4" rx="1" />
+    <rect x="5" y="15" width="14" height="3.4" rx="1" />
+  </svg>
+)}
+{nome === 'candidato' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <circle cx="12" cy="8" r="3.6" /><path d="M4.8 20c.6-3.6 3.6-5.6 7.2-5.6s6.6 2 7.2 5.6" />
+  </svg>
+)}
+{nome === 'codigo' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M8.5 7.5 3.5 12l5 4.5" /><path d="M15.5 7.5 20.5 12l-5 4.5" /><path d="M13.6 5.5l-3.2 13" />
+  </svg>
+)}
+{nome === 'modelo' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <rect x="6" y="6" width="12" height="12" rx="3" />
+    <path d="M12 2.5v3.5M12 18v3.5M2.5 12H6M18 12h3.5M6.6 6.6 4.2 4.2M17.4 6.6l2.4-2.4M6.6 17.4l-2.4 2.4M17.4 17.4l2.4 2.4" />
+    <path d="M10.2 10.2h3.6v3.6h-3.6z" />
+  </svg>
+)}
+{nome === 'cego' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <path d="M2.5 12S6 6.5 12 6.5 21.5 12 21.5 12 18 17.5 12 17.5 2.5 12 2.5 12z" />
+    <circle cx="12" cy="12" r="2.6" />
+    <path d="M4 19.5 20 4.5" stroke-width="2.4" />
+  </svg>
+)}
+{nome === 'pessoa' && (
+  <svg width={t} height={t} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+    <circle cx="9.5" cy="7.5" r="3.2" /><path d="M3.5 19.5c.5-3.2 3-5 6-5 1 0 1.9.2 2.7.6" />
+    <path d="M14.5 20.5l5.8-5.8a1.7 1.7 0 0 0-2.4-2.4l-5.8 5.8-.5 2.9z" />
+  </svg>
+)}
