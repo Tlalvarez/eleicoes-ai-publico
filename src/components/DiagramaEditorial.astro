@@ -2,15 +2,17 @@
 import IconeFluxo from './IconeFluxo.astro';
 /**
  * O fluxograma editorial, em linhas que se leem como frase (pedido do Thiago,
- * 15/09/2026): ATOR + AÇÃO + objeto que ENTRA + "em" + objeto que SAI. Lido na
- * transversal dá "Candidato registra Programa de governo em PDF público no
- * TSE"; lido de cima para baixo, a saída de uma linha é a entrada da seguinte.
+ * 15/09/2026): ATOR + AÇÃO + objeto que ENTRA + "em" + objeto que SAI.
+ *
+ * Os nomes dos objetos são para quem nunca ouviu os nossos termos (3ª decisão
+ * do Thiago, 15/09): nada de "bloco", "rótulo", "posição" ou "núcleo". O nome
+ * tem de bastar — a linha de detalhe é opcional e só existe onde há uma regra
+ * dura que o nome não cabe (o corte de 5%, a definição de oposição).
  *
  * Cada OBJETO é declarado UMA vez em `objetos` — nome, ícone e cor — e as
- * linhas só o referenciam pela chave. Assim o mesmo objeto tem sempre a mesma
- * cara em toda etapa, e objetos diferentes têm cores diferentes (2ª decisão do
- * Thiago, 15/09). O portão no fim do frontmatter quebra o BUILD se a corrente
- * se romper: a saída de uma linha tem de ser a entrada da seguinte.
+ * linhas só o referenciam pela chave. O portão no fim do frontmatter quebra o
+ * BUILD se a corrente se romper: a saída de uma linha tem de ser a entrada da
+ * seguinte.
  *
  * Rigor antes de estilo: cada linha existe no pipeline real da v3 (harness):
  * congela_entradas → fatia_blocos → rotula_blocos → confere_rotulos →
@@ -20,69 +22,37 @@ import IconeFluxo from './IconeFluxo.astro';
  */
 const objetos = {
   'programa': { nome: 'Programa de governo', icone: 'programa' },
-  'pdf': { nome: 'PDF público no site do TSE', icone: 'pdf' },
-  'texto': { nome: 'Programa em texto, congelado', icone: 'texto' },
-  'trechos': { nome: 'Trechos numerados', icone: 'trechos' },
-  'trechos-tema': { nome: 'Trechos com tema', icone: 'trechos-tema' },
-  'propostas': { nome: 'Propostas com posições', icone: 'propostas' },
-  'validas': { nome: 'Posições com trecho válido', icone: 'conferidas' },
-  'oposicoes': { nome: 'Oposições conferidas', icone: 'contra' },
-  'conferidas': { nome: 'Propostas conferidas', icone: 'conferidas' },
-  'comparacao': { nome: 'Comparação da página', icone: 'comparacao' },
+  'pdf': { nome: 'PDF no site do TSE', icone: 'pdf' },
+  'texto': { nome: 'Texto do programa', icone: 'texto' },
+  'trechos': { nome: 'Parágrafos numerados', icone: 'trechos' },
+  'trechos-tema': { nome: 'Parágrafos por tema', icone: 'trechos-tema' },
+  'propostas': { nome: 'Propostas com quem propõe', icone: 'propostas' },
+  'validas': { nome: 'Propostas com fonte conferida', icone: 'conferidas' },
+  'oposicoes': { nome: 'Propostas com contrário conferido', icone: 'contra' },
+  'conferidas': { nome: 'Propostas com apoio conferido', icone: 'conferidas' },
+  'comparacao': { nome: 'Comparação pronta', icone: 'comparacao' },
   'pagina': { nome: 'Página no site', icone: 'pagina' },
 };
 
 const linhas = [
-  {
-    quem: 'candidato', ator: 'Candidato', icone: 'candidato', acao: 'registra',
-    de: 'programa', para: 'pdf',
-    detalhe: 'A campanha escreve o programa. O candidato entrega esse documento ao TSE junto com o pedido de registro. Nós comparamos só ele.',
-  },
-  {
-    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'extrai',
-    de: 'pdf', para: 'texto',
-    detalhe: 'O código lê o PDF e guarda o texto de cada página. Ele também guarda a impressão digital (sha256) do arquivo e do texto. Todas as etapas seguintes usam essa versão.',
-  },
-  {
-    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'fatia',
-    de: 'texto', para: 'trechos',
-    detalhe: 'O código corta o texto em fronteiras gerais: seção, página, linha em branco, item de lista e fim de frase. Os trechos remontam o texto inteiro, sem sobra nem repetição. Cada trecho ganha um número, e toda citação usa esse número.',
-  },
-  {
-    quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'etiqueta',
-    de: 'trechos', para: 'trechos-tema',
-    detalhe: 'O modelo recebe os trechos numerados. Ele devolve o tema de cada um pelo número e nunca copia o texto. O código confere cada resposta. Trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
-  },
-  {
-    quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'compara e redige',
-    de: 'trechos-tema', para: 'propostas',
-    detalhe: 'Os trechos daquele tema nos seis programas entram juntos, numa leitura só. O modelo escreve cada proposta uma vez, em frase neutra. Ele diz, para cada candidato, se o programa propõe, propõe o contrário ou não cita, e aponta os trechos. Duas passadas de repescagem recuperam o que ficou de fora.',
-  },
-  {
-    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'confere as citações de',
-    de: 'propostas', para: 'validas',
-    detalhe: 'O código exige que cada trecho citado exista, seja do candidato indicado e esteja na entrada da leitura. Ele recusa o que não passa. O modelo não consegue inventar uma fonte.',
-  },
-  {
-    quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga as oposições de',
-    de: 'validas', para: 'oposicoes',
-    detalhe: 'Só as posições marcadas como "propõe o contrário" vão ao juiz. Ele recebe a proposta e o trecho, sem o nome do candidato. Ele confirma a oposição quando o programa rejeita a proposta, revoga a medida ou decide o inverso. Ele recusa quando o programa apenas propõe outro caminho para o mesmo fim. A posição recusada volta para "não cita".',
-  },
-  {
-    quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga a sustentação de',
-    de: 'oposicoes', para: 'conferidas',
-    detalhe: 'Cada candidato de uma proposta compartilhada vai ao juiz, com os trechos dele e sem o nome. Quem sustenta a frase inteira fica. Quem sustenta só uma parte fica no núcleo comum e ganha uma proposta própria com o seu detalhe. Quem não sustenta sai do cartão. Duas leituras cegas precisam confirmar a oposição para ele virar "propõe o contrário".',
-  },
-  {
-    quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'funde e tira espelhos de',
-    de: 'conferidas', para: 'comparacao',
-    detalhe: 'O código junta as propostas próprias quase iguais do mesmo candidato. Ele também tira as propostas espelhadas, como "permanecer no BRICS" e "retirar o Brasil do BRICS". Uma leitura cega confirma que as duas decidem a mesma coisa antes da retirada.',
-  },
-  {
-    quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa e publica',
-    de: 'comparacao', para: 'pagina',
-    detalhe: 'Uma pessoa lê a página pronta e decide o que entra. As escolhas editoriais que o código não toma sozinho ficam aqui.',
-  },
+  { quem: 'candidato', ator: 'Candidato', icone: 'candidato', acao: 'registra', de: 'programa', para: 'pdf' },
+  { quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'extrai', de: 'pdf', para: 'texto',
+    detalhe: 'O texto fica congelado: as etapas seguintes usam sempre essa versão.' },
+  { quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'corta', de: 'texto', para: 'trechos',
+    detalhe: 'Os parágrafos remontam o texto inteiro, sem sobra nem repetição.' },
+  { quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'separa por tema', de: 'trechos', para: 'trechos-tema',
+    detalhe: 'Parágrafo sem tema válido fica como perdido. Perdido acima de 5% reprova a rodada.' },
+  { quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'compara e redige', de: 'trechos-tema', para: 'propostas',
+    detalhe: 'Os seis programas entram juntos. O modelo aponta os parágrafos que sustentam cada posição.' },
+  { quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'confere a fonte de', de: 'propostas', para: 'validas',
+    detalhe: 'O parágrafo citado tem de existir e ser daquele candidato. O modelo não inventa uma fonte.' },
+  { quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga os contrários de', de: 'validas', para: 'oposicoes',
+    detalhe: 'Contrário é rejeitar, revogar ou decidir o inverso. Outro caminho para o mesmo fim não é.' },
+  { quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga o apoio de', de: 'oposicoes', para: 'conferidas',
+    detalhe: 'Quem apoia só uma parte da frase ganha uma proposta própria com o seu detalhe.' },
+  { quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'junta as repetidas de', de: 'conferidas', para: 'comparacao',
+    detalhe: 'Saem também as propostas espelhadas, como "permanecer no BRICS" e "retirar o Brasil do BRICS".' },
+  { quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa e publica', de: 'comparacao', para: 'pagina' },
 ];
 
 // portão de build: objeto inexistente ou corrente quebrada param a construção, não a leitura
@@ -139,7 +109,7 @@ const legendas = [
             <span class="nome-objeto">{objetos[l.para].nome}</span>
           </span>
         </p>
-        <p class="detalhe">{l.detalhe}</p>
+        {l.detalhe && <p class="detalhe">{l.detalhe}</p>}
       </li>
     ))}
   </ol>
@@ -147,7 +117,7 @@ const legendas = [
   <p class="nota">
     O modelo é sempre o mesmo: Claude Opus 5, da Anthropic. As instruções dadas a ele são gerais e
     não citam tema, caso nem candidato. Nenhuma transformação apaga a anterior: cada proposta
-    continua ligada aos trechos de onde saiu, e você volta do cartão ao parágrafo do programa.
+    continua ligada aos parágrafos de onde saiu, e você volta do cartão ao texto do programa.
   </p>
 </figure>
 
@@ -183,7 +153,8 @@ const legendas = [
     border-left: 2px solid var(--linha); }
   .fluxo-editorial .passo:last-child::after { display: none; }
 
-  .fluxo-editorial .frase { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; margin: 0 0 .35rem; }
+  .fluxo-editorial .frase { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; margin: 0; }
+  .fluxo-editorial .frase + .detalhe { margin-top: .35rem; }
   .fluxo-editorial .ator { display: inline-flex; align-items: center; gap: .4rem; }
   .fluxo-editorial .avatar { display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
     border: 2px solid var(--linha-forte); background: var(--cartao); color: var(--tinta-suave); flex: none; }
