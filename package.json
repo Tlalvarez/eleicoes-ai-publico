@@ -10,7 +10,7 @@
     "test": "npm run test:unit && npm run build && npm run test:dist",
     "deploy:pages": "wrangler pages deploy dist --project-name=eleicoes-ai --branch=main --commit-dirty=true",
     "test:unit": "npm run test:rotas && npm run test:medicao",
-    "test:dist": "npm run test:paginas-dist && npm run test:busca-dist && npm run test:render-seguro && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:functions",
+    "test:dist": "npm run test:paginas-dist && npm run test:filtro-dist && npm run test:busca-dist && npm run test:render-seguro && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:functions",
     "test:integracao": "npm run test",
     "test:rotas": "node --test test/*.test.mjs",
     "test:medicao": "node scripts/checa-medicao.mjs",
@@ -20,7 +20,8 @@
     "test:cabecalhos": "node scripts/checa-cabecalhos-dist.mjs",
     "test:busca-dist": "node scripts/checa-busca-dist.mjs",
     "test:functions": "wrangler pages functions build --outdir .wrangler/functions-test",
-    "busca:gabarito-vetores": "node scripts/vetores-do-gabarito.mjs"
+    "busca:gabarito-vetores": "node scripts/vetores-do-gabarito.mjs",
+    "test:filtro-dist": "node scripts/checa-filtro-dist.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"

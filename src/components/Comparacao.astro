@@ -266,7 +266,12 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       colunas.style.gridTemplateColumns = `repeat(${c.largura},1fr)`;
       colunas.replaceChildren(...c.colunas.map((k) => el('span', k === 'concorda' ? '' : k)));
       b.querySelector('.conteudo').style.gridColumn = `${c.a + 1} / span ${c.b - c.a + 1}`;
-      const metas = b.querySelector('.metas');
+      let metas = b.querySelector('.metas');
+      if (!metas) {
+        // o cartão veio do HTML construído, que só emite a faixa quando há meta
+        metas = el('span', 'metas');
+        b.append(metas);
+      }
       metas.style.gridTemplateColumns = `repeat(${c.largura},1fr)`;
       metas.replaceChildren(...(c.metas ?? []).map((m) => {
         const cel = el('span', 'meta');
