@@ -66,29 +66,9 @@ for (const [i, l] of linhas.entries()) {
   }
 }
 
-const legendas = [
-  { quem: 'candidato', icone: 'candidato', rotulo: 'Candidato' },
-  { quem: 'codigo', icone: 'codigo', rotulo: 'Código' },
-  { quem: 'modelo', icone: 'modelo', rotulo: 'Modelo de IA' },
-  { quem: 'cego', icone: 'cego', rotulo: 'Modelo lendo às cegas' },
-  { quem: 'pessoa', icone: 'pessoa', rotulo: 'Pessoa' },
-];
 ---
 
-<figure class="fluxo-editorial" aria-labelledby="diagrama-editorial-titulo">
-  <figcaption id="diagrama-editorial-titulo">
-    Cada linha se lê como uma frase: quem faz, o que faz, o que entra e o que sai. Cada objeto tem
-    a sua cor, a mesma em toda etapa. O que sai de uma linha entra na seguinte.
-  </figcaption>
-
-  <p class="legenda">
-    <span class="rotulo-legenda">Quem transforma:</span>
-    {legendas.map((l) => (
-      <span class={`chip ${l.quem}`}>
-        <span class="bolinha"><IconeFluxo nome={l.icone} tamanho={14} /></span>{l.rotulo}
-      </span>
-    ))}
-  </p>
+<figure class="fluxo-editorial" aria-labelledby="passo-a-passo">
 
   <ol class="cadeia">
     {linhas.map((l) => (
@@ -115,31 +95,15 @@ const legendas = [
   </ol>
 
   <p class="nota">
-    O modelo é sempre o mesmo: Claude Opus 5, da Anthropic. As instruções dadas a ele são gerais e
-    não citam tema, caso nem candidato. Nenhuma transformação apaga a anterior: cada proposta
-    continua ligada aos parágrafos de onde saiu, e você volta do cartão ao texto do programa.
+    Usamos um único modelo de IA, o Claude Opus 5, da Anthropic. Ele recebe as mesmas instruções
+    para todo tema e todo candidato. Cada proposta fica ligada aos parágrafos de onde saiu, e você
+    pode voltar do cartão ao texto do programa.
   </p>
 </figure>
 
 <style>
   .fluxo-editorial { margin: 1.5rem 0 2rem; padding: 0; }
-  .fluxo-editorial figcaption { font-weight: 700; color: var(--tinta); margin-bottom: .6rem; }
 
-  .fluxo-editorial .legenda { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 1.1rem; }
-  .fluxo-editorial .rotulo-legenda { font-size: .75rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
-    color: var(--tinta-suave); margin-right: .2rem; }
-  .fluxo-editorial .chip { display: inline-flex; align-items: center; gap: .35rem; font-size: .72rem; font-weight: 800;
-    letter-spacing: .04em; text-transform: uppercase; padding: .2rem .55rem .2rem .25rem; border-radius: 999px;
-    border: 1px solid var(--linha); color: var(--tinta-suave); background: var(--cartao); }
-  .fluxo-editorial .chip .bolinha { display: grid; place-items: center; width: 1.35rem; height: 1.35rem; border-radius: 50%;
-    background: var(--realce); color: var(--tinta-suave); }
-  .fluxo-editorial .chip.candidato, .fluxo-editorial .chip.codigo { border-color: var(--linha-forte); }
-  .fluxo-editorial .chip.modelo { border-color: var(--azul-claro); color: var(--azul); }
-  .fluxo-editorial .chip.modelo .bolinha { color: var(--azul); }
-  .fluxo-editorial .chip.cego { border-color: var(--atencao); color: var(--atencao); }
-  .fluxo-editorial .chip.cego .bolinha { background: rgba(165, 68, 42, .1); color: var(--atencao); }
-  .fluxo-editorial .chip.pessoa { border-color: var(--verde); color: var(--verde); }
-  .fluxo-editorial .chip.pessoa .bolinha { background: rgba(46, 125, 50, .1); color: var(--verde); }
 
   /* a cadeia: uma linha por transformação, numerada, com a frase em cima e o detalhe embaixo */
   .fluxo-editorial .cadeia { list-style: none; counter-reset: passo; margin: 0; padding: 0;

@@ -8,8 +8,9 @@ const casos = Object.entries(mods)
 // que ninguém leia um teste da régua em programas antigos como avaliação de
 // candidatura de 2026. Fica `noindex` enquanto o texto dos anexos usar o
 // vocabulário da Metodologia v1.1 (dry-run, eixos, seção 10), que a página
-// pública de metodologia, em linguagem leiga, não explica; o caminho até aqui
-// é o link na própria metodologia.
+// pública de metodologia, em linguagem leiga, não explica. Desde 15/09/2026 a
+// metodologia não linka mais para cá (decisão do Thiago: o dossiê é do método
+// antigo, o chat); a página fica no ar sem entrada e sem indexação.
 const paraData = (d) => { const [dia, mes, ano] = d.split('/'); return `${ano}-${mes}-${dia}`; };
 const datas = casos.map((c) => c.verificado).filter(Boolean).sort((a, b) => paraData(a).localeCompare(paraData(b)));
 const periodo = datas.length ? (datas[0] === datas.at(-1) ? `em ${datas[0]}` : `entre ${datas[0]} e ${datas.at(-1)}`) : '';

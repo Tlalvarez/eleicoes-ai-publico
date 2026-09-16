@@ -142,9 +142,12 @@ test('senador e deputado federal fora, com redirecionamento e página de explica
   assert.match(redirects, /^\/deputado-federal\/\* +\/deputado-federal +302$/m);
 });
 
-test('a verificação sai do esconderijo pela metodologia, com moldura datada', async () => {
-  assert.match(await le('pages/metodologia.astro'), /href="\/verificacao"/);
+test('a verificação fica sem entrada: a metodologia não linka o dossiê (método antigo), e ele segue noindex com moldura datada', async () => {
+  // 15/09/2026, decisão do Thiago: o dossiê testa a metodologia v1.1 (chat), não a comparação;
+  // o parágrafo "Histórico" saiu da metodologia. A página continua no ar, sem link e sem indexação.
+  assert.doesNotMatch(await le('pages/metodologia.astro'), /verificacao/);
   const indice = await le('pages/verificacao/index.astro');
+  assert.match(indice, /<Base noindex/);
   assert.match(indice, /Não é avaliação de nenhuma candidatura de 2026/);
   assert.match(indice, /\{periodo\}/);
   assert.match(await le('pages/verificacao/[slug].astro'), /Não é avaliação de candidatura de 2026/);
