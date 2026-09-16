@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-rj.json",
   "gerado_em": "2026-09-14T09:08:47Z",
-  "exportado_em": "2026-09-15T19:27:56Z"
+  "exportado_em": "2026-09-16T05:11:42Z"
  },
  "candidatos": [
   {
@@ -92,8 +92,15 @@
    "id": "p2",
    "subtema": "Regulação e filas",
    "proposta": "Criar uma central estadual de regulação para organizar leitos e filas de atendimento.",
-   "n_concorda": 3,
+   "n_concorda": 4,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      219
+     ],
+     "nota": "Fila ordenada por gravidade"
+    },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
@@ -1490,6 +1497,13 @@
      ],
      "nota": "Metas contratuais públicas, auditoria automática e penalidade por descumprimento"
     },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "discorda",
+     "blocos": [
+      1564
+     ],
+     "nota": ""
+    },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
      "blocos": [
@@ -1571,8 +1585,17 @@
    "id": "p76",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Implantar central de regulação de leitos",
-   "n_concorda": 3,
+   "n_concorda": 4,
    "posicoes": {
+    "governador-rj-douglas-ruas-190002542887": {
+     "posicao": "concorda",
+     "blocos": [
+      206,
+      219,
+      225
+     ],
+     "nota": "Central estadual de regulação digital e acompanhamento em tempo real do giro de leitos."
+    },
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
      "blocos": [
@@ -1602,7 +1625,7 @@
    "id": "p77",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Publicar de forma contínua indicadores de saúde em plataforma pública estadual.",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "governador-rj-coronel-busnello-190002544120": {
      "posicao": "concorda",
@@ -1611,6 +1634,15 @@
       535
      ],
      "nota": "Plataforma pública com indicadores mensais por unidade"
+    },
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1566,
+      1607,
+      1611
+     ],
+     "nota": "Sistema Estadual de Informação do SUS, integração de bases e divulgação de indicadores."
     },
     "governador-rj-andre-marinho-190002537524": {
      "posicao": "concorda",
@@ -1656,7 +1688,13 @@
       1042,
       1068
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "teleatendimento em saúde mental",
+       "valor": "92 municípios"
+      }
+     ]
     }
    }
   },
@@ -1694,7 +1732,13 @@
      "blocos": [
       1069
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "novas unidades concluídas",
+       "valor": "15 unidades até 2028-2029"
+      }
+     ]
     }
    }
   },
@@ -1715,6 +1759,21 @@
   },
   {
    "id": "p83",
+   "subtema": "Modelo de gestão da rede",
+   "proposta": "Construir novos métodos de avaliação dos serviços de saúde baseados em indicadores de morbimortalidade, condições de vida e IDH e no efetivo cuidado, com participação de profissionais e usuários, rejeitando modelos de metas meramente quantitativas e produtivistas",
+   "n_concorda": 1,
+   "posicoes": {
+    "governador-rj-william-siri-190002536162": {
+     "posicao": "concorda",
+     "blocos": [
+      1564
+     ],
+     "nota": ""
+    }
+   }
+  },
+  {
+   "id": "p84",
    "subtema": "Regulação e filas",
    "proposta": "Corrigir os gargalos da regulação, com checklists obrigatórios por especialidade no sistema, alertas automáticos com prazo, acompanhamento do status pelo paciente e indicador trimestral de exigências por profissional.",
    "n_concorda": 1,
@@ -1730,7 +1789,7 @@
    "derivada_de": "p1"
   },
   {
-   "id": "p84",
+   "id": "p85",
    "subtema": "Regulação e filas",
    "proposta": "Criar central estadual de regulação de leitos em tempo real, com painel de ocupação e integração ao SISREG, para ajustar demanda e capacidade instalada.",
    "n_concorda": 1,
@@ -1748,7 +1807,7 @@
    "derivada_de": "p2"
   },
   {
-   "id": "p87",
+   "id": "p88",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Criar rede estadual de telemedicina integrada ao prontuário unificado, com especialistas da capital e de polos regionais atendendo por videoconferência pacientes encaminhados pela atenção básica do interior, com prioridade para cardiologia, neurologia, endocrinologia, psiquiatria e dermatologia.",
    "n_concorda": 1,
@@ -1764,7 +1823,7 @@
    "derivada_de": "p6"
   },
   {
-   "id": "p88",
+   "id": "p89",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Criar Hospitais de Alta Resolução, com avaliação, exames, diagnóstico e cirurgia resolvidos em uma única ida, em unidades modernas, digitalizadas e humanizadas.",
    "n_concorda": 1,
@@ -1780,7 +1839,7 @@
    "derivada_de": "p9"
   },
   {
-   "id": "p89",
+   "id": "p90",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Contratualizar metas com unidades filantrópicas e prestadores, condicionando os repasses ao cumprimento de produção e prazo.",
    "n_concorda": 1,
@@ -1796,7 +1855,7 @@
    "derivada_de": "p10"
   },
   {
-   "id": "p90",
+   "id": "p91",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Ampliar a frota de suporte avançado de vida para todos os municípios acima de 15 mil habitantes, com bases regionalizadas para os menores, protocolo único entre SAMU e Corpo de Bombeiros e integração automática à Central de Vagas desde o acionamento da ambulância.",
    "n_concorda": 1,
@@ -1812,7 +1871,7 @@
    "derivada_de": "p13"
   },
   {
-   "id": "p91",
+   "id": "p92",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Recuperar os hospitais e UPAs estaduais, contratando médicos e especialistas, para que funcionem com mais eficiência e agilidade no atendimento.",
    "n_concorda": 1,
@@ -1829,7 +1888,7 @@
    "derivada_de": "p13"
   },
   {
-   "id": "p92",
+   "id": "p93",
    "subtema": "Força de trabalho em saúde",
    "proposta": "Capacitar os profissionais de saúde e de educação, com apoio às prefeituras.",
    "n_concorda": 1,
@@ -1845,7 +1904,7 @@
    "derivada_de": "p19"
   },
   {
-   "id": "p93",
+   "id": "p94",
    "subtema": "Saúde mental e drogas",
    "proposta": "Criar linha de cuidado para dependência química e para populações em vulnerabilidade extrema, integrada às ações sociais do Estado.",
    "n_concorda": 1,
@@ -1861,7 +1920,7 @@
    "derivada_de": "p23"
   },
   {
-   "id": "p94",
+   "id": "p95",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Implantar teleconsulta e teleatendimento em saúde mental nos 92 municípios, ampliando o acesso e reduzindo a espera.",
    "n_concorda": 1,
@@ -1878,7 +1937,7 @@
    "derivada_de": "p30"
   },
   {
-   "id": "p95",
+   "id": "p96",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Adotar a interoperabilidade como norma, com prontuário único por paciente acessível com segurança em qualquer ponto da rede estadual e municipal, e manter painel público de indicadores de acesso, ocupação e desempenho da rede.",
    "n_concorda": 1,
@@ -1895,7 +1954,7 @@
    "derivada_de": "p33"
   },
   {
-   "id": "p96",
+   "id": "p97",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Criar o Mãe Fluminense, com pré-natal universal na Estratégia de Saúde da Família e estratificação de risco na primeira consulta, central de transporte materno-fetal integrada ao SAMU e à Central de Vagas, e UTIs neonatais nas quatro regiões de maior mortalidade infantil.",
    "n_concorda": 1,
@@ -1911,7 +1970,7 @@
    "derivada_de": "p34"
   },
   {
-   "id": "p97",
+   "id": "p98",
    "subtema": "Saúde da mulher e materno-infantil",
    "proposta": "Construir uma maternidade de referência para gestações de risco na região metropolitana mais desassistida e contratar leitos no interior.",
    "n_concorda": 1,
@@ -1927,7 +1986,7 @@
    "derivada_de": "p34"
   },
   {
-   "id": "p99",
+   "id": "p100",
    "subtema": "Medicamentos e assistência farmacêutica",
    "proposta": "Assegurar o fornecimento e a distribuição de remédios em todo o estado, ampliando a entrega na rede pública.",
    "n_concorda": 1,
@@ -1944,7 +2003,7 @@
    "derivada_de": "p46"
   },
   {
-   "id": "p100",
+   "id": "p101",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Implantar o Prontuário Eletrônico Unificado do SUS-RJ e um painel público de indicadores da rede, sob comitê de governança de dados com padrões de interoperabilidade, segurança e conformidade com a LGPD.",
    "n_concorda": 1,
@@ -1962,7 +2021,7 @@
    "derivada_de": "p60"
   },
   {
-   "id": "p101",
+   "id": "p102",
    "subtema": "Atenção especializada e regionalização",
    "proposta": "Descentralizar a alta e média complexidade, expandindo oncologia, diagnóstico e urgência qualificada no interior e na Baixada, com redistribuição da capacidade conforme a demanda real de cada região.",
    "n_concorda": 1,
@@ -1980,7 +2039,7 @@
    "derivada_de": "p64"
   },
   {
-   "id": "p102",
+   "id": "p103",
    "subtema": "Regulação e filas",
    "proposta": "Tratar a fila como compromisso com prazo e transparência, unificando a espera por consulta com exame e por cirurgia, com metas por unidade e ranking público de desempenho.",
    "n_concorda": 1,
@@ -1997,7 +2056,7 @@
    "derivada_de": "p71"
   },
   {
-   "id": "p104",
+   "id": "p105",
    "subtema": "Modelo de gestão da rede",
    "proposta": "Condicionar o apoio e o custeio dos hospitais do interior a metas assumidas por cada unidade, com ranking público de desempenho, repasse condicionado a metas e prestação de contas à população.",
    "n_concorda": 1,
@@ -2015,7 +2074,7 @@
    "derivada_de": "p72"
   },
   {
-   "id": "p106",
+   "id": "p107",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Aperfeiçoar a produção de dados em saúde, integrando e sistematizando os bancos existentes e ampliando o acesso do cidadão às informações, resguardados os princípios de confidencialidade previstos na legislação.",
    "n_concorda": 1,
@@ -2031,7 +2090,7 @@
    "derivada_de": "p74"
   },
   {
-   "id": "p108",
+   "id": "p109",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Implantar prontuário eletrônico único estadual em rollout faseado, com hospitais estaduais de grande porte no primeiro ano, UPAs e unidades contratadas no segundo e rede municipal por adesão voluntária no terceiro, interoperável com a Rede Nacional de Dados em Saúde.",
    "n_concorda": 1,
@@ -2048,7 +2107,7 @@
    "derivada_de": "p75"
   },
   {
-   "id": "p109",
+   "id": "p110",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Criar central estadual unificada de regulação digital, com prontuário eletrônico único aberto aos municípios, fila ordenada pela gravidade e acompanhamento em tempo real.",
    "n_concorda": 1,
@@ -2065,7 +2124,7 @@
    "derivada_de": "p76"
   },
   {
-   "id": "p110",
+   "id": "p111",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Criar a Central de Vagas RJ, unificando a regulação de leitos e a fila ambulatorial sob governança técnica, com reporte obrigatório em tempo real, penalidade automática e auditoria trimestral.",
    "n_concorda": 1,
@@ -2082,7 +2141,7 @@
    "derivada_de": "p76"
   },
   {
-   "id": "p111",
+   "id": "p112",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Criar Central Única de Regulação, integrando estado e municípios na regulação de leitos, exames e serviços de alta complexidade, com base na territorialização e transparência das filas.",
    "n_concorda": 1,
@@ -2100,7 +2159,7 @@
    "derivada_de": "p76"
   },
   {
-   "id": "p112",
+   "id": "p113",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Lançar plataforma pública com indicadores mensais por unidade, incluindo atendimentos, tempo de espera, infecção hospitalar e cumprimento de metas, com auditoria automática das organizações sociais que descumprirem metas por dois trimestres.",
    "n_concorda": 1,
@@ -2118,7 +2177,7 @@
    "derivada_de": "p77"
   },
   {
-   "id": "p113",
+   "id": "p114",
    "subtema": "Saúde digital e telemedicina",
    "proposta": "Criar Sistema Estadual de Informação para o SUS, integrando bancos de dados existentes, com mapa interativo de indicadores por bairro, acesso livre às informações e avaliação de impacto das ações de comunicação submetida ao controle social.",
    "n_concorda": 1,
@@ -2137,7 +2196,7 @@
    "derivada_de": "p77"
   },
   {
-   "id": "p115",
+   "id": "p116",
    "subtema": "Saúde mental e drogas",
    "proposta": "Ampliar, em parceria com as prefeituras, a rede substitutiva de saúde mental nos municípios de maior demanda, com residências terapêuticas, CAPS III, CAPSi, CAPS AD, CAPS AD III, centros de convivência, cooperativas sociais e consultórios de rua.",
    "n_concorda": 1,
@@ -2618,6 +2677,10 @@
    },
    "1560": {
     "texto": "☼ Implementar um plano de transição do sistema atual, que prioriza a gestão privada, para um sistema de gestão pública e direta com a realização de concursos públicos na área da saúde, evitando a desorganização do serviço e a desassistência, garantindo o progressivo encerramento de todas as formas de privatização e terceirização da Saúde;",
+    "pagina": 94
+   },
+   "1564": {
+    "texto": "☼ Construir novos métodos de avaliação dos serviços que busquem a melhoria dos indicadores de morbimortalidade, condições de vida e IDH da população-alvo, analisando para além dos indicadores de consumo de procedimentos/tecnologia; ●​ Rejeitar modelos baseados em metas meramente quantitativas e de caráter produtivista; ●​ Desenvolver parâmetros baseados no efetivo cuidado em saúde,​ tendo​ os próprios profissionais e usuários como protagonistas dessa construção;",
     "pagina": 94
    },
    "1566": {

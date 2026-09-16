@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "ambiente-energia-6.json",
   "gerado_em": "2026-09-14T06:40:02Z",
-  "exportado_em": "2026-09-15T19:27:55Z"
+  "exportado_em": "2026-09-16T05:11:42Z"
  },
  "candidatos": [
   {
@@ -69,8 +69,16 @@
    "id": "p1",
    "subtema": "Minerais críticos e terras raras",
    "proposta": "Promover a verticalização e a agregação de valor de minerais críticos e terras raras no país, em vez de exportar minério bruto.",
-   "n_concorda": 5,
+   "n_concorda": 6,
    "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      487,
+      534
+     ],
+     "nota": "Propõe ZEE de Terras Raras com oito estágios, de extração a semicondutores"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -263,7 +271,7 @@
    "id": "p7",
    "subtema": "Minerais críticos e terras raras",
    "proposta": "Viabilizar financiamento e garantias de crédito para projetos de minerais críticos.",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -281,6 +289,13 @@
       825
      ],
      "nota": "Equacionar garantias de crédito"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1192
+     ],
+     "nota": "Crédito e incentivos com prazo, metas e contrapartidas"
     }
    }
   },
@@ -297,7 +312,13 @@
       547,
       548
      ],
-     "nota": "Planta-piloto em 2029-2030, expansão do MagBras"
+     "nota": "Planta-piloto em 2029-2030, expansão do MagBras",
+     "metas": [
+      {
+       "rotulo": "cronograma da planta-piloto",
+       "valor": "planta-piloto 2029-2030; expansão até 2036"
+      }
+     ]
     }
    }
   },
@@ -368,8 +389,17 @@
    "id": "p12",
    "subtema": "Licenciamento ambiental",
    "proposta": "Reformar o licenciamento ambiental para garantir critérios técnicos e previsibilidade.",
-   "n_concorda": 3,
+   "n_concorda": 4,
    "posicoes": {
+    "renan-santos": {
+     "posicao": "concorda",
+     "blocos": [
+      311,
+      312,
+      533
+     ],
+     "nota": "Implementação plena da Lei 15.190/2025 e uso ostensivo da Licença Ambiental Especial"
+    },
     "romeu-zema": {
      "posicao": "concorda",
      "blocos": [
@@ -474,14 +504,26 @@
      "blocos": [
       623
      ],
-     "nota": "Desmatamento líquido zero até 2030"
+     "nota": "Desmatamento líquido zero até 2030",
+     "metas": [
+      {
+       "rotulo": "desmatamento líquido zero",
+       "valor": "até 2030"
+      }
+     ]
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       847
      ],
-     "nota": "Zerar desmatamento ilegal até 2029"
+     "nota": "Zerar desmatamento ilegal até 2029",
+     "metas": [
+      {
+       "rotulo": "zerar desmatamento ilegal",
+       "valor": "até 2029"
+      }
+     ]
     }
    }
   },
@@ -830,12 +872,20 @@
    "id": "p29",
    "subtema": "Bioeconomia e biodiversidade",
    "proposta": "Assegurar o cumprimento do Código Florestal.",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
      "blocos": [
       625
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1128,
+      1129
      ],
      "nota": ""
     },
@@ -1763,7 +1813,7 @@
    "id": "p66",
    "subtema": "Adaptação climática e desastres",
    "proposta": "Ampliar a prevenção e a resposta a desastres climáticos.",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -1780,6 +1830,14 @@
       647
      ],
      "nota": "Institucionalizar a adaptação como eixo permanente do planejamento público"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1143,
+      1593
+     ],
+     "nota": "Recursos condicionados a planejamento e manutenção"
     }
    }
   },
@@ -1818,7 +1876,7 @@
    "id": "p68",
    "subtema": "Adaptação climática e desastres",
    "proposta": "Fortalecer a prevenção e o combate a incêndios florestais, incluindo o manejo do fogo.",
-   "n_concorda": 2,
+   "n_concorda": 4,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -1834,6 +1892,26 @@
       1139,
       1591,
       1592
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      3811,
+      3813,
+      3814,
+      3825,
+      3826,
+      3827,
+      3828
+     ],
+     "nota": "Projeto Floresta Viva, com drones de resposta rápida e sala de comando 24/7"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      847
      ],
      "nota": ""
     }
@@ -3334,6 +3412,14 @@
     "texto": "Satélites + IA para identificar focos de calor em estágio inicial \n•",
     "pagina": 182
    },
+   "3813": {
+    "texto": "Modelos preditivos (clima, vento, umidade, histórico) para antecipar risco \n•",
+    "pagina": 182
+   },
+   "3814": {
+    "texto": "Sala de comando integrada 24/7 (Federal + Estados)",
+    "pagina": 182
+   },
    "3818": {
     "texto": "Frotas regionais de drones para: \n•",
     "pagina": 182
@@ -3352,6 +3438,22 @@
    },
    "3822": {
     "texto": "Uso de agentes supressores (químicos e biológicos) de baixa toxicidade, com protocolos ambientais rigorosos",
+    "pagina": 182
+   },
+   "3825": {
+    "texto": "• Integração:",
+    "pagina": 182
+   },
+   "3826": {
+    "texto": "• Drones + brigadas + aeronaves",
+    "pagina": 182
+   },
+   "3827": {
+    "texto": "• Sensores IoT em áreas críticas",
+    "pagina": 182
+   },
+   "3828": {
+    "texto": "• Logística otimizada por IA (alocação de recursos em minutos)",
     "pagina": 182
    },
    "3835": {
@@ -3728,6 +3830,10 @@
     "texto": "▪ Racionalização e simplificação dos processos de licenciamento ambiental para a exploração dos minérios, com base na nova Lei Geral do Licenciamento Ambiental (Lei nº 15.190/2025, em vigor desde fevereiro de 2026). Com isso, estaremos mais competitivos para a fase de refino, que gera maior valor e, ao mesmo tempo, exige tecnologia de mais elevada sofisticação.",
     "pagina": 39
    },
+   "534": {
+    "texto": "▪ Utilização do retorno financeiro da exploração das terras raras para ajudar a financiar o conjunto de projetos descrito neste livro e nos fascículos anteriores, a exemplo da modernização da nossa infraestrutura, do aumento de investimento em segurança pública, da melhoria do sistema de saúde (SUS), entre vários outros projetos de alcance estratégico.",
+    "pagina": 39
+   },
    "543": {
     "texto": "No plano financeiro e institucional, o documento propõe uma arquitetura de financiamento inovadora e um cronograma de implementação com fases claramente demarcadas.",
     "pagina": 40
@@ -4072,6 +4178,10 @@
     "texto": "Integrar satélites, drones, inteligência artificial e bases fundiárias para monitorar desmatamento, incêndios, mineração, recuperação e uso da água. Digitalizar licenças, outorgas, autos e desembargos, com linguagem clara e rastreabilidade.",
     "pagina": 50
    },
+   "1128": {
+    "texto": "Acelerar análise e validação do CAR, Programas de Regularização Ambiental e compensações de reserva legal.",
+    "pagina": 51
+   },
    "1129": {
     "texto": "Corrigir sobreposições e fraudes, criar apoio a pequenos imóveis e transformar recuperação em atividade econômica com crédito, sementes, assistência e carbono.",
     "pagina": 51
@@ -4098,6 +4208,10 @@
    },
    "1141": {
     "texto": "Criar programa Água para o Futuro com proteção de nascentes, recuperação de matas ciliares, redução de perdas, reuso, reservação, recarga de aquíferos e infraestrutura resiliente. Fortalecer comitês de bacia, dados de disponibilidade e regras claras de alocação em escassez.",
+    "pagina": 51
+   },
+   "1143": {
+    "texto": "Atualizar planos nacionais e municipais de adaptação, mapear risco, implantar sistemas de alerta, obras de drenagem e contenção e soluções baseadas na natureza. Recursos serão condicionados a planejamento e manutenção, com prioridade a populações em áreas de risco.",
     "pagina": 51
    },
    "1147": {
@@ -4210,6 +4324,10 @@
    },
    "1592": {
     "texto": "Fortalecer brigadas permanentes e comunitárias, logística de combate e coordenação entre União, estados e municípios.",
+    "pagina": 70
+   },
+   "1593": {
+    "texto": "Elaborar planos regionais para secas extremas, redução do nível dos rios, isolamento de comunidades, falta de água e interrupções nos sistemas de transporte, energia e saúde.",
     "pagina": 70
    },
    "1603": {

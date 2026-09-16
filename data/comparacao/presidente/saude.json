@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-6.json",
   "gerado_em": "2026-09-14T05:57:21Z",
-  "exportado_em": "2026-09-15T19:27:55Z"
+  "exportado_em": "2026-09-16T05:11:42Z"
  },
  "candidatos": [
   {
@@ -696,7 +696,7 @@
    "id": "p22",
    "subtema": "Saúde mental",
    "proposta": "Ampliar o atendimento em saúde mental para crianças, adolescentes e jovens",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -713,6 +713,13 @@
       810
      ],
      "nota": "Atendimento em escolas e universidades, com educação emocional"
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      650
+     ],
+     "nota": "Diagnóstico precoce e apoio a crianças com TDAH"
     }
    }
   },
@@ -857,8 +864,15 @@
    "id": "p29",
    "subtema": "Saúde da mulher",
    "proposta": "Ampliar o diagnóstico precoce dos cânceres de mama e de colo do útero",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      446
+     ],
+     "nota": ""
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -1048,8 +1062,17 @@
    "id": "p37",
    "subtema": "Medicamentos, insumos e soberania sanitária",
    "proposta": "Articular universidades e institutos públicos de pesquisa com a indústria para promover a inovação em saúde",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      742,
+      743,
+      744
+     ],
+     "nota": "Startups conectadas a hospitais universitários"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
@@ -1203,7 +1226,7 @@
    "id": "p45",
    "subtema": "Setor privado e parcerias",
    "proposta": "Firmar parcerias com hospitais privados para a realização de exames e cirurgias do SUS.",
-   "n_concorda": 2,
+   "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
      "posicao": "concorda",
@@ -1213,12 +1236,26 @@
      ],
      "nota": "Com metas de atendimento e qualidade"
     },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      630
+     ],
+     "nota": "Contratação nos horários ociosos da rede privada"
+    },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       319
      ],
      "nota": "Parceria com hospitais privados em troca de créditos ou abatimento de dívidas"
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1769
+     ],
+     "nota": "Mobilizar privados contratados quando necessário, com contratos por valor"
     }
    }
   },
@@ -1267,7 +1304,13 @@
       1971,
       1979
      ],
-     "nota": "Meta de pelo menos 95% de cobertura nas vacinas prioritárias"
+     "nota": "Meta de pelo menos 95% de cobertura nas vacinas prioritárias",
+     "metas": [
+      {
+       "rotulo": "cobertura das vacinas prioritárias",
+       "valor": "pelo menos 95% até 2030"
+      }
+     ]
     }
    }
   },
@@ -1844,7 +1887,13 @@
       1953,
       2120
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "cobertura populacional do SAMU",
+       "valor": "100%"
+      }
+     ]
     },
     "lula": {
      "posicao": "concorda",
@@ -3282,7 +3331,13 @@
      "blocos": [
       2094
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "internações sensíveis à APS",
+       "valor": "reduzir em 20%"
+      }
+     ]
     }
    }
   },
@@ -3327,7 +3382,7 @@
    "id": "p150",
    "subtema": "Saúde digital",
    "proposta": "Disponibilizar aos cidadãos o histórico clínico digital essencial interoperável",
-   "n_concorda": 5,
+   "n_concorda": 6,
    "posicoes": {
     "renan-santos": {
      "posicao": "concorda",
@@ -3359,6 +3414,13 @@
       298
      ],
      "nota": "Prontuário único do cidadão via RNDS, com acesso pelo celular"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      595
+     ],
+     "nota": "Digitalização de prontuários e integração dos sistemas"
     },
     "ronaldo-caiado": {
      "posicao": "concorda",
@@ -3535,7 +3597,13 @@
       1986,
       1998
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "hospitais estratégicos integrados",
+       "valor": "100% até 2030"
+      }
+     ]
     }
    },
    "derivada_de": "p1"
@@ -4735,6 +4803,10 @@
    },
    "629": {
     "texto": "Saúde da Família, levando o cuidado para perto de casa, e criar o Programa de Atendimento aos Idosos, com atendimento facilitado e adequado a quem envelhece, para que o idoso não enfrente o mesmo percurso cansativo de sempre para se cuidar. Vamos ainda ampliar o acesso a exames preventivos e manter a imunização e o incentivo à produção nacional de vacinas, porque prevenir é sempre mais barato e mais humano do que tratar tarde.",
+    "pagina": 37
+   },
+   "630": {
+    "texto": "Para usar bem o que já existe, vamos contratar serviços e exames na rede privada nos horários ociosos: há aparelho parado enquanto gente espera meses pelo mesmo exame, e aproveitar essa capacidade é atender mais sem",
     "pagina": 37
    },
    "635": {

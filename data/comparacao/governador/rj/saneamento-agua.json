@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saneamento-agua-rj.json",
   "gerado_em": "2026-09-14T09:17:38Z",
-  "exportado_em": "2026-09-15T19:27:56Z"
+  "exportado_em": "2026-09-16T05:11:42Z"
  },
  "candidatos": [
   {
@@ -83,7 +83,13 @@
       2320,
       2326
      ],
-     "nota": "Foco na bacia da Baía de Guanabara"
+     "nota": "Foco na bacia da Baía de Guanabara",
+     "metas": [
+      {
+       "rotulo": "volume de esgoto tratado",
+       "valor": "acima de 133 milhões de litros/dia"
+      }
+     ]
     }
    }
   },
@@ -559,7 +565,13 @@
       2320,
       2326
      ],
-     "nota": ""
+     "nota": "",
+     "metas": [
+      {
+       "rotulo": "volume de esgoto tratado",
+       "valor": "acima de 133 milhões de litros/dia"
+      }
+     ]
     }
    },
    "derivada_de": "p1"
