@@ -19,11 +19,18 @@ test('criterio.json cumpre o contrato e cobre presidente e toda UF pronta', () =
   assert.equal(d.contrato, CONTRATO_CRITERIO);
   const pres = criterioDoEscopo('presidente');
   assert.equal(pres.comparados, resumoDoEscopo('presidente')[0].candidatos.length);
+  assert.match(pres.registro ?? '', /^[A-Z]{2}\d{9}$/, 'presidente: sem número de registro da pesquisa');
   for (const uf of ufsProntas('governador')) {
     const c = criterioDoEscopo('governador', uf);
     assert.ok(c, `governador/${uf}: sem critério`);
     assert.equal(c.comparados, resumoDoEscopo('governador', uf)[0].candidatos.length, `governador/${uf}: contagem`);
     assert.ok(c.instituto && c.fim_campo, `governador/${uf}: pesquisa incompleta`);
+    // 16/09 (revisão jurídica §3.2): pesquisa que decide quem entra precisa do registro
+    // no PesqEle, com o campo como está no cadastro do TSE
+    assert.match(c.registro ?? '', /^[A-Z]{2}\d{9}$/, `governador/${uf}: sem número de registro da pesquisa`);
+    for (const campo of ['campo_inicio', 'campo_fim', 'divulgacao']) {
+      assert.match(c[campo] ?? '', /^\d{4}-\d{2}-\d{2}$/, `governador/${uf}: ${campo} fora do cadastro`);
+    }
     for (const f of c.fora) assert.ok(f.nome && f.motivo, `governador/${uf}: fora sem motivo`);
   }
 });

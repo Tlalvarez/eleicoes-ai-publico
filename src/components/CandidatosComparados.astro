@@ -12,7 +12,13 @@ import { criterioDoEscopo } from '../lib/criterio.mjs';
 const { candidatos, cargo = 'presidente', uf = null } = Astro.props;
 const c = criterioDoEscopo(cargo, uf);
 const quantos = `${candidatos.length} ${candidatos.length === 1 ? 'candidato' : 'candidatos'}`;
-const pesquisa = c ? (cargo === 'presidente' ? `${c.instituto} de ${c.campo}` : `${c.instituto} com campo até ${c.fim_campo}`) : '';
+// 16/09 (revisão jurídica §3.2): a pesquisa que decide o corte aparece com o número de
+// registro no TSE e o período de campo como está no cadastro — sem os percentuais dela.
+const diaMes = (iso) => (iso ? `${iso.slice(8, 10)}/${iso.slice(5, 7)}` : '');
+const campoDoCadastro = c && c.campo_inicio && c.campo_fim ? `campo de ${diaMes(c.campo_inicio)} a ${diaMes(c.campo_fim)}` : '';
+const pesquisa = c
+  ? [c.instituto, c.registro ? `registro ${c.registro} no TSE` : '', campoDoCadastro].filter(Boolean).join(', ')
+  : '';
 const limite = c && cargo !== 'presidente' ? ` (no máximo ${c.corte})` : '';
 const fora = c ? c.fora.map((f) => `${f.nome}, ${f.motivo}`).join('; ') : '';
 ---
