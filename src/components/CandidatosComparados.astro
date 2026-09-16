@@ -24,7 +24,7 @@ const fora = c ? c.fora.map((f) => `${f.nome}, ${f.motivo}`).join('; ') : '';
       {c.fonte_url
         ? <a href={c.fonte_url} rel="noopener noreferrer" target="_blank">{pesquisa}</a>
         : pesquisa}
-      {`, entre os que tinham pelo menos ${c.minimo_pct}% das intenções de voto${limite}. Candidaturas indeferidas pelo TSE e quem não registrou programa de governo não entram.`}
+      {`, entre os que tinham pelo menos ${c.minimo_pct}% das intenções de voto${limite}. Candidaturas indeferidas pela Justiça Eleitoral e quem não registrou programa de governo não entram.`}
     </p>
     <Candidatos candidatos={candidatos} />
     {fora && <p class="fora">{`Ficaram de fora: ${fora}.`}</p>}
