@@ -579,9 +579,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     color: var(--tinta-suave); margin: .9rem .35rem 0; }
   .comparacao .grade > h2 + h3.assunto { margin-top: .5rem; }
   .comparacao .pilha { display: flex; flex-direction: column; gap: .5rem; min-width: 0; }
-  /* coluna sem proposta no assunto: o vazio é informação, e fica marcado de leve */
-  .comparacao .pilha.vazia { min-height: 2.2rem; border: 1px dashed var(--linha); border-radius: 8px;
-    background: repeating-linear-gradient(135deg, transparent 0 7px, rgba(93, 100, 112, .08) 7px 9px); }
+  /* coluna sem proposta no assunto: fica em branco (decisão do Thiago em 15/09; antes era hachurada) */
+  .comparacao .pilha.vazia { min-height: 2.2rem; }
 
   .comparacao .proposta { position: relative; font: inherit; text-align: left; cursor: pointer; color: var(--tinta); background: var(--papel);
     border: 1px solid var(--linha); border-radius: 8px; padding: 0 0 .7rem; min-height: var(--alvo);
@@ -593,8 +592,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .proposta .conteudo { position: relative; display: flex; flex-direction: column; gap: .3rem; padding: 0 .8rem; min-width: 0; }
   .comparacao .proposta .colunas { position: absolute; inset: 0; display: grid; pointer-events: none; }
   .comparacao .proposta .colunas span { display: block; border-top: 5px solid var(--azul); border-radius: 8px 8px 0 0; }
-  .comparacao .proposta .colunas span.fora { border-top: 3px dotted var(--tinta-suave); border-radius: 0;
-    background: repeating-linear-gradient(135deg, transparent 0 7px, rgba(93, 100, 112, .13) 7px 9px); }
+  .comparacao .proposta .colunas span.fora { border-top: 0; border-radius: 0; background: none; }
   .comparacao .proposta .colunas span.contra { border-top: 5px solid var(--atencao); background: rgba(165, 68, 42, .07); }
   .comparacao .proposta .colunas span.contra::after { content: 'propõe o contrário'; display: block; margin: .4rem .6rem 0; font-size: .7rem; font-weight: 800;
     letter-spacing: .08em; text-transform: uppercase; color: var(--atencao); white-space: nowrap; }
