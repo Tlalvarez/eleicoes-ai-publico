@@ -6,74 +6,95 @@ import IconeFluxo from './IconeFluxo.astro';
  * transversal dá "Candidato registra Programa de governo em PDF público no
  * TSE"; lido de cima para baixo, a saída de uma linha é a entrada da seguinte.
  *
+ * Cada OBJETO é declarado UMA vez em `objetos` — nome, ícone e cor — e as
+ * linhas só o referenciam pela chave. Assim o mesmo objeto tem sempre a mesma
+ * cara em toda etapa, e objetos diferentes têm cores diferentes (2ª decisão do
+ * Thiago, 15/09). O portão no fim do frontmatter quebra o BUILD se a corrente
+ * se romper: a saída de uma linha tem de ser a entrada da seguinte.
+ *
  * Rigor antes de estilo: cada linha existe no pipeline real da v3 (harness):
  * congela_entradas → fatia_blocos → rotula_blocos → confere_rotulos →
  * compara_tema → varredura_tema → cruza_tema → confere_discordancias →
  * confere_fidelidade → aplica_fidelidade → funde_proprias → tira_espelhos →
  * exporta_site. Mudou o pipeline, muda aqui.
  */
+const objetos = {
+  'programa': { nome: 'Programa de governo', icone: 'programa' },
+  'pdf': { nome: 'PDF público no site do TSE', icone: 'pdf' },
+  'texto': { nome: 'Programa em texto, congelado', icone: 'texto' },
+  'trechos': { nome: 'Trechos numerados', icone: 'trechos' },
+  'trechos-tema': { nome: 'Trechos com tema', icone: 'trechos-tema' },
+  'propostas': { nome: 'Propostas com posições', icone: 'propostas' },
+  'validas': { nome: 'Posições com trecho válido', icone: 'conferidas' },
+  'oposicoes': { nome: 'Oposições conferidas', icone: 'contra' },
+  'conferidas': { nome: 'Propostas conferidas', icone: 'conferidas' },
+  'comparacao': { nome: 'Comparação da página', icone: 'comparacao' },
+  'pagina': { nome: 'Página no site', icone: 'pagina' },
+};
+
 const linhas = [
   {
     quem: 'candidato', ator: 'Candidato', icone: 'candidato', acao: 'registra',
-    entrada: { nome: 'Programa de governo', icone: 'programa' },
-    saida: { nome: 'PDF público no site do TSE', icone: 'pdf' },
+    de: 'programa', para: 'pdf',
     detalhe: 'O programa é escrito pela campanha e entregue ao TSE junto com o pedido de registro da candidatura. É este documento — e nenhum outro — que comparamos.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'extrai',
-    entrada: { nome: 'PDF público no site do TSE', icone: 'pdf' },
-    saida: { nome: 'Programa em texto, congelado', icone: 'texto' },
+    de: 'pdf', para: 'texto',
     detalhe: 'O PDF vira texto, página a página, e é congelado: guardamos a impressão digital (sha256) do arquivo e do texto. Tudo o que vem depois aponta para essa versão.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'fatia',
-    entrada: { nome: 'Programa em texto, congelado', icone: 'texto' },
-    saida: { nome: 'Trechos numerados', icone: 'trechos' },
+    de: 'texto', para: 'trechos',
     detalhe: 'O corte segue fronteiras gerais: seção, página, linha em branco, item de lista, fim de frase. Juntando os trechos de volta, sai o texto inteiro — sem sobra nem repetição. O número vira o endereço do trecho, e é por ele que tudo se cita depois.',
   },
   {
     quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'etiqueta',
-    entrada: { nome: 'Trechos numerados', icone: 'trechos' },
-    saida: { nome: 'Trechos com tema', icone: 'trechos-tema' },
+    de: 'trechos', para: 'trechos-tema',
     detalhe: 'O modelo devolve o tema de cada trecho — economia, saúde, segurança… — pelo número, nunca copiando o texto. O código confere: trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
   },
   {
     quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'compara e redige',
-    entrada: { nome: 'Trechos com tema', icone: 'trechos-tema' },
-    saida: { nome: 'Propostas com posições', icone: 'propostas' },
+    de: 'trechos-tema', para: 'propostas',
     detalhe: 'Entram juntos os trechos daquele tema nos seis programas. Numa leitura só, o modelo escreve cada proposta uma vez, em frase neutra, e diz, para cada candidato, se ele propõe, propõe o contrário ou não cita — apontando os trechos em que se baseou. Duas passadas de repescagem recuperam o que ficou de fora.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'confere as citações de',
-    entrada: { nome: 'Propostas com posições', icone: 'propostas' },
-    saida: { nome: 'Posições com trecho válido', icone: 'conferidas' },
+    de: 'propostas', para: 'validas',
     detalhe: 'Cada trecho citado tem de existir, ser daquele candidato e estar na entrada da leitura. O que não passa é recusado — o modelo não tem como inventar uma fonte.',
   },
   {
     quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga as oposições de',
-    entrada: { nome: 'Posições com trecho válido', icone: 'conferidas' },
-    saida: { nome: 'Oposições conferidas', icone: 'contra' },
+    de: 'validas', para: 'oposicoes',
     detalhe: 'Vão ao juiz só as posições marcadas como "propõe o contrário", uma a uma: a proposta e o trecho, sem nome de candidato. Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição. Propor outro caminho para o mesmo fim, não — e essa posição cai para "não cita".',
   },
   {
     quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga a sustentação de',
-    entrada: { nome: 'Oposições conferidas', icone: 'contra' },
-    saida: { nome: 'Propostas conferidas', icone: 'conferidas' },
+    de: 'oposicoes', para: 'conferidas',
     detalhe: 'Agora vai ao juiz cada candidato de uma proposta que dois ou mais fazem, com os trechos dele e sem nome. Sustenta: fica. Sustenta só em parte: a proposta passa a ter só o núcleo comum, e o detalhe dele vira uma proposta própria. Não sustenta: sai — e só vira "propõe o contrário" se duas leituras cegas confirmarem.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'funde e tira espelhos de',
-    entrada: { nome: 'Propostas conferidas', icone: 'conferidas' },
-    saida: { nome: 'Comparação da página', icone: 'comparacao' },
+    de: 'conferidas', para: 'comparacao',
     detalhe: 'Propostas próprias quase iguais do mesmo candidato viram uma. Propostas espelhadas — o mesmo assunto escrito duas vezes, uma de cada lado, como "permanecer no BRICS" e "retirar o Brasil do BRICS" — viram uma, depois de uma leitura cega confirmar que decidem a mesma coisa.',
   },
   {
     quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa e publica',
-    entrada: { nome: 'Comparação da página', icone: 'comparacao' },
-    saida: { nome: 'Página no site', icone: 'pagina' },
+    de: 'comparacao', para: 'pagina',
     detalhe: 'Uma pessoa lê a página pronta e decide o que entra. É aqui que ficam as escolhas editoriais que o código não toma sozinho.',
   },
 ];
+
+// portão de build: objeto inexistente ou corrente quebrada param a construção, não a leitura
+for (const [i, l] of linhas.entries()) {
+  for (const chave of [l.de, l.para]) {
+    if (!objetos[chave]) throw new Error(`DiagramaEditorial: a linha ${i + 1} usa o objeto "${chave}", que não existe`);
+  }
+  if (i > 0 && linhas[i - 1].para !== l.de) {
+    throw new Error(`DiagramaEditorial: a corrente quebrou entre as linhas ${i} e ${i + 1}: `
+      + `sai "${linhas[i - 1].para}" e entra "${l.de}"`);
+  }
+}
 
 const legendas = [
   { quem: 'candidato', icone: 'candidato', rotulo: 'Candidato' },
@@ -86,8 +107,8 @@ const legendas = [
 
 <figure class="fluxo-editorial" aria-labelledby="diagrama-editorial-titulo">
   <figcaption id="diagrama-editorial-titulo">
-    Cada linha se lê como uma frase: quem faz, o que faz, o que entra e o que sai.
-    O que sai de uma linha é o que entra na seguinte.
+    Cada linha se lê como uma frase: quem faz, o que faz, o que entra e o que sai. Cada objeto tem
+    a sua cor, a mesma em toda etapa — o que sai de uma linha é o que entra na seguinte.
   </figcaption>
 
   <p class="legenda">
@@ -108,14 +129,14 @@ const legendas = [
             <span class="nome-ator">{l.ator}</span>
           </span>
           <span class="acao">{l.acao}</span>
-          <span class="objeto entra">
-            <span class="figura" aria-hidden="true"><IconeFluxo nome={l.entrada.icone} tamanho={18} /></span>
-            <span class="nome-objeto">{l.entrada.nome}</span>
+          <span class={`objeto obj-${l.de}`}>
+            <span class="figura" aria-hidden="true"><IconeFluxo nome={objetos[l.de].icone} tamanho={18} /></span>
+            <span class="nome-objeto">{objetos[l.de].nome}</span>
           </span>
           <span class="em">em</span>
-          <span class="objeto sai">
-            <span class="figura" aria-hidden="true"><IconeFluxo nome={l.saida.icone} tamanho={18} /></span>
-            <span class="nome-objeto">{l.saida.nome}</span>
+          <span class={`objeto obj-${l.para}`}>
+            <span class="figura" aria-hidden="true"><IconeFluxo nome={objetos[l.para].icone} tamanho={18} /></span>
+            <span class="nome-objeto">{objetos[l.para].nome}</span>
           </span>
         </p>
         <p class="detalhe">{l.detalhe}</p>
@@ -159,7 +180,6 @@ const legendas = [
   .fluxo-editorial .passo:first-child { border-top: 0; }
   .fluxo-editorial .passo::before { content: counter(passo); position: absolute; left: .8rem; top: .95rem;
     font-size: .8rem; font-weight: 800; color: var(--tinta-suave); }
-  /* o fio que liga uma linha à seguinte: o que sai de uma entra na outra */
   .fluxo-editorial .passo::after { content: ''; position: absolute; left: 1.1rem; top: 2.1rem; bottom: -.1rem;
     border-left: 2px solid var(--linha); }
   .fluxo-editorial .passo:last-child::after { display: none; }
@@ -179,14 +199,26 @@ const legendas = [
   .fluxo-editorial .acao { font-weight: 800; font-size: 1rem; color: var(--tinta); }
   .fluxo-editorial .em { font-size: .9rem; color: var(--tinta-suave); }
 
-  /* os objetos: o que entra e o que sai, sempre com o mesmo ícone em todo o fluxo */
+  /* OBJETOS: cada objeto tem a SUA cor, e ela não muda de etapa para etapa (decisão do Thiago,
+     15/09). O nome fica sempre em tinta escura: a cor identifica, mas não carrega informação
+     sozinha — quem não distingue as cores lê o mesmo nome e o mesmo ícone. */
   .fluxo-editorial .objeto { display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .6rem .3rem .35rem;
-    border-radius: 999px; border: 1px solid var(--linha-forte); background: var(--papel); }
+    border-radius: 999px; border: 1px solid var(--obj-borda, var(--linha-forte)); background: var(--obj-fundo, var(--papel)); }
   .fluxo-editorial .objeto .figura { display: grid; place-items: center; width: 1.7rem; height: 1.7rem; border-radius: 50%;
-    background: var(--realce); color: var(--azul); flex: none; }
-  /* o MESMO objeto tem sempre o mesmo desenho, entre ou saia (decisão do Thiago, 15/09): cor
-     diferente por posição fazia "Programa em texto" parecer duas coisas em duas linhas seguidas */
+    background: var(--cartao); color: var(--obj-tinta, var(--azul)); flex: none; }
   .fluxo-editorial .nome-objeto { font-size: .9rem; font-weight: 600; color: var(--tinta); }
+
+  .fluxo-editorial .obj-programa     { --obj-fundo: #eceae2; --obj-borda: #c6c0b2; --obj-tinta: #6b6255; }
+  .fluxo-editorial .obj-pdf          { --obj-fundo: #fbe4d8; --obj-borda: #e6a684; --obj-tinta: #a8501f; }
+  .fluxo-editorial .obj-texto        { --obj-fundo: #ece5f8; --obj-borda: #b6a4e2; --obj-tinta: #5b3fa0; }
+  .fluxo-editorial .obj-trechos      { --obj-fundo: #dcecf9; --obj-borda: #8bbfe6; --obj-tinta: #1d5fa0; }
+  .fluxo-editorial .obj-trechos-tema { --obj-fundo: #d6eeea; --obj-borda: #7cc7be; --obj-tinta: #14706a; }
+  .fluxo-editorial .obj-propostas    { --obj-fundo: #e2e4f7; --obj-borda: #aeb0e0; --obj-tinta: #4a41a8; }
+  .fluxo-editorial .obj-validas      { --obj-fundo: #e3efd9; --obj-borda: #a5cd8b; --obj-tinta: #3d7a22; }
+  .fluxo-editorial .obj-oposicoes    { --obj-fundo: #f7e2dd; --obj-borda: #dfa696; --obj-tinta: #a5442a; }
+  .fluxo-editorial .obj-conferidas   { --obj-fundo: #f7ecc9; --obj-borda: #dcc274; --obj-tinta: #7a5c12; }
+  .fluxo-editorial .obj-comparacao   { --obj-fundo: #f8e1ec; --obj-borda: #e0a4c0; --obj-tinta: #93356a; }
+  .fluxo-editorial .obj-pagina       { --obj-fundo: #dde3ef; --obj-borda: #98abc8; --obj-tinta: #17365d; }
 
   .fluxo-editorial .detalhe { margin: 0; font-size: .9rem; color: var(--tinta-suave); }
 
