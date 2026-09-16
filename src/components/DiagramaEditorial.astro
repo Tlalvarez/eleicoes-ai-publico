@@ -36,52 +36,52 @@ const linhas = [
   {
     quem: 'candidato', ator: 'Candidato', icone: 'candidato', acao: 'registra',
     de: 'programa', para: 'pdf',
-    detalhe: 'O programa é escrito pela campanha e entregue ao TSE junto com o pedido de registro da candidatura. É este documento — e nenhum outro — que comparamos.',
+    detalhe: 'A campanha escreve o programa. O candidato entrega esse documento ao TSE junto com o pedido de registro. Nós comparamos só ele.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'extrai',
     de: 'pdf', para: 'texto',
-    detalhe: 'O PDF vira texto, página a página, e é congelado: guardamos a impressão digital (sha256) do arquivo e do texto. Tudo o que vem depois aponta para essa versão.',
+    detalhe: 'O código lê o PDF e guarda o texto de cada página. Ele também guarda a impressão digital (sha256) do arquivo e do texto. Todas as etapas seguintes usam essa versão.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'fatia',
     de: 'texto', para: 'trechos',
-    detalhe: 'O corte segue fronteiras gerais: seção, página, linha em branco, item de lista, fim de frase. Juntando os trechos de volta, sai o texto inteiro — sem sobra nem repetição. O número vira o endereço do trecho, e é por ele que tudo se cita depois.',
+    detalhe: 'O código corta o texto em fronteiras gerais: seção, página, linha em branco, item de lista e fim de frase. Os trechos remontam o texto inteiro, sem sobra nem repetição. Cada trecho ganha um número, e toda citação usa esse número.',
   },
   {
     quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'etiqueta',
     de: 'trechos', para: 'trechos-tema',
-    detalhe: 'O modelo devolve o tema de cada trecho — economia, saúde, segurança… — pelo número, nunca copiando o texto. O código confere: trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
+    detalhe: 'O modelo recebe os trechos numerados. Ele devolve o tema de cada um pelo número e nunca copia o texto. O código confere cada resposta. Trecho sem tema válido fica marcado como perdido, e perdido acima de 5% reprova a rodada.',
   },
   {
     quem: 'modelo', ator: 'Modelo de IA', icone: 'modelo', acao: 'compara e redige',
     de: 'trechos-tema', para: 'propostas',
-    detalhe: 'Entram juntos os trechos daquele tema nos seis programas. Numa leitura só, o modelo escreve cada proposta uma vez, em frase neutra, e diz, para cada candidato, se ele propõe, propõe o contrário ou não cita — apontando os trechos em que se baseou. Duas passadas de repescagem recuperam o que ficou de fora.',
+    detalhe: 'Os trechos daquele tema nos seis programas entram juntos, numa leitura só. O modelo escreve cada proposta uma vez, em frase neutra. Ele diz, para cada candidato, se o programa propõe, propõe o contrário ou não cita, e aponta os trechos. Duas passadas de repescagem recuperam o que ficou de fora.',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'confere as citações de',
     de: 'propostas', para: 'validas',
-    detalhe: 'Cada trecho citado tem de existir, ser daquele candidato e estar na entrada da leitura. O que não passa é recusado — o modelo não tem como inventar uma fonte.',
+    detalhe: 'O código exige que cada trecho citado exista, seja do candidato indicado e esteja na entrada da leitura. Ele recusa o que não passa. O modelo não consegue inventar uma fonte.',
   },
   {
     quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga as oposições de',
     de: 'validas', para: 'oposicoes',
-    detalhe: 'Vão ao juiz só as posições marcadas como "propõe o contrário", uma a uma: a proposta e o trecho, sem nome de candidato. Rejeitar, revogar ou fazer o inverso da mesma decisão é oposição. Propor outro caminho para o mesmo fim, não — e essa posição cai para "não cita".',
+    detalhe: 'Só as posições marcadas como "propõe o contrário" vão ao juiz. Ele recebe a proposta e o trecho, sem o nome do candidato. Ele confirma a oposição quando o programa rejeita a proposta, revoga a medida ou decide o inverso. Ele recusa quando o programa apenas propõe outro caminho para o mesmo fim. A posição recusada volta para "não cita".',
   },
   {
     quem: 'cego', ator: 'Modelo às cegas', icone: 'cego', acao: 'julga a sustentação de',
     de: 'oposicoes', para: 'conferidas',
-    detalhe: 'Agora vai ao juiz cada candidato de uma proposta que dois ou mais fazem, com os trechos dele e sem nome. Sustenta: fica. Sustenta só em parte: a proposta passa a ter só o núcleo comum, e o detalhe dele vira uma proposta própria. Não sustenta: sai — e só vira "propõe o contrário" se duas leituras cegas confirmarem.',
+    detalhe: 'Cada candidato de uma proposta compartilhada vai ao juiz, com os trechos dele e sem o nome. Quem sustenta a frase inteira fica. Quem sustenta só uma parte fica no núcleo comum e ganha uma proposta própria com o seu detalhe. Quem não sustenta sai do cartão. Duas leituras cegas precisam confirmar a oposição para ele virar "propõe o contrário".',
   },
   {
     quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'funde e tira espelhos de',
     de: 'conferidas', para: 'comparacao',
-    detalhe: 'Propostas próprias quase iguais do mesmo candidato viram uma. Propostas espelhadas — o mesmo assunto escrito duas vezes, uma de cada lado, como "permanecer no BRICS" e "retirar o Brasil do BRICS" — viram uma, depois de uma leitura cega confirmar que decidem a mesma coisa.',
+    detalhe: 'O código junta as propostas próprias quase iguais do mesmo candidato. Ele também tira as propostas espelhadas, como "permanecer no BRICS" e "retirar o Brasil do BRICS". Uma leitura cega confirma que as duas decidem a mesma coisa antes da retirada.',
   },
   {
     quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa e publica',
     de: 'comparacao', para: 'pagina',
-    detalhe: 'Uma pessoa lê a página pronta e decide o que entra. É aqui que ficam as escolhas editoriais que o código não toma sozinho.',
+    detalhe: 'Uma pessoa lê a página pronta e decide o que entra. As escolhas editoriais que o código não toma sozinho ficam aqui.',
   },
 ];
 
@@ -108,7 +108,7 @@ const legendas = [
 <figure class="fluxo-editorial" aria-labelledby="diagrama-editorial-titulo">
   <figcaption id="diagrama-editorial-titulo">
     Cada linha se lê como uma frase: quem faz, o que faz, o que entra e o que sai. Cada objeto tem
-    a sua cor, a mesma em toda etapa — o que sai de uma linha é o que entra na seguinte.
+    a sua cor, a mesma em toda etapa. O que sai de uma linha entra na seguinte.
   </figcaption>
 
   <p class="legenda">
@@ -145,10 +145,9 @@ const legendas = [
   </ol>
 
   <p class="nota">
-    O modelo é sempre o mesmo (Claude Opus 5, da Anthropic), e as instruções dadas a ele são
-    gerais: não citam tema, caso nem candidato. Nenhuma transformação apaga a anterior — cada
-    proposta continua ligada aos trechos de onde saiu, e por isso dá para voltar do cartão ao
-    parágrafo do programa.
+    O modelo é sempre o mesmo: Claude Opus 5, da Anthropic. As instruções dadas a ele são gerais e
+    não citam tema, caso nem candidato. Nenhuma transformação apaga a anterior: cada proposta
+    continua ligada aos trechos de onde saiu, e você volta do cartão ao parágrafo do programa.
   </p>
 </figure>
 
