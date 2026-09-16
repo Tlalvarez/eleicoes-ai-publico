@@ -1,0 +1,100 @@
+---
+import Base from '../layouts/Base.astro';
+// Correções: como apontar um erro e o registro público de todo pedido.
+// Decisão de 16/09/2026 (revisão jurídica do lançamento, §3.5). O nome é
+// "Correções" de propósito: nunca "editar", nunca "informação adicional" — o
+// site compara o que está no programa registrado, e nada além dele entra.
+// Substitui /contato, que passou a redirecionar para cá.
+import { EMAIL_CONTATO as email } from '../lib/contato.mjs';
+import { correcoes } from '../lib/correcoes.mjs';
+
+const repo = 'https://github.com/Tlalvarez/eleicoes-ai-publico';
+const { pedidos } = correcoes();
+const dataBr = (iso) => iso.slice(0, 10).split('-').reverse().join('/');
+---
+<Base title="Correções"
+  description="Como apontar um erro numa comparação do eleicoes.ai, o que entra, o que não entra e o registro público de todos os pedidos.">
+  <div class="prose">
+    <h1>Correções</h1>
+    <p class="lead">
+      Achou um erro numa comparação? Escreva para
+      <a href={`mailto:${email}`}><strong>{email}</strong></a>. Todo pedido entra no
+      <a href="#registro">registro público</a> abaixo, aceito ou recusado, com o motivo.
+    </p>
+
+    <h2 id="o-que-entra">O que entra</h2>
+    <p>Erros no que escrevemos sobre o programa registrado:</p>
+    <ul>
+      <li>Um resumo que não bate com o trecho do programa.</li>
+      <li>Um "propõe o contrário" que não se sustenta.</li>
+      <li>Uma proposta que está no programa e falta na página.</li>
+      <li>Uma meta com número errado.</li>
+      <li>Um candidato que deveria estar num cartão e não está.</li>
+    </ul>
+    <p>
+      Mande sempre três coisas: o endereço da página, a proposta e o trecho do programa
+      com a página do PDF. Sem o trecho não há o que conferir.
+    </p>
+
+    <h2 id="o-que-nao-entra">O que não entra</h2>
+    <ul>
+      <li>Informação que não está no programa de governo registrado.</li>
+      <li>Mudança de posição do candidato depois do registro.</li>
+      <li>Entrevista, debate, rede social ou material de campanha.</li>
+      <li>Retirar uma proposta porque o candidato não gosta dela.</li>
+    </ul>
+    <p>
+      O site compara programas registrados no TSE, e só isso. Publicar aqui texto novo de
+      uma campanha seria outra coisa, não comparação de programas.
+    </p>
+
+    <h2 id="como-conferimos">Como conferimos</h2>
+    <ul>
+      <li>O processo é o mesmo para campanha e para eleitor: quem aponta o erro não muda a régua.</li>
+      <li>Pedido de campanha tem prazo declarado de <strong>48 horas</strong> para a nossa decisão.</li>
+      <li>
+        Quem confere é o mesmo modelo às cegas que o site usa para julgar apoio e
+        oposição: ele recebe o trecho e a frase, sem saber de quem é o pedido. O passo a
+        passo está na <a href="/metodologia">metodologia</a>.
+      </li>
+      <li>A correção aceita entra no <a href={`${repo}/commits/main`} rel="noopener noreferrer">histórico público de mudanças</a>, e o commit fica no registro.</li>
+    </ul>
+    <p>
+      Não há espaço de resposta do candidato nesta página. Resposta a candidato só por
+      ordem judicial, no formato que o juiz determinar.
+    </p>
+
+    <h2 id="registro">Registro público dos pedidos</h2>
+    {pedidos.length === 0 ? (
+      <p>Nenhum pedido de correção até agora. Quando houver, cada um aparece aqui — aceito ou recusado — com a data, a página, o que foi apontado e o motivo da decisão.</p>
+    ) : (
+      <div class="rolagem">
+        <table>
+          <caption class="sr-only">Pedidos de correção recebidos, com a decisão e o motivo</caption>
+          <thead>
+            <tr><th scope="col">Recebido</th><th scope="col">De</th><th scope="col">Página</th><th scope="col">O que foi apontado</th><th scope="col">Decisão</th><th scope="col">Motivo</th></tr>
+          </thead>
+          <tbody>
+            {pedidos.map((p) => (
+              <tr id={`pedido-${p.id}`}>
+                <td>{dataBr(p.recebido_em)}</td>
+                <td>{p.origem === 'campanha' ? 'Campanha' : 'Leitor'}</td>
+                <td>{p.escopo}{p.pagina ? ` · ${p.pagina}` : ''}</td>
+                <td>{p.pedido}</td>
+                <td>{p.decisao}{p.commit ? <> · <a href={`${repo}/commit/${p.commit}`} rel="noopener noreferrer">correção</a></> : null}</td>
+                <td>{p.motivo ?? '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+  </div>
+</Base>
+
+<style>
+  .prose .rolagem { overflow-x: auto; }
+  .prose table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  .prose th, .prose td { border-bottom: 1px solid var(--linha); padding: .5rem .6rem; text-align: left; vertical-align: top; }
+  .prose th { font-weight: 600; }
+</style>

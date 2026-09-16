@@ -1,0 +1,5 @@
+{
+ "contrato": "correcoes/1",
+ "_sobre": "Todo pedido de correção recebido, aceito ou recusado, com o motivo. É o registro público que a página /correcoes mostra. Cada pedido é uma entrada; nada sai daqui depois de entrar. Campos: id (aaaa-mm-dd-n), recebido_em (ISO), origem ('campanha' ou 'leitor'), escopo ('presidente' ou 'governador/uf'), pagina (tema), proposta (id do cartão, ou null quando o pedido é da página), pedido (o que foi apontado, em uma frase), decisao ('aceito', 'recusado' ou 'em análise'), motivo (por que, sempre preenchido em aceito e recusado), decidido_em (ISO ou null), commit (sha da correção no repositório, ou null).",
+ "pedidos": []
+}
