@@ -17,7 +17,12 @@ import Busca from './Busca.astro';
 import { layout, contagens } from '../lib/comparacao.mjs';
 import { indiceDeContestacoes } from '../lib/correcoes.mjs';
 
-const { dados, base, trilha, paginas } = Astro.props;
+// `naHome` (16/09): a home abre a matriz do primeiro tema, sem clique. Ali a trilha não
+// faz sentido (a página já é o início), o título da matriz não pode ser <h1> — a home já
+// tem o seu, e o portão de acessibilidade exige uma só — e "limpar a busca" volta para a
+// home, não para o endereço do tema, que passa a redirecionar para cá.
+const { dados, base, trilha, paginas, naHome = false } = Astro.props;
+const voltaDoFiltro = naHome ? '/' : `${base}/${dados.pagina}`;
 // o escopo da busca é o mesmo da página: 'presidente' ou 'governador/sp'
 const escopoBusca = base.replace(/^\//, '');
 // dados: o JSON da página; base: '/presidente' ou '/governador/sp';
@@ -50,13 +55,15 @@ const estiloCartao = (c) => `grid-column:${c.ini + 1} / span ${c.largura};--l:${
 const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 ---
 <div class="comparacao" style={`--n:${ordem.length}`} data-tema={dados.pagina}>
-  <nav class="trilha" aria-label="Você está em">
-    <ol>
-      <li><a href="/">Início</a></li>
-      {trilha.map((t) => <li><a href={t.href}>{t.nome}</a></li>)}
-      <li aria-current="page">{dados.nome}</li>
-    </ol>
-  </nav>
+  {!naHome && (
+    <nav class="trilha" aria-label="Você está em">
+      <ol>
+        <li><a href="/">Início</a></li>
+        {trilha.map((t) => <li><a href={t.href}>{t.nome}</a></li>)}
+        <li aria-current="page">{dados.nome}</li>
+      </ol>
+    </nav>
+  )}
 
   <div class="busca-tema">
     <button type="button" class="abrir-busca" aria-expanded="false" aria-controls="busca-no-tema">
@@ -85,16 +92,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   </div>
 
   <section class="abertura">
-    <h1>{dados.titulo}</h1>
+    {/* na home o título da página já diz o que é, e o seletor logo acima nomeia o tema:
+        repetir "Economia: o que cada candidato propõe" custava uma tela no celular
+        (decisão do Thiago, 16/09 — deixar só o mínimo) */}
+    {!naHome && <h1>{dados.titulo}</h1>}
     <p class="lead">
       Propostas dos programas de governo registrados no TSE, assunto por assunto. Uma proposta feita
       por mais de um candidato aparece uma vez, sobre as colunas de quem a faz. Toque para ler o trecho do programa.
+      {naHome && <> <a href="/metodologia">Como a comparação é feita</a>.</>}
     </p>
   </section>
 
   <div class="filtro-busca" role="status" hidden>
     <p class="filtro-texto"></p>
-    <p class="filtro-acoes"><a class="limpar" href={`${base}/${dados.pagina}`}>Limpar a busca e ver o tema inteiro</a></p>
+    <p class="filtro-acoes"><a class="limpar" href={voltaDoFiltro}>Limpar a busca e ver o tema inteiro</a></p>
   </div>
 
   <div class="seletor" role="group" aria-label="Candidatos na comparação">

@@ -8,7 +8,10 @@ import Comparacao from '../../components/Comparacao.astro';
 import { comparacao, paginaPorId, paginasProntas } from '../../lib/comparacao-dados.mjs';
 
 export function getStaticPaths() {
-  return paginasProntas('presidente').map((id) => ({ params: { tema: id }, props: { dados: comparacao('presidente', null, id) } }));
+  // o primeiro tema NÃO vira página: ele é a home (decisão do Thiago, 16/09). Se o
+  // arquivo existisse, a Cloudflare serviria o arquivo e nunca o redirecionamento.
+  const prontas = paginasProntas('presidente');
+  return prontas.slice(1).map((id) => ({ params: { tema: id }, props: { dados: comparacao('presidente', null, id) } }));
 }
 const { dados } = Astro.props;
 const paginas = paginasProntas('presidente').map((id) => paginaPorId(id));

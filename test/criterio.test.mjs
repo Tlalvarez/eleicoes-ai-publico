@@ -35,11 +35,25 @@ test('criterio.json cumpre o contrato e cobre presidente e toda UF pronta', () =
   }
 });
 
-test('home e página da UF mostram os candidatos comparados abaixo da busca', () => {
+test('home e página da UF mostram os candidatos comparados depois da comparação', () => {
+  // 16/09: a home passou a abrir a matriz do primeiro tema, e a busca separada saiu — a
+  // matriz tem a sua. O que se cobra é a ordem: primeiro comparar, depois quem compõe.
   const home = readFileSync(`${RAIZ}/src/pages/index.astro`, 'utf8');
   const uf = readFileSync(`${RAIZ}/src/pages/[cargo]/[uf].astro`, 'utf8');
   for (const [nome, t] of [['home', home], ['uf', uf]]) {
     assert.match(t, /<CandidatosComparados /, nome);
-    assert.ok(t.indexOf('<Busca ') < t.indexOf('<CandidatosComparados '), `${nome}: os retratos vêm depois da busca`);
+    const antes = Math.max(t.indexOf('<Comparacao '), t.indexOf('<Busca '));
+    assert.ok(antes >= 0, `${nome}: nem matriz nem busca na página`);
+    assert.ok(antes < t.indexOf('<CandidatosComparados '), `${nome}: os retratos vêm por último`);
   }
+});
+
+test('a home abre a matriz do primeiro tema, sem clique', () => {
+  const home = readFileSync(`${RAIZ}/src/pages/index.astro`, 'utf8');
+  assert.match(home, /<Comparacao [^>]*naHome/, 'a home monta a comparação em modo home');
+  assert.doesNotMatch(home, /<GradeTemas /, 'a grade de temas saiu: o seletor da matriz faz esse papel');
+  const tema = readFileSync(`${RAIZ}/src/pages/presidente/[tema].astro`, 'utf8');
+  assert.match(tema, /prontas\.slice\(1\)/, 'o primeiro tema não pode virar página: ele é a home');
+  assert.match(readFileSync(`${RAIZ}/public/_redirects`, 'utf8'), /^\/presidente\/[a-z-]+ \/ 301$/m,
+    'o endereço do primeiro tema precisa redirecionar para a home');
 });

@@ -3,9 +3,12 @@
  * Gate do dist: as páginas da comparação existem e trazem o que prometem.
  *
  * O que se confere no HTML construído, não no código-fonte:
- *   · a home existe e linka TODAS as páginas com comparação
- *     pronta (data/comparacao/presidente/*.json) — tema exportado e sem link
- *     é tema invisível;
+ *   · a home É a comparação do primeiro tema (16/09) e se confere como tal:
+ *     colunas, cartões, seletor, caixa de temas e dados embutidos. Ela linka
+ *     TODAS as páginas com comparação pronta (data/comparacao/presidente/*.json)
+ *     — tema exportado e sem link é tema invisível;
+ *   · o primeiro tema NÃO tem página própria: o endereço dele redireciona para
+ *     a home, e um arquivo em dist/ seria servido no lugar do redirecionamento;
  *   · cada /presidente/<tema>.html traz uma coluna por candidato do JSON, um
  *     cartão por proposta, o seletor de candidatos e a caixa de temas;
  *   · /governador/<uf>.html existe para as 27 UFs; sem dados, diz "em
@@ -68,8 +71,15 @@ const home = le('index.html');
 if (existsSync(join(DIST, 'presidente.html')) && !/http-equiv=["']refresh["']/i.test(readFileSync(join(DIST, 'presidente.html'), 'utf8'))) {
   falhas.push('presidente.html: o hub voltou a existir como página — ele redireciona para a home');
 }
+// o primeiro tema mora na home; os demais têm página própria
+const naHome = prontas[0];
+if (existsSync(join(DIST, 'presidente', `${naHome}.html`))) {
+  falhas.push(`presidente/${naHome}.html: existe como arquivo, e a Cloudflare o serviria no lugar do redirecionamento para a home`);
+}
+confereTema('index.html', comparacao('presidente', null, naHome), '/presidente', prontas);
 for (const id of prontas) {
   if (!contaLinks(home, `/presidente/${id}`)) falhas.push(`index.html: não linka /presidente/${id}`);
+  if (id === naHome) continue;
   confereTema(join('presidente', `${id}.html`), comparacao('presidente', null, id), '/presidente', prontas);
 }
 for (const id of prontas) {
@@ -112,6 +122,6 @@ if (falhas.length) {
   console.error('FALHOU (páginas):\n  ' + falhas.join('\n  '));
   process.exit(1);
 }
-console.log(`OK (páginas): a home linka os ${prontas.length} temas de presidente; cada tema traz colunas, `
+console.log(`OK (páginas): a home É a comparação de "${prontas[0]}" e linka os ${prontas.length} temas de presidente; cada tema traz colunas, `
   + `cartões, seletor e caixa de temas; ${UFS.length} UFs por cargo (${CARGOS_POR_UF.map((c) => c.nome).join(', ')}), `
   + 'com dados ou "em preparação"; nenhuma página traz o chat');

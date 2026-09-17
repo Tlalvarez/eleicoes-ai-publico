@@ -1,50 +1,40 @@
 ---
 /**
- * A home: a porta de entrada da comparação de programas — os temas de
- * Presidente. Governador tem a sua seção, pelo menu do cabeçalho. Sem chat: o produto é a comparação,
- * tema a tema, dos programas registrados no TSE.
+ * A home: a comparação já aberta, no primeiro tema de Presidente.
+ *
+ * Decisão do Thiago (16/09/2026): a matriz é o produto, e chegar nela não pode
+ * custar um clique. A home passou a ser a própria página de comparação do
+ * primeiro tema — a grade de temas saiu (o seletor da matriz faz esse papel) e a
+ * busca separada também (a matriz tem a sua, que filtra na hora). O endereço do
+ * primeiro tema redireciona para cá, para não haver duas páginas iguais.
+ *
+ * Governador tem a sua seção, pelo menu do cabeçalho.
  */
 import Base from '../layouts/Base.astro';
-import GradeTemas from '../components/GradeTemas.astro';
-import Busca from '../components/Busca.astro';
+import Comparacao from '../components/Comparacao.astro';
 import CandidatosComparados from '../components/CandidatosComparados.astro';
-import { comparacao, resumoDoEscopo } from '../lib/comparacao-dados.mjs';
+import { comparacao, paginaPorId, paginasProntas } from '../lib/comparacao-dados.mjs';
 
-const resumo = resumoDoEscopo('presidente');
-const candidatos = resumo.length ? comparacao('presidente', null, resumo[0].id).candidatos : [];
-const totalPropostas = resumo.reduce((n, r) => n + r.propostas, 0);
+const prontas = paginasProntas('presidente');
+const primeiro = prontas[0];
+const dados = primeiro ? comparacao('presidente', null, primeiro) : null;
+const paginas = prontas.map((id) => paginaPorId(id));
+const candidatos = dados ? dados.candidatos : [];
 ---
 <Base title="Eleições 2026 - Compare os programas de governo"
   description="O que cada candidato de 2026 registrou no programa de governo, tema a tema: onde os programas convergem, onde divergem e o que não tratam. Com o trecho de cada programa.">
   <div class="hero-home">
-    <p class="sobretitulo">Candidatos a presidente</p>
-    <h1>Compare os programas de governo</h1>
+    <h1>Compare os programas dos candidatos a Presidente</h1>
   </div>
 
-  <section class="bloco">
-    <h2>Temas</h2>
-    <GradeTemas resumo={resumo} base="/presidente" origem="home" />
-  </section>
-
-  <section class="bloco">
-    <h2 id="busque">Busque por tópico</h2>
-    <Busca semRotulo rotuladoPor="busque" />
-  </section>
+  {dados
+    ? <Comparacao dados={dados} base="/presidente" paginas={paginas} trilha={[]} naHome />
+    : <p class="lead">A comparação de presidente está em preparação.</p>}
 
   <CandidatosComparados candidatos={candidatos} cargo="presidente" />
 
   <style>
-    .hero-home { margin-bottom: 1.6rem; }
-    .hero-home .lead { max-width: none; }
-    .sobretitulo {
-      margin: 0 0 .6rem;
-      color: var(--acento);
-      font-size: .79rem;
-      font-weight: 800;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
     .hero-home { margin-bottom: 1rem; }
-    .bloco h2 { margin-top: 1.4rem; }
+    .hero-home .lead { max-width: none; }
   </style>
 </Base>
