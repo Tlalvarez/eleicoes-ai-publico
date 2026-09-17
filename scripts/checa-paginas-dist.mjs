@@ -12,7 +12,9 @@
  *   · cada /presidente/<tema>.html traz uma coluna por candidato do JSON, um
  *     cartão por proposta, o seletor de candidatos e a caixa de temas;
  *   · /governador/<uf>.html existe para as 27 UFs; sem dados, diz "em
- *     preparação"; com dados, linka cada tema pronto, e cada tema existe;
+ *     preparação"; com dados, ELA É a comparação do primeiro tema — conferida
+ *     como página de tema —, linka cada tema pronto, e o arquivo do primeiro
+ *     tema não pode existir, porque o endereço dele redireciona para ela;
  *   · nenhuma página construída traz o chat (formulário de pergunta) nem
  *     endereço de resposta guardada — o produto mudou e o dist tem de dizer.
  *
@@ -103,9 +105,16 @@ for (const cargo of CARGOS_POR_UF) {
       if (!/em preparação/.test(html)) falhas.push(`${rel}: sem dados e sem dizer "em preparação"`);
       continue;
     }
+    // a página da UF É a comparação do primeiro tema (16/09), como a home
     const temas = paginasProntas(cargo.slug, sigla);
+    const naUf = temas[0];
+    if (existsSync(join(DIST, cargo.slug, sigla, `${naUf}.html`))) {
+      falhas.push(`${cargo.slug}/${sigla}/${naUf}.html: existe como arquivo, e a Cloudflare o serviria no lugar do redirecionamento para ${cargo.href}/${sigla}`);
+    }
+    confereTema(rel, comparacao(cargo.slug, sigla, naUf), `${cargo.href}/${sigla}`, temas);
     for (const id of temas) {
       if (!contaLinks(html, `${cargo.href}/${sigla}/${id}`)) falhas.push(`${rel}: não linka o tema ${id}`);
+      if (id === naUf) continue;
       confereTema(join(cargo.slug, sigla, `${id}.html`), comparacao(cargo.slug, sigla, id), `${cargo.href}/${sigla}`, temas);
     }
   }

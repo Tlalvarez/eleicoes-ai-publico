@@ -48,6 +48,19 @@ test('home e página da UF mostram os candidatos comparados depois da comparaç�
   }
 });
 
+test('a página da UF também abre a matriz do primeiro tema', () => {
+  // 16/09: o mesmo padrão da home vale para governador — clicar num estado já mostra a
+  // comparação, e o endereço do primeiro tema daquela UF redireciona para a página dela.
+  const pagina = readFileSync(`${RAIZ}/src/pages/[cargo]/[uf].astro`, 'utf8');
+  assert.match(pagina, /<Comparacao [^>]*naHome/, 'a página da UF monta a comparação');
+  assert.doesNotMatch(pagina, /<GradeTemas /, 'a grade de temas saiu: o seletor da matriz faz esse papel');
+  const tema = readFileSync(`${RAIZ}/src/pages/[cargo]/[uf]/[tema].astro`, 'utf8');
+  assert.match(tema, /\.slice\(1\)/, 'o primeiro tema da UF não pode virar página: ele é a página da UF');
+  const redirects = readFileSync(`${RAIZ}/public/_redirects`, 'utf8');
+  const linhas = redirects.match(/^\/governador\/[a-z]{2}\/[a-z-]+ \/governador\/[a-z]{2} 301$/gm) ?? [];
+  assert.equal(linhas.length, 27, `esperava 27 redirecionamentos de UF, achei ${linhas.length}`);
+});
+
 test('a home abre a matriz do primeiro tema, sem clique', () => {
   const home = readFileSync(`${RAIZ}/src/pages/index.astro`, 'utf8');
   assert.match(home, /<Comparacao [^>]*naHome/, 'a home monta a comparação em modo home');

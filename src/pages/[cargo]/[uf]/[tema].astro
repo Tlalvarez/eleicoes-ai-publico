@@ -13,7 +13,10 @@ export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => ufsProntas(cargo.slug).flatMap((sigla) => {
     const uf = ufPorSigla(sigla.toUpperCase());
     if (!uf) return [];
-    return paginasProntas(cargo.slug, sigla).map((id) => ({
+    // o primeiro tema NÃO vira página: ele é a própria página da UF (decisão do
+    // Thiago, 16/09). Se o arquivo existisse, a Cloudflare o serviria no lugar do
+    // redirecionamento.
+    return paginasProntas(cargo.slug, sigla).slice(1).map((id) => ({
       params: { cargo: cargo.slug, uf: sigla, tema: id },
       props: { cargo, uf, dados: comparacao(cargo.slug, sigla, id) },
     }));

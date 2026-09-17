@@ -5,12 +5,11 @@
  * as 27 UFs nos dois casos, para o endereço não mudar quando os dados chegarem.
  */
 import Base from '../../layouts/Base.astro';
-import Busca from '../../components/Busca.astro';
 import CandidatosComparados from '../../components/CandidatosComparados.astro';
-import GradeTemas from '../../components/GradeTemas.astro';
+import Comparacao from '../../components/Comparacao.astro';
 import { CARGOS_POR_UF, UFS, caminhoUf, rotuloEscopo } from '../../lib/cargos.mjs';
 import { SNAPSHOT_BR, candidaturas, notaSituacao, separaPorDisputa } from '../../lib/candidaturas-uf.mjs';
-import { resumoDoEscopo } from '../../lib/comparacao-dados.mjs';
+import { comparacao, paginaPorId, paginasProntas, resumoDoEscopo } from '../../lib/comparacao-dados.mjs';
 
 export function getStaticPaths() {
   return CARGOS_POR_UF.flatMap((cargo) => UFS.map((uf) => ({
@@ -23,8 +22,13 @@ const escopo = rotuloEscopo(cargo, uf);
 const base = caminhoUf(cargo, uf);
 const resumo = resumoDoEscopo(cargo.slug, uf.sigla);
 const pronta = resumo.length > 0;
-// com a comparação pronta, a página é só a porta: os temas e a busca (pedido do
-// Thiago em 14/09); a lista de candidaturas do TSE fica só para "em preparação"
+// Decisão do Thiago (16/09): clicar numa UF já mostra a comparação, como na home. A
+// página da UF É a matriz do primeiro tema pronto; o seletor leva aos demais, e o
+// endereço daquele tema redireciona para cá. A lista de candidaturas do TSE fica só
+// para "em preparação".
+const prontas = paginasProntas(cargo.slug, uf.sigla);
+const dados = pronta ? comparacao(cargo.slug, uf.sigla, prontas[0]) : null;
+const paginas = prontas.map((id) => paginaPorId(id, undefined, cargo.slug));
 // as candidaturas do snapshot do TSE, em ordem alfabética: quem está na
 // disputa e quem saiu (renúncia, indeferimento sem recurso), com a situação do TSE
 const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla));
@@ -46,14 +50,7 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
 
   {pronta && (
     <>
-      <section class="bloco">
-        <h2>Temas</h2>
-        <GradeTemas resumo={resumo} base={base} origem="hub" />
-      </section>
-      <section class="bloco">
-        <h2 id="busque">Busque por tópico</h2>
-        <Busca escopo={`${cargo.slug}/${uf.sigla.toLowerCase()}`} semRotulo rotuladoPor="busque" />
-      </section>
+      <Comparacao dados={dados} base={base} paginas={paginas} naHome />
       <CandidatosComparados candidatos={resumo[0].candidatos} cargo={cargo.slug} uf={uf.sigla} />
     </>
   )}
@@ -109,16 +106,8 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
   )}
 
   <style>
-    .hero-home { margin-bottom: 1.6rem; }
+    .hero-home { margin-bottom: 1rem; }
     .hero-home .lead { max-width: none; }
-    .sobretitulo {
-      margin: 0 0 .6rem;
-      color: var(--acento);
-      font-size: .79rem;
-      font-weight: 800;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
     .depois-da-faixa { margin-top: 1rem; color: var(--tinta-suave); font-size: .92rem; }
     .grade-candidatos {
       display: grid;
