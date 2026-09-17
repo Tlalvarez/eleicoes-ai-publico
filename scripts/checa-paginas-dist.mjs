@@ -16,7 +16,8 @@
  *     como página de tema —, linka cada tema pronto, e o arquivo do primeiro
  *     tema não pode existir, porque o endereço dele redireciona para ela;
  *   · nenhuma página construída traz o chat (formulário de pergunta) nem
- *     endereço de resposta guardada — o produto mudou e o dist tem de dizer.
+ *     endereço de resposta guardada — o produto mudou e o dist tem de dizer;
+ *   · o _redirects não passa de 100 regras, que é o que a Pages aplica.
  *
  * Uso: npm run build && npm run test:paginas-dist
  */
@@ -120,6 +121,17 @@ for (const cargo of CARGOS_POR_UF) {
   }
 }
 
+// ------------------------------------------- o _redirects cabe no que a Pages aplica
+// A Cloudflare Pages aplica no máximo 100 regras estáticas e ignora as excedentes SEM
+// avisar: em 16/09 o arquivo chegou a 104 e três UFs (posições 102-104) passaram a
+// servir 404 em vez de redirecionar. Regra com curinga (:uf) conta no mesmo limite.
+const LIMITE_REGRAS = 100;
+const redirects = readFileSync(join(RAIZ, 'public', '_redirects'), 'utf8');
+const regras = redirects.split('\n').filter((l) => l.startsWith('/')).length;
+if (regras > LIMITE_REGRAS) {
+  falhas.push(`_redirects: ${regras} regras, e a Pages aplica ${LIMITE_REGRAS} — as excedentes são ignoradas em silêncio`);
+}
+
 // ------------------------------------------------------- o chat não voltou
 for (const rel of ['index.html', 'governador.html', 'sobre.html', 'privacidade.html', 'metodologia.html']) {
   const html = le(rel);
@@ -133,4 +145,4 @@ if (falhas.length) {
 }
 console.log(`OK (páginas): a home É a comparação de "${prontas[0]}" e linka os ${prontas.length} temas de presidente; cada tema traz colunas, `
   + `cartões, seletor e caixa de temas; ${UFS.length} UFs por cargo (${CARGOS_POR_UF.map((c) => c.nome).join(', ')}), `
-  + 'com dados ou "em preparação"; nenhuma página traz o chat');
+  + `com dados ou "em preparação"; nenhuma página traz o chat; ${regras} regras de redirecionamento (limite ${LIMITE_REGRAS})`);

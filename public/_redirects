@@ -107,30 +107,8 @@
 # Cada UF abre na comparação do primeiro tema (16/09/2026), como a home: clicar num
 # estado não pode custar mais um clique até a matriz. O endereço do tema continua
 # valendo, redirecionado, para não haver duas páginas com o mesmo conteúdo.
-/governador/ac/seguranca /governador/ac 301
-/governador/al/seguranca /governador/al 301
-/governador/am/seguranca /governador/am 301
-/governador/ap/seguranca /governador/ap 301
-/governador/ba/seguranca /governador/ba 301
-/governador/ce/seguranca /governador/ce 301
-/governador/df/seguranca /governador/df 301
-/governador/es/seguranca /governador/es 301
-/governador/go/seguranca /governador/go 301
-/governador/ma/seguranca /governador/ma 301
-/governador/mg/seguranca /governador/mg 301
-/governador/ms/seguranca /governador/ms 301
-/governador/mt/seguranca /governador/mt 301
-/governador/pa/seguranca /governador/pa 301
-/governador/pb/seguranca /governador/pb 301
-/governador/pe/seguranca /governador/pe 301
-/governador/pi/seguranca /governador/pi 301
-/governador/pr/seguranca /governador/pr 301
-/governador/rj/seguranca /governador/rj 301
-/governador/rn/seguranca /governador/rn 301
-/governador/ro/seguranca /governador/ro 301
-/governador/rr/seguranca /governador/rr 301
-/governador/rs/seguranca /governador/rs 301
-/governador/sc/seguranca /governador/sc 301
-/governador/se/seguranca /governador/se 301
-/governador/sp/seguranca /governador/sp 301
-/governador/to/seguranca /governador/to 301
+#
+# UMA regra, não 27: a Cloudflare Pages aplica no máximo 100 regras estáticas e
+# IGNORA as excedentes sem avisar. Com 27 linhas o arquivo chegou a 104, e se, sp e
+# to (posições 102, 103 e 104) ficaram de fora — serviam 404 em vez de redirecionar.
+/governador/:uf/seguranca /governador/:uf 301

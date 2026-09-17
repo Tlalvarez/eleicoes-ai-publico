@@ -57,8 +57,13 @@ test('a página da UF também abre a matriz do primeiro tema', () => {
   const tema = readFileSync(`${RAIZ}/src/pages/[cargo]/[uf]/[tema].astro`, 'utf8');
   assert.match(tema, /\.slice\(1\)/, 'o primeiro tema da UF não pode virar página: ele é a página da UF');
   const redirects = readFileSync(`${RAIZ}/public/_redirects`, 'utf8');
-  const linhas = redirects.match(/^\/governador\/[a-z]{2}\/[a-z-]+ \/governador\/[a-z]{2} 301$/gm) ?? [];
-  assert.equal(linhas.length, 27, `esperava 27 redirecionamentos de UF, achei ${linhas.length}`);
+  // uma regra com curinga, não 27 linhas: a Pages aplica no máximo 100 regras estáticas e
+  // ignora as excedentes sem avisar — com 27 linhas o arquivo passou de 100 e três UFs
+  // ficaram servindo 404 em vez de redirecionar (16/09)
+  assert.match(redirects, /^\/governador\/:uf\/[a-z-]+ \/governador\/:uf 301$/m,
+    'o primeiro tema de cada UF precisa redirecionar para a página da UF');
+  const regras = redirects.split('\n').filter((l) => l.startsWith('/')).length;
+  assert.ok(regras <= 100, `_redirects tem ${regras} regras, e a Pages aplica 100`);
 });
 
 test('a home abre a matriz do primeiro tema, sem clique', () => {
