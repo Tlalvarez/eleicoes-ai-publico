@@ -21,7 +21,7 @@
  *
  * Uso: npm run build && npm run test:paginas-dist
  */
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -132,6 +132,25 @@ if (regras > LIMITE_REGRAS) {
   falhas.push(`_redirects: ${regras} regras, e a Pages aplica ${LIMITE_REGRAS} — as excedentes são ignoradas em silêncio`);
 }
 
+// ------------------------------- seletor que o build emite e o navegador joga fora
+// `:global(...)` dentro do <style> de um componente Astro pode chegar ao CSS com o
+// próprio `:global(` no seletor. O navegador não entende, descarta a regra inteira e
+// não avisa. Em 16/09 foi assim com a trava de rolagem do pedido para girar o celular:
+// a classe entrava no <body>, a regra estava no arquivo, e o overflow seguia solto —
+// só a medição no navegador denunciou. Um seletor inválido no dist é defeito do dist.
+const PASTA_CSS = join(DIST, '_astro');
+let folhasConferidas = 0;
+if (existsSync(PASTA_CSS)) {
+  for (const arq of readdirSync(PASTA_CSS).filter((f) => f.endsWith('.css'))) {
+    folhasConferidas += 1;
+    const css = readFileSync(join(PASTA_CSS, arq), 'utf8');
+    const restos = css.match(/:global\(/g);
+    if (restos) {
+      falhas.push(`_astro/${arq}: ${restos.length} seletor(es) com ':global(' — o navegador descarta a regra em silêncio`);
+    }
+  }
+}
+
 // ------------------------------------------------------- o chat não voltou
 for (const rel of ['index.html', 'governador.html', 'sobre.html', 'privacidade.html', 'metodologia.html']) {
   const html = le(rel);
@@ -145,4 +164,5 @@ if (falhas.length) {
 }
 console.log(`OK (páginas): a home É a comparação de "${prontas[0]}" e linka os ${prontas.length} temas de presidente; cada tema traz colunas, `
   + `cartões, seletor e caixa de temas; ${UFS.length} UFs por cargo (${CARGOS_POR_UF.map((c) => c.nome).join(', ')}), `
-  + `com dados ou "em preparação"; nenhuma página traz o chat; ${regras} regras de redirecionamento (limite ${LIMITE_REGRAS})`);
+  + `com dados ou "em preparação"; nenhuma página traz o chat; ${regras} regras de redirecionamento (limite ${LIMITE_REGRAS}); `
+  + `${folhasConferidas} folha(s) de estilo sem seletor que o navegador descarte`);

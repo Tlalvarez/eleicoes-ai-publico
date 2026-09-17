@@ -104,9 +104,25 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </p>
   </div>
 
-  <div class="aviso-girar" role="status" hidden>
-    <p><strong>Gire o celular</strong> para ver as colunas dos candidatos lado a lado.</p>
-    <button type="button" class="botao secundario fechar-aviso">Fechar</button>
+  {/* Em pé, a comparação mostra uma coluna — o contrário do que o site faz. O aviso de
+      rodapé era fácil de ignorar, então virou tela cheia (Thiago, 16/09), com o desenho
+      de um telefone girando. A saída discreta existe de propósito: quem está com a
+      rotação travada no aparelho não pode ficar do lado de fora do site. */}
+  <div class="gire" role="dialog" aria-modal="true" aria-labelledby="gire-titulo" hidden>
+    <div class="gire-caixa">
+      <div class="gire-desenho" aria-hidden="true">
+        <svg class="gire-seta" viewBox="0 0 132 64" width="132" height="64" focusable="false">
+          <path d="M10 52 A 58 58 0 0 1 122 52" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-dasharray="5 8" />
+          <path d="M112 38 L122 52 L107 56" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+        <div class="gire-telefone"><span class="gire-tela"></span></div>
+      </div>
+      <h2 id="gire-titulo">Gire o celular</h2>
+      <p>A comparação põe os candidatos lado a lado. Em pé cabe uma coluna; deitado, cabem todas.</p>
+      <button type="button" class="gire-saida">Continuar em pé mesmo assim</button>
+    </div>
   </div>
 
   <div class="quadro">
@@ -483,15 +499,22 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     // o cabeçalho congelado acompanha a rolagem lateral do corpo
     rolagem.addEventListener('scroll', () => { cabecalho.scrollLeft = rolagem.scrollLeft; }, { passive: true });
 
-    // no celular em pé, as colunas não cabem: o aviso pede para girar, e some
-    // sozinho quando o aparelho gira (ou quando a pessoa o fecha)
-    const aviso = raiz.querySelector('.aviso-girar');
-    const emPe = matchMedia('(orientation: portrait) and (max-width: 760px)');
-    let avisoFechado = false;
-    const mostraAviso = () => { aviso.hidden = avisoFechado || !emPe.matches; };
-    aviso.querySelector('.fechar-aviso').addEventListener('click', () => { avisoFechado = true; mostraAviso(); });
-    emPe.addEventListener('change', mostraAviso);
-    mostraAviso();
+    // No celular em pé a matriz não cumpre o que promete: cabe uma coluna. Em vez do
+    // aviso de rodapé, a tela inteira pede para girar, e sai sozinha quando o aparelho
+    // gira. `pointer: coarse` limita isso a aparelho de toque — numa janela estreita de
+    // computador, cobrir a tela seria estorvo, e lá a pessoa resolve alargando a janela.
+    const gire = raiz.querySelector('.gire');
+    const emPe = matchMedia('(orientation: portrait) and (max-width: 760px) and (pointer: coarse)');
+    let seguiuEmPe = false;
+    const mostraGire = () => {
+      const mostra = !seguiuEmPe && emPe.matches;
+      gire.hidden = !mostra;
+      // com a tela coberta, rolar o que está atrás é rolagem fantasma
+      document.body.classList.toggle('sem-rolagem', mostra);
+    };
+    gire.querySelector('.gire-saida').addEventListener('click', () => { seguiuEmPe = true; mostraGire(); });
+    emPe.addEventListener('change', mostraGire);
+    mostraGire();
 
     // ---------------------------------------------------------- os trechos
     const dlg = raiz.querySelector('dialog.trechos');
@@ -654,12 +677,44 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .lista-temas a[aria-current='page']::before { content: '✓ '; }
   .comparacao .dica-tema { font-size: .82rem; color: var(--tinta-suave); white-space: nowrap; }
 
-  /* o aviso flutua no rodapé da tela: quem entra na página o vê sem rolar */
-  .comparacao .aviso-girar { position: fixed; left: .8rem; right: .8rem; bottom: .8rem; z-index: 30;
-    display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding: .6rem .9rem;
-    background: var(--cartao); border: 1px solid var(--azul-claro); border-radius: var(--raio); box-shadow: var(--sombra); }
-  .comparacao .aviso-girar[hidden] { display: none; }
-  .comparacao .aviso-girar p { margin: 0; font-size: .92rem; }
+  /* O pedido para girar toma a tela inteira: em pé o site mostra um candidato de cada
+     vez, que é o oposto de comparar. Azul-marinho cheio, como o cabeçalho — nada de
+     cartão flutuante, que era justamente o que dava para ignorar. */
+  .comparacao .gire { position: fixed; inset: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: center; padding: 2rem 1.5rem;
+    background: var(--azul); color: var(--branco); text-align: center; }
+  .comparacao .gire[hidden] { display: none; }
+  .comparacao .gire-caixa { max-width: 21rem; }
+  /* a cor é obrigatória: a folha pinta todo h1/h2 com --acento-forte, que é o MESMO
+     azul-marinho do fundo daqui — sem esta linha o título some no próprio fundo
+     (aconteceu na primeira versão, 16/09) */
+  .comparacao .gire h2 { margin: 1.4rem 0 .6rem; font-family: var(--fonte-titulo);
+    font-size: 1.75rem; font-weight: 800; letter-spacing: -.02em; color: var(--branco); }
+  .comparacao .gire p { margin: 0 0 1.6rem; font-size: 1rem; line-height: 1.5; color: rgba(255, 255, 255, .86); }
+  .comparacao .gire-saida { min-height: var(--alvo); padding: .5rem 1rem; font: inherit; font-size: .92rem;
+    font-weight: 600; color: rgba(255, 255, 255, .78); background: none; border: 0;
+    text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
+  .comparacao .gire-saida:hover { color: var(--branco); }
+
+  /* o desenho: um telefone que sai da vertical para a horizontal, e volta */
+  .comparacao .gire-desenho { position: relative; display: grid; place-items: center; height: 200px; color: var(--amarelo); }
+  .comparacao .gire-seta { position: absolute; top: 0; left: 50%; transform: translateX(-50%); opacity: .85; }
+  .comparacao .gire-telefone { margin-top: 2.6rem; width: 84px; height: 148px;
+    display: grid; place-items: center; border: 3px solid var(--branco); border-radius: 14px;
+    animation: gira-o-telefone 3.4s ease-in-out infinite; }
+  .comparacao .gire-tela { display: block; width: 60px; height: 110px; border-radius: 4px; background: rgba(255, 255, 255, .2); }
+  @keyframes gira-o-telefone {
+    0%, 20% { transform: rotate(0deg); }
+    45%, 80% { transform: rotate(-90deg); }
+    100% { transform: rotate(0deg); }
+  }
+  /* quem pede menos movimento vê o fim da história, não o começo: o telefone já deitado.
+     A regra global encurta toda animação para .01ms, e sem `animation: none` a keyframe
+     continuaria mandando no transform. */
+  @media (prefers-reduced-motion: reduce) {
+    .comparacao .gire-telefone { animation: none; transform: rotate(-90deg); }
+  }
+
 
   .comparacao .abertura .lead { max-width: 52em; }
 

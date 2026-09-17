@@ -88,6 +88,11 @@ body {
      bloco de código, nem com URL comprida: quem rola é o container interno */
   overflow-x: hidden;
 }
+/* Quando algo cobre a tela inteira — hoje o pedido para girar o celular —, o que está
+   atrás não rola: rolagem fantasma sob uma camada opaca confunde. Mora aqui, e não no
+   componente, porque `:global(body...)` dentro do <style> do Astro saiu no CSS com o
+   próprio `:global(` no seletor, e o navegador descartou a regra sem avisar (16/09). */
+body.sem-rolagem { overflow: hidden; }
 
 /* ---------------------------------------------------------------- tipografia */
 

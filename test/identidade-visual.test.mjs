@@ -211,3 +211,24 @@ test('a marca continua sendo só texto — nenhuma imagem no cabeçalho', () => 
   assert.ok(!/<img|<svg|background-image/i.test(cabecalho),
     'o cabeçalho ganhou imagem — a marca é textual');
 });
+
+// ------------------------------------------- texto sobre fundo de marca
+
+/**
+ * A folha pinta TODO h1/h2 com --acento-forte, o azul-marinho da marca. Onde o
+ * fundo também é esse azul — o pedido para girar o celular ocupa a tela inteira
+ * com ele —, o título nasce invisível sobre a própria cor. Aconteceu em 16/09, na
+ * primeira versão do overlay: a medição dizia que o elemento estava lá, com 32px
+ * de altura, e o print mostrava o vão vazio entre o desenho e o parágrafo.
+ *
+ * A regra geral: quem pinta o fundo com uma cor da marca declara a cor do texto,
+ * em vez de contar com a herança.
+ */
+test('o título sobre fundo azul-marinho declara a própria cor, e não some no fundo', () => {
+  const comp = le('../src/components/Comparacao.astro');
+  const regraDoTitulo = comp.match(/\.comparacao \.gire h2 \{([^}]*)\}/);
+  assert.ok(regraDoTitulo, 'sumiu a regra do título do pedido para girar');
+  assert.match(regraDoTitulo[1], /color:/, 'o título não declara cor e herda o azul do próprio fundo');
+  const fundo = comp.match(/\.comparacao \.gire \{([^}]*)\}/);
+  assert.ok(fundo && /background: var\(--azul\)/.test(fundo[1]), 'o fundo do pedido para girar deixou de ser o azul da marca');
+});
