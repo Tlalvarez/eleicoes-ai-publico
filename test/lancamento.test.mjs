@@ -163,8 +163,8 @@ test('prévia do site: og:title, og:description, og:url e og:image em todas as p
   for (const chave of ['og:title', 'og:description', 'og:url', 'og:image', 'twitter:card']) {
     assert.match(base, new RegExp(`(?:property|name)="${chave}"`), chave);
   }
-  const png = statSync(new URL('../public/og-eleicoes.png', import.meta.url));
-  assert.ok(png.size > 10_000 && png.size < 300_000, 'og-eleicoes.png entre 10 KB e 300 KB (WhatsApp)');
+  const png = statSync(new URL('../public/og-eleicoes-programas.png', import.meta.url));
+  assert.ok(png.size > 10_000 && png.size < 300_000, 'og-eleicoes-programas.png entre 10 KB e 300 KB (WhatsApp)');
 });
 
 test('og:url é o endereço público, sem .html (é o destino que o WhatsApp usa)', async () => {
@@ -201,4 +201,21 @@ test('a página de comparação: rótulo de IA, trecho do programa a um toque, s
   assert.doesNotMatch(comp, /nth-child|nth-of-type|data-slug="[a-z-]+"\]\s*\{/);
   // e nada monta estrutura a partir de string
   assert.doesNotMatch(comp, /innerHTML|insertAdjacentHTML|set:html/);
+});
+
+// A imagem de prévia envelheceu sem ninguém ver: ela ainda dizia "pergunte à IA"
+// meses depois de o produto virar a comparação dos programas (Thiago viu no
+// WhatsApp em 16/09/2026). O PNG agora nasce de scripts/og-imagem.html, e este
+// teste cobra as três coisas que a geração pode errar em silêncio: o layout
+// apontar para um arquivo que não existe, a captura sair em 2400×1260 (tela
+// Retina) e a fonte sumir do repositório, deixando o PNG outra vez órfão.
+test('imagem de prévia: existe, tem 1200×630 e a fonte dela está versionada', async () => {
+  const base = await le('layouts/Base.astro');
+  const m = base.match(/og:image" content=\{new URL\('\/([^']+)'/);
+  assert.ok(m, 'og:image aponta para um arquivo servido em public/');
+  const png = await readFile(new URL(`../public/${m[1]}`, import.meta.url));
+  // cabeçalho PNG: 8 bytes de assinatura, depois o IHDR com largura e altura big-endian
+  assert.equal(png.readUInt32BE(16), 1200, `${m[1]}: largura de 1200px`);
+  assert.equal(png.readUInt32BE(20), 630, `${m[1]}: altura de 630px`);
+  assert.ok(existe('scripts/og-imagem.html'), 'a fonte da imagem vive no repositório e pode ser regerada');
 });

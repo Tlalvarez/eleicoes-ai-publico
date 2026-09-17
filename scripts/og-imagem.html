@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Fonte da imagem de prévia (og:image) — eleicoes.ai</title>
+<!--
+  A imagem que o WhatsApp, o X e o LinkedIn mostram quando alguém cola o link.
+
+  Isto é a FONTE dela, não um enfeite: a imagem anterior foi commitada como PNG
+  sem original, e quando o produto deixou de ser "pergunte à IA" para ser a
+  comparação dos programas, ninguém tinha como atualizá-la (Thiago viu a versão
+  velha no WhatsApp em 16/09/2026). Agora o PNG se regenera a partir daqui.
+
+  Como gerar:
+    1. abrir este arquivo no Chrome com a janela em 1200×630;
+    2. capturar a viewport (sai em 2400×1260 numa tela Retina);
+    3. sips -z 630 1200 na saída e salvar em public/og-eleicoes-programas.png.
+
+  Regras de casa que valem aqui: cores e tipografia são as de src/styles/global.css,
+  o texto diz o que o site faz hoje, e nada promete recomendação de voto.
+-->
+<style>
+  /* as mesmas variáveis de src/styles/global.css — se a marca mudar lá, muda aqui */
+  :root {
+    --azul: #17365d;
+    --amarelo: #f2c94c;
+    --verde: #2e7d32;
+    --azul-claro: #2d6fb7;
+    --laranja: #e2603c;
+    --fonte: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    display: flex; flex-direction: column;
+    padding: 58px 80px 0;
+    font-family: var(--fonte);
+    color: #fff;
+    background: var(--azul);
+    -webkit-font-smoothing: antialiased;
+  }
+  .marca { flex: none; font-size: 42px; font-weight: 800; letter-spacing: -.02em; }
+  .marca span { color: var(--amarelo); }
+
+  h1 {
+    flex: none;
+    margin-top: 44px;
+    font-size: 74px; font-weight: 800; line-height: 1.04; letter-spacing: -.025em;
+    max-width: 17ch;
+  }
+
+  /* o subtítulo carrega o que mudou no produto: tema a tema, com o trecho do programa */
+  .apoio { flex: none; margin-top: 30px; font-size: 28px; line-height: 1.4; color: #c3d2e6; max-width: 40ch; }
+  .apoio strong { color: #fff; font-weight: 700; }
+
+  /* a faixa cívica fecha a peça, nas mesmas proporções do cabeçalho do site.
+     flex: none é obrigatório — sem ele, o flex esmagou a barra para 0px de altura
+     na primeira geração, e a peça saiu sem o fecho da marca (16/09). */
+  .faixa {
+    flex: none;
+    margin-top: auto; margin-bottom: 54px; height: 14px; border-radius: 2px;
+    background: linear-gradient(90deg,
+      var(--amarelo) 0 27%,
+      var(--verde) 27% 48%,
+      var(--azul-claro) 48% 76%,
+      var(--laranja) 76% 100%);
+  }
+</style>
+</head>
+<body>
+  <p class="marca">eleicoes<span>.ai</span></p>
+  <h1>Compare os programas de governo dos candidatos de 2026</h1>
+  <p class="apoio">
+    Tema a tema: onde convergem, onde divergem e o que nenhum deles trata.
+    <strong>Só o que está registrado no TSE</strong>, com o trecho de cada programa.
+  </p>
+  <div class="faixa"></div>
+</body>
+</html>
