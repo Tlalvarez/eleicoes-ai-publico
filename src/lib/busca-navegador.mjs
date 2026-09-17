@@ -43,7 +43,10 @@ export async function buscaPorPagina(escopo, q) {
   }
   const nomes = Object.fromEntries((idx.dados.paginas ?? []).map((p) => [p.id, p.nome]));
   for (const g of porPagina) g.nome = nomes[g.pagina] ?? g.pagina;
-  return { modo: r.modo, propostas, porPagina, semDireto: r.sem_direto };
+  // `resgatado`: nenhuma palavra da consulta casou e o vetor decidiu. A página precisa
+  // dizer isso ao leitor — resultado aproximado apresentado como certo seria pior que o
+  // "nenhuma proposta fala disso" que ele substitui.
+  return { modo: r.modo, propostas, porPagina, semDireto: r.sem_direto, resgatado: r.resgatado };
 }
 
 /** O endereço da matriz filtrada: a página do melhor resultado (a matriz cruza todos os temas de lá), com `q` (e a seleção de candidatos, se houver). */

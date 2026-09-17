@@ -410,8 +410,13 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       aplica(selecao);
       const n = ids.size;
       const temas = r.porPagina.length;
+      // resgate por sentido: nenhuma palavra da consulta casou, e o vetor decidiu. Dizer isso
+      // é obrigatório — resultado aproximado apresentado como certo engana mais do que o
+      // "nenhuma proposta fala disso" que ele substitui (16/09).
       barra.querySelector('.filtro-texto').textContent = n
-        ? `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" em ${temas} tema${temas > 1 ? 's' : ''}${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`
+        ? (r.resgatado
+          ? `Nenhuma proposta usa a palavra "${q}". Estas ${n > 1 ? `${n} falam` : 'fala'} de assunto parecido, em ${temas} tema${temas > 1 ? 's' : ''}.`
+          : `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" em ${temas} tema${temas > 1 ? 's' : ''}${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`)
         : `Nenhuma proposta sobre "${q}".`;
       medir('busca_feita', { consulta: q, resultados: n, temas, modo: r.modo, direto: !r.semDireto, destino: D.tema });
       if (titulo) titulo.textContent = `"${q}": o que cada candidato propõe`;

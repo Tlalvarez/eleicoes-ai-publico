@@ -155,8 +155,12 @@ const config = JSON.stringify({ escopos, paginas: nomesDePaginas }).replace(/</g
       const r = busca(idx, q, vq);
       listaP.replaceChildren(...r.propostas.map((p) => itemProposta(p, idx.dados)));
       listaT.replaceChildren(...r.trechos.map((t) => itemTrecho(t, idx.dados)));
+      // `resgatado`: nenhuma palavra casou e quem decidiu foi o sentido. O título diz isso,
+      // porque apresentar aproximação como acerto engana (16/09).
       tituloP.textContent = r.propostas.length
-        ? (r.sem_direto ? 'Nenhuma proposta fala disso diretamente; as mais próximas' : `${r.propostas.length} proposta${r.propostas.length > 1 ? 's' : ''}`)
+        ? (r.resgatado
+          ? `Nenhuma proposta usa a palavra "${q}"; estas falam de assunto parecido`
+          : (r.sem_direto ? 'Nenhuma proposta fala disso diretamente; as mais próximas' : `${r.propostas.length} proposta${r.propostas.length > 1 ? 's' : ''}`))
         : 'Nenhuma proposta encontrada';
       tituloT.hidden = !r.trechos.length;
       sugestao.hidden = !r.sem_direto;

@@ -163,6 +163,12 @@ export function rrf(listas, k = 60, pesos = []) {
  */
 export const LIMIAR_COSSENO = 0.25;
 export const COSSENO_FORTE = 0.45;
+// Resgate por sentido (16/09/2026): quando NENHUMA proposta casa pelas palavras, o vetor da
+// consulta — que já foi calculado e era descartado — decide. "Ferrogão" sem o "r" devolvia
+// zero enquanto "Ferrogrão" trazia dez; "índio" não achava "indígena". O limiar é mais baixo
+// que o forte, porque aqui não há nada melhor a mostrar, e o resultado vem marcado como
+// aproximado para a página poder dizer que achou por sentido, não por palavra.
+export const COSSENO_RESGATE = 0.32;
 
 /**
  * Prepara o estado da busca a partir de documentos.json e dos dois .bin.
@@ -271,7 +277,19 @@ export function busca(estado, consulta, vetorConsulta, { maxPropostas = 20, maxT
     p.relevante = p.cobertura === 1 || quase || p.cos >= COSSENO_FORTE;
   }
   for (const t of trechos) t.fraco = !t.termos.length && t.cos < COSSENO_FORTE;
-  return { modo, propostas: lista, trechos, total: propostas.size, sem_direto: lista.length === 0 || lista.every((p) => p.fraco) };
+  // nenhuma palavra casou: em vez de dizer que nada existe, mostra o que mais se aproxima
+  // pelo sentido. Só acontece quando a lista relevante está vazia — o caminho que já
+  // funciona não muda em nada.
+  let resgatado = false;
+  if (vetorConsulta && !lista.some((p) => p.relevante)) {
+    const vizinhos = lista.filter((p) => p.cos >= COSSENO_RESGATE).sort((a, b) => b.cos - a.cos);
+    if (vizinhos.length) {
+      resgatado = true;
+      for (const p of vizinhos) { p.relevante = true; p.aproximado = true; }
+    }
+  }
+  return { modo, propostas: lista, trechos, total: propostas.size, resgatado,
+    sem_direto: lista.length === 0 || lista.every((p) => p.fraco) };
 }
 
 /**
