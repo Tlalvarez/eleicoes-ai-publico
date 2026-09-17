@@ -69,17 +69,12 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       </ul>
     </details>
     <span class="dica-tema" aria-hidden="true">{paginas.length} temas</span>
-    {/* a busca fica à direita do seletor e, quando não cabe, cai para a linha de baixo
-        (decisão do Thiago, 16/09). O campo que ela abre é irmão da faixa, não filho: a
-        faixa gruda no topo, e um campo grudado junto atrapalharia a leitura. */}
-    <button type="button" class="abrir-busca" aria-expanded="false" aria-controls="busca-no-tema">
-      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-      <span>Buscar nos programas</span>
-    </button>
-  </div>
-
-  <div id="busca-no-tema" class="busca-dobra" hidden>
-    <Busca compacta escopo={escopoBusca} />
+    {/* a caixa fica aberta à direita do seletor (decisão do Thiago, 16/09): o botão que
+        abria uma dobra ocupava uma linha inteira ao ser clicado. O botão de enviar é a
+        própria lupa. Quando não cabe ao lado, a faixa quebra e a caixa vai para baixo. */}
+    <div class="busca-na-faixa">
+      <Busca compacta semRotulo escopo={escopoBusca} />
+    </div>
   </div>
 
   <div class="filtro-busca" role="status" hidden>
@@ -425,19 +420,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     }
     if (consulta) filtraPelaBusca(consulta);
 
-    // a lupa abre a caixa de busca; com uma busca em vigor, ela já vem aberta
-    const abrir = raiz.querySelector('.abrir-busca');
-    const dobra = raiz.querySelector('.busca-dobra');
-    const abreBusca = (foca) => {
-      dobra.hidden = false;
-      abrir.setAttribute('aria-expanded', 'true');
-      if (foca) dobra.querySelector('input[name="q"]')?.focus();
-    };
-    abrir.addEventListener('click', () => {
-      if (dobra.hidden) abreBusca(true);
-      else { dobra.hidden = true; abrir.setAttribute('aria-expanded', 'false'); }
-    });
-    if (consulta) abreBusca(false);
+    // a caixa está sempre na faixa: não há mais dobra para abrir nem botão para alternar
 
     // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
     // a tela, ganha destaque e o foco — se estiver na tela com a seleção atual
@@ -549,11 +532,29 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
      valendo como deslocamento do cabeçalho de colunas, que gruda logo abaixo. */
   .comparacao .faixa-temas { position: sticky; top: 0; z-index: 20; min-height: var(--faixa-altura); margin: 0 0 1rem;
     display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .6rem; background: var(--papel); border-bottom: 1px solid var(--linha); }
-  /* na mesma linha, a busca fica na ponta direita; quando a faixa quebra, ela começa à
-     esquerda junto com o resto, e não pendurada na borda oposta (16/09) */
-  .comparacao .faixa-temas .abrir-busca { margin-left: auto; }
+  /* na mesma linha, a busca fica na ponta direita; quando a faixa quebra, ela ocupa a
+     linha inteira, e não fica pendurada na borda oposta (16/09) */
+  /* a caixa acompanha a altura do seletor: o parágrafo de estado sai do fluxo, mas o
+     formulário ainda carregava a altura dele e empurrava a faixa para 73px (16/09) */
+  .comparacao .busca-na-faixa { margin-left: auto; flex: 0 1 22rem; min-width: 13rem;
+    align-self: center; display: flex; height: var(--alvo); }
+  .comparacao .busca-na-faixa .busca-caixa { margin: 0; flex: 1 1 auto; min-width: 0; }
+  .comparacao .busca-na-faixa .busca-estado { position: absolute; margin: 0; min-height: 0; }
+  /* dentro da faixa, campo e lupa têm a altura do seletor (44px): o .campo do site tem
+     49px por causa do padding, e cinco pixels a mais empurravam a faixa para 73px (16/09).
+     Só aqui — nas outras páginas a caixa continua com a altura padrão. */
+  .comparacao .busca-na-faixa .campo,
+  .comparacao .busca-na-faixa .botao { min-height: 0; height: var(--alvo); }
+  .comparacao .busca-na-faixa .campo { padding-block: 0; }
+  /* a caixa sem rótulo ganha margem para respirar embaixo do título da página; dentro da
+     faixa não há título acima dela, e essa margem desalinhava a caixa do seletor em 11px */
+  .comparacao .busca-na-faixa .busca-caixa.sem-rotulo { margin-top: 0; }
+  /* o parágrafo de estado é absoluto, mas segue filho do formulário: sem altura fixa, a
+     caixa vira um bloco mais alto que o campo e a faixa centraliza o bloco, não o campo */
+  .comparacao .busca-na-faixa .busca-caixa { height: var(--alvo); }
+  .comparacao .busca-na-faixa .linha { height: 100%; }
   @media (max-width: 900px) {
-    .comparacao .faixa-temas .abrir-busca { margin-left: 0; }
+    .comparacao .busca-na-faixa { margin-left: 0; flex: 1 1 100%; }
   }
   .comparacao .rotulo-tema { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
   /* o menu de temas é nosso (details + lista), não o <select> nativo: o
@@ -600,15 +601,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .chip:hover { border-color: var(--azul-claro); }
   .comparacao .contagem { flex-basis: 100%; }
 
-  .comparacao .abrir-busca { display: inline-flex; align-items: center; gap: .45rem; min-height: var(--alvo); padding: .3rem .9rem .3rem .7rem;
     font: inherit; font-size: .9rem; font-weight: 600; color: var(--acento); background: var(--cartao); border: 1px solid var(--linha);
     border-radius: 999px; cursor: pointer; }
-  .comparacao .abrir-busca:hover { border-color: var(--azul-claro); background: var(--realce); }
-  .comparacao .abrir-busca[aria-expanded='true'] { border-color: var(--acento-forte); background: var(--realce); }
-  .comparacao .busca-dobra { margin: -.6rem 0 .9rem; }
-  .comparacao .busca-dobra[hidden] { display: none; }
-  .comparacao .busca-dobra .busca-caixa { margin: 0; }
-  .comparacao .busca-dobra .busca-caixa label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .comparacao .filtro-busca { margin: 0 0 1rem; padding: .6rem .9rem; background: var(--realce); border: 1px solid var(--azul-claro); border-radius: var(--raio); }
   .comparacao .filtro-busca[hidden] { display: none; }
   .comparacao .filtro-busca p { margin: 0; font-size: .92rem; }
@@ -699,7 +693,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     .comparacao .grade { grid-template-columns: repeat(var(--n), 15rem); }
     .comparacao .dica-tema { display: none; }
     .comparacao .seletor-tema { flex: 1 1 auto; }
-    .comparacao .faixa-temas .abrir-busca { margin-left: 0; flex: 1 1 100%; justify-content: center; }
     .comparacao .lista-temas { max-height: 60vh; }
     .comparacao dialog.trechos { width: 94vw; padding: 0 .9rem .9rem; }
     .comparacao dialog.trechos::before { margin: 0 -.9rem .8rem; }

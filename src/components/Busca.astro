@@ -27,7 +27,10 @@ const placeholder = `Ex.: ${exemplos.join(', ')}`;
     <input class="campo" id={idCampo} name="q" type="search" maxlength="300" autocomplete="off" aria-labelledby={rotuladoPor ?? undefined}
       placeholder={placeholder} />
     {escopo !== 'presidente' && <input type="hidden" name="escopo" value={escopo} />}
-    <button class="botao" type="submit">Buscar</button>
+    <button class="botao lupa" type="submit">
+      <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      <span class="so-leitor">Buscar</span>
+    </button>
   </div>
   <p class="busca-estado" aria-live="polite"></p>
 </form>
@@ -83,12 +86,15 @@ const placeholder = `Ex.: ${exemplos.join(', ')}`;
   .busca-caixa .botao { border-radius: 999px; }
   .busca-caixa .campo { flex: 1 1 auto; min-width: 0; }
   .busca-caixa .botao { flex: none; }
+  /* o botão de enviar é a própria lupa (16/09): a caixa fica sempre aberta na faixa, e
+     um rótulo escrito ao lado do campo roubava a largura que o campo precisa */
+  .busca-caixa .botao.lupa { display: inline-grid; place-items: center; width: var(--alvo); padding: 0; }
   .busca-caixa .busca-estado { margin: .35rem 0 0; min-height: 1.2rem; font-size: .88rem; color: var(--tinta-suave); }
   .busca-caixa.compacta { margin: .6rem 0 1rem; }
   .busca-caixa.sem-rotulo { margin-top: .4rem; }
   .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   @media (max-width: 480px) {
-    .busca-caixa .linha { flex-wrap: wrap; }
-    .busca-caixa .botao { width: 100%; }
+    /* a lupa não quebra linha: ela é um alvo quadrado ao lado do campo */
+    .busca-caixa .linha { flex-wrap: nowrap; }
   }
 </style>
