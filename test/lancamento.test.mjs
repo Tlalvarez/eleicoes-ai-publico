@@ -190,7 +190,9 @@ test('metodologia é o guia: o que o site faz, como ler, como é feito, quem ent
 
 test('a página de comparação: rótulo de IA, trecho do programa a um toque, sem cor por candidato', async () => {
   const comp = await le('components/Comparacao.astro');
-  assert.match(comp, /inteligência artificial/);
+  // o aviso de IA saiu do rodapé da matriz em 16/09 (a nota abaixo dela foi removida a
+  // pedido do Thiago); a promessa não sumiu do site — ela vive no rodapé de TODA página
+  assert.match(await le('layouts/Base.astro'), /lidas e agrupadas por inteligência artificial/);
   assert.match(comp, /<dialog class="trechos"/);
   assert.match(comp, /Ver o programa no TSE/);
   assert.match(comp, /import \{ layout, selecaoDaUrl, urlDaSelecao \} from '\.\.\/lib\/comparacao\.mjs'/);

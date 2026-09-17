@@ -189,12 +189,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </div>
   </div>
 
-  <p class="nota-rodape">
-    Só programas registrados no TSE, sem fontes externas. Onde um candidato não aparece numa
-    proposta, o programa dele não a menciona; isso não quer dizer que ele seja contra. A leitura e o
-    agrupamento das propostas são feitos por inteligência artificial e conferidos contra o texto;
-    o trecho do programa está a um toque, para você conferir.
-  </p>
 
   <dialog class="trechos" aria-labelledby="trechos-titulo">
     <div class="topo">
@@ -685,7 +679,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .proposta.com-lacuna .colunas span.rotulo::after { content: 'Concorda'; display: block; margin: .6rem .8rem 0; font-size: .7rem; font-weight: 800;
     letter-spacing: .08em; text-transform: uppercase; color: var(--azul); white-space: nowrap; }
 
-  .comparacao .nota-rodape { margin: 1.2rem 0 0; font-size: .88rem; color: var(--tinta-suave); max-width: 60em; }
 
   .comparacao dialog.trechos { width: min(44rem, 92vw); max-height: 85vh; border: 1px solid var(--linha); border-radius: var(--raio);
     padding: 0 1.3rem 1.2rem; background: var(--cartao); color: var(--tinta); box-shadow: var(--sombra); overflow: auto; }
