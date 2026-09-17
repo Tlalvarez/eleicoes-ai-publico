@@ -15,11 +15,11 @@ pelo site é Thiago Alvarez.
 
 - **A comparação para presidente.** `/presidente` redireciona para a home, que lista os temas; `/presidente/<tema>` é a
   comparação de um tema, com uma coluna por candidato (ordem alfabética), o seletor de
-  candidatos e o trecho de cada programa a um toque. Hoje são 5 candidatos em 15 temas.
-- **Governador, por estado.** `/governador` lista as 27 UFs; `/governador/<uf>` mostra os temas
-  quando a comparação daquele estado está pronta e diz **"em preparação"** quando não está
-  (com as candidaturas registradas no TSE). As rotas existem nos dois casos, para o endereço
-  não mudar quando os dados chegarem.
+  candidatos e o trecho de cada programa a um toque. Hoje são 6 candidatos em 15 temas.
+- **Governador, por estado.** `/governador` lista as 27 UFs e `/governador/<uf>` é a comparação
+  daquele estado — **as 27 estão prontas** desde 16/09. A rota continua sabendo dizer
+  **"em preparação"**, com as candidaturas registradas no TSE, porque o endereço precisa existir
+  antes dos dados; hoje nenhuma UF cai nesse caso.
 - **Sem revisor humano por proposta.** A leitura e o agrupamento das propostas são feitos por IA
   e conferidos pelo código contra o texto dos programas; a página diz isso. O responsável
   editorial é identificado em `/sobre`.
