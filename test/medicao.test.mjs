@@ -42,6 +42,20 @@ test('nenhum evento declara uma chave de conteúdo — salvo a consulta da busca
   }
 });
 
+test('o código da proposta viaja como `pid`, e as chaves de conteúdo seguem proibidas', () => {
+  // `id` e `proposta` continuam na lista acima: são nomes que carregam conteúdo ou
+  // que servem de chave para cruzar com outra base. O que este evento manda é o
+  // código da proposta DENTRO da página (`p12`) — público, na mesma página, e sem
+  // nada privado do outro lado para juntar: o registro de respostas do chat deixou
+  // de existir em 13/09. O nome é o que a busca já usa (src/lib/busca.mjs).
+  limpaContexto();
+  assert.ok(EVENTOS.proposta_aberta.includes('pid'), 'proposta_aberta parou de dizer qual proposta');
+  assert.ok(!EVENTOS.proposta_aberta.includes('id'), 'voltou a se chamar id');
+  assert.equal(saneia('proposta_aberta', { pid: 'p12' }).pid, 'p12');
+  assert.equal(saneia('proposta_aberta', { pid: 'uma proposta escrita por extenso' }).pid, undefined,
+    'o filtro de espaço vale para o pid como para qualquer outro');
+});
+
 test('a consulta da busca passa como texto, com espaço, colapsada e limitada; as outras chaves do evento, não', () => {
   limpaContexto();
   const saida = saneia('busca_feita', { consulta: '  escala   6x1\n e  férias ', resultados: 3, modo: PROSA, temas: 2 });

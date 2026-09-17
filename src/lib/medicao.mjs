@@ -52,10 +52,37 @@ export const EVENTOS = Object.freeze({
   tema_aberto: ['tema', 'origem'],
   /** abriu a página de uma UF a partir da grade de estados (`destino`: a sigla) */
   uf_aberta: ['destino'],
-  /** tocou numa proposta e viu os trechos dos programas */
-  proposta_aberta: ['tema', 'candidatos', 'com_contra'],
-  /** tirou ou pôs um candidato na comparação (`candidatos`: quantos ficaram) */
-  comparacao_filtrada: ['tema', 'candidatos'],
+  /**
+   * tocou numa proposta e viu os trechos dos programas.
+   *
+   * `pid` é o identificador da proposta DENTRO da página (`p1`, `p2`) — o mesmo
+   * nome que a busca usa (`src/lib/busca.mjs`). Quem identifica a proposta é o
+   * par tema + pid, com cargo e uf vindo do contexto.
+   *
+   * Não se chama `id`: esse nome está na lista proibida do teste, junto com
+   * `proposta`, `texto` e `pergunta`. A lista continua valendo — o que ela
+   * impede é chave que carregue conteúdo ou que sirva de cruzamento para um
+   * armazém privado. Aqui não há nem um nem outro: a proposta é pública, está na
+   * mesma página, e o registro de respostas que o chat mantinha deixou de
+   * existir em 13/09.
+   */
+  proposta_aberta: ['tema', 'pid', 'candidatos', 'com_contra'],
+  /**
+   * tirou ou pôs um candidato na comparação. `candidatos` é quantos ficaram;
+   * `slug` é quem foi mexido e `acao` diz o quê (`tirou` | `pos`).
+   *
+   * Medir quem as pessoas mantêm na tela NÃO ordena nada: a ordem dos
+   * candidatos é alfabética e continua sendo. Site eleitoral que põe na frente
+   * quem é mais clicado vira, sem querer, recomendação de voto.
+   */
+  comparacao_filtrada: ['tema', 'candidatos', 'slug', 'acao'],
+  /**
+   * chegou ao fim da matriz. `eixo` separa duas leituras diferentes: `baixo` é
+   * ter percorrido todas as propostas do tema; `lado` é ter visto todas as
+   * colunas de candidatos — no celular, é o que diz se girar o aparelho
+   * cumpriu o que o pedido promete. Uma vez por página, por eixo.
+   */
+  matriz_percorrida: ['tema', 'eixo'],
   /** abriu o programa ou a candidatura no TSE */
   tse_aberto: ['slug'],
   /**

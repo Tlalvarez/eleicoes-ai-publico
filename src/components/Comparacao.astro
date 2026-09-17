@@ -371,6 +371,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     for (const ch of chips) {
       ch.addEventListener('click', () => {
         const slug = ch.dataset.slug;
+        // a ação é lida ANTES de aplicar: depois, `selecao` já é a nova
+        const acao = selecao.includes(slug) ? 'tirou' : 'pos';
         let sel;
         if (selecao.includes(slug)) {
           if (selecao.length === 1) return; // sempre há ao menos um candidato na tela
@@ -378,7 +380,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
         } else sel = ordem.filter((s) => selecao.includes(s) || s === slug);
         aplica(sel);
         guardaNaUrl(sel);
-        medir('comparacao_filtrada', { tema: D.tema, candidatos: sel.length });
+        medir('comparacao_filtrada', { tema: D.tema, candidatos: sel.length, slug, acao });
       });
     }
 
@@ -507,6 +509,38 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     // o cabeçalho congelado acompanha a rolagem lateral do corpo
     rolagem.addEventListener('scroll', () => { cabecalho.scrollLeft = rolagem.scrollLeft; }, { passive: true });
 
+    // Chegar ao FIM da matriz, nos dois eixos, uma vez por página cada.
+    //   `lado`  — viu todas as colunas de candidatos. No celular é o que diz se
+    //             girar o aparelho cumpriu o que o pedido promete;
+    //   `baixo` — percorreu todas as propostas do tema.
+    // Não é rastreamento de rolagem: são dois marcos, sem posição e sem tempo.
+    const percorrido = new Set();
+    const marcaFim = (eixo) => {
+      if (percorrido.has(eixo)) return;
+      percorrido.add(eixo);
+      medir('matriz_percorrida', { tema: D.tema, eixo });
+    };
+    // Duas condições, e as duas nasceram de medição: o marco só vale se havia
+    // travessia DE VERDADE (>24px escondidos — ao tirar um candidato a grade
+    // encolhe e fica poucos pixels mais larga que a janela, e aí a posição zero
+    // já seria "o fim") e se a pessoa saiu do começo (scrollLeft > 0).
+    const SOBRA_MINIMA = 24;
+    rolagem.addEventListener('scroll', () => {
+      const escondido = rolagem.scrollWidth - rolagem.clientWidth;
+      if (escondido < SOBRA_MINIMA || rolagem.scrollLeft <= 0) return;
+      if (rolagem.scrollLeft + rolagem.clientWidth >= rolagem.scrollWidth - 4) marcaFim('lado');
+    }, { passive: true });
+    const quadro = raiz.querySelector('.quadro');
+    if (quadro && 'IntersectionObserver' in window) {
+      // uma sentinela de 1px no fim do quadro: quando ela aparece, a matriz acabou
+      const fimDaMatriz = document.createElement('div');
+      fimDaMatriz.setAttribute('aria-hidden', 'true');
+      fimDaMatriz.style.height = '1px';
+      quadro.append(fimDaMatriz);
+      new IntersectionObserver(([e]) => { if (e.isIntersecting) marcaFim('baixo'); }, { threshold: 0 })
+        .observe(fimDaMatriz);
+    }
+
     // No celular em pé a matriz não cumpre o que promete: cabe uma coluna. Em vez do
     // aviso de rodapé, a tela inteira pede para girar, e sai sozinha quando o aparelho
     // gira. `pointer: coarse` limita isso a aparelho de toque — numa janela estreita de
@@ -587,6 +621,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       dlg.showModal();
       medir('proposta_aberta', {
         tema: D.tema,
+        pid: p.id,
         candidatos: selecao.filter((s) => p.posicoes[s]?.posicao === 'concorda').length,
         com_contra: selecao.some((s) => p.posicoes[s]?.posicao === 'discorda'),
       });

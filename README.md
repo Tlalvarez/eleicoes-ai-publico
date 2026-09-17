@@ -142,9 +142,9 @@ E no laço curto, `checa-medicao`: `posthog.capture` só existe dentro de `medic
 A audiência é medida em modo sem cookies (PostHog, em `src/layouts/Base.astro`) e o produto é
 medido por eventos com **vocabulário fechado**: `src/lib/medicao.mjs` é a única porta, e ela recusa
 evento não declarado, propriedade fora da lista do evento e qualquer valor de texto com espaço —
-a invariante que se confere num olhar, já que **prosa tem espaço**. Os eventos são oito: tema
-aberto, UF aberta, proposta aberta, comparação filtrada, link do TSE aberto, busca feita e o
-pedido para girar o celular (mostrado e dispensado). Os links medidos
+a invariante que se confere num olhar, já que **prosa tem espaço**. Os eventos são nove: tema
+aberto, UF aberta, proposta aberta, comparação filtrada, link do TSE aberto, busca feita, o
+pedido para girar o celular (mostrado e dispensado) e a matriz percorrida até o fim. Os links medidos
 declaram `data-evento` e as propriedades em `data-*`; um ouvinte delegado no layout chama
 `medir()`. O que cada número responde está descrito em
 [/privacidade](https://eleicoes.ai/privacidade).
