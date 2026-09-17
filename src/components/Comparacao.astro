@@ -223,9 +223,17 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 <script>
   import { layout, selecaoDaUrl, urlDaSelecao } from '../lib/comparacao.mjs';
   import { buscaPorPagina } from '../lib/busca-navegador.mjs';
-  import { medir } from '../lib/medicao.mjs';
+  import { contextoDoCaminho, defineContextoPadrao, medir } from '../lib/medicao.mjs';
 
   const raiz = document.querySelector('.comparacao');
+
+  // O contexto (cargo, uf, pagina) acompanha todo evento, e quem o define é o
+  // rodapé do layout. No Astro 7 os <script> saem na ordem de definição, então o
+  // deste componente roda ANTES — e um evento emitido na carga sairia sem
+  // dimensão nenhuma. Foi o que aconteceu com `girar_pedido`: chegou ao PostHog
+  // com props vazias (medido em 17/09). `defineContextoPadrao` cede a quem já
+  // tiver definido, então chamar aqui não disputa com o layout.
+  defineContextoPadrao(contextoDoCaminho(location.pathname));
   const D = globalThis.__comparacao;
   if (raiz && D) {
     const ordem = D.candidatos.map((c) => c.slug);
@@ -506,13 +514,20 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const gire = raiz.querySelector('.gire');
     const emPe = matchMedia('(orientation: portrait) and (max-width: 760px) and (pointer: coarse)');
     let seguiuEmPe = false;
+    let girarMedido = false;
     const mostraGire = () => {
       const mostra = !seguiuEmPe && emPe.matches;
       gire.hidden = !mostra;
       // com a tela coberta, rolar o que está atrás é rolagem fantasma
       document.body.classList.toggle('sem-rolagem', mostra);
+      // uma vez por página: girar e voltar não conta como dois pedidos
+      if (mostra && !girarMedido) { girarMedido = true; medir('girar_pedido'); }
     };
-    gire.querySelector('.gire-saida').addEventListener('click', () => { seguiuEmPe = true; mostraGire(); });
+    gire.querySelector('.gire-saida').addEventListener('click', () => {
+      seguiuEmPe = true;
+      medir('girar_dispensado');
+      mostraGire();
+    });
     emPe.addEventListener('change', mostraGire);
     mostraGire();
 

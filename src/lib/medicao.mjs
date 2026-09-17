@@ -65,6 +65,16 @@ export const EVENTOS = Object.freeze({
    * em que modo (lexical | hibrido), se houve resultado direto e o tema aberto
    */
   busca_feita: ['consulta', 'resultados', 'temas', 'modo', 'direto', 'destino'],
+
+  // --- o pedido para girar o celular (16/09) --------------------------------
+  // Em pé a matriz mostra uma coluna, e o pedido toma a tela. Sem estes dois não
+  // se sabe quantas pessoas o produto encontra em pé, nem quantas recusam girar —
+  // e a recusa é o sinal de que o pedido está atrapalhando em vez de ajudar.
+  // Não levam propriedade própria: o contexto (cargo, uf, pagina) já diz onde foi.
+  /** o pedido apareceu: aparelho de toque, em pé */
+  girar_pedido: [],
+  /** dispensou o pedido e seguiu em pé */
+  girar_dispensado: [],
 });
 
 /**
