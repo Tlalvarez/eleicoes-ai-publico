@@ -19,16 +19,11 @@ const n = dados.candidatos.length;
 ---
 <Base title={`${dados.titulo} · Presidente 2026`}
   description={`${dados.nome}: ${dados.propostas.length} propostas dos programas de governo de ${n} candidatos a presidente em 2026, lado a lado, com o trecho de cada programa.`}>
-  <p class="sobretitulo">Eleições gerais de 2026 · Presidente</p>
-  <Comparacao dados={dados} base="/presidente" paginas={paginas} trilha={[]} />
+  <div class="hero-home">
+    <h1>Compare os programas dos candidatos a Presidente</h1>
+  </div>
+  <Comparacao dados={dados} base="/presidente" paginas={paginas} />
   <style>
-    .sobretitulo {
-      margin: 0 0 .4rem;
-      color: var(--acento);
-      font-size: .79rem;
-      font-weight: 800;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
+    .hero-home { margin-bottom: 1rem; }
   </style>
 </Base>

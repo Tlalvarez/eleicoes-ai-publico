@@ -27,17 +27,11 @@ const n = dados.candidatos.length;
 ---
 <Base title={`${dados.titulo} · ${escopo} 2026`}
   description={`${dados.nome}: ${dados.propostas.length} propostas dos programas de governo de ${n} candidatos a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026, lado a lado.`}>
-  <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome} · {uf.sigla}</p>
-  <Comparacao dados={dados} base={base} paginas={paginas}
-    trilha={[{ nome: cargo.nome, href: cargo.href }, { nome: uf.nome, href: base }]} />
+  <div class="hero-home">
+    <h1>{`Compare os programas dos candidatos a ${escopo}`}</h1>
+  </div>
+  <Comparacao dados={dados} base={base} paginas={paginas} />
   <style>
-    .sobretitulo {
-      margin: 0 0 .4rem;
-      color: var(--acento);
-      font-size: .79rem;
-      font-weight: 800;
-      letter-spacing: .13em;
-      text-transform: uppercase;
-    }
+    .hero-home { margin-bottom: 1rem; }
   </style>
 </Base>

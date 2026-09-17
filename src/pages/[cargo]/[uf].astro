@@ -34,8 +34,7 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
     ? `Os programas de governo das candidaturas a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026, comparados em ${resumo.length} temas.`
     : `A comparação dos programas de governo das candidaturas a ${cargo.nome.toLowerCase()} — ${uf.nome} — em 2026 está em preparação.`}>
   <div class="hero-home">
-    <p class="sobretitulo">Eleições gerais de 2026 · {cargo.nome}</p>
-    <h1>{escopo}</h1>
+    <h1>{`Compare os programas dos candidatos a ${escopo}`}</h1>
     {!pronta && (
       <p class="lead">
         A comparação dos programas de governo deste estado está <strong>em preparação</strong>.

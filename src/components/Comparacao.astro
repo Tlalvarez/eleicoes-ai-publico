@@ -17,16 +17,16 @@ import Busca from './Busca.astro';
 import { layout, contagens } from '../lib/comparacao.mjs';
 import { indiceDeContestacoes } from '../lib/correcoes.mjs';
 
-// `naHome` (16/09): a home abre a matriz do primeiro tema, sem clique. Ali a trilha não
-// faz sentido (a página já é o início), o título da matriz não pode ser <h1> — a home já
-// tem o seu, e o portão de acessibilidade exige uma só — e "limpar a busca" volta para a
-// home, não para o endereço do tema, que passa a redirecionar para cá.
-const { dados, base, trilha, paginas, naHome = false } = Astro.props;
+// Toda página segue o mesmo padrão desde 16/09 (decisão do Thiago): quem dá o título é a
+// página, e o componente desenha só a matriz — sem trilha e sem abertura própria. `naHome`
+// diz apenas para onde "limpar a busca" volta, porque o endereço do primeiro tema
+// redireciona para a home.
+const { dados, base, paginas, naHome = false } = Astro.props;
 const voltaDoFiltro = naHome ? '/' : `${base}/${dados.pagina}`;
 // o escopo da busca é o mesmo da página: 'presidente' ou 'governador/sp'
 const escopoBusca = base.replace(/^\//, '');
 // dados: o JSON da página; base: '/presidente' ou '/governador/sp';
-// trilha: [{ nome, href }] até o escopo; paginas: as páginas do escopo com comparação pronta
+// paginas: as páginas do escopo com comparação pronta
 const ordem = dados.candidatos.map((c) => c.slug);
 const porSlug = Object.fromEntries(dados.candidatos.map((c) => [c.slug, c]));
 // selo "contestado pelo candidato" (§3.6 da revisão jurídica, 16/09): o pedido de
@@ -55,16 +55,6 @@ const estiloCartao = (c) => `grid-column:${c.ini + 1} / span ${c.largura};--l:${
 const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 ---
 <div class="comparacao" style={`--n:${ordem.length}`} data-tema={dados.pagina}>
-  {!naHome && (
-    <nav class="trilha" aria-label="Você está em">
-      <ol>
-        <li><a href="/">Início</a></li>
-        {trilha.map((t) => <li><a href={t.href}>{t.nome}</a></li>)}
-        <li aria-current="page">{dados.nome}</li>
-      </ol>
-    </nav>
-  )}
-
   <div class="busca-tema">
     <button type="button" class="abrir-busca" aria-expanded="false" aria-controls="busca-no-tema">
       <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
@@ -90,19 +80,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </details>
     <span class="dica-tema" aria-hidden="true">{paginas.length} temas</span>
   </div>
-
-  {/* Na home não há abertura: o título da página diz o que é, o seletor nomeia o tema e a
-      matriz vem em seguida. O parágrafo de leitura saiu por decisão do Thiago (16/09) —
-      na home fica só o mínimo, e quem precisa de ajuda tem a metodologia no rodapé. */}
-  {!naHome && (
-    <section class="abertura">
-      <h1>{dados.titulo}</h1>
-      <p class="lead">
-        Propostas dos programas de governo registrados no TSE, assunto por assunto. Uma proposta feita
-        por mais de um candidato aparece uma vez, sobre as colunas de quem a faz. Toque para ler o trecho do programa.
-      </p>
-    </section>
-  )}
 
   <div class="filtro-busca" role="status" hidden>
     <p class="filtro-texto"></p>
@@ -402,11 +379,9 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     }
     async function filtraPelaBusca(q) {
       const escopo = raiz.querySelector('.seletor-tema')?.dataset.base?.replace(/^\//, '') || 'presidente';
-      // o resultado é de todos os temas: a caixa de temas sai da tela (senão
-      // parece que só este tema está sendo mostrado) e a trilha diz "Busca"
+      // o resultado é de todos os temas: a caixa de temas sai da tela, senão
+      // parece que só este tema está sendo mostrado
       raiz.classList.add('em-busca');
-      const atual = raiz.querySelector('.trilha [aria-current="page"]');
-      if (atual) atual.textContent = 'Busca';
       barra.querySelector('.filtro-texto').textContent = `Buscando "${q}"…`;
       barra.hidden = false;
       let r;
@@ -570,10 +545,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 <style is:global>
   /* A página da comparação. Tudo sob .comparacao, porque parte da estrutura
      é criada pelo navegador ao filtrar candidatos — estilo escopado não a alcançaria. */
-  .comparacao .trilha ol { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0 0 .6rem; padding: 0; list-style: none; font-size: .88rem; color: var(--tinta-suave); }
-  .comparacao .trilha li + li::before { content: '›'; margin-right: .3rem; color: var(--tinta-suave); }
-  .comparacao .trilha a { color: var(--acento); }
-  .comparacao .trilha [aria-current] { font-weight: 700; color: var(--tinta); }
 
   .comparacao { --faixa-altura: 3.3rem; }
   .comparacao.em-busca { --faixa-altura: 0px; }
