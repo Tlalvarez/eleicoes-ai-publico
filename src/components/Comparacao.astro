@@ -483,12 +483,42 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     // vazia: aí o alto da tela ficava com link, caixa e seletor, e no celular a matriz só
     // começava depois dos três. A sentinela diz quando a faixa grudou; grudada e sem busca
     // ativa, o link e a caixa saem, e volta a caber o seletor sozinho.
+    // A faixa ENCOLHE ao grudar (105px → 53px), e isso muda a altura do documento. Com a
+    // troca amarrada à visibilidade da sentinela, nascia uma realimentação: somem 52px →
+    // o navegador reancora a rolagem 52px para trás → a sentinela reaparece → a classe
+    // sai → a faixa cresce → a rolagem volta 52px para frente → e repete, a 60 quadros
+    // por segundo. Medido em 17/09 em 500×700: parado logo depois da fronteira, a classe
+    // piscou 89 vezes em 90 quadros e a rolagem oscilou entre 209 e 261. É o "sobe e
+    // desce" que o Thiago descreveu, e some sozinho quando a pessoa rola rápido o
+    // bastante para passar da faixa de disputa — daí "às vezes demora mais".
+    //
+    // Por isso a decisão não é mais por VISIBILIDADE, e sim por POSIÇÃO, com banda morta
+    // maior que o pulo que ela mesma provoca: liga 64px depois da fronteira e desliga 8px
+    // antes. Ligando em fronteira+64, a reancoragem leva a fronteira+12 — ainda dentro da
+    // região ligada, então não há segundo disparo. Desligando em fronteira−8, ela leva a
+    // fronteira+44, aquém dos 64 que religam. Os dois sentidos são estáveis.
+    //
+    // A sentinela continua sendo a referência porque fica ACIMA da faixa: a posição dela
+    // no documento não depende da altura da faixa, nem antes nem depois de grudar.
     const sentinela = raiz.querySelector('.sentinela-faixa');
-    if (sentinela && 'IntersectionObserver' in window) {
-      new IntersectionObserver(
-        ([e]) => raiz.classList.toggle('grudada', !e.isIntersecting),
-        { threshold: 0 },
-      ).observe(sentinela);
+    if (sentinela) {
+      const LIGA = 64;
+      const DESLIGA = 8;
+      let fronteira = 0;
+      const medeFronteira = () => {
+        fronteira = Math.round(sentinela.getBoundingClientRect().top + scrollY);
+      };
+      const decide = () => {
+        if (!raiz.classList.contains('grudada')) {
+          if (scrollY >= fronteira + LIGA) raiz.classList.add('grudada');
+        } else if (scrollY <= fronteira - DESLIGA) {
+          raiz.classList.remove('grudada');
+        }
+      };
+      medeFronteira();
+      decide();
+      addEventListener('scroll', decide, { passive: true });
+      addEventListener('resize', () => { medeFronteira(); decide(); }, { passive: true });
     }
 
     // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
