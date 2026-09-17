@@ -98,7 +98,9 @@ test('lançamento: Quem somos nomeia o responsável; Correções tem o canal e o
   assert.match(sobre, /revisor humano/);
   assert.match(sobre, /linkedin\.com\/in\/thiagoalvarez/);
   assert.match(sobre, /href="\/correcoes"/);
-  assert.match(sobre, /href="\/metodologia"/);
+  // a âncora é bem-vinda: desde 16/09 o /sobre aponta para a seção "Quem faz", onde
+  // está o que entra na revisão humana amostral
+  assert.match(sobre, /href="\/metodologia(#[a-z-]+)?"/);
   const correcoes = await le('pages/correcoes.astro');
   assert.match(correcoes, /EMAIL_CONTATO/);
   // 16/09: a página não é só um endereço de e-mail — ela declara o prazo das campanhas

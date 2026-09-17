@@ -76,6 +76,11 @@ const placeholder = `Ex.: ${exemplos.join(', ')}`;
   .busca-caixa { margin: 1.2rem 0 1.6rem; max-width: 46rem; }
   .busca-caixa label { display: block; margin: 0 0 .35rem; font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
   .busca-caixa .linha { display: flex; gap: .5rem; }
+  /* mesma forma dos vizinhos (16/09): na faixa da comparação, "Buscar nos programas" e os
+     chips de candidato são pílulas de borda fina — campo e botão retangulares destoavam.
+     Limitado à caixa de busca: .campo e .botao seguem como estão no resto do site. */
+  .busca-caixa .campo { border-radius: 999px; padding-inline: 1rem; border-color: var(--linha-forte); }
+  .busca-caixa .botao { border-radius: 999px; }
   .busca-caixa .campo { flex: 1 1 auto; min-width: 0; }
   .busca-caixa .botao { flex: none; }
   .busca-caixa .busca-estado { margin: .35rem 0 0; min-height: 1.2rem; font-size: .88rem; color: var(--tinta-suave); }

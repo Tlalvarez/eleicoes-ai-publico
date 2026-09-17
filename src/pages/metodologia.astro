@@ -102,6 +102,14 @@ const historico = `${repo}/commits/main`;
     <ul>
       <li>O site é feito e operado por uma pessoa, com agentes de inteligência artificial fazendo a leitura, a classificação e a comparação dos programas. Quem responde pelo site está em <a href="/sobre">Quem somos</a>.</li>
       <li>As instruções dadas ao modelo são gerais: não citam tema nem candidato, para a mesma régua valer para todos.</li>
+      <li>
+        <strong>A revisão humana é amostral</strong>, não proposta por proposta. Uma pessoa lê antes
+        da publicação os pontos onde um erro pesa mais: todos os rótulos de "propõe o contrário", a
+        classificação dos trechos de cada programa por tema, e os casos que o modelo às cegas
+        devolve em dúvida — proposta que repete outra ao contrário, candidato que sustenta só parte
+        de uma frase, cartão longo demais. O resto sai como o modelo produziu, conferido contra o
+        texto pelo próprio harness.
+      </li>
       <li>O <a href={repo} rel="noopener noreferrer">código é público</a>, e o <a href={historico} rel="noopener noreferrer">histórico de mudanças</a> mostra o que mudou, quando e por quê.</li>
     </ul>
 

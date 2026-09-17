@@ -133,9 +133,13 @@ const notas = [
   .maquete .marca { display: inline-grid; place-items: center; width: 1.15rem; height: 1.15rem; border-radius: 50%;
     background: var(--azul); color: var(--branco); font-size: .68rem; font-weight: 800; margin-left: .35rem; }
   .maquete .seg .marca, .maquete .cartao > .marca, .maquete .pilha.vazia .marca { position: absolute; right: .3rem; bottom: .3rem; margin: 0; }
-  .maquete .marca.fixa { position: static; margin: 0 .4rem 0 0; }
+  .maquete .marca.fixa { position: static; margin: 0; }
 
   .maquete .notas { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }
-  .maquete .notas li { display: flex; align-items: flex-start; font-size: .95rem; }
+  .maquete .notas li { display: flex; align-items: flex-start; gap: .4rem; font-size: .95rem; line-height: 1.5; }
+  /* o número acompanha a primeira linha do texto: com altura fixa e sem line-height, cada
+     marca se apoiava numa altura diferente e a do item 8 saía cortada (16/09) */
+  .maquete .notas .marca.fixa { flex: none; align-self: flex-start; width: 1.3rem; height: 1.3rem;
+    margin: calc((1.5em - 1.3rem) / 2) 0 0; font-size: .72rem; line-height: 1; }
   .maquete .nota { margin: .8rem 0 0; font-size: .9rem; color: var(--tinta-suave); }
 </style>
