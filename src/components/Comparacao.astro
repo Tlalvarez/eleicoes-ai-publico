@@ -56,6 +56,13 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 ---
 <div class="comparacao" style={`--n:${ordem.length}`} data-tema={dados.pagina}>
   <div class="faixa-temas">
+    {/* Decisão do Thiago (16/09): a busca volta a ser um link acima do seletor, e a caixa
+        só aparece ao clicar. Na faixa congelada fica SÓ o controle que gerou a matriz —
+        o seletor, quando veio do tema; a caixa, quando veio da busca. */}
+    <a href="/busca" class="abrir-busca" role="button" aria-expanded="false" aria-controls="busca-no-tema">Realizar busca</a>
+    <div id="busca-no-tema" class="busca-na-faixa" hidden>
+      <Busca compacta semRotulo escopo={escopoBusca} />
+    </div>
     <span class="rotulo-tema" id="rotulo-tema">Tema</span>
     <details class="seletor-tema" data-base={base}>
       <summary aria-labelledby="rotulo-tema tema-atual"><span id="tema-atual">{dados.nome}</span></summary>
@@ -69,12 +76,6 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       </ul>
     </details>
     <span class="dica-tema" aria-hidden="true">{paginas.length} temas</span>
-    {/* a caixa fica aberta à direita do seletor (decisão do Thiago, 16/09): o botão que
-        abria uma dobra ocupava uma linha inteira ao ser clicado. O botão de enviar é a
-        própria lupa. Quando não cabe ao lado, a faixa quebra e a caixa vai para baixo. */}
-    <div class="busca-na-faixa">
-      <Busca compacta semRotulo escopo={escopoBusca} />
-    </div>
   </div>
 
   <div class="filtro-busca" role="status" hidden>
@@ -425,7 +426,27 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     }
     if (consulta) filtraPelaBusca(consulta);
 
-    // a caixa está sempre na faixa: não há mais dobra para abrir nem botão para alternar
+    // O link "Realizar busca" abre a caixa (decisão do Thiago, 16/09). Em modo de busca a
+    // faixa continua congelada, mas mostra SÓ a caixa: o que fica no alto tem de ser o
+    // controle que gerou a matriz — o seletor quando veio do tema, a caixa quando veio da busca.
+    const abrir = raiz.querySelector('.abrir-busca');
+    const caixaBusca = raiz.querySelector('.busca-na-faixa');
+    const abreBusca = (foca) => {
+      caixaBusca.hidden = false;
+      abrir.setAttribute('aria-expanded', 'true');
+      if (foca) caixaBusca.querySelector('input[name="q"]')?.focus();
+    };
+    abrir?.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      if (caixaBusca.hidden) abreBusca(true);
+      else { caixaBusca.hidden = true; abrir.setAttribute('aria-expanded', 'false'); }
+    });
+    // quem chega por um endereço de busca já vê a consulta no lugar congelado
+    if (consulta) {
+      abreBusca(false);
+      const campoDaFaixa = caixaBusca.querySelector('input[name="q"]');
+      if (campoDaFaixa && !campoDaFaixa.value) campoDaFaixa.value = consulta;
+    }
 
     // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
     // a tela, ganha destaque e o foco — se estiver na tela com a seleção atual
@@ -460,9 +481,12 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const corpo = dlg.querySelector('.corpo');
     let ultimo = null;
 
-    function linkTse(slug, texto, classe) {
+    // `pagina` é a folha do PDF (conferido contra pdf_pagina do índice de busca, 16/09), e a
+    // rota do TSE serve application/pdf direto — então #page=N abre na página exata. O link
+    // do chip prometia isso e não cumpria; agora cumpre.
+    function linkTse(slug, texto, classe, pagina) {
       const a = el('a', classe, texto);
-      a.href = C[slug].tse;
+      a.href = pagina ? `${C[slug].tse}#page=${pagina}` : C[slug].tse;
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
       a.dataset.evento = 'tse_aberto';
@@ -497,7 +521,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
           const b = (D.blocos[s] || {})[String(n)];
           if (!b) continue;
           const q = el('blockquote', '', `${b.texto} `);
-          q.append(linkTse(s, `p. ${b.pagina}`, 'fonte-chip'));
+          q.append(linkTse(s, `p. ${b.pagina}`, 'fonte-chip', b.pagina));
           frag.append(q);
         }
         const link = el('p', 'link-tse');
@@ -530,8 +554,15 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
      é criada pelo navegador ao filtrar candidatos — estilo escopado não a alcançaria. */
 
   .comparacao { --faixa-altura: 3.3rem; }
-  .comparacao.em-busca { --faixa-altura: 0px; }
-  .comparacao.em-busca .faixa-temas { display: none; }
+  /* Em modo de busca a faixa NÃO some: ela troca de conteúdo. O que fica congelado no alto
+     tem de ser o controle que gerou a matriz — o seletor de tema quando a pessoa escolheu
+     um tema, a caixa de texto quando ela buscou. Antes os dois ficavam juntos, e a faixa
+     inteira sumia durante a busca (decisão do Thiago, 16/09). */
+  .comparacao.em-busca .rotulo-tema,
+  .comparacao.em-busca .seletor-tema,
+  .comparacao.em-busca .dica-tema,
+  .comparacao.em-busca .abrir-busca { display: none; }
+  .comparacao.em-busca .busca-na-faixa[hidden] { display: flex; }
   /* min-height, não height: com o botão de busca na mesma linha, a faixa quebra em duas
      quando não cabe, e altura fixa cortaria a segunda (16/09). O --faixa-altura continua
      valendo como deslocamento do cabeçalho de colunas, que gruda logo abaixo. */
@@ -541,8 +572,14 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
      linha inteira, e não fica pendurada na borda oposta (16/09) */
   /* a caixa acompanha a altura do seletor: o parágrafo de estado sai do fluxo, mas o
      formulário ainda carregava a altura dele e empurrava a faixa para 73px (16/09) */
-  .comparacao .busca-na-faixa { margin-left: auto; flex: 0 1 22rem; min-width: 13rem;
+  /* o link e a caixa ficam ACIMA do seletor, ocupando a própria linha (16/09) */
+  .comparacao .abrir-busca { order: -1; flex: 1 1 100%; font-size: .92rem; font-weight: 600;
+    color: var(--acento); text-decoration: underline; text-underline-offset: .18em;
+    min-height: var(--alvo); display: inline-flex; align-items: center; cursor: pointer;
+    background: none; border: 0; padding: 0; }
+  .comparacao .busca-na-faixa { order: -1; flex: 1 1 100%; min-width: 13rem;
     align-self: flex-start; display: flex; flex-wrap: wrap; }
+  .comparacao .busca-na-faixa[hidden] { display: none; }
   .comparacao .busca-na-faixa .busca-caixa { margin: 0; flex: 1 1 auto; min-width: 0; }
   /* o estado da busca OCUPA espaço, não flutua. Tirá-lo do fluxo para ganhar 8px de
      alinhamento fez a mensagem cair sobre os chips de candidato (16/09); ancorá-la logo
@@ -565,9 +602,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
      caixa vira um bloco mais alto que o campo e a faixa centraliza o bloco, não o campo */
   .comparacao .busca-na-faixa .busca-caixa { display: flex; flex-wrap: wrap; }
   .comparacao .busca-na-faixa .linha { flex: 1 1 100%; height: var(--alvo); }
-  @media (max-width: 900px) {
-    .comparacao .busca-na-faixa { margin-left: 0; flex: 1 1 100%; }
-  }
+
   .comparacao .rotulo-tema { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--acento-forte); }
   /* o menu de temas é nosso (details + lista), não o <select> nativo: o
      popup do sistema saía com o dobro do tamanho no macOS e não se estiliza */
