@@ -133,6 +133,9 @@ const notas = [
   .maquete .marca { display: inline-grid; place-items: center; width: 1.15rem; height: 1.15rem; border-radius: 50%;
     background: var(--azul); color: var(--branco); font-size: .68rem; font-weight: 800; margin-left: .35rem; }
   .maquete .seg .marca, .maquete .cartao > .marca, .maquete .pilha.vazia .marca { position: absolute; right: .3rem; bottom: .3rem; margin: 0; }
+  /* o número fica sobre o canto do cartão: o texto precisa parar antes dele, senão
+     encosta na marca — era o caso de "Outra proposta só dela" (16/09) */
+  .maquete .cartao:has(> .marca) .texto, .maquete .seg:has(> .marca) .texto { padding-right: 1.6rem; }
   .maquete .marca.fixa { position: static; margin: 0; }
 
   .maquete .notas { list-style: none; margin: 1rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .5rem; }

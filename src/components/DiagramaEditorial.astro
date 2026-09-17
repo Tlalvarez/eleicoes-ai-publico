@@ -52,7 +52,10 @@ const linhas = [
     detalhe: 'Quem apoia só uma parte da frase ganha uma proposta própria com o seu detalhe.' },
   { quem: 'codigo', ator: 'Código', icone: 'codigo', acao: 'junta as repetidas de', de: 'conferidas', para: 'comparacao',
     detalhe: 'Saem também as propostas espelhadas, como "permanecer no BRICS" e "retirar o Brasil do BRICS".' },
-  { quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa e publica', de: 'comparacao', para: 'pagina' },
+  // "revisa por amostragem" e não "revisa": a pessoa lê os pontos onde um erro pesa mais,
+  // não proposta por proposta. Dizer só "revisa" prometia conferência que não existe
+  // (decisão do Thiago, 16/09). O que entra na amostra está em /metodologia#quem-faz.
+  { quem: 'pessoa', ator: 'Pessoa', icone: 'pessoa', acao: 'revisa por amostragem e publica', de: 'comparacao', para: 'pagina' },
 ];
 
 // portão de build: objeto inexistente ou corrente quebrada param a construção, não a leitura
