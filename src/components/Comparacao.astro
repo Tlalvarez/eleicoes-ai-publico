@@ -88,9 +88,13 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     <ul>
       {dados.candidatos.map((c) => (
         <li>
+          {/* partido e número no próprio chip (pedido do Thiago, 16/09): é por ele que se
+              escolhe quem entra na comparação, e só o nome não basta para decidir. Em
+              elementos separados, para o partido encolher sem levar o nome junto. */}
           <button type="button" class="chip" aria-pressed="true" data-slug={c.slug}>
             {c.foto && <img src={c.foto} width="22" height="30" alt="" loading="lazy" />}
-            <span>{c.nome}</span>
+            <span class="chip-nome">{c.nome}</span>
+            {c.partido && <span class="chip-ficha">{c.partido}{c.numero ? ` · ${c.numero}` : ''}</span>}
           </button>
         </li>
       ))}
@@ -641,6 +645,9 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     font: inherit; font-size: .9rem; font-weight: 600; color: var(--tinta); background: var(--cartao);
     border: 1px solid var(--linha); border-radius: 999px; cursor: pointer; }
   .comparacao .chip img { width: 22px; height: 30px; object-fit: cover; border-radius: 4px; background: var(--realce); }
+  .comparacao .chip-nome { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .comparacao .chip-ficha { flex: none; font-size: .8rem; font-weight: 600; color: var(--tinta-suave); white-space: nowrap; }
+  .comparacao .chip[aria-pressed='false'] .chip-ficha { color: inherit; }
   .comparacao .chip[aria-pressed='true'] { border-color: var(--acento-forte); background: var(--realce); box-shadow: inset 0 0 0 1px var(--acento-forte); }
   .comparacao .chip[aria-pressed='true']::before { content: '✓'; font-weight: 800; color: var(--acento-forte); margin-left: .3rem; }
   .comparacao .chip[aria-pressed='false'] { color: var(--tinta-suave); }
@@ -743,7 +750,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     .comparacao .lista-temas { max-height: 60vh; }
     .comparacao dialog.trechos { width: 94vw; padding: 0 .9rem .9rem; }
     .comparacao dialog.trechos::before { margin: 0 -.9rem .8rem; }
-    .comparacao .chip span { max-width: 9rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .comparacao .chip-nome { max-width: 8rem; }
   }
 
   /* selo "contestado pelo candidato" (§3.6 da revisão jurídica, 16/09): discreto, sem
