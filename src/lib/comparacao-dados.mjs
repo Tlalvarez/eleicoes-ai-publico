@@ -15,7 +15,11 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const CONTRATO = 'comparacao-site/1';
-export const RAIZ_PROJETO = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
+// A raiz vem do diretório de trabalho, não da posição deste arquivo em disco. Até o
+// Astro 5 os dois davam no mesmo; no Astro 7 este módulo roda empacotado dentro de
+// dist/, e `../..` a partir de import.meta.url caía em dist/data — o build quebrava
+// procurando data/comparacao/paginas.json onde ele nunca esteve (16/09).
+export const RAIZ_PROJETO = process.cwd();
 export const PASTA = join(RAIZ_PROJETO, 'data', 'comparacao');
 
 const le = (caminho) => JSON.parse(readFileSync(caminho, 'utf8'));
