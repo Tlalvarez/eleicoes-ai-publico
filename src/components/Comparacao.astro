@@ -566,7 +566,11 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   /* min-height, não height: com o botão de busca na mesma linha, a faixa quebra em duas
      quando não cabe, e altura fixa cortaria a segunda (16/09). O --faixa-altura continua
      valendo como deslocamento do cabeçalho de colunas, que gruda logo abaixo. */
-  .comparacao .faixa-temas { position: sticky; top: 0; z-index: 20; min-height: var(--faixa-altura); margin: 0 0 1rem;
+  /* a linha de baixo fica no meio do vão, não colada no seletor: sem padding, a borda
+     encostava no seletor (0px) e os 16px de margem ficavam todos do lado dos chips
+     (medido em 1200px, 16/09). Metade para cada lado — a soma não muda, e a matriz
+     continua onde estava. */
+  .comparacao .faixa-temas { position: sticky; top: 0; z-index: 20; min-height: var(--faixa-altura); margin: 0 0 .5rem; padding-bottom: .5rem;
     display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .6rem; background: var(--papel); border-bottom: 1px solid var(--linha); }
   /* na mesma linha, a busca fica na ponta direita; quando a faixa quebra, ela ocupa a
      linha inteira, e não fica pendurada na borda oposta (16/09) */
