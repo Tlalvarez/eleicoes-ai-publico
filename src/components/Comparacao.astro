@@ -537,19 +537,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   /* a caixa acompanha a altura do seletor: o parágrafo de estado sai do fluxo, mas o
      formulário ainda carregava a altura dele e empurrava a faixa para 73px (16/09) */
   .comparacao .busca-na-faixa { margin-left: auto; flex: 0 1 22rem; min-width: 13rem;
-    align-self: center; display: flex; height: var(--alvo); }
+    align-self: flex-start; display: flex; flex-wrap: wrap; }
   .comparacao .busca-na-faixa .busca-caixa { margin: 0; flex: 1 1 auto; min-width: 0; }
-  /* o estado da busca ("Buscando…", "nenhuma proposta…") NÃO pode flutuar: tirá-lo do
-     fluxo para ganhar altura na faixa fez a mensagem cair por cima dos chips de
-     candidato (16/09). Ele aparece logo abaixo da caixa, com fundo próprio. */
+  /* o estado da busca OCUPA espaço, não flutua. Tirá-lo do fluxo para ganhar 8px de
+     alinhamento fez a mensagem cair sobre os chips de candidato (16/09); ancorá-la logo
+     abaixo da caixa não bastou, porque o que está abaixo são justamente os chips. A faixa
+     cresce para acomodá-la, como já cresce quando o botão empilha. */
   .comparacao .busca-na-faixa .busca-estado:empty { display: none; }
   .comparacao .busca-na-faixa .busca-estado {
-    position: absolute; top: calc(100% + .35rem); left: 0; right: 0; z-index: 25;
-    margin: 0; min-height: 0; padding: .4rem .7rem;
-    background: var(--cartao); border: 1px solid var(--linha-forte); border-radius: 8px;
-    box-shadow: var(--sombra); color: var(--tinta);
+    flex: 1 1 100%; order: 9; margin: .1rem 0 0; min-height: 0; color: var(--tinta);
   }
-  .comparacao .busca-na-faixa { position: relative; }
   /* dentro da faixa, campo e lupa têm a altura do seletor (44px): o .campo do site tem
      49px por causa do padding, e cinco pixels a mais empurravam a faixa para 73px (16/09).
      Só aqui — nas outras páginas a caixa continua com a altura padrão. */
@@ -561,8 +558,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .busca-na-faixa .busca-caixa.sem-rotulo { margin-top: 0; }
   /* o parágrafo de estado é absoluto, mas segue filho do formulário: sem altura fixa, a
      caixa vira um bloco mais alto que o campo e a faixa centraliza o bloco, não o campo */
-  .comparacao .busca-na-faixa .busca-caixa { height: var(--alvo); }
-  .comparacao .busca-na-faixa .linha { height: 100%; }
+  .comparacao .busca-na-faixa .busca-caixa { display: flex; flex-wrap: wrap; }
+  .comparacao .busca-na-faixa .linha { flex: 1 1 100%; height: var(--alvo); }
   @media (max-width: 900px) {
     .comparacao .busca-na-faixa { margin-left: 0; flex: 1 1 100%; }
   }
