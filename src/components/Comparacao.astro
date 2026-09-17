@@ -55,6 +55,10 @@ const estiloCartao = (c) => `grid-column:${c.ini + 1} / span ${c.largura};--l:${
 const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 ---
 <div class="comparacao" style={`--n:${ordem.length}`} data-tema={dados.pagina}>
+  {/* 1px que não ocupa espaço: quando ele sai da tela, a faixa grudou no alto. É o
+      único jeito de o CSS saber que está congelada — não existe seletor de "sticky
+      preso" — e é disso que depende mostrar lá só o filtro que gerou a matriz. */}
+  <div class="sentinela-faixa" aria-hidden="true"></div>
   <div class="faixa-temas">
     {/* Decisão do Thiago (16/09): a busca volta a ser um link acima do seletor, e a caixa
         só aparece ao clicar. Na faixa congelada fica SÓ o controle que gerou a matriz —
@@ -448,6 +452,19 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       if (campoDaFaixa && !campoDaFaixa.value) campoDaFaixa.value = consulta;
     }
 
+    // Congelada, a faixa mostra SÓ o que está filtrando a matriz (Thiago, 16/09). A regra
+    // já valia para a busca que filtrou; faltava o caso de a caixa estar apenas ABERTA e
+    // vazia: aí o alto da tela ficava com link, caixa e seletor, e no celular a matriz só
+    // começava depois dos três. A sentinela diz quando a faixa grudou; grudada e sem busca
+    // ativa, o link e a caixa saem, e volta a caber o seletor sozinho.
+    const sentinela = raiz.querySelector('.sentinela-faixa');
+    if (sentinela && 'IntersectionObserver' in window) {
+      new IntersectionObserver(
+        ([e]) => raiz.classList.toggle('grudada', !e.isIntersecting),
+        { threshold: 0 },
+      ).observe(sentinela);
+    }
+
     // `#p=<id>`: a busca (e qualquer link) chega numa proposta; ela rola até
     // a tela, ganha destaque e o foco — se estiver na tela com a seleção atual
     function destaca() {
@@ -563,6 +580,14 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao.em-busca .dica-tema,
   .comparacao.em-busca .abrir-busca { display: none; }
   .comparacao.em-busca .busca-na-faixa[hidden] { display: flex; }
+  /* a sentinela mede o grude sem ocupar espaço nenhum no fluxo */
+  .comparacao .sentinela-faixa { height: 1px; margin-bottom: -1px; }
+  /* congelada e sem busca ativa: o link e a caixa (que pode estar aberta e vazia) saem de
+     cena, porque nenhum dos dois está filtrando coisa alguma. Com busca ativa, em-busca
+     acima já tira o seletor de tema. Em ambos os casos sobra uma fileira só, que é o que
+     --faixa-altura promete ao cabeçalho de colunas grudado logo abaixo. */
+  .comparacao.grudada:not(.em-busca) .abrir-busca,
+  .comparacao.grudada:not(.em-busca) .busca-na-faixa { display: none; }
   /* min-height, não height: com o botão de busca na mesma linha, a faixa quebra em duas
      quando não cabe, e altura fixa cortaria a segunda (16/09). O --faixa-altura continua
      valendo como deslocamento do cabeçalho de colunas, que gruda logo abaixo. */
