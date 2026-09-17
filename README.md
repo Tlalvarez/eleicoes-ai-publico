@@ -105,9 +105,10 @@ npm test               # o gate completo: suíte + medição + build + verifica�
 - **Seletor de candidatos:** `?c=lula,romeu-zema` mostra só esses; o layout é recalculado no
   navegador pela mesma função do build e a escolha vive só na URL (nada é gravado no navegador).
 - A medição de audiência (PostHog) roda só no domínio publicado, sem cookies e sem perfil de
-  pessoa. A CSP autoriza também o Cloudflare Web Analytics, mas ele **não está ligado**: conferido
-  em 17/09, nenhuma página servida traz o script. Se for ligado no painel da Cloudflare, a linha
-  correspondente volta a `/privacidade` no mesmo commit.
+  pessoa. A Cloudflare injeta o Web Analytics dela **na borda**, só para pedidos de navegador: o
+  HTML servido a um `curl` simples não traz o beacon, e o mesmo endereço pedido com cabeçalhos de
+  navegador vem 367 bytes maior, com `beacon.min.js` (conferido em 17/09). Não procure o script no
+  `dist` — ele não está lá, e é por isso que a CSP precisa autorizar `static.cloudflareinsights.com`.
 - Deploy: `npm run deploy:pages` (Cloudflare Pages, upload direto do `dist`). **Ele NÃO roda
   portão nenhum**: rode você mesmo, nesta ordem, antes de publicar — `python3
   v3/audita_metodologia.py --escopos <ufs>` (sem FALHA), `python3 v3/confere_pesquisas.py
