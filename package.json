@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build && node scripts/publica-busca.mjs && node scripts/emite-cabecalhos-dist.mjs",
     "preview": "astro preview",
-    "test": "npm run test:unit && npm run build && npm run test:dist",
+    "test": "npm run test:unit && npm run build && npm run test:dist && npm run test:css-orfao",
     "deploy:pages": "wrangler pages deploy dist --project-name=eleicoes-ai --branch=main --commit-dirty=true",
     "test:unit": "npm run test:rotas && npm run test:medicao",
     "test:dist": "npm run test:paginas-dist && npm run test:filtro-dist && npm run test:busca-dist && npm run test:exemplos-busca && npm run test:render-seguro && npm run test:cabecalhos && npm run test:acessibilidade && npm run test:functions",
@@ -22,7 +22,8 @@
     "test:functions": "wrangler pages functions build --outdir .wrangler/functions-test",
     "busca:gabarito-vetores": "node scripts/vetores-do-gabarito.mjs",
     "test:filtro-dist": "node scripts/checa-filtro-dist.mjs",
-    "test:exemplos-busca": "node scripts/confere-exemplos-busca.mjs --todos"
+    "test:exemplos-busca": "node scripts/confere-exemplos-busca.mjs --todos",
+    "test:css-orfao": "node scripts/checa-css-orfao.mjs"
   },
   "dependencies": {
     "astro": "^5.0.0"
