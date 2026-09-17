@@ -465,11 +465,21 @@ ul.lista-dossie .meta { color: var(--tinta-suave); font-size: .88rem; display: b
 
 /* ---------------------------------------------------------------- menu mobile */
 
-/* Dois cargos cabem ao lado da marca em qualquer largura: sem botão de menu. */
+/* Continua sem botão de menu: os itens ficam sempre visíveis, só mudam de fileira. */
 @media (max-width: 760px) {
   header.site .inner { gap: .5rem; flex-wrap: nowrap; }
   nav.main { margin-left: auto; gap: 0; flex-wrap: nowrap; }
   nav.main a { padding: .55rem .5rem; font-size: .9rem; }
+}
+/* Com três itens, o menu deixou de caber ao lado da marca no celular: em 425px
+   "Metodologia" passava da borda e aparecia cortado (medido em 16/09, quando ela
+   entrou). A conta: marca 108px + menu 290px + as bordas pedem 446px. Abaixo de
+   520px o menu desce para a fileira dele, inteiro e no tamanho normal — encolher
+   a fonte até caber encolheria junto o alvo de toque, que o portão de
+   acessibilidade cobra em 44px. */
+@media (max-width: 520px) {
+  header.site .inner { flex-wrap: wrap; }
+  nav.main { margin-left: 0; flex-basis: 100%; }
 }
 
 /* ------------------------------------------------- nomes herdados das páginas
