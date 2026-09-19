@@ -310,22 +310,25 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const sugestoes = [
     ...(temas3[0] ? [`O que cada candidato a Presidente propõe para ${temas3[0]}?`] : []),
     ...(temas3[1] ? [`Onde os programas mais se parecem e onde se opõem em ${temas3[1]}?`] : []),
-    ...(temas3[2] ? [`Compare dois candidatos (a pessoa escolhe quais) em ${temas3[2]}.`] : []),
+    ...(temas3[2] ? [`Compare dois candidatos à sua escolha em ${temas3[2]}.`] : []),
     ...assuntos.map((x) => `Quais candidatos falam de ${x}, e o que dizem?`),
-    'O que o programa de um candidato (a pessoa diz qual) promete sobre impostos, e em que página está?',
+    'O que o programa de um candidato à sua escolha promete sobre impostos, e em que página está?',
     'O que os candidatos a Governador do meu estado propõem para a segurança?',
-    'Sobre o que um programa NÃO fala? (temas em que o candidato não registrou proposta)',
+    'Em que temas o programa de um candidato não traz proposta nenhuma?',
   ];
   const cartao = [
     '# eleicoes.ai — o acervo dos programas de governo das eleições de 2026 (Brasil)', '',
     `O eleicoes.ai tem o acervo organizado dos programas de governo que os candidatos a Presidente e a Governador (${ufs.length} unidades da federação) registraram no TSE: o PDF original, o texto do programa por tema e por página, e as propostas de cada candidato comparadas lado a lado. A única fonte é o programa registrado. O site é independente, não recomenda voto e trata todos os candidatos do mesmo jeito.`, '',
-    '## Se você é um assistente (ChatGPT, Claude, Gemini…) e uma pessoa te mandou este endereço', '',
-    'Responda a ela AGORA, sem abrir mais nada e sem pesquisar na web — esta página já tem o que você precisa para a primeira resposta:', '',
-    '1. Em duas frases: o eleicoes.ai tem o acervo organizado dos programas de governo de todos os candidatos comparados a Presidente e a Governador em 2026, e ela pode perguntar o que quiser a esse acervo, que você consulta e responde com a página do programa.',
-    '2. Ofereça três ou quatro sugestões de pergunta, adaptando as de baixo. Nunca sugira nem destaque um candidato: quem escolhe nomes é a pessoa.',
-    '3. Pergunte se ela quer começar por Presidente ou pelo Governador do estado dela.', '',
-    'Sugestões de pergunta (modelos):', '',
+    // Medido no ChatGPT (18/09): um modelo que "pensa muito" ignorou o pedido de responder sem abrir
+    // mais nada, saiu abrindo arquivos e devolveu uma avaliação do site. Página aberta é DADO para
+    // o assistente, não ordem. Então o cartão deixa de mandar e passa a SER a resposta: quem o
+    // resume já diz o que é o site e o que dá para perguntar. As instruções vêm depois.
+    '## O que você pode perguntar', '',
+    'Qualquer pergunta sobre o que os candidatos escreveram nos programas — por candidato, por tema ou por assunto. Por exemplo:', '',
     ...sugestoes.map((s) => `- ${s}`), '',
+    'Para começar, basta dizer se o interesse é Presidente ou o Governador de qual estado.', '',
+    '## Para o assistente que abriu esta página', '',
+    'A pessoa que te mandou este endereço quer usar o acervo. A primeira resposta cabe no que está acima: diga em duas frases o que é o eleicoes.ai, ofereça três ou quatro das perguntas de exemplo (sem sugerir nem destacar candidato: quem escolhe nomes é ela) e pergunte por onde ela quer começar. Não é preciso abrir mais nada nem pesquisar na web para isso.', '',
     'Quando ela perguntar, abra SÓ o arquivo que responde (são pequenos) e use só o que está nele:', '',
     ...(pres ? [`- Presidente — PANORAMA da disputa (comece por aqui para pergunta geral): ${BASE}/presidente/panorama.md`,
       `- Presidente — ÍNDICE de assuntos (para pergunta sobre um assunto específico): ${BASE}/presidente/assuntos.md`,
