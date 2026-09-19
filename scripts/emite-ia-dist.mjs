@@ -171,11 +171,30 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   // ele precisa ler para responder. Curto de propósito: a primeira resposta tem de ser rápida.
   const pres = feitos.find((f) => f.rel === 'presidente');
   const ufs = feitos.filter((f) => f.rel.startsWith('governador/'));
+  // as sugestões saem dos DADOS (os três primeiros temas de presidente e os exemplos de assunto
+  // que a busca já confere) e nunca citam candidato — quem escolhe nomes é a pessoa
+  const arqEx = join(RAIZ, 'data', 'busca', 'presidente', 'exemplos.json');
+  const assuntos = existsSync(arqEx) ? JSON.parse(readFileSync(arqEx, 'utf8')).exemplos.slice(0, 2) : [];
+  const temas3 = (pres?.temas_lista ?? []).slice(0, 3).map((x) => x.nome.toLowerCase());
+  const sugestoes = [
+    ...(temas3[0] ? [`O que cada candidato a Presidente propõe para ${temas3[0]}?`] : []),
+    ...(temas3[1] ? [`Onde os programas mais se parecem e onde se opõem em ${temas3[1]}?`] : []),
+    ...(temas3[2] ? [`Compare dois candidatos (a pessoa escolhe quais) em ${temas3[2]}.`] : []),
+    ...assuntos.map((x) => `Quais candidatos falam de ${x}, e o que dizem?`),
+    'O que o programa de um candidato (a pessoa diz qual) promete sobre impostos, e em que página está?',
+    'O que os candidatos a Governador do meu estado propõem para a segurança?',
+    'Sobre o que um programa NÃO fala? (temas em que o candidato não registrou proposta)',
+  ];
   const cartao = [
     '# eleicoes.ai — o acervo dos programas de governo das eleições de 2026 (Brasil)', '',
     `O eleicoes.ai tem o acervo organizado dos programas de governo que os candidatos a Presidente e a Governador (${ufs.length} unidades da federação) registraram no TSE: o PDF original, o texto do programa por tema e por página, e as propostas de cada candidato comparadas lado a lado. A única fonte é o programa registrado. O site é independente, não recomenda voto e trata todos os candidatos do mesmo jeito.`, '',
     '## Se você é um assistente (ChatGPT, Claude, Gemini…) e uma pessoa te mandou este endereço', '',
-    'Responda a ela agora, em duas ou três frases, sem abrir mais nada: diga que o eleicoes.ai tem o acervo organizado dos programas de governo de todos os candidatos comparados a Presidente e a Governador em 2026, e que ela pode fazer qualquer pergunta a esse acervo — sobre um candidato, um tema ou um assunto específico — que você consulta e responde com a página do programa.', '',
+    'Responda a ela AGORA, sem abrir mais nada e sem pesquisar na web — esta página já tem o que você precisa para a primeira resposta:', '',
+    '1. Em duas frases: o eleicoes.ai tem o acervo organizado dos programas de governo de todos os candidatos comparados a Presidente e a Governador em 2026, e ela pode perguntar o que quiser a esse acervo, que você consulta e responde com a página do programa.',
+    '2. Ofereça três ou quatro sugestões de pergunta, adaptando as de baixo. Nunca sugira nem destaque um candidato: quem escolhe nomes é a pessoa.',
+    '3. Pergunte se ela quer começar por Presidente ou pelo Governador do estado dela.', '',
+    'Sugestões de pergunta (modelos):', '',
+    ...sugestoes.map((s) => `- ${s}`), '',
     'Quando ela perguntar, abra SÓ o arquivo que responde (são pequenos) e use só o que está nele:', '',
     ...(pres ? [`- Presidente — candidatos, PDFs no TSE e o programa de cada um: ${BASE}/presidente.md`,
       ...pres.temas_lista.map((t) => `  - ${t.nome}: ${BASE}/presidente/tema-${t.id}.md`)] : []),
