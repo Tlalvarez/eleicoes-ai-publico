@@ -60,7 +60,11 @@ for (const e of escopos) {
 for (const a of arquivos) if (statSync(a).size > LIMITE_BYTES) falhas.push(`${a.slice(DADOS.length + 1)}: ${statSync(a).size} bytes — passa do que um assistente lê sem cortar`);
 
 const citados = new Set();
-for (const a of [...arquivos, join(RAIZ, 'dist', 'ia.html')]) for (const m of readFileSync(a, 'utf8').matchAll(/https?:\/\/[^\s"'<>|)]+\/ia\/dados\/([A-Za-z0-9_\/.-]+\.md)/g)) citados.add(m[1]);
+const CARTAO = join(RAIZ, 'dist', 'llms.txt');
+if (!existsSync(CARTAO)) falhas.push('dist/llms.txt não existe — a home não teria o que entregar ao assistente');
+else if (statSync(CARTAO).size > 8000) falhas.push(`llms.txt com ${statSync(CARTAO).size} bytes: o cartão de visita tem de ser curto, é ele que decide a velocidade da primeira resposta`);
+else if (!/^FIM — /m.test(readFileSync(CARTAO, 'utf8'))) falhas.push('llms.txt sem a linha FIM');
+for (const a of [...arquivos, join(RAIZ, 'dist', 'ia.html'), ...(existsSync(CARTAO) ? [CARTAO] : [])]) for (const m of readFileSync(a, 'utf8').matchAll(/https?:\/\/[^\s"'<>|)]+\/ia\/dados\/([A-Za-z0-9_\/.-]+\.md)/g)) citados.add(m[1]);
 for (const c of citados) if (!existsSync(join(DADOS, c))) falhas.push(`endereço citado e inexistente: /ia/dados/${c}`);
 
 if (falhas.length) {

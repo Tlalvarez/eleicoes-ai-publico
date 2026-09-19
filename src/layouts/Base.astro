@@ -43,6 +43,8 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
          sem isto cada combinação seria uma página a mais para o buscador. Página
          fora dos buscadores não declara canônico. -->
     {!noindex && <link rel="canonical" href={new URL(caminhoPublico, Astro.site ?? 'https://eleicoes.ai').toString()} />}
+    <!-- para o assistente de IA que abrir o site: o cartão de visita em texto (ver functions/index.js) -->
+    <link rel="alternate" type="text/markdown" href="/llms.txt" title="eleicoes.ai para assistentes de IA" />
     <meta name="color-scheme" content="light dark" />
     <!-- ícone do site: o "e" de eleicoes sobre o azul-marinho, com a faixa da
          identidade. .ico para navegador antigo e robô, SVG para os atuais,
