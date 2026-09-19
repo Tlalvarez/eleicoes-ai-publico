@@ -256,3 +256,18 @@ test('lista de contestações vazia não acende selo, e a proposta de um candida
   const naPilha = cartoesDoLayout(layout([{ ...PROPOSTAS[0], contestacoes: ['2026-09-16-9'] }], ORDEM));
   assert.deepEqual(naPilha.map((c) => c.contestada), [['2026-09-16-9']], 'na pilha o selo também acende');
 });
+
+test('ordem dos assuntos: por interesse sobe a divergência e o encontro; a lista manda quando é dada', () => {
+  const secoes = (L) => L.linhas.filter((l) => l.tipo === 'secao').map((l) => l.rotulo);
+  // padrão continua alfabético: quem não pede nada não muda de página
+  assert.deepEqual(secoes(layout(PROPOSTAS, ORDEM, 'assunto')), secoes(layout(PROPOSTAS, ORDEM, 'assunto', {})));
+  const porInteresse = secoes(layout(PROPOSTAS, ORDEM, 'assunto', { assuntos: 'interesse' }));
+  // os dois assuntos com proposta contrária abrem; "todos" (cinco propondo) vem antes do que só um propõe
+  assert.deepEqual(porInteresse.slice(0, 2).sort(), ['b, d contra', 'd, b contra']);
+  assert.ok(porInteresse.indexOf('todos') < porInteresse.indexOf('só a'));
+  assert.deepEqual(porInteresse.slice().sort(), secoes(layout(PROPOSTAS, ORDEM, 'assunto')).slice().sort(), 'nenhum assunto some nem aparece');
+  // a regra não olha para quem propõe: trocar os candidatos de coluna não muda a ordem dos assuntos
+  assert.deepEqual(secoes(layout(PROPOSTAS, ORDEM.slice().reverse(), 'assunto', { assuntos: 'interesse' })), porInteresse);
+  // lista dada: ela primeiro, o resto em ordem alfabética
+  assert.deepEqual(secoes(layout(PROPOSTAS, ORDEM, 'assunto', { assuntos: ['só c', 'todos'] })).slice(0, 3), ['só c', 'todos', 'a e c']);
+});

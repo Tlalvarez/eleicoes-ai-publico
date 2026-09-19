@@ -171,11 +171,11 @@ export function modoDaUrl(param) {
 
 // a página é organizada por ASSUNTO (decisão do Thiago em 13/09: sem
 // alternador); o modo por concordância continua disponível para quem chamar
-export function layout(propostas, ordem, modo = 'assunto') {
+export function layout(propostas, ordem, modo = 'assunto', opcoes = {}) {
   const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
   const n = ordem.length;
   const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0), ordem);
-  if (modo === 'assunto') return porAssunto(visiveis, ordem, idx, n);
+  if (modo === 'assunto') return porAssunto(visiveis, ordem, idx, n, opcoes.assuntos);
   const linhas = [];
   let secao = 0;
   let subtema = null;
@@ -216,14 +216,52 @@ export function contagens(propostas, ordem) {
 }
 
 /**
+ * A ordem dos assuntos na página. Três critérios, e nenhum olha para QUEM propõe:
+ *   · (padrão) alfabética;
+ *   · 'interesse': primeiro os assuntos em que os candidatos NA TELA se encontram —
+ *     onde há proposta contrária, depois onde mais candidatos se posicionam, depois
+ *     onde mais gente propõe a mesma coisa, depois onde há mais propostas. Em
+ *     18/09/2026 a página abria por "Apoio a micro e pequenos negócios" só por
+ *     começar com A, e era esse o cartão mais aberto do site. A regra depende da
+ *     seleção: com dois candidatos na tela, sobe o que os dois tratam;
+ *   · uma lista: a ordem dada (a busca usa a do melhor resultado); o que não está
+ *     nela vem depois, em ordem alfabética.
+ */
+export function ordenaAssuntos(visiveis, ordem, criterio) {
+  const alfabetica = (a, b) => String(a).localeCompare(String(b), 'pt-BR');
+  const assuntos = [...new Set(visiveis.map((p) => p.subtema))].sort(alfabetica);
+  if (Array.isArray(criterio)) {
+    const pos = new Map(criterio.map((s, i) => [s, i]));
+    return assuntos.sort((a, b) => (pos.get(a) ?? Infinity) - (pos.get(b) ?? Infinity) || alfabetica(a, b));
+  }
+  if (criterio !== 'interesse') return assuntos;
+  const medida = new Map(assuntos.map((st) => {
+    const ps = visiveis.filter((p) => p.subtema === st);
+    const posicionados = new Set(ps.flatMap((p) => [...quem(p, ordem), ...contra(p, ordem)]));
+    return [st, [
+      ps.some((p) => contra(p, ordem).length) ? 1 : 0,
+      posicionados.size,
+      Math.max(...ps.map((p) => quem(p, ordem).length)),
+      ps.length,
+    ]];
+  }));
+  return assuntos.sort((a, b) => {
+    const x = medida.get(a);
+    const y = medida.get(b);
+    for (let i = 0; i < x.length; i += 1) if (x[i] !== y[i]) return y[i] - x[i];
+    return alfabetica(a, b);
+  });
+}
+
+/**
  * O outro modo de ler a página: por ASSUNTO. Cada subtema é uma seção, com
  * tudo o que se propõe sobre ele lado a lado — as faixas de quem concorda
  * (mais candidatos primeiro), depois uma pilha por coluna com o que só um
  * propõe. Mercosul fica com Mercosul, seja de um candidato ou de cinco.
  */
-function porAssunto(visiveis, ordem, idx, n) {
+function porAssunto(visiveis, ordem, idx, n, criterio) {
   const linhas = [];
-  const assuntos = [...new Set(visiveis.map((p) => p.subtema))].sort((a, b) => String(a).localeCompare(String(b), 'pt-BR'));
+  const assuntos = ordenaAssuntos(visiveis, ordem, criterio);
   for (const st of assuntos) {
     const doAssunto = visiveis.filter((p) => p.subtema === st);
     linhas.push({ tipo: 'secao', rotulo: st });
