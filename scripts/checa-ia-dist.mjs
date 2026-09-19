@@ -64,8 +64,26 @@ const CARTAO = join(RAIZ, 'dist', 'llms.txt');
 if (!existsSync(CARTAO)) falhas.push('dist/llms.txt não existe — a home não teria o que entregar ao assistente');
 else if (statSync(CARTAO).size > 8000) falhas.push(`llms.txt com ${statSync(CARTAO).size} bytes: o cartão de visita tem de ser curto, é ele que decide a velocidade da primeira resposta`);
 else if (!/^FIM — /m.test(readFileSync(CARTAO, 'utf8'))) falhas.push('llms.txt sem a linha FIM');
-for (const a of [...arquivos, join(RAIZ, 'dist', 'ia.html'), ...(existsSync(CARTAO) ? [CARTAO] : [])]) for (const m of readFileSync(a, 'utf8').matchAll(/https?:\/\/[^\s"'<>|)]+\/ia\/dados\/([A-Za-z0-9_\/.-]+\.md)/g)) citados.add(m[1]);
-for (const c of citados) if (!existsSync(join(DADOS, c))) falhas.push(`endereço citado e inexistente: /ia/dados/${c}`);
+// Todo .md tem o gêmeo em HTML — é o HTML que o ChatGPT lê (o leitor dele recusa text/markdown,
+// medido em 18/09) — com a mesma linha FIM, e os links do HTML apontam para HTML.
+const htmls = todos(DADOS).filter((a) => a.endsWith('.html'));
+for (const a of arquivos) {
+  const gemeo = a.replace(/\.md$/, '.html');
+  if (!existsSync(gemeo)) { falhas.push(`${a.slice(DADOS.length + 1)}: sem o gêmeo em HTML`); continue; }
+  const fim = /^FIM — [^.:]*/m.exec(readFileSync(a, 'utf8'))?.[0];
+  const h = readFileSync(gemeo, 'utf8');
+  if (!fim || !h.includes(fim)) falhas.push(`${gemeo.slice(DADOS.length + 1)}: sem a linha FIM do markdown`);
+  if (/\/ia\/dados\/[^"\s<]+\.md/.test(h)) falhas.push(`${gemeo.slice(DADOS.length + 1)}: link para .md dentro do HTML`);
+}
+const CARTAO_HTML = join(RAIZ, 'dist', 'ia', 'cartao.html');
+if (!existsSync(CARTAO_HTML)) falhas.push('dist/ia/cartao.html não existe — a rota / não teria o que entregar ao ChatGPT');
+for (const a of [...arquivos, ...htmls, join(RAIZ, 'dist', 'ia.html'), ...(existsSync(CARTAO) ? [CARTAO] : []), ...(existsSync(CARTAO_HTML) ? [CARTAO_HTML] : [])]) {
+  for (const m of readFileSync(a, 'utf8').matchAll(/https?:\/\/[^\s"'<>|)]+\/ia\/dados\/([A-Za-z0-9_\/-]+(?:\.md)?)/g)) citados.add(m[1]);
+}
+for (const c of citados) {
+  if (c.endsWith('-')) continue;   // o padrão de endereço explicado na /ia (`tema-<tema>`), não um endereço
+  if (!existsSync(join(DADOS, c.endsWith('.md') ? c : `${c}.html`))) falhas.push(`endereço citado e inexistente: /ia/dados/${c}`);
+}
 
 if (falhas.length) {
   console.error(`FALHOU (ia): ${falhas.length} problema(s)`);

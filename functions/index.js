@@ -25,12 +25,16 @@ export function querTexto(request) {
 export async function onRequestGet(context) {
   const { request, env, next } = context;
   if (!querTexto(request)) return next();
-  const cartao = await env.ASSETS.fetch(new URL('/llms.txt', request.url));
+  // HTML, não markdown: em 18/09 o leitor do ChatGPT recusou o cartão com
+  // "Unsupported content-type: text/markdown". Só quem PEDE markdown recebe markdown.
+  const accept = request.headers.get('Accept') ?? '';
+  const querMarkdown = /text\/(markdown|plain)/i.test(accept) && !/text\/html/i.test(accept);
+  const cartao = await env.ASSETS.fetch(new URL(querMarkdown ? '/llms.txt' : '/ia/cartao', request.url));
   if (!cartao.ok) return next();
   return new Response(cartao.body, {
     status: 200,
     headers: {
-      'Content-Type': 'text/markdown; charset=utf-8',
+      'Content-Type': querMarkdown ? 'text/markdown; charset=utf-8' : 'text/html; charset=utf-8',
       'Cache-Control': 'public, max-age=300',
       Vary: 'Accept, User-Agent',
       'X-Robots-Tag': 'noindex',

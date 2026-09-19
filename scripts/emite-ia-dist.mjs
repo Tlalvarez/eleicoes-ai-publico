@@ -35,10 +35,53 @@ const BASE = `${ORIGEM}/ia/dados`;
 export const LIMITE_BYTES = 120_000;
 const PARTE_BYTES = 60_000;
 
+/**
+ * O mesmo conteúdo em HTML simples. Medido em 18/09/2026 no ChatGPT de verdade: o leitor dele
+ * chegou como ChatGPT-User, recebeu o cartão e respondeu "Unsupported content-type:
+ * text/markdown". HTML é o único formato que todo assistente abre; o .md continua ao lado, para
+ * quem o prefere. Os links do HTML apontam para HTML (o endereço público é sem extensão).
+ * Conversor mínimo, só do que estes arquivos usam: títulos, listas, tabelas, negrito e links.
+ */
+const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const emLinha = (s) => esc(s)
+  .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+  .replace(/`([^`]+)`/g, '<code>$1</code>')
+  .replace(/https?:\/\/[^\s<|)]+[^\s<|).,;:]/g, (u) => `<a href="${u}">${u}</a>`);
+export function paraHtml(md, tituloPadrao = 'eleicoes.ai') {
+  const linhas = md.replace(/(\/ia\/dados\/[A-Za-z0-9_\/.-]+?)\.md\b/g, '$1').split('\n');
+  const titulo = (linhas.find((l) => l.startsWith('# ')) ?? `# ${tituloPadrao}`).slice(2);
+  const out = [];
+  let lista = false; let tabela = false; let h1 = false;
+  const fecha = () => { if (lista) { out.push('</ul>'); lista = false; } if (tabela) { out.push('</table>'); tabela = false; } };
+  for (const l of linhas) {
+    if (/^\|[-| ]+\|$/.test(l)) continue;
+    if (l.startsWith('|')) {
+      if (!tabela) { fecha(); out.push('<table>'); tabela = true; }
+      out.push(`<tr>${l.slice(1, -1).split('|').map((c) => `<td>${emLinha(c.trim())}</td>`).join('')}</tr>`);
+      continue;
+    }
+    const item = /^(\s*)(?:-|\d+\.) (.*)$/.exec(l);
+    if (item) {
+      if (!lista) { fecha(); out.push('<ul>'); lista = true; }
+      out.push(`<li${item[1] ? ' class="sub"' : ''}>${emLinha(item[2])}</li>`);
+      continue;
+    }
+    fecha();
+    if (!l.trim()) continue;
+    const h = /^(#{1,3}) (.*)$/.exec(l);
+    if (h) { const n = h[1].length === 1 && !h1 ? 1 : Math.max(2, h[1].length); if (n === 1) h1 = true; out.push(`<h${n}>${emLinha(h[2])}</h${n}>`); continue; }
+    out.push(`<p>${emLinha(l.replace(/^> /, ''))}</p>`);
+  }
+  fecha();
+  if (!h1) out.unshift(`<h1>${esc(titulo)}</h1>`);
+  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, follow"><title>${esc(titulo)} · eleicoes.ai</title></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><main id="conteudo">\n${out.join('\n')}\n</main></body></html>\n`;
+}
+
 const escreve = (rel, texto) => {
   const arq = join(DIST, 'ia', 'dados', rel);
   mkdirSync(dirname(arq), { recursive: true });
   writeFileSync(arq, texto);
+  writeFileSync(arq.replace(/\.md$/, '.html'), paraHtml(texto));
   return Buffer.byteLength(texto);
 };
 const UM = (n, s, p) => `${n} ${n === 1 ? s : p}`;
@@ -207,6 +250,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     `5. Como os dados foram feitos e as regras completas: ${ORIGEM}/ia`, '',
     'FIM — cartão de visita do eleicoes.ai.', ''].join('\n');
   writeFileSync(join(DIST, 'llms.txt'), cartao);
+  // o cartão em HTML é o que a rota / entrega ao assistente (functions/index.js)
+  mkdirSync(join(DIST, 'ia'), { recursive: true });
+  writeFileSync(join(DIST, 'ia', 'cartao.html'), paraHtml(cartao));
   console.log(`OK (ia): /llms.txt com ${Buffer.byteLength(cartao)} bytes`);
   writeFileSync(join(DIST, 'ia', 'dados', 'escopos.json'), JSON.stringify(feitos.map(({ rel, rotulo, candidatos, temas }) => ({ rel, rotulo, candidatos, temas }))));
   console.log(`OK (ia): ${feitos.length} escopo(s), ${total} arquivo(s), ${(feitos.reduce((s, f) => s + f.bytes, 0) / 1e6).toFixed(1)} MB; maior: ${maior[0]} (${(maior[1] / 1024).toFixed(0)} KB)`);
