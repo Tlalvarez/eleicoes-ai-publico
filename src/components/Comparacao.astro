@@ -63,9 +63,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     {/* Decisão do Thiago (16/09): a busca volta a ser um link acima do seletor, e a caixa
         só aparece ao clicar. Na faixa congelada fica SÓ o controle que gerou a matriz —
         o seletor, quando veio do tema; a caixa, quando veio da busca. */}
-    <a href="/busca" class="abrir-busca" role="button" aria-expanded="false" aria-controls="busca-no-tema">Realizar busca</a>
-    <div id="busca-no-tema" class="busca-na-faixa" hidden>
-      <Busca compacta semRotulo escopo={escopoBusca} />
+    {/* PROTÓTIPO B (18/09): a caixa vem ABERTA e convida à pergunta. Como link de texto
+        ("Realizar busca", 16/09) ela teve 1 uso em 470 sessões, no celular e no computador. */}
+    <div id="busca-no-tema" class="busca-na-faixa">
+      <Busca compacta pergunta escopo={escopoBusca} />
     </div>
     <span class="rotulo-tema" id="rotulo-tema">Tema</span>
     <details class="seletor-tema" data-base={base}>
@@ -222,7 +223,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
 
 <script>
   import { layout, selecaoDaUrl, urlDaSelecao } from '../lib/comparacao.mjs';
-  import { buscaPorPagina } from '../lib/busca-navegador.mjs';
+  import { buscaPorPagina, enderecoDaPagina, entendeNoEscopo } from '../lib/busca-navegador.mjs';
   import { contextoDoCaminho, defineContextoPadrao, medir } from '../lib/medicao.mjs';
 
   const raiz = document.querySelector('.comparacao');
@@ -263,6 +264,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     // páginas, com id `tema/pid`); null = o tema inteiro
     let filtro = null;
     let externas = [];
+    let ordemDaBusca = null;
     const consulta = (new URLSearchParams(location.search).get('q') || '').trim();
     const propostasVisiveis = () => (filtro ? [...D.propostas, ...externas].filter((p) => filtro.has(p.id)) : D.propostas);
 
@@ -319,7 +321,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       raiz.style.setProperty('--n', String(sel.length));
       for (const cel of cabecalho.querySelectorAll('.candidato')) cel.hidden = !sel.includes(cel.dataset.slug);
       for (const ch of chips) ch.setAttribute('aria-pressed', String(sel.includes(ch.dataset.slug)));
-      const L = layout(propostasVisiveis(), sel);
+      // em busca, os assuntos saem na ordem do melhor resultado (ordemDaBusca); fora dela, alfabética
+      const L = layout(propostasVisiveis(), sel, 'assunto', { assuntos: ordemDaBusca ?? undefined });
       const frag = document.createDocumentFragment();
       for (const linha of L.linhas) {
         if (linha.tipo === 'secao') frag.append(el('h2', '', linha.rotulo));
@@ -344,6 +347,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     const sufixo = (sel, comBusca = false) => {
       const partes = [];
       if (comBusca && consulta) partes.push(`q=${encodeURIComponent(consulta)}`);
+      const de = new URLSearchParams(location.search).get('de');
+      if (comBusca && consulta && de) partes.push(`de=${encodeURIComponent(de)}`);
       const c = urlDaSelecao(sel, ordem);
       if (c) partes.push(`c=${c}`);
       return partes.length ? `?${partes.join('&')}` : '';
@@ -406,6 +411,17 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       barra.querySelector('.filtro-texto').textContent = `Buscando "${q}"…`;
       barra.hidden = false;
       let r;
+      // PROTÓTIPO B: endereço que chega com a pergunta crua (link antigo, caminho sem JavaScript)
+      // passa pelo mesmo entendimento da caixa — quem ela cita vira coluna, o resto é a busca
+      const pergunta = (new URLSearchParams(location.search).get('de') || q).trim();
+      let e = { candidatos: [], tema: null, conteudo: q, primeira: null };
+      try { e = await entendeNoEscopo(escopo, q); } catch { /* sem índice, a busca abaixo já falha e avisa */ }
+      if (!e.conteudo && (e.tema || e.candidatos.length)) {
+        location.replace(enderecoDaPagina(escopo, e.tema ?? e.primeira, e.primeira, e.candidatos.join(',')));
+        return;
+      }
+      if (e.candidatos.length && !new URLSearchParams(location.search).get('c')) { selecao = e.candidatos; }
+      q = e.conteudo || q;
       try { r = await buscaPorPagina(escopo, q); } catch {
         barra.querySelector('.filtro-texto').textContent = 'Não consegui carregar a busca; mostrando o tema inteiro.';
         return;
@@ -438,7 +454,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
         if (ids.has(p.id) && !p.subtemaOriginal) { p.subtemaOriginal = p.subtema; p.subtema = `${nomeDoTema[D.tema] ?? D.tema} · ${p.subtema}`; }
       }
       filtro = ids;
+      // a ordem dos assuntos é a do melhor resultado: o rótulo de cada um já é o que vai à tela
+      ordemDaBusca = [...new Set(r.ordem.map((o) => porId[o.pagina === D.tema ? o.pid : `${o.pagina}/${o.pid}`]?.subtema).filter(Boolean))];
       aplica(selecao);
+      if (selecao.length !== ordem.length) guardaNaUrl(selecao);
       const n = ids.size;
       const temas = r.porPagina.length;
       // resgate por sentido: nenhuma palavra da consulta casou, e o vetor decidiu. Dizer isso
@@ -446,36 +465,22 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       // "nenhuma proposta fala disso" que ele substitui (16/09).
       barra.querySelector('.filtro-texto').textContent = n
         ? (r.resgatado
-          ? `Nenhuma proposta usa a palavra "${q}". Estas ${n > 1 ? `${n} falam` : 'fala'} de assunto parecido, em ${temas} tema${temas > 1 ? 's' : ''}.`
+          ? `Nenhuma proposta usa a palavra "${q}". ${n > 1 ? `Estas ${n} falam` : 'Esta fala'} de assunto parecido, em ${temas} tema${temas > 1 ? 's' : ''}.`
           : `${n} proposta${n > 1 ? 's' : ''} sobre "${q}" em ${temas} tema${temas > 1 ? 's' : ''}${r.modo === 'lexical' ? ' (busca por palavras; a busca por sentido está indisponível agora)' : ''}.`)
         : `Nenhuma proposta sobre "${q}".`;
-      medir('busca_feita', { consulta: q, resultados: n, temas, modo: r.modo, direto: !r.semDireto, destino: D.tema });
-      if (titulo) titulo.textContent = `"${q}": o que cada candidato propõe`;
+      medir('busca_feita', { consulta: pergunta, resultados: n, temas, modo: r.modo, direto: !r.semDireto, destino: D.tema });
+      if (titulo) titulo.textContent = `"${pergunta}"`;
       if (lead) lead.textContent = 'Resultado da busca em todos os temas. Uma proposta feita por mais de um candidato aparece uma vez, sobre as colunas de quem a faz. Toque para ler o trecho do programa.';
       document.title = `"${q}" · Busca · eleicoes.ai`;
     }
     if (consulta) filtraPelaBusca(consulta);
 
-    // O link "Realizar busca" abre a caixa (decisão do Thiago, 16/09). Em modo de busca a
-    // faixa continua congelada, mas mostra SÓ a caixa: o que fica no alto tem de ser o
-    // controle que gerou a matriz — o seletor quando veio do tema, a caixa quando veio da busca.
-    const abrir = raiz.querySelector('.abrir-busca');
+    // PROTÓTIPO B: a caixa vem aberta (o link "Realizar busca" de 16/09 saiu). Quem chega por
+    // um endereço de busca vê no campo a pergunta que escreveu (`de`), não a consulta limpa.
     const caixaBusca = raiz.querySelector('.busca-na-faixa');
-    const abreBusca = (foca) => {
-      caixaBusca.hidden = false;
-      abrir.setAttribute('aria-expanded', 'true');
-      if (foca) caixaBusca.querySelector('input[name="q"]')?.focus();
-    };
-    abrir?.addEventListener('click', (ev) => {
-      ev.preventDefault();
-      if (caixaBusca.hidden) abreBusca(true);
-      else { caixaBusca.hidden = true; abrir.setAttribute('aria-expanded', 'false'); }
-    });
-    // quem chega por um endereço de busca já vê a consulta no lugar congelado
     if (consulta) {
-      abreBusca(false);
       const campoDaFaixa = caixaBusca.querySelector('input[name="q"]');
-      if (campoDaFaixa && !campoDaFaixa.value) campoDaFaixa.value = consulta;
+      if (campoDaFaixa && !campoDaFaixa.value) campoDaFaixa.value = new URLSearchParams(location.search).get('de') || consulta;
     }
 
     // Congelada, a faixa mostra SÓ o que está filtrando a matriz (Thiago, 16/09). A regra
@@ -712,7 +717,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .busca-na-faixa { order: -1; flex: 1 1 100%; min-width: 13rem;
     align-self: flex-start; display: flex; flex-wrap: wrap; }
   .comparacao .busca-na-faixa[hidden] { display: none; }
-  .comparacao .busca-na-faixa .busca-caixa { margin: 0; flex: 1 1 auto; min-width: 0; }
+  /* PROTÓTIPO B: a caixa aberta tem rótulo e perguntas de exemplo. Congelada (ou já em busca),
+     ficam só o campo e a lupa — a faixa tem de caber no que --faixa-altura promete. */
+  .comparacao .busca-na-faixa .busca-caixa label { flex: 1 1 100%; margin-bottom: .3rem; }
+  .comparacao .busca-na-faixa .busca-sugestoes { flex: 1 1 100%; order: 8; }
+  /* `.faixa-temas` a mais no seletor: o estilo da caixa é do componente dela e vem embutido
+     DEPOIS desta folha, com a mesma especificidade — empatado, ele ganhava e o rótulo ficava */
+  .comparacao.grudada .faixa-temas .busca-na-faixa label,
+  .comparacao.grudada .faixa-temas .busca-na-faixa .busca-sugestoes,
+  .comparacao.em-busca .faixa-temas .busca-na-faixa .busca-sugestoes { display: none; }
+  .comparacao .faixa-temas .busca-na-faixa .busca-caixa { margin: 0; flex: 1 1 auto; min-width: 0; }
   /* o estado da busca OCUPA espaço, não flutua. Tirá-lo do fluxo para ganhar 8px de
      alinhamento fez a mensagem cair sobre os chips de candidato (16/09); ancorá-la logo
      abaixo da caixa não bastou, porque o que está abaixo são justamente os chips. A faixa
