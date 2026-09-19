@@ -35,14 +35,18 @@ for (const e of escopos) {
   for (const tema of paginasProntas(cargo, uf)) {
     const d = comparacao(cargo, uf, tema);
     if (!d?.propostas?.length) continue;
-    const arq = join(DADOS, e.rel, `tema-${tema}.md`);
-    if (!existsSync(arq)) { falhas.push(`${e.rel}/tema-${tema}.md não existe`); continue; }
-    const t = readFileSync(arq, 'utf8');
+    // o tema pode estar num arquivo só ou dividido em partes (tema-<id>-1.md…): junta-se tudo
+    const pasta = join(DADOS, e.rel);
+    const partes = readdirSync(pasta).filter((n) => new RegExp(`^tema-${tema}(-\\d+)?\\.md$`).test(n));
+    if (!partes.length) { falhas.push(`${e.rel}/tema-${tema}.md não existe`); continue; }
+    const textos = partes.map((n) => readFileSync(join(pasta, n), 'utf8'));
+    const t = textos.join('\n');
     const ids = [...t.matchAll(/ \[([a-z0-9-]+)\/([A-Za-z0-9_-]+)\]$/gm)].map((m) => m[2]);
     const esperados = d.propostas.map((p) => p.id);
-    if (ids.length !== esperados.length || new Set(ids).size !== ids.length || esperados.some((id) => !ids.includes(id))) falhas.push(`${e.rel}/tema-${tema}.md: ${ids.length} propostas no arquivo, ${esperados.length} no dado`);
-    if (!new RegExp(`^FIM — ${esperados.length} proposta`, 'm').test(t)) falhas.push(`${e.rel}/tema-${tema}.md: a linha FIM não diz ${esperados.length}`);
-    for (const p of d.propostas) if (!t.includes(`**${p.proposta}**`)) { falhas.push(`${e.rel}/tema-${tema}.md: o texto de ${p.id} não é o do dado`); break; }
+    if (ids.length !== esperados.length || new Set(ids).size !== ids.length || esperados.some((id) => !ids.includes(id))) falhas.push(`${e.rel}/tema-${tema}: ${ids.length} propostas nos arquivos, ${esperados.length} no dado`);
+    const somaFim = textos.reduce((s, x) => s + Number(/^FIM — (\d+) proposta/m.exec(x)?.[1] ?? NaN), 0);
+    if (somaFim !== esperados.length) falhas.push(`${e.rel}/tema-${tema}: as linhas FIM somam ${somaFim}, o dado tem ${esperados.length}`);
+    for (const p of d.propostas) if (!t.includes(`**${p.proposta}**`)) { falhas.push(`${e.rel}/tema-${tema}: o texto de ${p.id} não é o do dado`); break; }
     propostas += esperados.length;
   }
   const busca = JSON.parse(readFileSync(join(RAIZ, 'data', 'busca', e.rel, 'documentos.json'), 'utf8'));
@@ -51,7 +55,7 @@ for (const e of escopos) {
   for (const [slug, n] of porSlug) {
     const partes = arquivos.filter((a) => a.startsWith(join(DADOS, e.rel, `programa-${slug}-`)));
     const soma = partes.reduce((s, a) => s + Number(/^FIM — (\d+) bloco/m.exec(readFileSync(a, 'utf8'))?.[1] ?? NaN), 0);
-    const linhas = partes.reduce((s, a) => s + (readFileSync(a, 'utf8').match(/^\([a-z_]+\) /gm) ?? []).length, 0);
+    const linhas = partes.reduce((s, a) => s + (readFileSync(a, 'utf8').match(/^\[b\d+\] \([a-z_]+\) /gm) ?? []).length, 0);
     if (soma !== n || linhas !== n) falhas.push(`${e.rel}: o programa de ${slug} tem ${n} blocos no dado, ${linhas} nos arquivos e ${soma} nas linhas FIM`);
     blocos += n;
   }
@@ -90,4 +94,6 @@ if (falhas.length) {
   for (const f of falhas.slice(0, 25)) console.error('  · ' + f);
   process.exit(1);
 }
+for (const e of escopos) if (!existsSync(join(DADOS, e.rel, 'panorama.html'))) falhas.push(`${e.rel}: sem o panorama da disputa`);
+if (falhas.length) { console.error(`FALHOU (ia): ${falhas.length} problema(s)`); for (const f of falhas.slice(0, 25)) console.error('  · ' + f); process.exit(1); }
 console.log(`OK (ia): ${escopos.length} escopos, ${arquivos.length} arquivos; ${propostas} propostas e ${blocos} blocos conferidos contra o dado; ${citados.size} endereços citados existem; nenhum arquivo acima de ${LIMITE_BYTES} bytes`);
