@@ -104,6 +104,8 @@ function escopo(cargo, uf) {
 
   let candidatos = null;
   const resumoTemas = [];
+  const indiceAssuntos = [];    // assunto -> arquivo que o contém, com as palavras que as pessoas usam
+  const sinonimos = new Map((busca.propostas ?? []).map((p) => [`${p.pagina}/${p.pid}`, p.sinonimos ?? []]));
   const panorama = [];          // por tema: cobertura, divergências explícitas, o que mais gente propõe
   let geradoEm = null;
   const tse = Object.fromEntries((busca.candidatos ?? []).map((c) => [c.slug, c.tse]));
@@ -136,7 +138,7 @@ function escopo(cargo, uf) {
         }
       }
       S.push('');
-      return { texto: S.join('\n'), n: doAssunto.length };
+      return { texto: S.join('\n'), n: doAssunto.length, assunto: a };
     });
     const partesTema = [[]];
     let pesoTema = 0;
@@ -149,6 +151,10 @@ function escopo(cargo, uf) {
     const nomeTema = (i) => `${rel}/tema-${def.id}${partesTema.length > 1 ? `-${i + 1}` : ''}.md`;
     const rodape = `O texto de cada programa, tema a tema, está no índice do candidato: ${d.candidatos.map((c) => `${BASE}/${rel}/programa-${c.slug}.md`).join(' · ')}`;
     partesTema.forEach((parte, i) => {
+      for (const s of parte) {
+        const termos = [...new Set(d.propostas.filter((p) => p.subtema === s.assunto).flatMap((p) => sinonimos.get(`${def.id}/${p.id}`) ?? []))].slice(0, 10);
+        indiceAssuntos.push({ tema: def.nome, assunto: s.assunto, n: s.n, url: `${BASE}/${nomeTema(i)}`, termos });
+      }
       const n = parte.reduce((s, x) => s + x.n, 0);
       grava(nomeTema(i), [...cabecalho(i + 1, partesTema.length, n),
         ...(partesTema.length > 1 ? [`Todas as partes: ${partesTema.map((_, j) => `${BASE}/${nomeTema(j)}`).join(' · ')}`, ''] : []),
@@ -255,9 +261,25 @@ function escopo(cargo, uf) {
   P.push(`FIM — panorama de ${UM(panorama.length, 'tema', 'temas')}.`, '');
   grava(`${rel}/panorama.md`, P.join('\n'));
 
+  // ------------------------------------------------------------ o índice de assuntos
+  // A busca sem busca. O leitor de um assistente só abre endereço que já viu escrito: ele não
+  // monta `?q=`. Então o que seria uma consulta vira um índice que ele lê e segue — cada assunto,
+  // com as palavras que as pessoas usam para ele (os sinônimos que a busca do site já confere),
+  // aponta para o arquivo exato onde está.
+  const I = [`# Índice de assuntos — ${rotulo}, 2026: onde está cada coisa`, '', REGRAS, '',
+    `Este índice tem ${UM(indiceAssuntos.length, 'assunto', 'assuntos')}. Procure a palavra da pergunta (ou uma parecida) e abra o arquivo indicado. Se a palavra não estiver aqui, o assunto pode estar dentro de outro: abra o tema mais provável antes de dizer "não localizado".`, ''];
+  let temaAtual = null;
+  for (const x of indiceAssuntos) {
+    if (x.tema !== temaAtual) { temaAtual = x.tema; I.push(`## ${x.tema}`, ''); }
+    I.push(`- **${x.assunto}** (${UM(x.n, 'proposta', 'propostas')})${x.termos.length ? ` — também: ${x.termos.join(', ')}` : ''} — ${x.url}`);
+  }
+  I.push('', `FIM — ${UM(indiceAssuntos.length, 'assunto', 'assuntos')} neste índice.`, '');
+  grava(`${rel}/assuntos.md`, I.join('\n'));
+
   // ------------------------------------------------------------ o mapa do escopo
   const M = [`# eleicoes.ai — ${rotulo}, eleições 2026: mapa dos dados`, '', REGRAS, '',
     `Pergunta geral sobre a disputa ("como os candidatos são diferentes?")? Comece pelo PANORAMA, que cabe numa leitura: ${BASE}/${rel}/panorama.md`,
+    `Pergunta sobre um assunto específico ("o que dizem sobre a escala 6x1?")? Ache o assunto no ÍNDICE e abra o arquivo que ele indica: ${BASE}/${rel}/assuntos.md`,
     `Os mesmos dados em JSON, para quem lê JSON: ${ORIGEM}/comparacao/${rel}/<tema>.json`, '',
     `## Candidatos comparados (${candidatos.length}, em ordem alfabética)`, '',
     '| candidato | partido | nº | programa no TSE (PDF) | programa em texto |', '|---|---|---|---|---|',
@@ -306,6 +328,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     ...sugestoes.map((s) => `- ${s}`), '',
     'Quando ela perguntar, abra SÓ o arquivo que responde (são pequenos) e use só o que está nele:', '',
     ...(pres ? [`- Presidente — PANORAMA da disputa (comece por aqui para pergunta geral): ${BASE}/presidente/panorama.md`,
+      `- Presidente — ÍNDICE de assuntos (para pergunta sobre um assunto específico): ${BASE}/presidente/assuntos.md`,
       `- Presidente — candidatos, PDFs no TSE e o programa de cada um: ${BASE}/presidente.md`,
       ...pres.temas_lista.map((t) => `  - ${t.nome}: ${BASE}/presidente/tema-${t.id}.md`)] : []),
     `- Governador — em cada estado, o mapa abaixo leva ao panorama, aos temas e aos programas: ${ufs.map((f) => `${f.rel.split('/')[1].toUpperCase()} ${BASE}/${f.rel}.md`).join(' · ')}`, '',
