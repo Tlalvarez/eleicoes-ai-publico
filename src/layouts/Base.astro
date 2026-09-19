@@ -39,6 +39,10 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
     <!-- lançamento público em 05/09/2026: sem noindex no layout. Só as seções
          fora do menu pedem `noindex` (prop). -->
     {noindex && <meta name="robots" content="noindex, follow" />}
+    <!-- o endereço canônico é o sem `?c=`: o filtro de candidatos vive na URL, e
+         sem isto cada combinação seria uma página a mais para o buscador. Página
+         fora dos buscadores não declara canônico. -->
+    {!noindex && <link rel="canonical" href={new URL(caminhoPublico, Astro.site ?? 'https://eleicoes.ai').toString()} />}
     <meta name="color-scheme" content="light dark" />
     <!-- ícone do site: o "e" de eleicoes sobre o azul-marinho, com a faixa da
          identidade. .ico para navegador antigo e robô, SVG para os atuais,
