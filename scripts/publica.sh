@@ -42,6 +42,11 @@ if [ "$MODO" = "producao" ]; then
   [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] || para "main local ≠ origin/main — faça o push (ou o pull) antes"
 fi
 
+# na prévia, os arquivos de /ia apontam para a própria prévia (a Pages troca por "-" o que não é letra ou número)
+if [ "$MODO" = "previa" ]; then
+  export IA_ORIGEM="https://$(echo "$RAMO" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g').$PROJETO.pages.dev"
+fi
+
 # ---------------------------------------------------------------- portões
 passo "npm test"
 npm test > .publica-teste.log 2>&1; s=$?
