@@ -85,7 +85,7 @@ const escreve = (rel, texto) => {
   return Buffer.byteLength(texto);
 };
 const UM = (n, s, p) => `${n} ${n === 1 ? s : p}`;
-const REGRAS = `> Fonte: eleicoes.ai — programas de governo registrados no TSE (eleições 2026). Use SÓ o que está nestes arquivos para falar dos programas; cite o candidato e a página do programa; não recomende voto. Estados possíveis de um candidato numa proposta: PROPÕE (há trecho), PROPÕE O CONTRÁRIO (há trecho que rejeita a mesma medida), NÃO LOCALIZADO (não achamos trecho no programa dele — NÃO é "é contra", e só diga "o programa não trata disso" depois de conferir o texto do programa no tema, até a linha FIM).`;
+const REGRAS = `> Fonte: eleicoes.ai — programas de governo registrados no TSE (eleições 2026). Use SÓ o que está nestes arquivos para falar dos programas; cite o candidato e a página do programa; não recomende voto. Estados possíveis de um candidato numa proposta: PROPÕE (há trecho), PROPÕE O CONTRÁRIO (há trecho que rejeita a mesma medida), NÃO LOCALIZADO (não achamos trecho no programa dele NESTE tema — não é "é contra", e não é prova de que o programa não trata do assunto: o trecho pode estar classificado em outro tema; procure no índice de assuntos e no texto do programa antes de afirmar ausência, e prefira dizer "não localizei").`;
 
 function escopo(cargo, uf) {
   const rel = uf ? `${cargo}/${uf}` : cargo;
@@ -247,7 +247,7 @@ function escopo(cargo, uf) {
     `Dados gerados em ${geradoEm ?? 'data não registrada'}. Candidatos comparados (${candidatos.length}): ${candidatos.map((c) => `${c.nome} (${c.partido})`).join(', ')}.`,
     ...(criterio ? [`Critério de inclusão: até ${criterio.corte ?? 6} candidatos com pelo menos ${criterio.minimo_pct ?? 1}% na pesquisa ${criterio.instituto ?? ''}${criterio.registro ? `, registro ${criterio.registro} no TSE` : ''}${criterio.campo_inicio ? `, campo de ${criterio.campo_inicio} a ${criterio.campo_fim}` : ''}; fica fora quem teve o registro indeferido ou não registrou programa.`,
       ...((criterio.fora ?? []).length ? [`Fora da comparação: ${criterio.fora.map((x) => `${x.nome} — ${x.motivo}`).join('; ')}.`] : [])] : []),
-    '', 'Limites: este panorama mostra TODAS as posições contrárias explícitas e só as cinco propostas com mais candidatos por tema; a lista inteira está no arquivo de cada tema. "0 blocos" quer dizer que o programa não tem texto classificado naquele tema; blocos sem proposta quer dizer que há texto (diagnóstico, por exemplo) e nenhum compromisso extraído.', ''];
+    '', 'Limites: este panorama mostra TODAS as posições contrárias explícitas e só as cinco propostas com mais candidatos por tema; a lista inteira está no arquivo de cada tema. "0 propostas" ou "0 blocos" descreve o que foi extraído e classificado NESTE tema, não o programa inteiro: o mesmo assunto pode estar em outro tema. A associação de um candidato a uma proposta também pode FALTAR (o trecho existe e não foi ligado): ausência aqui é "não localizado", nunca "o programa não trata".', ''];
   for (const x of panorama) {
     P.push(`## ${x.def.nome} — ${BASE}/${rel}/tema-${x.def.id}.md`, '',
       `Cobertura (propostas / blocos de texto do programa no tema): ${candidatos.map((c) => `${c.nome} ${resumoTemas.find((r) => r.id === x.def.id)?.porCandidato[c.slug] ?? 0}/${cobertura[c.slug]?.[x.def.id] ?? 0}`).join(' · ')}`,
@@ -287,7 +287,10 @@ function escopo(cargo, uf) {
     `## Temas (${resumoTemas.length})`, '',
     `| tema | propostas | ${candidatos.map((c) => c.nome).join(' | ')} | comparação |`, `|---|---|${candidatos.map(() => '---').join('|')}|---|`,
     ...resumoTemas.map((t) => `| ${t.nome} | ${t.n} | ${candidatos.map((c) => t.porCandidato[c.slug]).join(' | ')} | ${BASE}/${rel}/tema-${t.id}.md |`), '',
-    'Os números por candidato são quantas propostas do tema o programa dele traz. Zero é silêncio do programa naquele tema.', '',
+    // 18/09: a segunda auditoria do ChatGPT pegou a frase que estava aqui ("zero é silêncio do programa"):
+    // Renan Santos tem zero em Trabalho e previdência, e o programa dele propõe desindexar benefícios
+    // previdenciários do salário mínimo — o trecho (b135, p. 10) está classificado em Economia.
+    'Os números por candidato são quantas propostas FORAM EXTRAÍDAS do programa dele NESTE tema. Zero NÃO quer dizer que o programa não trata do assunto: o trecho pode estar classificado em outro tema (previdência aparece em Economia, por exemplo). Antes de afirmar ausência, procure o assunto no índice de assuntos e no texto do programa.', '',
     `FIM — ${UM(candidatos.length, 'candidato', 'candidatos')}, ${UM(resumoTemas.length, 'tema', 'temas')}.`, ''];
   grava(`${rel}.md`, M.join('\n'));
   return { rel, rotulo, candidatos: candidatos.length, temas: resumoTemas.length, temas_lista: resumoTemas.map(({ id, nome }) => ({ id, nome })), arquivos, bytes, maior };
