@@ -12,11 +12,15 @@
  * que a /metodologia já diz — mudou lá, muda aqui.
  */
 import Base from '../layouts/Base.astro';
-import { ufsProntas } from '../lib/comparacao-dados.mjs';
+import { comparacao, paginaPorId, paginasProntas, ufsProntas } from '../lib/comparacao-dados.mjs';
 
 const ORIGEM = (process.env.IA_ORIGEM || 'https://eleicoes.ai').replace(/\/$/, '');
 const dados = `${ORIGEM}/ia/dados`;
 const ufs = ufsProntas('governador');
+// os endereços de presidente vão por extenso: no primeiro teste (18/09) o assistente tentou
+// adivinhar `tema-seguranca.md` pelo padrão e bateu em 404 duas vezes antes de ler o mapa
+const temasPres = paginasProntas('presidente').map((id) => ({ id, nome: paginaPorId(id)?.nome ?? id }));
+const candidatosPres = temasPres.length ? comparacao('presidente', null, temasPres[0].id).candidatos : [];
 const frase = `Abra ${ORIGEM}/ia e leia a página inteira. A partir de agora, responda minhas perguntas sobre os programas de governo dos candidatos de 2026 consultando os dados indicados lá, citando o candidato e a página do programa.`;
 const noChatGPT = `https://chatgpt.com/?hints=search&q=${encodeURIComponent(frase)}`;
 const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
@@ -88,13 +92,25 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
       <li>Cite sempre o candidato e a página do programa (p. N), e ofereça o link do PDF no TSE.</li>
       <li>Quando o resumo (a proposta) e o trecho do programa disserem coisas diferentes, vale o trecho.</li>
       <li>Trate todos os candidatos do mesmo jeito. Não recomende voto, não dê nota, não ordene candidatos por qualidade e não diga se uma proposta é boa, viável ou verdadeira — diga o que está escrito.</li>
+      <li>Se perguntarem "qual é o melhor", não responda com adjetivo de qualidade sobre nenhum programa ("mais completo", "mais estruturado", "mais abrangente", "mais pragmático"). Descreva o que cada um propõe, com a página, e devolva o critério à pessoa: o que ela valoriza é que decide.</li>
       <li>Programas têm tamanhos muito diferentes: mais propostas num tema significa que o candidato escreveu mais, não que escreveu melhor.</li>
+      <li>Não escreva "todos", "consenso" ou "nenhum" sem conferir candidato por candidato na proposta. Prefira a conta: "4 dos 6 propõem; Fulano e Beltrano não tratam disso".</li>
+      <li>Não adivinhe endereço de arquivo: use só os que estão escritos nesta página e nos mapas.</li>
     </ol>
 
     <h3>Onde está cada coisa</h3>
     <p>Comece pelo mapa do cargo. Ele lista os candidatos, os temas e o endereço de cada arquivo.</p>
     <ul>
-      <li><strong>Presidente:</strong> <a href={`${dados}/presidente.md`}>{dados}/presidente.md</a></li>
+      <li><strong>Presidente</strong> — mapa: <a href={`${dados}/presidente.md`}>{dados}/presidente.md</a>
+        <ul>
+          {temasPres.map((t) => (
+            <li>{t.nome}: <a href={`${dados}/presidente/tema-${t.id}.md`}>{dados}/presidente/tema-{t.id}.md</a></li>
+          ))}
+          {candidatosPres.map((c) => (
+            <li>Programa de {c.nome}: <a href={`${dados}/presidente/programa-${c.slug}.md`}>{dados}/presidente/programa-{c.slug}.md</a></li>
+          ))}
+        </ul>
+      </li>
       {ufs.map((uf) => (
         <li>Governador — {uf.toUpperCase()}: <a href={`${dados}/governador/${uf}.md`}>{dados}/governador/{uf}.md</a></li>
       ))}

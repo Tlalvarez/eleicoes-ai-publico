@@ -61,6 +61,7 @@ function escopo(cargo, uf) {
 
   let candidatos = null;
   const resumoTemas = [];
+  const tse = Object.fromEntries((busca.candidatos ?? []).map((c) => [c.slug, c.tse]));
   // ------------------------------------------------------------ a comparação, tema a tema
   for (const def of defs) {
     const d = comparacao(cargo, uf, def.id);
@@ -70,7 +71,8 @@ function escopo(cargo, uf) {
     const L = [`# ${def.nome} — o que cada programa propõe (${rotulo}, 2026)`, '', REGRAS, '',
       `Este arquivo tem ${UM(d.propostas.length, 'proposta', 'propostas')} em ${UM(assuntos.length, 'assunto', 'assuntos')}. Candidatos comparados: ${d.candidatos.map((c) => c.nome).join(', ')}.`,
       `"Propõe" = o programa do candidato traz a proposta. "Propõe o contrário" = o programa traz proposta oposta. Candidato que não aparece numa proposta NÃO tratou dela no programa — isso é silêncio, não discordância.`,
-      `Ver na tela: ${paginaDoSite(def.id)}`, ''];
+      `Ver na tela: ${paginaDoSite(def.id)}`,
+      `Programa de cada candidato no TSE (PDF): ${d.candidatos.map((c) => `${c.nome} ${tse[c.slug] ?? ''}`).join(' · ')}`, ''];
     for (const a of assuntos) {
       L.push(`## ${a}`, '');
       for (const p of d.propostas.filter((x) => x.subtema === a)) {
@@ -92,7 +94,6 @@ function escopo(cargo, uf) {
   if (!candidatos) return null;
 
   // ------------------------------------------------------------ o texto dos programas, por tema
-  const tse = Object.fromEntries((busca.candidatos ?? []).map((c) => [c.slug, c.tse]));
   for (const c of candidatos) {
     const blocos = busca.blocos.filter((b) => b.slug === c.slug).sort((a, b) => Number(a.n) - Number(b.n));
     const grupos = new Map();
@@ -122,6 +123,12 @@ function escopo(cargo, uf) {
       }
       const nomeDaParte = (i) => `${rel}/programa-${c.slug}-${def.id}${partes.length > 1 ? `-${i + 1}` : ''}.md`;
       indice.push(`| ${def.nome} | ${g.length} | ${Math.min(...pags)}–${Math.max(...pags)} | ${nProp} | ${partes.map((_, i) => `${BASE}/${nomeDaParte(i)}`).join(' · ')} |`);
+      if (partes.length > 1) {
+        grava(`${rel}/programa-${c.slug}-${def.id}.md`, [`# ${c.nome} — texto do programa sobre ${def.nome} (${rotulo}, 2026)`, '', REGRAS, '',
+          `Este texto é longo e está em ${partes.length} partes. Leia todas antes de concluir que o programa não trata de um assunto:`,
+          ...partes.map((_, i) => `- parte ${i + 1}: ${BASE}/${nomeDaParte(i)}`), '',
+          `FIM — 0 blocos neste arquivo: ele só aponta para as ${partes.length} partes.`, ''].join('\n'));
+      }
       partes.forEach((parte, i) => {
         const deQuantas = partes.length > 1 ? ` — parte ${i + 1} de ${partes.length}` : '';
         const T = [`# ${c.nome} — texto do programa sobre ${def.nome}${deQuantas} (${rotulo}, 2026)`, '', REGRAS, '',
