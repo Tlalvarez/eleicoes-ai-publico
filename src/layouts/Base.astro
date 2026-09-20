@@ -43,6 +43,10 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
          sem isto cada combinação seria uma página a mais para o buscador. Página
          fora dos buscadores não declara canônico. -->
     {!noindex && <link rel="canonical" href={new URL(caminhoPublico, Astro.site ?? 'https://eleicoes.ai').toString()} />}
+    <!-- Google Search Console (19/09/2026). A propriedade é por prefixo de URL, e a verificação é esta
+         meta: se ela sair do HTML, o Google descadastra o site. Não é rastreamento e não vai a lugar nenhum:
+         é uma chave pública que só prova a posse do domínio. -->
+    <meta name="google-site-verification" content="rarBMgTuzdzkUDoQdhyaqdNzn6p0bPMyhdiCyCCdh0s" />
     <!-- para o assistente de IA que abrir o site: o cartão de visita em texto (ver functions/index.js) -->
     <link rel="alternate" type="text/markdown" href="/llms.txt" title="eleicoes.ai para assistentes de IA" />
     <meta name="color-scheme" content="light dark" />
