@@ -42,14 +42,14 @@ test('cada proposta aparece no layout, e só mais de uma vez quando os candidato
   assert.equal(L.n, 5);
 });
 
-test('candidatos não adjacentes: um cartão só, lacuna tracejada, texto no primeiro trecho e "Concorda" nos outros', () => {
+test('candidatos não adjacentes: um cartão só, lacuna tracejada, texto no primeiro trecho e "Também propõe" nos outros', () => {
   const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const p3 = L.linhas.filter((l) => l.id === 'p3');   // a e c propõem, b no meio não fala do assunto
   assert.deepEqual(p3.map((c) => [c.chave, c.ini, c.largura, c.colunas, c.lacuna, c.a, c.b]),
     [['p3@0', 0, 3, ['concorda ini fim', 'fora', 'concorda ini fim rep rotulo'], true, 0, 0]]);
   const p5 = L.linhas.filter((l) => l.id === 'p5');   // todos: um cartão só, de ponta a ponta, sem lacuna
   assert.deepEqual(p5.map((c) => [c.ini, c.largura, c.lacuna]), [[0, 5, undefined]]);
-  // trecho de dois candidatos depois da lacuna: "Concorda" uma vez só
+  // trecho de dois candidatos depois da lacuna: "Também propõe" uma vez só
   const L2 = layout([p('y', { a: ok(), d: ok(), e: ok() }, 's')], ORDEM, 'concordancia');
   assert.deepEqual(L2.linhas.filter((l) => l.id === 'y')[0].colunas,
     ['concorda ini fim', 'fora', 'fora', 'concorda ini rep rotulo', 'concorda fim rep']);
@@ -255,6 +255,20 @@ test('lista de contestações vazia não acende selo, e a proposta de um candida
   assert.equal(vazia[0].contestada, undefined);
   const naPilha = cartoesDoLayout(layout([{ ...PROPOSTAS[0], contestacoes: ['2026-09-16-9'] }], ORDEM));
   assert.deepEqual(naPilha.map((c) => c.contestada), [['2026-09-16-9']], 'na pilha o selo também acende');
+});
+
+test('C4: posição contrária de quem está na seleção não some quando quem propõe sai', () => {
+  // p4: b propõe, d propõe o contrário
+  const ids = (sel) => layout(PROPOSTAS, sel, 'assunto').linhas.flatMap((l) => (l.tipo === 'cartao' ? [l.id] : l.tipo === 'pilhas' ? l.pilhas.flat().map((c) => c.id) : []));
+  assert.ok(ids(['b', 'd']).includes('p4'), 'os dois na tela');
+  assert.ok(ids(['d']).includes('p4'), 'só quem é contra: o cartão fica');
+  assert.ok(ids(['a', 'd']).includes('p4'), 'quem é contra e um terceiro: o cartão fica');
+  assert.ok(!ids(['a', 'c']).includes('p4'), 'ninguém da seleção se posiciona: o cartão sai');
+  const soD = layout(PROPOSTAS, ['d'], 'assunto');
+  const c = soD.linhas.find((l) => l.id === 'p4');
+  assert.deepEqual([c.colunas, c.nConcorda, c.comContra], [['contra'], 0, true]);
+  // a contagem é de propostas FEITAS por alguém da seleção: d faz p5 e p6; p4 é só posição contrária
+  assert.equal(soD.total, 2);
 });
 
 test('ordem dos assuntos: por interesse sobe a divergência e o encontro; a lista manda quando é dada', () => {

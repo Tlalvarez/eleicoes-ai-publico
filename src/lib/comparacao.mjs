@@ -152,8 +152,12 @@ export function ordena(propostas, ordem) {
 
 /**
  * O layout para as colunas `ordem` (os candidatos SELECIONADOS, na ordem das
- * colunas). Uma proposta só aparece se ao menos um selecionado a faz;
- * quem está fora da seleção não conta nem como faixa nem como contrário.
+ * colunas). Uma proposta aparece se ao menos um selecionado tem POSIÇÃO EXPLÍCITA
+ * nela — propõe, ou propõe o contrário (C4, 18/09: antes só contava quem propõe, e
+ * com "só Lula" na tela sumia a defesa das cotas, que é posição escrita no programa
+ * dele, porque quem propõe abolir tinha saído da seleção). Quem está fora da seleção
+ * não conta nem como faixa nem como contrário. `total` continua contando propostas
+ * FEITAS por alguém da seleção: posição contrária não é proposta.
  *
  * Devolve linhas, na ordem da página (do que todos propõem ao que só um propõe):
  *   { tipo: 'secao', rotulo }                          quantos candidatos propõem
@@ -174,7 +178,7 @@ export function modoDaUrl(param) {
 export function layout(propostas, ordem, modo = 'assunto', opcoes = {}) {
   const idx = Object.fromEntries(ordem.map((s, i) => [s, i]));
   const n = ordem.length;
-  const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0), ordem);
+  const visiveis = ordena(propostas.filter((p) => quem(p, ordem).length > 0 || contra(p, ordem).length > 0), ordem);
   if (modo === 'assunto') return porAssunto(visiveis, ordem, idx, n, opcoes.assuntos);
   const linhas = [];
   let secao = 0;
@@ -200,7 +204,7 @@ export function layout(propostas, ordem, modo = 'assunto', opcoes = {}) {
       if (pilhas.some((x) => x.length)) linhas.push({ tipo: 'pilhas', pilhas });
     }
   }
-  return { n, linhas, total: visiveis.length };
+  return { n, linhas, total: visiveis.filter((p) => quem(p, ordem).length > 0).length };
 }
 
 /** Quantas propostas cada candidato faz (concorda) e quantas são só dele. */
@@ -285,5 +289,5 @@ function porAssunto(visiveis, ordem, idx, n, criterio) {
       .map((p) => cartao(p, ordem, idx, i, 1)));
     if (pilhas.some((x) => x.length)) linhas.push({ tipo: 'pilhas', pilhas });
   }
-  return { n, linhas, total: visiveis.length };
+  return { n, linhas, total: visiveis.filter((p) => quem(p, ordem).length > 0).length };
 }

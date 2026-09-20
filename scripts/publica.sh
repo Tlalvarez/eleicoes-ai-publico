@@ -13,7 +13,8 @@
 #   3. publica;
 #   4. confere o que a BORDA entrega, não o arquivo: a CSP ficou fora do ar sem
 #      ninguém ver porque o portão lia o dist, e a Pages descartava o cabeçalho;
-#   5. uma linha em PUBLICACOES.md — o que estava no ar em cada dia é pergunta que a
+#   5. avisa o IndexNow do que mudou, para o índice do Bing (o que o ChatGPT consulta) acompanhar;
+#   6. uma linha em PUBLICACOES.md — o que estava no ar em cada dia é pergunta que a
 #      seção Correções vai fazer.
 #
 # Decide sempre pelo código de saída do próprio comando, nunca por grep na saída.
@@ -40,6 +41,11 @@ if [ "$MODO" = "producao" ]; then
   [ "$RAMO" = "main" ] || para "produção sai do main; você está em '$RAMO' (use \`npm run previa\` para ver este ramo)"
   git fetch -q origin main || para "não consegui consultar o origin"
   [ "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)" ] || para "main local ≠ origin/main — faça o push (ou o pull) antes"
+fi
+
+# na prévia, os arquivos de /ia apontam para a própria prévia (a Pages troca por "-" o que não é letra ou número)
+if [ "$MODO" = "previa" ]; then
+  export IA_ORIGEM="https://$(echo "$RAMO" | tr '[:upper:]' '[:lower:]' | sed -E 's/[^a-z0-9]+/-/g').$PROJETO.pages.dev"
 fi
 
 # ---------------------------------------------------------------- portões
@@ -117,6 +123,12 @@ RESULTADO="ok"; [ $falhas -eq 0 ] || RESULTADO="$falhas falha(s) na conferência
 [ -f PUBLICACOES.md ] || printf '# Publicações\n\nUma linha por publicação em produção, escrita por `scripts/publica.sh`.\n\n| quando (UTC) | commit | o que mudou | conferência no ar |\n|---|---|---|---|\n' > PUBLICACOES.md
 printf '| %s | %s | %s | %s |\n' "$(date -u '+%Y-%m-%d %H:%M')" "$SHA" "$(git log -1 --format=%s | tr '|' '/')" "$RESULTADO" >> PUBLICACOES.md
 git add PUBLICACOES.md && git commit -q -m "publicação: $SHA no ar ($RESULTADO)" && git push -q origin main
+
+# 6. avisa o IndexNow (Bing, e daí o ChatGPT) do que mudou. Estar no índice é o que permite ao
+#    assistente andar sozinho pelo acervo: o leitor ao vivo dele só abre endereço vindo da pessoa
+#    ou de uma busca. Nunca derruba a publicação — o site já está no ar.
+passo "avisando o IndexNow"
+node scripts/avisa-indexnow.mjs "${ULTIMO:-}" || true
 
 if [ $falhas -ne 0 ]; then
   echo; echo "NO AR, MAS COM $falhas FALHA(S). Para voltar ao estado anterior:"
