@@ -13,3 +13,4 @@ Uma linha por publicação em produção, escrita por `scripts/publica.sh`.
 | 2026-09-20 05:07 | 28b8693 | Merge branch 'sinonimos-no-cartao-certo' | ok |
 | 2026-09-20 07:34 | 0d2dada | Merge branch 'proto-b' | ok |
 | 2026-09-20 08:01 | 028338a | Merge branches 'menu-chatgpt-claude' and 'ia-dados-indexaveis' | 1 falha(s) na conferência |
+| 2026-09-20 08:01 | 9a3a2bd | publicação: 028338a no ar (1 falha(s) na conferência) | 1 falha(s) na conferência |
