@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "assistencia-social-6.json",
   "gerado_em": "2026-09-14T07:04:46Z",
-  "exportado_em": "2026-09-16T06:21:23Z"
+  "exportado_em": "2026-09-20T04:49:29Z"
  },
  "candidatos": [
   {
@@ -282,7 +282,7 @@
   {
    "id": "p10",
    "subtema": "Porta de saída e inclusão produtiva",
-   "proposta": "Articular a proteção social a qualificação profissional, intermediação de mão de obra e inclusão produtiva, como caminho de saída da pobreza",
+   "proposta": "Articular a proteção social a qualificação profissional e inclusão produtiva, como caminho de saída da pobreza",
    "n_concorda": 4,
    "posicoes": {
     "romeu-zema": {
@@ -327,7 +327,7 @@
   {
    "id": "p11",
    "subtema": "Porta de saída e inclusão produtiva",
-   "proposta": "Oferecer a cada família em alta vulnerabilidade um diagnóstico individualizado, plano de desenvolvimento e acompanhamento por equipe de referência",
+   "proposta": "Oferecer a cada família em alta vulnerabilidade um diagnóstico individualizado e um plano de desenvolvimento",
    "n_concorda": 2,
    "posicoes": {
     "romeu-zema": {
@@ -462,7 +462,7 @@
   {
    "id": "p19",
    "subtema": "Fome e segurança alimentar",
-   "proposta": "Fortalecer equipamentos públicos de alimentação, como restaurantes populares, cozinhas comunitárias e bancos de alimentos",
+   "proposta": "Fortalecer equipamentos públicos de alimentação, como restaurantes populares e cozinhas comunitárias",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
@@ -635,7 +635,7 @@
   {
    "id": "p28",
    "subtema": "Política de cuidados",
-   "proposta": "Garantir cuidado infantil articulado à proteção social e à autonomia das mulheres.",
+   "proposta": "Garantir cuidado infantil articulado à proteção social.",
    "n_concorda": 2,
    "posicoes": {
     "lula": {
@@ -736,12 +736,21 @@
    "id": "p34",
    "subtema": "Cadastros, gestão e fraudes",
    "proposta": "Manter os programas sociais existentes, aperfeiçoando a gestão, corrigindo distorções e combatendo fraudes.",
-   "n_concorda": 1,
+   "n_concorda": 2,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       685
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      274,
+      275,
+      1381
      ],
      "nota": ""
     }
@@ -793,6 +802,143 @@
       123
      ],
      "nota": ""
+    }
+   },
+   "derivada_de": "p28"
+  },
+  {
+   "id": "p39",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Integrar a transferência de renda a qualificação, inclusão produtiva, trabalho, moradia, cuidado, saúde e educação, para romper ciclos de pobreza.",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      23,
+      123,
+      1368
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p40",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Ampliar programas de inclusão produtiva e associar os programas sociais a capacitação e oportunidades de ascensão, promovendo autonomia das famílias vulneráveis.",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      200,
+      904
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p41",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Articular a proteção social a qualificação profissional, intermediação de mão de obra e inclusão produtiva, como caminho de saída da pobreza",
+   "n_concorda": 1,
+   "posicoes": {
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      295,
+      691,
+      692
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p10"
+  },
+  {
+   "id": "p42",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Oferecer a cada família em situação de vulnerabilidade um Plano de Desenvolvimento Social familiar, construído a partir de diagnóstico individualizado, com ações de capacitação, trabalho, renda, moradia e acesso a serviços sociais.",
+   "n_concorda": 1,
+   "posicoes": {
+    "romeu-zema": {
+     "posicao": "concorda",
+     "blocos": [
+      760,
+      764,
+      768,
+      769
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p43",
+   "subtema": "Porta de saída e inclusão produtiva",
+   "proposta": "Oferecer a cada família em alta vulnerabilidade um diagnóstico individualizado, plano de desenvolvimento e acompanhamento por equipe de referência",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1379
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p11"
+  },
+  {
+   "id": "p44",
+   "subtema": "Fome e segurança alimentar",
+   "proposta": "Fomentar infraestruturas de cuidado comunitário, como lavanderias públicas, cozinhas solidárias e restaurantes populares.",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      215
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p45",
+   "subtema": "Fome e segurança alimentar",
+   "proposta": "Fortalecer equipamentos públicos de alimentação, como restaurantes populares, cozinhas comunitárias e bancos de alimentos",
+   "n_concorda": 1,
+   "posicoes": {
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      1392
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p19"
+  },
+  {
+   "id": "p47",
+   "subtema": "Política de cuidados",
+   "proposta": "Garantir cuidado infantil articulado à proteção social e à autonomia das mulheres.",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      211,
+      215
+     ],
+     "nota": "Implementação e escala da Política Nacional de Cuidados"
     }
    },
    "derivada_de": "p28"

@@ -1,293 +1,293 @@
 {
-  "_": "Consultas de gente comum e as propostas que deveriam aparecer (ids <pagina>/<id> de data/busca/presidente/documentos.json). Julgado à mão em 13/09/2026 lendo as propostas; 'blocos' são trechos esperados quando não há proposta. recall@10 = esperados encontrados entre os 10 primeiros / esperados.",
-  "consultas": [
-    {
-      "q": "escala 6x1",
-      "propostas": [
-        "trabalho-previdencia/p19"
-      ]
-    },
-    {
-      "q": "fim da jornada de seis dias por um de folga",
-      "propostas": [
-        "trabalho-previdencia/p19"
-      ]
-    },
-    {
-      "q": "dívida pública",
-      "propostas": [
-        "economia/p1"
-      ]
-    },
-    {
-      "q": "o que fazer com a dívida do governo",
-      "propostas": [
-        "economia/p1"
-      ]
-    },
-    {
-      "q": "juros altos",
-      "propostas": [
-        "economia/p30",
-        "economia/p31"
-      ]
-    },
-    {
-      "q": "imposto de renda",
-      "propostas": [
-        "economia/p23"
-      ]
-    },
-    {
-      "q": "porte de arma",
-      "propostas": [
-        "seguranca-justica/p78",
-        "seguranca-justica/p77"
-      ]
-    },
-    {
-      "q": "armamento da população",
-      "propostas": [
-        "seguranca-justica/p77",
-        "seguranca-justica/p78"
-      ]
-    },
-    {
-      "q": "facções criminosas como terroristas",
-      "propostas": [
-        "seguranca-justica/p3"
-      ]
-    },
-    {
-      "q": "crime organizado",
-      "propostas": [
-        "seguranca-justica/p89",
-        "seguranca-justica/p1",
-        "seguranca-justica/p2",
-        "seguranca-justica/p4"
-      ]
-    },
-    {
-      "q": "creche",
-      "propostas": [
-        "educacao/p4",
-        "educacao/p5",
-        "educacao/p70"
-      ]
-    },
-    {
-      "q": "vaga na creche para o meu filho",
-      "propostas": [
-        "educacao/p4",
-        "educacao/p5"
-      ]
-    },
-    {
-      "q": "bolsa família",
-      "propostas": [
-        "assistencia-social/p1",
-        "assistencia-social/p2",
-        "assistencia-social/p4"
-      ]
-    },
-    {
-      "q": "reforma agrária",
-      "propostas": [
-        "agricultura/p11",
-        "agricultura/p12"
-      ]
-    },
-    {
-      "q": "desmatamento",
-      "propostas": [
-        "ambiente-energia/p14",
-        "ambiente-energia/p15"
-      ]
-    },
-    {
-      "q": "privatizar a Petrobras",
-      "propostas": [
-        "ambiente-energia/p57",
-        "economia/p53"
-      ]
-    },
-    {
-      "q": "homeschooling",
-      "propostas": [
-        "educacao/p46"
-      ]
-    },
-    {
-      "q": "ensino em casa pelos pais",
-      "propostas": [
-        "educacao/p46"
-      ]
-    },
-    {
-      "q": "fake news",
-      "propostas": [
-        "liberdade-expressao-digital/p12",
-        "liberdade-expressao-digital/p24"
-      ]
-    },
-    {
-      "q": "regulação das redes sociais",
-      "propostas": [
-        "liberdade-expressao-digital/p1"
-      ]
-    },
-    {
-      "q": "foro privilegiado no STF",
-      "propostas": [
-        "seguranca-justica/p51",
-        "seguranca-justica/p50"
-      ]
-    },
-    {
-      "q": "bets",
-      "propostas": [
-        "liberdade-expressao-digital/p20",
-        "liberdade-expressao-digital/p21",
-        "saude/p26"
-      ]
-    },
-    {
-      "q": "LGBT",
-      "propostas": [
-        "direitos/p52"
-      ]
-    },
-    {
-      "q": "cotas para negros",
-      "propostas": [
-        "direitos/p41"
-      ]
-    },
-    {
-      "q": "demarcação de terras indígenas",
-      "propostas": [
-        "direitos/p36"
-      ]
-    },
-    {
-      "q": "Minha Casa Minha Vida",
-      "propostas": [
-        "infraestrutura-cidades/p38",
-        "infraestrutura-cidades/p37"
-      ]
-    },
-    {
-      "q": "Nordeste",
-      "propostas": [
-        "infraestrutura-cidades/p71",
-        "infraestrutura-cidades/p72"
-      ]
-    },
-    {
-      "q": "transposição do São Francisco",
-      "propostas": [
-        "infraestrutura-cidades/p72"
-      ]
-    },
-    {
-      "q": "energia eólica e solar",
-      "propostas": [
-        "ambiente-energia/p42"
-      ]
-    },
-    {
-      "q": "hidrogênio verde",
-      "propostas": [
-        "ambiente-energia/p43"
-      ]
-    },
-    {
-      "q": "inteligência artificial na saúde",
-      "propostas": [
-        "saude/p3"
-      ]
-    },
-    {
-      "q": "turismo",
-      "propostas": [
-        "cultura-esporte/p20",
-        "cultura-esporte/p21"
-      ]
-    },
-    {
-      "q": "pesca artesanal",
-      "propostas": [
-        "agricultura/p81"
-      ]
-    },
-    {
-      "q": "Mercosul",
-      "propostas": [
-        "exterior-defesa/p25",
-        "exterior-defesa/p24"
-      ]
-    },
-    {
-      "q": "vacinação",
-      "propostas": [
-        "saude/p48",
-        "saude/p49",
-        "saude/p36"
-      ]
-    },
-    {
-      "q": "fila do SUS",
-      "propostas": [
-        "saude/p14",
-        "saude/p45",
-        "saude/p18"
-      ]
-    },
-    {
-      "q": "aumento do salário mínimo",
-      "propostas": [
-        "trabalho-previdencia/p13"
-      ]
-    },
-    {
-      "q": "salário dos professores",
-      "propostas": [
-        "educacao/p30"
-      ]
-    },
-    {
-      "q": "método fônico",
-      "propostas": [
-        "educacao/p2"
-      ]
-    },
-    {
-      "q": "autismo",
-      "propostas": [
-        "direitos/p34",
-        "educacao/p62",
-        "saude/p25"
-      ]
-    },
-    {
-      "q": "saneamento básico",
-      "propostas": [
-        "infraestrutura-cidades/p29"
-      ]
-    },
-    {
-      "q": "pix",
-      "propostas": [],
-      "blocos": [
-        "flavio-bolsonaro/466"
-      ]
-    },
-    {
-      "q": "aborto",
-      "propostas": [],
-      "blocos": [],
-      "vazio": true,
-      "_": "o corpus não fala de aborto; 'direitos sexuais e reprodutivos' (direitos/p29) pode aparecer, mas como próxima, nunca como direta"
-    }
-  ]
+ "_": "Consultas de gente comum e as propostas que deveriam aparecer (ids <pagina>/<id> de data/busca/presidente/documentos.json). Julgado à mão em 13/09/2026 lendo as propostas; 'blocos' são trechos esperados quando não há proposta. recall@10 = esperados encontrados entre os 10 primeiros / esperados. Em 19/09/2026 o juiz de cartões repetidos (v3/rele_duplicatas.py) juntou pares que diziam a mesma promessa: economia/p1 passou a ser economia/p71 e saude/p36 passou a ser saude/p127. O julgamento à mão não muda — o mesmo compromisso está no cartão que ficou, com outro id.",
+ "consultas": [
+  {
+   "q": "escala 6x1",
+   "propostas": [
+    "trabalho-previdencia/p19"
+   ]
+  },
+  {
+   "q": "fim da jornada de seis dias por um de folga",
+   "propostas": [
+    "trabalho-previdencia/p19"
+   ]
+  },
+  {
+   "q": "dívida pública",
+   "propostas": [
+    "economia/p71"
+   ]
+  },
+  {
+   "q": "o que fazer com a dívida do governo",
+   "propostas": [
+    "economia/p71"
+   ]
+  },
+  {
+   "q": "juros altos",
+   "propostas": [
+    "economia/p30",
+    "economia/p31"
+   ]
+  },
+  {
+   "q": "imposto de renda",
+   "propostas": [
+    "economia/p23"
+   ]
+  },
+  {
+   "q": "porte de arma",
+   "propostas": [
+    "seguranca-justica/p78",
+    "seguranca-justica/p77"
+   ]
+  },
+  {
+   "q": "armamento da população",
+   "propostas": [
+    "seguranca-justica/p77",
+    "seguranca-justica/p78"
+   ]
+  },
+  {
+   "q": "facções criminosas como terroristas",
+   "propostas": [
+    "seguranca-justica/p3"
+   ]
+  },
+  {
+   "q": "crime organizado",
+   "propostas": [
+    "seguranca-justica/p89",
+    "seguranca-justica/p1",
+    "seguranca-justica/p2",
+    "seguranca-justica/p4"
+   ]
+  },
+  {
+   "q": "creche",
+   "propostas": [
+    "educacao/p4",
+    "educacao/p5",
+    "educacao/p70"
+   ]
+  },
+  {
+   "q": "vaga na creche para o meu filho",
+   "propostas": [
+    "educacao/p4",
+    "educacao/p5"
+   ]
+  },
+  {
+   "q": "bolsa família",
+   "propostas": [
+    "assistencia-social/p1",
+    "assistencia-social/p2",
+    "assistencia-social/p4"
+   ]
+  },
+  {
+   "q": "reforma agrária",
+   "propostas": [
+    "agricultura/p11",
+    "agricultura/p12"
+   ]
+  },
+  {
+   "q": "desmatamento",
+   "propostas": [
+    "ambiente-energia/p14",
+    "ambiente-energia/p15"
+   ]
+  },
+  {
+   "q": "privatizar a Petrobras",
+   "propostas": [
+    "ambiente-energia/p57",
+    "economia/p53"
+   ]
+  },
+  {
+   "q": "homeschooling",
+   "propostas": [
+    "educacao/p46"
+   ]
+  },
+  {
+   "q": "ensino em casa pelos pais",
+   "propostas": [
+    "educacao/p46"
+   ]
+  },
+  {
+   "q": "fake news",
+   "propostas": [
+    "liberdade-expressao-digital/p12",
+    "liberdade-expressao-digital/p24"
+   ]
+  },
+  {
+   "q": "regulação das redes sociais",
+   "propostas": [
+    "liberdade-expressao-digital/p1"
+   ]
+  },
+  {
+   "q": "foro privilegiado no STF",
+   "propostas": [
+    "seguranca-justica/p51",
+    "seguranca-justica/p50"
+   ]
+  },
+  {
+   "q": "bets",
+   "propostas": [
+    "liberdade-expressao-digital/p20",
+    "liberdade-expressao-digital/p21",
+    "saude/p26"
+   ]
+  },
+  {
+   "q": "LGBT",
+   "propostas": [
+    "direitos/p52"
+   ]
+  },
+  {
+   "q": "cotas para negros",
+   "propostas": [
+    "direitos/p41"
+   ]
+  },
+  {
+   "q": "demarcação de terras indígenas",
+   "propostas": [
+    "direitos/p36"
+   ]
+  },
+  {
+   "q": "Minha Casa Minha Vida",
+   "propostas": [
+    "infraestrutura-cidades/p38",
+    "infraestrutura-cidades/p37"
+   ]
+  },
+  {
+   "q": "Nordeste",
+   "propostas": [
+    "infraestrutura-cidades/p71",
+    "infraestrutura-cidades/p72"
+   ]
+  },
+  {
+   "q": "transposição do São Francisco",
+   "propostas": [
+    "infraestrutura-cidades/p72"
+   ]
+  },
+  {
+   "q": "energia eólica e solar",
+   "propostas": [
+    "ambiente-energia/p42"
+   ]
+  },
+  {
+   "q": "hidrogênio verde",
+   "propostas": [
+    "ambiente-energia/p43"
+   ]
+  },
+  {
+   "q": "inteligência artificial na saúde",
+   "propostas": [
+    "saude/p3"
+   ]
+  },
+  {
+   "q": "turismo",
+   "propostas": [
+    "cultura-esporte/p20",
+    "cultura-esporte/p21"
+   ]
+  },
+  {
+   "q": "pesca artesanal",
+   "propostas": [
+    "agricultura/p81"
+   ]
+  },
+  {
+   "q": "Mercosul",
+   "propostas": [
+    "exterior-defesa/p25",
+    "exterior-defesa/p24"
+   ]
+  },
+  {
+   "q": "vacinação",
+   "propostas": [
+    "saude/p48",
+    "saude/p49",
+    "saude/p127"
+   ]
+  },
+  {
+   "q": "fila do SUS",
+   "propostas": [
+    "saude/p14",
+    "saude/p45",
+    "saude/p18"
+   ]
+  },
+  {
+   "q": "aumento do salário mínimo",
+   "propostas": [
+    "trabalho-previdencia/p13"
+   ]
+  },
+  {
+   "q": "salário dos professores",
+   "propostas": [
+    "educacao/p30"
+   ]
+  },
+  {
+   "q": "método fônico",
+   "propostas": [
+    "educacao/p2"
+   ]
+  },
+  {
+   "q": "autismo",
+   "propostas": [
+    "direitos/p34",
+    "educacao/p62",
+    "saude/p25"
+   ]
+  },
+  {
+   "q": "saneamento básico",
+   "propostas": [
+    "infraestrutura-cidades/p29"
+   ]
+  },
+  {
+   "q": "pix",
+   "propostas": [],
+   "blocos": [
+    "flavio-bolsonaro/466"
+   ]
+  },
+  {
+   "q": "aborto",
+   "propostas": [],
+   "blocos": [],
+   "vazio": true,
+   "_": "o corpus não fala de aborto; 'direitos sexuais e reprodutivos' (direitos/p29) pode aparecer, mas como próxima, nunca como direta"
+  }
+ ]
 }
