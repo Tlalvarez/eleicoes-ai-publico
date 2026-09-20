@@ -25,11 +25,29 @@ const candidatosPres = temasPres.length ? comparacao('presidente', null, temasPr
 // A frase manda abrir a HOME, não esta página: quem chega como assistente recebe ali o cartão de visita
 // em texto, curto e com o endereço de cada arquivo. A versão de 18/09 mandava abrir /ia e "ler a página
 // inteira" — 30 KB de instruções antes da primeira pergunta.
-const frase = `Abra ${ORIGEM} e responda minhas perguntas sobre a eleição de 2026 usando só os programas de governo registrados no TSE que estão lá, citando o candidato e a página do programa.`;
-// `?q=` sozinho. Com `hints=search` junto (como estava desde 18/09) o ChatGPT abria a conversa com a
-// caixa VAZIA — testado pelo Thiago em 19/09/2026: `?q=` e `?prompt=` preenchem, `hints=search&q=` não.
-const noChatGPT = `https://chatgpt.com/?q=${encodeURIComponent(frase)}`;
-const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
+/**
+ * A frase leva os ENDEREÇOS DO ESCOPO, não só a home (20/09/2026, parecer de SEO).
+ *
+ * O leitor ao vivo do Claude só abre endereço vindo da mensagem da pessoa ou de uma busca. O botão põe o
+ * endereço na mensagem dela — é o único caminho verificado. Levando junto o panorama e o índice de
+ * assuntos do escopo escolhido, o assistente entra com as portas abertas em vez de tropeçar no primeiro
+ * link interno. Escopo é cargo ou UF; nunca candidato.
+ *
+ * `?q=` sozinho nos dois. Com `hints=search` junto (como estava desde 18/09) o ChatGPT abria a conversa
+ * com a caixa VAZIA — testado pelo Thiago em 19/09/2026.
+ */
+const frasePara = (rel) => `Abra ${ORIGEM}, ${ORIGEM}/ia/dados/${rel}/panorama e ${ORIGEM}/ia/dados/${rel}/assuntos`
+  + ' e responda minhas perguntas sobre a eleição de 2026 usando só os programas de governo registrados no TSE'
+  + ' que estão nesses endereços, citando o candidato e a página do programa.';
+const ESCOPOS = [{ rel: 'presidente', nome: 'Presidente' },
+  ...ufs.map((uf) => ({ rel: `governador/${uf}`, nome: `Governador — ${uf.toUpperCase()}` }))];
+const links = Object.fromEntries(ESCOPOS.map(({ rel }) => {
+  const q = encodeURIComponent(frasePara(rel));
+  return [rel, { chatgpt: `https://chatgpt.com/?q=${q}`, claude: `https://claude.ai/new?q=${q}` }];
+}));
+const frase = frasePara('presidente');
+const noChatGPT = links.presidente.chatgpt;
+const noClaude = links.presidente.claude;
 ---
 <Base title="Use ChatGPT ou Claude para analisar os programas"
   description="Abra os programas de governo de 2026 no ChatGPT ou no Claude e pergunte o que quiser, com o trecho e a página de cada programa.">
@@ -39,10 +57,22 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
       Clique nos botões abaixo e deixe o ChatGPT ou o Claude te guiarem pelos programas de
       governo. Você vai poder fazer qualquer pergunta para eles.
     </p>
-    <p class="acoes">
-      <a class="botao" href={noChatGPT} rel="noopener noreferrer">Abrir no ChatGPT</a>
-      <a class="botao" href={noClaude} rel="noopener noreferrer">Abrir no Claude</a>
+    <p class="escolha">
+      <label for="escopo-ia">Sobre qual disputa?</label>
+      <select id="escopo-ia">
+        {ESCOPOS.map((e) => (
+          <option value={e.rel} data-chatgpt={links[e.rel].chatgpt} data-claude={links[e.rel].claude}>{e.nome}</option>
+        ))}
+      </select>
     </p>
+    <p class="acoes">
+      <a class="botao" id="abrir-chatgpt" href={noChatGPT} rel="noopener noreferrer"
+        data-evento="assistente_aberto" data-assistente="chatgpt" data-escopo="presidente">Abrir no ChatGPT</a>
+      <a class="botao" id="abrir-claude" href={noClaude} rel="noopener noreferrer"
+        data-evento="assistente_aberto" data-assistente="claude" data-escopo="presidente">Abrir no Claude</a>
+    </p>
+    {/* o destino de cada escopo viaja num atributo da própria opção: `set:html` é proibido pelo portão
+        de render, e JSON embutido seria HTML injetado — aqui não há texto de terceiro, mas a regra é a regra */}
     <details class="para-assistente" id="para-o-assistente">
     <summary><strong>Para o assistente que abriu esta página</strong> — o que são estes dados, como responder e onde está cada coisa</summary>
     <p>
@@ -131,8 +161,25 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
     </details>
   </div>
 
+  <script>
+    // troca o destino dos dois botões conforme a disputa escolhida; cada opção já traz o endereço pronto,
+    // montado no build, para o navegador não precisar saber a regra de redação da frase
+    const sel = document.getElementById('escopo-ia');
+    const bt = { chatgpt: document.getElementById('abrir-chatgpt'), claude: document.getElementById('abrir-claude') };
+    sel?.addEventListener('change', () => {
+      const op = sel.selectedOptions[0];
+      if (!op) return;
+      for (const quem of ['chatgpt', 'claude']) {
+        const a = bt[quem];
+        if (a && op.dataset[quem]) { a.href = op.dataset[quem]; a.dataset.escopo = sel.value.replace('governador/', ''); }
+      }
+    });
+  </script>
+
   <style>
-    .ia .acoes { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0; }
+    .ia .escolha { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: 1.4rem 0 .6rem; }
+    .ia .escolha select { min-height: var(--alvo); padding: .4rem .6rem; font: inherit; border: 1px solid var(--linha-forte); border-radius: 8px; background: var(--cartao); }
+    .ia .acoes { display: flex; flex-wrap: wrap; gap: .6rem; margin: .2rem 0 1.4rem; }
     .ia .para-assistente { margin: 2rem 0 0; padding: .9rem 1rem; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); }
     .ia .para-assistente > summary { cursor: pointer; }
     .ia .para-assistente[open] > summary { margin-bottom: .6rem; }

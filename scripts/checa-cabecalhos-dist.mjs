@@ -13,7 +13,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
-import { CABECALHOS_FIXOS, analisaHeaders, inventarioDoDist } from './emite-cabecalhos-dist.mjs';
+import { CABECALHOS_FIXOS, FORA_DO_INDICE, analisaHeaders, inventarioDoDist } from './emite-cabecalhos-dist.mjs';
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const DIST = join(RAIZ, 'dist');
@@ -24,7 +24,14 @@ if (!existsSync(caminho)) {
   console.error('FALHOU (cabeçalhos/dist): dist/_headers não existe — rode `npm run build`.');
   process.exit(1);
 }
-const regras = analisaHeaders(readFileSync(caminho, 'utf8'))['/*'] ?? {};
+const todasAsRegras = analisaHeaders(readFileSync(caminho, 'utf8'));
+const regras = todasAsRegras['/*'] ?? {};
+// o que não tem `<head>` só sai do índice por cabeçalho (ver FORA_DO_INDICE)
+for (const [rota, valor] of FORA_DO_INDICE) {
+  if (todasAsRegras[rota]?.['X-Robots-Tag'] !== valor) {
+    falhas.push(`${rota}: sem 'X-Robots-Tag: ${valor}' — sem isto o markdown fica no índice no lugar do HTML`);
+  }
+}
 const csp = regras['Content-Security-Policy'] ?? '';
 if (!csp) falhas.push('sem Content-Security-Policy no bloco /*');
 for (const [nome, valor] of Object.entries(CABECALHOS_FIXOS)) {

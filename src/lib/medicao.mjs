@@ -102,6 +102,13 @@ export const EVENTOS = Object.freeze({
   girar_pedido: [],
   /** dispensou o pedido e seguiu em pé */
   girar_dispensado: [],
+
+  // --- o acervo dentro do assistente da pessoa (20/09) ----------------------
+  // O botão de /ia é o único caminho VERIFICADO para o Claude: ele só abre endereço
+  // que veio da mensagem da pessoa, e é isso que o botão faz. Sem este evento, o
+  // caminho que funciona é o único que não aparece na medição.
+  /** abriu o acervo no assistente (`assistente`: chatgpt | claude; `escopo`: presidente | a sigla da UF) */
+  assistente_aberto: ['assistente', 'escopo'],
 });
 
 /**
