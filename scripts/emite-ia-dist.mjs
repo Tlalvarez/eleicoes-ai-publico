@@ -114,7 +114,10 @@ function escopo(cargo, uf) {
     const d = comparacao(cargo, uf, def.id);
     if (!d?.propostas?.length) continue;
     candidatos ??= d.candidatos;
-    if (d.origem?.gerado_em && (!geradoEm || d.origem.gerado_em > geradoEm)) geradoEm = d.origem.gerado_em;
+    // `gerado_em` é de quando a matriz NASCEU; `exportado_em`, de quando ela foi publicada como está. A
+    // terceira auditoria do ChatGPT (19/09/2026) leu "dados gerados em 14 de setembro" num panorama que
+    // tinha mudado no mesmo dia. Vale a mais recente das duas, que é a que descreve o que se está lendo.
+    for (const q of [d.origem?.gerado_em, d.origem?.exportado_em]) if (q && (!geradoEm || q > geradoEm)) geradoEm = q;
     const assuntos = [...new Set(d.propostas.map((p) => p.subtema))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
     const cabecalho = (parte, total, n) => [`# ${def.nome} — o que cada programa propõe${total > 1 ? ` — parte ${parte} de ${total}` : ''} (${rotulo}, 2026)`, '', REGRAS, '',
       `Este arquivo tem ${UM(n, 'proposta', 'propostas')}${total > 1 ? ` das ${d.propostas.length} do tema` : ''}, por assunto, em ordem alfabética. Candidatos comparados: ${d.candidatos.map((c) => c.nome).join(', ')}.`,
@@ -244,7 +247,7 @@ function escopo(cargo, uf) {
   // com mais candidatos, desempate pelo menor id), igual para todos.
   const criterio = (() => { try { const c = JSON.parse(readFileSync(join(RAIZ_PROJETO, 'data', 'comparacao', 'criterio.json'), 'utf8')); return uf ? c[cargo]?.[uf] : c[cargo]; } catch { return null; } })();
   const P = [`# Panorama da disputa — ${rotulo}, 2026: onde os programas se encontram e onde se opõem`, '', REGRAS, '',
-    `Dados gerados em ${geradoEm ?? 'data não registrada'}. Candidatos comparados (${candidatos.length}): ${candidatos.map((c) => `${c.nome} (${c.partido})`).join(', ')}.`,
+    `Dados atualizados em ${geradoEm ?? 'data não registrada'}. Candidatos comparados (${candidatos.length}): ${candidatos.map((c) => `${c.nome} (${c.partido})`).join(', ')}.`,
     ...(criterio ? [`Critério de inclusão: até ${criterio.corte ?? 6} candidatos com pelo menos ${criterio.minimo_pct ?? 1}% na pesquisa ${criterio.instituto ?? ''}${criterio.registro ? `, registro ${criterio.registro} no TSE` : ''}${criterio.campo_inicio ? `, campo de ${criterio.campo_inicio} a ${criterio.campo_fim}` : ''}; fica fora quem teve o registro indeferido ou não registrou programa.`,
       ...((criterio.fora ?? []).length ? [`Fora da comparação: ${criterio.fora.map((x) => `${x.nome} — ${x.motivo}`).join('; ')}.`] : [])] : []),
     '', 'Limites: este panorama mostra TODAS as posições contrárias explícitas e só as cinco propostas com mais candidatos por tema; a lista inteira está no arquivo de cada tema. "0 propostas" ou "0 blocos" descreve o que foi extraído e classificado NESTE tema, não o programa inteiro: o mesmo assunto pode estar em outro tema. A associação de um candidato a uma proposta também pode FALTAR (o trecho existe e não foi ligado): ausência aqui é "não localizado", nunca "o programa não trata".', ''];
