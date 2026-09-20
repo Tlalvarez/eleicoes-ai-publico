@@ -21,8 +21,15 @@ const exemplos = existsSync(arqExemplos)
   : (escopo === 'presidente' ? ['creche', 'escala 6x1', 'dívida pública', 'Nordeste'] : ['escolas', 'hospitais', 'segurança']);
 // PROTÓTIPO B: a caixa convida à pergunta. O exemplo vive DENTRO do campo; as perguntas prontas em
 // botão saíram em 19/09/2026 por decisão do Thiago — ocupavam a tela antes da matriz e escolhiam o
-// assunto pela pessoa. O exemplo sai dos assuntos do escopo (exemplos.json) e nunca cita candidato.
-const placeholder = pergunta ? `Ex.: o que propõem sobre ${exemplos[0]}?` : `Ex.: ${exemplos.join(', ')}`;
+// assunto pela pessoa. O exemplo nunca cita candidato.
+//
+// Em presidente o exemplo é fixo, "impostos" (decisão do Thiago em 19/09): o primeiro assunto de
+// exemplos.json é o mais distintivo do acervo ("Ferrogrão"), e distintivo demais para servir de
+// convite — quem chega não sabe se pode perguntar do que interessa a ele. Imposto todo mundo paga, e a
+// consulta dá 42 propostas. Nos outros escopos vale o primeiro assunto do arquivo.
+const EXEMPLO_FIXO = { presidente: 'impostos' };
+const assuntoExemplo = EXEMPLO_FIXO[escopo] ?? exemplos[0];
+const placeholder = pergunta ? `Ex.: o que propõe sobre ${assuntoExemplo}?` : `Ex.: ${exemplos.join(', ')}`;
 ---
 <form class={`busca-caixa${compacta ? ' compacta' : ''}${semRotulo ? ' sem-rotulo' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
   <label for={idCampo} class={semRotulo ? 'so-leitor' : undefined}>{pergunta ? 'Pergunte aos programas de governo' : 'Buscar nos programas de governo'}</label>
