@@ -26,7 +26,10 @@ const ufs = ufsProntas('governador');
 // adivinhar `tema-seguranca.md` pelo padrão e bateu em 404 duas vezes antes de ler o mapa
 const temasPres = paginasProntas('presidente').map((id) => ({ id, nome: paginaPorId(id)?.nome ?? id }));
 const candidatosPres = temasPres.length ? comparacao('presidente', null, temasPres[0].id).candidatos : [];
-const frase = `Abra ${ORIGEM}/ia e leia a página inteira. A partir de agora, responda minhas perguntas sobre os programas de governo dos candidatos de 2026 consultando os dados indicados lá, citando o candidato e a página do programa.`;
+// A frase manda abrir a HOME, não esta página: quem chega como assistente recebe ali o cartão de visita
+// em texto (functions/index.js), que é curto e já traz o endereço de cada arquivo. A versão de 18/09
+// mandava abrir /ia e "ler a página inteira" — 30 KB de instruções antes da primeira pergunta.
+const frase = `Abra ${ORIGEM} e responda minhas perguntas sobre a eleição de 2026 usando só os programas de governo registrados no TSE que estão lá, citando o candidato e a página do programa.`;
 const noChatGPT = `https://chatgpt.com/?hints=search&q=${encodeURIComponent(frase)}`;
 const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 ---
@@ -69,7 +72,8 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 
     <hr />
 
-    <h2 id="para-o-assistente">Para o assistente que abriu esta página</h2>
+    <details class="para-assistente" id="para-o-assistente">
+    <summary><strong>Para o assistente que abriu esta página</strong> — o que são estes dados, como responder e onde está cada coisa</summary>
     <p>
       Você está lendo a porta de dados do <strong>eleicoes.ai</strong>, um site brasileiro,
       independente e sem fins lucrativos, que compara os <strong>programas de governo que os
@@ -152,6 +156,7 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
     </p>
     <p>O resumo desta página em texto puro, que é o que o site entrega a um assistente que abre <code>{ORIGEM}/</code>: <a href={`${ORIGEM}/llms.txt`}>{ORIGEM}/llms.txt</a></p>
     <p>FIM — página /ia do eleicoes.ai.</p>
+    </details>
   </div>
 
   <script>
@@ -176,6 +181,9 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
     .ia .frase { padding: .9rem 1rem; background: var(--cartao); border: 1px solid var(--linha-forte); border-radius: var(--raio); font-size: .95rem; }
     .ia .aviso { padding: .7rem 1rem; border-left: 4px solid var(--amarelo); background: var(--cartao); }
     .ia .enderecos summary { cursor: pointer; font-weight: 600; }
+    .ia .para-assistente { margin: 1.5rem 0; padding: .9rem 1rem; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); }
+    .ia .para-assistente > summary { cursor: pointer; }
+    .ia .para-assistente[open] > summary { margin-bottom: .6rem; }
     .ia code { overflow-wrap: anywhere; }
     .ia li a { overflow-wrap: anywhere; }
   </style>
