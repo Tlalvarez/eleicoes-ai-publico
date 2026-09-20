@@ -7,7 +7,10 @@ import Base from '../layouts/Base.astro';
 // publicação, por isso esta página existe em vez de um 404, e o
 // `public/_redirects` manda /deputado-federal/* para cá.
 ---
-<Base title="Deputado federal"
+{/* Fora do índice desde 20/09/2026, por recomendação do parecer de SEO: a página inteira diz "sem
+    programa de governo a comparar", e como primeira impressão vinda de uma busca é um beco. Ela
+    continua existindo para quem chega pelo endereço antigo (ver `public/_redirects`). */}
+<Base title="Deputado federal" noindex
   description="Candidaturas a deputado federal não registram programa de governo no TSE; o eleicoes.ai compara programas.">
   <div class="prose">
     <p class="sobretitulo">Eleições gerais de 2026 · Deputado federal</p>

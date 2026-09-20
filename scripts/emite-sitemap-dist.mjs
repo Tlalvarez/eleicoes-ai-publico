@@ -27,11 +27,19 @@ const htmls = (dir) => readdirSync(dir).flatMap((nome) => {
   return nome.endsWith('.html') ? [p] : [];
 });
 
+const caminho = (arq) => {
+  const c = '/' + relative(DIST, arq).split(sep).join('/').replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, '');
+  return c.length > 1 ? c.replace(/\/$/, '') : c;
+};
 const enderecos = htmls(DIST)
   .filter((arq) => relative(DIST, arq) !== '404.html')
-  .filter((arq) => !/<meta\s+name="robots"\s+content="[^"]*noindex/i.test(readFileSync(arq, 'utf8')))
-  .map((arq) => '/' + relative(DIST, arq).split(sep).join('/').replace(/(^|\/)index\.html$/, '$1').replace(/\.html$/, ''))
-  .map((c) => (c.length > 1 ? c.replace(/\/$/, '') : c))
+  .filter((arq) => {
+    const html = readFileSync(arq, 'utf8');
+    if (/<meta\s+name="robots"\s+content="[^"]*noindex/i.test(html)) return false;
+    const can = html.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)?.[1];
+    return !can || can === `${ORIGEM}${caminho(arq)}` || can === `${ORIGEM}${caminho(arq)}/`;
+  })
+  .map(caminho)
   .sort();
 
 const xml = '<?xml version="1.0" encoding="UTF-8"?>\n'
