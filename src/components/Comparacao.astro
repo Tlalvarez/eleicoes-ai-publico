@@ -205,6 +205,13 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
     </div>
   </div>
 
+  {/* auditoria externa de 19/09/2026: o que a coluna vazia quer dizer estava só na /metodologia, e
+      quem lê a matriz conclui sozinho que o programa cala sobre o assunto. A repescagem (R10) mostrou
+      que isso é falso: em 290 casos o programa sustentava a proposta e o candidato estava de fora. */}
+  <p class="rodape-matriz">
+    Espaço vazio na coluna de um candidato quer dizer que <strong>não localizamos a proposta no programa dele</strong> —
+    não que ele seja contra, nem que o programa não trate do assunto. <a href="/metodologia">Como isto é feito</a>.
+  </p>
 
   <dialog class="trechos" aria-labelledby="trechos-titulo">
     <div class="topo">
@@ -857,6 +864,8 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .filtro-busca .filtro-acoes { margin-top: .2rem; }
 
   .comparacao .quadro { margin: .4rem 0 0; }
+  .comparacao .rodape-matriz { margin: .9rem .2rem 0; font-size: .8rem; line-height: 1.5; color: var(--tinta-suave); }
+  .comparacao .rodape-matriz strong { font-weight: 700; color: inherit; }
   .comparacao .cabecalho-colunas { position: sticky; top: var(--faixa-altura); z-index: 10; overflow: hidden; background: var(--cartao);
     border: 1px solid var(--linha); border-bottom: 2px solid var(--linha-forte); border-radius: var(--raio) var(--raio) 0 0; }
   .comparacao .cabecalho-colunas .grade { padding: .55rem .5rem; }
@@ -927,7 +936,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
   .comparacao .proposta.com-lacuna .colunas span.fim { border-right-width: 1px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; }
   .comparacao .proposta.com-lacuna .colunas span.fora { position: relative; border: 0; background: none; }
   .comparacao .proposta.com-lacuna .colunas span.fora::before { content: ''; position: absolute; left: 0; right: 0; top: 1.4rem; border-top: 2px dashed var(--tinta-suave); }
-  .comparacao .proposta.com-lacuna .colunas span.rotulo::after { content: 'Concorda'; display: block; margin: .6rem .8rem 0; font-size: .7rem; font-weight: 800;
+  .comparacao .proposta.com-lacuna .colunas span.rotulo::after { content: 'Também propõe'; display: block; margin: .6rem .8rem 0; font-size: .7rem; font-weight: 800;
     letter-spacing: .08em; text-transform: uppercase; color: var(--azul); white-space: nowrap; }
 
 
