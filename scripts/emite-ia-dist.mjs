@@ -47,7 +47,17 @@ const emLinha = (s) => esc(s)
   .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
   .replace(/`([^`]+)`/g, '<code>$1</code>')
   .replace(/https?:\/\/[^\s<|)]+[^\s<|).,;:]/g, (u) => `<a href="${u}">${u}</a>`);
-export function paraHtml(md, tituloPadrao = 'eleicoes.ai') {
+/**
+ * O gêmeo HTML de um arquivo de dados.
+ *
+ * `canonico` é o endereço público da própria página. Quando ele vem, a página é INDEXÁVEL; sem ele,
+ * ela sai `noindex`. A diferença nasceu em 19/09/2026: o Claude abriu a home, leu no cartão o endereço
+ * de São Paulo escrito como link de verdade, e mesmo assim recusou abri-lo — a ferramenta dele só abre
+ * endereço que veio da pessoa ou de uma BUSCA. Como todo /ia/dados era noindex, nenhuma busca podia
+ * conhecê-los, e o acervo ficava inalcançável para esse assistente. O cartão continua noindex: ele é a
+ * home em outro formato, não uma página a mais.
+ */
+export function paraHtml(md, tituloPadrao = 'eleicoes.ai', canonico = null) {
   const linhas = md.replace(/(\/ia\/dados\/[A-Za-z0-9_\/.-]+?)\.md\b/g, '$1').split('\n');
   const titulo = (linhas.find((l) => l.startsWith('# ')) ?? `# ${tituloPadrao}`).slice(2);
   const out = [];
@@ -74,14 +84,16 @@ export function paraHtml(md, tituloPadrao = 'eleicoes.ai') {
   }
   fecha();
   if (!h1) out.unshift(`<h1>${esc(titulo)}</h1>`);
-  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex, follow"><title>${esc(titulo)} · eleicoes.ai</title></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><main id="conteudo">\n${out.join('\n')}\n</main></body></html>\n`;
+  return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">${canonico ? `<link rel="canonical" href="${canonico}">` : '<meta name="robots" content="noindex, follow">'}<title>${esc(titulo)} · eleicoes.ai</title></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><main id="conteudo">\n${out.join('\n')}\n</main></body></html>\n`;
 }
 
 const escreve = (rel, texto) => {
   const arq = join(DIST, 'ia', 'dados', rel);
   mkdirSync(dirname(arq), { recursive: true });
   writeFileSync(arq, texto);
-  writeFileSync(arq.replace(/\.md$/, '.html'), paraHtml(texto));
+  // o endereço público é sem `.md` (ver Base.astro e o emissor do sitemap)
+  const canonico = `https://eleicoes.ai/ia/dados/${rel.replace(/\.md$/, '')}`;
+  writeFileSync(arq.replace(/\.md$/, '.html'), paraHtml(texto, 'eleicoes.ai', canonico));
   return Buffer.byteLength(texto);
 };
 const UM = (n, s, p) => `${n} ${n === 1 ? s : p}`;
