@@ -308,7 +308,9 @@ function escopo(cargo, uf) {
     'Os números por candidato são quantas propostas FORAM EXTRAÍDAS do programa dele NESTE tema. Zero NÃO quer dizer que o programa não trata do assunto: o trecho pode estar classificado em outro tema (previdência aparece em Economia, por exemplo). Antes de afirmar ausência, procure o assunto no índice de assuntos e no texto do programa.', '',
     `FIM — ${UM(candidatos.length, 'candidato', 'candidatos')}, ${UM(resumoTemas.length, 'tema', 'temas')}.`, ''];
   grava(`${rel}.md`, M.join('\n'));
-  return { rel, rotulo, candidatos: candidatos.length, temas: resumoTemas.length, temas_lista: resumoTemas.map(({ id, nome }) => ({ id, nome })), arquivos, bytes, maior };
+  return { rel, rotulo, candidatos: candidatos.length, nomes: candidatos.map((c) => `${c.nome} (${c.partido})`),
+    propostas: resumoTemas.reduce((t, x) => t + x.n, 0), temas: resumoTemas.length,
+    temas_lista: resumoTemas.map(({ id, nome, n }) => ({ id, nome, n })), arquivos, bytes, maior };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -349,6 +351,15 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     'Qualquer pergunta sobre o que os candidatos escreveram nos programas — por candidato, por tema ou por assunto. Por exemplo:', '',
     ...sugestoes.map((s) => `- ${s}`), '',
     'Para começar, basta dizer se o interesse é Presidente ou o Governador de qual estado.', '',
+    // 20/09/2026: um relatório do Claude mostrou o pior caso — ele abriu a home, aceitou a regra de fonte
+    // única, e a ferramenta dele recusou TODOS os arquivos de /ia/dados (só abre endereço vindo da pessoa
+    // ou de uma busca). A sessão terminou sem nenhuma resposta sobre a eleição. Então o cartão deixa de
+    // ser só um mapa: ele já carrega o que dá para responder numa leitura só. Quem não conseguir abrir
+    // mais nada ainda sabe quem concorre, que temas existem e o tamanho de cada um.
+    ...(pres ? ['## Presidente, num relance', '',
+      `Candidatos comparados (${pres.candidatos}): ${pres.nomes.join(', ')}.`, '',
+      `${pres.propostas} propostas em ${pres.temas} temas — ${pres.temas_lista.map((t) => `${t.nome} (${t.n})`).join(', ')}.`, '',
+      'O número entre parênteses é quantas propostas foram extraídas naquele tema, somando todos os candidatos. Ele diz o tamanho do assunto no acervo, não a qualidade de programa nenhum.', ''] : []),
     '## Para o assistente que abriu esta página', '',
     'A pessoa que te mandou este endereço quer usar o acervo. A primeira resposta cabe no que está acima: diga em duas frases o que é o eleicoes.ai, ofereça três ou quatro das perguntas de exemplo (sem sugerir nem destacar candidato: quem escolhe nomes é ela) e pergunte por onde ela quer começar. Não é preciso abrir mais nada nem pesquisar na web para isso.', '',
     'Quando ela perguntar, abra SÓ o arquivo que responde (são pequenos) e use só o que está nele:', '',
