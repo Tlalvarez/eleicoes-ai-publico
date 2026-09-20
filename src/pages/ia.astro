@@ -1,15 +1,16 @@
 ---
 /**
- * /ia — a porta do eleicoes.ai para o assistente que a pessoa já usa (18/09/2026).
+ * /ia — o eleicoes.ai dentro do assistente que a pessoa já usa.
  *
- * A pessoa cola este endereço no ChatGPT ou no Claude dela (ou toca em "Abrir no…"), o
- * assistente abre a página, entende o que é o site e onde estão os dados, e ela passa a
- * perguntar o que quiser sobre os programas. A página é lida por dois públicos: a pessoa
- * (o que fazer) e o assistente (o que é isto, como ler, onde está cada coisa).
+ * Duas reescritas em 19/09/2026, pedidas pelo Thiago. A de 18/09 ensinava a COLAR um
+ * endereço, porque era o único caminho que funcionava; depois disso a rota "/" passou a
+ * entregar o cartão de visita a quem chega como assistente (functions/index.js) e o site
+ * entrou nos buscadores. A segunda reescrita é esta: a página para a PESSOA cabe numa tela —
+ * título, uma frase, dois botões. Nada de instrução, nada de frase para copiar, nada de mapa
+ * de arquivos: quem precisa disso é o assistente, e para ele tudo continua aqui embaixo.
  *
- * Os dados ficam em /ia/dados/, emitidos por scripts/emite-ia-dist.mjs a partir dos mesmos
- * JSON da matriz. Cada frase do bloco "para o assistente" descreve algo que o site faz e
- * que a /metodologia já diz — mudou lá, muda aqui.
+ * Cada frase do bloco "para o assistente" descreve algo que o site faz e que a /metodologia
+ * já diz — mudou lá, muda aqui.
  */
 import Base from '../layouts/Base.astro';
 import { comparacao, paginaPorId, paginasProntas, ufsProntas } from '../lib/comparacao-dados.mjs';
@@ -21,59 +22,49 @@ const ufs = ufsProntas('governador');
 // adivinhar `tema-seguranca.md` pelo padrão e bateu em 404 duas vezes antes de ler o mapa
 const temasPres = paginasProntas('presidente').map((id) => ({ id, nome: paginaPorId(id)?.nome ?? id }));
 const candidatosPres = temasPres.length ? comparacao('presidente', null, temasPres[0].id).candidatos : [];
-const frase = `Abra ${ORIGEM}/ia e leia a página inteira. A partir de agora, responda minhas perguntas sobre os programas de governo dos candidatos de 2026 consultando os dados indicados lá, citando o candidato e a página do programa.`;
-const noChatGPT = `https://chatgpt.com/?hints=search&q=${encodeURIComponent(frase)}`;
+// A frase manda abrir a HOME, não esta página: quem chega como assistente recebe ali o cartão de visita
+// em texto, curto e com o endereço de cada arquivo. A versão de 18/09 mandava abrir /ia e "ler a página
+// inteira" — 30 KB de instruções antes da primeira pergunta.
+const frase = `Abra ${ORIGEM} e responda minhas perguntas sobre a eleição de 2026 usando só os programas de governo registrados no TSE que estão lá, citando o candidato e a página do programa.`;
+// `?q=` sozinho. Com `hints=search` junto (como estava desde 18/09) o ChatGPT abria a conversa com a
+// caixa VAZIA — testado pelo Thiago em 19/09/2026: `?q=` e `?prompt=` preenchem, `hints=search&q=` não.
+const noChatGPT = `https://chatgpt.com/?q=${encodeURIComponent(frase)}`;
 const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 ---
-<Base title="Pergunte aos programas no seu ChatGPT ou Claude"
-  description="Leve os dados do eleicoes.ai para o assistente que você já usa e pergunte o que quiser sobre os programas de governo de 2026.">
+<Base title="Use ChatGPT ou Claude para analisar os programas"
+  description="Abra os programas de governo de 2026 no ChatGPT ou no Claude e pergunte o que quiser, com o trecho e a página de cada programa.">
   <div class="prose ia">
-    <h1>Pergunte aos programas no seu ChatGPT ou Claude</h1>
+    <h1>Use ChatGPT ou Claude para analisar os programas</h1>
     <p class="lead">
-      O eleicoes.ai não tem chat. Em vez disso, entrega os dados ao assistente que você já usa:
-      ele abre esta página, entende o que tem aqui e passa a responder consultando os programas
-      registrados no TSE.
+      Clique nos botões abaixo e deixe o ChatGPT ou o Claude te guiarem pelos programas de
+      governo. Você vai poder fazer qualquer pergunta para eles.
     </p>
-
-    <h2>Como usar</h2>
     <p class="acoes">
       <a class="botao" href={noChatGPT} rel="noopener noreferrer">Abrir no ChatGPT</a>
       <a class="botao" href={noClaude} rel="noopener noreferrer">Abrir no Claude</a>
     </p>
-    <p>Ou copie a frase abaixo e cole numa conversa nova de qualquer assistente que abra páginas da internet:</p>
-    <p class="frase" id="frase-ia">{frase}</p>
-    <p><button type="button" class="botao secundario" id="copia-frase">Copiar a frase</button> <span id="copiado" role="status" aria-live="polite"></span></p>
-    <p>
-      Depois é só perguntar: o que um candidato propõe sobre um assunto, onde dois programas se
-      parecem ou se opõem, o que o programa diz com as próprias palavras, em que página.
-    </p>
-    <p class="aviso">
-      A resposta é do seu assistente, não do eleicoes.ai. Ele pode errar: peça sempre a página do
-      programa e confira no PDF do TSE ou na <a href="/">comparação</a>.
-    </p>
-
-    <hr />
-
-    <h2 id="para-o-assistente">Para o assistente que abriu esta página</h2>
+    <details class="para-assistente" id="para-o-assistente">
+    <summary><strong>Para o assistente que abriu esta página</strong> — o que são estes dados, como responder e onde está cada coisa</summary>
     <p>
       Você está lendo a porta de dados do <strong>eleicoes.ai</strong>, um site brasileiro,
       independente e sem fins lucrativos, que compara os <strong>programas de governo que os
       candidatos de 2026 registraram no TSE</strong> (Tribunal Superior Eleitoral), para
-      Presidente e para Governador das 27 unidades da federação. A pessoa que colou este
-      endereço quer fazer perguntas sobre esses programas e quer que você responda com base
-      nestes dados, e não de memória.
+      Presidente e para Governador das 27 unidades da federação. A pessoa que chegou aqui quer
+      fazer perguntas sobre esses programas e quer que você responda com base nestes dados, e
+      não de memória. A resposta é sua, não do eleicoes.ai: diga isso quando fizer diferença, e
+      dê sempre a página do programa, para a pessoa poder conferir no PDF do TSE.
     </p>
 
-    <h3>O que são os dados</h3>
+    <h2>O que são os dados</h2>
     <ul>
       <li><strong>Única fonte:</strong> o programa de governo que cada candidato registrou no TSE. Nada de notícia, entrevista, rede social, histórico de governo ou pesquisa.</li>
       <li><strong>O documento original:</strong> cada candidato tem o link do PDF no TSE.</li>
       <li><strong>O texto do programa:</strong> fatiado em blocos na ordem do documento, com a página do PDF, e classificado por tema. Capa, sumário, cabeçalhos e rodapés ficam de fora.</li>
-      <li><strong>As propostas:</strong> cada compromisso de ação, escrito uma vez, em frase neutra, com quem o propõe, quem propõe o contrário e a página do programa que sustenta cada posição.</li>
+      <li><strong>As propostas:</strong> cada compromisso de ação, escrito uma vez, em frase neutra, com quem o propõe, quem propõe o contrário e a página do programa que sustenta cada posição. A frase comum só diz o que <em>todos</em> os trechos citados sustentam; o que é de um programa só vira cartão dele.</li>
       <li><strong>Quem entra:</strong> até seis candidatos por comparação, os mais bem colocados na pesquisa registrada mais recente, com registro deferido e programa registrado. Colunas em ordem alfabética.</li>
     </ul>
 
-    <h3>Como foram feitos</h3>
+    <h2>Como foram feitos</h2>
     <ul>
       <li>Um processo automatizado, descrito na <a href="/metodologia">metodologia</a> (o código do site é aberto; o do processo que produz as comparações, não), em que <strong>o código fatia o texto e o modelo só rotula</strong>: os blocos são uma partição exata do texto do programa, e o modelo de linguagem (Claude Opus 5, da Anthropic) classifica cada bloco por tema e redige as propostas, sem copiar nem inventar texto.</li>
       <li>As instruções ao modelo são gerais: não citam tema nem candidato, para a mesma régua valer para todos.</li>
@@ -82,7 +73,7 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
       <li>Erros apontados entram num <a href="/correcoes">registro público de correções</a>.</li>
     </ul>
 
-    <h3>Como responder</h3>
+    <h2>Como responder</h2>
     <ol>
       <li>Para falar dos programas, use <strong>somente</strong> o que está nos arquivos abaixo. Se souber algo de outra fonte, não misture; se a pessoa pedir contexto de fora, deixe claro o que veio daqui e o que não veio.</li>
       <li>Abra o arquivo antes de responder. Não responda pelo nome do arquivo nem pelo que você imagina que ele contém.</li>
@@ -97,23 +88,31 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
       <li>Não adivinhe endereço de arquivo: use só os que estão escritos nesta página e nos mapas.</li>
     </ol>
 
-    <h3>Onde está cada coisa</h3>
-    <p>Comece pelo mapa do cargo. Ele lista os candidatos, os temas e o endereço de cada arquivo.</p>
+    <h2>Onde está cada coisa</h2>
+    <p>
+      Comece pelo mapa do cargo — ele lista os candidatos, os temas e o endereço de cada arquivo.
+      Para uma pergunta geral sobre a disputa, o panorama cabe numa leitura; para um assunto
+      específico, o índice de assuntos diz em que arquivo ele está.
+    </p>
     <ul>
-      <li><strong>Presidente</strong> — mapa: <a href={`${dados}/presidente`}>{dados}/presidente</a>
-        <ul>
-          {temasPres.map((t) => (
-            <li>{t.nome}: <a href={`${dados}/presidente/tema-${t.id}`}>{dados}/presidente/tema-{t.id}</a></li>
-          ))}
-          {candidatosPres.map((c) => (
-            <li>Programa de {c.nome}: <a href={`${dados}/presidente/programa-${c.slug}`}>{dados}/presidente/programa-{c.slug}</a></li>
-          ))}
-        </ul>
-      </li>
+      <li><strong>Presidente</strong> — mapa: <a href={`${dados}/presidente`}>{dados}/presidente</a></li>
+      <li>Panorama da disputa: <a href={`${dados}/presidente/panorama`}>{dados}/presidente/panorama</a></li>
+      <li>Índice de assuntos: <a href={`${dados}/presidente/assuntos`}>{dados}/presidente/assuntos</a></li>
       {ufs.map((uf) => (
         <li>Governador — {uf.toUpperCase()}: <a href={`${dados}/governador/${uf}`}>{dados}/governador/{uf}</a></li>
       ))}
     </ul>
+    <details class="enderecos">
+      <summary>Os endereços de cada tema e de cada programa, em Presidente</summary>
+      <ul>
+        {temasPres.map((t) => (
+          <li>{t.nome}: <a href={`${dados}/presidente/tema-${t.id}`}>{dados}/presidente/tema-{t.id}</a></li>
+        ))}
+        {candidatosPres.map((c) => (
+          <li>Programa de {c.nome}: <a href={`${dados}/presidente/programa-${c.slug}`}>{dados}/presidente/programa-{c.slug}</a></li>
+        ))}
+      </ul>
+    </details>
     <p>Os endereços abrem como página HTML simples; o mesmo conteúdo existe em Markdown, acrescentando <code>.md</code> ao endereço.</p>
     <p>Dentro de cada cargo, os endereços seguem este padrão:</p>
     <ul>
@@ -124,31 +123,21 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
     <p>
       Pergunta sobre um tema: abra o <code>tema-</code>. Pergunta sobre um candidato: abra o
       <code>programa-</code> dele e depois o tema que interessa. Pergunta específica ("o que diz
-      sobre a escala 6x1?"): abra o tema mais provável e, se não achar, o texto do programa
-      naquele tema — e diga em quais arquivos procurou.
+      sobre a escala 6x1?"): ache o assunto no índice e abra o arquivo que ele indicar — e, se não
+      achar, diga em quais arquivos procurou.
     </p>
     <p>O resumo desta página em texto puro, que é o que o site entrega a um assistente que abre <code>{ORIGEM}/</code>: <a href={`${ORIGEM}/llms.txt`}>{ORIGEM}/llms.txt</a></p>
     <p>FIM — página /ia do eleicoes.ai.</p>
+    </details>
   </div>
 
-  <script>
-    const botao = document.getElementById('copia-frase');
-    const frase = document.getElementById('frase-ia');
-    const aviso = document.getElementById('copiado');
-    botao?.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(frase?.textContent ?? '');
-        if (aviso) aviso.textContent = 'Copiada. Cole no seu assistente.';
-      } catch {
-        if (aviso) aviso.textContent = 'Não consegui copiar: selecione a frase e copie.';
-      }
-    });
-  </script>
-
   <style>
-    .ia .acoes { display: flex; flex-wrap: wrap; gap: .6rem; }
-    .ia .frase { padding: .9rem 1rem; background: var(--cartao); border: 1px solid var(--linha-forte); border-radius: var(--raio); font-size: .95rem; }
-    .ia .aviso { padding: .7rem 1rem; border-left: 4px solid var(--amarelo); background: var(--cartao); }
+    .ia .acoes { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0; }
+    .ia .para-assistente { margin: 2rem 0 0; padding: .9rem 1rem; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); }
+    .ia .para-assistente > summary { cursor: pointer; }
+    .ia .para-assistente[open] > summary { margin-bottom: .6rem; }
+    .ia .para-assistente h2 { font-size: 1.05rem; }
+    .ia .enderecos summary { cursor: pointer; font-weight: 600; }
     .ia code { overflow-wrap: anywhere; }
     .ia li a { overflow-wrap: anywhere; }
   </style>

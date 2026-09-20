@@ -7,7 +7,7 @@
  */
 // `semRotulo` esconde o rótulo visual (a página já tem um título para a
 // caixa, apontado em `rotuladoPor`); o campo continua rotulado para leitor de tela
-const { escopo = 'presidente', compacta = false, semRotulo = false, rotuladoPor = null } = Astro.props;
+const { escopo = 'presidente', compacta = false, semRotulo = false, rotuladoPor = null, pergunta = false } = Astro.props;
 const idCampo = `busca-q-${escopo.replace('/', '-')}`;
 // os exemplos do campo são do escopo: gerados por v3/exemplos_busca.py a partir
 // das propostas daquela UF e conferidos contra a própria busca
@@ -19,10 +19,20 @@ const arqExemplos = join(RAIZ_PROJETO, 'data', 'busca', escopo, 'exemplos.json')
 const exemplos = existsSync(arqExemplos)
   ? JSON.parse(readFileSync(arqExemplos, 'utf8')).exemplos.slice(0, 4)
   : (escopo === 'presidente' ? ['creche', 'escala 6x1', 'dívida pública', 'Nordeste'] : ['escolas', 'hospitais', 'segurança']);
-const placeholder = `Ex.: ${exemplos.join(', ')}`;
+// PROTÓTIPO B: a caixa convida à pergunta. O exemplo vive DENTRO do campo; as perguntas prontas em
+// botão saíram em 19/09/2026 por decisão do Thiago — ocupavam a tela antes da matriz e escolhiam o
+// assunto pela pessoa. O exemplo nunca cita candidato.
+//
+// Em presidente o exemplo é fixo, "impostos" (decisão do Thiago em 19/09): o primeiro assunto de
+// exemplos.json é o mais distintivo do acervo ("Ferrogrão"), e distintivo demais para servir de
+// convite — quem chega não sabe se pode perguntar do que interessa a ele. Imposto todo mundo paga, e a
+// consulta dá 42 propostas. Nos outros escopos vale o primeiro assunto do arquivo.
+const EXEMPLO_FIXO = { presidente: 'impostos' };
+const assuntoExemplo = EXEMPLO_FIXO[escopo] ?? exemplos[0];
+const placeholder = pergunta ? `Ex.: o que propõe sobre ${assuntoExemplo}?` : `Ex.: ${exemplos.join(', ')}`;
 ---
 <form class={`busca-caixa${compacta ? ' compacta' : ''}${semRotulo ? ' sem-rotulo' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
-  <label for={idCampo} class={semRotulo ? 'so-leitor' : undefined}>Buscar nos programas de governo</label>
+  <label for={idCampo} class={semRotulo ? 'so-leitor' : undefined}>{pergunta ? 'Pergunte aos programas de governo' : 'Buscar nos programas de governo'}</label>
   <div class="linha">
     <input class="campo" id={idCampo} name="q" type="search" maxlength="300" autocomplete="off" aria-labelledby={rotuladoPor ?? undefined}
       placeholder={placeholder} />
@@ -36,7 +46,7 @@ const placeholder = `Ex.: ${exemplos.join(', ')}`;
 </form>
 
 <script>
-  import { buscaPorPagina, destinoDaBusca } from '../lib/busca-navegador.mjs';
+  import { buscaPorPagina, destinoDaBusca, enderecoDaPagina, entendeNoEscopo } from '../lib/busca-navegador.mjs';
   import { medir } from '../lib/medicao.mjs';
 
   for (const form of document.querySelectorAll('form.busca-caixa')) {
@@ -45,7 +55,7 @@ const placeholder = `Ex.: ${exemplos.join(', ')}`;
     const escopo = form.dataset.escopo || 'presidente';
     // na página filtrada, a caixa mostra a consulta em vigor
     const params = new URLSearchParams(location.search);
-    if (params.get('q') && !campo.value) campo.value = params.get('q');
+    if ((params.get('de') || params.get('q')) && !campo.value) campo.value = params.get('de') || params.get('q');
 
     form.addEventListener('submit', async (ev) => {
       ev.preventDefault();
@@ -53,14 +63,24 @@ const placeholder = `Ex.: ${exemplos.join(', ')}`;
       if (!q) return;
       estado.textContent = 'Buscando…';
       let r;
+      let e = { candidatos: [], tema: null, conteudo: q, primeira: null };
       try {
-        r = await buscaPorPagina(escopo, q);
+        // PROTÓTIPO B: quem a pergunta cita vira coluna; o tema, página; o resto, busca
+        e = await entendeNoEscopo(escopo, q);
+        const selecao = e.candidatos.length ? e.candidatos.join(',') : (params.get('c') || '');
+        if (!e.conteudo && (e.tema || e.candidatos.length)) {
+          // sem `resultados`: não houve busca, e zero aqui entraria no painel como busca sem resultado
+          medir('busca_feita', { consulta: q, modo: 'pergunta', direto: true, destino: e.tema ?? e.primeira ?? '' });
+          location.assign(enderecoDaPagina(escopo, e.tema ?? e.primeira, e.primeira, selecao));
+          return;
+        }
+        r = await buscaPorPagina(escopo, e.conteudo || q);
       } catch {
         // sem índice, vale o caminho sem JavaScript: a página de resultados
         form.submit();
         return;
       }
-      const destino = destinoDaBusca(escopo, q, r.porPagina, params.get('c') || '');
+      const destino = destinoDaBusca(escopo, e.conteudo || q, r.porPagina, e.candidatos.length ? e.candidatos.join(',') : (params.get('c') || ''), q, e.primeira);
       if (!destino) {
         // a busca com resultado é medida na página de destino; a sem resultado, aqui
         medir('busca_feita', { consulta: q, resultados: 0, temas: 0, modo: r.modo, direto: false });
