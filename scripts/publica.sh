@@ -106,7 +106,11 @@ done
 
 confere() { # caminho, trecho que o corpo tem de trazer
   corpo="$(curl -fsS "$SITE$1" 2>/dev/null)"; s=$?
-  if [ $s -eq 0 ] && printf '%s' "$corpo" | grep -q -- "$2"; then echo "ok  $1"; else echo "FALHA  $1 (curl=$s, ou sem '$2')"; falhas=$((falhas+1)); fi
+  # sem pipe: `printf | grep -q` mentia acima de 64 KB (o buffer do pipe). O grep sai assim que acha, o
+  # printf leva SIGPIPE, e com `pipefail` a saída vira 141 — em 20/09/2026 o sitemap passou de 29 KB para
+  # 316 KB e a publicação acusou uma falha que não existia. `case` compara na memória do shell.
+  case "$corpo" in *"$2"*) achou=0 ;; *) achou=1 ;; esac
+  if [ $s -eq 0 ] && [ $achou -eq 0 ]; then echo "ok  $1"; else echo "FALHA  $1 (curl=$s, ou sem '$2')"; falhas=$((falhas+1)); fi
 }
 confere "/" 'class="comparacao'
 confere "/presidente/educacao" 'class="comparacao'
