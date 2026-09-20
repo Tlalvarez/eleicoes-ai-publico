@@ -111,10 +111,27 @@ export function politica(hashes) {
   ].join('; ');
 }
 
-/** O texto de `_headers` no formato da Pages: um bloco `/*` com os cabeçalhos. */
+/**
+ * Fora do índice, por cabeçalho: os arquivos que não têm onde declarar `noindex`.
+ *
+ * O `.md` de /ia/dados não tem `<head>` — o `noindex` do gêmeo HTML não vale para ele, e o Google lista
+ * texto puro entre o que indexa. O parecer de SEO de 20/09/2026 mostrou que, sem isto, tirar o HTML do
+ * índice só troca qual das duas cópias o buscador escolhe. O mesmo vale para o cartão em texto.
+ *
+ * O que estas páginas têm em comum é não carregarem os avisos que a revisão jurídica de 16/09 tornou
+ * obrigatórios (independência, não recomendação de voto, link para Correções): nenhuma delas pode ser a
+ * porta de entrada de quem chega por busca.
+ */
+export const FORA_DO_INDICE = Object.freeze([
+  ['/ia/dados/*.md', 'noindex'],
+  ['/llms.txt', 'noindex'],
+]);
+
+/** O texto de `_headers` no formato da Pages: um bloco `/*` com os cabeçalhos, mais os caminhos sem índice. */
 export function textoHeaders(csp) {
   const linhas = ['/*', `  Content-Security-Policy: ${csp}`];
   for (const [nome, valor] of Object.entries(CABECALHOS_FIXOS)) linhas.push(`  ${nome}: ${valor}`);
+  for (const [caminho, valor] of FORA_DO_INDICE) linhas.push('', caminho, `  X-Robots-Tag: ${valor}`);
   return `${linhas.join('\n')}\n`;
 }
 

@@ -87,13 +87,28 @@ export function paraHtml(md, tituloPadrao = 'eleicoes.ai', canonico = null) {
   return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">${canonico ? `<link rel="canonical" href="${canonico}">` : '<meta name="robots" content="noindex, follow">'}<title>${esc(titulo)} · eleicoes.ai</title></head><body><a class="skip-link" href="#conteudo">Pular para o conteúdo</a><main id="conteudo">\n${out.join('\n')}\n</main></body></html>\n`;
 }
 
-const escreve = (rel, texto) => {
+/**
+ * Três destinos para o gêmeo HTML, decididos no parecer de SEO de 20/09/2026.
+ *
+ *  · PORTA DE ENTRADA (mapa, panorama, índice de assuntos): indexável, canônico de si mesma. É o único
+ *    texto original desta camada, e é por uma delas que o assistente entra vindo de uma busca.
+ *  · COMPARAÇÃO DE UM TEMA: canônico apontando para a PÁGINA DE GENTE equivalente. Ela diz a mesma coisa
+ *    em outro formato, e o canônico consolida o sinal na página que tem navegação e os avisos legais —
+ *    o Google desaconselha `noindex` justamente para escolher entre duas páginas do mesmo site.
+ *  · TEXTO DE PROGRAMA e o resto: `noindex, follow`. Não há página de gente equivalente, então não há
+ *    alvo para canônico; `follow` preserva o caminho até os PDFs do TSE.
+ *
+ * Nunca os dois na mesma URL: `noindex` + `canonical` é a combinação que a documentação desaconselha.
+ */
+const escreve = (rel, texto, canonicoDaGente = null) => {
   const arq = join(DIST, 'ia', 'dados', rel);
   mkdirSync(dirname(arq), { recursive: true });
   writeFileSync(arq, texto);
   // o endereço público é sem `.md` (ver Base.astro e o emissor do sitemap)
-  const canonico = `https://eleicoes.ai/ia/dados/${rel.replace(/\.md$/, '')}`;
-  writeFileSync(arq.replace(/\.md$/, '.html'), paraHtml(texto, 'eleicoes.ai', canonico));
+  const eu = `https://eleicoes.ai/ia/dados/${rel.replace(/\.md$/, '')}`;
+  const nome = rel.split('/').pop();
+  const porta = /^(panorama|assuntos)\.md$/.test(nome) || !nome.includes('-');   // o mapa do escopo é `<escopo>.md`
+  writeFileSync(arq.replace(/\.md$/, '.html'), paraHtml(texto, 'eleicoes.ai', porta ? eu : canonicoDaGente));
   return Buffer.byteLength(texto);
 };
 const UM = (n, s, p) => `${n} ${n === 1 ? s : p}`;
@@ -112,7 +127,7 @@ function escopo(cargo, uf) {
   let bytes = 0;
   let arquivos = 0;
   let maior = ['', 0];
-  const grava = (nome, texto) => { const b = escreve(nome, texto); bytes += b; arquivos += 1; if (b > maior[1]) maior = [nome, b]; };
+  const grava = (nome, texto, canonicoDaGente = null) => { const b = escreve(nome, texto, canonicoDaGente); bytes += b; arquivos += 1; if (b > maior[1]) maior = [nome, b]; };
 
   let candidatos = null;
   const resumoTemas = [];
@@ -188,13 +203,15 @@ function escopo(cargo, uf) {
       const nDeriv = parte.reduce((s, x) => s + x.derivadas, 0);
       grava(nomeTema(i), [...cabecalho(i + 1, partesTema.length, n, nDeriv),
         ...(partesTema.length > 1 ? [`Todas as partes: ${partesTema.map((_, j) => `${BASE}/${nomeTema(j)}`).join(' · ')}`, ''] : []),
-        ...parte.map((x) => x.texto), `FIM — ${UM(n, 'proposta', 'propostas')} neste arquivo. ${rodape}`, ''].join('\n'));
+        ...parte.map((x) => x.texto), `FIM — ${UM(n, 'proposta', 'propostas')} neste arquivo. ${rodape}`, ''].join('\n'),
+        paginaDoSite(def.id));
     });
     if (partesTema.length > 1) {
       grava(`${rel}/tema-${def.id}.md`, [`# ${def.nome} — o que cada programa propõe (${rotulo}, 2026)`, '', REGRAS, '',
         `Este tema tem ${d.propostas.length} propostas e está em ${partesTema.length} partes. Leia todas antes de concluir que algo não foi localizado:`,
         ...partesTema.map((_, i) => `- parte ${i + 1}: ${BASE}/${nomeTema(i)}`), '',
-        `FIM — 0 propostas neste arquivo: ele só aponta para as ${partesTema.length} partes.`, ''].join('\n'));
+        `FIM — 0 propostas neste arquivo: ele só aponta para as ${partesTema.length} partes.`, ''].join('\n'),
+        paginaDoSite(def.id));
     }
     const nQuem = (p) => d.candidatos.filter((c) => p.posicoes[c.slug]?.posicao === 'concorda').length;
     panorama.push({
