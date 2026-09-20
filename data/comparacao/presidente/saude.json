@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "saude-6.json",
   "gerado_em": "2026-09-14T05:57:21Z",
-  "exportado_em": "2026-09-20T00:39:23Z"
+  "exportado_em": "2026-09-20T03:21:39Z"
  },
  "candidatos": [
   {
@@ -977,40 +977,6 @@
      "posicao": "concorda",
      "blocos": [
       1847
-     ],
-     "nota": ""
-    }
-   }
-  },
-  {
-   "id": "p36",
-   "subtema": "Medicamentos, insumos e soberania sanitária",
-   "proposta": "Fortalecer a produção nacional de medicamentos e insumos estratégicos.",
-   "n_concorda": 3,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      341,
-      342
-     ],
-     "nota": "Complexo Econômico-Industrial da Saúde e PDPs"
-    },
-    "ronaldo-caiado": {
-     "posicao": "concorda",
-     "blocos": [
-      2008,
-      2009,
-      2017,
-      2019,
-      2129
-     ],
-     "nota": "Carteira de produtos estratégicos e metas de nacionalização"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      543
      ],
      "nota": ""
     }
@@ -2975,6 +2941,7 @@
      "blocos": [
       325,
       339,
+      341,
       342
      ],
      "nota": "Produção nacional de biofármacos, hemoderivados e novos imunoterápicos"
@@ -2990,9 +2957,14 @@
     "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      2010
+      2008,
+      2009,
+      2010,
+      2017,
+      2019,
+      2129
      ],
-     "nota": ""
+     "nota": "Carteira de produtos estratégicos e metas de nacionalização"
     }
    }
   },
@@ -3508,23 +3480,6 @@
    }
   },
   {
-   "id": "p159",
-   "subtema": "Saúde digital",
-   "proposta": "Consolidar o prontuário único do cidadão por meio da Rede Nacional de Dados em Saúde, integrando os sistemas de informação interfederativos e disponibilizando marcação de consultas e resultados de exames no celular.",
-   "n_concorda": 1,
-   "posicoes": {
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      297,
-      298
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p1"
-  },
-  {
    "id": "p160",
    "subtema": "Saúde digital",
    "proposta": "Digitalizar os prontuários do SUS e integrar os sistemas de informação, com indicadores de desempenho para melhorar a gestão.",
@@ -3852,7 +3807,7 @@
      "nota": ""
     }
    },
-   "derivada_de": "p36"
+   "derivada_de": "p127"
   },
   {
    "id": "p184",
@@ -3878,7 +3833,7 @@
      "nota": ""
     }
    },
-   "derivada_de": "p36"
+   "derivada_de": "p127"
   },
   {
    "id": "p185",
@@ -3894,7 +3849,7 @@
      "nota": ""
     }
    },
-   "derivada_de": "p36"
+   "derivada_de": "p127"
   },
   {
    "id": "p186",
@@ -4683,6 +4638,7 @@
     "lula": {
      "posicao": "concorda",
      "blocos": [
+      297,
       298
      ],
      "nota": ""
@@ -4772,22 +4728,6 @@
     }
    },
    "derivada_de": "p15"
-  },
-  {
-   "id": "p252",
-   "subtema": "Saúde mental",
-   "proposta": "Fortalecer e ampliar a atenção à saúde mental para as famílias, com diagnóstico precoce e apoio a crianças com TDAH, atenção à depressão e à ansiedade e cuidado aos idosos com Alzheimer e outras doenças neurológicas, além de quem cuida deles.",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      650
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p22"
   },
   {
    "id": "p253",
@@ -4902,7 +4842,7 @@
      "nota": ""
     }
    },
-   "derivada_de": "p36"
+   "derivada_de": "p127"
   },
   {
    "id": "p259",
@@ -4922,7 +4862,7 @@
      "nota": "Carteira de produtos estratégicos e metas de nacionalização"
     }
    },
-   "derivada_de": "p36"
+   "derivada_de": "p127"
   },
   {
    "id": "p260",
@@ -5173,22 +5113,6 @@
    "derivada_de": "p69"
   },
   {
-   "id": "p273",
-   "subtema": "Infância e saúde bucal",
-   "proposta": "Garantir às mulheres acesso à saúde bucal dentro do cuidado preventivo, com atendimento próximo de casa.",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      446
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p89"
-  },
-  {
    "id": "p274",
    "subtema": "Infância e saúde bucal",
    "proposta": "Ampliar o acesso à saúde bucal no SUS",
@@ -5272,22 +5196,6 @@
    "derivada_de": "p101"
   },
   {
-   "id": "p279",
-   "subtema": "Atenção primária",
-   "proposta": "Aprimorar os incentivos por resultados no financiamento da atenção primária a estados e municípios, priorizando a redução efetiva de doenças crônicas como diabetes, hipertensão e doenças cardiovasculares.",
-   "n_concorda": 1,
-   "posicoes": {
-    "romeu-zema": {
-     "posicao": "concorda",
-     "blocos": [
-      714
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p105"
-  },
-  {
    "id": "p280",
    "subtema": "Atenção primária",
    "proposta": "Avaliar a Atenção Primária por indicadores de controle de doenças, vacinação, diagnóstico precoce, internações evitáveis e mortalidade prematura, e não apenas por número de consultas",
@@ -5302,22 +5210,6 @@
     }
    },
    "derivada_de": "p105"
-  },
-  {
-   "id": "p281",
-   "subtema": "Saúde mental",
-   "proposta": "Ampliar a atenção à saúde mental com foco em crianças com TDAH, pessoas com depressão e ansiedade e idosos com Alzheimer e outras doenças neurológicas, além de apoio a seus cuidadores.",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      650
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p113"
   },
   {
    "id": "p282",
@@ -5388,22 +5280,6 @@
      "blocos": [
       721,
       725
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p115"
-  },
-  {
-   "id": "p286",
-   "subtema": "Saúde mental",
-   "proposta": "Implantar uma política nacional de saúde mental que envolva escolas, empresas, universidades, forças de segurança, unidades de saúde e comunidades, com prevenção, acolhimento e tratamento humanizado.",
-   "n_concorda": 1,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      602
      ],
      "nota": ""
     }

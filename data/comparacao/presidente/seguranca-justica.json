@@ -12,7 +12,7 @@
  "origem": {
   "arquivo": "seguranca-justica-6.json",
   "gerado_em": "2026-09-14T06:09:54Z",
-  "exportado_em": "2026-09-20T00:39:23Z"
+  "exportado_em": "2026-09-20T03:21:39Z"
  },
  "candidatos": [
   {
@@ -1026,7 +1026,8 @@
      "posicao": "concorda",
      "blocos": [
       381,
-      383
+      383,
+      437
      ],
      "nota": "Com Conselho Estratégico Nacional sob liderança da Presidência"
     }
@@ -1344,7 +1345,7 @@
      "blocos": [
       180
      ],
-     "nota": ""
+     "nota": "Propõe drones, totens de denúncia e reconhecimento facial em tempo real no monitoramento urbano."
     },
     "augusto-cury": {
      "posicao": "concorda",
@@ -1356,7 +1357,10 @@
       4000,
       4003,
       4004,
+      4006,
+      4007,
       4008,
+      4009,
       4041,
       4042,
       4043,
@@ -1368,23 +1372,26 @@
     "ronaldo-caiado": {
      "posicao": "concorda",
      "blocos": [
-      399
+      399,
+      413,
+      1523
      ],
-     "nota": ""
+     "nota": "Centros Integrados de Comando e Controle e videomonitoramento com IA"
     },
     "lula": {
      "posicao": "concorda",
      "blocos": [
       242
      ],
-     "nota": ""
+     "nota": "Investimentos em radares, drones, sensores e centros integrados de comando e controle"
     },
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
+      376,
       901
      ],
-     "nota": ""
+     "nota": "Muralha Brasileira: 1 milhão de câmeras e reconhecimento facial integrado a bancos criminais."
     }
    }
   },
@@ -2210,58 +2217,6 @@
    }
   },
   {
-   "id": "p85",
-   "subtema": "Tecnologia e inteligência policial",
-   "proposta": "Ampliar o uso de tecnologia de monitoramento.",
-   "n_concorda": 5,
-   "posicoes": {
-    "renan-santos": {
-     "posicao": "concorda",
-     "blocos": [
-      180
-     ],
-     "nota": "Propõe drones, totens de denúncia e reconhecimento facial em tempo real no monitoramento urbano."
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      376
-     ],
-     "nota": "Muralha Brasileira: 1 milhão de câmeras e reconhecimento facial integrado a bancos criminais.",
-     "metas": [
-      {
-       "rotulo": "novas câmeras de monitoramento",
-       "valor": "mais de 1 milhão de novas câmeras"
-      }
-     ]
-    },
-    "lula": {
-     "posicao": "concorda",
-     "blocos": [
-      242
-     ],
-     "nota": "Investimentos em radares, drones, sensores e centros integrados de comando e controle"
-    },
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      4006,
-      4007,
-      4009
-     ],
-     "nota": ""
-    },
-    "ronaldo-caiado": {
-     "posicao": "concorda",
-     "blocos": [
-      413,
-      1523
-     ],
-     "nota": "Centros Integrados de Comando e Controle e videomonitoramento com IA"
-    }
-   }
-  },
-  {
    "id": "p86",
    "subtema": "Gestão e integração da segurança pública",
    "proposta": "Oferecer treinamento contínuo aos agentes de segurança.",
@@ -2581,31 +2536,6 @@
     }
    },
    "derivada_de": "p30"
-  },
-  {
-   "id": "p101",
-   "subtema": "Gestão e integração da segurança pública",
-   "proposta": "Recriar o Ministério da Segurança Pública.",
-   "n_concorda": 2,
-   "posicoes": {
-    "augusto-cury": {
-     "posicao": "concorda",
-     "blocos": [
-      610
-     ],
-     "nota": ""
-    },
-    "ronaldo-caiado": {
-     "posicao": "concorda",
-     "blocos": [
-      381,
-      383,
-      437
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p34"
   },
   {
    "id": "p102",
@@ -2951,22 +2881,6 @@
     }
    },
    "derivada_de": "p72"
-  },
-  {
-   "id": "p122",
-   "subtema": "Tecnologia e inteligência policial",
-   "proposta": "Criar um sistema nacional de reconhecimento facial ligado a bancos de dados criminais, com mais de 1 milhão de novas câmeras em portos, aeroportos e áreas públicas.",
-   "n_concorda": 1,
-   "posicoes": {
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      376
-     ],
-     "nota": ""
-    }
-   },
-   "derivada_de": "p85"
   },
   {
    "id": "p124",
@@ -3677,7 +3591,7 @@
      "nota": ""
     }
    },
-   "derivada_de": "p85"
+   "derivada_de": "p46"
   },
   {
    "id": "p161",
@@ -3693,7 +3607,7 @@
      "nota": ""
     }
    },
-   "derivada_de": "p85"
+   "derivada_de": "p46"
   },
   {
    "id": "p162",
@@ -3726,7 +3640,7 @@
      "nota": "Centros Integrados de Comando e Controle e videomonitoramento com IA"
     }
    },
-   "derivada_de": "p85"
+   "derivada_de": "p46"
   },
   {
    "id": "p163",
