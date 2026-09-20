@@ -98,7 +98,9 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
              Metodologia entra ao lado deles por decisão do Thiago (16/09): quem
              lê a matriz e quer saber como ela foi feita não devia ter de descer
              até o rodapé. Ela NÃO é cargo, por isso vem fora da lista — e é por
-             isso também que o menu deixou de se chamar "Cargos". -->
+             isso também que o menu deixou de se chamar "Cargos".
+             "ChatGPT e Claude" entra ao lado dela em 19/09/2026, também por decisão
+             do Thiago: é a outra forma de usar o acervo, e no rodapé ninguém achava. -->
         <nav class="main" aria-label="Seções">
           {CARGOS_NO_MENU.map((c) => {
             const destino = c.porUF ? c.href : '/';
@@ -106,6 +108,7 @@ const caminhoPublico = path.replace(/index\.html$/, '').replace(/\.html$/, '') |
             return <a href={destino} aria-current={atual ? 'page' : undefined}>{c.nome}</a>;
           })}
           <a href="/metodologia" aria-current={caminhoPublico.startsWith('/metodologia') ? 'page' : undefined}>Metodologia</a>
+          <a href="/ia" aria-current={caminhoPublico.startsWith('/ia') ? 'page' : undefined}>ChatGPT e Claude</a>
         </nav>
       </div>
     </header>
