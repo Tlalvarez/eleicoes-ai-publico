@@ -19,9 +19,9 @@ const arqExemplos = join(RAIZ_PROJETO, 'data', 'busca', escopo, 'exemplos.json')
 const exemplos = existsSync(arqExemplos)
   ? JSON.parse(readFileSync(arqExemplos, 'utf8')).exemplos.slice(0, 4)
   : (escopo === 'presidente' ? ['creche', 'escala 6x1', 'dívida pública', 'Nordeste'] : ['escolas', 'hospitais', 'segurança']);
-// PROTÓTIPO B: a caixa convida à pergunta. Os exemplos prontos saem dos assuntos do escopo
-// (exemplos.json) e NUNCA citam candidato — quem escolhe nome é a pessoa, ao escrever.
-const sugestoes = pergunta ? exemplos.slice(0, 3).map((x) => `O que propõem sobre ${x}?`) : [];
+// PROTÓTIPO B: a caixa convida à pergunta. O exemplo vive DENTRO do campo; as perguntas prontas em
+// botão saíram em 19/09/2026 por decisão do Thiago — ocupavam a tela antes da matriz e escolhiam o
+// assunto pela pessoa. O exemplo sai dos assuntos do escopo (exemplos.json) e nunca cita candidato.
 const placeholder = pergunta ? `Ex.: o que propõem sobre ${exemplos[0]}?` : `Ex.: ${exemplos.join(', ')}`;
 ---
 <form class={`busca-caixa${compacta ? ' compacta' : ''}${semRotulo ? ' sem-rotulo' : ''}`} action="/busca" method="get" role="search" data-escopo={escopo}>
@@ -35,11 +35,6 @@ const placeholder = pergunta ? `Ex.: o que propõem sobre ${exemplos[0]}?` : `Ex
       <span class="so-leitor">Buscar</span>
     </button>
   </div>
-  {sugestoes.length > 0 && (
-    <ul class="busca-sugestoes" role="list" aria-label="Perguntas de exemplo">
-      {sugestoes.map((s) => <li><button type="button" class="sugestao" data-pergunta={s}>{s}</button></li>)}
-    </ul>
-  )}
   <p class="busca-estado" aria-live="polite"></p>
 </form>
 
@@ -54,9 +49,6 @@ const placeholder = pergunta ? `Ex.: o que propõem sobre ${exemplos[0]}?` : `Ex
     // na página filtrada, a caixa mostra a consulta em vigor
     const params = new URLSearchParams(location.search);
     if ((params.get('de') || params.get('q')) && !campo.value) campo.value = params.get('de') || params.get('q');
-    for (const b of form.querySelectorAll('.sugestao')) {
-      b.addEventListener('click', () => { campo.value = b.dataset.pergunta; form.requestSubmit(); });
-    }
 
     form.addEventListener('submit', async (ev) => {
       ev.preventDefault();
@@ -113,19 +105,7 @@ const placeholder = pergunta ? `Ex.: o que propõem sobre ${exemplos[0]}?` : `Ex
   .busca-caixa .busca-estado { margin: .35rem 0 0; min-height: 1.2rem; font-size: .88rem; color: var(--tinta-suave); }
   .busca-caixa.compacta { margin: .6rem 0 1rem; }
   .busca-caixa.sem-rotulo { margin-top: .4rem; }
-  .busca-sugestoes { display: flex; flex-wrap: wrap; gap: .4rem; margin: .55rem 0 0; padding: 0; list-style: none; }
-  .busca-sugestoes .sugestao { min-height: var(--alvo); padding: .3rem .85rem; font: inherit; font-size: .9rem; color: var(--acento);
-    background: none; border: 1px dashed var(--linha-forte); border-radius: 999px; cursor: pointer; text-align: left; }
-  .busca-sugestoes .sugestao:hover { border-style: solid; border-color: var(--azul-claro); background: var(--realce); }
   .so-leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  @media (max-width: 760px) {
-    /* no celular as perguntas de exemplo ficam numa fileira só, que rola para o lado:
-       empilhadas, três delas empurravam a matriz 150px para baixo */
-    .busca-sugestoes { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding-right: 1rem; }
-    .busca-sugestoes::-webkit-scrollbar { display: none; }
-    .busca-sugestoes li { flex: none; }
-    .busca-sugestoes .sugestao { white-space: nowrap; }
-  }
   @media (max-width: 480px) {
     /* a lupa não quebra linha: ela é um alvo quadrado ao lado do campo */
     .busca-caixa .linha { flex-wrap: nowrap; }
