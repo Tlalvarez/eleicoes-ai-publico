@@ -317,7 +317,11 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     ...assuntos.map((x) => `Quais candidatos falam de ${x}, e o que dizem?`),
     'O que o programa de um candidato à sua escolha promete sobre impostos, e em que página está?',
     'O que os candidatos a Governador do meu estado propõem para a segurança?',
-    'Em que temas o programa de um candidato não traz proposta nenhuma?',
+    // 19/09/2026: a sugestão anterior era "Em que temas o programa de um candidato não traz proposta
+    // nenhuma?". O Claude a repetiu ao usuário, e ela pede exatamente a conclusão que os dados não
+    // sustentam: coluna vazia é "não localizado", nunca "o programa não trata". A pergunta boa é a que
+    // manda ir ao texto do programa antes de afirmar ausência.
+    'Um candidato à sua escolha trata de um assunto que me interessa? Procure na comparação e, se não achar, no texto do programa dele.',
   ];
   const cartao = [
     '# eleicoes.ai — o acervo dos programas de governo das eleições de 2026 (Brasil)', '',
