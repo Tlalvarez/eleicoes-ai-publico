@@ -131,8 +131,9 @@ function escopo(cargo, uf) {
     // tinha mudado no mesmo dia. Vale a mais recente das duas, que é a que descreve o que se está lendo.
     for (const q of [d.origem?.gerado_em, d.origem?.exportado_em]) if (q && (!geradoEm || q > geradoEm)) geradoEm = q;
     const assuntos = [...new Set(d.propostas.map((p) => p.subtema))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
-    const cabecalho = (parte, total, n) => [`# ${def.nome} — o que cada programa propõe${total > 1 ? ` — parte ${parte} de ${total}` : ''} (${rotulo}, 2026)`, '', REGRAS, '',
+    const cabecalho = (parte, total, n, nDeriv) => [`# ${def.nome} — o que cada programa propõe${total > 1 ? ` — parte ${parte} de ${total}` : ''} (${rotulo}, 2026)`, '', REGRAS, '',
       `Este arquivo tem ${UM(n, 'proposta', 'propostas')}${total > 1 ? ` das ${d.propostas.length} do tema` : ''}, por assunto, em ordem alfabética. Candidatos comparados: ${d.candidatos.map((c) => c.nome).join(', ')}.`,
+      ...(nDeriv ? [`Dessas ${n}, ${nDeriv} ${nDeriv === 1 ? 'detalha' : 'detalham'} outra proposta da lista (vêm logo abaixo dela, marcadas com "detalha"): a frase comum diz o que TODOS os citados sustentam, e o detalhamento traz o que só parte deles sustenta. Não conte as duas como promessas distintas.`] : []),
       `"Propõe" = há trecho do programa que sustenta a proposta. "Propõe o contrário" = há trecho que rejeita a mesma medida. Candidato que não aparece numa proposta = NÃO LOCALIZADO: não achamos trecho no programa dele; não é discordância. As frases das propostas são RESUMOS do eleicoes.ai; o texto do candidato é o trecho (bNNN), que está no arquivo de texto do programa dele neste tema.`,
       `Ver na tela: ${paginaDoSite(def.id)}`,
       `Programa de cada candidato no TSE (PDF): ${d.candidatos.map((c) => `${c.nome} ${tse[c.slug] ?? ''}`).join(' · ')}`, ''];
@@ -140,9 +141,22 @@ function escopo(cargo, uf) {
     // partes de até PARTE_BYTES, sempre em fronteira de assunto
     const secoes = assuntos.map((a) => {
       const S = [`## ${a}`, ''];
-      const doAssunto = d.propostas.filter((x) => x.subtema === a);
+      // A régua por afirmação (19/09/2026) encurta a frase comum para o que TODOS sustentam e guarda o
+      // resto num cartão filho (`derivada_de`). Na tela o filho aparece aninhado sob o pai; aqui, até
+      // 20/09, os dois saíam soltos e em ordem de id — o Claude leu quatro pares como propostas
+      // duplicadas e observou, com razão, que isso infla a contagem do tema. Agora o filho vem logo
+      // abaixo do pai, recuado, dizendo de quem detalha.
+      const noAssunto = d.propostas.filter((x) => x.subtema === a);
+      const filhos = new Map();
+      for (const x of noAssunto) if (x.derivada_de) { filhos.set(x.derivada_de, [...(filhos.get(x.derivada_de) ?? []), x]); }
+      const doAssunto = [];
+      for (const x of noAssunto) {
+        if (x.derivada_de && noAssunto.some((y) => y.id === x.derivada_de)) continue;   // entra junto do pai
+        doAssunto.push(x, ...(filhos.get(x.id) ?? []));
+      }
       for (const p of doAssunto) {
-        S.push(`- **${p.proposta}** [${def.id}/${p.id}]`);
+        const filho = p.derivada_de && noAssunto.some((y) => y.id === p.derivada_de);
+        S.push(`- ${filho ? `_detalha ${def.id}/${p.derivada_de}, com o que só quem aparece abaixo sustenta:_ ` : ''}**${p.proposta}** [${def.id}/${p.id}]`);
         for (const c of d.candidatos) {
           const pos = p.posicoes[c.slug];
           if (!pos || (pos.posicao !== 'concorda' && pos.posicao !== 'discorda')) continue;
@@ -153,7 +167,7 @@ function escopo(cargo, uf) {
         }
       }
       S.push('');
-      return { texto: S.join('\n'), n: doAssunto.length, assunto: a };
+      return { texto: S.join('\n'), n: doAssunto.length, derivadas: doAssunto.filter((x) => x.derivada_de && noAssunto.some((y) => y.id === x.derivada_de)).length, assunto: a };
     });
     const partesTema = [[]];
     let pesoTema = 0;
@@ -171,7 +185,8 @@ function escopo(cargo, uf) {
         indiceAssuntos.push({ tema: def.nome, assunto: s.assunto, n: s.n, url: `${BASE}/${nomeTema(i)}`, termos });
       }
       const n = parte.reduce((s, x) => s + x.n, 0);
-      grava(nomeTema(i), [...cabecalho(i + 1, partesTema.length, n),
+      const nDeriv = parte.reduce((s, x) => s + x.derivadas, 0);
+      grava(nomeTema(i), [...cabecalho(i + 1, partesTema.length, n, nDeriv),
         ...(partesTema.length > 1 ? [`Todas as partes: ${partesTema.map((_, j) => `${BASE}/${nomeTema(j)}`).join(' · ')}`, ''] : []),
         ...parte.map((x) => x.texto), `FIM — ${UM(n, 'proposta', 'propostas')} neste arquivo. ${rodape}`, ''].join('\n'));
     });
