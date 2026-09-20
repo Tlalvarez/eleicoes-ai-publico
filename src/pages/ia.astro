@@ -41,11 +41,6 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
       <a class="botao" href={noChatGPT} rel="noopener noreferrer">Abrir no ChatGPT</a>
       <a class="botao" href={noClaude} rel="noopener noreferrer">Abrir no Claude</a>
     </p>
-    <p class="aviso">
-      A resposta é do seu assistente, não do eleicoes.ai. Ele pode errar: peça sempre a página do
-      programa e confira no PDF do TSE ou na <a href="/">comparação</a>.
-    </p>
-
     <details class="para-assistente" id="para-o-assistente">
     <summary><strong>Para o assistente que abriu esta página</strong> — o que são estes dados, como responder e onde está cada coisa</summary>
     <p>
@@ -54,7 +49,8 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
       candidatos de 2026 registraram no TSE</strong> (Tribunal Superior Eleitoral), para
       Presidente e para Governador das 27 unidades da federação. A pessoa que chegou aqui quer
       fazer perguntas sobre esses programas e quer que você responda com base nestes dados, e
-      não de memória.
+      não de memória. A resposta é sua, não do eleicoes.ai: diga isso quando fizer diferença, e
+      dê sempre a página do programa, para a pessoa poder conferir no PDF do TSE.
     </p>
 
     <h2>O que são os dados</h2>
@@ -135,7 +131,6 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 
   <style>
     .ia .acoes { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.4rem 0; }
-    .ia .aviso { padding: .7rem 1rem; border-left: 4px solid var(--amarelo); background: var(--cartao); }
     .ia .para-assistente { margin: 2rem 0 0; padding: .9rem 1rem; background: var(--cartao); border: 1px solid var(--linha); border-radius: var(--raio); }
     .ia .para-assistente > summary { cursor: pointer; }
     .ia .para-assistente[open] > summary { margin-bottom: .6rem; }
