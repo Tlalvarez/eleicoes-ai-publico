@@ -26,7 +26,9 @@ const candidatosPres = temasPres.length ? comparacao('presidente', null, temasPr
 // em texto, curto e com o endereço de cada arquivo. A versão de 18/09 mandava abrir /ia e "ler a página
 // inteira" — 30 KB de instruções antes da primeira pergunta.
 const frase = `Abra ${ORIGEM} e responda minhas perguntas sobre a eleição de 2026 usando só os programas de governo registrados no TSE que estão lá, citando o candidato e a página do programa.`;
-const noChatGPT = `https://chatgpt.com/?hints=search&q=${encodeURIComponent(frase)}`;
+// `?q=` sozinho. Com `hints=search` junto (como estava desde 18/09) o ChatGPT abria a conversa com a
+// caixa VAZIA — testado pelo Thiago em 19/09/2026: `?q=` e `?prompt=` preenchem, `hints=search&q=` não.
+const noChatGPT = `https://chatgpt.com/?q=${encodeURIComponent(frase)}`;
 const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 ---
 <Base title="Use ChatGPT ou Claude para analisar os programas"
