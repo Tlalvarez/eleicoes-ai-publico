@@ -486,6 +486,15 @@ ul.lista-dossie .meta { color: var(--tinta-suave); font-size: .88rem; display: b
   header.site .inner { flex-wrap: wrap; }
   nav.main { margin-left: 0; flex-basis: 100%; }
 }
+/* Com "ChatGPT e Claude" (19/09) são quatro itens, e em 390px o último quebrava em duas
+   linhas, desalinhado dos outros. O menu passa a rolar de lado, com cada item inteiro: o
+   alvo de toque continua nos 44px que o portão de acessibilidade cobra, e o que não cabe
+   fica a um arrasto. A barra some da tela, mas o corte na borda direita mostra que há mais. */
+@media (max-width: 620px) {
+  nav.main { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  nav.main::-webkit-scrollbar { display: none; }
+  nav.main a { white-space: nowrap; flex: none; }
+}
 
 /* ------------------------------------------------- nomes herdados das páginas
  * As páginas que esta rodada não redesenhou (candidato, menções, fichas,
