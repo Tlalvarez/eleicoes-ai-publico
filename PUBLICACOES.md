@@ -10,3 +10,4 @@ Uma linha por publicação em produção, escrita por `scripts/publica.sh`.
 | 2026-09-20 02:46 | 1db2e8d | Merge branch 'verificacao-buscadores' | ok |
 | 2026-09-20 03:06 | 8d6311d | Merge branch 'indexnow' | ok |
 | 2026-09-20 03:24 | 287b378 | dados: 38 cartões repetidos viram um só (R9) | ok |
+| 2026-09-20 05:07 | 28b8693 | Merge branch 'sinonimos-no-cartao-certo' | ok |
