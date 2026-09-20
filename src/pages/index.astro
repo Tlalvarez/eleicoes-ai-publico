@@ -25,6 +25,10 @@ const candidatos = dados ? dados.candidatos : [];
   description="O que cada candidato de 2026 registrou no programa de governo, tema a tema: onde os programas convergem, onde divergem e o que não tratam. Com o trecho de cada programa.">
   <div class="hero-home">
     <h1>Compare os programas dos candidatos a Presidente</h1>
+    {/* 18/09: o assistente que chega disfarçado de navegador (o "cloud browser" do ChatGPT) recebe
+        esta página, não o cartão — e gente também pode preferir perguntar. Uma linha, sem disputar
+        com a matriz. */}
+    <p class="porta-ia"><a href="/ia">Prefere perguntar? Use o acervo no seu ChatGPT ou Claude</a></p>
   </div>
 
   {dados
@@ -36,5 +40,7 @@ const candidatos = dados ? dados.candidatos : [];
   <style>
     .hero-home { margin-bottom: 1rem; }
     .hero-home .lead { max-width: none; }
+    .porta-ia { margin: .2rem 0 0; font-size: .92rem; }
+    .porta-ia a { color: var(--acento); font-weight: 600; text-underline-offset: .18em; }
   </style>
 </Base>

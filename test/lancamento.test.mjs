@@ -37,10 +37,12 @@ test('v3: o chat saiu inteiro — componente, libs, função de servidor, middle
     'src/lib/compartilhar.mjs', 'src/lib/previa-resposta.mjs', 'src/lib/dados.mjs', 'data/itens', 'data/current.json']) {
     assert.ok(!existe(p), `${p} voltou`);
   }
-  // a única Function do site é o vetor da consulta da busca
+  // as Functions do site são duas, e nenhuma conversa: o vetor da consulta da busca e a
+  // home em texto para assistente de IA (protótipo /ia, 18/09) — que só devolve um arquivo
+  // estático, sem modelo e sem estado
   const { readdirSync } = await import('node:fs');
   const funcs = readdirSync(new URL('../functions', import.meta.url), { recursive: true }).map(String).filter((f) => f.endsWith('.js'));
-  assert.deepEqual(funcs.sort(), ['api/vetor.js']);
+  assert.deepEqual(funcs.sort(), ['api/vetor.js', 'index.js']);
 });
 
 test('v3: o site compila só do que está versionado — nada lê o harness, o S3 ou uma geração', async () => {

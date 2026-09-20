@@ -109,12 +109,16 @@ npm test               # o gate completo: suíte + medição + build + verifica�
   HTML servido a um `curl` simples não traz o beacon, e o mesmo endereço pedido com cabeçalhos de
   navegador vem 367 bytes maior, com `beacon.min.js` (conferido em 17/09). Não procure o script no
   `dist` — ele não está lá, e é por isso que a CSP precisa autorizar `static.cloudflareinsights.com`.
-- Deploy: `npm run deploy:pages` (Cloudflare Pages, upload direto do `dist`). **Ele NÃO roda
-  portão nenhum**: rode você mesmo, nesta ordem, antes de publicar — `python3
-  v3/audita_metodologia.py --escopos <ufs>` (sem FALHA), `python3 v3/confere_pesquisas.py
-  --dados <cadastro do TSE>` (toda pesquisa com registro) e `npm test`. A publicação sai
-  desta máquina com `CLOUDFLARE_API_TOKEN="$(cat ~/Keys/cloudflare-pages.token)"`: o login
-  padrão do wrangler aqui é de outra conta e o deploy morre em 403 antes de subir arquivo.
+- Publicar: **`npm run publica`** é o único caminho para produção (`scripts/publica.sh`). Ele
+  recusa árvore suja e ramo que não seja o `main` igual ao `origin`; roda `npm test`; se
+  `data/comparacao/` mudou desde a última publicação, roda também `v3/audita_metodologia.py` e
+  `v3/confere_pesquisas.py` do harness (`HARNESS=` e `PESQUISAS_TSE=` dizem onde estão); publica;
+  confere o que **a borda** entrega (versão no ar, home, um tema, uma UF, robots, sitemap e
+  cabeçalhos); e escreve uma linha em `PUBLICACOES.md`. Se a conferência falha, imprime como
+  voltar. `npm run previa` sobe o ramo atual em `<ramo>.eleicoes-ai.pages.dev` sem tocar na
+  produção — é onde se olha mudança de tela no celular antes de publicar. A credencial é
+  `~/Keys/cloudflare-pages.token`: o login padrão do wrangler aqui é de outra conta e o deploy
+  morre em 403 antes de subir arquivo.
 
 ### Portões de qualidade
 
@@ -150,7 +154,8 @@ declaram `data-evento` e as propriedades em `data-*`; um ouvinte delegado no lay
 `medir()`. O que cada número responde está descrito em
 [/privacidade](https://eleicoes.ai/privacidade).
 
-Não há CI versionado neste repositório: o deploy é upload direto do `dist` e roda o gate antes.
+Não há CI versionado neste repositório: o deploy é upload direto do `dist`, e quem roda o gate
+antes é o próprio `npm run publica`.
 `npm test` é o gate porque obrigação documental não é obrigação.
 
 ### Os dados da comparação

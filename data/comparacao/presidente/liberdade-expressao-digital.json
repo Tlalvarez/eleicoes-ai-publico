@@ -11,7 +11,7 @@
  "origem": {
   "arquivo": "liberdade-expressao-digital-6.json",
   "gerado_em": "2026-09-14T06:19:15Z",
-  "exportado_em": "2026-09-16T06:21:23Z"
+  "exportado_em": "2026-09-20T00:39:23Z"
  },
  "candidatos": [
   {
@@ -122,7 +122,7 @@
    "id": "p3",
    "subtema": "Regulação de plataformas e redes sociais",
    "proposta": "Promover a proteção de crianças e adolescentes no ambiente digital.",
-   "n_concorda": 2,
+   "n_concorda": 3,
    "posicoes": {
     "ronaldo-caiado": {
      "posicao": "concorda",
@@ -137,6 +137,15 @@
       1453
      ],
      "nota": "Via transparência e responsabilidade das plataformas sobre conteúdo prejudicial"
+    },
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      201,
+      202,
+      246
+     ],
+     "nota": ""
     }
    }
   },
@@ -204,8 +213,8 @@
   {
    "id": "p8",
    "subtema": "Dados pessoais, cibersegurança e soberania digital",
-   "proposta": "Fortalecer a soberania digital, a segurança cibernética e a proteção de dados pessoais dos cidadãos",
-   "n_concorda": 4,
+   "proposta": "Fortalecer a soberania digital e a proteção de dados pessoais.",
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -220,20 +229,6 @@
       833
      ],
      "nota": "Foco em reduzir dependências externas em áreas críticas"
-    },
-    "flavio-bolsonaro": {
-     "posicao": "concorda",
-     "blocos": [
-      837
-     ],
-     "nota": "Dados do cidadão são dele, não do governo; proteção de infraestrutura crítica"
-    },
-    "ronaldo-caiado": {
-     "posicao": "concorda",
-     "blocos": [
-      580
-     ],
-     "nota": ""
     }
    }
   },
@@ -462,7 +457,7 @@
    "id": "p24",
    "subtema": "Educação e inclusão digital",
    "proposta": "Instituir política pública de letramento e educação digital para uso crítico e responsável das redes",
-   "n_concorda": 1,
+   "n_concorda": 2,
    "posicoes": {
     "lula": {
      "posicao": "concorda",
@@ -470,6 +465,13 @@
       138
      ],
      "nota": "Política Nacional de Letramento Digital para todas as idades"
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      263
+     ],
+     "nota": ""
     }
    }
   },
@@ -477,13 +479,28 @@
    "id": "p25",
    "subtema": "Educação e inclusão digital",
    "proposta": "Ampliar programas de inclusão digital, capacitação tecnológica e acesso universal a ferramentas digitais em todo o território",
-   "n_concorda": 1,
+   "n_concorda": 3,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       836,
       837
+     ],
+     "nota": ""
+    },
+    "flavio-bolsonaro": {
+     "posicao": "concorda",
+     "blocos": [
+      477,
+      607
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      576
      ],
      "nota": ""
     }
@@ -559,12 +576,20 @@
    "id": "p31",
    "subtema": "Regulação de plataformas e redes sociais",
    "proposta": "Estimular maior transparência e responsabilidade das plataformas digitais quanto a conteúdos prejudiciais a crianças e adolescentes, nos limites constitucionais e legais.",
-   "n_concorda": 1,
+   "n_concorda": 2,
    "posicoes": {
     "augusto-cury": {
      "posicao": "concorda",
      "blocos": [
       1453
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      581,
+      907
      ],
      "nota": ""
     }
@@ -575,12 +600,27 @@
    "id": "p32",
    "subtema": "Dados pessoais, cibersegurança e soberania digital",
    "proposta": "Garantir que a inteligência artificial seja usada a serviço das pessoas, e não contra elas.",
-   "n_concorda": 1,
+   "n_concorda": 3,
    "posicoes": {
     "flavio-bolsonaro": {
      "posicao": "concorda",
      "blocos": [
       837
+     ],
+     "nota": ""
+    },
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      2272
+     ],
+     "nota": ""
+    },
+    "ronaldo-caiado": {
+     "posicao": "concorda",
+     "blocos": [
+      587,
+      751
      ],
      "nota": ""
     }
@@ -600,10 +640,46 @@
      "nota": ""
     }
    }
+  },
+  {
+   "id": "p34",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Promover a soberania digital com proteção de dados, cooperação científica, transferência de tecnologias estratégicas e regulamentação democrática das plataformas digitais e da inteligência artificial.",
+   "n_concorda": 1,
+   "posicoes": {
+    "lula": {
+     "posicao": "concorda",
+     "blocos": [
+      730
+     ],
+     "nota": ""
+    }
+   },
+   "derivada_de": "p8"
+  },
+  {
+   "id": "p35",
+   "subtema": "Dados pessoais, cibersegurança e soberania digital",
+   "proposta": "Fortalecer a soberania digital, a segurança cibernética e a proteção de dados pessoais dos cidadãos",
+   "n_concorda": 1,
+   "posicoes": {
+    "augusto-cury": {
+     "posicao": "concorda",
+     "blocos": [
+      833
+     ],
+     "nota": "Foco em reduzir dependências externas em áreas críticas"
+    }
+   },
+   "derivada_de": "p8"
   }
  ],
  "blocos": {
   "augusto-cury": {
+   "263": {
+    "texto": "Não há, definitivamente, plena democracia no ambiente digital. A suposta liberdade, segundo a qual cada usuário se tornaria, por meio do celular, \"proprietário e diretor de redação\" de um poderoso veículo de comunicação, não se concretizou. Ao contrário, nunca se fomentaram tanto as narrativas radicais, a indústria dos haters e a influência de pessoas que não refletem sobre as consequências de suas mensagens. Colocamos milhões de pilotos para conduzir milhares de aeronaves complexas (as redes sociais) sem lhes oferecer uma educação mínima para operálas com responsabilidade.",
+    "pagina": 20
+   },
    "833": {
     "texto": "Fortaleceremos a soberania digital, a segurança cibernética e a proteção de dados pessoais, reduzindo dependências externas em áreas críticas.",
     "pagina": 58
@@ -619,12 +695,24 @@
    "1453": {
     "texto": "Também estimularemos maior transparência e responsabilidade das plataformas digitais em relação a conteúdos potencialmente prejudiciais a crianças e adolescentes, dentro dos parâmetros constitucionais e legais.",
     "pagina": 91
+   },
+   "2272": {
+    "texto": "Não podemos impedir o avanço da inteligência artificial e da robótica, mas podemos decidir quem será beneficiado por elas.",
+    "pagina": 124
    }
   },
   "flavio-bolsonaro": {
+   "477": {
+    "texto": "E vamos levar conectividade às localidades de baixa cobertura, priorizando escolas, áreas rurais e regiões de fronteira, dando continuidade ao trabalho que, no governo Bolsonaro, já havia conectado mais de 11 milhões de pessoas, por meio da instalação de mais de 21.000 pontos de inclusão digital pelo Programa Wi-Fi Brasil.",
+    "pagina": 24
+   },
    "579": {
     "texto": "Vamos também atacar o que empurra a família para a dívida. As apostas online consomem o dinheiro do mês antes mesmo de ele chegar em casa, corroendo a renda da população mais vulnerável. Vamos proibir o uso dos recursos dos programas sociais para apostas, porque dinheiro destinado a pôr comida na mesa não pode escoar para a casa de apostas, e promover campanhas educativas e de conscientização sobre os riscos do endividamento com jogos. E vamos ampliar a orientação financeira, pela rede da CAIXA, para que o brasileiro aprenda a sair do vermelho, organizar o orçamento e começar a poupar.",
     "pagina": 33
+   },
+   "607": {
+    "texto": "Vamos ainda levar robótica, computadores, tablets e internet às escolas, e incluir no currículo competências para a economia digital, preparando o jovem para lidar com o próprio dinheiro, empreender e usar as novas tecnologias, entre elas a inteligência artificial.",
+    "pagina": 35
    },
    "837": {
     "texto": "Toda essa transformação digital exige uma contrapartida inegociável: proteger quem está do outro lado da tela. Os dados do cidadão são dele, não do governo, e serão tratados com privacidade e segurança. Vamos fortalecer a defesa cibernética do país, protegendo serviços públicos, infraestrutura crítica e cidadãos contra ataques e fraudes, e garantir que a inteligência artificial seja usada a serviço das pessoas, não contra elas.",
@@ -647,6 +735,18 @@
    "138": {
     "texto": "Instituiremos uma Política Nacional de Letramento Digital, estruturada para capacitar cidadãos de todas as idades a navegar criticamente na rede, combater a desinformação, proteger sua privacidade e transformar o ecossistema digital em um espaço de geração de renda, educação continuada e pleno exercício da cidadania. Propomos a criação de um Conselho Nacional pela Soberania Digital, com participação da sociedade.",
     "pagina": 17
+   },
+   "201": {
+    "texto": "Bolsa Família para crianças e adolescentes, a proibição de celular nas escolas, os investimentos na construção de creches e pré-escolas por meio do Novo PAC, a expansão da educação em tempo integral, a retomada e fortalecimento do programa de vacinação, e o ECA digital. Continuaremos buscando ampliar e fortalecer as políticas para nossas crianças, por meio do enfrentamento da pobreza infantil, da garantia de acesso às políticas públicas e do direito ao brincar.",
+    "pagina": 24
+   },
+   "202": {
+    "texto": "O combate à pedofilia continuará prioritário e persistirá sendo executado, envolvendo diferentes esferas governamentais e sociais. Reforçaremos ações de inteligência e justiça para agilizar as investigações e a punição de crimes contra crianças e adolescentes. Não recuaremos um passo sequer na proteção digital de crianças e adolescentes, com aprimoramento do ECA Digital, regulamentação do uso de telas por faixa etária, promoção do uso seguro das tecnologias e regulamentação das plataformas de jogos e dos ambientes digitais.",
+    "pagina": 24
+   },
+   "246": {
+    "texto": "Reforçaremos a prevenção, a inteligência, a investigação e a repressão qualificada aos crimes financeiros e cibernéticos, assegurando a proteção dos direitos no ambiente digital. As ações priorizarão o combate à exploração sexual de crianças e adolescentes, à violência contra mulheres e pessoas LGBTQIAP+, ao racismo, às fraudes bancárias eletrônicas, aos crimes de alta tecnologia, aos crimes de ódio e aos delitos cibernéticos praticados contra o Estado brasileiro ou de caráter transnacional.",
+    "pagina": 29
    },
    "479": {
     "texto": "Vamos consolidar a transparência algorítmica e a rastreabilidade de conteúdo sintético, ancoradas no Centro Nacional de Transparência Algorítmica – porque democracia não convive com decisão automatizada que ninguém pode examinar.",
@@ -714,6 +814,10 @@
     "texto": "• Priorizar as ações do Ministério da Segurança Pública na repressão das plataformas ilegais de jogos e apostas, com trilha de inteligência financeira dedicada ao setor, mecanismos céleres de bloqueio administrativo e judicial, interrupção de fluxos financeiros, responsabilização de operadores clandestinos, combate à publicidade irregular e cooperação internacional permanente.",
     "pagina": 20
    },
+   "576": {
+    "texto": "4. Conectividade significativa como meta nacional. Levar fibra e backhaul ao interior e à Amazônia, acelerar infovias, usar satélites de órbita baixa como complemento regulado e orientar editais de espectro por cobertura e qualidade. Colocar o FUST a serviço de escolas, unidades de saúde e conectividade rural; ampliar recondicionamento e doação de equipamentos; reduzir a carga tributária do smartphone de entrada, como uma forma de subsídio e inclusão digital da população de baixa renda; promover letramento digital; e criar indicador oficial por município e faixa de renda.",
+    "pagina": 26
+   },
    "580": {
     "texto": "8. Política nacional de cibersegurança. Criar autoridade nacional com independência técnica, mandato e orçamento; estabelecer padrões auditáveis e notificação de incidentes para infraestruturas críticas; priorizar inventário, autenticação forte, backups testados e exercícios no setor público; proteger sistemas de IA contra manipulação e envenenamento de dados; formar profissionais; e integrar segurança, privacidade e cooperação internacional.",
     "pagina": 26
@@ -721,6 +825,18 @@
    "581": {
     "texto": "9. Mercados digitais competitivos e plataformas responsáveis. Consolidar em lei regras de responsabilidade, devido processo, transparência e recurso, implementar plenamente a proteção de crianças e adolescentes e preservar os princípios do Marco Civil. Fortalecer a concorrência com interoperabilidade, portabilidade de dados, regras para agentes com poder estrutural e capacidade técnica do CADE para a economia digital.",
     "pagina": 26
+   },
+   "587": {
+    "texto": "13. Inteligência artificial, robótica e sistemas autônomos a serviço do país. Aplicar essas tecnologias à saúde, educação, agronegócio, segurança, Justiça, logística e gestão pública; estimular a indústria nacional de automação e aeronaves remotamente pilotadas; e usar compras públicas competitivas como primeira demanda para soluções brasileiras.",
+    "pagina": 27
+   },
+   "751": {
+    "texto": "Garantir internet de qualidade, dispositivos compartilhados, plataformas interoperáveis e proteção de dados.",
+    "pagina": 33
+   },
+   "907": {
+    "texto": "• Crianças e adolescentes protegidos por protocolos, canais de denúncia e fiscalização.",
+    "pagina": 41
    }
   }
  }
