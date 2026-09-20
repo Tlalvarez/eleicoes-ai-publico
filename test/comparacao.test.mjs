@@ -42,14 +42,14 @@ test('cada proposta aparece no layout, e só mais de uma vez quando os candidato
   assert.equal(L.n, 5);
 });
 
-test('candidatos não adjacentes: um cartão só, lacuna tracejada, texto no primeiro trecho e "Concorda" nos outros', () => {
+test('candidatos não adjacentes: um cartão só, lacuna tracejada, texto no primeiro trecho e "Também propõe" nos outros', () => {
   const L = layout(PROPOSTAS, ORDEM, 'concordancia');
   const p3 = L.linhas.filter((l) => l.id === 'p3');   // a e c propõem, b no meio não fala do assunto
   assert.deepEqual(p3.map((c) => [c.chave, c.ini, c.largura, c.colunas, c.lacuna, c.a, c.b]),
     [['p3@0', 0, 3, ['concorda ini fim', 'fora', 'concorda ini fim rep rotulo'], true, 0, 0]]);
   const p5 = L.linhas.filter((l) => l.id === 'p5');   // todos: um cartão só, de ponta a ponta, sem lacuna
   assert.deepEqual(p5.map((c) => [c.ini, c.largura, c.lacuna]), [[0, 5, undefined]]);
-  // trecho de dois candidatos depois da lacuna: "Concorda" uma vez só
+  // trecho de dois candidatos depois da lacuna: "Também propõe" uma vez só
   const L2 = layout([p('y', { a: ok(), d: ok(), e: ok() }, 's')], ORDEM, 'concordancia');
   assert.deepEqual(L2.linhas.filter((l) => l.id === 'y')[0].colunas,
     ['concorda ini fim', 'fora', 'fora', 'concorda ini rep rotulo', 'concorda fim rep']);

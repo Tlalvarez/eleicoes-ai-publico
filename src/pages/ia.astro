@@ -75,7 +75,7 @@ const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 
     <h3>Como foram feitos</h3>
     <ul>
-      <li>Um processo automatizado e público (<a href="/metodologia">metodologia</a>; código aberto) em que <strong>o código fatia o texto e o modelo só rotula</strong>: os blocos são uma partição exata do texto do programa, e o modelo de linguagem (Claude Opus 5, da Anthropic) classifica cada bloco por tema e redige as propostas, sem copiar nem inventar texto.</li>
+      <li>Um processo automatizado, descrito na <a href="/metodologia">metodologia</a> (o código do site é aberto; o do processo que produz as comparações, não), em que <strong>o código fatia o texto e o modelo só rotula</strong>: os blocos são uma partição exata do texto do programa, e o modelo de linguagem (Claude Opus 5, da Anthropic) classifica cada bloco por tema e redige as propostas, sem copiar nem inventar texto.</li>
       <li>As instruções ao modelo são gerais: não citam tema nem candidato, para a mesma régua valer para todos.</li>
       <li>Cada posição é conferida <strong>às cegas</strong> contra o trecho do programa (o modelo que confere não sabe de quem é o texto), e juízes cegos avaliam neutralidade e fidelidade.</li>
       <li>A revisão humana é amostral: todos os rótulos de "propõe o contrário", a classificação por tema e os casos que o juiz devolve em dúvida.</li>
