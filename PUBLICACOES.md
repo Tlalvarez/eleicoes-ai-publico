@@ -15,3 +15,4 @@ Uma linha por publicação em produção, escrita por `scripts/publica.sh`.
 | 2026-09-20 08:01 | 028338a | Merge branches 'menu-chatgpt-claude' and 'ia-dados-indexaveis' | 1 falha(s) na conferência |
 | 2026-09-20 08:01 | 9a3a2bd | publicação: 028338a no ar (1 falha(s) na conferência) | 1 falha(s) na conferência |
 | 2026-09-20 16:54 | c4d0b9a | publica.sh: a conferência da borda mentia acima de 64 KB | ok |
+| 2026-09-20 17:38 | 9ce0485 | o cartão já responde: 'Presidente, num relance' entra em /llms.txt | ok |
