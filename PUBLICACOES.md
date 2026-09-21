@@ -19,3 +19,4 @@ Uma linha por publicação em produção, escrita por `scripts/publica.sh`.
 | 2026-09-20 18:53 | 7cc0824 | Merge branch 'derivadas-visiveis' | ok |
 | 2026-09-20 19:50 | e257259 | Merge branch 'indexacao-seletiva' | ok |
 | 2026-09-20 20:11 | c453795 | fora o seletor de disputa: um botão, um clique | ok |
+| 2026-09-21 19:56 | 7c7c2fd | Merge branch 'ancora-com-rotulo' | ok |
