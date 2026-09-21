@@ -46,7 +46,28 @@ const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, 
 const emLinha = (s) => esc(s)
   .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
   .replace(/`([^`]+)`/g, '<code>$1</code>')
-  .replace(/https?:\/\/[^\s<|)]+[^\s<|).,;:]/g, (u) => `<a href="${u}">${u}</a>`);
+  .replace(/https?:\/\/[^\s<|)]+[^\s<|).,;:]/g, (u) => `<a href="${u}">${rotuloDoLink(u)}</a>`);
+
+/**
+ * O TEXTO da âncora não pode ser igual ao endereço.
+ *
+ * Relatório do Claude em 21/09/2026: ele abriu a home, recebeu o cartão, e os endereços chegaram ao
+ * modelo "na forma `<https://eleicoes.ai/ia/dados/...>`, isto é, como autolinks". É o que um conversor de
+ * HTML para markdown produz quando o texto da âncora é o próprio href — e a ferramenta dele não registra
+ * autolink como link seguível, então recusou todos os arquivos com PERMISSIONS_ERROR.
+ *
+ * Com um rótulo diferente do href, o mesmo conversor produz `[rótulo](url)`, que é link de verdade. O
+ * endereço não se perde: quem lê o .md continua vendo a URL inteira, e no HTML ela está no href.
+ */
+function rotuloDoLink(u) {
+  try {
+    const { hostname, pathname } = new URL(u);
+    if (!pathname || pathname === '/') return hostname;
+    return `${hostname}${pathname}`;      // sem o esquema: basta para o texto diferir do href
+  } catch {
+    return u;
+  }
+}
 /**
  * O gêmeo HTML de um arquivo de dados.
  *
