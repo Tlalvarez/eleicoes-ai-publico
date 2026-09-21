@@ -26,35 +26,36 @@ const candidatosPres = temasPres.length ? comparacao('presidente', null, temasPr
 // em texto, curto e com o endereço de cada arquivo. A versão de 18/09 mandava abrir /ia e "ler a página
 // inteira" — 30 KB de instruções antes da primeira pergunta.
 /**
- * Um botão, um clique. Nada de escolher escopo antes (20/09/2026).
+ * Um botão, um clique. E, desde 21/09/2026, só o ChatGPT.
  *
- * Cheguei a pôr um seletor de disputa aqui, para a mensagem já levar o panorama e o índice de assuntos do
- * escopo — o leitor ao vivo do Claude só abre endereço vindo da mensagem da pessoa, e isso resolveria o
- * caso dele. O Thiago vetou, e com razão: põe fricção em todo mundo para consertar um assistente só, e o
- * ChatGPT, que é a maioria aqui e já segue links sozinho, não precisa de nada disso. Quem escolhe a
- * disputa é a conversa. O caso do Claude nas UFs se resolve pela indexação ou por um conector, não
- * piorando esta página.
+ * O Claude saiu daqui por decisão do Thiago, depois de três relatórios seguidos com o mesmo desfecho: a
+ * ferramenta de leitura dele só abre endereço vindo da mensagem da pessoa ou de um resultado de busca, e
+ * recusa os arquivos do acervo mesmo quando o endereço está escrito na página que ela acabou de ler. Nós
+ * consertamos o que era nosso — o rastreador deixou de receber noindex, as portas entraram no índice, e o
+ * texto da âncora deixou de ser o próprio href, que virava autolink na conversão. Nada disso bastou.
+ * Anunciar um caminho que não funciona é pior do que não anunciar. O caminho para o Claude volta quando
+ * houver conector, que não depende da política de origem dele.
  *
- * `?q=` sozinho nos dois. Com `hints=search` junto (como estava desde 18/09) o ChatGPT abria a conversa
- * com a caixa VAZIA — testado pelo Thiago em 19/09/2026.
+ * Cheguei a pôr aqui um seletor de disputa, para a mensagem levar o panorama e o índice de assuntos do
+ * escopo. O Thiago vetou: cobra uma escolha de todo mundo para consertar um assistente só.
+ *
+ * `?q=` sozinho. Com `hints=search` junto (como estava desde 18/09) o ChatGPT abria a conversa com a
+ * caixa VAZIA — testado pelo Thiago em 19/09/2026.
  */
 const frase = `Abra ${ORIGEM} e responda minhas perguntas sobre a eleição de 2026 usando só os programas de governo registrados no TSE que estão lá, citando o candidato e a página do programa.`;
 const noChatGPT = `https://chatgpt.com/?q=${encodeURIComponent(frase)}`;
-const noClaude = `https://claude.ai/new?q=${encodeURIComponent(frase)}`;
 ---
-<Base title="Use ChatGPT ou Claude para analisar os programas"
-  description="Abra os programas de governo de 2026 no ChatGPT ou no Claude e pergunte o que quiser, com o trecho e a página de cada programa.">
+<Base title="Use o ChatGPT para analisar os programas"
+  description="Abra os programas de governo de 2026 no ChatGPT e pergunte o que quiser, com o trecho e a página de cada programa.">
   <div class="prose ia">
-    <h1>Use ChatGPT ou Claude para analisar os programas</h1>
+    <h1>Use o ChatGPT para analisar os programas</h1>
     <p class="lead">
-      Clique nos botões abaixo e deixe o ChatGPT ou o Claude te guiarem pelos programas de
-      governo. Você vai poder fazer qualquer pergunta para eles.
+      Clique no botão abaixo e deixe o ChatGPT te guiar pelos programas de governo. Você vai
+      poder fazer qualquer pergunta para ele.
     </p>
     <p class="acoes">
       <a class="botao" id="abrir-chatgpt" href={noChatGPT} rel="noopener noreferrer"
         data-evento="assistente_aberto" data-assistente="chatgpt">Abrir no ChatGPT</a>
-      <a class="botao" id="abrir-claude" href={noClaude} rel="noopener noreferrer"
-        data-evento="assistente_aberto" data-assistente="claude">Abrir no Claude</a>
     </p>
     <details class="para-assistente" id="para-o-assistente">
     <summary><strong>Para o assistente que abriu esta página</strong> — o que são estes dados, como responder e onde está cada coisa</summary>
