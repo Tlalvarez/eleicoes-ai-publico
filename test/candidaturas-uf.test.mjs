@@ -90,6 +90,9 @@ test('nome de urna em caixa alta vira nome legível, com partículas minúsculas
   assert.equal(nomeLegivel('MARIA DA PENHA'), 'Maria da Penha');
   assert.equal(nomeLegivel('DR. JOÃO DOS SANTOS'), 'Dr. João dos Santos');
   assert.equal(nomeLegivel('DE PAULA'), 'De Paula');
+  // siglas ficam em maiúsculas (05/10/2026: o eleito de Alagoas aparecia como "Jhc")
+  assert.equal(nomeLegivel('JHC'), 'JHC');
+  assert.equal(nomeLegivel('ACM NETO'), 'ACM Neto');
 });
 
 test('foto e página no TSE seguem os formatos que a interface do TSE realmente serve', () => {

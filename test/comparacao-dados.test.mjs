@@ -4,11 +4,12 @@
  */
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { existsSync } from 'node:fs';
+import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import {
   CONTRATO, PASTA, comparacao, comparacaoIntegral, paginaPorId, paginas, paginasProntas, resumoDoEscopo, ufsProntas,
 } from '../src/lib/comparacao-dados.mjs';
+import { SIGLAS } from '../src/lib/candidaturas-uf.mjs';
 
 test('data/comparacao/ é versionado e traz paginas.json', () => {
   assert.ok(existsSync(join(PASTA, 'paginas.json')));
@@ -76,4 +77,24 @@ test('governador sem dados é "em preparação": nenhuma UF pronta, nenhuma rota
     }
   }
   assert.equal(comparacao('governador', 'sp', 'educacao') === null || typeof comparacao('governador', 'sp', 'educacao') === 'object', true);
+});
+
+test('nome de candidato escreve a sigla em maiúsculas, na matriz e na busca', () => {
+  // 05/10/2026: o eleito de Alagoas aparecia como "Jhc" e o candidato da Bahia como "Acm Neto".
+  // A exportação do harness segue a mesma lista (v3/monta_publico.py lê src/data/siglas-em-nomes.json);
+  // se um export voltar a baixar a sigla, este teste cai.
+  const ruins = new Set();
+  const confere = (nome) => {
+    for (const w of String(nome).split(/\s+/)) if (SIGLAS.has(w.toUpperCase()) && w !== w.toUpperCase()) ruins.add(nome);
+  };
+  const varre = (pasta) => {
+    for (const e of readdirSync(pasta, { withFileTypes: true })) {
+      const caminho = join(pasta, e.name);
+      if (e.isDirectory()) varre(caminho);
+      else if (e.name.endsWith('.json')) for (const c of JSON.parse(readFileSync(caminho, 'utf8')).candidatos ?? []) confere(c.nome);
+    }
+  };
+  varre(PASTA);
+  varre(join(PASTA, '..', 'busca'));
+  assert.deepEqual([...ruins], []);
 });

@@ -8,6 +8,7 @@
  * nenhum nome escrito à mão.
  */
 import dados from '../data/candidaturas-2026-uf.json' with { type: 'json' };
+import siglasEmNomes from '../data/siglas-em-nomes.json' with { type: 'json' };
 
 import { BASE_DIVULGA } from './tse.mjs';
 
@@ -51,12 +52,18 @@ export function separaPorDisputa(lista) {
 
 /** Palavras que ficam minúsculas dentro de um nome ("Maria da Penha"). */
 const MINUSCULAS = new Set(['de', 'da', 'do', 'das', 'dos', 'e', 'di', 'du', 'del', 'della', 'von', 'van', 'y']);
+// sigla não se adivinha (ACM tem vogal, como ANA): é dado, em src/data/siglas-em-nomes.json
+export const SIGLAS = new Set(siglasEmNomes.siglas);
 
-/** "MARIA DA PENHA" → "Maria da Penha". Nome de urna vem em caixa alta do TSE. */
+/** "MARIA DA PENHA" → "Maria da Penha"; "JHC" continua "JHC". Nome de urna vem em caixa alta do TSE. */
 export function nomeLegivel(nomeUrna) {
-  return String(nomeUrna ?? '').toLowerCase().split(/\s+/).filter(Boolean)
-    .map((p, i) => (i > 0 && MINUSCULAS.has(p)) ? p
-      : p.split('-').map((q) => q.charAt(0).toUpperCase() + q.slice(1)).join('-'))
+  return String(nomeUrna ?? '').split(/\s+/).filter(Boolean)
+    .map((original, i) => {
+      if (SIGLAS.has(original.toUpperCase())) return original.toUpperCase();
+      const p = original.toLowerCase();
+      return (i > 0 && MINUSCULAS.has(p)) ? p
+        : p.split('-').map((q) => q.charAt(0).toUpperCase() + q.slice(1)).join('-');
+    })
     .join(' ');
 }
 
