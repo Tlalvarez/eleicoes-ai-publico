@@ -137,16 +137,21 @@ const UM = (n, s, p) => `${n} ${n === 1 ? s : p}`;
 // o eleito leva a marca também aqui (decisão do Thiago em 05/10/2026, com o primeiro turno apurado)
 const nomeComMarca = (c) => (c.eleito ? `${c.nome} (${c.rotulo_eleito})` : c.nome);
 
-/** O que o resultado do TSE mudou neste escopo, em uma linha; null antes do resultado. */
-function linhaDoResultado(r, candidatos, comparadosNoPrimeiro) {
+/**
+ * O que o resultado do TSE mudou neste escopo, em uma linha; null antes do resultado. `curta` é
+ * a do cartão de visita, que tem teto de tamanho: sem o endereço do arquivo oficial, que os
+ * mapas de cada escopo já trazem.
+ */
+function linhaDoResultado(r, candidatos, comparadosNoPrimeiro, curta = false) {
   if (!r) return null;
   const turno = r.turno === 1 ? 'primeiro turno' : 'segundo turno';
+  const fonte = curta ? r.pagina_publica : `${r.pagina_publica}; arquivo oficial: ${r.fonte}`;
   if (r.segundo_turno) {
-    return `Segundo turno: ${emLista(candidatos.map((c) => c.nome))} disputam o segundo turno, segundo o resultado do primeiro turno divulgado pelo TSE (${r.pagina_publica}; arquivo oficial: ${r.fonte}). Só os programas dos dois estão nestes arquivos; no primeiro turno, a comparação tinha ${comparadosNoPrimeiro ?? 'mais'} candidatos.`;
+    return `Segundo turno: ${emLista(candidatos.map((c) => c.nome))} disputam o segundo turno, segundo o resultado do primeiro turno divulgado pelo TSE (${fonte}). Só os programas dos dois estão nestes arquivos; no primeiro turno, a comparação tinha ${comparadosNoPrimeiro ?? 'mais'} candidatos.`;
   }
   const eleitos = candidatos.filter((c) => c.eleito);
   if (!eleitos.length) return null;
-  return `Resultado: ${emLista(eleitos.map((c) => c.nome))} ${eleitos.length === 1 ? `foi ${eleitos[0].rotulo_eleito}` : 'foram eleitos'} no ${turno}, segundo o resultado divulgado pelo TSE (${r.pagina_publica}; arquivo oficial: ${r.fonte}).`;
+  return `Resultado: ${emLista(eleitos.map((c) => c.nome))} ${eleitos.length === 1 ? `foi ${eleitos[0].rotulo_eleito}` : 'foram eleitos'} no ${turno}, segundo o resultado divulgado pelo TSE (${fonte}).`;
 }
 const REGRAS = `> Fonte: eleicoes.ai — programas de governo registrados no TSE (eleições 2026). Use SÓ o que está nestes arquivos para falar dos programas; cite o candidato e a página do programa; não recomende voto. Estados possíveis de um candidato numa proposta: PROPÕE (há trecho), PROPÕE O CONTRÁRIO (há trecho que rejeita a mesma medida), NÃO LOCALIZADO (não achamos trecho no programa dele NESTE tema — não é "é contra", e não é prova de que o programa não trata do assunto: o trecho pode estar classificado em outro tema; procure no índice de assuntos e no texto do programa antes de afirmar ausência, e prefira dizer "não localizei").`;
 
@@ -383,7 +388,8 @@ function escopo(cargo, uf) {
   grava(`${rel}.md`, M.join('\n'));
   return { rel, rotulo, candidatos: candidatos.length, nomes: candidatos.map((c) => `${nomeComMarca(c)} (${c.partido})`),
     propostas: resumoTemas.reduce((t, x) => t + x.n, 0), temas: resumoTemas.length,
-    temas_lista: resumoTemas.map(({ id, nome, n }) => ({ id, nome, n })), resultado: doResultado, arquivos, bytes, maior };
+    temas_lista: resumoTemas.map(({ id, nome, n }) => ({ id, nome, n })),
+    resultado: linhaDoResultado(resultado, candidatos, criterio?.comparados, true), arquivos, bytes, maior };
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
