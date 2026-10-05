@@ -10,7 +10,7 @@ const { candidatos } = Astro.props;
   {candidatos.map((c) => (
     <li class="cartao-candidato">
       {c.foto && <img src={c.foto} width="161" height="225" loading="lazy" alt="" />}
-      <span class="nome-candidato">{c.nome}</span>
+      <span class="nome-candidato">{c.nome}{c.eleito && <span class="selo-eleito">{c.rotulo_eleito}</span>}</span>
       <p class="ficha-candidato">{c.partido}{c.numero ? ` · nº ${c.numero}` : ''}</p>
       <p class="link-tse">
         <a href={c.tse} target="_blank" rel="noopener noreferrer" data-evento="tse_aberto" data-slug={c.slug}>Programa no TSE ↗</a>

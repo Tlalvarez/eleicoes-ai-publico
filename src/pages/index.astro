@@ -35,7 +35,7 @@ const candidatos = dados ? dados.candidatos : [];
     ? <Comparacao dados={dados} base="/presidente" paginas={paginas} trilha={[]} naHome />
     : <p class="lead">A comparação de presidente está em preparação.</p>}
 
-  <CandidatosComparados candidatos={candidatos} cargo="presidente" />
+  <CandidatosComparados candidatos={candidatos} cargo="presidente" resultado={dados?.resultado} />
 
   <style>
     .hero-home { margin-bottom: 1rem; }

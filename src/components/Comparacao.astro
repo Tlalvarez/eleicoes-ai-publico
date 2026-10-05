@@ -96,6 +96,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
           <button type="button" class="chip" aria-pressed="true" data-slug={c.slug}>
             {c.foto && <img src={c.foto} width="22" height="30" alt="" loading="lazy" />}
             <span>{c.nome}</span>
+            {c.eleito && <span class="selo-eleito">{c.rotulo_eleito}</span>}
           </button>
         </li>
       ))}
@@ -133,7 +134,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
           <div class="candidato" data-slug={c.slug}>
             {c.foto && <img src={c.foto} width="36" height="50" alt="" />}
             <span>
-              <span class="nome">{c.nome}</span>
+              <span class="nome">{c.nome}{c.eleito && <span class="selo-eleito">{c.rotulo_eleito}</span>}</span>
               <span class="ficha">{c.partido}{c.numero ? ` · nº ${c.numero}` : ''} · {numeros[c.slug].propoe} propostas</span>
             </span>
           </div>
@@ -179,7 +180,7 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
           }
           const p = porId[linha.id];
           return (
-            <button type="button" class={`proposta${linha.comContra ? ' com-contra' : ''}${linha.lacuna ? ' com-lacuna' : ''}`} data-p={linha.id} data-k={linha.chave} style={estiloCartao(linha)}>
+            <button type="button" class={`proposta${linha.comContra ? ' com-contra' : ''}${linha.lacuna ? ' com-lacuna' : ''}${linha.nConcorda === 0 ? ' so-contra' : ''}`} data-p={linha.id} data-k={linha.chave} style={estiloCartao(linha)}>
               <span class="colunas" style={`grid-template-columns:repeat(${linha.largura},1fr)`}>
                 {linha.colunas.map((k) => <span class={k === 'concorda' ? undefined : k}></span>)}
               </span>
@@ -198,6 +199,16 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
               )}
               {linha.contestada && (
                 <span class="selo-contestado">contestado pelo candidato</span>
+              )}
+              {/* C4 (18/09), o mesmo desenho que o navegador faz em desenhaSoContra: o cartão em que
+                  só resta quem propõe o contrário. Antes do resultado do TSE ele só existia com o
+                  seletor; com o segundo turno (05/10/2026), a página já nasce com ele. */}
+              {linha.nConcorda === 0 && (
+                <span class="contrarios" style={`grid-template-columns:repeat(${linha.largura},1fr)`}>
+                  {linha.colunas.map((k, i) => (String(k).startsWith('contra')
+                    ? <span class="contrario" style={`grid-column:${i + 1}`}>{p.posicoes[ordem[linha.ini + i]]?.nota || 'Toque para ler o trecho do programa.'}</span>
+                    : null))}
+                </span>
               )}
             </button>
           );
@@ -683,7 +694,10 @@ const estiloConteudo = (c) => `grid-column:${c.a + 1} / span ${c.b - c.a + 1}`;
       for (const s of selecao) {
         const v = p.posicoes[s];
         if (!v) continue;
-        frag.append(el('h3', '', C[s].nome + (v.posicao === 'discorda' ? ' · propõe o contrário' : '')));
+        const quem = el('h3', '', C[s].nome);
+        if (C[s].eleito) quem.append(el('span', 'selo-eleito', C[s].rotulo_eleito));
+        if (v.posicao === 'discorda') quem.append(' · propõe o contrário');
+        frag.append(quem);
         if (v.nota) frag.append(el('p', 'nota', v.nota));
         for (const n of v.blocos) {
           const b = (D.blocos[s] || {})[String(n)];

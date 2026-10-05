@@ -15,7 +15,15 @@ pelo site é Thiago Alvarez.
 
 - **A comparação para presidente.** `/presidente` redireciona para a home, que lista os temas; `/presidente/<tema>` é a
   comparação de um tema, com uma coluna por candidato (ordem alfabética), o seletor de
-  candidatos e o trecho de cada programa a um toque. Hoje são 6 candidatos em 15 temas.
+  candidatos e o trecho de cada programa a um toque. São 15 temas; desde o resultado do primeiro
+  turno (05/10/2026), só os 2 candidatos do segundo turno (no primeiro, eram 6).
+- **O resultado do TSE.** `data/resultado/turno-<n>.json` é o resultado oficial, versionado, gravado
+  por `scripts/baixa-resultado-tse.mjs` (lê `resultados.tse.jus.br`; o gênero de quem foi eleito ou
+  vai ao segundo turno vem do registro no DivulgaCandContas, pelo gateway quando
+  `NATIVEPORT_API_KEY` está no ambiente). `src/lib/resultado.mjs` o aplica dentro de `comparacao()`:
+  onde há segundo turno, só os dois candidatos dele (com as propostas, trechos e busca recortados);
+  onde o governador foi eleito no primeiro turno, todos continuam e o eleito leva a marca "eleito"
+  (ou "eleita"). Candidato eleito ou do segundo turno que não esteja na comparação quebra o build.
 - **Governador, por estado.** `/governador` lista as 27 UFs e `/governador/<uf>` é a comparação
   daquele estado — **as 27 estão prontas** desde 16/09. A rota continua sabendo dizer
   **"em preparação"**, com as candidaturas registradas no TSE, porque o endereço precisa existir
@@ -63,6 +71,7 @@ projeto (`v3/`); o que chega aqui é o resultado, exportado por `v3/exporta_site
 | `src/data/candidatos.json` | Catálogo canônico de candidatos a presidente (usado nos redirecionamentos antigos) |
 | `src/data/candidaturas-*.json` | Identificadores oficiais das candidaturas no DivulgaCandContas (TSE) |
 | `data/comparacao/` | **Versionado.** `paginas.json` e um JSON por página: `presidente/<pagina>.json`, `governador/<uf>/<pagina>.json` |
+| `data/resultado/` | **Versionado.** O resultado oficial do TSE por turno (`turno-1.json`), de `scripts/baixa-resultado-tse.mjs`; aplicado por `src/lib/resultado.mjs` |
 | `scripts/` | Os gates de qualidade e o emissor de `_headers` |
 | `test/` | Suíte `node --test` |
 

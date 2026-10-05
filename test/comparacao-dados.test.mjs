@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import {
-  CONTRATO, PASTA, comparacao, paginaPorId, paginas, paginasProntas, resumoDoEscopo, ufsProntas,
+  CONTRATO, PASTA, comparacao, comparacaoIntegral, paginaPorId, paginas, paginasProntas, resumoDoEscopo, ufsProntas,
 } from '../src/lib/comparacao-dados.mjs';
 
 test('data/comparacao/ é versionado e traz paginas.json', () => {
@@ -26,7 +26,9 @@ test('toda página de presidente exportada está em paginas.json e cumpre o cont
   assert.ok(prontas.length >= 10, `só ${prontas.length} páginas prontas`);
   for (const id of prontas) {
     assert.ok(paginaPorId(id), `${id}: exportada mas fora de paginas.json`);
-    const d = comparacao('presidente', null, id);
+    // o contrato é o do harness: a página como foi exportada, antes do resultado do TSE
+    // (depois dele, uma proposta pode ficar só com quem propõe o contrário — C4, 18/09)
+    const d = comparacaoIntegral('presidente', null, id);
     assert.equal(d.contrato, CONTRATO);
     assert.equal(d.pagina, id);
     assert.ok(d.candidatos.length >= 2 && d.candidatos.length <= 6, `${id}: ${d.candidatos.length} candidatos`);

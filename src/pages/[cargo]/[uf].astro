@@ -51,7 +51,7 @@ const { emDisputa, fora } = separaPorDisputa(candidaturas(cargo.slug, uf.sigla))
   {pronta && (
     <>
       <Comparacao dados={dados} base={base} paginas={paginas} naHome />
-      <CandidatosComparados candidatos={resumo[0].candidatos} cargo={cargo.slug} uf={uf.sigla} />
+      <CandidatosComparados candidatos={resumo[0].candidatos} cargo={cargo.slug} uf={uf.sigla} resultado={dados.resultado} />
     </>
   )}
 

@@ -352,6 +352,26 @@ footer.site a { color: var(--amarelo); }
   padding: .1rem .6rem;
 }
 
+/* "eleito" junto ao nome de quem o TSE declarou eleito (decisão do Thiago em 05/10/2026,
+   com o primeiro turno apurado). Fundo cheio, para destacar, na cor do próprio site: é uma
+   situação dada pelo TSE, não uma cor de candidato. O texto vem do dado ("eleito"/"eleita"). */
+.selo-eleito {
+  display: inline-block;
+  margin-left: .35rem;
+  padding: .1rem .45rem;
+  border-radius: 99px;
+  background: var(--acento-forte);
+  color: var(--acento-contraste);
+  font-family: var(--fonte-ui);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .06em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  vertical-align: .12em;
+  white-space: nowrap;
+}
+
 .botao {
   font: inherit;
   font-family: var(--fonte-ui);
