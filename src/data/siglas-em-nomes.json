@@ -1,0 +1,4 @@
+{
+ "_": "Palavras do nome de urna que são SIGLAS e ficam em maiúsculas no nome público. O TSE escreve todo nome de urna em caixa alta, e a regra de nome legível (nomeLegivel em src/lib/candidaturas-uf.mjs; nome_legivel em v3/monta_publico.py, que lê este arquivo) baixa o resto das letras: 'JHC' virava 'Jhc' e 'ACM NETO', 'Acm Neto'. Sigla não se adivinha (ACM tem vogal, como ANA), por isso é lista. Decisão do Thiago em 05/10/2026.",
+ "siglas": ["ACM", "JHC"]
+}

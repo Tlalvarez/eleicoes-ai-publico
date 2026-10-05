@@ -13,6 +13,7 @@
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { aplicaResultado, resultadoDoEscopo, turnos } from './resultado.mjs';
 
 export const CONTRATO = 'comparacao-site/1';
 // A raiz vem do diretório de trabalho, não da posição deste arquivo em disco. Até o
@@ -21,6 +22,8 @@ export const CONTRATO = 'comparacao-site/1';
 // procurando data/comparacao/paginas.json onde ele nunca esteve (16/09).
 export const RAIZ_PROJETO = process.cwd();
 export const PASTA = join(RAIZ_PROJETO, 'data', 'comparacao');
+// o resultado oficial do TSE, por turno (src/lib/resultado.mjs)
+export const PASTA_RESULTADO = join(RAIZ_PROJETO, 'data', 'resultado');
 
 const le = (caminho) => JSON.parse(readFileSync(caminho, 'utf8'));
 
@@ -62,8 +65,25 @@ export function ufsProntas(cargo, raiz = PASTA) {
     .map((e) => e.name).sort();
 }
 
-/** O JSON de uma página, validado pelo contrato; `null` se não existe. */
-export function comparacao(cargo, uf, pagina, raiz = PASTA) {
+/**
+ * O JSON de uma página como o site o mostra: com o resultado do TSE aplicado (quem não
+ * foi ao segundo turno sai; o eleito no primeiro turno leva a marca). Todo leitor do site
+ * passa por aqui — matriz, índices, /ia e a cópia publicada para a busca —, para nenhum
+ * deles mostrar quem a tela já não mostra. `null` se a página não existe.
+ */
+export function comparacao(cargo, uf, pagina, raiz = PASTA, pastaResultado = PASTA_RESULTADO) {
+  const d = comparacaoIntegral(cargo, uf, pagina, raiz);
+  return d && aplicaResultado(d, resultadoDoEscopo(turnosDoResultado(pastaResultado), cargo, uf));
+}
+
+const cacheTurnos = new Map();
+function turnosDoResultado(pasta) {
+  if (!cacheTurnos.has(pasta)) cacheTurnos.set(pasta, turnos(pasta));
+  return cacheTurnos.get(pasta);
+}
+
+/** A página como o harness a exportou, com todos os candidatos comparados no primeiro turno. */
+export function comparacaoIntegral(cargo, uf, pagina, raiz = PASTA) {
   const caminho = join(pastaDoEscopo(cargo, uf, raiz), `${pagina}.json`);
   if (!existsSync(caminho)) return null;
   const d = le(caminho);

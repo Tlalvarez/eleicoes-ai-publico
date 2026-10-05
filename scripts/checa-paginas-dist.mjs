@@ -17,6 +17,10 @@
  *     tema não pode existir, porque o endereço dele redireciona para ela;
  *   · nenhuma página construída traz o chat (formulário de pergunta) nem
  *     endereço de resposta guardada — o produto mudou e o dist tem de dizer;
+ *   · o resultado do TSE está na tela (05/10/2026): uma coluna por candidato que
+ *     segue na disputa e nenhuma a mais; o eleito tem a marca "eleito"/"eleita" na
+ *     coluna e no seletor; e o cartão em que só resta quem propõe o contrário já
+ *     nasce desenhado como tal (C4), sem esperar o JavaScript;
  *   · o _redirects não passa de 100 regras, que é o que a Pages aplica.
  *
  * Uso: npm run build && npm run test:paginas-dist
@@ -51,6 +55,19 @@ function confereTema(rel, dados, base, paginas) {
   for (const c of dados.candidatos) {
     if (!new RegExp(`class="candidato" data-slug="${escapa(c.slug)}"`).test(html)) falhas.push(`${rel}: sem a coluna de ${c.slug}`);
     if (!new RegExp(`class="chip" aria-pressed="true" data-slug="${escapa(c.slug)}"`).test(html)) falhas.push(`${rel}: sem o chip de ${c.slug} no seletor`);
+  }
+  const colunas = (html.match(/class="candidato" data-slug="/g) ?? []).length;
+  if (colunas !== dados.candidatos.length) falhas.push(`${rel}: ${colunas} colunas para ${dados.candidatos.length} candidatos na disputa`);
+  const eleitos = dados.candidatos.filter((c) => c.eleito);
+  for (const c of eleitos) {
+    const marca = `class="selo-eleito">${escapa(c.rotulo_eleito)}<`;
+    if (!new RegExp(`class="candidato" data-slug="${escapa(c.slug)}">(?:(?!</div>).)*${marca}`).test(html)) falhas.push(`${rel}: a coluna de ${c.slug} não diz "${c.rotulo_eleito}"`);
+    if (!new RegExp(`class="chip" aria-pressed="true" data-slug="${escapa(c.slug)}">(?:(?!</button>).)*${marca}`).test(html)) falhas.push(`${rel}: o chip de ${c.slug} não diz "${c.rotulo_eleito}"`);
+  }
+  const marcas = (html.match(/class="selo-eleito">/g) ?? []).length;
+  if (marcas !== 2 * eleitos.length) falhas.push(`${rel}: ${marcas} marcas de eleito na matriz para ${eleitos.length} eleito(s)`);
+  for (const p of dados.propostas.filter((x) => x.n_concorda === 0)) {
+    if (!new RegExp(`<button[^>]*class="proposta[^"]*so-contra[^"]*"[^>]*data-p="${escapa(p.id)}"(?:(?!</button>).)*class="contrario"`).test(html)) falhas.push(`${rel}: ${p.id} só tem quem propõe o contrário e não nasce desenhado como tal`);
   }
   // uma proposta pode virar mais de um cartão (candidatos não adjacentes): conta-se por id
   const ids = new Set([...html.matchAll(/<button[^>]*class="proposta[^"]*"[^>]*data-p="([^"]+)"/g)].map((m) => m[1]));

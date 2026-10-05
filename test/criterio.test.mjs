@@ -9,7 +9,7 @@ import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
 import { criterioDoEscopo, criterios, CONTRATO_CRITERIO } from '../src/lib/criterio.mjs';
-import { resumoDoEscopo, ufsProntas } from '../src/lib/comparacao-dados.mjs';
+import { comparacaoIntegral, paginasProntas, ufsProntas } from '../src/lib/comparacao-dados.mjs';
 
 const RAIZ = fileURLToPath(new URL('..', import.meta.url));
 
@@ -18,12 +18,15 @@ test('criterio.json cumpre o contrato e cobre presidente e toda UF pronta', () =
   assert.ok(d, 'data/comparacao/criterio.json não existe — rode v3/exporta_criterio.py');
   assert.equal(d.contrato, CONTRATO_CRITERIO);
   const pres = criterioDoEscopo('presidente');
-  assert.equal(pres.comparados, resumoDoEscopo('presidente')[0].candidatos.length);
+  // o critério conta quem a pesquisa pôs na comparação (primeiro turno); quem a tela mostra
+  // depois do resultado do TSE é outra conta, de test/resultado.test.mjs
+  const noPrimeiroTurno = (uf) => comparacaoIntegral(uf ? 'governador' : 'presidente', uf, paginasProntas(uf ? 'governador' : 'presidente', uf)[0]).candidatos.length;
+  assert.equal(pres.comparados, noPrimeiroTurno(null));
   assert.match(pres.registro ?? '', /^[A-Z]{2}\d{9}$/, 'presidente: sem número de registro da pesquisa');
   for (const uf of ufsProntas('governador')) {
     const c = criterioDoEscopo('governador', uf);
     assert.ok(c, `governador/${uf}: sem critério`);
-    assert.equal(c.comparados, resumoDoEscopo('governador', uf)[0].candidatos.length, `governador/${uf}: contagem`);
+    assert.equal(c.comparados, noPrimeiroTurno(uf), `governador/${uf}: contagem`);
     assert.ok(c.instituto && c.fim_campo, `governador/${uf}: pesquisa incompleta`);
     // 16/09 (revisão jurídica §3.2): pesquisa que decide quem entra precisa do registro
     // no PesqEle, com o campo como está no cadastro do TSE

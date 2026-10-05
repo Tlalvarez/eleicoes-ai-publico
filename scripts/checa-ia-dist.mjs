@@ -5,7 +5,8 @@
  *   · cada proposta de data/comparacao aparece uma vez no arquivo do tema dela, e a linha FIM
  *     diz a conta certa — é a linha FIM que deixa o assistente saber se a leitura foi cortada;
  *   · o texto de cada programa é PARTIÇÃO: somados os arquivos do candidato, os blocos são
- *     exatamente os de data/busca, nem um a mais, nem um a menos;
+ *     exatamente os da busca publicada (dist/busca, já recortada pelo resultado do TSE), nem
+ *     um a mais, nem um a menos — e não há programa de quem saiu da disputa;
  *   · nenhum arquivo passa do tamanho que os assistentes leem sem cortar;
  *   · todo endereço de /ia/dados citado (na página /ia e nos próprios arquivos) existe no dist.
  *
@@ -49,9 +50,16 @@ for (const e of escopos) {
     for (const p of d.propostas) if (!t.includes(`**${p.proposta}**`)) { falhas.push(`${e.rel}/tema-${tema}: o texto de ${p.id} não é o do dado`); break; }
     propostas += esperados.length;
   }
-  const busca = JSON.parse(readFileSync(join(RAIZ, 'data', 'busca', e.rel, 'documentos.json'), 'utf8'));
+  // a busca como foi publicada: depois do resultado do TSE, só com quem segue na disputa
+  const busca = JSON.parse(readFileSync(join(RAIZ, 'dist', 'busca', e.rel, 'documentos.json'), 'utf8'));
   const porSlug = new Map();
   for (const b of busca.blocos) porSlug.set(b.slug, (porSlug.get(b.slug) ?? 0) + 1);
+  const naDisputa = new Set(comparacao(cargo, uf, paginasProntas(cargo, uf)[0]).candidatos.map((c) => c.slug));
+  for (const slug of porSlug.keys()) if (!naDisputa.has(slug)) falhas.push(`${e.rel}: a busca publicada tem blocos de ${slug}, que não está na comparação`);
+  for (const a of arquivos.filter((x) => x.startsWith(join(DADOS, e.rel, 'programa-')))) {
+    const slug = [...naDisputa].find((s) => a.startsWith(join(DADOS, e.rel, `programa-${s}.`)) || a.startsWith(join(DADOS, e.rel, `programa-${s}-`)));
+    if (!slug) falhas.push(`${a.slice(DADOS.length + 1)}: programa de quem não está na comparação`);
+  }
   for (const [slug, n] of porSlug) {
     const partes = arquivos.filter((a) => a.startsWith(join(DADOS, e.rel, `programa-${slug}-`)));
     const soma = partes.reduce((s, a) => s + Number(/^FIM — (\d+) bloco/m.exec(readFileSync(a, 'utf8'))?.[1] ?? NaN), 0);
